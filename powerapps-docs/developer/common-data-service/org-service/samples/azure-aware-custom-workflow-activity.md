@@ -1,19 +1,25 @@
 ---
-title: Azure-fähige benutzerdefinierte Workflowaktivität (Common Data Service) | Microsoft Docs
-description: Dieses Beispiel erhält den Datenkontext aus dem aktuellen Dynamics 365 Customer Engagement -Prozess und veröffentlicht ihn im Azure Service Bus.
+title: Azure-fähige benutzerdefinierte Workflowaktivität (Common Data Service) | Microsoft-Dokumentation
+description: Dieses Beispiel erhält den Datenkontext aus dem aktuellen Common Data Service-Vorgang und veröffentlicht diesen im Azure Service Bus.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2a4079d3a4c62dbf61893797074468a13b12d203
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748388"
 ---
 # <a name="sample-azure-aware-custom-workflow-activity"></a>Beispiel: Azure-fähige benutzerdefinierte Workflowaktivität
 
@@ -23,11 +29,11 @@ Dieses Beispiel erhält den Datenkontext aus dem aktuellen Prozess und veröffen
 
 ## <a name="requirements"></a>Anforderungen
 
-Sie müssen Common Data Service für die Verbindung mit Azure konfigurieren, bevor Sie sich anmelden und diese benutzerdefinierte Workflowaktivität ausführen. Weitere Informationen: [Microsoft Azure Integration mit Common Data Service konfigurieren](../../configure-azure-integration.md).
+Sie müssen Common Data Service für die Verbindung mit Azure konfigurieren, bevor Sie sich anmelden und diese benutzerdefinierte Beispiel-Workflowaktivität ausführen. Weitere Informationen: [Konfigurieren der Microsoft Azure-Integration mit Common Data Service](../../configure-azure-integration.md).
 
 Beachten Sie das erforderliche `Input id`-Argument im Code. Wenn Sie diese Aktivität zu einem Workflow hinzufügen, müssen Sie die GUID eines Azure-Dienstendpunkts angeben.
 
-Wenn Sie diese benutzerdefinierte Workflowaktivität bei Common Data Service registrieren, müssen Sie es in der Sandbox (mit teilweiser Vertrauenswürdigkeit) registrieren.
+Wenn Sie diese benutzerdefinierte Workflowaktivität bei Common Data Service registrieren, müssen Sie es im Sandkasten (mit teilweiser Vertrauenswürdigkeit) registrieren.
 
 ## <a name="how-to-run-samples"></a>Ausführen von Beispielen
 

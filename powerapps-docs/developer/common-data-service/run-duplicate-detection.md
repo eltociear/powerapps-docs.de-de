@@ -1,6 +1,6 @@
 ---
-title: Duplikaterkennung ausführen (Common Data Service) | Microsoft Docs
-description: 'Führen Sie die Duplikaterkennung für einen bestimmten, ausgewählten Entitätstyp Datensatz aus, beim Erstellen oder während der Aktualisierungsvorgänge.'
+title: Duplikaterkennung ausführen (Common Data Service) | Microsoft-Dokumentation
+description: Führen Sie die Duplikaterkennung für einen bestimmten, ausgewählten Entitätstyp Datensatz aus, beim Erstellen oder während der Aktualisierungsvorgänge.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: df4f10fe4bff9ea32fa6d66f0f3a6ca8ac5350bf
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748654"
 ---
 # <a name="run-duplicate-detection"></a>Duplikaterkennung ausführen
 

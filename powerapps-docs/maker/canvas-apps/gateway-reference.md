@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1a5e27b59f1b19460933b61bb92b312a4b12b6f5
-ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
+ms.openlocfilehash: 60f8fb3c0c6d28bb30140017c2af07040d5ade7f
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72561051"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73898195"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Was ist ein lokales Daten Gateway?
 
-Das lokale Daten Gateway fungiert als Brücke, um eine schnelle und sichere Datenübertragung zwischen lokalen Daten (Daten, die nicht in der Cloud sind) und mehreren Microsoft Cloud Services bereitzustellen. Diese Clouddienste umfassen Power BI, powerapps, Microsoft Flow, Azure Analysis Services und Azure Logic apps. Mithilfe eines Gateways können Organisationen Datenbanken und andere Datenquellen in Ihren lokalen Netzwerken aufbewahren und diese lokalen Daten sicher in Clouddiensten verwenden.
+Das lokale Daten Gateway fungiert als Brücke, um eine schnelle und sichere Datenübertragung zwischen lokalen Daten (Daten, die nicht in der Cloud sind) und mehreren Microsoft Cloud Services bereitzustellen. Diese Clouddienste umfassen Power BI, powerapps, Energie Automatisierung, Azure Analysis Services und Azure Logic apps. Mithilfe eines Gateways können Organisationen Datenbanken und andere Datenquellen in Ihren lokalen Netzwerken aufbewahren und diese lokalen Daten sicher in Clouddiensten verwenden.
 
 ## <a name="how-the-gateway-works"></a>Funktionsweise des Gateways
 

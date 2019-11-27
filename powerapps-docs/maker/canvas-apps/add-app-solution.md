@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c908e3d25530b52b103ef58989545e46b931e791
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 0748f78665b389d57989c9170ca21077721f6633
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71987703"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540993"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Erstellen einer Canvas-App aus einer Projekt Mappe
 
@@ -34,7 +34,7 @@ Wenn Sie die Schritte in diesem Thema ausführen möchten, müssen Sie zu einer 
 
 Sie können dieses Verfahren überspringen, wenn Sie bereits über eine Projekt Mappe verfügen, in der Sie eine APP erstellen möchten, oder für die Sie eine APP verknüpfen möchten.
 
-1. [Melden](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und wechseln Sie dann (falls erforderlich) in die entsprechende Umgebung:
+1. [Melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und wechseln Sie dann (falls erforderlich) in die entsprechende Umgebung:
 
     - Wenn Sie in einer Projekt Mappe eine APP erstellen möchten, wechseln Sie zu einer beliebigen Umgebung, die eine Common Data Service Datenbank enthält.
     - Wenn Sie eine vorhandene App mit einer Projekt Mappe verknüpfen möchten, wechseln Sie zu der Umgebung, in der die APP enthalten ist.
@@ -65,7 +65,7 @@ Sie können dieses Verfahren überspringen, wenn Sie bereits über eine Projekt 
 
 Sie können eine leere Canvas-APP innerhalb einer Projekt Mappe erstellen. Sie können eine APP mit drei Bildschirmen nicht automatisch generieren oder eine Vorlage oder Beispiel-APP innerhalb einer Projekt Mappe anpassen.
 
-1. [Melden](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an.
+1. [Melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an.
 
 1. Wechseln Sie ggf. in die Umgebung, in der die Lösung enthalten ist, in der Sie eine Canvas-app erstellen möchten.
 
@@ -96,7 +96,7 @@ Sie können eine leere Canvas-APP innerhalb einer Projekt Mappe erstellen. Sie k
 
 Wenn Sie eine APP mit einer Projekt Mappe verknüpfen möchten, müssen sich beide in der gleichen Umgebung befinden, und die APP muss in einer Projekt Mappe erstellt worden sein.
 
-1. [Melden](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an.
+1. [Melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an.
 
 1. Wechseln Sie ggf. in die Umgebung, in der die Projekt Mappe enthalten ist, mit der Sie eine APP verknüpfen möchten.
 

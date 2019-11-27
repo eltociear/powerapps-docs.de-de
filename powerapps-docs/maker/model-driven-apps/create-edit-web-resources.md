@@ -1,6 +1,6 @@
 ---
-title: Erstellen oder bearbeiten von Webressourcen für modellgesteuerte Apps in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine Webressouce erstellen oder bearbeiten'
+title: Erstellen oder Bearbeiten von Webressourcen für modellgesteuerte Apps in PowerApps | MicrosoftDocs
+description: Erfahren Sie, wie Sie eine Webressouce erstellen oder bearbeiten
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
@@ -9,26 +9,32 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ef4ba8df-9ba9-4066-b40d-def9761c7de2
 caps.latest.revision: 21
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6711d78a217bc5bcee34f0bd209f7bdfe56249c5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702453"
 ---
 # <a name="create-or-edit-model-driven-app-web-resources-to-extend-an-app"></a>Erstellen oder Bearbeiten von Webressourcen für modellgesteuerte Apps, um eine App zu erweitern
 
 Webressourcen werden in der Regel von Entwicklern verwendet, um eine App mithilfe von Dateien zu erweitern, die in der Webentwicklung verwendet werden. App-Benutzer müssen möglicherweise Webressourcen verwalten, die von einem Entwickler oder Designer bereitgestellt werden.  
 
 > [!TIP]
-> Eine ausführliche Diskussion zu Webressourcen finden Sie unter [Entwicklerdokumentation: Webressourcen für Customer Engagement](/dynamics365/customer-engagement/developer/web-resources).<br /> Informationen zu den Abhängigkeiten von Webressourcen, die in PowerApps hinzugefügt wurden, finden Sie unter [Abhängigkeiten von Webressourcen](/dynamics365/customer-engagement/developer/web-resources).
+> Eine ausführliche Diskussion zu Webressourcen finden Sie unter [Entwicklerdokumentation: Webressourcen für modellgesteuerte Apps](/powerapps/developer/model-driven-apps/web-resources).<br /> Informationen zu den Abhängigkeiten von Webressourcen, die in PowerApps hinzugefügt wurden, finden Sie unter [Entwicklerdokumentation: Abhängigkeiten von Webressourcen](/dynamics365/customer-engagement/developer/web-resources).
    
 <a name="BKMK_WhatAreWebResources"></a>
 
@@ -74,7 +80,7 @@ Füllen Sie das Formular aus, um die Webressource zu erstellen oder zu bearbeite
 |**Typ**|*Erforderlich* Dies ist der Typ der Webressource. Sie können diesen nach dem Speichern der Webressource nicht mehr ändern.|  
 |**Text-Editor**|Wenn der Typ der Webressource eine Art von Textdatei ist, wählen Sie diese Schaltfläche aus, um eine Seite zu öffnen und den Inhalt mittels des Texteditors zu bearbeiten.<br />Weitere Informationen: [Korrekte Verwendung des Texteditors](#use-the-text-editor-appropriately)| 
 |**Sprache**|Ermöglicht die Auswahl einer Sprache. Diese Option kennzeichnet nur den Datensatz, in dem die Webressourcedaten gespeichert sind. Sie ändert nicht das Verhalten der Webressource.|  
-|**Datei hochladen**|Wählen Sie das **Durchsuchen…** aus um eine Datei für den Upload als Webressource auszuwählen.<br />&bull; Sie können eine Datei hochladen, wenn Sie eine neue Webressource erstellen oder eine vorhandene Webressource überschreiben.<br />&bull; Die Dateinamenerweiterung der Datei muss den zulässigen Erweiterungen entsprechen.<br />&bull;Die maximale Größe einer Datei, die als Webressource hochgeladen werden soll, beträgt 5 MB. Dieser Wert kann in Dynamics 365 Customer Engagement mithilfe der Einstellung **Systemeinstellungen** > **E-Mail**-Registerkarte > **Begrenzung der Dateigröße für Anlagen festlegen** geändert werden. Weitere Informationen: [Dialogfeld Systemeinstellungen – Registerkarte E-Mail](https://docs.microsoft.com/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab) |  
+|**Datei hochladen**|Wählen Sie das **Durchsuchen…** aus um eine Datei für den Upload als Webressource auszuwählen.<br />&bull; Sie können eine Datei hochladen, wenn Sie eine neue Webressource erstellen oder eine vorhandene Webressource überschreiben.<br />&bull; Die Dateinamenerweiterung der Datei muss den zulässigen Erweiterungen entsprechen.<br />&bull;Die maximale Größe einer Datei, die als Webressource hochgeladen werden soll, beträgt 5 MB. Dieser Wert kann mithilfe der Einstellung **Systemeinstellungen** > **Registerkarte "E-Mail"** > **Begrenzung der Dateigröße für Anlagen festlegen** geändert werden. Weitere Informationen: [Dialogfeld Systemeinstellungen – Registerkarte E-Mail](https://docs.microsoft.com/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab) |  
 |**URL**|Nachdem Sie die Webressource gespeichert haben, wird die URL für die Webressource hier angezeigt. Wählen Sie diesen Link aus, um die Webressource in Ihrem Browser anzuzeigen.|  
   
 Nachdem Sie Ihre Änderungen hinzugefügt haben, wählen Sie **Speichern** und dann **Veröffentlichen**.  
@@ -136,4 +142,4 @@ Sind die Anpassungen vollständig, können sie veröffentlicht werden:
 [Webressourceneigenschaften](web-resource-properties-legacy.md) <br /> 
 [Erstellen und Gestalten von Formularen](create-design-forms.md) <br />
 [Grundlegendes zu Komponenten modellgestützter Apps](model-driven-app-components.md) <br /> 
-[Entwickler Documenttion: Webressourcen für Customer Engagement](/dynamics365/customer-engagement/developer/web-resources)
+[Entwicklerdokumentation: Webressourcen in modellgesteuerten Apps](/powerapps/developer/model-driven-apps/web-resources)

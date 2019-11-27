@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 22dfcb085c2de4aabd849e0a1fedc8a231f0e55f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d55245a6fba0383ce897030e87ccf5c4e7c6749d
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987369"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73897916"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Senden einer Pushbenachrichtigung in PowerApps
@@ -42,7 +42,7 @@ Fügen Sie bei einer App, für die Sie über die Berechtigung **Mitwirkender** v
 > [!NOTE]
 > Wenn Sie eine Pushbenachrichtigung in einem Flow auslösen, können Sie die Benachrichtigung derzeit jeweils nur an einen Benutzer oder eine Sicherheitsgruppe senden.
 
-1. Erstellen Sie in [Microsoft Flow](https://flow.microsoft.com) einen Trigger, der angibt, wann die Pushbenachrichtigung gesendet wird.
+1. Erstellen Sie in der [Energie Automatisierung](https://flow.microsoft.com)einen-Auslösers, der angibt, wann die Pushbenachrichtigung gesendet wird.
 
     Angenommen, Sie möchten eine Benachrichtigung senden, wenn ein Datensatz zur **Case**-Entität im Common Data Service hinzugefügt wird.
 
@@ -61,7 +61,7 @@ Fügen Sie bei einer App, für die Sie über die Berechtigung **Mitwirkender** v
 ## <a name="send-a-notification-from-an-app"></a>Senden einer Benachrichtigung aus einer App
 Sie können eine Pushbenachrichtigung aus einer App an eine andere App oder an die gleiche App senden.
 
-1. Öffnen Sie die App, an die Pushbenachrichtigungen gesendet werden sollen, in [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Öffnen Sie die App, an die Pushbenachrichtigungen gesendet werden sollen, in [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Kopieren Sie auf der Registerkarte **Details** die **App-ID** dieser App.
 
     ![App-ID abrufen](./media/add-notifications/grab-id.png)
@@ -141,7 +141,7 @@ PowerAppsNotification.SendPushNotification(
 * Derzeit werden Benachrichtigungen nicht in PowerApps Mobile für Windows Phone angezeigt.
 * Derzeit werden keine Pushbenachrichtigungen für Benutzer bereitgestellt, die Apps nur in einem Webbrowser ausführen.
 * In Benachrichtigungen wird das allgemeine PowerApps-Symbol anstelle des Symbols für eine bestimmte App angezeigt.
-* Wenn Sie Microsoft Flow verwenden, können Sie Pushbenachrichtigungen jeweils nur an einen Empfänger senden.
+* Wenn Sie die Energie Automatisierung verwenden, können Sie eine Pushbenachrichtigung an jeweils nur einen Empfänger senden.
 
 Weitere Informationen finden Sie in der [Referenz zu PowerApps-Benachrichtigungen](https://docs.microsoft.com/connectors/powerappsnotification/).
 

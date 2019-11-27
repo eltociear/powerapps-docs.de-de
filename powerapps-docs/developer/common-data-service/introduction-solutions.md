@@ -1,6 +1,6 @@
 ---
 title: Einführung in Lösungen | Microsoft Docs
-description: 'Erfahren Sie, wie Lösungen verwendet werden, um Modelle zu erstellen.'
+description: Erfahren Sie, wie Lösungen verwendet werden, um Modelle zu erstellen.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,22 +16,27 @@ ms.workload: na
 ms.date: 01/28/2019
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a621bf0ff0093a5100a14ccad9f3e4c3ebb9e1e7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752942"
 ---
-
 # <a name="introduction-to-solutions"></a>Einführung in Lösungen
 
-Mit *Lösungen* erstellen, verpacken und verwalten Anpasser und Entwickler Softwareeinheiten, die Common Data Service erweitern. Beispielsweise sind Dynamics 365 for Sales, Marketing, Kundenservice Apps von Lösungen verfasst. Anpasser und Entwickler verteilen Lösungen, sodass Organisationen Common Data Service verwenden können, um die Funktionalität für das Unternehmen, das durch die Lösung definiert ist, installieren und deinstallieren.
+Anpasser und Entwickler benutzen *Lösungen*, um Softwareeinheiten zu erstellen, zu verpacken und zu verwalten, die die Funktionen von Common Data Service erweitern. Beispielsweise sind Dynamics 365 for Sales-, Marketing-, Customer Service-Apps von Lösungen verfasst. Lösungen werden von Anpassern und Entwicklern verteilt, sodass Organisationen Common Data Service verwenden können, um die Funktionalität für das Unternehmen, angegeben durch die Lösung, zu installieren und zu deinstallieren.
 
-Alle Anpassungen, die Sie an Common Data Service oder eine bereits installierte Lösung vornehmen, ist Teil einer Lösung. Jede Änderung, die Sie haben, wird nachverfolgt, und alle Abhängigkeiten können berechnet werden. Wenn Sie eine verwaltete Lösungen exportieren, enthält sie alle Änderungen, die für die Lösung in eine Datei angewendet wurden, die Sie in verschiedenen Common Data Service-Umgebung importieren können.
+Alle Anpassungen, die Sie an Common Data Service oder einer bereits installierten Lösung vornehmen, sind Teil einer Lösung. Jede Änderung, die Sie haben, wird nachverfolgt, und alle Abhängigkeiten können berechnet werden. Wenn Sie eine verwaltete Lösung exportieren, enthält sie alle Änderungen, die für diese Lösung in einer Datei angewendet wurden, die Sie dann in eine andere Common Data Service-Umgebung importieren können.
 
-Wenn Sie Anpassungen oder Erweiterungen zwischen verschiedenen Common Data Service-Umgebungen übertragen oder Lösungen mit AppSource verteilen, müssen Sie das Lösungsframework kennen.
+Wenn Sie Anpassungen oder Erweiterungen zwischen verschiedenen Common Data Service-Umgebungen übertragen oder Lösungen mit AppSource verteilen möchten, müssen Sie das Lösungsframework kennen.
 
 > [!NOTE]
-> Ausführliche Informationen dazu, wie Sie effektiv Lösungen für eine erfolgreiche Implementierung Anwendungslebenszyklusverwaltung (ALM)- wird, finden Sie unter [Whitepaper: Lösungs-Lebenszyklus-Verwaltung](https://www.microsoft.com/en-us/download/details.aspx?id=57777)
+> Ausführliche Informationen dazu, wie Sie effektiv Lösungen für eine erfolgreiche Implementierung Anwendungslebenszyklusverwaltung (ALM)- wird, finden Sie unter [Whitepaper: Lösungs-Lebenszyklus-Verwaltung](https://www.microsoft.com/download/details.aspx?id=57777)
 
 ## <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen
 
@@ -72,18 +77,18 @@ Weitere Informationen: [Verwalten von verwaltete Lösungen > Verwaltete Lösungs
 
 Um einen Lösungsherausgeber und eine Lösung zu erstellen, müssen Sie zum Common Data Service-Anpassungsbereich navigieren.
 
-Von [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+Von [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 
 1. Wählen Sie das Symbol *Waffel* oben links aus
 2. Wählen Sie **Alle Apps**.
-3. Suchen Sie nach **Common Data Service - benutzerdefinierte App**.
+3. Suchen Sie nach **Common Data Service – benutzerdefinierte App**.
  Sie können auf die Ellipse (...) klicken und **App anheften** auswählen, sodass die Navigation beim nächsten Mal einfacher ist.
-4. Klicken Sie auf die App **Common Data Service - benutzerdefinierte App** und wählen Sie sie aus.
+4. Klicken Sie auf die App **Common Data Service – benutzerdefinierte App** und wählen Sie sie aus.
 5. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**.
 
-Von [home.dynamics.com](http://home.dynamics.com/)
+Von [home.dynamics.com](https://home.dynamics.com/)
 
-1. Suchen Sie nach dem Titel **Common Data Service - benutzerdefinierte App** und klicken Sie darauf.
+1. Suchen Sie die Kachel **Common Data Service – benutzerdefiniert** und klicken Sie darauf.
 2. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**.
 
 ### <a name="create-a-solution-publisher"></a>Erstellen eines Lösungsherausgebers
@@ -137,17 +142,17 @@ Sie können außerdem verwaltete Lösungen erstellen, die auf anderen Lösungen 
 
 Kunden, System-Implementierungen und anderer ISV können dann Lösungen auf den Lösung aufbauen, die dann bestimmte Anpassungene rreichen, die sie benötigen.
 
-Wenn ein Satz von Unternehmens-Funktionalitäten aus mehreren Lösungen besteht, werden die zugewiesenen Pakete bezeichnet. Sie können *Package Deployer* verwenden, um mehrere Lösungen in einer einzelnen installierbaren Einheit zu kombinieren.
+Wenn ein Satz von Unternehmens-Funktionalitäten aus mehreren Lösungen besteht, werden die zugewiesenen Pakete bezeichnet. Sie können den *Package Deployer* verwenden, um mehrere Lösungen in einer einzelnen installierbaren Einheit zu kombinieren.
 
 ## <a name="deploy-solution-packages"></a>Bereitstellen von Lösungspaketen
 
-Verwenden Sie die *Package Deployer*, um ein benutzerdefiniertes Installationsprogramm für ein Paket zu erstellen, das integriert werden kann 
+Verwenden Sie den *Package Deployer*, um ein benutzerdefiniertes Installationsprogramm für ein Paket zu erstellen, das Folgendes umfassen kann: 
 - Eine oder mehrere Lösungsdateien.
 - Flache Dateien oder exportierte Konfigurationsdateien. 
 - Benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket  bereitgestellt wurde.
 - inhaltsspezifische HTML für das Paket, das bei Start und Ende des Bereitstellungsprozesses angezeigt werden kann. Dies kann nützlich sein, um eine Beschreibung der Lösungen und Dateien bereitzustellen, die im Paket bereitgestellt werden.
 
-Weitere Informationen: [Erstellen von Paketen für den Package Deployer von Common Data Service](package-deployer/create-packages-package-deployer.md).
+Weitere Informationen: [Erstellen von Paketen für den Common Data Service Package Deployer](package-deployer/create-packages-package-deployer.md).
 
 ## <a name="team-development-of-solutions"></a>Teamentwicklung von Lösungen
 

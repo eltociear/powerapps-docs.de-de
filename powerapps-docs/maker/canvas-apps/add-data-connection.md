@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ce09240aa30c1f98926fb109a57f63c230e8d4b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 420728d60555c3aeaf5fd5e844a900d412b0c3ef
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987631"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540961"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Hinzufügen einer Datenverbindung in einer Canvas-App in PowerApps
 
@@ -27,13 +27,13 @@ Fügen Sie in PowerApps einer vorhandenen Canvas-App oder einer von Grund auf ne
 Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten aus dieser Datenquelle in der App anzuzeigen und zu verwalten; siehe folgende Beispiele:
 
 * Verbinden mit OneDrive und Verwalten von Daten in einer Excel-Arbeitsmappe in Ihrer App.
-* Verbinden mit Twilio und Senden einer SMS-Nachricht von Ihrer App.
+* Verbinden mit Twilio und senden einer SMS-Nachricht von Ihrer App.
 * Stellen Sie eine Verbindung mit Common Data Service her, und aktualisieren Sie eine Entität von Ihrer APP.
 * Herstellen einer Verbindung mit SQL Server und Aktualisieren einer Tabelle aus Ihrer App.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-[Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
+[Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 
 ## <a name="open-a-blank-app"></a>Öffnen einer leeren App
 
@@ -47,7 +47,7 @@ Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten au
 
 1. Wählen Sie im mittleren Bereich die Option **mit Daten verbinden** aus, um den Bereich **Daten** zu öffnen.
 
-    Wenn dies eine vorhandene App wäre und der Bildschirm bereits ein Steuerelement enthielt, wählen Sie  > -**Datenquellen** **anzeigen**aus, um denselben Bereich zu öffnen.
+    Wenn dies eine vorhandene App wäre und der Bildschirm bereits ein Steuerelement enthielt, wählen Sie > **Datenquellen** **anzeigen** aus, um denselben Bereich zu öffnen.
 
 1. Wählen Sie **Datenquelle hinzufügen**aus.
 

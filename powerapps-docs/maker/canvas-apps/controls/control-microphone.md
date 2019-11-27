@@ -1,24 +1,24 @@
 ---
 title: 'Mikrofon-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, zum Mikrofon-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 915f5c15af06914cf10a749bf8d995926fd1bf2f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2ae158e17873ed7433b301cc5c88d195515a9a5c
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993420"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650426"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="microphone-control-in-powerapps"></a>Mikrofon-Steuerelement in PowerApps
@@ -73,7 +73,7 @@ Audiodaten werden unter Android im Format 3gp, unter iOS im Format AAC und in We
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
-**OnStart**: gibt an, wie die App reagiert, wenn der Benutzer eine Aufzeichnung mit einem Steuerelement-Mikrofon beginnt.
+**OnStart**: Gibt an, wie die App reagiert, wenn der Benutzer die Aufnahme per Mikrofon-Steuerelement startet.
 
 **[PressedBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
@@ -81,7 +81,7 @@ Audiodaten werden unter Android im Format 3gp, unter iOS im Format AAC und in We
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
@@ -105,7 +105,7 @@ Audiodaten werden unter Android im Format 3gp, unter iOS im Format AAC und in We
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
-    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
+    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder zu [anderen Funktionen](../formula-reference.md)?
 2. Fügen Sie ein Steuerelement des Typs **benutzerdefinierter Katalog** hinzu, verschieben Sie es unter **MyMic**, und legen Sie die **[Items](properties-core.md)** -Eigenschaft für das Steuerelement des Typs **benutzerdefinierter Katalog** auf **MySounds** fest.
 3. Fügen Sie in der Vorlage für das Steuerelement des Typs **benutzerdefinierter Katalog** ein **[Audio](control-audio-video.md)** -Steuerelement hinzu, und legen Sie seine **Media**-Eigenschaft auf **ThisItem.Url** fest.
 4. Drücken Sie F5, klicken oder tippen Sie auf **MyMic**, um mit der Aufzeichnung zu beginnen, und klicken oder tippen Sie anschließend erneut, um die Aufzeichnung zu beenden.

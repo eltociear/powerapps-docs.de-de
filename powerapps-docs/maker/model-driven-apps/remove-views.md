@@ -1,27 +1,33 @@
 ---
-title: Löschen oder Deaktivieren einer modellgesteuerten App-Ansicht in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine Ansicht löschen oder deaktivieren'
+title: Löschen oder Deaktivieren einer modellgesteuerten App-Ansicht in PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Ansicht löschen oder deaktivieren
 ms.custom: ''
 ms.date: 06/12/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 60865f78-7482-42da-8960-adbd3c155028
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3dd7e6a6838f9ba148c8d90719746c4a1488c559
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711297"
 ---
 # <a name="delete-or-deactivate-a-model-driven-app-view"></a>Löschen oder Deaktivieren einer modellgesteuerten App-Ansicht 
 
@@ -30,7 +36,7 @@ search.app:
  Möglicherweise haben Sie eine Ansicht, die von Mitarbeitern nicht angezeigt werden soll. Abhängig vom Typ der Ansicht können Sie sie löschen oder deaktivieren.  
   
 ## <a name="delete-a-view"></a>Löschen einer Ansicht  
- Sie können eine benutzerdefinierte öffentliche Ansicht löschen. Verwenden Sie die Schritte in [Auf Ansichtsdefinitionen zugreifen](accessing-view-definitions.md), um die Ansicht zu suchen, die Sie löschen möchten, und verwenden Sie den ![Schaltfläche Löschen](media/delete.gif "Schaltfläche Löschen") Befehl **Löschen**. Wenn Sie überprüft haben, dass Sie wirklich löschenden möchten, wird die Ansicht dauerhaft gelöscht.  
+ Sie können eine benutzerdefinierte öffentliche Ansicht löschen. Verwenden Sie die Schritte in [Auf Ansichtsdefinitionen zugreifen](accessing-view-definitions.md), um die Ansicht zu suchen, die Sie löschen möchten, und verwenden Sie den ![Schaltfläche „Löschen“](media/delete.gif "Schaltfläche 'Löschen'")**Löschen**-Befehl. Wenn Sie überprüft haben, dass Sie wirklich löschenden möchten, wird die Ansicht dauerhaft gelöscht.  
   
  Wenn Sie die Ansicht nicht endgültig löschen möchten, können Sie sie stattdessen deaktivieren.  
   
@@ -48,4 +54,4 @@ search.app:
 4.  Wählen Sie **Alle Anpassungen veröffentlichen** aus. 
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Erstellen oder Bearbeiten einer Ansicht](create-and-edit-views.md)
+[Ansicht erstellen oder bearbeiten](create-and-edit-views.md)

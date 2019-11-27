@@ -3,25 +3,32 @@ title: Erstellen und entwerfen von Modell-angetriebenen App-Formularen | Microso
 ms.custom: ''
 ms.date: 12/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 99c795e0-9165-4112-85b1-6b5e1a4aa5ec
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
+author: Mattp123
 tags:
-  - Links to topic not migrated
+- Links to topic not migrated
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3e3a3e8bd5527f9707849bf1b54247605d447469
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704565"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>Erstellen und entwerfen von Modell-angetriebenen App-Formularen 
 
@@ -33,7 +40,7 @@ Wenn Sie eine verwaltete Lösung anzeigen, können Sie keine neuen Formulare fü
 
 <a name="BKMK_TypesOfForms"></a> 
 ## <a name="type-of-forms"></a>Typ der Formulare
-Es gibt mehrere unterschiedliche Arten von Formularen und jeder Typ verfügt über eine Funktion oder Verwendung. Weitere Informationen: [Formulartypen in PowerApps](types-forms.md).  
+Es gibt mehrere unterschiedliche Arten von Formularen und jeder Typ verfügt über eine Funktion oder Verwendung. Weitere Informationen: [Typen von Formularen in PowerApps](types-forms.md).  
 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
@@ -48,7 +55,7 @@ Es gibt immer noch mehrere Entitäten (klassische Entitäten), die die Darstellu
 |Rabatt|Rabattliste|Dokumentort|E-Mail-Anlage|Folgen|  
 |Ziel|Zielmetrik|Importquelldatei|Rechnung (Produkt)|Auftrag (Produkt)|  
 |Preisliste|Warteschlangenelement|Angebot (Produkt)|Rollupfeld|Rollupabfrage|  
-|Gespeicherte Sicht|Dienst|Serviceaktivität|SharePoint-Website|Standort|  
+|Gespeicherte Ansicht|Service|Serviceaktivität|SharePoint-Website|Standort|  
 |Gebiet|Einheit|Einheitengruppe|||  
   
 ## <a name="form-display-faq"></a>Formularanzeige FAQ
@@ -60,7 +67,7 @@ Ein Formular ist möglicherweise nicht verfügbar, weil es nicht zur App hinzuge
 3. Überprüfen Sie auf der Registerkarte **Komponenten** die Hauptformulare, die für die App enthalten sind. Überprüfen Sie, ob das Formular, das Sie anzeigen möchten, aktiviert ist. Falls nicht, wählen Sie es aus und dann speichern und veröffentlichen Sie die App.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/forms-included-in-app.png "In der App enthaltene Formulare")
+   > ![](media/forms-included-in-app.png "Forms included with app")
    
 ### <a name="why-isnt-my-form-displayed-as-the-default-form-in-the-app"></a>Warum wird mein Formular in der App nicht als Standardformular angezeigt?
 Ein Formular kann über die Konfiguration der Formularreihenfolge oder wenn ein Benutzer das Standardformular als Personalisierungseinstellung festlegt, als Standardformular festgelegt werden.
@@ -68,12 +75,12 @@ Ein Formular kann über die Konfiguration der Formularreihenfolge oder wenn ein 
 2. Wählen Sie in der Symbolleiste **Formularreihenfolge** > **Hauptformularsatz** aus. 
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/form-order-toolbar.png "Formularreihenfolge-Symbolleistenbefehl")
+   > ![](media/form-order-toolbar.png "Form Order toolbar command")
    
 3. Die Formularreihenfolge wird angezeigt. Wählen Sie das Formular aus und bewegen Sie es mit den Pfeiltasten nach oben und unten innerhalb der Formularreihenfolge. Das Formular oben in der Liste ist das Standardformular. 
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/form-order-dialog.png "Dialogfeld für die Formularreihenfolge\"")
+   > ![](media/form-order-dialog.png "Form order dialog")
    
 4. Wählen Sie **OK**, um die Änderungen der Formularreihenfolge zu speichern.
 5. Wählen Sie in der Symbolleiste des Formulardesigners **Veröffentlichen**, um die Formularreihenfolge in Apps verfügbar zu machen.
@@ -82,7 +89,7 @@ Ein Formular kann über die Konfiguration der Formularreihenfolge oder wenn ein 
 Beachten Sie, dass, wenn ein App-Benutzer die Formularauswahl im Dropdown-Menü einer App ändert, dieses Formular zum Standardformular für den Benutzer wird. Diese Personalisierung überschreibt das Standardformular, das für die Entität in der App angegeben ist.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/change-form-user-setting.png "Benutzereinstellungzum Ändern des Standardformulars")
+   > ![](media/change-form-user-setting.png "User setting to change default form")
    
 ### <a name="related-topics"></a>Verwandte Themen  
     

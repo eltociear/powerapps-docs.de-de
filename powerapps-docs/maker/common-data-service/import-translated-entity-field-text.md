@@ -1,27 +1,33 @@
 ---
-title: Übersetzten Entitäts- und Feldtext mit PowerApps importieren | MicrosoftDocs
-description: 'Erfahren Sie, wie übersetzter Entitäts- und Feldtext importiert wird'
+title: Importieren übersetzter Entitäten und Feldtexte mit PowerApps | MicrosoftDocs
+description: Erfahren Sie, wie übersetzter Entitäts- und Feldtext importiert wird
 ms.custom: ''
 ms.date: 06/19/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3d77d149-819b-45e6-8e70-1fbe54d5c153
 caps.latest.revision: 19
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3836eaebd6f3064ad2e5f4209d86f1bc34898144
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706193"
 ---
 # <a name="import-translated-entity-and-field-text-back-into-an-app"></a>Importieren von übersetztem Entitäts- und Feldtext zurück in eine App
 
@@ -30,7 +36,7 @@ Wenn Sie Text für Entitäten oder Felder, z. B. Feldbeschriftungen oder Werte 
  Nach der Übersetzung müssen Sie die übersetzten Textzeichenfolgen in Ihre Umgebung importieren, bevor Benutzer die Änderungen nutzen können.  
   
 > [!IMPORTANT]
-> - Die Datei, die Sie importieren, muss eine komprimierte Datei sein, in der die CrmTranslations.xml und die Datei [Content_Types].xml im Stammverzeichnis enthalten ist.  
+> - Die Datei, die Sie importieren, muss eine komprimierte Datei sein, in der die CrmTranslations.xml und die [Content_Types].xml im Stammverzeichnis enthalten ist.  
 > - Sie können keinen übersetzten Text mit mehr als 500 Zeichen importieren. Wenn Elemente in Ihrer Übersetzung eine Länge von 500 Zeichen überschreiten, tritt beim Importvorgang ein Fehler auf. Überprüfen Sie bei Auftreten eines Importfehlers die Zeile in der Datei, durch die der Fehler verursacht wurde, verringern Sie die Zeichenanzahl, und führen Sie einen erneuten Importvorgang aus. Beachten Sie ebenfalls, dass Sie nach dem Importieren des übersetzten Texts die Anpassungen erneut veröffentlichen müssen.  
   
 1. Öffnen Sie den [Lösungs-Explorer](../model-driven-apps/advanced-navigation.md#solution-explorer).  
@@ -45,7 +51,7 @@ Wenn Sie Text für Entitäten oder Felder, z. B. Feldbeschriftungen oder Werte 
 
 ## <a name="community-tools"></a>Community-Tools
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) ist ein Tool, das XrmToolBox-Community für Dynamics 365 Customer Engagement entwickelte. Verwenden Sie den einfachen Übersetzer, um Übersetzungen mit kontextbezogenen Informationen zu exportieren und zu importieren. 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) ist ein Tool, das die XrmToolBox-Community für PowerApps entwickelt hat. Verwenden Sie den einfachen Übersetzer, um Übersetzungen mit kontextbezogenen Informationen zu exportieren und zu importieren. 
 
 > [!NOTE]
 > Die Community-Tools werden von Microsoft nicht unterstützt. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).

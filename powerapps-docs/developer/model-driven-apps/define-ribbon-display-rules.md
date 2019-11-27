@@ -4,21 +4,24 @@ description: 'Infos zum Festlegen bestimmter Regeln, die steuern, wann die Menü
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 70e5687f-4d0e-3d43-03f3-10e5aa5b0713
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 560946f5b3ea614e5ac3635c9ada81ddae67f3c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748757"
 ---
-
 # <a name="define-ribbon-display-rules"></a>Definieren von Menüband-Anzeigeregeln
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-display-rules -->
@@ -42,9 +45,9 @@ Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definiere
  Die `Type`-Werte entsprechen dem Folgenden:  
 
 
-|   Wert   |                                                                               Präsentation                                                                               |
+|   Value   |                                                                               Präsentation                                                                               |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Modern`  |                                       Die Befehlsleiste wird mithilfe von Dynamics 365 for tablets dargestellt.                                       |
+| `Modern`  |                                       Die Befehlsleiste wird mit Dynamics 365 for tablets dargestellt.                                       |
 | `Refresh` |                                                      Die Befehlsleiste wird mithilfe der aktualisierten Benutzeroberfläche angezeigt.                                                      |
 | `Legacy`  | Das Menüband wird in Formularen für Entitäten, die nicht aktualisiert wurden, oder in einer Listenansicht in Dynamics 365 for Outlook angezeigt. |
 

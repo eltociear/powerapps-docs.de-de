@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da7f7c037010df0da30e0363f988ac616f9fb6cc
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e4c688232e275cee1e285b22dd4885ea2126e7ad
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995673"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541385"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>Übersicht über die Vorlage "Personen Bildschirm" für Canvas-apps
@@ -43,11 +43,11 @@ Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen 
 
 So fügen Sie einen People-Bildschirm aus der Vorlage hinzu:
 
-1. [Melden](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und erstellen Sie eine APP, oder öffnen Sie eine vorhandene app in PowerApps Studio.
+1. [Melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und erstellen Sie eine APP, oder öffnen Sie eine vorhandene app in PowerApps Studio.
 
     In diesem Thema wird eine Phone-App gezeigt, aber die gleichen Konzepte gelten auch für eine Tablet-app.
 
-1. Wählen Sie auf der Registerkarte **Start** des Menübands die Option **neuer Bildschirm** > **Personen**aus.
+1. Wählen Sie auf der Registerkarte **Start** des Menübands die Option **New Screen** > **People**aus.
 
     Standardmäßig sieht der Bildschirm in etwa wie folgt aus:
 
@@ -73,13 +73,13 @@ In diesem Bildschirm wird der [Office365Users. searchuser](https://docs.microsof
 
 1. Wählen Sie in **userbrowsegallery**eine zu ändernde Bezeichnung aus (oder fügen Sie Sie hinzu, und lassen Sie Sie ausgewählt).
 
-1. Ersetzen Sie bei ausgewählter Text-Eigenschaft in der **Bearbeitungs** Leiste den Inhalt durch `ThisItem.`.
+1. Ersetzen Sie bei ausgewählter Text-Eigenschaft in der **Bearbeitungs** Leiste den Inhalt durch `ThisItem.`
 
     IntelliSense zeigt eine Liste von Feldern an, die Sie auswählen können.
 
 1. Wählen Sie das gewünschte Feld aus.
 
-    Die **Text** -Eigenschaft sollte auf `ThisItem.{FieldSelection}` aktualisiert werden.
+    Die **Text** -Eigenschaft sollte auf `ThisItem.{FieldSelection}`aktualisiert werden.
 
 ## <a name="integrate-the-screen-into-an-app"></a>Integrieren des Bildschirms in eine APP
 
@@ -92,7 +92,7 @@ Der Bildschirm Personen speichert Ihre Personen Auswahl in der **mypeople** -Auf
 1. Fügen Sie die Outlook-Datenquelle von Office 365 zu Ihrer APP hinzu, indem Sie die Registerkarte **Ansicht** auswählen, **Datenquellen** > **Datenquelle hinzufügen**auswählen und nach dem Office 365 Outlook-Connector suchen. Möglicherweise müssen Sie **neue Verbindung** auswählen, um Sie zu finden.
 1. Fügen Sie nach dem Einfügen des Bildschirms "People" einen neuen leeren Bildschirm ein. Fügen Sie in diesem Bildschirm ein rückwärts Pfeilsymbol, zwei Texteingabefelder und ein Sende Symbol hinzu.
 1. Benennen Sie den Bildschirm in **emailscreen**, das Symbol für den rückwärts Pfeil in " **backicon**", ein Texteingabefeld in " **subjetline**", das andere in " **MessageBody**" und das Sende Symbol an " **senargumenton**" um.
-1. Legen **Sie die onselect** -Eigenschaft von **backicon** auf `Back()` fest.
+1. Legen **Sie die onselect** -Eigenschaft von **backicon** auf `Back()`fest.
 1. Legen **Sie die onselect** -Eigenschaft von **sendion** auf diese Formel fest:
 
     ```powerapps-comma
@@ -103,11 +103,11 @@ Der Bildschirm Personen speichert Ihre Personen Auswahl in der **mypeople** -Auf
     )
     ```
     
-    Hier verwenden Sie den Outlook-Connector, um eine e-Mail zu senden. Sie übergeben Sie `Concat(MyPeople; UserPrincipalName & ";")` als Empfängerliste. Diese Formel verkettet alle e-Mail-Adressen in der **mypeople** -Sammlung mit einer einzelnen Zeichenfolge, wobei Sie durch Semikolons getrennt werden. Dies unterscheidet sich nicht vom Schreiben einer Zeichenfolge von e-Mail-Adressen, die durch Semikolons in der "an"-Zeile Ihres bevorzugten e-Mail-Clients getrennt sind.
-    * Sie übergeben `SubjectLine.Text` als Betreff der Nachricht, und `MessageBody.Text` als Text der Nachricht.
+    Hier verwenden Sie den Outlook-Connector, um eine e-Mail zu senden. Sie übergeben ihn `Concat(MyPeople; UserPrincipalName & ";")` als Empfängerliste. Diese Formel verkettet alle e-Mail-Adressen in der **mypeople** -Sammlung mit einer einzelnen Zeichenfolge, wobei Sie durch Semikolons getrennt werden. Dies unterscheidet sich nicht vom Schreiben einer Zeichenfolge von e-Mail-Adressen, die durch Semikolons in der "an"-Zeile Ihres bevorzugten e-Mail-Clients getrennt sind.
+    * Sie übergeben `SubjectLine.Text` als Betreff der Nachricht und `MessageBody.Text` als Text der Nachricht.
 1. Fügen Sie auf dem Bildschirm Personen in der oberen rechten Ecke das Symbol " **Mail** " ein.
    Ändern Sie die Farbe des Symbols in den gewünschten Wert.
-1. Legen **Sie die onselect** -Eigenschaft der **sendische** auf `Navigate( EmailScreen; None )` fest.
+1. Legen **Sie die onselect** -Eigenschaft der **sendische auf** `Navigate( EmailScreen; None )`fest.
 
     Sie verfügen jetzt über eine APP mit zwei Bildschirmen, in der Sie Benutzer auswählen, eine e-Mail-Nachricht verfassen und dann senden können. Sie können es gerne testen, aber seien Sie vorsichtig, da die APP e-Mails an jeden sendet, den Sie der **mypeople** -Sammlung hinzufügen.
 

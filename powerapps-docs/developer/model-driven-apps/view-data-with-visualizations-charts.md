@@ -1,6 +1,6 @@
 ---
 title: Anzeigen von Daten mit Visualisierungen (Diagrammen) (modellgesteuerte Apps) | Microsoft Docs
-description: 'Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Visualisierung wird an eine Entität in Common Data Service angehängt. Sie können mehrere Visualisierungen an eine Entität anfügen, jedoch kann jeweils nur eine Visualisierung neben einem Raster gleichzeitig angezeigt werden. Sie können gleichzeitig mehrere Visualisierungen anzeigen, indem Sie ein Dashboard verwenden.'
+description: Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Visualisierung wird einer Entität in Common Data Service angefügt. Sie können mehrere Visualisierungen an eine Entität anfügen, jedoch kann jeweils nur eine Visualisierung neben einem Raster gleichzeitig angezeigt werden. Sie können gleichzeitig mehrere Visualisierungen anzeigen, indem Sie ein Dashboard verwenden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4ede56a8ab217b81580c036e45309db214b273b4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754551"
 ---
 # <a name="view-data-with-visualizations-charts"></a>Daten mit Visualisierungen (Diagramme) anzeigen
 
-Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Visualisierung wird an eine Entität in Common Data Service angehängt. Sie können mehrere Visualisierungen an eine Entität anfügen, jedoch kann jeweils nur eine Visualisierung neben einem Raster gleichzeitig angezeigt werden. Sie können gleichzeitig mehrere Visualisierungen anzeigen, indem Sie ein Dashboard verwenden. Weitere Informationen: [Analyisieren von Daten mit Dashboards](analyze-data-with-dashboards.md)  
+Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Visualisierung wird einer Entität in Common Data Service angefügt. Sie können mehrere Visualisierungen an eine Entität anfügen, jedoch kann jeweils nur eine Visualisierung neben einem Raster gleichzeitig angezeigt werden. Sie können gleichzeitig mehrere Visualisierungen anzeigen, indem Sie ein Dashboard verwenden. Weitere Informationen: [Analyisieren von Daten mit Dashboards](analyze-data-with-dashboards.md)  
   
  Sie können ein Diagramm oder eine Webressource als Visualisierung in Common Data Service verwenden. Für Diagramme können Sie den Diagrammdesigner in "Modellgesteuerte Apps" verwenden. Um jedoch eine Webressource in einer Visualisierung zu verwenden, müssen Sie entweder das SDK verwenden oder eine benutzerdefinierte Visualisierungs-XML in "Modellgesteuerte Apps" importieren.
   
@@ -33,7 +39,7 @@ Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Vi
   
 <a name="Charts"></a>   
 ## <a name="chart-visualizations"></a>Diagrammvisualisierungen  
- Mit Diagrammen können Sie Zusammenfassungen von Rasterdaten anzeigen. Die Diagramme werden mithilfe von Microsoft Chart Controls für Microsoft .NET Framework 3.5 erstellt. Weitere Informationen zu Microsoft Chart Controls finden Sie unter [Download: Diagrammsteuerelemente für .NET Framework](http://go.microsoft.com/fwlink/p/?LinkId=128852).  
+ Mit Diagrammen können Sie Zusammenfassungen von Rasterdaten anzeigen. Die Diagramme werden mithilfe von Microsoft Chart Controls für Microsoft .NET Framework 3.5 erstellt. Weitere Informationen zu Microsoft Chart Controls finden Sie unter [Download: Diagrammsteuerelemente für .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=128852).  
   
  Diese Diagramme werden in die Rastern in der Webanwendung integriert. Falls Sie einen Filter (Abfrage) für die Daten in einem Raster anwenden, wird der Filter auch für das Diagramm angewendet, und das Diagramm entsprechend aktualisiert. Auch wenn Sie Vorgänge zum Anzeigen von Detailinformationen in einem Diagramm ausführen, werden die Rasterdaten automatisch aktualisiert.  
   
@@ -47,7 +53,7 @@ Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Vi
 ### <a name="chart-types-in-microsoft-chart-controls"></a>Diagrammtypen in Microsoft-Diagrammsteuerelementen  
  Microsoft Chart Controls wird verwendet, um Diagramme in modellgesteuerten Apps zu erstellen. Microsoft Chart Controls ermöglichen es Ihnen, verschiedene Diagrammtypen zu erstellen, wie z. B. Spalten, Balken, Bereich, gestapelt, Zeilen, Blasen und Kreis.  
   
- Die folgenden Diagrammtypen werden vorkonfiguriert in Common Data Service unterstützt: *Spalte*, *Bereich*, *Balken*, *Zeile*, *Kreis* und *Trichter*. Sie können die Funktionalität aber erweitern, indem Sie weitere unterstützte Microsoft Chart Controls-Diagrammtypen wie Mehrfachdiagramme, gestapelte Diagramme und 100 % gestapelte (Vergleichs-) Diagramme erstellen, indem Sie entsprechende Inhalte in den Datenbeschreibungs- und den Darstellungsbeschreibungs-XML-Zeichenfolgen für ein Diagramm angeben. Weitere Informationen: [Angeben der Diagrammdaten](understand-charts-underlying-data-chart-representation.md)  
+ Die folgenden Diagrammtypen werden standardmäßig in Common Data Service unterstützt: *Spalte*, *Bereich*, *Balken*, *Zeile*, *Kreis*, und*Trichter*. Sie können die Funktionalität aber erweitern, indem Sie weitere unterstützte Microsoft Chart Controls-Diagrammtypen wie Mehrfachdiagramme, gestapelte Diagramme und 100 % gestapelte (Vergleichs-) Diagramme erstellen, indem Sie entsprechende Inhalte in den Datenbeschreibungs- und den Darstellungsbeschreibungs-XML-Zeichenfolgen für ein Diagramm angeben. Weitere Informationen: [Angeben der Diagrammdaten](understand-charts-underlying-data-chart-representation.md)  
   
 <a name="WebResources"></a>   
 ## <a name="web-resource-visualizations"></a>Webressourcenvisualisierungen  
@@ -122,8 +128,8 @@ UoMSchedule
  [Erstellen eines Diagramms](create-visualization-chart.md)   
  [Beispieldiagramme](sample-charts.md)   
  [SavedQueryVisualization-Entität](../common-data-service/reference/entities/savedqueryvisualization.md)   
- [UserQueryVisualizations-Entität](../common-data-service/reference/entities/userqueryvisualization.md) [Download: Diagramm-Steuerelemente für .NET Framework Language Pack](http://www.microsoft.com/downloads/details.aspx?FamilyId=581FF4E3-749F-4454-A5E3-DE4C463143BD&displaylang=en)   
- [Download: Chart Controls-Add-On für Visual Studio](http://www.microsoft.com/downloads/details.aspx?FamilyId=1D69CE13-E1E5-4315-825C-F14D33A303E9&displaylang=en)   
- [Download: Chart Controls für .NET Framework – Dokumentation](http://go.microsoft.com/fwlink/p/?LinkId=128301)   
- [Beispielumgebung für Microsoft Chart Controls](http://code.msdn.microsoft.com/mschart)   
- [Chart Controls-Forum](http://go.microsoft.com/fwlink/p/?LinkId=128713)
+ [UserQueryVisualizations-Entität](../common-data-service/reference/entities/userqueryvisualization.md) [Download: Diagramm-Steuerelemente für .NET Framework Language Pack](https://www.microsoft.com/downloads/details.aspx?FamilyId=581FF4E3-749F-4454-A5E3-DE4C463143BD&displaylang=en)   
+ [Download: Grafiksteuerungs-Add-On für Visual Studio](https://www.microsoft.com/downloads/details.aspx?FamilyId=1D69CE13-E1E5-4315-825C-F14D33A303E9&displaylang=en)   
+ [Download: Chart Controls für .NET Framework – Dokumentation](https://go.microsoft.com/fwlink/p/?LinkId=128301)   
+ [Beispielumgebung für Microsoft Chart Controls](https://code.msdn.microsoft.com/mschart)   
+ [Chart Controls-Forum](https://go.microsoft.com/fwlink/p/?LinkId=128713)

@@ -1,19 +1,25 @@
 ---
-title: Auslagern von umfangreichen Ergebnissätzen mit FetchXML (Common Data Service) | Microsoft Docs
-description: 'Sie können die Ergebnisse einer FetchXML-Abfrage auslagern, indem Sie das Auslagerungscookie verwenden.'
+title: Auslagern von umfangreichen Ergebnissätzen mit FetchXML (Common Data Service) | Microsoft-Dokumentation
+description: Sie können die Ergebnisse einer FetchXML-Abfrage auslagern, indem Sie das Auslagerungscookie verwenden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 00170d4639ccb618f63767d6cd5f5b6f73037323
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748533"
 ---
 # <a name="page-large-result-sets-with-fetchxml"></a>Auslagern von umfangreichen Ergebnissätzen mit FetchXML
 

@@ -1,6 +1,6 @@
 ---
-title: 'Fügen Sie in Common Data Service Daten einer Entität hinzu, indem Sie Power Query verwenden | Microsoft Docs'
-description: 'Schrittweise Anweisungen für die Verwendung von Power Query, um Daten einer neuen oder vorhandenen Entität aus einer anderen Datenquelle in Common Data Service hinzuzufügen.'
+title: Fügen Sie in Common Data Service Daten einer Entität hinzu, indem Sie Power Query verwenden | Microsoft Docs
+description: Schrittweise Anweisungen für die Verwendung von Power Query, um Daten einer neuen oder vorhandenen Entität aus einer anderen Datenquelle in Common Data Service hinzuzufügen.
 author: mllopis
 manager: kfile
 ms.service: powerapps
@@ -10,12 +10,17 @@ ms.component: cds
 ms.date: 03/21/2018
 ms.author: millopis
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 22920502b75d16dedba7a70ced60b9b3f373ff10
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757574"
 ---
-
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Daten mithilfe von Power Query zu einer Entität in Common Data Service hinzufügen
 In dieser Vorgehensweise erstellen Sie eine Entität in [Common Data Service](data-platform-intro.md) und befüllen diese Entität mit Daten aus einem OData-Feed, indem Sie Power Query verwenden. Sie können dieselben Techniken verwenden, um Daten aus diesen Online- und lokalen Quellen zu integrieren, unter anderem:
 
@@ -30,16 +35,16 @@ In dieser Vorgehensweise erstellen Sie eine Entität in [Common Data Service](da
 
 Sie können Daten auch filtern, transformieren und kombinieren, bevor Sie sie in eine neue oder vorhandene Entität laden.
 
-Sofern Sie keine Lizenz für PowerApps haben, können Sie sich [hier kostenlos anmelden](../signup-for-powerapps.md).
+Sofern Sie keine Lizenz für PowerApps haben, können Sie sich hier [kostenlos anmelden](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/working-with-environments.md) wechseln, in der Sie Entitäten erstellen können.
 
 ## <a name="specify-the-source-data"></a>Angeben der Quelldaten
 
-1. Melden Sie sich in [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und klicken oder tippen Sie auf den Abwärtspfeil für **Daten** neben dem linken Rand.
+1. Melden Sie sich in [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und klicken oder tippen Sie auf den Abwärtspfeil für **Daten** neben dem linken Rand.
 
-    ![PowerApps-Homepage](./media/data-platform-cds-newentity-pq/sign-in.png)
+    ![PowerApps Homepage](./media/data-platform-cds-newentity-pq/sign-in.png)
 
 1. Klicken oder tippen Sie in der Liste, die angezeigt wird, auf **Datenintegration** und klicken oder tippen Sie auf **Neues Projekt** neben der oberen rechten Ecke des Fensters.
 
@@ -48,7 +53,7 @@ Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/workin
     ![Auswählen eines OAuth-Konnektors](./media/data-platform-cds-newentity-pq/choose-odata.png)
 
 1. Geben Sie unter **Verbindungseinstellungen** diese URL ein oder fügen Sie sie ein, und wählen Sie dann **Weiter** aus:<br>
-`http://services.odata.org/V4/Northwind/Northwind.svc/`
+`https://services.odata.org/V4/Northwind/Northwind.svc/`
 
 1. In der Tabellenliste aktivieren Sie das Kontrollkästchen **Kunden** aus, und klicken oder tippen Sie dann auf **Weiter**.
 
@@ -80,7 +85,7 @@ Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/workin
 > [!WARNING]
 > Wenn Sie Power Query verwenden, um Daten einer vorhandenen Entität hinzuzufügen, werden alle Daten in dieser Entität überschrieben.
 
-Wenn Sie **In vorhandene Entität laden** auswählen, können Sie eine Entität angeben, der die Daten aus der Tabelle **Kunden** hinzugefügt werden. Sie können die Daten beispielsweise der Entität **Firma** hinzufügen, mit der Common Data Service bereitgestellt wird. In der **Quellspalte** können Sie genauer angeben, dass die Daten in der Spalte **ContactName** aus der Tabelle **Kunden** der Spalte**Name** in der **Firmen**-Entität hinzugefügt werden sollen.
+Wenn Sie **In vorhandene Entität laden** auswählen, können Sie eine Entität angeben, der die Daten aus der Tabelle **Kunden** hinzugefügt werden. Sie können die Daten beispielsweise der Entität **Firma** hinzufügen, mit der Common Data Service bereitgestellt wird. In der **Quellspalte** können Sie genauer angeben, dass die Daten in der Spalte **ContactName** aus der Tabelle **Kunden** der Spalte **Name** in der **Firmen**-Entität hinzugefügt werden sollen.
 
 ![Angeben des Namens der neuen Entität](./media/data-platform-cds-newentity-pq/existing-entity.png)
 

@@ -1,62 +1,78 @@
 ---
-title: Erstellen oder Bearbeiten von Formularen mit dem modellgesteuerten Formulardesigner | MicrosoftDocs
+title: Erstellen, Bearbeiten oder Konfigurieren von Formularen mit dem modellgesteuerten Formulardesigner | MicrosoftDocs
 ms.custom: ''
-ms.date: 04/21/2019
+ms.date: 08/26/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c357649ba68e6bce1b9df51d9601507c337afd31
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752450"
 ---
-
-# <a name="create-or-edit-forms-using-the-form-designer"></a>Erstellen oder Bearbeiten von Formularen mit dem Formulardesigner 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
-Verwenden Sie den Formulardesigner, um Formulare für modellgesteuerte Apps zu erstellen oder zu bearbeiten. 
+# <a name="create-edit-or-configure-forms-using-the-form-designer"></a>Erstellen, Bearbeiten oder Konfigurieren von Formularen mit dem Formulardesigner 
+Verwenden Sie den Formulardesigner, um Formulare für modellgesteuerte Apps zu erstellen, zu bearbeiten oder zu konfigurieren. 
 
 > [!IMPORTANT]
 > Der neue modellgesteuerte Formulardesigner unterstützt derzeit nicht das Bearbeiten von Kartenformularen. Weitere Informationen: [Formulartypen](types-forms.md)
 
 ## <a name="create-a-form"></a>Ein Formular erstellen 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
 2. Erweitern Sie **Daten** im linken Navigationsbereich und wählen Sie **Entitäten**. 
 3. Wählen Sie eine Entität, beispielsweise Firmenentität, und wählen Sie dann die **Formular**-Registerkarte 
 4. Wählen Sie **Formular hinzufügen** aus, und wählen Sie dann eines der folgenden Attribute aus
-    - **Hauptformular (Vorschau)**  
+    - **Hauptformular**  
     Die Inhalte des neuen Formulars werden mithilfe der vorhandenen Hauptformulardefinition ausgefüllt. Wenn mehrere Hauptformulare vorhanden sind, wird das oberste Formular der Formularreihenfolge verwendet, um das neue Formular auszufüllen. 
-    - **Schnellerfassungsformular (Vorschau)**
-    - **Schnellansichtsformular (Vorschau)**
+    - **Formular für Schnellerfassung**
+    - **Schnellansichtsformular**
 5. Wenn Sie die Formularänderungen abgeschlossen haben, wählen Sie **Speichern** aus, um das Formular zu speichern, oder wählen Sie **Veröffentlichen** aus, wenn Sie die Änderungen speichern und für App-Benutzer sichtbar anzeigen möchten.  
 
 ## <a name="edit-a-form"></a>Bearbeiten eines Formulars 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
 2. Erweitern Sie **Daten** im linken Navigationsbereich und wählen Sie **Entitäten**. 
 3. Wählen Sie eine Entität, beispielsweise Firmenentität, und wählen Sie dann die **Formular**-Registerkarte
 4. Wählen Sie den zu bearbeitenden Formularnamen aus.  
-    - Sie können auch die Zeile für ein Formular und dann in der Befehlsleiste **Formular bearbeiten (Vorschau)** auswählen
-    - Eine weitere Alternative ist, **...** neben dem Formularnamen und dann im Menü **Formular bearbeiten (Vorschau)** auszuwählen. 
+    - Sie können auch die Zeile für ein Formular und dann in der Befehlsleiste **Formular bearbeiten** auswählen
+    - Eine weitere Alternative ist, **...** neben dem Formularnamen und dann im Menü **Formular bearbeiten** auszuwählen. 
 5. Wenn Sie die Formularänderungen abgeschlossen haben, wählen Sie **Speichern** aus, um das Formular zu speichern, oder wählen Sie **Veröffentlichen** aus, wenn Sie die Änderungen speichern und für App-Benutzer sichtbar anzeigen möchten. 
+
+## <a name="configure-a-form"></a>Konfigurieren eines Formulars
+Dies sind die verfügbaren Eigenschaften für die Konfiguration eines Formulars, wenn Sie ein Formular mithilfe des Formulardesigners erstellen oder bearbeiten.
+
+|Name  |Beschreibung  |
+|---------|---------|
+|**Titel**  | Geben Sie einen aussagekräftigen Namen für andere Entwickler und App-Benutzer ein. Dieser Name wird App-Benutzern angezeigt. Wenn Benutzer Zugriff auf mehrere Formulare für eine Entität haben, wird dieser Name verwendet, um verschiedene Formulare voneinander zu unterscheiden. <br /><br />Diese Eigenschaft ist erforderlich. |
+|**Beschreibung** |  Geben Sie eine Beschreibung ein, die erläutert, wodurch sich das Formular von anderen Hauptformularen unterscheidet. Diese Beschreibung wird Entwicklern nur in der Liste der Formulare für eine Entität im Lösungs-Explorer angezeigt. |
+|**Maximale Breite** | Legen Sie eine maximale Breite (in Pixeln) fest, um die Breite des Formulars zu beschränken. Der Standardwert ist 1900. <br /><br />Diese Eigenschaft ist erforderlich. |
+|**Bild anzeigen** | Zeigen Sie das **Primäre Bild** der Entität an, falls eins festgelegt wurde. Mit dieser Einstellung kann das Bildfeld in der Überschrift des Formulars angezeigt werden. <br /><br /> Siehe Aktivieren oder Deaktivieren von Entitätsoptionen für weitere Informationen zu Entitätsoptionen. |
 
 ## <a name="see-also"></a>Siehe auch
 [Übersicht über den modellgestützten Formulardesigner](form-designer-overview.md)  
-[Ergänzen, Verschieben oder Löschen von Feldern in einem Formular mithilfe des Formulardesigners](add-move-or-delete-fields-on-form.md)  
-[Hinzufügen, Verschieben oder Löschen von Abschnitten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-sections-on-form.md)  
-[Hinzufügen, Verschieben oder Löschen von Registerkarten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-tabs-on-form.md)  
-[Im Formulardesigner verfügbare Eigenschaften](form-designer-properties.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Feldern in einem Formular](add-move-or-delete-fields-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Komponenten in einem Formular](add-move-configure-or-delete-components-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Abschnitten in einem Formular](add-move-or-delete-sections-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Registerkarten in einem Formular](add-move-or-delete-tabs-on-form.md)  
 [Konfigurieren von Kopfzeileneigenschaften im Formulardesigner](form-designer-header-properties.md)  
+[Hinzufügen und Konfigurieren einer Unterraster-Komponente in einem Formular](form-designer-add-configure-subgrid.md)  
+[Hinzufügen und Konfigurieren einer Schnellansichts-Komponente in einem Formular](form-designer-add-configure-quickview.md)  
+[Konfigurieren einer Suchkomponente in einem Formular](form-designer-add-configure-lookup.md)  
 [Verwenden der Strukturansicht im Formulardesigner](using-tree-view-on-form.md)  
-[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)
+[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)  

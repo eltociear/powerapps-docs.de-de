@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8ba0cef60b268caafb57e18ae80a522905ba45b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ca0b81cb1150fb744251b3dfca30c9b6ed8f90a5
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992748"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537107"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Verknüpfen von Funktionen in powerapps
@@ -61,7 +61,7 @@ Betrachten Sie eine **Products** -Entität mit den folgenden Beziehungen, wie im
 | Beziehungs Anzeige Name | Verwandte Entität | Beziehungstyp |
 | --- | --- |
 | Produkt Reservierung | Buchung | 1: n |
-| Product &harr;-Kontakt | Kontakt | M:n-Zahl |
+| Produkt &harr; Kontakt | Kontakt | M:n-Zahl |
 
 **Produkte** und **Reservierungen** sind über eine 1: n-Beziehung verknüpft.  So verknüpfen Sie den ersten Datensatz der **Reservations** -Entität mit dem ersten Datensatz der **Products** -Entität:
 
@@ -192,7 +192,7 @@ An diesem Punkt können Sie die Beziehung von einem Datensatz in einen anderen v
 
 1. optionale Wenn Sie eine Bezeichnung oberhalb von **Wenn gallery2**hinzugefügt haben, wiederholen Sie die vorherigen beiden Schritte für diese Bezeichnung.
 
-1. Stellen Sie sicher, dass das Duplikat von **Wenn gallery2** den Namen **Gallery2_1**hat, und legen Sie dann dessen **Items** -Eigenschaft auf diese Formel fest:
+1. Stellen Sie sicher, dass das Duplikat von **Wenn gallery2** **Gallery2_1**ist, und legen Sie dann die Eigenschaft **Items** auf diese Formel fest:
 
     ```powerapps-comma
     Filter( Reservations; IsBlank( 'Product Reservation' ) )
@@ -200,9 +200,9 @@ An diesem Punkt können Sie die Beziehung von einem Datensatz in einen anderen v
 
     Es wird eine Delegierungs Warnung angezeigt, aber Sie ist nicht mit der kleinen Datenmenge in diesem Beispiel zu tun.
 
-    ![Legen Sie die Items-Eigenschaft von Gallery2_1 fest.](media/function-relate-unrelate/reservations-lost.png)
+    ![Legen Sie die Items-Eigenschaft Gallery2_1](media/function-relate-unrelate/reservations-lost.png)
 
-Mit diesen Änderungen können Benutzer die Auswahl in **ComboBox1** für einen Kontakt löschen, wenn diese Person kein Produkt reserviert hat. Kontakte, die kein Produkt reserviert haben, werden in **Gallery2_1** angezeigt, wo Benutzer jeden Kontakt einem Produkt zuweisen können.
+Mit diesen Änderungen können Benutzer die Auswahl in **ComboBox1** für einen Kontakt löschen, wenn diese Person kein Produkt reserviert hat. Kontakte, die kein Produkt reserviert haben, werden in **Gallery2_1** angezeigt, in denen Benutzer jeden Kontakt einem Produkt zuweisen können.
 
    ![Veranschaulichen der Beziehung zwischen Funktionen und deren Verknüpfung in der 1: n-App](media/function-relate-unrelate/reservations-lostandfound.gif)
 
@@ -212,7 +212,7 @@ Mit diesen Änderungen können Benutzer die Auswahl in **ComboBox1** für einen 
 
 Die Beispiel Daten enthalten keine m:n-Beziehung, aber Sie erstellen eine Beziehung zwischen der Entität "Products" und der Entität "Contacts". Benutzer können jedes Produkt mit mehr als einem Kontakt und jedem Kontakt zu mehr als einem Produkt verknüpfen.
 
-1. Wählen Sie auf [dieser Seite](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)die Option **Daten** in der linken Navigationsleiste aus, und wählen Sie dann **Entitäten**aus.
+1. Wählen Sie auf [dieser Seite](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)die Option **Daten** in der linken Navigationsleiste aus, und wählen Sie dann **Entitäten**aus.
 
     ![Liste der Entitäten öffnen](media/function-relate-unrelate/entity-list.png)
 
@@ -226,7 +226,7 @@ Die Beispiel Daten enthalten keine m:n-Beziehung, aber Sie erstellen eine Bezieh
 
     ![Beziehungs Registerkarte für die Product-Entität](media/function-relate-unrelate/entity-relationships.png)
 
-1. Wählen Sie **Beziehung hinzufügen**@no__t **-1**m:n-.
+1. Wählen **Sie > ** m:n-Beziehung **Hinzufügen** aus.
 
     ![M:n-Beziehung hinzufügen](media/function-relate-unrelate/entity-manytomany.png)
 
@@ -313,11 +313,11 @@ M:n-Beziehungen sind symmetrisch. Sie können das Beispiel erweitern, um einem k
 
 1. Doppelte **Screen1**.
 
-    Das Duplikat erhält den Namen **Screen1_1** und bildet die Grundlage für die Betrachtung der Beziehungen von der Seite Kontakte.
+    Das Duplikat wird **Screen1_1** benannt und bildet die Grundlage für die Betrachtung der Beziehungen auf der Seite "Kontakte".
 
     ![Duplizieren eines Bildschirms](media/function-relate-unrelate/contacts-duplicate.png)
 
-1. Um die umgekehrte Ansicht zu erstellen, ändern Sie diese Formeln in den Steuerelementen von **Screen1_1**:
+1. Um die umgekehrte Ansicht zu erstellen, ändern Sie diese Formeln in den Steuerelementen **Screen1_1**:
 
     - Screen1_1. onvisible = `Refresh( Contacts )`
     - Gallery1_1. Items = `Contacts`
@@ -333,7 +333,7 @@ M:n-Beziehungen sind symmetrisch. Sie können das Beispiel erweitern, um einem k
 
     ![N:n-Beziehung beginnend mit Kontakten anzeigen](media/function-relate-unrelate/reverse-screen.png)
 
-1. Fügen Sie ein **Pfeil nach unten** ein, und legen **Sie dessen onselect** -Eigenschaft auf **Navigate (Screen1, None)** fest.  Gehen Sie auf **Screen1** mit der Formel **Navigation (Screen1_1, None)** .
+1. Fügen Sie ein **Pfeil nach unten** ein, und legen **Sie dessen onselect** -Eigenschaft auf **Navigate (Screen1, None)** fest.  Gehen Sie auf **Screen1** mit der Formel **Navigation (Screen1_1, keine)** .
 
     ![Navigation zwischen Bildschirmen hinzufügen](media/function-relate-unrelate/reverse-navigate.png)
 

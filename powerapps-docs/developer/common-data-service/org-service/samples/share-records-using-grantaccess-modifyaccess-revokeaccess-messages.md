@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Freigeben von Datensätzen mithilfe von GrantAccess, ModifyAccess und RevokeAccess (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie ein Datensatz mithilfe der GrantAccess-, ModifyAccess- und RevokeAcces-Message freigegeben wird.'
+title: 'Beispiel: Teilen von Datensätzen mit GrantAccess, ModifyAccess und RevokeAccess (Common Data Service) | Microsoft Docs'
+description: Dieses Beispiel zeigt, wie Sie einen Datensatz mit Hilfe von Berechtigung freigeben, ändern und widerrufen können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9e01ee56f6d0ef86d6a17fc0b3b4001227a3cc13
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748712"
 ---
 # <a name="sample-share-records-using-grantaccess-modifyaccess-and-revokeaccess-messages"></a>Beispiel: Datensätze mithilfe von GrantAccess, ModifyAccess und RevokeAccess Nachrichten teilen
 
@@ -32,7 +38,7 @@ Dieses Beispiel zeigt, wie ein Datensatz mit den nachfolgenden Meldungen geteilt
 
 Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/GrantModifyRevokeAccess) herunterladen.
 
-Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Erstellen Sie die erforderlichen Benutzer manuell in **Office 365**, um das Beispiel ohne Fehler auszuführen. Für dieses Beispiel erstellen Sie 2 Benutzerprofile **wie unten dargestellt**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
+Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Legen Sie die erforderlichen Benutzer manuell in **Office 365** an, um das Beispiel fehlerfrei auszuführen. Für dieses Beispiel erstellen Sie 2 Benutzerprofile **wie unten dargestellt**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
 
 **Vorname**: Dan<br/>
 **Nachname**: Wilson<br/>

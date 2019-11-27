@@ -1,6 +1,6 @@
 ---
-title: Berechnete und Rollupattribute (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie über die allgemeinen Elemente und Parameter, berechnete Attribute, Rollupattribute, rufen Sie einen berechneten Rollupfeldwert und SourceTypeMasks-Enumeration sofort ab.'
+title: Berechnete und Rollupattribute (Common Data Service) | Microsoft-Dokumente
+description: Erfahren Sie über die allgemeinen Elemente und Parameter, berechnete Attribute, Rollupattribute, rufen Sie einen berechneten Rollupfeldwert und SourceTypeMasks-Enumeration sofort ab.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,16 +10,22 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 826e535e823ffa433816c7d97a2e4aded7c51309
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753042"
 ---
 # <a name="calculated-and-rollup-attributes"></a>Berechnete und Rollupattribute
 
 *Berechnete* und *Rollup*-Attribute befreien den Benutzer von manuellen Berechnungen und lassen ihn sich auf die Arbeit konzentrieren. Systemadministratoren können jetzt ein Feld leicht definieren, das den Wert vieler allgemeiner Berechnungen enthält, ohne mit einem Entwickler arbeiten zu müssen. Entwickler können die Plattformfunktionen auch dazu nutzen, diese Berechnungen anzustellen, anstatt dies im eigenen Code zu tun.  
   
- [Video: Rollup und berechnete Felder in Microsoft Dynamics CRM 2015](http://youtu.be/RoahCH1p3T8)  
+ [Video: Rollup und berechnete Felder in Microsoft Dynamics CRM 2015](https://youtu.be/RoahCH1p3T8)  
   
 <a name="BKMK_CommonElements"></a>   
 ## <a name="common-elements-and-characteristics"></a>Gemeinsame Elemente und Eigenschaften  
@@ -89,9 +95,9 @@ search.app:
 > [!TIP]
 >  Als Entwickler, der eine Lösung in einer Entwicklungsumgebung testet, sollten Sie nicht 12 Stunden warten. Sie können dies beschleunigen. In der Liste **Systemaufträge** verwenden Sie die Ansicht **Seriensystemaufträge**, um die Liste zu feltern und den Auftrag **Massenberechnen von Rollupfeldern** zu suchen. Wenn der Auftrag ausgewählt ist, verwenden Sie **Weitere Aktionen** > **Später durchführen**, und legen Sie die Uhrzeit, die bald kommt, fest.  
 >   
->  Wenn Sie die Erstellung eines neuen Auftrag **Meassenberechnete Rollupfelder** programmgesteuert auslösen möchten, rufen Sie das Rollupattribut für <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata> mit v<xref:Microsoft.Xrm.Sdk.Messages.RetrieveAttributeRequest> ab und verwenden Sie <xref:Microsoft.Xrm.Sdk.Messages.UpdateAttributeRequest>, um das Attribut zu aktualisieren, ohne Änderungen vorzunehmen.  
+>  Wenn Sie die Erstellung eines neuen Auftrag **Massenberechnete Rollupfelder** programmgesteuert auslösen möchten, rufen Sie das Rollupattribut für <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata> mit <xref:Microsoft.Xrm.Sdk.Messages.RetrieveAttributeRequest> ab und verwenden Sie <xref:Microsoft.Xrm.Sdk.Messages.UpdateAttributeRequest>, um das Attribut zu aktualisieren, ohne Änderungen vorzunehmen.  
   
- Der Auftrag **Massenberechnete Rollupfelder** triit auf, sobald eine Lösung, die Rollupattribut enthält, importiert wird. Dabei wird davon ausgegangen, dass Sie eine Lösung in einer Zeit  installieren, die sich auf Benutzer nicht nachteilig auswirkt.  
+ Der Auftrag **Massenberechnete Rollupfelder** triit auf, sobald eine Lösung, die Rollupattribut enthält, importiert wird. Dabei wird davon ausgegangen, dass Sie eine Lösung in einer Zeit installieren, die sich auf Benutzer nicht nachteilig auswirkt.  
   
  Jedes Rollupattribut für eine Entität enthält auch zwei unterstützende Attribute für das Rollupattribut:  
   
@@ -178,7 +184,7 @@ search.app:
 ```  
   
 ### <a name="see-also"></a>Siehe auch  
- [Video: Rollup und berechnete Felder in Microsoft Dynamics CRM 2015](http://youtu.be/RoahCH1p3T8)   
+ [Video: Rollup und berechnete Felder in Microsoft Dynamics CRM 2015](https://youtu.be/RoahCH1p3T8)   
  [Einführung in die Entitätsattribute](/dynamics365/customer-engagement/developer/introduction-to-entity-attributes)   
  [Definieren berechneter Felder](https://technet.microsoft.com/library/dn832103.aspx)   
  [Rollupfelder definieren](https://technet.microsoft.com/library/dn832103.aspx)

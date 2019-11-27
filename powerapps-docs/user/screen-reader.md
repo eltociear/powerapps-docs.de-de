@@ -16,12 +16,12 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: 555a587a3c0eeb599439f713c9a99a7ace6b205a
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: c8ef71753fd743788b52b4f3578f829f153c0898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61545118"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543452"
 ---
 # <a name="use-a-screen-reader"></a>Verwenden einer Sprachausgabe 
 
@@ -29,7 +29,7 @@ ms.locfileid: "61545118"
 Sprachausgaben machen Modell gesteuerte Apps für Personen verfügbar, die eine geringe oder keine Vision haben oder zusätzliche Unterstützung für ein temporäres Szenario benötigen, z. b. die Augen Müdigkeit. Häufig verwendete Bildschirm Sprachausgaben, wie z. b. Sprachausgabe, Kiefer und NVDA, werden unterstützt. 
 
 - [Weitere Informationen zum Arbeiten mit der Microsoft-Sprachausgabe](https://support.microsoft.com/help/22798)
-- [Weitere Informationen zum Arbeiten mit JAWS](http://www.freedomscientific.com/Products/Blindness/JawsDocumentation)
+- [Weitere Informationen zum Arbeiten mit JAWS](https://www.freedomscientific.com/Products/Blindness/JawsDocumentation)
 
 
 - [Weitere Informationen zum Arbeiten mit NVDA](https://www.nvaccess.org/get-help/)
@@ -43,7 +43,7 @@ Sprachausgaben machen Modell gesteuerte Apps für Personen verfügbar, die eine 
 2.  Drücken Sie die **Tab** -Taste, bis Sie den Namen der Anwendung, die Sie öffnen möchten, hören – z. b. "Sales". Drücken **Sie die Eingabe** Taste, um die APP zu öffnen.
 
 ### <a name="use-scan-mode-in-narrator"></a>Überprüfungs Modus in der Sprachausgabe verwenden
-Sie können den Scanmodus verwenden, um schnell mithilfe der Pfeiltasten und der allgemeinen Tastenkombinationen zu navigieren. Springen Sie schnell zu Überschriften, Links, Sehenswürdigkeiten, Formularfeldern, Steuerelementen und Tabellen in diesem Modus. Aktivieren und deaktivieren Sie den Überprüfungs Modus durch Drücken der **Taste "Lock + SPACEBAR**". Weitere Informationen finden Sie unter: [Verwenden des Scanmodus](https://support.microsoft.com/en-us/help/22809/windows-10-narrator-using-scan-mode)
+Sie können den Scanmodus verwenden, um schnell mithilfe der Pfeiltasten und der allgemeinen Tastenkombinationen zu navigieren. Springen Sie schnell zu Überschriften, Links, Sehenswürdigkeiten, Formularfeldern, Steuerelementen und Tabellen in diesem Modus. Aktivieren und deaktivieren Sie den Überprüfungs Modus durch Drücken der **Taste "Lock + SPACEBAR**". Weitere Informationen: [Verwenden des Scanmodus](https://support.microsoft.com/help/22809/windows-10-narrator-using-scan-mode)
 
 ### <a name="find-your-way-around-the-app"></a>Finden Sie Ihre Art und Weise um die APP
 
@@ -62,9 +62,9 @@ Wenn Sie aus der letzten Spalte in der Tabelle wechseln, wechselt der Cursor zur
 #### <a name="forms"></a>Formulare
 Zum Navigieren in einem Formular mithilfe der Sprachausgabe stehen mehrere Navigationsmodi zur Verfügung, wobei die gängigsten Modi als Marken, Überschriften und Formularfelder dienen. Wenn Sie den Navigationsmodus ändern möchten, drücken Sie die Taste gedrückt + nach- **oben**. Halten Sie die Feststell Taste gedrückt, während Sie die nach-oben-Taste drücken, um die Modi zu durchlaufen, bis Sie den gewünschten Modus erhalten. Verwenden Sie dann die Taste mit den Pfeiltasten, um durch die verschiedenen Elemente zu navigieren. Wenn Sie z. b. im Abschnitt mit den Kontaktinformationen eines Kontakts zum Feld Nachname wechseln möchten, gehen Sie wie folgt vor:
 
-1.  Halten **Sie die** Feststell Taste gedrückt, und drücken Sie die nach-oben-Taste **,** bis Sie "Meilensteine" hören.
+1.  Halten Sie die Feststell Taste gedrückt, und drücken Sie die nach-oben **-Taste** **,** bis Sie "Meilensteine" hören.
 2.  Halten Sie die **Schließ** Taste gedrückt, und drücken Sie die nach- **Rechts** -Taste, bis Sie "Kontaktinformationen" erhalten.
-3.  Ändern Sie den Modus, indem Sie die Taste für die Feststell **Taste gedrückt** halten und die nach-oben-Taste drücken **,** bis Sie "Formularfelder" hören.
+3.  Ändern Sie den Modus, indem Sie die Taste für die Feststell Taste gedrückt halten und die nach-oben **-Taste drücken** **,** bis Sie "Formularfelder" hören.
 4.  Navigieren Sie zum Feld Last Name, indem Sie die Taste mit den nach-rechts-und nach-rechts-Pfeiltasten verwenden, bis Sie "Nachname" hören. Die Sprachausgabe kündigt auch den Steuerungstyp, den Wert, den Status und alle speziellen Anweisungen für das Feld an.
 
 Sie können auch die Tab-Taste verwenden, um schnell zu interaktiven Elementen im Formular zu navigieren. Einige Formularfelder verfügen über ein Symbol, das die Standardaktion ausführt, wenn Sie STRG + EINGABETASTE drücken. Ein e-Mail-Formular könnte z. b. ein Umschlag Symbol enthalten, das einen e-Mail-Editor öffnet. 
@@ -74,7 +74,7 @@ Sie können durch die Dashboarddiagramme navigieren, indem Sie die Tab-Taste und
 
 
 > [!NOTE]
-> Sie müssen das neueste [Windows 10](http://www.microsoft.com/enable/products/windows10/default.aspx) -Update installiert haben, damit alle Barrierefreiheits Funktionen für Diagramme verfügbar sind.
+> Sie müssen das neueste [Windows 10](https://www.microsoft.com/enable/products/windows10/default.aspx) -Update installiert haben, damit alle Barrierefreiheits Funktionen für Diagramme verfügbar sind.
 
 #### <a name="interactive-dashboard-streams"></a>Interaktive dashboardstreams
 Sie können die **Tab** -Taste oder die **UMSCHALT + TAB** -Taste verwenden, um zwischen interaktiven dashboardstreams zu wechseln, z. b. im Konten Dashboard. Sie können auch einfach den Navigationsmodus ändern, bis Sie "Überschriften" hören, und dann die **Tab** -Taste verwenden, um schnell zwischen dashboardstreams.

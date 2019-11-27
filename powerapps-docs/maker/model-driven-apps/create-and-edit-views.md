@@ -1,27 +1,33 @@
 ---
-title: Erstellen oder bearbeiten von Modell-angetriebenen App-Ansichten in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie eine Ansicht erstellt oder bearbeitet wird'
+title: Erstellen oder bearbeiten einer modellgesteuerten App-Ansicht in PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie eine Ansicht erstellt oder bearbeitet wird
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: bd1d393d-16ea-40ac-8136-26643c37dd2a
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7a83134fb655e67dba8b0aa211ba6f25ec383832
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759334"
 ---
 # <a name="create-or-edit-a-model-driven-app-view"></a>Erstellen oder bearbeiten einer Modell-angetriebene App-Ansicht
 
@@ -31,14 +37,14 @@ search.app:
   
 ### <a name="create-a-new-view"></a>Eine neue Ansicht erstellen  
   
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
     
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 
-2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die **Konto**Entität aus und wählen Sie die Registerkarte **Ansicht** 
+2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die **Konto**-Entität aus und wählen Sie die Registerkarte **Ansicht**. 
 
 3.  Wählen Sie **Ansicht hinzufügen** in der Symbolleiste.  
 
@@ -47,7 +53,7 @@ search.app:
     > [!div class="mx-imgBorder"] 
     > ![Eigenschaften anzeigen](media/view-properties.png)
   
-5.  Im rechten Bereich  unter Allgemeine Aufgaben wählen Sie **Spalten hinzufügen** und wählen Sie im Dialogfeld **Spalten hinzufügen** die Option **Anzahl der Mitarbeiter** und anschließend **OK** aus.  
+5.  Im rechten Bereich unter Allgemeine Aufgaben wählen Sie **Spalten hinzufügen** und wählen Sie im Dialogfeld **Spalten hinzufügen** die Option **Anzahl der Mitarbeiter** und anschließend **OK** aus.  
 
     > [!div class="mx-imgBorder"] 
     > ![Anzahl der Mitarbeiter-Spalten](media/column-no-employees.png)
@@ -59,17 +65,17 @@ search.app:
 
 7.  Aktivieren Sie **OK**, um das Dialogfeld **Filterkriterien bearbeiten** zu schließen und **Speichern und schließen** im Ansichtseditor aus.  
   
-8.  Beachten Sie, dass Ihre Ansicht nun von der Registerkarte **Ansichten** im PowerApps-Standort verfügbar ist und einer App hinzugefügt werden kann.
+8.  Beachten Sie, dass Ihre Ansicht nun von der Registerkarte **Ansichten** auf der Website PowerApps verfügbar ist und einer App hinzugefügt werden kann.
   
 ### <a name="edit-a-view"></a>Eine Ansicht bearbeiten  
   
-1.  Wählen Sie in der **Ansichten** Registerkarte auf dem PowerApps-Standort, die Ansicht aus **Anzahl der Mitarbeiter**.
+1.  Wählen Sie in der **Ansichten**-Registerkarte auf der Website PowerApps die Ansicht **Anzahl der Mitarbeiter** aus.
   
 2.  Ändern Sie im Feld **Name** einen Namen für die Ansicht auf **Anzahl der Mitarbeiter mit 25 oder mehr Mitarbeiter in Arizona** und wählen Sie dann **OK** aus.  
 
-3.  Im rechten Bereich  unter Allgemeine Aufgaben wählen Sie **Spalten hinzufügen** und wählen Sie im Dialogfeld **Spalten hinzufügen** die Option **Adresse 1: Stadt** und anschließend **OK** aus.  
+3.  Im rechten Bereich unter Allgemeine Aufgaben wählen Sie **Spalten hinzufügen** und wählen Sie im Dialogfeld **Spalten hinzufügen** die Option **Adresse 1: Stadt** und anschließend **OK** aus.  
 
-4. Im rechten Bereich der allgemeine Aufgaben wählen Sie **Filterkriterien bearbeiten**Im Dialogfeld bearbeitbare Filterkriterien  und fügen eine zweite Filter-Klausel hinzu. Wählen Sie **Adresse 2: Bundesland/Kanton** aus und wählen Sie **Gleich** und geben dann **Arizona** ein. 
+4. Im rechten Bereich der allgemeine Aufgaben wählen Sie **Filterkriterien bearbeiten**Im Dialogfeld bearbeitbare Filterkriterien und fügen eine zweite Filter-Klausel hinzu. Wählen Sie **Adresse 2: Bundesland/Kanton** aus und wählen Sie **Gleich** und geben dann **Arizona** ein. 
 
     > [!div class="mx-imgBorder"] 
     > ![Adresse 2: Bundesland/Kanton](media/column-address-2-state.png)

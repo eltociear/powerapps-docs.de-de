@@ -1,48 +1,52 @@
 ---
 title: Schneller Einstieg in die Nutzung einer bestehenden Umgebung zur Validierung Ihrer bestehenden Web-Client-Anwendung mit der einheitlichen Benutzeroberfläche | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie Ihre Transaktion vom Legacy-Webclient zur einheitlichen Benutzeroberfläche planen und durchführen können.'
+description: Erfahren Sie, wie Sie Ihre Transaktion vom Legacy-Webclient zur einheitlichen Benutzeroberfläche planen und durchführen können.
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 09/11/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
+ms.assetid: ''
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e39cb11b9883e93d341232bcdcbb43dc17fa491a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759774"
 ---
-
-
-<!--editor comment: I notice two mentions of Dynamics 365 Home page and both are followed by the URL but the text isn't linked. Just want to point that out in case it wasn't intentional. -->
-
-
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>Schneller Einstieg in die Nutzung einer bestehenden Umgebung zur Validierung Ihrer bestehenden Web Client App mit der einheitlichen Benutzeroberfläche.
+Dieses Schnellstartthema zeigt Ihnen, wie Sie eine bestehende Umgebung verwenden können, um eine Anwendung für die einheitliche Benutzeroberfläche basierend auf Ihrer aktuellen Konfiguration oder Standardlösung zu erstellen. Auf diese Weise können Sie die einheitliche Benutzeroberfläche erkunden und testen, während Sie Ihre bestehenden Legacy-Webclient-Anwendungen parallel ausführen. Ein Benutzer kann dann zwischen den Umgebungen für eine Side-by-Side-Ansicht wechseln. 
 
-Dieses Schnellstartthema zeigt Ihnen, wie Sie eine bestehende Umgebung verwenden können, um eine Anwendung für die einheitliche Benutzeroberfläche basierend auf Ihrer aktuellen Konfiguration oder Standardlösung zu erstellen. Auf diese Weise können Sie die einheitliche Benutzeroberfläche erkunden und testen, während Sie Ihre bestehenden Legacy-Webclient-Anwendungen parallel ausführen. Ein Benutzer kann dann zwischen den Umgebungen für eine Side-by-Side-Ansicht wechseln. Ähnliche Anweisungen, die Ihnen zeigen, wie Sie eine neue Sandbox-Umgebung erstellen, um das Testen zu isolieren und nur die Einheitliche Benutzeroberfläche anzuzeigen, finden Sie unter [Schnellstart für die Umstellung Ihrer Dynamics 365 for Customer Engagement Apps Legacy Web Client-Anwendung auf die Einheitliche Benutzeroberfläche](transition-web-app.md).
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3JzyI]
+
+Ähnliche Anweisungen, die Ihnen zeigen, wie Sie eine neue Sandbox-Umgebung erstellen, um den Test zu isolieren und nur die Einheitliche Benutzeroberfläche-Erfahrung anzuzeigen, finden Sie unter [Schnellstart für die Umstellung Ihrer älteren Dynamics 365 Web-Client-Anwendung auf die einheitliche Benutzeroberfläche](transition-web-app.md).
 
 > [!IMPORTANT]
->  Für Umgebungen mit Dynamics 365 for Field Service oder Dynamics 365 for Project Service Automation Apps siehe [Dynamics 365 for Customer Engagement Apps](transition-web-app.md#dynamics-365-for-customer-engagement-apps).
+>  Für Umgebungen mit Dynamics 365 Field Service oder Dynamics 365 Project Service Automation Apps siehe [Dynamics 365 Apps](transition-web-app.md#dynamics-365-apps).
 
 ## <a name="prerequisites"></a>Voraussetzungen 
-- Eine bestehende Dynamics 365 for Sales oder Service Legacy Web Client Anwendung. 
+- Eine bestehende veraltete Web-Client-Anwendung von Dynamics 365 Sales oder Service. 
 - Obwohl nicht erforderlich, empfehlen wir Ihnen, Ihre Anwendung in einer Nicht-Produktivumgebung zu testen. Mehr Informationen: [Verwalten Sie Sandbox-Instanzen](/dynamics365/customer-engagement/admin/manage-sandbox-instances). 
 
 ## <a name="overview"></a>Übersicht 
 Dieses Thema richtet sich an Bestandskunden, die derzeit ältere Web-Client-Anwendungen verwenden, die ihren Übergang zur einheitlichen Benutzeroberfläche planen und durchführen müssen. Um eine parallele Umgebung einzurichten, erstellen Sie eine neue Anwendung auf der Grundlage Ihrer Standardlösung, wie sie derzeit vorliegt. Dies kann in Ihrer aktuellen Entwicklungs-Sandbox-Umgebung erfolgen, ohne Ihre bestehende Arbeit zu beeinträchtigen.
 
-Nach Abschluss der Schritte in diesem Artikel können Benutzer mit der entsprechenden Rolle Ihre neue App in der App-Liste sowohl in der Dropdown-Liste Dynamics 365 for Customer Engagement als auch auf der Startseite von Dynamics 365 (http://home.dynamics.com).
+Nach Abschluss der Schritte in diesem Artikel können Benutzer mit der entsprechenden Rolle Ihre neue App in der App-Liste sowohl auf der Dynamics 365 Dropdown-Liste als auch auf der Dynamics 365-Startseite (https://home.dynamics.com) sehen.
 
 ![App-Liste](media/app-list.png)
 
@@ -58,10 +62,10 @@ Der Prozess zur Validierung Ihrer bestehenden Web Client App in einer bestehende
 2.  Erstellen einer neuen modellbasierten Anwendung 
 3.  App-Eigenschaften konfigurieren  
 
-Wenn Sie kürzlich den Modus **Nur einheitliche Benutzeroberfläche verwenden** auf **Ein** in Ihrer Entwicklungsumgebung umgestellt haben, z.B. durch Befolgen des Themas [Schnellestart für die Umstellung Ihrer Dynamics 365 for Customer Engagement Apps Legacy Web Client Anwendung auf die einheitliche Benutzeroberfläche](transition-web-app.md), müssen Sie die Einstellung auf **Aus** zurücksetzen, damit Sie die vorhandenen Legacy Web Client Apps ausführen können.
+Wenn Sie kürzlich den Modus **Nur einheitliche Benutzeroberfläche verwenden** auf **Ein** in Ihrer Entwicklungsumgebung umgestellt haben, z.B. durch Befolgen des [Schnellstart für die Umstellung Ihrer Dynamics 365 Legacy Web Client Anwendung auf die einheitliche Benutzeroberfläche](transition-web-app.md) Thema, müssen Sie die Einstellung auf **Aus** zurücksetzen, damit Sie die vorhandenen Legacy Web Client Anwendungen ausführen können.
 
 ### <a name="create-a-new-solution-thats-based-on-the-default-solution"></a>Erstellen Sie eine neue Lösung, die auf der Standardlösung basiert.
-1. Melden Sie sich beim [PowerApps-Maker-Portal](https://make.powerapps.com) an.   
+1. Melden Sie sich beim [PowerApps Herstellerportal](https://make.powerapps.com) an.   
 2. Wählen Sie aus der Liste der Umgebungen die gewünschte Umgebung aus.  
 3. Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus. 
 4. Wählen Sie in der Menüleiste **Neue Lösung**. 
@@ -84,17 +88,17 @@ In diesem Schritt erstellen Sie eine neue App, die Ihre bestehenden Anpassungen 
 4. Wählen Sie in der Liste **Lösung auswählen** **Standardlösung**, in der Liste **Sitemap auswählen** **Sitemap auswählen**, und wählen Sie dann **Beendet**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Auswahl einer bestehenden Lösung](media/select-existing-solution.png "Auswahl einer bestehenden Lösung")
+   > ![Auswählen einer vorhandenen Lösung](media/select-existing-solution.png "Auswählen einer vorhandenen Lösung")
 
 5. Der App Designer wird geöffnet und zeigt alle App-Komponenten an, die in der Standardlösung enthalten waren. Wählen Sie **Veröffentlichen** aus.  
 6. Nachdem der Veröffentlichungsprozess abgeschlossen ist, wählen Sie **Abspielen**.  
 
-Im Browser öffnet sich ein neues Fenster mit Ihrer neuen modellbasierten Anwendung, die alle Entitäten, Sitemap- und Sitemap-Anpassungen enthält, die in Ihrer Standardanwendung Dynamics 365 for Customer Engagement enthalten sind.  
+Im Browser öffnet sich ein neues Fenster mit Ihrer neuen modellgesteuerten Anwendung, die alle Entitäten, Sitemap- und Sitemap-Anpassungen enthält, die in Ihrer Standardanwendung Dynamics 365 enthalten sind.  
 
 > [!div class="mx-imgBorder"] 
-> ![Neue App für die einheitliche Benutzeroberfläche](media/new-unified-interface-app.png "Neue App für die einheitliche Benutzeroberfläche")
+> ![Neue Einheitliche Oberfläche-App](media/new-unified-interface-app.png "Neue Einheitliche Oberfläche-App")
 
-Beachten Sie, dass, wenn Sie mit dem PowerApps-Maker-Portal **Lösungen** zum Browser-Tab zurückkehren, Ihre neue modellbasierte Anwendung und eine ähnlich benannte Sitemap-Client-Erweiterung beide Teil der von Ihnen erstellten Lösung sind.  
+Beachten Sie, dass, wenn Sie mit dem Bereich PowerApps des Herstellerportals **Lösungen** auf die Registerkarte Browser zurückkehren, Ihre neue modellgetriebene Anwendung und eine ähnlich benannte Sitemap-Client-Erweiterung Teil der von Ihnen erstellten Lösung sind.  
 
 > [!div class="mx-imgBorder"] 
 > ![Lösungskomponenten](media/solution-assets.png "Lösungskomponenten")
@@ -121,20 +125,20 @@ Zu den Aufgaben, die zur Konfiguration der modellbasierten App-Eigenschaften erf
     > Stellen Sie sicher, dass allen Benutzern mindestens eine Sicherheitsrolle zugewiesen wird, die **Lesen**-Zugriff auf das Recht **Modellbasierte App** enthält. Diese Berechtigung finden Sie auf der Registerkarte Anpassung in der Sicherheitsrolle. Benutzer ohne diese Berechtigung erhalten beim Öffnen einer modellbasierten App einen Fehler.  Beachten Sie, dass die Sicherheitsrollen Systemadministrator und Systemanpasser dieses Recht bereits aktiviert haben. 
  
    > [!div class="mx-imgBorder"] 
-   > ![Rechte für modellbasierte App](media/model-driven-app-privilege.png "Rechte für modellbasierte App")
+   > ![Recht „Modellgesteuerte App“](media/model-driven-app-privilege.png "Recht „Modellgesteuerte App“")
 
 5. Optional können Sie im Bereich **Rollen verwalten** das **App URL-Suffix** erweitern, um die benutzerfreundliche URL für die Modell-basierte App anzupassen. Beachten Sie, dass Sie fast alles angeben können. Geben Sie beispielsweise *neu* ein, damit die Vorschau die URL *https://YourEnvironment.crm.dynamics.com/apps/new* anzeigt.   
 
    > [!div class="mx-imgBorder"] 
-   > ![App URL-Suffix](media/app-url-suffix.png "App URL-Suffix")
+   > ![Suffix der App-URL](media/app-url-suffix.png "Suffix der App-URL")
 
    Dies wird zur freundlichen URL, die verwendet und weitergegeben werden kann, so dass Benutzer direkt in die einheitliche Benutzeroberfläche einsteigen können. Benutzer können diesen Link zu ihrer Bequemlichkeit mit einem Lesezeichen versehen. 
 
 6. Wählen Sie **Speichern** aus. 
 
-Nun können Benutzer mit der entsprechenden Rolle Ihre neue App in der App-Liste sowohl in der Dropdown-Liste Dynamics 365 for Customer Engagement als auch auf der Startseite von Dynamics 365 (http://home.dynamics.com). 
+Nun können Benutzer mit der entsprechenden Rolle Ihre neue App in der App-Liste sowohl in der Dropdown-Liste der Dynamics 365-App als auch auf der Dynamics 365-Startseite (https://home.dynamics.com) sehen. 
   
-   ![Appliste](media/app-list.png "Appliste")
+   ![App-Liste](media/app-list.png "App-Liste")
 
 Da der Modus **Nur Einheitliche Benutzeroberfläche verwenden** auf **Aus** eingestellt ist, werden Benutzer, die zur Root-URL Ihrer Umgebung navigieren, weiterhin auf der Standardanwendung **Dynamics 365 - Custom** landen. Dies wird erwartet, wenn Sie Ihre bestehenden Legacy-Webclient-Anwendungen beim Testen und Arbeiten an den Anwendungen der einheitlichen Benutzeroberfläche weiterhin unterstützen möchten.  
 
@@ -151,10 +155,10 @@ Jetzt sind Sie bereit, die App zu starten. Sie können die neue App für die ein
 Wenn Ihre Anwendung die einheitliche Benutzeroberfläche präsentiert, können Sie mit der Validierung Ihrer Anwendung, Prozesse und Anpassungen beginnen, um festzustellen, wie der Übergang aussehen wird. Wir empfehlen Ihnen, alle Anwendungsfälle zu testen, aber Sie können mit den kritischsten beginnen oder in logische Entwurfsmuster gruppieren. Da die einheitliche Benutzeroberfläche auf einem responsiven Design basiert, empfehlen wir Ihnen, Tests immer mit verschiedenen Geräten mit unterschiedlichen Bildschirmauflösungen durchzuführen. Während Sie die Anwendung testen, können Sie überprüfen, ob Ihre Anpassungen mit der einheitlichen Benutzeroberfläche kompatibel sind und ob es Funktionen gibt, die ein Redesign erfordern oder fehlende Funktionen aufweisen.  
 
 > [!IMPORTANT]
-> Die aktuelle Version von Common Data Service und Dynamics 365 for Customer Engagement Apps enthält noch einige veraltete Funktionen. Sie sollten Ihre Anwendung auf veraltete Funktionen überprüfen und bei Bedarf durch neue Funktionen ersetzen. Mehr Informationen: [Wichtige Änderungen (veraltete Elemente), die in Dynamics 365 Customer Engagement](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming) kommen.
+> Die aktuelle Version von Common Data Service und modellgetriebenen Apps in Dynamics 365 enthält noch einige veraltete Funktionen. Sie sollten Ihre Anwendung auf veraltete Funktionen überprüfen und bei Bedarf durch neue Funktionen ersetzen. Mehr Informationen: [Wichtige Änderungen (veraltet) kommen ](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)
 
 > [!TIP]
-> Das PowerApps Checker-Tool unterstützt Sie bei der Qualitätsprüfung der Komponenten Ihrer Lösung.  Mehr Informationen: [Mit dem Solution Checker können Sie Ihre modellbasierten Anwendungen in PowerApps validieren](../common-data-service/use-powerapps-checker.md).
+> Das PowerApps Checker-Tool unterstützt Sie bei der Qualitätsprüfung der Komponenten Ihrer Lösung.  Mehr Informationen: [Verwenden Sie den Solution Checker, um Ihre modellgetriebenen Anwendungen in PowerApps](../common-data-service/use-powerapps-checker.md) zu validieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Basierend auf Ihren Erkenntnissen kann Ihr Implementierungsteam oder Ihr Partner den Aufwand für die Umstellung Ihrer Anwendung auf die einheitliche Benutzeroberfläche abschätzen und mögliche Verbesserungen der Benutzerfreundlichkeit identifizieren. Mit einer Vielzahl neuer Funktionen und Fähigkeiten, die in der einheitlichen Benutzeroberfläche verfügbar sind, besteht die Möglichkeit, den Wert für Ihre Anwendungsbenutzer zu erhöhen. 
@@ -167,9 +171,9 @@ Mehr Informationen: [Entwerfen Sie modellbasierte Anwendungen mit dem App Design
 [Einheitliche Benutzeroberfläche - Playbook](unified-interface-playbook.md) <br />
 [Annäherung an eine Benutzererfahrung und Übergang zur einheitlichen Benutzeroberfläche](approaching-unified-interface.md) <br />
 [Über „Einheitliche Oberfläche”](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[Was sind modellgesteuerte Apps in PowerApps?](model-driven-app-overview.md) <br />
+[Was sind modellgetriebene Apps in PowerApps?](model-driven-app-overview.md) <br />
 [Aktualisieren Ihrer Apps auf die einheitliche Oberfläche](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [Informationen zum Konfigurieren von Dashboards für interaktive Funktionen](configure-interactive-experience-dashboards.md) <br />
 [Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen](use-custom-controls-data-visualizations.md) <br />
-[Übersicht über das PowerApps component framework](/powerapps/developer/component-framework/overview) <br />
+[PowerApps component framework Übersicht](/powerapps/developer/component-framework/overview) <br />
 [Einheitliche Benutzeroberfläche für alle](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)

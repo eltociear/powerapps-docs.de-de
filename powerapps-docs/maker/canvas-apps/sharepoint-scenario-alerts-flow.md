@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b8495c22a703a267cd3ab888247e5cbf6ef6a81d
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537469"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900397"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Einrichten von Datenwarnungen für das Power BI-Dashboard
 > [!NOTE]
-> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von powerapps, der Energie Automatisierung und der Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 In dieser Aufgabe wird Power BI eine Warnung hinzugefügt, mit der informiert wird, ob die Genehmigung ausstehender Projekte zu lange dauert, sowie einen Flow, der bei Auftreten dieser Warnung reagiert. Weitere Informationen zu Warnungen finden Sie unter [Datenwarnungen im Power BI-Dienstservice](https://docs.microsoft.com/power-bi/service-set-data-alerts).
 
 ## <a name="step-1-create-an-alert"></a>Schritt 1: Erstellen einer Warnung
 1. Öffnen Sie im Power BI-Dienst das Dashboard, das Sie in der vorherigen Aufgabe erstellt haben.
-2. Klicken oder tippen Sie auf der Karte mit der Zahl auf die Auslassungspunkte (**. . .**).
+2. Klicken oder tippen Sie auf der Karte mit der Zahl auf die Auslassungspunkte ( **. . .** ).
    
     ![Karte „Max days pending approval“ (Max. Anzahl Tage ausstehende Genehmigung)](./media/sharepoint-scenario-alerts-flow/07-01-01-tile-ellipsis.png)
 3. Klicken oder tippen Sie auf ![Glockensymbol](./media/sharepoint-scenario-alerts-flow/icon-bell.png).
@@ -43,12 +43,12 @@ In dieser Aufgabe wird Power BI eine Warnung hinzugefügt, mit der informiert wi
 
 Die Warnung wird nicht sofort ausgelöst, obwohl der Wert 56 über dem Schwellenwert 25 liegt. Sie wird beim Aktualisieren der Daten ausgelöst. Dies wird beim [vollständigen Durcharbeiten des Szenarios](sharepoint-scenario-summary.md) veranschaulicht.
 
-Beim Auslösen der Warnung sendet Power BI eine E-Mail an den Ersteller der Warnung, und im nächsten Schritt erfahren Sie, wie zusätzliche E-Mails mit Microsoft Flow gesendet werden.
+Wenn die Warnungen ausgelöst werden, sendet Power BI eine e-Mail an den Ersteller der Warnung, und im nächsten Schritt erfahren Sie, wie Sie im nächsten Schritt zusätzliche e-Mails mithilfe der Energie Automatisierung senden.
 
-## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Schritt 2: Erstellen Sie einen Flow, der auf die Warnung reagiert
+## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Schritt 2: Erstellen eines Flows, der auf die Warnung reagiert
 1. Melden Sie sich bei flow.microsoft.com an, und klicken oder tippen Sie auf **Dienste** und anschließend auf **Power BI**.
    
-    ![Power BI in Microsoft Flow](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)
+    ![Power BI in der Energie Automatisierung](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)
 2. Klicken oder tippen Sie auf **Eine E-Mail an eine beliebige Zielgruppe senden, sobald durch Power BI-Daten eine Warnung ausgelöst wird**.
    
     ![Eine E-Mail an eine beliebige Zielgruppe senden, sobald durch Power BI-Daten eine Warnung ausgelöst wird](./media/sharepoint-scenario-alerts-flow/07-01-06-alert-flow.png)

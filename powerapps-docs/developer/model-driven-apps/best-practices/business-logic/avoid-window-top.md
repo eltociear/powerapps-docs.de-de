@@ -1,6 +1,6 @@
 ---
 title: Vermeiden der Verwendung von window.top | MicrosoftDocs
-description: 'Beschreibt, wie Sie Skriptfehler und falsches Anwendungsverhalten im Zusammenhang mit der Verwendung von window.top in JavaScript-Anpassungen vermeiden können.'
+description: Beschreibt, wie Sie Skriptfehler und falsches Anwendungsverhalten im Zusammenhang mit der Verwendung von window.top in JavaScript-Anpassungen vermeiden können.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: daa8e5a4a8aaff4b2aecb0942783a84eed328dfb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748305"
 ---
 # <a name="avoid-using-windowtop"></a>Vermeiden Sie die Verwendung von window.top
 
@@ -32,7 +38,7 @@ search.app:
 ## <a name="symptoms"></a>Symptome
 
 - Der folgende Skriptfehler wird den Benutzern angezeigt oder in Ihre Fehlerprotokolle aufgenommen: `Error: Blocked a frame with origin "https://<yourinstance>.dynamics.com" from accessing a cross-origin frame.`
-- Anpassungen verhalten sich möglicherweise nicht korrekt im Zusammenhang mit Dynamics 365 App for Outlook, Dynamics 365 for phones and tablets oder einer externen Anwendung, die den Common Data Service innerhalb eines Iframe hostet.
+- Anpassungen verhalten sich möglicherweise nicht korrekt im Kontext von Dynamics 365 App for Outlook, Dynamics 365 für Smartphones und Tablets, oder einer externen Anwendung, die den Common Data Service innerhalb eines Iframe hostet.
 
   > [!NOTE]
   > Es kann einige Szenarien geben, in denen die Fehlerbehandlung den Fehler maskiert und die Skriptverarbeitung fortsetzt, was zu unerwartetem Verhalten führt.
@@ -41,7 +47,7 @@ search.app:
 
 ## <a name="guidance"></a>Anleitung
 
-Vermeiden Sie die Verwendung von `window.top` in Skripten, die im Rahmen von Dynamics 365 App for Outlook, Dynamics 365 for phones and tablets oder einer externen Anwendung laufen, die den Common Data Service innerhalb eines Iframe hostet. Auch wenn diese Szenarien derzeit nicht für Ihr Unternehmen gelten, sollten Sie die Verwendung von `window.top` vermeiden oder sich vor diesem Problem schützen.
+Vermeiden Sie die Verwendung von `window.top` in Skripten, die im Rahmen von Dynamics 365 App for Outlook, Dynamics 365 für Smartphones und Tablets, oder einer externen Anwendung laufen, die den Common Data Service innerhalb eines Iframe hostet. Auch wenn diese Szenarien derzeit nicht für Ihr Unternehmen gelten, sollten Sie die Verwendung von `window.top` vermeiden oder sich vor diesem Problem schützen.
 
  > [!IMPORTANT]
  > Die Verwendung von `window.parent` oder Variationen der übergeordneten Hierarchie (z. B. `window.parent.parent`) können die gleichen Symptome verursachen.

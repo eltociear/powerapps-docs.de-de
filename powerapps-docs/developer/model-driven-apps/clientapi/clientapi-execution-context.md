@@ -1,19 +1,25 @@
 ---
 title: Client API-Ausführung in modellgestützten Apps| MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 1fcbf0fd-4e47-4352-a555-9315f7e57331
 author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bee9857849db9199462ed8a2b2cd8e67ba45e891
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748768"
 ---
 # <a name="client-api-execution-context"></a>Client-API-Ausführungskontext
 

@@ -1,31 +1,33 @@
 ---
-title: Verwenden der Common Data Service-Organisationsservices (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie mithilfe des Common Data Service-Organisationsservice mit Daten und Metadaten arbeiten können.'
+title: Verwenden des Common Data Service Organization Service (Common Data Service) | Microsoft Docs
+description: Lesen Sie, wie Sie mit dem Common Data Service Organization Service mit Daten und Metadaten arbeiten können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2d32c212a3b6c8f95f3de078d6849356ef3853c7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748534"
 ---
+# <a name="use-the-common-data-service-organization-service"></a>Verwenden Sie den Common Data Service Organization Service.
 
-# <a name="use-the-common-data-service-organization-service"></a>Nutzen des Common Data Service-Organisationsservice
+Der Organization-Service ist einer von zwei Webservices, mit denen Sie mit Daten und Metadaten in Common Data Service arbeiten können. Der andere ist die [Web-API](../webapi/overview.md).
 
-Der Organisationsservice ist eine von zwei Webdiensten, die Sie zum Arbeiten mit Daten und Metadaten in Common Data Service verwenden können. Der andere ist die [Web-API](../webapi/overview.md).
+Der Organisationsservice ist für die Verwendung mit dem.NET Framework optimiert und die SDK-Assemblies im Paket [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) NuGet stellen die Klassen für die <xref:Microsoft.Xrm.Sdk.IOrganizationService>-Schnittstelle zur Verfügung, die für die Arbeit mit Daten und Metadaten mit diesem Service erforderlich sind. 
 
-Der Organisationsservice wird für die Verwendung mit dem .NET Framework und den SDK-Assemblys im NuGet-Paket [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) optimiert, um die Klassen für die <xref:Microsoft.Xrm.Sdk.IOrganizationService>-Benutzeroberfläche bereitzustellen, die zum Arbeiten mit Daten und Metadaten unter Verwendung dieses Service erforderlich sind. 
-
-Einige Erweiterungsfunktionen, wie z. B. Plug-Ins und Workflowerweiterungen, sind von dem .NET Framework und den Klassen abhängig, die in diesen Assemblys definiert sind. Deshalb ist der Organisationsservice die einzige Option, wenn diese Methoden zum Erweitern von Common Data Service verwendet werden.
-
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-section](../includes/cc-d365ce-note-section.md)] [Verwenden des Dynamics 365 for Customer Engagement-Organisationsdiensts](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-organization-service)
+Einige Erweiterungsfunktionen, wie Plugins und Workflow-Erweiterungen, hängen vom .NET Framework und den in diesen Assemblies definierten Klassen ab, so dass der Organization Service die einzige Option ist, wenn Sie diese Methoden zur Erweiterung von Common Data Service verwenden.
 
 ## <a name="organization-service-assemblies"></a>Organisationsserviceassemblys
 

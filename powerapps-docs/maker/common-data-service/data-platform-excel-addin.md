@@ -9,21 +9,27 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa1602b59ed0fdfeec09a8bc7e5f1126249f071f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757486"
 ---
 # <a name="open-entity-data-in-excel"></a>Entitätsdaten in Excel öffnen
-Durch das Öffnen der Entitätsdaten in Microsoft Excel können Sie Daten mithilfe des Microsoft PowerApps Excel-Add-Ins schnell und problemlos anzeigen und bearbeiten. Das PowerApps Excel Add-In erfordert Microsoft Excel 2016.
+Durch das Öffnen von Entitätsdaten in Microsoft Excel können Sie Daten mithilfe des Microsoft PowerApps Excel-Add-Ins schnell und problemlos anzeigen und bearbeiten. Das PowerApps Excel Add-in erfordert Microsoft Excel 2016.
 
-![Excel-Add-In](./media/data-platform-cds-excel-addin/ExcelAddin.png "PowerApps-Excel-Add-In")
+![Excel-Add-In](./media/data-platform-cds-excel-addin/ExcelAddin.png "PowerApps Excel-Add-In")
 
 ## <a name="open-entity-data-in-excel"></a>Entitätsdaten in Excel öffnen
-1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**. Es werden alle Entitäten angezeigt.
+1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**. Es werden alle Entitäten angezeigt.
 2. Klicken Sie auf die Auslassungspunkte (...) rechts neben der Entität, an der Sie interessiert sind.
 3. Klicken Sie auf **In Excel öffnen** und öffnen Sie dann die Arbeitsmappe, die generiert wird. Diese Arbeitsmappe hat bindende Informationen für die Entität, einen Zeiger auf Ihre Umgebung und einen Zeiger auf das PowerApps Excel-Add-In.  
-4. In Excel klicken Sie auf **Bearbeitung aktivieren**, um das PowerApps Excel-Add-In zu aktivieren. Das Excel-Add-In wird in einen Bereich auf der rechten Seite des Excel-Fensters ausgeführt.
+4. In Excel klicken Sie auf **Bearbeitung aktivieren**, um das PowerApps Excel-Add-In auszuführen. Das Excel-Add-In wird in einen Bereich auf der rechten Seite des Excel-Fensters ausgeführt.
 5. Wenn Sie das PowerApps Excel-Add-In das erste Mal ausführen, klicken Sie auf **Diesem Add-In vertrauen**, um zuzulassen, dass das Excel-Add-Ins ausgeführt wird.
 6. Wenn Sie aufgefordert werden, sich anzumelden, folgen Sie der Aufforderung, klicken Sie auf **Anmelden** und melden Sie sich dann an, indem Sie dieselben Anmeldeinformationen verwenden, die Sie auf [powerapps.com](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden. Das Excel-Add-In verwendet einen früheren Anmeldungskontext und meldet Sie automatisch an, wenn möglich. Deshalb sollten Sie den Benutzernamen oberen rechts im Excel-Add-In verifizieren.
 
@@ -78,6 +84,6 @@ Falls ein Problem auftritt, das nicht hier nicht beschrieben wird, kontaktieren 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Verwalten von Feldern in einer Entität](data-platform-manage-fields.md)
 * [Beziehungen zwischen Entitäten definierten](data-platform-entity-lookup.md)
-* [Generieren einer App mit Common Data Service](../canvas-apps/data-platform-create-app.md)
-* [Erstellen einer App von Grund auf mit Common Data Service](../canvas-apps/data-platform-create-app-scratch.md)
+* [Generieren Sie eine App, indem Common Data Service](../canvas-apps/data-platform-create-app.md)
+* [Create an app from scratch using Common Data Service](../canvas-apps/data-platform-create-app-scratch.md)
 

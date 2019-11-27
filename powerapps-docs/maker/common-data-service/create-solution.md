@@ -1,27 +1,33 @@
 ---
 title: Erstellen einer Lösung | MicrosoftDocs
-description: 'Erfahren Sie, wie eine Lösung erstellt wird'
+description: Erfahren Sie, wie eine Lösung erstellt wird
 ms.custom: ''
 ms.date: 10/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: e21a4876-08b4-417a-a644-c577a27c5cf1
 caps.latest.revision: 12
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9e57aa7395b6c8fdbcfe35c944f625d9790f592a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757662"
 ---
 # <a name="create-a-solution"></a>Erstellen einer Lösung
 
@@ -29,7 +35,7 @@ Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich 
   
  Weitere Informationen zu Lösungskonzepte, siehe [Arbeiten mit Lösungen](solutions-overview.md).  
   
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** aus der linken Navigation. 
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** aus der linken Navigation. 
   
 2.  Klicken Sie auf **Neue Lösung**, und füllen Sie die erforderlichen Felder für die Lösung aus.
   
@@ -51,7 +57,7 @@ Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich 
   
  Daraufhin sehen Sie möglicherweise ein Dialogfeld **Fehlende erforderliche Komponenten**.  
    
- ![Dialogfeld für erforderliche Komponenten hinzufügen](media/crm-itpro-cust-addrequiredcomponents.PNG "Dialogfeld für erforderliche Komponenten hinzufügen")  
+ ![Dialog "Erforderliche Komponenten hinzufügen"](media/crm-itpro-cust-addrequiredcomponents.PNG "Dialog "Erforderliche Komponenten hinzufügen"")  
   
  Dieses Dialogfeld informiert Sie, dass die Lösungskomponente von anderen Lösungskomponenten abhängt. Wenn Sie **Nein, erforderliche Komponenten nicht einschließen** auswählen, kann die Lösung fehlschlagen, wenn Sie sie in eine andere Organisation importieren, in der alle diese erforderlichen Komponenten nicht vorhanden sind. Wenn der Lösungsimport erfolgreich ist, kann es sein, dass das Verhalten in der anderen Lösung nicht dem der ursprünglichen Lösung entspricht, da die Komponenten anders als die in der Quelllösung konfiguriert sind.  
   

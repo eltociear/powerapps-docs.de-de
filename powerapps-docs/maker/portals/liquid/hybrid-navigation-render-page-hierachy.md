@@ -1,6 +1,6 @@
 ---
-title: Verwenden der Hybrid Navigation zum Rendering der Seiten Hierarchie für ein Portal | MicrosoftDocs
-description: Anweisungen zum Verwenden der Hybrid Navigation zum Rendering der Seiten Hierarchie eines Portals.
+title: Verwenden der Hybrid-Navigation zum Rendern der Seitenhierarchie für ein Portal | MicrosoftDocs
+description: Anleitungen zum Verwenden von Hybrid-Navigation zum Rendern der Seitenhierarchie für ein Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -10,19 +10,19 @@ ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: aace949be3cc191af5edd95c461e422b9c3217f5
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975033"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708349"
 ---
-# <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>Rendering von bis zu drei Ebenen der Seiten Hierarchie mithilfe der Hybriden Navigation
+# <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>Rendern von bis zu drei Ebenen der Seitenhierarchie mithilfe der hybriden Navigation
 
-In diesem Beispiel wird ein Typ von Hybrid Navigation basierend auf der Portal Site Map gerendert, der bis zu drei Ebenen der Seiten Hierarchie rendert. Die Regeln für diese Komponente lauten:
+Dieses Beispiel rendert eine hybride Navigation auf Basis der Portalsiteübersicht, die bis zu drei Ebenen der Seitenhierarchie rendert. Die Regeln für diese Komponente sind:
 
-* Die Vorgänger Seiten der aktuellen Seite werden wieder auf der Startseite angezeigt (oder bis zur maximalen Tiefe, die durch den optionalen Parameter für die Tiefe\_Offset angegeben wird). 
-* Wenn die aktuelle Seite untergeordnete Elemente enthält, werden diese untergeordneten Seiten angezeigt.
-* Wenn die aktuelle Seite keine untergeordneten Elemente enthält, werden die gleich geordneten Elemente der aktuellen Seite angezeigt.
+* Die Vorängerseiten der aktuellen Seite werden angezeigt, zurück zur Homepage (oder die maximale Tiefe wie durch den optionalen Tiefe\_Versatz-Parameter festgelegt). 
+* Wenn die aktuellen Seite untergeordnete Elemente hat, werden diese untergeordneten Seiten angezeigt.
+* Wenn der aktuellen Seite keine untergeordnete Elemente hat, werden die Geschwisterelemente der aktuellen Seite angezeigt.
 
 ```xml
 {% assign depth_offset = depth_offset | default: 0 %}
@@ -253,7 +253,7 @@ In diesem Beispiel wird ein Typ von Hybrid Navigation basierend auf der Portal S
 ```
 ### <a name="see-also"></a>Siehe auch
 
-[Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Vorlage für eine Webvorlagen Seite](create-custom-template.md)  
-[Erstellen einer benutzerdefinierten Seitenvorlage zum Rendering eines RSS-Feeds](render-rss-custom-page-template.md)  
-[Rendering der der aktuellen Seite zugeordneten Entitäts Liste](render-entity-list-current-page.md)  
-[Rendering einer Website Kopfzeile und der primären Navigationsleiste](render-site-header-primary-navigation.md)  
+[Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Webseiten-Seitenvorlage](create-custom-template.md)  
+[Erstellen einer benutzerdefinierte Seitenvorlage zum Rendern eines RSS-Feed](render-rss-custom-page-template.md)  
+[Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist](render-entity-list-current-page.md)  
+[Rendern einer Websitekopfzeile und primären Navigationsleiste](render-site-header-primary-navigation.md)  

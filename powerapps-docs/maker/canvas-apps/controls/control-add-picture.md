@@ -1,24 +1,24 @@
 ---
 title: 'Steuerelement „Bild hinzufügen“: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Steuerelement „Bild hinzufügen“
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81c96c7a2a23a770acfcc1936147a3b466f8c86d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1970c373b7614644897620e2c6d60f4472add568
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993878"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650823"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="add-picture-control-in-powerapps"></a>Steuerelement „Bild hinzufügen“ in PowerApps
@@ -64,7 +64,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)** – die Gewichtung des Texts in einem-Steuerelement: **Fett**, **halb Fett**, **Normal**oder **heller**.
+**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -78,7 +78,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 
 **Media**: Ein Bezeichner für den Clip, der von einem Audio- oder Video-Steuerelement wiedergegeben wird.
 
-**[OnChange](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -90,7 +90,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -100,7 +100,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 
 **[Text](properties-core.md)** : Text, der angezeigt wird, wenn kein Bild hochgeladen wurde.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -126,7 +126,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 3. Fügen Sie ein **[Schaltfläche](control-button.md)** -Steuerelement hinzu, verschieben Sie es unter das Steuerelement **Bild hinzufügen**, und legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft für das **[Schaltfläche](control-button.md)** -Steuerelement auf die folgende Formel fest:<br>
    **Collect(MyPix; AddMediaButton1.Media)**
    
-    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
+    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder zu [anderen Funktionen](../formula-reference.md)?
 4. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu, und legen Sie dessen **[Items](properties-core.md)** -Eigenschaft auf **MyPix** fest.
 5. Drücken Sie F5, und klicken oder tippen Sie auf das **[Schaltfläche](control-button.md)** -Steuerelement.
    
@@ -150,5 +150,5 @@ Es gelten für die **[Schaltfläche](control-button.md)** und das **[Bild](contr
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * Für die Schaltfläche **Medien hinzufügen** muss **[TabIndex](properties-accessibility.md)** gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Die Schaltfläche **Medien hinzufügen** muss für Fokusindikatoren deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Die Schaltfläche **Medien hinzufügen** muss für Fokusindikatoren deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
  

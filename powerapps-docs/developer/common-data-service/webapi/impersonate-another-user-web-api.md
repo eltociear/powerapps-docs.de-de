@@ -1,6 +1,6 @@
 ---
-title: Wechsel der Identität eines Benutzers mithilfe der Web-API (Common Data Service) | Microsoft Docs
-description: 'Der Identitätswechsel wird verwendet, um die Geschäftslogik (Code) im Auftrag eines anderen Common Data Service auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen. Lesen Sie, wie Sie die Identität eines anderen Benutzers in Common Data Service mithilfe der Web-API wechseln können.'
+title: Annehmen eines anderen Benutzerkontos mit Web-API (Common Data Service) | Microsoft-Dokumentation
+description: Der Identitätswechsel wird verwendet, um die Geschäftslogik (Code) im Auftrag eines anderen Common Data Service-Benutzers auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses benutzers auszuführen. Lesen Sie, wie Sie eine andere Benutzeridentität in Common Data Service mit Hilfe der Web-API annehmen können
 ms.custom: ''
 ms.date: 03/18/2019
 ms.service: powerapps
@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 74d07683-63ff-4d05-a434-dcfd44cd634d
 caps.latest.revision: 9
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7958fa933701eb6ffc037dd8d5a04e641c6669ea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748618"
 ---
-
 <!-- TOD0: The higher level topic [Impersonate another user](../impersonate-another-user.md) should include all generic concepts.
 This topic should only cover the Web API specific details -->
 
@@ -34,7 +39,7 @@ Es gibt Zeiten, in denen Ihr Code im Namen eines anderen Benutzers Vorgänge aus
 
 ## <a name="requirements-for-impersonation"></a>Anforderungen für den Identitätswechsel
 
-Der Identitätswechsel wird verwendet, um die Geschäftslogik (Code) im Auftrag eines anderen Common Data Service auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen. Dies ist erforderlich, da die Common Data Service-Webdienste von verschiedenen Clients und Services im Auftrag eines Common Data Service-Benutzers aufgerufen werden können, etwa in einem Workflow oder einer benutzerdefinierten ISV-Lösung. Der Identitätswechsel betrifft zwei verschiedene Benutzerkonten: ein Benutzerkonto (A) wird bei der Ausführung von Code zur Ausführung einer Aufgabe im Auftrag eines anderen Benutzers (B) verwendet.  
+Der Identitätswechsel wird verwendet, um die Geschäftslogik (Code) im Auftrag eines anderen Common Data Service-Benutzers auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses benutzers auszuführen. Dies ist erforderlich, da die Common Data Service-Webdienste von verschiedenen Clients und Services im Auftrag eines Common Data Service-Benutzers aufgerufen werden können, etwa in einem Workflow oder einer benutzerdefinierten ISV-Lösung. Der Identitätswechsel betrifft zwei verschiedene Benutzerkonten: ein Benutzerkonto (A) wird bei der Ausführung von Code zur Ausführung einer Aufgabe im Auftrag eines anderen Benutzers (B) verwendet.  
   
 Benutzerkonto (A) benötigt die Berechtigung `prvActOnBehalfOfAnotherUser`, die in der Sicherheitsrolle "Stellvertretung" enthalten ist. Die aktuelle Gruppe von Rechten, die verwendet wird, um Daten zu ändern, ist die Schnittmenge der Rechte, die der Stellvertreterbenutzer besitzt, und der des Benutzers, dessen Identität angenommen wird. In anderen Worten: Benutzer (A) kann nur dann etwas tun, wenn Benutzer (A) und der Benutzer (B), dessen Identität angenommen wird, über die dazu erforderlichen Rechte verfügen.  
   

@@ -1,6 +1,6 @@
 ---
-title: Hierarchische Daten mit PowerApps abfragen und visualisieren | MicrosoftDocs
-description: 'Erfahren Sie, wie hierarchische verknüpfte Daten abgefragt und visualisiert werden'
+title: Abfrage und Visualisierung hierarchischer Daten mit PowerApps | MicrosoftDocs
+description: Erfahren Sie, wie hierarchische verknüpfte Daten abgefragt und visualisiert werden
 ms.custom: ''
 ms.date: 06/20/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 563c773bd2bec365a3459097e4c4e8428d624c00
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755265"
 ---
 # <a name="query-and-visualize-hierarchically-related-data"></a>Hierarchiebezogene Daten abfragen und visualisieren
 
@@ -37,26 +43,26 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>Abfragen von hierarchischen Daten  
- Mit Common Data Service werden hierarchische Datenstrukturen durch auf sich selbst verweisende Beziehungen der verknüpften Datensätze unterstützt. In der Vergangenheit mussten Sie die verknüpften Datensätze iterativ abfragen, um hierarchische Daten anzuzeigen. Jetzt können Sie verknüpften Daten in einem Schritt als Hierarchie abfragen. Sie können nach Entitätsdatensätzen abfragen, indem Sie die **Unter** und **Nicht Unter**-Logik verwenden. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workfloweditor verfügbar gemacht. Weitere Informationen zum Verwenden dieser Operatoren finden Sie unter [Konfigurieren von Workflowschritten](/flow/configure-workflow-steps). Weitere Information zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
+ Mit Common Data Service werden hierarchische Datenstrukturen durch selbstreferenzierende Beziehungen der Bezugsdatensätze unterstützt. In der Vergangenheit mussten Sie die verknüpften Datensätze iterativ abfragen, um hierarchische Daten anzuzeigen. Jetzt können Sie verknüpften Daten in einem Schritt als Hierarchie abfragen. Sie können nach Entitätsdatensätzen abfragen, indem Sie die **Unter** und **Nicht Unter**-Logik verwenden. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workfloweditor verfügbar gemacht. Weitere Informationen zum Verwenden dieser Operatoren finden Sie unter [Konfigurieren von Workflowschritten](/flow/configure-workflow-steps). Weitere Information zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
   
  Die folgenden Beispiele illustrieren verschiedene Szenarien für das Abfragen von Hierarchien:  
   
  Firmenhierarchie abfragen  
   
- ![Abfragen von Firmen in der Firmenhierarchie](media/query-accounts.png "Abfragen von Firmen in der Firmenhierarchie")  
+ ![Firmen in der Firmenhierarchie abfragen](media/query-accounts.png "Firmen in der Firmenhierarchie abfragen")  
   
  Firmenhierarchie abfragen, einschließlich verwandter Aktitvitäten  
   
- ![Aktivitäten zur abgefragten Firma](media/query-account-related-activities.png "Aktivitäten zur abgefragten Firma")  
+ ![Zugehörige Aktivitäten der Firma abfragen](media/query-account-related-activities.png "Zugehörige Aktivitäten der Firma abfragen")  
   
  Firmenhierarchie abfragen, einschließlich verwandter Geschäftschancen  
   
- ![Verkaufschancen zur abgefragten Firma](media/query-account-related-opportunities.png "Verkaufschancen zur abgefragten Firma")  
+ ![Zugehörige Verkaufschancen der Firma abfragen](media/query-account-related-opportunities.png "Zugehörige Verkaufschancen der Firma abfragen")  
   
  Um die Daten als Hierarchie abzufragen, müssen Sie die auf sich selbst verweisenden Beziehungen als hierarchisch festlegen. So aktivieren Sie die Hierarchie  
   
 
-1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
+1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
 
 2. Klicken oder tippen Sie auf eine vorhandene Entität oder [Erstellen Sie eine neue Entität](data-platform-create-entity.md)
 
@@ -80,13 +86,13 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
  Wenn Sie das Hierarchiesymbol auswählen, können Sie die Hierarchie mit der Strukturansicht auf der linken Seite der Kachelansicht auf der rechten Seite anzeigen, wie unten gezeigt:  
   
 > [!div class="mx-imgBorder"] 
-> ![Firmenstruktur und Kachelansicht](media/hierachy-security-accounts-tile-view.png "Firmenstruktur und Kachelansicht")  
+> ![Kontenstruktur und Kachelansicht](media/hierachy-security-accounts-tile-view.png "Kontenstruktur und Kachelansicht")  
   
  Einige weitere der vorgegebenen Systementitäten können für eine Hierarchie aktiviert werden. Diese Entitäten umfassen `Case`, `Contact`, `Opportunity`, `Order`, `Quote`, `Campaign` und `Team`. Alle benutzerdefinierten Entitäten können für eine Hierarchie aktiviert werden.  
   
 > [!TIP]
 >  Wenn eine Entität für eine Hierarchie aktiviert werden kann:  
->  Erweitern Sie im Projektmappen-Explorer die Entität, die Sie verwenden möchten. Die Entitätskomponente namens **Hierarchieeinstellungen** wird angezeigt. Die Entitäten, die nicht für eine Hierarchie aktiviert werden können, verfügen nicht über diese Komponente. Ausgenommen ist die Dynamics 365 Customer Engagement-Vertriebsgebietsentität. Obwohl **Hierarchieeinstellungen** für die Vertriebsgebietsentität angezeigt wird, kann die Entität nicht für eine Hierarchie aktiviert werden.  
+>  Erweitern Sie im Projektmappen-Explorer die Entität, die Sie verwenden möchten. Die Entitätskomponente namens **Hierarchieeinstellungen** wird angezeigt. Die Entitäten, die nicht für eine Hierarchie aktiviert werden können, haben diese Komponente nicht, mit Ausnahme der Entität Dynamics 365 Sales Territory. Obwohl **Hierarchieeinstellungen** für die Vertriebsgebietsentität angezeigt wird, kann die Entität nicht für eine Hierarchie aktiviert werden.  
   
  Was Sie beachten müssen, wenn Sie Visualisierungen erstellen:  
   
@@ -100,7 +106,7 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
  Betrachten wir ein Beispiel der Erstellung der Visualisierung einer benutzerdefinierten Entität. Wir haben eine benutzerdefinierte Entität namens new_Widget erstellt, eine auf sich selbst verweisende Beziehung und diese als hierarchisch markiert, wie hier gezeigt.  
  
 > [!div class="mx-imgBorder"] 
-> ![Widgetbeziehungsdefinition](media/widget-relationship-definition.png "Widgetbeziehungsdefinition")  
+> ![Widget-Beziehungsdefinition](media/widget-relationship-definition.png "Widget-Beziehungsdefinition")  
    
  Dann wählten wir in der Rasteransicht **Hierarchien-Einstellungen** die hierarchische Beziehung **Widget_new_Widget_new_Widget** aus. Im Formular füllten wir die Pflichtfelder aus. Wenn Sie die Beziehung noch nicht als hierarchisch markiert haben, führt Sie der Link im Formular wieder zu dem klassischen Enitätseditor, in dem Sie die Beziehung auch als hierarchisch markieren können.  
   
@@ -109,7 +115,7 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
 > [!div class="mx-imgBorder"] 
 > ![Schnellerfassung für Widget erstellen](media/create-quickf-orm.png "Schnellerfassung für Widget erstellen")  
   
- Nach dem Abschluss der Einrichtung, erstellten wir zwei Datensätze: Standardwidget und Premium-Widget. Nachdem das Premium-Widget durch Verwendung des Suchfeldes als Standardwidget festgelgt war, zeigte die new_Widget-Rasteransicht die Hierarchiesymbole, wie unten dargestellt:  
+ Nachdem wir die EInrichtung abgeschlossen haben, haben wir zwei Datensätze erstellt: Standard Widget und Premium Widget. Nachdem das Premium-Widget durch Verwendung des Suchfeldes als Standardwidget festgelgt war, zeigte die new_Widget-Rasteransicht die Hierarchiesymbole, wie unten dargestellt:  
   
 > [!div class="mx-imgBorder"] 
 > ![Hierarchieraster des Widgets](media/widget-hierarchy-grid.png "Hierarchieraster des Widgets")  
@@ -120,8 +126,8 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
  Wenn Sie das Hierarchiesymbol auswählen, wird die new_Widget-Hierarchie mit der Strukturansicht auf der linken Seite der Kachelansicht auf der rechten Seite angezeigt, und zeigt zwei Datensätze. Jede Kachel enthält vier Felder, die wir im **Kachelformular für Widget-Hierarchie** bereitstellten.  
  
  > [!div class="mx-imgBorder"] 
- > ![Struktur- und des Kachelansichten von Widgets](media/widget-tree-tiles.png "Struktur- und des Kachelansichten von Widgets")  
+ > ![Struktur- und Kachelansichten des Widgets](media/widget-tree-tiles.png "Struktur- und Kachelansichten des Widgets")  
   
 ## <a name="see-also"></a>Siehe auch  
- [Video: Hierarchische Sicherheitsmodellierung in](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)   
- [Video: Hierarchievisualisierung in](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+ [Video: Hierarchische Sicherheitsmodellierung in](https://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)   
+ [Video: Hierarchievisualisierung in](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

@@ -1,34 +1,42 @@
-- name: Best Practices und Handlungsempfehlungen für Common Data Service
+- name: Bewährte Methoden sowie Anweisungen zum Common Data Service
   href: index.md
   items:
-    - name: Anwenden von Geschäftslogik mithilfe von Code
+    - name: Geschäftslogik mit Code anwenden
       href: business-logic/index.md
       items:
-        - name: Vermeiden von Batchanforderungstypen in Plug-Ins und Workflowaktivitäten
+        - name: Vermeiden Sie die Verwendung von Batch-Requesttypen in Plugins und Workflow-Aktivitäten.
           href: business-logic/avoid-batch-requests-plugin.md
-        - name: Entwickeln von zustandslosen IPlugin-Implementierungen
+        - name: Entwicklung von IPlugin-Implementierungen als zustandslose Systeme
           href: business-logic/develop-iplugin-implementations-stateless.md
-        - name: Vermeiden der Registrierung eines duplizierten Plug-In-Schritts
+        - name: Keine Registrierung von Plug-in-Schritten duplizieren
           href: business-logic/do-not-duplicate-plugin-step-registration.md
-        - name: Einschließen von Filterattributen in die Plug-In-Registrierung
+        - name: Verwenden Sie keine parallele Ausführung in Plug-Ins und Workflow-Aktivitäten
+          href: business-logic/do-not-use-parallel-execution-in-plug-ins.md
+        - name: Implementierung aller Arten von Abfragen bei der Ergebnisfilterung mit PreOperation RetrieveMultiple
+          href: business-logic/implement-all-types-of-queries-when-filtering-preoperation-retrievemultiple.md
+        - name: Einbeziehen von Filterattributen mit Plugin-Registrierung
           href: business-logic/include-filtering-attributes-plugin-registration.md
-        - name: Beschränken der Registrierung von Plug-Ins für Retrieve- und RetrieveMultiple-Meldungen
+        - name: Einschränkung der Registrierung von Plugins für Retrieve- und RetrieveMultiple-Nachrichten
           href: business-logic/limit-registration-plugins-retrieve-retrievemultiple.md
-        - name: Optimieren der Entwicklung benutzerdefinierter Assemblys
+        - name: Optimierung der Entwicklung kundenspezifischer Assemblies
           href: business-logic/optimize-assembly-development.md
-        - name: Festlegen von „KeepAlive“ auf FALSE bei der Interaktion mit externen Hosts in einem Plug-In
+        - name: 'Entfernen von nicht unterstütztem Code, der Reflektion in benutzerdefinierten Workflowaktivitäten verwendet'
+          href: business-logic/remove-unsupported-code-using-reflection-workflow-activities.md
+        - name: 'KeepAlive auf falsch setzen, wenn Sie mit externen Hosts in einem Plug-in interagieren'
           href: business-logic/set-keepalive-false-interacting-external-hosts-plugin.md
-        - name: Verwenden von „InvalidPluginExecutionException“ in Plug-Ins und Workflowaktivitäten
+        - name: Timeout einstellen bei externen Anrufen in einem Plug-in
+          href: business-logic/set-timeout-for-external-calls-from-plug-ins.md
+        - name: InvalidPluginExecutionExceptionException in Plugins und Workflow-Aktivitäten verwenden
           href: business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities.md
-    - name: Arbeiten mit Daten mithilfe von Code
+    - name: Verwenden von Daten mit Code
       href: work-with-data/index.md
       items:
-        - name: Grenzwerte für API-Anforderungen
+        - name: API-Begrenzungen
           href: ../api-limits.md
-    - name: Arbeiten mit Metadaten mithilfe von Code
+    - name: Verwenden von Metadaten mit Code
       href: work-with-metadata/index.md
       items:
-        - name: Abrufen von veröffentlichten Metadaten
+        - name: Abrufen veröffentlichter Metadaten
           href: work-with-metadata/retrieve-published-metadata.md
-        - name: Abrufen von spezifischen Spalten für eine Entität über Abfrage-APIs
+        - name: Abrufen spezifischer Spalten für eine Entität über Query-APIs
           href: work-with-metadata/retrieve-specific-columns-entity-via-query-apis.md

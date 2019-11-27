@@ -1,5 +1,5 @@
 ---
-title: 'Anpassen der Bildschirmgröße und Ausrichtung einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist | MicrosoftDocs'
+title: Anpassen der Bildschirmgröße und Ausrichtung einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/25/2019
 ms.reviewer: ''
@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6be2a23a64108ec616fd95a0178d2008290bc289
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706017"
 ---
-
 # <a name="customize-the-screen-size-and-orientation-of-a-canvas-app-embedded-on-a-model-driven-form"></a>Anpassen der Bildschirmgröße und Ausrichtung einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist
 In diesem Thema wird erläutert, wie die Bildschirmgröße und Ausrichtung einer Canvas-App angepasst wird, die in einem modellgesteuerten Formular eingebettet ist.
 

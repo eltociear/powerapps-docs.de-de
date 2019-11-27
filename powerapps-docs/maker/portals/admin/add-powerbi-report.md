@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen eines Power BI Berichts oder Dashboards zu einer Webseite in einem Portal | MicrosoftDocs
-description: Anweisungen zum Hinzufügen eines Power BI Berichts oder Dashboards zu einer Webseite im Portal.
+title: Hinzufügen eines Power BI-Berichts oder -Dashboards zu einer Webseite im Portal | MicrosoftDocs
+description: Anleitung zum Hinzufügen eines Power BI-Berichts oder -Dashboards zu einer Webseite im Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -10,15 +10,15 @@ ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 3735a0ef1a26fdd19b7bfb7f6db717cf9bd07861
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976160"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710065"
 ---
 # <a name="add-a-power-bi-report-or-dashboard-to-a-web-page-in-portal"></a>Hinzufügen eines Power BI-Berichts oder -Dashboards zu einer Webseite im Portal
 
-Mithilfe des Liquid-Tags von [powerbi](../liquid/portals-entity-tags.md#powerbi) können Sie einer Webseite im Portal einen Power BI Bericht oder ein Dashboard hinzufügen. Sie können das-Tag im Feld **Kopieren** auf einer Webseite oder im **Quellfeld** einer Webvorlage hinzufügen. Wenn Sie einen Power BI Bericht oder ein Dashboard hinzufügen, der im neuen Arbeitsbereich in Power BI erstellt wurde, müssen Sie den Authentifizierungstyp im powerbi Liquid-Tag als powerbiembedded angeben.
+Sie können einen Power BI-Bericht oder -Dashboard zu einer Webseite im Portal hinzufügen, indem Sie den [powerbi](../liquid/portals-entity-tags.md#powerbi)-Liquid-Tag verwenden. Sie können den Tag im Feld **Kopieren** auf einer Webseite oder im Feld **Quelle** auf einem Webvorlagen hinzufügen. Wenn Sie einen Power BI-Bericht oder -Dashboard hinzufügen, das im neuen Arbeitsbereich in Power BI erstellt wird, müssen Sie den Authentifizierungstyp als powerbiembedded im powerbi-Liquid-Tag angeben.
 
 Beispiel: 
 
@@ -27,38 +27,38 @@ Beispiel:
 ```
 
 > [!NOTE]
-> Wenn Sie Aad als Authentifizierungstyp im powerbi Liquid-Tag angegeben haben, müssen Sie es für die erforderlichen Benutzer freigeben, bevor Sie den Bericht oder das Dashboard für sichere Power BI einer Webseite im Portal hinzufügen. Weitere Informationen finden Sie unter [Power BI Arbeitsbereich freigeben](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports#collaborate-with-coworkers-in-an-app-workspace) und [Power BI Dashboard und Bericht freigeben](https://docs.microsoft.com/power-bi/service-share-dashboards).
+> Wenn Sie AAD als den Authentifizierungstyp im powerbi-Liquid-Tag angegeben haben, müssen Sie ihn für die erforderlichen Benutzer freigeben, bevor Sie den sicheren Power BI-Bericht oder -Dashboard einer Webseite im Portal hinzufügen. Weitere Informationen: [Freigeben von Power BI-Arbeitsbereich](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports#collaborate-with-coworkers-in-an-app-workspace) und [Freigeben von Power BI-Dashboard und Bericht](https://docs.microsoft.com/power-bi/service-share-dashboards).
 
-## <a name="get-the-path-of-a-dashboard-or-report"></a>Den Pfad eines Dashboards oder Berichts erhalten
+## <a name="get-the-path-of-a-dashboard-or-report"></a>Den Pfad eines Dashboards oder Berichts abrufen
 
-1.  Melden Sie sich bei [Power BI](https://powerbi.microsoft.com/)an.
+1.  Melden Sie sich bei [Power BI](https://powerbi.microsoft.com/) an.
 
-2.  Öffnen Sie das Dashboard oder den Bericht, das Sie in Ihr Portal einbetten möchten.
+2.  Öffnen Sie das Dashboard oder den Bericht, die Sie in das Portal einbetten möchten.
 
-3.  Kopieren Sie die URL aus der Adressleiste.
-
-    > [!div class=mx-imgBorder]
-    > Der ![Pfad eines Power BI Dashboards]erhält(../media/powerbi-dashboard-url.png "den Pfad eines Power BI Dashboards") .
-
-## <a name="get-the-id-of-a-dashboard-tile"></a>ID einer dashboardkachel erhalten
-
-1.  Melden Sie sich bei [Power BI](https://powerbi.microsoft.com/)an.
-
-2.  Öffnen Sie das Dashboard, über das Sie eine Kachel in Ihr Portal einbetten möchten.
-
-3.  Zeigen Sie auf die Kachel, wählen Sie **Weitere Optionen**aus, und klicken Sie dann **auf im Fokus Modus öffnen**.
+3.  Kopieren Sie die URL in der Adressleiste.
 
     > [!div class=mx-imgBorder]
-    > ![Öffnen Power BI dashboardkachel im Fokus Modus](../media/powerbi-dashboard-tile-focus.png "Power BI dashboardkachel im Fokus Modus öffnen")
+    > ![Den Pfad eines Power BI Dashboards](../media/powerbi-dashboard-url.png "Den Pfad eines Power BI Dashboards abrufen") abrufen
 
-4.  Kopieren Sie die Kachel-ID aus der URL in der Adressleiste. Die Kachel-ID ist der Wert nach/Tiles/.
+## <a name="get-the-id-of-a-dashboard-tile"></a>Abrufen der ID einer Dashboard-Kachel
+
+1.  Melden Sie sich bei [Power BI](https://powerbi.microsoft.com/) an.
+
+2.  Öffnen Sie das Dashboard, von dem aus Sie eine Kachel in Ihr Portal einbetten möchten.
+
+3.  Zeigen Sie auf die Kachel, wählen Sie **Weitere Möglichkeiten**, und wählen Sie dann **Im Fokusmodus öffnen** aus.
 
     > [!div class=mx-imgBorder]
-    > ![Power BI dashboardkachel-ID](../media/powerbi-dashboard-tile-id.png "Power BI dashboardkachel-ID")
+    > ![Geöffnete Power BI Dashboardkachel im Fokusmodus](../media/powerbi-dashboard-tile-focus.png "Power BI Dashboardkachel im Fokusmodus öffnen")
+
+4.  Kopieren Sie die Kachel ID von der URL in der Adressleiste. Die Kachel-ID ist der Wert nach /tiles/.
+
+    > [!div class=mx-imgBorder]
+    > ![Power BI Dashboardkachel-ID](../media/powerbi-dashboard-tile-id.png "Power BI Dashboardkachel-ID")
 
 
 ### <a name="see-also"></a>Siehe auch
 
 
-[powerbi Liquid-Tag](../liquid/portals-entity-tags.md#powerbi)<br> 
-[Einrichten Power BI Integration](set-up-power-bi-integration.md)
+[Liquid-Tag powerbi](../liquid/portals-entity-tags.md#powerbi)<br> 
+[Einrichten der Power BI-Integration](set-up-power-bi-integration.md)

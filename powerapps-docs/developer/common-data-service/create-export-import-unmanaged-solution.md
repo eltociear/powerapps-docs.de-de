@@ -1,6 +1,6 @@
 ---
-title: 'Erstellen, importieren oder exportieren einer nicht verwalteten Lösung (Common Data Service) | Microsoft Docs'
-description: 'Eine nicht verwaltete Lösung ist nützlich als Möglichkeit, einen Satz nicht verwalteter Anpassungen zu einem Satz zu gruppieren, der zwischen Organisationen transportiert werden kann.'
+title: Erstellen, Exportieren oder Importieren einer nicht verwalteten Lösung (Common Data Service) | Microsoft-Dokumentation
+description: Eine nicht verwaltete Lösung ist nützlich als Möglichkeit, einen Satz nicht verwalteter Anpassungen zu einem Satz zu gruppieren, der zwischen Organisationen transportiert werden kann.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8a525320894a280bb8a092892180879f3bf626ea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748571"
 ---
 # <a name="create-export-or-import-an-unmanaged-solution"></a>Erstellen, Exportieren oder Importieren einer nicht verwalteten Lösung
 
@@ -29,7 +35,7 @@ Darüber hinaus, dass es eine Voraussetzung zum Erstellen einer verwalteten Lös
  In der folgenden Tabelle sind die Felder und Beschreibungen aufgelistet, die in einer Lösung enthalten sind.  
 
 
-|      Feldbezeichnung       |                                                                                                                                                              Beschreibung                                                                                                                                                               |
+|      Feldbeschriftung       |                                                                                                                                                              Beschreibung                                                                                                                                                               |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    **Anzeigename**    |                                                                                                                                                       Der Name der Lösung.                                                                                                                                                       |
 |        **Name**        |                                     Common Data Service generiert einen eindeutigen Namen basierend auf dem **Anzeigename**. Sie können den eindeutigen Namen bearbeiten. Der eindeutige Name darf nur alphanumerische Zeichen oder das Unterstrichzeichen enthalten.                                     |
@@ -59,7 +65,10 @@ Darüber hinaus, dass es eine Voraussetzung zum Erstellen einer verwalteten Lös
 
 <a name="BKMK_UseSolutionConfigurationPage"></a>   
 ### <a name="use-the-solution-configuration-page"></a>Verwenden der Lösungskonfigurationsseite  
- Die Lösungskonfigurationsseite enthält eine Canvas, die Sie verwenden können, um Informationen anzuzeigen oder um Kunden zu ermöglichen, Aktionen im Rahmen der Lösung auszuführen. Legen Sie die Konfigurationsseite fest, indem Sie das Suchfeld **Konfigurationsseite** verwenden, um eine Webseiten-(HTML)-Webressource auszuwählen, die in der Lösung enthalten ist. Dadurch wird ein neuer **Konfiguration**sknoten im Lösungsfenster unter dem **Information**sknoten und über dem **Komponenten**knoten angezeigt. Der **Konfigurations**knoten zeigt die von Ihnen festgelegte Webressource an.  
+ Die Lösungskonfigurationsseite enthält eine Canvas, die Sie verwenden können, um Informationen anzuzeigen oder um Kunden zu ermöglichen, Aktionen im Rahmen der Lösung auszuführen. Legen Sie die Konfigurationsseite fest, indem Sie das Suchfeld **Konfigurationsseite** verwenden, um eine Webseiten-(HTML)-Webressource auszuwählen, die in der Lösung enthalten ist. Dadurch wird ein neuer **Konfigurationsknoten** im Lösungsfenster unter dem **Informationsknoten** und über dem **Komponentenknoten** angezeigt. Der **Konfigurationsknoten** zeigt die von Ihnen festgelegte Webressource an.
+ 
+ > [!NOTE]
+>  Die Lösungskonfigurationsseite kann derzeit nur im Klassikmodus angezeigt werden.
 
  Sie können die Lösungskonfigurationsseite verwenden, um Steuerelemente anzuzeigen, die Ihre Lösung konfigurieren. Sie können möglicherweise einige Entitäten in Ihrer Lösung bereitstellen, die das Verhalten der Lösung steuern. Indem Sie die Web-API für Datenzugriff verwenden, können Sie auf Ihrer Webressourcenseite benutzerdefinierte Steuerelemente bereitstellen, um die Daten in diesen Entitäten zu aktualisieren.  
 
@@ -98,14 +107,14 @@ Darüber hinaus, dass es eine Voraussetzung zum Erstellen einer verwalteten Lös
 > [!IMPORTANT]
 >  Änderungen, die durch das Importieren einer nicht verwalteten Lösung angewendet wurden, können nicht deinstalliert werden. Sie sollten daher keine nicht verwaltete Lösung installieren, wenn Sie die Änderungen zurücksetzen möchten.  
 
- Dieser Vorgang wird programmgesteuert mithilfe der Nachricht  <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> ausgeführt. Sie können Code schreiben, um diese Nachricht asynchron auszuführen. Weitere Informationen: [Nachrichten im Hintergrund (asynchron) ausführen](/dynamics365/customer-engagement/developer/org-service/use-messages-request-response-classes-execute-method#bkmk_executeasync). Sie können den Status des Importvorgangs verfolgen oder einen Bericht des Erfolgs des Imports generieren, indem Sie die Entität`ImportJob` verwenden. Weitere Informationen: [Installieren oder Aktualisieren einer Lösung](work-solutions.md#BKMK_InstallUpgradeSolution).  
+ Dieser Vorgang wird programmgesteuert mithilfe der Nachricht <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> ausgeführt. Sie können Code schreiben, um diese Nachricht asynchron auszuführen. Weitere Informationen: [Nachrichten im Hintergrund (asynchron) ausführen](/dynamics365/customer-engagement/developer/org-service/use-messages-request-response-classes-execute-method#bkmk_executeasync). Sie können den Status des Importvorgangs verfolgen oder einen Bericht des Erfolgs des Imports generieren, indem Sie die Entität `ImportJob` verwenden. Weitere Informationen: [Installieren oder Aktualisieren einer Lösung](work-solutions.md#BKMK_InstallUpgradeSolution).  
 
 > [!IMPORTANT]
 >  Das Installieren einer Lösung oder Veröffentlichen von Anpassungen kann den normalen Systembetrieb stören. Es ist empfehlenswert, den Import von Lösungsimporte einzuplanen, wenn er für die Benutzer am wenigsten Unterbrechungen mit sich bringt.  
 
 <a name="BKMK_MaxSizeOfSolution"></a>   
 ### <a name="maximum-size-of-solution-to-import"></a>Maximal zulässige Größe der zu importierenden Lösung  
- Bei Common Data Service beträgt die maximale Größe für eine Lösung 29,296 MB.  
+ Für Common Data Service beträgt die maximale Größe für eine Lösung 29,296 MB.  
 
  Für lokale Organisationen ist die standardmäßige maximale Größe für eine Lösung 6 MB, diese kann jedoch nach Bedarf erhöht werden.  
 

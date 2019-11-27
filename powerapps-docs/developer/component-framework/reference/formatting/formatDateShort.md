@@ -1,5 +1,5 @@
 ---
-title: Formatdateshort | Microsoft-Dokumentation
+title: formatdateshort | Microsoft-Dokumentation
 description: ''
 keywords: ''
 ms.author: nabuthuk
@@ -13,7 +13,7 @@ ms.topic: article
 ms.assetid: e69a9b6c-f737-4ebb-a9c1-901923b85358
 ms.openlocfilehash: d9dd72ffdcb9ad69b3aae767effd14f617c0cba9
 ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/12/2019
 ms.locfileid: "72343563"

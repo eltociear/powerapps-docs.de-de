@@ -1,6 +1,6 @@
 ---
-title: Portal Konfiguration migrieren | MicrosoftDocs
-description: Erfahren Sie, wie Sie die Portal Konfiguration migrieren.
+title: Migrieren der Portalkonfiguration | MicrosoftDocs
+description: Informationen zum Migrieren der Portalkonfiguration.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,99 +9,99 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 585f8e6c3ad1efcb047e2cbb0a516c3662c1a3eb
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa057594b500c7019a4d645c70cafcfff183608
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975769"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755990"
 ---
-# <a name="migrate-portal-configuration"></a>Migrieren der Portalkonfiguration
+# <a name="migrate-portal-configuration"></a>Portalkonfiguration migrieren
 
-Die Portal Entwicklung umfasst mehrere Konfigurationen und Anpassungen, um eine gewünschte Benutzerfunktion für die Endbenutzer des Portals zu erzielen.
+Die Portalentwicklung umfasst mehrere Konfigurationen und Anpassungen, um eine gewünschte Erfahrung für Portalendbenutzer zu erreichen.
 
-Nachdem Sie die Entwicklung oder Konfiguration Ihrer Portal Instanz abgeschlossen haben, möchten Sie möglicherweise Ihre neueste Portal Konfiguration von der Entwicklung zu Test-oder Produktionsumgebungen migrieren. Bei der Migration wird die vorhandene Konfiguration aus der Quell Common Data Service Umgebung exportiert und anschließend in die Ziel Common Data Service Umgebung importiert.
+Nachdem Sie die Entwicklung oder Konfiguration Ihrer Portal-Instanz abgeschlossen haben, möchten Sie möglicherweise die aktuelle Portal-Konfiguration aus der Entwicklungs- zur Testumgebung oder zu Produktionsumgebungen migrieren. Das Migrieren Ihrer Daten beinhaltet den Export der vorhandenen Konfigurationsdaten von der Quell-Common Data Service-Umgebung und den anschließenden Import in die Ziel-Common Data Service-Umgebung.
 
-Zum Exportieren von Konfigurationsdaten müssen Sie das Konfigurations Migrationstool und eine Portal spezifische Konfigurations Schema Datei verwenden. Weitere Informationen zu diesem Tool finden Sie unter [Verwalten von Konfigurationsdaten](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-configuration-data).
+Zum Exportieren der Konfigurationsdaten müssten Sie das Tool für die Konfigurationsmigration und eine portalspezifische Konfigurationsschemadatei verwenden. Weitere Informationen zu diesem Tool finden Sie unter [Konfigurationsdaten verwalten](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-configuration-data).
 
 > [!NOTE]
-> - Es wird empfohlen, die neueste Version des Konfigurations Migrationstools zu verwenden. Das Konfigurations Migrationstool kann von nuget heruntergeladen werden. Weitere Informationen zum Herunterladen des Tools finden [Sie unter Herunterladen von Tools von nuget](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/download-tools-nuget).
-> - Die minimale Lösungs Version von Portalen, die von Schema Dateien für die Konfigurations Migration unterstützt wird, ist 8.4.0.275. Es wird jedoch empfohlen, dass Sie die neueste Projektmappenversion verwenden.
+> - Wir empfehlen Ihnen, die neueste Version des Tools für die Konfigurationsmigration zu verwenden. Das Tool für die Konfigurationsmigration kann von NuGet heruntergeladen werden. Weitere Informationen zum Herunterladen des Tools: [Tools von NuGet herunterladen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/download-tools-nuget).
+> - Die mindestens erforderliche Lösungsversion von Portalen, die von Schemadateien für die Konfigurationsmigration unterstützt wird, ist 8.4.0.275. Es ist jedoch empfehlenswert, die aktuelle Lösungsversion zu verwenden.
 
-Schema Dateien sind für die folgenden Portal Typen verfügbar:
-- [Communityportal](https://go.microsoft.com/fwlink/p/?linkid=2019704)
-- [Self-Service-Portal für Kunden](https://go.microsoft.com/fwlink/p/?linkid=2019705)
-- [Partner Portal](https://go.microsoft.com/fwlink/p/?linkid=2019803)
-- [Personal Self-Service-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019802)
+Schemadateien sind für die folgenden Portaltypen verfügbar:
+- [Community-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019704)
+- [Kunden-Self-Service-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019705)
+- [Partnerportal](https://go.microsoft.com/fwlink/p/?linkid=2019803)
+- [Mitarbeiter-Self-Service-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019802)
 - [Benutzerdefiniertes Portal](https://go.microsoft.com/fwlink/p/?linkid=2019804)
 
-Die Standardschema Dateien enthalten Informationen zu Portal Entitäten, Beziehungen und Eindeutigkeits Definitionen für jede Entität. Weitere Informationen: [Exportieren von Portal-Konfigurationsdaten](#export-portal-configuration-data)
+Die standardmäßigen Schemadateien enthalten Informationen zu Portalentitäten, Beziehungen und Eindeutigkeitsdefinitionen für jede Entität. Weitere Informationen: [Portalkonfigurationsdaten exportieren](#export-portal-configuration-data)
 
-Nachdem Sie die Konfigurationsdaten exportiert haben, müssen Sie Sie in die Zielumgebung importieren. Weitere Informationen: [Importieren von Portal Konfigurationsdaten](#import-portal-configuration-data)
+Nach dem Export der Konfigurationsdaten müssen Sie sie in die Zielumgebung importieren. Weitere Informationen: [Portalkonfigurationsdaten importieren](#import-portal-configuration-data)
 
 > [!NOTE]
-> Die Schema Dateien werden bereitgestellt, um den erforderlichen Aufwand für die Erstellung eines Schemas zu verringern. Das Schema kann mithilfe der vom Tool bereitgestellten Standardmethoden auf Ihre Implementierung zugeschnitten werden. Schema Dateien können im Konfigurations Migrationstool geladen und so geändert werden, dass Entitäten, Attribute usw. hinzugefügt, entfernt und geändert werden.
+> Die Schemadateien werden bereitgestellt, um den erforderlichen Aufwand für die völlig neue Erstellung eines Schemas zu verringern. Schemas können für Ihre Implementierung mithilfe der Standardmethoden angepasst werden, die von dem Tool bereitgestellt werden. Schemadateien können im Tool für die Konfigurationsmigration geladen und geändert werden, um Entitäten, Attribute usw. hinzuzufügen, zu entfernen und zu ändern.
 
-## <a name="export-portal-configuration-data"></a>Portal Konfigurationsdaten exportieren
+## <a name="export-portal-configuration-data"></a>Exportieren von Portalkonfigurationsdaten
 
-Sie können Portal Konfigurationsdaten mithilfe von Portal spezifischen Konfigurations Schema Dateien aus einem Quellsystem exportieren.
+Sie können Portalkonfigurationsdaten aus einem Quellsystem exportieren, indem Sie portalspezifische Konfigurationsdatenschemadateien verwenden.
 
-1.  Laden Sie das Konfigurations Migrationstool herunter, und extrahieren Sie es in den gewünschten Ordner.
+1.  Laden Sie das Tool für die Konfigurationsmigration herunter und extrahieren Sie es in den gewünschten Ordner.
 
-2.  Laden Sie eine Portal Konfigurationsschema-Datei mithilfe der oben angegebenen Links für Ihren Porttyp herunter.
+2.  Laden Sie eine Portalkonfigurations-Schemadatei für Ihren Portaltyp mithilfe der oben angegebenen Links herunter.
 
-3.  Doppelklicken Sie auf die Datei **datamigrationutility. exe** im Ordner `<your_folder>\Tools\ConfigurationMigration`, um das Konfigurations Migrationstool auszuführen, wählen Sie im Hauptbildschirm **Daten exportieren** aus, und klicken Sie dann auf **weiter**.
+3.  Doppelklicken Sie auf die Datei **DataMigrationUtility.exe** im Ordner `<your_folder>\Tools\ConfigurationMigration`, um das Tool für die Konfigurationsmigration auszuführen, wählen Sie auf dem Hauptbildschirm **Daten exportieren** aus und wählen Sie dann **Weiter** aus.
     
     > [!div class=mx-imgBorder]
-    > ![]Konfigurationsdaten exportieren Konfigurations(../media/export-config-data.png "Daten") exportieren
+    > ![Konfigurationsdaten exportieren](../media/export-config-data.png "Konfigurationsdaten exportieren")
 
-4.  Geben Sie auf dem **Anmelde** Bildschirm Authentifizierungs Details an, um eine Verbindung mit ihrer Common Data Service Umgebung herzustellen, über die Sie Daten exportieren möchten. Wenn Sie in der Common Data Service Umgebung mehrere Organisationen haben, aus denen die Daten exportiert werden sollen, aktivieren Sie das Kontrollkästchen **Liste der verfügbaren Organisationen anzeigen** , und wählen Sie dann **Anmeldung**aus.
+4.  Geben Sie auf dem Bildschirm **Anmeldung** Authentifizierungsdetails an, um die Verbindung zu Ihrer Common Data Service-Umgebung herzustellen, von der Sie Daten exportieren möchten. Wenn Sie mehrere Organisationen in der Common Data Service-Umgebung haben, von der Sie die Daten exportieren möchten, aktivieren Sie das Kontrollkästchen **Liste der verfügbaren Organisationen anzeigen**, und wählen Sie dann **Anmelden** aus.
 
     > [!div class=mx-imgBorder]
-    > ![Geben Sie Authentifizierungs Details an, um eine Verbindung mit ihrer Common Data Service Umgebung herzustellen, von der aus Sie Daten exportieren möchten],(../media/export-config-login.png "Geben Sie Authentifizierungs Details an, um eine Verbindung mit ihrer Common Data Service Umgebung herzustellen")
+    > ![Stellen Sie Authentifizierungsdetails bereit, um sich mit Ihrer Common Data Service-Umgebung zu verbinden, von der Sie Daten exportieren möchten](../media/export-config-login.png "Stellen Sie Authentifizierungsdetails bereit, um sich mit Ihrer Common Data Service-Umgebung zu verbinden, von der Sie Daten exportieren möchten")
 
-5.  Wenn Sie mehrere Organisationen haben und im vorherigen Schritt das Kontrollkästchen **Liste der verfügbaren Organisationen anzeigen** ausgewählt haben, können Sie auf dem nächsten Bildschirm die Organisation auswählen, mit der Sie eine Verbindung herstellen möchten. Wählen Sie eine Common Data Service Umgebung für die Verbindung aus. 
+5.  Wenn Sie mehrere Organisationen haben und im vorherigen Schritt das Kontrollkästchen **Liste der verfügbaren Organisationen anzeigen** ausgewählt haben, können Sie auf dem nächsten Bildschirm die Organisation auswählen, mit der Sie eine Verbindung herstellen möchten. Wählen Sie eine Common Data Service-Umgebung für die Verbindung aus. 
 
     > [!NOTE]
-    > Wenn Sie nicht über mehrere Organisationen verfügen, wird dieser Bildschirm nicht angezeigt.
+    > Wenn Sie nicht mehrere Organisationen haben, wird der Bildschirm nicht angezeigt.
 
-6.  Navigieren Sie in der **Schema Datei**zu der Portal spezifischen Konfigurations Schema Datei, die für den Datenexport verwendet werden soll.
+6.  Suchen Sie in der **Schemadatei** und wählen Sie die portalspezifische Konfigurationsschemadatei aus, die für den Datenexport verwendet werden soll.
 
-7.  Geben **Sie unter in Datendatei speichern**den Namen und den Speicherort der zu exportierenden Datendatei an.
-
-    > [!div class=mx-imgBorder]
-    > ![Angeben von Schema-und Zieldateien]angeben von(../media/export-config-file-name.png "Schema-und Zieldateien")
-
-8.  Wählen Sie **Daten exportieren**aus. Der Bildschirm zeigt den Status des Export Fortschritts und den Speicherort der exportierten Datei unten auf dem Bildschirm an, nachdem der Export abgeschlossen ist.
+7.  Geben Sie unter **In Datendatei speichern** den Namen und den Ort der zu exportierenden Datendatei an.
 
     > [!div class=mx-imgBorder]
-    > Status ![des Konfigurationsdaten Exports](../media/export-config-status.png "beim Exportieren von Konfigurationsdaten")
+    > ![Schema- und Zieldateien angeben](../media/export-config-file-name.png "Schema- und Zieldateien angeben")
+
+8.  Wählen Sie **Daten exportieren** aus. Der Bildschirm zeigt den Exportfortschritt und den Speicherort der exportierten Datei unten auf dem Bildschirmrand an, sobald der Import abgeschlossen ist.
+
+    > [!div class=mx-imgBorder]
+    > ![Exportfortschritt der Konfigurationsdaten](../media/export-config-status.png "Exportfortschritt der Konfigurationsdaten")
 
     > [!IMPORTANT]
-    > Das Konfigurations Migrationstool unterstützt nicht das Filtern von Datensätzen in einer Entität. Standardmäßig werden alle Datensätze in der ausgewählten Entität exportiert. Wenn Sie mehr als einen Website Daten Satz erstellt haben, werden daher alle Website Datensätze exportiert.
+    > Das Configuration Migration Tool unterstützt nicht das Filtern von Datensätzen in einer Entität. Standardmäßig werden alle Datensätze in der ausgewählten Entität exportiert. Wenn Sie also mehr als einen Website-Datensatz erstellt haben, werden alle Websitedatensätzen exportiert.
 
-9.  Wählen Sie **Beenden** , um das Tool zu schließen.
+9.  Wählen Sie **Schließen**, um das Tool zu schließen.
 
-## <a name="import-portal-configuration-data"></a>Importieren von Portal-Konfigurationsdaten
+## <a name="import-portal-configuration-data"></a>Importieren von Portalkonfigurationsdaten
 
-1.  Führen Sie das Konfigurations Migrationstool aus, und wählen Sie im Hauptbildschirm **Daten importieren** aus, und klicken Sie dann auf **weiter**.
+1.  Führen Sie das Tool für die Konfigurationsmigration aus und wählen Sie auf dem Hauptbildschirm **Daten importieren** aus, und wählen Sie dann **Weiter** aus.
 
     > [!div class=mx-imgBorder]
-    > ![Importieren]von Konfigurationsdaten Import-Konfigurations(../media/import-config-data.png "Daten")
+    > ![Konfigurationsdaten importieren](../media/import-config-data.png "Konfigurationsdaten importieren")
 
-2.  Geben Sie auf dem **Anmelde** Bildschirm Authentifizierungs Details an, um eine Verbindung mit ihrer Common Data Service Umgebung herzustellen, über die Sie Daten exportieren möchten. Wenn Sie in der Common Data Service Umgebung mehrere Organisationen haben, aus denen die Daten exportiert werden sollen, aktivieren Sie das Kontrollkästchen **Liste der verfügbaren Organisationen anzeigen** , und wählen Sie dann **Anmeldung**aus.
+2.  Geben Sie auf dem Bildschirm **Anmeldung** Authentifizierungsdetails an, um die Verbindung zu Ihrer Common Data Service-Umgebung herzustellen, von der Sie Daten exportieren möchten. Wenn Sie mehrere Organisationen in der Common Data Service-Umgebung haben, von der Sie die Daten exportieren möchten, aktivieren Sie das Kontrollkästchen **Liste der verfügbaren Organisationen anzeigen**, und wählen Sie dann **Anmelden** aus.
 
-3.  Wenn Sie mehrere Organisationen haben und im vorherigen Schritt das Kontrollkästchen **Liste der verfügbaren Organisationen anzeigen** ausgewählt haben, können Sie auf dem nächsten Bildschirm die Organisation auswählen, mit der Sie eine Verbindung herstellen möchten. Wählen Sie eine Common Data Service Umgebung für die Verbindung aus. 
+3.  Wenn Sie mehrere Organisationen haben und im vorherigen Schritt das Kontrollkästchen **Liste der verfügbaren Organisationen anzeigen** ausgewählt haben, können Sie auf dem nächsten Bildschirm die Organisation auswählen, mit der Sie eine Verbindung herstellen möchten. Wählen Sie eine Common Data Service-Umgebung für die Verbindung aus. 
 
     > [!NOTE]
-    > - Wenn Sie nicht über mehrere Organisationen verfügen, wird dieser Bildschirm nicht angezeigt.
-    > - Stellen Sie sicher, dass die Portallösung bereits für die Organisation installiert ist, in der Sie die Konfigurationen importieren möchten.
+    > - Wenn Sie nicht mehrere Organisationen haben, wird der Bildschirm nicht angezeigt.
+    > - Stellen Sie sicher, dass die Portallösung bereits für die Organisation installiert ist, bei der Sie die Konfigurationen importieren möchten.
 
-4.  Im nächsten Bildschirm werden Sie aufgefordert, die Datendatei (ZIP-Datei) anzugeben, die importiert werden soll. Navigieren Sie zu der Datendatei, wählen Sie Sie aus, und klicken Sie dann auf **Daten importieren**. 
+4.  Der folgende Bildschirm fordert Sie auf, die zu importierende Datendatei (.zip) anzugeben. Navigieren Sie zu der Datendatei, wählen Sie sie aus, und wählen Sie dann **Daten importieren** aus. 
 
     > [!div class=mx-imgBorder]
-    > Status ![des Konfigurationsdaten Imports](../media/import-config-status.png "beim Importieren von Konfigurationsdaten")
+    > ![Importfortschritt der Konfigurationsdaten](../media/import-config-status.png "Importfortschritt der Konfigurationsdaten")
 
-5.  Der nächste Bildschirm zeigt den Import Status Ihrer Datensätze an. Der Datenimport erfolgt in mehreren Durchläufen, um zuerst die Foundation-Daten zu importieren, während die abhängigen Daten in die Warteschlange eingereiht werden. Anschließend werden die abhängigen Daten in den nachfolgenden Durchläufen importiert, um beliebige Daten Abhängigkeiten oder Verknüpfungen zu verarbeiten. Dies stellt einen sauberen und konsistenten Datenimport sicher. 
+5.  Der nächste Bildschirm zeigt den Importstatus Ihrer Datensätze an. Der Datenimport geschieht in mehreren Durchläufen; zunächst werden die Grundlagendaten importiert, während die abhängigen Daten zusammengestellt werden. Dann werden die abhängigen Daten in den folgenden Durchläufen importiert, um alle Datenabhängigkeiten und Verknüpfungen zu berücksichtigen. Dadurch wird ein sauberer und konsistenter Datenimport sichergestellt. 
 
-6.  Wählen Sie **Beenden** , um das Tool zu schließen. 
+6.  Wählen Sie **Schließen**, um das Tool zu schließen. 

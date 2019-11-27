@@ -1,19 +1,25 @@
 ---
 title: Debuggen Sie Ihren JavaScript-Code für modellgetriebene Anwendungen | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3edad039-4397-4984-a29b-9307a7a2aaee
 author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2b95ef2604b226629f87e37f5a54e79447d1a494
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748300"
 ---
 # <a name="debug-your-javascript-code-for-model-driven-apps"></a>Debuggen Sie Ihren JavaScript-Code für modellgetriebene Anwendungen
 
@@ -23,7 +29,7 @@ Jeder Browser bietet eine Art von Debuggingerweiterung. Microsoft Edge und Inter
 
 Drücken Sie in Google Chrome auf F12, um die Entwicklertools zu öffnen. Firebug ist eine beliebte Browsererweiterung zur Webentwicklung, die Mozilla Firefox verwendet. In Apple Safari müssen Sie zuerst das Menü **Erweitert** auf der Menüleiste in **Erweiterte Voreinstellungen** auswählen. Dann können Sie aus dem Menü **Entwickler** die Option **Web Inspector anzeigen** auswählen.
 
-Wenn Sie JavaScript-Bibliotheken in modellegsteuerten Apps verwenden, werden die Bibliotheken mit der Webseite geladen. Es kann manchmal schwierig sein, eine bestimmte Bibliothek in der Debugumgebung zu isolieren. Wenn Sie Debugtools in Microsoft Edge verwenden, erweitern Sie die verfügbaren Skripts auf der Registerkarte **Debugger**, klicken auf das Ordnersymbol oben links, und suchen Sie das Skript mit dem Namen, der dem Namen Ihrer JavaScript-Webressource entspricht, wie die unten gezeigte **new_myCustomJavaScript.js**-Webressource. Sie können auch nach Ihrer JavaScript-Bibliothek suchen, indem Sie den Namen im Suchfeld eingeben.
+Wenn Sie JavaScript-Bibliotheken in modellegsteuerten Apps verwenden, werden die Bibliotheken mit der Webseite geladen. Es kann manchmal schwierig sein, eine bestimmte Bibliothek in der Debugumgebung zu isolieren. Wenn Sie Debuggen-Tools in Microsoft Edge verwenden, erweitern Sie die verfügbaren Skripts auf der Registerkarte **Debugger**, klicken auf das Ordnersymbol oben links, und suchen Sie das Skript mit dem Namen, der dem Namen Ihrer JavaScript-Webressource entspricht, wie die unten gezeigte **new_myCustomJavaScript.js**-Webressource. Sie können auch nach Ihrer JavaScript-Bibliothek suchen, indem Sie den Namen im Suchfeld eingeben.
 
 ![JavaScript-Debugging](../media/form-script-debugging.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Aktivitäten-Entitäten von Common Data Service | Microsoft Docs
-description: Erfahren Sie mehr zu in Common Data Service verfügbaren Entitäten.
+title: Common Data Service-Entitäten | Microsoft-Dokumentation
+description: Weitere Informationen über die Entitäten, die in Common Data Service verfügbar sind.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8173ba424ea9c6af3c29443db106e9feac02179a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752986"
 ---
 <!-- 
 Was Mike Carter
@@ -33,7 +39,7 @@ Overlap with content in https://docs.microsoft.com/dynamics365/customer-engageme
 
 Stellt Speicher für Daten in den wichtigsten Funktion des Common Data Service bereit. Common Data Service umfasst einen Basissatz von Entitäten, die die Struktur für die erfassten Daten bereitstellt, die von Geschäftsanwendungen verwendet werden. 
 
-Sie können den Basissatz der Entitäten in der [Common Data Service-Entitätsreferenz](reference/about-entity-reference.md) anzeigen.
+Sie können den Basissatz der Entitäten in der [Common Data Service-Entitätsreferenz anzeigen](reference/about-entity-reference.md).
 
 ## <a name="modify-entities"></a>Ändern von Entitäten
 
@@ -46,8 +52,8 @@ Es gibt verschiedene Möglichkeiten, Entitätsmetadaten mithilfe eines Designers
 
 |Designer  |Beschreibung  |
 |---------|---------|
-|powerapps.com|Die einfachste und beste Methode, das Schema zu ändern ist es, [powerapps.com](https://web.powerapps.com/) zu verwenden, um die Common Data Service zu bearbeiten, die einer Umgebung zugeordnet sind. Änderungen, die angewendet werden, werden im Rahmen einer nicht verwalteten Common Data Service Standardlösung ausgeführt. <!-- TODO: Add link to topic that describes this -->|
-|Common Data Service Standardlösung Explorer|Es gibt einen anderen Designer von [powerapps.com](https://web.powerapps.com/), wenn Sie den Common Data Service bearbeiten. In der unteren linken Ecke öffnet die Schaltfläche **Erweitert** den Lösungsexplorer in der Standardlösung Common Data Service. |
+|powerapps.com|Die einfachste und beste Methode, das Schema zu ändern ist es, die Website [powerapps.com](https://make.powerapps.com/) zu verwenden, um die Common Data Service zu bearbeiten, die einer Umgebung zugeordnet sind. Änderungen, die angewendet werden, werden im Rahmen einer nicht verwalteten Common Data Service-Standardlösung ausgeführt. <!-- TODO: Add link to topic that describes this -->|
+|Common Data Service Standard-Projektmappen-Explorer|Es gibt einen anderen Designer von der Website [powerapps.com](https://make.powerapps.com/), wenn Sie Common Data Service bearbeiten. In der unteren linken Ecke öffnet die Schaltfläche **Erweitert** den Lösungsexplorer in der Standardlösung Common Data Service. |
 |Lösungsexplorer für Ihre Lösung |Wenn Sie eine Lösung verteilen, sollten Sie alle neuen Entitäten, Attribute und Beziehungen im Kontext einer nicht verwalteten Lösung erstellen, die Sie verwenden, um Ihre Lösung zu entwickeln. <br /> Weitere Informationen: [Erstellen eines Lösungsherausgebers und eine Lösung](introduction-solutions.md#create-a-solution-publisher-and-solution)|
 |Vom Formular-Editor|Wenn Sie ein Modell-angetriebenes App-Formular für eine Entität bearbeiten, können Sie auf der Schaltfläche **Neues Feld** auf **Feld-Explorer** klicken. Wenn Sie ein Suchfeld erstellen, erstellen Sie eine neue Entitätsbeziehung zur Unterstützung|
 
@@ -57,11 +63,11 @@ Eine Lösung kann Entitätsmetadaten und andere benutzerdefinierte Komponenten e
 
 ### <a name="from-a-data-source-using-power-query"></a>Von einer Datenquelle mithilfe Power-Abfrage
 
-Sie können neue Entitäten erstellen und diese mit Daten mithilfe von Power-Abfrage ausfüllen. Weitere Informationen:  [Daten einer Entität in Common Data Service für Apps mithilfe der Power-Abfrage hinzufügen](../../maker/common-data-service/data-platform-cds-newentity-pq.md).
+Sie können neue Entitäten erstellen und diese mit Daten mithilfe von Power-Abfrage ausfüllen. Weitere Informationen: [Daten einer Entität in Common Data Service mithilfe von Power Query hinzufügen](../../maker/common-data-service/data-platform-cds-newentity-pq.md)
 
 ### <a name="use-metadata-services"></a>Verwenden von Metadaten-Services
 
-Die Webdienste, die in Common Data Service verfügbar gemacht werden, umfassen Funktionen, um Entitätsmetadaten zu erstellen, lesen, schreiben und löschen. Diese Dienste werden am häufigsten verwendet, um die Metadatenänderung zu lesen, da diese Daten  Ihren Code zu Laufzeit informieren können, inwieweit die Umgebung angepasst wurde. Weitere Informationen: [Metadaten-Services](metadata-services.md)
+Die Webdienste, die in den Common Data Service verfügbar gemacht werden, umfassen Funktionen, um Entitätsmetadaten zu erstellen, lesen, schreiben und löschen. Diese Dienste werden am häufigsten verwendet, um die Metadatenänderung zu lesen, da diese Daten  Ihren Code zu Laufzeit informieren können, inwieweit die Umgebung angepasst wurde. Weitere Informationen: [Metadaten-Services](metadata-services.md)
 
 ## <a name="entity-metadata"></a>Entitätsmetadaten
 

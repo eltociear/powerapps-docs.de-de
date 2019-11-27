@@ -1,30 +1,30 @@
 ---
 title: Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps | Microsoft-Dokumentation
 description: Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps in PowerApps.
-author: yijw2017
+author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/08/2018
-ms.author: yijw
+ms.date: 10/29/2019
+ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5f8744d7cc6b6048debc18775e7bf3ad7cbbff22
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: dd5d8b8e6757b18feb5da03c503b19e689ca3efe
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990206"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541251"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Help Desk“ in PowerApps
 
 Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps in PowerApps.
 
-Geschätzte Dauer: **10–15 Minuten**
+Geschätzte Dauer: **10–15 Minuten**.
 
 > [!TIP]
 > Eine Demonstration dieses Vorgangs finden Sie in diesem [Video](https://youtu.be/z4cdtD6hB_4).
@@ -40,7 +40,7 @@ Der Helpdesk bietet eine benutzerfreundliche benutzerfreundliche Benutzerfreundl
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- [Registrieren Sie sich](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) bei PowerApps.
+- [Registrieren Sie sich](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) bei PowerApps.
 - Sie müssen über eine gültige SharePoint Online-Lizenz und Berechtigung zum Erstellen von Listen verfügen.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Erstellen der HelpDesk-SharePoint-Liste
@@ -100,7 +100,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 3. Klicken Sie in der Optionsfeldliste **Type of information in this column is** (Der Informationstyp dieser Spalte ist) auf **Auswahl**.
 4. Geben Sie im Textfeld **Geben Sie jede Auswahl in einer neuen Zeile ein** die folgenden Werte jeweils in einer neuen Zeile ein: 
     - HOCH
-    - MITTELALTER
+    - Mittelalter
     - NIEDRIG
 5. Wählen Sie in der Optionsfeldliste **Eindeutige Werte erzwingen** den Wert **Nein** aus.
 6. Wählen Sie in der Optionsfeldliste **Auswahl anzeigen durch** den Wert **Dropdownmenü** aus.
@@ -140,11 +140,11 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 ## <a name="download-the-app"></a>Herunterladen der APP
 
-1.  [Laden Sie das PowerApps-Paket herunter](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip), und speichern Sie es auf Ihrem Computer.
+1.  [Laden Sie das PowerApps-Paket herunter](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip), und speichern Sie es auf Ihrem Computer.
 
 ## <a name="create-connections"></a>Erstellen von Verbindungen
 
-1.  Navigieren Sie in einem Webbrowser zu [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Navigieren Sie in einem Webbrowser zu [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 3.  Wählen Sie im Menü auf der linken Seite **Daten** und dann **Verbindungen** aus.
     
@@ -174,7 +174,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 ## <a name="import-the-app"></a>Importieren der App
 
-1. Navigieren Sie in einem Webbrowser zu https://web.powerapps.com.
+1. Navigieren Sie in einem Webbrowser zu https://make.powerapps.com.
 2. Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 3. Wählen Sie im Menü auf der linken Seite **Apps** aus. 
 4. Klicken Sie auf **Paket importieren (Vorschau)** .
@@ -216,12 +216,12 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 ### <a name="delete-connections"></a>Löschen von Verbindungen
 
-1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
 1. Klicken Sie im Bereich **Daten** auf die Auslassungs Punkte (...) neben **Helpdesk**, und wählen Sie dann **Entfernen**aus.
 
 ### <a name="helpdesk-list"></a>HelpDesk-Liste
 
-1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
 1. Klicken Sie im Bereich **Daten** auf **Datenquelle hinzufügen** > **Neue Verbindung** > **SharePoint** > **Erstellen**.
 1. Wählen Sie in der Liste **Zuletzt geöffnete Websites** die SharePoint-Website aus, auf der Sie die HelpDesk-Liste erstellt haben.
 

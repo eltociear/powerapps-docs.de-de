@@ -1,5 +1,5 @@
 ---
-title: 'Lernprogramm: Aktualisieren eines Plug-In (Common Data Service) | MicrosoftDocs'
+title: 'Tutorial: Aktualisieren eines Plug-Ins (Common Data Service) | Microsoft-Dokumentation'
 description: 'Dieses Lernprogramm ist das dritte in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten. '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e28493c3790e49e616157124d49acae65c5bd9a0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748630"
 ---
 # <a name="tutorial-update-a-plug-in"></a>Lernprogramm: Aktualisieren eines Plug-Ins
 
@@ -59,7 +65,7 @@ Ziel des Lernprogramms ist:
 
 ## <a name="create-a-new-plug-in-class"></a>Erstellen einer neuen Plug-In-Klasse
 
-1. fügen Sie in Visual Studio dem **BasicPlugin**-Projekt eine neue Klasse namens `ValidateAccountName.cs` hinzu
+1. Fügen Sie in Visual Studio dem **BasicPlugin**-Projekt eine neue Klasse namens `ValidateAccountName.cs` hinzu.
 1. Fügen Sie der Klasse den folgenden Code hinzu und erstellen Sie die Assembly neu.
 
 

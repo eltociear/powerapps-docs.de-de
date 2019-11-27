@@ -1,36 +1,45 @@
 ---
-title: 'Komplexe Entitäten, die PowerApps-Plans 2-Lizenzen benötigen | Microsoft Docs'
-description: 'Eine Liste der komplexen Entitäten in Common Data Service, für die eine PowerApps-Plans 2-Lizenz erforderlich ist.'
+title: Komplexe Entitäten, die PowerApps Plan 2 Lizenzen erfordern | Microsoft Docs
+description: Eine Liste der komplexen Entitäten in Common Data Service, die eine Lizenz für PowerApps Plan 2 benötigen.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 07/17/2018
+ms.date: 09/26/2019
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f5ec7419ea7369a57308e046ae820557303f0d15
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706633"
 ---
-
 # <a name="complex-entities-and-licensing"></a>Komplexe Entitäten und Lizenzierung
-Für Entitäten, die die folgende komplexe serverseitige Logik enthalten, benötigen Benutzer einer App oder eines Flows, der diese Entitäten verwendet, eine PowerApps-Plan 2- oder Microsoft Flow Plan 2-Lizenz:
 
-* Code-Plug-Ins. Weitere Informationen: [Plug-In-Entwicklung](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)
-* Echtzeitworkflows Weitere Informationen: [Workflowprozesse](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)
+> [!IMPORTANT]
+> Dieses Thema ist veraltet und wird in Kürze aktualisiert, um die neuesten Lizenzierungsänderungen zu berücksichtigen, die ab dem 1. Oktober 2019 gelten. Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [PowerApps Lizenzhandbuch](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+Entitäten, die die folgende komplexe serverseitige Logik beinhalten, erfordern, dass Benutzer einer App oder eines Flow, die diese Entitäten verwendet, eine PowerApps Plan 2 oder Microsoft Flow Plan 2 Lizenz besitzen:
+
+* Code-Plug-Ins. Weitere Informationen: [Plug-In-Entwicklung](/powerapps/developer/common-data-service/plug-ins)
+* Echtzeitworkflows Weitere Informationen: [Workflowprozesse](/flow/workflow-processes)
 
     > [!IMPORTANT]
-    >  Nur Workflows, die in einen Echtzeitworkflow konvertiert werden, werden als in Echtzeit und synchron betrachtet. Workflows, die im Hintergrund ausgeführt werden, können mit dem entsprechenden PowerApps-Plan weiterhin verwendet werden und erfordern keine zusätzlichen Lizenzen.
+    >  Nur Workflows, die in einen Echtzeitworkflow konvertiert werden, werden als in Echtzeit und synchron betrachtet. Workflows, die im Hintergrund laufen, können weiterhin mit dem entsprechenden PowerApps-Plan verwendet werden und benötigen keine zusätzlichen Lizenzen.
 
 Um zu wissen ob Sie Ihren Entitäten komplexere Geschäftslogik hinzugefügt haben, oder nicht, überprüfen Sie die Liste der Plug-In-Assemblys und Workflows, die in Ihrer Umgebung konfiguriert sind.
 
-## <a name="complex-entities-installed-with-dynamics-365"></a>Mit Dynamics 365 installierte komplexe Entitäten
-Die folgende Tabelle gibt Aufschluss über die Entitäten, die standardmäßig komplexer serverseitige Logik im Rahmen einer Dynamics 365-Anwendungsinstallation enthalten. Diese Liste ist als Leitfaden vorgesehen. Je nachdem, welche Dynamics 365-Anwendungen und -Versionen in Ihrer Umgebung installiert sind, kann sich die Liste der komplexen Entitäten unterscheiden.
+## <a name="complex-entities-installed-with-dynamics-365-apps"></a>Komplexe Entitäten, die mit Dynamics 365 Apps installiert wurden.
+Die folgende Tabelle listet Entitäten auf, die im Rahmen der Installation von modellgetriebenen Anwendungen in Dynamics 365, wie beispielsweise Dynamics 365 Sales und Dynamics 365 Customer Service, komplexe serverseitige Logik out-of-the-box enthalten. Diese Liste ist als Leitfaden vorgesehen. Je nachdem, welche Dynamics 365-Anwendungen und -Versionen in Ihrer Umgebung installiert sind, kann die Liste der komplexen Entitäten variieren.
 
 > [!NOTE]
->  Wenn Sie den Common Data Service verwenden und keine Dynamics 365-Anwendung oder Lösung von Drittanbietern installiert haben, hat Ihre Umgebung keine Entitäten, die komplexe serverseitige Logik enthalten.
+>  Wenn Sie die Common Data Service verwenden und keine Dynamics 365-Anwendung oder Drittanbieterlösung installiert haben, verfügt Ihre Umgebung nicht über Entitäten, die komplexe serverseitige Logik enthalten.
 
 * Firma
 * Vereinbarung
@@ -169,5 +178,5 @@ Die folgende Tabelle gibt Aufschluss über die Entitäten, die standardmäßig k
 
 
 ## <a name="licensing"></a>Lizenzierung
-Weitere Informationen zu PowerApps und Dynamics 365-Lizenzen finden Sie unter [Lizenzierungsübersicht](../../administrator/pricing-billing-skus.md).
+Weitere Informationen zu PowerApps und Dynamics 365 Lizenzen finden Sie auf der Seite [Lizenzübersicht](../../administrator/pricing-billing-skus.md).
 

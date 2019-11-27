@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Abfragen von Verbindungen nach Datensatz (Common Data Service) | MicrosoftDocs'
-description: 'Dieses Beispiel zeigt, wie ein bestimmter Datensatz in Verbindungen abgefragt wird.'
+title: 'Beispiel: Abfragen von Verbindungen nach Datensatz (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie ein bestimmter Datensatz in Verbindungen abgefragt wird.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d0b91e7020db63d71a0cfa8e2bd5d009dbac2f85
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748733"
 ---
 # <a name="sample-query-connections-by-a-record"></a>Beispiel: Abfragen von Verbindungen nach Datensatz 
 

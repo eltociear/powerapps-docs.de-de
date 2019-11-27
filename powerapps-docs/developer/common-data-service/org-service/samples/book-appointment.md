@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Buchen eines Termins (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Buchen eines Termins (Common Data Service) | Microsoft-Dokumentation'
 description: 'Dieses Beispiel zeigt, wie Sie einen Termin buchen oder planen '
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 651e10d5a57d644f7330e26ba3889d7fde1992bb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748386"
 ---
 # <a name="sample-book-an-appointment"></a>Beispiel: Buchen eines Termins
 

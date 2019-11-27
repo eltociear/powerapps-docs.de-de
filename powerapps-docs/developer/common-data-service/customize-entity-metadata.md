@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Entitäts-Metadaten (Common Data Service) | Microsoft Docs
+title: Anpassen der Entitätsmetadaten (Common Data Service) | Microsoft-Dokumentation
 description: Entitäten werden von Metadaten definiert. Durch die Definition oder Änderung der Entitätsmetadaten können Sie die Funktionen einer Entität steuern.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7be52e8fb5eae18e709ab10765a0684b5a65ef81
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753002"
 ---
 # <a name="customize-entity-metadata"></a>Anpassen von Entitätsmetadaten
 
-Entitäten werden von Metadaten definiert. Durch die Definition oder Änderung der Entitätsmetadaten können Sie die Funktionen einer Entität steuern. Verwenden Sie zum Anzeigen der Entitätsmetadaten für Ihre Organisation den Metadatenbrowser. [Herunterladen des Metadatenbrowsers](http://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip).
+Entitäten werden von Metadaten definiert. Durch die Definition oder Änderung der Entitätsmetadaten können Sie die Funktionen einer Entität steuern. Verwenden Sie zum Anzeigen der Entitätsmetadaten für Ihre Organisation den Metadatenbrowser. [Herunterladen des Metadatenbrowsers](https://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip).
 
 Weitere Informationen: [Durchsuchen der Metadaten für Ihre Organisation](browse-your-metadata.md).  
   
@@ -91,7 +97,7 @@ Bei der Verwendung von Organisations-Service, können Sie die <xref:Microsoft.Xr
 |                          **Aktivieren des Outlook-Lesebereichs**                           | **Hinweis**:<br /><br /> Die `IsReadingPaneEnabled` Eigenschaft ist nur für den internen Gebrauch bestimmt.<br /><br /> Um die Möglichkeit der Office Outlook-Benutzer, Daten für diese Entität anzuzeigen, zu aktivieren oder zu deaktivieren, verwenden Sie den Outlook-Lesebereich. Sie müssen diese Eigenschaft in der Anwendung festlegen. |
 |                                 **Aktivieren des Seriendrucks**                                  |                                                                                                                 Verwenden Sie `IsMailMergeEnabled`, um die Möglichkeit zu aktivieren oder zu deaktivieren, zusammengeführte Office Word-Dokumente zu erstellen, die Daten aus dieser Entität verwenden.                                                                                                                  |
 |                             **Duplikaterkennung aktivieren**                             |                                                                                                       Verwenden Sie `IsDuplicateDetectionEnabled`, um die Duplikaterkennung für die Entität zu aktivieren oder zu deaktivieren. Weitere Informationen finden Sie unter [Doppelte Daten in Dynamics 365 erkennen](/dynamics365/customer-engagement/developer/detect-duplicate-data-for-developers).                                                                                                        |
-|                           **Aktivieren der SharePoint-Integration**                            |                                                          Verwenden Sie `IsDocumentManagementEnabled`, um die SharePoint-Serverintegration für die Entität zu aktivieren oder zu deaktivieren. Für weitere Information, siehe [Aktivieren der Dokumentenverwaltung für Entitäten](/dynamics365/customer-engagement/developer/integration-dev/enable-document-management-entities).                                                          |
+|                           **SharePoint-Integration aktivieren**                            |                                                          Verwenden Sie `IsDocumentManagementEnabled`, um die SharePoint-Serverintegration für die Entität zu aktivieren oder zu deaktivieren. Für weitere Information, siehe [Aktivieren der Dokumentenverwaltung für Entitäten](/dynamics365/customer-engagement/developer/integration-dev/enable-document-management-entities).                                                          |
 | **Aktivieren von Dynamics 365 for phones** |                                                                                                                      Verwenden Sie `IsVisibleInMobile`., um die Möglichkeit, Daten für diese Entität anzuzeigen, für Dynamics 365 for phones-Benutzer zu aktivieren oder zu deaktivieren.                                                                                                                       |
 |              **Dynamics 365 for Tablets**               |                             Verwenden Sie `IsVisibleInMobileClient`., um die Möglichkeit, Daten für diese Entität anzuzeigen, für Dynamics 365 for tablets-Benutzer zu aktivieren oder zu deaktivieren.<br /><br /> Wenn die Entität für Dynamics 365 for tablets verfügbar ist, können Sie `IsReadOnlyInMobileClient` verwenden, um anzugeben, dass die Daten für den Datensatz schreibgeschützt sind.                              |
 |                                  **Aktivieren der Überwachung**                                   |                                                                                                              Verwenden Sie `IsAuditEnabled`, um die Überwachung für die Entität zu aktivieren oder zu deaktivieren. Weitere Informationen finden Sie unter [Konfigurieren von Entitäten und Attributen für Überwachung](configure-entities-attributes-auditing.md).                                                                                                              |

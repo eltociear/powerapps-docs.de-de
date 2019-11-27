@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichen der App auf AppSource (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie Ihre PowerApps auf Microsoft AppSource veröffentlichen, damit Abonnenten sie finden, testen und kaufen können.'
+description: Erfahren Sie, wie Sie Ihre PowerApps auf Microsoft AppSource veröffentlichen, damit Abonnenten sie finden, testen und kaufen können.
 ms.custom: ''
 ms.date: 03/20/2019
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: AnnBe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d5d14f30fc5877a8021f61e8ba9b4d5176c7af9c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748663"
 ---
 # <a name="publish-your-app-on-appsource"></a>App auf AppSource veröffentlichen
 
-Veröffentlichen Sie Ihre App auf [Microsoft AppSource](https://appsource.microsoft.com), damit App-Abonnenten sie finden, testen und kaufen können. Die Apps, die Sie mit PowerApps erstellen, werden in Dynamics 365 im Netz ermittelt und veröffentlicht. Weitere Informationen: [Entdecken von Apps über AppSource](/powerapps/user/app-source). 
+Veröffentlichen Sie Ihre App auf [Microsoft AppSource](https://appsource.microsoft.com), damit App-Abonnenten sie finden, testen und kaufen können. Die Apps, die Sie mit PowerApps erstellen und veröffentlichen, werden in Dynamics 365 im Web ermittelt und verwendet. Weitere Informationen: [Entdecken von Apps über AppSource](/powerapps/user/app-source). 
 
 ## <a name="prepare-for-submitting-your-app-on-appsource"></a>Bereiten Sie das Senden der App auf AppSource vor
 

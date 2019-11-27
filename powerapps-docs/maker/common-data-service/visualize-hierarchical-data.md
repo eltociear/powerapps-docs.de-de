@@ -1,6 +1,6 @@
 ---
 title: Visualisierung hierarchischer Daten mit modellgesteuerten Apps | MicrosoftDocs
-description: 'Erfahren Sie, wie hierarchische verknüpfte Daten abgefragt und visualisiert werden'
+description: Erfahren Sie, wie hierarchische verknüpfte Daten abgefragt und visualisiert werden
 ms.custom: ''
 ms.date: 05/28/2019
 ms.reviewer: ''
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2328d35af7be35e3aae8d38bc1157adce513cb7c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758542"
 ---
 # <a name="visualize-hierarchical-data-with-model-driven-apps"></a>Visualisierung hierarchischer Daten mit modellgesteuerten Apps
 
@@ -106,4 +112,4 @@ Je nach Ihren Anforderungen können Sie zwischen der Verwendung einer Strukturan
 ### <a name="see-also"></a>Siehe auch 
 
 [Definieren und Abfragen von hierarchiebezogenen Daten](../common-data-service/define-query-hierarchical-data.md)<br />
-[Video: Hierarchievisualisierung in](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+[Video: Hierarchievisualisierung in](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

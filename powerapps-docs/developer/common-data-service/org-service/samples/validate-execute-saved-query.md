@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Überprüfen und Ausführen einer gespeicherten Abfrage (Common Data Service) | Microsoft Docs'
-description: 'In diesem Beispiel wird gezeigt, wie eine gespeicherte Abfrage überprüft und ausgeführt wird'
+title: 'Beispiel: Überprüfen und Ausführen einer gespeicherten Abfrage (Common Data Service) | Microsoft-Dokumentation'
+description: In diesem Beispiel wird gezeigt, wie eine gespeicherte Abfrage überprüft und ausgeführt wird
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2ea9be760c08bb75b97cfeb234ce914eae9e014c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748698"
 ---
 # <a name="sample-validate-and-execute-a-saved-query"></a>Beispiel: Überprüfen und ausführen einer gespeicherten Abfrage
 

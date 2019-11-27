@@ -1,24 +1,24 @@
 ---
 title: 'Kontrollkästchen-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen über das Kontrollkästchen-Steuerelement, einschließlich Eigenschaften und Beispielen
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d943eacabaab8d9542352ee0b1c092244c171d86
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2a89f2afcceedada0ffdda53628e9253433e8f95
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986809"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650688"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="check-box-control-in-powerapps"></a>Kontrollkästchen-Steuerelement in PowerApps
@@ -32,7 +32,7 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 
 **[Text](properties-core.md)** – Text, der in einem Steuerelement angezeigt wird oder von einem Benutzer in ein Steuerelement eingegeben wird.
 
-**[Value](properties-core.md)** – Gibt den Wert des Eingabesteuerelements an.
+**[Value](properties-core.md)** : Gibt den Wert des Eingabesteuerelements an.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
@@ -67,7 +67,7 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)** – die Gewichtung des Texts in einem-Steuerelement: **Fett**, **halb Fett**, **Normal**oder **heller**.
+**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -79,11 +79,11 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 
 **[Italic](properties-text.md)** – Legt fest, ob der Text in einem Steuerelement kursiv formatiert ist.
 
-**OnCheck** – Gibt an, wie eine App reagiert, wenn sich der Wert eines Kontrollkästchen- oder Umschalten-Steuerelements in **true** ändert.
+**OnCheck**: Wie eine App reagiert, wenn sich der Wert eines Kontrollkästchens oder von Umschalten auf **TRUE** ändert.
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
-**OnUncheck** – Gibt an, wie eine App reagiert, wenn sich der Wert eines Kontrollkästchen- oder Umschalten-Steuerelements in **false** ändert.
+**OnUncheck**: Wie eine App reagiert, wenn sich der Wert eines Kontrollkästchens oder von Umschalten auf **FALSE** ändert.
 
 **[PaddingBottom](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
 
@@ -99,7 +99,7 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -107,7 +107,7 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -153,5 +153,5 @@ Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessi
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
  

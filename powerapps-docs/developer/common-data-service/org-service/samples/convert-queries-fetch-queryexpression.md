@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Konvertieren von Abfragen zwischen FetchXML und QueryExpression (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie Abfragen zwischen FetchXML und QueryExpression konvertiert werden'
+title: 'Beispiel: Konvertieren von Abfragen zwischen FetchXML und QueryExpression (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie Abfragen zwischen FetchXML und QueryExpression konvertiert werden
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bfca21b85fd4b35660c9fbe7cfb74610850952c4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748383"
 ---
 # <a name="sample-convert-queries-between-fetchxml-and-queryexpression"></a>Beispiel: Konvertieren von Abfragen zwischen FetchXML und QueryExpression
 

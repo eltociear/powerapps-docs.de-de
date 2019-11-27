@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Erstellen und Aktualisieren von verknüpften Datensätzen (früher gebunden) (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Erstellen und Aktualisieren von verknüpften Datensätzen mit früher Bindung (Common Data Service) | Microsoft-Dokumentation'
 description: 'Dieses Beispiel veranschaulicht die Erstellungs-, Abruf-, Aktualisierungs- und Löschungsvorgänge für ein Konto mithilfe der Klasse mit früher Bindung. '
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 80f286e9c0eabd732d61f9d537c07861707a26ab
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748750"
 ---
 # <a name="sample-early-bound-entity-operations"></a>Beispiel: Früh gebundene Entitätsvorgänge
 

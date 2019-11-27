@@ -1,6 +1,6 @@
 ---
-title: Identifizieren und Beheben von Kundenproblemen mithilfe eines Portals | MicrosoftDocs
-description: Erfahren Sie, wie Sie Kunden Probleme mit einem Portal identifizieren und beheben können.
+title: Kundenprobleme mit einem Portal identifizieren und beheben | MicrosoftDocs
+description: Erfahren Sie, wie Sie Kundenprobleme mit einem Portal identifizieren und beheben können.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -10,54 +10,54 @@ ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: b361efd6a1f44485e9b7337e3e5b3a29c1a826d4
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976183"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709625"
 ---
-# <a name="portal-checker"></a>Portal Prüfung
+# <a name="portal-checker"></a>Portalprüfer
 
-Die Portal Prüfung ist ein Self-Service-Diagnosetool, das von Portaladministratoren verwendet werden kann, um häufige Probleme im Portal zu identifizieren. Die Portal Prüfung hilft Ihnen dabei, Probleme mit Ihrem Portal zu identifizieren, indem Sie verschiedene Konfigurationsparameter betrachten und Vorschläge zur Behebung von Problemen bereitstellt.
+Der Portal-Checker ist ein Self-Service-Diagnosewerkzeug, das von Portaladministratoren verwendet werden kann, um häufige Probleme in ihrem Portal zu identifizieren. Der Portalprüfer hilft Ihnen, Probleme mit Ihrem Portal zu identifizieren, indem er sich verschiedene Konfigurationsparameter ansieht und Vorschläge zur Behebung gibt.
 
-Wenn Sie die Portal Prüfung ausführen, werden die Ergebnisse im Abschnitt **Diagnoseergebnisse** in einem Raster Format angezeigt. Das Ergebnis Raster weist die folgenden Spalten auf:
+Wenn Sie den Portal-Checker ausführen, werden die Ergebnisse im Abschnitt **Diagnosedaten** in einem Rasterformat angezeigt. Das Ergebnistabelle hat die folgenden Spalten:
 
-- **Problem**: zeigt das Problem der obersten Ebene eines Kunden an. beispielsweise Leistungsprobleme.
-- **Kategorie**: zeigt den Bereich der obersten Ebene an, in dem Probleme kategorisiert werden können. beispielsweise Bereitstellung, Lösungs Upgrade und so weiter.
-- **Ergebnis**: zeigt den Status des Problems an. beispielsweise "Error", "Warning" usw.
+- **Problem:** Zeigt das oberste Problem eines Kunden an, z. B. Leistungsproblem.
+- **Kategorie:** Zeigt den obersten Bereich an, in dem Probleme kategorisiert werden können, z. B. Provisionierung, Lösungsupgrade usw.
+- **Ergebnis:** Zeigt den Status des Problems an, z. B. Fehler, Warnung usw.
 
-Standardmäßig werden die Informationen im Raster nach der **Ergebnis** Spalte in der folgenden Reihenfolge sortiert: Error, Warning und Pass.
+Standardmäßig werden die Informationen im Raster nach der Spalte **Ergebnis** in dieser Reihenfolge sortiert: Fehler, Warnung und Übergabe.
 
 > [!div class=mx-imgBorder]
 > ![Diagnoseergebnisse](../media/diagnostic-results.png "Diagnoseergebnisse")
 
-Sie können ein Problem erweitern, um ausführliche Informationen und Abhilfemaßnahmen anzuzeigen. Wenn für die Entschärfung eine Aktion erforderlich ist, wird eine Schaltfläche angezeigt, mit der die Aktion ausgeführt wird. Sie können auch Feedback geben, ob die Entschärfung nützlich war.
+Sie können ein Problem erweitern, um detaillierte Informationen und Schritte zur Fehlerbehebung anzuzeigen. Wenn die Abhilfe eine Maßnahme erfordert, sehen Sie eine Schaltfläche, die die Maßnahme ausführt. Sie können auch Feedback darüber geben, ob die Maßnahme sinnvoll war.
 
 > [!div class=mx-imgBorder]
-> ![Erweitern eines Problems in Diagnoseergebnissen](../media/diagnostic-results-issue-expand.png "Erweitern eines Problems in Diagnoseergebnissen")
+> ![Erweitern eines Problems in den Diagnoseergebnissen](../media/diagnostic-results-issue-expand.png "Erweitern eines Problems in den Diagnoseergebnissen")
 
-Falls erforderlich, können Sie die Diagnose Überprüfungen erneut ausführen, wodurch die Ergebnisse mit aktualisierten Daten aktualisiert werden.
+Bei Bedarf können Sie die Diagnoseprüfungen erneut durchführen, wodurch die Ergebnisse mit aktualisierten Daten aktualisiert werden.
 
 > [!NOTE]
-> Wenn das Portal ausgeschaltet ist oder das Filtern von IP-Adressen aktiviert ist, werden bestimmte Diagnose Überprüfungen nicht in Ihrem Portal ausgeführt.
+> Wenn das Portal deaktiviert oder die IP-Adressfilterung aktiviert ist, werden bestimmte Diagnoseprüfungen auf Ihrem Portal nicht durchgeführt.
 
-Eine Liste der häufigen Probleme, die vom Portal Überprüfungs Tool diagnostiziert werden, finden Sie unter [Allgemeine Portal Probleme, die von der Portal Prüfung diagnostiziert werden, und die bewährten Methoden](https://docs.microsoft.com/dynamics365/customer-engagement/portals/portal-faq).
+Eine Liste der häufigsten Probleme, die vom Portalprüfer-Tool diagnostiziert wurden, finden Sie unter [Allgemeine Probleme im Portal, die vom Portalprüfer diagnostiziert wurden, und deren bewährte Verfahren](https://docs.microsoft.com/dynamics365/customer-engagement/portals/portal-faq).
 
-So führen Sie die Portal Prüfung aus:
+Um den Portal-Checker auszuführen:
 
-1.  Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
+1.  Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
 
-2.  Wechseln Sie zu **Run Portal Checker**.
+2.  Gehen Sie zu **Portalprüfung ausführen**.
 
     > [!div class=mx-imgBorder]
-    > Portal ![Prüfung ausführen](../media/run-diagnostics.png "Portal") Prüfung ausführen
+    > ![Portalprüfung ausführen](../media/run-diagnostics.png "Portalprüfung ausführen")
 
-3.  Wählen Sie **Portal Prüfung ausführen**aus. Die Diagnose Sitzung wird gestartet, und es werden Daten zu den Kundenproblemen gesammelt. Die Ergebnisse werden im Abschnitt **Diagnoseergebnisse** angezeigt.
+3.  **Portalprüfung ausführen** auswählen. Die Diagnosesitzung wird gestartet und sammelt Daten über die Kundenprobleme. Die Ergebnisse werden im Abschnitt **Diagnoseergebnisse** angezeigt.
 
     > [!div class=mx-imgBorder]
     > ![Diagnoseergebnisse](../media/diagnostic-results.png "Diagnoseergebnisse")
 
-4.  Um die Diagnose Überprüfungen erneut auszuführen, wählen Sie **Ergebnisse aktualisieren**aus.
+4.  Um die Diagnoseprüfungen erneut durchzuführen, wählen Sie **Ergebnisse aktualisieren**.
 
     > [!div class=mx-imgBorder]
-    > ![Aktualisieren der Diagnoseergebnisse](../media/diagnostic-results-refresh.png "Aktualisieren von Diagnoseergebnissen")
+    > ![Diagnosedaten aktualisieren](../media/diagnostic-results-refresh.png "Diagnosedaten aktualisieren")

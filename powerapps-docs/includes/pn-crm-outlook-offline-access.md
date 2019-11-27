@@ -1,1 +1,1 @@
-Dynamics 365 for Microsoft Office Outlook mit Offlinezugriff
+Dynamics 365 für Microsoft Office Outlook mit Offlinezugriff

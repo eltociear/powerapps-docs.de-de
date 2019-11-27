@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a975669d1e22289b7152b830808631992389a1f
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 010d567369e9c580b57a55ad251ac5ef01da3597
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71991630"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741378"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Erstellen einer Detail Galerie in einer Canvas-App
@@ -48,14 +48,14 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 1. Entfernen Sie den Text aus der Kopie auf eine der folgenden Arten:
 
     - Doppelklicken Sie auf den Text, um ihn auszuwählen, und drücken Sie dann ENTF.
-    - Legen Sie die **Text** -Eigenschaft der Bezeichnung auf eine leere Zeichenfolge ( **""** ) fest.
+    - Legen Sie die **Text** -Eigenschaft der Bezeichnung auf eine leere Zeichenfolge (**""**) fest.
 
     > [!div class="mx-imgBorder"]
     > ![entfernen Sie den Text aus der Titelleisten Kopie](media/northwind-orders-canvas-part3/details-02.png)
 
 ## <a name="add-a-gallery"></a>Einen Katalog hinzufügen
 
-1. Fügen Sie ein Katalog [ **-Steuerelement mit einem**](controls/control-gallery.md) **leeren vertikalen** Layout ein:
+1. Fügen Sie ein Katalog [**-Steuerelement mit einem**](controls/control-gallery.md) **leeren vertikalen** Layout ein:
 
     > [!div class="mx-imgBorder"]
     > ![einen leeren vertikalen Katalog hinzufügen](media/northwind-orders-canvas-part3/details-03.png)
@@ -65,7 +65,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
     > [!div class="mx-imgBorder"]
     > ![Standard Speicherort der Order-Details-Galerie](media/northwind-orders-canvas-part3/details-04.png)
 
-1. Schließen Sie den Bereich **Daten** , und ändern Sie dann die Größe, und verschieben Sie die Detail Galerie in die untere rechte Ecke unterhalb der neuen Titelleiste:
+1. Schließen Sie das Dialogfeld Datenquelle auslagern, ändern Sie die Größe, und verschieben Sie die Detail Galerie in die untere rechte Ecke unterhalb der neuen Titelleiste:
 
     > [!div class="mx-imgBorder"]
     > ![endgültige Position der Order-Details-Galerie](media/northwind-orders-canvas-part3/details-05.png)
@@ -184,7 +184,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
     Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
-    Wenn Sie das Sprachtag ( **[$-en-US]** ) nicht einschließen, wird es basierend auf Ihrer Sprache und Region für Sie hinzugefügt. Wenn Sie ein anderes Sprachtag verwenden, sollten Sie die **$** direkt hinter der schließenden eckigen Klammer ( **]** ) entfernen und dann Ihr eigenes Währungssymbol an dieser Position hinzufügen.
+    Wenn Sie das Sprachtag (**[$-en-US]**) nicht einschließen, wird es basierend auf Ihrer Sprache und Region für Sie hinzugefügt. Wenn Sie ein anderes Sprachtag verwenden, sollten Sie die **$** direkt hinter der schließenden eckigen Klammer (**]**) entfernen und dann Ihr eigenes Währungssymbol an dieser Position hinzufügen.
 
     > [!div class="mx-imgBorder"]
     > ![Einzelpreis anzeigen](media/northwind-orders-canvas-part3/details-15.png)
@@ -202,7 +202,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
     Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
-    Wenn Sie das Sprachtag ( **[$-en-US]** ) nicht einschließen, wird es auf Grundlage ihrer Sprache und Region für Sie hinzugefügt. Wenn das Tag anders ist, sollten Sie anstelle der **$** direkt nach der schließenden eckigen Klammer ( **]** ) Ihr eigenes Währungssymbol verwenden.
+    Wenn Sie das Sprachtag (**[$-en-US]**) nicht einschließen, wird es auf Grundlage ihrer Sprache und Region für Sie hinzugefügt. Wenn das Tag anders ist, sollten Sie anstelle der **$** direkt nach der schließenden eckigen Klammer (**]**) Ihr eigenes Währungssymbol verwenden.
 
     > [!div class="mx-imgBorder"]
     > ![den erweiterten Preis anzeigen](media/northwind-orders-canvas-part3/details-17.png)
@@ -321,32 +321,6 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
     > [!div class="mx-imgBorder"]
     > ![Füll Zeichen in Hellblau ändern](media/northwind-orders-canvas-part3/add-details-03.png)
 
-## <a name="add-the-order-details-data-source"></a>Hinzufügen der Datenquelle "Order Details"
-
-1. Wählen Sie auf der Registerkarte **Ansicht** die Option **Datenquellen**aus, und wählen Sie dann im Bereich **Daten** die Option **Datenquelle hinzufügen** aus:
-
-    > [!div class="mx-imgBorder"]
-    > ![Datenquelle hinzufügen](media/northwind-orders-canvas-part3/add-details-04.png)
-
-1. Wählen Sie **Common Data Service**aus:
-
-    > [!div class="mx-imgBorder"]
-    > ![Common Data Service auswählen](media/northwind-orders-canvas-part3/add-details-05.png)
-
-1. Geben Sie am oberen Rand des **Daten** Bereichs im Suchfeld **Order** ein, aktivieren Sie das Kontrollkästchen **Order Details** , und wählen Sie dann am unteren Rand des Fensters **verbinden** aus:
-
-    > [!div class="mx-imgBorder"]
-    > ![geben Sie die Entität Order Details an](media/northwind-orders-canvas-part3/add-details-06.png)
-
-    Sie haben der APP soeben eine weitere Datenquelle hinzugefügt:
-
-    > [!div class="mx-imgBorder"]
-    > ![Liste der Datenquellen](media/northwind-orders-canvas-part3/add-details-07.png)
-
-    Sie müssen diese Datenquelle hinzufügen, da die APP zwar eine 1: n-Beziehung lesen kann, aber die APP kann noch keine Änderungen zurückschreiben. Die APP muss direkt mit der zugehörigen Entität Änderungen vornehmen.
-
-1. Schließen Sie den **Daten** Bereich.
-
 ## <a name="select-a-product"></a>Produkt auswählen
 
 1. Wählen Sie auf der Registerkarte **Einfügen** die Option Steuer **Elemente**  >  Kombinations**Feld**aus:
@@ -356,23 +330,12 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
     Das Kombinations [**Feld**](controls/control-combo-box.md) -Steuerelement wird in der linken oberen Ecke angezeigt.
 
-1. Legen Sie die **Items** -Eigenschaft des Kombinations Felds auf diese Formel fest:
-
-    ```powerapps-comma
-    Choices( 'Order Details'.Product )
-    ```
+1. Wählen Sie im Dialogfeld "ausführen" die Datenquelle " **Bestell Produkte** " aus:
 
     > [!div class="mx-imgBorder"]
     > ![die Items-Eigenschaft des Kombinations Felds fest](media/northwind-orders-canvas-part3/add-details-09.png)
 
-    Die [**Auswahl**](functions/function-choices.md) Funktion gibt eine Tabelle mit allen möglichen Werten für das Feld " **Product** " in der Entität " **Order Details** " zurück. Dieses Feld ist eine Suche in einer n:1-Beziehung, sodass die **Auswahl** alle Datensätze in der Entität " **Order Products** " zurückgibt.
-
-    > [!NOTE]
-    > Sie können auch **Optionen** mit Options Sätzen verwenden, um eine Tabelle mit allen Optionen zurückzugeben. Diese Vorgehensweise wurde von den Schritten nicht erwähnt, aber Sie haben Sie bereits verwendet, als Sie das Kombinations Feld hinzugefügt haben, das den **Auftrags Status** im Zusammenfassungs Formular anzeigt.
-
-1. Öffnen Sie im Bereich **Daten** die **primäre Textliste** , und wählen Sie dann **nwind_productname**aus. 
-
-1. Öffnen Sie die Liste **searchfield** , und wählen Sie dann **nwind_productname**aus.
+1. Wählen Sie auf der Registerkarte **Eigenschaften** für das Kombinations Feld **Bearbeiten** (neben **Felder**) aus, um den Bereich **Daten** zu öffnen.  Stellen Sie sicher, dass der **primäre Text** und das **searchfield** auf **nwind_productname**festgelegt sind.
 
     Sie geben den logischen Namen an, da der **Daten** Bereich in diesem Fall noch keine anzeigen Amen unterstützt:
 

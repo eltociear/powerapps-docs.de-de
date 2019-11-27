@@ -1,5 +1,5 @@
 ---
-title: " Navigations-API-Komponente | Microsoft-Dokumentation"
+title: " Navigations-API-Komponente | Microsoft Docs"
 description: Implementieren der Navigations-API-Komponente
 ms.custom: ''
 manager: kvivek
@@ -9,24 +9,24 @@ ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
 ms.openlocfilehash: 85dd665f7a3dc92b5198cfd8429b59af0896d5cc
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340343"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748311"
 ---
 # <a name="implementing-navigation-api-component"></a>Implementieren der Navigations-API-Komponente
 
-Diese Beispiel Komponente untersucht die verschiedenen Methoden, die als Teil der powerapps-Komponenten Framework-Navigations-API verfügbar sind. In diesem Beispiel erstellen Sie eine Reihe von Eingabe Elementen vom Typ Schaltflächen, die die entsprechenden Methoden der Navigations-API aufrufen, die mit dem angezeigten Wert übereinstimmen.  
+Diese Beispielkomponente untersucht die verschiedenen Methoden, die als Teil der Formatierungs-API des PowerApps component framework zur Verfügung stehen. Im vorliegenden Beispiel, erstellen Sie eine Reihe von Eingabeelementen des Typs Schaltfläche , die in die jeweiligen Methoden der Navigations-API anrufen, die dem angezeigten Wert entsprechen.  
 
 > [!div class="mx-imgBorder"]
-> Navigations-API-(../media/navigation-api-control.png "Komponente") Navigations- ![API-Komponente]
+> ![Navigations-API-Komponente](../media/navigation-api-control.png "Navigations-API-Komponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgesteuerte Apps
+Modellgestützte Apps
 
-## <a name="manifest"></a>Kundiger
+## <a name="manifest"></a>Manifest
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -214,37 +214,37 @@ public destroy()
 }
 ```
 
-Die `openAlertDialog`-Methode bietet die Möglichkeit, ein Warnungs Dialogfeld anzuzeigen, das eine Meldung und eine Schaltfläche enthält. Sie können auch Rückruf Methoden implementieren, wenn das Dialogfeld "Warnung" geschlossen wird, oder wenn beim Laden des Dialog Felds ein Fehler auftritt.
+Die `openAlertDialog`-Methode bietet die Möglichkeit einen Warnungsdialog anzuzeigen, der eine Nachricht und eine Schaltfläche enthält. Sie können auch Rückrufmethoden implementieren, wenn der Warndialog geschlossen wird, oder wenn beim Laden des Dialogs ein Fehler auftritt.
   
-Wenn Sie in diesem Beispiel auf den klicken `openAlertDialogButton` wird ein Warnungs Dialogfeld angezeigt, und der Wert des Dialog Felds wird auf `Alert dialog closed` festgelegt, wenn das Dialogfeld entweder mithilfe der Schaltfläche `OK` oder der Schaltfläche `X` geschlossen wird.
+Wenn Sie in diesem Beispiel auf `openAlertDialogButton` klicken, wird ein Warndialog geöffnet und der Wert davon wird auf `Alert dialog closed` festgelegt, wenn der Dialog entweder mit der Schaltfläche `OK` oder der Schaltfläche `X` geschlossen wird.
 
 > [!NOTE]
-> Dies ähnelt dem Aufrufen der [xrm. Navigation. openalertdialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog) -Methode in clientapi.  
+> Dies gleicht dem Aufruf der [Xrm.Navigation.openAlertDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog)-Methode in ClientAPI.  
 
-Die `openConfirmDialog`-Methode bietet die Möglichkeit, ein Warn Dialogfeld anzuzeigen, das eine Meldung und zwei Schaltflächen enthält. Mit dieser Methode können Sie unterschiedliche Logik basierend auf der Schaltfläche implementieren, auf die geklickt wird. Sie können den success-Rückruf implementieren, der aufgerufen wird, wenn das Dialogfeld geschlossen wird, indem Sie auf eine der Schaltflächen klicken.
+Die `openConfirmDialog`-Methode bietet die Möglichkeit einen Warnungsdialog anzuzeigen, der eine Nachricht und zwei Schaltflächen enthält. Sie können diese Methode verwenden, um unterschiedliche Logik anhand der geklickten Schaltfläche zu implementieren. Sie können den Erfolgsrückruf implementieren, der aufgerufen wird, wenn der Dialog geschlossen wird, indem auf eine der Schaltflächen geklickt wird.
   
-In diesem Beispiel wird ein Bestätigungs Dialogfeld angezeigt, wenn Sie auf die `openConfirmDialogButton` klicken und den Wert davon auf `Ok` oder `Cancel` oder `X` abhängig von der Schaltfläche, auf die geklickt wurde, festlegen.
+In diesem Beispiel wird der Bestätigungsdialog gezeigt, wenn Sie auf `openConfirmDialogButton` klicken und der Wert davon wird auf `Ok` oder `Cancel` oder `X` festgelegt, je nach der Schaltfläche, auf die geklickt wurde.
 
 > [!NOTE]
-> Dies ähnelt dem Aufrufen der [xrm. Navigation. openconfirmdialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog) -Methode in clientapi.
+> Dies gleicht dem Aufruf der [Xrm.Navigation.openConfirmDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog)-Methode in ClientAPI.
   
-Die `openFile`-Methode bietet die Möglichkeit, eine Datei zu öffnen. Sie müssen das File-Objekt übergeben, das den Dateinamen, den Inhalt, den Mimetype und die Filesize enthält. Sie können auch den optionalen Parameter des Modus übergeben, in dem Sie die Datei als 1 oder 2 öffnen möchten, wobei 1 der Standardwert ist, der die Datei im Lese-oder Öffnungs Modus öffnet.
+Die `openFile`-Methode bietet die Möglichkeit, eine Datei zu öffnen. Sie müssen das Dateiobjekt übergeben, das den Dateinamen, den Inhalt den mimetype und die Dateigröße enthält. Sie können auch den optionalen Parameter des Modus übergeben, für den die Datei als 1 oder 2 geöffnet werden soll. Dabei ist 1 der Standard, der die Datei im Lese- oder Öffnen-Modus öffnet.
   
-In diesem Beispiel wird eine Datei mit dem Namen `SampleDemo.txt` im Speicher Modus geöffnet, wenn Sie auf die `openFileButton` klicken.
+In diesem Beispiel wird eine Datei namens `SampleDemo.txt` im sicheren Modus beim Klicken auf `openFileButton` geöffnet.
 
 > [!NOTE]
-> Dies ähnelt dem Aufrufen der [xrm. Navigation. OpenFile](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile) -Methode in clientapi.
+> Dies gleicht dem Aufruf der [Xrm.Navigation.openFile](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile)-Methode in ClientAPI.
 
-Die `openUrl`-Methode bietet die Möglichkeit, eine URL zu öffnen. Sie müssen die URL als Zeichenfolge an die-Methode übergeben und außerdem die optionalen Parameter von Height, Width und OpenInNewWindow als true übergeben, wenn die URL in einem neuen Fenster geöffnet werden soll.
+Die `openUrl`-Methode bietet die Möglichkeit, eine URL zu öffnen. Sie müssen die URL als eine Zeichenfolge an die Methode übergeben und auch die optionalen Parameter für Höhe, Breite und openInNewWindow als wahr übergeben, wenn die URL in einem neuen Fenster geöffnet werden soll.
   
-In diesem Beispiel wird ein neues Fenster geöffnet, und die Microsoft.com-Startseite wird beim Klicken auf den `openUrlButton` geladen.
+In diesem Beispiel wird ein neues Fenster geöffnet und die microsoft.com home page wird beim Klicken auf `openUrlButton` geladen.
 
 > [!NOTE]
-> Dies ähnelt dem Aufrufen der [xrm. Navigation. OpenURL](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl) -Methode in clientapi.
+> Dies gleicht dem Aufruf der [Xrm.Navigation.openUrl](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl)-Methode in ClientAPI.
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)
 

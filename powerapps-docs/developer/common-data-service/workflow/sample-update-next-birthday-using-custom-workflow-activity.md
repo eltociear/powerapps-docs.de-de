@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Aktualisieren des folgenden Geburtstags mithilfe eine benutzerdefinierte Workflowaktivität (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Aktualisieren des nächsten Geburtstags mithilfe einer benutzerdefinierten Workflowaktivität (Common Data Service) | Microsoft-Dokumentation'
 description: 'Die folgende Beispielworkflowaktivität gibt den nächsten Geburtstag zurück. Verwenden Sie das Beispiel in einem Workflow, der einen Geburtstagsgruß an einen Kunden sendet. '
 ms.custom: ''
 ms.date: 12/03/2018
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 1cff83b0-1f7b-4ddb-a2af-b85f9f785529
 caps.latest.revision: 21
 author: JimDaly
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 819f6f03b6f110508c0705bb2916c83dfb880dbc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748335"
 ---
 # <a name="sample-update-next-birthday-using-a-custom-workflow-activity"></a>Beispiel: Aktualisieren des nächsten Geburtstags mithilfe einer benutzerdefinierten Workflowaktivität
 

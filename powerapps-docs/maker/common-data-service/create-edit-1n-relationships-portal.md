@@ -1,6 +1,6 @@
 ---
-title: 'Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen im PowerApps Portal  | MicrosoftDocs'
-description: 'Erstellen oder Bearbeiten von 1: N oder n: n: Entitätsbeziehungen mithilfe des PowerApps Portal'
+title: 'Erstellen oder Bearbeiten von 1: N- (eine-zu-vielen) oder N:1-Entitätsbeziehungen (viele-zu einer) im PowerApps-Portal | MicrosoftDocs'
+description: 'Erstellen oder Bearbeiten von 1: N- oder n: n:-Entitätsbeziehungen mithilfe des PowerApps-Portals'
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 70f48af48b2a9221029735de484b555bc03a66c4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756518"
 ---
-# <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-powerapps-portal"></a>Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen im PowerApps Portal
+# <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-powerapps-portal"></a>Erstellen oder Bearbeiten von 1: N- (eine-zu-vielen) oder N:1-Entitätsbeziehungen (viele-zu einer) im PowerApps-Portal
 
-Das [PowerApps Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, 1:N (eine-zu-viele) oder N:1 (viele-zu-einer) -Entitätsbeziehungen für Common Data Service zu erstellen und zu bearbeiten.
+Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, 1:N- (eine-zu-viele) oder N:1-Entitätsbeziehungen (viele-zu-einer) für Common Data Service zu erstellen und zu bearbeiten.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. Weitere Informationen: 
 - [Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer)-Entitätsbeziehungen](create-edit-1n-relationships.md)
@@ -31,7 +37,7 @@ PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch b
 
 ## <a name="view-entity-relationships"></a>Zeigen Sie Entitätsbeziehungen an
 
-1. In [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Wählen Sie **Modell-angetrieben** oder **Canvas** Entwurfsmodus aus.
+1. Wählen Sie im [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
 2. Wählen Sie **Daten**  >  **Entitäten** und wählen Sie die Entität aus, die die Beziehung enthält, die Sie anzeigen möchten.
 3. Wenn die Registerkarte **Beziehungen** ausgewählt ist, können Sie die folgenden Ansichten auswählen: 
 
@@ -55,7 +61,7 @@ Während dem [Anzeigen von Entitätsbeziehungen](#view-entity-relationships) wä
 
 <!-- This may change going forward, but this is the way it is now. #2534972 -->
 > [!Important]
-> Dieses Portal verwendet eine andere Terminologie als der Lösungs-Explorer. Die Bedingungen werden rückgängig gemacht. Der Lösungsexplorer **Verknüpfte Entität** ist die **Primäre Entität** im Portal. Der Lösungsexplorer **Primäre Entität** im Lösungsexplorer ist die **Verknüpfte Entität** im Portal.
+> Dieses Portal verwendet eine andere Terminologie als der Lösungs-Explorer. Der Lösungsexplorer **Primäre Entität** ist die **Aktuelle Entität** im Portal.
 
 Je nach Optionen sehen Sie:
 
@@ -65,10 +71,10 @@ Je nach Optionen sehen Sie:
 |**Viele-zu-eine**|![Einer-zu-vielen-Beziehungsbereich](media/many-to-one-relationship-panel.png)|
 |**Einer-zu-vielen**|![Einer-zu-vielen-Beziehungsbereich](media/one-to-many-relationship-panel.png)|
 
-Wählen Sie **Verknüpfte Entität** oder **Primäre Entität** für die Beziehung aus, die Sie zwischen den zwei Entitäten erstellen möchten. 
+Wählen Sie für **Verknüpfte Entität** die Beziehung aus, die Sie zwischen den zwei Entitäten erstellen möchten. 
 
 > [!NOTE]
-> Mit einer Option wird ein Suchfeld in der *primären* Entität erstellt.
+> Mit einer Option wird ein Suchfeld in der *aktuellen* Entität erstellt.
 
 Sobald Sie die Entität ausgewählt ist, können Sie die Beziehung bearbeiten. In diesem Beispiel können mehrere Kontaktentitätsdatensätze einer Firma zugeordnet werden.
 

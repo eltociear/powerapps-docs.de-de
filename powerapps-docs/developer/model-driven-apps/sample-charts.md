@@ -8,12 +8,18 @@ ms.service: powerapps
 ms.topic: article
 author: KumarVivek
 ms.author: kvivek
-manager: null
+manager: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 34ca8223ecf08bda2ed38353684a0971ab289b19
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748448"
 ---
 # <a name="sample-charts"></a>Beispieldiagramme
 
@@ -88,7 +94,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
 ## <a name="bar-chart"></a>Balkendiagramm  
  Es folgt ein Balkendiagramm, in dem die zehn wichtigsten Kunden dargestellt werden. Dies ist eines der Standarddiagramme, die in MDA für die Entität `Opportunity` verfügbar sind.  
   
- ![Beispielbalkendiagramm: Die 10 wichtigsten Kunden](media/charts-top-10-customers.gif "Beispielbalkendiagramm: Die 10 wichtigsten Kunden")  
+ ![Beispiel-Balkendiagramm: Die 10 wichtigsten Kunden](media/charts-top-10-customers.gif "Beispiel-Balkendiagramm: Die 10 wichtigsten Kunden")  
   
 ### <a name="data-description"></a>Datenbeschreibung  
  Es folgen die Inhalte der Datenbeschreibungs-XML-Zeichenfolge für dieses Diagramm.  
@@ -148,7 +154,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
 ## <a name="area-chart"></a>Flächendiagramm  
  Es folgt ein Flächendiagramm, in dem die Anzahl der Datensätze angezeigt wird, die innerhalb eines festgelegten Datumsbereichs generiert wurden.  
   
- ![Beispielbereichsdiagramm](media/charts-count-of-records-areachart.gif "Beispielbereichsdiagramm")  
+ ![Beispielflächendiagramm](media/charts-count-of-records-areachart.gif "Beispielflächendiagramm")  
   
 ### <a name="data-description"></a>Datenbeschreibung  
  Es folgen die Inhalte der Datenbeschreibungs-XML-Zeichenfolge für dieses Diagramm.  
@@ -208,7 +214,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
 ## <a name="line-chart"></a>Liniendiagramm  
  Es folgt ein Liniendiagramm, in dem Anzahl der Leads gezeigt wird, die in den letzten fünf Monaten generiert wurden. Dies ist eines der Standarddiagramme, die in MDA für die Entität `Lead` verfügbar sind. 
   
-![Beispielliniendiagramm: Lead-Generierungsrate](media/lead-generation-rate-chart.png "Beispielliniendiagramm: Lead-Generierungsrate") --> 
+![Beispiel-Liniendiagramm: Leadgenerierungsrate](media/lead-generation-rate-chart.png "Beispiel-Liniendiagramm: Leadgenerierungsrate") --> 
   
 ### <a name="data-description"></a>Datenbeschreibung  
  Es folgen die Inhalte der Datenbeschreibungs-XML-Zeichenfolge für dieses Diagramm.  
@@ -319,7 +325,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
 ## <a name="funnel-chart"></a>Trichterdiagramm  
  Es folgt ein Trichterdiagramm, das die Summe des geschätzten Umsatzes für alle Phasen der Verkaufspipeline zeigt. Dies ist eines der Standarddiagramme, die in MDA für die Entität `Opportunity` verfügbar sind.  
   
- ![Beispiel-Verkaufstrichterdiagramm: Verkaufspipeline](media/charts-sales-pipeline-chart.png "Beispiel-Verkaufstrichterdiagramm: Verkaufspipeline")  
+ ![Beispiel-Trichterdiagramm: Verkaufspipeline](media/charts-sales-pipeline-chart.png "Beispiel-Trichterdiagramm: Verkaufspipeline")  
   
 ### <a name="data-description"></a>Datenbeschreibung  
  Es folgen die Inhalte der Datenbeschreibungs-XML-Zeichenfolge für dieses Diagramm.  
@@ -379,7 +385,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
   
  Ein Mehrfachseriendiagramm enthält mehrere `<Series>`-Elemente in der Präsentationsbeschreibung; die Anzahl der `<Series>`-Elemente entspricht der Anzahl der `<measurecollection>`-Elemente in der Datenbeschreibungs-XML-Zeichenfolge.  
   
- ![Beispiel-Multiseriendiagramm](media/estimated-actual-revenue-chart.gif "Beispiel-Multiseriendiagramm")  
+ ![Beispiel-Mehrfachdiagramm](media/estimated-actual-revenue-chart.gif "Beispiel-Mehrfachdiagramm")  
   
 ### <a name="data-description"></a>Datenbeschreibung  
  Es folgen die Inhalte der Datenbeschreibungs-XML-Zeichenfolge für dieses Diagramm.  
@@ -523,7 +529,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
   
  Ein Vergleichsdiagramm enthält zwei `groupby`-Klauseln im Datenbeschreibungs-XML.  
   
- ![Beispiel 100% gestapeltes Diagramm](media/charts-numberofcases-anydate-bypriority-100stackedchart.gif "Beispiel 100% gestapeltes Diagramm")  
+ ![Säulendiagramm "Sample100%"](media/charts-numberofcases-anydate-bypriority-100stackedchart.gif "Säulendiagramm "Sample100%"")  
   
 ### <a name="data-description"></a>Datenbeschreibung  
  Es folgen die Inhalte der Datenbeschreibungs-XML-Zeichenfolge für dieses Diagramm.  

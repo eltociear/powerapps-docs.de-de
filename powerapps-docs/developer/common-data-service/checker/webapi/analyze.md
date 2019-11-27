@@ -1,6 +1,6 @@
 ---
 title: Analyse aufrufen | Microsoft Docs
-description: 'Erfahren Sie, wie Sie eine POST-Anforderung mithilfe der PowerApps-Überprüfungs-Web-API erstellen können, um den Analyseanforderungsauftrag zu initiieren.'
+description: Erfahren Sie, wie Sie eine POST-Anforderung mithilfe der PowerApps-Überprüfungs-Web-API erstellen können, um den Analyseanforderungsauftrag zu initiieren.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: a2c771f4-7eb6-4445-af2d-f775619ac3e8
 caps.latest.revision: 21
 author: mhuguet
@@ -16,17 +16,22 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dad4a5ad069287ad84ff0cbf237dbdb243b82076
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748232"
 ---
-
 # <a name="invoke-analysis"></a>Analyse aufrufen
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Die Initiierung eines Analyseauftrags erfolgt, indem eine `POST`-Anforderung zur `analyze`-Route gesendet wird. Die Analyse kann ein langer laufender Prozess sein, der meist länger dauert als eine Minute. Die API nimmt zunächst einige grundlegende Überprüfungen vor, initiiert die Anforderung im Backend durch Senden eines Auftrags und antwortet dann mit einem 202-Statuscode und einem `Location`-Kopf oder mit den entsprechenden Fehlerdetails. Der `Location`-Kopfzeilenwert ist eine URL, die verwendet werden kann, um den Status der Anforderung zu überprüfen und die URLs der Ergebnisse zu erhalten. Es stehen verschiedenste Optionen über die `POST`-Aktion zur Verfügung, um den Auftrag basierend auf Ihren Kriterien anzupassen, wie die Liste von Regeln oder Regelsätzen, aus der Analyse auszuschließende Dateien und mehr. Sie können die Analyse mithilfe der folgenden `[Geographical URL]/api/analyze?api-version=1.0` initiieren.
+Die Initiierung eines Analyseauftrags erfolgt, indem eine `POST`-Anforderung zur `analyze`-Route gesendet wird. Die Analyse kann ein langer laufender Prozess sein, der meist länger dauert als eine Minute. Die API nimmt zunächst einige grundlegende Überprüfungen vor, initiiert die Anforderung im Backend durch Senden eines Auftrags und antwortet dann mit einem 202-Statuscode und einem `Location`-Kopf oder mit den entsprechenden Fehlerdetails. Der `Location`-Kopfzeilenwert ist eine URL, die verwendet werden kann, um den Status der Anforderung zu überprüfen und die URLs der Ergebnisse zu erhalten. Es stehen verschiedenste Optionen über die `POST`-Aktion zur Verfügung, um den Auftrag entsprechend Ihren Kriterien anzupassen, wie die Liste von Regeln oder Regelsätzen, aus der Analyse auszuschließende Dateien und mehr. Sie können die Analyse mithilfe der folgenden `[Geographical URL]/api/analyze?api-version=1.0` initiieren.
 
 
 > [!NOTE]

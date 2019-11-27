@@ -1,6 +1,6 @@
 ---
-title: Aktualisieren und Löschen von Entitäten mithilfe der Web-API (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie das Update und Löschen für Entitäten unter Verwendung der Web-API durchführen'
+title: Entitäten aktualisieren und löschen mit Hilfe der Web-API (Common Data Service) | Microsoft-Dokumentation
+description: Lesen Sie, wie Sie das Update und Löschen für Entitäten unter Verwendung der Web-API durchführen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 694889fd-2b85-43a0-97bc-1e760695db31
 caps.latest.revision: 17
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d85a90b05d7da51a6f2de2585d87376d4354a8eb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748347"
 ---
 # <a name="update-and-delete-entities-using-the-web-api"></a>Entitäten aktualisieren und löschen mithilfe der Web API
 
@@ -151,7 +157,7 @@ OData-Version: 4.0
 
 Wenn Sie den Wert einer einzelnen Eigenschaft löschen möchten, verwenden Sie eine DELETE- Anfrage, bei der der Eigenschaftsname an den Uri der Entität angefügt wird.  
   
-Das folgende Beispiel löscht den Wert der `description` Eigenschaft einer Firmenentität mit dem`accountid`-Wert von 00000000-0000-0000-0000-000000000001.  
+Das folgende Beispiel löscht den Wert der `description`-Eigenschaft einer Firmenentität mit dem `accountid`-Wert von 00000000-0000-0000-0000-000000000001.  
   
  **Anforderung**
 
@@ -185,7 +191,7 @@ Jedoch gibt es manchmal Situationen, in denen Sie ein `upsert` ausführen möcht
   
 ## <a name="basic-delete"></a>Grundlegende Löschung
 
-Eine Löschungsoperation ist sehr direkt. Verwenden Sie das DELETE-Verb mit dem URI der Entität, die Sie löschen möchten. Diese Beispielmitteilung löscht eine Firmenentität mit dem Primärschlüssel `accountid`-Wert gleich 00000000-0000-0000-0000-000000000001.  
+Eine Löschungsoperation ist sehr direkt. Verwenden Sie das DELETE-Verb mit dem URI der Entität, die Sie löschen möchten. Diese Beispielmitteilung löscht eine Firmenentität mit dem `accountid`-Primärschlüsselwert gleich 00000000-0000-0000-0000-000000000001.  
   
  **Anforderung**
 

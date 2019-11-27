@@ -1,6 +1,6 @@
 ---
-title: 'Erstellen Sie eine wiederkehrende Terminserie, eine Instanz oder eine Ausnahme (Common Data Service) | Microsoft Docs'
-description: 'Erstellen Sie programmgesteuert einen Serienterminmaster (Serie), einzelne Serientermininstanzen, Ausnahmen zu diesen Instanzen, oder konvertieren Sie einen Termin in einen Serientermin.'
+title: Erstellen einer Terminserie, Instanz oder Ausnahme (Common Data Service) | Microsoft-Dokumentation
+description: Erstellen Sie programmgesteuert einen Serienterminmaster (Serie), einzelne Serientermininstanzen, Ausnahmen zu diesen Instanzen, oder konvertieren Sie einen Termin in einen Serientermin.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 57778f4520a305061c8f598ad82e033a89565033
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748569"
 ---
 # <a name="create-a-recurring-appointment-series-instance-or-exception"></a>Erstellen einer Terminserie, Instanz oder Ausnahme
 

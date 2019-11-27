@@ -1,6 +1,6 @@
 ---
 title: Webseite (HTML) Webressourcen (modellgesteuerte Apps) | Microsoft Docs
-description: 'Dieses Thema befasst sich damit, wie HTML-Webressourcen implementiert werden sowie ihre Funktionen und Einschränkungen'
+description: Dieses Thema befasst sich damit, wie HTML-Webressourcen implementiert werden sowie ihre Funktionen und Einschränkungen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 642d4f74e8d4e0c613bbc42381fecd4418f93030
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754547"
 ---
 # <a name="webpage-html-web-resources"></a>Webressourcen der Webseite (HTML)
 
@@ -44,7 +50,7 @@ Da eine HTML-Webressource einfach nur zum Browser des Benutzers gestreamt wird, 
  Eine komplexere HTML-Seite, die Skripte benötigt, um die Inhalte der Seite zu rendern, beginnt beispielsweise wie das folgende Beispiel.
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
  <title></title>
@@ -78,13 +84,13 @@ Da der HTML-Code in Webressourcen mithilfe des Texteditors geändert werden kann
 
 ## <a name="reference-other-web-resources-from-an-html-web-resource"></a>Von einer HTML-Webressource auf andere Webressourcen verweisen
 
- Sie können einen Satz zugehöriger Dateien außerhalb von modellgesteuerten Apps erstellen, die irgendeinen der Webressourcendateitypen verwenden. Wenn Sie achtgeben, dass Sie immer relative Pfade verwenden und jede Webressource mit einer konsistenten Namenskonvention importieren, die die Ordnerstruktur Ihrer Website widerspiegelt, werden Sie feststellen, dass die HTML-Webressource Links zu zugehörigen CSS-, XML-, JScript-, Bild- und Silverlight-Dateien beibehält, die als Webressourcen importiert wurden.  
+ Sie können einen Satz zugehöriger Dateien außerhalb von modellgesteuerten Apps erstellen, die irgendeinen der Webressourcendateitypen verwenden. Wenn Sie darauf achten, immer relative Pfade zu verwenden und jede Webressource mit einer einheitlichen Namenskonvention zu importieren, die die Ordnerstruktur Ihrer Website widerspiegelt, werden Sie feststellen, dass die HTML-Webressource Links zu verwandten CSS-, XML-, JScript-, Bild- und Silverlight-Dateien unterhält, die als Webressourcen importiert wurden.  
 
- Beispiel: Sie erstellen ein Webanwendungsprojekt, das die folgende [Ordnerr]/Dateistruktur verwendet:  
+ Beispiel: Sie erstellen ein Webanwendungsprojekt, das die folgende [Ordner]/Dateistruktur verwendet:  
 
 -   page.htm
 
--   [Stilarten]
+-   [Formatvorlagen]
 
     -   style.css
   
@@ -113,7 +119,7 @@ Da der HTML-Code in Webressourcen mithilfe des Texteditors geändert werden kann
 >  - Eine HTML-Webressource, die einem Formular hinzugefügt wurde, kann keine globalen Objekte verwenden, die von der JavaScript-Bibliothek definiert werden, die im Formular geladen wird. Eine HTML-Webressource kann mit den `Xrm.Page`- oder `Xrm.Utility`-Objekten innerhalb des Formulars kommunizieren, indem `parent.Xrm.Page` oder `parent.Xrm.Utility` verwendet wird, aber auf globale Objekte, die über Formularskripts definiert wurden, kann nicht mithilfe des übergeordneten Elements zugegriffen werden. Sie sollten alle Bibliotheken, die eine HTML-Webressource innerhalb der HTML-Webressource benötigen, laden, damit sie nicht von den Skripts abhängig sind, die im Formular geladen werden.  
 > - Verweise, die im Code zwischen der Webressourcen enthalten sind, werden als Lösungsabhängigkeiten nicht nachverfolgt.  
 
- Da Webressourcen auch für Benutzer von Dynamics 365 for Microsoft Office Outlook mit Offlinezugriff heruntergeladen werden, haben die Benutzer auch Zugriff auf den Webressourceninhalt, während sie offline arbeiten.  
+ Da Webressourcen auch für Benutzer von Dynamics 365 for Microsoft Office Outlook mit Offlinezugang heruntergeladen werden, haben Benutzer Zugriff auf Webressourceninhalte, während sie offline arbeiten.  
 
 <a name="BKMK_PassingParametersToWebResources"></a>
 
@@ -136,12 +142,12 @@ Da der HTML-Code in Webressourcen mithilfe des Texteditors geändert werden kann
 |Sicherheit||Nur zur internen Verwendung.|
 |tabSet||Nur zur internen Verwendung.|
 
- Um mehr als einen Wert im Datenparameter zu übergeben, müssen Parameter im Wert des Datenparameters codieren und dann Logik hinzufügen, um die vielen Parameter mithilfe von Skript in der HTML-Webressource zu decodieren. Dieses [Beispiel: Übergeben mehrerer Werte an eine Webressource mit dem Datenparameter](sample-pass-multiple-values-web-resource-through-data-parameter.md)-Thema zeigt eine Methode zum Übergeben von mehreren Parameterwerten.  
+ Wenn im Datenparameter mehrere Werte übergeben werden, werden diese automatisch kodiert. Es muss auch eine Logik enthalten sein, um die verschiedenen Parameter mit Hilfe von Skripten in Ihrer HTML-Webressource zu dekodieren. Dieses [Beispiel: Übergeben mehrerer Werte an eine Webressource mit dem Datenparameter](sample-pass-multiple-values-web-resource-through-data-parameter.md)-Thema zeigt eine Methode zum Übergeben von mehreren Parameterwerten.  
 
 ### <a name="see-also"></a>Siehe auch
  [Webressourcen](web-resources.md)   
  [Erstellen von barrierefreien Webressourcen](create-accessible-web-resources.md)   
- [Verwenden von Stylesheet (CSS)-Webressourcen](css-web-resources.md)   
+ [Verwenden von Stylesheet(CSS)-Webressourcen](css-web-resources.md)   
  [Verwenden von Webressourcen für Skripts (JScript)](script-jscript-web-resources.md)   
  [Verwenden von Daten (XML)-Webressourcen](data-xml-web-resources.md)   
  [Verwenden von Bild (JPG, PNG, GIF, ICO)-Webressourcen](image-web-resources.md)   

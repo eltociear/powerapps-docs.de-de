@@ -1,25 +1,31 @@
 ---
-title: 'Beispiel: Heraufstufen einer E-Mail-Nachricht (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Heraufstufen einer E-Mail-Nachricht (Common Data Service) | Microsoft-Dokumentation'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bc9881d4650c6e711aa968dc2546e21db5984a4f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748736"
 ---
 # <a name="sample-promote-an-email-message"></a>Beispiel: Heraufstufen einer E-Mail-Nachricht
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-promote-email-message -->
 
-Dieses Beispiel zeigt, wie eine E-Mail-Aktivitätsinstanz aus der angegebenen E-Mail-Nachricht in Common Data Service erstellt wird, indem die Nachricht [DeliverPromoteEmailRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.deliverpromoteemailrequest?view=dynamics-general-ce-9) verwendet wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/PromoteEmail) herunterladen.
+Dieses Beispiel zeigt, wie eine E-Mail-Aktivitätsinstanz aus der angegebenen E-Mail-Nachricht in Common Data Service erstellt wird, indem die Meldung [DeliverPromoteEmailRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.deliverpromoteemailrequest?view=dynamics-general-ce-9) verwendet wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/PromoteEmail) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

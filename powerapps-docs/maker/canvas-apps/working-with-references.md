@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: deea21dd97ee71a74973393b7d6714a8c55ba969
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 0b1c81dd808b224ca30d9de3d4bab252a2676cf4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71989465"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542311"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-record-references-and-polymorphic-lookups-in-canvas-apps"></a>Grundlegendes zu Daten Satz verweisen und polymorphen Such Vorgängen in Canvas-apps
@@ -51,7 +51,7 @@ Jede Entität in Common Data Service enthält ein **Besitzer** Feld. Dieses Feld
 
 So zeigen Sie dieses Feld in der Entität " **Account** " an:
 
-1. Öffnen Sie [diese powerapps-Website](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Öffnen Sie [diese powerapps-Website](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 1. Wählen Sie in der linken Navigationsleiste **Daten**  > **Entitäten**aus.
 1. Wählen Sie in der Liste der Entitäten die Option **Konto**aus.
 1. Öffnen Sie in der oberen rechten Ecke die Filterliste (standardmäßig standardmäßig auf **Standard** festgelegt), und wählen Sie dann **alle**aus.

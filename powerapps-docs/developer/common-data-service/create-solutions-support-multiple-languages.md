@@ -1,5 +1,5 @@
 ---
-title: 'Erstellen von Lösungen, die mehrere Sprachen unterstützen (Common Data Service) | Microsoft Docs'
+title: Erstellen von Lösungen, die mehrere Sprachen unterstützen (Common Data Service) | Microsoft-Dokumentation
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2eef717e694013295adba3946b2f3f7bc3e888c7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753010"
 ---
 # <a name="create-solutions-that-support-multiple-languages"></a>Erstellen von Lösungen, die mehrere Sprachen unterstützen
 
-Common Data Service unterstützt mehrere Sprachen Wenn Sie die Lösung für Organisationen installieren möchten, die verschiedene Ausgangssprachen enthalten oder die mehrere Sprachen bereitstellen, berücksichtigen Sie diese Option, wenn Sie Ihre Lösung planen. Die folgende Tabelle enthält Taktiken für die Verwendung mit Lösungskomponenten, um sie in einer Lösung einzuschließen, die mehrere Sprachen unterstützt.  
+Common Data Service unterstützt mehrere Sprachen. Wenn Sie die Lösung für Organisationen installieren möchten, die verschiedene Ausgangssprachen enthalten oder die mehrere Sprachen bereitstellen, berücksichtigen Sie diese Option, wenn Sie Ihre Lösung planen. Die folgende Tabelle enthält Taktiken für die Verwendung mit Lösungskomponenten, um sie in einer Lösung einzuschließen, die mehrere Sprachen unterstützt.  
   
 |Taktik|Lösungskomponententyp|  
 |------------|-----------------------------|  
@@ -98,16 +104,16 @@ Common Data Service unterstützt mehrere Sprachen Wenn Sie die Lösung für Orga
 > [!NOTE]
 >  Bei benutzerdefinierten Entitäten gibt es mehrere mögliche Bezeichnungen, die gemeinsam mit Systementitäten, beispielsweise **Erstellt am** oder **Erstellt von**, verwendet werden. Da Sie die Sprachen bereits installiert und bereitgestellt haben, wenn Sie für die Standardlösung Sprachen exportieren, können Sie in der Lage sein, einige Beschriftungen in Ihren benutzerdefinierten Entitäten mit lokalisiertem Text für identische Etiketten abzugleichen, die von anderen Entitäten verwendet werden. Dadurch können die Lokalisierungskosten verringert und die Konsistenz verbessert werden.  
   
- Nachdem der Text in den Tabellen lokalisiert wurde, fügen Sie die Dateien CrmTranslations.xml und [Content_Types].xml einer einzelnen komprimierten .zip-Datei hinzu. Diese Datei können Sie dann importieren.  
+ Nachdem der Text in den Tabellen lokalisiert wurde, fügen Sie die Dateien CrmTranslations.xml und [Content_Types].xml Dateien einer einzelnen komprimierten .zip-Datei hinzu. Diese Datei können Sie dann importieren.  
   
- Wenn Sie lieber mit den exportierten Dateien programmgesteuert als XML Dokument arbeiten möchten, finden Sie unter [Office 2003 XML-Referenzschemas](http://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9) Informationen zu den Schemas, die diese Dateien verwenden.  
+ Wenn Sie lieber mit den exportierten Dateien programmgesteuert als XML Dokument arbeiten möchten, finden Sie unter [Office 2003 XML-Referenzschemas](https://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9) Informationen zu den Schemas, die diese Dateien verwenden.  
   
 #### <a name="importing-translated-text"></a>Importieren von übersetztem Text  
   
 > [!IMPORTANT]
 >  Sie können nur übersetzten Text in dieselbe Organisation importieren, aus der er exportiert wurde.  
   
- Wenn Sie den angepassten Text für Entitäten oder Attribute exportiert und anschließend übersetzt haben, können Sie die übersetzten Textzeichenfolgen mit der <xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest>-Nachricht in die Webanwendung importieren. Die Datei, die Sie importieren, muss eine komprimierte Datei sein, in der die CrmTranslations.xml und die Datei [Content_Types].xml im Stammverzeichnis enthalten ist. Weitere Informationen finden Sie unter [Importieren von übersetztem Entitäts- und Feldtext](/dynamics365/customer-engagement/customize/import-translated-entity-field-text).  
+ Wenn Sie den angepassten Text für Entitäten oder Attribute exportiert und anschließend übersetzt haben, können Sie die übersetzten Textzeichenfolgen mit der <xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest>-Nachricht in die Webanwendung importieren. Die Datei, die Sie importieren, muss eine komprimierte Datei sein, in der die CrmTranslations.xml und die [Content_Types].xml im Stammverzeichnis enthalten ist. Weitere Informationen finden Sie unter [Importieren von übersetztem Entitäts- und Feldtext](/dynamics365/customer-engagement/customize/import-translated-entity-field-text).  
   
  Nach dem Importieren der fertig gestellten Übersetzungen wird benutzerdefinierter Text für Benutzer angezeigt, die in den Sprachen arbeiten, in die der Text übersetzt wurde.  
   
@@ -171,14 +177,14 @@ Common Data Service unterstützt mehrere Sprachen Wenn Sie die Lösung für Orga
   
 6. Bei Verwendung der Organisationsausgangssprache können Sie zum Bereich **Lösungen** unter **Einstellungen** navigieren und das lokalisierte Dialogfeld als Teil einer Lösung hinzufügen.  
   
-   Das Dialogfeld, das in der anderen Sprache erstellt wurde, wird nur Benutzern angezeigt, die Common Data Service in dieser Sprache anzeigen.  
+   Das Dialogfeld, das in der anderen Sprache erstellt wurde, wird nur Benutzern angezeigt, die Common Data Service mithilfe dieser Sprache anzeigen.  
   
 <a name="BKMK_UseXMLWebResourcesAsLanguageResources"></a>   
 
 ## <a name="use-xml-web-resources-as-language-resources"></a>Verwenden von XML-Webressourcen als Sprachenressourcen  
  Plug-In-Assemblylösungskomponenten können Nachrichten an einen Endbenutzer senden, indem sie <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> auslösen und Datensätze erstellen und aktualisieren. Im Gegensatz zu Silverlight-Webressourcen können Plug-Ins keine Ressourcendateien verwenden.  
   
- Falls ein Plug-In lokalisierten Text erfordert, können Sie eine XML-Webressource verwenden, um die lokalisierten Zeichenfolgen zu speichern, damit das Plug-In bei Bedarf darauf zugreifen kann. Die Struktur der XML-Datei können Sie auswählen, aber Sie sollten der Struktur folgen, die von ASP.NET-Ressourcendateien (.resx) verwendet wird, um separate XML-Webressourcen für die einzelnen Sprachen zu erstellen. Folgendes ist z. B. eine XML-Webressource namens **localizedString.en_US**, die dem Muster folgt, das verwendet wird von resx-Dateien.  
+ Falls ein Plug-In lokalisierten Text erfordert, können Sie eine XML-Webressource verwenden, um die lokalisierten Zeichenfolgen zu speichern, damit das Plug-In bei Bedarf darauf zugreifen kann. Die Struktur der XML-Datei können Sie auswählen, aber Sie sollten der Struktur folgen, die von ASP.NET Ressourcendateien (.resx) verwendet wird, um separate XML-Webressourcen für die einzelnen Sprachen zu erstellen. Folgendes ist z. B. eine XML-Webressource namens **localizedString.en_US**, die dem Muster folgt, das verwendet wird von resx-Dateien.  
   
 ```xml  
 <root>  

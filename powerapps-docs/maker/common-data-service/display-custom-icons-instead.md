@@ -1,6 +1,6 @@
 ---
 title: Anzeige benutzerdefinierter Symbole neben Werten in Listenansichten mit PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie benutzerdefinierte Symbolgrafiken in einer Ansicht angezeigt werden'
+description: Erfahren Sie, wie benutzerdefinierte Symbolgrafiken in einer Ansicht angezeigt werden
 ms.custom: ''
 ms.date: 02/14/2019
 ms.reviewer: ''
@@ -9,28 +9,34 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: af866aed-2586-4b6f-bb1c-3519baae3645
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705489"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>Benutzerdefinierte Symbole zusammen mit Werten in Listenansichten anzeigen
 
 <a name="GridIcons"></a>   
 
- PowerApps-Umgebungsadministratoren und -Systemanpasser können Grafiken einer Ansicht hinzufügen und die Logik einrichten, die verwendet wird, um die Grafik anhand eines Spaltenwerts mithilfe von JavaScript auszuwählen. Mit dieser Funktion können Sie Listenansichten anpassen, die Symbole neben Text- oder Zahlenwerten anzeigen. 
+ PowerApps-Umgebungsadministratoren und Customizer können einer Ansicht Grafiken hinzufügen und die Logik festlegen, mit der eine Grafik basierend auf dem Spaltenwert per JavaScript ausgewählt wird. Mit dieser Funktion können Sie Listenansichten anpassen, die Symbole neben Text- oder Zahlenwerten anzeigen. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/icon-in-opportunity-view.png "Ansicht alle Verkaufschancen mit der Bewertungsspalte mit Symbolanzeige und Textwert")
+> ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
 > [!NOTE]
 >  Rastersymbole werden nur der Weboberfläche angezeigt. Sie werden nicht in [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] oder in der mobilen App angezeigt.  
@@ -94,7 +100,7 @@ search.app:
 <a name="SampleJavascript"></a>   
 
 ### <a name="sample-javascript-function"></a>Beispiel-JavaScript-Funktion  
- Die JavaScript-Funktion zum Anzeigen benutzerdefinierter Symbole und Tooltips erwartet die folgenden beiden Argumente: das gesamte Zeilenobjekt angegeben in layoutxml und des aufrufender Benutzers Gebietsschema-ID (LCID). Der LCID-Parameter ermöglicht Ihnen, Tooltiptext für das Symbol in mehreren Sprachen zu definieren. Weitere Informationen zu den von der Umgebung unterstützten Sprachen, siehe [Sprachen aktivieren](/dynamics365/customer-engagement/admin/enable-languages) und [Installieren oder Upgraden von Sprachpaketen für Dynamics 365 for Customer Engagement ](/dynamics365/customer-engagement/on-premises/install-or-upgrade-language-packs). Eine Liste mit Werten von lokalen Gebietsschema-ID (LCID)-Werten, die Sie in Ihrem Code verwenden können, finden Sie unter [Von Microsoft zugewiesene lokale IDs](https://go.microsoft.com/fwlink/?linkid=829588).
+ Die JavaScript-Funktion zum Anzeigen benutzerdefinierter Symbole und Tooltips erwartet die folgenden beiden Argumente: das gesamte Zeilenobjekt angegeben in layoutxml und des aufrufender Benutzers Gebietsschema-ID (LCID). Der LCID-Parameter ermöglicht Ihnen, Tooltiptext für das Symbol in mehreren Sprachen zu definieren. Weitere Informationen zu den von der Umgebung unterstützten Sprachen finden Sie unter [Sprachen aktivieren](/dynamics365/customer-engagement/admin/enable-languages) und [Sprachpakete installieren oder aktualisieren](/dynamics365/customer-engagement/on-premises/install-or-upgrade-language-packs). Eine Liste mit Werten von lokalen Gebietsschema-ID (LCID)-Werten, die Sie in Ihrem Code verwenden können, finden Sie unter [Von Microsoft zugewiesene lokale IDs](https://go.microsoft.com/fwlink/?linkid=829588).
 
   
  Sie werden wahrscheinlich benutzerdefinierte Symbole für einen Optionssatztyp von Attributen hinzufügen, bei dem die vordefinierten Optionen begrenzt sind. Stellen Sie sicher, dass Sie den ganzzahligen Wert der Optionen anstelle der Beschriftung verwenden, um zu Lokalisierungsprobleme zu verhindern.  
@@ -102,7 +108,7 @@ search.app:
  Der folgende Beispielcode zeigt Symbole und Tooltips auf Basis von drei Werten an (1: Hot, 2: Warm, 3: Cold) im Attribut opportunityratingcode (Bewertung) an. Der Beispielcode zeigt auch, wie ein lokalisiertes Tooltip angezeigt wird. Damit dieses Beispiel funktioniert, müssen Sie drei Bildwebressourcen von 16x16 Bildern mit den folgenden Namen erstellen: new_Hot, new_Warm und new_Cold.  
 
 > [!IMPORTANT]
-> Dieses Beispiel erfordert die Opportunity-Entität, die mit Dynamics 365 for Customer Engagement Apps verfügbar ist.
+> Dieses Beispiel benötigt die Opportunity-Entität, die mit der Dynamics 365 Sales App verfügbar ist.
   
 ```javascript
 function displayIconTooltip(rowData, userLCID) {      

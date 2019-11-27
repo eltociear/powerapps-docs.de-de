@@ -1,6 +1,6 @@
 ---
 title: Ändern der Basis-URL eines Portals | MicrosoftDocs
-description: Erfahren Sie, wie Sie die Basis-URL eines Portals ändern.
+description: Erfahren Sie, wie Sie die Basis-URL des Portals ändern.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -10,42 +10,42 @@ ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: cfc2fd0ca753aebfe7bc77b73c7e7ec1ca011387
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977471"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709977"
 ---
-# <a name="change-the-base-url-of-a-portal"></a>Ändern der Basis-URL eines Portals
+# <a name="change-the-base-url-of-a-portal"></a>Ändern Sie die Basis-URL dieses Portals
 
-Sie können die Basis-URL eines Portals nach der Bereitstellung ändern. Wenn Sie z. b. `contosocommunity.microsoftcrmportals.com` als Basis-URL bei der Bereitstellung des Portals auswählen, können Sie diese später in `contosocommunityportal.microsoftcrmportals.com` ändern, um Ihre Anforderungen zu erfüllen.
+Sie können die Basis-URL des Portals ändern, nachdem sie bereitgestellt ist. Wenn Sie `contosocommunity.microsoftcrmportals.com` als Basis-URL auswählen, wenn sie das Portal bereitstellen, können Sie es später ändern zu `contosocommunityportal.microsoftcrmportals.com`, um die Anforderungen zu erfüllen.
 
 > [!NOTE]
-> Nachdem Sie die Basis-URL des Portals geändert haben, kann auf die ältere URL nicht mehr zugegriffen werden, und Sie wird für andere Kunden zur Verwendung für ihre Portale verfügbar.
+> Nachdem Sie die Basis-URL des Portals ändern, ist die ältere URL nicht mehr verfügbar und wird für andere Kunden nur Nutzung auf deren Portalen frei.
 
-1.  Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
+1.  Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
 
-2.  Wechseln Sie zu den **Portal Aktionen** > ändern Sie die **Basis-URL**. 
-
-    > [!div class=mx-imgBorder]
-    > ![Ändern der Basis-URL eines Portals](../media/change-base-url-action.png "Ändern der Basis-URL eines Portals")
-
-3.  Geben Sie im Fenster Basis-URL ändern die neue Basis-URL für das Portal ein.
+2.  Öffnen Sie **Portalaktionen** > **Basis URL ändern**. 
 
     > [!div class=mx-imgBorder]
-    > ![Geben Sie eine neue Basis-URL des Portals an], und(../media/change-base-url.png "Geben Sie eine neue Basis-URL des Portals an") .
+    > ![Die Basis-URL eines Portals ändern](../media/change-base-url-action.png "Die Basis-URL eines Portals ändern")
 
-4.  Wählen Sie im Bestätigungsfenster **URL ändern** aus.
+3.  Im Änderungsbasis-URL-Fenster geben Sie die neue Basis-URL für das Portal ein.
+
+    > [!div class=mx-imgBorder]
+    > ![Geben Sie eine neue Basis-URL des Portals an](../media/change-base-url.png "Geben Sie eine neue Basis-URL des Portals an")
+
+4.  Klicken Sie im Bestätigungsfenster auf **URL ändern**.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Dieser Abschnitt enthält Informationen zur Problembehandlung bei der Änderung der Basis-URL eines Portals.
+Dieser Abschnitt enthält Informationen zum Problembehandlungsproblem beim Ändern der Basis-URL des Portals.
 
-### <a name="changing-the-base-url-fails"></a>Fehler beim Ändern der Basis-URL
+### <a name="changing-the-base-url-fails"></a>Das Ändern der Basis-URL schlägt fehl
 
-Wenn das Ändern der Basis-URL eines Portals fehlschlägt, wird ein Fehler angezeigt, wie in der folgenden Abbildung dargestellt:
+Wenn beim Ändern der Basis-URL des Portals Fehler auftreten, wird ein Fehler im folgenden Bild Ansicht angezeigt:
 
 > [!div class=mx-imgBorder]
-> ![Fehler beim Ändern der Basis-URL des Portal](../media/change-base-url-error.png "Fehlers beim Ändern der Basis-URL des Portals") .
+> ![Fehler beim Ändern der Basis-URL des Portals](../media/change-base-url-error.png "Fehler beim Ändern der Basis-URL des Portals")
 
-In der Regel handelt es sich hierbei um vorübergehende Fehler. Sie müssen die Option **Basis-URL ändern** auswählen, um die Basis-URL zu ändern. Wenn das Problem weiterhin besteht, wenden Sie sich an den Microsoft Support.
+In der Regel sind das vorübergehende Fehler und Sie müssen **Basis URL ändern** auswählen, um diese Basis URL zu ändern. Falls das Problem weiterhin besteht, wenden Sie sich an den Kundensupport von Microsoft.

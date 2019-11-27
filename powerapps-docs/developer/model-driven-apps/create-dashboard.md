@@ -1,24 +1,27 @@
 ---
 title: Erstellen eines Dashboards (modellgesteuerte Anwendungen) | Microsoft Docs
-description: 'Sie können ein Dashboard im Besitz der Organisation erstellen, indem Sie die Common Data Service-Webdienste (SDK) verwenden oder das Entitätsformular in Common Data Service anpassen, indem Sie die customizations.xml-Datei bearbeiten.'
+description: Sie können ein Dashboard im Besitz der Organisation erstellen, indem Sie die Common Data Service-Webdienste (SDK) verwenden oder das Entitätsformular in Common Data Service anpassen, indem Sie die customizations.xml-Datei bearbeiten.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: da41f997-1f61-7ea8-db83-5d670d708d67
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8dfbf28255f3e36d6b5fcb28a52bf02f738b9860
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748472"
 ---
-
 # <a name="create-a-dashboard"></a>Erstellen eines Dashboards
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->

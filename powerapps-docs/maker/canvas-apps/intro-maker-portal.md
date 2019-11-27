@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd50652f0021079b4b9d4d23568ba148a8ce6a5b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 06dad46643a3de8b8727d890865c9b6f847a825f
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989994"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899224"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>Erste Anmeldung bei PowerApps
 
-Wenn Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden, bietet Ihnen die Website eine Vielzahl von Optionen zum Erstellen eigener Apps, zum Öffnen von Apps, die Sie selbst oder andere Benutzer erstellt haben, und zum Ausführen von Aufgaben rund um Apps. Einige dieser Funktionen sind ganz einfach, z.B. die Ermittlung der Lizenzen, über die Sie Zugriff erhalten. Andere sind komplexer, beispielsweise die Erstellung von benutzerdefinierten Verbindungen mit bestimmten Datenquellen.
+Wenn Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden, bietet Ihnen die Website eine Vielzahl von Optionen zum Erstellen eigener Apps, zum Öffnen von Apps, die Sie selbst oder andere Benutzer erstellt haben, und zum Ausführen von Aufgaben rund um Apps. Einige dieser Funktionen sind ganz einfach, z.B. die Ermittlung der Lizenzen, über die Sie Zugriff erhalten. Andere sind komplexer, beispielsweise die Erstellung von benutzerdefinierten Verbindungen mit bestimmten Datenquellen.
 
 Sie können in drei allgemeinen Bereichen aus verschiedenen Optionen auswählen:
 
@@ -121,5 +121,5 @@ Mit den Optionen im Header und der linken Navigationsleiste können Sie nicht nu
 Erweitern Sie die Funktionalität Ihrer Apps, indem Sie folgende Aufgaben ausführen:
 
 - Verwalten von Entitäten, Options Sätzen und Datenintegration in [Common Data Service](../common-data-service/data-platform-intro.md).
-- Konfigurieren Sie Geschäftslogik in [Microsoft Flow](https://docs.microsoft.com/flow/getting-started).
+- Konfigurieren Sie die Geschäftslogik in der [Energie Automatisierung](https://docs.microsoft.com/flow/getting-started).
 - Erstellen, packen und verwalten Sie [Lösungen](../../developer/common-data-service/introduction-solutions.md).

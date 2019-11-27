@@ -1,19 +1,25 @@
 ---
-title: Verwenden von Messages mithilfe des Organisationsservices (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Messages verwendet werden, um Vorgänge mithilfe des Organisationsservices aufzurufen.'
+title: Verwenden von Nachrichten mit Hilfe des Organisationsdienstes (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Messages verwendet werden, um Vorgänge mithilfe des Organisationsservices aufzurufen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a2a9a1419503d9a0187816daf2bcd0f2db8fa9f2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748684"
 ---
 # <a name="use-messages-with-the-organization-service"></a>Verwenden von Messages mithilfe des Organisationsservices
 

@@ -63,11 +63,11 @@ Jede Kontextvariable ist auf einen Bildschirm begrenzt. Wenn Sie eine Kontextvar
 
 * *UpdateRecord*: erforderlich. Ein Datensatz, der den Namen von mindestens eine Spalte und eine Wert für diese Spalte enthält. Eine Kontextvariable wird für jede Spalte und den von Ihnen angegebenen Wert erstellt oder aktualisiert.
 
-**Updatecontext**({ *ContextVariable1*: *Value1* [; *ContextVariable2*: *Value2* [;...] ] } )
+**UpdateContext**( { *ContextVariable1*: *Value1* [; *ContextVariable2*: *Value2* [; ... ] ] } )
 
 * *Kontextvariable1*: erforderlich.  Der Name der zu erstellenden oder zu aktualisierenden Kontextvariablen
 * *Wert1*: erforderlich.  Der der Kontextvariablen zuzuweisende Wert
-* *ContextVariable2*: *Value2*,...: optional. Zusätzliche zu erstellende oder zu aktualisierende Kontextvariablen und deren Werte
+* *Kontextvariable2*: *Wert2*,...: optional. Zusätzliche zu erstellende oder zu aktualisierende Kontextvariablen und deren Werte
 
 ## <a name="examples"></a>Beispiele
 
@@ -77,7 +77,7 @@ Jede Kontextvariable ist auf einen Bildschirm begrenzt. Wenn Sie eine Kontextvar
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |Legt den Wert für die **Counter**-Kontextvariable aus dem vorherigen Beispiel auf **2** fest |**Counter** hat den Wert **2**. |
 | **UpdateContext( {&nbsp;Name:&nbsp;"Lily";&nbsp;Score:&nbsp;10&nbsp;} )** |Erstellt oder ändert die Kontextvariablen **Name** und **Score** und legt deren Werte auf **Lily** bzw. **10** fest. |**Name** hat den Wert **Lily**, und **Score** hat den Wert **10**. |
 | **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Erstellt oder ändert die Kontextvariable **Person** und legt deren Wert auf einen Datensatz fest. Der Datensatz enthält zwei Spalten mit den Namen **Name** und **Address**. Der Wert der **Name**-Spalte ist **Milton**, und der Wert der **Address**-Spalte ist **1 Main St**. |**Person** hat den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** .<br><br>Verweisen Sie mit dem Namen **Person** auf den kompletten Datensatz, oder verweisen Sie auf eine einzelne Spalte dieses Datensatzes mit **Person.Name** oder **Person.Address**. |
-| **updatecontext ({&nbsp;Person: Patch (&nbsp;person; &nbsp; {Address: &nbsp; "2 @ no__t-3main @ no__t-4ST" &nbsp;} &nbsp;)} &nbsp;)** |Arbeitet mit der **[Patch](function-patch.md)** -Funktion zusammen, um die **Person**-Kontextvariable durch Festlegen des Werts von der **Address**-Spalte auf **2 Main St** zu aktualisieren. |**Person** hat nun den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton"; Adresse:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** . |
+| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person;&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |Arbeitet mit der **[Patch](function-patch.md)** -Funktion zusammen, um die **Person**-Kontextvariable durch Festlegen des Werts von der **Address**-Spalte auf **2 Main St** zu aktualisieren. |**Person** hat nun den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton"; Adresse:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** . |
 
 ### <a name="step-by-step-example"></a>Schritt-für-Schritt-Beispiel
 1. Benennen Sie den Bildschirm **Quelle**, fügen Sie einen anderen Bildschirm hinzu, und nennen Sie diesen **Ziel**.

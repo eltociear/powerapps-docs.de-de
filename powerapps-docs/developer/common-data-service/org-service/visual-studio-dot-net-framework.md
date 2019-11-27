@@ -6,14 +6,20 @@ ms.date: 07/03/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a0da56df7ce42c5c886e8dc739a2e9f6f060a0a0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748680"
 ---
 # <a name="visual-studio-and-the-net-framework"></a>Visual Studio und .NET Framework
 
@@ -27,7 +33,7 @@ Plug-Ins und benutzerdefinierte Workflow-Assemblys sollten .NET Framework 4.6.2 
 > Sie sollten alle benutzerdefinierten Client-Anwendungen mit Microsoft .NET Framework 4.6.2 oder höher erstellen.
 > Nur Anwendungen, die die Sicherheit auf Transportebene (TLS) 1.2 oder höher verwenden, dürfen mit Common Data Service verbunden werden. TLS 1.2 ist nicht das Standardprotokoll, das von .NET Framework 4.5.2 verwendet wird, aber es ist in .NET Framework 4.6.2. 
 > 
-> Weitere Informationen: [Blogbeitrag: Kommende Updates zu Dynamics 365 Customer Engagement-Verbindungssicherheit](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
+> Mehr Informationen: <https://<blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/>
 > 
 > [!TIP]
 > Wenn Sie .NET Framework 4.6.2 auf dem Entwicklungscomputer installieren, müssen Sie unbedingt das Entwicklerpaket installieren, und nicht nur die Laufzeit. Dadurch kann das 4.6.2-Framework im Dialogfeld **Neues Projekt** von Visual Studio und im Zielframework-Dropdownmenü der Projekteigenschaften ausgewählt werden.  

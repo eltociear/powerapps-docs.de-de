@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 375c4f19ed7715eed662c8456c539d5590c9f1ec
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1c930c233f96a481700748960f90d731be397af0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993214"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540336"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Erstellen und Aktualisieren einer Sammlung in einer Canvas-App
 
-Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer in ihrer App verwalten können. Eine Sammlung ist eine Gruppe von ähnlichen Elementen, z. b. Produkte in einer Produktliste. Weitere Informationen zu verschiedenen Typen von Variablen wie z. b. Sammlungen: Grundlegendes zu [Canvas-App-Variablen](working-with-variables.md).
+Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer in ihrer App verwalten können. Eine Sammlung ist eine Gruppe von ähnlichen Elementen, z. b. Produkte in einer Produktliste. Weitere Informationen zu verschiedenen Variablen Typen, z. b. Sammlungen, finden Sie Untergrund Legendes zu [Canvas-App-Variablen](working-with-variables.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
+- [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 - Erstellen Sie eine App, oder öffnen Sie eine vorhandene App in PowerApps.
 - Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 
@@ -129,7 +129,7 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer in ihrer App v
 
 1. optionale Um eine Vorschau der erstellten Sammlung anzuzeigen, wählen Sie im Menü **Datei** die Option **Sammlungen** aus.
 
-Informationen zum Anzeigen von Daten aus einer SharePoint-Liste (z. b. Datumsangaben, Auswahlmöglichkeiten und Personen) in einem Katalog: [Listen Spalten in einem Katalog anzeigen](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery). Weitere Informationen zum Anzeigen von Daten in einem Formular (mit Dropdown Listen, Datums-und Personen adressierern): [Formular-und Anzeige Formular-Steuerelemente bearbeiten](controls/control-form-detail.md).
+Informationen zum Anzeigen von Daten aus einer SharePoint-Liste (z. b. Datumsangaben, Auswahlmöglichkeiten und Personen) in einem Katalog: [Anzeigen von Listen Spalten in einem](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery)Katalog. Weitere Informationen zum Anzeigen von Daten in einem Formular (mit Dropdown Listen, Datums-und Personen adressierern): [Formular Steuerelemente bearbeiten und Formular anzeigen](controls/control-form-detail.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

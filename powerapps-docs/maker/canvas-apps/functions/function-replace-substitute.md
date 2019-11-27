@@ -64,16 +64,16 @@ Wenn Sie eine einzelne Zeichenfolge übergeben, ist der Rückgabewert die geänd
 
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
-| **Replace ("abcdefghijk", &nbsp;6, &nbsp;5, &nbsp; "*")** | Ersetzt fünf Zeichen in "abcdefghijk" durch ein einzelnes "*"-Zeichen, beginnend mit dem sechsten Zeichen ("f"). | "abcde * k" |
-| **Replace (&nbsp; "2019", &nbsp;3, &nbsp;2, &nbsp; "20" &nbsp;)** | Ersetzt die letzten zwei Zeichen von "2019" durch "20". | "2020" |
-| **Replace (&nbsp; "123456", &nbsp;1, &nbsp;3, &nbsp; "_" &nbsp;)** | Ersetzt die ersten drei Zeichen von "123456" durch ein einzelnes "_"-Zeichen. | "_456" | 
-| **Ersatz (&nbsp; "Sales @ no__t-2data", &nbsp; "Sales", &nbsp; "Cost" &nbsp;)** | Ersetzt die Zeichenfolge "Cost" für "Sales". | "Kostendaten" | 
-| **Ersatz ("Quarter @ no__t-11, &nbsp;2018", "1", "2", 1)** | Ersetzt nur die erste Instanz von "1" durch "2", da das vierte Argument (*instancenverber*) mit 1 bereitgestellt wird. |  "Quartal 2, 2018" |
-| **Ersatz ("Quarter @ no__t-11, &nbsp;2011", "1", "2", 3)** | Ersetzt nur die dritte Instanz von "1" durch "2", da das vierte Argument (*Instanznummer*) mit einem 3 bereitgestellt wird. | "Quartal 1, 2012" |
-| **Ersatz ("Quarter @ no__t-11, &nbsp;2011", "1", "2")** | Ersetzt alle Instanzen von "1" durch "2", da das vierte Argument (*instancenverber*) nicht bereitgestellt wird. | "Quartal 2, 2022" |
-| **Replace (<br> [&nbsp; "Quarter @ no__t-31, &nbsp;2018"; <br> "Quarter @ no__t-62, &nbsp;2011"; <br> "Quarter @ no__t-94, 02019"]; 19; 1; "3")** | Ersetzt das neunte Zeichen in jedem Datensatz der einspaltigen Tabelle durch "3". | [&nbsp; "Quarter @ no__t-13, &nbsp;2018",<br>"Quarter @ no__t-03, &nbsp;2011",<br>"Quarter @ no__t-03, &nbsp;2019" &nbsp;] |
-| **Ersatz (<br> [&nbsp; "Qtr @ no__t-31, &nbsp;2018"; <br> "Quarter @ no__t-61, &nbsp;2011"; <br> "Q1, &nbsp;2019" 0]; 1 "1"; "3"; 1)** | Da das vierte Argument (*instancenenumber*) mit einem Wert von 1 angegeben wird, ersetzt nur die erste Instanz von "1" in jedem Datensatz der einspaltigen Tabelle mit "3". | [&nbsp; "Qtr @ no__t-13, &nbsp;2018",<br>"Quarter @ no__t-03, &nbsp;2011",<br>"Q3, &nbsp;2019" &nbsp;] |
-| **Ersatz (<br> [&nbsp; "Qtr @ no__t-31, &nbsp;2018"; <br> "Quarter @ no__t-61, &nbsp;2011"; <br> "Q1, &nbsp;2019" 0]; 1 "1"; "3")** | Da das vierte Argument (*instancenverber*) nicht bereitgestellt wird, ersetzt alle Instanzen von "1" in jedem Datensatz der einspaltigen Tabelle mit "3". | [&nbsp; "Qtr @ no__t-13, &nbsp;2038",<br>"Quarter @ no__t-03, &nbsp;2033",<br>"Q3, &nbsp;2039" &nbsp;] |  
+| **Replace ("abcdefghijk",&nbsp;6,&nbsp;5,&nbsp;"*")** | Ersetzt fünf Zeichen in "abcdefghijk" durch ein einzelnes "*"-Zeichen, beginnend mit dem sechsten Zeichen ("f"). | "abcde * k" |
+| **Replace (&nbsp;"2019",&nbsp;3,&nbsp;2,&nbsp;"20"&nbsp;)** | Ersetzt die letzten zwei Zeichen von "2019" durch "20". | "2020" |
+| **Replace (&nbsp;"123456",&nbsp;1,&nbsp;3,&nbsp;"_"&nbsp;)** | Ersetzt die ersten drei Zeichen von "123456" durch ein einzelnes "_"-Zeichen. | "_456" | 
+| **Ersetzen Sie (&nbsp;"Sales&nbsp;Data",&nbsp;"Sales",&nbsp;"Cost"&nbsp;).** | Ersetzt die Zeichenfolge "Cost" für "Sales". | "Kostendaten" | 
+| **Ersatz ("Quarter&nbsp;1,&nbsp;2018", "1", "2", 1)** | Ersetzt nur die erste Instanz von "1" durch "2", da das vierte Argument (*instancenverber*) mit 1 bereitgestellt wird. |  "Quartal 2, 2018" |
+| **Ersatz ("Quarter&nbsp;1,&nbsp;2011", "1", "2", 3)** | Ersetzt nur die dritte Instanz von "1" durch "2", da das vierte Argument (*Instanznummer*) mit einem 3 bereitgestellt wird. | "Quartal 1, 2012" |
+| **Ersatz ("Quarter&nbsp;1,&nbsp;2011", "1", "2")** | Ersetzt alle Instanzen von "1" durch "2", da das vierte Argument (*instancenverber*) nicht bereitgestellt wird. | "Quartal 2, 2022" |
+| **Replace (<br>[&nbsp;"Quarter&nbsp;1,&nbsp;2018";<br>"Quarter&nbsp;2,&nbsp;2011";<br>"Quarter&nbsp;4,&nbsp;2019"];<br>9; 1; "3")** | Ersetzt das neunte Zeichen in jedem Datensatz der einspaltigen Tabelle durch "3". | [&nbsp;"Quarter&nbsp;3,&nbsp;2018",<br>"Quarter&nbsp;3,&nbsp;2011",<br>"Quartal&nbsp;3,&nbsp;2019"&nbsp;] |
+| **Ersatz (<br>[&nbsp;"Qtr&nbsp;1,&nbsp;2018";<br>"Quarter&nbsp;1,&nbsp;2011";<br>"Q1,&nbsp;2019"&nbsp;];<br>"1"; "3"; 1)** | Da das vierte Argument (*instancenenumber*) mit einem Wert von 1 angegeben wird, ersetzt nur die erste Instanz von "1" in jedem Datensatz der einspaltigen Tabelle mit "3". | [&nbsp;"Qtr&nbsp;3,&nbsp;2018",<br>"Quarter&nbsp;3,&nbsp;2011",<br>"Q3,&nbsp;2019"&nbsp;] |
+| **Ersatz (<br>[&nbsp;"Qtr&nbsp;1,&nbsp;2018";<br>"Quartal&nbsp;1,&nbsp;2011";<br>"Q1,&nbsp;2019"&nbsp;];<br>"1"; "3")** | Da das vierte Argument (*instancenverber*) nicht bereitgestellt wird, ersetzt alle Instanzen von "1" in jedem Datensatz der einspaltigen Tabelle mit "3". | [&nbsp;"Qtr&nbsp;3,&nbsp;2038",<br>"Quarter&nbsp;3,&nbsp;2033",<br>"Q3,&nbsp;2039"&nbsp;] |  
  
 
 

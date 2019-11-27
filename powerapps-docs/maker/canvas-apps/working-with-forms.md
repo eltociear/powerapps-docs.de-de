@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 401d32f3d3cacee4b9b1a23a5fceb7d159623086
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 476964166a57bea23469baf0c1e7497be10ab73f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994910"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541668"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Grundlegendes zu Canvas-App-Formularen in Microsoft PowerApps
@@ -39,7 +39,7 @@ Kombinieren Sie diese Steuerelemente mit Formeln, wie in diesem Thema beschriebe
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
+* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 
 ## <a name="explore-a-generated-app"></a>Kennenlernen einer generierten App
@@ -138,7 +138,7 @@ Wie bei einem **[Formular anzeigen](controls/control-form-detail.md)** -Steuerel
 
 ![Karten bearbeiten und ausgewählte Karten-Steuerelemente in der Autoren-Benutzeroberfläche](./media/working-with-forms/afd-edit-card-controls.png)
 
-In der vorherigen Abbildung zeigt die ausgewählte Karte das **AssetID**-Feld und enthält ein **[Texteingabe](controls/control-text-input.md)** -Steuerelement, sodass der Benutzer den Wert dieses Felds bearbeiten kann. (Der Detailbildschirm zeigt das gleiche Feld im Gegensatz dazu in einem **[Label](controls/control-text-box.md)** -Steuerelement an, das schreibgeschützt ist.) Das **[Texteingabe](controls/control-text-input.md)** -Steuerelement verfügt über eine **[Default](controls/properties-core.md)** -Eigenschaft, die auf **Parent.Default** festgelegt wird. Würde der Benutzer einen Datensatz erstellen anstatt ihn zu bearbeiten, würde dieses Steuerelement einen Anfangswert anzeigen, den der Benutzer durch den neuen Eintrag austauschen kann.
+In der vorherigen Abbildung zeigt die ausgewählte Karte das **AssetID**-Feld und enthält ein **[Texteingabe](controls/control-text-input.md)** -Steuerelement, sodass der Benutzer den Wert dieses Felds bearbeiten kann. (Im Gegensatz dazu zeigt der Detailbildschirm das gleiche Feld in einem **[Label](controls/control-text-box.md)** -Steuerelement an, das schreibgeschützt ist.) Das **[Text Eingabe](controls/control-text-input.md)** -Steuerelement verfügt über eine **[default](controls/properties-core.md)** -Eigenschaft, die auf **Parent. Default**festgelegt ist. Würde der Benutzer einen Datensatz erstellen anstatt ihn zu bearbeiten, würde dieses Steuerelement einen Anfangswert anzeigen, den der Benutzer durch den neuen Eintrag austauschen kann.
 
 Im rechten Bereich können Sie alle Karten ein- oder ausblenden, sie anordnen oder sie so konfigurieren, dass sie Felder in verschiedenen Arten von Steuerelementen anzeigen.
 
@@ -335,9 +335,9 @@ Bisher wurde noch nicht über zwei Steuerelemente oben im Bildschirm zum Durchsu
 
 ![Sortieren und Durchsuchen von Steuerelementen auf dem Bildschirm zum Durchsuchen](./media/working-with-forms/afd-browse-search-sort.png)
 
-Wenn der Benutzer auf die Sortierschaltfläche klickt, wird die Sortierreihenfolge des Katalogs umgekehrt. Um dieses Verhalten hervorzurufen, verwenden wir eine *Kontextvariable*, um die Richtung zu verfolgen, in der der Katalog sortiert wird. Wenn der Benutzer diese Schaltfläche auswählt, wird die Variable aktualisiert und die Richtung umgekehrt. Die **[onselect](controls/properties-core.md)** -Eigenschaft der Sortier Schaltfläche ist auf diese Formel festgelegt: **Updatecontext ({SortDescending1:! SortDescending1})**
+Wenn der Benutzer auf die Sortierschaltfläche klickt, wird die Sortierreihenfolge des Katalogs umgekehrt. Um dieses Verhalten hervorzurufen, verwenden wir eine *Kontextvariable*, um die Richtung zu verfolgen, in der der Katalog sortiert wird. Wenn der Benutzer diese Schaltfläche auswählt, wird die Variable aktualisiert und die Richtung umgekehrt. Die **[OnSelect](controls/properties-core.md)** -Eigenschaft der Sortierschaltfläche wird auf diese Formel festgelegt: **UpdateContext( {SortDescending1: !SortDescending1} )**
 
-Die **[UpdateContext](functions/function-updatecontext.md)** -Funktion erstellt die **SortDescending1**-Kontextvariable, wenn sie nicht bereits vorhanden ist. Die Funktion liest den Wert der Variablen und legt diesen mithilfe des **!** -Operators auf das logische Gegenteil fest. Wenn der Wert *TRUE* lautet, entspricht die Variable *FALSE*. Wenn der Wert *FALSE* lautet, entspricht die Variable *TRUE*.
+Die **[UpdateContext](functions/function-updatecontext.md)** -Funktion erstellt die **SortDescending1**-Kontextvariable, wenn sie nicht bereits vorhanden ist. Die Funktion liest den Wert der Variablen und legt diesen mithilfe des **!** -Operators auf das logische Gegenteil Operator Wenn der Wert *TRUE* lautet, entspricht die Variable *FALSE*. Wenn der Wert *FALSE* lautet, entspricht die Variable *TRUE*.
 
 Die Formel für die **[Items](controls/properties-core.md)** -Eigenschaft des **[Katalog](controls/control-gallery.md)** -Steuerelements verwendet diese Kontextvariable zusammen mit dem Text im **TextSearchBox1**-Steuerelement:
 

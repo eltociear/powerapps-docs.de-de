@@ -1,23 +1,29 @@
 ---
 title: Häufige Probleme und Lösungen für Solution Checker | Microsoft Docs
-description: ' Eine Liste der häufigsten Probleme und Lösungen im Solution Checker'
+description: " Eine Liste der häufigsten Probleme und Lösungen im Solution Checker"
 keywords: ''
 ms.date: 02/11/2019
 ms.service: powerapps
 ms.custom:
-  - ''
+- ''
 ms.topic: article
 ms.assetid: caa4e3f2-9700-49b8-87ed-8a68e8878b02
 author: jowells1
 ms.author: jowells
 manager: austinj
-ms.reviewer: null
-robots: 'noindex,nofollow'
+ms.reviewer: ''
+robots: noindex,nofollow
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6f9168f51f8bfffc2ef9519e183e951706b7a024
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758322"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Häufige Probleme und Lösungen für Solution Checker
 
@@ -33,7 +39,7 @@ Wenn möglich, versucht die Lösungsprüfung, eine bestimmte Fehlermeldung mit e
 
 ![Fehlermeldungsleiste](media/solution-checker-missing-roles-error.png)
 
-Fehler, die während der Hintergrundverarbeitung der Analyse auftreten, schlagen mit dem Status **'Konnte nicht abgeschlossen werden'** fehl und geben eine Fehlermeldung im PowerApps-Portal zurück. Dazu wird eine E-Mail-Benachrichtigung an den Anforderer gesendet. 
+Fehler, die während der Hintergrundverarbeitung der Analyse auftreten, schlagen mit dem Status **Konnte nicht abgeschlossen werden** fehl und geben eine Fehlermeldung im PowerApps-Portal zurück. Dazu wird eine E-Mail-Benachrichtigung an den Anforderer gesendet. 
 
 ![Fehlerstatus](media/solution-checker-exception-status.png)
 
@@ -43,9 +49,9 @@ Durch Auswählen der Portalbenachrichtigung erfolgt eine Verknüpfung zu dieser 
 
 ## <a name="solution-checker-fails-due-to-unsupported-version-of-powerapps-checker"></a>Die Lösungsprüfung funktioniert nicht, da die PowerApps-Prüfungsversion nicht unterstützt wird
 
-Die Lösungsprüfung ist eine Funktion der PowerApps-Prüfungs-App.  Wenn Sie eine PowerApps-Prüfungs-App-Version vor **1.0.0.47** installiert haben, wird die Ausführung der Lösungsprüfung möglicherweise nicht erfolgreich abgeschlossen. Sie sollten Ihre PowerApps Checker-Version von der [!INCLUDE [pn-dyn-365-admin-center](../../includes/pn-dyn-365-admin-center.md)] aktualisieren. 
+Die Lösungsprüfung ist eine Funktion der PowerApps-Prüfungs-App.  Wenn Sie eine PowerApps-Prüfungs-App-Version vor **1.0.0.47** installiert haben, wird die Ausführung der Lösungsprüfung möglicherweise nicht erfolgreich abgeschlossen. Sie sollten Ihre PowerApps-Prüfungsversion vom [!INCLUDE [pn-dyn-365-admin-center](../../includes/pn-dyn-365-admin-center.md)] aktualisieren. 
 
-Wenn Sie jedoch eine PowerApps-Prüfungs-Version vor **1.0.0.45** installiert haben, empfehlen wir Ihnen, die Lösung zu löschen und erneut zu installieren. Aufgrund der letzten Schemaänderungen kann ein Upgrade der PowerApps-Prüfung von Versionen vor **1.0.0.45** fehlschlagen.
+Wenn Sie jedoch eine PowerApps-Prüfungsversion vor **1.0.0.45** installiert haben, empfehlen wir Ihnen, die Lösung zu löschen und erneut zu installieren. Aufgrund der letzten Schemaänderungen kann ein Upgrade der PowerApps-Prüfung von Versionen vor **1.0.0.45** fehlschlagen.
 
 Wenn Sie die bisherigen Ergebnisse von Solution Checker beibehalten möchten, exportieren Sie die Ergebnisse eines früheren Laufs oder exportieren Sie alle Daten von Solution Checker mit [Datenexport nach Excel](../../user/export-data-excel.md), um die Daten aus den folgenden Entitäten zu exportieren:
 
@@ -56,23 +62,23 @@ Wenn Sie die bisherigen Ergebnisse von Solution Checker beibehalten möchten, ex
 
 ### <a name="how-to-uninstall-powerapps-checker"></a>So wird die PowerApps-Prüfung deinstalliert
 
-So deinstallieren Sie die PowerApps-Prüfungs-Lösung:
+So deinstallieren Sie die PowerApps-Prüfungslösung:
 
-1. Öffnen Sie als Systemadministrator oder als Systemadministrator das PowerApps-Portal, indem Sie auf https://web.powerapps.com/environments gehen.
+1. Öffnen Sie als Systemadministrator oder als Systemanpasser das PowerApps-Portal, indem Sie zu https://make.powerapps.com/environments navigieren.
 2. Wählen Sie **Lösungen** aus.
-3. Wählen Sie **PowerApps Checker** und dann in der Symbolleiste der Lösungen **Löschen**.
+3. Wählen Sie **PowerApps-Prüfung** und dann in der Symbolleiste der Lösungen **Löschen**.
 
 ### <a name="how-to-install-powerapps-checker"></a>So wird die PowerApps-Prüfung installiert
 
 So installieren Sie die PowerApps-Prüfung wieder in Ihrer Common Data Service-Umgebung:
 
-1. Öffnen Sie als Systemadministrator oder als System Customizer Ihr PowerApps-Portal, indem Sie auf https://web.powerapps.com/environments gehen.
+1. Öffnen Sie als Systemadministrator oder Systemanpasser Ihr PowerApps-Portal, indem Sie zu https://make.powerapps.com/environments navigieren.
 2. Wählen Sie **Lösungen** aus.
 3. Wählen Sie in der Symbolleiste den **Solution Checker** aus und wählen Sie dann **Install**.
 
 ## <a name="solution-checker-cant-access-organizations-in-administration-mode"></a>Die Lösungsprüfung kann nicht auf Organisationen im Verwaltungsmodus zugreifen
 
-Organisationen, die in den [Verwaltungsmodus](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode) gesetzt wurden, schränken den Zugriff absichtlich auf Benutzer mit der Systemadministrator- und Systemanpasser-Rollen ein. Da der PowerApps-Prüfungsanwendungsidentität keine dieser Rollen standardmäßig zugewiesen ist, kann sie nicht auf Organisationen zugreifen, die in diesem Modus funktionieren.
+Organisationen, die in den [Verwaltungsmodus](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode) gesetzt wurden, schränken den Zugriff absichtlich auf Benutzer mit der Systemadministrator- und Systemanpasser-Rollen ein. Da der PowerApps-Prüfungsanwendungsidentität keine dieser Rollen standardmäßig zugewiesen ist, kann sie nicht auf Organisationen zugreifen, die in diesem Modus ausgeführt werden.
 
 Um die Lösungsprüfung in dieser Organisation zu verwenden, muss der Verwaltungsmodus deaktiviert werden.
 
@@ -80,7 +86,7 @@ Um die Lösungsprüfung in dieser Organisation zu verwenden, muss der Verwaltung
 
 So deaktivieren Sie den Administrationsmodus für eine Organisationsinstanz:
 
-1. Öffnen Sie die Dynamics 365 for Customer Engagement-Apps-Instanzenauswahl: https://port.crm.dynamics.com/G/Instances/InstancePicker.aspx.
+1. Öffnen Sie in der Dynamics 365-Instanzauswahl: https://port.crm.dynamics.com/G/Instances/InstancePicker.aspx.
 2. Wählen Sie die Organisationinstanz aus, bei der Probleme mit der Lösungsprüfung auftreten.
 3. Wählen Sie **ADMIN**.<br/>
 ![Instance Admin](media/solution-checker-instance-admin.png)
@@ -92,7 +98,7 @@ So deaktivieren Sie den Administrationsmodus für eine Organisationsinstanz:
 
 ## <a name="solution-checker-fails-due-to-missing-security-roles"></a>Die Lösungsprüfung schlägt aufgrund der fehlenden Sicherheitsrollen fehl
 
-Der Anwendungsbenutzer für die Lösungsprüfung erfordert zwei zugewiesene Sicherheitsrollen, um die erforderlichen Rechte zum Kommunizieren mit der Common Data Service-Organisation zur Verfügung zu stellen. Wenn dem Benutzer **'PowerApps-Prüfung'** eine dieser Rollen nicht zugewiesen ist, schlagen Versuche, die Analyse auszuführen, Ergebnisse herunterzuladen und das Beenden auszuführen, fehl. Dies tritt am häufigsten auf, wenn Kunden eine Automatisierung eingerichtet haben, die Sicherheitsrollen von unerwarteten Benutzern entfernt. Die folgenden Sicherheitsrollen enthalten minimale erforderliche Berechtigungen:
+Der Anwendungsbenutzer für die Lösungsprüfung erfordert zwei zugewiesene Sicherheitsrollen, um die erforderlichen Rechte zum Kommunizieren mit der Common Data Service-Organisation zur Verfügung zu stellen. Wenn dem Benutzer **PowerApps-Prüfung** eine dieser Rollen nicht zugewiesen ist, schlagen Versuche, die Analyse auszuführen, Ergebnisse herunterzuladen und das Beenden auszuführen, fehl. Dies tritt am häufigsten auf, wenn Kunden eine Automatisierung eingerichtet haben, die Sicherheitsrollen von unerwarteten Benutzern entfernt. Die folgenden Sicherheitsrollen enthalten minimale erforderliche Berechtigungen:
 
 - Anpassungen exportieren
 - Lösungsprüfung
@@ -102,7 +108,7 @@ Der Anwendungsbenutzer für die Lösungsprüfung erfordert zwei zugewiesene Sich
 So weisen Sie fehlende Sicherheitsrollen zu PowerApps-Prüfungsbenutzern zu:
 
 1. Öffnen Sie die Common Data Service-Organisation und navigieren Sie zu **Einstellungen** > **Sicherheit** > **Benutzer**.
-2. Wählen Sie den **'PowerApps-Prüfung'**-Benutzer aus der Liste der Benutzer aus.
+2. Wählen Sie den **PowerApps-Prüfung**-Benutzer aus der Liste der Benutzer aus.
 3. Wählen Sie auf der Befehlsleiste auf **ROLLEN VERWALTEN** aus.
 4. Aktivieren Sie die Kontrollkästchen für die Rollen **'Anpassungen exportieren'** und **'Lösungsprüfung'**, und wählen Sie dann **OK** aus.<br/>
 ![Erforderliche Sicherheitsrollen](media/solution-checker-required-roles.png)
@@ -113,14 +119,14 @@ So weisen Sie fehlende Sicherheitsrollen zu PowerApps-Prüfungsbenutzern zu:
 
 Der Anwendungsbenutzer für die Lösungsprüfung erfordert den Zugriffsmodus **'Nicht interaktiv'** oder **'Lesen-Schreiben'**, um mit der Common Data Service-Organisation zu kommunizieren. Wenn der Zugriffsmodus in einen anderen Wert, z. B. **'Verwaltung'** geändert wurde, schlagen Versuche, die Analyse auszuführen, Ergebnisse herunterzuladen und das Beenden auszuführen, fehl.
 
-Um dieses Problem zu beheben, müssen Sie den Anwendungsbenutzer **'PowerApps-Prüfung'** mit dem Zugriffsmodus 'Nicht interaktiv' aktualisieren.
+Um dieses Problem zu beheben, müssen Sie den Anwendungsbenutzer **PowerApps-Prüfung** mit dem Zugriffsmodus 'Nicht interaktiv' aktualisieren.
 
 ### <a name="how-to-update-user-access-mode"></a>So aktualisieren Sie den Zugriffsmodus eines Benutzers
 
 So aktualisieren Sie den Zugriffsmodus für den PowerApps-Prüfungsbenutzer:
 
 1. Öffnen Sie die Common Data Service-Organisation und navigieren Sie zu **Einstellungen** > **Sicherheit** > **Benutzer**.
-2. Wählen Sie den **'PowerApps-Prüfung'**-Benutzer aus der Liste der Benutzer aus und doppelklicken Sie, um das Benutzerformular zu öffnen.
+2. Wählen Sie den **PowerApps-Prüfung**-Benutzer aus der Liste der Benutzer aus, und doppelklicken Sie, um das Benutzerformular zu öffnen.
 3. Scrollen Sie zum Abschnitt **'Verwaltung'** > **'Informationen zur Clientzugriffslizenz (CAL)'** des Formulars.
 4. Wählen Sie **'Nicht interaktiv'** im Dropdown-Steuerelement **Zugriffsmodus** aus.<br/>
 ![Zugriffsmodus](media/solution-checker-access-mode.png)
@@ -140,10 +146,10 @@ So überprüfen und/der ändern Sie den Aktiviert-Status der PowerApps-Advisor-U
 
 1. Greifen Sie auf den Mandanten im [Azure Active Directory (AAD)-Portal](https://aad.portal.azure.com/) zu.
 2. Navigieren Sie zu **Unternehmensanwendungen**.
-3. Wählen Sie **Alle Anwendungen** aus, und suchen Sie nach **'PowerApps-Advisor'**.<br/>
+3. Wählen Sie **Alle Anwendungen** aus, und suchen Sie nach **PowerApps-Advisor**.<br/>
 ![Suchen der PowerApps-Advisor-App](media/solution-checker-search-advisor-app.png)
 
-4. Wählen Sie **'PowerApps-Advisor'** aus, um die App-Details anzuzeigen.
+4. Wählen Sie **PowerApps-Advisor** aus, um die App-Details anzuzeigen.
 5. Wählen Sie **Eigenschaften** aus.
 6. Überprüfen Sie den Status für **Aktiviert für die Benutzeranmeldung**. Wenn **'Nein'**, wurde die Anwendung deaktiviert.<br/>
 ![Deaktivierte Unternehmens-App](media/solution-checker-disabled-app.png)

@@ -1,6 +1,6 @@
 ---
-title: Benutzerzugriff überwachen (Common Data Service) | Microsoft Docs
-description: 'Unterstützung für die Funktion zur Überwachung von Benutzerzugriffen einschließlich Benutzeidentifizierung, Zugriffsgeschwindigkeit und Clienttyp.'
+title: Überwachungsbenutzerzugriff (Common Data Service) | Microsoft-Dokumente
+description: Unterstützung für die Funktion zur Überwachung von Benutzerzugriffen einschließlich Benutzeidentifizierung, Zugriffsgeschwindigkeit und Clienttyp.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c0cf65855d669934db614b83c525055a337d90de
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748255"
 ---
 # <a name="audit-user-access"></a>Benutzerzugriff überwachen
 
-Common Data Service unterstützt die Möglichkeit, den Benutzerzugriff zu überwachen. Zu den erfassten Informationen gehört, wann der Benutzer erstmals auf Common Data Service zugegriffen hat, und ob der Zugriff aus der Webanwendung von Common Data Service, Dynamics 365 for Outlook oder aus SDK-Anrufen bei den Webdiensten erfolgte.  
+Common Data Service unterstützen die Möglichkeit, den Benutzerzugriff zu überwachen. Zu den erfassten Informationen gehört, wann der Benutzer erstmals auf Common Data Service zugegriffen hat, und ob der Zugriff aus der Webanwendung von Common Data Service, Dynamics 365 for Outlook oder aus SDK-Anrufen bei den Webdiensten erfolgte.  
   
 ## <a name="enable-user-access-auditing"></a>Überwachung des Benutzerzugriffs aktivieren  
  Überwachung des Benutzerzugriffs wird auf Organisationsebene aktiviert. Um Benutzerzugriffüberwachung zu aktivieren oder zu deaktivieren, müssen Sie den Datensatz der Zielorganisation abrufen und den `Organization.IsUserAccessAuditEnabled`-Attributwert für die Organisation aktualisieren. Globale Überwachung in der Organisation muss auch aktiviert werden, indem Sie das `Organization.IsAuditEnabled`-Attribut auf `true` im Organisationsdatensatz setzen. Um den Ursprung des Benutzerzugriffs zu überwachen, beispielsweise: Webanwendung, Dynamics 365 for Outlook oder SDK, müssen Sie die Überwachung auf den Entitäten aktivieren, auf die zugegriffen wird.  
@@ -37,7 +43,7 @@ Common Data Service unterstützt die Möglichkeit, den Benutzerzugriff zu überw
   
 -   `AuditAction.UserAccessAuditStopped`  
   
- `UserAccessviaWeb` gibt den Zugriff auf die Common Data Service-Webanwendung oder Dynamics 365 for Outlook an. `UserAccessviaWebServices` gibt eine Webdienstanforderung des SDK an. Die `AuditAction`-Aufzählung ist für Ihren Code verfügbar, wenn Sie `OptionSets.cs` oder `OptionSets.vb` im Projekt der Anwendung einschließen.  
+ `UserAccessviaWeb` gibt den Zugriff über die Common Data Service-Webanwendung oder Dynamics 365 for Outlook an. `UserAccessviaWebServices` gibt eine Webdienstanforderung des SDK an. Die `AuditAction`-Aufzählung ist für Ihren Code verfügbar, wenn Sie `OptionSets.cs` oder `OptionSets.vb` im Projekt der Anwendung einschließen.  
   
 ### <a name="see-also"></a>Siehe auch  
  [Überwachung von Änderungen in Dynamics 365](/dynamics365/customer-engagement/developer/audit-entity-data-changes)   

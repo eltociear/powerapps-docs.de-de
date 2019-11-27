@@ -1,33 +1,39 @@
 ---
-title: Modellgetriebene App-Raster(Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster mit PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie das benutzerdefinierte Steuerelement „Bearbeitbares Raster” verwendet wird'
+title: Modellgesteuerte App-Raster (Listen) bearbeitbar machen mit Hilfe des benutzerdefinierten Steuerelements für bearbeitbares Raster mit PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie das benutzerdefinierte Steuerelement „Bearbeitbares Raster” verwendet wird
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: cefbc0c2-769b-4230-ab5a-b28a84630a42
 caps.latest.revision: 8
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8ec97723dcc5c1e17b3907c7b683ba24977b69de
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700605"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>Modellgetriebene App-Raster (Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster
 
-In früheren Versionen von Dynamics CRM konnten Benutzer Daten nicht direkt in Raster (manchmal auch Listen genannt) oder Unterraster auf Formularen eingeben. Sie mussten den Datensatz im Raster auswählen, um ein Formular zu öffnen, die Daten zu bearbeiten und dann zu speichern, was Schritte erforderte. Mit bearbeitbaren Rastern können Benutzer umfangreiche Inlinebearbeitung direkt von Rastern und Unterrastern aus vornehmen, ungeachtet dessen, ob sie eine Web-App, ein Tablet oder Smartphone verwenden.  
+In früheren Versionen von Dynamics CRM konnten Benutzer Daten nicht direkt in Rastern (manchmal Listen genannt) oder in den Unterrastern auf Formularen eingeben. Sie mussten den Datensatz im Raster auswählen, um ein Formular zu öffnen, die Daten zu bearbeiten und dann zu speichern, was Schritte erforderte. Mit bearbeitbaren Rastern können Benutzer umfangreiche Inlinebearbeitung direkt von Rastern und Unterrastern aus vornehmen, ungeachtet dessen, ob sie eine Web-App, ein Tablet oder Smartphone verwenden.  
   
- ![Bearbeitbare Raster – Beispiele](media/editable-grid-examples.png "Bearbeitbare Raster – Beispiele")  
+ ![Bearbeitbare Raster - Beispiele](media/editable-grid-examples.png "Bearbeitbare Raster - Beispiele")  
   
  Wenn bearbeitbare Raster über das benutzerdefinierte Steuerelement für bearbeitbare Raster aktiviert werden, können Benutzer die meisten Feldtypen, einschließlich grundlegender Suchfelder und Optionssätze bearbeiten.  
 
@@ -104,7 +110,7 @@ In früheren Versionen von Dynamics CRM konnten Benutzer Daten nicht direkt in R
   
 8.  Wenn Sie JavaScript-Ereignisse hinzufügen möchten, wählen Sie die Registerkarte **Ereignisse** und wählen Sie dann die entsprechenden Entitäten, Felder und Ereignisse aus. Weitere Informationen: [Dokumentation für Entwickler: Bearbeitbare Raster verwenden](/dynamics365/customer-engagement/developer/customize-dev/use-editable-grids-dynamics-365.md)  
   
-     ![Hinzufügen von Ereignissen im Steuerelement Bearbeitbares Unterraster](media/add-events-in-editable-grid-control.png "Hinzufügen von Ereignissen im Steuerelement Bearbeitbares Unterraster")  
+     ![Fügen Sie Ereignisse in bearbeitbaren Unterrastersteuerelement hinzu](media/add-events-in-editable-grid-control.png "Fügen Sie Ereignisse in bearbeitbaren Unterrastersteuerelement hinzu")  
   
 9. Um Ihre Arbeit zu speichern, wählen Sie **Speichern** auf der Aktionsleiste aus.  
   

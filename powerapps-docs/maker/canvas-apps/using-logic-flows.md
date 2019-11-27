@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e5c90fcc6e4f8d4c8e1d73eadc9a31fdbfe48ef
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 636e9f853ada9816e87232348e5ce7ef6df2cedc
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988299"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73898325"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>Starten eines Flows in einer Canvas-App
 
-Mit Microsoft Flow können Sie eine Logik erstellen, die mindestens eine Aufgabe ausführt, wenn ein Ereignis in einer Canvas-App auftritt. Sie können zum Beispiel eine Schaltfläche so konfigurieren, dass bei Auswahl durch den Benutzer ein Element in einer SharePoint-Liste erstellt wird, eine E-Mail oder eine Besprechungsanfrage gesendet wird, eine Datei der Cloud hinzugefügt wird oder all dies ausgeführt wird. Sie können jedes Steuerelement in der App für das Starten des Flows konfigurieren, der auch weiterhin ausgeführt wird, wenn Sie PowerApps schließen.
+Sie können die Energie Automatisierung verwenden, um Logik zu erstellen, die eine oder mehrere Aufgaben ausführt, wenn ein Ereignis in einer Canvas-App auftritt. Sie können zum Beispiel eine Schaltfläche so konfigurieren, dass bei Auswahl durch den Benutzer ein Element in einer SharePoint-Liste erstellt wird, eine E-Mail oder eine Besprechungsanfrage gesendet wird, eine Datei der Cloud hinzugefügt wird oder all dies ausgeführt wird. Sie können jedes Steuerelement in der App für das Starten des Flows konfigurieren, der auch weiterhin ausgeführt wird, wenn Sie PowerApps schließen.
 
 > [!NOTE]
 > Wenn ein Benutzer einen Flow aus einer APP heraus ausführt, muss dieser Benutzer über die Berechtigung zum Ausführen der im Flow angegebenen Tasks verfügen. Andernfalls schlägt der Flow fehl.
@@ -30,11 +30,11 @@ Mit Microsoft Flow können Sie eine Logik erstellen, die mindestens eine Aufgabe
 ## <a name="prerequisites"></a>Voraussetzungen
 
 - [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps.
-- Erfahren Sie, wie Sie ein [Steuerelement konfigurieren](add-configure-controls.md).
+- Machen Sie sich damit vertraut, wie Sie [ein Steuerelement konfigurieren](add-configure-controls.md).
 
 ## <a name="create-a-flow"></a>Erstellen eines Flows
 
-1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 1. Wählen Sie in der linken Navigationsleiste **Geschäftslogik**aus, und wählen Sie dann **Flows**aus.
 

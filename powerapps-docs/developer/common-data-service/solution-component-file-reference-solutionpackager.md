@@ -1,6 +1,6 @@
 ---
-title: Dateireferenz der Lösungskomponente (Common Data Service) | Microsoft Docs
-description: 'In diesem Thema werden die Ordnerstruktur- und Datei-Benennungsschema beschrieben, die durch SolutionPackager-Tool verwendet werden. Dieses Tool wird verwendet, um Dynamics 365-Lösungsdateien in XML-Dateien zu zerlegen (entpacken), die durch ein Quellcodeverwaltungssystem verwaltet werden können.'
+title: Dateireferenz von Lösungskomponenten (Common Data Service) | Microsoft-Dokumentation
+description: In diesem Thema werden die Ordnerstruktur- und Datei-Benennungsschema beschrieben, die durch SolutionPackager-Tool verwendet werden. Dieses Tool wird verwendet, um Dynamics 365-Lösungsdateien in XML-Dateien zu zerlegen (entpacken), die durch ein Quellcodeverwaltungssystem verwaltet werden können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 646cfaae94072aff8328070b4bae0e955f8bc01c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748644"
 ---
 # <a name="solution-component-file-reference-solutionpackager"></a>Dateireferenz von Lösungskomponenten (SolutionPackager)
 
-In diesem Thema werden die Ordnerstruktur- und Datei-Benennungsschema beschrieben, die durch SolutionPackager-Tool verwendet werden. Dieses Tool wird verwendet, um Common Data Service-Lösungsdateien in XML-Dateien zu zerlegen (entpacken), die durch ein Quellcodeverwaltungssystem verwaltet werden können. Das Tool kann auch die einzelnen XML-Dateien in eine Lösungsdatei kompilieren (verpacken), die in Common Data Service importiert werden können. Weitere Informationen zum SolutionPackager-Tool, siehe [SolutionPackager-Tool](compress-extract-solution-file-solutionpackager.md).  
+In diesem Thema werden die Ordnerstruktur- und Datei-Benennungsschema beschrieben, die durch SolutionPackager-Tool verwendet werden. Dieses Tool wird verwendet, um Common Data Service-Lösungsdateien in XML-Dateien zu zerlegen (entpacken), die durch ein Quellcodeverwaltungssystem verwaltet werden können. Das Tool kann auch die einzelnen XML-Dateien in eine Lösungsdatei kompilieren (verpacken), die importiert werden können in Common Data Service Weitere Informationen zum SolutionPackager-Tool, siehe [SolutionPackager-Tool](compress-extract-solution-file-solutionpackager.md).  
   
  In den folgenden Abschnitten werden die Dateien beschrieben, die für jeden Lösungskomponententyp erstellt werden und welche von diesen Dateien zur Inklusion im Quellsteuerelement weniger geeignet sind. Die Ordner, in den Abschnitten angegeben sind, sind alle relativ zu dem Ordner, der im Parameter `/folder` des **SolutionPackager**-Befehls angegeben sind.  
   
@@ -71,7 +77,7 @@ RibbonDiff.xml
 ## <a name="option-set"></a>Optionssatz  
  Unterscheidet sich in verwalteten Lösungen: Nein  
   
-### <a name="notes"></a>Notizen  
+### <a name="notes"></a>Hinweise  
  Jeder Optionssatz ist in einer eigenen Datei gespeichert.  
   
 ### <a name="files"></a>Dateien  
@@ -185,7 +191,7 @@ SiteMap_managed.xml
 ## <a name="workflow"></a>Workflow  
  Unterscheidet sich in verwalteten Lösungen: Nein  
   
-### <a name="notes"></a>Notizen  
+### <a name="notes"></a>Hinweise  
   
 1.  XAML für jeden Workflow wird in einer eindeutigen Datei gespeichert.  
   
@@ -357,7 +363,7 @@ Structurexml.xml
 ## <a name="serviceendpoint"></a>ServiceEndpoint  
  Unterscheidet sich in verwalteten Lösungen: Nein  
   
-### <a name="notes"></a>Notizen  
+### <a name="notes"></a>Hinweise  
  Alle Serviceendpunktmetadaten werden zusammen in einer Datei gespeichert.  
   
 ### <a name="files"></a>Dateien  

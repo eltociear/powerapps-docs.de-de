@@ -1,12 +1,12 @@
 ---
-title: Unterrastereigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | MicrosoftDocs
+title: Unterrastereigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | Microsoft-Dokumentation
 description: Grundlegendes zu Unterrastereigenschaften für Hauptformulare
 Keywords: Hauptformular; Eigenschaften des Unterrasters; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/07/2018
@@ -14,17 +14,23 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 82892cd3-3436-4677-b96b-f2ccd0a4f078
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a6bb86fde69554808f8cbf75f0366dc49ea485f4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759686"
 ---
 # <a name="sub-grid-properties-for-model-driven-app-main-forms-overview"></a>Unterrastereigenschaften für Hauptformulare in modellgesteuerten Apps im Überblick
 
 Sie können ein Unterraster auf einem Formular konfigurieren, um eine Liste von Datensätzen oder ein Diagramm anzuzeigen. Wählen Sie **Nur Diagramm anzeigen** auf der Registerkarte **Anzeigen**, um ein Diagramm statt der Liste anzuzeigen.  
 
-Sie können auf **Unterrastereigenschaften** über die PowerApps-Webseite zugreifen. 
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+Sie können auf **Unterrastereigenschaften** über die PowerApps-Website zugreifen. 
+1.  Wählen Sie auf der Website [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Modellgesteuert** (unterer linker Teil des Navigationsbereichs) aus.  
 
      ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
 
@@ -59,14 +65,14 @@ Sie können auf **Unterrastereigenschaften** über die PowerApps-Webseite zugrei
   
 
 ## <a name="show-list-behavior"></a>Listenverhalten anzeigen  
- Bei der Anzeige einer Liste in Formularen mit [Aktualisierte Formulare](main-form-presentations.md#updated-forms) zeigt jedes Unterraster die Schaltfläche **Ansicht öffnen** ![Ansicht öffnen-Schaltfläche](media/crm-itpro-cust-openview.PNG "Ansicht öffnen-Schaltfläche") oben rechts an, wenn die Entität auch als eine der Entitäten angezeigt wird, die im Navigationsbereich des Formulareditors enthalten sind. Durch Auswählen dieser Schaltfläche wird die Ansicht geöffnet. Die Verhaltensweise ändert sich abhängig von der für die Eigenschaft **Datensätze** ausgewählten Option.  
+ Bei der Anzeige einer Liste in Formularen mit [Aktualisierte Formulare](main-form-presentations.md#updated-forms) zeigt jedes Unterraster die Schaltfläche **Ansicht öffnen** ![Ansicht öffnen-Schaltfläche](media/crm-itpro-cust-openview.PNG "Mit Schaltfläche öffnen") oben rechts an, wenn die Entität auch als eine der Entitäten angezeigt wird, die im Navigationsbereich des Formulareditors enthalten sind. Durch Auswählen dieser Schaltfläche wird die Ansicht geöffnet. Die Verhaltensweise ändert sich abhängig von der für die Eigenschaft **Datensätze** ausgewählten Option.  
   
  Bei Auswahl von **Nur verknüpfte Datensätze** wird die Ansicht mithilfe einer der zugeordneten Ansichten im gleichen Fenster geöffnet. Um zum Formular zurückzukehren, verwenden Sie die Zurück-Schaltfläche, oder wählen Sie den primären Namenwert des aktuellen Datensatzes in der Navigationsleiste aus.  
   
  Bei Auswahl von **Alle Datensatztypen** wird die Ansicht in einem neuen Fenster geöffnet.  
 
 ## <a name="add-record-behavior"></a>Verhalten beim Hinzufügen von Datensätzen  
- Wird eine Liste in Formularen mit [Aktualisierte Formulare](main-form-presentations.md#updated-forms) angezeigt, zeigt jedes Unterraster die Schaltfläche **Datensatz hinzufügen** ![Hinzufügen-Schaltfläche](media/crm-itpro-cust-subgridadd.PNG "Hinzufügen-Schaltfläche") an der oberen rechten Seite des Unterrasters an. Durch Azswählen dieser Schaltfläche können Sie einen Datensatz hinzuzufügen. Diese Verhaltensweise ändert sich je nach der für die Eigenschaft **Datensätze** ausgewählten Option, und danach, ob sich die Suche auf Aktivitätsdatensätze bezieht.  
+ Wird eine Liste in Formularen mit [Aktualisierte Formulare](main-form-presentations.md#updated-forms) angezeigt, zeigt jedes Unterraster die Schaltfläche **Datensatz hinzufügen** ![Hinzufügen-Schaltfläche](media/crm-itpro-cust-subgridadd.PNG "Schaltfläche "Hinzufügen"") an der oberen rechten Seite des Unterrasters an. Durch Azswählen dieser Schaltfläche können Sie einen Datensatz hinzuzufügen. Diese Verhaltensweise ändert sich je nach der für die Eigenschaft **Datensätze** ausgewählten Option, und danach, ob sich die Suche auf Aktivitätsdatensätze bezieht.  
   
  Wenn Sie **Nur verknüpfte Datensätze** auswählen, besteht das standardmäßige Verhalten darin, bestehende Datensätze hinzuzufügen. Benutzer sehen zuerst eine Inline-Suche zur Suche nach vorhandenen Datensätzen. Dadurch wird das Erstellen von doppelten Datensätzen verhindert.  Wenn sie keinen vorhandenen Datensatz finden, können sie die Option **Neu** auswählen. Wenn ein neuer Datensatz erstellt wird, werden die Feldzuordnungen, die in dieser Beziehung definiert sind, angewendet. Weitere Informationen: [Zuordnen von Entitätsfeldern](../common-data-service/map-entity-fields.md).   
   
@@ -75,7 +81,7 @@ Sie können auf **Unterrastereigenschaften** über die PowerApps-Webseite zugrei
  Wenn das Unterraster Aktivitäten anzeigt, müssen Benutzer zuerst die Art der Aktivität auswählen; anschließend sehen sie die neue Verhaltensweise des Hinzufügens neuer Datensätze.  
   
 ## <a name="delete-record-behavior"></a>Verhalten beim Löschen von Datensätzen  
- Wenn Sie einen Datensatz in einem Unterraster auswählen, wird die Schaltfläche **Löschen** ![Symbol für Löschen der untergeordneten Liste](media/crm-itpro-cust-subgriddelete.PNG "Symbol für Löschen der untergeordneten Liste") rechts neben der Zeile angezeigt. Die Verhaltensweisen dieser Löschaktion unterscheidet sich je nach der Art der Beziehung zur aktuellen Entität.  
+ Wenn Sie einen Datensatz in einem Unterraster auswählen, wird die Schaltfläche **Löschen** ![Symbol für Löschen der untergeordneten Liste](media/crm-itpro-cust-subgriddelete.PNG "Symbol: Löschen der untergeordneten Liste") rechts neben der Zeile angezeigt. Die Verhaltensweisen dieser Löschaktion unterscheidet sich je nach der Art der Beziehung zur aktuellen Entität.  
   
  Wenn das Unterraster eine 1:n-Beziehung verwendet, besteht das normale Datensatzlöschverhalten darin, dass ein Bestätigungsdialogfeld angezeigt wird, bevor der Datensatz gelöscht wird.  
   

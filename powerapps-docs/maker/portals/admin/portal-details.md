@@ -1,26 +1,26 @@
 ---
-title: Details des bereitgestellten Portals | MicrosoftDocs
-description: Informieren Sie sich darüber, welche Details bei der Bereitstellung des Portals aufgezeichnet werden und was Sie verwenden können.
+title: Details zum bereitgestellten Portal | MicrosoftDocs
+description: Wissen Sie, welche Details bei der Bereitstellung des Portale erfasst werden und was Sie nutzen können.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 782c0ffb9cf5f932102984f4c3b1efca47c5a7c7
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.openlocfilehash: bcbc5f7f4fee69cecf28c24f0eddca106b680513
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975792"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759818"
 ---
-# <a name="portal-details"></a>Informationen zu einem Portal
+# <a name="portal-details"></a>Portal-Details
 
-Nachdem Sie ein Portal erstellt haben, wird die Bereitstellung gestartet, und Sie werden über Benachrichtigungen über den Status benachrichtigt. Nachdem das Portal bereitgestellt wurde, werden Sie zu powerapps Portals Studio umgeleitet. Sie können powerapps-Portale Studio zum Erstellen und Anpassen Ihrer Website verwenden.
+Nachdem Sie ein Portal erstellt haben, beginnt es mit der Bereitstellung und Sie werden durch Benachrichtigungen über den Status informiert. Sobald das Portal bereitgestellt ist, werden Sie zum PowerApps-Portalstudio weitergeleitet. Sie können das PowerApps-Portalstudio verwenden, um Ihre Website zu erstellen und anzupassen.
 
-Wenn Sie weitere Details über das bereitgestellte Portal, wie z. b. den Porttyp, die Anwendungs-ID, den Besitzer des Portals usw., benötigen, können Sie [powerapps-Portale Admin Center](admin-overview.md) öffnen und zur Registerkarte " **Portal Details** " navigieren. Der Benutzer, der das Portal erstellt hat, ist der Besitzer des Portals.
+Wenn Sie weitere Details über das bereitgestellte Portal sehen möchten, wie Portaltyp, Anwendungs-ID, Besitzer des Portals usw., können Sie das [PowerApps-Portaladministratorcenter](admin-overview.md) öffnen und zur Registerkarte **Portaldetails** navigieren. Der Benutzer, der das Portal erstellt hat, ist der Besitzer des Portals.
 
 > [!div class=mx-imgBorder]
-> Details zum ![Portal Details]-(../media/portal-details-admin.png "Portal")
+> ![Portal-Details](../media/portal-details-admin.png "Portal-Details")

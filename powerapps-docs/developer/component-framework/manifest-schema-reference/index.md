@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 045a395b-4475-48dd-8f67-6bc2b33cd89c
 ms.openlocfilehash: 8f58f10f6a3695615ddc3b58b540c59240af9641
 ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/12/2019
 ms.locfileid: "72346369"

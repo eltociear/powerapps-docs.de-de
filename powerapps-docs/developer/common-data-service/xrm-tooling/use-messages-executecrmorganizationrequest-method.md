@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Messages mithilfe der ExecuteCrmOrganizationRequest-Methode (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Nachrichten mit der ExecuteCrmOrganizationRequest-Methode verwendet werden. Diese Beispiele zeigen, wie die CreateRequest- und RetrieveMultipleRequest-Nachricht mit der CrmServiceClient.String)-Methode ausgeführt wird.'
+title: Verwenden von Nachrichten mit der ExecuteCrmOrganizationRequest-Methode (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Nachrichten mit der ExecuteCrmOrganizationRequest-Methode verwendet werden. Diese Beispiele zeigen, wie die CreateRequest- und RetrieveMultipleRequest-Nachricht mit der CrmServiceClient.String)-Methode ausgeführt wird.
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 1ba60f67-522d-4540-a6f9-0787d7074a79
 caps.latest.revision: 17
 author: MattB-msft
 ms.author: kvivek
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 02930412dfb6eb3825a9606befea3c24624914e2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748493"
 ---
 # <a name="use-messages-with-the-executecrmorganizationrequest-method"></a>Verwenden von Nachrichten der ExecuteCrmOrganizationRequest-Methode
   
@@ -97,5 +103,5 @@ else
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Verwenden von XRM-Tooling zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
-[Verwenden der XRM-Tooling-API zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)
+[Verwenden von XRM-Tools, um eine Verbindung zu Common Data Service herzustellen](use-crmserviceclient-constructors-connect.md)<br />
+[Use XRM Tooling API to execute actions in Common Data Service](use-xrm-tooling-execute-actions.md)

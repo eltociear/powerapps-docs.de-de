@@ -1,19 +1,25 @@
 ---
 title: Client API-Rasterkontext in modellgestützten Apps| MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: f884d7d4-31e6-4080-acd9-493e81e6b278
 author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 56fb2faf0259a38183beea29a1603ecccbc35260
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748767"
 ---
 # <a name="client-api-grid-context"></a>Rasterkontext der Client-API
 

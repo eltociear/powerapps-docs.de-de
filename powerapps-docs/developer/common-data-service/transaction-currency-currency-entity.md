@@ -1,6 +1,6 @@
 ---
-title: Transaktionswährungs (Währungs)-Entität (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie mehr über die Transaktionswährung, die eine Mehrfachwährungsfunktion ist und es Benutzern ermöglicht, finanzielle Transaktionen in mehreren Währungen auszuführen. Mehrere Datensätze in verschiedenen Transaktionswährungen können in einer einheitlichen Währung aggregiert, verglichen oder analysiert werden, indem die Basiswährung verwendet wird.'
+title: Entität der Transaktionswährung (Währung) (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Transaktionswährung, die eine Mehrfachwährungsfunktion ist und es Benutzern ermöglicht, finanzielle Transaktionen in mehreren Währungen auszuführen. Mehrere Datensätze in verschiedenen Transaktionswährungen können in einer einheitlichen Währung aggregiert, verglichen oder analysiert werden, indem die Basiswährung verwendet wird.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 28dac174671b4577a42e488afa4e007f7e0d9212
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748635"
 ---
 # <a name="transaction-currency-currency-entity"></a>Entität der Transaktionswährung (Währung)
 

@@ -14,7 +14,7 @@ ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
 ms.openlocfilehash: a9f157dfb3d0a7d29cebadee935c84826ae040d6
 ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/29/2019
 ms.locfileid: "73025660"

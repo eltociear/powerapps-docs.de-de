@@ -1,6 +1,6 @@
 ---
-title: 'Beispiel für Web-API-Funktionen und -Aktionen (C#) (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen mithilfe der Common Data Service-Web-API und C# aufgerufen werden'
+title: Beispiel für Web-API-Funktionen und -Aktionen (C#) (Common Data Service) | Microsoft Docs
+description: Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen mithilfe der Common Data Service-Web-API und C# aufgerufen werden
 ms.custom: ''
 ms.date: 1/09/2019
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: b14a8bff-bf05-412c-89f6-ba7b503dcb51
 caps.latest.revision: 13
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 41ffe4147016acf81b79795da6409237d4656d24
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748607"
 ---
 # <a name="web-api-functions-and-actions-sample-c"></a>Internet-API-Funktionen- und Aktionen-Beispiel (C#)
 

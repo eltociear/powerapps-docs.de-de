@@ -1,19 +1,25 @@
 ---
 title: Grundlegendes zum Client-API-Objektmodell in modellgestützten Apps | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3335aec5-6b48-4ef6-8d49-2833b177f318
 author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 87b842ce84c08b083ca4769914aa4652dcd1d41f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748765"
 ---
 # <a name="understand-the-client-api-object-model"></a>Grundlegendes zum Client API-Objektmodell
 
@@ -37,7 +43,7 @@ Am Stamm des Client-API-Objektmodells sind folgende Kontexten und das Xrm-Objekt
 |--|--|
 |**executionContext**|Stellt den Ausführungskontext für ein Ereignis in Formularen und Rastern für modellgestützte Apps dar.<br/>Weitere Informationen: [Client-API-Ausführungskontext](clientapi-execution-context.md)|
 |**formContext** |Enthält einen Verweis auf ein Formular oder ein Element im Formular, für das der aktuelle Code ausgeführt wird. Um das Objekt **formContext** abzurufen, verwenden Sie die Methode **executionContext**.[getFormContext](reference/executioncontext/getFormContext.md).<br/>Weitere Informationen: [Client-API-Formularkontext](clientapi-form-context.md)|
-|**gridContext** |Enthält einen Verweis auf ein Raster oder ein Unterraster im Formular, für das der aktuelle Code ausgeführt wird.<br/>Weitere Informationen: [Client-API-Rasterkontext](clientapi-form-context.md)|
+|**gridContext** |Enthält einen Verweis auf ein Raster oder ein Unterraster im Formular, für das der aktuelle Code ausgeführt wird.<br/>Weitere Informationen: [Client-API-Rasterkontext](clientapi-grid-context.md)|
 |**Xrm**| Stellt ein globales Objekt zum Ausführen von Vorgängen bereicht, die sich nicht direkt auf die Daten und die Benutzeroberfläche in Formularen, in Rastern, in Unterrastern, Steuerelementen oder oder Attributen auswirken. Beispielsweise Navigieren in Formularen, Erstellen und Verwalten von Datensätzen unter Verwendung der Web-API.<br/>Weitere Informationen: [Client-API-Xrm-Objekt](clientapi-xrm.md)|
 
 ### <a name="related-topics"></a>Verwandte Themen

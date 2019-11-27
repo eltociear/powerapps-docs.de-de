@@ -1,5 +1,5 @@
 ---
-title: 'Skalierbares Anpassungsdesign: Datenbanktransaktionen (Common Data Service) | Microsoft Docs'
+title: 'Skalierbares Anpassungsdesign: Datenbanktransaktionen (Common Data Service) | Microsoft-Dokumentation'
 description: Das zweite in einer Reihe von Themen. Dieses Thema konzentriert sich auf die Auswirkungen von Datenbanktransaktionen auf das skalierbare Anpassungsdesign.
 ms.custom: ''
 ms.date: 1/15/2019
@@ -10,18 +10,23 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7e6f6fddb04c652b64054653fbaa9f8e0a63ad95
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748648"
 ---
-
 # <a name="scalable-customization-design-database-transactions"></a>Skalierbares Anpassungsdesign: Datenbanktransaktionen
 
 > [!NOTE]
 > Dies ist der zweite in einer Reihe von Themen über skalierbares Anpassungsdesign. Um am Anfang zu beginnen, siehe [Skalierbares Anpassungsdesign im Common Data Service](overview.md).
 
-Eines der grundlegendsten Konzepte hinter vielen der hier anstehenden Herausforderungen ist das der Datenbanktransaktion. Im Common Data Service steht die Datenbank im Mittelpunkt fast aller Anfragen an das System und die Datenkonsistenz wird in erster Linie durchgesetzt.
+Eines der grundlegendsten Konzepte hinter vielen der hier anstehenden Herausforderungen ist das der Datenbanktransaktion. Im Common Data Service steht die Datenbank im Mittelpunkt fast aller Anfragen an das System, und die Datenplatzierungskonsistenz wird in erster Linie durchgesetzt.
 
 - Keine Common Data Service-Datenoperationen, weder interne noch Teil von Codeanpassungen, funktionieren vollständig isoliert.
 - Alle Datenoperationen von Common Data Service interagieren mit den gleichen Datenbankressourcen, entweder auf Daten- oder Infrastrukturebene wie Prozessor-, Speicher- oder I/O-Nutzung.
@@ -32,7 +37,7 @@ Eines der grundlegendsten Konzepte hinter vielen der hier anstehenden Herausford
 
 Ein häufiger Grund dafür, dass in diesem Bereich Probleme auftreten können, ist die mangelnde Sensibilität dafür, wie sich Anpassungen auf Transaktionen auswirken können.
 
-Obwohl die Details, wie dies geschieht, über den Rahmen dieses Themas hinausgehen, ist das einfachste zu betrachtende Element, dass als Common Data Service mit Daten in seiner Datenbank interagiert. SQL Server bestimmt die entsprechenden Sperren, die von Transaktionen für diese Daten verwendet werden sollen, wie z. B.:
+Obwohl die Details, wie dies geschieht, über den Rahmen dieses Themas hinausgehen, ist das am einfachsten zu betrachtende Element, dass Common Data Service mit Daten in seiner Datenbank interagiert. SQL Server bestimmt die entsprechenden Sperren, die von Transaktionen für diese Daten verwendet werden sollen, wie z. B.:
 - Beim Abrufen eines bestimmten Datensatzes setzt SQL Server eine Lesesperre auf diesen Datensatz.
 - Beim Abrufen eines Bereichs von Datensätzen kann in einigen Szenarien eine Lesesperre für diesen Bereich von Datensätzen oder die gesamte Tabelle verhängt werden.
 - Beim Erstellen eines Datensatzes erzeugt es eine Schreibsperre für diesen Datensatz.
@@ -52,7 +57,7 @@ Es ist zu beachten, dass Transaktionen nur während der Laufzeit einer bestimmte
 
 ## <a name="blocking"></a>Blockierung
 
-Während die Art der Blockierung im vorherigen Beispiel an sich unangenehm sein kann, kann dies auch zu schwerwiegenderen Folgen führen, wenn man bedenkt, dass Common Data Service eine Plattform ist, die Hunderte von gleichzeitigen Aktionen verarbeiten kann. Während das Halten einer Sperre für einen einzelnen Kontoeintrag relativ begrenzte Auswirkungen haben kann, was passiert, wenn eine Ressource stärker beansprucht wird?
+Während die Art der Blockierung im vorherigen Beispiel an sich unpraktisch sein kann, kann dies auch zu schwerwiegenderen Folgen führen, wenn man bedenkt, dass Common Data Service eine Plattform ist, die Hunderte von gleichzeitigen Aktionen verarbeiten kann. Während das Halten einer Sperre für einen einzelnen Kontoeintrag relativ begrenzte Auswirkungen haben kann, was passiert, wenn eine Ressource stärker beansprucht wird?
 
 Wenn jedes Konto beispielsweise eine eindeutige Referenznummer erhält, kann dies dazu führen, dass eine einzige Ressource, die die verwendeten Referenznummern verfolgt, bei jedem Kontoerstellungsprozess gesperrt wird. Wie im [Beispiel der automatischen Nummerierung](auto-numbering-example.md) beschrieben, müssen überlappende Anfragen, wenn viele Konten parallel generiert werden, alle auf diese Ressource zugreifen und sie blockieren, bis sie ihre Aktion abgeschlossen haben. Je länger jeder Kontoerstellungsprozess dauert und je mehr gleichzeitige Anfragen es gibt, desto mehr wird blockiert.
 
@@ -228,7 +233,7 @@ Wenn Anforderungen extern über Webservices gestellt werden, wird eine Pipeline 
 
 Wenn innerhalb eines Plugins mehrere Anforderungen mit demselben Ausführungskontext gestellt werden, ist es der gemeinsame Ausführungskontext, der die Transaktionsreferenz aufrechterhält und in synchronen Plugins sicherstellt, dass jede Anforderung innerhalb derselben Transaktion ausgeführt wird. Die Möglichkeit, einen Ausführungskontext über Anforderungen hinweg zu pflegen, ist außerhalb von Plug-Ins nicht verfügbar und daher kann eine Transaktion nicht über getrennte, extern erstellte Anforderungen hinweg gepflegt werden.
 
-Es gibt zwei spezielle Messages, bei denen mehrere Aktionen als Teil einer einzigen Webservice-Anfrage an die Common Data Service-Plattform übergeben werden können.
+Es gibt zwei spezielle Nachrichten, bei denen mehrere Aktionen als Teil einer einzigen Webservice-Anfrage an die Common Data Service-Plattform übergeben werden können.
 
 |Meldung|Beschreibung|
 |--|--|

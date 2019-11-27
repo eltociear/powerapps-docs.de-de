@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Arbeiten mit Lösungen (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Verwenden von Lösungen (Common Data Service) | Microsoft-Dokumentation'
 description: In diesem Beispiel wird das Arbeiten mit Lösungen dargestellt
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6c696da27bf309dc4fe0db53e29564fc50289172
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748694"
 ---
 # <a name="sample-work-with-solutions"></a>Beispiel: Verwenden von Lösungen
 

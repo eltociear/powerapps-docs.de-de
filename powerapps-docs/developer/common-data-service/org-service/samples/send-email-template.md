@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Senden einer E-Mail mithilfe einer Vorlage (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie eine E-Mail-Nachricht mittels einer Vorlage gesendet wird.'
+title: 'Beispiel: Senden einer E-Mail mit einer Vorlage (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie eine E-Mail-Nachricht mittels einer Vorlage gesendet wird.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f87c0cd4ea803628307e87a7a5125a6cafa1c72d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748714"
 ---
 # <a name="sample-send-an-email-using-a-template"></a>Beispiel: Senden einer E-Mail mithilfe einer Vorlage
 

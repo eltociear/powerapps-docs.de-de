@@ -1,6 +1,6 @@
 ---
 title: Bearbeiten von CSS in einem Portal | Microsoft-Dokumentation
-description: Anweisungen zum Bearbeiten von CSS in einem Portal.
+description: Anweisungen zur Bearbeitung von CSS in einem Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,41 +9,41 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 4795e7ec7a3d7906efd68e82ac51e929a3800328
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.openlocfilehash: b4b0be6e3a5e08fc2c6b4679cf84669280c9271c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976666"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759950"
 ---
-# <a name="edit-css"></a>Bearbeiten von CSS
+# <a name="edit-css"></a>BearbeitenCSS
 
-Mit Cascading Stylesheets (CSS) können Sie die Formatierung Ihrer Website steuern. Standardmäßig sind die Dateien "Bootstrap. min. CSS" und "Theme. CSS" verfügbar. Sie können die vorhandenen CSS-Dateien bearbeiten und neue CSS-Dateien hochladen. Wenn Sie eine neue CSS-Datei hochladen, ist Sie in der Portal Verwaltungs-App als Webdatei verfügbar.
+CSS-Seiten (Cascading Style Sheets) (CSS) ermöglicht es Ihnen die Formatierung Ihrer Website zu steuern. Standardmäßig sind bootstrap.min.css- und theme.css-Dateien verfügbar. Sie können die vorhandene Daten CSS bearbeiten und neue Dateien CSS hochladen. Wenn Sie eine neue Datei CSS hochladen, ist sie als Internet-Datei in der Portalverwaltungs-App verfügbar.
 
-So öffnen Sie ein CSS im Code-Editor:
+Um eine CSS im Code-Editor zu öffnen:
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
 
-2.  Wählen **Sie** im Symbol Bereich auf der linken Seite des Bildschirms das Symbol Design Design ![Symbol](media/theme-icon.png "Design aus.") Die verfügbaren Designs werden angezeigt.  
-
-    > [!div class=mx-imgBorder]
-    > Designbereich ![Design Pane](media/theme-pane.png "")  
-
-3.  Wählen Sie das erforderliche CSS aus, um es im Code-Editor zu öffnen.
-
-4.  Bearbeiten Sie den Code, und speichern Sie die Änderungen.
-
-So laden Sie eine neue CSS-Datei hoch:
-
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
-
-2.  Wählen **Sie** im Symbol Bereich auf der linken Seite des Bildschirms das Symbol Design Design ![Symbol](media/theme-icon.png "Design aus.") Die verfügbaren Designs werden angezeigt.  
-
-3. Wählen Sie **benutzerdefiniertes CSS hochladen**.
+2.  Wählen Sie **Design** ![Designsymbol](media/theme-icon.png "Designsymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus. Die verfügbaren Designs werden angezeigt.  
 
     > [!div class=mx-imgBorder]
-    > Designbereich ![Design Pane](media/upload-css.png "")  
+    > ![Design-Bereich](media/theme-pane.png "Design-Bereich")  
 
-4. Durchsuchen und Auswählen der hoch zuladenden CSS-Datei.
+3.  Wählen Sie die erforderliche CSS aus, um sie im Code-Editor zu öffnen.
+
+4.  Bearbeiten Sie den Code und speichern Sie die Änderungen.
+
+Um eine neue CSS Datei hochzuladen:
+
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+
+2.  Wählen Sie **Design** ![Designsymbol](media/theme-icon.png "Designsymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus. Die verfügbaren Designs werden angezeigt.  
+
+3. Wählen Sie **Benutzerdefinierte CSS** hochladen.
+
+    > [!div class=mx-imgBorder]
+    > ![Design-Bereich](media/upload-css.png "Design-Bereich")  
+
+4. Navigieren Sie zu der hochzuladenden CSS-Datei.
 
 

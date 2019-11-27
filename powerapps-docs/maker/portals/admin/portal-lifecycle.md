@@ -1,6 +1,6 @@
 ---
-title: Informationen zum Lebenszyklus von powerapps-Portalen | MicrosoftDocs
-description: Informationen über den Lebenszyklus von powerapps-Portalen und deren Umstellung von Testversion in die Produktion.
+title: Informationen zum PowerApps-Portallebenszyklus | Microsoft-Dokumentation
+description: Informationen zum PowerApps-Portallebenszyklus und Konvertieren von einer Testversion in eine Produktionsumgebung.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,63 +9,63 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c2ee82be5526cce41451c8a703971c0f97d32ea0
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.openlocfilehash: 5476bb0306b5d9e0767f451fba36a567a70c4c54
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977310"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756782"
 ---
-# <a name="about-portal-lifecycle"></a>Informationen zum Lebenszyklus des Portals
+# <a name="about-portal-lifecycle"></a>Info über den Portallebenszyklus
 
-Ein Portal wird immer als Testversion erstellt. Ein testportal, das nach 30 Tagen abläuft, ist nützlich, um seine Funktionen kostenlos auszuprobieren. Nach dem Ablauf wird ein Portal angehalten und heruntergefahren. Sieben Tage nach dem anhalten wird das testportal gelöscht. Bei jeder Änderung der Lebenszyklusphase des Portals, z. b. zum Anhalten, anhalten, löschen und Konvertieren von Testversionen in die Produktion, erhalten Sie Benachrichtigungen als Toast und per e-Mail.
+Ein Portal wird immer als Testversion erstellt. Ein Testportal, das nach 30 Tagen abläuft, ist für den kostenlosen Test der Funktionen hilfreich. Nach Ablauf wird ein Portal abgeschaltet und heruntergefahren. Sieben Tage nach Abschaltung wird das Testportal gelöscht. Bei jeder Änderung einer Portallebenszyklusphase, wie bevorstehende Abschaltung, abgeschaltet, gelöscht und konvertiert von der Testversion in die Produktionsumgebung, erhalten Sie Benachrichtigungen als Toast und per E-Mail.
 
-Als Administrator können Sie eine Testversion oder ein angehaltene Portal in ein Produktions Portal konvertieren. Stellen Sie beim Umstellen eines Test Portals in die Produktion sicher, dass die Umgebung auch eine Produktionsumgebung ist. Sie können ein testportal in einer Testumgebung nicht in eine Produktionsumgebung konvertieren. Wenn Sie die Umgebung löschen, in der ein testportal erstellt wurde, wird das Portal ebenfalls gelöscht.
+Als Administrator können Sie ein Test- oder abgeschaltetes Portal in ein Produktionsportal konvertieren. Beim Konvertieren eines Testportals in die Produktionsumgebung müssen Sie sicherstellen, dass die Umgebung auch eine Produktionsumgebung ist. Sie können ein Testportal nicht in einer Testumgebung in eine Produktionsumgebung konvertieren. Wenn Sie die Umgebung löschen, in der ein Testportal erstellt wurde, wird das Portal ebenfalls gelöscht.
 
-Das erste Portal kann in einer Umgebung in einem Mandanten erstellt werden. Wenn Sie mehr als ein Portal erstellen müssen, benötigen Sie im Mandanten 1 GB nicht genutzten Speicherplatz.
+Das erste Portal kann in einer Umgebung in einem Mandanten kostenlos erstellt werden. Wenn Sie mehr als ein Portal erstellen müssen, brauchen Sie 1 GB ungenutzten Speicherplatz im Mandanten.
 
-## <a name="stages-in-portal-lifecycle"></a>Phasen im Portal Lebenszyklus
+## <a name="stages-in-portal-lifecycle"></a>Phasen im Portallebenszyklus
 
 ### <a name="trial-portal"></a>Testportal
 
-Ein Portal wird immer als testportal erstellt. Wenn Sie über die erforderlichen Lizenzen verfügen, können Sie Sie über das powerapps-Portal Admin Center in die Produktion konvertieren. Informationen zum Konvertieren eines Test Portals in die Produktion finden Sie unter [Konvertieren eines Test Portals in eine Produktions](#convert-a-trial-portal-to-production)Umgebung.
+Ein Portal wird immer als Testportal erstellt. Sie können es im PowerApps-Portal-Administratorcenter in eine Produktionsumgebung konvertieren, wenn Sie die erforderlichen Lizenzen besitzen. Informationen zum Konvertieren eines Testportals in die Produktionsumgebung finden Sie unter [Konvertieren eines Testportals in die Produktionsumgebung](#convert-a-trial-portal-to-production).
 
-Zum Konvertieren eines Test Portals in die Produktion muss die Umgebung über erforderliche Add-ons für externe Benutzer oder eine Lizenz für interne Benutzer verfügen. Weitere Informationen zur Lizenzierung finden Sie unter Häufig gestellte Fragen zu [powerapps und Microsoft Flow Lizenzierung](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq) und [powerapps-Portale-Lizenzierung](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
+Um ein Testportal in die Produktionsumgebung zu konvertieren, braucht die Umgebung die erforderlichen Add-Ons für externe Benutzer oder eine Lizenz für interne Benutzer. Weitere Informationen zu Lizenzen finden Sie unter [FAQs zur PowerApps- und Microsoft Flow-Lizenzierung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) und [PowerApps- Portal-Lizenzierung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
 
-### <a name="suspended-portal"></a>Angehaltene Portal
+### <a name="suspended-portal"></a>Abgeschaltetes Portal
 
-Weitere Informationen zum Ablauf des Test Portals finden Sie im Admin Center für die powerapps-Portale. Test Portale laufen nach 30 Tagen ab. Wenn Sie Ihr Portal innerhalb des Testzeitraums nicht in die Produktion konvertieren, wird das Portal heruntergefahren und in den Status "angehalten" versetzt. Sie können nach dem Ablauf nicht mehr auf Ihr Portal zugreifen.
+Es werden weiterhin Benachrichtigungen im PowerApps-Portal-Administratorcenter zum Ablauf des Testportals angezeigt. Testportale laufen nach 30 Tagen ab. Wenn Sie Ihr Portal innerhalb des Testzeitraums nicht in die Produktionsumgebung konvertieren, wird das Portal heruntergefahren und auf den Status „Abgeschaltet“ gesetzt. Es ist nicht möglich, auf das Portal nach dem Ablauf zuzugreifen.
 
-Allerdings kann das angehaltene Portal innerhalb von sieben Tagen nach der Unterbrechung immer noch in die Produktion konvertiert werden. 
+Das abgeschaltete Portal kann aber noch innerhalb von sieben Tagen nach Abschaltung in die Produktionsumgebung konvertiert werden. 
 
 ### <a name="deleted-portal"></a>Gelöschtes Portal
 
-Wenn Sie Ihr Portal innerhalb des Zeitraums von sieben Tagen nicht in die Produktion konvertieren, wird das Portal gelöscht. Die Portal Daten werden nicht aus der Umgebung gelöscht, aber der Speicherplatz, der vom Portal in einer Umgebung verwendet wird, wird freigegeben, und Sie können ein neues Portal erstellen.
+Wenn Sie Ihr Portal nicht innerhalb von sieben Tagen nach Abschaltung in die Produktionsumgebung konvertieren, wird das Portal gelöscht. Die Portaldaten werden nicht aus der Umgebung gelöscht, aber der Speicherplatz, der vom Portal in einer Umgebung verwendet wurde, wird freigegeben, und Sie können ein neues Portal erstellen.
 
-## <a name="convert-a-trial-portal-to-production"></a>Konvertieren eines Test Portals in eine Produktionsumgebung
+## <a name="convert-a-trial-portal-to-production"></a>Ein Testportal in die Produktionsumgebung konvertieren
 
-Sie können ein testportal in die Produktion konvertieren, indem Sie die Benachrichtigungen im Admin Center der powerapps-Portale anzeigen.
+Sie können ein Testportal über die Benachrichtigungen, die im PowerApps-Portal-Administratorcenter angezeigt werden, in eine Produktionsumgebung konvertieren.
 
 > [!NOTE]
-> Sie müssen einer der folgenden Rollen zugewiesen sein, um ein testportal in eine Produktionsumgebung zu konvertieren:
+> Ihnen muss eine der folgenden Rollen zugewiesen sein, um ein Testportal in die Produktionsumgebung zu konvertieren:
 > - Globaler Administrator
-> - System Administrator
+> - Systemadministrator
 
-Wenn Sie das [powerapps-Portal Admin Center](admin-overview.md) öffnen und zur Registerkarte " [Portal Details](portal-details.md) " navigieren, wird die Benachrichtigung über den Ablauf der Testversion unter dem Feld " **Typ** " angezeigt.
-
-> [!div class=mx-imgBorder]
-> ![Test Benachrichtigung auf der Registerkarte "Portal Details]" auf der Registerkarte "(../media/admin-center-convert-notif.png "Portal Details") "
-
-Auf anderen Seiten im Admin Center wird die Benachrichtigung oben auf der Seite angezeigt.
+Wenn Sie das [PowerApps-Portal-Administratorcenter](admin-overview.md) öffnen und zur Registerkarte [Portaldetails](portal-details.md) navigieren, wird die Benachrichtigung über den Testablauf unterhalb des **Typ**-Felds angezeigt.
 
 > [!div class=mx-imgBorder]
-> ![Test Benachrichtigung zu anderen Registerkarten](../media/admin-center-convert-notif-all.png "Benachrichtigung auf anderen Register") Karten
+> ![Testbenachrichtigung auf der Portaldetail-Registerkarte](../media/admin-center-convert-notif.png "Testbenachrichtigung auf der Portaldetail-Registerkarte")
 
-So konvertieren Sie Ihr testportal in die Produktion:
+Auf anderen Seiten im Administratorcenter wird die Benachrichtigung oben auf der Seite angezeigt.
 
-1.  Wählen Sie in der Benachrichtigung **konvertieren**aus.
+> [!div class=mx-imgBorder]
+> ![Testbenachrichtigung auf anderen Registerkarten](../media/admin-center-convert-notif-all.png "Testbenachrichtigung auf anderen Registerkarten")
 
-2.  Wählen Sie **bestätigen**aus.
+So konvertieren Sie ein Testportal in die Produktionsumgebung:
+
+1.  Wählen Sie in der Benachrichtigung **Konvertieren** aus.
+
+2.  Wählen Sie **Bestätigen** aus.
 
     > [!div class=mx-imgBorder]
-    > ![Bestätigung der Test]Version für die Produktion(../media/trial-to-prod-confirm.png "bis zur Produktion")
+    > ![Bestätigung für die Konvertierung der Testversion in die Produktionsumgebung](../media/trial-to-prod-confirm.png "Bestätigung für die Konvertierung der Testversion in die Produktionsumgebung")

@@ -1,26 +1,34 @@
 ---
-title: Erstellen eines eigenen interaktiven Begleiters (Lernpfad) (Dynamics 365 for Customer Engagement-Apps) | MicrosoftDocs
+title: Erstellen Sie Ihren eigenen interaktiven Begleiter (Lernpfad) (modellgesteuerte Apps) | MicrosoftDocs
 description: ''
-keywords: null
-ms.date: 04/30/2019
-ms.service: dynamics-365
+keywords: ''
+ms.date: 10/22/2019
+ms.service: powerapps
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
 ms.assetid: 8ee3c432-5f76-4086-b9cc-6cd467ae056b
 author: Mattp123
 ms.author: matp
 manager: kvivek
 topic-status: Drafting
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- PowerApps
+ms.openlocfilehash: b9c0f192f96d9ce967d1b8e56266aadeb64646c9
+ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2768285"
 ---
-
 # <a name="create-guided-help-learning-path-for-your-app"></a>Erstellen eines interaktiven Begleiters (Lernpfads) für Ihre App
 
-Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hilfeumgebung bereitzustellen, die für Ihre Umgebung und die spezifische Nutzung und den Workflow in der Organisation angepasst wird. Der Lernpfad erleichtert das Lernen und die Akzeptanz von Apps und organisatorischen Prozessen und stellt sicher, dass Daten einheitlich interpretiert und eingegeben und Fehler und Supportanfragen von Benutzern reduziert werden. [Sehen Sie sich ein kurzes Video (1:50) zum Lernpfad an](https://community.dynamics.com/crm/b/crmvideos/archive/2016/05/09/introducing-learning-path-for-dynamics-crm).  
+Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hilfeumgebung bereitzustellen, die für Ihre Umgebung und die spezifische Nutzung und den Workflow in der Organisation angepasst wird. 
+
+> [!IMPORTANT]
+> Lernpfad ist nur mit Vorgängerwebclient-Apps verfügbar. Benutzerdefinierte Hilfeseiten für Einheitliche Oberflächen-Apps. Weitere Informationen: [Erstellen Sie einen interaktiven Begleiter für Ihre App Einheitliche Oberfläche](../common-data-service/create-custom-help-pages.md)
+
+Der Lernpfad erleichtert das Lernen und die Akzeptanz von Apps und organisatorischen Prozessen und stellt sicher, dass Daten einheitlich interpretiert und eingegeben und Fehler und Supportanfragen von Benutzern reduziert werden. [Sehen Sie sich ein kurzes Video (1:50) zum Lernpfad an](https://community.dynamics.com/crm/b/crmvideos/archive/2016/05/09/introducing-learning-path-for-dynamics-crm).  
 
 <a name="CustomHelp"></a>   
 
@@ -40,7 +48,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 - Sich für Lernpfad angemeldet haben. Diese Einstellung ist standardmäßig aktiviert, kann aber deaktiviert worden sein.  
 
-   Um sicherzustellen, dass der Lernpfad aktiviert ist: Wechseln Sie auf der Navigationsleiste zu **Einstellungen** ![Symbol „Einstellungen“](media/optionsbutton.png "Symbol „Einstellungen“") > **Für Lernpfad anmelden**.  
+   Um sicherzustellen, dass der Lernpfad aktiviert ist: Wechseln Sie auf der Navigationsleiste zu **Einstellungen** ![Symbol Einstellungen](media/optionsbutton.png "Einstellungssymbol") > **Für Lernpfad anmelden**.  
 
    Weitere Informationen: [Ein/Aus-Schalter für den Lernpfad (interaktiver Begleiter)](/dynamics365/customer-engagement/admin/on-off-switch-for-learning-path-guided-help)  
 
@@ -56,7 +64,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 ## <a name="turn-on-learning-path-for-your-organization"></a>Lernpfad für Ihre Organisation aktivieren  
  Lernpfad ist eine Zusatzeinrichtung, die für Ihre Organisation aktiviert oder deaktiviert werden kann. Sie können in [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] enthaltene Lernpfadinhalte anzeigen, Ihre eigenen Lernpfadinhalte für Benutzer erstellen oder beides tun.  
 
-1. Melden Sie sich mit einem Administratorkonto bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] an.  
+1. Melden Sie sich mit einem Administratorkonto bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] an.  
 
 2. Gehen Sie zu **Einstellungen** und wählen Sie dann **Verwaltung** unter **System** aus. Weitere Informationen: [Einstellungen](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
@@ -66,7 +74,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
     Sie können den Lernpfad oder die benutzerdefinierte Hilfe aktivieren, aber nicht beide gleichzeitig. Bestätigen Sie, dass **Benutzerdefinierte Hilfe für anpassbare Entitäten verwenden** und **Parameter an URL anfügen** auf **Nein** festgelegt wurden.  
 
-     ![Systemeinstellungen-Dialogfeld mit Optionen für die Auswahl der Aktivierung der Lernpfaderstellung](media/lp-system-settings.png "Systemeinstellungen-Dialogfeld mit Optionen für die Auswahl der Aktivierung der Lernpfaderstellung")  
+     ![Dialogfeld Systemeinstellungen, das die Optionen anzeigt, um die Lernpfaderstellung zu aktivieren](media/lp-system-settings.png "Dialogfeld Systemeinstellungen, das die Optionen anzeigt, um die Lernpfaderstellung zu aktivieren")  
 
 5. Wählen Sie **OK** aus.  
 
@@ -74,7 +82,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 ## <a name="add-a-user-to-the-office-365-learning-path-authors-security-group"></a>Einen Benutzer zur Office 365-Lernpfad-Autorensicherheitsgruppe hinzufügen  
  Wenn Sie nicht Mitglied der Lernpfad-Autorensicherheitsgruppe von [!INCLUDE[pn_Office_365](../../includes/pn-office-365.md)] sind, wird die folgende Fehlermeldung zurückgegeben, wenn Sie die Lernpfad-Inhalts-Bibliothek öffnen.  
 
- ![Fehlermeldung, die darauf hinweist, dass Sie kein Mitglied der Lernpfad-Sicherheitsgruppe sind](media/lp-o365-security-group.png "Fehlermeldung, die darauf hinweist, dass Sie kein Mitglied der Lernpfad-Sicherheitsgruppe sind")  
+ ![Fehlermeldung, die darauf hinweist, dass Sie kein Mitglied der Lernpfadsicherheitsgruppe sind](media/lp-o365-security-group.png "Fehlermeldung, die darauf hinweist, dass Sie kein Mitglied der Lernpfadsicherheitsgruppe sind")  
 
 #### <a name="add-a-user"></a>Hinzufügen eines Benutzers  
 
@@ -100,10 +108,11 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
  Wenn Sie Lernpfadinhalt veröffentlichen, können Sie Veröffentlichungs-Umgebungen verwenden, um zu steuern, in welchen Organisationen, die dem Mandant zugeordnet ist, der Inhalt veröffentlicht wird. Um unterschiedliche Inhalte in verschiedenen Organisationen zu veröffentlichen, erstellen Sie mehrere Veröffentlichungsumgebungen und fügen jeder Organisation mindestens einer hinzu.  
 
 <a name="SecurityRoles"></a>   
-## <a name="learning-path-and-dynamics-365-for-customer-engagement-apps-security-roles"></a>Lernpfad- und Dynamics 365 for Customer Engagement-Apps-Sicherheitsrollen  
- [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] verwendet Sicherheitsrollen, um zu bestimmen, welcher Lernpfadinhalt angezeigt wird, wenn Benutzer die Hilfe-Taste wählen, zu einer Seite navigieren oder eine definierte Aktionen in [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] ausführen.  
+## <a name="learning-path-and-common-data-service-security-roles"></a>Lernpfad- und Common Data Service-Sicherheitsrollen 
+ 
+ Common Data Service verwendet Sicherheitsrollen, um zu bestimmen, welcher Lernpfadinhalt angezeigt wird, wenn Benutzer die Hilfe-Taste wählen, zu einer Seite navigieren oder eine definierte Aktionen in Common Data Service ausführen.  
 
- Die Rollen, die im Lernpfad verwendet werden, sind die selben Rollen, die in Ihrer [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]-Organisation für Sicherheit und Datenzugriff verwendet werden, aber Sie können für Lernpfadinhalte für eine oder alle [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]-Sicherheitsrollen erstellen.  In der Regel sollen die Sicherheitsrollen im Lernpfad-Designer vorhanden sein, um mit Ihren [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]-Instanzen übereinzustimmen. Sie können die Ansicht in der Benutzeroberfläche im Designer vereinfachen, indem Sie einige [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] Sicherheitsrollen im Designer ausblenden. Wenn Sie sich später entscheiden, dass Sie eine Sicherheitsrolle verwenden möchten, die Sie vom Lernpfad gelöscht haben, können Sie die gewünschten Rollen zwischen dem Lernpfad und [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] synchronisieren.  
+ Die Rollen, die im Lernpfad verwendet werden, sind die selben Rollen, die in Ihrer Common Data Service-Organisation für Sicherheit und Datenzugriff verwendet werden, aber Sie können für Lernpfadinhalte für eine oder alle Common Data Service-Sicherheitsrollen erstellen.  In der Regel sollen die Sicherheitsrollen im Lernpfad-Designer vorhanden sein, um mit Ihrer Common Data Service-Umgebung übereinzustimmen. Sie können die Ansicht in der Benutzeroberfläche im Designer vereinfachen, indem Sie einige Common Data Service Sicherheitsrollen im Designer ausblenden. Wenn Sie sich später entscheiden, dass Sie eine Sicherheitsrolle verwenden möchten, die Sie vom Lernpfad gelöscht haben, können Sie die gewünschten Rollen zwischen dem Lernpfad und Common Data Service synchronisieren.  
 
  Wenn Ihre Organisation mehrere Unternehmenseinheiten hat, können Sie Sicherheitsrollen für übergeordnete/untergeordnete Beziehungen haben. Nur die Sicherheitsrollen der Stammunternehmenseinheit werden synchronisiert.  
 
@@ -115,7 +124,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
  Jede Rolle, die in den Lernpfad integriert wird, hat einen numerischen Wert. Die erste Rolle in der Liste mit dem höchsten Vorrang und nachfolgende Rollen haben gegenüber niedrigeren Vorrang. Wenn einem Benutzer einer Rolle zugewiesen ist, mit der Lernpfadinhalt angezeigt wird, sieht der Benutzer diese Inhalte, wenn dem Benutzer die Rolle mit niedrigerer Rangfolge zugewiesen wird, die nicht den Inhalten zugeordnet ist. Angenommen einem Benutzer wird eine Rolle mit Rangfolge 1 und eine Rolle mit Rangfolge 20 zugewiesen, so sieht der Benutzer Lernpfadinhalte, die nur für die Rolle mit Rangfolge 1 definiert sind.  
 
- Wenn Sie unterschiedliche Inhalt für verschiedene Rollen auf derselben [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] Seite oder -Bildschirm erstellen, sehen Benutzer Inhalte, die Rollen mit höherer Rangfolge zugeordnet sind..  
+ Wenn Sie unterschiedliche Inhalte für verschiedene Rollen auf derselben Seite oder demselben Bildschirm für modellgesteuerte Apps erstellen, sehen Benutzer Inhalte, die Rollen mit höherer Rangfolge zugeordnet sind.  
 
 <a name="ManageRoles"></a>   
 ### <a name="manage-security-roles-and-precedence"></a>Verwalten von Rangfolge und Sicherheitsrollen  
@@ -124,13 +133,13 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 <a name="ConfigureRoles"></a>   
 #### <a name="configure-security-roles"></a>Sicherheitsrollen konfigurieren  
 
-1. Melden Sie sich bei [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] mit einem Konto an, das Lernpfad-Erstellungsberechtigungen hat.  
+1. Melden Sie sich bei PowerApps mit einem Konto an, das Lernpfad-Erstellungsberechtigungen hat.  
 
 2. Öffnen Sie die **Inhaltsbibliothek**.  
 
 3. Wählen Sie **Konfiguration** oben im Bildschirm aus.  
 
-4. Sie können die Sicherheitsrollen mit Ihren [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]-Sicherheitsrollen synchronisieren, wählen Sie **Synchronisierungsrollen**.  
+4. Sie können die Sicherheitsrollen mit Ihren Common Data Service-Sicherheitsrollen synchronisieren, wählen Sie **Synchronisierungsrollen**.  
 
 5. Um die Rangfolge für die Rollen festzulegen, die vom Lernpfad verwendet werden, nutzen Sie den Nach-Oben- oder Nach-Unten-Pfeil, um eine Rolle in der Liste nach oben oder nach unten zu verschieben.  
 
@@ -154,13 +163,13 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 1. Melden Sie sich bei [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] an.  
 
-2. Kopieren Sie den Servernamen für Ihre [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]-Organisation aus der URL, die in Ihrem Browser angezeigt wird, zum Beispiel *<https://contososales.crm.dynamics.com/>*.  
+2. Kopieren Sie den Servernamen für Ihre Common Data Service-Organisation aus der URL, die in Ihrem Browser angezeigt wird, zum Beispiel *<https://contososales.crm.dynamics.com/>*.  
 
     Stellen Sie sicher, dass den Schrägstrich (/) nach .com enthalten ist.  
 
 3. Ermitteln Sie den eindeutigen Namen für die Organisation (auch Instanz genannt), für die Sie Lernpfadsteuerelemente erstellen möchten. Um den eindeutigen Namen der Organisation zu erhalten, wählen Sie in der Siteübersicht **Einstellungen** > **Anpassungen** und dann auf der Seite **Anpassung** **Entwicklerressourcen**. Kopieren Sie den Wert für das Feld **Eindeutiger Name**, das im Abschnitt **Instanz-Verweis** angezeigt wird.  
 
-   ![Dynamics Organisations-Name, der im Informationsbereich für den Benutzer angezeigt wird](media/lp-org-name.png "Dynamics Organisations-Name, der im Informationsbereich für den Benutzer angezeigt wird")  
+   ![Dynamics-Org-Name, der im Benutzerinformationsbereich angezeigt wird](media/lp-org-name.png "Dynamics-Org-Name, der im Benutzerinformationsbereich angezeigt wird")  
 
 4. Fügen Sie Folgendes dem ersten Teil der URL für Ihre Organisation hinzu und ersetzen Sie \<org name> durch den eindeutigen Namen für Ihre Organisation, wie im vorherigen Schritt bestimmt:  
 
@@ -192,21 +201,21 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 -   Wählen Sie auf der Randleiste die Schaltfläche **Inhaltsbibliothek**.  
 
-     ![Symbol für die Inhaltsbibliothek in der Lernfpad-Randleiste](media/lp-sidebar-cl-icon.png "Symbol für die Inhaltsbibliothek in der Lernfpad-Randleiste")  
+     ![Das Inhaltsbibliothekssymbol auf einer Lernpfad-Randleiste](media/lp-sidebar-cl-icon.png "Das Inhaltsbibliothekssymbol wird auf einer Lernpfad-Randleiste angezeigt")  
 
 -   Wählen Sie die Kachel **Schulung** der Siteübersicht und dann **Inhaltsbibliothek**.  
 
-     ![Inhaltsbibliotheksymbol auf Dynamics 365 for Customer Engagement-Sitemap](media/lp-sitemap-content-library.png "Inhaltsbibliotheksymbol auf Dynamics 365 for Customer Engagement-Apps-Sitemap")  
+     ![Inhaltsbibliothekssymbol auf der modellgesteuerten App-Siteübersicht](media/lp-sitemap-content-library.png "Inhaltsbibliothekssymbol auf der modellgesteuerten App-Siteübersicht")  
 
 **Wenn Sie die Inhaltsbibliothek im mobilen App-Schnittstellensimulator öffnen:**  
 
 1.  Wählen Sie die Auslassungspunkteschaltfläche (...) innerhalb eines Kreises in der rechten unterer Ecke des Bildschirms.  
 
-    ![Auslassungspunkteschaltfläche für die Anzeige von Lernpfadsymbolen](media/lp-cl-ellipses.png "Auslassungspunkteschaltfläche für die Anzeige von Lernpfadsymbolen")  
+    ![Auslassungspunkteschaltfläche, um Lernpfadsymbole anzuzeigen](media/lp-cl-ellipses.png "Auslassungssymbolschaltfläche, um Lernpfadsymbole anzuzeigen")  
 
 2.  Wählen Sie **Lernpfad-Inhaltsbibliothek** aus.  
 
-    ![Auf der Benutzeroberfläche der mobilen App angezeigte Lernpfadschaltflächen](media/lp-mobile-lp-button.png "Auf der Benutzeroberfläche der mobilen App angezeigte Lernpfadschaltflächen")  
+    ![Lernpfadschaltflächen, die in der mobilen App-Schnittstelle angezeigt wird](media/lp-mobile-lp-button.png "Lernpfadschaltflächen, die in der mobilen App-Schnittstelle angezeigt wird")  
 
 
 
@@ -217,7 +226,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 |Spalte|Beschreibung|  
 |------------|-----------------|  
-|**Name**|Der Name, den Sie benutzten, wenn Sie die Aufgabenhilfe oder die Randleiste erstellt haben. Ein rotes Sperrsymbol neben den Namen gibt an, dass der Inhalt gerade ausgecheckt wird. Sie können den Mauszeiger über das Symbol bewegen, um anzuzeigen, für welchen Benutzer der Inhalt ausgecheckt ist.<br /><br /> ![Ein rotes Sperrsymbol zeigt an, dass der Inhalt ausgecheckt ist.](media/lp-cl-checked-out.png "Ein rotes Sperrsymbol zeigt an, dass der Inhalt ausgecheckt ist.")<br /><br /> Ein rotes Sternchen neben dem Namen zeigt an, dass neu eingecheckter Inhalt vorhanden ist.<br /><br /> ![Ein roter Stern kennzeichnet neu eingecheckten Inhalt](media/lp-cl-new-check-in.png "Ein roter Stern kennzeichnet neu eingecheckten Inhalt")|  
+|**Name**|Der Name, den Sie benutzten, wenn Sie die Aufgabenhilfe oder die Randleiste erstellt haben. Ein rotes Sperrsymbol neben den Namen gibt an, dass der Inhalt gerade ausgecheckt wird. Sie können den Mauszeiger über das Symbol bewegen, um anzuzeigen, für welchen Benutzer der Inhalt ausgecheckt ist.<br /><br /> ![Rotes Schlosssymbol zeigt an, dass der Inhalt ausgecheckt ist.](media/lp-cl-checked-out.png "RRotes Schlosssymbol zeigt an, dass der Inhalt ausgecheckt ist.)<br /><br /> Ein rotes Sternchen neben dem Namen zeigt an, dass neu eingecheckter Inhalt vorhanden ist.<br /><br /> ![Rotes Sternchen zeigt neu überprüftem Inhalt an](media/lp-cl-new-check-in.png "RRotes Sternchen zeigt neu überprüftem Inhalt an)|  
 |**Titel**|Der Titel, den Sie angegeben haben, als Sie Inhalt der Aufgabenhilfe oder Randleiste hinzugefügt haben. Titel für Randleisten und angeleitete Aufgaben werden angezeigt, wenn diese als Links hinzugefügt werden oder wenn sie für Suchergebnisse zurückgegeben werden.|  
 |**Typ**|Ein Symbol, das den Typ des Inhalts angibt: Randleiste oder Aufgabenhilfe|  
 |**Formularfaktor**|Symbole, die für den Formfaktor stehen, der für diesen Inhalt bei der Erstellung ausgewählt wurden, entweder **Desktop** oder **Tablet**.<br /><br /> Die Spalte **Formularfaktor** wird nicht angezeigt, wenn Sie die die Inhaltsbibliothek mit dem mobilen App-Schnittstellensimulator oder den interaktiven Servicehub verwenden.|  
@@ -264,7 +273,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 3. In der Inhaltsbibliothek wählen Sie **Aufgabenhilfe**.  
 
-    ![Link zur Erstellung einer neuen Aufgabenhilfe in der Lernpfad-Inhaltsbibliothek](media/lp-content-library-gt.png "Link zur Erstellung einer neuen Aufgabenhilfe in der Lernpfad-Inhaltsbibliothek")  
+    ![Verknüpfung zur Erstellen einer neuen Aufgabenhilfe in der Lernpfad-Inhaltsbibliothek](media/lp-content-library-gt.png "Verknüpfung zur Erstellen einer neuen Aufgabenhilfe in der Lernpfad-Inhaltsbibliothek")  
 
 4. Geben Sie einen Namen ein und wählen Sie die anderen für die Einstellungen für die Aufgabenhilfe. Verwenden Sie diese Tabelle als Referenz.  
 
@@ -278,7 +287,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
    |          **Formfaktor**           |                                                                                                                                                                       Der angezeigte Formfaktor hängt davon ab, auf welcher Benutzeroberfläche Sie Inhalt erstellen. Wenn Sie die Webclientschnittstelle verwenden, werden **Desktop** und **Tablet** angezeigt. Falls für den Webclient ausgewählt wird, bezieht sich **Tablet** auf den Browser auf dem Tabletgerät und nicht auf die mobile App.<br /><br /> Wenn Sie Steuerelemente für die mobile App-Shnittstelle erstellen, wird **Tablet** angezeigt. Hier finden die Geräte, auf den die [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] mobile App ausgeführt wird, aber nur auf Tablets unterstützt wird.<br /><br /> Wenn Sie den interaktiven Servicehub nicht verwenden, wird **Desktop** angezeigt. **Wichtig:** Lernpfad wird in [!INCLUDE[pn_crm_shortest](../../includes/pn-dyn-365-phones.md)] nicht unterstützt.                                                                                                                                                                        |
    |     **Aufgabenhilfe wird geöffnet, wenn**     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Wählen Sie aus, ob die Aufgabenhilfe angezeigt werden soll, wenn die **Seite lädt** oder wenn ein Benutzer einen **Link anklickt** auf einer Randleiste.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
    |        **Lebenszyklusphase**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Dieses Einstellung dient nur zur internen Verwendung.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-   |   **Dynamics 365 for Customer Engagement-Apps-Sicherheitsrolle**   |                                                                                                                                                                                                                                                                                                                                                                                                  Wählen Sie die Sicherheitsrolle aus, für die Sie die Aufgabehilfe anzeigen möchten. Sie können beliebig viele Rollen auswählen. Wenn einem Benutzer mehrere Rollen zugewiesen werden, erscheinen die Aufgabenhilfen nur für die Rolle in der obersten Rangfolge, wie weiter oben in diesem Thema beschrieben.                                                                                                                                                                                                                                                                                                                                                                                                   |
+   |   **Common Data Service-Sicherheitsrolle**   |                                                                                                                                                                                                                                                                                                                                                                                                  Wählen Sie die Sicherheitsrolle aus, für die Sie die Aufgabehilfe anzeigen möchten. Sie können beliebig viele Rollen auswählen. Wenn einem Benutzer mehrere Rollen zugewiesen werden, erscheinen die Aufgabenhilfen nur für die Rolle in der obersten Rangfolge, wie weiter oben in diesem Thema beschrieben.                                                                                                                                                                                                                                                                                                                                                                                                   |
    |             **Status**             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zeigt den Status der Aufgabenhilfe an. Der Status ist **Entwurf** bis Sie ihn veröffentlichen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    |        **Erweiterte Optionen**        | Diese Option ist verfügbar, nachdem Sie die Aufgabenhilfe gespeichert haben. Die folgenden Einstellungen sind unter **Erweiterte Optionen** verfügbar:<ul><li>**Diese Fehleraufgabenhilfe machen**: Wählen Sie dieses Kontrollkästchen, wenn Sie diese Aufgabenhilfe nur anzeigen möchten, wenn ein Fehler mit anderen Aufgabenhilfen besteht.</li><li>**Unterstützte Sprachen**: Wählen Sie die Sprache für diese Aufgabehilfe und für den Import und Export.</li><li>**Autor**: Ändern des Autors, der für diese Aufgabenhilfe definiert wurde.</li><li>**Tags**: Hinzufügen oder Entfernen der Tags für diese Aufgabenhilfe. Tags verwenden, um Inhalt in der Inhaltsbibliothek zu finden oder um den Inhalt zu kategorisieren.</li></ul><br />Sie können auch die folgenden Einstellungen unter **Informationen veröffentlichen** festlegen:<ul><li>**App-Version**: Festlegen der [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]-Version, die dem Inhalt zugeordnet wurde.</li><li>**Version**: Die Version des Inhalts festlegen, den Sie erstellen.</li><li>**Erstellen der Gruppe**: Legen Sie die Erstellungs-Gruppe für den Inhalt fest, den Sie erstellen.</li><li>**Veröffentlichungs-Gruppen**: Wählen Sie die Veröffentlichungsgruppe(n) zum Inhalt aus.</li></ul> |
 
@@ -308,11 +317,11 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
    > [!NOTE]
    >  Sie können den Schritt bis zu 15 Sekunden halten. Wenn Sie ihn nicht innerhalb von 15 Sekunden anheften, bleibt die Kachel ungelöst und der Mauszeiger ist wieder normal.  
 
-   ![Aufgabenhilfe-Fluss-Editor](media/lp-gt-flow-editor.png "Aufgabenhilfe-Fluss-Editor")  
+   ![Aufgabenhilfefluss-Editor](media/lp-gt-flow-editor.png "Aufgabenhilfefluss-Editor")  
 
 5. Wenn Sie den Schritt am gewünschten Ort positioniert haben, lassen Sie die Maustaste los, um ihn am Steuerelement anzuheften. Die Schritt erscheint am gewünschten Ort. Um den Schritt zu verschieben, können Sie die Schaltfläche **Mich ziehen** im Bereich neben dem Schritt verwenden.  
 
-   !["Mich ziehen"-Symbol in einer Aufgabenhilfeblase](media/lp-gt-bubble-drag-me.png "\"Mich ziehen\"-Symbol in einer Aufgabenhilfeblase")  
+   ![Symbol "Ziehen" in eine neue Aufgabenhilfeblase ziehen](media/lp-gt-bubble-drag-me.png "Symbol "Ziehen" in eine neue Aufgabenhilfeblase ziehen")  
 
 6. Fügen Sie dem Schritt mithilfe der daneben angezeigten Steuerelementen Inhalte hinzu. Die folgenden Einstellungen stehen zur Verfügung:  
 
@@ -327,7 +336,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
    > [!NOTE]
    >  Sie können den Schritt später jederzeit bearbeiten, sodass Sie sich keine Sorgen machen müssen, dass Sie vor dem Schließen nicht alles integriert haben.  
 
-8. Um den nächsten Schritt in der Aufgabenhilfe hinzuzufügen oder zu bearbeiten, wählen Sie den Pfeil nach rechts ![Pfeilsymbol zur Rückkehr zum Fluss-Editor](media/lp-chevron.png "Pfeilsymbol zur Rückkehr zum Fluss-Editor") in der linken oberen Ecke der Seite, um den Fluss-Editor anzuzeigen.  
+8. Um den nächsten Schritt in der Aufgabenhilfe hinzuzufügen oder zu bearbeiten, wählen Sie den Pfeil nach rechts ![Pfeilsymbol zur Rückkehr zum Flow-Editor](media/lp-chevron.png "Chevronsymbol, um zu Flusseditor zurückzukehren") in der linken oberen Ecke der Seite, um den Flow-Editor anzuzeigen.  
 
 9. Fügen Sie weitere Schritte hinzu, die Sie in der Aufgabenhilfe einschließen möchten und stellen Sie sicher, dass Sie jeden Schritt speichern, wenn Sie den Inhalt hinzugefügt haben.  
 
@@ -360,7 +369,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 3. In der Inhaltsbibliothek wählen Sie **Randleiste**.  
 
-   ![Link zur Erstellung einer neuen Randleiste in der Lernpfad-Inhaltsbibliothek](media/lp-content-library-sb.png "Link zur Erstellung einer neuen Randleiste in der Lernpfad-Inhaltsbibliothek")  
+   ![Verknüpfung zum Erstellen einer neuen Randleiste in der Lernpfad-Inhaltsbibliothek](media/lp-content-library-sb.png "Verknüpfung zum Erstellen einer neuen Randleiste in der Lernpfad-Inhaltsbibliothek")  
 
 4. Geben Sie einen Namen ein und wählen Sie die anderen Einstellungen für die Randleiste. Verwenden Sie diese Tabelle als Referenz.  
 
@@ -375,7 +384,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
    |         **Formfaktor**         |                                                  Der angezeigte Formfaktor hängt davon ab, auf welcher Benutzeroberfläche Sie Inhalt erstellen. Wenn Sie die Webclientschnittstelle verwenden, werden **Desktop** und **Tablet** angezeigt. Falls für den Webclient ausgewählt wird, bezieht sich **Tablet** auf den Browser auf dem Tabletgerät und nicht auf die mobile App.<br /><br /> Wenn Sie Steuerelemente für die mobile App-Shnittstelle erstellen, wird **Tablet** angezeigt. Hier finden die Geräte, auf den die [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] mobile App ausgeführt wird, aber nur auf Tablets unterstützt wird.<br /><br /> Wenn Sie den interaktiven Servicehub nicht verwenden, wird **Desktop** angezeigt.                                                  |
    |     **Randleiste wird geöffnet, wenn**      |                                                                                                                                                                                                                                                                                               Wählen Sie aus, ob die Randleiste angezeigt werden soll, wenn die Seite geladen wird, oder wenn ein Benutzer einen Link oder eine Schaltfläche auf der Seite auswählt.                                                                                                                                                                                                                                                                                               |
    |       **Lebenszyklusphase**       |                                                                                                                                                                                                                                                                                                                                              Dies ist nur zur internen Verwendung.                                                                                                                                                                                                                                                                                                                                               |
-   | **Dynamics 365 for Customer Engagement-Apps-Sicherheitsrolle** |                                                                                                                                                                                                                  Wählen Sie die Rolle oder Rollen aus, für die Sie die Randleiste für Benutzer anzeigen möchten. Sie können beliebig viele Rollen auswählen. Wenn einem Benutzer mehrere Rollen zugewiesen werden, erscheint die Randleiste nur für die Rolle in der obersten Rangfolge, wie weiter oben in diesem Thema beschrieben.                                                                                                                                                                                                                   |
+   | **Common Data Service-Sicherheitsrolle** |                                                                                                                                                                                                                  Wählen Sie die Rolle oder Rollen aus, für die Sie die Randleiste für Benutzer anzeigen möchten. Sie können beliebig viele Rollen auswählen. Wenn einem Benutzer mehrere Rollen zugewiesen werden, erscheint die Randleiste nur für die Rolle in der obersten Rangfolge, wie weiter oben in diesem Thema beschrieben.                                                                                                                                                                                                                   |
    |          **Vorlage**           |                                                                                                                                                                                                                                                                                       Wählen Sie die Vorlage aus, die Sie für die neue Randleiste verwenden möchten, entweder **Eine Spalte** oder **Zwei Spalten**. Die Standardvorlage ist eine einspaltige Randleiste.                                                                                                                                                                                                                                                                                        |
    |           **Status**            |                                                                                                                                                                                                                                                                                                              Zeigt den Status der Randleiste an. Der Status ist **Entwurf** bis Sie die Randleiste veröffentlichen.                                                                                                                                                                                                                                                                                                              |
    |      **Erweiterte Optionen**       |                                                                         Diese Option ist nicht verfügbar, bis Sie die Randleiste speichern. Die folgenden Einstellungen sind unter **Erweiterte Optionen** verfügbar:<ul><li>**Randleistenkopfzeile deaktivieren**</li><li>**Randleistentitel deaktivieren**</li><li>**Randleistenfußzeile deaktivieren**</li><li>**Autor**: Ändern des Autors, der für diese Randleiste definiert wurde.</li><li>**Tags**: Hinzufügen oder Entfernen der Tags für diese Randleiste. Tags verwenden, um Inhalt in der Inhaltsbibliothek leichter zu finden oder um den Inhalt zu kategorisieren.</li><li>**Unterstützte Sprachen**: Wählen Sie die Sprache für diese Randleiste und für den Import und Export.</li></ul>                                                                         |
@@ -406,11 +415,11 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 1. Im Abschnitt, in dem Sie Links hinzufügen möchten, wählen Sie das Symbol **Liste von Links**.  
 
-   ![Liste der Link-Symbole, die auf einer Lernpfad-Randleiste ausgewählt sind](media/lp-sidebar-links.png "Liste der Link-Symbole, die auf einer Lernpfad-Randleiste ausgewählt sind")  
+   ![Liste der Link-Symbole, die auf einer Lernpfad-Randleiste angezeigt werden](media/lp-sidebar-links.png "Liste der Link-Symbole, die auf einer Lernpfad-Randleiste angezeigt werden")  
 
 2. Fügen Sie einen Abschnittstitel hinzu und wählen Sie dann **+ Link hinzufügen**.  
 
-   ![Markiertes Kästchen "Link hinzufügen" in einem Abschnitt einer Lernpfad-Randleiste](media/lp-sidebar-addlink.png "Markiertes Kästchen \"Link hinzufügen\" in einem Abschnitt einer Lernpfad-Randleiste")  
+   ![Fügen Sie das hervorgehobene Kästchen "Links" in einem Abschnitt einer Lernpfad-Randleiste hinzu](media/lp-sidebar-addlink.png "Fügen Sie das hervorgehobene Kästchen "Links" in einem Abschnitt einer Lernpfad-Randleiste hinzu")  
 
 3. Wählen Sie den Link-Typ aus, den Sie hinzufügen möchten und wählen Sie **Weiter**. Sie können aus den folgenden Optionen auswählen:  
 
@@ -502,7 +511,7 @@ Weitere Informationen zum Verwenden von YouTube: [YouTube-Hilfecenter](https://g
 
 <a name="Localize"></a>   
 ## <a name="localize-learning-path-controls"></a>Lernpfadsteuerelemente lokalisieren  
- Sie können den Inhalt in den Steuerelemente im Lernpfad lokalisieren, um sie den Benutzern in ihrer ausgewählten Sprache für [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] anzuzeigen. Zur Lokalisierung der Steuerelemente können Sie sie einfach nach Zeichenfolgen suchen, die den Benutzern angezeigt werden, und dann importieren die das Steuerelement der lokalisierten Inhalte enthält. Sie können das Steuerelement in dieselbe Organisation importieren oder in eine andere Organisation. Sie können dasselbe Steuerelement in mehrere Sprachen lokalisieren und die einzelnen Sprachen in spezifische Organisationen importieren, die Benutzer mit der ausgewählten Sprache unterstützen. Der Lokalisierungssupport im Lernpfad folgen dem OASIS XML Localisation Interchange File Format TC-Standard (XLIFF) 2.0. Es gibt kostenlose Tools und Lernprogramme für das Arbeiten mit diesem Format. Weitere Informationen: [XLIFF-Version 2.0](http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html).  
+ Sie können den Inhalt in den Steuerelemente im Lernpfad lokalisieren, um sie den Benutzern in ihrer ausgewählten Sprache für [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] anzuzeigen. Zur Lokalisierung der Steuerelemente können Sie sie einfach nach Zeichenfolgen suchen, die den Benutzern angezeigt werden, und dann importieren die das Steuerelement der lokalisierten Inhalte enthält. Sie können das Steuerelement in dieselbe Organisation importieren oder in eine andere Organisation. Sie können dasselbe Steuerelement in mehrere Sprachen lokalisieren und die einzelnen Sprachen in spezifische Organisationen importieren, die Benutzer mit der ausgewählten Sprache unterstützen. Der Lokalisierungssupport im Lernpfad folgen dem OASIS XML Localisation Interchange File Format TC-Standard (XLIFF) 2.0. Es gibt kostenlose Tools und Lernprogramme für das Arbeiten mit diesem Format. Weitere Informationen: [XLIFF-Version 2.0](https://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html).  
 
  Weitere Informationen zur Benutzerspracheinstellungen in [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]: [Persönliche Optionen hinzufügen](/dynamics365/customer-engagement/basics/set-personal-options).  
 
@@ -510,7 +519,7 @@ Weitere Informationen zum Verwenden von YouTube: [YouTube-Hilfecenter](https://g
 
 2.  Wählen Sie **Lokalisieren** und dann **Exportieren** aus.  
 
-    ![Export-Schaltfläche im Lernpfad-Lokalisierungsmenü](media/lp-localize-export.png "Export-Schaltfläche im Lernpfad-Lokalisierungsmenü")  
+    ![Schaltfläche "Exportieren" im Lernpfad-Lokalisierungsmenü](media/lp-localize-export.png "Schaltfläche "Exportieren" im Lernpfad-Lokalisierungsmenü")  
 
 3.  Wählen Sie die Option, die Sie zum Speichern der generierten ZIP-Datei verwenden möchten, und wählen Sie dann einen Namen und einen Speicherort aus.  
 

@@ -1,23 +1,29 @@
 ---
-title: 'Verwenden von Upsert, um einen Datensatz einzufügen oder zu aktualisieren (Common Data Service) | Microsoft Docs'
-description: 'Die UpsertRequest(Update oder Insert)-Meldung hilft Ihnen, verschiedene Datenintegrationsszenarien zu vereinfachen, in denen Sie nicht wissen, ob ein Datensatz bereits in Dynamics 365 existiert. In solchen Fällen wissen Sie nicht, ob Sie einen UpdateRequest- oder CreateRequest-Vorgang aufrufen müssen. Dies führt dazu, dass bei der Abfrage des Datensatzes zuerst bestimmt werden muss, ob er vorhanden ist, bevor der entsprechende Vorgang ausgeführt wird. Die UpsertRequest-Meldung hilft Ihnen, dieses zu Problem beheben'
+title: Einen Datensatz mit Upsert einfügen oder aktualisieren (Common Data Service) | Microsoft-Dokumentation
+description: Die UpsertRequest(Update oder Insert)-Meldung hilft Ihnen, verschiedene Datenintegrationsszenarien zu vereinfachen, in denen Sie nicht wissen, ob ein Datensatz bereits in Dynamics 365 existiert. In solchen Fällen wissen Sie nicht, ob Sie einen UpdateRequest- oder CreateRequest-Vorgang aufrufen müssen. Dies führt dazu, dass bei der Abfrage des Datensatzes zuerst bestimmt werden muss, ob er vorhanden ist, bevor der entsprechende Vorgang ausgeführt wird. Die UpsertRequest-Meldung hilft Ihnen, dieses zu Problem beheben
 ms.custom: ''
 ms.date: 02/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 67b8793ae57633d6e5ffa15b1aa68f4104829c67
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753710"
 ---
 # <a name="use-upsert-to-insert-or-update-a-record"></a>Einen Datensatz mit Upsert einfügen oder aktualisieren
 
-Sie können die Komplexität verringern, die in Datenintegrationsszenarien involviert ist, indem Sie die Nachricht <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> verwenden. Wenn Sie Daten in Common Data Service von einem externen System laden, beispielsweise in einem Massendaten-Integrationsszenario, wissen Sie möglicherweise nicht, ob ein Datensatz bereits in Common Data Service vorhanden ist. In solchen Fällen wissen Sie nicht, ob Sie einen <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest>- oder <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest>-Vorgang aufrufen müssen. Dies führt dazu, dass bei der Abfrage des Datensatzes zuerst bestimmt werden muss, ob er vorhanden ist, bevor der entsprechende Vorgang ausgeführt wird. Sie können jetzt diese Komplexität verringern und Daten effizienter in Common Data Service zu laden, indem die neue <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> (Aktualisieren oder Einfügen)-Message verwendet wird.  
+Sie können die Komplexität verringern, die in Datenintegrationsszenarien involviert ist, indem Sie die Nachricht <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> verwenden. Wenn Sie Daten in Common Data Service von einem externen System laden, beispielsweise in einem Massendaten-Integrationsszenario, wissen Sie möglicherweise nicht, ob ein Datensatz bereits in Common Data Service vorhanden ist. In solchen Fällen wissen Sie nicht, ob Sie einen <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest>- oder <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest>-Vorgang aufrufen müssen. Dies führt dazu, dass bei der Abfrage des Datensatzes zuerst bestimmt werden muss, ob er vorhanden ist, bevor der entsprechende Vorgang ausgeführt wird. Sie können diese Komplexität verringern und Daten effizienter in Common Data Service laden, indem die neue <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> (Aktualisieren oder Einfügen)-Nachricht verwendet wird.  
   
 <a name="BKMK_UsingUpsert"></a>   
 ## <a name="using-upsert"></a>Verwenden von Upsert  
@@ -67,7 +73,7 @@ Sie können die Komplexität verringern, die in Datenintegrationsszenarien invol
   
 <a name="BKMK_SampleCode"></a>   
 ## <a name="sample-code"></a>Beispielcode  
- Die Datei [ProductUpsertSample.cs](https://code.msdn.microsoft.com/Insert-or-update-a-record-aa160870/sourcecode?fileId=136218&pathId=1243320355) des Beispiels [Einen Datensatz mit Upsert einfügen oder aktualisieren](http://go.microsoft.com/fwlink/p/?LinkId=532924) enthält die folgende `ProcessUpsert`-Methode, um die `UpsertRequest`-Meldung auf den Inhalt einer XML-Datei anzuwenden, um neue Datensätze zu erstellen oder vorhandene zu aktualisieren.  
+ Die Datei [ProductUpsertSample.cs](https://code.msdn.microsoft.com/Insert-or-update-a-record-aa160870/sourcecode?fileId=136218&pathId=1243320355) des Beispiels [Einen Datensatz mit Upsert einfügen oder aktualisieren](https://go.microsoft.com/fwlink/p/?LinkId=532924) enthält die folgende `ProcessUpsert`-Methode, um die `UpsertRequest`-Meldung auf den Inhalt einer XML-Datei anzuwenden, um neue Datensätze zu erstellen oder vorhandene zu aktualisieren.  
   
 ```csharp
 public void ProcessUpsert(String Filename)

@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Aktualisieren Sie Entitätsdefinitionen mithilfe von Web-API (Common Data Service) | Microsoft Docs
+title: Erstellen und Aktualisieren von Entitätsdefinitionen mit der Web-API (Common Data Service) | Microsoft-Dokumentation
 description: Informationen zum Erstellen und Aktualisieren von Entitätsdefinitionen mit Internet-API.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 1f430d2d-e829-4ffa-922e-dfcfb7c9e86e
 caps.latest.revision: 24
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4718f47247907c7c3af6f826829a985b56a5ff08
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748361"
 ---
 # <a name="create-and-update-entity-definitions-using-the-web-api"></a>Erstellen und Aktualisieren von Entitätsdefinitionen mit der Web-API
 
@@ -792,7 +798,7 @@ Wie in [Aktualisieren von Entitäten](create-update-entity-definitions-using-web
   
 ### <a name="see-also"></a>Siehe auch
 
-[Nutzen der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
+[Verwenden der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
 [Metadatenabfrage mit Web-API](query-metadata-web-api.md)<br />
 [Abrufen von Metadaten über den Namen oder die MetadataId](retrieve-metadata-name-metadataid.md)<br />
 [Entitätsbeziehungen modellieren mit Web-API](create-update-entity-relationships-using-web-api.md)<br />

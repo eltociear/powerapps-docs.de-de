@@ -1,6 +1,6 @@
 ---
 title: Erstellen von automatischen Nummerierungsattributen (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie über das Erstellen des automatischen Nummerierungsattributs in derselben Weise, wie Sie ein Zeichenfolgenattribut mithilfe der StringAttributeMetadata-Klasse erstellen, außer Verwendung der neuen AutoNumberFormat-Eigenschaft. Verwenden Sie die AutoNumberFormat-Eigenschaft, um ein Muster zu definieren, das Sequenznummern und zufällige Zeichenfolgen beim Zusammenstellen der Platzhalter enthält und die Länge und den Typ der generierten Werte bestimmt.'
+description: Erfahren Sie über das Erstellen des automatischen Nummerierungsattributs in derselben Weise, wie Sie ein Zeichenfolgenattribut mithilfe der StringAttributeMetadata-Klasse erstellen, außer Verwendung der neuen AutoNumberFormat-Eigenschaft. Verwenden Sie die AutoNumberFormat-Eigenschaft, um ein Muster zu definieren, das Sequenznummern und zufällige Zeichenfolgen beim Zusammenstellen der Platzhalter enthält und die Länge und den Typ der generierten Werte bestimmt.
 keywords: Automatische Nummerierungsattribute
 ms.custom: ''
 ms.date: 07/24/2019
@@ -11,10 +11,16 @@ author: nhelgren
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 676c70f9287202f537827a5950ab84049ab81a34
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753018"
 ---
 # <a name="create-auto-number-attributes"></a>Automatische Nummerierungsattribute erstellen
 
@@ -118,6 +124,8 @@ HTTP/1.1 204 No Content
 OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.0/EntityDefinitions(402fa40f-287c-e511-80d2-00155d2a68d2)/Attributes(f01bef16-287c-e511-80d2-00155d2a68d2)
 ```
+> [!NOTE]
+>Werte der automatischen Nummerierung werden von der Datenbank beim Starten des Datensatzes vorab ausgewählt. Wenn ein Datensatz gestartet, dann aber storniert wird, wird die zugewiesene Zahl nicht verwendet. Wenn während dieser Zeit ein weiterer Datensatz mit der folgenden sequenziellen Zahl fertiggestellt wird, können Lücken in der automatischen Nummerierung von Datensätzen auftreten.
 
 ## <a name="autonumberformat-options"></a>AutoNumberFormat-Optionen
 
@@ -264,7 +272,7 @@ OData-Version: 4.0
 ### <a name="auto-number-manager"></a>Automatische Nummerierungmanager erstellen
 
 **[Automatischer Nummerierungsmanager](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** für XrmToolBox ist ein Community-basiertes Tool für Common Data Service, das eine Benutzeroberfläche zum Einstellen, Aktualisieren und Entfernen des automatischen Nummerierungsformats für neue oder bestehende Attribute bereitstellt.
-Weitere Informationen finden Sie im [Entwicklertools](developer-tools.md) Thema für Community entwickelte Tools und [anm.xrmtoolbox.com](http://anm.xrmtoolbox.com) weitere Informationen zum automatischen Zahlen-Manager.
+Weitere Informationen finden Sie im [Entwicklertools](developer-tools.md) Thema für Community entwickelte Tools und [anm.xrmtoolbox.com](https://anm.xrmtoolbox.com) weitere Informationen zum automatischen Zahlen-Manager.
 
 > [!NOTE]
 > Die Communitytools sind kein Produkt von Common Data Service. Es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com). 

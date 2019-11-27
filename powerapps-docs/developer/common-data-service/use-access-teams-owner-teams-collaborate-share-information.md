@@ -1,6 +1,6 @@
 ---
-title: 'Verwenden von Zugriffsteams und Besitzerteams, um zusammenzuarbeiten und Informationen zu teilen (Common Data Service) | Microsoft Docs'
-description: 'Lernen Sie mehr über das Verwenden von Zugriffsteams und Besitzersteams, um zusammenzuarbeiten und Informationen zu teilen.'
+title: Verwenden von Zugriffsteams und Besitzerteams, um zusammenzuarbeiten und Informationen zu teilen (Common Data Service) | Microsoft-Dokumentation
+description: Lernen Sie mehr über das Verwenden von Zugriffsteams und Besitzersteams, um zusammenzuarbeiten und Informationen zu teilen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1454c5db803851d5d691db05e57af0beeb90a2b3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753778"
 ---
 # <a name="use-access-teams-and-owner-teams-to-collaborate-and-share-information"></a>Verwenden von Zugriffsteams und Besitzersteams, um zusammenzuarbeiten und Informationen zu teilen
 
-Mit *Besitzerteams* oder *Zugriffsteams* können Sie Geschäftsobjekte leicht freigeben und über Unternehmenseinheiten hinweg mit Benutzern in Common Data Service zusammenarbeiten. Ein Team gehört zu einer Unternehmenseinheit, aber es kann Benutzer von anderen Unternehmenseinheiten enthalten. Ein Benutzer kann mehr als einem Team zugewiesen werden.  
+Mit *Besitzersteams* oder *Zugriffsteams* können Sie Geschäftsobjekte leicht freigeben und über Unternehmenseinheiten hinweg mit Benutzern in Common Data Service zusammenarbeiten. Ein Team gehört zu einer Unternehmenseinheit, aber es kann Benutzer von anderen Unternehmenseinheiten enthalten. Ein Benutzer kann mehr als einem Team zugewiesen werden.  
   
  Ein Besitzerteam besitzt Datensätze und ihm sind Sicherheitsrollen zugewiesen. Die Berechtigungen eines Teams werden durch diese Sicherheitsrollen definiert. Zusätzlich zu den Berechtigungen, die das Team bereitgestellt werden, verfügen Teammitglieder über die Berechtigungen, die durch die ihre individuellen Sicherheitsrollen und durch die Rollen aus den anderen Teams, in denen sie Mitglieder sind, bestimmt werden. Ein Team verfügt über vollständige Zugriffsrechte auf die Datensätze, die das Team besitzt.  
   
@@ -36,7 +42,7 @@ Mit *Besitzerteams* oder *Zugriffsteams* können Sie Geschäftsobjekte leicht fr
   
 - Das Besitzen von Datensätzen durch andere Entitäten als Benutzer wird durch die Richtlinien Ihres Unternehmens erfordert.  
   
-- Die Anzahl der Teams ist nicht bekannt, wenn Ihr Common Data Service-System eingerichtet wird.  
+- Die Anzahl der Teams ist bekannt, wenn Ihr Common Data Service-System eingerichtet wird.  
   
 - Tägliche Berichte zum Fortschritt der Besitzerteams sind erforderlich.  
   
@@ -114,8 +120,8 @@ Mit *Besitzerteams* oder *Zugriffsteams* können Sie Geschäftsobjekte leicht fr
 ### <a name="see-also"></a>Siehe auch  
  [Beispiel: Freigeben eines Datensatzes mithilfe eines Zugriffsteams](org-service/samples/share-record-using-access-team.md)   
  [Verwalten von Teams](https://technet.microsoft.com/library/dn531089.aspx)   
- [Whitepaper: Zugriffsteams in Microsoft Dynamics CRM 2013](http://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
- [Whitepaper: Skalierbare Sicherheits-Modellierung mit Microsoft Dynamics CRM](http://go.microsoft.com/fwlink/p/?LinkID=328757)   
+ [Whitepaper: Zugriffsteams in Microsoft Dynamics CRM 2013](https://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
+ [Whitepaper: Skalierbare Sicherheits-Modellierung mit Microsoft Dynamics CRM](https://go.microsoft.com/fwlink/p/?LinkID=328757)   
  [Benutzer- und Teamentitäten](user-team-entities.md)   
  [Teamentität](reference/entities/team.md)   
  [TeamTemplate-Entität](reference/entities/teamtemplate.md)   

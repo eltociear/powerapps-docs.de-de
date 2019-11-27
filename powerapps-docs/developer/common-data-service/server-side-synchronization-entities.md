@@ -1,6 +1,6 @@
 ---
-title: Serverseitige Synchronisationsentitäten (Common Data Service) | Microsoft Docs
-description: Die serverseitige Synchronisation bietet eine Schnittstelle zwischen dem Common Data Service und einem oder mehreren Exchange-Servern oder POP3-Servern für eingehende E-Mails und einem oder mehreren SMTP- oder Exchange-Servern für ausgehende E-Mails.
+title: Serverseitige Synchronisationsentitäten (Common Data Service) | Microsoft-Dokumentation
+description: Serverseitige Synchronisierung bietet eine Schnittstelle zwischen Common Data Service und mindestens einem Exchange-Server oder POP3-Server für eingehende E-Mails und mindestens einem SMTP- oder Exchange-Server für ausgehende E-Mails.
 ms.custom: ''
 ms.date: 02/21/2019
 ms.reviewer: kvivek
@@ -10,16 +10,22 @@ author: mayadumesh
 ms.author: mayadu
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4117b79af2015c7f6f48eabfd88ae3bb62ab8089
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748643"
 ---
 # <a name="server-side-synchronization-entities"></a>Serverseitige Synchronisierungsentitäten
 
-In PowerApps bietet die serverseitige Synchronisation eine Schnittstelle zwischen dem Common Data Service und einem oder mehreren Exchange-Servern oder POP3-Servern für eingehende E-Mails und einem oder mehreren SMTP- oder Exchange-Servern für ausgehende E-Mails. Es ruft E-Mails ab und wertet sie nach Relevanz für den Common Data Service aus und erstellt entsprechend entsprechende E-Mail-Aktivitäten im Common Data Service. Außerdem werden E-Mails vom Common Data Service ausgewählt und über den konfigurierten E-Mail-Server an Benutzer und Warteschlangen gesendet. Es ermöglicht auch die Synchronisierung von Terminen, Kontakten und Aufgaben mit Exchange Server 2010 und Exchange Server 2013.  
+In PowerApps bietet die serverseitige Synchronisierung eine Schnittstelle zwischen dem Common Data Service-System und mindestens einem Exchange-Server oder POP3-Server für eingehende E-Mails und mindestens einem SMTP- oder Exchange-Server für ausgehende E-Mails. Er ruft E-Mails ab und bewertet ihre Relevanz für Common Data Service und erstellt entsprechende E-Mail-Aktivitäten in Common Data Service. Er entnimmt auch E-Mails aus Common Data Service und sendet sie über den konfigurierten E-Mail-Server für Benutzer und Warteschlangen. Es ermöglicht auch die Synchronisierung von Terminen, Kontakten und Aufgaben mit Exchange Server 2010 und Exchange Server 2013.  
   
- Mit der zentralisierten E-Mail-Konfiguration ermöglicht das Entitätsmodell des Common Data Service die Festlegung von Einstellungen der Benutzeroberfläche (wie Benutzername, Passwort, E-Mail-Adresse und Synchronisationsmethoden) für Benutzer, Warteschlangen und Weiterleitungspostfächer. Jeder Benutzer oder eine Warteschlange kann Postfächer haben, die entweder durch serverseitige Synchronisation oder Microsoft Dynamics 365 for Outlook überwacht werden können. Die [EmailServerProfile](/powerapps/developer/common-data-service/reference/entities/emailserverprofile)-Entität stellt das E-Mail-Serverprofil einer Organisation dar. Die [Mailbox](/powerapps/developer/common-data-service/reference/entities/mailbox)-Entität stellt die Termine, Kontakten und Aufgabenzustellungsmethode des Postfachs dar. Aktuell ist die Benutzerentität auf einen Postfachdatensatz pro Benutzer beschränkt und die Warteschlangenentität ist auf einen Postfachdatensatz pro Warteschlange beschränkt, wie in der folgenden Abbildung gezeigt.  
+ Mit der zentralisierten E-Mail-Konfiguration ermöglicht das Common Data Service-Entitätenmodell übliche Benutzeroberflächen-Einstellungen (wie: Benutzername, Kennwort, E-Mail-Adresse und Synchronisierungsmethoden) für Benutzer, Warteschlangen und Weiterleitungspostfächer. Jeder Benutzer oder jede Warteschlange kann über Postfächer verfügen, die mit Hilfe von serverseitiger Synchronisierung oder Microsoft Dynamics 365 for Outlook überwacht werden können. Die [EmailServerProfile](/powerapps/developer/common-data-service/reference/entities/emailserverprofile)-Entität stellt das E-Mail-Serverprofil einer Organisation dar. Die [Mailbox](/powerapps/developer/common-data-service/reference/entities/mailbox)-Entität stellt die Termine, Kontakten und Aufgabenzustellungsmethode des Postfachs dar. Aktuell ist die Benutzerentität auf einen Postfachdatensatz pro Benutzer beschränkt und die Warteschlangenentität ist auf einen Postfachdatensatz pro Warteschlange beschränkt, wie in der folgenden Abbildung gezeigt.  
   
  ![E-Mail-Konnektorentitätenmodell](media/email-connector-entity-model.png "E-Mail-Konnektorentitätenmodell")  
   

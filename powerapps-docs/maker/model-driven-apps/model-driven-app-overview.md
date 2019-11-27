@@ -1,6 +1,6 @@
 ---
-title: Überblick über die Erstellung einer modellgesteuerten Anwendung mit PowerApps | Microsoft Docs
-description: Schritt-für-Schritt-Anleitung zum Erstellen und Konfigurieren einer Entität zur Verwendung mit einer PowerApps-App.
+title: Übersicht über die Erstellung einer modellgetriebenen App mit PowerApps | Microsoft Docs
+description: Schritt-für-Schritt-Anleitung zum Erstellen und Konfigurieren einer Entität für die Verwendung mit einer PowerApps App.
 documentationcenter: na
 author: Mattp123
 manager: kvivek
@@ -13,12 +13,18 @@ ms.component: model
 ms.date: 08/09/2018
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38ea420dc973e5e6c0a4df2ff361344c4704137a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711737"
 ---
-# <a name="what-are-model-driven-apps-in-powerapps"></a>Was sind modellgesteuerte Apps in PowerApps?
+# <a name="what-are-model-driven-apps-in-powerapps"></a>Was sind modellgetriebene Apps in PowerApps?
 
 Modell-angetriebener App-Entwurf ist eine Komponenten-fokussierte Methode zur App-Entwicklung. Modellgesteuertes App-Design erfordert keinen Code und die von Ihnen erstellten Apps können einfach oder sehr komplex sein.  Im Gegensatz zur Entwicklung von Canvas-Apps, bei denen der Designer die volle Kontrolle über das App-Layout hat, wird bei modellgesteuerten Apps ein Großteil des Layouts für Sie bestimmt und weitgehend durch die Komponenten bestimmt, die Sie der App hinzufügen. 
 
@@ -27,7 +33,7 @@ Modell-angetriebener App-Entwurf ist eine Komponenten-fokussierte Methode zur Ap
 Das modellgesteuerte App-Design bietet folgende Vorteile:
 - Umfangreiche komponentenorientierte Entwurfsumgebungen ohne Eingabe von Code 
 - Erstellen Sie komplexe, reaktionsschnelle Anwendungen mit einer ähnlichen Benutzeroberfläche für eine Vielzahl von Geräten, vom Desktop bis zum Smartphone.
-- Die Gestaltungsmöglichkeiten ähneln denen, die in der Dynamics 365 Customer Engagement-Plattform verfügbar sind. 
+- Umfangreiche Designfähigkeit 
 - Ihre App kann als Lösung verteilt werden kann
  
 ## <a name="the-approach-to-model-driven-app-making"></a>Die Methode zur modellgesteuerten App-Erstellung
@@ -38,10 +44,10 @@ Grundsätzlich besteht die modellgetriebene App-Erstellung aus drei Schwerpunktb
 - Erstellen der App
 
 ### <a name="modeling-business-data"></a>Modellierung von Geschäftsdaten
-Um Geschäftsdaten zu modellieren, bestimmen Sie, welche Daten Ihre Anwendung benötigt und wie sich diese Daten auf andere Daten beziehen. Das modellgetriebene Design verwendet eine metadatengesteuerte Architektur, so dass Designer die Anwendung anpassen können, ohne Code schreiben zu müssen. Metadaten sind "Daten über Daten"; diese definieren die Struktur der im System gespeicherten Daten. [Lernprogramm: Benutzerdefinierte Entität mit Komponenten in PowerApps erstellen](../common-data-service/create-custom-entity.md)
+Um Geschäftsdaten zu modellieren, bestimmen Sie, welche Daten Ihre Anwendung benötigt und wie sich diese Daten auf andere Daten beziehen. Das modellgetriebene Design verwendet eine metadatengesteuerte Architektur, so dass Designer die Anwendung anpassen können, ohne Code schreiben zu müssen. Metadaten sind "Daten über Daten"; diese definieren die Struktur der im System gespeicherten Daten. [Tutorial: Erstellen Sie eine benutzerdefinierte Entität, die Komponenten in PowerApps enthält](../common-data-service/create-custom-entity.md)
 
 ### <a name="defining-business-processes"></a>Definieren der Geschäftsprozesse
-Die Definition und Durchsetzung konsistenter Geschäftsprozesse ist ein wesentlicher Aspekt des modellgesteuerten App-Designs. Konsistente Prozesse sorgen dafür, dass sich Ihre App-Anwender auf ihre Arbeit konzentrieren können und nicht daran denken müssen, eine Reihe von manuellen Schritten auszuführen. Prozesse können einfach oder komplex sein und sich oft im Laufe der Zeit ändern. Um einen Prozess zu erstellen, wählen Sie im modellgesteuerten Bereich von PowerApps.com ![Einstellungen](media/powerapps-gear.png) > **Erweiterte Anpassungen** > **Lösungsexplorer öffnen**. Wählen Sie dann im linken Navigationsbereich im Lösungsexplorer **Prozesse** aus und wählen Sie dann **Neu**. Weitere Informationen: [Geschäftsprozessflussübersicht](/flow/business-process-flows-overview) und [Anwenden von Geschäftslogik mit Common Data Service](../common-data-service/cds-processes.md). 
+Die Definition und Durchsetzung konsistenter Geschäftsprozesse ist ein wesentlicher Aspekt des modellgesteuerten App-Designs. Konsistente Prozesse sorgen dafür, dass sich Ihre App-Anwender auf ihre Arbeit konzentrieren können und nicht daran denken müssen, eine Reihe von manuellen Schritten auszuführen. Prozesse können einfach oder komplex sein und sich oft im Laufe der Zeit ändern. Um einen Prozess zu erstellen, wählen Sie aus dem modellgetriebenen Bereich PowerApps.com ![Einstellungen](media/powerapps-gear.png) > **Erweiterte Anpassungen** > **Lösungsexplorer öffnen**. Wählen Sie dann im linken Navigationsbereich im Lösungsexplorer **Prozesse** aus und wählen Sie dann **Neu**. Mehr Informationen: [Geschäftsprozessabläufe im Überblick](/flow/business-process-flows-overview) und [Geschäftslogik mit Common Data Service anwenden](../common-data-service/cds-processes.md). 
 
 ### <a name="composing-the-model-driven-app"></a>Zusammenstellen der modellgesteuerten App
 Nach der Modellierung von Daten und der Definition von Prozessen erstellen Sie Ihre App, indem Sie die benötigten Komponenten mit dem App-Designer auswählen und konfigurieren.

@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-ms.assetid: null
-caps.latest.revision: null
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+ms.assetid: ''
+caps.latest.revision: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bd2d19b18b1de7bad4d6f661ec983af49fb8f4e4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752148"
 ---
-
 # <a name="odata-v4-data-provider-configuration-requirements-and-best-practices"></a> OData v4 Datenanbieterkonfiguration, Anforderungen und bewährten Methoden
 
 In diesem Thema wird beschrieben, wie Sie den OData v4-Datenanbieter konfigurieren sowie Anforderungen und empfohlenen bewährte Methoden für die Verwendung des Datenanbieters ODatas v4 verwenden, um eine Verbindung mit einem OData v4-Webdienst herzustellen. 
@@ -75,7 +80,7 @@ Dieses Verfahren zeigt, wie Sie den OData-Standarddatenanbieter als virtuelle Da
 1. Füllen Sie auf der Seite **Neue Datenquelle** Eigenschaften die folgenden Felder aus und speichern Sie den Datensatz.  
   
     - **Name** Geben Sie einen beschreibenden Namen für die Datenquelle ein.  
-    - **URI**. Wenn Sie den OData-Datenanbieter verwenden, geben Sie die URI für den OData-Webservice ein. Wenn Sie beispielsweise den OData-Anbieter verwenden, um eine Verbindung zu einem Webservice einzurichten, der in Azure gehostet wird, kann die URI etwa wie folgt aussehen: *`http://contosodataservice.azurewebsites.net/odata/`*  
+    - **URI**. Wenn Sie den OData-Datenanbieter verwenden, geben Sie die URI für den OData-Webservice ein. Wenn Sie beispielsweise den OData-Anbieter verwenden, um eine Verbindung zu einem Webservice einzurichten, der in Azure gehostet wird, kann die URI etwa wie folgt aussehen: *`https://contosodataservice.azurewebsites.net/odata/`*  
     - **Timeout in Sekunden**. Geben Sie die Anzahl der Sekunden ein, um auf eine Antwort des Webdiensts zu warten, bevor Timeout Daten erfordern. Geben Sie z.B. 30 ein, um maximal dreißig Sekunden zu warten, bevor ein Timeout auftritt.  
     - **Auslagerungsmodus**. Wählen Sie aus, ob die clientseitige oder serverseitige Auslagerung verwendet wird, um zu steuern, wie Abfrageergebnisse ausgelagert werden. Der Standardwert ist clientseitige Auslagerung. Mit serverseitiger Auslagerung steuert der Server Server, wie Ergebnisse ausgelagert werden, indem der $skiptoken-Parameter verwendet wird, der zur Abfragezeichenfolge hinzugefügt wird. Weitere Informationen:  [Überspringen der Tokensystem-Abfrageoption ($skiptoken)](https://msdn.microsoft.com/library/dd942121.aspx)  
         -  **Inline-Anzahl zurückgeben**. Gibt die Gesamtanzahl Datensätze im Ergebnissatz wieder. Diese Einstellung wird verwendet, um die Funktionalität der nächsten Seite zu aktivieren, wenn Sie Daten zu einem Raster zurückgeben. Verwenden Sie den Wert false, wenn Ihr OData-Endpunkt den Parameter $inlinecount nicht unterstützt. Der Standardwert ist false.

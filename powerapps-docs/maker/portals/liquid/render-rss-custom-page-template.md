@@ -1,6 +1,6 @@
 ---
-title: Rendering eines RSS-Feeds mithilfe einer benutzerdefinierten Seitenvorlage für ein Portal | MicrosoftDocs
-description: Anweisungen zum Erstellen einer benutzerdefinierten Seitenvorlage und zum Rendering eines RSS-Feeds.
+title: Darstellen eines RSS-Feeds mit einer benutzerdefinierten Seitenvorlage für ein Portal | MicrosoftDocs
+description: Anweisungen, eine benutzerdefinierte Seitenvorlage zu erstellen und anschließend zu verwenden, um einen RSS-Feed zu rendern.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,27 +9,27 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 9ad14cb5e3385f559ded6e3ac18b0455f93178d5
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.openlocfilehash: 240af2f54e153490794358dc1598b72a16fe1c38
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974757"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757178"
 ---
-# <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>Erstellen einer benutzerdefinierten Seitenvorlage zum Rendering eines RSS-Feeds
-In diesem Beispiel erstellen wir eine benutzerdefinierte Seitenvorlage zum Rendering eines [RSS-Feeds](http://en.wikipedia.org/wiki/RSS) von Newsartikeln mithilfe von Liquid und einer Vorlage für eine Webvorlagen Seite. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Speichern von Quell Inhalten mithilfe von Webvorlagen](store-content-web-templates.md)  
+# <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>Erstellen einer benutzerdefinierte Seitenvorlage zum Rendern eines RSS-Feed
+In diesem Beispiel erstellen wir eine benutzerdefinierte Seitenvorlage, um einen [RSS-Feed](https://en.wikipedia.org/wiki/RSS) neuer Artikel mithilfe von Liquid und einer Webvorlage-Seitenvorlage zu rendern. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Quellinhalt mithilfe von Webvorlagen speichern](store-content-web-templates.md)  
 
-## <a name="step-1-create-a-new-powerapps-view"></a>Schritt 1: Erstellen einer neuen powerapps-Ansicht
+## <a name="step-1-create-a-new-powerapps-view"></a>Schritt 1: Erstellen einer neuen PowerApps-Ansicht
 
-Zuerst erstellen wir eine neue powerapps-Ansicht, mit der wir die Daten für den Feed laden. In diesem Beispiel werden wir eine Ansicht auf Webseiten machen und diese Entität zum Speichern unserer Artikel verwenden. Mithilfe dieser Ansicht können Sie das Sortieren und Filtern von Ergebnissen konfigurieren und die Entitäts Attribute, die wir in unserer Liquid-Vorlage zur Verfügung stellen möchten, als Spalten einschließen.
+Zunächst erstellen wir eine neue PowerApps-Ansicht die wir verwenden, um die Daten für unseren Feed zu laden. In diesem Beispiel erstellen wir eine Ansicht auf Webseiten und verwenden diese Entität, um unsere Artikel zu speichern. Es können diese Ansicht verwenden, um den Filter und der Sortierung der Ergebnisse zu konfigurieren als Spalten und schließen welche Entitätsattribute ein, die wir in unserer Vorlage zur flüssigen soll.
 
 ![Bearbeiten einer Seitenvorlage](../media/edit-page-template.png "Bearbeiten einer Seitenvorlage")  
 
-## <a name="step-2-create-a-web-template-for-rss-feed"></a>Schritt 2: Erstellen einer Webvorlage für den RSS-Feed
+## <a name="step-2-create-a-web-template-for-rss-feed"></a>Schritt 2: Erstellen einer Webvorlage für einen RSS-Feed
 
-In diesem Schritt erstellen wir eine Webvorlage für unseren RSS-Feed. Diese Vorlage wird auf eine bestimmte Webseite auf unserer Website angewendet. Daher verwenden wir den Titel und die Zusammenfassung dieser Seite als Titel und Beschreibung des Feeds. Wir verwenden das entityview-Tag, um die neu erstellte News-Artikel Ansicht zu laden. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [powerapps Common Data Service-Entitäts Tags](portals-entity-tags.md). Beachten Sie, dass auch das Feld **MIME Type** der Webvorlage auf Application/RSS + XML festgelegt wird. Dies gibt an, wie der Antwort Inhaltstyp sein kann, wenn unsere Vorlage gerendert wird.  
+In diesem Schritt erstellen wir eine Webvorlage für unseren RSS-Feed. Diese Vorlage wird auf eine bestimmte Webseite in unserer Website angewendet, somit verwenden wir den Titel und die Zusammenfassung dieser Seite als Titel und Beschreibung des Feeds. Wir verwenden den Tag „entityview”, um unsere neu erstellte Ansicht „Neue Artikell” zu laden. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [PowerApps common data service Entitäts-Tags](portals-entity-tags.md). Beachten Sie, dass wir auch das Feld **MIME-Typ** der Webvorlage auf „application/rss+xml” festgelegt haben. Dadurch wird angegeben, welche Leistungen dem Warteinhaltstyp sein könnte, wenn wir unsere Vorlage gerendert wird.  
 
-![Konfigurieren einer Webvorlage für einen RSS-Feed](../media/web-template-rss-feed.png "Konfigurieren einer Webvorlage für einen RSS-Feed")  
+![Eine Webvorlage für einen RSS-Feed konfigurieren](../media/web-template-rss-feed.png "Eine Webvorlage für einen RSS-Feed konfigurieren")  
 
 ### <a name="rss-feed-web-template"></a>RSS-Feed (Webvorlage)
 
@@ -55,24 +55,24 @@ In diesem Schritt erstellen wir eine Webvorlage für unseren RSS-Feed. Diese Vor
 </rss>
 ```
 
-## <a name="step-3-create-a-page-template-to-assign-rss-feed-template"></a>Schritt 3: Erstellen einer Seitenvorlage zum Zuweisen einer RSS-Feed-Vorlage
+## <a name="step-3-create-a-page-template-to-assign-rss-feed-template"></a>Schritt 3: Erstellen einer Seitenvorlage für die Zuweisung einer RSS-Feedvorlage
 
-Nun erstellen wir eine neue Seitenvorlage, mit der wir unsere RSS-Feed-Vorlage einer beliebigen Webseite auf unserer Website zuweisen können. Beachten Sie, dass wir die Auswahl der **Website Kopfzeile und-Fußzeile**deaktivieren, da wir das Rendering der gesamten Seiten Antwort für den Feed übernehmen möchten.
+Erstellen wir nun eine neue Seitenvorlage, die es uns gestattet, unsere RSS-Feed-Vorlage jeder beliebigen Webseite in unserer Website zuzuweisen. Beachten Sie, dass wird **Kopf- und Fußzeile der Website verwenden** deaktiviert haben. Wir möchten das Rendern der gesamten Seiten für unseren Feed übernehmen.
 
-![Konfigurieren einer Seitenvorlage für einen RSS-Feed](../media/page-template-rss-feed.png "Konfigurieren einer Seitenvorlage für einen RSS") -Feed  
+![Eine Seitenvorlage für einen RSS-Feed konfigurieren](../media/page-template-rss-feed.png "Eine Seitenvorlage für einen RSS-Feed konfigurieren")  
 
 ## <a name="step-4-create-a-web-page-to-host-rss-feed"></a>Schritt 4: Erstellen einer Webseite zum Hosten eines RSS-Feeds
 
-Nun müssen Sie nur noch eine neue Webseite mit der RSS-Feed-Vorlage erstellen, um den Feed zu hosten. Wenn wir diese neue Webseite anfordern, erhalten wir unsere RSS-Feed-XML-Datei:
+Jetzt bleibt nur noch, eine neue Webseite mit der RSS-Feed-Vorlage zu erstellen, um unseren Feed zu hosten. Wenn wir diese neue Webseite anfordern, erhalten wir unseren RSS-Feed XML:
 
-![Beispiel eines RSS-Feed]-(../media/rss-feed-example.png "Beispiels eines RSS-Feeds")  
+![Beispiel eines RSS-Feed](../media/rss-feed-example.png "Beispiel eines RSS-Feed")  
 
-In diesem Beispiel haben wir gesehen, wie Sie Liquid-, Webvorlagen-, powerapps-Ansichten und Portale Content Management-Funktionen kombinieren können, um einen benutzerdefinierten RSS-Feed zu erstellen. Durch die Kombination dieser Features können Sie jeder Portal Anwendung leistungsstarke Anpassungsfunktionen hinzufügen.
+In diesem Beispiel gesehen haben wir, wie wir Flüssigkeit, Internet-Vorlagen, PowerApps-Ansichten Funktionen zur Inhaltsverwaltung in Portalen kombinieren können, um einen angepassten RSS-Feed zu erstellen. Die Kombination dieser Funktionen wird jeder Portal-Anwendung leistungsstarke Anpassungsmöglichkeiten hinzu.
 
 ### <a name="see-also"></a>Siehe auch
 
-[Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Vorlage für eine Webvorlagen Seite](create-custom-template.md)  
-[Rendering der der aktuellen Seite zugeordneten Entitäts Liste](render-entity-list-current-page.md)  
-[Rendering einer Website Kopfzeile und der primären Navigationsleiste](render-site-header-primary-navigation.md)  
-[Rendering von bis zu drei Ebenen der Seiten Hierarchie mithilfe der Hybriden Navigation](hybrid-navigation-render-page-hierachy.md)  
+[Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Webseiten-Seitenvorlage](create-custom-template.md)  
+[Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist](render-entity-list-current-page.md)  
+[Rendern einer Websitekopfzeile und primären Navigationsleiste](render-site-header-primary-navigation.md)  
+[Rendern von bis zu drei Ebenen der Seitenhierarchie mithilfe der hybriden Navigation](hybrid-navigation-render-page-hierachy.md)  
 

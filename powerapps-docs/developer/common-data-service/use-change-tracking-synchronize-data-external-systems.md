@@ -1,19 +1,25 @@
 ---
 title: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung (Common Data Service) | Microsoft Docs
-description: 'Mit der neuen Änderungsnachverfolgungsfunktion in Dynamics 365 Customer Engagement können die Daten effizient synchronisiert werden, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden.'
+description: Die Änderungsverfolgungsfunktion bietet eine Möglichkeit, die Daten effizient zu synchronisieren, indem sie erkennt, welche Daten sich seit der ersten Extraktion der Daten oder der letzten Synchronisierung geändert haben.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 61f1103153a2ad70de050ce2980fb2ed6bc9c3a8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753770"
 ---
 # <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung
 
@@ -35,7 +41,7 @@ Mit der neuen Änderungsnachverfolgungsfunktion in Common Data Service können d
 ## <a name="retrieve-changes-for-an-entity-using-the-web-api"></a>Abrufen von Änderungen für eine Entität mithilfe der Web-API  
 Änderungen, die in den Entitäten vorgenommen werden, können mithilfe von Web-API-Anforderungen nachverfolgt werden, indem `odata.track-changes` als Einstellungskopfzeile hinzugefügt wird. Einstellungskopfzeile `odata.track-changes` wird verwendet, um anzufordern, dass ein *Deltalink* zurückgegeben wird, der später verwendet werden kann, um Entitätsänderungen abzurufen.
 
-Deltalinks sind opake, Service-generierte Links, die der Client verwendet, um nachfolgende Änderungen an einem Ergebnis abzurufen. Sie basieren auf einer definierende Abfrage, die den Datensatz der Ergebnisse beschreibt, für die Änderungen nachverfolgt werden; beispielsweise die Anforderung, die die Ergebnisse generiert hat, die den Deltalink enthalten. Der Deltalink codiert die Sammlung von Entitäten, für die Änderungen nachverfolgt werden, zusammen mit einem Ausgangspunkt, ab dem Änderungen nachverfolgt werden solleen. Lesen Sie mehr über Deltalinks hier [Oasis OData Version 4.0 - Deltalinks](http://docs.oasis-open.org/odata/odata/v4.0/cs01/part1-protocol/odata-v4.0-cs01-part1-protocol.html#_Toc365046305)
+Deltalinks sind opake, Service-generierte Links, die der Client verwendet, um nachfolgende Änderungen an einem Ergebnis abzurufen. Sie basieren auf einer definierende Abfrage, die den Datensatz der Ergebnisse beschreibt, für die Änderungen nachverfolgt werden; beispielsweise die Anforderung, die die Ergebnisse generiert hat, die den Deltalink enthalten. Der Deltalink codiert die Sammlung von Entitäten, für die Änderungen nachverfolgt werden, zusammen mit einem Ausgangspunkt, ab dem Änderungen nachverfolgt werden solleen. Lesen Sie mehr über Deltalinks hier [Oasis OData Version 4.0 - Deltalinks](https://docs.oasis-open.org/odata/odata/v4.0/cs01/part1-protocol/odata-v4.0-cs01-part1-protocol.html#_Toc365046305)
 
 <a name="BKMK_webapiexample"></a>   
 ## <a name="retrieve-changes-in-entities-using-web-api-example"></a>Abrufen von Änderungen an Entitäten mit dem Web-API-Beispiel
@@ -128,7 +134,7 @@ Systemabfrageoptionen `$filter`, `$orderby` und `$top` werden nicht unterstützt
   
 <a name="BKMK_SampleCode"></a>   
 ## <a name="sample-code"></a>Beispielcode   
- Der folgende Codeausschnitt zeigt, wie die `RetrieveEntityChangesRequest`-Nachricht verwendet wird, um die Änderungen für eine Entität abzurufen. Das vollständige Beispiel finden Sie unter [Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung](http://go.microsoft.com/fwlink/p/?LinkId=533957).  
+ Der folgende Codeausschnitt zeigt, wie die `RetrieveEntityChangesRequest`-Nachricht verwendet wird, um die Änderungen für eine Entität abzurufen. Das vollständige Beispiel finden Sie unter [Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung](https://go.microsoft.com/fwlink/p/?LinkId=533957).  
   
 ```csharp
 string token;

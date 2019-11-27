@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad7f01da3217faa1cd4c55b1d33acd03953434f5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e8f40f9cd3b15dddfd9fdadbcd15495e33464967
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987340"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540892"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>Verwalten von Canvas-App-Verbindungen in PowerApps
-Stellen Sie in [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) eine Verbindung mit einer oder mehreren Datenquellen her, löschen Sie eine Verbindung, oder aktualisieren Sie ihre Anmeldeinformationen.
+Stellen Sie in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) eine Verbindung mit einer oder mehreren Datenquellen her, löschen Sie eine Verbindung, oder aktualisieren Sie ihre Anmeldeinformationen.
 
 Über die Datenverbindung der Canvas-App können Verbindungen mit SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel und vielen anderen [Datenquellen](connections-list.md) hergestellt werden.
 
@@ -32,11 +32,11 @@ Ihr nächster Schritt nach diesem Artikel besteht darin, Daten aus der Datenquel
 * Herstellen einer Verbindung mit SQL Server und Aktualisieren einer Tabelle aus Ihrer App.
 * Senden von E-Mail in Office 365.
 * Senden eines Tweets.
-* Verbinden mit Twilio und senden einer SMS-Nachricht von Ihrer App.
+* Verbinden mit Twilio und Senden einer SMS-Nachricht von Ihrer App.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 1. [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps.
-2. Melden Sie sich unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
+2. Melden Sie sich unter [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 
 ## <a name="background-on-data-connections"></a>Hintergrundinformationen zu Datenverbindungen
 Die meisten Apps in PowerApps nutzen externe Informationen, die als **Datenquellen** bezeichnet werden und in Clouddiensten gespeichert sind. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps können über **Verbindungen** auf diese Datenquellen zugreifen.
@@ -47,17 +47,17 @@ Es gibt andere Arten von Datenquellen, bei denen es sich nicht um Tabellen hande
 
 Mithilfe von **[Katalog](controls/control-gallery.md)** -, **[Formular anzeigen](controls/control-form-detail.md)** - und **[Formular bearbeiten](controls/control-form-detail.md)** -Steuerelementen können Sie auf einfache Weise eine App erstellen, die Daten aus einer Datenquelle liest und schreibt. Lesen Sie für den Einstieg den Artikel [Grundlegendes zu Datenformularen](working-with-forms.md).
 
-Zusätzlich zum Erstellen und Verwalten von Verbindungen in [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) können Sie auch Verbindungen erstellen, wenn Sie die folgenden Aufgaben ausführen:
+Zusätzlich zum Erstellen und Verwalten von Verbindungen in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) können Sie auch Verbindungen erstellen, wenn Sie die folgenden Aufgaben ausführen:
 
 * Automatisches Generieren einer [App aus Daten](app-from-sharepoint.md), z. B. aus einer benutzerdefinierten SharePoint-Liste.
 * Aktualisieren Sie eine vorhandene App, oder erstellen Sie eine wie in [Eine Verbindung hinzufügen](add-data-connection.md) beschrieben neu.
 * Öffnen einer App, die ein anderer Benutzer erstellt und [für Sie freigegeben](share-app.md) hat.
 
 > [!NOTE]
-> Wenn Sie stattdessen PowerApps Studio verwenden möchten, öffnen Sie das Menü **Datei**, und klicken oder tippen Sie auf **Verbindungen**; [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) wird geöffnet, sodass Sie dort Verbindungen herstellen und verwalten können.
+> Wenn Sie stattdessen PowerApps Studio verwenden möchten, öffnen Sie das Menü **Datei**, und klicken oder tippen Sie auf **Verbindungen**; [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) wird geöffnet, sodass Sie dort Verbindungen herstellen und verwalten können.
 
 ## <a name="create-a-new-connection"></a>Erstellen einer neuen Verbindung
-1. Sofern noch nicht erfolgt, melden Sie sich bei [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Sofern noch nicht erfolgt, melden Sie sich bei [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 2. Klicken oder tippen Sie in der linken Navigationsleiste auf **Verbindungen**.
    
     ![Verbindungen verwalten](./media/add-manage-connections/open-connections.png)

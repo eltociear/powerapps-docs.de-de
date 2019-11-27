@@ -7,18 +7,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 6df7cccb-071d-4853-8acb-01bceef973ca
 caps.latest.revision: 22
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 573f07f76c9e2d8eb77da5b72d93510a438c2b15
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753662"
 ---
 # <a name="web-api-query-data-sample-client-side-javascript"></a>Web API-Abfragedatenbeispiele (clientseitiges JavaScript)
 
@@ -41,7 +47,7 @@ Dieses Beispiel veranschaulicht, wie Sie mithilfe der Common Data Service-Web-AP
 
 ## <a name="run-this-sample"></a>Beispiel ausführen
 
-Um dieses Beispiel auszuführen, wechseln Sie zu [Web API-Abfragedatenbeispiel für Microsoft CRM (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824050), und laden die Beispielarchivdatei "Microsoft CRM Web API Query Data Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte des Beispiels, und suchen Sie die Datei für die verwaltete WebAPIQueryData_1_0_0_0_managed.zip-Lösung. Importieren Sie die verwaltete Lösung in die Common Data Service-Organisation, und führen Sie das Beispiel aus. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
+Um dieses Beispiel auszuführen, wechseln Sie zu [Web API-Abfragedatenbeispiel für Microsoft CRM (clientseitiges JavaScript)](https://go.microsoft.com/fwlink/p/?LinkId=824050), und laden die Beispielarchivdatei "Microsoft CRM Web API Query Data Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte des Beispiels, und suchen Sie die Datei für die verwaltete WebAPIQueryData_1_0_0_0_managed.zip-Lösung. Importieren Sie die verwaltete Lösung in die Common Data Service-Organisation, und führen Sie das Beispiel aus. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
   
 <a name="bkmk_codeSample"></a>
 

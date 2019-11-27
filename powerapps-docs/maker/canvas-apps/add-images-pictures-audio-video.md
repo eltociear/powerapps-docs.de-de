@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b544b03fbe181265599bab520eddc2a2a646c477
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 78f091705a01a54b7e6eb008630949796ffac453
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994667"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541183"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
@@ -27,7 +27,7 @@ In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre Canvas-App 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-[Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
+[Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Hinzufügen von Medien aus einer Datei oder aus der Cloud
 
@@ -79,12 +79,12 @@ Zum Hochladen können Sie eine beliebige Art von Mediendatei auswählen (z.B. Bi
 ## <a name="add-images-from-the-cloud-to-your-app"></a>Hinzufügen von Bildern aus der Cloud zur App
 In diesem Szenario speichern Sie Bilder in einem Cloudspeicherkonto (OneDrive for Business). Sie verwenden eine Excel-Tabelle, in der der Pfad zu den Bildern enthalten ist, und Sie zeigen die Bilder in einem Katalog-Steuerelement in der App an.
 
-In diesem Szenario wird die Datei [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) verwendet, die einige JPEG-Dateien enthält.
+In diesem Szenario wird die Datei [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) verwendet, die einige JPEG-Dateien enthält.
 
 > [!NOTE]
 > Im Pfad zu diesen Bildern in der Excel-Datei müssen Schrägstriche verwendet werden. Werden Pfade zu Bildern von PowerApps in einer Excel-Tabelle gespeichert, werden im Pfad umgekehrte Schrägstriche verwendet. Wenn Sie Pfade zu Bildern aus einer solchen Tabelle verwenden, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt.  
 
-1. Laden Sie die Datei [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) herunter, und extrahieren Sie den Ordner **Assets** in Ihr Cloud-Speicherkonto.
+1. Laden Sie die Datei [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) herunter, und extrahieren Sie den Ordner **Ressourcen** in Ihr Cloudspeicherkonto.
 
 2. Benennen Sie den Ordner **Assets** in **Assets_images** um.
 
@@ -94,7 +94,7 @@ In diesem Szenario wird die Datei [CreateFirstApp.zip](http://pwrappssamples.blo
 
 4. Benennen Sie die Tabelle **Jackets**, und benennen Sie die Excel-Datei **Assets.xlsx**.
 
-5. Fügen Sie in der App die Tabelle **Jackets** als Datenquelle hinzu.  
+5. Fügen Sie in der App die Tabelle **Jacken** als Datenquelle hinzu.  
 
 6. Fügen Sie ein **Nur-Bild**-Steuerelement hinzu (**Einfügen** Registerkarte > **Katalog**), und legen Sie dessen **Items**-Eigenschaft auf `Jackets` fest:  
 
@@ -102,11 +102,11 @@ In diesem Szenario wird die Datei [CreateFirstApp.zip](http://pwrappssamples.blo
 
     Der Katalog wird automatisch mit den Bildern aktualisiert:  
 
-    ![Bilder aus „Jackets“](./media/add-images-pictures-audio-video/images.png)
+    ![Bilder „Jacken“](./media/add-images-pictures-audio-video/images.png)
 
     Wenn Sie die **Items**-Eigenschaft festlegen, wird der Excel-Tabelle automatisch die Spalte **PowerAppsId** hinzugefügt.
 
-    In der Excel-Tabelle kann der Pfad zu den Bildern ebenfalls eine Bild-URL sein. Ein Beispiel ist die Beispieldatei [Flooring Estimates](http://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx). Sie können sie in Ihr Cloud-Speicherkonto herunterladen, die Tabelle `FlooringEstimates` als Datenquelle in der App hinzufügen und anschließend das Katalog-Steuerelement auf `FlooringEstimates` festlegen. Der Katalog wird automatisch mit den Bildern aktualisiert.
+    In der Excel-Tabelle kann der Pfad zu den Bildern ebenfalls eine Bild-URL sein. Ein Beispiel ist die Beispieldatei [Flooring Estimates](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx). Sie können sie in Ihr Cloud-Speicherkonto herunterladen, die Tabelle `FlooringEstimates` als Datenquelle in der App hinzufügen und anschließend das Katalog-Steuerelement auf `FlooringEstimates` festlegen. Der Katalog wird automatisch mit den Bildern aktualisiert.
 
 ## <a name="upload-pen-drawings-to-the-cloud"></a>Hochladen von Stiftzeichnungen in die Cloud
 In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (OneDrive for Business) hochladen und wie die Zeichnungen dort gespeichert werden.
@@ -125,9 +125,9 @@ In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (O
 
        Die Excel-Datei liegt nun im Tabellenformat vor. Weitere Informationen zum Formatieren von Tabellen im Excel-Format finden Sie unter [Daten als Tabelle formatieren](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370).
 
-   4. Benennen Sie die Tabelle **Drawings**:
+   4. Benennen Sie die Tabelle **Zeichnungen**:
 
-       ![Umbenennen der Tabelle in „Drawings“](./media/add-images-pictures-audio-video/name-media-table.png)
+       ![Tabelle in „Zeichnungen“ umbenennen](./media/add-images-pictures-audio-video/name-media-table.png)
 
 3. Speichern Sie die Excel-Datei in OneDrive for Business unter dem Namen **SavePen.xlsx**.
 
@@ -161,7 +161,7 @@ In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (O
 
     **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
 
-9. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu (Registerkarte **Einfügen** > **Katalog**), und legen Sie dessen **Items**-Eigenschaft auf `Drawings` fest. Die **Image**-Eigenschaft des Katalog-Steuerelements wird automatisch auf `ThisItem.Image` festgelegt.
+9. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu (Registerkarte **Einfügen** > **Katalog**), und legen Sie dessen **Items**-Eigenschaft auf `Drawings` fest. Die Eigenschaft **Image** des Katalog-Steuerelements wird automatisch auf `ThisItem.Image` festgelegt.
 
     Ordnen Sie die Steuerelemente so an, dass Ihr Bildschirm dem Folgenden ähnelt:  
 

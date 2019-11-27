@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2e0f365a5b41655188a3adfe02b721e6a5ef9bcd
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fdaf242dec8500f1f50603e5ccb981b12197e2da
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988679"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541756"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-text-dates-and-times-in-powerapps"></a>Anzeigen von Text, Datumswerten und Uhrzeiten in PowerApps
@@ -28,7 +28,7 @@ Fügen Sie beispielsweise Benutzerdaten zu Änderungen am Warenbestand oder zu K
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
+* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 * Erstellen Sie eine App, oder öffnen Sie eine vorhandene App in PowerApps.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 
@@ -222,7 +222,7 @@ Konvertieren Sie Datums- und Uhrzeitwerte aus Textzeichenfolgen in Werte, die Si
    
     Standardmäßig wird **Wednesday, January 1, 2014** aufgeführt. Wählen Sie in den **[Dropdown](controls/control-drop-down.md)** -Steuerelementen verschiedene Werte aus, um das Datum im **[Label](controls/control-text-box.md)** -Steuerelement (Bezeichnung) zu ändern.
 
-Möglicherweise müssen Sie Daten konvertieren, die Sie nicht erwartet haben. Wenn Sie anstelle von **[Dropdown](controls/control-drop-down.md)** -Steuerelementen **[Texteingabe](controls/control-text-input.md)** -Steuerelemente hinzufügen, gibt der Benutzer möglicherweise ein falsches Datum ein, wie z.B. Mai 45. Die **[Date](functions/function-date-time.md)** -Funktion verarbeitet atypische Datumsangaben folgendermaßen:
+Möglicherweise müssen Sie Daten konvertieren, die Sie nicht erwartet haben. Wenn Sie anstelle von **[Dropdown](controls/control-text-input.md)** -Steuerelementen **[Texteingabe](controls/control-drop-down.md)** -Steuerelemente hinzufügen, gibt der Benutzer möglicherweise ein falsches Datum ein, wie z.B. Mai 45. Die **[Date](functions/function-date-time.md)** -Funktion verarbeitet atypische Datumsangaben folgendermaßen:
 
 * Wenn ein Jahreswert zwischen 0 und 1899 (einschließlich) liegt, fügt die Funktion diesen Wert zu 1900 hinzu, um das Jahr zu berechnen.
 * Wenn ein Jahreswert zwischen 1900 und 9999 (einschließlich) liegt, verwendet die Funktion diesen Wert als Jahr.

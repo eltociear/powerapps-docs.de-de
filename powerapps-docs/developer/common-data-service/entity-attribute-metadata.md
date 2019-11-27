@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6dc0aeb076aa97950b2049cc8054a809bf268e0d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748296"
 ---
-
 <!-- This topic was not migrated it was written for PowerApps 
 Was Mike Carter
 Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entity-attributes
@@ -82,6 +87,7 @@ In der folgende Tabelle:
 |Abholung|`CalendarRulesType`|Nein|Enthält eine Sammlung von `CalendarRules` Entitätsdatensätzen<br />Es gibt keine aktuellen Attribute, die diesen Typ verwenden. Wenn Sie einen Proxy erstellen, erstellt das Codegenerierungstool die folgenden zwei simulierten Attribute, die nicht in den Metadaten vorhanden sind. Diese Attribute repräsentieren tatsächlich eine Ansicht der Kalenderregeldatensätze, die in einer 1: n-Beziehung dem Entitätsdatensatz zugeordnet sind.|
 |Abholung|`PartyListType`|Nein|Enthält eine Sammlung von `ActivityParty` Entitätsdatensätzen<br />Mehr Informationen: [ActivityParty-Entität](reference/entities/activityparty.md).|
 |Datum und Uhrzeit|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|Ja<br />**Datum und Uhrzeit**|Enthält einen Datums- und einen Zeitwert.<br />Alle Daten- und Zeitattribute unterstützen Werte ab dem 1/1/1753 12:00 Uhr.|
+|Datei|`FileType`<br />[FileAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.fileattributemetadata)|Ja<br />**Datei**|Enthält Daten, um das Abrufen von Binärdaten nach einem Entitätsdatensatz zu unterstützen.<br />Weitere Informationen: [Dateiattribute](file-attributes.md)|
 |Bild|`ImageType`<br />[ImageAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|Ja<br />**Bild**|Enthält Daten, um das Abrufen von Bilddaten nach einem Entitätsdatensatz zu unterstützen.<br />Weitere Informationen: [Entitätsbilder](entity-metadata.md#entity-images)|
 |Verwaltete Eigenschaft|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.managedpropertyattributemetadata)|Nein|Enthält Daten, die beschreiben, dass die Lösungskomponente, die im Entitätsdatensatz gespeichert ist, angepasst werden kann, wenn sie in eine verwaltete Lösung eingebunden wird.<br />Weitere Informationen: [Verwaltete Eigenschaften](introduction-solutions.md#managed-properties)|
 |Menge|`BigIntType`<br />[BigIntAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.bigintattributemetadata)|Nein|Enthält einen `BigInt`-Wert. Nur zur internen Verwendung.|

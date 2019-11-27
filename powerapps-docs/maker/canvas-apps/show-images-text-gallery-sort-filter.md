@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a25654f0304fce9978ae1f7b1410cfb557ef32c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3144f2f6517cbaa641227ff7b2f9482ed1d2e476
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995357"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542432"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Anzeigen, Sortieren und Filtern von Daten in einem PowerApps-Katalog
@@ -32,10 +32,10 @@ In PowerApps können Sie einen Katalog verwenden, um mehrere verwandte Elemente 
 > 
 
 ### <a name="prerequisites"></a>Voraussetzungen
-* [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
+* [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
 * Erstellen Sie aus einer [Vorlage](get-started-test-drive.md) oder mithilfe von [Daten](get-started-create-from-data.md) eine Tablet-App, oder [erstellen Sie die App von Grund auf neu](get-started-create-from-blank.md).
-* Erfahren Sie, wie Sie ein [Steuerelement konfigurieren](add-configure-controls.md).
-* In den hier gezeigten Schritten werden die [CreateFirstApp](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)-Daten als Beispieleingabe verwendet, die auch JPG-Bilder umfassen. Die ZIP-Datei enthält eine XML-Datei, die in Excel konvertiert werden kann. Andernfalls liest PowerApps die Dateien in den ZIP-Dateien automatisch und importiert sie erfolgreich. Sie können diese Beispieldaten herunterladen und verwenden oder eigene Daten importieren.
+* Machen Sie sich damit vertraut, wie Sie [ein Steuerelement konfigurieren](add-configure-controls.md).
+* In den hier gezeigten Schritten werden die [CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)-Daten als Beispieleingabe verwendet, die auch JPG-Bilder umfassen. Die ZIP-Datei enthält eine XML-Datei, die in Excel konvertiert werden kann. Andernfalls liest PowerApps die Dateien in den ZIP-Dateien automatisch und importiert sie erfolgreich. Sie können diese Beispieldaten herunterladen und verwenden oder eigene Daten importieren.
 
 ## <a name="show-data-in-a-gallery"></a>Anzeigen von Daten in einem Katalog
 1. Erstellen Sie unter Verwendung der Beispieldaten eine Sammlung namens **Inventory**. Führen Sie hierbei diese Schritte aus:  

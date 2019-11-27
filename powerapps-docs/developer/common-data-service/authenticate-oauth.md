@@ -1,6 +1,6 @@
 ---
 title: Verwendung von OAuth mit Common Data Service (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie die Authentifizierung mit OAuth mit dem Common Data Service durchführen können'
+description: Erfahren Sie, wie Sie die Authentifizierung mit OAuth mit dem Common Data Service durchführen können
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a0777bcb4f67a01a894600176bd68ec3793034c4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753066"
 ---
 # <a name="use-oauth-with-common-data-service"></a>OAuth mit Common Data Service verwenden
 
@@ -46,7 +52,7 @@ Wenn Sie eine App bei Azure AD registrieren, ist eine der Entscheidungen, die Si
 |
 |einheitlich|EinTyp von [Client-Anwendung](/azure/active-directory/develop/developer-glossary#client-application), der nativ auf einem Gerät installiert wird. |
 
-Wenn Sie **Web-App / API** auswählen, müssen Sie eine **Anmelde-URL** angeben, die die URL ist, unter der Azure AD die Authentifizierungsantwort sendet, einschließlich eines Token, wenn die Authentifizierung erfolgreich war. Während Sie eine App entwickeln, ist diese in der Regel auf `http://localhost/appname:[port]` gesetzt, so dass Sie Ihre App lokal entwickeln und debuggen können. Wenn Sie Ihre App veröffentlichen, müssen Sie diesen Wert auf die veröffentlichte URL der App ändern.
+Wenn Sie **Web-App / API** auswählen, müssen Sie eine **Anmelde-URL** angeben, die die URL ist, unter der Azure AD die Authentifizierungsantwort sendet, einschließlich eines Token, wenn die Authentifizierung erfolgreich war. Während Sie eine App entwickeln, ist diese in der Regel auf `https://localhost/appname:[port]` gesetzt, so dass Sie Ihre App lokal entwickeln und debuggen können. Wenn Sie Ihre App veröffentlichen, müssen Sie diesen Wert auf die veröffentlichte URL der App ändern.
 
 Wenn Sie **Native** wählen, müssen Sie eine Umleitungs-URI bereitstellen. Dies ist eine eindeutige Kennung, an die Azure AD den Benutzer-Agenten in einer OAuth 2.0-Anfrage weiterleitet. Dies ist normalerweise ein Wert, der so formatiert ist: `//app:<guid>`. 
 
@@ -57,7 +63,7 @@ Wenn Ihre Anwendung ein Client ist, der es dem authentifizierten Benutzer ermög
 Konkrete Schritte hierzu finden Sie unter [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory > Berechtigungen anwenden](walkthrough-register-app-azure-active-directory.md).
 
 <!-- TODO Verify this -->
- Wenn Ihre Anwendung die Server-zu-Server (S2S)-Authentifizierung verwendet, ist dieser Schritt nicht erforderlich. Diese Konfiguration erfordert einen bestimmten Systembenutzer, und die Operationen werden von diesem Benutzerkonto und nicht von jedem Benutzer durchgeführt, der authentifiziert werden muss.
+Wenn Ihre Anwendung die Server-zu-Server (S2S)-Authentifizierung verwendet, ist dieser Schritt nicht erforderlich. Diese Konfiguration erfordert einen bestimmten Systembenutzer, und die Operationen werden von diesem Benutzerkonto und nicht von jedem Benutzer durchgeführt, der authentifiziert werden muss.
 
 ### <a name="enable-implicit-flow"></a>Impliziten Fluss aktivieren
 
@@ -95,14 +101,11 @@ Diese Bibliotheken sind für verschiedene Plattformen verfügbar, wie in der fol
 
 ## <a name="adal-net-client-library-versions"></a>ADAL .NET Client-Bibliotheksversionen
 
-Es gibt zwei Bibliotheken, die .NET-Clients unterstützen. Die ADAL .NET v3 Bibliothek ist die neueste, ersetzt aber nicht die ADAL.NET v2 Bibliothek.
+Common Data Service unterstützt die Anwendungsauthentifizierung mit dem Web-API-Endpunkt mithilfe des Protokolls OAuth 2.0. Die Azure Active Directory-Authentifizierungsbibliothek (ADAL) ist die empfohlene API-Schnittstelle zu diesem Protokoll für Ihre benutzerdefinierten .NET-Anwendungen. ADAL v2.x wurde lange von unseren SDK-APIs unterstützt, und tatsächlich verwenden viele SDK-Codebeispiele diese Version der Bibliothek. Mit Veröffentlichung von ADAL v3 wurde die Breaking Change eingeführt, dass Anmeldeinformationen nicht mehr in ADAL-API-Aufrufe übergeben werden konnten, um die Anwendungssicherheit verbessern.
 
-> [!IMPORTANT]
-> Wenn Sie Xrm.Tooling für .NET Framework-Anwendungen verwenden, müssen Sie die ADAL.NET v2-Bibliothek verwenden.
+Verwenden Sie für Ihre benutzerdefinierten .NET-Anwendungen ADAL v2 oder höher für die Anwendungsauthentifizierung mit dem Web-API-Endpunkt. Wenn Sie die XrmTooling-APIs im Paket [Microsoft.CrmSdk.XrmTooling.CoreAssembly](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CoreAssembly/) NuGet verwenden, wird automatisch die richtige Version der ADAL-Bibliothek in Ihr Visual Studio-Projekt importiert. Beachten Sie, dass der Übergang von v2 ADAL zu ADAL v3 in den XrmToolings-APIs im NuGet-Paket [v9.1.0.13](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CoreAssembly/9.1.0.13) erfolgt. Ausführliche Informationen finden Sie in den Versionshinweisen des Pakets.  
 
-Einer der wesentlichen Unterschiede zwischen den .NET Client-Versionen besteht darin, dass die v2-Bibliothek die Unterstützung für die Übergabe von Benutzeranmeldeinformationen bietet. Die v3-Bibliothek verlangt, dass Benutzeranmeldeinformationen interaktiv über ein Browser-Popup erfasst werden.
-
-Wenn Sie Xrm.Tooling nicht verwenden, können Sie die ADAL.NET v2 oder v3 Client-Bibliotheken mit der Web-API verwenden. Ein Beispiel für die Verwendung der v3-Client-Bibliothek finden Sie unter : [ADAL v3 WhoAmI sample](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/ADALV3WhoAmI/ADALV3WhoAmI).
+Ein Codebeispiel für die Verwendung der v3-ADAL-Bibliothek finden Sie unter: [ADAL v3 WhoAmI sample](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/ADALV3WhoAmI/ADALV3WhoAmI).
 
 ## <a name="use-the-accesstoken-with-your-requests"></a>Verwenden Sie den AccessToken für Ihre Anfragen.
 
@@ -110,7 +113,7 @@ Der Sinn der Verwendung der ADAL-Bibliotheken besteht darin, ein Token zu erhalt
 
 ### <a name="simple-example"></a>Ein einfaches Beispiel
 
-Im Folgenden finden Sie die Mindestmenge an Code, die benötigt wird, um eine einzelne Web-Api-Anfrage auszuführen, aber es ist nicht der empfohlene Ansatz:
+Im Folgenden finden Sie die Mindestmenge an Code, die benötigt wird, um eine einzelne Web-API-Anfrage auszuführen, aber es ist nicht der empfohlene Ansatz. Beachten Sie, dass es sich aufgrund der Verwendung von Clientanmeldeinformationen um ein Beispiel für ADAL v2 handelt:
 
 ```csharp
 class SampleProgram
@@ -269,6 +272,23 @@ class SampleProgram
 
 Auch wenn dieses Beispiel <xref:System.Net.Http.HttpClient>.<xref:System.Net.Http.HttpClient.GetAsync*> verwendet. statt des überschriebenen <xref:System.Net.Http.HttpClient.SendAsync*>, gilt es für jede der <xref:System.Net.Http.HttpClient>-Methoden, die eine Anforderung senden.
 
+### <a name="discover-the-authority-at-run-time"></a>Ermitteln Sie die Behörde zur Laufzeit
+
+Die Authentifizierungsbehörden-URL und die Ressourcen-URL können dynamisch zur Laufzeit mithilfe des folgenden ADAL-Codes bestimmt werden. Dies ist die empfohlene Methode, die zu verwenden ist, im Vergleich zur bekannten Autoritäts-URL ("https://login.microsoftonline.com/common"), die zuvor in einem Codeausschnitt gezeigt wurde.  
+  
+```csharp    
+AuthenticationParameters ap = AuthenticationParameters.CreateFromResourceUrlAsync(  
+                        new Uri("https://mydomain.crm.dynamics.com/api/data/")).Result;  
+  
+String authorityUrl = ap.Authority;  
+String resourceUrl  = ap.Resource;  
+```  
+  
+Für die Web-API besteht eine andere Möglichkeit, die Behörden-URL zu erhalten darin, irgendeine Messageanforderung an den Webdienst zu senden, ohne ein Zugriffstoken anzugeben. Dies wird als *Trägerabfrage* bezeichnet. Die Antwort kann analysiert werden, um die Behörden-URL zu erhalten.  
+  
+```csharp  
+httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "");  
+```  
 
 ## <a name="connect-as-an-app"></a>Als App verbinden
 
@@ -328,9 +348,9 @@ Nachdem Sie die benutzerdefinierte Sicherheitsrolle erstellt haben, müssen Sie 
   
 3. Klicken Sie auf **Neu**. Überprüfen Sie dann, ob Sie das Formular **Anwendungsbenutzer** verwenden.  
   
-    Wenn Sie die Felder **Anwendungs-ID**, **URI der Anwendungs-ID** und **Objekt-ID von Azure AD** im Formular nicht sehen, müssen Sie aus der Liste **Anwendungsbenutzer** auswählen:  
+    Wenn Sie die Felder **Anwendungs-ID**, **URI der Anwendungs-ID** und **Azure AD Objekt-ID** im Formular nicht sehen, müssen Sie aus der Liste **Anwendungsbenutzer** auswählen:  
   
-   ![Auswählen eines Anwendungsbenutzersformulars](media/select-application-user-form.PNG "Auswählen eines Anwendungsbenutzersformulars")  
+   ![Anwendungsbenutzerformular auswählen](media/select-application-user-form.PNG "Anwendungsbenutzerformular auswählen")  
   
 4. Hinzufügen der entsprechenden Werte zu den Feldern:  
   
@@ -341,7 +361,7 @@ Nachdem Sie die benutzerdefinierte Sicherheitsrolle erstellt haben, müssen Sie 
    |**Vollständiger Name**|Der Name Ihrer Anwendung.|  
    |**Primäre E-Mail-Adresse**|Die E-Mail-Adresse des Benutzers.|  
   
-    Die Felder **URI der Anwendungs-ID** und **Objekt-ID von Azure AD** sind gesperrt und können Sie keine Werte für diese Felder festlegen.  
+    Die Felder **URI der Anwendungs-ID** und **Azure AD Objekt-ID** sind gesperrt und können Sie keine Werte für diese Felder festlegen.  
   
     Wenn Sie diesen Benutzer erstellen, werden die Werte für diese Felder aus Azure AD basierend auf dem Wert der **Anwendungs-ID** abgerufen, wenn Sie den Benutzer speichern.  
   

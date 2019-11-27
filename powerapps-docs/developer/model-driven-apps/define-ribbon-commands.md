@@ -1,24 +1,27 @@
 ---
 title: Menübandbefehle definieren (modellgesteuerte Apps) | Microsoft Docs
-description: 'Ein Menübandbefehl erstellt eine wiederverwendbare Definition, auf die von Menübandkontrollelementen verwiesen werden kann.'
+description: Ein Menübandbefehl erstellt eine wiederverwendbare Definition, auf die von Menübandkontrollelementen verwiesen werden kann.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 60933770-8c7c-499c-12b4-8b64f6eedb35
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ef323b97c8f051519b8d9755e808d8a2f2dfd64c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748467"
 ---
-
 # <a name="define-ribbon-commands"></a>Menübandbefehle definieren
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-commands -->

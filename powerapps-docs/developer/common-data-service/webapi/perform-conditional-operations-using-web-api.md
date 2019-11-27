@@ -1,25 +1,31 @@
 ---
 title: Ausführen bedingter Vorgänge mit der Web-API (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie Bedingungen erstellen, die bestimmen, ob und wie die Vorgänge mithilfe von Web-API ausgeführt werden'
+description: Lesen Sie, wie Sie Bedingungen erstellen, die bestimmen, ob und wie die Vorgänge mithilfe von Web-API ausgeführt werden
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 08/31/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 771002b0-825a-462d-bbf0-1aeba4b726c8
 caps.latest.revision: 16
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f9bc022aadc020ecd46f6665efbd50a5322ac45a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748615"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Bedingte Vorgänge mithilfe der Web-API ausführen
 
@@ -85,7 +91,7 @@ Ein upsert arbeitet gewöhnlich, indem es eine Entität erstellt, wenn sie nicht
  
 ### <a name="prevent-create-in-upsert"></a>Erstellen im Upsert verhindern
 
-Wenn Sie Daten aktualisieren und es irgendeine Möglichkeit gibt, dass die Entität absichtlich gelöscht wurde, möchten Sie die Entität nicht neu erstellen. Um dies zu verhindern, fügen Sie einen `If-Match`-Header mit dem Wert "`*`" hinzu.  
+Wenn Sie Daten aktualisieren und es irgendeine Möglichkeit gibt, dass die Entität absichtlich gelöscht wurde, möchten Sie die Entität nicht neu erstellen. Um dies zu verhindern, fügen Sie der Anfrage einen `If-Match`-Kopf mit dem Wert "*" hinzu.  
   
  **Anforderung**  
 ```http  
@@ -93,7 +99,7 @@ PATCH [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-00000000
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
-If-Match: "*"  
+If-Match: *  
   
 {  
     "name": "Updated Sample Account ",  
@@ -130,7 +136,7 @@ Content-Type: application/json; odata.metadata=minimal
   
 ### <a name="prevent-update-in-upsert"></a>Update im Upsert verhindern
 
-Wenn Sie Daten einfügen, könnte es sein, dass ein Datensatz mit dem gleichen `id`-Wert existiert bereits im System, den Sie nicht aktualisieren wollen. Um dies zu verhindern, fügen Sie einen `If-None-Match`-Header mit dem Wert "`*`" hinzu.  
+Wenn Sie Daten einfügen, könnte es sein, dass ein Datensatz mit dem gleichen `id`-Wert existiert bereits im System, den Sie nicht aktualisieren wollen. Um dies zu verhindern, fügen Sie der Anfrage einen `If-None-Match`-Kopf mit dem Wert "*" hinzu.  
   
  **Anforderung**  
 ```http  
@@ -138,7 +144,7 @@ PATCH [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-00000000
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
-If-None-Match: "*"  
+If-None-Match: *  
   
 {  
     "name": "Updated Sample Account ",  

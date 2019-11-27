@@ -1,24 +1,24 @@
 ---
 title: 'Schieberegler-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, zum Schieberegler-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4c0d108f6aac4df7d0e10a316ba51f6f35ee3338
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 45314238783e4cbf53332e8531bc0d76c679265f
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993303"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649866"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="slider-control-in-powerapps"></a>Schieberegler-Steuerelement in PowerApps
@@ -28,13 +28,13 @@ Ein Steuerelement, mit dem der Benutzer durch Ziehen eines Handles einen Wert an
 Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert eingeben. Ziehen Sie dazu den Handle des Schiebereglers von links nach rechts oder von unten nach oben, je nach ausgewählter Richtung.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)** : Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.
+**[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
 
 **Max**: Der maximale Wert, auf den der Benutzer einen Schieberegler oder eine Bewertung festlegen kann.
 
 **Min**: gibt den Mindestwert an, auf den der Benutzer einen Schieberegler festlegen kann.
 
-**[Value](properties-core.md)** : Gibt den Wert eines Eingabesteuerelements an.
+**[Value](properties-core.md)** : Gibt den Wert des Eingabesteuerelements an.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben
@@ -65,7 +65,7 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 
 **[HoverBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer den Mauszeiger über das Steuerelement hält.
 
-**Layout**: gibt an, ob der Benutzer einen Bildlauf durch einen Katalog durchführt oder einen Schieberegler von oben nach unten anpasst (**Vertical**) oder von links nach rechts (**Horizontal**).
+**Layout** – Gibt an, ob der Benutzer in einem Katalog scrollen oder einen Schieberegler von oben nach unten (**Vertical**) oder von links nach rechts (**Horizontal**) verschieben muss.
 
 **[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
@@ -75,19 +75,19 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 
 **RailFill**: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **FALSE** ist, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.
 
-**RailHoverFill**: Wenn Sie auf ein Umschalten-Steuerelement oder einen Schieberegler zeigen, gibt dies die Hintergrundfarbe des Rechtecks in einem Umschalten-Steuerelement mit dem Wert **FALSE** an, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.
+**RailHoverFill**: Wenn Sie auf das Umschalten-Steuerelement oder den Schieberegler zeigen: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **false** ist, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.
 
 **ReadOnly**: Gibt an, ob ein Benutzer den Wert eines Schiebereglers oder eines Bewertung-Steuerelements ändern kann.
 
-**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **ShowValue**: Gibt an, ob ein Wert des Schiebereglers oder der Bewertung angezeigt wird, wenn der Benutzer diesen Wert ändert oder auf das Steuerelement zeigt.
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
-**ValueFill**: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **TRUE** ist, oder die Farbe der Linie auf der linken Seite des Handles in einem Schieberegler-Steuerelement.
+**ValueFill**: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **true** ist, oder die Farbe der Linie auf der linken Seite des Handles in einem Schieberegler-Steuerelement.
 
 **ValueHoverFill**: Wenn Sie mit dem Mauszeiger auf das Umschalten-Steuerelement oder den Schieberegler zeigen: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **TRUE** ist, oder die Farbe der Linie auf der linken Seite des Handles in einem Schieberegler-Steuerelement.
 
@@ -124,7 +124,7 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **ValueFill** und **RailFill**
 * **ValueHoverFill** und **RailHoverFill**
-* **[FocusedBorderColor](properties-color-border.md)** und die Farbe außerhalb des Steuerelements
+* **[FocusedBorderColor](properties-color-border.md)** und der Farbe außerhalb des Steuerelements
 * **ValueFill** und Hintergrundfarbe
 * **RailFill** und Hintergrundfarbe
 * **ValueHoverFill** und Hintergrundfarbe
@@ -135,7 +135,7 @@ Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast ge
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
 * Der Wert des Schiebereglers muss bei der Interaktion mit der Tastatur angezeigt werden. Dafür können Sie eine der folgenden Methoden verwenden:
     * Legen Sie **ShowValue** auf **TRUE** fest.
     * Fügen Sie eine **[Bezeichnung](control-text-box.md)** hinzu, die an den Schieberegler grenzt. Legen Sie den **[Text](properties-core.md)** der Bezeichnung auf den **[Wert](properties-core.md)** des Schiebereglers fest.

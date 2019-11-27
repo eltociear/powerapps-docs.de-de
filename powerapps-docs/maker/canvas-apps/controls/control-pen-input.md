@@ -1,24 +1,24 @@
 ---
 title: 'Stifteingabe-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Stifteingabe-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1600f765e40849b47cb41b29c5d4c3fab86b4caf
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4da95086c99c03fdd56214a0d2fb637beaa6243c
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993397"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650360"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="pen-input-control-in-powerapps"></a>Stifteingabe-Steuerelement in PowerApps
@@ -61,7 +61,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -80,7 +80,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein Steuerelement **[Button](control-button.md)** hinzu, verschieben Sie es unter **MyDoodles**, und legen Sie die Eigenschaft **[Text](properties-core.md)** des Steuerelements **[Button](control-button.md)** so fest, dass **Add** angezeigt wird.
-3. Legen Sie die Eigenschaft **[OnSelect](properties-core.md)** des Steuerelements **[Button](control-button.md)** auf die folgende Formel fest:<br>
+3. Legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft des **[Schaltflächen](control-button.md)** -Steuerelements auf die folgende Formel fest:<br>
    **Collect(Doodles; {Sketch:MyDoodles.Image})**
 4. Fügen Sie ein Steuerelement **Image gallery** hinzu, verschieben Sie es unter das Steuerelement **[Button](control-button.md)** , und verkleinern Sie die Breite des **Image gallery**, bis drei Elemente angezeigt werden.
 5. Legen Sie die Eigenschaft **[Items](properties-core.md)** des Steuerelements **Image gallery** auf **Doodles** fest, und drücken Sie anschließend F5.

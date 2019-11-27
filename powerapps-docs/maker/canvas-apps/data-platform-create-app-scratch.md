@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c058e5f5710c090c39c2971974d57aacd40923a8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bec8524ac6afc265eba5d9a6edf381c5ebf2c340
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986013"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540366"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Erstellen einer Canvas-App von Grund auf mit Common Data Service
@@ -35,7 +35,7 @@ Wenn Sie eine App mit Common Data Service erstellen, müssen Sie keine Verbindun
 
 ## <a name="open-a-blank-app"></a>Öffnen einer leeren App
 
-1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 1. Wählen Sie unter **Eigene App erstellen** die Option **Canvas-App ohne Vorlage** aus.
 
@@ -100,12 +100,12 @@ Wenn Sie eine App mit Common Data Service erstellen, müssen Sie keine Verbindun
     - **Kontoname**
     - **Adresse 1: Straße 1**
     - **Adresse 1: Ort**
-    - **Adresse 1: Postleitzahl**
+    - **Adresse 1: Zip/Postleitzahl**
     - **Anzahl der Mitarbeiter**
     - **Jahresumsatz**
 
     > [!NOTE]
-    > Außerhalb dieses Szenarios können Sie ein benutzerdefiniertes Feld erstellen, indem Sie **Neues Feld**auswählen, die erforderlichen Informationen bereitstellen und dann **abgeschlossen**auswählen. Weitere Informationen finden Sie unter: [Erstellen Sie ein Feld](../common-data-service/create-edit-field-portal.md#create-a-field).<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Auswählen und Hinzufügen eines Felds")
+    > Außerhalb dieses Szenarios können Sie ein benutzerdefiniertes Feld erstellen, indem Sie **Neues Feld**auswählen, die erforderlichen Informationen bereitstellen und dann **abgeschlossen**auswählen. Weitere Informationen finden Sie unter [Erstellen eines Felds](../common-data-service/create-edit-field-portal.md#create-a-field).<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Select and add a field")
 
 1. Klicken Sie auf **Hinzufügen**.
 

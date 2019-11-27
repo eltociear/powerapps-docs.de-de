@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71924439"
 ---
 # <a name="create-a-new-record"></a>Neuen Datensatz erstellen
@@ -31,7 +31,7 @@ Mit dem Befehl **Neuen Datensatz erstellen** oder **Schnellerfassung** ist die E
 > [!NOTE]
 > Die Option **Schnellerfassung** ist nur für Datensätze verfügbar, die von Ihrem Administrator aktiviert werden.
     
-1. Klicken Sie auf der Navigationsleiste auf das **Pluszeichen** ![Schaltfläche „Datensatz erstellen“](media/create-record-button.png "Schaltfläche „Datensatz erstellen“"), und wählen Sie dann das gewünschte Element aus.  
+1. Wählen Sie auf der Navigationsleiste die Schaltfläche mit dem **Pluszeichen** ![Create Record](media/create-record-button.png "Schaltfläche Datensatz erstellen")aus, und wählen Sie dann das gewünschte Element aus.  
 
     > [!div class="mx-imgBorder"] 
     > ![Schaltfläche Datensatz erstellen](media/newrecord1.png "Schaltfläche Datensatz erstellen")
@@ -42,9 +42,9 @@ Mit dem Befehl **Neuen Datensatz erstellen** oder **Schnellerfassung** ist die E
      > ![Speichern eines Datensatzes](media/quick_create.png "Speichern eines Datensatzes")
   
 > [!NOTE]
-> Ein Sternchen ![Schaltfläche „Pflichtfeld“](media/required-field-button.png "Schaltfläche „Pflichtfeld“") neben dem Feld auf dem Bildschirm bedeutet, dass dieses Feld ein Pflichtfeld ist. Wenn Sie auf **Speichern und schließen** klicken, noch bevor Sie die erforderlichen Felder ausgefüllt haben, wird eine Fehlermeldung angezeigt. Eine Warnung wird angezeigt, wenn Sie Informationen eingegeben haben und auf **Abbrechen** geklickt haben.
+> Eine ![Feld Schaltfläche](media/required-field-button.png "Erforderliche Feld Schaltfläche") , die für das Feld auf dem Bildschirm erforderlich ist, bedeutet, dass das Feld erforderlich ist. Wenn Sie auf **Speichern und schließen** klicken, noch bevor Sie die erforderlichen Felder ausgefüllt haben, wird eine Fehlermeldung angezeigt. Eine Warnung wird angezeigt, wenn Sie Informationen eingegeben haben und auf **Abbrechen** geklickt haben.
 >   
-> Ein Pluszeichen ![Schaltfläche „Erforderliches Feld“](media/recommended-field-button.png "Schaltfläche „Erforderliches Feld“") neben dem Feld auf dem Bildschirm bedeutet, dass von Ihrer Organisation empfohlen wird, dieses Feld auszufüllen.  
+> Die ![Feld Schaltfläche](media/recommended-field-button.png "Empfohlene Feld Schaltfläche") für ein Pluszeichen, das neben dem Feld auf dem Bildschirm angezeigt wird, bedeutet, dass Ihre Organisation das Ausfüllen des Felds empfiehlt.  
 
 
 ## <a name="create-a-new-record-using-the-new-button"></a>Erstellen eines neuen Datensatzes mit der Schaltfläche "neu" 

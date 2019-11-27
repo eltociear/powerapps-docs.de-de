@@ -1,6 +1,6 @@
 ---
 title: Verwenden der Server-zu-Server-Authentifizierung mit mehreren Mandanten (Common Data Service) | MicrosoftDocs
-description: 'Beschreibt, wie Sie einen Anwendungsbenutzer für Server-zu-Server-Authentifizierung mit Common Data Service konfigurieren.'
+description: Beschreibt, wie Sie einen Anwendungsbenutzer für Server-zu-Server-Authentifizierung mit Common Data Service konfigurieren.
 ms.custom: ''
 ms.date: 2/28/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ab98ceb55faaefdc015fb969daab844428b7b53a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753766"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>Verwenden Sie mehrinstanzenfähige Server-zu-Server-Authentifizierung
 
@@ -84,7 +90,7 @@ In diesem Szenario kann jeder Common Data Service Mandant Ihre mögliche mehrins
   
  Wenn Sie ein Projekt für diese Optionen konfigurieren, wird es so konfiguriert, dass OWIN Middleware für eine Grundanwendung verwendet wird, die dieses Szenario unterstützt. Mit einigen grundlegenden Änderungen arbeiten sie mit Common Data Service. 
   
- Im Erstellungs- und Anmeldeprozess Ihrer Anwendung für die Entwicklung werden Sie wahrscheinlich `http://localhost` als **Anmelde-URL** und **Antworte-URL** Wert verwenden, damit Sie Ihre Anwendung lokal testen und von Fehlern befreien können, bevor Sie sie veröffentlichen. Sie müssen die Werte ändern, bevor Sie die App veröffentlichen.  
+ Im Erstellungs- und Anmeldeprozess Ihrer Anwendung für die Entwicklung werden Sie wahrscheinlich `https://localhost` als **Anmelde-URL** und **Antworte-URL** Wert verwenden, damit Sie Ihre Anwendung lokal testen und von Fehlern befreien können, bevor Sie sie veröffentlichen. Sie müssen die Werte ändern, bevor Sie die App veröffentlichen.  
   
  Wenn Sie die App registrieren, müssen Sie einen Schlüssel erstellen, der auch als `ClientSecret` bekannt ist. Diese Schlüssel können für  1oder 2 Jahre konfiguriert werden. Als Host der Anwendung müssen Sie diesen Wert wie ein Kennwort behandeln und es liegt in Ihrer Verantwortung, die Schlüssel vor Ablauf zu erneuern. Sie möchten Key Vault verwenden. Weitere Informationen: [https://azure.microsoft.com/services/key-vault/](https://azure.microsoft.com/services/key-vault/)  
   
@@ -149,9 +155,9 @@ In diesem Szenario kann jeder Common Data Service Mandant Ihre mögliche mehrins
   
 3. Klicken Sie auf **Neu**. Überprüfen Sie dann, ob Sie das Formular **Anwendungsbenutzer** verwenden.  
   
-    Wenn Sie die Felder **Anwendungs-ID**, **URI der Anwendungs-ID** und **Objekt-ID von Azure AD** im Formular nicht sehen, müssen Sie aus der Liste **Anwendungsbenutzer** auswählen:  
+    Wenn Sie die Felder **Anwendungs-ID**, **URI der Anwendungs-ID** und **Azure AD Objekt-ID** im Formular nicht sehen, müssen Sie aus der Liste **Anwendungsbenutzer** auswählen:  
   
-   ![Auswählen eines Anwendungsbenutzersformulars](media/select-application-user-form.PNG "Auswählen eines Anwendungsbenutzersformulars")  
+   ![Anwendungsbenutzerformular auswählen](media/select-application-user-form.PNG "Anwendungsbenutzerformular auswählen")  
   
 4. Hinzufügen der entsprechenden Werte zu den Feldern:  
   

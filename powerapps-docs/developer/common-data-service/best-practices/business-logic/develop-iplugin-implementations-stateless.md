@@ -1,6 +1,6 @@
 ---
 title: Entwicklung von IPlugin-Implementierungen als zustandslos | MicrosoftDocs
-description: 'Mitglieder von Klassen, die IPlugin implementieren, sind potenziellen Thread-Sicherheitsproblemen ausgesetzt, die zu Dateninkonsistenz- oder Performanceproblemen führen können.'
+description: Mitglieder von Klassen, die IPlugin implementieren, sind potenziellen Thread-Sicherheitsproblemen ausgesetzt, die zu Dateninkonsistenz- oder Performanceproblemen führen können.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -13,13 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/15/2019
+ms.date: 9/05/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9a0a91420cf29a2f44e8d1f32520e7fb529e07eb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753062"
 ---
 # <a name="develop-iplugin-implementations-as-stateless"></a>Entwicklung von IPlugin-Implementierungen als zustandslose Systeme
 
@@ -40,7 +46,11 @@ Mitglieder von Klassen, die die <xref href="Microsoft.Xrm.Sdk.IPlugin?text=IPlug
 
 ## <a name="guidance"></a>Anleitung
 
-Verwenden Sie bei der Implementierung von <xref:Microsoft.Xrm.Sdk.IPlugin> keine Memberfelder und -eigenschaften und schreiben Sie die Methode <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*> als zustandslose Operation.  Alle Informationen über den Zustand pro Aufruf sollten nur über den Ausführungskontext abgerufen werden.  Versuchen Sie nicht, Ausführungszustandsdaten in Elementfeldern oder Eigenschaften zu speichern, die während des aktuellen oder nächsten Plugin-Aufrufs verwendet werden, es sei denn, diese Daten wurden aus dem Konfigurationsparameter gewonnen, der dem überladenen Konstruktor zur Verfügung gestellt wurde.
+Verwenden Sie bei der Implementierung von <xref:Microsoft.Xrm.Sdk.IPlugin> keine Memberfelder und -eigenschaften und schreiben Sie die Methode <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*> als zustandslose Operation.  Alle Informationen über den Zustand pro Aufruf sollten nur über den Ausführungskontext abgerufen werden.  
+
+Versuchen Sie nicht, Ausführungszustandsdaten in Elementfeldern oder Eigenschaften zu speichern, die während des aktuellen oder nächsten Plugin-Aufrufs verwendet werden, es sei denn, diese Daten wurden aus dem Konfigurationsparameter gewonnen, der dem überladenen Konstruktor zur Verfügung gestellt wurde.
+
+Verwenden Sie keinen Code, der sich an AppDomain-Ereignissen registriert. Die Plugin-Logik sollte sich nicht auf AppDomain-Ereignisse oder -Eigenschaften verlassen, da die interne Implementierung der Plugin-Infrastruktur das Ausführungsverhalten zu jedem Zeitpunkt ändern kann. Dies kann zu Fehlern führen, auch wenn der Code zu einem bestimmten Zeitpunkt funktionierte.
 
 Leserechte, statische und konstante Elemente sind von Natur aus threadsicher und können auch innerhalb einer Plugin-Klasse zuverlässig verwendet werden. Im Folgenden finden Sie einige Beispiele, wie Sie threadsichere Plug-Ins pflegen können:
 
@@ -189,7 +199,7 @@ Leserechte, statische und konstante Elemente sind von Natur aus threadsicher und
 
 ## <a name="additional-information"></a>Weitere Informationen
 
-Nachdem Common Data Services die Plugin-Klasse instanziiert hat, speichert die Plattform diese Plugin-Instanz aus Performancegründen zwischen. Die Zeitspanne, in der eine Plug-Instanz im Cache gehalten wird, wird von der Plattform verwaltet.  Bestimmte Vorgänge, wie das Ändern der Registrierungseigenschaften eines Plug-Ins, lösen eine Benachrichtigung an die Plattform aus, um den Cache zu aktualisieren.  In diesen Szenarien wird das Plug-in neu initialisiert.
+Nachdem Common Data Service die Plugin-Klasse instanziiert hat, speichert die Plattform diese Plugin-Instanz aus Performance-Gründen zwischen. Die Zeitspanne, in der eine Plug-Instanz im Cache gehalten wird, wird von der Plattform verwaltet.  Bestimmte Vorgänge, wie das Ändern der Registrierungseigenschaften eines Plug-Ins, lösen eine Benachrichtigung an die Plattform aus, um den Cache zu aktualisieren.  In diesen Szenarien wird das Plug-in neu initialisiert.
 
 Da die Plattform Plugin-Klasseninstanzen zwischenspeichert, wird der Konstruktor nicht bei jedem Aufruf der Plugin-Ausführung aufgerufen.  Aus diesem Grund sollten IPlugin-Implementierungen nicht vom Zeitpunkt der Operationen im Konstruktor abhängen, abgesehen vom Erhalten statischer Konfigurationsdaten. 
 
@@ -200,4 +210,4 @@ Ein weiterer Grund, warum IPlugins zustandslos sein sollten, ist, dass mehrere S
 ### <a name="see-also"></a>Siehe auch
 
 [Schreiben eines Plug-Ins](../../write-plug-in.md)<br />
-[CRM Team Blog: Thread-Sicherheit in Plug-Ins](http://blogs.msdn.com/b/crm/archive/2008/11/18/member-static-variable-and-thread-safety-in-plug-in-for-crm-4-0.aspx)<br />
+[CRM Team Blog: Thread-Sicherheit in Plug-Ins](https://blogs.msdn.com/b/crm/archive/2008/11/18/member-static-variable-and-thread-safety-in-plug-in-for-crm-4-0.aspx)<br />

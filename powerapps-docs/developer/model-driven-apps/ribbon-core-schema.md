@@ -10,18 +10,24 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d1f8805f2cb817e3e3859942f3640ea335ae7a93
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753594"
 ---
 # <a name="ribbon-core-schema"></a>Menüband-Core-Schema
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/ribbon-core-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbon-core-schema -->
 
 Folgendes ist eine Schemadefinition für den Menüband-Kernanteil einer Import-/Exportanpassungsdatei. Es ist enthalten aus [Anpassungs-Lösungs-Datei-Schema](../common-data-service/customization-solutions-file-schema.md). `RibbonCore.xsd` Schema enthält `RibbonTypes.xsd` und `RibbonWss.xsd`, und Sie können das Schema im `Schemas\9.0.0.2090\RibbonCore.xsd`-Ordner finden, wenn Sie die Schemas-zip-Datei herunterladen.
 
-Laden Sie [Schemas](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) herunter.
+Laden Sie [Schemas](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) herunter.
 
 Weitere Informationen finden Sie unter [Packen und Verteilen von Erweiterungen mit Lösungen](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
   
@@ -29,7 +35,7 @@ Weitere Informationen finden Sie unter [Packen und Verteilen von Erweiterungen m
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="CrmRibbonCore" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema id="CrmRibbonCore" xmlns:xs="https://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="RibbonTypes.xsd" />
     <xs:include schemaLocation="RibbonWSS.xsd" />
 

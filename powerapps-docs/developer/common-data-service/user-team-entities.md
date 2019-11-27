@@ -1,6 +1,6 @@
 ---
-title: Benutzer- und Teamentitäten (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie mehr über die Benutzer- und Teamverwaltung, mit der Sie die Benutzerkonten und -profile erstellen und verwalten können.'
+title: Benutzer- und Teamentitäten (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Benutzer- und Teamverwaltung, mit der Sie die Benutzerkonten und -profile erstellen und verwalten können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6915cd693589ed0e5d9b41ca96ffb96450d1132c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753737"
 ---
 # <a name="user-and-team-entities"></a>Benutzer- und Teamentitäten
 
@@ -54,10 +60,10 @@ Die Benutzer- und Teamverwaltung ist der Bereich von Common Data Service, in dem
 
 ## <a name="community-tools"></a>Community-Tools
 
-**Hilfsprogramm für Benutzereinstellungen** ist ein Tool, das die XrmToolbox-Community für Common Data Service entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
+**Hilfsprogramm für Benutzereinstellungen** ist ein Tool, das von der XrmToolbox-Community für Common Data Service entwickelt wurde. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
 
 > [!NOTE]
-> Die Communitytools sind kein Produkt von Common Data Service und es wird kein Support für die Communitytools angeboten.
+> Die Communitytools sind kein Produkt von Common Data Service. Es wird kein Support für die Communitytools angeboten.
 > Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>Siehe auch  
@@ -71,5 +77,5 @@ Die Benutzer- und Teamverwaltung ist der Bereich von Common Data Service, in dem
  [Beispiel: Deaktivieren eines Benutzers](/dynamics365/customer-engagement/developer/sample-disable-user)   
  [Beispiel: Datensätze mithilfe von GrantAccess, ModifyAccess und RevokeAccess Messages teilen](org-service/samples/share-records-using-grantaccess-modifyaccess-revokeaccess-messages.md)   
  [Beispiel: Freigeben eines Datensatzes mithilfe eines Zugriffsteams](org-service/samples/share-record-using-access-team.md)   
- [Blog: Dienstkonten – Nicht-interaktive Benutzer](http://go.microsoft.com/fwlink/p/?LinkId=234350)   
+ [Blog: Dienstkonten – Nicht-interaktive Benutzer](https://go.microsoft.com/fwlink/p/?LinkId=234350)   
  [Rechte- und Rollenentitäten](/dynamics365/customer-engagement/developer/privilege-role-entities)

@@ -1,45 +1,46 @@
 ---
 title: Anzeigen des Verlaufs einer Lösung | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie den Verlauf einer Lösung anzeigen'
-keywords: null
+description: Erfahren Sie, wie Sie den Verlauf einer Lösung anzeigen
+keywords: ''
 ms.date: 05/19/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
-  - Dynamics 365 for Customer Engagement Version 9.x
-  - powerapps
-ms.assetid: null
+ms.assetid: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
-caps.latest.revision: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+caps.latest.revision: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 67239062f30efb80fb8ee416614c1088e20c4075
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702189"
 ---
-
 # <a name="view-the-history-of-a-solution"></a>Anzeigen des Verlaufs einer Lösung
 Sie können Informationen zu Lösungsvorgängen im Bereich **Lösungen** einer modellgesteuerten App anzeigen. Ein Vorgang kann ein Lösungsimport, -export oder -löschung sein. Im Lösungsverlauf werden Informationen wie die Lösungsversion, der Lösungsherausgeber, die Art des Vorgangs, die Start- und Endzeit des Vorgangs sowie der Vorgangsstatus angezeigt.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solutions-history-custom-view.png "Benutzerdefinierte Ansicht des Lösungsverlaufs")
+> ![](media/solutions-history-custom-view.png "Solutions history custom view")
 
 ## <a name="view-solution-history"></a>Anzeige des Lösungsverlaufs
 1. Wählen Sie **Einstellungen** und dann **Lösungsverlauf** aus.
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/solution-history-sitemap.png "Lösungsverlaufs-Bereich")
+     > ![](media/solution-history-sitemap.png "Solution History area")
 
      > [!NOTE]
-     > Um über eine modellgesteuerte App mit einheitlicher PowerApps-Benutzeroberfläche zum Bereich **Einstellungen** zu gelangen, wählen Sie **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) in der App-Symbolleiste und dann **Erweiterte Einstellungen** aus. 
+     > Um zum Bereich **Einstellungen** aus einer PowerApps vereinheitlichten, schnittstellenmodellgesteuerten Anwendung zu gelangen, wählen Sie **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) in der App-Symbolleiste und dann **Erweiterte Einstellungen**. 
 
 2. Standardmäßig wird die Ansicht **Benutzerdefinierter Lösungsverlauf** angezeigt. Die folgenden Ansichten sind im Bereich **Lösungsverlauf** verfügbar. 
 - **Alle Lösungsverläufe**. Zeigt die Lösungshistorie für das interne System und benutzerdefinierte Lösungen. 
@@ -61,12 +62,12 @@ Jeder Lösungsverlaufsdatensatz ist schreibgeschützt und enthält die folgenden
 Wenn ein Lösungsvorgang einen Fehler enthält, können Sie ihn auswählen, um eine Seite mit zusätzlichen Fehlerdetails anzuzeigen. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solution-history-with-failure.png "Lösungsverlauf mit Vorgangsfehler")
+> ![](media/solution-history-with-failure.png "Solution history with operation error")
 
 Die Detailseite enthält Informationen einschließlich der **Ausnahmenachricht**, die bei der Diagnose der zugrunde liegenden Ursache für den Vorgangsfehler helfen. Einige Fehler, einschließlich Lösungsabhängigkeitsfehler, umfassen unter Umständen auch Links zu **Lösungsebenen**, um Ihnen die Fehlerdiagnose zu erleichtern. Die **Aktivitäts-ID** kann hilfreich sein, wenn Sie sich an den Microsoft-Kundensupport wenden müssen. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solution-history-error-details.png "Lösungsvorgangs-Fehlerdetails")
+> ![](media/solution-history-error-details.png "Solution operation error details")
 
 ### <a name="see-also"></a>Siehe auch
 [Anzeigen von Lösungsebenen](solution-layers.md)  <br />

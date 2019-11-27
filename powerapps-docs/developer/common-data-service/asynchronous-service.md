@@ -1,23 +1,29 @@
 ---
-title: Asynchroner Dienst (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie grundlegendes Asynchrone Dienste, die den Systemauftrag verwalten.'
+title: Asynchroner Service (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie grundlegendes Asynchrone Dienste, die den Systemauftrag verwalten.
 ms.custom: ''
 ms.date: 11/27/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3a387c23af14a8772eb42900c63aed45dd8c13cb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753078"
 ---
 # <a name="asynchronous-service"></a>Asynchroner Service
 
-Der asynchrone Service führt die Vorgänge mit langer Laufzeit unabhängig vom hauptsächlichen Common Data Service-Kernvorgang aus. Dies führt zu einer optimierten Gesamtsystemleistung und Skalierbarkeit. Der asynchrone Dienst verfügt über eine verwaltete First-In, First-Out (FIFO)-Warteschlange für die Ausführung von asynchron registrierten Plug-Ins, Workflows und Operationen wie Massenmail, Massenimport und Verbreitung von Aktivitätsweitergaben. Diese Vorgänge werden beim asynchronen Dienst registriert und in regelmäßigen Intervallen ausgeführt, wenn der Dienst die Warteschlange verarbeitet.
+Der asynchrone Dienst führt zeitaufwändige Vorgänge unabhängig vom Common Data Service-Kernvorgang aus. Dies führt zu einer optimierten Gesamtsystemleistung und Skalierbarkeit. Der asynchrone Dienst verfügt über eine verwaltete First-In, First-Out (FIFO)-Warteschlange für die Ausführung von asynchron registrierten Plug-Ins, Workflows und Operationen wie Massenmail, Massenimport und Verbreitung von Aktivitätsweitergaben. Diese Vorgänge werden beim asynchronen Dienst registriert und in regelmäßigen Intervallen ausgeführt, wenn der Dienst die Warteschlange verarbeitet.
 
 
 Nachdem ein Ereignis eingetreten ist und alle synchronen Erweiterungen verarbeitet wurden, serialisiert die Plattform den Kontext für alle asynchronen Erweiterungen und speichert ihn als **Systemauftrag** in der [AsyncOperation-Entität](reference/entities/asyncoperation.md) in der Datenbank. Der Systemauftrag definiert und verfolgt die Ausführung des asynchronen Betriebs. Wenn Ressourcen verfügbar werden, werden Systemaufträge verarbeitet und die von ihnen definierten Operationen ausgeführt. Alle in der Erweiterung definierten Datenoperationen werden erneut von der Ereignisausführungspipeline verarbeitet, diesmal jedoch als synchrone Operation.
@@ -221,7 +227,7 @@ Der `RecurrenceStartTime` ist lediglich ein Datumszeitwert, der angibt, wann der
 
 Das Attribut `RecurrencePattern` speichert Informationen darüber, wie häufig wiederkehrende Systemaufträge auftreten. Dieser Wert kann von der Plattform festgelegt werden, wenn eine neue Asynchronisations-Entität erstellt wird. Sie können diesen Wert festlegen, um das Muster zu ändern.
 
-Die Werte für dieses Attribut verwenden Teile des [Internetstandards RFC2445 (Internet Calendaring and Scheduling Core Object Specification)](http://www.rfc-editor.org/info/rfc2445).
+Die Werte für dieses Attribut verwenden Teile des [Internetstandards RFC2445 (Internet Calendaring and Scheduling Core Object Specification)](https://www.rfc-editor.org/info/rfc2445).
 
 Die folgende Tabelle enthält einige Beispiele:
 

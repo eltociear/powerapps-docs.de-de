@@ -1,12 +1,12 @@
 ---
-title: Abschnittseigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | MicrosoftDocs
+title: Abschnittseigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | Microsoft-Dokumentation
 description: Grundlegendes zu Abschnittseigenschaften für ein Hauptformular
 Keywords: Hauptformular; Abschnittseigenschaften; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/06/2018
@@ -14,10 +14,16 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 2d3af6e9-e8a4-4129-b708-383b2740c015
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45764a992215c697361f77da656182bdbb0e7783
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755001"
 ---
 # <a name="model-driven-app-form-section-properties"></a>Abschnittseigenschaften von Formularen in modellgesteuerten Apps.
 
@@ -27,8 +33,8 @@ search.app:
   
  Kopf- und Fußzeilen entsprechen Abschnitten, können jedoch nicht entfernt werden. Wenn Sie nichts enthalten, werden sie nicht angezeigt. 
 
-Sie können auf **Abschnitteigenschaften** über die PowerApps-Webseite zugreifen. 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+Sie können auf **Abschnittseigenschaften** über die PowerApps-Website zugreifen. 
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**. 
 

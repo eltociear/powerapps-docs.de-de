@@ -1,6 +1,6 @@
 ---
-title: FetchXML-Schema (Common Data Service) | Microsoft Docs
-description: 'Die FetchXML-Abfragesprache wird verwendet, um Abfragen anhand der Common Data Service-Datenbank zu erstellen'
+title: FetchXML-Schema (Common Data Service) | Microsoft-Dokumentation
+description: Die FetchXML-Abfragesprache wird verwendet, um Abfragen anhand der Common Data Service-Datenbank zu erstellen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,24 +10,30 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cb2720eac36aab2b84eaa2b973c4aab7551be123
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752974"
 ---
 # <a name="fetchxml-schema"></a>FetchXML-Schema
 
 Die FetchXML-Abfragesprache wird verwendet, um Abfragen anhand der Common Data Service-Datenbank zu erstellen. Folgendes ist das Schema für die FetchXML-Abragesprache. Weitere Informationen finden Sie unter [Verwendung von FetchXML, um eine Abfrage zu erstellen](use-fetchxml-construct-query.md).
 
 Sie können dieses Schema im Ordner `Schemas\9.0.0.2090\Fetch.xsd` finden, wenn Sie die Schemas-zip-Datei herunterladen.
-Laden Sie [Schemas](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) herunter.
+Laden Sie [Schemas](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) herunter.
   
 ## <a name="fetchxml-schema"></a>FetchXML-Schema  
   
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<xs:schema id="fetch" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:mstns="http://tempuri.org/fetch/unique">
+<xs:schema id="fetch" elementFormDefault="qualified" xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns:mstns="https://tempuri.org/fetch/unique">
   <xs:annotation>
     <xs:documentation>Schema name: fetch-schema</xs:documentation>
   </xs:annotation>

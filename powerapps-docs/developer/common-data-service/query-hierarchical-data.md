@@ -1,19 +1,25 @@
 ---
-title: Abfragen hierarchischer Daten (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie die neuen Abfragebedingungsoperatoren nutzen, um Entitäten mit expliziten hierarchischen Beziehungen abzufragen.'
+title: Abfragen von hierarchischen Daten (Common Data Service) | Microsoft-Dokumentation
+description: Lesen Sie, wie Sie die neuen Abfragebedingungsoperatoren nutzen, um Entitäten mit expliziten hierarchischen Beziehungen abzufragen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3a87868d86dca1326dcff1ad9b1c052606943de4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748662"
 ---
 # <a name="query-hierarchical-data"></a>Abfragen von hierarchischen Daten
 

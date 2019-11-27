@@ -1,6 +1,6 @@
 ---
 title: Webressourcenabhängigkeiten (modellgesteuerte Apps) | Microsoft Docs
-description: Erfahren Sie mehr über das Definieren von Abhängigkeiten zwischen Webressourcen in Common Data Service
+description: Erfahren Sie über das Definieren von Abhängigkeiten zwischen Webressourcen in Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4c48a508a9e42e60dc3b9e9e0e374c7d72f1b11c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748792"
 ---
 # <a name="web-resource-dependencies"></a>Abhängigkeiten von Webressourcen
 
@@ -41,14 +47,14 @@ Allerdings werden Webressourceabhängigkeiten nicht auf RESX-Webressourcen besch
 
 <a name="attribute-dependencies"></a>
 
-# <a name="attribute-dependencies"></a>Attributabhängigkeiten
+## <a name="attribute-dependencies"></a>Attributabhängigkeiten
 <!--TODO: Add links to the attribute and attribute.controls collection definitions in the Client API reference -->
  Beginnend mit modellgesteuerten Apps, wenn die JavaScript-Webressource von einem Entitätsattributwert abhängt, den Sie nicht im Formular anzeigen möchten, können Sie das Attribut als Abhängigkeit für die JavaScript-Webressource festlegen. Das bedeutet, dass das Attribut im Client API-Attributsammlung zur Verfügung steht sodass Sie den benötigten Wert in Ihrem Code abrufen oder festlegen können. Wenn Sie eine Abhängigkeit auf diese Weise hinzufügen, ist die Kontrollensammlung des Attributs leer, da nur vorhandene Einheiten im Formular vorhanden sind.
 
 Vor dieser Funkltion müssen Sie manuell das Attribut dem Formular hinzufügen und dann die Steuerelement konfigurieren, die Sie verbergen möchten. Jetzt können Sie diese Abhängigkeit direkter einrichten und die Möglichkeit eliminieren, dass jemand das ausgeblendete Feld aus dem Formular entfernt. 
 
 
-## <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Siehe auch
 [Webressourcen](web-resources.md)<br />
 [Erstellen von barrierefreien Webressourcen](create-accessible-web-resources.md)<br />
 [Webressourcen der Webseite (HTML)](webpage-html-web-resources.md)<br />

@@ -1,19 +1,25 @@
 ---
-title: Steuerdatum und "älter als"-Datums-/Zeit-Abfrageoperatoren in FetchXML (Common Data Service) | Microsoft Docs
+title: Steuerdatum und „älter als“-Datums-/Zeit-Abfrageoperatoren in FetchXML (Common Data Service) | Microsoft-Dokumentation
 description: Infos zur Verwendung von konditionalen FetchXML-Steuerdatenoperatoren und &quot;älter als&quot;-Klausen für Datums- und Uhrzeitwerte
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f0285a18119b907cb27173524b35a08cece5601a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748510"
 ---
 # <a name="fiscal-date-and-older-than-datetime-query-operators-in-fetchxml"></a>Steuerdatum und "älter als"-Datums-/Zeit-Abfrageoperatoren in FetchXML
 

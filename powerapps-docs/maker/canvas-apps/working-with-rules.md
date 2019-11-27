@@ -20,7 +20,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 10/24/2019
 ms.locfileid: "72822116"
 ---
-# <a name="create-a-rule-in-canvas-apps"></a>Erstellen einer Regel in Canvas-apps
+# <a name="create-a-rule-in-canvas-apps"></a>Erstellen einer Regel in Canvas-Apps
 Erstellen Sie Regeln, damit eine App automatisch auf Grundlage der von Ihnen angegebenen Kriterien geändert wird. Beispielsweise können Listenelemente je nach ihrem Status in Rot, Gelb oder Grün angezeigt werden, oder eine Genehmigungsschaltfläche kann nur für bestimmte Benutzer (z.B. Manager) angezeigt werden. Sie können vielen verschiedenen Steuerelementen Regeln hinzufügen. In diesem Thema fügen Sie eine Regel hinzu, um die Textfarbe eines **Label**-Steuerelements (Bezeichnung) zu ändern, wenn der Wert eines **Slider**-Steuerelements (Schieberegler) größer als 70 ist.
 
 > [!IMPORTANT]

@@ -1,21 +1,26 @@
 ---
-title: 'Verwenden von FetchXML, um Daten abzufragen (Common Data Service) | Microsoft Docs'
-description: 'FetchXML ist eine herstellereigene Abfragesprache, die im Common Data Service verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt.'
+title: Verwenden von FetchXML, um Daten abzufragen (Common Data Service) | Microsoft Docs
+description: FetchXML ist eine herstellereigene Abfragesprache, die im Common Data Service verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt.
 ms.custom: ''
 ms.date: 07/23/2019
 ms.reviewer: susikka
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1337df809d0f696d81882089877c4ab9304ef3d8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748512"
 ---
-
 # <a name="use-fetchxml-to-construct-a-query"></a>Verwenden von FetchXML zum Erstellen einerAbfrage
 
 FetchXML ist eine herstellereigene Abfragesprache, die im Common Data Service verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt. Die FetchXML-Sprache unterstützt ähnliche Abfragefunktionen als Abfrageausdrücke. Zusätzlich wird sie als serialisiertes Abfrageformular verwendet, das verwendet wird, um eine Abfrage als gespeicherte benutzereigene Ansicht in der [UserQuery Entität](reference/entities/userquery.md) und als gespeicherte organisationseigene Ansicht in der [SavedQuery-Entität](reference/entities/savedquery.md) zu speichern.  

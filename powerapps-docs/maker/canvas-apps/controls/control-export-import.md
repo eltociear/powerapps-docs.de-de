@@ -1,24 +1,24 @@
 ---
 title: 'Export-Steuerelement und Import-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispielen, über das Export-Steuerelement und das Import-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 271d37c5cbd68b41a2818441161572bd9386e107
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 942b4b1f5f10cf17d2a33e9f9604661256d99ea6
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986732"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650545"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Export-Steuerelement und Import-Steuerelement in PowerApps
@@ -67,7 +67,7 @@ Die Exportfunktion wird in Webbrowsern nicht unterstützt.
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)** – die Gewichtung des Texts in einem-Steuerelement: **Fett**, **halb Fett**, **Normal**oder **heller**.
+**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 

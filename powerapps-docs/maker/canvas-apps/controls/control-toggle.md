@@ -1,24 +1,24 @@
 ---
 title: 'Umschalten-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Umschalten-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ec115eecc676a7ec5bea3b04b135eeb63268449
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: be21e2b0c24d7b4aaf9da12b0793899fd95acd06
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993245"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649811"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="toggle-control-in-powerapps"></a>Umschalten-Steuerelement in PowerApps
@@ -63,7 +63,7 @@ Umschalten wurde für aktuelle GUIs entwickelt, verhält sich jedoch genauso wie
 
 **[HoverBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer den Mauszeiger über das Steuerelement hält.
 
-**[OnChange](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **OnCheck**: Wie eine App reagiert, wenn sich der Wert eines Kontrollkästchens oder von Umschalten auf **TRUE** ändert.
 
@@ -77,7 +77,7 @@ Umschalten wurde für aktuelle GUIs entwickelt, verhält sich jedoch genauso wie
 
 **RailHoverFill**: Wenn Sie auf das Umschalten-Steuerelement oder den Schieberegler zeigen: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **false** ist, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.
 
-**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **ShowLabel**: Gibt an, ob neben dem Umschalt-Steuerelement eine Textbezeichnung angezeigt werden soll.
 
@@ -85,7 +85,7 @@ Umschalten wurde für aktuelle GUIs entwickelt, verhält sich jedoch genauso wie
 
 **TextPosition**: Gibt an, ob sich die Bezeichnung links oder rechts neben dem Umschalt-Steuerelement befindet.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **TrueFill**: Die Füllfarbe der Umschaltfläche, wenn sie aktiviert ist.
 
@@ -146,4 +146,4 @@ Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessi
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.

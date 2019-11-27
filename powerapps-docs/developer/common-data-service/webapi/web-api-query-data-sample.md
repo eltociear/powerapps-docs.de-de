@@ -1,6 +1,6 @@
 ---
-title: Beispiel für Web-API-Abfragedaten (Common Data Service) | Microsoft Docs
-description: 'Diese Gruppe von Beispielen zeigt, wie Daten mit der Web-API abgefragt werden. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.'
+title: Web-API-Abfragedatenbeispiel (Common Data Service) | Microsoft-Dokumentation
+description: Diese Gruppe von Beispielen zeigt, wie Daten mit der Web-API abgefragt werden. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,22 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 9457ce4f-0ef6-4085-8346-fe3134ec7106
 caps.latest.revision: 18
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a305f1676275c8b6f72d70e4e416a798933b476c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753630"
 ---
 # <a name="web-api-query-data-sample"></a>Web API-Abfragedatenbeispiel
 
-Diese Gruppe von Beispielen zeigt, wie Daten mit der "Common Data Service"-Web-API abgefragt werden. Dieses Beispiel wurde als ein separates Projekt für die folgenden Sprachen implementiert:
+Diese Gruppe von Beispielen zeigt, wie Daten mit dem Common Data Service Web-API abgefragt werden. Dieses Beispiel wurde als ein separates Projekt für die folgenden Sprachen implementiert:
 
 - [Web API-Abfragedatenbeispiele (clientseitiges JavaScript)](samples/query-data-client-side-javascript.md)
 
@@ -49,7 +55,7 @@ Dieses Beispiel wird in die folgenden Hauptabschnitte unterteilt und enthält We
 |[FetchXML queries](#bkmk_fetchxml)|[FetchXML schema](../org-service/fetchxml-schema.md)<br /><br /> [Page large result sets with FetchXML](../org-service/page-large-result-sets-with-fetchxml.md)<br /><br /> [Use custom FetchXML](retrieve-and-execute-predefined-queries.md#bkmk_useFetchXML)| -->
 |[Vordefinierte Abfragen](#bkmk_predefinedqueries)|[Vordefinierte Abfragen abrufen und ausführen](retrieve-and-execute-predefined-queries.md)<br /><br /> <xref href="Microsoft.Dynamics.CRM.userquery?text=userquery EntityType" /><br /><br /> <xref href="Microsoft.Dynamics.CRM.savedquery?text=savedquery EntityType" />|
 
-Die folgenden Abschnitte enthalten eine kurze Diskussion zu den ausgeführten Common Data Service-Web-API-Vorgängen, sowie den entsprechenden HTTP-Messages und den Ausgaben, die der Konsolen zugeordnet sind.
+Die folgenden Abschnitte enthalten eine kurze Diskussion zu den ausgeführten Common Data Service Web-API-Vorgängen, sowie den entsprechenden HTTP-Nachrichten und den Ausgaben, die der Konsolen zugeordnet sind.
 
 <a name="bkmk_sampleData"></a>
 
@@ -164,7 +170,7 @@ In diesem Beispiel stellen wir Anfragen für einen bestimmten Kontakt. In diesem
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts(b848fdee-c143-e611-80d5-00155da84802)?$select=fullname,jobtitle,annualincome HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts(b848fdee-c143-e611-80d5-00155da84802)?$select=fullname,jobtitle,annualincome HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -182,7 +188,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 517  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)/$entity",  
    "@odata.etag":"W/\"619718\"",  
    "fullname":"Yvonne McKay (sample)",  
    "jobtitle":"Coffee Master",  
@@ -211,16 +217,16 @@ Contact basic info:
  
 Filteroptionen verwenden, um Kriterien für die gewünschten Ergebnisse festzulegen. Sie können sowohl einfache als auch komplexen Filter mithilfe einer Kombination aus Abfragenfunktionen, Vergleichsoperatoren und logischen Operatoren erstellen. Weitere Informationen: [Filterergebnisse](query-data-web-api.md#bkmk_filter).  
   
-Abfragefunktionen sind Funktionen, die als Filterkriterium in einer Abfrage verwendet werden. Es gibt Standardabfragefunktionen und Common Data Service-spezifische Abfragefunktionen. Diese Funktionen nehmen Parameter an und geben einen `Boolean`-Wert zurück. Dieses Beispiel veranschaulicht, wie eine Abfrage für jeden Typ erstellt wird.  
+Abfragefunktionen sind Funktionen, die als Filterkriterium in einer Abfrage verwendet werden. Es gibt Standardabfragenfunktionen und Common Data Service-spezifische Abfragenfunktionen. Diese Funktionen nehmen Parameter an und geben einen `Boolean`-Wert zurück. Dieses Beispiel veranschaulicht, wie eine Abfrage für jeden Typ erstellt wird.  
   
 ### <a name="standard-query-functions"></a>Standardabfragenfunktionen
 
-Common Data Service unterstützt kleine Teilmenge von OData-Abfragefunktionen, insbesondere: `contains`,`endswith` und `startswith`. Zum Beispiel erlaubt uns die `contains`-Standardabfragenfunktion nach Eigenschaften, die einer Zeichenfolge entsprechen, zu filtern. In diesem Vorgang fragen wir nach allen Kontakten mit `fullname` ab, die die Zeichenfolge `(sample)` enthalten. Weitere Informationen: [Standardabfragenfunktionen](query-data-web-api.md#bkmk_buildInQueryFunctions).  
+Common Data Service unterstützt kleine Teilmenge von OData-Abfragenfunktionen, insbesondere: `contains`, `endswith`und `startswith`. Zum Beispiel erlaubt uns die `contains`-Standardabfragenfunktion nach Eigenschaften, die einer Zeichenfolge entsprechen, zu filtern. In diesem Vorgang fragen wir nach allen Kontakten mit `fullname` ab, die die Zeichenfolge `(sample)` enthalten. Weitere Informationen: [Standardabfragenfunktionen](query-data-web-api.md#bkmk_buildInQueryFunctions).  
   
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)') HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)') HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -238,7 +244,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 4284  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "value":[  
       {  
          "@odata.etag":"W/\"619718\"",  
@@ -363,14 +369,14 @@ Contacts filtered by fullname containing '(sample)':
   
 ### <a name="common-data-service-query-functions"></a>Common Data Service-Abfragefunktionen
 
-Common Data Service-Abfragefunktionen bieten zahlreiche Optionen zum Erstellen von Abfragen, die für Common Data Service relevant sind. Eine komplette Liste dieser Funktionen finden Sie unter <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Weitere Informationen: [Verfassen Sie eine Abfrage mit Funktionen](use-web-api-functions.md#bkmk_composeQueryWithFunctions)  
+Common Data Service-Abfragenfunktionen bieten zahlreiche Optionen zum Erstellen von Abfragen, die für Common Data Service relevant sind. Eine komplette Liste dieser Funktionen finden Sie unter <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Weitere Informationen: [Verfassen Sie eine Abfrage mit Funktionen](use-web-api-functions.md#bkmk_composeQueryWithFunctions)  
   
-Sie werden diese Abfragenfunktionen in ähnlicher Weise wie die Standardabfragenfunktionen verwenden. Der Hauptunterschied ist, dass bei der Verwendung der Common Data Service-Abfragefunktionen der vollständige Name der Funktion sowie der/die Parametername/n angeben werden müssen. Wenn Sie beispielsweise einer Liste von Kontakten erhalten wollen, die in der letzten Stunde erstellt wurden, können Sie eine Abfrage unter Verwendung der <xref href="Microsoft.Dynamics.CRM.LastXHours?text=LastXHours Function" /> erstellen.  
+Sie werden diese Abfragenfunktionen in ähnlicher Weise wie die Standardabfragenfunktionen verwenden. Der Hauptunterschied ist, dass bei der Verwendung der Common Data Service-Abfragenfunktionen der vollständige Name der Funktion sowie der/die Parametername/n angeben werden müssen. Wenn Sie beispielsweise einer Liste von Kontakten erhalten wollen, die in der letzten Stunde erstellt wurden, können Sie eine Abfrage unter Verwendung der <xref href="Microsoft.Dynamics.CRM.LastXHours?text=LastXHours Function" /> erstellen.  
   
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=Microsoft.Dynamics.CRM.LastXHours(PropertyName='createdon',PropertyValue='1') HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=Microsoft.Dynamics.CRM.LastXHours(PropertyName='createdon',PropertyValue='1') HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -388,7 +394,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 4284  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "value":[  
       {  
          "@odata.etag":"W/\"619718\"",  
@@ -519,7 +525,7 @@ Verwenden Sie [Standardfilteroperatoren](query-data-web-api.md#bkmk_buildInFilte
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')%20and%20annualincome%20gt%2055000 HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')%20and%20annualincome%20gt%2055000 HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -537,7 +543,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 2629  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "value":[  
       {  
          "@odata.etag":"W/\"619841\"",  
@@ -626,7 +632,7 @@ Verwenden Sie Klammern, um die Reihenfolge, in der die Bedingungen ausgewertet w
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')%20and%20(contains(jobtitle,'senior')%20or%20contains(jobtitle,'specialist'))%20and%20annualincome%20gt%2055000 HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')%20and%20(contains(jobtitle,'senior')%20or%20contains(jobtitle,'specialist'))%20and%20annualincome%20gt%2055000 HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -644,7 +650,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 1393  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "value":[  
       {  
          "@odata.etag":"W/\"619845\"",  
@@ -698,7 +704,7 @@ Sie können entweder eine auf- oder absteigende Reihenfolge der Ergebnisse festl
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')%20&$orderby=jobtitle%20asc,%20annualincome%20desc HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')%20&$orderby=jobtitle%20asc,%20annualincome%20desc HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -716,7 +722,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 4284  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "value":[  
       {  
          "@odata.etag":"W/\"619847\"",  
@@ -847,7 +853,7 @@ Verwenden Sie Parameteraliase, um Parameter in Ihren Filtern einfacher wiederzuv
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(@p1,'(sample)')%20&$orderby=@p2%20asc,%20@p3%20desc&@p1=fullname&@p2=jobtitle&@p3=annualincome HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(@p1,'(sample)')%20&$orderby=@p2%20asc,%20@p3%20desc&@p1=fullname&@p2=jobtitle&@p3=annualincome HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -865,7 +871,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 4284  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "value":[  
       {  
          "@odata.etag":"W/\"619847\"",  
@@ -1002,7 +1008,7 @@ Wir können die `$top`-Abfrageoption anwenden, um die grundlegenden Abfrageopera
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$top=5 HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$top=5 HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -1019,7 +1025,7 @@ Preference-Applied: odata.include-annotations="OData.Community.Display.V1.Format
 Content-Length: 2209  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "value":[  
       {  
          "@odata.etag":"W/\"619718\"",  
@@ -1096,7 +1102,7 @@ Sie können lediglich die Anzahl der Datensätze aus einer als Sammlung bewertet
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(jobtitle,'senior')%20or%20contains(jobtitle,%20'manager')&$count=true HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(jobtitle,'senior')%20or%20contains(jobtitle,%20'manager')&$count=true HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -1114,7 +1120,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 2654  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "@odata.count":6,  
    "value":[  
       {  
@@ -1206,7 +1212,7 @@ In diesem Beispiel fordern wir eine `$count` an und wir legen `odata.maxpagesize
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$count=true HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$count=true HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -1224,7 +1230,7 @@ Preference-Applied: odata.maxpagesize=4
 Content-Length: 2294  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "@odata.count":10,  
    "value":[  
       {  
@@ -1268,7 +1274,7 @@ Content-Length: 2294
          "contactid":"c748fdee-c143-e611-80d5-00155da84802"  
       }  
    ],  
-   "@odata.nextLink":"http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$count=true&$skiptoken=%3Ccookie%20pagenumber=%222%22%20pagingcookie=%22%253ccookie%2520page%253d%25221%2522%253e%253ccontactid%2520last%253d%2522%257bC748FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520first%253d%2522%257bB848FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20istracking=%22False%22%20/%3E"  
+   "@odata.nextLink":"https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$count=true&$skiptoken=%3Ccookie%20pagenumber=%222%22%20pagingcookie=%22%253ccookie%2520page%253d%25221%2522%253e%253ccontactid%2520last%253d%2522%257bC748FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520first%253d%2522%257bB848FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20istracking=%22False%22%20/%3E"  
 }  
 ```  
   
@@ -1289,7 +1295,7 @@ Page 1 of 3:
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$count=true&$skiptoken=%3Ccookie%20pagenumber=%222%22%20pagingcookie=%22%253ccookie%2520page%253d%25221%2522%253e%253ccontactid%2520last%253d%2522%257bC748FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520first%253d%2522%257bB848FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20istracking=%22False%22%20/%3E HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$count=true&$skiptoken=%3Ccookie%20pagenumber=%222%22%20pagingcookie=%22%253ccookie%2520page%253d%25221%2522%253e%253ccontactid%2520last%253d%2522%257bC748FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520first%253d%2522%257bB848FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20istracking=%22False%22%20/%3E HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -1307,7 +1313,7 @@ Preference-Applied: odata.maxpagesize=4
 Content-Length: 2294  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome)",  
    "@odata.count":10,  
    "value":[  
       {  
@@ -1351,7 +1357,7 @@ Content-Length: 2294
          "contactid":"d748fdee-c143-e611-80d5-00155da84802"  
       }  
    ],  
-   "@odata.nextLink":"http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$count=true&$skiptoken=%3Ccookie%20pagenumber=%223%22%20pagingcookie=%22%253ccookie%2520page%253d%25222%2522%253e%253ccontactid%2520last%253d%2522%257bD748FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520first%253d%2522%257bCB48FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20istracking=%22False%22%20/%3E"  
+   "@odata.nextLink":"https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,jobtitle,annualincome&$filter=contains(fullname,'(sample)')&$count=true&$skiptoken=%3Ccookie%20pagenumber=%223%22%20pagingcookie=%22%253ccookie%2520page%253d%25222%2522%253e%253ccontactid%2520last%253d%2522%257bD748FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520first%253d%2522%257bCB48FDEE-C143-E611-80D5-00155DA84802%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20istracking=%22False%22%20/%3E"  
 }  
 ```  
   
@@ -1378,7 +1384,7 @@ Eine einzelwertige Navigationseigenschaft stellt eine n:1-Beziehungen dar. In un
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/accounts(b2546951-c543-e611-80d5-00155da84802)?$select=name&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/accounts(b2546951-c543-e611-80d5-00155da84802)?$select=name&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -1396,7 +1402,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 700  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
    "@odata.etag":"W/\"620641\"",  
    "name":"Contoso, Ltd. (sample)",  
    "accountid":"b2546951-c543-e611-80d5-00155da84802",  
@@ -1431,7 +1437,7 @@ Um eine Abfrage gegen einen Kontakt zu schreiben, können Sie das `account_prima
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts(b3546951-c543-e611-80d5-00155da84802)?$select=fullname,jobtitle,annualincome&$expand=account_primary_contact($select=name) HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts(b3546951-c543-e611-80d5-00155da84802)?$select=fullname,jobtitle,annualincome&$expand=account_primary_contact($select=name) HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -1449,7 +1455,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 737  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome,account_primary_contact,account_primary_contact(name))/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome,account_primary_contact,account_primary_contact(name))/$entity",  
    "@odata.etag":"W/\"620534\"",  
    "fullname":"Yvonne McKay (sample)",  
    "jobtitle":"Coffee Master",  
@@ -1484,7 +1490,7 @@ Mithilfe von <xref href="Microsoft.Dynamics.CRM.account?text=account EntityType"
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/accounts(86546951-c543-e611-80d5-00155da84802)?$select=name&$expand=contact_customer_accounts($select=fullname,jobtitle,annualincome) HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/accounts(86546951-c543-e611-80d5-00155da84802)?$select=name&$expand=contact_customer_accounts($select=fullname,jobtitle,annualincome) HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -1502,7 +1508,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 4073  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,contact_customer_accounts,contact_customer_accounts(fullname,jobtitle,annualincome))/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#accounts(name,contact_customer_accounts,contact_customer_accounts(fullname,jobtitle,annualincome))/$entity",  
    "@odata.etag":"W/\"620921\"",  
    "name":"Contoso, Ltd. (sample)",  
    "accountid":"86546951-c543-e611-80d5-00155da84802",  
@@ -1625,7 +1631,7 @@ Dieses Beispiel erweitert die `primarycontactid`, `contact_customer_accounts`und
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/accounts(86546951-c543-e611-80d5-00155da84802)?$select=name&$expand=primarycontactid($select=fullname,jobtitle,annualincome),contact_customer_accounts($select=fullname,jobtitle,annualincome),Account_Tasks($select=subject,description) HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/accounts(86546951-c543-e611-80d5-00155da84802)?$select=name&$expand=primarycontactid($select=fullname,jobtitle,annualincome),contact_customer_accounts($select=fullname,jobtitle,annualincome),Account_Tasks($select=subject,description) HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -1643,7 +1649,7 @@ Preference-Applied: odata.maxpagesize=10
 Content-Length: 5093  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,contact_customer_accounts,Account_Tasks,primarycontactid(fullname,jobtitle,annualincome),contact_customer_accounts(fullname,jobtitle,annualincome),Account_Tasks(subject,description))/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,contact_customer_accounts,Account_Tasks,primarycontactid(fullname,jobtitle,annualincome),contact_customer_accounts(fullname,jobtitle,annualincome),Account_Tasks(subject,description))/$entity",  
    "@odata.etag":"W/\"620921\"",  
    "name":"Contoso, Ltd. (sample)",  
    "accountid":"86546951-c543-e611-80d5-00155da84802",  
@@ -1829,7 +1835,7 @@ Besides query filter operations, the Web API also supports FetchXML queries. Fet
  Die Abfragezeichenfolge der Anforderung wird in codierter Form an den Server gesendet. Die codierte Kopfzeile sieht wie folgt aus.  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?fetchXml=%253Cfetch%2520mapping%253D%2522logical%2522%2520output-format%253D%2522xml-platform%2522%2520version%253D%25221.0%2522%2520distinct%253D%2522false%2522%253E%2520%2520%2520%253Centity%2520name%253D%2522contact%2522%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522fullname%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522jobtitle%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522annualincome%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Corder%2520descending%253D%2522true%2522%2520attribute%253D%2522fullname%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cfilter%2520type%253D%2522and%2522%253E%2520%2520%2520%2520%2520%2520%2520%253Ccondition%2520value%253D%2522%2525(sample)%2525%2522%2520attribute%253D%2522fullname%2522%2520operator%253D%2522like%2522%2520%252F%253E%2520%2520%2520%2520%2520%253C%252Ffilter%253E%2520%2520%2520%253C%252Fentity%253E%2520%253C%252Ffetch%253E%2520 HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?fetchXml=%253Cfetch%2520mapping%253D%2522logical%2522%2520output-format%253D%2522xml-platform%2522%2520version%253D%25221.0%2522%2520distinct%253D%2522false%2522%253E%2520%2520%2520%253Centity%2520name%253D%2522contact%2522%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522fullname%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522jobtitle%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522annualincome%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Corder%2520descending%253D%2522true%2522%2520attribute%253D%2522fullname%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cfilter%2520type%253D%2522and%2522%253E%2520%2520%2520%2520%2520%2520%2520%253Ccondition%2520value%253D%2522%2525(sample)%2525%2522%2520attribute%253D%2522fullname%2522%2520operator%253D%2522like%2522%2520%252F%253E%2520%2520%2520%2520%2520%253C%252Ffilter%253E%2520%2520%2520%253C%252Fentity%253E%2520%253C%252Ffetch%253E%2520 HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -1845,7 +1851,7 @@ Preference-Applied: odata.include-annotations="OData.Community.Display.V1.Format
 Content-Length: 4345  
   
 {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome,_transactioncurrencyid_value,transactioncurrencyid,contactid)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome,_transactioncurrencyid_value,transactioncurrencyid,contactid)",  
    "value":[  
       {  
          "@odata.etag":"W/\"621502\"",  
@@ -1998,7 +2004,7 @@ Die Art, wie FetchXML Auslagerungen verarbeitet, unterscheidet sich von der Vera
  Die Abfragezeichenfolge der Anforderung wird in codierter Form an den Server gesendet. Die codierte Kopfzeile sieht wie folgt aus.  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?fetchXml=%253Cfetch%2520mapping%253D%2522logical%2522%2520output-format%253D%2522xml-platform%2522%2520version%253D%25221.0%2522%2520distinct%253D%2522false%2522%2520page%253D%25223%2522%2520count%253D%25224%2522%253E%2520%2520%2520%253Centity%2520name%253D%2522contact%2522%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522fullname%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522jobtitle%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522annualincome%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Corder%2520descending%253D%2522true%2522%2520attribute%253D%2522fullname%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cfilter%2520type%253D%2522and%2522%253E%2520%2520%2520%2520%2520%2520%2520%253Ccondition%2520value%253D%2522%2525(sample)%2525%2522%2520attribute%253D%2522fullname%2522%2520operator%253D%2522like%2522%2520%252F%253E%2520%2520%2520%2520%2520%253C%252Ffilter%253E%2520%2520%2520%253C%252Fentity%253E%2520%253C%252Ffetch%253E%2520 HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?fetchXml=%253Cfetch%2520mapping%253D%2522logical%2522%2520output-format%253D%2522xml-platform%2522%2520version%253D%25221.0%2522%2520distinct%253D%2522false%2522%2520page%253D%25223%2522%2520count%253D%25224%2522%253E%2520%2520%2520%253Centity%2520name%253D%2522contact%2522%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522fullname%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522jobtitle%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cattribute%2520name%253D%2522annualincome%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Corder%2520descending%253D%2522true%2522%2520attribute%253D%2522fullname%2522%2520%252F%253E%2520%2520%2520%2520%2520%253Cfilter%2520type%253D%2522and%2522%253E%2520%2520%2520%2520%2520%2520%2520%253Ccondition%2520value%253D%2522%2525(sample)%2525%2522%2520attribute%253D%2522fullname%2522%2520operator%253D%2522like%2522%2520%252F%253E%2520%2520%2520%2520%2520%253C%252Ffilter%253E%2520%2520%2520%253C%252Fentity%253E%2520%253C%252Ffetch%253E%2520 HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -2016,7 +2022,7 @@ Preference-Applied: odata.include-annotations="OData.Community.Display.V1.Format
 Content-Length: 1037  
   
 {   
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome,_transactioncurrencyid_value,transactioncurrencyid,contactid)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle,annualincome,_transactioncurrencyid_value,transactioncurrencyid,contactid)",  
    "value":[   
       {   
          "@odata.etag":"W/\"621631\"",  
@@ -2065,12 +2071,12 @@ In diesem Vorgang stellen wir eine Anfrage für die `savedqueryid` GUID der gesp
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/savedqueries?$select=name,savedqueryid&$filter=name%20eq%20'Active%20Accounts' HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/savedqueries?$select=name,savedqueryid&$filter=name%20eq%20'Active%20Accounts' HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
 Prefer: odata.maxpagesize=10, odata.include-annotations=OData.Community.Display.V1.FormattedValue  
-Referer: http://localhost:1469/WebAPIQuery.html  
+Referer: https://localhost:1469/WebAPIQuery.html  
 ```  
   
  **HTTP-Antwort**  
@@ -2082,7 +2088,7 @@ OData-Version: 4.0
 Content-Length: 251  
   
 {   
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#savedqueries(name,savedqueryid)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#savedqueries(name,savedqueryid)",  
    "value":[   
       {   
          "@odata.etag":"W/\"443067\"",  
@@ -2098,7 +2104,7 @@ Content-Length: 251
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/accounts?savedQuery=00000000-0000-0000-00aa-000010001002 HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/accounts?savedQuery=00000000-0000-0000-00aa-000010001002 HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -2116,7 +2122,7 @@ Preference-Applied: odata.include-annotations="OData.Community.Display.V1.Format
 Content-Length: 446  
   
 {   
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,_primarycontactid_value,primarycontactid,accountid)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#accounts(name,_primarycontactid_value,primarycontactid,accountid)",  
    "value":[   
       {   
          "@odata.etag":"W/\"621613\"",  
@@ -2146,11 +2152,11 @@ In diesem Beispiel wird eine Benutzeranfrage erstellt, ausgeführt und dann aus 
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/userqueries?$select=name,userqueryid,&$filter=name%20eq%20'My%20User%20Query' HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/userqueries?$select=name,userqueryid,&$filter=name%20eq%20'My%20User%20Query' HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
-Referer: http://localhost:1469/WebAPIQuery.html  
+Referer: https://localhost:1469/WebAPIQuery.html  
   
 ```  
   
@@ -2163,7 +2169,7 @@ OData-Version: 4.0
 Content-Length: 246  
   
 {   
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#userqueries(name,userqueryid)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#userqueries(name,userqueryid)",  
    "value":[   
       {   
          "@odata.etag":"W/\"621698\"",  
@@ -2179,7 +2185,7 @@ Content-Length: 246
  **HTTP-Anforderung**  
   
 ```  
-GET http://[Organization URI]/api/data/v9.0/contacts?userQuery=7ec390ab-c943-e611-80d5-00155da84802 HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts?userQuery=7ec390ab-c943-e611-80d5-00155da84802 HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
@@ -2196,7 +2202,7 @@ OData-Version: 4.0
 Content-Length: 1040  
   
 {   
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,contactid,jobtitle,annualincome,_transactioncurrencyid_value,transactioncurrencyid)",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,contactid,jobtitle,annualincome,_transactioncurrencyid_value,transactioncurrencyid)",  
    "value":[   
       {   
          "@odata.etag":"W/\"621643\"",  
@@ -2233,7 +2239,7 @@ Saved User Query:
   
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service-Web-API verwenden](overview.md)<br />
+[Verwenden der Common Data Service-Web-API](overview.md)<br />
 [Datenabfrage mit Web-API](query-data-web-api.md)<br />
 [Abrufen und Ausführen von vordefinierten Abfragen](retrieve-and-execute-predefined-queries.md)<br />
 [Web API-Abfragedatenbeispiel (C#)](samples/query-data-csharp.md)<br />

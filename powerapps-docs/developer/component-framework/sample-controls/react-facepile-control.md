@@ -1,6 +1,6 @@
 ---
-title: Facepile-Komponente reagieren | Microsoft-Dokumentation
-description: Implementieren einer facepfafkomponente mithilfe von "reagieren"
+title: Facepile-Komponente in React | Microsoft Docs
+description: Implementieren einer Facepile-Komponente mithilfe von React
 ms.custom: ''
 author: ghurlman
 manager: kvivek
@@ -10,28 +10,28 @@ ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
 ms.openlocfilehash: 62a46acf98c8cdd93524f17b8a3a28ac999e325b
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340113"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748779"
 ---
-# <a name="implementing-the-facepile-component"></a>Implementieren der facepile-Komponente
+# <a name="implementing-the-facepile-component"></a>Implementieren der FacePile-Komponente
 
-In diesem Beispiel wird gezeigt, wie Sie mithilfe von reagieren auf Komponenten mithilfe von powerapps Component Framework erstellen.  Die facepfabeispielkomponente wird auf der Grundlage von reagieren und den Komponenten der Office-UI-Fabric-Reaktion implementiert. Der Code zeigt möglicherweise nicht die bewährten Methoden für die erwähnten Bibliotheken von Drittanbietern an.
+Dieses Beispiel zeigt, wie man mit React Komponenten mit dem PowerApps component framework erstellt.  Die Facepile-Beispielkomponente wird anhand von React und der Office UI Fabric React-Komponenten implementiert. Dieser Code deckt möglicherweise nicht die bewährten Methoden für die erwähnten Drittanbieterbibliotheken ab.
 
 > [!div class="mx-imgBorder"]
-> ![Facepfahls]auf(../media/react-facepile.png "facestapel") reagieren
+> ![Facepile in React](../media/react-facepile.png "Facepile in React")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau) 
+Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
 
 
 > [!IMPORTANT]
-> Obwohl die powerapps-Host Anwendungen auf "reagieren" reagieren, wird die von Ihnen gebündelten Version von "reagiere" nicht mit der Host Version kommunizieren, und Sie ist nicht von dieser Version abhängig. Eine neue Kopie von "reagieren" (oder eine beliebige Bibliothek von Drittanbietern, die Sie mit der Komponente bündeln) wird in die Hostseite für jede Instanz dieses Steuer Elements geladen. Achten Sie daher darauf, wie groß die Seite (n) zum Hinzufügen von Komponenten ist. Wir werden in einer zukünftigen Version eine Lösung für dieses Problem haben.
+> Obwohl die PowerApps Hostanwendungen auf React arbeiten, kommuniziert die Version von React, die Sie bündeln, nicht mit der Hostversion, noch ist sie von dieser Version abhängig. Eine neue Kopie von React (oder einer Bibliothek eines Drittanbieters, die Sie mit Ihrer Komponente bündeln) wird für jede Instanz dieses Steuerelements in die Host-Seite geladen, also achten Sie darauf, wie groß Sie Ihre Seite(n) machen, während Sie Komponenten hinzufügen. In einer künftigen Version werden wir eine Lösung zu diesem Problem haben.
 
-## <a name="manifest"></a>Kundiger
+## <a name="manifest"></a>Manifest
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -49,14 +49,14 @@ Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau)
 
 ## <a name="overview"></a>Übersicht
 
-Dieses Beispiel enthält Beispiele zum Hinzufügen von Abhängigkeiten für Bibliotheken von Drittanbietern und für das Office-UI-Fabric, die zeigen, wie die Komponenten der Office-UI-Fabric zum reagieren auf die Benutzeroberfläche und die bidirektionale Datenbindung zwischen dem powerapps-Komponenten Framework verwendet werden. und das Reaktions Zustands Modell.
+Dieses Beispiel zeigt anhand von Beispielen, wie Abhängigkeiten für Bibliotheken von Drittanbietern und Office UI Fabric hinzugefügt werden können. Es wird gezeigt, wie die Office UI Fabric-Komponenten für React for UI verwendet werden können und wie eine bidirektionale Datenanbindung zwischen dem PowerApps component framework und dem React-Zustandsmodell durchgeführt wird.
 
-Das Komponenten Beispiel besteht aus drei Office-UI-Fabric-Komponenten: einem facestapel, einem Schieberegler, einem Kontrollkästchen und einer Dropdown Liste. Wenn Sie den Schieberegler bewegen, ändert sich die Anzahl der Gesichter im facepfab. Das Kontrollkästchen gibt an, ob die Gesichter ein-und ausgeblendet sind oder einfach angezeigt oder ausgeblendet werden, und die Optionen in der Dropdown Liste steuern die Größe der Flächen. Wenn kein Wert festgelegt ist, wird die Anzahl der Gesichter standardmäßig auf 3 festgelegt.
+Das Komponentenbeispiel besteht aus drei Office UI Fabric-Komponenten: ein Facepile, ein Schieberegler, ein Kontrollkästchen und eine Dropdownliste. Wenn Sie den Schieberegler bewegen, ändert sich die Anzahl der Gesichter in der Facepile. Das Auswahlfeld steuert, ob die Flächen ein- und ausgeblendet werden oder einfach erscheinen oder verschwinden, und die Optionen in der Dropdown-Liste steuern die Größe der Flächen. Wenn kein Wert festgelegt ist, ist die Anzahl der Gesichter standardmäßig 3.
 
-- Wenn die Komponente geladen wird, wird der Schieberegler auf den gebundenen Attribut Wert festgelegt. Die `context.parameters.[property_name].attributes`-Eigenschaft enthält die zugeordneten Metadaten.
-- Ein Ereignishandler wird in den Eigenschaften der Reaktions Komponente übermittelt. Dadurch kann die Reaktions Komponente das Host powerapps Component Framework-Steuerelement benachrichtigen, dass sich ein Wert geändert hat. Der Ereignishandler bestimmt dann, ob ein Rückruf der **notifyoutputevents** -Methode erforderlich ist.
-- Das Verschieben des Schiebereglers bewirkt, dass der gebundene Wert aktualisiert und der Übergabe Ereignishandler aufgerufen wird. Wenn in diesem Handler ein Aufruf an die **notifyoutputevents** -Methode erfolgt, wird die [getoutputs](../reference/control/getoutputs.md) -Methode des Steuer Elements asynchron aufgerufen und fließt zum powerapps-Komponenten Framework. 
-- Der frameworkhost aktualisiert den gebundenen Attribut Wert, und der aktualisierte Wert fließt zur Komponente und löst die [UpdateView](../reference/control/updateview.md) -Methode des Steuer Elements aus. Das-Steuerelement führt dann die Reaktions Komponente mit dem neuen Wert erneut aus.
+- Ist die Komponente geladen, wird der Schieberegler auf den Attributwert mit Bindung festgelegt. Die `context.parameters.[property_name].attributes`-Eigenschaft enthält die zugeordneten Metadaten.
+- In den Eigenschaften der React-Komponente wird ein Event-Handler übergeben, der es der React-Komponente ermöglicht, das Host PowerApps component framework-Steuerlement darüber zu informieren, dass sich ein Wert geändert hat. Der Ereignishandler legt dann fest, ob ein Aufruf der **notifyOutputEvents**-Methode erforderlich ist.
+- Durch das Bewegen des Schiebereglers aktualisiert React den Wert mit Bindung und ruft den weitergegebenen Ereignishandler auf. Wenn innerhalb dieses Handlers ein Aufruf an die Methode **notifyOutputEvents** erfolgt, dann wird die Methode [getOutputs](../reference/control/getoutputs.md) des Steuerelements asynchron aufgerufen und fließt zum PowerApps component framework. 
+- Der Frameworkhost aktualisiert den Attributwert mit Bindung und der aktualisierte Wert wird an die Komponente weitergegeben, wodurch die [updateView](../reference/control/updateview.md)-Methode des Steuerelements ausgelöst wird. Das Steuerelement rendert dann die React-Komponente mit dem neuen Wert.
 
 
 ## <a name="code"></a>Code
@@ -154,7 +154,7 @@ export class ReactStandardControl
 
 ```
 
-### <a name="facepiletsx"></a>Facepile. TX
+### <a name="facepiletsx"></a>Facepile.tsx
 
 ```TSX
 import * as React from "react";
@@ -282,7 +282,7 @@ export class FacepileBasicExample extends React.Component<IFacepileBasicExampleP
 }
 ```
 
-### <a name="facepileexampledatats"></a>Facepileexampledata. TS
+### <a name="facepileexampledatats"></a>FacepileExampleData.ts
 
 ```TypeScript
 import * as React from 'react';
@@ -363,7 +363,7 @@ export const facepilePersonas: IFacepilePersona[] = [
   // Trimmed for display; full file in the downloadable sample code
 ```
 
-### <a name="testimagests"></a>Testimages. TS
+### <a name="testimagests"></a>TestImages.ts
 
 ```TypeScript
 const baseProductionCdnUrl = 'https://static2.sharepointonline.com/files/fabric/office-ui-fabric-react-assets/';
@@ -385,7 +385,7 @@ export const TestImages = {
 
 ## <a name="resources"></a>Ressourcen
 
-### <a name="cssreactstandardcontrolcss"></a>CSS/reactstandardcontrol. CSS
+### <a name="cssreactstandardcontrolcss"></a>css/ReactStandardControl.css
 
 ```css
 .msFacepileExample {
@@ -420,6 +420,6 @@ export const TestImages = {
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)<br />
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br />
-[Übersicht über das powerapps-Komponenten Framework](../overview.md)
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)<br />
+[PowerApps component framework-API-Referenz](../reference/index.md)<br />
+[PowerApps component framework Übersicht](../overview.md)

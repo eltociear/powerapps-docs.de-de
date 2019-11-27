@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 040ba26d486cb16830bfd895f1c09a4e273cfa07
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f60db0449a163c83691658095b15f41083316c91
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994779"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899183"
 ---
 # <a name="powerapps-webinar-listing"></a>Liste der PowerApps-Webinare #
 Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie, dass Sie die Registrierungsinformationen ggf. erneut eingeben müssen. Anschließend erhalten Sie per E-Mail einen Link zu der Aufzeichnung. 
@@ -70,7 +70,7 @@ Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von 
 **PowerApps Administration | Frequently Asked Questions (PowerApps-Verwaltung | Häufig gestellte Fragen)**
 <br>von Manas Maheshwari [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-**in der universellen Überwachungs-App: Sehen Sie sich an, welche powerapps und Flows von Paul Culmsee @ no__t-0 unterstützt werden.
+**Inside the Universal Audit App: See what PowerApps and Flow are capable of – Paul Culmsee (Einblick in die „Universal Audit App“: Potenzial von PowerApps und Flow – Paul Culmsee)**
 <br>von Paul Culmsee [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>Webinarreihe für Fortgeschrittene ##
@@ -90,7 +90,7 @@ Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von 
 <br>von Dawid van Heerden [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-PowerApps-and-Flow-for-Business-Process-Management/m-p/116907)
 
 ### <a name="connector-series"></a>Connector-Reihe ###
-**Optimizing Connectors in PowerApps and Microsoft Flow (Optimieren von Connectors in PowerApps und Microsoft Flow)**
+**Optimieren von Connectors in powerapps und Energie Automatisierung**
 <br>von Theresa Palmer-Boroski [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Optimizing-Connectors-in-PowerApps-and-Microsoft-Flow-by-Theresa/m-p/116874)
 
 **Teams + PowerApps Tips and Tricks (Tipps und Tricks für Teams und PowerApps)**
@@ -102,13 +102,13 @@ Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von 
 **Connecting to on-premises data from PowerApps (Herstellen von Verbindungen mit lokalen Daten aus PowerApps)**
 <br>von Archana Nair und Dimah Zaidalkilani [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
-**arbeiten mit Connectors: Verwenden des planerverbindungs-Connector @ no__t-0
+**Arbeiten mit Connectors: Verwenden des Planner-Connectors**
 <br> von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
 **The Power of Office Graph with PowerApps (Das Potenzial von Office Graph mit PowerApps)**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
-**arbeiten mit Connectors: Project Online (PWA)-**
+**Working with Connectors: Project Online (PWA) (Arbeiten mit Connectors: Project Online (PWA))**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>Webinarreihe zu SharePoint ##
@@ -150,5 +150,5 @@ Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von 
 **Building Dialogs or Pop-up Messages in PowerApps (Erstellen von Dialogfeldern und Popupmeldungen)**
 <br>von Veronica Ward [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-**sehen Sie sich mit einem der powerapps-Entwickler hinter dem Vorhang an, genauer betrachten Sie Vorlagen: Marie-no__t @-0
+**Look behind the curtain with one of the PowerApps Developers - A closer look at templates: Marie Hoeger (Blick hinter die Kulissen mit einem der PowerApps-Entwickler – Eine eingehendere Betrachtung von Vorlagen: Marie Hoeger)**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

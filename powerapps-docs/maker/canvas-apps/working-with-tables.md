@@ -41,7 +41,7 @@ Sie können eine Vielzahl von Formeln erstellen, die den Namen einer Tabelle als
 ### <a name="records"></a>Datensätze
 Jeder Datensatz enthält mindestens eine Kategorie von Informationen zu einer Person, einem Ort oder einem Gegenstand. Im obigen Beispiel für jedes Produkt ein Datensatz (**Chocolate** (Schokolade), **Bread** (Brot) und **Water** (Wasser)) und eine Spalte für jede Informationskategorie vorhanden (**Price** (Preis), **Quantity on Hand** (Lagerbestand) und **Quantity on Order** (bestellte Menge)).
 
-In einer Formel können Sie mit geschweiften Klammern auf einen Datensatz selbst, außerhalb eines Tabellenkontexts verweisen. Dieser Datensatz @no__t z. b.-0 {Name: "Erdbeeren", Preis: 7,99} ** ist keiner Tabelle zugeordnet. Beachten Sie, dass die Feldnamen in diesem Beispiel, **Name** und **Price**, nicht in doppelte Anführungszeichen eingeschlossen sind.
+In einer Formel können Sie mit geschweiften Klammern auf einen Datensatz selbst, außerhalb eines Tabellenkontexts verweisen. Angenommen, der Datensatz **{ Name: "Strawberries"; Price: 7,99 }** (Name: "Erdbeeren", Preis: 7.99) ist nicht mit einer Tabelle verknüpft. Beachten Sie, dass die Feldnamen in diesem Beispiel, **Name** und **Price**, nicht in doppelte Anführungszeichen eingeschlossen sind.
 
 ### <a name="fields"></a>Felder
 Ein Feld ist eine einzelne Information in einem Datensatz. Sie können diese Art von Feld als Wert in einer Spalte eines bestimmten Datensatzes visuell darstellen.
@@ -282,7 +282,7 @@ Beachten Sie, dass wir oben an einigen Stellen doppelte Anführungszeichen (") u
 
 Feldnamen, die mit auf Datensatzebene hinzugefügt wurden, haben Vorrang vor denselben Namen von woanders in der App.  In diesem Fall können Sie weiterhin von außerhalb der Datensatzebene mithilfe des [ **@** -Operators zur Mehrdeutigkeitsvermeidung](functions/operators.md) auf Werte zugreifen:
 
-* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@** -Operator mit dem Namen der jeweiligen Tabelle, indem Sie das folgende Muster nutzen:<br>_Tabelle_ **[@** _Feldname_ **]**
+* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@** -Operator mit dem Namen der jeweiligen Tabelle, indem Sie das folgende Muster verwenden:<br>_Tabelle_ **[@** _Feldname_ **]**
 * Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@** _Objektname_ **]** (ohne Tabellenbezeichnung).
 
 Wenn es sich bei der gerade verarbeiteten Tabelle um einen Ausdruck wie **Filter(** _Tabelle_ **,** ... **)** handelt, kann der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet werden.  Nur die innerste Datensatzebene kann auf Felder aus diesem Tabellenausdruck zugreifen, indem der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet wird.
@@ -299,7 +299,7 @@ Und eine weitere Sammlung **Y**:
 
 Sie können diese Sammlung mit **ClearCollect( Y; ["A"; "B"] )** erstellen.
 
-Definieren Sie außerdem eine Kontext Variable mit dem Namen **value** mit der folgenden Formel: **Updatecontext ({Value: "!"})**
+Definieren Sie darüber hinaus eine Kontextvariable namens **Value** mit dieser Formel: **UpdateContext( {Value: "!"} )** .
 
 Lassen Sie uns alle Puzzleteile zusammensetzen. In diesem Kontext ergibt die folgende Formel:
 
@@ -320,7 +320,7 @@ die folgende Tabelle:
 
 Was ist hier passiert?  Die äußerste **ForAll**-Funktion definiert eine Datensatzebene für **X** und erlaubt den Zugriff auf das **Value**-Feld jedes Datensatzes während der Verarbeitung.  Der Zugriff erfolgt einfach mithilfe des Wortes **Value** oder mithilfe von **X[@Value]** .
 
-Die innerste **ForAll**-Funktion definiert eine andere Datensatzebene für **Y**.  Da für diese Tabelle auch ein **Value**-Feld definiert wurde, wird bei der Verwendung von **Value** auf das Feld im Datensatz von **Y** verwiesen, nicht mehr auf den von **X**.  Um hier auf das **Value**-Feld von **X** zuzugreifen, muss die längere Version mit dem Operator zur Mehrdeutigkeitsvermeidung verwendet werden.
+Die innerste **ForAll** -Funktion definiert einen anderen Daten Satz Bereich für **Y**.  Da in dieser Tabelle auch ein **Wertfeld** definiert ist, verweist die Verwendung des **Werts** hier auf das Feld im Datensatz von **Y**und nicht mehr auf den Wert von **X**.  Für den Zugriff auf das **Wertfeld** von **X**müssen wir die längere Version mit dem Operator "disambiguations" verwenden.
 
 Da **Y** die innerste Datensatzebene darstellt, ist beim Zugriff auf Felder dieser Tabelle keine Mehrdeutigkeitsvermeidung erforderlich. Die Verwendung dieser Formel erzielt daher dasselbe Ergebnis:
 
@@ -335,7 +335,7 @@ Ungroup(
 )
 ```
 
-Alle Datensatzebenen von **ForAll** sind dem globalen Bereich übergeordnet. Die von uns definierte **Wert** Kontext Variable ist ohne den mehrdeutigkeits Operator nicht nach Namen verfügbar. Um auf diesen Wert zuzugreifen, verwenden Sie **[@Value]** .
+Alle Datensatzebenen von **ForAll** sind dem globalen Bereich übergeordnet. Die von uns definierte **Wert** Kontext Variable ist ohne den mehrdeutigkeits Operator nicht nach Namen verfügbar. Verwenden Sie **[@Value]** , um auf diesen Wert zuzugreifen.
 
 Gruppierung aufgruppierung vereinfacht das Ergebnis, da die gehosteten **ForAll** -Funktionen zu einer Tabelle mit einem Tabellen Ergebnis führen.
 
@@ -400,7 +400,7 @@ Table(
 ## <a name="inline-value-tables"></a>Inline Wert Tabellen
 Sie können einspaltige Tabellen erstellen, indem Sie Werte in eckigen Klammern angeben. Die daraus resultierende Tabelle enthält eine einzelne Spalte namens **Value**.
 
-@No__t-0 entspricht z. b. `Table( { Value: 1 }; { Value: 2 }; { Value: 3 }; { Value: 4 } )` und gibt folgende Tabelle zurück:
+`[ 1; 2; 3; 4 ]` entspricht z. b. `Table( { Value: 1 }; { Value: 2 }; { Value: 3 }; { Value: 4 } )` und gibt folgende Tabelle zurück:
 
 ![](media/working-with-tables/inline-table.png)
 

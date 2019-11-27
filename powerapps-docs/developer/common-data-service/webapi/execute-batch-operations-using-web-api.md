@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 799b2346-bda1-4a26-a330-79d0927a7743
 caps.latest.revision: 11
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4029b07d07505d15f216279edbfc774026463a4f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753698"
 ---
 # <a name="execute-batch-operations-using-the-web-api"></a>Ausführen von Batchbetrieben mithilfe der Web-API
 
@@ -209,7 +215,7 @@ Prefer: odata.include-annotations="*"
   
 --batch_AAA123-- 
 ```
-Weitere Informationen zu den Präferenzen für Einstellungskopfzeilen finden Sie unter [Einstellungskopfzeilen](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752234).
+Weitere Informationen zu den Präferenzen für Einstellungskopfzeilen finden Sie unter [Einstellungskopfzeilen](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752234).
 
 ## <a name="reference-uris-in-an-operation"></a>Verweis-URIs in einem Vorgang
 
@@ -392,7 +398,7 @@ OData-Version: 4.0
 --batchresponse_2cb48f48-39a8-41ea-aa52-132fa8ab3c2d--
 ```
 
-### <a name="reference-uris-in-url-and-request-body-using-odataid"></a>Verweis-URIs in der URL und im Anforderungstext mit @odata.id
+### <a name="reference-uris-in-url-and-request-body-using-odataid"></a>Verweis-URIs in der URL und im Anforderungstext unter Verwendung von @odata.id
 
 Das nachfolgende Beispiel zeigt, wie Sie einen Kontaktentitätsdatensatz mit einem Firmenentitätsdatensatz verknüpfen. Auf den URI des Firmenentitätsdatensatzes wird als `$1` verwiesen und auf den URI des Kontaktentitätsdatensatzes wird als `$2` verwiesen.
 

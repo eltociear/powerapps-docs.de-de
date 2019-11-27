@@ -1,49 +1,60 @@
 ---
 title: Löschen einer modellgesteuerten App | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine modellbasierte App aus Ihrer PowerApps-Umgebung löschen oder entfernen können.'
+description: Weitere Information, wie Sie eine modellgesteuerte App aus Ihrer PowerApps-Umgebung löschen oder entfernen können.
 keywords: ''
-ms.date: 05/31/2018
-ms.service: crm-online
-ms.custom: null
+ms.date: 10/08/2019
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: e82e7f64-37ad-41e5-acd7-16309881c6a2
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 9
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 026420ad6a5f3ab3e74c9c0d11f87f8a52ffa417
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756210"
 ---
-
 # <a name="delete-a-model-driven-app"></a>Löschen einer modellgesteuerten App
-
 Löschen oder entfernen Sie Apps, die in Ihrer Umgebung nicht mehr erforderlich sind.
 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an.
-2. Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer). 
-3. Wählen Sie im Lösungsfenster unter **Komponenten** auf **Apps**.
-4. Wählen Sie dazu die App aus, die Sie löschen möchten, und wählen Sie auf der Befehlsleiste auf **Löschen** aus.
+> [!IMPORTANT]
+> Wenn die modellgesteuerte App in der Standardlösung als Bestandteil einer verwalteten Lösung installiert wurde, sehen Sie unter [Löschen einer modellgesteuerten App, die als Teil einer verwalteten Lösung installiert war](#delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution), nach.
 
-    ![Löschen einer App](media/app-module-solution-window.png "Löschen einer App")
-
-5. Klicken Sie in der Bestätigungsmeldung, die angezeigt wird, auf **Löschen**.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+2. Wählen Sie **Apps** in der linken Navigation aus. 
+3. Wählen Sie dazu die App aus, die Sie löschen möchten, und wählen Sie auf der Befehlsleiste auf **Löschen** aus.
+4. Klicken Sie in der Bestätigungsmeldung, die angezeigt wird, auf **Löschen**.
 
    Die App wird aus der Umgebung gelöscht.
   
-Wenn für die Komponente über Abhängigkeiten verfügt (z. B. Beziehungen), müssen Sie zunächst die Abhängigkeiten entfernen, bevor Sie die App löschen können. Um die Abhängigkeiten einer App anzuzeigen, wählen Sie die App und **Abhängigkeiten anzeigen** in der Befehlsleiste aus.
+Wenn für die Komponente über Abhängigkeiten verfügt (z. B. Beziehungen), müssen Sie zunächst die Abhängigkeiten entfernen, bevor Sie die App löschen können. Um die Abhängigkeiten einer App anzuzeigen, wählen Sie die App und dann **Abhängigkeiten anzeigen** in der Befehlsleiste aus.
 
 > [!NOTE]
 > Wenn Sie die App löschen, ist es empfehlenswert, die zugeordnete Siteübersicht zu löschen. Wenn Sie die zugehörige Siteübersicht nicht löschen, wird vom Siteübersichtsdesigner eine Fehlermeldung angezeigt, wenn Sie zum ersten Mal versuchen, eine weitere App zu erstellen. Sie können den Fehler allerdings ignorieren. Dann wird der Fehler nicht angezeigt, wenn Sie erneut versuchen, die App zu erstellen.
 
+## <a name="delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution"></a>Löschen einer modellgesteuerten App, die als Bestandteil einer verwalteten Lösung installiert worden war
+Um eine modellgesteuerte App zu löschen, die in der Umgebung als Bestandteil einer verwalteten Lösung installiert wurde, löschen Sie die verwaltete Lösung. 
+
+### <a name="delete-a-managed-solution"></a>Löschen einer verwalteten Lösung 
+Alle Komponenten einer verwalteten Lösung werden durch die Löschung der Lösung gelöscht.
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+2.  Wählen Sie im linken Navigationsbereich **Lösungen** aus.
+3.  Wählen Sie in der Liste **Lösungen** die verwaltete Lösung aus, die Sie löschen möchten, und klicken Sie dann auf der Symbolleiste auf **Löschen**. 
 

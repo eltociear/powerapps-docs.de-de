@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 23eb64171c1f339b423bdf56b53b186d2c9e14b5
-ms.sourcegitcommit: 073d8534d7ff0093370ee17a1b9b63c10c7f050c
+ms.openlocfilehash: 69322a21510289f5db92f3969ef524fbcd8421c8
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72041301"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899268"
 ---
 # <a name="what-is-powerapps"></a>Was ist PowerApps?
 
@@ -33,7 +33,7 @@ Weitere Informationen finden Sie auf dem [YouTube-Kanal von PowerApps](https://w
 
 Mithilfe von powerapps können Sie drei Arten von apps erstellen: **Canvas**, **Modell gesteuert**und **Portal**. Weitere Informationen finden Sie unter Übersicht über das [Erstellen von apps in powerapps](maker/index.md).
 
-Wenn Sie eine App erstellen möchten, beginnen Sie auf der Seite [web.powerapps.com](https://web.powerapps.com).
+Um eine APP zu erstellen, beginnen Sie mit [make.powerapps.com](https://make.powerapps.com).
 
 - Mit dem App-Designer **PowerApps Studio** können Sie Canvas-Apps erstellen. Das Erstellen von Apps mit dem App-Designer ist vergleichbar mit dem Erstellen einer Foliengruppe in Microsoft PowerPoint. Weitere Informationen: [Generieren einer App aus Daten](/powerapps/maker/canvas-apps/data-platform-create-app)  
 
@@ -49,7 +49,7 @@ PowerApps-Administratoren haben folgende Möglichkeiten:
 
 - Über das **PowerApps Admin Center** ([admin.powerapps.com](https://admin.powerapps.com)) können Umgebungen, Benutzer, Rollen und DLP-Richtlinien erstellt und verwaltet werden. 
 
-- **Power Platform Admin Center** ([Admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) zum Verwalten von Umgebungen, zum erhalten von echtzeitempfehlungen und zur Unterstützung von powerapps und Microsoft Flow sowie zum Anzeigen von Common Data Service Analytics. 
+- **Power Platform Admin Center** ([Admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) zum Verwalten von Umgebungen, zum erhalten von echtzeitempfehlungen und zur Unterstützung von powerapps und zur Energie Automatisierung sowie zum Anzeigen von Common Data Service Analytics. 
 
 Weitere Informationen finden Sie unter [Verwalten von powerapps](/power-platform/admin/admin-guide)
 

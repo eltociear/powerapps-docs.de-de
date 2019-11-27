@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 90a0bd777e808bb3aaab10b249d4fd765fbad654
-ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
+ms.openlocfilehash: 54d8fb369cb63721de16c5bf280660dbd15796b5
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72560915"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541295"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Verwalten eines lokalen Datengateways in PowerApps
 
@@ -46,7 +46,7 @@ Führen Sie die Schritte unter [Installieren eines lokalen Daten Gateways](/data
 
 ## <a name="view-and-manage-gateway-permissions"></a>Anzeigen und Verwalten von Gatewayberechtigungen
 
-1. Klicken oder tippen Sie unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) im linken Navigationsbereich auf **Gateways** und anschließend auf ein Gateway.
+1. Klicken oder tippen Sie unter [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) im linken Navigationsbereich auf **Gateways** und anschließend auf ein Gateway.
 
 2. Fügen Sie einen Benutzer zu einem Gateway hinzu, indem Sie auf **Benutzer** klicken oder tippen, einen Benutzer oder eine Gruppe und anschließend eine Berechtigungsstufe angeben:
 
@@ -58,7 +58,7 @@ Für die Berechtigungsstufen **Verwenden** und **Verwenden + freigeben** wählen
 
 ## <a name="view-and-manage-gateway-connections"></a>Anzeigen und Verwalten von Gatewayverbindungen
 
-1. Klicken oder tippen Sie unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) im linken Navigationsbereich auf **Gateways** und anschließend auf ein Gateway.
+1. Klicken oder tippen Sie unter [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) im linken Navigationsbereich auf **Gateways** und anschließend auf ein Gateway.
 
 2. Klicken oder tippen Sie auf **Verbindungen** und anschließend auf eine Verbindung, um ihre Details anzuzeigen, die Einstellungen zu bearbeiten oder sie zu löschen.
 

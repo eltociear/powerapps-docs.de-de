@@ -1,6 +1,6 @@
 ---
-title: ActivityParty-Entität (Common Data Service) | Microsoft Docs
-description: 'Eine Aktivitätspartei stellt eine Person oder Gruppe dar, die einer Aktivität zugeordnet ist. Eine Aktivität kann mehrere Aktivitätsparteien haben.'
+title: ActivityParty-Entität (Common Data Service) | Microsoft-Dokumentation
+description: Eine Aktivitätspartei stellt eine Person oder Gruppe dar, die einer Aktivität zugeordnet ist. Eine Aktivität kann mehrere Aktivitätsparteien haben.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa10c95e2b5345f70399d1b19c5e0df0bf1f8527
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748266"
 ---
 # <a name="activityparty-entity"></a>ActivityParty-Entität
 
@@ -23,7 +29,7 @@ Eine Aktivitätspartei stellt eine Person oder Gruppe dar, die einer Aktivität 
 
 ## <a name="activity-party-types"></a>Aktivitätsparteitypen  
 
- Es stehen 11 Aktivitätsparteitypen in Common Data Service zur Verfügung. Der Aktivitätsparteityp ist als ganzzahliger Wert im `ActivityParty.ParticipationTypeMask`-Attribut gespeichert. In der folgenden Tabelle sind die verschiedenen Aktivitätsparteitypen, der entsprechende ganzzahlige Wert für das `ActivityParty.ParticipationTypeMask`-Attribut und die Beschreibung aufgeführt.  
+ In Common Data Service stehen 11 Aktivitätsparteitypen zur Verfügung. Der Aktivitätsparteityp ist als ganzzahliger Wert im `ActivityParty.ParticipationTypeMask`-Attribut gespeichert. In der folgenden Tabelle sind die verschiedenen Aktivitätsparteitypen, der entsprechende ganzzahlige Wert für das `ActivityParty.ParticipationTypeMask`-Attribut und die Beschreibung aufgeführt.  
   
 |Aktivitätsparteityp|Value|Beschreibung|  
 |-------------------------|-----------|-----------------|  

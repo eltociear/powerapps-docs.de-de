@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9204c26cc54f4230496943d48934af75d21c5319
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2841da7f5d7b19cd727f169c6fe89588f69bf1ec
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994979"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541678"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Anzeigen von Daten in einem Linien-, Kreis- oder Balkendiagramm in PowerApps
@@ -36,15 +36,15 @@ Sie können diese Diagramme in PowerApps erstellen und verwenden. Lassen Sie uns
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
-* Erstellen Sie eine App aus einer [Vorlage](get-started-test-drive.md), aus [Daten](get-started-create-from-data.md) oder [von Grund auf neu](get-started-create-from-blank.md).
+* [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
+* Erstellen Sie eine App aus einer [Vorlage](get-started-test-drive.md), auf der Grundlage von [Daten](get-started-create-from-data.md) oder [von Grund auf neu](get-started-create-from-blank.md).
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
-* Laden Sie [ChartData.zip](http://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) herunter, die Beispieldaten als XML-Datei enthält. Führen Sie die Schritte in diesem Thema aus, um sie direkt in Ihre App zu importieren. Dekomprimieren Sie alternativ die ZIP-Datei, öffnen Sie die XML-Datei in Excel, und speichern Sie es in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md).
+* Laden Sie [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) herunter, die Beispieldaten als XML-Datei enthält. Führen Sie die Schritte in diesem Thema aus, um sie direkt in Ihre App zu importieren. Dekomprimieren Sie alternativ die ZIP-Datei, öffnen Sie die XML-Datei in Excel, und speichern Sie es in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md).
 
 ## <a name="import-the-sample-data"></a>Importieren der Beispieldaten
 In den folgenden Schritten importieren wir die Beispieldaten in eine Sammlung mit dem Namen **ProductRevenue**.
 
-1. Wählen Sie auf der Registerkarte **Insert** (Einfügen) die Option **Controls** (Steuerelemente) und anschließend **Import** (Importieren) aus.  
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Steuerelemente** und anschließend **Importieren** aus:  
 
     ![][11]  
 
@@ -63,7 +63,7 @@ In den folgenden Schritten importieren wir die Beispieldaten in eine Sammlung mi
     ![][1]  
 
    > [!NOTE]
-   > Das Import-Steuerelement wird zum Importieren von Excel-ähnlichen Daten und zum Erstellen der Sammlung verwendet. Das Importsteuerelement importiert Daten, wenn Sie Ihre App erstellen und eine Vorschau der App anzeigen. Das Import-Steuerelement importiert derzeit keine Daten, wenn Sie Ihre App veröffentlichen.
+   > Das Importsteuerelement wird zum Importieren von Excel-ähnlichen Daten und zum Erstellen der Sammlung verwendet. Das Importsteuerelement importiert Daten, wenn Sie Ihre App erstellen und eine Vorschau der App anzeigen. Aktuell importiert das Importsteuerelement keine Daten, wenn Sie Ihre App veröffentlichen.
    >
 
 6. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.

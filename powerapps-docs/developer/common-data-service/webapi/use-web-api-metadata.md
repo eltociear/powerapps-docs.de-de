@@ -1,26 +1,31 @@
 ---
-title: Nutzen der Web-API mit Metadaten (Common Data Service) | Microsoft Docs
-description: 'Dieser Abschnitt enthält Anweisungen dazu, wie die Web-API mit Entitätstypen verwendet wird, die in der WEB-API-Metadaten-EntityType-Referenz enthalten sind.'
+title: Verwenden der Web API mit Metadaten (Common Data Service) | Microsoft Docs
+description: Dieser Abschnitt enthält Anweisungen dazu, wie die Web-API mit Entitätstypen verwendet wird, die in der WEB-API-Metadaten-EntityType-Referenz enthalten sind.
 ms.custom: ''
 ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5c51d0914b1f198e880dcbeb451a49592fd9240b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748599"
 ---
 # <a name="use-the-web-api-with-metadata"></a>Verwenden der Web-API mit Metadaten
 
 Sie können die Metadatenvorgänge mit der Web-API ausführen, die Sie mithilfe des Organisationsservice ausführen können. Dieser Abschnitt enthält Anweisungen dazu, wie die Web-API mit Entitätstypen, die in der <xref:Microsoft.Dynamics.CRM.MetadataEntityTypeIndex> enthalten sind, verwendet werden.  
-> [!NOTE]
-> Informationen in diesem Abschnitt gelten auch für Benutzer von Dynamics 365 for Customer Engagement-Apps (online und on-premises).
+
 
  Es gibt vier festgelegte Pfade der Entität, die verfügbar gemacht werden, um Vorgänge mit Metadatenentitäten auszuführen (siehe folgende Tabelle).  
   
@@ -58,5 +63,4 @@ Sie können feststellen, ob Entitäten sich für die Teilnahme an einer Beziehun
 ### <a name="see-also"></a>Siehe auch
 
 [Durchsuchen Sie Metadaten für die Organisation](../browse-your-metadata.md)<br />
-[Verwenden Common Data Service-Web-API](overview.md)
-[Entwicklerhandbuch zu Dynamics 365 for Customer Engagement-Apps](/dynamics365/customer-engagement/developer/developer-guide)
+[Verwenden der Common Data Service-Web-API](overview.md)

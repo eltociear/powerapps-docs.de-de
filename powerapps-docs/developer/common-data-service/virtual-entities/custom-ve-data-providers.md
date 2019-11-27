@@ -1,22 +1,27 @@
 ---
 title: Benutzerdefinierte virtuelle Entitätsdatenanbieter (Common Data Service) | Microsoft Docs
-description: 'Durch Verwenden von Common Data Service Data SDK haben .NET-Entwickler die Möglichkeit zum Erstellen benutzerdefinierter virtueller Entitätsdatenanbieter, um externe Datenquellentypen zu kennen, die nicht von einem vorhandenen Datenanbieter unterstützt werden.'
-ms.date: 10/31/2018
+description: Durch Verwenden von Common Data Service Data SDK haben .NET-Entwickler die Möglichkeit zum Erstellen benutzerdefinierter virtueller Entitätsdatenanbieter, um externe Datenquellentypen zu kennen, die nicht von einem vorhandenen Datenanbieter unterstützt werden.
+ms.date: 09/05/2019
 ms.service: powerapps
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996d22
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 50223ab21a885a43c6dcb91285545e67b43c144c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748368"
 ---
-
 # <a name="custom-virtual-entity-data-providers"></a>Benutzerdefinierte virtuelle Entitätsdatenanbieter
 
 Durch Verwenden von Common Data Service Data SDK haben .NET-Entwickler die Möglichkeit zum Erstellen benutzerdefinierter virtueller Entitätsdatenanbieter, um externe Datenquellentypen zu kennen, die nicht von einem vorhandenen Datenanbieter unterstützt werden. Jeder Datenanbieter besteht aus einem wiederverwendbaren Satz von Common Data Service-Plugins, die die unterstützten CRUD-Vorgänge implementieren. (Die ursprüngliche Version ist auf **Abrufen** und **RetrieveMultiple**-Lesevorgänge beschränkt.) Dieser Abschnitt enthält erläuternde Informationen zu Datenanbietern und Vorgehensweisen zum Entwickeln benutzerdefinierter Anbieter, einschließlich Beispielcode.
@@ -30,18 +35,11 @@ Durch Verwenden von Common Data Service Data SDK haben .NET-Entwickler die Mögl
 Benutzerdefinierte Datenanbieter erfordern erhebliche Entwicklungsressourcen, um sie zu erstellen und zu warten. Sie benötigen mindestens grundlegende Kenntnisse der folgenden Bereiche:
 
 - Das externe Datenquellenschema und die zugeordneten Datenzugriffstechniken.  Dies Domänenwissen ist spezifisch für den externem Datenquellentyp.
-
-
-<!-- TODO:
-- Common Data Service metadata schema: More information: [The metadata and data models in Microsoft Dynamics 365](../metadata-data-models.md).
-- Common Data Service event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
-- Common Data Service plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
+- Common Data Service Metadatenschema: Mehr Informationen: [Arbeiten Sie mit Metadaten unter Verwendung von Code](../metadata-services.md).
+- Common Data Service Event-Framework: Mehr Informationen: [Event Framework](../event-framework.md). 
+- Common Data Service Plug-in-Architektur und Entwicklung: Mehr Informationen: [Verwenden Sie Plug-Ins, um Geschäftsprozesse zu erweitern](../plug-ins.md).
 
 Die `Microsoft.Xrm.Sdk.Data.dll`-Assembly wird als NuGet-Paket bereitgestellt: [Microsoft.CrmSdk.Data](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/)
-
-<!-- ## Data Provider Architecture -->
-<!-- TODO: it would be nice to have a more detailed architecture diagram of a data provider and add discussion. -->
-
 
 ## <a name="categories-of-providers"></a>Kategorien von Anbietern
 
@@ -96,11 +94,6 @@ Wenn aus irgendeinem Grund Ihr Code nicht das erwartete Ergebnis erzielen kann, 
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.ObjectNotFoundException>|Der angegebene Datensatz in der externen Datenquelle ist nicht vorhanden.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.TimeoutException>|Der externe Vorgang wurde nicht in der angegeben Zeit abgeschlossen; z. B. das Ergebnis eines HTTP-Status 408 des externen Datenservices.|
 
-<!-- 
-  TODO:
-  To assist you in plug-in development, the Data SDK contains the _Plugin Profiler and Debugger_; for more information see [TBD]TODO: Obtain information on this tool, create subtopic. 
--->
-
 
 ### <a name="plug-in-registration"></a>Plug-In-Registrierung
 
@@ -113,6 +106,11 @@ Im Gegensatz zu gewöhnlichen Plug-Ins verwenden Sie nur das Plugin Registration
 |[EntityDataSource](../reference/entities/entitydatasource.md)|Stellt den Entitätskontext und alle Verbindungsinformationen zur Verfügung, die für externe die Datenquelle erforderlich sind, einschließlich aller geheimen Informationen, die nötig sind, um sich zu authentifizieren.|
 
 Wenn die Metadaten für Ihre virtuelle Entität konfiguriert werden, werden die Plug-Ins mithilfe des PRT registriert und die richtigen Konfigurationsdaten in **EntityDataProvider** und **EntityDataSource** festgelegt sind, beginnt die virtuelle Entität, auf Anforderungen zu reagieren.
+
+### <a name="debugging-plug-ins"></a>Debuggen von Plug-Ins
+
+Ein benutzerdefinierter Anbieter virtueller Entitäten ist eine Art von Plug-in. Verwenden Sie die Informationen in diesen Themen, um Plugins für benutzerdefinierte Anbieter virtueller Entitäten zu debuggen: [Debug Plug-ins](../debug-plug-in.md) und [Tutorial: Debuggen eines Plugins](../tutorial-debug-plug-in.md).
+
 
 ### <a name="see-also"></a>Siehe auch
 

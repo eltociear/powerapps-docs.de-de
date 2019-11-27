@@ -1,21 +1,26 @@
 ---
 title: Verwenden Sie die QueryByAttribute-Klasse (Common Data Service) | Microsoft Docs
-description: 'Sie können die QueryByAttribute-Klasse zum Erstellen von Abfragen verwenden, die eine Gruppe von Attributen hinsichtlich einer Gruppe von Werten testen.'
+description: Sie können die QueryByAttribute-Klasse zum Erstellen von Abfragen verwenden, die eine Gruppe von Attributen hinsichtlich einer Gruppe von Werten testen.
 ms.custom: ''
 ms.date: 05/03/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a6f56f5bb4cb9c0ef212a597ffb2076b24a683a0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748683"
 ---
-
 # <a name="use-the-querybyattribute-class"></a>Verwenden der QueryByAttribute-Klasse
 
 Sie können die <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute>-Klasse zum Erstellen von Abfragen verwenden, die eine Gruppe von Attributen hinsichtlich einer Gruppe von Werten testen. Verwenden Sie diese Klasse mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>-Methode oder der <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> Methode.

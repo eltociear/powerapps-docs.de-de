@@ -1,6 +1,6 @@
 ---
-title: 'Export, vorbereiten und bearbeiten und importieren des Menübands (Modell-angetriebene Apps) | Microsoft Docs'
-description: 'Infos zum Exportieren des Menübands, indem Sie es in eine Lösung einschließen und dann die Lösung exportieren. Sie können auswählen, alle Anpassungen zu exportieren, aber dies kann eine große Datenmenge darstellen. Wir empfehlen, dass Sie eine vorhandene nicht-verwaltete Lösung verwenden oder eine neue Lösung erstellen.'
+title: Export, vorbereiten und bearbeiten und importieren des Menübands (Modell-angetriebene Apps) | Microsoft Docs
+description: Infos zum Exportieren des Menübands, indem Sie es in eine Lösung einschließen und dann die Lösung exportieren. Sie können auswählen, alle Anpassungen zu exportieren, aber dies kann eine große Datenmenge darstellen. Wir empfehlen, dass Sie eine vorhandene nicht-verwaltete Lösung verwenden oder eine neue Lösung erstellen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 41b33926303c6211636c6a20e4e12651ae6a7586
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748754"
 ---
 # <a name="export-prepare-to-edit-and-import-the-ribbon"></a>Exportieren, Vorbereitung der Bearbeitung und Importieren des Menübands
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/export-prepare-edit-import-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/export-prepare-edit-import-ribbon -->
 
 Um das Menüband zu bearbeiten, müssen folgende Aufgaben ausgeführt werden:  
   
@@ -103,7 +109,7 @@ Um das Menüband zu bearbeiten, müssen folgende Aufgaben ausgeführt werden:
 <a name="BKMK_ImportTheRibbon"></a>   
 ## <a name="import-the-ribbon"></a>Importieren des Menübands  
   
-1. Nachdem Sie die customization.xml-Datei bearbeitet haben, klicken Sie mit der rechten Maustaste in  Visual Studio oder Visual Web Developer 2010 auf die Registerkarte customization.xml und wählen Sie **Enthaltenden Ordner öffnen**.  
+1. Nachdem Sie die customization.xml-Datei bearbeitet haben, Visual Studio klicken Sie mit der rechten Maustaste in Visual Web Developer 2010 Express auf die Registerkarte customization.xml und wählen Sie **Enthaltenden Ordner öffnen**.  
   
 2. Wählen Sie alle Dateien oder Ordner aus, die enthalten waren, als Sie die Lösung extrahierten. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, wählen Sie **Senden an**, und wählen Sie dann **Komprimierter (gezippter) Ordner**.  
   
@@ -128,7 +134,7 @@ Um das Menüband zu bearbeiten, müssen folgende Aufgaben ausgeführt werden:
   
 1.  Wenn Sie eine Benachrichtigung erhalten, dass Fehler aufgetreten sind, durch die der Import scheiterte, klicken Sie auf **Exportprotokoll**.  
   
-2.  Speichern Sie die Exportprotokolldatei. Wählen Sie die Datei aus, und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **Öffnen mit**, und wählen Sie dann **Microsoft Office Excel**.  
+2.  Speichern Sie die Exportprotokolldatei. Wählen Sie die Datei aus, und klicken Sie mit der rechten Maustaste darauf. Klicken Sie auf **öffnen mit** und wählen Sie dann **Microsoft Office Excel** aus.  
   
 3.  Wählen Sie die Tabelle **Komponenten** aus und notieren Sie die Mitteilungen in der Spalte **Fehlertext**.  
   

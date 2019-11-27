@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Dashboards für interaktive Funktionen in PowerApps | Microsoft Docs
+title: Konfigurieren von Dashboards für modellgesteuerte interaktive Funktionen in PowerApps | Microsoft-Dokumentation
 description: Informationen zum Konfigurieren von Dashboards für interaktive Funktionen in PowerApps
 keywords: Interaktive Dashboards; Customer Service; Microsoft Dynamics 365; Interaktiver Service-Hub
 author: Mattp123
@@ -13,17 +13,22 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: d1446a95-14bf-4b15-a905-72fce07f4c76
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752553"
 ---
-
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>Informationen zum Konfigurieren von Dashboards für interaktive Funktionen
 
 Dashboards für interaktive Funktionen können ein zentraler Arbeitsbereich für App-Benutzer sein, wie beispielsweise Servicebeauftragte, damit sie Arbeitsauslastungsinformationen anzeigen können und tätig werden können. Sie sind vollständig konfigurierbar, auf Sicherheits-Rolle basierend und liefern Arbeitsauslastungsinformationen für mehrere Streams in Echtzeit. Interaktive Dashboardbenutzer müssen nicht die ganze Anwendung durchgehen, um nach einem bestimmten Datensatz zu suchen. Sie können direkt vom Dashboard aus daraufhin handeln. 
@@ -51,29 +56,29 @@ Dashboards für interaktive Funktionen können ein zentraler Arbeitsbereich für
 ### <a name="multi-stream-dashboard-tile-view"></a>Streamübersichts-Dashboard-Kachelansicht  
  Dasselbe Dashboard, nur in der Kachelansicht.  
   
- ![Kachelansicht Streamübersichts-Dashboard](media/interactive-dashboards-multi-stream-tiles.png "Kachelansicht Streamübersichts-Dashboard")  
+ ![Streamübersichts-Dashboard-Kachelansicht](media/interactive-dashboards-multi-stream-tiles.png "Streamübersichts-Dashboard-Kachelansicht")  
   
 ### <a name="multi-stream-dashboard-layouts"></a>Streamübersichts-Dashboard-Layouts  
  Für Streamübersichts-Dashboards können Sie vier verschiedene Layouts auswählen.  
 
  > [!div class="mx-imgBorder"] 
- > ![Layouts Streamübersichts-Dashboard](media/interactive-dashboards-multi-stream-layout.png "Layouts Streamübersichts-Dashboard")  
+ > ![Streamübersichts-Dashboard-Layouts](media/interactive-dashboards-multi-stream-layout.png "Streamübersichts-Dashboard-Layouts")  
   
 ### <a name="multi-stream-entity-specific-dashboard"></a>Entitätsspezifisches Streamübersichts-Dashboard.  
  Das entitätsspezifische Dashboard für die Anfrage-Entität wird hier gezeigt.  
   
- ![Dashboard mit offenen Fällen](media/interactive-dashboard-cases-entity-specific.png "Dashboard mit offenen Fällen")  
+ ![Dashboard für Anfragen öffnen](media/interactive-dashboard-cases-entity-specific.png "Dashboard für Anfragen öffnen")  
   
 ### <a name="single-stream-dashboard"></a>Streamdetail-Dashboard  
  Das Streamdetail-Dashboard enthält den Datenstream auf den linken Seite und visuelle Filter und Kacheln auf der rechten Seite.  
   
- ![Interaktives Streamdetail-Dashboard für den Servicehub](media/interactive-dashboards-single-stream.png "Interaktives Streamdetail-Dashboard für den Servicehub")  
+ ![Interaktive Streamdetail-Servicehub-Dashboards](media/interactive-dashboards-single-stream.png "Interaktive Streamdetail-Servicehub-Dashboards")  
   
 ### <a name="single-stream-dashboard-layouts"></a>Streamdetail-Dashboard-Layouts  
  Für Streamdetail-Dashboards können Sie vier verschiedene Layouts auswählen.  
  
  > [!div class="mx-imgBorder"] 
- > ![Layouts Streamdetail-Dashboard.](media/interactive-dashboards-single-stream-layout.png "Layouts Streamdetail-Dashboard.")  
+ > ![Streamdetail-Dashboard-Layouts.](media/interactive-dashboards-single-stream-layout.png "Streamdetail-Dashboard-Layouts.")  
   
 <a name="BKMK_Enable"></a>   
 ## <a name="configure-filter-fields-and-security-roles-for-the-interactive-dashboards"></a>Konfigurieren von Filterfeldern und Sicherheitsrollen für die interaktiven Dashboards  
@@ -88,7 +93,7 @@ Dashboards für interaktive Funktionen können ein zentraler Arbeitsbereich für
 In diesem Beispiel gibt es zwei interaktive Dashboardoptionen, die in der Anfrage-Entität für das **IsEscalated**-Feld verfügbar sind.  
 
  > [!div class="mx-imgBorder"] 
- > ![Ein Feld für einen globalen Filter aktivieren und sortieren](media/enable-filter-sort.png "Ein Feld für einen globalen Filter aktivieren und sortieren")  
+ > ![Aktivieren Sie ein Feld für globalen Filter und sortieren](media/enable-filter-sort.png "Aktivieren Sie ein Feld für globalen Filter und sortieren")  
   
 ### <a name="configure-the-appears-in-global-filter-in-interactive-experience-option"></a>Konfigurieren der Option „Wird im globalen Filter in interaktiven Funktionen angezeigt”
 
@@ -102,7 +107,7 @@ In diesem Beispiel gibt es zwei interaktive Dashboardoptionen, die in der Anfrag
   
  Das Flyoutfenster für den globalen Filter wird hier gezeigt:  
   
- ![Zwei globale Filterfelder hinzufügen](media/global-filter-escalated.png "Globale Filterfelder")  
+ ![Hinzufügen von zwei globalen Filterfeldern](media/global-filter-escalated.png "Globale Filterfelder")  
   
 > [!TIP]
 >  Wenn Sie einen visuellen Filter konfigurieren, der auf Felder wie „Priorität” bzw. „Status” basiert, ist es eine bewährte Methode, die Anzeige dieser Felder (Priorität, Status) auch im globalen Filter zu aktivieren.  
@@ -144,7 +149,7 @@ Die folgende Abbildung zeigt den Flyoutdialog mit der Liste der für das Sortier
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Konfigurieren Sie ein interaktives Dashboard mit mehreren Streams mithilfe des Layouts mit 4 Spalten.  
  
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
   
 2.  Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. 
 
@@ -170,7 +175,7 @@ Die folgende Abbildung zeigt den Flyoutdialog mit der Liste der für das Sortier
  Fügen Sie das Ringdiagramm **Anfragen nach Priorität** hinzu:
   
  > [!div class="mx-imgBorder"] 
- > ![Eine Ringdiagrammkomponente hinzufügen.](media/interactive-dashboards-add-chart-circle.png "Eine Ringdiagrammkomponente hinzufügen.")  
+ > ![Hinzufügen einer Ringdiagrammkomponente.](media/interactive-dashboards-add-chart-circle.png "Hinzufügen einer Ringdiagrammkomponente.")  
   
  Einige Diagramme oder Kreisdiagramme oder Balkendiagramme Rendern die Datenanzeige, die im System gespeichert werden. Die Ring- und Tag-Diagramme werden als statische Bilder geladen und zeigen nicht die Vorschau der tatsächlichen Daten.  
   
@@ -184,7 +189,7 @@ Die folgende Abbildung zeigt den Flyoutdialog mit der Liste der für das Sortier
   
  Konfigurieren Sie den Stream für **Für Bearbeitung verfügbare Elemente**, wie hier dargestellt:  
   
- ![Einen Stream meiner aktiven Fälle hinzufügen.](media/add-stream-dashboard.png "Einen Stream meiner aktiven Fälle hinzufügen.")  
+ ![Hinzufügen eines Stream Meine aktiven Fälle.](media/add-stream-dashboard.png "Hinzufügen eines Stream Meine aktiven Fälle.")  
 
 > [!NOTE]
 >  Die **Warteschlangenoption** ist im Dialogfeld nur für warteschlangenfähige Entitäten verfügbar. Wenn die Entität nicht warteschlangenfähig ist, wird die **Warteschlangenoption** für Entitätendashboards nicht im Dialogfeld angezeigt. Sie können für Entitäten, die nicht warteschlangenfähig sind, nur die **Ansichtsoption** im Dashboard-Stream verwenden.    
@@ -192,13 +197,13 @@ Die folgende Abbildung zeigt den Flyoutdialog mit der Liste der für das Sortier
 Die folgende Abbildung ist ein Beispiel eines vollständig konfigurierten Diagrammbereichs und Streambereichs:  
  
  > [!div class="mx-imgBorder"] 
- > ![Vollständig konfigurierter Dashboard](media/example-stream-visual.png "Vollständig konfigurierter Dashboard")  
+ > ![Komplett konfiguriertes Dashboard](media/example-stream-visual.png "Komplett konfiguriertes Dashboard")  
   
  Nach dem Konfigurieren des Dashboards, speichern Sie es und veröffentlichen Sie die Anpassungen, damit die Änderungen wirksam werden.   
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>Bearbeiten oder Löschen einzelner Streams eines vorhandenen Dashboards  
   
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.   
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.   
   
 2. Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. Wählen Sie auf die Registerkarte **Dashboards** aus.  
   
@@ -221,7 +226,7 @@ Die folgende Abbildung ist ein Beispiel eines vollständig konfigurierten Diagra
 
 Anstatt eine Entität auszuwählen, sind beispielsweise einige Felder im entitätsspezifischen Dashboard für die Entität, für die Sie das Dashboard erstellen, voreingestellt.  
   
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2.  Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. 
 
@@ -235,7 +240,7 @@ Anstatt eine Entität auszuwählen, sind beispielsweise einige Felder im entitä
 ### <a name="configure-a-single-stream-dashboard"></a>Konfigurieren eines Streamdetail-Dashboards  
  Das Konfigurieren eines Streamdetail-Dashboard verläuft ähnlich wie das Konfigurieren von Streamübersichts-Dashboard. Alle Benutzeroberfläche-Navigationsschritte sind identisch beispielsweise wie das Streamübersichts-Dashboard. Sie können ein Layout mit Kacheln oder ohne Kacheln wählen. Wenn die Kacheln enthalten sind, werden sie immer im Dashboard angezeigt. Um eine Kachel zu konfigurieren, wählen Sie das Symbol in der Mitte Kachel aus. Wenn das Fenster **Kachel hinzufügen** angezeigt wird, geben Sie die erforderlichen Daten ein. Die folgende Abbildung zeigt ein Beispiel für ein Kachel-Setup.  
   
- ![Einem Streamdetail-Dashboard eine Kachel hinzufügen.](media/add-tile.png "Einem Streamdetail-Dashboard eine Kachel hinzufügen.")  
+ ![Eine Kachel dem Streamdetail-Dashboard hinzufügen](media/add-tile.png "Eine Kachel dem Streamdetail-Dashboard hinzufügen")  
   
 <a name="BKMK_ConfigureColors"></a>   
 ## <a name="configure-dashboard-colors"></a>Dashboardfarben konfigurieren  
@@ -264,11 +269,11 @@ Im folgenden Beispiel ändern wir die Farbe für das Feld **IsEscalated**. Verwe
   
 Wenn das Dialogfeld **Listenwert bearbeiten** angezeigt wird, wählen Sie die Farbe, wie hier gezeigt:  
   
- ![Die Dashboard-Farbe ändern](media/modify-color.png "Die Dashboard-Farbe ändern")  
+ ![Ändern der Dashboardfarbe](media/modify-color.png "Ändern der Dashboardfarbe")  
 
 Auch wenn Sie zum Feld **Priorität** wechseln, um die Farben der Anfrageprioritätsoptionen zu ändern, wählen Sie die Farbe im Unterbereich **Optionen** der Registerkarte **Allgemein** aus, wie unten gezeigt:
 
- ![Ändern der Dashboardfarbe](media/priority-color-modify.png "Ändern der Dashboardfarbe für die Anfrage-Priorität")  
+ ![Ändern der Dashboardfarbe](media/priority-color-modify.png "Dashboardfarbe für Fallpriorität ändern")  
   
 ### <a name="see-also"></a>Siehe auch  
  

@@ -1,6 +1,6 @@
 ---
-title: Zugriff auf modellgesteuerte App-Formulare in PowerApps steuern | MicrosoftDocs
-description: 'Erfahren Sie, wie Zugriff auf Hauptformulare gesteuert wird'
+title: Steuern des Zugriffs auf modellgesteuerte App-Formulare in PowerApps | MicrosoftDocs
+description: Erfahren Sie, wie der Zugriff auf Hauptformulare gesteuert wird
 ms.custom: ''
 ms.date: 06/18/2019
 ms.reviewer: ''
@@ -8,21 +8,23 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
 author: Mattp123
 ms.assetid: 15d123e0-b604-45dd-ab34-0b37787a04bb
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a3a381bbc5d2fe8e338a55d6516978d3de355834
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752610"
 ---
 # <a name="control-access-to-model-driven-app-forms"></a>Zugriff auf modellgesteuerte App-Formulare in PowerApps steuern
 
@@ -30,7 +32,7 @@ search.app:
   
 - **Ein Hauptformular inaktiv machen**  
   
-     Sie können eine aktive oder inaktive Eigenschaft für Hauptformulare festlegen. Diese Funktion dient hauptsächlich dazu, neue Formulare zu verwalten, wenn Dynamics 365 Customer Engagement Organisationen eine Aktualisierung durchführen, Sie können damit aber verhindern, dass Benutzer ein bestimmtes Hauptformular verwenden.   
+     Sie können eine aktive oder inaktive Eigenschaft für Hauptformulare festlegen. Diese Funktion dient hauptsächlich dazu, neue Formulare zu verwalten, wenn Common Data Service-Umgebungen eine Aktualisierung durchführen, Sie können damit aber verhindern, dass Benutzer ein bestimmtes Hauptformular verwenden.   
   
 - **Zuweisen von Sicherheitsrollen zum Hauptformular**  
   
@@ -74,9 +76,9 @@ search.app:
 Der Client-API-Formularkontext (formContext) bietet eine Referenz im Formular oder auf ein Element im Formular, wie z. B. ein Steuerelement für die Schnellansicht oder eine Zeile in einem bearbeitbaren Raster, für den der aktuelle Code ausgeführt wird. Weitere Informationen: [Client-API-Formularkontext](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)
 
 > [!IMPORTANT]
-> Mit Dynamics 365 for Customer Engagement-Apps, Version 9.0, ist das Xrm.Page-Object [veraltet](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated), und Sie sollten nun die [getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext)-Methode aus dem zur Ausführung übergebenen Kontextobjekt verwenden, um die Referenz ins entsprechende Formular oder ein Element im Formular zurückzugeben.
+> Das Xrm.Page-Objekt ist [veraltet](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated); und Sie sollen nun die [getFormContext](/powerapps/developer/model-driven-apps/clientapi/reference/executioncontext/getformcontext)-Methode aus dem Übergabe-Kontextobjekt verwenden, um die Referenz ins entsprechende Formular oder in ein Element im Formular zurückzugeben.
 <!-- 
- Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
+ Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](https://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](https://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   
  This approach will not work for Dynamics 365 for tablets because multiple forms are not available for selection.  -->
 

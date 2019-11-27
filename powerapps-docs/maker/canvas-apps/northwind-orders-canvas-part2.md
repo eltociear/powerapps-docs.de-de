@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d151249caebdb2a6f142943074a409bc626ff662
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 6f49057e55ea52dac98c92109752a05276eec831
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71995859"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741832"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Erstellen eines Zusammenfassungs Formulars in einer Canvas-App
@@ -95,28 +95,32 @@ In diesem Abschnitt fügen Sie Steuerelemente hinzu, um eine Zusammenfassung ein
     > [!div class="mx-imgBorder"]
     > ![das Bearbeitungs Formular-Steuerelement verschieben und die Größe ändern](media/northwind-orders-canvas-part2/form-03.png)
 
-1. Legen Sie in der Bearbeitungs Leiste die **DataSource** -Eigenschaft des Formulars auf diesen Wert fest:
+1. Wählen Sie im Bereich **Eigenschaften** die Dropdown Leiste **Datenquelle** aus.
 
-    ```powerapps-comma
-    Orders
-    ```
+    > [!div class="mx-imgBorder"]
+    > ![legen Sie die DataSource-Eigenschaft des Bearbeitungs Formular-Steuer Elements fest](media/northwind-orders-canvas-part2/form-04a.png)
+
+1. Wählen Sie die Datenquelle **Orders** aus.
 
     > [!div class="mx-imgBorder"]
     > ![legen Sie die DataSource-Eigenschaft des Bearbeitungs Formular-Steuer Elements fest](media/northwind-orders-canvas-part2/form-04.png)
 
-    Sie können die gleiche Eigenschaft auf der Registerkarte " **Eigenschaften** " in der Nähe des rechten Rands festlegen. bei diesem Ansatz werden jedoch Felder hinzugefügt, die Sie dem Formular nicht benötigen. Wenn Sie die Bearbeitungs Leiste verwenden, bleibt das Formular leer.
-
 ## <a name="add-and-arrange-fields"></a>Felder hinzufügen und anordnen
 
-1. Wählen Sie auf der Registerkarte **Eigenschaften** in der Nähe des rechten Rands **Felder bearbeiten** aus, um den **Bereich Felder** zu öffnen:
+1. Wählen Sie auf der Registerkarte **Eigenschaften** in der Nähe des rechten Rands **Felder bearbeiten** aus, um den **Bereich Felder** zu öffnen.
 
     > [!div class="mx-imgBorder"]
     > ![den Bereich Felder öffnen](media/northwind-orders-canvas-part2/form-05.png)
 
-1. Wählen Sie im Bereich **Felder** die Option **Feld hinzufügen**aus, und aktivieren Sie dann die Kontrollkästchen für die Felder **Customer** und **Employee** .
+1. Wenn der **Bereich Felder** nicht leer ist, entfernen Sie die Felder, die bereits eingefügt wurden.  
 
     > [!div class="mx-imgBorder"]
-    > ![die Felder Customer und Employee dem Bearbeitungs Formular-Steuerelement hinzufügen](media/northwind-orders-canvas-part2/form-06.png)
+    > ![den Bereich Felder öffnen](media/northwind-orders-canvas-part2/form-06a.png)
+
+1. Nachdem die Liste der Felder leer ist, wählen Sie **Feld hinzufügen**aus, und aktivieren Sie dann die Kontrollkästchen für die Felder **Customer** und **Employee** .
+
+    > [!div class="mx-imgBorder"]
+    > ![die Felder Customer und Employee dem Bearbeitungs Formular-Steuerelement hinzufügen](media/northwind-orders-canvas-part2/form-06b.png)
 
 1. Scrollen Sie nach unten, bis diese Felder angezeigt werden, und aktivieren Sie dann die entsprechenden Kontrollkästchen:
 
@@ -127,11 +131,14 @@ In diesem Abschnitt fügen Sie Steuerelemente hinzu, um eine Zusammenfassung ein
     - **Kostenpflichtiges Datum**
 
     > [!div class="mx-imgBorder"]
-    > ![dem Bearbeitungs Formular-Steuerelement fünf weitere Felder hinzufügen](media/northwind-orders-canvas-part2/form-07.png)
+    > ![dem Bearbeitungs Formular-Steuerelement fünf weitere Felder hinzufügen](media/northwind-orders-canvas-part2/form-06c.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![dem Bearbeitungs Formular-Steuerelement fünf weitere Felder hinzufügen](media/northwind-orders-canvas-part2/form-06d.png)
 
 1. Wählen Sie unten im **Bereich "Felder** " die Option **Hinzufügen**aus, und schließen Sie dann den **Bereich Felder** .
 
-    Das Formular zeigt sieben Felder an:
+    Das Formular zeigt sieben Felder an, die sich in einer anderen Reihenfolge befinden können:
 
     > [!div class="mx-imgBorder"]
     > ![Formular Formular bearbeiten zeigt sieben Felder an](media/northwind-orders-canvas-part2/form-08.png)

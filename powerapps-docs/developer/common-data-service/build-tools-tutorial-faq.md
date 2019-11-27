@@ -1,6 +1,6 @@
 ---
 title: FAQ und Lernprogramm zu Buildtools| Microsoft Docs
-description: 'Bei PowerApps-Buildtools handelt es sich um eine Sammlung von PowerApps-spezifischen Azure DevOps-Buildaufgaben, die vermeiden, dass Skripts manuell heruntergeladen werden müssen, um die Entwicklung von PowerApps zu verwalten. In diesem Thema werden das Lernprogramm und die FAQs beschrieben, auf die Sie zugreifen können, um mehr über diese Tools zu erfahren. '
+description: 'Bei PowerApps build tools handelt es sich um eine Sammlung von PowerApps-spezifischen Azure DevOps-Buildaufgaben, die vermeiden, dass Skripts manuell heruntergeladen werden müssen, um die Entwicklung von PowerApps zu verwalten. In diesem Thema werden das Lernprogramm und die FAQs beschrieben, auf die Sie zugreifen können, um mehr über diese Tools zu erfahren. '
 ms.custom: ''
 ms.date: 07/21/2019
 ms.reviewer: Dean-Haas
@@ -10,17 +10,22 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 69736094b6c15d8731ec61f614da3085bed14924
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748437"
 ---
-
 # <a name="tutorial-and-faq"></a>Lernprogramm und FAQ
 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-Verwenden Sie das Lernprogramm und die FAQs, um weitere Informationen zu den PowerApps-Buildtools für Azure DevOps zu erfahren. 
+Verwenden Sie das Lernprogramm und die FAQs, um weitere Informationen zu den PowerApps build tools für Azure DevOps zu erfahren. 
 
 ## <a name="hands-on-lab"></a>Praktische Übungseinheit
 
@@ -42,20 +47,20 @@ Die praktische Übungseinheit bietet ein Lernprogramm mit schrittweisen Anweisun
 
 ## <a name="frequently-asked-question-faq"></a>Häufig gestellte Fragen (FAQ)
 
-**Funktionieren PowerApps-Buildtools nur für PowerApps?**  
+**Funktionieren PowerApps build tools nur für PowerApps?**  
 
-*Die PowerApps-Buildtools funktionieren für PowerApps und Dynamics for Customer Engagement (Dynamics 365 CE-Apps sind modellgesteuerte PowerApps). Separate Buildaufgaben sind für Microsoft Dynamics for Finance and Operations* verfügbar.
+*Die PowerApps build tools funktionieren für PowerApps und modellgesteuerte Apps in Dynamics 365 wie z. B. Dynamics 365 Sales und Dynamics 365 Customer Service. Separate Buildaufgaben sind für Microsoft Dynamics for Finance and Operations verfügbar.*
 
 **Kann ich Flow- und Canvas-Apps einbeziehen?**
 
 *Ja, Flow- und Canvas-Apps sind für die Lösung aktiviert. Wenn diese Ihrer Lösung hinzugefügt werden, können sie am Lebenszyklus der App teilnehmen. Allerdings erfordern einige Schritte noch manuelle Konfigurationen. Dies wird im Laufe des Jahrs behoben, wenn wir Umgebungsvariablen und Konnektoren einführen.*
 
-**Wie viel kosten die PowerApps-Buildtools?**
+**Wie viel kosten die PowerApps build tools?**
 
-*Die PowerApps-Buildtools sind kostenlos erhältlich. Es ist jedoch ein gültiges Azure DevOps-Abonnement erforderlich, um die Buildtools zu nutzen. Weitere Informationen sind [hier](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/)* verfügbar.
+*Die PowerApps build tools sind kostenlos erhältlich. Es ist jedoch ein gültiges Azure DevOps-Abonnement erforderlich, um die  build tools zu nutzen. Weitere Informationen sind [hier](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) verfügbar.*
 
 **Ich kann die Erweiterung anzeigen, aber warum ist keine Option verfügbar, um sie zu installieren?**
 
-*Wenn die Option zur **Installation** (siehe Screenshot unten) nicht angezeigt wird, haben Sie wahrscheinlich nicht die erforderlichen Rechte in Ihrer Azure DevOps-Organisation. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/en-us/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
+*Wenn die Option zur **Installation** (siehe Screenshot unten) nicht angezeigt wird, haben Sie wahrscheinlich nicht die erforderlichen Rechte in Ihrer Azure DevOps-Organisation. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
 
 ![Buildaufgabenbildschirm](media/build-tasks.png)

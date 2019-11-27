@@ -1,19 +1,25 @@
 ---
-title: Optionssätze anpassen (Common Data Service) | Microsoft Docs
-description: 'Beschreibt, wie mit globalen und lokale Optionssätzen im Code gearbeitet wird.'
+title: Optionssätze anpassen (Common Data Service) | Microsoft-Dokumentation
+description: Beschreibt, wie mit globalen und lokale Optionssätzen im Code gearbeitet wird.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 91d619ad798c8911c50c5397eab093ae23f297b4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748395"
 ---
 # <a name="customize-option-sets"></a>Optionssätze anpassen
 

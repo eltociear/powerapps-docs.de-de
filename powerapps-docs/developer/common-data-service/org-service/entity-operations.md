@@ -1,19 +1,25 @@
 ---
-title: Entitätsvorgänge mithilfe des Organisationsservices (Common Data Service)| Microsoft Docs
-description: 'Lernen Sie die Entitätsklasse kennen, die für Datenvorgänge verwendet wird, die mithilfe der Common Data Service-Organisationsservice verwendet wird'
+title: Entitätsvorgänge mit dem Organisationsdienst (Common Data Service) | Microsoft-Dokumentation
+description: Weitere Informationen über die Entitätsklasse, die für Datenvorgänge mithilfe des Common Data Service-Organisationsservice verwendet wird
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bbd71c47e31f619885a91f2042d4d7de6f7b7143
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748400"
 ---
 # <a name="entity-operations-using-the-organization-service"></a>Entitäts-Vorgänge mithilfe des Organisationsservice
 
@@ -199,7 +205,7 @@ Account account2 = retrievedEntity.ToEntity<Account>();
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Diese Themen erklären genauer, wie Sie mit Common Data Service-Entitäten arbeiten.
+Diese Themen erklären mehr über das Arbeiten mit Common Data Service-Entitäten.
 
 [Schnellstart: Organisationsservicebeispiel C#](quick-start-org-service-console-app.md)
 [Abfragedaten](entity-operations-query-data.md)<br />

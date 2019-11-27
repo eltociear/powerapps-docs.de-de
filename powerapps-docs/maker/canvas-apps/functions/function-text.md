@@ -145,7 +145,7 @@ Standardmäßig verwendet **Text** die Sprache des Benutzers, der die Anwendung 
 
 **Text**( *databordatetime*; *CustomFormat* [; *resultlanguagetag* ])
 
-* *Number*: erforderlich. Die zu formatierende Zahl bzw. der zu formatierende Datums-/Uhrzeitwert.
+* *Zahl*: erforderlich. Die zu formatierende Zahl bzw. der zu formatierende Datums-/Uhrzeitwert.
 * *CustomFormat*: erforderlich. Mindestens ein in doppelte Anführungszeichen gesetzter Platzhalter.
 * *ResultLanguageTag*: optional. Das Sprachkennzeichen, das für den Ergebnistext verwendet werden soll. Standardmäßig wird die Sprache des aktuellen Benutzers verwendet.
 
@@ -183,17 +183,17 @@ Sofern nicht anders angegeben, befindet sich der Benutzer, der diese Formeln dur
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text (1234567,89; "[$-fr-FR] # # # #, # # &euro;"; "fr-FR")** | Zeigt ein Leerzeichen als Gruppierungs Trennzeichen, das Komma als Dezimaltrennzeichen und **&euro;** als Währungssymbol an. |"1 @ no__t-0234 @ no__t-1567, 89 &euro;" |
-| **Text (1234567; 89;; "[$-fr-FR] # # # #, # # &euro;")** | Wenn die Quelldaten dem französischen Französisch entsprechen und ein Komma als Dezimaltrennzeichen verwendet wird, müssen Sie das Gebiets Schema in Französisch ändern und die Argumente mit einem Semikolon anstelle eines Kommas trennen, um das gleiche Ergebnis wie oben zu erhalten. |"1 @ no__t-0234 @ no__t-1567, 89 &euro;" |
-| **Text( Date(2016;1;31); "dddd mmmm d" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache des aktuellen Benutzers zurück. Da keiner der Platzhalter sprachabhängig ist, gibt es keine Notwendigkeit für ein Textformat-Sprachkennzeichen. |"Samstag @ no__t-0january @ no__t-131" |
-| **Text( Date(2016;1;31); "dddd mmmm d"; "es-ES" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache „es-ES“ zurück. |"Domingo @ no__t-0enero @ no__t-131" |
+| **Text (1234567,89; "[$-fr-FR] # # # #, # # &euro;"; "fr-FR")** | Zeigt ein Leerzeichen als Gruppierungs Trennzeichen, das Komma als Dezimaltrennzeichen und **&euro;** als Währungssymbol an. |"1&nbsp;234&nbsp;567, 89 &euro;" |
+| **Text (1234567; 89;; "[$-fr-FR] # # # #, # # &euro;")** | Wenn die Quelldaten dem französischen Französisch entsprechen und ein Komma als Dezimaltrennzeichen verwendet wird, müssen Sie das Gebiets Schema in Französisch ändern und die Argumente mit einem Semikolon anstelle eines Kommas trennen, um das gleiche Ergebnis wie oben zu erhalten. |"1&nbsp;234&nbsp;567, 89 &euro;" |
+| **Text( Date(2016;1;31); "dddd mmmm d" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache des aktuellen Benutzers zurück. Da keiner der Platzhalter sprachabhängig ist, gibt es keine Notwendigkeit für ein Textformat-Sprachkennzeichen. |"Samstag&nbsp;Januar&nbsp;31" |
+| **Text( Date(2016;1;31); "dddd mmmm d"; "es-ES" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache „es-ES“ zurück. |"Domingo&nbsp;enero&nbsp;31" |
 
 ### <a name="converting-values-to-text"></a>Werte werden in Text umgerechnet
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text (&nbsp;1234567.89 @ no__t-2)** | Konvertiert eine Zahl in eine Zeichenfolge. Es gibt keine Tausender Trennzeichen oder Kontrolle über die Anzahl der Ziffern vor oder nach dem Dezimaltrennzeichen. Wenn Sie mehr Kontrolle haben, stellen Sie zahlen Platzhalter als zweites Argument bereit. | "1234567,89" |
-| **Text (&nbsp;datetimevalue (&nbsp; "01/04/2003" &nbsp;) &nbsp;)** | Konvertiert einen Datums-/Uhrzeitwert in eine Text Zeichenfolge. Um die Konvertierung zu steuern, stellen Sie entweder einen Member der DateTimeFormat-Enumeration oder eine benutzerdefinierte Format Zeichenfolge bereit. | "1/4/2003 12:00 UHR" |
-| **Text (&nbsp;true @ no__t-2)** | Konvertiert einen booleschen Wert in eine Zeichenfolge. | Fall |
-| **Text (&nbsp;guid () &nbsp;)** | Konvertiert einen generierten GUID-Wert in eine Zeichenfolge.  | "f8b10550-0f12-4f08-9aa3-bb10958bc3ff" |
-| **Left (&nbsp;Text (&nbsp;guid () &nbsp;), &nbsp;4 @ no__t-5)** | Gibt die ersten vier Zeichen einer generierten GUID zurück. | "2d9c" | 
+| **Text (&nbsp;1234567,89&nbsp;)** | Konvertiert eine Zahl in eine Zeichenfolge. Es gibt keine Tausender Trennzeichen oder Kontrolle über die Anzahl der Ziffern vor oder nach dem Dezimaltrennzeichen. Wenn Sie mehr Kontrolle haben, stellen Sie zahlen Platzhalter als zweites Argument bereit. | "1234567,89" |
+| **Text (&nbsp;dateTimeValue (&nbsp;"01/04/2003"&nbsp;)&nbsp;)** | Konvertiert einen Datums-/Uhrzeitwert in eine Text Zeichenfolge. Um die Konvertierung zu steuern, stellen Sie entweder einen Member der DateTimeFormat-Enumeration oder eine benutzerdefinierte Format Zeichenfolge bereit. | "1/4/2003 12:00 Uhr" |
+| **Text (&nbsp;true&nbsp;)** | Konvertiert einen booleschen Wert in eine Zeichenfolge. | Fall |
+| **Text (&nbsp;GUID ()&nbsp;)** | Konvertiert einen generierten GUID-Wert in eine Zeichenfolge.  | "f8b10550-0f12-4f08-9aa3-bb10958bc3ff" |
+| **Left (&nbsp;Text (&nbsp;GUID ()&nbsp;),&nbsp;4&nbsp;)** | Gibt die ersten vier Zeichen einer generierten GUID zurück. | "2d9c" | 

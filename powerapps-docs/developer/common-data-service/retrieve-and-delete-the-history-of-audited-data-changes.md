@@ -1,5 +1,5 @@
 ---
-title: Abrufen und Löschen des Verlaufs von überwachten Datenänderungen (Common Data Service) | Microsoft Docs
+title: Abrufen und Löschen des Verlaufs von überwachten Datenänderungen (Common Data Service) | Microsoft-Dokumentation
 description: Programmgesteuert die Überwachungsänderungsgeschichte abrufen oder Prüfprotokolle deaktivieren.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ca55c34eeab5d2ca0839669c48b6c0a1b5b1b3a7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748656"
 ---
 # <a name="retrieve-and-delete-the-history-of-audited-data-changes"></a>Abrufen und Löschen des Verlaufs von überwachten Datenänderungen
 
@@ -33,11 +39,11 @@ Wenn die Überwachung aktiviert ist und Datenänderungen an diesen Entitäten un
 
  Sie können `audit`-Datensätze mithilfe der Anforderung <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> löschen. Überwachungsdatensätze werden sequentiell vom ältesten zum neuesten Vorgang gelöscht. Die Funktionalität dieser Anforderung unterscheidet sich etwas, basierend auf der Edition von Microsoft SQL Server, die von Ihrem Common Data Service-Server verwendet wird. Common Data Service verwendet eine Enterprise Edition von SQL Server.
 
- Wenn der Common Data Service-Server eine Standard Edition von SQL Server verwendet, welche die Datenbankpartitionierungsfunktion nicht unterstützt, löscht die <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>-Anforderung alle Überwachungsprotokolle, die bis zu dem Enddatum erstellt wurden, das in der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> angegeben ist.
+ Wenn der Common Data Service-Server die SQL Server Standard Edition nutzt, welche die Datenbankpartitionierungsfunktion nicht unterstützt, löscht die <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>-Anforderung alle Überwachungsprotokolle, die bis zu dem Enddatum erstellt wurden, das in der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> angegeben ist.
 
- Wenn der Common Data Service-Server eine Enterprise Edition von SQL Server verwendet, welche Partitionierung unterstützt, löscht die <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>-Anforderung alle Überwachungsdaten in den Partitionen, deren Enddatum vor dem Datum liegt, das in der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> angegeben ist. Alle leeren Partitionen werden ebenfalls gelöscht. Allerdings können weder die aktuelle (aktive) Partition noch die `audit`-Datensätze in dieser aktiven Partition gelöscht werden, indem diese Anforderung oder eine andere Anforderung verwendet wird.
+ Wenn der Common Data Service-Server eine Enterprise Edition von SQL Server nutzt, welche Partitionierung unterstützt, löscht die <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>-Anforderung alle Überwachungsdaten in den Partitionen, deren Enddatum vor dem Datum liegt, das in der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> angegeben ist. Alle leeren Partitionen werden ebenfalls gelöscht. Allerdings können weder die aktuelle (aktive) Partition noch die `audit`-Datensätze in dieser aktiven Partition gelöscht werden, indem diese Anforderung oder eine andere Anforderung verwendet wird.
 
- Neue Partitionen werden von der Common Data Service-Plattform automatisch jedes Jahr vierteljährlich erstellt. Diese Funktionalität ist nicht konfigurierbar und kann nicht geändert werden. Sie können die Liste der Partitionen mithilfe der <xref:Microsoft.Crm.Sdk.Messages.RetrieveAuditPartitionListRequest>-Anforderung abrufen. Wenn das Enddatum einer Partition nach dem aktuellen Datum liegt, können Sie diese Partition oder darin enthaltene `audit`-Datensätze nicht löschen.  
+ Neue Partitionen werden automatisch von der Common Data Service-Plattform auf vierteljährlicher Basis jedes Jahr erstellt. Diese Funktionalität ist nicht konfigurierbar und kann nicht geändert werden. Sie können die Liste der Partitionen mithilfe der <xref:Microsoft.Crm.Sdk.Messages.RetrieveAuditPartitionListRequest>-Anforderung abrufen. Wenn das Enddatum einer Partition nach dem aktuellen Datum liegt, können Sie diese Partition oder darin enthaltene `audit`-Datensätze nicht löschen.  
 
 ### <a name="see-also"></a>Siehe auch
 

@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Anmerkungen zu Entitäts Formularen und Webformularen für ein Portal | MicrosoftDocs
-description: Anweisungen zum Hinzufügen und Konfigurieren von Notizen zu Entitäts Formularen und Web Forms in einem Portal.
+title: Konfigurieren von Notizen in Entitätsformularen und Webformularen für ein Portal | MicrosoftDocs
+description: Anweisungen, Notizen zu Entitätsformularen und Webformularen in einem Portal hinzuzufügen und zu konfigurieren.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,34 +9,34 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ece59cff6ae75206a473ddc27f2e657201e0f436
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977172"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756562"
 ---
-# <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Konfigurieren von Notizen für Entity Forms und Web Forms in Portalen
+# <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Konfigurieren von Hinweisen für Entitätsformulare und Internetformulare in Portalen
 
-Ebenso wie bei Unterverzeichnissen ist das Hinzufügen von Notizen zu Ihren verwalteten Formularen im Portal ganz einfach&mdash;fügen Sie das Notizen-Steuerelement einfach über den Formular- [Designer](../model-driven-apps/create-design-forms.md) zu den App-Formularen für Modell Laufwerke hinzu, und Sie sind fertig. Sie können das Verhalten des Notes-Steuer Elements mithilfe von Metadaten konfigurieren.
+Notizen zu verwalteten Formularen im Portal hinzuzufügen ist genauso einfach wie bei Unterrastern&mdash;, fügen Sie einfach das Notiz-Steuerelement den Formularen modellgesteuerter Apps über den [Formulardesigner hinzu](../model-driven-apps/create-design-forms.md); fertig. Sie können das Verhalten von Notizensteuerelementen über Metadaten konfigurieren.
 
 > [!Note]                                                           
-> Explizite [Entitäts Berechtigungen](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/assign-entity-permissions) sind erforderlich, damit Notizen im Portal angezeigt werden. Zum Lesen und bearbeiten müssen Lese-und Schreibberechtigungen erteilt werden. Zum erstellen müssen zwei Berechtigungen vorhanden sein: eine Berechtigung mit den Berechtigungen "Create" und "append" muss für die Note-Entität (Anmerkung) erteilt werden. die zweite Berechtigung muss dem Entitätstyp zugewiesen werden, an den der Hinweis mit der gewährten Berechtigung Anhängen angefügt wird. Das Kontrollkästchen **Entitäts Berechtigungen aktivieren** muss im entsprechenden Entitäts Formular-oder Webformular Schritt ausgewählt werden, damit die Entitäts Berechtigungen wirksam werden.
+> Explizite [Entitätsberechtigungen](configure/assign-entity-permissions.md) sind Erforderlich, damit alle Notizen im Verwaltungsportal von angezeigt werden. Zum Lesen und Bearbeiten müssen die Rechte „Lesen“ und „Schreiben“ erteilt werden. Zum Erstellen müssen zwei Berechtigungen vorhanden sein: „Erstellen“ und „Anhängen" müssen für die Notizentität (Anmerkung) gewährt werden, und eine zweite Berechtigung muss dem Entitätstyp zugewiesen werden, an den die Notiz mit dem Recht „Anhängen“ angefügt ist. Das Kontrollkästchen **Entitätsberechtigungen aktivieren** muss auf dem entsprechenden Entitätsformular- oder Webformularschritt aktiviert sein, damit die Entitätsberechtigungen wirksam werden.
 
-## <a name="notes-configuration-for-entity-forms"></a>Hinweise zur Konfiguration von Entitäts Formularen
+## <a name="notes-configuration-for-entity-forms"></a>Konfiguration von Notizen für Entitätsformulare
 
-1. Öffnen Sie die [Portal Verwaltungs-App](configure/configure-portal.md).
-2. Wechseln Sie zu **Portale** > **Inhalts** > **Entitäts Formularen**. Eine Liste aktiver Entitäts Formulare wird angezeigt.
-3. Wählen Sie das Entitäts Formular aus, dem Sie die Hinweis Konfiguration hinzufügen möchten.
-4. Wechseln Sie zu den **Entitäts Formular Metadaten** , indem Sie entweder die Dropdown Liste oben oder das unter Raster im Hauptformular des Formulardaten Satzes der Entität verwenden, mit dem Sie arbeiten.
-5. Wählen Sie **neue Entitäts Formular Metadaten hinzufügen aus** , um einen neuen Datensatz hinzuzufügen.
-6. Wählen Sie in der Dropdown Liste **Typ** die Option **Notizen**aus. Die Notizen Konfigurations&ndash;bestimmte Einstellungen werden angezeigt. Die meisten Einstellungen sind standardmäßig reduziert. Sie können einen Abschnitt erweitern, um weitere Einstellungen anzuzeigen.
-7. Füllen Sie die Felder aus, indem Sie die entsprechenden Werte eingeben. [!include[](../../includes/proc-more-information.md)] [Attribute](#attributes), [Dialog Optionen erstellen](#create-dialog-options), [Dialogfeld Optionen bearbeiten](#edit-dialog-options)und [Dialogfeld Optionen löschen](#delete-dialog-options)
-8. Speichert das Formular.
+1. Öffnen Sie die [Portalverwaltungs-App](configure/configure-portal.md).
+2. Gehen Sie auf **Portale** > **Inhalt** > **Entitätsformulare**. Eine Liste aktiver Entitätsformularen wird angezeigt.
+3. Wählen Sie das Entitätsformular aus, dem Sie eine Hinweiskonfiguration hinzufügen möchten.
+4. Navigieren Sie entweder mithilfe des oberen Dropdowns-Menüs oder des Unterrasters rechts im Hauptformular des Entitätsformulardatensatzes, an dem Sie arbeiten zu **Entitätsformular-Metadaten**.
+5. Klicken Sie auf **Neue Entitätsformular-Metadaten hinzufügen**, um einen neuen Datensatz hinzuzufügen.
+6. Wählen Sie aus der Dropdownliste **Typ** **Hinweise** aus. Die für die Hinweiskonfiguration&ndash;spezifischen Einstellungen werden angezeigt. Die meisten Einstellungen sind standardmäßig verkleinert. Sie können einen Bereich erweitern, um zusätzliche Einstellungen anzuzeigen.
+7. Füllen Sie die Felder aus, indem Sie entsprechende Werte eingeben. [!include[](../../includes/proc-more-information.md)] [Attribute](#attributes), [Dialogoptionen erstellen](#create-dialog-options), [Dialogoptionen bearbeiten](#edit-dialog-options), und [Dialogoptionen löschen](#delete-dialog-options)
+8. Speichern Sie das Formular.
 
-    Hinzufügen der merkhinmerkungen ![für Entitäts Formulare](media/add-note-configuration.png "Hinzufügen von Notizen zur Konfiguration")  
+    ![Konfiguration von Notizen zu Entitätsformularen hinzufügen](media/add-note-configuration.png "Konfiguration von Notizen zu Entitätsformularen hinzufügen")  
 
-    Nachdem Sie die Konfiguration hinzugefügt haben, wird das Notiz Steuerelement mithilfe der im Portal aktivierten geeigneten Optionen gerendert.
+    Nach dem Hinzufügen der Konfiguration wird das Notizensteuerelement mit den entsprechenden Optionen im Portal dargestellt.
 
 ## <a name="attributes"></a>Attribute
 
@@ -44,117 +44,117 @@ Ebenso wie bei Unterverzeichnissen ist das Hinzufügen von Notizen zu Ihren verw
 | Name                  | Beschreibung                                                                                                                                                  |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**    |                                                                                                                                                              |
-| Erstellen aktiviert        | Ermöglicht das Hinzufügen neuer Notizen zur Entität.                                                                                                          |
-| Dialog Feld Optionen erstellen | Enthält Einstellungen zum Konfigurieren des Dialog Felds, wenn **Create** "true" lautet. Weitere Informationen finden Sie unter CREATE Dialog Options.                                    |
-| Bearbeitung aktiviert          | Ermöglicht das Bearbeiten vorhandener Notizen in der Entität.                                                                                                    |
-| Dialog Feld Optionen bearbeiten   | Enthält Einstellungen zum Konfigurieren des Dialog Felds, wenn **editenabled** den Wert true aufweist. Weitere Informationen finden Sie unter Dialog Feld Optionen bearbeiten.                                         |
-| Löschvorgang aktiviert        | Ermöglicht das Löschen von Notizen aus der Entität.                                                                                                         |
-| Dialog Feld Optionen löschen | Enthält Einstellungen zum Konfigurieren des Dialog Felds, wenn **deleteaktivitrue** ist. Weitere Informationen finden Sie unter Dialog Feld "Optionen".                                     |
-|Speicherort der Datei Anlage | Wählen Sie den Speicherort der Datei Anlage aus:<ul><li>Hinweis Anlage</li><li>Azure Blob Storage</li></ul>|
-|MIME-Typen akzeptieren | Ermöglicht das Angeben einer Liste akzeptierter MIME-Typen. |
+| \"Erstellen\" aktiviert        | Aktiviert die Möglichkeit neue Notizen zu einer Entität hinzuzufügen.                                                                                                          |
+| Optionen des Dialogs \"Erstellen\" | Enthält Einstellungen zur Konfiguration des Dialogs, wenn **Erstellen aktiviert** aktiviert ist. Weitere Informationen finden Sie unter "Optionen des Dialogs 'Erstellen'".                                    |
+| \"Bearbeiten\" aktiviert          | Aktiviert die Möglichkeit bestehende Notizen einer Entität zu bearbeiten.                                                                                                    |
+| Optionen des Dialogs \"Bearbeiten\"   | Enthält Einstellungen zur Konfiguration des Dialogs, wenn **EditEnabled** aktiviert ist. Weitere Informationen finden Sie unter "Optionen des Dialogs 'Bearbeiten'".                                         |
+| \"Löschen\" aktiviert        | Aktiviert die Möglichkeit Notizen aus einer Entität zu löschen.                                                                                                         |
+| Optionen für Dialog \"Löschen\" | Enthält Einstellungen zur Konfiguration des Dialogs, wenn **DeleteEnabled** aktiviert ist. Weitere Informationen finden Sie unter "Optionen des Dialogs 'Löschen'".                                     |
+|Speicherort für Dateianlagen | Wählen Sie den Speicherort für die Dateianlage aus.<ul><li>Hinweisanlage</li><li>Azure-BLOB-Speicher</li></ul>|
+|MIME-Typ(en) akzeptieren | Ermöglicht Ihnen, eine Liste der akzeptierten MIME-Typen anzugeben. |
 |MIME-Typen einschränken | Wählen Sie aus, ob MIME-Typen zugelassen oder eingeschränkt werden sollen.|
-|Maximale Dateigröße (in KB) |Ermöglicht es Ihnen, die maximale Größe einer Datei anzugeben, die angefügt werden kann. |
+|Maximale Dateigröße (in KB) |Ermöglicht Ihnen, die maximale Größe einer Datei festzulegen, die angefügt werden kann. |
 | **Erweiterte Einstellungen** |                                                                                                                                                              |
-| Listen Titel            | Überschreibt den Titel über den Bereich Notizen.                                                                                                                     |
-| Bezeichnung für Hinweis Taste hinzufügen | Überschreibt die Bezeichnung auf der Schaltfläche Notizen hinzufügen.                                                                                                                 |
-| Datenschutz Bezeichnung notieren    | Überschreibt die Bezeichnung, die anzeigt, dass ein Hinweis privat ist.                                                                                                         |
-| Meldung wird geladen       | Überschreibt die Meldung, die angezeigt wird, während die Liste der Notizen geladen wird.                                                                                              |
-| Fehlermeldung         | Überschreibt die Meldung, die angezeigt wird, wenn ein Fehler auftritt, wenn versucht wird, die Liste der Notizen zu laden.                                                                     |
-| Meldung "Zugriff verweigert" | Überschreibt die Meldung, die angezeigt wird, wenn der Benutzer nicht über ausreichende Berechtigungen zum Anzeigen der Liste der Notizen verfügt.                                                    |
-| Leere Nachricht         | Überschreibt die Meldung, die angezeigt wird, wenn die aktuelle Entität keine Notizen hat, die angezeigt werden können.                                                              |
-| Auflisten von Aufträgen           | Ermöglicht es Ihnen, die Reihenfolge festzulegen, in der Notizen angezeigt werden. Mit der Einstellung Bestellungen auflisten können Sie Folgendes festlegen: <ul><li>Attribute: der logische Name der Spalte, nach der sortiert werden soll.</li><li>Alias: der Alias für das Attribut in der Abfrage.</li><li>Direction: aufsteigend (aufsteigend zum größten oder ersten bis letzten) oder absteigend (die größte zu kleinste oder letzte zum ersten).</li></ul> ![Attribute für Listen Bestellungen]festlegen(media/set-attributes-list-orders.png "Attribute für Listen Bestellungen festlegen") zum Hinzufügen einer Sortier Regel wählen Sie "Spalte" (4) aus, und geben Sie die Details ein. Listen Bestellungen werden von oben nach oben in der Liste mit der höchsten Priorität verarbeitet.|
+| Listentitel            | Überschreibt den Titel über dem Notizbereich.                                                                                                                     |
+| Schaltflächenbezeichnung \"Notiz hinzufügen\" | Überschreibt die Beschriftung der Schaltfläche „Notizen hinzufügen“.                                                                                                                 |
+| Hinweisdatenschutz-Bezeichnung    | Überschreibt die Beschriftung, die anzeigt, das eine Notiz privat ist.                                                                                                         |
+| Laden von Meldungen       | Überschreibt die Meldung, die beim Laden einer Liste mit Notizen angezeigt wird.                                                                                              |
+| Fehlermeldung         | Überschreibt die Nachricht, die angezeigt wird, wenn ein Fehler auftritt, während die Notizliste lädt.                                                                     |
+| Meldung vom Typ "Zugriff verweigert" | Überschreibt die Meldung, die angezeigt wird, wenn ein Benutzer keine ausreichenden Berechtigungen zur Anzeige der Notizenliste besitzt.                                                    |
+| Leere Meldung         | Überschreibt die angezeigte Meldung, wenn die aktuelle Entität keine Notizen besitzt, die angezeigt werden können.                                                              |
+| Listenreihenfolgen           | Ermöglicht das Festlegen der Reihenfolge, in der Notizen angezeigt werden. Über die Einstellung zu Listenreihenfolgen können Sie Folgendes festlegen: <ul><li>Attribut: der logische Name der Spalte, nach der sortiert wird.</li><li>Alias: der Alias für das Attribut in der Abfrage</li><li>Sortierung: Wählen Sie „Aufsteigend“ (kleinste bis größte, oder erste bis letzte) oder „Absteigend“ (größte bis kleinste oder letzte bis erste) aus.</li></ul> ![Festlegen von Attributen für Listenreihenfolgen](media/set-attributes-list-orders.png "Sund Attribute für Listenaufträge") Klicken Sie zum Hinzufügen einer Sortierregel auf "Spalte" (4), und füllen Sie die Details aus. Die Listensortierung wird von oben verarbeitet. Das oberste Element hat die höchste Priorität.|
 ||
 
 
-## <a name="create-dialog-options"></a>Dialog Feld Optionen erstellen
+## <a name="create-dialog-options"></a>Optionen des Dialogs \"Erstellen\"
 
 | Name                               | Beschreibung                                                                                                                                 |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**                 |                                                                                                                                             |
-| Datenschutzoptionen anzeigen (Feld)      | Aktiviert ein Kontrollkästchen im Dialogfeld Hinweis hinzufügen, das es dem Benutzer ermöglicht, einen Hinweis als privat zu markieren.                                                   |
-| Standardwert für das Datenschutz Optionsfeld | Gibt den Standardwert für das Kontrollkästchen Datenschutzoptionen anzeigen an. Der Standardwert dieses Felds ist false.                     |
-| Anfüge Datei anzeigen                | Aktiviert ein Feld zum Hochladen von Dateien im Dialogfeld Hinweis hinzufügen, sodass ein Benutzer eine Datei an eine Notiz anfügen kann.                                             |
-| Datei Annahme anfügen                 | Der von der dateiuploadeingabe akzeptierte MIME-Typ.                                                                                            |
+| Feld \"Datenschutzoptionen\" anzeigen      | Aktiviert ein Kontrollkästchen im Dialogfeld „Notiz hinzufügen“, das dem Benutzer ermöglicht, eine Notiz als privat zu markieren.                                                   |
+| Standardwert für Datenschutzoptionsfeld | Legt den Standardwert für das Kontrollkästchen „Feld 'Datenschutzoptionen' anzeigen“ fest. Der Standardwert dieses Felds ist „Falsch“.                     |
+| \"Datei anfügen\" anzeigen                | Aktiviert ein Dateiuploadfeld im Dialogfeld „Notiz hinzufügen“, das einem Benutzer ermöglicht, eine Datei an eine Notiz anzuhängen.                                             |
+| Datei anfügen: Akzeptieren                 | Der vom Dateiupload akzeptierte MIME-Typ.                                                                                            |
 | **Erweiterte Einstellungen**              |                                                                                                                                             |
-| Feld Bezeichnung "Hinweis"                   | Überschreibt die Bezeichnung für das Feld "Hinweis" im Dialogfeld "Hinweis hinzufügen".                                                                              |
-| Feld Spalten des Hinweises                 | Legt den cols-Wert im Hinweis &lt;Textarea fest&gt;                                                                                            |
-| Hinweisfeld Zeilen                    | Legt den Zeilen Wert im Hinweis &lt;Textarea fest&gt;                                                                                            |
-| Feld Bezeichnung für Datenschutz Option         | Überschreibt die Bezeichnung für das Optionsfeld "Datenschutz" (sofern aktiviert).                                                                              |
-| Datei Bezeichnung anfügen                  | Überschreibt die Bezeichnung für das Feld "Datei anfügen" (sofern aktiviert).                                                                                  |
-| CSS-Klasse der linken Spalte              | Fügt die CSS-Klasse bzw. die CSS-Klassen der äußersten linken Spalte mit Bezeichnungen im Dialogfeld Hinweis hinzufügen hinzu.                                                  |
-| CSS-Klasse für die Rechte Spalte             | Fügt der Spalte ganz rechts die CSS-Klasse oder-Klassen hinzu, die Feld Eingaben im Dialogfeld Hinweis hinzufügen enthält.                                           |
-| Title                              | Überschreibt den HTML-Text in der Kopfzeile des Dialog Felds Hinweis hinzufügen.                                                                               |
-| Primärer Schaltflächen Text                | Überschreibt den HTML-Code, der in der primären Schaltfläche (Hinweis hinzufügen) im Dialogfeld angezeigt wird.                                                           |
-| SR-Text der Schaltfläche verwerfen             | Überschreibt den Text für die Bildschirm Anzeige, der der Schaltfläche Verwerfen des Dialog Felds zugeordnet ist.                                                               |
-| Schaltflächen Text schließen                  | Überschreibt den HTML-Code, der in der Schaltfläche Schließen (Abbrechen) im Dialogfeld angezeigt wird.                                                               |
-| Größe                               | Gibt die Größe des Dialog Felds "Hinweis hinzufügen" an. Die Optionen lauten "Standard", "groß" und "klein". Im Dialogfeld Hinweis hinzufügen ist die Standardgröße default. |
-| CSS-Klasse                          | Geben Sie eine CSS-Klasse oder Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                |
-| Title-CSS-Klasse                    | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Titelleiste des resultierenden Dialog Felds angewendet werden.                                                    |
-| CSS-Klasse der primären Schaltfläche           | Geben Sie eine CSS-Klasse oder Klassen an, die auf die primäre Schaltfläche des Dialog Felds (Hinweis hinzufügen) angewendet werden.                                            |
-| CSS-Klasse der Schaltfläche Schließen             | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Schaltfläche Schließen (Abbrechen) des Dialog Felds angewendet werden.                                                |
+| Hinweisfeldbezeichnung                   | Überschreibt die Beschriftung für das Feld „Notiz“ im Dialogfeld „Notiz hinzufügen“.                                                                              |
+| Hinweisfeldspalten                 | Legt den cols-Wert in der Notiz &lt;textarea&gt; fest                                                                                            |
+| Hinweisfeldzeilen                    | Legt den rows-Wert in der Notiz &lt;textarea&gt; fest                                                                                            |
+| Bezeichnung für Datenschutzoptionsfeld         | Überschreibt die Beschriftung für das Datenschutzoptionsfeld (wenn aktiviert).                                                                              |
+| Datei anfügen: Bezeichnung                  | Überschreibt die Beschriftung für das Feld "Datei anfügen" (wenn aktiviert).                                                                                  |
+| CSS-Klasse für linke Spalte              | Fügt die CSS-Klasse oder -Klassen mit Bezeichnungen im Dialogfeld „Notiz hinzufügen“ zur ganz linken Spalte hinzu.                                                  |
+| CSS-Klasse für rechte Spalte             | Fügt die CSS-Klasse oder -Klassen mit Feldeingaben im Dialogfeld „Notiz hinzufügen“ zur ganz rechten Spalte hinzu.                                           |
+| Titel                              | Überschreibt den HTML-Text in der Kopf des Dialogfelds „Notiz hinzufügen“.                                                                               |
+| Text der primären Schaltfläche                | Überschreibt das HTML, das in der primären Schaltfläche (Notiz hinzufügen) des Dialogs angezeigt wird.                                                           |
+| Den SR-Text der Schaltfläche verwerfen             | Überschreibt den Text für die Sprachausgabe, der der Schaltfläche „Verwerfen“ des Dialogfelds zugeordnet ist.                                                               |
+| Schaltflächentext schließen                  | Überschreibt das HTML, das in der primären Schließen-Schaltfläche (Abbrechen) des Dialogfelds angezeigt wird.                                                               |
+| Größe                               | Gibt die Größe des Dialogfelds „Notiz hinzufügen“ an. Die Optionen sind „Standard“, „Groß“ und „Klein“. Die standardmäßige Größe des Dialogfelds „Notiz hinzufügen“ ist „Standard“. |
+| CSS Klasse                          | Geben Sie eine CSS-Klasse oder -Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                |
+| CSS-Klasse für Titel                    | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die Titelleiste des resultierenden Dialogfelds angewendet werden.                                                    |
+| CSS-Klasse für primäre Schaltfläche           | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die primäre Schaltfläche (Notiz hinzufügen) des Dialogfelds angewendet werden.                                            |
+| CSS-Klasse für Schaltfläche „Schließen”             | Geben Sie eine CSS-Klasse oder Klassen an, die für die primäre „Schließen”-Schaltfläche (Abbrechen) des Dialogfelds angewendet werden.                                                |
 |||
 
-## <a name="edit-dialog-options"></a>Dialog Feld Optionen bearbeiten
+## <a name="edit-dialog-options"></a>Optionen des Dialogs \"Bearbeiten\"
 
 | Name                               | Beschreibung                                                                                                                                   |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**                 |                                                                                                                                               |
-| Datenschutzoptionen anzeigen (Feld)      | Aktiviert ein Kontrollkästchen im Dialogfeld Notiz bearbeiten, in dem der Benutzer einen Hinweis als privat markieren kann.  |
-| Standardwert für das Datenschutz Optionsfeld | Gibt den Standardwert für das Kontrollkästchen Datenschutzoptionen anzeigen an. Der Standardwert dieses Felds ist false.   |
-| Anfüge Datei anzeigen                | Aktiviert ein Feld zum Hochladen von Dateien im Dialogfeld "Anmerkung bearbeiten", sodass ein Benutzer eine Datei an eine Notiz anfügen kann.                      |
-| Datei Annahme anfügen                 | Der von der dateiuploadeingabe akzeptierte MIME-Typ. |
+| Feld \"Datenschutzoptionen\" anzeigen      | Aktiviert ein Kontrollkästchen im Dialogfeld „Notiz bearbeiten“, das dem Benutzer ermöglicht, eine Notiz als privat zu markieren.  |
+| Standardwert für Datenschutzoptionsfeld | Legt den Standardwert für das Kontrollkästchen „Feld 'Datenschutzoptionen' anzeigen“ fest. Der Standardwert dieses Felds ist „Falsch“.   |
+| \"Datei anfügen\" anzeigen                | Aktiviert ein Dateiuploadfeld im Dialogfeld „Notiz bearbeiten“, das einem Benutzer ermöglicht, eine Datei an eine Notiz anzuhängen.                      |
+| Datei anfügen: Akzeptieren                 | Der vom Dateiupload akzeptierte MIME-Typ. |
 | **Erweiterte Einstellungen**              |                                                                                              |
-| Feld Bezeichnung "Hinweis"                   | Überschreibt die Bezeichnung für das Feld Hinweis im Dialogfeld Hinweis bearbeiten.|
-| Feld Spalten des Hinweises                 | Legt den cols-Wert im Hinweis &lt;Textarea fest&gt;                                                                                             |
-| Hinweisfeld Zeilen                    | Legt den Zeilen Wert im Hinweis &lt;Textarea fest&gt;                                                                                             |
-| Feld Bezeichnung für Datenschutz Option         | Überschreibt die Bezeichnung für das Optionsfeld "Datenschutz" (sofern aktiviert).                                                                                
-| Datei Bezeichnung anfügen                  | Überschreibt die Bezeichnung für das Feld "Datei anfügen" (sofern aktiviert).                                                                                   |
-| CSS-Klasse der linken Spalte              | Fügt die CSS-Klasse bzw. die CSS-Klassen der Spalte ganz links im Dialogfeld Hinweis Bearbeiten hinzu.                                                  |
-| CSS-Klasse für die Rechte Spalte             | Fügt der Spalte ganz rechts die CSS-Klasse oder-Klassen hinzu, die Feld Eingaben im Dialogfeld Hinweis Bearbeiten enthält.                                           |
-| Title                              | Überschreibt den HTML-Text in der Kopfzeile des Dialog Felds Edit Note.                                                                               |
-| Primärer Schaltflächen Text                | Überschreibt den HTML-Code, der in der primären Schaltfläche (Update Hinweis) im Dialogfeld angezeigt wird.                                                         |
-| SR-Text der Schaltfläche verwerfen             | Überschreibt den Text für die Bildschirm Anzeige, der der Schaltfläche Verwerfen des Dialog Felds zugeordnet ist.                                                                |
-| Schaltflächen Text schließen                  | Überschreibt den HTML-Code, der in der Schaltfläche Schließen (Abbrechen) im Dialogfeld angezeigt wird.                                                                |
-| Größe                               | Gibt die Größe des Dialog Felds für den Bearbeitungs Hinweis an. Die Optionen lauten "Standard", "groß" und "klein". Im Dialogfeld Hinweis bearbeiten ist die Standardgröße default.|
-| CSS-Klasse                          | Geben Sie eine CSS-Klasse oder Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                 |
-| Title-CSS-Klasse                    | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Titelleiste des resultierenden Dialog Felds angewendet werden.                                                     |
-| CSS-Klasse der primären Schaltfläche           | Geben Sie eine CSS-Klasse oder Klassen an, die auf die primäre Schaltfläche des Dialog Felds (Update Hinweis) angewendet werden.                                          |
-| CSS-Klasse der Schaltfläche Schließen             | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Schaltfläche Schließen (Abbrechen) des Dialog Felds angewendet werden.                                                 |
+| Hinweisfeldbezeichnung                   | Überschreibt die Beschriftung für das Feld „Notiz“ im Dialogfeld „Notiz bearbeiten“.|
+| Hinweisfeldspalten                 | Legt den cols-Wert in der Notiz &lt;textarea&gt; fest                                                                                             |
+| Hinweisfeldzeilen                    | Legt den rows-Wert in der Notiz &lt;textarea&gt; fest                                                                                             |
+| Bezeichnung für Datenschutzoptionsfeld         | Überschreibt die Beschriftung für das Datenschutzoptionsfeld (wenn aktiviert).                                                                                
+| Datei anfügen: Bezeichnung                  | Überschreibt die Beschriftung für das Feld "Datei anfügen" (wenn aktiviert).                                                                                   |
+| CSS-Klasse für linke Spalte              | Fügt die CSS-Klasse oder -Klassen mit Bezeichnungen im Dialogfeld „Notiz bearbeiten“ zur ganz linken Spalte hinzu.                                                  |
+| CSS-Klasse für rechte Spalte             | Fügt die CSS-Klasse oder -Klassen mit Feldeingaben im Dialogfeld „Notiz bearbeiten“ zur ganz rechten Spalte hinzu.                                           |
+| Titel                              | Überschreibt den HTML-Text in der Kopf des Dialogfelds „Notiz bearbeiten“.                                                                               |
+| Text der primären Schaltfläche                | Überschreibt das HTML, das in der primären Schaltfläche (Notiz aktualisieren) des Dialogs angezeigt wird.                                                         |
+| Den SR-Text der Schaltfläche verwerfen             | Überschreibt den Text für die Sprachausgabe, der der Schaltfläche „Verwerfen“ des Dialogfelds zugeordnet ist.                                                                |
+| Schaltflächentext schließen                  | Überschreibt das HTML, das in der primären Schließen-Schaltfläche (Abbrechen) des Dialogfelds angezeigt wird.                                                                |
+| Größe                               | Gibt die Größe des Dialogfelds „Notiz bearbeiten“ an. Die Optionen sind „Standard“, „Groß“ und „Klein“. Die standardmäßige Größe des Dialogfelds „Notiz bearbeiten“ ist „Standard“.|
+| CSS Klasse                          | Geben Sie eine CSS-Klasse oder -Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                 |
+| CSS-Klasse für Titel                    | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die Titelleiste des resultierenden Dialogs angewendet werden.                                                     |
+| CSS-Klasse für primäre Schaltfläche           | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die primäre Schaltfläche (Notiz aktualisieren) des Dialogfelds angewendet werden.                                          |
+| CSS-Klasse für Schaltfläche „Schließen”             | Geben Sie eine CSS-Klasse oder Klassen an, die für die primäre „Schließen”-Schaltfläche (Abbrechen) des Dialogfelds angewendet werden.                                                 |
 |||
 
-## <a name="delete-dialog-options"></a>Dialog Feld Optionen löschen
+## <a name="delete-dialog-options"></a>Optionen für Dialog \"Löschen\"
 
 | Name                     | Beschreibung                                                                                                                                       |
 |--------------------------|------------------------------|
 | **Grundlegende Einstellungen**       |                                                                                                                                                   |
-| Bestätigt             | Überschreiben Sie die Bestätigungsmeldung, um den Hinweis zu löschen.                                                                                             |
+| Bestätigung             | Überschreiben die Bestätigungsmeldung beim Löschen der Notiz.                                                                                             |
 | **Erweiterte Einstellungen**    |                                                                                                                                                   |
-| Title                    | Überschreibt den HTML-Text in der Kopfzeile des Dialog Felds DELETE Note.                                                                                  |
-| Primärer Schaltflächen Text      | Überschreibt den HTML-Code, der in der primären Schaltfläche (Löschen) im Dialogfeld angezeigt wird.                                                                   |
-| SR-Text der Schaltfläche verwerfen   | Überschreibt den Text für die Bildschirm Anzeige, der der Schaltfläche Verwerfen des Dialog Felds zugeordnet ist.                                                                     |
-| Schaltflächen Text schließen        | Überschreibt den HTML-Code, der in der Schaltfläche Schließen (Abbrechen) im Dialogfeld angezeigt wird.                                                                     |
-| Größe                     | Gibt die Größe des Dialog Felds für den Lösch Hinweis an. Die Optionen lauten "Standard", "groß" und "klein". Im Dialogfeld DELETE Note ist die Standardgröße default. |
-| CSS-Klasse                | Geben Sie eine CSS-Klasse oder Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                      |
-| Title-CSS-Klasse          | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Titelleiste des resultierenden Dialog Felds angewendet werden.                                                          |
-| CSS-Klasse der primären Schaltfläche | Geben Sie eine CSS-Klasse oder Klassen an, die auf die primäre Schaltfläche (Löschen) des Dialog Felds angewendet werden.                                                    |
-| CSS-Klasse der Schaltfläche Schließen   | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Schaltfläche Schließen (Abbrechen) des Dialog Felds angewendet werden.                                                      |
+| Titel                    | Überschreibt den HTML-Text in der Kopf des Dialogfelds „Notiz löschen“.                                                                                  |
+| Text der primären Schaltfläche      | Überschreibt das HTML, das in der primären Schaltfläche (Löschen) des Dialogfelds angezeigt wird.                                                                   |
+| Den SR-Text der Schaltfläche verwerfen   | Überschreibt den Text für die Sprachausgabe, der der Schaltfläche „Verwerfen“ des Dialogfelds zugeordnet ist.                                                                     |
+| Schaltflächentext schließen        | Überschreibt das HTML, das in der primären Schließen-Schaltfläche (Abbrechen) des Dialogfelds angezeigt wird.                                                                     |
+| Größe                     | Gibt die Größe des „Notiz löschen“-Dialogs an. Die Optionen sind „Standard“, „Groß“ und „Klein“. Die standardmäßige Größe des "„Notiz löschen“-Dialogs ist „Standard“. |
+| CSS Klasse                | Geben Sie eine CSS-Klasse oder -Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                      |
+| CSS-Klasse für Titel          | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die Titelleiste des resultierenden Dialogfelds angewendet werden.                                                          |
+| CSS-Klasse für primäre Schaltfläche | Geben Sie eine CSS-Klasse oder Klassen an, die auf die primäre Schaltfläche (Löschen) des Dialogfelds angewendet werden.                                                    |
+| CSS-Klasse für Schaltfläche „Schließen”   | Geben Sie eine CSS-Klasse oder Klassen an, die für die primäre „Schließen”-Schaltfläche (Abbrechen) des Dialogfelds angewendet werden.                                                      |
 |||
 
-### <a name="assign-entity-permissions"></a>Zuweisen von Entitäts Berechtigungen
+### <a name="assign-entity-permissions"></a>Entitätsberechtigungen zuweisen
 
-Sie müssen den Datensätzen wie folgt die entsprechende Entitäts Berechtigung erstellen und zuweisen. andernfalls werden die Schaltflächen **Hinzufügen**, **Bearbeiten**und **Löschen** für den Hinweis ausgeblendet:
+Sie müssen die entsprechenden Entitätsberechtigung erstellen und den Datensätzen zuweisen, wie folgt; andernfalls sind die Schaltflächen für **Hinzufügen**, **Bearbeiten** und **Löschen** ausgeblendet:
 
-- Lese-, Schreib-, Erstellungs-, Anfüge-und Anfügen an Berechtigungen für die Activity-Entität **(activitypointer)** mit dem Bereich als **Global**. Diese Entitäts Berechtigung muss einer webrolle für den Benutzer zugeordnet werden.
-- Lesen, schreiben, erstellen, Anfügen und Anfügen an Berechtigungen für die Entität, für die das Notizen-Steuerelement aktiviert ist. Der Bereich sollte auf **Global**festgelegt werden. Diese Entitäts Berechtigung muss einer webrolle für den Benutzer zugeordnet werden.
+- Erstellen, Lesen, Schreiben, Anfügen und Anfügen an Rechte für die Entität **Aktivitätsentität (activitypointer)** mit dem Bereich **Global**. Die Entitätsberechtigung muss einer Webrolle für den Benutzer zugeordnet werden.
+- Erstellen, Lesen, Schreiben, Anfügen und Anfügen an Rechte für die Entität in der das Hinweissteuerelement aktiviert ist. Der Umfang sollte auf **Global** festgelegt werden. Die Entitätsberechtigung muss einer Webrolle für den Benutzer zugeordnet werden.
 
-    ![Entitäts Berechtigungen]hinzufügen(media/entity-permission.png "Entitäts Berechtigungen hinzu") fügen
+    ![Entitätsberechtigungen hinzufügen](media/entity-permission.png "Entitätsberechtigungen hinzufügen")
 
-    ![Hinzufügen von Webrollen zu einer Entitäts Berechtigung](media/entity-permission-web-roles.png "Hinzufügen von Webrollen zu Entitäts")
+    ![Hinzufügen von Webrollen zu einer Entitätsberechtigung](media/entity-permission-web-roles.png "Hinzufügen von Webrollen zu einer Entitätsberechtigung")
 
-Wenn Sie ein benutzerdefiniertes Formular erstellt und diesem den Abschnitt Notizen hinzugefügt haben, achten Sie darauf, dass Sie **Notizen** als Standard Registerkarte auswählen, die Sie sichtbar machen möchten.
+Wenn Sie ein benutzerdefiniertes Formular erstellt und den Abschnitt „Notizen“ diesem hinzugefügt haben, stellen Sie sicher, dass **Notizen** als die Standardregisterkarte ausgewählt ist, die angezeigt werden soll.
 
-![Hinweise in benutzerdefinierten Formular](media/notes-activities-tab.png "Notizen in einem benutzerdefinierten Formular")
+![Notizen in einem benutzerdefinierten Formular](media/notes-activities-tab.png "Notizen in einem benutzerdefinierten Formular")
 
-## <a name="notes-configuration-for-web-forms"></a>Hinweise zur Konfiguration für Web Forms
+## <a name="notes-configuration-for-web-forms"></a>Konfiguration von Notizen für Webformulare
 
-Webformular Notizen werden auf die gleiche Weise konfiguriert wie die Anmerkungen zu dieser [Entität](#notes-configuration-for-entity-forms). Sie müssen zunächst einen Metadateneintrag für den Webformular Schritt erstellen, der Notizen enthält, und dann die Notizen der Notizen-Konfiguration hinzufügen.
+Webformularnotizen werden genau wie [Entitätsformularnotizen](#notes-configuration-for-entity-forms) konfiguriert. Erstellen Sie zunächst einen Metadatendatensatz für den Webformularschritt, der eine Notiz aufweist, und fügen Sie Konfigurationsmetadaten hinzu.

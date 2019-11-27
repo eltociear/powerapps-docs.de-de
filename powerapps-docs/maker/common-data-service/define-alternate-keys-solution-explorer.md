@@ -1,6 +1,6 @@
 ---
 title: Alternativschlüssel mithilfe des Projektmappen-Explorers festlegen | MicrosoftDocs
-description: 'Erfahren Sie, wie Alternativschlüssel definiert werden, die verwendet werden können, um Datensätze in Common Data Service mithilfe des Lösungs-Explorers zu verweisen'
+description: Weitere Informationen, wie Alternativschlüssel definiert werden, die verwendet werden können, um auf Datensätze in Common Data Service mithilfe des Lösungs-Explorers zu verweisen
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
@@ -9,23 +9,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8b1b38c94cbd4615ff0ab449944e65089865a823
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758718"
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>Alternativschlüssel mithilfe des Projektmappen-Explorers festlegen
 
 Lösungs-Explorer bietet eine Möglichkeit, um Alternativschlüssel für Common Data Service anzuzeigen und zu erstellen.
 
-[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können mithilfe des Lösungs-Explorers nur festgelegt werden. <br />Weitere Informationen: 
+Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. <br />Weitere Informationen: 
 - [Definieren von Alternativschlüsseln für den Verweis auf Datensätze](define-alternate-keys-reference-records.md)<br />
 - [Alternativschlüssel mithilfe von PowerApps-Portalen festlegen](define-alternate-keys-portal.md)
 

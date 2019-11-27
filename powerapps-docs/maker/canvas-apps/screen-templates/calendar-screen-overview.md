@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 470aa0671eddc5f4d3621c4dbdd8d81036c358e4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 9ca7e5f14508a2dcd70967e77b29989819bfe7ba
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989405"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541597"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>Übersicht über die Vorlage "Kalender Bildschirm" für Canvas-apps
@@ -43,11 +43,11 @@ Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen 
 
 So fügen Sie einen Kalender Bildschirm aus der Vorlage hinzu:
 
-1. [Melden](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und erstellen Sie eine APP, oder öffnen Sie eine vorhandene app in PowerApps Studio.
+1. [Melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und erstellen Sie eine APP, oder öffnen Sie eine vorhandene app in PowerApps Studio.
 
     In diesem Thema wird eine Phone-App gezeigt, aber die gleichen Konzepte gelten auch für eine Tablet-app.
 
-1. Wählen Sie auf der Registerkarte **Start** des Menübands die Option **neuer Bildschirm** > -**Kalender**aus.
+1. Wählen Sie auf der Registerkarte **Start** des Menübands die Option **neuer Bildschirm** > **Kalender**aus.
 
     Standardmäßig sieht der Bildschirm in etwa wie folgt aus:
 
@@ -114,7 +114,7 @@ Wenn Sie bereits wissen, welcher Kalender Ihre Benutzer anzeigen sollen, können
     > [!NOTE]
     > Diese Formel wird vom Standardwert der **onselect** -Eigenschaft der Dropdown Liste für die Auswahl eines Kalenders leicht bearbeitet. Weitere Informationen zu diesem Steuerelement finden Sie im Abschnitt des [Calendar-Screen-Verweises](./calendar-screen-reference.md#calendar-drop-down).
 
-1. Ersetzen Sie `{YourCalendarNameHere}`, einschließlich der geschweiften Klammern, durch den Namen des Kalenders, den Sie anzeigen möchten (z. b. **Kalender**).
+1. Ersetzen Sie `{YourCalendarNameHere}`, einschließlich der geschweiften Klammern, durch den Namen des Kalenders, den Sie anzeigen möchten (z. b. **Calendar**).
 
     > [!IMPORTANT]
     > Bei den folgenden Schritten wird davon ausgegangen, dass der app nur ein Kalender Bildschirm hinzugefügt wurde. Wenn Sie mehr als ein Element hinzugefügt haben, enden Steuerelement Namen (z. b. **iconCalendar1**) mit einer anderen Zahl, und Sie müssen die Formeln entsprechend anpassen.
@@ -151,7 +151,7 @@ Wenn Sie bereits wissen, welcher Kalender Ihre Benutzer anzeigen sollen, können
 
 Standardmäßig zeigt der Katalog unter dem Kalender namens **calendareventsgallery**die Startzeit, die Dauer, den Betreff und den Speicherort der einzelnen Ereignisse an. Sie können den Katalog so konfigurieren, dass alle Felder (z. b. der Planer) angezeigt werden, die der [Office 365-Connector](https://docs.microsoft.com/connectors/office365/#calendareventclientreceive) unterstützt.
 
-1. Legen Sie in **calendareventsgallery**die **Text** -Eigenschaft einer neuen oder vorhandenen Bezeichnung auf `ThisItem` gefolgt von einem bestimmten Zeitraum fest.
+1. Legen Sie in **calendareventsgallery**die **Text** -Eigenschaft einer neuen oder vorhandenen Bezeichnung auf `ThisItem` gefolgt von einem Zeitraum fest.
 
     IntelliSense listet die Felder auf, die Sie auswählen können.
 
@@ -236,7 +236,7 @@ Wenn Benutzer ein Ereignis in **calendareventsgallery**auswählen, können Sie e
 
     Mit dieser Formel wird ein Katalog dynamischer Daten erstellt, der auf die Feldwerte von **_selectedCalendarEvent**festgelegt wird, die jedes Mal festgelegt wird, wenn der Benutzer ein Ereignis im **calendareventsgallery** -Steuerelement auswählt. Sie können diese Galerie erweitern, um weitere Felder einzuschließen, indem Sie weitere Bezeichnungen hinzufügen, aber dieser Satz bietet einen guten Ausgangspunkt.
 
-1. Wenn die Galerie Elemente vorhanden sind, legen Sie die **Text** -Eigenschaft des **Label** -Steuer Elements auf `ThisItem.Title` und die **htmlText** -Eigenschaft des **HTML-Text** -Steuer Elements auf `ThisItem.Value` fest.
+1. Wenn die Galerie Elemente vorhanden sind, legen Sie die **Text** -Eigenschaft des **Label** -Steuer Elements auf `ThisItem.Title`und die **htmlText** -Eigenschaft des **HTML-Text** -Steuer Elements auf `ThisItem.Value`fest.
 
 1. Legen Sie in **calendareventsgallery**die **onselect** -Eigenschaft des **Title** -Steuer Elements auf diese Formel fest:
 
@@ -307,11 +307,11 @@ In dieser Liste wird erläutert, was jeder **clearcollect** -Vorgang bewirkt:
     ```
     Diese Formel bestimmt grob, ob ein Teilnehmer in Ihrer Organisation ist. Die Definition von **_userDomain** ist einfach die Domänen-URL in der e-Mail-Adresse der Person, die die app ausgeführt hat. Diese Zeile erstellt eine zusätzliche true/false-Spalte mit dem Namen **Inorg**in der **attende eemailstemp** -Auflistung. Diese Spalte enthält **true** , wenn **UserDomain** der Domänen-URL der e-Mail-Adresse in der jeweiligen Zeile von **attendeeemailstemp**entspricht.
 
-    Diese Vorgehensweise ist nicht immer genau, aber Sie wird ziemlich nah. Beispielsweise haben bestimmte Teilnehmer in Ihrer Organisation möglicherweise eine e-Mail-Adresse wie Jane@OnContoso.com, während **_userDomain** contoso.com ist. Der App-Benutzer und Jane können im selben Unternehmen arbeiten, haben aber leichte Abweichungen in Ihren e-Mail-Adressen. In diesen Fällen können Sie die folgende Formel verwenden:
+    Diese Vorgehensweise ist nicht immer genau, aber Sie wird ziemlich nah. Bestimmte Teilnehmer in Ihrer Organisation können z. b. eine e-Mail-Adresse wie Jane@OnContoso.comhaben, während **_userDomain** contoso.com ist. Der App-Benutzer und Jane können im selben Unternehmen arbeiten, haben aber leichte Abweichungen in Ihren e-Mail-Adressen. In diesen Fällen können Sie die folgende Formel verwenden:
 
     `Upper(_userDomain) in Upper(Right(Result; Len(Result) - Find("@"; Result)))`
 
-    Diese Formel stimmt jedoch mit e-Mail-Adressen wie Jane@NotTheContosoCompany.com mit einem **_userDomain** wie contoso.com überein, und diese Personen arbeiten nicht in demselben Unternehmen.
+    Diese Formel stimmt jedoch mit e-Mail-Adressen wie Jane@NotTheContosoCompany.com mit einem **_userDomain** wie contoso.com überein, und diese Personen arbeiten nicht im selben Unternehmen.
 
 - Clearcollect (mypeople)
 

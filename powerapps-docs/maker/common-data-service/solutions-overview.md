@@ -1,34 +1,39 @@
 ---
 title: Arbeiten mit Lösungen in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Lösungen verteilt werden'
+description: Erfahren Sie, wie Lösungen verteilt werden
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 09/30/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 391220159917462833afac204183cdc68a94f898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759026"
 ---
-   
 # <a name="solutions-overview"></a>Überblick über Lösungen  
 
-  In PowerApps werden Lösungen genutzt, um Apps und Komponenten von einer Umgebung in eine andere zu transportieren oder um einen Satz von Anpassungen für vorhandene Apps zu übernehmen. Eine Lösung kann mindestens eine App sowie andere Komponenten, wie Entitäten, Optionssätze usw. enthalten. Sie können eine Lösung aus [AppSource](https://appsource.microsoft.com/) oder durch einen unabhängigen Softwarehersteller (ISV) erhalten.
+  In PowerApps werden Lösungen genutzt, um Anwendungen und Komponenten von einer Umgebung in eine andere zu transportieren oder eine Reihe von Anpassungen auf bestehende Anwendungen anzuwenden. Eine Lösung kann eine oder mehrere Anwendungen sowie andere Komponenten wie Sitemaps, Entitäten, Prozesse, Webressourcen, Optionssets und mehr enthalten.  Eine Lösung erhalten Sie bei [AppSource](https://appsource.microsoft.com/) oder bei einem unabhängigen Softwareanbieter (ISV).
   
-Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
+Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.microsoft.com/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  Als ISV, der eine App erstellt, die Sie verteilen werden, müssen Sie Lösungen verwenden. Weitere Informationen zum Verwenden von Lösungen finden Sie unter [Entwicklerhandbuch: Einführung in Lösungen](/powerapps/developer/common-data-service/introduction-solutions).  
@@ -38,6 +43,8 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 ### <a name="components"></a>Komponenten  
  Eine Komponente steht für etwas, das Sie anpassen können. Alles, was Bestandteil einer Lösung sein kann, ist eine Komponente. Nachfolgend finden Sie eine Liste von Komponenten, die Sie in einer Lösung anzeigen können:  
   
+-   KI-Modell
+
 -   Anwendungsmenüband  
   
 -   Artikelvorlage  
@@ -51,16 +58,20 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 -   Verbindungsrolle  
   
 -   Vertragsvorlage  
+
+-   Benutzerdefinierter Connector
  
 -   Benutzerdefiniertes Steuerelement
   
--   Informationsleiste  
+-   Dashboard  
   
 -   E-Mail-Vorlage  
   
 -   Entität  
   
 -   Entitätsbeziehung  
+
+-   Umgebungsvariable
   
 -   Feld  
   
@@ -81,7 +92,9 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 -   Plug-In-Assembly  
   
 -   Prozess  
-  
+
+-   (Bericht)  
+
 -   SDK-Nachrichtenverarbeitungsschritt  
   
 -   Sicherheitsrolle  
@@ -102,9 +115,9 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
   
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
 ### <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen  
- Es gibt **verwaltete** und **nicht verwaltete** Lösungen. Eine **verwaltete** Lösung kann nicht geändert werden und kann nach dem Import deinstalliert werden. Dadurch werden alle Komponenten der Lösung entfernt.  
+ Es gibt **verwaltete** und **nicht verwaltete** Lösungen. Eine **verwaltete** Lösung kann nicht geändert werden und kann nach dem Import deinstalliert werden. Alle Komponenten dieser Lösung werden durch die Deinstallation der Lösung gelöscht.  
   
- Wenn Sie eine **nicht verwaltete** Lösung importieren, fügen Sie alle Komponenten dieser Lösung der Umgebung hinzu. Sie können die Komponenten nicht entfernen, indem Sie die Lösung deinstallieren.  
+ Wenn Sie eine **nicht verwaltete** Lösung importieren, fügen Sie alle Komponenten dieser Lösung der Umgebung hinzu. Sie können die Komponenten nicht löschen, indem Sie die Lösung deinstallieren.  
   
  Wenn Sie eine **nicht verwaltete** Lösung importieren, die bereits von Ihnen angepasste Komponenten enthält, werden Ihre Anpassungen von den Anpassungen in der importierten nicht verwalteten Lösung überschrieben. Sie können dies nicht rückgängig machen.  
   
@@ -112,8 +125,6 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 >  Installieren Sie eine nicht verwaltete Lösung nur, wenn Sie alle Komponenten Ihrer Umgebung hinzufügen wollen und alle vorhandenen Anpassungen überschrieben werden sollen.  
   
  Selbst wenn Sie Ihre Apps oder Anpassungen nicht verteilen wollen, sollten Sie eine nicht verwaltete Lösung so erstellen und verwenden, dass sie über eine separate Ansicht verfügt, die nur die Teile der Anwendung enthält, die Sie angepasst haben. Wenn Sie irgend etwas anpassen, fügen Sie es einfach der nicht verwalteten Lösung hinzu, die Sie erstellt haben.  
-  
- Sie können Ihre **Standardlösung** nur als nicht verwaltete Lösung exportieren.  
   
  Zur Erstellung einer **verwalteten** Lösung wählen Sie die Option **Als verwaltet** aus, wenn Sie die Lösung exportieren. Wenn Sie eine verwaltete Lösung erstellen, können Sie sie nicht wieder in die Umgebung importieren, die Sie für die Erstellung verwendet haben. Sie können sie nur in eine andere Umgebung importieren werden.  
   
@@ -149,6 +160,6 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
   
   
 ## <a name="next-steps"></a>Nächste Schritte  
-[Importieren, aktualisieren und exportieren von Lösungen](import-update-export-solutions.md) <br/>
-[Navigieren zu einer bestimmten Lösung](navigate-specific-solution.md)
+[Lösungen importieren, aktualisieren und exportieren](import-update-export-solutions.md) <br/>
+[Zu einer bestimmten Lösung navigieren](navigate-specific-solution.md)
  

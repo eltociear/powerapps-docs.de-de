@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Einen Termin in einen wiederkehrenden Termin umwandeln (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie Sie einen Termin in eine wiederkehrende Terminserie umwandeln können.'
+title: 'Beispiel: Konvertieren eines Termins in eine Terminserie (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie Sie einen Termin in eine wiederkehrende Terminserie umwandeln können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4125ffa1bf8d5c21646265fc2020484916af291f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748384"
 ---
 # <a name="sample-convert-an-appointment-to-a-recurring-appointment"></a>Beispiel: Konvertieren eines Termins in eine Terminserie
 

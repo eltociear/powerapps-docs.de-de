@@ -1,6 +1,6 @@
 ---
-title: 'Aufgaben-, Fax-, Telefonanruf- und Briefaktivitäten-Entitäten (Common Data Service) | Microsoft Docs'
-description: 'Erfahren Sie mehr über Entitäten, die es Ihnen ermöglichen, Hauptaktivitäten zu verwalten, die in einer Beziehungsverwaltungslösung ausgeführt werden.'
+title: Aktivitätsentitäten wie Aufgabe, Fax, Telefonanruf und Brief (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Entitäten, die es Ihnen ermöglichen, Hauptaktivitäten zu verwalten, die in einer Beziehungsverwaltungslösung ausgeführt werden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 32937c558986fa36db2dff4d290d8bc222709f7c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748637"
 ---
 # <a name="task-fax-phone-call-and-letter-activity-entities"></a>Aktivitätsentitäten wie Aufgabe, Fax, Telefonanruf und Brief
 

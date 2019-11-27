@@ -1,6 +1,6 @@
 ---
-title: 'Verwenden der PowerShell-Cmdlets für XRM-Tools, um eine Verbindung mit Common Data Service (Common Data Service) herzustellen | Microsoft Docs'
-description: 'Erfahren Sie, wie Sie Powershell-Cmdlets für XRM-Tools wie Get-CrmConnection und Get-CrmOrganizations verwenden, um eine Verbindung mit Common Data Service herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer Zugriff hat.'
+title: Verwenden der PowerShell-Cmdlets für XRM-Tools, um eine Verbindung mit Common Data Service (Common Data Service) herzustellen | Microsoft Docs
+description: Erfahren Sie, wie Sie Powershell-Cmdlets für XRM-Tools wie Get-CrmConnection und Get-CrmOrganizations verwenden, um eine Verbindung mit Common Data Service herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer Zugriff hat.
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -9,25 +9,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 81816457-c963-46ca-b350-615fa75f56a7
 caps.latest.revision: 27
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bdf7fd2f1fe10d23b0d99d03e9c5652a98dc3dfa
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753626"
 ---
 # <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden Sie PowerShell-Cmdlets für XRM-Tools, um eine Verbindung mit Common Data Service herzustellen.
 
 XRM-Tooling stellt Ihnen die folgenden **Windows PowerShell** Cmdlets zur Verfügung, mit denen Sie eine Verbindung zu Common Data Service herstellen und Organisationen abrufen können, auf die der aktuelle Benutzer Zugriff hat: `Get-CrmConnection` und `Get-CrmOrganizations`.  
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Verwenden Sie PowerShell-Cmdlets für XRM-Tooling, um die Verbindung mit Customer Engagement herzustellen](/dynamics365/customer-engagement/developer/xrm-tooling/use-powershell-cmdlets-xrm-tooling-connect)
-  
+ 
 <a name="Prereq"></a>   
 
 ## <a name="prerequisites"></a>Voraussetzungen  
@@ -142,11 +146,11 @@ Verwenden Sie das Cmdlet `Get-CrmConnection`, um eine Verbindung mit einer Commo
        ```  
 
        > [!div class="mx-imgBorder"]
-       > ![Common Data Service Verbindungsinformationen und Status](../media/xrm-tooling-powershell-2.png "Common Data Service Verbindungsinformationen und Status") 
+       > ![Common Data Service-Verbindungsinformationen und -status](../media/xrm-tooling-powershell-2.png "Common Data Service-Verbindungsinformationen und -status") 
 
   
 ### <a name="see-also"></a>Siehe auch
   
 [Verwenden der XRM Tooling API, um eine Verbindung zu Common Data Service herzustellen](use-crmserviceclient-constructors-connect.md)<br />
 [Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools](build-windows-client-applications-xrm-tools.md)<br />
-[Blog: PowerShell-Modul für die Ausführung von Datenvorgängen und die Bearbeitung der Benutzer- und Systemeinstellungen in Common Data Service](http://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)
+[Blog: PowerShell-Modul für die Ausführung von Datenvorgängen und die Bearbeitung der Benutzer- und Systemeinstellungen in Common Data Service](https://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)

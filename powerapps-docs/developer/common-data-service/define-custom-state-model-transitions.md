@@ -1,5 +1,5 @@
 ---
-title: Definieren von benutzerdefinierten Statusmodellübergängen (Common Data Service) | Microsoft Docs
+title: Definieren von benutzerdefinierten Statusmodellübergängen (Common Data Service) | Microsoft-Dokumentation
 description: Erfahren Sie mehr über die Definition von benutzerdefinierten Statusmodellübergängen für die Vorfall (Anfrage)-Entität oder benutzerdefinierte Entitäten.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a7172755f75a2d39ff1ad2b0bf7dcbfb88bdf72d
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752990"
 ---
 # <a name="define-custom-state-model-transitions"></a>Definieren von benutzerdefinierten Statusmodellübergängen
 
@@ -51,12 +57,12 @@ Zum Anzeigen der Entitätsmetadaten für Ihre Organisation installieren Sie die 
 <a name="BKMK_DetectValidStatusTransitions"></a>   
 
 ## <a name="detect-valid-status-transitions"></a>Erkennen von gültigen Statusübergängen  
- Sie können das `statuscode`-Attribut ändern, um zu definieren, welche anderen Statusoptionen gültige Übergänge aus dem aktuellen Status darstellen. Anweisungen dazu finden Sie in der Anleitung zur Anpassung in folgendem Thema: [Festlegen von Statusgrundübergängen](http://go.microsoft.com/fwlink/p/?LinkId=393657)  
+ Sie können das `statuscode`-Attribut ändern, um zu definieren, welche anderen Statusoptionen gültige Übergänge aus dem aktuellen Status darstellen. Anweisungen dazu finden Sie in der Anleitung zur Anpassung in folgendem Thema: [Festlegen von Statusgrundübergängen](https://go.microsoft.com/fwlink/p/?LinkId=393657)  
   
  Wenn benutzerdefinierte Statusübergänge auf eine Entität angewendet werden, muss die <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.EnforceStateTransitions> Eigenschaft ist `true`. Auch jede <xref:Microsoft.Xrm.Sdk.Metadata.StatusOptionMetadata> innerhalb der <xref:Microsoft.Xrm.Sdk.Metadata.StatusAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata.Options> Sammlung enthält eine neue <xref:Microsoft.Xrm.Sdk.Metadata.StatusOptionMetadata.TransitionData>-Eigenschaft. Diese Eigenschaft enthält einen Zeichenfolgenwert, der ein XML-Dokument darstellt. Dieses Dokument enthält die Definition der zulässigen Übergänge. Beispielsweise kann die standardmäßige `Incident` (**Anfrage**) `StatusCode`-Attributoption den folgenden `TransitionData`-Wert haben.  
   
 ```xml  
-<allowedtransitions xmlns="http://schemas.microsoft.com/crm/2009/WebServices">  
+<allowedtransitions xmlns="https://schemas.microsoft.com/crm/2009/WebServices">  
 <allowedtransition sourcestatusid="1" tostatusid="6" />  
 <allowedtransition sourcestatusid="1" tostatusid="1000" />   
 <allowedtransition sourcestatusid="1" tostatusid="2000" />  
@@ -68,7 +74,7 @@ Zum Anzeigen der Entitätsmetadaten für Ihre Organisation installieren Sie die 
 >  Wenn diese Daten in nicht verwaltetem Code von dem Webdienst abgerufen werden, beispielsweise bei Verwendung von JavaScript, werden sie umgangen und erscheinen wie im folgenden Beispiel.  
   
 ```xml  
-<allowedtransitions xmlns="http://schemas.microsoft.com/crm/2009/WebServices">  
+<allowedtransitions xmlns="https://schemas.microsoft.com/crm/2009/WebServices">  
 <allowedtransition sourcestatusid="1" tostatusid="6">  
 <allowedtransition sourcestatusid="1" tostatusid="1000">  
 <allowedtransition sourcestatusid="1" tostatusid="2000">  
@@ -76,10 +82,10 @@ Zum Anzeigen der Entitätsmetadaten für Ihre Organisation installieren Sie die 
 </allowedtransitions>  
 ```  
   
- Wenn diese Daten vorhanden sind und die Entitätseigenschaft `EnforceStateTransitions` auf `true` festgelegt ist, kann eine Vorfallinstanz nur in einen der zulässigen `statuscode`-Werte geändert werden. Mit <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> können Sie `statuscode`<xref:Microsoft.Xrm.Sdk.OptionSetValue> für einen der zulässigen Werte verwenden, die keine Statusänderung darstellen. Um den Status zu ändern, verwenden Sie <xref:Microsoft.Crm.Sdk.Messages.SetStateRequest> zum Festlegen der zulässigen Eigenschaftswerte <xref:Microsoft.Crm.Sdk.Messages.SetStateRequest.State> und <xref:Microsoft.Crm.Sdk.Messages.SetStateRequest.Status> oder <xref:Microsoft.Crm.Sdk.Messages.CloseIncidentRequest> zum Festlegen der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.CloseIncidentRequest.Status> auf einen der Werte, die für den aktuellen `statuscode`-Wert zulässig sind. Wenn Sie versuchen, einen ungültigen Wert festzulegen, wird ein Fehler ausgelöst.  
+ Wenn diese Daten vorhanden sind und die Entitätseigenschaft `EnforceStateTransitions` auf `true` festgelegt ist, kann eine Vorfallinstanz nur in einen der zulässigen `statuscode`-Werte geändert werden. Sie können<xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> können Sie `statuscode`<xref:Microsoft.Xrm.Sdk.OptionSetValue> für einen der zulässigen Werte verwenden, die keine Statusänderung darstellen. Um den Status zu ändern, verwenden Sie <xref:Microsoft.Crm.Sdk.Messages.SetStateRequest> zum Festlegen der zulässigen Eigenschaftswerte <xref:Microsoft.Crm.Sdk.Messages.SetStateRequest.State> und <xref:Microsoft.Crm.Sdk.Messages.SetStateRequest.Status> oder <xref:Microsoft.Crm.Sdk.Messages.CloseIncidentRequest> zum Festlegen der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.CloseIncidentRequest.Status> auf einen der Werte, die für den aktuellen `statuscode`-Wert zulässig sind. Wenn Sie versuchen, einen ungültigen Wert festzulegen, wird ein Fehler ausgelöst.  
   
 ### <a name="see-also"></a>Siehe auch  
  [Beispiel: Abrufen gültiger Statusübergänge](org-service/samples/retrieve-valid-status-transitions.md)   
  [Datensatzzustand und -status](/dynamics365/customer-engagement/developer/introduction-entities#bkmk_RecordStateandStatus)   
  [Abrufen und Erkennen von Änderungen bei Metadaten](/dynamics365/customer-engagement/developer/retrieve-detect-changes-metadata)   
- [Festlegen von Statusgrundübergängen](http://go.microsoft.com/fwlink/p/?LinkId=393657)
+ [Festlegen von Statusgrundübergängen](https://go.microsoft.com/fwlink/p/?LinkId=393657)

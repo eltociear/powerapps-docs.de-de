@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Schreiben des ersten Clientskripts in modellgesteuerten Apps | MicrosoftDocs'
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to: Dynamics 365 (online)
 ms.assetid: 73dfc13c-a18c-42fc-b511-a37896c2f893
@@ -9,20 +9,25 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 15ba73e097a03b1fd1b200f3653f169ec5afaf7f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754587"
 ---
 # <a name="walkthrough-write-your-first-client-script"></a>Exemplarische Vorgehensweise: Schreiben des ersten Clientskripts
-
-
 
 Bereit für das Schreiben des ersten Clientskripts, um Dinge in Aktion zu sehen. Fangen wir an, wir halten es einfach.
 
 ## <a name="objective"></a>Ziel
 
 Nach Durchführung dieser exemplarischen Vorgehensweise wissen Sie, wie Sie Ihren JavaScript-Code in modellgesteuerten Apps verwenden können. Dazu zählen folgende Schritte auf oberster Ebene:
+
 - Schreiben Sie einen JavaScript-Code für einen Geschäftsfall
 - Laden Sie Ihren JavaScript-Code als Webressource in modellgesteuerte Apps hoch
 - Ordnen Sie die JavaScript-Funktionen in der Webressource verschiedenen clientseitigen Ereignissen in modellgesteuerten Apps zu.
@@ -33,13 +38,14 @@ Wir lenken Ihre Aufmerksamkeit auf wichtige Fakten und verweisen gegebenenfalls 
 
 Der erste Schritt besteht darin, das betriebswirtschaftliche Problem zu ermitteln, dem Sie sich mit dem Clientskript widmen wollen. Nach dem Identifizieren müssen Sie einen JavaScript-Code schreiben, der die angepasste Geschäftslogik enthält, die sich dem Geschäftsproblem widmet. 
 
-modellgesteuerte Apps bieten keinen JavaScript-Editor. Sie können ein externes Erstellungstool mit Funktionen verwenden, das insbesondere das Bearbeiten von JavaScript-Dateien wie [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript) oder [Microsoft Visual Studio](https://docs.microsoft.com/en-us/scripting/javascript/) unterstützt.
+modellgesteuerte Apps bieten keinen JavaScript-Editor. Sie können also ein externes Autorenwerkzeug verwenden, das Funktionen zur Verfügung stellt, die das Bearbeiten von JavaScript-Dateien gezielt unterstützen, wie z.B. [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript), oder [Microsoft Visual Studio](https://docs.microsoft.com/scripting/javascript/).
 
 Sie können den gesamten Beispiel-Code dieser exemplarischen Vorgehensweise später einsehen.
 
 Sehen Sie sich den Code detailliert an:
  
 ### <a name="detailed-code-explanation"></a>Ausführliche Codeerklärung
+
 - **Namespace definieren**: Das Schreiben des Codes beginnt mit der Definition eines Namespaces in Ihrem benutzerdefinierten Skript. Sie sollten immer JavaScript-Bibliotheken mit Namespaces erstellen, damit Ihre Funktionen nicht von Funktionen in einer anderen Bibliothek überschrieben werden.
 
     ```JavaScript
@@ -71,7 +77,7 @@ Sehen Sie sich den Code detailliert an:
         window.setTimeout(function () { formContext.ui.clearFormNotification(myUniqueId); }, 5000);        
     }
     ```
-- **Code, um im OnChange-Ereignis auszuführen**: Code in den Abschnitten wird dem Feld **Firmenname** im Firmenformular zugeordnet, sodass **nur** ausgeführt wird, wenn sich der Firmennamewert ändert.
+- **Code zur Ausführung auf dem OnChange-Ereignis**: Der Code in diesem Abschnitt wird dem Feld **Kontoname** im Kontenformular zugeordnet, so dass er **nur** dann ausgeführt wird, wenn Sie den Wert des Kontonamens ändern.
 
     Der Code führt unter Berücksichtigung der Groß-/Kleinschreibung eine Suche nach "Contoso" im Firmennamen durch, und legt, sofern vorhanden, automatisch Werte für einige Felder im Firmenformular fest.
 
@@ -83,7 +89,7 @@ Sehen Sie sich den Code detailliert an:
         // Automatically set some field values if the account name contains "Contoso"
         var accountName = formContext.getAttribute("name").getValue();
         if (accountName.toLowerCase().search("contoso") != -1) {
-            formContext.getAttribute("websiteurl").setValue("http://www.contoso.com");
+            formContext.getAttribute("websiteurl").setValue("https://www.contoso.com");
             formContext.getAttribute("telephone1").setValue("425-555-0100");
             formContext.getAttribute("description").setValue("Website URL, Phone and Description set using custom script.");
         }
@@ -132,7 +138,7 @@ Ordnen Sie die Webressource, die Ihren JavaScript-Code enthält, Formularen für
 
     ![Suchdatensatz](../media/clientapi_walkThrough-img4.png)
 
-Dadurch wird die Webressource verfügbar und kann im Abschnitt **Ereignishandler** im Dialogfeld **Formulareigenschaften** ausgewählt werden. Beachten Sie, dass es drei Funktionen im JavaScript-Code gibt, die mit entsprechenden Ereignissen im Formular zu verknüpfen sind.
+Dadurch steht die Webressource zur Verfügung, die unter dem Abschnitt **Ereignishandler** im Dialog **Formulareigenschaften** ausgewählt werden kann. Denken Sie daran, dass wir drei Funktionen in unserem JavaScript-Code haben, die mit entsprechenden Ereignissen im Formular verknüpft sind.
 
 1. Wählen Sie im Abschnitt **Ereignishandler** **Formular** als das Steuerelement aus und **OnLoad** als **Ereignis**; klicken Sie auf **Hinzufügen**, um einen Ereignishandler für das OnLoad-Ereignis hinzuzufügen.
 
@@ -165,7 +171,7 @@ Dadurch wird die Webressource verfügbar und kann im Abschnitt **Ereignishandler
     
       ![OnChange-Attribut](../media/clientapi_walkThrough-img10.png) 
 1. Klicken Sie auf **OK**, um zum Dialogfeld **Formulareigenschaften** zurückzukehren.
-2. Klicken Sie auf **OK** im Dialogfeld **Formulareigenschaften**, um zum Formular-Editor zurückzukehren.
+2. Klicken Sie auf **OK** im Dialogfenster **Formulareigenschaften**, um zum Formular-Editor zurückzukehren.
 3. Klicken Sie auf **Save**, um die Änderungen im Formular zu speichern.
 4. Klicken Sie auf **Veröffentlichen**, um die Formular-Änderungen zu veröffentlichen.
 
@@ -176,7 +182,7 @@ Das war es! Sie haben die Schritte abgeschlossen, die erforderlich waren, um das
 Es wird empfohlen, dass Sie Ihren Browser aktualisieren, damit die Änderungen in Instanz für modellgesteuerte Apps wirksam werden. So testen Sie die benutzerdefinierte Geschäftslogik, die Sie in dieser exemplarischen Vorgehensweise konfiguriert haben:
 
 1. Melden Sie sich bei Ihrer Instanz für modellgesteuerte Apps an.
-2. Navigieren Sie zu **Firmen**, und versuchen Sie , eine neue Firma zu erstellen. In diesem Fall öffnen wir eine vorhandene Firma, um das Firmenformular zu laden. Sie sehen eine Benachrichtigung, die Ihren Benutzernamen enthält und automatisch nach 5 Sekunden verschwindet.
+2. Navigieren Sie zu **Firmen**, und versuchen Sie , eine neue Firma zu erstellen. In diesem Fall öffnen wir eine vorhandene Firma, um das Firmenformular zu laden. Sie sehen eine Benachrichtigung mit Ihrem Benutzernamen, die in 5 Sekunden automatisch verschwindet.
 
       ![Benachrichtigung auf Formularebene](../media/clientapi_walkThrough-img11.png)
 
@@ -219,7 +225,7 @@ var Sdk = window.Sdk || {};
         // Automatically set some field values if the account name contains "Contoso"
         var accountName = formContext.getAttribute("name").getValue();
         if (accountName.toLowerCase().search("contoso") != -1) {
-            formContext.getAttribute("websiteurl").setValue("http://www.contoso.com");
+            formContext.getAttribute("websiteurl").setValue("https://www.contoso.com");
             formContext.getAttribute("telephone1").setValue("425-555-0100");
             formContext.getAttribute("description").setValue("Website URL, Phone and Description set using custom script.");
         }

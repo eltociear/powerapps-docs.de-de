@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68e702156b0a5b820dd23076551cf7970efc65a3
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 1c8591790fe14d184f5d5e4ef5fc79ff0bfe0e2a
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025101"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74177897"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
@@ -27,8 +27,8 @@ In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser so
 
 | **Mindestens erforderlich** | **Empfohlen** |
 | --- | --- |
-| iOS 9.3 oder höher |iOS 10 oder höher mit mindestens 2 GB RAM |
-| Android 5 oder höher |Android 7 oder höher mit mindestens 4 GB RAM |
+| IOS 12 oder höher |IOS 12 oder höher|
+| Android 7 oder höher |Android 7 oder höher |
 | Windows 8.1 oder höher (nur PC) |Windows 10 Fall Creators Update mit mindestens 8 GB RAM|
 
 > [!NOTE]
@@ -98,10 +98,10 @@ In dieser Liste werden alle Dienste aufgeführt, mit denen PowerApps Studio komm
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph: zum erhalten von Benutzerinformationen (z. b. Profilfoto) |
 | gallery.azure.com |https |Beispiel- und Vorlagen-Apps |
 | \*. Azure-APIM.net |https |API-Hubs: Verschiedene Unterdomänen für jedes Gebietsschema |
-| \*. powerapps.com |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
-| \*. azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
+| \*. powerapps.com |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
+| \*. azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
 | \*. BLOB.Core.Windows.net |https | Blob Storage |
-| \*. Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
+| \*. Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
 | *. Dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetrie |
 | localhost | https | PowerApps Mobile
@@ -117,7 +117,7 @@ Informationen zu Größenbeschränkungen für Text, Hyperlinks, Bilder und Medie
 
 Mit powerapps pro App-Plan können einzelne Benutzer 2 Anwendungen in einem einzelnen Portal für ein bestimmtes Geschäftsszenario ausführen, das auf den vollständigen Funktionen von powerapps basiert. Dieser Plan bietet Benutzern eine einfache Möglichkeit, mit der Plattform zu beginnen, bevor Sie eine breitere Akzeptanz erzielen.
 
-Nachdem ein Administrator einer Umgebung powerapps pro App-Plan zugewiesen hat, werden Sie standardmäßig Benutzern zugewiesen, wenn die APP für Sie freigegeben wird. [Hier](https://docs.microsoft.com/power-platform/admin/capacity-add-on)können Sie sehen, wie ein Administrator die Zuordnung pro App-Plan durch hat.
+Nachdem ein Administrator einer Umgebung powerapps pro App-Plan zugewiesen hat, werden Sie nicht lizenzierten Benutzern zugewiesen, wenn eine app in dieser Umgebung für Sie freigegeben wird. [Hier](https://docs.microsoft.com/power-platform/admin/capacity-add-on)können Sie sehen, wie ein Administrator die Zuordnung pro App-Plan durch hat.
 
 Führen Sie die folgenden Schritte aus, um die Zuweisung von App-Plänen für Benutzer zu deaktivieren, wenn eine APP für Sie freigegeben wird:
 
@@ -129,6 +129,8 @@ Die UMSCHALT Fläche **automatisch zuweisen pro App** wird in der app-Einstellun
 
 > [!NOTE]
 > Die Deaktivierung des pro-App-Plans ist zurzeit nur für Canvas-apps verfügbar.  Modell gesteuerte apps und Portale können diese Möglichkeit in Zukunft haben.
+>
+> Die Möglichkeit, pro App-Plan Zuweisung für eine APP zu steuern, ist nur für apps verfügbar, die sich in einer Umgebung befinden, in der pro App-Pläne im [Power Platform Admin Center](https://admin.powerplatform.microsoft.com)zugeordnet sind.  
 
 ### <a name="app-settings"></a>App-Einstellungen
 

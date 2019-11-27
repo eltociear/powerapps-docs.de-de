@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac4699818c7f5b3a136db122fad9621d865bf5f1
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.openlocfilehash: c107e337733f771212359618c5761cb7a89d3177
+ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256107"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072539"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integrieren von Canvas-Apps in Websites und andere Dienste
 Die apps, die Sie erstellen, sind oftmals besonders nützlich, wenn Sie verfügbar sind, wo die Benutzer ihre Arbeit erledigen. Wenn Sie Canvas-apps in einen iframe einbetten, können Sie diese apps in Websites und andere Dienste integrieren, wie z. b. Power BI oder SharePoint.
@@ -32,7 +32,7 @@ Berücksichtigen Sie die folgenden Einschränkungen:
 - Nur PowerApps-Benutzer im gleichen Mandanten haben Zugriff auf die eingebettete App.
 - Wenn Sie mit Internet Explorer 11 auf PowerApps zugreifen möchten, müssen Sie die Kompatibilitätsansicht deaktivieren.
 
-Sie können Canvas-apps auch ohne Verwendung eines Iframes in SharePoint Online integrieren. Weitere Informationen finden Sie unter: [Verwenden Sie das powerapps-Webpart](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
+Sie können Canvas-apps auch ohne Verwendung eines Iframes in SharePoint Online integrieren. Weitere Informationen: [verwenden Sie das powerapps-Webpart](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Festlegen von URI-Parametern für Ihre App
 Wenn Sie über eine einzubettende App verfügen, besteht der erste Schritt im Festlegen von Parametern für den URI (Uniform Resource Identifier), um dem iframe mitzuteilen, wo sich die App befindet. Der URI liegt in der folgenden Form vor:
@@ -54,7 +54,7 @@ Sie brauchen nichts weiter zu tun, als die [AppID] im URI durch die ID Ihrer App
 * **tenantid** : ein optionaler Parameter, der den Gast Zugriff unterstützt und bestimmt, von welchem Mandanten die APP geöffnet werden soll. 
 * **screenColor**: stellt Ihren Benutzern ein besseres Ladeverhalten bereit. Dieser Parameter liegt im Format [RGBA (Rotwert, Grünwert, Blauwert, Alpha)](../canvas-apps/functions/function-colors.md) vor und steuert die Bildschirmfarbe während des Ladens der App. Er sollte auf die gleiche Farbe wie das Symbol Ihrer App festgelegt werden.
 * **source**: ohne Auswirkungen auf die App, wir empfehlen Ihnen jedoch, mit einem beschreibenden Namen auf die Quelle für die Einbettung zu verweisen.
-* Schließlich können Sie mithilfe der [Param()-Funktion](../canvas-apps/functions/function-param.md) beliebige benutzerdefinierte Parameter hinzufügen, und diese Werte können von Ihrer App verbraucht werden. Sie werden am Ende des URIs hinzugefügt, wie etwa in `[AppID]&amp;param1=value1`. Diese Parameter sind während des Starts der APP schreibgeschützt. Wenn Sie Sie ändern müssen, müssen Sie die APP neu starten. Beachten Sie, dass nur das erste Element nach [AppID] ein "?" enthalten sollte. Verwenden Sie danach das "&", wie hier dargestellt. 
+* Schließlich können Sie mithilfe der [Param()-Funktion](../canvas-apps/functions/function-param.md) beliebige benutzerdefinierte Parameter hinzufügen, und diese Werte können von Ihrer App verbraucht werden. Sie werden am Ende des URIs hinzugefügt, wie etwa in `[AppID]?source=iframe&param1=value1&param2=value2`. Diese Parameter sind während des Starts der APP schreibgeschützt. Wenn Sie Sie ändern müssen, müssen Sie die APP neu starten. Beachten Sie, dass nur das erste Element nach [AppID] ein "?" enthalten sollte. Verwenden Sie danach das "&", wie hier dargestellt. 
 
 ### <a name="get-the-app-id"></a>Abrufen der App-ID
 Die App-ID ist auf „powerapps.com“ verfügbar. Führen Sie für die einzubettende App folgende Aktionen aus:

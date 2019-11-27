@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Mit Aktivitätspartei-Datensätzen arbeiten (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Arbeiten mit Aktivitätsparteidatensätzen (Common Data Service) | Microsoft-Dokumentation'
 description: In diesem Beispiel wird das Arbeiten mit Aktivitätsparteidatensätzen dargestellt.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ce1824020e8ca09380d34d871b4222f132837e87
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748696"
 ---
 # <a name="sample-work-with-activity-party-records"></a>Beispiel: Arbeiten mit Aktivitätsparteidatensätzen
 

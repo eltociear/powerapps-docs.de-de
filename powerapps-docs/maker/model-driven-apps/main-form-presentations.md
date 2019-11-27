@@ -1,31 +1,37 @@
 ---
-title: Hauptformulardarstellung in modellgesteuerten Apps in PowerApps | MicrosoftDocs
-description: 'Hier erfahren Sie, wie Hauptformulare aussehen, wenn sie auf verschiedenen Geräten angezeigt werden'
+title: Hauptformulardarstellung in modellgesteuerten Apps in PowerApps | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Hauptformulare aussehen, wenn sie auf verschiedenen Geräten angezeigt werden
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: da3ac59a-5413-46cb-b355-1987e42e3853
 caps.latest.revision: 35
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9ed031f75235cfb47a2206de0a814fb008a335bd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702541"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>Wie Hauptformulare in modelgesteuerten Apps auf verschiedenen Geräten erscheinen
 
-Das Hauptformular wird von allen modellgesteuerten App-Clients verwendet. Dieses Formular bietet eine konsistente Benutzererfahrung, unabhängig davon, ob jemand einen Webbrowser, Dynamics 365 for phones, Dynamics 365 for tablets oder Dynamics 365 for Outlook verwendet.  
+Das Hauptformular wird von allen modellgesteuerten App-Clients verwendet. Dieses Formular bietet eine konsistente Benutzererfahrung, unabhängig davon, ob jemand einen Webbrowser, Dynamics 365 für Smartphones, Dynamics 365 für Tablets oder Dynamics 365 for Outlook verwendet.  
   
 <a name="BKMK_MainFormPresentations"></a>   
 ## <a name="main-forms"></a>Hauptformulare  
@@ -51,7 +57,7 @@ Das Hauptformular wird von allen modellgesteuerten App-Clients verwendet. Dieses
 |Komponente|Zusammenfassung|  
 |---------------|-------------|  
 |**Navigationsleiste**|Verwendet die Daten in der SiteMap, um die Fähigkeit bereitzustellen, sich zu verschiedenen Bereichen der Anwendung zu bewegen.<br /><br /> Der Navigationsbereich, der in klassischen Formularen verwendet wurde, ist im aktualisierten Formular nicht enthalten. Im Rahmen eines Datensatzes bietet die Navigationsleiste Zugriff auf Ansichten der verknüpften Datensätze. Anstatt zu den verknüpften Datensätzen mithilfe des Navigationsbereichs oder der Navigationsleiste zu navigieren, bietet das Hinzufügen von Unterrastern, die so konfiguriert werden, dass sie nützliche verknüpfte Entitätsdatensätze anzeigen, eine bessere Umgebung für die meisten Benutzer.|  
-|**Befehlsleiste**|Verwendet die Daten, auf für Menübänder definiert wurden, um relevante Befehle für den Datensatz zur Verfügung zu stellen.<br /><br /> Die ersten fünf Befehle werden gefolgt von Auslassungspunkten angezeigt (![Weitere Befehle-Schaltfläche](media/not-available.gif "Weitere Befehle-Schaltfläche")), die ein Flyoutmenü bereitstellen, um zusätzliche Befehle auszuwählen.|  
+|**Befehlsleiste**|Verwendet die Daten, auf für Menübänder definiert wurden, um relevante Befehle für den Datensatz zur Verfügung zu stellen.<br /><br /> Die ersten fünf Befehle werden gefolgt von Auslassungspunkten (![Schaltfläche „Weitere Befehle“](media/not-available.gif "MSchaltfläche "Weitere Befehle")) angezeigt, die ein Flyoutmenü bereitstellen, um zusätzliche Befehle auszuwählen.|  
 |**Bild**|Wenn eine Entität eine Bildfeld hat und die Option **Primäres Bild** der Entität auf **Standardbild** festgelegt wurde, kann ein Bild in der Kopfzeile angezeigt werden, wenn das Formular so konfiguriert ist, um das Bild anzuzeigen.|  
 |**Kopfzeile**|Felder, die in die Kopfzeile platziert sind, bleiben sichtbar, wenn Mitarbeiter nach unten durch den Text des Formulars scrollen.<br /><br /> Bis zu vier Felder können in die Kopfzeilen platziert werden. Mehrere Textzeilen,Webressourcen oder iFrames sind in der Kopfzeile nicht zulässig. Kopf- und Fußzeilen haben einige Eigenschaften mit Abschnitten gemein.|  
 |**Prozesssteuerung**|Wenn eine Entität über aktive Geschäftsprozessflüsse verfügt, wird die Prozesssteuerung unter der Kopfzeile angezeigt. Weitere Informationen: [Geschäftsprozessflüsse](/flow/business-process-flows-overview)|  
@@ -81,15 +87,15 @@ Das Hauptformular wird von allen modellgesteuerten App-Clients verwendet. Dieses
   
  **Web-App**  
   
- ![Dynamics 365-Formularrückfluss aus Web-App](media/custon-reflow-web-app.png "Dynamics 365-Formularrückfluss aus Web-App")  
+ ![Dynamics 365-Formularumbruch zur Web-App](media/custon-reflow-web-app.png "Dynamics 365-Formularumbruch zur Web-App")  
   
  **Tablet-App**  
   
- ![Dynamics 365-Formularrückfluss zur Tablet-App](media/reflow-tablet-app.png "Dynamics 365-Formularrückfluss zur Tablet-App")  
+ ![Dynamics 365-Formularumbruch zur Tablet-App](media/reflow-tablet-app.png "Dynamics 365-Formularumbruch zur Tablet-App")  
   
  **Smartphone-App**  
   
- ![Dynamics 365-Formularrückfluss zur Smartphone-App](media/custon-reflow-phone-app.png "Dynamics 365-Formularrückfluss zur Smartphone-App")  
+ ![Dynamics 365 Formularumbruch zur Telefon-App](media/custon-reflow-phone-app.png "Dynamics 365 Formularumbruch zur Telefon-App")  
   
  Die Formularelemente sind in Dynamics 365 for tablets in ein Panoramalayout transformiert, auf dem Benutzer den Bildschirm wischen können, um die Artikel zu ändern, die in einem Viewport sichtbar sind. In Dynamics 365 for phones wischen die Benutzer über den Bildschirm, um eine andere Spalte oder Bereich von Elementen anzuzeigen, und das Prozesssteuerelement wird über jeder Spalte angezeigt.  
   
@@ -116,7 +122,7 @@ Das Hauptformular wird von allen modellgesteuerten App-Clients verwendet. Dieses
   
  In Dynamics 365 for tablets zeigt der erste Bereich Kontaktinformationen zu Beziehungen an, die für den Datensatz vorhanden sind. In Dynamics 365 for phones zeigt der erste Bereich auch Kopfzeilenfelder vom Formular über den Beziehungskacheln an.  
   
- ![Dynamics 365 für Tablet-Beziehungsbereich](media/mobile-app-form-relationships.png "Dynamics 365 für Tablet-Beziehungsbereich")  
+ ![Bereich „Dynamics 365 für Tablets-Beziehungen“](media/mobile-app-form-relationships.png "Bereich „Dynamics 365 für Tablets-Beziehungen“")  
   
  Für Kontakt- und Benutzerformulare zeigt das oberste Element eine Kommunikationskarte für den Datensatz an. Die Kommunikationskarte bietet Schaltflächen, um die Kommunikation mit der Person einzuleiten. Für andere Entitäten wird eine Kommunikationskarte angezeigt, wenn ein Kontakt-Schnellansichtsformular in das Hauptformular eingebettet ist.  
   
@@ -179,7 +185,7 @@ Das Hauptformular wird von allen modellgesteuerten App-Clients verwendet. Dieses
 ## <a name="classic-forms"></a>Klassische Formulare  
  Das folgende Diagramm zeigt die Komponenten des Hauptformular an, die in der klassischen Präsentation verwendet werden.  
   
- ![Hauptformularelemente](media/elements.png "Hauptformularelemente")  
+ ![Hauptformularelement](media/elements.png "Hauptformularelement")  
   
  Die Formulare für aktualisierte Entitäten haben viele Komponenten der klassischen Formulare geerbt, es gibt aber Unterschiede.  
   
@@ -188,6 +194,6 @@ Das Hauptformular wird von allen modellgesteuerten App-Clients verwendet. Dieses
  Der Formularassistent wird für bestimmte Entitäten, z. B. `Article` verfügbar gemacht.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- [Erstellen und Gestalten von Formularen](create-design-forms.md)   
+ [Formulare erstellen und gestalten](create-design-forms.md)   
 
  

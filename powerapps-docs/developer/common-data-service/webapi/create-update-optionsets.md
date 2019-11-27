@@ -1,6 +1,6 @@
 ---
-title: Erstellen und Aktualisieren Sie Optionssätze mithilfe von Web-API (Common Data Service) | Microsoft Docs
-description: 'Informationen zum Erstellen und Aktualisieren einer Entität, mit der Common Data Service eine metadatengestützte Architektur verwendet, um die Flexibilität zu bieten, mit der benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute erstellt werden können.'
+title: Erstellen und Aktualisieren von Optionssätzen mit der Web-API (Common Data Service) | Microsoft-Dokumentation
+description: Informationen zum Erstellen und Aktualisieren einer Entität Common Data Service, die eine metadatengestützte Architektur verwendet, um die Flexibilität zu bieten, mit der benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute erstellt werden können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,19 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 caps.latest.revision: 15
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ce1c313c5c3b76f57d3ed2c04acba048a0772fe2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748499"
 ---
-
 # <a name="create-and-update-option-sets-using-the-web-api"></a>Erstellen und Aktualisieren von Optionssätzen mit der Web-API
 
 Normalerweise können Sie mithilfe von *globalen* Optionssätzen Felder festlegen, sodass andere Felder denselben Satz von Optionen nutzen können, die an einem Ort verwaltet werden. Anders als *lokale* Optionssätze, die nur für ein bestimmtes Attribut definiert werden, können Sie Globale Optionssätze wiederverwenden. Sie können auch in Anforderungsparametern auf eine ähnliche Weise wie eine Enumeration verwendet werden.  
@@ -32,10 +37,10 @@ Beim Definieren eines globalen Optionssatzes mithilfe einer POST-Anfrage an *[Or
   
 |Meldung|Web-API-Vorgang|  
 |--|--|
-|CreateOptionSet|Verwenden Sie `POST`-Anfragen an *[Organisation URI]*`/api/data/v9.0/GlobalOptionSetDefinitions`.|
-|DeleteOptionSet|Verwenden Sie `DELETE`-Anfragen an *[Organisation URI]*`/api/data/v9.0/GlobalOptionSetDefinitions(`*MetadataID*`)`.|
-|RetrieveAllOptionSets|Verwenden Sie `GET`-Anfragen an *[Organisation URI]*`/api/data/v9.0/GlobalOptionSetDefinitions`.| 
-|RetrieveOptionSet|Verwenden Sie `GET`-Anfragen an *[Organisation URI]*`/api/data/v9.0/GlobalOptionSetDefinitions(`*MetadataID*`)`.|   
+|CreateOptionSet|Verwenden Sie `POST`-Anfragen an *[Organisations-URI]*`/api/data/v9.0/GlobalOptionSetDefinitions`.|
+|DeleteOptionSet|Verwenden Sie `DELETE`-Anfragen an *[Organisations-URI]-*`/api/data/v9.0/GlobalOptionSetDefinitions(`*MetadataID*`)`.|
+|RetrieveAllOptionSets|Verwenden Sie `GET`-Anfragen an *[Organisations-URI]*`/api/data/v9.0/GlobalOptionSetDefinitions`.| 
+|RetrieveOptionSet|Verwenden Sie `GET`-Anfragen an *[Organisations-URI]-*`/api/data/v9.0/GlobalOptionSetDefinitions(`*MetadataID*`)`.|   
 
 
 Die folgende Tabelle enthält die Meldungen, die Sie mit lokalen und globalen Optionssätzen verwenden können.
@@ -46,7 +51,7 @@ Die folgende Tabelle enthält die Meldungen, die Sie mit lokalen und globalen Op
 |InsertOptionValue</br>Fügt eine neue Option in einen globalen Optionssatz ein.|<xref href="Microsoft.Dynamics.CRM.InsertOptionValue?text=InsertOptionValue Action" />| 
 |InsertStatusValue</br>Fügt eine neue Option in den globalen Optionssatz ein, der im `Status`-Attribut verwendet wird.|<xref href="Microsoft.Dynamics.CRM.InsertStatusValue?text=InsertStatusValue Action" />|
 |OrderOption</br>Ändert die relative Reihenfolge der Optionen in einem Optionssatz.|<xref href="Microsoft.Dynamics.CRM.OrderOption?text=OrderOption Action" />|
-|UpdateOptionSet|Verwenden Sie `PUT`-Anfragen mit <xref href="Microsoft.Dynamics.CRM.OptionSetMetadata?text=OptionSetMetadata EntityType" /> an *[Organisation URI]*`/api/data/v9.0/GlobalOptionSetDefinitions(`*MetadataID*`)/Microsoft.Dynamics.CRM.OptionSetMetadata`.<br />Für einen lokalen Optionssatz verwenden Sie *[Organisation URI]*`/api/data/v9.0/EntityDefinitions(`*metadataid*`)/Attributes(`*metadataid*`)/Microsoft.Dynamics.CRM.PicklistAttributeMetadata/OptionSet`.|
+|UpdateOptionSet|Verwenden Sie `PUT`-Anfragen mit einer <xref href="Microsoft.Dynamics.CRM.OptionSetMetadata?text=OptionSetMetadata EntityType" /> an *[Organisations-URI]*`/api/data/v9.0/GlobalOptionSetDefinitions(`*-MetadataID*`)/Microsoft.Dynamics.CRM.OptionSetMetadata`<br />Für einen lokalen Optionssatz verwenden Sie *[Organisations-URI]*`/api/data/v9.0/EntityDefinitions(`*Metadataid*`)/Attributes(`*Metadataid*`)/Microsoft.Dynamics.CRM.PicklistAttributeMetadata/OptionSet`.|
 |UpdateOptionValue</br>Aktualisiert eine Option in einem globalen Optionssatz.|<xref href="Microsoft.Dynamics.CRM.UpdateOptionValue?text=UpdateOptionValue Action" />|
 |UpdateStateValue</br>Fügt eine neue Option in den Optionssatz ein, der im `Status`-Attribut verwendet wird.|<xref href="Microsoft.Dynamics.CRM.UpdateStateValue?text=UpdateStateValue Action" />|
 

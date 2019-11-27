@@ -1,31 +1,36 @@
 ---
-title: Erstellen einer Siteübersicht für eine modellgesteuerte App in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine Siteübersicht für Ihre App erstellen'
+title: Erstellen einer modellgetriebenen App-Site Map für eine App in PowerApps | MicrosoftDocs
+description: Erfahren Sie, wie Sie eine Siteübersicht für Ihre App erstellen
 keywords: ''
 ms.date: 05/29/2018
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 2461bd71-6cb4-46b7-8d1f-6a0aa3dca809
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 18
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 852cacde56cc76dfd166471b9985f28b5b995c13
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700649"
 ---
-
 # <a name="tutorial-create-a-model-driven-app-site-map-for-an-app-using-the-site-map-designer"></a>Lernprogramm: Erstellen einer Siteübersicht für modellgesteuerte Apps mithilfe des Siteübersichtsdesigners
 
 In diesem Lernprogramm werden Sie mehrere Siteübersichtsaufgaben wie das Erstellen einer neuen Siteübersicht und Hinzufügen eines Bereichs, einer Gruppe und eines Unterbereichs ausführen.
@@ -46,12 +51,12 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
   
 ## <a name="create-a-site-map-for-an-app"></a>Erstellen einer App-Siteübersicht  
   
-1. Wählen Sie auf der App-Designer-Canvas im Bereich **Siteübersicht** die Schaltfläche **Den Siteübersichtdesigner öffnen** ![Schaltfläche Siteübersichts-Designer öffnen](media/dynamics365-open-designer.PNG "Schaltfläche Siteübersichts-Designer öffnen").  
+1. Wählen Sie auf der App Designer-Canvas im Bereich **Siteübersicht** **Siteübersichtdesigner öffnen** ![Schaltfläche Siteübersichtsdesigner öffnen](media/dynamics365-open-designer.PNG "Schaltfläche "Siteübersichts-Designer öffnen"").  
   
      Der Siteübersichtsdesigner wird geöffnet. Der Canvas wird mit einem Bereich, einer Gruppe und einem Unterbereich gefüllt. Wählen Sie die Bereichs-, Unterbereichs- oder die Gruppenkachel, um die Eigenschaften zu ändern.  
   
     > [!NOTE]
-    >  Beim Auswählen der Schaltfläche **Siteübersichts-Designer öffnen** in der ![Schaltfläche Siteübersichts-Designer öffnen](media/dynamics365-open-designer.PNG "Schaltfläche Siteübersichts-Designer öffnen") App-Designer-Canvas wird automatisch eine neue Siteübersicht erstellt (sofern es keine vorhandenen Siteübersicht gibt). Sie erhält denselben Namen wie den App-Namen und den gleichen eindeutigen Namen wie die App. 
+    >  Wenn Sie **Öffnen des Sitemap-Designers** ![Öffnen des Sitemap-Designers Schaltfläche](media/dynamics365-open-designer.PNG "Schaltfläche "Siteübersichts-Designer öffnen"") auf der App Designer Canvas auswählen, wird automatisch eine neue Sitemap erstellt (wenn es keine existierende Sitemap gibt), und die neue Sitemap erhält den gleichen Namen wie der App-Name und den gleichen eindeutigen Namen wie der eindeutige Name der App. 
 
    ![Siteübersicht auswählen](media/app-designer-sitemap-location.png "Siteübersicht auswählen") 
   
@@ -97,7 +102,7 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
 <a name="bkmk_AddArea"></a>   
 ## <a name="add-an-area-to-the-site-map"></a>Hinzufügen eines Bereichs zur Siteübersicht  
   
-1.  Wählen Sie in der Siteübersichtdesigner-Canvas die Schaltfläche **Hinzufügen** ![Hinzufügen-Schaltfläche im Designer](media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer"), und wählen Sie **Bereich**.  
+1.  Wählen Sie **Hinzufügen** ![Hinzufügen-Schaltfläche auf dem Designer](media/dynamics365-designer-addbutton.PNG "Schaltfläche im Designer hinzufügen") auf der Designer Canvas Sitemap-Designers, und wählen Sie dann **Bereich**.  
   
      oder  
   
@@ -119,9 +124,9 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
   
      Führen Sie unter **Erweitert** die folgenden Schritte aus:  
   
-    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache (Gebietsschema) für den Titel aus, geben Sie den Titel ein und wählen dann die Schaltfläche **Hinzufügen** ![Schaltfläche „Hinzufügen” im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche „Hinzufügen” im Siteübersichtsdesigner") aus. Sie können für beliebig viele Sprachen Titel für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur einen Titel pro Sprache nutzen.  
+    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache (Gebietsschema) für den Titel aus, geben Sie den Titel ein und wählen dann **Hinzufügen** ![Schaltfläche Hinzufügen im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche im Siteübersichtsdesigner hinzufügen"). Sie können für beliebig viele Sprachen Titel für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur einen Titel pro Sprache nutzen.  
   
-    - **Zusatzbeschreibung**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung aus, geben die Beschreibung ein und wählen dann die Schaltfläche **Hinzufügen** ![Schaltfläche „Hinzufügen” im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche „Hinzufügen” im Siteübersichtsdesigner") aus. Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
+    - **Weitere Beschreibung**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung aus, geben Sie die Beschreibung ein und wählen dann **Hinzufügen** ![Schaltfläche Hinzufügen im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche im Siteübersichtsdesigner hinzufügen"). Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
   
     - **URL**: Geben Sie die URL ein, um den Dynamics 365 for Outlook-Ordner zu erstellen, der den Bereich darstellt.  
   
@@ -129,7 +134,7 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
 ## <a name="add-a-group-to-the-site-map"></a>Hinzufügen einer Gruppe zur Siteübersicht  
   
 1.  Wählen Sie den Bereich im Siteübersicht-Designer-Canvas, zu dem Sie die Gruppe hinzufügen möchten.  
-2.  Klicken Sie auf die Schaltfläche **Hinzufügen** ![Hinzufügen-Schaltfläche im Designer](media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer"), und wählen Sie **Gruppe** aus.  
+2.  Wählen Sie **Hinzufügen** ![Schaltfläche Hinzufügen im Designer](media/dynamics365-designer-addbutton.PNG "Schaltfläche im Designer hinzufügen"), und dann **Gruppe**.  
   
      oder  
   
@@ -147,18 +152,18 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
   
      Führen Sie unter **Erweitert** die folgenden Schritte aus:  
   
-    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache (Locale) für den Titel, geben den Titel für die Gruppe ein und wählen dann die Schaltfläche **Hinzufügen** ![Schaltfläche Hinzufügen im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche Hinzufügen im Siteübersichtsdesigner"). Sie können für beliebig viele Sprachen Titel für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur einen Titel pro Sprache nutzen.  
+    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache (Gebietsschema) für den Titel aus, geben den Titel für die Gruppe ein und wählen dann **Hinzufügen** ![Schaltfläche Hinzufügen im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche im Siteübersichtsdesigner hinzufügen"). Sie können für beliebig viele Sprachen Titel für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur einen Titel pro Sprache nutzen.  
   
-    - **Weitere Beschreibungen**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung, geben die Beschreibung für die Gruppe ein und wählen dann die Schaltfläche **Hinzufügen** ![Schaltfläche Hinzufügen im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche Hinzufügen im Siteübersichtsdesigner"). Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
+    - **Weitere Beschreibung**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung aus, geben Sie die Beschreibung für die Gruppe ein und wählen dann **Hinzufügen** ![Schaltfläche Hinzufügen im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche im Siteübersichtsdesigner hinzufügen"). Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
   
-    - **URL**: Geben Sie die URL ein, um den Dynamics 365 for Outlook-Ordner zu erstellen, der die Gruppe darstellt.  
+    - **URL**: Geben Sie die URL ein, um den Dynamics 365 for Outlook-Ordner zu rendern, der die Gruppe darstellt.  
   
     - **Als Profil festlegen**: Aktivieren Sie dieses Kontrollkästchen, um anzugeben, ob diese Gruppe ein benutzerselektiertes Profil für den Arbeitsbereich darstellt. Die Gruppe, die als benutzerselektiertes Profil festgelegt ist, wird als Optionen in Ihren persönlichen Optionen angezeigt. Dies gilt nur für Gruppen im Bereich **Arbeitsbereich**.  
   
 <a name="bkmk_AddSubarea"></a>   
 ## <a name="add-a-subarea-to-a-group-in-the-site-map"></a>Hinzufügen eines Unterbereiches zu einer Gruppe in der Siteübersicht  
   
-1.  Wählen Sie in der Siteübersicht-Designer-Canvas die Schaltfläche **Hinzufügen** ![Hinzufügen-Schaltfläche im Designer](media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer"), und wählen Sie **Unterbereich**.  
+1.  Wählen Sie **Hinzufügen** ![Hinzufügen-Schaltfläche auf dem Designer](media/dynamics365-designer-addbutton.PNG "Schaltfläche im Designer hinzufügen") auf der Designer Canvas Sitemap-Designers, und wählen Sie dann **Unterbereich**.  
   
      oder  
   
@@ -194,11 +199,11 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
   
     - **Weitere Beschreibungen**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung, geben die Beschreibung für den Unterbereich ein und wählen **Hinzufügen**. Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
   
-    - **SKUs**: Wählen Sie die Versionen von Dynamics 365 Customer Engagement aus, die diesen Unterbereich anzeigen.  
+    - **SKUs**: Wählen Sie die Versionen von Dynamics 365 aus, die diesen Teilbereich anzeigen.  
   
     - **Client**: Wählen Sie den Typ des Clients aus, für den dieser Unterbereich angezeigt wird.  
   
-    - **Outlook-Verknüpfung**: Wählen Sie das Symbol aus, das in Dynamics 365 for Outlook angezeigt werden soll.  
+    - **Outlook-Verknüpfung**: Wählen Sie das in Dynamics 365 for Outlook anzuzeigende Symbol aus.  
   
     - **Offlineverfügbarkeit**: Aktivieren Sie das Kontrollkästchen, um diesen Unterbereich für Benutzer zur Verfügung zu stellen, wenn diese in Dynamics 365 for Outlook offline sind.  
   
@@ -228,11 +233,11 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
  
 |Siteübersichten|Unterstützte Clients|  
 |---------------|-----------------------|  
-|Neue Apps| Einheitlicher Oberfläche und Dynamics 365 Customer Engagement-Web-App |  
-|Siteübersicht für benutzerdefinierte Dynamics 365-Apps | Dynamics 365 Customer Engagement-Web-App und Dynamics 365 for Outlook |  
-|Standard-Unternehmens-Apps (Sales, Sales Hub, Customer Service, Customer Service Hub, Field Service, Project Service Automation)| Dynamics 365 Customer Engagement-Web-App und Einheitliche Oberfläche|  
+|Neue Apps| Einheitliche Oberfläche |  
+|Siteübersicht für benutzerdefinierte Dynamics 365-Apps | Legacy Web-Applikation und Dynamics 365 for Outlook. |  
+|Modelgesteuerte Anwendungen (Sales, Vertriebs-Hub, Customer Service, Kundenservice-Hub, Field Service, Project Service Automation)| Legacy Web-App und die einheitliche Benutzeroberfläche|  
  
   
 ### <a name="next-steps"></a>Nächste Schritte  
  [Erstellen oder Bearbeiten einer App](create-edit-app.md)   
- [Hinzufügen oder Bearbeiten von App-Komponenten](add-edit-app-components.md)
+ [App-Komponenten hinzufügen oder bearbeiten](add-edit-app-components.md)

@@ -1,6 +1,6 @@
 ---
-title: Ändern der Navigation innerhalb eines modellgesteuerten Appformulars in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie die Navigation in einem Formular ändern'
+title: Ändern der Navigation innerhalb eines modellgesteuerten App-Formulars in PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Navigation in einem Formular ändern
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 4c379202-9f0e-4003-a49c-efff53e7f79f
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0d2a8be9daa7a98ab0ddd838b5a1c7388f2eb21f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710329"
 ---
 # <a name="change-navigation-within-a-model-driven-app-form"></a>Ändern der Navigation innerhalb eines modellgesteuerten Appformulars
 
@@ -29,7 +35,7 @@ search.app:
   
  Alle Entitätsbeziehungen, die so konfiguriert werden, dass sie angezeigt werden, können im Formular-Editor überschrieben werden. Sie können auch Navigationslinks einschließen, um Webressourcen oder andere Websites per Formularnavigation anzuzeigen.  
   
- Detaillierte Anweisungen finden Sie unter [Erstellen oder Bearbeiten von Entitätsbeziehungen für Common Data Service](../common-data-service/create-edit-entity-relationships.md)  
+ Genaue Anweisungen finden Sie unter [Erstellen und Bearbeiten von Entitätsbeziehungen für Common Data Service](../common-data-service/create-edit-entity-relationships.md)  
   
  Zur Aktivierung der Bearbeitung der Navigation müssen Sie zuerst den Befehl **Navigation** in der Gruppe **Auswählen** auf der Registerkarte **Start** des Formular-Designers auswählen.  
  

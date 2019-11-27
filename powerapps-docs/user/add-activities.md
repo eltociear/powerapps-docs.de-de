@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.openlocfilehash: dee8b918efc60fed57cc6d8ca407e6cafe2b8060
+ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71924565"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73609901"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse 
 
@@ -34,16 +34,16 @@ Fügen Sie **Aktivitäten** der Pinnwand **Zeitachse** hinzu, um den Überblick 
 - Eine e-Mail mit einem angefügten Bild wird Inline mit dem Textkörper der e-Mail angezeigt.
 
   > [!div class="mx-imgBorder"]
-  > ![Zeitachsenansicht von Aktivitäten in PowerApps](media/TimelineViewOfActivity.png "Zeitachsenansicht von Aktivitäten in PowerApps")  
+  > ![Zeitachsen Ansicht von Aktivitäten in powerapps](media/TimelineViewOfActivity.png "Zeitachsen Ansicht von Aktivitäten in powerapps")  
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>Hinzufügen einer Aktivität über die Navigationsleiste
  
 Der schnellste Weg, eine Aktivität hinzuzufügen, ist das Verwenden der Verknüpfung auf der Navigationsleiste, die einem Datensatz zugeordnet wird. Sie können beispielsweise eine Telefonanrufaktivität erstellen und diese dann über das Feld **Bezug** einem Kontakt im System zuordnen.
 
-1. Klicken Sie auf der Navigationsleiste auf das **Pluszeichen** ![Schaltfläche „Datensatz erstellen“](media/create-record-button.png "Schaltfläche „Datensatz erstellen“"), und wählen Sie dann **Aktivitäten** aus. 
+1. Wählen Sie auf der Navigationsleiste die Schaltfläche **Pluszeichen** ![Create Record](media/create-record-button.png "Schaltfläche Datensatz erstellen")aus, und wählen Sie dann **Aktivitäten**aus. 
 
    > [!div class="mx-imgBorder"]
-   > ![Verknüpfung zum Hinzufügen einer Aktivität in PowerApps](media/QuickCreate.png "Verknüpfung zum Hinzufügen einer Aktivität in PowerApps")  
+   > ![Verknüpfung zum Hinzufügen einer Aktivität in powerapps](media/QuickCreate.png "Verknüpfung zum Hinzufügen einer Aktivität in powerapps")  
  
 2. Wählen Sie den Typ der Aktivität, die Sie hinzufügen möchten.
 
@@ -60,7 +60,7 @@ Der schnellste Weg, eine Aktivität hinzuzufügen, ist das Verwenden der Verknü
 
 
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen einer Telefonaktivität in PowerApps](media/addphonecall.png "Hinzufügen einer Telefonaktivität in PowerApps")
+   > ![Hinzufügen einer Telefon Aktivität in powerapps](media/addphonecall.png "Hinzufügen einer Telefon Aktivität in powerapps")
   
 3. Geben Sie den **Betreff** des Anrufs ein.
 
@@ -100,18 +100,21 @@ Um eine E-Mail-Aktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst d
 
 
     > [!NOTE]
-    > Um e-Mails in einer Konversations Ansicht aufzulisten, wechseln Sie zu **Einstellungen** > **Personalisierungs Einstellungen** > -Registerkarte "**e-Mail** ", und wählen Sie dann **e-Mail als Konversation auf der Zeitachse anzeigen** Weitere Informationen zu persönlichen Einstellungen finden Sie unter [Set Personal Options](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options). Nach der Aktivierung können Sie ein beliebiges Formular öffnen, das über eine Zeitachse verfügt, und Ihre e-Mail-Nachrichten werden in Konversations Threads mit der neuesten e-Mail gruppiert.
+    > Um e-Mails in einer Konversations Ansicht aufzulisten, wechseln Sie zu **Einstellungen** > **Personalisierungs Einstellungen** > Registerkarte " **e-Mail** ", und wählen Sie dann **e-Mail als Konversation auf der Zeitachse anzeigen** Weitere Informationen zu persönlichen Einstellungen finden Sie unter [Set Personal Options](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Nach der Aktivierung können Sie ein beliebiges Formular öffnen, das über eine Zeitachse verfügt, und Ihre e-Mail-Nachrichten werden in Konversations Threads mit der neuesten e-Mail gruppiert.
 
    > [!div class="mx-imgBorder"]
-   > ![Persönliche]Optionen festlegen legen Sie(media/emailsettings1.png "Persönliche Optionen fest") .
+   > ![Persönliche Optionen festlegen](media/emailsettings1.png "Festlegen persönlicher Optionen")
    
     > [!div class="mx-imgBorder"]
-    > ![Persönliche Optionen](media/emailsettings2.png "für") e-Mail-persönliche e-Mail-Optionen festlegen
+    > ![Persönliche e-Mail-Optionen festlegen](media/emailsettings2.png "Persönliche e-Mail-Optionen festlegen")
 
   
 ## <a name="add-an-appointment"></a>Hinzufügen eines Termins  
 
 Um eine Terminaktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst den Datensatz speichern, dem Sie die Aktivität hinzufügen.  
+
+> [!NOTE]
+> Wiederkehrende Termine werden in der Dynamics 365-App für Outlook, der Dynamics 365 for Phones-APP und beim Ausführen des Webclients für Modell gesteuerte apps auf dem Webbrowser des Mobiltelefons nicht unterstützt.
   
 1. Öffnen Sie den Datensatz, dem die Aktivität hinzugefügt werden soll. Öffnen Sie z.B. einen Kontaktdatensatz.
   
@@ -136,13 +139,13 @@ Sie können im Aktivitätsbereich auch ganz einfach Notizen hinzufügen.
 > Sie können eine Notiz hinzufügen, indem Sie im oberen Abschnitt der Pinnwand **Zeitachse** auf das **Pluszeichen** klicken.
 
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen einer Notiz](media/addnote.png "Hinzufügen einer Notiz")
+   > ![Hinweis hinzufügen](media/addnote.png "Hinweis hinzufügen")
 
 Nachdem die Notiz hinzugefügt wurde, können Sie sie löschen oder bearbeiten.
 
 
 > [!div class="mx-imgBorder"]
-> ![Aktualisieren einer Notiz](media/addnote2.png "Aktualisieren einer Notiz")
+> ![Hinweis aktualisieren](media/addnote2.png "Hinweis aktualisieren")
 
 ## <a name="add-a-post"></a>Hinzufügen eines Beitrags 
 
@@ -155,7 +158,7 @@ Nachdem die Notiz hinzugefügt wurde, können Sie sie löschen oder bearbeiten.
 4. Wenn Sie mit dem Ausfüllen des Formulars fertig sind, klicken Sie auf **Hinzufügen**, um den Beitrag zu speichern.
 
 > [!div class="mx-imgBorder"]
-> ![Aktualisieren eines Beitrags](media/post.png "Aktualisieren eines Beitrags")
+> ![Aktualisieren eines Beitrags](media/post.png "Hinzufügen eines Beitrags")
   
   Nachdem Sie den Beitrag gespeichert haben, wird er am oberen Rand der Pinnwand „Zeitachse“ angezeigt.
   
@@ -163,7 +166,7 @@ Nachdem die Notiz hinzugefügt wurde, können Sie sie löschen oder bearbeiten.
 
 Sie können die Pinnwand „Zeitachse“ aktualisieren, damit die neuesten Informationen angezeigt werden.
 
-Klicken Sie auf der Pinnwand **Zeitachse** auf die ![Schaltfläche „Mehr“ ](media/MoreButton.png "Schaltfläche „Mehr“") und dann auf **Zeitachse aktualisieren**.
+Klicken Sie in der **Zeitachse** auf ![weitere Schaltfläche](media/MoreButton.png "Weitere Schaltfläche") , und wählen Sie dann **Zeitachse aktualisieren**
 
 > [!div class="mx-imgBorder"]
 > ![Aktualisieren der Zeitachse](media/refresh.png "Aktualisieren der Zeitachse")
@@ -176,7 +179,7 @@ Sie können Aktivitäten, Notizen oder Beiträge auf der Pinnwand „Zeitachse�
 - Wählen Sie in der **Zeit** Achsen-Wand das Symbol Filter Bereichs Symbol **Öffnen** aus.
 
 > [!div class="mx-imgBorder"]
-> ![Filterbereich auf der Zeitachse](media/filterpane.png "Filterbereich auf der Zeitachse")
+> ![Filter Bereich in der Zeitachse](media/filterpane.png "Filter Bereich in der Zeitachse")
 
 
 ## <a name="manage-activities"></a>Verwalten von Aktivitäten
@@ -184,7 +187,7 @@ Sie können Aktivitäten direkt auf der Zeitachse verwalten, z.B. eine Aktivitä
 
 
 > [!div class="mx-imgBorder"]
-> ![Manage Activities.png](media/ManageActivities.png "ManageActivities.png")
+> ![Verwalten von Aktivitäten. png](media/ManageActivities.png "Manageactivities. png")
 
 
 

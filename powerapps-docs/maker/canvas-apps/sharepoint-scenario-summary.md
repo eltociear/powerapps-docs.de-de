@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 64a26fbd0e36937427bc679869d5bc942f254130
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 76d4a1ffdc569a3ccfc2567229c99136e744191a
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61531362"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899311"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Vollständige exemplarische Vorgehensweise für das komplette Szenario der SharePoint Online-Integration
 > [!NOTE]
-> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von powerapps, der Energie Automatisierung und der Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt – vom Erstellen von Apps und Flows bis hin zum Erstellen von Berichten und dem Einbetten dieser Berichte in SharePoint. Wir hoffen, dass Sie viel gelernt haben und jetzt wissen, wie diese Technologien ineinandergreifen, sodass Sie Canvas-Apps, Flows und Berichte entsprechend Ihren Anforderungen in SharePoint integrieren können. Vor dem Abschluss dieser Reihe möchten wir das Szenario vollständig durchgehen und betrachten, wie alle Teile zusammenwirken.
 
-## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Schritt 1: Fügen Sie ein Projekt mit der Liste der Projektanforderungen
+## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Schritt 1: Hinzufügen eines Projekts zur Liste „Project Requests“ (Projektanforderungen)
 1. Klicken oder tippen Sie in der Liste **Project Requests**  (Projektanforderungen) auf **Alle Elemente** und dann auf **Project Requests app** (Projektanforderungen-App).
    
     ![Ansicht „Project Requests app“ (Projektanforderungen-App)](./media/sharepoint-scenario-summary/09-00-01-view-app.png)
@@ -138,7 +138,7 @@ Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt 
    
     Wie bereits beim Erstellen dieser Visualisierung festgestellt, benötigen die Projekte, die Irvin Sayers zugewiesen sind, mehr Zeit bis zum Start, und zwei Projekte erfordern viel mehr Zeit als die restlichen Projekte.
 
-## <a name="step-6-respond-to-pending-project-delays"></a>Schritt 6: Reagieren Sie auf Verzögerungen bei ausstehenden Projekten
+## <a name="step-6-respond-to-pending-project-delays"></a>Schritt 6: Reagieren auf Verzögerungen bei ausstehenden Projekten
 1. Klicken oder tippen Sie im Power BI-Dienst auf das Dataset **project-analysis** und dann auf **JETZT AKTUALISIEREN**. Die Aktualisierung löst die Warnung aus, die wir für ausstehende Projekte eingerichtet haben.
    
     ![Dataset jetzt aktualisieren](./media/sharepoint-scenario-summary/09-06-01-refresh.png)
@@ -155,16 +155,16 @@ Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt 
     ![Benachrichtigungs-E-Mail von Power BI](./media/sharepoint-scenario-summary/09-06-04-email-powerbi.png)
 5. Überprüfen Sie den Posteingang der Person, die Sie im Flow für Datenwarnungen hinzugefügt haben (in unserem Fall Allan DeYoung).
    
-    ![Benachrichtigungs-E-Mail von Microsoft Flow](./media/sharepoint-scenario-summary/09-06-05-email-flow.png)
+    ![Warn-e-Mail von der Energie](./media/sharepoint-scenario-summary/09-06-05-email-flow.png)
 6. Da Sie jetzt über Informationen zu ausstehenden Projekten verfügen, können Sie zurückkehren und Projekte genehmigen, deren Bearbeitung durch Sie noch aussteht.
 
 Damit gelangen wir zum Abschluss der vollständigen exemplarischen Vorgehensweise und dieser Reihe von Tutorials. Wir empfehlen Ihnen den Besuch der folgenden Websites:
 
-* [PowerApps](http://www.powerapps.com/)
-* [Microsoft Flow](http://flow.microsoft.com)
-* [Power BI](http://www.powerbi.com)
+* [PowerApps](https://www.powerapps.com/)
+* [Energie Automatisierung](https://flow.microsoft.com)
+* [Power BI](https://www.powerbi.com)
 * [Poweruser-Community](https://powerusers.microsoft.com/)
-* [SharePoint](http://sharepoint.microsoft.com)
+* [SharePoint](https://sharepoint.microsoft.com)
 * [Technische Microsoft-Community](https://techcommunity.microsoft.com/)
 
 In den Kommentaren können Sie Feedback zu dieser Reihe geben und uns Vorschläge für Ergänzungen oder Ideen für zusätzliche Inhalte, die Ihnen die Arbeit mit den hier behandelten Technologien erleichtern, mitteilen.

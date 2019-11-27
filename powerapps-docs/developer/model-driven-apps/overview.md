@@ -1,6 +1,6 @@
 ---
-title: Entwicklerübersicht zu modellgestützten Apps in PowerApps | Microsoft Docs
-description: 'Erfahren Sie, wie Entwickler einen Wertzuwachs modellgestützter Apps bewirken können; Lernprogramm; Einführung für Entwickler modellgestützter Apps in PowerApps'
+title: Modellgetriebene Anwendungen in PowerApps - Übersicht für Entwickler | Microsoft Docs
+description: Erfahren Sie, wie Entwickler modellgetriebenen Anwendungen einen Mehrwert verleihen können; Tutorial; Einführung für Model-Apps-Entwickler in PowerApps.
 services: ''
 author: JimDaly
 manager: kvivek
@@ -14,25 +14,28 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 33d60e8f6359cee0a71e9f85fa4f97d432cacc94
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748459"
 ---
-
 # <a name="model-driven-apps-developer-guide"></a>Entwicklerhandbuch zu modellgestützten Apps
 
-PowerApps bietet Benutzern, Unternehmen, Partnern, unabhängigen Softwareherstellern (Independent Software Vendors, ISVs) und Systemintegratoren (SIs) eine leistungsfähige Plattform zum Erstellen von Unternehmens-Apps. Bei der neuen Ergänzung zu PowerApps in dieser Version handelt es sich um modellgestützte Apps, die mit dem neuen Common Data Service erstellt werden. Common Data Service enthält nun die Kernfunktionalität der Anwendungen. Mit modellgestützten Apps können Sie Apps erstellen, die die gleichen Erweiterbarkeitsfunktionen wie diese Anwendungen nutzen.
+PowerApps bietet Anwendern, Unternehmen, Partnern, unabhängigen Softwareanbietern (ISVs) und Systemintegratoren (SIs) eine leistungsstarke Plattform für den Aufbau von Branchenanwendungen. Die neue Ergänzung zu PowerApps in dieser Version sind modellgetriebene Anwendungen, die mit der neuen Common Data Service erstellt wurden. Common Data Service enthält nun die Kernfunktionalität der Anwendungen. Mit modellgestützten Apps können Sie Apps erstellen, die die gleichen Erweiterbarkeitsfunktionen wie diese Anwendungen nutzen.
 
-Modellgestützte Apps sind in erster Linie ein Ansatz der App-Entwicklung, der sich auf codefreie (No-Code) oder codearme (Low-Code) Komponenten konzentriert. Der Wertzuwachs, den Entwickler bereitstellen können, besteht in der Erweiterung der Anwendung. Bevor Sie mit dem Schreiben von Code beginnen, beginnen Sie mit [Informationen zum Entwicklen von modellgestützten Apps](/powerapps/maker/model-driven-apps/model-driven-app-components) und welche Optionen ohne Code angewendet werden können. 
-
-Wenn Sie bereits mit Dynamics 365 Customer Engagement-Apps vertraut sind, werden Sie feststellen, dass Sie sich diese Erfahrung zu Nutze machen können, um modellgestützte Apps zu entwickeln. Es sind einige neue Designer für Sie verfügbar, die Konzepte sind im Allgemeinen aber identisch.
+Modellgestützte Apps sind in erster Linie ein Ansatz der App-Entwicklung, der sich auf codefreie (No-Code) oder codearme (Low-Code) Komponenten konzentriert. Der Wertzuwachs, den Entwickler bereitstellen können, besteht in der Erweiterung der Anwendung. Bevor Sie mit dem Schreiben von Code beginnen, beginnen Sie mit [Informationen zum Entwicklen von modellgestützten Apps](/powerapps/maker/model-driven-apps/model-driven-app-components) und welche Optionen ohne Code angewendet werden können.
 
 > [!NOTE]
-> Modellgestützte Apps stellen eine Verbindung mit Common Data Service her. Weitere Informationen dazu, wie Entwickler einen Wertzuwachs auf Servicelevel bewirken, finden Sie unter [Entwicklerübersicht zu Common Data Service](../common-data-service/overview.md).
+> Modellgetriebene Apps verbinden sich mit Common Data Service. Informationen darüber, wie Entwickler auf Serviceebene Mehrwert schaffen können, finden Sie unter [Common Data Service Entwicklerübersicht](../common-data-service/overview.md).
 > Der Inhalt in diesem Abschnitt bezieht sich nur auf Erweiterungen, die Entwickler ausführen können, die auf die Erfahrung von Benutzern modellgestützter Apps zutreffen. 
 
-Wenn Sie noch keine Erfahrung mit Common Data Service-Anwendungen haben, bieten die Themen in diesem Abschnitt eine allgemeine Übersicht über die wichtigen Konzepte, um Entwicklern den Einstieg in die Arbeit mit modellgestützten Apps zu erleichtern. 
+Wenn Sie neu bei den Common Data Service-Anwendungen sind, bieten die Themen in diesem Abschnitt einen Überblick über die wichtigsten Konzepte, die Entwicklern den Einstieg in die Arbeit mit modellbasierten Anwendungen erleichtern. 
 
 > [!div class="nextstepaction"]
 > [Erste Schritte](supported-customizations.md)

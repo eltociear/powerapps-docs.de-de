@@ -1,6 +1,6 @@
 ---
-title: Tools von NuGet herunterladen (Common Data Service) Startseite | Microsoft Docs
-description: 'Laden Sie die Plug-in-Registrierung, Paketbereitstellung und andere Kerntools von Nuget herunter.'
+title: Tools herunterladen aus NuGet (Common Data Service) | Microsoft-Dokumentation
+description: Laden Sie die Plug-in-Registrierung, Paketbereitstellung und andere Kerntools von Nuget herunter.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -9,23 +9,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: feb3e634-7c60-46fd-8b92-3f5682b1570b
 author: shmcarth
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c7c548751f54a813116cd18112bbfaa5e7e3f3a0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748224"
 ---
-
-# <a name="download-tools-from-nuget"></a>Herunterladen von Tools von NuGet 
+# <a name="download-tools-from-nuget"></a>Herunterladen von NuGet 
 
 Sie können Tools herunterladen, die bei der Entwicklung von NuGet mithilfe des PowerShell-Skripts verwendet werden, das unten gefunden wird. Zu diesen Tools gehören:
 
-|Tool|NuGet-Paket|
+|Tool|NuGet Paket|
 |-|-|
 |Codeerstellungstool `CrmSvcUtil.exe`|[Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools)|
 |Configuration Migration-Tool `DataMigrationUtility.exe`|[Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf)|
@@ -104,5 +109,5 @@ Um die neueste Version der Tools abzurufen, wiederholen Sie diese Schritte.
 [Erstellen früh gebundener Entitätsklassen](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)<br />
 [Erstellen von Erweiterungen für das Codegenerierungstool](org-service/extend-code-generation-tool.md)<br />
 [Durchsuchen der Metadaten für die Organisation](browse-your-metadata.md)<br />
-[Bereitstellen von Paketen mit dem Dynamics 365 Package Deployer und Windows PowerShell](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
+[Bereitstellen von Paketen mithilfe von Dynamics 365 Package Deployer und Windows PowerShell](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
 [Registrieren eines Plug-Ins](register-plug-in.md)<br />

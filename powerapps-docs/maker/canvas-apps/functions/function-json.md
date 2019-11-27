@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba852093da05c3fa69cc47b219a0bef65908c170
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 13219dad84e693582ee649a11013d78b6fc69544
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71992625"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73538929"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="json-function-in-powerapps"></a>JSON-Funktion in powerapps
@@ -27,7 +27,7 @@ Generiert eine JSON-Text Zeichenfolge für eine Tabelle, einen Datensatz oder ei
 
 ## <a name="description"></a>Beschreibung
 
-Die **JSON** -Funktion gibt die JavaScript Object Notation (JSON)-Darstellung einer Datenstruktur als Text zurück, damit Sie für die Speicherung oder Übertragung über ein Netzwerk geeignet ist. [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) und [IETF RFC 8259](https://tools.ietf.org/html/rfc8259) beschreiben das Format, das häufig von JavaScript und anderen Programmiersprachen verwendet wird.
+Die **JSON** -Funktion gibt die JavaScript Object Notation (JSON)-Darstellung einer Datenstruktur als Text zurück, damit Sie für die Speicherung oder Übertragung über ein Netzwerk geeignet ist. [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) und [IETF RFC 8259](https://tools.ietf.org/html/rfc8259) beschreiben das Format, das häufig von JavaScript und anderen Programmiersprachen verwendet wird.
 
 Canvas-apps unterstützen die [Datentypen](data-types.md) , die in dieser Tabelle aufgeführt sind, mit Details zur Textdarstellung:
 
@@ -96,7 +96,7 @@ Wenn eine Spalte sowohl einen anzeigen Amen als auch einen logischen Namen aufwe
     > [!div class="mx-imgBorder"]
     > ![der citiesbycountry-Sammlung](media/function-json/cities-grouped.png)
 
-    Sie können diese Auflistung auch anzeigen, indem Sie **Datei** > **App-Einstellungen** > **Erweiterte Einstellungen** auswählen > **Ergebnis Ansicht der Formel Leiste aktivieren**, den Namen der Sammlung in der Bearbeitungs Leiste auswählen und dann der nach-unten-Pfeil neben dem Namen der Sammlung in der Bearbeitungs Leiste.
+    Sie können diese Auflistung auch anzeigen, indem Sie **Datei** > **App-Einstellungen** > **Erweiterte Einstellungen** auswählen > **Ergebnis Ansicht der Formel Leiste aktivieren**, den Namen der Sammlung in der Bearbeitungs Leiste auswählen und dann den Pfeil nach unten neben dem Namen der Sammlung in der Bearbeitungs Leiste auswählen.
 
     > [!div class="mx-imgBorder"]
     > ![Sammlung in der Ergebnis Ansicht der Formel Leiste](media/function-json/cities-grouped-resultview.png)

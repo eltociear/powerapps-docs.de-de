@@ -10,7 +10,7 @@ ms.author: nabuthuk
 author: Nkrb
 ms.openlocfilehash: 408633e1fd87c3c9517ec0984251bbbce056cc50
 ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/12/2019
 ms.locfileid: "72345380"

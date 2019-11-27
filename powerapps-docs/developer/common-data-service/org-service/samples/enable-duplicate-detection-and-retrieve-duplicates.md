@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Aktivieren und deaktivieren von Duplikaterkennung (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie Sie die Duplikaterkennung aktivieren und doppelte Datensätze abrufen.'
+title: 'Beispiel: Duplikaterkennung aktivieren und Duplikate abrufen (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie Sie die Duplikaterkennung aktivieren und doppelte Datensätze abrufen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 717fc8ea120c235dafe99d9385a8e8885dd841ec
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748749"
 ---
 # <a name="sample-enable-duplicate-detection-and-retrieve-duplicates"></a>Beispiel: Duplikaterkennung aktivieren und Duplikate abrufen
 
@@ -38,9 +44,9 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 1. Prüft auf aktuelle Version der Organisation.
 1. Die `Account`-Methode erstellt mehrere Datensätze, um Duplikate abzurufen.
 1. Die `RetrieveDuplicateRequest` Methode ruft die doppelten Datensätze ab. 
-1. Die `EnableDuplicateDetectionForOrg` Klasse aktiviert die  Duplikaterkennung für eine Organisation. 
+1. Die `EnableDuplicateDetectionForOrg` Klasse aktiviert die Duplikaterkennung für eine Organisation. 
 1. So aktivieren Sie die Duplikaterkennung: `IsDuplicateDetectionEnabled = true`.
-1. Ruft die `RetrieveEntityRequest`Methode zum Abrufen der Metadaten ab. 
+1. Die `RetrieveEntityRequest` Methode ruft die Entitätsmetadaten ab. 
 1. Die `IsDuplicateDetectionEnabled = true`, um den Duplikaterkennungshinweis zu aktualisieren.
 1. Die `UpdateEntityRequest` aktualisiert die Entität mit der Duplikaterkennung, die auf `true` festgelegt ist.
 

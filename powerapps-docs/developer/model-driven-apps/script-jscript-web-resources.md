@@ -1,6 +1,6 @@
 ---
 title: Script (JScript)-Webressourcen (modellgesteuerte Apps) | Microsoft Docs
-description: 'Infos zum Verwenden von JavaScript-Webressourcen (JavaScript), um eine Bibliothek von JavaScript-Funktionen zu erstellen, auf die von überall aus zugegriffen werden kann.'
+description: Infos zum Verwenden von JavaScript-Webressourcen (JavaScript), um eine Bibliothek von JavaScript-Funktionen zu erstellen, auf die von überall aus zugegriffen werden kann.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0dfaf5f41207106d217fa90f64bff1b3a2c4d124
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748445"
 ---
 # <a name="script-jscript-web-resources"></a>Webressourcen für Skripts (JScript)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/script-jscript-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/script-jscript-web-resources -->
 
 Verwenden Sie Script(JScript)-Webressourcen, um eine Bibliothek von JavaScript-Funktionen zu erstellen, auf die von überall aus zugegriffen werden kann.  
   
@@ -50,7 +56,7 @@ Verwenden Sie Script(JScript)-Webressourcen, um eine Bibliothek von JavaScript-F
  [Clientskripting mit JavaScript](client-scripting.md)   
  [Webressourcen](web-resources.md)   
  [Verwenden von Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   
- [Verwenden von Stylesheet (CSS)-Webressourcen](css-web-resources.md)   
+ [Verwenden von Stylesheet(CSS)-Webressourcen](css-web-resources.md)   
  [Verwenden von Daten (XML)-Webressourcen](data-xml-web-resources.md)   
  [Verwenden von Bild (JPG, PNG, GIF, ICO)-Webressourcen](image-web-resources.md)   
  [Verwenden von Stylesheet (XSL)-Webressourcen](stylesheet-xsl-web-resources.md)   

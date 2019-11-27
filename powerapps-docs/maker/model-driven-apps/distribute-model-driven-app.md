@@ -1,31 +1,36 @@
 ---
 title: Verteilen einer modellgesteuerten Anwendung mit einer Lösung | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine modellgesteuerte Anwendung mit Hilfe von Lösungen verteilen.'
+description: Erfahren Sie, wie Sie eine modellgesteuerte Anwendung mit Hilfe von Lösungen verteilen.
 keywords: ''
 ms.date: 08/06/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: e82e7f64-37ad-41e5-acd7-16309881c6a2
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 9
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 72f5ad809983738526a03f306c3479f53745d991
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755397"
 ---
-
 # <a name="distribute-a-model-driven-app-using-a-solution"></a>Verteilen einer modellgesteuerten Anwendung mit einer Lösung
 
 Modellgesteuerte Apps werden als Lösungskomponenten verteilt. Nachdem Sie eine modellgesteuerte App erstellt haben, können Sie diese für andere Umgebungen zur Verwendung verfügbar machen, indem Sie die App in eine Lösung verpacken und dann in eine ZIP-Datei exportieren. Wenn die Lösung (ZIP-Datei) erfolgreich in die Zielumgebung importiert wurde, kann die verpackte App verwendet werden. 
@@ -33,7 +38,7 @@ Modellgesteuerte Apps werden als Lösungskomponenten verteilt. Nachdem Sie eine 
 ## <a name="add-an-app-to-a-solution"></a>Eine App zu einer Lösung hinzufügen
 Um Ihre App zu verteilen, erstellen Sie eine Lösung, damit die Anwendung für den Export verpackt werden kann.
 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2. Wählen Sie **Lösungen** und dann **Neue Lösung** aus.
 3. Füllen Sie die Felder auf der Seite **Neue Lösung** aus und wählen Sie dann **Speichern**. Weitere Informationen: [Erstellen einer Lösung](../common-data-service/create-solution.md)
@@ -45,7 +50,7 @@ Um Ihre App zu verteilen, erstellen Sie eine Lösung, damit die Anwendung für d
 6. Wählen Sie auf der Seite **Lösung** **Speichern und Schließen** aus.
 
 ## <a name="export-a-solution"></a>Exportieren einer Lösung
-Um Ihre Anwendung so zu verteilen, dass sie in eine andere Umgebung importiert oder auf [Microsoft AppSource](https://appsource.microsoft.com/) zur Verfügung gestellt werden kann, exportieren Sie die Lösung in eine Zip-Datei. Anschließend kann die ZIP-Datei, die die Anwendung und die Komponenten enthält, in andere Umgebungen importiert werden.
+Um Ihre App so zu verteilen, dass sie in eine andere Umgebung importiert oder auf [Microsoft AppSource](https://appsource.microsoft.com/) zur Verfügung gestellt werden kann, exportieren Sie die Lösung in eine Zip-Datei. Anschließend kann die ZIP-Datei, die die Anwendung und die Komponenten enthält, in andere Umgebungen importiert werden.
 
 1. Öffnen Sie die [Lösungsseite](advanced-navigation.md#solutions). 
 2. Wählen Sie die zu exportierende Lösung aus und wählen Sie in der Symbolleiste **Exportieren**. 
@@ -61,7 +66,7 @@ Um Ihre Anwendung so zu verteilen, dass sie in eine andere Umgebung importiert o
 ## <a name="import-a-solution"></a>Importieren einer Lösung  
 Wenn Sie eine Lösungs-ZIP-Datei erhalten, die die App enthält, die Sie importieren möchten, öffnen Sie die Lösungskomponentenseite und importieren Sie die Lösung. Wenn die Lösung erfolgreich importiert wurde, kann die App in Ihrer Umgebung verwendet werden.
 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2. Wählen Sie **Lösungen** und dann in der Symbolleiste **Importieren**.
 3. Wählen Sie die Datei aus, die Sie importieren möchten, und klicken Sie dann auf **Weiter**.

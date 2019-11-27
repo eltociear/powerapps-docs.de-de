@@ -1,6 +1,6 @@
 ---
 title: Debugging von Workflowaktivitäten (Common Data Service) | Microsoft Docs
-description: 'Beschreibt, wie Sie Workflow-Aktivitäten mit dem Plug-In-Registrierungstool debuggen können.'
+description: Beschreibt, wie Sie Workflow-Aktivitäten mit dem Plug-In-Registrierungstool debuggen können.
 ms.custom: ''
 ms.date: 06/21/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 578b38161e887aeaafe098692ec67ecf4e1412ce
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748498"
 ---
 # <a name="debug-workflow-activities"></a>Workflowaktivitäten debuggen
 

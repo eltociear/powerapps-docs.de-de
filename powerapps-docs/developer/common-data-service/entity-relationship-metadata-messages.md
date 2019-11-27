@@ -1,6 +1,6 @@
 ---
-title: Entitätsbeziehungs-MetadatenMessages (Common Data Service) | Microsoft Docs
-description: 'In diesem Artikel sind die Meldungen aufgeführt, die Sie verwenden können, um Entitätsmetadatenbeziehungen mithilfe von Web API und Organisationservice zu erstellen, abzurufen, zu aktualisieren und zu löschen.'
+title: Meldungen für Entitätsbeziehungen-Metadaten (Common Data Service) | Microsoft-Dokumentation
+description: In diesem Artikel sind die Meldungen aufgeführt, die Sie verwenden können, um Entitätsmetadatenbeziehungen mithilfe von Web API und Organisationservice zu erstellen, abzurufen, zu aktualisieren und zu löschen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8e574711366f7f47cdce758867293a17cb01bf3e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748294"
 ---
 # <a name="entity-relationship-metadata-messages"></a>Entitätsbeziehungsmetadatennachrichten
 
@@ -32,4 +38,4 @@ In der folgenden Tabelle sind die Meldungen aufgeführt, die Sie verwenden könn
 ### <a name="see-also"></a>Siehe auch  
 
  [Entitätsbeziehungseignung](entity-relationship-eligibility.md)   
- [ Konfigurieren der Entitätsbeziehungen mit ableitendem Verhalten](configure-entity-relationship-cascading-behavior.md)
+ [Konfigurieren der Entitätsbeziehungen mit ableitendem Verhalten](configure-entity-relationship-cascading-behavior.md)

@@ -1,6 +1,6 @@
 ---
 title: Abrufen spezifischer Spalten für eine Entität über Query-APIs | MicrosoftDocs
-description: 'Abfragen, die zum Abrufen von Daten übermittelt werden, sollten bestimmte Spalten in der ColumnSet-Instanz enthalten, die der Abfrage zugeordnet ist, und nicht alle Spalten.'
+description: Abfragen, die zum Abrufen von Daten übermittelt werden, sollten bestimmte Spalten in der ColumnSet-Instanz enthalten, die der Abfrage zugeordnet ist, und nicht alle Spalten.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,11 +16,17 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
---- 
+- PowerApps
+- D365CE
+ms.openlocfilehash: 43e3cde28fb5f2d32f4372cf19c71f8639abee1a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748231"
+---
 # <a name="do-not-retrieve-entity-all-columns-via-query-apis"></a>Rufen Sie nicht alle Spalten der Entität über Query-APIs ab
 
 **Kategorie**: Leistung
@@ -48,7 +54,7 @@ Wenn Sie die <xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Micro
 
 Im Folgenden finden Sie einige Beispiele:
 
-- [ColumnSet(param string[] columns)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___) Konstruktorüberladung für <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>.
+- [ColumnSet(param string[] columns)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___)-Konstruktorüberladung für <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>.
 
     ```csharp
         var query = new QueryExpression("account")
@@ -59,7 +65,7 @@ Im Folgenden finden Sie einige Beispiele:
         var results = service.RetrieveMultiple(query);
     ```
 
-- [ColumnSet(param string[] columns)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___) Konstruktorüberladung für <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest>.
+- [ColumnSet(param string[] columns)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___)-Konstruktorüberladung für <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest>.
 
     ```csharp
         var entity = service.Retrieve("account", Guid.NewGuid(), new ColumnSet("name", "address1_city"));

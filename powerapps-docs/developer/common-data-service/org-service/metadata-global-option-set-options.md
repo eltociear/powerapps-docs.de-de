@@ -1,19 +1,25 @@
 ---
-title: 'Einfügen, Aktualisieren, Löschen und Anordnen von Optionen des globalen Optionssatzes (Common Data Service) | Microsoft Docs'
-description: 'Die Codebeispiele zeigen, wie Option im globalen Optionssatz eingefügt, aktualisiert, gelöscht und angeordnet werden.'
+title: Einfügen, Aktualisieren, Löschen und Anordnen von globalen Optionssatzoptionen (Common Data Service) | Microsoft-Dokumentation
+description: Die Codebeispiele zeigen, wie Option im globalen Optionssatz eingefügt, aktualisiert, gelöscht und angeordnet werden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac224afc2497d5c7600c95a37f61d5b72c8eb461
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748538"
 ---
 # <a name="insert-update-delete-and-order-global-option-set-options"></a>Einfügen, Aktualisieren, Löschen und Anordnen von globalen Optionssatzoptionen
 

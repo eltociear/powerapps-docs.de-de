@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Synchronisieren Sie Daten mit externen Systemen mithilfe des Änderungsnachverfolgungssystems (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie Änderungen aus einer Entität abgerufen werden und Daten mit externen Systemen synchronisiert werden.'
+title: 'Beispiel: Synchronisieren Sie Daten mit externen Systemen mithilfe des Änderungsnachverfolgungssystems (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie Änderungen aus einer Entität abgerufen werden und Daten mit externen Systemen synchronisiert werden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 53424095a8b07cb1b0544f592adc0abf139d6bb8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748709"
 ---
 # <a name="sample-synchronize-data-with-external-systems-using-change-tracking"></a>Beispiel: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung
 

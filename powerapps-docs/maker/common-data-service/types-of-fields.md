@@ -1,31 +1,37 @@
 ---
 title: Felddatentypen in Common Data Service | MicrosoftDocs
-description: 'Lernen Sie die verschiedenen Felddatentypen, die für Ihre Anwendung zur Verfügung stehen, kennen.'
+description: Lernen Sie die verschiedenen Felddatentypen, die für Ihre Anwendung zur Verfügung stehen, kennen.
 keywords: ''
-ms.date: 06/27/2018
+ms.date: 09/30/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 734b4ffa-5543-4f88-8517-299589f433f7
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cf8a30ae29712804cea2da42b0e448acc6286553
+ms.sourcegitcommit: e4b3b6b610f91a0c704a4fa87c6ec238aa81d25f
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2767237"
 ---
-# <a name="types-of-fields"></a>Typen von Feldern
+# <a name="types-of-fields"></a>Arten von Feldern
 
-Die Namen der Typen hängen vom verwendeten Designer ab. [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwendet eine Konvention, die die Art und Weise, wie die Daten formatiert werden, beinhaltet. Der Typ des Lösungsexplorers verwendet einen Namen, der mit einem Formatmodifikator auf den Datentyp der Datenbank ausgerichtet ist. Die folgende Tabelle enthält den entsprechenden `AttributeTypeDisplayName` API-Typ.
+Die Namen der Typen hängen vom verwendeten Designer ab. [PowerApps Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwendet eine Konvention, die die Art und Weise, wie die Daten formatiert werden, beinhaltet. Der Typ des Lösungsexplorers verwendet einen Namen, der mit einem Formatmodifikator auf den Datentyp der Datenbank ausgerichtet ist. Die folgende Tabelle enthält den entsprechenden `AttributeTypeDisplayName` API-Typ.
 
 |Typ Portal Daten |Typ Lösungs-Explorer| API-Typ|
 |--|--|--|
@@ -37,6 +43,7 @@ Die Namen der Typen hängen vom verwendeten Designer ab. [PowerApps-Portal](http
 |**Dezimalzahl**|**Dezimalzahl**|`DecimalType`|
 |**Dauer**|**Ganze Zahl**<br />*Dauer*-Format|`IntegerType`|
 |**Email**|**Einzelne Textzeile**<br />*E-Mail*-Format|`StringType`|
+|**Datei** | **Datei**   | `FileType`  |
 |**Gleitkommazahl**|**Gleitkommazahl**|`DoubleType`|
 |**Bild**|**Bild**|`ImageType`|
 |**Sprache**|**Ganze Zahl**<br />*Sprache*-Format|`IntegerType`|
@@ -58,8 +65,8 @@ Die Namen der Typen hängen vom verwendeten Designer ab. [PowerApps-Portal](http
 |**Ganze Zahl**|**Ganze Zahl**<br />*Kein*-Format|`IntegerType`|
 
 Weitere Beschreibungen für jeden Typ, den Sie hinzufügen oder bearbeiten können, finden Sie im Thema des entsprechenden Designers:
- - [Erstellen und bearbeiten Sie Felder für Common Data Service mit dem PowerApps-Portal: Felddatentypen](create-edit-field-portal.md#field-data-types)
- - [Erstellen und bearbeiten Sie Felder für Common Data Service mit dem PowerApps Lösungs-Explorer: Felddatentypen](create-edit-field-solution-explorer.md#field-data-types)
+ - [Felder für Common Data Service mit dem Portal PowerApps erstellen und bearbeiten: Feld Datentypen](create-edit-field-portal.md#field-data-types)
+ - [Erstellen und bearbeiten Sie Felder für Common Data Service mit dem PowerApps Solution Explorer: Feld Datentypen](create-edit-field-solution-explorer.md#field-data-types)
 
 Weitere Informationen darüber, wie Felddatentypen in der API definiert werden, finden Sie unter [Attributmetadaten](/powerapps/developer/common-data-service/entity-attribute-metadata)
 
@@ -152,16 +159,18 @@ Sie sollten jedoch wissen, dass sich nicht jede Suche so verhält. Es gibt, wie 
 <a name="BKMK_ImageFields"></a>
 
 ## <a name="image-fields"></a>Bildfelder  
-
 Verwenden Sie Bildfelder, um ein einzelnes Bild pro Datensatz in der Anwendung anzuzeigen. Jede Entität kann über ein Bildfeld verfügen. Sie können ein Bildfeld zu benutzerdefinierten Entitäten, jedoch nicht zu Standardentitäten hinzufügen. Einige Standardobjekte haben Bildfelder definiert.
   
-Selbst wenn eine Entität ein Bildfeld hat, erfordert die Anzeige dieses Bildes in eine modellgesteuerten App einen weiteren Schritt. In der Entitätsdefinition sind die Feldwerte für das **Primäre Bild** entweder **[Keine]** oder **Entitätsbild**. Wählen Sie **Entitätsbild**, um das Bild in der Anwendung anzuzeigen.  
+Obwohl eine Entität über ein Bildfeld verfügt, erfordert die Anzeige dieses Bildes in einer modellgesteuerten Anwendung, dass Sie zwei Einstellungen aktivieren. 
+- Die Standard-Entitätsdefinition **Primäres Bild** Eigenschaftswert muss auf **Standardbild** gesetzt sein. Benutzerdefinierte Objekte erfordern ein benutzerdefiniertes Bildfeld. Anschließend können Sie dieses Bildfeld für den Wert **Primäres Bild** in der benutzerdefinierten Entitätsdefinition auswählen.  
+- Das Entitätsformular, in dem das Bild angezeigt werden soll, muss die Eigenschaft **Bild im Formular anzeigen** aktiviert haben.  
   
 Wenn die Bildanzeige für eine Entität aktiviert ist, zeigen alle Datensätze, die kein Bild haben, ein Platzhalterbild an. Beispiel:
 
-![Platzhalterbild](../common-data-service/media/lead-entity-form.PNG)
+> [!div class="mx-imgBorder"] 
+> ![Standardentitätsbild](../common-data-service/media/account-record-default-image.png "Standardkontoentitätsbild")
   
-Benutzer können das Standardbild auswählen, um ein Bild von ihrem Computer hochzuladen. Bilder müssen kleiner als 5120 KB sein und eines der folgenden Formate haben:  
+Benutzer können das Standardbild auswählen, um ein Bild von ihrem Computer hochzuladen. Bilder müssen kleiner als 10 MB sein und in einem der folgenden Formate vorliegen:  
   
 - JPG
 - JPEG
@@ -173,8 +182,74 @@ Benutzer können das Standardbild auswählen, um ein Bild von ihrem Computer hoc
   
 Wenn das Bild hochgeladen wird, wird es in das .jpg-Format konvertiert, und alle heruntergeladenen Bilder verwenden auch dieses Format. Wenn ein animiertes .gif hochgeladen wird, wird nur der erste Rahmen gespeichert.  
   
-Wenn ein Bild hochgeladen wird, wird es auf eine maximale Größe von 144 x 144 Pixel geändert. Benutzer sollten die Bilder neu dimensionieren oder beschneiden, bevor Sie sie hochladen, damit sie problemlos diese Größe verwenden können. Alle Bilder werden quadratisch zugeschnitten. Wenn beide Seiten eines Bilds kleiner als144 Pixel sind, wird das Bild auf ein Quadrat mit den Seitenlängen der kleineren Seite zugeschnitten.  
+Wenn ein Bild hochgeladen wird, wird es als „Miniaturansicht“ auf eine maximale Größe von 144 x 144 Pixel geändert. Benutzer sollten die Bilder neu dimensionieren oder beschneiden, bevor Sie sie hochladen, damit sie problemlos diese Größe verwenden können. Alle Bilder werden quadratisch zugeschnitten. Wenn beide Seiten eines Bilds kleiner als144 Pixel sind, wird das Bild auf ein Quadrat mit den Seitenlängen der kleineren Seite zugeschnitten.  
+
+<!-- 
+By default, when an app user adds an image to display to a form or canvas app, the image displayed is the thumbnail image. To display a full image for a canvas app, see [Display a full-sized image on a canvas app form](../canvas-apps/display-full-image-on-form.md).
+
+
+### Add an image field to an entity using the PowerApps site
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Sign in to [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+2.  Select **Data** > **Entities** and then select the entity where you want to add an image field. 
+3. Select **Add field** on the command bar, enter the following properties, and then select **Done**: 
+   - **Display name**. Enter a friendly name for the field. 
+   - **Data type**. Select **Image**. 
+   - **Primary image**. When selected, the primary image field becomes the image field for the entity. You can only have one primary image for each entity. 
+   - **Maximum image size**. The maximum file size that an app user can upload to the record. 10,240 KB is the default maximum size and 10 MB is the maximum size limit. 
+   - **Can store full images**. When selected, in addition to the rescaled thumbnail image described earlier, the full image is stored when uploaded by the user for each record. Full size images are limited to 30 MB.  -->
+
+### <a name="add-image-support-for-a-form-in-a-custom-entity-using-solution-explorer"></a>Hinzufügen von Bildunterstützung für ein Formular in einer benutzerdefinierten Entität mit dem Lösungsexplorer
+1. Öffnen Sie den [Lösungs-Explorer](../model-driven-apps/advanced-navigation.md#solution-explorer). 
+2. Erweitern Sie im linken Navigationsbereich **Entitäten**, erweitern Sie die gewünschte benutzerdefinierte Entität und wählen Sie dann **Felder**. 
+3. Wählen Sie in der Symbolleiste **Neu**. 
+4. Wählen Sie im Abschnitt **Typ** in der Dropdown-Liste **Datentyp** **Bild**. 
+5. Geben Sie einen **Anzeige-Namen** ein, z.B. *Benutzerdefiniertes Entitätsbild*. 
+6. Füllen Sie die restlichen Felder entsprechend aus. Beachten Sie, dass die Felder **Name**, **Feldanforderung** und **Suchbar** nicht geändert werden können. Klicken Sie auf **Speichern und schließen**. 
+7. Stellen Sie bei der Entitätsdefinition neben der Eigenschaft **Primärbild** sicher, dass der Wert auf das benutzerdefinierte Bild gesetzt ist, das Sie im vorherigen Schritt erstellt haben. Wenn es nicht ausgewählt ist, wählen Sie es aus.  
+    > [!div class="mx-imgBorder"] 
+    > ![Primäre Bildeigenschaft ausgewählt](media/primary-image-property.png "Primäre Bildeigenschaft ausgewählt.").
+
+8.  Öffnen Sie das Formular, in dem Sie die Bildunterstützung wünschen, z.B. das Entity-Hauptformular. 
+9.  Wählen Sie im Ribbon des Formular-Editors **Formulareigenschaften**. 
+10. Wählen Sie auf der Seite **Formulareigenschaften** die Registerkarte **Anzeige**, wählen Sie **Bild im Formular** anzeigen, und wählen Sie dann **OK**. 
+
+    > [!div class="mx-imgBorder"] 
+    > ![Bild in der Formulareinstellung anzeigen](media/show-image-on-form.png "Bild in der Formulareinstellung anzeigen")
+
+11. Wählen Sie im Formular-Editor-Ribbon **Speichern** und dann **Veröffentlichen**. Schließen Sie den Formular-Editor. 
+
+App-Benutzer können nun das Bild auswählen, das auf dem Formular angezeigt werden soll. Wenn ein App-Benutzer das Formular für einen Datensatz öffnet, kann er das Bild auswählen, das er auf dem Formular anzeigen möchte. 
+
+> [!IMPORTANT]
+> Wenn es sich bei dem Datensatz um einen neuen Datensatz handelt, der nicht gespeichert wurde, wird der Fehler Invalid Argument zurückgegeben, wenn Sie versuchen, das Bild zu ändern. 
+
+### <a name="change-the-image-for-a-record"></a>Ändern des Bildes für einen Datensatz
+Sobald ein Entitätsformular ein Bildfeld hat, können App-Benutzer das Bild für einen betreffenden Datensatz ändern. 
+
+1. Öffnen Sie die App, die das Entitätsformular enthält, und wählen Sie dann das Bild auf dem Formular aus. 
+   > [!div class="mx-imgBorder"] 
+   > ![Standardentitätsbild](../common-data-service/media/default-entity-image-on-form.png "Standardentitätsbild")
+
+2. Wählen Sie **Bild hochladen**, suchen Sie nach dem Bild, das Sie auf dem Entitätsformular anzeigen möchten, und wählen Sie dann **Ändern**. Das Bild erscheint im Datensatz. 
+   > [!div class="mx-imgBorder"] 
+   > ![Geändertes Bild in einem Datensatz gespeichert](../common-data-service/media/custom-entity-icon-record.png "Geändertes Bild in einem Datensatz gespeichert")
+
 
 Weitere Informationen für Entwickler, die mit Bilddaten arbeiten:
 - [Entitätsmetadaten > Entitätsbilder](/powerapps/developer/common-data-service/entity-metadata#entity-images)
-- [Dynamics 365 Customer Engagement Entwicklerhandbuch: Bildattribute](/dynamics365/customer-engagement/developer/image-attributes)
+- [Bildattribute](/powerapps/developer/common-data-service/image-attributes)
+
+
+## <a name="file-fields"></a>Dateifelder
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+Momentan ist der Dateidatentyp nur für Canvas-Apps und -Flüsse verfügbar. 
+
+Das Feld **Datei** wird für das Speichern von Binärdaten verwendet. Die primäre vorgesehene Verwendung des Felds ist, ein einzelnes Bild, eine Notiz oder Anlage zu speichern. Das Speichern von anderen Formen von Binärdaten ist aber auch möglich. Ein oder mehrere Felder dieses Datentyps können einer vorhandenen anpassbaren Standardentität oder benutzerdefinierten Entität hinzugefügt werden.
+
+Die **Maximale Dateigröße** beträgt standardmäßig 32 MB und die größte Größe, die Sie festlegen können,128 MB. Die maximale Dateigröße kann für jedes Feld des Dateityps, der einer Entität hinzugefügt wird, einzeln festgelegt werden. 
+
+Weitere Informationen für Entwickler, die mit Dateidaten arbeiten: [Dateiattribute](/powerapps/developer/common-data-service/file-attributes)

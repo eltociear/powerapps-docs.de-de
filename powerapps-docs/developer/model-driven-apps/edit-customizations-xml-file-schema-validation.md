@@ -1,24 +1,29 @@
 ---
 title: Bearbeiten der Anpassungs-XML-Datei mit Schemaüberprüfung (modellgestützte Apps) | Microsoft Docs
-description: 'Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die als Lösung exportiert wird. Bestimmte Teile der Datei customizations.xml können manuell bearbeitet werden. Informationen zum Schema helfen dabei, sicherzustellen, dass alle Änderungen, die Sie vornehmen, gültig sind.'
+description: Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die als Lösung exportiert wird. Bestimmte Teile der Datei customizations.xml können manuell bearbeitet werden. Informationen zum Schema helfen dabei, sicherzustellen, dass alle Änderungen, die Sie vornehmen, gültig sind.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
 ms.custom:
-  - ''
+- ''
 ms.topic: article
 ms.assetid: b77d962e-6e3c-bd28-d03c-cf2e23cd742d
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 340e068b4d4ecaba2a83d4b39a0d8d9300cb2f84
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753614"
 ---
-
 # <a name="edit-the-customizations-xml-file-with-schema-validation"></a>Bearbeiten der XML-Datei für Anpassungen mit Schemaüberprüfung
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/edit-customizations-xml-file-schema-validation -->
@@ -48,13 +53,10 @@ Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die a
   
 - VisualizationDataDescription.xsd  
   
-  Diese Dateien sind ebenfalls auf dem lokalen [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] Common Data Service-Server installiert, unter: `[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`  
-  
-[!INCLUDE[cc_sdk_onpremises_note](../../includes/cc-sdk-onpremises-note.md)] CustomizationsSolution.xsd ist das Schema für die exportierte Lösung. Es enthält Verweise auf andere XSD-Dateien. Alle Dateien müssen sich im selben Ordner befinden.  
   
 <a name="BKMK_UseSchemaValidation"></a>   
 ## <a name="using-schema-validation"></a>Verwenden von Schemaüberprüfung  
- Da die exportierte XML-Datei eine Textdatei ist, können Sie sie mithilfe eines Text-Editors wie [!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] bearbeiten. Es wird jedoch unbedingt empfohlen, dass Sie eine Anwendung verwenden, die die Überprüfung von XSD-Schemas unterstützt, wie z. B. [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)]. XSD-Überprüfung in [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> bietet [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)]-Informationen und Schemaüberprüfung, um Fehler zu vermeiden.  
+ Da die exportierte XML-Datei eine Textdatei ist, können Sie sie mithilfe eines Text-Editors wie [!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] bearbeiten. Es wird jedoch unbedingt empfohlen, dass Sie eine Anwendung verwenden, die die Überprüfung von XSD-Schemas unterstützt, wie z. B. [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)]. XSD-Überprüfung in [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](https://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> bietet [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)]-Informationen und Schemaüberprüfung, um Fehler zu vermeiden.  
   
  Die XCD-Schemadateien, die verwendet werden, um die Datei customizations.xml in einer Lösung zu validieren, stehen unter  zur Verfügung. [!INCLUDE[schema_download](../../includes/schema-download.md)]. Stellen Sie sicher, dass Sie alle Dateien aus diesem Ordner in dasselbe Verzeichnis kopieren. Sie müssen die Datei customizations.xml mit der Datei CustomizationsSolution.xsd verknüpfen. Diese Datei enthält Verweise auf alle anderen XSD-Dateien im Ordner.  
   

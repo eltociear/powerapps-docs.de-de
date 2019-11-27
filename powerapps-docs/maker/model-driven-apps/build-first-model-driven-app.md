@@ -1,6 +1,6 @@
 ---
-title: Erstellen Sie Ihre erste Modell-angetriebene App von Beginn weg mit PowerApps | Microsoft Docs
-description: 'Erfahren Sie, wie Sie eine einfache modellgetriebene App erstellen'
+title: Erstellen Sie Ihre erste modellgesteuerte App komplett neu mit PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine einfache modellgetriebene App erstellen
 documentationcenter: ''
 author: Mattp123
 manager: kvivek
@@ -13,20 +13,25 @@ ms.component: model
 ms.date: 02/05/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9c41feb81fbe90c1ca675105fe898b667f61b2b9
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752534"
 ---
-
 # <a name="build-your-first-model-driven-app-from-scratch"></a>Erstellen Sie Ihre erste Modell-angetriebene App neu
-Modell-angetriebener App-Entwurf ist eine Komponenten-fokussierte Methode zur App-Entwicklung. In diesem Thema vereinfachen Sie, wie Sie eine Modell-angetriebene App erstellen, indem Sie eine der Standard-Informationsstrukturen verwenden, die in der PowerApps-Umgebung verfügbar ist.
+Modell-angetriebener App-Entwurf ist eine Komponenten-fokussierte Methode zur App-Entwicklung. In diesem Thema vereinfachen Sie, wie Sie eine modellgesteuerte App erstellen, indem Sie eine der Standardentitäten verwenden, die in Ihrer PowerApps-Umgebung verfügbar ist.
 
 > [!TIP]
 > Um alles über das Erstellen von Modell-angetriebene Apps zu erfahren, beginnen Sie hier: [Modell-angetriebene App-Komponenten verstehen](model-driven-app-components.md). 
 
 ## <a name="sign-in-to-powerapps"></a>Bei PowerApps anmelden
-Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an. Wenn Sie noch kein [!INCLUDE [powerapps](../../includes/powerapps.md)] Konto haben, wählen Sie den Link **Kostenlos beginnen** aus. 
+Melden Sie sich bei [PowerApps](https://make.powerapps.com/) an. Wenn Sie noch kein [!INCLUDE [powerapps](../../includes/powerapps.md)] Konto haben, wählen Sie den Link **Kostenlos beginnen** aus. 
 
 ## <a name="create-your-model-driven-app"></a>Erstellen Sie Ihre modellgesteuerte Anwendung
 
@@ -45,7 +50,7 @@ Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an. Wenn Sie noch ke
 Informationen zu den zusätzlichen App-Eigenschaften finden Sie unter [Eine App erstellen](create-edit-app.md#create-an-app)
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/create-new-app.png "Eine neue App erstellen") 
+    > ![](media/create-new-app.png "Create a new app") 
 
 
 ## <a name="add-components-to-your-app"></a>Fügen Sie der App zusätzliche Komponenten hinzu.

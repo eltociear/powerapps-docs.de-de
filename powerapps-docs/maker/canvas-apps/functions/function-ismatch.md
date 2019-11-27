@@ -35,7 +35,7 @@ Verwenden Sie **Match** , um die erste Text Zeichenfolge zu extrahieren, die ein
 
 | Spalte | Typ | Beschreibung |
 |----|----|----|
-| *benannte Teil&#8209;Übereinstimmung&#8209;oder Teil Übereinstimmungen* | Text | Jede benannte Teil Übereinstimmung weist eine eigene Spalte auf. Erstellen Sie eine benannte Teil Übereinstimmung mit **(? &lt;*Name*&gt;** ... **)** im regulären Ausdruck. Wenn eine benannte Teil Übereinstimmung denselben Namen hat wie eine der vordefinierten Spalten (unten), hat die unter Übereinstimmung Vorrang, und es wird eine Warnung generiert. Um diese Warnung zu vermeiden, benennen Sie die unter Übereinstimmung um. |
+| *benannte Teil&#8209;Übereinstimmung&#8209;oder Teil Übereinstimmungen* | Text | Jede benannte Teil Übereinstimmung weist eine eigene Spalte auf. Erstellen Sie eine benannte Teil Übereinstimmung mit **(?&lt;*Name*&gt;** ... **)** im regulären Ausdruck. Wenn eine benannte Teil Übereinstimmung denselben Namen hat wie eine der vordefinierten Spalten (unten), hat die unter Übereinstimmung Vorrang, und es wird eine Warnung generiert. Um diese Warnung zu vermeiden, benennen Sie die unter Übereinstimmung um. |
 | **Vollständiger Treffer** | Text | Alle übereinstimmenden Text Zeichenfolgen. |
 | **Startmatch** | Number | Die Anfangsposition der Entsprechung innerhalb der Eingabetext Zeichenfolge. Das erste Zeichen der Zeichenfolge gibt 1 zurück. | 
 | **Teil Übereinstimmungen** | Einspaltige Tabelle von Text (Spalten **Wert**) | Die Tabelle mit benannten und unbenannten Teil Übereinstimmungen in der Reihenfolge, in der Sie im regulären Ausdruck angezeigt werden. Im Allgemeinen sind benannte Teil Übereinstimmungen einfacher zu arbeiten und werden empfohlen. Verwenden Sie die Funktion " [**ForAll**](function-forall.md) " oder " [**Last**](function-first-last.md)( [**firstn**](function-first-last.md)( **...** ))", um mit einer einzelnen Teil Übereinstimmung zu arbeiten. Wenn im regulären Ausdruck keine untergeordneten Übereinstimmungen definiert sind, ist diese Tabelle vorhanden, aber leer. |
@@ -55,14 +55,14 @@ Der Schlüssel für die Verwendung dieser Funktionen besteht darin, das Abzuglei
 * Vordefinierte Muster, z.B. **Letter** (Buchstabe), **MultipleDigits** (mehrere Ziffern) oder **E-Mail**. (Die **Match**-Enumeration definiert diese Muster.)
 * Codes für reguläre Ausdrücke, z. **b. "\d + \s + \d +"** oder **"[a-z] +"** .
 
-Kombinieren Sie diese Elemente mithilfe des [Zeichenfolgenverkettungs-Operators **&** ](operators.md). **"abc" & Digit & "\s+"** ist beispielsweise ein gültiges Muster, das den Zeichen „a“, „b“ und „c“ gefolgt von einer Ziffer zwischen 0 und 9 entspricht, auf die mindestens ein Leerzeichen folgt.
+Kombinieren Sie diese Elemente mithilfe des [Zeichen folgen Verkettungs Operators **&** ](operators.md). **"abc" & Digit & "\s+"** ist beispielsweise ein gültiges Muster, das den Zeichen „a“, „b“ und „c“ gefolgt von einer Ziffer zwischen 0 und 9 entspricht, auf die mindestens ein Leerzeichen folgt.
 
 ### <a name="ordinary-characters"></a>Normales Zeichen
 Das einfachste Muster ist eine Sequenz von normalen Zeichen, die exakt übereinstimmen sollen.
 
 Bei Verwendung mit der **IsMatch** -Funktion stimmt die Zeichenfolge "Hello" z. b. genau mit dem Muster **"Hello"** überein. Nicht mehr und nicht weniger. Die Zeichenfolge „hello!“ entspricht nicht dem Muster aufgrund des Ausrufezeichens am Ende und, da die Groß-/Kleinschreibung für den Buchstaben "h" falsch ist. (Unter ["MatchOptions"](#match-options) finden Sie Informationen zu Modifizierungsmöglichkeiten dieses Verhaltens.)
 
-In der Mustersprache sind bestimmten Zeichen bestimmte Funktionen vorbehalten. Um diese Zeichen zu verwenden, versehen Sie das Zeichen entweder mit einem **\\ (umgekehrter** Schrägstrich), um anzugeben, dass das Zeichen buchstäblich verwendet werden soll, oder verwenden Sie eines der vordefinierten Muster, das weiter unten in diesem Thema beschrieben wird. Diese Tabelle enthält die Sonderzeichen:
+In der Mustersprache sind bestimmten Zeichen bestimmte Funktionen vorbehalten. Um diese Zeichen zu verwenden, versehen Sie das Zeichen entweder mit einem **\\** (umgekehrter Schrägstrich), um anzugeben, dass das Zeichen buchstäblich verwendet werden soll, oder verwenden Sie eines der vordefinierten Muster, das weiter unten in diesem Thema beschrieben wird. Diese Tabelle enthält die Sonderzeichen:
 
 | Sonderzeichen | Beschreibung |
 | --- | --- |
@@ -114,8 +114,8 @@ Reguläre Ausdrücke sind sehr leistungsstark; sie stehen in vielen Programmiers
 
 Reguläre Ausdrücke sind in unterschiedlichen Dialekten enthalten, und powerapps verwendet eine Variante des JavaScript-Dialekts. Eine Einführung in die-Syntax finden Sie unter [Syntax für reguläre Ausdrücke](https://msdn.microsoft.com/library/1400241x.aspx) . Benannte Teil Übereinstimmungen (manchmal auch benannte Erfassungs Gruppen genannt) werden unterstützt:
 
-- Benannte Teil Übereinstimmungen: **(? &lt;*Name*&gt;...)**
-- Benannte Rückverweise: **\\K @ no__t-2*Name*&gt;**
+- Benannte Teil Übereinstimmungen: **(?&lt;*Name*&gt;...)**
+- Benannte Rückverweise: **\\k&lt;*Name*&gt;**
 
 In der abgleichsaufgabentabelle weiter oben in diesem Thema wird jede **-Enumeration** in derselben Zeile wie der entsprechende reguläre Ausdruck angezeigt.
 
@@ -190,10 +190,10 @@ Der Benutzer gibt **Hello World** in **Texteingabe1** ein.
 
 | Formel | Beschreibung | Ergebnis |
 |--------|------------|-----------|
-| `Match( "Bob Jones <bob.jones@contoso.com>"; "<(?<email>" & Match.Email & ")>"` | Extrahiert nur den e-Mail-Anteil der Kontaktinformationen.  | {<br>e-Mail: &nbsp; "bob.jones@contoso.com",<br>Fullmatch: &nbsp; "&lt; @ no__t-2 >",<br>Teil Übereinstimmungen: &nbsp; [&nbsp; "bob.jones@contoso.com" &nbsp;],<br>Startmatch: 11:<br>}  
+| `Match( "Bob Jones <bob.jones@contoso.com>"; "<(?<email>" & Match.Email & ")>"` | Extrahiert nur den e-Mail-Anteil der Kontaktinformationen.  | {<br>e-Mail:&nbsp;"bob.jones@contoso.com",<br>Fullmatch:&nbsp;"&lt;bob.jones@contoso.com>",<br>Teil Übereinstimmungen:&nbsp;[&nbsp;"bob.jones@contoso.com"&nbsp;],<br>Startmatch: 11<br>}  
 | `Match( "Bob Jones <InvalidEmailAddress>"; "<(?<email>" & Match.Email & ")>"` | Extrahiert nur den e-Mail-Anteil der Kontaktinformationen. Es wurde keine juristische Adresse gefunden (es ist kein @-Zeichen vorhanden), sodass die Funktion *leer*ist. | *blank* |  
-| `Match( Language(); "(<language>\w{2})(?:-(?<script>\w{4}))?(?:-(?<region>\w{2}))?" )` | Extrahiert die sprach-, Skript-und Regions Teile des sprach Tags, das von der **[Language](function-language.md)** -Funktion zurückgegeben wird. Diese Ergebnisse spiegeln die USA ein. Weitere Beispiele finden Sie in der Dokumentation zur [ **sprach** Funktion](function-language.md) .  Der Operator **(?:** gruppiert Zeichen, ohne eine andere unter Übereinstimmung zu erstellen. | {<br>Sprache: "en",<br>Skript: *leer*, <br>AUM "USA",<br>Fullmatch: "en-US", <br>Teil Übereinstimmungen: ["en", "", "US"], <br>Startmatch: 1<br>} 
-| `Match( "PT2H1M39S"; "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" )` | Extrahiert die Stunden, Minuten und Sekunden aus einem Wert der ISO 8601-Dauer. Die extrahierten Zahlen sind immer noch in einer Text Zeichenfolge. Verwenden Sie die [**value**](function-value.md) -Funktion, um Sie vor mathematischen Operationen in eine Zahl zu konvertieren.  | {<br> Hours "2",<br>Minuten "1",<br>Vorsprung "39",<br>Fullmatch: "PT2H1M39S",<br>Teil Übereinstimmungen: &nbsp; [&nbsp; "2", &nbsp; "1", &nbsp; "39" &nbsp;],<br>Startmatch: 1<br>} |
+| `Match( Language(); "(<language>\w{2})(?:-(?<script>\w{4}))?(?:-(?<region>\w{2}))?" )` | Extrahiert die sprach-, Skript-und Regions Teile des sprach Tags, das von der **[Language](function-language.md)** -Funktion zurückgegeben wird. Diese Ergebnisse spiegeln die USA ein. Weitere Beispiele finden Sie in der Dokumentation zur [ **sprach** Funktion](function-language.md) .  Der Operator **(?:** gruppiert Zeichen, ohne eine andere unter Übereinstimmung zu erstellen. | {<br>Sprache: "en",<br>Skript: *leer*, <br>Region: "USA",<br>Fullmatch: "en-US", <br>Teil Übereinstimmungen: ["en", "", "US"], <br>Startmatch: 1<br>} 
+| `Match( "PT2H1M39S"; "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" )` | Extrahiert die Stunden, Minuten und Sekunden aus einem Wert der ISO 8601-Dauer. Die extrahierten Zahlen sind immer noch in einer Text Zeichenfolge. Verwenden Sie die [**value**](function-value.md) -Funktion, um Sie vor mathematischen Operationen in eine Zahl zu konvertieren.  | {<br> Stunden: "2",<br>Minuten: "1",<br>Sekunden: "39",<br>Fullmatch: "PT2H1M39S",<br>Teil Übereinstimmungen:&nbsp;[&nbsp;"2",&nbsp;"1",&nbsp;"39"&nbsp;],<br>Startmatch: 1<br>} |
 
 Sehen wir uns das letzte Beispiel an. Wenn Sie diese Zeichenfolge mithilfe der **[time](function-date-time.md)** -Funktion in einen Datums-/Uhrzeitwert konvertieren möchten, müssen Sie die benannten Teil Übereinstimmungen einzeln übergeben. Zu diesem Zweck können Sie die **[with](function-with.md)** -Funktion **verwenden, die für den zurückgegebenen** Datensatz verwendet wird:
 
@@ -216,7 +216,7 @@ Set( pangram; "The quick brown fox jumps over the lazy dog." )
 | `MatchAll( pangram; "the" )` | Sucht alle Übereinstimmungen von "The" in der Text Zeichenfolge, die in der **Pangram** -Variablen enthalten ist. Beim Test wird die Groß-/Kleinschreibung beachtet, daher wird nur die zweite Instanz von "The" gefunden. Die SubMatches-Spalte ist leer, da keine untergeordneten Übereinstimmungen definiert wurden.  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-the-one.png) |
 | `MatchAll( pangram; "the"; IgnoreCase )` | Sucht alle Übereinstimmungen von "The" in der Text Zeichenfolge, die in der **Pangram** -Variablen enthalten ist. In diesem Fall wird bei dem Test die Groß-/Kleinschreibung nicht beachtet, sodass beide Instanzen des Worts gefunden werden. Die SubMatches-Spalte ist leer, da keine untergeordneten Übereinstimmungen definiert wurden.  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-the-two.png) |
 | `MatchAll( pangram; "\b\wo\w\b" )` | Findet alle aus drei Buchstaben bestehenden Wörter mit einem "o" in der Mitte. Beachten Sie, dass "Brown" ausgeschlossen ist, weil es sich nicht um ein aus drei Buchstaben bestehender Wort handelt und daher nicht "\b" (Wort Grenze) entspricht.  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-fox-dog.png) |
-| `Match( pangram; "\b\wo\w\b\s\*(?<between>\w.+\w)\s\*\b\wo\w\b" )` | Entspricht allen Zeichen zwischen "Fox" und "Dog". | {<br>zwischen: &nbsp; "Sprünge @ no__t-1over @ no__t-2The @ no__t-3lazy",<br>Fullmatch: &nbsp; "Fox @ no__t-1jumps @ no__t-2over @ no__t-3the @ no__t-4lazy @ no__t-5dog",<br>Teil Übereinstimmungen: ["springt über den Lazy"],<br>Startmatch: Uhr<br> } |
+| `Match( pangram; "\b\wo\w\b\s\*(?<between>\w.+\w)\s\*\b\wo\w\b" )` | Entspricht allen Zeichen zwischen "Fox" und "Dog". | {<br>zwischen:&nbsp;"springt&nbsp;&nbsp;der&nbsp;Lazy",<br>Fullmatch:&nbsp;"Fox&nbsp;springt&nbsp;&nbsp;&nbsp;Lazy&nbsp;Dog",<br>Teil Übereinstimmungen: ["springt über den Lazy"],<br>Startmatch: 17<br> } |
 
 So zeigen Sie die Ergebnisse von **MatchAll** in einem Katalog an:
 

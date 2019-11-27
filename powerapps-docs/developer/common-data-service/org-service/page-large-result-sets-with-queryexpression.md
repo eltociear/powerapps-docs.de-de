@@ -1,19 +1,25 @@
 ---
-title: Auslagern von umfangreichen Ergebnissätzen mit QueryExpression (Common Data Service) | Microsoft Docs
-description: 'In Dynamics 365 (Online) Customer Engagement können Sie die Auslagerungscookiefunktion verwenden, um Auslagerung in einer einzelnen Anwendung für umfangreiche Datasets schneller auszuführen. Die Funktion ist in FetchXML und QueryExpression-Abfragen verfügbar.'
+title: Große Ergebnismengen mit QueryExpression (Common Data Service) | Microsoft Docs
+description: Verwenden Sie die Funktion Paging-Cookie, um das Paging in einer Anwendung für große Datensätze zu beschleunigen. Die Funktion ist in FetchXML und QueryExpression-Abfragen verfügbar.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f518f8b47347399d3670b89f67db8978f591430c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748392"
 ---
 # <a name="page-large-result-sets-with-queryexpression"></a>Auslagern von umfangreichen Ergebnissätzen mit QueryExpression
 

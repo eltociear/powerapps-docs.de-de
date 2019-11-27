@@ -1,25 +1,31 @@
 ---
-title: 'Verwenden von Webhooks, um externe Handler für Serverereignisse zu erstellen (Common Data Service) | Microsoft Docs'
-description: 'Sie können Daten zu Ereignissen senden, die auf dem Server für eine Webanwendung mit Webhooks auftreten. Webhooks ist ein einfaches HTTP-Muster zur Verbindung von Web-APIs und -diensten mit einem Veröffentlichungs-/Abonnementmodell. Webhooks-Absender benachrichtigen Empfänger über Ereignisse, indem sie Anfragen mit einigen Informationen zu den Ereignissen an Empfängerendpunkte senden.'
+title: Verwenden von Webhooks, um externe Handler für Serverereignisse zu erstellen (Common Data Service) | Microsoft Docs
+description: Sie können Daten zu Ereignissen senden, die auf dem Server für eine Webanwendung mit Webhooks auftreten. Webhooks ist ein einfaches HTTP-Muster zur Verbindung von Web-APIs und -diensten mit einem Veröffentlichungs-/Abonnementmodell. Webhooks-Absender benachrichtigen Empfänger über Ereignisse, indem sie Anfragen mit einigen Informationen zu den Ereignissen an Empfängerendpunkte senden.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 09/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ae74c23170feb73bc128dff74e4e842190d3d50e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748623"
 ---
 # <a name="use-webhooks-to-create-external-handlers-for-server-events"></a>Verwenden Sie Webhooks zum Erstellen externer Handler für Serverereignisse
 
 Mit Common Data Service können Sie Daten zu Ereignissen senden, die auf dem Server für eine Webanwendung mit Webhooks auftreten. Webhooks ist ein einfaches HTTP-Muster zur Verbindung von Web-APIs und -diensten mit einem Veröffentlichungs-/Abonnementmodell. Webhook-Absender benachrichtigen Empfänger über Ereignisse, indem sie Anfragen mit einigen Informationen zu den Ereignissen an Empfängerendpunkte senden.
 
-Mit Webhooks können Entwickler und ISVs Daten aus dem Customer Engagement in Ihren eigenen benutzerdefinierten Code integrieren, der von externen Diensten gehostet wird. Mit dem Webhook-Modell können Sie Ihren Endpunkt sichern, indem Sie einen Authentifizierungsheader oder Abfrage-Zeichenfolgenparameterschlüssel verwenden. Dies ist einfacher als das SAS-Authentifizierungsmodell, das Sie derzeit möglicherweise für die Azure Service Bus-Integration verwenden.
+Webhooks ermöglichen es Entwicklern und ISVs, Common Data Service-Daten mit ihrem eigenen benutzerdefinierten Code zu integrieren, der auf externen Diensten gehostet wird. Mit dem Webhook-Modell können Sie Ihren Endpunkt sichern, indem Sie einen Authentifizierungsheader oder Abfrage-Zeichenfolgenparameterschlüssel verwenden. Dies ist einfacher als das SAS-Authentifizierungsmodell, das Sie derzeit möglicherweise für die Azure Service Bus-Integration verwenden.
 
 Beim Entscheiden zwischen dem Webhook-Modell und der Azure Service Bus-Integration sollten Sie Folgendes berücksichtigen:
 
@@ -364,7 +370,7 @@ Wenn Ihr Webhook registriert ist, um asynchron ausgeführt zu werden, können Si
 [Schreiben eines Plug-Ins](write-plug-in.md)<br />
 [Registrieren eines Plug-Ins](register-plug-in.md)<br />
 [Asynchroner Service in Common Data Service](asynchronous-service.md)<br />
-[Beispiel: Benutzerdefiniertes Azure-fähiges Plug-In](/org-service/samples/azure-aware-custom-plugin.md)<br />
+[Beispiel: Benutzerdefiniertes Azure-fähiges Plug-In](org-service/samples/azure-aware-custom-plugin.md)<br />
 [Beispiel: Azure-fähige benutzerdefinierte Workflowaktivität](org-service/samples/azure-aware-custom-workflow-activity.md)<br />
 [Azure-Funktionen](https://azure.microsoft.com/services/functions/)<br />
 [ServiceEndPoint-Entität](reference/entities/serviceendpoint.md)<br />

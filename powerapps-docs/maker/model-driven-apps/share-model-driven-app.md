@@ -1,6 +1,6 @@
 ---
-title: Gemeinsame Nutzung einer modellgesteuerten Anwendung mit PowerApps | Microsoft Docs
-description: 'Erfahren Sie, wie eine modellgestützte App freigeben'
+title: Gemeinsame Nutzung einer modellgesteuerten App mit PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie eine modellgestützte App freigeben
 documentationcenter: ''
 author: Mattp123
 manager: kvivek
@@ -13,13 +13,18 @@ ms.component: model
 ms.date: 03/19/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1c44bd0ce65bd995d79f291bd6af36193c4165a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711077"
 ---
-
-# <a name="share-a-model-driven-app-with-powerapps"></a>Gemeinsame Nutzung einer modellgesteuerten Anwendung mit PowerApps
+# <a name="share-a-model-driven-app-with-powerapps"></a>Gemeinsame Nutzung einer modellgesteuerten App mit PowerApps
 
 [!INCLUDE [powerapps](../../includes/powerapps.md)] Apps verwenden rollenbasierte Sicherheit für die gemeinsame Nutzung. Das grundlegende Konzept der rollenbasierten Sicherheit besteht darin, dass eine Sicherheitsrolle Privilegien enthält, die eine Reihe von Aktionen definieren, die innerhalb der Anwendung ausgeführt werden können. Alle App-Benutzer müssen einer oder mehreren vordefinierten oder benutzerdefinierten Rollen zugeordnet sein. Oder Rollen können auch Teams zugeordnet werden. Wenn ein Benutzer oder ein Team einer dieser Rollen zugeordnet ist, erhält die Person oder das Teammitglied die mit dieser Rolle verbundenen Berechtigungen. 
 
@@ -119,7 +124,7 @@ Als nächstes müssen der App eine oder mehrere Sicherheitsrollen zugewiesen wer
 1. Im Dialogfenster **Diese Anwendung freigeben**, unter **Link zu Ihrer App direkt für Benutzer freigeben** kopieren Sie die angezeigte URL.
  
 2. Wählen Sie **Schließen** aus.
-3. Fügen Sie die URL der Anwendung an einem Ort ein, damit Ihre Benutzer darauf zugreifen können, z. B. indem Sie sie auf einer SharePoint-Website veröffentlichen oder per E-Mail versenden.
+3. Fügen Sie die App-URL an einem Ort ein, damit Ihre Benutzer darauf zugreifen können, z. B. indem Sie sie auf einer SharePoint-Website veröffentlichen oder per E-Mail versenden.
 
 > [!div class="mx-imgBorder"] 
 > ![Link freigeben](media/share-model-driven-app/share-model-driven-URL.PNG)

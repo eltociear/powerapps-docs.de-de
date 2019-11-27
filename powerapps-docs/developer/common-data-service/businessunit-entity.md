@@ -1,6 +1,6 @@
 ---
-title: BusinessUnit-Entität (Common Data Service) | Microsoft Docs
-description: 'Eine Organisation in Common Data Service, wie eine Beteiligungsgesellschaft oder eine Gesellschaft, besteht aus Unternehmenseinheiten.'
+title: BusinessUnit-Entität (Common Data Service) | Microsoft-Dokumentation
+description: Eine Organisation in Common Data Service, wie eine Beteiligungsgesellschaft oder eine Gesellschaft, besteht aus Unternehmenseinheiten.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 82ee0de5cf08c36d19afd5e9e7527390107367fc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748436"
 ---
 # <a name="businessunit-entity"></a>BusinessUnit-Entität
 

@@ -1,6 +1,6 @@
 ---
-title: Authentifizierung beim Common Data Service mit der Web-API (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie über die unterschiedlichen Wege, wie die Authentifizierung zu verwalten, wenn Sie die Web-API verwenden.'
+title: Authentifizieren bei Common Data Service mit Web-API (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie über die unterschiedlichen Wege, wie die Authentifizierung zu verwalten, wenn Sie die Web-API verwenden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: susikka
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 767f39d4-6a8e-48f0-bf7d-69ea1191acef
 caps.latest.revision: 8
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cdd453145c5b30642669e3a7a2b6a052753117a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748363"
 ---
-# <a name="authenticate-to-common-data-service-with-the-web-api"></a>Authentifizierung beim Common Data Service mit der Web-API
+# <a name="authenticate-to-common-data-service-with-the-web-api"></a>Authentifizieren von Common Data Service mit der Web-API
 
 
 Sie müssen OAuth, wie in [OAuth mit Common Data Service verwenden](../authenticate-oauth.md) beschrieben verwenden.
@@ -36,7 +42,7 @@ Wenn Sie eine Einzelseitenanwendung (SPA) mithilfe von JavaScript erstellen, kö
   
 ### <a name="see-also"></a>Siehe auch
  
-[Common Data Service-Web-API verwenden](overview.md)<br />
+[Verwenden der Common Data Service-Web-API](overview.md)<br />
 [Internet API-Typen und -Vorgänge](web-api-types-operations.md)<br />
 [Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)<br />
 [OAuth mit Common Data Service verwenden](../authenticate-oauth.md)<br />

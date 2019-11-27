@@ -1,28 +1,33 @@
 ---
 title: Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps | MicrosoftDocs
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 08/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 42882b630cfe34cc17e310b32c9c072f0c2d5d8a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758454"
 ---
-
 # <a name="guidelines-on-working-with-embedded-canvas-apps"></a>Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps
 Dieses Thema enthält Richtlinien für die Arbeit mit eingebetteten Canvas-Apps sowie hilfreiche Tipps zur Fehlerbehebung bei Problemen, die auftreten können.
 
@@ -34,7 +39,7 @@ Dieses Thema enthält Richtlinien für die Arbeit mit eingebetteten Canvas-Apps 
 -   Wenn Sie eine eingebettete Canvas-App zu einem modellgesteuerten Formular hinzuzufügen, verwenden Sie immer ein Pflichtfeld, das garantiert einen Wert hat. Wenn Ihr Feld keinen Wert hat, wird Ihre eingebettete Canvas-App nicht aktualisiert, wenn sich die Daten auf dem Hostmodell-basierten Formular ändern.
 -   Das Veröffentlichen eines modellgestützten Formulars veröffentlicht nicht auch die eingebettete Canvas-App.
      - Eingebettete Canvas-Anwendungen müssen unabhängig vom Hostmodell-basierten Formular veröffentlicht werden. Weitere Informationen: [Veröffentlichen einer App](../canvas-apps/save-publish-app.md#publish-an-app).
--   Wenn das Öffnen von PowerApps Studio zum Erstellen oder Bearbeiten einer eingebetteten Canvas-App über die Schaltfläche **Anpassen** in den Eigenschaften der Canvas-App-Steuerung aufgrund eines Popupblockers des Webbrowsers blockiert wird, müssen Sie die Website web.powerapps.com aktivieren oder den Popup-Blocker vorübergehend deaktivieren und dann **Anpassen** erneut auswählen.
+-   Wenn das Öffnen von PowerApps Studio zum Erstellen oder Bearbeiten einer eingebetteten Canvas-App über die Schaltfläche **Anpassen** in den Eigenschaften der Canvas-App-Steuerungseigenschaften aufgrund eines Popupblockers des Webbrowsers blockiert wird, müssen Sie die Website web.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann **Anpassen** erneut auswählen.
 -   Eingebettete Canvas-Apps werden beim Erstellen eines neuen Datensatzes nicht angezeigt, da sie einen Datensatz-Kontext benötigen, der an sie übergeben werden muss.
 -   Das ModelDrivenFormIntegration.Item-Objekt ist schreibgeschützt. 
      - Um Daten zurückzuschreiben, müssen Sie den Common Data Service-Connector verwenden. Weitere Informationen: [Common Data Service](/connectors/commondataservice/)
@@ -43,6 +48,13 @@ Dieses Thema enthält Richtlinien für die Arbeit mit eingebetteten Canvas-Apps 
     - Die Unterstützung für das Einbetten einer vorhandenen Canvas-App in einem modellgesteuerten Formular mithilfe der App-ID wird in einem zukünftigen Update eingeführt.
 - Wenn Sie ein modellgetriebenes Formular mit einer eingebetteten Canvas-Applikation anzeigen und eine Fehlermeldung mit der Aufschrift "Leider konnte diese Anwendungs-ID nicht gefunden werden" sehen, stellen Sie sicher, dass die eingebettete Canvas-App in der gleichen Lösung wie das modellgestützte Formular ist.
 - Wenn Sie ein modellgestütztes Formular mit einer eingebetteten Canvas-App anzeigen und Ihnen wird eine Fehlermeldung angezeigt, die lautet: "Anscheinend haben Sie keinen Zugriff auf diese App. Bitten Sie den Besitzer, sie mit Ihnen zu teilen", stellen Sie sicher, dass der Autor die eingebettete Canvas-App mit Ihnen geteilt hat. Weitere Informationen: [Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md).
+- Das Hinzufügen einer Canvas-App zum Subgrid-Control ist nicht mehr möglich.
+    - In der Vorschau-Version konnten die Hersteller eine Canvas-App auf einem Sub-Grid-Control hinzufügen. Da die Canvas-Applikation in modellgetriebene Formulare eingebettet ist, die jetzt allgemein verfügbar sind, wird das Hinzufügen einer eingebetteten Canvas-Applikation zu einem modellgetriebenen Formular im Feld optimiert. 
+    - Dies erleichtert es den Herstellern, da sie sich nicht im Voraus entscheiden müssen, ob sie den aktuellen (Hauptformular-)Datensatz als Datenkontext oder eine Liste von Datensätzen, die sich auf den aktuellen (Hauptformular-)Datensatz beziehen, übergeben wollen. 
+    - Der Ersteller beginnt immer mit einem Feld und kann sowohl auf den aktuellen (Hauptformular-)Datensatz als auch auf eine Liste von Datensätzen zugreifen, die sich auf den aktuellen (Hauptformular-)Datensatz beziehen.
+    - Um auf die Liste der Bezugsdatensätze in der Canvas-App zuzugreifen, können Hersteller den Common Data Service-Konnektor und die Funktion [Filter](../canvas-apps/functions/function-filter-lookup.md) mit der Funktion [Verbessern der Erfahrung mit Datenquellen und der in der Canvas-App aktivierten Fähigkeit Common Data Service-Ansichten](https://powerapps.microsoft.com/blog/improved-data-source-selection-and-common-data-service-views/) verwenden.  
+    Um beispielsweise auf die Ansicht *Aktive Kontakte* der Entität *Kontakte* zuzugreifen, können Hersteller verwenden: *Filter(Kontakte, 'Kontakte (Ansichten)'.'Aktive Kontakte')*.
+    - Bestehende Canvas-Anwendungen, die das Subgrid-Control verwenden, funktionieren weiterhin. Wir empfehlen jedoch, diese Anwendungen zu migrieren, um stattdessen ein Feld zu verwenden. Mehr Informationen: [Migrieren von eingebetteten Canvas-Anwendungen auf modellgesteuerten Formularen, die eine Liste von Datensätzen verwenden, die sich auf den aktuellen (Haupt-)Datensatz](embedded-canvas-app-migrate-from-preview.md#migrating-embedded-canvas-apps-on-model-driven-forms-that-use-a-list-of-records-related-to-the-current-main-form-record) beziehen, für Details.
 
 ## <a name="enable-an-embedded-canvas-app"></a>Aktivieren einer eingebetteten Canvas-App
 1. Wählen Sie das Feld aus, das so angepasst ist, dass es als eingebettete Canvas-App angezeigt wird.
@@ -58,6 +70,12 @@ Dieses Thema enthält Richtlinien für die Arbeit mit eingebetteten Canvas-Apps 
 
 ## <a name="known-issues-and-limitations-with-embedded-canvas-apps"></a>Bekannte Probleme und Einschränkungen bei eingebetteten Canvas-Anwendungen
 - Das benutzerdefinierte Canvas-App-Steuerelement wird nur für die Verwendung mit dem **Web** Clienttyp unterstützt. Derzeit werden **Telefon** und **Tablet** Clienttypen nicht unterstützt.
+- Das ModelDrivenFormIntegration Control liefert keinen Wert für Felder einer verwandten Entität. 
+  - Wenn das ModelDrivenFormIntegration Control beispielsweise mit der Entität Accounts verbunden ist, verwenden Sie *ModelDrivenFormIntegration.Item,'Primary Contact','Full Name'* gibt keinen Wert zurück. 
+  - Um auf Felder einer verwandten Entität zuzugreifen, können Hersteller einen der hier aufgeführten Ausdrücke verwenden:
+    - *LookUp(Accounts, Account = GUID(First(ModelDrivenFormIntegration.Data).ItemId)).'Primary Contact'.'Full Name'*  
+      - *ItemId* ist zur Erstellungszeit leer, wird aber zur Laufzeit einen Wert haben.
+    - *LookUp(Accounts, Account = ModelDrivenFormIntegration.Item.Account).'Primary Contact'.'Full Name'* (Dieser Ausdruck ist einfacher zu lesen, aber der vorherige Ausdruck wird etwas besser funktionieren.)
 - Sie können das **Canvas-App**-Recht in einer Sicherheitsrolle nicht verwenden, um App-Benutzern Zugriff auf eine eingebettete oder eigenständige Canvas-App zu gewähren. Weitere Informationen zum Teilen einer eingebetteten Canvas-App finden Sie unter: [Eine eingebettete Canvas-App teilen](share-embedded-canvas-app.md).
 - Wenn Sie die gleichen Daten zurückschreiben, die auch im Hostmodell-basierten Formular angezeigt werden, zeigt das Formular weiterhin alte Daten an, bis es aktualisiert wird. Eine einfache Möglichkeit dazu ist Verwendung der [RefreshForm](embedded-canvas-app-actions.md#refreshformshowprompt)-Methode.
 

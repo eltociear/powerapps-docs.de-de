@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 73c5a681df915beecd52b3d813178491e5832bff
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754575"
 ---
 # <a name="form-xml-schema"></a>Formular-XML-Schema
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/form-xml-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/form-xml-schema -->
 
 Folgendes ist eine Schemadefinition für Formularpassungen für modellgesteuerte Apps. Weiere Informationen finden Sie unter [Entitätsformular anpassen](customize-entity-forms.md) [!INCLUDE[schema_download](../../includes/schema-download.md)].  
   
@@ -25,7 +31,7 @@ Folgendes ist eine Schemadefinition für Formularpassungen für modellgesteuerte
   
 ```xml  
 <?xml version="1.0"?>  
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema"  
            elementFormDefault="qualified"  
            attributeFormDefault="unqualified">  
   <xs:include schemaLocation="RibbonCore.xsd" />  

@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 775ad0f50f65845f6e7fa437348b69c6730008a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748446"
 ---
 # <a name="sample-import-files-as-web-resources"></a>Beispiel: Importieren von Dateien als Webressourcen
 
@@ -64,7 +70,7 @@ Wenn Sie viele Dateien entwickeln, die als Webressourcen verwendet werden sollen
 |Alex|Darrow|  
   
  **FilesToImport/CSS/Styles.css**  
- Diese Datei enthält die CSS-Stylesheets, die in ShowData.htm verwendet werden.  
+ Diese Datei enthält die CSS Stylesheets, die in ShowData.htm verwendet werden.  
   
  **FilesToImport/Data/Data.xml**  
  Diese Datei enthält die Liste mit den Namen, die in der Tabelle angezeigt werden.  

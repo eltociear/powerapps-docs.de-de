@@ -1,6 +1,6 @@
 ---
 title: Die Homepage von ISV Studio | Microsoft Docs
-description: 'Erfahren Sie mehr über die Homepagefunktionen, die vom ISV Studio-Portal bereitgestellt werden.'
+description: Erfahren Sie mehr über die Homepagefunktionen, die vom ISV Studio-Portal bereitgestellt werden.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 07/11/2019
 ms.author: prkoduku
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7ad26853dd63163672cd3a981251a57dd7735857
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748277"
 ---
-
 # <a name="the-home-page"></a>Die Homepage
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]

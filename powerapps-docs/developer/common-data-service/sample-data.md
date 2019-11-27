@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen und Entfernen von Beispieldaten (Common Data Service) | Microsoft Docs
+title: Hinzufügen und Entfernen von Beispieldaten (Common Data Service) | Microsoft-Dokumentation
 description: Installieren oder Deinstallieren von Beispieldaten mithilfe der Web-API oder des Organisationsservice
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5d92cc56311242e19f94f7234ca2c9abf6a3af0e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748652"
 ---
 # <a name="add-and-remove-sample-data"></a>Hinzufügen und Entfernen von Beispieldaten
 

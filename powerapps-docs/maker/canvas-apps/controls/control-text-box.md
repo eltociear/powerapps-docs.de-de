@@ -1,24 +1,24 @@
 ---
 title: 'Label-Steuerelement (Bezeichnung): Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, zum Label-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f62aa84867a3aa4eae582b3fde320e84becdeeff
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 66de4ee34cf52f3c351fe3f9c624596e5dd1211d
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986301"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649843"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="label-control-in-canvas-apps"></a>Label-Steuerelement in Canvas-apps
@@ -67,7 +67,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 **[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FontWeight](properties-text.md)** – die Gewichtung des Texts in einem-Steuerelement: **Fett**, **halb Fett**, **Normal**oder **heller**.
+**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -113,7 +113,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -171,7 +171,7 @@ Außerdem kann es als Schaltfläche oder Link verwendet werden, indem **[OnSelec
 
 ### <a name="color-contrast"></a>Farbkontrast
 
-Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 
 * **[Color](properties-color-border.md)** und **[Fill](properties-color-border.md)**
 * Es gelten die [Standardanforderungen für Farbkontraste](../accessible-apps-color.md), wenn das Steuerelement als Schaltfläche oder Link verwendet wird.
@@ -192,5 +192,5 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 
-* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, wenn der Text als Schaltfläche oder Link verwendet wird. So können Benutzer per Tastatur dorthin navigieren.
-* Fokusindikatoren müssen übersichtlich angezeigt werden, wenn der Text als Schaltfläche oder Link verwendet wird. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, wenn der Text als Schaltfläche oder Link verwendet wird. So können Benutzer über die Tastatur dorthin navigieren.
+* Fokusindikatoren müssen übersichtlich angezeigt werden, wenn der Text als Schaltfläche oder Link verwendet wird. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.

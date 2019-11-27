@@ -1,6 +1,6 @@
 ---
 title: 'Schritt 4: Erstellen eines AppSource-Pakets für die App (Common Data Service) | Microsoft Docs'
-description: 'Lernen Sie, wie Sie eine AppSource-Paket (ZIP-Datei) erstellen, um die Lösungs- und Demodatendateien zusammen mit anderen erforderlichen Dateien zu integrieren.'
+description: Lernen Sie, wie Sie eine AppSource-Paket (ZIP-Datei) erstellen, um die Lösungs- und Demodatendateien zusammen mit anderen erforderlichen Dateien zu integrieren.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9696ad4bafbd9556203243cb7ba785e3d0d8444c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753022"
 ---
 # <a name="step-4-create-an-appsource-package-for-your-app"></a>Schritt 4: Erstellen eines AppSource-Pakets für die App
 
@@ -40,11 +46,11 @@ Ein Paket können Sie in mehrere Dateien bündeln und bereitstellen, die gleichz
   
     - **\<PackageName>.dll**: Die Assembly enthält den benutzerdefinierten Code für das Paket. Beispiel: **SamplePackage.dll**.
 
-2. Dann erstellen Sie eine **[Content_Types].xml**-Datei, die MIME-Typ-Informationen zu Dateityperweiterungen bereitstellt, die in Ihrem Paket enthalten sind. Dies ist getrennt von jener, die wieder im AppSource-Paket enthalten ist. Hier erhalten Sie Beispielinhalte einer Content_Types].xml Datei mit den aufgelisteten Dateitypen:
+2. Dann erstellen Sie eine **[Content_Types].xml**-Datei, die MIME-Typ-Informationen zu Dateityperweiterungen bereitstellt, die in Ihrem Paket enthalten sind. Dies ist getrennt von jener, die wieder im AppSource-Paket enthalten ist. Hier erhalten Sie Beispielinhalte einer Content_Types.xml Datei mit den aufgelisteten Dateitypen:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
-    <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+    <Types xmlns="https://schemas.openxmlformats.org/package/2006/content-types">
       <Default Extension="xml" ContentType="application/octet-stream" />
       <Default Extension="xaml" ContentType="application/octet-stream" />
       <Default Extension="dll" ContentType="application/octet-stream" />
@@ -95,7 +101,7 @@ Erstellen einer *input.xml* Datei, die Informationen über das Paket und die Inh
   <StartDate>12/01/2017</StartDate>
   <EndDate>01/01/2021</EndDate>
   <SupportedCountries>US,CA</SupportedCountries>
-  <LearnMoreLink>http://www.microsoft.com</LearnMoreLink>
+  <LearnMoreLink>https://www.microsoft.com</LearnMoreLink>
   <Locales>
     <PackageLocale Code="1033" IsDefault="true">
       <Logo>logo32x32.png</Logo>

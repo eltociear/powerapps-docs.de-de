@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Liquid-Tags für ein Portal | MicrosoftDocs
-description: Erfahren Sie mehr über die verfügbaren Liquid-Tags in einem Portal.
+description: Lesen Sie mehr zu den verfügbaren Liquid-Tags in einem Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -10,27 +10,27 @@ ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: b04c6447911d1a884627bd2cbb4ad7b74b9c5ce5
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976551"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708129"
 ---
 # <a name="available-liquid-tags"></a>Verfügbare Liquid-Tags
 
-Tags bilden die Programmierlogik, die Vorlagen mitteilt, was zu tun ist. Die Tags werden in {%%} umschließt.
+Tags bestimmen die Programmierlogik und damit das Verhalten von Vorlagen. Tags sind in {% %} eingebunden.
 
 ```
 {% if user.fullname == 'Dave Bowman' %} Hello, Dave. {% endif %}
 ```
 
-## <a name="whitespace-control"></a>Leerraum-Steuerelement
+## <a name="whitespace-control"></a>Leerstellenensteuerelement
 
-Normalerweise rendert Liquid alles außerhalb der Variablen-und Tagblöcke ausführlich, wobei der Leerraum unverändert ist. Gelegentlich ist es nicht ratsam, den zusätzlichen Leerraum zu formatieren, aber Sie möchten die Vorlage trotzdem ordnungsgemäß formatieren, was Leerraum erfordert.
+Normalerweise rendert Liquid alles außerhalb von Variablen und Tagblöcken gründlich, mit allen originalen Leerzeichen. Ggf. sind die zusätzlichen Leerstellen nicht gewünscht, jedoch sind für eine saubere Formatierung der Vorlage Leerstellen erforderlich.
 
-Sie können der Engine mitteilen, dass alle führenden oder nachfolgenden Leerzeichen entfernt werden sollen, indem Sie einen Bindestrich (-) zum Start-oder endblocktag hinzufügen.
+Sie können das Modul anweisen, alle führenden oder nachfolgenden Leerstellen zu entfernen, indem Sie einen Bindestrich (-) zum Start- oder Endblocktag hinzufügen.
 
-**Ordnung**
+**Code**
 
 ```
 {% for i in (1..5) --%}
@@ -40,7 +40,7 @@ Sie können der Engine mitteilen, dass alle führenden oder nachfolgenden Leerze
 {%-- endfor %}
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 12345

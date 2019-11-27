@@ -1,6 +1,6 @@
 ---
-title: Abfragen von Metadaten mit der Web-API (Common Data Service) | Microsoft Docs
-description: 'Die Funktion, Systemmetadaten abzufragen, ist mit der Web-API und dem Organisationsservice verfügbar, indem RetrieveMetadataChangesRequest verwendet wird.'
+title: Metadaten mit Web-API abfragen (Common Data Service) | Microsoft-Dokumentation
+description: Die Funktion, Systemmetadaten abzufragen, ist mit der Web-API und dem Organisationsservice verfügbar, indem RetrieveMetadataChangesRequest verwendet wird.
 ms.custom: ''
 ms.date: 11/04/2018
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3ad4a332-a304-421f-a9fa-82ea3e0503fe
 caps.latest.revision: 18
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b2a1d133de698402bf880ed37f88b4bd12fd5203
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748369"
 ---
 # <a name="query-metadata-using-the-web-api"></a>Metadaten mit Web-API abfragen
 
@@ -345,7 +351,7 @@ Sie können den festgelegten `GlobalOptionSetDefinitions`-Entitätspfad verwende
 
 ### <a name="see-also"></a>Siehe auch
 
-[Nutzen der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
+[Verwenden der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
 [Abrufen von Metadaten über den Namen oder die MetadataId](retrieve-metadata-name-metadataid.md)<br />
 [Metadaten-Entitäten und Attribute unter Verwendung der Web-API](create-update-entity-definitions-using-web-api.md)<br />
 [Metadaten-Entitätsbeziehungen modellieren mit Internet-API](create-update-entity-relationships-using-web-api.md)

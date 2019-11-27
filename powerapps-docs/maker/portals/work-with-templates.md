@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: fd28794a343489ece7d4ea5abe6bebd1f71cd992
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.openlocfilehash: 207a1abdfc8145c38b8d6222f71281ce714e8947
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974458"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542369"
 ---
 # <a name="work-with-templates"></a>Arbeiten mit Vorlagen
 
@@ -32,7 +32,7 @@ So öffnen Sie eine Vorlage im Code-Editor:
 
 1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
 
-2.  Wählen Sie im Symbol Bereich auf der linken Seite des Bildschirms **Vorlagen** Vorlagen ![Symbol](media/templates-icon.png "Vorlagen") Symbol aus. Die verfügbaren Vorlagen werden angezeigt.  
+2.  Wählen Sie im Symbol Bereich auf der linken Seite des Bildschirms **Vorlagen** ![Vorlagen Symbol](media/templates-icon.png "Symbol Vorlagen") aus. Die verfügbaren Vorlagen werden angezeigt.  
 
     > [!div class=mx-imgBorder]
     > ![Vorlagen Bereich](media/templates-pane.png "Vorlagen Bereich")  

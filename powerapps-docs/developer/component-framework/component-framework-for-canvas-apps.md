@@ -1,6 +1,6 @@
 ---
-title: Powerapps-Komponenten Framework für Canvas-apps | Microsoft-Dokumentation
-description: Erstellen von Code Komponenten für Canvas-apps
+title: PowerApps component framework für Canvas-Apps | Microsoft-Dokumentation
+description: Erstellen von Codekomponenten für Canvas-Apps
 keywords: ''
 ms.author: nabuthuk
 author: Nkrb
@@ -11,101 +11,101 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: e1c6b4bad1280bdabf8c27e30396b368276ff10b
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.openlocfilehash: e7671c01a9c21dda56579801b77e1480abab5e29
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72347220"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753962"
 ---
-# <a name="powerapps-component-framework-for-canvas-apps"></a>Powerapps-Komponenten Framework für Canvas-apps
+# <a name="powerapps-component-framework-for-canvas-apps"></a>PowerApps component framework für Canvas-Apps
 
 > [!IMPORTANT]
-> Diese Funktion ist in der Standardeinstellung immer noch experimentell und deaktiviert. Weitere Informationen finden Sie unter [experimentelle Features und Vorschau Features](../../maker/canvas-apps/working-with-experimental.md).
+> Diese Funktion ist weiterhin experimenteller Natur und standardmäßig deaktiviert. Weitere Informationen finden Sie unter [Experimentelle und Vorschaufunktionen](../../maker/canvas-apps/working-with-experimental.md).
 
-Mit dem powerapps-Komponenten Framework können App-Entwickler Code Komponenten erstellen, die in einer APP oder in den apps verwendet werden. Weitere Informationen: [Übersicht über das powerapps-Komponenten Framework](overview.md) 
+Das PowerApps component framework ermöglicht es App-Entwicklern, Codekomponenten für die Verwendung in einer App oder über Apps zu erstellen. Weitere Informationen: [Übersicht über das PowerApps component framework](overview.md) 
 
-In dieser experimentellen Vorschau ermöglicht das powerapps-Komponenten Framework es App-Herstellern, Code Komponenten zu erstellen, Sie zu debuggen, zu importieren und zu Canvas-Apps mithilfe der CLI-Tools von powerapps hinzuzufügen. In dieser experimentellen Vorschau werden nur bestimmte APIs unterstützt. Es wird empfohlen, jede API zu überprüfen, um zu bestimmen, ob Sie Canvas-Apps unterstützt. 
+In dieser experimentellen Vorschau können App-Entwickler mit dem PowerApps component framework Codekomponenten erstellen, debuggen, importieren und zu Canvas-Apps mithilfe der PowerApps-CLI-Werkzeuge hinzuzufügen. Nur bestimmte APIs werden in dieser experimentellen Vorschau unterstützt. Es empfiehlt sich, jede einzelne API zu überprüfen, um zu ermitteln, ob sie Canvas-Apps unterstützt. 
 
 > [!WARNING]
-> Code Komponenten enthalten Code, der möglicherweise nicht von Microsoft generiert wird und potenziell auf Sicherheits Token und Daten zugreifen kann. Stellen Sie beim Hinzufügen von Code Komponenten zu einer APP sicher, dass die Code Komponentenlösungen von einer vertrauenswürdigen Quelle stammen.
+> Codekomponenten enthalten Code, der möglicherweise nicht von Microsoft generiert werden kann und ggf. auf Sicherheitstoken und Daten zugreifen kann. Wenn Sie Codekomponenten zu einer App hinzufügen, sollten Sie sicherstellen, dass die Codekomponentenlösungen von einer vertrauenswürdigen Quelle stammen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-System Administrator Berechtigungen sind erforderlich, um die Funktion "powerapps-Komponente" in der Umgebung zu aktivieren.
+Es sind Systemadministratorrechte erforderlich, um die PowerApps-Komponentenfunktion in der Umgebung zu aktivieren.
 
 > [!IMPORTANT]
-> Standardmäßig ist das powerapps-Komponenten Framework für Modell gesteuerte apps aktiviert.
+> Standardmäßig ist das PowerApps Component Framework für modellgesteuerte Apps aktiviert.
 
-## <a name="enable-powerapps-component-framework-feature"></a>Powerapps-Komponenten Framework-Feature aktivieren
+## <a name="enable-powerapps-component-framework-feature"></a>Aktivieren der Funktion des PowerApps component framework
 
-Um einer APP Code Komponenten hinzuzufügen, müssen Sie die Funktion "powerapps-Komponenten Framework" in jeder Umgebung aktivieren, in der Sie Sie verwenden möchten. So aktivieren Sie eine Umgebung, um Code Komponenten in ihren apps zu verwenden:
+Um Codekomponenten zu einer App hinzuzufügen, müssen Sie die Funktion des PowerApps component framework in jeder Umgebung aktivieren, in der Sie sie verwenden möchten. So aktivieren Sie eine Umgebung für die Verwendung von Codekomponenten in ihren Apps:
 
-1. Melden Sie sich bei [PowerApps](https://powerapps.microsoft.com/en-us/) an.
+1. Melden Sie sich bei [PowerApps](https://powerapps.microsoft.com/) an.
 
-2. Wählen Sie das Symbol **Einstellungen** aus, und wählen Sie dann **Admin Center**aus.
+2. Klicken Sie auf das Symbol **Einstellungen** und wählen dann **Admin Center** aus.
     
-    ![Einstellungen und Admin Center](media/select-admin-center-from-settings.png "-Einstellungen und Admin Center") 
+    ![Einstellungen und Admin Center](media/select-admin-center-from-settings.png "Einstellungen und Admin Center") 
 
-3. Wählen Sie die Umgebung aus, in der Sie dieses Feature aktivieren möchten, wählen Sie die Auslassungs Punkte ( **...** ) aus, und wählen Sie dann **Einstellungen**aus.
+3. Wählen Sie die Umgebung aus, in der Sie diese Funktion aktivieren wollen. Wählen Sie das Auslassungssymbol (**...**) und dann **Einstellungen** aus.
 
-4. Wählen Sie auf der Registerkarte **Produkte** die Option **Features**aus.
+4. Wählen Sie auf der Registerkarte **Produkte** die Option **Funktionen** aus.
 
-   ![Aktivieren von powerapps Component Framework](media/enable-pcf-feature.png "Aktivieren von powerapps-Komponenten Framework")
+   ![Aktivieren von PowerApps Component Framework](media/enable-pcf-feature.png "Aktivieren des PowerApps Component Framework")
 
-5. Legen Sie in der Liste der verfügbaren Features **für Canvas-apps in powerapps Component Framework**den Switch auf **on** fest.
+5. Setzen Sie aus der Liste der verfügbaren Funktionen den Schalter auf **Ein** unter **PowerApps Component Framework für Canvas-Apps**.
 
-6. Öffnen Sie nun die APP, der Sie die Code Komponente hinzufügen möchten, und navigieren Sie zu **Datei**  > **App-Einstellungen** , und wählen Sie **Erweiterte Einstellungen**aus.
+6. Öffnen Sie nun die App, der Sie die Codekomponente hinzufügen möchten, und navigieren Sie zu **Datei** >  **App-Einstellungen**. Wählen Sie dann **Erweiterte Einstellungen** aus.
 
-   ![Aktivieren von Komponenten für das powerapps-Komponenten Framework](media/enable-components-for-pcf.png "Aktivieren von Komponenten für das powerapps") -Komponenten Framework
+   ![Aktivieren Sie Komponenten für das PowerApps Component Framework](media/enable-components-for-pcf.png "Aktivieren Sie Komponenten für PowerApps Component Framework")
    
-7. Schalten Sie den **Komponenten** Wechsel **im Abschnitt** " **experimentelle Funktion** " auf ein.
+7. Setzen Sie den **Komponenten**-Schalter auf **Ein** unter dem Abschnitt **Experimentelle Funktion**.
 
-## <a name="implementing-code-components"></a>Implementieren von Code Komponenten
+## <a name="implementing-code-components"></a>Implementieren von Codekomponenten
 
-Nachdem Sie das Feature "powerapps-Komponenten Framework" in Ihrer Umgebung aktiviert haben, können Sie mit der Implementierung der Logik für Code Komponenten beginnen. Das Thema [Implementieren von Beispiel Komponenten](implementing-controls-using-typescript.md) veranschaulicht den Schritt-für-Schritt-Prozess zum Erstellen von Code Komponenten, die die benutzerdefinierte Logik und die Manifest-Datei implementieren, den Debugprozess ausführen, eine Projektmappen-ZIP-Datei erstellen und die Lösung in Common importieren Datendienst.
+Nachdem Sie das Feature des PowerApps component framework in Ihrer Umgebung aktiviert haben, können Sie mit der Implementierung der Logik für Codekomponenten beginnen. Das Thema [Beispielkomponente implementieren](implementing-controls-using-typescript.md) zeigt den schrittweisen Vorgang zum Erstellen von Codekomponenten mit Implementierung der benutzerdefinierten Logik und der Manifestdatei, die den Debuggingsprozess ausführt, eine ZIP-Datei der Lösung erstellt und den Abschluss nach Common Data Service importiert.
 
 > [!NOTE]
-> Das Implementieren von Code Komponenten ist für Modell gesteuerte apps und Canvas-apps identisch (experimentelle Vorschau). Der einzige Unterschied besteht darin, die Code Komponenten hinzuzufügen. 
+> Codekomponenten zu implementieren ist gleich für modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau). Der einzige Unterschied ist das Hinzufügen der Codekomponenten. 
 
 ## <a name="add-components-to-a-canvas-app"></a>Hinzufügen von Komponenten zu einer Canvas-App
 
 > [!NOTE]
-> Informationen zum Hinzufügen von Code Komponenten zu einem Feld oder einer Entität für Modell gesteuerte apps finden Sie unter [Hinzufügen von Code Komponenten zu Modell gesteuerten apps](add-custom-controls-to-a-field-or-entity.md) .
+> Um Codekomponenten zu einem Feld oder einer Entität für modellgesteuerte Apps hinzuzufügen, lesen Sie [Hinzufügen von Codekomponenten zu modellgesteuerten Apps](add-custom-controls-to-a-field-or-entity.md)
 
-So fügen Sie einer Canvas-app Code Komponenten hinzu:
+So fügen Sie Codekomponenten zu einer Canvas-App hinzu:
 
-1. Navigieren Sie zu PowerApps Studio.
-2. Erstellen Sie eine neue Canvas-APP, oder bearbeiten Sie eine vorhandene APP, der Sie die Code Komponente hinzufügen möchten.
+1. Navigieren zu PowerApps Studio.
+2. Erstellen einer neuen Canvas-App oder Bearbeiten einer vorhandenen App, der Sie die Codekomponente hinzufügen möchten.
 
    > [!IMPORTANT]
-   > Stellen Sie sicher, dass die ZIP-Datei der Projekt Mappe bereits in Common Data Service [importiert](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/import-update-export-solutions) wurde, bevor Sie mit dem nächsten Schritt fortfahren.
+   > Stellen Sie sicher, dass die Lösungs-ZIP-Datei bereits nach Common Data Service [importiert](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) wurde, bevor Sie mit dem nächsten Schritt fortfahren.
 
-3. Wechseln Sie zu **Insert**  > **Components**  > **Import Component**. 
+3. Gehen Sie zu **Einfügen** > **Komponenten** > **Importkomponente**. 
  
-    Komponenten(media/insert-components-import.png "Einfügen") ![Komponenten einfügen]
+    ![Komponenten einfügen](media/insert-components-import.png "Komponenten einfügen")
 
-4. Wählen Sie die Registerkarte **Code (experimentell)** aus, fügen Sie eine Komponente aus der Liste hinzu, und klicken Sie dann auf **importieren**. Dadurch wird die Beispiel Komponente im Menü **Komponenten** hinzugefügt.
+4. Wählen Sie die Registerkarte **Code (experimentell)** aus, fügen Sie eine Komponente aus der Liste hinzu, und wählen Sie dann **Importieren** aus. Dadurch wird die Beispielkomponente im Menü **Komponenten** hinzugefügt.
 
-    Beispiel Komponente zum Importieren von ![Beispiel Komponenten](media/import-component-add-sample-component.png "importieren")
+    ![Beispielkomponente importieren](media/import-component-add-sample-component.png "Beispielkomponente importieren")
 
-5. Navigieren Sie zu **Komponenten** , und wählen Sie die Komponente aus, um Sie der APP hinzuzufügen.
+5. Navigieren Sie zu **Komponenten**, und wählen Sie die Komponente aus, um sie der App hinzuzufügen.
 
-   Beispiel Komponente hinzufügen ![Beispiel](media/add-sample-component-from-list.png "Komponente hinzu") fügen
+   ![Beispielkomponente hinzufügen](media/add-sample-component-from-list.png "Beispielkomponente hinzufügen")
 
-## <a name="delete-a-code-component"></a>Löschen einer Code Komponente 
+## <a name="delete-a-code-component"></a>Löschen einer Codekomponente 
 
-Wenn Sie eine Code Komponente aus einer Canvas-app löschen möchten, wählen Sie die zu löschende Code Komponente aus, und wählen Sie dann im Menü die Schaltfläche **Löschen** aus. Wenn die Code Komponente aus der APP gelöscht wird, werden alle Code Komponenten Elemente aus der APP und dem App-Paket gelöscht. 
+Wenn Sie eine Codekomponente aus einer Canvas-App löschen möchten, wählen Sie die Codekomponente, die Sie löschen möchten und dann die Schaltfläche **Löschen** aus dem Menü aus. Wenn die Codekomponente aus der App gelöscht wird, werden alle Codekomponentenelemente der App und dem App-Paket gelöscht. 
 
-## <a name="update-existing-code-components"></a>Aktualisieren vorhandener Code Komponenten
+## <a name="update-existing-code-components"></a>Aktualisieren vorhandener Codekomponenten
 
-Wenn Sie die Code Komponenten aktualisieren, geben wir das *Versions* Attribut in der Manifest-Datei an, damit die aktuellen Änderungen in der Laufzeit übernommen werden. Wenn Sie für Canvas-Apps die vorhandenen Code Komponenten aktualisieren, müssen Sie das *Versions* Attribut nicht aktualisieren. Der Canvas-app-Code übernimmt die neueste Code Komponente und zeigt Sie zur Laufzeit an. In Canvas-apps kann nur eine einzige Version der gleichen Komponente vorhanden sein.
+Wenn Sie die Codekomponenten aktualisieren, geben wir das Attribut *Version* in der Manifestdatei an, damit die neuesten Änderungen in der Laufzeit wiedergegeben werden. Wenn Sie für Canvas-Apps die vorhandenen Codekomponenten aktualisieren, müssen Sie das Attribut *Version* nicht aktualisieren. Standardmäßig wählen Canvas-Apps die letzte Codekomponente aus und zeigen sie während der Laufzeit an. Nur eine einzige Version derselben Komponente kann in Canvas-Apps vorhanden sein.
 
 > [!NOTE]
-> Vorhandene Code Komponenten werden nur aktualisiert, wenn die app in PowerApps Studio geschlossen oder erneut geöffnet wird. Wenn Sie die APP erneut öffnen, werden Sie aufgefordert, die Code Komponenten zu aktualisieren. Wenn Sie die Code Komponenten einfach löschen oder die Code Komponente wieder in der APP hinzufügen, werden die Komponenten nicht aktualisiert.
+> Vorhandene Codekomponenten werden nur aktualisiert, sofern die App geschlossen oder in PowerApps Studio erneut geöffnet wird. Wenn Sie die App erneut öffnen, werden sie aufgefordert, die Codekomponenten zu aktualisieren. Wenn Sie die Codekomponenten einfach löschen oder sie wieder in die App hinzufügen, werden die Komponenten nicht aktualisiert.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Übersicht über das powerapps-Komponenten Framework](overview.md)<br/>
-[Implementieren der Beispiel Komponente](implementing-controls-using-typescript.md)
+[Übersicht über das PowerApps component framework](overview.md)<br/>
+[Beispielkomponente für die Implementierung](implementing-controls-using-typescript.md)
 

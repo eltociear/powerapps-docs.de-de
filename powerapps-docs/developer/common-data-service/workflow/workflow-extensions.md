@@ -1,6 +1,6 @@
 ---
 title: Workflow-Erweiterungen (Common Data Service) | Microsoft Docs
-description: 'Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die CodeActivity-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.'
+description: Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die CodeActivity-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.
 ms.custom: ''
 ms.date: 07/16/2019
 ms.reviewer: pehecke
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4abc6f224651e4e42bc9f4e40dd74341580274a9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748332"
 ---
 # <a name="workflow-extensions"></a>Workflowerweiterungen
 
@@ -25,8 +31,7 @@ Sie können diese benutzerdefinierten Erweiterungen innerhalb des Designers verw
 > Wenn immer möglich, sollten Sie zunächst erwägen, eine von mehreren deklarativen Optionen zur Definition der Geschäftslogik anzuwenden. Weitere Informationen: [Anwenden von Geschäftslogik in Common Data Service](../../../maker/common-data-service/cds-processes.md)
 > 
 > Verwenden Sie Workflowerweiterungen, wenn ein deklarativer Prozess nicht Ihre Bedingung erfüllt.
-> 
-> Dieser Inhalt ist für Common Data Service-Workflow-Assemblys und gilt auch für Dynamics 365 for Customer Engagement-Apps (online). Optionen für lokale Bereitstellungen von Dynamics 365 for Customer Engagement-Apps sind hier beschrieben: [Lokale Optionen](/dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies#on-premises-options).
+
 
 ## <a name="when-to-create-a-workflow-extension"></a>Wann eine Workflowerweiterung zu erstellen ist
 
@@ -56,7 +61,7 @@ Sie können die Aktivität **Aktion durchführen** verwenden, um sämtliche benu
 |AddToQueue|AddUserToRecordTeam|RemoveUserFromRecordTeam|
 |SetProcess|SetWordTemplate||
 
-Wenn Sie Dynamics 365 Customer Engagement Sales oder Service-Lösungen haben, können Sie andere Befehlsaktionen, je nach Lösung, finden:
+Wenn Sie über Dynamics 365 Sales- oder Service-Lösungen verfügen, können Sie je nach Lösung andere Befehlsaktionen finden:
 
 ||||
 |--|--|--|

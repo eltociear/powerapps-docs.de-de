@@ -1,6 +1,6 @@
 ---
-title: 'Beispiel: Erstellen oder Abrufen von Outlook-Filtern (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie Filter für Microsoft Dynamics 365 for Outlook abgerufen werden.'
+title: 'Beispiel: Outlook-Filter erstellen und abrufen (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel veranschaulicht, wie Filter für Microsoft Dynamics 365 for Outlook abgerufen werden
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,18 +10,24 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a144c6166bf14737d0258a962306eb24f1aebc3b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748672"
 ---
 # <a name="sample-create-and-retrieve-outlook-filters"></a>Beispiel: Outlook-Filter erstellen und abrufen
 
-Dieser Beispielcode ist für Common Data Service bestimmt. Um das Beispiel herunterladen, gehen Sie zu [Beispiel: Erstellen und abrufen von Outlook-Filtern](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters).
+Dieser Beispielcode ist für Common Data Service. Um das Beispiel herunterladen, gehen Sie zu [Beispiel: Erstellen und abrufen von Outlook-Filtern](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine Internetverbindung ist eine Voraussetzung, um das Beispielprojekt herunterzuladen und die NuGet-Pakete wiederherzustellen, die im Beispielprojekt verwendet werden.
+Um das Beispielprojekt herunterzuladen und die NuGet-Pakete wiederherzustellen, die im Beispielprojekt verwendet werden, ist eine Internetverbindung erforderlich.
 
 ## <a name="demonstrates"></a>Demonstriert  
 
@@ -87,7 +93,7 @@ Console.WriteLine();
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Erweitern von Dynamics 365 für Outlook](extend-dynamics-365-outlook.md)<br />
+[Erweitern von Dynamics 365 for Outlook](extend-dynamics-365-outlook.md)<br />
 [Beispiel: Verwendung von Outlook-Methoden](sample-outlook-methods.md)<br />
 [Offline- und Outlook-Filter und -Vorlagen](offline-outlook-filters-templates.md)<br />
 [SavedQuery-Entitätsreferenz](../reference/entities/savedquery.md) 

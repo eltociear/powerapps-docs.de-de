@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Benutzer-Rollupabfragen zur Nachverfolgung von Zielen (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Benutzer-Rollupabfragen zur Nachverfolgung von Zielen (Common Data Service) | Microsoft-Dokumentation'
 description: In diesem Beispiel wird die Verwendung von Rollupabfragen zur Nachverfolgung von Zielen dargestellt
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9d7b1f6f3f7d9af82e1b047da2ae760246c8ebdc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748700"
 ---
 # <a name="sample-use-rollup-queries-to-track-goals"></a>Beispiel: Verwendung von Rollupabfragen zur Nachverfolgung von Zielen
 
@@ -21,7 +27,7 @@ search.app:
 
 In diesem Beispiel wird die Verwendung von Rollupabfragen zur Nachverfolgung von Zielen dargestellt. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueriesTrackGoals) herunterladen.
 
-Dieses Beispiel benötigt weitere drei Benutzer, die nicht in Ihrem System sind. Erstellen Sie die drei erforderliche Benutzer manuell**wie dargestellt** in **Office 365**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
+Dieses Beispiel benötigt weitere drei Benutzer, die nicht in Ihrem System sind. Erstellen Sie die drei erforderliche Benutzer manuell **wie besehen** (siehe unten) in **Office 365**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
 
 **Vorname**: Nancy<br/>
 **Nachname**: Anderson<br/>
@@ -53,7 +59,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 ### <a name="setup"></a>Einrichten
 
 1. Prüft auf aktuelle Version der Organisation.
-2. Ruft den Vertriebsmanager und 2 Vertriebsmitarbeiter ab, die manuell in **Office 365** erstellt werden.
+2. Ruft den Vertriebsmanager und 2 Vertriebsmitarbeiter ab, die manuell in **Office 365** erstellt werden.
 3. Erstellt Datensätze, um `SalesOrder`-Datensätze zu unterstützen.
 4. Erstellt eine neue Einheitengruppe für das Beispiel.
 5. Ruft die Standardeinheits-ID ab, die automatisch erstellt wird, wenn wir eine neue Einheitengruppe erstellt haben.

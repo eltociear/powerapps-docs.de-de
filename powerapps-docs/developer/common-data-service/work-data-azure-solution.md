@@ -1,24 +1,27 @@
 ---
 title: Arbeiten mit Dynamics 365 Daten in Ihrer Azure-Lösung (Common Data Service) | Microsoft Docs
-description: 'Das ServiceBusPlugin-Plug-In enthält die Geschäftslogik für die Veröffentlichung des Dynamics 365-Nachrichtenausführungskontexts auf dem Azure-Servicebus. Um dieses Plug-In verwenden zu können, müssen Sie einen Azure-Servicebus-Lösungsendpunkt und einen Schritt für das Plug-In registrieren. Der Schritt definiert, welche Nachrichten- und Entitätskombination, die durch den Dynamics 365-Kernvorgang verarbeitet wird, die Ausführung des Plug-Ins auslösen sollte. ServiceBusPlugin kann nur für die asynchrone Ausführung registriert werden.'
+description: Das ServiceBusPlugin-Plug-In enthält die Geschäftslogik für die Veröffentlichung des Dynamics 365-Nachrichtenausführungskontexts auf dem Azure-Servicebus. Um dieses Plug-In verwenden zu können, müssen Sie einen Azure-Servicebus-Lösungsendpunkt und einen Schritt für das Plug-In registrieren. Der Schritt definiert, welche Nachrichten- und Entitätskombination, die durch den Dynamics 365-Kernvorgang verarbeitet wird, die Ausführung des Plug-Ins auslösen sollte. ServiceBusPlugin kann nur für die asynchrone Ausführung registriert werden.
 keywords: ''
 ms.date: 06/01/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 1ef66369-71c9-3b89-ac1a-09d523ca737b
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 949717fbf33ee27e77ce81672fd66c2920a15bf2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748340"
 ---
-
 # <a name="work-with-common-data-service-data-in-your-azure-solution"></a>Arbeiten mit Common Data Service-Daten in Ihrer Azure-Lösung
 
 Ein internes Plug-In mit dem Namen `ServiceBusPlugin` wird mit Common Data Service (CDS) bereitgestellt. Das Plug-In enthält die Geschäftslogik für die Veröffentlichung des CDS-Nachrichtenausführungskontexts im Azure Service Bus. Um dieses Plug-In verwenden zu können, müssen Sie einen Azure-Servicebus-Lösungsendpunkt und einen Schritt für das Plug-In registrieren. Der Schritt definiert, welche Nachrichten- und Entitätskombination, die durch den CDS-Kernvorgang verarbeitet wird, die Ausführung des Plug-Ins auslösen sollte. `ServiceBusPlugin` kann nur für die asynchrone Ausführung registriert werden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Registrieren eines Azure-fähigen Plug-Ins mithilfe des Plug-In-Registrierungstools](walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md).  

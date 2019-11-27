@@ -1,23 +1,29 @@
 ---
-title: Verwenden der FilterExpression-Klasse (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie die FilterExpression-Klasse dazu verwenden, eine Abfrage zu erstellen, die Mehrfachbedingungen ausdrückt'
+title: Die FilterExpression-Klasse verwenden (Common Data Service) | Microsoft-Dokumentation
+description: Lesen Sie, wie Sie die FilterExpression-Klasse dazu verwenden, eine Abfrage zu erstellen, die Mehrfachbedingungen ausdrückt
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ba077e5bf9c1f1f464e8cc71594d30684efc0824
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748688"
 ---
 # <a name="use-the-filterexpression-class"></a>Die FilterExpression-Klasse verwenden
 
-In Common Data Service können Sie die <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>-Klasse verwenden, eine Abfrage zu erstellen, die Mehrfachbedingungen ausdrückt. Beispielsweise können Sie einen Abfrageausdruck erstellen, der die Entsprechung einer SQL-Anweisung, wie `([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'` ist.  
+In Common Data Service können Sie die <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>-Klasse dazu verwenden, eine Abfrage zu erstellen, die Mehrfachbedingungen ausdrückt. Beispielsweise können Sie einen Abfrageausdruck erstellen, der die Entsprechung einer SQL-Anweisung, wie `([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'` ist.  
   
  In der folgenden Tabelle werden die Eigenschaften der <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>-Klasse aufgeführt:  
   

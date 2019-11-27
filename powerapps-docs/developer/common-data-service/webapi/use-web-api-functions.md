@@ -1,25 +1,31 @@
 ---
-title: Nutzen von Web-API-Funktionen (Common Data Service) | Microsoft Docs
-description: 'Funktionen sind wiederverwendbare Vorgänge, die mit einer GET-Anforderung zum Abrufen von Daten aus Common Data Service verwendet werden'
+title: Web-API-Funktionen verwenden (Common Data Service)| Microsoft Docs
+description: Funktionen sind wiederverwendbare Operationen, die mit einer GET-Anforderung verwendet werden, um Daten von Common Data Service abzurufen.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 09/05/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: c6de9c12-e8e3-4ed5-a6ed-18ade572065f
 caps.latest.revision: 45
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 46d9db977c1db3dcd336ed6eda0f30228468a529
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748346"
 ---
 # <a name="use-web-api-functions"></a>Nutzen von Web-API-Funktionen
 
@@ -197,7 +203,33 @@ Sie müssen den vollständigen Namen der Funktion eingeben und die Parametername
 ```http
 GET [Organization URI]/api/data/v9.0/accounts?$select=name,accountnumber&$filter=Microsoft.Dynamics.CRM.LastXHours(PropertyName=@p1,PropertyValue=@p2)&@p1='modifiedon'&@p2=12  
 ```  
-  
+
+#### <a name="limitations-of-query-functions"></a>Einschränkungen der Abfragefunktionen
+
+Eine der Einschränkungen von Abfragefunktionen besteht darin, dass Sie den Operator `not` nicht verwenden können, um Abfragefunktionen zu negieren.
+
+Beispielsweise schlägt die folgende Abfrage mit <xref href="Microsoft.Dynamics.CRM.EqualUserId?text=EqualUserId Function" /> mit dem Fehler fehl: `Not operator along with the Custom Named Condition operators is not allowed`.
+
+```http
+GET [Organization URI]/api/data/v9.1/systemusers?$select=fullname,systemuserid&$filter=not Microsoft.Dynamics.CRM.EqualUserId(PropertyName=@p1)&@p1='systemuserid'
+```
+Mehrere Abfragefunktionen verfügen über eine ergänzende negierte Abfragefunktion. Sie können z.B. die <xref href="Microsoft.Dynamics.CRM.NotEqualUserId?text=NotEqualUserId Function" /> verwenden. Die folgende Abfrage liefert die erwarteten Ergebnisse:
+
+```http
+GET [Organization URI]/api/data/v9.1/systemusers?$select=fullname,systemuserid&$filter=Microsoft.Dynamics.CRM.NotEqualUserId(PropertyName=@p1)&@p1='systemuserid'
+```
+
+Andere Abfragefunktionen können auf unterschiedliche Weise negiert werden. Zum Beispiel, anstatt zu versuchen, die <xref href="Microsoft.Dynamics.CRM.Last7Days?text=Last7Days Function" /> so zu negieren (was mit dem gleichen Fehler wie oben beschrieben scheitert):
+
+```http
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=not Microsoft.Dynamics.CRM.Last7Days(PropertyName=@p1)&@p1='createdon'
+```
+Verwenden Sie die <xref href="Microsoft.Dynamics.CRM.OlderThanXDays?text=OlderThanXDays Function" /> so:
+
+```http
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=Microsoft.Dynamics.CRM.OlderThanXDays(PropertyName=@p1,PropertyValue=@p2)&@p1='createdon'&@p2=7
+```
+
 ### <a name="see-also"></a>Siehe auch
 
 [Internet-API-Funktionen- und Aktionen-Beispiel (C#)](samples/functions-actions-csharp.md)<br />

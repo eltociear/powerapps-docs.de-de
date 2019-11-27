@@ -1,24 +1,24 @@
 ---
 title: 'Radio-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Radio-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 07/06/2018
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e3a1e1c5a62552f9ef034b6f4985213b65247627
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: cba6b072721efa04ce28606cd027939823c2f7c9
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986384"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649773"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="radio-control-in-powerapps"></a>Radio-Steuerelement in PowerApps
@@ -39,7 +39,7 @@ Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 
 **Layout**: Gibt an, ob die Optionen vertikal oder horizontal angeordnet werden.
 
-**[Value](properties-core.md)** : Gibt den Wert eines Eingabesteuerelements an.
+**[Value](properties-core.md)** : Gibt den Wert des Eingabesteuerelements an.
 
 **Ausgewählt** – der Datensatz, der das ausgewählte Element darstellt.
 
@@ -71,7 +71,7 @@ Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)** – die Gewichtung des Texts in einem-Steuerelement: **Fett**, **halb Fett**, **Normal**oder **heller**.
+**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -83,7 +83,7 @@ Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 
 **[LineHeight](properties-text.md)** : Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.
 
-**[OnChange](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -107,7 +107,7 @@ Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 
 **RadioSize**: Der Durchmesser der Kreise in einem Steuerelement der Radioschaltfläche.
 
-**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **SelectedText (veraltet)** – ein Zeichen folgen Wert, der das ausgewählte Element darstellt.
 
@@ -117,7 +117,7 @@ Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 

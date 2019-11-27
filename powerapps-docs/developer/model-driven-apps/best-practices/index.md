@@ -1,6 +1,6 @@
 ---
-title: 'Entwickler: Best Practices und Handlungsempfehlungen für modellgesteuerte Apps | Microsoft-Dokumentation'
-description: Best Practices und Handlungsempfehlungen für Entwickler von modellgesteuerten Apps in PowerApps.
+title: 'Entwickler: Best Practices und Anleitungen für modellgetriebene Anwendungen | Microsoft Docs'
+description: Bewährte Methoden und Anleitungen für Entwickler von modellgesteuerten Apps in PowerApps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -20,47 +20,47 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 152b7bc5e61a579bc06c02f60079ecfc7b05512b
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: a0592cb14de0cc43fa576227e94aa6e8fca37054
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320903"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748770"
 ---
-# <a name="best-practices-and-guidance-for-model-driven-apps"></a>Best Practices und Handlungsempfehlungen für modellgesteuerte Apps
+# <a name="best-practices-and-guidance-for-model-driven-apps"></a>Best Practices und Anleitungen für modellgetriebene Anwendungen
 
-Für modellgesteuerte Apps wird ein komponentenorientierter Entwicklungsansatz verwendet, der von Entwicklern so erweitert werden kann, dass deutlich individuellere Lösungen als bisher möglich sind. Bei der Anpassung von modellgesteuerten Apps sollten Entwickler bewährte Handlungsempfehlungen und Best Practices beachten. 
+Model-driven Apps ist ein komponentenorientierter Ansatz zur App-Entwicklung, der von einem Entwickler erweitert werden kann, um ein viel individuelleres Erlebnis zu erreichen. Bei der Anpassung modellgetriebener Anwendungen sollte sich ein Entwickler mit den etablierten Richtlinien und Best Practices vertraut machen. 
 
-In diesem Abschnitt werden häufig auftretende Probleme, ihre Auswirkungen und Handlungsempfehlungen zur Lösung der Probleme beschrieben. Dabei werden auch die Hintergründe von Empfehlungen beschrieben. Zusätzlich lernen Sie, wie sich mögliche Probleme in der Zukunft vermeiden lassen. Dies kann sich positiv auf die Benutzerfreundlichkeit, Kompatibilität und Leistung Ihrer Umgebung auswirken. Die Dokumentation mit Handlungsempfehlungen ergänzt die vorhandenen Informationen in den Entwicklungs- und Verwaltungsleitfäden.
+In diesem Abschnitt erfahren Sie mehr über die von uns identifizierten Probleme, ihre Auswirkungen und verstehen die Leitlinien zu ihrer Lösung. Wir werden die Hintergründe erklären, warum die Dinge auf eine bestimmte Weise geschehen sollten und mögliche Probleme in der Zukunft vermeiden. Dies kann der Benutzerfreundlichkeit, der Supportfähigkeit und der Leistung Ihrer Umgebung zugute kommen. Die Anleitungsdokumentation unterstützt die vorhandenen Informationen innerhalb der Entwickler- und Administrationsleitfäden.
 
-# <a name="targeted-customization-types"></a>Behandelte Anpassungstypen
-In dieser Dokumentation werden die folgenden Anpassungstypen behandelt:
+## <a name="targeted-customization-types"></a>Betroffene Anpassungsarten
+Die Dokumentation richtet sich an die folgenden Anpassungsarten:
 
-- Entwurf von modellgesteuerten Apps
-- Entwurf von Entitätsformularen
-- Erstellen von Clientskripts
+- Modellgetriebenes App-Design
+- Entitätsformular-Design
+- Client-Skripting
 - Webressourcen
 
-# <a name="sections"></a>Abschnitte
-Jeder Artikel mit Handlungsempfehlungen enthält die meisten oder alle der folgenden Abschnitte:
+## <a name="sections"></a>Abschnitte
+Jeder Leitartikel enthält die meisten oder alle der folgenden Abschnitte:
 
-- Titel: Beschreibung der Handlungsempfehlung
-- Kategorie: ein oder mehrere Bereiche, die negativ betroffen sind, falls die Handlungsempfehlungen nicht berücksichtigt werden
-- Gefährdungspotenzial: das Risiko (hoch, mittel oder niedrig) für negative Auswirkungen auf die Umgebung, falls die Handlungsempfehlungen nicht berücksichtigt werden
-- Symptome: mögliche Anzeichen dafür, dass die Handlungsempfehlungen nicht berücksichtigt wurden
-- Handlungsempfehlungen: Vorschläge, die gelegentlich auch Beispiele enthalten
-- Problematische Muster: Beschreibungen oder Beispiele, in denen die Handlungsempfehlungen nicht berücksichtigt werden
-- Zusätzliche Informationen: ergänzende Details für eine noch genauere Darstellung des Sachverhalts
-- Siehe auch: Referenzmaterialien, in denen im Artikel erwähnte Themen vertieft werden
+- Titel - Beschreibung des Leitfadens
+- Kategorie - ein oder mehrere Bereiche, die von der Nichteinhaltung der Richtlinien betroffen sind.
+- Wirkungspotential - das Ausmaß des Risikos (hoch, mittel oder niedrig), die Umwelt zu belasten, wenn die Leitlinien nicht eingehalten werden.
+- Symptome - mögliche Anzeichen dafür, dass die Anweisungen nicht befolgt wurden.
+- Anleitung - Empfehlungen, die auch Beispiele enthalten können.
+- Problematische Muster - Beschreibung oder Beispiele für die Nichteinhaltung der Anleitung
+- Zusatzinformationen - unterstützende Details für eine umfangreichere Ansicht
+- Siehe auch - Referenzen, um mehr über etwas zu erfahren, das im Artikel erwähnt wird.
 
-# <a name="categories"></a>Kategorien
-Jeder Artikel mit Handlungsempfehlungen wird in eine oder mehrere der folgenden Kategorien eingeteilt:
+## <a name="categories"></a>Kategorien
+Jeder Leitartikel wird in eine oder mehrere der folgenden Kategorien eingeteilt:
 
-- Verwendung: falsche Nutzung einer API, eines Musters oder einer Konfiguration
-- Entwurf: Entwurfsfehler in einer Anpassung
-- Leistung: Anpassungen oder Muster, die sich beispielsweise negativ auf die Leistung der Speicherverwaltung, der CPU-Auslastung, des Netzwerkdatenverkehrs oder der Servicequalität für Benutzer auswirken können
-- Sicherheit: potenzielle Sicherheitsrisiken in einer Anpassung, die in einer Laufzeitumgebung unter Umständen ausgenutzt werden können
-- Upgradebereitschaft: Anpassungen oder Muster, die das Risiko eines fehlerhaften Versionsupgrades erhöhen
-- Onlinemigration: Anpassungen oder Muster, die das Risiko einer fehlerhaften Onlinemigration erhöhen
-- Wartbarkeit: Anpassung, die den Entwicklungsaufwand zur Implementierung von Änderungen, die Häufigkeit von erforderlichen Änderungen oder die Wahrscheinlichkeit der Einführung von Regressionen unnötigerweise erhöht
-- Kompatibilität: Anpassungen oder Muster, in denen veröffentlichte Kompatibilitätshinweise nicht berücksichtigt wurden. Dies kann sich beispielsweise in der Nutzung nicht mehr vorhandener APIs oder der Implementierung unzulässiger Methoden widerspiegeln
+- Verwendung - unsachgemäße Verwendung einer bestimmten API, eines bestimmten Musters oder einer bestimmten Konfiguration.
+- Design - Designfehler in einer Individualisierung
+- Leistung - Anpassung oder Muster, die sich negativ auf die Leistung in Bereichen wie Speicherverwaltung, CPU-Auslastung, Netzwerkverkehr oder Benutzererfahrung auswirken können.
+- Sicherheit - potenzielle Schwachstellen in einer Anpassung, die in einer Laufzeitumgebung genutzt werden können.
+- Upgrade Readiness - Anpassung oder Muster, die das Risiko eines erfolglosen Versions-Upgrades erhöhen können.
+- Online-Migration - Anpassung oder Muster, die das Risiko einer erfolglosen Online-Migration erhöhen können.
+- Wartbarkeit - Anpassung, die den Aufwand für die Entwicklung von Änderungen, die Häufigkeit der erforderlichen Änderungen oder die Möglichkeit der Einführung von Regressionen unnötig erhöht.
+- Supportfähigkeit - Anpassung oder Muster, die außerhalb der Grenzen veröffentlichter Supportfunktionen liegen, einschließlich der Verwendung entfernter APIs oder der Implementierung verbotener Techniken.

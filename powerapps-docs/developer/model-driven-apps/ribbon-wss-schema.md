@@ -10,18 +10,24 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 089a95c90b5ca222e3ab0209da3e0ce20af4bcb5
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753590"
 ---
 # <a name="ribbon-wss-schema"></a>Menüband-WSS-Schema
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/ribbon-wss-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbon-wss-schema -->
 
 Folgendes ist eine Schemadefinition für den Menüband-Typen-WSS einer Import-/Exportanpassungsdatei. Menüband-WSS wird enthalten von [Menüband-Kernschema](ribbon-core-schema.md). Sie können das Schema im Ordner `Schemas\9.0.0.2090\RibbonWSS.xsd` finden, wenn Sie die ZIP-Datei des Schemas herunterladen.
 
-Laden Sie [Schemas](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) herunter.
+Laden Sie [Schemas](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) herunter.
 
 
 Weitere Informationen finden Sie unter [Packen und Verteilen von Erweiterungen mit Lösungen](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
@@ -31,7 +37,7 @@ Weitere Informationen finden Sie unter [Packen und Verteilen von Erweiterungen m
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="CrmRibbonWss" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema id="CrmRibbonWss" xmlns:xs="https://www.w3.org/2001/XMLSchema">
 
   <xs:simpleType name="AltType">
     <xs:restriction base="xs:string" />

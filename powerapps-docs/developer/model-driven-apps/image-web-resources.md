@@ -1,6 +1,6 @@
 ---
 title: Webbildressourcen (modellgesteuerte Apps) | Microsoft Docs
-description: 'Infos zu Bildwebressourcen, um Bilder zur Verwendung bereitzustellen.'
+description: Infos zu Bildwebressourcen, um Bilder zur Verwendung bereitzustellen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a31cdc5c3c987f68ab9e46aef985501737d3c0f9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748462"
 ---
 # <a name="image-web-resources"></a>Bildwebressourcen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/image-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/image-web-resources -->
 
 Verwenden von Bildwebressourcen, um  Bilder zur Verwendung in modellgesteuerten Apps  bereitzustellen.  
 
@@ -107,7 +113,7 @@ Verwenden Sie Vektorformat (SVG)-Webressourcen für alle Symbole, die in der Anw
 ### <a name="see-also"></a>Siehe auch  
  [Webressourcen](web-resources.md)   
  [Verwenden von Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   
- [Verwenden von Stylesheet (CSS)-Webressourcen](css-web-resources.md)   
+ [Verwenden von Stylesheet(CSS)-Webressourcen](css-web-resources.md)   
  [Verwenden von Webressourcen für Skripts (JScript)](script-jscript-web-resources.md)   
  [Verwenden von Daten (XML)-Webressourcen](data-xml-web-resources.md)   
  [Verwenden von Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  

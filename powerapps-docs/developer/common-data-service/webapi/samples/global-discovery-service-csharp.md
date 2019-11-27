@@ -1,19 +1,25 @@
 ---
-title: 'Web API Global Discovery Service Beispiel (C#) (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie Sie den Web API Global Discovery Service nutzen'
+title: Web-API Globaler Discovery Service-Beispiel (C#) (Common Data Service) | Microsoft-Dokumentation
+description: Dieses Beispiel zeigt, wie Sie den Web API Global Discovery Service nutzen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 39cfa895ac26dedde2dec4ab97d89937375af81e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748606"
 ---
 # <a name="web-api-global-discovery-service-sample-c"></a>Web API Globaler Discovery Service Beispiel (C#)
 
@@ -25,7 +31,7 @@ Dieses Beispiel ist auf Github verfügbar unter [https://github.com/Microsoft/Po
 
 ## <a name="what-this-sample-does"></a>Funktionsweise:
 
-Dieses Beispiel gibt die verfügbaren Common Data Service-Instanzen für gegebene Benutzeranmeldeinformationen zurück.
+Dieses Beispiel gibt die verfügbaren Common Data Service-Instanzen für angegebene Benutzeranmeldeinformationen zurück.
 
 ## <a name="how-this-sample-works"></a>Wie dieses Beispiel funktioniert
 

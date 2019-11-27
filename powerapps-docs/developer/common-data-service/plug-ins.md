@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen (Common Data Service) | Microsoft Docs
-description: 'Ein Plug-In ist eine .NET-Assembly, die Sie zum Common Data Service hochladen können. Klassen innerhalb der Assemblys können für bestimmte Ereignisse (Schritte) innerhalb des Ereignisframeworks registriert werden. Der Code innerhalb der Klasse bietet Ihnen eine Möglichkeit, auf das Ereignis zu reagieren, sodass Sie das Standardverhalten der Plattform erweitern oder ändern können.'
+description: Ein Plug-In ist eine .NET-Assembly, die Sie zum Common Data Service hochladen können. Klassen innerhalb der Assemblys können für bestimmte Ereignisse (Schritte) innerhalb des Ereignisframeworks registriert werden. Der Code innerhalb der Klasse bietet Ihnen eine Möglichkeit, auf das Ereignis zu reagieren, sodass Sie das Standardverhalten der Plattform erweitern oder ändern können.
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: phecke
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 110a530c25c7f7e502c26da18bf2f473d53b6673
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748665"
 ---
 # <a name="use-plug-ins-to-extend-business-processes"></a>Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen
 
@@ -30,9 +36,6 @@ Die Klassen im Assembly, die für einen Schritt registriert werden können, müs
 - Initiieren Sie weitere Aktionen mithilfe des Organisationsservice, um Automatisierung hinzuzufügen
 
 Plug-Ins können so konfiguriert werden, dass sie synchron oder asynchron ausgeführt werden. Ein synchrones Plug-In bewirkt, dass der Vorgang wartet, bis der Code im Plug-In ausgeführt wurde. Dies wirkt sich auf die wahrgenommene Leistung des Systems aus. Die Vorgänge in einem asynchronen Plug-In werden in einer Warteschlange platziert und ausgeführt, nachdem der Vorgang abgeschlossen wurde, sodass der Vorgang mit minimaler Unterbrechung ausgeführt werden kann.
-
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-section](./includes/cc-d365ce-note-section.md)] [Weitere Informationen zum Erweitern von Geschäftsprozessen (Customer Engagement)](/dynamics365/customer-engagement/developer/write-plugin-extend-business-processes)
 
 ## <a name="when-to-use-plug-ins"></a>Verwenden von Plug-Ins
 

@@ -1,16 +1,8 @@
----
-ms.openlocfilehash: 252f09737dbf55309a64ef5d02d479fde0e61c0e
-ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67224861"
----
-Wenn Sie die E-Mail-Nachverfolgung aktivieren, ein Feature der eingebetteten Intelligenz, werden beim Senden einer E-Mail, die mit der Einstellung **Folgen** markiert wurde, von [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] Informationen über Interaktionen mit der E-Mail durch die Empfänger gesammelt und in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gespeichert. Dort können KPIs zu Aktivitäten des Empfängers und Interaktionen mit „verfolgten“ E-Mails berechnet werden.  
+Wenn Sie die E-Mail-Nachverfolgung aktivieren, ein Feature von „Eingebettete Intelligenz“, werden beim Senden einer E-Mail, die mit der Einstellung **Folgen** markiert wurde, von [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] Informationen über Interaktionen mit der E-Mail durch die Empfänger gesammelt und in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gespeichert. Dort können KPIs zu Aktivitäten des Empfängers und Interaktionen mit „verfolgten“ E-Mails berechnet werden.  
   
- Systemadministratoren können die E-Mail-Nachverfolgung aktivieren, indem sie das Feature auf der Registerkarte **E-Mail-Nachverfolgung** in „Eingebettete Intelligenz“ bereitstellen. Anschließend können Administratoren die E-Mail-Nachverfolgung in der Organisation unter **Einstellungen** über den Knoten **Intelligenzkonfiguration** deaktivieren.  
+ Systemadministratoren können die E-Mail-Nachverfolgung aktivieren, indem sie das Feature auf der Registerkarte **E-Mail-Nachverfolgung** in „Eingebettete Intelligenz“ bereitstellen. Anschließend können Administratoren die E-Mail-Nachverfolgung in der Organisation über den Knoten **Intelligenzkonfiguration** unter **Einstellungen** deaktivieren.  
   
- Wenn das Feature deaktiviert wurde, können von [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] gesendete E-Mails nicht mehr verfolgt werden, weder über die Benutzeroberfläche noch programmgesteuert. Darüber hinaus werden keine Empfängerinteraktionsdaten mehr zu E-Mails gesammelt, die mit der Einstellung **Folgen** markiert wurden. Alle zuvor gesammelten Daten verbleiben in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] und sind wieder verfügbar, wenn das Feature in der Organisation erneut aktiviert wird. Daten werden 90 Tage lang beibehalten, nachdem Kunden ihre Abonnements bei Microsoft beenden. [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Benutzer können die „Eingebettete Intelligenz“-Funktion „E-Mail-Nachverfolgung“ auch für einzelne Kontakte oder Leads deaktivieren, indem sie unter **Kontaktvoreinstellungen** die Einstellung **E-Mail folgen** ändern.  
+ Wenn das Feature deaktiviert wurde, können von [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] gesendete E-Mails nicht mehr verfolgt werden, weder über die Benutzeroberfläche noch programmgesteuert. Darüber hinaus werden keine Empfängerinteraktionsdaten mehr zu E-Mails gesammelt, die mit der Einstellung **Folgen** markiert wurden. Alle zuvor gesammelten Daten verbleiben in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] und sind wieder verfügbar, wenn das Feature in der Organisation erneut aktiviert wird. Daten werden 90 Tage lang beibehalten, nachdem Kunden ihre Abonnements bei Microsoft beenden. [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Benutzer können die „Eingebettete Intelligenz“-Funktion „E-Mail-Nachverfolgung“ auch für einzelne Kontakte oder Leads deaktivieren, indem sie die Einstellung **E-Mail folgen** unter **Kontaktvoreinstellungen** ändern.  
   
  Die im Rahmen der E-Mail-Nachverfolgung verfügbaren [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Komponenten und -Dienste werden im Folgenden ausführlich dargestellt.  
   

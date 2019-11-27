@@ -1,6 +1,6 @@
 ---
 title: Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API (Common Data Service) | Microsoft Docs
-description: 'Hier erfahren Sie, wie Sie Web-API verwenden können, um die zur Laufzeit die Organisationen zu erkunden, oder Instanzen, zu denen der angemeldete Benutzer gehört.'
+description: Hier erfahren Sie, wie Sie Web-API verwenden können, um die zur Laufzeit die Organisationen zu erkunden, oder Instanzen, zu denen der angemeldete Benutzer gehört.
 ms.custom: ''
 ms.date: 04/22/2019
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 2db13b4e-0e7c-4f25-b7be-70a612fb96e2
 caps.latest.revision: 18
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 429f199a9178c2d304331814ae1a9fa6e1ffaa96
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748500"
 ---
 # <a name="discover-the-url-for-your-organization-using-the-web-api"></a>Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API.
 
@@ -78,9 +84,9 @@ Ein Entitätssatz mit der Bezeichnung `Instances` wird zum Abrufen von Instanzin
 Common Data Service-Web-API-Instanzen des Ermittlungsdiensts benötigen die Authentifizierung mit OAuth-Zugriffstokens.
 
 Wenn der Ermittlungsdienst für die OAuth-Authentifizierung konfiguriert ist, löst eine Anforderung, die an die Service-Web-API ohne einen Zugriffstoken gesendet wird, eine Trägerabfrage mit der Autorität des "allgemeinen" Endpunkts und der Ressourcenkennung des Service aus.
-### <a name="cors-support"></a>Unterstützung von CORS
+### <a name="cors-support"></a>CORS-Support
 
-Die Suchdienst-Web-API unterstützt den CORS-Standard für den ursprungsübergreifenden Zugriff, wie das für die Web-API zutrifft.  Für weitere Informationen zum CORS-Support siehe [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung zu verbinden](../oauth-cross-origin-resource-sharing-connect-single-page-application.md).  
+Die Ermittlungsdienst-Web-API unterstützt den CORS-Standard für den ursprungsübergreifenden Zugriff, wie das für die Web-API zutrifft.  Für weitere Informationen zu CORS-Support siehe [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung zu verbinden](../oauth-cross-origin-resource-sharing-connect-single-page-application.md)  
   
 ### <a name="examples"></a>Beispiele  
   

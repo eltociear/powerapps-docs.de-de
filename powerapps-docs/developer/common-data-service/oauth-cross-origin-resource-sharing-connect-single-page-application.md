@@ -1,6 +1,6 @@
 ---
-title: Verwenden von OAuth mit Cross-Origin Resource Sharing zum Verbinden einer Single Page-Anwendung (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie OAuth mit Cross-Origin Resource Sharing verwenden, um eine Single Page-Anwendung mit zu verbinden'
+title: Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung zu verbinden (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie OAuth mit Cross-Origin Resource Sharing verwenden, um eine Single Page-Anwendung mit zu verbinden
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -9,23 +9,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: oauth-cross-origin-resource-sharing-connect-single-page-application
 caps.latest.revision: 11
 author: paulliew
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c875326bd6c93c9b9d1ab946cc22e251820773c6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752928"
 ---
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/oauth-cross-origin-resource-sharing-connect-single-page-application 
 
 -->
 # <a name="use-oauth-with-cross-origin-resource-sharing-to-connect-a-single-page-application"></a>Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung zu verbinden
 
-Sie können eine Single Page Apps (SPAs) erstellen, die JavaScript verwendet, um mit Common Data Service-Daten zu arbeiten. Um dies zu ermöglichen, wird Cross-Origin Resource Sharing (CORS) aktiviert, so das SPAs die Browsereinschränkungen, die normalerweise Anforderungen über Domänengrenzen hinweg beschränken, umgehen können.  
+Sie können Single Page Apps (SPAs) erstellen, die JavaScript verwenden, um mit Common Data Service-Daten zu arbeiten. Um dies zu ermöglichen, wird Cross-Origin Resource Sharing (CORS) aktiviert, so das SPAs die Browsereinschränkungen, die normalerweise Anforderungen über Domänengrenzen hinweg beschränken, umgehen können.  
   
 > [!NOTE]
 >  Die CORS-Unterstützung wird nur bei Verwendung der Web-API bereitgestellt. Sie können den Organisationsservice oder den veralteten Organisationsdatendienst nicht verwendet.  
@@ -38,9 +44,9 @@ SPAs hängen von der extensiven Nutzung von clientseitigem JavaScript ab, um ein
   
 <a name="bkmk_use_cors"></a>
 
-## <a name="use-cors-with-common-data-service"></a>CORS mit Common Data Service verwenden 
+## <a name="use-cors-with-common-data-service"></a>Verwendung CORS mit Common Data Service 
  
-Die [Cross-Origin Resource Sharing-Spezifikation](http://www.w3.org/TR/cors/) stellt eine genaue Beschreibung der Implementierung und Nutzung von CORS bereit. Sie beschreibt die verschiedenen Header und Preflight-Anforderungen, die Sie für CORS benötigen. Die guten Nachricht ist, dass Sie kein Experte in CORS sein müssen, um es mit Common Data Service zu nutzen. Der serverseitige Teil wurde schon für Sie erledigt. Sie müssen nur noch wissen, wie Sie ihn nutzen.  Sie müssen nicht alle internen Arbeitsweisen von CORS verstehen, um es mit Common Data Service zu nutzen. Stattdessen können Sie die [Azure Active Directory Authentication Library für JavaScript](https://github.com/AzureAD/azure-activedirectory-library-for-js) (adal.js) verwenden. Sie kümmert sich um die meisten Dinge von CORS. Da Common Data Service über Azure Active Directory authentifiziert werden, stellt ADAL.js die unterstützte Methode für die Authentifizierung von SPA-Benutzern dar.  
+Die [Cross-Origin Resource Sharing-Spezifikation](https://www.w3.org/TR/cors/) stellt eine genaue Beschreibung der Implementierung und Nutzung von CORS bereit. Sie beschreibt die verschiedenen Header und Preflight-Anforderungen, die Sie für CORS benötigen. Die guten Nachricht ist, dass Sie kein Experte, in CORS sein müssen, um es mit Common Data Service zu nutzen. Der serverseitige Teil wurde schon für Sie erledigt. Sie müssen nur noch wissen, wie Sie ihn nutzen.  Sie müssen nicht die alle internen Arbeitsweise von CORS verstehen, um es mit Common Data Service zu nutzen. Stattdessen können Sie die [Azure Active Directory Authentication Library für JavaScript](https://github.com/AzureAD/azure-activedirectory-library-for-js) (adal.js) verwenden. Sie kümmert sich um die meisten Dinge von CORS. Da Common Data Service über Azure Active Directory authentifiziert wird, stellt ADAL.js die unterstützte Methode für die Authentifizierung von SPA-Benutzern dar.  
   
 <a name="bkmk_how_adaljs_works"></a>
 
@@ -50,9 +56,9 @@ Die Kernbibliothek ist `adal.js`. Sie können auf minimierte Version dieser Bibl
   
 Die adal.js-Bibliothek enthält die Low-Level-Funktionen zur Authentifizierung über OAuth2. Adal.js ist so konzipiert, dass es mit anderen Frameworks verwendet werden kann. Es gibt z. B. eine `adal-angular.js`-Bibliothek, die dazu konzipiert ist, mit dem Angular-Framework verwendet zu werden. Sie arbeiten mit dieser Bibliothek, indem Sie bestimmte Konfigurationseigenschaften festlegen und dann warten, bis ein Ereignis eintritt, dass den Interaktionsfluss startet. Dies kann die z. B. der Aufruf der `login`-Funktion sein, oder, wenn die Anwendung Routingfunktionen hat, kann die Authentifizierung über die Konfiguration des Controllers für die Route gestartet werden.  
   
-Wenn eine Authentifizierung erforderlich ist, wird der Benutzer auf die Anmeldeseite weitergeleitet. Dort kann er Anmeldeinformationen eingeben. Nach der erfolgreichen Authentifizierung wird er mit Token-Informationen als Fragment (über `#`) der URL zurück zur aufrufenden Seite geleitet. Dies ermöglicht der SPA das Abrufen des Tokens und das lokale oder sitzungsgebundene Speichern im Browser. Dies bedeutet, dass die gesamte Seite nach der Authentifizierung neu geladen wird. Dieses Mal stehen jedoch Informationen zum autorisierten Benutzer zur Verfügung, und die Anwendung kann den Vorgang fortsetzen, um die Common Data Service-Web-API oder andere Ressourcen aufzurufen.  
+Wenn eine Authentifizierung erforderlich ist, wird der Benutzer auf die Anmeldeseite weitergeleitet. Dort kann er Anmeldeinformationen eingeben. Nach der erfolgreichen Authentifizierung wird er mit Token-Informationen als Fragment (über `#`) der URL zurück zur aufrufenden Seite geleitet. Dies ermöglicht der SPA das Abrufen des Tokens und das lokale oder sitzungsgebundene Speichern im Browser. Dies bedeutet, dass die gesamte Seite nach der Authentifizierung neu geladen wird. Dieses Mal stehen jedoch Informationen zum autorisierten Benutzer zur Verfügung, und die Anwendung kann damit fortfahren, die Common Data Service-Web-API oder andere Ressourcen aufzurufen.  
   
-Beim Aufrufen der Common Data Service-Web-API müssen Sie den Token-Wert in einen Anmeldungs-Header mit Ihrem XMLHTPPRequest einbinden. Da Tokens Ablaufdaten haben sollten Sie dafür sorgen, dass es nicht abläuft, während der Benutzer die SPA verwendet. Beachten Sie, dass die Eingabe neuer Anmeldeinformationen erfordert, dass der gesamte Inhalt der SPA-Seite an die Anmeldeseite übertragen wird. Dadurch würde eine sehr schlechte Benutzerfreundlichkeit zur Folge haben, wenn es geschehen würde, während Benutzern gerade aktiv ist. Um dieses zu vermeiden, verpacken Sie die Web-API-Aufrufe in einer `acquireToken`-Funktion, so dass Sie die Gültigkeit des Tokens ggf. überprüfen und es bei Bedarf ohne Wechsel zu Anmeldeseite aktualisieren können.  
+Beim Aufrufen der Common Data Service-Web-API müssen Sie den Token-Wert in einen Autorisierungsheader mit Ihrem XMLHTPPRequest einbinden. Da Tokens Ablaufdaten haben sollten Sie dafür sorgen, dass es nicht abläuft, während der Benutzer die SPA verwendet. Beachten Sie, dass die Eingabe neuer Anmeldeinformationen erfordert, dass der gesamte Inhalt der SPA-Seite an die Anmeldeseite übertragen wird. Dadurch würde eine sehr schlechte Benutzerfreundlichkeit zur Folge haben, wenn es geschehen würde, während Benutzern gerade aktiv ist. Um dieses zu vermeiden, verpacken Sie die Web-API-Aufrufe in einer `acquireToken`-Funktion, so dass Sie die Gültigkeit des Tokens ggf. überprüfen und es bei Bedarf ohne Wechsel zu Anmeldeseite aktualisieren können.  
   
 <a name="bkmk_preparing_to_use_adaljs"></a>
 
@@ -60,12 +66,12 @@ Beim Aufrufen der Common Data Service-Web-API müssen Sie den Token-Wert in eine
 
  Um die SPA für adal.js zu konfigurieren müssen Sie folgendes durchführen:  
   
-1.  Registrieren Sie die Anwendung beim Azure Active Directory-Mandaten  
+1.  Registrieren Sie die Anwendung mithilfe des Azure Active Directory Mandanten  
 2.  Exportieren Sie das registrierte Anwendungsmanifest und bearbeiten Sie dieses, um OAuth2 Implicit Flow zuzulassen. Importieren Sie anschließend die JSON-Datei zurück in die Anwendungsregistrierung.  
 3.  Legen Sie Konfigurationsvariablen in der SPA mit Informationen aus dieser Registrierung fest.  
      Sie müssen die folgenden einbeziehen:  
   
-    -   Die URL zu Ihrer Common Data Service-Organisation  
+    -   Die URL Ihrer Common Data Service-Organisation  
     -   Der Name des Active Directory-Mandanten, den Ihrer Organisation zur Authentifizierung nutzt.  
     -   Die Client-ID, die Sie erhalten, wenn Sie die Anwendung registrieren  
     -   Die URL, über die die SPA während der Entwicklung bereitgestellt oder debugged wird  
@@ -75,6 +81,6 @@ Beim Aufrufen der Common Data Service-Web-API müssen Sie den Token-Wert in eine
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden von OAuth zur Herstellung einer Verbindung mit den Webdiensten von Common Data Service](connect-web-services-using-oauth.md)   
+[OAuth verwenden, um eine Verbindung mit Common Data Service-Webdiensten herzustellen](connect-web-services-using-oauth.md)   
 
 

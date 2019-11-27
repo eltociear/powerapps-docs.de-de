@@ -1,6 +1,6 @@
 ---
-title: Geschäftslogik mit Code anwenden (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Entwickler Geschäftslogik in Common Data Service mit Code anwenden können.'
+title: Geschäftslogik mit Code anwenden (Common Data Service) | Microsoft-Dokumentation
+description: Weitere Informationen, wie Entwickler Geschäftslogik in Common Data Service mit Code anwenden können.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -14,12 +14,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac1f673b927280cd2cdedb967a1f504f4ce68688
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748257"
 ---
-
 # <a name="apply-business-logic-using-code"></a>Geschäftslogik mit Code anwenden
 
 Wenn immer möglich, sollten Sie zunächst überlegen, eine der mehreren deklarativen Prozessoptionen zur Definition oder Anwendung der Geschäftslogik anzuwenden. Weitere Informationen: [Anwenden von Geschäftslogik in Common Data Service](../../maker/common-data-service/cds-processes.md)

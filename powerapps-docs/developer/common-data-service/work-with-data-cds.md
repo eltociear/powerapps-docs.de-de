@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Daten mithilfe von Code in Common Data Service (PowerApps) | Microsoft Docs
+title: Arbeiten mit Daten mit Hilfe von Code in Common Data Service (PowerApps) | Microsoft-Dokumentation
 description: 'Common Data Service bietet zwei Webdienste, die Sie verwenden können, um mit Daten zu interagieren: Web-API und Organisationsdienst.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,12 +10,18 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d905bdcdd8cccccf841c16579243d4788faa6ab3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748591"
 ---
-# <a name="work-with-data-using-code-in-common-data-service"></a>Arbeiten mit Daten mithilfe von Code in Common Data Service
+# <a name="work-with-data-using-code-in-common-data-service"></a>Arbeiten mit Daten mit Hilfe von Code in Common Data Service
 
 Common Data Service verfügt über [Entitäten](entities.md), die verwendet werden, um Geschäftsdaten zu modellieren und zu verwalten. Sie können Standardentitäten verwenden oder Ihre eigenen benutzerdefinierten Entitäten erstellen, um Daten zu speichern. 
 
@@ -35,7 +41,7 @@ Weitere Informationen: [Verwenden der Common Data Service-Web-API](webapi/overvi
 
 Verwenden Sie die .NET Framework-SDK-Assemblys für Projekte, bei denen Plug-Ins oder Workflowerweiterungen geschrieben werden müssen. 
 
-Weitere Informationen: [Verwenden des Common Data Service-Organisationsdiensts](org-service/overview.md)
+Weitere Informationen: [Verwenden des Common Data Service-Organisationsdienstes](org-service/overview.md)
 
 > [!NOTE]
 > Verwenden Sie die Xrm-Tooling-Assemblys, wenn Sie eine Windows-Client-Anwendung erstellen. Weitere Informationen: [Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools](xrm-tooling/build-windows-client-applications-xrm-tools.md)

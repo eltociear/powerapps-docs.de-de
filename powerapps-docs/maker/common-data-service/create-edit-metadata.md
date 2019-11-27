@@ -1,6 +1,6 @@
 ---
-title: Entitäten und Metadaten im Common Data Service | MicrosoftDocs
-description: Entitäten und Metadaten im Common Data Service kennenlernen
+title: Entitäten und Metadaten in Common Data Service | Microsoft-Dokumentation
+description: Weitere Informationen über Entitäten und Metadaten in Common Data Service
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,26 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 88b18946-474c-4c94-8e4c-27532f930757
 caps.latest.revision: 28
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3aeb07c29178570ca17426cca46dd7cbc73a2aca
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706985"
 ---
+# <a name="entities-and-metadata-in-common-data-service"></a>Entitäten und Metadaten in Common Data Service
 
-# <a name="entities-and-metadata-in-common-data-service"></a>Entitäten und Metadaten im Common Data Service
+Common Data Service wurde entworfen, damit Sie ein Datenmodell für Ihre Anwendung schnell und einfach erstellen können. Normalerweise sollten Sie sich nicht mit einigen der Informationen zu Metadaten befassen müssen, die in diesem Thema vorstellt werden. Wenn Sie jedoch besser verstehen möchten, wie Apps, die Common Data Service verwenden, funktionieren, oder wenn Sie die Möglichkeiten auswerten möchten, kann das Verständnis der Metadaten, die von Common Data Service verwendet werden, Ihnen entsprechende Erkenntnisse vermitteln.
 
-Common Data Service wurde entworfen, damit Sie ein Datenmodell für Ihre Anwendung schnell und einfach erstellen können. Normalerweise sollten Sie sich nicht mit einigen der Informationen zu Metadaten befassen müssen, die in diesem Thema vorstellt werden. Aber wenn Sie ein tieferes Verständnis davon erreichen möchten, wie Apps, die Common Data Service verwenden, funktionieren, oder wenn Sie die Möglichkeiten auswerten, kann Verständnis der Metadaten, die von Common Data Service verwendet werden, Ihnen Einsichten vermitteln.
-
-*Metadaten* bedeutet Daten über Daten. Common Data Service bietet eine flexible Plattform für Sie, da es relativ einfach ist, die Definitionen der Daten zu bearbeiten, die von der Umgebung verwendet werden. Im Common Data Service sind die Metadaten einer Sammlung von Entitäten. Entitäten beschreiben die Arten von Daten, die in der Datenbank gespeichert werden.  Jede Entität entspricht einer Datenbanktabelle, und jedes Feld (auch als Attribut bezeichnet) in einer Entität stellt eine Spalte in dieser Tabelle dar. Entitätsmetadaten sind die Daten, die steuern, welche Arten von Datensätzen Sie erstellen und welche Arten von Aktionen dafür durchgeführt werden können. Wenn Sie die Anpassungstools verwenden, um Entitäten, Felder oder Entitätsbeziehungen erstellen oder bearbeiten, bearbeiten Sie diese Metadaten. 
+*Metadaten* bedeutet Daten über Daten. Common Data Service bietet eine flexible Plattform für Sie, da es relativ einfach ist, die Definitionen der Daten zu bearbeiten, die von der Umgebung verwendet werden. In Common Data Service sind die Metadaten eine Sammlung von Entitäten. Entitäten beschreiben die Arten von Daten, die in der Datenbank gespeichert werden.  Jede Entität entspricht einer Datenbanktabelle, und jedes Feld (auch als Attribut bezeichnet) in einer Entität stellt eine Spalte in dieser Tabelle dar. Entitätsmetadaten sind die Daten, die steuern, welche Arten von Datensätzen Sie erstellen und welche Arten von Aktionen dafür durchgeführt werden können. Wenn Sie die Anpassungstools verwenden, um Entitäten, Felder oder Entitätsbeziehungen erstellen oder bearbeiten, bearbeiten Sie diese Metadaten. 
   
 Verschiedene Clients, mit denen Benutzer mit den Daten in Ihrer Umgebung interagieren, hängen von den Entitätsmetadaten ab und passen sich an, wenn Sie die Metadaten anpassen. Aber diese Clients hängen auch von anderen Daten ab, um zu steuern, welche visuellen Elemente angezeigt werden, welche benutzerdefinierte Logik angewendet wird und wie die Sicherheit geregelt werden soll. Diese Systemdaten werden auch in Entitäten gespeichert, die Entitäten selbst können jedoch nicht angepasst werden.
 

@@ -10,10 +10,16 @@ author: Kumarvivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac9ec8cf1572c657422ae77330024346be79ad5d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748449"
 ---
 # <a name="sample-dashboards"></a>Beispiel-Dashboards
 
@@ -25,7 +31,7 @@ Dieses Thema enthält Beispiel-Dashboards zusammen mit den entsprechenden FormXM
 ## <a name="dashboard-with-charts-and-grids"></a>Dashboard mit Diagrammen und Rastern  
  Im Folgenden wird ein Beispiel-Dashboard gezeigt, das vier Komponenten hat: drei Diagramme und ein Raster. Dies ist eines der standardmäßigen Dashboards im Besitz der Organisation, die in modellgestützten Apps verfügbar ist.  
   
- ![Beispiel-Dashboard](media/dashboard-sample.png "Beispiel-Dashbaord: Microsoft Dynamics 365 Übersicht")  
+ ![Beispiel-Dashboard](media/dashboard-sample.png "Beispiel-Dashboard: Microsoft Dynamics 365-Übersicht")  
   
 ### <a name="formxml"></a>FormXML  
  Das folgende Beispiel zeigt die FormXML-Datei für dieses Dashboard.  

@@ -1,6 +1,6 @@
 ---
-title: 'Sie können NavBar deaktivieren, wenn Sie Entitätsformulare von Ansichten programmgesteuert öffnen | MicrosoftDocs'
-description: 'Das Öffnen von Entitätsformularen oder Ansichten mit einer URL kann zu langsamerer Clientleistung auf Latenznetzwerken führen, wenn die Navigationsleiste (NavBar) aktiviert ist.'
+title: Sie können NavBar deaktivieren, wenn Sie Entitätsformulare von Ansichten programmgesteuert öffnen | MicrosoftDocs
+description: Das Öffnen von Entitätsformularen oder Ansichten mit einer URL kann zu langsamerer Clientleistung auf Latenznetzwerken führen, wenn die Navigationsleiste (NavBar) aktiviert ist.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 3/04/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 359c505c3df1f2b88268dba2e7da005465f29d84
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748772"
 ---
 # <a name="consider-disabling-navbar-when-programmatically-opening-entity-forms-or-views"></a>Sie können NavBar deaktivieren, wenn Sie Entitätsformulare von Ansichten programmgesteuert öffnen
 
@@ -80,7 +86,7 @@ function enabledNavBarExplicit() {
 
 ## <a name="additional-information"></a>Weitere Informationen
 
-Wenn Sie weitere Datensätze aus den modellgestützten Apps öffnen, wird die Navigationsleiste mit den Bereichen und Unterbereichen geladen, die innerhalb der Siteübersicht definiert werden.  Darüber hinaus wird das [Office-App-Startprogramm](https://support.office.com/article/Meet-the-Office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) gerendert, das die Office 365-Apps angezeigt, auf die der Benutzer Zugriff hat.<br/>
+Wenn Sie weitere Datensätze aus den modellgestützten Apps öffnen, wird die Navigationsleiste mit den Bereichen und Unterbereichen geladen, die innerhalb der Siteübersicht definiert werden.  Darüber hinaus wird das [Office-App-Startprogramm](https://support.office.com/article/Meet-the-Office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) gerendert, das die Office 365-Apps anzeigt, auf die der Benutzer Zugriff hat.<br/>
 ![Vergleich der aktivierten und deaktivierten NavBar](../media/navbar_comparison_enabled_disabled.png)
 
 <a name='seealso'></a>

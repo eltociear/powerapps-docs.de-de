@@ -1,38 +1,44 @@
 ---
-title: 'Importieren, Aktualisieren und Exportieren von Lösungen | MicrosoftDocs'
-description: 'Erfahren Sie, wie eine Lösung in PowerApps importiert, aktualisiert und exportiert wird'
+title: Importieren, Aktualisieren und Exportieren von Lösungen | MicrosoftDocs
+description: Erfahren Sie, wie Sie eine Lösung in PowerApps importieren, aktualisieren und exportieren.
 ms.custom: ''
-ms.date: 11/06/2018
+ms.date: 09/30/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 56363ea3-ea76-4311-9b7a-b71675e446fb
 caps.latest.revision: 57
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: de2c4a4ecefe303f607a9d7f19d892eae2c4bffb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701573"
 ---
 # <a name="import-update-and-export-solutions"></a>Lösungen importieren, aktualisieren und exportieren 
 
- Sie können Lösungen mithilfe der unten angegebenen Schritte manuell importieren. Importieren Sie nur Lösungen, die von einer vertrauenswürdigen Quelle stammen. Anpassungen können Code enthalten, durch den Daten an externe Quellen gesendet werden. Sie können die **Standardlösung** nur in die Organisation importieren, von der sie exportiert wurde, aber nicht in eine andere Organisation.  
+ Sie können Lösungen mithilfe der unten angegebenen Schritte manuell importieren. Importieren Sie nur Lösungen, die von einer vertrauenswürdigen Quelle stammen. Anpassungen können Code enthalten, durch den Daten an externe Quellen gesendet werden.   
   
 1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.  
   
 2.  Wählen Sie in der Lösungsliste die Option **Import** aus.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Lösung importieren](media/solution-import.png "Lösung importieren") 
+    > ![Importieren einer Lösung](media/solution-import.png "Importieren einer Lösung") 
   
 3.  Navigieren Sie im Dialogfeld **Lösung importieren** , wählen Sie Schritt **Lösungspaket auswählen** und **wählen die Datei**, gehen Sie zur komprimierten Datei (ZIP- oder CAB-Datei), die die Lösung enthält, die Sie importieren möchten. 
   
@@ -87,9 +93,12 @@ search.app:
 <a name="BKMK_ExportSolutions"></a>   
 
 ## <a name="export-solutions"></a>Exportieren von Lösungen  
- Es wird empfohlen, dass Sie Ihre nicht verwalteten Anpassungen regelmäßig exportieren, damit Sie für alle Fälle über ein Backup verfügen. Verwaltete Lösungen können nicht exportiert werden. Sie können entweder PowerApps Lösungen exportieren, oder Sie können sie mithilfe der klassischen Erfahrung exportieren. 
+ Wir empfehlen Ihnen, eine nicht verwaltete Lösung zu erstellen, die Sie für den Export Ihrer Anpassungen verwenden können. Exportieren Sie dann Ihre Anpassungen regelmäßig, so dass Sie ein Backup haben, falls etwas passiert. Verwaltete Lösungen können nicht exportiert werden. Sie können entweder Lösungen von PowerApps exportieren oder mit der klassischen Erfahrung exportieren. 
  
-### <a name="export-from-powerapps"></a>Exportieren aus PowerApps
+> [!IMPORTANT]
+> Der Export der Standardlösung wird nicht unterstützt. 
+
+### <a name="export-from-powerapps"></a>Exportieren von PowerApps aus
   
 1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.   
   
@@ -116,7 +125,7 @@ search.app:
   
 6.  Im Schritt **Pakettyp** müssen Sie auswählen, ob die Lösung als **Nicht verwaltete** oder **Verwaltete** exportiert werden soll..  
   
-7.  Der nächste Schritt ermöglicht es Ihnen, eine Ziellösung für eine bestimmte Dynamics 365 for Customer Engagement Version auszuwählen. Diese Option wird in der Regel von ISVs verwendet, die eine Lösung exportieren möchten, welche mit einer früheren Version kompatibel ist. Wenn Sie jedoch diese Lösung in eine Umgbun g importieren möchten, die nicht auf die gleiche Version wie die von Ihnen verwendete Umgebungsversion aktualisiert ist, übernehmen Sie die Standardeinstellung.   
+7.  Im nächsten Schritt können Sie eine Ziellösung für eine bestimmte Version auswählen. Diese Option wird in der Regel von ISVs verwendet, die eine Lösung exportieren möchten, welche mit einer früheren Version kompatibel ist. Wenn Sie jedoch diese Lösung in eine Umgbun g importieren möchten, die nicht auf die gleiche Version wie die von Ihnen verwendete Umgebungsversion aktualisiert ist, übernehmen Sie die Standardeinstellung.   
   
 8.  Wählen Sie **Exportieren** aus, um die Lösungsdatei herunterzuladen.  
   
@@ -125,7 +134,7 @@ search.app:
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
 ## <a name="settings-options-for-solution-export"></a>Einstellungsoptionen für den Lösungsexport  
- Wenn Sie die Lösung aus PowerApps exportieren, missachten Sie diesen Abschnitt. In der folgenden Tabelle sind die verfügbaren Optionen beim Export von Lösungen in der klassischen Erfahrung aufgeführt.  
+ Wenn Sie die Lösung von PowerApps exportieren, beachten Sie bitte diesen Abschnitt nicht. In der folgenden Tabelle sind die verfügbaren Optionen beim Export von Lösungen in der klassischen Erfahrung aufgeführt.  
   
 |Gruppe|Einstellung|Beschreibung|  
 |-----------|-------------|-----------------|  
@@ -137,7 +146,7 @@ search.app:
 |Auftragspräfix|Präfix, das für alle Aufträge in der gesamten App zu verwenden ist.|  
 |Eindeutige Zeichenfolgenlänge|Anzahl der Zeichen, die an Rechnungs-, Angebots- und Auftragsnummern angefügt werden.|  
 |Kalender|Kalendertyp|Kalendertyp für das System. Standardmäßig Gregorianisch US|  
-|Datumsformatcode|Informationen darüber, wie das Datum in Dynamics 365  for Customer Engagement angezeigt wird.|  
+|Datumsformatcode|Informationen darüber, wie das Datum während der Common Data Service angezeigt wird.|  
 |Datumstrennzeichen|Zeichen, das zur Trennung von Monat, Tag und Jahr in Datumsangaben in der gesamten App verwendet wird.|  
 |Max. Termindauer|Maximale Anzahl von Tagen für einen Termin.|  
 |Wochennummer anzeigen|Informationen, durch die angegeben wird, ob die Wochennummer in Kalenderanzeigen in der gesamten App angezeigt werden soll.|  

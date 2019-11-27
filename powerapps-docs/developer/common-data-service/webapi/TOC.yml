@@ -1,6 +1,6 @@
-- name: Arbeiten mit Daten mithilfe von Code
+- name: Verwenden von Daten mit Code
   href: ../work-with-data-cds.md
-- name: Verwenden der Web-API
+- name: Verwendung der Web-API
   href: overview.md
 - name: Erste Schritte
   items:
@@ -8,47 +8,49 @@
       items:
         - name: 'Erste Schritte mit der Web-API (C#)'
           href: get-started-dynamics-365-web-api-csharp.md
-        - name: 'Schnellstart: Web-API-Beispiel (C#)'
+        - name: 'Schnellstart: Web API-Beispiel (C#)'
           href: quick-start-console-app-csharp.md
-        - name: 'Erweiterter Schnellstart (C#)'
+        - name: 'Verbesserter Schnellstart (C#)'
           href: enhanced-quick-start.md
-        - name: Beginnen eines Web-API-Projekts in Visual Studio
+        - name: Starten eines Web-API-Projekts in Visual Studio
           href: start-web-api-project-visual-studio-csharp.md
-- name: Authentifizierung
+- name: Authentifizieren
   href: authenticate-web-api.md
 - name: Typen und Vorgänge
   href: web-api-types-operations.md
-- name: Durchführen von Vorgängen
+- name: Vorgänge ausführen
   items:
-    - name: Erste Schritte beim Ausführen von Vorgängen
+    - name: Erste Schritte mit dem Ausführen von Vorgängen
       href: perform-operations-web-api.md
-    - name: Erstellen von HTTP-Anforderungen und Behandeln von Fehlern
+    - name: HTTP-Anforderungen verfassen und Fehler beheben
       href: compose-http-requests-handle-errors.md
-    - name: Abfragen von Daten
-      href: query-data-web-api.md
-    - name: Abrufen von verknüpften Entitäten mit einer Abfrage
-      href: retrieve-related-entities-query.md
-    - name: Abrufen und Ausführen vordefinierter Abfragen
+    - name: Abfragen von Daten mit der Web-API
+      items:
+        - name: Daten abfragen
+          href: query-data-web-api.md
+        - name: Abrufen von verknüpften Entitäten mit einer Abfrage
+          href: retrieve-related-entities-query.md
+    - name: Abrufen und Ausführen von vordefinierten Abfragen
       href: retrieve-and-execute-predefined-queries.md
-    - name: Erstellen einer Entität
+    - name: Entität erstellen
       href: create-entity-web-api.md
-    - name: Abrufen einer Entität
+    - name: Eine Entität abrufen
       href: retrieve-entity-using-web-api.md
-    - name: Aktualisieren und Löschen von Entitäten
+    - name: Entitäten aktualisieren und löschen
       href: update-delete-entities-using-web-api.md
-    - name: Zuordnen von Entitäten und Aufheben von Zuordnungen
+    - name: Entitäten zuordnen und ihre Zuordnung aufheben
       href: associate-disassociate-entities-using-web-api.md
     - name: Verwenden von Funktionen
       href: use-web-api-functions.md
-    - name: Verwenden von Aktionen
+    - name: Aktionen nutzen
       href: use-web-api-actions.md
     - name: Ausführen von Batchvorgängen
       href: execute-batch-operations-using-web-api.md
-    - name: Annehmen einer anderen Benutzeridentität
+    - name: Annehmen der Identität eines anderen Benutzers
       href: impersonate-another-user-web-api.md
-    - name: Ausführen bedingter Vorgänge
+    - name: Ausführen von bedingten Vorgängen
       href: perform-conditional-operations-using-web-api.md
-    - name: Erkennen von duplizierten Daten
+    - name: Doppelte Daten erkennen
       href: manage-duplicate-detection-create-update.md
 - name: Arbeiten mit Metadaten
   items:
@@ -56,44 +58,44 @@
       href: use-web-api-metadata.md
     - name: Abfragen von Metadaten
       href: query-metadata-web-api.md
-    - name: Abrufen von Metadaten nach Namen oder MetadataId
+    - name: Abrufen von Metadaten über den Namen oder die MetadataId
       href: retrieve-metadata-name-metadataid.md
-    - name: Erstellen und Aktualisieren von Entitätsdefinitionen
+    - name: Entitätsdefinitionen erstellen und aktualisieren
       href: create-update-entity-definitions-using-web-api.md
-    - name: Erstellen und Aktualisieren von Entitätsbeziehungen
+    - name: Entitätsbeziehungen erstellen und aktualisieren
       href: create-update-entity-relationships-using-web-api.md
     - name: Arbeiten mit Optionssätzen
       href: create-update-optionsets.md
-- name: Verwenden von Postman mit der Web-API
+- name: Verwenden von Postman mit Web-API
   items:
     - name: Erste Schritte mit Postman
       href: use-postman-web-api.md
     - name: Einrichten einer Postman-Umgebung
       href: setup-postman-environment.md
-    - name: Verwenden von Postman zum Ausführen von Vorgängen
+    - name: 'Verwenden von Postman, um Operationen durchzuführen'
       href: use-postman-perform-operations.md
-- name: Clientseitiges JavaScript mit Web-API in modellgesteuerten Apps
+- name: Clientseitiges JavaScript mit Web-API in modellgestützten Apps
   href: get-started-web-api-client-side-javascript.md
-- name: Ermitteln der URL für Ihre Organisation
+- name: Die URL für Ihre Organisation entdecken
   items:
     - name: Erste Schritte
       href: discover-url-organization-web-api.md
-    - name: 'Beispiel für den globalen Ermittlungsdienst (C#)'
+    - name: 'Globaler Discovery Service Beispiel (C#)'
       href: samples/global-discovery-service-csharp.md
-- name: Importieren von Daten
-  href: ../import-data.md
+- name: Web-API-Versionen und -Einschränkungen
+  href: web-api-versions.md
 - name: Beispieldaten
   href: ../sample-data.md
 - name: Beispiele
   items:
-    - name: Beispielvorlagen für Datenvorgänge
+    - name: "Datenvorgänge\_– Beispielvorlagen"
       href: web-api-samples.md
       items:
-        - name: Basic-Vorgänge
+        - name: Basisvorgänge
           href: web-api-basic-operations-sample.md
-        - name: Abfragen von Daten
+        - name: Daten abfragen
           href: web-api-query-data-sample.md
-        - name: Bedingte Vorgänge
+        - name: Bedingte Operationen
           href: web-api-conditional-operations-sample.md
         - name: Funktionen und Aktionen
           href: web-api-functions-actions-sample.md

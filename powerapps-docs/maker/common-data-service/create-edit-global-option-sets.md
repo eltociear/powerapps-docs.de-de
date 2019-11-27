@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Bearbeiten globaler Optionssätze (Auswahllisten) – Übersicht für Common Data Service | MicrosoftDocs
+title: Erstellen und Bearbeiten einer Übersicht über globale Optionssätze (Auswahllisten) für Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
@@ -8,18 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: f06b8941-8dca-4601-b965-341cfb6fc3b2
 caps.latest.revision: 11
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1b89a4f87938ac0147a6724e27441517728baef
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757838"
 ---
 # <a name="create-and-edit-global-option-sets-overview"></a>Erstellen und Bearbeiten globaler Optionssätze – Übersicht 
 
@@ -36,8 +43,8 @@ Sie können zwei Designer verwenden, um globale Optionssätze zu erstellen oder 
 
 |Designer| Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Ein Optionssatz erstellen](custom-picklists.md) |
-|Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen. <br />Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mit Projekt-Explorer](create-edit-global-option-sets-solution-explorer.md) |
+|[PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Ein Optionssatz erstellen](custom-picklists.md) |
+|Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen. <br />Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mithilfe des Projektmappen-Explorers](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
 > Sie können globale Optionssätze in Ihrer Umgebung auch wie folgt erstellen:
@@ -46,7 +53,7 @@ Sie können zwei Designer verwenden, um globale Optionssätze zu erstellen oder 
 
 Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. 
 
-Sie können das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden, um mit globalen Optionssätzen zu arbeiten, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
+Sie können das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden, um mit globalen Optionssätzen zu arbeiten, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
 
 - Optionen Farben zuweisen
 - Die Reihenfolge von Optionen ändern
@@ -58,7 +65,7 @@ Sie können das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&
 ## <a name="see-also"></a>Siehe auch
 
 [Einen Optionssatz erstellen](custom-picklists.md)<br />
-[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mit Lösungs-Explorer](create-edit-global-option-sets-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mithilfe des Projektmappen-Explorers](create-edit-global-option-sets-solution-explorer.md)<br />
 [Entwicklerdokumentation: Globale Optionssätze anpassen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets).
   
 

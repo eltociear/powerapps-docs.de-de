@@ -1,6 +1,6 @@
 ---
-title: Erkennen von doppelten Daten mithilfe der Web-API (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie mit dem MSCRM.SuppressDuplicateDetections-Header und der Common Data Service-Web-API Duplikate erkennen.'
+title: Erkennen von doppelten Daten mit der Web-API (Common Data Service) | Microsoft-Dokumentation
+description: Lesen Sie, wie Sie mit dem MSCRM.SuppressDuplicateDetections-Header und der Common Data Service-Web-API Duplikate erkennen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,22 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: AE107774-4545-44B4-94C8-A0271EFA7876
 caps.latest.revision: 11
 author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e563b0bb6800f6c9028cb29993fd7b79908975c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748617"
 ---
-
 # <a name="detect-duplicate-data-using-the-web-api"></a>Erkennen von doppelten Daten mit der Web-API
 
-Common Data Service erlaubt, doppelte Datensätze eines vorhandenen Datensatzes zu erkennen, um die Richtigkeit der Daten zu wahren. Ausführliche Informationen zum Erkennen von doppelten Daten mithilfe des Codes, finden Sie unter [Erkennen von doppelten Daten mit Code](../detect-duplicate-data-with-code.md) 
+Common Data Service WEB API erlaubt es, doppelte Datensätze eines vorhandenen Datensatzes zu erkennen, um Richtigkeit der Daten zu wahren. Ausführliche Informationen zum Erkennen von doppelten Daten mithilfe des Codes, finden Sie unter [Erkennen von doppelten Daten mit Code](../detect-duplicate-data-with-code.md) 
 
 ## <a name="detect-duplicates-during-create-operation"></a>Erkennen von Duplikaten beim Vorgang "Erstellen"
 

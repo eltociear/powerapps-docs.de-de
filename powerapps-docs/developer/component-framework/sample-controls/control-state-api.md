@@ -1,7 +1,7 @@
 ---
-title: Control State-API | Microsoft-Dokumentation
+title: Steuerelementsatus-API | Microsoft Docs
 description: ''
-keywords: PowerApps Powerapps-Komponenten Framework
+keywords: PowerApps; PowerApps Component Framework
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -12,26 +12,26 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
 ms.openlocfilehash: 57982a4e9a4ee50954eb7b5f12e75a8ca43544ef
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340527"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748784"
 ---
-# <a name="implementing-control-state-api-component"></a>Implementieren der Steuerungs Zustands-API-Komponente
+# <a name="implementing-control-state-api-component"></a>Implementieren der Steuerelementstatus-API-Komponente
 
-Mit dem powerapps-Komponenten Framework können Sie den Status von Komponenten über mehrere Renderings der Komponente innerhalb derselben Sitzung hinweg beibehalten. Es bietet Ihnen die Möglichkeit, Komponenten zu erstellen, die den Benutzer Zustand während der Sitzung des Benutzers beibehalten können, während der Benutzer zu und von der Komponente navigiert.
+Das PowerApps Component Framework ermöglicht es, den Status der Komponente für mehrere Renderings der Komponente in derselben Sitzung verfügbar zu halten. Es bietet Ihnen die Möglichkeit, Komponenten zu erstellen, die den Benutzerstatus während der Sitzung eines Benutzers zu wahren, wenn der Benutzer zur und von der Komponente navigiert.
 
-Wenn die Code Komponente z. b. eine lange Liste ist, durch die der Benutzer einen Bildlauf durchführen kann, können Sie die **_setcontrolstate_** -Funktion nutzen, um den Punkt in der Liste zu merken, den der Benutzer betrachtet, wenn er vom Formular weg navigiert. Anschließend können Sie der Komponenten Initialisierung Logik hinzufügen, um den gespeicherten Zustand zu überprüfen und die Liste der Komponenten an dem Punkt zu Renten, an dem der Benutzer zuvor gelesen hat.
+Wenn beispielsweise Ihre Code-Komponente eine lange Liste ist, durch die der Benutzer scrollen kann, können Sie die Funktion **_SetControlState_** nutzen, um die Position in der Liste zu speichern, die der Benutzer anzeigt, wenn er vom Formular fort navigiert. Sie können dann bei der Komponenteninitialisierung Logik hinzufügen, um den gespeicherten Status zu überprüfen und die Liste der Komponente an dem Punkt zu rendern, an dem der Benutzer zuvor gelesen hat.
 
 > [!div class="mx-imgBorder"] 
-> ![Steuerungs](../media/control-state-api.png "Zustands-API") der Steuerungs Status-API
+> ![Steuerungsstatus API](../media/control-state-api.png "Steuerungsstatus API")
 
 ## <a name="available-for"></a>Verfügbar für
 
-Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau)
+Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau)
 
-## <a name="manifest"></a>Kundiger
+## <a name="manifest"></a>Manifest
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -298,6 +298,6 @@ export class TSControlStateAPI
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)

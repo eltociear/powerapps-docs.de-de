@@ -1,6 +1,6 @@
 ---
 title: Optimierung der Entwicklung kundenspezifischer Assemblies | MicrosoftDocs
-description: 'Erwägen Sie, separate Plug-Ins/Anpassungen von Arbeitsabläufen in einer einzigen benutzerdefinierten Assembly zusammenzuführen, um die Leistung und Wartbarkeit zu verbessern, und verschieben Sie Plug-Ins/Anpassungen von Arbeitsabläufen in mehrere benutzerdefinierte Assemblies, wenn sich eine Assembly-Größe in der Nähe der Größenbeschränkungen von SandboxAssemblies befindet.'
+description: Erwägen Sie, separate Plug-Ins/Anpassungen von Arbeitsabläufen in einer einzigen benutzerdefinierten Assembly zusammenzuführen, um die Leistung und Wartbarkeit zu verbessern, und verschieben Sie Plug-Ins/Anpassungen von Arbeitsabläufen in mehrere benutzerdefinierte Assemblies, wenn sich eine Assembly-Größe in der Nähe der Größenbeschränkungen von SandboxAssemblies befindet.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ae7b61fde2de24d68e9debab4ae61ad9c18718b4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748245"
 ---
 # <a name="optimize-assembly-development"></a>Optimieren der Assemblyentwicklung
 
@@ -37,7 +43,7 @@ Bei der Entwicklung von kundenspezifischen Baugruppen gibt es einige Überlegung
     - Erhöhte Komplexität der Wartbarkeit
     - Potenzielle Erhöhung der Länge der Plug-in-Ausführung
 
-2. Die Größenbeschränkung für Sandbox-Assemblies im Common Data Service beträgt 16 MB.
+2. Die Größenbeschränkung für Sandbox-Assemblys im Common Data Service beträgt 16 MB.
 
 <a name='guidance'></a>
 
@@ -48,7 +54,7 @@ Bei der Entwicklung von kundenspezifischen Baugruppen gibt es einige Überlegung
 
 ### <a name="consolidate-plug-ins-or-custom-workflow-activities-into-a-single-assembly"></a>Konsolidieren Sie Plug-Ins oder benutzerdefinierte Workflow-Aktivitäten in einer einzigen Assembly.
 
-Plug-Ins und benutzerdefinierte Workflow-Aktivitäten, die für eine Common Data Service-Lösung entwickelt wurden, sollten zusammen mit anderen in einem einzigen Visual Studio-Projekt existieren. Erwägen Sie, separate Plug-Ins/Anpassungen von Arbeitsabläufen zu einem einzigen Visual Studio-Projekt/Assembly zusammenzuführen, es sei denn, die Plug-Ins fallen unter die folgenden Ausnahmen:
+Plug-Ins und benutzerdefinierte Workflow-Aktivitäten, die für eine Common Data Service-Lösung entwickelt wurden, sollten zusammen mit anderen in einem einzigen Visual Studio-Projekt existieren. Erwägen Sie, separate Plug-Ins/benutzerdefinierte Workflow-Aktivitäten zu einem einzigen Visual Studio-Projekt/Assembly zusammenzuführen, es sei denn, die Plug-Ins fallen unter die folgenden Ausnahmen:
 
 1. Eine Plug-in- und benutzerdefinierte Workflow-Aktivität muss selektiv in einer Umgebung eingesetzt werden, nicht aber in anderen.
 
@@ -66,9 +72,9 @@ PowerApps und Dynamics 365 (online) haben eine Assembly-Größenbeschränkung vo
 ### <a name="multiple-assemblies"></a>Mehrere Assemblys
 Bei mehreren Assemblies gibt es eine Reihe von Bereichen, die betroffen sein können:
 
-1. Leistung - jede Assembly hat einen Lebenszyklus, der von Common Data Service verwaltet wird.  Dazu gehören das Laden, Zwischenspeichern und Entladen der Assemblies.  Wenn mehr als eine Assembly vorhanden ist, wird mehr Arbeit auf dem Server geleistet, indem eine Assembly geladen und zwischengespeichert wird, was sich auf die gesamte Ausführungsdauer von Plugins und benutzerdefinierten Workflow-Aktivitäten auswirken kann.
+1. Leistung – jede Assembly hat einen Lebenszyklus, der von Common Data Service verwaltet wird.  Dazu gehören das Laden, Zwischenspeichern und Entladen der Assemblies.  Wenn mehr als eine Assembly vorhanden ist, wird mehr Arbeit auf dem Server geleistet, indem eine Assembly geladen und zwischengespeichert wird, was sich auf die gesamte Ausführungsdauer von Plugins und benutzerdefinierten Workflow-Aktivitäten auswirken kann.
 
-2. Wartbarkeit - mehr als ein Visual Studio-Projekt mit mehr als einer Plug-in- und benutzerdefinierten Workflow-Aktivität führt zu einem komplexeren Application Lifecycle Management (ALM). Es erhöht das Risiko und die Zeitspanne, wenn das entsprechende Projekt für ein bestimmtes Plug-in/eine bestimmte Workflow-Aktivität aktualisiert bzw. gepatcht wird, wenn die Plug-ins/die benutzerdefinierten Workflow-Aktivitäten in einer Lösung zusammengefasst werden und wenn Plug-ins/die benutzerdefinierten Workflow-Aktivitäten innerhalb einer Bereitstellung verwaltet werden.
+2. Wartbarkeit – ein Visual Studio-Projekt mit mehr als einem Plug-In/mehr als einer benutzerdefinierten Workflow-Aktivität führt zu einem komplexeren Application Lifecycle Management (ALM). Es erhöht das Risiko und die Zeitspanne, wenn das entsprechende Projekt für ein bestimmtes Plug-in/eine bestimmte Workflow-Aktivität aktualisiert bzw. gepatcht wird, wenn die Plug-ins/die benutzerdefinierten Workflow-Aktivitäten in einer Lösung zusammengefasst werden und wenn Plug-ins/die benutzerdefinierten Workflow-Aktivitäten innerhalb einer Bereitstellung verwaltet werden.
 
 ### <a name="assembly-larger-than-16-mb"></a>Assembly größer als 16 MB
 Sie können keine benutzerdefinierte Assembly innerhalb des Common Data Service registrieren, die größer als 16 MB ist.
@@ -77,7 +83,7 @@ Sie können keine benutzerdefinierte Assembly innerhalb des Common Data Service 
 
 ## <a name="additional-information"></a>Weitere Informationen
 
-Häufig erstellen Entwickler für jede Plug-in- und benutzerdefinierte Workflow-Aktivität ein neues Visual Studio-Projekt.  Dies wiederum führt dazu, dass für jede Plug-in-/kundenspezifische Workflow-Aktivität eine separate Assembly generiert wird.
+Häufig erstellen Entwickler für jedes Plug-In/jede benutzerdefinierte Workflow-Aktivität ein neues Visual Studio-Projekt.  Dies wiederum führt dazu, dass für jede Plug-in-/kundenspezifische Workflow-Aktivität eine separate Assembly generiert wird.
 
 <a name='seealso'></a>
 

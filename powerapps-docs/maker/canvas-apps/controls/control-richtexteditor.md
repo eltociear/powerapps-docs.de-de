@@ -1,24 +1,24 @@
 ---
 title: Referenz zum Rich-Text-Editor-Steuerelement | Microsoft-Dokumentation
 description: Informationen über das Rich-Text-Editor-Textsteuerelement, einschließlich Eigenschaften und Beispielen
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 05/24/2018
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c6b94f636ebf6d373c3fc2117b589116b5a4a2fd
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ec991f54ff4b395026c9a869c315f75a549da79e
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986363"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649791"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Rich-Text-Editor-Steuerelement in powerapps
 Ermöglicht Endbenutzern das Formatieren von Text in einem WYSIWYG-Bearbeitungsbereich.  Die Ausgabe erfolgt im HTML-Format.

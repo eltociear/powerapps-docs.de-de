@@ -1,6 +1,6 @@
 ---
-title: SolutionPackager-Tool (Common Data Service) | MicrosoftDocs
-description: 'SolutionPackager ist ein Tool, mit dem eine komprimierte Dynamics 365 Customer Engagement-Lösungsdatei reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können.'
+title: SolutionPackager-Tool (Common Data Service) | Microsoft Docs
+description: SolutionPackager ist ein Tool, mit dem eine komprimierte Lösungsdatei von Common Data Service reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,20 +10,26 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cf459d4a81876440dc1bccb83b4020484198a7d7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748433"
 ---
 # <a name="solutionpackager-tool"></a>SolutionPackager-Tool
 
-SolutionPackager ist ein Tool, mit dem eine komprimierte Common Data Service-Lösungsdatei reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können. Die folgenden Abschnitte zeigen, wie Sie das Tool ausführen und es mit verwalteten und nicht verwalteten Lösungen verwenden.  
+SolutionPackager ist ein Tool, mit dem eine komprimierte Lösungsdatei von Common Data Service reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können. Die folgenden Abschnitte zeigen, wie Sie das Tool ausführen und es mit verwalteten und nicht verwalteten Lösungen verwenden.  
   
 <a name="bkm_where"></a>   
 
 ## <a name="where-to-find-the-solutionpackager-tool"></a>Wo Sie das SolutionPackager-Tool finden  
 
- Das SolutionPackager-Tool wird als Bestandteil des NuGet-Pakets [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) verteilt. Informationen zum Herunterladen des Tools erhalten Sie unter [Tools von NuGet herunterladen](download-tools-nuget.md).
+ Das SolutionPackager-Tool wird als Bestandteil des [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGet Pakets verteilt. Informationen zum Herunterladen des Tools erhalten Sie unter [Herunterladen der Tools von NuGet](download-tools-nuget.md).
   
 <a name="arguments"></a>   
 
@@ -36,11 +42,11 @@ SolutionPackager ist ein Tool, mit dem eine komprimierte Common Data Service-Lö
 |/action: {Extract&#124;Pack}|Erforderlich. Die auszuführende Aktion. Die Aktion kann das Extrahieren einer Lösungs-ZIP-Datei in einen Ordner oder das Packen eines Ordners in eine ZIP-Datei sein.|  
 |/zipfile: \<file path>|Erforderlich. Der Pfad und der Name einer Lösungs-ZIP-Datei. Beim Extrahieren muss die Datei vorhanden sein, und aus ihr wird gelesen. Beim Packen wird die Datei ersetzt.|  
 |/folder: \<folder path>|Erforderlich. Der Pfad zu einem Ordner. Beim Extrahieren wird dieser Ordner erstellt und mit Komponentendateien aufgefüllt. Beim Packen muss dieser Ordner bereits vorhanden sein und vorher extrahierte Komponentendateien enthalten.|  
-|/packagetype: {Unmanaged&#124;Managed&#124;Both}|(Optional). Der Typ des zu verarbeitenden Pakets. Der Standardwert ist "Nicht verwaltet". Dieses Argument kann in den meisten Fällen weggelassen werden, da der Pakettyp aus der ZIP-Datei oder den Komponentendateien gelesen werden kann. Beim Extrahieren, wenn der Pfad angegeben sind, müssen verwaltete und nicht verwaltete ZIP-Lösungsdateien vorhanden sein und werden in einem einzelnen Ordner verarbeitet. Beim Packen, wenn der Pfad angegeben ist, werden verwaltete und nicht verwaltete ZIP-Dateien aus demselben Ordner hergestellt. Weitere Informationen finden Sie im Abschnitt zur Arbeit mit verwaltete und nicht verwalteten Lösungen weiter unten in diesem Thema.|  
-|/allowWrite:{Yes&#124;No}|(Optional). Der Standardwert ist Ja. Dieses Argument wird nur während einer Extraktion verwendet. Wenn /allowWrite:No angegeben ist, führt das Tool alle Vorgänge aus, kann aber keine Dateien schreiben oder löschen. Der Extrahierungsvorgang kann sicher geprüft werden, ohne dass vorhandene Dateien überschrieben oder gelöscht werden.|  
-|/allowDelete:{Yes&#124;No&#124;Prompt}|(Optional). Der Standardwert ist Prompt. Dieses Argument wird nur während einer Extraktion verwendet. Wenn /allowDelete:Yes angegeben ist, werden alle Dateien, die im vom /folder-Parameter angegebenen Ordner vorhanden sind und die nicht erwartet werden, automatisch gelöscht. Wenn /allowDelete:No angegeben ist, wird nichts gelöscht. Wenn /allowDelete:Prompt angegeben ist, wird der Benutzer von der Konsole aufgefordert, alle Operationen zuzulassen oder abzulehnen. Wenn /allowWrite:No angegeben ist, finden keine Löschungen statt, auch wenn /allowDelete:Yes ebenfalls angegeben ist.|  
+|/packagetype: {Unverwaltet&#124;Verwaltet&#124;Beide}|(Optional). Der Typ des zu verarbeitenden Pakets. Der Standardwert ist "Nicht verwaltet". Dieses Argument kann in den meisten Fällen weggelassen werden, da der Pakettyp aus der ZIP-Datei oder den Komponentendateien gelesen werden kann. Beim Extrahieren, wenn der Pfad angegeben sind, müssen verwaltete und nicht verwaltete ZIP-Lösungsdateien vorhanden sein und werden in einem einzelnen Ordner verarbeitet. Beim Packen, wenn der Pfad angegeben ist, werden verwaltete und nicht verwaltete ZIP-Dateien aus demselben Ordner hergestellt. Weitere Informationen finden Sie im Abschnitt zur Arbeit mit verwaltete und nicht verwalteten Lösungen weiter unten in diesem Thema.|  
+|/allowWrite:{Ja&#124;Nein}|(Optional). Der Standardwert ist Ja. Dieses Argument wird nur während einer Extraktion verwendet. Wenn /allowWrite:No angegeben ist, führt das Tool alle Vorgänge aus, kann aber keine Dateien schreiben oder löschen. Der Extrahierungsvorgang kann sicher geprüft werden, ohne dass vorhandene Dateien überschrieben oder gelöscht werden.|  
+|/allowDelete:{Ja&#124;Nein&#124;Prompt}|(Optional). Der Standardwert ist Prompt. Dieses Argument wird nur während einer Extraktion verwendet. Wenn /allowDelete:Yes angegeben ist, werden alle Dateien, die im vom /folder-Parameter angegebenen Ordner vorhanden sind und die nicht erwartet werden, automatisch gelöscht. Wenn /allowDelete:No angegeben ist, wird nichts gelöscht. Wenn /allowDelete:Prompt angegeben ist, wird der Benutzer von der Konsole aufgefordert, alle Operationen zuzulassen oder abzulehnen. Wenn /allowWrite:No angegeben ist, finden keine Löschungen statt, auch wenn /allowDelete:Yes ebenfalls angegeben ist.|  
 |/clobber|(Optional). Dieses Argument wird nur während einer Extraktion verwendet. Wenn /clobber angegeben ist, werden Dateien, für die das Schreibschutzattribut gesetzt ist, überschrieben oder gelöscht. Wenn dies nicht der Fall ist, geschieht dies nicht.|  
-|/errorlevel: {Off&#124;Error&#124;Warning&#124;Info&#124;Verbose}|(Optional). Der Standardwert ist Info. Dieses Argument zeigt die Ebene der auszugebenden Protokollierungsinformationen an.|  
+|/errorlevel: {Aus&#124;Fehler&#124;Warnung&#124;Info&#124;Verbose}|(Optional). Der Standardwert ist Info. Dieses Argument zeigt die Ebene der auszugebenden Protokollierungsinformationen an.|  
 |/map: \<file path>|(Optional). Der Pfad und der Name einer XML-Datei, die Dateizuordnungsdirektiven enthält. Bei Verwendung während einer Extrahierung werden Dateien, die typischerweise aus einem Ordner, der vom /folder-Parameterer angegeben wurde, von anderen Orten aus gelesen, die in der Zuordnungsdatei angegeben sind. Während eines Verpackungsvorgangs werden Dateien, die den Direktiven entsprechen, nicht geschrieben.|  
 |/nologo|(Optional). Das Banner zur Laufzeit unterdrücken.|  
 |/log: \<file path>|(Optional). Ein Pfad und ein Name einer Protokolldatei. Wenn die Datei bereits vorhanden ist, werden der Datei neue Protokollierungsinformationen angehängt.|  
@@ -198,7 +204,7 @@ Das folgende XML-Codebeispiel zeigt eine vollständige Zuordnungsdatei, die das 
 
 ## <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen  
 
- Eine komprimierte Common Data Service-Lösungsdatei (ZIP) kann auf eine von zwei Weisen exportiert werden.  
+ Eine Common Data Service komprimierte Lösungs-ZIP-Datei kann auf eine von zwei Weisen exportiert werden.  
   
  **Verwaltete Lösung**  
  Eine abgeschlossene Lösung, die bereit ist, in eine Organisation importiert zu werden. Nach dem Importieren können keine Komponenten hinzugefügt oder entfernt werden, aber sie können optional weitere Anpassung erlauben. Dies wird empfohlen, nachdem die Entwicklung der Lösung abgeschlossen ist.  
@@ -206,7 +212,7 @@ Das folgende XML-Codebeispiel zeigt eine vollständige Zuordnungsdatei, die das 
  **Nicht verwaltete Lösung**  
  Eine offene Lösung ohne Einschränkungen dahingehend, was hinzugefügt, entfernt oder geändert werden kann. Dieses wird während der Entwicklung einer Lösung empfohlen.  
   
- Das Format einer komprimierten Lösungsdatei basiert auf dem Typ,verwaltet oder nicht verwaltet. Der SolutionPackager kann komprimierte Lösungsdateien beider Typen verarbeiten. Das Tool kann jedoch nicht einen Typ mzu einem anderen konvertieren. Die einzige Möglichkeit, Lösungsdateien zu einem anderen Typ zu konvertieren, etwa von verwaltete zu nicht verwaltete, besteht im Import der nicht verwalteten Lösungs-ZIP-Datei in einen Common Data Service-Server und dem anschließenden Export der Lösung als verwaltete Lösung.  
+ Das Format einer komprimierten Lösungsdatei basiert auf dem Typ,verwaltet oder nicht verwaltet. Der SolutionPackager kann komprimierte Lösungsdateien beider Typen verarbeiten. Das Tool kann jedoch nicht einen Typ mzu einem anderen konvertieren. Die einzige Möglichkeit, Lösungsdateien zu einem anderen Typs zu konvertieren, etwa von verwaltete zu nicht verwaltete, besteht im Import der nicht verwalteten Lösungs-ZIP-Datei in einen Common Data Service-Server und dem anschließenden Export der Lösung als verwaltete Lösung.  
   
  Der SolutionPackager kann verwaltete und nicht verwaltete Lösungs-ZIP-Dateien als kombinierten Satz über den /PackageType:Both-Parameter verarbeiten. Dazu ist es erforderlich, Ihre Lösung zweimal in jedem Typ zu exportieren, wobei die ZIP-Dateien wie folgt benannt werden.  
   
@@ -254,7 +260,7 @@ Wenn Sie Visual Studio 2012 verwenden, um die Ressourcendateien zu bearbeiten, d
   
    ```  
   
-   Dies ermöglicht dem Lösungspacker, die Ressourcendatei zu lesen und zu importieren. Dieses Problem wurde nur beobachtet, wenn der Visual Studio-Ressourceneditor verwendet wurde.  
+   Dies ermöglicht dem Lösungspacker, die Ressourcendatei zu lesen und zu importieren. Dieses Problem wurde nur beobachtet, wenn der Visual Studio-Ressourceneditor verwendet wurde..  
   
 ### <a name="see-also"></a>Siehe auch  
  [Verwendung der Quellverwaltung mit Lösungsdateien](use-source-control-solution-files.md)<br/>   

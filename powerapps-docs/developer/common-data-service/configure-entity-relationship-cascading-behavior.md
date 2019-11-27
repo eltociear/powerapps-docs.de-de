@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren der Entitätsbeziehungen mit ableitendem Verhalten (Common Data Service) | Microsoft Docs
-description: 'Konfigurieren Sie in Common Data Service kaskadierendes Verhalten für eine 1:n-Beziehung , um die Datenintegrität zu erhalten und Geschäftsprozesse zu automatisieren.'
+title: Konfigurieren der Entitätsbeziehungen mit kaskadierendem Verhalten (Common Data Service) | Microsoft-Dokumentation
+description: Konfigurieren Sie kaskadierendes Verhalten für eine 1:n-Beziehung in Common Data Service, um die Datenintegrität zu erhalten und Geschäftsprozesse zu automatisieren.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6c6d37d688ad60054be4387d813dcb7d9c9305fb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748430"
 ---
-
 # <a name="configure-entity-relationship-cascading-behavior"></a>Konfigurieren der Entitätsbeziehungen mit ableitendem Verhalten  
 
  Konfigurieren Sie kaskadierendes Verhalten für eine 1:n-Beziehung, um die Datenintegrität zu erhalten und Geschäftsprozesse zu automatisieren. Sowohl die Web-API als auch der Organisationsdienst unterstützen die Konfiguration des kaskadierenden Verhaltens.

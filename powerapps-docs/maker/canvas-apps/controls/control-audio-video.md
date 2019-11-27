@@ -1,24 +1,24 @@
 ---
 title: 'Audio- und Video-Steuerelemente: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über Audio- und Video-Steuerelemente
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aab2b0bb7b236fe8cc6d7f18beb7a5c8ea8246ae
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3b8c5ea5ee2784bc1ab97d6943045cee8da6a52f
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993849"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650790"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Audio- und Video-Steuerelemente in PowerApps
 Ein Steuerelement, das eine Audiodatei, eine Videodatei oder Videos auf YouTube abspielt.
@@ -33,14 +33,14 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
 
 **Media**: Ein Bezeichner für den Clip, der von einem Audio- oder Video-Steuerelement wiedergegeben wird.
 
-**ShowControls** – Gibt an, ob ein Audio- oder Videoplayer, z.B. eine Schaltfläche für Wiedergabe und ein Lautstärkeregler, und ein Stift-Steuerelement angezeigt wird, z.B. Symbole zum Zeichnen oder Löschen.
+**ShowControls**: Gibt beispielsweise an, ob für einen Audio- oder Videoplayer eine Schaltfläche für die Wiedergabe und ein Lautstärkeregler und für ein Stift-Steuerelement Symbole zum Zeichnen oder Löschen angezeigt werden.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Sollte dem Titel des Videos oder der Audiodatei entsprechen.
 
 **AutoPause**: Gibt an, ob ein Audio- oder Videoclip automatisch angehalten wird, wenn der Benutzer zu einem anderen Bildschirm navigiert.
 
-**AutoStart** – Gibt an, ob ein Steuerelement Audio oder Video automatisch einen Clip wiedergibt, wenn der Benutzer zu dem Bildschirm navigiert, der das Steuerelement enthält.
+**AutoStart**: Gibt an, ob ein Audio- oder Video-Steuerelement automatisch einen Clip wiedergibt, wenn der Benutzer zu dem Bildschirm navigiert, der das Steuerelement enthält.
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
@@ -60,21 +60,21 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
-**[Image](properties-visual.md)** – Der Name des Bilds, das in einem Bild-, Audio- oder Mikrofon-Steuerelement angezeigt wird.
+**[Image](properties-visual.md)** : Der Name des Bilds, das in einem Bild-, Audio- oder Mikrofon-Steuerelement angezeigt wird.
 
-**[ImagePosition](properties-visual.md)** – Die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Bilds auf einem Bildschirm oder in einem Steuerelement, wenn die Größe nicht mit der Bildgröße identisch ist.
+**[ImagePosition](properties-visual.md)** : Die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Bilds auf einem Bildschirm oder in einem Steuerelement, wenn die Größe nicht mit der Bildgröße identisch ist.
 
 **OnEnd** – Gibt an, wie eine App reagiert, wenn die Wiedergabe eines Audio- oder Videoclips beendet ist.
 
 **OnPause** – Gibt an, wie eine App reagiert, wenn der Benutzer den Clip anhält, der von einem Audio- oder Video-Steuerelement wiedergegeben wird.
 
-**OnStart** – Gibt an, wie die App reagiert, wenn der Benutzer die Aufnahme per Mikrofon-Steuerelement startet.
+**OnStart**: gibt an, wie die App reagiert, wenn der Benutzer eine Aufzeichnung mit einem Steuerelement-Mikrofon beginnt.
 
 **Paused** – Ist *true*, wenn ein Steuerelement zum Wiedergeben von Medien angehalten wurde, andernfalls *false*.
 
-**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
-**Start** – Gibt an, ob ein Audio- oder Videoclip wiedergegeben wird.
+**Start**: Gibt an, ob ein Audio- oder Videoclip wiedergegeben wird.
 
 **StartTime** – Der Zeitpunkt nach dem Start eines Audio- oder Videoclips, zu dem die Wiedergabe des Clips beginnt.
 
@@ -82,7 +82,7 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -132,7 +132,7 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
   3. Wenn die Beschreibung kurz ist, kann sie in **[AccessibleLabel](properties-accessibility.md)** eingegeben werden.
 
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[FocusedBorderColor](properties-color-border.md)** und die äußere Farbe
 * **[Bild](properties-visual.md)** und dem Multimedia-Player-Steuerelement (falls zutreffend)
 * **[Fill](properties-color-border.md)** (Füllfarbe) und dem Multimedia-Player-Steuerelement (falls zutreffend)

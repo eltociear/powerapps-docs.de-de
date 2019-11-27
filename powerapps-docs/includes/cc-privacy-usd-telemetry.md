@@ -8,9 +8,9 @@ Die Funktion zur Mithilfe zur Verbesserung [!INCLUDE[pn_unified_service_desk](pn
 > [!NOTE]
 >  Weitere Informationen über zusätzliche [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Serviceangebote finden Sie im [Microsoft Azure Trust Center](https://azure.microsoft.com/support/trust-center/).  
   
- [Cloud Services](https://azure.microsoft.com/services/cloud-services/) OrgInsights-Daten-REST API (Webrolle)  
+ [Cloud Services](https://azure.microsoft.com/services/cloud-services/) OrgInsights-Daten-REST-API (Webrolle)  
   
- Diese Webrolle akzeptiert Anfragen von Diagrammen zur Anzeige von Daten in Organisationsinformationen. Die API liest aggregierte Daten aus [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Tabellen und gibt diese zurück.  
+ Diese Webrolle akzeptiert Anfragen von Diagrammen zur Anzeige von Daten in Organization Insights. Die API liest aggregierte Daten aus [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Tabellen und gibt diese zurück.  
   
  [Azure Blob Storage](https://azure.microsoft.com/services/storage/blobs/)  
   

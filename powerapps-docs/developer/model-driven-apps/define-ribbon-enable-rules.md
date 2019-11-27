@@ -1,11 +1,9 @@
 ---
 title: Menübanddefinitionen definieren (modellgesteuerte Apps) | Microsoft Docs
-description: 'Infos zum Festlegen bestimmter Regeln, die steuern, wann die Menübandelemente während des Konfigurierens von Menübandelementen aktiviert werden.'
+description: Infos zum Festlegen bestimmter Regeln, die steuern, wann die Menübandelemente während des Konfigurierens von Menübandelementen aktiviert werden.
 keywords: ''
 ms.date: 02/08/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 201f5db9-be65-7c3b-8202-822d78338bd6
 author: JesseParsons
@@ -13,12 +11,17 @@ ms.author: jeparson
 manager: annbe
 ms.reviewer: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8c22ec2532371093afbe224a5ea12c44652a30cc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748466"
 ---
-
 # <a name="define-ribbon-enable-rules"></a>Definieren von Menüband-Aktivierungsregeln
 
 Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definieren, die steuern, wann die Menübandelemente aktiviert werden. Das `<EnableRule>`-Element wird wie folgt verwendet:  
@@ -138,7 +141,7 @@ function EnableRule()
  Verwendet das `<OrRule>`-Element. Mit der `OrRule`-Regel können Sie den standardmäßigen UND-Vergleich für mehrere Aktivierungsregeltypen überschreiben. Verwenden Sie das `OrRule`-Element, um mehrere mögliche gültige Kombinationen zu definieren, die zu überprüfen sind.
 
 ### <a name="outlook-item-tracking-rule"></a>Outlook-Element-Nachverfolgungsregel
- Verwendet das `<OutlookItemTrackingRule>`-Element. Verwenden Sie das Attribut `TrackedInCrm` für dieses Element, um festzulegen, ob der Datensatz in PowerApps verfolgt wird.  
+ Verwendet das `<OutlookItemTrackingRule>`-Element. Verwenden Sie das `TrackedInCrm`-Attribut für dieses Element, um festzulegen, ob der Datensatz in PowerApps nachverfolgt wird.  
 
 ### <a name="outlook-version-rule"></a>Outlook-Versionsregel
  Verwendet das `<OutlookVersionRule>`-Element. Verwenden Sie diesl, um ein Menübandelement für eine bestimmte Version von [!INCLUDE[pn_MS_Outlook_Full](../../includes/pn-ms-outlook-full.md)] anzuzeigen wie folgt:  

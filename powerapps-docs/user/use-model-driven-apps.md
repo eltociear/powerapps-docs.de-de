@@ -15,16 +15,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 413201f34109e6022871667bd9773834904acbc2
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 9fbe02e0844e1e6f93880bbb43d473989cc88ad2
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61556066"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900365"
 ---
 # <a name="use-model-driven-apps-in-powerapps"></a>Verwenden von Modell gesteuerten apps in powerapps
 
-Eine Modell gesteuerte App verfügt über mehrere Komponenten, einschließlich Dashboards, Formularen, Ansichten, Diagrammen und Geschäftsprozessen, mit denen die APP problemlos verwendet werden kann. Dieser Abschnitt enthält Informationen zum Navigieren in einer Modell gesteuerten APP, zum Arbeiten mit Datensätzen, zum Importieren/Exportieren von Daten und zum Automatisieren von Prozessen mithilfe von Microsoft Flow. 
+Eine Modell gesteuerte App verfügt über mehrere Komponenten, einschließlich Dashboards, Formularen, Ansichten, Diagrammen und Geschäftsprozessen, mit denen die APP problemlos verwendet werden kann. Dieser Abschnitt enthält Informationen zum Navigieren in einer Modell gesteuerten APP, zum Arbeiten mit Datensätzen, zum Importieren/Exportieren von Daten und zum Automatisieren von Prozessen mithilfe der Energie Automatisierung. 
 
 > [!IMPORTANT]
 > Da Canvas-apps eine große Kontrolle über die Benutzeroberfläche bieten und im Grunde etwas zu tun haben, ist es nicht sehr hilfreich, *eine Canvas-APP zu verwenden*. Wenden Sie sich an Ihren App-Ersteller oder an den PowerApps-Administrator, wenn Sie bei einer Canvas-App Hilfe benötigen.

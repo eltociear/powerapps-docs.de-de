@@ -1,6 +1,6 @@
 ---
-title: Registrieren eines Plug-In (Common Data Service) | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie ein Plug-In registrieren, um benutzerdefinierte Geschäftslogik auf Common Data Service anzuwenden.'
+title: Registrieren eines Plug-Ins (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Plug-In registrieren, um benutzerdefinierte Geschäftslogik auf Common Data Service anzuwenden.
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
@@ -10,18 +10,23 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 893e10844ee6e4c5f4e35b228d23ddf06e3c90e7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748659"
 ---
-
 # <a name="register-a-plug-in"></a>Registrieren eines Plug-Ins
 
 
 Der Prozess des Schreibens, Registrierens und Debuggens eines Plugins ist:
 
-1. Erstellen Sie ein .NET-Framework-Klassenbibliotheksprojekt in Visual Studio
+1. Erstellen Sie ein .NET Framework-Klassenbibliotheksprojekt in Visual Studio
 1. Fügen Sie das `Microsoft.CrmSdk.CoreAssemblies` NuGet-Paket dem Projekt hinzu
 1. Implementieren Sie die <xref:Microsoft.Xrm.Sdk.IPlugin>-Schnittstelle in Klassen, die als Schritte registriert werden.
 1. Fügen Sie Ihren Code der <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*>-Methode hinzu, die für die Schnittstelle erforderlich ist
@@ -46,16 +51,16 @@ Inhalt in diesem Thema beschreibt die Schritte **in fett** oben und unterstützt
 
 Sie verwenden das Plugin Registration Tool (PRT), um Ihre Plug-In-Assemblys und Schritte zu registrieren.
 
-PRT ist eines der Tools, die als Download von NuGet verfügbar sind. Führen Sie die Anweisungen unter [Downloadtools von NuGet](download-tools-nuget.md) aus. Dieses Thema enthält Anweisungen zur Verwendung eines PowerShell-Skripts, um die aktuellen Tools von NuGet herunterzuladen.
+PRT ist eines der Tools, die als Download von NuGet verfügbar sind. Führen Sie die Anweisungen unter [Herunterladen von Tools von NuGet](download-tools-nuget.md) aus. Dieses Thema enthält Anweisungen zur Verwendung eines PowerShell-Skripts, um die aktuellen Tools von NuGet herunterzuladen.
 
-Nachdem Sie das PRT heruntergeladen haben, führen Sie die Schritte unter [Herstellen einer Verbindung über das Plugin Registration Tool (PRT)](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool) im [Lernprogramm: Schreiben und Registrieren eines Plugins](tutorial-write-plug-in.md) aus, um eine Verbindung zu Ihrer Common Data Service-Umgebung herzustellen.
+Nachdem Sie das PRT heruntergeladen haben, führen Sie die Schritte unter [Herstellen einer Verbindung über das Plugin Registration Tool (PRT)](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool) im [Lernprogramm: Schreiben und Registrieren eines Plug-Ins](tutorial-write-plug-in.md) aus, um eine Verbindung zu Ihrer Common Data Service-Umgebung herzustellen.
 
 ## <a name="register-an-assembly"></a>Registrieren einer Assembly
 
-Durch die Registrierung einer Assembly zu registrieren wird die Assembly in die Common Data Service-Datenbank hochgeladen. Lesen Sie die Anweisungen unter [Registrieren der Assembly](tutorial-write-plug-in.md#register-your-assembly) im [Lernprogramm: Schreiben und Registrieren eines Plugins](tutorial-write-plug-in.md)
+Eine Assembly zu registrieren, ist der Prozess des Hochladens der Assembly in die Common Data Service-Datenbank. Lesen Sie die Anweisungen unter [Registrieren der Assembly](tutorial-write-plug-in.md#register-your-assembly) im [Lernprogramm: Schreiben und Registrieren eines Plugins](tutorial-write-plug-in.md)
 
 > [!NOTE]
-> Sie finden die Optionen, die mit dem *Isolationsmodus* und *Speicherort* der Assembly verknüpft sind. Diese beziehen sich auf Optionen, die für lokale Bereitstellungen gelten. Common Data Service ist nicht für lokale Bereitstellungen verfügbar. Deshalb akzeptieren Sie immer die Standardoptionen **Sandbox** und **Datenbank** für diese Optionen.
+> Sie finden die Optionen, die mit dem *Isolationsmodus* und *Speicherort* der Assembly verknüpft sind. Diese beziehen sich auf Optionen, die für lokale Bereitstellungen gelten. Common Data Service ist nicht für lokale Bereitstellungen verfügbar. Deshalb akzeptieren Sie immer die Standardoptionen **SandBox** und **Datenbank** für diese Optionen.
 
 Wenn eine Assembly hochgeladen wird, wird sie in der Entität `PluginAssembly` gespeichert. Die meisten Eigenschaften werden mithilfe der Reflektion der importierten Entität festgelegt. Die base64-codierten Bytes der Assembly werden im Attribut `Content` gespeichert. Beim Anzeigen der **Eigenschaften** der Assembly im PRT können Sie nur den Attributwert **Description** bearbeiten.
 
@@ -214,7 +219,7 @@ Wenn das Plug-In in den Phasen **PreValidation** oder **PreOperation** der Ausf�
 
 #### <a name="messages-that-support-entity-images"></a>Nachrichten, die Entitätsbilder unterstützen
 
-In Common Data Service unterstützen nur die folgenden Messages Entitätsbilder:
+In Common Data Service unterstützen nur die folgenden Meldungen Entitätsbilder:
 
 |Meldung|Anforderungs-Klassen-Eigenschaft| Beschreibung|
 |--|--|--|
@@ -268,7 +273,7 @@ Wenn Sie eine Assembly ändern und neu erstellen, die Sie bereits registriert ha
 
 Wenn Sie Änderungen an einer Plug-In-Assembly vornehmen, die Teil einer vewalteten Lösung ist, die bereitgestellt wurde, müssen Sie die möglichen Auswirkungen Ihrer Änderungen berücksichtigen, wenn Sie diese verwaltete Lösung aktualisieren. Die Version der Assembly steuert das Verhalten.
 
-Die Version von Plug-In-Assemblys kann mithilfe des semantischen Versionsverwaltungsformats `major.minor.build.revision` verwaltet werden, das in der Datei `Assembly.info` des Microsoft Visual Studio-Projekts definiert wurde. Abhängig vom Teil der Assemblyversionsnummer, der für eine neuere Lösung geändert wird, gilt das folgende Verhalten, wenn eine vorhandene Lösung durch einen Import aktualisiert wird.
+Die Version von Plug-In-Assemblys kann mit Hilfe des semantischen Versionsverwaltungsformats `major.minor.build.revision` verwaltet werden, das in der Datei `Assembly.info` des Microsoft Visual Studio-Projekts definiert wurde. Abhängig vom Teil der Assemblyversionsnummer, der für eine neuere Lösung geändert wird, gilt das folgende Verhalten, wenn eine vorhandene Lösung durch einen Import aktualisiert wird.
 
 - **Die Versionsnummer des Builds oder der Revisionsassembly wird geändert**
 

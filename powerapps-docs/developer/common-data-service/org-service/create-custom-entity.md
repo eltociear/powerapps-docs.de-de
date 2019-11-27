@@ -1,19 +1,25 @@
 ---
-title: Erstellen einer benutzerdefinierten Entität (Common Data Service) | Microsoft Docs
-description: 'Zeigt, wie Sie programmgesteuert eine benutzerdefinierte Entität im Common Data Service erstellen.'
+title: Erstellen einer benutzerdefinierten Entität (Common Data Service) | Microsoft-Dokumentation
+description: Zeigt, wie Sie programmgesteuert eine benutzerdefinierte Entität Common Data Service erstellen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 385a616ada3294d300fb77433893e7b79256569c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748551"
 ---
 # <a name="create-custom-entity"></a>Benutzerdefinierte Entität erstellen
 

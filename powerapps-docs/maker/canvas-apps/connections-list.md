@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/28/2017
+ms.date: 11/19/2019
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 099d59b222cf40f95214056eca8e96cfce9cc053
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1fda14b7117334290c67d4d5727d93484ded7471
+ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987384"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261943"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Übersicht über die Canvas-App-Connectors für PowerApps
 Daten bilden das Herzstück der meisten Apps, u.a. bei denen, die Sie in PowerApps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. PowerApps verfügt über Connectors für viele gängige Dienste und lokale Datenquellen, u.a. SharePoint, SQL Server, Office 365, Salesforce und Twitter. Die ersten Schritte zum Hinzufügen von Daten zu einer Canvas-App werden unter [Hinzufügen einer Datenverbindung in PowerApps](add-data-connection.md) beschrieben.
@@ -58,7 +58,7 @@ Weitere Informationen zum Anpassen der Formel für benutzerdefinierte Updates fi
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **Powerapps funktioniert nicht mit dynamischem Schema**. Der Ausdruck Dynamic Schema bezieht sich auf die Möglichkeit, dass dieselbe Aktion eine andere Tabelle mit unterschiedlichen Spalten zurückgeben kann. Bedingungen, die dazu führen können, dass sich die Spalten in den Tabellen unterscheiden, sind u. a. die Aktions Eingabeparameter, der Benutzer oder die Rolle, der die Aktion ausführt, und die Gruppe, in der der Benutzer arbeitet. Beispielsweise können SQL Server gespeicherten Prozeduren andere Spalten zurückgeben, wenn Sie mit unterschiedlichen Eingaben ausgeführt werden. Für Aktionen mit dynamischem Schema zeigt die Connector-Dokumentation an, dass **die Ausgaben dieses Vorgangs dynamisch sind.** als Rückgabewert. Im Gegensatz dazu funktioniert Microsoft Flow mit dynamischem Schema und bietet möglicherweise eine Problem Umgehung für Ihr Szenario.
+>  **Powerapps funktioniert nicht mit dynamischem Schema**. Der Ausdruck Dynamic Schema bezieht sich auf die Möglichkeit, dass dieselbe Aktion eine andere Tabelle mit unterschiedlichen Spalten zurückgeben kann. Bedingungen, die dazu führen können, dass sich die Spalten in den Tabellen unterscheiden, sind u. a. die Aktions Eingabeparameter, der Benutzer oder die Rolle, der die Aktion ausführt, und die Gruppe, in der der Benutzer arbeitet. Beispielsweise können SQL Server gespeicherten Prozeduren andere Spalten zurückgeben, wenn Sie mit unterschiedlichen Eingaben ausgeführt werden. Für Aktionen mit dynamischem Schema zeigt die Connector-Dokumentation an, dass **die Ausgaben dieses Vorgangs dynamisch sind.** als Rückgabewert. Im Gegensatz dazu funktioniert die Energie Automatisierung mit dynamischem Schema und bietet möglicherweise eine Problem Umgehung für Ihr Szenario.
 
 ## <a name="popular-connectors"></a>Gängige Connectors
 
@@ -66,11 +66,15 @@ Diese Tabelle enthält Links zu weiteren Informationen zu den am häufigsten ver
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
-| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](../common-data-service/data-platform-intro.md) |&nbsp; |![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |
-| ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; |![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |
-| ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) |&nbsp; |![OneDrive for Business](./media/connections-list/onedrive.png) |[**OneDrive for Business**](connections/cloud-storage-blob-connections.md) |
-| ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; |![OneDrive](./media/connections-list/onedrive.png) |[**OneDrive**](connections/cloud-storage-blob-connections.md) |
-| ![Office 365-Benutzer](./media/connections-list/office365.png) |[**Office 365-Benutzer**](connections/connection-office365-users.md) |&nbsp; |![Dropbox](./media/connections-list/dropbox.png) |[**Dropbox**](connections/cloud-storage-blob-connections.md) |
+| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![Cloudspeicher](./media/connections-list/onedrive.png) |[**Cloud-Speicher**](connections/cloud-storage-blob-connections.md) ** |
+| ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; | ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md) |
+|![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |&nbsp; |![Microsoft Translator](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md) |
+|![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |&nbsp; | ![Office 365-Benutzer](./media/connections-list/office365.png) |[**Office 365-Benutzer**](connections/connection-office365-users.md) |
+| ![Oracle](./media/connections-list/oracle-icon.png) |[**Orakel**](connections/connection-oracledb.md) |&nbsp; | ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
+| ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
+|![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
+
+\* * Gilt für Azure-BLOB, Box, Dropbox, Google Drive, onedrive und onedrive for Business
 
 ## <a name="standard-and-custom-connectors"></a>Standardmäßige und benutzerdefinierte Connectors
 PowerApps bietet *standardmäßige* Connectors für viele häufig genutzte Datenquellen an, wie z.B. die oben genannten. Wenn PowerApps einen Standardconnector für den von Ihnen gewünschten Datenquellentyp bietet, sollten Sie diesen Connector verwenden. Wenn Sie eine Verbindung mit anderen Arten von Datenquellen herstellen möchten, z.B. mit einem von Ihnen erstellten Dienst, finden Sie weitere Informationen unter [Registrieren und Verwenden von benutzerdefinierten Connectors](../canvas-apps/register-custom-api.md).

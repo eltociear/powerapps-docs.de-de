@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Konvertieren Sie Faxe in Abfragen (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Konvertieren einer Faxanfrage (Common Data Service) | Microsoft-Dokumentation'
 description: 'Beispiel, das zeigt, wie man einen Fax in eine Aufgabe umwandelt. '
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 407a5981033d90df15c0f6ba200afd3ad77d6c44
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748525"
 ---
 # <a name="sample-convert-a-fax-to-a-task"></a>Beispiel: Konvertieren eines Faxes für eine Aufgabe
 

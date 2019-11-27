@@ -1,6 +1,6 @@
 ---
-title: Komponenten Implementierungs Bibliothek | Microsoft-Dokumentation
-description: Erstellen von Code Komponenten mithilfe von JavaScript oder typescript
+title: Komponentenimplementierungsbibliothek | Microsoft Docs
+description: Erstellen von Code-Komponenten mit JavaScript oder TypeScript
 keywords: ''
 ms.author: nabuthuk
 author: Nkrb
@@ -12,22 +12,22 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
 ms.openlocfilehash: 31b7d2b30a1ef83ca4400011d50854713cb260f6
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72347243"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748486"
 ---
-# <a name="component-implementation-library"></a>Komponenten Implementierungs Bibliothek
+# <a name="component-implementation-library"></a>Komponentenimplementierungsbibliothek
 
-Das Implementieren der Komponentenbibliothek ist einer der wichtigsten Schritte beim Entwickeln von Code Komponenten mithilfe des powerapps-Komponenten-Frameworks. Entwickler können die Komponentenbibliothek mithilfe von typescript implementieren. Jede Code Komponente muss über eine Bibliothek verfügen, die die Definition einer Funktion enthält, die ein Objekt zurückgibt, das die in der Code Component-Schnittstelle beschriebenen Methoden implementiert. 
+Die Komponentenbibliothek zu implementieren ist einer der wichtigen Schritte, wenn Sie Code-Komponenten mithilfe des PowerApps Component Framework entwickeln. Entwickler können die Komponentenbibliothek mithilfe von TypeScript implementieren. Jede Code-Komponente muss über eine Bibliothek verfügen, die die Definition einer Funktion umfasst, die ein Objekt zurückgibt, das die Methoden implementiert, die in der Code-Komponentenschnittstelle beschrieben werden. 
 
-Das-Objekt implementiert die folgenden Methoden:
+Das Objekt implementiert die folgenden Methoden:
 
-- [Init](reference/control/init.md) (erforderlich)
-- [UpdateView](reference/control/updateview.md) (erforderlich)
-- [getoutputs](reference/control/getoutputs.md) (optional)
-- [zerstören](reference/control/destroy.md) (erforderlich)
+- [init](reference/control/init.md) (erforderlich)
+- [updateView](reference/control/updateview.md) (erforderlich)
+- [getOutputs](reference/control/getoutputs.md) (optional)
+- [destroy](reference/control/destroy.md) (erforderlich)
 
-Diese Methoden steuern den Lebenszyklus der Code Komponente.
+Diese Methode steuert den Lebenszyklus der Codekomponente.
 

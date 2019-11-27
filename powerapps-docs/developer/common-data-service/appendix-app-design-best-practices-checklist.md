@@ -1,6 +1,6 @@
 ---
-title: 'Anhang: Checkliste der bewährten Methoden zum App-Entwurf (PowerApps) | Microsoft Docs'
-description: 'Verwenden Sie die App-Entwurfs-Checkliste, um Ihren App-Entwurf in PowerApps zu bewerten.'
+title: 'Anhang: Checkliste der bewährten Methoden zum App-Entwurf (PowerApps) | Microsoft-Dokumentation'
+description: Verwenden Sie die App-Entwurfs-Checkliste, um Ihren App-Entwurf in PowerApps zu bewerten.
 ms.custom: ''
 ms.date: 03/20/2019
 ms.reviewer: kvivek
@@ -10,10 +10,16 @@ author: omarcdoc
 ms.author: omarc
 manager: AnnBe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24c5599a6fe416447d444e46e373d1f443de963f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748258"
 ---
 # <a name="appendix-app-design-best-practices-checklist"></a>Anhang: Checkliste der bewährte Methoden zum App-Entwurf
 

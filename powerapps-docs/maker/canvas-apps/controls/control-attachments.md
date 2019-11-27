@@ -1,24 +1,24 @@
 ---
 title: 'Attachments-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen zum Attachment-Steuerelement, einschließlich Eigenschaften und Beispielen
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 04/23/2018
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc46f2a01e76741ccb046f382b0dd2829d23b368
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 5279f9368cdd832e84fba13faf8643cd7392d70b
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987019"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650808"
 ---
 # <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien aus einer SharePoint-Liste oder einer Common Data Service Entität hochladen und löschen können.
@@ -119,4 +119,4 @@ Die folgenden Eigenschaften müssen vorhanden sein:
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.

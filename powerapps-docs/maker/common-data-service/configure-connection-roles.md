@@ -1,23 +1,30 @@
 ---
 title: Verbindungsrollen konfigurieren | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/27/2018
+ms.date: 10/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758234"
 ---
 # <a name="configure-connection-roles"></a>Verbindungsrollen konfigurieren
 
@@ -27,16 +34,30 @@ Wenn Benutzer eine Verbindung zwischen zwei Datensätzen erstellen, können dies
 
 Jeder Benutzer mit Schreibzugriff zur **Verbindungsrollen**-Entität kann definieren, welche Verbindungen für Benutzer zur Verfügung stehen.
 
+> [!IMPORTANT]
+> Damit eine Entität als Datensatztyp für eine neue oder vorhandene Verbindungsrolle verfügbar ist, muss die Eigenschaft **Verbindungen aktivieren** für die Entität aktiviert sein. 
+
+## <a name="enable-connection-roles-for-an-entity"></a>Verbindungsrollen für eine Entität aktivieren.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+2. Erweitern Sie **Daten** und wählen dann **Entitäten** aus. 
+3. Wählen Sie die Entität, die Sie für Verbindungsrollen aktivieren möchten, und klicken Sie anschließend in der Befehlsleiste auf **Einstellungen**. 
+4. Erweitern Sie im Bereich **Einstellungen** den Bereich **Zusammenarbeit**, und wählen dann **Verbindungen aktivieren** aus.
+    > [!div class="mx-imgBorder"] 
+    > ![Verbindungseinstellungen aktivieren](media/enable-connections.png "Verbindungseinstellungen aktivieren")
+
+6. **Fertig** auswählen 
+
 ## <a name="view-connection-roles"></a>Verbindungsrollen anzeigen
 
 Es gibt mehrere Standardverbindungsrollen, die in Common Data Service konfiguriert werden. Um sie anzuzeigen, wechseln Sie zu Einstellungsbereich. 
 
 ### <a name="navigate-to-the-settings-area"></a>Navigieren Sie zum Einstellungsbereich
 
-1. Beim Anzeigen einer Modell-angetriebenen App bearbeiten Sie die URL, um alles nach `dynamics.com` zu entfernen und die Seite zu aktualisieren.
-1. Navigieren Sie zu **Einstellungen** > **Geschäftlich** > **Unternehmensmanagement** und dann auf **Verbindungsrollen**.
+1. In einer modellgesteuerten App **Einstellungen** > **Erweiterte Einstellungen** auswählen. 
+2. Navigieren Sie zu **Einstellungen** > **Geschäftlich** > **Unternehmensmanagement** und dann auf **Verbindungsrollen**.
 
-![Verbindungsrollen in den Business Management-Einstellungen](media/navigate-settings-connection-roles.png)
+   > [!div class="mx-imgBorder"] 
+    > ![Verbindungsrollen in den Business Management-Einstellungen](media/navigate-settings-connection-roles.png "Verbindungsrollen in den Business Management-Einstellungen")
 
 In dieser Ansicht können Sie alle Verbindungsrollen sehen, die für die Umgebung verfügbar sind und Sie können Sie hier bearbeiten.
 
@@ -49,11 +70,11 @@ Da Verbindungsrollen *Lösungsbewusst* sind, d.h. sie können einer Lösung hinz
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-Die meisten Verbindungsrollen, die Sie im Bereich **Einstellungen** sehen, werden in der *internen* **Standardlösung** definiert (nicht zu verwechseln mit **Common Data Services Standardlösung**). Diese interne **Standardlösung** enthält alle Anpassungen im System. Um die **Standardlösung** anzuzeigen, wählen Sie **Alle Lösungen - intern** anzeigen.
+Die meisten Verbindungsrollen, die Sie im Bereich **Einstellungen** sehen, werden in der *internen* **Standardlösung** definiert (nicht zu verwechseln mit der **Common Data Services-Standardlösung**). Diese interne **Standardlösung** enthält alle Anpassungen im System. Um die **Standardlösung** anzuzeigen, wählen Sie **Alle Lösungen - intern** anzeigen.
 
 ## <a name="add-connection-roles-to-a-solution"></a>Verbindungsrollen einer Lösung hinzufügen
 
-Im Allgemeinen wird jedoch nicht empfohlen, Komponenten in der internen **Standardlösung** zu bearbeiten. In der **Common Data Services  Standardlösung** oder einer anderen Lösung, in der Sie Arbeit erstellt haben, können Sie den Befehl **Bestehendes Hinzufügen** auswählen, um eine Standardverbindungsrolle in die Lösung zu integrieren.
+Im Allgemeinen wird jedoch nicht empfohlen, Komponenten in der internen **Standardlösung** zu bearbeiten. In der **Common Data Service-Standardlösung** oder einer anderen Lösung, in der Sie Arbeit erstellt haben, können Sie den Befehl **Bestehendes hinzufügen** auswählen, um eine Standardverbindungsrolle in die Lösung zu integrieren.
 
 ![Bestehende Verbindungsrolle hinzufügen](media/add-existing-connection-role.png)
 
@@ -125,7 +146,7 @@ Wird mehr als einer übereinstimmende Verbindungsrolle konfiguriert, stellen die
 ### <a name="see-also"></a>Siehe auch
 <!-- This is in the basics guide. It needs to be migrated -->
 [Erstellen von Verbindungen zum Festlegen von Beziehungen zwischen Datensätzen](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
-[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service (Auswahllisten)](create-edit-global-option-sets.md)<br />
+[Erstellen und Bearbeiten globaler Optionssätze für Common Data Service (Auswahllisten)](create-edit-global-option-sets.md)<br />
 [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)
 
 

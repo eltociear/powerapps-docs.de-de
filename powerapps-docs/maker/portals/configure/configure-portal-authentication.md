@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren der Portal Authentifizierung | MicrosoftDocs
-description: Erfahren Sie, wie Sie die Authentifizierung für ein Portal konfigurieren.
+title: Konfigurieren der Portalauthentifizierung | MicrosoftDocs
+description: Lernen Sie, wie Sie Authentifizierung für ein Portal konfigurieren.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,37 +9,37 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 12e85a0233ca596fa5daf09a05b111564c2a7a24
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
-ms.translationtype: MT
+ms.openlocfilehash: b285ce6e3a93efb72ed867149ce0740f7ee96579
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72977954"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755309"
 ---
-# <a name="configure-portal-authentication"></a>Konfigurieren der Portal Authentifizierung
+# <a name="configure-portal-authentication"></a>Konfigurieren der Portalauthentifizierung
 
-In einer Portal Anwendung wird ein authentifizierter Portalbenutzer entweder einem Kontakt oder einem Systembenutzer zugeordnet. Die Standard Portal Konfiguration ist Kontakt basiert. Zum Anmelden muss für einen Kontakt die entsprechenden Webauthentifizierungs Informationen konfiguriert sein. Portal Benutzer müssen Webrollen zugewiesen werden, um Berechtigungen über nicht authentifizierte Benutzer zu erhalten. Um Berechtigungen für eine webrolle zu konfigurieren, konfigurieren Sie den Webseiten Zugriff und die Zugriffs Steuerungs Regeln für die Website.
+In einer Portalanwendung wird ein authentifizierten Portalbenutzer entweder einem Kontakt oder einem Systembenutzer zugeordnet. Die standardmäßige Portalkonfiguration ist Kontakt-basiert. Zum Anmelden muss der Kontakt eine entsprechende konfigurierte Authentifizierungsinformationen haben. Portalbenutzer muss einer Internetrolle zugewiesen werden, damit Sie Berechtigungen erhalten, die über jene der nicht authentifizierten Benutzer hinausgehen. Um Berechtigungen für eine Internetrolle zu konfigurieren, müssen Sie den Webseitenzugriff und die Webseitenzugriffssteuerungsregeln konfigurieren.
 
-Die neueste Portal Authentifizierung ermöglicht es Portal Benutzern, sich mit Ihrer Wahl eines lokalen Kontos oder eines externen Kontos, das auf [ASP.net Identity](http://www.asp.net/identity)basiert, anzumelden.   
+Die aktuelle Portalauthentifizierungsfunktion ermöglicht Portalbenutzern, sich mit einem lokalen Kontakt-Mitgliedschaftsanbieter-Konto oder einem externen Konto ihrer Wahl auf Grundlage der [ASP.NET-Identität](https://www.asp.net/identity) anzumelden.   
 
-- **Lokale Authentifizierung**: bei der allgemeinen Formular basierten Authentifizierung werden die Kontaktdaten Sätze einer Common Data Service Umgebung für die Authentifizierung verwendet. Um benutzerdefinierte Authentifizierungsfunktionen zu erstellen, können Entwickler benutzerdefinierte Anmelde Seiten und Tools mit der ASP.net Identity-API erstellen.
-- **Externe Authentifizierung**: die externe Authentifizierung wird von der ASP.net Identity-API bereitgestellt. In diesem Fall werden Konto Anmelde Informationen und Kenn Wort Verwaltung von einem Drittanbieter-Identitäts Anbieter verarbeitet. Dies schließt OpenID-basierte Anbieter ein, z. b. Yahoo! und Google-und OAuth 2,0-basierte Anbieter wie Twitter, Facebook und [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]. Benutzer melden sich beim Portal an, indem Sie eine externe Identität für die Registrierung beim Portal auswählen. Nach der Registrierung hat eine externe Identität Zugriff auf dieselben Features wie ein lokales Konto. 
+- **Lokale Authentifizierung**: Lokale Authentifizierung ist die allgemeine formularbasierte Authentifizierung, die Kontaktdatensätze einer Common Data Service-Umgebung für die Authentifizierung verwendet. Wenn Sie benutzerdefinierte Authentifizierungsumgebungen erstellen möchten, können API-Entwickler die ASP.NET-Identität verwenden, um benutzerdefinierte Anmeldeseiten und -Tools zu erstellen.
+- **Externe Authentifizierung**: Externe Authentifizierung wird von der ASP.NET-Identität-API bereitgestellt. In diesem Fall werden Kontoanmeldeinformationen und Kennwortverwaltung von einem Drittanbieter-Identitätsanbieter behandelt. Hierzu zählen OpenID-basierte Anbieter wie Yahoo! sowie Google- und OAuth 2.0-basierte Anbieter, wie Twitter, Facebook und [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]. Benutzer melden sich beim Portal an, indem sie eine externe Identität für die Portalregistrierung auswählen. Nach der Registrierung hat eine externe Identität Zugriff auf dieselben Features wie ein lokales Konto. 
 
-Sowohl für die lokale als auch für die externe Kontoregistrierung können Einladungs Codes für die Registrierung und der e-Mail-Bestätigungs Workflow verwendet werden. Außerdem können Portaladministratoren eine beliebige Kombination von Authentifizierungs Optionen über Portal Site Einstellungen aktivieren oder deaktivieren.
+Bei der Registrierung eines lokalen wie auch eines externen Kontos können Einladungscodes und E-Mail-Bestätigungsworkflow für die Anmeldung verwendet werden. Außerdem können Portaladministratoren Authentifizierungsoptionskombinationen über Portalwebsiteeinstellungen aktivieren oder deaktivieren.
 
 > [!NOTE]
-> Benutzer des Portals müssen über eine eindeutige e-Mail-Adresse verfügen. Wenn mindestens zwei Kontaktdaten Sätze (einschließlich der deaktivierten Kontaktdaten Sätze) dieselbe e-Mail-Adresse aufweisen, können sich die Kontakte nicht im Portal authentifizieren.
+> Portalbenutzer müssen eine eindeutige E-Mail-Adresse haben. Wenn zwei oder mehrere Kontaktdatensätze (einschließlich deaktivierte Kontaktdatensätze) die gleiche E-Mail-Adresse haben, werden Kontakte nicht in der Lage sein, sich auf dem Portal zu authentifizieren.
 
-## <a name="account-sign-up-registration"></a>Kontoregistrierung (Registrierung)
+## <a name="account-sign-up-registration"></a>Kontoanmeldung (Registrierung)
 
-Portal Administratoren haben mehrere Möglichkeiten, das Registrierungs Verhalten von Konten zu steuern. Open Registration ist die am wenigsten restriktive Registrierungs Konfiguration, bei der das Portal ermöglicht, dass ein Benutzerkonto durch einfaches Bereitstellen einer Benutzeridentität registriert wird. Alternative Konfigurationen erfordern möglicherweise, dass Benutzer einen Einladungscode oder eine gültige e-Mail-Adresse angeben, um sich beim Portal zu registrieren. Unabhängig von der Registrierungs Konfiguration sind sowohl lokale als auch externe Konten gleichmäßig Teil des Registrierungs Workflows. Das heißt, die Benutzer haben die Möglichkeit, die Art des Kontos auszuwählen, das Sie registrieren möchten.
+Portaladministratoren haben mehrere Möglichkeiten zum Steuern des Kontoanmeldeverhaltens. Die offene Registrierung ist die am wenigsten einschränkende Anmelde-Konfiguration, bei der das Portal einem Benutzerkonto ermöglicht, registriert zu werden, indem einfach eine Benutzeridentität bereitgestellt wird. Alternative Konfigurationen erfordern möglicherweise, dass Benutzer einen Einladungscode oder eine gültige E-Mail-Adresse zum Registrieren beim Portal zur Verfügung stellen. Unabhängig von der Registrierungskonfiguration tragen lokale wie externe Konten gleichermaßen zum Registrierungsworkflow bei. Das bedeutet, dass Benutzer die Option haben, auswählen, mit welcher Art Konto sie sich registrieren möchten.
 
-## <a name="open-registration"></a>Registrierung öffnen
+## <a name="open-registration"></a>Offene Registrierung
 
-Während der Registrierung hat der Benutzer die Möglichkeit, ein lokales Konto (Benutzername und Kennwort) zu erstellen oder eine externe Identität aus einer Liste von Identitäts Anbietern auszuwählen. Wenn eine externe Identität ausgewählt ist, muss sich der Benutzer über den ausgewählten Identitäts Anbieter anmelden, um nachzuweisen, dass er das externe Konto besitzt. In beiden Fällen wird der Benutzer sofort registriert und über das Portal authentifiziert. Bei der Registrierung wird in der Common Data Service Umgebung ein neuer Kontaktdaten Satz erstellt.
+Beim Anmelden kann der Benutzer ein lokales Konto erstellen (mit Benutzernamen und Kennwort) oder eine externe Identität aus einer Liste mit Identitätsanbietern auswählen. Wenn eine externe Identität ausgewählt wird, muss sich der Benutzer über den ausgewählten Identitätsanbieter anmelden, um nachzuweisen, dass ihm das externe Konto gehört. In jedem Fall wird der Benutzer sofort beim Portal registriert und authentifiziert. Ein neuer Kontaktdatensatz wird in der Common Data Service-Umgebung erstellt.
 
-Wenn die Open-Registrierung aktiviert ist, müssen Benutzer keinen Einladungscode bereitstellen, um den Registrierungsvorgang abzuschließen.
+Wenn die offene Registrierung aktiviert ist, müssen Benutzer keinen Einladungscode bereitstellen, um den Anmeldeprozess abzuschließen.
 
 ### <a name="see-also"></a>Siehe auch
 
-[Festlegen der Authentifizierungs Identität für ein Portal](set-authentication-identity.md)  
+[Festlegen der Authentifizierungsidentität für ein Portal](set-authentication-identity.md)  

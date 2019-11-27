@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Entitäten und Attributen für das Überwachen (Common Data Service) | Microsoft Docs
-description: 'Erläutert die Konfigurationsanforderungen, um die Entitäten und Attributen für die Überwachung zu aktivieren und zu deaktivieren.'
+title: Konfigurieren von Entitäten und Attributen für die Überwachung (Common Data Service) | Microsoft-Dokumentation
+description: Erläutert die Konfigurationsanforderungen, um die Entitäten und Attributen für die Überwachung zu aktivieren und zu deaktivieren.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4a5a21fbf701d5e84b8a8fdb056d8fc66617fe23
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748575"
 ---
 # <a name="configure-entities-and-attributes-for-auditing"></a>Konfigurieren von Entitäten und Attributen für die Überwachung
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7865b2123f0d179d5d132cca838684f0c83cfd31
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 715f82a1db2c8a4bb495e41b45a3911182024158
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994797"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541609"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Erste Schritte mit Canvas-App-Formeln in PowerApps
@@ -36,7 +36,7 @@ Dieses Thema bietet nur eine Übersicht über das Arbeiten mit Formeln. Weitere 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
+* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 
 ## <a name="show-a-simple-value"></a>Anzeigen eines einfachen Werts
@@ -52,8 +52,8 @@ In Excel können Sie eine bestimmte Dateneinheit eingeben, z.B. die Zahl **42** 
 
     Diese Leiste besteht aus zwei Teilen:
 
-   * *Eigenschaften Liste*:  Jedes Steuerelement und jeder Bildschirm verfügt über eine [Reihe von Eigenschaften](reference-properties.md).  Verwenden Sie diese Liste, um eine bestimmte Eigenschaft auszuwählen.  
-   * *Formel*:  Die Formel, die für diese Eigenschaft berechnet werden soll, besteht aus [Werten, Operatoren und Funktionen](formula-reference.md).
+   * *Eigenschaftenliste:* Jedes Steuerelement und jeder Bildschirm verfügt über eine [Reihe von Eigenschaften](reference-properties.md).  Verwenden Sie diese Liste, um eine bestimmte Eigenschaft auszuwählen.  
+   * *Formel:* Die für diese Eigenschaft zu berechnende Formel besteht aus [Werten, Operatoren und Funktionen](formula-reference.md).
 
      In der Bearbeitungsleiste können Sie Eigenschaften des ausgewählten Steuerelements oder, wenn keine Steuerelemente ausgewählt sind, auch die des Screens anzeigen und bearbeiten.  Der Name des ausgewählten Steuerelements wird auf der Registerkarte **Content** (Inhalt) angezeigt:
 

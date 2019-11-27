@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac6586067105d5f6cd1ce2aab5568450804fe4c6
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: bbc6111800a817ecb71eec60fdba1d2dabd6c698
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71991363"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741503"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Erstellen einer Order Gallery in einer Canvas-App
@@ -39,7 +39,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 ## <a name="create-a-blank-app"></a>Erstellen einer leeren App
 
-1. [Melden Sie sich bei powerapps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und erstellen Sie dann eine leere Tablet-app.
+1. [Melden Sie sich bei powerapps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und erstellen Sie dann eine leere Tablet-app.
 
     > [!div class="mx-imgBorder"]
     > ![Canvas-App aus einer leeren Kachel](media/northwind-orders-canvas-part1/start-01.png)
@@ -54,39 +54,22 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
     > [!div class="mx-imgBorder"]
     > ![PowerApps Studio](media/northwind-orders-canvas-part1/start-03.png)
 
-1. Aktivieren Sie eine [experimentelle Funktion](working-with-experimental.md) , um das Ergebnis einer Formel direkt in der Bearbeitungs Leiste anzuzeigen.
-
-    1. Wählen Sie im Menü **Datei** die Option **App-Einstellungen**aus, und klicken Sie dann auf **Erweiterte Einstellungen**.
-    1. Scrollen Sie zum Ende der Liste mit den Features, und aktivieren Sie dann die **Ergebnis Ansicht der Formel Leiste aktivieren**:
-
-        > [!div class="mx-imgBorder"]
-        > ![Liste der experimentellen Features](media/northwind-orders-canvas-part1/start-04.png)
-
-1. Klicken Sie in der oberen linken Ecke auf den rückwärts Pfeil, um zum leeren Zeichenbereich zurückzukehren.
-
 ## <a name="add-the-data"></a>Hinzufügen der Daten
 
-1. Wählen Sie auf der Registerkarte **Ansicht** die Option **Datenquellen**aus, und wählen Sie dann im Bereich **Daten** die Option **Datenquelle hinzufügen** aus:
+1. Wählen Sie auf der Registerkarte **Ansicht** die Option **Datenquellen**:
 
     > [!div class="mx-imgBorder"]
     > Wählen Sie ![Sicht, Datenquellen, Datenquelle hinzufügen aus](media/northwind-orders-canvas-part1/datasource-01.png)
 
-1. Wählen Sie **Common Data Service**aus.
-
-    Wenn **Common Data Service** nicht in der Liste der Verbindungen angezeigt wird, wählen Sie **neue Verbindung**aus, und fügen Sie Sie hinzu.
+1. Geben Sie **Orders** in das Suchfeld ein:
 
     > [!div class="mx-imgBorder"]
     > ![Liste der Verbindungen](media/northwind-orders-canvas-part1/datasource-02.png)
 
-1. Geben Sie unter **Entität auswählen**den **Befehl Orders**ein, aktivieren Sie das Kontrollkästchen **Orders** , und wählen Sie dann **verbinden**aus:
+1. Wählen Sie die Datenquelle **Orders** aus, die in Ihrer APP verwendet werden soll:
 
     > [!div class="mx-imgBorder"]
     > ![Liste der Entitäten](media/northwind-orders-canvas-part1/datasource-03.png)
-
-    Sie haben die Datenquelle **Orders** ihrer app hinzugefügt:
-
-    > [!div class="mx-imgBorder"]
-    > ![Datenbereich](media/northwind-orders-canvas-part1/datasource-04.png)
 
     Die **Orders** -Entität enthält viele Felder verschiedener Typen:
 
@@ -95,7 +78,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
     Jedes Feld verfügt über einen **anzeigen Amen** und einen **Namen**, der manchmal als logischer Name bezeichnet wird. Beide Namen verweisen auf dasselbe. Im Allgemeinen verwenden Sie den anzeigen Amen, wenn Sie eine APP erstellen, aber einige Fälle erfordern den eher kryptischen **Namen**, wie in einer Prozedur beschrieben.
 
-1. Schließen Sie in PowerApps Studio den Bereich **Daten** , indem Sie in der oberen rechten Ecke das Schließen-Symbol (x) auswählen.
+1. Wenn Sie mit Bildschirmen und Steuerelementen weiter arbeiten, klicken Sie in PowerApps Studio auf der linken Seite auf die Struktur **Ansicht** zurück, indem Sie das Symbol mit den drei gestapelten Quadraten drücken. Sie können jederzeit zu den **Datenquellen** zurückkehren, indem Sie das Zylinder Symbol drücken.
 
 ## <a name="create-the-order-gallery"></a>Erstellen der Order Gallery
 
@@ -104,7 +87,13 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
     > [!div class="mx-imgBorder"]
     > ![INSERT, Gallery, leeres vertikales](media/northwind-orders-canvas-part1/orders-01.png)
 
-1. Legen Sie in der Bearbeitungs Leiste die **Items** -Eigenschaft des Katalogs auf die folgende Formel fest:
+    Das Steuerelement wird in den Zeichenbereich eingefügt, und es wird ein auslaufendem Dialogfeld mit der Frage angezeigt, mit welcher Datenquelle eine Verbindung hergestellt wird  
+
+
+    > [!div class="mx-imgBorder"]
+    > ![Eigenschaft "Elemente festlegen" der Galerie](media/northwind-orders-canvas-part1/orders-02.png)
+
+1. Wir könnten es hier direkt mit **Aufträgen** verbinden, aber stattdessen möchten wir die Sortierreihenfolge des Katalogs steuern.  Ignorieren Sie das Dialogfeld "ausführen", und legen Sie in der Bearbeitungs Leiste die **Items** -Eigenschaft des Katalogs auf die folgende Formel fest:
 
     ```powerapps-comma
     Sort( Orders; 'Order Number'; Descending )
@@ -113,7 +102,12 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
     Die [**Sortier**](functions/function-sort.md) Funktion ordnet die Liste so an, dass die neueste Bestellung (mit der höchsten Bestellnummer) zuerst angezeigt wird.
 
     > [!div class="mx-imgBorder"]
-    > ![Eigenschaft "Elemente festlegen" der Galerie](media/northwind-orders-canvas-part1/orders-02.png)
+    > ![Eigenschaft "Elemente festlegen" der Galerie](media/northwind-orders-canvas-part1/orders-02b.png)
+
+1. Nach einigen Augenblicken wird die Ergebnis Ansicht unterhalb der Bearbeitungs Leiste angezeigt.  Ziehen Sie den Pfeil auf der linken Seite nach unten, um das Ergebnis der Formel anzuzeigen.  Scrollen Sie nach rechts, um die Spalte **Order Number** anzuzeigen, und stellen Sie sicher, dass Sie wie gewünscht (höchste bis niedrigste) sortiert ist.  
+
+    > [!div class="mx-imgBorder"]
+    > ![Eigenschaft "Elemente festlegen" der Galerie](media/northwind-orders-canvas-part1/orders-02c.png)
 
 1. Öffnen Sie auf der Registerkarte **Eigenschaften** in der Nähe des rechten Rands die **Layoutliste** :
 
@@ -127,7 +121,10 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
     In der Vorlage des Katalogs werden zwei [**Label**](controls/control-text-box.md) -Steuerelemente hinzugefügt. Standardmäßig zeigen diese Steuerelemente zwei Spalten der **Orders** -Entität an, die Sie als nächstes ändern werden. Die Vorlage des Katalogs wird für jeden Datensatz in der Entität vertikal repliziert.
 
-1. Wenn Sie den **Daten** Bereich geschlossen haben, klicken Sie auf der Registerkarte **Eigenschaften** in der Nähe des rechten Rands auf **Bearbeiten** (neben **Felder**).
+1. Wählen Sie auf der Registerkarte **Eigenschaften** in der Nähe des rechten Rands die Option **Bearbeiten** (neben **Felder**).
+
+    > [!div class="mx-imgBorder"]
+    > ![wählen Sie ein Layout aus](media/northwind-orders-canvas-part1/orders-04b.png)
 
 1. Wählen Sie im Bereich **Daten** die Option **Title1** (oder wählen Sie in der Vorlage des Katalogs die obere Bezeichnung aus).
 
@@ -262,7 +259,7 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
     Diese Formel zeigt eine blaue Unterstreichung und eine [Delegierungs Warnung](delegation-overview.md) an, da Common Data Service die Delegierung komplexer Aggregatfunktionen (z. b. die Summe einer Multiplikation) nicht unterstützt. Diese Informationen können ignoriert werden, da in diesem Beispiel keine Reihenfolge mehr als 500 Zeilen Elemente enthalten. Wenn dies für eine andere APP erforderlich ist, können Sie diesen Grenzwert in den **App-Einstellungen**erhöhen.
 
-    Die [**Text**](functions/function-text.md) -Funktion in dieser Formel fügt ein Währungssymbol hinzu und formatiert das Ergebnis mit Tausenden und Dezimaltrennzeichen. Wie bereits geschrieben, enthält die Formel das Sprachtag für US-Englisch ( **[$-en-US]** ) und ein Dollarsymbol ( **$** ). Wenn Sie das Sprachtag entfernen, wird es basierend auf den Spracheinstellungen durch eins ersetzt, und in der Bezeichnung werden die entsprechenden Formate für dieses Tag angezeigt. Wenn Sie das Dollarsymbol verlassen, wird in der Bezeichnung basierend auf den Einstellungen des Benutzers das entsprechende Währungssymbol angezeigt. Sie können jedoch erzwingen, dass ein anderes Symbol angezeigt wird, indem Sie das Dollarsymbol durch das gewünschte Dollarsymbol ersetzen.
+    Die [**Text**](functions/function-text.md) -Funktion in dieser Formel fügt ein Währungssymbol hinzu und formatiert das Ergebnis mit Tausenden und Dezimaltrennzeichen. Wie bereits geschrieben, enthält die Formel das Sprachtag für US-Englisch (**[$-en-US]**) und ein Dollarsymbol (**$**). Wenn Sie das Sprachtag entfernen, wird es basierend auf den Spracheinstellungen durch eins ersetzt, und in der Bezeichnung werden die entsprechenden Formate für dieses Tag angezeigt. Wenn Sie das Dollarsymbol verlassen, wird in der Bezeichnung basierend auf den Einstellungen des Benutzers das entsprechende Währungssymbol angezeigt. Sie können jedoch erzwingen, dass ein anderes Symbol angezeigt wird, indem Sie das Dollarsymbol durch das gewünschte Dollarsymbol ersetzen.
 
 1. Ändern Sie auf der Registerkarte **Home** den Schrift Grad der neuesten Bezeichnung in 20 Punkte, und richten Sie den Text rechtsbündig aus:
 

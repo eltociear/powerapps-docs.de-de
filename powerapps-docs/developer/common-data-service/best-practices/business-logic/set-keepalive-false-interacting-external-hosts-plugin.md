@@ -1,6 +1,6 @@
 ---
-title: 'Setzen Sie KeepAlive auf false, wenn Sie mit externen Hosts in einem Plugin interagieren | MicrosoftDocs'
-description: 'Die KeepAlive-Eigenschaft, die im HTTP-Request-Header auf true gesetzt oder nicht explizit als false definiert ist, kann zu längeren Ausführungszeiten von Plug-Ins führen.'
+title: Setzen Sie KeepAlive auf false, wenn Sie mit externen Hosts in einem Plugin interagieren | MicrosoftDocs
+description: Die KeepAlive-Eigenschaft, die im HTTP-Request-Header auf true gesetzt oder nicht explizit als false definiert ist, kann zu längeren Ausführungszeiten von Plug-Ins führen.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -13,13 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/12/2018
+ms.date: 8/21/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 59d3b13f641d0171ba4b968c630a51120e6b9ae6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748439"
 ---
 # <a name="set-keepalive-to-false-when-interacting-with-external-hosts-in-a-plug-in"></a>KeepAlive auf falsch setzen, wenn Sie mit externen Hosts in einem Plug-in interagieren
 
@@ -31,7 +37,7 @@ search.app:
 
 ## <a name="symptoms"></a>Symptome
 
-Wenn ein Plug-in externe Web-Anfragen stellt und versucht, `KeepAlive` auf einer geschlossenen Verbindung zu verwenden, kann das Plug-in die Web-Anfrage letztendlich nicht ausführen. Wenn das Plug-in jedoch registriert ist:
+Wenn ein Plug-in externe Web-Anfragen stellt und versucht, `KeepAlive` auf einer geschlossenen Verbindung zu verwenden, kann das Plug-in die Web-Anfrage letztendlich nicht ausführen. Wenn das Plug-in registriert ist:
 
 - Synchron können die Benutzer Folgendes erleben:
 

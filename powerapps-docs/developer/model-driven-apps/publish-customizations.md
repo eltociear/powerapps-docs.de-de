@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichen von Anpassungen (modellgestützte Apps) | Microsoft Docs
-description: 'Das Veröffentlichen von Anpassungen macht die Webanwendung auf Änderungen an den Daten aufmerksam, die sich auf die Benutzeroberfläche auswirken.'
+description: Das Veröffentlichen von Anpassungen macht die Webanwendung auf Änderungen an den Daten aufmerksam, die sich auf die Benutzeroberfläche auswirken.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 27809198af9348b246dd7d0c2a5401880c13eb73
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748442"
 ---
 # <a name="publish-customizations"></a>Veröffentlichen von Anpassungen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/publish-customizations -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/publish-customizations -->
 
 Das Veröffentlichen von Anpassungen macht die Webanwendung auf Änderungen an den Daten aufmerksam, die sich auf die Benutzeroberfläche auswirken.  
   

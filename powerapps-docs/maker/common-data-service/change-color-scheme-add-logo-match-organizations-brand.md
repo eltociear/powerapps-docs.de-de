@@ -1,29 +1,35 @@
 ---
-title: 'Ändern Sie das Farbschema oder fügen Sie ein Logo hinzu, entsprechend der Marke Ihrer Organisation  | MicrosoftDocs'
+title: Ändern Sie das Farbschema oder fügen Sie ein Logo hinzu, entsprechend der Marke Ihrer Organisation  | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: 21a166a0-d25e-4260-a1e4-2ddc528787c2
 caps.latest.revision: 17
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4aa2b77e9a9840532193fe50d92aabd796484c60
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758378"
 ---
 # <a name="create-a-theme"></a>Erstellen eines Designs
 
-Sie können ein angepasstes Erscheinungsbild (ein Design) für Ihre App erstellen, indem Sie Änderungen an den Standardfarben und visuellen Elementen im nicht benutzerdefinierten System vornehmen. Sie können beispielsweise Ihr persönliches Produktbranding erstellen, indem Sie ein Unternehmenslogo hinzufügen und einen entitätsspezifischen Farbton zur Verfügung stellen. Ein Design wird erstellt, indem die Anpassungstools in der Benutzeroberfläche verwendet werden, ohne dass ein Entwickler hierfür Code schreiben muss. Sie können Designs, die in Ihrer Organisation verwendet werden, erstellen, ändern oder löschen. Die Designanpassung wird in Webformularen in  Dynamics 365 for Outlook unterstützt. Sie können mehrere Designs definieren, jedoch kann nur eins als das Standarddesign festgelegt und veröffentlicht werden.  
+Sie können ein angepasstes Erscheinungsbild (ein Design) für Ihre App erstellen, indem Sie Änderungen an den Standardfarben und visuellen Elementen im nicht benutzerdefinierten System vornehmen. Sie können beispielsweise Ihr persönliches Produktbranding erstellen, indem Sie ein Unternehmenslogo hinzufügen und einen entitätsspezifischen Farbton zur Verfügung stellen. Ein Design wird erstellt, indem die Anpassungstools in der Benutzeroberfläche verwendet werden, ohne dass ein Entwickler hierfür Code schreiben muss. Sie können Designs, die in Ihrer Organisation verwendet werden, erstellen, ändern oder löschen. Die Designanpassung wird in Webformularen in Dynamics 365 for Outlook unterstützt. Sie können mehrere Designs definieren, jedoch kann nur eins als das Standarddesign festgelegt und veröffentlicht werden.  
   
 <a name="UseThemes"></a>   
 ## <a name="use-themes-to-enhance-the-user-interface-and-create-your-product-branding"></a>Verwenden von Designs, um die Benutzeroberfläche zu optimieren und ein Produktbranding zu erstellen  
@@ -71,7 +77,7 @@ Sie können ein angepasstes Erscheinungsbild (ein Design) für Ihre App erstelle
 ## <a name="copy-and-alter-the-existing-theme"></a>Kopieren und Ändern des vorhandenen Designs  
  Der einfachste und schnellste Weg, ein neues Design zu erstellen, ist, ein vorhandenes Design zu klonen und zu ändern, es dann zu speichern, eine Vorschau anzuzeigen und es zu veröffentlichen. 
  
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2.  Wählen Sie **Modellgesteuert** (unten links) aus. 
 
@@ -91,7 +97,7 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
  Im folgenden Screenshot wird die neue Navigationsfarbe angezeigt.  
  
  > [!div class="mx-imgBorder"] 
- > ![Leicht grüne Designfarben](media/theme-gentle-green.png "Leicht grüne Designfarben")  
+ > ![Leichte grüne Designfarben](media/theme-gentle-green.png "Leichte grüne Designfarben")  
   
  Im folgenden Screenshot wird das Firmaenentitätsraster mit der neuen Hervorhebungsfarbe angezeigt.  
  
@@ -110,7 +116,7 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
   
  Im folgenden Screenshot werden die Schaltflächen der Befehlsleiste für die Vorschau und die Veröffentlichung angezeigt.  
   
- ![Verwenden Sie die Vorschauschaltflächen, um den Vorschaumodus zu aktivieren/verlassen](media/themes-preview-buttons.PNG "Verwenden Sie die Vorschauschaltflächen, um den Vorschaumodus zu aktivieren/verlassen")  
+ ![Vorschauschaltflächen zum Aufrufen/Verlassen des Vorschaumodus verwenden](media/themes-preview-buttons.PNG "Vorschauschaltflächen zum Aufrufen/Verlassen des Vorschaumodus verwenden")  
   
 <a name="BestPracticies"></a>   
 ## <a name="best-practices"></a>Bewährte Methoden  
@@ -119,7 +125,7 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
 ### <a name="theme-contrast"></a>Designkontrast  
  Es wird die folgende Methode zur Bereitstellung von Kontrastfarben empfohlen:  
   
--   Wählen Sie die kontrastierenden Farben sorgfältig aus. Der Common Data Service für Apps mit  Standarddesign  hat die richtigen Kontrastverhältnisse, um optimale Benutzerfreundlichkeit sicherzustellen. Verwenden Sie ähnliche Verhältnisse für die neuen Designs.  
+-   Wählen Sie die kontrastierenden Farben sorgfältig aus. Das Standarddesign von Common Data Service hat die richtigen Kontrastverhältnisse, um optimale Benutzerfreundlichkeit sicherzustellen. Verwenden Sie ähnliche Verhältnisse für die neuen Designs.  
   
 -   Für den kontrastreichen Modus können Sie die standardmäßige Farbeneinstellungen verwenden.  
   
@@ -146,5 +152,5 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
   
 ## <a name="see-also"></a>Siehe auch  
          
- [Video: Designs in Dynamics 365 Customer Engagement](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Abfragen und Bearbeiten eines Organisationsdesigns](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [Video: Designs](https://go.microsoft.com/fwlink/p/?LinkId=529568) [Abfragen und Bearbeiten eines Organisationsdesigns](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

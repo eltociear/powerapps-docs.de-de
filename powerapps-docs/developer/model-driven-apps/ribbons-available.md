@@ -1,6 +1,6 @@
 ---
 title: Verfügbare Menübänder in modellgestützten Apps | Microsoft Docs
-description: 'In diesem Thema wird beschrieben, wo Menübänder definiert und geändert werden.'
+description: In diesem Thema wird beschrieben, wo Menübänder definiert und geändert werden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c839738bb0ab1a533a432ea4d6e8ad6be1f7a6ce
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754563"
 ---
 # <a name="ribbons-available"></a>Verfügbare Menübänder
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365 -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365 -->
 
 In diesem Thema wird beschrieben, wo Menübänder in modellgestützten Apps definiert und geändert werden.
 
@@ -29,7 +35,7 @@ In diesem Thema wird beschrieben, wo Menübänder in modellgestützten Apps defi
 
  Wegen dieser Anforderung ist es erforderlich, die Definitionen von vorhandenen Menübandelementen zu verweisen, es ist sehr wichtig, die aktuellen Menübanddefinitionen in Ihrer Organisation zu verstehen. Es gibt zwei Nachrichten, die Sie verwenden können, um XML-Dateien, die den aktuellen Status der Menübänder darstellen, zu exportieren. Die Definitionen enthalten alle Anpassungen, die bereits auf dem System angewendet wurden, damit Sie zuvor angewendete Menübänder anpassen können. Weitere Informationen finden Sie unter [Exportieren von Menübanddefinitionen](export-ribbon-definitions.md).  
 
- Um Ihnen bei den ersten Schritten zu helfen, können Sie die standardmäßigen Menübanddefnitionen für MDA von [Microsoft Downloads: ExportedRibbonXml.zip](http://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) herunterladen. Die ExportedRibbonXml.zip-Datei enthält die Ausgabedatei, die Sie für eine Organisation mit einem Menüband, das nicht angepasst wurde, haben würden. Sie müssen keine Beispielanwendung auszuführen, um diese Daten zu exportieren. Wenn Sie ein angepasstes Menüband haben, sollten Sie die Beispielanwendung ausführen, um die Dateien in diesem Ordner mit allen zuvor angewendeten Anpassungen für Ihre Organisation zu aktualisieren.  
+ Um Ihnen bei den ersten Schritten zu helfen, können Sie die standardmäßigen Menübanddefnitionen für MDA von [Microsoft Downloads: ExportedRibbonXml.zip](https://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) herunterladen. Die ExportedRibbonXml.zip-Datei enthält die Ausgabedatei, die Sie für eine Organisation mit einem Menüband, das nicht angepasst wurde, haben würden. Sie müssen keine Beispielanwendung auszuführen, um diese Daten zu exportieren. Wenn Sie ein angepasstes Menüband haben, sollten Sie die Beispielanwendung ausführen, um die Dateien in diesem Ordner mit allen zuvor angewendeten Anpassungen für Ihre Organisation zu aktualisieren.  
 
  Innerhalb der exportierten XML-Datei enthält die applicationRibbon.xml-Datei alle Menübänder, die nicht für eine bestimmte Entität definiert sind. Diese entsprechen der Lösungskomponente **Anwendungsmenübänder**. Für jede Entität finden Sie eine *Entitätsname*-ribbon.xml-Datei. Das entspricht der `RibbonDiffXml`, die in jeder Entität enthalten ist. Wenn Sie das Menüband für eine bestimmte Entität bearbeiten möchten, sollten Sie die Menüband-XML-Datei für diese Entität finden.  
 
@@ -88,7 +94,7 @@ In diesem Thema wird beschrieben, wo Menübänder in modellgestützten Apps defi
 
  Wenn eine Liste mit den Datensätzen für eine Entität in einem Unterraster im Formular einer anderen Entität oder einem Diagramm angezeigt wird, gibt es nur drei Steuerelemente, die direkt über oder in dem Unterraster verfügbar sind. Die Verhaltensweisen für diese Steuerelemente kann geändert werden, indem die Befehle geändert werden, denen sie zugeordnet sind.  
 
-- **Hinzufügen** Das Standardverhalten des Befehls mit dem ![Schaltfläche hinzufügen](media/customization-subgrid-add.PNG "Schaltfläche hinzufügen")-Symbol hängt davon ab, ob die Datensätze im Unterraster mit dem aktuellen Datensatz verknüpft sind.  
+- **Hinzufügen** Das Standardverhalten des Befehls mit dem ![Schaltfläche „Hinzufügen“](media/customization-subgrid-add.PNG "Schaltfläche "Hinzufügen"")-Symbol hängt davon ab, ob die Datensätze im Unterraster mit dem aktuellen Datensatz verknüpft sind.  
 
      Wenn die Datensätze mit dem aktuellen Datensatz verknüpft sind, lautet das Standardverhalten: nach vorhandenen Datensätzen suchen. Wenn ein vorhandener Datensatz nicht gefunden werden kann oder wenn der Benutzer einfach einen neuen Datensatz erstellen möchte, kann er auf **Neue hinzufügen** klicken.  
 
@@ -99,13 +105,13 @@ In diesem Thema wird beschrieben, wo Menübänder in modellgestützten Apps defi
      > [!NOTE]
      >  Der Offlinemodus in Dynamics 365 unterstützt keine n:n-Beziehung bei benutzerdefinierten Entitäten. Deshalb wird die Schaltfläche **Neu hinzufügen** im Dynamics 365-Offlinemodus nicht auf einem Unterraster angezeigt.
 
-- **Liste anzeigen** Der Befehl mit dem ![Mit Schaltfläche öffnen](media/customization-open-view.PNG "Mit Schaltfläche öffnen")-Symbol wird die gesamte Liste öffnen, in der alle verfügbaren Befehle verwendet werden können.  
+- **Liste anzeigen** Der Befehl mit dem ![„Ansicht öffnen“-Schaltfläche](media/customization-open-view.PNG "Mit Schaltfläche öffnen")-Symbol wird die gesamte Liste öffnen, in der alle verfügbaren Befehle verwendet werden können.  
 
      Wenn das Unterraster dem aktuellen Datensatz zugeordnet wird, ist das Standardverhalten eines Befehls, die zugeordnete Ansicht zu öffnen.  
 
      Wenn das Unterraster dem aktuellen Datensatz nicht zugeordnet wird, ist das Standardverhalten eines Befehls, die Ansicht in der Hauptlistenansicht zu öffnen.  
 
-- **Löschen** Das ![Symbol: Löschen der untergeordneten Liste](media/customization-subgrid-delete.PNG "Symbol: Löschen der untergeordneten Liste")-Symbol wird rechts neben der Zeile angezeigt, wenn die Beteiligten mit der Maus auf die Datensätze in der Liste zeigen.  
+- **Löschen** Das ![Symbol „Löschen der untergeordneten Liste“](media/customization-subgrid-delete.PNG "Symbol: Löschen der untergeordneten Liste")-Symbol wird rechts neben der Zeile angezeigt, wenn die Beteiligten mit der Maus auf die Datensätze in der Liste zeigen.  
 
      Für Datensätze mit einer 1: n-Beziehung oder keiner Beziehung, ist das Standardverhalten, den Datensatz zu löschen. Die Löschung wird möglicherweise blockiert, wenn sie aufgrund der Beziehungskonfigurationen nicht zulässig ist. Offene Aktivitäten und Rechnungen sind häufige Beispiele für Datensätze, die möglicherweise aufgrund der Beziehungskonfigurationen nicht gelöscht werden.  
 
@@ -154,7 +160,7 @@ Jede Registerkarte wird einer bestimmten <TabDisplayRule> zugeordnet, die steuer
 |       Registerkarte "AptbookTab-Homepage"        |        `Mscrm.AptbookTab`        |                                    Wird angezeigt, wenn der Servicekalender im Servicebereich angezeigt wird.                                    |
 |          Registerkarte "Erweiterte Suche"           |       `Mscrm.AdvancedFind`       |                                               Wird im Fenster **Erweiterte Suche** angezeigt.                                               |
 |         Registerkarte "Dashboard-Editor"         |    `Mscrm.DashboardEditorTab`    |                                                  Wird angezeigt, wenn ein Dashboard bearbeitet wird.                                                   |
-|            Registerkarte "Dokumente"             |       `Mscrm.DocumentsTab`       | Wird angezeigt, wenn die SharePoint-Integration für die Organisation aktiviert wurde. |
+|            Registerkarte "Dokumente"             |       `Mscrm.DocumentsTab`       | Wird angezeigt, wenn SharePoint-Integration für die Organisation aktiviert wurde. |
 |           Registerkarte "Diagramm-Editor"           | `Mscrm.VisualizationDesignerTab` |                                       Wird angezeigt, wenn ein Diagramm aus dem Lösungsfenster bearbeitet wird.                                        |
 |    Kontextgruppe "Suchwerkzeuge"     |      `Mscrm.ArticleSearch`       |                                             Wird angezeigt, wenn die `KBarticle` Entität angezeigt wird.                                             |
 

@@ -1,6 +1,6 @@
 ---
-title: " Komponente zum Hochladen von Images | Microsoft-Dokumentation"
-description: Implementieren der Image Upload-Komponente mithilfe von typescript
+title: " Bild-Upload-Komponente | Microsoft Docs"
+description: Implementieren einer Bild-Upload-Komponente mit typescript
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,27 +8,27 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 755fff0934d74178cdb0546a222d9ca7a3c5d124
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.openlocfilehash: 1ca8e97d32f6003b26c511e3ad2aee96bff42322
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340711"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754099"
 ---
-# <a name="implementing-an-image-upload-component"></a>Implementieren einer Image Upload-Komponente
+# <a name="implementing-an-image-upload-component"></a>Implementieren einer Bild-Upload-Komponente
 
-Diese Beispiel Komponente wird als `Upload` Schaltfläche zum Hochladen des Bilds und eines Standard Bilds gerendert, wenn die Komponente zum ersten Mal geladen wird. Wenn Sie auf das `Upload` klicken, wird ein Datei-Explorer angezeigt, um ein Bild auszuwählen.
+Diese Beispielkomponente wird als `Upload`-Schaltfläche gerendert, um das Bild und ein Standardbild hochzuladen, wenn die Komponente zum ersten Mal geladen wird. Wenn Sie auf `Upload` klicken, wird ein Dateiexplorer geöffnet, in dem das Bild ausgewählt werden kann.
  
-Das ausgewählte Bild wird innerhalb der Komponente gerendert. In der Zwischenzeit wird die Schaltfläche `Remove` angezeigt, wenn Sie zurücksetzen müssen. Wenn Sie auf die Schaltfläche `Remove` klicken, wird das Standardbild angezeigt.  
+Das ausgewählte Bild wird innerhalb der Komponente gerendert. Auch wird die `Remove`-Schaltfläche angezeigt, wenn wir zurücksetzen müssen. Wenn Sie auf die Schaltfläche `Remove` klicken, wird das Standardbild angezeigt.  
 
 > [!div class="mx-imgBorder"]
-> ![Image Upload]Component(../media/image-upload-control.png "Image Upload Component")
+> ![Bild-Upload-Komponente](../media/image-upload-control.png "Bild-Upload-Komponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgesteuerte Apps 
+Modellgestützte Apps 
 
-## <a name="manifest"></a>Kundiger
+## <a name="manifest"></a>Manifest
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -297,8 +297,8 @@ export class TSImageUploadControl
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">
@@ -370,9 +370,9 @@ export class TSImageUploadControl
 </root>
 ```
 
-Dieses Beispiel zeigt, wie Sie eine Bildauswahl erstellen und die API-und Ressourcen-API des Geräts zum Laden des im Manifest definierten Bilds anzeigen. Der Bildinhalt wird in Base64-Codierung gespeichert und kann gespeichert und erneut überprüft werden.  
+Dieses Beispiel veranschaulicht, wie Sie eine Bild-Auswahl erstellen, und demonstriert die im Manifest definierten Geräte-API und Ressourcen-API zum Laden des Bilds.Der Bildinhalt wird in Base64-Verschlüsselung gespeichert und kann gespeichert und erneut genutzt werden.  
 
-Die `resources.getResource`-Methode nimmt die Eingabe als WebResource-Namen an, der im Komponenten Manifest definiert ist, und lädt diese WebResource. Die Komponente rendert eine `Upload` Schaltfläche und das Standardbild für das anfängliche Rendering. Bilder werden im [Ressourcen](../reference/resources.md) Knoten des Manifests definiert.  
+Die `resources.getResource`-Methode übernimmt die Eingabe den Namen der Webressource, der im Komponentenmanifest definiert ist und lädt die Webressource. Die Komponente wird eine `Upload`-Schaltfläche und das Standardbild für das erste Rendering rendern. Bilder werden im [Ressource](../reference/resources.md)-Knoten des Manifests definiert.  
 
 ```xml
     <resources>
@@ -383,15 +383,15 @@ Die `resources.getResource`-Methode nimmt die Eingabe als WebResource-Namen an, 
     </resources> 
  ```
  
-Der `successCallback` wird ausgelöst, und der Ressourcen Inhalt wird in die `successCallback` eingefügt. Anschließend verwenden Sie das Image-Element "src", um auf den Inhalt und das Standardbild geladen zu werden.
+Das `successCallback` wird ausgelöst und der Ressourceninhalt wird in `successCallback` eingebracht. Verwenden Sie dann das Bildelement 'src', das auf den Inhalt weist und das Standardbild wird geladen.
  
-Mit der `device.pickFile`-Methode wird ein Dialogfeld geöffnet, in dem Dateien von Ihrem Computer (WebClient) oder mobilen Geräten (Mobile Clients) ausgewählt werden können. Beim Desktop wird der Datei-Explorer für den mobilen Client geöffnet, und die Bibliothek des Fotos wird geöffnet. Wenn Sie auf die Schaltfläche " `upload`" klicken, wird die Geräte-API  `pickFile` ausgelöst, und der Benutzer wählt die Datei aus. Nachdem die Datei erfolgreich ausgewählt wurde, wird der Dateiname der Datei, der Dateiinhalt, in den `successCallback` eingefügt. 
+Die `device.pickFile`-Methode öffnet ein Dialogfeld, um Dateien auf Ihrem Computer (Webclient) oder dem Mobilgerät (Mobile Clients) auszuwählen. Beim Desktop öffnet sich der Dateiexplorer, bei mobilen Clients öffnet sich die Bibliothek des Fotos. Wenn Sie auf die Schaltfläche  `upload` klicken, wird die Geräte-API  `pickFile` ausgelöst und der Benutzer wählt die Datei aus. Nachdem die Datei erfolgreich ausgewählt ist, werden der Dateiname, Dateiinhalt der Datei in `successCallback` eingebracht. 
 
 > [!NOTE]
-> Wenn das gleiche Formular oder die gleiche Entität auf dem Legacy-WebClient verwendet wird, zeigt das Feld die Out-of-Box-Textkomponente auf dem Legacy-WebClient an, wo es möglicherweise Probleme mit der UX gibt.  Damit das Element auf dem Legacy-WebClient ausgeblendet wird, können Sie das Kontrollkästchen **Sichtbarkeit** deaktivieren und das Kontrollkästchen **Standard Steuerelement ausblenden ausblenden** aktivieren. 
+> Wenn dasselbe Formular oder die gleiche Entität im Vorgänger-Webclient verwendet wird, zeigt das Feld eine enthaltene Textkomponente im Vorgänger-Webclient, wo es möglicherweise UX-Probleme gibt. Damit dies im Vorgänger-Webclient ausgeblendet wird, könnten wir das **Sichtbarkeit**-Kontrollkästchen deaktivieren und das Kontrollkästchen **Standardsteuerelement ausblenden** zusammen aktivieren. 
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)

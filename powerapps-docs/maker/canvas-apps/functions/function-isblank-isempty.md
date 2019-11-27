@@ -30,7 +30,7 @@ Prüft, ob ein Wert leer ist oder eine [Tabelle](../working-with-tables.md) kein
 
 Jede Eigenschaft oder der berechnete Wert in powerapps kann *leer*sein.  Ein boolescher Wert weist normalerweise einen von zwei Werten auf: **TRUE** oder **FALSE**.  Zusätzlich zu diesen beiden kann Sie auch *leer* sein, um anzugeben, dass der Status nicht bekannt ist.  Dies ist vergleichbar mit Microsoft Excel, bei dem eine Arbeitsblatt Zelle leer ist, ohne Inhalte, aber die Werte **true** oder **false** (u.a.) enthalten kann. Der Inhalt der Zelle kann jederzeit gelöscht und in einen *leeren* Zustand zurückversetzt werden.
 
-Eine *leere Zeichenfolge* verweist auf eine Zeichenfolge, die keine Zeichen enthält.  Die [ **len** -Funktion](function-len.md) gibt 0 (null) für eine solche Zeichenfolge zurück, und Sie kann in Formeln als zwei doppelte Anführungszeichen geschrieben werden, wobei nichts zwischen `""` liegt.  Einige Steuerelemente und Datenquellen verwenden eine leere Zeichenfolge, um die Bedingung "kein Wert" anzugeben.  Um die Erstellung von apps zu vereinfachen, testen die Funktionen " **isblank** " und " **COALESCE** " sowohl *leere* als auch leere Zeichen folgen.    
+Eine *leere Zeichenfolge* verweist auf eine Zeichenfolge, die keine Zeichen enthält.  Die [ **len** -Funktion](function-len.md) gibt 0 (null) für eine solche Zeichenfolge zurück, und Sie kann in Formeln als zwei doppelte Anführungszeichen geschrieben werden, ohne dass zwischen `""`.  Einige Steuerelemente und Datenquellen verwenden eine leere Zeichenfolge, um die Bedingung "kein Wert" anzugeben.  Um die Erstellung von apps zu vereinfachen, testen die Funktionen " **isblank** " und " **COALESCE** " sowohl *leere* als auch leere Zeichen folgen.    
 
 Im Kontext der **IsEmpty** -Funktion ist *empty* spezifisch für Tabellen, die keine Datensätze enthalten. Die Tabellenstruktur ist möglicherweise mit [Spaltennamen](../working-with-tables.md#columns) intakt, enthält jedoch keine Werte. Eine Tabelle kann zunächst leer sein, Datensätzen aufnehmen und dann nicht mehr leer sein, und dann erneut leer sein, wenn die Datensätze entfernt werden.
 
@@ -107,7 +107,7 @@ Der Rückgabewert für die beiden Funktionen **IsBlank** und **IsEmpty** ist ein
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **COALESCE (&nbsp;blank (), &nbsp;1 @ no__t-3)** |Prüft den Rückgabewert der Funktion **Blank**, die immer einen *leeren* Wert zurückgibt. Da das erste Argument *leer*ist, wird die Auswertung mit dem nächsten Argument fortgesetzt, bis ein nicht*leerer Wert und eine nicht leere Zeichen* Folge gefunden wird. |**1** |
+| **COALESCE (&nbsp;Blank (),&nbsp;1&nbsp;)** |Prüft den Rückgabewert der Funktion **Blank**, die immer einen *leeren* Wert zurückgibt. Da das erste Argument *leer*ist, wird die Auswertung mit dem nächsten Argument fortgesetzt, bis ein nicht*leerer Wert und eine nicht leere Zeichen* Folge gefunden wird. |**1** |
 | **COALESCE ("", 2)** |Testet das erste Argument, das eine leere Zeichenfolge ist. Da das erste Argument eine leere Zeichenfolge ist, wird die Auswertung mit dem nächsten Argument fortgesetzt, bis ein nicht*leerer Wert und eine nicht leere Zeichen* Folge gefunden werden. |**2** |
 | **COALESCE (Blank (), "", Blank (), "", 3, 4)** |**COALESCE** beginnt am Anfang der Argumentliste und wertet jedes Argument nacheinander aus, bis ein nicht*leerer Wert und eine nicht leere Zeichen* Folge gefunden werden.  In diesem Fall geben die ersten vier Argumente " *blank* " oder eine leere Zeichenfolge zurück, sodass die Auswertung mit dem fünften Argument fortgesetzt wird. Das fünfte Argument ist nicht*leer* und keine leere Zeichenfolge. die Auswertung wird daher hier angehalten. Der Wert des fünften Arguments wird zurückgegeben, und das sechste Argument wird nicht ausgewertet. |**3** |
 | **COALESCE ("")** | Testet das erste Argument, das eine leere Zeichenfolge ist. Da das erste Argument eine leere Zeichenfolge ist und keine weiteren Argumente vorhanden sind, gibt die Funktion *blank*zurück.   |*blank* |
@@ -131,7 +131,7 @@ Weitere Beispiele:
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Isblank (&nbsp;blank () &nbsp;)** |Prüft den Rückgabewert der Funktion **Blank**, die immer einen *leeren* Wert zurückgibt. |**TRUE** |
+| **Isblank (&nbsp;Blank ()&nbsp;)** |Prüft den Rückgabewert der Funktion **Blank**, die immer einen *leeren* Wert zurückgibt. |**TRUE** |
 | **IsBlank( "" )** |Eine Zeichenfolge, die keine Zeichen enthält |**TRUE** |
 | **IsBlank ("Hello")** |Eine Zeichenfolge, die ein oder mehrere Zeichen enthält |**FALSE** |
 | **IsBlank ( *AnyCollection* )** |Da die [Sammlung](../working-with-data-sources.md#collections) vorhanden ist, ist sie nicht leer, auch wenn sie keine Datensätze enthält. Verwenden Sie stattdessen zum Überprüfen auf eine leeren Sammlung **IsEmpty**. |**FALSE** |
@@ -142,7 +142,7 @@ Weitere Beispiele:
 1. Erstellen Sie eine Anwendung von Grund auf, und fügen Sie ein **Schaltfläche**-Steuerelement hinzu.
 2. Legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:
 
-    **collect (icecream; {Flavor: "Erdbeer"; Menge: 300}; {Flavor: "Chocolate"; Menge: 100})**
+    **Collect( IceCream; { Flavor: "Strawberry"; Quantity: 300 }; { Flavor: "Chocolate"; Quantity: 100 } )**
 3. Führen Sie eine Vorschau Ihrer App aus, klicken oder tippen Sie auf die hinzugefügte Schaltfläche, und schließen Sie dann die Vorschau.  
 
     Eine Sammlung mit dem Namen **IceCream** wird erstellt und enthält diese Daten:

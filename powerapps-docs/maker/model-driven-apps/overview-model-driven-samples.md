@@ -1,6 +1,6 @@
 ---
 title: Modellgesteuerte Beispielapps
-description: 'Erfahren Sie, wie Sie modelgesteuerte Beispiel-Apps erhalten, anpassen und entfernen können.'
+description: Erfahren Sie, wie Sie modelgesteuerte Beispiel-Apps erhalten, anpassen und entfernen können.
 documentationcenter: na
 author: mr-dang-msft
 manager: kvivek
@@ -11,12 +11,17 @@ ms.component: model
 ms.date: 03/08/2018
 ms.author: brdang
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5e579b7054171222819b2d1dd6bb21d9cb7400a9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711561"
 ---
-
 # <a name="model-driven-sample-apps"></a>Modellgesteuerte Beispielapps
 
 In [powerapps.com](https://powerapps.com) verwenden Sie eine Beispielanwendung, um Designmöglichkeiten kennenzulernen und Konzepte zu entdecken, die Sie bei der Entwicklung Ihrer eigenen Apps anwenden können. Jede Beispiel-App verwendet fiktive Daten, um ein reales Szenario darzustellen. 
@@ -28,7 +33,7 @@ Schauen Sie sich die Dokumentation zu jeder Beispiel-App an, um weitere Details 
 
 ## <a name="get-sample-apps"></a>Beispiel-Apps herunterladen
 
-Um modellgesteuerte Beispiel-Apps abspielen oder bearbeiten zu können, müssen die Anwendungen zunächst in einer Common Data Service Datenbank bereitgestellt werden. Erstellen Sie zunächst eine Testumgebung und eine Datenbank und stellen Sie sicher, dass Sie **Beispiel-Apps und Daten einschließen**.
+Um modellgesteuerte Beispiel-Apps abspielen oder bearbeiten zu können, müssen die Apps zunächst in einer Common Data Service-Datenbank bereitgestellt werden. Erstellen Sie zunächst eine Testumgebung und eine Datenbank und stellen Sie sicher, dass Sie **Beispiel-Apps und Daten einschließen**.
 
 ![Datenbank erstellen](media/overview-model-driven-samples/create-database1.png)
 
@@ -55,7 +60,7 @@ Um modellgesteuerte Beispiel-Apps abspielen oder bearbeiten zu können, müssen 
 - Wenn Anpassungen an der Beispielanwendung vorgenommen wurden, kann es [Abhängigkeiten](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components) geben, die vor dem Löschen der Lösung entfernt werden müssen.
 
 ### <a name="steps"></a>Schritte
-1. Melden Sie sich am [PowerApps admin portal](https://admin.powerapps.com) an.
+1. Melden Sie sich am [PowerApps-Verwaltungsportal](https://admin.powerapps.com) an.
 
 2. Wählen Sie eine Umgebung aus.
 

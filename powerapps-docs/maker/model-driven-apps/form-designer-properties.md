@@ -1,37 +1,41 @@
 ---
 title: Im Formulardesigner verfügbare Eigenschaften | MicrosoftDocs
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 08/26/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38a2ebe769fdff6ebeeebd82824fffecae5ff00e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700341"
 ---
-
 # <a name="properties-available-in-the-form-designer"></a>Im Formulardesigner verfügbare Eigenschaften
 
-Im Rechten Bereich des modellgestützten Formulardesigners können Sie mit dem Eigenschaftenbereich schnell die Eigenschaften jedes Elements anzeigen und aktualisieren, das aus der Vorschau oder den Navigationsbereichen ausgewählt wurde. 
+Im rechten Bereich des modellgetriebenen Formular-Designers können Sie im Eigenschaftsbereich die Eigenschaften eines beliebigen Elements, das in der Vorschau oder in der Baumansicht ausgewählt wurde, schnell anzeigen und aktualisieren. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/form-designer-property-pane.png "Formulardesigner-Eigenschaftenbereich")
+> ![](media/form-designer-property-pane.png "Form designer property pane")
 
 ## <a name="form-properties"></a>Formulareigenschaften
-
 
 |Name  |Beschreibung  |
 |---------|---------|
@@ -52,8 +56,8 @@ Im Rechten Bereich des modellgestützten Formulardesigners können Sie mit dem E
 | **Anzeigeoptionen**      | **Auf Telefon ausblenden**     |  Um eine verkürzte Version dieses Formulars auf Smartphone-Bildschirmen anzuzeigen, können Registerkarten ausgeblendet werden.     |
 | **Formatierung**   | **Layout**     |  Registerkarten können bis zu drei Spalten haben. Verwenden Sie diese Optionen, um die Anzahl der Spalten festzulegen, sowie, welchen Prozentsatz der gesamten Breite sie ausfüllen sollen.      |
 
-## <a name="section-properties"></a>Abschnittseigenschaften
 
+## <a name="section-properties"></a>Abschnittseigenschaften
 
 |Fläche   |Name  |Beschreibung  |
 |---------|---------|---------|
@@ -67,7 +71,6 @@ Im Rechten Bereich des modellgestützten Formulardesigners können Sie mit dem E
 
 ## <a name="field-properties"></a>Feldeigenschaften
 
-
 |Fläche  |Name  |Beschreibung  |
 |---------|---------|---------|
 |**Anzeigeoptionen**     | **Feldbeschriftung**    | Standardmäßig entspricht die Beschriftung dem Anzeigenamen des Felds. Sie können diesen Namen für das Formular überschreiben, indem Sie hier eine andere Beschriftung eingeben.       |
@@ -77,15 +80,17 @@ Im Rechten Bereich des modellgestützten Formulardesigners können Sie mit dem E
 |**Anzeigeoptionen**     |  **Feld sperren**   |  Sperren Sie dieses Feld, damit es nicht entfernt werden kann.     |
 |**Anzeigeoptionen**     |  **Feld ausblenden**     | Wenn diese Option ausgewählt ist, wird das Feld standardmäßig ausgeblendet und kann mithilfe von Code angezeigt werden.      |
 |**Anzeigeoptionen**     |  **Auf Telefon ausblenden**    | Um eine verkürzte Version dieses Formulars auf Smartphone-Bildschirmen anzuzeigen, können Felder ausgeblendet werden.         |
-|**Anzeigeoptionen**     | **Feldbreite**      |  Wenn der Abschnitt, der die Felder enthält, mehr als eine Spalte enthält, können Sie festlegen, dass das Feld die Anzahl von Spalten belegt, die der Abschnitt enthält.       |
-
+|**Formatierung**     | **Feldbreite**      |  Wenn der Abschnitt, der die Felder enthält, mehr als eine Spalte enthält, können Sie festlegen, dass das Feld die Anzahl von Spalten belegt, die der Abschnitt enthält.       |
 
 ## <a name="see-also"></a>Siehe auch
 [Übersicht über den modellgestützten Formulardesigner](form-designer-overview.md)  
-[Erstellen oder Bearbeiten von Formularen mit dem Formulardesigner](create-and-edit-forms.md)  
-[Ergänzen, Verschieben oder Löschen von Feldern in einem Formular mithilfe des Formulardesigners](add-move-or-delete-fields-on-form.md)  
-[Hinzufügen, Verschieben oder Löschen von Abschnitten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-sections-on-form.md)  
-[Hinzufügen, Verschieben oder Löschen von Registerkarten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-tabs-on-form.md)  
+[Erstellen, Bearbeiten oder Konfigurieren von Formularen mit dem Formulardesigner](create-and-edit-forms.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Feldern in einem Formular](add-move-or-delete-fields-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Komponenten in einem Formular](add-move-configure-or-delete-components-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Abschnitten in einem Formular](add-move-or-delete-sections-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Registerkarten in einem Formular](add-move-or-delete-tabs-on-form.md)  
 [Konfigurieren von Kopfzeileneigenschaften im Formulardesigner](form-designer-header-properties.md)  
+[Hinzufügen und Konfigurieren einer Unterraster-Komponente in einem Formular](form-designer-add-configure-subgrid.md)  
+[Hinzufügen und Konfigurieren einer Schnellansichts-Komponente in einem Formular](form-designer-add-configure-quickview.md)  
 [Verwenden der Strukturansicht im Formulardesigner](using-tree-view-on-form.md)  
-[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)
+[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)  

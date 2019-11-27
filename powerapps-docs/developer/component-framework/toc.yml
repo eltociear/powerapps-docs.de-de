@@ -1,70 +1,70 @@
-- name: PowerApps-Komponentenframework
+- name: PowerApps component framework
   items:
     - name: Übersicht
       href: overview.md
-    - name: Was sind Code Komponenten?
+    - name: Was sind Codekomponenten?
       href: custom-controls-overview.md
-    - name: Verfügbarkeit für Canvas-apps
+    - name: Verfügbarkeit für Canvas-Anwendungen
       href: component-framework-for-canvas-apps.md
-    - name: Powerapps-CLI
+    - name: PowerApps CLI abrufen
       href: get-powerapps-cli.md
-    - name: Lehrbuch
+    - name: Tutorial
       items:
-        - name: Implementieren der Beispiel Komponente
+        - name: Implementieren einer Beispielkomponente
           href: implementing-controls-using-typescript.md
     - name: Vorgehensweise
       items:
-        - name: Erstellen und Erstellen einer Code Komponente
+        - name: Erstellen und Entwickeln einer Code-Komponente
           href: create-custom-controls-using-pcf.md
-        - name: Packen einer Code Komponente
+        - name: Verpacken einer Codekomponente
           href: import-custom-controls.md
-        - name: Debuggen einer Code Komponente
+        - name: Debugging einer Codekomponente
           href: debugging-custom-controls.md
-        - name: Hinzufügen von Komponenten zu Modell gesteuerten apps
+        - name: Hinzufügen von Komponenten zu modellgesteuerten Apps
           href: add-custom-controls-to-a-field-or-entity.md
-        - name: Hinzufügen von Komponenten zu Canvas-apps
+        - name: Hinzufügen von Komponenten zu Canvas-Apps
           href: 'component-framework-for-canvas-apps.md#add-components-to-a-canvas-app'
-        - name: Aktualisieren vorhandener Code Komponenten
+        - name: Aktualisieren vorhandener Codekomponenten
           href: updating-existing-controls.md
-        - name: Code Komponenten in appsource veröffentlichen
+        - name: Veröffentlichen von Codekomponenten unter AppSource.
           href: publish-components-app-source.md
-    - name: Einschränken
+    - name: Einschränkungen
       href: limitations.md
     - name: Beispielkomponenten
       items:
-        - name: Komponente für die Inkrementierung
+        - name: Erhöhungskomponente
           href: sample-controls/increment-control.md
-        - name: Komponente für lineare Ausgaben
+        - name: Lineare Eingabekomponente
           href: sample-controls/linear-input-control.md
-        - name: Komponente für die Lokalisierungs-API
+        - name: Lokalisierungs-API-Komponente
           href: sample-controls/localization-api-control.md
-        - name: Komponente für die Winkeldrehung
+        - name: Angular-Kippkomponente
           href: sample-controls/angular-flip-control.md
-        - name: Komponente für die Steuerelementzustands-API
+        - name: Steuerelementstatus-API-Komponente
           href: sample-controls/control-state-api.md
-        - name: Komponente für Datasetraster
+        - name: Dataset-Rasterkomponente
           href: sample-controls/data-set-grid-control.md
-        - name: Komponente für die Formatierungs-API
+        - name: Formatieren der API-Komponente
           href: sample-controls/formatting-api-control.md
         - name: IFRAME-Komponente
           href: sample-controls/iframe-control.md
-        - name: Komponente für das Hochladen von Bildern
+        - name: Bild-Upload-Komponente
           href: sample-controls/image-upload-control.md
-        - name: Komponente für Karten
+        - name: Kartenkomponente
           href: sample-controls/map-control.md
-        - name: Komponente für die Navigations-API
+        - name: Navigations-API-Komponente
           href: sample-controls/navigation-api-control.md
-        - name: Komponente für React-Facepile
+        - name: Facepile-Komponente in React
           href: sample-controls/react-facepile-control.md
-        - name: Komponente für Tabellen
+        - name: Tabellenkomponente
           href: sample-controls/table-control.md
-        - name: Komponente für Tabellenraster
+        - name: Tabellenrasterkomponente
           href: sample-controls/table-grid-control.md
-        - name: Komponente für die Web-API
+        - name: Web-API-Komponente
           href: sample-controls/webapi-control.md
-    - name: Angabe
+    - name: Referenz
       items:
-        - name: PowerApps-Komponentenframework
+        - name: PowerApps component framework
           href: reference/index.md
           items:
             - name: Client
@@ -80,7 +80,7 @@
               href: reference/column.md
             - name: ConditionExpression
               href: reference/conditionexpression.md
-            - name: Context
+            - name: Kontext
               href: reference/context.md
             - name: DataSet
               href: reference/dataset.md
@@ -97,11 +97,11 @@
                   href: reference/dataset/getviewid.md
                 - name: openDatasetItem
                   href: reference/dataset/opendatasetitem.md
-                - name: refresh
+                - name: Aktualisieren
                   href: reference/dataset/refresh.md
                 - name: setSelectedRecordIds
                   href: reference/dataset/setselectedrecordids.md
-            - name: Schutz
+            - name: Gerät
               href: reference/device.md
               items:
                 - name: captureAudio
@@ -118,44 +118,44 @@
                   href: reference/device/pickfile.md
             - name: DateFormattingInfo
               href: reference/dateformattinginfo.md
-            - name: Organisation
+            - name: Entität
               href: reference/entity.md
-            - name: Entityformoptions
+            - name: EntityFormOptions
               href: reference/entityformoptions.md
-            - name: Entityrecord
+            - name: EntityRecord
               href: reference/entityrecord.md
               items:
-                - name: GetFormattedValue
+                - name: getFormattedValue
                   href: reference/entityrecord/getformattedvalue.md
-                - name: getnamedreferenzierung
+                - name: getNamedreference
                   href: reference/entityrecord/getnamedreference.md
-                - name: getrecordid
+                - name: getRecordId
                   href: reference/entityrecord/getrecordid.md
                 - name: getValue
                   href: reference/entityrecord/getvalue.md
-            - name: EntityReference
+            - name: Entityreference
               href: reference/entityreference.md
-            - name: Factory
+            - name: Werk
               href: reference/factory.md
               items:
                 - name: getPopupService
                   href: reference/factory/getpopupservice.md
                 - name: requestRender
                   href: reference/factory/requestrender.md
-            - name: File Object
+            - name: FileObject
               href: reference/fileobject.md
-            - name: Filterung
+            - name: Filtern
               href: reference/filtering.md
               items:
-                - name: ClearFilter
+                - name: clearFilter
                   href: reference/filtering/clearfilter.md
                 - name: getFilter
                   href: reference/filtering/getfilter.md
-                - name: SetFilter
+                - name: setFilter
                   href: reference/filtering/setfilter.md
-            - name: Filter Expression
+            - name: FilterExpression
               href: reference/filterexpression.md
-            - name: Formatting
+            - name: Formatierung
               href: reference/formatting.md
               items:
                 - name: formatCurrency
@@ -180,7 +180,7 @@
                   href: reference/formatting/formattime.md
                 - name: getWeekOfYear
                   href: reference/formatting/getweekofyear.md
-            - name: Linking
+            - name: Verknüpfen
               href: reference/linking.md
               items:
                 - name: addLinkedEntity
@@ -198,7 +198,7 @@
                   href: reference/mode/setfullscreen.md
                 - name: trackContainerResize
                   href: reference/mode/trackcontainerresize.md
-            - name: Navig
+            - name: Navigation
               href: reference/navigation.md
               items:
                 - name: openAlertDialog
@@ -224,7 +224,7 @@
                   href: reference/paging/loadnextpage.md
                 - name: loadPreviousPage
                   href: reference/paging/loadpreviouspage.md
-                - name: reset
+                - name: Zurücksetzen
                   href: reference/paging/reset.md
                 - name: setPageSize
                   href: reference/paging/setpagesize.md
@@ -249,7 +249,7 @@
                   href: reference/popupservice/updatepopup.md
             - name: Eigenschaft
               href: reference/property.md
-            - name: '"Retrievemultipleresponse"'
+            - name: RetrieveMultipleResponse
               href: reference/retrievemultipleresponse.md
             - name: Ressourcen
               href: reference/resources.md
@@ -258,11 +258,11 @@
                   href: reference/resources/getresource.md
                 - name: getString
                   href: reference/resources/getstring.md
-            - name: Securityvalues
+            - name: SecurityValues
               href: reference/securityvalues.md
             - name: SortStatus
               href: reference/sortstatus.md
-            - name: Standardcontrol
+            - name: StandardControl
               href: reference/control.md
               items:
                 - name: destroy
@@ -275,7 +275,7 @@
                   href: reference/control/updateview.md
             - name: UserSettings
               href: reference/usersettings.md
-            - name: Utility
+            - name: Dienstprogramm
               href: reference/utility.md
               items:
                 - name: getEntityMetadata
@@ -297,40 +297,40 @@
                   href: reference/webapi/retrieverecord.md
                 - name: updateRecord
                   href: reference/webapi/updaterecord.md
-        - name: Referenz zum Manifestschema
+        - name: Manifestschemareferenz
           href: manifest-schema-reference/index.md
           items:
-            - name: code
+            - name: Code
               href: manifest-schema-reference/code.md
-            - name: control
+            - name: Steuerelement
               href: manifest-schema-reference/control.md
             - name: css
               href: manifest-schema-reference/css.md
-            - name: data-set
+            - name: Datensatz
               href: manifest-schema-reference/data-set.md
-            - name: HTML
+            - name: html
               href: manifest-schema-reference/html.md
             - name: img
               href: manifest-schema-reference/img.md
-            - name: manifest
+            - name: Manifest
               href: manifest-schema-reference/manifest.md
-            - name: property
+            - name: eigenschaft
               href: manifest-schema-reference/property.md
-            - name: property-set
+            - name: Eigenschaftssatz
               href: manifest-schema-reference/property-set.md
-            - name: resources
+            - name: Ressourcen
               href: manifest-schema-reference/resources.md
             - name: resx
               href: manifest-schema-reference/resx.md
-            - name: type
+            - name: typ
               href: manifest-schema-reference/type.md
             - name: type-group
               href: manifest-schema-reference/type-group.md
-            - name: Verwendung von Features
+            - name: feature-usage
               href: manifest-schema-reference/feature-usage.md
-            - name: Verwendung-Feature
+            - name: uses-feature
               href: manifest-schema-reference/uses-feature.md
     - name: Communityressourcen
       href: 'https://powerusers.microsoft.com/t5/PowerApps-Component-Framework/Community-content-sample-components-blogs-etc-Link-to-this-page/m-p/280710#M100'
-    - name: Feedback geben
+    - name: Teilen Sie Ihr Feedback
       href: share-your-feedback-for-pcf.md

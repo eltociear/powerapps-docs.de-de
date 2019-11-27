@@ -1,6 +1,6 @@
 ---
-title: " Lineare Eingabe Komponente | Microsoft-Dokumentation"
-description: Implementieren der linearen Eingabe Komponente
+title: " Lineare Eingabekomponente | Microsoft Docs"
+description: Implementieren der linearen Eingabekomponente
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -9,26 +9,26 @@ ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
 ms.openlocfilehash: f7dcc3fef22c354b1fed684a09fb091f2d2c6cb7
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72347128"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748783"
 ---
-# <a name="implementing-linear-input-component"></a>Implementieren der linearen Eingabe Komponente
+# <a name="implementing-linear-input-component"></a>Implementieren der linearen Eingabekomponente
 
-Diese Beispiel Komponente ändert die Benutzeroberflächen Interaktion mit numerischen Typen im Formular. Anstatt die Zahlen einzugeben, bietet die lineare Eingabe Komponente einen linearen Schieberegler, mit dem der Wert des Attributs im Formular festgelegt werden kann.  
+Diese Beispielkomponente ändert die Benutzerfreundlichkeit beim Interagieren mit numerischen Typen im Formular. Anstatt die Zahlen einzugeben, stellt die lineare Eingangskomponente einen linearen Schieberegler zur Verfügung, mit dem der Wert des Attributs auf dem Formular eingestellt werden kann.  
 
-Zum Implementieren dieser Komponente müssen Sie zuerst die Manifestressource definieren, und Sie [implementieren die Benutzer](../manifest-schema-reference/manifest.md) definierte Logik in typescript.
+Um diese Komponente zu implementieren, müssen Sie zunächst die Datei [Manifest](../manifest-schema-reference/manifest.md) definieren, und sie implementieren die benutzerdefinierte Logik in TypeScript.
 
 > [!div class="mx-imgBorder"]
-> Lineare(../media/linear-input-control.png "Eingabe Komponente für") lineare ![Eingabe]Komponente
+> ![Lineare Eingabekomponente](../media/linear-input-control.png "Lineare Eingabekomponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau) 
+Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
 
-## <a name="manifest"></a>Kundiger
+## <a name="manifest"></a>Manifest
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -237,13 +237,13 @@ export class TSLinearInputControl
 }
 ```
 
-In diesem Beispiel wird eine [Typgruppe](../manifest-schema-reference/type-group.md) definiert und als `numbers` bezeichnet, die Dezimal-, Ganzzahl-, Gleit Komma-und Währungs Werttypen in diese Gruppe im Manifest einschließt. Diese Gruppe wird verwendet, um die Komponenten Eigenschaft zu binden.
+In diesem Beispiel wird [Typ-Gruppe](../manifest-schema-reference/type-group.md) definiert und als `numbers` benannt. Das schließt Dezimal-, ganze, Gleitkomma- und Währungswerttypen in dieser Gruppe im Manifest ein. Diese Gruppe wird verwendet, um die Komponenteneigenschaft zu binden.
 
-Ein Eingabe Element vom Typ `range` mit `min` und `max` Wert, der auf 1 bzw. 1000 festgelegt ist, wird erstellt. Es wird ein Label-Element erstellt, das den Wert in Bezug auf die Position des Schiebereglers anzeigt. Fügen Sie eine Funktions `refreshData` an die `eventlistener` der Eingabe der Komponente an.
+Ein Eingabeelement vom Typ `range`, bei dem die `min` und `max`-Werte je auf 1 und 1000 festgelegt werden, wird erstellt. Ein Beschriftungselement wird erstellt, das den Wert anzeigt, der relativ zur Position des Schiebereglers ist. Verbinden Sie eine Funktion `refreshData` mit der `eventlistener` am Eingang des Bauteils.
 
-Erstellen Sie eine lokale Variable zum Speichern des [Kontexts](../reference/context.md) und `notifyOutputChanged`. Weisen Sie den Kontext und notitputchanged aus den Parametern zu, die als Teil der Init-Funktion übergebenen werden.
+Erstellen Sie eine Variable zum Speichern von [Kontext](../reference/context.md) und `notifyOutputChanged`. Weisen Sie den Kontext und notifyOutputChanged aus von Parametern zu, die im Rahmen der init-Funktion übergeben werden.
 
-Implementieren Sie die Logik für die `refreshData`-Funktion. Wie Sie im Beispiel sehen können, nehmen wir den Wert der-`inputElement` und legen den Wert der-Komponente fest `innerHTML`-Eigenschaft des `labelElement` und dann den `notifyOutputChanged` aufzurufen, damit die Änderungen über der Frameworkebene kaskadiert werden.
+Implementieren Sie die Logik für die `refreshData`-Funktion. Wie im Beispiel zu sehen ist, wird der Wert aus `inputElement` übernommen und der Wert der Komponente wird auf  `innerHTML`-Eigenschaft von `labelElement` festgelegt. Dann rufen Sie `notifyOutputChanged` auf, damit die Änderungen über die Frameworkebene heraufgestuft werden.
 
 ```TypeScript
 public refreshData(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>) 
@@ -254,7 +254,7 @@ public refreshData(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>)
 } 
 ```
 
-In der `updateView`-Methode wird der Wert des-Attributs aus dem Context. Parameters abgerufen und dann auf die value-Variable festgelegt, in der der Komponenten Wert und auch die Eingabeelemente in der Komponente gespeichert werden. 
+In die `updateView`-Methode erhalten wir den Wert des Attributs aus context.parameters und legen ihn dann auf die Wertvariable fest, die den Komponentenwert sowie die Eingabeelemente in der Komponente speichert. 
 
 ```TypeScript
 
@@ -269,6 +269,6 @@ public updateView(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>): 
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)

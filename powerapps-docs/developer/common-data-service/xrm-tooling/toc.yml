@@ -1,30 +1,30 @@
-- name: Erstellen von Windows-Clientanwendungen mithilfe der XRM-Tools
+- name: Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools
   href: build-windows-client-applications-xrm-tools.md
   items:
-    - name: Verwenden von CrmServiceClient-Konstruktoren zum Herstellen von Verbindungen
+    - name: 'CrmServiceClient-Konstruktoren verwenden, um eine Verbindung herzustellen'
       href: use-crmserviceclient-constructors-connect.md
-    - name: Verwenden von Verbindungszeichenfolgen in den XRM-Tools zum Herstellen von Verbindungen
+    - name: Verwenden von Verbindungszeichenfolgen im XRM-Tooling zum Herstellen einer Verbindung
       href: use-connection-strings-xrm-tooling-connect.md
-    - name: Verwenden von PowerShell-Cmdlets für XRM-Tools zum Herstellen von Verbindungen
+    - name: 'Verwenden von PowerShell-Cmdlets für XRM-Tooling, um eine Verbindung herzustellen'
       href: use-powershell-cmdlets-xrm-tooling-connect.md
-    - name: Verwenden von XRM-Tools zum Ausführen von Aktionen
+    - name: XRM-Tooling zur Ausführung von Aktionen verwenden
       href: use-xrm-tooling-execute-actions.md
       items:
-        - name: Verwenden von XRM-Tools zum Erstellen von Daten
+        - name: Verwendung von XRM-Tooling zum Erstellen von Daten
           href: use-xrm-tooling-create-data.md
-        - name: Verwenden von XRM-Tools zum Abrufen von Daten
+        - name: 'XRM-Tools verwenden, um Daten abzurufen'
           href: use-xrm-tooling-retrieve-data.md
-        - name: Verwenden von XRM-Tools zum Aktualisieren von Daten
+        - name: Verwendung von XRM-Tooling zum Aktualisieren von Daten
           href: use-xrm-tooling-update-data.md
-        - name: Verwenden von XRM-Tools zum Löschen von Daten
+        - name: Verwendung von XRM-Tooling zum Löschen von Daten
           href: use-xrm-tooling-delete-data.md
-        - name: Verwenden von Nachrichten mit der ExecuteCrmOrganizationRequest-Methode
+        - name: Verwenden von Nachrichten der ExecuteCrmOrganizationRequest-Methode
           href: use-messages-executecrmorganizationrequest-method.md
-    - name: Verwenden des allgemeinen Anmelde-Steuerelements der XRM-Tools in Clientanwendungen
+    - name: Verwenden des allgemeinen Anmeldungssteuerelements der XRM-Tools in Ihren Client-Anwendungen
       href: use-xrm-tooling-common-login-control-client-applications.md
-    - name: Konfigurieren der Ablaufverfolgung für XRM-Tools
+    - name: Konfigurieren der Ablaufverfolgung für XRM-Tooling
       href: configure-tracing-xrm-tooling.md
-    - name: Vereinfachte Verbindung – Schnellstart
+    - name: Erste Schritte für einfacheres Herstellen von Verbindungen
       href: sample-simplified-connection-quick-start.md
-    - name: 'Beispiel: Schnellstart für die XRM-Tools-API'
+    - name: 'Beispiel: Schnellstart für XRM Tooling API'
       href: sample-quick-start-xrm-tooling-api.md

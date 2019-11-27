@@ -1,5 +1,5 @@
 ---
-title: Erkennen von doppelten Daten mithilfe der Web-API (Common Data Service) | Microsoft Docs
+title: Erkennen von doppelten Daten mit der Web-API (Common Data Service) | Microsoft-Dokumentation
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,13 +10,18 @@ ms.author: jdaly
 ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d2efa9e7a134a83ef081a677cdb168ba3f8b8883
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748359"
 ---
-
-## <a name="detect-duplicate-data-using-the-web-api"></a>Erkennen von doppelten Daten mit der Web-API
+# <a name="detect-duplicate-data-using-the-web-api"></a>Erkennen von doppelten Daten mit der Web-API
 
 <!-- 
 Related topics

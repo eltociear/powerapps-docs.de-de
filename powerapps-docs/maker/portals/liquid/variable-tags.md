@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Variablen Tags für ein Portal | MicrosoftDocs
-description: Weitere Informationen zu Variablen Tags, die im Portal verfügbar sind
+title: Variable Tags für ein Portal verwenden | MicrosoftDocs
+description: Lesen Sie mehr zu den verfügbaren variablen Tags im Portal
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -10,21 +10,21 @@ ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: fa375909ad3e909e70b3477d4e7ba0f24691fc0c
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974412"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707733"
 ---
-# <a name="variable-tags"></a>Variablentags
+# <a name="variable-tags"></a>Variable Tags
 
-Variablen Tags werden zum Erstellen neuer Liquid-Variablen verwendet.
+Variable Tags werden verwendet, um neue Liquid-Variablen zu erstellen.
 
-## <a name="assign"></a>einräumen
+## <a name="assign"></a>Zuweisen
 
-Erstellt eine neue Variable. Zuweisungen können auch [Filter](liquid-filters.md) verwenden, um den Wert zu ändern.  
+Erstellt einer neuen Variable. Zuweisungen können auch [Filter](liquid-filters.md) verwenden, um den Wert ändern.  
 
-**Ordnung**
+**Code**
 
 ```
 {% assign is_valid = true %}
@@ -40,7 +40,7 @@ It is valid.
 {{ name }}
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 It is valid.
@@ -48,11 +48,11 @@ It is valid.
 DAVE BOWMAN
 ```
 
-## <a name="capture"></a>einver
+## <a name="capture"></a>capture
 
-Erfasst den Inhalt innerhalb seines Blocks und weist ihn einer Variablen zu. Dieser Inhalt kann später mithilfe von Ausgabe Tags gerendert werden.
+Erfasst den Inhalt innerhalb seines Blocks und weist ihn einer Variable zu. Dieser Inhalt kann dann später mithilfe von Ausgabetags gerendert werden.
 
-**Ordnung**
+**Code**
 
 ```
 {% capture hello %}Hello, {{ user.fullname }}.{% endcapture %}
@@ -62,7 +62,7 @@ Erfasst den Inhalt innerhalb seines Blocks und weist ihn einer Variablen zu. Die
 {{ hello }}
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 Hello, DAVE BOWMAN.
@@ -72,7 +72,7 @@ Hello, DAVE BOWMAN.
 
 ### <a name="see-also"></a>Siehe auch
 
-[Ablauf Steuerungs Tags](control-flow-tags.md)<br>
-[Iterations Tags](iteration-tags.md)<br>
-[Vorlagen Tags](template-tags.md)<br>
-[Powerapps Common Data Service-Entitäts Tags](portals-entity-tags.md)
+[Ablaufsteuerungstags](control-flow-tags.md)<br>
+[Iterationstags](iteration-tags.md)<br>
+[Vorlagentags](template-tags.md)<br>
+[PowerApps Common Data Service-Entitäts-Tags](portals-entity-tags.md)

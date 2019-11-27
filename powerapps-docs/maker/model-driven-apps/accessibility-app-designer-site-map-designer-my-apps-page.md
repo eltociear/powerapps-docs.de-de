@@ -1,32 +1,37 @@
 ---
-title: 'Grundlegendes zur Barrierefreiheit im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in PowerApps | Microsoft Docs'
-description: 'Informationen zu Barrierefreiheit in modellgesteuerten Apps mit App-Designer, Siteübersicht-Designer und auf der Meine Apps-Seite in PowerApps'
-keywords: 'App-Designer, Siteübersicht-Designer; meine Apps; Dynamics 365'
+title: Grundlegendes zur Barrierefreiheit im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in PowerApps | Microsoft-Dokumentation
+description: Informationen zur Barrierefreiheit in modellgesteuerten Apps mit App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in PowerApps
+keywords: App-Designer, Siteübersicht-Designer; meine Apps; Dynamics 365
 author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.date: 05/20/2019
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 26c79c20-2987-476e-983a-406e0db13034
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c0f845b1b1b390bb6033efa282792b0b5116e6fc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752060"
 ---
+# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Barrierefreiheit in PowerApps, im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite
 
-# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Barrierefreiheit im PowerApps-App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite
-
-Microsoft legt großen Wert darauf, dass die Produkte und Dienste von Microsoft für jeden möglichst einfach zu handhaben sind. Weitere Informationen: [Microsoft-Barrierefreiheit](http://www.microsoft.com/enable/default.aspx)  
+Microsoft legt großen Wert darauf, dass die Produkte und Dienste von Microsoft für jeden möglichst einfach zu handhaben sind. Weitere Informationen: [Microsoft-Barrierefreiheit](https://www.microsoft.com/enable/default.aspx)  
  
 In diesem Thema wird die Barrierefreiheit beschrieben, die in modellgesteuerten Apps verfügbar ist.  
   
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen  
-PowerApps bietet Tastenkombinationen, um die Arbeit für Benutzer mit eingeschränkter Bewegungsfreiheit und Behinderungen zu erleichtern.  
+In PowerApps wird mit Tastenkombinationen eine Hilfestellung geboten, um die Arbeit für Benutzer mit eingeschränkter Bewegungsfreiheit und Behinderungen zu erleichtern.  
   
 |Meine Apps-Seite|||  
 |------------------|-|-|  
@@ -96,14 +101,14 @@ PowerApps bietet Tastenkombinationen, um die Arbeit für Benutzer mit eingeschr�
  Informationen zu Eingabehilfen für Ihren Browser finden Sie auf den folgenden Websites:  
   
   
--   [Barrierefreiheit in Windows](http://www.microsoft.com/enable/products/ie9/default.aspx)  
+-   [Barrierefreiheit in Windows](https://www.microsoft.com/enable/products/ie9/default.aspx)  
   
--   [Barrierefreiheit in Firefox](http://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
+-   [Barrierefreiheit in Firefox](https://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
   
--   [Barrierefreiheit in Safari](http://www.apple.com/accessibility/)  
+-   [Barrierefreiheit in Safari](https://www.apple.com/accessibility/)  
   
 -   [Technische Dokumentation zur Barrierefreiheit in Google Chrome](https://sites.google.com/a/chromium.org/dev/developers/design-documents/accessibility)
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden von Tastaturkürzeln in Dynamics 365 Customer Engagement-Anwendungen](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts)
+[Verwenden von Tastenkombinationen in PowerApps](/powerapps/user/keyboard-shortcuts)

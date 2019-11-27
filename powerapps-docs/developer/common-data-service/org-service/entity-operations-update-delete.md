@@ -1,19 +1,25 @@
 ---
-title: Entitäten mithilfe des Organisationsservices aktualisieren und löschen (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie mithilfe des Organisations-Service Entitäten updaten und trennen'
+title: Entitäten aktualisieren und mithilfe des Organisationsdienstes (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mithilfe des Organisations-Service Entitäten updaten und trennen
 ms.custom: ''
 ms.date: 04/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 974835002e6c65ce553d93393132dfa225baba7e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748542"
 ---
 # <a name="update-and-delete-entities-using-the-organization-service"></a>Aktualisieren und Löschen von Entitäten mit dem Organisationsservice
 
@@ -246,7 +252,7 @@ Weitere Informationen:
 
 ## <a name="use-upsert"></a>Verwendung von Upsert
 
-In der Regel müssen Sie in den Datenenintegrationsszenarien Daten in Common Data Service aus anderen Quellen erstellen oder aktualisieren. Common Data Service verfügt ggf. bereits über Datensätze mit dem gleichen eindeutigen Bezeichner, die möglicherweise ein Alternativschlüssel sind. Wenn ein Entitätsdatensatz vorhanden ist,  möchten Sie diesen aktualisieren. Sollte er nicht vorhanden sein, erstellen Sie ihn, damit die Daten, die hinzugefügt werden, mit den Quelldaten synchronisiert werden. Dies ist erforderlich, wenn Sie upsert verwenden möchten.
+In der Regel müssen Sie in den Datenenintegrationsszenarien Daten in den Common Data Service aus anderen Quellen erstellen oder aktualisieren. Common Data Service haben ggf. bereits Datensätze mit dem gleichen eindeutigen Bezeichner, die möglicherweise ein Alternativschlüssel sind. Wenn ein Entitätsdatensatz vorhanden ist,  möchten Sie diesen aktualisieren. Sollte er nicht vorhanden sein, erstellen Sie ihn, damit die Daten, die hinzugefügt werden, mit den Quelldaten synchronisiert werden. Dies ist erforderlich, wenn Sie upsert verwenden möchten.
 
 Das folgende Beispiel nutzt ein <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> zweimal. Das erste Mal, wenn ein Firmaenentitätsdatensatz erstellt wird und im zweiten Importvorgang der Anwendung aktualisiert wird, da er ein Wert `accountnumber` ist und es sich um einen Alternativschlüssel mithilfe dieses Attribut ist.
 

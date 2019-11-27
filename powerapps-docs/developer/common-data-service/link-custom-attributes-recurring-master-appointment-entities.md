@@ -1,6 +1,6 @@
 ---
-title: Verknüpfen Sie Attribute für benutzerdefinierte Serienterminmaster- und Terminentitäten (Common Data Service) | Microsoft Docs
-description: 'Verknüpfen benutzerdefinierter Attribute der RecurringAppointmentMaster-Entität mit benutzerdefinierten Attributen der Terminentität, um Daten automatisch zu kopieren.'
+title: Verknüpfen von benutzerdefinierten Attributen für Serienterminmaster- und Termin-Entitäten (Common Data Service) | Microsoft-Dokumentation
+description: Verknüpfen benutzerdefinierter Attribute der RecurringAppointmentMaster-Entität mit benutzerdefinierten Attributen der Terminentität, um Daten automatisch zu kopieren.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b592f23ee8907902a206be8012249c4db2e7bac2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748273"
 ---
 # <a name="link-custom-attributes-of-the-recurring-appointment-master-and-appointment-entities"></a>Verknüpfen von benutzerdefinierten Attributen für Serienterminmaster- und Termin-Entitäten
 

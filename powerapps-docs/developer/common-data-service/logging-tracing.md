@@ -1,8 +1,8 @@
 ---
 title: Protokollierung und Verfolgung (Common Data Service) | Microsoft Docs
-description: 'Verwenden Sie das Trace-Protokoll, um Informationen zur Ausführung von Plug-Ins zu speichern, um das Plug-In-Debugging zu unterstützen.'
+description: Verwenden Sie das Trace-Protokoll, um Informationen zur Ausführung von Plug-Ins zu speichern, um das Plug-In-Debugging zu unterstützen.
 ms.custom: ''
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9a663c8f6a8f37b36d341c2a20c96c2ff7cff3e0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748275"
 ---
 # <a name="tracing-and-logging"></a>Protokollierung und Ablaufverfolgung
 
@@ -91,7 +97,7 @@ Jeder Trace-Aufruf wird als neue Zeile im Attribut [PluginTraceLog](reference/en
 
  ### <a name="plug-in-trace-viewer"></a>Plug-in Trace-Viewer
 
-**Plug-In-Ablaufverfolgungsanzeige** ist ein Tool, das die XrmToolbox-Community entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
+**Plug-In-Ablaufverfolgungsanzeige** ist ein Tool, das die XrmToolbox-Community entwickelte. Bitte beachten Sie das Thema [Community-Tools für Common Data Service](community-tools.md) für Community entwickelte Tools.
 
 > [!NOTE]
 > Die Communitytools sind kein Produkt von Microsoft und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).  

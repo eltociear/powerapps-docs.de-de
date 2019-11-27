@@ -1,6 +1,6 @@
 ---
-title: Offline- und Outlook-Filter und Vorlagen (Common Data Service)| Microsoft Docs
-description: 'Daten, die zwischen dem Common Data Service und Dynamics 365 for Outlook synchronisiert werden sollen, werden durch Datenfilter für Office Outlook festgelegt'
+title: Offline- und Outlook-Filter und -Vorlagen (Common Data Service) | Microsoft-Dokumentation
+description: Daten, die zwischen Common Data Service und Dynamics 365 for Outlook synchronisiert werden sollen, werden durch Datenfilter für Outlook festgelegt
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,15 +10,21 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b68f2013e49ce85d78efe588a9308efa55b361c8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748674"
 ---
 # <a name="offline-and-outlook-filters-and-templates"></a>Offline- und Outlook-Filter und -Vorlagen
 
-Datenfilter für Office Outlook bestimmen, welche Daten zwischen dem Common Data Service und Dynamics 365 for Outlook synchronisiert werden sollen. Common Data Service unterstützt die Möglichkeit, den Standardfilter mithilfe des SDK zu ändern und die Änderungen an einen oder alle Benutzer zu übertragen.  
-Sie können Code schreiben, der Administratoren ermöglicht, Filtervorlagen zu erstellen und zu veröffentlichen. Dies ermöglicht einem Common Data Service-Administrator, allgemeine oder erwünschte Filter zu erstellen, die den Benutzern für die Synchronisierung mit dem Outlook-Speicher und der Offlinedatenbank veröffentlicht werden können. Dies bietet auch die Möglichkeit, eine Standardfiltervorlage anzupassen, die für Benutzer angewendet wird, die zum System hinzugefügt werden, nachdem die Vorlagen ursprünglich veröffentlicht wurden. Der Administrator besitzt auch die Möglichkeit, Benutzerfilter zu aktualisieren oder zu löschen, nachdem sie veröffentlicht wurden.  
+Datenfilter für Office Outlook bestimmen, welche Daten zwischen Common Data Service und Dynamics 365 for Outlook synchronisiert werden sollen. Common Data Service unterstützen die Möglichkeit, den Standardfilter mithilfe des SDK zu ändern und die Änderungen an einen oder alle Benutzer zu übertragen.  
+Sie können Code schreiben, der Administratoren ermöglicht, Filtervorlagen zu erstellen und zu veröffentlichen. Dies ermöglicht einem Common Data Service-Administrator, allgemeine oder erwünschte Filter zu erstellen, die für Benutzer für die Synchronisierung mit dem Outlook Store und der Offlinedatenbank veröffentlicht werden können. Dies bietet auch die Möglichkeit, eine Standardfiltervorlage anzupassen, die für Benutzer angewendet wird, die zum System hinzugefügt werden, nachdem die Vorlagen ursprünglich veröffentlicht wurden. Der Administrator besitzt auch die Möglichkeit, Benutzerfilter zu aktualisieren oder zu löschen, nachdem sie veröffentlicht wurden.  
 Damit diese Anpassungen unterstützt werden, gibt es vier neue Abfragetypen für gespeicherte Abfragen (Ansicht). Wenn Sie einen gespeicherten Abfragedatensatz (Ansicht) erstellen, geben Sie einen dieser Typen im `SavedQuery.QueryType`-Attribut mithilfe der <xref:Microsoft.Crm.Sdk.SavedQueryQueryType>-Enumeration an. Der Zugriff ist nur möglich, indem Sie die hier beschriebenen Methoden verwenden. Es gibt keine Benutzeroberfläche, um ihn zu ändern. Sie können verschiedene Filter angeben, sodass Sie für Ihr Mobiltelefon nicht alles mit Outlook synchronisieren müssen. Filtervorlagen sind lösungsfähig, sodass sie zusammen mit einer Lösung exportiert werden können.  
   
  In der folgenden Tabelle sind die neuen Abfragetypen für Filter und Filtervorlagen aufgelistet.  
@@ -28,7 +34,7 @@ Damit diese Anpassungen unterstützt werden, gibt es vier neue Abfragetypen für
 |<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OutlookFilters>|Definiert eine Teilmenge einer Entität, die mit Dynamics 365 for Outlook synchronisiert wird. Die Teilmenge von Daten, die mithilfe dieser Filter definiert werden, werden für Outlook-Ordner, zum Beispiel Kontakte, Kalender usw., synchronisiert.|  
 |<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineFilters>|Definiert eine Teilmenge einer Entität, die mit Dynamics 365 for Microsoft Office Outlook mit Offlinezugriff synchronisiert wird. Die Teilmenge von Daten, die mithilfe dieser Filter definiert werden, werden mit der Offlinedatenbank synchronisiert.|  
 |<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OutlookTemplate>|Definiert eine Filtervorlage, die auf neue Benutzer für die Synchronisierung mit Dynamics 365 for Outlook angewendet wird.|  
-|<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineTemplate>|Definiert eine Filtervorlage, die auf Benutzer für eine Synchronisierung mit Dynamics 365 for Microsoft Office Outlook mit Offlinezugriff angewendet wird.|  
+|<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineTemplate>|Definiert eine Filtervorlage, die auf neue Benutzer für die Synchronisierung mit Dynamics 365 for Microsoft Office Outlook mit Offlinezugriff angewendet wird.|  
   
 ## <a name="instantiate-a-filter"></a>Instanziieren eines Filters
 
@@ -54,7 +60,7 @@ Sie können die Filter für einen Benutzer mithilfe der <xref:Microsoft.Crm.Sdk.
   
 ### <a name="see-also"></a>Siehe auch
 
-[Erweitern von Dynamics 365 für Outlook](extend-dynamics-365-outlook.md)<br />
+[Erweitern von Dynamics 365 for Outlook](extend-dynamics-365-outlook.md)<br />
 [SavedQuery Entitätsreferenz](../reference/entities/savedquery.md)<br />
 [Beispiel: Outlook-Filter erstellen und abrufen](sample-create-retrieve-outlook-filters.md)<br /> 
 <xref:Microsoft.Crm.Sdk.Messages.InstantiateFiltersRequest><br />

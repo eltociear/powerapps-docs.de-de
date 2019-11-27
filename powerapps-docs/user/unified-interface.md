@@ -15,29 +15,31 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 76241ae2e26752a98e32e7ad72c54780da3934ae
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: c5c620590400fc6fe276c8107c94d89b3daa42b9
+ms.sourcegitcommit: 6380b5ac248fc5d2f5d4a34af8831b4f7b6ef1aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705311"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801082"
 ---
 # <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Erweiterte Benutzeroberfläche mit der einheitlichen Oberfläche für Modell gesteuerte apps 
 
 Die einheitliche Schnittstelle für Modell gesteuerte Apps bietet eine konsistente und barrierefreie Benutzeroberfläche auf allen Geräten – ob auf einem Desktop, Laptop, Tablet oder Smartphone. Die apps werden skaliert, indem die Komponenten auf dem Bildschirm wieder geleitet werden. Das reaktionsfähige Design passt sich je nach Bildschirmgröße an Ihre Umgebung an. je mehr verfügbarer Speicherplatz vorhanden ist, desto mehr Informationen können angezeigt werden.
 
 > [!div class="mx-imgBorder"]
-> ![Vereinheitlichte Schnittstelle an Bildschirm] anpassen (media/Reflow.png "Vereinheitlichte Schnittstelle an Bildschirm") anpassen
+> ![Vereinheitlichte Schnittstelle an Bildschirm anpassen](media/Reflow.png "Vereinheitlichte Schnittstelle an Bildschirm anpassen")
+
+Eine Übersicht über die vereinheitlichte Schnittstelle in Modell gesteuerten apps finden Sie in diesem Video: [Introduction to Unified Interface](https://www.youtube.com/watch?v=_VPOi_Iq6ko)
 
 > [!NOTE]
-> Der Legacy-WebClient ist veraltet, und die Kunden müssen vor dem 1. Oktober 2020 zu Unified Interface übergehen. Weitere Informationen finden Sie unter [Blog: Ankündigung der Zeitachse, die zu Unified Interface verschoben werden soll](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Weitere Informationen zum Übergang finden Sie unter [Schnellstart für](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)den Übergang.
+> Der Legacy-WebClient ist veraltet, und die Kunden müssen vor dem 1. Oktober 2020 zu Unified Interface übergehen. Weitere Informationen finden Sie unter [Blog: ankündigen der Zeitachse zum Verschieben in eine einheitliche Schnittstelle](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Weitere Informationen zum Übergang finden Sie unter [Schnellstart für](https://docs.microsoft.com/powerapps/maker/model-driven-apps/transition-web-app)den Übergang.
 
 ## <a name="navigation"></a>Navig
 
 Mit den Menü Optionen können Sie schnell durch die verschiedenen apps im System navigieren. Sie bieten schnellen Zugriff auf kürzlich angezeigte Datensätze und angeheftete Favoriten. 
 
 > [!div class="mx-imgBorder"]
-> ![Navigation in der modellgesteuerten App](media/nav.png "Navigation in der modellgesteuerten App")
+> ![Modell gesteuerte App-Navigationsleiste](media/nav.png "Modell gesteuerte App-Navigationsleiste")
 
 1. Site Map ist erweitert und wird standardmäßig beibehalten.
 2. Das untergeordnete Element, in dem Sie sich gerade befinden, wird hervorgehoben, um anzugeben, wo sich die APP befindet.

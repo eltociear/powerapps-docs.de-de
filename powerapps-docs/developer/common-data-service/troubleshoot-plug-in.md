@@ -1,8 +1,8 @@
 ---
 title: Problembehandlungs-Plug-Ins (Common Data Service für Apps) | Microsoft Docs
-description: 'Enthält Informationen zu Fehlern, die aufgrund von Plug-Ins auftreten können und wie sie behoben werden.'
+description: Enthält Informationen zu Fehlern, die aufgrund von Plug-Ins auftreten können und wie sie behoben werden.
 ms.custom: ''
-ms.date: 04/26/2019
+ms.date: 09/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -10,21 +10,35 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ea933534c38686a3766d52b98b82c96f878c13f0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748632"
 ---
 # <a name="troubleshoot-plug-ins"></a>Problembehandlungs-Plug-Ins 
 
 Dieses Thema enthält Informationen zu Fehlern, die aufgrund von Plug-Ins auftreten können und wie sie behoben werden.
 
-## <a name="error-there-is-no-active-transaction"></a>Fehler: Es gibt keine aktive Transaktion. 
+## <a name="transaction-errors"></a>Transaktionsfehler
+
+Es gibt zwei häufige Arten von Fehlern im Zusammenhang mit Transaktionen: 
+
+Fehlercode: `-2146893812`<br />
+Fehlermeldung: `ISV code reduced the open transaction count. Custom plug-ins should not catch exceptions from OrganizationService calls and continue processing.`
 
 Fehlercode: `-2147220911`<br />
 Fehlermeldung: `There is no active transaction. This error is usually caused by custom plug-ins that ignore errors from service calls and continue processing.`
 
-Es kann schwierig sein, den Fehler zu beheben, da die Ursache im Code einer anderen Person liegen kann. Um die Nachricht zu verstehen, müssen Sie bedenken, dass bei einem Fehler der Datenoperation im Synchronen Plug-In jedes Mal die Transaktion für die gesamten Operation beendet wird.
+> [!NOTE]
+> Der oberste Fehler wurde zuletzt hinzugefügt. Sie sollte sofort und im Zusammenhang mit dem Plugin, das das Problem enthält, auftreten. Der untere Fehler kann immer noch unter verschiedenen Umständen auftreten, typischerweise mit benutzerdefinierten Workflow-Aktivitäten. Es kann an Problemen in einem anderen Plugin liegen.
+
+Um die Nachricht zu verstehen, müssen Sie bedenken, dass bei einem Fehler der Datenoperation im Synchronen Plug-In jedes Mal die Transaktion für die gesamten Operation beendet wird.
 
 Mehr Informationen: [Skalierbares Anpassungsdesign in Common Data Service](scalable-customization-design/overview.md)
 

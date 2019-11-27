@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Geschäftsregel in Common Data Service | MicrosoftDocs
+title: Erstellen einer Geschäftsregel in Common Data Service | Microsoft-Dokumentation
 description: Schrittweise Anweisungen zur Erstellung einer Geschäftsregel in Common Data Service.
 author: lancedMicrosoft
 manager: kfile
@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45d0d4ce80d1552ace70ae5b25a67e570141d261
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754737"
 ---
-
 # <a name="create-a-business-rule-for-an-entity"></a>Eine Geschäftsregel für eine Entität erstellen
 
 Sie können Geschäftsregeln und Empfehlungen erstellen, um Logik und Validierungen anzuwenden, ohne -Code zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten.
@@ -46,7 +51,7 @@ Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/workin
 
 ## <a name="create-a-business-rule"></a>Geschäftsregel formulieren
   
-1. Melden Sie sich in [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und klicken oder tippen Sie auf den Abwärtspfeil für **Daten** neben dem linken Rand.
+1. Melden Sie sich in [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und klicken oder tippen Sie auf den Abwärtspfeil für **Daten** neben dem linken Rand.
 
 2. In der Liste, der angezeigt wird, klicken oder tippen Sie auf **Entitäten**.
   
@@ -77,13 +82,13 @@ Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/workin
   
     1. Ziehen Sie die **Bedingung**-Komponente von der Registerkarte **Komponenten** auf ein Pluszeichen (+) zwischen im Designer.  
   
-        ![Einer Geschäftsregel eine Bedingung hinzufügen](./media/data-platform-cds-create-business-rule/add-condition-business-rule.png "Einer Geschäftsregel eine Bedingung hinzufügen")  
+        ![Eine Bedingung in einer Geschäftsregel hinzufügen](./media/data-platform-cds-create-business-rule/add-condition-business-rule.png "Eine Bedingung in einer Geschäftsregel hinzufügen")  
   
-    2. Sie können die Eigenschaften der Bedingung festlegen. Klicken Sie dazu auf die **Bedingung**-Komponente im Design, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** auf der rechten Seite des Bildschirms fest. Wenn Sie die Eigenschaften festlegen, erstellt der Common Data Service einen Ausdruck unten auf der Registerkarte **Eigenschaften**.  
+    2. Sie können die Eigenschaften der Bedingung festlegen. Klicken Sie dazu auf die **Bedingung**-Komponente im Design, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** auf der rechten Seite des Bildschirms fest. Wenn Sie die Eigenschaften festlegen, erstellt Common Data Service einen Ausdruck unten auf der Registerkarte **Eigenschaften**.  
   
     3. Um eine Zusatzbestimmung (UND oder ODER) der Bedingung hinzuzufügen, klicken Sie auf **Neu** auf der Registerkarte **Eigenschaften**, um eine neue Regel zu erstellen, und legen Sie dann Eigenschaften für diese Regel fest. Im Feld **Regel-Logik** können Sie angeben, ob die neue Regel als UND oder ODER hinzugefügt werden soll.  
   
-        ![Einer Bedingung eine neue Regel hinzufügen](./media/data-platform-cds-create-business-rule/add-new-rule-condition.png "Einer Bedingung eine neue Regel hinzufügen")  
+        ![Eine neue Regel zu einer Bedingung hinzufügen](./media/data-platform-cds-create-business-rule/add-new-rule-condition.png "Eine neue Regel zu einer Bedingung hinzufügen")  
   
     4. Wenn Sie die Eigenschaften für die Bedingung festgelegt haben, klicken Sie auf **Übernehmen**.  
   
@@ -91,7 +96,7 @@ Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/workin
   
     1. Ziehen Sie eine der Aktionskomponenten von der **Komponenten**-Registerkarte auf ein Pluszeichen neben **Bedingung**-Komponente. Ziehen Sie die Aktionen auf ein Pluszeichen neben ein Häkchen, wenn die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung erfüllt wird, oder auf ein Pluszeichen neben einem x, wenn Sie die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung nicht erfüllt ist.
   
-        ![Eine Aktion auf eine Geschäftsregel ziehen](./media/data-platform-cds-create-business-rule/drag-an-action-business-rule.png "Eine Aktion auf eine Geschäftsregel ziehen")  
+        ![Ziehen Sie eine Aktion zu einer Geschäftsregel](./media/data-platform-cds-create-business-rule/drag-an-action-business-rule.png "Ziehen Sie eine Aktion zu einer Geschäftsregel")  
   
     2. Sie können die Eigenschaften der Aktion festlegen. Klicken Sie dazu auf die **Aktion**-Komponente im Design, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften**.  
   
@@ -106,7 +111,7 @@ Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/workin
     3. Um weitere Aktionen zur Empfehlung hinzuzufügen, ziehen Sie sie auf die Registerkarte **Komponenten**, und legen Sie dann auf Eigenschaften für jede Aktion auf der Registerkarte **Eigenschaften** fest.  
   
         > [!NOTE]
-        >  Wenn Sie eine Empfehlung erstellen, fügt der Common Data Service standardmäßig eine einzelne Aktion hinzu. Um alle Aktionen in einer Empfehlung anzuzeigen, klicken Sie auf der Seite **Details** auf die **Empfehlung**-Komponente.  
+        >  Wenn Sie eine Empfehlung erstellen, fügt Common Data Service standardmäßig eine einzelne Aktion hinzu. Um alle Aktionen in einer Empfehlung anzuzeigen, klicken Sie auf der Seite **Details** auf die **Empfehlung**-Komponente.  
   
     4. Wenn Sie die Eigenschaften festgelegt haben, klicken Sie auf **Übernehmen**.  
   
@@ -123,5 +128,5 @@ Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/workin
     > - Wenn Sie Bedingungen, Aktionen und Unternehmensempfehlungen der Geschäftsregel hinzufügen, erstellt Common Data Service den Code für die Geschäftsregel am unteren Rand des Designerfensters. Dieser Code ist nur lesbar.  
   
 ## <a name="localize-error-messages-used-in-business-rules"></a>Lokalisieren der Fehlermeldungen in Geschäftsregeln  
- Sind mehrere Sprache für Ihre Organisation bereitgestellt, können Sie Ihre Fehlermeldungen lokalisieren. Bei jeder Meldung generiert das System eine Beschriftung. Wenn Sie die Übersetzungen in Ihrer Organisation exportieren, können Sie lokalisierte Versionen Ihrer Meldungen hinzufügen und diese Beschriftungen wieder im Common Data Service importieren, so dass Personen, die andere Sprachen als Ihre Ausgangssprache verwenden, die übersetzten Meldungen sehen.  
+ Sind mehrere Sprache für Ihre Organisation bereitgestellt, können Sie Ihre Fehlermeldungen lokalisieren. Bei jeder Meldung generiert das System eine Beschriftung. Wenn Sie die Übersetzungen in Ihrer Organisation exportieren, können Sie lokalisierte Versionen Ihrer Meldungen hinzufügen und diese Beschriftungen wieder in Common Data Service importieren, so dass Personen, die andere Sprachen als die Standardsprache verwenden, die übersetzten Meldungen sehen.  
   

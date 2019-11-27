@@ -1,6 +1,6 @@
 ---
-title: Nutzen von XRM-Tooling zum Löschen von Daten (Common Data Service) | Microsoft Docs
-description: 'Verwenden der CrmServiceClient-Klasse, um Daten aus Common Data Service zu löschen'
+title: Verwendung von XRM-Tools zum Löschen von Daten (Common Data Service) | Microsoft-Dokumentation
+description: Verwenden der CrmServiceClient-Klasse, um Daten aus Common Data Service zu löschen
 ms.custom: ''
 ms.date: 03/20/2019
 ms.reviewer: ''
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 7e503d2c-89df-4846-8528-632b5ee12bd5
 caps.latest.revision: 14
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac21ffa82890c580f8683b555601a064c848d9e4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748323"
 ---
 # <a name="use-xrm-tooling-to-delete-data"></a>Verwendung von XRM-Tooling zum Löschen von Daten
 
-Es gibt zwei Möglichkeiten in der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Klasse zum Löschen von Daten in Common Data Service: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntity(System.String,System.Guid,System.Guid)> und <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntityAssociation(System.String,System.Guid,System.String,System.Guid,System.String,System.Guid)>.  
+Es gibt zwei Möglichkeiten, um in der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> Klasse Daten in Common Data Service: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntity(System.String,System.Guid,System.Guid)> und <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntityAssociation(System.String,System.Guid,System.String,System.Guid,System.String,System.Guid)> zu löschen.  
   
 ## <a name="deleteentity"></a>DeleteEntity  
 
@@ -86,5 +92,5 @@ else
 ### <a name="see-also"></a>Siehe auch  
 
 [Beispiel: Schnellstart für XRM Tooling API](sample-quick-start-xrm-tooling-api.md)<br />
-[Verwenden von XRM-Tooling zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
-[Verwenden der XRM-Tooling-API zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)
+[Verwenden von XRM-Tools, um eine Verbindung zu Common Data Service herzustellen](use-crmserviceclient-constructors-connect.md)<br />
+[Use XRM Tooling API to execute actions in Common Data Service](use-xrm-tooling-execute-actions.md)

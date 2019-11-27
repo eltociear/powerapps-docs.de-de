@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: c765b6d9-4d87-4c2d-aae2-5b1c3b664a71
 caps.latest.revision: 28
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 400fb236df41fefc8a9cfa7175ebfd8260ec96bd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707469"
 ---
 # <a name="entity-relationships-overview"></a>Überblick über Entitätsbeziehungen
 Entitätsbeziehungen definieren, wie Datensätze in der Datenbank miteinander verknüpft werden können. Auf der einfachsten Ebene erstellt das Hinzufügen eines Suchfeldes zu einer Entität eine neue 1:n (eins-zu-viele)-Beziehung zwischen den beiden Entitäten und ermöglicht Ihnen, dieses Suchfeld in ein Formular einzusetzen. Mit dem Suchfeld können Benutzer mehrere *untergeordnete* Datensätze dieser Entität einer einzelnen *übergeordneten* Entität zuordnen.  
@@ -49,10 +55,10 @@ Wenn Sie sich den Lösungsexplorer ansehen, denken Sie vielleicht, dass es drei 
   
 |Geschäftsbeziehungstyp|Beschreibung|  
 |-----------------------|-----------------|  
-|**1:n (Eins-zu-Viele)**|Eine Entitätsbeziehung, bei der ein Datensatz für die **Primäre Entität** mit mehreren anderen **Verknüpften Entitäts**-Datensätzen durch ein Suchfeld in der verknüpften Entität verknüpft werden kann.<br /><br /> Wenn Sie einen Datensatz der primären Entität anzeigen, sehen Sie eine Liste der verknüpften Datensätze, die dieser Entität zugeordnet sind.|  
+|**1:n (Eins-zu-Viele)**|Eine Entitätsbeziehung, bei der ein Datensatz für die **Primäre Entität** mit mehreren anderen **Verknüpften Entitäts**-Datensätzen durch ein Suchfeld in der verknüpften Entität verknüpft werden kann.<br /><br /> Wenn Sie einen Datensatz der primären Entität anzeigen, sehen Sie eine Liste der verknüpften Datensätze, die dieser Entität zugeordnet sind.<br /><br /> Im PowerApps-Portal steht **Aktuelle Entität** für die primäre Entität.|  
 |**N:N (Viele-zu-Viele)**|Eine Entitätsbeziehung, die von einer speziellen **Beziehungsentität** abhängig ist, oft als Überschneidungsentität bezeichnet, so dass mehrere Datensätze einer Entität mit mehreren Datensätzen einer anderen Entität verknüpft werden können.<br /><br /> Wenn Datensätze von verschiedenen Entitäten in einer N:N-Beziehung angezeigt werden, können Sie eine Liste aller Datensätze der anderen Entität anzeigen, die damit verknüpft sind.|  
   
-Der **N:1 (many-to-one)**-Beziehungstyp besteht in der Benutzeroberfläche des Lösungsexplorers, da der Lösungsexplorer Ihnen eine nach Entitäten gruppierte Ansicht zeigt. 1:n-Beziehungen bestehen *zwischen* Entitäten und verweisen auf jede Entität entweder als **Primäre Entität**oder als **Verknüpfte Entität**. Die verknüpfte Entität, oft als *untergeordnete* Entität bezeichnet, verfügt über ein Suchfeld, in dem das Speichern eines Verweises zu einem Datensatz aus der primären Entität, oft als *übergeordnete* Entität bezeichnet, möglich ist. Eine n:1-Beziehung ist einfach eine 1:n-Beziehung aus der Perspektive der zugehörigen Entität.  
+Der **N:1 (many-to-one)**-Beziehungstyp besteht in der Benutzeroberfläche des Lösungsexplorers, da der Lösungsexplorer Ihnen eine nach Entitäten gruppierte Ansicht zeigt. 1:n-Beziehungen bestehen *zwischen* Entitäten und verweisen auf jede Entität entweder als **Primäre/Aktuelle Entität** oder als **Verknüpfte Entität**. Die verknüpfte Entität, oft als *untergeordnete* Entität bezeichnet, verfügt über ein Suchfeld, in dem das Speichern eines Verweises zu einem Datensatz aus der primären Entität, oft als *übergeordnete* Entität bezeichnet, möglich ist. Eine n:1-Beziehung ist einfach eine 1:n-Beziehung aus der Perspektive der zugehörigen Entität.  
  
 ## <a name="entity-relationship-behavior"></a>Entitätenbeziehungsverhalten
 Verhalten für verknüpfte Entitäten sind wichtig, weil sie helfen, die Datenintegrität zu gewährleisten und Geschäftsprozesse für das Unternehmen automatisieren zu können.

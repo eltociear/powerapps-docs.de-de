@@ -1,23 +1,29 @@
 ---
-title: Verwenden der ConditionExpression-Klasse (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie mehr dazu, wie Sie die ConditionExpression-Klasse verwenden können, um ein Attribut mit einem Wert oder einer Wertemenge zu vergleichen, indem Sie einen Operator verwenden, wie beispielsweise &quot;Ist gleich&quot; oder &quot;Größer als&quot;'
+title: Die ConditionExpression-Klasse verwenden (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie mehr dazu, wie Sie die ConditionExpression-Klasse verwenden können, um ein Attribut mit einem Wert oder einer Wertemenge zu vergleichen, indem Sie einen Operator verwenden, wie beispielsweise &quot;Ist gleich&quot; oder &quot;Größer als&quot;
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5e05b1124c8c1453b0e14208451068026e6570f1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748691"
 ---
 # <a name="use-the-conditionexpression-class"></a>Verwenden der ConditionExpression-Klasse
 
-In Common Data Service können Sie die <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression>-Klasse verwenden, um ein Attribut mit einem Wert oder einer Wertemenge zu vergleichen, indem Sie einen Operator verwenden, wie beispielsweise „Ist gleich” oder „Größer als”. Bei der `ConditionExpression`-Klasse können Sie Bedingungsausdrücke als Parameter an andere Klassen übergeben, wie beispielsweise <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> und <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>.  
+In Common Data Service können Sie die <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression>-Klasse verwenden, um ein Attribut mit einem Wert oder einer Wertemenge zu vergleichen, indem Sie einen Operator verwenden, wie beispielsweise "Ist gleich" oder "Größer als". Bei der `ConditionExpression`-Klasse können Sie Bedingungsausdrücke als Parameter an andere Klassen übergeben, wie beispielsweise <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> und <xref:Microsoft.Xrm.Sdk.Query.FilterExpression>.  
   
  In der folgenden Tabelle sind die Eigenschaften aufgelistet, die Sie festlegen können, um eine Bedingung mithilfe der `ConditionExpression`-Klasse zu erstellen.  
   

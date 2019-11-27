@@ -8,25 +8,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 caps.latest.revision: 31
 author: Mattp123
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3937b56ea5ed9aa03085f48de8f4846328d6e836
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700561"
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars
 
-Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Formularlogik in einer modellgesteuerten App anzuwenden, ohne JavaScript-Codes zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. Sie können auf Haupt- und Schnellerfassungsformulare angewendet werden, und sie funktionieren in modellgesteuerten Apps, Dynamics 365 Customer Engagement-Web-Apps, Dynamics 365 for tablets und Dynamics 365 for Outlook (Online- oder Offlinemodus).
+Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Formularlogik in einer modellgesteuerten App anzuwenden, ohne JavaScript-Codes zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. Sie können auf Haupt- und Schnellerfassungsformulare angewendet werden, und sie funktionieren in modellgesteuerten Apps, alten Web-Apps, Dynamics 365 für Tablets und Dynamics 365 for Outlook (Online- oder Offlinemodus).
 
 > [!NOTE]
 > Um eine Geschäftsregel für eine Entität zu definieren, damit diese für alle Formulare und Server angewendet wird, siehe [Geschäftsregel für eine Enität erstellen](/powerapps/maker/common-data-service/data-platform-create-business-rule).
@@ -51,11 +57,11 @@ Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Form
   
 1. Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).  
   
-2.  Öffnen Sie die Entität, für die Sie die Geschäftsregel erstellen möchten (öffnen Sie z.B. die Entität **Firma**), und doppelklicken Sie dann auf **Geschäftsregeln**.  
+2.  Öffnen Sie die Entität, für die Sie die Geschäftsregel erstellen möchten (öffnen Sie z.B. die Entität **Konto**), und doppelklicken Sie dann auf **Geschäftsregeln**.  
   
  ![Erstellen einer Geschäftsregel in der Standardlösung](media/create-business-rule-the-default-solution.png "Erstellen einer Geschäftsregel in der Standardlösung")  
   
-3.  Wählen Sie **Neu**.  
+3.  Wählen Sie **Neu** aus.  
   
      Das Geschäftsregeldesignerfenster wird mit einer einzelnen Bedingung geöffnet, die bereits für Sie erstellt wurde. Jede Regel startet mit einer Bedingung. Die Geschäftsregel führt eine oder mehrere diese Aktionen basierend auf der Bedingung durch.  
   
@@ -73,19 +79,19 @@ Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Form
     |**Wenn Sie dieses Element auswählen...**|**Ist der Bereich...**|  
     |**Entität**|Alle Formulare und Server|  
     |**Alle Formulare**|Alle Formulare|  
-    |Bestimmtes Formular (z. B. **Firma**-Formular)|Nur dieses Formular|  
+    |Bestimmtes Formular (z. B. **Konto**-Formular)|Nur dieses Formular|  
   
 6. **Bedingungen hinzufügen.** Um Ihrer Geschäftsregel weitere Bedingungen hinzuzufügen:  
   
     1.  Ziehen Sie die **Bedingung**-Komponente von der Registerkarte **Komponenten** auf ein Pluszeichen (+) zwischen im Designer.  
   
-        ![Einer Geschäftsregel eine Bedingung hinzufügen](media/add-condition-business-rule.png "Einer Geschäftsregel eine Bedingung hinzufügen")  
+        ![Eine Bedingung in einer Geschäftsregel hinzufügen](media/add-condition-business-rule.png "Eine Bedingung in einer Geschäftsregel hinzufügen")  
   
     2.  Sie können die Eigenschaften der Bedingung festlegen. Klicken Sie dazu auf die **Bedingung**-Komponente im Design, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** auf der rechten Seite des Bildschirms fest. Wenn Sie Eigenschaften festlegen, wird ein Ausdruck unten auf der Registerkarte **Eigenschaften** erstellt.  
   
     3.  Um eine Zusatzbestimmung (UND oder ODER) der Bedingung hinzuzufügen, klicken Sie auf **Neu** auf der Registerkarte **Eigenschaften**, um eine neue Regel zu erstellen, und legen Sie dann Eigenschaften für diese Regel fest. Im Feld **Regel-Logik** können Sie angeben, ob die neue Regel als UND oder ODER hinzugefügt werden soll.  
   
-        ![Einer Bedingung eine neue Regel hinzufügen](media/add-new-rule-condition.png "Einer Bedingung eine neue Regel hinzufügen")  
+        ![Eine neue Regel zu einer Bedingung hinzufügen](media/add-new-rule-condition.png "Eine neue Regel zu einer Bedingung hinzufügen")  
   
     4.  Wenn Sie die Eigenschaften für die Bedingung festgelegt haben, klicken Sie auf **Übernehmen**.  
   
@@ -93,7 +99,7 @@ Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Form
   
     1.  Ziehen Sie eine der Aktionskomponenten von der **Komponenten**-Registerkarte auf ein Pluszeichen neben **Bedingung**-Komponente. Ziehen Sie die Aktionen auf ein Pluszeichen neben ein Häkchen, wenn die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung erfüllt wird, oder auf ein Pluszeichen neben einem x, wenn Sie die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung nicht erfüllt ist.  
   
-        ![Eine Aktion auf eine Geschäftsregel ziehen](media/drag-an-action-business-rule.png "Eine Aktion auf eine Geschäftsregel ziehen")  
+        ![Ziehen Sie eine Aktion zu einer Geschäftsregel](media/drag-an-action-business-rule.png "Ziehen Sie eine Aktion zu einer Geschäftsregel")  
   
     2.  Sie können die Eigenschaften der Aktion festlegen. Klicken Sie dazu auf die **Aktion**-Komponente im Design, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften**.  
   
@@ -143,12 +149,12 @@ Eine Geschäftsregel darf nicht ausgeführt werden, weil das in der Geschäftsre
 4.  Wählen Sie im Geschäftsregeldesigner jede Bedingung und Aktion aus, um alle Felder zu überprüfen, auf die in jeder Bedingung und Aktion verwiesen wird. 
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/business-rule-field.png "Das in der Geschäftsregel referenzierte Feld ist in der Entität vorhanden.")
+     > ![](media/business-rule-field.png "Field referenced in business rule exists in entity")
 
  5. Stellen Sie sicher, dass jedes Feld, auf das in der Geschäftsregel verwiesen wird, auch auf dem Formular enthalten ist. Falls nicht, fügen Sie das fehlenden Feld dem Formular hinzu.
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/account-name-on-form.png "Feld Firmaname auf Formular")
+     > ![](media/account-name-on-form.png "Account name field on form")
 
 ## <a name="frequently-asked-questions-faq"></a>Häufig gestellte Fragen (FAQ)
 *Können Geschäftsregeln Felder in einem schreibgeschützten Formular entsperren?*

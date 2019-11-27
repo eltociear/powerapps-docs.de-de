@@ -1,6 +1,6 @@
 ---
-title: Erkennen von doppelten Daten mithilfe des Organisationsservices (Common Data Service)| Microsoft Docs
-description: 'Der Organisationsservice ermöglicht es Ihnen, doppelte Datensätze im Common Data Service zu erkennen, um die Integrität der Daten zu gewährleisten.'
+title: Erkennen von doppelten Daten mit dem Organisationsdienst (Common Data Service) | Microsoft-Dokumentation
+description: Der Organisationsdienst ermöglicht es Ihnen, doppelte Datensätze im Common Data Service zu erkennen, um die Integrität der Daten zu gewährleisten.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cb2ecce70adaf47ea55117831d2ced866bce10f1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748549"
 ---
 # <a name="detect-duplicate-data-using-the-organization-service"></a>Duplikaterkennung mithilfe des Organisation-Service
 
-Der Common Data Service-Organisationsservice ermöglicht es Ihnen, doppelte Datensätze zu erkennen, um die Integrität der Daten zu gewährleisten. Ausführliche Informationen zum Erkennen von doppelten Daten mithilfe des Codes, finden Sie unter [Erkennen von doppelten Daten mithilfe von Code](../detect-duplicate-data-with-code.md). 
+Der Common Data Service Organisationsdienst ermöglicht es Ihnen, doppelte Datensätze zu erkennen, um die Integrität der Daten zu gewährleisten. Ausführliche Informationen zum Erkennen von doppelten Daten mithilfe des Codes, finden Sie unter [Erkennen von doppelten Daten mithilfe von Code](../detect-duplicate-data-with-code.md). 
 
 > [!NOTE]
 > Stellen Sie sicher, dass entsprechende Duplikaterkennungsregeln vorhanden sind. Common Data Service enthält standardmäßige Duplikaterkennungsregeln für Firmen, Kontakte und Leads, jedoch nicht für andere Datensatztypen. Wenn Sie das System von Duplikate für andere Datensatztypen erkennen soll, müssen Sie eine neue Regel erstellen. <br/>- Informationen darüber, wie Sie eine Duplikaterkennungsregel mithilfe der Benutzeroberfläche erstellen, finden Sie unter [Einrichten einer Duplikaterkennungsregel, um Ihre Daten sauber zu halten](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean).<br/>- Weitere Informationen zum Erstellen von Duplikaterkennungsregeln mit Code [Duplikatregelentitäten](../duplicaterule-entities.md).

@@ -1,5 +1,5 @@
 ---
-title: Getnamedreferenzierung | Microsoft-Dokumentation
+title: getnamedreferenzierung | Microsoft-Dokumentation
 description: ''
 keywords: ''
 ms.author: nabuthuk
@@ -13,7 +13,7 @@ ms.topic: article
 ms.assetid: f879cb97-34d2-49ed-bef3-4df0af972b19
 ms.openlocfilehash: 6cd05374412086e07bf39e13bc1b66338719437b
 ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/12/2019
 ms.locfileid: "72344345"

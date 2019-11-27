@@ -1,26 +1,26 @@
-- name: 'Beispiele für Datenvorgänge (C#)'
+- name: '(C#) Beispiele für Datenvorgänge'
   items:
     - name: 'Erste Schritte mit C#-Beispielen'
       href: ../web-api-samples-csharp.md
-    - name: Basic-Vorgänge
+    - name: Basisvorgänge
       href: basic-operations-csharp.md
-    - name: Abfragen von Daten
+    - name: Daten abfragen
       href: query-data-csharp.md
-    - name: Bedingte Vorgänge
+    - name: Bedingte Operationen
       href: conditional-operations-csharp.md
     - name: Funktionen und Aktionen
       href: functions-actions-csharp.md
-- name: Beispiele für Datenvorgänge (clientseitiges JavaScript)
+- name: Beispiele für clientseitige JavaScript-Datenvorgänge
   items:
-    - name: Erste Schritte mit Beispielen für clientseitiges JavaScript
+    - name: Erste Schritte mit clientseitigen JavaScript-Beispielen
       href: ../web-api-samples-client-side-javascript.md
-    - name: Basic-Vorgänge
+    - name: Basisvorgänge
       href: basic-operations-client-side-javascript.md
-    - name: Abfragen von Daten
+    - name: Daten abfragen
       href: query-data-client-side-javascript.md
-    - name: Bedingte Vorgänge
+    - name: Bedingte Operationen
       href: conditional-operations-client-side-javascript.md
     - name: Funktionen und Aktionen
       href: functions-actions-client-side-javascript.md
-- name: 'Beispiel für den globalen Ermittlungsdienst (C#)'
+- name: 'Globaler Discovery Service Beispiel (C#)'
   href: global-discovery-service-csharp.md

@@ -1,6 +1,6 @@
 ---
 title: Datenenexportservice (Common Data Service) | Microsoft Docs
-description: 'Funktionen, Voraussetzungen, API und Programmierung des Datenexport-Service.'
+description: Funktionen, Voraussetzungen, API und Programmierung des Datenexport-Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: sabinn-msft
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a00d4e751452be55c824727af238900e964a649f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752994"
 ---
 # <a name="data-export-service"></a>Datenexportservice
 
@@ -57,12 +63,12 @@ GRANT ALTER, REFERENCES, INSERT, DELETE, UPDATE, SELECT, EXECUTE ON SCHEMA::dbo 
   
 ```  
   
-Für online Lösungen und Services stellt Azure einen [Key Vault](https://azure.microsoft.com/services/key-vault/)-Service bereit, um kryptografische Schlüssel, Kennwörter und andere Geheimnisse zu schützen.  Um Vault Azure zu verwenden, muss dieser kundeneigene Service konfiguriert sein, damit die Berechtigung für "Dynamics 365-Datenexport-Service" gewährt wird, das verwendet wird, um die SQL Azure-Verbindungszeichenfolge sicher zu speichern. Um diese Konfiguration mit einem PowerShell-Skript ausführen, siehe [Einrichten von Azure Key Vault](https://technet.microsoft.com/library/mt744592.aspx). Alternativ kann dieser Service über die REST API verwaltet werden; sehen Sie dazu [Key Vault-Verwaltung](https://msdn.microsoft.com/library/azure/mt620024.aspx).  
+Für online Lösungen und Services stellt Azure einen [Key Vault](https://azure.microsoft.com/services/key-vault/)-Service bereit, um kryptografische Schlüssel, Kennwörter und andere Geheimnisse zu schützen.  Um Vault Azure zu verwenden, muss dieser kundeneigene Service konfiguriert sein, damit die Berechtigung für "Dynamics 365-Datenexport-Service" gewährt wird, das verwendet wird, um die SQL Azure-Verbindungszeichenfolge sicher zu speichern. Um diese Konfiguration mit einem PowerShell-Skript ausführen, siehe [Einrichten von Azure Key Vault](https://technet.microsoft.com/library/mt744592.aspx). Alternativ kann dieser Service über die REST-API verwaltet werden; sehen Sie dazu [Key Vault-Verwaltung](https://msdn.microsoft.com/library/azure/mt620024.aspx).  
   
 Es ist ratsam, dass die Domäne https://discovery.crmreplication.azure.net/ der Liste der vertrauenswürdigen Websites in Ihrem Browser hinzugefügt und Popups für diesen Ort aktiviert werden.  
   
 ## <a name="programming-for-the-data-export-service"></a>Programmierung für den Datenexport-Service  
- Der Datenexport-Service trifft auf eine Rest-basierte API, die in zwei Gruppen unterteilt werden: eine Gruppe von `Metadata` Vorgänge, um Common Data Service Organisationsstrukturen, Beziehungen und Verbindungsinformationen zu erkunden und eine Gruppe für `Profiles` Vorgänge zum Konfigurieren und Verwalten der Datenenreplikation.  Die API ist in den folgenden Swagger URLs definiert und dokumentiert: [Swaggern von](http://swagger.io/) URLs:  
+ Der Datenexport-Service trifft auf eine Rest-basierte API, die in zwei Gruppen unterteilt werden: eine Gruppe von `Metadata` Vorgänge, um Common Data Service Organisationsstrukturen, Beziehungen und Verbindungsinformationen zu erkunden und eine Gruppe für `Profiles` Vorgänge zum Konfigurieren und Verwalten der Datenenreplikation.  Die API ist in den folgenden Swagger URLs definiert und dokumentiert: [Swaggern von](https://swagger.io/) URLs:  
   
 |Swagger-Endpunkt|Beschreibung|  
 |----------------------|-----------------|  

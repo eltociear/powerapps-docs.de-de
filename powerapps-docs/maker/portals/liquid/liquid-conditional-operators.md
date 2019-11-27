@@ -1,6 +1,6 @@
 ---
-title: Verwenden von flüssigen bedingten Operatoren für ein Portal | MicrosoftDocs
-description: Informieren Sie sich über die verfügbaren flüssigen bedingten Operatoren in einem Portal.
+title: Verwenden von bedingten Liquid-Operatoren für ein Portal | MicrosoftDocs
+description: Lesen Sie mehr zu den verfügbaren bedingten Liquid-Operatoren in einem Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -10,17 +10,17 @@ ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: def132ebc0f8ef93121b10b221479a2452a1d4fb
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975010"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708261"
 ---
 # <a name="available-liquid-conditional-operators"></a>Verfügbare bedingte Liquid-Operatoren
 
-Bei Verwendung in Bedingungs Anweisungen (**Wenn**,**sofern nicht**), werden einige Liquid-Werte als true behandelt, und einige werden als false behandelt.
+Wenn sie in den Bedingungsanweisungen (**if**, **unless**) verwendet werden, werden einige Liquid-Werte als "true" und andere als "false" angesehen.
 
-In Liquid werden NULL und der boolesche Wert false als false behandelt; alles andere wird als true behandelt. Leere Zeichen folgen, leere Arrays usw. werden als true behandelt. Beispiele:
+In Liquid werden Null und der boolesche Wert als „false“ behandelt, alles andere als „true“. Leere Zeichenfolgen, leere Arrays usw. werden als "true" behandelt. Zum Beispiel,
 
 ```
 {% assign empty_string =  %}
@@ -28,14 +28,14 @@ In Liquid werden NULL und der boolesche Wert false als false behandelt; alles an
 <p>This will render.</p>
 {% endif %}
 ```
-Wenn erforderlich, können Sie auf leere Zeichen folgen und Arrays mit dem Wert Empty testen.
+Sie können leere Zeichenfolgen und Arrays mithilfe des speziellen Wertes "empty" testen, falls erforderlich.
 
 ```
 {% unless page.title == empty %}
 <h1>{{ page.title }}</h1>
 {% endunless %}
 ```
-Sie können auch die Größe von [Liquid-Typen](liquid-types.md), [Liquid-Typen](liquid-types.md)oder [Liquid-Typen](liquid-types.md) mithilfe der Eigenschaft besondere Größe testen.
+Sie können auch die Größe von [Liquid-Typen](liquid-types.md), [Liquid-Typen](liquid-types.md) oder [Liquid-Typen](liquid-types.md) mit der speziellen Größeneigenschaft testen.
 
 ```
 {% if page.children.size > 0 %}
@@ -47,25 +47,25 @@ Sie können auch die Größe von [Liquid-Typen](liquid-types.md), [Liquid-Typen]
 {% endif %}
 ```
 
-## <a name="summary"></a>FAS
+## <a name="summary"></a>Inhaltsübersicht
 
-|                           | True | Alarm |
+|                           | Wahr | Falsch |
 |---------------------------|------|-------|
-| True                      | ×    |       |
-| Alarm                     |      | ×     |
-| Normal                      |      | ×     |
+| Wahr                      | ×    |       |
+| Falsch                     |      | ×     |
+| Null                      |      | ×     |
 | Zeichenfolge                    | ×    |       |
 | Leere Zeichenfolge              | ×    |       |
 | 0                         | ×    |       |
 | 1, 3,14                   | ×    |       |
 | Array oder Wörterbuch       | ×    |       |
-| leeres Array oder Wörterbuch | ×    |       |
+| Leeres Array oder Wörterbuch | ×    |       |
 | Objekt                    | ×    |       |
 
 ### <a name="see-also"></a>Siehe auch
 
-[Speichern von Quell Inhalten mithilfe von Webvorlagen](store-content-web-templates.md)  
-[Grundlegendes zu Liquid](liquid-operators.md)  
+[Speichern von Inhalten mit Webvorlagen](store-content-web-templates.md)  
+[Lernen Sie Liquid-Operatoren kennen](liquid-operators.md)  
 [Liquid-Typen](liquid-types.md)  
 [Liquid-Objekte](liquid-objects.md)  
 [Liquid-Tags](liquid-tags.md)  

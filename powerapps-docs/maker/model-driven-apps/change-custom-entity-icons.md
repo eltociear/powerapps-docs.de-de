@@ -1,5 +1,5 @@
 ---
-title: Ändern der Modell-angetriebenen App der benutzerdefinierten Entität-Symbole in PowerApps | MicrosoftDocs
+title: Ändern der benutzerdefinierten Entitätssymbole der modellgesteuerten App in PowerApps | Microsoft-Dokumentation
 definition: Learn how to change the icon for a custom entity
 ms.custom: ''
 ms.date: 05/17/2018
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 477f9792-8207-49ef-8968-45274b5355a8
 caps.latest.revision: 19
 ms.author: matp
 manager: kvivek
 tags:
-  - Links to topic not migrated
+- Links to topic not migrated
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f7e23ece0ee37d15ef5401421d078e81dd5d590c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700781"
 ---
 # <a name="change-model-driven-app-custom-entity-icons"></a>Ändern der Modell-angetriebenen App der benutzerdefinierten Entität-Symbole 
 
@@ -63,7 +69,7 @@ Sie müssen Lösungs-Explorer verwenden, um Entitätssymbole festzulegen.
   
 ## <a name="community-tools"></a>Community-Tools
 
-**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** ist ein Tool, das die XrmToolbox-Community für Dynamics 365 Customer Engagement entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools für Common Data Service](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) für Community entwickelte Tools.
+**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** ist ein Werkzeug, das die XrmToolBox-Community für PowerApps entwickelt hat. Weitere Informationen finden Sie im Thema [Entwicklertools für Common Data Service](/powerapps/developer/common-data-service/developer-tools) für von der Community entwickelte Tools.
 
 > [!NOTE]
 > Die Communitytools sind kein Produkt von Microsoft und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).

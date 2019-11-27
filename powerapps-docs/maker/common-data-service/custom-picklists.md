@@ -1,29 +1,34 @@
 ---
 title: Erstellen eines Optionssatzes | Microsoft Docs
-description: 'Schrittweise Anweisungen, um einem Optionssatz zu erstellen.'
-author: clwesene
-manager: kfile
+description: Schrittweise Anweisungen, um einem Optionssatz zu erstellen.
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6f3f47882800252c91de0efc572954f7397ac251
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757618"
 ---
-
 # <a name="create-an-option-set"></a>Einen Optionssatz erstellen
 
-Mit Optionssätzen können Sie Drop-Down-Listen mit festen Werten für einen Benutzer in Ihrer App einschließen, um die Datenkonsistenz sicherzustellen. Diese werden in anderen Anwendungen gelegentlich als Auswahllisten oder Auswahlfelder bezeichnet. Ähnlich wie bei Entitäten gibt es beide Standardoptionssätze und die Möglichkeit zum Erstellen benutzerdefinierter Optionssätze, zur Verwendung innerhalb Ihrer App.
+Mit Optionssätzen können Sie Drop-Down-Listen mit festen Werten für einen Benutzer in Ihrer App einschließen, um die Datenkonsistenz sicherzustellen. Diese werden in anderen Anwendungen gelegentlich als Auswahllisten oder Auswahlfelder bezeichnet. Ähnlich wie bei Entitäten gibt es beide Standardoptionssätze und die Möglichkeit zum Erstellen benutzerdefinierter Optionssätze zur Verwendung innerhalb Ihrer App.
 
 Optionssätze können auf zwei Arten erstellt werden, entweder in der Optionssatzliste innerhalb des Portals oder direkt in einer Entität beim Erstellen eines Felds. Weitere Informationen darüber, wie Sie eine Entität erstellen finden Sie unter [Erstellen einer Entität](data-platform-create-entity.md).
 
 ## <a name="creating-an-option-set-while-adding-a-field"></a>Erstellen eines Optionssatzes beim Hinzufügen eines Felds.
 
-1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
+1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 
@@ -34,7 +39,7 @@ Optionssätze können auf zwei Arten erstellt werden, entweder in der Optionssat
 4. Geben Sie im neuen Feldbereich den **Anzeigename** für Ihr Feld ein. **Name** wird automatisch aufgefüllt und als eindeutiger Name für Ihr Feld verwendet. Der **Anzeigename** wird verwendet, wenn dieses Feld Ihren Benutzern angezeigt wird, der **Name** wird in Ausdrücken und Formeln verwendet, wenn Sie Ihre App erstellen in.
 
     > [!div class="mx-imgBorder"] 
-    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel.png "Bereich \"Neues Feld\"")
+    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel.png "Neuer Feldbereich")
 
 5. Klicken Sie auf das Dropdown **Datentyp** und wählen Sie **Optionssatz** oder **MultiSelect-Optionssatz**.
 
@@ -61,11 +66,11 @@ Optionssätze können auf zwei Arten erstellt werden, entweder in der Optionssat
     > Sie können eines Ihrer Elemente als den **Standard** für dieses Feld auswählen, und es wird standardmäßig ausgewählt, wenn Benutzer neue Datensätze in der Entität erstellen.
 
     > [!div class="mx-imgBorder"] 
-    > ![Neues Feld](./media/data-platform-cds-newoptionset/fieldpanel-2.png "Bereich \"Neues Feld\"")
+    > ![Neues Feld](./media/data-platform-cds-newoptionset/fieldpanel-2.png "Neuer Feldbereich")
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>Erstellen eines Optionssatzes aus der Optionssatzliste
 
-1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Optionssätze**.
+1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Optionssätze**.
 
     > [!div class="mx-imgBorder"] 
     > ![Optionssätze](./media/data-platform-cds-newoptionset/optionsetlist.png "Optionssatzliste")

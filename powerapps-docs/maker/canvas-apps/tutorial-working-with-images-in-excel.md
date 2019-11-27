@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f201d1fbad574174e4427698ae28439f26419514
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 7b6f1056a6d2b5ceaf1fcefe1ccc7d583470450c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318380"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541714"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>So speichern Sie Bilder in einer Excel-Datei und fügen diese Bilder anschließend zu Ihrer App hinzu
@@ -36,7 +36,7 @@ In diesem Tutorial werden wir:
 
 ## <a name="create-the-excel-file-as-a-table"></a>Erstellen der Excel-Datei als Tabelle
 
-1. Benennen Sie eine Spalte in einer leeren Excel-Datei mit **Bild [image]**.
+1. Benennen Sie eine Spalte in einer leeren Excel-Datei mit **Bild [image]** .
 2. Erstellen Sie eine Tabelle, indem Sie folgende Schritte durchführen:    
    
    1. Wählen Sie eine bestimmte Dateneinheit in einer Zeile und einer beliebigen Spalte. Wählen Sie beispielsweise **Bild** aus.
@@ -75,12 +75,12 @@ In diesem Tutorial werden wir:
 ## <a name="add-the-image-in-an-excel-file-to-your-app"></a>Fügen Sie das Bild in einer Excel-Datei Ihrer App hinzu.
 Sie können z.B. Bilder in einem Cloudspeicherkonto speichern und anschließend eine Excel-Tabelle zum Anzeigen der Bilder in Ihrer App verwenden.
 
-In diesem Beispiel wird die Datei [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) verwendet, die einige JPEG-Dateien enthält.
+In diesem Beispiel wird die Datei [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) verwendet, die einige JPEG-Dateien enthält.
 
 > [!NOTE]
 > Zum Anzeigen von Bildern aus einer Excel-Datei muss der Pfad zu diesen Bilder Schrägstriche verwenden. Wenn (wie bei den vorherigen Schritten) PowerApps Bilder für eine Excel-Tabelle speichert, verwendet der Pfad umgekehrte Schrägstriche. Daher können Sie auch **SavePen_images** aus dem vorherigen Beispiel verwenden. Wenn Sie dies tun, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt werden.  
 
-1. Laden Sie die Datei [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) herunter, und extrahieren Sie den Ordner **Ressourcen** in Ihr Cloudspeicherkonto.
+1. Laden Sie die Datei [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) herunter, und extrahieren Sie den Ordner **Ressourcen** in Ihr Cloudspeicherkonto.
 2. Erstellen Sie in einem Excel-Arbeitsblatt eine Tabelle, die in etwa wie folgt aussieht:
    
     ![Tabelle „Jackets“](./media/tutorial-working-with-images-in-excel/jackets.png)
@@ -96,7 +96,7 @@ In diesem Beispiel wird die Datei [CreateFirstApp.zip](http://pwrappssamples.blo
 
 Wenn Sie die Eigenschaft Items festlegen, wird die Excel-Tabelle automatisch mit der neuen Spalte **PowerAppsId** aktualisiert.
 
-In der Excel-Tabelle kann der Pfad zu den Bildern ebenfalls eine Bild-URL sein. Laden Sie die Beispieldatei [Flooring Estimates](http://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx)(Flooring Estimates) in Ihr Cloudspeicherkonto herunter, fügen Sie die Tabelle `FlooringEstimates` als Datenquelle in der App hinzu und legen Sie anschließend das Katalog-Steuerelement auf `FlooringEstimates` fest. Der Katalog wird automatisch mit den Bildern aktualisiert.
+In der Excel-Tabelle kann der Pfad zu den Bildern ebenfalls eine Bild-URL sein. Laden Sie die Beispieldatei [Flooring Estimates](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx)(Flooring Estimates) in Ihr Cloudspeicherkonto herunter, fügen Sie die Tabelle `FlooringEstimates` als Datenquelle in der App hinzu und legen Sie anschließend das Katalog-Steuerelement auf `FlooringEstimates` fest. Der Katalog wird automatisch mit den Bildern aktualisiert.
 
 ## <a name="learn-more"></a>Weitere Informationen
 [Add an image, a video, or a sound (Fügen Sie ein Bild, ein Video oder einen Sound hinzu)](add-images-pictures-audio-video.md)  

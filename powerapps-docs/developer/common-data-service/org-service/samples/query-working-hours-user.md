@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Abfragen der Arbeitszeit eines Benutzers (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie Sie die Arbeitszeit eines Benutzers abrufen.'
+title: 'Beispiel: Abfragen der Arbeitszeit eines Benutzers (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie Sie die Arbeitszeit eines Benutzers abrufen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 89a4d771d198cdffad6f9cde78a48273ae141cd4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748731"
 ---
 # <a name="sample-query-the-working-hours-of-a-user"></a>Beispiel: Abfragen der Arbeitszeit eines Benutzers
 

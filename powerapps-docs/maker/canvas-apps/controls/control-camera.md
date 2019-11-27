@@ -1,24 +1,24 @@
 ---
 title: 'Kamera-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Kamera-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 88b6b9faf8c4d7c14a09bfc89791a050e3c07ca2
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 14f802a899171dce052c8975f9fc63b07e448afc
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986847"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650715"
 ms.PowerAppsDecimalTransform: true
 ---
 # <a name="camera-control-in-powerapps"></a>Kamera-Steuerelement in PowerApps
@@ -63,7 +63,7 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -83,7 +83,7 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
-    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
+    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder zu [anderen Funktionen](../formula-reference.md)?
 2. Drücken Sie F5, und nehmen Sie dann ein Foto auf, indem Sie auf **MyCamera** klicken oder tippen.
 3. Fügen Sie ein **[vertikaler Katalog](control-gallery.md)** -Steuerelement hinzu, und passen Sie dann die Größe des zugehörigen **[Bild](control-image.md)** -Steuerelements, seiner Vorlage und des **Bildkatalog**-Steuerelements so an, dass sie den Bildschirm ausfüllen.
 4. Legen Sie die **[Items](properties-core.md)** -Eigenschaft des **Bildkatalog**-Steuerelements auf den folgenden Ausdruck fest:<br>**MyPix**.
@@ -104,7 +104,7 @@ Das gesamte Steuerelement „Kamera“ zeigt nicht nur den Kamerafeed an, sonder
 * Sie sollten eine alternative Eingabemöglichkeit für Benutzer hinzufügen, die eine Sehbehinderung haben. Sie können z.B. die Option **[Bild hinzufügen](control-add-picture.md)** hinzufügen, damit Benutzer ein Bild auf Ihrem Gerät hochladen können.
 
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[FocusedBorderColor](properties-color-border.md)** und die äußere Farbe
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
@@ -112,4 +112,4 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.

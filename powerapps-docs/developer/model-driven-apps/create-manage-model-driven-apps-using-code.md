@@ -1,29 +1,32 @@
 ---
-title: 'Erstellen, Verwalten und Veröffentlichen von modellgesteuerten Apps mithilfe von Code | Microsoft Docs'
-description: 'Erfahren Sie, wie Sie modellgesteuerte Apps mit Code in PowerApps erstellen, verwalten und veröffentlichen.'
+title: Erstellen, Verwalten und Veröffentlichen von modellgesteuerten Apps mithilfe von Code | Microsoft Docs
+description: Erfahren Sie, wie Sie modellgesteuerte Apps mit Code in PowerApps erstellen, verwalten und veröffentlichen.
 keywords: ''
 ms.date: 03/04/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 4261c476-2eff-10e3-a334-d02e0cbbb9d5
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9d33c07aa54a0a971f3d246a6390f736daa11627
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748763"
 ---
-
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>Erstellen, Verwalten und Veröffentlichen von modellgesteuerten Apps mithilfe von Code
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
 
-Zusätzlich zur Erstellung einer modellgesteuerte Apps mit dem PowerApps App Designer können Sie modellgesteuerte Apps programmgesteuert erstellen und verwalten. 
+Zusätzlich zur Erstellung einer modellgesteuerten App mit dem PowerApps App Designer können Sie modellgesteuerte Apps programmgesteuert erstellen und verwalten. 
 
 > [!IMPORTANT]
 > Sie müssen keinen Code schreiben, um modellgesteuerte Apps zu erstellen, wenn es nicht nötig ist! Der App-Designer bietet eine viel einfachere und intuitivere Funktionalität zum Erstellen von modellgesteuerten Apps, ohne dass Code geschrieben werden muss, indem er eine kachelbasierte Informationsstruktur und eine vereinfachte Benutzeroberfläche bereitstellt. Sehen Sie hier: [Gestalten Sie modellgesteuerte Apps mit dem App-Designer](../../maker/model-driven-apps/design-custom-business-apps-using-app-designer.md)  

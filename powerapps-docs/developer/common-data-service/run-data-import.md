@@ -1,6 +1,6 @@
 ---
-title: Datenimport ausführen (Common Data Service) | Microsoft Docs
-description: 'Dateneinfuhr wird direkt auf dem Dynamics 365 Server ausgeführt und erfordert drei asynchrone Aufträge für das Analysieren, zuordnungsgeführte Transformation und Hochladen.'
+title: Ausführen des Datenimports (Common Data Service) | Microsoft-Dokumentation
+description: Dateneinfuhr wird direkt auf dem Dynamics 365 Server ausgeführt und erfordert drei asynchrone Aufträge für das Analysieren, zuordnungsgeführte Transformation und Hochladen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,20 +10,26 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 42f69903abb225f2746e0ff79eb2d13232e8cc12
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753782"
 ---
 # <a name="run-data-import"></a>Ausführen des Datenimports
 
-Der Datenimport wird direkt auf dem Common Data Service-Server ausgeführt. Richten Sie zum Ausführen des Datenimports asynchrone Aufträge ein, die im Hintergrund ausgeführt werden und Folgendes in der angegebenen Reihenfolge ausführen:  
+Datenimporte werden direkt auf dem Common Data Service-Server ausgeführt. Richten Sie zum Ausführen des Datenimports asynchrone Aufträge ein, die im Hintergrund ausgeführt werden und Folgendes in der angegebenen Reihenfolge ausführen:  
   
 - Analysieren Sie Quelldaten, die in der Importdatei enthalten sind.  
   
 - Formen Sie analysierte Daten mithilfe der Datenzuordnung um.  
   
-- Laden Sie transformierte Daten in den Common Data Service hoch.  
+- Laden Sie transformierte Daten in Common Data Service hoch.  
   
   Alle Common Data Service-Benutzer mit entsprechenden Rechten können den Datenimport ausführen.  
   
@@ -53,7 +59,7 @@ Der Datenimport wird direkt auf dem Common Data Service-Server ausgeführt. Rich
 ## <a name="upload-transformed-data-to-the-target-server"></a>Hochladen transformierter Daten auf den Zielserver  
  Nachdem Sie die Transformation erfolgreich abgeschlossen haben, können die Daten auf den Common Data Service-Server hochgeladen werden.  
   
- Verwenden Sie die Message <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest>, um einen asynchronen Auftrag zu senden und die transformierten Daten in Common Data Service hochzuladen. Der eindeutige Bezeichner des zugeordneten Imports (Datenimport) muss in der <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId>-Eigenschaft der Anforderung angegeben werden. Ein eindeutiger Bezeichner des asynchronen Auftrags, der im Hintergrund ausgeführt wird und die Daten in Common Data Service hochlädt, wird in der <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId>-Eigenschaft der Message-Antwort zurückgegeben. Alle Importdateien, die dem angegebenen Import (Datenimport) zugeordnet sind, werden importiert.  
+ Verwenden Sie die <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest>-Nachricht, um einen asynchronen Auftrag zu senden und die transformierten Daten nach Common Data Service hochzuladen. Der eindeutige Bezeichner des zugeordneten Imports (Datenimport) muss in der <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId>-Eigenschaft der Anforderung angegeben werden. Ein eindeutiger Bezeichner des asynchronen Auftrags, der im Hintergrund ausgeführt wird und die Daten nach Common Data Service hochlädt, wird in der <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId>-Eigenschaft der Nachrichtenantwort zurückgegeben. Alle Importdateien, die dem angegebenen Import (Datenimport) zugeordnet sind, werden importiert.  
   
  Jeder Importauftrag besitzt eine eigene Sequenznummer, die im `ImportSequenceNumber`-Attribut der erstellten Datensätze gespeichert ist. Das `Organization.CurrentImportSequenceNumber`-Attribut enthält eine eindeutige Sequenznummer des letzten Importauftrags, der im System lief. Sie können diese eindeutigen Sequenznummern verwenden, um Datensätze nachzuverfolgen, die zu einem Importauftrag gehören.  
   
@@ -65,14 +71,14 @@ Der Datenimport wird direkt auf dem Common Data Service-Server ausgeführt. Rich
   
 <a name="import_audit"></a>   
 ## <a name="import-auditing-data"></a>Importieren von Überwachungsdaten  
- Die Common Data Service-Entitäten haben vier Standardattribute, die verwendet werden, um nachzuverfolgen, an welchem Datum und zu welcher Uhrzeit ein Datensatz erstellt und zuletzt geändert wurde. Außerdem wird die Person nachverfolgt, die den Datensatz erstellt und geändert hat:  
+ Die Common Data Service-Entitäten haben vier Standardattribut, die verwendet werden, um nachzuverfolgen, an welchem Datum und zu welcher Uhrzeit ein Datensatz erstellt und zuletzt geändert wurde. Außerdem wird die Person nachverfolgt, die den Datensatz erstellt und geändert hat:  
   
  Das Attribut `createdon` gibt das Datum und die Uhrzeit an, an dem bzw. zu der der Datensatz erstellt wurde. Um Daten in das `createdon`-Attribut zu importieren, ordnen Sie die Quellspalte, die diese Daten enthält, dem `overriddencreatedon`-Attribut zu. Während des Imports wird das `createdon`-Attribut des Datensatzes mit dem Wert aktualisiert, der dem `overriddencreatedon`-Attribut zugeordnet ist, und das `overriddencreatedon`-Attribut wird auf das Datum und die Uhrzeit festgelegt, an dem bzw. zu der die Daten importiert wurden. Wenn dem `overriddencreatedon`-Attribut kein Quellcode zugeordnet ist, wird das `createdon`-Attribut auf das Datum und die Uhrzeit festgelegt, an dem bzw. zu der die Daten importiert werden. Das `overriddencreatedon`-Attribut ist auf keinen Wert festgelegt.  
   
 > [!NOTE]
 >  Wenn Sie den Wert im `createdon`-Attribut beim Importieren überschreiben möchten, benötigen Sie das `prvOverrideCreatedOnCreatedBy`-Recht. Beachten Sie, das der Name des Rechts besagt, dass Sie das `createdby`-Attribut auch während des Imports überschreiben können. Allerdings wird diese Funktion derzeit nicht unterstützt.  
   
- Sie können keine Daten in die Attribute `modifiedon`, `createdby` und `modifiedby` importieren. Wenn Sie Information dazu speichern müssen, wer den Datensatz erstellt und geändert hat und wann die Daten geändert wurden, können Sie in Common Data Service benutzerdefinierte Attribute erstellen und die Quellspalten den neuen benutzerdefinierten Attributen zuordnen.  
+ Sie können keine Daten in die Attribute `modifiedon`, `createdby` und `modifiedby` importieren. Wenn Sie Information dazu speichern müssen, wer den Datensatz erstellt und geändert hat und wann die Daten geändert wurde, können Sie in Common Data Service benutzerdefinierte Attribute erstellen und die Quellspalten den neuen benutzerdefinierten Attributen zuordnen.  
   
 ### <a name="see-also"></a>Siehe auch
 
@@ -84,4 +90,4 @@ Der Datenimport wird direkt auf dem Common Data Service-Server ausgeführt. Rich
 [Datenimportentitäten](data-import-entities.md)<br />
 [Beispiel: Exportieren und Importieren einer Datenzuordnung](org-service/samples/export-import-data-map.md)<br />
 [Beispiel: Importieren von Daten mithilfe der komplexen Datenzuordnung](org-service/samples/import-data-complex-data-map.md)<br />
-[Blogbeitrag: Wie Anhänge automatisch importiert werden](http://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx) 
+[Blogbeitrag: Wie Anhänge automatisch importiert werden](https://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx) 

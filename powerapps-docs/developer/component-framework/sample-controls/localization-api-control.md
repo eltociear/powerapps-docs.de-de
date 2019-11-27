@@ -1,5 +1,5 @@
 ---
-title: " Lokalisierungs-API-Komponente | Microsoft-Dokumentation"
+title: " Lokalisierungs-API-Komponente | Microsoft Docs"
 description: Implementieren der Lokalisierungs-API-Komponente
 ms.custom: ''
 manager: kvivek
@@ -8,27 +8,27 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: cb24aa5ee30ecd2d855ff1de30840ac7eb568fcc
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.openlocfilehash: 4917728c08323c0c0e96f452621cd14298116a12
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340136"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754095"
 ---
 # <a name="implementing-localization-api-component"></a>Implementieren der Lokalisierungs-API-Komponente
 
-Dieses Beispiel zeigt, wie die Lokalisierung für benutzerdefinierte Steuerelemente erfolgt. In diesem Beispiel verwenden wir die [Inkrement-Komponente](increment-control.md) , um den Text, der auf der Inkrement-Schaltfläche angezeigt wird, auf der Grundlage der ausgewählten Sprache des Benutzers zu lokalisieren. 
+Dieses Beispiel demonstriert, wie Lokalisierung für benutzerdefinierte Steuerelemente ausgeführt wird. In diesem Beispiel verwenden wir die [Erhöhungskomponente](increment-control.md), um den Text zu lokalisieren, der auf der Erhöhungsschaltfläche angezeigt wird, basierend auf der vom Benutzer ausgewählten Sprache. 
 
-Das powerapps-Komponenten Framework verwendet das Konzept des Implementierens von Zeichen folgen-Webressourcen (RESX), die zum Verwalten der lokalisierten Zeichen folgen verwendet werden, die auf jeder Weitere Informationen: [Zeichen folgen (RESX) WebResources](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
+PowerApps component framework verwendet das Konzept der Implementierung von String(resx)-Webressourcen, die zur Verwaltung der lokalisierten Zeichenketten verwendet werden, die auf jeder Benutzeroberfläche angezeigt werden. Weitere Informationen: [String (Resx)-Webressourcen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
 
 > [!div class="mx-imgBorder"]
-> ![](../media/localization-api-control.png "API-Komponente") der Lokalisierungs-API-Komponente
+> ![Lokalisierungs-API-Komponente](../media/localization-api-control.png "Lokalisierungs-API-Komponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau) 
+Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
 
-## <a name="manifest"></a>Kundiger 
+## <a name="manifest"></a>Manifest 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -186,8 +186,8 @@ export class TSLocalizationAPI
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
 <xsd:complexType>
 <xsd:choice maxOccurs="unbounded">
@@ -270,8 +270,8 @@ export class TSLocalizationAPI
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
 <xsd:complexType>
 <xsd:choice maxOccurs="unbounded">
@@ -354,8 +354,8 @@ export class TSLocalizationAPI
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
 <xsd:complexType>
 <xsd:choice maxOccurs="unbounded">
@@ -435,17 +435,17 @@ export class TSLocalizationAPI
 </root>
 ```
 
-Zum Lokalisieren eines vorhandenen Projekts müssen Sie lediglich zusätzliche Ressourcen Dateien (RESX) erstellen, jeweils eine für eine bestimmte Sprache, die in den Zeichen folgen-Webressourcen erwähnt wurde, und Sie als Teil der Manifest-Datei des Steuer Elements unter dem Knoten [Ressourcen](../reference/resources.md) einschließen.  
+Zur Lokalisierung eines vorhandenen Projekts müssen Sie nur zusätzliche Ressource(resx)-Dateien erstellen. Je eine für eine bestimmte Sprache, wie in den Zeichenfolgen-Webressourcen angegeben, und diese im Rahmen der Manifestdatei unter dem [Ressourcen](../reference/resources.md)-Knoten einschließen.  
 
-Das powerapps-Komponenten Framework identifiziert die Sprache des Benutzers und gibt die Zeichen folgen aus dieser sprachspezifischen Ressourcen Datei zurück, wenn Sie versuchen, mithilfe `context.resources.getString`-Methode auf die Zeichenfolge zuzugreifen.
+PowerApps component framework identifiziert die Sprache des Benutzers und gibt die Zeichenketten aus dieser sprachspezifischen Ressourcendatei zurück, wenn Sie versuchen, auf die Zeichenkette mit der Methode `context.resources.getString` zuzugreifen.
 
-In diesem Beispiel werden zwei Sprachen `Spanish` und `Finnish` mit den jeweils definierten Sprachcodes 3082 und 1035. Wir haben eine Kopie des `Increment component` Beispiels erstellt und in `Localization API` umbenannt. Alle entsprechenden Dateien, einschließlich der Dateien in den Unterordnern, werden entsprechend umbenannt.
+In diesem Beispiel werden die zwei Sprachen `Spanish` und `Finnish` jeweils mit den Sprachcodes 3082 und 1035 definiert. Wir haben eine Kopie des `Increment component`-Beispiels angefertigt und `Localization API` genannt. Alle entsprechenden Dateien, einschließlich der Daten in den Unterordnern wurden entsprechend umbenannt.
 
-Im Ordner Strings unter `TS_LocalizationAPI` werden zwei weitere RESX-Dateien mit den Suffixen, die Spanisch und Finnisch entsprechen, als 3082 und 1035 hinzugefügt. Die neuen Dateien, die erstellt werden, sollten ihre Dateinamen als `{filename}.3082.resx` und `{filename}.1035.resx` haben, da das Framework diese Benennungs Konvention zur Identifizierung der Ressourcen Datei, die zum Lesen der Zeichen folgen für den Benutzer ausgewählt werden soll, unterstützt.
+Im Zeichenfolgenordner unter `TS_LocalizationAPI` werden zwei zusätzliche resx-Dateien mit den entsprechenden Suffixen für Spanisch und Finnisch als 3082 und 1035 hinzugefügt. Die Namen der neuen erstellten Dateien sollten in `{filename}.3082.resx` und `{filename}.1035.resx` enden, da das Framework auf dieser Namenskonvention angewiesen ist, um zu ermitteln, welche Ressourcendatei zum Lesen der Zeichenfolgen für den Benutzer ausgewählt werden soll.
 
-Stellen Sie sicher, dass die Schlüssel, die für Zeichen folgen in all diesen Ressourcen Dateien verwendet werden, in allen Sprachen denselben Namen haben. Wenn die Komponente nun auf der Benutzeroberfläche gerendert wird, sehen wir im Code, dass der Wert, der auf der Schaltfläche angezeigt wird, mithilfe `context.resources.getString("PCF_LocalizationSample_ButtonLabel")` abgerufen wird.
+Stellen Sie sicher, dass die Schlüssel, die für Zeichenfolgen verwendet werden, in allen Sprachen die gleichen Namen haben. Wenn die Komponente jetzt auf der Benutzeroberfläche gerendert wird, sehen wir im Code, dass wir den Wert abrufen, der auf der Schaltfläche mit `context.resources.getString("PCF_LocalizationSample_ButtonLabel")` angezeigt werden soll.
 
-Wenn diese Codezeile ausgeführt wird, identifiziert das powerapps-Komponenten Framework automatisch die Sprache des Benutzers und wählt den Wert für die Schaltflächen Bezeichnung mithilfe des Schlüssels aus, der in der entsprechenden Sprachdatei angegeben ist. Im folgenden finden Sie den Text, den Sie für jede der drei Sprachen sehen, die für diese Beispiel Komponente unterstützt werden.
+Bei der Ausführung dieser Codezeile identifiziert das PowerApps component framework automatisch die Sprache des Benutzers und übernimmt den Wert für die Tastenbeschriftung mit dem Schlüssel, der in der von uns definierten entsprechenden Sprachdatei angegeben ist. Es folgt der Text, den Sie für jede der drei Sprachen, die wir für dieses Beispielkomponente unterstützten, sehen.
   
 |LanguageCode |Angezeigter Wert |
 |---|---|
@@ -455,6 +455,6 @@ Wenn diese Codezeile ausgeführt wird, identifiziert das powerapps-Komponenten F
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)

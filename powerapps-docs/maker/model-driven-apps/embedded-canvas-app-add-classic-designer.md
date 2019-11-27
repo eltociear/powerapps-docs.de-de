@@ -8,27 +8,32 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6881aaa3a55f16324e5d995e70be1e186a816bf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759378"
 ---
-
 # <a name="add-an-embedded-canvas-app-on-a-model-driven-form"></a>Hinzufügen einer eingebetteten Canvas-App in einem modellgesteuerten Formular
 In diesem Artikel wird erläutert, wie Sie eine neue Canvas-App in einem modellgesteuerten Formular einbetten.
 
 Stellen Sie sich vor, dass Sie eine neue Canvas-App erstellen und sie in einem Hauptformular für die Entität „Firmen” einbetten möchten. Gehen Sie dazu wie folgt vor: 
 
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 2.  [Erstellen oder Bearbeiten des Hauptformulars](create-and-edit-forms.md) einer Entität, Entität „Firmen” in unserem Beispiel. 
 3.  Wählen Sie in der Befehlsleiste **In klassischen Modus wechseln**, um das Formular im klassischen Formular-Designer zu öffnen.
 4.  Wählen Sie im klassischen Formular-Designer den Abschnitt auf dem Formular aus, in dem die eingebettete Canvas-App angezeigt werden soll.
@@ -47,7 +52,7 @@ Stellen Sie sich vor, dass Sie eine neue Canvas-App erstellen und sie in einem H
          - Beachten Sie, dass jede Änderung des Wertes **App ID** die Verknüpfung von dem modellgestützten Formular zur eingebetteten Canvas-App unterbricht.
 12. Zum Erstellen oder Bearbeiten Ihrer Canvas-App wählen Sie **Anpassen** aus: Dadurch wird PowerApps Studio in einer neuen Registerkarte geöffnet.
        > [!NOTE]
-       > Wenn das Öffnen von PowerApps Studio aufgrund eines Popupblockers des Webbrowsers blockiert ist, müssen Sie die Website web.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann erneut **Anpassen** auswählen.
+       > Wenn das Öffnen von PowerApps Studio aufgrund eines Popupblockers des Webbrowsers blockiert ist, müssen Sie die Website make.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann erneut **Anpassen** auswählen.
 13. Beachten Sie in PowerApps Studio, dass sich im linken Bereich ein spezielles **ModelDrivenFormIntegration**-Steuerelement befindet. Dieses Steuerelement ist dafür verantwortlich, Kontextdaten aus dem Hostmodell-basierten Formular in die eingebettete Canvas-App zu bringen.
 14. Achten Sie darauf, ob ein [Canvas-App-Formularsteuerelement](../canvas-apps/controls/control-form-detail.md) automatisch zu Ihrer eingebetteten Canvas-App hinzugefügt wurde und die vom modellgesteuerten Hostformular über das ModelDrivenFormIntegration-Steuerelement weitergegebenen Daten angezeigt werden. 
 15. Wählen Sie die Registerkarte **Ansicht** und dann **Datenquellen** aus. Beachten Sie, dass eine Datenquelle für die übergeordnete Entität Ihres modellgesteuerten Hostformulars, „Firmen” in diesem Fall, automatisch zu Ihrer eingebetteten Canvas-App hinzugefügt wurde.

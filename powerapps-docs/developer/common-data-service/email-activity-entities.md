@@ -1,5 +1,5 @@
 ---
-title: E-Mail-Entitäten (Common Data Service) | Microsoft Docs
+title: E-Mail-Aktivitäten (Common Data Service) | Microsoft Docs
 description: Mithilfe der E-Mail-Aktivität in Dynamics 365 können Sie die E-Mail-Kommunikation mit Kunden nachverfolgen und verwalten.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,19 +10,25 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3cc31d8cc572eae36d42535160cffab287098ca5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748221"
 ---
 # <a name="email-activity-entities"></a>E-Mail-Aktivitätsentitäten
 
-Mithilfe der E-Mail-Aktivität können Sie die E-Mail-Kommunikation mit Kunden nachverfolgen und verwalten. Common Data Service enthält die E-Mail-Router-Software, die die Weiterleitung von E-Mails zu oder von Common Data Service verwaltet. Die E-Mail-Aktivität, die unter Verwendung von E-Mail-Protokollen übermittelt wird. E-Mail-Router unterstützt die folgenden E-Mail-Protokolle: Exchange-Webdienste, POP3 und SMTP. Zusätzlich zur E-Mail-Router-Software kann die E-Mail-Aktivität auch mithilfe von Dynamics 365 for Outlook. übermittelt werden.  
+Mithilfe der E-Mail-Aktivität können Sie die E-Mail-Kommunikation mit Kunden nachverfolgen und verwalten. Common Data Service enthält die E-Mail-Router-Software, die das Weiterleiten von E-Mails an bzw. von Common Data Service steuert. Die E-Mail-Aktivität, die unter Verwendung von E-Mail-Protokollen übermittelt wird. E-Mail-Router unterstützt die folgenden E-Mail-Protokolle: Exchange-Webdienste, POP3 und SMTP. Zusätzlich zur E-Mail-Router-Software kann die E-Mail-Aktivität auch mithilfe von Dynamics 365 for Outlook übermittelt werden.  
   
 <a name="Actions"></a>   
 
 ## <a name="actions-on-an-email-activity"></a>Aktionen für eine E-Mail-Aktivität  
- Mithilfe der Dynamics 365 Customer Engagement-Webdienste können Sie folgende Aktionen für eine E-Mail Aktivität ausführen.  
+ Mit den Common Data Service Web Services können Sie die folgenden Aktionen für eine E-Mail-Aktivität durchführen:  
   
 - Erstellen, Abrufen, Aktualisieren und Löschen der E-Mail-Aktivität.  
   
@@ -32,17 +38,17 @@ Mithilfe der E-Mail-Aktivität können Sie die E-Mail-Kommunikation mit Kunden n
   
 - Senden von Massen-E-Mail-Nachrichten.  
   
-- Konfigurieren von eingehenden E-Mail-Nachrichten, sodass sie vom Microsoft Exchange Server  an einen Benutzer oder die Warteschlange übermittelt werden, oder ausgehende Nachrichten von einem beliebigen Benutzer oder einer Warteschlange an Microsoft Exchange Server. gesendet werden können. Informationen dazu, wie eingehende E-Mails für Warteschlangen konfiguriert werden, siehe [Konfigurieren der E-Mail für eingehende Nachrichten](/dynamics365/customer-engagement/developer/configure-email-incoming-messages).  
+- Konfigurieren von eingehenden E-Mail-Nachrichten, sodass sie von Microsoft Exchange Server an einen Benutzer oder die Warteschlange übermittelt werden, oder ausgehende Nachrichten von einem beliebigen Benutzer oder einer Warteschlange an Microsoft Exchange Server gesendet werden können. Informationen dazu, wie eingehende E-Mails für Warteschlangen konfiguriert werden, siehe [Konfigurieren der E-Mail für eingehende Nachrichten](/dynamics365/customer-engagement/developer/configure-email-incoming-messages).  
   
    Wenn die Organisationsattribute `Organization.RequireApprovalForuserEmail` und `Organization.RequireApprovalForQueueEmail` (E-Mails nur für genehmigte Benutzer/Warteschlangen verarbeiten) auf **true** (1) festgelegt werden, tritt Folgendes auf: E-Mail-Nachrichten werden von einem Benutzer oder einer Warteschlange nur dann übermittelt oder gesendet, wenn die primäre E-Mail-Adresse des Benutzers oder der Warteschlange genehmigt wurde. Die Attribute `SystemUser.EmailRouterAccessApproval` und `Queue.EmailRouterAccessApproval` geben den Status der primären E-Mail-Adresse des Benutzers bzw. der Warteschlange an, und der Wert muss auf 1 festgelegt werden. Andernfalls werden die eingehenden und ausgehenden Nachrichten blockiert. Sie können den Benutzer- oder Warteschlangendatensatz aktualisieren, um den Attributwert zu ändern, falls er noch nicht genehmigt wurde, vorausgesetzt Ihr Benutzerkonto verfügt über die Berechtigung **prvApproveRejectEmailAddress**.
   
 > [!NOTE]
->  Im Common Data Service kann das `Email.StatusCode`-Attribut nicht **NULL** sein.  
+>  In Common Data Service kann das Attribut `Email.StatusCode` nicht den Wert **null** haben.  
   
 <a name="BulkE-Mail"></a>   
 
 ## <a name="bulk-email"></a>Massen-E-Mail  
- Common Data Service unterstützt das Senden von E-Mails an eine Vielzahl von Empfängern durch eine Massen-E-Mail-Anforderung. Wenn eine Massen-E-Mail-Anforderung an Common Data Service gesendet wird, wird in der Warteschlange "Asynchroner Dienst", welche die E-Mail-Messages mithilfe eines Hintergrundprozesses sendet, ein asynchroner Vorgang erstellt. Dadurch wird eine verbesserte Systemleistung erreicht.  
+ Common Data Service unterstützt das Senden von E-Mails an eine Vielzahl von Empfängern durch eine Massen-E-Mail-Anforderung. Wenn eine Massen-E-Mail-Anforderung an Common Data Service gesendet wird, wird in der Warteschlange "Asynchroner Dienst", welche die E-Mail-Nachrichten mithilfe eines Hintergrundprozesses sendet, ein asynchroner Vorgang erstellt. Dadurch wird eine verbesserte Systemleistung erreicht.  
   
  Die Meldungen <xref:Microsoft.Crm.Sdk.Messages.SendBulkMailRequest> und <xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailRequest> werden für das Senden von Massen-E-Mail-Nachrichten verwendet. Im Folgenden wird die Sequenz zum Senden von Massen-E-Mails aufgeführt:  
   
@@ -52,7 +58,7 @@ Mithilfe der E-Mail-Aktivität können Sie die E-Mail-Kommunikation mit Kunden n
   
 3. Der asynchrone Dienst versendet jede E-Mail-Nachricht. Die E-Mail-Nachrichten haben den Sendestatus "Ausstehend".  
   
-4. Der E-Mail-Router, Dynamics 365 for Outlook oder eine Drittanbieterkomponente zum Senden von E-Mails fragt Common Data Service nach ausstehenden E-Mail-Messages ab, und wenn eine gefunden wird, lädt sie mithilfe der `BackgroundSendEmail`-Anforderung herunter.  
+4. Der E-Mail-Router, Dynamics 365 for Outlook oder eine Drittanbieterkomponente zum Senden von E-Mails fragt Common Data Service nach ausstehenden E-Mail-Nachrichten ab, und wenn eine gefunden wird, lädt sie mithilfe der `BackgroundSendEmail`-Anforderung herunter.  
   
 5. Die `BackgroundSendEmail`-Anforderung führt die folgenden Vorgänge aus: Überprüft, ob ausstehende E-Mailnachrichten vorhanden sind, lädt die E-Mail an den Aufrufer der Meldung <xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailRequest> herunter und synchronisiert die Downloads, wenn mehrere Aufrufer vorhanden sind.  
   

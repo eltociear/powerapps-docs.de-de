@@ -1,6 +1,6 @@
 ---
-title: Verbinden eines Portals mit einer Common Data Service Umgebung | MicrosoftDocs
-description: Erfahren Sie, wie Sie ein Portal mit einer Common Data Service Umgebung verbinden und den Authentifizierungsschlüssel erneuern.
+title: Ein Portal mit einer Common Data Service-Umgebung verbinden | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Portal mit einer Common Data Service-Umgebung verbinden und wie Sie den Authentifizierungsschlüssel erneuern.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -10,63 +10,63 @@ ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 31632f4de1834855c696baa1b4b651ed777c8abd
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977494"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709713"
 ---
-# <a name="connect-to-a-common-data-service-environment-using-a-portal"></a>Herstellen einer Verbindung mit einer Common Data Service Umgebung mithilfe eines Portals
+# <a name="connect-to-a-common-data-service-environment-using-a-portal"></a>Ein Portal mit einer Common Data Service-Umgebung verbinden
 
-Ein Portal stellt mithilfe einer Azure Active Directory Anwendung eine Verbindung mit einer Common Data Service Umgebung her. Die Anwendung wird im gleichen Mandanten erstellt, in dem das Portal bereitgestellt wird. Die Anwendung wird während des Bereitstellungs Prozesses des Portals bei der Common Data Service Umgebung registriert.
+Ein Portal stellt eine Verbindung mit einer Common Data Service-Umgebung mit Hilfe einer Azure Active Directory-Anwendung her. Die Anwendung wird im gleichen Mandanten erstellt, in dem das Portal bereitgestellt wird. Die Anwendung wird bei der Common Data Service-Umgebung während des Portalbereitstellungsprozesses registriert.
 
-![Verbinden eines Portals mit Common Data Service Umgebung]verbinden(../media/connect-with-dynamics.png "eines Portals mit Common Data Service Umgebung")
+![Ein Portal mit der Common Data Service-Umgebung verbinden](../media/connect-with-dynamics.png "Ein Portal mit der Common Data Service-Umgebung verbinden")
 
-Jedem Portal ist eine separate Azure Active Directory Anwendung zugeordnet, egal, ob es mit derselben Common Data Service Umgebung verbunden ist oder nicht. Der Standard Azure Active Directory Authentifizierungs Anbieters, der für ein Portal erstellt wurde, verwendet dieselbe Azure Active Directory Anwendung, um das Portal zu authentifizieren. Die Autorisierung wird von Webrollen erzwungen, die dem Benutzer zugewiesen sind, der auf das Portal
+Jedem Portal ist eine separate Azure Active Directory-Anwendung zugeordnet, ungeachtet dessen, ob es mit derselben Common Data Service-Umgebung verbunden ist. Der standardmäßige Azure Active Directory-Authentifizierungsanbieter, der für ein Portal erstellt ist, verwendet dieselbe Azure Active Directory-Anwendung, um das Portal zu authentifizieren. Die Autorisierung wird durch Webrollen erzwungen, die dem Benutzer zugewiesen werden, der auf das Portal zugreift.
 
-Die zugehörige Portal Anwendung wird in Azure Active Directory angezeigt. Der Name dieser Anwendung ist Microsoft CRM-Portale, und die Portal-ID befindet sich im Feld **App-ID-URI** in der Azure Active Directory-Anwendung. Die Person, die das Portal bereitstellt, besitzt diese Anwendung. Sie sollten diese Anwendung nicht löschen oder ändern, oder Sie können die Funktionalität des Portals unterbrechen. Sie müssen der Besitzer der Anwendung sein, um ein Portal über das powerapps-Portal Admin Center verwalten zu können.
+Sie können die zugeordneten Portalanwendung in Azure Active Directory sehen. Der Name dieser Anwendung wird Microsoft CRM-Portale sein, und die Portal-ID befindet sich im Feld **App-ID-URI** in der Azure Active Directory-Anwendung. Die Person, die das Portal bereitstellt, besitzt diese Anwendung. Sie dürfen diese Anwendung nicht löschen oder ändern. Anderenfalls zerstören Sie möglicherweise die Portalfunktionen. Sie müssen der Anwendungsbesitzer sein, um ein Portal aus dem Admin-Center für PowerApps-Portale zu verwalten.
 
 ## <a name="authentication-key"></a>Authentifizierungsschlüssel
 
-Damit ein Portal mithilfe einer Azure Active Directory Anwendung eine Verbindung mit Common Data Service herstellen kann, ist ein Authentifizierungsschlüssel erforderlich, der mit der Azure Active Directory Anwendung verbunden ist. Dieser Schlüssel wird generiert, wenn Sie ein Portal bereitstellen und der öffentliche Teil dieses Schlüssels automatisch in die Azure Active Directory Anwendung hochgeladen wird.
+Damit ein Portal eine Verbindung mit Common Data Service unter Verwendung einer Azure Active Directory-Anwendung herstellt, benötigt es einen Authentifizierungsschlüssel, der mit der Azure Active Directory-Anwendung verbunden ist. Dieser Schlüssel wird generiert, wenn Sie ein Portal bereitstellen und der öffentliche Teil dieses Schlüssels automatisch zur Azure Active Directory-Anwendung hochgeladen wird.
 
 > [!IMPORTANT]
-> Der Authentifizierungsschlüssel läuft in zwei Jahren ab. Er muss alle zwei Jahre erneuert werden, um sicherzustellen, dass das Portal weiterhin eine Verbindung mit der Common Data Service Umgebung herstellt. Wenn Sie den Schlüssel nicht aktualisieren, wird das Portal nicht mehr funktionieren.  
+> Der Authentifizierungsschlüssel läuft in zwei Jahren ab. Er muss alle zwei Jahre erneuert werden, um sicherzustellen, dass Ihr Portal weiterhin eine Verbindung mit Ihrer Common Data Service-Umgebung herstellt. Wenn Sie den Schlüssel nicht aktualisieren, funktioniert das Portal nicht mehr.  
 
-### <a name="authentication-key-details"></a>Details zum Authentifizierungsschlüssel
+### <a name="authentication-key-details"></a>Schlüsseldetails zur Authentifizierung
 
-Die Details eines Authentifizierungs Schlüssels werden im Admin Center und Portal des powerapps-Portals angezeigt.
+Die Details eines Authentifizierungsschlüssels werden im Admin-Center und Portal für PowerApps-Portale angezeigt.
 
-**Powerapps-Portale Admin Center**
+**Admin-Center für PowerApps-Portale**
 
-1. Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
+1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
 
-2. Wählen Sie **Portal Authentifizierungsschlüssel verwalten**aus. Der Authentifizierungsschlüssel wird zusammen mit dem Ablaufdatum und dem Fingerabdruck angezeigt.
+2. Wählen Sie **Portalauthentifizierungsschlüssel verwalten** aus. Der Authentifizierungsschlüssel wird zusammen mit seinem Ablaufdatum und Fingerabdruck angezeigt.
 
    > [!div class=mx-imgBorder]
-   > ![Details zum Authentifizierungsschlüssel in den powerapps-Portalen admin]Center(../media/manage-auth-key.png "Authentifizierungsschlüssel Details im powerapps-Portal Admin Center")
+   > ![Authentifizierungsschlüsseldetails im PowerApps-Portal-Administratorcenter](../media/manage-auth-key.png "Authentifizierungsschlüsseldetails im PowerApps-Portal-Administratorcenter")
 
 **Portal**
 
 1. Melden Sie sich beim Portal als Administrator an.
 
-2. Navigieren Sie zur URL < portal_path >/_services/about. Das Ablaufdatum für den Authentifizierungsschlüssel wird angezeigt. 
+2. Navigieren Sie zur URL <portal_path>/_services/about. Das Authentifizierungsschlüssel-Ablaufdatum wird angezeigt. 
 
    > [!div class=mx-imgBorder]
-   > Portal ![Dienst]Seite(../media/portal-services-page.png "Portal Dienst Seite")
+   > ![Portalserviceseite](../media/portal-services-page.png "Portalserviceseite")
 
 > [!NOTE]
-> Um Informationen zum Authentifizierungsschlüssel anzuzeigen, müssen Sie sich in derselben Browsersitzung beim Portal anmelden, und Sie müssen über alle Zugriffsberechtigungen für die Website verfügen.
+> Um Authentifizierungsschlüsselinformationen anzuzeigen, müssen Sie sich beim Portal in derselben Browsersitzung anmelden, und Sie müssen über die gesamte Websitezugriffsberechtigung verfügen.
 
-### <a name="authentication-key-expiration-notification"></a>Ablauf Benachrichtigung für Authentifizierungsschlüssel
+### <a name="authentication-key-expiration-notification"></a>Benachrichtigung über den Ablauf des Authentifizierungsschlüssels
 
-Bevor der Authentifizierungsschlüssel abläuft, werden Sie per e-Mail, powerapps-Portale Admin Center und Portal benachrichtigt.
+Bevor der Authentifizierungsschlüssel abläuft, werden Sie per E-Mails, Admin-Center der PowerApps-Portale und Portal benachrichtigt.
 
 **Email**
 
-E-Mail wird an Personen gesendet, die sich für die e-Mail-Benachrichtigung für die Organisation registriert haben, die mit dem Portal verbunden ist. Weitere Informationen zum Registrieren für eine e-Mail-Benachrichtigung: [Verwalten von e-Mail-Benachrichtigungen an Administratoren](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-email-notifications)
+E-Mail wird an Personen gesendet, die sich für die E-Mail-Benachrichtigung für die Organisation angemeldet haben, die mit ihrem Portal verbunden ist. Weitere Informationen über die Anmeldung für die E-Mail-Benachrichtigung: [Verwalten von E-Mail-Benachrichtigungen an Administratoren](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-email-notifications)
 
-E-Mail-Benachrichtigungen werden in den folgenden Intervallen gesendet: 
+E-Mail-Benachrichtigungen werden in den nachfolgenden Intervallen gesendet: 
 - 90 Tage 
 - 60 Tage 
 - 30 Tage 
@@ -82,57 +82,57 @@ E-Mail-Benachrichtigungen werden in den folgenden Intervallen gesendet:
 - 6 Stunden 
 - 3 Stunden
 
-Sie werden auch benachrichtigt, wenn der Schlüssel jeden Tag bis zu einer Woche nach dem Ablauf des Schlüssels abläuft.
+Außerdem werden Sie benachrichtigt, nachdem der Schlüssel abgelaufen ist, und zwar jeden Tag bis 1 Woche nach Schlüsselablauf.
 
 > [!NOTE]
-> - Intervalle werden in UTC vom Ablaufdatum des Schlüssels aus berechnet.
-> - Es ist nicht garantiert, dass die e-Mail-Adresse genau den in den oben aufgeführten Intervallen entspricht E-Mail-Benachrichtigungen können verzögert oder übersehen werden. Stellen Sie sicher, dass Sie auch online auf das Ablaufdatum des Schlüssels achten.
+> - Intervalle werden in UTC ab dem Schlüsselablaufdatum berechnet.
+> - Die E-Mail kann nicht zu genau den oben aufgelisteten Intervallen garantiert werden. Eine E-Mail-Benachrichtigung kann sich verzögern oder verpasst werden. Stellen Sie sicher, dass Sie auch online das Schlüsselablaufdatum überprüfen.
 
-**Powerapps-Portale Admin Center**
+**Admin-Center für PowerApps-Portale**
 
-Oben auf der Seite wird eine Meldung zum Ablauf des Schlüssels angezeigt.
+Eine Nachricht über das Schlüsselablaufdatum wird oben auf der Seite angezeigt.
 
 > [!div class=mx-imgBorder]
-> ![Benachrichtigung über Authentifizierungsschlüssel in powerapps-Portale Admin Center](../media/portal-admin-center-auth-notif.png "Authentifizierungsschlüssel Benachrichtigung im powerapps-Portal Admin Center")
+> ![Authentifizierungsschlüsselbenachrichtigung im PowerApps-Portal-Administratorcenter](../media/portal-admin-center-auth-notif.png "Authentifizierungsschlüsselbenachrichtigung im PowerApps-Portal-Administratorcenter")
 
 **Portal**
 
-Wenn Sie zur URL < portal_path >/_services/about navigieren, wird unten auf der Seite eine Benachrichtigung über den Ablauf des Schlüssels angezeigt.
+Wenn Sie zur URL <portal_path>/_services/about navigieren, wird eine Benachrichtigung über das Schlüsselablaufdatum unten auf der Seite angezeigt.
 
 > [!NOTE]
-> Sie müssen sich in der gleichen Browsersitzung bei Ihrem Portal anmelden, und Sie müssen alle Zugriffsberechtigungen für die Website erhalten.
+> Sie müssen sich bei Ihrem Portal in derselben Browsersitzung anmelden, und Ihnen muss die gesamte Websitezugriffsberechtigung zugewiesen sein.
 
 > [!div class=mx-imgBorder]
-> Benachrichtigung über ![Authentifizierungsschlüssel bei der Benachrichtigung über den Portal](../media/portal-service-page-auth-notif.png "Authentifizierungsschlüssel im Portal")
+> ![Authentifizierungsschlüsselbenachrichtigung im Portal](../media/portal-service-page-auth-notif.png "Authentifizierungsschlüsselbenachrichtigung im Portal")
 
-## <a name="renew-portal-authentication-key"></a>Erneuern des Authentifizierungsschlüssels für ein Portal
+## <a name="renew-portal-authentication-key"></a>Portalauthentifizierungsschlüssel erneuern
 
-Sie müssen den Schlüssel alle zwei Jahre erneuern, um sicherzustellen, dass das Portal eine Verbindung mit Common Data Service Umgebung herstellen kann.
+Sie müssen den Schlüssel alle zwei Jahre erneuern, um sicherzustellen, dass Ihr Portal eine Verbindung mit Ihrer Common Data Service-Umgebung herstellen kann.
 
 > [!NOTE]
-> Zum Erneuern des Schlüssels müssen Sie über Berechtigungen zum Verwalten des Portals verfügen.
+> Um den Schlüssel zu erneuern, müssen Sie über Berechtigungen zur Verwaltung Ihres Portale verfügen.
 
-1. Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
+1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
 
-2. Wählen Sie **Portal Authentifizierungsschlüssel verwalten**aus. Der Authentifizierungsschlüssel wird zusammen mit dem Ablaufdatum und dem Fingerabdruck angezeigt.
+2. Wählen Sie **Portalauthentifizierungsschlüssel verwalten** aus. Der Authentifizierungsschlüssel wird zusammen mit seinem Ablaufdatum und Fingerabdruck angezeigt.
 
     > [!div class=mx-imgBorder]
-    > ![Verwalten des Portal Authentifizierungs Schlüssels](../media/manage-portal-auth-key.png "Verwalten des Portal Authentifizierungs Schlüssels")
+    > ![Portalauthentifizierungsschlüssel verwalten](../media/manage-portal-auth-key.png "Portalauthentifizierungsschlüssel verwalten")
 
-3. Wählen Sie **Schlüssel aktualisieren**aus.
+3. Wählen Sie **Schlüssel aktualisieren** aus.
 
-4. Wählen Sie in der Meldung die Option **Aktualisieren** aus. Der Aktualisierungs Vorgang wird gestartet, und es wird eine Meldung angezeigt.
+4. Wählen Sie **Aktualisieren** in der Meldung aus. Der Updateprozess startet, und eine Meldung wird angezeigt.
 
 > [!NOTE]
-> - Während dieser Prozess im Hintergrund ausgeführt wird, wird das Portal einmal neu gestartet.
-> - Wenn Sie einen Schlüssel aktualisieren, wird er zwei Jahre lang aktualisiert.
-> - Dieser Vorgang dauert fünf bis sieben Minuten.
+> - Während dieser Prozess im Hintergrund ausgeführt wird, startet das Portal einmal erneut.
+> - Wenn Sie einen Schlüssel aktualisieren, wird er für zwei Jahre aktualisiert.
+> - Dieser Prozess wird fünf bis sieben Minuten dauern.
 
 ### <a name="troubleshooting"></a>Problembehandlung
 
-Wenn die Schlüssel Aktualisierung fehlschlägt, wird eine Fehlermeldung zusammen mit der folgenden Aktion angezeigt:
+Wenn das Schlüsselupdate fehlschlägt, wird eine Fehlermeldung zusammen mit der folgenden Aktion angezeigt:
 
-- **Wiederholen Sie die Aktualisierung des Authentifizierungs Schlüssels**. Mit dieser Aktion können Sie den Aktualisierungs Vorgang für den Portal Authentifizierungsschlüssel neu starten. Wenn die Aktualisierung mehrmals fehlschlägt, wenden Sie sich an den Microsoft Support.
+- **Authentifizierungsschlüsselupdate erneut versuchen**. Diese Aktion ermöglicht es Ihnen, den Portalauthentifizierungsschlüssel-Updateprozess erneut zu starten. Wenn das Update mehrmals fehlschlägt, wenden Sie sich an den Microsoft-Support.
 
     > [!div class=mx-imgBorder]
-    > Authentifizierungsschlüssel für erneuten Authentifizierungs ![Schlüssel aktualisieren]Wiederholungs(../media/retry-auth-key-update.png "Portal Authentifizierungsschlüssel aktualisieren")
+    > ![Portalauthentifizierungsschlüssel-Update wiederholen](../media/retry-auth-key-update.png "Portalauthentifizierungsschlüssel-Update wiederholen")

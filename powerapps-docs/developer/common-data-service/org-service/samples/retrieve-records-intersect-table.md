@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Abrufen von Datensätzen aus einer Überschneidungstabelle (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Abrufen von Datensätzen aus einer Überschneidungstabelle (Common Data Service) | Microsoft-Dokumentation'
 description: Dieses Beispiel veranschaulicht das Abrufen eines Datensatzes aus einer Überschneidungstabelle.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 49243b6d9dadc9fd9cc8dc35eba29c00f867004e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748721"
 ---
 # <a name="sample-retrieve-records-from-an-intersect-table"></a>Beispiel: Abrufen von Datensätzen aus einer Überschneidungstabelle
 
