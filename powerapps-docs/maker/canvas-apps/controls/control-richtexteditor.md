@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec991f54ff4b395026c9a869c315f75a549da79e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 26ba133612e1c69ed470984fabafe6a6cdfddb1c
+ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649791"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74550580"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Rich-Text-Editor-Steuerelement in powerapps
 Ermöglicht Endbenutzern das Formatieren von Text in einem WYSIWYG-Bearbeitungsbereich.  Die Ausgabe erfolgt im HTML-Format.
@@ -50,6 +50,8 @@ Wenn Sie das Steuerelement innerhalb eines Formulars verwenden möchten, klicken
 **[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Sollte den Zweck dieser Anlagen beschreiben.
 
 **[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement das Hinzufügen und Löschen von Dateien zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+
+**Enablespellcheck** – gibt an, ob die Rechtschreibprüfung für den Browser aktiviert ist. Beachten Sie, dass diese Funktion nur die Rechtschreibprüfung in der Standardsprache des Browsers bereitstellt.  Power Apps für Windows unterstützt diese Eigenschaft nicht.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
