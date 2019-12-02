@@ -118,7 +118,7 @@
   items:
     - name: Übersicht
       href: index.md
-    - name: Anmelden bei PowerApps
+    - name: Bei PowerApps anmelden
       href: ./canvas-apps/intro-maker-portal.md
 - name: Canvas-Apps
   items:
@@ -168,7 +168,7 @@
           href: ./canvas-apps/get-started-test-drive.md
     - name: Entwerfen und Erstellen einer App
       items:
-        - name: Herstellen einer Datenverbindung
+        - name: Mit Daten verbinden
           items:
             - name: Liste der Verbindungen
               href: ./canvas-apps/connections-list.md
@@ -196,7 +196,7 @@
                   href: canvas-apps/connections/connection-powerbi.md
                 - name: SharePoint
                   href: canvas-apps/connections/connection-sharepoint-online.md
-                - name: SQL Server
+                - name: "SQL\_Server"
                   href: canvas-apps/connections/connection-azure-sqldatabase.md
                 - name: Twitter
                   href: canvas-apps/connections/connection-twitter.md
@@ -262,8 +262,6 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: Grundlegendes zu Karten
                   href: ./canvas-apps/working-with-cards.md
-                - name: Anzeigen eines Bilds in voller Größe
-                  href: ./canvas-apps/display-full-image-on-form.md
             - name: Liste hinzufügen
               items:
                 - name: 'Hinzufügen von Listenfeldern, Dropdownlisten oder Optionsfeldern'
@@ -324,7 +322,7 @@
                   href: ./canvas-apps/controls/control-html-text.md
                 - name: Symbol
                   href: ./canvas-apps/controls/control-shapes-icons.md
-                - name: Bild
+                - name: Image
                   href: ./canvas-apps/controls/control-image.md
                 - name: Importieren
                   href: ./canvas-apps/controls/control-export-import.md
@@ -374,7 +372,7 @@
                   href: ./canvas-apps/controls/properties-color-border.md
                 - name: Kern
                   href: ./canvas-apps/controls/properties-core.md
-                - name: Bild
+                - name: Image
                   href: ./canvas-apps/controls/properties-visual.md
                 - name: Größe und Speicherort
                   href: ./canvas-apps/controls/properties-size-location.md
@@ -554,7 +552,7 @@
                   href: ./canvas-apps/functions/function-astype-istype.md
                 - name: JSON
                   href: ./canvas-apps/functions/function-json.md
-                - name: Language
+                - name: Sprache
                   href: ./canvas-apps/functions/function-language.md
                 - name: Last
                   href: ./canvas-apps/functions/function-first-last.md
@@ -580,7 +578,7 @@
                   href: ./canvas-apps/functions/function-ismatch.md
                 - name: MatchAll
                   href: ./canvas-apps/functions/function-ismatch.md
-                - name: Max
+                - name: Max.
                   href: ./canvas-apps/functions/function-aggregates.md
                 - name: Mid
                   href: ./canvas-apps/functions/function-left-mid-right.md
@@ -622,11 +620,11 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Rand
                   href: ./canvas-apps/functions/function-rand.md
-                - name: Refresh
+                - name: Aktualisieren
                   href: ./canvas-apps/functions/function-refresh.md
                 - name: Relate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Remove
+                - name: Entfernen
                   href: ./canvas-apps/functions/function-remove-removeif.md
                 - name: RemoveIf
                   href: ./canvas-apps/functions/function-remove-removeif.md
@@ -732,7 +730,7 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Mit
                   href: ./canvas-apps/functions/function-with.md
-                - name: Year
+                - name: Jahr
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Erstellen einer App in einer Lösung
           href: ./canvas-apps/add-app-solution.md
@@ -790,7 +788,7 @@
           href: ./canvas-apps/set-name-tile.md
         - name: Verwalten von Anzeigen
           items:
-            - name: Ändern der Bildschirmgröße und -ausrichtung
+            - name: Bildschirmgröße und -ausrichtung ändern
               href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
             - name: Erstellen dynamischer Layouts
               href: ./canvas-apps/create-responsive-layout.md
@@ -798,7 +796,7 @@
       items:
         - name: Vornehmen einfacher Änderungen
           href: ./canvas-apps/customize-list-form.md
-        - name: Grundlegendes zur Integration von SharePoint-Formularen
+        - name: Grundlegendes zur SharePoint-Formularintegration
           href: ./canvas-apps/sharepoint-form-integration.md
     - name: In andere Technologien integrieren
       items:
@@ -826,7 +824,7 @@
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
-        - name: InfoPath-Formulare in PowerApps-Formulare transformieren
+        - name: InfoPath-Formulare zu PowerApps transformieren
           href: ./canvas-apps/transform-infopath.md
     - name: Für Entwickler
       items:
@@ -1198,7 +1196,7 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: Migrieren von Identitätsanbietern zu Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
-        - name: Search
+        - name: Suchen
           items:
             - name: Informationen zur Suche
               href: ./portals/configure/search.md
@@ -1534,6 +1532,8 @@
       href: ./common-data-service/import-translated-entity-field-text.md
     - name: Sicherheit im Common Data Service
       href: /power-platform/admin/wp-security
+    - name: Übersicht über API-Grenzwerte
+      href: ./common-data-service/api-limits-overview.md
     - name: Für Entwickler
       href: ../developer/common-data-service/overview.md
 - name: AI Builder
