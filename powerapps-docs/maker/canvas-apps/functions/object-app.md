@@ -1,6 +1,6 @@
 ---
 title: App-Objekt | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispielen, für das App-Objekt in powerapps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für das App-Objekt in Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c2e34a9f466fcb64bcf14ef6a504d5b18b0a596d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676742"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729757"
 ---
-# <a name="app-object-in-powerapps"></a>App-Objekt in powerapps
+# <a name="app-object-in-power-apps"></a>App-Objekt in Power apps
 
 Stellt Informationen über die derzeit laufende App bereit und steuert das Verhalten der app.
 
@@ -84,7 +83,7 @@ Das Bestätigungs Dialogfeld wird in jeder Situation angezeigt, in der Daten ver
   - Wischen Sie, um zu einer anderen app in Power Apps Mobile zu wechseln.
   - Auswählen der Schaltfläche "zurück" auf einem Android-Gerät.
 
-Das genaue Erscheinungsbild des Bestätigungs Dialogfelds kann von Geräten und Versionen von powerapps abweichen.
+Das genaue Erscheinungsbild des Bestätigungs Dialogfelds kann von Geräten und Versionen von Power apps abweichen.
 
 Das Bestätigungs Dialogfeld wird in powerapps Studio nicht angezeigt.
 
@@ -102,7 +101,7 @@ In einem Browser wird das Bestätigungs Dialogfeld möglicherweise mit einer gen
 
 1. Legen Sie die **confirmexit** -Eigenschaft des **App** -Objekts auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -113,9 +112,9 @@ In einem Browser wird das Bestätigungs Dialogfeld möglicherweise mit einer gen
 
 1. Legen Sie die **confirmexitmessage** -Eigenschaft des **App** -Objekts auf diese Formel fest:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```

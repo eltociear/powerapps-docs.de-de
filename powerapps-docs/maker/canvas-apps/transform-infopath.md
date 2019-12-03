@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a41c9c121c1b57545376ba16f93d249c36ddeaeb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 811f58243413c4de58e4cdb8868d838349248991
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674562"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732373"
 ---
-# <a name="transform-your-infopath-form-to-powerapps"></a>Transformieren des InfoPath-Formulars in ein PowerApps-Formular
+# <a name="transform-your-infopath-form-to-power-apps"></a>Umwandeln Ihres InfoPath-Formulars in powerapps
 
 Erstellen Sie gerne nützliche Formulare in InfoPath und möchten lernen, wie Sie diese auf einer robusteren Plattform bereitstellen?
 
@@ -38,7 +37,7 @@ Power Apps ist eine SaaS-Plattform (Software-as-a-Service), mit der Sie schnell 
 Haben Sie schon mal versucht, eine App zu erstellen und sie dann für iOS- oder Android-Geräte zu veröffentlichen? Das ist gar nicht so einfach. Wenn Sie eine zweite App bereitstellen oder Ihre vorhandene App aktualisieren möchten, müssen Ihre Benutzer wesentlich mehr Schritte ausführen. Nicht mit Power apps. Ihre Benutzer installieren Power Apps Mobile auf Ihren Geräten und melden sich an. Und voilà – schon stehen ihnen all die hochfunktionalen Apps zur Verfügung, die Sie für sie freigegeben haben. Wenn Sie in Zukunft diese Apps aktualisieren oder neue Apps freigeben, werden die Apps auf den Geräten der Benutzer angezeigt. Mobile Apps ohne den Aufwand für die Geräteverwaltung sind ein großer Gewinn für Sie und Ihr Unternehmen.
 
 **Apropos mobile Geräte**  
-Mit powerapps können Sie die Leistung des mobilen Geräts des Benutzers nutzen. Über Ihre App haben Sie Zugriff auf die Beschleunigung, die Kamera, den Kompass, die Verbindungsinformationen und die Positionssignale. Bei der Erstellung von Apps eröffnet ihnen dies eine ganze Welt von Möglichkeiten. Und auch die Touchfunktionalität läuft in PowerApps ganz automatisch, d.h. Sie müssen bei der App-Erstellung nichts zusätzlich programmieren.
+Mit powerapps können Sie die Leistung des mobilen Geräts des Benutzers nutzen. Über Ihre App haben Sie Zugriff auf die Beschleunigung, die Kamera, den Kompass, die Verbindungsinformationen und die Positionssignale. Bei der Erstellung von Apps eröffnet ihnen dies eine ganze Welt von Möglichkeiten. Natürlich ist die Berührungs Funktion nur automatisch in powerapps: nichts zusätzlicher Code, wenn Sie Ihre APP erstellen.
 
 **Vorkonfigurierte Features**  
 Mit InfoPath arbeiten Sie in der Regel mit Daten aus einer einzigen Quelle. Schwierig wurde es allerdings, wenn Sie eine andere Quelle (z.B. eine SharePoint-Liste in einer anderen Websitesammlung) aktualisieren oder eine Verbindung mit externen Diensten herstellen wollten. Konzepte wie „CodeBehind“ haben Ihnen den Schlaf geraubt. Powerapps ist so konzipiert, dass Sie mit mehreren Datenquellen und Dienst Verbindungen in einer APP arbeiten können. Derzeit unterstützen [mehr als 200 Connectors](connections-list.md#all-standard-connectors) eine Kombination aus lokalen und clouddaten, einschließlich Microsoft Office 365 und Azure-Diensten wie z. b. Strom Automatisierung und Dynamics 365. Sie können auch Verbindungen mit einer Vielzahl von Drittanbieterdiensten herstellen, beispielsweise Dropbox, Google, Salesforce, Slack sowie weiteren gängigen Zielen.
@@ -51,7 +50,7 @@ Power Apps ist ein großartiges Tool, um die SharePoint-Benutzer auf zwei Arten 
 
 Die **Anpassung eines SharePoint-Formulars** ist eine praktische Methode, wenn Sie die Art und Weise anpassen möchten, in der Benutzer Elemente in einer Liste hinzufügen, anzeigen oder bearbeiten, die sie bei ihrer täglichen Arbeit verwenden. Wenn Sie auf **Formulare anpassen** klicken, wird eine &quot;Formular-App&quot; mit einem einzigen Bildschirm erstellt, in der die Modi (Neu/Bearbeiten/Ansicht) kontextabhängig geändert werden. SharePoint verwaltet diese Apps; ihre Berechtigungen sind die gleichen wie die Listenberechtigungen zum Bearbeiten bzw. Anzeigen.
 
-Wenn Sie **eine Canvas-App für Power Apps aus SharePoint erstellen** , können Sie die APP selbst auf einem mobilen Gerät ausführen. Sie können die APP auch in eine SharePoint-Seite einbetten. Mit einem Klick wird eine App mit drei Bildschirmen erstellt („Liste durchsuchen“, „Details anzeigen“ und „Element erstellen/aktualisieren“). Das Berechtigungs-/Freigabemodell für diese Apps ist nicht an SharePoint gebunden, sondern wird von PowerApps verwaltet.
+Wenn Sie **eine Canvas-App für Power Apps aus SharePoint erstellen** , können Sie die APP selbst auf einem mobilen Gerät ausführen. Sie können die APP auch in eine SharePoint-Seite einbetten. Mit einem Klick wird eine App mit drei Bildschirmen erstellt („Liste durchsuchen“, „Details anzeigen“ und „Element erstellen/aktualisieren“). Das Berechtigungs-/Freigabemodell für diese apps ist nicht an SharePoint gebunden, sondern wird stattdessen von powerapps verwaltet.
 
 Nachdem Sie nun den Unterschied zwischen den beiden Optionen kennen, erhalten Sie im folgenden Abschnitt einen Überblick über deren Verwendung.
 
@@ -81,7 +80,7 @@ Starten Sie die Erstellung Ihrer ersten App mit einer einfachen benutzerdefinier
 
 ## <a name="how-do-you-do-that-with-power-apps"></a>Wie gehen Sie mit Power apps vor?
 
-Nun, da Sie die grundlegenden Konzepte kennen, gehen wir einen Schritt weiter. Ihre erste App haben Sie in der Tasche. Der folgende Abschnitt hilft Ihnen dabei, einige der gängigen InfoPath-Konzepte in PowerApps anzuwenden.
+Nun, da Sie die grundlegenden Konzepte kennen, gehen wir einen Schritt weiter. Mit ihrer ersten app unter Ihrem Gürtel können Sie in diesem Abschnitt einige der allgemeinen InfoPath-Konzepte in Power apps anwenden.
 
 **Ausblenden, Anzeigen oder Sperren eines Felds basierend auf einem Wert**  
 Erfolgreiche Formulare erzwingen häufig eine strikte Geschäftslogik, indem z.B. der Status eines Felds basierend auf einem Wert oder einer Aktion geändert wird. Mit powerapps können Sie die **Display Mode** -Eigenschaft eines Steuer Elements auf **Bearbeiten** oder **anzeigen** festlegen, um anzugeben, ob ein Benutzer das Feld ändern kann. Sie können auch eine einfache **If**-Formel verwenden, um dieses Verhalten per Bedingung festzulegen. Wählen Sie zuerst die Karte aus, die Sie bearbeiten möchten, und klicken Sie dann auf das Schlosssymbol. Dieser Schritt entsperrt die Karte, sodass Sie den Wert ändern können.
@@ -94,7 +93,7 @@ Scrollen Sie im rechten Bereich zu der **Display Mode** -Eigenschaft, damit Sie 
 
 In diesem Beispiel verwenden Sie eine **If**-Formel:
 
-```If(ThisItem.Color = "Blue"; DisplayMode.View; DisplayMode.Edit)```
+```If(ThisItem.Color = "Blue", DisplayMode.View, DisplayMode.Edit)```
 
 Diese Formel besagt Folgendes: Wenn das **Color**-Feld des aktuellen Elements auf **Blue** festgelegt ist, ist das **Animal**-Feld schreibgeschützt. Andernfalls kann das Feld bearbeitet werden.
 
@@ -102,21 +101,21 @@ Um die Karte auszublenden, anstatt sie als schreibgeschützt festzulegen, fügen
 
 Sie können beispielsweise auch eine Genehmigungsschaltfläche verwenden, die nur angezeigt wird, wenn die E-Mail-Adresse des Benutzers der E-Mail-Adresse der genehmigenden Person entspricht. (Hinweis: Verwenden Sie den **Benutzer (). E-Mail** für den Zugriff auf die e-Mail-Adresse des aktuellen Benutzers.) Daher können Sie die e-Mail-Adresse der genehmigende Person in **yourdatacard** speichern und dann die **Visible** -Eigenschaft der Schaltfläche auf diese Formel festlegen:
 
-```If( YourDataCard.Text = User().Email; true; false )```
+```If( YourDataCard.Text = User().Email, true, false )```
 
 **Bedingte Formatierung**  
 In ähnlicher Weise wie oben, wo Sie das Feld ausgeblendet haben, können Sie den Benutzern auch visuelles Feedback geben. Möglicherweise möchten Sie Text in Rot markieren, wenn der eingegebene Wert außerhalb des zulässigen Bereichs liegt, oder den Text und die Farbe der Uploadschaltfläche ändern, nachdem der Benutzer eine Datei hochgeladen hat. Beides können Sie in Eigenschaften wie **Color** oder **Visible** mithilfe einer Funktion umsetzen, z.B. **If**.
 
 Sie könnten z.B. die **If**-Funktion zusammen mit der [IsMatch](functions/function-ismatch.md)-Funktion verwenden, um die Textfarbe des E-Mail-Felds in Rot zu ändern, wenn der Benutzer keine korrekt formatierte E-Mail-Adresse in das Eingabefeld eingibt. In diesem Fall legen Sie den **Color**-Wert von **TextInput1** (das Feld, in dem der Benutzer eine E-Mail-Adresse eingibt) auf die folgende Formel fest:
 
-```If( IsMatch(TextInput1.Text; Email); Black; Red )```
+```If( IsMatch(TextInput1.Text, Email), Black, Red )```
 
 **IsMatch** bietet eine Vielzahl von vordefinierten Mustern (wie E-Mail-Adressen) und die Möglichkeit, eigene Muster zu erstellen. Weitere Informationen zur bedingten Formatierung finden Sie in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Conditional-Formatting-and-Popups/m-p/84962).
 
 **Implementieren der rollenbasierten Sicherheit**  
 Die erste Funktion, die Sie ins Auge fassen sollten, lautet [DataSourceInfo](functions/function-datasourceinfo.md). Die Informationen, die Sie von der Datenquelle erhalten, variieren, aber häufig können Sie diese Formel verwenden, um zu prüfen, ob der Benutzer Zugriff auf die Daten hat (ersetzen Sie *YourDataSource* durch den Namen Ihrer Datenquelle):
 
-```DataSourceInfo( YourDataSource; DataSourceInfo.EditPermission )```
+```DataSourceInfo( YourDataSource, DataSourceInfo.EditPermission )```
 
 So können Sie ein Formular oder eine Schaltfläche nur dann einblenden, wenn der Benutzer über Schreibzugriff verfügt. Die vollständige Liste der Informationen, die Sie in der Funktion abfragen können, finden Sie in der Dokumentation zu [DataSourceInfo](functions/function-datasourceinfo.md).
 
@@ -127,19 +126,19 @@ Sie können eine e-Mail-Nachricht aus Power apps in vielerlei Hinsicht senden, a
 
 Sie können komplexere Nachrichten (z. b. als Teil eines SharePoint-Genehmigungs Workflows) senden, indem Sie die Strom Automatisierung verwenden und eine Verbindung zwischen Ihrer APP und dem von Ihnen erstellten Flow herstellen. Nachdem Sie Ihre APP mit der Energie Automatisierung verbunden haben, haben Sie die volle Leistung eines Workflow Moduls geöffnet, das wie Power apps sehr gut mit externen Daten und Diensten verbunden ist. Weitere Informationen zum Verbinden von powerapps und der Energie Automatisierung finden Sie in dieser [Dokumentation](using-logic-flows.md).
 
-Wenn Sie die von Ihnen gesuchte e-Mail-Option noch immer nicht gefunden haben, können Sie auch die powerapps-Connectors für Benchmark-e-Mails, Gmail, MailChimp, Outlook.com, sendgrid oder SMTP nutzen. Das ist das Schöne an PowerApps: Konnektivität.
+Wenn Sie die von Ihnen gesuchte e-Mail-Option noch immer nicht gefunden haben, können Sie auch die powerapps-Connectors für Benchmark-e-Mails, Gmail, MailChimp, Outlook.com, sendgrid oder SMTP nutzen. Konnektivität ist die Schönheit von powerapps.
 
 **Workflows**  
 Es ist schwer, über Geschäftsanwendungen und Geschäftslogik zu sprechen, ohne eine Workflow-Engine zu erwähnen. Die gute Nachricht ist, dass das powerapps-Team das Rad nicht neu erfunden hat und Ihnen ein weiteres Workflow Modul zur Verfügung steht. Stattdessen bieten Sie einen robusten Connector für den Energie automatisierten Dienst. Sie können Prozesse und Aufgaben für mehr als [200 verschiedene Dienste](https://flow.microsoft.com/connectors/) automatisieren, indem Sie die benutzerfreundliche Workflow-Engine nutzen. Weitere Informationen zum Verbinden von powerapps und der Energie Automatisierung finden Sie in dieser [Dokumentation](using-logic-flows.md).
 
-**Variablen mit PowerApps**  
+**Variablen mit Power apps**  
 Beim Erstellen von Lösungen wird selbstverständlich davon ausgegangen, dass Variablen dazugehören. Powerapps bietet mehrere Typen von Variablen, aber Sie sollten Sie nur bei Bedarf verwenden. Anstatt darüber nachzudenken, Daten abzurufen, sie in einer Variablen zu speichern und dann auf die Variable zu verweisen, müssen Sie nur noch direkt auf diese Daten verweisen. Sie werden dieses Modell besser verstehen, wenn Sie es mit Excel vergleichen. In Excel ist die Summe keine Variable, sondern das Ergebnis der Addition anderer Felder. Wenn Sie diesen Wert also an anderer Stelle auf dem Blatt verwenden möchten, geben Sie die Zelle an, in der Sie die Summe berechnet haben. In der [Dokumentation](working-with-variables.md) finden Sie hierzu eine gute Erklärung. Seien Sie offen für einen anderen Denkprozess.
 
 Wenn Sie dennoch Variablen benötigen (was in vielen Fällen vorkommt), erfahren Sie nun, welche unterschiedlichen Möglichkeiten Sie haben. Denken Sie daran, dass Sie mit Power apps keine Variablen definieren müssen. Verwenden Sie einfach eine Funktion, um einen Namen und einen zu speichernden Wert festzulegen, und Ihre Variable wird erstellt. Sie können die von Ihnen erstellten Variablen anzeigen, indem Sie auf der Registerkarte **Ansicht** die Option **Variablen** auswählen. Variablen werden im Arbeitsspeicher gespeichert, und ihre Werte gehen verloren, wenn Sie die APP schließen. Sie können folgende Arten von Variablen erstellen:
 
 - Globale Variablen sind das, woran Sie zuerst denken. Geben Sie mit der [Set](functions/function-set.md)-Funktion einen Wert für eine globale Variable an, und machen Sie den Wert in der gesamten App verfügbar:
 
-    ```Set( YourVariable; YourValue )```
+    ```Set( YourVariable, YourValue )```
 
     Dann können Sie in der gesamten App namentlich auf *YourVariable* verweisen.
 
@@ -158,11 +157,11 @@ Hierarchische Dropdownlisten sind sehr praktisch, da Sie z.B. die Auswahl in ein
 
 In diesem Beispiel können Sie eine Dropdownliste namens **ddSelectType** hinzufügen und die **Items**-Eigenschaft der Liste auf folgende Formel festlegen:
 
-```Distinct( Impacts; Title )```
+```Distinct( Impacts, Title )```
 
 Die Dropdownliste würde nur die folgenden Elemente anzeigen: Cost, Program Impact und Schedule. Dann können Sie eine zweite Dropdownliste hinzufügen und deren **Items**-Eigenschaft auf die folgende Formel festlegen:
 
-```Filter( Impacts; ddSelectType.Selected.Value in SCategory )```
+```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
 So einfach erhalten Sie überlappende Dropdownmenüs. Weitere Informationen finden Sie in diesem Beitrag aus den Power Apps Team [SharePoint: Cascading-Dropdown Listen in 4 einfachen Schritten!](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) oder in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). Keine Sorge: Sie können diese Aufgaben genauso einfach ohne SharePoint ausführen.
 

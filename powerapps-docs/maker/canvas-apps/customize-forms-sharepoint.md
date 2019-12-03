@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6732dabea803cd7680ef618e4e8d1c4e88f7afe5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: HT
+ms.openlocfilehash: f522f520c0f0f042e73932630980dee93bc5c89c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678624"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731762"
 ---
-# <a name="customize-a-canvas-app-form-in-powerapps"></a>Anpassen eines Canvas-App-Formulars in PowerApps
+# <a name="customize-a-canvas-app-form-in-power-apps"></a>Anpassen eines Canvas-App-Formulars in powerapps
 
 Passen Sie in einer Canvas-App ein **Anzeigeformular**-Steuerelement und ein **Bearbeitungsformular**-Steuerelement an, sodass die wichtigsten Daten in der intuitivsten Reihenfolge angezeigt werden, damit Benutzer die Daten leicht verstehen und aktualisieren können.
 

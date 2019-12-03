@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b25a22e732c96bf35f8951602e706f71b1733a7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8c65c20d91794c5c5d8601e117fa5755c274d02d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986731"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722892"
 ---
-# <a name="edit-form-and-display-form-controls-in-powerapps"></a>„Formular anzeigen“- und „Formular bearbeiten“-Steuerelemente in PowerApps
+# <a name="edit-form-and-display-form-controls-in-power-apps"></a>Bearbeiten von Formular-und Anzeige Formular-Steuerelementen in powerapps
 Zeigen Sie Datensätze aus einer Datenquelle an, bearbeiten Sie diese und erstellen Sie neue.
 
 ## <a name="description"></a>Beschreibung
@@ -38,7 +37,7 @@ Sie können auch die **Item**-Eigenschaft eines Formulars mithilfe eines **Dropd
 
 ```First(Accounts)```
 
-```Lookup(Accounts; "Fabrikam" in name)```
+```Lookup(Accounts, "Fabrikam" in name)```
 
 Jedes Formular enthält eines oder mehrere **[Karten](control-card.md)** -Steuerelemente. Durch Festlegen der **[DataField](control-card.md)** -Eigenschaft einer Karte können Sie [angeben, welche Felder auf der Karte angezeigt werden (und mehr)](../add-form.md).
 
@@ -153,7 +152,7 @@ Das Formular wechselt vom **New**-Modus in den **Edit**-Modus, wenn eine dieser 
 
 * Diese Eigenschaft ist nur im **Formular bearbeiten**-Steuerelement verfügbar.
 * Verwenden Sie diese Eigenschaft, um die Feldwerte aus den Karten im Steuerelement zu extrahieren.  Sie können diese Werte verwenden, um die Datenquelle manuell zu aktualisieren, indem Sie die **[Patch](../functions/function-patch.md)** -Funktion oder eine andere verfügbare Methode aufrufen.  Sie müssen diese Eigenschaft nicht verwenden, wenn Sie die **[SubmitForm](../functions/function-form.md)** -Funktion ausführen.
-* Diese Eigenschaft gibt einen Datensatz von Werten zurück.  Wenn das Formular Steuerelement z. b. Karten Steuerelemente für die Felder " **Name** " und " **Menge** " enthält und die Werte der **[Update](control-card.md)** Eigenschaften für diese Karten "Widget" und "10" zurückgeben, wird die Eigenschaft " **Updates** " für das Formular Steuerelement gibt **{Name: "Widget"; Menge: 10}** .
+* Diese Eigenschaft gibt einen Datensatz von Werten zurück.  Beispiel: Wenn das Formularsteuerelement Kartensteuerelemente für die Felder **Name** und **Quantity** enthält und die Werte der **[Update](control-card.md)** -Eigenschaften für diese Karten „Widget“ und „10“ zurückgeben, würde die **Updates**-Eigenschaft für das Formularsteuerelement **{ Name: "Widget", Quantity: 10 }** zurückgeben.
 
 **Valid** – Gibt an, ob ein Steuerelement vom Typ **[Karte](control-card.md)** oder **Formular bearbeiten** gültige Einträge enthält, die für die Übermittlung an die Datenquelle bereit sind.
 
@@ -161,7 +160,7 @@ Das Formular wechselt vom **New**-Modus in den **Edit**-Modus, wenn eine dieser 
 * Im **Formular**-Steuerelement aggregiert die **Valid**-Eigenschaft die **Valid**-Eigenschaften aller **[Karten](control-card.md)** -Steuerelemente in dem Formular. Die **Valid**-Eigenschaft ist nur dann **true**, wenn die Daten auf allen Karten im Formular gültig sind. Ist das nicht der Fall, hat die **Valid**-Eigenschaft den Wert **false**.
 * Damit eine Schaltfläche Änderungen nur dann speichert, wenn die Daten im Formular gültig sind, aber noch nicht übermittelt wurden, geben Sie für die Schaltfläche unter **DisplayMode** folgende Formel an:
   
-    **SubmitButton.DisplayMode = If(IsBlank( Form.Error ) || Form.Valid; DisplayMode.Edit; DisplayMode.Disabled)**
+    **SubmitButton.DisplayMode = If(IsBlank( Form.Error ) || Form.Valid, DisplayMode.Edit, DisplayMode.Disabled)**
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.

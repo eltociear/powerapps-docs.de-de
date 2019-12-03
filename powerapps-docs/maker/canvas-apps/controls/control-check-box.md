@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2a89f2afcceedada0ffdda53628e9253433e8f95
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 7bb993de28435478c65e061e959b2fa8945e73d1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650688"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727410"
 ---
-# <a name="check-box-control-in-powerapps"></a>Kontrollkästchen-Steuerelement in PowerApps
+# <a name="check-box-control-in-power-apps"></a>Kontrollkästchen-Steuerelement in powerapps
 Ein Steuerelement, das der Benutzer aktivieren und deaktivieren kann (wobei der Wert des Elements auf **true** bzw. **false** festgelegt wird).
 
 ## <a name="description"></a>Beschreibung
@@ -122,14 +121,14 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**If**( *Condition*; *Result* )](../functions/function-if.md)
+[**If**( *Condition*, *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **Kontrollkästchen**-Steuerelement hinzu, nennen Sie es **chkReserve**, und legen Sie für die **[Text](properties-core.md)** -Eigenschaft den Wert **Jetzt buchen** fest.
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein **[Datumsauswahl](control-date-picker.md)** -Steuerelement hinzu, und geben Sie für die **[Visible](properties-core.md)** -Eigenschaft diese Formel an:
-   <br>**If(chkReserve.Value = true; true)**
+   <br>**If(chkReserve.Value = true, true)**
    
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 3. Drücken Sie F5, klicken oder tippen Sie auf **chkReserve**, um den Wert der entsprechenden **[Value](properties-core.md)** -Eigenschaft auf **true** festzulegen, und klicken oder tippen Sie dann erneut auf **chkReserve**, um den Wert der **[Value](properties-core.md)** -Eigenschaft auf **false** festzulegen.

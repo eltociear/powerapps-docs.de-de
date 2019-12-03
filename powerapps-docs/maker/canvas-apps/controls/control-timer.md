@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 349365c84e9d59ea2edf3c61077e468ba16ab27e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2462f82420713e93c3ac0598a73e2dc43bc7c0b1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679636"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731940"
 ---
-# <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
+# <a name="timer-control-in-power-apps"></a>Timer-Steuerelement in powerapps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
 
 ## <a name="description"></a>Beschreibung
@@ -126,7 +125,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 2. Legen Sie die Eigenschaft **Duration** für den Timer auf **10000** und seine Eigenschaften **Repeat** und **Autostart** auf **TRUE** fest.
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:
-   <br>**"Anzahl verbleibender Sekunden: " & RoundUp(10-Countdown.Value/1000; 0)**
+   <br>**"Anzahl verbleibender Sekunden: " & RoundUp(10-Countdown.Value/1000, 0)**
 
     Benötigen Sie weitere Informationen zur **[If](../functions/function-round.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
@@ -139,7 +138,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 2. Legen Sie für diese Eigenschaften des Timers Folgendes fest: **Dauer** = **5000**, **Wiederholen** = **TRUE** und **[Text](properties-core.md)** = **Toggle animation** (Umschalter-Animation).
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf **Welcome!** fest und legen Sie dessen Eigenschaft **[Color](properties-color-border.md)** auf diese Formel fest:
-   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     Benötigen Sie weitere Informationen zur **[ColorFade](../functions/function-colors.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 

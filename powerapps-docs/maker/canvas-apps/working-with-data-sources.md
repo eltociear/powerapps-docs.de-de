@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0bb04f9c3c1fc0d2b330e53dd39b355421af84aa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 351e6cd6c680d4d5dc89f4e77c98bdd520f4c2ee
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674275"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732337"
 ---
-# <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>Grundlegendes zu Datenquellen für Canvas-Apps in PowerApps
+# <a name="understand-data-sources-for-canvas-apps-in-power-apps"></a>Grundlegendes zu Datenquellen für Canvas-apps in powerapps
 
 In powerapps verwenden die meisten Canvas-apps externe Informationen, die in Clouddiensten gespeichert sind und als **Datenquellen**bezeichnet werden. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps greifen auf diese Datenquellen mithilfe von **Verbindungen** zu.
 

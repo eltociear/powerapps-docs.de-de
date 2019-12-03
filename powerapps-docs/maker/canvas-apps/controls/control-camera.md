@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 14f802a899171dce052c8975f9fc63b07e448afc
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: c58f5695e47c27be261c6c85c273fe22952dd98a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650715"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727498"
 ---
-# <a name="camera-control-in-powerapps"></a>Kamera-Steuerelement in PowerApps
+# <a name="camera-control-in-power-apps"></a>Kamera-Steuerelement in Power apps
 Ein Steuerelement, mit dem der Benutzer mithilfe der Kamera des Geräts Fotos aufnehmen kann.
 
 ## <a name="description"></a>Beschreibung
@@ -74,12 +73,12 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Beispiel
 ### <a name="add-photos-to-an-image-gallery-control"></a>Hinzufügen von Fotos zu einem Bildkatalog-Steuerelement
 1. Fügen Sie ein **Kamera**-Steuerelement hinzu, benennen Sie es **MyCamera**, und legen Sie dessen **[OnSelect](properties-core.md)** -Eigenschaft auf die folgende Formel fest:<br>
-   **Collect(MyPix; MyCamera.Photo)**
+   **Collect(MyPix, MyCamera.Photo)**
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
@@ -92,7 +91,7 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 
     Das aufgenommene Foto wird im **Bildkatalog**-Steuerelement angezeigt.
 6. Machen Sie beliebig viele Fotos, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
-7. (optional) Legen Sie die **OnSelect**-Eigenschaft des **Bild**-Steuerelements im **Bildkatalog**-Steuerelement auf **Remove(MyPix; ThisItem)** fest, drücken Sie F5, und klicken oder tippen Sie dann auf ein Foto, um dieses zu entfernen.
+7. (optional) Legen Sie die **OnSelect**-Eigenschaft des **Bild**-Steuerelements im **Bildkatalog**-Steuerelement auf **Remove(MyPix, ThisItem)** fest, drücken Sie F5, und klicken oder tippen Sie dann auf ein Foto, um dieses zu entfernen.
 
 Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)** -Funktion, um die Fotos lokal zu speichern, oder die **[Patch](../functions/function-patch.md)** -Funktion, um eine Datenquelle zu aktualisieren.
 

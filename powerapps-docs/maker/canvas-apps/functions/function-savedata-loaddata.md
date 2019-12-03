@@ -1,6 +1,6 @@
 ---
 title: Funktionen „SaveData“ und „LoadData“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax für die Funktionen SaveData und LoadData in PowerApps
+description: Referenzinformationen einschließlich Syntax für die Funktionen "SaveData" und "LoadData" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1be652ef905d73baeeafd9ddf06f74584851b457
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8ad9eee5230d46e67f3a0c5370fd0960e0c6787b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678302"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730269"
 ---
-# <a name="savedata-and-loaddata-functions-in-powerapps"></a>Funktionen SaveData und LoadData in PowerApps
+# <a name="savedata-and-loaddata-functions-in-power-apps"></a>Funktionen "SaveData" und "LoadData" in powerapps
 Speichert eine [Sammlung](../working-with-data-sources.md#collections) und lädt diese erneut.
 
 ## <a name="description"></a>Beschreibung
@@ -40,7 +39,7 @@ Diese Funktionen sind durch die Menge des verfügbaren APP-Speichers beschränkt
 Speicher wird verschlüsselt und befindet sich an einem privaten Speicherort auf dem lokalen Gerät, isoliert von anderen Benutzern und anderen Apps.
 
 ## <a name="syntax"></a>Syntax
-**SaveData**( *Sammlung*; *Name* )<br>**LoadData**( *Sammlung*; *Name* [; *NichtVorhandeneDateiIgnorieren* ])
+**SaveData**( *Sammlung*, *Name* )<br>**LoadData**( *Sammlung*, *Name* [, *NichtVorhandeneDateiIgnorieren* ])
 
 * *Sammlung*: Erforderlich.  Die zu speichernde oder zu ladende Sammlung.
 * *Name*: Erforderlich.  Der Name des Speichers. Sie müssen den gleichen Namen verwenden und den gleichen Satz von Daten laden. Der Namespace wird nicht für andere Apps oder Benutzer freigegeben.
@@ -50,6 +49,6 @@ Speicher wird verschlüsselt und befindet sich an einem privaten Speicherort auf
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **If(Connection.Connected; ClearCollect(LocalTweets; Twitter.SearchTweet("PowerApps"; {maxResults: 100}));LoadData(LocalTweets; "Tweets"; true))** |Wenn das Gerät verbunden ist, laden Sie die LocalTweets-Sammlung vom Twitter-Dienst; laden Sie andernfalls die Sammlung aus dem lokalen Dateicache. |Der Inhalt wird wiedergegeben, gleich, ob das Gerät online oder offline ist. |
-| **SaveData(LocalTweets; "Tweets")** |Speichern Sie die LocalTweets-Sammlung als lokalen Dateicache auf dem Gerät. |Die Daten werden lokal gespeichert, sodass **LoadData** sie in eine Sammlung laden kann. |
+| **If(Connection.Connected, ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults: 100})),LoadData(LocalTweets, "Tweets", true))** |Wenn das Gerät verbunden ist, laden Sie die LocalTweets-Sammlung vom Twitter-Dienst; laden Sie andernfalls die Sammlung aus dem lokalen Dateicache. |Der Inhalt wird wiedergegeben, gleich, ob das Gerät online oder offline ist. |
+| **SaveData(LocalTweets, "Tweets")** |Speichern Sie die LocalTweets-Sammlung als lokalen Dateicache auf dem Gerät. |Die Daten werden lokal gespeichert, sodass **LoadData** sie in eine Sammlung laden kann. |
 

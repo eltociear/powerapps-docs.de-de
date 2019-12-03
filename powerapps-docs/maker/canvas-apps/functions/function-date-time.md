@@ -1,6 +1,6 @@
 ---
 title: Funktionen „Date“ und „Time“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktionen „Date“ und „Time“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Datums-und Uhrzeit Funktionen in Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: efd6e2cdea45f511a545ccfe2f38309bdf622110
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 01fdccf295dbf21e61790d537f74af562dce69f0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985215"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731212"
 ---
-# <a name="date-and-time-functions-in-powerapps"></a>Date- und Time-Funktionen in PowerApps
+# <a name="date-and-time-functions-in-power-apps"></a>Datums-und Uhrzeit Funktionen in Power apps
 Konvertiert Datums- und Zeitkomponenten in einen Datums- oder Uhrzeitwert
 
 ## <a name="description"></a>Beschreibung
@@ -38,26 +37,26 @@ Weitere Informationen dazu, wie Sie eine Zeichenkette in einen Wert konvertieren
 Weitere Informationen finden Sie unter [Working with dates and times (Arbeiten mit Datums- und Uhrzeitangaben)](../show-text-dates-times.md).
 
 ## <a name="syntax"></a>Syntax
-**Date**( *Year*; *Month*; *Day* )
+**Date**( *Year*, *Month*, *Day* )
 
 * *Year*: erforderlich.  Zahlen größer als 1899 werden als absolute Zahlen interpretiert (1980 wird als 1980 interpretiert), Zahlen zwischen 0 und 1899 werden als relativ zu 1900 interpretiert. (So wird beispielsweise 80 als 1980 interpretiert.)
 * *Month*: erforderlich.  Eine Zahl zwischen 1 und 12.
 * *Day*: erforderlich. Eine Zahl zwischen 1 und 31.
 
-**Time**( *Hour*; *Minute*; *Second* )
+**Time**( *Hour*, *Minute*, *Second* )
 
 * *Hour*: erforderlich.  Eine Zahl zwischen 0 (12:00 Uhr) und 23 (23:00 Uhr).
 * *Minute*: erforderlich. Eine Zahl zwischen 0 und 59.
 * *Second*: erforderlich. Eine Zahl zwischen 0 und 59.
 
 ## <a name="examples"></a>Beispiele
-### <a name="date"></a>Date
+### <a name="date"></a>Datum
 Wenn ein Benutzer **1979** in ein Texteingabe-Steuerelement mit dem Namen **HireYear** eingibt, die Zahl **3** in ein Texteingabe-Steuerelement mit dem Namen **HireMonth** und die Zahl **17** in ein Texteingabe-Steuerelement mit dem Namen **HireDay**, würde diese Funktion als das Datum **3/17/1979** zurückgeben:
 
-**Date(Value(HireYear.Text); Value(HireMonth.Text); Value(HireDay.Text))**
+**Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**
 
 ### <a name="time"></a>Uhrzeit
 Wenn ein Benutzer **14** in ein Texteingabe-Steuerelement mit dem Namen **BirthHour**, **50** in ein Texteingabe-Steuerelement mit dem Namen **BirthMinute** und **24** in ein Texteingabe-Steuerelement mit dem Namen **BirthSecond** eingibt, gibt diese Funktion **02:50:24 p** zurück.
 
-**Text(Time(Value(BirthHour.Text); Value(BirthMinute.Text); Value(BirthSecond.Text)); "hh:mm:ss a/p")**
+**Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss a/p")**
 

@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 50b783bce993d40ae88c438c115b2b859a08b7f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679843"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723273"
 ---
-# <a name="connect-to-twitter-from-powerapps"></a>Herstellen einer Verbindung mit Twitter aus PowerApps
+# <a name="connect-to-twitter-from-power-apps"></a>Herstellen einer Verbindung mit Twitter aus Power apps
 ![Twitter](./media/connection-twitter/twittericon.png)
 
 Über Twitter können Sie Tweets senden und Tweets, Timeline, Freunde und Follower aus Ihrem Twitter-Konto abrufen.
@@ -66,7 +65,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.UserTimeline(Tweep.Text; {maxResults:5}).TweetText`
+       `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
 
        Im Katalog-Steuerelement werden automatisch die Tweets des eingegebenen Twitter-Benutzernamens angezeigt.
 
@@ -95,7 +94,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.Followers(Tweep.Text; {maxResults:5})`
+       `Twitter.Followers(Tweep.Text, {maxResults:5})`
 
        Im Katalog-Steuerelement wird automatisch angezeigt, wer dem eingegebenen Twitter-Benutzernamen folgt.
 
@@ -124,7 +123,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.Following(Tweep.Text; {maxResults:5})`
+       `Twitter.Following(Tweep.Text, {maxResults:5})`
 
        Im Katalog-Steuerelement werden automatisch die anderen Benutzernamen angezeigt, denen Sie folgen.
 
@@ -161,8 +160,8 @@ Sie können ein auch Texteingabe-Steuerelement verwenden, um einen Twitter-Benut
     > [!TIP]
    > Mit „maxResults“ werden die ersten fünf Ergebnisse angezeigt:  
 
-    `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5}).TweetText`
-2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5})` fest.
+    `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
+2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})` fest.
 
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
 3. Wählen Sie **TweetText** in der ersten Liste, **TweetedBy** in der zweiten Liste und **CreatedAt** in der dritten Liste aus.

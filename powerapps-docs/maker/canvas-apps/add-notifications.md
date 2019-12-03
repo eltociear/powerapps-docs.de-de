@@ -1,6 +1,6 @@
 ---
 title: Senden einer Pushbenachrichtigung | Microsoft-Dokumentation
-description: Hier erfahren Sie, wie Sie native Pushbenachrichtigungen an eine App in PowerApps senden.
+description: Erfahren Sie, wie Sie Native Pushbenachrichtigungen an eine app in powerapps senden.
 author: kavishi
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d3f526b8795c8771d3f0e43c2951d207f7f1bfb0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: HT
+ms.openlocfilehash: b336b6d73cbd3db8aac435035d44859080208534
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678900"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724614"
 ---
-# <a name="send-a-push-notification-in-powerapps"></a>Senden einer Pushbenachrichtigung in PowerApps
+# <a name="send-a-push-notification-in-power-apps"></a>Senden einer Pushbenachrichtigung in powerapps
 Pushbenachrichtigungen werden bei mobilen Apps für Kunden- und Business-Szenarien in erster Linie verwendet, um mit den App-Benutzern zu kommunizieren und ihnen zu helfen, wichtige Aufgaben zu priorisieren. In powerapps können Sie mithilfe des Benachrichtigungs-Connector für Power apps Benachrichtigungen senden. Sie können native Pushbenachrichtigungen an jede APP senden, die Sie in powerapps erstellen. In Zukunft sollen weitere Benachrichtigungstypen hinzukommen.
 
 ![Beispiel für eine Pushbenachrichtigung](./media/add-notifications/pic1-notification-screenshot.png)
@@ -61,7 +60,7 @@ Fügen Sie in einer APP, für die Sie über die Berechtigung **Mitwirkender** ve
 ## <a name="send-a-notification-from-an-app"></a>Senden einer Benachrichtigung aus einer App
 Sie können eine Pushbenachrichtigung aus einer App an eine andere App oder an die gleiche App senden.
 
-1. Öffnen Sie die App, an die Pushbenachrichtigungen gesendet werden sollen, in [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Wechseln Sie in [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)zu der APP, an die Sie Pushbenachrichtigungen senden möchten.
 2. Kopieren Sie auf der Registerkarte **Details** die **App-ID** dieser App.
 
     ![App-ID abrufen](./media/add-notifications/grab-id.png)
@@ -87,7 +86,7 @@ Die Pushbenachrichtigung kann bestimmte Parameter an die App übergeben. Verwend
 Sie können festlegen, dass beim Öffnen der App z.B. die Seite **Case details** (Falldetails) geöffnet wird:
 
 1. Fügen Sie ein **Timer**-Steuerelement hinzu, und legen Sie seine **OnTimerEnd**-Eigenschaft auf diese Formel fest:
-   <br>**Navigate(EditCase; ScreenTransition.None)**
+   <br>**Navigate(EditCase, ScreenTransition.None)**
 2. (Optional) Blenden Sie das **Timer**-Steuerelement aus, indem Sie die **Visible**-Eigenschaft auf **false** festlegen.
 3. Legen Sie die **OnVisible**-Eigenschaft des Bildschirms auf **Timer.Start()** fest.
 
@@ -115,10 +114,10 @@ Sie können festlegen, dass beim Öffnen der App z.B. die Seite **Case details**
 ### <a name="sample-formulas"></a>Beispielformeln
 Senden einer einfachen Benachrichtigung
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b"; "72f988bf-86f1-41af-91ab-2d7cd011db47"];
+        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b", "72f988bf-86f1-41af-91ab-2d7cd011db47"],
         message: "A new case was assigned to you."
     }
 )
@@ -126,12 +125,12 @@ PowerAppsNotification.SendPushNotification(
 
 Senden einer Benachrichtigung, die eine App öffnet und bestimmte Parameter übergibt
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["email1@contoso.com"; "email2@contoso.com"];
-        message: "message in the notif toast";
-        params: Table({key:"notificationKey"; value:"The value for notificationKey"});
+        recipients: ["email1@contoso.com", "email2@contoso.com"],
+        message: "message in the notif toast",
+        params: Table({key:"notificationKey", value:"The value for notificationKey"}),
         openApp: true
     }
 )

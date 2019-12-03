@@ -1,6 +1,6 @@
 ---
 title: Bearbeiten einer Canvas-App | Microsoft-Dokumentation
-description: Hier finden Sie Schrittanleitungen zum Bearbeiten von Canvas-Apps und Szenarien mit gesperrten Sitzungen in PowerApps.
+description: Hier finden Sie Schritt-für-Schritt-Anleitungen zum Bearbeiten von Canvas-apps und Sitzungs Sperr Szenarien in powerapps.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29cf712e6938d34136c3d47b2f73fbcbd3d53a00
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e68d34d6a8f6b6a115bdd272235e9c5c0f155a2c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679544"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731563"
 ---
-# <a name="edit-a-canvas-app-in-powerapps"></a>Bearbeiten einer Canvas-App in PowerApps
+# <a name="edit-a-canvas-app-in-power-apps"></a>Bearbeiten einer Canvas-app in powerapps
 Sie können alle Canvas-Apps bearbeiten, die Sie erstellt haben, deren Besitzer Sie sind oder für die Sie die Berechtigung **Kann bearbeiten** haben. Sie können eine app in powerapps Studio bearbeiten. Wenn Sie versuchen, eine App zu bearbeiten, die an anderer Stelle zur Bearbeitung geöffnet ist, gibt eine Meldung Aufschluss darüber, ob Sie oder ein anderer Benutzer sie bereits geöffnet hat.
 
 ## <a name="verify-your-permissions"></a>Überprüfen Ihrer Berechtigungen
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und klicken oder tippen Sie im Menü **Datei** auf der linken Seite auf **Apps**.
+1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, und klicken oder tippen Sie im Menü **Datei** (auf der linken Seite) auf **apps** .
    
     ![Option „Apps“ im Menü „Datei“](./media/edit-app/file-apps.png)
 

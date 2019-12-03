@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1970c373b7614644897620e2c6d60f4472add568
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: d7c1361593595c89bb67781f78a8f67e23f97cac
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650823"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723137"
 ---
-# <a name="add-picture-control-in-powerapps"></a>Steuerelement „Bild hinzufügen“ in PowerApps
+# <a name="add-picture-control-in-power-apps"></a>Hinzufügen eines Bild Steuer Elements in Power apps
 Nimmt ein Foto auf oder lädt Bilder vom lokalen Gerät.
 
 ## <a name="description"></a>Beschreibung
@@ -115,7 +114,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="examples"></a>Beispiele
 ### <a name="add-images-to-an-image-gallery-control"></a>Hinzufügen von Bildern zu einem Bildkatalog-Steuerelement
@@ -124,7 +123,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Klicken oder tippen Sie im Dialogfeld **Öffnen** auf eine Bilddatei, und klicken oder tippen Sie dann auf **Öffnen**.
 3. Fügen Sie ein **[Schaltfläche](control-button.md)** -Steuerelement hinzu, verschieben Sie es unter das Steuerelement **Bild hinzufügen**, und legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft für das **[Schaltfläche](control-button.md)** -Steuerelement auf die folgende Formel fest:<br>
-   **Collect(MyPix; AddMediaButton1.Media)**
+   **Collect(MyPix, AddMediaButton1.Media)**
    
     Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder zu [anderen Funktionen](../formula-reference.md)?
 4. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu, und legen Sie dessen **[Items](properties-core.md)** -Eigenschaft auf **MyPix** fest.

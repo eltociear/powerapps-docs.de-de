@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a7def7990723e9531c4c7a3075c3c2259a45a37
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: d34e5d128f6a38c430432f8acfcc40edaa80c034
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650587"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727252"
 ---
-# <a name="date-picker-control-in-powerapps"></a>Datumsauswahl-Steuerelement in PowerApps
+# <a name="date-picker-control-in-power-apps"></a>Steuerelement für die Datumsauswahl in Power apps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen ein Datum angeben können.
 
 ## <a name="description"></a>Beschreibung
@@ -112,7 +111,7 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein **[Label](control-text-box.md)** -Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](properties-core.md)** -Eigenschaft auf diese Formel fest:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     Benötigen Sie weitere Informationen zur **[DateDiff](../functions/function-dateadd-datediff.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 3. Drücken Sie F5, legen Sie für **Deadline** ein Datum fest, und klicken oder tippen Sie dann auf **OK**.

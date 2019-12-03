@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed104f5ae4e7244e5a49b6cbc67745fd2f9e24dc
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a49cfef13cb7c52c972ab67287cd4e886d981cb0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678601"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727237"
 ---
-# <a name="html-text-control-in-powerapps"></a>HTML-Textsteuerelement in PowerApps
+# <a name="html-text-control-in-power-apps"></a>HTML-Text-Steuerelement in powerapps
 Ein Feld, in dem Text angezeigt wird und in dem HTML-Tags in Textformatierungen konvertiert werden.
 
 ## <a name="description"></a>Beschreibung
@@ -76,7 +75,7 @@ In einem Steuerelement für **HTML-Text** werden nicht nur Klartext und Zahlen a
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Find**( *FindString*; *WithinString* )](../functions/function-find.md)
+[**Find**( *FindString*, *WithinString* )](../functions/function-find.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **[Label](control-text-box.md)** -Steuerelement (Bezeichnung) hinzu, geben Sie ihm den Namen **Quelle**, und geben Sie als Wert für die **[Text](properties-core.md)** -Eigenschaft diese Zeichenfolge ein:

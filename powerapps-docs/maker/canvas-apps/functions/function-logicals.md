@@ -1,6 +1,6 @@
 ---
 title: Funktionen „And“, „Or“ und „Not“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „And“, „Or“ und „Not“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "and", "or" und "Not" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a2b04e6a752ade561ec1b95658bcacda759b1a1c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1dae72a288c93b624d232402e32fe0e82cbaaead
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992555"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730613"
 ---
-# <a name="and-or-and-not-functions-in-powerapps"></a>Die Funktionen „And“, „Or“ und „Not“ in PowerApps
+# <a name="and-or-and-not-functions-in-power-apps"></a>Funktionen "and", "or" und "Not" in powerapps
 
 Boolesche Logikfunktionen, die oft dazu verwendet werden, die Ergebnisse von Vergleichen und Tests zu bearbeiten
 
@@ -45,8 +44,8 @@ Diese Funktionen arbeiten mit logischen Werten. Sie können Ihnen nicht direkt e
 
 ## <a name="syntax"></a>Syntax
 
-**And**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
-**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
+**And**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
+**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
 **Not**( *LogicalFormula* )
 
 - *LogicalFormula(s)* : erforderlich.  Logische Formeln, die bewertet und verarbeitet werden sollen
@@ -63,8 +62,8 @@ In den Beispielen in diesem Abschnitt werden diese globalen Variablen verwendet:
 
 Wenn Sie diese globalen Variablen in einer APP erstellen möchten, fügen Sie ein [**Button**](../controls/control-button.md) -Steuerelement ein, und legen **Sie dessen onselect** -Eigenschaft auf diese Formel fest:
 
-```powerapps-comma
-Set( a; false );; Set( b; true );; Set( x; 10 );; Set( y; 100 );; Set( s; "Hello World" )
+```powerapps-dot
+Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
 ```
 
 Wählen Sie die Schaltfläche aus (indem Sie darauf klicken, während Sie die Alt-Taste gedrückt halten), und legen Sie dann die **Text** -Eigenschaft eines [**Label**](../controls/control-text-box.md) -Steuer Elements auf eine Formel in der ersten Spalte der nächsten Tabelle fest.

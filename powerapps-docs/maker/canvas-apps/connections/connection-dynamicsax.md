@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6027589bc1cb5ae5a7e23ce2969e303d62151b96
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c0d6a2c30ed601808ad31f0be5325fc1b3858bb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679866"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723784"
 ---
 # <a name="connect-from-microsoft-power-apps-to-dynamics-ax"></a>Herstellen einer Verbindung von Microsoft powerapps mit Dynamics AX
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)
@@ -33,7 +33,7 @@ Weitere Informationen zum Erstellen einer App finden Sie unter [Eine App automat
 
 Informationen zum Hinzufügen von Daten aus Dynamics AX zu einer vorhandenen App finden Sie unter [Eine Datenverbindung hinzufügen](../add-data-connection.md).
 
-Sehen Sie die [Liste der verfügbaren Verbindungen](../connections-list.md) ein, und erfahren Sie, wie Sie in PowerApps [Verbindungen verwalten](../add-manage-connections.md).
+Sehen Sie sich die [Liste der verfügbaren Verbindungen](../connections-list.md)an, und erfahren Sie, wie Sie Verbindungen in powerapps [Verwalten](../add-manage-connections.md) .
 
 ### <a name="next-steps"></a>Nächste Schritte
 * Erfahren Sie, wie Sie [Daten aus einer Datenquelle anzeigen](../add-gallery.md).

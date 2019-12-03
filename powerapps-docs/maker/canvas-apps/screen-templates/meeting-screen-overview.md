@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5b8df0acad3f5ad90eb114bd5fdd5d3377b3f6fb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ac6b75d60f41cd68ee1723c913766ea701bc6ca8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675040"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732526"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>Übersicht über die Besprechungs Bildschirm Vorlage für Canvas-apps
 
@@ -33,7 +32,7 @@ Einen tieferen Einblick in die Standardfunktionalität dieses Bildschirms finden
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen [beim Erstellen einer APP in powerapps](../data-platform-create-app-scratch.md).
+Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen vertraut, wenn Sie [in Power apps eine APP erstellen](../data-platform-create-app-scratch.md).
 
 ## <a name="default-functionality"></a>Standardfunktionalität
 
@@ -59,10 +58,10 @@ Einige hilfreiche Hinweise:
 * Zum Erstellen einer Besprechung müssen Sie mindestens eine Person als Teilnehmer hinzufügen, einen Betreff angeben und eine Besprechungszeit auf der Registerkarte **Zeitplan** auswählen.
 * Nachdem Sie die Besprechungs Anfrage gesendet haben, werden alle Informationen zu dieser Besprechung gelöscht.
 * Die **onselect** -Anweisung des Sende Symbols (obere rechte Ecke) enthält folgende Formel:
-    ```powerapps-comma
-    Set( _myCalendarName; 
-        LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name 
-    );;
+    ```powerapps-dot
+    Set( _myCalendarName, 
+        LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
+    );
     ```
 * "Calendar" ist der Standard Anzeige Name für die meisten Kalender des Office-Benutzers, Ihre Organisation kann jedoch abweichen. Wenn dies der Fall ist, können Sie "Calendar" in den entsprechenden Begriff für Ihre Organisation ändern.
 * Sie erhalten eine Fehlermeldung, wenn Sie versuchen, eine Besprechung in der Vergangenheit zu planen oder einer Besprechung mehr als 20 Personen hinzuzufügen.

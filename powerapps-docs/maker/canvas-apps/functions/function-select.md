@@ -1,6 +1,6 @@
 ---
 title: Funktion „Select“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Select“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax, für die SELECT-Funktion in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed31bd165eb2289819800b6f2e01121c2681ae9e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bba742d85a11f05cb5f503146e7e940222edf169
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984082"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730258"
 ---
-# <a name="select-function-in-powerapps"></a>Funktion „Select“ in PowerApps
+# <a name="select-function-in-power-apps"></a>SELECT-Funktion in powerapps
 Simuliert eine Auswahlaktion für ein Steuerelement, sodass die Formel **OnSelect** ausgewertet wird.
 
 ## <a name="description"></a>Beschreibung
@@ -84,7 +83,7 @@ Verwenden Sie **Select** nur in [Verhaltensformeln](../working-with-formulas-in-
 
 5. Legen Sie die Eigenschaft **OnSelect** des Bildsteuerelements auf die folgende Formel fest:
 
-    **Notify( "Image Selected"; Success )**
+    **Notify( "Image Selected", Success )**
 
 6. Während Sie die ALT-TASTE gedrückt halten, klicken oder tippen Sie auf die verschiedenen Elemente des Katalogs.
 

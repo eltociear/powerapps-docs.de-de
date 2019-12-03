@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a3996603e9d5de0f3844be0a3d6b4fb8e1c62d7b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b04c1d9ecc4c2955b68f1ffeae1a5a56e74ab710
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674939"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733092"
 ---
-# <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
+# <a name="share-a-canvas-app-in-power-apps"></a>Freigeben einer Canvas-app in Power apps
 
 Nachdem Sie eine Canvas-App erstellt haben, die eine geschäftliche Anforderung behandelt, geben Sie an, welche Benutzer in Ihrer Organisation die App ausführen dürfen und welche sie ändern oder sogar erneut freigeben dürfen. Geben Sie jeden Benutzer anhand seines Namens an, oder geben Sie eine Sicherheitsgruppe in Azure Active Directory an. Wenn jeder von Ihrer App profitieren würde, geben Sie an, dass Ihre gesamte Organisation diese ausführen darf.
 

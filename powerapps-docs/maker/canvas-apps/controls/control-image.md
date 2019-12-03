@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02c9e680582b6d51a613fd8089709401f1e80b32
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679751"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727170"
 ---
-# <a name="image-control-in-powerapps"></a>Image-Steuerelement in PowerApps
+# <a name="image-control-in-power-apps"></a>Image-Steuerelement in Power apps
 Ein Steuerelement, das ein Image aus einer lokalen Datei oder einer Datenquelle anzeigt
 
 ## <a name="description"></a>Beschreibung
@@ -112,7 +111,7 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Remove**( *DataSource*; ThisItem)](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*, ThisItem)](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Beispiele
 ### <a name="show-an-image-from-a-local-file"></a>Anzeigen eines Images aus einer lokalen Datei

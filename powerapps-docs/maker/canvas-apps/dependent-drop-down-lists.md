@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 233fd99eeba86151f616a22955cf28c2114de43e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 500154ecde380a1cf339f934728807216d29c804
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679613"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731627"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Erstellen von abhängigen Dropdown Listen in einer Canvas-App
 
@@ -50,7 +49,7 @@ In der Liste der Speicher **Orte** werden die Abteilungen an jedem Standort ange
 | "Pembroke"       | Produktion          |
 | "Pembroke"       | Miger           |
 
-In **einer Vorfall** Liste werden Kontaktinformationen und Informationen zu den einzelnen Vorfällen angezeigt. Erstellen Sie die Datums Spalte als **Datums** Spalte, erstellen Sie aber die anderen Spalten als **einzelne Zeile mit Text** Spalten, um die Konfiguration zu vereinfachen und [Delegierungs](./delegation-overview.md) Warnungen in Microsoft PowerApps zu vermeiden.
+In **einer Vorfall** Liste werden Kontaktinformationen und Informationen zu den einzelnen Vorfällen angezeigt. Erstellen Sie die Datums Spalte als **Datums** Spalte, erstellen Sie aber die anderen Spalten als **einzelne Textzeile** , um die Konfiguration zu vereinfachen und [Delegierungs](./delegation-overview.md) Warnungen in Microsoft powerapps zu vermeiden.
 
 | Vorname | Nachname | Telefonnummer     | Ort | Department | Beschreibung       | Datum      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
@@ -139,7 +138,7 @@ Wenn Sie die Steuerelemente umbenennen, können Sie Sie leichter identifizieren,
 
 1. Legen Sie die **Items** -Eigenschaft von **ddlocation** auf diese Formel fest:
 
-    `Distinct(Locations; Location)`
+    `Distinct(Locations, Location)`
 
 1. optionale Wenn Sie die Alt-Taste gedrückt halten, öffnen Sie **ddlocation**, und vergewissern Sie sich, dass die drei Standorte in der Liste angezeigt werden.
 
@@ -159,7 +158,7 @@ Wenn Sie die Steuerelemente umbenennen, können Sie Sie leichter identifizieren,
 
     Die **Items** -Eigenschaft von **dddepartment** ist auf diese Formel festgelegt:
 
-    `Filter(Locations; Location = ddLocation.Selected.Result)`
+    `Filter(Locations, Location = ddLocation.Selected.Result)`
 
     Diese Formel filtert die Elemente in **dddepartment** basierend darauf, was der Benutzer in **ddlocation**auswählt. Durch eine solche Konfiguration wird sichergestellt, dass die "untergeordnete" Liste der Abteilungen die Daten für den "übergeordneten" Speicherort widerspiegelt, wie die Speicher **Orte** Liste in SharePoint angibt.
 

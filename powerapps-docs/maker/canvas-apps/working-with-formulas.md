@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42f5f188f107e8a5768ed9a74f463d1fc9bbc286
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e2200dece82eea17557de28a64e2bc4d228f4394
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673210"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732897"
 ---
-# <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Erste Schritte mit Canvas-App-Formeln in PowerApps
+# <a name="get-started-with-canvas-app-formulas-in-power-apps"></a>Einstieg in Canvas-App-Formeln in Power apps
 
 Konfigurieren Sie Ihre Canvas-App mit Formeln, die nicht nur Werte berechnen und andere Aufgaben ausführen (wie in Excel), sondern auch auf Benutzereingaben reagieren (wie eine App es erfordert).
 
@@ -37,7 +36,7 @@ Dieses Thema bietet nur eine Übersicht über das Arbeiten mit Formeln. Weitere 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 * [Registrieren](../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit den Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
-* Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
+* Erfahren Sie, wie Sie [ein Steuer](add-configure-controls.md) Element in powerapps konfigurieren.
 
 ## <a name="show-a-simple-value"></a>Anzeigen eines einfachen Werts
 
@@ -71,11 +70,11 @@ In Excel können Sie eine bestimmte Dateneinheit eingeben, z.B. die Zahl **42** 
 
     Die Bezeichnung gibt den neuen Wert wieder, während Sie ihn eingeben.  Möglicherweise wird auf dem Screen gelbe Ausrufezeichen angezeigt, während Sie etwas eingeben. Diese Symbole weisen auf Fehler hin, verschwinden allerdings, sobald Sie einen gültigen Wert eingegeben haben. Eine Zeichenfolge, die nicht in doppelten Anführungszeichen eingeschlossen ist, ist z.B. kein gültiger Wert.
 
-    In Excel können Sie eine Zahl wie **42** anzeigen, indem Sie sie in eine Zelle eingeben oder indem Sie eine Formel verwenden, die zu dieser Zahl auflöst, wie z.B. **=SUM(30; 12)** . In powerapps können Sie denselben Effekt erzielen, indem Sie die **Text** -Eigenschaft eines Steuer Elements, z. b. eine Bezeichnung, auf **42** oder **Sum (30, 12)** festlegen. Die Zelle und die Bezeichnung zeigen daraufhin immer diese Zahl an, unabhängig von jeglichen Änderungen am Arbeitsblatt oder an der App.
+    In Excel können Sie eine Zahl wie **42** anzeigen, indem Sie sie in eine Zelle eingeben oder indem Sie eine Formel verwenden, die zu dieser Zahl auflöst, wie z.B. **=SUM(30, 12)** . In powerapps können Sie denselben Effekt erzielen, indem Sie die **Text** -Eigenschaft eines Steuer Elements, z. b. eine Bezeichnung, auf **42** oder **Sum (30, 12)** festlegen. Die Zelle und die Bezeichnung zeigen daraufhin immer diese Zahl an, unabhängig von jeglichen Änderungen am Arbeitsblatt oder an der App.
 
     > [!NOTE]
    > In powerapps steht Ihnen keine Formel mit einem Gleichheitszeichen oder einem Pluszeichen wie in Excel voran. Die Bearbeitungsleiste behandelt standardmäßig jede Eingabe wie eine Formel. Formeln werden ebenso wenig in doppelte Anführungszeichen (") gesetzt, die Sie zuvor zum Angeben einer Textzeichenfolge verwendet haben.
-5. Ersetzen Sie in der **[Text](controls/properties-core.md)** -Eigenschaft der Bezeichnung die Zeichenfolge **"Hello World"** durch **Sum(1; 2; 3)** .
+5. Ersetzen Sie in der **[Text](controls/properties-core.md)** -Eigenschaft der Bezeichnung die Zeichenfolge **"Hello World"** durch **Sum(1, 2, 3)** .
 
     ![Die Eingabe der partiellen Funktion „Sum(1, 2, 3“ ohne eine schließende Klammer gibt Fehler zurück.](./media/working-with-formulas/label-sum-partial.png)
 
@@ -101,7 +100,7 @@ Unabhängig davon, welche Zahlen Sie in die Texteingabe-Steuerelemente eingeben,
 
 In Excel können Formeln für bedingte Formatierung verwendet werden, um beispielsweise negative Werte in rot anzuzeigen. In powerapps können Sie Formeln verwenden, um nicht nur den primär Wert eines Steuer Elements zu bestimmen, sondern auch Eigenschaften wie z. b. die Formatierung. Im nächsten Beispiel zeigt eine Formel für die **[Color](controls/properties-color-border.md)** -Eigenschaft der Bezeichnung automatisch negative Werte Rot an. Die **[If](functions/function-if.md)** -Funktion ist Ihnen wahrscheinlich aus Excel vertraut:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animation der bedingten Formatierung](media/working-with-variables/recalc-color.gif)
 
@@ -120,7 +119,7 @@ Sie können Ihre App mit Formeln konfigurieren, damit Benutzer die Darstellung o
     Sie können die Eigenschaft **Max** angeben, indem Sie sie in der Registerkarte **Content** oder in der Eigenschaftenliste auswählen:
 
     ![Ändern des maximalen Werts für jeden einzelnen Schieberegler](./media/working-with-formulas/three-sliders-max.png)
-4. Wählen Sie den Screen aus, indem Sie neben die Steuerelemente klicken, und legen Sie Eigenschaft **[Fill](controls/properties-color-border.md)** (Füllen) des Screens auf folgende Formel fest:<br>**RGBA( Slider1.Value; Slider2.Value; Slider3.Value; 1 )**
+4. Wählen Sie den Screen aus, indem Sie neben die Steuerelemente klicken, und legen Sie Eigenschaft **[Fill](controls/properties-color-border.md)** (Füllen) des Screens auf folgende Formel fest:<br>**RGBA( Slider1.Value, Slider2.Value, Slider3.Value, 1 )**
 
     Wie bereits beschrieben können Sie mithilfe von **.** auf die Eigenschaften von Steuerelementen zugreifen Operator  **Slider1.Value** bezieht sich auf die **[Value](controls/properties-core.md)** -Eigenschaft (Wert) des Schiebereglers, die angibt, wo der Benutzer den Schieberegler hinsichtlich den **Min**- und **Max**-Werten platziert hat. Jedes Steuerelement wird beim Eingeben sowohl auf dem Screen als auch in der Bearbeitungsleiste farblich hervorgehoben:
 
@@ -155,6 +154,6 @@ Diese Ansicht zeigt zu Beginn die wichtigsten Eigenschaften.  Klicken Sie auf de
 
 ## <a name="formula-syntax"></a>Formelsyntax
 
-Wenn Sie in der Bearbeitungsleiste eine Formel eingeben, werden unterschiedliche Syntaxelemente in unterschiedlichen Farben angezeigt, um die Lesbarkeit zu verbessern und das Verständnis langer Formeln zu erleichtern. Dies ist die Farbencodeliste in PowerApps.
+Wenn Sie in der Bearbeitungsleiste eine Formel eingeben, werden unterschiedliche Syntaxelemente in unterschiedlichen Farben angezeigt, um die Lesbarkeit zu verbessern und das Verständnis langer Formeln zu erleichtern. Hier ist die Farb Code Liste in Power apps.
 
 ![Syntaxhervorhebung](./media/working-with-formulas/syntax-highlighting.png)

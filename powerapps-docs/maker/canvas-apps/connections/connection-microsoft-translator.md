@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 387089ea2ee40e8a0d418ab110d7544c17d7c423
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 772f74b13d254746b75253012940efd8bda6e9d3
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679889"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723812"
 ---
-# <a name="connect-to-microsoft-translator-from-powerapps"></a>Herstellen einer Verbindung mit Microsoft Translator aus PowerApps
+# <a name="connect-to-microsoft-translator-from-power-apps"></a>Herstellen einer Verbindung mit Microsoft Translator über Power apps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
 
 Fügen Sie den Connector für Microsoft Translator hinzu, um übersetzten Text in einem **Label**-Steuerelement (Bezeichnung) in Ihrer App anzuzeigen. Beispielsweise können Sie ein Eingabetextfeld erstellen, mit dem der Benutzer aufgefordert wird, Text zum Übersetzen einzugeben. In einer anderen Bezeichnung können Sie den übersetzten Text anzeigen.
@@ -58,7 +57,7 @@ In diesem Thema wird gezeigt, wie Sie die Microsoft Translator-Verbindung erstel
     `MicrosoftTranslator.Languages()`
 4. Fügen Sie eine Bezeichnung hinzu, verschieben Sie es unter **TargetLang**, und legen Sie seine **[Text](../controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:  
 
-    `MicrosoftTranslator.Translate(Source.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. Geben Sie Text in **Source** ein, und wählen Sie unter **TargetLang** eine Sprache aus. In der Bezeichnung wird der eingegebene Text in der ausgewählten Sprache angezeigt:  
 
     ![Übersetzen von Text aus dem Englischen ins Spanische](./media/connection-microsoft-translator/translate-text.png)
@@ -72,7 +71,7 @@ Wenn Sie dies nicht bereits getan haben, führen Sie die Schritte im vorherigen 
 2. Benennen Sie die zweite Bezeichnung (nicht das Feld **Source**) in **Target** um.
 3. Fügen Sie ein **Audio**-Steuerelement hinzu (Menü **Einfügen** > **Medien**), und legen Sie seine **Media**-Eigenschaft auf die folgende Formel fest:  
 
-    `MicrosoftTranslator.TextToSpeech(Target.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-microsoft-translator/preview.png)). Geben Sie Text in **Source** ein, wählen Sie eine Sprache in **TargetLang** aus, und wählen Sie dann die Wiedergabeschaltfläche im Audio-Steuerelement aus.
 
     Die App spielt eine Audioversion des eingegebenen Texts in der ausgewählten Sprache ab.

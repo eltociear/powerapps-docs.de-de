@@ -1,6 +1,6 @@
 ---
 title: Funktion „HashTags“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „HashTags“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktion "hashtags" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d29fa336ae96a164a6f189010c66deff970ba5a7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a88371e9c151ed097d2c86bcb64121c68a6d62d0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984896"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730789"
 ---
-# <a name="hashtags-function-in-powerapps"></a>Funktion „HashTags“ in PowerApps
+# <a name="hashtags-function-in-power-apps"></a>Funktion "hashtags" in powerapps
 Extrahiert die Hashtags (#strings) aus einer Textzeichenfolge.
 
 ## <a name="description"></a>Beschreibung
@@ -43,7 +42,7 @@ Die **HashTags**-Funktion durchsucht eine Zeichenfolge nach Hashtags. Hashtags b
 ### <a name="step-by-step"></a>Schritt für Schritt
 1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)** -Steuerelement hinzu, benennen Sie dieses **Tweet**, und geben Sie folgenden Satz ein:
    
-    **Diese #App ist #TOLL und kann #123zählen oder #123ABC; aber Sie kann nicht #1-23 oder #$\*(#\@“)**
+    **Diese #App ist #TOLL und kann #123zählen oder #123ABC, aber Sie kann nicht #1-23 oder #$\*(#\@“)**
 2. Fügen Sie einen vertikalen benutzerdefinierten Katalog hinzu, und legen seine **[Items](../controls/properties-core.md)** -Eigenschaft auf folgende Funktion fest:
    
     **HashTags(Tweet.Text)**

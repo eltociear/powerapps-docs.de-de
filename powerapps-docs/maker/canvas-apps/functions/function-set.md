@@ -1,6 +1,6 @@
 ---
 title: Funktion „Set“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Set-Funktion in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Set-Funktion in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72adafedfe09a125fda2a48d5617b2cd8c79242a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c0e4cfc1a180e183f29392181cd7699b6cb9242
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678187"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730210"
 ---
-# <a name="set-function-in-powerapps"></a>Set-Funktion in PowerApps
+# <a name="set-function-in-power-apps"></a>Set-Funktion in powerapps
 Legt den Wert einer globalen Variablen fest.
 
 ## <a name="overview"></a>Übersicht
@@ -51,7 +50,7 @@ Globale Variablen können nicht denselben Namen wie eine vorhandene Sammlung ode
 **Set** weist keinen Rückgabewert auf; Sie können die Funktion nur innerhalb einer [Verhaltensformel](../working-with-formulas-in-depth.md) verwenden.
 
 ## <a name="syntax"></a>Syntax
-**Set**( *VariableName*; *Value* )
+**Set**( *VariableName*, *Value* )
 
 * *VariableName*: Erforderlich.  Der Name der zu erstellenden oder zu aktualisierenden globalen Variablen.
 * *Value*: Erforderlich.  Der der Kontextvariablen zuzuweisende Wert
@@ -60,10 +59,10 @@ Globale Variablen können nicht denselben Namen wie eine vorhandene Sammlung ode
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Set(&nbsp;Counter;&nbsp;1&nbsp;)** |Erstellt oder ändert die globale Variable **Counter** und legt deren Wert auf **1** fest. |**Counter** hat den Wert **1**. Mit dem Namen **Counter** können Sie in einer Formel in einem beliebigen Bildschirm auf diese Variable verweisen. |
-| **Set(&nbsp;Counter;&nbsp;2&nbsp;)** |Legt den Wert für die globale Variable **Counter** aus dem vorherigen Beispiel auf **2** fest. |**Counter** hat den Wert **2**. |
-| **Set(&nbsp;Counter;&nbsp;Counter + 1&nbsp;)** |Erhöht den Wert für die globale Variable **Counter** aus dem vorherigen Beispiel auf **3**. |**Counter** hat den Wert **3**. |
-| **Set(&nbsp;Name;&nbsp;"Lily" )** |Erstellt oder ändert die globale Variable **Name** und legt deren Wert auf **Lily** fest. |**Name** weist den Wert **Lily** auf. |
-| **Set(&nbsp;Person;&nbsp;{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;} )** |Erstellt oder ändert die globale Variable **Person** und legt deren Wert auf einen Datensatz fest. Der Datensatz enthält zwei Spalten mit den Namen **Name** und **Address**. Der Wert der **Name**-Spalte ist **Milton**, und der Wert der **Address**-Spalte ist **1 Main St**. |**Person** hat den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}** .<br><br>Verweisen Sie mit dem Namen **Person** auf den kompletten Datensatz, oder verweisen Sie auf eine einzelne Spalte dieses Datensatzes mit **Person.Name** oder **Person.Address**. |
-| **Set(&nbsp;Person; Patch(&nbsp;Person;&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)&nbsp;)** |Arbeitet mit der **[Patch](function-patch.md)** -Funktion zusammen, um die globale Variable **Person** durch Festlegen des Werts der Spalte **Address** auf **2 Main St** zu aktualisieren. |**Person** hat nun den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}** . |
+| **Set(&nbsp;Counter,&nbsp;1&nbsp;)** |Erstellt oder ändert die globale Variable **Counter** und legt deren Wert auf **1** fest. |**Counter** hat den Wert **1**. Mit dem Namen **Counter** können Sie in einer Formel in einem beliebigen Bildschirm auf diese Variable verweisen. |
+| **Set(&nbsp;Counter,&nbsp;2&nbsp;)** |Legt den Wert für die globale Variable **Counter** aus dem vorherigen Beispiel auf **2** fest. |**Counter** hat den Wert **2**. |
+| **Set(&nbsp;Counter,&nbsp;Counter + 1&nbsp;)** |Erhöht den Wert für die globale Variable **Counter** aus dem vorherigen Beispiel auf **3**. |**Counter** hat den Wert **3**. |
+| **Set(&nbsp;Name,&nbsp;"Lily" )** |Erstellt oder ändert die globale Variable **Name** und legt deren Wert auf **Lily** fest. |**Name** weist den Wert **Lily** auf. |
+| **Set(&nbsp;Person,&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;} )** |Erstellt oder ändert die globale Variable **Person** und legt deren Wert auf einen Datensatz fest. Der Datensatz enthält zwei Spalten mit den Namen **Name** und **Address**. Der Wert der **Name**-Spalte ist **Milton**, und der Wert der **Address**-Spalte ist **1 Main St**. |**Person** hat den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}** .<br><br>Verweisen Sie mit dem Namen **Person** auf den kompletten Datensatz, oder verweisen Sie auf eine einzelne Spalte dieses Datensatzes mit **Person.Name** oder **Person.Address**. |
+| **Set(&nbsp;Person, Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)&nbsp;)** |Arbeitet mit der **[Patch](function-patch.md)** -Funktion zusammen, um die globale Variable **Person** durch Festlegen des Werts der Spalte **Address** auf **2 Main St** zu aktualisieren. |**Person** hat nun den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}** . |
 

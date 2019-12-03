@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2da924310d07869972e8d0a9a4b26649d6a56b8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: dd5135aa04a552fc5606918a8158b40457a6eb6f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679958"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724010"
 ---
-# <a name="connect-to-cloud-storage-from-powerapps"></a>Herstellen einer Verbindung mit Cloudspeicher aus PowerApps
+# <a name="connect-to-cloud-storage-from-power-apps"></a>Herstellen einer Verbindung mit dem cloudspeicher aus Power apps
 Powerapps bietet mehrere cloudspeicherverbindungen. Bei Verwendung einer dieser Verbindungen können Sie eine Excel-Datei speichern und die darin enthaltenen Informationen in Ihrer gesamten App nutzen. Hierzu zählen folgende Verbindungen:  
 
 | **Azure Blob** | **Box** | **Dropbox** | **Google Drive** | **OneDrive** | **OneDrive<br> for Business** |

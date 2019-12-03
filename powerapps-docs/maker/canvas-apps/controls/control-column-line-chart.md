@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 355793d572f6c4b6578d6cabff221c79e0724a93
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 22bd949dc11171d90a7ed358528c91999c4acc3e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650672"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722831"
 ---
-# <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Steuerelemente für Säulendiagramme und Liniendiagramme in PowerApps
+# <a name="column-chart-and-line-chart-controls-in-power-apps"></a>Säulendiagramm und Liniendiagramm-Steuerelemente in Power apps
 Steuerelemente, die Daten in Form eines Diagramms mit X- und Y-Achse darstellen.
 
 ## <a name="description"></a>Beschreibung
@@ -114,11 +113,11 @@ Steuerelemente, die Daten in Form eines Diagramms mit X- und Y-Achse darstellen.
 **YLabelAngle** – Der Winkel der Beschriftungen neben der y-Achse eines Linien- oder Säulendiagramms.
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Max**( *DataSource*; *ColumnName* )](../functions/function-aggregates.md)
+[**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **[Button](control-button.md)** -Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
-   **Collect(Revenue; {Year:"2013"; Europa:24000; Ganymede:22300; Callisto:21200}; {Year:"2014"; Europa:26500; Ganymede:25700; Callisto:24700};{Year:"2014"; Europa:27900; Ganymede:28300; Callisto:25600})**
+   **Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600})**
    
     Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
    

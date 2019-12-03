@@ -1,6 +1,6 @@
 ---
 title: Ändern der Bildschirmgröße und -ausrichtung einer Canvas-App | Microsoft-Dokumentation
-description: Schrittanleitung zum Ändern von Einstellungen, z.B. von Bildschirmgröße und -ausrichtung einer Canvas-App in PowerApps
+description: Schritt-für-Schritt-Anleitungen zum Ändern von Einstellungen, z. b. Bildschirmgröße und Ausrichtung einer Canvas-app in Power apps
 author: evchaki
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1d3bd48f658e31f795ca3489fa1973c48da94a22
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b6ec2006266a15b7552d1a83b2d7d67c14560470
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995636"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732979"
 ---
-# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>Ändern der Bildschirmgröße und -ausrichtung einer Canvas-App in PowerApps
+# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Ändern der Bildschirmgröße und der Ausrichtung einer Canvas-app in Power apps
 Passen Sie eine Canvas-App an, indem Sie Bildschirmgröße und -ausrichtung ändern.
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -48,7 +47,7 @@ Erstellen Sie eine APP, oder öffnen Sie eine APP zum Bearbeiten, und wählen Si
 
     Wenn Sie diese Einstellung deaktivieren, wird die APP an das Seitenverhältnis des Geräts angepasst, auf dem es ausgeführt wird, und es wird der gesamte verfügbare Speicherplatz belegt. Die APP wird nicht skaliert, und daher können Bildschirme Weitere Informationen anzeigen.
 
-    Wenn diese Einstellung deaktiviert ist, wird das **Seitenverhältnis für Sperren** automatisch deaktiviert und deaktiviert. Außerdem ist die **Width** -Eigenschaft aller Bildschirme auf `Max(App.Width; App.DesignWidth)` festgelegt, und Ihre **height** -Eigenschaft ist auf `Max(App.Height; App.DesignHeight)` festgelegt, sodass Sie die Dimensionen des Fensters nachverfolgen, in dem die app ausgeführt wird. Mit dieser Änderung können Sie Apps erstellen, die auf verschiedene Geräte und Fenster Dimensionen reagieren. Weitere Informationen finden Sie unter: [Reaktionsfähiges Layout erstellen](create-responsive-layout.md)
+    Wenn diese Einstellung deaktiviert ist, wird das **Seitenverhältnis für Sperren** automatisch deaktiviert und deaktiviert. Außerdem ist die **Width** -Eigenschaft aller Bildschirme auf `Max(App.Width, App.DesignWidth)`festgelegt, und Ihre **height** -Eigenschaft wird auf `Max(App.Height, App.DesignHeight)` festgelegt, sodass die Dimensionen des Fensters, in dem die app ausgeführt wird, nachverfolgt werden. Mit dieser Änderung können Sie Apps erstellen, die auf verschiedene Geräte und Fenster Dimensionen reagieren. Weitere Informationen: [Erstellen eines reaktionsfähigen Layouts](create-responsive-layout.md)
 
 1. Geben Sie unter **Seitenverhältnis sperren** entweder **Ein** oder **Aus** an.
 

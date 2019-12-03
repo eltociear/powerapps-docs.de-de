@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2afd849a716034e4a4dbd50fd4ad58af059be18b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c1860320715798d1e3acc72af7f158f91b8f3cd0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680004"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724368"
 ---
-# <a name="use-cognitive-services-in-powerapps"></a>Verwenden von Cognitive Services in PowerApps
+# <a name="use-cognitive-services-in-power-apps"></a>Verwenden von Cognitive Services in Power apps
 In diesem Artikel erfahren Sie, wie Sie eine einfache Canvas-app erstellen, die den [Azure-Cognitive Services Textanalyse-API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) verwendet, um Text zu analysieren. Es wird veranschaulicht, wie die Textanalyse-API eingerichtet und mit dem [Textanalyse-Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/) verbunden wird. Anschließend wird beschrieben, wie eine Canvas-App erstellt wird, die die API aufruft.
 
 > [!NOTE]
@@ -70,7 +69,7 @@ Die API ist als kostenlose Vorschauversion erhältlich und mit einem Azure-Abonn
 Nachdem Sie nun über die Textanalyse-API verfügen, stellen Sie eine Verbindung über Power apps her, und erstellen Sie eine APP, die die API aufruft. Dies ist eine App mit einem einzigen Bildschirm, die ähnliche Funktionen wie die Demo auf der Seite „Textanalyse-API“ bietet. Legen Sie los!
 
 ### <a name="create-the-app-and-add-a-connection"></a>Erstellen der App und Hinzufügen einer Verbindung
-Zunächst erstellen Sie eine leere Smartphone-App und fügen eine Verbindung mit dem **Textanalyse**-Connector hinzu. Wenn Sie zu diesen Aufgaben weitere Informationen benötigen, lesen Sie die Artikel [App von Grund auf neu erstellen](get-started-create-from-blank.md) und [Verwalten der Verbindungen in PowerApps](add-manage-connections.md).
+Zunächst erstellen Sie eine leere Smartphone-App und fügen eine Verbindung mit dem **Textanalyse**-Connector hinzu. Weitere Informationen zu diesen Aufgaben finden Sie unter [Erstellen einer APP von Grund](get-started-create-from-blank.md) [auf und Verwalten von Verbindungen in powerapps](add-manage-connections.md).
 
 1. Wählen Sie auf [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Mit leerer App starten** > ![Symbol für Telefon-App](./media/cognitive-services-api/icon-phone-app.png) (Telefon) > **Diese App erstellen** aus.
 
@@ -128,34 +127,34 @@ Nun verfügen Sie über eine App, die ganz ordentlich aussieht, damit können ab
 
 Vor diesem Hintergrund fügen wir nun die Formel für die **OnSelect**-Eigenschaft der Schaltfläche hinzu. Hier liegt nun die ganze Zauberei.
 
-```powerapps-comma
-If( chkLanguage.Value = true;
-    ClearCollect( languageCollect; 
+```powerapps-dot
+If( chkLanguage.Value = true,
+    ClearCollect( languageCollect, 
         TextAnalytics.DetectLanguage(
             {
-                numberOfLanguagesToDetect: 1; 
+                numberOfLanguagesToDetect: 1, 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);;
+);
 
-If( chkPhrases.Value = true;
-    ClearCollect( phrasesCollect; 
+If( chkPhrases.Value = true,
+    ClearCollect( phrasesCollect, 
         TextAnalytics.KeyPhrases(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);;
+);
 
-If( chkSentiment.Value = true;
-    ClearCollect( sentimentCollect; 
+If( chkSentiment.Value = true,
+    ClearCollect( sentimentCollect, 
         TextAnalytics.DetectSentiment(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -190,7 +189,7 @@ Zum Anzeigen der Ergebnisse der API-Aufrufe verweisen Sie auf die entsprechende 
    
     Die **First()** -Funktion gibt den ersten (und in diesem Fall einzigen) Eintrag in **languageCollect** zurück, und die App zeigt **name** (das einzige Feld) für den Eintrag an.
 
-2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
+2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."`.
    
     Diese Formel verwendet ebenfalls die **First()** -Funktion, ruft den **Value** (0-1) aus dem ersten und einzigen Eintrag ab und formatiert ihn anschließend als Prozentsatz.
 

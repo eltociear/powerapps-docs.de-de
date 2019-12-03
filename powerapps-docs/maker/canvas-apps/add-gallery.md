@@ -13,21 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd48455f24cd07a09ce3a7cdb44b2fa6da2a0166
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 09b8f728d175edb598ee832be11cf3329d166ae7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679245"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724772"
 ---
-# <a name="show-a-list-of-items-in-powerapps"></a>Anzeigen einer Liste mit Elementen in PowerApps
+# <a name="show-a-list-of-items-in-power-apps"></a>Anzeigen einer Liste von Elementen in powerapps
 
 Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem Sie Ihrer Canvas-App ein **[Katalog](controls/control-gallery.md)** -Steuerelement hinzufügen. In diesem Thema wird Excel als Datenquelle verwendet. Filtern Sie die Liste, indem Sie das **Katalog**-Steuerelement so konfigurieren, dass nur die Elemente angezeigt werden, die dem Filterkriterium in einem **[Texteingabe](controls/control-text-input.md)** -Steuerelement entsprechen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Erfahren Sie, wie Sie in PowerApps [ein Steuerelement hinzufügen und konfigurieren](add-configure-controls.md).
+- Erfahren Sie, wie Sie ein Steuerelement in Power apps [Hinzufügen und konfigurieren](add-configure-controls.md) .
 
 - Einrichten der Beispieldaten:
     1. Laden Sie [diese Excel-Datei](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) mit Beispieldaten für dieses Lernprogramm herunter.
@@ -35,7 +34,7 @@ Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem
     2. Laden Sie die Excel-Datei in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md) hoch, z.B. in OneDrive for Business.
 
 - Öffnen Sie eine leere App:
-    1. [Melden Sie sich bei PowerApps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+    1. [Melden Sie sich bei powerapps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     1. Wählen Sie unter **Eigene App erstellen** die Option **Canvas-App ohne Vorlage** aus.
 
@@ -99,20 +98,20 @@ Die **[Items](controls/properties-core.md)** -Eigenschaft eines **Katalog**-Steu
 
 1. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft des **Katalog**-Steuerelements auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text);
-            FlooringEstimates;
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
             Filter(
-                FlooringEstimates;
+                FlooringEstimates,
                 TextSearchBox1.Text in Text(Name)
             )
-        );
-        Name;
+        ),
+        Name,
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -131,16 +130,16 @@ Die **[Items](controls/properties-core.md)** -Eigenschaft eines **Katalog**-Steu
 ## <a name="highlight-the-selected-item"></a>Hervorheben des ausgewählten Elements
 Legen Sie die **templatefill** -Eigenschaft des Katalog-Steuer Elements auf eine Formel fest **, die diesem** Beispiel ähnelt, aber Sie können bei Bedarf andere Farben angeben:
 
-**If(ThisItem.IsSelected; LightCyan; White)**
+**If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Ändern der Standardauswahl
 Legen Sie die **Default**-Eigenschaft des **Katalog**-Steuerelements auf den Datensatz fest, der standardmäßig ausgewählt sein soll. Sie können z. b. das fünfte Element in der Datenquelle **flooringestimates** angeben:
 
-**Last(FirstN(FlooringEstimates; 5))**
+**Last(FirstN(FlooringEstimates, 5))**
 
 In diesem Beispiel geben Sie das erste Element in der Kategorie **Hardwood** der Datenquelle **FlooringEstimates** an:
 
-**First(Filter(FlooringEstimates; Category = "Hardwood"))**
+**First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Nächste Schritte
 Informationen zum Arbeiten mit [Formularen](working-with-forms.md) und [Formeln](working-with-formulas.md).

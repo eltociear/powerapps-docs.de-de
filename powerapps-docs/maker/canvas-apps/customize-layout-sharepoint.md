@@ -1,6 +1,6 @@
 ---
 title: Tutorial – Anpassen eines Katalogs in einer generierten App | Microsoft-Dokumentation
-description: In diesem Tutorial passen Sie die Daten an, die in der Galerie und anderen Elementen einer App angezeigt werden, die in PowerApps automatisch generiert wurde.
+description: In diesem Tutorial passen Sie die Daten an, die im Katalog und in anderen Elementen einer App angezeigt werden, die in powerapps automatisch generiert wurden.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02d6e3b7a3dc18ab4c7d4d3d5f510b6c3bbd227a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679659"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731718"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
+# <a name="tutorial-customize-a-gallery-in-power-apps"></a>Tutorial: Anpassen eines Katalogs in powerapps
 
 In diesem Tutorial passen Sie eine Liste der Datensätze an, die als Katalog bezeichnet werden, und nehmen andere Änderungen an einer APP vor, die automatisch in Microsoft powerapps generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen.
 
@@ -52,7 +51,7 @@ Wenn Sie nicht für Power apps registriert sind, [melden Sie sich kostenlos an](
 
 ## <a name="open-the-generated-app"></a>Öffnen einer generierten App
 
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
+1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, und wählen Sie dann am linken Rand die Option **apps** aus.
 
 1. Suchen Sie die App, die Sie generiert haben, und wählen Sie das Auslassungssymbol ( **...** ) für sie und dann **Bearbeiten** aus.
 
@@ -96,7 +95,7 @@ Wenn Sie nicht für Power apps registriert sind, [melden Sie sich kostenlos an](
 
 1. Kopieren Sie diese Formel, und fügen Sie sie in die Bearbeitungsleiste ein.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Mit Verwendung dieser Formel stellen Sie Folgendes sicher:
 

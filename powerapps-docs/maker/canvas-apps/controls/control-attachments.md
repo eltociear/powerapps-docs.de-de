@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5279f9368cdd832e84fba13faf8643cd7392d70b
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: abbe0165041aa3fa496bae480fa1235d9c0b159c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650808"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727643"
 ---
-# <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
+# <a name="attachments-control-in-power-apps"></a>Anlagen-Steuerelement in powerapps
 Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien aus einer SharePoint-Liste oder einer Common Data Service Entität hochladen und löschen können.
 
 ## <a name="limitations"></a>Einschränken

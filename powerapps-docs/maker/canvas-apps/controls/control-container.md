@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eec6400b4953f1183ffbb294093c13aebb53fe8d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e22800dc929c32f0a605137b6dc94820b984459c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678647"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727336"
 ---
 # <a name="container-control-in-power-apps-experimental"></a>Container-Steuerelement in powerapps (experimentell)
 Bietet die Möglichkeit, Hierarchie zu erstellen.
 
 > [!IMPORTANT]
 > Dies ist ein experimentelles Feature. Experimentelle Features können sich noch deutlich verändern oder im Laufe der Zeit wieder vollständig verschwinden.
-> Weitere Informationen finden Sie Untergrund Legendes zu [experimentellen Features und Vorschau Features in powerapps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview).
+> Weitere Informationen finden Sie Untergrund Legendes zu [experimentellen Features und Vorschau Features in Power apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview).
 
 ## <a name="description"></a>Beschreibung
  Der Container kann eine Reihe von Steuerelementen enthalten und über eigene Eigenschaften verfügen. 

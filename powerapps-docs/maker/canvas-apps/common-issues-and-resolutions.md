@@ -1,6 +1,6 @@
 ---
 title: Häufige Probleme und Lösungen für powerapps | Microsoft-Dokumentation
-description: Eine Liste häufiger Probleme und Lösungen für PowerApps.
+description: Eine Liste der häufigen Probleme und Lösungen in Power apps.
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8f05c74141301d0c41238daa20625874eec98aa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b578d34217647658bb872ed22cd7ee8b3cc4a1cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678785"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723864"
 ---
-# <a name="common-issues-and-resolutions-for-powerapps"></a>Häufige Probleme und Lösungen für PowerApps
+# <a name="common-issues-and-resolutions-for-power-apps"></a>Häufige Probleme und Lösungen für Power apps
 
 In diesem Artikel werden einige häufige Probleme aufgelistet, die bei der Verwendung von powerapps auftreten können. Nach Möglichkeit werden Problemumgehungen bereitgestellt.
 
@@ -85,7 +85,7 @@ In diesem Artikel werden einige häufige Probleme aufgelistet, die bei der Verwe
 
 1. **Version 2.0.700 auf Android-Geräten**
 
-    Wenn Sie Release 2.0.700 auf einem Android-Gerät installieren und dann keine apps öffnen können (oder eine APP nicht mehr reagiert), deinstallieren Sie Power apps, starten Sie das Gerät neu, und installieren Sie dann powerapps neu.
+    Wenn Sie Release 2.0.700 auf einem Android-Gerät installieren und anschließend keine apps öffnen können (oder eine APP nicht mehr reagiert), deinstallieren Sie powerapps, starten Sie das Gerät neu, und installieren Sie dann powerapps neu.
 
 1. **„Leerer“ Katalog beim Öffnen einer App**
 

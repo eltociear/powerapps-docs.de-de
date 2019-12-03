@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 58b96ab5758fd30a05d9f325cb623bbc338b0d00
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679222"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724744"
 ---
-# <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
+# <a name="using-multimedia-files-in-power-apps"></a>Verwenden von Multimedia-Dateien in Power apps
 
 In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre Canvas-App einbetten, Stiftzeichnungen in eine Datenquelle hochladen und Bilder aus einer Datenquelle in der Canvas-App anzeigen. Die in diesem Artikel verwendete Datenquelle ist eine Excel-Datei in OneDrive for Business.
 
@@ -159,7 +158,7 @@ In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (O
 
 8. Fügen Sie auf der Registerkarte **Einfügen** ein **Schaltflächen**-Steuerelement hinzu, und legen Sie dessen **OnSelect**-Eigenschaft auf diese Formel fest:
 
-    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
 9. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu (Registerkarte **Einfügen** > **Katalog**), und legen Sie dessen **Items**-Eigenschaft auf `Drawings` fest. Die Eigenschaft **Image** des Katalog-Steuerelements wird automatisch auf `ThisItem.Image` festgelegt.
 

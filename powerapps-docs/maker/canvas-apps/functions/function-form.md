@@ -1,6 +1,6 @@
 ---
 title: Funktionen „EditForm“, „NewForm“, „SubmitForm“, „ResetForm“ und „ViewForm“ | Microsoft-Dokumentation
-description: Referenzinformationen mit Syntax und Beispielen für die Funktionen „EditForm“, „NewForm“, „SubmitForm“, „ResetForm“ und „ViewForm“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "EditForm", "NewForm", "SubmitForm", "resetform" und "ViewForm" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20515a65a66dc3fea1236924d9c29574f63e16a8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8cb2acc15d7d82e2c0935133ffdaf5e4f5284f0c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992708"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730902"
 ---
-# <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Funktionen „EditForm“, „NewForm“, „SubmitForm“, „ResetForm“ und „ViewForm“ in PowerApps
+# <a name="editform-newform-submitform-resetform-and-viewform-functions-in-power-apps"></a>Funktionen "EditForm", "NewForm", "SubmitForm" und "resetform" in powerapps
 Zeigen Sie ein Element an, bearbeiten oder erstellen Sie ein Element, speichern Sie den Inhalt und setzen Sie die Steuerelemente in einem **[Bearbeitungsformular](../controls/control-form-detail.md)** -Steuerelement zurück.
 
 ## <a name="overview"></a>Übersicht
@@ -111,12 +110,12 @@ Ausführliche Beispiele finden Sie unter [Understand data forms (Grundlegendes z
    * Wenn die Übermittlung fehlschlägt, zeigt **ErrorText** eine benutzerfreundliche Fehlermeldung an, und die aktuelle Ansicht bleibt sichtbar, sodass der Benutzer das Problem beheben und den Vorgang wiederholen kann.
 4. Fügen Sie ein Button-Steuerelement hinzu, legen Sie dessen **[Text](../controls/properties-core.md)** -Eigenschaft auf **Cancel** (Abbrechen) und dessen **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf diese Formel fest:
    
-    **ResetForm( EditForm );; Back()**
+    **ResetForm( EditForm ); Back()**
    
     Wenn der Benutzer die Schaltfläche **Cancel** (Abbrechen) auswählt, werden die Werte im Formularsteuerelement in den Zustand vor der Bearbeitung durch den Benutzer zurückgesetzt, die vorherige Ansicht wird erneut angezeigt, und das Formularsteuerelement wird in den **Edit**-Modus (Bearbeiten) zurückgesetzt, wenn es sich im **New**-Modus (Neu) befand.
 5. Fügen Sie ein Button-Steuerelement hinzu, legen Sie dessen **[Text](../controls/properties-core.md)** -Eigenschaft auf **New** (Neu) und dessen **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf diese Formel fest:
    
-    **NewForm( EditForm );; Navigate( EditScreen; None )**
+    **NewForm( EditForm ); Navigate( EditScreen, None )**
    
     Wenn der Benutzer die Schaltfläche **New** (Neu) auswählt, wechselt das Formularsteuerelement in den **New**-Modus (Neu), das Steuerelement wird mit den Standardwerten für die Datenquelle des Formularsteuerelements aufgefüllt, und das Formular mit dem Formularsteuerelement wird angezeigt. Wenn die **SubmitForm**-Funktion ausgeführt wird, wird ein Datensatz erstellt anstatt aktualisiert.
 

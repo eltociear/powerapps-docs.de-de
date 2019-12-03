@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0bf2502d22adb90993f5f7ebb8e05c72f51215a5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9b2e3298f09857e26df4c3707d8ae36737557b08
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675443"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732833"
 ---
-# <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimieren der Leistung von Canvas-Apps in PowerApps
+# <a name="optimize-canvas-app-performance-in-power-apps"></a>Optimieren der Canvas-App-Leistung in Power apps
 Microsoft arbeitet hart daran, die Leistung aller apps zu verbessern, die auf der Power Apps-Plattform ausgeführt werden. Sie können aber die Best Practices in diesem Thema befolgen, um die Leistung der von Ihnen erstellten Apps noch weiter zu steigern.
 
 Wenn ein Benutzer eine App öffnet, durchläuft sie folgende Ausführungsphasen, bevor eine Benutzeroberfläche angezeigt wird: 
@@ -98,7 +98,7 @@ Wie [diese Liste](delegation-list.md) zeigt, unterstützen verschiedene Datenque
 
 ![Verwenden der Delegierung](./media/performance-tips/perfdelegation1.png)
 
-SharePoint-Listen unterstützen z.B. die Delegierung aus der [**Filter**](functions/function-filter-lookup.md)-Funktion, aber nicht aus der [**Search**](functions/function-filter-lookup.md)-Funktion. Daher sollten Sie **Filter** anstelle von **Search** verwenden, um Elemente in einem Katalog zu suchen, wenn die SharePoint-Liste mehr als 500 Elemente enthält. Weitere Tipps finden Sie unter [Working with large SharePoint lists in PowerApps](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/) (Arbeiten mit großen SharePoint-Listen in PowerApps, Blogbeitrag). 
+SharePoint-Listen unterstützen z.B. die Delegierung aus der [**Filter**](functions/function-filter-lookup.md)-Funktion, aber nicht aus der [**Search**](functions/function-filter-lookup.md)-Funktion. Daher sollten Sie **Filter** anstelle von **Search** verwenden, um Elemente in einem Katalog zu suchen, wenn die SharePoint-Liste mehr als 500 Elemente enthält. Weitere Tipps finden Sie unter [Arbeiten mit großen SharePoint-Listen in Power apps](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/) (Blogbeitrag). 
 
 ## <a name="use-delayed-load"></a>Verwenden des verzögerten Ladens
 Aktivieren Sie das [experimentelle Feature](working-with-experimental.md) für das verzögerte Laden, wenn Ihre App über mehr als 10 Bildschirme, keine Regeln und viele Steuerelemente verfügt, die sich auf mehreren Bildschirmen befinden und direkt an die Datenquelle gebunden sind. Wenn Sie diese Art App erstellen und dieses Feature nicht aktivieren, könnte die App-Leistung beeinträchtigt werden, weil die Steuerelemente in allen Bildschirmen aufgefüllt werden müssen – auch in Bildschirmen, die gar nicht geöffnet sind. Darüber hinaus müssen alle Bildschirme der App aktualisiert werden, sobald sich die Datenquelle ändert, weil beispielsweise der Benutzer einen Datensatz hinzufügt.

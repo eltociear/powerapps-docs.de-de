@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b2a2aa1baf93008fa908ca3f73aebfde64c9b239
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ae33122d140b6c13f744acb292362d8ec804233e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680050"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725221"
 ---
-# <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Hinzufügen und Konfigurieren eines Canvas-App-Steuerelements in PowerApps
+# <a name="add-and-configure-a-canvas-app-control-in-power-apps"></a>Hinzufügen und Konfigurieren eines Canvas-App-Steuer Elements in Power apps
 
 Fügen Sie Ihrer Canvas-App vielfältige Benutzeroberflächenelemente hinzu, und konfigurieren Sie Aspekte ihrer Darstellung und ihres Verhaltens direkt, über die Symbolleiste, auf der Registerkarte **Eigenschaften** oder in der Bearbeitungsleiste. Diese Elemente der Benutzeroberfläche werden als Steuerelemente bezeichnet, während die von Ihnen konfigurierten Aspekte als Eigenschaften bezeichnet werden.
 

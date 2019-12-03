@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 06c3a02d1ea3943f64661334ca419f6f205e8b7e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 25dacb85b49e931ebc8de90a819ed3cebe5aab9a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675818"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732265"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Erstellen einer Order Gallery in einer Canvas-App
 
@@ -95,8 +94,8 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Wir könnten es hier direkt mit **Aufträgen** verbinden, aber stattdessen möchten wir die Sortierreihenfolge des Katalogs steuern.  Ignorieren Sie das Dialogfeld "ausführen", und legen Sie in der Bearbeitungs Leiste die **Items** -Eigenschaft des Katalogs auf die folgende Formel fest:
 
-    ```powerapps-comma
-    Sort( Orders; 'Order Number'; Descending )
+    ```powerapps-dot
+    Sort( Orders, 'Order Number', Descending )
     ```
 
     Die [**Sortier**](functions/function-sort.md) Funktion ordnet die Liste so an, dass die neueste Bestellung (mit der höchsten Bestellnummer) zuerst angezeigt wird.
@@ -130,7 +129,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der Bezeichnung auf den folgenden Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     "Order " & ThisItem.'Order Number'
     ```
 
@@ -146,7 +145,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der Bezeichnung auf den folgenden Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Customer.Company
     ```
 
@@ -190,7 +189,7 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.'Order Status'
     ```
 
@@ -213,12 +212,12 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
 1. Legen Sie in der Bearbeitungs Leiste die **Color** -Eigenschaft der Status Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Switch( ThisItem.'Order Status';
-        'Orders Status'.Closed; Green;
-        'Orders Status'.New; Black;
-        'Orders Status'.Invoiced; Blue;
-        'Orders Status'.Shipped; Purple
+    ```powerapps-dot
+    Switch( ThisItem.'Order Status',
+        'Orders Status'.Closed, Green,
+        'Orders Status'.New, Black,
+        'Orders Status'.Invoiced, Blue,
+        'Orders Status'.Shipped, Purple
     )
     ```
 
@@ -248,8 +247,8 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -280,8 +279,8 @@ Zur Wiederholung haben Sie begonnen, eine Canvas-App mit einem Bildschirm zu ers
 - Ein Ausdruck, mit dem die Bestellnummer angezeigt wird: `"Orders " & ThisItem.OrderNumber`
 - Ein Feld in einer n:1-Beziehung: `ThisItem.Customer.Company`
 - Eine Bezeichnung, die den Namen einer Option in einer Menge anzeigt: `ThisItem.'Order Status'`
-- Eine Bezeichnung, die das Format ändert, je nachdem, welche Option in einer Menge die Bezeichnung anzeigt: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
-- Eine komplexe Aggregatfunktion über eine 1: n-Beziehung: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
+- Eine Bezeichnung, die das Format ändert, je nachdem, welche Option in einer Menge die Bezeichnung anzeigt: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
+- Eine komplexe Aggregatfunktion über eine 1: n-Beziehung: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Nächstes Thema
 

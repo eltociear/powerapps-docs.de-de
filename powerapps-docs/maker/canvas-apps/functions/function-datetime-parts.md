@@ -1,6 +1,6 @@
 ---
 title: Funktionen „Day“, „Month“, „Year“, „Hour“, „Minute“, „Second“ und „Weekday“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Day“, „Month“, „Year“, „Hour“, „Minute“, „Second“ und „Weekday“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen Day, month, year, Hour, Minute, Second und Weekday in Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc5d17903ea5cfe834fd4e0987b4fc4613a1ad65
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 571ec9d9b18be623a60bedfc3ac04e8ed8e46b33
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992819"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731139"
 ---
-# <a name="day-month-year-hour-minute-second-and-weekday-functions-in-powerapps"></a>Die Funktionen „Day“, „Month“, „Year“, „Hour“, „Minute“, „Second“ und „Weekday“ in PowerApps
+# <a name="day-month-year-hour-minute-second-and-weekday-functions-in-power-apps"></a>Funktionen Day, month, year, Hour, Minute, Second und Weekday in Power apps
 Gibt die einzelnen Bestandteile eines Datum/Uhrzeit-Werts zurück
 
 ## <a name="description"></a>Beschreibung
@@ -59,7 +58,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit Datums- und Uhrzeitangaben]
 
 * *DatumUhrzeit*: erforderlich.  Der zu verarbeitende Datum/Uhrzeit-Wert  
 
-**Weekday**( *DateTime* [; *WeekdayFirst* ] )<br>
+**Weekday**( *DateTime* [, *WeekdayFirst* ] )<br>
 
 * *DatumUhrzeit*: erforderlich.  Der zu verarbeitende Datum/Uhrzeit-Wert 
 * *ErsterWochentag*: optional.  Der Excel-Code, der angibt, mit welchem Tag die Woche beginnt.  Wenn nicht angegeben, wird 1 (Sonntag zuerst) verwendet.
@@ -76,6 +75,6 @@ Im folgenden Beispiel ist die aktuelle Uhrzeit **3:59:37 PM** am **Donnerstag, 9
 | **Minute(&nbsp;Now()&nbsp;)** |Gibt die Minutenkomponente der aktuellen Uhrzeit und des aktuellen Datums zurück |59 |
 | **Second(&nbsp;Now()&nbsp;)** |Gibt die Minutenkomponente der aktuellen Uhrzeit und des aktuellen Datums zurück |37 |
 | **Weekday(&nbsp;Now()&nbsp;)** |Gibt die Wochentagkomponente der aktuellen Uhrzeit und des aktuellen Datums mit dem Standardwochenbeginn am Sonntag zurück |5 |
-| **Weekday(&nbsp;Now();&nbsp;14&nbsp;)** |Gibt die Wochentagkomponente der aktuellen Uhrzeit und des aktuellen Datums mit einem Excel-Code, der den Wochenbeginn auf Donnerstag festlegt, zurück |1 |
-| **Weekday(&nbsp;Now();&nbsp;StartOfWeek.Wednesday&nbsp;)** |Gibt die Wochentagkomponente der aktuellen Uhrzeit und des aktuellen Datums mithilfe einer **StartOfWeek**-Enumeration, die den Wochenbeginn auf Mittwoch festlegt, zurück |2 |
+| **Weekday(&nbsp;Now(),&nbsp;14&nbsp;)** |Gibt die Wochentagkomponente der aktuellen Uhrzeit und des aktuellen Datums mit einem Excel-Code, der den Wochenbeginn auf Donnerstag festlegt, zurück |1 |
+| **Weekday(&nbsp;Now(),&nbsp;StartOfWeek.Wednesday&nbsp;)** |Gibt die Wochentagkomponente der aktuellen Uhrzeit und des aktuellen Datums mithilfe einer **StartOfWeek**-Enumeration, die den Wochenbeginn auf Mittwoch festlegt, zurück |2 |
 
