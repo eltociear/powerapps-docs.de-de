@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6ec04214bdee40cbe7ed5379a527fcd70d9229e7
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: ac8f7a3838d29324408a6041c9ad0e9cdbcfa666
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650328"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728334"
 ---
-# <a name="power-bi-tile-control-in-powerapps"></a>Power BI-Kachel-Steuerelement in PowerApps
+# <a name="power-bi-tile-control-in-power-apps"></a>Power BI Kachel-Steuerelement in powerapps
 
 Ein Steuerelement, das eine [Power BI](https://powerbi.microsoft.com)-Kachel in einer App anzeigt.
 
@@ -94,7 +94,7 @@ Mit dem-Parameter wird ein Wert im DataSet des Berichts gefiltert, von dem die K
 
 1. Öffnen Sie auf der Registerkarte **Einfügen** das Menü **Steuerelemente**, und fügen Sie dann das Steuerelement **Power BI-Kachel** hinzu.
 
-    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
 2. Klicken oder tippen Sie auf der Registerkarte **Daten** im Optionsbereich für die Einstellung **Arbeitsbereich** auf **Mein Arbeitsbereich**.
 

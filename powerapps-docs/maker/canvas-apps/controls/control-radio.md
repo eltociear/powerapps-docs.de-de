@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cba6b072721efa04ce28606cd027939823c2f7c9
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 09e8e12a2a6bc94fcc7e3fb2482ff89b058c369f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649773"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732133"
 ---
-# <a name="radio-control-in-powerapps"></a>Radio-Steuerelement in PowerApps
+# <a name="radio-control-in-power-apps"></a>Radio-Steuerelement in powerapps
 
 Ein Eingabesteuerelement, das mehrere Optionen anzeigt, aus der Benutzer jeweils nur eine auswählen können.
 
@@ -131,19 +130,19 @@ Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
 
 1. Fügen Sie das **Radio**-Steuerelement hinzu, nennen Sie es **Pricing**, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf die folgende Formel fest:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
 2. Fügen Sie ein Steuerelement **[Label](control-text-box.md)** (Bezeichnung) hinzu, verschieben Sie es unter das **Radio**-Steuerelement (Optionsfeld) und legen Sie die Eigenschaft **[Text](properties-core.md)** des Steuerelements **[Label](control-text-box.md)** auf diese Formel fest:
 
-    **If("Premium" in Pricing.Selected.Value; "$200 pro Tag"; "$150 pro Tag")**
+    **If("Premium" in Pricing.Selected.Value, "$200 pro Tag", "$150 pro Tag")**
 
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 

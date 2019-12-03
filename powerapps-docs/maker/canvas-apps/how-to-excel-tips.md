@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da70ef7fe2447653c97bb17dbcd40a126ceb6888
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7b620205ed3fdeaa61768b62ef2db27a850be374
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675698"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732148"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Formatieren einer Tabelle in Excel und Tipps zur Benennung
 In powerapps können Sie eine Canvas-App auf der Grundlage von Excel-Daten nur erstellen, wenn Sie als Tabelle formatiert ist. Unter diesem Thema erfahren Sie, wie Sie eine Tabelle in Excel formatieren und wie Sie Excel-Spalten benennen können.
@@ -42,5 +42,5 @@ Wenn eine Spalte in Ihrer Tabelle Bilder enthält, geben Sie „Bild“ in den N
 ![Verbinden einer Excel-Tabelle mit Bildern](./media/how-to-excel-tips/connect-gallery.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Generieren Sie eine App über Excel in PowerApps](get-started-create-from-data.md) basierend auf einer von Ihnen festgelegten Tabelle. Die App verfügt standardmäßig über drei Bildschirme: jeweils einen zum Durchsuchen von Datensätzen, zum Anzeigen von Details zu einem einzelnen Datensatz und zum Erstellen oder Aktualisieren eines Datensatzes.
+* [Generieren einer App aus Excel in powerapps](get-started-create-from-data.md) basierend auf einer von Ihnen angegebenen Tabelle Die App verfügt standardmäßig über drei Bildschirme: jeweils einen zum Durchsuchen von Datensätzen, zum Anzeigen von Details zu einem einzelnen Datensatz und zum Erstellen oder Aktualisieren eines Datensatzes.
 * [Erstellen Sie mithilfe der Tabelle, die Sie in Excel formatieren, eine App von Grund auf neu.](get-started-create-from-blank.md) Sie können Ihre App manuell erstellen und anpassen, um die Daten in Ihrer Tabelle anzuzeigen, zu durchsuchen oder zu bearbeiten.

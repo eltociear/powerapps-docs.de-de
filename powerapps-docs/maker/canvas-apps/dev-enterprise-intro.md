@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2ec1d3fc39749f29a57fd8ca8e518e325c2a11a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02b95408a0e4d3d519c1a1105002c69372670f55
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679494"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731590"
 ---
 # <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>Canvas-Apps für Unternehmensentwickler, Partner und ISVs
 
@@ -26,7 +26,7 @@ Als Entwickler können Sie Canvas-apps in powerapps erweitern und so noch leistu
 
 ## <a name="canvas-apps-for-enterprise-developers"></a>Canvas-Apps für Unternehmensentwickler
 
-Ermöglichen Sie Ihrer Organisation als Unternehmensentwickler, stabile, maßgeschneiderte Lösungen in PowerApps zu erstellen:
+Als Unternehmensentwickler können Sie Ihre Organisation in die Lage versetzen, robuste, maßgeschneiderte Lösungen in powerapps zu erstellen:
 
 - **Erstellen von benutzerdefinierten Connectors**: entwickeln Sie benutzerdefinierte Connectors, um eine Verbindung mit den Daten und Webdiensten Ihrer Organisation herzustellen. [Weitere Informationen](https://docs.microsoft.com/connectors/custom-connectors/)
 

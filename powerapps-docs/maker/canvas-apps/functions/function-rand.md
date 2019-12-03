@@ -1,6 +1,6 @@
 ---
 title: Funktion „Rand“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Rand“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax für die Rand-Funktion in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e04a4e4e00d1f35f36b7e5d68cfb32d83b19b86b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 5f34be9a38f4e30bdf19f337a24580615a16697c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992536"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730425"
 ---
-# <a name="rand-function-in-powerapps"></a>Funktion „Rand“ in PowerApps
+# <a name="rand-function-in-power-apps"></a>Rand-Funktion in powerapps
 Gibt eine pseudozufällige Zahl zurück.
 
 ## <a name="description"></a>Beschreibung
@@ -63,7 +62,7 @@ Bei der Verwendung in einer [Verhaltensformel](../working-with-formulas-in-depth
 #### <a name="create-a-table-of-random-numbers"></a>Erstellen einer Tabelle mit Zufallszahlen
 1. Fügen Sie ein **[Button](../controls/control-button.md)** -Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-    **ClearCollect( RandomNumbers; ForAll( [ 1; 2; 3; 4; 5 ]; Rand() ))**
+    **ClearCollect( RandomNumbers, ForAll( [ 1, 2, 3, 4, 5 ], Rand() ))**
 
     Diese Formel erstellt eine Tabelle mit einer Spalte, mit der eine fünfmalige Iteration ausgeführt wird. Das Ergebnis sind fünf Zufallszahlen.
 
@@ -81,4 +80,4 @@ Bei der Verwendung in einer [Verhaltensformel](../working-with-formulas-in-depth
 
     ![Die gleiche Anzeige mit einer Tabelle mit fünf neuen Dezimalwerten: 0,414, 0,128, 0,860, 0,303 und 0,568](media/function-rand/rand-collection-2.png)
 
-Um eine einzelne Zufallszahl statt einer Tabelle zu generieren, verwenden Sie **Set( RandomNumber; Rand() )** .
+Um eine einzelne Zufallszahl statt einer Tabelle zu generieren, verwenden Sie **Set( RandomNumber, Rand() )** .

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ff3e2db1c0d02fda91215ae0e5cc6dd4ae712dd9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 861d343e653a78af685a1e0cb82deb5b2ad59591
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675099"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732568"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>Übersicht über die e-Mail-Bildschirm Vorlage für Canvas-apps
 
@@ -37,7 +36,7 @@ Einen tieferen Einblick in die Standardfunktionalität dieses Bildschirms finden
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen [beim Erstellen einer APP in powerapps](../data-platform-create-app-scratch.md).
+Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen vertraut, wenn Sie [in Power apps eine APP erstellen](../data-platform-create-app-scratch.md).
 
 ## <a name="default-functionality"></a>Standardfunktionalität
 
@@ -87,10 +86,10 @@ Dadurch können Benutzer ein einzelnes Bild mit Ihrer e-Mail als Anlage senden.
    Dadurch wird verhindert, dass das Steuerelement vor dem **People browsegallery** -Steuerelement liegt.
 1. Ändern Sie die **height** -Eigenschaft von **emailpeoplegallery** in diese Formel:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
-            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2; 0 ); 
+            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
         304
     )
     ```
@@ -103,31 +102,31 @@ Dadurch können Benutzer ein einzelnes Bild mit Ihrer e-Mail als Anlage senden.
     
 1. Ändern **Sie die onselect** -Eigenschaft des **iconmail** -Steuer Elements in diese Formel:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat(MyPeople; Mail & ";") );;
-    If( IsBlank( UploadedImage1 );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
+    If( IsBlank( UploadedImage1 ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             { Importance: "Normal" }
-        );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+        ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             {
-                Importance: "Normal";
+                Importance: "Normal",
                 Attachments: Table(
                     {
-                        Name: "Image.jpg"; 
+                        Name: "Image.jpg", 
                         ContentBytes: UploadedImage1.Image
                     }
                 )
             }
         )
-    );;
-    Reset( TextEmailSubject1 );;
-    Reset( TextEmailMessage1 );;
-    Reset( AddMediaButton1 );;
+    );
+    Reset( TextEmailSubject1 );
+    Reset( TextEmailMessage1 );
+    Reset( AddMediaButton1 );
     Clear( MyPeople )
     ```
     
@@ -164,5 +163,5 @@ Befolgen Sie die Schritte im Abschnitt "Anzeigen von Ereignis Teilnehmer" der [�
 ## <a name="next-steps"></a>Nächste Schritte
 
 * [Sehen Sie sich die Referenz Dokumentation für diesen Bildschirm an](./email-screen-reference.md).
-* [Erfahren Sie mehr über den Office 365-Benutzer-Connector in powerapps](../connections/connection-office365-users.md).
-* [Hier finden Sie alle verfügbaren Verbindungen in powerapps](../connections-list.md).
+* [Erfahren Sie mehr über den Office 365-Benutzer-Connector in Power apps](../connections/connection-office365-users.md).
+* Anzeigen [aller verfügbaren Verbindungen in powerapps](../connections-list.md)

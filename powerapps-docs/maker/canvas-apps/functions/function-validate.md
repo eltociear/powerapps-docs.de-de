@@ -1,6 +1,6 @@
 ---
 title: Funktion „Validate“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Validate“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktion "Validate" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1004b5e7a921500065cca468d9b85e538110116c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1524b6f28d0ce5b1ed02fbd02d3c2df52e2b300f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991727"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729824"
 ---
-# <a name="validate-function-in-powerapps"></a>Funktion „Validate“ in PowerApps
+# <a name="validate-function-in-power-apps"></a>Funktion "Validate" in powerapps
 Die **Validate**-Funktion überprüft, ob der Wert einer einzelnen [Spalte](../working-with-tables.md#columns) oder eines vollständigen [Datensatzes](../working-with-tables.md#records) für eine [Datenquelle](../working-with-data-sources.md) gilt.  
 
 ## <a name="description"></a>Beschreibung
@@ -41,15 +40,15 @@ Datenquellen stellen unterschiedlich viele Gültigkeitsinformationen zur Verfüg
 Wenn **Validate** ein Problem findet, gibt die Funktion eine Fehlermeldung zurück, die Sie dem Benutzer der App anzeigen können. Wenn alle Werte gültig sind, gibt **Validate** [blank](function-isblank-isempty.md) zurück. Beim Arbeiten mit einer [Sammlung](../working-with-data-sources.md#collections), die über keine Gültigkeitsinformationen verfügt, sind Werte immer gültig.
 
 ## <a name="syntax"></a>Syntax
-**Validate**( *Datenquelle*; *Spalte*; *Wert* )
+**Validate**( *Datenquelle*, *Spalte*, *Wert* )
 
-* *Datenquelle*: Erforderlich. Die Datenquelle, mit der überprüft werden soll.
+* *DataSource*: erforderlich. Die Datenquelle, mit der überprüft werden soll.
 * *Spalte*: Erforderlich. Die Spalte, die überprüft werden soll.
 * *Wert*: Erforderlich. Der Wert für die ausgewählte Spalte, die überprüft werden soll.
 
-**Validate**( *Datenquelle*; *UrsprünglicherDatensatz*; *Updates* )
+**Validate**( *Datenquelle*, *UrsprünglicherDatensatz*, *Updates* )
 
-* *Datenquelle*: Erforderlich. Die Datenquelle, mit der überprüft werden soll.
+* *DataSource*: erforderlich. Die Datenquelle, mit der überprüft werden soll.
 * *UrsprünglicherDatensatz*: Erforderlich.  Der Datensatz, für den Updates überprüft werden sollen.
 * *Updates*: Erforderlich.  Die Änderungen, die am ursprünglichen Datensatz vorgenommen werden sollen.
 
@@ -60,13 +59,13 @@ Für diese Beispiele müssen die Werte in der Spalte **Percentage** (Prozentzahl
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Validate( Scores; Percentage; 10 )** |Überprüft, ob **10** ein gültiger Wert für die Spalte **Percentage** in der Datenquelle **Scores** ist. |*blank* |
-| **Validate( Scores; Percentage; 120 )** |Überprüft, ob **120** ein gültiger Wert für die Spalte **Percentage** in der Datenquelle **Scores** ist. |"Values must be between 0 and 100." (Werte müssen zwischen 0 und 100 liegen.) |
+| **Validate( Scores, Percentage, 10 )** |Überprüft, ob **10** ein gültiger Wert für die Spalte **Percentage** in der Datenquelle **Scores** ist. |*blank* |
+| **Validate( Scores, Percentage, 120 )** |Überprüft, ob **120** ein gültiger Wert für die Spalte **Percentage** in der Datenquelle **Scores** ist. |"Values must be between 0 and 100." (Werte müssen zwischen 0 und 100 liegen.) |
 
 ### <a name="validate-with-a-complete-record"></a>Überprüfen mit einem vollständigen Datensatz
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Validate( Scores; EditRecord; Gallery.Updates )** |Überprüft, ob die Werte in allen Spalten für die Datenquelle **Scores** (Bewertungen) gültig sind. In diesem Beispiel lautet der Wert der **Percentage**-Spalte (Prozentsatz) **10**. |*blank* |
-| **Validate( Scores; EditRecord; Gallery.Updates )** | Überprüft, ob die Werte in allen Spalten für die Datenquelle **Scores** (Bewertungen) gültig sind. In diesem Beispiel lautet der Wert der **Percentage**-Spalte (Prozentsatz) lautet **120**. |"Values must be between 0 and 100." (Werte müssen zwischen 0 und 100 liegen.) |
+| **Validate( Scores, EditRecord, Gallery.Updates )** |Überprüft, ob die Werte in allen Spalten für die Datenquelle **Scores** (Bewertungen) gültig sind. In diesem Beispiel lautet der Wert der **Percentage**-Spalte (Prozentsatz) **10**. |*blank* |
+| **Validate( Scores, EditRecord, Gallery.Updates )** | Überprüft, ob die Werte in allen Spalten für die Datenquelle **Scores** (Bewertungen) gültig sind. In diesem Beispiel lautet der Wert der **Percentage**-Spalte (Prozentsatz) lautet **120**. |"Values must be between 0 and 100." (Werte müssen zwischen 0 und 100 liegen.) |
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab4b7683d4ea550ebe5704cb7e5580ccbae48deb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e4e67b4905003f8134d8f6868671e74fdece3d6b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674974"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732599"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Referenzinformationen zur Benutzer Bildschirm Vorlage für Canvas-apps
 
@@ -33,7 +32,7 @@ In diesem Thema werden einige bedeutende Steuerelemente hervorgehoben und die Au
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen [beim Erstellen einer APP in powerapps](../data-platform-create-app-scratch.md).
+Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen vertraut, wenn Sie [in Power apps eine APP erstellen](../data-platform-create-app-scratch.md).
 
 ## <a name="text-search-box"></a>Textsuchfeld
 
@@ -51,11 +50,11 @@ Einige andere Steuerelemente interagieren oder haben eine Abhängigkeit vom Text
 * Eigenschaft: **Elemente**<br>
     Wert: Logik zum Suchen von Benutzern, wenn der Benutzer mit der Eingabe beginnt:
     
-    ```powerapps-comma
-    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
+    ```powerapps-dot
+    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
         'Office365Users'.SearchUser(
             {
-                searchTerm: Trim( TextSearchBox.Text ); 
+                searchTerm: Trim( TextSearchBox.Text ), 
                 top: 15
             }
         )
@@ -77,12 +76,12 @@ Der `Office365Users.SearchUser` Vorgang wird in eine `If(!IsBlank(Trim(TextSearc
 * Eigenschaft: **onselect**<br>
     Wert: Code zum Hinzufügen des Benutzers zu einer Sammlung auf App-Ebene, und wählen Sie dann den Benutzer aus:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Set( _selectedUser; ThisItem );
-        Reset( TextSearchBox );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem )
+        Set( _selectedUser, ThisItem ),
+        Reset( TextSearchBox ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem )
         )
     )
     ```
@@ -99,9 +98,9 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
 * Eigenschaft: **Bild**<br>
     Wert: Logik zum Abrufen des Profil Fotos eines Benutzers.
 
-    ```powerapps-comma
+    ```powerapps-dot
     If( !IsBlank( ThisItem.Id ) && 
-            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto;
+            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto,
         'Office365Users'.UserPhoto( ThisItem.Id )
     )
     ```
@@ -127,7 +126,7 @@ Dabei handelt es sich um die Auflistung von Personen, die initialisiert oder hin
 ![People addecodgallery-Titel Steuerelement](media/people-screen/people-people-gall-title.png)
 
 * Eigenschaft: **onselect**<br>
-    Wert: `Set( _selectedUser; ThisItem )`
+    Wert: `Set( _selectedUser, ThisItem )`
 
 Legt die **_selectedUser** Variable auf das in **emailpeoplegallery**ausgewählte Element fest.
 
@@ -136,7 +135,7 @@ Legt die **_selectedUser** Variable auf das in **emailpeoplegallery**ausgewählt
 ![People addecodgallery-iconremove-Steuerelement](media/people-screen/people-people-gall-delete.png)
 
 * Eigenschaft: **onselect**<br>
-    Wert: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Wert: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
 Sucht den Datensatz in der **mypeople** -Auflistung, wobei " **userPrincipalName** " mit dem " **userPrincipalName** " des ausgewählten Elements übereinstimmt, und entfernt diesen Datensatz dann aus der Sammlung.
 

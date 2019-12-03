@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bfefad0a3e1500e926251d68f12ea9c398e9cd9a
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: c9d3594ecf338c6cfa93786f56a09606b2de6296
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74643782"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732015"
 ---
-# <a name="microsoft-stream-video-control-in-powerapps"></a>Microsoft Stream Video-Steuerelement in powerapps
+# <a name="microsoft-stream-video-control-in-power-apps"></a>Microsoft Stream Video-Steuerelement in Power apps
 Ein Video Player für Microsoft Stream Videos und Kanäle.
 
 ## <a name="description"></a>Beschreibung

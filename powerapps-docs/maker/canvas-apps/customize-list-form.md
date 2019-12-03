@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5912723765f99539852884a3fe55738c171c64c3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 61cf2ad5926daf8b1b5bea6310b9fb29563208e2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678578"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731692"
 ---
-# <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
+# <a name="customize-a-sharepoint-list-form-by-using-power-apps"></a>Anpassen eines SharePoint-Listen Formulars mithilfe von powerapps
 
 Sie können das Formular für eine SharePoint-Liste problemlos anpassen, indem Sie Power apps in einem Browser öffnen. Sie müssen keinen herkömmlichen Code (wie C#) schreiben oder eine weitere App (wie InfoPath) herunterladen. Wenn Sie Ihre Änderungen veröffentlichen, wird das Formular in die SharePoint-Liste eingebettet, sodass es von allen Benutzern verwendet werden kann. In powerapps können Sie auch Analyseberichte überprüfen, auf einfache Weise bedingte Formatierungen erstellen und eine Verbindung mit anderen Datenquellen herstellen.
 
@@ -114,7 +114,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
     - **Das SharePoint-Standardformular verwenden**: Wenn ein Benutzer Ihre Liste öffnet und auf der Befehlsleiste auf **Neu** klickt, wird das Standardformular für die Liste angezeigt.
 
-    - **Use a custom form created in PowerApps** (Das in PowerApps erstellte Formular verwenden): Wenn ein Benutzer Ihre Liste öffnet und auf der Befehlsleiste auf **Neu** klickt, wird Ihr benutzerdefiniertes Formular angezeigt. (Alternativ können Sie das Formular auch erneut in PowerApps veröffentlichen).
+    - **Verwenden eines benutzerdefinierten Formulars, das in powerapps erstellt wurde** : Wenn ein Benutzer die Liste öffnet und in der Befehlsleiste **neu** auswählt, wird das benutzerdefinierte Formular angezeigt. (Alternativ können Sie das Formular erneut in Power apps veröffentlichen.)
 
     Sie können nach Bedarf zwischen den Optionen wechseln.
 
@@ -198,11 +198,11 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 **F:** Benötige ich eine powerapps-Lizenz, um benutzerdefinierte Listen Formulare zu erstellen oder zu verwenden?
 
-**A:** Sie benötigen [einen Office 365-Plan, der PowerApps beinhaltet](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses).
+**A:** Sie benötigen einen [Office 365-Plan, der powerapps enthält](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses).
 
 **F:** Was geschieht, wenn Gastbenutzer auf eine Liste zuzugreifen, die ein benutzerdefiniertes Formular aufweist?
 
-**A:** Gastbenutzer erhalten eine Fehlermeldung, wenn sie versuchen, auf ein Listenformular zuzugreifen, das mit PowerApps angepasst wurde.
+**A:** Gastbenutzer erhalten eine Fehlermeldung, wenn Sie versuchen, auf ein Listen Formular zuzugreifen, das mit powerapps angepasst wurde.
 
 **F:** Wie erhalte ich als Administrator eine Liste aller benutzerdefinierten Formulare in meiner Organisation?
 

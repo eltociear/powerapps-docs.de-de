@@ -3,9 +3,9 @@
   items:
     - name: Erste Schritte
       items:
-        - name: Welche Rolle spielt ein PowerApps-Administrator?
+        - name: Welche Rolle spielt ein Power Apps-Administrator?
           href: overview-role-powerapps-admin.md
-        - name: Whitepaper zur PowerApps Enterprise-Bereitstellung
+        - name: Whitepaper zur Power Apps-Bereitstellung in Unternehmen
           href: admin-powerapps-enterprise-deployment.md
     - name: Lizenzierung
       items:
@@ -23,7 +23,7 @@
           href: admin-manage-apps.md
         - name: Eine App zwischen Mandanten und Umgebungen verschieben
           href: environment-and-tenant-migration.md
-        - name: PowerShell-Unterstützung für PowerApps (Vorschau)
+        - name: PowerShell-Unterstützung für Power Apps (Vorschau)
           href: powerapps-powershell.md
         - name: Aktivitätsprotokollierung für PowerApps
           href: 'https://docs.microsoft.com/power-platform/admin/logging-powerapps'
@@ -39,7 +39,7 @@
               href: powerapps-gdpr-dsr-guide-systemlogs.md
             - name: Datenintegrationen für Common Data Service
               href: data-integration-gdpr-dsr-guide.md
-            - name: PowerApps-Kundendaten
+            - name: Power Apps-Kundendaten
               href: powerapps-gdpr-dsr-guide.md
               items:
                 - name: Exportieren von Daten

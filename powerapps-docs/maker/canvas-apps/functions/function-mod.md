@@ -1,6 +1,6 @@
 ---
 title: Funktion „Mod“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Mod“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktion "mod" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5b944da6458eee9f168be5eaa9dc774dd6a56aa0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: db7c18c322b7d4c659ca577bf9092daf20f626b1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992508"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730500"
 ---
-# <a name="mod-function-in-powerapps"></a>Funktion „Mod“ in PowerApps
+# <a name="mod-function-in-power-apps"></a>Funktion "mod" in powerapps
 Gibt den Rest einer Division zurück
 
 ## <a name="description"></a>Beschreibung
@@ -30,8 +29,8 @@ Die **Mod**-Funktion gibt den Rest zurück, der übrig bleibt, nachdem eine Zahl
 Das Ergebnis hat das gleiche Vorzeichen wie der Divisor.
 
 ## <a name="syntax"></a>Syntax
-**Mod**( *Zahl*; *Divisor* )
+**Mod**( *Zahl*, *Divisor* )
 
-* *Number*: erforderlich. Die zu dividierende Zahl.
+* *Zahl*: erforderlich. Die zu dividierende Zahl.
 * *Divisor*: Erforderlich.  Die Zahl, durch die dividiert wird.
 

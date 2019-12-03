@@ -1,6 +1,6 @@
 ---
 title: Funktion „Revert“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Revert“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktion "Revert" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dbf1c623b18bc244e62fd962625f1d7cde35f1e4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: efaffeac79c104d517d8e7da5b2e324fcac3eecb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992455"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730344"
 ---
-# <a name="revert-function-in-powerapps"></a>Funktion „Revert“ in PowerApps
+# <a name="revert-function-in-power-apps"></a>Funktion "Revert" in powerapps
 Aktualisiert und behebt Fehler für die [Datensätze](../working-with-tables.md#records) einer [Datenquelle](../working-with-data-sources.md)
 
 ## <a name="description"></a>Beschreibung
@@ -34,9 +33,9 @@ Wenn die **[Errors](function-errors.md)** -Funktion einen Konflikt nach einem **
 **Revert** hat keinen Rückgabewert. Sie können diese Funktion nur in einer [Verhaltensformel](../working-with-formulas-in-depth.md) verwenden.
 
 ## <a name="syntax"></a>Syntax
-**Revert**( *Datenquelle* [; *Datensatz* ] )
+**Revert**( *Datenquelle* [, *Datensatz* ] )
 
-* *Datenquelle*: Erforderlich. Die Datenquelle, die Sie wiederherstellen möchten.
+* *DataSource*: erforderlich. Die Datenquelle, die Sie wiederherstellen möchten.
 * *Datensatz*: Optional.  Der Datensatz, den Sie wiederherstellen möchten.  Wenn Sie keinen Datensatz angeben, wird die gesamte Datenquelle wiederhergestellt.
 
 ## <a name="example"></a>Beispiel
@@ -47,16 +46,16 @@ In diesem Beispiel stellen Sie die Datenquelle namens **IceCream** (Eiscreme) wi
 Ein Benutzer auf einem anderen Gerät ändert die **Quantity**-Eigenschaft des Datensatzes **Strawberry** (Erdbeere) auf **400**.  Etwa zur gleichen Zeit ändern Sie die gleiche Eigenschaft des gleichen Datensatzes auf **500**, wobei Sie keine Kenntnis von der anderen Änderung haben.
 
 Sie verwenden die **[Patch](function-patch.md)** -Funktion, um den Datensatz zu aktualisieren:<br>
-Patch für **(icecream; First (Filter (icecream; Flavor = "Erdbeer")); {Menge: 500})**
+**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity: 500 } )**
 
 Sie überprüfen die **[Errors](function-errors.md)** -Tabelle und finden einen Fehler:
 
 | Datensatz | [Spalte](../working-with-tables.md#columns) | Nachricht | Fehler |
 | --- | --- | --- | --- |
-| **{ID: 1;-Konfiguration: "Erdbeer"; Menge: 300}** |*blank* |**"The record you are trying to modify has been modified by another user.  Please revert the record and try again." (Der Datensatz, den Sie versuchen zu ändern, wurde von einem anderen Benutzer geändert. Bitte stellen Sie den Datensatz wieder her, und versuchen Sie es erneut.)** |**ErrorKind.Conflict** |
+| **{ ID: 1, Flavor: "Strawberry", Quantity: 300 }** |*blank* |**"Der Datensatz, den Sie ändern möchten, wurde von einem anderen Benutzer geändert.  Setzen Sie den Datensatz zurück, und wiederholen Sie den Vorgang. "** |**ErrorKind.Conflict** |
 
 Basierend auf der Spalte **Error** (Fehler) haben Sie eine Schaltfläche **Reload** (Erneut laden), für die die **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf diese Formel festgelegt wird:<br>
-**Revert( IceCream; First( Filter( IceCream; Flavor = "Strawberry" ) ) )**
+**Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**
 
 Nachdem Sie die **Reload**-Schaltfläche ausgewählt haben, ist die **[Errors](function-errors.md)** -Tabelle [leer](function-isblank-isempty.md), und der neue Wert für **Strawberry** wurde geladen:
 

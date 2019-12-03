@@ -1,6 +1,6 @@
 ---
 title: Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps | Microsoft-Dokumentation
-description: Systemanforderungen, Einschränkungen und Konfigurationswerte für in PowerApps erstellte Canvas-Apps
+description: System Anforderungen, Einschränkungen und Konfigurationswerte für Canvas-apps, die in powerapps erstellt wurden
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b67dda758140608b67fa8df44eca711270b663c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e408eed2ac0ed769b747b647ea7b1a8c3c9df8f6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675643"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729611"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
-In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
+Dieses Thema enthält die Anforderungen an Geräteplattform und Webbrowser sowie Grenzwerte und Konfigurationswerte für powerapps.
 
 ## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>Unterstützte Plattformen zum Ausführen von Canvas-apps mit der App "powerapps
 

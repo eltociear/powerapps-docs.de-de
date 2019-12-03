@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7226433c5e95537346841f2e2f9474ea68e42dda
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f173b4898df8853ef31d1660af6efe9298f838b0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675083"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732619"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Referenzinformationen zur e-Mail-Bildschirm Vorlage für Canvas-apps
 
@@ -35,7 +34,7 @@ In diesem Thema werden einige bedeutende Steuerelemente hervorgehoben und die Au
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen [beim Erstellen einer APP in powerapps](../data-platform-create-app-scratch.md).
+Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen vertraut, wenn Sie [in Power apps eine APP erstellen](../data-platform-create-app-scratch.md).
 
 ## <a name="text-search-box"></a>Textsuchfeld
 
@@ -56,9 +55,9 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
 * Eigenschaft: **sichtbar**<br>
     Wert: Logik, mit der das Steuerelement nur angezeigt wird, wenn ein Benutzer eine gültige e-Mail-Adresse in das Suchfeld eingibt:
 
-    ```powerapps-comma
+    ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text; Match.Email ) &&
+        IsMatch( TextSearchBox.Text, Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
   Zeilenweise bedeutet der vorangehende Codeblock, dass das **Add-Symbol** -Steuerelement nur dann sichtbar ist, wenn Folgendes gilt:
@@ -70,14 +69,14 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
 * Eigenschaft: **onselect**<br>
     Wert: bei Auswahl dieser Option wird die gültige e-Mail-Adresse der **mypeople** -Sammlung hinzugefügt. Diese Sammlung wird vom Bildschirm als Empfängerliste verwendet:
 
-    ```powerapps-comma
-    Collect( MyPeople;
+    ```powerapps-dot
+    Collect( MyPeople,
         { 
-            DisplayName: TextSearchBox.Text; 
-            UserPrincipalName: TextSearchBox.Text; 
+            DisplayName: TextSearchBox.Text, 
+            UserPrincipalName: TextSearchBox.Text, 
             Mail: TextSearchBox.Text
         }
-    );;
+    );
     Reset( TextSearchBox )
     ```
   
@@ -90,9 +89,9 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
 * Eigenschaft: **Elemente**<br>
     Value: die 15 besten Suchergebnisse des Suchtexts, der in das **textsearchbox** -Steuerelement eingegeben wurde:
     
-    ```powerapps-comma
-    If( !IsBlank( Trim(TextSearchBox.Text ) ); 
-        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ); top: 15} )
+    ```powerapps-dot
+    If( !IsBlank( Trim(TextSearchBox.Text ) ), 
+        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ), top: 15} )
     )
     ```
 
@@ -112,12 +111,12 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
 * Eigenschaft: **onselect**<br>
     Wert: Code zum Hinzufügen des Benutzers zu einer Sammlung auf App-Ebene, und wählen Sie dann den Benutzer aus:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Set( _selectedUser; ThisItem );
-        Reset( TextSearchBox );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem )
+        Set( _selectedUser, ThisItem ),
+        Reset( TextSearchBox ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem )
         )
     )
     ```
@@ -139,17 +138,17 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
 * Property: **height**<br>
     Wert: Logik zum Festlegen der Höhe, basierend auf der Anzahl der gegenwärtig im Katalog enthaltenen Elemente:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery.TemplateHeight + EmailPeopleGallery.TemplatePadding * 2) *
-            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0 );
+            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0 ),
         304
     )
     ```
 
   Die Höhe dieses Katalogs entspricht der Anzahl der Elemente im Katalog mit einer maximalen Höhe von 304.
   
-  Es nimmt `TemplateHeight + TemplatePadding * 2` als Gesamthöhe einer einzelnen Zeile von **emailpeoplegallery**an und multipliziert Sie dann mit der Anzahl der Zeilen. Seit `WrapCount = 2`wird die Anzahl der echten Zeilen `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0)`.
+  Es nimmt `TemplateHeight + TemplatePadding * 2` als Gesamthöhe einer einzelnen Zeile von **emailpeoplegallery**an und multipliziert Sie dann mit der Anzahl der Zeilen. Seit `WrapCount = 2`wird die Anzahl der echten Zeilen `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`.
 
 * Property: **ShowScrollbar**<br>
     Wert: `EmailPeopleGallery.Height >= 304`
@@ -161,7 +160,7 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
    ![Emailpeoplegallery-Titel Steuerelement](media/email-screen/email-people-gall-text.png)
 
 * Eigenschaft: **onselect**<br>
-    Wert: `Set(_selectedUser; ThisItem)`
+    Wert: `Set(_selectedUser, ThisItem)`
 
   Legt die **_selectedUser** Variable auf das in **emailpeoplegallery**ausgewählte Element fest.
 
@@ -170,7 +169,7 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
    ![Monthdaygallery-Titel Steuerelement](media/email-screen/email-people-gall-delete.png)
 
 * Eigenschaft: **onselect**<br>
-    Wert: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Wert: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
   Sucht den Datensatz in der **mypeople** -Auflistung, wobei " **userPrincipalName** " mit dem " **userPrincipalName** " des ausgewählten Elements übereinstimmt, und entfernt diesen Datensatz aus der Sammlung.
 
@@ -179,15 +178,15 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
 * Eigenschaft: **onselect**<br>
     Wert: Logik zum Senden der e-Mail-Nachricht des Benutzers:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat( MyPeople; Mail & ";" ) );;
-    'Office365'.SendEmail( _emailRecipientString; 
-        TextEmailSubject.Text;  
-        TextEmailMessage.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
+    'Office365'.SendEmail( _emailRecipientString, 
+        TextEmailSubject.Text,  
+        TextEmailMessage.Text, 
         { Importance:"Normal" }
-    );;
-    Reset( TextEmailSubject );;
-    Reset( TextEmailMessage );;
+    );
+    Reset( TextEmailSubject );
+    Reset( TextEmailMessage );
     Clear( MyPeople )
     ```
 
@@ -199,10 +198,10 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
   1. Schließlich setzt es die Steuerelemente **textemailsubject** und **textemailmessage** zurück und löscht die Auflistung **mypeople** .
 
 * Eigenschaft: **Display Mode**<br>
-    Wert: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ); DisplayMode.Edit; DisplayMode.Disabled )` für eine e-Mail, die gesendet werden soll, muss die Betreffzeile der e-Mail über Text verfügen, und die Empfänger Auflistung (**mypeople**) darf nicht leer sein.
+    Wert: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` für eine e-Mail, die gesendet werden soll, muss die Betreffzeile der e-Mail über Text verfügen, und die Empfänger Auflistung (**mypeople**) darf nicht leer sein.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 * [Weitere Informationen zu diesem Bildschirm](./email-screen-overview.md)
-* [Weitere Informationen zum Office 365 Outlook-Connector in powerapps](../connections/connection-office365-outlook.md)
-* [Weitere Informationen zum Office 365-Benutzer-Connector in powerapps](../connections/connection-office365-users.md)
+* [Weitere Informationen zum Office 365 Outlook-Connector in Power apps](../connections/connection-office365-outlook.md)
+* [Weitere Informationen zum Office 365-Benutzer-Connector in Power apps](../connections/connection-office365-users.md)

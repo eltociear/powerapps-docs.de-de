@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf83473e8b53d13e58b653974495acbe2595513f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e9c4adb124971ba468ee25efbe012c124b3906e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674204"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732321"
 ---
 # <a name="power-apps-webinar-listing"></a>Power apps-Webinar-Auflistung #
 Diese Webinare können Ihnen helfen, die Features und Funktionen von Microsoft powerapps zu nutzen. Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie, dass Sie die Registrierungsinformationen ggf. erneut eingeben müssen. Anschließend erhalten Sie per E-Mail einen Link zu der Aufzeichnung. 
@@ -30,10 +30,10 @@ Diese Webinare können Ihnen helfen, die Features und Funktionen von Microsoft p
 **Get started with gallery controls (Erste Schritte mit Katalogsteuerelementen)**
 <br>von Audrie Gordon [Registrieren und jetzt ansehen](https://info.microsoft.com/US-EAD-WBNR-FY17-02Feb-28-GettingStartedwithPowerAppsGalleries300759_01Registration-ForminBody.html)
 
-**Get started with formulas in PowerApps (Erste Schritte mit Formeln in PowerApps)**
+**Einstieg in Formeln in Power apps**
 <br>von Audrie Gordon [Registrieren und jetzt ansehen](https://info.microsoft.com/US-EAD-WBNR-FY17-03Mar-14-GettingStartedwithPowerAppsFormulas300770_01Registration-ForminBody.html)
 
-**Get started with forms in PowerApps (Erste Schritte mit Formularen in PowerApps)**
+**Einstieg in Formulare in Power apps**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-with-PowerApp-Forms/m-p/116842)
 
 **Die ersten Schritte mit Power apps-Steuerelementen**
@@ -52,7 +52,7 @@ Diese Webinare können Ihnen helfen, die Features und Funktionen von Microsoft p
 <br>von Emma Cooper [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-New-Office-Graph-Templates-Part-2-by-Emma-Cooper/m-p/116840)
 
 ## <a name="intermediate-webinar-series"></a>Webinarreihe für fortgeschrittene Anfänger ##
-**Application Lifecycle with the new Save and publish options in PowerApps (Anwendungslebenszyklus mit den neuen Optionen „Speichern“ und „Veröffentlichen“ in PowerApps)**
+**Anwendungslebenszyklus mit den neuen Optionen "Speichern" und "veröffentlichen" in Power apps**
 <br>von Karthik Bharathy [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
 
 **Powerapps konzentrieren sich auf die Verwendung der Lookup-Funktion**
@@ -64,7 +64,7 @@ Diese Webinare können Ihnen helfen, die Features und Funktionen von Microsoft p
 **Laura Rogers from IWMentor Shares Best Practices for Production Apps (Laura Rogers von IWMentor demonstriert bewährte Methoden für Produktions-Apps)**
 <br>von Laura Rodgers [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Laura-Rogers-from-IWMentor-Shares-Best-Practices-for-Production/m-p/116871)
 
-**Connector Series | Microsoft StaffHub (Shift Planning) Apps with PowerApps (Webinarreihe zu Connectors | Microsoft StaffHub-Apps mit PowerApps (Einsatzplanung))**
+**Connector-Reihe | Microsoft staffhub-Apps (Shift Planning) mit Power apps**
 <br>von Marc-André Lépine [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connector-Series-Shift-Scheduling-Apps-with-PowerApps-StaffHub/m-p/122036)
 
 **Verwaltung von powerapps | Häufig gestellte Fragen**
@@ -96,16 +96,16 @@ Diese Webinare können Ihnen helfen, die Features und Funktionen von Microsoft p
 **Tipps und Tricks zu Teams und Power apps**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Teams-PowerApps-Tips-and-Tricks/m-p/116846)
 
-**Tips for Connecting to Excel on OneDrive for Business from PowerApps (Tipps für das Herstellen einer Verbindung mit Excel auf OneDrive for Business in PowerApps)**
+**Tipps für das Herstellen einer Verbindung mit Excel auf onedrive for Business über Power apps**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Pro-tips-for-connecting-to-Excel-from-PowerApps-by-Audrie-Gordon/m-p/116881)
 
-**Connecting to on-premises data from PowerApps (Herstellen von Verbindungen mit lokalen Daten aus PowerApps)**
+**Herstellen einer Verbindung mit lokalen Daten aus Power apps**
 <br>von Archana Nair und Dimah Zaidalkilani [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
 **Arbeiten mit Connectors: Verwenden des Planner-Connectors**
 <br> von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
-**The Power of Office Graph with PowerApps (Das Potenzial von Office Graph mit PowerApps)**
+**Die Leistungsfähigkeit von Office Graph mit Power apps**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
 **Working with Connectors: Project Online (PWA) (Arbeiten mit Connectors: Project Online (PWA))**
@@ -115,7 +115,7 @@ Diese Webinare können Ihnen helfen, die Features und Funktionen von Microsoft p
 **Schnelles Erstellen von Anwendungen mit Power apps Studio**
 <br>von Karthik Bharathy [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
 
-**Rebuilding an InfoPath Designer form in PowerApps (Erneutes Erstellen eines InfoPath Designer-Formulars in PowerApps)**
+**Neuerstellen eines InfoPath-Designer Formulars in Power apps**
 <br>von Daniel Christian [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rebuilding-an-InfoPath-Designer-Form/m-p/116909)
 
 **Tipps für die Umstellung von InfoPath-Designern auf Power Apps (Teil 1)**
@@ -147,7 +147,7 @@ Diese Webinare können Ihnen helfen, die Features und Funktionen von Microsoft p
 **Building Apps for Adoption and Usability (Erstellen von Apps für die Einführung und Nutzbarkeit)**
 <br>von Veronica Ward [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Apps-for-Adoption-and-Usability-with-Veronica-Ward/m-p/117625#M38)
 
-**Building Dialogs or Pop-up Messages in PowerApps (Erstellen von Dialogfeldern und Popupmeldungen)**
+**Aufbau von Dialogfeldern oder Popup Meldungen in Power apps**
 <br>von Veronica Ward [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
 **Sehen Sie sich den Vorhang mit einem der powerapps-Entwickler an. ein genauerer Blick auf die Vorlagen: Marie Haeger**

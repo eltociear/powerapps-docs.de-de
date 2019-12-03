@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cd6d16a86dbe9c3a7a6ea60be11b9054c54790f2
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 1c9bbfd724f588dce86c5ba2e620404f554d2bcd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679705"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732088"
 ---
-# <a name="rich-text-editor-control-in-powerapps"></a>Rich-Text-Editor-Steuerelement in powerapps
+# <a name="rich-text-editor-control-in-power-apps"></a>Rich-Text-Editor-Steuerelement in powerapps
 Ermöglicht Endbenutzern das Formatieren von Text in einem WYSIWYG-Bearbeitungsbereich.  Die Ausgabe erfolgt im HTML-Format.
 
 ## <a name="description"></a>Beschreibung

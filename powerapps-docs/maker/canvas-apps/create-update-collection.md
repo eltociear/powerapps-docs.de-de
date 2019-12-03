@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 47233d4ead10ab01fe57c1f0573a4123894f9e58
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b124a27119a7b91572bdfef563e0f99e9d5da08d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678670"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731778"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Erstellen und Aktualisieren einer Sammlung in einer Canvas-App
 
@@ -28,8 +27,8 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer in ihrer App v
 ## <a name="prerequisites"></a>Voraussetzungen
 
 - [Registrieren](../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit den Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
-- Erstellen Sie eine App, oder öffnen Sie eine vorhandene App in PowerApps.
-- Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
+- Erstellen Sie eine APP, oder öffnen Sie eine vorhandene app in powerapps.
+- Erfahren Sie, wie Sie [ein Steuer](add-configure-controls.md) Element in powerapps konfigurieren.
 
 ## <a name="create-a-multicolumn-collection"></a>Erstellen einer Sammlung mit mehreren Spalten
 
@@ -51,15 +50,15 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer in ihrer App v
 
 1. Ersetzen Sie in der Bearbeitungs Leiste **dropdownsample** durch diesen Ausdruck:
 
-    `["Red";"Green";"Blue"]`
+    `["Red","Green","Blue"]`
 
 1. Fügen Sie ein **Schalt** Flächen-Steuerelement hinzu, legen Sie dessen **Text** -Eigenschaft auf **"Add"** fest, und legen **Sie die onselect** -Eigenschaft auf diese Formel
 
-    ```powerapps-comma
+    ```powerapps-dot
     Collect(
-        ProductList;
+        ProductList,
         {
-            Product: ProductName.Text;
+            Product: ProductName.Text,
             Color: Colors.Selected.Value
         }
     )
@@ -107,7 +106,7 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer in ihrer App v
 
 1. Legen **Sie die onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    `Remove(ProductList; ThisItem)`
+    `Remove(ProductList, ThisItem)`
 
 1. Fügen Sie außerhalb des Katalogs eine Schaltfläche hinzu, legen Sie die **Text** -Eigenschaft auf **"Clear"** fest, und legen **Sie die onselect** -Eigenschaft auf diese Formel fest:
 
@@ -121,7 +120,7 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer in ihrer App v
 
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie die folgende Funktion für die **[OnSelect](controls/properties-core.md)** -Eigenschaft fest, ersetzen Sie hierbei *ListName* durch den Namen der SharePoint-Liste:<br>
 
-    `Collect(MySPCollection; ListName)`
+    `Collect(MySPCollection, ListName)`
 
     Diese Funktion erstellt eine Sammlung namens **MySPCollection**, die die gleichen Daten wie Ihre SharePoint-Liste enthält.
 

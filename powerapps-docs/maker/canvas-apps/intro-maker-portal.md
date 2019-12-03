@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0f745516ab0c282ab6519f0bac8ac8cfd5f46598
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 284d63d7ebc0eb57e11dae055a9178b3b92646cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675741"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729508"
 ---
 # <a name="sign-in-to-power-apps-for-the-first-time"></a>Melden Sie sich zum ersten Mal bei Power apps an
 
-Wenn Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden, bietet Ihnen die Website eine Vielzahl von Optionen zum Erstellen eigener Apps, zum Öffnen von Apps, die Sie selbst oder andere Benutzer erstellt haben, und zum Ausführen von Aufgaben rund um Apps. Einige dieser Funktionen sind ganz einfach, z.B. die Ermittlung der Lizenzen, über die Sie Zugriff erhalten. Andere sind komplexer, beispielsweise die Erstellung von benutzerdefinierten Verbindungen mit bestimmten Datenquellen.
+Wenn Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)anmelden, bietet Ihnen die Website eine Vielzahl von Optionen zum Erstellen Ihrer eigenen apps, zum Öffnen von apps, die Sie oder andere erstellt haben, und zum Ausführen verwandter Aufgaben. Einige dieser Funktionen sind ganz einfach, z.B. die Ermittlung der Lizenzen, über die Sie Zugriff erhalten. Andere sind komplexer, beispielsweise die Erstellung von benutzerdefinierten Verbindungen mit bestimmten Datenquellen.
 
 Sie können in drei allgemeinen Bereichen aus verschiedenen Optionen auswählen:
 
@@ -112,7 +112,7 @@ Mit den Optionen im Header und der linken Navigationsleiste können Sie nicht nu
   - [Übersicht über die Canvas-App-Connectors](connections-list.md)
   - [Erstellen und Zertifizieren benutzerdefinierter Connectors für Canvas-Apps](register-custom-api.md)
   - [Verwalten eines lokalen Datengateways](gateway-management.md)
-  - [Verwalten von PowerApps](../../administrator/index.md)
+  - [Verwalten von powerapps](../../administrator/index.md)
   - [Übersicht über die Lizenzierung](../../administrator/pricing-billing-skus.md)
   - [Übersicht über die Erstellung einer modellgesteuerten App](../model-driven-apps/model-driven-app-overview.md)
 

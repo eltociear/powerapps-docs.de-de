@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4f54a2f6d3bfa7c843b7b095f999050602e063b0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b530fe0623c72f9df1adda1067638a3d1a1099f1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675016"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732544"
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>Übersicht über die Vorlage "Personen Bildschirm" für Canvas-apps
 
@@ -37,7 +36,7 @@ Einen tieferen Einblick in die Standardfunktionalität dieses Bildschirms finden
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen [beim Erstellen einer APP in powerapps](../data-platform-create-app-scratch.md).
+Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen vertraut, wenn Sie [in Power apps eine APP erstellen](../data-platform-create-app-scratch.md).
 
 ## <a name="default-functionality"></a>Standardfunktionalität
 
@@ -95,19 +94,19 @@ Der Bildschirm Personen speichert Ihre Personen Auswahl in der **mypeople** -Auf
 1. Legen **Sie die onselect** -Eigenschaft von **backicon** auf `Back()`fest.
 1. Legen **Sie die onselect** -Eigenschaft von **sendion** auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Office365.SendEmail( 
-        Concat( MyPeople; UserPrincipalName & ";" ); 
-        SubjectLine.Text; 
+        Concat( MyPeople, UserPrincipalName & ";" ), 
+        SubjectLine.Text, 
         MessageBody.Text 
     )
     ```
     
-    Hier verwenden Sie den Outlook-Connector, um eine e-Mail zu senden. Sie übergeben ihn `Concat(MyPeople; UserPrincipalName & ";")` als Empfängerliste. Diese Formel verkettet alle e-Mail-Adressen in der **mypeople** -Sammlung mit einer einzelnen Zeichenfolge, wobei Sie durch Semikolons getrennt werden. Dies unterscheidet sich nicht vom Schreiben einer Zeichenfolge von e-Mail-Adressen, die durch Semikolons in der "an"-Zeile Ihres bevorzugten e-Mail-Clients getrennt sind.
+    Hier verwenden Sie den Outlook-Connector, um eine e-Mail zu senden. Sie übergeben ihn `Concat(MyPeople, UserPrincipalName & ";")` als Empfängerliste. Diese Formel verkettet alle e-Mail-Adressen in der **mypeople** -Sammlung mit einer einzelnen Zeichenfolge, wobei Sie durch Semikolons getrennt werden. Dies unterscheidet sich nicht vom Schreiben einer Zeichenfolge von e-Mail-Adressen, die durch Semikolons in der "an"-Zeile Ihres bevorzugten e-Mail-Clients getrennt sind.
     * Sie übergeben `SubjectLine.Text` als Betreff der Nachricht und `MessageBody.Text` als Text der Nachricht.
 1. Fügen Sie auf dem Bildschirm Personen in der oberen rechten Ecke das Symbol " **Mail** " ein.
    Ändern Sie die Farbe des Symbols in den gewünschten Wert.
-1. Legen **Sie die onselect** -Eigenschaft der **sendische auf** `Navigate( EmailScreen; None )`fest.
+1. Legen **Sie die onselect** -Eigenschaft der **sendische auf** `Navigate( EmailScreen, None )`fest.
 
     Sie verfügen jetzt über eine APP mit zwei Bildschirmen, in der Sie Benutzer auswählen, eine e-Mail-Nachricht verfassen und dann senden können. Sie können es gerne testen, aber seien Sie vorsichtig, da die APP e-Mails an jeden sendet, den Sie der **mypeople** -Sammlung hinzufügen.
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: HT
+ms.openlocfilehash: b98fcb51e5b379e6507e73f680100c9702ec24a8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678555"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731670"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generieren einer Canvas-App aus Common Data Service in powerapps
+# <a name="generate-a-canvas-app-from-common-data-service-in-power-apps"></a>Generieren einer Canvas-App aus Common Data Service in Power apps
 
 In powerapps generieren Sie automatisch eine Canvas-App basierend auf einer Liste von Beispiel Konten in [Common Data Service](../common-data-service/data-platform-intro.md). In dieser App können Sie alle Konten durchsuchen, Details zu einem einzelnen Konto anzeigen und ein Konto erstellen, aktualisieren oder löschen.
 
@@ -32,7 +32,7 @@ Um diesen Schnellstart folgen zu können, müssen Sie der Sicherheitsrolle [Umge
 
 ## <a name="generate-an-app"></a>Eine App generieren
 
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wechseln Sie gegebenenfalls die Umgebung, wie weiter oben in diesem Thema erläutert.
+1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wechseln Sie ggf. in Umgebungen, wie zuvor in diesem Thema beschrieben.
 
 1. Zeigen Sie unter **Eigene App erstellen** auf **Mit Daten beginnen**, und wählen Sie dann **Diese App erstellen** aus.
 

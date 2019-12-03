@@ -1,6 +1,6 @@
 ---
 title: Funktion „Refresh“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Refresh“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktion "Refresh" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72fafd2b55237dc4804c50c26530fddb763d9623
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8376d21117c286a540ca8b873c7e91b07d53d607
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984281"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730377"
 ---
-# <a name="refresh-function-in-powerapps"></a>Funktion „Refresh“ in PowerApps
+# <a name="refresh-function-in-power-apps"></a>Funktion "Refresh" in powerapps
 Aktualisiert die [Datensätze](../working-with-tables.md#records) einer [Datenquelle](../working-with-data-sources.md)
 
 ## <a name="description"></a>Beschreibung
@@ -31,7 +31,7 @@ Die **Refresh**-Funktion ruft eine neue Kopie einer Datenquelle ab.  Sie können
 ## <a name="syntax"></a>Syntax
 **Refresh**( *Datenquelle* )
 
-* *Datenquelle*: Erforderlich. Die Datenquelle, die Sie aktualisieren möchten.
+* *DataSource*: erforderlich. Die Datenquelle, die Sie aktualisieren möchten.
 
 ## <a name="example"></a>Beispiel
 In diesem Beispiel aktualisieren Sie die Datenquelle namens **IceCream** (Eiscreme), die mit den Daten in dieser Tabelle beginnt:

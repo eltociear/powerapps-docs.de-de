@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7cbc7d0a51a4bab24214f31321264d3347fbb152
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f46199d0265cf042ebae5dd27ae308fad7eca8e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649735"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732046"
 ---
-# <a name="shape-controls-and-icon-controls-in-powerapps"></a>Shape-Steuerelemente und Symbole für Steuerelemente in PowerApps
+# <a name="shape-controls-and-icon-controls-in-power-apps"></a>Shape-Steuerelemente und Symbol Steuerelemente in Power apps
 Grafiken, deren Eigenschaften wie Aussehen und Verhalten Sie konfigurieren können
 
 ## <a name="description"></a>Beschreibung
@@ -69,7 +68,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Navigate**( *ScreenName*; *ScreenTransition* )](../functions/function-navigate.md)
+[**Navigate**( *ScreenName*, *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Beispiel
 
@@ -81,7 +80,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 1. Fügen Sie in **Source** ein **Shape**-Steuerelement hinzu, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
 1. Drücken Sie F5, und wählen Sie dann das **Shape** -Steuerelement aus.
 
@@ -89,7 +88,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 1. (optional) Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren, fügen Sie ein **Shape**-Steuerelement zu **Target** hinzu, und legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft des **Shape**-Steuerelements auf diese Formel fest:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 

@@ -1,6 +1,6 @@
 ---
 title: Funktion „User“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „User“ in PowerApps
+description: Referenzinformationen einschließlich Syntax für die Benutzerfunktion in Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f95a6f7769cde01e99bc4c18fab0ae60ae6b8c96
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d4c558e40b9bb351f3ea6b4d202ef4849cb4e85d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680142"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729878"
 ---
-# <a name="user-function-in-powerapps"></a>Funktion „User“ in PowerApps
+# <a name="user-function-in-power-apps"></a>Benutzerfunktion in Power apps
 Gibt Informationen über den aktuellen Benutzer zurück.
 
 ## <a name="description"></a>Beschreibung

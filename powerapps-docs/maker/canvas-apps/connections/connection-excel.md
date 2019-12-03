@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 455ffff4813b457c2a439f2081c10418ace2e306
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ba582906c34b2831fffbfedcf645a00bd7cdb7d6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678716"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728293"
 ---
-# <a name="connect-to-excel-from-powerapps"></a>Herstellen einer Verbindung mit Excel aus PowerApps
+# <a name="connect-to-excel-from-power-apps"></a>Herstellen einer Verbindung mit Excel aus Power apps
 ![Excel](./media/connection-excel/excelicon.png)
 
 Excel stellt eine *Art von Verbindung* dar. So zeigen Sie Excel-Daten in Ihrer App an
@@ -35,7 +35,7 @@ Excel stellt eine *Art von Verbindung* dar. So zeigen Sie Excel-Daten in Ihrer A
 
 In [Übersicht über die Cloudspeicherverbindung](cloud-storage-blob-connections.md) wird veranschaulicht, wie Sie die Verbindung hinzufügen, eine Excel-Tabelle als Datenquelle hinzufügen und die Excel-Daten in der App verwenden.
 
-Weitere Informationen zum Herstellen von Verbindungen mit anderen Datentypen finden Sie in der [Liste der Verbindungen für PowerApps](../connections-list.md).
+Informationen zum Herstellen einer Verbindung mit anderen Datentypen finden Sie in der [Liste der Verbindungen für powerapps](../connections-list.md).
 
 ### <a name="known-limitations"></a>Bekannte Einschränkungen
 Weitere Informationen zum Freigeben von Excel-Daten in Ihrer Organisation erhalten Sie in diesen [Ausführungen zu Einschränkungen](cloud-storage-blob-connections.md#sharing-excel-tables).

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 979c24de10eab4d91a89fbaf9e33b53a09b0ba58
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f53f46562c401e978975da35c81e2ecb77a6673e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676311"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729739"
 ---
-# <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generieren einer Canvas-App aus Excel in PowerApps
+# <a name="generate-a-canvas-app-from-excel-in-power-apps"></a>Generieren einer Canvas-App aus Excel in Power apps
 
 In diesem Thema generieren Sie automatisch Ihre erste Canvas-app in Power Apps mithilfe von Daten aus einer Excel-Tabelle. Sie wählen eine Excel-Datei aus, generieren eine App und führen die generierte App dann aus. Jede generierte App enthält Bildschirme zum Durchsuchen von Datensätzen, Anzeigen von Details der Datensätze sowie zum Erstellen oder Aktualisieren von Datensätzen. Indem Sie eine App generieren, können Sie mithilfe von Excel-Daten schnell eine funktionierende App erstellen. Diese können Sie anschließend an Ihre Anforderungen anpassen. 
 
@@ -37,7 +37,7 @@ Laden Sie die Datei [Flooring Estimates](https://az787822.vo.msecnd.net/document
 
 ## <a name="generate-the-app"></a>Generieren der App
 
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an.
 
 1. Zeigen Sie unter **Eigene App erstellen** auf **Mit Daten beginnen**, und wählen Sie dann **Diese App erstellen** aus.
 

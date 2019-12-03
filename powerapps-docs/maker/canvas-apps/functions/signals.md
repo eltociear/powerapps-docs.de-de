@@ -1,6 +1,6 @@
 ---
 title: Die Signale „Acceleration“, „App“, „Compass“, „Connection“ und „Location“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Signale „Acceleration“, „App“, „Compass“, „Connection“ und „Location“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Sensoren "Beschleunigung", "App", "Compass", "Connection" und "Location" in Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a06217470482eccdf368279eaabcd297bbf73ce5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 9cd0470d6911452b38040531ec17060b3bc69fa0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983364"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729582"
 ---
-# <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Die Signale „Acceleration“, „App“, „Compass“, „Connection“ und „Location“
+# <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Signale für Beschleunigung, APP, Kompass, Verbindung und Standort in Power apps
 
 Gibt Informationen zur App-Umgebung zurück, z.B. den Standort des Benutzers und welcher Bildschirm angezeigt wird
 
@@ -51,7 +51,7 @@ Neben anderen Eigenschaften enthält das **App** -Objekt ein Signal, das angibt,
 | --- | --- |
 | **App.ActiveScreen** |Bildschirm, der angezeigt wird. Gibt ein Bildschirm Objekt zurück, mit dem Sie auf Eigenschaften des Bildschirms verweisen oder mit einem anderen Bildschirm vergleichen können, um zu bestimmen, welcher Bildschirm angezeigt wird. Mit der **[Back](function-navigate.md)** -oder **[Navigate](function-navigate.md)** -Funktion können Sie den Bildschirm ändern, der angezeigt wird. |
 
-Weitere Informationen finden Sie unter: Dokumentation zu [ **App** -Objekten](object-app.md) .
+Weitere Informationen finden Sie unter Dokumentation zu [ **App** -Objekten](object-app.md) .
 
 ### <a name="compass"></a>Compass
 Das Signal **Compass** gibt die Kompassausrichtung des oberen Bildschirmrands zurück. Die Ausrichtung basiert auf dem elektromagnetischen Norden.
@@ -60,7 +60,7 @@ Das Signal **Compass** gibt die Kompassausrichtung des oberen Bildschirmrands zu
 | --- | --- |
 | **Compass.Heading** |Ausrichtung in Grad.  Gibt eine Zahl von 0 bis 360 zurück, 0 ist Norden. |
 
-### <a name="connection"></a>Verbindung
+### <a name="connection"></a>Connection
 Das Signal **Connection** gibt die Informationen über die Netzwerkverbindung zurück. Bei einer getakteten Verbindung empfiehlt es sich, die über das Netzwerk gesendeten oder empfangenen Daten zu beschränken.
 
 | Eigenschaft | Beschreibung |
@@ -93,7 +93,7 @@ In einem Baseball-Feld löst ein Pitcher ein Telefon aus dem Muter des Pitcher a
 | **Acceleration.X** |Gibt die Beschleunigung des Geräts von linkem zu rechtem Rand an. Der Pitcher wirft das Gerät in Bezug auf den oberen Bildschirmrand geradeaus, sodass das Gerät nicht von Seite zu Seite beschleunigt. |0 |
 | **Acceleration.Y** |Gibt die Beschleunigung des Geräts zwischen Vorder- und Rückseite an. Der Pitcher beschleunigt das Gerät anfänglich durch den Wurf erheblich, von 0 auf 90 Meilen pro Stunde (132 Fuß pro Sekunde) innerhalb einer halben Sekunde. Einmal in der Luft beschleunigt das Telefon, wenn die Luftreibung außen vor gelassen wird, nicht weiter. Das Gerät wird verlangsamt, wenn der Catcher es fängt, und wird angehalten. |8.2, während der Pitcher das Geräts wirft<br><br>0, während sich das Gerät in der Luft befindet<br><br>-8.2, während der Catcher das Gerät fängt |
 | **Acceleration.Z** |Gibt die Beschleunigung des Geräts vom oberen zum unteren Rand an. Das Telefon unterliegt in der Luft den Auswirkungen der Schwerkraft. |0, bevor der Pitcher das Geräts wirft<br><br>1, während sich das Gerät in der Luft befindet<br><br>0, nachdem der Catcher das Gerät gefangen hat |
-| **Acceleration** |Gibt die Beschleunigung als Datensatz zurück |STUBEN 0, Y: 264, Z: 0}, da der Pitcher das Gerät auslöst. |
+| **Acceleration** |Gibt die Beschleunigung als Datensatz zurück |{ X: 0, Y: 264, Z: 0 }, während der Pitcher das Telefon wirft |
 | **Connection.Connected** |Gibt einen booleschen Wert zurück, der angibt, ob das Gerät mit einem Netzwerk verbunden ist |**TRUE** |
 | **Connection.Metered** |Gibt einen booleschen Wert zurück, der angibt, ob die Verbindung getaktet ist |**TRUE** |
 | **App.ActiveScreen = PlayBall** |Gibt einen booleschen Wert zurück, der angibt, ob **PlayBall** angezeigt wird. |**TRUE** |

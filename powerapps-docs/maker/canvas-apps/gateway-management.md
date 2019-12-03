@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5ac2eaf3a0cfa4dc5c2a2150aa4a02ab127e5154
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b7d4471fde0bf22ec2900f303347d5d4783381ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676534"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729563"
 ---
-# <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Verwalten eines lokalen Datengateways in PowerApps
+# <a name="manage-an-on-premises-data-gateway-in-power-apps"></a>Verwalten eines lokalen Daten Gateways in powerapps
 
 Installieren Sie ein lokales Daten Gateway, um Daten schnell und sicher zwischen einer Canvas-APP zu übertragen, die in powerapps erstellt wurde, und einer Datenquelle, die sich nicht in der Cloud befindet, wie z. b. eine lokale SQL Server-Datenbank oder eine lokale SharePoint-Website. Zeigen Sie alle Gateways an, für die Sie Administratorberechtigungen haben, und verwalten Sie Berechtigungen und Verbindungen für diese Gateways.
 
@@ -35,7 +35,7 @@ Ein Gateway ermöglicht Ihnen die folgenden Verbindungen mit lokalen Daten:
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* Benutzername und Kennwort, mit dem Sie sich für PowerApps [registriert](../signup-for-powerapps.md) haben
+* Der Benutzername und das Kennwort, die [Sie für die Registrierung bei Power](../signup-for-powerapps.md) Apps verwendet haben.
 * Administrative Berechtigungen für ein Gateway (Sie verfügen über diese Berechtigungen standardmäßig für jedes Gateway, das Sie installieren, und ein Administrator eines anderen Gateways kann Ihnen diese Berechtigungen für jenes Gateway erteilen.)
 * Eine Lizenz, die Zugriff auf lokale Daten über ein lokales Gateway unterstützt. Weitere Informationen finden Sie im Abschnitt "Verbindungen" auf der Seite mit den [Preisinformationen](https://powerapps.microsoft.com/pricing/).
 * Gateways und lokale Verbindungen können nur in der [Standardumgebung](working-with-environments.md) des Benutzers erstellt und verwendet werden.

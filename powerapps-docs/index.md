@@ -1,7 +1,7 @@
 ---
 layout: HubPage
-title: Dokumentation für Microsoft PowerApps | Microsoft-Dokumentation
-description: Dokumentation zu Microsoft PowerApps
+title: Microsoft Power Apps-Dokumentation | Microsoft-Dokumentation
+description: Microsoft Power Apps-Dokumentation
 searchScope:
 - PowerApps
 featureFlags:
@@ -9,17 +9,17 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 470d8e2a144e708162b886f6127bd6f9a498d093
-ms.sourcegitcommit: 6bec6932071db2411bb4ad1e01c059f57d8c9bca
+ms.openlocfilehash: ff7ac06904426ad990a99098b97814701e24ee22
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566966"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680188"
 ---
 <div id="main"
    class="v2">
    <div class="container">
-      <h1>Dokumentation zu PowerApps</h1>
+      <h1>Power Apps-Dokumentation</h1>
       <ul class="pivots">
          <li>
             <a href="#home"></a>
@@ -42,8 +42,8 @@ ms.locfileid: "73566966"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Was ist PowerApps?</h3>
-                                             <p>Machen Sie sich mit der Dokumentation vertraut, indem Sie sich zunächst einen Überblick über PowerApps verschaffen.</p>
+                                             <h3>Was ist Power Apps?</h3>
+                                             <p>Machen Sie sich mit der Dokumentation vertraut, indem Sie sich zunächst einen Überblick über Power Apps verschaffen.</p>
                                           </div>
                                        </div>
                                     </div>
@@ -80,8 +80,8 @@ ms.locfileid: "73566966"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Erfahren Sie mehr über PowerApps</h3>
-                                             <p>Entdecken Sie Lernpfade in Microsoft Learn, die ausführliche Anleitungen zum Einstieg in PowerApps bereitstellen. Kostenlos!</p>
+                                             <h3>Power Apps kennen lernen</h3>
+                                             <p>Entdecken Sie Lernpfade in Microsoft Learn, die Schrittanleitungen zum Einstieg in Power Apps bereitstellen. Kostenlos!</p>
                                           </div>
                                        </div>
                                     </div>
@@ -100,7 +100,7 @@ ms.locfileid: "73566966"
                                           </div>
                                           <div class="cardText">
                                              <h3>Blog</h3>
-                                             <p>Lesen Sie im offiziellen PowerApps-Blog alles über die neuesten PowerApps-Features und -Ankündigungen.</p>
+                                             <p>Informieren Sie sich im offiziellen Power Apps-Blog über die neuesten Power Apps-Features und -Ankündigungen.</p>
                                           </div>
                                        </div>
                                     </div>
@@ -119,7 +119,7 @@ ms.locfileid: "73566966"
                                           </div>
                                           <div class="cardText">
                                              <h3>Community</h3>
-                                             <p>Nehmen Sie im PowerApps-Communityforum Kontakt mit Kollegen auf, tauschen Sie Ideen aus, und lernen Sie von Experten.</p>
+                                             <p>Nehmen Sie im Power Apps-Communityforum Kontakt mit Kollegen auf, tauschen Sie Ideen aus, und lernen Sie von Experten.</p>
                                           </div>
                                        </div>
                                     </div>
@@ -138,7 +138,7 @@ ms.locfileid: "73566966"
                                           </div>
                                           <div class="cardText">
                                              <h3>Lizenzierung</h3>
-                                             <p>Lernen Sie die verschiedenen Lizenzierungsoptionen für PowerApps kennen.</p>
+                                             <p>Lernen Sie die verschiedenen Lizenzierungsoptionen für Power Apps kennen.</p>
                                           </div>
                                        </div>
                                     </div>
@@ -215,7 +215,7 @@ ms.locfileid: "73566966"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. Sie können in PowerApps drei Arten von Apps erstellen: <strong>Canvas-Apps</strong>, <strong>modellgesteuerte Apps</strong> und <strong>Portale</strong>. <strong>Common Data Service</strong> ist eine Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen finden Sie unter: <a href="/powerapps/maker">Erstellen von Apps</a>.</p>
+                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. Sie können in Power Apps drei Arten von Apps erstellen: <strong>Canvas-Apps</strong>, <strong>modellgesteuerte Apps</strong> und <strong>Portale</strong>. <strong>Common Data Service</strong> ist eine Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen finden Sie unter: <a href="/powerapps/maker">Erstellen von Apps</a>.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -290,11 +290,11 @@ ms.locfileid: "73566966"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Portals</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Was ist PowerApps Portals?</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Was sind Power Apps-Portale?</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Erstellen eines Portals</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">Verwalten vorhandener Portale</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">Portalverwaltung</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Häufig gestellte Fragen zu PowerApps Portals</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Häufig gestellte Fragen zu Power Apps-Portalen</a></p>
                                  </div>
                               </div>
                            </div>
@@ -334,7 +334,7 @@ ms.locfileid: "73566966"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>Administratoren können das Center für PowerApps und das Admin Center für die Power-Plattform zum Schützen von Daten, Verwalten von Umgebungen und zur Nutzungsüberwachung verwenden.</p>
+                           <p>Administratoren können das Admin Center für Power Platform verwenden, um Daten zu schützen, Umgebungen zu verwalten und die Nutzung zu überwachen.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -393,7 +393,7 @@ ms.locfileid: "73566966"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/pricing-billing-skus">Übersicht über die Lizenzierung</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-entity-licenses">Lizenzanforderungen für Entitäten</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-us-government">PowerApps, US-Regierung</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-us-government">Power Apps für US-Regierungsbehörden</a></p>
                                  </div>
                               </div>
                            </div>
@@ -491,7 +491,7 @@ ms.locfileid: "73566966"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-visualizations-dashboards">Anpassen von Visualisierungen und Dashboards</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">Anwenden von Geschäftslogik durch Erstellen von Clientskripts</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-commands-ribbon">Anpassen von Befehlen und Menübändern</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">Erstellen benutzerdefinierter Komponenten (PowerApps-Komponentenframework)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">Erstellen benutzerdefinierter Komponenten (Power Apps-Komponentenframework)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/create-manage-model-driven-apps-using-code">Erstellen, Verwalten und Veröffentlichen einer App</a></p>
                                  </div>
                               </div>
@@ -602,10 +602,10 @@ ms.locfileid: "73566966"
                                     <h3 style="font-size: 1.15rem">Packen und Verteilen von Apps oder Erweiterungen</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/introduction-solutions">Verwenden von Lösungen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">PowerApps-Buildtools für Azure DevOps</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Power Apps-Buildtools für Azure DevOps</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">SolutionPackager-Tool</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">PackageDeployer-Tool</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Verwenden der PowerApps-Überprüfung</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Verwenden der Power Apps-Überprüfung</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV-App-Verwaltung und -Überwachung</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Veröffentlichen einer App in AppSource</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>

@@ -1,6 +1,6 @@
 ---
 title: Verwenden einer Beispiel-App | Microsoft-Dokumentation
-description: Ausführliche Anleitungen zum Erstellen einer Canvas-App auf Grundlage eines Beispiels in PowerApps
+description: Schritt-für-Schritt-Anleitungen zum Erstellen einer Canvas-App basierend auf einem Beispiel in Power apps
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e6ebc516c6b07f149e2b965b967966c3832476c9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 853edb00d0325e287ff69149e1d807ff2529b915
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675502"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732811"
 ---
-# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Erstellen einer Canvas-App aus einem Beispiel in powerapps
+# <a name="create-a-canvas-app-from-a-sample-in-power-apps"></a>Erstellen einer Canvas-App aus einem Beispiel in Power apps
 In diesem Schnellstart erstellen Sie eine Canvas-App aus einem Beispiel. Dadurch können Sie die verschiedenen Möglichkeiten entdecken, diese zu gestalten und Konzepte entdecken, die Sie anwenden können, wenn Sie eigene Canvas-Apps entwickeln.
 
 Jedes Beispiel stellt ein reales Szenario dar, verwendet jedoch fiktive Daten. Sie benötigen ein Cloudspeicherkonto wie Dropbox, Google Drive oder OneDrive, um diese Daten zu speichern.
@@ -28,7 +28,7 @@ Jedes Beispiel stellt ein reales Szenario dar, verwendet jedoch fiktive Daten. S
 Wenn Sie nicht über eine Lizenz für Power apps verfügen, können Sie [sich kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Öffnen von Beispiel-Apps
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an.
 
 1. Zeigen Sie in der Liste der Beispiel-Apps mit der Maus auf eine Beispiel-App (z.B. **Cost Estimator**).
 
@@ -52,7 +52,7 @@ Wenn Sie nicht über eine Lizenz für Power apps verfügen, können Sie [sich ko
     - Erfassen Sie Informationen wie Adresse und Quadratmeterzahl, und schätzen Sie den Preis basierend auf Rabatten und Steuersätzen.
     - Filtern Sie in der Liste der Beauftragungen, um die anzuzeigen, für die Schätzungen erstellt wurden, für die keine Schätzungen erstellt wurden, oder um alle Beauftragungen anzuzeigen.
     
-1. Wenn Sie mit dem Erkunden der App fertig sind, schließen Sie den Vorschaumodus durch Drücken der ESC-TASTE (oder durch Klicken oder Tippen auf das Schließen-Symbol in der Nähe der oberen linken Ecke unter der Titelleiste für PowerApps).
+1. Wenn Sie mit dem Durchsuchen der APP fertig sind, schließen Sie den Vorschaumodus durch Drücken der ESC-Taste (oder durch Klicken oder tippen auf das Schließen-Symbol in der Nähe der oberen rechten Ecke unter der Titelleiste für powerapps).
 
 ## <a name="save-the-app"></a>Speichern der App
 1. Klicken oder tippen Sie in der Nähe der oberen linken Ecke auf die Registerkarte **Datei**.

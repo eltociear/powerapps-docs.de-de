@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5839de0a35adeee8106d583638edb50c5d53ab21
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e65bbf31ade0d6eda655d5d307dd8af7ea9b024d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993150"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731887"
 ---
-# <a name="text-properties-in-powerapps"></a>Texteigenschaften in PowerApps
+# <a name="text-properties-in-power-apps"></a>Text Eigenschaften in Power apps
 Konfigurieren Sie den für ein Steuerelement angezeigten Text in einer QuickInfo oder als Hinweis für Benutzer bei der Dateneingabe, und geben Sie andere textbezogene Merkmale an.
 
 ## <a name="text-appearance"></a>Textdarstellung
 **Font**: Der Name der Schriftfamilie des angezeigten Texts.
 
-* Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[HTML-Text](control-html-text.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Kreisdiagramm](control-pie-chart.md)** , **[Optionsfeld](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
+* Gilt für Steuerelemente zum **[Hinzufügen von Bild](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Datums](control-date-picker.md)** **[Auswahl, Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[HTML-Text](control-html-text.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , Kreis **[Diagramm](control-pie-chart.md)** **[, Optionsfeld,](control-radio.md)** **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
 
-**FontWeight** – die Gewichtung des Texts in einem-Steuerelement: **Fett**, **halb Fett**, **Normal**oder **heller**.
+**FontWeight**: Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
 
 * Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Listenfeld](control-list-box.md)** , **[Optionsfeld](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
 
@@ -38,7 +38,7 @@ Konfigurieren Sie den für ein Steuerelement angezeigten Text in einer QuickInfo
 
 **Size**: Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
-* Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[HTML-Text](control-html-text.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Stifteingabe](control-pen-input.md)** , **[Kreisdiagramm](control-pie-chart.md)** , **[Optionsfeld](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
+* Gilt für **[das Hinzufügen von Bild](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Datums](control-date-picker.md)** **[Auswahl, Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[HTML-Text](control-html-text.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Stift Eingabe](control-pen-input.md)** , Kreis **[Diagramm](control-pie-chart.md)** , **[Radio](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** -Steuerelemente.
 
 **Strikethrough**: Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 

@@ -1,6 +1,6 @@
 - name: Erste Schritte
   items:
-    - name: Was ist PowerApps?
+    - name: Was ist Power Apps?
       href: ../powerapps-overview.md
     - name: Für 30-Tage-Testversion registrieren
       href: signup-for-powerapps.md
@@ -118,7 +118,7 @@
   items:
     - name: Übersicht
       href: index.md
-    - name: Bei PowerApps anmelden
+    - name: Bei Power Apps anmelden
       href: ./canvas-apps/intro-maker-portal.md
 - name: Canvas-Apps
   items:
@@ -168,7 +168,7 @@
           href: ./canvas-apps/get-started-test-drive.md
     - name: Entwerfen und Erstellen einer App
       items:
-        - name: Mit Daten verbinden
+        - name: Herstellen einer Datenverbindung
           items:
             - name: Liste der Verbindungen
               href: ./canvas-apps/connections-list.md
@@ -196,7 +196,7 @@
                   href: canvas-apps/connections/connection-powerbi.md
                 - name: SharePoint
                   href: canvas-apps/connections/connection-sharepoint-online.md
-                - name: "SQL\_Server"
+                - name: SQL Server
                   href: canvas-apps/connections/connection-azure-sqldatabase.md
                 - name: Twitter
                   href: canvas-apps/connections/connection-twitter.md
@@ -322,7 +322,7 @@
                   href: ./canvas-apps/controls/control-html-text.md
                 - name: Symbol
                   href: ./canvas-apps/controls/control-shapes-icons.md
-                - name: Image
+                - name: Bild
                   href: ./canvas-apps/controls/control-image.md
                 - name: Importieren
                   href: ./canvas-apps/controls/control-export-import.md
@@ -372,7 +372,7 @@
                   href: ./canvas-apps/controls/properties-color-border.md
                 - name: Kern
                   href: ./canvas-apps/controls/properties-core.md
-                - name: Image
+                - name: Bild
                   href: ./canvas-apps/controls/properties-visual.md
                 - name: Größe und Speicherort
                   href: ./canvas-apps/controls/properties-size-location.md
@@ -552,7 +552,7 @@
                   href: ./canvas-apps/functions/function-astype-istype.md
                 - name: JSON
                   href: ./canvas-apps/functions/function-json.md
-                - name: Sprache
+                - name: Language
                   href: ./canvas-apps/functions/function-language.md
                 - name: Last
                   href: ./canvas-apps/functions/function-first-last.md
@@ -578,7 +578,7 @@
                   href: ./canvas-apps/functions/function-ismatch.md
                 - name: MatchAll
                   href: ./canvas-apps/functions/function-ismatch.md
-                - name: Max.
+                - name: Max
                   href: ./canvas-apps/functions/function-aggregates.md
                 - name: Mid
                   href: ./canvas-apps/functions/function-left-mid-right.md
@@ -620,11 +620,11 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Rand
                   href: ./canvas-apps/functions/function-rand.md
-                - name: Aktualisieren
+                - name: Refresh
                   href: ./canvas-apps/functions/function-refresh.md
                 - name: Relate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Entfernen
+                - name: Remove
                   href: ./canvas-apps/functions/function-remove-removeif.md
                 - name: RemoveIf
                   href: ./canvas-apps/functions/function-remove-removeif.md
@@ -730,7 +730,7 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Mit
                   href: ./canvas-apps/functions/function-with.md
-                - name: Jahr
+                - name: Year
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Erstellen einer App in einer Lösung
           href: ./canvas-apps/add-app-solution.md
@@ -788,7 +788,7 @@
           href: ./canvas-apps/set-name-tile.md
         - name: Verwalten von Anzeigen
           items:
-            - name: Bildschirmgröße und -ausrichtung ändern
+            - name: Ändern der Bildschirmgröße und -ausrichtung
               href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
             - name: Erstellen dynamischer Layouts
               href: ./canvas-apps/create-responsive-layout.md
@@ -796,7 +796,7 @@
       items:
         - name: Vornehmen einfacher Änderungen
           href: ./canvas-apps/customize-list-form.md
-        - name: Grundlegendes zur SharePoint-Formularintegration
+        - name: Grundlegendes zur Integration von SharePoint-Formularen
           href: ./canvas-apps/sharepoint-form-integration.md
     - name: In andere Technologien integrieren
       items:
@@ -824,7 +824,7 @@
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
-        - name: InfoPath-Formulare zu PowerApps transformieren
+        - name: InfoPath-Formulare in Power Apps-Formulare transformieren
           href: ./canvas-apps/transform-infopath.md
     - name: Für Entwickler
       items:
@@ -1096,7 +1096,7 @@
           href: ./model-driven-apps/checklist-transition-unified-interface.md
         - name: 'Häufig gestellte Fragen: Übergang zur einheitlichen Benutzeroberfläche'
           href: ./model-driven-apps/faqs-transition-unified-interface.md
-    - name: Barrierefreiheit im PowerApps-App-Designer
+    - name: Barrierefreiheit im Power Apps-App-Designer
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Anpassen der Dynamics 365-App für Outlook
       href: ./model-driven-apps/app-for-outlook-customize.md
@@ -1104,7 +1104,7 @@
       href: ../developer/model-driven-apps/overview.md
 - name: Portals
   items:
-    - name: Was ist PowerApps Portals?
+    - name: Was sind Power Apps-Portale?
       href: ./portals/overview.md
     - name: Entwerfen und Erstellen eines Portals
       items:
@@ -1116,7 +1116,7 @@
           href: ./portals/create-dynamics-portal.md
         - name: Bereitstellen eines Portals mit dem älteren Portal-Add-On
           href: ./portals/provision-portal-add-on.md
-        - name: PowerApps Portals Studio – Aufbau
+        - name: Power Apps-Portale – Aufbau des Studios
           href: ./portals/portal-designer-anatomy.md
         - name: Unterstützte Webbrowser für den Portal-Designer
           href: ./portals/supported-browser.md
@@ -1162,7 +1162,7 @@
           href: ./portals/admin/manage-auth-key.md
         - name: Einrichten einer IP-Adresseinschränkung
           href: ./portals/admin/ip-address-restrict.md
-        - name: Update für die PowerApps Portals-Domäne
+        - name: Update für die Domäne der Power Apps-Portale
           href: ./portals/admin/update-portal-domain.md
         - name: Löschen des serverseitigen Caches
           href: ./portals/admin/clear-server-side-cache.md
@@ -1196,7 +1196,7 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: Migrieren von Identitätsanbietern zu Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
-        - name: Suchen
+        - name: Search
           items:
             - name: Informationen zur Suche
               href: ./portals/configure/search.md
@@ -1288,7 +1288,7 @@
                   href: ./portals/liquid/variable-tags.md
                 - name: Vorlagentags
                   href: ./portals/liquid/template-tags.md
-                - name: PowerApps Common Data Service-Entitätstags
+                - name: Common Data Service-Entitätstags
                   href: ./portals/liquid/portals-entity-tags.md
             - name: Verfügbare Liquid-Filter
               href: ./portals/liquid/liquid-filters.md
@@ -1336,7 +1336,7 @@
           href: ./portals/manage-sharepoint-documents.md
     - name: Bekannte Probleme
       href: ./portals/known-issues.md
-    - name: Häufig gestellte Fragen zu PowerApps Portals
+    - name: Häufig gestellte Fragen zu Power Apps-Portalen
       href: ./portals/faq.md
 - name: Common Data Service
   items:
@@ -1362,13 +1362,13 @@
           href: ./common-data-service/create-edit-virtual-entities.md
         - name: OData v4-Datenanbieter für virtuelle Entität
           href: ./common-data-service/virtual-entity-odata-provider-requirements.md
-        - name: Definieren von Alternativschlüsseln über das PowerApps-Portal
+        - name: Definieren von Alternativschlüsseln über das Power Apps-Portal
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: Definieren von Alternativschlüsseln über den Projektmappen-Explorer
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
         - name: 'Exemplarische Vorgehensweisen: Einrichtung'
           items:
-            - name: Erstellen von Entitäten über das PowerApps-Portal
+            - name: Erstellen von Entitäten über das Power Apps-Portal
               href: ./common-data-service/create-edit-entities-portal.md
             - name: Erstellen von Entitäten mit dem Projektmappen-Explorer
               href: ./common-data-service/create-edit-entities-solution-explorer.md
@@ -1407,7 +1407,7 @@
           href: ./common-data-service/create-edit-1n-relationships-portal.md
         - name: Erstellen von Entitätsbeziehungen im Verhältnis „Eins-zu-viele“ über den Projektmappen-Explorer
           href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
-        - name: 'Erstellen von m:n-Entitätsbeziehungen über das PowerApps-Portal'
+        - name: 'Erstellen von m:n-Entitätsbeziehungen über das Power Apps-Portal'
           href: ./common-data-service/create-edit-nn-relationships-portal.md
         - name: Festlegen von verwalteten Eigenschaften für Entitätsbeziehungen
           href: ./common-data-service/set-managed-properties-relationships.md
@@ -1419,9 +1419,9 @@
           href: ./common-data-service/configure-connection-roles.md
         - name: 'Exemplarische Vorgehensweisen: Beziehungen'
           items:
-            - name: 'Erstellen von m:n-Beziehungen über das PowerApps-Portal'
+            - name: 'Erstellen von m:n-Beziehungen über das Power Apps-Portal'
               href: ./common-data-service/create-edit-nn-relationships-portal.md
-            - name: 'Erstellen von m:n-Beziehungen über den PowerApps-Lösungs-Explorer'
+            - name: 'Erstellen von m:n-Beziehungen über den Power Apps-Projektmappen-Explorer'
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
             - name: Festlegen von verwalteten Eigenschaften für Beziehungen
               href: ./common-data-service/set-managed-properties-relationships.md
@@ -1450,11 +1450,11 @@
               href: ./common-data-service/create-edit-fields.md
             - name: Verwalten von Feldern
               href: ./common-data-service/data-platform-manage-fields.md
-            - name: Erstellen von Feldern über das PowerApps-Portal
+            - name: Erstellen von Feldern über das Power Apps-Portal
               href: ./common-data-service/create-edit-field-portal.md
-            - name: Erstellen von Feldern über den PowerApps-Lösungs-Explorer
+            - name: Erstellen von Feldern über den Power Apps-Projektmappen-Explorer
               href: ./common-data-service/create-edit-field-solution-explorer.md
-            - name: Erstellen eines Optionssatzes über das PowerApps-Portal
+            - name: Erstellen eines Optionssatzes über das Power Apps-Portal
               href: ./common-data-service/custom-picklists.md
             - name: Erstellen eines Optionssatzes über den Lösungs-Explorer
               href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
@@ -1538,7 +1538,7 @@
       href: ../developer/common-data-service/overview.md
 - name: AI Builder
   items:
-    - name: Verwenden von AI Builder in PowerApps
+    - name: Verwenden von AI Builder in Power Apps
       href: ../use-ai-builder.md
 - name: Von anderen Benutzern lernen
   items:
@@ -1556,7 +1556,7 @@
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: Abrufen einer Sitzungs- oder App-ID
       href: ./canvas-apps/get-sessionid.md
-    - name: Problembehandlung bei Startproblemen für PowerApps
+    - name: Behandlung von Startproblemen bei Power Apps
       href: troubleshooting-startup-issues.md
     - name: Problembehandlung in Power Query
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md

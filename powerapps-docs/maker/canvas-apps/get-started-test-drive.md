@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eac22ce84d5864e79c2964d42ffa5fe37853bc97
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 682657a62db520c431bd0f594a87ae50c5e3ac0c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676250"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732174"
 ---
-# <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Erstellen einer Canvas-App aus einer Vorlage in PowerApps
+# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Erstellen einer Canvas-App aus einer Vorlage in powerapps
 
 Erstellen Sie eine Canvas-App automatisch aus einer Vorlage für ein bestimmtes Szenario, z.B. das Nachverfolgen von Budgets oder das Planen von Urlauben, und führen Sie die App dann aus, um deren Standardverhalten nachvollziehen zu können.
 
@@ -30,7 +30,7 @@ Wenn Sie nicht über eine Lizenz für Power apps verfügen, können Sie [sich ko
 
 ## <a name="create-an-app"></a>Erstellen einer App
 
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an.
 
 1. Zeigen Sie unter **Eigene App erstellen** auf **Mit Daten beginnen**, und klicken oder tippen Sie dann auf **Diese App erstellen**.
 

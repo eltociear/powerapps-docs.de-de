@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a28ce0103157ae877fa8f21d156998e8ea6c684c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d9080ddeb1499d2608137aa07287b5b8b9c8cb5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985843"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731866"
 ---
-# <a name="image-properties-in-powerapps"></a>Bildeigenschaften in PowerApps
+# <a name="image-properties-in-power-apps"></a>Bildeigenschaften in Power apps
 Konfigurieren Sie grafische Elemente in der App, z.B. Bilder, Fotos und Elemente eines Stift-Steuerelements.
 
 **BackgroundImage**: Der Name einer Bilddatei, die als Hintergrund einer Bildschirmansicht angezeigt wird.

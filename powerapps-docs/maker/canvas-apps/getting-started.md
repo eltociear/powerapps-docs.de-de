@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 600e474117290c5f52793c1d9c3ec72aefc35783
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 543084f04e2c5456182a17f4f193c5cf722cbe27
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676651"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729529"
 ---
 # <a name="what-are-canvas-apps-in-power-apps"></a>Was sind Canvas-apps in powerapps?
 Entwerfen und erstellen Sie eine Geschäfts-App aus einer Canvas in Microsoft powerapps, ohne Code in einer herkömmlichen Programmiersprache C#, wie z. b., zu schreiben. Entwerfen Sie die App, indem Sie Elemente auf eine Canvas ziehen und dort platzieren wie beim Erstellen einer Folie in PowerPoint. Erstellen Sie Ausdrücke wie in Excel zum Angeben von Logik und für die Arbeit mit Daten. Erstellen Sie Apps, die Geschäftsdaten aus einer [großen Auswahl an Microsoft- und Drittanbieterquellen](connections-list.md) integrieren. Teilen Sie Ihre App, sodass Benutzer sie in einem Browser oder auf einem mobilen Gerät ausführen können, und betten Sie sie ein, damit Benutzer sie in SharePoint, Power BI oder Teams ausführen können.
@@ -48,7 +48,7 @@ Führen Sie Ihre eigenen Apps – und alle Apps, die für Sie freigegeben wurden
 
 ## <a name="learn-more"></a>Weitere Informationen
 * Durchsuchen Sie die Anleitungen, Konzept- und Referenzthemen im Navigationsbereich auf der linken Seite.
-* Sehen Sie sich die [Webinare](webinars-listing.md) an, auf die Sie bei Bedarf zugreifen können und in denen die Features und Funktionen von PowerApps behandelt werden.
+* Sehen Sie sich die [Webinare](webinars-listing.md) an, auf die Sie Bedarfs gesteuert zugreifen können, um Sie bei der Nutzung der Features und Funktionen von Power apps zu unterstützen.
 * Überprüfen Sie die [Codierungsstandards](https://aka.ms/powerappscanvasguidelines) , um die APP-Leistung zu maximieren und apps leichter zu verwalten.
 
 ## <a name="share-your-experience"></a>Teilen Sie Ihre Erfahrungen
@@ -58,5 +58,5 @@ Führen Sie Ihre eigenen Apps – und alle Apps, die für Sie freigegeben wurden
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Für eine kostenlose Lizenz registrieren](../signup-for-powerapps.md)
-- [Bei PowerApps anmelden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+- [Melden Sie sich bei powerapps an.](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 - [Eine Beispiel-App öffnen](open-and-run-a-sample-app.md)

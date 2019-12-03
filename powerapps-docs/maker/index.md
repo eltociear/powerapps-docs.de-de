@@ -9,21 +9,21 @@ ms.custom: canvas
 ms.date: 07/18/2018
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a0430ab6b3baebf1a4144c52c63526745cd13928
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0af87fb6e8263878bd25ee740f7e852f68bfed47
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987799"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680717"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>Übersicht über das Erstellen von Apps in PowerApps
 
-PowerApps ist eine hochproduktive Entwicklungsplattform für Geschäfts-Apps und umfasst vier Hauptkomponenten:
+Power Apps ist eine hochproduktive Entwicklungsplattform für Geschäftsanwendungen und umfasst vier Hauptkomponenten:
 
 - Bei [Canvas-Apps](canvas-apps/getting-started.md) beginnen Sie mit der Benutzeroberfläche, erstellen eine stark angepasste, leistungsfähige Schnittstelle und verbinden diesen mit Ihrer Auswahl aus 200 Datenquellen. Sie können Canvas-Apps für mobile Anwendungen sowie für Web- und Tabletanwendungen erstellen.
 - Bei [modellgesteuerten Apps](model-driven-apps/model-driven-app-overview.md) beginnen Sie mit Ihrem Datenmodell. Die Erstellung beginnt bei der Form Ihrer wichtigsten Geschäftsdaten und -prozesse in Common Data Service. Auf dieser Grundlage werden Formulare, Ansichten und andere Komponenten modelliert. Modellgesteuerte Apps generieren automatisch eine leistungsstarke UI, die geräteübergreifend reagiert.
 - In [Portals](portals/overview.md) beginnen Sie mit der Erstellung externer Websites, bei denen sich Benutzer außerhalb Ihrer Organisation mit einer Vielzahl von Identitäten anmelden, Daten in Common Data Service erstellen und anzeigen oder sogar Inhalte anonym durchsuchen können.
-- Bei [Common Data Service](common-data-service/data-platform-intro.md) handelt es sich um die in PowerApps enthaltene Datenplattform, die Ihnen das Speichern und Modellieren von Geschäftsdaten ermöglicht. Auf dieser Plattform werden Dynamics 365-Anwendungen erstellt. Wenn Sie ein Kunde von Dynamics sind, befinden Ihre Daten sich bereits in Common Data Service.
+- Bei [Common Data Service](common-data-service/data-platform-intro.md) handelt es sich um die in Power Apps enthaltene Datenplattform, mit der Sie Geschäftsdaten speichern und modellieren können. Auf dieser Plattform werden Dynamics 365-Anwendungen erstellt. Wenn Sie ein Kunde von Dynamics sind, befinden Ihre Daten sich bereits in Common Data Service.
 
 Sie können Ihre erste App schnell und einfach erstellen. Es gibt einen 30-tägigen Testplan und einen kostenlosen Communityplan. Finden Sie heraus, welcher Plan am besten zu Ihnen passt, und legen Sie los.
 
@@ -36,7 +36,7 @@ Sie können Ihre App mithilfe der Microsoft-Tools erstellen, in denen sich Ihre 
 - [Anhand einer SharePoint-Liste](canvas-apps/app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)
 - [Anhand eines Power BI-Dashboards](canvas-apps/embed-powerapps-powerbi.md)
 
-Das Erstellen einer Canvas-App ist einfach. Mit PowerApps können Sie Ihre App auf verschiedene Arten suchen oder erstellen:
+Das Erstellen einer Canvas-App ist einfach. Mit Power Apps können Sie Ihre App auf verschiedene Arten suchen oder erstellen:
 
 - [Anhand von Daten](canvas-apps/app-from-sharepoint.md)
 - [Anhand eines Beispiels](canvas-apps/open-and-run-a-sample-app.md)
@@ -46,7 +46,7 @@ Das Erstellen einer Canvas-App ist einfach. Mit PowerApps können Sie Ihre App a
 
 ## <a name="model-driven-apps"></a>Modellgesteuerte Apps
 
-Wenn Sie eine modellgesteuerte App erstellen, können Sie die gesamte Leistungsfähigkeit von Common Data Service verwenden, um Ihre Formulare, Geschäftsregeln und Prozessabläufe schnell zu konfigurieren. Eine modellgesteuerte App wird über die PowerApps-Website erstellt.
+Wenn Sie eine modellgesteuerte App erstellen, können Sie die gesamte Leistungsfähigkeit von Common Data Service verwenden, um Ihre Formulare, Geschäftsregeln und Prozessabläufe schnell zu konfigurieren. Eine modellgesteuerte App wird über die Power Apps-Website erstellt.
 
 Die ersten Schritte mit modellgesteuerten Apps sind einfach. Sie können mit folgenden Themen beginnen:
 

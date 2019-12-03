@@ -1,6 +1,6 @@
 ---
 title: Operatoren | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispiele, für die Operatoren in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Operatoren in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c44db7094425366822d7924b771070d9e9a5ec5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8b1c1e5a4a65e4e6fcc90ca809a271f0fb94286a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676634"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732229"
 ---
-# <a name="operators-in-powerapps"></a>Operatoren in powerapps
+# <a name="operators-in-power-apps"></a>Operatoren in powerapps
 
 Einige dieser Operatoren sind von der Sprache des Erstellers abhängig.  Weitere Informationen finden Sie unter den Informationen zu [globalen Apps](../global-apps.md).
 
@@ -29,8 +28,8 @@ Einige dieser Operatoren sind von der Sprache des Erstellers abhängig.  Weitere
 |                               Symbol                                |                        Typ                         |                                                                                    Syntax                                                                                    |                                                                                                                           Beschreibung                                                                                                                            |
 |---------------------------------------------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                **.**                                |                  Eigenschaftsauswahl                  |                                                               **Slider1.Value<br>Color.Red<br>Acceleration.X**                                                               |                                               Extrahiert eine Eigenschaft aus einer [Tabelle](../working-with-tables.md), einem Steuerelement, einem [Signal](signals.md) oder einer Enumeration.  Um die Abwärtskompatibilität sicherzustellen, kann auch **!** verwendet werden.                                                |
-| **,**<br>[[sprachabhängig](../global-apps.md)]  |                  Dezimaltrennzeichen                  |                                                             **1.23**                                                           |                                                                              Trennzeichen zwischen dem ganzen Teil und dem Bruchteil einer Zahl. Das Zeichen hängt von der Sprache ab.                                                                              |
-|                               **( )**                               |                     Klammern                     |                                                               **Filter(T; A &lt; 10)**<br><br>**(1 + 2) \* 3**                                                               |                                                                                           Erzwingt die Rangfolge und gruppiert Unterausdrücke eines längeren Ausdrucks.                                                                                           |
+| **.**<br>[[sprachabhängig](../global-apps.md)]  |                  Dezimaltrennzeichen                  |                                                             **1.23**                                                           |                                                                              Trennzeichen zwischen dem ganzen Teil und dem Bruchteil einer Zahl. Das Zeichen hängt von der Sprache ab.                                                                              |
+|                               **( )**                               |                     Klammern                     |                                                               **Filter(T, A &lt; 10)**<br><br>**(1 + 2) \* 3**                                                               |                                                                                           Erzwingt die Rangfolge und gruppiert Unterausdrücke eines längeren Ausdrucks.                                                                                           |
 |                                **+**                                |                Arithmetische Operatoren                 |                                                                                  **1+2**                                                                                   |                                                                                                                             Addition                                                                                                                             |
 |                                **-**                                |                       &nbsp;                        |                                                                                  **2-1**                                                                                   |                                                                                                                       Subtraktion und Vorzeichen                                                                                                                       |
 |                              *                               |                       &nbsp;                        |                                                                                  **2 \* 3**                                                                                  |                                                                                                                          Multiplikation                                                                                                                          |
@@ -53,8 +52,8 @@ Einige dieser Operatoren sind von der Sprache des Erstellers abhängig.  Weitere
 |                               **in**                                |                       &nbsp;                        |                                                      **&quot;The&quot; in &quot;The keyboard and the monitor...&quot;**                                                      |                                                                                                                Teilzeichenfolgentest (Groß-/Kleinschreibung wird nicht berücksichtigt)                                                                                                                 |
 |                                **@**                                | [Operator zur Mehrdeutigkeitsvermeidung](#disambiguation-operator) |                                                                           **MyTable[@fieldname]**                                                                            |                                                                                                                       Mehrdeutigkeitsvermeidung für Felder                                                                                                                       |
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      Globale Mehrdeutigkeitsvermeidung                                                                                                                       |
-| **;**<br>[[sprachabhängig](../global-apps.md)]  |                   Listentrennzeichen                    | **If( X < 10; "Low"; "Good" )**<br>**{ X: 12; Y: 32 }**<br>**[ 1; 2; 3 ]** | Trennt Folgendes: <ul><li>Argumente in Funktionsaufrufen</li><li>Felder in einem [Datensatz](../working-with-tables.md#elements-of-a-table)</li><li>Datensätze in einer [Tabelle](../working-with-tables.md#inline-value-tables)</li></ul> Dieses Zeichen hängt von der Sprache ab. |
-| **;;**<br>[[sprachabhängig](../global-apps.md)] |                  Formelverkettung                   |                                     **Collect(T; A);; Navigate(S1; &quot;&quot;)**                                     |                                                                          Separate Aufrufe von Funktionen in Verhaltenseigenschaften. Der Verkettungs Operator hängt von der Sprache ab.                                                                          |
+| **,**<br>[[sprachabhängig](../global-apps.md)]  |                   Listentrennzeichen                    | **If( X < 10, "Low", "Good" )**<br>**{ X: 12, Y: 32 }**<br>**[ 1, 2, 3 ]** | Trennt Folgendes: <ul><li>Argumente in Funktionsaufrufen</li><li>Felder in einem [Datensatz](../working-with-tables.md#elements-of-a-table)</li><li>Datensätze in einer [Tabelle](../working-with-tables.md#inline-value-tables)</li></ul> Dieses Zeichen hängt von der Sprache ab. |
+| **;**<br>[[sprachabhängig](../global-apps.md)] |                  Formelverkettung                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          Separate Aufrufe von Funktionen in Verhaltenseigenschaften. Der Verkettungs Operator hängt von der Sprache ab.                                                                          |
 |                             **Parent**                              |         [Parent-Operator](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           Zugriff auf Eigenschaften eines Steuerelementcontainers                                                                                                            |
 |                            **ThisItem**                             |       [ThisItem-Operator](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          Zugriff auf Felder eines Katalogs oder Form-Steuerelements                                                                                                           |
 
@@ -63,11 +62,11 @@ Sie können die Operatoren **[in](operators.md#in-and-exactin-operators)** und *
 
 1. Erstellen oder importieren Sie eine Sammlung mit dem Namen **Inventory**, und zeigen Sie sie in einem Katalog an. Dies wird im ersten Verfahren unter [Show images and text in a gallery](../show-images-text-gallery-sort-filter.md) (Anzeigen von Bildern und Text in einem Katalog) beschrieben.
 2. Legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs auf diese Formel fest:
-   <br>**Filter(Inventory; "E" in ProductName)**
+   <br>**Filter(Inventory, "E" in ProductName)**
 
     Im Katalog werden alle Produkte mit Ausnahme von „Callisto“ angezeigt, weil der Name dieses Produkts der einzige Name ist, der den von Ihnen angegebenen Buchstaben nicht enthält.
 3. Ändern Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs in diese Formel:
-   <br>**Filter(Inventory; "E" exactin ProductName)**
+   <br>**Filter(Inventory, "E" exactin ProductName)**
 
     Im Katalog wird nur „Europa“ angezeigt, weil nur dieser Name den von Ihnen angegebenen Großbuchstaben enthält.
 

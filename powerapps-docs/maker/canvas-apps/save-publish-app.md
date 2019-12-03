@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a64c7e0eeff1a48385ea251597a9e8d91c075f1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c8610f726c0bd65cec5681cd817d5c93ec3d3c1d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675337"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732702"
 ---
-# <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Speichern und Veröffentlichen einer Canvas-App in PowerApps
+# <a name="save-and-publish-a-canvas-app-in-power-apps"></a>Speichern und Veröffentlichen einer Canvas-app in Power apps
 Wenn Sie Änderungen an einer Canvas-App speichern, veröffentlichen Sie diese automatisch nur für sich selbst und andere Benutzer, die über Berechtigungen zum Bearbeiten der App verfügen. Wenn Sie die Änderungen abgeschlossen haben, müssen Sie sie explizit veröffentlichen, um sie allen Benutzern zur Verfügung zu stellen, für die die App freigegeben ist.
 
 Informationen zum Freigeben einer App finden Sie unter [Freigeben einer App](share-app.md).

@@ -1,6 +1,6 @@
 ---
 title: Funktionen „Abs“, „Exp“, „Ln“, „Power“ und „Sqrt“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Abs“, „Sqrt“ und weitere Funktionen in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "ABS", "sqrt" und "Other" in Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6e559f482c8ad151eb04057f3178b141150acc7d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 925297a8e1a3f4c454cb8bbb09f75a87419cf5cb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984421"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730481"
 ---
-# <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funktionen „Abs“, „Exp“, „Ln“, „Power“ und „Sqrt“ in PowerApps
+# <a name="abs-exp-ln-power-and-sqrt-functions-in-power-apps"></a>Funktionen von ABS, exp, LN, Power und Sqrt in Power apps
 Berechnen Absolutwerte, natürliche Logarithmen, Quadratwurzeln und die Ergebnisse der Potenzierung von *e* oder einer beliebigen Zahl zur angegebenen Potenz.
 
 ## <a name="description"></a>Beschreibung
@@ -42,9 +41,9 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 ## <a name="syntax"></a>Syntax
 **Abs**( *Zahl* )<br>**Exp**( *Zahl* )<br>**Ln**( *Zahl* )<br>**Sqrt**( *Zahl* )
 
-* *Number*: erforderlich. Zahl, die verarbeitet wird.
+* *Zahl*: erforderlich. Zahl, die verarbeitet wird.
 
-**Power**( *Basis*; *Exponent* )
+**Power**( *Basis*, *Exponent* )
 
 * *Basis*: erforderlich. Zu potenzierende Basiszahl.
 * *Exponent*: erforderlich. Der Exponent, zu dem die Basiszahl potenziert wird.
@@ -61,7 +60,7 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 | **Abs( -55 )** |Gibt die Zahl ohne das negative Vorzeichen zurück. |55 |
 | **Exp( 2 )** |Gibt die 2. Potenz von *e* zurück, also *e* \* *e*. |7,389056... |
 | **Ln( 100 )** |Gibt den natürlichen Logarithmus (zur Basis *e*) der Zahl 100 zurück. |4,605170... |
-| **Power( 5;; 3 )** |Gibt die 3. Potenz von 5 zurück, also 5 \* 5 \* 5. |125 |
+| **Power( 5; 3 )** |Gibt die 3. Potenz von 5 zurück, also 5 \* 5 \* 5. |125 |
 | **Sqrt( 9 )** |Gibt die Zahl zurück, die mit sich selbst multipliziert 9 ergibt. |3 |
 
 ### <a name="single-column-table"></a>Einspaltige Tabelle

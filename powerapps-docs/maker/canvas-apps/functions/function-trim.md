@@ -1,6 +1,6 @@
 ---
 title: Funktionen „Trim“ und „TrimEnds“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispiele für die Trim- und TrimEnds-Funktionen in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Trim-und trimends-Funktionen in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79f035271b2a98faf6ddb7bba716c7107e311183
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: cf87c96e2e49f9bc01f6d6c749844bd473099cad
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991917"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729955"
 ---
-# <a name="trim-and-trimends-functions-in-powerapps"></a>Trim- und TrimEnds-Funktionen in PowerApps
+# <a name="trim-and-trimends-functions-in-power-apps"></a>Trim-und trimends-Funktionen in powerapps
 Entfernt zusätzliche Leerzeichen aus einer Textzeichenfolge.
 
 ## <a name="description"></a>Beschreibung
@@ -54,7 +53,7 @@ Die folgenden Beispiele verwenden eine einspaltige-Sammlung mit dem Namen **Spac
 ![](media/function-trim/input-strings.png)
 
 Legen Sie die Eigenschaft **OnSelect** eines Steuerelements **[Schaltfläche](../controls/control-button.md)** auf diese Formel fest, öffnen Sie den Vorschaumodus, und klicken oder tippen Sie anschließend auf die Schaltfläche, um eine Sammlung zu erstellen:
-<br>**ClearCollect( Spaces; [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;"; "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill"; "Already&nbsp;trimmed"; "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;"; "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
+<br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;", "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |

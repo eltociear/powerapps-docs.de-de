@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 65076c38a1beeb41c9f6f308b6c0c7e82d30fc80
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8b5a5366f3de487b7d34d60d989274223340f4e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674418"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732412"
 ---
-# <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Anzeigen von Daten in einem Linien-, Kreis- oder Balkendiagramm in PowerApps
+# <a name="show-data-in-a-line-pie-or-bar-chart-in-power-apps"></a>Anzeigen von Daten in einem Linien-, Kreis-oder Balkendiagramm in Power apps
 
 Verwenden Sie Linien-, Kreis- und Balkendiagramme, um Ihre Daten in einer Canvas-App anzuzeigen. Beim Arbeiten mit Diagrammen sollten die Daten, die Sie importieren, nach folgenden Kriterien gegliedert sein:
 
@@ -38,7 +37,7 @@ Sie können diese Diagramme in powerapps erstellen und verwenden. Lassen Sie uns
 
 * [Registrieren](../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit denselben Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
 * Erstellen Sie eine App aus einer [Vorlage](get-started-test-drive.md), auf der Grundlage von [Daten](get-started-create-from-data.md) oder [von Grund auf neu](get-started-create-from-blank.md).
-* Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
+* Erfahren Sie, wie Sie [ein Steuer](add-configure-controls.md) Element in powerapps konfigurieren.
 * Laden Sie [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) herunter, die Beispieldaten als XML-Datei enthält. Führen Sie die Schritte in diesem Thema aus, um sie direkt in Ihre App zu importieren. Dekomprimieren Sie alternativ die ZIP-Datei, öffnen Sie die XML-Datei in Excel, und speichern Sie es in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md).
 
 ## <a name="import-the-sample-data"></a>Importieren der Beispieldaten
@@ -50,7 +49,7 @@ In den folgenden Schritten importieren wir die Beispieldaten in eine Sammlung mi
 
 2. Legen Sie die Eigenschaft **[OnSelect](controls/properties-core.md)** des Steuerelements auf die folgende Funktion fest:  
 
-   ```Collect(ProductRevenue; Import1.Data)```
+   ```Collect(ProductRevenue, Import1.Data)```
 
 3. Drücken Sie F5 zum Öffnen des Vorschaumodus, und wählen Sie anschließend die Schaltfläche **Daten importieren** aus.
 
