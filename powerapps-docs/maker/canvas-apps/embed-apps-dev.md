@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c107e337733f771212359618c5761cb7a89d3177
-ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
+ms.openlocfilehash: 3d67ef4b05b61f59fec49b0bbc0961970d8070bf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072539"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678509"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integrieren von Canvas-Apps in Websites und andere Dienste
 Die apps, die Sie erstellen, sind oftmals besonders nützlich, wenn Sie verfügbar sind, wo die Benutzer ihre Arbeit erledigen. Wenn Sie Canvas-apps in einen iframe einbetten, können Sie diese apps in Websites und andere Dienste integrieren, wie z. b. Power BI oder SharePoint.
@@ -29,8 +29,8 @@ In diesem Thema zeigen wir das Festlegen von Parametern für die Einbettung von 
 
 Berücksichtigen Sie die folgenden Einschränkungen:
 
-- Nur PowerApps-Benutzer im gleichen Mandanten haben Zugriff auf die eingebettete App.
-- Wenn Sie mit Internet Explorer 11 auf PowerApps zugreifen möchten, müssen Sie die Kompatibilitätsansicht deaktivieren.
+- Nur powerapps-Benutzer im gleichen Mandanten können auf die eingebettete App zugreifen.
+- Wenn Sie mit Internet Explorer 11 auf powerapps zugreifen möchten, müssen Sie die Kompatibilitäts Ansicht deaktivieren.
 
 Sie können Canvas-apps auch ohne Verwendung eines Iframes in SharePoint Online integrieren. Weitere Informationen: [verwenden Sie das powerapps-Webpart](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e8f40f9cd3b15dddfd9fdadbcd15495e33464967
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540892"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679981"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>Verwalten von Canvas-App-Verbindungen in PowerApps
 Stellen Sie in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) eine Verbindung mit einer oder mehreren Datenquellen her, löschen Sie eine Verbindung, oder aktualisieren Sie ihre Anmeldeinformationen.
@@ -39,7 +39,7 @@ Ihr nächster Schritt nach diesem Artikel besteht darin, Daten aus der Datenquel
 2. Melden Sie sich unter [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 
 ## <a name="background-on-data-connections"></a>Hintergrundinformationen zu Datenverbindungen
-Die meisten Apps in PowerApps nutzen externe Informationen, die als **Datenquellen** bezeichnet werden und in Clouddiensten gespeichert sind. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps können über **Verbindungen** auf diese Datenquellen zugreifen.
+Die meisten powerapps-Apps verwenden externe Informationen, die als **Datenquellen** bezeichnet werden und in Clouddiensten gespeichert sind. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps können über **Verbindungen** auf diese Datenquellen zugreifen.
 
 Der verbreitetste Typ von Datenquelle ist die Tabelle, aus der Informationen abgerufen und in der Informationen gespeichert werden können. Über Verbindungen mit Datenquellen können Sie Daten in Microsoft Excel-Arbeitsmappen, SharePoint-Listen, SQL-Tabellen und vielen anderen Formaten lesen und schreiben; diese können in Clouddiensten wie OneDrive for Business, DropBox, SQL Server usw. gespeichert sein.
 
@@ -54,7 +54,7 @@ Zusätzlich zum Erstellen und Verwalten von Verbindungen in [powerapps.com](http
 * Öffnen einer App, die ein anderer Benutzer erstellt und [für Sie freigegeben](share-app.md) hat.
 
 > [!NOTE]
-> Wenn Sie stattdessen PowerApps Studio verwenden möchten, öffnen Sie das Menü **Datei**, und klicken oder tippen Sie auf **Verbindungen**; [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) wird geöffnet, sodass Sie dort Verbindungen herstellen und verwalten können.
+> Wenn Sie stattdessen powerapps Studio verwenden möchten, öffnen Sie das Menü **Datei** , und klicken oder tippen Sie dann auf **Connections**, [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) wird geöffnet, sodass Sie dort Verbindungen erstellen und verwalten können.
 
 ## <a name="create-a-new-connection"></a>Erstellen einer neuen Verbindung
 1. Sofern noch nicht erfolgt, melden Sie sich bei [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.

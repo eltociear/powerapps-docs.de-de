@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6d48b7b6ef1d9d691b733bea9af6ce74d0f2b07a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fd48455f24cd07a09ce3a7cdb44b2fa6da2a0166
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540925"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679245"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Anzeigen einer Liste mit Elementen in PowerApps
 
@@ -41,7 +40,7 @@ Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem
 
     1. Geben Sie einen Namen für Ihre App an, wählen Sie **Telefon** aus, und klicken Sie dann auf **Erstellen**.
 
-    1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** angezeigt wird, klicken Sie auf **Überspringen**.
+    1. Wenn das Dialogfeld **Willkommen bei Power apps Studio** angezeigt wird, wählen Sie über **springen**aus.
 
     1. [Fügen Sie eine Verbindung](add-data-connection.md) mit der **FlooringEstimates**-Tabelle in der Excel-Datei hinzu.
 
@@ -99,20 +98,20 @@ Die **[Items](controls/properties-core.md)** -Eigenschaft eines **Katalog**-Steu
 
 1. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft des **Katalog**-Steuerelements auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text);
-            FlooringEstimates;
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
             Filter(
-                FlooringEstimates;
+                FlooringEstimates,
                 TextSearchBox1.Text in Text(Name)
             )
-        );
-        Name;
+        ),
+        Name,
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -131,16 +130,16 @@ Die **[Items](controls/properties-core.md)** -Eigenschaft eines **Katalog**-Steu
 ## <a name="highlight-the-selected-item"></a>Hervorheben des ausgewählten Elements
 Legen Sie die **templatefill** -Eigenschaft des Katalog-Steuer Elements auf eine Formel fest **, die diesem** Beispiel ähnelt, aber Sie können bei Bedarf andere Farben angeben:
 
-**If(ThisItem.IsSelected; LightCyan; White)**
+**If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Ändern der Standardauswahl
 Legen Sie die **Default**-Eigenschaft des **Katalog**-Steuerelements auf den Datensatz fest, der standardmäßig ausgewählt sein soll. Sie können z. b. das fünfte Element in der Datenquelle **flooringestimates** angeben:
 
-**Last(FirstN(FlooringEstimates; 5))**
+**Last(FirstN(FlooringEstimates, 5))**
 
 In diesem Beispiel geben Sie das erste Element in der Kategorie **Hardwood** der Datenquelle **FlooringEstimates** an:
 
-**First(Filter(FlooringEstimates; Category = "Hardwood"))**
+**First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Nächste Schritte
 Informationen zum Arbeiten mit [Formularen](working-with-forms.md) und [Formeln](working-with-formulas.md).

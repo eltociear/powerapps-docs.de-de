@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4eab4585a2abd8633704c76b57cde52702982e97
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 387089ea2ee40e8a0d418ab110d7544c17d7c423
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994030"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679889"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Herstellen einer Verbindung mit Microsoft Translator aus PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -34,7 +33,7 @@ In diesem Thema wird gezeigt, wie Sie die Microsoft Translator-Verbindung erstel
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-microsoft-translator"></a>Herstellen einer Verbindung mit Microsoft Translator
-1. Öffnen Sie PowerApps, wählen Sie **Neu** aus, und erstellen Sie eine **Leere App**. Wählen Sie das Layout für Smartphone oder Tablet aus. Das Tablet-Layout bietet Ihnen einen größeren Arbeitsbereich:  
+1. Öffnen Sie powerapps, wählen Sie **neu**aus, und erstellen Sie dann eine **leere App**. Wählen Sie das Layout für Smartphone oder Tablet aus. Das Tablet-Layout bietet Ihnen einen größeren Arbeitsbereich:  
 
    ![Öffnen einer leeren App](./media/connection-microsoft-translator/blank-app.png)
 2. Klicken oder tippen Sie im rechten Bereich auf die Registerkarte **Daten** und dann auf **Datenquelle hinzufügen**.
@@ -58,7 +57,7 @@ In diesem Thema wird gezeigt, wie Sie die Microsoft Translator-Verbindung erstel
     `MicrosoftTranslator.Languages()`
 4. Fügen Sie eine Bezeichnung hinzu, verschieben Sie es unter **TargetLang**, und legen Sie seine **[Text](../controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:  
 
-    `MicrosoftTranslator.Translate(Source.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. Geben Sie Text in **Source** ein, und wählen Sie unter **TargetLang** eine Sprache aus. In der Bezeichnung wird der eingegebene Text in der ausgewählten Sprache angezeigt:  
 
     ![Übersetzen von Text aus dem Englischen ins Spanische](./media/connection-microsoft-translator/translate-text.png)
@@ -72,7 +71,7 @@ Wenn Sie dies nicht bereits getan haben, führen Sie die Schritte im vorherigen 
 2. Benennen Sie die zweite Bezeichnung (nicht das Feld **Source**) in **Target** um.
 3. Fügen Sie ein **Audio**-Steuerelement hinzu (Menü **Einfügen** > **Medien**), und legen Sie seine **Media**-Eigenschaft auf die folgende Formel fest:  
 
-    `MicrosoftTranslator.TextToSpeech(Target.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-microsoft-translator/preview.png)). Geben Sie Text in **Source** ein, wählen Sie eine Sprache in **TargetLang** aus, und wählen Sie dann die Wiedergabeschaltfläche im Audio-Steuerelement aus.
 
     Die App spielt eine Audioversion des eingegebenen Texts in der ausgewählten Sprache ab.
@@ -100,7 +99,7 @@ Diese Verbindung umfasst die folgenden Funktionen:
 | [TextToSpeech](connection-microsoft-translator.md#texttospeech) |Konvertiert einen angegebenen Text in Sprache als Audiostream im Wave-Format |
 
 ### <a name="languages"></a>Sprachen
-Sprachen erhalten: Ruft alle von Microsoft Translator unterstützten Sprachen ab
+Sprachen abrufen: Ruft alle von Microsoft Translator unterstützten Sprachen ab
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 Keine
@@ -144,7 +143,7 @@ Sprache erkennen: Erkennt die Ausgangssprache eines angegebenen Texts
 | Name |Zeichenfolge |Nein | |
 
 ### <a name="speechlanguages"></a>SpeechLanguages
-Sprach Sprachen erhalten: Ruft die verfügbaren Sprachen für die Sprachsynthese ab
+Sprachen abrufen: Ruft die verfügbaren Sprachen für die Sprachsynthese ab
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 Keine
@@ -157,7 +156,7 @@ Keine
 | Name |Zeichenfolge |Nein | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-Text-zu-Sprache: Konvertiert einen angegebenen Text in Sprache als Audiostream im Wave-Format
+Text in Sprache: Konvertiert einen angegebenen Text in Sprache als Audiostream im Wave-Format
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 

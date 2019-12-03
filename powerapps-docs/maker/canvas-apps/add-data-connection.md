@@ -13,27 +13,27 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 420728d60555c3aeaf5fd5e844a900d412b0c3ef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d81b1648fc3c45d0498efb9eba0cc14ffbc6142b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540961"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679268"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Hinzufügen einer Datenverbindung in einer Canvas-App in PowerApps
 
-Fügen Sie in PowerApps einer vorhandenen Canvas-App oder einer von Grund auf neu erstellten App eine Datenverbindung hinzu. Ihre APP kann eine Verbindung mit SharePoint, Common Data Service, Salesforce, onedrive oder [vielen anderen Datenquellen](connections-list.md)herstellen.
+Fügen Sie in powerapps einer vorhandenen Canvas-APP oder einer APP, die Sie von Grund auf neu erstellen, eine Datenverbindung hinzu. Ihre APP kann eine Verbindung mit SharePoint, Common Data Service, Salesforce, onedrive oder [vielen anderen Datenquellen](connections-list.md)herstellen.
 
 Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten aus dieser Datenquelle in der App anzuzeigen und zu verwalten; siehe folgende Beispiele:
 
 * Verbinden mit OneDrive und Verwalten von Daten in einer Excel-Arbeitsmappe in Ihrer App.
-* Verbinden mit Twilio und senden einer SMS-Nachricht von Ihrer App.
+* Verbinden mit Twilio und Senden einer SMS-Nachricht von Ihrer App.
 * Stellen Sie eine Verbindung mit Common Data Service her, und aktualisieren Sie eine Entität von Ihrer APP.
 * Herstellen einer Verbindung mit SQL Server und Aktualisieren einer Tabelle aus Ihrer App.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-[Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
+[Registrieren](../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit den Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
 
 ## <a name="open-a-blank-app"></a>Öffnen einer leeren App
 
@@ -41,7 +41,7 @@ Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten au
 
 1. Geben Sie einen Namen für Ihre APP an, und wählen Sie dann **Erstellen**aus.
 
-1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** angezeigt wird, klicken Sie auf **Überspringen**.
+1. Wenn das Dialogfeld **Willkommen bei Power apps Studio** angezeigt wird, wählen Sie über **springen**aus.
 
 ## <a name="add-data-source"></a>Datenquelle hinzufügen
 

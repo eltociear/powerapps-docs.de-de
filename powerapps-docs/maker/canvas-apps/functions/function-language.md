@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 307950cf7e0aa67d7bf31daf29b3f8a3bb11d465
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 33dcc3ab5e1682783c997adf4dd1185d59b0db2b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984575"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678325"
 ---
 # <a name="language-function-in-powerapps"></a>Funktion „Language“ in PowerApps
 Gibt das Sprachkennzeichen des aktuellen Benutzers zurück
@@ -35,12 +34,12 @@ Ein *Sprachkennzeichen* kann eines der folgenden drei Formate aufweisen:
 | Rückgabewert | Beschreibung |
 | --- | --- |
 | **"*lg&#8209;RE*"** |*lg* ist die zwei Zeichen umfassende Abkürzung für die Sprache und *RE* ist die zwei Zeichen umfassende Abkürzung für die Region.  Dies ist der häufigste Rückgabetyp.  Beispielsweise wird „en-GB“ für Großbritannien zurückgegeben. |
-| **"*lg*"** |*lg* ist die zwei Zeichen umfassende Abkürzung für die Sprache.  Dies ist das Format, das verwendet wird, wenn PowerApps Informationen zur Sprache, jedoch keine Informationen zur bestimmten Region hat. |
+| **"*lg*"** |*lg* ist die zwei Zeichen umfassende Abkürzung für die Sprache.  Dies ist das Format, das verwendet wird, wenn Power apps Informationen zur Sprache enthält, aber keine Informationen für die jeweilige Region enthält. |
 | **"*lg&#8209;scrp&#8209;RE*"** |*lg* ist die zwei Zeichen umfassende Abkürzung für die Sprache, *scrp* ist die vier Zeichen umfassende Abkürzung für das Skript, und *RE* ist die zwei Zeichen umfassende Abkürzung für die Region. |
 
-PowerApps verwendet das [IETF BCP-47-Sprachkennzeichen](https://tools.ietf.org/html/bcp47)-Format.  
+Power Apps verwendet das [IETF bcp-47-sprachtagformat](https://tools.ietf.org/html/bcp47) .  
 
-Um eine Liste der unterstützten Sprachkennzeichen anzuzeigen, geben Sie **Value( "1"; )** in die Bearbeitungsleiste oder die erweiterte Ansicht ein, und scrollen Sie durch die Liste der Gebietsschemas, die für das zweite Argument vorgeschlagen werden.  
+Um eine Liste der unterstützten Sprachkennzeichen anzuzeigen, geben Sie **Value( "1", )** in die Bearbeitungsleiste oder die erweiterte Ansicht ein, und scrollen Sie durch die Liste der Gebietsschemas, die für das zweite Argument vorgeschlagen werden.  
 
 Die Funktionen **[Text](function-text.md)** und **[Value](function-value.md)** verwenden ebenfalls Sprachkennzeichen.  Verwenden Sie diese Funktionen, um auf global bewusste Weise von Textzeichenfolgen und in Textzeichenfolgen zu übersetzen.  Wenn ein Sprachtag an diese Funktionen übergeben wird und die Region keinen Unterschied machen würden, können Sie nur den Sprachteil des Kennzeichens verwenden.
 
@@ -73,13 +72,13 @@ Ein einfacher Ansatz zur Lokalisierung ist, ein Excel-Arbeitsblatt zu erstellen,
     Für unsere Zwecke müssen wir nur die Sprache des Gebietsschemas und nicht die Region betrachten.  Wenn regionale Aspekte wichtig wären, hätten wird den vollständigen Sprachkennzeichenwert in die Tabelle oben einschließen können. 
 2. Verwenden Sie das Menüband **Insert** (Einfügen) und den Befehl **Table** (Tabelle), um eine ordnungsgemäße Excel-Tabelle daraus zu erstellen.  Diese wird standardmäßig **Table1** genannt, Sie können sie jedoch nennen, wie Sie möchten, indem Sie das Menüband **Table Tools/Design** (Tabellentools/-design) und das Textfeld **Tabellenname:** ganz auf der linken Seite verwenden.
 3. Speichern Sie die Excel-Datei in Ihrem lokalen Dateisystem.   
-4. Klicken oder tippen Sie im rechten Bereich in PowerApps auf die Registerkarte **Datenquellen** und dann auf **Datenquelle hinzufügen**.
+4. Klicken oder tippen Sie in powerapps im rechten Bereich auf die Registerkarte **Datenquellen** , und klicken oder tippen Sie dann auf **Datenquelle hinzufügen**.
 5. Klicken oder tippen Sie auf **Der App statische Daten hinzufügen**, oder klicken oder tippen Sie auf die Excel-Datei, die Sie gespeichert haben, und klicken oder tippen Sie auf **Öffnen**.
 6. Wählen Sie die Tabelle aus, die Sie erstellt haben, und klicken oder tippen Sie anschließend auf **Verbinden**.
 
 Verwenden Sie in Ihrer App überall dort, wo Sie zuvor den Text **"Hello"** verwendet hätten, stattdessen diese Formel:
 
-* **LookUp( Table1; TextID = "Hello" && (LanguageTag = Left( Language(); 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+* **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 Diese Formel schlägt den entsprechenden **LocalizedText**-Wert für die Sprache des Benutzers nach. Wenn dieser nicht gefunden wird, führt die Formel ein Fallback auf die Standardversion *blank* durch. 
 
@@ -88,12 +87,12 @@ Bedenken Sie, dass die übersetzten Zeichenfolgen in anderen Sprachen wesentlich
 ### <a name="translation-service"></a>Übersetzungsdienst
 Sie können Text nach Bedarf übersetzen, indem Sie einen Übersetzungsdienst wie den Microsoft Translator-Dienst verwenden:  
 
-1. Klicken oder tippen Sie im rechten Bereich in PowerApps auf die Registerkarte **Datenquellen** und dann auf **Datenquelle hinzufügen**.
+1. Klicken oder tippen Sie in powerapps im rechten Bereich auf die Registerkarte **Datenquellen** , und klicken oder tippen Sie dann auf **Datenquelle hinzufügen**.
 2. Klicken oder tippen Sie auf **Microsoft Translator**.
 
 Verwenden Sie in Ihrer App überall dort, wo Sie zuvor den Text **"Hello"** verwendet hätten, stattdessen diese Formel:
 
-* **MicrosoftTranslator.Translate( "Hello"; Language() )**
+* **MicrosoftTranslator.Translate( "Hello", Language() )**
 
 Der Microsoft Translator-Dienst verwendet die gleichen Sprachkennzeichen, die die **Language**-Funktion zurückgibt.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2e61a312aa3824c24b7058da4b34aa9c5cf462c
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9e96b0733e139657c3105ec020470d55fe5008dd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321543"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679192"
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>Hinzufügen von Bildern aus PowerApps zu Excel
 Erstellen Sie automatisch eine App, in der Benutzer Bilder aus Dateien oder Zeichnungen mit einem **Stift**-Steuerelement anzeigen, hinzufügen oder löschen können. Die App basiert auf einer Excel-Datei, die Sie erstellen und in ein Cloudspeicherkonto hochladen.
@@ -27,7 +27,7 @@ Erstellen Sie automatisch eine App, in der Benutzer Bilder aus Dateien oder Zeic
 
 * Sie müssen mit dem [Hinzufügen und Konfigurieren von Steuerelementen](add-configure-controls.md) vertraut sein.
 * Sie müssen mit dem [Konfigurieren von Excel-Daten als Tabelle](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US) vertraut sein.
-* Eine [PowerApps-Verbindung](add-data-connection.md) mit einem Cloudspeicherkonto (wie Dropbox, OneDrive oder Google Drive), in dem eine Excel-Datei gespeichert werden kann.
+* Eine [Power apps-Verbindung](add-data-connection.md) mit einem cloudspeicherkonto (z.b. Dropbox, onedrive oder Google Drive), in dem Sie eine Excel-Datei speichern können.
 
 ## <a name="create-the-data-source-and-the-app"></a>Erstellen der Datenquelle und der App
 1. Fügen Sie in Excel in zwei beliebigen nebeneinanderliegenden Zellen (z.B. A1 und B1) **Caption** und **Image [image]** hinzu, die sich direkt über zwei leeren Zellen befinden.
@@ -35,7 +35,7 @@ Erstellen Sie automatisch eine App, in der Benutzer Bilder aus Dateien oder Zeic
    
     ![Erstellen einer Tabelle](./media/add-images-to-excel/create-table.png)
 3. Speichern Sie die Datei (z.B. unter dem Namen **ImageDemo**), und laden Sie sie in Ihr Cloudspeicherkonto hoch.
-4. Klicken oder tippen Sie in PowerApps im Menü **Datei** auf die Option **Neu** (am linken Rand, wenn Sie noch keine App geöffnet haben), und klicken oder tippen Sie anschließend auf **Telefonlayout** in der Kachel für Ihr Cloudspeicherkonto.
+4. Klicken oder tippen Sie in powerapps im Menü **Datei** auf **neu** (am linken Rand, wenn Sie noch keine app geöffnet haben), und klicken oder tippen Sie dann auf der Kachel für Ihr cloudspeicherkonto auf **Telefon Layout** .
    
     ![Auswählen des Cloudspeicherkontos](./media/add-images-to-excel/select-account.png)
 5. Klicken oder tippen Sie unter **Excel-Datei auswählen** auf die erstellte Datei.

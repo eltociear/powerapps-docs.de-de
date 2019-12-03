@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer Canvas-App aus Common Data Service | Microsoft-Dokumentation
-description: In powerapps generieren Sie automatisch eine Canvas-App zum Verwalten von Daten in Common Data Service
+description: In powerapps generieren Sie automatisch eine Canvas-APP, um Daten in Common Data Service zu verwalten.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7175ac7d96989de4abd7e9fa3446631ca04d5f1b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540142"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678555"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generieren einer Canvas-App aus Common Data Service in powerapps
 
 In powerapps generieren Sie automatisch eine Canvas-App basierend auf einer Liste von Beispiel Konten in [Common Data Service](../common-data-service/data-platform-intro.md). In dieser App können Sie alle Konten durchsuchen, Details zu einem einzelnen Konto anzeigen und ein Konto erstellen, aktualisieren oder löschen.
 
-Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuerst kostenlos](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Wenn Sie nicht für Power apps registriert sind, [melden Sie sich kostenlos an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , bevor Sie beginnen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -44,7 +44,7 @@ Um diesen Schnellstart folgen zu können, müssen Sie der Sicherheitsrolle [Umge
 
 1. Wählen Sie unter **Tabelle auswählen** die Option **Konten** und dann **Verbinden** aus.
 
-1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** angezeigt wird, klicken Sie auf **Überspringen**.
+1. Wenn das Dialogfeld **Willkommen bei Power apps Studio** angezeigt wird, wählen Sie über **springen**aus.
 
 Ihre App wird auf dem Bildschirm zum Durchsuchen geöffnet, auf dem eine Liste der Konten im sogenannten Katalog angezeigt wird. Am oberen Rand des Bildschirms wird eine Titelleiste mit Symbolen zum Aktualisieren und alphabetischen Sortieren der Daten im Katalog und Hinzufügen von Daten zum Katalog angezeigt. Unterhalb der Titelleiste können Sie über ein Suchfeld die Daten im Katalog filtern, indem Sie Text eingeben oder einfügen. 
 

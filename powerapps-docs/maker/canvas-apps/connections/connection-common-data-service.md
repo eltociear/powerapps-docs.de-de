@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0970cbd51f351352c218dab3f220c6d5baa35435
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: d9f6e973aa632fe0821db3bcc493174e250afa72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897760"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679912"
 ---
 # <a name="connect-to-common-data-service"></a>Verbindung mit Common Data Service herstellen
 
-Sie können Ihre Geschäftsdaten sicher in Common Data Service speichern und umfangreiche apps in powerapps erstellen, damit Benutzer diese Daten verwalten können. Sie können diese Daten auch in Lösungen integrieren, die Strom Automatisierung, Power BI und Daten aus Dynamics 365 enthalten.
+Sie können Ihre Geschäftsdaten sicher in Common Data Service speichern und umfangreiche apps in Power Apps erstellen, damit Benutzer diese Daten verwalten können. Sie können diese Daten auch in Lösungen integrieren, die Strom Automatisierung, Power BI und Daten aus Dynamics 365 enthalten.
 
 Standardmäßig stellt der Common Data Service-Connector eine Verbindung mit Daten in der aktuellen Umgebung Ihrer APP her. Wenn Ihre APP in eine andere Umgebung verschoben wird, stellt der Connector eine Verbindung mit Daten in der neuen Umgebung her. Dieses Verhalten eignet sich gut für eine APP, die eine einzige Umgebung oder eine APP verwendet, die einem ALM-Prozess folgt, um von der Entwicklung zum Testen in die Produktion zu wechseln.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5883e5f091d5454b00aead80a9daf919a2bcfc2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 56e5ec7f303706ded114655e5c6d473408e9ddd7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994278"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680027"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>Erstellen barrierefreier Canvas-Apps in PowerApps
 Eine barrierefreie Canvas-App kann von Benutzern mit Sehschwäche, Gehörschädigung und anderen Beeinträchtigungen erfolgreich verwendet werden.  Die nachfolgenden Richtlinien sind nicht nur für viele Behörden und Organisationen verpflichtend, sie erhöhen zudem die Verwendbarkeit für alle Benutzer, unabhängig von ihren Fähigkeiten.
@@ -26,7 +26,7 @@ Eine barrierefreie Canvas-App kann von Benutzern mit Sehschwäche, Gehörschädi
 Verwenden Sie die **[Barrierefreiheitsprüfung](accessibility-checker.md)** , um mögliche Probleme Ihrer App bei der Barrierefreiheit zu überprüfen. 
 
 ## <a name="layout-and-color"></a>Layout und Farben
-Ein allgemeingültiger und unkomplizierter Entwurf sorgt für eine einfachere Bedienbarkeit der Apps für alle Benutzer.  Wenn Sie Apps stark anpassen, beachten Sie die folgenden Vorschläge.  PowerApps-Designs sind standardmäßig barrierefrei.
+Ein allgemeingültiger und unkomplizierter Entwurf sorgt für eine einfachere Bedienbarkeit der Apps für alle Benutzer.  Wenn Sie Apps stark anpassen, beachten Sie die folgenden Vorschläge.  Powerapps-Designs sind standardmäßig zugänglich.
 - Stellen Sie sicher, dass alle Elemente gut zu sehen sind und Texte eine angemessene Größe besitzen.  Alle Inhalte müssen mit bloßem Auge leicht und deutlich lesbar sein.
 - Vermeiden Sie die Verwendung der Sichtbarkeitseigenschaft von Elementen, um ein Element ins Sichtfeld zu rücken.  Wenn Sie ein Element je nach Bedingung anzeigen möchten, erstellen Sie den Inhalt in einem neuen Bildschirm, den Sie öffnen und schließen können.
 - Stellen Sie sicher, dass Eingabeelemente auf dem Bildschirm bezeichnet werden. Die Eigenschaft **[AccessibilityLabel](controls/properties-accessibility.md)** definiert, was in der Sprachausgabe vorgelesen wird.
@@ -42,12 +42,12 @@ Stellen Sie bei der Tastaturnavigation (mit und ohne Sprachausgabe) sicher, dass
 - Vermeiden Sie das Festlegen von TabIndex auf einen höheren Wert als null.
 
 ## <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
-Die folgenden Softwarekombinationen zeigen die unterstützten Empfehlungen für die Nutzung von PowerApps mit Sprachausgabe:
+Die folgenden Software Kombinationen sind die unterstützten Empfehlungen für die Nutzung von powerapps mit einer Bildschirm Sprachausgabe:
 
 - **Windows**: Microsoft Edge/Sprachausgabe
 - **macOS**: Safari/VoiceOver
-- **Android**: Powerapps-App/-Talkback
-- **IOS**: Powerapps-App/VoiceOver
+- **Android**: powerapps-App/Talkback
+- **IOS**: powerapps-App/VoiceOver
 
 Um für die Sprachausgabe ein zufriedenstellendes Ergebnis sicherzustellen, wird Folgendes empfohlen:
 

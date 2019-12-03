@@ -1,6 +1,6 @@
 ---
 title: Funktion „Char“ | Microsoft-Dokumentation
-description: Referenzinformationen zur Funktion „Char“ in PowerApps, einschließlich Syntax und Beispielen
+description: Referenzinformationen für die Char-Funktion in powerapps, einschließlich Syntax und Beispielen
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 099afb1e89d1551c6c6b969c3ae3688a3cdec777
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 641b22945dc6398e0f1ab57b03813eb7db02c79f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992953"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678417"
 ---
 # <a name="char-function-in-powerapps"></a>Funktion „Char“ in PowerApps
 
@@ -39,7 +38,7 @@ Die **char** -Funktion übersetzt eine Zahl in eine Zeichenfolge mit dem entspre
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Char( 65 )** |Gibt das Zeichen zurück, das ASCII-Code 65 entspricht |EIN |
+| **Char( 65 )** |Gibt das Zeichen zurück, das ASCII-Code 65 entspricht |Ein |
 | **Char( 105 )** |Gibt das Zeichen zurück, das ASCII-Code 105 entspricht |Ich |
 | **Char( 35 )** |Gibt das Zeichen zurück, das ASCII-Code 35 entspricht |"#" |
 
@@ -47,7 +46,7 @@ Die **char** -Funktion übersetzt eine Zahl in eine Zeichenfolge mit dem entspre
 
 1. Fügen Sie [**auf einem leeren**](../controls/control-gallery.md) Bildschirm in einer Tablet-App ein Katalog-Steuerelement mit einem **leeren horizontalen** Layout hinzu, und legen Sie dann die folgenden Eigenschaften fest:
 
-    - **Elemente**: `[0;1;2;3;4;5;6;7]`
+    - **Elemente**: `[0,1,2,3,4,5,6,7]`
     - **Breite**: 800
     - **Höhe**: 500
     - **Templatesize**: 100
@@ -55,7 +54,7 @@ Die **char** -Funktion übersetzt eine Zahl in eine Zeichenfolge mit dem entspre
 
 1. Fügen Sie in diesem Katalog ein Katalog **-Steuerelement mit einem** **leeren vertikalen** Layout hinzu, und legen Sie dann die folgenden Eigenschaften fest:
 
-    - **Elemente**: `ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 )`
+    - **Elemente**: `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
     - **Breite**: 100
     - **Höhe**: 500
     - **Templatesize**: 30
@@ -80,7 +79,7 @@ Sie haben ein Diagramm mit den ersten 128 ASCII-Zeichen erstellt. Zeichen, die a
 
 Um die erweiterten ASCII-Zeichen anzuzeigen, legen Sie die **Items** -Eigenschaft des zweiten Katalogs auf diese Formel fest. Dadurch wird jedem Zeichen Wert 128 Hinzugefügt:
 
-`ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 + 128)`
+`ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
 
 ![Erweiterte ASCII-Zeichen](media/function-char/chart-higher.png)
 

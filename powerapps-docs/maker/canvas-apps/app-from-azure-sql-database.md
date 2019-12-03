@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 652c8d5c67a9f7245ed40be23cc827354d9b1e42
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 140fa7c51c30199360a08adc86c6e118e4e5bc52
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540874"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679935"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>Vorschau: Erstellen einer Canvas-App aus einer Azure SQL-Datenbank
 
@@ -35,7 +35,7 @@ In diesem Thema verwenden Sie Daten in ihrer Azure SQL-Datenbank, um innerhalb w
 - Für Ihren Browser müssen Popups aktiviert sein.
 - Sie benötigen ein Azure-Abonnement. </br>Wenn Sie über kein Azure-Abonnement verfügen, [Erstellen Sie ein kostenloses Konto](https://azure.microsoft.com/free/).
 - Sie benötigen Zugriff auf eine vorhandene SQL-Datenbank. </br> Wenn Sie nicht über eine vorhandene SQL-Datenbank verfügen, [Erstellen Sie eine neue Datenbank](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-get-started?tabs=azure-portal).
-- Sie müssen in den Firewalleinstellungen powerapps [-Regions-IP-Adressen oder Azure-Dienste](#app-access-to-sql-database) Zugriff auf SQL-Datenbank gewähren.
+- Sie müssen in den Firewalleinstellungen für die [IP-Adressen der Azure-Region oder Azure-Dienste](#app-access-to-sql-database) den Zugriff auf SQL-Datenbank zulassen.
 - Die SQL-Datenbanktabelle muss mindestens eine Spalte mit dem Text-Datentyp aufweisen.
 - Sie benötigen eine gültige powerapps-Lizenz, oder registrieren Sie sich für eine [30-tägige Testlizenz](../signup-for-powerapps.md).
 
@@ -46,7 +46,7 @@ In diesem Thema verwenden Sie Daten in ihrer Azure SQL-Datenbank, um innerhalb w
 3. Wählen Sie powerapps aus.
 
     
-    ![Powerapps-Option in den SQL-Daten Bankoptionen](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "Powerapps-Option in der SQL-Datenbank")
+    ![Option "Power Apps" in den SQL-Daten Bankoptionen](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "Option "Power Apps" in der SQL-Datenbank")
 
     > [!NOTE]
     > Wenn Sie nicht über eine powerapps-Lizenz verfügen, wird eine blaue Informationsleiste mit einem Link zum Starten einer Testversion angezeigt. Wenn Sie eine Testversion starten, gelangen Sie zu einer neuen Registerkarte, auf der Sie sich für eine Lizenz registrieren. Wechseln Sie nach Abschluss des Vorgangs zurück zum Azure-Portal, und aktualisieren Sie das Blatt, um den Vorgang fortzusetzen.
@@ -61,7 +61,7 @@ In diesem Thema verwenden Sie Daten in ihrer Azure SQL-Datenbank, um innerhalb w
 
     ![Geben Sie die Informationen für Ihre APP an.](./media/app-from-azure-sql-database/powerapps-create-page-azure-portal.png "Geben Sie die Informationen für Ihre APP an.")
 
-    Der [PowerApps Studio](https://create.powerapps.com/studio/) wird auf einer neuen Registerkarte geöffnet. Wenn das Popup blockiert ist, aktualisieren Sie den Browser, um Popups zuzulassen, und versuchen Sie es noch mal. Nach der Erstellung verfügen Sie über eine dreiseitige App mit Daten aus der SQL-Datenbank.
+    [Powerapps Studio](https://create.powerapps.com/studio/) wird auf einer neuen Registerkarte geöffnet. Wenn das Popup blockiert ist, aktualisieren Sie den Browser, um Popups zuzulassen, und versuchen Sie es noch mal. Nach der Erstellung verfügen Sie über eine dreiseitige App mit Daten aus der SQL-Datenbank.
 
 ## <a name="accessing-your-app"></a>Zugreifen auf Ihre APP
 
@@ -77,16 +77,16 @@ Sie können powerapps so konfigurieren, dass eine Verbindung mit SQL-Datenbank m
 
 ### <a name="app-access-using-ip-address"></a>App-Zugriff mithilfe der IP-Adresse
 
-[Powerapps-Systemanforderungen](limits-and-config.md#ip-addresses) listet die IP-Adressen auf, die von powerapps abhängig von der Region der APP verwendet werden.
+In den [powerapps-Systemanforderungen](limits-and-config.md#ip-addresses) sind die IP-Adressen aufgeführt, die von Power apps abhängig von der Region der APP verwendet werden.
 
 Sie können entweder eine gespeicherte Transact-SQL-Prozedur oder die-Azure-Portal verwenden, um diesen Zugriff zu konfigurieren:
 
-- Gespeicherte Prozedur [sp_set_firewall_rule](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-set-firewall-rule-azure-sql-database?view=azuresqldb-current) für SQL-Datenbank oder SQL Server Firewallregeln
+- [Sp_set_firewall_rule](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-set-firewall-rule-azure-sql-database?view=azuresqldb-current) gespeicherter Prozeduren für SQL-Datenbank oder SQL Server Firewallregeln
 - [Azure-Portal](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure) für SQL Server Firewallregeln
 
 ### <a name="app-access-as-an-azure-service"></a>App-Zugriff als Azure-Dienst
 
-Powerapps kann mithilfe der Azure-Portal eine Verbindung mit der SQL-Datenbank ermöglichen, den **Zugriff auf die Azure-Dienste zu ermöglichen** . Um diesen Zugriff zu konfigurieren, melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an, und navigieren Sie im Portal zu **SQL Server**. Wählen Sie **Firewalls und virtuelle Netzwerke** **aus**, und legen Sie das Steuerelement die Option **Azure-Dienste und-Ressourcen für den Zugriff auf diesen Server erlauben** Wählen Sie **Speichern** , um Änderungen zu übermitteln.
+Power Apps können mithilfe der Azure-Portal eine Verbindung mit der SQL-Datenbank ermöglichen, den **Zugriff auf die Azure-Dienste zu ermöglichen** . Um diesen Zugriff zu konfigurieren, melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an, und navigieren Sie im Portal zu **SQL Server**. Wählen Sie **Firewalls und virtuelle Netzwerke** **aus**, und legen Sie das Steuerelement die Option **Azure-Dienste und-Ressourcen für den Zugriff auf diesen Server erlauben** Wählen Sie **Speichern** , um Änderungen zu übermitteln.
 
 > [!IMPORTANT]
 > Wenn Sie das Steuerelement auf ON festgelegt lassen, akzeptiert der Azure SQL-Datenbankserver die Kommunikation von jedem Subnetz innerhalb der Azure-Grenze, das von einer der IP-Adressen stammt, die als solche innerhalb der für Azure-Rechenzentren definierten Bereiche erkannt werden. Wenn das Steuerelement auf ON festgelegt ist, kann der Zugriff auf die Sicherheitsperspektive übermäßig hoch sein.

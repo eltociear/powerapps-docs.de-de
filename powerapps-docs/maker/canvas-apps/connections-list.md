@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fda14b7117334290c67d4d5727d93484ded7471
-ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
+ms.openlocfilehash: 6cda843ea95f79e907aa738a6546d63a6a3be270
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261943"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678854"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Übersicht über die Canvas-App-Connectors für PowerApps
-Daten bilden das Herzstück der meisten Apps, u.a. bei denen, die Sie in PowerApps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. PowerApps verfügt über Connectors für viele gängige Dienste und lokale Datenquellen, u.a. SharePoint, SQL Server, Office 365, Salesforce und Twitter. Die ersten Schritte zum Hinzufügen von Daten zu einer Canvas-App werden unter [Hinzufügen einer Datenverbindung in PowerApps](add-data-connection.md) beschrieben.
+Die Daten sind der Kern der meisten apps, einschließlich derjenigen, die Sie in Power Apps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. Powerapps verfügt über Connectors für viele beliebte Dienste und lokale Datenquellen, einschließlich SharePoint, SQL Server, Office 365, Salesforce und Twitter. Die ersten Schritte zum Hinzufügen von Daten zu einer Canvas-App werden unter [Hinzufügen einer Datenverbindung in PowerApps](add-data-connection.md) beschrieben.
 
 Ein Connector kann **Tabellen** mit Daten oder **Aktionen** bereitstellen. Einige Connectors stellen nur Tabellen bereit, einige nur Aktionen, einige beides. Bei Ihrem Connector kann es sich außerdem um einen standardmäßigen oder einen benutzerdefinierten Connector handeln.
 
 ## <a name="tables"></a>Tabellen
 
-Wenn Ihr Connector Tabellen bereitstellt, fügen Sie Ihre Datenquelle hinzu und wählen dann die Tabelle in der Datenquelle aus, die Sie verwalten möchten. PowerApps ruft die Tabellendaten in Ihre App ab und aktualisiert die Daten in Ihrer Datenquelle für Sie. Sie können z.B. eine Datenquelle hinzufügen, die eine Tabelle namens **Lessons** enthält, und dann in der Formularleiste die **Items**-Eigenschaft eines Steuerelements, etwa einen Katalog oder ein Formular, auf diesen Wert festlegen:
+Wenn Ihr Connector Tabellen bereitstellt, fügen Sie Ihre Datenquelle hinzu und wählen dann die Tabelle in der Datenquelle aus, die Sie verwalten möchten. Mit Power apps werden Tabellendaten in Ihre APP abgerufen und Daten in Ihrer Datenquelle für Sie aktualisiert. Sie können z.B. eine Datenquelle hinzufügen, die eine Tabelle namens **Lessons** enthält, und dann in der Formularleiste die **Items**-Eigenschaft eines Steuerelements, etwa einen Katalog oder ein Formular, auf diesen Wert festlegen:
 
  ![Items-Eigenschaft für Quelle mit einfachen Daten](./media/connections-list/ItemPropertyPlain.png)
 
@@ -77,9 +77,9 @@ Diese Tabelle enthält Links zu weiteren Informationen zu den am häufigsten ver
 \* * Gilt für Azure-BLOB, Box, Dropbox, Google Drive, onedrive und onedrive for Business
 
 ## <a name="standard-and-custom-connectors"></a>Standardmäßige und benutzerdefinierte Connectors
-PowerApps bietet *standardmäßige* Connectors für viele häufig genutzte Datenquellen an, wie z.B. die oben genannten. Wenn PowerApps einen Standardconnector für den von Ihnen gewünschten Datenquellentyp bietet, sollten Sie diesen Connector verwenden. Wenn Sie eine Verbindung mit anderen Arten von Datenquellen herstellen möchten, z.B. mit einem von Ihnen erstellten Dienst, finden Sie weitere Informationen unter [Registrieren und Verwenden von benutzerdefinierten Connectors](../canvas-apps/register-custom-api.md).
+Powerapps bietet *Standardconnectors* für viele häufig verwendete Datenquellen, z. b. die oben aufgeführten Datenquellen. Wenn Power Apps über einen Standardconnector für den Typ der Datenquelle verfügt, den Sie verwenden möchten, sollten Sie diesen Connector verwenden. Wenn Sie eine Verbindung mit anderen Arten von Datenquellen herstellen möchten, z.B. mit einem von Ihnen erstellten Dienst, finden Sie weitere Informationen unter [Registrieren und Verwenden von benutzerdefinierten Connectors](../canvas-apps/register-custom-api.md).
 
 ## <a name="all-standard-connectors"></a>Alle Standardconnectors
-Eine vollständige Liste aller Standardconnectors finden Sie in der [Microsoft-Referenz zu Connectors](https://docs.microsoft.com/connectors/). Für Premium-Connectors ist PowerApps-Plan 1 oder 2 erforderlich. Weitere Informationen finden Sie auf der [Seite mit den PowerApps-Plänen](https://powerapps.microsoft.com/pricing/).
+Eine vollständige Liste aller Standardconnectors finden Sie in der [Microsoft-Referenz zu Connectors](https://docs.microsoft.com/connectors/). Für Premium-Connectors ist powerapps-Plan 1 oder Plan 2 erforderlich. Weitere Informationen finden Sie unter [powerapps-Pläne](https://powerapps.microsoft.com/pricing/).
 
-In den [PowerApps-Foren](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1) können Sie Fragen zu einem bestimmten Connector stellen, und unter [PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) können Sie Vorschläge für neue Connectors oder anderen Verbesserungen einreichen.
+Sie können Fragen zu einem bestimmten Connector in den [Power apps-Foren](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)stellen, und Sie können Connectors vorschlagen, um in den [Ideen von Power apps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)weitere Verbesserungen vorzunehmen.

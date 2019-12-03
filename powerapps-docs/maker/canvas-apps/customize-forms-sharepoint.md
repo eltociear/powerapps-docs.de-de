@@ -1,6 +1,6 @@
 ---
 title: Anpassen eines Formulars in einer Canvas-App | Microsoft-Dokumentation
-description: Geben Sie in PowerApps an, welche Daten in einem Canvas-App-Formular in welcher Reihenfolge und in welchen Steuerelementen angezeigt werden sollen.
+description: In powerapps geben Sie an, welche Daten in einem Canvas-App-Formular angezeigt werden sollen, in welcher Reihenfolge Sie angezeigt werden und in welchen Steuerelementen Sie angezeigt werden.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ccaa918bc0bd1e4ca666e62094fa137e31d3243f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.openlocfilehash: 6732dabea803cd7680ef618e4e8d1c4e88f7afe5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540259"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678624"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>Anpassen eines Canvas-App-Formulars in PowerApps
 

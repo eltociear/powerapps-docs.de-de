@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 73f197c7d4038748649261f4686cb07b456595e0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3d53a721e5abba3ce7e844420d9e8415b908cdde
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985201"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680211"
 ---
 # <a name="forall-function-in-powerapps"></a>Funktion „ForAll“ in PowerApps
 Berechnet Werte und führt Aktionen für alle [Datensätze](../working-with-tables.md#records) einer [Tabelle](../working-with-tables.md) durch.
@@ -44,7 +43,7 @@ Beim Schreiben der Formel sollten Sie bedenken, dass Datensätze in beliebiger R
 Mehrere Funktionen zum Ändern von Datenquellen, darunter **Collect**, **Remove** und **Update**, geben die geänderte Datenquelle als Rückgabewert zurück.  Diese Rückgabewerte können groß sein und umfangreiche Ressourcen in Anspruch nehmen, wenn sie für jeden Datensatz der **ForAll**-Tabelle zurückgegeben werden.  Möglicherweise entsprechen diese Rückgabewerte auch nicht Ihren Erwartungen, da **ForAll** parallel ausgeführt werden kann, und die Nebeneffekte dieser Funktionen von deren Ergebnis trennen kann.  Wenn der Rückgabewert von **ForAll** nicht verwendet wird, was bei Funktionen für die Änderung von Daten häufig der Fall ist, wird der Rückgabewert zum Glück nicht erstellt, und es gibt keine Bedenken hinsichtlich Ressourcen oder Reihenfolge.  Aber wenn Sie das Ergebnis einer **ForAll**-Funktion und einer der Funktionen verwenden, die eine Datenquelle zurückgeben, sollten Sie sich genau überlegen, wie Sie das Ergebnis strukturieren, und es zuerst mit kleinen Datensätzen ausprobieren.  
 
 ### <a name="alternatives"></a>Alternativen
-Viele Funktionen in PowerApps können gleichzeitig mehrere Werte mit einer einspaltigen Tabelle verarbeiten.  Zum Beispiel kann die **Len**-Funktion eine Tabelle mit Textwerten verarbeiten und eine Tabelle mit Längen auf die gleiche Weise zurückgeben wie **ForAll**.  Dadurch ist **ForAll** in vielen Fällen nicht mehr erforderlich, und Effizienz und Lesbarkeit können erhöht werden.
+Viele Funktionen in powerapps können mehr als einen Wert gleichzeitig durch die Verwendung einer einspaltigen Tabelle verarbeiten.  Zum Beispiel kann die **Len**-Funktion eine Tabelle mit Textwerten verarbeiten und eine Tabelle mit Längen auf die gleiche Weise zurückgeben wie **ForAll**.  Dadurch ist **ForAll** in vielen Fällen nicht mehr erforderlich, und Effizienz und Lesbarkeit können erhöht werden.
 
 Ein weiterer Aspekt ist, dass **ForAll** im Gegensatz zu anderen Funktionen wie z.B. **Filter** nicht delegiert werden kann.  
 
@@ -52,10 +51,10 @@ Ein weiterer Aspekt ist, dass **ForAll** im Gegensatz zu anderen Funktionen wie 
 [!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Syntax
-**ForAll**( *Tabelle*; *Formel* )
+**ForAll**( *Tabelle*, *Formel* )
 
-* *Tabelle* (erforderlich): Zugrunde liegende Tabelle.
-* *Formel* (erforderlich):  Die Formel zur Auswertung für alle Datensätze der *Tabelle*.
+* *Table*: erforderlich. Zugrunde liegende Tabelle.
+* *Formula*: Erforderlich.  Die Formel zur Auswertung für alle Datensätze der *Tabelle*.
 
 ## <a name="examples"></a>Beispiele
 ### <a name="calculations"></a>Berechnungen
@@ -65,12 +64,12 @@ In den folgenden Beispielen wird die **Squares**-[Datenquelle](../working-with-d
 
 Legen Sie die **OnSelect**-Eigenschaft eines **Button**-Steuerelements auf diese Formel fest, öffnen Sie den Vorschaumodus, und klicken oder tippen Sie anschließend auf die Schaltfläche, um diese Datenquelle als Sammlung zu erstellen:
 
-`ClearCollect( Squares; [ "1"; "4"; "9" ] )`
+`ClearCollect( Squares, [ "1", "4", "9" ] )`
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **ForAll(&nbsp;Squares; Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |Berechnet für alle Datensätze der Eingabetabelle die Quadratwurzel der **Value**-Spalte.  Die **Sqrt**-Funktion kann auch mit einer einspaltigen Tabelle verwendet werden, sodass dieses Beispiel ohne **ForAll** ausgeführt werden kann. |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
-| **ForAll(&nbsp;Squares; Power(&nbsp;Value;&nbsp;3&nbsp;)&nbsp;)** |Berechnet für alle Datensätze der Eingabetabelle die dritte Potenz der **Value**-Spalte.  Die **Power**-Funktion unterstützt einspaltige Tabellen nicht. Deshalb muss in diesem Fall **ForAll** verwendet werden. |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
+| **ForAll(&nbsp;Squares, Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |Berechnet für alle Datensätze der Eingabetabelle die Quadratwurzel der **Value**-Spalte.  Die **Sqrt**-Funktion kann auch mit einer einspaltigen Tabelle verwendet werden, sodass dieses Beispiel ohne **ForAll** ausgeführt werden kann. |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
+| **ForAll(&nbsp;Squares, Power(&nbsp;Value,&nbsp;3&nbsp;)&nbsp;)** |Berechnet für alle Datensätze der Eingabetabelle die dritte Potenz der **Value**-Spalte.  Die **Power**-Funktion unterstützt einspaltige Tabellen nicht. Deshalb muss in diesem Fall **ForAll** verwendet werden. |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
 
 ### <a name="using-a-connection"></a>Verwenden einer Verbindung
 In den folgenden Beispielen wird die **Expressions**-[Datenquelle](../working-with-data-sources.md) verwendet:
@@ -79,19 +78,19 @@ In den folgenden Beispielen wird die **Expressions**-[Datenquelle](../working-wi
 
 Legen Sie die **OnSelect**-Eigenschaft eines **Button**-Steuerelements auf diese Formel fest, öffnen Sie den Vorschaumodus, und klicken oder tippen Sie anschließend auf die Schaltfläche, um diese Datenquelle als Sammlung zu erstellen:
 
-`ClearCollect( Expressions; [ "Hello"; "Good morning"; "Thank you"; "Goodbye" ] )`
+`ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
 Dieses Beispiel verwendet auch eine [Microsoft Translator](../connections/connection-microsoft-translator.md)-Verbindung.  Wie Sie diese Verbindung zu Ihrer App hinzufügen, erfahren Sie im Thema [Manage your connections (Verwalten von Verbindungen)](../add-manage-connections.md).
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **ForAll( Expressions; MicrosoftTranslator.Translate( Value; "es" ) )** |Übersetzt für alle Datensätze in der Expressions-Tabelle den Inhalt der **Value**-Spalte ins Spanische (abgekürzt "es"). |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
-| **ForAll( Expressions; MicrosoftTranslator.Translate( Value; "fr" ) )** |Übersetzt für alle Datensätze in der Expressions-Tabelle den Inhalt der **Value**-Spalte ins Französische (abgekürzt "fr"). |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
+| **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "es" ) )** |Übersetzt für alle Datensätze in der Expressions-Tabelle den Inhalt der **Value**-Spalte ins Spanische (abgekürzt "es"). |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
+| **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "fr" ) )** |Übersetzt für alle Datensätze in der Expressions-Tabelle den Inhalt der **Value**-Spalte ins Französische (abgekürzt "fr"). |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
 
 ### <a name="copying-a-table"></a>Kopieren einer Tabelle
-In einigen Fällen müssen Sie Daten filtern, strukturieren, sortieren und bearbeiten.  PowerApps bietet dafür eine Reihe von Funktionen wie **Filter**, **AddColumns** und **Sort**.  PowerApps behandelt jede Tabelle als Wert, sodass sie Formeln passieren und auf einfache Weise genutzt werden kann.      
+In einigen Fällen müssen Sie Daten filtern, strukturieren, sortieren und bearbeiten.  Powerapps bietet eine Reihe von Funktionen, wie z. b. **Filter**, **AddColumns**und **Sort**.  Power apps behandelt jede Tabelle als Wert, sodass Sie durch Formeln durchlaufen und problemlos genutzt werden kann.      
 
-Zudem kann es vorkommen, dass Sie eine Kopie dieses Ergebnisses zur späteren Verwendung erstellen möchten.  Oder Sie möchten Informationen aus einer Datenquelle in eine andere verschieben.  PowerApps bietet die **Collect**-Funktion zum Kopieren von Daten.
+Zudem kann es vorkommen, dass Sie eine Kopie dieses Ergebnisses zur späteren Verwendung erstellen möchten.  Oder Sie möchten Informationen aus einer Datenquelle in eine andere verschieben.  Powerapps stellt die **Collect** -Funktion zum Kopieren von Daten bereit.
 
 Aber bevor Sie eine Kopie erstellen, sollten Sie sich genau überlegen, ob dies wirklich erforderlich ist.  Viele Situationen können durch Filtern und Strukturieren der zugrunde liegenden Datenquelle nach Bedarf mit einer Formel behoben werden. Zu den Nachteilen der Erstellung einer Kopie gehören:
 
@@ -105,13 +104,13 @@ In den folgenden Beispielen wird die **Products**-[Datenquelle](../working-with-
 
 Legen Sie die **OnSelect**-Eigenschaft eines **Button**-Steuerelements auf diese Formel fest, öffnen Sie den Vorschaumodus, und klicken oder tippen Sie anschließend auf die Schaltfläche, um diese Datenquelle als Sammlung zu erstellen:
 
-```powerapps-comma
-ClearCollect( Products; 
+```powerapps-dot
+ClearCollect( Products, 
     Table( 
-        { Product: "Widget";    'Quantity Requested': 6;  'Quantity Available': 3 }; 
-        { Product: "Gadget";    'Quantity Requested': 10; 'Quantity Available': 20 };
-        { Product: "Gizmo";     'Quantity Requested': 4;  'Quantity Available': 11 };
-        { Product: "Apparatus"; 'Quantity Requested': 7;  'Quantity Available': 6 } 
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 }, 
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 } 
     )
 )
 ```
@@ -125,14 +124,14 @@ Wir können diese Aufgabe auf verschiedene Weisen ausführen, die alle mit versc
 #### <a name="table-shaping-on-demand"></a>Tabellenstrukturierung nach Bedarf
 Erstellen Sie keine Kopie!  Wir können die folgende Formel an einer beliebigen Stelle verwenden:
 
-```powerapps-comma
-// Table shaping on demand; no need for a copy of the result
+```powerapps-dot
+// Table shaping on demand, no need for a copy of the result
 ShowColumns( 
     AddColumns( 
-        Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-        "Quantity To Order"; 'Quantity Requested' - 'Quantity Available' 
-    ); 
-    "Product"; 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+    ), 
+    "Product", 
     "Quantity To Order"
 )
 ```
@@ -146,11 +145,11 @@ Und da wir keine Kopie erstellt haben, muss keine zusätzliche Kopie der Informa
 #### <a name="forall-on-demand"></a>ForAll nach Bedarf
 Ein anderer Ansatz ist die **ForAll**-Funktion, um die Funktionen zur Tabellenstrukturierung zu ersetzen:
 
-```powerapps-comma
-ForAll( Products; 
-    If( 'Quantity Requested' > 'Quantity Available'; 
+```powerapps-dot
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
         { 
-            Product: Product; 
+            Product: Product, 
             'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
         } 
     ) 
@@ -166,25 +165,25 @@ In einigen Situationen ist möglicherweise eine Kopie der Daten erforderlich.  E
 
 Wir verwenden die gleiche Tabellenstrukturierung wie in den beiden vorherigen Beispielen, aber wir erfassen das Ergebnis in einer Sammlung:
 
-```powerapps-comma
-ClearCollect( NewOrder; 
+```powerapps-dot
+ClearCollect( NewOrder, 
     ShowColumns( 
         AddColumns( 
-            Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-            "Quantity To Order"; 'Quantity Requested' - 'Quantity Available' 
-        ); 
-        "Product"; 
+            Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+            "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+        ), 
+        "Product", 
         "Quantity To Order"
     )
 )
 ```
 
-```powerapps-comma
-ClearCollect( NewOrder; 
-    ForAll( Products; 
-        If( 'Quantity Requested' > 'Quantity Available'; 
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ForAll( Products, 
+        If( 'Quantity Requested' > 'Quantity Available', 
             { 
-                Product: Product; 
+                Product: Product, 
                 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
             } 
         } 
@@ -197,13 +196,13 @@ ClearCollect( NewOrder;
 #### <a name="collect-within-forall"></a>Sammeln innerhalb von ForAll
 Schließlich können wir **Collect** direkt in **ForAll** ausführen:
 
-```powerapps-comma
-Clear( ProductsToOrder );; 
-ForAll( Products; 
-    If( 'Quantity Requested' > 'Quantity Available'; 
-        Collect( NewOrder;  
+```powerapps-dot
+Clear( ProductsToOrder ); 
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        Collect( NewOrder,  
             { 
-                Product: Product; 
+                Product: Product, 
                 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
             } 
         )

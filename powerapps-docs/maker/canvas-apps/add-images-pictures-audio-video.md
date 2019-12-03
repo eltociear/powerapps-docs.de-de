@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 78f091705a01a54b7e6eb008630949796ffac453
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541183"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679222"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
 
@@ -27,7 +26,7 @@ In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre Canvas-App 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-[Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
+[Registrieren](../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit denselben Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Hinzufügen von Medien aus einer Datei oder aus der Cloud
 
@@ -68,7 +67,7 @@ Zum Hochladen können Sie eine beliebige Art von Mediendatei auswählen (z.B. Bi
 
 2. Nachdem das Video veröffentlicht wurde, kopieren Sie seine URL.
 
-3. Fügen Sie in PowerApps über **Einfügen > Medien** das **Video**-Steuerelement hinzu.
+3. Fügen Sie in powerapps das **Video** -Steuerelement aus dem **> Medium einfügen**hinzu.
 
 4. Legen Sie die **Media**-Eigenschaft der URL fest, die Sie kopiert haben.
 
@@ -82,7 +81,7 @@ In diesem Szenario speichern Sie Bilder in einem Cloudspeicherkonto (OneDrive fo
 In diesem Szenario wird die Datei [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) verwendet, die einige JPEG-Dateien enthält.
 
 > [!NOTE]
-> Im Pfad zu diesen Bildern in der Excel-Datei müssen Schrägstriche verwendet werden. Werden Pfade zu Bildern von PowerApps in einer Excel-Tabelle gespeichert, werden im Pfad umgekehrte Schrägstriche verwendet. Wenn Sie Pfade zu Bildern aus einer solchen Tabelle verwenden, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt.  
+> Im Pfad zu diesen Bildern in der Excel-Datei müssen Schrägstriche verwendet werden. Wenn Power apps Bild Pfade in einer Excel-Tabelle speichert, verwendet der Pfad umgekehrte Schrägstriche. Wenn Sie Pfade zu Bildern aus einer solchen Tabelle verwenden, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt.  
 
 1. Laden Sie die Datei [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) herunter, und extrahieren Sie den Ordner **Ressourcen** in Ihr Cloudspeicherkonto.
 
@@ -131,7 +130,7 @@ In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (O
 
 3. Speichern Sie die Excel-Datei in OneDrive for Business unter dem Namen **SavePen.xlsx**.
 
-4. Erstellen Sie in PowerApps eine [leere App](get-started-create-from-blank.md).
+4. Erstellen Sie in powerapps eine [leere App](get-started-create-from-blank.md).
 
 5. Fügen Sie in der App das OneDrive for Business-Konto als [Datenquelle](add-data-connection.md) hinzu:
 
@@ -159,7 +158,7 @@ In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (O
 
 8. Fügen Sie auf der Registerkarte **Einfügen** ein **Schaltflächen**-Steuerelement hinzu, und legen Sie dessen **OnSelect**-Eigenschaft auf diese Formel fest:
 
-    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
 9. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu (Registerkarte **Einfügen** > **Katalog**), und legen Sie dessen **Items**-Eigenschaft auf `Drawings` fest. Die Eigenschaft **Image** des Katalog-Steuerelements wird automatisch auf `ThisItem.Image` festgelegt.
 

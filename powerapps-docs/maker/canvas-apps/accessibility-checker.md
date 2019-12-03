@@ -10,23 +10,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 05ac3d3705fc56b5714d6cb704d2d3cc3dc87124
-ms.sourcegitcommit: b4df7d781cda50dfe2f6609f1cc4d2b531428b3c
+ms.openlocfilehash: 1c6278a9ddbea085523117c6b790af2b2b1306a0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70161294"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680073"
 ---
 # <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>Überprüfen einer Canvas-App in PowerApps auf Barrierefreiheit
 
-Benutzer, die eine Sehschwäche, Hörschwäche oder eine andere Beeinträchtigung haben, können Ihre Canvas-App einfacher und erfolgreicher nutzen, wenn Sie die Barrierefreiheit berücksichtigen, während Sie das Design und das Verhalten der App entwerfen. Wenn Sie nicht sicher sind, wie Sie Ihre App barrierefreier gestalten können, können Sie die Barrierefreiheitsüberprüfung in PowerApps Studio ausführen. Dieses Tool kann nicht nur mögliche Probleme bei der Barrierefreiheit erkennen, es erläutert auch, warum jedes Problem ein potentielles Problem für Benutzer darstellen kann, die eine bestimmte Beeinträchtigung haben, und schlägt mögliche Lösungen vor.
+Benutzer, die eine Sehschwäche, Hörschwäche oder eine andere Beeinträchtigung haben, können Ihre Canvas-App einfacher und erfolgreicher nutzen, wenn Sie die Barrierefreiheit berücksichtigen, während Sie das Design und das Verhalten der App entwerfen. Wenn Sie nicht sicher sind, wie Sie Ihre APP leichter zugänglich machen können, können Sie die Barrierefreiheits Prüfung in Power apps Studio ausführen. Dieses Tool kann nicht nur mögliche Probleme bei der Barrierefreiheit erkennen, es erläutert auch, warum jedes Problem ein potentielles Problem für Benutzer darstellen kann, die eine bestimmte Beeinträchtigung haben, und schlägt mögliche Lösungen vor.
 Die Barrierefreiheitsüberprüfung erkennt Probleme bei der Sprachausgabe und Tastatureingabe. Außerdem stellt sie Informationen zur Behebung von Farbkontrastprobleme durch [barrierefreie Farben](accessible-apps-color.md) bereit.
 
 Mit der Barrierefreiheitsüberprüfung können Sie Einstellungen identifizieren, die Sie ändern sollten. Ziehen Sie jedoch immer die Vorschläge im Kontext der Aufgabe Ihrer App in Betracht. Viele Vorschläge lohnen sich möglicherweise, Sie können aber jene ignorieren, die mehr Nach- als Vorteile haben.
 
 ## <a name="find-accessibility-issues"></a>Ermitteln von Problemen mit der Barrierefreiheit
 
-1. Klicken Sie in der oberen rechten Ecke von PowerApps Studio auf das Symbol für die App-Überprüfung.
+1. Wählen Sie in der oberen rechten Ecke von Power apps Studio das Symbol für die APP-Prüfung aus.
 
     ![Symbol für die App-Überprüfung](./media/accessibility-checker/app-checker-icon.png)
 
@@ -66,7 +66,7 @@ Die Barrierefreiheitsüberprüfung klassifiziert jedes Problem auf Grundlage des
 | **Fokus wird nicht angezeigt.**                | Fehler    | Wenn die **FocusBorderThickness** eines Steuerelements auf 0 festgelegt ist. Es wird empfohlen, auf einen deutlichen Farbkontrast zwischen dem Fokusrahmen und dem Steuerelement zu achten, damit es deutlich sichtbar ist. | Ändern Sie die Eigenschaft **FocusedBorderThickness** in einen Wert größer als 0.  | Wenn der Fokus nicht sichtbar ist, können Personen, die keine Maus verwenden, ihn nicht sehen, während sie mit der App interagieren.   |
 | **Untertitel fehlen.**                   | Warnung  | Wenn die Eigenschaft **ClosedCaptionsURL** eines **Audio**- oder **Video**-Steuerelements leer ist. | Legen Sie die **ClosedCaptionsURL**-Eigenschaft auf die URL für Untertitel fest. | Ohne Untertitel können Personen mit Behinderungen die Informationen in einem Video- oder Audiosegment möglicherweise nicht verstehen. |
 | **Hilfreiche Steuerelementeinstellungen fehlen.**   | Warnung  | Wenn mehrere Einstellungen deaktiviert sind (z.B. die Anzeige von Bezeichnungen und Marker für Diagramme und die Anzeige von Standardsteuerelementen für **Audio**-, **Video**- und **Stifteingabe**-Steuerelemente). | Wählen Sie die Warnung aus, und legen Sie die Eigenschaft auf **true** fest. | Indem Sie diese Eigenschafteneinstellung ändern, erhält der Benutzer hilfreichere Informationen über die Funktion der Steuerelemente in Ihrer App. |
-| **HTML ist nicht barrierefrei.**           | Warnung  | Wenn ein anderes Steuerelement als ein HTML-Text HTML enthält. In diesem Fall unterstützt PowerApps nicht die Barrierefreiheit benutzerdefinierter HTML-Elemente. | Verwenden Sie eine andere Methode anstelle von HTML, oder entfernen Sie den HTML-Code aus diesem Element. | Ihre App funktioniert nicht ordnungsgemäß oder ist nicht barrierefrei, wenn Sie interaktive HTML-Elemente hinzufügen. |
+| **HTML ist nicht barrierefrei.**           | Warnung  | Wenn ein anderes Steuerelement als ein HTML-Text HTML enthält. In diesem Fall unterstützt Power apps keinen Zugriff auf benutzerdefinierte HTML-Elemente. | Verwenden Sie eine andere Methode anstelle von HTML, oder entfernen Sie den HTML-Code aus diesem Element. | Ihre App funktioniert nicht ordnungsgemäß oder ist nicht barrierefrei, wenn Sie interaktive HTML-Elemente hinzufügen. |
 | **Automatischen Start deaktivieren.**                 | Warnung  | Wenn die **Autostart**-Eigenschaft eines **Audio**- oder **Video**-Steuerelements auf **true** festgelegt ist. | Legen Sie die **Autostart**-Eigenschaft auf **false** fest. | Video- und Audiodateien, die automatisch wiedergegeben werden, können Benutzer ablenken. Lassen Sie Benutzer entscheiden, ob sie einen Clip abspielen möchten. |
 | **Namen des Bildschirms überarbeiten.**                 | Tipp      | Wenn ein Bildschirm über einen Standardnamen verfügt, der von Sprachausgaben vorgelesen wird, wenn Benutzer in der App navigieren. | Geben Sie dem Bildschirm einen Namen, der beschreibt, was auf dem Bildschirm angezeigt oder wofür er verwendet wird.| Personen, die blind oder sehbehindert sind oder eine Lese-/Rechtschreibschwäche besitzen, verlassen sich bei der Navigation auf die Bildschirmnamen und die Sprachausgabe. |
 | **Hinweistext für Zustand hinzufügen.**          | Tipp      |  Wenn ein Steuerelement zwar über einen Status verfügt (z.B. eine Umschaltfläche), für das aber die Wertbezeichnungen deaktiviert sind. | Legen Sie die Eigenschaft **ShowValue** des Steuerelements auf **true** fest, um den aktuellen Status anzuzeigen. | Benutzer erhalten keine Bestätigung ihrer Aktionen, wenn der Zustand des Steuerelements nicht angezeigt wird. |

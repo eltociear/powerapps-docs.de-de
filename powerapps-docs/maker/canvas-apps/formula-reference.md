@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992920"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678463"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -189,7 +189,7 @@ Andere Elemente enthalten:
 
 **[Istype](functions/function-astype-istype.md)** – überprüft, ob ein Daten Satz Verweis auf einen bestimmten Entitätstyp verweist.
 
-## <a name="j"></a>ISTGH
+## <a name="j"></a>IStGH
 **[JSON](functions/function-json.md)** : generiert eine JSON-Text Zeichenfolge für eine Tabelle, einen Datensatz oder einen Wert.
 
 ## <a name="l"></a>L
@@ -207,7 +207,7 @@ Andere Elemente enthalten:
 
 **[Ln](functions/function-numericals.md)** : gibt den natürlichen Logarithmus zurück.
 
-**[LoadData](functions/function-savedata-loaddata.md)** : lädt eine Sammlung dem privaten Speicher von PowerApps.
+**[LoadData](functions/function-savedata-loaddata.md)** – lädt eine Sammlung aus dem privaten Power apps-Speicher.
 
 **[Location](functions/signals.md)** : gibt Ihren Standort mithilfe des Globalen Positionierungssystems (GPS) und anderer Informationen als Kartenkoordinaten zurück.
 
@@ -295,7 +295,7 @@ Andere Elemente enthalten:
 **[RoundUp](functions/function-round.md)** : rundet auf die kleinste nächste Zahl auf.
 
 ## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** : speichert eine Sammlung im privaten Speicher von PowerApps ab.
+**[SaveData](functions/function-savedata-loaddata.md)** – speichert eine Sammlung in privatem Power apps-Speicher.
 
 **[Search](functions/function-filter-lookup.md)** : sucht nach Datensätzen in einer Tabelle, die eine Zeichenfolge in einer ihrer Spalten enthält.  
 

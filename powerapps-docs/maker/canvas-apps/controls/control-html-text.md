@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d514342bc51cdd6aa737da1b893530d702127bd1
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: ed104f5ae4e7244e5a49b6cbc67745fd2f9e24dc
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650470"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678601"
 ---
 # <a name="html-text-control-in-powerapps"></a>HTML-Textsteuerelement in PowerApps
 Ein Feld, in dem Text angezeigt wird und in dem HTML-Tags in Textformatierungen konvertiert werden.
@@ -76,7 +75,7 @@ In einem Steuerelement für **HTML-Text** werden nicht nur Klartext und Zahlen a
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Find**( *FindString*; *WithinString* )](../functions/function-find.md)
+[**Find**( *FindString*, *WithinString* )](../functions/function-find.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **[Label](control-text-box.md)** -Steuerelement (Bezeichnung) hinzu, geben Sie ihm den Namen **Quelle**, und geben Sie als Wert für die **[Text](properties-core.md)** -Eigenschaft diese Zeichenfolge ein:
@@ -103,4 +102,4 @@ Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast ge
 * **HtmlText** muss vorhanden sein.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
-* **HtmlText** sollte keine interaktiven Elemente wie `<button>`, `<a>` oder `<input>` enthalten. Das **[TabIndex](properties-accessibility.md)** -System in PowerApps ignoriert Elemente in **HtmlText**.
+* **HtmlText** sollte keine interaktiven Elemente wie `<button>`, `<a>` oder `<input>` enthalten. Das **[TabIndex](properties-accessibility.md)** -System in powerapps berücksichtigt keine Elemente innerhalb von **htmlText**.

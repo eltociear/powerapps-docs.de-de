@@ -1,6 +1,6 @@
 ---
 title: Einbetten einer APP in Teams | Microsoft-Dokumentation
-description: Sie können eine APP einbetten, die in powerapps in Microsoft Teams erstellt wurde, um Sie freizugeben.
+description: Sie können eine in Power apps erstellte app in Microsoft Teams einbetten, um Sie freizugeben.
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2cce61533bf86063d907882024a5a83c2e03fb7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b8750733ac6c97d1669c1063700a3d075fbabbe
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73538997"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678486"
 ---
-# <a name="embed-an-app-in-teams"></a>Einbetten einer APP in Teams
+# <a name="embed-an-app-in-teams"></a>Einbetten einer App in Teams
 
-Sie können powerapps freigeben, die Sie erstellt haben, indem Sie Sie direkt in Microsoft Teams einbetten. Wenn Sie fertig sind, können Benutzer **+** auswählen, um Ihre APP zu einem **ihrer** teamchannels oder Konversationen in dem Team hinzuzufügen, in dem Sie sich befinden. Die APP wird als Kachel für das **Team unter Registerkarten**angezeigt.
+Sie können eine von Ihnen erstellte Power-App freigeben, indem Sie Sie direkt in Microsoft Teams einbetten. Wenn Sie fertig sind, können Benutzer **+** auswählen, um Ihre APP zu einem **ihrer** teamchannels oder Konversationen in dem Team hinzuzufügen, in dem Sie sich befinden. Die APP wird als Kachel für das **Team unter Registerkarten**angezeigt.
 
 Ein Administrator kann die APP hochladen, sodass er für **alle** Teams in Ihrem Mandanten im **Abschnitt alle Registerkarten**angezeigt wird. Weitere Informationen finden Sie [unter Freigeben einer APP in Microsoft Teams](https://docs.microsoft.com/power-platform/admin/embed-app-teams).
 
@@ -44,7 +44,7 @@ Ein Administrator kann die APP hochladen, sodass er für **alle** Teams in Ihrem
 
     ![App-Details](./media/embed-teams-app/add-to-teams.png "Zu Teams hinzufügen")
 
-3. Wählen Sie im Bereich zu Teams hinzufügen die Option **herunterladen**aus. Powerapps generiert dann mit der APP-Beschreibung und dem Logo, das Sie bereits in Ihrer APP festgelegt haben, die Manifest-Datei Ihres Teams.
+3. Wählen Sie im Bereich zu Teams hinzufügen die Option **herunterladen**aus. Powerapps generiert dann die Manifest-Datei des Teams mithilfe der APP-Beschreibung und des Logos, das Sie bereits in Ihrer APP festgelegt haben.
 
     ![App-Details](./media/embed-teams-app/download-app.png "App herunterladen")
 

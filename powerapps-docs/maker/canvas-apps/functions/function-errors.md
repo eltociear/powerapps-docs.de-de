@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 114474696f85980da315b6dd225250dc1b197805
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0a0871374bad90156f9b3626b58a68eb77bfb499
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992792"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680234"
 ---
 # <a name="errors-function-in-powerapps"></a>Funktion „Errors“ in PowerApps
 Enthält Fehlerinformationen zu vorherigen Änderungen an einer [Datenquelle](../working-with-data-sources.md).
@@ -62,7 +61,7 @@ Fehler können für die gesamte Datenquelle oder nur für eine ausgewählte Zeil
 Wenn keine Fehler vorliegen, ist die Tabelle, die **Errors** zurückgibt, [leer](function-isblank-isempty.md) und kann mit der **[IsEmpty](function-isblank-isempty.md)** -Funktion getestet werden.
 
 ## <a name="syntax"></a>Syntax
-**Errors**( *DataSource* [; *Record* ] )
+**Errors**( *DataSource* [, *Record* ] )
 
 * *DataSource*: erforderlich. Die Datenquelle, für die Fehler zurückgegeben werden sollen.
 * *Record*: optional.  Ein bestimmter Datensatz, für den Fehler zurückgegeben werden sollen. Wenn Sie dieses Argument nicht angeben, gibt die Funktion für die gesamte Datenquelle Fehler zurück.
@@ -75,33 +74,33 @@ In diesem Beispiel arbeiten wir mit der Datenquelle **IceCream**:
 
 Über die App lädt ein Benutzer den Schokoladendatensatz in ein Dateneingabeformular und ändert anschließend den Wert für **Quantity** auf 90.  Der Datensatz, mit dem gearbeitet wird, befindet sich in der [Kontextvariablen](../working-with-variables.md#use-a-context-variable) **EditRecord**:
 
-* **updatecontext ({EditRecord: First (Filter (icecream; Flavor = "Chocolate"))})**
+* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
 Für diese Änderung in der Datenquelle wird die **[Patch](function-patch.md)** -Funktion verwendet:
 
-* **Patch( IceCream; EditRecord; Gallery.Updates )**
+* **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-Where **Gallery. Updates** ergibt **{Menge: 90}** , da nur die Eigenschaft " **Menge** " geändert wurde.
+wobei **Gallery.Updates** den Wert **{Quantity: 90}** ergibt, da nur die **Quantity**-Eigenschaft geändert wurde.
 
-Leider hat eine andere Person kurz vor dem Aufrufen der **[Patch](function-patch.md)** -Funktion den Wert für **Quantity** für Schokolade auf 80 geändert.  PowerApps erkennt dies und verhindert einen Änderungskonflikt.  Sie können dies anhand der folgenden Formel überprüfen:
+Leider hat eine andere Person kurz vor dem Aufrufen der **[Patch](function-patch.md)** -Funktion den Wert für **Quantity** für Schokolade auf 80 geändert.  Power apps erkennt dies und lässt nicht zu, dass eine widersprüchliche Änderung stattfindet.  Sie können dies anhand der folgenden Formel überprüfen:
 
-* **IsEmpty( Errors( IceCream; EditRecord ) )**
+* **IsEmpty( Errors( IceCream, EditRecord ) )**
 
 Diese gibt **FALSE** zurück, da die **Errors**-Funktion die folgende Tabelle zurückgegeben hat:
 
 | Datensatz | Spalte | Nachricht | Fehler |
 | --- | --- | --- | --- |
-| Tee "Chocolate", Menge: 100} |*blank* |„Another user has modified the record that you're trying to modify. (Ein anderer Benutzer hat den Datensatz geändert, den Sie gerade ändern möchten.“) Please reload the record and try again.“ (Laden Sie den Datensatz neu, und versuchen Sie es erneut.) |ErrorKind.Conflict |
+| { Flavor: "Chocolate", Quantity: 100 } |*blank* |„Another user has modified the record that you're trying to modify. (Ein anderer Benutzer hat den Datensatz geändert, den Sie gerade ändern möchten.“) Please reload the record and try again.“ (Laden Sie den Datensatz neu, und versuchen Sie es erneut.) |ErrorKind.Conflict |
 
 Sie können eine Bezeichnung auf dem Formular platzieren, um dem Benutzer diesen Fehler anzeigen.
 
 * Um den Fehler anzuzeigen, legen Sie die Bezeichnung der  **[Text](../controls/properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
-  **Label.Text = First(Errors( IceCream; EditRecord )).Message**
+  **Label.Text = First(Errors( IceCream, EditRecord )).Message**
 
 Sie können auch eine **Reload**-Schaltfläche zum erneuten Laden im Formular hinzufügen, damit der Benutzer den Konflikt effizient beheben kann.
 
 * Um die Schaltfläche nur dann anzuzeigen, wenn ein Konflikt aufgetreten ist, legen Sie die **[Visible](../controls/properties-core.md)** -Eigenschaft der Schaltfläche auf diese Formel fest:<br>
-    **!IsEmpty( Lookup( Errors( IceCream; EditRecord ); Error = ErrorKind.Conflict ) )**
+    **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
 * Sie können die Änderung rückgängig machen, für die der Benutzer die Schaltfläche auswählt, indem Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf diese Formel festlegen:<br>
-    **ReloadButton.OnSelect = Revert( IceCream; EditRecord )**
+    **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ab695d461cb980556a3027297c3e7f5ac5bde61
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0f2f51596e8973bf41e26e4ed56df9f1c6e34844
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985515"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680303"
 ---
 # <a name="concurrent-function-in-powerapps"></a>Concurrent-Funktion in PowerApps
 Wertet mehrere Formeln gleichzeitig aus.
@@ -29,9 +28,9 @@ Die **Concurrent**-Funktion wertet mehrere Formeln gleichzeitig aus. Normalerwei
 
 Verwenden Sie **Concurrent** in der Eigenschaft [**OnStart**](../controls/control-screen.md) Ihrer App, um die Leistung zu verbessern, wenn die App Daten lädt. Wenn Datenaufrufe bis zum Abschluss der vorherigen Aufrufe nicht gestartet wurden, muss die App auf die Summe aller Anforderungszeiten warten. Wenn die Datenaufrufe zur selben Zeit beginnen, muss die App nur auf die längste Anforderungszeit warten. Webbrowser verbessern oft die Leistung durch Ausführen gleichzeitiger Datenvorgänge.
 
-Sie können die Reihenfolge, in der Formeln in der **Concurrent**-Funktion beginnen, nicht vorhersagen oder die Evaluierung beenden. Formeln innerhalb der **Concurrent**-Funktion sollten keine Abhängigkeiten von anderen Formeln innerhalb der gleichen **Concurrent**-Funktion enthalten. PowerApps gibt einen Fehler aus, sollte dies doch passieren. Sie können problemlos Abhängigkeiten von Formeln von innerhalb der **Concurrent**-Funktion außerhalb der Funktion verwenden, da diese abgeschlossen werden, bevor die **Concurrent**-Funktion startet. Formeln nach der **gleichzeitigen** Funktion können sichere Abhängigkeiten von Formeln in annehmen: Sie werden vollständig abgeschlossen, bevor die **gleichzeitige** Funktion abgeschlossen wird, und bis zur nächsten Formel in einer Kette (bei Verwendung des Operators **;** ). Achten Sie auf subtile Reihenfolgenabhängigkeiten, wenn Sie Funktionen oder Dienstmethoden aufrufen, die Nebeneffekte haben.
+Sie können die Reihenfolge, in der Formeln in der **Concurrent**-Funktion beginnen, nicht vorhersagen oder die Evaluierung beenden. Formeln innerhalb der gleich **zeitigen** Funktion sollten keine Abhängigkeiten von anderen Formeln innerhalb derselben gleich **zeitigen** Funktion enthalten, und powerapps zeigt einen Fehler an, wenn Sie versuchen. Sie können problemlos Abhängigkeiten von Formeln von innerhalb der **Concurrent**-Funktion außerhalb der Funktion verwenden, da diese abgeschlossen werden, bevor die **Concurrent**-Funktion startet. Formeln nach der **gleichzeitigen** Funktion können sichere Abhängigkeiten von Formeln in annehmen: Sie werden vollständig abgeschlossen, bevor die **gleichzeitige** Funktion abgeschlossen wird, und bis zur nächsten Formel in einer Kette (bei Verwendung des Operators **;** ). Achten Sie auf subtile Reihenfolgenabhängigkeiten, wenn Sie Funktionen oder Dienstmethoden aufrufen, die Nebeneffekte haben.
 
-Sie können Formeln in Verbindung mit dem Operator **;** innerhalb eines Arguments zu **gleichzeitigen**verketten. Beispielsweise wertet **Concurrent( Set( a; 1 );; Set( b; a+1 ); Set( x; 2 );; Set( y; x+2 ) )** **Set( a; 1 );; Set( b; a+1 )** gleichzeitig mit **Set( x; 2 );; Set( y; x+2 )** aus. In diesem Fall sehen die Abhängigkeiten in den Formeln gut aus: **a** wird vor **b** festgelegt und **x** vor **y**.
+Sie können Formeln in Verbindung mit dem Operator **;** innerhalb eines Arguments zu **gleichzeitigen**verketten. Beispielsweise wertet **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** **Set( a, 1 ); Set( b, a+1 )** gleichzeitig mit **Set( x, 2 ); Set( y, x+2 )** aus. In diesem Fall sehen die Abhängigkeiten in den Formeln gut aus: **a** wird vor **b** festgelegt und **x** vor **y**.
 
 Je nach Gerät oder Browser, auf bzw. in dem die App ausgeführt wird, können nur eine Handvoll Formeln tatsächlich gleichzeitig ausgewertet werden. **Concurrent** verwendet die verfügbaren Funktionen und wird nicht beendet, bevor nicht alle Formeln ausgewertet wurden.
 
@@ -40,7 +39,7 @@ Wenn Sie die **Fehlerverwaltung auf Formelebene** (in den erweiterten Einstellun
 Verwenden Sie **Concurrent** nur in [Verhaltensformeln](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Syntax
-**Concurrent**( *Formel1*; *Formel2* [; ...] )
+**Concurrent**( *Formel1*, *Formel2* [, ...] )
 
 * *Formel(n)* : Erforderlich Formeln, die gleichzeitig ausgewertet werden sollen. Sie müssen mindestens zwei Formeln angeben.
 
@@ -50,17 +49,17 @@ Verwenden Sie **Concurrent** nur in [Verhaltensformeln](../working-with-formulas
 
 1. Erstellen Sie eine APP, und fügen Sie vier Datenquellen aus Common Data Service, SQL Server oder SharePoint hinzu. 
 
-    In diesem Beispiel werden vier Tabellen aus der [Adventure Works-Beispieldatenbank unter SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) verwendet. Nachdem die Datenbank erstellt wurde, stellen Sie eine Verbindung von PowerApps damit her, und verwenden Sie dazu den vollqualifizierten Servernamen (z.B. „srvname.database.windows.net“):
+    In diesem Beispiel werden vier Tabellen aus der [Adventure Works-Beispieldatenbank unter SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) verwendet. Nachdem Sie die Datenbank erstellt haben, stellen Sie von powerapps aus eine Verbindung mit dem voll qualifizierten Servernamen her (z. b. srvname.Database.Windows.net):
 
     ![Verbinden mit der Adventure Works-Datenbank in Azure](media/function-concurrent/connect-database.png)
 
 2. Fügen Sie ein **[Schaltflächen](../controls/control-button.md)** -Steuerelement hinzu, und legen Sie seine **OnSelect**-Eigenschaft auf folgende Formel fest:
 
-    ```powerapps-comma
-    ClearCollect( Product; '[SalesLT].[Product]' );;
-    ClearCollect( Customer; '[SalesLT].[Customer]' );;
-    ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );; 
-    ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+    ```powerapps-dot
+    ClearCollect( Product, '[SalesLT].[Product]' );
+    ClearCollect( Customer, '[SalesLT].[Customer]' );
+    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
+    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     ```
 
 3. Aktivieren Sie in [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) oder [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) die Entwicklertools, um den Netzwerkdatenverkehr zu überwachen, während Ihre App ausgeführt wird.
@@ -75,16 +74,16 @@ Verwenden Sie **Concurrent** nur in [Verhaltensformeln](../working-with-formulas
 
 5. Speichern, schließen und öffnen Sie die App erneut.
 
-    PowerApps speichert Daten zwischen, deshalb führt das Klicken auf die Schaltfläche nicht unbedingt zu vier neuen Anforderungen. Jedes Mal, wenn Sie die Leistung testen möchten, müssen Sie die App schließen und erneut öffnen. Wenn die Einschränkung aktiviert ist, sollten Sie diese deaktivieren, bis Sie für einen weiteren Test bereit sind.
+    In Power apps werden Daten zwischengespeichert, sodass das erneute auswählen der Schaltfläche nicht zwangsläufig vier neue Anforderungen verursacht. Jedes Mal, wenn Sie die Leistung testen möchten, müssen Sie die App schließen und erneut öffnen. Wenn die Einschränkung aktiviert ist, sollten Sie diese deaktivieren, bis Sie für einen weiteren Test bereit sind.
 
 1. Fügen Sie ein zweites **[Schaltflächen](../controls/control-button.md)** -Steuerelement hinzu, und legen Sie seine **OnSelect**-Eigenschaft auf folgende Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent( 
-        ClearCollect( Product; '[SalesLT].[Product]' ); 
-        ClearCollect( Customer; '[SalesLT].[Customer]' );
-        ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );
-        ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+        ClearCollect( Product, '[SalesLT].[Product]' ), 
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
+        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     )
     ```
 
@@ -112,19 +111,19 @@ Verwenden Sie **Concurrent** nur in [Verhaltensformeln](../working-with-formulas
 
 3. Fügen Sie ein **Schaltflächen**-Steuerelement hinzu, und legen Sie seine **OnSelect**-Eigenschaft auf folgende Formel fest:
 
-    ```powerapps-comma
-    Set( StartTime; Value( Now() ) );;
+    ```powerapps-dot
+    Set( StartTime, Value( Now() ) );
     Concurrent(
-        Set( FRTrans; MicrosoftTranslator.Translate( TextInput1.Text; "fr" ) );; 
-            Set( FRTransTime; Value( Now() ) );
-        Set( DETrans; MicrosoftTranslator.Translate( TextInput1.Text; "de" ) );; 
-            Set( DETransTime; Value( Now() ) )
-    );;
-    Collect( Results;
+        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
+            Set( FRTransTime, Value( Now() ) ),
+        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
+            Set( DETransTime, Value( Now() ) )
+    );
+    Collect( Results,
         { 
-            Input: TextInput1.Text;
-            French: FRTrans; FrenchTime: FRTransTime - StartTime; 
-            German: DETrans; GermanTime: DETransTime - StartTime; 
+            Input: TextInput1.Text,
+            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
+            German: DETrans, GermanTime: DETransTime - StartTime, 
             FrenchFaster: FRTransTime < DETransTime
         }
     )
@@ -150,4 +149,4 @@ Verwenden Sie **Concurrent** nur in [Verhaltensformeln](../working-with-formulas
 
     In einigen Fällen ist die Französischübersetzung schneller als die Deutschübersetzung, manchmal ist es aber genau umgekehrt. Beide beginnen zur selben Zeit, jedoch wird aus unterschiedlichen Gründen (wie Netzwerklatenz und serverseitiger Verarbeitung) eine Übersetzung noch vor der anderen zurückgegeben.
 
-    Es tritt eine [Racebedingung](https://en.wikipedia.org/wiki/Race_condition) auf, wenn die App davon abhängig ist, dass eine Übersetzung zuerst beendet wird. Glücklicherweise kennzeichnet PowerApps die meisten Zeitabhängigkeiten, die erkannt wurden.
+    Es tritt eine [Racebedingung](https://en.wikipedia.org/wiki/Race_condition) auf, wenn die App davon abhängig ist, dass eine Übersetzung zuerst beendet wird. Glücklicherweise gibt Power Apps die meisten Zeit Steuerungs Abhängigkeiten aus, die erkannt werden können.
