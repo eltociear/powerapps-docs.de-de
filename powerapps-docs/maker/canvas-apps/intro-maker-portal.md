@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 06dad46643a3de8b8727d890865c9b6f847a825f
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 0f745516ab0c282ab6519f0bac8ac8cfd5f46598
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899224"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675741"
 ---
-# <a name="sign-in-to-powerapps-for-the-first-time"></a>Erste Anmeldung bei PowerApps
+# <a name="sign-in-to-power-apps-for-the-first-time"></a>Melden Sie sich zum ersten Mal bei Power apps an
 
 Wenn Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden, bietet Ihnen die Website eine Vielzahl von Optionen zum Erstellen eigener Apps, zum Öffnen von Apps, die Sie selbst oder andere Benutzer erstellt haben, und zum Ausführen von Aufgaben rund um Apps. Einige dieser Funktionen sind ganz einfach, z.B. die Ermittlung der Lizenzen, über die Sie Zugriff erhalten. Andere sind komplexer, beispielsweise die Erstellung von benutzerdefinierten Verbindungen mit bestimmten Datenquellen.
 
@@ -42,7 +42,7 @@ Um optimale Ergebnisse zu erzielen, stellen Sie zunächst sicher, dass die Start
 
 ## <a name="choose-an-environment"></a>Auswählen einer Umgebung
 
-Unabhängig davon, ob Sie eine APP, einen Flow, eine Datenverbindung oder eine Entität in Common Data Service erstellen, sind viele Funktionen in powerapps in einer bestimmten Umgebung enthalten. Umgebungen sorgen für Abgrenzungen zwischen verschiedenen Arbeitsbereichen. Eine Organisation kann beispielsweise über getrennte Umgebungen für verschiedene Abteilungen verfügen. Viele Organisationen verwenden Umgebungen, um Apps, die sich noch in der Entwicklung befinden, von Apps zu trennen, die für die allgemeine Verwendung bereit sind. Sie können möglicherweise auf mehrere Umgebungen zugreifen oder nur auf eine. Wenn Sie über die entsprechenden Berechtigungen verfügen, können Sie möglicherweise selbst Umgebungen erstellen.
+Unabhängig davon, ob Sie eine APP, einen Flow, eine Datenverbindung oder eine Entität in Common Data Service erstellen, sind viele Funktionen in Power apps in einer bestimmten Umgebung enthalten. Umgebungen sorgen für Abgrenzungen zwischen verschiedenen Arbeitsbereichen. Eine Organisation kann beispielsweise über getrennte Umgebungen für verschiedene Abteilungen verfügen. Viele Organisationen verwenden Umgebungen, um Apps, die sich noch in der Entwicklung befinden, von Apps zu trennen, die für die allgemeine Verwendung bereit sind. Sie können möglicherweise auf mehrere Umgebungen zugreifen oder nur auf eine. Wenn Sie über die entsprechenden Berechtigungen verfügen, können Sie möglicherweise selbst Umgebungen erstellen.
 
 Um zu überprüfen, in welcher Umgebung Sie sich befinden, suchen Sie das Umschaltfeld für Umgebungen im Headerbereich.
 
@@ -57,7 +57,7 @@ Weitere Informationen finden Sie unter [Übersicht zu Umgebungen](../../administ
 
 ## <a name="choose-an-app-type"></a>Auswählen eines App-Typs
 
-In PowerApps können Sie die folgenden Arten von Apps erstellen und ausführen:
+In powerapps können Sie diese Arten von apps erstellen und ausführen:
 
 - **Canvas-Apps** unterstützen das Entwerfen einer benutzerdefinierten Benutzeroberfläche und die Herstellung einer Verbindung mit Daten aus einer Vielzahl von Quellen.
 - **Modell gesteuerte apps** verfügen über eine Standardbenutzer Oberfläche und stellen nur in Common Data Service eine Verbindung mit Daten her. Sie können jedoch einfacher andere Elemente wie Ansichten, Dashboards und verschiedene Arten von Geschäftslogik erstellen.
@@ -93,7 +93,7 @@ Es gibt zwei Möglichkeiten, weitere Informationen zu Canvas-Apps oder modellges
 
     ![Liste der modellgesteuerten Apps mit offenem Menü nach Auswahl der Auslassungspunkte](media/intro-maker-portal/help-icon.png)
 
-Beide Optionen zeigen Links zu diesem Dokumentationssatz, zur PowerApps-Community (dort können Sie Informationen mit Benutzern in anderen Organisationen teilen) und zum PowerApps-Blog (dort finden Sie Ankündigungen zu neuen Features).
+Beide Optionen zeigen Links zu diesem Dokumentations Satz, der Power apps-Community (in der Sie Informationen für Benutzer in anderen Organisationen freigeben können) und dem Blog von powerapps (in dem die neuesten Features angekündigt werden) an.
 
 ## <a name="other-common-tasks"></a>Weitere allgemeine Aufgaben
 
@@ -105,7 +105,7 @@ Mit den Optionen im Header und der linken Navigationsleiste können Sie nicht nu
 
     Weitere Informationen finden Sie unter [Finden und Ausführen von Apps](../../user/index.md).
 
-- Wählen Sie das Zahnradsymbol aus, um Aufgaben wie die folgenden auszuführen: Herstellen einer Verbindung mit Datenquellen, Ermitteln Ihrer PowerApps-Lizenz(en), Öffnen der Seite für Verwaltungsaufgaben.
+- Wählen Sie das Zahnrad Symbol aus, um Aufgaben auszuführen, z. b. das Herstellen einer Verbindung mit Datenquellen, das Identifizieren der Lizenz oder Lizenzen von powerapps und das Öffnen der Seite, auf der Sie administrative Aufgaben ausführen
 
     Weitere Informationen finden Sie in folgenden Themen:
 

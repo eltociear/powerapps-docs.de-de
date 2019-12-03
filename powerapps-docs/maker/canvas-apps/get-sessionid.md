@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 11f749f241f978ebd94e460833e98cca894fe7fa
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 81c1db4ab44f3ca8517c6154f0516ca9dad5f825
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990196"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676514"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>Abrufen einer Sitzungs-ID oder einer Canvas-App-ID
-Wenn mit einer Canvas-App, die in PowerApps erstellt wurde, ein Problem auftritt, können Sie Microsoft helfen, das Problem wesentlich effizienter zu beheben. Stellen Sie hierzu eine Sitzungs-ID, eine App-ID oder beides für das jeweilige Problem bereit.
+Wenn ein Problem mit einer Canvas-App auftritt, die in powerapps erstellt wurde, können Sie Microsoft dabei helfen, das Problem wesentlich effektiver zu beheben, wenn Sie Ihnen eine Sitzungs-ID, eine APP-ID oder beides für dieses Problem bereitstellen.
 
 ## <a name="get-the-session-id"></a>Abrufen einer Sitzungs-ID
 
@@ -32,7 +32,7 @@ Wenn mit einer Canvas-App, die in PowerApps erstellt wurde, ein Problem auftritt
 
 1. Wählen Sie unter **Diagnose** die Option **Sitzungsdetails** aus.
 
-    ![Abrufen einer Sitzungs-ID aus PowerApps Studio](media/get-sessionid/studio.png)
+    ![Eine Sitzungs-ID aus Power apps Studio erhalten](media/get-sessionid/studio.png)
 
 ### <a name="when-running-an-app-in-a-browser"></a>Beim Ausführen einer App in einem Browser
 1. Wählen Sie oben rechts das Zahnradsymbol aus.

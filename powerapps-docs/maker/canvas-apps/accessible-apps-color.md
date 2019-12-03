@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f704b96150b0021b7170fc095cc6561cd3aac908
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 44c94a712402ef26a4fa6b36d84e287d3fa506e1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987784"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679291"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Barrierefreiheit und Farben für Canvas-Apps in PowerApps
-In einer App sollten nur Farben verwendet werden, die für barrierefreien Zugriff für farbenblinde und sehbehinderte Benutzer geeignet sind. Alle PowerApps-Designs sind standardmäßig barrierefrei. Beachten Sie diese Richtlinien, wenn Sie die in einer App verwendeten Farben ändern, um weiterhin Barrierefreiheit sicherzustellen. Online stehen mehrere Tools zur Verfügung, die Sie beim Bestimmen von Farbkontrasten unterstützen können.
+In einer App sollten nur Farben verwendet werden, die für barrierefreien Zugriff für farbenblinde und sehbehinderte Benutzer geeignet sind. Alle powerapps-Designs sind standardmäßig zugänglich. Beachten Sie diese Richtlinien, wenn Sie die in einer App verwendeten Farben ändern, um weiterhin Barrierefreiheit sicherzustellen. Online stehen mehrere Tools zur Verfügung, die Sie beim Bestimmen von Farbkontrasten unterstützen können.
 
 ## <a name="minimum-contrast-for-text"></a>Minimaler Kontrast bei Text
 * Text und Hintergrund müssen zumindest ein Kontrastverhältnis von 4,5:1 aufweisen.
@@ -55,7 +55,7 @@ Wenn kein Rahmen vorhanden ist, sollte der Farbkontrast ausreichend sein zwische
 * **[HoverFill](controls/properties-color-border.md)** und der Farbe außerhalb des Steuerelements
 
 ### <a name="graphical-objects"></a>Grafikobjekte
-Wenn ein Bild wichtige Informationen vermittelt, achten Sie besonders auf etwaige Kontrastprobleme. Dies gilt für Steuerelemente, in denen ein Bild angezeigt werden kann: **[Audiodatei](controls/control-audio-video.md)** , **[Bild](controls/control-image.md)** , **[Mikrofon](controls/control-microphone.md)** und **[Video](controls/control-audio-video.md)** .
+Wenn ein Bild wichtige Informationen vermittelt, achten Sie besonders auf etwaige Kontrastprobleme. Dies gilt für Steuerelemente, in denen ein Bild angezeigt werden kann: **[Audio](controls/control-audio-video.md)** , **[Image](controls/control-image.md)** , **[Mikrofon](controls/control-microphone.md)** und **[Video](controls/control-audio-video.md)** .
 
 Überprüfen Sie Videoinhalte auf Kontrastprobleme. Stellen Sie alternativ oder darüber hinaus [Untertitel](controls/control-audio-video.md) bereit, die das Video beschreiben.
 
@@ -65,4 +65,4 @@ Stellen Sie sicher, dass die App keine Informationen einfach nur über Farbe ver
 Zusätzliche Hinweise wie ein **[Symbol](controls/control-shapes-icons.md)** oder Textformate wie **[Kursiv](controls/properties-text.md)** und **[Unterstrichen](controls/properties-text.md)** können helfen, Bedeutungen zu vermitteln.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Erfahren Sie mehr zu [Barrierefreiheitseigenschaften](controls/properties-accessibility.md) in PowerApps-Steuerelementen und zum [Verwenden der Barrierefreiheitsprüfung](accessibility-checker.md).
+Erfahren Sie mehr über Barrierefreiheits [Eigenschaften](controls/properties-accessibility.md) in Power apps-Steuerelementen, und [verwenden Sie die Zugriffs](accessibility-checker.md)Überprüfung.

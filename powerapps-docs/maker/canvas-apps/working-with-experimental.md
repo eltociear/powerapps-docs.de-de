@@ -14,16 +14,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a09d3a36f5db048aa077e8801a77915ccfb2bcf2
-ms.sourcegitcommit: 249d710ec06c078eb71faa6d5eb48494c8435abd
+ms.openlocfilehash: e1cab122851ae2ba0a4d5414d2f4c5ca088d4478
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73962540"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674245"
 ---
 # <a name="understand-experimental-preview-and-deprecated-features-in-powerapps"></a>Verstehen von experimentellen, Vorschau und veralteten Features in powerapps
 
-Mit jedem Release nehmen wir Änderungen vor und fügen neue Features hinzu, um sicherzustellen, dass PowerApps immer Ihren Anforderungen entspricht. Wir verbessern das Produkt kontinuierlich.  
+Mit jeder Version nehmen wir Änderungen vor und fügen Features hinzu, damit Power apps das beste Tool ist, das Ihren Anforderungen entspricht. Wir verbessern das Produkt kontinuierlich.  
 
 Abwärtskompatibilität ist ein sehr wichtiger Aspekt für uns. Es kann jedoch vorkommen, dass durch eine Änderung oder eine Verbesserung unbeabsichtigte Nebeneffekte auftreten und Ihre App nicht mehr wie bisher funktioniert.
 
@@ -39,7 +39,7 @@ Features durchlaufen drei verschiedene Phasen, bevor sie offizieller Bestandteil
 
 In jeder Phase erhöht sich die Anzahl der Personen, die das Feature verwenden, und unterstützt wir dabei, zu überprüfen, ob das Feature für Sie erforderlich ist, und dass keine unbeabsichtigten Nebeneffekte eingeführt werden.
 
-**Für diesen Prozess ist Ihr Feedback wesentlich.**  Veröffentlichen Sie Ihr Feedback im [Forum der PowerApps-Community](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).
+**Für diesen Prozess ist Ihr Feedback wesentlich.**  Senden Sie Ihr Feedback im [Community-Forum für Power apps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).
 
 Wie lange befindet sich ein Feature in einer der oben genannten Phasen? Das kann sich von Feature zu Feature unterscheiden. Dabei werden sehr viele Faktoren berücksichtigt, z.B. die Anzahl der Apps, die das Feature verwenden, die Anzahl der gemeldeten Probleme und die Dringlichkeit des Features. Features können sich Wochen aber auch Monate in einer Phase befinden.  Wir können auch einige Phasen überspringen, wenn wir nicht glauben, dass es hilfreich wäre.
 
@@ -56,9 +56,9 @@ Anhand dieser Tabelle können Sie entscheiden, wann es für Sie am sinnvollsten 
 ## <a name="documentation"></a>Dokumentation
 
 Wo werden Informationen zu diesen Features veröffentlicht?  Vorschaufeatures werden als abgeschlossene Features angesehen, und Sie können dort mehr über diese Features erfahren, wo Sie auch Informationen zu jedem anderen Feature erhalten: 
-- [in der PowerApps-Dokumentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started). Hier erhalten Sie grundlegende Informationen zum neuen Feature: zu den Vorteilen, den ersten Schritte und zu Referenzinformationen.
-- [im Forum der PowerApps-Community](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).  Sie lernen das neue Feature gemeinsam mit anderen Benutzern kennen. Hier können Sie sich austauschen und voneinander lernen.
-- [im PowerApps-Blog](https://powerapps.microsoft.com/blog/).  Die meiste Zeit, allerdings nicht immer, wir mit einem neuen Feature auch ein dazugehöriger Blogbeitrag veröffentlicht.
+- [Powerapps-Dokumentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started). Hier erhalten Sie grundlegende Informationen zum neuen Feature: zu den Vorteilen, den ersten Schritte und zu Referenzinformationen.
+- [Powerapps-Communityforum](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).  Sie lernen das neue Feature gemeinsam mit anderen Benutzern kennen. Hier können Sie sich austauschen und voneinander lernen.
+- [Blog zu Power apps](https://powerapps.microsoft.com/blog/)  Die meiste Zeit, allerdings nicht immer, wir mit einem neuen Feature auch ein dazugehöriger Blogbeitrag veröffentlicht.
 
 Das ist bei experimentellen Features anders.  Sie befinden sich noch in Bearbeitung und werden nicht als fertig angesehen. Die kurze Beschreibung im Bereich **App-Einstellungen** (siehe unten) kann die einzige Stelle sein, an der Sie Informationen zu diesen Features erhalten. Experimentelle Features werden normalerweise nicht in der Dokumentation behandelt. Das Communityforum ist in diesem Fall Ihre beste Informationsquelle.  In einigen Fällen wird das Feature in einem frühen Blogbeitrag beschrieben.  Wenn Sie nicht ausreichend Informationen finden können, stellen Sie im Forum eine Frage, oder warten Sie, bis das Feature in die Vorschauphase übergeht.
 

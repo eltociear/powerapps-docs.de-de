@@ -13,214 +13,213 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8004a39e83ea3615ce8a77637a9f5c0271b67781
-ms.sourcegitcommit: 157ab15738e2d0d1bf9097bbb7b9e3d9c29a4015
+ms.openlocfilehash: 1dbf192664f2c8a812650b487a9931de0160eeab
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66265731"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675514"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Entwickeln von offlinefähigen Canvas-Apps
 
-Mobile Benutzer häufig zum produktiven arbeiten benötigen sogar wenn sie nur eine eingeschränkte oder keine Verbindung. Wenn Sie eine Canvas-app erstellen, können Sie diese Aufgaben ausführen:
+Mobile Benutzer müssen häufig produktiv sein, auch wenn Sie über eingeschränkte oder keine Konnektivität verfügen. Wenn Sie eine Canvas-app erstellen, können Sie folgende Aufgaben ausführen:
 
-- PowerApps Mobile öffnen und Ausführen von Offline-apps.
+- Öffnen Sie powerapps Mobile, und führen Sie apps Offline aus.
 - Mithilfe des Signalobjekts [Connection](../canvas-apps/functions/signals.md#connection) bestimmen, ob eine App offline, online oder in einer getakteten Verbindung ist.
 - Verwenden von [Sammlungen](../canvas-apps/create-update-collection.md) und Nutzung von Funktionen wie [LoadData und SaveData](../canvas-apps/functions/function-savedata-loaddata.md), um offline grundlegende Datenspeicherung zur Verfügung zu machen.
 
-## <a name="limitations"></a>Einschränkungen
+## <a name="limitations"></a>Einschränken
 
-**LoadData** und **SaveData** kombinieren, um einen einfachen Mechanismus zum Speichern von kleine Mengen von Daten auf einem lokalen Gerät zu erstellen. Mithilfe dieser Funktionen können Sie einfache Offlinefunktionen zu Ihrer app hinzufügen.
+**LoadData** und **SaveData** bilden einen einfachen Mechanismus zum Speichern kleiner Datenmengen auf einem lokalen Gerät. Mithilfe dieser Funktionen können Sie Ihrer app einfache Offline Funktionen hinzufügen.
 
-Diese Funktionen werden durch die Größe des verfügbaren app-Speichers begrenzt, da sie in einer in-Memory-Sammlung ausgeführt werden. Verfügbare Arbeitsspeicher kann variieren, je nach Gerät, das Betriebssystem, den Arbeitsspeicher, den PowerApps Mobile verwendet und die Komplexität der app im Hinblick auf Bildschirme und Steuerelemente. Wenn Sie länger als einige Megabyte an Daten speichern, testen Sie Ihre app mit erwarteten Szenarien auf den Geräten, die auf denen Sie es erwarten. Sie müssen in der Regel 30 bis 70 MB des verfügbaren Arbeitsspeichers.
+Diese Funktionen sind durch die Menge des verfügbaren APP-Speichers beschränkt, da Sie für eine Auflistung im Arbeitsspeicher ausgeführt werden. Der verfügbare Arbeitsspeicher kann abhängig vom Gerät, dem Betriebssystem, dem von Power Apps Mobile verwendeten Arbeitsspeicher und der Komplexität der app in Bezug auf Bildschirme und Steuerelemente variieren. Wenn Sie mehr als ein paar Megabyte Daten speichern, testen Sie Ihre APP mit den erwarteten Szenarien auf den Geräten, auf denen Sie erwarten, dass Sie ausgeführt werden. In der Regel verfügen Sie über 30-70 Megabyte an verfügbarem Arbeitsspeicher.
 
-Die Funktionen auflösen nicht auch automatisch Mergekonflikte, wenn ein Gerät online geschaltet wird. Konfiguration auf welche Daten gespeichert werden und das Durchführen von erneuten Herstellen einer Verbindung verwendet wird, obliegt der Ersteller beim Schreiben von Ausdrücken.
+Die Funktionen lösen auch Mergekonflikte nicht automatisch auf, wenn ein Gerät online geschaltet wird. Die Konfiguration, welche Daten gespeichert werden und wie die erneute Verbindung gehandhabt wird, ist beim Schreiben von Ausdrücken der Ersteller.
 
-Für Updates auf Offlinefunktionen, kehren Sie zu diesem Thema zurück, und Abonnieren der [PowerApps-Blog](https://powerapps.microsoft.com/blog/).
+Weitere Informationen zu Offline Funktionen erhalten Sie, wenn Sie zu diesem Thema zurückkehren und den [Blog zu Power apps](https://powerapps.microsoft.com/blog/)abonnieren.
 
 ## <a name="overview"></a>Übersicht
 
-Wenn Sie offline-Szenarien entwerfen, sollten Sie zunächst, wie Ihre apps mit Daten arbeiten. Apps in PowerApps greifen auf Daten hauptsächlich durch eine Reihe von [Connectors](../canvas-apps/connections-list.md) , die die Plattform bereitstellt, z. B. SharePoint, Office 365 und Common Data Service. Darüber hinaus können Sie benutzerdefinierte Connectors erstellen, die Apps den Zugriff auf jeden Dienst ermöglichen, der einen RESTful-Endpunkt bereitstellt. Dabei kann es sich um eine Web-API oder um einen Dienst handeln, wie etwa Azure Functions. Alle diese Connectors verwenden HTTPS im Internet, was bedeutet, dass Ihre Benutzer online sein müssen, damit sie auf Daten und andere Funktionen zugreifen können, die von einem Dienst bereitgestellt werden.
+Beim Entwerfen von Offline Szenarien sollten Sie zuerst berücksichtigen, wie Ihre apps mit Daten arbeiten. Apps in Power apps greifen in erster Linie auf Daten über eine Reihe von [Connectors](../canvas-apps/connections-list.md) zu, die die Plattform bereitstellt, z. b. SharePoint, Office 365 und Common Data Service. Darüber hinaus können Sie benutzerdefinierte Connectors erstellen, die Apps den Zugriff auf jeden Dienst ermöglichen, der einen RESTful-Endpunkt bereitstellt. Dabei kann es sich um eine Web-API oder um einen Dienst handeln, wie etwa Azure Functions. Alle diese Connectors verwenden HTTPS im Internet, was bedeutet, dass Ihre Benutzer online sein müssen, damit sie auf Daten und andere Funktionen zugreifen können, die von einem Dienst bereitgestellt werden.
 
-![PowerApps-App mit Connectors](./media/offline-apps/online-app.png)
+![Powerapps-App mit Connectors](./media/offline-apps/online-app.png)
 
 ### <a name="handling-offline-data"></a>Verarbeitung von Offlinedaten
 
-In PowerApps können Sie filtern, suchen, sortieren, aggregieren, und Bearbeiten von Daten auf konsistente Weise unabhängig von der Datenquelle. Quellen reichen von Auflistungen im Arbeitsspeicher in der app in SharePoint-Listen, SQL-Datenbanken und Common Data Service. Aufgrund dieser Konsistenz können Sie eine app, um eine andere Datenquelle verwenden problemlos neu zuweisen. Für Offlineszenarien, können Sie noch wichtiger: lokale Sammlungen für die datenverwaltung mit fast ohne Änderungen an der Logik einer app verwenden. Tatsächlich stellen lokale Sammlungen den wichtigsten Mechanismus in der Verarbeitung von Offlinedaten dar.
+In powerapps können Sie Daten unabhängig von der Datenquelle auf konsistente Weise filtern, durchsuchen, sortieren, Aggregieren und bearbeiten. Quellen reichen von in-Memory-Auflistungen in der APP zu SharePoint-Listen bis hin zu SQL-Datenbanken und Common Data Service. Aufgrund dieser Konsistenz können Sie eine APP problemlos neu zuweisen, um eine andere Datenquelle zu verwenden. Noch wichtiger ist für Offline Szenarien, dass Sie lokale Sammlungen für die Datenverwaltung ohne Änderungen an der Logik einer App verwenden können. Tatsächlich stellen lokale Sammlungen den wichtigsten Mechanismus in der Verarbeitung von Offlinedaten dar.
 
-## <a name="build-an-offline-app"></a>Erstellen Sie eine offline-app
+## <a name="build-an-offline-app"></a>Erstellen einer Offline-App
 
-Um den Fokus bei den offlineaspekten der app-Entwicklung zu halten, wird in diesem Thema veranschaulicht, ein einfaches Szenarios, die sich auf Twitter konzentriert. Sie erstellen eine app, mit der Sie Twitter-Beiträge lesen und Tweets Absenden, während Sie offline. Wenn die App Zugang zu einer Onlineverbindung erhält, veröffentlicht sie die Tweets und lädt die lokalen Daten erneut.
+Um den Fokus auf die Offline Aspekte der APP-Entwicklung zu behalten, veranschaulicht dieses Thema ein einfaches Szenario, das sich auf Twitter konzentriert. Sie erstellen eine APP, die es Ihnen ermöglicht, Twitter-Beiträge zu lesen und Tweets zu senden, während Sie offline sind. Wenn die App Zugang zu einer Onlineverbindung erhält, veröffentlicht sie die Tweets und lädt die lokalen Daten erneut.
 
-Auf einer hohen Ebene führt die app folgende Aufgaben aus:
+Auf hoher Ebene führt die APP die folgenden Aufgaben aus:
 
-- Wenn der Benutzer die app öffnet:
+- Wenn der Benutzer die APP öffnet:
 
-  - Wenn das Gerät online ist, wird die app Ruft Daten über den Twitter-Connector ab und füllt eine Auflistung mit den Daten.
-  - Wenn das Gerät offline ist, lädt die app die Daten aus einer lokalen Cachedatei mithilfe der [ **LoadData** ](../canvas-apps/functions/function-savedata-loaddata.md) Funktion.
-  - Der Benutzer kann die Tweets übermitteln. Wenn die app online ist, die Tweets direkt in Twitter gepostet, und der lokalen Cache wird aktualisiert.
+  - Wenn das Gerät online ist, ruft die APP Daten über den Twitter-Connector ab und füllt eine Sammlung mit diesen Daten auf.
+  - Wenn das Gerät offline ist, lädt die APP die Daten mithilfe der [**LoadData**](../canvas-apps/functions/function-savedata-loaddata.md) -Funktion aus einer lokalen Cachedatei.
+  - Der Benutzer kann tweets übermitteln. Wenn die APP Online ist, werden die tweets direkt an Twitter gesendet, und der lokale Cache wird aktualisiert.
 
-- Alle fünf Minuten, während die app online ist:
+- Alle fünf Minuten, während die APP Online ist:
 
-  - Die app sendet alle Tweets im lokalen Cache.
-  - Die app wird der lokalen Cache aktualisiert und speichert sie mithilfe der [ **SaveData** ](../canvas-apps/functions/function-savedata-loaddata.md) Funktion.
+  - Die APP postet alle tweets im lokalen Cache.
+  - Die APP aktualisiert den lokalen Cache und speichert Sie mithilfe der [**SaveData**](../canvas-apps/functions/function-savedata-loaddata.md) -Funktion.
 
-### <a name="step-1-add-twitter-to-a-blank-phone-app"></a>Schritt 1: Hinzufügen von Twitter in eine leere Smartphone-app
+### <a name="step-1-add-twitter-to-a-blank-phone-app"></a>Schritt 1: Hinzufügen von Twitter zu einer leeren Phone-App
 
-1. Wählen Sie in PowerApps Studio, **Datei** > **neu**.
+1. Wählen Sie in powerapps Studio **Datei** > **neu**aus.
 1. Wählen Sie auf der Kachel **Leere App** **Telefonlayout** aus.
-1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
-1. In der **Daten** wählen Sie im Bereich **Datenquelle hinzufügen**.
-1. Wählen Sie **neue Verbindung** > **Twitter** > **erstellen**.
-1. Geben Sie Ihre Anmeldeinformationen ein, erstellen Sie die Verbindung, und schließen Sie die **Daten** Bereich.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
+1. Wählen Sie im Bereich **Daten** die Option **Datenquelle hinzufügen**aus.
+1. Wählen Sie **neue Verbindung** > **Twitter** > **Erstellen**aus.
+1. Geben Sie Ihre Anmelde Informationen ein, erstellen Sie die Verbindung, und schließen Sie dann den **Daten** Bereich.
 
-### <a name="step-2-collect-existing-tweets"></a>Schritt 2: Erfassen der vorhandenen tweets
+### <a name="step-2-collect-existing-tweets"></a>Schritt 2: erfassen vorhandener tweets
 
-1. In der **Strukturansicht** wählen Sie im Bereich **App**, und legen Sie dann die **OnStart** -Eigenschaft auf diese Formel:
+1. Wählen Sie im Struktur **Ansichts** Bereich **App**aus, und legen Sie dann die zugehörige **OnStart** -Eigenschaft auf die folgende Formel fest:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
-            Set( statusText; "Online data" );
-        LoadData( LocalTweets; "LocalTweets"; true );;
-            Set( statusText; "Local data" )
-    );;
-    SaveData( LocalTweets; "LocalTweets" );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Formel zum Laden von tweets](./media/offline-apps/load-tweets.png)
+    > ![Formel zum Laden von Tweets](./media/offline-apps/load-tweets.png)
 
-1. In der **Strukturansicht** Bereich Wählen Sie die Auslassungszeichen für die **App** Objekt aus, und wählen Sie dann **OnStart ausführen** diese Formel ausgeführt.
+1. Wählen Sie im Struktur **Ansichts** Bereich das Menü mit den Auslassungs Punkten für das **App** -Objekt aus, und klicken Sie dann auf **OnStart ausführen** , um die Formel auszuführen.
 
     > [!div class="mx-imgBorder"]
-    > ![Führen Sie die Formel zum Laden von tweets](./media/offline-apps/load-tweets-run.png)
+    > ![Run-Formel zum Laden von Tweets](./media/offline-apps/load-tweets-run.png)
 
     > [!NOTE]
-    > Die **LoadData** und **SaveData** Funktionen möglicherweise ein Fehler in PowerApps Studio angezeigt, da der Browser diese nicht unterstützen. Allerdings werden sie normalerweise ausführen, nachdem Sie diese app auf einem Gerät bereitstellen.
+    > Die Funktionen " **LoadData** " und " **SaveData** " zeigen möglicherweise einen Fehler in Power apps Studio an, da Sie von Browsern nicht unterstützt werden Sie werden jedoch normal durchgeführt, nachdem Sie diese APP auf einem Gerät bereitgestellt haben.
 
-Diese Formel wird überprüft, ob das Gerät online ist:
+Diese Formel überprüft, ob das Gerät online ist:
 
-- Wenn das Gerät online ist, lädt die Formel bis zu 10 Tweets mit dem Suchbegriff "PowerApps" in einem **LocalTweets** Auflistung.
-- Wenn das Gerät offline ist, lädt die Formel im lokalen Cache aus einer Datei namens "LocalTweets", sofern diese verfügbar ist.
+- Wenn das Gerät online ist, lädt die Formel bis zu 10 tweets mit dem Suchbegriff "powerapps" in eine **localtweets** -Sammlung.
+- Wenn das Gerät offline ist, lädt die Formel den lokalen Cache aus einer Datei mit dem Namen "localtweets", sofern diese verfügbar ist.
 
-### <a name="step-3-show-tweets-in-a-gallery"></a>Schritt 3: Anzeigen von Tweets in einem Katalog
+### <a name="step-3-show-tweets-in-a-gallery"></a>Schritt 3: Anzeigen von tweets in einem Katalog
 
-1. Auf der **einfügen** Registerkarte **Katalog** > **leer flexible Höhe**.
+1. **Wählen Sie** auf der Registerkarte **Einfügen** die Option Katalog aus, > **leere flexible Höhe**.
 
-1. Legen Sie die **Elemente** Eigenschaft der [ **Katalog** ](controls/control-gallery.md) die Steuerung an `LocalTweets`.
+1. Legen Sie die **Items** -Eigenschaft des Katalog [ **-Steuer Elements**](controls/control-gallery.md) auf `LocalTweets`fest.
 
-1. Fügen Sie in der Katalogvorlage drei [ **Bezeichnung** ](controls/control-text-box.md) Steuerelemente, und legen die **Text** -Eigenschaft jeder Bezeichnung auf einen der folgenden Werte:
+1. Fügen Sie in der Katalog Vorlage drei [**Label**](controls/control-text-box.md) -Steuerelemente hinzu, und legen Sie die **Text** -Eigenschaft jeder Bezeichnung auf einen der folgenden Werte fest:
 
     - `ThisItem.UserDetails.FullName & " (@" & ThisItem.UserDetails.UserName & ")"`
-    - `Text(DateTimeValue(ThisItem.CreatedAtIso); DateTimeFormat.ShortDateTime)`
+    - `Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)`
     - `ThisItem.TweetText`
 
-1. Der Text fett in die letzte Bezeichnung so, dass der Katalog in diesem Beispiel ähnelt.
+1. Legen Sie den Text in der letzten Bezeichnung Fett fest, damit der Katalog dem folgenden Beispiel ähnelt.
 
     > [!div class="mx-imgBorder"]
-    > ![Katalog mit Beispiel-tweets](./media/offline-apps/tweet-gallery.png)
+    > ![Galerie mit Beispiel-tweets](./media/offline-apps/tweet-gallery.png)
 
-### <a name="step-4-show-connection-status"></a>Schritt 4: Verbindungsstatus angezeigt
+### <a name="step-4-show-connection-status"></a>Schritt 4: Anzeigen des Verbindungsstatus
 
-1. Klicken Sie unter den Katalog, fügen Sie eine Bezeichnung, und legen Sie seine **Farbe** Eigenschaft **Red**.
+1. Fügen Sie im Katalog eine Bezeichnung ein, und legen Sie die **Farb** Eigenschaft auf **rot**fest.
 
-1. Legen Sie die neuesten Bezeichnung **Text** -Eigenschaft auf diese Formel:
+1. Legen Sie die **Text** -Eigenschaft der neuesten Bezeichnung auf diese Formel fest:
 
-    `If( Connection.Connected; "Connected"; "Offline" )`
+    `If( Connection.Connected, "Connected", "Offline" )`
 
-Diese Formel wird bestimmt, ob das Gerät online ist. Wenn es sich handelt, die Bezeichnung zeigt **verbunden**ist, andernfalls zeigt **Offline**.
+Diese Formel bestimmt, ob das Gerät online ist. Wenn dies der Fall ist, zeigt die Bezeichnung **verbunden**an. Andernfalls wird es **Offline**angezeigt.
 
-### <a name="step-5-add-a-box-to-compose-tweets"></a>Schritt 5: Fügen Sie ein Feld, um die compose-tweets
+### <a name="step-5-add-a-box-to-compose-tweets"></a>Schritt 5: Hinzufügen eines Felds zum Verfassen von Tweets
 
-1. Fügen Sie unter der Bezeichnung Verbindungsstatus einer [ **Texteingabe** ](controls/control-text-input.md) steuern, und benennen Sie sie **NewTweetTextInput**.
+1. Fügen Sie unter der Bezeichnung Verbindungsstatus ein [**Text Eingabe**](controls/control-text-input.md) -Steuerelement ein, und benennen Sie es **newtweettextinput**um.
 
-1. Legen Sie das Texteingabe-Feld des **Standard** Eigenschaft `""`.
+1. Legen Sie die **default** -Eigenschaft des Texteingabe Felds auf `""`fest.
 
     > [!div class="mx-imgBorder"]
-    > ![Katalog über Statusinformationen und Texteingabe-Feld](./media/offline-apps/status-input.png)
+    > ![Galerie über Statusinformationen und Texteingabefeld](./media/offline-apps/status-input.png)
 
-### <a name="step-6-add-a-button-to-post-the-tweet"></a>Schritt 6: Fügen Sie eine Schaltfläche zum Veröffentlichen des TWEETS
+### <a name="step-6-add-a-button-to-post-the-tweet"></a>Schritt 6: Hinzufügen einer Schaltfläche zum Posten des tweets
 
-1. Unter dem Feld Texteingabe Hinzufügen einer **Schaltfläche** steuern, und legen dessen **Text** -Eigenschaft auf diesen Wert:
+1. Fügen Sie im Textfeld Texteingabe ein **Schalt** Flächen-Steuerelement hinzu, und legen Sie dessen **Text** -Eigenschaft auf diesen Wert fest:
 
     `"Tweet"`
 
-1. Legen Sie die **OnSelect** -Eigenschaft auf diese Formel:
+1. Legen **Sie die onselect** -Eigenschaft der Schaltfläche auf die folgende Formel fest:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        Twitter.Tweet( ""; {tweetText: NewTweetTextInput.Text} );
-        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
-            SaveData( LocalTweetsToPost; "LocalTweetsToPost" )
-    );;
-    Reset( NewTweetTextInput );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
+    );
+    Reset( NewTweetTextInput );
     ```  
 
-1. In der **OnStart** -Eigenschaft für die **App**, fügen Sie am Ende der Formel eine Zeile hinzu:
+1. Fügen Sie in der **OnStart** -Eigenschaft für die **App**am Ende der Formel eine Zeile hinzu:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 100} ) );;
-            Set( statusText; "Online data" );
-        LoadData( LocalTweets; "LocalTweets"; true );;
-            Set( statusText; "Local data" )
-    );;
-    SaveData( LocalTweets; "LocalTweets" );;
-    LoadData( LocalTweetsToPost; "LocalTweetsToPost"; true );;  // added line
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
+    LoadData( LocalTweetsToPost, "LocalTweetsToPost", true );  // added line
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Führen Sie die Formel zum Laden von Tweets mit auskommentierungen aufgehoben wurden](./media/offline-apps/load-tweets-save.png)
+    > ![Formel ausführen, um Tweets mit nicht kommentierter Zeile zu laden](./media/offline-apps/load-tweets-save.png)
 
-Diese Formel wird bestimmt, ob das Gerät online ist:
+Diese Formel bestimmt, ob das Gerät online ist:
 
-- Wenn das Gerät online ist, sendet er sofort den Tweet.
-- Wenn das Gerät offline ist, erfasst es den Tweet in einer **LocalTweetsToPost** Auflistung und speichert sie auf dem Gerät.
+- Wenn das Gerät online ist, sendet es sofort den Tweet.
+- Wenn das Gerät offline ist, wird der Tweet in einer **localtweetstopost** -Sammlung erfasst und auf dem Gerät gespeichert.
 
-Klicken Sie dann setzt die Formel den Text in das Texteingabe-Feld zurück.
+Anschließend setzt die Formel den Text im Texteingabefeld zurück.
 
-### <a name="step-7-check-for-new-tweets"></a>Schritt 7: Überprüfung auf neue tweets
+### <a name="step-7-check-for-new-tweets"></a>Schritt 7: Überprüfen auf neue tweets
 
-1. Fügen Sie auf der rechten Seite der Schaltfläche eine **Timer** Steuerelement.
+1. Fügen Sie auf der rechten Seite der Schaltfläche ein **Timer** -Steuerelement hinzu.
 
     > [!div class="mx-imgBorder"]
-    > ![Letzte apps](./media/offline-apps/final-app.png)
+    > ![endgültige apps](./media/offline-apps/final-app.png)
 
-1. Festlegen des Timers **Dauer** Eigenschaft **300000**.
+1. Legen Sie die **Duration** -Eigenschaft des Timers auf **300000**fest.
 
-1. Festlegen des Timers **AutoStart** und **wiederholen** Eigenschaften **"true"**.
+1. Legen Sie die **Autostart** -und **Repeat** -Eigenschaften des Timers auf " **true**" fest.
 
-1. Festlegen des Timers **OnTimerEnd** auf diese Formel:
+1. Legen Sie die **ontimerend** -Eigenschaft des Timers auf diese Formel fest:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ForAll( LocalTweetsToPost; Twitter.Tweet( ""; {tweetText: tweetText} ) );;
-        Clear( LocalTweetsToPost );;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
-        SaveData( LocalTweets; "LocalTweets" );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
+        Clear( LocalTweetsToPost );
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+        SaveData( LocalTweets, "LocalTweets" );
    )
     ```
 
-Diese Formel wird bestimmt, ob das Gerät online ist. Wenn es sich handelt, die app von tweets alle Elemente in der **LocalTweetsToPost** Auflistung und löscht dann die Auflistung.
+Diese Formel bestimmt, ob das Gerät online ist. Wenn dies der Fall ist, werden alle Elemente in der **localtweetstopost** -Auflistung von der APP mit einem Tweet und dann die Auflistung gelöscht.
 
 ## <a name="test-the-app"></a>Testen der App
 
-1. Öffnen Sie die app auf einem mobilen Gerät, das mit dem Internet verbunden ist.
+1. Öffnen Sie die APP auf einem mobilen Gerät, das mit dem Internet verbunden ist.
 
-    Vorhandene Tweets, die im Katalog angezeigt werden, und zeigt der Status **verbunden**.
+    Vorhandene tweets werden im Katalog angezeigt, und der Status zeigt **verbunden**an.
 
-1. Durch Aktivieren des Geräts flugzeugmodus, und deaktivieren wi-Fi, trennen Sie das Gerät über das Internet.
+1. Trennen Sie die Verbindung zwischen dem Gerät und dem Internet, indem Sie den Flugzeug Modus des Geräts aktivieren und Wi-Fi deaktivieren.
 
-    Die statusbezeichnung zeigt an, dass die app **Offline**.
+    Die Status Bezeichnung zeigt, dass die APP **Offline**ist.
 
-1. Während das Gerät offline ist, Schreiben Sie einen Tweet, der enthält **PowerApps**, und wählen Sie dann die **Tweet** Schaltfläche.
+1. Wenn das Gerät offline ist, schreiben Sie einen Tweet, der **powerapps**enthält, und wählen Sie dann die Schaltfläche **Tweet** aus.
 
-    TWEETS befindet sich lokal in der **LocalTweetsToPost** Auflistung.
+    Der Tweet wird lokal in der **localtweetstopost** -Auflistung gespeichert.
 
-1. Schließen Sie das Gerät mit dem Internet durch das Deaktivieren des Geräts flugzeugmodus, und aktivieren wi-Fi wieder.
+1. Stellen Sie erneut eine Verbindung zwischen dem Gerät und dem Internet her, indem Sie den Flugzeug Modus des Geräts deaktivieren und Wi-Fi aktivieren.
 
-    Innerhalb von fünf Minuten sendet die app den Tweet, der im Katalog angezeigt wird.
+    Innerhalb von fünf Minuten sendet die APP den Tweet, der im Katalog angezeigt wird.
 
-Wir hoffen, dass dieser Artikel Ihnen eine Vorstellung von den Möglichkeiten gegeben hat, die PowerApps für das Erstellen von Offline-Apps bietet. Wie immer freuen wir uns über Ihr Feedback in unserem [Forum](https://powerusers.microsoft.com/t5/PowerApps-Forum/bd-p/PowerAppsForum1) und über Ihre Beispiele für Offline-Apps im [PowerApps Community-Blog](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/bg-p/PowerAppsBlog).
+Wir hoffen, dass dieser Artikel Ihnen einen Überblick über die Funktionen von Power Apps zum Entwickeln von Offline-Apps bietet. Bitte geben Sie in unserem [Forum](https://powerusers.microsoft.com/t5/PowerApps-Forum/bd-p/PowerAppsForum1) Feedback, und teilen Sie Ihre Beispiele für Offline-Apps im [Community-Blog von powerapps](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/bg-p/PowerAppsBlog).

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c2e34a9f466fcb64bcf14ef6a504d5b18b0a596d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71983501"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676742"
 ---
 # <a name="app-object-in-powerapps"></a>App-Objekt in powerapps
 
@@ -65,7 +64,7 @@ Niemand möchte nicht gespeicherte Änderungen verlieren. Verwenden Sie die Eige
 > **Confirmexit** funktioniert nicht in apps, die in eingebettet sind, z. b. Power BI und SharePoint.
 
 > [!NOTE]
-> Diese Eigenschaften können derzeit nur auf Steuerelemente auf dem ersten Bildschirm verweisen, wenn die Vorschau Funktion für **Verzögertes Laden** aktiviert ist (Dies ist standardmäßig für neue apps der Fall). Wenn Verweise erstellt werden, zeigt PowerApps Studio keinen Fehler an, aber die resultierende veröffentlichte APP wird nicht in powerapps Mobile oder einem Browser geöffnet. Wir arbeiten aktiv daran, diese Einschränkung aufzuheben. In der Zwischenzeit können Sie das **verzögerte Laden** in **Datei** > **App-Einstellungen** > **erweiterten Einstellungen** (unter **Vorschau Features**) deaktivieren.
+> Diese Eigenschaften können derzeit nur auf Steuerelemente auf dem ersten Bildschirm verweisen, wenn die Vorschau Funktion für **Verzögertes Laden** aktiviert ist (Dies ist standardmäßig für neue apps der Fall). Wenn Verweise erstellt werden, zeigt Power apps Studio keinen Fehler an, aber die resultierende veröffentlichte APP wird nicht in powerapps Mobile oder einem Browser geöffnet. Wir arbeiten aktiv daran, diese Einschränkung aufzuheben. In der Zwischenzeit können Sie das **verzögerte Laden** in **Datei** > **App-Einstellungen** > **erweiterten Einstellungen** (unter **Vorschau Features**) deaktivieren.
 
 ### <a name="confirmexit"></a>Confirmexit
 
@@ -81,12 +80,12 @@ Das Bestätigungs Dialogfeld wird in jeder Situation angezeigt, in der Daten ver
   - Die Schaltfläche "zurück" des Browsers wird ausgewählt.
 - Wenn die app in powerapps Mobile (IOS oder Android) ausgeführt wird:
   - Die [**Launch**](function-param.md) -Funktion wird ausgeführt.<br>Die **Launch** -Funktion löst das Dialogfeld in einem Browser nicht aus, da eine andere Registerkarte geöffnet wird, sodass keine Daten verloren gehen.
-  - Wischen Sie, um zu einer anderen app in powerapps Mobile zu wechseln.
+  - Wischen Sie, um zu einer anderen app in Power Apps Mobile zu wechseln.
   - Auswählen der Schaltfläche "zurück" auf einem Android-Gerät.
 
 Das genaue Erscheinungsbild des Bestätigungs Dialogfelds kann von Geräten und Versionen von powerapps abweichen.
 
-Das Bestätigungs Dialogfeld wird nicht in PowerApps Studio angezeigt.
+Das Bestätigungs Dialogfeld wird in powerapps Studio nicht angezeigt.
 
 ### <a name="confirmexitmessage"></a>Confirmexitmessage
 
@@ -102,7 +101,7 @@ In einem Browser wird das Bestätigungs Dialogfeld möglicherweise mit einer gen
 
 1. Legen Sie die **confirmexit** -Eigenschaft des **App** -Objekts auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -113,9 +112,9 @@ In einem Browser wird das Bestätigungs Dialogfeld möglicherweise mit einer gen
 
 1. Legen Sie die **confirmexitmessage** -Eigenschaft des **App** -Objekts auf diese Formel fest:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```

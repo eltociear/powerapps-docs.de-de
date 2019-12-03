@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54d8fb369cb63721de16c5bf280660dbd15796b5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5ac2eaf3a0cfa4dc5c2a2150aa4a02ab127e5154
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541295"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676534"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Verwalten eines lokalen Datengateways in PowerApps
 
-Installieren Sie ein lokales Datengateway zur schnellen und sicheren Datenübertragung zwischen einer in PowerApps erstellten Canvas-App und einer Datenquelle, die sich nicht in der Cloud befindet, z.B. eine lokale SQL Server-Datenbank oder eine lokale SharePoint-Website. Zeigen Sie alle Gateways an, für die Sie Administratorberechtigungen haben, und verwalten Sie Berechtigungen und Verbindungen für diese Gateways.
+Installieren Sie ein lokales Daten Gateway, um Daten schnell und sicher zwischen einer Canvas-APP zu übertragen, die in powerapps erstellt wurde, und einer Datenquelle, die sich nicht in der Cloud befindet, wie z. b. eine lokale SQL Server-Datenbank oder eine lokale SharePoint-Website. Zeigen Sie alle Gateways an, für die Sie Administratorberechtigungen haben, und verwalten Sie Berechtigungen und Verbindungen für diese Gateways.
 
 Ein Gateway ermöglicht Ihnen die folgenden Verbindungen mit lokalen Daten:
 

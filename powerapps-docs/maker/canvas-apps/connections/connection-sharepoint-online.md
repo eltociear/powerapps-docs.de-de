@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e534d5b3cf21cbbed78b16960a5f4a83a44bfe24
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5c099f68c7dd8833b2ee494ff83cbbdb2c88b923
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540356"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678762"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Herstellen einer Verbindung mit SharePoint über eine Canvas-App
 
@@ -40,7 +40,7 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Si
 
 ## <a name="create-a-connection"></a>Verbindung erstellen
 
-1. [Melden Sie sich bei powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, wählen Sie **Daten**  > **Verbindungen** in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke **neue Verbindung** aus.
+1. [Melden Sie sich bei powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, wählen Sie **Daten** > **Verbindungen** in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke **neue Verbindung** aus.
 
     > [!div class="mx-imgBorder"]
     > Wählen Sie ![Daten > Verbindungen in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke neue Verbindung aus.](./media/connection-sharepoint-online/new-connection.png)
@@ -81,12 +81,12 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Si
 
 ## <a name="add-data-to-an-existing-app"></a>Hinzufügen von Daten zu einer vorhandenen APP
 
-1. Öffnen Sie in PowerApps Studio die APP, die Sie aktualisieren möchten, wählen Sie die Registerkarte **Ansicht** aus, und wählen Sie dann **Datenquellen**aus.
+1. Öffnen Sie in powerapps Studio die APP, die Sie aktualisieren möchten, wählen Sie die Registerkarte **Ansicht** aus, und wählen Sie dann **Datenquellen**aus.
 
     > [!div class="mx-imgBorder"]
     > ![auf der Registerkarte Ansicht, und wählen Sie dann Datenquellen aus](./media/connection-sharepoint-online/view-data-sources.png)
 
-1. Wählen Sie im Bereich **Daten** die Option Datenquelle  > **SharePoint** **Hinzufügen** aus.
+1. Wählen Sie im Bereich **Daten** die Option Datenquelle > **SharePoint** **Hinzufügen** aus.
 
 1. Wählen Sie unter **Verbindung mit einer SharePoint-Website herstellen**einen Eintrag in der Liste **Letzte Sites** aus (oder geben Sie die URL für die Website ein, die Sie verwenden möchten), und klicken Sie dann auf **verbinden**.
 
@@ -98,7 +98,7 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Si
     > [!div class="mx-imgBorder"]
     > Wählen Sie ![unter Liste auswählen das Kontrollkästchen für Dokumente oder eine oder mehrere Listen aus, die Sie verwenden möchten, und wählen Sie dann verbinden](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    Nicht alle Typen von Listen werden standardmäßig angezeigt. PowerApps unterstützt benutzerdefinierte Liste, aber keine vorlagenbasierten Listen. Wenn der Name der Liste, die Sie verwenden möchten, nicht angezeigt wird, Scrollen Sie nach unten, und geben Sie dann den Namen der Liste in das Feld ein, das den Namen der **benutzerdefinierten Tabelle**enthält.
+    Nicht alle Typen von Listen werden standardmäßig angezeigt. Powerapps unterstützt benutzerdefinierte Listen und keine Vorlagen basierten Listen. Wenn der Name der Liste, die Sie verwenden möchten, nicht angezeigt wird, Scrollen Sie nach unten, und geben Sie dann den Namen der Liste in das Feld ein, das den Namen der **benutzerdefinierten Tabelle**enthält.
 
     > [!div class="mx-imgBorder"]
     > ![geben Sie den Namen der Liste in das Feld ein, in dem Sie einen benutzerdefinierten Listennamen eingeben.](./media/connection-sharepoint-online/custom-list.png)
@@ -160,7 +160,7 @@ Wenn Sie mehrere Images in einer SharePoint-Bibliothek haben, können Sie der AP
 
 Sie können [eine Beispiel-app herunterladen](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp) , die einen komplexeren Ansatz zum Darstellen von Daten aus einer SharePoint-Bibliothek veranschaulicht.
 
-1. Nachdem Sie die App heruntergeladen haben, öffnen Sie [PowerApps Studio](https://us.create.powerapps.com/studio/#), wählen Sie in der linken Navigationsleiste **Öffnen** aus, und klicken Sie dann auf **Durchsuchen**.
+1. Nachdem Sie die App heruntergeladen haben, öffnen Sie [powerapps Studio](https://us.create.powerapps.com/studio/#), wählen Sie in der linken Navigationsleiste **Öffnen** aus, und klicken Sie dann auf **Durchsuchen**.
 1. Suchen und öffnen Sie im Dialogfeld **Öffnen** die heruntergeladene Datei, und fügen Sie dann eine SharePoint-Bibliothek als Datenquelle hinzu, indem Sie die ersten beiden Verfahren in diesem Thema befolgen.
 
 > [!NOTE]
@@ -180,7 +180,7 @@ Wenn Sie die gewünschte Datei finden, wählen Sie diese aus, um Sie im **Video*
 
 ### <a name="lists"></a>Aufli
 
-Powerapps kann Spaltennamen lesen, die Leerzeichen enthalten, aber die Leerzeichen werden durch den hexadezimalen Escapecode **"\_x0020\_"** ersetzt. **"Name der Spalte"** in SharePoint wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+Powerapps kann Spaltennamen lesen, die Leerzeichen enthalten, aber die Leerzeichen werden durch den hexadezimalen Escapecode **"\_x0020\_"** ersetzt. Beispielsweise wird **"Spalten Name"** in SharePoint in powerapps als **"Column_x0020_Name"** angezeigt, wenn Sie im Datenlayout angezeigt oder in einer Formel verwendet werden.
 
 Nicht alle Spaltentypen werden unterstützt, und nicht alle Typen von Spalten unterstützen alle Kartentypen.
 
@@ -206,9 +206,9 @@ Nicht alle Spaltentypen werden unterstützt, und nicht alle Typen von Spalten un
 
 ### <a name="libraries"></a>Bibliotheken
 
-- Dateien aus powerapps können nicht in eine Bibliothek hochgeladen werden.
+- Dateien aus Power Apps können nicht in eine Bibliothek hochgeladen werden.
 - PDF-Dateien können nicht aus einer Bibliothek in einem PDF-Viewer-Steuerelement angezeigt werden.
-- Powerapps Mobile unterstützt die **Download** -Funktion nicht.
+- Power Apps Mobile unterstützt die **Download** -Funktion nicht.
 - Wenn Ihre Benutzer die app in powerapps Mobile oder der Windows 10-app ausführen, verwenden Sie die **Launch** -Funktion, um Bibliotheksinhalte in einem Katalog anzuzeigen.
 
 ## <a name="next-steps"></a>Nächste Schritte

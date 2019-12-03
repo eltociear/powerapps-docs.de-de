@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer Beziehung zwischen SharePoint-Listen mithilfe eines Nachschlagefelds in einer Canvas-App | Microsoft-Dokumentation
-description: Erstellen Sie in PowerApps mithilfe eines Nachschlagefelds eine Beziehung zwischen SharePoint-Listen in einer Canvas-App.
+description: Erstellen Sie in powerapps eine Beziehung zwischen SharePoint-Listen mithilfe eines Nachschlage Felds in einer Canvas-app.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c1cce350c394d2809de4c3354b7b471af987236
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bef5a66569a201a76c36da9b1e828169df7f3cb9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541407"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674824"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Verknüpfen von SharePoint-Listen mithilfe von Nachschlagefeldern in PowerApps
 
@@ -96,7 +96,7 @@ Dieser Schritt erfolgt zuerst, damit beim Hinzufügen von Daten zur Liste **Asse
 ## <a name="create-an-app-from-the-assets-list"></a>Erstellen einer Apps aus der Assetliste
 Sie verwenden diese App, um Daten zur Liste **Assets** hinzuzufügen.
 
-1. [In PowerApps Studio anmelden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Wenn Sie in PowerApps einsteigen möchten, [können Sie sich kostenlos mit Ihrer Unternehmens-E-Mail-Adresse registrieren](https://powerapps.microsoft.com).
+1. [Melden Sie sich bei Power apps Studio an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Wenn Sie noch nicht mit Power apps vertraut sind, registrieren Sie sich mit ihrer Organisations-e-Mail-Adresse [kostenlos](https://powerapps.microsoft.com) .
 
 2. Klicken oder tippen Sie im Menü **Datei** auf der linken Seite auf **Neu**, und klicken oder tippen Sie dann auf **SharePoint**.
 

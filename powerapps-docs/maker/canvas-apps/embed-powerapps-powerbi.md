@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d82db4deaa123e460bce043bff10cc30ea409f15
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 94eb220bbe386b47e2fbb678f9487fcef8612415
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560193"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679475"
 ---
 # <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>Einbetten einer neuen Canvas-App in einen Power BI-Bericht
 
-Mithilfe von Power BI können Sie die Funktionen erweitern, indem Sie *benutzerdefinierte Visuals* zu einem Bericht hinzufügen. In diesem Tutorial werden benutzerdefinierte PowerApps-Visuals verwendet, um eine Canvas-App zu erstellen, die in einen Beispielbericht eingebettet ist. Diese App interagiert mit anderen Elementen in diesem Bericht.
+Mithilfe von Power BI können Sie die Funktionen erweitern, indem Sie *benutzerdefinierte Visuals* zu einem Bericht hinzufügen. In diesem Tutorial verwenden Sie das benutzerdefinierte powerapps-Visual zum Erstellen einer Canvas-APP, die in einen Beispiel Bericht eingebettet ist. Diese App interagiert mit anderen Elementen in diesem Bericht.
 
-Wenn Sie kein PowerApps-Abonnement besitzen, erstellen Sie ein [kostenloses Konto](../signup-for-powerapps.md), bevor Sie beginnen.
+Wenn Sie über kein Power apps-Abonnement verfügen, können Sie [ein kostenloses Konto erstellen](../signup-for-powerapps.md) , bevor Sie beginnen.
 
 In diesem Tutorial erhalten Sie Informationen zu den folgenden Vorgängen:
 > [!div class="checklist"]
-> * Importieren von benutzerdefinierten PowerApps-Visuals in einen Power BI-Bericht
+> * Importieren der benutzerdefinierten Visualisierung von powerapps in einen Power BI Bericht
 > * Erstellen einer neuen App, die Daten aus dem Bericht verwendet
 > * Abrufen der App in dem Bericht
 
@@ -38,42 +38,42 @@ In diesem Tutorial erhalten Sie Informationen zu den folgenden Vorgängen:
 * Ein [Power BI-Abonnement](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi), für das das [Analysebeispiel für Opportunity](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installiert ist.
 * Ein Grundverständnis der Vorgehensweise beim [Erstellen von Apps in PowerApps](data-platform-create-app-scratch.md) und beim [Bearbeiten von Power BI-Berichten](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour).
 
-## <a name="import-the-powerapps-custom-visual"></a>Importieren des benutzerdefinierten PowerApps-Visuals
+## <a name="import-the-power-apps-custom-visual"></a>Importieren der benutzerdefinierten Visualisierung von powerapps
 
-Importieren Sie als ersten Schritt das benutzerdefinierte PowerApps-Visual, damit Sie es im Beispielbericht verwenden können.
+Der erste Schritt besteht darin, das benutzerdefinierte Visual apps-Visual zu importieren, damit Sie es im Beispiel Bericht verwenden können.
 
 1. Klicken oder tippen Sie im Analysebeispiel für Opportunity auf die Registerkarte **Upcoming Opportunities** (Anstehende Verkaufschancen).
 
 2. Klicken oder tippen Sie im oberen Bereich auf **Bericht bearbeiten**.
 
-3. Klicken oder tippen Sie im Bereich **Visualisierungen** auf die Auslassungspunkte (**...**) und anschließend auf **Aus Marketplace importieren**. 
+3. Klicken oder tippen Sie im Bereich **Visualisierungen** auf die Auslassungspunkte ( **...** ) und anschließend auf **Aus Marketplace importieren**. 
 
     ![Aus Marketplace importieren](media/embed-powerapps-powerbi/import-visual.png)
 
 4. Suchen Sie auf der Anzeige **Power BI-Visuals** nach „PowerApps“, und klicken oder tippen Sie anschließend auf **Hinzufügen**. Power BI fügt dann im unteren Bereich der **Visualisierungen** ein Symbol für benutzerdefinierte Visuals hinzu.
 
-    ![Symbol für benutzerdefinierte PowerApps-Visuals](media/embed-powerapps-powerbi/powerapps-icon.png)
+    ![Symbol "powerapps-Visualisierung"](media/embed-powerapps-powerbi/powerapps-icon.png)
 
 5. Speichern Sie den Bericht.
 
 ## <a name="create-a-new-app"></a>Erstellen einer neuen App
-Im Folgenden erfahren Sie, wie Sie das benutzerdefinierte Visual zu Ihrem Bericht hinzufügen und eine neue App erstellen können, die auf Daten aus dem Bericht basiert. Wenn Sie die App erstellen, wird PowerApps Studio mit einer Livedatenverbindung zwischen PowerApps und Power BI gestartet.
+Im Folgenden erfahren Sie, wie Sie das benutzerdefinierte Visual zu Ihrem Bericht hinzufügen und eine neue App erstellen können, die auf Daten aus dem Bericht basiert. Wenn Sie die APP erstellen, wird Power apps Studio mit einer Live-Datenverbindung zwischen powerapps und Power BI gestartet.
 
 1. Bewegen Sie einige Berichtskacheln, und ändern Sie deren Größe, um Platz für eine App zu schaffen.
 
     ![Berichtskacheln bewegen und deren Größe ändern](media/embed-powerapps-powerbi/move-resize.png)
 
-2. Klicken oder tippen Sie auf das Symbol des benutzerdefinierten PowerApps-Visuals, und ändern Sie anschließend die Größe der Kachel, damit diese an die von Ihnen vorgesehene Stelle passt.
+2. Klicken oder tippen Sie auf das Symbol für benutzerdefinierte powerapps-Visuals, und ändern Sie dann die Größe der Kachel an den von Ihnen festgestellten Bereich
 
 3. Wählen Sie im Bereich **Felder** **Name**, **Produktcode** und **Vertriebsphase** aus. 
 
     ![Felder auswählen](media/embed-powerapps-powerbi/select-fields.png)
 
-4. Wählen Sie in der Kachel für das benutzerdefinierte Visual eine PowerApps-Umgebung aus, in der Sie die App erstellen wollen. Klicken oder tippen Sie anschließend auf **Neu erstellen**.
+4. Wählen Sie auf der Kachel benutzerdefinierte Visualisierung die Power apps-Umgebung aus, in der Sie die APP erstellen möchten, und klicken oder tippen Sie auf **neu erstellen**.
 
     ![Neue Rolle erstellen](media/embed-powerapps-powerbi/create-new-app.png)
 
-    In PowerApps Studio können Sie sehen, dass eine Basis-App erstellt wurde. Es wird ein *Katalog* angezeigt, in dem eins der in Power BI ausgewählten Felder aufgeführt wird.
+    In powerapps Studio sehen Sie, dass eine einfache APP mit einem Katalog erstellt wird, in dem eines der Felder angezeigt wird *, die Sie* in Power BI ausgewählt haben.
 
 5.  Ändern Sie die Größe des Katalogs, sodass dieser nur die Hälfte des Bildschirms einnimmt. 
 
@@ -105,11 +105,11 @@ Wenn Sie das Analysebeispiel für Opportunity nicht mehr verwenden möchten, kö
 ## <a name="next-steps"></a>Nächste Schritte
 In diesem Tutorial haben Sie Informationen zu den folgenden Vorgängen erhalten:
 > [!div class="checklist"]
-> * Importieren von benutzerdefinierten PowerApps-Visuals in einen Power BI-Bericht
+> * Importieren der benutzerdefinierten Visualisierung von powerapps in einen Power BI Bericht
 > * Erstellen einer neuen App, die Daten aus dem Bericht verwendet
 > * Abrufen der App in dem Bericht
 
 Gehen Sie weiter zum nächsten Artikel, wenn Sie mehr erfahren möchten.
 > [!div class="nextstepaction"]
-> [Benutzerdefinierte PowerApps-Visuals für Power BI](powerapps-custom-visual.md)
+> [Benutzerdefiniertes Visual apps-Visual für Power BI](powerapps-custom-visual.md)
 

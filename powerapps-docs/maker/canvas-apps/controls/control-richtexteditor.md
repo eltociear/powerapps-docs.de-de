@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 26ba133612e1c69ed470984fabafe6a6cdfddb1c
-ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
+ms.openlocfilehash: cd6d16a86dbe9c3a7a6ea60be11b9054c54790f2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74550580"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679705"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Rich-Text-Editor-Steuerelement in powerapps
 Ermöglicht Endbenutzern das Formatieren von Text in einem WYSIWYG-Bearbeitungsbereich.  Die Ausgabe erfolgt im HTML-Format.
@@ -28,7 +28,7 @@ Das **Rich-Text-Editor**-Steuerelement stellt für den App-Benutzer einen WYSIWY
 
 Sie können (z.B. aus einem Webbrowser oder aus Word) kopierten Rich-Text in das Steuerelement einfügen.  
 
-Das Steuerelement soll zum Formatieren von Text verwendet werden. Es wird nicht garantiert, dass die Integrität der HTML-Eingabe erhalten bleibt.  Sämtliche Skript-, Stil- und Objektmarkierungen sowie andere Markierungen, die Probleme hervorrufen könnten, werden vom Editor entfernt.  D.h., wenn Rich-Text außerhalb von PowerApps erstellt wurde, sieht er möglicherweise nicht so aus wie in dem Produkt, in dem er erstellt wurde.
+Das Steuerelement soll zum Formatieren von Text verwendet werden. Es wird nicht garantiert, dass die Integrität der HTML-Eingabe erhalten bleibt.  Sämtliche Skript-, Stil- und Objektmarkierungen sowie andere Markierungen, die Probleme hervorrufen könnten, werden vom Editor entfernt.  Dies bedeutet Folgendes: Wenn Rich-Text außerhalb von powerapps erstellt wurde, sieht er möglicherweise nicht wie in dem Produkt aus, in dem es erstellt wurde.
 
 Derzeit werden die folgenden Features unterstützt:
 - Fett, kursiv, unterstrichen

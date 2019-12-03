@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b4dde9c7b24352c1fefc62ff9ec73ba5ec82ee25
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0bb04f9c3c1fc0d2b330e53dd39b355421af84aa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988130"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674275"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>Grundlegendes zu Datenquellen für Canvas-Apps in PowerApps
 
-Die meisten Canvas-Apps in PowerApps nutzen externe Informationen, die als **Datenquellen** bezeichnet werden und in Clouddiensten gespeichert sind. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps greifen auf diese Datenquellen mithilfe von **Verbindungen** zu.
+In powerapps verwenden die meisten Canvas-apps externe Informationen, die in Clouddiensten gespeichert sind und als **Datenquellen**bezeichnet werden. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps greifen auf diese Datenquellen mithilfe von **Verbindungen** zu.
 
 In diesem Artikel werden die verschiedenen Arten von Datenquellen und das Arbeiten mit Datenquellen in Form von Tabellen beschrieben.
 
@@ -40,27 +40,27 @@ Andere Datenquellen als Tabellen sind z.B. E-Mail, Kalender, Twitter und Benachr
 
 ### <a name="local-data-sources"></a>Lokale Datenquellen
 
-Mithilfe der Steuerelemente **[Katalog](controls/control-gallery.md)** , **[Formular anzeigen](controls/control-form-detail.md)** und **[Formular bearbeiten](controls/control-form-detail.md)** ist es einfach, eine App zu erstellen, die Daten aus einer Datenquelle liest und schreibt.  Lesen Sie zunächst den Artikel [Understand data forms (Grundlegendes zu Datenformularen)](working-with-forms.md).  
+Mithilfe von **[Katalog](controls/control-gallery.md)** -, **[Formular anzeigen](controls/control-form-detail.md)** - und **[Formular bearbeiten](controls/control-form-detail.md)** -Steuerelementen können Sie auf einfache Weise eine App erstellen, die Daten aus einer Datenquelle liest und schreibt.  Lesen Sie für den Einstieg den Artikel [Grundlegendes zu Datenformularen](working-with-forms.md).  
 
-Wenn Sie PowerApps zum Erstellen einer App aus Daten auffordern, werden diese Steuerelemente verwendet. Im Hintergrund verwendet die App eine interne Tabelle zum Speichern und Bearbeiten der Daten, die aus der Datenquelle stammen.
+Wenn Sie Power apps auffordern, eine APP aus Daten zu erstellen, werden diese Steuerelemente verwendet. Im Hintergrund verwendet die App eine interne Tabelle zum Speichern und Bearbeiten der Daten, die aus der Datenquelle stammen.
 
 Eine besondere Art von Datenquelle ist die [Sammlung](working-with-data-sources.md#collections), die für die App lokal ist und nicht über eine Verbindung mit einem Dienst in der Cloud gesichert ist, sodass die Informationen nicht auf Geräten für den gleichen oder andere Benutzer freigegeben werden können. Sammlungen können geladen und lokal gespeichert werden.
 
 ### <a name="kinds-of-tables"></a>Arten von Tabellen
 
-Bei Tabellen, die für eine App in PowerApps intern sind, handelt es sich wie bei einer Zahl oder einer Zeichenfolge um feste Werte. Interne Tabellen sind nur im Arbeitsspeicher der App vorhanden und werden an keiner anderen Stelle gespeichert. Sie können die Struktur und die Daten einer Tabelle nicht direkt ändern. Sie können stattdessen eine neue Tabelle mithilfe einer Formel erstellen, indem Sie mit dieser Formel eine geänderte Kopie der ursprünglichen Tabelle erstellen.
+Tabellen, die für eine powerapps-App intern sind, sind festgelegte Werte, genauso wie eine Zahl oder eine Zeichenfolge ein Wert ist. Interne Tabellen sind nur im Arbeitsspeicher der App vorhanden und werden an keiner anderen Stelle gespeichert. Sie können die Struktur und die Daten einer Tabelle nicht direkt ändern. Sie können stattdessen eine neue Tabelle mithilfe einer Formel erstellen, indem Sie mit dieser Formel eine geänderte Kopie der ursprünglichen Tabelle erstellen.
 
-Externe Tabellen werden in einer Datenquelle für späteren Abruf und Freigabe gespeichert.  PowerApps bietet „Verbindungen“ zum Lesen und Schreiben von gespeicherten Daten.  Innerhalb einer Verbindung können Sie auf mehrere Tabellen mit Informationen zugreifen.  Sie wählen aus, welche Tabellen in der App verwendet werden sollen, und aus jeder wird eine separate *Datenquelle*.  
+Externe Tabellen werden in einer Datenquelle für späteren Abruf und Freigabe gespeichert.  Power apps stellt "Verbindungen" zum Lesen und Schreiben gespeicherter Daten bereit.  Innerhalb einer Verbindung können Sie auf mehrere Tabellen mit Informationen zugreifen.  Sie wählen aus, welche Tabellen in der App verwendet werden sollen, und aus jeder wird eine separate *Datenquelle*.  
 
 Wenn Sie mehr erfahren möchten, wird unter [Arbeiten mit Tabellen](working-with-tables.md) ausführlicher auf interne Tabellen eingegangen, aber auch auf externe Tabellen, die sich in einem Clouddienst befinden.
 
 ## <a name="working-with-tables"></a>Arbeiten mit Tabellen
-Sie können Datenquellen in Form von Tabellen wie eine interne PowerApps-Tabelle verwenden.  Wie eine interne Tabelle weist auch jede Datenquelle [Datensätze](working-with-tables.md#records), [Spalten](working-with-tables.md#columns) und Eigenschaften auf, die Sie in Formeln verwenden können. Weitere Anforderungen:
+Sie können Tabellendaten Quellen auf die gleiche Weise wie eine interne powerapps-Tabelle verwenden.  Wie eine interne Tabelle weist auch jede Datenquelle [Datensätze](working-with-tables.md#records), [Spalten](working-with-tables.md#columns) und Eigenschaften auf, die Sie in Formeln verwenden können. Weitere Anforderungen:
 
 * Die Datenquelle weist die gleichen Spaltennamen und Datentypen auf wie die zugrunde liegende Tabelle in der Verbindung.
   
     > [!NOTE]
-  > Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt PowerApps die Leerzeichen durch **"\_X0020\_"** . **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+  > Für SharePoint-und Excel-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt powerapps die Leerzeichen durch **"\_x0020\_"** . Beispielsweise wird **"Spalten Name"** in SharePoint oder Excel in powerapps als **"Column_x0020_Name"** angezeigt, wenn Sie im Datenlayout angezeigt oder in einer Formel verwendet werden.
 * Die Datenquelle wird automatisch vom Dienst geladen, wenn die App geladen wird.  Sie können erzwingen, dass die Daten aktualisiert werden, indem Sie die **[Refresh](functions/function-refresh.md)** -Funktion verwenden.
 * Wenn Benutzer eine App ausführen, können sie Datensätze erstellen, ändern und löschen und diese Änderungen mithilfe von Push an die zugrunde liegende Tabelle im Dienst zurückleiten.
   * Datensätze können mithilfe der Funktionen **[Patch](functions/function-patch.md)** und **[Collect](functions/function-clear-collect-clearcollect.md)** erstellt werden.  
@@ -70,7 +70,7 @@ Sie können Datenquellen in Form von Tabellen wie eine interne PowerApps-Tabelle
 * Die Funktionen **[DataSourceInfo](functions/function-datasourceinfo.md)** , **[Defaults](functions/function-defaults.md)** und **[Validate](functions/function-validate.md)** bieten Informationen über die Datenquelle, mit denen Sie die Benutzerfreundlichkeit optimieren können.
 
 ### <a name="creating-data-sources"></a>Erstellen von Datenquellen
-PowerApps kann nicht zum Erstellen einer verbundenen Datenquelle oder zum Ändern deren Struktur verwendet werden; die Datenquelle muss bereits in einem Dienst vorhanden sein. Beispielsweise verwenden Sie zum Erstellen einer Tabelle in einer auf OneDrive gespeicherten Excel-Arbeitsmappe zunächst Excel Online auf OneDrive, um eine Arbeitsmappe zu erstellen. Als Nächstes erstellen Sie eine Verbindung zu Ihrer App.  
+Powerapps kann nicht zum Erstellen einer verbundenen Datenquelle oder zum Ändern der Struktur verwendet werden. die Datenquelle muss bereits in einem Dienst vorhanden sein. Beispielsweise verwenden Sie zum Erstellen einer Tabelle in einer auf OneDrive gespeicherten Excel-Arbeitsmappe zunächst Excel Online auf OneDrive, um eine Arbeitsmappe zu erstellen. Als Nächstes erstellen Sie eine Verbindung zu Ihrer App.  
 
 Datenquellen einer Sammlung *können* innerhalb einer App erstellt und geändert werden, sind jedoch nur temporär.
 
@@ -80,7 +80,7 @@ Datenquellen einer Sammlung *können* innerhalb einer App erstellt und geändert
 * Die Informationen werden gespeichert und über einen Speicherdienst geteilt (in diesem Fall eine SharePoint-Liste einer Office 365-Website).
 * Eine Verbindung stellt diese Informationen der App zur Verfügung.  Die Verbindung übernimmt die Authentifizierung des Benutzers, der auf die Informationen zugreift.
 * Wenn die App gestartet wird oder die **[Refresh](functions/function-refresh.md)** -Funktion gedrückt wird, werden Informationen zur lokalen Verwendung aus der Verbindung in eine Datenquelle in der App geholt.
-* Formeln werden verwendet, um die Informationen zu lesen und sie in Steuerelementen verfügbar zu machen, die der Benutzer sehen kann. Sie können die Datensätze einer Datenquelle mithilfe eines Katalogs auf einem Bildschirm anzeigen und die **[Items](controls/properties-core.md)** -Eigenschaft mit der Datenquelle verknüpfen: **Gallery. Items = DataSource**.  Sie verknüpfen Steuerelemente innerhalb des Katalogs mit dem Katalog, indem Sie die **[Default](controls/properties-core.md)** -Eigenschaft der Steuerelemente verwenden.  
+* Formeln werden verwendet, um die Informationen zu lesen und sie in Steuerelementen verfügbar zu machen, die der Benutzer sehen kann. Sie können die Datensätze einer Datenquelle anzeigen, indem Sie einen Katalog auf einem Formular verwenden und die **[Items](controls/properties-core.md)** -Eigenschaft mit der Datenquelle verknüpfen: **Gallery.Items = DataSource**.  Sie verknüpfen Steuerelemente innerhalb des Katalogs mit dem Katalog, indem Sie die **[Default](controls/properties-core.md)** -Eigenschaft der Steuerelemente verwenden.  
 * Die Datenquelle ist auch eine Tabelle.  Sie können also **[Filter](functions/function-filter-lookup.md)** , **[Sort](functions/function-sort.md)** , **[AddColumns](functions/function-table-shaping.md)** und andere Funktionen verwenden, um die Datenquelle zu optimieren und zu erweitern, bevor Sie sie als Ganzes verwenden.  Sie können auch **[Lookup](functions/function-filter-lookup.md)** , **[First](functions/function-first-last.md)** , **[Last](functions/function-first-last.md)** und andere Funktionen zur Arbeit mit einzelnen Datensätzen verwenden.
 
 ### <a name="modify-a-record"></a>Ändern eines Datensatzes
@@ -104,7 +104,7 @@ Vor einer Änderung an einem Datensatz sollte die App so gut es geht sicherstell
 * *Unmittelbares Feedback für den Benutzer*.  Am besten wird ein Problem behoben, wenn es gerade aufgetreten und dem Benutzer noch besonders bewusst ist.  Im Prinzip kann mit jedem Touch oder Tastaturanschlag roter Text angezeigt werden, der ein Problem mit dem Eintrag angibt.
 * *Weniger Netzwerkverkehr und geringere Wartezeit für den Benutzer*.  Je mehr Probleme in der App erkannt werden, desto weniger Konversationen über das Netzwerk sind nötig, um Fehler zu erkennen und zu beheben.  Jede Konversation nimmt Zeit in Anspruch, während der Benutzer warten muss, bevor er den Vorgang fortsetzen kann.
 
-PowerApps bietet zwei Tools zur Validierung:
+Power Apps bietet zwei Tools für die Überprüfung:
 
 * Die Datenquelle kann Informationen darüber geben, was gültig ist und was nicht.  Zum Beispiel können Zahlen über Mindest- und Höchstwerte verfügen, und ein oder mehrere Einträge können erforderlich sein.  Sie können auf diese Informationen mit der **[DataSourceInfo](functions/function-datasourceinfo.md)** -Funktion zugreifen.  
 * Die **[Validate](functions/function-validate.md)** -Funktion verwendet dieselben Informationen, um den Wert einer einzelnen Spalte oder eines vollständigen Datensatzes zu überprüfen.

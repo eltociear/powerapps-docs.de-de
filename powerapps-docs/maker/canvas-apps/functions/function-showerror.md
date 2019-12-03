@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5e18b64910bbc7efca8c460100163e1a0716a089
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1a02a83e00b9f377f3882cb32c1e6b6606b5cc2a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992157"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678233"
 ---
 # <a name="notify-function-in-powerapps"></a>Benachrichtigungsfunktion in PowerApps
 Zeigt dem Benutzer eine Bannermeldung an.
@@ -42,14 +41,14 @@ Die Meldungen werden beim Erstellen der App und beim Verwenden der App durch die
 
 **Notify** kann zusammen mit der [**IfError**](function-iferror.md)-Funktion verwendet werden. Dadurch können Fehler erkannt und mit einer benutzerdefinierten Fehlernachricht gemeldet werden.
 
-PowerApps kann auch über einen anderen Mechanismus, der sich gänzlich von **Notify** unterscheidet, Pushbenachrichtigungen senden.  Weitere Informationen finden Sie unter [Senden einer Pushbenachrichtigung in PowerApps](../add-notifications.md).
+Powerapps kann auch Pushbenachrichtigungen mit einem völlig anderen Mechanismus als **Benachrichtigung**senden.  Weitere Informationen finden Sie unter [Senden einer Pushbenachrichtigung in PowerApps](../add-notifications.md).
 
 **Notify** gibt immer *TRUE* zurück.
 
-Nebenbei Diese Funktion hieß zuvor " **ShowError** ", als Sie nur Fehlermeldungen anzeigen konnte.
+Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn nur Fehlermeldungen angezeigt werden konnten.
 
 ## <a name="syntax"></a>Syntax
-**Notify**( *Message*; [ *NotificationType* ] )
+**Notify**( *Message*, [ *NotificationType* ] )
 
 * *Message* – Erforderlich.  Meldung, die dem Benutzer angezeigt wird.
 * *NotificationType* – Optional.  In der obenstehenden Tabelle aufgelisteter Meldungstyp, der angezeigt werden soll.  Standardmäßig wird **NotificationType.Information** angezeigt.  
@@ -72,7 +71,7 @@ Nebenbei Diese Funktion hieß zuvor " **ShowError** ", als Sie nur Fehlermeldung
 
 4. Ändern Sie den Meldungstyp, damit ein Fehler angezeigt wird.  Fügen Sie ein zweites Argument zu der Formel hinzu:
 
-    **Notify( "Hello, World"; NotificationType.Error )**
+    **Notify( "Hello, World", NotificationType.Error )**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
@@ -82,7 +81,7 @@ Nebenbei Diese Funktion hieß zuvor " **ShowError** ", als Sie nur Fehlermeldung
 
 4. Ändern Sie den Meldungstyp, damit eine Warnung angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    **Notify( "Hello, World"; NotificationType.Warning )**
+    **Notify( "Hello, World", NotificationType.Warning )**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
@@ -92,7 +91,7 @@ Nebenbei Diese Funktion hieß zuvor " **ShowError** ", als Sie nur Fehlermeldung
 
 4. Ändern Sie den Meldungstyp, damit ein Erfolg angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    **Notify( "Hello, World"; NotificationType.Success )**
+    **Notify( "Hello, World", NotificationType.Success )**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 

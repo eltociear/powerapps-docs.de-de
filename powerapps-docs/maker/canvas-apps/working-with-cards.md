@@ -1,6 +1,6 @@
 ---
 title: Grundlegendes zu Datenkarten | Microsoft-Dokumentation
-description: Verwenden Sie in PowerApps Formularkarten zum Sammeln und Anzeigen von Informationen aus einer Datenquelle.
+description: Verwenden Sie in powerapps Formular Karten, um Informationen aus einer Datenquelle zu sammeln und anzuzeigen.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 113d76a3b80c2ef68f5e267714e4f792c988d237
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4e895cbd482e24a1e61d499e6baae7d1ec9c1e82
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988871"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674513"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Grundlegendes zu Datenkarten in PowerApps
 
@@ -32,7 +32,7 @@ Weitere Informationen zu den ersten Schritten mit Karten finden Sie unter [Add a
 
 ## <a name="predefined-cards"></a>Vordefinierte Karten
 
-PowerApps bietet einen vordefinierten Satz von Smartcards, die für Zeichenfolgen, Zahlen und andere Datentypen geeignet sind. Im rechten Bereich finden Sie die verfügbaren Varianten; hier können Sie auch die für ein Feld verwendete Karte anpassen:
+Powerapps bietet einen vordefinierten Satz von Karten für Zeichen folgen, Zahlen und andere Datentypen. Im rechten Bereich finden Sie die verfügbaren Varianten; hier können Sie auch die für ein Feld verwendete Karte anpassen:
 
 ![](./media/working-with-cards/selected-card.png)
 
@@ -108,7 +108,7 @@ Den gleichen Vorgang können Sie auch auf dem zweiten Bildschirm der App ausfüh
 ## <a name="interact-with-a-form"></a>Interagieren mit einem Formular
 Nach dem Entsperren einer Karte können Sie ändern, wie sie mit dem Formular interagiert, in dem sie enthalten ist.
 
-Im Folgenden finden Sie einige Richtlinien für die Funktionsweise von Steuerelementen mit ihrer Karte und mit dem Formular. Dies sind nur Richtlinien. Genauso wie mit jedem anderen Steuerelement in PowerApps können Sie Formel erstellen, die auf jedes beliebige Steuerelement in PowerApps verweisen – und dies gilt auch für Karten und Steuerelementen auf Karten. Seien Sie kreativ: Erstellen Sie eine Anwendung auf verschiedene Arten.  
+Im Folgenden finden Sie einige Richtlinien für die Funktionsweise von Steuerelementen mit ihrer Karte und mit dem Formular. Dies sind nur Richtlinien. Wie bei allen Steuerelementen in powerapps können Sie Formeln erstellen, die auf ein beliebiges anderes Steuerelement in Power Apps verweisen, und das gilt nicht für Karten und Steuerelemente in Karten. Seien Sie kreativ: Erstellen Sie eine Anwendung auf verschiedene Arten.  
 
 ### <a name="datafield-property"></a>DataField-Eigenschaft
 Die wichtigste Eigenschaft auf der Karte ist die **[DataField](controls/control-card.md)** -Eigenschaft.  Diese Eigenschaft steuert die Validierung, die Aktualisierung von Feldern und andere Aspekte der Karte.

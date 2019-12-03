@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0748f78665b389d57989c9170ca21077721f6633
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f6b34a5ea1b2f269a26ad70de6a6a530a30bc240
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540993"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679337"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Erstellen einer Canvas-App aus einer Projekt Mappe
 
@@ -81,7 +81,7 @@ Sie können eine leere Canvas-APP innerhalb einer Projekt Mappe erstellen. Sie k
     > [!div class="mx-imgBorder"]
     > ![Optionen zum Erstellen einer APP in einer Projekt Mappe](./media/add-app-solution/new-option.png "Optionen zum Erstellen einer APP in einer Projekt Mappe")
 
-    PowerApps Studio wird mit einem leeren Zeichenbereich in einer anderen Browser Registerkarte geöffnet.
+    Powerapps Studio wird mit einem leeren Zeichenbereich in einer anderen Browser Registerkarte geöffnet.
 
 1. Erstellen Sie Ihre APP (oder nehmen Sie mindestens eine Änderung vor), und speichern Sie dann die Änderungen.
 

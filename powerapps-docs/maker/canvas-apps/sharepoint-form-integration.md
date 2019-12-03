@@ -13,16 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c1ee3d00bab865bf63dc06181a9430fd0a9a6674
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fbfe1b62091ff7a4fb84b899518fc941f99d7abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988379"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674850"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Grundlegendes zur Integration von SharePoint-Formularen
-Sie können jetzt in PowerApps [jedes SharePoint-Listenformular leicht anpassen](customize-list-form.md). In diesem Artikel wird die Funktionsweise dieser Formulare erläutert und beschrieben, wie Sie sie weiter anpassen können.
+Sie können jetzt problemlos [alle SharePoint-Listen Formulare](customize-list-form.md) in Power Apps anpassen. In diesem Artikel wird die Funktionsweise dieser Formulare erläutert und beschrieben, wie Sie sie weiter anpassen können.
 
 Wenn Sie ein Formular für eine SharePoint-Liste angepasst haben, ist Ihnen wahrscheinlich aufgefallen, dass das generierte Standardformular für alle Vorgänge, z.B. das Erstellen, Anzeigen oder Bearbeiten eines Elements, verwendet werden kann. Dies erfolgt mithilfe generierter Formeln und des **SharePointIntegration**-Steuerelements.
 
@@ -36,13 +35,13 @@ Das generierte Standardformular besteht aus den folgenden Steuerelementen und de
 
     * **Datenquelle** – Die Liste, für die das Formular angepasst wurde.
 
-    * **Item** – Das in der Liste ausgewählte Element. Dieses wird in PowerApps Studio der Einfachheit halber auf das erste Element (First()) in der Liste festgelegt.
+    * **Item** – Das in der Liste ausgewählte Element. Dies wird bei der Arbeit in Power apps Studio in der Liste auf das erste Element () festgelegt.
 
-        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected);First('*YourListName*');SharePointIntegration.Selected)**
+        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*YourListName*'),SharePointIntegration.Selected)**
 
     * **OnSuccess** – Sobald das Element erfolgreich erstellt oder gespeichert wurde, wird das Formular zurückgesetzt und von SharePoint ausgeblendet.
 
-        **ResetForm(SharePointForm1);; RequestHide()**
+        **ResetForm(SharePointForm1); RequestHide()**
 
 * **SharePointIntegration** – Das Steuerelement für die Übermittlung von Benutzeraktionen zwischen SharePoint und PowerApps.
 
@@ -70,7 +69,7 @@ Das generierte Standardformular besteht aus den folgenden Steuerelementen und de
 
         **ResetForm(SharePointForm1)**
 
-Durch diese Standardwerte wird sichergestellt, dass das Formular bei Ausführung innerhalb von SharePoint funktioniert. Es wird der PowerApps-Formularmodus geändert, wenn der Benutzer in SharePoint mit dem Formular interagiert, und sichergestellt, dass die Änderungen an SharePoint übermittelt werden.
+Diese Standardeinstellungen stellen sicher, dass das Formular bei Ausführung innerhalb von SharePoint funktioniert. Sie ändern den Formular Modus von powerapps, während der Benutzer in SharePoint mit dem Formular interagiert, und stellen sicher, dass die Änderungen an SharePoint übermittelt werden.
 
 ## <a name="understand-the-sharepointintegration-control"></a>Grundlegendes zum SharePointIntegration-Steuerelement
 Das **SharePointIntegration**-Steuerelement übermittelt Benutzeraktionen zwischen SharePoint und PowerApps.
@@ -78,7 +77,7 @@ Das **SharePointIntegration**-Steuerelement übermittelt Benutzeraktionen zwisch
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->Sie können nur auf die Eigenschaften des **SharePointIntegration**-Steuerelements zugreifen, wenn das Formular in SharePoint ausgeführt wird. Beim Anpassen des Formulars in PowerApps Studio ist dies nicht möglich. Diese Eigenschaften sind in **OnStart** oder **OnVisible** möglicherweise nicht verfügbar. 
+>Sie können auf die Eigenschaften für das **SharePointIntegration** -Steuerelement nur zugreifen, wenn das Formular in SharePoint ausgeführt wird, und nicht, wenn Sie das Formular in Power apps Studio anpassen. Diese Eigenschaften sind in **OnStart** oder **OnVisible** möglicherweise nicht verfügbar. 
 
 Das **SharePointIntegration**-Steuerelement verfügt über die folgenden Eigenschaften:
 

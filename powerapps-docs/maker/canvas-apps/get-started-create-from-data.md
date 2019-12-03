@@ -1,6 +1,6 @@
 ---
 title: Generieren einer Canvas-App aus Excel | Microsoft-Dokumentation
-description: Verwenden von PowerApps zum automatischen Generieren einer Canvas-App mithilfe einer Excel-Datei, die in einem Cloudspeicherkonto gespeichert ist
+description: Verwenden von powerapps zum automatischen Generieren einer Canvas-App mithilfe einer Excel-Datei, die in einem cloudspeicherkonto gespeichert ist
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cb1757da9a5b0a99dad22a43ac844b192651f6df
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 979c24de10eab4d91a89fbaf9e33b53a09b0ba58
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541315"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676311"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generieren einer Canvas-App aus Excel in PowerApps
 
-In diesem Artikel generieren Sie Ihre erste Canvas-App automatisch in PowerApps, indem Sie Daten aus einer Excel-Tabelle verwenden. Sie wählen eine Excel-Datei aus, generieren eine App und führen die generierte App dann aus. Jede generierte App enthält Bildschirme zum Durchsuchen von Datensätzen, Anzeigen von Details der Datensätze sowie zum Erstellen oder Aktualisieren von Datensätzen. Indem Sie eine App generieren, können Sie mithilfe von Excel-Daten schnell eine funktionierende App erstellen. Diese können Sie anschließend an Ihre Anforderungen anpassen. 
+In diesem Thema generieren Sie automatisch Ihre erste Canvas-app in Power Apps mithilfe von Daten aus einer Excel-Tabelle. Sie wählen eine Excel-Datei aus, generieren eine App und führen die generierte App dann aus. Jede generierte App enthält Bildschirme zum Durchsuchen von Datensätzen, Anzeigen von Details der Datensätze sowie zum Erstellen oder Aktualisieren von Datensätzen. Indem Sie eine App generieren, können Sie mithilfe von Excel-Daten schnell eine funktionierende App erstellen. Diese können Sie anschließend an Ihre Anforderungen anpassen. 
 
 Die Excel-Datei muss sich in einem Cloudspeicherkonto (z.B. OneDrive, Google Drive oder Dropbox) befinden. In diesem Artikel wird „OneDrive for Business“ verwendet.
 
-Wenn Sie nicht über eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+Wenn Sie nicht über eine Lizenz für Power apps verfügen, können Sie [sich kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

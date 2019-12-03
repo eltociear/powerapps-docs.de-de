@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b6f1056a6d2b5ceaf1fcefe1ccc7d583470450c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541714"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674619"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>So speichern Sie Bilder in einer Excel-Datei und fügen diese Bilder anschließend zu Ihrer App hinzu
 
@@ -50,7 +49,7 @@ In diesem Tutorial werden wir:
 3. Benennen Sie die Excel-Datei **SavePen.xlsx**, und speichern Sie die Datei in Ihr Cloudspeicherkonto (OneDrive for Business, Dropbox usw.).
 
 ## <a name="create-an-app-with-the-pen-control"></a>Erstellen einer App mit dem Stift-Steuerelement
-1. Erstellen Sie in PowerApps eine [leere App](get-started-create-from-blank.md).
+1. Erstellen Sie in powerapps eine [leere App](get-started-create-from-blank.md).
 2. Fügen Sie in Ihrer App das Cloudspeicherkonto als eine [Datenquelle](add-data-connection.md) hinzu. Nachdem dies geschehen ist, fügen Sie **SavePen.xlsx** als Verbindung hinzu, und wählen Sie anschließend die Tabelle **Zeichnungen** aus:  
    ![Verbinden](./media/tutorial-working-with-images-in-excel/savepen.png)  
    
@@ -59,7 +58,7 @@ In diesem Tutorial werden wir:
    
    ![Umbenennen](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Fügen Sie ein Steuerelement **Schaltfläche** (Menü **Einfügen**) hinzu, und legen Sie dessen Eigenschaft **OnSelect** auf die folgende Formel fest:  
-   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
+   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
 5. Fügen Sie ein Steuerelement **Bildkatalog** (Menü **Einfügen** > **Katalog**) hinzu, und legen Sie dessen Eigenschaft **Elemente** auf `Drawings` fest. Die Eigenschaft **Image** des Katalog-Steuerelements wird automatisch auf `ThisItem.Image` festgelegt.
    
    Ihr Bildschirm sollte etwa wie folgt aussehen:  
@@ -78,7 +77,7 @@ Sie können z.B. Bilder in einem Cloudspeicherkonto speichern und anschließend 
 In diesem Beispiel wird die Datei [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) verwendet, die einige JPEG-Dateien enthält.
 
 > [!NOTE]
-> Zum Anzeigen von Bildern aus einer Excel-Datei muss der Pfad zu diesen Bilder Schrägstriche verwenden. Wenn (wie bei den vorherigen Schritten) PowerApps Bilder für eine Excel-Tabelle speichert, verwendet der Pfad umgekehrte Schrägstriche. Daher können Sie auch **SavePen_images** aus dem vorherigen Beispiel verwenden. Wenn Sie dies tun, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt werden.  
+> Zum Anzeigen von Bildern aus einer Excel-Datei muss der Pfad zu diesen Bilder Schrägstriche verwenden. Wenn Power apps Bilder in einer Excel-Tabelle speichert (wie bei den vorherigen Schritten), verwendet der Pfad umgekehrte Schrägstriche. Daher können Sie auch **SavePen_images** aus dem vorherigen Beispiel verwenden. Wenn Sie dies tun, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt werden.  
 
 1. Laden Sie die Datei [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) herunter, und extrahieren Sie den Ordner **Ressourcen** in Ihr Cloudspeicherkonto.
 2. Erstellen Sie in einem Excel-Arbeitsblatt eine Tabelle, die in etwa wie folgt aussieht:

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 76d4a1ffdc569a3ccfc2567229c99136e744191a
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: cba5d7bd1214866cc24ba01c64909cf15e0ca96d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899311"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674674"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Vollständige exemplarische Vorgehensweise für das komplette Szenario der SharePoint Online-Integration
 > [!NOTE]

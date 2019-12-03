@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a979944d25d683c5b2b4c772cd6859e6ac52f0e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e6ebc516c6b07f149e2b965b967966c3832476c9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541560"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675502"
 ---
 # <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Erstellen einer Canvas-App aus einem Beispiel in powerapps
 In diesem Schnellstart erstellen Sie eine Canvas-App aus einem Beispiel. Dadurch können Sie die verschiedenen Möglichkeiten entdecken, diese zu gestalten und Konzepte entdecken, die Sie anwenden können, wenn Sie eigene Canvas-Apps entwickeln.
 
 Jedes Beispiel stellt ein reales Szenario dar, verwendet jedoch fiktive Daten. Sie benötigen ein Cloudspeicherkonto wie Dropbox, Google Drive oder OneDrive, um diese Daten zu speichern.
 
-Wenn Sie nicht über eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+Wenn Sie nicht über eine Lizenz für Power apps verfügen, können Sie [sich kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Öffnen von Beispiel-Apps
 1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
@@ -36,7 +36,7 @@ Wenn Sie nicht über eine Lizenz für PowerApps verfügen, können Sie sich [kos
 
 1. Klicken oder tippen Sie auf das Telefonsymbol, um eine Version der App für Mobilgeräte zu erstellen (oder belassen Sie die Auswahl beim Tabletsymbol), und klicken oder tippen Sie dann auf **Diese App erstellen**.
 
-1. Klicken oder tippen Sie in PowerApps Studio auf dem Banner im oberen mittleren Bereich des Bildschirms auf **Eigene App erstellen**.
+1. Klicken oder tippen Sie in powerapps Studio im Banner in der Mitte des Bildschirms auf **eigene APP erstellen** .
 
     ![](./media/open-and-run-a-sample-app/banner.png)
 

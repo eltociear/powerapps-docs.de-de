@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9f7349faf01d2270427c8cd5862a55e413033023
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f7e1b4ff10a12d454380c394b2f6ae64389bc23e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650388"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679728"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PDF-Viewer-Steuerelement in PowerApps (experimentell)
 Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
@@ -75,13 +75,13 @@ App-Ersteller können diese Einschränkungen umgehen, indem Sie PDF-Dokumente al
 
 **OnStateChange**: gibt an, wie eine App reagiert, wenn sich der Zustand des Steuerelements ändert.
 
-**[PaddingBottom](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem unteren Rand des Steuerelements.
+**[PaddingBottom](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
 
 **[PaddingLeft](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
 
 **[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
 
 **Page**: gibt die Nummer der Seite an, die Sie anzeigen möchten.
 
@@ -91,7 +91,7 @@ App-Ersteller können diese Einschränkungen umgehen, indem Sie PDF-Dokumente al
 
 **ShowControls**: Gibt beispielsweise an, ob für einen Audio- oder Videoplayer eine Schaltfläche für die Wiedergabe und ein Lautstärkeregler und für ein Stift-Steuerelement Symbole zum Zeichnen oder Löschen angezeigt werden.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -111,7 +111,7 @@ Fügen Sie ein Steuerelement des Typs **PDF-Viewer** hinzu, und legen Sie seine 
 
 Das Steuerelement zeigt die PDF-Datei.
 
-Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 

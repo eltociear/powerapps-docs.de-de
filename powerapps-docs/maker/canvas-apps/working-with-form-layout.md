@@ -1,6 +1,6 @@
 ---
 title: Grundlegendes zum Layout von Datenformularen für Canvas-Apps | Microsoft-Dokumentation
-description: Erstellen Sie mit PowerApps professionell aussehende Formularlayouts in Canvas-Apps mithilfe von Zeilen und Spalten.
+description: Erstellen Sie in powerapps hervorragend aussehende Formularlayouts in Canvas-Apps mithilfe von Zeilen und Spalten.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ef11e767fcf92259839c4bebe282757b0004f21
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f447a467319f814fd79aab6827bf623d35345102
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989145"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674540"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Grundlegendes zum Layout von Datenformularen für Canvas-Apps in PowerApps
 
-Erstellen Sie mühelos ein professionell aussehendes und effizientes Formular, wenn Sie eine Canvas-App in PowerApps erstellen. Sehen Sie sich beispielsweise dieses einfache Formular zum Aufzeichnen von Verkaufsaufträgen an:
+Erstellen Sie auf einfache Weise ein attraktives und effizientes Formular, wenn Sie eine Canvas-app in powerapps erstellen. Sehen Sie sich beispielsweise dieses einfache Formular zum Aufzeichnen von Verkaufsaufträgen an:
 
 ![Beispiel eines Verkaufsauftrags](./media/working-with-form-layout/sales-order.png)
 
@@ -30,7 +30,7 @@ In diesem Tutorial durchlaufen wir die Schritte zum Erstellen dieses Formulars. 
 
 ## <a name="before-you-start"></a>Bevor Sie beginnen
 
-Wenn Sie noch nicht mit PowerApps vertraut sind (oder Apps bisher lediglich automatisch generiert haben), empfiehlt es sich, [eine App von Grund auf neu zu erstellen](get-started-create-from-blank.md), bevor Sie in dieses Thema einsteigen. Durch Erstellen einer App von Grund auf machen Sie sich mit den grundlegenden Konzepten vertraut, beispielsweise mit dem Hinzufügen von Datenquellen und Steuerelementen, die in diesem Artikel zwar erwähnt, jedoch nicht erläutert werden.
+Wenn Sie noch nicht mit Power apps vertraut sind (oder nur automatisch Apps generiert haben), sollten Sie [eine APP von Grund auf neu erstellen](get-started-create-from-blank.md) , bevor Sie sich mit diesem Thema befassen. Durch Erstellen einer App von Grund auf machen Sie sich mit den grundlegenden Konzepten vertraut, beispielsweise mit dem Hinzufügen von Datenquellen und Steuerelementen, die in diesem Artikel zwar erwähnt, jedoch nicht erläutert werden.
 
 Dieses Thema ist so geschrieben, als ob Sie eine Datenquelle mit dem Namen " **Sales Order** " haben und die Felder in der vorherigen Grafik enthalten. Wenn Sie über eine Lizenz für powerapps-Plan 2 oder eine [Testlizenz](../signup-for-powerapps.md) und Systemadministrator-oder systemanpassungsberechtigungen verfügen, können Sie in Common Data Service [eine Entität erstellen](../common-data-service/data-platform-create-entity.md) und ähnliche Felder hinzufügen. 
 
@@ -199,13 +199,13 @@ Was sind zusammengefasst die Unterschiede zwischen der Aktivierung und Deaktivie
 | Das Layout von Karten wird zwischen Zeilen neu angeordnet (mehr dazu später) |Ja |Nein |
 
 ## <a name="set-width-and-height"></a>Breite und Höhe festlegen
-Wie immer in PowerApps wird das Layout des Formulars von Eigenschaften für die Kartensteuerelemente bestimmt. Wie bereits beschrieben, können Sie die Werte dieser Eigenschaften ändern, indem Sie Steuerelemente an andere Positionen ziehen oder die Größe von Steuerelementen durch Ziehen der Ziehpunkte ändern. Allerdings kann es Situationen geben, in denen Sie diese Eigenschaften selbst verstehen und bearbeiten möchten, insbesondere wenn Sie Ihre Formulare mithilfe von Formeln dynamisch gestalten.
+Wie bei allen Funktionen in Power apps wird das Layout des Formulars durch Eigenschaften der Karten Steuerelemente gesteuert. Wie bereits beschrieben, können Sie die Werte dieser Eigenschaften ändern, indem Sie Steuerelemente an andere Positionen ziehen oder die Größe von Steuerelementen durch Ziehen der Ziehpunkte ändern. Allerdings kann es Situationen geben, in denen Sie diese Eigenschaften selbst verstehen und bearbeiten möchten, insbesondere wenn Sie Ihre Formulare mithilfe von Formeln dynamisch gestalten.
 
-### <a name="basic-layout-x-y-and-width"></a>Grundlegendes Layout: X, Y und Width
+### <a name="basic-layout-x-y-and-width"></a>Standardlayout: X, Y und Breite
 Mit der **X**-Eigenschaft und der **Y**-Eigenschaft wird die Position von Karten gesteuert. Wenn wir mit Steuerelementen im unformatierten Zeichenbereich arbeiten, geben diese Eigenschaften eine absolute Position an. In einem Formular hingegen haben diese Eigenschaften eine andere Bedeutung:
 
 * **X**: Reihenfolge innerhalb einer Zeile.
-* **J**: Zeilennummer.
+* **Y**: Zeilennummer.
 
 Vergleichbar mit Steuerelementen im Zeichenbereich gibt die Eigenschaft **Width** die Mindestbreite der Karte an (mehr zu diesem Aspekt später).
 
@@ -224,7 +224,7 @@ Die drei Karten in der obersten Zeile passen horizontal nicht mehr hinein, und d
 
 Mithilfe dieses Verhaltens können Sie ein vollständig dynamisches Layout erstellen, bei dem Karten basierend auf einer Z-Reihenfolge platziert werden, wobei waagerecht so viel Platz wie möglich eingenommen wird, ehe der Wechsel in die nächste Zeile erfolgt. Weisen Sie zu diesem Zweck allen Karten denselben **Y**-Wert zu, und verwenden Sie **X** für die Reihenfolge der Karten.
 
-### <a name="filling-spaces-widthfit"></a>Auffüllen von Leerzeichen: WidthFit
+### <a name="filling-spaces-widthfit"></a>Füllen von Leerbereichen: WidthFit
 Durch den Überlauf im letzten Beispiel wurde ein Leerbereich hinter der Karte **Order status** (Bestellstatus) erzeugt, die die zweite Karte in der ersten Zeile darstellte. Wir könnten die **Width**-Eigenschaft der beiden restlichen Karten manuell anpassen, um diesen Leerbereich zu füllen. Eine solche Vorgehensweise wäre aber mühsam.
 
 Verwenden Sie alternativ die **WidthFit**-Eigenschaft. Wenn diese Eigenschaft bei einer oder mehreren Karten in einer Zeile auf **TRUE** festgelegt ist, wird der verbleibende Platz in der Zeile gleichmäßig zwischen ihnen aufgeteilt. Aufgrund dieses Verhaltens haben wir zuvor darauf hingewiesen, dass die **Width**-Eigenschaft einer Karte ein *Mindestwert* ist und die tatsächliche Anzeige breiter sein kann. Diese Eigenschaft bewirkt nie, dass eine Karte schmaler wird, sondern stets nur ihre Verbreiterung.

@@ -1,6 +1,6 @@
 ---
 title: Meeting Capture-Beispielvorlage | Microsoft-Dokumentation
-description: Erfahren Sie mehr über die Meeting Capture-Beispielvorlage in PowerApps mit Informationen zum Setup, einer Übersicht und umfassenden Einblicken in die Erstellung der App.
+description: Erfahren Sie mehr über die Beispiel Vorlage für die Besprechungs Erfassung in powerapps, indem Sie Setup, Overview und tiefgreifende Einblicke in die Erstellung der APP erhalten.
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 28ec571fc167f7233abed5d1448e5e441c6913a0
-ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
+ms.openlocfilehash: 763e8a3cd84b4644787ce30398f8c36f016fe986
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73063353"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675311"
 ---
 # <a name="set-up-and-learn-about-the-meeting-capture-sample-template-in-powerapps"></a>Einrichtung und Informationen zur Meeting Capture-Beispielvorlage in PowerApps
 
 ## <a name="overview"></a>Übersicht
 
- Die Meeting Capture-Beispielvorlage in PowerApps ist ein All-in-One-Tool zur Erfassung von Informationen während Besprechungen. Wenn Sie die App ausführen, können Sie Besprechungsdetails anzeigen, Notizen erfassen, Whiteboards fotografieren, Skizzen zeichnen und Aufgaben zuweisen. Zudem können Sie alle diese Elemente exportieren, sie an alle Besprechungsteilnehmer senden und Folgebesprechungen schnell und einfach planen.
+ In powerapps ist die Beispiel Vorlage für die Besprechungs Erfassung ein All-in-One-Tool zum Erfassen von Informationen aus Besprechungen, während diese auftreten. Wenn Sie die App ausführen, können Sie Besprechungsdetails anzeigen, Notizen erfassen, Whiteboards fotografieren, Skizzen zeichnen und Aufgaben zuweisen. Zudem können Sie alle diese Elemente exportieren, sie an alle Besprechungsteilnehmer senden und Folgebesprechungen schnell und einfach planen.
 
 [![Meeting Capture](media/sample-meeting-capture/MeetingCapture.png)](https://aka.ms/previewmeetingcapture)
 
@@ -41,9 +41,9 @@ Sehen Sie sich die [Vorschau von Meeting Capture](https://aka.ms/previewmeetingc
 
 ## <a name="how-do-i-build-the-app-myself"></a>Wie erstelle ich die App selbst?
 
-Meeting Capture enthält eine Vielzahl von Funktionen, die in PowerApps häufig verwendet werden. Wenn Sie sich diese Videos ansehen, können Sie die Funktionen erkunden und herausfinden, wie Sie die gleichen Funktionen und Muster in Ihren eigenen Apps implementieren können.
+Die Besprechungs Erfassung umfasst zahlreiche Funktionen, die häufig in Power Apps verwendet werden. Wenn Sie sich diese Videos ansehen, können Sie die Funktionen erkunden und herausfinden, wie Sie die gleichen Funktionen und Muster in Ihren eigenen Apps implementieren können.
 
-- [Exportieren Sie Inhalte](https://youtu.be/D6kmeM0UFH0) von PowerApps nach OneNote.
+- [Exportieren von Inhalten](https://youtu.be/D6kmeM0UFH0) aus Power apps in OneNote.
 - [Finden Sie passende Besprechungszeiten](https://youtu.be/gSD8m6d_Gv0), in denen Teilnehmer verfügbar sind.
 
 Meeting Capture verbindet sich mit diesen Diensten in Office 365.

@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer Canvas-App aus einer Vorlage | Microsoft-Dokumentation
-description: Ausführliche Anleitung zum automatischen Erstellen einer Canvas-App auf Grundlage einer PowerApps-Vorlage
+description: Hier finden Sie Schritt-für-Schritt-Anleitungen zum automatischen Erstellen einer Canvas-App basierend auf einer Power apps-Vorlage.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e127aa75d0d99a80fab5532efd555eb00b7262de
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eac22ce84d5864e79c2964d42ffa5fe37853bc97
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537012"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676250"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Erstellen einer Canvas-App aus einer Vorlage in PowerApps
 
@@ -26,7 +26,7 @@ Erstellen Sie eine Canvas-App automatisch aus einer Vorlage für ein bestimmtes 
 
 Sie benötigen ein Cloudspeicherkonto (z.B. Dropbox, OneDrive oder Google Drive), um die Beispieldaten von Vorlagen zu speichern und eine App aus einer Vorlage zu erstellen.
 
-Wenn Sie nicht über eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+Wenn Sie nicht über eine Lizenz für Power apps verfügen, können Sie [sich kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Erstellen einer App
 
@@ -42,7 +42,7 @@ Wenn Sie nicht über eine Lizenz für PowerApps verfügen, können Sie sich [kos
 
 4. In der Liste der Vorlagen, klicken oder tippen Sie auf eine Vorlage, und klicken oder tippen Sie anschließend auf **Use** (Verwenden) in der Nähe der rechten unteren Ecke.
 
-    ![PowerApps-Vorlage öffnen](./media/get-started-test-drive/open-template.png)
+    ![Öffnen einer powerapps-Vorlage](./media/get-started-test-drive/open-template.png)
 
     Die Beispieldaten werden in Ihr Cloudspeicherkonto kopiert, die App wird erstellt und die Startseite wird angezeigt.
 

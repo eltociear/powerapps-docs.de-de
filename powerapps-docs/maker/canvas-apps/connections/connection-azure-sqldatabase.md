@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bcadf4abfd55a317cf67196c9ba2158a001a015a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541141"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678808"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Herstellen einer Verbindung mit SQL Server aus PowerApps
 ![SQL Server-Symbol](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -27,7 +27,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
+* [Registrieren](../../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit den Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
 * Sammeln Sie die folgenden Informationen für eine Datenbank, die mindestens eine Tabelle mit einem Primärschlüssel enthält:
   
   * den Namen der Datenbank
@@ -42,7 +42,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
   > Gateways und lokale Verbindungen können nur in der [Standardumgebung](../working-with-environments.md) des Benutzers erstellt und verwendet werden.
 
 ## <a name="generate-an-app-automatically"></a>Eine App automatisch generieren
-1. Klicken oder tippen Sie in PowerApps Studio im Menü **Datei** auf die Option **Neu** (am linken Rand).
+1. Klicken oder tippen Sie in powerapps Studio im Menü **Datei** auf **neu** (am linken Rand).
    
     ![Option „New“ im Menü „File“](./media/connection-azure-sqldatabase/file-new.png)
 2. Klicken oder tippen Sie unter **Mit eigenen Daten beginnen** auf den Rechtspfeil am Ende der Zeile mit Connectors.
@@ -64,7 +64,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
 6. Klicken oder tippen Sie auf **Verbinden**.
 7. Klicken oder tippen Sie auf eine Option unter **Dataset auswählen**, klicken oder tippen Sie auf eine Option unter **Tabelle auswählen**, und klicken oder tippen Sie dann auf **Verbinden**.
    
-    In PowerApps wird eine App erstellt, in der Daten auf drei Bildschirmen angezeigt werden. Von einer Heuristik wird vorgeschlagen, welche Art von Daten angezeigt werden sollte, möglicherweise müssen Sie jedoch die Benutzeroberfläche entsprechend den jeweiligen Anforderungen anpassen.
+    Powerapps erstellt eine APP, in der Daten auf drei Bildschirmen angezeigt werden. Von einer Heuristik wird vorgeschlagen, welche Art von Daten angezeigt werden sollte, möglicherweise müssen Sie jedoch die Benutzeroberfläche entsprechend den jeweiligen Anforderungen anpassen.
 8. Passen Sie die App unter Verwendung von Techniken wie den in [Erstellen einer App aus Excel-Daten](../get-started-create-from-data.md) beschriebenen an; beginnen Sie dabei mit dem Ändern des App-Layouts.
 
 ## <a name="build-an-app-from-scratch"></a>Eine App von Grund auf neu erstellen
@@ -88,7 +88,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
 6. Erstellen Sie eine App mithilfe von Techniken wie den in [App von Grund auf neu erstellen](../get-started-create-from-blank.md) beschriebenen.
 
 ## <a name="update-an-existing-app"></a>Aktualisieren einer vorhandenen App
-1. Öffnen Sie in PowerApps Studio die App, die Sie aktualisieren möchten.
+1. Öffnen Sie in powerapps Studio die APP, die Sie aktualisieren möchten.
 2. Klicken oder tippen Sie im Menüband auf der Registerkarte **Ansicht** auf **Datenquellen**.
 3. Klicken oder tippen Sie im rechten Bereich auf **Datenquelle hinzufügen**.
    

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7beb08afe2e7a6fa68f5017ff70f95f5dcee75f8
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 2997c2854979d019a71de8d00ddab37263b789d6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899827"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675431"
 ---
 # <a name="custom-connectors-for-canvas-apps"></a>Benutzerdefinierte Connectors für Canvas-Apps
 
@@ -32,7 +32,7 @@ In bestimmten Fällen müssen Sie jedoch APIs, Dienste und Systeme aufrufen, fü
 
 * [Erstellen eines benutzerdefinierten Connectors ohne Vorlage](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
 
-* [Verwenden eines benutzerdefinierten Connectors aus einer PowerApps-App](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-powerapps)
+* [Verwenden eines benutzerdefinierten Connector aus einer powerapps-App](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-powerapps)
 
 * [Freigeben eines benutzerdefinierten Connectors in Ihrer Organisation](https://docs.microsoft.com/connectors/custom-connectors/share)
 

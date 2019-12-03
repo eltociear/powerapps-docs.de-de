@@ -1,6 +1,6 @@
 ---
 title: Formatieren einer Tabelle in Excel | Microsoft-Dokumentation
-description: Um Excel-Daten in PowerApps verwenden zu können, müssen Sie die Daten als Tabelle formatieren. Hinzufügen des Schlüsselworts „Bild“ in Spaltennamen
+description: Wenn Sie Excel-Daten in Power Apps verwenden möchten, müssen Sie die Daten als Tabelle formatieren. Hinzufügen des Schlüsselworts „Bild“ in Spaltennamen
 author: yifwang
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 164de5c1b2534901563ab888cfd83641dbe5a9c5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: da70ef7fe2447653c97bb17dbcd40a126ceb6888
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990026"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675698"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Formatieren einer Tabelle in Excel und Tipps zur Benennung
-In PowerApps können Sie eine Canvas-App auf der Grundlage von Excel-Daten nur erstellen, wenn sie als Tabelle formatiert ist. Unter diesem Thema erfahren Sie, wie Sie eine Tabelle in Excel formatieren und wie Sie Excel-Spalten benennen können.
+In powerapps können Sie eine Canvas-App auf der Grundlage von Excel-Daten nur erstellen, wenn Sie als Tabelle formatiert ist. Unter diesem Thema erfahren Sie, wie Sie eine Tabelle in Excel formatieren und wie Sie Excel-Spalten benennen können.
 
 ## <a name="how-to-format-a-table-in-excel"></a>Formatieren einer Tabelle in Excel
 Sie können Ihre Daten in eine Tabelle konvertieren, indem Sie in Excel auf der Registerkarte **Start** die Option **Als Tabelle formatieren** auswählen.

@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b3a33f327aab7e4f02c954dbd31c412e35dd661
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539179"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679659"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
 
-Im Rahmen dieses Tutorials passen Sie eine Liste von Datensätzen an, die Katalog genannt wird, und nehmen andere Änderungen in einer App vor, die in Microsoft PowerApps automatisch generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen.
+In diesem Tutorial passen Sie eine Liste der Datensätze an, die als Katalog bezeichnet werden, und nehmen andere Änderungen an einer APP vor, die automatisch in Microsoft powerapps generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen.
 
 Zum Beispiel entspricht der Katalog für dieses Tutorial standardmäßig der folgenden Abbildung. Die E-Mail-Adresse wird deutlicher dargestellt als andere Arten von Daten, und Benutzer können den Katalog basierend auf dem Text in dieser Adresse sortieren oder filtern:
 
@@ -42,9 +41,9 @@ Außerdem fügen Sie eine Scrollleiste hinzu, damit Benutzer, die weder Touchscr
 > * Ändern des Bildschirmtitels
 > * Anzeigen einer Scrollleiste
 
-Dieses Tutorial beginnt mit einer App, die von einer bestimmten Datenquelle aus generiert wurde. Dieselben Konzepte gelten jedoch für jede App, die Sie in PowerApps erstellen, unabhängig davon, ob sie aus einer SharePoint-Liste, einer Excel-Tabelle oder einer anderen Datenquelle stammen.
+Dieses Tutorial beginnt mit einer App, die von einer bestimmten Datenquelle aus generiert wurde. Die gleichen Konzepte gelten jedoch für jede APP, die Sie in powerapps generieren, egal ob aus einer SharePoint-Liste, einer Excel-Tabelle oder aus einer anderen Datenquelle.
 
-Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuerst kostenlos](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Wenn Sie nicht für Power apps registriert sind, [melden Sie sich kostenlos an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , bevor Sie beginnen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -58,7 +57,7 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
     ![App zur Bearbeitung öffnen](./media/customize-layout-sharepoint/open-app.png)
 
-1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** angezeigt wird, klicken Sie auf **Überspringen**.
+1. Wenn das Dialogfeld **Willkommen bei Power apps Studio** angezeigt wird, wählen Sie über **springen**aus.
 
 ## <a name="change-the-layout"></a>Ändern des Layouts
 
@@ -96,7 +95,7 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
 1. Kopieren Sie diese Formel, und fügen Sie sie in die Bearbeitungsleiste ein.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Mit Verwendung dieser Formel stellen Sie Folgendes sicher:
 

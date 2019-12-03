@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit Formeln in einer Canvas-App | Microsoft-Dokumentation
-description: Verwenden Sie in PowerApps Formeln, um eine Canvas-App anzupassen.
+description: Verwenden Sie Formeln in powerapps, um eine Canvas-App anzupassen.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,20 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 715f82a1db2c8a4bb495e41b45a3911182024158
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 42f5f188f107e8a5768ed9a74f463d1fc9bbc286
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541609"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74673210"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Erste Schritte mit Canvas-App-Formeln in PowerApps
 
 Konfigurieren Sie Ihre Canvas-App mit Formeln, die nicht nur Werte berechnen und andere Aufgaben ausführen (wie in Excel), sondern auch auf Benutzereingaben reagieren (wie eine App es erfordert).
 
 * In Excel erstellen Sie Formeln, um z.B. Zellen zu füllen und Tabellen und Diagramme zu erstellen.
-* In PowerApps erstellen Sie ähnliche Formeln, da Sie Steuerelemente anstelle von Zellen konfigurieren. Darüber hinaus erstellen Sie Formeln, die speziell für Apps anstatt für Arbeitsblätter gelten.
+* In powerapps erstellen Sie ähnliche Formeln, wenn Sie Steuerelemente anstelle von Zellen konfigurieren. Darüber hinaus erstellen Sie Formeln, die speziell für Apps anstatt für Arbeitsblätter gelten.
 
 Sie erstellen beispielsweise eine Formel, um zu bestimmen, wie Ihre App reagiert, wenn Benutzer eine Schaltfläche auswählen, einen Schieberegler anpassen oder andere Eingaben bereitstellen. Diese Formeln zeigen möglicherweise einen anderen Screen an, aktualisieren eine App-externe Datenquelle oder erstellen eine Tabelle, die eine Teilmenge der Daten in einer vorhandenen Tabelle enthält.
 
@@ -36,12 +35,12 @@ Dieses Thema bietet nur eine Übersicht über das Arbeiten mit Formeln. Weitere 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
+* [Registrieren](../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit den Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 
 ## <a name="show-a-simple-value"></a>Anzeigen eines einfachen Werts
 
-In Excel können Sie eine bestimmte Dateneinheit eingeben, z.B. die Zahl **42** oder den Ausdruck **Hello World**, indem Sie sie in eine Zelle schreiben. Diese Zelle wird die Daten immer so anzeigen, wie Sie sie eingegeben haben. In PowerApps können Sie auch Dateneinheiten angeben, die sich nicht ändern, wenn Sie die Einstellung **[Text](controls/properties-core.md)** einer Bezeichnung auf genau die gewünschte Zeichenreihenfolge in doppelten Anführungszeichen festlegen.
+In Excel können Sie eine bestimmte Dateneinheit eingeben, z.B. die Zahl **42** oder den Ausdruck **Hello World**, indem Sie sie in eine Zelle schreiben. Diese Zelle wird die Daten immer so anzeigen, wie Sie sie eingegeben haben. In powerapps können Sie auf ähnliche Weise ein Datenelement angeben, das sich nicht ändert, indem Sie die **[Text](controls/properties-core.md)** -Eigenschaft einer Bezeichnung auf die genaue Zeichen Sequenz festlegen, die in doppelten Anführungszeichen eingeschlossen ist.
 
 1. Wählen Sie im Menü **File** (Datei) (am linken Rand des Bildschirms) **New** (New) aus.
 2. Wählen Sie unter **Create an app** auf der Kachel **Blank app** die Option **Phone layout** aus.
@@ -71,11 +70,11 @@ In Excel können Sie eine bestimmte Dateneinheit eingeben, z.B. die Zahl **42** 
 
     Die Bezeichnung gibt den neuen Wert wieder, während Sie ihn eingeben.  Möglicherweise wird auf dem Screen gelbe Ausrufezeichen angezeigt, während Sie etwas eingeben. Diese Symbole weisen auf Fehler hin, verschwinden allerdings, sobald Sie einen gültigen Wert eingegeben haben. Eine Zeichenfolge, die nicht in doppelten Anführungszeichen eingeschlossen ist, ist z.B. kein gültiger Wert.
 
-    In Excel können Sie eine Zahl wie **42** anzeigen, indem Sie sie in eine Zelle eingeben oder indem Sie eine Formel verwenden, die zu dieser Zahl auflöst, wie z.B. **=SUM(30; 12)** . In PowerApps erreichen Sie denselben Effekt, indem Sie die Eigenschaft **Text** eines Steuerelements, z.B. einer Bezeichnung, auf **42** oder **Sum(30; 12)** festlegen. Die Zelle und die Bezeichnung zeigen daraufhin immer diese Zahl an, unabhängig von jeglichen Änderungen am Arbeitsblatt oder an der App.
+    In Excel können Sie eine Zahl wie **42** anzeigen, indem Sie sie in eine Zelle eingeben oder indem Sie eine Formel verwenden, die zu dieser Zahl auflöst, wie z.B. **=SUM(30, 12)** . In powerapps können Sie denselben Effekt erzielen, indem Sie die **Text** -Eigenschaft eines Steuer Elements, z. b. eine Bezeichnung, auf **42** oder **Sum (30, 12)** festlegen. Die Zelle und die Bezeichnung zeigen daraufhin immer diese Zahl an, unabhängig von jeglichen Änderungen am Arbeitsblatt oder an der App.
 
     > [!NOTE]
-   > In PowerApps werden Formeln weder ein Gleichheitszeichen noch ein Pluszeichen vorangestellt, wie es z.B. in Excel gebräuchlich ist. Die Bearbeitungsleiste behandelt standardmäßig jede Eingabe wie eine Formel. Formeln werden ebenso wenig in doppelte Anführungszeichen (") gesetzt, die Sie zuvor zum Angeben einer Textzeichenfolge verwendet haben.
-5. Ersetzen Sie in der **[Text](controls/properties-core.md)** -Eigenschaft der Bezeichnung die Zeichenfolge **"Hello World"** durch **Sum(1; 2; 3)** .
+   > In powerapps steht Ihnen keine Formel mit einem Gleichheitszeichen oder einem Pluszeichen wie in Excel voran. Die Bearbeitungsleiste behandelt standardmäßig jede Eingabe wie eine Formel. Formeln werden ebenso wenig in doppelte Anführungszeichen (") gesetzt, die Sie zuvor zum Angeben einer Textzeichenfolge verwendet haben.
+5. Ersetzen Sie in der **[Text](controls/properties-core.md)** -Eigenschaft der Bezeichnung die Zeichenfolge **"Hello World"** durch **Sum(1, 2, 3)** .
 
     ![Die Eingabe der partiellen Funktion „Sum(1, 2, 3“ ohne eine schließende Klammer gibt Fehler zurück.](./media/working-with-formulas/label-sum-partial.png)
 
@@ -97,11 +96,11 @@ Unabhängig davon, welche Zahlen Sie in die Texteingabe-Steuerelemente eingeben,
 
 `TextInput1 + TextInput2`
 
-![Animation der powerapps-Neuberechnung der Summe von zwei Zahlen](./media/working-with-formulas/recalc2.gif)
+![Animation von powerapps, die die Summe von zwei Zahlen neu berechnen](./media/working-with-formulas/recalc2.gif)
 
-In Excel können Formeln für bedingte Formatierung verwendet werden, um beispielsweise negative Werte in rot anzuzeigen. In PowerApps können Sie Formeln nicht nur verwenden, um den primären Wert eines Steuerelements zu bestimmen, sondern auch, um Eigenschaften, wie z.B. das Format, zu bestimmen. Im nächsten Beispiel zeigt eine Formel für die **[Color](controls/properties-color-border.md)** -Eigenschaft der Bezeichnung automatisch negative Werte Rot an. Die **[If](functions/function-if.md)** -Funktion ist Ihnen wahrscheinlich aus Excel vertraut:
+In Excel können Formeln für bedingte Formatierung verwendet werden, um beispielsweise negative Werte in rot anzuzeigen. In powerapps können Sie Formeln verwenden, um nicht nur den primär Wert eines Steuer Elements zu bestimmen, sondern auch Eigenschaften wie z. b. die Formatierung. Im nächsten Beispiel zeigt eine Formel für die **[Color](controls/properties-color-border.md)** -Eigenschaft der Bezeichnung automatisch negative Werte Rot an. Die **[If](functions/function-if.md)** -Funktion ist Ihnen wahrscheinlich aus Excel vertraut:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animation der bedingten Formatierung](media/working-with-variables/recalc-color.gif)
 
@@ -120,7 +119,7 @@ Sie können Ihre App mit Formeln konfigurieren, damit Benutzer die Darstellung o
     Sie können die Eigenschaft **Max** angeben, indem Sie sie in der Registerkarte **Content** oder in der Eigenschaftenliste auswählen:
 
     ![Ändern des maximalen Werts für jeden einzelnen Schieberegler](./media/working-with-formulas/three-sliders-max.png)
-4. Wählen Sie den Screen aus, indem Sie neben die Steuerelemente klicken, und legen Sie Eigenschaft **[Fill](controls/properties-color-border.md)** (Füllen) des Screens auf folgende Formel fest:<br>**RGBA( Slider1.Value; Slider2.Value; Slider3.Value; 1 )**
+4. Wählen Sie den Screen aus, indem Sie neben die Steuerelemente klicken, und legen Sie Eigenschaft **[Fill](controls/properties-color-border.md)** (Füllen) des Screens auf folgende Formel fest:<br>**RGBA( Slider1.Value, Slider2.Value, Slider3.Value, 1 )**
 
     Wie bereits beschrieben können Sie mithilfe von **.** auf die Eigenschaften von Steuerelementen zugreifen Operator  **Slider1.Value** bezieht sich auf die **[Value](controls/properties-core.md)** -Eigenschaft (Wert) des Schiebereglers, die angibt, wo der Benutzer den Schieberegler hinsichtlich den **Min**- und **Max**-Werten platziert hat. Jedes Steuerelement wird beim Eingeben sowohl auf dem Screen als auch in der Bearbeitungsleiste farblich hervorgehoben:
 

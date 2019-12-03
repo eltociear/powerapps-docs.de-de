@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df9ad0aead9681d3458d70f44f929c15c073f35a
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 31bf18342de1191dbd816093186fe33e31755232
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897807"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678739"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>Herstellen einer Verbindung mit einer Oracle-Datenbank aus PowerApps
-Nachdem Sie eine Verbindung mit einer Oracle-Datenbank hergestellt und eine App in PowerApps erstellt haben, können Sie Tabellen in der Oracle-Datenbank auflisten und Tabellenzeilen erstellen, lesen und aktualisieren. Die Verbindung mit der Oracle-Datenbank unterstützt die vollständige Delegierung von Filtern, Sortieren und weiteren Funktionen, jedoch keine Trigger und gespeicherten Prozeduren.
+Auflisten von Tabellen und erstellen, lesen, aktualisieren und Löschen von Tabellenzeilen in einer Oracle-Datenbank nach dem Erstellen einer Verbindung und Erstellen einer APP in powerapps. Die Verbindung mit der Oracle-Datenbank unterstützt die vollständige Delegierung von Filtern, Sortieren und weiteren Funktionen, jedoch keine Trigger und gespeicherten Prozeduren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 * Oracle 9 und höher
@@ -32,13 +32,13 @@ Nachdem Sie eine Verbindung mit einer Oracle-Datenbank hergestellt und eine App 
 ### <a name="install-an-on-premises-data-gateway"></a>Installation eines lokalen Datengateways
 Führen Sie zum Installieren eines Gateways die Schritte in [diesem Tutorial](../gateway-management.md) aus.
 
-Ein lokales Daten Gateway fungiert als Brücke und bietet eine schnelle und sichere Datenübertragung zwischen lokalen Daten (Daten, die nicht in der Cloud sind) und den Power BI-, Energie automatisierten, Logic apps und powerapps-Diensten. Sie können dasselbe Gateway für mehrere Dienste und mehrere Datenquellen verwenden. Weitere Informationen finden Sie unter [Grundlegendes zu Gateways](../gateway-reference.md).
+Ein lokales Daten Gateway fungiert als Brücke und bietet eine schnelle und sichere Datenübertragung zwischen lokalen Daten (Daten, die nicht in der Cloud gespeichert sind) und den Diensten Power BI, Energie automatisiert, Logic apps und Power apps. Sie können dasselbe Gateway für mehrere Dienste und mehrere Datenquellen verwenden. Weitere Informationen finden Sie unter [Grundlegendes zu Gateways](../gateway-reference.md).
 
 ### <a name="install-oracle-client"></a>Installieren des Oracle-Clients
 Installieren Sie auf dem Computer, auf dem sich das lokale Datengateway befindet, Oracle Data Access Components (ODAC) [64-Bit-ODAC 12c-Version 4 (12.1.0.2.4) für Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html). Andernfalls wird ein Fehler angezeigt, wenn Sie versuchen, die Verbindung zu erstellen oder zu verwenden, wie in der Liste bekannter Probleme beschrieben.
 
 ## <a name="create-an-app-from-a-table-in-an-oracle-database"></a>Erstellen einer App aus einer Tabelle in einer Oracle-Datenbank
-1. Klicken oder tippen Sie in PowerApps Studio im Menü **Datei** auf **Neu** (nahe dem linken Rand).
+1. Klicken oder tippen Sie in powerapps Studio im Menü **Datei** auf **neu** (am linken Rand).
    
    ![Neue Option](./media/connection-oracledb/new-app.png)
 2. Klicken oder tippen Sie auf den Pfeil unter **Mit eigenen Daten beginnen**.
@@ -74,7 +74,7 @@ Installieren Sie auf dem Computer, auf dem sich das lokale Datengateway befindet
     
     ![Neu](./media/connection-oracledb/connect-button.png)
 
-Es wird eine App erstellt, die drei Bildschirme enthält und in der Daten aus der von Ihnen ausgewählten Tabelle angezeigt werden:
+Powerapps erstellt eine APP mit drei Bildschirmen und zeigt die Daten aus der Tabelle an, die Sie ausgewählt haben:
 
 * **BrowseScreen1** – Dort werden alle Einträge in der Tabelle aufgelistet.
 * **DetailScreen1** – Bietet weitere Informationen über einen einzelnen Eintrag.

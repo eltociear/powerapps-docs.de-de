@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9b84a8ce89863d94b9f3e4ac390c88e194a2894
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7adf3391ef418a2b42861df63bc8396adc22f93a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540193"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679452"
 ---
 # <a name="choices-function-in-powerapps"></a>Funktion „Choices“ in PowerApps
 Gibt eine Tabelle mit den möglichen Werten für eine Suchspalte zurück.
@@ -53,7 +53,7 @@ Zu diesem Zeitpunkt können Sie Such Spalten nur mit SharePoint und Common Data 
 
     Es werden einige Entitäten wie z.B. **Accounts** erstellt.
 
-    **Hinweis**: Entitäts Namen sind in make.powerapps.com Singular und Plural in PowerApps Studio.
+    **Hinweis**: Entitäts Namen sind in make.powerapps.com und Plural in Power apps Studio Singular.
 
     ![Eine partielle Liste der Felder aus der Konto Entität in Common Data Service für apps, die darauf hinweist, dass "primärer Kontakt" ein Nachschlage Feld ist.](media/function-choices/entity-account.png)
 

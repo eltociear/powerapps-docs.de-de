@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec34399818120464a2ad2caca5834baa87d8a25c
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: c1b2e7dc4bb3f56983ddcdec39ecf7d37a283754
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899166"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674716"
 ---
-# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-power-automate-and-power-bi"></a>Einrichten von Listen für die Integration von SharePoint Online in powerapps, Energie Automatisierung und Power BI
+# <a name="set-up-lists-for-sharepoint-online-integration-with-power-apps-power-automate-and-power-bi"></a>Einrichten von Listen für die Integration von SharePoint Online in powerapps, Energie Automatisierung und Power BI
 > [!NOTE]
 > Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von powerapps, der Energie Automatisierung und der Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
@@ -40,7 +40,7 @@ Die erste Liste lautet **Project Requests** (Projektanforderungen). Dieser fügt
 | Approved (Genehmigt) |Eine Textzeile |Werte: „Ausstehend“, „Ja“, „Nein“ |
 
 > [!NOTE]
-> Wir verwenden zudem die Spalte **ID**. Diese wird von SharePoint generiert und ist standardmäßig ausgeblendet. Der Einfachheit halber verwenden wir Basisdatentypen, jedoch werden in einer realen App eventuell komplexere Typen verwendet, z.B. **Person oder Gruppe** für die Spalte **Requestor** (Anforderer). Informationen zu den von PowerApps unterstützten Datentypen finden Sie unter [Herstellen einer Verbindung zwischen Microsoft PowerApps und SharePoint](connections/connection-sharepoint-online.md#known-issues).
+> Wir verwenden zudem die Spalte **ID**. Diese wird von SharePoint generiert und ist standardmäßig ausgeblendet. Der Einfachheit halber verwenden wir Basisdatentypen, jedoch werden in einer realen App eventuell komplexere Typen verwendet, z.B. **Person oder Gruppe** für die Spalte **Requestor** (Anforderer). Informationen zu Datentypen, die von powerapps unterstützt werden, finden [Sie unter Herstellen einer Verbindung von Microsoft powerapps zu SharePoint](connections/connection-sharepoint-online.md#known-issues).
 
 Die zweite Liste lautet **Project Details** (Projektdetails). In dieser werden Details für alle genehmigten Projekte, z.B. der zugewiesene Projektmanager, nachverfolgt.
 
@@ -112,15 +112,15 @@ Wie in der Einführung zu dieser Tutorialreihe erwähnt, enthält das [Downloadp
 
 ### <a name="update-connections-for-the-sample-apps"></a>Aktualisieren von Verbindungen für die Beispiel-Apps
 
-1. Klicken oder tippen Sie in [PowerApps Studio](https://create.powerapps.com/studio/) im linken Bereich auf **Öffnen**. 
+1. Klicken oder tippen Sie in [powerapps Studio](https://create.powerapps.com/studio/)im linken Bereich auf **Öffnen** . 
 
 2. Klicken oder tippen Sie auf **Durchsuchen**, und öffnen Sie dann die heruntergeladene Datei **project-management-app.msapp**.
 
-3. Klicken oder tippen Sie auf **Zulassen**, damit SharePoint von PowerApps verwendet werden kann.
+3. Klicken oder tippen Sie auf **zulassen**, damit Power apps SharePoint verwenden können.
 
 4. Klicken oder tippen Sie im Menüband auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
-    ![PowerApps-Datenquellen](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
+    ![Datenquellen für Power apps](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
 5. Klicken oder tippen Sie im Bereich **Daten** auf die Auslassungspunkte ( **. . .** ) neben **Project Details** (Projektdetails), und klicken oder tippen Sie dann auf **Entfernen**.
    
     ![Datenquelle „Project Details“ (Projektdetails) entfernen](./media/sharepoint-scenario-setup/01-03-02-remove.png)
@@ -128,7 +128,7 @@ Wie in der Einführung zu dieser Tutorialreihe erwähnt, enthält das [Downloadp
    
     ![Datenquelle hinzufügen](./media/sharepoint-scenario-setup/01-03-03-add.png)
 
-7. Je nachdem, ob von PowerApps bereits automatisch eine SharePoint-Verbindung hergestellt wurde, haben Sie zwei Möglichkeiten, eine Verbindung mit der Liste herzustellen: 
+7. Wir zeigen Ihnen zwei Möglichkeiten zum Herstellen einer Verbindung mit der Liste, je nachdem, ob Power Apps bereits eine SharePoint-Verbindung für Sie hergestellt haben: 
 
     * Wenn bereits eine SharePoint-Verbindung angezeigt wird, klicken oder tippen Sie auf die Verbindung.
 

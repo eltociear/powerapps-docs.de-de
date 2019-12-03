@@ -13,41 +13,40 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 570d9430d7dbcc5e8d41b7128060677fe1ff45a1
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3970c5181939f8ab6e8bd1ad4f396595d7083ff3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993065"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679567"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Testen Ihrer Canvas-App durch Kunden auf AppSource
 
-Erstellen Sie Ihre Canvas-Apps in PowerApps mit Leidenschaft? Möchten Sie eine Canvas-App für Kunden freigeben? [AppSource.com](https://appsource.microsoft.com) unterstützt Lösungen für PowerApps-Testversionen, um Ihnen eine Möglichkeit zu geben, Apps für Kunden freizugeben und Leads für Ihr Unternehmen zu generieren.
+Sind Sie begeistert, Canvas-apps in powerapps zu entwickeln? Möchten Sie eine Canvas-App für Kunden freigeben? [AppSource.com](https://appsource.microsoft.com) unterstützt powerapps-Test Laufwerk Lösungen als Möglichkeit zum Freigeben von Apps für Kunden und Generieren von Leads für Ihr Unternehmen.
 
 ## <a name="what-is-a-test-drive-solution"></a>Was ist eine Test Drive-Projektmappe?
 
-Eine Test Drive-Projektmappe ermöglicht es Ihren Kunden, eine echte App auszuprobieren, ohne sich für einen PowerApps-Plan zu registrieren oder Anwendungen zu installieren. Kunden melden sich einfach mithilfe ihres AAD-Kontos (Azure Active Directory) bei AppSource.com an und führen die App in einem Webbrowser aus. Ohne Test Drive können Ihre Kunden nur von Ihrer App lesen oder ein Video anschauen, das sie beschreibt. Mit Test Drive erhalten Kunden eine bessere Vorstellung davon, was Ihre Lösung ist und über welche Funktionalität Ihre App verfügt. Und sie machen die Erfahrung, die App tatsächlich zu verwenden. Kunden können dabei nicht „unter die Haube sehen“, um herauszufinden, wir Ihre App erstellt wurde, daher ist Ihr geistiges Eigentum geschützt. Wir sammeln und teilen Leadinformationen für Benutzer, die Ihre Test Drive-App starten, um Sie beim Ausbau Ihres Geschäfts zu unterstützen.
+Eine Test Drive-Lösung ermöglicht es Ihren Kunden, eine echte App auszuprobieren, ohne sich für einen powerapps-Plan zu registrieren oder Anwendungen zu installieren. Kunden melden sich einfach mithilfe ihres AAD-Kontos (Azure Active Directory) bei AppSource.com an und führen die App in einem Webbrowser aus. Ohne Test Drive können Ihre Kunden nur von Ihrer App lesen oder ein Video anschauen, das sie beschreibt. Mit Test Drive erhalten Kunden eine bessere Vorstellung davon, was Ihre Lösung ist und über welche Funktionalität Ihre App verfügt. Und sie machen die Erfahrung, die App tatsächlich zu verwenden. Kunden können dabei nicht „unter die Haube sehen“, um herauszufinden, wir Ihre App erstellt wurde, daher ist Ihr geistiges Eigentum geschützt. Wir sammeln und teilen Leadinformationen für Benutzer, die Ihre Test Drive-App starten, um Sie beim Ausbau Ihres Geschäfts zu unterstützen.
 
 Hier ist ein Beispiel für eine [App-Auflistung](https://go.microsoft.com/fwlink/?linkid=848867) auf AppSource.com:
 
 ![AppSource-Beispielauflistung ](./media/dev-appsource-test-drive/sample-app-source-listing.png)
 
-Durch Auswählen des Links **Kostenlose Testversion** (Free Trial) aus der App-Auflistung oben wird die zugeordnete PowerApps Test Drive-App direkt im Browser des Benutzers gestartet:
+Wenn Sie den Link " **Kostenlose Testversion** " aus der obigen App-Auflistung auswählen, wird die zugehörige powerapps-Test Laufwerk-App direkt im Browser des Benutzers
 
 ![Webplayer für Beispiel-App](./media/dev-appsource-test-drive/sample-app-web-player.png)
 
 ## <a name="how-do-i-build-a-test-drive-solution"></a>Wie wird eine Test Drive-Projektmappe erstellt?
-Das Erstellen einer App für eine Test Drive-Projektmappe unterscheidet sich nicht vom Erstellen anderer Apps in PowerApps, Sie verwenden lediglich eingebettete Daten anstelle von externen Datenverbindungen. Die Verwendung von eingebetteten Daten setzt die Schwelle für die Bereitstellung der App beim Kunden herab, sodass sich für den Kunden ein reibungsloser Testablauf ergibt. Die vollständige Lösung, die schließlich an Kunden verteilt wird, beinhaltet normalerweise Datenverbindungen, aber für eine Test Drive-Projektmappe funktionieren eingebettete Daten wirklich gut.
+Das Entwickeln einer APP für eine Test Drive-Lösung ist genauso wie das Entwickeln einer beliebigen app in Power apps, aber Sie verwenden eingebettete Daten anstelle externer Datenverbindungen. Durch die Verwendung eingebetteter Daten wird die Barriere der Bereitstellung der APP für Ihren Kunden reduziert, sodass es keine Reibung gibt, um sie auszuprobieren. Die vollständige Lösung, die Sie letztendlich an Kunden verteilen, umfasst normalerweise Datenverbindungen, aber eingebettete Daten funktionieren gut für eine Test Drive-Lösung.
 
-PowerApps unterstützt von Haus aus das Erstellen von Apps mit eingebetteten Daten, sodass Sie lediglich Beispieldaten benötigen, die Ihre App verwenden kann. Diese Daten sollten in einer Excel-Datei in Form einer oder mehrerer Tabellen vorliegen. Sie ziehen die Daten dann in PowerApps aus den Excel-Tabellen in die App und arbeiten dort mit ihnen statt mit einer externen Verbindung. Der aus drei Schritten bestehende Prozess unten zeigt Ihnen, wie Daten in die App importiert und darin verwendet werden.
+Powerapps unterstützt das Entwickeln von apps mit eingebetteten Daten, sodass Sie nur Beispiel Daten benötigen, damit Ihre APP verwendet werden kann. Diese Daten sollten in einer Excel-Datei in Form einer oder mehrerer Tabellen vorliegen. In powerapps rufen Sie dann die Daten aus den Excel-Tabellen in die APP auf und arbeiten dort, anstatt über eine externe Verbindung. Der aus drei Schritten bestehende Prozess unten zeigt Ihnen, wie Daten in die App importiert und darin verwendet werden.
 
-### <a name="step-1-import-data-into-the-app"></a>Schritt 1: Importieren von Daten in die APP
-Angenommen, Sie verfügen über eine Excel-Datei mit zwei Tabellen: **Siteinspector** und **sitephotos**.
+### <a name="step-1-import-data-into-the-app"></a>Schritt 1: Importieren von Daten in die App
+Angenommen, Sie besitzen eine Excel-Datei mit zwei Tabellen: **SiteInspector** und **SitePhotos**.
 
 ![Zu importierende Excel-Tabellen](./media/dev-appsource-test-drive/excel-file.png)
 
-Importieren Sie diese zwei Tabellen mithilfe der Option **Der App statische Daten hinzufügen** in PowerApps.
+Importieren Sie diese beiden Tabellen in powerapps, indem Sie die Option **statische Daten zu Ihrer APP hinzufügen**verwenden.
 
 ![Hinzufügen von statischen Daten zur App](./media/dev-appsource-test-drive/static-data.png)
 
@@ -55,14 +54,14 @@ Die Tabellen sind jetzt als Datenquellen in Ihrer App verfügbar.
 
 ![Excel-Tabellen als importierte Datenquellen](./media/dev-appsource-test-drive/data-sources.png)
 
-### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>Schritt 2: Behandeln von schreibgeschützten und Lese-/Schreib-Szenarien
+### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>Schritt 2: Behandlung von Szenarien mit Schreibschutz und mit Lese-/Schreibzugriff
 Die importierten Daten sind *statisch* und daher schreibgeschützt. Wenn Ihre App schreibgeschützt ist (sie dem Benutzer also Daten nur anzeigt), verweisen Sie direkt in der App auf die Tabellen. Wenn Sie beispielsweise auf das Feld **Title** in der Tabelle **SiteInspector** zugreifen möchten, verwenden Sie **SiteInspector.Title** in Ihrer Formel.
 
-Wenn für Ihre Daten Lese-/Schreibzugriff besteht, ziehen Sie die Daten aus den einzelnen Tabellen zuerst in eine *Sammlung*, die eine Tabellendatenstruktur in PowerApps darstellt. Arbeiten Sie dann mit der Sammlung anstelle der Tabelle. So ziehen Sie Daten aus den Tabellen **SiteInspector** und **SitePhotos** in die Sammlungen **SiteInspectorCollect** und **SitePhotosCollect**:
+Wenn Ihre APP Lese-/Schreibzugriff hat, rufen Sie zuerst die Daten aus jeder Tabelle in eine Auflistung auf, bei der *es sich um*eine tabellarische Datenstruktur in Power apps handelt. Arbeiten Sie dann mit der Sammlung anstelle der Tabelle. So ziehen Sie Daten aus den Tabellen **SiteInspector** und **SitePhotos** in die Sammlungen **SiteInspectorCollect** und **SitePhotosCollect**:
 
-```powerapps-comma
-ClearCollect( SiteInspectorCollect; SiteInspector );; 
-ClearCollect( SitePhotosCollect; SitePhotos )
+```powerapps-dot
+ClearCollect( SiteInspectorCollect, SiteInspector ); 
+ClearCollect( SitePhotosCollect, SitePhotos )
 ```
 
 Die Formel leert beide Sammlungen und sammelt anschließend die Daten aus den einzelnen Tabellen in der entsprechenden Sammlung:
@@ -73,17 +72,17 @@ Die Formel leert beide Sammlungen und sammelt anschließend die Daten aus den ei
 
 Wenn Sie jetzt auf das Feld **Title** zugreifen möchten, verwenden Sie in Ihrer Formel **SiteInspectorCollect.Title**.
 
-### <a name="step-3-add-update-and-delete-data-in-your-app"></a>Schritt 3: Hinzufügen, aktualisieren und Löschen von Daten in Ihrer APP
+### <a name="step-3-add-update-and-delete-data-in-your-app"></a>Schritt 3: Hinzufügen, Aktualisieren und Löschen von Daten in Ihrer App
 Sie haben gesehen, wie Daten direkt und aus einer Sammlung gelesen werden; jetzt möchten wir Ihnen zeigen, wie Sie Daten in einer Sammlung hinzufügen, aktualisieren und löschen:
 
 **Um einer Sammlung eine Zeile hinzuzufügen**, verwenden Sie [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```powerapps-comma
-Collect( SiteInspectorCollect;
+```powerapps-dot
+Collect( SiteInspectorCollect,
     {
-        ID: Value( Max( SiteInspectorCollect; ID ) + 1 );
-        Title: TitleText.Text;
-        SubTitle: SubTitleText.Text;
+        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
+        Title: TitleText.Text,
+        SubTitle: SubTitleText.Text,
         Description: DescriptionText.Text
     }
 )
@@ -91,12 +90,12 @@ Collect( SiteInspectorCollect;
 
 **Um eine Zeile in einer Sammlung zu aktualisieren** , verwenden Sie [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```powerapps-comma
-UpdateIf( SiteInspectorCollect;
-    ID = record.ID;
+```powerapps-dot
+UpdateIf( SiteInspectorCollect,
+    ID = record.ID,
     {
-        Title: TitleEditText.Text;
-        SubTitle: SubTitleEditText.Text;
+        Title: TitleEditText.Text,
+        SubTitle: SubTitleEditText.Text,
         Description: DescriptionEditText.Text
     }
 )
@@ -104,8 +103,8 @@ UpdateIf( SiteInspectorCollect;
 
 **Um eine Zeile aus einer Sammlung zu löschen**, verwenden Sie [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```powerapps-comma
-RemoveIf( SiteInspectorCollect; ID = record.ID )
+```powerapps-dot
+RemoveIf( SiteInspectorCollect, ID = record.ID )
 ```
 
 > [!NOTE]

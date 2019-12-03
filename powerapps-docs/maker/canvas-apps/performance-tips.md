@@ -1,6 +1,6 @@
 ---
 title: Optimieren der Leistung von Canvas-Apps | Microsoft-Dokumentation
-description: Befolgen Sie die Best Practices in diesem Thema, um die Leistung von Canvas-Apps zu steigern, die Sie in PowerApps erstellen.
+description: Befolgen Sie die bewährten Methoden in diesem Thema, um die Leistung von Canvas-apps, die Sie in powerapps erstellen, zu verbessern.
 author: yingchin
 manager: kvivek
 ms.service: powerapps
@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9943678815b53df048ad197e3cdcbd56f4070fa3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0bf2502d22adb90993f5f7ebb8e05c72f51215a5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995783"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675443"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimieren der Leistung von Canvas-Apps in PowerApps
-Microsoft arbeitet beständig daran, die Leistung aller Apps zu verbessern, die auf der PowerApps-Plattform ausgeführt werden. Sie können aber die Best Practices in diesem Thema befolgen, um die Leistung der von Ihnen erstellten Apps noch weiter zu steigern.
+Microsoft arbeitet hart daran, die Leistung aller apps zu verbessern, die auf der Power Apps-Plattform ausgeführt werden. Sie können aber die Best Practices in diesem Thema befolgen, um die Leistung der von Ihnen erstellten Apps noch weiter zu steigern.
 
 Wenn ein Benutzer eine App öffnet, durchläuft sie folgende Ausführungsphasen, bevor eine Benutzeroberfläche angezeigt wird: 
 1. **Authentifizierung des Benutzers**: Der Benutzer wird, sofern er diese App zuvor noch nie geöffnet hatte, aufgefordert, sich mit den Anmeldeinformationen anzumelden, die für die Verbindungen der App erforderlich sind. Wenn dieser Benutzer die App erneut öffnet, wird er möglicherweise erneut zur Angabe dieser Informationen aufgefordert, je nach Sicherheitsrichtlinien der Organisation. 
-2. **Abrufen der Metadaten**: Die Metadaten werden abgerufen, z.B. die Version der PowerApps-Plattform, auf der die App ausgeführt wird, und die Quellen, aus denen Daten abgerufen werden müssen. 
+2. Ruft Metadaten ab: Ruft Metadaten ab, wie z. b. die Version der Power Apps-Plattform, auf der die APP **ausgeführt wird** , und die Quellen, aus denen Sie Daten abrufen muss. 
 3. **Initialisieren der App**: Tasks, die in der **OnStart**-Eigenschaft angegeben sind, werden ausgeführt. 
 4. **Rendern der Bildschirme**: Der erste Bildschirm, der das Auffüllen der App mit Daten steuert, wird gerendert. Wenn der Benutzer weitere Bildschirme öffnet, rendert die App diese mithilfe des gleichen Prozesses.  
 
@@ -35,7 +35,7 @@ Wenn ein Benutzer eine App öffnet, durchläuft sie folgende Ausführungsphasen,
 Sie können die Leistung Ihrer App schnell messen, indem Sie während der Ausführung der App die Entwicklertools in [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) oder [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) aktivieren. Es dauert mehr als 15 Sekunden, bis Ihre APP Daten zurückgibt, wenn Sie häufig Daten von mehr als 30 Datenquellen, z. b. Common Data Service, Azure SQL, SharePoint und Excel, auf onedrive anfordert.  
 
 ## <a name="limit-the-number-of-controls"></a>Beschränken der Anzahl von Steuerelementen 
-**Fügen Sie einer App nicht mehr als 500 Steuerelemente hinzu**. PowerApps generiert ein HTML-DOM-Element für jedes Steuerelement, das gerendert werden muss. Je mehr Steuerelemente Sie hinzufügen, desto mehr Zeit benötigt PowerApps zum Generieren. 
+**Fügen Sie einer App nicht mehr als 500 Steuerelemente hinzu**. Powerapps generiert ein HTML-DOM zum Rendering jedes Steuer Elements. Welche weiteren Steuerelemente Sie hinzufügen, desto mehr Generierungs Zeit benötigt powerapps. 
 
 Sie können in einigen Fällen das gleiche Ergebnis erzielen und für einen schnelleren App-Start sorgen, wenn Sie anstelle von einzelnen Steuerelementen einen Katalog verwenden. Darüber hinaus sollten Sie die Anzahl von Steuerelementtypen im gleichen Bildschirm reduzieren. Einige Steuerelemente (z.B. PDF-Viewer, Datentabellen und Kombinationsfelder) benötigen große Ausführungsskripts, und es dauert länger, sie zu rendern. 
 
@@ -107,7 +107,7 @@ Aktivieren Sie das [experimentelle Feature](working-with-experimental.md) für d
 Verwenden Sie Datenquellen und Formeln, die delegiert werden können, um die Leistungsfähigkeit Ihrer Apps zu sichern, dafür zu sorgen, dass Benutzer auf alle benötigten Informationen zugreifen können, und die maximale Anzahl von 2000 Datenzeilen für nicht delegierbare Abfragen nicht zu überschreiten. Bei Datensatzspalten, in denen Benutzer Daten suchen, filtern oder sortieren können, sollten die Indizes gemäß den Beschreibungen unter [SQL Server](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017) und [SharePoint](https://support.office.com/article/Add-an-index-to-a-SharePoint-column-f3f00554-b7dc-44d1-a2ed-d477eac463b0) entworfen werden.  
 
 ## <a name="republish-apps-regularly"></a>Regelmäßiges erneutes Veröffentlichen von Apps
-Veröffentlichen Sie Ihre Apps neu, um Leistungssteigerungen zu erzielen und von weiteren Features der PowerApps-Plattform zu profitieren. Informationen dazu finden Sie im Blogbeitrag [Republish your apps](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/).
+[Veröffentlichen Sie Ihre apps](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/) (Blogbeitrag) erneut, um Leistungsverbesserungen und zusätzliche Features von der Power Apps-Plattform zu erhalten.
 
 ## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>Vermeiden Sie die Wiederholung derselben Formel an mehreren Stellen.
 Wenn mehrere Eigenschaften dieselbe Formel ausführen (insbesondere, wenn Sie Komplex ist), sollten Sie diese einmal festlegen und dann auf die Ausgabe der ersten Eigenschaft in nachfolgenden Eigenschaften verweisen. Legen Sie z. b. die **Display Mode** -Eigenschaft der Steuerelemente A, B, C, D und E nicht auf dieselbe komplexe Formel fest. Legen Sie stattdessen die **DisplayMode** -Eigenschaft der komplexen Formel fest, legen Sie die **Display Mode** -Eigenschaft von B auf das Ergebnis einer **DisplayMode** -Eigenschaft von a fest usw. für C, D und E.

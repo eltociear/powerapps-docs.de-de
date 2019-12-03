@@ -13,27 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b03f60173ea09160677bd02adf8a91aae02c272d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1d98f01920dbcbf960b1e2bb21159586318e0386
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985668"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679590"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Grundlagen der Delegierung in einer Canvas-App
-Powerapps enthält eine Reihe leistungsfähiger Funktionen zum Filtern, Sortieren und Strukturieren von Tabellen von Daten in einer Canvas-App: **[Filter](functions/function-filter-lookup.md)** -, **[Sortier](functions/function-sort.md)** -und **[AddColumns](functions/function-table-shaping.md)** -Funktionen, um nur einige zu benennen. Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen. Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.
+Powerapps enthält eine Reihe leistungsfähiger Funktionen zum Filtern, Sortieren und Strukturieren von Tabellen von Daten in einer Canvas-App: die Funktionen " **[Filter](functions/function-filter-lookup.md)** ", " **[Sort](functions/function-sort.md)** " und " **[AddColumns](functions/function-table-shaping.md)** ", um nur ein paar zu benennen. Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen. Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.
 
 Der Schlüssel zur Erstellung von effizienten Apps besteht darin, die Datenmenge gering zu halten, die auf Ihr Gerät übertragen werden muss. Unter Umständen benötigen Sie aus Millionen von Datensätzen nur eine Handvoll von Datensätzen, oder ein einzelner Aggregatwert kann für Tausende von Datensätzen stehen. Vielleicht ist es auch möglich, nur den ersten Satz mit Datensätzen abzurufen, und den Rest erst dann bereitzustellen, wenn er vom Benutzer angefordert wird. Wenn zielgerichtet vorgegangen wird, können die Verarbeitungsleistung, der Arbeitsspeicher und die Netzwerkbandbreite, die für die App erforderlich sind, deutlich gesenkt werden. Dies führt zu kürzeren Reaktionszeiten für Ihre Benutzer – sogar auf Smartphones, die über ein Mobilfunknetz verbunden sind. 
 
-Mit der *Delegierung* wird erreicht, dass die Ausdrucksstärke von PowerApps-Formeln genutzt werden kann und gleichzeitig möglichst wenig Daten über das Netzwerk übertragen werden müssen. Dies bedeutet, dass PowerApps die Verarbeitung von Daten an die Datenquelle delegieren, anstatt die Daten zur lokalen Verarbeitung in die App zu verschieben.
+Die *Delegierung* von powerapps-Formeln erfüllt die Notwendigkeit, die Daten zu minimieren, die über das Netzwerk verschoben werden. In Kürze delegiert Power Apps die Verarbeitung von Daten an die Datenquelle, anstatt die Daten zur lokalen Verarbeitung in die APP zu verschieben.
 
-Die Schwierigkeit hierbei ist, dass nicht alle Vorgänge, die in einer PowerApps-Formel ausgedrückt werden können, an jede Datenquelle delegiert werden können. Dies ist der Grund für diesen Artikel. Die PowerApps-Sprache ist an die Formelsprache von Excel angelehnt und verfügt über umfassenden und sofortigen Zugriff auf eine vollständige Arbeitsmappe im Arbeitsspeicher, die viele verschiedene numerische Funktionen und Funktionen für die Textbearbeitung enthält. Daher ist die PowerApps-Sprache relativ komplex und kann von den meisten Datenquellen nicht unterstützt werden, darunter auch leistungsstarke Datenbank-Engines wie SQL Server.
+Wenn dies kompliziert wird und der Grund für diesen Artikel ist, liegt es daran, dass nicht alles, was in einer powerapps-Formel ausgedrückt werden kann, an jede Datenquelle delegiert werden kann. Die powerapps-Sprache imitiert die Formelsprache von Excel, die mit vollständigem und sofortigem Zugriff auf eine vollständige Arbeitsmappe im Arbeitsspeicher entwickelt wurde und über eine Vielzahl von numerischen und Text Bearbeitungsfunktionen verfügt. Folglich ist die Sprache von Power apps weitaus umfangreicher als die meisten Datenquellen unterstützen können, einschließlich leistungsfähiger Daten Bank Module wie SQL Server.
 
 **Zum Verwenden von großen Datasets ist die Nutzung von Datenquellen und Formeln erforderlich, für die eine Delegierung möglich ist.** Nur auf diese Weise erzielen Sie für Ihre App eine gute Leistung und können sicherstellen, dass die Benutzer auf alle benötigten Informationen zugreifen können. Achten Sie auf Delegierungswarnungen, die anzeigen, an welcher Stelle keine Delegierung möglich ist. Wenn Sie mit kleinen Datasets arbeiten (weniger als 500 Datensätze), können Sie eine beliebige Datenquelle und Formel verwenden, weil die App Daten lokal verarbeiten kann, falls das Delegieren der Formel nicht möglich ist. 
 
 > [!NOTE]
-> Delegierungswarnungen wurden zwar in der Vergangenheit in PowerApps als Vorschläge mit einem blauen Punkt markiert, aber Delegierungsempfehlungen werden mittlerweile als Warnungen neu klassifiziert. Wenn die Daten in Ihrer Datenquelle mehr als 500 Datensätze umfassen und eine Funktion nicht delegiert werden kann, kann PowerApps möglicherweise nicht alle Daten abrufen, und Ihre App erhält ggf. falsche Ergebnisse. Mithilfe von Delegierungswarnungen können Sie Ihre App so verwalten, dass die Ergebnisse richtig sind.
+> Delegierungs Warnungen wurden zuvor in powerapps als "Blue dot"-Vorschläge gekennzeichnet, aber Delegierungs Vorschläge wurden seit der erneuten Klassifizierung als Warnungen erneut klassifiziert. Wenn die Daten in der Datenquelle 500 Datensätze überschreiten und eine Funktion nicht delegiert werden kann, können Power Apps möglicherweise nicht alle Daten abrufen, und Ihre APP weist möglicherweise falsche Ergebnisse auf. Mithilfe von Delegierungswarnungen können Sie Ihre App so verwalten, dass die Ergebnisse richtig sind.
 
 ## <a name="delegable-data-sources"></a>Delegierbare Datenquellen
 Die Delegierung wird nur für bestimmte tabellarische Datenquellen unterstützt. Wenn eine Datenquelle die Delegierung unterstützt, werden von der zugehörigen [Connector-Dokumentation](https://docs.microsoft.com/connectors/) unterstützt. Diese tabellarischen Datenquellen sind z. b. die beliebtesten und unterstützen die Delegierung:
@@ -42,7 +41,7 @@ Die Delegierung wird nur für bestimmte tabellarische Datenquellen unterstützt.
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
-Importierte Excel-Arbeitsmappen (unter Verwendung der Datenquelle **statische Daten zu Ihrer APP hinzufügen** ), Sammlungen und in Kontext Variablen gespeicherte Tabellen erfordern keine Delegierung. All diese Daten befinden sich bereits im Arbeitsspeicher, und die gesamte PowerApps-Sprache kann angewendet werden.
+Importierte Excel-Arbeitsmappen (unter Verwendung der Datenquelle **statische Daten zu Ihrer APP hinzufügen** ), Sammlungen und in Kontext Variablen gespeicherte Tabellen erfordern keine Delegierung. Alle diese Daten befinden sich bereits im Arbeitsspeicher, und die vollständige powerapps-Sprache kann angewendet werden.
 
 ## <a name="delegable-functions"></a>Delegierbare Funktionen
 Der nächste Schritt besteht darin, nur diejenigen Formeln zu verwenden, die delegiert werden können. Hier sind die Formelelemente angegeben, die delegiert werden können. Allerdings ist jede Datenquelle anders, und nicht alle unterstützen alle Elemente. Überprüfen Sie Ihre Formel auf Delegierungswarnungen.
@@ -71,9 +70,9 @@ In der obigen Liste werden die folgenden wichtigen Elemente nicht aufgeführt:
 * **[*](functions/operators.md)** , **[/](functions/operators.md)** , **[Mod](functions/function-mod.md)**
 * **[Concatenate](functions/function-concatenate.md)** (einschließlich **[&](functions/operators.md)** )
 * **[ExactIn](functions/operators.md)**
-* Funktionen zur Zeichen folgen Bearbeitung: **[Unten](functions/function-lower-upper-proper.md)** , **[oben](functions/function-lower-upper-proper.md)** , **[Links](functions/function-left-mid-right.md)** , **[Mitte](functions/function-left-mid-right.md)** , **[len](functions/function-left-mid-right.md)** ,...
-* Signalen **[Speicherort](functions/signals.md)** , **[Beschleunigung](functions/signals.md)** , **[Kompass](functions/signals.md)** ,...
-* Volatile: **[Rand](functions/function-rand.md)** ...
+* Funktionen für die Zeichenfolgenbearbeitung: **[Lower](functions/function-lower-upper-proper.md)** , **[Upper](functions/function-lower-upper-proper.md)** , **[Left](functions/function-left-mid-right.md)** , **[Mid](functions/function-left-mid-right.md)** , **[Len](functions/function-left-mid-right.md)** , ...
+* Signale: **[Location](functions/signals.md)** , **[Acceleration](functions/signals.md)** , **[Compass](functions/signals.md)** , ...
+* Volatile: **[Rand](functions/function-rand.md)** ,...
 * [Sammlungen](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>Sortierfunktionen
@@ -94,10 +93,10 @@ Andere Aggregatfunktionen wie **[StdevP](functions/function-aggregates.md)** und
 
 Wie in diesem Beispiel verwenden die Hersteller häufig **AddColumns** und **Lookup** , um Informationen aus einer Tabelle in eine andere zusammenzuführen, die häufig als Join in der Datenbanksprache bezeichnet wird:
 
-```powerapps-comma
-AddColumns( Products; 
-    "Supplier Name"; 
-    LookUp( Suppliers; Suppliers.ID = Product.SupplierID ).Name 
+```powerapps-dot
+AddColumns( Products, 
+    "Supplier Name", 
+    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
 )
 ```
 
@@ -116,9 +115,9 @@ Für alle anderen Funktionen einschließlich der Folgenden wird die Delegierung 
 * **[GroupBy](functions/function-groupby.md)** , **[Ungroup](functions/function-groupby.md)**
 
 ## <a name="non-delegable-limits"></a>Grenzwerte für Fälle, in denen keine Delegierung möglich ist
-Formeln, die nicht delegiert werden können, werden lokal verarbeitet. Auf diese Weise kann die gesamte Bandbreite der PowerApps-Formelsprache genutzt werden. Dies hat aber einen Preis: Alle Daten müssen zuerst auf das Gerät übertragen werden, sodass unter Umständen eine größere Datenmenge über das Netzwerk abgerufen werden muss. Dies kann eine Weile dauern, sodass der Eindruck entsteht, dass Ihre App langsam ist oder hängt.
+Formeln, die nicht delegiert werden können, werden lokal verarbeitet. Dadurch kann die volle Bandbreite der Formelsprache von powerapps verwendet werden. Dies hat aber einen Preis: Alle Daten müssen zuerst auf das Gerät übertragen werden, sodass unter Umständen eine größere Datenmenge über das Netzwerk abgerufen werden muss. Dies kann eine Weile dauern, sodass der Eindruck entsteht, dass Ihre App langsam ist oder hängt.
 
-Um dies zu vermeiden, erzwingt powerapps ein Limit für die Datenmenge, die lokal verarbeitet werden kann: Standardmäßig 500-Datensätze.  Wir haben diesen Wert gewählt, damit Sie über vollständigen Zugriff auf kleine Datasets verfügen und die Nutzung Ihrer großen Datasets optimieren können, indem Teilergebnisse angezeigt werden.
+Um dies zu vermeiden, erzwingt Power apps einen Grenzwert für die Datenmenge, die lokal verarbeitet werden kann: standardmäßig 500 Datensätze.  Wir haben diesen Wert gewählt, damit Sie über vollständigen Zugriff auf kleine Datasets verfügen und die Nutzung Ihrer großen Datasets optimieren können, indem Teilergebnisse angezeigt werden.
 
 Bei der Nutzung dieser Option sollten Sie aber mit Bedacht vorgehen, da sie für Benutzer verwirrend sein kann. Angenommen, Sie verwenden die Funktion **Filter** mit einer Auswahlformel, die nicht delegiert werden kann, für eine Datenquelle mit einer Millionen Datensätzen. Da der Filtervorgang auf lokaler Ebene durchgeführt wird, werden nur die ersten 500 Datensätze überprüft. Wenn der gewünschte Datensatz der 501. oder 500.001. Datensatz ist, wird er nicht berücksichtigt und nicht von der Funktion **Filter** zurückgegeben.
 
@@ -135,7 +134,7 @@ In einigen Fällen ist Ihnen möglicherweise bekannt, dass für die Anforderunge
 Wenn Sie sicherstellen möchten, dass Ihre Apps auf große Datasets skaliert werden kann, müssen Sie für diese Einstellung den Wert auf 1 reduzieren. Für nicht delegierbare Elemente wird dann genau ein Datensatz zurückgegeben, der beim Testen der App leicht auffindbar sein sollte. Dadurch können unerwartete Ergebnisse vermieden werden, wenn eine Proof of Concept-App in eine Produktionsumgebung überführt werden soll.
 
 ## <a name="delegation-warnings"></a>Delegierungswarnungen
-Um einfacher unterscheiden zu können, welche Elemente delegiert werden, zeigt PowerApps Warnungen in Form von gelben Dreiecken an, wenn Sie eine Formel erstellen, die nicht delegiert werden kann.
+Damit Sie leichter erkennen können, was nicht delegiert wird, bietet Power apps eine Warnung (gelbes Dreieck), wenn Sie eine Formel erstellen, die etwas enthält, das nicht delegiert werden kann.
 
 Delegierungswarnungen werden nur für Formeln angezeigt, die für delegierbare Datenquellen verwendet werden. Wenn keine Warnung angezeigt wird und Sie der Meinung sind, dass Ihre Formal nicht richtig delegiert wird, können Sie den Typ der Datenquelle anhand der obigen Liste mit den [delegierbaren Datenquellen](delegation-overview.md#delegable-data-sources) überprüfen.
 

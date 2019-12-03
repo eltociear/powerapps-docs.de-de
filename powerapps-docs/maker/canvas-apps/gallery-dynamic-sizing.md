@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb051ffcdfed2aef2cb635d8dd2bf2bcfb44176e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 712d7ed6166b2ea655a086b1f9a4416af1e8065f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990328"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676575"
 ---
-# <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>Anzeigen von Elementen unterschiedlicher Höhe in einem PowerApps-Katalog
+# <a name="show-items-of-different-heights-in-a-power-apps-gallery"></a>Anzeigen von Elementen unterschiedlicher Höhe in einem Power apps-Katalog
 Wenn verschiedene Elemente in einem Dataset unterschiedliche Mengen von Daten in demselben Feld enthalten, können Sie Elemente, die mehr Daten enthalten, vollständig anzeigen, ohne nach Elementen, die weniger Daten enthalten, einen leeren Bereich hinzuzufügen. Fügen Sie einen Katalog mit **flexibler Höhe** hinzu, und konfigurieren Sie ihn. Dies bietet Ihnen folgende Möglichkeiten:
 
 * Konfigurieren von **Label**-Steuerelementen (Bezeichnung), um eine Anpassung an die Größe des Inhalts zu ermöglichen.
@@ -41,7 +41,7 @@ Wenn Sie noch niemals einem Katalog Steuerelemente hinzugefügt haben, führen S
 
 2. Laden Sie die Excel-Datei in ein Cloudspeicherkonto hoch, z.B. in OneDrive, Dropbox oder Google Drive.
 
-3. Klicken oder tippen Sie in PowerApps Studio im Menü **Datei** auf **Neu**.
+3. Klicken oder tippen Sie in powerapps Studio im Menü **Datei** auf **neu** .
 
 4. Klicken oder tippen Sie in der Kachel **Leere App** auf **Telefonlayout**.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 636e9f853ada9816e87232348e5ce7ef6df2cedc
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 2482e5b4cbbcaaf168320a8cbfe3c31f486bf891
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898325"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674312"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>Starten eines Flows in einer Canvas-App
 
@@ -48,7 +48,7 @@ Sie können die Energie Automatisierung verwenden, um Logik zu erstellen, die ei
 
     ![Erstellen eines powerapps-Auslösers](./media/using-logic-flows/set-trigger.png)
     
-1. Wählen Sie auf der nächsten Seite das powerapps-Symbol erneut aus, und wählen Sie dann **neuer Schritt**aus.
+1. Wählen Sie auf der nächsten Seite das Symbol "powerapps" erneut aus, und wählen Sie dann **neuer Schritt**aus.
 
 1. Geben Sie im Feld mit den **Connectors und Aktionen suchen**eine Aktion für den Flow an, wie in diesem Beispiel:
 
@@ -69,7 +69,7 @@ Sie können die Energie Automatisierung verwenden, um Logik zu erstellen, die ei
 
    1. Wählen Sie das Eingabefeld für ein Feld in der Liste (z. b. **Titel**) aus, wählen Sie im Bereich dynamischer Inhalt die Option **Weitere** anzeigen aus, und wählen Sie dann **in powerapps Fragen**aus. 
 
-       ![Hinzufügen von „In PowerApps fragen“ zum Feld „Titel“](./media/using-logic-flows/ask-in-powerapps.png)
+       ![Hinzufügen des Parameters "Ask in Power Apps" zum Titelfeld](./media/using-logic-flows/ask-in-powerapps.png)
 
 1. optionale Geben Sie einen oder mehrere zusätzliche Schritte an, z. b. das Senden einer Genehmigungs-e-Mail an eine von Ihnen angegebene Adresse oder die Erstellung eines verknüpften Eintrags in einer anderen
 
@@ -91,7 +91,7 @@ Sie können die Energie Automatisierung verwenden, um Logik zu erstellen, die ei
 1. Wählen Sie im Bereich, der angezeigt wird, den Flow aus, den Sie im vorherigen Verfahren erstellt haben.
 
     > [!NOTE]
-   > Wenn der von Ihnen erstellte Flow nicht verfügbar ist, vergewissern Sie sich, dass PowerApps auf die Umgebung festgelegt ist, in der Sie den Flow erstellt haben.
+   > Wenn der von Ihnen erstellte Flow nicht verfügbar ist, vergewissern Sie sich, dass powerapps auf die Umgebung festgelegt ist, in der Sie den Flow erstellt haben.
 
     ![Hinzufügen eines Flows aus dem Bereich „Anpassung“](./media/using-logic-flows/add-flow-from-pane.png)
 

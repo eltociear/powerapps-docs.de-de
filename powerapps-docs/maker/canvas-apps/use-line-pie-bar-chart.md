@@ -1,6 +1,6 @@
 ---
 title: Erstellen eines Diagramms in einer Canvas-App | Microsoft-Dokumentation
-description: Anzeigen von Datenkategorien als Linien-, Kreis- oder Balkendiagramme in einer Canvas-App in PowerApps
+description: Zeigen Sie in Power Apps Kategorien von Daten als Liniendiagramme, Kreis Diagramme oder Balkendiagramme in einer Canvas-APP an.
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2841da7f5d7b19cd727f169c6fe89588f69bf1ec
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 65076c38a1beeb41c9f6f308b6c0c7e82d30fc80
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541678"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674418"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Anzeigen von Daten in einem Linien-, Kreis- oder Balkendiagramm in PowerApps
 
@@ -32,11 +31,11 @@ Ihre Daten sollten z.B. wie folgt aussehen:
 
 ![][9]
 
-Sie können diese Diagramme in PowerApps erstellen und verwenden. Lassen Sie uns loslegen!
+Sie können diese Diagramme in powerapps erstellen und verwenden. Lassen Sie uns loslegen!
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
+* [Registrieren](../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit denselben Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
 * Erstellen Sie eine App aus einer [Vorlage](get-started-test-drive.md), auf der Grundlage von [Daten](get-started-create-from-data.md) oder [von Grund auf neu](get-started-create-from-blank.md).
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 * Laden Sie [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) herunter, die Beispieldaten als XML-Datei enthält. Führen Sie die Schritte in diesem Thema aus, um sie direkt in Ihre App zu importieren. Dekomprimieren Sie alternativ die ZIP-Datei, öffnen Sie die XML-Datei in Excel, und speichern Sie es in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md).
@@ -50,7 +49,7 @@ In den folgenden Schritten importieren wir die Beispieldaten in eine Sammlung mi
 
 2. Legen Sie die Eigenschaft **[OnSelect](controls/properties-core.md)** des Steuerelements auf die folgende Funktion fest:  
 
-   ```Collect(ProductRevenue; Import1.Data)```
+   ```Collect(ProductRevenue, Import1.Data)```
 
 3. Drücken Sie F5 zum Öffnen des Vorschaumodus, und wählen Sie anschließend die Schaltfläche **Daten importieren** aus.
 

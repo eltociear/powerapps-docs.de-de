@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f58f8e15d1bd522bd9c24d7e3e1dfe9a69b4d257
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541013"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679843"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Herstellen einer Verbindung mit Twitter aus PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -33,7 +32,7 @@ In diesem Thema wird gezeigt, wie Sie die Twitter-Verbindung erstellen und in ei
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-twitter"></a>Herstellen einer Verbindung mit Twitter
-1. Öffnen Sie PowerApps, wählen Sie **Neu** aus, und erstellen Sie eine **Leere App**. Wählen Sie das Layout für Smartphone oder Tablet aus. Das Tablet-Layout bietet Ihnen einen größeren Arbeitsbereich:  
+1. Öffnen Sie powerapps, wählen Sie **neu**aus, und erstellen Sie dann eine **leere App**. Wählen Sie das Layout für Smartphone oder Tablet aus. Das Tablet-Layout bietet Ihnen einen größeren Arbeitsbereich:  
 
    ![Öffnen einer leeren App](./media/connection-twitter/blank-app.png)
 2. Klicken oder tippen Sie im rechten Bereich auf die Registerkarte **Daten** und dann auf **Datenquelle hinzufügen**.
@@ -66,7 +65,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.UserTimeline(Tweep.Text; {maxResults:5}).TweetText`
+       `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
 
        Im Katalog-Steuerelement werden automatisch die Tweets des eingegebenen Twitter-Benutzernamens angezeigt.
 
@@ -95,7 +94,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.Followers(Tweep.Text; {maxResults:5})`
+       `Twitter.Followers(Tweep.Text, {maxResults:5})`
 
        Im Katalog-Steuerelement wird automatisch angezeigt, wer dem eingegebenen Twitter-Benutzernamen folgt.
 
@@ -124,7 +123,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.Following(Tweep.Text; {maxResults:5})`
+       `Twitter.Following(Tweep.Text, {maxResults:5})`
 
        Im Katalog-Steuerelement werden automatisch die anderen Benutzernamen angezeigt, denen Sie folgen.
 
@@ -161,8 +160,8 @@ Sie können ein auch Texteingabe-Steuerelement verwenden, um einen Twitter-Benut
     > [!TIP]
    > Mit „maxResults“ werden die ersten fünf Ergebnisse angezeigt:  
 
-    `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5}).TweetText`
-2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5})` fest.
+    `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
+2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})` fest.
 
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
 3. Wählen Sie **TweetText** in der ersten Liste, **TweetedBy** in der zweiten Liste und **CreatedAt** in der dritten Liste aus.

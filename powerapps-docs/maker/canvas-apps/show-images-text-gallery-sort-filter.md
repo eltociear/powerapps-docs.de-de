@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3144f2f6517cbaa641227ff7b2f9482ed1d2e476
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6b65a2a6fcc4899ac92238ec76d45cb4fd2d62c8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542432"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674638"
 ---
-# <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Anzeigen, Sortieren und Filtern von Daten in einem PowerApps-Katalog
+# <a name="show-sort-and-filter-data-in-a-power-apps-gallery"></a>Anzeigen, Sortieren und Filtern von Daten in einem Power apps-Katalog
 Erstellen Sie einen Katalog, um Bilder und Text zu verschiedenen Produkten anzuzeigen, und sortieren und filtern Sie diese Informationen.
 
-In PowerApps können Sie einen Katalog verwenden, um mehrere verwandte Elemente anzuzeigen. Kataloge eignen sich hervorragend zur Anzeige von Produktinformationen, z.B. Namen und Preise. In diesem Thema erstellen wir einen Katalog und sortieren und filtern die Informationen mithilfe von Excel-ähnlichen Funktionen. Außerdem wird bei Auswahl eines Elements ein Rahmen um das Element platziert.
+In powerapps können Sie einen Katalog verwenden, um mehrere verwandte Elemente anzuzeigen, wie Sie in einem Katalog angezeigt werden. Kataloge eignen sich hervorragend zur Anzeige von Produktinformationen, z.B. Namen und Preise. In diesem Thema erstellen wir einen Katalog und sortieren und filtern die Informationen mithilfe von Excel-ähnlichen Funktionen. Außerdem wird bei Auswahl eines Elements ein Rahmen um das Element platziert.
 
 > [!NOTE]
 > In diesem Thema wird eine Tablet-App verwendet. Sie können auch eine Telefon-App verwenden, aber dann müssen einige der Steuerelemente in der Größe verändert werden.
@@ -32,10 +31,10 @@ In PowerApps können Sie einen Katalog verwenden, um mehrere verwandte Elemente 
 > 
 
 ### <a name="prerequisites"></a>Voraussetzungen
-* [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
+* [Registrieren](../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit denselben Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
 * Erstellen Sie aus einer [Vorlage](get-started-test-drive.md) oder mithilfe von [Daten](get-started-create-from-data.md) eine Tablet-App, oder [erstellen Sie die App von Grund auf neu](get-started-create-from-blank.md).
 * Machen Sie sich damit vertraut, wie Sie [ein Steuerelement konfigurieren](add-configure-controls.md).
-* In den hier gezeigten Schritten werden die [CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)-Daten als Beispieleingabe verwendet, die auch JPG-Bilder umfassen. Die ZIP-Datei enthält eine XML-Datei, die in Excel konvertiert werden kann. Andernfalls liest PowerApps die Dateien in den ZIP-Dateien automatisch und importiert sie erfolgreich. Sie können diese Beispieldaten herunterladen und verwenden oder eigene Daten importieren.
+* In den hier gezeigten Schritten werden die [CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)-Daten als Beispieleingabe verwendet, die auch JPG-Bilder umfassen. Die ZIP-Datei enthält eine XML-Datei, die in Excel konvertiert werden kann. Andernfalls liest Power Apps die Dateien automatisch in den ZIP-Dateien und importiert sie erfolgreich. Sie können diese Beispieldaten herunterladen und verwenden oder eigene Daten importieren.
 
 ## <a name="show-data-in-a-gallery"></a>Anzeigen von Daten in einem Katalog
 1. Erstellen Sie unter Verwendung der Beispieldaten eine Sammlung namens **Inventory**. Führen Sie hierbei diese Schritte aus:  
@@ -121,7 +120,7 @@ Mithilfe der nachfolgenden Schritte werden wir die Katalogelemente in aufsteigen
 1. Wählen Sie ein Element im Katalog aus, *nicht jedoch* das erste Element.
 2. Die Eigenschaft **[Items](controls/properties-core.md)** ist aktuell auf „Inventory“ festgelegt (den Namen Ihrer Sammlung). Ändern Sie die Einstellung wie folgt:  
    
-    **Sort(Inventory; ProductName)**
+    **Sort(Inventory, ProductName)**
    
     Hierdurch werden die Elemente im Katalog in aufsteigender Reihenfolge nach dem Produktnamen sortiert: ![][11]  
    
@@ -134,11 +133,11 @@ Mithilfe der nachfolgenden Schritte werden wir die Katalogelemente in aufsteigen
 2. Konfigurieren Sie den Schieberegler so, dass Benutzer ihn nicht auf einen Wert außerhalb des Bereichs für die vorrätige Stückzahl festlegen können:  
    
    1. Wählen Sie auf der Registerkarte **Inhalt** die Einstellung **Min**, und geben Sie den folgenden Ausdruck ein:  
-      ```Min(Inventory; UnitsInStock)```  
+      ```Min(Inventory, UnitsInStock)```  
    2. Wählen Sie auf der Registerkarte **Inhalt** die Einstellung **Max**, und geben Sie den folgenden Ausdruck ein:  
-      ```Max(Inventory; UnitsInStock)```
+      ```Max(Inventory, UnitsInStock)```
 3. Wählen Sie ein Element im Katalog aus, *nicht jedoch* das erste Element. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft des Katalogs auf den folgenden Ausdruck fest:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. Stellen Sie den Schieberegler in der **Vorschau** auf einen Wert zwischen der höchsten und der niedrigsten Menge im Katalog ein. Wenn Sie den Wert über den Schieberegler ändern, werden nur die Produkte angezeigt, deren Stückzahl unter dem ausgewählten Wert liegt:  
    ![][13]  
 
@@ -147,7 +146,7 @@ Fügen wir jetzt unseren Filter hinzu:
 1. Kehren Sie zum Designer zurück.
 2. Wählen Sie auf der Registerkarte **Einfügen** die Einstellung **Text** aus, wählen Sie **Eingabetext** aus, und benennen Sie das neue Steuerelement in **NameFilter** um. Verschieben Sie das Textsteuerelement unter den Schieberegler.
 3. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft des Katalogs auf den folgenden Ausdruck fest:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. Stellen Sie den Schieberegler in der **Vorschau** auf den Wert *30* ein, und geben Sie im Texteingabe-Steuerelement den Buchstaben *g* ein. Der Katalog zeigt nur Produkte an, bei denen die vorrätige Stückzahl unter 30 liegt *und* deren Name mit dem Buchstaben „g“ beginnt:  
    ![][14]  
 

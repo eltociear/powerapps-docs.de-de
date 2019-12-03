@@ -1,6 +1,6 @@
 ---
 title: Integrieren von powerapps, Power automatisiert und Power BI mit SharePoint Online (Einführung) | Microsoft-Dokumentation
-description: 'In dieser Reihe von Tutorials erfahren Sie, wie Sie eine einfache Canvas-App für die Projektverwaltung auf der Grundlage von SharePoint-Listen und drei Schlüsseltechnologien erstellen, die in SharePoint Online integriert sind: powerapps, Power automatisiert und Power BI.'
+description: 'In dieser Reihe von Tutorials erfahren Sie, wie Sie eine einfache Canvas-App für das Projektmanagement auf der Grundlage von SharePoint-Listen und drei Schlüsseltechnologien erstellen, die in SharePoint Online integriert sind: powerapps, Power automatisiert und Power BI.'
 author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7941575d116ee08f4846623a394d9b42bc306892
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 0e768b017dc4f21b803cdbd6cf7fab220fb0f23c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898282"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674691"
 ---
-# <a name="integrate-powerapps-power-automate-and-power-bi-with-sharepoint-online"></a>Integrieren von powerapps, Energie automatisierter und Power BI in SharePoint Online
-Sie verfügen über SharePoint Online und möchten Ihre Geschäftsprozesse besser automatisieren und optimieren? Haben Sie powerapps, Energie Automatisierung oder Power BI gearbeitet, aber Sie sind nicht sicher, wie Sie diese mit SharePoint Online verwenden können? Dann sind Sie hier richtig. In dieser Reihe von Tutorials erfahren Sie, wie Sie eine einfache Canvas-App für die Projektverwaltung auf der Grundlage von SharePoint-Listen und drei Schlüsseltechnologien erstellen, die in SharePoint Online integriert sind: powerapps, Power automatisiert und Power BI. Diese Technologien wirken zusammen und erleichtern das *Messen* Ihrer Geschäftsprozesse, das *Reagieren* auf die Ergebnisse und das *Automatisieren* Ihrer Workflows. Wenn Sie diese Reihe abgeschlossen haben, liegt Ihnen ein cooles Szenario wie die folgenden vor:
+# <a name="integrate-power-apps-power-automate-and-power-bi-with-sharepoint-online"></a>Integrieren von powerapps, Energie automatisierter und Power BI mit SharePoint Online
+Sie verfügen über SharePoint Online und möchten Ihre Geschäftsprozesse besser automatisieren und optimieren? Haben Sie mit Power apps, Energie Automatisierung oder Power BI gearbeitet, sind aber nicht sicher, wie Sie diese mit SharePoint Online verwenden können? Dann sind Sie hier richtig. In dieser Reihe von Tutorials erfahren Sie, wie Sie eine einfache Canvas-App für das Projektmanagement auf der Grundlage von SharePoint-Listen und drei Schlüsseltechnologien erstellen, die in SharePoint Online integriert sind: powerapps, Power automatisiert und Power BI. Diese Technologien wirken zusammen und erleichtern das *Messen* Ihrer Geschäftsprozesse, das *Reagieren* auf die Ergebnisse und das *Automatisieren* Ihrer Workflows. Wenn Sie diese Reihe abgeschlossen haben, liegt Ihnen ein cooles Szenario wie die folgenden vor:
 
 ![Diagramm des abgeschlossenen-Szenarios](./media/sharepoint-scenario-intro/composite-with-background.png)
 
@@ -40,7 +40,7 @@ Wenn Sie diese Artikel durchgelesen haben, kehren Sie hoffentlich zu diesem komp
 Selbst innerhalb dieses Szenarios können Sie sich auf die Aufgaben konzentrieren, die für Sie von größter Relevanz sind und die Aufgaben ausführen, wenn Sie ausreichend Zeit dafür haben. Nachdem Sie SharePoint-Listen in Aufgabe 1 eingerichtet haben, können Sie die Aufgaben 2 bis 5 in beliebiger Reihenfolge durcharbeiten. Die Aufgaben 6 bis 8 sind der Reihe nach auszuführen. Schließlich haben wir zwei vollständige Apps und einen Power BI Desktop-Bericht als Teil des [Downloadpakets](https://aka.ms/o4ia0f) für dieses Szenario eingebunden. Sie können diese eingehend untersuchen und sich einen exemplarischen Überblick verschaffen, selbst wenn Sie nicht alle Schritte in den einzelnen Aufgaben durcharbeiten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Zum Durcharbeiten dieses Szenarios benötigen Sie die folgenden Abonnements und Desktoptools. Das Office 365 Business Premium-Abonnement umfasst powerapps und Power automatisieren.
+Zum Durcharbeiten dieses Szenarios benötigen Sie die folgenden Abonnements und Desktoptools. Das Office 365 Business Premium-Abonnement umfasst powerapps und Power-Automatisierung.
 
 | **Abonnement oder Tool** | **Link** |
 | --- | --- |
@@ -51,7 +51,7 @@ Zum Durcharbeiten dieses Szenarios benötigen Sie die folgenden Abonnements und 
 Im Idealfall sind Sie im Wesentlichen mit den einzelnen Technologien vertraut. Sie können das Szenario jedoch auch durcharbeiten, wenn Sie mit einer dieser Technologien keine Erfahrung haben. Die folgenden Ressourcen erleichtern Ihnen den schnellen Einstieg:
 
 * [Erste Schritte mit SharePoint](https://support.office.com/article/Get-started-with-SharePoint-909ec2f0-05c8-4e92-8ad3-3f8b0b6cf261)
-* [Geführtes Lernen zu PowerApps](../../guided-learning/index.md)
+* [Geführtes lernen zu Power apps](../../guided-learning/index.md)
 * [Geführtes lernen für die Energie Automatisierung](https://docs.microsoft.com/flow/guided-learning/)
 * [Geführtes Lernen zu Power BI](https://docs.microsoft.com/power-bi/guided-learning/)
 

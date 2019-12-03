@@ -1,6 +1,6 @@
 ---
 title: Anzeigen von Details zum aktuellen Benutzer in einer Canvas-App | Microsoft-Dokumentation
-description: Anzeigen des Namens und der E-Mail-Adresse des angemeldeten Benutzers in einer Canvas-App in PowerApps
+description: In powerapps den Namen und die e-Mail-Adresse des angemeldeten Benutzers in einer Canvas-App anzeigen
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd5dffc75dea4186058ba96adbaf0dbde8dc3d8
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: f77ec80cfaf579c836277f0e29d3b84b325a0462
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71988429"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674607"
 ---
-# <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>Anzeigen von Informationen zu einem PowerApps-Benutzer in einer Canvas-App
+# <a name="show-information-about-a-power-apps-user-in-a-canvas-app"></a>Anzeigen von Informationen zu einem powerapps-Benutzer in einer Canvas-App
 
-Zeigen Sie den vollständigen Namen, die E-Mail-Adresse und das zugeordnete Bild des Benutzers, der bei einer Canvas-App angemeldet ist, in PowerApps an. Sie können diese Informationen verwenden, um beispielsweise ein Formular automatisch auszufüllen.
+Zeigen Sie in powerapps den vollständigen Namen, die e-Mail-Adresse und das Bild an, das dem Benutzer zugeordnet ist, der sich bei einer Canvas-App angemeldet hat. Sie können diese Informationen verwenden, um beispielsweise ein Formular automatisch auszufüllen.
 
 Beispielsweise können Sie dieses Feature folgendermaßen einsetzen:
 

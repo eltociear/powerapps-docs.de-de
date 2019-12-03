@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 010d567369e9c580b57a55ad251ac5ef01da3597
-ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
+ms.openlocfilehash: 7e29674e689ff77599bb49c58e7b0edbc028b6be
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73741378"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675967"
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Erstellen einer Detail Galerie in einer Canvas-App
 
@@ -48,14 +47,14 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 1. Entfernen Sie den Text aus der Kopie auf eine der folgenden Arten:
 
     - Doppelklicken Sie auf den Text, um ihn auszuwählen, und drücken Sie dann ENTF.
-    - Legen Sie die **Text** -Eigenschaft der Bezeichnung auf eine leere Zeichenfolge (**""**) fest.
+    - Legen Sie die **Text** -Eigenschaft der Bezeichnung auf eine leere Zeichenfolge ( **""** ) fest.
 
     > [!div class="mx-imgBorder"]
     > ![entfernen Sie den Text aus der Titelleisten Kopie](media/northwind-orders-canvas-part3/details-02.png)
 
 ## <a name="add-a-gallery"></a>Einen Katalog hinzufügen
 
-1. Fügen Sie ein Katalog [**-Steuerelement mit einem**](controls/control-gallery.md) **leeren vertikalen** Layout ein:
+1. Fügen Sie ein Katalog [ **-Steuerelement mit einem**](controls/control-gallery.md) **leeren vertikalen** Layout ein:
 
     > [!div class="mx-imgBorder"]
     > ![einen leeren vertikalen Katalog hinzufügen](media/northwind-orders-canvas-part3/details-03.png)
@@ -72,7 +71,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Items** -Eigenschaft der Detail Galerie auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected.'Order Details'
     ```
 
@@ -104,7 +103,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Product.'Product Name'
     ```
 
@@ -142,7 +141,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Image** -Eigenschaft des Bilds auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Product.Picture
     ```
 
@@ -162,7 +161,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Quantity
     ```
 
@@ -180,11 +179,11 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    Wenn Sie das Sprachtag (**[$-en-US]**) nicht einschließen, wird es basierend auf Ihrer Sprache und Region für Sie hinzugefügt. Wenn Sie ein anderes Sprachtag verwenden, sollten Sie die **$** direkt hinter der schließenden eckigen Klammer (**]**) entfernen und dann Ihr eigenes Währungssymbol an dieser Position hinzufügen.
+    Wenn Sie das Sprachtag ( **[$-en-US]** ) nicht einschließen, wird es basierend auf Ihrer Sprache und Region für Sie hinzugefügt. Wenn Sie ein anderes Sprachtag verwenden, sollten Sie die **$** direkt hinter der schließenden eckigen Klammer ( **]** ) entfernen und dann Ihr eigenes Währungssymbol an dieser Position hinzufügen.
 
     > [!div class="mx-imgBorder"]
     > ![Einzelpreis anzeigen](media/northwind-orders-canvas-part3/details-15.png)
@@ -198,11 +197,11 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    Wenn Sie das Sprachtag (**[$-en-US]**) nicht einschließen, wird es auf Grundlage ihrer Sprache und Region für Sie hinzugefügt. Wenn das Tag anders ist, sollten Sie anstelle der **$** direkt nach der schließenden eckigen Klammer (**]**) Ihr eigenes Währungssymbol verwenden.
+    Wenn Sie das Sprachtag ( **[$-en-US]** ) nicht einschließen, wird es auf Grundlage ihrer Sprache und Region für Sie hinzugefügt. Wenn das Tag anders ist, sollten Sie anstelle der **$** direkt nach der schließenden eckigen Klammer ( **]** ) Ihr eigenes Währungssymbol verwenden.
 
     > [!div class="mx-imgBorder"]
     > ![den erweiterten Preis anzeigen](media/northwind-orders-canvas-part3/details-17.png)
@@ -274,8 +273,8 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Sum( Gallery1.Selected.'Order Details'; Quantity )
+    ```powerapps-dot
+    Sum( Gallery1.Selected.'Order Details', Quantity )
     ```
 
     Diese Formel zeigt eine Delegierungs Warnung an, Sie können Sie jedoch ignorieren, da keine einzelne Bestellung mehr als 500 Produkte enthalten wird.
@@ -289,8 +288,8 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der Kopie auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     Diese Formel zeigt eine Delegierungs Warnung an, Sie können Sie jedoch ignorieren, da keine einzelne Bestellung mehr als 500 Produkte enthalten wird.
@@ -323,7 +322,7 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 ## <a name="select-a-product"></a>Produkt auswählen
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option Steuer **Elemente**  >  Kombinations**Feld**aus:
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option Steuer **Elemente** > Kombinations **Feld**aus:
 
     > [!div class="mx-imgBorder"]
     > ![Kombinations Feld einfügen](media/northwind-orders-canvas-part3/add-details-08.png)
@@ -359,7 +358,7 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 1. Wenn Sie die Alt-Taste gedrückt halten, wählen Sie den Pfeil nach unten aus.
 
     > [!TIP]
-    > Wenn Sie die Alt-Taste gedrückt halten, können Sie mit Steuerelementen in PowerApps Studio interagieren, ohne den Vorschaumodus zu öffnen.
+    > Wenn Sie die Alt-Taste gedrückt halten, können Sie mit Steuerelementen in Power apps Studio interagieren, ohne den Vorschaumodus zu öffnen.
 
 1. Wählen Sie in der Liste der angezeigten Produkte ein Produkt aus:
 
@@ -368,7 +367,7 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 ## <a name="add-a-product-image"></a>Hinzufügen eines Produkt Images
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Medien**  > **Abbild**aus:
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Medien** > **Abbild**aus:
 
     > [!div class="mx-imgBorder"]
     > ![Bild-Steuerelement einfügen](media/northwind-orders-canvas-part3/add-details-15.png)
@@ -382,7 +381,7 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Legen Sie für die **Image** -Eigenschaft des Bilds Folgendes fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ComboBox1.Selected.Picture
     ```
 
@@ -393,7 +392,7 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 ## <a name="add-a-quantity-box"></a>Feld "Menge hinzufügen"
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Text**  > **Texteingabe**:
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Text** > **Texteingabe**:
 
     > [!div class="mx-imgBorder"]
     > ![Texteingabefeld hinzufügen](media/northwind-orders-canvas-part3/add-details-18.png)
@@ -431,8 +430,8 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Ändern Sie die Größe, und verschieben Sie die Bezeichnung auf die Rechte Seite des Texteingabe-Steuer Elements, und legen Sie die **Text** -Eigenschaft der Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -452,8 +451,8 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -470,7 +469,7 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 ## <a name="add-an-add-icon"></a>Hinzufügen eines Symbols
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole**  > **Hinzufügen**aus:
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** > **Hinzufügen**aus:
 
     > [!div class="mx-imgBorder"]
     > ![Symbol "hinzufügen" Einfügen](media/northwind-orders-canvas-part3/add-details-29.png)
@@ -482,18 +481,18 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Ändern Sie die Größe, und verschieben Sie dieses Symbol an den rechten Rand des hellblauen Bereichs, und legen Sie dann die **onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
-    Patch( 'Order Details';
-        Defaults('Order Details');
+    ```powerapps-dot
+    Patch( 'Order Details',
+        Defaults('Order Details'),
         {
-            Order: Gallery1.Selected;
-            Product: ComboBox1.Selected;
-            Quantity: Value(TextInput1.Text);
+            Order: Gallery1.Selected,
+            Product: ComboBox1.Selected,
+            Quantity: Value(TextInput1.Text),
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );;
-    Refresh( Orders );;
-    Reset( ComboBox1 );;
+    );
+    Refresh( Orders );
+    Reset( ComboBox1 );
     Reset( TextInput1 )
     ```
 
@@ -534,7 +533,7 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
     > [!div class="mx-imgBorder"]
     > ![Katalog Vorlage auswählen](media/northwind-orders-canvas-part3/remove-details-01.png)
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole**  > **Papierkorb**:
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** > **Papierkorb**:
 
     > [!div class="mx-imgBorder"]
     > ![Papierkorb Symbol](media/northwind-orders-canvas-part3/remove-details-02.png)
@@ -546,8 +545,8 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Ändern Sie die Größe, und verschieben Sie das Papierkorb Symbol auf die Rechte Seite der Detail Galerie Vorlage, und legen **Sie die onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
-    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
+    ```powerapps-dot
+    Remove( 'Order Details', ThisItem ); Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -568,11 +567,11 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 Zur Wiederholung haben Sie einen weiteren Katalog hinzugefügt, um Bestelldetails und Steuerelemente zum Hinzufügen und Entfernen von Bestelldetails in der APP anzuzeigen. Sie haben diese Elemente verwendet:
 
-- Ein zweites Katalog Steuerelement, das über eine 1: n-Beziehung mit der Order Gallery verknüpft ist: **Wenn gallery2. Items**  =  `Gallery1.Selected.'Order Details'`
+- Ein zweites Katalog Steuerelement, das über eine 1: n-Beziehung mit der Order Gallery verknüpft ist: **Wenn gallery2. Items** = `Gallery1.Selected.'Order Details'`
 - Eine n:1-Beziehung zwischen der Entität " **Order Details** " und der Entität " **Order Products** ": `ThisItem.Product.'Product Name'` und `ThisItem.Product.Picture`
 - Die **Auswahl** Funktion, um eine Liste der Produkte zu erhalten: `Choices( 'Order Details'.Product' )`
 - Die **ausgewählte** Eigenschaft eines Kombinations Felds als kompletter n:1-Datensatz: `ComboBox1.Selected.Picture` und `ComboBox1.Selected.'List Price'`
-- Die **Patch** -Funktion zum Erstellen eines **Auftrags Details-Daten** Satzes: `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`
-- Die **Remove** -Funktion zum Löschen eines **Order Details-Daten** Satzes: `Remove( 'Order Details'; ThisItem )`
+- Die **Patch** -Funktion zum Erstellen eines **Auftrags Details-Daten** Satzes: `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
+- Die **Remove** -Funktion zum Löschen eines **Order Details-Daten** Satzes: `Remove( 'Order Details', ThisItem )`
 
 Diese Themenreihe war eine kurze exemplarische Vorgehensweise zur Verwendung von Common Data Service Beziehungen und Options Sätzen in einer Canvas-APP zu Schulungszwecken. Bevor Sie eine APP für die Produktion freigeben, sollten Sie die Feld Validierung, die Fehlerbehandlung und viele andere Faktoren berücksichtigen.

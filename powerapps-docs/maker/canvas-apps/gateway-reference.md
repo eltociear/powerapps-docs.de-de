@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60f8fb3c0c6d28bb30140017c2af07040d5ade7f
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 879fc0df86f05191941c6ff6b3b6403fe34fecea
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898195"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676552"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Was ist ein lokales Daten Gateway?
 

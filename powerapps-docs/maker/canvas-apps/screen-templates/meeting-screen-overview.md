@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2b300b0d90803ae08aaf262dde5642f4d448c05f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5b8df0acad3f5ad90eb114bd5fdd5d3377b3f6fb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541430"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675040"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>Übersicht über die Besprechungs Bildschirm Vorlage für Canvas-apps
 
@@ -39,7 +38,7 @@ Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen 
 
 So fügen Sie einen Besprechungs Bildschirm aus der Vorlage hinzu:
 
-1. [Melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und erstellen Sie eine APP, oder öffnen Sie eine vorhandene app in PowerApps Studio.
+1. [Melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und erstellen Sie eine APP, oder öffnen Sie eine vorhandene app in powerapps Studio.
 
     In diesem Thema wird eine Phone-App gezeigt, aber die gleichen Konzepte gelten auch für eine Tablet-app.
 
@@ -59,10 +58,10 @@ Einige hilfreiche Hinweise:
 * Zum Erstellen einer Besprechung müssen Sie mindestens eine Person als Teilnehmer hinzufügen, einen Betreff angeben und eine Besprechungszeit auf der Registerkarte **Zeitplan** auswählen.
 * Nachdem Sie die Besprechungs Anfrage gesendet haben, werden alle Informationen zu dieser Besprechung gelöscht.
 * Die **onselect** -Anweisung des Sende Symbols (obere rechte Ecke) enthält folgende Formel:
-    ```powerapps-comma
-    Set( _myCalendarName; 
-        LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name 
-    );;
+    ```powerapps-dot
+    Set( _myCalendarName, 
+        LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
+    );
     ```
 * "Calendar" ist der Standard Anzeige Name für die meisten Kalender des Office-Benutzers, Ihre Organisation kann jedoch abweichen. Wenn dies der Fall ist, können Sie "Calendar" in den entsprechenden Begriff für Ihre Organisation ändern.
 * Sie erhalten eine Fehlermeldung, wenn Sie versuchen, eine Besprechung in der Vergangenheit zu planen oder einer Besprechung mehr als 20 Personen hinzuzufügen.

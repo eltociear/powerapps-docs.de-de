@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3348db5897b0c58d7addef775d2a871809fc491b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b2eca27d418a762820bf0955edafff435a176efb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995204"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674928"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Freigeben von Excel-Daten, die von Ihrer App verwendet werden
 Sie können Excel-Daten in einem [Cloudkonto](connections/cloud-storage-blob-connections.md) wie z.B. OneDrive für Ihre App-Benutzer freigeben.
@@ -30,7 +30,7 @@ Sie müssen die Daten freigeben, damit Benutzer Ihre App ausführen und sogar ä
 In diesem Thema wird gezeigt, wie Sie Daten in einem Excel-Arbeitsblatt unter Verwendung von Dropbox, OneDrive und Google Drive freigeben. Informationen zum Erstellen einer App, die Daten aus einer Excel-Datei anzeigt, finden Sie unter [Erstellen einer App aus einem Satz an Daten](get-started-create-from-data.md).
 
 ## <a name="share-data-in-dropbox"></a>Freigeben von Daten in Dropbox
-1. Melden Sie sich unter Verwendung desselben Kontos bei Dropbox an, mit dem Sie eine Verbindung zwischen PowerApps und Dropbox hergestellt haben.
+1. Melden Sie sich mit dem gleichen Konto bei Dropbox an, das Sie zum Herstellen einer Verbindung von powerapps mit Dropbox verwendet haben.
 2. Wählen Sie den Ordner aus, der die Excel-Datei enthält, und wählen dann **Freigeben** aus:  
    
     ![Befehl zum Freigeben](./media/share-app-data/dropbox-share.png)
@@ -43,7 +43,7 @@ In diesem Thema wird gezeigt, wie Sie Daten in einem Excel-Arbeitsblatt unter Ve
 Weitere Informationen finden Sie unter [Freigeben von Ordnern in Dropbox](https://www.dropbox.com/en/help/19).
 
 ## <a name="share-data-in-onedrive"></a>Freigeben von Daten in OneDrive
-1. Melden Sie sich unter Verwendung desselben Kontos bei OneDrive an, mit dem Sie eine Verbindung zwischen PowerApps und OneDrive hergestellt haben.
+1. Melden Sie sich bei onedrive mit demselben Konto an, das Sie beim Erstellen einer Verbindung von Power apps zu onedrive verwendet haben.
 2. Wählen Sie den Ordner aus, der die Datei enthält, und wählen dann **Freigeben** aus:  
    
     ![Befehl zum Freigeben](./media/share-app-data/onedrive-share.png)
@@ -60,7 +60,7 @@ Weitere Informationen finden Sie unter [Freigeben von Ordnern in Dropbox](https:
 Weitere Informationen finden Sie unter [Freigeben von OneDrive-Dateien und -Ordnern](https://support.office.com/article/Share-OneDrive-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07).
 
 ## <a name="share-data-in-google-drive"></a>Freigeben von Daten in Google Drive
-1. Melden Sie sich unter Verwendung desselben Kontos bei Google Drive an, mit dem Sie eine Verbindung zwischen PowerApps und Google Drive hergestellt haben.
+1. Melden Sie sich bei Google Drive mit dem Konto an, mit dem Sie eine Verbindung von powerapps zu Google Drive hergestellt haben.
 2. Klicken Sie mit der rechten Maustaste auf den Ordner, der Ihre Excel-Datei enthält, und wählen Sie **Freigeben** aus.  
    
     ![Befehl zum Freigeben](./media/share-app-data/googledrive-share.png)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 565f751017bc8c145c34058bd4dd57d047127d45
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 455ffff4813b457c2a439f2081c10418ace2e306
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987169"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678716"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>Herstellen einer Verbindung mit Excel aus PowerApps
 ![Excel](./media/connection-excel/excelicon.png)
@@ -31,7 +31,7 @@ Excel stellt eine *Art von Verbindung* dar. So zeigen Sie Excel-Daten in Ihrer A
 4. Zeigen Sie diese Informationen in der App an, indem Sie [automatisch eine App generieren](../get-started-create-from-data.md) oder indem Sie beispielsweise ein **Katalog**-Steuerelement hinzufügen und konfigurieren.
 
 > [!NOTE]
-> Wenn Sie in PowerApps eine Verbindung mit Ihrer Excel-Tabelle hergestellt haben, wird für jede Zeile der Excel-Tabelle eine Spalte mit dem Namen **\_PowerAppsId_** mit einer eindeutigen ID erstellt.
+> Wenn Sie von powerapps aus eine Verbindung mit Ihrer Excel-Tabelle herstellen, wird eine Spalte mit dem Namen **\_PowerAppsId_** mit einer eindeutigen ID für jede Zeile der Excel-Tabelle erstellt.
 
 In [Übersicht über die Cloudspeicherverbindung](cloud-storage-blob-connections.md) wird veranschaulicht, wie Sie die Verbindung hinzufügen, eine Excel-Tabelle als Datenquelle hinzufügen und die Excel-Daten in der App verwenden.
 

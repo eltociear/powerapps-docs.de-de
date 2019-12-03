@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d104bc88fb8f5306a9d086fa04bc946b6a719129
-ms.sourcegitcommit: c3e7be17c8b39bf17b2089ad3bd424e63b5645e5
+ms.openlocfilehash: 52deddf87a1c3ee4604591110cfb08eb2d2680b8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72822116"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74672996"
 ---
 # <a name="create-a-rule-in-canvas-apps"></a>Erstellen einer Regel in Canvas-Apps
 Erstellen Sie Regeln, damit eine App automatisch auf Grundlage der von Ihnen angegebenen Kriterien geändert wird. Beispielsweise können Listenelemente je nach ihrem Status in Rot, Gelb oder Grün angezeigt werden, oder eine Genehmigungsschaltfläche kann nur für bestimmte Benutzer (z.B. Manager) angezeigt werden. Sie können vielen verschiedenen Steuerelementen Regeln hinzufügen. In diesem Thema fügen Sie eine Regel hinzu, um die Textfarbe eines **Label**-Steuerelements (Bezeichnung) zu ändern, wenn der Wert eines **Slider**-Steuerelements (Schieberegler) größer als 70 ist.
@@ -51,13 +51,13 @@ Eine Bedingung ist ein Ausdruck, der als „true“ oder „false“ ausgewertet
     Ändern Sie im Rahmen dieses Themas 0 in 70, sodass Sie über folgenden Ausdruck verfügen:  <br>**Slider1.Value > 70**
 
 ## <a name="add-an-action"></a>Aktion hinzufügen
-Aktionen definieren, was geschieht, wenn die Regel angewendet wird. In PowerApps können Aktionen automatisch basierend auf den Änderungen erstellt werden, die Sie an Steuerelementen vornehmen.
+Aktionen definieren, was geschieht, wenn die Regel angewendet wird. Powerapps kann Aktionen automatisch auf der Grundlage von Änderungen erstellen, die Sie an Steuerelementen vornehmen.
 
 1. Klicken oder tippen Sie auf **Aktionen definieren**.
 
     ![Aktionen definieren](./media/working-with-rules/rule-define-actions.png)
 
-1. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Los geht's**, damit PowerApps Ihre nächste(n) Änderung(en) als eine oder mehrere Aktionen aufzeichnet.
+1. Klicken oder tippen Sie im Bestätigungs Dialogfeld auf " **Gehe** zu", damit Power apps Ihre nächsten Änderungen oder Änderungen als eine oder mehrere Aktionen erfassen können.
 
 1. Konfigurieren Sie ein oder mehrere Steuerelemente entsprechend Ihren Erwartungen für den Fall, dass die Bedingung zutrifft.
 

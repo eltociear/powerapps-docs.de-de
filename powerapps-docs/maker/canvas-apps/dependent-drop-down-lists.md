@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57abde44541a2a1e40e3a8ffc55a89e37a8c6478
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 233fd99eeba86151f616a22955cf28c2114de43e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71985752"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679613"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Erstellen von abhängigen Dropdown Listen in einer Canvas-App
 
@@ -70,9 +69,9 @@ Nachdem Sie diese Änderung vorgenommen haben, können Sie die Spalte **Titel** 
 1. Öffnen Sie die Liste **Vorfälle** , und wählen Sie dann **powerapps** > **Formular anpassen**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Öffnen Sie die Liste Vorfälle, und wählen Sie dann powerapps > Formular anpassen aus.](./media/dependent-drop-down-lists/open-form.png "Öffnen Sie die Liste Vorfälle, und wählen Sie dann powerapps > Formular anpassen aus.")
+    > ![Öffnen Sie die Liste Vorfälle, und wählen Sie dann powerapps > Anpassen von Formularen aus.](./media/dependent-drop-down-lists/open-form.png "Öffnen Sie die Liste Vorfälle, und wählen Sie dann powerapps > Anpassen von Formularen aus.")
 
-    Eine Browser Registerkarte wird mit dem Standardformular in PowerApps Studio geöffnet.
+    Eine Browser Registerkarte wird mit dem Standardformular in Power apps Studio geöffnet.
 
 1. optionale Zeigen Sie im Bereich **Felder** auf das Feld **Titel** , wählen Sie die Schaltfläche mit den Auslassungs Punkten (...) aus, die angezeigt wird, und wählen Sie dann **Entfernen**aus.
 
@@ -139,7 +138,7 @@ Wenn Sie die Steuerelemente umbenennen, können Sie Sie leichter identifizieren,
 
 1. Legen Sie die **Items** -Eigenschaft von **ddlocation** auf diese Formel fest:
 
-    `Distinct(Locations; Location)`
+    `Distinct(Locations, Location)`
 
 1. optionale Wenn Sie die Alt-Taste gedrückt halten, öffnen Sie **ddlocation**, und vergewissern Sie sich, dass die drei Standorte in der Liste angezeigt werden.
 
@@ -159,7 +158,7 @@ Wenn Sie die Steuerelemente umbenennen, können Sie Sie leichter identifizieren,
 
     Die **Items** -Eigenschaft von **dddepartment** ist auf diese Formel festgelegt:
 
-    `Filter(Locations; Location = ddLocation.Selected.Result)`
+    `Filter(Locations, Location = ddLocation.Selected.Result)`
 
     Diese Formel filtert die Elemente in **dddepartment** basierend darauf, was der Benutzer in **ddlocation**auswählt. Durch eine solche Konfiguration wird sichergestellt, dass die "untergeordnete" Liste der Abteilungen die Daten für den "übergeordneten" Speicherort widerspiegelt, wie die Speicher **Orte** Liste in SharePoint angibt.
 
@@ -203,10 +202,10 @@ Die Listen der Standorte und Abteilungen widerspiegeln die Informationen in **de
     > Kombinations Feld ' ![ändern '](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **Die Dropdown Liste "mein untergeordnetes Element" enthält doppelte Elemente.**
-Dieses Symptom ist wahrscheinlich darauf zurückzuführen, dass eine **Such** Spalte in SharePoint oder eine **Auswahl** Funktion in powerapps verwendet wird. Um die Duplizierung zu entfernen, umschließen Sie eine **eindeutige** Funktion um die ordnungsgemäß zurückgegebenen Daten. Weitere Informationen finden Sie unter unter [schiedliche Funktionen](functions/function-distinct.md).
+Dieses Symptom ist wahrscheinlich darauf zurückzuführen, dass eine **Such** Spalte in SharePoint oder eine **Auswahl** Funktion in Power Apps verwendet wird. Um die Duplizierung zu entfernen, umschließen Sie eine **eindeutige** Funktion um die ordnungsgemäß zurückgegebenen Daten. Weitere Informationen finden Sie unter unter [schiedliche Funktionen](functions/function-distinct.md).
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
 Diese Konfiguration ist für **Dropdown** -Steuerelemente sowie für Kombinations **Feld** -und **Listenfeld** -Steuerelemente verfügbar, die jeweils eine Auswahl ermöglichen. Wenn Sie mehrere Auswahlmöglichkeiten zulassen, können **Sie die von** der Konfiguration abhängige Konfiguration nicht verwenden. Diese Vorgehensweise wird nicht zum Arbeiten mit Options Sätzen in Common Data Service empfohlen.
 
-Die **Abhängigkeit** von der Konfiguration unterstützt keine statischen Daten oder Auflistungen. Um abhängige Dropdown Listen mit diesen Quellen zu konfigurieren, bearbeiten Sie den Ausdruck direkt in der Bearbeitungs Leiste. Außerdem unterstützt powerapps nicht die Verwendung von zwei Auswahl Feldern in SharePoint ohne übereinstimmende Datentabelle, und Sie können kein **entsprechendes Feld** in dieser Benutzeroberfläche definieren.
+Die **Abhängigkeit** von der Konfiguration unterstützt keine statischen Daten oder Auflistungen. Um abhängige Dropdown Listen mit diesen Quellen zu konfigurieren, bearbeiten Sie den Ausdruck direkt in der Bearbeitungs Leiste. Darüber hinaus unterstützt Power apps nicht die Verwendung von zwei Auswahl Feldern in SharePoint ohne übereinstimmende Datentabelle, und Sie können kein **entsprechendes Feld** in dieser Benutzeroberfläche definieren.

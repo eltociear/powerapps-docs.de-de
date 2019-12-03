@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bbc6111800a817ecb71eec60fdba1d2dabd6c698
-ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
+ms.openlocfilehash: 06c3a02d1ea3943f64661334ca419f6f205e8b7e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73741503"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675818"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Erstellen einer Order Gallery in einer Canvas-App
 
@@ -49,10 +48,10 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
     > [!div class="mx-imgBorder"]
     > ![Canvas-App aus einem leeren Dialogfeld](media/northwind-orders-canvas-part1/start-02.png)
 
-    PowerApps Studio wird geöffnet, damit Sie Ihrer APP Datenquellen und Steuerelemente hinzufügen können:
+    Powerapps Studio wird geöffnet, sodass Sie Ihrer APP Datenquellen und Steuerelemente hinzufügen können:
 
     > [!div class="mx-imgBorder"]
-    > ![PowerApps Studio](media/northwind-orders-canvas-part1/start-03.png)
+    > ![von powerapps Studio](media/northwind-orders-canvas-part1/start-03.png)
 
 ## <a name="add-the-data"></a>Hinzufügen der Daten
 
@@ -78,11 +77,11 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
     Jedes Feld verfügt über einen **anzeigen Amen** und einen **Namen**, der manchmal als logischer Name bezeichnet wird. Beide Namen verweisen auf dasselbe. Im Allgemeinen verwenden Sie den anzeigen Amen, wenn Sie eine APP erstellen, aber einige Fälle erfordern den eher kryptischen **Namen**, wie in einer Prozedur beschrieben.
 
-1. Wenn Sie mit Bildschirmen und Steuerelementen weiter arbeiten, klicken Sie in PowerApps Studio auf der linken Seite auf die Struktur **Ansicht** zurück, indem Sie das Symbol mit den drei gestapelten Quadraten drücken. Sie können jederzeit zu den **Datenquellen** zurückkehren, indem Sie das Zylinder Symbol drücken.
+1. Wenn Sie mit Bildschirmen und Steuerelementen als nächstes arbeiten, wechseln Sie in powerapps Studio zurück zur Struktur **Ansicht** auf der linken Seite, indem Sie das Symbol mit den drei gestapelten Quadraten drücken. Sie können jederzeit zu den **Datenquellen** zurückkehren, indem Sie das Zylinder Symbol drücken.
 
 ## <a name="create-the-order-gallery"></a>Erstellen der Order Gallery
 
-1. **Wählen Sie** auf der Registerkarte **Einfügen** die Option Katalog  > **leerer vertikal** aus, [**um ein Katalog**](controls/control-gallery.md) -Steuerelement hinzuzufügen, das die Aufträge anzeigt.
+1. **Wählen Sie** auf der Registerkarte **Einfügen** die Option Katalog > **leerer vertikal** aus, [**um ein Katalog**](controls/control-gallery.md) -Steuerelement hinzuzufügen, das die Aufträge anzeigt.
 
     > [!div class="mx-imgBorder"]
     > ![INSERT, Gallery, leeres vertikales](media/northwind-orders-canvas-part1/orders-01.png)
@@ -95,8 +94,8 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Wir könnten es hier direkt mit **Aufträgen** verbinden, aber stattdessen möchten wir die Sortierreihenfolge des Katalogs steuern.  Ignorieren Sie das Dialogfeld "ausführen", und legen Sie in der Bearbeitungs Leiste die **Items** -Eigenschaft des Katalogs auf die folgende Formel fest:
 
-    ```powerapps-comma
-    Sort( Orders; 'Order Number'; Descending )
+    ```powerapps-dot
+    Sort( Orders, 'Order Number', Descending )
     ```
 
     Die [**Sortier**](functions/function-sort.md) Funktion ordnet die Liste so an, dass die neueste Bestellung (mit der höchsten Bestellnummer) zuerst angezeigt wird.
@@ -130,7 +129,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der Bezeichnung auf den folgenden Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     "Order " & ThisItem.'Order Number'
     ```
 
@@ -146,7 +145,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der Bezeichnung auf den folgenden Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Customer.Company
     ```
 
@@ -190,7 +189,7 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.'Order Status'
     ```
 
@@ -204,7 +203,7 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
     Jede Option in einem Satz weist einen Namen auf, der angezeigt wird, wenn Sie ihn in einer Bezeichnung anzeigen. Diese Namen können lokalisiert werden, und die APP erkennt dieselbe Option, unabhängig davon, ob ein englischsprachiger Benutzer **Apple**auswählt, ein französischer Benutzer die **Pomme**auswählt oder ein spanischer Benutzer **Manzana**auswählt. Aus diesem Grund ist es nicht möglich, eine Formel zu erstellen, die eine hart codierte Zeichenfolge für eine Option stützt, wie in diesem Thema später veranschaulicht wird.
 
-    In Formeln müssen Sie den **Order-Status** in einfache Anführungszeichen einschließen, da er ein Leerzeichen enthält. Dieser Name funktioniert jedoch genauso wie jeder andere Name in powerapps, wie z. b. **Kunden** oder **Firmen**.
+    In Formeln müssen Sie den **Order-Status** in einfache Anführungszeichen einschließen, da er ein Leerzeichen enthält. Dieser Name funktioniert jedoch genauso wie jeder andere Name in Power apps, wie z. b. der **Kunde** oder das **Unternehmen**.
 
 1. Vergrößern Sie auf der Registerkarte **Home** den Schrift Grad der Status Bezeichnung auf 20 Punkte, und richten Sie den Text rechtsbündig aus:
 
@@ -213,12 +212,12 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
 1. Legen Sie in der Bearbeitungs Leiste die **Color** -Eigenschaft der Status Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Switch( ThisItem.'Order Status';
-        'Orders Status'.Closed; Green;
-        'Orders Status'.New; Black;
-        'Orders Status'.Invoiced; Blue;
-        'Orders Status'.Shipped; Purple
+    ```powerapps-dot
+    Switch( ThisItem.'Order Status',
+        'Orders Status'.Closed, Green,
+        'Orders Status'.New, Black,
+        'Orders Status'.Invoiced, Blue,
+        'Orders Status'.Shipped, Purple
     )
     ```
 
@@ -248,8 +247,8 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -259,7 +258,7 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
     Diese Formel zeigt eine blaue Unterstreichung und eine [Delegierungs Warnung](delegation-overview.md) an, da Common Data Service die Delegierung komplexer Aggregatfunktionen (z. b. die Summe einer Multiplikation) nicht unterstützt. Diese Informationen können ignoriert werden, da in diesem Beispiel keine Reihenfolge mehr als 500 Zeilen Elemente enthalten. Wenn dies für eine andere APP erforderlich ist, können Sie diesen Grenzwert in den **App-Einstellungen**erhöhen.
 
-    Die [**Text**](functions/function-text.md) -Funktion in dieser Formel fügt ein Währungssymbol hinzu und formatiert das Ergebnis mit Tausenden und Dezimaltrennzeichen. Wie bereits geschrieben, enthält die Formel das Sprachtag für US-Englisch (**[$-en-US]**) und ein Dollarsymbol (**$**). Wenn Sie das Sprachtag entfernen, wird es basierend auf den Spracheinstellungen durch eins ersetzt, und in der Bezeichnung werden die entsprechenden Formate für dieses Tag angezeigt. Wenn Sie das Dollarsymbol verlassen, wird in der Bezeichnung basierend auf den Einstellungen des Benutzers das entsprechende Währungssymbol angezeigt. Sie können jedoch erzwingen, dass ein anderes Symbol angezeigt wird, indem Sie das Dollarsymbol durch das gewünschte Dollarsymbol ersetzen.
+    Die [**Text**](functions/function-text.md) -Funktion in dieser Formel fügt ein Währungssymbol hinzu und formatiert das Ergebnis mit Tausenden und Dezimaltrennzeichen. Wie bereits geschrieben, enthält die Formel das Sprachtag für US-Englisch ( **[$-en-US]** ) und ein Dollarsymbol ( **$** ). Wenn Sie das Sprachtag entfernen, wird es basierend auf den Spracheinstellungen durch eins ersetzt, und in der Bezeichnung werden die entsprechenden Formate für dieses Tag angezeigt. Wenn Sie das Dollarsymbol verlassen, wird in der Bezeichnung basierend auf den Einstellungen des Benutzers das entsprechende Währungssymbol angezeigt. Sie können jedoch erzwingen, dass ein anderes Symbol angezeigt wird, indem Sie das Dollarsymbol durch das gewünschte Dollarsymbol ersetzen.
 
 1. Ändern Sie auf der Registerkarte **Home** den Schrift Grad der neuesten Bezeichnung in 20 Punkte, und richten Sie den Text rechtsbündig aus:
 
@@ -280,8 +279,8 @@ Zur Wiederholung haben Sie begonnen, eine Canvas-App mit einem Bildschirm zu ers
 - Ein Ausdruck, mit dem die Bestellnummer angezeigt wird: `"Orders " & ThisItem.OrderNumber`
 - Ein Feld in einer n:1-Beziehung: `ThisItem.Customer.Company`
 - Eine Bezeichnung, die den Namen einer Option in einer Menge anzeigt: `ThisItem.'Order Status'`
-- Eine Bezeichnung, die das Format ändert, je nachdem, welche Option in einer Menge die Bezeichnung anzeigt: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
-- Eine komplexe Aggregatfunktion über eine 1: n-Beziehung: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
+- Eine Bezeichnung, die das Format ändert, je nachdem, welche Option in einer Menge die Bezeichnung anzeigt: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
+- Eine komplexe Aggregatfunktion über eine 1: n-Beziehung: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Nächstes Thema
 

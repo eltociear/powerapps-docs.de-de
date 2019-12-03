@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6f2dfae897a19c66e493cbdecd897df87b8194c2
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 55e38d2be5f43e1b13fc1894f88aac26a26bd57e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992209"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678210"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Die Funktionen „AddColumns“, „DropColumns“, „RenameColumns“ und „ShowColumns“ in PowerApps
 Formen eine [Tabelle](../working-with-tables.md) durch Hinzufügen, Verwerfen, Umbenennen und Auswählen der [Spalten](../working-with-tables.md#columns)
@@ -31,7 +30,7 @@ Diese Funktionen formen eine Tabelle, indem sie deren Spalten anpassen:
 * Fügen Sie einer Tabelle eine berechnete Spalte hinzu (z.B. die Spalte **Gesamtpreis**, die das Ergebnis der Multiplikation von **Quantität** und **Stückpreis** anzeigt).
 * Geben Sie einer Spalte für die Benutzer oder die Verwendung in Formeln einen aussagekräftigeren Namen.
 
-Tabellen stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahlen.  Sie können eine Tabelle als Argument in einer Formel angeben, und Formeln können eine Tabelle als Ergebnis zurückgeben.
+Eine Tabelle ist ein Wert in Power apps, wie z. b. eine Zeichenfolge oder eine Zahl.  Sie können eine Tabelle als Argument in einer Formel angeben, und Formeln können eine Tabelle als Ergebnis zurückgeben.
 
 > [!NOTE]
 > In den Funktionen, die in diesem Thema beschrieben werden, wird die ursprüngliche Tabelle nicht geändert. Stattdessen nehmen Sie diese Tabelle als Argument und geben eine neue Tabelle mit angewendeter Transformation zurück. Weitere Details erfahren Sie unter [Arbeiten mit Tabellen](../working-with-tables.md).  
@@ -54,10 +53,10 @@ Das Ergebnis all dieser Funktionen ist eine neue Tabelle mit angewendeter Transf
 
 Die Argumente für diese Funktionen unterstützen die Delegierung. Eine **Filter** Funktion, die als Argument zum Abrufen verknüpfter Datensätze verwendet wird, durchsucht beispielsweise alle Auflistungen, auch wenn **"[dbo]. [ Allnotierungen] ' die** Datenquelle enthält eine Million Zeilen:
 
-```powerapps-comma
-AddColumns( RealEstateAgents; 
-    "Listings";  
-    Filter(  '[dbo].[AllListings]'; ListingAgentName = AgentName ) 
+```powerapps-dot
+AddColumns( RealEstateAgents, 
+    "Listings",  
+    Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName ) 
 )
 ```
 
@@ -66,26 +65,26 @@ Die Ausgabe dieser Funktionen unterliegt jedoch dem [Grenzwert für nicht Delegi
 Wenn Sie **AddColumns** auf diese Weise verwenden, muss der **Filter** separate Aufrufe an die Datenquelle für jeden dieser ersten Datensätze in **realestateagents**durchführen, wodurch viele netzwerkchatter verursacht werden. Wenn **[dbo]. [ Allcollect]** ist klein genug und ändert sich nicht häufig, Sie können die **Collect** -Funktion in [**OnStart**](signals.md#app) aufrufen, um die Datenquelle in der APP beim Start zwischenzuspeichern. Als Alternative können Sie Ihre APP so strukturieren, dass Sie die zugehörigen Datensätze nur dann abrufen, wenn Sie vom Benutzer angefordert werden.  
 
 ## <a name="syntax"></a>Syntax
-**AddColumns**( *Tabelle*; *Spaltenname1*; *Formel1* [; *Spaltenname2*; *Formel2*; ... ] )
+**AddColumns**( *Tabelle*, *Spaltenname1*, *Formel1* [, *Spaltenname2*, *Formel2*, ... ] )
 
-* *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
+* *Table*: erforderlich.  Die zu verarbeitende Tabelle.
 * *ColumnName(s)* : erforderlich. Name(n) der hinzuzufügenden Spalte(n).  Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Name"** in doppelten Anführungszeichen)
 * *Formel(n)* (erforderlich):  Die für jeden Datensatz der Tabelle auszuwertende(n) Formel(n). Das Ergebnis wird als der Wert der entsprechenden neuen Spalte hinzugefügt. Sie können in dieser Formel auf andere Spalten der Tabelle verweisen.
 
-**DropColumns**( *Tabelle*; *Spaltenname1* [; *Spaltenname2*; ... ] )
+**DropColumns**( *Tabelle*, *Spaltenname1* [, *Spaltenname2*, ... ] )
 
-* *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
+* *Table*: erforderlich.  Die zu verarbeitende Tabelle.
 * *ColumnName(s)* : erforderlich. Name(n) der zu verwerfenden Spalte(n). Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Name"** in doppelten Anführungszeichen)
 
-**Renamecolumns**( *Table*; *OldColumnName1*; *NewColumnName1* [; *OldColumnName2*; *NewColumnName2*;...])
+**Renamecolumns**( *Table*, *OldColumnName1*, *NewColumnName1* [, *OldColumnName2*, *NewColumnName2*,...])
 
-* *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
+* *Table*: erforderlich.  Die zu verarbeitende Tabelle.
 * *AlterSpaltenname*: erforderlich. Name einer umzubenennenden Spalte aus der ursprünglichen Tabelle. Dieses Element wird als erstes in dem Argumentpaar angezeigt (oder als erstes in jedem Argumentpaar, wenn die Formel mehr als ein Paar enthält). Der Name muss eine Zeichenfolge sein (z.B. **"Name"** in doppelten Anführungszeichen).
 * *NeuerSpaltenname*: erforderlich. Der neue Name. Dieses Element wird als letztes in dem Argumentpaar angezeigt (oder als letztes in jedem Argumentpaar, wenn die Formel mehr als ein Paar enthält). Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Customer Name"** (Kundenname) in doppelten Anführungszeichen).
 
-**ShowColumns**( *Tabelle*; *Spaltenname1* [; *Spaltenname2*; ... ] )
+**ShowColumns**( *Tabelle*, *Spaltenname1* [, *Spaltenname2*, ... ] )
 
-* *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
+* *Table*: erforderlich.  Die zu verarbeitende Tabelle.
 * *ColumnName(s)* : erforderlich. Name(n) der einzuschließenden Spalte(n). Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Name"** in doppelten Anführungszeichen)
 
 ## <a name="examples"></a>Beispiele
@@ -97,12 +96,12 @@ Keines dieser Beispiele verändert die Datenquelle **IceCreamSales**. Jede Funkt
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **AddColumns( IceCreamSales; "Revenue"; UnitPrice * QuantitySold )** |Fügt dem Ergebnis die Spalte **Revenue** (Umsatz) hinzu.  **UnitPrice * QuantitySold** (Stückpreis * verkaufte Menge) wird für jeden Datensatz ausgewertet, und das Ergebnis wird in die neue Spalte eingefügt. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
-| **DropColumns( IceCreamSales; "UnitPrice" )** |Schließt die Spalte **UnitPrice** aus dem Ergebnis aus. Mit dieser Funktion können Spalten ausgeschlossen und mit **ShowColumns** eingeschlossen werden. |![](media/function-table-shaping/icecream-drop-price.png) |
-| **ShowColumns( IceCreamSales; "Flavor" )** |Schließt nur die Spalte **Flavor** (Geschmack) im Resultset ein. Mithilfe dieser Funktion können Sie Spalten einschließen und mithilfe der Funktion **DropColumns** ausschließen. |![](media/function-table-shaping/icecream-select-flavor.png) |
-| **RenameColumns( IceCreamSales; "UnitPrice"; "Price")** |Benennt die Spalte **UnitPrice** im Ergebnis um. |![](media/function-table-shaping/icecream-rename-price.png) |
-| **RenameColumns( IceCreamSales; "UnitPrice"; "Price"; "QuantitySold"; "Number")** |Benennt die Spalten **UnitPrice** und **QuantitySold** im Ergebnis um. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
-| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales; "Revenue";<br>UnitPrice * QuantitySold );<br>"UnitPrice"; "Price" );<br>"Quantity" )** |Führt der Reihe nach die folgenden Transformationen aus, beginnend im Kern der Formel: <ol><li>Fügt eine **Revenue**-Spalte basierend auf der Berechnung von **UnitPrice * Quantity** (Stückpreis * Menge) pro Datensatz hinzu.<li>Benennt **UnitPrice** in **Price** (Preis) um.<li>Schließt die Spalte **Quantity** aus.</ol>  Beachten Sie, dass diese Reihenfolge wichtig ist. Angenommen, **UnitPrice** kann nach der Umbenennung nicht berechnet werden. |![](media/function-table-shaping/icecream-all-transforms.png) |
+| **AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )** |Fügt dem Ergebnis die Spalte **Revenue** (Umsatz) hinzu.  **UnitPrice * QuantitySold** (Stückpreis * verkaufte Menge) wird für jeden Datensatz ausgewertet, und das Ergebnis wird in die neue Spalte eingefügt. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
+| **DropColumns( IceCreamSales, "UnitPrice" )** |Schließt die Spalte **UnitPrice** aus dem Ergebnis aus. Mit dieser Funktion können Spalten ausgeschlossen und mit **ShowColumns** eingeschlossen werden. |![](media/function-table-shaping/icecream-drop-price.png) |
+| **ShowColumns( IceCreamSales, "Flavor" )** |Schließt nur die Spalte **Flavor** (Geschmack) im Resultset ein. Mithilfe dieser Funktion können Sie Spalten einschließen und mithilfe der Funktion **DropColumns** ausschließen. |![](media/function-table-shaping/icecream-select-flavor.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |Benennt die Spalte **UnitPrice** im Ergebnis um. |![](media/function-table-shaping/icecream-rename-price.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Benennt die Spalten **UnitPrice** und **QuantitySold** im Ergebnis um. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
+| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |Führt der Reihe nach die folgenden Transformationen aus, beginnend im Kern der Formel: <ol><li>Fügt eine **Revenue**-Spalte basierend auf der Berechnung von **UnitPrice * Quantity** (Stückpreis * Menge) pro Datensatz hinzu.<li>Benennt **UnitPrice** in **Price** (Preis) um.<li>Schließt die Spalte **Quantity** aus.</ol>  Beachten Sie, dass diese Reihenfolge wichtig ist. Angenommen, **UnitPrice** kann nach der Umbenennung nicht berechnet werden. |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>Schritt für Schritt
 
@@ -110,12 +109,12 @@ Probieren wir einige Beispiele aus, die in diesem Thema erwähnt wurden.
 
 1. Erstellen Sie eine Sammlung, indem Sie ein **[Schalt](../controls/control-button.md)** Flächen-Steuerelement hinzufügen und dessen Eigenschaft **onselect** auf diese Formel festlegen:
 
-    ```powerapps-comma
-    ClearCollect( IceCreamSales; 
+    ```powerapps-dot
+    ClearCollect( IceCreamSales, 
         Table(
-            { Flavor: "Strawberry"; UnitPrice: 1,99; QuantitySold: 20 }; 
-            { Flavor: "Chocolate"; UnitPrice: 2,99; QuantitySold: 45 };
-            { Flavor: "Vanilla"; UnitPrice: 1,50; QuantitySold: 35 }
+            { Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 }, 
+            { Flavor: "Chocolate", UnitPrice: 2.99, QuantitySold: 45 },
+            { Flavor: "Vanilla", UnitPrice: 1.50, QuantitySold: 35 }
         )
     )
     ```
@@ -124,9 +123,9 @@ Probieren wir einige Beispiele aus, die in diesem Thema erwähnt wurden.
 
 1. Fügen Sie ein zweites **Button** -Steuerelement hinzu, legen Sie dessen **onselect** -Eigenschaft auf diese Formel fest, und führen Sie es aus:
 
-    ```powerapps-comma
-    ClearCollect( FirstExample; 
-        AddColumns( IceCreamSales; "Revenue"; UnitPrice * QuantitySold )
+    ```powerapps-dot
+    ClearCollect( FirstExample, 
+        AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
     ) 
     ```
 1. Wählen Sie im Menü **Datei** die Option **Sammlungen**aus, und wählen Sie dann **icecreamsales** aus, um diese Sammlung anzuzeigen.

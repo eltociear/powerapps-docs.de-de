@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7663668b77c6f8186ef54c3182230fa843f86577
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7226433c5e95537346841f2e2f9474ea68e42dda
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995701"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675083"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Referenzinformationen zur e-Mail-Bildschirm Vorlage für Canvas-apps
 
-Für Canvas-apps in powerapps können Sie verstehen, wie jede bedeutende Kontrolle in der e-Mail-Bildschirm Vorlage zur gesamten Standardfunktionalität des Bildschirms beiträgt. Dieser ausführliche Einblick zeigt die Verhaltens Formeln und die Werte anderer Eigenschaften, die bestimmen, wie die Steuerelemente auf Benutzereingaben reagieren. Eine allgemeine Erörterung der Standardfunktionalität dieses Bildschirms finden Sie in der [Übersicht über den e-Mail-Bildschirm](email-screen-overview.md).
+Verstehen Sie für Canvas-apps in Power apps, wie die einzelnen wichtigen Steuerelemente in der e-Mail-Bildschirm Vorlage zur gesamten Standardfunktionalität des Bildschirms beitragen. Dieser ausführliche Einblick zeigt die Verhaltens Formeln und die Werte anderer Eigenschaften, die bestimmen, wie die Steuerelemente auf Benutzereingaben reagieren. Eine allgemeine Erörterung der Standardfunktionalität dieses Bildschirms finden Sie in der [Übersicht über den e-Mail-Bildschirm](email-screen-overview.md).
 
 In diesem Thema werden einige bedeutende Steuerelemente hervorgehoben und die Ausdrücke oder Formeln erläutert, mit denen verschiedene Eigenschaften (z. b. **Elemente** und **onselect**) dieser Steuerelemente festgelegt werden:
 
@@ -53,12 +52,12 @@ Mehrere andere Steuerelemente auf dem Bildschirm weisen eine Abhängigkeit vom *
 
 Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in der Organisation vorhanden sind, der Empfängerliste der erstellten e-Mail hinzufügen.
 
-* Property **Barem**<br>
-    Wert Logik, mit der das Steuerelement nur angezeigt wird, wenn ein Benutzer eine gültige e-Mail-Adresse in das Suchfeld eingibt:
+* Eigenschaft: **sichtbar**<br>
+    Wert: Logik, mit der das Steuerelement nur angezeigt wird, wenn ein Benutzer eine gültige e-Mail-Adresse in das Suchfeld eingibt:
 
-    ```powerapps-comma
+    ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text; Match.Email ) &&
+        IsMatch( TextSearchBox.Text, Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
   Zeilenweise bedeutet der vorangehende Codeblock, dass das **Add-Symbol** -Steuerelement nur dann sichtbar ist, wenn Folgendes gilt:
@@ -67,17 +66,17 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
     * Der Text in **textsearchbox** ist eine gültige e-Mail-Adresse.
     * Der Text in **textsearchbox** ist in der **mypeople** -Auflistung nicht bereits vorhanden.
 
-* Property **OnSelect**<br>
-    Wert Wenn Sie diese Option auswählen, wird die gültige e-Mail-Adresse zur **mypeople** -Sammlung Diese Sammlung wird vom Bildschirm als Empfängerliste verwendet:
+* Eigenschaft: **onselect**<br>
+    Wert: bei Auswahl dieser Option wird die gültige e-Mail-Adresse der **mypeople** -Sammlung hinzugefügt. Diese Sammlung wird vom Bildschirm als Empfängerliste verwendet:
 
-    ```powerapps-comma
-    Collect( MyPeople;
+    ```powerapps-dot
+    Collect( MyPeople,
         { 
-            DisplayName: TextSearchBox.Text; 
-            UserPrincipalName: TextSearchBox.Text; 
+            DisplayName: TextSearchBox.Text, 
+            UserPrincipalName: TextSearchBox.Text, 
             Mail: TextSearchBox.Text
         }
-    );;
+    );
     Reset( TextSearchBox )
     ```
   
@@ -87,43 +86,43 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
 
    ![People browsegallery-Steuerelement](media/email-screen/email-browse-gall.png)
 
-* Property **Punkte**<br>
-    Wert Die ersten 15 Suchergebnisse des Suchtexts, der in das **textsearchbox** -Steuerelement eingegeben wurde:
+* Eigenschaft: **Elemente**<br>
+    Value: die 15 besten Suchergebnisse des Suchtexts, der in das **textsearchbox** -Steuerelement eingegeben wurde:
     
-    ```powerapps-comma
-    If( !IsBlank( Trim(TextSearchBox.Text ) ); 
-        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ); top: 15} )
+    ```powerapps-dot
+    If( !IsBlank( Trim(TextSearchBox.Text ) ), 
+        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ), top: 15} )
     )
     ```
 
-  Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 365. searchuser](https://docs.microsoft.com/connectors/office365users/#searchuser) aufgefüllt. Der-Vorgang nimmt den Text in `Trim(TextSearchBox)` als Suchbegriff und gibt die 15 besten Ergebnisse basierend auf dieser Suche zurück.
+  Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 365. searchuser](https://docs.microsoft.com/connectors/office365users/#searchuser) aufgefüllt. Der-Vorgang nimmt den Text in `Trim(TextSearchBox)` als Suchbegriff und gibt basierend auf dieser Suche die 15 besten Ergebnisse zurück.
   
-  **Textsearchbox** ist in einer `Trim()`-Funktion umschließt, weil eine Benutzersuche in Leerzeichen ungültig ist. Der `Office365Users.SearchUser`-Vorgang wird in einer `If(!IsBlank(Trim(TextSearchBox.Text)) ... )`-Funktion umschließt. Dies bedeutet, dass der Vorgang nur ausgeführt wird, wenn das Suchfeld einen von Benutzern eingegebenen Text enthält. Dadurch wird die Leistung verbessert. 
+  **Textsearchbox** ist in einer `Trim()` Funktion umschließt, weil eine Benutzersuche in Leerzeichen ungültig ist. Der `Office365Users.SearchUser` Vorgang wird in eine `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` Funktion umschließt, was bedeutet, dass der Vorgang nur ausgeführt wird, wenn das Suchfeld einen von Benutzern eingegebenen Text enthält. Dadurch wird die Leistung verbessert. 
 
 ### <a name="people-browse-gallery-title-control"></a>Personen durchsuchen Galerie Titel-Steuerelement
 
    ![People browsegallery-Titel Steuerelement](media/email-screen/email-browse-gall-title.png)
 
-* Property **Text**<br>
+* Eigenschaft: **Text**<br>
     Wert: `ThisItem.DisplayName`
 
   Zeigt den anzeigen amen der Person aus Ihrem Office 365-Profil an.
 
-* Property **OnSelect**<br>
-    Wert Code zum Hinzufügen des Benutzers zu einer Sammlung auf App-Ebene, und wählen Sie dann den Benutzer aus:
+* Eigenschaft: **onselect**<br>
+    Wert: Code zum Hinzufügen des Benutzers zu einer Sammlung auf App-Ebene, und wählen Sie dann den Benutzer aus:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Set( _selectedUser; ThisItem );
-        Reset( TextSearchBox );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem )
+        Set( _selectedUser, ThisItem ),
+        Reset( TextSearchBox ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem )
         )
     )
     ```
 Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
 
-   * Legt die **_selectedUser** -Variable auf das ausgewählte Element fest.
+   * Legt die **_selectedUser** Variable auf das ausgewählte Element fest.
    * Setzt den Suchbegriff in **textsearchbox**zurück.
    * Fügt das ausgewählte Element der **mypeople** -Auflistung hinzu, einer Auflistung aller ausgewählten Benutzer, die der e-Mail-Bildschirm als Empfängergruppe verwendet.
 
@@ -131,27 +130,27 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
 
    ![Emailpeoplegallery-Steuerelement](media/email-screen/email-people-gall.png)
 
-* Property **Punkte**<br>
+* Eigenschaft: **Elemente**<br>
     Wert: `MyPeople`
 
   Dabei handelt es sich um die Auflistung von Personen, die initialisiert oder zu hinzugefügt werden, indem das Steuerelement **People browsegallery Title** ausgewählt wird.
 
-* Property **Flugh**<br>
-    Wert Logik zum Festlegen der Höhe, basierend auf der Anzahl der aktuell im Katalog enthaltenen Elemente:
+* Property: **height**<br>
+    Wert: Logik zum Festlegen der Höhe, basierend auf der Anzahl der gegenwärtig im Katalog enthaltenen Elemente:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery.TemplateHeight + EmailPeopleGallery.TemplatePadding * 2) *
-            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0 );
+            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0 ),
         304
     )
     ```
 
   Die Höhe dieses Katalogs entspricht der Anzahl der Elemente im Katalog mit einer maximalen Höhe von 304.
   
-  Es nimmt `TemplateHeight + TemplatePadding * 2` als Gesamthöhe einer einzelnen Zeile von **emailpeoplegallery**auf und multipliziert Sie dann mit der Anzahl der Zeilen. Da `WrapCount = 2` ist, ist die Anzahl der echten Zeilen `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0)`.
+  Es nimmt `TemplateHeight + TemplatePadding * 2` als Gesamthöhe einer einzelnen Zeile von **emailpeoplegallery**an und multipliziert Sie dann mit der Anzahl der Zeilen. Seit `WrapCount = 2`wird die Anzahl der echten Zeilen `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`.
 
-* Property **ShowScrollbar**<br>
+* Property: **ShowScrollbar**<br>
     Wert: `EmailPeopleGallery.Height >= 304`
   
   Wenn die Höhe des Katalogs 304 erreicht, ist die Scrollleiste sichtbar.
@@ -160,46 +159,46 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
 
    ![Emailpeoplegallery-Titel Steuerelement](media/email-screen/email-people-gall-text.png)
 
-* Property **OnSelect**<br>
-    Wert: `Set(_selectedUser; ThisItem)`
+* Eigenschaft: **onselect**<br>
+    Wert: `Set(_selectedUser, ThisItem)`
 
-  Legt die **_selectedUser** -Variable auf das in **emailpeoplegallery**ausgewählte Element fest.
+  Legt die **_selectedUser** Variable auf das in **emailpeoplegallery**ausgewählte Element fest.
 
 ### <a name="email-people-gallery-iconremove-control"></a>Email People Gallery iconremove-Steuerelement
 
    ![Monthdaygallery-Titel Steuerelement](media/email-screen/email-people-gall-delete.png)
 
-* Property **OnSelect**<br>
-    Wert: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
+* Eigenschaft: **onselect**<br>
+    Wert: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
   Sucht den Datensatz in der **mypeople** -Auflistung, wobei " **userPrincipalName** " mit dem " **userPrincipalName** " des ausgewählten Elements übereinstimmt, und entfernt diesen Datensatz aus der Sammlung.
 
 ## <a name="mail-icon"></a>Symbol "Mail"
 
-* Property **OnSelect**<br>
-    Wert Logik zum Senden der e-Mail-Nachricht des Benutzers:
+* Eigenschaft: **onselect**<br>
+    Wert: Logik zum Senden der e-Mail-Nachricht des Benutzers:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat( MyPeople; Mail & ";" ) );;
-    'Office365'.SendEmail( _emailRecipientString; 
-        TextEmailSubject.Text;  
-        TextEmailMessage.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
+    'Office365'.SendEmail( _emailRecipientString, 
+        TextEmailSubject.Text,  
+        TextEmailMessage.Text, 
         { Importance:"Normal" }
-    );;
-    Reset( TextEmailSubject );;
-    Reset( TextEmailMessage );;
+    );
+    Reset( TextEmailSubject );
+    Reset( TextEmailMessage );
     Clear( MyPeople )
     ```
 
   Zum Senden einer e-Mail ist eine durch Semikolons getrennte Zeichenfolge von e-Mail-Adressen erforderlich. Im vorangehenden Code:
-  1. Die erste Codezeile übernimmt das Feld " **Mail** " aus allen Zeilen in der **mypeople** -Auflistung, verkettet Sie in einer einzelnen, durch Semikolons getrennten Zeichenfolge von e-Mail-Adressen und legt die **_emailRecipientString** -Variable auf diese Zeichenfolge fest. Wert.
+  1. Die erste Codezeile übernimmt das Feld " **Mail** " aus allen Zeilen in der Sammlung " **mypeople** ", verkettet Sie in einer einzelnen, durch Semikolons getrennten Zeichenfolge von e-Mail-Adressen und legt die **_emailRecipientString** Variable auf diesen Zeichen folgen Wert fest.
 
   1. Anschließend wird der [Office 365. SendEmail](https://docs.microsoft.com/connectors/office365/#sendemail) -Vorgang verwendet, um die e-Mail an die Empfänger zu senden.
-    Der Vorgang verfügt über drei erforderliche Parameter: **to**, **Subject**und **Body**und einen optionalen Parameter--**Wichtigkeit**. Im vorangehenden Code sind dies **_emailRecipientString**, **textemailsubject**. Text, **textemailmessage**. Text (bzw. **Normal**).
+    Der Vorgang verfügt über drei erforderliche Parameter: **to**, **Subject**und **Body**und einen optionalen Parameter--**Wichtigkeit**. Im vorangehenden Code handelt es sichum _emailRecipientString **textemailsubject**. Text, **textemailmessage**. Text (bzw. **Normal**).
   1. Schließlich setzt es die Steuerelemente **textemailsubject** und **textemailmessage** zurück und löscht die Auflistung **mypeople** .
 
-* Property **Display Mode**<br>
-    Wert `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ); DisplayMode.Edit; DisplayMode.Disabled )` für eine e-Mail, die gesendet werden soll, muss die Betreffzeile der e-Mail über Text verfügen, und die Empfänger Auflistung (**mypeople**) darf nicht leer sein.
+* Eigenschaft: **Display Mode**<br>
+    Wert: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` für eine e-Mail, die gesendet werden soll, muss die Betreffzeile der e-Mail über Text verfügen, und die Empfänger Auflistung (**mypeople**) darf nicht leer sein.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

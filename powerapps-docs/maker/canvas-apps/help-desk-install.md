@@ -1,6 +1,6 @@
 ---
 title: Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps | Microsoft-Dokumentation
-description: Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps in PowerApps.
+description: Schritt-für-Schritt-Anleitungen für, in powerapps, installieren und Konfigurieren des Helpdesk-Beispiels für Canvas-apps.
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd5d8b8e6757b18feb5da03c503b19e689ca3efe
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541251"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676143"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Help Desk“ in PowerApps
 
-Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps in PowerApps.
+Schritt-für-Schritt-Anleitungen für, in powerapps, installieren und Konfigurieren des Helpdesk-Beispiels für Canvas-apps.
 
 Geschätzte Dauer: **10–15 Minuten**.
 
@@ -140,7 +140,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 ## <a name="download-the-app"></a>Herunterladen der APP
 
-1.  [Laden Sie das PowerApps-Paket herunter](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip), und speichern Sie es auf Ihrem Computer.
+1.  [Laden](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) Sie das powerapps-Paket herunter, und speichern Sie es auf Ihrem Computer.
 
 ## <a name="create-connections"></a>Erstellen von Verbindungen
 
@@ -242,7 +242,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
     
    > [!TIP]
    > Wenn Sie über mehr als einen Administrator verfügen, verwenden Sie ein Komma, um die Liste der Administratoren zu begrenzen. Beispiel: "admin1@microsoft.com","admin2@microsoft.com".
-   > Sehen Sie sich unter „Ansicht“ > „Variablen“ > „Global“ > „MyProfile“ (Mein Profil) in der Spalte „E-Mail“ das E-Mail-Format an, um zu überprüfen, ob die Adressen in „AdminList“ dem von PowerApps erwarteten Format entsprechen.
+   > Um sicherzustellen, dass die Adressen in der adminlist dem Format entsprechen, das von powerapps erwartet wird, wählen Sie > Variablen anzeigen > Global > myProfile aus, und betrachten Sie die Spalte "Mail", um das erwartete e-Mail-Format
 
 1. Klicken Sie auf **Datei** > **Speichern** > **Veröffentlichen** > **Diese Version veröffentlichen**.
 
