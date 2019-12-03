@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74678233"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="notify-function-in-powerapps"></a>Benachrichtigungsfunktion in PowerApps
 Zeigt dem Benutzer eine Bannermeldung an.
@@ -48,7 +49,7 @@ Powerapps kann auch Pushbenachrichtigungen mit einem völlig anderen Mechanismus
 Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn nur Fehlermeldungen angezeigt werden konnten.
 
 ## <a name="syntax"></a>Syntax
-**Notify**( *Message*, [ *NotificationType* ] )
+**Notify**( *Message*; [ *NotificationType* ] )
 
 * *Message* – Erforderlich.  Meldung, die dem Benutzer angezeigt wird.
 * *NotificationType* – Optional.  In der obenstehenden Tabelle aufgelisteter Meldungstyp, der angezeigt werden soll.  Standardmäßig wird **NotificationType.Information** angezeigt.  
@@ -71,7 +72,7 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit ein Fehler angezeigt wird.  Fügen Sie ein zweites Argument zu der Formel hinzu:
 
-    **Notify( "Hello, World", NotificationType.Error )**
+    **Notify( "Hello, World"; NotificationType.Error )**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
@@ -81,7 +82,7 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit eine Warnung angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    **Notify( "Hello, World", NotificationType.Warning )**
+    **Notify( "Hello, World"; NotificationType.Warning )**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
@@ -91,7 +92,7 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit ein Erfolg angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    **Notify( "Hello, World", NotificationType.Success )**
+    **Notify( "Hello, World"; NotificationType.Success )**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 

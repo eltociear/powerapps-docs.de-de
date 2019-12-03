@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74679774"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>Erstellen von reaktionsfähigen Layouts in Canvas-apps
 
@@ -44,9 +45,9 @@ Damit Ihre APP reaktionsfähig ist, müssen Sie zusätzliche Schritte ausführen
 
 Damit die Layouts der APP auf Änderungen in den Bildschirmdimensionen reagieren, schreiben Sie Formeln, die die Eigenschaften " **Width** " und " **height** " auf dem Bildschirm verwenden. Um diese Eigenschaften anzuzeigen, öffnen Sie eine app in powerapps Studio, und wählen Sie dann einen Bildschirm aus. Die Standardformeln für diese Eigenschaften werden auf der Registerkarte **erweitert** des rechten Bereichs angezeigt.
 
-**Breite** = `Max(App.Width, App.DesignWidth)`
+**Breite** = `Max(App.Width; App.DesignWidth)`
 
-**Höhe** = `Max(App.Height, App.DesignHeight)`
+**Höhe** = `Max(App.Height; App.DesignHeight)`
 
 Diese Formeln beziehen sich auf die Eigenschaften " **Width**", " **height**", " **designwidth**" und " **designheight** " der app. Die Eigenschaften " **Width** " und " **height** " der App entsprechen den Dimensionen des Geräts oder Browserfensters, in dem Ihre APP ausgeführt wird. Wenn der Benutzer die Größe des Browserfensters ändert (oder das Gerät rotiert, wenn Sie die **Sperr Ausrichtung**ausgeschaltet haben), werden die Werte dieser Eigenschaften dynamisch geändert. Die Formeln in den Eigenschaften " **Width** " und " **height** " des Bildschirms werden erneut ausgewertet, wenn sich diese Werte ändern.
 
@@ -185,16 +186,16 @@ Bisher haben Sie gelernt, wie Sie Formeln verwenden, um die Größe jedes Steuer
 
 Die Standardformeln für die Eigenschaften " **Width** " und " **height** " eines Bildschirms, wie in diesem Thema bereits beschrieben, bieten nicht unbedingt eine gute Benutzerfunktion, wenn ein Benutzer ein Gerät rotiert. Beispielsweise hat eine APP, die für ein Telefon im Hochformat entworfen wurde, eine Entwurfs **Breite** von 640 und eine **designheight** von 1136. Die gleiche APP auf einem Telefon in Querformat weist die folgenden Eigenschaftswerte auf:
 
-- Die **Width** -Eigenschaft des Bildschirms ist auf `Max(App.Width, App.DesignWidth)`festgelegt. Die **Breite** der APP (1136) ist größer als die **designwidth** (640), sodass die Formel als 1136 ausgewertet wird.
-- Die **height** -Eigenschaft des Bildschirms ist auf `Max(App.Height, App.DesignHeight)`festgelegt. Die **Höhe** der APP (640) ist kleiner als die **designheight** (1136), sodass die Formel zu 1136 ausgewertet wird.
+- Die **Width** -Eigenschaft des Bildschirms ist auf `Max(App.Width; App.DesignWidth)`festgelegt. Die **Breite** der APP (1136) ist größer als die **designwidth** (640), sodass die Formel als 1136 ausgewertet wird.
+- Die **height** -Eigenschaft des Bildschirms ist auf `Max(App.Height; App.DesignHeight)`festgelegt. Die **Höhe** der APP (640) ist kleiner als die **designheight** (1136), sodass die Formel zu 1136 ausgewertet wird.
 
 Bei einer Bildschirm **Höhe** von 1136 und einer Geräte Höhe (in dieser Ausrichtung) von 640 muss der Benutzer den Bildschirm vertikal scrollen, um den gesamten Inhalt anzuzeigen. Dies ist möglicherweise nicht die gewünschte Umgebung.
 
 Wenn Sie die Eigenschaften **Breite** und **Höhe** des Bildschirms an die Geräte Ausrichtung anpassen möchten, können Sie folgende Formeln verwenden:
 
-**Breite** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
+**Breite** = `Max(App.Width; If(App.Width < App.Height; App.DesignWidth; App.DesignHeight))`
 
-**Höhe** = `Max(App.Height, If(App.Width < App.Height, App.DesignHeight, App.DesignWidth))`
+**Höhe** = `Max(App.Height; If(App.Width < App.Height; App.DesignHeight; App.DesignWidth))`
 
 Diese Formeln tauschen die **Design Width** -und **designheight** -Werte der APP aus, je nachdem, ob die Breite des Geräts kleiner ist als seine Höhe (Hochformat Ausrichtung) oder mehr als seine Höhe (Querformat).
 
@@ -209,10 +210,10 @@ Mit der Eigenschaft **Ausrichtung** des Bildschirms können Sie feststellen, ob 
 |--|----------|---|
 | **Weite** | **Stuben** | `0` |
 | **Weite** | **Teenie** | `0` |
-| **Weite** | **Breite** | `If(Parent.Orientation = Layout.Vertical, Parent.Width, Parent.Width / 2)` |
-| **Weite** | **Flugh**   | `If(Parent.Orientation = Layout.Vertical, Parent.Height / 2, Parent.Height)` |
-| **Günstigere** | X | `If(Parent.Orientation = Layout.Vertical, 0, Upper.X + Upper.Width)`  |
-| **Günstigere** | Y | `If(Parent.Orientation = Layout.Vertical, Upper.Y + Upper.Height, 0)` |
+| **Weite** | **Breite** | `If(Parent.Orientation = Layout.Vertical; Parent.Width; Parent.Width / 2)` |
+| **Weite** | **Flugh**   | `If(Parent.Orientation = Layout.Vertical; Parent.Height / 2; Parent.Height)` |
+| **Günstigere** | X | `If(Parent.Orientation = Layout.Vertical; 0; Upper.X + Upper.Width)`  |
+| **Günstigere** | Y | `If(Parent.Orientation = Layout.Vertical; Upper.Y + Upper.Height; 0)` |
 | **Günstigere** | **Breite** | `Parent.Width - Lower.X` |
 | **Günstigere** | **Flugh** | `Parent.Height - Lower.Y` |
 
@@ -239,12 +240,12 @@ Diese Formel ergibt **true** , wenn die Größe Mittel oder größer ist, und an
 
 Wenn Sie möchten, dass ein Steuerelement einen anderen Bruchteil der Bildschirmbreite basierend auf der Bildschirmgröße einnimmt, legen Sie die **Width** -Eigenschaft des Steuer Elements auf diese Formel fest:
 
-```powerapps-dot
+```powerapps-comma
 Parent.Width *  
-    Switch(Parent.Size,  
-        ScreenSize.Small, 0.5,  
-        ScreenSize.Medium, 0.3,  
-        0.25)
+    Switch(Parent.Size;  
+        ScreenSize.Small; 0,5;  
+        ScreenSize.Medium; 0,3;  
+        0,25)
 ```
 Mit dieser Formel wird die Breite des Steuer Elements auf einem kleinen Bildschirm auf die Hälfte der Bildschirmbreite festgelegt, die drei Zehntel der Bildschirmbreite auf einem mittleren Bildschirm und ein Quartal der Bildschirmbreite auf allen anderen Bildschirmen.
 
@@ -252,7 +253,7 @@ Mit dieser Formel wird die Breite des Steuer Elements auf einem kleinen Bildschi
 
 Die **size** -Eigenschaft des Bildschirms wird berechnet, indem die **Width** -Eigenschaft des Bildschirms mit den Werten in der **sizebreakpoints** -Eigenschaft der APP verglichen wird. Diese Eigenschaft ist eine einspaltige Tabelle mit Zahlen, die die Breite Haltepunkte angeben, mit denen die benannten Bildschirmgrößen getrennt werden:
 
-In einer APP, die für Tablet oder Web erstellt wurde, ist der Standardwert in der **sizebreakpoints** -Eigenschaft der APP **[600, 900, 1200]** . In einer für Smartphones erstellten App lautet der Wert **[1200, 1800, 2400]** . (Die Werte für Phone-apps werden verdoppelt, da solche apps Koordinaten verwenden, die die in anderen apps verwendeten Koordinaten effektiv verdoppeln.)
+In einer APP, die für Tablet oder Web erstellt wurde, ist der Standardwert in der **sizebreakpoints** -Eigenschaft der APP **[600; 900; 1200]** . In einer für Smartphones erstellten App lautet der Wert **[1200; 1800; 2400]** . (Die Werte für Phone-apps werden verdoppelt, da solche apps Koordinaten verwenden, die die in anderen apps verwendeten Koordinaten effektiv verdoppeln.)
 
 ![Standardwerte der app. sizebreakpoints-Eigenschaft](media/create-responsive-layout/default-breakpoints.png)
 

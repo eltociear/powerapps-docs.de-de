@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74674789"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Generieren einer Canvas-App zum Verarbeiten von Projektanforderungen
 > [!NOTE]
@@ -85,7 +86,7 @@ Da jetzt die SharePoint-Listen vorhanden sind, können wir unsere erste App erst
    
     ![Items-Eigenschaft](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Ändern Sie die Formel in **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
+6. Ändern Sie die Formel in **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
    
     ![Die Bearbeitungsleiste](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    

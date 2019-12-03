@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74679797"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="button-control-in-powerapps"></a>Schaltflächen-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen mit der App interagieren können.
@@ -117,7 +118,7 @@ Konfigurieren Sie die **[OnSelect](properties-core.md)** -Eigenschaft eines **Sc
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-**[Navigate( *ScreenName*, *ScreenTransitionValue* )](../functions/function-navigate.md)**
+**[Navigate( *ScreenName*; *ScreenTransitionValue* )](../functions/function-navigate.md)**
 
 ## <a name="examples"></a>Beispiele
 ### <a name="add-a-basic-formula-to-a-button"></a>Hinzufügen einer einfachen Formel zu einer Schaltfläche
@@ -144,7 +145,7 @@ Fügen Sie eine Formel hinzu, die das **Texteingabe**-Steuerelement zwischen Ein
 1. Legen Sie die **[HintText](control-text-input.md)** -Eigenschaft von **Quelle** auf „Eine Zahl eingeben“ fest.
 2. Legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft von **Hinzufügen** auf die folgende Formel fest:
    
-    **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
+    **UpdateContext({Total:Total + Value(Source.Text)});;<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
    > Trennen Sie mehrere Formeln durch ein Semikolon „ **;** “.

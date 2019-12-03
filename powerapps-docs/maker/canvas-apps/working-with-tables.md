@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74673158"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>Grundlegendes zu Canvas-App-Tabellen und -Datensätzen in PowerApps
 
@@ -40,7 +41,7 @@ Sie können eine Vielzahl von Formeln erstellen, die den Namen einer Tabelle als
 ### <a name="records"></a>Datensätze
 Jeder Datensatz enthält mindestens eine Kategorie von Informationen zu einer Person, einem Ort oder einem Gegenstand. Im obigen Beispiel für jedes Produkt ein Datensatz (**Chocolate** (Schokolade), **Bread** (Brot) und **Water** (Wasser)) und eine Spalte für jede Informationskategorie vorhanden (**Price** (Preis), **Quantity on Hand** (Lagerbestand) und **Quantity on Order** (bestellte Menge)).
 
-In einer Formel können Sie mit geschweiften Klammern auf einen Datensatz selbst, außerhalb eines Tabellenkontexts verweisen. Angenommen, der Datensatz **{ Name: "Strawberries", Price: 7.99 }** (Name: "Erdbeeren", Preis: 7.99) ist nicht mit einer Tabelle verknüpft. Beachten Sie, dass die Feldnamen in diesem Beispiel, **Name** und **Price**, nicht in doppelte Anführungszeichen eingeschlossen sind.
+In einer Formel können Sie mit geschweiften Klammern auf einen Datensatz selbst, außerhalb eines Tabellenkontexts verweisen. Angenommen, der Datensatz **{ Name: "Strawberries"; Price: 7,99 }** (Name: "Erdbeeren", Preis: 7.99) ist nicht mit einer Tabelle verknüpft. Beachten Sie, dass die Feldnamen in diesem Beispiel, **Name** und **Price**, nicht in doppelte Anführungszeichen eingeschlossen sind.
 
 ### <a name="fields"></a>Felder
 Ein Feld ist eine einzelne Information in einem Datensatz. Sie können diese Art von Feld als Wert in einer Spalte eines bestimmten Datensatzes visuell darstellen.
@@ -73,11 +74,11 @@ Alle Tabellen, die in einer Datenquelle oder eine Sammlung gespeichert sind, hab
 
 Sie können wie im folgenden Beispiel eine Tabelle in einer Formel ausdrücken, indem Sie die **[Table](functions/function-table.md)** -Funktion mit einer Reihe von Datensätzen verwenden, die Sie in geschweiften Klammern ausdrücken:
 
-`Table( { Value: "Strawberry" }, { Value: "Vanilla" } )`
+`Table( { Value: "Strawberry" }; { Value: "Vanilla" } )`
 
 Sie können auch eine einspaltige Tabelle mit eckigen Klammern definieren.  Alternativ können Sie den obigen Ausdruck wie folgt schreiben:
 
-`[ "Strawberry", "Vanilla" ]`
+`[ "Strawberry"; "Vanilla" ]`
 
 ## <a name="table-formulas"></a>Tabellenformeln
 In Excel und powerapps verwenden Sie Formeln, um Zahlen und Text Zeichenfolgen auf ähnliche Weise zu bearbeiten:
@@ -87,7 +88,7 @@ In Excel und powerapps verwenden Sie Formeln, um Zahlen und Text Zeichenfolgen a
 
 In beiden Fällen ändert sich der berechnete Wert automatisch, wenn die Werte der Argumente geändert werden (z.B. die Zahl in Zelle **A1** oder der Wert von **Slider1**).
 
-Sie können Formeln auf ähnliche Weise verwenden, um auf Daten in Tabellen und Datensätzen zuzugreifen und diese zu bearbeiten. In einigen Formeln können Sie Tabellennamen wie **Min(Catalog, Price)** als Argumente verwenden, um den niedrigsten Wert in der Spalte **Price** der **Catalog**-Tabelle anzuzeigen. Andere Formeln stellen ganze Tabellen als Rückgabewerte bereit, wie z.B. **RenameColumns(Catalog, "Price", "Cost")** , womit alle Datensätze aus der **Catalog**-Tabelle zurückgegeben werden, jedoch der Name der Spalte **Price** in **Cost** (Kosten) geändert wird.
+Sie können Formeln auf ähnliche Weise verwenden, um auf Daten in Tabellen und Datensätzen zuzugreifen und diese zu bearbeiten. In einigen Formeln können Sie Tabellennamen wie **Min(Catalog; Price)** als Argumente verwenden, um den niedrigsten Wert in der Spalte **Price** der **Catalog**-Tabelle anzuzeigen. Andere Formeln stellen ganze Tabellen als Rückgabewerte bereit, wie z.B. **RenameColumns(Catalog; "Price"; "Cost")** , womit alle Datensätze aus der **Catalog**-Tabelle zurückgegeben werden, jedoch der Name der Spalte **Price** in **Cost** (Kosten) geändert wird.
 
 Ebenso wie Zahlen, werden Formeln, die Tabellen und Datensätze enthalten, automatisch neu berechnet, wenn die zugrunde liegenden Tabelle oder der zugrunde liegende Datensatz geändert wird. Wenn die Kosten eines Produkts in die **Catalog**-Tabelle unter den vorherigen Mindestwert sinken, wird der Rückgabewert der **[Min](functions/function-aggregates.md)** -Formel automatisch geändert und angepasst.
 
@@ -104,7 +105,7 @@ Lassen Sie einige einfache Beispiele ansehen.
 
 2. Statt die **[Items](controls/properties-core.md)** -Eigenschaft auf den Namen einer Tabelle festzulegen, legen Sie sie auf eine Formel fest, die den Namen der Tabelle als Argument enthält, wie in diesem Beispiel:
 
-    `Sort(CustomGallerySample, SampleHeading, Descending)`
+    `Sort(CustomGallerySample; SampleHeading; Descending)`
 
     Diese Formel beinhaltet die **[Sort](functions/function-sort.md)** -Funktion, die den Namen einer Tabelle als erstes Argument und der Name einer Spalte in dieser Tabelle als zweites Argument akzeptiert. Die Funktion unterstützt auch ein optionales drittes Argument, das vorschreibt, dass die Daten in absteigender Reihenfolge sortiert werden sollen.
 
@@ -112,7 +113,7 @@ Lassen Sie einige einfache Beispiele ansehen.
 
 3. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft auf eine Formel fest, die die Formel aus dem vorherigen Schritt als Argument akzeptiert und eine Tabelle zurückgibt, wie im folgenden Beispiel:
 
-    `FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)`
+    `FirstN(Sort(CustomGallerySample; SampleHeading; Descending); 2)`
 
     In dieser Formel verwenden Sie die Funktion **[FirstN](functions/function-first-last.md)** , um eine bestimmte Anzahl von Datensätzen in einer Tabelle anzuzeigen. Verwenden Sie die **[Sort](functions/function-sort.md)** -Funktion als erstes Argument für **[FirstN](functions/function-first-last.md)** und eine Zahl (in diesem Fall **2**) als das zweite Argument, das angibt, wie viele Datensätze angezeigt werden sollen.
 
@@ -161,7 +162,7 @@ Andere Funktionen sind speziell zum Ändern von Daten und zum Auftreten von Nebe
 Sie können auch eine Formel erstellen, die Daten für einen einzelnen Datensatz berechnet, einen einzelnen Datensatz als Argument akzeptiert und einen einzelnen Datensatz als Rückgabewert bereitstellt. Lassen Sie uns zum Katalogbeispiel zurückkehren und die **Gallery1.Selected**-Eigenschaft zum Anzeigen von Informationen aus einem beliebigen Datensatz verwenden, den der Benutzer aus dem Katalog ausgewählt hat.
 
 1. Fügen Sie eine [**Schaltfläche**](controls/control-button.md)hinzu, und legen Sie die **[onselect](controls/properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
-    **Collect( SelectedRecord, Gallery1.Selected )**
+    **Collect( SelectedRecord; Gallery1.Selected )**
 
 2. Halten Sie die ALT-TASTE gedrückt, und wählen Sie die Schaltfläche aus.
 
@@ -228,20 +229,20 @@ Nehmen Sie z.B. die Tabelle **Products**:
 
 Um diese Beispiel Tabelle in Ihrer APP zu erstellen, fügen Sie eine Schaltfläche ein, legen Sie die **onselect** -Eigenschaft auf diese Formel fest, und wählen Sie dann die Schaltfläche aus (Klicken Sie, während Sie die Alt-Taste in Power apps Studio gedrückt halten):
 
-```powerapps-dot
-Set( Products,
+```powerapps-comma
+Set( Products;
     Table(
-        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 },
-        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
-        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
-        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 }
+        { Product: "Widget";    'Quantity Requested': 6;  'Quantity Available': 3 };
+        { Product: "Gadget";    'Quantity Requested': 10; 'Quantity Available': 20 };
+        { Product: "Gizmo";     'Quantity Requested': 4;  'Quantity Available': 11 };
+        { Product: "Apparatus"; 'Quantity Requested': 7;  'Quantity Available': 6 }
     )
 )
 ```
 
 So bestimmen Sie, ob eines dieser Produkte mehr angefordert hat, als verfügbar ist:
 
-`Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
+`Filter( Products; 'Quantity Requested' > 'Quantity Available' )`
 
 Das erste Argument für **Filter** ist die Tabelle von Datensätzen, die verarbeitet wird, und das zweite Argument ist eine Formel.  **Filter** erstellt eine Datensatzebene für die Auswertung dieser Formel, in dem die Felder jedes Datensatzes verfügbar sind, in diesem Fall **Product**, **Quantity Requested** (Nachgefragte Menge) und **Quantity Available** (verfügbare Menge).  Das Ergebnis des Vergleichs bestimmt, ob jeder Datensatz in das Ergebnis der Funktion aufgenommen werden soll:
 
@@ -249,10 +250,10 @@ Das erste Argument für **Filter** ist die Tabelle von Datensätzen, die verarbe
 
 Außerdem können wir berechnen, wie viel von jedem Produkt bestellt werden soll:
 
-```powerapps-dot
+```powerapps-comma
 AddColumns( 
-    Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
-    "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
+    Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
+    "Quantity To Order"; 'Quantity Requested' - 'Quantity Available'
 )
 ```
 
@@ -262,13 +263,13 @@ Hier wird dem Ergebnis eine berechnete Spalte hinzugefügt. **AddColumns** verf�
 
 Schließlich können wir die Ergebnistabelle auf nur die gewünschten Spalten reduzieren:
 
-```powerapps-dot
+```powerapps-comma
 ShowColumns(
     AddColumns(
-        Filter( Products, 'Quantity Requested' > 'Quantity Available' ),
-        "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
-    ),
-    "Product",
+        Filter( Products; 'Quantity Requested' > 'Quantity Available' );
+        "Quantity To Order"; 'Quantity Requested' - 'Quantity Available'
+    );
+    "Product";
     "Quantity To Order"
 )
 ```
@@ -290,25 +291,25 @@ Angenommen, Sie haben eine Sammlung **X**:
 
 ![](media/working-with-tables/X.png)
 
-Sie können diese Sammlung mit **ClearCollect( Y, \["A", "B"\] )** erstellen.
+Sie können diese Sammlung mit **ClearCollect( Y; \["A"; "B"\] )** erstellen.
 
 Und eine weitere Sammlung **Y**:
 
 ![](media/working-with-tables/Y.png)
 
-Sie können diese Sammlung mit **ClearCollect( Y, ["A", "B"] )** erstellen.
+Sie können diese Sammlung mit **ClearCollect( Y; ["A"; "B"] )** erstellen.
 
 Definieren Sie darüber hinaus eine Kontextvariable namens **Value** mit dieser Formel: **UpdateContext( {Value: "!"} )** .
 
 Lassen Sie uns alle Puzzleteile zusammensetzen. In diesem Kontext ergibt die folgende Formel:
 
-```powerapps-dot
+```powerapps-comma
 Ungroup(
-    ForAll( X,
-        ForAll( Y,
+    ForAll( X;
+        ForAll( Y;
             Y[@Value] & Text( X[@Value] ) & [@Value]
         )
-    ),
+    );
     "Value"
 )
 ```
@@ -323,13 +324,13 @@ Die innerste **ForAll** -Funktion definiert einen anderen Daten Satz Bereich fü
 
 Da **Y** die innerste Datensatzebene darstellt, ist beim Zugriff auf Felder dieser Tabelle keine Mehrdeutigkeitsvermeidung erforderlich. Die Verwendung dieser Formel erzielt daher dasselbe Ergebnis:
 
-```powerapps-dot
+```powerapps-comma
 Ungroup(
-    ForAll( X,
-        ForAll( Y,
+    ForAll( X;
+        ForAll( Y;
             Value & Text( X[@Value] ) & [@Value]
         )
-    ),
+    );
     "Value"
 )
 ```
@@ -342,8 +343,8 @@ Gruppierung aufgruppierung vereinfacht das Ergebnis, da die gehosteten **ForAll*
 
 Um mit einer einzelnen Spalte aus einer Tabelle zu arbeiten, verwenden Sie die Funktion **showcolumns** wie in diesem Beispiel:
 
-```powerapps-dot
-ShowColumns( Products, "Product" )
+```powerapps-comma
+ShowColumns( Products; "Product" )
 ```
 
 Diese Formel erzeugt eine einspaltige Tabelle:
@@ -352,7 +353,7 @@ Diese Formel erzeugt eine einspaltige Tabelle:
 
 Um eine kürzere Alternative zu erhalten, geben Sie *Table. Column*an, die die einspaltige Tabelle einer *Spalte* aus der *Tabelle*extrahiert. Diese Formel erzeugt beispielsweise genau das gleiche Ergebnis wie die Verwendung von **showcolumns**.
 
-```powerapps-dot
+```powerapps-comma
 Products.Product
 ```
 
@@ -360,15 +361,15 @@ Products.Product
 
 Datensätze werden mit geschweiften Klammern ausgedrückt, die die Namen von Feldwerten enthalten.  Sie können den ersten Datensatz in der Tabelle am Anfang dieses Themas z.B. mit dieser Formel ausdrücken:
 
-`{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 }`
+`{ Name: "Chocolate"; Price: 3,95; 'Quantity on Hand': 12; 'Quantity on Order': 10 }`
 
 Sie können Formeln auch in andere Formeln einbetten, wie in diesem Beispiel gezeigt:
 
-`{ Name: First(Products).Name, Price: First(Products).Price * 1.095 }`
+`{ Name: First(Products).Name; Price: First(Products).Price * 1,095 }`
 
 Datensätze lassen sich auch schachteln, indem geschweifte Klammern geschachtelt werden, wie in diesem Beispiel gezeigt:
 
-`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand, 'OnOrder': ThisItem.QuantOnOrder } }`
+`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand; 'OnOrder': ThisItem.QuantOnOrder } }`
 
 Schließen Sie jeden Spaltenname, die ein Sonderzeichen wie ein Leerzeichen oder einen Doppelpunkt enthält, in einfache Anführungszeichen ein.  Um ein einfaches Anführungszeichen in einem Spaltennamen zu verwenden, verdoppeln Sie es.
 
@@ -377,21 +378,21 @@ Beachten Sie, dass der Wert in der **Price**-Spalte kein Währungssymbol wie ein
 ## <a name="inline-tables"></a>Inline Tabellen
 Mithilfe mit der **[Table](functions/function-table.md)** -Funktion und einem Satz von Datensätzen können Sie eine Tabelle erstellen. Die Tabelle zu Beginn dieses Themas lässt sich mit dieser Formel ausdrücken:
 
-```powerapps-dot
+```powerapps-comma
 Table( 
-    { Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },
-    { Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },
-    { Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } 
+    { Name: "Chocolate"; Price: 3,95; 'Quantity on Hand': 12; 'Quantity on Order': 10 };
+    { Name: "Bread"; Price: 4,95; 'Quantity on Hand': 34; 'Quantity on Order': 0 };
+    { Name: "Water"; Price: 4,95; 'Quantity on Hand': 10; 'Quantity on Order': 0 } 
 )
 ```
 
 Sie können Tabellen auch schachteln:
 
-```powerapps-dot
+```powerapps-comma
 Table( 
-    { Name: "Chocolate", 
-      'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },
-                                 { Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) 
+    { Name: "Chocolate"; 
+      'Quantity History': Table( { Quarter: "Q1"; OnHand: 10; OnOrder: 10 };
+                                 { Quarter: "Q2"; OnHand: 18; OnOrder: 0 } ) 
     }
 )
 ```
@@ -399,7 +400,7 @@ Table(
 ## <a name="inline-value-tables"></a>Inline Wert Tabellen
 Sie können einspaltige Tabellen erstellen, indem Sie Werte in eckigen Klammern angeben. Die daraus resultierende Tabelle enthält eine einzelne Spalte namens **Value**.
 
-`[ 1, 2, 3, 4 ]` entspricht z. b. `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )` und gibt folgende Tabelle zurück:
+`[ 1; 2; 3; 4 ]` entspricht z. b. `Table( { Value: 1 }; { Value: 2 }; { Value: 3 }; { Value: 4 } )` und gibt folgende Tabelle zurück:
 
 ![](media/working-with-tables/inline-table.png)
 

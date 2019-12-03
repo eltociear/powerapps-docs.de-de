@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74675062"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>Referenzinformationen zur Besprechungs Bildschirm Vorlage für Canvas-apps
 
@@ -48,12 +49,12 @@ Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen 
    ![Lblinvitetab-Steuerelement](media/meeting-screen/meeting-invite-text.png)
 
 * Eigenschaft: **Farbe**<br>
-    Wert: `If( _showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
+    Wert: `If( _showDetails; LblRecipientCount.Color; RectQuickActionBar.Fill )`
 
     **_showDetails** ist eine Variable, mit der bestimmt wird, ob das **lblinvitetab** -Steuerelement oder das **lblscheduletab** -Steuerelement ausgewählt ist. Wenn der Wert **_showDetails** **true**ist, wird **lblscheduletab** ausgewählt. Wenn der Wert **false**ist, wird **lblinvitetab** ausgewählt. Dies bedeutet Folgendes: Wenn der Wert von _showDetails **true** ist (diese Registerkarte ist *nicht* ausgewählt), entspricht die Registerkarten Farbe der **lblrecepentcount**. Andernfalls entspricht Sie dem Füllwert von **rectquickaktionbar**.
 
 * Eigenschaft: **onselect**<br> 
-    Wert: `Set( _showDetails, false )`
+    Wert: `Set( _showDetails; false )`
 
     Legt die **_showDetails** Variable auf " **false**" fest. Dies bedeutet, dass der Inhalt der Registerkarte "einladen" sichtbar ist und der Inhalt der Registerkarte " **Zeitplan** " ausgeblendet ist.
 
@@ -62,12 +63,12 @@ Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen 
    ![Lblinvitetab-Steuerelement](media/meeting-screen/meeting-schedule-text.png)
 
 * Eigenschaft: **Farbe**<br>
-    Wert: `If( !_showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
+    Wert: `If( !_showDetails; LblRecipientCount.Color; RectQuickActionBar.Fill )`
 
     **_showDetails** ist eine Variable, mit der bestimmt wird, ob das **lblinvitetab** -Steuerelement oder das **lblscheduletab** -Steuerelement ausgewählt ist. Wenn der Wert true ist, wird **lblscheduletab** ausgewählt. false gibt an, dass **lblinvitetab** ist. Dies bedeutet Folgendes: Wenn **_showDetails** true ist (diese Registerkarte *ist* ausgewählt), entspricht die Registerkarten Farbe dem Füllwert von **rectquickaktionbar**. Andernfalls entspricht Sie dem Farbwert **lblrecepentcount**.
 
 * Eigenschaft: **onselect**<br>
-    Wert: `Set( _showDetails, true )`
+    Wert: `Set( _showDetails; true )`
 
     Legt die **_showDetails** Variable auf " **true**" fest. Dies bedeutet, dass der Inhalt der Registerkarte "Zeitplan" sichtbar ist und der Inhalt der Registerkarte "einladen" ausgeblendet ist.
 
@@ -92,9 +93,9 @@ Dieses Steuerelement ermöglicht Benutzern das Hinzufügen von Personen, die nic
 * Eigenschaft: **sichtbar**<br>
     Wert: drei logische Überprüfungen, die alle als **true** ausgewertet werden müssen, damit das Steuerelement sichtbar ist:
 
-    ```powerapps-dot
+    ```powerapps-comma
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text, Match.Email ) &&
+        IsMatch( TextSearchBox.Text; Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
 
@@ -107,42 +108,42 @@ Dieses Steuerelement ermöglicht Benutzern das Hinzufügen von Personen, die nic
 * Eigenschaft: **onselect**<br> 
     Value: eine **Collect** -Anweisung zum Hinzufügen des Benutzers zur Liste der Teilnehmer, eine weitere zum Aktualisieren verfügbarer Besprechungszeiten und mehrere variablenschalter:
 
-    ```powerapps-dot
-    Collect( MyPeople,
+    ```powerapps-comma
+    Collect( MyPeople;
         { 
-            DisplayName: TextSearchBox.Text, 
-            UserPrincipalName: TextSearchBox.Text, 
+            DisplayName: TextSearchBox.Text; 
+            UserPrincipalName: TextSearchBox.Text; 
             Mail: TextSearchBox.Text
         }
-    );
+    );;
     Concurrent(
-        Reset( TextSearchBox ),
-        Set( _showMeetingTimes, false ),
-        UpdateContext( { _loadMeetingTimes: true } ),
-        Set( _selectedMeetingTime, Blank() ),
-        Set( _selectedRoom, Blank() ),
-        Set( _roomListSelected, false ),
-        ClearCollect( MeetingTimes, 
+        Reset( TextSearchBox );
+        Set( _showMeetingTimes; false );
+        UpdateContext( { _loadMeetingTimes: true } );
+        Set( _selectedMeetingTime; Blank() );
+        Set( _selectedRoom; Blank() );
+        Set( _roomListSelected; false );
+        ClearCollect( MeetingTimes; 
             AddColumns(
                 'Office365'.FindMeetingTimes(
                     { 
-                        RequiredAttendees: Concat(MyPeople, UserPrincipalName & ";")
-                        MeetingDuration: MeetingDurationSelect.Selected.Minutes,
-                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ),
-                        End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
-                        MaxCandidates: 15, 
-                        MinimumAttendeePercentage:1, 
-                        IsOrganizerOptional: false, 
+                        RequiredAttendees: Concat(MyPeople; UserPrincipalName & ";")
+                        MeetingDuration: MeetingDurationSelect.Selected.Minutes;
+                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC );
+                        End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
+                        MaxCandidates: 15; 
+                        MinimumAttendeePercentage:1; 
+                        IsOrganizerOptional: false; 
                         ActivityDomain: "Work"
                     }
-                ).MeetingTimeSuggestions,
-                "StartTime", MeetingTimeSlot.Start.DateTime, 
-                "EndTime", MeetingTimeSlot.End.DateTime
+                ).MeetingTimeSuggestions;
+                "StartTime"; MeetingTimeSlot.Start.DateTime; 
+                "EndTime"; MeetingTimeSlot.End.DateTime
             )
         )
-    );
-    UpdateContext( { _loadingMeetingTimes: false } );
-    Set( _showMeetingTimes, true )
+    );;
+    UpdateContext( { _loadingMeetingTimes: false } );;
+    Set( _showMeetingTimes; true )
     ```
 
   Wenn Sie dieses Steuerelement auswählen, wird die gültige e-Mail-Adresse (nur sichtbar, wenn eine gültige e-Mail-Adresse in **textsearchbox**eingegeben wurde) zur **mypeople** -Sammlung hinzugefügt (diese Sammlung ist die Teilnehmer Liste) und dann die verfügbaren Besprechungszeiten mit dem neuen Benutzereintrag aktualisiert.
@@ -174,9 +175,9 @@ Dieses Steuerelement ermöglicht Benutzern das Hinzufügen von Personen, die nic
 
 * Eigenschaft: **Elemente**<br>
     Wert 
-    ```powerapps-dot
-    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
-        'Office365Users'.SearchUser( { searchTerm: Trim(TextSearchBox.Text), top: 15 } )
+    ```powerapps-comma
+    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
+        'Office365Users'.SearchUser( { searchTerm: Trim(TextSearchBox.Text); top: 15 } )
     )
     ```
 
@@ -196,46 +197,46 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 * Eigenschaft: **onselect**<br>
     Value: eine **Collect** -Anweisung zum Hinzufügen des Benutzers zur Liste der Teilnehmer, eine weitere zum Aktualisieren verfügbarer Besprechungszeiten und mehrere variablenschalter:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent(
-        Reset( TextSearchBox ),
-        Set( _selectedUser, ThisItem ),
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
-            Collect( MyPeople, ThisItem ); 
+        Reset( TextSearchBox );
+        Set( _selectedUser; ThisItem );
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
+            Collect( MyPeople; ThisItem );; 
             Concurrent(
-                Set( _showMeetingTimes, false ),
-                UpdateContext( { _loadMeetingTimes: true } ),
-                Set( _selectedMeetingTime, Blank() ),
-                Set( _selectedRoom, Blank() ),
-                Set( _roomListSelected, false ),
-                ClearCollect( MeetingTimes, 
+                Set( _showMeetingTimes; false );
+                UpdateContext( { _loadMeetingTimes: true } );
+                Set( _selectedMeetingTime; Blank() );
+                Set( _selectedRoom; Blank() );
+                Set( _roomListSelected; false );
+                ClearCollect( MeetingTimes; 
                     AddColumns(
                         'Office365'.FindMeetingTimes(
                             {
-                                RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ),
-                                MeetingDuration: MeetingDurationSelect.Selected.Minutes,
-                                Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ),
-                                End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
-                                MaxCandidates: 15, 
-                                MinimumAttendeePercentage: 1, 
-                                IsOrganizerOptional: false, 
+                                RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" );
+                                MeetingDuration: MeetingDurationSelect.Selected.Minutes;
+                                Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC );
+                                End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
+                                MaxCandidates: 15; 
+                                MinimumAttendeePercentage: 1; 
+                                IsOrganizerOptional: false; 
                                 ActivityDomain: "Work"
                             }
-                        ).MeetingTimeSuggestions,
-                        "StartTime", MeetingTimeSlot.Start.DateTime, 
-                        "EndTime", MeetingTimeSlot.End.DateTime
+                        ).MeetingTimeSuggestions;
+                        "StartTime"; MeetingTimeSlot.Start.DateTime; 
+                        "EndTime"; MeetingTimeSlot.End.DateTime
                     )
                 )
-            );
-            UpdateContext( { _loadingMeetingTimes: false } );
-            Set( _showMeetingTimes, true )
+            );;
+            UpdateContext( { _loadingMeetingTimes: false } );;
+            Set( _showMeetingTimes; true )
         )
     )
     ```
 
     Auf hoher Ebene wird durch Auswählen dieses Steuer Elements die Person der **mypeople** -Auflistung (der Speicher der APP der Teilnehmer Liste) hinzugefügt, und die verfügbaren Besprechungszeiten werden basierend auf der neuen Benutzer Addition aktualisiert.
 
-    Das Auswählen dieses Steuer Elements ähnelt dem Auswählen des **addicon** -Steuer Elements. der einzige Unterschied besteht darin, dass die `Set(_selectedUser, ThisItem)`-Anweisung und die Ausführungsreihenfolge der Vorgänge. Daher wird diese Erörterung nicht so tief sein. Eine ausführlichere Erläuterung finden Sie im Abschnitt zur [addicon-Steuerung](#add-icon) .
+    Das Auswählen dieses Steuer Elements ähnelt dem Auswählen des **addicon** -Steuer Elements. der einzige Unterschied besteht darin, dass die `Set(_selectedUser; ThisItem)`-Anweisung und die Ausführungsreihenfolge der Vorgänge. Daher wird diese Erörterung nicht so tief sein. Eine ausführlichere Erläuterung finden Sie im Abschnitt zur [addicon-Steuerung](#add-icon) .
 
     Wenn Sie dieses Steuerelement auswählen, wird **textsearchbox**zurückgesetzt. Wenn sich die Auswahl nicht in der **mypeople** -Auflistung befindet, gilt Folgendes:
     1. Legt den **_loadMeetingTimes** Zustand auf **true** und den **_showMeetingTimes** -Zustand auf **false**fest, gibt die **_selectedMeetingTime** und **_selectedRoom** Variablen aus und aktualisiert die Auflistung der **meetingtimes** mit der neuen Addition der **mypeople** -Auflistung. 
@@ -253,15 +254,15 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 * Property: **height**<br>
     Wert: Logik, damit der Katalog auf eine maximale Höhe von 350 vergrößert werden kann:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Min( 
-        76 * RoundUp( CountRows( MeetingPeopleGallery.AllItems ) / 2, 0 ),
+        76 * RoundUp( CountRows( MeetingPeopleGallery.AllItems ) / 2; 0 );
         350
     )
     ```
 
   
-   Die Höhe dieses Katalogs entspricht der Anzahl der Elemente im Katalog und der maximalen Höhe von 350. Die Formel nimmt 76 als Höhe einer einzelnen Zeile von " **meetingpeoplegallery**" an und multipliziert Sie mit der Anzahl der Zeilen. Die **wrapcount** -Eigenschaft ist auf 2 festgelegt, sodass die Anzahl der true-Zeilen `RoundUp(CountRows(MeetingPeopleGallery.AllItems) / 2, 0)`wird.
+   Die Höhe dieses Katalogs entspricht der Anzahl der Elemente im Katalog und der maximalen Höhe von 350. Die Formel nimmt 76 als Höhe einer einzelnen Zeile von " **meetingpeoplegallery**" an und multipliziert Sie mit der Anzahl der Zeilen. Die **wrapcount** -Eigenschaft ist auf 2 festgelegt, sodass die Anzahl der true-Zeilen `RoundUp(CountRows(MeetingPeopleGallery.AllItems) / 2; 0)`wird.
 
 * Property: **ShowScrollbar**<br>
     Wert: `MeetingPeopleGallery.Height >= 350`
@@ -274,7 +275,7 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 
 * Eigenschaft: **onselect**<br>
     
-    Wert: `Set(_selectedUser, ThisItem)`
+    Wert: `Set(_selectedUser; ThisItem)`
     
     Legt die **_selectedUser** Variable auf das Element fest, das in " **meetingpeoplegallery**" ausgewählt ist.
 
@@ -285,36 +286,36 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 * Eigenschaft: **onselect**<br>
     Value: eine **Remove** -Anweisung zum Entfernen des Benutzers aus der Teilnehmerliste, einer **Collect** -Anweisung zum Aktualisieren der verfügbaren Besprechungszeiten und mehrerer variablenschalter:
 
-    ```powerapps-dot
-    Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) );
+    ```powerapps-comma
+    Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) );;
     Concurrent(
-        Reset( TextSearchBox ),
-        Set( _showMeetingTimes, false ),
-        UpdateContext( { _loadMeetingTimes: true } ),
-        Set( _selectedMeetingTime, Blank() ),
-        Set( _selectedRoom, Blank() ),
-        Set( _roomListSelected, false ),
-        ClearCollect( MeetingTimes, 
+        Reset( TextSearchBox );
+        Set( _showMeetingTimes; false );
+        UpdateContext( { _loadMeetingTimes: true } );
+        Set( _selectedMeetingTime; Blank() );
+        Set( _selectedRoom; Blank() );
+        Set( _roomListSelected; false );
+        ClearCollect( MeetingTimes; 
             AddColumns(
                 'Office365'.FindMeetingTimes(
                     {
-                        RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ), 
-                        MeetingDuration: MeetingDurationSelect.Selected.Minutes,
-                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ), 
-                        End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
-                        MaxCandidates: 15, 
-                        MinimumAttendeePercentage: 1, 
-                        IsOrganizerOptional: false, 
+                        RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" ); 
+                        MeetingDuration: MeetingDurationSelect.Selected.Minutes;
+                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC ); 
+                        End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
+                        MaxCandidates: 15; 
+                        MinimumAttendeePercentage: 1; 
+                        IsOrganizerOptional: false; 
                         ActivityDomain: "Work"
                     }
-                ).MeetingTimeSuggestions,
-                "StartTime", MeetingTimeSlot.Start.DateTime, 
-                "EndTime", MeetingTimeSlot.End.DateTime
+                ).MeetingTimeSuggestions;
+                "StartTime"; MeetingTimeSlot.Start.DateTime; 
+                "EndTime"; MeetingTimeSlot.End.DateTime
             )
         )
-    );
-    UpdateContext( { _loadingMeetingTimes: false } );
-    Set( _showMeetingTimes, true )
+    );;
+    UpdateContext( { _loadingMeetingTimes: false } );;
+    Set( _showMeetingTimes; true )
     ```
 
   Auf hoher Ebene entfernt die Auswahl dieses Steuer Elements die Person aus der Liste der Teilnehmer und aktualisiert die verfügbaren Besprechungszeiten basierend auf dem Entfernen dieser Person.
@@ -331,7 +332,7 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
    ![Meetingdateselect-Steuerelement](media/meeting-screen/meeting-datepicker.png)
 
 * Eigenschaft: **Display Mode**<br>
-    Wert: `If( IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit )`
+    Wert: `If( IsEmpty(MyPeople); DisplayMode.Disabled; DisplayMode.Edit )`
 
     Ein Datum für eine Besprechung kann erst ausgewählt werden, nachdem mindestens ein Teilnehmer zur **mypeople** -Sammlung hinzugefügt wurde.
 
@@ -343,35 +344,35 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 * Eigenschaft: **onselect**<br>
     Wert: eine **Collect** -Anweisung zum Aktualisieren der verfügbaren Besprechungszeiten und verschiedene Variablen Schalter:
   
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent(
-        Reset( TextSearchBox ),
-        Set( _showMeetingTimes, false ),
-        UpdateContext( { _loadingMeetingTimes: true } ),
-        Set( _selectedMeetingTime, Blank() ),
-        Set( _selectedRoom, Blank() ),
-        Set( _roomListSelected, false ),
-        ClearCollect( MeetingTimes, 
+        Reset( TextSearchBox );
+        Set( _showMeetingTimes; false );
+        UpdateContext( { _loadingMeetingTimes: true } );
+        Set( _selectedMeetingTime; Blank() );
+        Set( _selectedRoom; Blank() );
+        Set( _roomListSelected; false );
+        ClearCollect( MeetingTimes; 
             AddColumns(
                 'Office365'.FindMeetingTimes(
                     {
-                        RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ), 
-                        MeetingDuration: MeetingDurationSelect.Selected.Minutes,
-                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ), 
-                        End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
-                        MaxCandidates: 15, 
-                        MinimumAttendeePercentage: 1, 
-                        IsOrganizerOptional: false, 
+                        RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" ); 
+                        MeetingDuration: MeetingDurationSelect.Selected.Minutes;
+                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC ); 
+                        End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
+                        MaxCandidates: 15; 
+                        MinimumAttendeePercentage: 1; 
+                        IsOrganizerOptional: false; 
                         ActivityDomain: "Work"
                     }
-                ).MeetingTimeSuggestions,
-                "StartTime", MeetingTimeSlot.Start.DateTime, 
-                "EndTime", MeetingTimeSlot.End.DateTime
+                ).MeetingTimeSuggestions;
+                "StartTime"; MeetingTimeSlot.Start.DateTime; 
+                "EndTime"; MeetingTimeSlot.End.DateTime
             )
         )
-    );
-    UpdateContext( { _loadingMeetingTimes: false } );
-    Set( _showMeetingTimes, true )
+    );;
+    UpdateContext( { _loadingMeetingTimes: false } );;
+    Set( _showMeetingTimes; true )
     ```
 
   Wenn Sie dieses Steuerelement auswählen, werden die verfügbaren Besprechungszeiten auf hoher Ebene aktualisiert. Dies ist hilfreich, da die verfügbaren Besprechungszeiten, wenn ein Benutzer das Datum ändert, aktualisiert werden müssen, um die Verfügbarkeit der Teilnehmer für diesen Tag widerzuspiegeln.
@@ -387,7 +388,7 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
    ![Meetingdateselect-Steuerelement](media/meeting-screen/meeting-timepicker.png)
 
 * Eigenschaft: **Display Mode**<br>
-    Wert: `If( IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit )`
+    Wert: `If( IsEmpty(MyPeople); DisplayMode.Disabled; DisplayMode.Edit )`
 
     Eine Dauer für eine Besprechung kann erst ausgewählt werden, nachdem mindestens ein Teilnehmer zur **mypeople** -Sammlung hinzugefügt wurde.
 
@@ -417,13 +418,13 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 * Eigenschaft: **Text**<br>
     Wert: eine Konvertierung der Startzeit, die in der Ortszeit des Benutzers angezeigt werden soll:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Text(
         DateAdd(
-            DateTimeValue( ThisItem.StartTime ),
-            - TimeZoneOffset(), 
+            DateTimeValue( ThisItem.StartTime );
+            - TimeZoneOffset(); 
             Minutes
-        ),
+        );
         DateTimeFormat.ShortTime
     )
     ```
@@ -434,48 +435,48 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 * Eigenschaft: **onselect**<br>
     Wert: mehrere **Collect** -Anweisungen, um Besprechungsräume und deren empfohlene Verfügbarkeit sowie mehrere variablenschalter zu erfassen:
 
-    ```powerapps-dot
-    Set( _selectedMeetingTime, ThisItem );
-    UpdateContext( { _loadingRooms: true } );
-    If( IsEmpty( RoomsLists ),
-        ClearCollect( RoomsLists, 'Office365'.GetRoomLists().value) );
-    If( CountRows( RoomsLists ) <= 1,
-        Set( _noRoomLists, true );
-        ClearCollect( AllRooms, 'Office365'.GetRooms().value );
-        Set( _allRoomsConcat, Concat( FirstN( AllRooms, 20 ), Address & ";" ) );
-        ClearCollect( RoomTimeSuggestions, 
+    ```powerapps-comma
+    Set( _selectedMeetingTime; ThisItem );;
+    UpdateContext( { _loadingRooms: true } );;
+    If( IsEmpty( RoomsLists );
+        ClearCollect( RoomsLists; 'Office365'.GetRoomLists().value) );;
+    If( CountRows( RoomsLists ) <= 1;
+        Set( _noRoomLists; true );;
+        ClearCollect( AllRooms; 'Office365'.GetRooms().value );;
+        Set( _allRoomsConcat; Concat( FirstN( AllRooms; 20 ); Address & ";" ) );;
+        ClearCollect( RoomTimeSuggestions; 
             'Office365'.FindMeetingTimes(
                 {
-                    RequiredAttendees: _allRoomsConcat, 
-                    MeetingDuration: MeetingDurationSelect.Selected.Minutes,
-                    Start: _selectedMeetingTime.StartTime & "Z", 
-                    End: _selectedMeetingTime.EndTime & "Z", 
-                    MinimumAttendeePercentage: "1",
-                    IsOrganizerOptional: "false", 
+                    RequiredAttendees: _allRoomsConcat; 
+                    MeetingDuration: MeetingDurationSelect.Selected.Minutes;
+                    Start: _selectedMeetingTime.StartTime & "Z"; 
+                    End: _selectedMeetingTime.EndTime & "Z"; 
+                    MinimumAttendeePercentage: "1";
+                    IsOrganizerOptional: "false"; 
                     ActivityDomain: "Unrestricted"
                 }
             ).MeetingTimeSuggestions
-        );
-        ClearCollect( AvailableRooms, 
+        );;
+        ClearCollect( AvailableRooms; 
             AddColumns(
                 AddColumns(
                     Filter( 
-                        First( RoomTimeSuggestions ).AttendeeAvailability,
+                        First( RoomTimeSuggestions ).AttendeeAvailability;
                         Availability="Free"
-                    ), 
-                    "Address", Attendee.EmailAddress.Address
-                ), 
-                "Name", LookUp( AllRooms, Address = Attendee.EmailAddress.Address ).Name 
+                    ); 
+                    "Address"; Attendee.EmailAddress.Address
+                ); 
+                "Name"; LookUp( AllRooms; Address = Attendee.EmailAddress.Address ).Name 
             )
-        );
-        ClearCollect( AvailableRoomsOptimal, 
+        );;
+        ClearCollect( AvailableRoomsOptimal; 
             DropColumns(
-                DropColumns( AvailableRooms, "Availability" ), 
+                DropColumns( AvailableRooms; "Availability" ); 
                 "Attendee" 
             )
-        ),
-        Set( _roomListSelected, false) 
-    );
+        );
+        Set( _roomListSelected; false) 
+    );;
     UpdateContext( {_loadingRooms: false} )
     ```
 
@@ -502,11 +503,11 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 * Eigenschaft: **Elemente**<br>
     Wert: wird logisch auf zwei interne Auflistungen desselben Schemas festgelegt, je nachdem, ob der Benutzer eine Raum Liste ausgewählt hat oder in seinem Mandanten die Liste der Räume enthält:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Search(
-        If( _roomListSelected || _noRoomLists, AvailableRoomsOptimal, RoomsLists ),
-        Trim(TextMeetingLocation1.Text), 
-        "Name", 
+        If( _roomListSelected || _noRoomLists; AvailableRoomsOptimal; RoomsLists );
+        Trim(TextMeetingLocation1.Text); 
+        "Name"; 
         "Address"
     )
     ```
@@ -525,46 +526,46 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 * Eigenschaft: **onselect**<br>
     Value: ein Satz logisch gebundener **Collect** -und **set** -Anweisungen, die abhängig davon, ob der Benutzerraum Listen oder Räume zeigt, möglicherweise ausgelöst werden.
 
-    ```powerapps-dot
-    UpdateContext( { _loadingRooms: true } );
-    If( !_roomListSelected && !noRoomLists,
-        Set( _roomListSelected, true );
-        Set( _selectedRoomList, ThisItem.Name );
-        ClearCollect( AllRooms, 'Office365'.GetRoomsInRoomList( ThisItem.Address ).value );
-        Set( _allRoomsConcat, Concat( FirstN( AllRooms, 20 ), Address & ";" ) );
-        ClearCollect( RoomTimeSuggestions, 
+    ```powerapps-comma
+    UpdateContext( { _loadingRooms: true } );;
+    If( !_roomListSelected && !noRoomLists;
+        Set( _roomListSelected; true );;
+        Set( _selectedRoomList; ThisItem.Name );;
+        ClearCollect( AllRooms; 'Office365'.GetRoomsInRoomList( ThisItem.Address ).value );;
+        Set( _allRoomsConcat; Concat( FirstN( AllRooms; 20 ); Address & ";" ) );;
+        ClearCollect( RoomTimeSuggestions; 
             'Office365'.FindMeetingTimes(
                 {
-                    RequiredAttendees: _allRoomsConcat, 
-                    MeetingDuration: MeetingDurationSelect.Selected.Minutes,
-                        Start: _selectedMeetingTime.StartTime & "Z", 
-                    End: _selectedMeetingTime.EndTime & "Z", 
-                    MinimumAttendeePercentage: "1",
-                    IsOrganizerOptional: "false", 
+                    RequiredAttendees: _allRoomsConcat; 
+                    MeetingDuration: MeetingDurationSelect.Selected.Minutes;
+                        Start: _selectedMeetingTime.StartTime & "Z"; 
+                    End: _selectedMeetingTime.EndTime & "Z"; 
+                    MinimumAttendeePercentage: "1";
+                    IsOrganizerOptional: "false"; 
                     ActivityDomain: "Unrestricted"
                 }
             ).MeetingTimeSuggestions
-        );
-        ClearCollect( AvailableRooms, 
+        );;
+        ClearCollect( AvailableRooms; 
             AddColumns(
                 AddColumns(
                     Filter(
-                        First( RoomTimeSuggestions ).AttendeeAvailability, 
+                        First( RoomTimeSuggestions ).AttendeeAvailability; 
                         Availability = "Free"
-                    ),
-                    "Address", Attendee.EmailAddress.Address 
-                ), 
-                "Name", LookUp( AllRooms, Address = Attendee.EmailAddress.Address ).Name
+                    );
+                    "Address"; Attendee.EmailAddress.Address 
+                ); 
+                "Name"; LookUp( AllRooms; Address = Attendee.EmailAddress.Address ).Name
             )
-        );
-        ClearCollect( AvailableRoomsOptimal, 
+        );;
+        ClearCollect( AvailableRoomsOptimal; 
             DropColumns(
-                DropColumns( AvailableRooms, "Availability" )
-            ), 
+                DropColumns( AvailableRooms; "Availability" )
+            ); 
             "Attendee" )
-        ),
-        Set( _selectedRoom, ThisItem )
-    );
+        );
+        Set( _selectedRoom; ThisItem )
+    );;
     UpdateContext( {_loadingRooms: false} )
     ```
 
@@ -591,7 +592,7 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
     Dieses Steuerelement ist nur sichtbar, wenn eine Raum Liste ausgewählt und die Registerkarte **Zeitplan** ausgewählt ist.
 
 * Eigenschaft: **onselect**<br>
-    Wert: `Set( _roomListSelected, false )`
+    Wert: `Set( _roomListSelected; false )`
 
     Wenn **_roomListSelected** auf **false**festgelegt ist, wird das Element **roombrowsegallery** geändert, sodass Elemente aus der **Auflistung roomslists** angezeigt werden.
 
@@ -602,10 +603,10 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 * Eigenschaft: **Display Mode**<br>
     Wert: Logik, um den Benutzer zu zwingen, bestimmte Besprechungs Details einzugeben, bevor das Symbol bearbeitet werden konnte.
     
-    ```powerapps-dot
+    ```powerapps-comma
     If( Len( Trim( TextMeetingSubject1.Text ) ) > 0
-        && !IsEmpty( MyPeople ) && !IsBlank( _selectedMeetingTime ),
-        DisplayMode.Edit, DisplayMode.Disabled
+        && !IsEmpty( MyPeople ) && !IsBlank( _selectedMeetingTime );
+        DisplayMode.Edit; DisplayMode.Disabled
     )
     ```
   Das Symbol ist nur wählbar, wenn der Besprechungs Betreff ausgefüllt ist, mindestens ein Teilnehmer für die Besprechung vorhanden und eine Besprechungszeit ausgewählt wurde. Andernfalls ist sie deaktiviert.
@@ -614,32 +615,32 @@ Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 
 
     Wert: Code zum Senden der Besprechungs Einladung an die ausgewählten Teilnehmer und zum Löschen aller Eingabefelder:
 
-    ```powerapps-dot
-    Set( _myCalendarName, LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name );
-    Set( _myScheduledMeeting, 
-        'Office365'.V2CalendarPostItem( _myCalendarName,
-            TextMeetingSubject1.Text, 
-            Text(DateAdd(DateTimeValue( _selectedMeetingTime.StartTime), -TimeZoneOffset(), Minutes) ),
-            Text(DateAdd(DateTimeValue( _selectedMeetingTime.EndTime), -TimeZoneOffset(), Minutes) ),
+    ```powerapps-comma
+    Set( _myCalendarName; LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name );;
+    Set( _myScheduledMeeting; 
+        'Office365'.V2CalendarPostItem( _myCalendarName;
+            TextMeetingSubject1.Text; 
+            Text(DateAdd(DateTimeValue( _selectedMeetingTime.StartTime); -TimeZoneOffset(); Minutes) );
+            Text(DateAdd(DateTimeValue( _selectedMeetingTime.EndTime); -TimeZoneOffset(); Minutes) );
             {
-                RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ) & _selectedRoom.Address, 
-                Body: TextMeetingMessage1.Text, 
-                Location: _selectedRoom.Name, 
-                Importance: "Normal", 
-                ShowAs: "Busy", 
+                RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" ) & _selectedRoom.Address; 
+                Body: TextMeetingMessage1.Text; 
+                Location: _selectedRoom.Name; 
+                Importance: "Normal"; 
+                ShowAs: "Busy"; 
                 ResponseRequested: true
             }
         )
-    );
+    );;
     Concurrent(
-        Reset( TextMeetingLocation1 ),
-        Reset( TextMeetingSubject1 ),
-        Reset( TextMeetingMessage1 ),
-        Clear( MyPeople ),
-        Set( _selectedMeetingTime, Blank() ),
-        Set( _selectedRoomList, Blank() ),
-        Set( _selectedRoom, Blank() ),
-        Set( _roomListSelected, false )
+        Reset( TextMeetingLocation1 );
+        Reset( TextMeetingSubject1 );
+        Reset( TextMeetingMessage1 );
+        Clear( MyPeople );
+        Set( _selectedMeetingTime; Blank() );
+        Set( _selectedRoomList; Blank() );
+        Set( _selectedRoom; Blank() );
+        Set( _roomListSelected; false )
     )
     ```
   

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74675479"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Benutzerdefiniertes Visual apps-Visual für Power BI
 
@@ -52,7 +53,7 @@ Sehen wir uns nun die Schritte an, die erforderlich sind, um die benutzerdefinie
 
     ![Benutzerdefinierte Formel](./media/powerapps-custom-visual/custom-formula.png)
 
-    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
+    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
 
    Der Power BI Bericht und die Instanz von powerapps Studio, die gestartet wurde, haben eine Live Datenverbindung gemeinsam. Obwohl beide offen sind, können Sie die Daten im Bericht filtern oder ändern, damit die aktualisierten Daten sofort in der app in powerapps Studio angezeigt werden.
 
