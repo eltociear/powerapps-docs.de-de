@@ -1,6 +1,6 @@
 ---
 title: Anzeigen, Sortieren und Filtern von Daten in einem Katalog | Microsoft-Dokumentation
-description: Verwenden Sie einen Katalog, um Bilder und Text anzuzeigen. Sortieren und filtern Sie die Bilder in PowerApps.
+description: Verwenden Sie einen Katalog, um Bilder und Text anzuzeigen. Sortieren und Filtern Sie die Images in powerapps.
 author: adrianorth
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b65a2a6fcc4899ac92238ec76d45cb4fd2d62c8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 14925b5e50f1731efc935bc8a3379342283ec2a0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674638"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732454"
 ---
 # <a name="show-sort-and-filter-data-in-a-power-apps-gallery"></a>Anzeigen, Sortieren und Filtern von Daten in einem Power apps-Katalog
 Erstellen Sie einen Katalog, um Bilder und Text zu verschiedenen Produkten anzuzeigen, und sortieren und filtern Sie diese Informationen.
@@ -121,7 +120,7 @@ Mithilfe der nachfolgenden Schritte werden wir die Katalogelemente in aufsteigen
 1. Wählen Sie ein Element im Katalog aus, *nicht jedoch* das erste Element.
 2. Die Eigenschaft **[Items](controls/properties-core.md)** ist aktuell auf „Inventory“ festgelegt (den Namen Ihrer Sammlung). Ändern Sie die Einstellung wie folgt:  
    
-    **Sort(Inventory; ProductName)**
+    **Sort(Inventory, ProductName)**
    
     Hierdurch werden die Elemente im Katalog in aufsteigender Reihenfolge nach dem Produktnamen sortiert: ![][11]  
    
@@ -134,11 +133,11 @@ Mithilfe der nachfolgenden Schritte werden wir die Katalogelemente in aufsteigen
 2. Konfigurieren Sie den Schieberegler so, dass Benutzer ihn nicht auf einen Wert außerhalb des Bereichs für die vorrätige Stückzahl festlegen können:  
    
    1. Wählen Sie auf der Registerkarte **Inhalt** die Einstellung **Min**, und geben Sie den folgenden Ausdruck ein:  
-      ```Min(Inventory; UnitsInStock)```  
+      ```Min(Inventory, UnitsInStock)```  
    2. Wählen Sie auf der Registerkarte **Inhalt** die Einstellung **Max**, und geben Sie den folgenden Ausdruck ein:  
-      ```Max(Inventory; UnitsInStock)```
+      ```Max(Inventory, UnitsInStock)```
 3. Wählen Sie ein Element im Katalog aus, *nicht jedoch* das erste Element. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft des Katalogs auf den folgenden Ausdruck fest:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. Stellen Sie den Schieberegler in der **Vorschau** auf einen Wert zwischen der höchsten und der niedrigsten Menge im Katalog ein. Wenn Sie den Wert über den Schieberegler ändern, werden nur die Produkte angezeigt, deren Stückzahl unter dem ausgewählten Wert liegt:  
    ![][13]  
 
@@ -147,7 +146,7 @@ Fügen wir jetzt unseren Filter hinzu:
 1. Kehren Sie zum Designer zurück.
 2. Wählen Sie auf der Registerkarte **Einfügen** die Einstellung **Text** aus, wählen Sie **Eingabetext** aus, und benennen Sie das neue Steuerelement in **NameFilter** um. Verschieben Sie das Textsteuerelement unter den Schieberegler.
 3. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft des Katalogs auf den folgenden Ausdruck fest:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. Stellen Sie den Schieberegler in der **Vorschau** auf den Wert *30* ein, und geben Sie im Texteingabe-Steuerelement den Buchstaben *g* ein. Der Katalog zeigt nur Produkte an, bei denen die vorrätige Stückzahl unter 30 liegt *und* deren Name mit dem Buchstaben „g“ beginnt:  
    ![][14]  
 

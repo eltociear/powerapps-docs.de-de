@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed7493dcc9c2ef5f0b84052a11dbadb0947af38e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 37b7117f599c29f886da3cafeb158db145ad1364
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994258"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724910"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>Anzeigen, bearbeiten oder Hinzufügen eines Datensatzes in einer Canvas-App
 
@@ -27,7 +26,7 @@ Fügen Sie in einer Canvas-App ein Formular **[anzeigen](controls/control-form-d
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Erfahren Sie, wie Sie in PowerApps [ein Steuerelement hinzufügen und konfigurieren](add-configure-controls.md).
+- Erfahren Sie, wie Sie ein Steuerelement in Power apps [Hinzufügen und konfigurieren](add-configure-controls.md) .
 - Laden Sie [diese Excel-Datei](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) mit Beispieldaten für dieses Lernprogramm herunter.
 - Laden Sie die Excel-Datei in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md) hoch, z.B. in OneDrive for Business.
 - Erstellen oder öffnen Sie eine APP für Smartphones, und fügen Sie der Tabelle " **flooringestimates** " in der Excel-Datei [eine Verbindung hinzu](add-data-connection.md) .
@@ -42,7 +41,7 @@ Fügen Sie in einer Canvas-App ein Formular **[anzeigen](controls/control-form-d
     > [!NOTE]
    > Weitere Informationen zum Hinzufügen und Umbenennen eines Steuerelements sowie zum Festlegen einer Eigenschaft finden Sie unter [Hinzufügen und Konfigurieren eines Steuerelements](add-configure-controls.md).
 
-1. Legen Sie auf der Registerkarte **Eigenschaften** des rechten Bereichs die **Elemente** auf `FlooringEstimates` und den **Wert** auf `Name` fest.
+1. Legen Sie auf der Registerkarte **Eigenschaften** im rechten Bereich **Elemente** auf `FlooringEstimates` und **Wert** auf `Name`fest.
 
     ![Festlegen der Items-Eigenschaft des Formulars](./media/add-form/items-property.png)
 
@@ -57,7 +56,7 @@ Fügen Sie in einer Canvas-App ein Formular **[anzeigen](controls/control-form-d
 
 1. Legen Sie die **[DataSource](controls/control-form-detail.md)** -Eigenschaft des Formulars auf **flooringestimates** und deren **[Item](controls/control-form-detail.md)** -Eigenschaft auf diese Formel fest:
 
-    `First(Filter(FlooringEstimates; Name=ChooseProduct.Selected.Value))`
+    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
 
    Mit dieser Formel wird angegeben, dass im Formular nach abgeschlossener Konfiguration der Datensatz angezeigt wird, den der Benutzer in **ChooseProduct** auswählt.
 

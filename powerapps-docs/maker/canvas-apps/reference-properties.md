@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 53b4adc44addb08432ad6abbe11bf2b217be1534
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: 6a4f85b5eb4d47bb4973de6902b0a69bb98df585
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74598474"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732781"
 ---
-# <a name="controls-and-properties-in-powerapps"></a>Steuerelemente und Eigenschaften in PowerApps
+# <a name="controls-and-properties-in-power-apps"></a>Steuerelemente und Eigenschaften in Power apps
 
 Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem Sie eine seiner Eigenschaften festlegen. Jeder Typ von Steuerelement verfügt über einen anderen Satz mit Eigenschaften. Einige Eigenschaften, z.B. **Height** und **Width**, sind für fast alle Typen von Steuerelementen gleich. Andere Eigenschaften, z.B. **CheckboxSize**, gelten nur für einen Typ von Steuerelement.
 
@@ -62,7 +62,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Entity form](entity-form-control.md)** (Entitätsformular): Experimentelles Feature: Dient zum Hinzufügen von dynamischen Formularen, in denen Benutzer relationale Daten über den Common Data Service durchsuchen, anzeigen und bearbeiten können.
 
-**[Export](controls/control-export-import.md)** : Dient zum Exportieren von Daten zur Verwendung an einer anderen Stelle von PowerApps.
+**[Exportieren](controls/control-export-import.md)** – Exportieren von Daten zur Verwendung an einer anderen Stelle in Power apps
 
 **[Gallery](controls/control-gallery.md)** (Katalog): Dient zum Anzeigen einer Liste mit Datensätzen, die mehrere Arten von Daten enthalten können.
 
@@ -72,7 +72,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Image](controls/control-image.md)** (Bild): Dient zum Anzeigen eines Bilds, z.B. aus einer lokalen Datei oder einer Datenquelle.
 
-**[Import](controls/control-export-import.md)** : Dient zum Importieren von Daten von anderen Orten in PowerApps.
+**[Importieren](controls/control-export-import.md)** – importieren Sie Daten aus einer anderen Stelle in powerapps.
 
 **[Line chart](controls/control-column-line-chart.md)** (Liniendiagramm): Dient zum Anzeigen von Werten als Datenpunkte relativ zu zwei Achsen.
 

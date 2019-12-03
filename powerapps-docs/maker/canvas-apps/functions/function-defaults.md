@@ -1,6 +1,6 @@
 ---
 title: Funktion „Defaults“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Defaults“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktion "Defaults" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b51d956f2c188e0b877530b28dec933d42c905a6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ad3d8198d73a698abb771aef7230c12b48ff0f56
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992838"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731118"
 ---
-# <a name="defaults-function-in-powerapps"></a>Funktion „Defaults“ in PowerApps
+# <a name="defaults-function-in-power-apps"></a>Funktion "Defaults" in powerapps
 Gibt die Standardwerte für eine [Datenquelle](../working-with-data-sources.md) zurück.  
 
 ## <a name="description"></a>Beschreibung
@@ -35,11 +35,11 @@ Sie können die **Defaults**-Funktion mit der **[Patch](function-patch.md)** -Fu
 ## <a name="syntax"></a>Syntax
 **Defaults**( *DataSource* )
 
-* *Datenquelle*: Erforderlich. Die Datenquelle, für die Sie Standardwerte haben möchten
+* *DataSource*: erforderlich. Die Datenquelle, für die Sie Standardwerte haben möchten
 
 ## <a name="examples"></a>Beispiele
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Defaults(&nbsp;Scores&nbsp;)** |Gibt die Standardwerte für die **Scores**-Datenquelle zurück. |**{Score: 0}** |
+| **Defaults(&nbsp;Scores&nbsp;)** |Gibt die Standardwerte für die **Scores**-Datenquelle zurück. |**{ Score: 0 }** |
 

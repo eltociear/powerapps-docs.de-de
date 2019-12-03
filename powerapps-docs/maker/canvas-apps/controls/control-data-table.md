@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c41407397cc0f9a7ca12ec2c9cc3bbb7fa8c95f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4eaa58bc7bb27746a574c52fcd49253858a471ca
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679820"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723198"
 ---
-# <a name="data-table-control-in-powerapps"></a>Datentabellen-Steuerelement in PowerApps
+# <a name="data-table-control-in-power-apps"></a>Datentabellen-Steuerelement in powerapps
 Dient zum Anzeigen eines Satzes von Daten im Tabellenformat.
 
 ## <a name="description"></a>Beschreibung
@@ -84,8 +83,8 @@ In powerapps wurde das **Datentabellen** -Steuerelement am 5. Mai 2017 eingefüh
 * [**Y**](properties-size-location.md): der Abstand zwischen dem oberen Rand des **Datentabellen**-Steuerelements und dem oberen Rand seines übergeordneten Containers (oder dem oberen Bildschirmrand, wenn es keinen übergeordneten Container gibt).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-* [**Filter(Datenquelle; Formel)** ](../functions/function-filter-lookup.md)(*Datenquelle*, *Formel*)
-* [**Search(Datenquelle; Suchzeichenfolge; Spalte)** ](../functions/function-filter-lookup.md)(*Datenquelle*, *Suchzeichenfolge*, *Spalte*)
+* [**Filter(Datenquelle, Formel)** ](../functions/function-filter-lookup.md)(*Datenquelle*, *Formel*)
+* [**Search(Datenquelle, Suchzeichenfolge, Spalte)** ](../functions/function-filter-lookup.md)(*Datenquelle*, *Suchzeichenfolge*, *Spalte*)
 
 ## <a name="examples"></a>Beispiele
 ### <a name="basic-usage"></a>Grundlegende Nutzung
@@ -122,7 +121,7 @@ In powerapps wurde das **Datentabellen** -Steuerelement am 5. Mai 2017 eingefüh
 
 ### <a name="restyle-the-header-for-the-data-table-control"></a>Neuformatieren der Überschriften des „Datentabellen“-Steuerelements
 1. Klicken oder tippen Sie bei ausgewähltem **Datentabellen**-Steuerelement im rechten Bereich auf die Registerkarte **Erweitert**.
-2. Klicken oder tippen Sie auf das Feld für die Eigenschaft **HeadingFill**, und ändern Sie dann den Wert in **RGBA(62;96;170;1)** .
+2. Klicken oder tippen Sie auf das Feld für die Eigenschaft **HeadingFill**, und ändern Sie dann den Wert in **RGBA(62,96,170,1)** .
 3. Klicken oder tippen Sie auf das Feld für die Eigenschaft **HeadingColor**, und ändern Sie dann den Wert in **White**.
 4. Klicken oder tippen Sie auf das Feld für **HeadingSize**, und ändern Sie dann den Wert in **14**.
    

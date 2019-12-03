@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 503ab33c2c31854bb39baa8d523dda41f085ae2a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679981"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724389"
 ---
-# <a name="manage-canvas-app-connections-in-powerapps"></a>Verwalten von Canvas-App-Verbindungen in PowerApps
+# <a name="manage-canvas-app-connections-in-power-apps"></a>Verwalten von Canvas-App-Verbindungen in powerapps
 Stellen Sie in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) eine Verbindung mit einer oder mehreren Datenquellen her, löschen Sie eine Verbindung, oder aktualisieren Sie ihre Anmeldeinformationen.
 
 Über die Datenverbindung der Canvas-App können Verbindungen mit SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel und vielen anderen [Datenquellen](connections-list.md) hergestellt werden.
@@ -35,7 +35,7 @@ Ihr nächster Schritt nach diesem Artikel besteht darin, Daten aus der Datenquel
 * Verbinden mit Twilio und Senden einer SMS-Nachricht von Ihrer App.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-1. [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps.
+1. [Registrieren Sie sich](../signup-for-powerapps.md) für powerapps.
 2. Melden Sie sich unter [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 
 ## <a name="background-on-data-connections"></a>Hintergrundinformationen zu Datenverbindungen

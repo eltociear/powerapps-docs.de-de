@@ -1,6 +1,6 @@
 ---
 title: Funktionen „Blank“, „Coalesce“, „IsBlank“ und „IsEmpty“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich von Syntax und Beispielen, für die Funktionen „Blank“, „Coalesce“, „IsBlank“ und „IsEmpty“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "blank", "COALESCE", "isblank" und "IsEmpty" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -14,15 +14,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a026d801a6bda6ae82884f5fab94f09b4fdde571
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 59314375b68a73e4c46bd3274a3fefc994465b4d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680372"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730764"
 ---
-# <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Die Funktionen „Blank“, „Coalesce“, „IsBlank“ und „IsEmpty“ in PowerApps
+# <a name="blank-coalesce-isblank-and-isempty-functions-in-power-apps"></a>Funktionen "blank", "COALESCE", "isblank" und "IsEmpty" in powerapps
 Prüft, ob ein Wert leer ist oder eine [Tabelle](../working-with-tables.md) keine [Datensätze](../working-with-tables.md#records) enthält, und stellt ein Verfahren zum Erstellen von *leeren* Werten zur Verfügung.
 
 ## <a name="overview"></a>Übersicht
@@ -40,11 +39,11 @@ Im Kontext der **IsEmpty** -Funktion ist *empty* spezifisch für Tabellen, die k
 ## <a name="description"></a>Beschreibung
 Die Funktion **Blank** gibt einen *leeren* Wert zurück. Sie können sie verwenden, um einen NULL-Wert in einer Datenquelle zu speichern, die diese Werte unterstützt, wodurch effektiv jeder Wert aus dem Feld entfernt wird.
 
-Die **isblank** -Funktion testet auf einen *leeren* Wert oder eine leere Zeichenfolge.  Der Test enthält leere Zeichen folgen, um die APP-Erstellung zu vereinfachen, da einige Datenquellen und Steuerelemente eine leere Zeichenfolge verwenden, wenn kein Wert vorhanden ist.  Verwenden Sie `if( Value = Blank(); ...` anstelle von **isblank**, um speziell auf einen *leeren* Wert zu testen.
+Die **isblank** -Funktion testet auf einen *leeren* Wert oder eine leere Zeichenfolge.  Der Test enthält leere Zeichen folgen, um die APP-Erstellung zu vereinfachen, da einige Datenquellen und Steuerelemente eine leere Zeichenfolge verwenden, wenn kein Wert vorhanden ist.  Verwenden Sie `if( Value = Blank(), ...` anstelle von **isblank**, um speziell auf einen *leeren* Wert zu testen.
 
 Die **COALESCE** -Funktion wertet ihre Argumente in der richtigen Reihenfolge aus und gibt den ersten Wert zurück, der nicht *leer* oder eine leere Zeichenfolge ist.  Verwenden Sie diese Funktion, um einen *leeren* Wert oder eine leere Zeichenfolge durch einen anderen Wert zu ersetzen, aber nicht*leere* und nicht leere Zeichen folgen Werte unverändert zu lassen.  Wenn alle Argumente *leer* oder leere Zeichen folgen sind, gibt die Funktion *blank*zurück, sodass **COALESCE** eine gute Möglichkeit zum Konvertieren leerer Zeichen folgen in *leere* Werte ist.  Alle Argumente von **Coalesce** müssen vom selben Typ sein; es können nicht Zahlen und Textzeichenfolgen gleichzeitig angegeben werden.  
 
-`Coalesce( value1; value2 )` ist die präzisere Entsprechung von `If( Not IsBlank( value1 ); value1; Not IsBlank( value2 ); value2 )` und erfordert nicht, dass **value1** und **value2** zweimal ausgewertet werden.  Die [ **if** -Funktion](function-if.md) gibt " *blank* " zurück, wenn keine else-Formel vorhanden ist, wie es hier der Fall ist.
+`Coalesce( value1, value2 )` ist die präzisere Entsprechung von `If( Not IsBlank( value1 ), value1, Not IsBlank( value2 ), value2 )` und erfordert nicht, dass **value1** und **value2** zweimal ausgewertet werden.  Die [ **if** -Funktion](function-if.md) gibt " *blank* " zurück, wenn keine else-Formel vorhanden ist, wie es hier der Fall ist.
 
 Die **IsEmpty**-Funktion prüft, ob eine Tabelle keine Datensätze enthält. Dies entspricht dem Einsatz der **[CountRows](function-table-counts.md)** -Funktion und dem Prüfen auf 0. Sie können nach Fehlern in Datenquellen suchen, indem Sie **IsEmpty** mit der **[Errors](function-errors.md)** -Funktion kombinieren.
 
@@ -53,7 +52,7 @@ Der Rückgabewert für die beiden Funktionen **IsBlank** und **IsEmpty** ist ein
 ## <a name="syntax"></a>Syntax
 **Blank**()
 
-**Coalesce**( *Wert1* [; *Wert2*; ... ] )
+**Coalesce**( *Wert1* [, *Wert2*, ... ] )
 
 * *Wert(e)* – Erforderlich. Die zu testenden Werte.  Jeder Wert wird in der Reihenfolge ausgewertet, bis ein Wert, der nicht *leer* ist, und keine leere Zeichenfolge gefunden wird.  Werte nach diesem Punkt werden nicht ausgewertet.  
 
@@ -73,8 +72,8 @@ Der Rückgabewert für die beiden Funktionen **IsBlank** und **IsEmpty** ist ein
 1. Erstellen Sie eine Anwendung von Grund auf, und fügen Sie ein **Schaltfläche**-Steuerelement hinzu.
 2. Legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:
 
-    ```powerapps-comma
-    ClearCollect( Cities; { Name: "Seattle"; Weather: "Rainy" } )
+    ```powerapps-dot
+    ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )
     ```
 3. Führen Sie eine Vorschau Ihrer App aus, klicken oder tippen Sie auf die hinzugefügte Schaltfläche, und schließen Sie dann die Vorschau.  
 4. Klicken oder tippen Sie im Menü **Datei** auf **Sammlungen**.
@@ -85,15 +84,15 @@ Der Rückgabewert für die beiden Funktionen **IsBlank** und **IsEmpty** ist ein
 5. Klicken oder tippen Sie auf den Rückwärtspfeil, um zum Standardarbeitsbereich zurückzukehren.
 6. Fügen Sie ein **Label**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **Text**-Eigenschaft auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     IsBlank( First( Cities ).Weather )
     ```
 
     Die Bezeichnung zeigt **FALSCH** an, da das Feld **Weather** einen Wert („Rainy“) enthält.
 7. Fügen Sie eine zweite Schaltfläche hinzu, und legen Sie ihre **OnSelect**-Eigenschaft auf diese Formel fest:
 
-    ```powerapps-comma
-    Patch( Cities; First( Cities ); { Weather: Blank() } )
+    ```powerapps-dot
+    Patch( Cities, First( Cities ), { Weather: Blank() } )
     ```
 8. Führen Sie eine Vorschau Ihrer App aus, klicken oder tippen Sie auf die hinzugefügte Schaltfläche, und schließen Sie dann die Vorschau.  
 
@@ -116,8 +115,8 @@ Der Rückgabewert für die beiden Funktionen **IsBlank** und **IsEmpty** ist ein
 1. Erstellen Sie eine App von Grund auf, fügen Sie ein Texteingabe-Steuerelement hinzu, und benennen Sie es **FirstName**.
 2. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](../controls/properties-core.md)** auf diese Funktion fest:
 
-    ```powerapps-comma
-    If( IsBlank( FirstName.Text ); "First Name is a required field." )
+    ```powerapps-dot
+    If( IsBlank( FirstName.Text ), "First Name is a required field." )
     ```
 
     Standardmäßig ist die Eigenschaft **[Text](../controls/properties-core.md)** eines Texteingabe-Steuerelements auf **„Texteingabe“** festgelegt. Da die Eigenschaft einen Wert enthält, ist sie nicht leer, und die Bezeichnung zeigt keinerlei Nachricht an.
@@ -135,14 +134,14 @@ Weitere Beispiele:
 | **IsBlank( "" )** |Eine Zeichenfolge, die keine Zeichen enthält |**TRUE** |
 | **IsBlank ("Hello")** |Eine Zeichenfolge, die ein oder mehrere Zeichen enthält |**FALSE** |
 | **IsBlank ( *AnyCollection* )** |Da die [Sammlung](../working-with-data-sources.md#collections) vorhanden ist, ist sie nicht leer, auch wenn sie keine Datensätze enthält. Verwenden Sie stattdessen zum Überprüfen auf eine leeren Sammlung **IsEmpty**. |**FALSE** |
-| **IsBlank( Mid( "Hello"; 17; 2 ) )** |Das Anfangszeichen für **[Mid](function-left-mid-right.md)** befindet sich hinter dem Ende der Zeichenfolge.  Das Ergebnis ist eine leere Zeichenfolge. |**TRUE** |
-| **IsBlank( If( false; false ) )** |Eine **[If](function-if.md)** -Funktion ohne *ElseResult*.  Da die Bedingung immer **FALSE** ist, gibt diese **[If](function-if.md)** -Funktion immer *blank* zurück. |**TRUE** |
+| **IsBlank( Mid( "Hello", 17, 2 ) )** |Das Anfangszeichen für **[Mid](function-left-mid-right.md)** befindet sich hinter dem Ende der Zeichenfolge.  Das Ergebnis ist eine leere Zeichenfolge. |**TRUE** |
+| **IsBlank( If( false, false ) )** |Eine **[If](function-if.md)** -Funktion ohne *ElseResult*.  Da die Bedingung immer **FALSE** ist, gibt diese **[If](function-if.md)** -Funktion immer *blank* zurück. |**TRUE** |
 
 ### <a name="isempty"></a>IsEmpty
 1. Erstellen Sie eine Anwendung von Grund auf, und fügen Sie ein **Schaltfläche**-Steuerelement hinzu.
 2. Legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:
 
-    **Collect( IceCream; { Flavor: "Strawberry"; Quantity: 300 }; { Flavor: "Chocolate"; Quantity: 100 } )**
+    **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
 3. Führen Sie eine Vorschau Ihrer App aus, klicken oder tippen Sie auf die hinzugefügte Schaltfläche, und schließen Sie dann die Vorschau.  
 
     Eine Sammlung mit dem Namen **IceCream** wird erstellt und enthält diese Daten:
@@ -165,7 +164,7 @@ Sie können auch **IsEmpty** verwenden, um zu prüfen, ob eine berechnete Tabell
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **IsEmpty( [&nbsp;1;&nbsp;2;&nbsp;3 ] )** |Die einspaltige Tabelle enthält drei Datensätze und ist daher nicht leer. |**FALSE** |
+| **IsEmpty( [&nbsp;1,&nbsp;2,&nbsp;3 ] )** |Die einspaltige Tabelle enthält drei Datensätze und ist daher nicht leer. |**FALSE** |
 | **IsEmpty( [&nbsp;] )** |Die einspaltige Tabelle enthält keine Datensätze und ist leer. |**TRUE** |
-| **IsEmpty( Filter( [&nbsp;1;&nbsp;2;&nbsp;3&nbsp;]; Value > 5 ) )** |Die einspaltige Tabelle enthält keine Werte, die größer als 5 sind.  Das Ergebnis des Filters enthält keine Datensätze und ist leer. |**TRUE** |
+| **IsEmpty( Filter( [&nbsp;1,&nbsp;2,&nbsp;3&nbsp;], Value > 5 ) )** |Die einspaltige Tabelle enthält keine Werte, die größer als 5 sind.  Das Ergebnis des Filters enthält keine Datensätze und ist leer. |**TRUE** |
 

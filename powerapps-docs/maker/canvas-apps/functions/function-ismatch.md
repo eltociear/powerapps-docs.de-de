@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0cfc64397774abc33f27006e331238dc97e9895d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fb150fc9e640801588e8ab7a5bef4640438679f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680326"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730771"
 ---
-# <a name="ismatch-match-and-matchall-functions-in-powerapps"></a>Funktionen "IsMatch", "Match" und "MatchAll" in powerapps
+# <a name="ismatch-match-and-matchall-functions-in-power-apps"></a>Funktionen "IsMatch", "Match" und "MatchAll" in powerapps
 Testet auf eine Entsprechung oder extrahiert Teile einer Text Zeichenfolge auf der Grundlage eines Musters.
 
 ## <a name="description"></a>Beschreibung
@@ -86,9 +85,9 @@ Vordefinierte Muster stellen eine einfache Möglichkeit dar, entweder einen Zeic
 | Match-Aufzählung | Beschreibung | Regulärer Ausdruck |
 | --- | --- | --- |
 | **Any** |Ordnet ein beliebiges Zeichen zu |`.` |
-| **Comma** |Ordnet ein Komma zu |`;` |
+| **Comma** |Ordnet ein Komma zu |`,` |
 | **Digit** |Ordnet eine einzelne Ziffer („0“ bis „9“) zu |`\d` |
-| **Email** |Ordnet eine E-Mail-Adresse zu, die ein at-Zeichen (\@) und einen Domänennamen enthält, der einen Punkt (.) enthält |`.+\@.+\\.[^\\.]{2;}` |
+| **Email** |Ordnet eine E-Mail-Adresse zu, die ein at-Zeichen (\@) und einen Domänennamen enthält, der einen Punkt (.) enthält |`.+\@.+\\.[^\\.]{2,}` |
 | **Hyphen** |Ordnet einen Bindestrich zu |`\-` |
 | **LeftParen** |Ordnet eine linke Klammer „(“ zu |`\(` |
 | **Letter** |Ordnet einen Buchstaben zu |`\p{L}` |
@@ -134,19 +133,19 @@ Sie können das Verhalten dieser Funktionen ändern, indem Sie mindestens eine O
 Die Verwendung von **MatchAll** entspricht der Verwendung des Standard-Modifizierers "g" für reguläre Ausdrücke.
 
 ## <a name="syntax"></a>Syntax
-**IsMatch**( *Text*; *Pattern* [; *Options* ] )
+**IsMatch**( *Text*, *Pattern* [, *Options* ] )
 
 * *Text*: Erforderlich. Die zu prüfende Textzeichenfolge
 * *Pattern*: erforderlich. Das zu überprüfende Muster als Text Zeichenfolge. Verketten Sie vordefinierte Muster, **die die** Übereinstimmungs-Enumeration definiert, oder stellen Sie einen regulären Ausdruck bereit. Das *Muster* muss eine Konstante Formel ohne Variablen, Datenquellen oder andere dynamische Verweise sein, die sich bei der Ausführung der App ändern.
 * *Options*: optional. Eine Textzeichen folgen Kombination von **matchoptions** -Enumerationswerten. Standardmäßig wird **MatchOptions.Complete** verwendet.
 
-**Match**( *Text*; *Muster* [; *Optionen* ])
+**Match**( *Text*, *Muster* [, *Optionen* ])
 
 * *Text*: Erforderlich. Die zu Übereinstimmungs Text Zeichenfolge.
 * *Pattern*: erforderlich. Das Muster, das als Text Zeichenfolge abgeglichen werden soll. Verketten Sie vordefinierte Muster, **die die** Übereinstimmungs-Enumeration definiert, oder stellen Sie einen regulären Ausdruck bereit. Das *Muster* muss eine Konstante Formel ohne Variablen, Datenquellen oder andere dynamische Verweise sein, die sich bei der Ausführung der App ändern.
 * *Options*: optional. Eine Textzeichen folgen Kombination von **matchoptions** -Enumerationswerten. Standardmäßig wird **matchoptions. enthält** verwendet.
 
-**MatchAll**( *Text*; *Muster* [; *Optionen* ])
+**MatchAll**( *Text*, *Muster* [, *Optionen* ])
 
 * *Text*: Erforderlich. Die zu Übereinstimmungs Text Zeichenfolge.
 * *Pattern*: erforderlich. Das Muster, das als Text Zeichenfolge abgeglichen werden soll. Verketten Sie vordefinierte Muster, **die die** Übereinstimmungs-Enumeration definiert, oder stellen Sie einen regulären Ausdruck bereit. Das *Muster* muss eine Konstante Formel ohne Variablen, Datenquellen oder andere dynamische Verweise sein, die sich bei der Ausführung der App ändern.
@@ -160,63 +159,63 @@ Der Benutzer gibt **Hello World** in **Texteingabe1** ein.
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| `IsMatch( TextInput1.Text; "Hello world" )` |Testet, ob die Eingabe des Benutzers genau mit der Zeichenfolge "Hello World" übereinstimmt. |**TRUE** |
-| `IsMatch( TextInput1.Text; "Good bye" )` |Testet, ob die Eingabe des Benutzers genau mit der Zeichenfolge "Good Bye" übereinstimmt. |**FALSE** |
-| `IsMatch( TextInput1.Text; "hello"; Contains )` |Testet, ob die Eingabe des Benutzers das Wort "Hello" (Groß-/Kleinschreibung wird beachtet) enthält. |**FALSE** |
-| `IsMatch( TextInput1.Text; "hello"; Contains & IgnoreCase )` |Prüft, ob die Eingabe des Benutzers das Wort „Hello“(Groß-/Kleinschreibung beachten) enthält. |**TRUE** |
+| `IsMatch( TextInput1.Text, "Hello world" )` |Testet, ob die Eingabe des Benutzers genau mit der Zeichenfolge "Hello World" übereinstimmt. |**TRUE** |
+| `IsMatch( TextInput1.Text, "Good bye" )` |Testet, ob die Eingabe des Benutzers genau mit der Zeichenfolge "Good Bye" übereinstimmt. |**FALSE** |
+| `IsMatch( TextInput1.Text, "hello", Contains )` |Testet, ob die Eingabe des Benutzers das Wort "Hello" (Groß-/Kleinschreibung wird beachtet) enthält. |**FALSE** |
+| `IsMatch( TextInput1.Text, "hello", Contains & IgnoreCase )` |Prüft, ob die Eingabe des Benutzers das Wort „Hello“(Groß-/Kleinschreibung beachten) enthält. |**TRUE** |
 
 ### <a name="predefined-patterns"></a>Vordefinierte Muster
 
 |                                                            Formel                                                            |                                                                Beschreibung                                                                |  Ergebnis   |
 |-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| `IsMatch( "123-45-7890"; Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit )` |                                              Ordnet eine US-Sozialversicherungsnummer zu                                               | **TRUE**  |
-|                                           `IsMatch( "joan@contoso.com"; Email )`                                            |                                                         Ordnet eine E-Mail-Adresse zu                                                          | **TRUE**  |
-|                              `IsMatch( "123.456"; MultipleDigits & Period & OptionalDigits )`                               |                                   Ordnet eine Folge von Ziffern, einen Punkt (.) und dann 0 (null) oder mehrere Ziffern zu                                   | **TRUE**  |
-|                                `IsMatch( "123"; MultipleDigits & Period & OptionalDigits )`                                 | Ordnet eine Folge von Ziffern, einen Punkt (.) und dann 0 (null) oder mehrere Ziffern zu Es wird kein Zeitraum im Text angezeigt, der übereinstimmt, sodass dieses Muster nicht übereinstimmt. | **FALSE** |
+| `IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit )` |                                              Ordnet eine US-Sozialversicherungsnummer zu                                               | **TRUE**  |
+|                                           `IsMatch( "joan@contoso.com", Email )`                                            |                                                         Ordnet eine E-Mail-Adresse zu                                                          | **TRUE**  |
+|                              `IsMatch( "123.456", MultipleDigits & Period & OptionalDigits )`                               |                                   Ordnet eine Folge von Ziffern, einen Punkt (.) und dann 0 (null) oder mehrere Ziffern zu                                   | **TRUE**  |
+|                                `IsMatch( "123", MultipleDigits & Period & OptionalDigits )`                                 | Ordnet eine Folge von Ziffern, einen Punkt (.) und dann 0 (null) oder mehrere Ziffern zu Es wird kein Zeitraum im Text angezeigt, der übereinstimmt, sodass dieses Muster nicht übereinstimmt. | **FALSE** |
 
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke
 
 |                                                                              Formel                                                                              |                                                                                                                                  Beschreibung                                                                                                                                   |  Ergebnis   |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-|                                                                    `IsMatch( "986"; "\d+" )`                                                                   |                                                                                                                    Entspricht einer ganzen Zahl, die größer als NULL ist.                                                                                                                     | **TRUE**  |
-|                                                               `IsMatch( "1.02"; "\d+(\.\d\d)?" )`                                                              |                                        Ordnet einen positiven Währungsbetrag zu Wenn die Eingabe ein Dezimaltrennzeichen enthält, muss die Eingabe auch zwei numerische Zeichen nach dem Dezimaltrennzeichen enthalten. 3,00 ist beispielsweise gültig, aber 3,1 nicht.                                         | **TRUE**  |
-|                                                            `IsMatch( "-4.95"; "(-)?\d+(\.\d\d)?" )`                                                             |                                                        Ordnet einen positiven oder negativen Währungsbetrag zu. Wenn die Eingabe ein Dezimaltrennzeichen enthält, muss die Eingabe auch zwei numerische Zeichen nach dem Dezimaltrennzeichen enthalten.                                                        | **TRUE**  |
-|                                                         `IsMatch( "111-11-1111"; "\d{3}-\d{2}-\d{4}" )`                                                        | Ordnet eine US-Sozialversicherungsnummer zu Überprüft das Format, den Typ und die Länge des angegebenen Eingabefelds. Die Zeichenfolge, die abgeglichen werden soll, muss aus drei numerischen Zeichen gefolgt von einem Bindestrich, zwei numerischen Zeichen gefolgt von einem Bindestrich und dann vier numerischen Zeichen bestehen. | **TRUE**  |
-|                                                         `IsMatch( "111-111-111"; "\d{3}-\d{2}-\d{4}" )`                                                         |                                                                                               Wie im vorherigen Beispiel, aber einer der Bindestriche ist in der Eingabe an der falschen Stelle                                                                                               | **FALSE** |
-|                                         `IsMatch( "AStrongPasswordNot"; "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" )`                                        |                                        Validiert ein sicheres Kennwort, das acht, neun oder zehn Zeichen enthalten muss, zusätzlich zu mindestens einer Ziffer und mindestens einem alphabetischen Zeichen. Die Zeichenfolge darf keine Sonderzeichen enthalten.                                        | **FALSE** |
-| `IsMatch( "<https://microsoft.com>"; "(ht&#124;f)tp(s?)\:\/\/\[0-9a-zA-Z\]([-.\w]\*[0-9a-zA-Z])\*(:(0-9)\*)\*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]\*)?" )` |                                                                                                                     Überprüft eine http-, https- oder ftp-URL                                                                                                                      | **TRUE**  |
+|                                                                    `IsMatch( "986", "\d+" )`                                                                   |                                                                                                                    Entspricht einer ganzen Zahl, die größer als NULL ist.                                                                                                                     | **TRUE**  |
+|                                                               `IsMatch( "1.02", "\d+(\.\d\d)?" )`                                                              |                                        Ordnet einen positiven Währungsbetrag zu Wenn die Eingabe ein Dezimaltrennzeichen enthält, muss die Eingabe auch zwei numerische Zeichen nach dem Dezimaltrennzeichen enthalten. 3,00 ist beispielsweise gültig, aber 3,1 nicht.                                         | **TRUE**  |
+|                                                            `IsMatch( "-4.95", "(-)?\d+(\.\d\d)?" )`                                                             |                                                        Ordnet einen positiven oder negativen Währungsbetrag zu. Wenn die Eingabe ein Dezimaltrennzeichen enthält, muss die Eingabe auch zwei numerische Zeichen nach dem Dezimaltrennzeichen enthalten.                                                        | **TRUE**  |
+|                                                         `IsMatch( "111-11-1111", "\d{3}-\d{2}-\d{4}" )`                                                        | Ordnet eine US-Sozialversicherungsnummer zu Überprüft das Format, den Typ und die Länge des angegebenen Eingabefelds. Die Zeichenfolge, die abgeglichen werden soll, muss aus drei numerischen Zeichen gefolgt von einem Bindestrich, zwei numerischen Zeichen gefolgt von einem Bindestrich und dann vier numerischen Zeichen bestehen. | **TRUE**  |
+|                                                         `IsMatch( "111-111-111", "\d{3}-\d{2}-\d{4}" )`                                                         |                                                                                               Wie im vorherigen Beispiel, aber einer der Bindestriche ist in der Eingabe an der falschen Stelle                                                                                               | **FALSE** |
+|                                         `IsMatch( "AStrongPasswordNot", "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" )`                                        |                                        Validiert ein sicheres Kennwort, das acht, neun oder zehn Zeichen enthalten muss, zusätzlich zu mindestens einer Ziffer und mindestens einem alphabetischen Zeichen. Die Zeichenfolge darf keine Sonderzeichen enthalten.                                        | **FALSE** |
+| `IsMatch( "<https://microsoft.com>", "(ht&#124;f)tp(s?)\:\/\/\[0-9a-zA-Z\]([-.\w]\*[0-9a-zA-Z])\*(:(0-9)\*)\*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]\*)?" )` |                                                                                                                     Überprüft eine http-, https- oder ftp-URL                                                                                                                      | **TRUE**  |
 
 ## <a name="match-and-matchall-examples"></a>Match-und MatchAll-Beispiele
 
 | Formel | Beschreibung | Ergebnis |
 |--------|------------|-----------|
-| `Match( "Bob Jones <bob.jones@contoso.com>"; "<(?<email>" & Match.Email & ")>"` | Extrahiert nur den e-Mail-Anteil der Kontaktinformationen.  | {<br>e-Mail:&nbsp;"bob.jones@contoso.com",<br>Fullmatch:&nbsp;"&lt;bob.jones@contoso.com>",<br>Teil Übereinstimmungen:&nbsp;[&nbsp;"bob.jones@contoso.com"&nbsp;],<br>Startmatch: 11<br>}  
-| `Match( "Bob Jones <InvalidEmailAddress>"; "<(?<email>" & Match.Email & ")>"` | Extrahiert nur den e-Mail-Anteil der Kontaktinformationen. Es wurde keine juristische Adresse gefunden (es ist kein @-Zeichen vorhanden), sodass die Funktion *leer*ist. | *blank* |  
-| `Match( Language(); "(<language>\w{2})(?:-(?<script>\w{4}))?(?:-(?<region>\w{2}))?" )` | Extrahiert die sprach-, Skript-und Regions Teile des sprach Tags, das von der **[Language](function-language.md)** -Funktion zurückgegeben wird. Diese Ergebnisse spiegeln die USA ein. Weitere Beispiele finden Sie in der Dokumentation zur [ **sprach** Funktion](function-language.md) .  Der Operator **(?:** gruppiert Zeichen, ohne eine andere unter Übereinstimmung zu erstellen. | {<br>Sprache: "en",<br>Skript: *leer*, <br>Region: "USA",<br>Fullmatch: "en-US", <br>Teil Übereinstimmungen: ["en", "", "US"], <br>Startmatch: 1<br>} 
-| `Match( "PT2H1M39S"; "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" )` | Extrahiert die Stunden, Minuten und Sekunden aus einem Wert der ISO 8601-Dauer. Die extrahierten Zahlen sind immer noch in einer Text Zeichenfolge. Verwenden Sie die [**value**](function-value.md) -Funktion, um Sie vor mathematischen Operationen in eine Zahl zu konvertieren.  | {<br> Stunden: "2",<br>Minuten: "1",<br>Sekunden: "39",<br>Fullmatch: "PT2H1M39S",<br>Teil Übereinstimmungen:&nbsp;[&nbsp;"2",&nbsp;"1",&nbsp;"39"&nbsp;],<br>Startmatch: 1<br>} |
+| `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>" & Match.Email & ")>"` | Extrahiert nur den e-Mail-Anteil der Kontaktinformationen.  | {<br>e-Mail:&nbsp;"bob.jones@contoso.com",<br>Fullmatch:&nbsp;"&lt;bob.jones@contoso.com>",<br>Teil Übereinstimmungen:&nbsp;[&nbsp;"bob.jones@contoso.com"&nbsp;],<br>Startmatch: 11<br>}  
+| `Match( "Bob Jones <InvalidEmailAddress>", "<(?<email>" & Match.Email & ")>"` | Extrahiert nur den e-Mail-Anteil der Kontaktinformationen. Es wurde keine juristische Adresse gefunden (es ist kein @-Zeichen vorhanden), sodass die Funktion *leer*ist. | *blank* |  
+| `Match( Language(), "(<language>\w{2})(?:-(?<script>\w{4}))?(?:-(?<region>\w{2}))?" )` | Extrahiert die sprach-, Skript-und Regions Teile des sprach Tags, das von der **[Language](function-language.md)** -Funktion zurückgegeben wird. Diese Ergebnisse spiegeln die USA ein. Weitere Beispiele finden Sie in der Dokumentation zur [ **sprach** Funktion](function-language.md) .  Der Operator **(?:** gruppiert Zeichen, ohne eine andere unter Übereinstimmung zu erstellen. | {<br>Sprache: "en",<br>Skript: *leer*, <br>Region: "USA",<br>Fullmatch: "en-US", <br>Teil Übereinstimmungen: ["en", "", "US"], <br>Startmatch: 1<br>} 
+| `Match( "PT2H1M39S", "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" )` | Extrahiert die Stunden, Minuten und Sekunden aus einem Wert der ISO 8601-Dauer. Die extrahierten Zahlen sind immer noch in einer Text Zeichenfolge. Verwenden Sie die [**value**](function-value.md) -Funktion, um Sie vor mathematischen Operationen in eine Zahl zu konvertieren.  | {<br> Stunden: "2",<br>Minuten: "1",<br>Sekunden: "39",<br>Fullmatch: "PT2H1M39S",<br>Teil Übereinstimmungen:&nbsp;[&nbsp;"2",&nbsp;"1",&nbsp;"39"&nbsp;],<br>Startmatch: 1<br>} |
 
 Sehen wir uns das letzte Beispiel an. Wenn Sie diese Zeichenfolge mithilfe der **[time](function-date-time.md)** -Funktion in einen Datums-/Uhrzeitwert konvertieren möchten, müssen Sie die benannten Teil Übereinstimmungen einzeln übergeben. Zu diesem Zweck können Sie die **[with](function-with.md)** -Funktion **verwenden, die für den zurückgegebenen** Datensatz verwendet wird:
 
-``` powerapps-comma
+``` powerapps-dot
 With( 
-    Match( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ); 
-    Time( Value( hours ); Value( minutes ); Value( seconds ) )
+    Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ), 
+    Time( Value( hours ), Value( minutes ), Value( seconds ) )
 )
 ```
 
 Fügen Sie für diese Beispiele ein [Button](../controls/control-button.md) -Steuerelement hinzu, legen Sie dessen **onselect** -Eigenschaft auf diese Formel fest, und wählen Sie dann die Schaltfläche aus:
 
-``` powerapps-comma
-Set( pangram; "The quick brown fox jumps over the lazy dog." )
+``` powerapps-dot
+Set( pangram, "The quick brown fox jumps over the lazy dog." )
 ```
  
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
-| `Match( pangram; "THE"; IgnoreCase )` | Sucht alle Übereinstimmungen von "The" in der Text Zeichenfolge, die in der **Pangram** -Variablen enthalten ist. Die Zeichenfolge enthält zwei Übereinstimmungen, aber nur das erste wird zurückgegeben, da Sie **Match** und nicht **MatchAll**verwenden. Die SubMatches-Spalte ist leer, da keine untergeordneten Übereinstimmungen definiert wurden.  | {<br>Fullmatch: "The",<br>Teil Übereinstimmungen: [&nbsp;],<br>Startmatch: 32<br>} |
-| `MatchAll( pangram; "the" )` | Sucht alle Übereinstimmungen von "The" in der Text Zeichenfolge, die in der **Pangram** -Variablen enthalten ist. Beim Test wird die Groß-/Kleinschreibung beachtet, daher wird nur die zweite Instanz von "The" gefunden. Die SubMatches-Spalte ist leer, da keine untergeordneten Übereinstimmungen definiert wurden.  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-the-one.png) |
-| `MatchAll( pangram; "the"; IgnoreCase )` | Sucht alle Übereinstimmungen von "The" in der Text Zeichenfolge, die in der **Pangram** -Variablen enthalten ist. In diesem Fall wird bei dem Test die Groß-/Kleinschreibung nicht beachtet, sodass beide Instanzen des Worts gefunden werden. Die SubMatches-Spalte ist leer, da keine untergeordneten Übereinstimmungen definiert wurden.  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-the-two.png) |
-| `MatchAll( pangram; "\b\wo\w\b" )` | Findet alle aus drei Buchstaben bestehenden Wörter mit einem "o" in der Mitte. Beachten Sie, dass "Brown" ausgeschlossen ist, weil es sich nicht um ein aus drei Buchstaben bestehender Wort handelt und daher nicht "\b" (Wort Grenze) entspricht.  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-fox-dog.png) |
-| `Match( pangram; "\b\wo\w\b\s\*(?<between>\w.+\w)\s\*\b\wo\w\b" )` | Entspricht allen Zeichen zwischen "Fox" und "Dog". | {<br>zwischen:&nbsp;"springt&nbsp;&nbsp;der&nbsp;Lazy",<br>Fullmatch:&nbsp;"Fox&nbsp;springt&nbsp;&nbsp;&nbsp;Lazy&nbsp;Dog",<br>Teil Übereinstimmungen: ["springt über den Lazy"],<br>Startmatch: 17<br> } |
+| `Match( pangram, "THE", IgnoreCase )` | Sucht alle Übereinstimmungen von "The" in der Text Zeichenfolge, die in der **Pangram** -Variablen enthalten ist. Die Zeichenfolge enthält zwei Übereinstimmungen, aber nur das erste wird zurückgegeben, da Sie **Match** und nicht **MatchAll**verwenden. Die SubMatches-Spalte ist leer, da keine untergeordneten Übereinstimmungen definiert wurden.  | {<br>Fullmatch: "The",<br>Teil Übereinstimmungen: [&nbsp;],<br>Startmatch: 32<br>} |
+| `MatchAll( pangram, "the" )` | Sucht alle Übereinstimmungen von "The" in der Text Zeichenfolge, die in der **Pangram** -Variablen enthalten ist. Beim Test wird die Groß-/Kleinschreibung beachtet, daher wird nur die zweite Instanz von "The" gefunden. Die SubMatches-Spalte ist leer, da keine untergeordneten Übereinstimmungen definiert wurden.  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-the-one.png) |
+| `MatchAll( pangram, "the", IgnoreCase )` | Sucht alle Übereinstimmungen von "The" in der Text Zeichenfolge, die in der **Pangram** -Variablen enthalten ist. In diesem Fall wird bei dem Test die Groß-/Kleinschreibung nicht beachtet, sodass beide Instanzen des Worts gefunden werden. Die SubMatches-Spalte ist leer, da keine untergeordneten Übereinstimmungen definiert wurden.  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-the-two.png) |
+| `MatchAll( pangram, "\b\wo\w\b" )` | Findet alle aus drei Buchstaben bestehenden Wörter mit einem "o" in der Mitte. Beachten Sie, dass "Brown" ausgeschlossen ist, weil es sich nicht um ein aus drei Buchstaben bestehender Wort handelt und daher nicht "\b" (Wort Grenze) entspricht.  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-fox-dog.png) |
+| `Match( pangram, "\b\wo\w\b\s\*(?<between>\w.+\w)\s\*\b\wo\w\b" )` | Entspricht allen Zeichen zwischen "Fox" und "Dog". | {<br>zwischen:&nbsp;"springt&nbsp;&nbsp;der&nbsp;Lazy",<br>Fullmatch:&nbsp;"Fox&nbsp;springt&nbsp;&nbsp;&nbsp;Lazy&nbsp;Dog",<br>Teil Übereinstimmungen: ["springt über den Lazy"],<br>Startmatch: 17<br> } |
 
 So zeigen Sie die Ergebnisse von **MatchAll** in einem Katalog an:
 

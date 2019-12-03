@@ -1,6 +1,6 @@
 ---
 title: IfError-Funktion | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die IfError-Funktion in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die IFERROR-Funktion in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8d9916c3fa62aab947315b7c31daa96f7e528acd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fc114688b3a12e842d3107220c0a8967593e18c0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680280"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730818"
 ---
-# <a name="iferror-function-in-powerapps"></a>IfError-Funktion in PowerApps
+# <a name="iferror-function-in-power-apps"></a>IFERROR-Funktion in powerapps
 
 Erkennt Fehler und stellt einen Alternativwert bereit oder führt eine Aktion aus.
 
@@ -34,18 +33,18 @@ Die **IFERROR** -Funktion testet mindestens einen Wert, bis ein Fehler Ergebnis 
 
 Verwenden Sie **IFERROR** , um Fehler Werte durch gültige Werte zu ersetzen. Verwenden Sie diese Funktion z. b., wenn Benutzereingaben eine Division durch 0 (null) verursachen könnten. Erstellen Sie eine Formel, um das Ergebnis durch einen 0 oder einen anderen Wert zu ersetzen, der für Ihre APP geeignet ist, damit downstreamberechnungen fortgesetzt werden können. Die Formel kann so einfach sein wie in diesem Beispiel:
 
-```powerapps-comma
-IfError( 1/x; 0 )
+```powerapps-dot
+IfError( 1/x, 0 )
 ```
 
 Wenn der Wert von **x** nicht 0 (null) ist, gibt die Formel **1/x**zurück. Andernfalls erzeugt **1/x** einen Fehler, und die Formel gibt stattdessen 0 zurück.
 
 Verwenden Sie **IFERROR** in [Verhaltens Formeln](../working-with-formulas-in-depth.md) , um eine Aktion auszuführen und auf einen Fehler zu überprüfen, bevor Sie weitere Aktionen ausführen, wie in diesem Muster:
 
-```powerapps-comma
+```powerapps-dot
 IfError(
-    Patch( DS1; ... ); Notify( "problem in the first action" );
-    Patch( DS2; ... ); Notify( "problem in the second action" )
+    Patch( DS1, ... ), Notify( "problem in the first action" ),
+    Patch( DS2, ... ), Notify( "problem in the second action" )
 )
 ```
 
@@ -55,7 +54,7 @@ Wenn die Formel keine Fehler findet und Sie das optionale *defaultResult* -Argum
 
 ## <a name="syntax"></a>Syntax
 
-**IFERROR**( *value1*; *Fallback1* [; *value2*; *Fallback2*;... [; *DefaultResult* ]] )
+**IFERROR**( *value1*, *Fallback1* [, *value2*, *Fallback2*,... [, *DefaultResult* ]] )
 
 * *Value (s)* : erforderlich. Ein oder mehrere Formeln, die auf einen Fehlerwert geprüft werden.
 * *Ausweichformel(n)* : erforderlich. Die auszuwertenden Formeln und zurück zugebende Werte, wenn übereinstimmende *Wert* Argumente einen Fehler zurückgegeben haben.
@@ -65,9 +64,9 @@ Wenn die Formel keine Fehler findet und Sie das optionale *defaultResult* -Argum
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **IfError( 1; 2 )** |Das erste Argument ist kein Fehler. Die Funktion hat keine weiteren Fehler, die überprüft werden können, und gibt keinen Standard Rückgabewert zurück. Die-Funktion gibt das zuletzt ausgewertete *Wert* Argument zurück.   | 1 |
-| **IfError( 1/0; 2 )** | Das erste Argument gibt einen Fehlerwert zurück (aufgrund der Division durch null). Die-Funktion wertet das zweite Argument aus und gibt es als Ergebnis zurück. | 2 |
-| **IfError( 1/0; Notify( "There was an internal problem"; NotificationType.Error ) )** | Das erste Argument gibt einen Fehlerwert zurück (aufgrund der Division durch null). Die-Funktion wertet das zweite Argument aus und zeigt dem Benutzer eine Meldung an. Der Rückgabewert von **IfError** ist der Rückgabewert von **Notify** und wird in denselben Typ wie das erste Argument für **IfError** (eine Zahl) umgewandelt. | 1 |
+| **IfError( 1, 2 )** |Das erste Argument ist kein Fehler. Die Funktion hat keine weiteren Fehler, die überprüft werden können, und gibt keinen Standard Rückgabewert zurück. Die-Funktion gibt das zuletzt ausgewertete *Wert* Argument zurück.   | 1 |
+| **IfError( 1/0, 2 )** | Das erste Argument gibt einen Fehlerwert zurück (aufgrund der Division durch null). Die-Funktion wertet das zweite Argument aus und gibt es als Ergebnis zurück. | 2 |
+| **IfError( 1/0, Notify( "There was an internal problem", NotificationType.Error ) )** | Das erste Argument gibt einen Fehlerwert zurück (aufgrund der Division durch null). Die-Funktion wertet das zweite Argument aus und zeigt dem Benutzer eine Meldung an. Der Rückgabewert von **IfError** ist der Rückgabewert von **Notify** und wird in denselben Typ wie das erste Argument für **IfError** (eine Zahl) umgewandelt. | 1 |
 | **IFERROR (1, 2, 3, 4, 5)** | Beim ersten Argument handelt es sich nicht um einen Fehler, daher wertet die Funktion das entsprechende Fallback des Arguments nicht aus. Das dritte Argument ist entweder kein Fehler, daher wertet die Funktion das entsprechende Fallback des Arguments nicht aus. Das fünfte Argument hat kein entsprechendes Fall Back und ist das Standard Ergebnis. Die Funktion gibt das Ergebnis zurück, da die Formel keine Fehler enthält. | 5 |
 
 ### <a name="step-by-step"></a>Schritt für Schritt
@@ -78,7 +77,7 @@ Wenn die Formel keine Fehler findet und Sie das optionale *defaultResult* -Argum
 
 3. Legen Sie für die **Text**-Eigenschaft von **Label1** die folgende Formel fest:
 
-    **IfError( Value( TextEingabe1.Text ); -1 )**
+    **IfError( Value( TextEingabe1.Text ), -1 )**
 
 4. Geben Sie in **TextEingabe1** die Zeichenfolge **1234** ein.  
 

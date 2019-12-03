@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da6c30cc824f5bb6cf1f661d332831223c37d5b8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: aacb19180fc41cc52a9d292fd9d3282f19cc649f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993885"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723765"
 ---
-# <a name="connect-to-office-365-users-connection-from-powerapps"></a>Herstellen einer Verbindung mit Office 365-Benutzer aus PowerApps
+# <a name="connect-to-office-365-users-connection-from-power-apps"></a>Herstellen einer Verbindung mit der Office 365-Benutzer Verbindung über Power apps
 ![Office 365-Benutzer](./media/connection-office365-users/office365icon.png)
 
 Office 365-Benutzer bietet Ihnen Zugriff auf Benutzerprofile in Ihrer Organisation mithilfe Ihres Office 365-Kontos. Sie können verschiedene Aktionen ausführen, z. B. Ihr Profil, das Profil eines Benutzers, den Vorgesetzten oder die direkten Mitarbeiter eines Benutzers abrufen.
@@ -164,7 +164,7 @@ Diese Verbindung umfasst die folgenden Funktionen:
 | [UserProfile](connection-office365-users.md#userprofile) |Ruft ein bestimmtes Benutzerprofil ab. |
 
 ### <a name="myprofile"></a>MyProfile
-Profil erstellen: Ruft das Profil für den aktuellen Benutzer ab.
+Mein Profil abrufen: Ruft das Profil für den aktuellen Benutzer ab.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 Keine
@@ -193,7 +193,7 @@ Keine
 | Businessphones | Zeichenfolge |Telefonnummern des Unternehmens des Benutzers.|
 
 ### <a name="userprofile"></a>UserProfile
-Benutzerprofil erhalten: Ruft ein bestimmtes Benutzerprofil ab.
+Benutzerprofil abrufen: Ruft ein bestimmtes Benutzerprofil ab.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -222,7 +222,7 @@ Benutzerprofil erhalten: Ruft ein bestimmtes Benutzerprofil ab.
 | Businessphones | Zeichenfolge |Telefonnummern des Unternehmens des Benutzers.|
 
 ### <a name="manager"></a>Manager
-Manager erhalten: Ruft das Benutzerprofil für den Vorgesetzten des angegebenen Benutzers ab.
+Manager abrufen: Ruft das Benutzerprofil für den Vorgesetzten des angegebenen Benutzers ab.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -254,7 +254,7 @@ Manager erhalten: Ruft das Benutzerprofil für den Vorgesetzten des angegebenen 
 | Businessphones | Zeichenfolge |Telefonnummern des Unternehmens des Benutzers.|
 
 ### <a name="directreports"></a>DirectReports
-Direkte Berichte erhalten: Direkte Berichte erhalten.
+Direkte Berichte erhalten: direkte Berichte erhalten.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -286,7 +286,7 @@ Direkte Berichte erhalten: Direkte Berichte erhalten.
 | Businessphones | Zeichenfolge |Telefonnummern des Unternehmens des Benutzers.|
 
 ### <a name="searchuser"></a>SearchUser
-Suchen nach Benutzern: Ruft die Suchergebnisse von Benutzerprofilen ab.
+Nach Benutzern suchen: Ruft die Suchergebnisse von Benutzerprofilen ab.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 

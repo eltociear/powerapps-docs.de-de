@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f66ae4ba95d19e871e101979496760931b6821e3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 43d2632612a473f226a9c8c964ecb42837074cc6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679521"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731473"
 ---
-# <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Expense Report“ für Canvas-Apps in PowerApps
+# <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-power-apps"></a>Installieren und Konfigurieren des Spesen Abrechnungs Beispiels für Canvas-apps in powerapps
 
 Ausführliche Anleitung zum Installieren und Konfigurieren der Beispiel-App „Expense Report“ [Hier](https://aka.ms/previewmyexpenses) können Sie auch eine Vorschau der Beispiel-App anzeigen.
 
@@ -38,7 +38,7 @@ Nachverfolgen von Ausgaben Berichten von der Übermittlung bis zur Genehmigung. 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps.
+- [Registrieren Sie sich](../signup-for-powerapps.md) für powerapps.
 
 ## <a name="create-the-expenses-list"></a>Erstellen der Ausgabenliste
 

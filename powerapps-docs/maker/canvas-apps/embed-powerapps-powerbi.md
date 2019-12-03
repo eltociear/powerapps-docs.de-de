@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 94eb220bbe386b47e2fbb678f9487fcef8612415
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 60577eb3b6c272093222f1c14685d5ffe1d433f9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679475"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731528"
 ---
 # <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>Einbetten einer neuen Canvas-App in einen Power BI-Bericht
 
@@ -36,7 +36,7 @@ In diesem Tutorial erhalten Sie Informationen zu den folgenden Vorgängen:
 
 * [Google Chrome](https://www.google.com/chrome/browser/) oder [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge)
 * Ein [Power BI-Abonnement](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi), für das das [Analysebeispiel für Opportunity](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installiert ist.
-* Ein Grundverständnis der Vorgehensweise beim [Erstellen von Apps in PowerApps](data-platform-create-app-scratch.md) und beim [Bearbeiten von Power BI-Berichten](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour).
+* Ein grundlegendes Verständnis der [Erstellung von apps in powerapps](data-platform-create-app-scratch.md) und [Bearbeiten von Power BI Berichten](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
 
 ## <a name="import-the-power-apps-custom-visual"></a>Importieren der benutzerdefinierten Visualisierung von powerapps
 

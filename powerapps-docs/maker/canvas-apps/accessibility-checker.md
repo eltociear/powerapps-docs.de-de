@@ -10,14 +10,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c6278a9ddbea085523117c6b790af2b2b1306a0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6479111dbae5e3f4d12e9cad0d78834800ff4c35
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680073"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725572"
 ---
-# <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>Überprüfen einer Canvas-App in PowerApps auf Barrierefreiheit
+# <a name="review-a-canvas-app-for-accessibility-in-power-apps"></a>Überprüfen einer Canvas-App auf Barrierefreiheit in Power apps
 
 Benutzer, die eine Sehschwäche, Hörschwäche oder eine andere Beeinträchtigung haben, können Ihre Canvas-App einfacher und erfolgreicher nutzen, wenn Sie die Barrierefreiheit berücksichtigen, während Sie das Design und das Verhalten der App entwerfen. Wenn Sie nicht sicher sind, wie Sie Ihre APP leichter zugänglich machen können, können Sie die Barrierefreiheits Prüfung in Power apps Studio ausführen. Dieses Tool kann nicht nur mögliche Probleme bei der Barrierefreiheit erkennen, es erläutert auch, warum jedes Problem ein potentielles Problem für Benutzer darstellen kann, die eine bestimmte Beeinträchtigung haben, und schlägt mögliche Lösungen vor.
 Die Barrierefreiheitsüberprüfung erkennt Probleme bei der Sprachausgabe und Tastatureingabe. Außerdem stellt sie Informationen zur Behebung von Farbkontrastprobleme durch [barrierefreie Farben](accessible-apps-color.md) bereit.

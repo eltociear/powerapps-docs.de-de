@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ac00411c48cc97cb54c30ccefc3d8a6e1af5e48
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4dcc00f20de3a16f1f3125e8840f2f6d74feff32
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673234"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733148"
 ---
-# <a name="understand-canvas-app-variables-in-powerapps"></a>Grundlegendes zu Canvas-App-Variablen in PowerApps
+# <a name="understand-canvas-app-variables-in-power-apps"></a>Grundlegendes zu Canvas-App-Variablen in powerapps
 
 Wenn Sie eine anderes Programmiertool verwenden, wie z.B. Visual Basic oder JavaScript, fragen Sie sich möglicherweise: **Wo sind die Variablen?** Power Apps ist ein wenig anders und erfordert einen anderen Ansatz. Statt auf eine Variable zurückzugreifen, wenn Sie eine Canvas-App erstellen, sollten Sie sich die Frage stellen: **Wie würde ich in Excel verfahren?**
 
@@ -31,7 +30,7 @@ In einigen Fällen müssen Sie Variablen in powerapps verwenden, die das Modell 
 
 Vermeiden Sie im allgemeinen das Verwenden von Variablen. Manchmal hat jedoch nur eine Variable die Auswirkungen, die Sie benötigen. Variablen werden implizit erstellt und eingegeben, wenn Sie in Funktionen angezeigt werden, die ihre Werte festlegen. 
 
-## <a name="translate-excel-into-powerapps"></a>Excel in PowerApps übersetzt
+## <a name="translate-excel-into-power-apps"></a>Übersetzen von Excel in powerapps
 
 ### <a name="excel"></a>Excel
 
@@ -43,23 +42,23 @@ Im folgenden Beispiel wird Zelle **a3** auf die Formel **a1 + a2**festgelegt. We
 
 Excel verfügt nicht über Variablen. Der Wert einer Zelle, die eine Formel enthält, ändert sich abhängig von seiner Eingabe; es gibt allerdings keine Möglichkeit, das Ergebnis einer Formel in einer Zelle oder an einer anderen Stelle zu speichern. Wenn Sie den Wert einer Zelle ändern, ändert sich möglicherweise das gesamte Arbeitsblatt, und alle zuvor berechneten Werte gehen verloren. Ein Excel-Benutzer kann Zellen kopieren und einfügen, aber dies unterliegt der manuellen Eingabe des Benutzers und ist mit Formeln nicht möglich.
 
-### <a name="powerapps"></a>PowerApps
+### <a name="power-apps"></a>Power Apps
 
 Apps, die Sie in powerapps erstellen, Verhalten sich ähnlich wie Excel. Statt Zellen zu aktualisieren, können Sie Steuerelemente überall auf dem Bildschirm hinzufügen und sie für den Einsatz in Formeln benennen.
 
 Beispielsweise können Sie das Excel-Verhalten in einer APP replizieren, indem Sie ein **[Label](controls/control-text-box.md)** -Steuerelement mit dem Namen **Label1**und zwei **[Text Eingabe](controls/control-text-input.md)** -Steuerelemente mit den Namen **TextInput1** und **TextInput2**hinzufügen. Wenn Sie dann die **[Text](controls/properties-core.md)** -Eigenschaft von **Label1** auf **TextInput1 + TextInput2**festlegen, wird immer die Summe aller Zahlen in **TextInput1** und **TextInput2** automatisch angezeigt.
 
-![Berechnen der Summe von zwei Zahlen in powerapps](media/working-with-variables/recalc1.png)
+![Berechnen der Summe von zwei Zahlen in Power apps](media/working-with-variables/recalc1.png)
 
 Beachten Sie, dass das **Label1** -Steuerelement ausgewählt ist und seine Text Formel in der **[Bearbeitungs](controls/properties-core.md)** Leiste oben auf dem Bildschirm anzeigt. Hier finden Sie die Formel **TextInput1 + TextInput2**. Diese Formel erstellt eine Abhängigkeit zwischen diesen Steuerelementen, genauso wie Abhängigkeiten zwischen den Zellen in einer Excel-Arbeitsmappe erstellt werden.  Ändern Sie den Wert von **TextInput1**:
 
-![Animation der Berechnung der Summe von zwei Zahlen in powerapps](media/working-with-variables/recalc2.gif)
+![Animation der Berechnung der Summe von zwei Zahlen in Power apps](media/working-with-variables/recalc2.gif)
 
 Die Formel für **Label1** wurde automatisch neu berechnet und zeigt den neuen Wert.
 
 In powerapps können Sie Formeln verwenden, um nicht nur den primär Wert eines Steuer Elements zu bestimmen, sondern auch Eigenschaften wie z. b. die Formatierung. Im nächsten Beispiel zeigt eine Formel für die **[Color](controls/properties-color-border.md)** -Eigenschaft der Bezeichnung automatisch negative Werte rot an. Die **[If](functions/function-if.md)** -Funktion ist Ihnen wahrscheinlich aus Excel vertraut:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animation der bedingten Formatierung](media/working-with-variables/recalc-color.gif)
 
@@ -105,7 +104,7 @@ Sie benötigen eine Variable, die die laufende Summe enthält, um unseren hinzuf
 
 Funktionsweise von globalen Variablen:
 
-* Sie legen den Wert der globalen Variablen mit der **[Set](functions/function-set.md)** -Funktion fest.  Durch **Set( MyVar; 1 )** wird die globale Variable **MyVar** auf den Wert **1** festgelegt.
+* Sie legen den Wert der globalen Variablen mit der **[Set](functions/function-set.md)** -Funktion fest.  Durch **Set( MyVar, 1 )** wird die globale Variable **MyVar** auf den Wert **1** festgelegt.
 * Sie verwenden die globale Variable, indem Sie mit der **Set**-Funktion auf den verwendeten Namen verweisen.  In diesem Fall gibt **MyVar** den Wert **1** zurück.
 * Globale Variablen können beliebige Werte enthalten, z.B. Zeichenfolgen, Zahlen, Datensätze und [Tabellen](working-with-tables.md).
 
@@ -127,7 +126,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer globalen Variablen neu:
 
 4. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft der **Clear**-Schaltfläche auf folgende Formel fest, um die laufende Summe auf **0** festzulegen:
 
-    **Set( RunningTotal; 0 )**
+    **Set( RunningTotal, 0 )**
 
     ![Die onselect-Eigenschaft der Clear-Schaltfläche ist auf Set-Funktion festgelegt.](media/working-with-variables/global-variable-2.png)
 
@@ -181,11 +180,11 @@ Wenn der Benutzer die APP öffnet, haben alle Variablen den Anfangswert *blank*.
 
 Sie verwenden den Variablennamen, um den Wert zu lesen. Beispielsweise können Sie eine Variable mit der folgenden Formel definieren:
 
-`Set( Radius; 12 )`
+`Set( Radius, 12 )`
 
 Anschließend können Sie einfach **RADIUS** überall verwenden, wo Sie eine Zahl verwenden können, und es wird durch **12**ersetzt:
 
-`Pi() * Power( Radius; 2 )`
+`Pi() * Power( Radius, 2 )`
 
 Wenn Sie eine Kontext Variable mit dem gleichen Namen wie eine globale Variable oder eine Auflistung versehen, hat die Kontext Variable Vorrang. Sie können jedoch weiterhin auf die globale Variable oder Auflistung verweisen, wenn Sie den [disambiguations-Operator](functions/operators.md#disambiguation-operator) **@ [RADIUS]** verwenden.
 
@@ -237,7 +236,7 @@ Erstellen Sie Ihren hinzufügenden Computer mithilfe einer Kontextvariablen neu:
 
 7. Sie können den Wert einer Kontextvariablen beim Wechsel zu einem Bildschirm festlegen. Dies ist hilfreich, wenn Sie den „Kontext“ bzw. die „Parameter“ von einem Bildschirm an einen anderen übergeben möchten. Um diese Technik zu veranschaulichen, fügen Sie einen Bildschirm ein, fügen Sie eine Schaltfläche ein, und legen **Sie die onselect** -Eigenschaft auf diese Formel fest
 
-    **Navigate( Screen1; None; { RunningTotal: -1000 } )**
+    **Navigate( Screen1, None, { RunningTotal: -1000 } )**
 
     ![Onselect-Eigenschaft einer Schaltfläche](media/working-with-variables/context-variable-5.png)
 
@@ -271,7 +270,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 3. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
 
-    **Collect( PaperTape; TextInput1.Text )**
+    **Collect( PaperTape, TextInput1.Text )**
 
     Das bloße vorhanden sein dieser Formel richtet **Taschen Bänder** als Sammlung ein, die eine einspaltige Tabelle mit Text Zeichenfolgen enthält. Sie können auf **Taschen Bänder** an beliebiger Stelle in dieser APP verweisen. Wenn ein Benutzer diese APP öffnet, ist das **Taschen Band** eine leere Tabelle.
 
@@ -287,7 +286,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 5. Fügen Sie eine Bezeichnung hinzu, um die laufende Summe anzuzeigen, und legen Sie ihre **[Text](controls/properties-core.md)** -Eigenschaft auf folgende Formel fest:
 
-    **Sum( PaperTape; Value )**
+    **Sum( PaperTape, Value )**
 
     ![Text-Eigenschaft der Bezeichnung](media/working-with-variables/papertape-3.png)
 
@@ -311,7 +310,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 10. Fügen Sie zum Speichern und Abrufen der Auflistung zwei zusätzliche Schaltflächen-Steuerelemente hinzu, und legen Sie deren **Text** -Eigenschaften auf **Laden** und **Speichern**fest. Legen **Sie die onselect** -Eigenschaft der Schaltfläche " **Laden** " auf diese Formel fest:
 
-     **Clear( PaperTape );; LoadData( PaperTape; "StoredPaperTape"; true )**
+     **Clear( PaperTape ); LoadData( PaperTape, "StoredPaperTape", true )**
 
      Sie müssen zuerst die Auflistung löschen, da **LoadData** die gespeicherten Werte an das Ende der Auflistung anfügt.
 
@@ -319,11 +318,11 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 11. Legen **Sie die onselect** -Eigenschaft der Schaltfläche **Speichern** auf diese Formel fest:
 
-     **SaveData( PaperTape; "StoredPaperTape" )**
+     **SaveData( PaperTape, "StoredPaperTape" )**
 
      ![Onselect *-Eigenschaft der Schaltfläche "Speichern"](media/working-with-variables/papertape-6.png)
 
 12. Drücken Sie erneut F5, um die Vorschau aufzurufen, geben Sie Zahlen im Textsteuerelement ein, und wählen Sie Schaltflächen aus. Wählen Sie die Schaltfläche **Save** aus. Schließen Sie die APP, **und laden Sie** Sie neu
 
 > [!NOTE]
-> **SaveData** und **LoadData** in powerapps Mobile, aber nicht in powerapps Studio oder im Web Player für powerapps.
+> Die Funktion " **SaveData** " und " **LoadData** " in Power Apps Mobile, aber nicht in powerapps Studio oder im Web Player für Power apps.

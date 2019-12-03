@@ -1,6 +1,6 @@
 ---
 title: Funktion „Value“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Value“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax, für die Funktion "Value" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: de9cf7aa2c01b25f17aa6be7ce1f95871c3ab118
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ec168ce00fff1abdb624a8decc1c5d44ec7bd61c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983384"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729783"
 ---
-# <a name="value-function-in-powerapps"></a>Funktion „Value“ in PowerApps
+# <a name="value-function-in-power-apps"></a>Funktion "Value" in powerapps
 Konvertiert eine Textzeichenfolge in eine Zahl
 
 ## <a name="description"></a>Beschreibung
@@ -40,7 +39,7 @@ Wenn die Anzahl nicht in einem entsprechenden Format ist, gibt **Value** *blank*
 Verwenden Sie zum Konvertieren von Datums-und Uhrzeitwerten die Funktionen [**DateValue**](function-datevalue-timevalue.md), [ **TimeValue**](function-datevalue-timevalue.md) oder [**DateTimeValue**](function-datevalue-timevalue.md).
 
 ## <a name="syntax"></a>Syntax
-**Value**(*Zeichenfolge* [;*LanguageTag*])
+**Value**(*Zeichenfolge* [,*LanguageTag*])
 
 * *Zeichenfolge*: erforderlich. Die Zeichenfolge, die in einen numerischen Wert konvertiert werden soll
 * *LanguageTag*: optional.  Das Sprachkennzeichen, in dem die Zeichenfolge analysiert werden soll.  Standardmäßig wird die Sprache des aktuellen Benutzers verwendet, wenn die Sprache nicht angegeben wurde.
@@ -51,9 +50,9 @@ Der Benutzer, der diese Formeln ausführt, befindet sich in den USA und hat Engl
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Value( "123.456" )** |Die Standardsprache "En-US" wird verwendet, in der ein Punkt als Dezimaltrennzeichen verwendet wird. |123.456 |
-| **Value( "123.456"; "es-ES" )** |"es-ES" steht für Spanisch (Spanien).  In Spanien ist ein Punkt ein Tausendertrennzeichen. |123456 |
+| **Value( "123.456", "es-ES" )** |"es-ES" steht für Spanisch (Spanien).  In Spanien ist ein Punkt ein Tausendertrennzeichen. |123456 |
 | **Value( "123,456" )** |Die Standardsprache "En-US" wird verwendet, in der ein Komma als Tausendertrennzeichen verwendet wird. |123456 |
-| **Value( "123,456"; "es-ES" )** |"es-ES" steht für Spanisch (Spanien).  In Spanien ist das Dezimaltrennzeichen ein Komma. |123.456 |
+| **Value( "123,456", "es-ES" )** |"es-ES" steht für Spanisch (Spanien).  In Spanien ist das Dezimaltrennzeichen ein Komma. |123.456 |
 | **Value( "12.34%" )** |Das Prozentzeichen am Ende der Zeichenfolge gibt an, dass dies ein Prozentsatz ist. |0.1234 |
 | **Value( "$ 12.34" )** |Das Währungssymbol der aktuellen Sprache wird ignoriert. |12.34 |
 | **Value( "24e3" )** |Wissenschaftliche Schreibweise für 12 x 10<sup>3</sup>. |24000 |

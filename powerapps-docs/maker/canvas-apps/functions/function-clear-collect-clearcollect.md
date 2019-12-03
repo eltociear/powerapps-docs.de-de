@@ -1,6 +1,6 @@
 ---
 title: Funktionen „Collect“, „Clear“ und „ClearCollect“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispiele, für die Collect-, Clear- und ClearCollect-Funktionen in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "Collect", "Clear" und "clearcollect" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02a69fd7844de8965607cd828c6b3e17437ce34f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c4d9362819790d60faaf68173c119f67b895fb9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678394"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731349"
 ---
-# <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Collect-, Clear- und ClearCollect-Funktionen in PowerApps
+# <a name="collect-clear-and-clearcollect-functions-in-power-apps"></a>Sammeln, löschen und clearcollect-Funktionen in powerapps
 
 Erstellt und löscht [Sammlungen](../working-with-data-sources.md#collections) und fügt [Datensätze](../working-with-tables.md#records) zu einer beliebigen [Datenquelle](../working-with-data-sources.md) hinzu.
 
@@ -49,7 +48,7 @@ Sie können auch die **[Patch](function-patch.md)** -Funktion für die Erstellun
 
 Die **Clear**-Funktion löscht alle Datensätze einer Sammlung.  Die Spalten der Sammlung bleiben erhalten.
 
-Beachten Sie, dass **Clear** nur bei Sammlungen und nicht bei anderen Datenquellen angewendet wird.  Für diesen Zweck können Sie **[RemoveIf](function-remove-removeif.md)( *DataSource*; TRUE)** verwenden.  Seien Sie vorsichtig, da dies alle Datensätze aus dem Speicher der Datenquelle entfernt und Auswirkungen auf andere Benutzer haben kann.
+Beachten Sie, dass **Clear** nur bei Sammlungen und nicht bei anderen Datenquellen angewendet wird.  Für diesen Zweck können Sie **[RemoveIf](function-remove-removeif.md)( *DataSource*, TRUE)** verwenden.  Seien Sie vorsichtig, da dies alle Datensätze aus dem Speicher der Datenquelle entfernt und Auswirkungen auf andere Benutzer haben kann.
 
 Sie können die **[Remove](function-remove-removeif.md)** -Funktion verwenden, um Datensätze gezielt zu entfernen.
 
@@ -63,7 +62,7 @@ Die **ClearCollect**-Funktion löscht alle Datensätze aus einer Sammlung und f�
 
 ## <a name="syntax"></a>Syntax
 
-**Collect**( *Datenquelle*; *Element*; ... )
+**Collect**( *Datenquelle*, *Element*, ... )
 
 * *DataSource*: erforderlich. Die Datenquelle, in die Sie Daten hinzufügen möchten.  Wenn nicht bereits vorhanden, wird eine neue Sammlung erstellt.
 * *Element(e)* : Erforderlich.  Eine oder mehrere Datensätze oder Tabellen, die der Datenquelle hinzugefügt werden sollen.  
@@ -72,7 +71,7 @@ Die **ClearCollect**-Funktion löscht alle Datensätze aus einer Sammlung und f�
 
 * *Auflistung*: Erforderlich. Die Sammlung, die Sie löschen möchten.
 
-**ClearCollect**( *Auflistung*; *Element*; ... )
+**ClearCollect**( *Auflistung*, *Element*, ... )
 
 * *Auflistung*: Erforderlich. Die Sammlung, die Sie löschen und zu der Sie dann Daten hinzufügen möchten.
 * *Element(e)* : Erforderlich.  Eine oder mehrere Datensätze oder Tabellen, die der Datenquelle hinzugefügt werden sollen.  
@@ -87,8 +86,8 @@ In diesen Beispielen löschen und fügen Sie Daten zu einer Sammlung mit dem Nam
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **ClearCollect( IceCream; {&nbsp;Flavor:&nbsp;"Strawberry";&nbsp;Quantity:&nbsp;300&nbsp;} )** |Löscht alle Daten aus der Sammlung **IceCream**, und fügt anschließend einen Datensatz hinzu, der eine Menge von Erdbeereis enthält. |<style>IMG {max-width: None}</style> ![Tabelle mit einem Datensatz](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
-| **Collect( IceCream; {&nbsp;Flavor:&nbsp;"Pistachio";&nbsp;Quantity:&nbsp;40&nbsp;}; {&nbsp;Flavor:&nbsp;"Orange";&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Fügt der **icecream** -Auflistung zwei Datensätze hinzu, die eine Menge von Pistazie und orangefarbener Eiscreme enthalten. |![Tabelle mit zwei Datensätzen](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Löscht alle Daten aus der Sammlung **IceCream**, und fügt anschließend einen Datensatz hinzu, der eine Menge von Erdbeereis enthält. |<style>IMG {max-width: None}</style> ![Tabelle mit einem Datensatz](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Fügt der **icecream** -Auflistung zwei Datensätze hinzu, die eine Menge von Pistazie und orangefarbener Eiscreme enthalten. |![Tabelle mit zwei Datensätzen](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
 | **Clear( IceCream )** |Entfernt alle Datensätze aus der Sammlung **IceCream**. |![leere Tabelle](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
 
 Schritt-für-Schritt-Beispiele zum Erstellen einer Sammlung finden Sie unter [Erstellen und Aktualisieren einer Sammlung](../create-update-collection.md).
@@ -99,7 +98,7 @@ In diesen Beispielen wird untersucht, wie Datensatz-und Tabellen Argumente **erf
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Clearcollect (icecream; {&nbsp;Flavor:&nbsp;"Chocolate";&nbsp;Menge:&nbsp;100&nbsp;}; {&nbsp;Flavor:&nbsp;"Vanille";&nbsp;Menge:&nbsp;200&nbsp;})** | Löschen Sie alle Daten, und fügen Sie dann der **icecream** -Auflistung zwei Datensätze hinzu, die eine Menge von Schoko-und Vanille-Eis enthalten.  Die hinzu zufügenden Datensätze werden als einzelne Argumente der Funktion bereitgestellt.| ![der Sammlung hinzugefügte Schoko-und Vanille Datensätze](media/function-clear-collect-clearcollect/icecream.png) <br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
-| **Clearcollect (icecream; Tabelle ({&nbsp;Flavor:&nbsp;"Chocolate";&nbsp;Menge:&nbsp;100&nbsp;}; {&nbsp;Flavor:&nbsp;"Vanille";&nbsp;Menge:&nbsp;200&nbsp;}))** | Identisch mit dem vorherigen Beispiel, mit dem Unterschied, dass die Datensätze in einer Tabelle kombiniert und durch ein einzelnes Argument übermittelt werden. Der Inhalt der Tabelle wird nach Datensatz extrahiert, bevor Sie der **icecream** -Auflistung hinzugefügt wird. | ![der Sammlung hinzugefügte Schoko-und Vanille Datensätze](media/function-clear-collect-clearcollect/icecream.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
-| **Clearcollect (icecream;<br>{&nbsp;myfavoriten: Table ({&nbsp;Flavor:&nbsp;"Chocolate";&nbsp;Menge:&nbsp;100&nbsp;}; {&nbsp;Flavor:&nbsp;"Vanille";&nbsp;Menge:&nbsp;200&nbsp;})})** | Identisch mit dem vorherigen Beispiel, mit der Ausnahme, dass die Tabelle in einem Datensatz umschließt ist.  Die Datensätze der Tabelle werden nicht extrahiert, und stattdessen wird die gesamte Tabelle als untergeordnete Tabelle des Datensatzes hinzugefügt. | ![der Sammlung hinzugefügte Schoko-und Vanille Datensätze](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+| **Clearcollect (icecream, {&nbsp;Flavor:&nbsp;"Chocolate",&nbsp;Menge:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"Vanille",&nbsp;Menge:&nbsp;200&nbsp;})** | Löschen Sie alle Daten, und fügen Sie dann der **icecream** -Auflistung zwei Datensätze hinzu, die eine Menge von Schoko-und Vanille-Eis enthalten.  Die hinzu zufügenden Datensätze werden als einzelne Argumente der Funktion bereitgestellt.| ![der Sammlung hinzugefügte Schoko-und Vanille Datensätze](media/function-clear-collect-clearcollect/icecream.png) <br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+| **Clearcollect (icecream, Tabelle ({&nbsp;Flavor:&nbsp;"Chocolate",&nbsp;Menge:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"Vanille",&nbsp;Menge:&nbsp;200&nbsp;}))** | Identisch mit dem vorherigen Beispiel, mit dem Unterschied, dass die Datensätze in einer Tabelle kombiniert und durch ein einzelnes Argument übermittelt werden. Der Inhalt der Tabelle wird nach Datensatz extrahiert, bevor Sie der **icecream** -Auflistung hinzugefügt wird. | ![der Sammlung hinzugefügte Schoko-und Vanille Datensätze](media/function-clear-collect-clearcollect/icecream.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+| **Clearcollect (icecream,<br>{&nbsp;myfavoriten: Table ({&nbsp;Flavor:&nbsp;"Chocolate",&nbsp;Menge:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"Vanille",&nbsp;Menge:&nbsp;200&nbsp;})})** | Identisch mit dem vorherigen Beispiel, mit der Ausnahme, dass die Tabelle in einem Datensatz umschließt ist.  Die Datensätze der Tabelle werden nicht extrahiert, und stattdessen wird die gesamte Tabelle als untergeordnete Tabelle des Datensatzes hinzugefügt. | ![der Sammlung hinzugefügte Schoko-und Vanille Datensätze](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
 

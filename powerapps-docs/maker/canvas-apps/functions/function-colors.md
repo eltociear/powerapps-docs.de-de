@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b2c12805fc3ea8c9c7f8cee7432ac58c1183a18
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 135b85dc60f88c1cf87255f65be765afd80cc2f3
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679360"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731748"
 ---
-# <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>Color-Enumeration und ColorFade-, ColorValue- und RGBA-Funktionen in PowerApps
+# <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-power-apps"></a>Color-Enumeration und colorfade-, ColorValue-und RGBA-Funktionen in powerapps
 
 Verwenden Sie integrierte Farbwerte, definieren Sie benutzerdefinierte Farben, und verwenden Sie den Alphakanal.
 
@@ -63,12 +62,12 @@ Wenn Sie einen farbenumerationswert angeben oder eine **ColorValue** -Formel mit
 
 - *CSSColor*: Erforderlich.  Name einer Cascading Stylesheet-Definition (CSS). Sie können einen Namen (z. b. **OliveDrab**) oder einen Hexadezimalwert angeben, z. b. **#6b8e23** oder **#7fffd420**. Hexadezimale Werte können entweder die Form "#*RRGGBB* " oder "#*RRGGBBAA*" haben.
 
-**RGBA**( *Red*; *Green*; *Blue*; *Alpha* )
+**RGBA**( *Red*, *Green*, *Blue*, *Alpha* )
 
 - *Red*, *Green*, *Blue*: Erforderlich.  Farbkomponenten Werte, die zwischen 0 (keine Sättigung) und 255 (vollständige Sättigung) liegen.
 - *Alpha*: Erforderlich.  Alpha Komponente, die zwischen 0 (vollständig transparent) und 1 (vollständig nicht transparent) liegt. Sie können auch einen Prozentsatz, 0 % bis 100 %, verwenden.
 
-**ColorFade**( *Color*; *FadeAmount* )
+**ColorFade**( *Color*, *FadeAmount* )
 
 - *Color*: Erforderlich.  Ein Farbwert wie z.B. **Color.Red** oder die Ausgabe von **ColorValue** oder **RGBA**.
 - *FadeAmount*: Erforderlich.  Eine Zahl zwischen -1 und 1. -1 markiert eine Farbe vollständig in schwarz, 0 wirkt sich nicht auf die Farbe aus, und 1 lässt eine Farbe vollständig in weiß aus. Sie können auch einen Prozentsatz zwischen-100% und 100% verwenden.

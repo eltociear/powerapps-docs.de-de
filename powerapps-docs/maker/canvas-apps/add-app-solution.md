@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f6b34a5ea1b2f269a26ad70de6a6a530a30bc240
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 679dab28c49d71e8f28a9ace047b9481c4d53cc2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679337"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725095"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Erstellen einer Canvas-App aus einer Projekt Mappe
 

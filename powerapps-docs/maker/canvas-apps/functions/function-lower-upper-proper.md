@@ -1,6 +1,6 @@
 ---
 title: Funktionen „Lower“, „Upper“ und „Proper“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispiele, für die Lower-, Upper- und Proper-Funktionen in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "Lower", "Upper" und "Proper" in Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 413f07bcca9d238ab1a6f6b020f1d1436f2ca737
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 115b5e51f816778d763481999f8f487a1d64037a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984554"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730587"
 ---
-# <a name="lower-upper-and-proper-functions-in-powerapps"></a>Lower-, Upper- und Proper-Funktionen in PowerApps
+# <a name="lower-upper-and-proper-functions-in-power-apps"></a>Niedrigere, obere und ordnungsgemäße Funktionen in Power apps
 Konvertiert Buchstaben in einer Textzeichenfolge in alle Kleinbuchstaben, Großbuchstaben oder den richtigen Fall.
 
 ## <a name="description"></a>Beschreibung
@@ -63,9 +62,9 @@ Jede Formel gibt eine einspaltige Tabelle zurück, die die konvertierten Zeichen
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Lower( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
-| **Upper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |![](media/function-lower-upper-proper/people-table-upper.png) |
-| **Proper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Konvertiert den ersten Kleinbuchstaben jedes Worts in Großbuchstaben und Großbuchstaben in Kleinbuchstaben. |![](media/function-lower-upper-proper/people-table-proper.png) |
+| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
+| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |![](media/function-lower-upper-proper/people-table-upper.png) |
+| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Konvertiert den ersten Kleinbuchstaben jedes Worts in Großbuchstaben und Großbuchstaben in Kleinbuchstaben. |![](media/function-lower-upper-proper/people-table-proper.png) |
 
 ### <a name="step-by-step-example"></a>Schritt-für-Schritt-Beispiel
 1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)** -Steuerelement hinzu, und benennen Sie es **Source**.

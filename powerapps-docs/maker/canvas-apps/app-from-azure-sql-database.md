@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 140fa7c51c30199360a08adc86c6e118e4e5bc52
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4980d7989a65032cec28aab1bc70ae3e01d1747d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679935"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724163"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>Vorschau: Erstellen einer Canvas-App aus einer Azure SQL-Datenbank
 
@@ -109,10 +109,10 @@ Power Apps können mithilfe der Azure-Portal eine Verbindung mit der SQL-Datenba
 In dieser Schnellstartanleitung haben Sie mithilfe der Azure-Portal eine App mithilfe von Daten aus der SQL-Datenbank erstellt. Im nächsten Schritt passen Sie die APP mit Steuerelementen, Bildern und Logik an, um Ihre geschäftlichen Anforderungen besser zu erfüllen.
 
 > [!div class="nextstepaction"]
-> [Entwerfen der Canvas-App-Schnittstelle in powerapps](add-configure-controls.md)
+> [Entwerfen der Canvas-App-Schnittstelle in Power apps](add-configure-controls.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Freigeben einer Canvas-app in powerapps](share-app.md) </br>
-- [Hinzufügen einer Datenverbindung zu einer Canvas-app in powerapps](add-data-connection.md#add-data-source)</br>
-- [Microsoft Learn: Anpassen einer Canvas-app in powerapps](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)
+- [Freigeben einer Canvas-app in Power apps](share-app.md) </br>
+- [Hinzufügen einer Datenverbindung zu einer Canvas-app in Power apps](add-data-connection.md#add-data-source)</br>
+- [Microsoft Learn: Anpassen einer Canvas-app in Power apps](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)

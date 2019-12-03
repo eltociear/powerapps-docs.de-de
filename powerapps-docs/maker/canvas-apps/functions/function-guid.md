@@ -1,6 +1,6 @@
 ---
 title: Funktion „GUID“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax für die Funktion „GUID“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax, für die GUID-Funktion in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea2668ca295d807bbc19f71c9aa9f477c3b96041
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 88028d2dc4016d294e051ecff66b590996b57966
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992688"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730865"
 ---
-# <a name="guid-function-in-powerapps"></a>Funktion „GUID“ in PowerApps
+# <a name="guid-function-in-power-apps"></a>GUID-Funktion in powerapps
 Konvertiert eine GUID-Zeichenfolge ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier), global eindeutiger Bezeichner) in einen GUID-Wert oder erstellt einen neuen GUID-Wert.
 
 ## <a name="description"></a>Beschreibung
@@ -70,7 +69,7 @@ Sie können die GUID-Zeichenfolge auch ohne Bindestriche angeben. Diese Formel g
 
 Um in diesem Kontext das Feld **Status** eines neuen Datenbankdatensatzes auf einen bekannten Wert festzulegen, verwenden Sie Folgendes:
 
-* Patch für **(Produkte; Standard (Produkte); {Status: GUID ("F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4")})**
+* **Patch( Products, Default( Products ), { Status: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
 
 Sie werden die GUIDs vermutlich für Ihre Benutzer nicht sichtbar machen, aber GUIDs können Ihnen beim Debuggen Ihrer App helfen. Um den Wert des **Status**-Felds in dem Datensatz anzuzeigen, den Sie im vorherigen Beispiel erstellt haben, legen Sie die **Text**-Eigenschaft eines **Label**-Steuerelements auf diese Formel fest:
 
@@ -82,7 +81,7 @@ Das **Label**-Steuerelement zeigt **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4** an.
 
 1. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** eines **[Button](../controls/control-button.md)** -Steuerelements auf die folgende Formel fest:
 
-    **ClearCollect( NewGUIDs; ForAll( [ 1; 2; 3; 4; 5 ]; GUID() ) )**
+    **ClearCollect( NewGUIDs, ForAll( [ 1, 2, 3, 4, 5 ], GUID() ) )**
 
     Diese Formel erstellt eine Tabelle mit einer Spalte, die fünfmal durchlaufen wird. Das Ergebnis sind fünf GUIDs.
 
@@ -100,4 +99,4 @@ Das **Label**-Steuerelement zeigt **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4** an.
 
 Um eine einzelne GUID anstelle einer Tabelle zu generieren, verwenden Sie diese Formel:
 
-**Set( NewGUID; GUID() )**
+**Set( NewGUID, GUID() )**

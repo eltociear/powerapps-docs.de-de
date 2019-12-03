@@ -1,6 +1,6 @@
 ---
 title: Funktionen, Signale und Enumerationen | Microsoft-Dokumentation
-description: Referenzinformationen zu Funktionen, Signalen und Enumerationen in PowerApps
+description: Referenzinformationen zu Funktionen, Signalen und Enumerationen in powerapps.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7712af247376d6db54aa6777eb2a3051f0e31f93
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678463"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731417"
 ---
-# <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
+# <a name="formula-reference-for-power-apps"></a>Formel Referenz für Power apps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
 
 * **Funktionen** verwenden Parameter, führen einen Vorgang aus und geben einen Wert zurück. So gibt beispielsweise **Sqrt(25)** den Wert **5** zurück. Funktionen sind Microsoft Excel-Funktionen nachgebildet.  Einige Funktionen haben nachteilige Auswirkungen, wie z.B. **SubmitForm**, die sich nur für [Verhaltensformeln](working-with-formulas-in-depth.md) wie **Button.OnSelect** eignet.

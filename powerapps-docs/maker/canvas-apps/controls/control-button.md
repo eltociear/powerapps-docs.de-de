@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 430452514cd37930e145e8061ee6ac64c697b6e9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02d5f59f16b68ce7f140857591b86a5cd8e54cd5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679797"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722963"
 ---
-# <a name="button-control-in-powerapps"></a>Schaltflächen-Steuerelement in PowerApps
+# <a name="button-control-in-power-apps"></a>Button-Steuerelement in powerapps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen mit der App interagieren können.
 
 ## <a name="description"></a>Beschreibung
@@ -118,7 +117,7 @@ Konfigurieren Sie die **[OnSelect](properties-core.md)** -Eigenschaft eines **Sc
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-**[Navigate( *ScreenName*; *ScreenTransitionValue* )](../functions/function-navigate.md)**
+**[Navigate( *ScreenName*, *ScreenTransitionValue* )](../functions/function-navigate.md)**
 
 ## <a name="examples"></a>Beispiele
 ### <a name="add-a-basic-formula-to-a-button"></a>Hinzufügen einer einfachen Formel zu einer Schaltfläche
@@ -145,7 +144,7 @@ Fügen Sie eine Formel hinzu, die das **Texteingabe**-Steuerelement zwischen Ein
 1. Legen Sie die **[HintText](control-text-input.md)** -Eigenschaft von **Quelle** auf „Eine Zahl eingeben“ fest.
 2. Legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft von **Hinzufügen** auf die folgende Formel fest:
    
-    **UpdateContext({Total:Total + Value(Source.Text)});;<br>UpdateContext({ClearInput: ""})**
+    **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
    > Trennen Sie mehrere Formeln durch ein Semikolon „ **;** “.

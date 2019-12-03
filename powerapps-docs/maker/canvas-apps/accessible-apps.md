@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 56e5ec7f303706ded114655e5c6d473408e9ddd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9f80332a490289cc5b59de7131d1c2b2483633e1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680027"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725294"
 ---
-# <a name="create-accessible-canvas-apps-in-powerapps"></a>Erstellen barrierefreier Canvas-Apps in PowerApps
+# <a name="create-accessible-canvas-apps-in-power-apps"></a>Erstellen barrierefreier Canvas-apps in powerapps
 Eine barrierefreie Canvas-App kann von Benutzern mit Sehschwäche, Gehörschädigung und anderen Beeinträchtigungen erfolgreich verwendet werden.  Die nachfolgenden Richtlinien sind nicht nur für viele Behörden und Organisationen verpflichtend, sie erhöhen zudem die Verwendbarkeit für alle Benutzer, unabhängig von ihren Fähigkeiten.
 
 Verwenden Sie die **[Barrierefreiheitsprüfung](accessibility-checker.md)** , um mögliche Probleme Ihrer App bei der Barrierefreiheit zu überprüfen. 
@@ -70,4 +70,4 @@ Wenn Sie über ein Signaturfeld verfügen, das das Steuerelement „PenInput“ 
 Ähnlich:
 - [Accessibility properties (Eigenschaften der Barrierefreiheit)](controls/properties-accessibility.md)
 - [Verwenden der Barrierefreiheitsprüfung](accessibility-checker.md)
-- [Barrierefreie Farben in PowerApps](accessible-apps-color.md)
+- [Barrierefreie Farben in powerapps](accessible-apps-color.md)

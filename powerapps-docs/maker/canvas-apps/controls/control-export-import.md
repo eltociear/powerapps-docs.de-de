@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 942b4b1f5f10cf17d2a33e9f9604661256d99ea6
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 1fe22d1503193c7c26f0ac8532085bb9b7db2eac
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650545"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727302"
 ---
-# <a name="export-control-and-import-control-in-powerapps"></a>Export-Steuerelement und Import-Steuerelement in PowerApps
-Steuerelemente zum Exportieren von Daten in eine lokale Datei und anschließenden Importieren dieser Daten in eine andere App in PowerApps.
+# <a name="export-control-and-import-control-in-power-apps"></a>Exportieren von Steuerelement und Import-Steuerelement in powerapps
+Steuerelemente zum Exportieren von Daten in eine lokale Datei und zum anschließenden Importieren dieser Daten in eine andere app in powerapps.
 
 ## <a name="description"></a>Beschreibung
-Wenn Sie mehrere Apps erstellen möchten, die die gleichen Daten verwenden, diese Daten jedoch nicht außerhalb dieser Apps freigeben möchten, können Sie sie mit dem **Export**-Steuerelement und dem **Import**-Steuerelement exportieren bzw. importieren. Beim Exportieren von Daten erstellen Sie eine komprimierte Datei, die Sie auf einen anderen Computer kopieren können, die jedoch in keinem anderen Programm als PowerApps gelesen werden kann.
+Wenn Sie mehrere Apps erstellen möchten, die die gleichen Daten verwenden, diese Daten jedoch nicht außerhalb dieser Apps freigeben möchten, können Sie sie mit dem **Export**-Steuerelement und dem **Import**-Steuerelement exportieren bzw. importieren. Wenn Sie Daten exportieren, erstellen Sie eine komprimierte Datei, die Sie auf einen anderen Computer kopieren können, aber Sie können Sie nicht in einem anderen Programm als powerapps lesen.
 
 ## <a name="warning"></a>Warnung
 Das Aktivieren dieser Funktion in Ihrer App kann Sicherheitslücken und Datenlecks verursachen.  Sie sollten die Benutzer anweisen, nur bekannte und vertrauenswürdige Dateien zu importieren und nur Daten zu exportieren, die nicht vertraulich oder sensibel sind.
@@ -117,7 +116,7 @@ Die Exportfunktion wird in Webbrowsern nicht unterstützt.
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **[Button](control-button.md)** -Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:
-   <br>**ClearCollect(Products; {Name:"Europa"; Price:"10.99"}; {Name:"Ganymede"; Price:"12.49"}; {Name:"Callisto"; Price:"11.79"})**
+   <br>**ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})**
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
    
@@ -127,7 +126,7 @@ Die Exportfunktion wird in Webbrowsern nicht unterstützt.
 4. Drücken Sie F5, klicken oder tippen Sie auf das **Export**-Steuerelement, und geben Sie dann den Namen der Datei an, in die Sie die Daten exportieren möchten.
 5. Klicken oder tippen Sie auf **Speichern**, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
 6. Fügen Sie in einer neuen oder vorhandenen App ein **Import**-Steuerelement hinzu, benennen Sie es mit **MyData**, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
-   **Collect(ImportedProducts; MyData.Data)**
+   **Collect(ImportedProducts, MyData.Data)**
 7. Drücken Sie F5, klicken oder tippen Sie auf **MyData**, klicken oder tippen Sie auf die Datei, die Sie exportiert haben, und klicken oder tippen Sie dann auf **Öffnen**.
 8. Drücken Sie ESC, klicken oder tippen Sie im Menü **Datei** auf **Collections** (Sammlungen), und vergewissern Sie sich, dass die aktuelle App die Daten enthält, die Sie exportiert haben.
 

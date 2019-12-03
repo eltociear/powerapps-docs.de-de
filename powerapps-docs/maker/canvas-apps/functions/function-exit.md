@@ -1,6 +1,6 @@
 ---
 title: Funktion „Exit“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Exit“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktion "Exit" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1bcaa98388c2adafac3456bc123b6d766e790697
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 25db774c6d8516cdc64f8a11e5bf70e4d342b231
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984987"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730997"
 ---
-# <a name="exit-function-in-powerapps"></a>Funktion „Exit“ in PowerApps
+# <a name="exit-function-in-power-apps"></a>Exit-Funktion in powerapps
 Beendet die derzeit ausgeführte App
 
 ## <a name="description"></a>Beschreibung

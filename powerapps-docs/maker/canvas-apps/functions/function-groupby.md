@@ -1,6 +1,6 @@
 ---
 title: Funktionen „GroupBy“ und „Ungroup“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktionen „GroupBy“ und „Ungroup“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "GroupBy" und "Ungroup" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c5b5ddf05201743a5ea4848793fcd05aea7def24
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 47a71ab36d67cd3b6862b7d3fe6503b9053108c8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680165"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730921"
 ---
-# <a name="groupby-and-ungroup-functions-in-powerapps"></a>GroupBy- und Ungroup-Funktionen in PowerApps
+# <a name="groupby-and-ungroup-functions-in-power-apps"></a>GroupBy-und Ungroup-Funktionen in powerapps
 Gruppiert und hebt die Gruppierung von [Datensätzen](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md) auf.
 
 ## <a name="description"></a>Beschreibung
@@ -46,7 +45,7 @@ Sie können Ergebnisse auch aufgrund einer Gruppierung aggregieren:
 Eine Tabelle ist ein Wert in Power apps, wie z. b. eine Zeichenfolge oder eine Zahl. Sie können eine Tabelle als Argument für eine Funktion angeben, und eine Funktion kann eine Tabelle zurückgeben. **GroupBy** und **Ungroup** führen nicht zur Änderung einer Tabelle; stattdessen verwenden sie die Tabelle als Argument und geben eine andere Tabelle zurück. Weitere Details erfahren Sie unter [Arbeiten mit Tabellen](../working-with-tables.md).
 
 ## <a name="syntax"></a>Syntax
-**GroupBy**( *Tabelle*; *SpaltenName1* [; *SpaltenName2*; ... ]; *GruppenSpaltenName* )
+**GroupBy**( *Tabelle*, *SpaltenName1* [, *SpaltenName2*, ... ], *GruppenSpaltenName* )
 
 * *Table*: erforderlich. Zu gruppierende Tabelle.
 * *ColumnName(s)* : erforderlich.  Die Spaltennamen der *Tabelle* für die Gruppierung der Datensätze.  Diese Spalten werden in der Ergebnistabelle zu Spalten.
@@ -55,7 +54,7 @@ Eine Tabelle ist ein Wert in Power apps, wie z. b. eine Zeichenfolge oder eine Z
     > [!NOTE]
   > Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
 
-**Ungroup**( *Tabelle*; *GruppenSpaltenName* )
+**Ungroup**( *Tabelle*, *GruppenSpaltenName* )
 
 * *Table*: erforderlich. Tabelle, deren Gruppierung aufgehoben werden soll.
 * *GruppenSpaltenName*: erforderlich. Die Spalte mit dem Datensatzdaten-Setup mit der **GroupBy**-Funktion.
@@ -68,17 +67,17 @@ Eine Tabelle ist ein Wert in Power apps, wie z. b. eine Zeichenfolge oder eine Z
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie Ihre **[Text](../controls/properties-core.md)** -Eigenschaft so fest, dass die Schaltfläche **Original** anzeigt.
 2. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche **Original**auf diese Formel fest:
 
-```powerapps-comma   
-ClearCollect( CityPopulations; 
-    { City: "London";    Country: "United Kingdom"; Population: 8615000}; 
-    { City: "Berlin";    Country: "Germany";        Population: 3562000}; 
-    { City: "Madrid";    Country: "Spain";          Population: 3165000}; 
-    { City: "Rome";      Country: "Italy";          Population: 2874000}; 
-    { City: "Paris";     Country: "France";         Population: 2273000}; 
-    { City: "Hamburg";   Country: "Germany";        Population: 1760000}; 
-    { City: "Barcelona"; Country: "Spain";          Population: 1602000}; 
-    { City: "Munich";    Country: "Germany";        Population: 1494000}; 
-    { City: "Milan";     Country: "Italy";          Population: 1344000}
+```powerapps-dot   
+ClearCollect( CityPopulations, 
+    { City: "London",    Country: "United Kingdom", Population: 8615000}, 
+    { City: "Berlin",    Country: "Germany",        Population: 3562000}, 
+    { City: "Madrid",    Country: "Spain",          Population: 3165000}, 
+    { City: "Rome",      Country: "Italy",          Population: 2874000}, 
+    { City: "Paris",     Country: "France",         Population: 2273000}, 
+    { City: "Hamburg",   Country: "Germany",        Population: 1760000}, 
+    { City: "Barcelona", Country: "Spain",          Population: 1602000}, 
+    { City: "Munich",    Country: "Germany",        Population: 1494000}, 
+    { City: "Milan",     Country: "Italy",          Population: 1344000}
 )
 ```
 
@@ -95,7 +94,7 @@ ClearCollect( CityPopulations;
 1. Fügen Sie eine andere Schaltfläche hinzu, und legen Sie deren  **[Text](../controls/properties-core.md)** -Eigenschaft auf**Group** fest.
 2. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche auf diese Formel fest:
    
-    **ClearCollect( CitiesByCountry; GroupBy( CityPopulations; "Country"; "Cities" ) )**
+    **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )**
 3. Halten Sie die ALT-TASTE gedrückt, und klicken Sie auf die Schaltfläche **Gruppe**.
    
     Sie haben jetzt eine Sammlung mit dem Namen **CitiesByCountry** erstellt, in der die Datensätze der vorherigen Sammlung mithilfe der Spalte **Country** gruppiert werden.
@@ -112,7 +111,7 @@ ClearCollect( CityPopulations;
 1. Fügen Sie eine andere Schaltfläche hinzu, und legen Sie deren **[Text](../controls/properties-core.md)** -Eigenschaft so fest, dass die Schaltfläche **„Filter“** anzeigt.
 2. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche auf diese Formel fest:
    
-    **ClearCollect( CitiesByCountryFiltered; Filter( CitiesByCountry; "e" in Country ) )**
+    **ClearCollect( CitiesByCountryFiltered, Filter( CitiesByCountry, "e" in Country ) )**
 3. Halten Sie die ALT-TASTE gedrückt, und klicken Sie auf die Schaltfläche, die Sie hinzugefügt haben.
    
     Sie haben jetzt eine dritte Sammlung mit dem Namen **CitiesByCountryFiltered** erstellt, die nur Länder mit einem „e“ im Namen enthält, d h. nicht „Spain“ oder „Italy“.
@@ -121,7 +120,7 @@ ClearCollect( CityPopulations;
 4. Fügen Sie eine weitere Schaltfläche hinzu, und legen Sie deren **[Text](../controls/properties-core.md)** -Eigenschaft so fest, dass die Schaltfläche **„Ungroup “** anzeigt.
 5. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche auf diese Formel fest:
    
-    **ClearCollect( CityPopulationsUngrouped; Ungroup( CitiesByCountryFiltered; "Cities" ) )**
+    **ClearCollect( CityPopulationsUngrouped, Ungroup( CitiesByCountryFiltered, "Cities" ) )**
    
     Dies führt zu folgendem Ergebnis:
    
@@ -133,7 +132,7 @@ Mit einer gruppierten Tabelle lassen sich außerdem Ergebnisse aggregieren.  In 
 1. Fügen Sie eine andere Schaltfläche hinzu, und legen Sie deren **[Text](../controls/properties-core.md)** -Eigenschaft so fest, dass die Schaltfläche **„Sum“** anzeigt.
 2. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche **„Sum“** auf diese Formel fest:
    
-    **ClearCollect( CityPopulationsSum; AddColumns( CitiesByCountry; "Sum of City Populations"; Sum( Cities; Population ) ) )**
+    **ClearCollect( CityPopulationsSum, AddColumns( CitiesByCountry, "Sum of City Populations", Sum( Cities, Population ) ) )**
    
     Dies führt zu folgendem Ergebnis:
    
@@ -146,7 +145,7 @@ Mit einer gruppierten Tabelle lassen sich außerdem Ergebnisse aggregieren.  In 
 3. Fügen Sie eine andere Schaltfläche hinzu, und legen Sie deren **[Text](../controls/properties-core.md)** -Eigenschaft so fest, dass die Schaltfläche **"SumOnly"** anzeigt.
 4. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche **"Sum"** auf diese Formel fest:
 
-    **ClearCollect( CityPopulationsSumOnly; DropColumns( CityPopulationsSum; "Cities" ) )**
+    **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Cities" ) )**
    
     Dies führt zu folgendem Ergebnis:
    

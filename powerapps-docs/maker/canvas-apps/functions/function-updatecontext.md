@@ -1,6 +1,6 @@
 ---
 title: Funktion „UpdateContext“ | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „UpdateContext“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktion "updatecontext" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 646a5de203c713d59965f7787dabe087c0a33f51
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7112d48b447140533ca432ec6d5e78b9ed367203
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678164"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729895"
 ---
-# <a name="updatecontext-function-in-powerapps"></a>Funktion „UpdateContext“ in PowerApps
+# <a name="updatecontext-function-in-power-apps"></a>Funktion "updatecontext" in powerapps
 Erstellt oder aktualisiert die [Kontextvariablen](../working-with-variables.md#use-a-context-variable) des aktuellen Bildschirms.
 
 ## <a name="overview"></a>Übersicht
@@ -63,7 +62,7 @@ Jede Kontextvariable ist auf einen Bildschirm begrenzt. Wenn Sie eine Kontextvar
 
 * *UpdateRecord*: erforderlich. Ein Datensatz, der den Namen von mindestens eine Spalte und eine Wert für diese Spalte enthält. Eine Kontextvariable wird für jede Spalte und den von Ihnen angegebenen Wert erstellt oder aktualisiert.
 
-**UpdateContext**( { *ContextVariable1*: *Value1* [; *ContextVariable2*: *Value2* [; ... ] ] } )
+**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [, ... ] ] } )
 
 * *Kontextvariable1*: erforderlich.  Der Name der zu erstellenden oder zu aktualisierenden Kontextvariablen
 * *Wert1*: erforderlich.  Der der Kontextvariablen zuzuweisende Wert
@@ -75,18 +74,18 @@ Jede Kontextvariable ist auf einen Bildschirm begrenzt. Wenn Sie eine Kontextvar
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |Erstellt oder ändert die **Counter**-Kontextvariable und legt deren Wert auf **1** fest |**Counter** hat den Wert **1**. Mit dem Namen **Counter** können Sie in einer Formel auf diese Variable verweisen. |
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |Legt den Wert für die **Counter**-Kontextvariable aus dem vorherigen Beispiel auf **2** fest |**Counter** hat den Wert **2**. |
-| **UpdateContext( {&nbsp;Name:&nbsp;"Lily";&nbsp;Score:&nbsp;10&nbsp;} )** |Erstellt oder ändert die Kontextvariablen **Name** und **Score** und legt deren Werte auf **Lily** bzw. **10** fest. |**Name** hat den Wert **Lily**, und **Score** hat den Wert **10**. |
-| **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Erstellt oder ändert die Kontextvariable **Person** und legt deren Wert auf einen Datensatz fest. Der Datensatz enthält zwei Spalten mit den Namen **Name** und **Address**. Der Wert der **Name**-Spalte ist **Milton**, und der Wert der **Address**-Spalte ist **1 Main St**. |**Person** hat den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** .<br><br>Verweisen Sie mit dem Namen **Person** auf den kompletten Datensatz, oder verweisen Sie auf eine einzelne Spalte dieses Datensatzes mit **Person.Name** oder **Person.Address**. |
-| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person;&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |Arbeitet mit der **[Patch](function-patch.md)** -Funktion zusammen, um die **Person**-Kontextvariable durch Festlegen des Werts von der **Address**-Spalte auf **2 Main St** zu aktualisieren. |**Person** hat nun den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton"; Adresse:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** . |
+| **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |Erstellt oder ändert die Kontextvariablen **Name** und **Score** und legt deren Werte auf **Lily** bzw. **10** fest. |**Name** hat den Wert **Lily**, und **Score** hat den Wert **10**. |
+| **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Erstellt oder ändert die Kontextvariable **Person** und legt deren Wert auf einen Datensatz fest. Der Datensatz enthält zwei Spalten mit den Namen **Name** und **Address**. Der Wert der **Name**-Spalte ist **Milton**, und der Wert der **Address**-Spalte ist **1 Main St**. |**Person** hat den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** .<br><br>Verweisen Sie mit dem Namen **Person** auf den kompletten Datensatz, oder verweisen Sie auf eine einzelne Spalte dieses Datensatzes mit **Person.Name** oder **Person.Address**. |
+| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |Arbeitet mit der **[Patch](function-patch.md)** -Funktion zusammen, um die **Person**-Kontextvariable durch Festlegen des Werts von der **Address**-Spalte auf **2 Main St** zu aktualisieren. |**Person** hat nun den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton", Adresse:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** . |
 
 ### <a name="step-by-step-example"></a>Schritt-für-Schritt-Beispiel
 1. Benennen Sie den Bildschirm **Quelle**, fügen Sie einen anderen Bildschirm hinzu, und nennen Sie diesen **Ziel**.
 2. Fügen Sie auf dem Bildschirm **Quelle** zwei Schaltflächen hinzu, und legen Sie ihre **[Text](../controls/properties-core.md)** -Eigenschaften so fest, dass eine **Englisch** und die andere **Spanisch** ist.
-3. Legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft der Schaltfläche **Englisch** auf folgenden Ausdruck fest:<br>**Navigate(Target; ScreenTransition.Fade; {Language:"English"})**
-4. Legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft der Schaltfläche **Spanisch** auf folgenden Ausdruck fest:<br>**Navigate(Target; ScreenTransition.Fade; {Language:"Spanish"})**
-5. Fügen Sie auf dem Bildschirm **Ziel** eine Bezeichnung hinzu, und legen deren **[Text](../controls/properties-core.md)** -Eigenschaft auf folgenden Ausdruck fest:<br>**If(Language="English"; "Hello!"; "Hola!")**
+3. Legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft der Schaltfläche **Englisch** auf folgenden Ausdruck fest:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
+4. Legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft der Schaltfläche **Spanisch** auf folgenden Ausdruck fest:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
+5. Fügen Sie auf dem Bildschirm **Ziel** eine Bezeichnung hinzu, und legen deren **[Text](../controls/properties-core.md)** -Eigenschaft auf folgenden Ausdruck fest:<br>**If(Language="English", "Hello!", "Hola!")**
 6. Wählen Sie auf dem Bildschirm **Ziel** auf der Registerkarte **Einfügen** **Shapes** (Formen) aus, und wählen Sie dann den Rückwärtspfeil.
-7. Legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft des Rückwärtspfeils auf folgende Formel fest:<br>**Navigate(Source; ScreenTransition.Fade)**
+7. Legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft des Rückwärtspfeils auf folgende Formel fest:<br>**Navigate(Source, ScreenTransition.Fade)**
 8. Drücken Sie auf dem Bildschirm **Quelle** F5, und wählen Sie dann die Schaltfläche für eine der beiden Sprachen.
 
     Auf dem Bildschirm **Ziel** wird eine Bezeichnung in der Sprache angezeigt, die mit der von Ihnen ausgewählten Schaltfläche übereinstimmt.

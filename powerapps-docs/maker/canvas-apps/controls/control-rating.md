@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 212fc44b6c1cec981f17d134f4cd8f8131b7af9a
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: a5e91f8ff3b760e173ac01b32a68c7f60a488014
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649921"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732079"
 ---
-# <a name="rating-control-in-powerapps"></a>Steuerelement für Bewertungen in PowerApps
+# <a name="rating-control-in-power-apps"></a>Bewertungs Kontrolle in Power apps
 Ein Steuerelement, mit dem Benutzer einen Wert zwischen 1 und einer maximalen Anzahl, die Sie festlegen, angeben können.
 
 ## <a name="description"></a>Beschreibung
@@ -76,7 +75,7 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Average**( *Value1*; *Value2;* ... )](../functions/function-aggregates.md)
+[**Average**( *Value1*, *Value2,* ... )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein Steuerelement **Rating** hinzu, und nennen Sie es **Quantitative**.
@@ -84,7 +83,7 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein Steuerelement **[Text input](control-text-input.md)** hinzu, nennen Sie es **Qualitative**, und verschieben Sie es unter das Steuerelement **Rating**.
 3. Legen Sie die Eigenschaft **[Default](properties-core.md)** des Steuerelements **[Text input](control-text-input.md)** auf **""** fest, und legen Sie sein **HintText** auf diese Formel fest:
-   <br>**If(Quantitative.Value > 3; „Was hat Ihnen besonders gefallen?“; „Wie können wir es besser machen?“)**
+   <br>**If(Quantitative.Value > 3, „Was hat Ihnen besonders gefallen?“, „Wie können wir es besser machen?“)**
    
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 4. Drücken Sie F5, und klicken oder tippen Sie anschließend auf entweder vier oder fünf Sterne im Steuerelement **Rating** (Bewertung).

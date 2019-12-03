@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d81b1648fc3c45d0498efb9eba0cc14ffbc6142b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679268"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724924"
 ---
-# <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Hinzufügen einer Datenverbindung in einer Canvas-App in PowerApps
+# <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>Hinzufügen einer Datenverbindung zu einer Canvas-app in Power apps
 
 Fügen Sie in powerapps einer vorhandenen Canvas-APP oder einer APP, die Sie von Grund auf neu erstellen, eine Datenverbindung hinzu. Ihre APP kann eine Verbindung mit SharePoint, Common Data Service, Salesforce, onedrive oder [vielen anderen Datenquellen](connections-list.md)herstellen.
 

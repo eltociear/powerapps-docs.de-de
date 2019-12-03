@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 01fdadfd5ecf19d56ac115e53cef08a2cff2a254
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676143"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729650"
 ---
-# <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Help Desk“ in PowerApps
+# <a name="install-and-configure-the-help-desk-sample-in-power-apps"></a>Installieren und Konfigurieren des Helpdesk-Beispiels in powerapps
 
 Schritt-für-Schritt-Anleitungen für, in powerapps, installieren und Konfigurieren des Helpdesk-Beispiels für Canvas-apps.
 
@@ -40,7 +40,7 @@ Der Helpdesk bietet eine benutzerfreundliche benutzerfreundliche Benutzerfreundl
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- [Registrieren Sie sich](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) bei PowerApps.
+- [Registrieren Sie sich](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) für powerapps.
 - Sie müssen über eine gültige SharePoint Online-Lizenz und Berechtigung zum Erstellen von Listen verfügen.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Erstellen der HelpDesk-SharePoint-Liste

@@ -1,6 +1,6 @@
 ---
 title: Funktionen „Acos“, „Acot“, „Asin“, „Atan“, „Atan2“, „Cos“, „Cot“, „Degrees“, „Pi“, „Radians“, „Sin“ und „Tan“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Abs“ und „Sqrt“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "ABS" und "sqrt" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b29bce3f1237c6e98376989981f68e207439dc89
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8ff8b68dce51ce985c391de569e4be7a5a8fabb4
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984100"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729993"
 ---
-# <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-powerapps"></a>Funktionen „Acos“, „Acot“, „Asin“, „Atan“, „Atan2“, „Cos“, „Cot“, „Degrees“, „Pi“, „Radians“, „Sin“ und „Tan“ in PowerApps
+# <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-power-apps"></a>ACOS, acot, ASIN, atan, atan2, cos, Cot, Grad, Pi, RADIANS, Sin und Tan Functions in Power apps
 Berechnen trigonometrische Werte
 
 ## <a name="description"></a>Beschreibung
@@ -43,7 +42,7 @@ Die **Asin**-Funktion gibt den Arkussinus oder umgekehrten Kosinus des Arguments
 
 Die **Atan**-Funktion gibt den Arkustangens oder umgekehrten Tangens des Arguments zurück. Der Arkustangens ist der Winkel, dessen Tangens das Argument ist. Der zurückgegebene Winkel wird im Bogenmaß im Bereich von -&pi;/2 bis &pi;/2 angegeben.
 
-Die **Atan2**-Funktion gibt den Arkustangens oder umgekehrten Tangens der angegebenen *x*- und *y*-Koordinaten als Argumente zurück. Der Arkustangens ist der Winkel zwischen der *X*-Achse und einer Linie, die den Ursprung (0, 0) und Koordinaten (*x*, *y*) umfasst. Der Winkel wird im Bogenmaß im Bereich von -&pi; bis &pi;, ausgenommen -&pi; angegeben.  Ein positives Ergebnis entspricht einem Winkel gegen den Uhrzeigersinn von der *X*-Achse aus; ein negatives Ergebnis entspricht einem Winkel im Uhrzeigersinn.  **Atan2(&nbsp;*a*;&nbsp;*b*&nbsp;)** ist gleich **Atan(&nbsp;*b*/*a*&nbsp;)** , außer dass ***a*** mit der **Atan2**-Funktion gleich 0 (null) sein kann.
+Die **Atan2**-Funktion gibt den Arkustangens oder umgekehrten Tangens der angegebenen *x*- und *y*-Koordinaten als Argumente zurück. Der Arkustangens ist der Winkel zwischen der *X*-Achse und einer Linie, die den Ursprung (0, 0) und Koordinaten (*x*, *y*) umfasst. Der Winkel wird im Bogenmaß im Bereich von -&pi; bis &pi;, ausgenommen -&pi; angegeben.  Ein positives Ergebnis entspricht einem Winkel gegen den Uhrzeigersinn von der *X*-Achse aus; ein negatives Ergebnis entspricht einem Winkel im Uhrzeigersinn.  **Atan2(&nbsp;*a*,&nbsp;*b*&nbsp;)** ist gleich **Atan(&nbsp;*b*/*a*&nbsp;)** , außer dass ***a*** mit der **Atan2**-Funktion gleich 0 (null) sein kann.
 
 ### <a name="helper-functions"></a>Hilfsfunktionen
 Die **Degrees**-Funktion wandelt Bogenmaße in Grad um.  Das Bogenmaß &pi; ist gleich 180 Grad.
@@ -70,13 +69,13 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 ### <a name="inverse-functions"></a>Umkehrfunktionen
 **Acos**( *Zahl* )<br>**Acot**( *Zahl* )<br>**Asin**( *Zahl* )<br>**Atan**( *Zahl* )
 
-* *Number*: erforderlich. Zahl, die verarbeitet wird.
+* *Zahl*: erforderlich. Zahl, die verarbeitet wird.
 
 **Acos**( *EinspaltigeTabelle* )<br>**Acot**( *EinspaltigeTabelle* )<br>**Asin**( *EinspaltigeTabelle* )<br>**Atan**( *EinspaltigeTabelle* )
 
 * *EinspaltigeTabelle*: erforderlich. Eine einspaltige Tabelle mit Zahlen, die verarbeitet werden.
 
-**Atan2**( *X*; *Y* )
+**Atan2**( *X*, *Y* )
 
 * *X*: Erforderlich.  *X*-Achsenkoordinate.
 * *Y*: Erforderlich.  *Y*-Achsenkoordinate.
@@ -97,17 +96,17 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Cos(&nbsp;1,047197&nbsp;)** |Gibt den Kosinus des Bogenmaßes 1,047197 oder von 60 Grad zurück. |0.5 |
+| **Cos(&nbsp;1.047197&nbsp;)** |Gibt den Kosinus des Bogenmaßes 1,047197 oder von 60 Grad zurück. |0.5 |
 | **Cot(&nbsp;Pi()/4&nbsp;)** |Gibt den Kotangens des Bogenmaßes 0,785398... oder von 45 Grad zurück. |1 |
 | **Sin(&nbsp;Pi()/2&nbsp;)** |Gibt den Sinus des Bogenmaßes 1,570796... oder von 90 Grad zurück. |1 |
 | **Tan(&nbsp;Radians(60)&nbsp;)** |Gibt den Tangens des Bogenmaßes 1,047197... oder von 60 Grad zurück. |1.732050... |
-| **Acos(&nbsp;0,5&nbsp;)** |Gibt den Arkuskosinus von 0,5 im Bogenmaß zurück. |1.047197... |
+| **Acos(&nbsp;0.5&nbsp;)** |Gibt den Arkuskosinus von 0,5 im Bogenmaß zurück. |1.047197... |
 | **Acot(&nbsp;1&nbsp;)** |Gibt den Arkuskotangens von 1 im Bogenmaß zurück. |0.785398... |
 | **Asin(&nbsp;1&nbsp;)** |Gibt den Arkussinus von 1 im Bogenmaß zurück. |1.570796... |
-| **Atan(&nbsp;1,732050&nbsp;)** |Gibt den Arkustangens von 1.732050 im Bogenmaß zurück. |1.047197... |
-| **Atan2(&nbsp;5;&nbsp;3&nbsp;)** |Gibt den Arkustangens des Winkels zwischen der *X*-Achse und der Linie zurück, die den Ursprung (0,0) und die Koordinate (5,3) umfasst. Dieser Winkel beträgt etwa 31 Grad. |0.540419... |
-| **Atan2(&nbsp;4;&nbsp;4&nbsp;)** |Gibt den Arkustangens des Winkels zwischen der *X*-Achse und der Linie zurück, die den Ursprung (0,0) und die Koordinate (4,4) umfasst. Dieser Winkel beträgt genau das Bogenmaß &pi;/4 oder 45 Grad. |0.785398... |
-| **Degrees(&nbsp;1,047197&nbsp;)** |Gibt die entsprechende Gradzahl des Bogenmaßes 1,047197 zurück. |60 |
+| **Atan(&nbsp;1.732050&nbsp;)** |Gibt den Arkustangens von 1.732050 im Bogenmaß zurück. |1.047197... |
+| **Atan2(&nbsp;5,&nbsp;3&nbsp;)** |Gibt den Arkustangens des Winkels zwischen der *X*-Achse und der Linie zurück, die den Ursprung (0,0) und die Koordinate (5,3) umfasst. Dieser Winkel beträgt etwa 31 Grad. |0.540419... |
+| **Atan2(&nbsp;4,&nbsp;4&nbsp;)** |Gibt den Arkustangens des Winkels zwischen der *X*-Achse und der Linie zurück, die den Ursprung (0,0) und die Koordinate (4,4) umfasst. Dieser Winkel beträgt genau das Bogenmaß &pi;/4 oder 45 Grad. |0.785398... |
+| **Degrees(&nbsp;1.047197&nbsp;)** |Gibt die entsprechende Gradzahl des Bogenmaßes 1,047197 zurück. |60 |
 | **Pi()** |Gibt die transzendente Zahl &pi; zurück. |3.141592... |
 | **Radians(&nbsp;15&nbsp;)** |Gibt die entsprechende Bogenmaßzahl für 15 Grad zurück. |0.261799... |
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5ee1d56e6144f0c7f4e1b3ca440063f87b7bdc5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674619"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733073"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>So speichern Sie Bilder in einer Excel-Datei und fügen diese Bilder anschließend zu Ihrer App hinzu
 
@@ -59,7 +58,7 @@ In diesem Tutorial werden wir:
    
    ![Umbenennen](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Fügen Sie ein Steuerelement **Schaltfläche** (Menü **Einfügen**) hinzu, und legen Sie dessen Eigenschaft **OnSelect** auf die folgende Formel fest:  
-   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
+   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
 5. Fügen Sie ein Steuerelement **Bildkatalog** (Menü **Einfügen** > **Katalog**) hinzu, und legen Sie dessen Eigenschaft **Elemente** auf `Drawings` fest. Die Eigenschaft **Image** des Katalog-Steuerelements wird automatisch auf `ThisItem.Image` festgelegt.
    
    Ihr Bildschirm sollte etwa wie folgt aussehen:  
@@ -101,5 +100,5 @@ In der Excel-Tabelle kann der Pfad zu den Bildern ebenfalls eine Bild-URL sein. 
 ## <a name="learn-more"></a>Weitere Informationen
 [Add an image, a video, or a sound (Fügen Sie ein Bild, ein Video oder einen Sound hinzu)](add-images-pictures-audio-video.md)  
 [Show data in a line, pie, or bar chart in your app (Anzeigen von Daten in einem Linien-, Kreis- oder Balkendiagramm in Ihrer App)](use-line-pie-bar-chart.md)  
-[Understand tables and records in PowerApps (Grundlegendes zu Tabellen und Datensätzen in PowerApps)](working-with-tables.md)
+[Grundlegendes zu Tabellen und Datensätzen in powerapps](working-with-tables.md)
 

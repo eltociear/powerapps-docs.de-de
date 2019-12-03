@@ -1,6 +1,6 @@
 ---
 title: Barrierefreiheit und Farben in Canvas-Apps | Microsoft-Dokumentation
-description: Richtlinien für Farbkontraste für Canvas-Apps in PowerApps
+description: Farbkontrast Richtlinien für Canvas-apps in powerapps
 author: tahoon
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 44c94a712402ef26a4fa6b36d84e287d3fa506e1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 26fd45efc56ad03bc37635c29ddc7a6dbbe71568
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679291"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725367"
 ---
-# <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Barrierefreiheit und Farben für Canvas-Apps in PowerApps
+# <a name="accessible-colors-for-canvas-apps-in-power-apps"></a>Barrierefreie Farben für Canvas-apps in powerapps
 In einer App sollten nur Farben verwendet werden, die für barrierefreien Zugriff für farbenblinde und sehbehinderte Benutzer geeignet sind. Alle powerapps-Designs sind standardmäßig zugänglich. Beachten Sie diese Richtlinien, wenn Sie die in einer App verwendeten Farben ändern, um weiterhin Barrierefreiheit sicherzustellen. Online stehen mehrere Tools zur Verfügung, die Sie beim Bestimmen von Farbkontrasten unterstützen können.
 
 ## <a name="minimum-contrast-for-text"></a>Minimaler Kontrast bei Text

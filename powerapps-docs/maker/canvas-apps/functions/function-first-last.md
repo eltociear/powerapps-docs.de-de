@@ -1,6 +1,6 @@
 ---
 title: Funktionen „First“, „FirstN“, „Last“ und „LastN“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „First“, „FirstN“, „Last“ und „LastN“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "First", "firstn", "Last" und "lastn" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 48e8311d5da00b02cbefbf6f47661c89adcc80a5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 490bc00deb41cdc58919cf5f42302ef46dd405f7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992720"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730970"
 ---
-# <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Die Funktion „First“, „FirstN“, „Last“ und „LastN“ in PowerApps
+# <a name="first-firstn-last-and-lastn-functions-in-power-apps"></a>First-, firstn-, Last-und lastn-Funktionen in powerapps
 Gibt den ersten oder letzten Satz von [Datensätze](../working-with-tables.md#records) einer Tabelle zurück.
 
 ## <a name="description"></a>Beschreibung
@@ -40,11 +39,11 @@ Die **LastN**-Funktion gibt die letzte Gruppe von Datensätzen einer Tabelle zur
 ## <a name="syntax"></a>Syntax
 **First**( *Table* )<br>**Last**( *Table* )
 
-* *Tabelle* (erforderlich): Die zu verarbeitende Tabelle.
+* *Table*: erforderlich. Die zu verarbeitende Tabelle.
 
-**FirstN**( *Table* [; *NumberOfRecords* ] )<br>**LastN**( *Table* [; *NumberOfRecords* ] )
+**FirstN**( *Table* [, *NumberOfRecords* ] )<br>**LastN**( *Table* [, *NumberOfRecords* ] )
 
-* *Tabelle* (erforderlich): Die zu verarbeitende Tabelle.
+* *Table*: erforderlich. Die zu verarbeitende Tabelle.
 * *ZahlDerDatensätze*: optional.  Die Anzahl der zurückzugebenden Datensätze. Wenn Sie dieses Argument nicht angeben, gibt die Funktion einen Datensatz zurück.
 
 ## <a name="examples"></a>Beispiele
@@ -52,5 +51,5 @@ Diese Formel gibt den ersten Datensatz aus einer Tabelle mit dem Namen **Employe
 **First(Employees)**
 
 Diese Formel gibt die letzten 15 Datensätze aus einer Tabelle mit dem Namen **Employees** zurück:<br>
-**LastN(Employees; 15)**
+**LastN(Employees, 15)**
 

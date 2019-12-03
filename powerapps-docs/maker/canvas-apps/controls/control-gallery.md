@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/25/2017
+ms.date: 12/02/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a532af505e579e66d3dfa0dce22a1c3ac6a4a6cc
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 449948efb53fd5fdc3b0f65f5277d50b6a831dc7
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650521"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709388"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Katalog-Steuerelement in Canvas-apps
 
@@ -39,9 +38,9 @@ Wenn ein Benutzer einen Bildlauf zum **flexiblen Height** Gallery-Steuerelement 
 
 **[Default:](properties-core.md)** Das Element oder der Datensatz aus der Datenquelle, das bzw. der beim Starten der App im Katalog ausgewählt werden soll.
 
-**[Items](properties-core.md)** – Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
+**[Items](properties-core.md)** : Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
-**Selected**: Das ausgewählte Element.
+**Selected** – Das ausgewählte Element.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 
@@ -93,7 +92,12 @@ Wenn ein Benutzer einen Bildlauf zum **flexiblen Height** Gallery-Steuerelement 
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Filter**( *DataSource*; *Formula* )](../functions/function-filter-lookup.md)
+[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
+
+[ **Reset**( *Control* )](../functions/function-reset.md) : setzt Ihren Katalog auf den ursprünglichen Zustand zurück. Der Anfangszustand schließt den Bildlauf zum ersten Element ein und wählt das erste Element oder den Standardwert aus, falls vorhanden. 
+
+  > [!NOTE]
+  > Das Steuerelement **Zurücksetzen** setzt nicht alle untergeordneten Elemente des Katalogs rekursiv zurück.
 
 ## <a name="examples"></a>Beispiele
 

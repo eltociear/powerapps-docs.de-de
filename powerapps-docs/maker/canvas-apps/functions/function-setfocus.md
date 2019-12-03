@@ -1,6 +1,6 @@
 ---
 title: SetFocus-Funktion | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax, für die Funktion "SetFocus" in powerapps
+description: Referenzinformationen, einschließlich Syntax, für die Funktion "SetFocus" in Power apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cdf34c3c4909697b70a105e5145620ab5bd31ea9
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 6347a76765fef433880754038d4e098fcb0fd6ee
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038152"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730223"
 ---
-# <a name="setfocus-function-in-powerapps"></a>SetFocus-Funktion in powerapps
+# <a name="setfocus-function-in-power-apps"></a>SetFocus-Funktion in powerapps
 Verschiebt den Eingabefokus auf ein bestimmtes Steuerelement. 
 
 ## <a name="description"></a>Beschreibung
@@ -34,7 +33,7 @@ Verwenden Sie die **SetFocus** -Funktion, um den Fokus festzulegen, wenn (jedes 
 
 Das Steuerelement mit Fokus kann sich basierend auf den Eigenschaften [**focusedbordercolor**](../controls/properties-color-border.md) und [**focusedborderdicke**](../controls/properties-color-border.md) visuell unterscheiden.
 
-## <a name="limitations"></a>Einschränkungen
+## <a name="limitations"></a>Einschränken
 
 **SetFocus** kann nur mit verwendet werden:
 - [**Button**](../controls/control-button.md) -Steuerelement
@@ -54,7 +53,7 @@ Unter Apple IOS wird die weiche Tastatur nur automatisch angezeigt, wenn **SetFo
 Sie können **SetFocus** nur in [Verhaltens Formeln](../working-with-formulas-in-depth.md)verwenden.
 
 ## <a name="syntax"></a>Syntax
-**SetFocus** ( *Steuer* Element)
+**SetFocus**( *Steuer* Element)
 
 * *Steuerelement* – Erforderlich.  Das Steuerelement, das dem Eingabefokus zugewiesen werden soll.
 
@@ -80,16 +79,16 @@ So erstellen Sie dieses Beispiel
 1. Fügen Sie ein Steuerelement [ **Text Eingabe** ](../controls/control-text-input.md) hinzu, und benennen Sie es **shippingname**um.
 1. Fügen Sie ein Steuerelement [ **Text Eingabe** ](../controls/control-text-input.md) hinzu, und benennen Sie es **shippingaddress**um.
 1. Fügen Sie ein [Kontroll **Kästchen** -Steuer](../controls/control-check-box.md) Element hinzu, und benennen Sie **syncadressen**um.
-1. Legen Sie die **Text** -Eigenschaft dieses Steuer Elements auf `"Use Shipping address as Billing address"`die Formel fest.
+1. Legen Sie die **Text** -Eigenschaft dieses Steuer Elements auf die Formel `"Use Shipping address as Billing address"`fest.
 1. Fügen Sie ein Steuerelement [ **Text Eingabe** ](../controls/control-text-input.md) hinzu, und benennen Sie es **billingname**um.
-1. Legen Sie die **Standard** Eigenschaft für dieses Steuerelement auf `ShippingName`die Formel fest.
-1. Legen Sie die **Display Mode** -Eigenschaft dieses Steuer Elements auf die `If( SyncAddresses.Value; DisplayMode.View; DisplayMode.Edit )`Formel fest.  Dadurch wird dieses Steuerelement basierend auf dem Zustand des Kontrollkästchen-Steuer Elements automatisch aktiviert oder deaktiviert.
+1. Legen Sie die **Standard** Eigenschaft für dieses Steuerelement auf die Formel `ShippingName`fest.
+1. Legen Sie die **Display Mode** -Eigenschaft dieses Steuer Elements auf die Formel `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`fest.  Dadurch wird dieses Steuerelement basierend auf dem Zustand des Kontrollkästchen-Steuer Elements automatisch aktiviert oder deaktiviert.
 1. Fügen Sie ein Steuerelement [ **Text Eingabe** ](../controls/control-text-input.md) hinzu, und benennen Sie es **billingaddress**um.
-1. Legen Sie die **Standard** Eigenschaft für dieses Steuerelement auf `ShippingAddress`die Formel fest.
-1. Legen Sie die **Display Mode** -Eigenschaft dieses Steuer Elements auf die `If( SyncAddresses.Value; DisplayMode.View; DisplayMode.Edit )`Formel fest.  Dadurch wird dieses Steuerelement basierend auf dem Zustand des Kontrollkästchen-Steuer Elements automatisch aktiviert oder deaktiviert.
-1. Legen Sie die **Standard** Eigenschaft des Kontrollkästchens auf `true`die Formel fest.  Dadurch wird standardmäßig die Abrechnungsadresse verwendet, um den gleichen Wert wie die Lieferadresse zu verwenden.
-1. Legen Sie die **OnCheck** -Eigenschaft des Kontrollkästchens `Reset( BillingName );; Reset( BillingAddress )`auf die Formel fest.  Wenn sich der Benutzer für die Synchronisierung von Versand-und abrechnungsadressen entscheidet, werden alle Benutzereingaben in den Abrechnungs Adressfeldern gelöscht, sodass die **Standard** Eigenschaften der einzelnen Werte aus den entsprechenden Versand Adressfeldern abgerufen werden können.
-1. Legen Sie die Eigenschaft **onuncheck** des Kontrollkästchens auf `SetFocus( BillingName )`die Formel fest.  Wenn sich der Benutzer für eine andere Abrechnungsadresse entscheidet, wird der Fokus auf das erste Steuerelement in der Abrechnungsadresse verschoben.  Die Steuerelemente wurden bereits aufgrund ihrer **DisplayMode** -Eigenschaften aktiviert.
+1. Legen Sie die **Standard** Eigenschaft für dieses Steuerelement auf die Formel `ShippingAddress`fest.
+1. Legen Sie die **Display Mode** -Eigenschaft dieses Steuer Elements auf die Formel `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`fest.  Dadurch wird dieses Steuerelement basierend auf dem Zustand des Kontrollkästchen-Steuer Elements automatisch aktiviert oder deaktiviert.
+1. Legen Sie die **Standard** Eigenschaft des Kontrollkästchens auf die Formel `true`fest.  Dadurch wird standardmäßig die Abrechnungsadresse verwendet, um den gleichen Wert wie die Lieferadresse zu verwenden.
+1. Legen Sie die Eigenschaft **OnCheck** des Kontrollkästchens auf die Formel `Reset( BillingName ); Reset( BillingAddress )`fest.  Wenn sich der Benutzer für die Synchronisierung von Versand-und abrechnungsadressen entscheidet, werden alle Benutzereingaben in den Abrechnungs Adressfeldern gelöscht, sodass die **Standard** Eigenschaften der einzelnen Werte aus den entsprechenden Versand Adressfeldern abgerufen werden können.
+1. Legen Sie die Eigenschaft **onuncheck** des Kontrollkästchens auf die Formel `SetFocus( BillingName )`fest.  Wenn sich der Benutzer für eine andere Abrechnungsadresse entscheidet, wird der Fokus auf das erste Steuerelement in der Abrechnungsadresse verschoben.  Die Steuerelemente wurden bereits aufgrund ihrer **DisplayMode** -Eigenschaften aktiviert.
 
 ### <a name="focus-on-validation-issues"></a>Schwerpunkt auf Validierungs Problemen
 
@@ -102,24 +101,24 @@ Wenn Sie ein Formular validieren, kann es hilfreich sein, eine Meldung nicht nur
 
 In dieser Animation wird die Schaltfläche Überprüfung wiederholt gedrückt, bis alle Felder ordnungsgemäß ausgefüllt wurden.  Beachten Sie, dass der Mauszeiger nicht vom oberen Bildschirmrand nach unten verschoben wird.   Stattdessen hat die **SetFocus** -Funktion den Eingabefokus auf das Steuerelement verschoben, das mit dieser Formel Aufmerksamkeit erfordert:
 
-```powerapps-comma
-If( IsBlank( Name ); 
-        Notify( "Name requires a value"; Error );; SetFocus( Name );
-    IsBlank( Street1 ); 
-        Notify( "Street Address 1 requires a value"; Error );; SetFocus( Street1 );
-    IsBlank( Street2 ); 
-        Notify( "Street Address 2 requires a value"; Error );; SetFocus( Street2 );
-    IsBlank( City ); 
-        Notify( "City requires a value"; Error );; SetFocus( City );
-    IsBlank( County ); 
-        Notify( "County requires a value"; Error );; SetFocus( County );
-    IsBlank( StateProvince ); 
-        Notify( "State or Province requires a value"; Error );; SetFocus( StateProvince );
-    IsBlank( PostalCode ); 
-        Notify( "Postal Code requires a value"; Error );; SetFocus( PostalCode );
-    IsBlank( Phone ); 
-        Notify( "Contact Phone requires a value"; Error );; SetFocus( Phone );
-    Notify( "Form is Complete"; Success )
+```powerapps-dot
+If( IsBlank( Name ), 
+        Notify( "Name requires a value", Error ); SetFocus( Name ),
+    IsBlank( Street1 ), 
+        Notify( "Street Address 1 requires a value", Error ); SetFocus( Street1 ),
+    IsBlank( Street2 ), 
+        Notify( "Street Address 2 requires a value", Error ); SetFocus( Street2 ),
+    IsBlank( City ), 
+        Notify( "City requires a value", Error ); SetFocus( City ),
+    IsBlank( County ), 
+        Notify( "County requires a value", Error ); SetFocus( County ),
+    IsBlank( StateProvince ), 
+        Notify( "State or Province requires a value", Error ); SetFocus( StateProvince ),
+    IsBlank( PostalCode ), 
+        Notify( "Postal Code requires a value", Error ); SetFocus( PostalCode ),
+    IsBlank( Phone ), 
+        Notify( "Contact Phone requires a value", Error ); SetFocus( Phone ),
+    Notify( "Form is Complete", Success )
 )
 ```
 
@@ -128,7 +127,7 @@ So erstellen Sie dieses Beispiel
 1. Wählen Sie im Menü **Einfügen** die Option **neuer Bildschirm**aus, und wählen Sie dann **scrollfähig**aus.
 1. Fügen Sie im mittleren Bereich des Bildschirms **Text Eingabe** -Steuerelemente hinzu, und nennen Sie Sie **Name**, **Street1**, **Street2**, **City**, **County**, **StateProvince**, **PostalCode**und **Phone**. Fügen Sie oberhalb jeder **Bezeichnung** Steuerelemente hinzu, um die Felder zu identifizieren.  Möglicherweise müssen Sie die Größe des Abschnitts ändern, wenn er nicht lang genug ist, um alle Steuerelemente zu erfüllen.
 1. Fügen Sie am oberen Rand des Bildschirms oberhalb des Bild lauffähigen Abschnitts ein Häkchensymbol- [ Steuer](../controls/control-shapes-icons.md) Element hinzu.  
-1. Legen **Sie die onselect** -Eigenschaft des Symbol-Steuer Elements `If( IsBlank( ...` auf die oben angegebene Formel fest.
+1. Legen Sie die Eigenschaft **onselect** des Symbols-Steuer Elements auf die oben angegebene Formel `If( IsBlank( ...` fest.
 
 ### <a name="focus-when-displaying-a-screen"></a>Fokus beim Anzeigen eines Bildschirms
 
@@ -143,7 +142,7 @@ In dieser Animation verwendet der Bildschirm Dateneingabe auf der linken Seite n
 
 Auf der rechten Seite haben wir genau dieselbe APP, bei der die **onvisible** -Eigenschaft des Dateneingabe Bildschirm auf diese Formel festgelegt ist:
 
-```powerapps-comma
+```powerapps-dot
 SetFocus( Name )
 ```
 
@@ -151,8 +150,8 @@ Dadurch wird der Fokus automatisch auf das Feld **Name** festgelegt.  Der Benutz
 
 So erstellen Sie dieses Beispiel
 1. Erstellen Sie die oben genannte App "Fokus auf Validierungs Probleme".
-1. Legen Sie auf diesem Bildschirm die **onvisible** -Eigenschaft auf `SetFocus( Name )`die Formel fest.
+1. Legen Sie auf diesem Bildschirm die **onvisible** -Eigenschaft auf die Formel `SetFocus( Name )`fest.
 1. Fügen Sie einen zweiten Bildschirm hinzu.
 1. Hinzufügen eines [ **Schalt** ](../controls/control-button.md)Flächen-Steuer Elements
-1. Legen **Sie die onselect** -Eigenschaft dieses Steuer Elements auf `Navigate( Screen1 )`die Formel fest.
+1. Legen **Sie die onselect** -Eigenschaft dieses Steuer Elements auf die Formel `Navigate( Screen1 )`fest.
 1. Vorschau der APP auf diesem Bildschirm anzeigen.  Klicken Sie auf die Schaltfläche.  Die **onvisible** -Formel wird ausgewertet, und das **Name** -Feld wird automatisch im Fokus.

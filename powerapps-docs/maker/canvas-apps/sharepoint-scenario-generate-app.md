@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42ca4a12f75c82bb685396a857e5ae825d8d7fa1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cbf5fdaf3ae6cbba2f89124316ac6d23455a712c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674789"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733049"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Generieren einer Canvas-App zum Verarbeiten von Projektanforderungen
 > [!NOTE]
@@ -86,7 +85,7 @@ Da jetzt die SharePoint-Listen vorhanden sind, können wir unsere erste App erst
    
     ![Items-Eigenschaft](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Ändern Sie die Formel in **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
+6. Ändern Sie die Formel in **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
    
     ![Die Bearbeitungsleiste](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
@@ -167,7 +166,7 @@ Folgendes geschieht, wenn Sie die Funktionen in der Formel kombinieren:
 
 4. Jetzt kann die **SortByColumns**-Funktion den Katalog sortieren. In diesem Fall erfolgt die Sortierung nach dem Feld **Title** (Titel), dies kann jedoch ein anderes Feld als das für die Suche verwendete Feld sein.
 
-Wir hoffen, dass Sie nach diesen Erläuterungen ein besseres Verständnis der Funktionsweise dieser Formel haben und jetzt genauer wissen, wie Sie durch das Kombinieren von Funktionen und anderen Elementen das gewünschte Verhalten Ihrer Apps erzielen. Weitere Informationen finden Sie unter [Referenz zu Formeln für PowerApps](formula-reference.md).
+Wir hoffen, dass Sie nach diesen Erläuterungen ein besseres Verständnis der Funktionsweise dieser Formel haben und jetzt genauer wissen, wie Sie durch das Kombinieren von Funktionen und anderen Elementen das gewünschte Verhalten Ihrer Apps erzielen. Weitere Informationen finden Sie unter [Referenz zu Formeln für powerapps](formula-reference.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 Der nächste Schritt in dieser Tutorialreihe ist das [Erstellen eines Flows zum Verwalten von Projektgenehmigungen](sharepoint-scenario-approval-flow.md).

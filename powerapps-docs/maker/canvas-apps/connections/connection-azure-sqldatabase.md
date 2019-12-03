@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 08e54e48b371e71364edd2da09648af354a4d9ec
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678808"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723892"
 ---
-# <a name="connect-to-sql-server-from-powerapps"></a>Herstellen einer Verbindung mit SQL Server aus PowerApps
+# <a name="connect-to-sql-server-from-power-apps"></a>Herstellen einer Verbindung mit SQL Server aus Power apps
 ![SQL Server-Symbol](./media/connection-azure-sqldatabase/sqlicon.png)
 
-Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mit SQL Server her, sodass Sie darin enthaltene Informationen in PowerApps anzeigen können.
+Stellen Sie eine Verbindung mit SQL Server entweder in Azure oder in einer lokalen Datenbank her, damit Sie in Power apps Informationen aus der Datenbank anzeigen können.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -68,7 +68,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
 8. Passen Sie die App unter Verwendung von Techniken wie den in [Erstellen einer App aus Excel-Daten](../get-started-create-from-data.md) beschriebenen an; beginnen Sie dabei mit dem Ändern des App-Layouts.
 
 ## <a name="build-an-app-from-scratch"></a>Eine App von Grund auf neu erstellen
-1. Melden Sie sich bei [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) mit dem Konto an, das sie auch beim Registrieren für PowerApps verwendet haben.
+1. Melden Sie sich bei [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) mit demselben Konto an, das Sie für die Registrierung bei Power Apps verwendet haben.
 2. Klicken oder tippen Sie in der linken Navigationsleiste auf **Verbindungen**:  
    
     ![Verwalten von Verbindungen](./media/connection-azure-sqldatabase/manage-connections.png)

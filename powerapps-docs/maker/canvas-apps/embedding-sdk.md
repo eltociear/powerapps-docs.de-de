@@ -1,6 +1,6 @@
 ---
 title: 'Vorschau: Einbetten von Canvas-apps in Ihre Anwendungen | Microsoft-Dokumentation'
-description: Einbetten von Canvas-apps in Ihre Anwendungen mit dem neuen Einbettungs-SDK in powerapps
+description: Einbetten von Canvas-apps in Ihre Anwendungen mit dem neuen Einbettungs-SDK in Power apps
 author: nkrb
 manager: kvivek
 ms.service: powerapps
@@ -12,12 +12,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb2b04c50f8af17ec341c539c6c55d0f4c3a5bee
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0fdb73c9f27af4087cdd6ba856dfc3d4f80d85c1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679406"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731490"
 ---
 # <a name="preview-embed-canvas-apps-in-your-applications"></a>Vorschau: Einbetten von Canvas-apps in Ihre Anwendungen
 
