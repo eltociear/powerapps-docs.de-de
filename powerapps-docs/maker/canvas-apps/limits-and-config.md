@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e408eed2ac0ed769b747b647ea7b1a8c3c9df8f6
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 569792d634916ce32a54404580fb58d43bf4f24d
+ms.sourcegitcommit: d4462233c8973def0bcc4e75019390d92eccf684
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729611"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831347"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 Dieses Thema enthält die Anforderungen an Geräteplattform und Webbrowser sowie Grenzwerte und Konfigurationswerte für powerapps.
@@ -100,42 +100,19 @@ In dieser Liste werden alle Dienste identifiziert, mit denen Power apps Studio k
 | \*. Azure-APIM.net |https |API-Hubs: Verschiedene Unterdomänen für jedes Gebietsschema |
 | \*. powerapps.com |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
 | \*. azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
-| \*. BLOB.Core.Windows.net |https | Blob Storage |
+| \*.blob.core.windows.net |https | Blob Storage |
 | \*. Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
 | *. Dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetrie |
-| localhost | https | Powerapps Mobile
+| localhost | https | Power Apps Mobile
 
 > [!NOTE]
 > Wenn Sie ein VPN verwenden, muss es so konfiguriert werden, dass localhost von Tunneln für Power Apps Mobile ausgeschlossen wird.
 
-## <a name="size-limits"></a>Größen Limits
+## <a name="size-limits"></a>Größenbeschränkungen
 
 Informationen zu Größenbeschränkungen für Text, Hyperlinks, Bilder und Medien finden Sie unter [Datentypen](functions/data-types.md#text-hyperlink-image-and-media).
 
 ## <a name="power-apps-per-app-plan"></a>Powerapps pro App-Plan
 
-Mit powerapps pro App-Plan können einzelne Benutzer 2 Anwendungen in einem einzelnen Portal für ein bestimmtes Geschäftsszenario ausführen, das auf den vollständigen Funktionen von Power apps basiert. Dieser Plan bietet Benutzern eine einfache Möglichkeit, mit der Plattform zu beginnen, bevor Sie eine breitere Akzeptanz erzielen.
-
-Nachdem ein Administrator einer Umgebung powerapps pro App-Plan zugewiesen hat, werden Sie nicht lizenzierten Benutzern zugewiesen, wenn eine app in dieser Umgebung für Sie freigegeben wird. [Hier](https://docs.microsoft.com/power-platform/admin/capacity-add-on)können Sie sehen, wie ein Administrator die Zuordnung pro App-Plan durch hat.
-
-Führen Sie die folgenden Schritte aus, um die Zuweisung von App-Plänen für Benutzer zu deaktivieren, wenn eine APP für Sie freigegeben wird:
-
-- Wählen Sie die **App**aus.
-- Wählen Sie **Einstellungen**aus.
-- Ändern Sie die UMSCHALT Fläche **automatische Zuweisung pro App** wird unter **Pass Zuweisung**geändert.
-
-Die UMSCHALT Fläche **automatisch zuweisen pro App** wird in der app-Einstellung angezeigt.
-
-> [!NOTE]
-> Die Deaktivierung des pro-App-Plans ist zurzeit nur für Canvas-apps verfügbar.  Modell gesteuerte apps und Portale können diese Möglichkeit in Zukunft haben.
->
-> Die Möglichkeit, pro App-Plan Zuweisung für eine APP zu steuern, ist nur für apps verfügbar, die sich in einer Umgebung befinden, in der pro App-Pläne im [Power Platform Admin Center](https://admin.powerplatform.microsoft.com)zugeordnet sind.  
-
-### <a name="app-settings"></a>App-Einstellungen
-
-![Canvas-App-Einstellungen](./media/limits-and-config/app_settings.png "Canvas-App-Einstellungen")
-
-### <a name="pass-assignment"></a>Pass Zuweisung
-
-![Pass Zuweisung der Canvas-App-Einstellungen](./media/limits-and-config/app_settings_pass_assignment.png "Pass Zuweisung der Canvas-App-Einstellungen")
+Die Informationen sind jetzt im Abschnitt zu [powerapps pro App-Plan](/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan) im Administrator Handbuch für Power Platform verfügbar.
