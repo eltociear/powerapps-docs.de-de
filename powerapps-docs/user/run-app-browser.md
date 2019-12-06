@@ -16,29 +16,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 00b7d5dc7960429f7cc13215cd118e26e206d7d4
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: 76d2d4cdccc14e5c9c60cd5679bd7b88a2649380
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896206"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680671"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>Ausführen einer App in einem Webbrowser
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Artikel erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser ausführen.
 
 Für diesen Schnellstart benötigen Sie Folgendes:
-- Eine PowerApps-Lizenz. Diese ist in einem PowerApps-Plan wie der [Testversion für den PowerApps-Plan 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) oder in den [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)- oder [Dynamics 365](https://dynamics.microsoft.com/pricing/)-Plänen enthalten, in denen PowerApps enthalten ist. 
+- Eine powerapps-Lizenz. Dies ist in einem powerapps-Plan verfügbar, z. b. in der [Testversion von powerapps Plan 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)oder einem der [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) -oder [Dynamics 365](https://dynamics.microsoft.com/pricing/) -Pläne, die powerapps enthalten. 
 - Zugriff auf eine App, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat
 - Zugriff auf einen unterstützten Webbrowser bzw. ein unterstütztes Betriebssystem
-   - Informationen zu Canvas-apps finden Sie unter: [System Anforderungen, Einschränkungen und Konfigurationswerte](../maker/canvas-apps/limits-and-config.md)
-   - Informationen zu Modell gesteuerten apps finden Sie unter: [Unterstützte Webbrowser und mobile Geräte](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+   - Für Canvas-Apps: [Systemanforderungen, Einschränkungen und Konfigurationswerte](../maker/canvas-apps/limits-and-config.md)
+   - Für modellgesteuerte Apps: [Unterstützte Webbrowser und Mobilgeräte](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
 
 
 ## <a name="sign-in-to-dynamics-365"></a>Anmelden bei Dynamics 365
 Melden Sie sich unter [https://home.dynamics.com](https://home.dynamics.com) bei Dynamics 365 an.
 
 ## <a name="find-an-app-on-the-home-page"></a>Finden einer App auf der Startseite
-Die Startseite zeigt möglicherweise verschiedene Arten von Geschäfts-Apps an. Sie können nach einer bestimmten App suchen, indem Sie einen Teil des App-Namens in das Suchfeld eingeben. Sie können die Liste ebenfalls filtern, damit nur Apps angezeigt werden, die von einer bestimmten Quelle (z.B. PowerApps) erstellt wurden. Wählen Sie hierzu **Filter** aus, und wählen Sie dann die Quelle aus.
+Die Startseite zeigt möglicherweise verschiedene Arten von Geschäfts-Apps an. Sie können nach einer bestimmten App suchen, indem Sie einen Teil des App-Namens in das Suchfeld eingeben. Sie können die Liste auch filtern, sodass nur apps angezeigt werden, die von einer bestimmten Quelle, z. b. Power apps, erstellt wurden. Wählen Sie hierzu **Filter** aus, und wählen Sie dann die Quelle aus.
 
 Wenn Sie eine App erst vor Kurzem installiert haben, wird sie möglicherweise nicht sofort in der Liste der Apps angezeigt. Wählen Sie **Synchronisieren** aus, um alle Ihre apps anzuzeigen. Dieser Vorgang kann bis zu einer Minute dauern.
 
@@ -51,9 +51,9 @@ Sie können die URL einer App als Lesezeichen in Ihrem Browser speichern und die
 ![](./media/run-app-browser/web-login.png)
 
 ## <a name="connect-to-data"></a>Herstellen einer Datenverbindung
-Wenn eine App eine Verbindung mit einer Datenquelle oder die Berechtigung zur Nutzung von Funktionen des Geräts (z.B. Kamera oder Ortungsdienste) erfordert, müssen Sie Ihre Zustimmung erteilen, bevor Sie die App verwenden können. Normalerweise werden Sie nur beim ersten Mal dazu aufgefordert.
+Wenn eine App eine Verbindung mit einer Datenquelle oder die Berechtigung zur Nutzung von Funktionen des Geräts (z.B. Kamera oder Ortungsdienste) erfordert, müssen Sie Ihre Zustimmung erteilen, bevor Sie die App verwenden können. Normalerweise werden Sie nur beim ersten Mal aufgefordert.
 
-![Verbindung](./media/run-app-browser/app-connection.png)
+![Connection](./media/run-app-browser/app-connection.png)
 
 ## <a name="close-an-app"></a>Schließen einer App
 Melden Sie sich auf der Dynamics 365-Startseite ab, um eine App zu schließen, oder öffnen Sie eine andere App.

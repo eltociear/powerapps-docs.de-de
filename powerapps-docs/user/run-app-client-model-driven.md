@@ -1,5 +1,5 @@
 ---
-title: Ausführen einer modellgesteuerten App auf einem mobilen Gerät mit PowerApps | Microsoft-Dokumentation
+title: Ausführen einer Modell gesteuerten App auf einem mobilen Gerät mit powerapps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie eine modellgesteuerte App auf einem mobilen Gerät ausführen.
 author: Mattp123
 manager: kvivek
@@ -16,22 +16,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61731c59549c40e689f056372fe58f4b60968e1c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d8d05ad715a2400f43464810a275848ab779e39d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543466"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680418"
 ---
 # <a name="run-a-model-driven-app-on-a-mobile-device"></a>Ausführen modellgesteuerter Apps auf einem mobilen Gerät
 
 Nachdem die App erstellt und für Sie freigegeben wurde, können Sie sie auf einer Vielzahl handelsüblicher mobiler Geräte mit Betriebssystemen wie Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Thema erfahren Sie, wie Sie eine modellgesteuerte App auf einem mobilen Gerät ausführen. 
 
-Wenn Sie noch nicht bei PowerApps registriert sind, müssen Sie sich zuerst [kostenlos registrieren](https://make.powerapps.com/signup?redirect=marketing&email=), um fortzufahren. Außerdem benötigen Sie Zugriff auf eine App, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
+Wenn Sie nicht für Power apps registriert sind, registrieren Sie sich [für die kostenlose](https://make.powerapps.com/signup?redirect=marketing&email=) Registrierung, bevor Sie beginnen. Außerdem benötigen Sie Zugriff auf eine App, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
 
 ## <a name="run-the-model-driven-app"></a>Ausführen der modellgesteuerten App
 
-Modellgesteuerte Apps werden nicht in der mobilen PowerApps-App ausgeführt. Stattdessen führen Sie sie auf einem mobilen Gerät mithilfe der mobilen Dynamics 365-App oder im Webbrowser aus. 
+Modell gesteuerte apps werden nicht in den powerapps-Mobile App ausgeführt. Stattdessen führen Sie sie auf einem mobilen Gerät mithilfe der mobilen Dynamics 365-App oder im Webbrowser aus. 
 
 ### <a name="use-the-mobile-app"></a>Verwenden der mobilen App
 Installieren Sie die Dynamics 365-App für Smartphones oder die Dynamics 365-App für Tablets über den App Store für Ihr Gerät. Weitere Informationen finden Sie unter [Installieren von Dynamics 365 für Smartphones und Tablets](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/install-dynamics-365-for-phones-and-tablets).
@@ -45,6 +45,6 @@ Installieren Sie die Dynamics 365-App für Smartphones oder die Dynamics 365-App
 
 
 ## <a name="next-steps"></a>Nächste Schritte
-In diesem Thema erfahren Sie, wie Sie eine modellgesteuerte App auf einem mobilen Gerät ausführen. Weitere Informationen zu:
+In diesem Thema erfahren Sie, wie Sie eine modellgesteuerte App auf einem mobilen Gerät ausführen. In folgenden Quellen finden Sie Informationen zu diesen Themen:
 - zum Verwenden einer Modell gesteuerten App finden Sie unter [Verwenden von Modell gesteuerten apps](use-model-driven-apps.md) .
 - zum Ausführen einer Canvas-App auf einem mobilen Gerät finden Sie unter [Ausführen einer Canvas-App auf einem mobilen Gerät](run-app-client.md) .

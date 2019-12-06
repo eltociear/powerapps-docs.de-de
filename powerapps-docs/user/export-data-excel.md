@@ -16,12 +16,12 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: 2c23b25c062bc5ac4be26132c63f4cc4a79c3fad
-ms.sourcegitcommit: b3fd824cf0d540b964b729686b198c7ccf2c2174
+ms.openlocfilehash: 1f9368a7630e7b2f94e7b624e0d005f89b919a59
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316869"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680625"
 ---
 # <a name="export-data-to-excel"></a>Exportieren von Daten nach Excel
 
@@ -40,12 +40,12 @@ Sie können Daten in eine standardmäßige Excel-Datei exportieren, die Sie auf 
 |                                   Number                                   |                                                             Zeigt als Zahl ohne Gruppen Trennzeichen an.                                                             |
 |                                  Währung                                  |                                                         Zeigt als Zahl an und enthält kein Dollarzeichen ($).                                                         |
 |                          Nur Datum, Datum und Uhrzeit                          |                                                                       Nur als Datum anzeigen                                                                        |
-|                       Berechnete Felder und rollupfelder                        | In Excel bearbeitbar, kann aber nicht zurück in powerapps importiert werden |
-|                               Gesicherte Felder                               | In Excel bearbeitbar, kann aber nicht zurück in powerapps importiert werden |
+|                       Berechnete Felder und rollupfelder                        | In Excel bearbeitbar, kann aber nicht zurück in Power apps importiert werden |
+|                               Gesicherte Felder                               | In Excel bearbeitbar, kann aber nicht zurück in Power apps importiert werden |
   
 ## <a name="see-which-type-of-export-works-best-for-you"></a>Sehen Sie, welche Art von Export für Sie am besten geeignet ist.  
   
-|                                                                                                               Aufgabe                                                                                                                |                                              Weitere Informationen                                               |
+|                                                                                                               Task                                                                                                                |                                              Weitere Informationen                                               |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 |   Durchführen einer *Ad-hoc-* oder *Was-wäre-wenn* -Analyse ohne Änderung der APP Oder Sie können eine schnelle Massenbearbeitung in mehrere Datensätze durcharbeiten.   | [Online in Excel exportieren](export-to-excel-online.md) |
 |                                                                   Erstellen Sie eine Momentaufnahme der Daten mit den aktuellen Daten und der aktuellen Uhrzeit, oder möchten Sie Sie für andere Benutzer freigeben.                                                                    |           [Exportieren in ein statisches Excel-Arbeitsblatt](export-excel-static-worksheet.md)           |
@@ -66,7 +66,7 @@ Die Fehlermeldung tritt aufgrund einer Einstellung in Excel auf. Um das Problem 
   
 2. Wechseln Sie zu **Datei** > **Optionen**.  
   
-3. Wechseln Sie zum **Trust Center** > -**Trust Center Einstellungen**.  
+3. Wechseln Sie zu **Trust Center** > Einstellungen für das **Trust Center**.  
   
 4. Wählen Sie **geschützte Ansicht** aus, und deaktivieren Sie dann die Kontrollkästchen für die ersten beiden Optionen.  
   

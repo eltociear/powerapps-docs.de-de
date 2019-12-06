@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dee8b918efc60fed57cc6d8ca407e6cafe2b8060
-ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
+ms.openlocfilehash: e6a64a5849b351b625468894696251895375d0c2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73609901"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726081"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse 
 
@@ -34,7 +34,7 @@ Fügen Sie **Aktivitäten** der Pinnwand **Zeitachse** hinzu, um den Überblick 
 - Eine e-Mail mit einem angefügten Bild wird Inline mit dem Textkörper der e-Mail angezeigt.
 
   > [!div class="mx-imgBorder"]
-  > ![Zeitachsen Ansicht von Aktivitäten in powerapps](media/TimelineViewOfActivity.png "Zeitachsen Ansicht von Aktivitäten in powerapps")  
+  > ![Zeitachsen Ansicht von Aktivitäten in Power apps](media/TimelineViewOfActivity.png "Zeitachsen Ansicht von Aktivitäten in Power apps")  
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>Hinzufügen einer Aktivität über die Navigationsleiste
  
@@ -43,7 +43,7 @@ Der schnellste Weg, eine Aktivität hinzuzufügen, ist das Verwenden der Verknü
 1. Wählen Sie auf der Navigationsleiste die Schaltfläche **Pluszeichen** ![Create Record](media/create-record-button.png "Schaltfläche Datensatz erstellen")aus, und wählen Sie dann **Aktivitäten**aus. 
 
    > [!div class="mx-imgBorder"]
-   > ![Verknüpfung zum Hinzufügen einer Aktivität in powerapps](media/QuickCreate.png "Verknüpfung zum Hinzufügen einer Aktivität in powerapps")  
+   > ![Verknüpfung zum Hinzufügen einer Aktivität in Power apps](media/QuickCreate.png "Verknüpfung zum Hinzufügen einer Aktivität in Power apps")  
  
 2. Wählen Sie den Typ der Aktivität, die Sie hinzufügen möchten.
 
@@ -60,7 +60,7 @@ Der schnellste Weg, eine Aktivität hinzuzufügen, ist das Verwenden der Verknü
 
 
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen einer Telefon Aktivität in powerapps](media/addphonecall.png "Hinzufügen einer Telefon Aktivität in powerapps")
+   > ![Hinzufügen einer Telefon Aktivität in Power apps](media/addphonecall.png "Hinzufügen einer Telefon Aktivität in Power apps")
   
 3. Geben Sie den **Betreff** des Anrufs ein.
 

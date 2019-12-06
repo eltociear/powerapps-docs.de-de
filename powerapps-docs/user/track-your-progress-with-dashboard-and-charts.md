@@ -16,12 +16,12 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: e9d046c49a2a91aaf5c65094d446ae09f41572f9
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: 70c6f97c2617c9d6084c3aa8a0861793a0c059d5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969088"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726169"
 ---
 # <a name="track-your-progress-with-dashboards-and-charts"></a>Verfolgen des Fortschritts mit Dashboards und Diagrammen
 
@@ -34,14 +34,14 @@ Dashboards nehmen eine Sammlung von App-Daten auf und bieten Einblicke, um KPI (
 -  Zum Auswählen eines Standard Dashboards zeigen Sie das gewünschte Dashboard an, und wählen Sie dann oben auf dem Bildschirm **als Standard festlegen** aus.
 
    > [!div class="mx-imgBorder"]
-   > Dashboard(media/add_dashboard.png "Hinzufügen") oder ändern Dashboard ![Hinzufügen oder]ändern 
+   > ![Dashboard hinzufügen oder ändern](media/add_dashboard.png "Dashboard hinzufügen oder ändern") 
 
 ## <a name="create-a-new-dashboard"></a>Erstellen eines neuen Dashboards
 
 1. Klicken Sie zum Erstellen eines neuen Dashboards auf **Dynamics 365-Dashboard erstellen**. 
 
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen eines neuen Dashboards](media/new_dashboard.png "Hinzufügen eines neuen Dashboards")
+   > ![Neues Dashboard hinzufügen](media/new_dashboard.png "Neues Dashboard hinzufügen")
    
 2. Wählen Sie ein Dashboard-Layout und dann **Erstellen**aus.  
 
@@ -52,7 +52,7 @@ Dashboards nehmen eine Sammlung von App-Daten auf und bieten Einblicke, um KPI (
 4. Fügen Sie den gewünschten Inhalt für die einzelnen Bereiche des Dashboards hinzu. Fügen wir beispielsweise ein Diagramm hinzu. 
 
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen eines Diagramms](media/add_chart.png "Hinzufügen eines Diagramms")
+   > ![Hinzufügen eines Diagramms](media/add_chart.png "Diagramm hinzufügen")
  
  5. Wählen Sie den **Daten Recordtyp** für das Diagramm aus.
  6. Wählen Sie eine **Ansicht** aus, die von den Daten im Diagramm angezeigt wird.
@@ -67,11 +67,11 @@ Diagramme bieten Ihnen einen schnellen Überblick über die Nachverfolgung ihrer
 
 -   Zeigen Sie mit der Maus auf das Diagramm, um eine QuickInfo mit schnellen Informationen zu diesem Bereich des Diagramms anzuzeigen.
 -   Klicken Sie auf den Bereich eines Diagramms, um eine Rasteransicht mit weiteren Details zu den Daten im Diagramm anzuzeigen.
--   Um ein Diagramm zu erweitern, wählen **Sie die Schaltfläche Diagramm erweitern**Diagramm![Ansicht]erweitern Diagramm(media/expandviewbutton.png "Ansicht") erweitern aus.
--   Um Datensätze im Diagramm anzuzeigen oder das Diagramm zu aktualisieren, klicken Sie auf ![Weitere Befehle](media/MoreButton.png "Weitere Befehle") , und wählen Sie dann eine Aktion aus: **Aktualisieren** oder **Datensätze anzeigen**.
+-   Wenn Sie ein Diagramm erweitern möchten, wählen Sie die Schaltfläche Diagramm **erweitern Diagramm**  ![Ansicht](media/expandviewbutton.png "Diagramm Ansicht erweitern") erweitern aus.
+-   Um Datensätze im Diagramm anzuzeigen oder das Diagramm zu aktualisieren, wählen Sie ![Weitere Befehle](media/MoreButton.png "Weitere Befehle") aus, und wählen Sie dann eine Aktion aus: **Aktualisieren** oder **Datensätze anzeigen**.
      
      > [!div class="mx-imgBorder"]
-     > ![Ansicht der Diagramme in der powerapps]-(media/ViewOfCharts.png "Ansicht der Diagramme in powerapps")  
+     > ![Anzeigen von Diagrammen in Power apps](media/ViewOfCharts.png "Anzeigen von Diagrammen in Power apps")  
        
 
 **Ändern der Diagramm Ansicht**
@@ -81,7 +81,7 @@ Wenn Sie die Diagramm Ansicht ändern, wird eine andere Aufschlüsselung der Dat
 Wählen Sie z. b. "alle Verkaufschancen" aus, und wählen Sie dann eine andere Ansicht aus, und das Diagramm und das Raster werden aktualisiert.
 
 > [!div class="mx-imgBorder"]
-> ![Ändern einer Diagramm Ansicht in powerapps](media/ChangeChartView.png "Ändern einer Diagramm Ansicht in powerapps")
+> ![Ändern einer Diagramm Ansicht in Power apps](media/ChangeChartView.png "Ändern einer Diagramm Ansicht in Power apps")
 
 ## <a name="known-issues"></a>Bekannte Probleme  
 Im Diagramm-Designer wird das Hinzufügen von Order by für bestimmte berechnete Felder nicht unterstützt und führt zu einem Fehler.  Die berechneten Felder, die dies bewirken, verwenden ein anderes berechnetes Feld, ein verknüpftes Entitäts Feld oder ein lokales Feld in der Entität.

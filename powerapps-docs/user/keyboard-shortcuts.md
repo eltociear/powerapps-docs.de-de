@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Tastenkombinationen in powerapps | MicrosoftDocs
+title: Verwenden von Tastenkombinationen in Power apps | MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -15,14 +15,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc8e73353500610f578c1dc66cd6318150facb00
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7fbcbe315f3af9554d53329f35469af4ca236181
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543195"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733191"
 ---
-# <a name="use-keyboard-shortcuts-in-powerapps"></a>Verwenden von Tastenkombinationen in powerapps
+# <a name="use-keyboard-shortcuts-in-power-apps"></a>Verwenden von Tastenkombinationen in Power apps
 
 Tastenkombinationen bieten Ihnen eine alternative Möglichkeit, häufige Aufgaben auszuführen, anstatt die Maus zu verwenden oder auf den Finger zu tippen. Sie helfen bei der nahtlosen Navigation der-Schnittstelle. Die folgenden Tastenkombinationen gelten für apps. 
 
@@ -38,26 +38,26 @@ Tastenkombinationen bieten Ihnen eine alternative Möglichkeit, häufige Aufgabe
 |---------|---------|
 |Vervollständigen Sie den Befehl für die aktive Option oder die Schaltfläche.|  EINGABETASTE|
 |Abbrechen eines Befehls oder Schließen einer ausgewählten Liste oder eines ausgewählten Dialog Felds| ESC-TASTE|
-|Sicher| STRG + S |
-|Speichern und schließen| nicht zutreffend|
+|Speichern| Strg+S |
+|Speichern und schließen| Nicht zutreffend|
 |Bearbeitung abbrechen und schließen (schließen) |ESC-TASTE|
-|Löschen des Datensatzes (wenn sich Formulare im Bearbeitungsmodus befinden)| nicht zutreffend|
-|Speichern und anschließendes Öffnen eines neuen Formulars (speichern und neu) (wenn sich Formulare im Bearbeitungsmodus befinden)| nicht zutreffend|
+|Löschen des Datensatzes (wenn sich Formulare im Bearbeitungsmodus befinden)| Nicht zutreffend|
+|Speichern und anschließendes Öffnen eines neuen Formulars (speichern und neu) (wenn sich Formulare im Bearbeitungsmodus befinden)| Nicht zutreffend|
 |Öffnen Sie das Nachschlage Menü mit den zuletzt verwendeten Elementen in alphabetischer Reihenfolge.| Pfeil nach unten|
 |Dropdown Liste für Suche öffnen| EINGABETASTE|
 |Schließen der Dropdown Liste "Suche"|ESC-TASTE|
 |Öffnet einen Datensatz, der in der Suche mit Formularen im Bearbeitungsmodus gefunden wurde.| EINGABETASTE|
-|Hinzufügen eines Artikels zu einer e-Mail| nicht zutreffend|
-|E-Mail-Vorlage anwenden (beim Bearbeiten einer e-Mail-Nachricht)| nicht zutreffend|
+|Hinzufügen eines Artikels zu einer e-Mail| Nicht zutreffend|
+|E-Mail-Vorlage anwenden (beim Bearbeiten einer e-Mail-Nachricht)| Nicht zutreffend|
 
 ## <a name="form-navigation-shortcuts"></a>Formular Navigations Verknüpfungen
 
 |Task | Einheitliche Oberfläche |
 |---------|---------|
 |Wechseln Sie zur nächsten Option, Optionsgruppe oder Feld.|Registerkarte|
-|Wechseln zur vorherigen Option, Optionsgruppe oder Feld| UMSCHALT + TAB |
+|Wechseln zur vorherigen Option, Optionsgruppe oder Feld| UMSCHALT+TAB |
 |Wechseln zwischen Optionen in einer geöffneten Liste oder zwischen Optionen in einer Gruppe von Optionen|Pfeiltasten|
-|Zur Befehlsleiste wechseln| nicht zutreffend |
+|Zur Befehlsleiste wechseln| Nicht zutreffend |
 |Zum Abschnitt "Landmark" einer Seite wechseln| STRG +\[ |
 
 
@@ -69,12 +69,12 @@ Wenn Ihr Administrator editierbare Raster (Ansichten) aktiviert hat, können Sie
 
 |Task  | Einheitliche Oberfläche|
 |---------|---------|
-|Wenn sich der Fokus auf einem Spaltenheader befindet, Sortieren Sie nach Spalte. | EINGABETASTE |
+|Wenn sich der Fokus auf einem Spaltenheader befindet, Sortieren Sie nach Spalte. | Schlüssel eingeben |
 |Wenn sich der Fokus auf einem Spaltenheader befindet, öffnen Sie das Dialogfeld "Filter" | LEERTASTE|
 |Wenn sich der Fokus auf den Zellen befindet, wechseln Sie zum nächsten Feld. |  Taste mit dem Pfeil nach rechts (→)  | 
 |Wenn sich der Fokus auf den Zellen befindet, wechseln Sie zum vorherigen Feld.   |  Taste für nach-links-Taste|
 |Wenn sich der Fokus auf der Spalten Kopfzeile befindet, wechseln Sie zur nächsten Spaltenüberschrift. |  Registerkarte  | 
-|Wenn sich der Fokus auf der Spalten Kopfzeile befindet, wechseln Sie zur vorherigen Spaltenüberschrift.  |  UMSCHALT + TAB |
+|Wenn sich der Fokus auf der Spalten Kopfzeile befindet, wechseln Sie zur vorherigen Spaltenüberschrift.  |  UMSCHALT+TAB |
 |In die Zelle oben verschieben | Taste mit dem Pfeil nach oben |
 |In die Zelle unten verschieben|  Pfeil nach unten (↓) **oder** EINGABETASTE, wenn sich die Zelle nicht im Bearbeitungsmodus befindet |
 |Wechseln Sie in den Bearbeitungsmodus für Text-, Zahlen-und einfache Felder, wenn sich der Fokus auf einem Feld befindet.  |  Geben Sie den Wert direkt ein, um den vorhandenen Wert **oder** die Leertaste zu überschreiben, um den **vorhandenen Wert oder F2 zu** ändern und den vorhandenen Wert auszuwählen.  |
@@ -88,7 +88,7 @@ Wenn Ihr Administrator editierbare Raster (Ansichten) aktiviert hat, können Sie
 |Navigieren Sie zum Such Daten Satz, und öffnen Sie ihn.| Geben Sie ein, wenn der Fokus auf dem Symbol (→) steht.|
 |Zur nächsten Seite wechseln (sofern vorhanden)| Bild-ab-Taste|
 |Zur vorherigen Seite wechseln (sofern vorhanden)|Bild-auf-Taste|
-|Zum Spaltenkopf wechseln, wenn sich der Fokus im Raster befindet|  UMSCHALT + TAB |
+|Zum Spaltenkopf wechseln, wenn sich der Fokus im Raster befindet|  UMSCHALT+TAB |
 |Wechseln Sie zur Schaltfläche speichern, wenn sich der Fokus auf der Spaltenüberschrift befindet (wenn es sich um nicht gespeicherte Daten handelt).| Registerkarte|
 |Wechseln Sie zur Schaltfläche "Aktualisieren", wenn der Fokus auf der Spaltenüberschrift liegt.| Registerkarte|
 
@@ -99,14 +99,14 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 |---------|---------|
 |Dashboard-Element aktivieren (mit der linken Maustaste simulieren)| Eingabe **oder** Leertaste |
 |Zum nächsten Element wechseln  | Registerkarte | 
-|Zum vorherigen Element wechseln  | UMSCHALT + TAB  | 
+|Zum vorherigen Element wechseln  | UMSCHALT+TAB  | 
 |Zum nächsten Element innerhalb eines Dashboardelements wechseln  | Down (↓) Pfeiltaste |
 |Zum vorherigen Element innerhalb eines Dashboardelements wechseln  | Nach-oben-Taste (-Taste) | 
-|Menü schließen | Weg |
+|Menü schließen | ESCAPE-TASTE |
 |Aktivieren Sie ein Kontrollkästchen oder ein Optionsfeld. | LEERTASTE |
-|Ändern des Datums Bereichs Filters | STRG + ALT + D |
-|Visuellen Filterbereich anzeigen | STRG + ALT + V |
-|Wechseln zur globalen Befehlsleiste | STRG + ALT + A | 
+|Ändern des Datums Bereichs Filters | STRG+ALT+D |
+|Visuellen Filterbereich anzeigen | STRG+ALT+V |
+|Wechseln zur globalen Befehlsleiste | STRG+ALT+A | 
 
 ### <a name="global-filter-shortcuts"></a>Globale Filter Verknüpfungen
 
@@ -115,32 +115,32 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 |Öffnen eines Menüs | EINGABETASTE **oder** Leertaste **oder** nach unten (↓) Pfeiltaste |
 |Aktivieren einer Schaltfläche | Eingabe **oder** Leertaste |
 |Zum nächsten Element wechseln | Registerkarte |
-|Zum vorherigen Element wechseln | UMSCHALT + TAB |
+|Zum vorherigen Element wechseln | UMSCHALT+TAB |
 |Öffnen eines Strukturansicht-Steuer Elements | Right (→) Pfeiltaste |
 |Schließen eines Strukturansicht-Steuer Elements | Left-Pfeiltaste |
 |Zum nächsten Struktur Ansichts Knoten wechseln | Nach-oben-Taste (-Taste) |
 |Zum vorherigen Struktur Ansichts Knoten wechseln | Down (↓) Pfeiltaste |
-|Zum ersten Struktur Ansichts Knoten wechseln | Traum |
-|Zum letzten Struktur Ansichts Knoten wechseln | Schließlich |
+|Zum ersten Struktur Ansichts Knoten wechseln | -Startseite |
+|Zum letzten Struktur Ansichts Knoten wechseln | Ende |
 |Ausführen der Standardaktion für den Struktur Ansichts Knoten | EINGABETASTE |
-|Entfernen eines Filters | Lösch |
+|Entfernen eines Filters | Löschen |
 
 ### <a name="dashboard-stream-control-shortcuts"></a>Dashboard
 
 |Task             |Einheitliche Oberfläche  |
 |---------|---------|
-|Wechseln zum ersten Befehl in der Befehlsleiste des aktiven dashboardstreams | STRG + ALT + Q | 
+|Wechseln zum ersten Befehl in der Befehlsleiste des aktiven dashboardstreams | STRG+ALT+Q | 
 |Zum nächsten Element wechseln | Registerkarte |
-|Zum vorherigen Element wechseln | UMSCHALT + TAB |
+|Zum vorherigen Element wechseln | UMSCHALT+TAB |
 |Aktivieren einer Schaltfläche | Eingabe **oder** Leertaste |
 |Aktivieren Sie die Schaltfläche **nach Feld Sortieren** , und öffnen Sie Flyout. | EINGABETASTE **oder** Leertaste **oder** nach unten (↓) Pfeiltaste |
 |Zum nächsten Element wechseln | Down (↓) Pfeiltaste |
 |Zum vorherigen Element wechseln | Nach-oben-Taste (-Taste) |
-|Zum ersten Element wechseln | Traum |
-|Zum letzten Element wechseln | Schließlich |
-|Zum nächsten Stream wechseln | STRG + F6 |
-|Zum vorherigen Stream verschieben | STRG + UMSCHALT + F6 |
-|Menü schließen | Weg |
+|Zum ersten Element wechseln | -Startseite |
+|Zum letzten Element wechseln | Ende |
+|Zum nächsten Stream wechseln | STRG+F6 |
+|Zum vorherigen Stream verschieben | Ctrl+Shift+F6 |
+|Menü schließen | ESCAPE-TASTE |
 |Ändern des Status eines Kontrollkästchens | LEERTASTE |
 
 ## <a name="common-controls"></a>Allgemeine Steuerelemente
@@ -152,10 +152,10 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 |Wechseln zum ersten Element in einem Diagramm | Registerkarte |
 |Zum nächsten Datenpunkt wechseln | Right (→) Pfeiltaste **oder** nach unten (↓) Pfeiltaste|
 |Zum vorherigen Datenpunkt verschieben | Left-Pfeiltaste **oder** nach-oben-Taste (-Taste)|
-|Zum ersten Datenpunkt verschieben | Traum |
-|Zum letzten Datenpunkt wechseln | Schließlich |
+|Zum ersten Datenpunkt verschieben | -Startseite |
+|Zum letzten Datenpunkt wechseln | Ende |
 |Wechseln zur Schaltfläche " **Weitere** anzeigen" in einem tagdiagramm | Registerkarte |
-|Wechseln von der Schaltfläche " **Weitere** anzeigen" zu den Tags in einem tagdiagramm | UMSCHALT + TAB |
+|Wechseln von der Schaltfläche " **Weitere** anzeigen" zu den Tags in einem tagdiagramm | UMSCHALT+TAB |
 |Filtern des Dashboards, wenn sich der Fokus auf einem Datenpunkt in einem interaktiven Dashboard befindet | Eingabe **oder** Leertaste |
 
 ### <a name="date-time-control-shortcuts"></a>Zeit Steuerungs Verknüpfungen für Datum/Uhrzeit
@@ -166,11 +166,11 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 |Aktivieren Sie die Option, und schließen Sie das Flyout. | Eingabe **oder** Leertaste |
 |Zum nächsten Element wechseln | Down (↓) Pfeiltaste |
 |Zum vorherigen Element wechseln | Nach-oben-Taste (-Taste) |
-|Zum ersten Element wechseln | Traum |
-|Zum letzten Element wechseln | Schließlich |
-|Schließen Sie das Flyout für die Datumsauswahl. | Weg |
+|Zum ersten Element wechseln | -Startseite |
+|Zum letzten Element wechseln | Ende |
+|Schließen Sie das Flyout für die Datumsauswahl. | ESCAPE-TASTE |
 |Zum nächsten Element wechseln | Registerkarte |
-|Zum vorherigen Element wechseln | UMSCHALT + TAB |
+|Zum vorherigen Element wechseln | UMSCHALT+TAB |
 |Kalender auswählen | Eingabe **oder** Leertaste |
 |Aktivieren einer Schaltfläche | Eingabe **oder** Leertaste
 

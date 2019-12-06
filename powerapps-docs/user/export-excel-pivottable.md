@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90cf377f10a99dbcece1e5f556cb50e678099744
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: b14e24e7048e4f91de13f582914ffb621d3c7899
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61544980"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725791"
 ---
 # <a name="export-to-an-excel-pivottable"></a>Exportieren in eine Excel-PivotTable
 
@@ -31,11 +31,11 @@ Sie können APP-Daten in eine Office Excel-Pivottabelle exportieren, um Muster u
 ## <a name="export-data-to-an-excel-pivottable"></a>Exportieren von Daten in eine Excel-PivotTables  
 Die Option zum Exportieren von Daten in eine Excel-pivottyp ist nicht in allen Daten Satz Typen verfügbar. Wenn die Option nicht angezeigt wird, ist Sie für diesen Datensatz nicht verfügbar.  
   
-1. Öffnen Sie eine Liste der Datensätze in der APP, wählen Sie den Pfeil rechts neben **nach Excel exportieren**aus, und wählen Sie dann **dynamische**pivotberechtigung aus.  
+1. Öffnen Sie eine Liste der Datensätze in der APP, wählen Sie den Pfeil rechts neben **nach Excel exportieren**aus, und wählen Sie dann **dynamische pivotberechtigung**aus.  
   
 2. Wählen Sie im Dialogfeld **Spalten für pivotpivot auswählen** die Spalten Einstellungen aus, und wählen Sie dann **exportieren**aus.  
   
-   Standardmäßig enthält die **PivotTables-Feldliste** nur Felder, die in der Liste **Spalten auswählen für** pivotexcel angezeigt werden.  
+   Standardmäßig enthält die **PivotTables-Feldliste** nur Felder, die in der Liste **Spalten auswählen für pivotexcel** angezeigt werden.  
   
 3. Wählen Sie **Speichern** aus, und speichern Sie die XLSX-Datei. Notieren Sie sich den Speicherort, an dem Sie die Datei gespeichert haben.  
   
@@ -47,7 +47,7 @@ Die Option zum Exportieren von Daten in eine Excel-pivottyp ist nicht in allen D
    > 1. Öffnen Sie Excel, und wechseln Sie zu **Datei** > **Optionen** > **Trust Center**.  
    > 2. Wählen Sie Einstellungen für das **Trust Center** und dann **geschützte Ansicht**aus.  
    > 3. Deaktivieren Sie unter **geschützte Ansicht**die Kontrollkästchen für alle drei Elemente.  
-   > 4. Wählen Sie **OK** > **aus.**  
+   > 4. Klicken Sie auf **OK** > **OK**.  
    > 
    > Es wird weiterhin dringend empfohlen, die Datendatei zu speichern und dann zu öffnen, anstatt die geschützte Ansicht zu deaktivieren, was möglicherweise zu einem Risiko für Ihren Computer wird.  
   

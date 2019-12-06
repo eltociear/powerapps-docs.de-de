@@ -1,6 +1,6 @@
 ---
 title: Anzeigen von Analyseberichten für Ihre App | Microsoft-Dokumentation
-description: Zeigen Sie Berichte zur Nutzung und Leistung Ihrer PowerApps-Apps an.
+description: Zeigen Sie Berichte an, um die Nutzung und Leistung Ihrer Apps für Power apps anzuzeigen.
 author: jamesol-msft
 manager: kvivek
 ms.service: powerapps
@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 1f1f0901f5ba641dfc4e183164d55225d3aeb05c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a0abd8c8b5b25f89715233f3436c3eee93b8e230
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537068"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676710"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>Anzeigen von Analyseberichten für Ihre App
 Haben Sie eine App erstellt und in Ihrer Organisation bereitgestellt?  Möchten Sie wissen, wie viele Ihrer Kollegen die App täglich verwenden?
@@ -31,7 +31,7 @@ Mit dem App-Nutzungsbericht können Sie verfolgen, wie viele Benutzer Ihre App i
 ![App-Nutzungsbericht](./media/app-analytics/analytics.png)
 
 ## <a name="how-do-i-get-access-to-my-apps-reports"></a>Wie kann ich auf die Berichte für meine App zugreifen?
-Alle Berichte sind für alle Benutzer mit der Berechtigung „Kann bearbeiten“ für die App verfügbar. Der Benutzer benötigt allerdings einen PowerApps-Plan 2 oder eine PowerApps-Plan 2-Testlizenz, um auf die Berichte zuzugreifen.
+Alle Berichte sind für alle Benutzer mit der Berechtigung "kann bearbeiten" für die app verfügbar, aber der Benutzer muss über eine Lizenz für powerapps-Plan 2 oder eine powerapps-Plan 2-Testlizenz verfügen, um auf die Berichte zugreifen zu können.
 
 ## <a name="where-do-i-find-my-apps-reports"></a>Wo finde ich die Berichte für meine App?
 Sie können die Berichte für Ihre App mit den folgenden Schritten anzeigen:
@@ -53,7 +53,7 @@ Ja, Sie können eine CSV-Datei mit den Daten für alle Diagramme in einen Berich
     ![Diagrammdaten herunterladen](./media/app-analytics/analytics-download.png)
 
 ## <a name="are-there-going-to-be-any-other-reports"></a>Wird es weitere Berichte geben?
-Zwar! Wir planen, ähnliche Berichte zur App-Leistung und für Fehlerberichte zu entwickeln.
+Ja, Wir planen, ähnliche Berichte zur App-Leistung und für Fehlerberichte zu entwickeln.
 
-Wenn Sie Feedback, Fragen oder Wünsche haben, freuen wir uns über Ihre Kommentare im [Ideenforum für PowerApps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas).
+Wenn Sie über bestimmte Feedback, Fragen oder Anforderungen verfügen, die wir gerne in unserem [Forum zu Power apps-Ideen](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)hören würden.
 

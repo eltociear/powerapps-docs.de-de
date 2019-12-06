@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a0b4e125749d5b0179489677e9a1103cb14a0697
-ms.sourcegitcommit: 481a89e50c282f1e533a8526035dd3c38e3818a2
+ms.openlocfilehash: 2a0474b17f62e30ec41cf04001f774a42ee2e849
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72023318"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725809"
 ---
 # <a name="deactivate-or-activate-an-account-or-contact"></a>Deaktivieren oder Aktivieren eines Kontos oder Kontakts
 
@@ -37,7 +37,7 @@ Wenn Sie später ein deaktiviertes Konto erneut aktivieren müssen, ist dies gan
 2.  Wählen Sie das aktive Konto oder den Kontakt aus, das Sie deaktivieren möchten, klicken Sie in der Befehlsleiste auf **Deaktivieren**, und bestätigen Sie dann die Deaktivierung.
 
     > [!div class="mx-imgBorder"]
-    > Deaktivieren ![eines Kontos in powerapps](media/DeactiveAccounts.png "Deaktivieren eines Kontos in powerapps")
+    > ![Deaktivieren eines Kontos in Power apps](media/DeactiveAccounts.png "Deaktivieren eines Kontos in Power apps")
 
 
 ## <a name="activate-an-account-or-contact"></a>Konto oder Kontakt aktivieren  
@@ -53,7 +53,7 @@ Wenn Sie später ein deaktiviertes Konto erneut aktivieren müssen, ist dies gan
 5.  Wählen Sie **aktivieren**aus, und bestätigen Sie dann die Aktivierung.  
 
     > [!div class="mx-imgBorder"]
-    > ![Aktivieren eines Kontos in powerapps](media/ActiveAccounts.png "Aktivieren eines Kontos in powerapps")  
+    > ![Aktivieren eines Kontos in Power apps](media/ActiveAccounts.png "Aktivieren eines Kontos in Power apps")  
 
 
 

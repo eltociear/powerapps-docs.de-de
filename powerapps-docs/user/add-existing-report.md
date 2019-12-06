@@ -16,14 +16,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f775c5607720adcf233524522accb926d955289
-ms.sourcegitcommit: c4328e83f5caa58eab83757180b56ced480af220
+ms.openlocfilehash: e730d498a4d82518d0f908645e26a541c1e8c6af
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71982653"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725854"
 ---
-# <a name="add-a-report-from-outside-powerapps"></a>Hinzufügen eines Berichts von außerhalb von powerapps
+# <a name="add-a-report-from-outside-power-apps"></a>Hinzufügen eines Berichts von außerhalb von powerapps
 
 Wenn Sie einen benutzerdefinierten Bericht außerhalb des Systems erstellt haben, können Sie ihn problemlos zu powerapps hinzufügen.
 
@@ -37,7 +37,7 @@ Informationen zum Erstellen eines benutzerdefinierten Berichts finden Sie im [Ha
    1. Wählen Sie im Abschnitt **Quelle** im Feld **Berichtstyp** die Option **vorhandene Datei**aus.  
    
      > [!div class="mx-imgBorder"]
-     > ![Hinzufügen eines]vorhandenen Berichts(media/add_existing_report.png "Hinzufügen eines vorhandenen Berichts")
+     > ![Vorhandenen Bericht hinzufügen](media/add_existing_report.png "Vorhandenen Bericht hinzufügen")
   
    2. Geben Sie im Feld **Datei Speicherort** den Pfad und den Dateinamen der hinzu zufügenden Datei ein, oder wählen Sie **Durchsuchen** aus, um die Datei zu suchen. 
    
@@ -57,11 +57,11 @@ Informationen zum Erstellen eines benutzerdefinierten Berichts finden Sie im [Ha
   
    2.  Das Textfeld über **geordneter Bericht** zeigt den übergeordneten Bericht des aktuellen Berichts an, sofern vorhanden.  
   
-   3. **Kategorien**. Wählen Sie(media/ellipsis-button.png "die Schaltfläche") mit den Auslassungs Punkten der ![Schaltfläche]mit **den Auslassungs Punkten für dieses Feld auswählen oder ändern aus** , und geben Sie dann die Kategorien an, die in diesen Bericht aufgenommen  
+   3. **Kategorien**. Wählen Sie die ![Schaltfläche](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") **Werte für dieses Feld mit den Auslassungs Zeichen auswählen oder ändern aus** , und geben Sie dann die Kategorien an, die in diesem Bericht enthalten sein sollen.  
   
-   4. **Zugehörige Daten Satz Typen**. Damit der Bericht in der Liste Berichte auf einer Seite für bestimmte Daten Satz Typen angezeigt wird, klicken Sie auf(media/ellipsis-button.png "die Schaltfläche") mit **den Auslassungs Punkten auf der Schaltfläche mit den Auslassungs Punkten für dieses Feld auswählen oder ändern** ![], und wählen Sie dann Daten Satz Typen aus.  
+   4. **Zugehörige Daten Satz Typen**. Damit der Bericht in der Liste Berichte auf einer Seite für bestimmte Daten Satz Typen angezeigt wird, wählen Sie die Schaltfläche **auswählen oder ändern Sie die Schaltfläche Werte für dieses Feld** ![](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") aus, und wählen Sie dann Daten Satz Typen aus.  
   
-   5. **Anzeigen in**. Um anzugeben, wo Berichte sichtbar sein sollen, wählen Sie(media/ellipsis-button.png "die Schaltfläche") mit den Auslassungs Punkten der ![Schaltfläche]mit **den Auslassungs Punkten für dieses Feld auswählen oder ändern aus** , und wählen Sie dann eine oder mehrere der Optionen aus.  
+   5. **Anzeigen in**. Wenn Sie angeben möchten, wo Berichte sichtbar sein sollen, wählen Sie die Schaltfläche **auswählen oder ändern Sie die Schaltfläche Werte für dieses Feld aus** ![](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") , und wählen Sie dann eine oder mehrere der Optionen aus.  
   
         Wenn keine Werte ausgewählt sind, ist der Bericht für Endbenutzer nicht sichtbar.  
   

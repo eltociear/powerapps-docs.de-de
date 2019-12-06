@@ -1,6 +1,6 @@
 ---
-title: Was ist PowerApps? | Microsoft-Dokumentation
-description: Dieser Artikel bietet einen Überblick über PowerApps sowie Verwendungsmöglichkeiten für Endbenutzer, App-Ersteller, Administratoren und professionelle Entwickler.
+title: Was ist powerapps? | Microsoft-Dokumentation
+description: Bietet einen Überblick über Power apps und erläutert, wie Endbenutzer, App-Entwickler, Administratoren und pro-Entwickler Power Apps verwenden können.
 author: KumarVivek
 manager: annbe
 ms.service: powerapps
@@ -12,55 +12,59 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 69322a21510289f5db92f3969ef524fbcd8421c8
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 70086d5ec6e30a917f817a2d3f4012745949c99e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899268"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680648"
 ---
-# <a name="what-is-powerapps"></a>Was ist PowerApps?
+# <a name="what-is-power-apps"></a>Was ist powerapps?
 
-PowerApps ist eine Suite von Apps, Diensten, Connectors und einer Datenplattform für eine schnelle Entwicklungsumgebung für Anwendungen, mit der Sie benutzerdefinierte Apps entsprechend Ihren Geschäftsanforderungen erstellen können. Mit PowerApps können Sie schnell benutzerdefinierte Geschäfts-Apps erstellen, die Sie mit Ihren Geschäftsdaten verbinden können. Der Speicherort dieser Daten kann *entweder* die zugrunde liegende Datenplattform sein ([Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)) *oder* verschiedene Online- oder lokale Datenquellen (SharePoint, Excel, Office 365, Dynamics 365, SQL Server usw.). 
+Power Apps ist eine Suite aus apps, Diensten, Connectors und Datenplattform, die eine schnelle Anwendungs Entwicklungsumgebung bereitstellt, um benutzerdefinierte Apps für Ihre geschäftlichen Anforderungen zu erstellen. Mithilfe von powerapps können Sie schnell benutzerdefinierte Business-Apps erstellen, die eine Verbindung mit ihren Geschäftsdaten herstellen, die *entweder* in der zugrunde liegenden Datenplattform ([Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)) *oder* in verschiedenen Online-und lokalen Datenquellen (SharePoint, Excel, Office 365, Dynamics 365, SQL Server usw.) gespeichert sind. 
 
-Mithilfe von PowerApps erstellte Apps bieten eine umfangreiche Geschäftslogik und Workflowfunktionen, die eine Umstellung Ihrer Geschäftsprozesse von manuellen auf digitale und automatisierte Abläufe ermöglichen. Zudem besitzen mit PowerApps erstellte Apps ein dynamisches Design und können nahtlos im Browser oder auf mobilen Geräten (Smartphones oder Tablets) ausgeführt werden. Da mit PowerApps funktionsreiche benutzerdefinierte Geschäfts-Apps erstellt werden können, ohne dass dazu das Schreiben von Code erforderlich ist, eignet es sich auch hervorragend für „nicht professionelle“ Benutzer.
+Apps, die mit Power Apps erstellt wurden, bieten umfangreiche Geschäftslogik-und Workflow Funktionen, mit denen Sie manuelle Geschäftsprozesse in digitale, automatisierte Prozesse umwandeln können. Außerdem verfügen apps, die mithilfe von Power Apps erstellt wurden, über ein reaktionsfähiges Design und können nahtlos im Browser oder auf mobilen Geräten (Telefon oder Tablet) ausgeführt werden. Powerapps "demokratisiert" die benutzerdefinierte Erstellung von Geschäfts-apps, indem Sie Benutzern das Erstellen funktionsreicher, benutzerdefinierter Geschäfts-apps ermöglichen, ohne Code schreiben zu müssen.
 
-PowerApps bietet zugleich eine erweiterbare Plattform, mit der professionelle Entwickler programmgesteuert mit Daten und Metadaten interagieren, Geschäftslogik anwenden, benutzerdefinierte Connectors erstellen und in externe Daten integrieren können.
+Power Apps bietet auch eine erweiterbare Plattform, auf der erfahrene Entwickler programmgesteuert mit Daten und Metadaten interagieren, Geschäftslogik anwenden, benutzerdefinierte Connectors erstellen und externe Daten integrieren können.
 
-Weitere Informationen finden Sie auf dem [YouTube-Kanal von PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg).
+Weitere Informationen finden Sie im [powerapps-Kanal](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) auf YouTube.
 
-## <a name="powerapps-for-app-makerscreators"></a>PowerApps für App-Ersteller
+## <a name="power-apps-for-app-makerscreators"></a>Powerapps für App-Ersteller/-Ersteller
 
 Mithilfe von powerapps können Sie drei Arten von apps erstellen: **Canvas**, **Modell gesteuert**und **Portal**. Weitere Informationen finden Sie unter Übersicht über das [Erstellen von apps in powerapps](maker/index.md).
 
 Um eine APP zu erstellen, beginnen Sie mit [make.powerapps.com](https://make.powerapps.com).
 
-- Mit dem App-Designer **PowerApps Studio** können Sie Canvas-Apps erstellen. Das Erstellen von Apps mit dem App-Designer ist vergleichbar mit dem Erstellen einer Foliengruppe in Microsoft PowerPoint. Weitere Informationen: [Generieren einer App aus Daten](/powerapps/maker/canvas-apps/data-platform-create-app)  
+- **Powerapps Studio** ist der APP-Designer, der zum Entwickeln von Canvas-Apps verwendet wird. Das Erstellen von Apps mit dem App-Designer ist vergleichbar mit dem Erstellen einer Foliengruppe in Microsoft PowerPoint. Weitere Informationen: [Generieren einer App aus Daten](/powerapps/maker/canvas-apps/data-platform-create-app)  
 
 - Mit dem **App-Designer** für modellgesteuerte Apps können Sie die Siteübersicht definieren und Komponenten für eine modellgesteuerte App hinzufügen. Weitere Informationen finden [Sie unter Entwerfen Modell gesteuerte Apps mithilfe des App-Designers](maker/model-driven-apps/design-custom-business-apps-using-app-designer.md) .
 
-## <a name="powerapps-for-app-users"></a>PowerApps für App-Benutzer
+## <a name="power-apps-for-app-users"></a>Powerapps für App-Benutzer
 
 Sie können die Apps, die Sie erstellt haben oder die jemand erstellt und für Sie freigegeben hat, im Browser oder auf einem mobilen Gerät (Smartphone oder Tablet) ausführen. Weitere Informationen: [Suchen und Ausführen von apps](user/index.md)
 
-## <a name="powerapps-for-admins"></a>PowerApps für Administratoren
+## <a name="power-apps-for-admins"></a>Powerapps für Administratoren
 
-PowerApps-Administratoren haben folgende Möglichkeiten:
+Powerapps-Administratoren können Folgendes verwenden:
 
-- Über das **PowerApps Admin Center** ([admin.powerapps.com](https://admin.powerapps.com)) können Umgebungen, Benutzer, Rollen und DLP-Richtlinien erstellt und verwaltet werden. 
+- Das **powerapps Admin Center** ([Admin.powerapps.com](https://admin.powerapps.com)) zum Erstellen und Verwalten von Umgebungen, Benutzern, Rollen und Richtlinien zur Verhinderung von Datenverlust. 
 
-- **Power Platform Admin Center** ([Admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) zum Verwalten von Umgebungen, zum erhalten von echtzeitempfehlungen und zur Unterstützung von powerapps und zur Energie Automatisierung sowie zum Anzeigen von Common Data Service Analytics. 
+- **Power Platform Admin Center** ([Admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) zum Verwalten von Umgebungen, zum erhalten von echtzeitempfehlungen und zur Unterstützung von Power apps und zur Energie Automatisierung sowie zum Anzeigen von Common Data Service Analytics. 
 
-Weitere Informationen finden Sie unter [Verwalten von powerapps](/power-platform/admin/admin-guide)
+Weitere Informationen finden Sie unter [Verwalten von powerapps](/power-platform/admin/admin-guide) .
 
-## <a name="powerapps-for-developers"></a>PowerApps für Entwickler
+## <a name="power-apps-for-developers"></a>Powerapps für Entwickler
 
 Entwickler sind App-Ersteller, die durch Schreiben von Code das Erstellen und Anpassen von Geschäfts-Apps erweitern können. Entwickler verwenden Code, um Daten und Metadaten zu erstellen, serverseitige Logik mithilfe von Azure-Funktionen, Plug-Ins und Workflowerweiterungen anzuwenden, clientseitige Logik mithilfe von JavaScript anzuwenden, in externe Daten mithilfe von virtuellen Entitäten und Webhooks zu integrieren, benutzerdefinierte Connectors zu erstellen und Apps in Ihre Websiteoberflächen für integrierte Lösungen einzubetten. Weitere Informationen: [powerapps für Entwickler](/powerapps/#pivot=home&panel=developer)
 
-## <a name="powerapps-and-dynamics-365"></a>PowerApps und Dynamics 365
+## <a name="power-apps-and-dynamics-365"></a>Powerapps und Dynamics 365
 
-Dynamics 365-Anwendungen wie Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing verwenden auch die zugrunde liegende Datenplattform (Common Data Service), die von powerapps zum Speichern und Sichern von Daten verwendet wird. Dadurch können Sie Apps mit PowerApps und Common Data Service direkt mit Ihren wichtigsten Unternehmensdaten erstellen, die bereits in Dynamics 365 verwendet werden, ohne diese integrieren zu müssen. Weitere Informationen: [Dynamics 365 und Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-common-data-service)
+Dynamics 365-Anwendungen wie Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing verwenden auch die zugrunde liegende Datenplattform (Common Data Service), die von Power Apps zum Speichern und Sichern von Daten verwendet wird. Dies ermöglicht Ihnen das Erstellen von apps mithilfe von powerapps und Common Data Service direkt für Ihre Kerngeschäfts Daten, die bereits in Dynamics 365 verwendet werden, ohne dass eine Integration erforderlich ist. Weitere Informationen: [Dynamics 365 und Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-common-data-service)
 
-## <a name="try-powerapps-for-free"></a>PowerApps kostenlos ausprobieren
+## <a name="try-power-apps-for-free"></a>Powerapps kostenlos testen
 
-Sie können PowerApps kostenlos testen, indem Sie sich für eine [30-Tage-Testversion](maker/signup-for-powerapps.md) oder für [Communityplan](maker/dev-community-plan.md) registrieren.
+Sie können powerapps kostenlos testen, indem Sie sich entweder für eine [30-tägige Testversion](maker/signup-for-powerapps.md) oder einen [Community-Plan](maker/dev-community-plan.md)registrieren.
+
+## <a name="purchase-power-apps"></a>Erwerben von powerapps
+
+Wenn Sie sich für den Erwerb von powerapps entschieden haben, finden Sie hier ausführliche Informationen: [erwerben von powerapps](/power-platform/admin/signup-for-powerapps-admin).

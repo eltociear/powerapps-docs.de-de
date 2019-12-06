@@ -1,6 +1,6 @@
 ---
 title: Erstellen eines Berichts mithilfe des Berichts-Assistenten | Microsoft-Dokumentation
-description: Erstellen eines Berichts mithilfe des Berichts-Assistenten in powerapps
+description: Erstellen eines Berichts mithilfe des Berichts-Assistenten in Power apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0f953c44d81742baca39058cd68180ca63833eb6
-ms.sourcegitcommit: e9671e018c1ee4b640528915350a367758991b6a
+ms.openlocfilehash: 8c7bde8d3aa5406a7ddcc5ecb2df4c2c7db7051e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67420281"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733272"
 ---
 # <a name="create-a-report-using-the-report-wizard"></a>Erstellen eines Berichts mithilfe des Berichts-Assistenten
 
@@ -30,13 +30,13 @@ Verwenden Sie den Berichts-Assistenten, um Berichte mit Diagrammen und Tabellen 
 
 Alle Berichte, die mit dem Berichts-Assistenten erstellt werden, sind Abruf basierte Berichte. Beachten Sie, dass alle mit dem Berichts-Assistenten generierten Berichte im Querformat gedruckt werden.
 
-## <a name="create-a-new-report"></a>Erstellen eines neuen Berichts
+## <a name="create-a-new-report"></a>Neuen Bericht erstellen
 
 1. Wählen Sie im linken Navigationsbereich den Bereich Berichte aus.  
 2. Klicken Sie in der Befehlsleiste auf **neu**.
 
     > [!div class="mx-imgBorder"]
-    > ![Erstellen eines neuen Berichts](media/newreport.png "Erstellen eines neuen Berichts")
+    > ![Erstellen eines neuen Berichts](media/newreport.png "Neuen Bericht erstellen")
   
 3. Ein **Bericht:** der Bildschirm neuer Bericht wird angezeigt. Überlassen Sie für **Berichtstyp** die Standardauswahl, **melden** Sie den Bericht, und wählen Sie die Schaltfläche **Berichts-Assistent** aus. 
 
@@ -78,7 +78,7 @@ Alle Berichte, die mit dem Berichts-Assistenten erstellt werden, sind Abruf basi
     > [!div class="mx-imgBorder"]
     > ![Spalten Bildschirm hinzufügen](media/report_wizard_7.png "Spalten Bildschirm hinzufügen")
   
-10. Wiederholen Sie den vorherigen Schritt für alle zusätzlichen Spalten, die Sie hinzufügen möchten. Wenn Sie den Vorgang abgeschlossen haben, können Sie auf dem Bildschirm zum Anordnen **von Feldern** auf weiter **gehen.**
+10. Wiederholen Sie den vorherigen Schritt für alle zusätzlichen Spalten, die Sie hinzufügen möchten. Wenn Sie den Vorgang abgeschlossen haben, können Sie auf dem Bildschirm zum Anordnen **von Feldern** **auf weiter gehen.**
  
     > [!div class="mx-imgBorder"]
     > ![weiteren Spalten Bildschirm hinzufügen](media/report_wizard_8.png "Weiteren Spalten Bildschirm hinzufügen")

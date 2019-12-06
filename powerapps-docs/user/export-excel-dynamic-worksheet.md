@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 804deaf9f12d4c73abbfd8f414f27307fe5aa7d6
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 99aa4fb38311d51237abba2c56d69e9845ea280f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63318753"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733245"
 ---
 # <a name="export-to-an-excel-dynamic-worksheet"></a>Exportieren in ein dynamisches Excel-Arbeitsblatt
 
@@ -45,7 +45,7 @@ Sie können Daten nicht für alle Daten Satz Typen in ein dynamisches Arbeitsbla
    > 
    >    1. Öffnen Sie Excel, und wechseln Sie zu **Datei** > **Optionen** > **Trust Center** **Einstellungen Center Einstellungen** > **geschützte Ansicht**.  
    >    2. Löschen Sie in der **geschützten Ansicht**alle drei Elemente.  
-   >    3. Wählen Sie **OK** > **aus.**  
+   >    3. Klicken Sie auf **OK** > **OK**.  
    >     
    >    Es wird weiterhin dringend empfohlen, die Datendatei zu speichern und dann zu öffnen, anstatt die geschützte Ansicht zu deaktivieren, was möglicherweise zu einem Risiko für Ihren Computer wird.  
   
@@ -56,7 +56,7 @@ Sie können Daten nicht für alle Daten Satz Typen in ein dynamisches Arbeitsbla
 7. Wählen Sie zum Aktualisieren der Daten in der Datei auf der Registerkarte **Daten** in **powerapps die Option aktualisieren aus**.  
   
    > [!NOTE]
-   > Wenn Sie eine Telefonnummer haben, die mit **+** oder **–** (z. b. + 1-123-456-7890) beginnt, wird das Feld Telefonnummer beim Aktualisieren des dynamischen Arbeitsblatts nicht ordnungsgemäß angezeigt.   
+   > Wenn Sie eine Telefonnummer haben, die mit **+** oder **–** beginnt (z. b. + 1-123-456-7890), wird das Feld für die Telefonnummer beim Aktualisieren des dynamischen Arbeitsblatts nicht ordnungsgemäß angezeigt.   
    >
    > Um das Problem zu vermeiden, verwenden Sie ein Leerzeichen oder Klammern **()** wie folgt: + 1 123-456-7890 oder + 1 (123)-456-7890.  
   
@@ -64,7 +64,7 @@ Sie können Daten nicht für alle Daten Satz Typen in ein dynamisches Arbeitsbla
   
 - Sie können eine dynamische Excel-Datei per e-Mail senden oder als freigegebene Datei speichern, wenn sich die Empfänger in derselben Domäne befinden. Wenn Empfänger die dynamische Datei öffnen, sehen Sie, dass Sie über die Berechtigung zum Anzeigen von Daten in der App verfügen, sodass sich die Daten, die Sie sehen, möglicherweise von der Anzeige unterscheiden.  
   
-- Einige System Sichten, wie z. b. Konten: Keine Kampagnenaktivitäten in den letzten 3 Monaten können nur in ein statisches Excel-Arbeitsblatt exportiert werden.  
+- Einige System Sichten, wie z. b. Konten: keine Kampagnenaktivitäten in den letzten drei Monaten, können nur in ein statisches Excel-Arbeitsblatt exportiert werden.  
   
 - In powerapps werden Währungswerte als Zahlen nach Excel exportiert. Wenn Sie die Daten nach Abschluss des Exports als Währung formatieren möchten, lesen Sie das Excel-Hilfethema "Anzeigen von Zahlen als Währung".
 
