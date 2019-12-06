@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Berichten | Microsoft-Dokumentation
-description: Arbeiten mit Berichten in powerapps
+description: Arbeiten mit Berichten in Power apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -16,18 +16,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f4647c565b2ecaf469c3b74873ba157ea27a1fd4
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: c16a589ddcd1e7beb0be1ce28bc9f6df6a8c8b83
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67457046"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733301"
 ---
 # <a name="work-with-reports"></a>Arbeiten mit Berichten
 
 Mithilfe von Berichten können Sie Ihren Fortschritt in Bezug auf Ihre Geschäftsziele überwachen Sie können auch Trends nachverfolgen, was Ihnen einen Vorteil gegenüber ihren Mitbewerbern bietet.  
 
-Weitere Informationen zum organisieren und Erstellen von Berichten finden Sie unter: [Anpassen und organisieren von Berichten](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
+Weitere Informationen zum organisieren und Erstellen von Berichten finden Sie unter: [anpassen und organisieren von Berichten](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
   
 ## <a name="run-a-report"></a>Ausführen eines Berichts  
   
@@ -61,7 +61,7 @@ Weitere Informationen zum organisieren und Erstellen von Berichten finden Sie un
    > [!div class="mx-imgBorder"]
    > ![Benutzer zum Freigeben eines Berichts hinzufügen](media/report-share2.png "Benutzer zu Freigabe Bericht hinzufügen")
   
-7. Wählen Sie im Dialogfeld **Bericht freigeben** den gewünschten Zugriffstyp aus. Folgende Berechtigungen sind verfügbar: Lesen, schreiben, löschen, anfügen, zuweisen oder freigeben. Dadurch wird der Benutzer oder Team Daten Satz dem Feld **ausgewählte Datensätze** hinzugefügt.
+7. Wählen Sie im Dialogfeld **Bericht freigeben** den gewünschten Zugriffstyp aus. Folgende Berechtigungen sind verfügbar: lesen, schreiben, löschen, anfügen, zuweisen oder freigeben. Dadurch wird der Benutzer oder Team Daten Satz dem Feld **ausgewählte Datensätze** hinzugefügt.
 
    > [!div class="mx-imgBorder"]
    > ![Freigabe Zugriff auswählen](media/report-share3.png "Freigabe Zugriff auswählen")

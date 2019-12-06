@@ -15,20 +15,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 729d852227b31a6a162fdf94644d1e08c1a401ee
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ad34f7daacf07ebc8ecde2a8ce29c163d0c28e95
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543433"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733339"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>Ausführen einer Canvas-App auf einem mobilen Gerät
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Thema erfahren Sie, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen können. Apps, die auf mobilen Geräten ausgeführt werden, können auch die Funktionen des Geräts nutzen, z.B. Ortungsdienste und die Kamera.
 
-Wenn Sie noch nicht für PowerApps angemeldet sind, [melden Sie sich kostenlos an](https://make.powerapps.com/signup?redirect=marketing&email=), bevor Sie mit diesem Verfahren beginnen, und laden Sie dann PowerApps aus dem [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) oder über [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) auf ein iPhone, iPad oder Android-Gerät mit einem [unterstützten Betriebssystem](../maker/canvas-apps/limits-and-config.md) herunter. Überprüfen Sie außerdem, ob Sie Zugriff auf eine Canvas-App haben, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
+Wenn Sie nicht für Power apps registriert sind, [registrieren](https://make.powerapps.com/signup?redirect=marketing&email=) Sie sich, bevor Sie beginnen, und laden Sie dann powerapps aus dem [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) herunter oder [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) auf ein iPhone-, iPad-oder Android-Gerät, auf dem ein [unterstütztes Betriebssystem](../maker/canvas-apps/limits-and-config.md)ausgeführt wird. Überprüfen Sie außerdem, ob Sie Zugriff auf eine Canvas-App haben, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
 
-## <a name="open-powerapps-and-sign-in"></a>Öffnen von PowerApps und Anmelden
-Öffnen Sie PowerApps auf Ihrem mobilen Gerät, und melden Sie sich mit Ihren Azure Active Directory-Anmeldeinformationen an.
+## <a name="open-power-apps-and-sign-in"></a>Öffnen Sie powerapps, und melden Sie sich an
+Öffnen Sie powerapps auf Ihrem mobilen Gerät, und melden Sie sich mit ihren Azure Active Directory Anmelde Informationen an.
 
 ![Angemeldeter Benutzer](./media/run-app-client/run-client-login.png)
 
@@ -51,7 +51,7 @@ Die folgenden Filter sind verfügbar:
 
     ![Als Favorit markieren](./media/run-app-client/favorite.png)
 
-Nachdem Sie Ihre Apps gefiltert haben, können Sie die gefilterte Liste entweder nach dem Datum, an dem die Apps das letzte Mal geöffnet oder geändert wurden, oder nach Namen sortieren. Diese Einstellungen werden beibehalten, wenn Sie PowerApps schließen und erneut öffnen.
+Nachdem Sie Ihre Apps gefiltert haben, können Sie die gefilterte Liste entweder nach dem Datum, an dem die Apps das letzte Mal geöffnet oder geändert wurden, oder nach Namen sortieren. Diese Einstellungen werden beibehalten, wenn Sie powerapps schließen und erneut öffnen.
 
 ![Menü zur Sortierung](./media/run-app-client/sort-menu.png)
 
@@ -64,7 +64,7 @@ Wenn Sie Ihre Apps gefiltert haben, wird die gefilterte Liste durchsucht.
 ## <a name="run-an-app"></a>Ausführen einer App
 Wenn Sie auf die App-Kachel tippen, können Sie eine Canvas-App auf einem mobilen Gerät ausführen. Wenn ein anderer Benutzer eine Canvas-App erstellt und diese per E-Mail für Sie freigibt, können Sie die App ausführen, indem Sie auf den Link tippen.
 
-Wenn Sie PowerApps zum ersten Mal verwenden, veranschaulicht eine Anzeige die Wischgeste zum Schließen von PowerApps.
+Wenn Sie powerapps zum ersten Mal verwenden, wird in einem Bildschirm die Schwenkbewegung zum Schließen der App angezeigt.
 
 ![Starten einer App](./media/run-app-client/run-client-app.png)
 
