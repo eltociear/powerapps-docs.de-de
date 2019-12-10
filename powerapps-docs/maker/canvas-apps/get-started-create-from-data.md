@@ -1,28 +1,28 @@
 ---
-title: Generieren einer Canvas-App aus Excel | Microsoft-Dokumentation
-description: Verwenden von powerapps zum automatischen Generieren einer Canvas-App mithilfe einer Excel-Datei, die in einem cloudspeicherkonto gespeichert ist
+title: Erstellen einer Canvas-App aus Excel | Microsoft-Dokumentation
+description: Verwenden von powerapps zum automatischen Erstellen einer Canvas-App mithilfe einer Excel-Datei, die in einem cloudspeicherkonto gespeichert ist
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/14/2019
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f53f46562c401e978975da35c81e2ecb77a6673e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 2199d94938e51154d0f616f424f674c408277b52
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729739"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959424"
 ---
-# <a name="generate-a-canvas-app-from-excel-in-power-apps"></a>Generieren einer Canvas-App aus Excel in Power apps
+# <a name="create-a-canvas-app-from-excel-in-power-apps"></a>Erstellen einer Canvas-App aus Excel in Power apps
 
-In diesem Thema generieren Sie automatisch Ihre erste Canvas-app in Power Apps mithilfe von Daten aus einer Excel-Tabelle. Sie wählen eine Excel-Datei aus, generieren eine App und führen die generierte App dann aus. Jede generierte App enthält Bildschirme zum Durchsuchen von Datensätzen, Anzeigen von Details der Datensätze sowie zum Erstellen oder Aktualisieren von Datensätzen. Indem Sie eine App generieren, können Sie mithilfe von Excel-Daten schnell eine funktionierende App erstellen. Diese können Sie anschließend an Ihre Anforderungen anpassen. 
+In diesem Thema erstellen Sie Ihre erste Canvas-app in Power Apps mithilfe von Daten aus einer Excel-Tabelle. Wählen Sie eine Excel-Datei aus, erstellen Sie eine APP, und führen Sie dann die APP aus, die Sie erstellt haben. Jede erstellte App umfasst Bildschirme zum Durchsuchen von Datensätzen, Anzeigen von Daten Satz Details und erstellen oder Aktualisieren von Datensätzen. Indem Sie eine App generieren, können Sie mithilfe von Excel-Daten schnell eine funktionierende App erstellen. Diese können Sie anschließend an Ihre Anforderungen anpassen. 
 
 Die Excel-Datei muss sich in einem Cloudspeicherkonto (z.B. OneDrive, Google Drive oder Dropbox) befinden. In diesem Artikel wird „OneDrive for Business“ verwendet.
 
@@ -35,7 +35,7 @@ Laden Sie die Datei [Flooring Estimates](https://az787822.vo.msecnd.net/document
 > [!IMPORTANT]
 > Sie können eine eigene Excel-Datei verwenden, dafür müssen die Daten jedoch als Tabelle formatiert sein. Weitere Informationen finden Sie unter [Format a table (Formatieren einer Tabelle)](how-to-excel-tips.md). 
 
-## <a name="generate-the-app"></a>Generieren der App
+## <a name="create-the-app"></a>App erstellen
 
 1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an.
 
@@ -69,7 +69,7 @@ Laden Sie die Datei [Flooring Estimates](https://az787822.vo.msecnd.net/document
 
     Geben Sie z. b. **Honey** ein, oder fügen Sie ihn ein, um den einzigen Datensatz anzuzeigen, für den diese Zeichenfolge im Produktnamen, der Kategorie oder der Übersicht angezeigt wird.
 
-    ![Filter Beispiel](./media/get-started-create-from-data/filter-example.png)
+    ![Filterbeispiel](./media/get-started-create-from-data/filter-example.png)
 
 1. Einen Datensatz hinzufügen:
 
@@ -87,7 +87,7 @@ Laden Sie die Datei [Flooring Estimates](https://az787822.vo.msecnd.net/document
 
         ![Pfeil „Weiter“](./media/get-started-create-from-data/next-arrow.png)
 
-    1. Wählen Sie das Stift Symbol aus.
+    1. Klicken Sie auf das Stiftsymbol.
 
         ![Stiftsymbol](./media/get-started-create-from-data/pencil-icon.png)
 

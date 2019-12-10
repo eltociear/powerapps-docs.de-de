@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/05/2018
+ms.date: 12/05/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 811f58243413c4de58e4cdb8868d838349248991
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9c4796a652c6e42609010162794dcc60a6466864
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732373"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959493"
 ---
 # <a name="transform-your-infopath-form-to-power-apps"></a>Umwandeln Ihres InfoPath-Formulars in powerapps
 
@@ -76,7 +76,7 @@ Führen Sie die folgenden Schritte aus, um loszulegen:
 
 Mit powerapps können Sie eine APP erstellen, die Sie anpassen können.
 
-Starten Sie die Erstellung Ihrer ersten App mit einer einfachen benutzerdefinierten Liste, die nur einige wenige Felder verschiedener Typen enthält. So können Sie eine solide Grundlage erstellen und behalten den Überblick. Machen Sie sich keine Gedanken, Sie sind im Handumdrehen ein Profi und bereit, komplexe Apps in Angriff zu nehmen. Hilfreiche Informationen zum Erstellen Ihrer ersten App finden Sie in dieser [Dokumentation](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online) und in diesem [Communityvideo](https://youtu.be/BnYe_7fpZRM). In den folgenden Beispielen werden allgemeine InfoPath-Aufgaben und deren Aufgaben in Power apps angezeigt. Jede davon baut auf einer einfachen SharePoint-Listen-App auf.
+Starten Sie die Erstellung Ihrer ersten App mit einer einfachen benutzerdefinierten Liste, die nur einige wenige Felder verschiedener Typen enthält. So können Sie eine solide Grundlage erstellen und behalten den Überblick. Machen Sie sich keine Gedanken, Sie sind im Handumdrehen ein Profi und bereit, komplexe Apps in Angriff zu nehmen. Hilfreiche Informationen zum Erstellen Ihrer ersten App finden Sie in dieser [Dokumentation](app-from-sharepoint.md#create-an-app-from-within-sharepoint-online) und in diesem [Communityvideo](https://youtu.be/BnYe_7fpZRM). In den folgenden Beispielen werden allgemeine InfoPath-Aufgaben und deren Aufgaben in Power apps angezeigt. Jede davon baut auf einer einfachen SharePoint-Listen-App auf.
 
 ## <a name="how-do-you-do-that-with-power-apps"></a>Wie gehen Sie mit Power apps vor?
 

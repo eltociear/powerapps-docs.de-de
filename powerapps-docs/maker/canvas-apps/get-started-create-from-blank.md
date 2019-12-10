@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/26/2019
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e5b961fb665ad0706d5b3c2c272a95dd4530c1d2
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 01bb3037e6223d41fd7da044b49a51abc57762de
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709477"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959516"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Erstellen einer Canvas-App anhand von Excel-Daten
 
-Erstellen Sie Ihre eigene Canvas-App auf Grundlage von Excel-Daten im Tabellenformat, und fügen Sie auf Wunsch Daten aus anderen Quellen hinzu. Mithilfe dieses Tutorials können Sie eine App erstellen, die zwei Bildschirme enthält. Auf einem Bildschirm können Benutzer eine Reihe von Datensätzen durchsuchen. Auf dem anderen Bildschirm können Benutzer einen Datensatz erstellen, ein oder mehrere Felder in einem Datensatz aktualisieren oder einen vollständigen Datensatz löschen. Dieser Ansatz ist zeitaufwändiger als das [automatische Generieren einer App](get-started-create-from-data.md), aber App-Entwickler mit mehr Erfahrung können damit die beste App für ihre Anforderungen erstellen.
+Erstellen Sie Ihre eigene Canvas-App auf Grundlage von Excel-Daten im Tabellenformat, und fügen Sie auf Wunsch Daten aus anderen Quellen hinzu. Mithilfe dieses Tutorials können Sie eine App erstellen, die zwei Bildschirme enthält. Auf einem Bildschirm können Benutzer eine Reihe von Datensätzen durchsuchen. Auf dem anderen Bildschirm können Benutzer einen Datensatz erstellen, ein oder mehrere Felder in einem Datensatz aktualisieren oder einen vollständigen Datensatz löschen. Diese Vorgehensweise nimmt mehr Zeit in Anspruch als das [Erstellen einer einfachen App aus Excel](get-started-create-from-data.md) , aber App-Entwickler, die mehr Möglichkeiten haben, können Sie verwenden, um die beste APP für Ihre Anforderungen zu erstellen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -30,7 +30,7 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
 1. Kopieren Sie diese Daten, und fügen Sie sie in eine Excel-Datei ein.
 
-    | StartDay | StartTime | Volunteer | Mindestsicherung |
+    | StartDay | StartTime | Volunteer | Sicherung |
     | --- | --- | --- | --- |
     | Saturday |10am-noon |Vasquez |Kumashiro |
     | Saturday |noon-2pm |Ice |Singhal |

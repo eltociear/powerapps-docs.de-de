@@ -1,30 +1,30 @@
 ---
-title: Generieren einer Canvas-App aus einer SharePoint-Liste | Microsoft-Dokumentation
-description: In powerapps automatisch eine Canvas-App generieren, um Daten in einer SharePoint-Liste zu verwalten
+title: Erstellen einer Canvas-App aus einer SharePoint-Liste | Microsoft-Dokumentation
+description: Erstellen Sie in powerapps automatisch eine Canvas-APP, um Daten in einer SharePoint-Liste zu verwalten.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 10/24/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cda7635798b26b1936a44d7947ab1dc7c36a25c8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 346bb27911549715b6c4fdc40f64552c524527be
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724195"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959447"
 ---
-# <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Generieren einer Canvas-app in powerapps aus einer SharePoint-Liste
+# <a name="create-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Erstellen einer Canvas-app in powerapps aus einer SharePoint-Liste
 
-In diesem Thema verwenden Sie powerapps, um automatisch eine Canvas-App auf der Grundlage von Elementen in einer SharePoint-Liste zu generieren. Sie können die app in powerapps oder SharePoint Online generieren. In powerapps können Sie die App basierend auf einer Liste auf einer lokalen SharePoint-Website generieren, wenn Sie über ein Daten Gateway eine [Verbindung damit herstellen](connections/connection-sharepoint-online.md#create-a-connection) .
+In diesem Thema verwenden Sie powerapps, um eine Canvas-App auf der Grundlage von Elementen in einer SharePoint-Liste zu erstellen. Sie können die app in powerapps oder SharePoint Online erstellen. In powerapps können Sie die App basierend auf einer Liste auf einer lokalen SharePoint-Website erstellen, wenn Sie über ein Daten Gateway eine [Verbindung damit herstellen](connections/connection-sharepoint-online.md#create-a-connection) .
 
-Die Apps, die Sie generieren, enthält drei Bildschirme:
+Die von Ihnen erstellte app enthält drei Bildschirme:
 
 - Im Bildschirm zum Durchsuchen können Sie durch alle Elemente der Liste scrollen.
 - Im Bildschirm mit den Details können Sie alle Informationen zu einem einzelnen Element der Liste anzeigen.
@@ -40,7 +40,7 @@ Das Grundprinzip beim Erstellen einer App ändert sich nicht, auch wenn Sie eine
 > [!IMPORTANT]
 > Power Apps unterstützt nicht alle Typen von SharePoint-Daten. Weitere Informationen finden Sie unter [Known issues (Bekannte Probleme)](connections/connection-sharepoint-online.md#known-issues).
 
-## <a name="generate-an-app-from-within-power-apps"></a>Generieren einer APP in powerapps
+## <a name="create-an-app-from-within-power-apps"></a>Erstellen einer APP innerhalb von powerapps
 
 1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an.
 
@@ -68,7 +68,7 @@ Das Grundprinzip beim Erstellen einer App ändert sich nicht, auch wenn Sie eine
 
     Sie sollten möglicherweise Änderungen vornehmen, bevor Sie diese App verwenden oder für andere freigeben. Es wird empfohlen, dass Sie Ihre bisherige Arbeit speichern, bevor Sie fortfahren, indem Sie STRG+S drücken. Geben Sie Ihrer App einen Namen, und klicken Sie dann auf **Speichern**.
 
-## <a name="generate-an-app-from-within-sharepoint-online"></a>Generieren einer App aus SharePoint Online
+## <a name="create-an-app-from-within-sharepoint-online"></a>Erstellen einer App aus SharePoint Online
 
 Wenn Sie eine App über die SharePoint Online-Befehlszeile aus einer benutzerdefinierten Liste erstellen, ist die App eine Ansicht dieser Liste. Sie können die App außer im Webbrowser auch auf einem iOS- oder Android-Gerät ausführen.
 
@@ -80,7 +80,7 @@ Wenn Sie eine App über die SharePoint Online-Befehlszeile aus einer benutzerdef
 
     ![Benennen der App](./media/app-from-sharepoint/app-name.png)
 
-    Eine neue Registerkarte wird im Webbrowser angezeigt und zeigt die App, die Sie basierend auf Ihrer SharePoint-Liste automatisch generiert haben. Die APP wird in powerapps Studio angezeigt, wo Sie Sie anpassen können.
+    Im Webbrowser wird eine neue Registerkarte angezeigt, auf der die App angezeigt wird, die Sie basierend auf Ihrer SharePoint-Liste erstellt haben. Die APP wird in powerapps Studio angezeigt, wo Sie Sie anpassen können.
 
     ![Standard-App](./media/app-from-sharepoint/default-app.png)
 
@@ -99,7 +99,7 @@ Wenn Sie eine App über die SharePoint Online-Befehlszeile aus einer benutzerdef
 > Apps, die aus der SharePoint-Liste erstellt wurden, werden zurzeit nicht in den mobilen Power apps angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
-In diesem Thema haben Sie eine App erstellt, mit der Daten in einer SharePoint-Liste verwaltet werden können. Generieren Sie als Nächstes eine App über eine komplexere Liste, und passen Sie diese App anschließend angefangen bei dem Bildschirm zum Durchsuchen an Ihre Bedürfnisse an.
+In diesem Thema haben Sie eine App erstellt, mit der Daten in einer SharePoint-Liste verwaltet werden können. Erstellen Sie im nächsten Schritt eine APP aus einer komplexeren Liste, und passen Sie die APP (beginnend mit dem Bildschirm zum Durchsuchen) an, damit Sie Ihren Anforderungen besser entspricht.
 
 > [!div class="nextstepaction"]
 > [Anpassen des Standardbildschirms zum Durchsuchen](customize-layout-sharepoint.md)
