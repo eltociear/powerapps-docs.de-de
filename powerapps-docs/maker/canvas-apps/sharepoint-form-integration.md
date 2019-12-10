@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732380"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Grundlegendes zur Integration von SharePoint-Formularen
 Sie können jetzt problemlos [alle SharePoint-Listen Formulare](customize-list-form.md) in Power Apps anpassen. In diesem Artikel wird die Funktionsweise dieser Formulare erläutert und beschrieben, wie Sie sie weiter anpassen können.
@@ -37,11 +38,11 @@ Das generierte Standardformular besteht aus den folgenden Steuerelementen und de
 
     * **Item** – Das in der Liste ausgewählte Element. Dies wird bei der Arbeit in Power apps Studio in der Liste auf das erste Element () festgelegt.
 
-        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*YourListName*'),SharePointIntegration.Selected)**
+        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected);First('*YourListName*');SharePointIntegration.Selected)**
 
     * **OnSuccess** – Sobald das Element erfolgreich erstellt oder gespeichert wurde, wird das Formular zurückgesetzt und von SharePoint ausgeblendet.
 
-        **ResetForm(SharePointForm1); RequestHide()**
+        **ResetForm(SharePointForm1);; RequestHide()**
 
 * **SharePointIntegration** : das Steuerelement, das für die Kommunikation von Benutzeraktionen zwischen SharePoint und powerapps verantwortlich ist.
 

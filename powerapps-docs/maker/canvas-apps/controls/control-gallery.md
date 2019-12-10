@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74709388"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Katalog-Steuerelement in Canvas-apps
 
@@ -92,7 +93,7 @@ Wenn ein Benutzer einen Bildlauf zum **flexiblen Height** Gallery-Steuerelement 
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
+[**Filter**( *DataSource*; *Formula* )](../functions/function-filter-lookup.md)
 
 [ **Reset**( *Control* )](../functions/function-reset.md) : setzt Ihren Katalog auf den ursprünglichen Zustand zurück. Der Anfangszustand schließt den Bildlauf zum ersten Element ein und wählt das erste Element oder den Standardwert aus, falls vorhanden. 
 

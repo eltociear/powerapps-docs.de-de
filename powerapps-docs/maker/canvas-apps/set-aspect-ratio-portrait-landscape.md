@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732979"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Ändern der Bildschirmgröße und der Ausrichtung einer Canvas-app in Power apps
 Passen Sie eine Canvas-App an, indem Sie Bildschirmgröße und -ausrichtung ändern.
@@ -47,7 +48,7 @@ Erstellen Sie eine APP, oder öffnen Sie eine APP zum Bearbeiten, und wählen Si
 
     Wenn Sie diese Einstellung deaktivieren, wird die APP an das Seitenverhältnis des Geräts angepasst, auf dem es ausgeführt wird, und es wird der gesamte verfügbare Speicherplatz belegt. Die APP wird nicht skaliert, und daher können Bildschirme Weitere Informationen anzeigen.
 
-    Wenn diese Einstellung deaktiviert ist, wird das **Seitenverhältnis für Sperren** automatisch deaktiviert und deaktiviert. Außerdem ist die **Width** -Eigenschaft aller Bildschirme auf `Max(App.Width, App.DesignWidth)`festgelegt, und Ihre **height** -Eigenschaft wird auf `Max(App.Height, App.DesignHeight)` festgelegt, sodass die Dimensionen des Fensters, in dem die app ausgeführt wird, nachverfolgt werden. Mit dieser Änderung können Sie Apps erstellen, die auf verschiedene Geräte und Fenster Dimensionen reagieren. Weitere Informationen: [Erstellen eines reaktionsfähigen Layouts](create-responsive-layout.md)
+    Wenn diese Einstellung deaktiviert ist, wird das **Seitenverhältnis für Sperren** automatisch deaktiviert und deaktiviert. Außerdem ist die **Width** -Eigenschaft aller Bildschirme auf `Max(App.Width; App.DesignWidth)`festgelegt, und Ihre **height** -Eigenschaft wird auf `Max(App.Height; App.DesignHeight)` festgelegt, sodass die Dimensionen des Fensters, in dem die app ausgeführt wird, nachverfolgt werden. Mit dieser Änderung können Sie Apps erstellen, die auf verschiedene Geräte und Fenster Dimensionen reagieren. Weitere Informationen: [Erstellen eines reaktionsfähigen Layouts](create-responsive-layout.md)
 
 1. Geben Sie unter **Seitenverhältnis sperren** entweder **Ein** oder **Aus** an.
 

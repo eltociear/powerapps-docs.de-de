@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732668"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>Referenzinformationen zur Vorlage "Kalender Bildschirm" für Canvas-apps
 
@@ -55,15 +56,15 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 
    Dieser Teil der Formel wird nur beim ersten Mal ausgeführt, wenn der Benutzer nach dem Öffnen der App eine Option in der Dropdown Liste auswählt:
 
-    ```powerapps-dot
-    If( IsBlank( _userDomain ),
-        UpdateContext( {_showLoading: true} );
-        Set( _userDomain, Right( User().Email, Len( User().Email ) - Find( "@", User().Email ) ) );
-        Set( _dateSelected, Today() );
-        Set( _firstDayOfMonth, DateAdd( Today(), 1 - Day( Today() ), Days ) );  
-        Set( _firstDayInView, DateAdd( _firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 1), Days ) );
-        Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) )  
-    );
+    ```powerapps-comma
+    If( IsBlank( _userDomain );
+        UpdateContext( {_showLoading: true} );;
+        Set( _userDomain; Right( User().Email; Len( User().Email ) - Find( "@"; User().Email ) ) );;
+        Set( _dateSelected; Today() );;
+        Set( _firstDayOfMonth; DateAdd( Today(); 1 - Day( Today() ); Days ) );;  
+        Set( _firstDayInView; DateAdd( _firstDayOfMonth; -(Weekday(_firstDayOfMonth) - 1); Days ) );;
+        Set( _lastDayOfMonth; DateAdd( DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) )  
+    );;
     ```
 
     Der vorangehende Code definiert die folgenden Variablen:
@@ -76,28 +77,28 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 
    Die Funktionen nach der **if** -Funktion werden immer dann ausgeführt, wenn der Benutzer eine Option in der Kalender-Dropdown Liste auswählt (nicht nur beim ersten Öffnen der app durch den Benutzer):
 
-    ```powerapps-dot
-    Set( _calendarVisible, false );
-    UpdateContext( {_showLoading: true} );
-    Set( _myCalendar, dropdownCalendarSelection2.Selected );
-    Set( _minDate, 
-        DateAdd( _firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days )
-    );
-    Set(_maxDate, 
+    ```powerapps-comma
+    Set( _calendarVisible; false );;
+    UpdateContext( {_showLoading: true} );;
+    Set( _myCalendar; dropdownCalendarSelection2.Selected );;
+    Set( _minDate; 
+        DateAdd( _firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days )
+    );;
+    Set(_maxDate; 
         DateAdd(
-            DateAdd( _firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days ), 
-            40, 
+            DateAdd( _firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days ); 
+            40; 
             Days
         )
-    );
-    ClearCollect( MyCalendarEvents, 
-        'Office365'.GetEventsCalendarViewV2( _myCalendar.Name, 
-            Text( _minDate, UTC ), 
-            Text( _maxDate, UTC )
+    );;
+    ClearCollect( MyCalendarEvents; 
+        'Office365'.GetEventsCalendarViewV2( _myCalendar.Name; 
+            Text( _minDate; UTC ); 
+            Text( _maxDate; UTC )
         ).value
-    );
-    UpdateContext( {_showLoading: false} );
-    Set( _calendarVisible, true )
+    );;
+    UpdateContext( {_showLoading: false} );;
+    Set( _calendarVisible; true )
     ```
 
     Der vorangehende Code definiert diese Variablen und eine Sammlung:
@@ -117,11 +118,11 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 - Eigenschaft: **onselect**<br>
     Wert: vier **Set** -Funktionen, die den Kalender Katalog auf das heutige Datum zurücksetzen:
 
-    ```powerapps-dot
-    Set( _dateSelected, Today() );
-    Set( _firstDayOfMonth, DateAdd( Today(), 1 - Day( Today() ), Days) );
-    Set( _firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days));
-    Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) )
+    ```powerapps-comma
+    Set( _dateSelected; Today() );;
+    Set( _firstDayOfMonth; DateAdd( Today(); 1 - Day( Today() ); Days) );;
+    Set( _firstDayInView; DateAdd(_firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days));;
+    Set( _lastDayOfMonth; DateAdd( DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) )
     ```
 
     Der vorangehende Code setzt alle Datums Variablen zurück, die zum Anzeigen der richtigen Kalenderansicht erforderlich sind:
@@ -139,20 +140,20 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 
 - Eigenschaft: **onselect**<br>Wert: vier **Set** -Funktionen und eine **if** -Funktion, die den vorherigen Monat in der Kalender Galerie anzeigen:
 
-    ```powerapps-dot
-    Set( _firstDayOfMonth, DateAdd( _firstDayOfMonth, -1, Months ) );
-    Set( _firstDayInView, 
-        DateAdd( _firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days )
-    );
-    Set( _lastDayOfMonth, DateAdd(DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) );
-    If( _minDate > _firstDayOfMonth,
-        Collect( MyCalendarEvents,
-            'Office365'.GetEventsCalendarViewV2( _myCalendar.Name,
-                Text( _firstDayInView, UTC ), 
-                Text( DateAdd( _minDate, -1, Days ), UTC )
+    ```powerapps-comma
+    Set( _firstDayOfMonth; DateAdd( _firstDayOfMonth; -1; Months ) );;
+    Set( _firstDayInView; 
+        DateAdd( _firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days )
+    );;
+    Set( _lastDayOfMonth; DateAdd(DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) );;
+    If( _minDate > _firstDayOfMonth;
+        Collect( MyCalendarEvents;
+            'Office365'.GetEventsCalendarViewV2( _myCalendar.Name;
+                Text( _firstDayInView; UTC ); 
+                Text( DateAdd( _minDate; -1; Days ); UTC )
             ).value
-        );
-        Set( _minDate, _firstDayInView )
+        );;
+        Set( _minDate; _firstDayInView )
     )
     ```
 
@@ -174,19 +175,19 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 - Eigenschaft: **onselect**<br>
     Wert: vier **Set** -Funktionen und eine **if** -Funktion, die den nächsten Monat in der Kalender Galerie anzeigen:
 
-    ```powerapps-dot
-    Set( _firstDayOfMonth, DateAdd( _firstDayOfMonth, 1, Months ) );
-    Set( _firstDayInView, 
-        DateAdd( _firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days ) );
-    Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) );
-    If( _maxDate < _lastDayOfMonth,
-        Collect( MyCalendarEvents, 
-            'Office365'.GetEventsCalendarViewV2( _myCalendar.Name, 
-                Text( DateAdd( _maxDate, 1, Days ), UTC ), 
-                DateAdd( _firstDayInView, 40, Days )
+    ```powerapps-comma
+    Set( _firstDayOfMonth; DateAdd( _firstDayOfMonth; 1; Months ) );;
+    Set( _firstDayInView; 
+        DateAdd( _firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days ) );;
+    Set( _lastDayOfMonth; DateAdd( DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) );;
+    If( _maxDate < _lastDayOfMonth;
+        Collect( MyCalendarEvents; 
+            'Office365'.GetEventsCalendarViewV2( _myCalendar.Name; 
+                Text( DateAdd( _maxDate; 1; Days ); UTC ); 
+                DateAdd( _firstDayInView; 40; Days )
             ).value
-        );
-        Set( _maxDate, DateAdd( _firstDayInView, 40, Days) )    
+        );;
+        Set( _maxDate; DateAdd( _firstDayInView; 40; Days) )    
     )
     ```
 
@@ -206,8 +207,8 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 ![Monthdaygallery-Steuerelement](media/calendar-screen/calendar-month-gall.png)
 
 - Eigenschaft: **Elemente**<br>
-    Wert: `[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,
-    20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]`
+    Wert: `[0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;
+    20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35;36;37;38;39;40;41]`
   
   Der Satz von 0 bis 41 wird für die Elemente im Kalender Katalog verwendet, da in der Kalenderansicht im ungünstigsten Fall 42 vollständige Tage angezeigt werden müssen. Dies tritt auf, wenn der erste des Monats an einem Samstag und der letzte Monat an einem Sonntag auftritt. In diesem Fall zeigt der Kalender sechs Tage ab dem vorhergehenden Monat in der Zeile, die den ersten des Monats enthält, und sechs Tage des folgenden Monats in der Zeile mit dem letzten Monat an. Dies sind 42 eindeutige Werte, von denen 30 für den ausgewählten Monat sind.
 
@@ -221,26 +222,26 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 ![Monthdaygallery-Titel Steuerelement](media/calendar-screen/calendar-month-text.png)
 
 - Eigenschaft: **Text**<br>
-    Wert: `Day( DateAdd( _firstDayInView, ThisItem.Value, Days ) )`
+    Wert: `Day( DateAdd( _firstDayInView; ThisItem.Value; Days ) )`
 
     Beachten Sie, dass **\_firstdayinview** als ( **\_firstdayosmonth** -der Wert des Wochentags) + 1 definiert ist. Dies weist darauf hin, dass **\_firstdayinview** immer ein Sonntag ist, und **\_firstdayosmonth** immer in der ersten Zeile von **monthdaygallery**. Aufgrund dieser beiden Fakten ist **\_firstdayinview** immer in der ersten Zelle von **monthdaygallery**. **Thisitem. Value** ist die Nummer für diese Zelle in der Eigenschaft **monthdaygallery** . Wenn Sie **\_firstdayinview** als Ausgangspunkt nehmen, zeigt jede Zelle das Inkrement von **\_firstdayinview** + den entsprechenden Zellwert an.
 
 - Eigenschaft: **Ausfüllen**<br>
     Wert: eine **if** -Funktion:
 
-    ```powerapps-dot
-    If( DateAdd( _firstDayInView, ThisItem.Value ) = Today() && 
-                DateAdd( _firstDayInView, ThisItem.Value ) = _dateSelected, 
-            RGBA( 0, 0, 0, 0 ),
-        DateAdd( _firstDayInView, ThisItem.Value) = Today(), 
-            ColorFade( Subcircle.Fill, 0.67 ),
-        Abs( Title.Text - ThisItem.Value) > 10,
-            RGBA( 200, 200, 200, 0.3 ),
-        RGBA( 0, 0, 0, 0 )
+    ```powerapps-comma
+    If( DateAdd( _firstDayInView; ThisItem.Value ) = Today() && 
+                DateAdd( _firstDayInView; ThisItem.Value ) = _dateSelected; 
+            RGBA( 0; 0; 0; 0 );
+        DateAdd( _firstDayInView; ThisItem.Value) = Today(); 
+            ColorFade( Subcircle.Fill; 0,67 );
+        Abs( Title.Text - ThisItem.Value) > 10;
+            RGBA( 200; 200; 200; 0,3 );
+        RGBA( 0; 0; 0; 0 )
     )
     ```
 
-  Wie in der Beschreibung der **Text** -Eigenschaft erläutert, `DateAdd(_firstDayInView, ThisItem.Value)` den Tag in der sichtbaren Zelle darstellt. Wenn Sie dies berücksichtigen, führt der vorangehende Code die folgenden Vergleiche aus:
+  Wie in der Beschreibung der **Text** -Eigenschaft erläutert, `DateAdd(_firstDayInView; ThisItem.Value)` den Tag in der sichtbaren Zelle darstellt. Wenn Sie dies berücksichtigen, führt der vorangehende Code die folgenden Vergleiche aus:
   1. Wenn der Wert der Zelle das heutige Datum ist und diese Zelle **\_datesgewählte**entspricht, geben Sie keinen Füll Wert an.
   1. Wenn der Wert der Zelle das heutige Datum ist, aber nicht äquivalent zu **\_datesgewählt**ist, stellen Sie die **colorfade** -Füllung bereit.
   1. Der letzte Vergleich ist nicht so eindeutig. Dabei handelt es sich um einen Vergleich zwischen dem tatsächlichen Textwert in der Zelle und dem Wert des Zellen Elements (die Zahl bei Anzeige und die Element Nummer).<br>
@@ -257,10 +258,10 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 - Eigenschaft: **sichtbar**<br>
     Wert
 
-    ```powerapps-dot
+    ```powerapps-comma
     !(
-        DateAdd( _firstDayInView, ThisItem.Value, Days ) - 
-            Weekday( DateAdd( _firstDayInView, ThisItem.Value,Days ) ) + 1 
+        DateAdd( _firstDayInView; ThisItem.Value; Days ) - 
+            Weekday( DateAdd( _firstDayInView; ThisItem.Value;Days ) ) + 1 
         > _lastDayOfMonth
     )
     ```
@@ -270,8 +271,8 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 - Eigenschaft: **onselect**<br>
     Value: eine **Set** -Funktion, die die **\_datesselected** -Variable auf das Datum der ausgewählten Zelle festlegt:
 
-    ```powerapps-dot
-    Set( _dateSelected, DateAdd( _firstDayInView, ThisItem.Value, Days ) )
+    ```powerapps-comma
+    Set( _dateSelected; DateAdd( _firstDayInView; ThisItem.Value; Days ) )
     ```
 
 ### <a name="circle-control-in-the-calendar-gallery"></a>Kreis-Steuerelement im Kalender Katalog
@@ -281,10 +282,10 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 - Eigenschaft: **sichtbar**<br>
     Value: eine Formel, die bestimmt, ob Ereignisse für das ausgewählte Datum geplant sind und ob die Steuerelemente " **subcircle** " und " **Title** " sichtbar sind:
 
-    ```powerapps-dot
+    ```powerapps-comma
     CountRows(
-        Filter( MyCalendarEvents, 
-            DateValue( Text( Start ) ) = DateAdd( _firstDayInView, ThisItem.Value, Days )
+        Filter( MyCalendarEvents; 
+            DateValue( Text( Start ) ) = DateAdd( _firstDayInView; ThisItem.Value; Days )
         )
     ) > 0 && !Subcircle.Visible && Title.Visible
     ```
@@ -298,8 +299,8 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 - Eigenschaft: **sichtbar**<br>
     Wert
 
-    ```powerapps-dot
-    DateAdd( _firstDayInView, ThisItem.Value ) = _dateSelected && Title.Visible
+    ```powerapps-comma
+    DateAdd( _firstDayInView; ThisItem.Value ) = _dateSelected && Title.Visible
     ```
 
   Das **subcircle** -Steuerelement ist sichtbar, wenn **\_dateswählte** mit dem Datum der Zelle übereinstimmt und das **Titel** Steuerelement sichtbar ist. Anders ausgedrückt: dieses Steuerelement wird angezeigt, wenn die Zelle das aktuell ausgewählte Datum ist.
@@ -311,11 +312,11 @@ Machen Sie sich mit dem Hinzufügen und Konfigurieren von Bildschirmen und ander
 - Eigenschaft: **Elemente**<br>
     Value: eine Formel, die die Ereignis Galerie sortiert und filtert:
 
-    ```powerapps-dot
+    ```powerapps-comma
     SortByColumns(
-        Filter( MyCalendarEvents,
-            Text( Start, DateTimeFormat.ShortDate ) = Text( _dateSelected, DateTimeFormat.ShortDate )
-        ),
+        Filter( MyCalendarEvents;
+            Text( Start; DateTimeFormat.ShortDate ) = Text( _dateSelected; DateTimeFormat.ShortDate )
+        );
         "Start"
     )
     ```

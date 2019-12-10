@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730500"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="mod-function-in-power-apps"></a>Funktion "mod" in powerapps
 Gibt den Rest einer Division zurück
@@ -29,7 +30,7 @@ Die **Mod**-Funktion gibt den Rest zurück, der übrig bleibt, nachdem eine Zahl
 Das Ergebnis hat das gleiche Vorzeichen wie der Divisor.
 
 ## <a name="syntax"></a>Syntax
-**Mod**( *Zahl*, *Divisor* )
+**Mod**( *Zahl*; *Divisor* )
 
 * *Zahl*: erforderlich. Die zu dividierende Zahl.
 * *Divisor*: Erforderlich.  Die Zahl, durch die dividiert wird.

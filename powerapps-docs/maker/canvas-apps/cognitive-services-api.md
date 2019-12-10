@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74724368"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="use-cognitive-services-in-power-apps"></a>Verwenden von Cognitive Services in Power apps
 In diesem Artikel erfahren Sie, wie Sie eine einfache Canvas-app erstellen, die den [Azure-Cognitive Services Textanalyse-API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) verwendet, um Text zu analysieren. Es wird veranschaulicht, wie die Textanalyse-API eingerichtet und mit dem [Textanalyse-Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/) verbunden wird. Anschließend wird beschrieben, wie eine Canvas-App erstellt wird, die die API aufruft.
@@ -127,34 +128,34 @@ Nun verfügen Sie über eine App, die ganz ordentlich aussieht, damit können ab
 
 Vor diesem Hintergrund fügen wir nun die Formel für die **OnSelect**-Eigenschaft der Schaltfläche hinzu. Hier liegt nun die ganze Zauberei.
 
-```powerapps-dot
-If( chkLanguage.Value = true,
-    ClearCollect( languageCollect, 
+```powerapps-comma
+If( chkLanguage.Value = true;
+    ClearCollect( languageCollect; 
         TextAnalytics.DetectLanguage(
             {
-                numberOfLanguagesToDetect: 1, 
+                numberOfLanguagesToDetect: 1; 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);
+);;
 
-If( chkPhrases.Value = true,
-    ClearCollect( phrasesCollect, 
+If( chkPhrases.Value = true;
+    ClearCollect( phrasesCollect; 
         TextAnalytics.KeyPhrases(
             {
-                language: "en", 
+                language: "en"; 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);
+);;
 
-If( chkSentiment.Value = true,
-    ClearCollect( sentimentCollect, 
+If( chkSentiment.Value = true;
+    ClearCollect( sentimentCollect; 
         TextAnalytics.DetectSentiment(
             {
-                language: "en", 
+                language: "en"; 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -189,7 +190,7 @@ Zum Anzeigen der Ergebnisse der API-Aufrufe verweisen Sie auf die entsprechende 
    
     Die **First()** -Funktion gibt den ersten (und in diesem Fall einzigen) Eintrag in **languageCollect** zurück, und die App zeigt **name** (das einzige Feld) für den Eintrag an.
 
-2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."`.
+2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
    
     Diese Formel verwendet ebenfalls die **First()** -Funktion, ruft den **Value** (0-1) aus dem ersten und einzigen Eintrag ab und formatiert ihn anschließend als Prozentsatz.
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732046"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="shape-controls-and-icon-controls-in-power-apps"></a>Shape-Steuerelemente und Symbol Steuerelemente in Power apps
 Grafiken, deren Eigenschaften wie Aussehen und Verhalten Sie konfigurieren können
@@ -68,7 +69,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Navigate**( *ScreenName*, *ScreenTransition* )](../functions/function-navigate.md)
+[**Navigate**( *ScreenName*; *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Beispiel
 
@@ -80,7 +81,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 1. Fügen Sie in **Source** ein **Shape**-Steuerelement hinzu, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-  `Navigate(Target, ScreenTransition.Fade)`
+  `Navigate(Target; ScreenTransition.Fade)`
   
 1. Drücken Sie F5, und wählen Sie dann das **Shape** -Steuerelement aus.
 
@@ -88,7 +89,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 1. (optional) Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren, fügen Sie ein **Shape**-Steuerelement zu **Target** hinzu, und legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft des **Shape**-Steuerelements auf diese Formel fest:
 
-  `Navigate(Source, ScreenTransition.Fade)`
+  `Navigate(Source; ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730587"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="lower-upper-and-proper-functions-in-power-apps"></a>Niedrigere, obere und ordnungsgemäße Funktionen in Power apps
 Konvertiert Buchstaben in einer Textzeichenfolge in alle Kleinbuchstaben, Großbuchstaben oder den richtigen Fall.
@@ -62,9 +63,9 @@ Jede Formel gibt eine einspaltige Tabelle zurück, die die konvertierten Zeichen
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
-| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |![](media/function-lower-upper-proper/people-table-upper.png) |
-| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Konvertiert den ersten Kleinbuchstaben jedes Worts in Großbuchstaben und Großbuchstaben in Kleinbuchstaben. |![](media/function-lower-upper-proper/people-table-proper.png) |
+| **Lower( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
+| **Upper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |![](media/function-lower-upper-proper/people-table-upper.png) |
+| **Proper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Konvertiert den ersten Kleinbuchstaben jedes Worts in Großbuchstaben und Großbuchstaben in Kleinbuchstaben. |![](media/function-lower-upper-proper/people-table-proper.png) |
 
 ### <a name="step-by-step-example"></a>Schritt-für-Schritt-Beispiel
 1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)** -Steuerelement hinzu, und benennen Sie es **Source**.

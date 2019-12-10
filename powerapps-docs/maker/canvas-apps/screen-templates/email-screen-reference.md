@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732619"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Referenzinformationen zur e-Mail-Bildschirm Vorlage für Canvas-apps
 
@@ -55,9 +56,9 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
 * Eigenschaft: **sichtbar**<br>
     Wert: Logik, mit der das Steuerelement nur angezeigt wird, wenn ein Benutzer eine gültige e-Mail-Adresse in das Suchfeld eingibt:
 
-    ```powerapps-dot
+    ```powerapps-comma
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text, Match.Email ) &&
+        IsMatch( TextSearchBox.Text; Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
   Zeilenweise bedeutet der vorangehende Codeblock, dass das **Add-Symbol** -Steuerelement nur dann sichtbar ist, wenn Folgendes gilt:
@@ -69,14 +70,14 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
 * Eigenschaft: **onselect**<br>
     Wert: bei Auswahl dieser Option wird die gültige e-Mail-Adresse der **mypeople** -Sammlung hinzugefügt. Diese Sammlung wird vom Bildschirm als Empfängerliste verwendet:
 
-    ```powerapps-dot
-    Collect( MyPeople,
+    ```powerapps-comma
+    Collect( MyPeople;
         { 
-            DisplayName: TextSearchBox.Text, 
-            UserPrincipalName: TextSearchBox.Text, 
+            DisplayName: TextSearchBox.Text; 
+            UserPrincipalName: TextSearchBox.Text; 
             Mail: TextSearchBox.Text
         }
-    );
+    );;
     Reset( TextSearchBox )
     ```
   
@@ -89,9 +90,9 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
 * Eigenschaft: **Elemente**<br>
     Value: die 15 besten Suchergebnisse des Suchtexts, der in das **textsearchbox** -Steuerelement eingegeben wurde:
     
-    ```powerapps-dot
-    If( !IsBlank( Trim(TextSearchBox.Text ) ), 
-        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ), top: 15} )
+    ```powerapps-comma
+    If( !IsBlank( Trim(TextSearchBox.Text ) ); 
+        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ); top: 15} )
     )
     ```
 
@@ -111,12 +112,12 @@ Mit dem Steuerelement **Add Symbol** können App-Benutzer Personen, die nicht in
 * Eigenschaft: **onselect**<br>
     Wert: Code zum Hinzufügen des Benutzers zu einer Sammlung auf App-Ebene, und wählen Sie dann den Benutzer aus:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent(
-        Set( _selectedUser, ThisItem ),
-        Reset( TextSearchBox ),
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
-            Collect( MyPeople, ThisItem )
+        Set( _selectedUser; ThisItem );
+        Reset( TextSearchBox );
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
+            Collect( MyPeople; ThisItem )
         )
     )
     ```
@@ -138,17 +139,17 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
 * Property: **height**<br>
     Wert: Logik zum Festlegen der Höhe, basierend auf der Anzahl der gegenwärtig im Katalog enthaltenen Elemente:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Min( 
         ( EmailPeopleGallery.TemplateHeight + EmailPeopleGallery.TemplatePadding * 2) *
-            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0 ),
+            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0 );
         304
     )
     ```
 
   Die Höhe dieses Katalogs entspricht der Anzahl der Elemente im Katalog mit einer maximalen Höhe von 304.
   
-  Es nimmt `TemplateHeight + TemplatePadding * 2` als Gesamthöhe einer einzelnen Zeile von **emailpeoplegallery**an und multipliziert Sie dann mit der Anzahl der Zeilen. Seit `WrapCount = 2`wird die Anzahl der echten Zeilen `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`.
+  Es nimmt `TemplateHeight + TemplatePadding * 2` als Gesamthöhe einer einzelnen Zeile von **emailpeoplegallery**an und multipliziert Sie dann mit der Anzahl der Zeilen. Seit `WrapCount = 2`wird die Anzahl der echten Zeilen `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0)`.
 
 * Property: **ShowScrollbar**<br>
     Wert: `EmailPeopleGallery.Height >= 304`
@@ -160,7 +161,7 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
    ![Emailpeoplegallery-Titel Steuerelement](media/email-screen/email-people-gall-text.png)
 
 * Eigenschaft: **onselect**<br>
-    Wert: `Set(_selectedUser, ThisItem)`
+    Wert: `Set(_selectedUser; ThisItem)`
 
   Legt die **_selectedUser** Variable auf das in **emailpeoplegallery**ausgewählte Element fest.
 
@@ -169,7 +170,7 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
    ![Monthdaygallery-Titel Steuerelement](media/email-screen/email-people-gall-delete.png)
 
 * Eigenschaft: **onselect**<br>
-    Wert: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Wert: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
   Sucht den Datensatz in der **mypeople** -Auflistung, wobei " **userPrincipalName** " mit dem " **userPrincipalName** " des ausgewählten Elements übereinstimmt, und entfernt diesen Datensatz aus der Sammlung.
 
@@ -178,15 +179,15 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
 * Eigenschaft: **onselect**<br>
     Wert: Logik zum Senden der e-Mail-Nachricht des Benutzers:
 
-    ```powerapps-dot
-    Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
-    'Office365'.SendEmail( _emailRecipientString, 
-        TextEmailSubject.Text,  
-        TextEmailMessage.Text, 
+    ```powerapps-comma
+    Set( _emailRecipientString; Concat( MyPeople; Mail & ";" ) );;
+    'Office365'.SendEmail( _emailRecipientString; 
+        TextEmailSubject.Text;  
+        TextEmailMessage.Text; 
         { Importance:"Normal" }
-    );
-    Reset( TextEmailSubject );
-    Reset( TextEmailMessage );
+    );;
+    Reset( TextEmailSubject );;
+    Reset( TextEmailMessage );;
     Clear( MyPeople )
     ```
 
@@ -198,7 +199,7 @@ Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
   1. Schließlich setzt es die Steuerelemente **textemailsubject** und **textemailmessage** zurück und löscht die Auflistung **mypeople** .
 
 * Eigenschaft: **Display Mode**<br>
-    Wert: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` für eine e-Mail, die gesendet werden soll, muss die Betreffzeile der e-Mail über Text verfügen, und die Empfänger Auflistung (**mypeople**) darf nicht leer sein.
+    Wert: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ); DisplayMode.Edit; DisplayMode.Disabled )` für eine e-Mail, die gesendet werden soll, muss die Betreffzeile der e-Mail über Text verfügen, und die Empfänger Auflistung (**mypeople**) darf nicht leer sein.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732544"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>Übersicht über die Vorlage "Personen Bildschirm" für Canvas-apps
 
@@ -94,19 +95,19 @@ Der Bildschirm Personen speichert Ihre Personen Auswahl in der **mypeople** -Auf
 1. Legen **Sie die onselect** -Eigenschaft von **backicon** auf `Back()`fest.
 1. Legen **Sie die onselect** -Eigenschaft von **sendion** auf diese Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Office365.SendEmail( 
-        Concat( MyPeople, UserPrincipalName & ";" ), 
-        SubjectLine.Text, 
+        Concat( MyPeople; UserPrincipalName & ";" ); 
+        SubjectLine.Text; 
         MessageBody.Text 
     )
     ```
     
-    Hier verwenden Sie den Outlook-Connector, um eine e-Mail zu senden. Sie übergeben ihn `Concat(MyPeople, UserPrincipalName & ";")` als Empfängerliste. Diese Formel verkettet alle e-Mail-Adressen in der **mypeople** -Sammlung mit einer einzelnen Zeichenfolge, wobei Sie durch Semikolons getrennt werden. Dies unterscheidet sich nicht vom Schreiben einer Zeichenfolge von e-Mail-Adressen, die durch Semikolons in der "an"-Zeile Ihres bevorzugten e-Mail-Clients getrennt sind.
+    Hier verwenden Sie den Outlook-Connector, um eine e-Mail zu senden. Sie übergeben ihn `Concat(MyPeople; UserPrincipalName & ";")` als Empfängerliste. Diese Formel verkettet alle e-Mail-Adressen in der **mypeople** -Sammlung mit einer einzelnen Zeichenfolge, wobei Sie durch Semikolons getrennt werden. Dies unterscheidet sich nicht vom Schreiben einer Zeichenfolge von e-Mail-Adressen, die durch Semikolons in der "an"-Zeile Ihres bevorzugten e-Mail-Clients getrennt sind.
     * Sie übergeben `SubjectLine.Text` als Betreff der Nachricht und `MessageBody.Text` als Text der Nachricht.
 1. Fügen Sie auf dem Bildschirm Personen in der oberen rechten Ecke das Symbol " **Mail** " ein.
    Ändern Sie die Farbe des Symbols in den gewünschten Wert.
-1. Legen **Sie die onselect** -Eigenschaft der **sendische auf** `Navigate( EmailScreen, None )`fest.
+1. Legen **Sie die onselect** -Eigenschaft der **sendische auf** `Navigate( EmailScreen; None )`fest.
 
     Sie verfügen jetzt über eine APP mit zwei Bildschirmen, in der Sie Benutzer auswählen, eine e-Mail-Nachricht verfassen und dann senden können. Sie können es gerne testen, aber seien Sie vorsichtig, da die APP e-Mails an jeden sendet, den Sie der **mypeople** -Sammlung hinzufügen.
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730063"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-power-apps"></a>Funktionen "count", "count", "count" und "count" in Power apps
 Zählen alle [Datensätze](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md) oder alle Datensätze, die eine Bedingung erfüllen
@@ -42,7 +43,7 @@ Jede dieser Funktionen gibt eine Zahl zurück.
 
 * *EinspaltigeTabelle*: erforderlich.  Die zu zählende Spalte mit Datensätzen.  
 
-**CountIf**( *Tabelle*, *LogischeFormel* )
+**CountIf**( *Tabelle*; *LogischeFormel* )
 
 * *Table*: erforderlich.  Die zu zählende Tabelle mit Datensätzen.
 * *LogischeFormel*: Erforderlich.  Die für jeden Datensatz der Tabelle auszuwertende Formel.  Es werden Datensätze gezählt, die für diese Formel **TRUE** zurückgeben.  Die Formel kann auf Spalten der Tabelle verweisen.
@@ -55,7 +56,7 @@ Jede dieser Funktionen gibt eine Zahl zurück.
 1. Importieren oder Erstellen Sie eine [Sammlung](../working-with-data-sources.md#collections) mit dem Namen **Inventory**, wie im ersten Unterverfahren unter [Show images and text in a gallery (Anzeigen von Bildern und Text in einem Katalog)](../show-images-text-gallery-sort-filter.md) beschrieben.
 2. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](../controls/properties-core.md)** auf diese Funktion fest:
    
-    **CountIf(Inventory, UnitsInStock < 30)**
+    **CountIf(Inventory; UnitsInStock < 30)**
    
     Die Bezeichnung zeigt **2** an, da von zwei Produkten (Ganymed und Callisto) weniger als 30 Einheiten auf Lager sind.
 3. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](../controls/properties-core.md)** auf diese Funktion fest:
