@@ -1,1 +1,1 @@
-Gilt für PowerApps-Apps und Dynamics 365 (online), Version 9.x
+Gilt für Power Apps-Apps und Dynamics 365 (online), Version 9.x

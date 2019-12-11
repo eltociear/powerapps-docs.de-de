@@ -1,17 +1,9 @@
----
-ms.openlocfilehash: d74254f2536b78a0951c860d803519827d31e446
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678264"
----
 ## <a name="delegation"></a>Delegierung
-Wenn möglich, delegieren Power apps Filter-und Sortiervorgänge an die Datenquelle und durchlaufen die Ergebnisse bei Bedarf. Wenn Sie beispielsweise eine App starten, in der ein mit Daten gefülltes **[Katalog](../maker/canvas-apps/controls/control-gallery.md)** -Steuerelement angezeigt wird, wird zuerst nur die erste Gruppe mit Datensätzen auf das Gerät übertragen. Wenn der Benutzer einen Bildlauf durchführt, werden zusätzliche Daten aus der Datenquelle abgerufen. Das Ergebnis ist eine kürzere Startdauer für die App und Zugriff auf sehr große Datasets.
+Sofern möglich,erfolgt in Power Apps eine Filterdelegation und Vorgangssortierung bei Bedarf anhand der Ergebnisse entsprechend der Datenquelle. Wenn Sie beispielsweise eine App starten, in der ein **[Galerie](../maker/canvas-apps/controls/control-gallery.md)**-Steuerelementfeld mit Daten enthalten ist, wird anfänglich nur die erste Datensatzgruppe zum Gerät übertragen. Beim Scrollen werden weitere Daten aus der Datenquelle übertragen. Das führt bei der App zu einer schnelleren Startzeit und einem schnelleren Zugriff auf umfangreiche Datensets.
 
-Allerdings ist die Delegierung ggf. nicht immer möglich. Es variiert, welche Funktionen und Operatoren in Datenquellen für die Delegierung unterstützt werden. Falls die vollständige Delegierung einer Formel nicht möglich ist, wird der Teil, der nicht delegiert werden kann, in der Erstellungsumgebung mit einer Warnung versehen. Erwägen Sie nach Möglichkeit, die Formel zu ändern, um die Verwendung von Funktionen und Operatoren zu vermeiden, die nicht delegiert werden können.  Im Artikel mit der Liste der [delegierbaren Datenquellen](../maker/canvas-apps/delegation-list.md) ist beschrieben, welche Datenquellen und Vorgänge delegiert werden können.
+Allerdings ist eine Delegierung gegebenenfalls nicht immer möglich. Die von Datenquellen in Bezug auf Delegation unterstützten Funktionen und Operatoren unterscheiden sich. Falls die vollständige Delegierung einer Formel nicht möglich ist, wird der Anteil, der nicht delegiert werden kann, in der Erstellungsumgebung mit einer Warnung gekennzeichnet. Denken Sie möglichst über eine Änderung der Formel nach, um Funktionen und Operatoren zu vermeiden, die nicht delegiert werden können.  In der [Delegierungsliste](../maker/canvas-apps/delegation-list.md) werden die Datenquellen und Vorgänge, die nicht delegiert werden können, genau aufgeführt.
 
-Wenn eine Delegierung nicht möglich ist, ruft Power Apps nur eine kleine Gruppe von Datensätzen ab, um lokal zu arbeiten. Filter- und Sortierfunktionen werden also auf eine reduzierte Gruppe von Datensätzen angewendet. Die im **[Katalog](../maker/canvas-apps/controls/control-gallery.md)** verfügbaren Daten bilden unter Umständen nicht das Gesamtbild ab, und dies kann für Benutzer verwirrend sein. 
+Wenn keine Delegierung möglich ist, überträgt Power Apps nur wenige Datensatzgruppen zur lokalen Bearbeitung. Filter- und Sortierungsfunktionen arbeiten dann mit weniger Datensatzgruppen. In der **[Galerie](../maker/canvas-apps/controls/control-gallery.md)** ist möglicherweise nicht alles verfügbar und das könnte für Benutzer verwirrend sein. 
 
-Weitere Informationen finden Sie unter [Grundlagen der Delegierung](../maker/canvas-apps/delegation-overview.md).
+Weitere Informationen finden Sie unter [Überblick über Delegation](../maker/canvas-apps/delegation-overview.md).
 
