@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dca5d5189129e7c9dfe32d27fb4c1190b830c039
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d100ac7902aa1d50abfc148ab4bbaed9e442a4ae
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541334"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709855"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>Installieren von Northwind Traders-Datenbank und-Apps
 
@@ -36,7 +36,7 @@ Northwind Traders ist eine fiktive Organisation, die Aufträge, Produkte, Kunden
 > [!div class="nextstepaction"]
 > [Herunterladen der Projektmappen-Datei für Northwind Traders](https://pwrappssamples.blob.core.windows.net/samples/NorthwindTraders_1_0_0_6.zip)
 
-Diese [](../../developer/common-data-service/introduction-solutions.md) Projektmappendatei (ZIP-Datei) enthält die Definitionen von Entitäten, Options Sätzen und Geschäftsprozessen. der Canvas und Modell gesteuerte apps und alle anderen Elemente, die zusammen verwendet werden.
+Diese [Projektmappendatei](../../developer/common-data-service/introduction-solutions.md) (ZIP-Datei) enthält die Definitionen von Entitäten, Options Sätzen und Geschäftsprozessen. der Canvas und Modell gesteuerte apps und alle anderen Elemente, die zusammen verwendet werden.
 
 ## <a name="install-the-solution"></a>Installieren der Lösung
 

@@ -140,7 +140,9 @@
           href: ./canvas-apps/sample-meeting-capture.md
     - name: Ihre erste App erstellen
       items:
-        - name: 1. Erstellen einer App aus Daten
+        - name: '1: App aus einer Vorlage erstellen'
+          href: ./canvas-apps/get-started-test-drive.md
+        - name: '2: App mithilfe von Daten erstellen'
           items:
             - name: Über Common Data Service
               href: ./canvas-apps/data-platform-create-app.md
@@ -158,14 +160,12 @@
               href: ./canvas-apps/customize-forms-sharepoint.md
             - name: 3 – Karten
               href: ./canvas-apps/customize-card.md
-        - name: '3: Selbst eine App erstellen'
-          items:
-            - name: Über Common Data Service
-              href: ./canvas-apps/data-platform-create-app-scratch.md
-            - name: Aus Excel
-              href: ./canvas-apps/get-started-create-from-blank.md
-        - name: App aus einer Vorlage erstellen
-          href: ./canvas-apps/get-started-test-drive.md
+    - name: App von Grund auf neu erstellen
+      items:
+        - name: Über Common Data Service
+          href: ./canvas-apps/data-platform-create-app-scratch.md
+        - name: Aus Excel
+          href: ./canvas-apps/get-started-create-from-blank.md
     - name: Entwerfen und Erstellen einer App
       items:
         - name: Herstellen einer Datenverbindung
@@ -1496,7 +1496,7 @@
           href: ./common-data-service/create-solution.md
         - name: Verwenden von Umgebungsvariablen
           href: ./common-data-service/EnvironmentVariables.md
-        - name: Anzeigen von Lösungsebenen
+        - name: 'Anzeigen von Lösungsebenen '
           href: ./common-data-service/solution-layers.md
         - name: Anzeigen des Lösungsverlauf
           href: ./common-data-service/solution-history.md

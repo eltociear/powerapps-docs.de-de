@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 25a2987113f64b34cea9bdc515c8a835e472ed3d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 19ef96770030790404a3e3cb00b1b0c045b72dff
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985946"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731809"
 ---
-# <a name="size-and-location-properties-in-powerapps"></a>Größen- und Positionseigenschaften in PowerApps
+# <a name="size-and-location-properties-in-power-apps"></a>Größen-und Positions Eigenschaften in Power apps
 ## <a name="overview"></a>Übersicht
 Konfigurieren Sie, wie groß ein Steuerelement (oder ein einzelnes Element eines Steuerelements) ist und wo es auf dem Bildschirm angeordnet ist.
 
