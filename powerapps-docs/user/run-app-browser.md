@@ -1,12 +1,12 @@
 ---
 title: Ausführen von Apps in einem Webbrowser | Microsoft-Dokumentation
 description: In diesem Artikel erfahren Sie, wie Sie Apps in einem Webbrowser ausführen.
-author: Mattp123
+author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 8/21/2019
-ms.author: matp
+ms.date: 12/05/2019
+ms.author: mkaur
 manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
@@ -16,15 +16,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 76d2d4cdccc14e5c9c60cd5679bd7b88a2649380
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8ce6cfe213817cd603857bb5ea2735b188f8cb6c
+ms.sourcegitcommit: 15c6b26ff085928459ad9b3f52fb607fae4a997d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680671"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74956782"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>Ausführen einer App in einem Webbrowser
-Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Artikel erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser ausführen.
+Wenn Sie eine APP erstellen oder jemand eine APP für Sie freigibt, können Sie diese APP auf dem Dynamics 365-Mobile App oder einem Webbrowser auf einem Tablet ausführen. In diesem Thema erfahren Sie, wie Sie einen Canvas oder eine Modell gesteuerte app in einem Webbrowser auf einem Tablet auf der [Dynamics 365-Startseite](https://home.dynamics.com)ausführen.
+
+Für eine vollständige Funktionalität und eine optimierte Funktionalität wird dringend empfohlen, dass Sie Dynamics 365 für Smartphones und Tablets Mobile App verwenden. Wenn Sie die APP Dynamics 365 für Smartphones und Tablets nicht installiert haben, können Sie weiterhin den Webbrowser auf Ihrem Tablet verwenden, sofern Ihr Gerät eine ausreichend hohe Bildschirmauflösung aufweist. Weitere Informationen finden Sie [unter: Was wird unterstützt](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets#supported-devices-for-the-mobile-app).
+
+> [!NOTE]
+> Die Verwendung des Webbrowsers auf Ihrem Telefon zum Ausführen von Modell gesteuerten apps wird nicht unterstützt. Sie müssen die Dynamics 365 für Smartphones-App verwenden.
 
 Für diesen Schnellstart benötigen Sie Folgendes:
 - Eine powerapps-Lizenz. Dies ist in einem powerapps-Plan verfügbar, z. b. in der [Testversion von powerapps Plan 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)oder einem der [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) -oder [Dynamics 365](https://dynamics.microsoft.com/pricing/) -Pläne, die powerapps enthalten. 
@@ -46,7 +51,7 @@ Wenn Sie eine App erst vor Kurzem installiert haben, wird sie möglicherweise ni
 
 
 ## <a name="run-an-app-from-a-url"></a>Ausführen einer App über eine URL
-Sie können die URL einer App als Lesezeichen in Ihrem Browser speichern und diese ausführen, indem Sie auf das Lesezeichen klicken oder tippen. Sie können eine URL ebenfalls per E-Mail als Link versenden. Wenn eine APP von einer anderen Person in einer e-Mail erstellt und für Sie freigegeben wurde, können Sie die app ausführen, indem Sie den Link in der e-Mail auswählen. Wenn Sie eine App über eine URL ausführen, werden Sie möglicherweise dazu aufgefordert, sich mit Ihren Azure Active Directory-Anmeldeinformationen anzumelden.
+Sie können die URL einer App als Lesezeichen im Browser Ihres Tablets speichern und ausführen, indem Sie das Lesezeichen auswählen, oder Sie können eine URL als Link per e-Mail senden. Wenn eine APP von einer anderen Person in einer e-Mail erstellt und für Sie freigegeben wurde, können Sie die app ausführen, indem Sie den Link in der e-Mail auswählen. Wenn Sie eine App über eine URL ausführen, werden Sie möglicherweise dazu aufgefordert, sich mit Ihren Azure Active Directory-Anmeldeinformationen anzumelden.
 
 ![](./media/run-app-browser/web-login.png)
 
