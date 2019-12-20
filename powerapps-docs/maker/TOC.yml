@@ -170,7 +170,7 @@
       items:
         - name: Herstellen einer Datenverbindung
           items:
-            - name: Liste der Verbindungen
+            - name: Verbindungsübersicht
               href: ./canvas-apps/connections-list.md
             - name: Gängige Connectors
               items:
@@ -1222,8 +1222,8 @@
           href: ./portals/configure/place-child-nodes.md
         - name: Verhalten und Format des Datums- und Uhrzeitfelds
           href: ./portals/configure/behavior-format-date-time-field.md
-        - name: Anzeigen von E-Mail-Datensätzen in der Portalzeitskala
-          href: ./portals/configure/view-email-in-timeline.md
+        - name: Anzeigen von Aktivitäten in einer Portalzeitachse
+          href: ./portals/configure/view-all-activities-in-portal-timeline.md
         - name: Bewerten einer Webseite
           href: ./portals/configure/rate-webpage.md
         - name: Aktivieren der Zwischenspeicherung von Kopf- und Fußzeilenausgaben in einem Portal
@@ -1488,15 +1488,19 @@
           href: ./common-data-service/use-solution-explorer.md
         - name: Verwenden der Common Data Service-Standardlösung
           href: ./common-data-service/use-solutions-for-your-customizations.md
-        - name: 'Importieren, aktualisieren und exportieren von Lösungen'
+        - name: Importieren von Lösungen
           href: ./common-data-service/import-update-export-solutions.md
+        - name: Aktualisieren von Lösungen
+          href: ./common-data-service/update-solutions.md
+        - name: Exportieren von Lösungen
+          href: ./common-data-service/export-solutions.md
         - name: Navigieren zu einer bestimmten Lösung
           href: ./common-data-service/navigate-specific-solution.md
         - name: Erstellen einer Lösung
           href: ./common-data-service/create-solution.md
         - name: Verwenden von Umgebungsvariablen
           href: ./common-data-service/EnvironmentVariables.md
-        - name: 'Anzeigen von Lösungsebenen '
+        - name: Anzeigen von Lösungsebenen
           href: ./common-data-service/solution-layers.md
         - name: Anzeigen des Lösungsverlauf
           href: ./common-data-service/solution-history.md
