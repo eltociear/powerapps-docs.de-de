@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9d3594ecf338c6cfa93786f56a09606b2de6296
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 00c13a3b57cce0f7c8831b0932f7e17bbb32efe7
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732015"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203948"
 ---
 # <a name="microsoft-stream-video-control-in-power-apps"></a>Microsoft Stream Video-Steuerelement in Power apps
 Ein Video Player für Microsoft Stream Videos und Kanäle.
@@ -26,13 +26,16 @@ Ein Video Player für Microsoft Stream Videos und Kanäle.
 ## <a name="description"></a>Beschreibung
 Das-Steuerelement ermöglicht App-Benutzern das Abspielen von Videos und Durchsuchen von Kanälen aus dem Microsoft Stream-Dienst.
 
+## <a name="limitations"></a>Einschränken
+Das Steuerelement wird im systemeigenen Windows Player für Power apps derzeit nicht unterstützt.  Es funktioniert erfolgreich in Webbrowsern sowie in Android-und IOS-powerapps-Playern.
+
 ## <a name="key-properties"></a>Haupteigenschaften
 **Streamurl** – die URL des Microsoft Stream Videos oder Kanals, das im Steuerelement angezeigt werden soll.
 
 **ShowControls** – gibt an, ob die Videowiedergabe-Steuerelemente für den Endbenutzer angezeigt werden.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Sollte dem Titel des Videos oder der Audiodatei entsprechen.
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte dem Titel des Videos oder der Audiodatei entsprechen.
 
 **AutoStart**: Gibt an, ob ein Audio- oder Video-Steuerelement automatisch einen Clip wiedergibt, wenn der Benutzer zu dem Bildschirm navigiert, der das Steuerelement enthält.
 
@@ -42,21 +45,21 @@ Das-Steuerelement ermöglicht App-Benutzern das Abspielen von Videos und Durchsu
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
-**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
 **StartTime** – Der Zeitpunkt nach dem Start eines Audio- oder Videoclips, zu dem die Wiedergabe des Clips beginnt.
 
-**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -87,7 +90,7 @@ Das-Steuerelement ermöglicht App-Benutzern das Abspielen von Videos und Durchsu
 
 ## <a name="browser-considerations"></a>Überlegungen zum Browser
 
-### <a name="ios"></a>erhältlich
+### <a name="ios"></a>iOS
 Der IOS-Player von Power Apps unterstützt keine direkte Wiedergabe von Videos, die in der APP eingebettet sind.  Um das Video anzusehen, klicken Sie auf das streamsymbol, um den Video Player im Vollbildmodus zu starten.
 
 ### <a name="safari"></a>SK
@@ -99,8 +102,8 @@ Um Microsoft Stream Videos in einer APP im Safari-Browser anzuzeigen, müssen Si
 * **ShowControls** muss auf TRUE festgelegt sein, sodass Benutzer Multimediadateien in ihrem eigenen Tempo hören oder ansehen können. Damit können Benutzer auch Untertitel und den Vollbildmodus in Videoplayern aktivieren bzw. deaktivieren.
 * Untertitel müssen für alle Videos bereitgestellt werden.
  * Sie können auch ein Audio- oder Videotranskript mithilfe einer der folgenden Methoden bereitstellen:
-  1. Platzieren Sie den Text in einer **[Bezeichnung](control-text-box.md)** , und positionieren Sie ihn neben dem Multimedia-Player. Erstellen Sie optional eine **[Schaltfläche](control-button.md)** , um die Textanzeige umzuschalten.
-  2. Platzieren Sie den Text in einem anderen Bildschirm. Erstellen Sie eine **[Schaltfläche](control-button.md)** , die auf diesen Bildschirm weiterleitet, und positionieren Sie die Schaltfläche neben dem Multimedia-Player.
+  1. Platzieren Sie den Text in einer **[Bezeichnung](control-text-box.md)**, und positionieren Sie ihn neben dem Multimedia-Player. Erstellen Sie optional eine **[Schaltfläche](control-button.md)**, um die Textanzeige umzuschalten.
+  2. Platzieren Sie den Text in einem anderen Bildschirm. Erstellen Sie eine **[Schaltfläche](control-button.md)**, die auf diesen Bildschirm weiterleitet, und positionieren Sie die Schaltfläche neben dem Multimedia-Player.
   3. Wenn die Beschreibung kurz ist, kann sie in **[AccessibleLabel](properties-accessibility.md)** eingegeben werden.
 
 ### <a name="color-contrast"></a>Farbkontrast

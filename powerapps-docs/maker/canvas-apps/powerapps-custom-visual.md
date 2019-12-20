@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4db4e62bb3813b605b1ff4cdf5c2b83d969a1d3a
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 9a1ff224557bd36074f7c981a5e76a9721943afb
+ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709754"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302869"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Benutzerdefiniertes Visual apps-Visual für Power BI
 
@@ -45,13 +44,16 @@ Sehen wir uns nun die Schritte an, die erforderlich sind, um die benutzerdefinie
 
     Wenn Sie eine neue APP erstellen, erstellt Power apps eine einfache APP mit den erforderlichen Komponenten, die bereits eingerichtet sind.
 
+    > [!NOTE]
+    > Sie müssen eine neue APP aus dem benutzerdefinierten powerapps-Visual in Power BI Bericht erstellen, damit die `PowerBIIntegration.Refresh()`-Funktion in der app verfügbar ist.
+
     ![Neue App](./media/powerapps-custom-visual/new-app.png)
 
 4. In powerapps Studio können Sie jetzt die Datenfelder verwenden, die Sie in Schritt 2 festgelegt haben. Das `PowerBIIntegration`-Objekt verhält sich wie jede andere schreibgeschützte Datenquelle oder Sammlung von powerapps. Sie können das Objekt verwenden, um ein beliebiges Steuerelement aufzufüllen oder um Steuerelemente mit anderen Datenquellen zu verknüpfen oder zu filtern.
 
     ![Benutzerdefinierte Formel](./media/powerapps-custom-visual/custom-formula.png)
 
-    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
+    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
 
    Der Power BI Bericht und die Instanz von powerapps Studio, die gestartet wurde, haben eine Live Datenverbindung gemeinsam. Obwohl beide offen sind, können Sie die Daten im Bericht filtern oder ändern, damit die aktualisierten Daten sofort in der app in powerapps Studio angezeigt werden.
 
@@ -63,7 +65,7 @@ Sehen wir uns nun die Schritte an, die erforderlich sind, um die benutzerdefinie
 
     ![Bearbeiten eines Berichts](./media/powerapps-custom-visual/working-report.gif)
 
-    Wenn Sie Änderungen an einer APP vornehmen müssen, öffnen Sie den Bericht im Bearbeitungsmodus, klicken oder tippen Sie auf **Weitere Optionen** ( **...** ) in der Visualisierung von powerapps, und wählen Sie **Bearbeiten**aus.
+    Wenn Sie Änderungen an einer APP vornehmen müssen, öffnen Sie den Bericht im Bearbeitungsmodus, klicken oder tippen Sie auf **Weitere Optionen** (**...**) in der Visualisierung von powerapps, und wählen Sie **Bearbeiten**aus.
 
     ![Bearbeiten einer App](./media/powerapps-custom-visual/edit-app.png)
 
@@ -76,7 +78,9 @@ Die folgenden Einschränkungen gelten für die benutzerdefinierte Visualisierung
 - Das benutzerdefinierte powerapps-Visual kann die Daten nicht filtern oder Daten an den Bericht zurücksenden.
 - Sie müssen die powerapps-App getrennt von Ihrem Bericht freigeben. Erfahren Sie mehr über das Freigeben von [apps in powerapps](share-app.md).
 - Power BI-Berichtsserver und die Mobile App für Power BI unterstützen die benutzerdefinierte Power apps-Visualisierung nicht.
-- Wenn Sie die powerbiintegration. Refresh ()-Funktion verwenden, müssen Sie eine Quelle verwenden, die [directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) unterstützt, und die Datenverbindung muss mithilfe der directquery-Methode erstellt werden.
+- Die folgenden Einschränkungen gelten, wenn die `PowerBIIntegration.Refresh()`-Funktion verwendet wird:
+    - Sie müssen eine neue APP aus dem benutzerdefinierten powerapps-Visual in Power BI Bericht erstellen, damit diese Funktion in der app verfügbar ist.
+    - Sie müssen eine Quelle verwenden, die [directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) unterstützt, und die Datenverbindung muss mithilfe der directquery-Methode erstellt werden.
 - Power apps in Power BI Desktop stellen Daten für Power apps Studio bereit, wenn Sie Apps erstellen, aber nicht während der Bearbeitung. Verwenden Sie Power BI Web, um beim Bearbeiten von apps eine Vorschau der Daten anzuzeigen.
 
 > [!NOTE]

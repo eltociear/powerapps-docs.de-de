@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/19/2019
+ms.date: 12/10/2019
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9449c9ab8e03159ffdc4e5657d7eb8ca92cbf0f0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
+ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724035"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302909"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Übersicht über Canvas-App-Connectors für Power apps
 Die Daten sind der Kern der meisten apps, einschließlich derjenigen, die Sie in Power Apps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. Powerapps verfügt über Connectors für viele beliebte Dienste und lokale Datenquellen, einschließlich SharePoint, SQL Server, Office 365, Salesforce und Twitter. Informationen zu den ersten Schritten beim Hinzufügen von Daten zu einer Canvas-App finden Sie unter [Hinzufügen einer Datenverbindung in powerapps](add-data-connection.md).
@@ -74,12 +74,32 @@ Diese Tabelle enthält Links zu weiteren Informationen zu den am häufigsten ver
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-\* * Gilt für Azure-BLOB, Box, Dropbox, Google Drive, onedrive und onedrive for Business
+* * Gilt für Azure-BLOB, Box, Dropbox, Google Drive, onedrive und onedrive for Business
 
 ## <a name="standard-and-custom-connectors"></a>Standardmäßige und benutzerdefinierte Connectors
 Powerapps bietet *Standardconnectors* für viele häufig verwendete Datenquellen, z. b. die oben aufgeführten Datenquellen. Wenn Power Apps über einen Standardconnector für den Typ der Datenquelle verfügt, den Sie verwenden möchten, sollten Sie diesen Connector verwenden. Wenn Sie eine Verbindung mit anderen Arten von Datenquellen herstellen möchten, z.B. mit einem von Ihnen erstellten Dienst, finden Sie weitere Informationen unter [Registrieren und Verwenden von benutzerdefinierten Connectors](../canvas-apps/register-custom-api.md).
 
 ## <a name="all-standard-connectors"></a>Alle Standardconnectors
-Eine vollständige Liste aller Standardconnectors finden Sie in der [Microsoft-Referenz zu Connectors](https://docs.microsoft.com/connectors/). Für Premium-Connectors ist powerapps-Plan 1 oder Plan 2 erforderlich. Weitere Informationen finden Sie unter [powerapps-Pläne](https://powerapps.microsoft.com/pricing/).
+Eine vollständige Liste aller Standardconnectors finden Sie in der [Microsoft-Referenz zu Connectors](https://docs.microsoft.com/connectors/). Premium-Connectors erfordern den Plan "powerapps pro App-Plan" oder "Power apps pro Benutzer". Weitere Informationen finden Sie unter [powerapps-Pläne](https://powerapps.microsoft.com/pricing/).
 
 Sie können Fragen zu einem bestimmten Connector in den [Power apps-Foren](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)stellen, und Sie können Connectors vorschlagen, um in den [Ideen von Power apps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)weitere Verbesserungen vorzunehmen.
+
+## <a name="security-and-types-of-authentication"></a>Sicherheit und Authentifizierungs Typen
+
+Wenn Sie Ihre APP erstellen und eine Verbindung mit einer Datenquelle herstellen, sehen Sie möglicherweise, dass Sie mit Ihrer Connector-Auswahl verschiedene Authentifizierungsmöglichkeiten verwenden können. Beispielsweise können Sie mit dem SQL Server-Connector Azure AD integrierte, SQL Server Authentifizierung und Windows-Authentifizierung verwenden. Jedem Authentifizierungstyp sind unterschiedliche Sicherheitsstufen zugeordnet.  Es ist wichtig zu verstehen, welche Informationen und Rechte Sie für Benutzer freigeben, die Ihre Anwendung verwenden. Das primäre Beispiel in diesem Artikel ist SQL Server, aber die Prinzipien gelten für alle Verbindungstypen.
+
+### <a name="azure-ad-integrated"></a>Azure AD integriert
+
+Dies ist ein sicherer Verbindungstyp.  Beispielsweise verwendet SharePoint diesen Authentifizierungstyp.  SQL Server ermöglicht auch diesen Authentifizierungstyp.  Wenn Sie eine Verbindung herstellen, identifiziert der Azure AD-Dienst Sie getrennt von SharePoint in Ihrem Namen.  Sie müssen keinen Benutzernamen oder ein Kennwort angeben.  Als Autor können Sie die Datenquelle mit Ihren Anmelde Informationen erstellen und mit Ihnen arbeiten.  Wenn Sie Ihre Anwendung veröffentlichen und sich der Anwendungs Benutzer anmeldet, wird dies mit Ihren Anmelde Informationen durchführen. Wenn die Daten auf einem Back-End ordnungsgemäß gesichert werden, können Ihre Benutzer auf der Grundlage Ihrer Anmelde Informationen nur anzeigen, welche Berechtigungen Ihnen zur Verfügung stehen.   Diese Art von Sicherheit ermöglicht es Ihnen, die Rechte für bestimmte Anwendungs Benutzer in der Back-End-Datenquelle zu ändern, nachdem die Anwendung veröffentlicht wurde.  Beispielsweise können Sie Zugriff gewähren, Zugriff verweigern oder verfeinern, was ein Benutzer oder eine Gruppe von Benutzern in der Back-End-Datenquelle sehen kann.
+
+### <a name="open-standard-authorization-oauth"></a>Open-Standard-Autorisierung (OAuth)
+
+Diese Art von Verbindung ist ebenfalls sicher.  Beispielsweise verwendet Twitter diesen Authentifizierungstyp.  Wenn Sie eine Verbindung herstellen, müssen Sie Ihren Benutzernamen und Ihr Kennwort angeben.  Als Autor können Sie die Datenquelle mit Ihren Anmelde Informationen erstellen und mit Ihnen arbeiten.  Wenn Sie Ihre Anwendung veröffentlichen und sich der Anwendungs Benutzer anmeldet, müssen Sie auch Ihre Anmelde Informationen angeben.  Daher ist dieser Verbindungstyp sicher, da die Benutzer ihre eigenen Anmelde Informationen verwenden müssen, um auf den Datenquellen Dienst zuzugreifen. 
+
+### <a name="sql-user-name-and-password-authentication"></a>SQL-Benutzername-und Kenn Wort Authentifizierung
+
+Diese Art von Verbindung ist nicht sehr sicher, da Sie nicht von der Authentifizierung durch Endbenutzer abhängig ist.  SQL Server ermöglicht auch diesen Authentifizierungstyp.  In SQL Server dieser Authentifizierungstyp als **SQL Server Authentifizierung**bezeichnet.  Viele andere Datenquellen der-Datenbank bieten eine ähnliche Funktion.  Wenn Sie Ihre Anwendung veröffentlichen, müssen die Benutzer keinen eindeutigen Benutzernamen und kein Kennwort angeben.  Sie verwenden den Benutzernamen und das Kennwort, die Sie beim Erstellen der Anwendung angeben.  Die Verbindungs Authentifizierung für die Datenquelle wird **implizit** für die Benutzer freigegeben.  Nachdem die Anwendung veröffentlicht wurde, wird die Verbindung auch veröffentlicht und für Ihre Benutzer verfügbar.  Ihre Endbenutzer können auch Anwendungen mithilfe einer beliebigen Verbindung erstellen, indem Sie SQL Server Authentifizierung verwenden, die für Sie freigegeben ist.  Die Benutzer können den Benutzernamen des Kennworts nicht sehen, aber die Verbindung ist für Sie verfügbar.  Es gibt sicherlich gültige Szenarien für diese Art von Verbindung.  Wenn Sie beispielsweise über eine schreibgeschützte Datenbank verfügen, die für alle Benutzer im Unternehmen verfügbar ist, ist dieser Verbindungstyp möglicherweise gültig. 
+
+### <a name="windows-authentication"></a>Windows-Authentifizierung
+
+Diese Art von Verbindung ist nicht sehr sicher, da Sie sich auch nicht auf die Authentifizierung durch Endbenutzer verlassen muss.  Wenn Sie eine **Verbindung mit einer**lokalen Datenquelle herstellen müssen, verwenden Sie die Windows-Authentifizierung.  Ein Beispiel für diese Art von Verbindung ist ein lokaler Server, der über eine SQL Server verfügt.  Die Verbindung muss über ein Gateway durchlaufen werden.  Da es ein Gateway durchläuft, hat der Connector Zugriff auf alle Daten in der Datenquelle. Daher stehen alle Informationen, auf die Sie mit den von Ihnen bereitgestellten Windows-Anmelde Informationen zugreifen können, dem Connector zur Verfügung. Nachdem die Anwendung veröffentlicht wurde, wird die Verbindung auch veröffentlicht und für Ihre Benutzer verfügbar.   Dies bedeutet, dass Ihre Endbenutzer auch Anwendungen erstellen können, die dieselbe Verbindung verwenden, und auf die Daten auf diesem Computer zugreifen.  Verbindungen mit der Datenquelle werden auch **implizit** für die Benutzer freigegeben, für die die APP freigegeben ist.  Diese Art von Verbindung ist möglicherweise gültig, wenn Ihre Datenquelle nur auf einem lokalen Server gespeichert ist und die Daten auf dieser Quelle frei freiwillig sind.

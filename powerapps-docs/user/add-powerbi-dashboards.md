@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e175ff47a66ae000fb8303a9f3de8205bcbf51d8
-ms.sourcegitcommit: 9576b34403634a8e960eb5f8e320a14c4a03746c
+ms.openlocfilehash: c386e53569b942cbc539438f9cf30cabab15bb65
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72517403"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203925"
 ---
 # <a name="add-or-edit-power-bi-visualizations-on-your-dashboard"></a>Hinzufügen oder Bearbeiten von Power BI Visualisierungen auf Ihrem Dashboard
 
@@ -29,7 +29,7 @@ Erstellen Sie umfassende interaktive Berichte und Echt Zeit Visualisierungen mit
 > [!NOTE]
 > Zum Hinzufügen von [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Visualisierungen zu persönlichen Dashboards in der Modell gesteuerten App müssen Sie folgende Schritte ausführen:  
 > 
-> - Aktivieren Sie [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Visualisierungen für Ihre Organisation in den **Einstellungen**  > **Verwaltungs**  > **System Einstellungen**  >  Registerkarte "**Bericht** Erstellung", > die **Einbettung Power BI Visualisierungen ermöglicht**.  
+> - Aktivieren Sie [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Visualisierungen für Ihre Organisation in den **Einstellungen** > **Verwaltungs** > **System Einstellungen** > Registerkarte " **Bericht** Erstellung", > die **Einbettung Power BI Visualisierungen ermöglicht**.  
 > - Sie müssen über ein [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Konto verfügen und Zugriff auf mindestens ein [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Dashboard haben.  
 > - Vermeiden Sie das Hinzufügen von [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Visualisierungen zu System Dashboards. Dies wird nicht unterstützt.
   
@@ -43,9 +43,9 @@ Erstellen Sie umfassende interaktive Berichte und Echt Zeit Visualisierungen mit
 
    
     > [!div class="mx-imgBorder"] 
-    > ![Neues Power BI Dashboard hinzufügen](media/pbi_1.png "Bew Power BI Dashboard hinzufügen") 
+    > ![Neues Power BI Dashboard hinzufügen](media/pbi_1.png "Neues Power BI Dashboard hinzufügen") 
 
-3. Wählen Sie im Dialogfeld **Eigenschaften des Power BI Dashboards** den Arbeitsbereich aus, und wählen Sie dann das [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Dashboard aus, das Sie in Ihr Dashboard einbetten möchten. Wählen Sie **für Mobile aktivieren aus** , wenn Sie das Dashboard für [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] und [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)] verfügbar machen möchten.
+3. Wählen Sie im Dialogfeld **Eigenschaften des Power BI Dashboards** den Arbeitsbereich aus, und wählen Sie dann das [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Dashboard aus, das Sie in Ihr Dashboard einbetten möchten. Wählen Sie **für Mobile aktivieren aus** , wenn Sie das Dashboard für [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] und [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)]verfügbar machen möchten.
 
     
     > [!div class="mx-imgBorder"] 
@@ -63,9 +63,9 @@ Erstellen Sie umfassende interaktive Berichte und Echt Zeit Visualisierungen mit
 3. Wählen Sie auf dem Dashboard einen Bereich aus, in dem die Kachel angezeigt werden soll, und wählen Sie dann **Power BI Kachel** auf der Symbolleiste aus.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Neue Power BI Kachel hinzufügen](media/pbi_2.png "Power BI Kachel "Bew" hinzufügen") 
+   > ![Neue Power BI Kachel hinzufügen](media/pbi_2.png "Neue Power BI Kachel hinzufügen") 
   
-4. Wählen Sie im Dialogfeld **Power BI Kachel** den Arbeitsbereich aus, und wählen Sie dann die [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Kachel aus, die auf dem Dashboard angezeigt werden soll. Wählen Sie **für Mobile aktivieren aus** , wenn Sie die Kachel für [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] und [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)] verfügbar machen möchten.  
+4. Wählen Sie im Dialogfeld **Power BI Kachel** den Arbeitsbereich aus, und wählen Sie dann die [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Kachel aus, die auf dem Dashboard angezeigt werden soll. Wählen Sie **für Mobile aktivieren aus** , wenn Sie die Kachel für [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] und [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)]verfügbar machen möchten.  
   
      Wählen Sie einen anderen Bereich des Dashboards aus, und wiederholen Sie diesen Schritt, um dem Dashboard eine weitere [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Kachel (z. b. ein Diagramm oder eine Liste) hinzuzufügen.  
   
@@ -90,7 +90,7 @@ Um die in einer [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power
   
  
 ## <a name="share-a-personal-dashboard-that-contains-power-bi-visualizations"></a>Freigeben eines persönlichen Dashboards, das Power BI Visualisierungen enthält  
- Zum Freigeben Ihres persönlichen Dashboards, das [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Visualisierungen enthält, müssen Sie die Freigabe sowohl in Common Data Service als auch in [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] konfigurieren, und der Benutzer oder die Gruppe muss über dieselben Anmelde Informationen und eine entsprechende Zugriffsebene in beiden Diensten verfügen. Wechseln Sie zum Freigeben Ihres persönlichen Dashboards in Ihrer APP zu **Dashboards**. Wählen Sie in der Liste der Dashboards das gewünschte persönliche Dashboard aus, und wählen Sie dann **Dashboard freigeben**aus. Weitere Informationen zur Freigabe eines Dashboards in [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] finden Sie unter [Power BI: Freigeben eines Dashboards für Kollegen und andere](https://powerbi.microsoft.com/documentation/powerbi-service-share-unshare-dashboard/).  
+ Zum Freigeben Ihres persönlichen Dashboards, das [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] Visualisierungen enthält, müssen Sie die Freigabe sowohl in Common Data Service als auch in [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)]konfigurieren, und der Benutzer oder die Gruppe muss über dieselben Anmelde Informationen und eine entsprechende Zugriffsebene in beiden Diensten verfügen. Wechseln Sie zum Freigeben Ihres persönlichen Dashboards in Ihrer APP zu **Dashboards**. Wählen Sie in der Liste der Dashboards das gewünschte persönliche Dashboard aus, und wählen Sie dann **Dashboard freigeben**aus. Weitere Informationen zur Freigabe eines Dashboards in [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)]finden Sie unter [Power BI: Freigeben eines Dashboards für Kollegen und andere](https://powerbi.microsoft.com/documentation/powerbi-service-share-unshare-dashboard/).  
   
 <a name="privacy"></a>   
 ## <a name="privacy-notice"></a>Hinweis zum Datenschutz  

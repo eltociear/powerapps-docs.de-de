@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 569792d634916ce32a54404580fb58d43bf4f24d
-ms.sourcegitcommit: d4462233c8973def0bcc4e75019390d92eccf684
+ms.openlocfilehash: ed59b379b55a38a1e5a3454d26d07ae93d106e4f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831347"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204109"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
-Dieses Thema enthält die Anforderungen an Geräteplattform und Webbrowser sowie Grenzwerte und Konfigurationswerte für powerapps.
+Dieses Thema enthält die Anforderungen an Geräteplattform und Webbrowser sowie Grenzwerte und Konfigurationswerte für Canvas-apps.
 
-## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>Unterstützte Plattformen zum Ausführen von Canvas-apps mit der App "powerapps
+## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-mobile-app"></a>Unterstützte Plattformen für das Ausführen von Canvas-Apps mithilfe von powerapps Mobile App
 
 | **Mindestens erforderlich** | **Empfohlen** |
 | --- | --- |
@@ -32,7 +32,7 @@ Dieses Thema enthält die Anforderungen an Geräteplattform und Webbrowser sowie
 | Windows 8.1 oder höher (nur PC) |Windows 10 Fall Creators Update mit mindestens 8 GB RAM|
 
 > [!NOTE]
-> Wir unterstützen derzeit keine neuen Features auf der Windows-Plattform für die Power apps-App. Features wie die verbesserte Common Data Service Option und der Gast Zugriff sind auf dieser Plattform nicht verfügbar. Wir empfehlen die Verwendung eines webplayers unter Windows, um den vollständigen Satz von Funktionen zu nutzen. In Zukunft werden Aktualisierungen an der Power apps-App für Windows-Plattform angekündigt.
+> Wir unterstützen derzeit keine neuen Features auf der Windows-Plattform für [Power Apps Mobile App](/powerapps/user/run-app-client). Features wie die verbesserte Common Data Service Option und der Gast Zugriff sind auf dieser Plattform nicht verfügbar. Wir empfehlen die Verwendung eines webplayers unter Windows, um den vollständigen Satz von Funktionen zu nutzen. In Zukunft werden Updates für die Power Apps-Mobile App für Windows-Plattform angekündigt.
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>Unterstützte Browser für das Ausführen von Canvas-Apps
 
@@ -100,16 +100,16 @@ In dieser Liste werden alle Dienste identifiziert, mit denen Power apps Studio k
 | \*. Azure-APIM.net |https |API-Hubs: Verschiedene Unterdomänen für jedes Gebietsschema |
 | \*. powerapps.com |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
 | \*. azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
-| \*.blob.core.windows.net |https | Blob Storage |
+| \*. BLOB.Core.Windows.net |https | Blob Storage |
 | \*. Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
 | *. Dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetrie |
-| localhost | https | Power Apps Mobile
+| localhost | https | Powerapps Mobile
 
 > [!NOTE]
 > Wenn Sie ein VPN verwenden, muss es so konfiguriert werden, dass localhost von Tunneln für Power Apps Mobile ausgeschlossen wird.
 
-## <a name="size-limits"></a>Größenbeschränkungen
+## <a name="size-limits"></a>Größen Limits
 
 Informationen zu Größenbeschränkungen für Text, Hyperlinks, Bilder und Medien finden Sie unter [Datentypen](functions/data-types.md#text-hyperlink-image-and-media).
 

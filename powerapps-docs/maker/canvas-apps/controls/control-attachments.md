@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abbe0165041aa3fa496bae480fa1235d9c0b159c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727643"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204040"
 ---
 # <a name="attachments-control-in-power-apps"></a>Anlagen-Steuerelement in powerapps
 Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien aus einer SharePoint-Liste oder einer Common Data Service Entität hochladen und löschen können.
@@ -48,7 +48,7 @@ Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Li
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf eine Anlage klickt.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Sollte den Zweck dieser Anlagen beschreiben.
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte den Zweck dieser Anlagen beschreiben.
 
 **AddAttachmentText** – Der Beschriftungstext des Links, mit dem eine neue Anlage hinzugefügt wird.
 
@@ -58,11 +58,11 @@ Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Li
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement das Hinzufügen und Löschen von Dateien zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement das Hinzufügen und Löschen von Dateien zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -70,7 +70,7 @@ Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Li
 
 **NoAttachmentsText** – Hinweistext, der für den Benutzer, der angezeigt wird, wenn keine Anlagen vorhanden sind.
 
-**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -92,7 +92,7 @@ Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Li
 
     Im Formular wird das der SharePoint-Liste zugeordnete Feld „Anlagen“ angezeigt.
 
-[Erfahren Sie, wie Sie ein Steuerelement hinzufügen und konfigurieren].(../add-configure-controls.md)
+[Erfahren Sie, wie Sie ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit

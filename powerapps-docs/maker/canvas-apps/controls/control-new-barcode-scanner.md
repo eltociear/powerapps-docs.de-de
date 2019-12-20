@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c7c3079ebbdeea0097f50acc2ce7f5d4e4089947
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: c83e713a5f29198779b0b9b8968bb38b98bc2a5a
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650420"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203994"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Barcode-Scanner-Steuerelement für Canvas-apps
 
@@ -27,17 +27,6 @@ Scannt Barcodes, QR-Codes und datenmatrixcodes auf einem Android-oder IOS-Gerät
 ## <a name="description"></a>Beschreibung
 
 Das-Steuerelement öffnet einen nativen Scanner auf einem Android-oder IOS-Gerät. Der Scanner erkennt automatisch einen Barcode, einen QR-Code oder einen Datenmatrix Code, wenn er in der Ansicht angezeigt wird. Das-Steuerelement unterstützt das Scannen in einem Webbrowser nicht.
-
-Das-Steuerelement unterstützt QR-Codes, datenmatrixcodes und diese Arten von Barcodes:
-
-- UPC A
-- UPC E
-- EAN 8
-- EAN 13
-- Code 39
-- Code 128
-- ITF
-- PDF 417
 
 ## <a name="key-properties"></a>Haupteigenschaften
 
@@ -49,13 +38,15 @@ Das-Steuerelement unterstützt QR-Codes, datenmatrixcodes und diese Arten von Ba
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 
+**Barcodetype** : der zu Scannertyp. Sie können mehrere Barcode Typen als Ziel zuweisen, indem Sie Sie verketten. Fern. Barcodetype. Code128 & Barcodetype. Code39 **Default: Auto**
+
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **Flash lightenabled** : gibt an, ob die Taschenlampe beim Öffnen des Scanners automatisch aktiviert wird.
 
@@ -63,7 +54,7 @@ Das-Steuerelement unterstützt QR-Codes, datenmatrixcodes und diese Arten von Ba
 
 **Preferfrontcamera** : gibt an, ob die Frontkamera, sofern verfügbar, für die Überprüfung verwendet wird.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **Type** : der Typ des Codes, der in der zuletzt erfolgreichen Überprüfung erkannt wurde.
 
@@ -82,3 +73,26 @@ Die gleichen Richtlinien für das **[Schalt](control-button.md)** Flächen-Steue
 * Der Barcode Scanner ist eine Schaltfläche, die das Scanergebnis nicht anzeigt. Es wird empfohlen, das Scanergebnis mit einem **[Label](control-text-box.md)** -Steuerelement anzuzeigen. Legen Sie die **[Text](properties-core.md)** -Eigenschaft der Bezeichnung auf die **value** -Eigenschaft des Barcode Scanners fest. Legen Sie die **[Live](properties-accessibility.md)** -Eigenschaft der Bezeichnung auf " **höflich** " fest, damit Benutzer mit Bildschirm Lesevorgängen über Änderungen benachrichtigt werden. Diese Änderung bewirkt, dass der überprüfte Wert unabhängig von der visuellen Funktion für alle zugänglich ist.
 
 * Benutzer mit visuellen und Motor Behinderungen bevorzugen die Kamera möglicherweise nicht auf einen Barcode. Fügen Sie ggf. eine weitere Form der Eingabe hinzu, z. b. ein **[Text Eingabe](control-text-input.md)** -Steuerelement, damit Benutzer Barcodes eingeben können
+
+## <a name="barcode-availability-by-device"></a>Barcode Verfügbarkeit nach Gerät
+
+| Barcode-Typ | Android | iOS |
+|--------------|:-------:|:---:|
+|QR_CODE|✔|✔|
+|DATA_MATRIX|✔|✔|
+|UPC_A|✔|✔|
+|UPC_E|✔|✔|
+|EAN_8|✔|✔|
+|EAN_13|✔|✔|
+|CODE_39|✔|✔|
+|CODE_93|✔|✔|
+|CODE_128|✔|✔|
+|Kodabar|✔|✖|
+|ITF|✔|✔|
+|RSS14|✔|✖|
+|PDF_417|✔|✔|
+|RSS_EXPANDED|✔|✖|
+|MSI|✖|✖|
+|Aztec|✔|✔|
+
+**Hinweis:** PDF_417 und Aztec werden im Auto-Modus nicht unterstützt.
