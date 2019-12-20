@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8c22ec2532371093afbe224a5ea12c44652a30cc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9dce1d13b5cb74173ff8af678480bda7b8e00140
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748466"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865587"
 ---
 # <a name="define-ribbon-enable-rules"></a>Definieren von Menüband-Aktivierungsregeln
 
@@ -141,7 +141,7 @@ function EnableRule()
  Verwendet das `<OrRule>`-Element. Mit der `OrRule`-Regel können Sie den standardmäßigen UND-Vergleich für mehrere Aktivierungsregeltypen überschreiben. Verwenden Sie das `OrRule`-Element, um mehrere mögliche gültige Kombinationen zu definieren, die zu überprüfen sind.
 
 ### <a name="outlook-item-tracking-rule"></a>Outlook-Element-Nachverfolgungsregel
- Verwendet das `<OutlookItemTrackingRule>`-Element. Verwenden Sie das `TrackedInCrm`-Attribut für dieses Element, um festzulegen, ob der Datensatz in PowerApps nachverfolgt wird.  
+ Verwendet das `<OutlookItemTrackingRule>`-Element. Verwenden Sie das `TrackedInCrm`-Attribut für dieses Element, um festzulegen, ob der Datensatz in Power Apps nachverfolgt wird.  
 
 ### <a name="outlook-version-rule"></a>Outlook-Versionsregel
  Verwendet das `<OutlookVersionRule>`-Element. Verwenden Sie diesl, um ein Menübandelement für eine bestimmte Version von [!INCLUDE[pn_MS_Outlook_Full](../../includes/pn-ms-outlook-full.md)] anzuzeigen wie folgt:  

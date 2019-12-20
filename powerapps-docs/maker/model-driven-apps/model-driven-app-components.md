@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zu Komponenten modellgestützter Apps in PowerApps | Microsoft-Dokumentation
+title: Grundlegendes zu Komponenten modellgestützter Apps in Power Apps | Microsoft-Dokumentation
 description: Verschiedene Komponenten einer modellgesteuerten Anwendung wie Daten, Benutzeroberfläche, Logik und Visualisierung verstehen.
 Keywords: Felder, Attribute, modellgestützte App
 author: Mattp123
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b84fa7a8bc0b77bddaa4e0a22d68cd983ac735ef
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4f1c05ca41e6873a0072e8ea6720343e468e38bb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711781"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863058"
 ---
 # <a name="understand-model-driven-app-components"></a>Grundlegendes zu Komponenten modellgestützter Apps
 Eine gut gestaltete modellgesteuerte Anwendung besteht aus mehreren Komponenten, die Sie mit Hilfe des Designers auswählen, um das Aussehen und die Funktionalität der fertigen App zu gestalten. Die Komponenten und Komponenteneigenschaften, aus denen Designer eine App zusammensetzen, werden zu Metadaten. 
@@ -64,7 +64,7 @@ Bestimmt die Geschäftsprozesse, Regeln und die Automatisierung der Anwendung. [
 |Workflow     |  Workflows automatisieren Geschäftsprozesse ohne eine Benutzeroberfläche. Designer verwenden Workflows, um eine Automatisierung zu initiieren, die keine Benutzerinteraktion erfordert.       | Workflow-Designer        |
 |Aktionen    |  Aktionen sind ein Prozesstyp, mit dem Sie manuell Aktionen, einschließlich benutzerdefinierter Aktionen, direkt aus einem Workflow heraus aufrufen können.       |  Prozess-Gestalter       |
 |Geschäftsregel     | Wird verwendet, um eine Regel- oder Empfehlungslogik auf ein Formular anzuwenden, z. B. um Feldanforderungen festzulegen, Felder auszublenden oder Daten zu validieren. App-Designer verwenden eine einfache Schnittstelle, um schnell wechselnde und häufig verwendete Regeln zu implementieren und zu pflegen.         |  Geschäftsregel-Designer       |
-|Flow     | Flow ist ein Cloud-basierter Dienst, mit dem Sie automatisierte Workflows zwischen Anwendungen und Diensten erstellen können, um Benachrichtigungen zu erhalten, Dateien zu synchronisieren, Daten zu sammeln und vieles mehr.        | Microsoft Flow        |
+|Flow     | Flow ist ein Cloud-basierter Dienst, mit dem Sie automatisierte Workflows zwischen Anwendungen und Diensten erstellen können, um Benachrichtigungen zu erhalten, Dateien zu synchronisieren, Daten zu sammeln und vieles mehr.        | Power Automate        |
 
 ![Workflow-, Aktions- und Geschäftsprozessfluss-Designer](media/model-driven-app-overview/designer-mash.png)
 

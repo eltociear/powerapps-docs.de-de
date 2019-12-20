@@ -13,29 +13,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cd722c29bfc850cb1b55c296b4e377e14678b3ad
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5672922d04ae8ea4342139ef9179c7a871fd5ea6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703509"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861201"
 ---
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Eingeschränkte Entitäten, die Dynamics 365-Lizenzen benötigen
 
 > [!IMPORTANT]
-> Dieses Thema ist veraltet und wird in Kürze aktualisiert, um die neuesten Lizenzierungsänderungen zu berücksichtigen, die ab dem 1. Oktober 2019 gelten. Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [PowerApps Lizenzhandbuch](https://go.microsoft.com/fwlink/?linkid=2085130).
+> Dieses Thema ist veraltet und wird in Kürze aktualisiert, um die neuesten Lizenzierungsänderungen zu berücksichtigen, die ab dem 1. Oktober 2019 gelten. Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [Power Apps Lizenzhandbuch](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-App-Ersteller können die meisten der in Common Data Service verfügbaren Entitäten verwenden, um Apps und Abläufe für Benutzer zu erstellen, die nur eine PowerApps Plan 1-Lizenz haben. Einige Entitäten enthalten jedoch eine komplexe Geschäftslogik, die erfordert, dass App-Benutzer eine PowerApps Plan 2 oder Microsoft Flow Plan 2 Lizenz haben (für weitere Informationen siehe [Entitäts-Lizenzanforderungen](data-platform-entity-licenses.md)). Ein noch kleinere Gruppe von Entitäten, die zu Dynamics 365-Produkten gehören, erfordern von Canvas und modellgesteuerte App-Benutzern, dass sie eine Lizenz für das jeweilige Dynamics 365-Produkt haben, wenn sie Datensätzen in Entitäten erstellen, aktualisieren oder löschen. Diese Elemente werden als *eingeschränkte* Entitäten bezeichnet.
+App-Ersteller können die meisten der in Common Data Service verfügbaren Entitäten verwenden, um Apps und Abläufe für Benutzer zu erstellen, die nur eine Power Apps Plan 1-Lizenz haben. Einige Entitäten enthalten jedoch eine komplexe Geschäftslogik, die erfordert, dass App-Benutzer eine Power Apps Plan 2 oder Power Automate Plan 2 Lizenz haben (für weitere Informationen siehe [Entitäts-Lizenzanforderungen](data-platform-entity-licenses.md)). Ein noch kleinere Gruppe von Entitäten, die zu Dynamics 365-Produkten gehören, erfordern von Canvas und modellgesteuerte App-Benutzern, dass sie eine Lizenz für das jeweilige Dynamics 365-Produkt haben, wenn sie Datensätzen in Entitäten erstellen, aktualisieren oder löschen. Diese Elemente werden als *eingeschränkte* Entitäten bezeichnet.
 
 Entitäten werden möglicherweise durch eine Dynamics 365-Lizenz aus folgenden Gründen beschränkt:
 
 * Die Entität wird verwendet, um produktspezifische Konfigurationsdaten zu speichern und zu verwalten, die in der Regel nicht außerhalb der Anwendung verwendet wird.
 * Die Entität wird von erweiterter Logik begleitet, die Daten auf eine bestimmte Art erstellt und verwaltet, wenn sie in einem Dynamics 365-Produkt verwendet wird.
 
-Wenn eine App oder ein Flow nur Informationen von einer Entität liest, ist eine Dynamics 365-Lizenz nicht erforderlich und eine entsprechende PowerApps oder Microsoft Flow Lizenz ist alles, was erforderlich ist. 
+Wenn eine App oder ein Flow nur Informationen von einer Entität liest, ist eine Dynamics 365-Lizenz nicht erforderlich und eine entsprechende Power Apps oder Power Automate Lizenz ist alles, was erforderlich ist. 
 
 ## <a name="restricted-entities-for-create-update-and-delete-operations"></a>Eingeschränkte Entitäten für Erstellen-, Aktualisieren- und Löschvorgänge
-Die folgende Tabelle listet die eingeschränkten Entitäten und die damit verbundenen Dynamics 365-Lizenzanforderungen für PowerApps und Microsoft Flow App-Benutzer auf, die innerhalb der Entitäten gespeicherte Daten erstellen, aktualisieren oder löschen. 
+Die folgende Tabelle listet die eingeschränkten Entitäten und die damit verbundenen Dynamics 365-Lizenzanforderungen für Power Apps und Power Automate App-Benutzer auf, die innerhalb der Entitäten gespeicherte Daten erstellen, aktualisieren oder löschen. 
 
 |Entität  |Logischer Name  |Lizenz erforderlich  |
 |---------|---------|---------|
@@ -82,5 +82,5 @@ Arbeitsauftrags-Geschäftsprozess |msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39 |D
 Warteschlange für Arbeitsauftrags-Detailgenerierung (Veraltet)|msdyn_workorderdetailsgenerationqueue |Dynamics 365 for Field Service<br>**oder** Dynamics 365 Customer Engagement Plan <br> **oder** Dynamics 365-Plan
 
 ## <a name="licensing"></a>Lizenzierung
-Weitere Informationen zu PowerApps und Dynamics 365 Lizenzen finden Sie auf der Seite [Lizenzübersicht](../../administrator/pricing-billing-skus.md).
+Weitere Informationen zu Power Apps und Dynamics 365 Lizenzen finden Sie auf der Seite [Lizenzübersicht](../../administrator/pricing-billing-skus.md).
 

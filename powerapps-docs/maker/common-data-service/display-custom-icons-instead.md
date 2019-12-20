@@ -1,8 +1,8 @@
 ---
-title: Anzeige benutzerdefinierter Symbole neben Werten in Listenansichten mit PowerApps | MicrosoftDocs
+title: Anzeige benutzerdefinierter Symbole neben Werten in Listenansichten mit Power Apps | MicrosoftDocs
 description: Erfahren Sie, wie benutzerdefinierte Symbolgrafiken in einer Ansicht angezeigt werden
 ms.custom: ''
-ms.date: 02/14/2019
+ms.date: 11/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,32 +22,33 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5a8eec0d7079b748b5b70c623c794b403b399ea2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705489"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861069"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>Benutzerdefinierte Symbole zusammen mit Werten in Listenansichten anzeigen
 
 <a name="GridIcons"></a>   
 
- PowerApps-Umgebungsadministratoren und Customizer können einer Ansicht Grafiken hinzufügen und die Logik festlegen, mit der eine Grafik basierend auf dem Spaltenwert per JavaScript ausgewählt wird. Mit dieser Funktion können Sie Listenansichten anpassen, die Symbole neben Text- oder Zahlenwerten anzeigen. 
+ Power Apps-Umgebungsadministratoren und Customizer können einer Ansicht Grafiken hinzufügen und die Logik festlegen, mit der eine Grafik basierend auf dem Spaltenwert per JavaScript ausgewählt wird. Mit dieser Funktion können Sie Listenansichten anpassen, die Symbole neben Text- oder Zahlenwerten anzeigen. 
+
+In diesem Beispiel werden benutzerdefinierte Symbole in einer Ansicht für die Verkaufschancen-Entität angezeigt, die für bestimmte Apps verfügbar ist, z. B. Dynamics 365 Sales. Sie können benutzerdefinierte Symbole in Ansichten mit anderen Standardentitäten wie dem Konto oder der Kontaktentität sowie benutzerdefinierten Entitäten anzeigen. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
-> [!NOTE]
->  Rastersymbole werden nur der Weboberfläche angezeigt. Sie werden nicht in [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] oder in der mobilen App angezeigt.  
+Benutzerdefinierte Symbole in Listenansichten können in der einheitlichen Oberfläche, im alten Webclient, der mobilen App und App for Outlook angezeigt werden. 
   
-### <a name="add-custom-graphics-and-javascript-as-web-resources"></a>Hinzufügen von benutzerdefinierten Grafiken und JavaScript als Webressourcen  
+## <a name="add-custom-graphics-and-javascript-as-web-resources"></a>Hinzufügen von benutzerdefinierten Grafiken und JavaScript als Webressourcen  
   
 1.  Erstellen Sie neue Grafikdateien für Ihre Anpassungen. Es wird empfohlen, eine Symbolgröße von 16x16 Pixeln zu nutzen (größeren Bilder werden herunterskaliert).  
   
-2.  Schreiben Sie einen oder mehrere JavaScript-Funktionen, die definieren, welche Symbole für welche Werte angezeigt werden (Sie benötigen in der Regel eine Funktion für jede Spalte, die Sie anpassen möchten). Jede Funktion muss ein Zeilendatenobjekt und einen Sprachcode (LCID) als Eingabe akzeptieren einen Array mit einem Bildnamen und Tooltiptext zurückgeben. Im Abschnitt [Beispiel-JavaScript-Funktion](#SampleJavascript) weiter unten in diesem Thema finden Sie eine Beispielfunktion.  
+2.  Schreiben Sie einen oder mehrere JavaScript-Funktionen, die definieren, welche Symbole für welche Werte angezeigt werden (Sie benötigen in der Regel eine Funktion für jede Spalte, die Sie anpassen möchten). Jede Funktion muss ein Zeilendatenobjekt und einen Sprachcode (LCID) als Eingabe akzeptieren einen Array mit einem Bildnamen und Tooltiptext zurückgeben. Im Abschnitt [Beispiel-JavaScript-Funktion](#SampleJavascript) weiter unten in diesem Artikel finden Sie eine Beispielfunktion.  
   
-3.  Melden Sie sich bei Ihrer Umgebung als Administrator an, und öffnen Sie den Projektmappen-Explorer.  
+3.  Melden Sie sich in Ihrer Umgebung als Administrator an, und öffnen Sie den [Lösungs-Explorer](../model-driven-apps/advanced-navigation.md#solution-explorer).  
   
 4.  Die Fenster **Standardlösung** wird geöffnet. Navigieren Sie zu **Komponenten** > **Webressourcen**.  
   
@@ -108,7 +109,7 @@ ms.locfileid: "2705489"
  Der folgende Beispielcode zeigt Symbole und Tooltips auf Basis von drei Werten an (1: Hot, 2: Warm, 3: Cold) im Attribut opportunityratingcode (Bewertung) an. Der Beispielcode zeigt auch, wie ein lokalisiertes Tooltip angezeigt wird. Damit dieses Beispiel funktioniert, müssen Sie drei Bildwebressourcen von 16x16 Bildern mit den folgenden Namen erstellen: new_Hot, new_Warm und new_Cold.  
 
 > [!IMPORTANT]
-> Dieses Beispiel benötigt die Opportunity-Entität, die mit der Dynamics 365 Sales App verfügbar ist.
+> Dieses Beispiel benötigt die Verkaufschancen-Entität, die mit der Dynamics 365 Sales App verfügbar ist.
   
 ```javascript
 function displayIconTooltip(rowData, userLCID) {      
@@ -162,7 +163,27 @@ function displayIconTooltip(rowData, userLCID) {
   
  <!-- This results in displaying icons with tooltips in the **Rating** column that depend on the value in each row. The result could look like this:  
   
- ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  -->
+ ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  --> 
+
+## <a name="custom-icon-view-display-behavior"></a>Anzeigeverhalten der benutzerdefinierten Symbolansicht
+### <a name="primary-fields"></a>Hauptfelder 
+In der Rasterlistenansicht ersetzen benutzerdefinierte Symbole, die auf das primäre Entitätsfeld angewendet werden, das vom System generierte Standardsymbol. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/mobile-primary-field-custom-icon-display.png "Primary field replaces default icon in the custom icon view")
+
+### <a name="other-fields"></a>Andere Felder 
+In der Rasterlistenansicht werden benutzerdefinierte Symbole, die auf ein Feld angewendet werden, das nicht das primäre Entitätsfeld ist, zusätzlich zum vom System generierten Standardsymbol als sekundäres Symbol angezeigt. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/card-form-not-primary-field.png "Not an entity primary field custom icon view")
+
+### <a name="card-forms"></a>Kartenformulare
+Benutzerdefinierte Symbole ersetzen das vom System generierte Standardsymbol, wenn die Ansicht für die Verwendung von Kartenformular konfiguriert ist. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/card-view-icon-display.png "Card view custom icon view")
+
  
  ### <a name="see-also"></a>Siehe auch
 [Grundlegendes zu Ansichten modellgestützter Apps](../model-driven-apps/create-edit-views.md)

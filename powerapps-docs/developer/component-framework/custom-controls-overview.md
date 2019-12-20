@@ -1,6 +1,6 @@
 ---
 title: Was sind Codekomponenten? | Microsoft Docs
-description: Verwenden Sie das PowerApps Component Framework, um Code-Komponenten zu erstellen, um Benutzern ein verbessertes Erlebnis beim Anzeigen und Arbeiten mit Daten in Formularen, Ansichten und Dashboards zu bieten.
+description: Verwenden Sie das Power Apps Component Framework, um Code-Komponenten zu erstellen, um Benutzern ein verbessertes Erlebnis beim Anzeigen und Arbeiten mit Daten in Formularen, Ansichten und Dashboards zu bieten.
 manager: kvivek
 ms.date: 09/05/2019
 ms.service: powerapps
@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 08a2043dfb92634837c367e664306d9c100632d6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: afc3f967d8fe93cbd0c5c8d21f67773f970d9ca2
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748485"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895023"
 ---
 # <a name="what-are-code-components"></a>Was sind Codekomponenten?
 
@@ -23,9 +23,9 @@ Sie fügen Codekomponenten hinzu, indem Sie sie in eine Lösung aufnehmen und da
 
 Codekomponenten bestehen aus drei Elemente:
 
-1. [Manifest](#manifest)
-2. [Komponentenimplementierungsbibliothek](#component-implementation-library)
-3. [Ressourcen](#resources)
+- [Manifest](#manifest)
+- [Komponentenimplementierungsbibliothek](#component-implementation-library)
+- [Ressourcen](#resources)
 
 ## <a name="manifest"></a>Manifest
 
@@ -41,7 +41,7 @@ Wenn ein Benutzer eine Codekomponente konfiguriert, filtern die Daten in der Man
 
 ## <a name="component-implementation-library"></a>Komponentenimplementierungsbibliothek
 
-Die Komponentenbibliothek zu implementieren ist eine der wichtigen Schritte, wenn Sie benutzerdefinierte Codekomponenten mithilfe des PowerApps Component Framework entwickeln. Entwickler können eine Komponentenbibliothek mithilfe von TypeScript implementieren. Jede Code-Komponente muss über eine Bibliothek verfügen, die die Definition einer Funktion umfasst, die ein Objekt zurückgibt, das die Methoden implementiert, die in der Code-Komponentenschnittstelle beschrieben werden. 
+Die Komponentenbibliothek zu implementieren ist eine der wichtigen Schritte, wenn Sie benutzerdefinierte Codekomponenten mithilfe des Power Apps Component Framework entwickeln. Entwickler können eine Komponentenbibliothek mithilfe von TypeScript implementieren. Jede Code-Komponente muss über eine Bibliothek verfügen, die die Definition einer Funktion umfasst, die ein Objekt zurückgibt, das die Methoden implementiert, die in der Code-Komponentenschnittstelle beschrieben werden. 
 
 Das Objekt implementiert die folgenden Methoden:
 
@@ -74,7 +74,7 @@ controlObj.init(context,notifyOutputChanged,state,container);
 
 |Parameter|Beschreibung|
 |---|---|
-|Kontext| Enthält alle Informationen darüber, wie die Komponente konfiguriert ist und alle Parameter, die innerhalb der Komponente verwendet werden können, zusammen mit den [PowerApps component framework APIs](reference/index.md). Zum Beispiel kann `context.parameters.<"property name from manifest">` verwendet werden, um auf die Eingabeeigenschaft zuzugreifen.|
+|Kontext| Enthält alle Informationen darüber, wie die Komponente konfiguriert ist und alle Parameter, die innerhalb der Komponente verwendet werden können, zusammen mit den [Power Apps component framework APIs](reference/index.md). Zum Beispiel kann `context.parameters.<"property name from manifest">` verwendet werden, um auf die Eingabeeigenschaft zuzugreifen.|
 |notifyOutputChanged |Warnt das Framework, wenn die Codekomponente neue Ausgaben hat, die asynchron abgerufen werden können.|
 |state|Enthält Komponentendaten aus dem vorherigen Seitenladen in der aktuellen Sitzung, wenn die Komponente diese explizit früher mit der Methode [setControlState](reference/mode/setcontrolstate.md) gespeichert hat.|
 |Container|Ein HTML-Div-Element, an das Entwickler und App-Ersteller die HTML-Elemente für die UI anhängen können, die die Komponente definiert.|

@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2e6ae7ac84710e6558adde2949025868e6da6930
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8195103992e14094816b0bbedfd17d6a799072a0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710285"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884320"
 ---
 # <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>Überprüfen und Veröffentlichen einer modellgesteuerten App mithilfe des App-Designers
 
@@ -80,6 +80,6 @@ Veröffentlichen Sie eine App, um sie Benutzern zur Verfügung zu stellen.
 > - Sie können eine App nicht veröffentlicht, wenn Sie sie noch nicht gespeichert haben.  
 
 ## <a name="next-steps"></a>Nächste Schritte  
-[Gemeinsame Nutzung einer modellgesteuerten App mit PowerApps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
+[Gemeinsame Nutzung einer modellgesteuerten App mit Power Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
  [Ausführen einer modellgesteuerten App auf einem mobilen Gerät](https://docs.microsoft.com/powerapps/user/run-app-client-model-driven)   
  

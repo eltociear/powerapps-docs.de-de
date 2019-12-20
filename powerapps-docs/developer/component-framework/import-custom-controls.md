@@ -9,22 +9,26 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 4bb581e06102ac351b3202d30fa8d418951fa291
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 86a9aa247956d86c184d49a58601a6a58e827f6d
+ms.sourcegitcommit: 5e4e51c5c0e16714c5e22e140785d84cc9383f31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748481"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895276"
 ---
 # <a name="package-a-code-component"></a>Verpacken einer Codekomponente
 
-In diesem Thema wird beschrieben, wie Codekomponenten in Common Data Service importiert werden. Nach der Implementierung der Codekomponenten über die PowerApps CLI besteht der nächste Schritt darin, alle Codekomponenten-Elemente in einer Lösungsdatei zu bündeln und die Lösungsdatei in Common Data Service zu importieren, so dass Sie die Codekomponenten zur Laufzeit sehen können.
+In diesem Thema wird beschrieben, wie Codekomponenten in Common Data Service importiert werden. Nach der Implementierung der Codekomponenten über die Power Apps CLI besteht der nächste Schritt darin, alle Codekomponenten-Elemente in einer Lösungsdatei zu bündeln und die Lösungsdatei in Common Data Service zu importieren, so dass Sie die Codekomponenten zur Laufzeit sehen können.
 
 So erstellen und importieren Sie eine Lösungsdatei:
 
-1. Erstellen Sie einen neuen Ordner im Beispielkomponentenordner und nennen Sie ihn **Lösung** (oder mit einem Namen Ihrer Wahl) mit dem Befehl `mkdir Solutions`. Navigieren Sie mit dem Befehl `cd Solutions` in das Verzeichnis.
+1. Erstellen Sie einen neuen Ordner in dem Ordner mit der `cdsproj`-Datei und nennen sie ihn **Lösungen** (oder einen beliebigen Namen Ihrer Wahl) mit dem Befehl `mkdir Solutions`. Navigieren Sie mit dem Befehl `cd Solutions` in das Verzeichnis.
 
-2. Erstellen Sie ein neues Lösungsprojekt mit dem Befehl `pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>`. Das Lösungsprojekt wird für das Verpacken einer Codekomponente in einer ZIP-Datei der Lösung verwendet, die zum Importieren in Common Data Service verwendet wird.
+2. Erstellen Sie ein neues Lösungsprojekt mit dem folgenden Befehl. Das Lösungsprojekt wird für das Verpacken einer Codekomponente in einer ZIP-Datei der Lösung verwendet, die zum Importieren in Common Data Service verwendet wird.
+   
+   ```CLI
+   pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>
+   ```
 
    > [!NOTE]
    > Die `publisher-name`- und `publisher-prefix`-Werte müssen in Ihrer Umgebung eindeutig sein.
@@ -32,44 +36,47 @@ So erstellen und importieren Sie eine Lösungsdatei:
 3. Sobald das neue Lösungsprojekt erstellt ist, muss der Ordner **Lösung** auf den Speicherort verweisen, an dem sich die erstellte Beispielkomponente befindet. Sie können den Verweis hinzufügen, indem Sie den Befehl unten verwenden. Dieser Verweis informiert das Lösungsprojekt darüber, welche Codekomponenten beim Build hinzugefügt werden sollen. Sie können Verweise auf mehrere Komponenten in einem einzelnen Lösungsprojekt hinzufügen.
 
    ```CLI   
-    pac solution add-reference --path <path to your PowerApps component framework project>
+    pac solution add-reference --path <path to your Power Apps component framework project>
    ```
 
-3. Um eine ZIP-Datei aus dem Lösungsprojekt zu erstellen, gehen Sie zum Lösungsprojektverzeichnis und erstellen Sie das Projekt mit Hilfe des Befehls `msbuild /t:build /restore`. Dieser Befehl verwendet *MSBuild*, um das Lösungsprojekt zu erstellen, indem er die Abhängigkeiten *NuGet* als Teil der Wiederherstellung herunterfährt. Verwenden Sie das `/restore` nur beim ersten Mal, wenn das Lösungsprojekt erstellt wird. Für jeden weiteren Build können Sie danach den Befehl `msbuild` ausführen.
+3. Um eine ZIP-Datei aus Ihrem Lösungsprojekt zu erstellen, wechseln Sie zum Lösungsprojektverzeichnis und erstellen das Projekt mithilfe des folgenden Befehls. Dieser Befehl verwendet *MSBuild*, um das Lösungsprojekt zu erstellen, indem er die Abhängigkeiten *NuGet* als Teil der Wiederherstellung herunterfährt. Verwenden Sie das `/restore` nur beim ersten Mal, wenn das Lösungsprojekt erstellt wird. Für jeden weiteren Build können Sie danach den Befehl `msbuild` ausführen.
 
+   ```CLI
+   msbuild /t:build /restore
+   ```
 
-    > [!NOTE]
+    > [!TIP]
     > - Wenn msbuild 15.9.* nicht der Pfad ist, öffnen Sie die Entwicklereingabeaufforderung für VS 2017, um den Befehl `msbuild` auszuführen.
     > - Das Erstellen der Lösung in der *Debugging*-Konfiguration generiert ein nicht verwaltetes Lösungspaket. Ein verwaltetes Lösungspaket wird erstellt, indem Sie die Lösung in der *Versionskonfiguration* erstellen. Diese Einstellungen können außer Kraft gesetzt werden, indem die `SolutionPackageType`-Eigenschaft in der `cdsproj`-Datei angegeben wird.
     > - Sie können die msbuild-Konfiguration auf `Release` setzen, um einen Produktionsbuild auszugeben. Beispiel: `msbuild /p:configuration=Release`
     > - Wenn die Fehlermeldung *Mehrdeutiger Projektname* beim Ausführen des Befehls `msbuild` für Ihre Lösung angezeigt wird, stellen Sie sicher, dass Ihr Lösungsname und Projektname nicht identisch sind.
 
 4. Die erzeugten Lösungsdateien befinden sich nach erfolgreicher Erstellung im Ordner `\bin\debug\`.
-5. [Importieren Sie die Lösung in Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) manuell mit Hilfe des Webportals oder lesen Sie die Abschnitte [Authentifizierung für die Organisation](#authenticating-to-your-organization) und [Bereitstellung](#deploying-code-components), um sie mit Hilfe der PowerApps CLI-Befehle zu importieren.
+5. [Importieren Sie die Lösung in Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) manuell über das Webportal oder automatisch über die [Power Apps Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools).
 
-## <a name="authenticating-to-your-organization"></a>Authentifizierung gegenüber Ihrem Unternehmen
+## <a name="connecting-to-your-environment"></a>Verbindung mit der Umgebung
 
-Sie können die Codekomponenten direkt in der PowerApps CLI bereitstellen, indem Sie die Authentifizierung für die Common Data Service-Organisation gewährleisten und die aktualisierten Komponenten übertragen. Führen Sie die folgenden Schritte aus, um das Authentifizierungsprofil zu erstellen, eine Verbindung zu Common Data Service herzustellen und die aktualisierten Komponenten zu übertragen. 
+Sie können die Codekomponenten direkt über die Power Apps-CLI bereitstellen, indem Sie eine Verbindung mit der Common Data Service-Umgebung herstellen und dann die aktualisierten Komponenten per Push verschieben. Führen Sie die folgenden Schritte aus, um das Authentifizierungsprofil zu erstellen, eine Verbindung zu Common Data Service herzustellen und die aktualisierten Komponenten zu übertragen. 
  
-1. Erstellen Sie das Authentifizierungsprofil mit Hilfe des folgenden Befehls: 
+1. Erstellen Sie Ihr Authentifizierungsprofil mit dem Befehl: 
  
     ```CLI
-    pac auth create --url <your Common Data Service org’s url> 
+    pac auth create --url <https://xyz.crm.dynamics.com> 
     ```
  
-2. Wenn Sie bereits ein Authentifizierungsprofil erstellt haben, können Sie alle vorhandenen Profile mit Hilfe des folgenden Befehls anzeigen: 
+2. Wenn Sie zuvor ein Authentifizierungsprofil erstellt haben, können Sie mit dem Befehl alle vorhandenen Profile anzeigen: 
 
    ```CLI
     pac auth list 
    ```
  
-3. Um zwischen den zuvor erstellten Authentifizierungsprofilen zu wechseln, verwenden Sie den folgenden Befehl: 
+3. Um zwischen den zuvor erstellten Authentifizierungsprofilen zu wechseln, verwenden Sie den Befehl: 
    
    ```CLI
     Pac auth select --index <index of the active profile>
     ``` 
 
-4. Um grundlegende Informationen über die Organisation abzurufen, verwenden Sie den folgenden Befehl. Die Verbindung wird mit Hilfe des Standardauthentifizierungsprofils hergestellt. 
+4. Verwenden Sie den folgenden Befehl, um die grundlegenden Informationen zur Umgebung abzurufen. Die Verbindung wird mit Hilfe des Standardauthentifizierungsprofils hergestellt. 
 
     ```CLI
     pac org who 
@@ -84,16 +91,65 @@ Nachdem Sie erfolgreich ein Authentifizierungsprofil erstellt haben, können Sie
 
 1. Stellen Sie sicher, dass Sie ein gültiges Authentifizierungsprofil erstellt haben.
 2. Navigieren Sie zu dem Stammverzeichnis, in dem das Projekt der Codekomponente erstellt wird.
-3. Führen Sie den Befehl `pac pcf push --publisher-prefix <your publisher prefix>` aus.
+3. Führen Sie den Befehl aus.
+
+   ```CLI
+   pac pcf push --publisher-prefix <your publisher prefix>
+   ```
 
    > [!NOTE]
    > Das Publisher-Präfix, das Sie mit dem Befehl `push` verwenden, sollte mit dem Publisher-Präfix Ihrer Lösung übereinstimmen, in dem die Komponenten enthalten sein werden.
 
-## <a name="how-to-remove-components-from-a-solution"></a>So entfernen Sie Komponenten aus einer Lösung
+## <a name="create-a-solution-project-based-on-an-existing-solution-in-common-data-service"></a>Erstellen Sie ein Lösungsprojekt auf der Grundlage einer vorhandenen Lösung in Common Data Service
+
+Um ein Lösungsprojekt auf der Grundlage einer vorhandenen Lösung in Common Data Service zu erstellen, führen Sie den Befehl `pac solution clone` aus. Um dies zu tun:
+
+1. Stellen Sie sicher, dass Sie ein gültiges Authentifizierungsprofil erstellt haben.
+2. Führen Sie den Befehl  aus. 
+
+   ```CLI
+   pac solution clone –name(-n) <name of the solution to be exported> --version(-v) <version of your solution> --include(-i) <settings that should be included>
+   ```
+
+Weitere Informationen: [Einstellungsoptionen](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.exportsolutionrequest?view=dynamics-general-ce-9)
+
+## <a name="create-a-plug-in-project-and-add-a-reference-to-it-in-your-solution"></a>Erstellen Sie ein Plug-In-Projekt, und fügen Sie in Ihrer Projektmappe einen Verweis darauf hinzu 
+
+> [!IMPORTANT]
+> - Die Plug-In-Befehle befinden sich noch in der öffentlichen Vorschau. 
+> - Die Vorschaufunktionen sind nicht für die Produktion vorgesehen und weisen möglicherweise eine eingeschränkte Funktionalität auf. Diese Funktionen stehen vor der offiziellen Version zur Verfügung, damit Kunden früher Zugriff darauf erhalten und Feedback geben können.
+
+Power Apps-CLI unterstützt jetzt das Erstellen eines Plug-In-Projekts und das Packen in eine Lösung, indem ein Verweis auf das Plug-In-Projekt hinzugefügt wird. Der `pac plugin init`-Befehl erstellt die Vorlagendateien (csproj, Plugin.cs & ServiceHelper.cs) im Verzeichnis. Um dies zu tun: 
+
+1.  Stellen Sie sicher, dass Sie ein gültiges Authentifizierungsprofil erstellt haben.
+2.  Navigieren Sie zum Stammverzeichnis, in dem Sie das Projekt erstellen möchten.
+3.  Führen Sie den Befehl  aus. 
+
+     ```CLI
+     pac auth create –url <https://xyz.crm.dynamics.com>
+     ```
+4.  Führen Sie den Befehl aus, um das Plug-In-Projekt zu erstellen
+
+    ```CLI
+    pac plugin init
+    ```
+
+5.  Fügen Sie mit dem folgenden Befehl einen Verweis auf Ihr Lösungsprojekt hinzu, damit das Plug-In-Projekt beim Erstellen der Lösung erstellt wird.
+
+    ```CLI
+    pac solution add-reference –path <path to your plugin project>
+    ```
+
+6.  Führen Sie den Befehl aus, um die Lösung und das referenzierte Plug-In zu erstellen.
+    ```CLI
+    msbuild
+    ```
+
+## <a name="remove-components-from-a-solution"></a>Entfernen von Komponenten aus einer Lösung
 
 Wenn Sie eine Codekomponente aus einer Lösungsdatei entfernen möchten:
 
-1.  Bearbeiten Sie die Datei `cdsproj` im Projektverzeichnis der Lösung und entfernen Sie die Referenzen auf die Komponente. Hier finden Sie ein Beispiel für einen Komponentenverweis:
+1. Bearbeiten Sie die Datei `cdsproj` im Projektverzeichnis der Lösung und entfernen Sie die Referenzen auf die Komponente. Hier finden Sie ein Beispiel für einen Komponentenverweis:
 
    ```XML
    <ItemGroup>
@@ -118,5 +174,5 @@ Wenn Sie eine Codekomponente aus einer Lösungsdatei entfernen möchten:
 
 [Hinzufügen von Codekomponenten zu einem Feld oder einer Entität in modellgesteuerten Apps](add-custom-controls-to-a-field-or-entity.md)<br/>
 [Hinzufügen von Komponenten zu einer Canvas-App](component-framework-for-canvas-apps.md#add-components-to-a-canvas-app)<br/>
-[PowerApps component framework API-Referenz](reference/index.md)<br/>
-[Übersicht über das PowerApps component framework](overview.md)
+[Power Apps component framework-API-Referenz](reference/index.md)<br/>
+[Power Apps component framework Übersicht](overview.md)

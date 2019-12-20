@@ -1,5 +1,5 @@
 ---
-title: Erstellen oder bearbeiten eines Systemdiagramms für modellgesteuerte Apps in PowerApps | Microsoft-Dokumentation
+title: Erstellen oder bearbeiten eines Systemdiagramms für modellgesteuerte Apps in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie ein Diagramm erstellt oder bearbeitet wird
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c1286c0d234a93bb3316d1afa0aac809b5455142
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 24c932f34c23c42f938f54ffa4f328f25a714c59
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759070"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875176"
 ---
 # <a name="create-a-model-driven-app-system-chart"></a>Erstellen eines Systemdiagramms für modellgesteuerte Apps
 
 In diesem Thema erfahren Sie, wie Sie ein Systemdiagramm erstellen. Systemdiagramme sind Diagramme im Besitz der Organisation. Dadurch stehen sie allen Benutzern mit Lesezugriff auf die Daten, mit denen die App ausgeführt werden. Systemdiagramme können nicht zugewiesen oder für bestimmte App-Benutzer freigegeben werden.  
   
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).     

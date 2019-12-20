@@ -1,5 +1,5 @@
 ---
-title: iFrame-Eigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | Microsoft-Dokumentation
+title: iFrame-Eigenschaften für Hauptformulare in modellgesteuerten Apps in Power Apps | Microsoft-Dokumentation
 description: Grundlegendes zur iFrame-Eigenschaften für Hauptformulare
 Keywords: Hauptformular; iFrame-Eigenschaften; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 532b720277cdc9649e8ef161e9ff623298c5f570
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7c4d4348726dfb53b0b54e3a8d86a1809a568b7b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754036"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875000"
 ---
 # <a name="iframe-properties-for-model-driven-app-main-forms"></a>iFrame-Eigenschaften für Hauptformulare in modellgesteuerten Apps
 
@@ -31,7 +31,7 @@ Sie können iFrames einem Formular hinzufügen, um Inhalt von einer anderen Webs
 
 Gehen Sie folgendermaßen vor, um die iFrame-Eigenschaften anzuzeigen.
 
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**. 
 

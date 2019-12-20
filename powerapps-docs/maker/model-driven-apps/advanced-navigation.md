@@ -1,6 +1,6 @@
 ---
-title: Navigieren zu meine Apps, Lösungs-Explorer und Einstellungen in PowerApps | Microsoft-Dokumentation
-description: Wissen, wie die erweiterte App-Herstellungs und -Anpassungsbereiche in PowerApps zu finden sind
+title: Navigieren zu meine Apps, Lösungs-Explorer und Einstellungen in Power Apps | Microsoft-Dokumentation
+description: Wissen, wie die erweiterte App-Herstellungs und -Anpassungsbereiche in Power Apps zu finden sind
 keywords: ''
 author: Mattp123
 ms.author: matp
@@ -22,27 +22,27 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9e28fdd31aa77a718f3a805214900954afcc3a74
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e0e9e71f1df22d091597add562b8a863504ed0aa
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752280"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885087"
 ---
 # <a name="navigate-to-advanced-model-driven-app-making-and-customization-areas"></a>Navigieren zur erweiterten Modell-angetriebenen App-Herstellung und -Anpassungsbereichen
 
-In diesem Thema wird beschrieben, wie Sie auf Anpassungs- und Verwaltungsbereiche zugreifen, die in einer PowerApps-Umgebung verfügbar sind.
+In diesem Thema wird beschrieben, wie Sie auf Anpassungs- und Verwaltungsbereiche zugreifen, die in einer Power Apps-Umgebung verfügbar sind.
 
 ## <a name="solutions"></a>Lösungen
 Der Lösungsbereich ist dort, wo Sie verwaltete und nicht verwaltete Lösung anzeigen, erstellen, bearbeiten, importieren, exportieren und löschen können. 
 
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 2.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus. 
 
 ## <a name="solution-explorer"></a>Projektmappen-Explorer
-Verwenden Sie den Lösungs-Explorer, um die App-Erstellungs- und -Anpassungsaufgaben auszuführen, die nicht über die PowerApps-Homepage abgeschlossen werden können.
+Verwenden Sie den Lösungs-Explorer, um die App-Erstellungs- und -Anpassungsaufgaben auszuführen, die nicht über die Power Apps-Homepage abgeschlossen werden können.
 
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
 2.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.  
 3.  Wählen Sie auf der Symbolleiste **In klassischen Modus wechseln**, um Ansicht **Alle Lösungen** zu öffnen. 
     Beachten Sie, dass Sie der Befehl **In klassischen Modus wechseln** nicht verfügbar ist, wenn Sie eine Lösung aus der Liste auswählen.
@@ -52,7 +52,7 @@ Verwenden Sie den Lösungs-Explorer, um die App-Erstellungs- und -Anpassungsaufg
 Der App-Bereich listet alle modellgesteuerten und Canvas-Apps auf, für die Sie über Rechte in Ihrer Umgebung verfügen. Zusätzlich zum Starten einer App aus dem Apps-Bereich heraus, können Sie auch Sicherheitsrollen zuweisen. 
 
 Um eine App freizugeben:
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2.  Wählen Sie **Apps** aus.
  
@@ -69,7 +69,7 @@ Verwenden Sie den -Einstellungsbereich, um Umgebungseinstellungen zu konfigurier
 Prüfen Sie zunächst, ob die benötigten Einstellungen im  > ![Symbol Einstellungen](media/powerapps-gear.png)**Erweiterte Anpassungen** sind.
 
 Um Einstellungen zu finden, die nicht unter **Erweiterte Anpassungen**verfügbar sind:  
-1.  Wählen Sie PowerApps in einer modellgesteuerten App **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) auf der App-Symbolleiste und dann **Erweiterte Einstellungen** aus. 
+1.  Wählen Sie Power Apps in einer modellgesteuerten App **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) auf der App-Symbolleiste und dann **Erweiterte Einstellungen** aus. 
 2.  Wählen Sie **Einstellungen** und dann den gewünschten Einstellungsbereich aus.
 
     > [!div class="mx-imgBorder"] 
@@ -77,4 +77,4 @@ Um Einstellungen zu finden, die nicht unter **Erweiterte Anpassungen**verfügbar
 
 ## <a name="see-also"></a>Siehe auch
 [Erstellen oder Bearbeiten einer modellgesteuerten App mithilfe des App-Designers](create-edit-app.md)
-[Erstellen oder Bearbeiten von Apps in PowerApps Studio für Web](../canvas-apps/create-app-browser.md)
+[Erstellen oder Bearbeiten von Apps in Power Apps Studio für Web](../canvas-apps/create-app-browser.md)

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67239062f30efb80fb8ee416614c1088e20c4075
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 813a31b3b9d56dfb6742dc138ec947829613cf89
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702189"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869938"
 ---
 # <a name="view-the-history-of-a-solution"></a>Anzeigen des Verlaufs einer Lösung
 Sie können Informationen zu Lösungsvorgängen im Bereich **Lösungen** einer modellgesteuerten App anzeigen. Ein Vorgang kann ein Lösungsimport, -export oder -löschung sein. Im Lösungsverlauf werden Informationen wie die Lösungsversion, der Lösungsherausgeber, die Art des Vorgangs, die Start- und Endzeit des Vorgangs sowie der Vorgangsstatus angezeigt.
@@ -40,7 +40,7 @@ Sie können Informationen zu Lösungsvorgängen im Bereich **Lösungen** einer m
      > ![](media/solution-history-sitemap.png "Solution History area")
 
      > [!NOTE]
-     > Um zum Bereich **Einstellungen** aus einer PowerApps vereinheitlichten, schnittstellenmodellgesteuerten Anwendung zu gelangen, wählen Sie **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) in der App-Symbolleiste und dann **Erweiterte Einstellungen**. 
+     > Um zum Bereich **Einstellungen** aus einer Power Apps vereinheitlichten, schnittstellenmodellgesteuerten Anwendung zu gelangen, wählen Sie **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) in der App-Symbolleiste und dann **Erweiterte Einstellungen**. 
 
 2. Standardmäßig wird die Ansicht **Benutzerdefinierter Lösungsverlauf** angezeigt. Die folgenden Ansichten sind im Bereich **Lösungsverlauf** verfügbar. 
 - **Alle Lösungsverläufe**. Zeigt die Lösungshistorie für das interne System und benutzerdefinierte Lösungen. 

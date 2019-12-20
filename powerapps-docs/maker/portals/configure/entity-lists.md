@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 11/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 1ab175f69fdcf292185fd96cb176045dccc3a70b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4fa68ace39f9a1b2dbcb2d9111e71364fde49fbc
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760449"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874384"
 ---
 # <a name="about-entity-lists"></a>Über Entitätslisten
 
@@ -325,7 +325,7 @@ Das Hinzufügen der Möglichkeit, Datensätze auf einer Entitätsliste zu filter
 
 **Aktivieren des Entitätslistenfilters**
 
-Im Metadatenfilter-Abschnitt aktivieren Sie das Kontrollkästchen mit der Aufschrift "Aktiviert". Dadurch wird der Filterbereich zur Entitätsliste hinzugefügt, falls sie angezeigt wird. Bis Sie mindestens einen Filtertyp definiert haben, wird das Feld leer gelassen.
+Im **Metadatenfilter**-Abschnitt aktivieren Sie das Kontrollkästchen **Aktiviert**. Dadurch wird der Filterbereich zur Entitätsliste hinzugefügt, falls sie angezeigt wird. Bis Sie mindestens einen Filtertyp definiert haben, wird das Feld leer gelassen.
 
 Sie können festlegen, wie der Filterbereich auf der Entitätsliste gerendert wird, indem Sie die Ausrichtung verwenden. Der Standard, "Horizontal", rendert den Filterbereich über der Entitätsliste. Die vertikale Ausrichtung rendert den Filterbereich als Feld links neben der Entitätsliste.
 
@@ -493,16 +493,27 @@ Die Kalenderansicht der Entitätsliste ermöglicht das Rendern einer Entitätsli
 
 Damit Datensätze mithilfe eines Kalenders angezeigt werden, müssen diese Datensätze mindestens ein Datumsfeld haben. Damit die Ereignisse genaue Start- und Endzeiten haben, müssen die entsprechenden Felder vorhanden sein usw. Angenommen diese Felder sind konfiguriert, dann wird eine Entitätslistenskalenderansicht auf dem Portal angezeigt.
 
-## <a name="enhanced-view-filter-for-entity-lists"></a>Verbesserte Ansichtsfilter für Entitätslisten
+## <a name="entity-list-odata-feeds"></a>Entitätslisten-OData-Feeds
 
 Wenn diese Option aktiviert ist, kann eine Entität in einem OData-Feed veröffentlicht werden. Das OData-Protokoll ist ein Protokoll auf Anwendungsebene zum Interagieren mit Daten über RESTful-Webdienste. Daten aus diesem Feed können in einem Webbrowser angezeigt, von einer clientseitige Webanwendung belegt oder in [!INCLUDE[pn-excel-short](../../../includes/pn-excel-short.md)] importiert werden.
 
-## <a name="entity-list-odata-feeds"></a>Entitätslisten-OData-Feeds
+> [!Note]
+> Der OData-Feed, der veröffentlicht wurde, ist anonym und verfügt über keine Berechtigungsprüfungen. Daher ist es wichtig, keine oData-Feeds für Daten zu aktivieren, die für einen anonymen Portalzugriff ungeeignet sind.
+
+## <a name="enhanced-view-filter-for-entity-lists"></a>Verbesserte Ansichtsfilter für Entitätslisten
 
 Sie können Entitäts-Berechtigungen verwenden, wenn Sie Datensätze in speichern möchten, aber wenn Sie einen Filter als Teil eines Satz von Filteroptionen einfach bereitstellen möchten, die für den aktuellen Portalbenutzer relevant sind, können Sie die Entitätslistenfunktion verwenden. Diese Funktionen unterstützt Filterung des aktuellen Benutzers, des übergeordneten Kontos des Benutzers oder der Website mit beliebiger Tiefe. Erstellen Sie einfach den Ansichtsfilter, entsprechend den einzelnen Kontaktdatensätze, und der Code ersetzt den zugehörigen Wert durch den tatsächlichen Wert zur Laufzeit&mdash;es ist nicht erforderlich, Werte für die Felder im Abschnitt „Filterbedingungen” zuzuweisen.
 
-> [!Note]
-> Der OData-Feed, der veröffentlicht wurde, ist anonym und verfügt über keine Berechtigungsprüfungen. Daher ist es wichtig, keine oData-Feeds für Daten zu aktivieren, die für einen anonymen Portalzugriff ungeeignet sind.
+- Das Steuerelement findet alle Bedingungselemente, bei denen uitype="contact" ist, und setzt den Wert auf den tatsächlichen Wert der Kontakt-ID des aktuellen Portalbenutzers.
+- Das Steuerelement findet alle Bedingungselemente, bei denen uitype="account" ist, und setzt den Wert auf den tatsächlichen Wert der übergeordneten Konto-ID des aktuellen Portalbenutzers.
+- Das Steuerelement findet alle Bedingungselemente, bei denen uitype="adx_website" ist, und setzt den Wert auf den tatsächlichen Wert der Website-ID.
+
+Beispiel "Filterkriterien anzeigen"
+
+Das folgende Bild zeigt einen beliebigen Kontakt, der einer Filterbedingung zugewiesen ist. Dieser Kontakt ist zufällig ein Blindkontakt, dies kann jedoch ein beliebiger Kontaktdatensatz sein. Die ID dieses Datensatzes wird durch den tatsächlichen Wert der ID des Benutzers ersetzt, der die Seite anzeigt. Wenn der Benutzer nicht angemeldet ist, werden keine Datensätze zurückgegeben. Dies bietet eine größere Flexibilität beim Filtern der Daten basierend auf dem Benutzer und der Website im Kontext.
+
+> [!NOTE]
+> Wenn Sie nach dem Kontakt des aktuellen Portalbenutzers oder nach dem übergeordneten Konto filtern, wird empfohlen, dass Sie eine [Zugriffsregel für Webseiten](webpage-access-control.md) der Webseite zuordnen, um den Benutzer zur Anmeldung zu zwingen. Sie würden eine [Webrolle](create-web-roles.md) mit aktivierter "Authentifizierte Benutzerrolle" erstellen. Erstellen Sie eine Zugriffssteuerungsregel für Webseiten mit dem Recht "Lesen einschränken" und ordnen Sie die Webrolle zu. Dadurch werden Benutzer gezwungen, sich anzumelden, um die Seite anzuzeigen, und die Daten können dementsprechend ausgefüllt werden.
 
 ### <a name="see-also"></a>Siehe auch
 

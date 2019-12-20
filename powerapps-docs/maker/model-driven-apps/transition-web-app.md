@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eed1efac81b882d076e0e809c93ddec63f6a75f7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bf9b21936a0b1a9d843d248cf4941854dcdbbd7d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759730"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874560"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>Schnellstart für die Umstellung Ihrer bestehenden Web-Client-Anwendung auf die einheitliche Oberfläche
 
@@ -43,7 +43,7 @@ Um eine bestehende produktionsfreie Umgebung für die Umstellung Ihrer Web Clien
 ## <a name="prepare-the-environment"></a>Vorbereiten der Umgebung
 Wählen Sie zuerst eine Nicht-Produktionsumgebung aus und aktivieren Sie den Modus **Nur Einheitliche Oberfläche verwenden**, sodass die einheitliche Oberfläche für alle modellgesteuerten Apps in der Umgebung verwendet wird. Dazu gehören auch alle Dynamics 365-Anwendungsmodule, die ursprünglich für den Legacy-Webclient konfiguriert wurden.
 
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, wählen Sie **Umgebung**, und wählen Sie dann eine Sandbox-Umgebung aus. 
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, wählen Sie **Umgebung**, und wählen Sie dann eine Sandbox-Umgebung aus. 
 
 2. Wählen Sie **Einstellungen** > **Verhalten** aus, und aktivieren Sie dann **Nur Einheitliche Oberfläche verwenden**.
 
@@ -62,7 +62,7 @@ Sie können dies auch im Einstellungsbereich einstellen. Gehen Sie zu **Einstell
 ## <a name="run-and-validate-your-application-in-the-unified-interface"></a>Ausführen und Überprüfen der Anwendung in der einheitlichen Oberfläche
 Führen Sie Anwendungen aus, die ursprünglich Webclient-Anwendungen waren. Beachten Sie, dass, nachdem Sie die Option **Nur Einheitliche Oberfläche verwenden** aktiviert haben, alle verfügbaren Apps in der Umgebung die einheitliche Oberfläche verwenden, auch wenn die Anwendung ursprünglich für den Webclient konfiguriert wurde.
 
-Um Ihre Anwendung auszuführen, melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, wählen Sie **Apps**, und wählen Sie dann die Anwendung aus, die Sie ausführen möchten. Alternativ können Sie auch direkt zur Seite **Meine Apps** gehen, z.B. *https://contoso.crm.dynamics.com/apps/*.
+Um Ihre Anwendung auszuführen, melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, wählen Sie **Apps**, und wählen Sie dann die Anwendung aus, die Sie ausführen möchten. Alternativ können Sie auch direkt zur Seite **Meine Apps** gehen, z.B. *https://contoso.crm.dynamics.com/apps/*.
 
 ### <a name="validate-your-app-processes-and-customizations"></a>Überprüfen der App, Prozesse und Anpassungen 
 Es ist empfehlenswert, alle Anwendungsfälle zu testen. Sie können mit den wichtigsten Anwendungsfällen starten oder sie in logische Entwurfsmuster gruppieren. Da die einheitliche Oberfläche auf einem reagierenden Entwurf basiert, wird empfohlen, Tests mit unterschiedlichen Geräten auszuführen, die verschiedene Bildschirmauflösungen haben. Während Sie die Anwendung testen, können Sie überprüfen, ob Ihre Anpassungen mit der einheitlichen Benutzeroberfläche kompatibel sind und ob es Funktionen gibt, die ein Redesign erfordern oder fehlende Funktionen aufweisen. Erstellen Sie einen Plan für die Überprüfung dieser Elemente und veröffentlichen Sie Ihre Fragen und Ihr Feedback in unserem Community-Forum. 
@@ -118,10 +118,10 @@ Mehr Informationen: [Entwerfen Sie modellbasierte Anwendungen mit dem App Design
 [Einheitliche Benutzeroberfläche - Playbook](unified-interface-playbook.md) <br />
 [Annäherung an eine Benutzererfahrung und Übergang zur einheitlichen Benutzeroberfläche](approaching-unified-interface.md) <br />
 [Über „Einheitliche Oberfläche”](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[Was sind modellgetriebene Apps in PowerApps?](model-driven-app-overview.md) <br />
+[Was sind modellgetriebene Apps in Power Apps?](model-driven-app-overview.md) <br />
 [Aktualisieren Ihrer Apps auf die einheitliche Oberfläche](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [Informationen zum Konfigurieren von Dashboards für interaktive Funktionen](configure-interactive-experience-dashboards.md) <br />
 [Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen](use-custom-controls-data-visualizations.md) <br />
-[PowerApps component framework Übersicht](/powerapps/developer/component-framework/overview) <br />
+[Power Apps component framework Übersicht](/powerapps/developer/component-framework/overview) <br />
 [Einheitliche Benutzeroberfläche für alle](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)
 

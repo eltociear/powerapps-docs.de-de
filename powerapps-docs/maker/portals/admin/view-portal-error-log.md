@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 7989c15b0c5c4cf50d4b55f518244758afc067e1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ced53e6b3eb30668d81aca0f385f4ebd841f02fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756650"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862486"
 ---
 # <a name="view-portal-error-logs"></a>Portalfehlerprotokolle anzeigen
 
-Als Portaladministrator oder -entwickler können Sie mit PowerApps-Portalen eine Website für Ihre Kunden erstellen. Eine allgemeine Aufgabe für einen Entwickler besteht darin, Probleme zu debuggen, während das Portal entwickelt wird. Zur Unterstützung beim Debuggen, können Sie auf detaillierte Fehlerprotokolle für jegliche Probleme auf Ihrem Portal zugreifen. Es gibt mehrere Möglichkeiten, wie Sie Fehlerprotokolle für Ihre Portale abrufen können.
+Als Portaladministrator oder -entwickler können Sie mit Power Apps-Portalen eine Website für Ihre Kunden erstellen. Eine allgemeine Aufgabe für einen Entwickler besteht darin, Probleme zu debuggen, während das Portal entwickelt wird. Zur Unterstützung beim Debuggen, können Sie auf detaillierte Fehlerprotokolle für jegliche Probleme auf Ihrem Portal zugreifen. Es gibt mehrere Möglichkeiten, wie Sie Fehlerprotokolle für Ihre Portale abrufen können.
 
 ## <a name="custom-error"></a>Benutzerdefinierter Fehler
 
@@ -27,7 +27,7 @@ Wenn irgendeine serverseitige Ausnahme in Ihrem Portal auftritt, wird standardm�
 Es ist jedoch besser, die detaillierte Fehlerseite von ASP.NET für Debugzwecke anzuzeigen, auch bekannt als „Gelber Bildschirm des Todes” (Yellow Screen of Death = YSOD). Die ausführliche Fehlerseite hilft Ihnen dabei, den vollständigen Stapel von Serverfehlern abzurufen.
 
 > [!div class=mx-imgBorder]
-> ![Gelber Bildschirm des Todes](../media/ysod.png "Gelber Bildschirm des Todes")
+> ![Gelber Bildschirm des Todes](../media/ysod.png "Yellow Screen of Death")
 
 Um den YSOD zu aktivieren, müssen Sie auf Ihrem Portal [benutzerdefinierte Fehler deaktivieren](#disable-custom-error).
 
@@ -40,7 +40,7 @@ Weitere Informationen zu benutzerdefiniertem Fehler: [Eine benutzerdefinierte Fe
 
 Sie können benutzerdefinierte Fehler für Portale deaktivieren, um die detaillierte Ausnahmemeldung anzuzeigen, wenn irgendeine serverseitige Ausnahme in Ihrem Portal auftritt.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2. Wechseln Sie zu **Portalaktionen** > **Benutzerdefinierte Fehler deaktivieren**.
 
@@ -53,7 +53,7 @@ Sie können benutzerdefinierte Fehler für Portale deaktivieren, um die detailli
 
 Sie können benutzerdefinierte Fehler auf Portalen aktivieren, um eine professional aussehende Seite anstatt des YSOD anzuzeigen. Diese Seite bietet aussagekräftige Informationen, wenn eine Ausnahme in der Anwendung auftritt.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2. Wechseln Sie zu **Portalaktionen** > **Benutzerdefinierte Fehler aktivieren**.
 
@@ -94,14 +94,14 @@ Dies ist ein benutzerdefinierter, bitte übermitteln Sie ein Supportticket mit d
 
 ## <a name="access-portal-error-logs"></a>Auf Portalfehlerprotokolle zugreifen
 
-Nachdem Sie das Portal entwickelt und veröffentlicht haben, müssen Sie immer noch dazu in der Lage sein, auf Portalprotokolle zuzugreifen, um Probleme zu debuggen, die von Ihrem Kunden gemeldet werden. Um auf die Protokolle zuzugreifen, können Sie Ihr Portal so konfigurieren, dass alle Anwendungsfehler an ein Azure Blob Storage-Konto, das Sie besitzen, übermittelt werden. Indem Sie auf Portalfehlerprotokolle zugreifen, können Sie auf Kundenanfragen effiziente reagieren, da Sie Details des Problems haben. Um Portalfehlerprotokolle im Azure-Blobspeicher abzurufen, müssen Sie die Diagnoseprotokollierung vom PowerApps-Portaladministratorcenter aktivieren.
+Nachdem Sie das Portal entwickelt und veröffentlicht haben, müssen Sie immer noch dazu in der Lage sein, auf Portalprotokolle zuzugreifen, um Probleme zu debuggen, die von Ihrem Kunden gemeldet werden. Um auf die Protokolle zuzugreifen, können Sie Ihr Portal so konfigurieren, dass alle Anwendungsfehler an ein Azure Blob Storage-Konto, das Sie besitzen, übermittelt werden. Indem Sie auf Portalfehlerprotokolle zugreifen, können Sie auf Kundenanfragen effiziente reagieren, da Sie Details des Problems haben. Um Portalfehlerprotokolle in Ihren Azure Blob-Speicher zu erhalten, müssen Sie die Diagnoseprotokollierung im Power Apps Portale Administrationscenter aktivieren.
 
 > [!NOTE]
 > Wenn Sie die Common Data Service-Instanz ändern, mit der Ihr Portal verbunden ist, wird die Diagnoseprotokollierung deaktiviert. Sie müssen die Diagnoseprotokollieren erneut aktivieren.
 
 ### <a name="enable-diagnostic-logging"></a>Diagnoseprotokollierung aktivieren
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2. Wechseln Sie zu **Portalaktionen** > **Diagnoseprotokollierung aktivieren**.
 
@@ -123,14 +123,14 @@ Nachdem Sie das Portal entwickelt und veröffentlicht haben, müssen Sie immer n
    Standardmäßig beträgt die Beibehaltungsdauer 30 Tage.
   
    > [!div class=mx-imgBorder]
-   > ![Diagnoseprotokollierungsfenster aktivieren](../media/enable-diagnostic-logging-window.png "Diagnoseprotokollierungsfenster aktivieren")
+   > ![Diagnoseprotokollierungsfenster aktivieren](../media/enable-diagnostic-logging-window.png "Diagnoseprotokollfenster aktivieren")
 
 4. Klicken Sie auf **Konfigurieren**.
 
 Sobald die Diagnoseprotokollierung konfiguriert ist, wird ein neuer Blobcontainer für **Telemetrieprotokolle** in Ihrem Azure Storage-Konto erstellt, und die Protokolle werden in die Blobdateien geschrieben, die im Container gespeichert werden. Im folgenden Bildschirmfoto wird der **Telemetrieprotokolle**-Blobcontainer im Azure Storage Explorer angezeigt:
 
 > [!div class=mx-imgBorder]
-> ![Azure-Blobspeicherkonto](../media/azure-blob-storage.png "Azure-Blobspeicherkonto")
+> ![Azure-Blobspeicherkonto](../media/azure-blob-storage.png "Azure Blog Storage-Konto")
 
 Wenn die Diagnoseprotokollierung erfolgreich aktiviert ist, wird die folgende Aktion verfügbar:
 - **Diagnoseprotokollierungskonfiguration aktivieren**: Ermöglicht es Ihnen, die Diagnoseprotokollierungskonfiguration für das Portal zu aktualisieren oder zu entfernen.
@@ -138,12 +138,12 @@ Wenn die Diagnoseprotokollierung erfolgreich aktiviert ist, wird die folgende Ak
  
 ### <a name="update-diagnostic-logging"></a>Diagnoseprotokollierung aktualisieren
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2. Wechseln Sie zu **Portalaktionen** > **Diagnoseprotokollierungskonfiguration aktualisieren**.
 
    > [!div class=mx-imgBorder]
-   > ![Konfiguration der Diagnoseprotokollierung aktualisieren](../media/update-diagnostic-logging.png "Konfiguration der Diagnoseprotokollierung aktualisieren")
+   > ![Konfiguration der Diagnoseprotokollierung aktualisieren](../media/update-diagnostic-logging.png "Aktualisieren der Konfiguration der Diagnoseprotokollierung")
 
 3. Geben Sie im Fenster „Diagnoseprotokollierungskonfiguration aktualisieren” die folgenden Werte ein:
    - **Möchten Sie die Verbindungszeichenfolge des Azure Blob Storage-Diensts aktualisieren?**: Ermöglicht es Ihnen anzugeben, ob die Verbindungszeichenfolge des Azure Blob Storage-Diensts aktualisiert werden soll. Standardmäßig ist sie ausgewählt.
@@ -160,13 +160,13 @@ Wenn die Diagnoseprotokollierung erfolgreich aktiviert ist, wird die folgende Ak
    Standardmäßig beträgt die Beibehaltungsdauer 30 Tage.
 
    > [!div class=mx-imgBorder]
-   > ![Konfigurationsfenster der Diagnoseprotokollierung aktualisieren](../media/update-diagnostic-logging-window.png "Konfigurationsfenster der Diagnoseprotokollierung aktualisieren")
+   > ![Konfigurationsfenster der Diagnoseprotokollierung aktualisieren](../media/update-diagnostic-logging-window.png "Aktualisieren des Konfigurationsfensters für die Diagnoseprotokollierung")
 
 4. Klicken Sie auf **Aktualisieren**.
 
 ### <a name="disable-diagnostic-logging"></a>Diagnoseprotokollierung deaktivieren
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2. Wechseln Sie zu **Portalaktionen** > **Diagnoseprotokollierung deaktivieren**.
 

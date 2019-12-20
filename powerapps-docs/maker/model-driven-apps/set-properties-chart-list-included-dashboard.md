@@ -1,5 +1,5 @@
 ---
-title: Festlegen von Eigenschaften für ein Diagramm oder eine Liste in einer modellgesteuerten App, die in einem Dashboard enthalten sind, in PowerApps | Microsoft-Dokumentation
+title: Festlegen von Eigenschaften für ein Diagramm oder eine Liste in einer modellgesteuerten App, die in einem Dashboard enthalten sind, in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Eigenschaften für ein Diagramm oder eine Liste, die in einem Dashboard enthalten sind, festgelegt werden
 ms.custom: ''
 ms.date: 06/06/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b284b42c162c44d59fc7af22905be08748d9c766
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 46861b569be4140ca2ac66d016285930c5d9fc31
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711165"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862838"
 ---
 # <a name="set-properties-for-a-model-driven-app-chart-or-list-included-in-a-dashboard"></a>Festlegen von Eigenschaften für ein Diagramm oder eine Liste in einer modellgesteuerten App, die in einem Dashboard enthalten sind
 

@@ -17,12 +17,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: 4ce6e11f599eedd6b44c4fbf7271760ecb3cd9c2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: da8d3ac44d9993aee813347b327442789e7fb8a7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748602"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859923"
 ---
 # <a name="set-up-a-postman-environment"></a>Einrichten einer Postman-Umgebung
 
@@ -32,7 +32,7 @@ Sie können eine Postman-Umgebung verwenden, um einen Satz von Variablen zu spei
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* Haben Sie eine PowerApps Common Data Service Umgebung, mit der Sie sich verbinden können. 
+* Haben Sie eine Power Apps Common Data Service Umgebung, mit der Sie sich verbinden können. 
 * Downloaden und installieren Sie die [Postman Desktop Anwendung](https://www.getpostman.com/apps).
 
 <a name="bkmk_connectcds"></a> 

@@ -31,7 +31,7 @@
     - name: Verwenden von Daten mit Code
       href: work-with-data/index.md
       items:
-        - name: API-Begrenzungen
+        - name: API-Grenzwerte für den Serviceschutz
           href: ../api-limits.md
     - name: Verwenden von Metadaten mit Code
       href: work-with-metadata/index.md

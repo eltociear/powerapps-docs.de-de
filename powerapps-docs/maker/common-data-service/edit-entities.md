@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten einer Entität in PowerApps | Microsoft-Dokumentation
+title: Bearbeiten einer Entität in Power Apps | Microsoft-Dokumentation
 description: Informationen zu den verschiedenen Arten, wie eine Entität bearbeitet werden kann
 ms.custom: ''
 ms.date: 05/15/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ec64583e2146703711b88456ff7bc91ece3e921
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cff90011a80bd051882da08be1f479cb997a7a72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757442"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863946"
 ---
 # <a name="edit-an-entity"></a>Bearbeiten einer Entität
 
@@ -40,10 +40,10 @@ Es gibt zwei Möglichkeiten, eine Entität mithilfe eines Designers zu bearbeite
 
 |Designer|Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.|
+|[Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.|
 |Lösungs-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen.|
 
-Sowohl im PowerApps-Portal als auch im Lösungs-Explorer können Sie Folgendes durchführen:
+Sowohl im Power Apps-Portal als auch im Lösungs-Explorer können Sie Folgendes durchführen:
 
 - **Bearbeiten der Entitätsfelder**. Weitere Informationen: [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
   
@@ -63,9 +63,9 @@ Sie können auch Änderungen an Datensätzen vornehmen, die die Entität unterst
 
 - **Diagramme**. [Systemdiagramme erstellen oder bearbeiten](../model-driven-apps/create-edit-system-chart.md)
 
-## <a name="edit-using-powerapps-portal-designer"></a>Bearbeiten mithilfe des PowerApps-Portaldesigners
+## <a name="edit-using-power-apps-portal-designer"></a>Bearbeiten mithilfe des Power Apps-Portaldesigners
 
-Im PowerApps-Portaldesigner gibt es nur drei Entitätseigenschaften, die Sie bearbeiten können:
+Im Power Apps-Portaldesigner gibt es nur drei Entitätseigenschaften, die Sie bearbeiten können:
  - Anzeigename
  - Plural-Anzeigename
  - Beschreibung

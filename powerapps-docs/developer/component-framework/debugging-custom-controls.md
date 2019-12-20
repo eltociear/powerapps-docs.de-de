@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 088792a32f401ddaf7d3a3cd4fd4d5aa9fa472ff
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1ffc32fdb1479552d77cd68d858c0d3b43d9b86e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748318"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862000"
 ---
 # <a name="debug-code-components"></a>Debuggen von Codekomponenten
 
@@ -59,7 +59,7 @@ Wie in der obigen Abbildung dargestellt wird das Browserfenster mit vier Abschni
 
 ## <a name="watch-mode-in-test-harness"></a>Watch-Modus im Testbereich
 
-Die Testumgebung unterstützt den `watch`-Modus, den Sie für PowerApps Component Framework-Projekte nutzen können. Um den `watch`-Modus zu aktivieren, starten Sie den Testbereich mit dem Befehl `npm start watch`. Im `watch`-Modus werden die Änderungen, die an einem der folgenden Komponentenobjekte vorgenommen werden, automatisch in der Testumgebung angezeigt, ohne sie neu starten zu müssen:
+Die Testumgebung unterstützt den `watch`-Modus, den Sie für Power Apps Component Framework-Projekte nutzen können. Um den `watch`-Modus zu aktivieren, starten Sie den Testbereich mit dem Befehl `npm start watch`. Im `watch`-Modus werden die Änderungen, die an einem der folgenden Komponentenobjekte vorgenommen werden, automatisch in der Testumgebung angezeigt, ohne sie neu starten zu müssen:
 
 1.  `index.ts`-Datei enthalten sind.
 2.  `ControlManifest.Input.xml`-Datei enthalten sind.
@@ -93,5 +93,5 @@ Verwenden Sie den Fiddler AutoResponder, um Ihre Codekomponenten schnell zu debu
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[PowerApps component framework API-Referenz](reference/index.md)<br/>
-[Übersicht über das PowerApps component framework](overview.md)
+[Power Apps component framework-API-Referenz](reference/index.md)<br/>
+[Power Apps component framework Übersicht](overview.md)

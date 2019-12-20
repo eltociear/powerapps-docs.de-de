@@ -1,6 +1,6 @@
 ---
 title: Aufgaben von Buildtools| Microsoft Docs
-description: 'Bei PowerApps build tools handelt es sich um eine Sammlung von PowerApps-spezifischen Azure DevOps-Buildaufgaben, die vermeiden, dass Tools und Skripts manuell heruntergeladen werden müssen, um den Anwendungslebenszyklus von PowerApps zu verwalten. In diesem Thema werden die Aufgaben beschrieben, die verfügbar sind. '
+description: 'Bei Power Apps build tools handelt es sich um eine Sammlung von Power Apps-spezifischen Azure DevOps-Buildaufgaben, die vermeiden, dass Tools und Skripts manuell heruntergeladen werden müssen, um den Anwendungslebenszyklus von Power Apps zu verwalten. In diesem Thema werden die Aufgaben beschrieben, die verfügbar sind. '
 ms.custom: ''
 ms.date: 07/21/2019
 ms.reviewer: Dean-Haas
@@ -14,42 +14,42 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d1455909aa8fef11a2bba4658edba81e40632ceb
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7271fb611f6ddff6d36dd1984b760ce3bbf19b45
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753046"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861835"
 ---
 # <a name="build-tools-tasks"></a>Aufgaben von Buildtools
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Einige Arten von Buildaufgaben stehen als Teil der PowerApps build tools zur Verfügung, um Ihnen zu helfen, den Anwendungslebenszyklus unter Verwendung von Azure DevOps zu automatisieren.
+Einige Arten von Buildaufgaben stehen als Teil der Power Apps build tools zur Verfügung, um Ihnen zu helfen, den Anwendungslebenszyklus unter Verwendung von Azure DevOps zu automatisieren.
   
 ## <a name="helper-task"></a>Helferaufgabe
 
-Das PowerApps-Toolinstallationsprogramm muss die erste Aufgabe in jeder Build- und Versionspipeline sein. Diese Aufgabe installiert eine Reihe von PowerApps-spezifischen Tools, die für den Agent erforderlich sind, um die PowerApps-Buildaufgaben auszuführen. Diese Aufgabe erfordert keine zusätzlichen Konfigurationsschritte.
+Das Power Apps-Toolinstallationsprogramm muss die erste Aufgabe in jeder Build- und Versionspipeline sein. Diese Aufgabe installiert eine Reihe von Power Apps-spezifischen Tools, die für den Agent erforderlich sind, um die Power Apps-Buildaufgaben auszuführen. Diese Aufgabe erfordert keine zusätzlichen Konfigurationsschritte.
 
 ## <a name="quality-check"></a>Qualitätsprüfung
 
-Die PowerApps-Prüfungsaufgabe führt eine statische Analyseprüfung Ihrer Lösungen im Zusammenhang mit bewährten Regeln durch, um problematische Muster zu identifizieren, die Sie unbeabsichtigterweise beim Erstellen der Lösung eingeführt haben.
+Die Power Apps-Prüfungsaufgabe führt eine statische Analyseprüfung Ihrer Lösungen im Zusammenhang mit bewährten Regeln durch, um problematische Muster zu identifizieren, die Sie unbeabsichtigterweise beim Erstellen der Lösung eingeführt haben.
 
 | **Parameter** | **Beschreibung** |
 | --- | --- |
-| PowerApps-Prüfungsdienst  |   Wählen Sie den Dienstendpunkt für die PowerApps-Prüfung aus. Der Dienstendpunkt wird unter **Dienstverbindungen** in **Projekteinstellungen** definiert.  **HINWEIS:** Die Dienstverbindungsart, die nur für diese bestimmte Aufgabe verwendet werden muss, lautet „PowerApps-Prüfung“. Dies ist eine Dienstprinzipalverbindung. Weitere Informationen dazu, wie Sie Dienstprinzipale konfigurieren, bevor Sie die Aufgabe verwenden können, finden Sie [hier](https://aka.ms/buildtoolsconnection).  |
+| Power Apps-Prüfungsdienst  |   Wählen Sie den Dienstendpunkt für die Power Apps-Prüfung aus. Der Dienstendpunkt wird unter **Dienstverbindungen** in **Projekteinstellungen** definiert.  **HINWEIS:** Die Dienstverbindungsart, die nur für diese bestimmte Aufgabe verwendet werden muss, lautet „Power Apps-Prüfung“. Dies ist eine Dienstprinzipalverbindung. Weitere Informationen dazu, wie Sie Dienstprinzipale konfigurieren, bevor Sie die Aufgabe verwenden können, finden Sie [hier](https://aka.ms/buildtoolsconnection).  |
 | Speicherort der zu analysierenden Datei  | Geben Sie an, ob auf eine lokale Datei oder eine Referenzdatei über eine SAS-URL verwiesen wird. 
 | Lokale zu analysierende Datei/SAS-URI für zu analysierende Datei |  Geben Sie den Pfad und Dateinamen der zu analysierenden ZIP-Dateien an.   Platzhalter können verwendet werden. Beispielsweise **\*.zip für alle Dateien in allen Unterordnern. Sie können die Dateien direkt angeben oder einen Verweis auf eine Datei über eine SAS-URI.   |
 |  Regelsatz |   Geben Sie an, welcher Regelsatz angewendet werden soll. Die folgenden zwei Regelsätze stehen zur Verfügung: **Lösungsprüfung:** Dies ist derselbe Regelsatz, der über das [Hersteller-Portal](https://make.powerapps.com/) ausgeführt wird.    **AppSource:** Dies ist der erweiterte Regelsatz, der verwendet wird, um eine Anwendung zu zertifizieren, bevor sie in [AppSource](https://appsource.microsoft.com/) veröffentlicht werden kann.   |
 
-### <a name="configure-service-connection-for-powerapps-checker"></a>Konfigurieren der Dienstverbindung für die PowerApps-Prüfung
+### <a name="configure-service-connection-for-power-apps-checker"></a>Konfigurieren der Dienstverbindung für die Power Apps-Prüfung
 
-Bevor Sie die PowerApps-Prüfungsaufgabe konfigurieren können, müssen Sie zunächst die Dienstprinzipale definieren, die verwendet werden, um eine Verbindung mit dem PowerApps-Prüfungsdienst herzustellen. Weitere Informationen zum zugrunde liegenden PowerApps-Prüfungsdienst und zur Authentifizierung finden Sie [hier](https://docs.microsoft.com/powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module). Die folgenden Schritte enthalten jedoch alle Informationen, die Sie für den Anfang benötigen.
+Bevor Sie die Power Apps-Prüfungsaufgabe konfigurieren können, müssen Sie zunächst die Dienstprinzipale definieren, die verwendet werden, um eine Verbindung mit dem Power Apps-Prüfungsdienst herzustellen. Weitere Informationen zum zugrunde liegenden Power Apps-Prüfungsdienst und zur Authentifizierung finden Sie [hier](https://docs.microsoft.com/powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module). Die folgenden Schritte enthalten jedoch alle Informationen, die Sie für den Anfang benötigen.
 
-Nachfolgend wird beschrieben, wie Sie die erforderliche Azure Active Directory-Anwendung (AAD) mit dem [AzureAD-PowerShell-Modul](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0) generieren, einen geheimen Clientschlüssel hinzufügen und ihn dann verwenden, um die PowerApps-Prüfungsverbindungszeichenfolge zu konfigurieren.
+Nachfolgend wird beschrieben, wie Sie die erforderliche Azure Active Directory-Anwendung (AAD) mit dem [AzureAD-PowerShell-Modul](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0) generieren, einen geheimen Clientschlüssel hinzufügen und ihn dann verwenden, um die Power Apps-Prüfungsverbindungszeichenfolge zu konfigurieren.
 
 > [!NOTE]
-> Rechte zum Erstellen von Dienstprinzipalen in einem AAD-Mandanten, der für PowerApps (P1/P2) oder D365 CE lizenziert ist, sind erforderlich, um diese Schritte auszuführen. 
+> Rechte zum Erstellen von Dienstprinzipalen in einem AAD-Mandanten, der für Power Apps (P1/P2) oder D365 CE lizenziert ist, sind erforderlich, um diese Schritte auszuführen. 
 
 1. Öffnen Sie einen PowerShell-Befehl mit Administratorrechten.
 ![PowerShell-Befehlsfenster](media/pscommand.png "PPowerShell-Befehlsfenster)
@@ -113,7 +113,7 @@ Connect-AzureAD
 $tenantId = (Get-AzureADTenantDetail).ObjectId
 
 # Create the AAD application registration using the AzureAD module and the sample script
-$newApp = New-PowerAppsCheckerAzureADApplication -ApplicationDisplayName "PowerApps Checker Client" -TenantId $tenantId
+$newApp = New-PowerAppsCheckerAzureADApplication -ApplicationDisplayName "Power Apps Checker Client" -TenantId $tenantId
 
 # Next step => create a secret via the Admin portal, CLI, or PowerShell module.
  ```
@@ -123,7 +123,7 @@ $newApp = New-PowerAppsCheckerAzureADApplication -ApplicationDisplayName "PowerA
 6. Ein Anmeldedialogfeld wird angezeigt. Melden Sie sich als Benutzer an. Beachten Sie, dass Sie sich in einigen Fällen zweimal anmelden müssen.
 7. Nachdem das Skript abgeschlossen ist, werden die Anwendung-ID und der Mandant im Befehlsfenster angezeigt.
 8. Melden Sie sich anschließend bei [Azure AD](https://portal.azure.com) an, um den geheimen Clientschlüssel abzurufen.
-9. Wählen Sie in Microsoft Azure **Azure Active Directory –> App-Registrierungen –> PowerApps-Prüfungs-Client.**
+9. Wählen Sie in Microsoft Azure **Azure Active Directory –> App-Registrierungen –> Power Apps-Prüfungs-Client.**
 ![Auswählen des Prüferclient in Azure](media/azure-select-checker.png "AAzure Screenshot)
 10. Klicken Sie im linken Navigationsbereich unter **Verwalten** auf **Zertifikate und geheime Schlüssel**.
 11. Wählen Sie im Bildschirm **Zertifikate und geheime Schlüssel** unter **Geheime Clientschlüssel** die Option **Neuer geheimer Clientschlüssel** aus. 
@@ -132,40 +132,40 @@ $newApp = New-PowerAppsCheckerAzureADApplication -ApplicationDisplayName "PowerA
 ![Clientgeheimnis kopieren](media/client-secret-copy.png "ClClient geheimer Screenshot
     > [!NOTE]
     > Dies ist das einzige Mal, dass der geheime Clientschlüssel angezeigt wird.
-14. Öffnen Sie die Verbindung des PowerApps-Prüfungsdiensts, und fügen Sie den geheimen Clientschlüssel in das Feld **Dienstprinzipalschüssel** ein, und klicken Sie dann **OK**.
+14. Öffnen Sie die Verbindung des Power Apps-Prüfungsdiensts, und fügen Sie den geheimen Clientschlüssel in das Feld **Dienstprinzipalschüssel** ein, und klicken Sie dann **OK**.
 
-Ihre Verbindung ist jetzt bereit, und kann von der [PowerApps-Prüfungsbuildaufgabe](https://aka.ms/buildtoolsdoc) verwendet werden. 
+Ihre Verbindung ist jetzt bereit, und kann von der [Power Apps-Prüfungsbuildaufgabe](https://aka.ms/buildtoolsdoc) verwendet werden. 
 
 ## <a name="solution-tasks"></a>Lösungsaufgaben
 
 Diese Gruppe von Aufgaben führt Aktionen für Lösungen aus und enthält die folgenden Aufgaben:
 
-### <a name="powerapps-import-solution"></a>PowerApps: Lösung importieren
+### <a name="power-apps-import-solution"></a>Power Apps: Lösung importieren
 
 Die Aufgabe zum Importieren einer Lösung importiert eine Lösung in eine Zielumgebung.
 
 | **Parameter** | **Beschreibung** |
 |----|----|
-| PowerApps: Umgebungs-URL  | Der Dienstendpunkt für die Zielumgebung, in welche Sie die Lösung importieren möchten. Zum Beispiel: *https://powerappsbuildtools.crm.dynamics.com*.  Dienstendpunkte können unter **Dienstverbindungen** in **Projekteinstellungen** definiert werden. |
+| Power Apps: Umgebungs-URL  | Der Dienstendpunkt für die Zielumgebung, in welche Sie die Lösung importieren möchten. Zum Beispiel: *https://powerappsbuildtools.crm.dynamics.com*.  Dienstendpunkte können unter **Dienstverbindungen** in **Projekteinstellungen** definiert werden. |
 | Lösungseingabedatei  | Der Pfad und der Dateiname der Datei solution.zip, die in die Zielumgebung importiert werden soll. Beispiel: *$(Build.ArtifactStagingDirectory)\$(SolutionName).zip*.
  |
 > [!NOTE] 
 > Variablen sind eine bequeme Möglichkeit, wichtige Daten in verschiedene Teile der Pipeline zu übertragen. Eine vollständige Liste von vordefinierten Variablen ist [hier](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml) verfügbar.
 
-### <a name="powerapps-export-solution"></a>PowerApps: Lösung exportieren
+### <a name="power-apps-export-solution"></a>Power Apps: Lösung exportieren
 
 Die Aufgabe zum Exportieren einer Lösung exportiert eine Lösung aus einer Quellumgebung.
 
 | **Parameter** | **Beschreibung** |
 |----------|-------------|
-| PowerApps: Umgebungs-URL | Der Dienstendpunkt für die Quellumgebung, aus der Sie die Lösung exportieren möchten.  Definiert unter **Dienstverbindungen -> Generische Dienstverbindung** in **Projekteinstellungen**. |
+| Power Apps: Umgebungs-URL | Der Dienstendpunkt für die Quellumgebung, aus der Sie die Lösung exportieren möchten.  Definiert unter **Dienstverbindungen -> Generische Dienstverbindung** in **Projekteinstellungen**. |
 | Lösungsname | Der Name der zu exportierenden Lösung. Verwenden Sie immer den Lösungsnamen. Nicht den Anzeigenamen. |
 | Lösungsausgabedatei | Der Pfad und der Dateiname der Datei solution.zip, in die die Quellumgebung exportiert werden soll. Beispiel: *$(Build.ArtifactStagingDirectory)\$(SolutionName).zip*. |
 
 > [!NOTE] 
 > Variablen sind eine bequeme Möglichkeit, wichtige Daten in verschiedene Teile der Pipeline zu übertragen. Eine vollständige Liste von vordefinierten Variablen ist hier verfügbar.
  
-### <a name="powerapps-unpack-solution"></a>PowerApps: Lösung entpacken
+### <a name="power-apps-unpack-solution"></a>Power Apps: Lösung entpacken
 
 Die Aufgabe zum Entpacken einer Lösung nimmt eine komprimierte Lösungsdatei und entpackt sie in mehrere XML-Dateien und andere Dateien, sodass diese Dateien durch ein Quellcodeverwaltungssystem leichter verwaltet werden können.
 
@@ -176,7 +176,7 @@ Die Aufgabe zum Entpacken einer Lösung nimmt eine komprimierte Lösungsdatei un
 | Lösungstyp | Der Typ der Lösung, die Sie entpacken möchten: **Nicht verwaltet** (empfohlen): *Nur die nicht verwaltete Lösung sollte in das Repo entpackt werden*, **Verwaltet**, **Beide** |
 
 
-### <a name="powerapps-pack-solution"></a>PowerApps: Lösung verpacken
+### <a name="power-apps-pack-solution"></a>Power Apps: Lösung verpacken
 
 Packt eine Lösung, die im Quellsteuerelement dargestellt wird, in eine solution.zip-Datei, die in eine Umgebung importiert werden kann.
 
@@ -192,31 +192,31 @@ Die Aufgabe für die Veröffentlichung von Anpassungen veröffentlicht alle Anpa
 
 | **Parameter** | **Beschreibung** |
 |------------|---------|
-| PowerApps: Umgebungs-URL | Der Dienstendpunkt für die Umgebung, in der Sie Anpassungen veröffentlichen möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
+| Power Apps: Umgebungs-URL | Der Dienstendpunkt für die Umgebung, in der Sie Anpassungen veröffentlichen möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
 
-### <a name="powerapps-set-solution-version"></a>PowerApps: Lösungsversion festlegen 
+### <a name="power-apps-set-solution-version"></a>Power Apps: Lösungsversion festlegen 
 
 Die Aufgabe zum Festlegen der Lösungsversion aktualisiert die Version einer Lösung.
 
 | **Parameter** | **Beschreibung** |
 |---------------------------|----|
-| PowerApps: Umgebungs-URL  | Der Dienstendpunkt für die Umgebung, in der Sie das Paket bereitstellen möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
+| Power Apps: Umgebungs-URL  | Der Dienstendpunkt für die Umgebung, in der Sie das Paket bereitstellen möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
 | Lösungsname  | Der Name der Lösung, für die sie eine Versionsnummer festlegen möchten |
 | Ziellösungsversionsnummer | Einzustellende Versionsnummer, Verwendung des Formates `major.minor.build.revision` beispielsweise **1.0.0.1** |
 
-### <a name="powerapps-deploy-package"></a>PowerApps: Bereitstellungspaket
+### <a name="power-apps-deploy-package"></a>Power Apps: Bereitstellungspaket
 
 Die Aufgabe zum Bereitstellen eines Pakets stellt ein Paket in einer Umgebung bereit. Das Bereitstellen des Pakets im Gegensatz zu einer einzelnen Lösungsdatei bietet eine Möglichkeit, mehrere Lösungen, Daten und Code in einer Umgebung bereitzustellen.
 
 | **Parameter** | **Beschreibung** |
 |---------------------------|----|
-| PowerApps: Umgebungs-URL  | Der Dienstendpunkt für die Zielumgebung, in welcher die zu aktualisierende Lösung gespeichert ist.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
+| Power Apps: Umgebungs-URL  | Der Dienstendpunkt für die Zielumgebung, in welcher die zu aktualisierende Lösung gespeichert ist.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
 
 ## <a name="environment-management-tasks"></a>Umgebungsverwaltungsaufgaben
 
 Umgebungsverwaltungsaufgaben werden verwendet, um allgemeine Umgebungsverwaltungsfunktionen zu automatisieren, und umfassen die folgenden Aufgaben:
 
-### <a name="powerapps-create-environment"></a>PowerApps: Umgebung erstellen
+### <a name="power-apps-create-environment"></a>Power Apps: Umgebung erstellen
 
 Die Aufgabe zum Erstellen von Umgebungen erstellt eine Umgebung.
 
@@ -231,24 +231,24 @@ Die Aufgabe zum Erstellen von Umgebungen erstellt eine Umgebung.
 | Domänenname | Dies ist die umgebungsspezifische Zeichenfolge, die einen Teil der URL bildet. Beispiel für eine Umgebung mit der folgenden URL: *https://powerappsbuildtasks.crm.dynamics.com*, der Domänenname lautet „powerappsbuildtasks“.  HINWEIS: Wenn Sie einen Domänennamen eingeben, der bereits verwendet wird, fügt die Aufgabe der URL einen numerischen Wert an, beginnend mit 0. Für das Beispiel oben könnte die URL *https://powerappsbuildtasks0.crm.dynamics.com* lauten. |
 | Anzeigename | Der Anzeigename der Umgebung. |
 
-### <a name="powerapps-delete-environment"></a>PowerApps: Umgebung löschen
+### <a name="power-apps-delete-environment"></a>Power Apps: Umgebung löschen
 
 Die Aufgabe zum Löschen von Umgebungen löscht eine Umgebung.
 
 | **Parameter** | **Beschreibung** |
 |---------|-----------|
-| PowerApps: Umgebungs-URL  | Der Dienstendpunkt für die Umgebung, die Sie löschen möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
+| Power Apps: Umgebungs-URL  | Der Dienstendpunkt für die Umgebung, die Sie löschen möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
 
-### <a name="powerapps-backup-environment"></a>PowerApps: Sicherungsumgebung
+### <a name="power-apps-backup-environment"></a>Power Apps: Sicherungsumgebung
 
 Die Aufgabe zum Sichern von Umgebungen sichert eine Umgebung. 
 
 | **Parameter** | **Beschreibung** |
 |---------|-----------|
-| PowerApps: Umgebungs-URL  | Der Dienstendpunkt für die Umgebung, die Sie sichern möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
+| Power Apps: Umgebungs-URL  | Der Dienstendpunkt für die Umgebung, die Sie sichern möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
 | Sicherungsbeschriftung  | Die Beschriftung, die der Sicherung zugewiesen werden soll.  |
 
-### <a name="powerapps-copy-environment"></a>PowerApps: Umgebung kopieren
+### <a name="power-apps-copy-environment"></a>Power Apps: Umgebung kopieren
 
 Die Aufgabe zum Kopieren von Umgebungen kopiert eine Umgebung in eine Zielumgebung. Zwei Arten von Kopiervorgängen stehen zur Verfügung: vollständig und minimal. Beim vollständigen Kopieren werden sowohl Daten als auch Lösungsmetadaten (Anpassungen) kopiert, während beim minimalen Kopieren die Lösungsmetadaten, nicht aber die tatsächlichen Daten kopiert werden.
 
@@ -257,5 +257,5 @@ Die Aufgabe zum Kopieren von Umgebungen kopiert eine Umgebung in eine Zielumgebu
 
 | **Parameter** | **Beschreibung** |
 |---------|-----------|
-| PowerApps: Quellumgebungs-URL  | Der Dienstendpunkt für die Umgebung, aus der Sie kopieren möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
-| PowerApps: Zielumgebungs-URL  | Der Dienstendpunkt für die Umgebung, in die Sie kopieren möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
+| Power Apps: Quellumgebungs-URL  | Der Dienstendpunkt für die Umgebung, aus der Sie kopieren möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
+| Power Apps: Zielumgebungs-URL  | Der Dienstendpunkt für die Umgebung, in die Sie kopieren möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |

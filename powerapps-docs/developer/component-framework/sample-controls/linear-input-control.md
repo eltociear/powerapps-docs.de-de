@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f7dcc3fef22c354b1fed684a09fb091f2d2c6cb7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 131ca8fecf58477d9e51d2a31b53ad894c851f7f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748783"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861952"
 ---
 # <a name="implementing-linear-input-component"></a>Implementieren der linearen Eingabekomponente
 
@@ -57,7 +57,7 @@ export class TSLinearInputControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control
   private _value: number;
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // label element created as part of this control
   private labelElement: HTMLLabelElement;
@@ -246,7 +246,7 @@ Erstellen Sie eine Variable zum Speichern von [Kontext](../reference/context.md)
 Implementieren Sie die Logik für die `refreshData`-Funktion. Wie im Beispiel zu sehen ist, wird der Wert aus `inputElement` übernommen und der Wert der Komponente wird auf  `innerHTML`-Eigenschaft von `labelElement` festgelegt. Dann rufen Sie `notifyOutputChanged` auf, damit die Änderungen über die Frameworkebene heraufgestuft werden.
 
 ```TypeScript
-public refreshData(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>) 
+public refreshData(context: ComponentFramework.IPropBag<InputsOutputs.IInputBag>) 
 { 
    this._value = (this.inputElement.value as any)as number; 
    this.labelElement.innerHTML = this.inputElement.value; 
@@ -258,7 +258,7 @@ In die `updateView`-Methode erhalten wir den Wert des Attributs aus context.para
 
 ```TypeScript
 
-public updateView(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>): void 
+public updateView(context: ComponentFramework.IPropBag<InputsOutputs.IInputBag>): void 
  { 
     this._value = context.parameters.controlValue.raw; 
     this._context = context; 
@@ -270,5 +270,6 @@ public updateView(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>): 
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten verwenden](../use-sample-components.md)<br/>
+[Power Apps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)

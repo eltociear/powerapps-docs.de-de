@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0dd20288c36354903ab81ee3947336479f2e4c47
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f78aefd09433c956d278db7d1c7ae209b5239450
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705973"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861689"
 ---
 # <a name="change-the-solution-publisher-prefix"></a>Ändern des Lösungsherausgeberpräfix
 
-Alle Anpassungen, die Sie vornehmen, ist Teil einer Lösung. Jede Lösung hat einen Herausgeber. Standardmäßig ist die Lösung, die Sie in PowerApps bearbeiten, die **Common Data Service-Standardlösung** die dem **Common Data Service-Standardherausgeber** zugeordnet ist.
+Alle Anpassungen, die Sie vornehmen, ist Teil einer Lösung. Jede Lösung hat einen Herausgeber. Standardmäßig ist die Lösung, die Sie in Power Apps bearbeiten, die **Common Data Service-Standardlösung** die dem **Common Data Service-Standardherausgeber** zugeordnet ist.
 
 Das Standardanpassungspräfix wird zufällig für diesen Herausgeber zugewiesen, und ist beispielsweise`cr8a3`. Das bedeutet, dass der Name jedes neuen Artikels der Metadaten, die für die Organisation erstellt wurden, diese Endung im Namen hat, um die Elemente eindeutig zu identifizieren. Wenn Sie eine neue Entität namens **Tier** erstellen, lautet der eindeutige Name, der von Common Data Service verwendet wird, `cr8a3_animal`. Dasselbe gilt für alle neuen Felder (Attribute), Beziehungen oder optionset Optionen.
 
@@ -43,7 +43,7 @@ Aus diesem Grund werden viele Benutzer das Lösungsherausgeberpräfix ändern, s
 
 ## <a name="change-the-solution-publisher-prefix-for-the-common-data-service-default-publisher"></a>So ändern Sie das Lösungsherausgeberpräfix für den Common Data Service-Standardherausgeber  
 
- 1. Im PowerApps-Portal wählen Sie **Modellgesteuert** in der unteren linken Ecke.
+ 1. Im Power Apps-Portal wählen Sie **Modellgesteuert** in der unteren linken Ecke.
  2. Klicken Sie auf **Erweitert** in der linken Navigation, um **Common Data Service-Standardlösung zu öffnen**
  3. Klicken Sie im Lösungsexplorer und wählen Sie **Informationen** im linken Navigationsbereich aus.
  4. Klicken Sie auf den Link **Herausgeber**, um das Formular **Common Data Service-Standardherausgeber** zu öffnen.
@@ -54,7 +54,7 @@ Aus diesem Grund werden viele Benutzer das Lösungsherausgeberpräfix ändern, s
 
 Personen, die Ihre Lösungen verteilen, arbeiten in der Regel in einer Lösung, die sie erstellen und weniger der **Common Data Service-Standardlösung**. Der Anpassungspräfix wird in der Regel festgelegt, wenn sie die Lösung erstellen. Sie können das Anpassungspräfix für eine andere nicht verwaltete Lösung ändern, mit der Sie Arbeiten mit folgenden Schritten: 
 
- 1. Im PowerApps-Portal wählen Sie **Modellgesteuert** in der unteren linken Ecke.
+ 1. Im Power Apps-Portal wählen Sie **Modellgesteuert** in der unteren linken Ecke.
  2. Klicken Sie auf **Erweitert** in der linken Navigation, um **Common Data Service-Standardlösung zu öffnen**
  3. Bearbeiten Sie die URL der Seite, um alles nach zu `dynamics.com` entfernen und laden Sie die Seite erneut.
  4. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**. 

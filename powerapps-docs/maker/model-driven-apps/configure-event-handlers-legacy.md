@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Ereignishandlern für modellgesteuerte App-Hauptformulare in PowerApps | MicrosoftDocs
+title: Konfigurieren von Ereignishandlern für modellgesteuerte App-Hauptformulare in Power Apps | MicrosoftDocs
 description: Konfiguration von Ereignishandlern
 author: Mattp123
 ms.author: matp
@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a824183a3d208131754289984aeaa8377d4a352
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 385255d46ad358a8b33385e9e1495bd310cb1cb4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701133"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863638"
 ---
 # <a name="configure-model-driven-app-form-event-handlers"></a>Konfigurieren Sie Modell-angetriebene App-Formularereignishandler
 
- Formularereignishandler für PowerApps-Formulare können für die folgenden Bereiche in einem Formular konfiguriert werden:  
+ Formularereignishandler für Power Apps-Formulare können für die folgenden Bereiche in einem Formular konfiguriert werden:  
   
 |Element|Ereignis|Beschreibung|  
 |-------------|-----------|-----------------|  

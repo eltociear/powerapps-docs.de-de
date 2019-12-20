@@ -1,6 +1,6 @@
 ---
 title: Analyse aufrufen | Microsoft Docs
-description: Erfahren Sie, wie Sie eine POST-Anforderung mithilfe der PowerApps-Überprüfungs-Web-API erstellen können, um den Analyseanforderungsauftrag zu initiieren.
+description: Erfahren Sie, wie Sie eine POST-Anforderung mithilfe der Power Apps-Überprüfungs-Web-API erstellen können, um den Analyseanforderungsauftrag zu initiieren.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dad4a5ad069287ad84ff0cbf237dbdb243b82076
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9c4ddd64f5c32b9ea12782f34d0194082786f474
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748232"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861827"
 ---
 # <a name="invoke-analysis"></a>Analyse aufrufen
 
@@ -113,7 +113,7 @@ Location: [Geographical URI]/api/status/9E378E56-6F35-41E9-BF8B-C0CC88E2B832&api
 
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der PowerApps-Überprüfungs-Web-API](overview.md)<br />
+[Verwenden der Power Apps-Überprüfungs-Web-API](overview.md)<br />
 [Abrufen der Regelsatz-Liste](retrieve-rulesets.md)<br />
 [Abrufen der Regel-Liste](retrieve-rules.md)<br />
 [Hochladen einer Datei](upload-file.md)<br />

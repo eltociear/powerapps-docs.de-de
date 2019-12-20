@@ -1,5 +1,5 @@
 ---
-title: Entitätsfelder zuordnen in PowerApps | Microsoft-Dokumentation
+title: Entitätsfelder zuordnen in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Entitätsfelder zugeordnet werden
 ms.custom: ''
 ms.date: 05/29/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7175a56b4658d19510c007efbf4bdcd02d88db2f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a5da8b9ecfb2bbba2a4e03fbc0d28301c41e2a7c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704609"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860893"
 ---
 # <a name="map-entity-fields"></a>Entitätsfelder zuordnen
  

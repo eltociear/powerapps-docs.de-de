@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0d9b49857528cf0e55fa2ad3dfcaae2aa88b77c0
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759906"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815980"
 ---
 # <a name="enable-azure-storage"></a>Aktivieren von Azure Storage
 
@@ -55,7 +55,7 @@ Navigieren Sie in der [App Portalverwaltung](configure/configure-portal.md) zu *
 
 Sie müssen auch die ursprungsübergreifende Ressourcenfreigabe (Cross-Origin Resource Sharing, CORS) in Ihrem Azure-Speicherkonto hinzufügen, andernfalls wird das reguläre Anlagensymbol anstelle des Wolkensymbols angezeigt:
 
-- **Zulässige Ursprünge**: Geben Sie Ihre Domäne an. Zum Beispiel contoso.crm.dynamics.com.
+- **Zulässige Ursprünge**: Geben Sie Ihre Domäne an. Zum Beispiel: `http://contoso.crm.dynamics.com`.
 - **Zulässige Verben**: GET, PUT, DELETE, HEAD, POST
 - **Zulässige Überschriften**: Geben Sie die erforderlichen Überschriften an, die möglicherweise die Ursprungsdomäne auf der CORS-Anforderung angibt. Beispielsweise x-ms-meta-data\*, x-ms-meta-target\*. 
 - **Verfügbar gemachte Überschriften**: Geben Sie die Antwortheader an, die möglicherweise in der Antwort zur CORS-Anforderung gesendet und vom Browser für den angeforderten Aussteller verfügbar gemacht werden. Beispielsweise x-ms-meta-\*.

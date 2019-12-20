@@ -23,16 +23,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3e3a3e8bd5527f9707849bf1b54247605d447469
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d052e981d80578a2db844f3e8ff3f70ff0c07c2c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704565"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884911"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>Erstellen und entwerfen von Modell-angetriebenen App-Formularen 
 
-Mit PowerApps bieten Formulare die Benutzeroberfläche, mit der Benutzer mit den Daten interagieren, die sie für Ihre Arbeit benötigen. Es ist wichtig, dass die Formulare, die die Benutzer verwenden, so konzipiert sind, dass benötigte Informationen effektiv gefunden oder eingegeben werden können. 
+Mit Power Apps bieten Formulare die Benutzeroberfläche, mit der Benutzer mit den Daten interagieren, die sie für Ihre Arbeit benötigen. Es ist wichtig, dass die Formulare, die die Benutzer verwenden, so konzipiert sind, dass benötigte Informationen effektiv gefunden oder eingegeben werden können. 
 
 In der Standardlösung oder einer nicht verwalteten Lösung können Sie für alle Entitäten, die eine Anpassung erlauben, neue Formulare erstellen oder vorhandene Formulare bearbeiten. In einer nicht verwalteten Lösung können Sie die verwalteten Eigenschaften für eine nicht verwaltete benutzerdefinierte Entität bearbeiten, die für die Lösung erstellt wurde.
 Wenn Sie eine verwaltete Lösung anzeigen, können Sie keine neuen Formulare für Entitäten erstellen oder vorhandene Formulare bearbeiten. Wenn jedoch die verwalteten Eigenschaften für eine Entität in der verwalteten Lösung eine Anpassung erlauben, können Sie für diese Entität Formulare hinzufügen oder vorhandene Formulare bearbeiten. 
@@ -40,12 +40,12 @@ Wenn Sie eine verwaltete Lösung anzeigen, können Sie keine neuen Formulare fü
 
 <a name="BKMK_TypesOfForms"></a> 
 ## <a name="type-of-forms"></a>Typ der Formulare
-Es gibt mehrere unterschiedliche Arten von Formularen und jeder Typ verfügt über eine Funktion oder Verwendung. Weitere Informationen: [Typen von Formularen in PowerApps](types-forms.md).  
+Es gibt mehrere unterschiedliche Arten von Formularen und jeder Typ verfügt über eine Funktion oder Verwendung. Weitere Informationen: [Typen von Formularen in Power Apps](types-forms.md).  
 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
 ## <a name="updated-versus-classic-entities"></a>Aktualisierte versus klassische Entitäten  
-PowerApps bietet zahlreiche Optionen zum Entwerfen von Formularen. Mit der einheitlichen Oberfläche wurden die meisten Entitäten aktualisiert, damit sie sich für die dynamische Benutzeroberfläche eignen. Aktualisierte Entitäten und Ihre eigenen benutzerdefinierten Entitäten bieten Unterstützung für den Dynamics 365 for tablets Client, Geschäftsprozessflüsse und Geschäftsregeln. Wenn Sie diese Entitäten verwenden, können Sie einmal entwerfen und für alle Clients bereitstellen.  
+Power Apps bietet zahlreiche Optionen zum Entwerfen von Formularen. Mit der einheitlichen Oberfläche wurden die meisten Entitäten aktualisiert, damit sie sich für die dynamische Benutzeroberfläche eignen. Aktualisierte Entitäten und Ihre eigenen benutzerdefinierten Entitäten bieten Unterstützung für den Dynamics 365 for tablets Client, Geschäftsprozessflüsse und Geschäftsregeln. Wenn Sie diese Entitäten verwenden, können Sie einmal entwerfen und für alle Clients bereitstellen.  
   
 Es gibt immer noch mehrere Entitäten (klassische Entitäten), die die Darstellung und Funktionen aus früheren Versionen verwenden. Diesen Entitäten werden weniger häufig verwendet. Sie sind hier aufgelistet:  
   

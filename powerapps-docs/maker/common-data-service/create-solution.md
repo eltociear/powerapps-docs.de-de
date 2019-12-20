@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9e57aa7395b6c8fdbcfe35c944f625d9790f592a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c917314137580ffee9d70f702c87bfb265a55810
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757662"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872955"
 ---
 # <a name="create-a-solution"></a>Erstellen einer Lösung
 
@@ -35,7 +35,7 @@ Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich 
   
  Weitere Informationen zu Lösungskonzepte, siehe [Arbeiten mit Lösungen](solutions-overview.md).  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** aus der linken Navigation. 
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** aus der linken Navigation. 
   
 2.  Klicken Sie auf **Neue Lösung**, und füllen Sie die erforderlichen Felder für die Lösung aus.
   

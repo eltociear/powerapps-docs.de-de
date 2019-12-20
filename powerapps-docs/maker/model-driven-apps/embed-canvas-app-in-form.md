@@ -16,18 +16,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1d763fd341c3537f908720ea9616b1646bda1745
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4a2f17995d92d09ad025d643589f5993041a2f96
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704829"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884815"
 ---
 # <a name="embed-a-canvas-app-on-a-model-driven-form"></a>Einbetten einer Canvas-App in einem modellgesteuerten Formular
 
@@ -45,9 +45,9 @@ Nachdem Sie eine eingebettete Canvas-App zu Ihrem modellgestützten Formular hin
 Richtlinien für die Arbeit mit eingebetteten Canvas-Apps sowie hilfreiche Tipps zur Fehlerbehebung bei Problemen, die auftreten könnten, finden Sie hier: [Richtlinien für die Arbeit mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md).
 
 ## <a name="see-also"></a>Siehe auch
-[Was sind Canvas-Apps in PowerApps?](../canvas-apps/getting-started.md) <br />
-[Hinzufügen und konfigurieren eines CanvasApp-Steuerelements in PowerApps](../canvas-apps/add-configure-controls.md) <br />
-[Übersicht über Canvas-App-Konnektoren für PowerApps](../canvas-apps/connections-list.md) <br />
+[Was sind Canvas-Apps in Power Apps?](../canvas-apps/getting-started.md) <br />
+[Hinzufügen und konfigurieren eines CanvasApp-Steuerelements in Power Apps](../canvas-apps/add-configure-controls.md) <br />
+[Übersicht über Canvas-App-Konnektoren für Power Apps](../canvas-apps/connections-list.md) <br />
 [Hinzufügen einer eingebetteten Canvas-App in einem modellgesteuerten Formular](embedded-canvas-app-add-classic-designer.md) <br />
 [Bearbeiten einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist](embedded-canvas-app-edit-classic-designer.md) <br />
 [Anpassen der Bildschirmgröße und Ausrichtung einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist](embedded-canvas-app-customize-screen.md) <br />

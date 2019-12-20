@@ -1,6 +1,6 @@
 ---
-title: Alternativschlüssel mithilfe von PowerApps-Portal definieren | Microsoft-Dokumentation
-description: Weitere Informationen zum Definieren von Alternativschlüsseln mithilfe von PowerApps-Portal
+title: Alternativschlüssel mithilfe von Power Apps-Portal definieren | Microsoft-Dokumentation
+description: Weitere Informationen zum Definieren von Alternativschlüsseln mithilfe von Power Apps-Portal
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fec01122ad00710507fb3e0976ec9f80115f06cf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d52b3fa67863a43f82f020f3894bbabf5d38df84
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758876"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865465"
 ---
-# <a name="define-alternate-keys-using-powerapps-portal"></a>Alternativschlüssel mithilfe von PowerApps-Portal definieren
+# <a name="define-alternate-keys-using-power-apps-portal"></a>Alternativschlüssel mithilfe von Power Apps-Portal definieren
 
-Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Entitätsalternativschlüssel mit dem Common Data Service anzuzeigen und zu erstellen.
+Das [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Entitätsalternativschlüssel mit dem Common Data Service anzuzeigen und zu erstellen.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. <br />Weitere Informationen: 
 - [Definieren von Alternativschlüsseln für den Verweis auf Datensätze](define-alternate-keys-reference-records.md)
@@ -37,7 +37,7 @@ PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch b
 
 ## <a name="view-alternate-keys"></a>Alternativschlüssel anzeigen
 
-1. Wählen Sie im [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
+1. Wählen Sie im [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
 2. Wählen Sie **Daten** > **Entitäten** und die Entität aus, die Sie anzeigen möchten.
 3. Wählen Sie **Schlüssel** aus, um eine Liste der Alternativschlüssel anzuzeigen, die definiert werden.
 

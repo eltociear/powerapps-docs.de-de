@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 73b8af19419bb59fe63e7ecea92188d6cff4c180
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707953"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866353"
 ---
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist
 
-Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist, als sortierbare Tabelle mit Seitennummerierung. Verwendet [entitylist](liquid-objects.md#entitylist), [entitylist](liquid-objects.md#entityview), [PowerApps Common Data Service Entity-Tags](portals-entity-tags.md), [Site](liquid-objects.md#page) und [Query](liquid-objects.md#request) Parameter, einschließlich Suche und Auswahl mehrerer Ansichten.  
+Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist, als sortierbare Tabelle mit Seitennummerierung. Verwendet [entitylist](liquid-objects.md#entitylist), [entitylist](liquid-objects.md#entityview), [Power Apps Common Data Service Entity-Tags](portals-entity-tags.md), [Site](liquid-objects.md#page) und [Query](liquid-objects.md#request) Parameter, einschließlich Suche und Auswahl mehrerer Ansichten.  
 
 ```xml
 {% entitylist id:page.adx_entitylist.id %}

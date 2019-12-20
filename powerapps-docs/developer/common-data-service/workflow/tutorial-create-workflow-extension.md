@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e3ef73edca48bf9a72f8078a6985ee299baee702
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0e143eba56729944bf04d11736a949cfca538449
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748333"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872673"
 ---
 # <a name="tutorial-create-workflow-extension"></a>Lernprogramm: Erstellen einer Workflow-Erweiterung
 
@@ -254,7 +254,7 @@ Benutzerdefinierte Workflowaktivitätsassemblys werden mithilfe des Plug-In-Regi
 
 Sie können Ihre neue Workflowaktivität testen, indem Sie einen Prozess erstellen, der sie verwendet. Führen Sie diese Schritte aus, um den Workflowprozess zu erstellen, der im obigen Abschnitt [Ziel](#goal) beschrieben wird:
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) öffnen
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) öffnen
 1. Wählen Sie **Lösungen** aus.
 1. Öffnen Sie die Lösung **CDS Default Publisher**.
 1. Erweitern Sie im Menü die Option **...** und wählen Sie **Wechsel zu klassisch**.
@@ -332,7 +332,7 @@ Sie können Ihre neue Workflowaktivität testen, indem Sie einen Prozess erstell
 
 Um eine benutzerdefinierte Workflowaktivität in einer Lösung zu verteilen, müssen Sie die registrierte Assembly, die sie enthält, einer nicht verwalteten Lösung hinzufügen.
 
-1. Öffnen Sie die nicht verwaltete Lösung, der Sie die Assembly hinzufügen möchten, mit [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+1. Öffnen Sie die nicht verwaltete Lösung, der Sie die Assembly hinzufügen möchten, mit [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 1. Wählen Sie **Bestehendes hinzufügen** > **Weitere** > **Plugin-Assembly**.
 
     ![Vorhandenes Plugin-Assembly hinzufügen](media/add-existing-plugin-assembly.png)

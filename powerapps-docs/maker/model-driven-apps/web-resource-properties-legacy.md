@@ -1,5 +1,5 @@
 ---
-title: Webressourceneigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | Microsoft-Dokumentation
+title: Webressourceneigenschaften für Hauptformulare in modellgesteuerten Apps in Power Apps | Microsoft-Dokumentation
 description: Grundlegendes zur Webressourceneigenschaften für Hauptformulare
 Keywords: Hauptformular; Webressourceneigenschaften; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: efc8f74806a464f4aa8b37df875e429ba92247b8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7784c70c2559aeecb5fabb7f44efdfc644f55b33
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710153"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867453"
 ---
 # <a name="web-resource-properties-for-model-driven-app-forms"></a>Webressourceneigenschaften für modellgesteuerte App-Formulare
 

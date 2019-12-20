@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 2de821da110808432cc6769995e94c9d2a1e8523
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 36c6657e8f565b38495dded1f408c21cc0414356
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709053"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866969"
 ---
 # <a name="portal-management-app"></a>Portalverwaltungs-App
 
 Die Portalverwaltungs-App lässt Sie erweiterte Konfigurationsaktionen ausführen auf Ihrem Portal durchführen. Die App ist verfügbar, nachdem die Datenbank auf Common Data Service erfolgreich erstellt wurde.
 
-Um die Portalverwaltungs-App zu öffnen, gehen Sie zum Abschnitt **Ihre Apps** auf der PowerApps Homepage, suchen Sie die Portalverwaltungs-App, und wählen Sie sie aus.
+Um die Portalverwaltungs-App zu öffnen, gehen Sie zum Abschnitt **Ihre Apps** auf der Power Apps Homepage, suchen Sie die Portalverwaltungs-App, und wählen Sie sie aus.
 
 > [!div class=mx-imgBorder]
 > ![Portalverwaltungs-App](../media/portal-mgmt.png "Portalverwaltungs-App")

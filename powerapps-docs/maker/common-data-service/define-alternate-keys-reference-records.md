@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6c620f518331f46ef3e662040975cd8c6c5625a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7ad5f422c0d45bbeb60ae43e687329b1fb770c2b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758806"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861157"
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>Definieren von Alternativschlüsseln für den Verweis auf Datensätze
 
@@ -38,7 +38,7 @@ Ein Datenintegrationssystem verwendet Alternativschlüssel, um Datensätze mit e
 Möchten Sie beispielsweise einen Firmendatensatz mit einem Alternativschlüssel identifizieren, können Sie die Firmennummer oder das Firmennummernfeld in Verbindung mit mehreren anderen Feldern verwenden, die Werte enthalten, die nicht geändert werden sollten.
 
 > [!NOTE]
-> Obwohl Sie Alternativschlüssel mit PowerApps definieren können, können diese aber nur programmgesteuert im Code verwendet werden. Weitere Informationen über die programmgesteuerte Verwendung von Alternativschlüsseln finden Sie unter:   
+> Obwohl Sie Alternativschlüssel mit Power Apps definieren können, können diese aber nur programmgesteuert im Code verwendet werden. Weitere Informationen über die programmgesteuerte Verwendung von Alternativschlüsseln finden Sie unter:   
 > - [Entwicklerdokumentation: Verwenden Sie einen Alternativschlüssel, um Datensätze zu erstellen](/dynamics365/customer-engagement/developer/use-alternate-key-create-record) 
 > - [Dokumentation für Entwickler: Abrufen eines Datensatzes mit Web-API mithilfe eines Alternativschlüssels](/dynamics365/customer-engagement/developer/webapi/retrieve-entity-using-web-api#retrieve-using-an-alternate-key)
 
@@ -55,7 +55,7 @@ Sie können zwei Designer verwenden, um Alternativschlüssel zu erstellen:
 
 |Designer| Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige Optionen sind nicht verfügbar.<br />Weitere Informationen: [Alternativschlüssel mithilfe von PowerApps-Portalen festlegen](define-alternate-keys-portal.md)|
+|[Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige Optionen sind nicht verfügbar.<br />Weitere Informationen: [Alternativschlüssel mithilfe von Power Apps-Portalen festlegen](define-alternate-keys-portal.md)|
 |Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen.<br />Weitere Informationen: [Alternativschlüssel mithilfe des Projektmappen-Explorers festlegen](define-alternate-keys-solution-explorer.md) |
 
 > [!NOTE]
@@ -65,7 +65,7 @@ Sie können zwei Designer verwenden, um Alternativschlüssel zu erstellen:
 
 Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. 
 
-Sie sollten das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden, um alternative Schlüssel zu erstellen, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
+Sie sollten das [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden, um alternative Schlüssel zu erstellen, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
 
 - Erstellen eines Alternativschlüssels in einer Lösung die keine Common Data Service-Standardlösung ist
 - Sie möchten den erstellten Systemauftrag, der den Status der Erstellung der unterstützenden Indizes nachverfolgt, ganz leicht nachverfolgen
@@ -120,7 +120,7 @@ Wenn der Systemauftrag fehlschlägt, suchen Sie den Systemauftrag, um Fehler anz
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Alternativschlüssel mithilfe von PowerApps-Portalen festlegen](define-alternate-keys-portal.md)<br />
+[Alternativschlüssel mithilfe von Power Apps-Portalen festlegen](define-alternate-keys-portal.md)<br />
 [Alternativschlüssel mithilfe des Projektmappen-Explorers festlegen](define-alternate-keys-solution-explorer.md)<br />
 [Entwicklerdokumentation: Definieren eines Alternativschlüssels für eine Entität](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)<br />
 [Entwicklerdokumentation: Verwenden Sie einen Alternativschlüssel, um Datensätze zu erstellen](/dynamics365/customer-engagement/developer/use-alternate-key-create-record)

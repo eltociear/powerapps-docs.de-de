@@ -1,8 +1,8 @@
 ---
-title: Erstellen und Verwenden von Dataflows in PowerApps | MicrosoftDocs
-description: Informationen zum Erstellen und Verwenden von Dataflows in PowerApps
+title: Erstellen und Verwenden von Dataflows in Power Apps | MicrosoftDocs
+description: Informationen zum Erstellen und Verwenden von Dataflows in Power Apps
 ms.custom: ''
-ms.date: 08/05/2019
+ms.date: 12/05/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,25 +23,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ad261f668c36e623b35e619e4d573401f3b547a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c1f58228cb86ae7415739f5e6ffe4b3175b87b0d
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705797"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895034"
 ---
-# <a name="create-and-use-dataflows-in-powerapps"></a>Erstellen und Verwenden von Dataflows in PowerApps
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# <a name="create-and-use-dataflows-in-power-apps"></a>Erstellen und Verwenden von Dataflows in Power Apps
 
-Mit der erweiterten Datenaufbereitung, die in PowerApps verfügbar ist, können Sie eine Datensammlung erstellen, Dataflow genannt, die Sie verwenden können, um eine Verbindung mit Geschäftsdaten aus verschiedenen Quellen herzustellen, die Daten zu bereinigen, sie zu transformieren und sie dann in Common Data Service oder das Azure Data Lake Gen2-Speicherkonto Ihrer Organisation zu laden.
+Mit der erweiterten Datenaufbereitung, die in Power Apps verfügbar ist, können Sie eine Datensammlung erstellen, Dataflow genannt, die Sie verwenden können, um eine Verbindung mit Geschäftsdaten aus verschiedenen Quellen herzustellen, die Daten zu bereinigen, sie zu transformieren und sie dann in Common Data Service oder das Azure Data Lake Gen2-Speicherkonto Ihrer Organisation zu laden.
 
-Ein Dataflow ist eine Sammlung von Entitäten (Entitäten sind ähnlich wie Tabellen), die in Umgebungen im PowerApps-Service erstellt und verwaltet werden. Sie können Entitäten in Ihrem Dataflow hinzufügen und bearbeiten sowie Datenaktualisierungszeitpläne verwalten, und zwar direkt über die Umgebung, in der Ihr Dataflow erstellt wurde.
+Ein Dataflow ist eine Sammlung von Entitäten (Entitäten sind ähnlich wie Tabellen), die in Umgebungen im Power Apps-Service erstellt und verwaltet werden. Sie können Entitäten in Ihrem Dataflow hinzufügen und bearbeiten sowie Datenaktualisierungszeitpläne verwalten, und zwar direkt über die Umgebung, in der Ihr Dataflow erstellt wurde.
 
-Nachdem Sie einen Dataflow im PowerApps-Portal erstellt haben, können Sie Daten darüber erhalten, indem Sie den Common Data Service-Konnektor oder den Power BI Desktop-Dataflow-Konnektor verwenden, je nachdem, welches Ziel Sie beim Erstellen des Dataflows ausgewählt haben.
+Nachdem Sie einen Dataflow im Power Apps-Portal erstellt haben, können Sie Daten darüber erhalten, indem Sie den Common Data Service-Konnektor oder den Power BI Desktop-Dataflow-Konnektor verwenden, je nachdem, welches Ziel Sie beim Erstellen des Dataflows ausgewählt haben.
 
 Es gibt drei wesentliche Schritte zur Verwendung eines Dataflows:
 
-1.  Erstellen Sie den Dataflow im PowerApps-Portal. Wählen Sie das Ziel aus, in das die Ausgangsdaten geladen werden sollen, die Quelle, von der die Daten abgerufen werden, und die Power Query-Schritte, um die Daten mithilfe von Microsoft-Tools zu transformieren, die eigens dafür ausgelegt sind.
+1.  Erstellen Sie den Dataflow im Power Apps-Portal. Wählen Sie das Ziel aus, in das die Ausgangsdaten geladen werden sollen, die Quelle, von der die Daten abgerufen werden, und die Power Query-Schritte, um die Daten mithilfe von Microsoft-Tools zu transformieren, die eigens dafür ausgelegt sind.
 
 2.  Zeitplan-Dataflow wird ausgeführt. Dies ist die Frequenz, mit der Power Platform-Dataflow die Daten aktualisieren soll, die in Ihrem Dataflow geladen und transformiert werden.
 
@@ -52,10 +51,8 @@ In den folgenden Abschnitten werden die einzelnen Schritte genauer betrachtet, d
 ## <a name="create-a-dataflow"></a>Erstellen eines Dataflows
 Dataflows werden in einer Umgebung erstellt. Daher können Sie sie nur in dieser Umgebung sehen und verwalten. Darüber hinaus müssen Einzelpersonen, die Daten aus Ihrem Dataflow abrufen möchten, Zugriff auf die Umgebung haben, in der Sie diese erstellt haben.
 
-> [!NOTE]
-> Das Erstellen von Dataflows, bei denen Daten in Azure Data Lake Storage Gen2 in die Standardumgebung geladen werden, wird derzeit nicht unterstützt.
 
-1.  Melden Sie sich in PowerApps an, überprüfen Sie, in welcher Umgebung Sie sich befinden, und suchen Sie nach dem Umgebungs-Schnellzugriff auf der rechten Seite der Befehlsleiste.
+1.  Melden Sie sich in Power Apps an, überprüfen Sie, in welcher Umgebung Sie sich befinden, und suchen Sie nach dem Umgebungs-Schnellzugriff auf der rechten Seite der Befehlsleiste.
 
     ![Umgebungs-Schnellzugriff](media/environment-switcher.png)
 

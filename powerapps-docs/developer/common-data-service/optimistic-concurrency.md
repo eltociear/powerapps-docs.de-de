@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3d2a1c36f86a23766d88ab22a894a06a36c1d76e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c21caa604e025250805d26d0b31a2e88d1a7ad64
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748403"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859995"
 ---
 # <a name="optimistic-concurrency"></a>Optimistische Parallelität
 
-In einem Multithread- und Mehrbenutzersystem wie PowerApps werden Vorgänge und Datenänderungen häufig parallel ausgeführt. Ein Problem entsteht, wenn zwei oder mehr Update- oder Löschvorgänge für dieselben Daten gleichzeitig ausgeführt werden. Dieser Fall kann möglicherweise zu Datenverlusten führen. Mit der optimistischen Parallelität können die Anwendungen feststellen, ob ein Entitätsdatensatz auf dem Server zwischen dem Abrufen des Datensatzes durch die Anwendung und dem Versuch der Anwendung, den Datensatz zu aktualisieren oder zu löschen, geändert wurde.  
+In einem Multithread- und Mehrbenutzersystem wie Power Apps werden Vorgänge und Datenänderungen häufig parallel ausgeführt. Ein Problem entsteht, wenn zwei oder mehr Update- oder Löschvorgänge für dieselben Daten gleichzeitig ausgeführt werden. Dieser Fall kann möglicherweise zu Datenverlusten führen. Mit der optimistischen Parallelität können die Anwendungen feststellen, ob ein Entitätsdatensatz auf dem Server zwischen dem Abrufen des Datensatzes durch die Anwendung und dem Versuch der Anwendung, den Datensatz zu aktualisieren oder zu löschen, geändert wurde.  
   
  Optimistische Parallelität wird für alle vordefinierten Entitäten, die für die Offlinesynchronisierung aktiviert sind, und für alle benutzerdefinierten Entitäten unterstützt. Sie können feststellen, ob eine Entität die optimistische Parallelität unterstützt, indem Sie die Metadaten der Entität durch Code abrufen oder die Metadaten mit dem [Metadatenbrowser](browse-your-metadata.md) anzeigen und prüfen, ob das Attribut **IsOptimisticConcurrencyEnabled** auf `true` gesetzt ist. Bei benutzerdefinierten Entitäten wird diese Eigenschaft standardmäßig auf `true` festgelegt.  
   

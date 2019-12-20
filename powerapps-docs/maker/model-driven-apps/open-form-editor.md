@@ -1,5 +1,5 @@
 ---
-title: Öffnen des modellgetriebenen App-Formulareditors unter PowerApps | MicrosoftDocs
+title: Öffnen des modellgetriebenen App-Formulareditors unter Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -21,21 +21,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f922908611d56afc99c5ebc844ff75c94d48657c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5824f2acfdcf1a6dc6e3491abfdd8896528597a1
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759510"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872691"
 ---
 # <a name="open-the-model-driven-app-form-editor"></a>Öffnen Sie den modellgesteuerten App-Formular-Editor 
 Im Formular-Editor können Sie Formulare entwerfen, indem Sie Komponenten wie Abschnitte, Registerkarten, Felder und Steuerelemente auf die Formular-Editor-Canvas ziehen. In diesem Thema erfahren Sie, wie Sie auf verschiedene Arten auf den Formular-Editor zugreifen.
  
 Wenn Sie neue Lösungskomponenten bei der Bearbeitung des Formulars erstellen, etwa Webressourcen, verwenden die Namen der Komponenten das Anpassungspräfix des Lösungsherausgebers für die Standardlösung, und diese Komponenten werden nur in der Standardlösung eingeschlossen. Wenn neue Lösungskomponenten in einer bestimmten nicht verwalteten Lösung eingeschlossen werden sollen, sollten Sie den Formulareditor über diese nicht verwaltete Lösung öffnen.  
 
-## <a name="access-the-form-editor-from-the-powerapps-site"></a>Rufen Sie den Formular-Editor von der Seite PowerApps aus auf.
+## <a name="access-the-form-editor-from-the-power-apps-site"></a>Rufen Sie den Formular-Editor von der Seite Power Apps aus auf.
 
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/) an. 
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/) an. 
 
 2. Wählen Sie **Daten** > **Entitäten** >und wählen Sie dann die gewünschte Entität, z.B. die Firma-Entität. 
 

@@ -1,6 +1,6 @@
 ---
-title: Erstellen eines Portals in PowerApps | MicrosoftDocs
-description: Anweisungen zu Erstellen eines Portals in PowerApps.
+title: Erstellen eines Portals in Power Apps | MicrosoftDocs
+description: Anweisungen zu Erstellen eines Portals in Power Apps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,22 +9,22 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b818db8fb72fe36fcc7ea049a4e5b4cfb17eb0d9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b0482a5005f1cc0ca0b6e61636570b313dbd8a9c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756323"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884603"
 ---
 # <a name="create-a-common-data-service-starter-portal"></a>Erstellen eines Common Data Service-Starterportal
 
-Mit der Funktion zum Erstellen eines Portals in PowerApps können Sie eine Website für externe und interne Benutzer erstellen. So können diese mit Daten interagieren, die in Common Data Service gespeichert sind.
+Mit der Funktion zum Erstellen eines Portals in Power Apps können Sie eine Website für externe und interne Benutzer erstellen. So können diese mit Daten interagieren, die in Common Data Service gespeichert sind.
 
 Nachfolgend sind einige Vorteile des Erstellens eines Portals aufgeführt:
 
-- Da die Daten in Common Data Service gespeichert sind, müssen Sie keine Verbindung von PowerApps erstellen, wie Sie es sonst bei Datenquellen wie SharePoint, modellgesteuerten Apps in Dynamics 365 oder Salesforce tun. Sie müssen nur die Entitäten angeben, die Sie im Portal anzeigen oder verwalten möchten.
+- Da die Daten in Common Data Service gespeichert sind, müssen Sie keine Verbindung von Power Apps erstellen, wie Sie es sonst bei Datenquellen wie SharePoint, modellgesteuerten Apps in Dynamics 365 oder Salesforce tun. Sie müssen nur die Entitäten angeben, die Sie im Portal anzeigen oder verwalten möchten.
 
-- Sie können das Portal über das WYSIWYG-PowerApps Portal-Studio entwerfen, indem Sie Komponenten auf den Webseiten hinzufügen und konfigurieren.
+- Sie können das Portal über das WYSIWYG-Power Apps Portal-Studio entwerfen, indem Sie Komponenten auf den Webseiten hinzufügen und konfigurieren.
 
 Sie können ein Portel entweder in einer neuen oder in Ihrer vorhandenen Umgebung erstellen.
 
@@ -32,15 +32,18 @@ Wenn Sie Ihr Portal in einer neuen Umgebung über den Link **Neue Umgebung erste
 
 Wenn Sie Ihr Portal in einer vorhandenen Umgebung ohne Portalvoraussetzungen erstellen, werden zuerst die Voraussetzungen installiert und das Portal wird im Anschluss erstellt. Bei dieser Methode kann die Portalbereitstellung einige Zeit dauern. Sie werden benachrichtigt, sobald das Portal bereitgestellt wird.
 
-Abhängig von der ausgewählten Umgebung in PowerApps können Sie ein Common Data Service-Starterportal oder ein Portal in einer Umgebung erstellen, die modellgesteuerte Apps in Dynamics 365 enthält.
+Abhängig von der ausgewählten Umgebung in Power Apps können Sie ein Common Data Service-Starterportal oder ein Portal in einer Umgebung erstellen, die modellgesteuerte Apps in Dynamics 365 enthält.
 
-Weitere Informationen zum Arbeiten mit Umgebungen finden Sie unter [Arbeiten mit Umgebungen und Microsoft PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-environments)
+> [!NOTE]
+> Wenn Sie ein Portal erstellen, werden einige Lösungen installiert und Beispieldaten importiert.
+
+Weitere Informationen zum Arbeiten mit Umgebungen finden Sie unter [Arbeiten mit Umgebungen und Microsoft Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-environments)
 
 Weitere Informationen zu verfügbaren Portalvorlagen: [Portalvorlagen](portal-templates.md)
 
 So erstellen Sie ein Portal:
 
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com) an.  
 
 2.  Wählen Sie unter **Erstellen eigener Apps** die Option **Portal neu erstellen** aus.
 
@@ -68,7 +71,7 @@ Nachdem das Portal erfolgreich bereitgestellt wurde, wird der Status aktualisier
 > [!div class=mx-imgBorder]
 > ![Portalbereitstellung](media/recent-apps.png "Portalbereitstellung")
 
-Um das Portal im PowerApps Portal-Stuido zu bearbeiten, sehen Sie sich die Informationen unter [Bearbeiten eines Portals](manage-existing-portals.md#edit) an.
+Um das Portal im Power Apps Portal-Stuido zu bearbeiten, sehen Sie sich die Informationen unter [Bearbeiten eines Portals](manage-existing-portals.md#edit) an.
 
 > [!NOTE]
 > - Sie können maximal fünf Portale in einem Mandanten erstellen. Allerdings kann nur ein Portal des jeweiligen Typs in einer Umgebung erstellt werden.
@@ -77,7 +80,7 @@ Um das Portal im PowerApps Portal-Stuido zu bearbeiten, sehen Sie sich die Infor
 > - Wenn Sie ein Portal mit dem früheren Portal-Add-On bereitgestellt haben, können Sie es trotzdem noch anpassen und verwalten aus [make.powerapps.com](https://make.powerapps.com).
 > - Die Bereitstellung von Portalen von [make.powerapps.com](https://make.powerapps.com) verbraucht nicht die vorherigen Portal-Add-Ons. Außerdem sind diese Portale werden nicht auf der Registerkarte **Anwendungen** auf der **Dynamics 365-Verwaltungscenter** Seite aufgelistet.
 > - Ein Common Data Service Starterportal kann nicht von der **Dynamics 365-Verwaltungscenter** Seite erstellt werden.
-> - PowerApps-Portale sind nicht in der Frankreich-Region verfügbar.
+> - Power Apps-Portale sind nicht in der Frankreich-Region verfügbar.
 
 ## <a name="create-new-environment"></a>Erstellen einer neuen Umgebung
 
@@ -99,12 +102,12 @@ Gehen Sie folgendermaßen vor, wenn Sie eine Umgebung mit der Option erstellen, 
 3.  Wählen Sie die Währung und die Sprache für die in der Datenbank gespeicherten Daten aus. Die Währung oder die Sprache kann nicht mehr geändert werden, nachdem die Datenbank erstellt wurde. Wählen Sie **Meine Datenbank erstellen** aus, wenn Sie fertig sind. Die Datenbank wird mit dem Starterportal erstellt, durch das Sie schnell mit den Beispielinhalten starten können, sobald das Portal bereitgestellt wurde.
 
     > [!NOTE]
-    > Die Option **Starterportal einschließen** ist nur verfügbar, wenn Sie eine Umgebung mithilfe der Option erstellen, die im Fenster **Portal neu erstellen** bereitgestellt wird. Diese Option ist nicht verfügbar, wenn Sie eine Umgebung über das PowerApps Admin Center erstellen.
+    > Die Option **Starterportal einschließen** ist nur verfügbar, wenn Sie eine Umgebung mithilfe der Option erstellen, die im Fenster **Portal neu erstellen** bereitgestellt wird. Diese Option ist nicht verfügbar, wenn Sie eine Umgebung über das Power Apps Admin Center erstellen.
 
     > [!div class=mx-imgBorder]
     > ![Neue Datenbank erstellen](media/create-new-database.png "Neue Datenbank erstellen") 
 
-    Es kann einige Minuten dauern, die Datenbank bei Common Data Service zu erstellen. Sobald die Datenbank erstellt wurde, wird die neue Umgebung aus der Liste der Umgebungen auf der PowerApps-Homepage ausgewählt und die Portalverwaltungs-App erstellt. Bei dieser App handelt es sich nicht um das tatsächliche Portal, sondern um eine modellgesteuerte Begleit-App, mit der Sie erweiterte Verwaltungsaktivitäten ausführen können. Sie können jetzt mit der Erstellung des Portals zum Entwerfen der externen Website fortfahren.
+    Es kann einige Minuten dauern, die Datenbank bei Common Data Service zu erstellen. Sobald die Datenbank erstellt wurde, wird die neue Umgebung aus der Liste der Umgebungen auf der Power Apps-Homepage ausgewählt und die Portalverwaltungs-App erstellt. Bei dieser App handelt es sich nicht um das tatsächliche Portal, sondern um eine modellgesteuerte Begleit-App, mit der Sie erweiterte Verwaltungsaktivitäten ausführen können. Sie können jetzt mit der Erstellung des Portals zum Entwerfen der externen Website fortfahren.
 
     > [!div class=mx-imgBorder]
     > ![Portalverwaltungs-App](media/portal-mgmt-app.png "Portalverwaltungs-App")
@@ -112,7 +115,7 @@ Gehen Sie folgendermaßen vor, wenn Sie eine Umgebung mit der Option erstellen, 
 4. Nachdem die Umgebung und die Datenbank erstellt wurden, wählen Sie unter **Erstellen eigener Apps** die Option **Portal neu erstellen** aus. 
 
     > [!NOTE]
-    > Wenn die Datenbank erstellt wird und Sie weiterhin die Aufforderung zum Erstellen einer Datenbank erhalten, müssen Sie die PowerApps-Homepage aktualisieren, bevor Sie die Kachel **Portal neu erstellen** auswählen.
+    > Wenn die Datenbank erstellt wird und Sie weiterhin die Aufforderung zum Erstellen einer Datenbank erhalten, müssen Sie die Power Apps-Homepage aktualisieren, bevor Sie die Kachel **Portal neu erstellen** auswählen.
 
 
 ## <a name="portal-provisioning-notifications"></a>Benachrichtigungen über die Portalbereitstellung

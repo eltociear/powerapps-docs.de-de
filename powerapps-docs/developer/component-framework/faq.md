@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: dd5b6701c28e91ba2f0a2b99041446d0e2c45204
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 89ca91795b0644b0b7275697864211a4d3263c80
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748484"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861996"
 ---
 # <a name="faq"></a>Häufig gestellte Fragen
 
@@ -33,9 +33,9 @@ Diese Aktion wird nicht unterstützt.
 
 ## <a name="font-resource"></a>Schriftartressource
 
-Die Font Ressource (.tff) wird im PowerApps component framework derzeit nicht unterstützt.
+Die Font Ressource (.tff) wird im Power Apps component framework derzeit nicht unterstützt.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[PowerApps component framework API-Referenz](reference/index.md)<br/>
-[Übersicht über das PowerApps component framework](overview.md)
+[Power Apps component framework-API-Referenz](reference/index.md)<br/>
+[Power Apps component framework Übersicht](overview.md)

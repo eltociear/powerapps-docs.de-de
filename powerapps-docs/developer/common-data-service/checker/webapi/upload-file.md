@@ -1,6 +1,6 @@
 ---
 title: Hochladen einer Datei für die Analyse | Microsoft Docs
-description: Sehen Sie sich an, wie Sie eine POST-Anfrage mithilfe der PowerApps-Überprüfungs-Web-API stellen, um eine Datei für die Analyse hochzuladen.
+description: Sehen Sie sich an, wie Sie eine POST-Anfrage mithilfe der Power Apps-Überprüfungs-Web-API stellen, um eine Datei für die Analyse hochzuladen.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8945db30eaad8f8b47c2c933330b63dd12ed1662
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f2e83835e80c2393b9b97077c51338c55dd1c3e4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748578"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861803"
 ---
 # <a name="upload-a-file-for-analysis"></a>Hochladen einer Datei für die Analyse
 
@@ -86,7 +86,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der PowerApps-Überprüfungs-Web-API](overview.md)<br />
+[Verwenden der Power Apps-Überprüfungs-Web-API](overview.md)<br />
 [Abrufen der Regelsatz-Liste](retrieve-rulesets.md)<br />
 [Abrufen der Regel-Liste](retrieve-rules.md)<br />
 [Analyse aufrufen](analyze.md)<br />

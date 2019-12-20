@@ -1,6 +1,6 @@
 ---
 title: 'Entwickler: Best Practices und Anleitungen für modellgetriebene Anwendungen | Microsoft Docs'
-description: Bewährte Methoden und Anleitungen für Entwickler von modellgesteuerten Apps in PowerApps.
+description: Bewährte Methoden und Anleitungen für Entwickler von modellgesteuerten Apps in Power Apps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a0592cb14de0cc43fa576227e94aa6e8fca37054
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 70d150d0405bf6196387a39c807a26ba3e6efbfa
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748770"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883504"
 ---
 # <a name="best-practices-and-guidance-for-model-driven-apps"></a>Best Practices und Anleitungen für modellgetriebene Anwendungen
 

@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1b89a4f87938ac0147a6724e27441517728baef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 746f3b1677df7eb89ce35ef1161a291bfdb7d2be
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757838"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865869"
 ---
 # <a name="create-and-edit-global-option-sets-overview"></a>Erstellen und Bearbeiten globaler Optionssätze – Übersicht 
 
@@ -43,7 +43,7 @@ Sie können zwei Designer verwenden, um globale Optionssätze zu erstellen oder 
 
 |Designer| Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Ein Optionssatz erstellen](custom-picklists.md) |
+|[Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Ein Optionssatz erstellen](custom-picklists.md) |
 |Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen. <br />Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mithilfe des Projektmappen-Explorers](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Sie können zwei Designer verwenden, um globale Optionssätze zu erstellen oder 
 
 Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. 
 
-Sie können das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden, um mit globalen Optionssätzen zu arbeiten, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
+Sie können das [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden, um mit globalen Optionssätzen zu arbeiten, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
 
 - Optionen Farben zuweisen
 - Die Reihenfolge von Optionen ändern

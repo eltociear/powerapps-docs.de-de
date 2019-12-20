@@ -1,6 +1,6 @@
 ---
-title: Übersicht über die modellgetriebene Benutzeroberfläche des App-Formular-Editors für PowerApps | MicrosoftDocs
-description: Kenntnis der Benutzeroberfläche des Formular-Editors zum Bearbeiten von Formularen in PowerApps.
+title: Übersicht über die modellgetriebene Benutzeroberfläche des App-Formular-Editors für Power Apps | MicrosoftDocs
+description: Kenntnis der Benutzeroberfläche des Formular-Editors zum Bearbeiten von Formularen in Power Apps.
 author: Mattp123
 applies_to:
 - Dynamics 365 (online)
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 512156d6ffd4f1817fa06a1e8865386e637bfa24
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: dbd648bd96d087ce34d8482d96507fa2391902b6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701837"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884719"
 ---
 # <a name="overview-of-the-model-driven-app-form-editor-user-interface"></a>Übersicht der Benutzeroberfläche des Formulareditors in der modellgesteuerten App
 

@@ -1,38 +1,41 @@
 ---
-title: Aktualisierung von Dynamics 365-Domäne auf PowerApps-Portaldomäne | Microsoft-Dokumentation
-description: Anleitungen zum Aktualisieren von Dynamics 365-Domäne auf PowerApps-Portaldomäne.
+title: Aktualisierung von Dynamics 365-Domäne auf Power Apps-Portaldomäne | Microsoft-Dokumentation
+description: Anleitungen zum Aktualisieren von Dynamics 365-Domäne auf Power Apps-Portaldomäne.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 73d10323c98b5cf2d8f5964d76c2a57b729b4cab
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b65ffaad5bebc7b5237f74dd09f96e2462d3fba7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756694"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867057"
 ---
-# <a name="update-to-powerapps-portals-domain"></a>Aktualisierung auf PowerApps-Portaldomäne
+# <a name="update-to-power-apps-portals-domain"></a>Aktualisierung auf Power Apps-Portaldomäne
 
-Mit der Version von PowerApps-Portalen können Sie nun Ihre Dynamics 365-Domäne `microsoftcrmportals.com` auf die PowerApps-Portaldomäne`powerappsportals.com` aktualisieren.
+Wenn Sie ein Portal mit dem älteren Portal-Add-On bereitstellen, lautet die Domäne Ihres Portals `microsoftcrmportals.com`. Mit der Version von Power Apps-Portalen können Sie nun Ihre Dynamics 365-Domäne `microsoftcrmportals.com` auf die Power Apps-Portaldomäne`powerappsportals.com` aktualisieren.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+> [!NOTE]
+> Die `microsoftcrmportals.com`-Domäne ist veraltet und nur auf die Portale beschränkt, die mit dem älteren Portal-Add-On bereitgestellt wurden. Im Wechselzeitraum wird die Funktion weiterhin funktionieren und vollständig unterstützt, bis sie offiziell entfernt wird. Diese Veraltungsbenachrichtigung kann sich über einige Jahre erstrecken.
 
-2. Gehen Sie zu **Portalaktionen** > **Update zu PowerApps-Portaldomäne**.
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
+
+2. Gehen Sie zu **Portalaktionen** > **Update zu Power Apps-Portaldomäne**.
 
     > [!div class=mx-imgBorder]
-    > ![Aktualisierung auf PowerApps-Portaldomäne](../media/update-portal-domain-button.png "Aktualisierung auf PowerApps-Portaldomäne")
+    > ![Aktualisierung auf Power Apps-Portaldomäne](../media/update-portal-domain-button.png "Aktualisierung auf Power Apps-Portaldomäne")
 
 3. Geben Sie in **Portal-URL** die Adresse der Website ein und wählen Sie **OK** aus.
 
     > [!div class=mx-imgBorder]
-    > ![Aktualisierung auf PowerApps-Portaldomäne](../media/update-portal-domain.png "Aktualisierung auf PowerApps-Portaldomäne")
+    > ![Aktualisierung auf Power Apps-Portaldomäne](../media/update-portal-domain.png "Aktualisierung auf Power Apps-Portaldomäne")
 
-Wenn Sie bereits die PowerApps-Portaldomäne verwenden und zur alten Domäne zurückkehren möchten, können Sie die Aktion **Update auf PowerApps-Portaldomäne** verwenden, um zur alten Domäne zurückzukehren. In diesem Fall wird die Nachricht angezeigt, wie folgt:
+Wenn Sie bereits die Power Apps-Portaldomäne verwenden und zur alten Domäne zurückkehren möchten, können Sie die Aktion **Update auf Power Apps-Portaldomäne** verwenden, um zur alten Domäne zurückzukehren. In diesem Fall wird die Nachricht angezeigt, wie folgt:
 
 > [!div class=mx-imgBorder]
 > ![Alte Domäne wiederherstellen](../media/revert-portal-domain.png "Alte Domäne wiederherstellen")

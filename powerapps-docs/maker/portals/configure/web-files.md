@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Verwalten von Webdateien in PowerApps-Portalen | Microsoft-Dokumentation
+title: Erstellen und Verwalten von Webdateien in Power Apps-Portalen | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie Webdateien in einem Portal erstellen und verwalten
 author: sbmjais
 manager: shujoshi
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: dc67db92ac502611b0c10b5d387b100e8aa43da7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0e8487e211cf685c77aef545ebc39a43968f8e40
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760458"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864916"
 ---
 # <a name="create-and-manage-web-files"></a>Erstellen und Verwalten von Webdateien
 
@@ -24,7 +24,7 @@ Um den eigentlichen Inhalt einer Datei zu speichern, verwenden Portale die Anlag
 
 ## <a name="manage-web-files"></a>Verwalten von Webdateien
 
-Webdateien können innerhalb von PowerApps-Portalen erstellt, bearbeitet oder gelöscht werden.
+Webdateien können innerhalb von Power Apps-Portalen erstellt, bearbeitet oder gelöscht werden.
 
 1. Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
 

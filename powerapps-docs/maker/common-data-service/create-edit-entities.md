@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ba8fe12a9ecffa0ffb1116546d2bfe9ab2c62ac8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c13092daaa86abbcba5ef65dc809f29d9a6a6f12
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758058"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883702"
 ---
 # <a name="create-and-edit-entities-in-common-data-service"></a>Entitäten erstellen und bearbeiten in Common Data Service
 
@@ -36,7 +36,7 @@ Sie können zwei Designer verwenden, um eine Entität zu erstellen oder zu bearb
 
 |Designer| Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: <br />[Tutorial: Erstellen Sie eine benutzerdefinierte Entität, die Komponenten in PowerApps enthält](/powerapps/maker/common-data-service/create-custom-entity)<br />[Entitäten mit dem PowerApps-Portal erstellen und bearbeiten](create-edit-entities-portal.md)|
+|[Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: <br />[Tutorial: Erstellen Sie eine benutzerdefinierte Entität, die Komponenten in Power Apps enthält](/powerapps/maker/common-data-service/create-custom-entity)<br />[Entitäten mit dem Power Apps-Portal erstellen und bearbeiten](create-edit-entities-portal.md)|
 |Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen. <br />Weitere Informationen: [Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer](create-edit-entities-solution-explorer.md)|
 
 > [!NOTE]
@@ -46,9 +46,9 @@ Sie können zwei Designer verwenden, um eine Entität zu erstellen oder zu bearb
 > - Ein Entwickler kann [Metadatendienste](/powerapps/developer/common-data-service/use-web-services#metadata-services) verwenden, um ein Programm zu schreiben.
 
 
-## <a name="entity-options-not-available-in-the-powerapps-portal"></a>Entitätsoptionen sind nicht verfügbar im PowerApps-Portal
+## <a name="entity-options-not-available-in-the-power-apps-portal"></a>Entitätsoptionen sind nicht verfügbar im Power Apps-Portal
 
-Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. Sie können das PowerApps-Portal verwenden, um die Entität zu erstellen, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
+Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. Sie können das Power Apps-Portal verwenden, um die Entität zu erstellen, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
 
 - Steuern des Anpassungspräfix
 
@@ -56,7 +56,7 @@ Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie v
 
 - Entität im Besitz der Organisation erstellen
 
-  Standardmäßig erstellt das PowerApps-Portal **Benutzer oder Team**-Entitäten. Verwendungsprojektmappen-explorer, um des Besitz auf **Organisation** festzulegen. Weitere Informationen finden Sie unter [Entitätsbesitz](types-of-entities.md#entity-ownership).
+  Standardmäßig erstellt das Power Apps-Portal **Benutzer oder Team**-Entitäten. Verwendungsprojektmappen-explorer, um des Besitz auf **Organisation** festzulegen. Weitere Informationen finden Sie unter [Entitätsbesitz](types-of-entities.md#entity-ownership).
 
 - Erstellen einer Aktivitätenentität
 
@@ -85,7 +85,7 @@ Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie v
   |**Für mobile Nutzung aktivieren**|Machen Sie diese Entität für Dynamics 365 for Phones and Tablets-Apps verfügbar. Sie können dieser Entität den Status **Schreibgeschützt für Mobile** zuweisen.<br /><br /> Wenn für die Formulare einer Entität eine Erweiterung erforderlich ist, die von Apps für Dynamics 365 for Phones and Tablets nicht unterstützt wird, können Sie mit dieser Einstellung sicherstellen, dass die Daten für diese Entitäten nicht von Benutzern der mobilen App bearbeitet werden können.|
   |**Für Phone Express aktivieren**|Machen Sie diese Entität für die Dynamics 365 for Phones-App verfügbar.|
   |**Seriendruck**|Diese Entität kann mit Seriendruck verwendet werden.|
-  |**Offlinefunktionen für Dynamics 365 for Outlook**|Bestimmt, ob die Daten in dieser Entität verfügbar sind, wenn die Dynamics 365 for Outlook-Anwendung nicht mit dem Netzwerk verbunden ist.|
+  |**Offlinefunktion für Dynamics 365 for Outlook**|Bestimmt, ob die Daten in dieser Entität verfügbar sind, wenn die Dynamics 365 for Outlook-Anwendung nicht mit dem Netzwerk verbunden ist.|
   |**Lesebereich in Dynamics 365 for Outlook**|Bestimmt, ob die Entität im Lesebereich der Dynamics 365 for Outlook-App angezeigt wird.|
   |**Benutzerdefinierte Hilfe verwenden**|Wenn diese Option aktiviert ist, legen Sie eine Hilfe-URL fest, um zu steuern, welche Seite Benutzern angezeigt wird, wenn sie in der Anwendung auf die Hilfe-Schaltfläche klicken. Verwenden Sie diesen Antworttyp, um Anweisungensbesonderen Ihren Unternehmensprozessen für die Entität angeben.|
 
@@ -93,6 +93,6 @@ Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie v
 ### <a name="see-also"></a>Siehe auch
 
 [Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer](create-edit-entities-solution-explorer.md)<br />
-[Tutorial: Erstellen Sie eine benutzerdefinierte Entität, die Komponenten in PowerApps enthält](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[Tutorial: Erstellen Sie eine benutzerdefinierte Entität, die Komponenten in Power Apps enthält](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Entität bearbeiten](edit-entities.md)<br />
 [Entwicklerdokumentation: Kundenentität erstellen](/dynamics365/customer-engagement/developer/org-service/create-custom-entity)

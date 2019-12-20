@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 68b64d5ec7c7f81352a2b9733310d2ec5e51d9c1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8c5239874449772922ec9fa89ece7d2b3a5d7f06
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757794"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861337"
 ---
 # <a name="create-nn-many-to-many-entity-relationships-in-common-data-service-using-solution-explorer"></a>Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des Projektmappen-Explorers
 
 Der Projektmappen-Explorer bietet eine Möglichkeit, um n:n (viele-zu-viele)-Beziehungen für Common Data Service zu erstellen und zu bearbeiten.
 
-Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. Weitere Informationen:
+Das [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. Weitere Informationen:
 - [N:N (n:n)-Beziehungen erstellen](create-edit-nn-relationships.md)
-- [n:m-Entitätsbeziehungen in Common Data Service mit Hilfe des PowerApps-Portals erstellen](create-edit-nn-relationships-portal.md)
+- [n:m-Entitätsbeziehungen in Common Data Service mit Hilfe des Power Apps-Portals erstellen](create-edit-nn-relationships-portal.md)
 
   
 ## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
@@ -112,5 +112,5 @@ Durch das Löschen der Beziehung wird auch die Beziehungsentität gelöscht. All
 ### <a name="see-also"></a>Siehe auch
 
 [N:N (n:n)-Beziehungen erstellen](create-edit-nn-relationships.md)<br />
-[n:m-Entitätsbeziehungen in Common Data Service mit Hilfe des PowerApps-Portals erstellen](create-edit-nn-relationships-portal.md)<br />
+[n:m-Entitätsbeziehungen in Common Data Service mit Hilfe des Power Apps-Portals erstellen](create-edit-nn-relationships-portal.md)<br />
 [Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer)-Entitätsbeziehungen](create-edit-1n-relationships.md)

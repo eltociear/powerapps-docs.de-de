@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 82616711b47a2f14d32e7ee327b21e27df919a9b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 29f6cca10ca81eacc9f70c589b8dc12f0e0cd466
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748429"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883532"
 ---
 # <a name="create-client-applications"></a>Erstellen von Client-Anwendungen
 
 Sie können Client-Anwendungen erstellen, ohne Code zu schreiben, indem Sie Canvas und modellgesteuerte Anwendungen verwenden.
-Mehr Informationen: [Übersicht über die Erstellung von Apps in PowerApps](../../maker/index.md)
+Mehr Informationen: [Übersicht über die Erstellung von Apps in Power Apps](../../maker/index.md)
 
-Wenn die PowerApps-Optionen nicht Ihren Anforderungen entsprechen, können Sie eine Client-Anwendung mit Code erstellen.
+Wenn die Power Apps-Optionen nicht Ihren Anforderungen entsprechen, können Sie eine Client-Anwendung mit Code erstellen.
 
 ## <a name="connecting-to-common-data-service"></a>Herstellen einer Verbindung mit Common Data Service
 

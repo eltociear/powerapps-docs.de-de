@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0aa057594b500c7019a4d645c70cafcfff183608
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 80f9cc89b0da2eec5d134f282507e68658e42a96
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755990"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816381"
 ---
 # <a name="migrate-portal-configuration"></a>Portalkonfiguration migrieren
 
@@ -29,11 +29,16 @@ Zum Exportieren der Konfigurationsdaten müssten Sie das Tool für die Konfigura
 > - Die mindestens erforderliche Lösungsversion von Portalen, die von Schemadateien für die Konfigurationsmigration unterstützt wird, ist 8.4.0.275. Es ist jedoch empfehlenswert, die aktuelle Lösungsversion zu verwenden.
 
 Schemadateien sind für die folgenden Portaltypen verfügbar:
-- [Community-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019704)
-- [Kunden-Self-Service-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019705)
-- [Partnerportal](https://go.microsoft.com/fwlink/p/?linkid=2019803)
-- [Mitarbeiter-Self-Service-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019802)
-- [Benutzerdefiniertes Portal](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+
+- **In einer Umgebung mit Common Data Service erstellte Portale**
+    - [Benutzerdefiniertes Portal (leeres Portal)](https://go.microsoft.com/fwlink/p/?linkid=2110477)
+
+- **Portale, die in einer Umgebung mit modellgesteuerten Apps in Dynamics 365 erstellt wurden**
+    - [Benutzerdefiniertes Portal (leeres Portal)](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+    - [Community-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019704)
+    - [Kunden-Self-Service-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019705)
+    - [Partnerportal](https://go.microsoft.com/fwlink/p/?linkid=2019803)
+    - [Mitarbeiter-Self-Service-Portal](https://go.microsoft.com/fwlink/p/?linkid=2019802)
 
 Die standardmäßigen Schemadateien enthalten Informationen zu Portalentitäten, Beziehungen und Eindeutigkeitsdefinitionen für jede Entität. Weitere Informationen: [Portalkonfigurationsdaten exportieren](#export-portal-configuration-data)
 

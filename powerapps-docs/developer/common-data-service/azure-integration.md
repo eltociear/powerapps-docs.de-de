@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5d5bce76dd9e123d6d6c5db1e8d1dc59293471f2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 46f7c5506f8c26a70188e8b3cec59b26bf13cb1e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753058"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861859"
 ---
 # <a name="azure-integration"></a>Azure-Integration
 
@@ -70,7 +70,7 @@ Weitere allgemeine Informationen zu Plug-Ins finden Sie unter [Schreiben eines P
   
 ### <a name="asynchronous-service"></a>Asynchroner Service
 
-Wenn der asynchrone Service vom Service-Endpunktbenachrichtigungsservice benachrichtigt wird, behandelt er das Posten des Datenkontexts der Anfragemessage, die derzeit von der Ereignisausführungspipeline zu Azure Service Bus verarbeitet wird. Jede Veröffentlichung wird durch einen Systemauftrag des asynchronen Services ausgeführt. Ein Benutzer kann den Status der einzelnen Systemaufträge mithilfe der **Systemaufträge**-Ansicht der PowerApps-Webanwendung anzeigen.  
+Wenn der asynchrone Service vom Service-Endpunktbenachrichtigungsservice benachrichtigt wird, behandelt er das Posten des Datenkontexts der Anfragemessage, die derzeit von der Ereignisausführungspipeline zu Azure Service Bus verarbeitet wird. Jede Veröffentlichung wird durch einen Systemauftrag des asynchronen Services ausgeführt. Ein Benutzer kann den Status der einzelnen Systemaufträge mithilfe der **Systemaufträge**-Ansicht der Power Apps-Webanwendung anzeigen.  
   
 Weitere Informationen über den asynchronen Dienst finden Sie unter [Asynchroner Dienst](asynchronous-service.md).  
   

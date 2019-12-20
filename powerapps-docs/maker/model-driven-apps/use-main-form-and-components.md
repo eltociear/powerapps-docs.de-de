@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie das modellgesteuerte App-Hauptformular und seine Komponenten in PowerApps | Microsoft-Dokumentation
+title: Verwenden Sie das modellgesteuerte App-Hauptformular und seine Komponenten in Power Apps | Microsoft-Dokumentation
 description: Wissen, wie das Hauptformular und die Komponenten in einer auf einheitlicher Schnittstelle basierter Apps verwendet werden
 keywords: Hauptformulare; Customer Service; Customer Service-Hub; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 610a4baf51a2affea142b496d016d732fa626d20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3232099a5ad1526ad351aea37e8952afc6e474bf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755902"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884261"
 ---
 # <a name="use-the-model-driven-app-main-form-and-its-components"></a>Verwenden Sie das modellgesteuerte App-Hauptformular und seine Komponenten.
 
@@ -41,9 +41,9 @@ Gehen Sie wie folgt vor, um auf den Formular-Editor zuzugreifen.
 > Wenn Sie neue Lösungskomponenten bei der Bearbeitung des Formulars erstellen, verwenden die Namen der Komponenten das Anpassungspräfix des Lösungsherausgebers für die Standardlösung und diese Komponenten werden nur in der Standardlösung eingeschlossen. Wenn neue Lösungskomponenten in einer bestimmten nicht verwalteten Lösung eingeschlossen werden sollen, öffnen Sie den Formulareditor über diese nicht verwaltete Lösung.
 
 
-### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>Rufen Sie den Formular-Editor über den App Designer unter PowerApps auf.
+### <a name="access-the-form-editor-through-app-designer-in-power-apps"></a>Rufen Sie den Formular-Editor über den App Designer unter Power Apps auf.
 
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 2.  Klicken Sie im linken Navigationsbereich die Option **Apps**, wählen die gewünschte App aus und klicken Sie dann auf der Symbolleiste die Option **Bearbeiten** an.  
 
@@ -64,7 +64,7 @@ Gehen Sie wie folgt vor, um auf den Formular-Editor zuzugreifen.
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>Zugiff auf den Formulareditor über die Standardlösung
 
-1.  Melden Sie sich bei [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.  
 

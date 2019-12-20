@@ -1,5 +1,5 @@
 ---
-title: Erstellen oder bearbeiten einer modellgesteuerten App-Ansicht in PowerApps | Microsoft-Dokumentation
+title: Erstellen oder bearbeiten einer modellgesteuerten App-Ansicht in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie eine Ansicht erstellt oder bearbeitet wird
 ms.custom: ''
 ms.date: 06/11/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7a83134fb655e67dba8b0aa211ba6f25ec383832
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 68d295e6c5426296cf4fb77e794b7c6edbf37021
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759334"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875572"
 ---
 # <a name="create-or-edit-a-model-driven-app-view"></a>Erstellen oder bearbeiten einer Modell-angetriebene App-Ansicht
 
@@ -37,7 +37,7 @@ ms.locfileid: "2759334"
   
 ### <a name="create-a-new-view"></a>Eine neue Ansicht erstellen  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
     
 
@@ -65,11 +65,11 @@ ms.locfileid: "2759334"
 
 7.  Aktivieren Sie **OK**, um das Dialogfeld **Filterkriterien bearbeiten** zu schließen und **Speichern und schließen** im Ansichtseditor aus.  
   
-8.  Beachten Sie, dass Ihre Ansicht nun von der Registerkarte **Ansichten** auf der Website PowerApps verfügbar ist und einer App hinzugefügt werden kann.
+8.  Beachten Sie, dass Ihre Ansicht nun von der Registerkarte **Ansichten** auf der Website Power Apps verfügbar ist und einer App hinzugefügt werden kann.
   
 ### <a name="edit-a-view"></a>Eine Ansicht bearbeiten  
   
-1.  Wählen Sie in der **Ansichten**-Registerkarte auf der Website PowerApps die Ansicht **Anzahl der Mitarbeiter** aus.
+1.  Wählen Sie in der **Ansichten**-Registerkarte auf der Website Power Apps die Ansicht **Anzahl der Mitarbeiter** aus.
   
 2.  Ändern Sie im Feld **Name** einen Namen für die Ansicht auf **Anzahl der Mitarbeiter mit 25 oder mehr Mitarbeiter in Arizona** und wählen Sie dann **OK** aus.  
 

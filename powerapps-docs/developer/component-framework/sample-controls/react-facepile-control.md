@@ -9,16 +9,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 62a46acf98c8cdd93524f17b8a3a28ac999e325b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7fdade7a1476c05214483eaa9b766c9c709fc9cf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748779"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861932"
 ---
 # <a name="implementing-the-facepile-component"></a>Implementieren der FacePile-Komponente
 
-Dieses Beispiel zeigt, wie man mit React Komponenten mit dem PowerApps component framework erstellt.  Die Facepile-Beispielkomponente wird anhand von React und der Office UI Fabric React-Komponenten implementiert. Dieser Code deckt möglicherweise nicht die bewährten Methoden für die erwähnten Drittanbieterbibliotheken ab.
+Dieses Beispiel zeigt, wie man mit React Komponenten mit dem Power Apps component framework erstellt.  Die Facepile-Beispielkomponente wird anhand von React und der Office UI Fabric React-Komponenten implementiert. Dieser Code deckt möglicherweise nicht die bewährten Methoden für die erwähnten Drittanbieterbibliotheken ab.
 
 > [!div class="mx-imgBorder"]
 > ![Facepile in React](../media/react-facepile.png "Facepile in React")
@@ -29,7 +29,7 @@ Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau)
 
 
 > [!IMPORTANT]
-> Obwohl die PowerApps Hostanwendungen auf React arbeiten, kommuniziert die Version von React, die Sie bündeln, nicht mit der Hostversion, noch ist sie von dieser Version abhängig. Eine neue Kopie von React (oder einer Bibliothek eines Drittanbieters, die Sie mit Ihrer Komponente bündeln) wird für jede Instanz dieses Steuerelements in die Host-Seite geladen, also achten Sie darauf, wie groß Sie Ihre Seite(n) machen, während Sie Komponenten hinzufügen. In einer künftigen Version werden wir eine Lösung zu diesem Problem haben.
+> Obwohl die Power Apps Hostanwendungen auf React arbeiten, kommuniziert die Version von React, die Sie bündeln, nicht mit der Hostversion, noch ist sie von dieser Version abhängig. Eine neue Kopie von React (oder einer Bibliothek eines Drittanbieters, die Sie mit Ihrer Komponente bündeln) wird für jede Instanz dieses Steuerelements in die Host-Seite geladen, also achten Sie darauf, wie groß Sie Ihre Seite(n) machen, während Sie Komponenten hinzufügen. In einer künftigen Version werden wir eine Lösung zu diesem Problem haben.
 
 ## <a name="manifest"></a>Manifest
 
@@ -49,13 +49,13 @@ Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau)
 
 ## <a name="overview"></a>Übersicht
 
-Dieses Beispiel zeigt anhand von Beispielen, wie Abhängigkeiten für Bibliotheken von Drittanbietern und Office UI Fabric hinzugefügt werden können. Es wird gezeigt, wie die Office UI Fabric-Komponenten für React for UI verwendet werden können und wie eine bidirektionale Datenanbindung zwischen dem PowerApps component framework und dem React-Zustandsmodell durchgeführt wird.
+Dieses Beispiel zeigt anhand von Beispielen, wie Abhängigkeiten für Bibliotheken von Drittanbietern und Office UI Fabric hinzugefügt werden können. Es wird gezeigt, wie die Office UI Fabric-Komponenten für React for UI verwendet werden können und wie eine bidirektionale Datenanbindung zwischen dem Power Apps component framework und dem React-Zustandsmodell durchgeführt wird.
 
 Das Komponentenbeispiel besteht aus drei Office UI Fabric-Komponenten: ein Facepile, ein Schieberegler, ein Kontrollkästchen und eine Dropdownliste. Wenn Sie den Schieberegler bewegen, ändert sich die Anzahl der Gesichter in der Facepile. Das Auswahlfeld steuert, ob die Flächen ein- und ausgeblendet werden oder einfach erscheinen oder verschwinden, und die Optionen in der Dropdown-Liste steuern die Größe der Flächen. Wenn kein Wert festgelegt ist, ist die Anzahl der Gesichter standardmäßig 3.
 
 - Ist die Komponente geladen, wird der Schieberegler auf den Attributwert mit Bindung festgelegt. Die `context.parameters.[property_name].attributes`-Eigenschaft enthält die zugeordneten Metadaten.
-- In den Eigenschaften der React-Komponente wird ein Event-Handler übergeben, der es der React-Komponente ermöglicht, das Host PowerApps component framework-Steuerlement darüber zu informieren, dass sich ein Wert geändert hat. Der Ereignishandler legt dann fest, ob ein Aufruf der **notifyOutputEvents**-Methode erforderlich ist.
-- Durch das Bewegen des Schiebereglers aktualisiert React den Wert mit Bindung und ruft den weitergegebenen Ereignishandler auf. Wenn innerhalb dieses Handlers ein Aufruf an die Methode **notifyOutputEvents** erfolgt, dann wird die Methode [getOutputs](../reference/control/getoutputs.md) des Steuerelements asynchron aufgerufen und fließt zum PowerApps component framework. 
+- In den Eigenschaften der React-Komponente wird ein Event-Handler übergeben, der es der React-Komponente ermöglicht, das Host Power Apps component framework-Steuerlement darüber zu informieren, dass sich ein Wert geändert hat. Der Ereignishandler legt dann fest, ob ein Aufruf der **notifyOutputEvents**-Methode erforderlich ist.
+- Durch das Bewegen des Schiebereglers aktualisiert React den Wert mit Bindung und ruft den weitergegebenen Ereignishandler auf. Wenn innerhalb dieses Handlers ein Aufruf an die Methode **notifyOutputEvents** erfolgt, dann wird die Methode [getOutputs](../reference/control/getoutputs.md) des Steuerelements asynchron aufgerufen und fließt zum Power Apps component framework. 
 - Der Frameworkhost aktualisiert den Attributwert mit Bindung und der aktualisierte Wert wird an die Komponente weitergegeben, wodurch die [updateView](../reference/control/updateview.md)-Methode des Steuerelements ausgelöst wird. Das Steuerelement rendert dann die React-Komponente mit dem neuen Wert.
 
 
@@ -420,6 +420,7 @@ export const TestImages = {
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)<br />
-[PowerApps component framework-API-Referenz](../reference/index.md)<br />
-[PowerApps component framework Übersicht](../overview.md)
+[Beispielkomponenten verwenden](../use-sample-components.md)<br/>
+[Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)<br />
+[Power Apps component framework-API-Referenz](../reference/index.md)<br />
+[Power Apps component framework Übersicht](../overview.md)

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dd5d967cae6988c7949c1c6eca0b862cf42281b0
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 15790d37a187eafa73a5dc837aa090833f3d95ee
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752950"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859991"
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>Abonnieren Sie SDK-Assembly-Updates mit NuGet.
 
@@ -38,7 +38,7 @@ Das NuGet SDK befindet sich unter dem Profil [crmsdk](https://www.nuget.org/prof
 |[Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools/)|Enthält die SDK-Tools, die vom Team Microsoft Dynamics 365 erstellt wurden.|
 |[Microsoft.CrmSdk.Deployment](https://www.nuget.org/packages/Microsoft.CrmSdk.Deployment/)|Enthält die Microsoft.Xrm.Sdk.Deployment.dll-Assembly|
 |[Microsoft.CrmSdk.Outlook](https://www.nuget.org/packages/Microsoft.CrmSdk.Outlook/)|Enthält die Microsoft.Crm.Outlook.dll-Assembly|
-|[Microsoft.CrmSdk.WebApi.Samples.HelperCode](https://www.nuget.org/packages/Microsoft.CrmSdk.WebApi.Samples.HelperCode/)|C#-Helfer-Code, der vom Dokumentationsteam PowerApps geschrieben wurde. Dieser Code ist für die Verwendung mit Internet-API. Diese Klassen bieten Webdienstauthentifizierung Online und lokale Bereitstellungen, und Verbindungszeichenfolgenkonfiguration Fehlerbehandlung. Diese Klassen werden in den Web-API-Beispielen verwendet|
+|[Microsoft.CrmSdk.WebApi.Samples.HelperCode](https://www.nuget.org/packages/Microsoft.CrmSdk.WebApi.Samples.HelperCode/)|C#-Helfer-Code, der vom Dokumentationsteam Power Apps geschrieben wurde. Dieser Code ist für die Verwendung mit Internet-API. Diese Klassen bieten Webdienstauthentifizierung Online und lokale Bereitstellungen, und Verbindungszeichenfolgenkonfiguration Fehlerbehandlung. Diese Klassen werden in den Web-API-Beispielen verwendet|
 |[Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)|Enthält die Microsoft.Xrm.Sdk.Workflow.dll-Assembly|
 |[Microsoft.CrmSdk.XrmTooling.CoreAssembly](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CoreAssembly/)|Enthält die Microsoft.Xrm.Tooling.Connector-Assembly |
 |[Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell/)|Enthält die Assemblies für Xrm.Tooling.Connector Powershell |

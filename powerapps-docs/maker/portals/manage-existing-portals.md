@@ -1,6 +1,6 @@
 ---
-title: Verwaltung bestehender Portale in PowerApps | Microsoft Docs
-description: Anleitung zur Verwaltung eines Portale in PowerApps.
+title: Verwaltung bestehender Portale in Power Apps | Microsoft Docs
+description: Anleitung zur Verwaltung eines Portale in Power Apps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 82fbc5d8cafa6af13af63eaff106ea028830bd01
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0921e39c93b5f63a3f9a0ea038fd97389ea2b968
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756958"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883884"
 ---
-# <a name="manage-existing-portals-in-powerapps"></a>Verwaltung bestehender Portale in PowerApps.
+# <a name="manage-existing-portals-in-power-apps"></a>Verwaltung bestehender Portale in Power Apps.
 
-Sobald Sie ein Portal erstellt haben, ist es unter dem Abschnitt **Aktuelle Anwendungen** auf der Startseite PowerApps sichtbar.
+Sobald Sie ein Portal erstellt haben, ist es unter dem Abschnitt **Aktuelle Anwendungen** auf der Startseite Power Apps sichtbar.
 
 > [!div class=mx-imgBorder]
 > ![neueste Apps](media/recent-apps.png "Neueste Apps")  
@@ -30,7 +30,7 @@ Um eine App zu verwalten, wählen Sie **Weitere Befehle** (**...**) für das Por
 
 ## <a name="edit"></a>Bearbeiten
 
-Öffnet das [PowerApps-Portalstudio](portal-designer-anatomy.md), um die Inhalte und Komponenten des Portals zu bearbeiten.  
+Öffnet das [Power Apps-Portalstudio](portal-designer-anatomy.md), um die Inhalte und Komponenten des Portals zu bearbeiten.  
 
 > [!div class=mx-imgBorder]
 > ![Portalersteller](media/portal-maker.png "Portalersteller")  
@@ -42,7 +42,7 @@ Um eine App zu verwalten, wählen Sie **Weitere Befehle** (**...**) für das Por
 > [!div class=mx-imgBorder]
 > ![Portalwebsite](media/portal-website.png "Portalwebsite")  
 
-Alternativ können Sie auch das Portal öffnen, um die Website zu durchsuchen, indem Sie **Website durchsuchen** im [PowerApps-Portalstudio](portal-designer-anatomy.md) auswählen, um die Änderungen anzuzeigen, die Sie an der Website vorgenommen haben. Die Website wird in einem neuen Tab mit der URL der Website geöffnet.
+Alternativ können Sie auch das Portal öffnen, um die Website zu durchsuchen, indem Sie **Website durchsuchen** im [Power Apps-Portalstudio](portal-designer-anatomy.md) auswählen, um die Änderungen anzuzeigen, die Sie an der Website vorgenommen haben. Die Website wird in einem neuen Tab mit der URL der Website geöffnet.
 
 ## <a name="share"></a>Freigeben
 
@@ -91,7 +91,7 @@ Ihr Portal sollte anonym arbeiten und für die externen Benutzer zugänglich sei
 
 ## <a name="settings"></a>Einstellungen
 
-Zeigt die Portaleinstellungen an und ermöglicht es Ihnen, den Namen des Portale zu ändern. Sie können auch erweiterte Aktionen durchführen, wie z. B. die Verwaltung des Portals über das PowerApps-Portal-Administratorcenter und die Arbeit mit den Site-Einstellungen. Einstellungen bietet Links zum PowerApps Portale Admin-Center und zu den Seiteneinstellungen. Mehr Informationen: [Erweiterte Portalverwaltung](admin/admin-overview.md) und [Konfigurieren von Websiteeinstellungen](configure/configure-site-settings.md).  
+Zeigt die Portaleinstellungen an und ermöglicht es Ihnen, den Namen des Portale zu ändern. Sie können auch erweiterte Aktionen durchführen, wie z. B. die Verwaltung des Portals über das Power Apps-Portal-Administratorcenter und die Arbeit mit den Site-Einstellungen. Einstellungen bietet Links zum Power Apps Portale Admin-Center und zu den Seiteneinstellungen. Mehr Informationen: [Erweiterte Portalverwaltung](admin/admin-overview.md) und [Konfigurieren von Websiteeinstellungen](configure/configure-site-settings.md).  
 
 > [!div class=mx-imgBorder]
 > ![Portaleinstellungen](media/portal-settings.png "Portaleinstellungen")  

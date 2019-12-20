@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: f94dee983d5d2d9cedf417f2843a2c10c46b82c1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a4ba89a1497a6ed81d2e71f7d7a43813d47b6583
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756990"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873307"
 ---
 # <a name="manage-sharepoint-documents"></a>Verwalten von SharePoint-Dokumenten
 
-Common Data Service unterstützt die Integration mit [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)], die es Ihnen ermöglicht, die Dokumentverwaltungsfunktionen von [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] in Common Data Service zu verwenden. PowerApps-Portale unterstützen jetzt das direkte Hoch- und Herunterladen von Dokumenten von und nach [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] mit einem Entitätsformular oder einem Webformular in einem Portal. Dadurch können Portalbenutzer Dokumente aus einem Portal anzeigen, herunterladen, hinzufügen und löschen. Portalbenutzer können auch Unterordner erstellen, um die Dokumente zu organisieren.
+Common Data Service unterstützt die Integration mit [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)], die es Ihnen ermöglicht, die Dokumentverwaltungsfunktionen von [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] in Common Data Service zu verwenden. Power Apps-Portale unterstützen jetzt das direkte Hoch- und Herunterladen von Dokumenten von und nach [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] mit einem Entitätsformular oder einem Webformular in einem Portal. Dadurch können Portalbenutzer Dokumente aus einem Portal anzeigen, herunterladen, hinzufügen und löschen. Portalbenutzer können auch Unterordner erstellen, um die Dokumente zu organisieren.
 
 > [!NOTE]
 > - Die Dokumentenverwaltung funktioniert nur mit [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)].
@@ -28,11 +28,11 @@ Um mit den Dokumentenverwaltungsfunktionen von [!INCLUDE[pn-sharepoint-short](..
 
 1.  [Aktivieren der Dokumentenverwaltung in modellgesteuerten Apps in Dynamics 365](#step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365)
 
-2.  [Die SharePoint-Integration über das PowerApps-Portaladministratorcenter einrichten](#step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center)
+2.  [Die SharePoint-Integration über das Power Apps-Portaladministratorcenter einrichten](#step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center)
 
 3.  [Aktivieren der Dokumentenverwaltung für Entitäten](#step-3-enable-document-management-for-entities)
 
-4.  [Das entsprechende Formular in PowerApps-Dokumenten konfigurieren](#step-4-configure-the-appropriate-form-to-display-documents)
+4.  [Das entsprechende Formular in Power Apps-Dokumenten konfigurieren](#step-4-configure-the-appropriate-form-to-display-documents)
 
 5.  [Die entsprechende Entitätsberechtigung erstellen und der entsprechenden Webrolle zuweisen](#step-5-create-appropriate-entity-permission-and-assign-it-to-the-appropriate-web-role)
 
@@ -40,14 +40,14 @@ Um mit den Dokumentenverwaltungsfunktionen von [!INCLUDE[pn-sharepoint-short](..
 
 Sie müssen die Dokumentenverwaltung in modellgesteuerten Apps in Dynamics 365 mit Hilfe der serverbasierten [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration aktivieren. Mit der serverbasierten [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration können modellgesteuerte Apps in Dynamics 365 und [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] eine Server-zu-Server-Verbindung ausführen. Der Standardwebsitedatensatz [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] wird über das Portal verwendet. Informationen dazu, wie Sie die Dokumentenverwaltungsfunktionen in modellgesteuerten Apps in Dynamics 365 aktivieren können, finden Sie unter [Modellgesteuerte Apps in Dynamics 365 einrichten, um SharePoint Online zu verwenden](https://docs.microsoft.com/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online).
 
-## <a name="step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center"></a>Schritt 2: Die SharePoint-Integration über das PowerApps-Portal-Administratorcenter einrichten
+## <a name="step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center"></a>Schritt 2: Die SharePoint-Integration über das Power Apps-Portal-Administratorcenter einrichten
 
-Um die Dokumentenverwaltungsfunktionen von [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] verwenden zu können, müssen Sie die [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration über das PowerApps-Portaladministratorcenter aktivieren.
+Um die Dokumentenverwaltungsfunktionen von [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] verwenden zu können, müssen Sie die [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration über das Power Apps-Portaladministratorcenter aktivieren.
 
 > [!NOTE]
 > Diese Aktion kann nur von einem globalen Administrator ausgeführt werden.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin/admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin/admin-overview.md).
 
 2.  Wechseln Sie zu **Einrichten der [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Integration** > **Aktivieren der [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Integration**.
 
@@ -61,12 +61,12 @@ Wenn die [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-
 - **[!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration deaktivieren**: Ermöglicht, das Sie die Integration [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration mit dem Portal deaktivieren. Während die [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration deaktiviert ist, startet das Portal neu und ist für einige Minuten nicht verfügbar. Eine Meldung wird angezeigt, wenn die [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration deaktiviert ist.
 
     > [!div class=mx-imgBorder]
-    > ![SharePoint-Integration deaktivieren](media/disable-sharepoint-integration.png "Deaktivieren der SharePoint-Integration")
+    > ![Deaktivieren der SharePoint-Integration](media/disable-sharepoint-integration.png "Deaktivieren der SharePoint-Integration")
 
 Das Aktivieren oder Deaktivieren der [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration aktualisiert die [!INCLUDE[pn-azure-active-directory](../../includes/pn-azure-active-directory.md)] ([!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD)-Anwendung für das Portal und fügt oder entzieht die erforderlichen [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Berechtigungen. Sie werden zudem umgeleitet, um Ihre Zustimmung zu den Änderungen zu geben, die in der [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)]-Anwendung vorgenommen werden können. 
 
 > [!div class=mx-imgBorder]
-> ![SharePoint-Integration deaktivieren](media/sharepoint-integration-consent.png "Deaktivieren der SharePoint-Integration")
+> ![Deaktivieren der SharePoint-Integration](media/sharepoint-integration-consent.png "Deaktivieren der SharePoint-Integration")
 
 Wenn Sie nicht zustimmen:
 
@@ -80,7 +80,7 @@ Sie müssen die Dokumentenverwaltung für Entitäten aktivieren, um Dokumente mi
 
 ## <a name="step-4-configure-the-appropriate-form-to-display-documents"></a>Schritt 4: Das entsprechenden Formular konfigurieren, um Dokumente anzuzeigen
 
-### <a name="powerapps-customization"></a>PowerApps-Anpassung
+### <a name="power-apps-customization"></a>Power Apps-Anpassung
 
 Ermitteln Sie das Formular, in dem Dokumentenverwaltungsfunktionen verwendet werden sollen. Sie müssen das Formular mit dem Formulareditor in der modellgesteuerten App bearbeiten und ein Unterraster hinzufügen. Das Unterraster fügt einen Abschnitt zum Formular hinzu, sodass Sie mit Dokumenten im Portal arbeiten können. Sie müssen die folgenden Eigenschaften im Unterraster für diese Funktionalität festlegen:
 
@@ -93,7 +93,7 @@ Sie können Namen und Beschriftung je nach Anforderung angeben. Speichern und ve
 > [!NOTE]
 > Die Dokumentenverwaltung muss für die Entität aktiviert werden, für die Sie das Formular bearbeiten. Weitere Informationen: [Aktivieren der Dokumentenverwaltung für Entitäten](#step-3-enable-document-management-for-entities)
 
-### <a name="powerapps-portals-configuration"></a>PowerApps-Portalkonfiguration
+### <a name="power-apps-portals-configuration"></a>Power Apps-Portalkonfiguration
 
 Abgesehen von der Standardkonfiguration, die für das Entitäts- oder Webformular erforderlich ist, müssen Sie die folgenden Eigenschaften festlegen, um Dokumentenverwaltung zu aktivieren:
 
@@ -135,7 +135,7 @@ Das Beispiel unten veranschaulicht die Konfiguration mit Hilfe der Anfrage-Entit
 
 1.  Folgen Sie den Anweisungen in [Schritt 1](#step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365), um sicherzustellen, dass die serverbasierte Konfiguration für die modellgesteuerten Apps in Dynamics 365 und [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]-Integration abgeschlossen ist.
 
-2.  Folgen Sie den Anweisungen in [Schritt 2](#step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center), um sicherzustellen, dass das Portal die Berechtigungen für die Integration mit [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] hat. 
+2.  Folgen Sie den Anweisungen in [Schritt 2](#step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center), um sicherzustellen, dass das Portal die Berechtigungen für die Integration mit [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] hat. 
 
 3.  Folgen Sie den Anweisungen in [Schritt 3](#step-3-enable-document-management-for-entities), um sicherzustellen, dass die Dokumentenverwaltung für die Anfrageentität aktiviert ist.
 
@@ -150,12 +150,12 @@ Das Beispiel unten veranschaulicht die Konfiguration mit Hilfe der Anfrage-Entit
         c. Öffnen Sie **Web – Bearbeitungsanfrage** im Formular-Editor.
 
          > [!div class=mx-imgBorder]
-         > ![Web – Bearbeitungsanfrageformular](media/web-edit-case-form.png "Web – Bearbeitungsanfrageformular")
+         > ![Web - Fallformular bearbeiten](media/web-edit-case-form.png "Web - Fallformular bearbeiten")
     
         d. Wählen Sie das Feld **Erstellungszeitpunkt** im Formular und auf der Registerkarte **Einfügen** die Option **Unterraster** aus.
 
          > [!div class=mx-imgBorder]
-         > ![Hinzufügen eines Unterrasters zum Web – Bearbeitungsanfrageformular](media/add-sub-grid.png "Hinzufügen eines Unterrasters zum Web – Bearbeitungsanfrageformular")
+         > ![Ein Unterraster zum Web hinzufügen - Fallformular bearbeiten](media/add-sub-grid.png "Hinzufügen eines Unterrasters zum Web - Fallformular bearbeiten")
     
         e. Im Dialogfeld **Eigenschaften festlegen** legen Sie die folgenden Eigenschaften fest und wählen **OK** aus:
 
@@ -168,11 +168,11 @@ Das Beispiel unten veranschaulicht die Konfiguration mit Hilfe der Anfrage-Entit
          - **Standardansicht**: Aktives Dokument - Orte
 
          > [!div class=mx-imgBorder]
-         > ![Unterrastereigenschaften](media/sub-grid-properties.png "Unterrastereigenschaften")
+         > ![Unterrastereigenschaften](media/sub-grid-properties.png "Subgrid-Eigenschaften")
 
         f. Wählen Sie im Formular-Editor **Speichern** und **Veröffentlichen** aus.
 
-    - PowerApps-Portalkonfiguration
+    - Power Apps-Portalkonfiguration
 
         a. Gehen Sie zu **Portale** > **Entitätsformulare**.
     
@@ -189,7 +189,7 @@ Das Beispiel unten veranschaulicht die Konfiguration mit Hilfe der Anfrage-Entit
          - **Entitätsberechtigung**: Aktiviert
     
          > [!div class=mx-imgBorder]
-         > ![Customer Service – Bearbeitungsanfrageformular](media/customer-service-edit-case-form.png "Customer Service – Bearbeitungsanfrageformular")
+         > ![Customer Service - Fallformular bearbeiten](media/customer-service-edit-case-form.png "Customer Service - Fallformular bearbeiten")
     
         d. Falls Änderungen am Formular vorgenommen wurden, wählen Sie **Speichern** aus.
 
@@ -218,17 +218,17 @@ Das Beispiel unten veranschaulicht die Konfiguration mit Hilfe der Anfrage-Entit
     - **Rechte**: Lesen, Erstellen, Anfügen, Schreiben, Löschen
 
       > [!div class=mx-imgBorder]
-      > ![Customer Service – Entitätsberechtigung](media/customer-service-entity-permission.png "Customer Service – Entitätsberechtigung")
+      > ![Customer Service – Entitätsberechtigung](media/customer-service-entity-permission.png "Customer Service Entitätsgenehmigung")
   
    4. Melden Sie im Portal an, um sicherzustellen, dass die Dokumentenverwaltung für die Anfrageentität aktiviert ist.
 
       a. Wechseln Sie zur Seite **Support**.
 
       > [!div class=mx-imgBorder]
-      > ![Portalsupportseite](media/portal-support-page.png "Portalsupportseite")
+      > ![Portal Support Seite](media/portal-support-page.png "Portals-Support-Seite")
 
       b. Klicken Sie auf einen vorhandenen Anfragedatensatz in der Liste. Wechseln Sie in den Bereich **Anfragedokumente** auf der Seite und sehen Sie die hinzugefügte Dokumentliste.
 
       > [!div class=mx-imgBorder]
-      > ![Anfragedokument](media/case-document.png "Anfragedokument")
+      > ![Falldokument](media/case-document.png "Falldokument")
 

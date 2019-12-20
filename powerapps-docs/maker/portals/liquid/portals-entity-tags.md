@@ -1,28 +1,28 @@
 ---
-title: Verwenden von PowerApps Common Data Service Entity-Tags für ein Portal | MicrosoftDocs
-description: Erfahren Sie mehr über die im Portal verfügbaren PowerApps Common Data Service Entity-Tags.
+title: Verwenden von Power Apps Common Data Service Entity-Tags für ein Portal | MicrosoftDocs
+description: Erfahren Sie mehr über die im Portal verfügbaren Power Apps Common Data Service Entity-Tags.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/28/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b6efc3e176602d366315b9b54b66593005051e55
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f252b0c9ef0ea90f6206863fe45a36702e4ce481
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757134"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884647"
 ---
-# <a name="powerapps-common-data-service-entity-tags"></a>PowerApps Common Data Service Entity-Tags
+# <a name="power-apps-common-data-service-entity-tags"></a>Power Apps Common Data Service Entity-Tags
 
-PowerApps-Entitätstags werden verwendet, um PowerApps-Daten zu laden und anzuzeigen, oder um andere PowerApps-Portalframeworkdienste zu verwenden. Diese Tags sind PowerApps-spezifische Erweiterungen der Liquid-Sprache.
+Power Apps-Entitätstags werden verwendet, um Power Apps-Daten zu laden und anzuzeigen, oder um andere Power Apps-Portalframeworkdienste zu verwenden. Diese Tags sind Power Apps-spezifische Erweiterungen der Liquid-Sprache.
 
 ## <a name="chart"></a>Diagramm
 
-Hinzufügen eines PowerApps-Diagramms zu einer Webseite Sie können das Diagramm im Feld Kopie auf einer Webseite oder im Feld Quelle auf einer Webvorlage hinzufügen. Schritte zum Hinzufügen eines PowerApps-Diagramms zu einer Webseite finden Sie unter [Diagramm zu einer Webseite in Portal](../configure/add-chart.md) hinzufügen.
+Hinzufügen eines Power Apps-Diagramms zu einer Webseite Sie können das Diagramm im Feld Kopie auf einer Webseite oder im Feld Quelle auf einer Webvorlage hinzufügen. Schritte zum Hinzufügen eines Power Apps-Diagramms zu einer Webseite finden Sie unter [Diagramm zu einer Webseite in Portal](../configure/add-chart.md) hinzufügen.
 
 ```
 {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
@@ -45,7 +45,7 @@ ID der Entität, wenn sie im Ansichts-Editor geöffnet wird.
 Fügt die Power BI-Dashboards und Berichte innerhalb von Seiten hinzu. Der Tag kann im Feld **Copy** auf einer Webseite oder im Feld **Source** auf einer Webvorlage hinzugefügt werden. Weitere Informationen zum Hinzufügen eines Power BI-Berichts oder Dashboards zu einer Webseite im Portal finden Sie unter [Hinzufügen eines Power BI-Berichts oder Dashboards zu einer Webseite im Portal](../admin/add-powerbi-report.md).
 
 > [!NOTE]
-> Damit das Tag funktioniert, müssen Sie die [Power BI-Integration aktivieren](../admin/set-up-power-bi-integration.md) über das PowerApps-Portal-Administratorcenter. Wenn die Power BI-Integration nicht aktiviert ist, wird das Dashboard oder der Bericht nicht angezeigt.
+> Damit das Tag funktioniert, müssen Sie die [Power BI-Integration aktivieren](../admin/set-up-power-bi-integration.md) über das Power Apps-Portal-Administratorcenter. Wenn die Power BI-Integration nicht aktiviert ist, wird das Dashboard oder der Bericht nicht angezeigt.
 
 ### <a name="parameters"></a>Parameter
 
@@ -56,14 +56,14 @@ Das powerbi-Tag akzeptiert die folgenden Parameter:
 Pfad des Power BI-Berichts oder des Dashboards. Wenn der Power BI-Bericht oder Dashboard sicher ist, müssen Sie den Authentifizierungstyp angeben.
 
 ```
-{% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
+{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
 **authentication_type**
 
 Typ der Authentifizierung, die für den Power BI-Bericht oder Dashboard erforderlich ist. Gültige Werte für diesen Parameter sind:
 
-- **Anonym**: Ermöglicht Ihnen einzubetten und zu Web-Power BI-Berichten zu veröffentlichen. Der Standardauthentifizierungstyp ist "Anonym".
+- **Anonym**: Ermöglicht Ihnen einzubetten und zu Web-Power BI-Berichten zu veröffentlichen. Der Standardauthentifizierungstyp ist "Anonym". Wenn Sie den Authentifizierungstyp "Anonym" verwenden, müssen Sie die Power BI-Berichts-URL abrufen, wie beschrieben unter: [Veröffentlichen im Internet über Power BI](https://docs.microsoft.com/power-bi/service-publish-to-web)
 
 - **AAD**: Ermöglicht Ihnen, sichere Power BI-Berichte oder Dashboards für authentifizierte Power BI Azure Active Directory-Benutzer freizugeben.
 
@@ -139,7 +139,7 @@ Wenn Sie einem Power BI-Bericht keine Rolle zugewiesen haben und den Parameter *
 
 ## <a name="editable"></a>editable
 
-Rendert ein bestimmtes PowerApps-Portal-CMS-Objekt als im Portal editierbar für Benutzer mit Berechtigung zur Inhaltsbearbeitung für dieses Objekt. Bearbeitbare Objekte umfassen [Seite](liquid-objects.md#page), [Ausschnitte](liquid-objects.md#snippets) und [Weblinks](liquid-objects.md#weblinks).  
+Rendert ein bestimmtes Power Apps-Portal-CMS-Objekt als im Portal editierbar für Benutzer mit Berechtigung zur Inhaltsbearbeitung für dieses Objekt. Bearbeitbare Objekte umfassen [Seite](liquid-objects.md#page), [Ausschnitte](liquid-objects.md#snippets) und [Weblinks](liquid-objects.md#weblinks).  
 
 ```
 {% editable page 'adx_copy' type: 'html', title: 'Page Copy', escape: false, liquid: true %}
@@ -284,7 +284,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 **language\_code**
 
-Ein ganzzahliger PowerApps-Sprachcode, um die lokalisierten Bezeichnungen der Entitätsliste, die geladen werden sollen, auszuwählen. Ohne Angabe von language\_code wird die Standardsprache der PowerApps-Verbindung der Portal-Anwendung verwendet.
+Ein ganzzahliger Power Apps-Sprachcode, um die lokalisierten Bezeichnungen der Entitätsliste, die geladen werden sollen, auszuwählen. Ohne Angabe von language\_code wird die Standardsprache der Power Apps-Verbindung der Portal-Anwendung verwendet.
 
 ```
 {% entitylist name:"My Entity List", language_code:1033 %}
@@ -296,7 +296,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 ## <a name="entityview"></a>entityview
 
-Lädt eine bestimmte PowerApps-Ansicht, nach Name oder ID. Auf die Eigenschaften der Ansicht ߝ Ansichtsspaltenmetadaten, paginierte Ergebnisdatensätze, usw. kann dann mithilfe einer [entityview](liquid-objects.md#entityview) zugegriffen werden, die im Tag-Block verfügbar sein wird.  
+Lädt eine bestimmte Power Apps-Ansicht, nach Name oder ID. Auf die Eigenschaften der Ansicht ߝ Ansichtsspaltenmetadaten, paginierte Ergebnisdatensätze, usw. kann dann mithilfe einer [entityview](liquid-objects.md#entityview) zugegriffen werden, die im Tag-Block verfügbar sein wird.  
 
 Wenn die Ansicht erfolgreich geladen wird, wird der Inhalt im Block gerendert. Wenn die Ansicht nicht gefunden wird, wird der Inhalt im Block nicht gerendert.
 
@@ -334,7 +334,7 @@ Loaded default view of the entity list associated with the current page, with {{
 
 ### <a name="parameters"></a>Parameter
 
-Stellen Sie **entweder** „id” **oder** „logical\_name” mit dem Namen zum Auswählen der PowerApps-Ansicht bereit, die geladen werden soll. Wenn keine der Optionen bereitgestellt wurde und das entityview-Tag in einem entitylist-Tag geschachtelt ist, wird die Standardansicht der einschließenden entitylist geladen.
+Stellen Sie **entweder** „id” **oder** „logical\_name” mit dem Namen zum Auswählen der Power Apps-Ansicht bereit, die geladen werden soll. Wenn keine der Optionen bereitgestellt wurde und das entityview-Tag in einem entitylist-Tag geschachtelt ist, wird die Standardansicht der einschließenden entitylist geladen.
 
 **id**
 
@@ -360,7 +360,7 @@ Loaded entity view {{ entityview.name }} using view query string request paramet
 
 **logical\_name**
 
-Der logische Name der PowerApps-Entität der zu ladenden Ansicht. Muss in Verbindung mit „name” verwendet werden.
+Der logische Name der Power Apps-Entität der zu ladenden Ansicht. Muss in Verbindung mit „name” verwendet werden.
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -372,7 +372,7 @@ Loaded entity view with {{ entityview.total_records }} total records.
 
 **name**
 
-Der PowerApps-Name der zu ladenden Ansicht. Muss in Verbindung mit „logical\_name” verwendet werden.
+Der Power Apps-Name der zu ladenden Ansicht. Muss in Verbindung mit „logical\_name” verwendet werden.
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -527,7 +527,7 @@ Loaded entity view with {{ entityview.total_records }} total records to which th
 
 **language\_code**
 
-Ein ganzzahliger PowerApps-Sprachcode, um die zu ladenden lokalisierten Bezeichnungen der Entitätsansicht (Spaltenüberschriftsbezeichnungen, usw.) auszuwählen. Ohne Angabe von language\_code wird die Standardsprache der PowerApps-Verbindung der Portal-Anwendung verwendet.
+Ein ganzzahliger Power Apps-Sprachcode, um die zu ladenden lokalisierten Bezeichnungen der Entitätsansicht (Spaltenüberschriftsbezeichnungen, usw.) auszuwählen. Ohne Angabe von language\_code wird die Standardsprache der Power Apps-Verbindung der Portal-Anwendung verwendet.
 
 Wenn „entityview” innerhalb eines „entitylist”-Blocks verwendet wird, erbt „entityview” die Sprachcodekonfiguration von „entitylist”.
 
@@ -636,7 +636,7 @@ Dieser Parameter unterstützt die [Lucene-Abfrageanalysesyntax](https://lucene.a
 
 **logical\_names**
 
-Die logischen Namen der PowerApps-Entität, auf die die passenden Ergebnisse beschränkt werden, als durch Trennzeichen getrennte Zeichenfolge. Wenn sie nicht angegeben werden, werden alle entsprechenden Entitäten zurückgegeben.
+Die logischen Namen der Power Apps-Entität, auf die die passenden Ergebnisse beschränkt werden, als durch Trennzeichen getrennte Zeichenfolge. Wenn sie nicht angegeben werden, werden alle entsprechenden Entitäten zurückgegeben.
 
 ```
 {% searchindex query: request.params.query, logical_names: 'kbarticle,incident' %}
@@ -681,7 +681,7 @@ Die Größe der Ergebnisseite, die zurückgegeben werden soll. Wenn sie nicht an
 
 ## <a name="entityform"></a>entityform
 
-Vollständiges Rendern einer PowerApps-konfigurierten Entitätsform, nach Name oder ID.  
+Vollständiges Rendern einer Power Apps-konfigurierten Entitätsform, nach Name oder ID.  
 
 > [!Note]
 > Das „entityform”-Tag ist nur für die Verwendung in Inhalten verfügbar, die in einer <em>[web template](store-content-web-templates.md)–</em>basierten Seitenvorlage gerendert werden. Wenn Sie versuchen, das Tag in einer Rewrite-basierten Seitenvorlage zu verwenden, wird kein Render-Vorgang ausgeführt. Sie können nur ein einziges „entityform”- oder „webform”-Tag pro Seite rendern. „entityform”- oder „webform”-Tags nach dem ersten werden nicht gerendert.       
@@ -696,9 +696,9 @@ Der Name des zu ladenden Entitätsformulars.
 
 `{% entityform name:My Entity Form %}`
 
-### <a name="webform"></a>**webform**
+## <a name="webform"></a>webform
 
-Rendert vollständig ein PowerApps-konfiguriertes Webformular, nach Name oder ID. Das „webform”-Tag ist nur für die Verwendung in Inhalten verfügbar, die in einer [web template](store-content-web-templates.md)–basierten Seitenvorlage gerendert werden. Wenn Sie versuchen, das Tag in einer Rewrite-basierten Seitenvorlage zu verwenden, wird kein Render-Vorgang ausgeführt. Sie können nur ein einziges „entityform”- oder „webform”-Tag pro Seite rendern. „entityform”- oder „webform”-Tags nach dem ersten werden nicht gerendert.                
+Rendert vollständig ein Power Apps-konfiguriertes Webformular, nach Name oder ID. Das „webform”-Tag ist nur für die Verwendung in Inhalten verfügbar, die in einer [web template](store-content-web-templates.md)–basierten Seitenvorlage gerendert werden. Wenn Sie versuchen, das Tag in einer Rewrite-basierten Seitenvorlage zu verwenden, wird kein Render-Vorgang ausgeführt. Sie können nur ein einziges „entityform”- oder „webform”-Tag pro Seite rendern. „entityform”- oder „webform”-Tags nach dem ersten werden nicht gerendert.                
 `{% webform name: 'My Web Form' %}`
 
 ### <a name="parameters"></a>Parameter
@@ -708,6 +708,7 @@ Rendert vollständig ein PowerApps-konfiguriertes Webformular, nach Name oder ID
 Der Name des zu ladenden Webformulars.
 
 `{% webform name:My Web Form %}`
+
 
 ### <a name="see-also"></a>Siehe auch
 

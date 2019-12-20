@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ecb0731d3cbba030f3b819e2b2744cb6a7b29c20
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 07a6d262aeaba818d5a965409ce28a90934536c3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706897"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861293"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>Erstellen und Bearbeiten von virtuellen Entitäten, die Daten aus einer externen Datenquelle enthalten
 
@@ -48,7 +48,7 @@ Alternativ können Entwickler ihre eigenen Datenanbieter erstellen. Datenanbiete
 ## <a name="virtual-entity-benefits"></a>Vorteile der virtuellen Entität  
   
 - Entwickler können Plug-Ins implementieren, um mit dem Common Data Service-Webdiense und dem -Plug-In-Registrierungstool externe Daten zu lesen.  
-- Systemanpasser verwenden den PowerApps-Projektmappen-Explorer, um den Datenquelldatensatz zu konfigurieren und virtuelle Entitäten zu erstellen, die für den Zugriff auf externe Daten verwendet werden, ohne dafür Code schreiben zu müssen.  
+- Systemanpasser verwenden den Power Apps-Projektmappen-Explorer, um den Datenquelldatensatz zu konfigurieren und virtuelle Entitäten zu erstellen, die für den Zugriff auf externe Daten verwendet werden, ohne dafür Code schreiben zu müssen.  
 - Endbenutzer verwenden die Datensätze, die von der virtuellen Entität erstellt wurden, um die Daten in Feldern, Rastern, Suchergebnissen und FetchXML-basierten Berichten sowie Dashboards zu betrachten.  
   
 <a name="AddDataSource"></a> 

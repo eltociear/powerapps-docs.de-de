@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 90d74124e21fe74a96ca31830508f3bbb99e17b9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7826fa33f8ced492a8748ffa073a18521cc496f5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748316"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861976"
 ---
 # <a name="implementing-flip-component"></a>Implementieren einer Kippkomponente
 
-In diesem Beispiel wird gezeigt, wie Sie Drittanbieterbibliotheken verwenden, um Komponenten im PowerApps component framework zu erstellen.  Die Kipp-Beispielkomponente wird auf Grundlage von angular.js, angular-ui, angular-animate, angular-sanitize, bootstrap implementiert. Dieser Code deckt möglicherweise nicht die bewährten Methoden für die erwähnten Drittanbieterbibliotheken ab.
+In diesem Beispiel wird gezeigt, wie Sie Drittanbieterbibliotheken verwenden, um Komponenten im Power Apps component framework zu erstellen.  Die Kipp-Beispielkomponente wird auf Grundlage von angular.js, angular-ui, angular-animate, angular-sanitize, bootstrap implementiert. Dieser Code deckt möglicherweise nicht die bewährten Methoden für die erwähnten Drittanbieterbibliotheken ab.
 
 > [!div class="mx-imgBorder"]
 > ![Angular-Kippen](../media/angular-flip.png "Angular-Kippen")
@@ -43,13 +43,13 @@ Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau)
 
 ## <a name="overview"></a>Übersicht
 
-Dieses Beispiel enthält Beispiele dafür, wie Sie Abhängigkeiten für Drittanbieterbibliotheken hinzufügen können, und demonstriert damit, wie Sie Datenbindung zwischen PowerApps component framework, Komponentenmodell und innerem Datenmodell von Drittanbietern in zwei Richtungen ausführen können.
+Dieses Beispiel enthält Beispiele dafür, wie Sie Abhängigkeiten für Drittanbieterbibliotheken hinzufügen können, und demonstriert damit, wie Sie Datenbindung zwischen Power Apps component framework, Komponentenmodell und innerem Datenmodell von Drittanbietern in zwei Richtungen ausführen können.
 
 Das Kippkomponentenbeispiel besteht aus einer Beschriftung und einer Schaltfläche. Wenn Sie auf die Schaltfläche klicken, wird der Text in der Beschriftung umgeschaltet.
 
 - Wenn die Komponente geladen wird, zeigt die Bezeichnung den Text auf Grundlage des Bindungsattributwert an. `context.parameters.[property_name].attributes` enthält die zugeordneten Metadaten.
 - Für TwoOptions-Felder enthält `context.parameters.[property_name].Options` eine wahre und falsche Wertoption. 
-- Wenn Sie auf die Flip-Schaltfläche klicken, aktualisiert die Bezeichnung den Wert mit der **notifyOutputEvents**-Methode, die [getOutputs](../reference/control/getoutputs.md)-Methode wird asynchron aufgerufen und geht in das PowerApps component framework ein. 
+- Wenn Sie auf die Flip-Schaltfläche klicken, aktualisiert die Bezeichnung den Wert mit der **notifyOutputEvents**-Methode, die [getOutputs](../reference/control/getoutputs.md)-Methode wird asynchron aufgerufen und geht in das Power Apps component framework ein. 
 - ClientAPI aktualisiert den Bindungsattributwert und die aktualisierten Werte gehen in die Komponentenbeschriftung ein. Sie können auch `ClientAPI` verwenden, um einen zu Attributwert zu aktualisieren, um die [updateView](../reference/control/updateview.md)-Methode des Steuerelements auszulösen. Die Komponente aktualisiert dann das Drittanbietermodell und die Beschriftung wird aktualisiert.
 
 
@@ -217,7 +217,7 @@ export class JSAngularJSFlipControl
     }
   }
   /**
-   * Update value in PowerApps component framework
+   * Update value in Power Apps component framework
    * @param newValue new value
    */
   private updateOutputIfNeeded(newValue: boolean): void {
@@ -355,11 +355,11 @@ fieldset[disabled].btn-primary:hover {
   border: 1px solid transparent;
   border-radius: 4px;
 }
-
 ```
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)<br />
-[PowerApps component framework-API-Referenz](../reference/index.md)<br />
-[PowerApps component framework Übersicht](../overview.md)
+[Beispielkomponenten verwenden](../use-sample-components.md)<br/>
+[Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)<br />
+[Power Apps component framework-API-Referenz](../reference/index.md)<br />
+[Power Apps component framework Übersicht](../overview.md)

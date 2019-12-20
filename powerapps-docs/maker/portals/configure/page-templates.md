@@ -1,6 +1,6 @@
 ---
-title: Erstellen und Verwalten von Seitenvorlagen in PowerApps-Portalen | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie Seitenvorlagen in PowerApps-Portalen erstellen und verwalten können.
+title: Erstellen und Verwalten von Seitenvorlagen in Power Apps-Portalen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Seitenvorlagen in Power Apps-Portalen erstellen und verwalten können.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ef4f61e7b9165d8d2c4abbc70c0bce65957665ab
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 435270ec5c996b90d5633650ed3813e6344a2db6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760444"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866793"
 ---
 # <a name="create-and-manage-page-templates"></a>Erstellen und verwalten Sie Seitenvorlagen
 

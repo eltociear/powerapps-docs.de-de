@@ -1,26 +1,26 @@
 ---
-title: Portal-Anatomie des PowerApps-Portalstudios | Microsoft-Dokumentation
-description: Erfahren Sie mehr über die Anatomie des PowerApps-Portalstudios.
+title: Portal-Anatomie des Power Apps-Portalstudios | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Anatomie des Power Apps-Portalstudios.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/29/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: a007dccdd82b4297b7bee245d4036d9e00b48244
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bb5102107d9d152e2f95d608959efe035f79a5b8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755726"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884559"
 ---
-# <a name="powerapps-portals-studio-anatomy"></a>Anatomie des PowerApps-Portalstudios
+# <a name="power-apps-portals-studio-anatomy"></a>Anatomie des Power Apps-Portalstudios
 
-Sie können das PowerApps-Portalstudio verwenden, um Ihre Website zu erstellen und anzupassen. Es enthält verschiedene Optionen zum Hinzufügen und Konfigurieren von Webseiten, Komponenten, Formularen und Listen. Die Anatomie des PowerApps-Portalstudios ist wie folgt:
+Sie können das Power Apps-Portalstudio verwenden, um Ihre Website zu erstellen und anzupassen. Es enthält verschiedene Optionen zum Hinzufügen und Konfigurieren von Webseiten, Komponenten, Formularen und Listen. Die Anatomie des Power Apps-Portalstudios ist wie folgt:
 
-![Anatomie des PowerApps-Portalstudios](media/maker-anatomy.png "Anatomie des PowerApps-Portalstudios")  
+![Anatomie des Power Apps-Portalstudios](media/maker-anatomy.png "Anatomie des Power Apps-Portalstudios")  
 
 | **Annotation** | **Name**        | **Beschreibung**                                                                              |
 |----------------|-----------------|----------------------------------------------------------------------------------------------|
@@ -30,3 +30,5 @@ Sie können das PowerApps-Portalstudio verwenden, um Ihre Website zu erstellen u
 | 4              | Fußzeile          | Zeigt den Status der automatischen Speicherung an und ermöglicht es Ihnen, den Quellcode-Editor zu öffnen.                         |
 | 5              | Eigenschaftenbereich | Zeigt die Eigenschaften der Webseite und ausgewählter Komponenten an und ermöglicht es Ihnen, diese bei Bedarf zu bearbeiten. |
 
+> [!NOTE]
+> Das Bearbeiten eines Portals über Power Apps-Portalstudio führt aufgrund mehrerer Hintergrundprozesse vorübergehend zu einer schlechten Portalleistung. Beispielsweise wird der Prozess zum Löschen des Caches ausgeführt und lädt Daten von Common Data Service erneut.

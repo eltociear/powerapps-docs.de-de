@@ -1,5 +1,5 @@
 ---
-title: Steuern des Zugriffs auf modellgesteuerte App-Formulare in PowerApps | MicrosoftDocs
+title: Steuern des Zugriffs auf modellgesteuerte App-Formulare in Power Apps | MicrosoftDocs
 description: Erfahren Sie, wie der Zugriff auf Hauptformulare gesteuert wird
 ms.custom: ''
 ms.date: 06/18/2019
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a3a381bbc5d2fe8e338a55d6516978d3de355834
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 290d0286f92e5cc63addefaac5ed6fd293d19f2e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752610"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869022"
 ---
 # <a name="control-access-to-model-driven-app-forms"></a>Zugriff auf modellgesteuerte App-Formulare in PowerApps steuern
 

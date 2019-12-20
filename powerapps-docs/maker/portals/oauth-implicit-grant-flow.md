@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 38a1ac18a5c978c7b39d6dee85afcb9adf334534
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9c4ea4e34dacf70a9bb51c28c5761700904a3053
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755814"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862179"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>Verwenden des Flows zur implizierten OAuth 2.0-Genehmigung innerhalb des Portals 
 
@@ -127,11 +127,11 @@ Sie müssen die Client-ID mit dem Portal registrieren, für das dieser Flow zuge
 
 ## <a name="sample-code"></a>Beispielcode
 
-Sie können den folgenden Beispielcode verwenden, um mit der Verwendung der implizierten OAuth 2.0-Genehmigung mit PowerApps-Portal-APIs zu beginnen.
+Sie können den folgenden Beispielcode verwenden, um mit der Verwendung der implizierten OAuth 2.0-Genehmigung mit Power Apps-Portal-APIs zu beginnen.
 
 ### <a name="use-portal-oauth-token-with-an-external-web-api"></a>Verwenden Sie das Portal-OAuth-Token für externe Web API
 
-Dieses Beispiel ist ein ASP.NET-basiertes Projekt und dient zur Validierung des von PowerApps-Portalen ausgegebenen ID-Tokens. Das vollständige Beispiel finden Sie hier: [Verwenden Sie Portal-OAuth-Token für externe Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample).
+Dieses Beispiel ist ein ASP.NET-basiertes Projekt und dient zur Validierung des von Power Apps-Portalen ausgegebenen ID-Tokens. Das vollständige Beispiel finden Sie hier: [Verwenden Sie Portal-OAuth-Token für externe Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample).
 
 ### <a name="authorize-endpoint-sample"></a>Endpunkt-Muster autorisieren
 
@@ -139,4 +139,4 @@ Dieses Beispiel veranschaulicht, wie Endpunktrücksendungen das ID-Token als Fra
 
 ### <a name="token-endpoint-sample"></a>Token-Endpunktbeispiele
 
-Dieses Beispiel zeigt, wie Sie die Funktion getAuthenticationToken verwenden können, um ein ID-Token über den Token-Endpunkt in PowerApps-Portalen abzurufen. Das Beispiel finden Sie hier: [Token-Endpunktbeispiel](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js).
+Dieses Beispiel zeigt, wie Sie die Funktion getAuthenticationToken verwenden können, um ein ID-Token über den Token-Endpunkt in Power Apps-Portalen abzurufen. Das Beispiel finden Sie hier: [Token-Endpunktbeispiel](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js).

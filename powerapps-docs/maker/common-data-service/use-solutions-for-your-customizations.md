@@ -1,5 +1,5 @@
 ---
-title: Verwenden der Standardlösung zum Anpassen mit PowerApps | Microsoft-Dokumentation
+title: Verwenden der Standardlösung zum Anpassen mit Power Apps | Microsoft-Dokumentation
 description: Erfahren, wie Standardlösungen angepasst werden
 ms.custom: ''
 ms.date: 10/29/2018
@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0676d24ef79f2fe92da2971028a6e22fbdc76c62
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: da116f81addf057a5f3fd4c44264bc6305e7b884
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755177"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869674"
 ---
 # <a name="use-the-common-data-services-default-solution"></a>Die Common Data Service-Standardlösung verwenden  
   
- Alle PowerApps-Umgebungen beinhalten die folgenden Lösungen.
+ Alle Power Apps-Umgebungen beinhalten die folgenden Lösungen.
 -   **Common Data Service-Standardlösung** – Dies ist eine Basislösung, die für Entwickler zur standardmäßigen Nutzung verfügbar ist, um Ihre Anpassungen an einer Umgebung vorzunehmen.
 -   **Standardlösung** - Dies ist eine spezielle Lösung, die alle Anpassungen aus allen Lösungen in einer Umgebung enthält. 
 <!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->

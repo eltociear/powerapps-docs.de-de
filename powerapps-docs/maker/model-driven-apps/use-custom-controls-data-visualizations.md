@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen in PowerApps | Microsoft-Dokumentation
+title: Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie benutzerdefinierte Steuerelemente für Felder verwenden
 ms.custom: ''
 ms.date: 06/07/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b34354a1bc0bdfb3556acc6ca999a1e0e8dcec74
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8fd79185c4db541700e3079e9151a1193ebd6247
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756034"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874477"
 ---
 # <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen
 
@@ -48,7 +48,7 @@ Sie können ein benutzerdefiniertes Steuerelement so festlegen, dass es in einem
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>Verwenden eines benutzerdefinierten Steuerelements, um einem Feld Visualisierungen hinzuzufügen  
  Durch die Schritte dieses Vorgangs werden die standardmäßige Label- und Textfeld-Felder im Feld **Budgetbetrag** in das Schiebereglersteuerelement der Verkaufschancenentität geändert. Sie können auf ähnliche Weise ein vorhandenes Feld mit einem benutzerdefinierten Steuerelement ersetzen oder ein benutzerdefiniertes Steuerelement für ein benutzerdefiniertes Feld konfigurieren.  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
      
 

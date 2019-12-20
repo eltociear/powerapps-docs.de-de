@@ -1,5 +1,5 @@
 ---
-title: Registerkarten-Eigenschaften für Formulare in modellgesteuerten Apps in PowerApps | Microsoft-Dokumentation
+title: Registerkarten-Eigenschaften für Formulare in modellgesteuerten Apps in Power Apps | Microsoft-Dokumentation
 description: Grundlegendes zur Registerkarteneigenschaften für Hauptformulare
 Keywords: Registerkarteneigenschaften; Dynamics 365; Hauptformulare
 author: matp
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bd97c61829aaba7279f56019f0eec7fa9829a6ea
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d0653ad2089be03ff06bfd5495c8995d92ec704e
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756254"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874604"
 ---
 # <a name="tab-properties-for-model-driven-app-forms-overview"></a>Registerkarten-Eigenschaften für Hauptformulare in modellgesteuerten Apps im Überblick
 
@@ -31,8 +31,8 @@ ms.locfileid: "2756254"
   
  Registerkarten enthalten bis zu drei Spalten, und die Breite der Spalten kann auf einen Prozentsatz der Gesamtbreite festgelegt werden. Wenn Sie eine neue Registerkarte erstellen, wird die Spalte mit Abschnitt vorab ausgefüllt.  
 
-Sie können auf **Registerkarten-Eigenschaften** über die PowerApps-Website zugreifen. 
-1.  Wählen Sie auf der Website [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Modellgesteuert** (unterer linker Teil des Navigationsbereichs) aus.  
+Sie können auf **Registerkarten-Eigenschaften** über die Power Apps-Website zugreifen. 
+1.  Wählen Sie auf der Website [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Modellgesteuert** (unterer linker Teil des Navigationsbereichs) aus.  
 
      ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
 

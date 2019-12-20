@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 19dca44c26565bc55dcfaace48987b69dd0a195f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6f37959db1296995abe08e85995750796a93da9c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759554"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866925"
 ---
 # <a name="configure-site-settings-for-portals"></a>Konfigurieren Sie Websiteeinstellungen für Portale
 
 Eine Website-Einstellung ist ein konfigurierbarer benannter Wert, der von Websitecode verwendet wird, um das Verhalten oder die visuelle Darstellung des Portals zu ändern. Normalerweise, wenn ein Entwickler Websitecode erstellt, verweist er Website-Einstellungen für verschiedene Komponenten, damit der Endbenutzer die Einstellungswerte ändern kann, um die Website zu ändern, ohne den Code zu ändern und die Website neu zu kompilieren und bereitstellen zu müssen.
 
-Die Beispielportale, die mit der Installation von PowerApps-Portalen verfügbar sind, enthalten mehrere konfigurierbare Website-Einstellungen für verschiedene Stile, die verwendet werden, um viele Sichtelemente innerhalb der Website zu ändern, wie Hintergrundstil, Textfarbe und Layoutbreite.
+Die Beispielportale, die mit der Installation von Power Apps-Portalen verfügbar sind, enthalten mehrere konfigurierbare Website-Einstellungen für verschiedene Stile, die verwendet werden, um viele Sichtelemente innerhalb der Website zu ändern, wie Hintergrundstil, Textfarbe und Layoutbreite.
 Die folgenden Typen von Websiteeinstellungen können verwaltet werden:
 
 - **Globale Portaleinstellungen**: Diese Einstellungen gelten für alle Portale, die der Common Data Service-Umgebung zugeordnet sind, in der sie hinzugefügt werden.

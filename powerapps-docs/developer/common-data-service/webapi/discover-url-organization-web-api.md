@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 429f199a9178c2d304331814ae1a9fa6e1ffaa96
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0d4f785d266604d51d099a5b56885b6ad32b6249
+ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748500"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "2854123"
 ---
 # <a name="discover-the-url-for-your-organization-using-the-web-api"></a>Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API.
 

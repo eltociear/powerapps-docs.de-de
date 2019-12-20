@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e579b7054171222819b2d1dd6bb21d9cb7400a9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 13ec511c692af8694012f94f881cb02ee1280ee2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711561"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863154"
 ---
 # <a name="model-driven-sample-apps"></a>Modellgesteuerte Beispielapps
 
@@ -60,7 +60,7 @@ Um modellgesteuerte Beispiel-Apps abspielen oder bearbeiten zu können, müssen 
 - Wenn Anpassungen an der Beispielanwendung vorgenommen wurden, kann es [Abhängigkeiten](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components) geben, die vor dem Löschen der Lösung entfernt werden müssen.
 
 ### <a name="steps"></a>Schritte
-1. Melden Sie sich am [PowerApps-Verwaltungsportal](https://admin.powerapps.com) an.
+1. Melden Sie sich am [Power Apps-Verwaltungsportal](https://admin.powerapps.com) an.
 
 2. Wählen Sie eine Umgebung aus.
 

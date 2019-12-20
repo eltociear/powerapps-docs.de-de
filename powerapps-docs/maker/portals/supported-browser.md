@@ -1,6 +1,6 @@
 ---
-title: Unterstützte Webbrowser für PowerApps-Portalstudio | Microsoft-Dokumentation
-description: Erfahren Sie mehr über die unterstützten Webbrowser für PowerApps-Portalstudio.
+title: Unterstützte Webbrowser für Power Apps-Portalstudio | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die unterstützten Webbrowser für Power Apps-Portalstudio.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e4f4110e888b684d3c34c1c1c6c048a5eabc912a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a378cbbaf5355c5239f22987e2084bf6aef78480
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755638"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864564"
 ---
-# <a name="supported-web-browsers-for-powerapps-portals-studio"></a>Unterstützte Webbrowser für PowerApps-Portalstudio
+# <a name="supported-web-browsers-for-power-apps-portals-studio"></a>Unterstützte Webbrowser für Power Apps-Portalstudio
 
-Die unterstützten Browser für PowerApps-Portalstudio sind unten aufgeführt.
+Die unterstützten Browser für Power Apps-Portalstudio sind unten aufgeführt.
 
 | **Browser**                     | **Betriebssystem**           |
 |---------------------------------|--------------------------------|

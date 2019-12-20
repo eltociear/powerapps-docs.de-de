@@ -2,7 +2,7 @@
 title: Ausführen mehrerer Anfragen mithilfe des Organisationsservices (Common Data Service) | Microsoft-Dokumentation
 description: ExecuteMultipleRequest-Nachricht unterstützt die Massennachrichten von höheren durchlaufenden Szenarien in Common Data Service.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 11/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 86f19593028f2b618923e4e0b120b10d75ab5f63
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3de841f5ed56e067e23862448c8e7db40381efda
+ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748543"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "2854757"
 ---
 # <a name="execute-multiple-requests-using-the-organization-service"></a>Ausführen mehrerer Anfragen mithilfe des Organisationsservices
 
@@ -118,8 +118,9 @@ Es gibt mehrere Beschränkungen, die zur mit der Verwendung von <xref:Microsoft.
 -   **Keine Rekursion zulässig** <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>-  kann <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> nicht aufrufen. Ein <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>-Element, das in der Anforderungssammlung gefunden wird, verursacht einen Fehler für das Anforderungselement.  
   
 -   **Maximale Batchgröße** Es gibt eine Beschränkung bei der Anzahl von Anforderungen, die einer Anforderungssammlung hinzugefügt werden können. Wird dieser Grenzwert überschritten, wird ein Fehler ausgelöst, bevor die erste Anforderung ausgeführt wird. Eine Limit von 1000 Anforderungen ist typisch, obwohl die maximale Menge für die Common Data Service-Bereitstellung festgelegt werden kann.
-  
--   **Einschränkung der gleichzeitigen Aufrufe** Bei Common Data Service gibt es eine Beschränkung von 2 gleichzeitigen Ausführungen <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> pro Organisation. Wird dieser Grenzwert überschritten, wird ein *Server Ausgelastet*-Fehler ausgelöst, bevor die erste Anforderung ausgeführt wird. 
+
+> [!NOTE]
+> Die Anzahl der gleichzeitigen ExecuteMultiple-Anforderungen war bisher begrenzt. Das Limit war 2. Dies wurde entfernt, da Serviceschutzbeschränkungen dies unnötig machten. Für weitere Informationen: [API-Grenzwerte für den Serviceschutz](../api-limits.md).
 
   
 <a name="fault"></a>

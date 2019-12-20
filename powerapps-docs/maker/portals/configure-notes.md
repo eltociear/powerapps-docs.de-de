@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9e46f1273d9c599078cbcd814ebe54f6a55701f3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756562"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862398"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Konfigurieren von Hinweisen für Entitätsformulare und Internetformulare in Portalen
 
@@ -62,7 +62,7 @@ Notizen zu verwalteten Formularen im Portal hinzuzufügen ist genauso einfach wi
 | Fehlermeldung         | Überschreibt die Nachricht, die angezeigt wird, wenn ein Fehler auftritt, während die Notizliste lädt.                                                                     |
 | Meldung vom Typ "Zugriff verweigert" | Überschreibt die Meldung, die angezeigt wird, wenn ein Benutzer keine ausreichenden Berechtigungen zur Anzeige der Notizenliste besitzt.                                                    |
 | Leere Meldung         | Überschreibt die angezeigte Meldung, wenn die aktuelle Entität keine Notizen besitzt, die angezeigt werden können.                                                              |
-| Listenreihenfolgen           | Ermöglicht das Festlegen der Reihenfolge, in der Notizen angezeigt werden. Über die Einstellung zu Listenreihenfolgen können Sie Folgendes festlegen: <ul><li>Attribut: der logische Name der Spalte, nach der sortiert wird.</li><li>Alias: der Alias für das Attribut in der Abfrage</li><li>Sortierung: Wählen Sie „Aufsteigend“ (kleinste bis größte, oder erste bis letzte) oder „Absteigend“ (größte bis kleinste oder letzte bis erste) aus.</li></ul> ![Festlegen von Attributen für Listenreihenfolgen](media/set-attributes-list-orders.png "Sund Attribute für Listenaufträge") Klicken Sie zum Hinzufügen einer Sortierregel auf "Spalte" (4), und füllen Sie die Details aus. Die Listensortierung wird von oben verarbeitet. Das oberste Element hat die höchste Priorität.|
+| Listenreihenfolgen           | Ermöglicht das Festlegen der Reihenfolge, in der Notizen angezeigt werden. Über die Einstellung zu Listenreihenfolgen können Sie Folgendes festlegen: <ul><li>Attribut: der logische Name der Spalte, nach der sortiert wird.</li><li>Alias: der Alias für das Attribut in der Abfrage</li><li>Sortierung: Wählen Sie „Aufsteigend“ (kleinste bis größte, oder erste bis letzte) oder „Absteigend“ (größte bis kleinste oder letzte bis erste) aus.</li></ul>  ![Festlegen von Attributen für Listenreihenfolgen](media/set-attributes-list-orders.png "SeT Attribute für Listenaufträge) Klicken Sie zum Hinzufügen einer Sortierregel auf Spalte (4), und füllen Sie die Details aus. Die Listensortierung wird von oben verarbeitet. Das oberste Element hat die höchste Priorität.|
 ||
 
 

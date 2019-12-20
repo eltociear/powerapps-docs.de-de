@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 03b3db348ff88b7fd2c5e89e2b94a7d16a1fee17
-ms.sourcegitcommit: bcaffcb3135251ea3c2e828f8b59926d19520bec
+ms.openlocfilehash: 20a64e12abc70e8c1b636ab5412e2a951b5ad612
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761814"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869213"
 ---
 # <a name="checklist-unified-interface-transition"></a>Prüfliste: Übergang Einheitliche Oberfläche
 
@@ -35,9 +35,9 @@ Die Anweisungen gelten für die folgenden modellgesteuerten Apps in Dynamics 365
 
 - Dynamics 365 Project Service Automation
 
-## <a name="run-the-powerapps-solution-checker-on-your-solutions"></a>Führen Sie die PowerApps Lösungsprüfung für Ihre Lösungen aus.
+## <a name="run-the-power-apps-solution-checker-on-your-solutions"></a>Führen Sie die Power Apps Lösungsprüfung für Ihre Lösungen aus.
 
-Mit der [PowerApps Lösungsprüfung](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker) können Sie eine umfangreiche Prüfung der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen, um problematische Muster schnell zu ermitteln. Nach der Überprüfung erhalten Sie einen Bericht, der Probleme aufzeigt, die bestimmt werden, welche Komponenten und Code betroffen sind und die Dokumentation verknüpft, die beschreibt, wie ein Problem zu beheben ist.
+Mit der [Power Apps Lösungsprüfung](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker) können Sie eine umfangreiche Prüfung der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen, um problematische Muster schnell zu ermitteln. Nach der Überprüfung erhalten Sie einen Bericht, der Probleme aufzeigt, die bestimmt werden, welche Komponenten und Code betroffen sind und die Dokumentation verknüpft, die beschreibt, wie ein Problem zu beheben ist.
 
 Der Lösungsprüfer analysiert die Lösungskomponente:
 
@@ -73,7 +73,7 @@ Vor dem Übergang zur Einheitlichen Oberfläche ist es wichtig sicherzustellen, 
 
 ## <a name="identify-replacements-for-deprecated-client-api-code-and-features"></a>Identifizieren Sie Ersetzungen für veraltete Client-API-Codes und Funktionen
 
-Aufgrund der Ergebnisse der **PowerApps Lösungsprüfung** und der Informationen, die in [Wichtige kommende Änderungen (Veralterungen)](https://docs.microsoft.com/power-platform/important-changes-coming) über veraltete Client-APIs und -Funktionen enthalten sein, sollten Sie ein gutes Verständnis der Anpassungen und Funktionen haben, die entweder in Ihrem Projekt Einheitliche Oberfläche behoben oder ersetzt werden müssen.
+Aufgrund der Ergebnisse der **Power Apps Lösungsprüfung** und der Informationen, die in [Wichtige kommende Änderungen (Veralterungen)](https://docs.microsoft.com/power-platform/important-changes-coming) über veraltete Client-APIs und -Funktionen enthalten sein, sollten Sie ein gutes Verständnis der Anpassungen und Funktionen haben, die entweder in Ihrem Projekt Einheitliche Oberfläche behoben oder ersetzt werden müssen.
 
 Im Folgenden finden Sie einige der häufigsten Bereiche, die Aufmerksamkeit erfordern:
 
@@ -129,7 +129,7 @@ Die Dynamics 365 Apps von Erstanbietern, die bereits für Einheitliche Oberfläc
 
 ### <a name="what-are-model-driven-apps"></a>Was sind modellgesteuerte Apps?
 
-**Modellgesteuerte Apps** stellen eine Art von App dar, die Sie mithilfe von PowerApps erstellen. Das hilft Ihnen, Ihren Benutzern individuelle Erfahrungen je nach deren Rolle in der Organisation zur Verfügung stellen. Beispielsweise kann ein Vertriebsmitarbeiter eine völlig andere Erfahrung als ein Kundenservicemitarbeiter durch verschiedene modellgesteuerte Apps haben, obwohl sie Daten aus der gleichen Umgebung verwenden. Mehrere modellgesteuerte Apps können in einer Common Data Service-Umgebung erstellt werden. Weitere Informationen: [Was sind modellgesteuerte Apps?](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
+**Modellgesteuerte Apps** stellen eine Art von App dar, die Sie mithilfe von Power Apps erstellen. Das hilft Ihnen, Ihren Benutzern individuelle Erfahrungen je nach deren Rolle in der Organisation zur Verfügung stellen. Beispielsweise kann ein Vertriebsmitarbeiter eine völlig andere Erfahrung als ein Kundenservicemitarbeiter durch verschiedene modellgesteuerte Apps haben, obwohl sie Daten aus der gleichen Umgebung verwenden. Mehrere modellgesteuerte Apps können in einer Common Data Service-Umgebung erstellt werden. Weitere Informationen: [Was sind modellgesteuerte Apps?](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
 
 Die Dynamics 365 Apps von Erstanbietern, die zuvor aufgeführt wurden, sind Beispiele für modellgesteuerte Apps.
 
@@ -203,7 +203,7 @@ Das ist die Gelegenheit, die Erfahrung im Kontext der Geschäftsprozesse für je
 
 -   Nutzen Sie **Bereich-Verweise** auf Formularen, um mehrere Ansichten, Schnellansichten, und Suchfunktionen von Wissensdatenbanken an einem einzigen Ort zu bündeln.
 
--   Nutzen Sie das [PowerApps Component Framework](https://docs.microsoft.com/powerapps/developer/component-framework/overview), um noch mehr benutzerdefinierte Steuerelemente hinzuzufügen. Sie können einige von der Community oder von Partnern und ISV beziehen.
+-   Nutzen Sie das [Power Apps Component Framework](https://docs.microsoft.com/powerapps/developer/component-framework/overview), um noch mehr benutzerdefinierte Steuerelemente hinzuzufügen. Sie können einige von der Community oder von Partnern und ISV beziehen.
 
 -   Betten Sie [Canvas-Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started) in Ihre Formulare ein, um die Anwendung einfach zu erweitern. No-Code- oder Low-Code-Erweiterung Ihrer App ohne die Notwendigkeit, benutzerdefinierte HTML-/JS-Webressourcen zu entwickeln.
 

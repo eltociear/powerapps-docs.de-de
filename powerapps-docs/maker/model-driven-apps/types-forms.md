@@ -1,5 +1,5 @@
 ---
-title: Typ von modellgetriebenen Anwendungsformularen in PowerApps | MicrosoftDocs
+title: Typ von modellgetriebenen Anwendungsformularen in Power Apps | MicrosoftDocs
 description: Machen Sie sich mit den unterschiedlichen Arten von Formularen vertraut
 ms.custom: ''
 ms.date: 06/27/2018
@@ -23,14 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 116cbc691c8bd17f58398e825b5db05ea671421f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8bae85e63b92142b9efbcb0e9f3c31fc3796cb7f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710637"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884234"
 ---
-# <a name="type-of-model-driven-app-forms-in-powerapps"></a>Typ der modellgetriebenen App-Formulare in PowerApps.
+# <a name="type-of-model-driven-app-forms-in-power-apps"></a>Typ der modellgetriebenen App-Formulare in Power Apps.
 
  Es gibt mehrere unterschiedliche Arten von Formularen und jeder Typ verfügt über eine bestimmte Funktion oder Verwendung. Die folgende Tabelle beschreibt die verfügbaren Typen von Formularen.  
   
@@ -39,7 +39,7 @@ ms.locfileid: "2710637"
 |**Hauptbereich**|Wird in modellgesteuerten Anwendungen, Dynamics 365 für Tablets und Dynamics 365 for Outlook verwendet.<br /><br /> Diese Formulare bieten die Hauptbenutzeroberfläche zum Interagieren mit Entitätsdaten.|[Aspekte beim Design von Hauptformularen](design-considerations-main-forms.md)|    
 |**Schnellerfassung**|Wird in modellgesteuerten Anwendungen, Dynamics 365 für Tablets und Dynamics 365 for Outlook verwendet.<br /><br /> Für aktualisierte Entitäten stellen diese Formulare ein einfaches Formular zum Erstellen neuer Datensätze zur Verfügung.|[Erstellen und Bearbeiten von Schnellerstellungsformularen](create-edit-quick-view-forms.md) |  
 |**Schnellansicht**|Wird in modellgesteuerten Anwendungen, Dynamics 365 für Tablets und Dynamics 365 for Outlook verwendet.<br /><br /> Für aktualisierte Entitäten werden diese Formulare mit dem Hauptformular angezeigt, um zusätzliche Daten für einen Datensatz anzuzeigen, auf den ein Suchfeld in dem Formular verweist.|[Erstellen und Bearbeiten von Schnellansichtsformularen](create-edit-quick-view-forms.md)|  
-|**Karte** | Wird in Ansichten für PowerApps Apps verwendet. Kartenformulare sind so konzipiert, dass sie Informationen kompakt anzeigen, sodass sie für Mobilgeräte geeignet sind. | [Erstellen eines Kartenformulars](create-card-forms.md) |
+|**Karte** | Wird in Ansichten für Power Apps Apps verwendet. Kartenformulare sind so konzipiert, dass sie Informationen kompakt anzeigen, sodass sie für Mobilgeräte geeignet sind. | [Erstellen eines Kartenformulars](create-card-forms.md) |
 
 Während jeder Formulartyp spezielle Anforderungen hat, verwenden Sie beim Arbeiten mit Formularen den Formular-Editor. Weitere Informationen: [Übersicht der Benutzeroberfläche des Formulareditors](form-editor-user-interface-legacy.md)
 

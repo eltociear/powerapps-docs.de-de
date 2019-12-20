@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 22920502b75d16dedba7a70ced60b9b3f373ff10
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cc5ce204047810704f01562a9a00668e51784769
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757574"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872899"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Daten mithilfe von Power Query zu einer Entität in Common Data Service hinzufügen
 In dieser Vorgehensweise erstellen Sie eine Entität in [Common Data Service](data-platform-intro.md) und befüllen diese Entität mit Daten aus einem OData-Feed, indem Sie Power Query verwenden. Sie können dieselben Techniken verwenden, um Daten aus diesen Online- und lokalen Quellen zu integrieren, unter anderem:
@@ -35,16 +35,16 @@ In dieser Vorgehensweise erstellen Sie eine Entität in [Common Data Service](da
 
 Sie können Daten auch filtern, transformieren und kombinieren, bevor Sie sie in eine neue oder vorhandene Entität laden.
 
-Sofern Sie keine Lizenz für PowerApps haben, können Sie sich hier [kostenlos anmelden](../signup-for-powerapps.md).
+Sofern Sie keine Lizenz für Power Apps haben, können Sie sich hier [kostenlos anmelden](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/working-with-environments.md) wechseln, in der Sie Entitäten erstellen können.
 
 ## <a name="specify-the-source-data"></a>Angeben der Quelldaten
 
-1. Melden Sie sich in [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und klicken oder tippen Sie auf den Abwärtspfeil für **Daten** neben dem linken Rand.
+1. Melden Sie sich in [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und klicken oder tippen Sie auf den Abwärtspfeil für **Daten** neben dem linken Rand.
 
-    ![PowerApps Homepage](./media/data-platform-cds-newentity-pq/sign-in.png)
+    ![Power Apps Homepage](./media/data-platform-cds-newentity-pq/sign-in.png)
 
 1. Klicken oder tippen Sie in der Liste, die angezeigt wird, auf **Datenintegration** und klicken oder tippen Sie auf **Neues Projekt** neben der oberen rechten Ecke des Fensters.
 

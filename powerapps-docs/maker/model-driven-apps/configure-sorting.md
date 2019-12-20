@@ -1,5 +1,5 @@
 ---
-title: Sortieren von Datensätzen in einer modellgesteuerten App-Ansicht in PowerApps | Microsoft-Dokumentation
+title: Sortieren von Datensätzen in einer modellgesteuerten App-Ansicht in Power Apps | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -21,18 +21,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7cd1e7b160550b877dd0ddd7a79b6babfbf56669
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5a80764f3f00df60b54c4c7c23d2e167de2e006b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752493"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874780"
 ---
 # <a name="sort-records-in-a-model-driven-app-view"></a>Sortieren von Datensätzen in einer Modell-angetriebenen App-Ansicht
 
  Wenn Sie eine Ansicht erstellen oder bearbeiten, können die Sortierreihenfolge für aufsteigende oder absteigendes Optionen konfigurieren.   
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Konten**.   

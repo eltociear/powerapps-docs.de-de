@@ -1,5 +1,5 @@
 ---
-title: Statusgrundübergänge festlegen mit PowerApps | Microsoft-Dokumentation
+title: Statusgrundübergänge festlegen mit Power Apps | Microsoft-Dokumentation
 description: Statusgrundübergänge definieren
 ms.custom: ''
 ms.date: 05/25/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9fb1fc93b5559c47cebeef4fb73ebd095a48f0a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5dd257a07a21b2d0b0d2a449feb9df855d51d604
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705577"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861113"
 ---
 # <a name="define-status-reason-transitions-for-the-case-or-custom-entities"></a>Festlegen von Statusgrundübergängen für Anfrage- oder benutzerdefinierte Entitäten
 
@@ -65,7 +65,7 @@ Die Metadaten für das Feld definieren, welche Werte für einen bestimmten Statu
 Sie können die Optionen für das Statusgrundfeld für die Entität Case (Fall) und angepasste Entitäten modifizieren, um zu definieren, welche weiteren Statusgrundoptionen gewählt werden können. Die einzige Beschränkung besteht darin, dass jede Statusgrundoption für einen aktiven Status mindestens einen Pfad zu einem inaktiven Status zulassen muss. Andernfalls könnten Sie einen Zustand schaffen, in dem der Fall weder gelöst noch abgebrochen werden kann.  
 
 > [!NOTE]
-> Die Bearbeitung der Statusgrundübergänge erfordert die Verwendung des Projektmappen-Explorers. Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md).
+> Die Bearbeitung der Statusgrundübergänge erfordert die Verwendung des Projektmappen-Explorers. Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service mit Power Apps-Lösungs-Explorer](create-edit-field-solution-explorer.md).
   
  Wenn Sie ein Feld "Statusgrund" bearbeiten, ist die Schaltfläche **Statusgrund-Übergänge bearbeiten** im Menü. 
 
@@ -86,7 +86,7 @@ Im folgenden Screenshot sehen Sie ein Beispiels, das die folgenden Anforderungen
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des PowerApps-Projektmappen-Explorers](create-edit-field-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des Power Apps-Projektmappen-Explorers](create-edit-field-solution-explorer.md)<br />
 [Entitätsmetadaten > Entitätsstatus](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [Definieren von benutzerdefinierten Statusmodellübergängen](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

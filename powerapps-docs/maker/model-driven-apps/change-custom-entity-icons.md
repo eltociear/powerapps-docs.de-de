@@ -1,5 +1,5 @@
 ---
-title: Ändern der benutzerdefinierten Entitätssymbole der modellgesteuerten App in PowerApps | Microsoft-Dokumentation
+title: Ändern der benutzerdefinierten Entitätssymbole der modellgesteuerten App in Power Apps | Microsoft-Dokumentation
 definition: Learn how to change the icon for a custom entity
 ms.custom: ''
 ms.date: 05/17/2018
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f7e23ece0ee37d15ef5401421d078e81dd5d590c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7d45a3fc5afae25f2a4e254c033f4e35be20c0ff
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700781"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869257"
 ---
 # <a name="change-model-driven-app-custom-entity-icons"></a>Ändern der Modell-angetriebenen App der benutzerdefinierten Entität-Symbole 
 
@@ -69,7 +69,7 @@ Sie müssen Lösungs-Explorer verwenden, um Entitätssymbole festzulegen.
   
 ## <a name="community-tools"></a>Community-Tools
 
-**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** ist ein Werkzeug, das die XrmToolBox-Community für PowerApps entwickelt hat. Weitere Informationen finden Sie im Thema [Entwicklertools für Common Data Service](/powerapps/developer/common-data-service/developer-tools) für von der Community entwickelte Tools.
+**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** ist ein Werkzeug, das die XrmToolBox-Community für Power Apps entwickelt hat. Weitere Informationen finden Sie im Thema [Entwicklertools für Common Data Service](/powerapps/developer/common-data-service/developer-tools) für von der Community entwickelte Tools.
 
 > [!NOTE]
 > Die Communitytools sind kein Produkt von Microsoft und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).

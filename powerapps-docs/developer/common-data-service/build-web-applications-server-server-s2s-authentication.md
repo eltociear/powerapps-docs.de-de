@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 346bbf75e614fc7b7b3d3f2958825de538a757e1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0fc18f342257eaaa878107ae5b729c672c2f0433
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753050"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861839"
 ---
 # <a name="build-web-applications-using-server-to-server-s2s-authentication"></a>Erstellen von Webanwendungen mit Server-to-Server-Authentifizierung (S2S)
 
 Verwenden Sie Server-zu-Server (S2S) Authentifizierung, um sicher und nahtlos mit Common Data Service mit unseren Webanwendungen und Services zu kommunizieren.. Die S2S-Authentifizierung ist der normale Weg, über den bei Microsoft AppSource registrierte Apps auf die Common Data Service-Daten der Abonnenten zugreifen.  
 
-Die S2S-Authentifizierung bedeutet, dass Sie keine bezahlte PowerApps-Benutzerlizenz für die Verbindung mit den Common Data Service-Umgebungen benötigen. Es gibt keine Lizenzgebühr für das spezielle *Anwendungsbenutzer*-Konto, das Sie bei der S2S-Authentifizierung verwenden. Es gibt jedoch [Beschränkungen hinsichtlich der Anzahl der Anforderungen der Anwendungsbenutzer](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users), die ein Konto aufrufen kann. Mit der S2S-Authentifizierung wird ein spezielles nicht lizenziertes Anwendungsbenutzerkonto erstellt, das Informationen zur bei Azure Active Directory (Azure AD) registrierten Anwendung umfasst. Anstelle der Benutzeranmeldeinformationen wird die Anwendung basierend auf einem Dienstprinzipal authentifiziert, der durch einen Azure AD-Objekt-ID-Wert identifiziert wird, der im Benutzerdatensatz gespeichert ist. Der Anwendungsbenutzer wird einer benutzerdefinierten Sicherheitsrolle zugeordnet, die Arten von Daten und Vorgängen steuert, die die Anwendung ausführen kann.  
+Die S2S-Authentifizierung bedeutet, dass Sie keine bezahlte Power Apps-Benutzerlizenz für die Verbindung mit den Common Data Service-Umgebungen benötigen. Es gibt keine Lizenzgebühr für das spezielle *Anwendungsbenutzer*-Konto, das Sie bei der S2S-Authentifizierung verwenden. Es gibt jedoch [Beschränkungen hinsichtlich der Anzahl der Anforderungen der Anwendungsbenutzer](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users), die ein Konto aufrufen kann. Mit der S2S-Authentifizierung wird ein spezielles nicht lizenziertes Anwendungsbenutzerkonto erstellt, das Informationen zur bei Azure Active Directory (Azure AD) registrierten Anwendung umfasst. Anstelle der Benutzeranmeldeinformationen wird die Anwendung basierend auf einem Dienstprinzipal authentifiziert, der durch einen Azure AD-Objekt-ID-Wert identifiziert wird, der im Benutzerdatensatz gespeichert ist. Der Anwendungsbenutzer wird einer benutzerdefinierten Sicherheitsrolle zugeordnet, die Arten von Daten und Vorgängen steuert, die die Anwendung ausführen kann.  
 
  Alle von Ihrer Anwendung oder dem Dienst mithilfe von S2S ausgeführten Vorgänge werden als Anwendungsbenutzer ausgeführt, statt als der Benutzer, der die Anwendung nutzt. Wenn die Anwendung Datenvorgänge im Auftrag eines bestimmten Benutzers ausführen soll (z. B. dem, der mit der Anwendung interagiert), können Sie Identitätswechsel anwenden, wenn die benutzerdefinierte Sicherheitsrolle auf den Anwendungsserviceprincipal angewendet wurde, der die erforderlichen Berechtigungen besitzt. Weitere Informationen: [Annehmen der Identität eines anderen Benutzers](impersonate-another-user.md)  
 

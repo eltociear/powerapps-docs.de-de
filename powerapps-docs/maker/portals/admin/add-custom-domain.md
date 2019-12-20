@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: cd015b656c90ec2707f3654e02b4e1a5ef65e7d2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c36a077233a83b6246634cfc456d51deec14cf40
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756826"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867366"
 ---
 # <a name="add-a-custom-domain-name"></a>Einen benutzerdefinierten Domänennamen hinzufügen
 
 Eine benutzerdefinierte Domäne kann Ihren Kunden helfen, die Supportressource einfacher zu finden und Ihre Marke sichtbarer zu machen. Nur ein benutzerdefinierter Domänenname kann einem Portal hinzugefügt werden. Nachdem Sie Ihr Portal bereitgestellt haben und Ihren Domänennamen erhalten haben, brauchen Sie ein SSL-Zertifikat, um einen benutzerdefinierten Hostnamen zu installieren. Sie können das erworbene SSL-Zertifikat für Ihre Domäne verwenden, um das Portal mit einer benutzerdefinierten Domäne mithilfe des Assistenten zu verknüpfen.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2. Gehen Sie zu **Portalaktionen** > **Benutzerdefinierten Domänenamen hinzufügen**. Ein Assistent wird geöffnet, um das SSL-Zertifikat auszuwählen.
 

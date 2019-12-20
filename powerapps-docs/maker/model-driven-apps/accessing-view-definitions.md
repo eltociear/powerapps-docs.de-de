@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3b29f863399c8a49ca0c0d60ebe2196d6de6414c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 43a35f82f93260b4f4a8f6b5084e6827e46eff8f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752016"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885131"
 ---
-# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>Zugriff auf eine modellgesteuerte App-Ansichtsdefinition in PowerApps
+# <a name="access-a-model-driven-app-view-definition-in-power-apps"></a>Zugriff auf eine modellgesteuerte App-Ansichtsdefinition in Power Apps
 
- In diesem Thema öffnen Sie eine Ansicht, um die Eigenschaften und Optionen anzuzeigen, um die Ansicht zu konfigurieren. Es gibt verschiedene Möglichkeiten, wie Sie auf Ansichtsdefinitionen in PowerApps zugreifen können. 
+ In diesem Thema öffnen Sie eine Ansicht, um die Eigenschaften und Optionen anzuzeigen, um die Ansicht zu konfigurieren. Es gibt verschiedene Möglichkeiten, wie Sie auf Ansichtsdefinitionen in Power Apps zugreifen können. 
   
   
 ## <a name="open-a-view-for-editing-in-the-latest-view-designer"></a>Öffnen einer Ansicht zum Bearbeiten im aktuellen Ansicht-Designer
@@ -39,7 +39,7 @@ ms.locfileid: "2752016"
 > [!IMPORTANT]
 > Die neueste Version des Ansicht-Designers befindet sich derzeit in der Vorschau. Einige Funktionen wie erweiterte Filterung, benutzerdefinierte Steuerelemente und Spalteneigenschaften werden noch nicht unterstützt. Um diese Aufgaben durchzuführen, [Öffnen Sie eine Ansicht zum Bearbeiten im Lösungsexplorer](#open-a-view-for-editing-in-solution-explorer).
 
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 
     > [!IMPORTANT]

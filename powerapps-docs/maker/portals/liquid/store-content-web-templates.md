@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 76c8e525c5d5b612e055da9c43e14df55cec6e4f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d75a8afd6b269078a4be3c0c7cc9b370cb9fe9f5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757090"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866441"
 ---
 # <a name="store-source-content-by-using-web-templates"></a>Quellinhalt mithilfe von Webvorlagen speichern
 
-Die Webvorlage ist eine PowerApps-Entität (adx\_webtemplate), die in PowerApps-Portalen enthalten ist und zur Speicherung von Vorlagenquellinhalten verwendet wird. Eine Webvorlage enthält im Allgemeinen Liquid-Elemente zum Rendern von dynamischen Inhalten und ist die zentrale Entität für die Integration von Liquid-Vorlagen mit dem Rest des PowerApps-Portalsystems.
+Die Webvorlage ist eine Power Apps-Entität (adx\_webtemplate), die in Power Apps-Portalen enthalten ist und zur Speicherung von Vorlagenquellinhalten verwendet wird. Eine Webvorlage enthält im Allgemeinen Liquid-Elemente zum Rendern von dynamischen Inhalten und ist die zentrale Entität für die Integration von Liquid-Vorlagen mit dem Rest des Power Apps-Portalsystems.
 
 Webvorlagen können in andere Inhalte eingeschlossen werden oder über Vorlagentags mit anderen Vorlagen kombiniert werden. Auf sie wird in diesen Tags über ihre Attribute **Name** verwiesen. Sie können außerdem verwendet werden, um ganze benutzerdefinierte Seitenvorlagen oder benutzerdefinierte Kopfzeilen und Fußzeilen für Ihre Portalwebsite zu erstellen.
 
@@ -27,13 +27,13 @@ Webvorlagen können in andere Inhalte eingeschlossen werden oder über Vorlagent
 |           |                                                                                                                                                                                                                                                                                 |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Name    |                                                                         Der Name der Vorlage. Wird verwendet, um auf diese Vorlage zu verweisen wenn sie in anderen Inhalten enthalten ist oder durch andere Vorlagen erweitert wird.                                                                         |
-|  Quelle   |                                  Der Quellinhalt der Vorlage. In PowerApps steht ein Quellcode-Editor mit Syntax-Hervorhebung und anderen Funktionen zur Codebarbeitungen für dieses Feld bereit.                                  |
+|  Quelle   |                                  Der Quellinhalt der Vorlage. In Power Apps steht ein Quellcode-Editor mit Syntax-Hervorhebung und anderen Funktionen zur Codebarbeitungen für dieses Feld bereit.                                  |
 | MIME-Typ | Stellt optional einen MIME-Typ für die Inhalte der Vorlage zur Verfügung. Wenn keiner bereitgestellt wird, wird ein Typ von „text/html” angenommen. Dieser Wert wird nur verwendet, wenn die Vorlage einer Seitenvorlage zugeordnet ist und das Rendering aller Inhalte diese Vorlage steuert. |
 |           |                                                                                                                                                                                                                                                                                 |
 
 ## <a name="web-templates-as-page-templates"></a>Webvorlagen als Seitenvorlagen
 
-Webvorlagen können in Verbindung mit Seitenvorlagen können verwendet werden, um neue Vorlagen für das Content-Management-System des PowerApps-Portals zu erstellen. Dies kann komplett in PowerApps durchgeführt werden, ohne, dass .NET-Code geschrieben oder die Portalanwendung neu bereitstellt werden muss.
+Webvorlagen können in Verbindung mit Seitenvorlagen können verwendet werden, um neue Vorlagen für das Content-Management-System des Power Apps-Portals zu erstellen. Dies kann komplett in Power Apps durchgeführt werden, ohne, dass .NET-Code geschrieben oder die Portalanwendung neu bereitstellt werden muss.
 
 Um eine neue Seitenvorlage basierend auf einer Webvorlage zu erstellen, wählen Sie einen **Typ** von Webvorlage aus, wenn ein neuer Seitenvorlagendatensatz erstellt wird. Wählen Sie dann **Webvorlage** aus.
 
@@ -43,11 +43,11 @@ Der häufigste Einsatzfall für Webvorlagen ist das Rendern von HTML. Das Render
 
 ## <a name="web-templates-as-website-headers-and-footers"></a>Webvorlagen als Websitekopfzeilen und - fußzeilen
 
-Webvorlagen können auch verwendet werden, um die globalen Kopf- und Fußzeilen außer Kraft zu setzen, die von einem PowerApps-Portal verwendet werden. Legen Sie hierzu das Feld **Kopfzeilenvorlage** oder **Fußzeilenvorlage** der Website auf die gewünschte Webvorlage fest. Beachten Sie, dass wenn Sie **Websitekopfzeile** außer Kraft setzen, Ihre ausgewählte Vorlage für das Rendern der primären Navigation, die Anmelde- und Abmeldelinks, die Suchschnittstelle usw. für Ihre Websiteschnittstellen-Elemente zuständig ist, die normalerweise von der Standard-Kopfzeilenvorlage gehandhabt werden.
+Webvorlagen können auch verwendet werden, um die globalen Kopf- und Fußzeilen außer Kraft zu setzen, die von einem Power Apps-Portal verwendet werden. Legen Sie hierzu das Feld **Kopfzeilenvorlage** oder **Fußzeilenvorlage** der Website auf die gewünschte Webvorlage fest. Beachten Sie, dass wenn Sie **Websitekopfzeile** außer Kraft setzen, Ihre ausgewählte Vorlage für das Rendern der primären Navigation, die Anmelde- und Abmeldelinks, die Suchschnittstelle usw. für Ihre Websiteschnittstellen-Elemente zuständig ist, die normalerweise von der Standard-Kopfzeilenvorlage gehandhabt werden.
 
 ## <a name="built-in-web-templates"></a>Integrierte Webvorlagen
 
-Es gibt eine Reihe von vorgefertigten Liquid-Vorlagen in den PowerApps-Portalen. Um sie zu verwenden, müssen Sie sie über den Namen mithilfe der unten folgenden Liste als Referenz einbinden.
+Es gibt eine Reihe von vorgefertigten Liquid-Vorlagen in den Power Apps-Portalen. Um sie zu verwenden, müssen Sie sie über den Namen mithilfe der unten folgenden Liste als Referenz einbinden.
 
 | Name                        | Beschreibung                                                                                                                                                                                                                             | Code                                                                                   |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

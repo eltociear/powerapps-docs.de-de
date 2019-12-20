@@ -26,7 +26,7 @@
       href: use-editable-grids.md
     - name: Abfragen und Bearbeiten eines Organisationsdesigns
       href: query-and-edit-an-organization-theme.md
-    - name: Erstellen von benutzerdefinierten Komponenten mit dem PowerApps component framework
+    - name: Erstellen von benutzerdefinierten Komponenten mit dem Power Apps component framework
       href: /powerapps/developer/component-framework/overview
 - name: Anwenden der Datenvisualisierung mit Hilfe von Code
   href: customize-visualizations-dashboards.md

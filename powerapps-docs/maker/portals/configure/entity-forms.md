@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 11/22/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 79e6f02f9a13f1c828efe5c472d267e707b09576
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a53bfa0a588da16e302e6986a7226e2c1bc42192
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760450"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874340"
 ---
 # <a name="about-entity-forms"></a>Über Entitätsformulare
 
@@ -109,7 +109,7 @@ Um Ihre Formulare zu sichern, müssen Sie Entitätsberechtigungen erstellen, die
 |Aktuellen Portalbenutzer zuordnen| Gibt an, ob der Datensatz des geraden angemeldeten Benutzers dem Zielentitätsdatensatz zugeordnet werden soll.|
 |Suchattribut: Portalbenutzer für Zielentität|    Der logische Name des Attributs in der Zielentität, die den Portalbenutzer speichert.|
 |Ist Aktivitätspartei| Boolesche Werte geben an, ob das Suchattribut: Portalbenutzer für Zielentität ein ActivityParty-Typ ist.|
-|Datei anfügen|   Wird aktiviert, um ein Dateiuploadsteuerelement unten im Formular hinzuzufügen, dass es ermöglicht, dem Datensatz Dateien anzufügen.|
+|Datei anfügen|   Wird aktiviert, um ein Dateiuploadsteuerelement unten im Formular hinzuzufügen, dass es ermöglicht, dem Datensatz Dateien anzufügen. Sie müssen **Entitätsberechtigungen aktivieren** auswählen und der Anmerkungsentität die Berechtigungen "Erstellen", "Anhängen" und "Anhängen an" zuweisen, damit ein Benutzer Dateien an das Formular anhängen kann. Weitere Informationen: [Zuweisen von Entitätsberechtigungen](assign-entity-permissions.md)<br>**Hinweis**: Wenn ein Benutzer nicht über die erforderlichen Berechtigungen zum Hochladen einer Datei verfügt oder "Entitätsberechtigungen aktivieren" nicht ausgewählt ist, wird die Option zum Hochladen einer Datei nicht im Formular angezeigt.|
 |Datei anfügen: Speicherort|  Optionen: Notizanlage, Azure-Blob-Speicher. Wenn Ihre Organisation zur Verwendung von Azure Storage konfiguriert ist, können Sie hochgeladenen Dateien für dieses Entitätsformular dort speichern. Andernfalls werden Dateien als Notizanlagen gespeichert.|
 |Mehrere Dateien zulassen|Boolescher Wert, der angibt, ob der Benutzer mehrere Dateien hochladen kann oder nicht.|
 |Akzeptieren|    Das "Akzeptieren"-Attribut gibt die MIME-Typen von Dateien an, die der Server beim Dateiupload annimmt. Um mehr als einen Wert anzugeben, trennen Sie die Werte mit einem Komma (z.B. audio/*,video/*,image/*).|

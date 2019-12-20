@@ -13,19 +13,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5679d82d6ec53d579567a778043ac9542099a20e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b1f0152782a31b13d6209fe3911ed10792652af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706677"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864254"
 ---
 # <a name="troubleshoot-power-query"></a>Probleme mit Power Query beheben
 Wenn Sie Power Query for Excel verwenden, um eine benutzerdefinierte Entität zu erstellen, die Daten aus externen Quellen enthält, wird möglicherweise dieser Fehler angezeigt:
 
 >"Ihr Azure Active Directory-Administrator hat eine Richtlinie festgelegt, die verhindert, dass Sie diese Funktionen verwenden. Wenden Sie sich an Ihren Administrator, der Berechtigungen für diese Funktionalität in Ihrem Auftrag gewähren kann."
 
-Dieser Fehler wird angezeigt, wenn Power Query nicht auf die Daten der Organisation in PowerApps oder Common Data Service zugreifen kann. Diese Situation entsteht unter zwei Umständen:
+Dieser Fehler wird angezeigt, wenn Power Query nicht auf die Daten der Organisation in Power Apps oder Common Data Service zugreifen kann. Diese Situation entsteht unter zwei Umständen:
 
 * Ein Azure Active Directory (Azure AD)-Mandantenadministrator hat die Möglichkeit der Benutzer Apps zuzustimmen, die in deren Namen auf Unternehmensdaten zugreifen, nicht zugelassen.
 * Verwenden eines nicht verwalteten Active Directory-Mandanten. Ein nicht verwalteter Mandanten ist ein Verzeichnis ohne einen globalen Administrator, der erstellt wurde, um ein Self-Service-Verpflichtungsangebot abzuschließen. Um dieses Szenario zu beheben, müssen Benutzer zunächst in eine verwaltetes Mandat konvertieren und dann eine von zwei Lösungen für dieses Problem befolgen. Die Lösungen finden Sie im nächsten Abschnitt.
@@ -52,7 +52,7 @@ Der Vorteil bei dieser Methode (im Gegensatz zur mandantenweiten Lösung) ist, d
 
 Benutzer können Mashups und andere Informationen (z. B. Abfragenamen und Mashup-Metadaten) über den Abfrage-Editor und über das Dialogfeld **Optionen** aktualisieren, auf das aus dem Abfrage-Editor heraus zugegriffen werden kann.
 
-In PowerApps greifen Sie auf den Abfrage-Editor zu, indem Sie folgende Schritte ausführen:
+In Power Apps greifen Sie auf den Abfrage-Editor zu, indem Sie folgende Schritte ausführen:
 1. Wechseln Sie zum Bereich **Daten**, erweitern Sie ihn und wählen Sie dann **Entitäten** aus. 
 2. Wählen Sie die Ellipse (...) aus, und wählen Sie dann **Abfragen bearbeiten** aus.
 3. Wählen Sie im Menüband die Schaltfläche **Optionen** und dann die Schaltfläche **Diagnose exportieren** aus.
@@ -60,7 +60,7 @@ In PowerApps greifen Sie auf den Abfrage-Editor zu, indem Sie folgende Schritte 
 
 ## <a name="delete-personal-data"></a>Personendaten löschen
 
-Die meisten Daten werden innerhalb von 30 Tagen automatisch gelöscht. Für Daten und Metadaten zu Mashups müssen Benutzer alle ihre Mashups über PowerApps entfernen. Alle zugeordneten Daten und Metadaten werden innerhalb von 30 Tagen entfernt.
+Die meisten Daten werden innerhalb von 30 Tagen automatisch gelöscht. Für Daten und Metadaten zu Mashups müssen Benutzer alle ihre Mashups über Power Apps entfernen. Alle zugeordneten Daten und Metadaten werden innerhalb von 30 Tagen entfernt.
 
 So entfernen Sie Mashups aus Power Apps:
 1. Entfernen Sie den Data Integrator-Projekte, die aus der Registerkarte "namesake" entfernt werden können.
@@ -79,7 +79,7 @@ Zum Exportieren persönlicher Daten können Benutzer folgende Schritte ausführe
 2. Wählen Sie im Menüband die Schaltfläche **Optionen** aus.
 3. Wählen Sie die Schaltfläche **Diagnose exportieren** aus.
 
-In PowerApps können Sie auf den Abfrage-Editor zugreifen, indem Sie folgende Schritte ausführen:
+In Power Apps können Sie auf den Abfrage-Editor zugreifen, indem Sie folgende Schritte ausführen:
 1. Wechseln Sie zum Bereich **Daten**, erweitern Sie ihn und wählen Sie dann **Entitäten** aus.
 2. Wählen Sie die Ellipse (...) aus, und wählen Sie dann **Abfragen bearbeiten** aus. 
 3. Wählen Sie im Menüband die Schaltfläche **Optionen** und dann die Schaltfläche **Diagnose exportieren** aus.

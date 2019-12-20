@@ -1,18 +1,18 @@
-- name: PowerApps component framework
+- name: Power Apps component framework
   items:
     - name: Übersicht
       href: overview.md
     - name: Was sind Codekomponenten?
       href: custom-controls-overview.md
-    - name: Verfügbarkeit für Canvas-Anwendungen
+    - name: Codekomponenten für Canvas-Apps
       href: component-framework-for-canvas-apps.md
-    - name: PowerApps CLI abrufen
+    - name: Power Apps CLI abrufen
       href: get-powerapps-cli.md
     - name: Tutorial
       items:
-        - name: Implementieren einer Beispielkomponente
+        - name: Erstellen Sie Ihre erste Codekomponente
           href: implementing-controls-using-typescript.md
-    - name: Vorgehensweise
+    - name: Anleitungshandbücher
       items:
         - name: Erstellen und Entwickeln einer Code-Komponente
           href: create-custom-controls-using-pcf.md
@@ -28,16 +28,14 @@
           href: updating-existing-controls.md
         - name: Veröffentlichen von Codekomponenten unter AppSource.
           href: publish-components-app-source.md
-    - name: Einschränkungen
-      href: limitations.md
+    - name: Problembehandlung
+      items:
+        - name: Einschränkungen
+          href: limitations.md
     - name: Beispielkomponenten
       items:
-        - name: Erhöhungskomponente
-          href: sample-controls/increment-control.md
-        - name: Lineare Eingabekomponente
-          href: sample-controls/linear-input-control.md
-        - name: Lokalisierungs-API-Komponente
-          href: sample-controls/localization-api-control.md
+        - name: Beispielkomponenten verwenden
+          href: use-sample-components.md
         - name: Angular-Kippkomponente
           href: sample-controls/angular-flip-control.md
         - name: Steuerelementstatus-API-Komponente
@@ -50,6 +48,12 @@
           href: sample-controls/iframe-control.md
         - name: Bild-Upload-Komponente
           href: sample-controls/image-upload-control.md
+        - name: Erhöhungskomponente
+          href: sample-controls/increment-control.md
+        - name: Lineare Eingabekomponente
+          href: sample-controls/linear-input-control.md
+        - name: Lokalisierungs-API-Komponente
+          href: sample-controls/localization-api-control.md
         - name: Kartenkomponente
           href: sample-controls/map-control.md
         - name: Navigations-API-Komponente
@@ -64,7 +68,7 @@
           href: sample-controls/webapi-control.md
     - name: Referenz
       items:
-        - name: PowerApps component framework
+        - name: Power Apps component framework
           href: reference/index.md
           items:
             - name: Client
@@ -127,7 +131,7 @@
               items:
                 - name: getFormattedValue
                   href: reference/entityrecord/getformattedvalue.md
-                - name: getNamedreference
+                - name: getNamedReference
                   href: reference/entityrecord/getnamedreference.md
                 - name: getRecordId
                   href: reference/entityrecord/getrecordid.md

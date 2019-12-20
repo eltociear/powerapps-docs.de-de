@@ -1,6 +1,6 @@
 ---
-title: Anpassen von Entitäten und Attributzuordnungen in PowerApps (Common Data Service) | Microsoft-Dokumentation
-description: Informationen zum Zuordnen von Attributen zwischen Entitäten, die eine Entitätsbeziehung in PowerApps haben. Hiermit können Sie Standardwerte für einen Datensatz festlegen, der im Kontext eines anderen Datensatzes erstellt wird.
+title: Anpassen von Entitäten und Attributzuordnungen in Power Apps (Common Data Service) | Microsoft-Dokumentation
+description: Informationen zum Zuordnen von Attributen zwischen Entitäten, die eine Entitätsbeziehung in Power Apps haben. Hiermit können Sie Standardwerte für einen Datensatz festlegen, der im Kontext eines anderen Datensatzes erstellt wird.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78a1eb011591afc09ded37be89031947d0f2b9ea
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 123cc7c11659c04d805a5d34abd49b2aa60aca6e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748565"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861791"
 ---
 # <a name="customize-entity-and-attribute-mappings"></a>Anpassen von Entitäts- und Attributzuordnungen
 

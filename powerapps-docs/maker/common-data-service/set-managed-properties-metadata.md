@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c58e70e596bc2382907da5baebfe8d901cb9f420
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 287df9ac6daa38022a269177247a5b446bdfa1fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702321"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869982"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Verwaltete Eigenschaften in Common Data Service-Metadaten festlegen 
 
@@ -64,7 +64,7 @@ Entitäten haben mehr verwaltete Eigenschaften als andere Arten von Lösungskomp
 
 ## <a name="field-managed-properties"></a>Feld Verwaltete Eigenschaften
 
-Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md).
+Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service mit Power Apps-Lösungs-Explorer](create-edit-field-solution-explorer.md).
 
 Wählen Sie beim [Anzeigen von Feldern](create-edit-field-solution-explorer.md#view-fields) ein benutzerdefiniertes Feld aus einer nicht verwalteten Lösung aus, und wählen Sie dann **Weitere Aktionen** >  **Verwaltete Eigenschaften** in der Menüleiste.
 
@@ -100,6 +100,6 @@ Bei Beziehungen ist die einzige verwaltete Eigenschaft **Kann angepasst werden**
 
 [Verwaltete Eigenschaften](solutions-overview.md#managed-properties)<br />
 [Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer](create-edit-entities-solution-explorer.md)<br />
-[Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des PowerApps-Projektmappen-Explorers](create-edit-field-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des Power Apps-Projektmappen-Explorers](create-edit-field-solution-explorer.md)<br />
 [Erstellen oder Bearbeiten von 1: N (1: n- oder n: n) Entitätsbeziehungen 1 mithilfe des Lösungs-Explorers](create-edit-1n-relationships-solution-explorer.md)<br />
 [Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des Projektmappen-Explorers](create-edit-nn-relationships-solution-explorer.md)

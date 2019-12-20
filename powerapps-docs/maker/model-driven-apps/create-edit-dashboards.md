@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1e6fa3440f0deef99f94ce94352177a105abf7b7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 81943d73ac8c6189e62d25af4ff38b993182c269
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759246"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875484"
 ---
 # <a name="create-or-edit-model-driven-app-dashboards"></a>Erstellen oder bearbeiten von Modell-angetriebene App-Dashboards
 
@@ -35,7 +35,7 @@ Es gibt zwei Arten von Dashboards: Benutzerdashboards und Systemdashboards- Ein 
 <a name="BKMK_createdashboard"></a>   
 ## <a name="create-a-new-dashboard"></a>Neues Dashboard erstellen  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).   
@@ -57,7 +57,7 @@ Es gibt zwei Arten von Dashboards: Benutzerdashboards und Systemdashboards- Ein 
 <a name="BKMK_editdashboard"></a>   
 ## <a name="edit-an-existing-dashboard"></a>Bearbeiten eines vorhandenen Dashboards  
   
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).    

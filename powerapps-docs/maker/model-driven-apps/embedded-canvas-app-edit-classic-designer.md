@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cb265233e0d72e7350603b496f91e6d62e32002d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3c93c6696efc39e4f2354418ad1743fca3ebea95
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758498"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873043"
 ---
 # <a name="edit-a-canvas-app-embedded-on-a-model-driven-form"></a>Bearbeiten einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist
 In diesem Artikel wird erläutert, wie Sie eine Canvas-App bearbeiten, die in einem modellgesteuerten Formular eingebettet ist.
@@ -39,16 +39,16 @@ Eine alternative Option ist es, die eingebettete Canvas-App über das modellgest
 
 Stellen Sie sich vor, dass Sie eine Canvas-App bearbeiten möchten, die in einem Formular namens Firmenhauptformular für die Entität „Firmen” eingebettet ist. Gehen Sie dazu wie folgt vor: 
 
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 2.  [Bearbeiten Sie das Formular](create-and-edit-forms.md) namens Firmenhauptformular für die Entität „Firma”. 
 3.  Wählen Sie in der Befehlsleiste **In klassischen Modus wechseln**, um das Formular im klassischen Formular-Designer zu öffnen.
 4.  Wählen Sie im klassischen Formular-Designer das Feld aus, das angepasst wird, um die eingebettete Canvas-App anzuzeigen.
 5.  Wenn das Feld ausgewählt ist, wählen Sie auf der Registerkarte **Start** in der Gruppe **Bearbeiten** die Option **Eigenschaften ändern**.
 6.  Wählen Sie im Dialogfeld **Feldeigenschaften** die **Steuerelemente**-Registerkarte aus.
 7.  Wählen Sie im Dialogfeld **Feldeigenschaften** in der Liste der Steuerelemente die Option **Canvas-App**.
-8.  Wählen Sie im Abschnitt unter der Liste mit den Steuerelementen die Option **Anpassen**, um die Canvas-App zu bearbeiten. Dadurch wird die Canvas-App zum Bearbeiten in PowerApps Studio in einer neuen Registerkarte geöffnet.
+8.  Wählen Sie im Abschnitt unter der Liste mit den Steuerelementen die Option **Anpassen**, um die Canvas-App zu bearbeiten. Dadurch wird die Canvas-App zum Bearbeiten in Power Apps Studio in einer neuen Registerkarte geöffnet.
        > [!NOTE]
-       > Wenn das Öffnen von PowerApps Studio aufgrund eines Popupblockers des Webbrowsers blockiert ist, müssen Sie die Website make.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann erneut **Anpassen** auswählen.
+       > Wenn das Öffnen von Power Apps Studio aufgrund eines Popupblockers des Webbrowsers blockiert ist, müssen Sie die Website make.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann erneut **Anpassen** auswählen.
 9. Wenn Sie fertig mit Ihren Änderungen sind, wählen Sie die Registerkarte **Datei** und dann **Speichern** aus.
 10. Um Ihre Änderungen für Endbenutzer verfügbar zu machen, wählen Sie **Veröffentlichen** und dann **Diese Version veröffentlichen**.
 

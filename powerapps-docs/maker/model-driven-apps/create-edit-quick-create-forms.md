@@ -1,5 +1,5 @@
 ---
-title: Erstellen oder Bearbeiten von modellgesteuerten Schnellerstellungsformularen in PowerApps | MicrosoftDocs
+title: Erstellen oder Bearbeiten von modellgesteuerten Schnellerstellungsformularen in Power Apps | MicrosoftDocs
 description: Erfahren Sie, wie Sie ein Schnellerfassungsformular erstellen oder bearbeiten
 ms.custom: ''
 ms.date: 05/14/2019
@@ -22,20 +22,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1496fcb600524e7934fe55ca17a7a7bafb54c75
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 171d64581fd0a9feb51d5a6111c79e63de1ba845
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759158"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875352"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>Erstellen oder Bearbeiten von modellgesteuerten Schnellerstellungsformularen für eine optimierte Dateneingabeerfahrung
 
 In diesem Thema erstellen und bearbeiten Sie ein Schnellerfassungsformular.
 
- Mit Schnellerfassungsformularen kann Ihre App einen optimierten Dateneingabekomfort mit vollständiger Unterstützung für durch Formularskripts und Geschäftsregeln definierte Logik. In einer modellgesteuerten PowerApps-App werden Schnellerstellungsformulare angezeigt, wenn Sie die Schaltfläche **Erstellen** in der Navigationsleiste auswählen oder wenn Sie **+ Neu** auswählen, wenn Sie einen neuen Datensatz aus einer Suche oder einem Unterraster erstellen.
+ Mit Schnellerfassungsformularen kann Ihre App einen optimierten Dateneingabekomfort mit vollständiger Unterstützung für durch Formularskripts und Geschäftsregeln definierte Logik. In einer modellgesteuerten Power Apps-App werden Schnellerstellungsformulare angezeigt, wenn Sie die Schaltfläche **Erstellen** in der Navigationsleiste auswählen oder wenn Sie **+ Neu** auswählen, wenn Sie einen neuen Datensatz aus einer Suche oder einem Unterraster erstellen.
   
- Die mobilen Apps in Dynamics 365 verwenden Schnellerstellungsformulare zum Erstellen neuer Datensätze. Wenn für eine Entität bereits ein Schnellerstellungsformular konfiguriert ist, verwenden die mobilen Apps dieses Formular. Wenn eine Entität kein konfiguriertes Schnellerstellungsformular hat, generiert PowerApps ein Schnellerfassungsformular für das Erstellen von Datensätzen in mobilen Apps anhand der Hauptformulardefinition.  
+ Die mobilen Apps in Dynamics 365 verwenden Schnellerstellungsformulare zum Erstellen neuer Datensätze. Wenn für eine Entität bereits ein Schnellerstellungsformular konfiguriert ist, verwenden die mobilen Apps dieses Formular. Wenn eine Entität kein konfiguriertes Schnellerstellungsformular hat, generiert Power Apps ein Schnellerfassungsformular für das Erstellen von Datensätzen in mobilen Apps anhand der Hauptformulardefinition.  
   
 <a name="BKMK_QuickCreateFormEntities"></a>   
 ## <a name="entities-with-quick-create-forms"></a>Entitäten mit Schnellerfassungsformularen  
@@ -61,7 +61,7 @@ Sie können benutzerdefinierte Aktivitätsentitäten aktivieren, um Schnellerfas
   
 ### <a name="how-to-create-a-quick-create-form"></a>So erstellen Sie ein Schnellerfassungsformular  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 
 > [!IMPORTANT]
@@ -99,7 +99,7 @@ Wenn Sie einem Schnellerfassungsformular ein zusammengesetztes Feld hinzufügen,
   
 ### <a name="to-edit-a-quick-create-form"></a>Bearbeiten eines Schnellerfassungsformulars  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 > [!IMPORTANT]
 > "Wenn der **Modell-angetriebe** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).    

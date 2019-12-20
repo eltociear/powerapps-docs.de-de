@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae7b61fde2de24d68e9debab4ae61ad9c18718b4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 926cc3f7ebb61d0d9c59df707f6d4d824d59599a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748245"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861843"
 ---
 # <a name="optimize-assembly-development"></a>Optimieren der Assemblyentwicklung
 
@@ -63,7 +63,7 @@ Plug-Ins und benutzerdefinierte Workflow-Aktivitäten, die für eine Common Data
 
 ### <a name="move-plug-inscustom-workflow-activities-into-multiple-assemblies"></a>Plug-Ins/Benutzerdefinierte Workflow-Aktivitäten in mehrere Assemblies verschieben
 
-PowerApps und Dynamics 365 (online) haben eine Assembly-Größenbeschränkung von 16 MB, die nicht geändert werden kann. Wenn Ihre Assembly-Größe sich 16 MB nähert, ziehen Sie in Betracht, Plug-in- und benutzerdefinierte Workflow-Aktivitäten in mehrere Assemblys zu verschieben.
+Power Apps und Dynamics 365 (online) haben eine Assembly-Größenbeschränkung von 16 MB, die nicht geändert werden kann. Wenn Ihre Assembly-Größe sich 16 MB nähert, ziehen Sie in Betracht, Plug-in- und benutzerdefinierte Workflow-Aktivitäten in mehrere Assemblys zu verschieben.
 
 <a name='problem'></a>
 

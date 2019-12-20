@@ -9,19 +9,19 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e004b0f4f37a57e37d8f847ad7221e6a50d549ed
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2a9bd271c8aaa2f1dbc0278078868606fb4c64de
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760443"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864960"
 ---
 # <a name="place-child-nodes-by-using-shortcuts-for-portals"></a>Platzieren von untergeordneten Knoten mithilfe von Verknüpfungen für Portale
 Verknüpfungen ermöglichen es, untergeordnete Knoten über die Siteübersicht im Portal zu platzieren, die dann einfach an anderen Knoten in der Siteübersicht oder auf externe URLs verweisen. Das bedeutet, Webseiten, Webdateien, Ereignisse und Foren können als feste Knoten für die Siteübersicht des Portals betrachtet werden. Sie werden zur Siteübersicht hinzugefügt, wenn Sie zu diesen navigieren; der tatsächliche Inhalt dieser Knoten wird direkt angezeigt. Verknüpfungen dagegen können als immaterielle Knoten betrachtet werden: Sie werden ebenfalls der Siteübersicht hinzugefügt (außer Weblinks, diese nicht), aber wenn Sie zu diesen navigieren, sehen sie den Inhalt für den festen Knoten, auf den die Verknüpfung verweist, wobei dieser Inhalt von der Seitenvorlage für jenen Knoten gerendert wird.
 
 ## <a name="manage-shortcuts"></a>Verwalten von Tastenkombinationen
 
-Das Erstellen, Bearbeiten und Löschen von Verknüpfungen kann in PowerApps-Portalen erfolgen.
+Das Erstellen, Bearbeiten und Löschen von Verknüpfungen kann in Power Apps-Portalen erfolgen.
 
 1. Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
 

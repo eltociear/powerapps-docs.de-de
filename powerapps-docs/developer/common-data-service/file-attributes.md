@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d4ede198c1f81d4181ad3bb40a0717b9da7e44b7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 30123b2e89b6c4c4432a7042e7cac26fcd8191cf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752978"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861774"
 ---
 # <a name="file-attributes"></a>Dateiattribute
 
 Ein Dateiattribut wird zum Speichern von Dateidaten bis zu einer angegebenen maximalen Größe verwendet. Eine benutzerdefinierte oder anpassbare Entität kann null oder mehr Dateiattribute sowie eine Sammlung der Notizen (Anmerkungen) mit null bis einer Anlage in den jeweiligen Notizen haben. Der <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> des Dateiattributs ist `EntityFile`.
 
 > [!NOTE]
-> Das neue Dateiattribut und die verbesserte Bildattributfunktion werden derzeit nur in Microsoft-Rechenzentren sukzessive eingeführt. Ihre Organisation hat das Update bisher ggf. noch nicht erhalten. Sie können Ihre Organisation auf Dateiattributunterstützung regelmäßig überprüfen, indem vorübergehend ein neues Feld zu einer anpassbaren oder benutzerdefinierten Entität hinzugefügt und überprüft wird, ob „Datei“ in der Liste der unterstützten Felddatentypen verfügbar ist. Gehen Sie hierzu in PowerApps zu **Daten** > **Entitäten** oder in der klassischen Webanwendung zu **Einstellungen** > **Anpassungen**.
+> Das neue Dateiattribut und die verbesserte Bildattributfunktion werden derzeit nur in Microsoft-Rechenzentren sukzessive eingeführt. Ihre Organisation hat das Update bisher ggf. noch nicht erhalten. Sie können Ihre Organisation auf Dateiattributunterstützung regelmäßig überprüfen, indem vorübergehend ein neues Feld zu einer anpassbaren oder benutzerdefinierten Entität hinzugefügt und überprüft wird, ob „Datei“ in der Liste der unterstützten Felddatentypen verfügbar ist. Gehen Sie hierzu in Power Apps zu **Daten** > **Entitäten** oder in der klassischen Webanwendung zu **Einstellungen** > **Anpassungen**.
 
 Web-API (REST) | .NET-API (SOAP)
 ------- | -------

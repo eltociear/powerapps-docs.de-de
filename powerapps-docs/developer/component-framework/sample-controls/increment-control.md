@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 71c3418de53792b71987f1c0f4fd205a88760dab
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f93574f9a994d7363129f99fec9b33d4c9ee66ad
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754091"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861948"
 ---
 # <a name="implementing-increment-component"></a>Implementieren einer Erhöhungskomponente
 
-Diese Beispielkomponente zeigt, wie man Daten mit dem PowerApps component framework und der Fehlerbehandlung bindet. Diese Komponente wird zur Laufzeit als Textfeld mit einer `Increment`-Schaltfläche gerendert. Das Textfeld zeigt den aktuellen Wert und die `Increment`-Schaltfläche kann angeklickt werden. Wenn Sie auf die Schaltfläche klicken, wird der Wert innerhalb des Textfelds um 1 erhöht. Der Wert der Erhöhung kann zu einem beliebigen Zahl geändert werden.
+Diese Beispielkomponente zeigt, wie man Daten mit dem Power Apps component framework und der Fehlerbehandlung bindet. Diese Komponente wird zur Laufzeit als Textfeld mit einer `Increment`-Schaltfläche gerendert. Das Textfeld zeigt den aktuellen Wert und die `Increment`-Schaltfläche kann angeklickt werden. Wenn Sie auf die Schaltfläche klicken, wird der Wert innerhalb des Textfelds um 1 erhöht. Der Wert der Erhöhung kann zu einem beliebigen Zahl geändert werden.
 
 Wenn Sie diese Komponente implementieren möchten, müssen Sie als erstes die [Manifest](../manifest-schema-reference/manifest.md)-Datei definieren und dann die benutzerdefinierte Logik in TypeScript implementieren.
 
@@ -58,7 +58,7 @@ export class TSIncrementControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control
   private _value: number;
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // label element created as part of this control
   private label: HTMLInputElement;
@@ -247,15 +247,16 @@ export class TSIncrementControl
 </root>
 ```
 
-Wenn Sie auf die Schaltfläche klicken, wird der Wert innerhalb des Textfelds um 1 erhöht. Der aktualisierte Wert fließt über die `notifyOutputChanged`-Methode zum PowerApps component framework.
+Wenn Sie auf die Schaltfläche klicken, wird der Wert innerhalb des Textfelds um 1 erhöht. Der aktualisierte Wert fließt über die `notifyOutputChanged`-Methode zum Power Apps component framework.
 
 > [!NOTE]
 > Sie können den Erhöhungswert ändern, wenn Sie die Komponente für das Feld im Formular konfigurieren.
 
-Bearbeiten Sie den Wert im Textfeld, und wenn es sich um eine gültige Ganzzahl handelt, dann aktualisiert es den Wert auf PowerApps component framework. Sie können kontinuierlich auf die `Increment`-Schaltfläche klicken und sie aktualisieren. Wenn es eine ungültige Ganzzahl ist, wird eine Fehlermeldung angezeigt.
+Bearbeiten Sie den Wert im Textfeld, und wenn es sich um eine gültige Ganzzahl handelt, dann aktualisiert es den Wert auf Power Apps component framework. Sie können kontinuierlich auf die `Increment`-Schaltfläche klicken und sie aktualisieren. Wenn es eine ungültige Ganzzahl ist, wird eine Fehlermeldung angezeigt.
 
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten verwenden](../use-sample-components.md)<br/>
+[Power Apps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)

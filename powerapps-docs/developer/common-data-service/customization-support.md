@@ -21,17 +21,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e2dd81bca0ab5805d88f5db0aff9a1f83c8d87ac
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 81df04eba4a8f843cc254978590807c83ef704cb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748421"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861787"
 ---
 # <a name="common-data-service-supported-and-unsupported-app-building-practices"></a>Common Data Service unterstützte und nicht unterstützte App-Erstellungspraktiken
 
 <!--
-The way your organization works is unique. Some organizations have well-defined business processes that they apply using PowerApps apps. Others aren’t happy with their current business processes and use PowerApps to apply new data and processes to their business. Whatever situation you find yourself in, you’ll find a lot of customization capabilities in PowerApps so that it can work for your organization.  
+The way your organization works is unique. Some organizations have well-defined business processes that they apply using Power Apps apps. Others aren’t happy with their current business processes and use Power Apps to apply new data and processes to their business. Whatever situation you find yourself in, you’ll find a lot of customization capabilities in Power Apps so that it can work for your organization.  
   
  Of course you’re eager to get started, but please take a few minutes to read the content in this section. This will introduce you to important terms, give you some background about why things are done a certain way, and help you avoid potential problems in the future.  
 
@@ -42,19 +42,19 @@ The way your organization works is unique. Some organizations have well-defined 
 
 Das Ändern der Common Data Service-Komponenten, wie Entitäten, Ansichten, Felder, Diagramme und Dashboards, um Anwendungen zu erstellen, die so funktionieren, wie Sie es wünschen, wird als *Anpassung* bezeichnet.  
  
-Wenn Sie Ihre Anwendungen mit den Tools unter PowerApps erstellen und anpassen, fügen Sie die Metadaten oder Daten hinzu oder aktualisieren, die von Funktionen verwendet werden, die von den Metadaten abhängen. Da wir die Art der Daten kennen, die zur Erstellung von Apps verwendet werden, können wir diese Daten berücksichtigen und neue Funktionen in Ihre Common Data Service-Umgebung integrieren, ohne Ihre Apps zu beeinträchtigen. <!-- This way you should always be able to apply an update rollup or upgrade to the latest version and enjoy the best new features.  -->
+Wenn Sie Ihre Anwendungen mit den Tools unter Power Apps erstellen und anpassen, fügen Sie die Metadaten oder Daten hinzu oder aktualisieren, die von Funktionen verwendet werden, die von den Metadaten abhängen. Da wir die Art der Daten kennen, die zur Erstellung von Apps verwendet werden, können wir diese Daten berücksichtigen und neue Funktionen in Ihre Common Data Service-Umgebung integrieren, ohne Ihre Apps zu beeinträchtigen. <!-- This way you should always be able to apply an update rollup or upgrade to the latest version and enjoy the best new features.  -->
 
 <!--  
 > **Customize or Configure?**   
-> Most people say they want to customize the application, so we use the word “customize” to describe changing the system to make it work the way you want. Some people prefer to use the word “configure” because it suggests that no code was required to make changes. Call it whatever you like, we just want to make it clear that you don’t need to be a developer to customize or create PowerApps apps.  -->
+> Most people say they want to customize the application, so we use the word “customize” to describe changing the system to make it work the way you want. Some people prefer to use the word “configure” because it suggests that no code was required to make changes. Call it whatever you like, we just want to make it clear that you don’t need to be a developer to customize or create Power Apps apps.  -->
   
-Sie müssen kein Entwickler sein, um PowerApps-Anwendungen zu erstellen und anzupassen. PowerApps bietet jedoch eine Reihe von Webservices und APIs, mit denen Entwickler Code schreiben können. Wenn Code mit unterstützten Methoden geschrieben wird, können Sie erwarten, dass er weiterhin funktioniert, wenn Ihre Common Data Service-Umgebung aktualisiert wird.  
+Sie müssen kein Entwickler sein, um Power Apps-Anwendungen zu erstellen und anzupassen. Power Apps bietet jedoch eine Reihe von Webservices und APIs, mit denen Entwickler Code schreiben können. Wenn Code mit unterstützten Methoden geschrieben wird, können Sie erwarten, dass er weiterhin funktioniert, wenn Ihre Common Data Service-Umgebung aktualisiert wird.  
   
 <a name="BKMK_SupportedCust"></a>   
 ## <a name="what-kinds-of-customizations-are-supported"></a>Welche Arten von Anpassungen werden unterstützt?  
- Wir erwarten, dass Sie die meisten Apps mit den verfügbaren PowerApps-Tools erstellen und anpassen können. Wenn die Anpassungstools nicht Ihren Anforderungen entsprechen, können Sie eine Lösung eines Drittanbieters installieren oder einen Entwickler mit der Programmierung Ihrer App beauftragen. Wenn Sie in eine Lösung investieren müssen, für die Code erforderlich ist, sollten Sie sicherstellen, dass der Code nur mithilfe unterstützter APIs geschrieben wird. Dies hilft Ihnen dabei, Ihre Investition in die Apps und alle anderen Lösungen zu schützen.  
+ Wir erwarten, dass Sie die meisten Apps mit den verfügbaren Power Apps-Tools erstellen und anpassen können. Wenn die Anpassungstools nicht Ihren Anforderungen entsprechen, können Sie eine Lösung eines Drittanbieters installieren oder einen Entwickler mit der Programmierung Ihrer App beauftragen. Wenn Sie in eine Lösung investieren müssen, für die Code erforderlich ist, sollten Sie sicherstellen, dass der Code nur mithilfe unterstützter APIs geschrieben wird. Dies hilft Ihnen dabei, Ihre Investition in die Apps und alle anderen Lösungen zu schützen.  
   
- Entwickler, die PowerApps-Anwendungen erweitern, haben die Verantwortung, Regeln und Best Practices zu befolgen, die [hier](/powerapps/developer/common-data-service/best-practices/) dokumentiert sind. Microsoft unterstützt nur die APIs und Methoden, die im SDK dokumentiert sind. Möglicherweise finden Sie im Internet etwas, das beschreibt, wie Sie ein Problem lösen können, aber wenn es keine im SDK dokumentierten APIs nutzt, wird es von Microsoft nicht unterstützt. Bevor Sie einen Entwickler eine Änderung durchführen lassen, sollten Sie sich vergewissern, dass unterstützte Methoden verwendet werden.  
+ Entwickler, die Power Apps-Anwendungen erweitern, haben die Verantwortung, Regeln und Best Practices zu befolgen, die [hier](/powerapps/developer/common-data-service/best-practices/) dokumentiert sind. Microsoft unterstützt nur die APIs und Methoden, die im SDK dokumentiert sind. Möglicherweise finden Sie im Internet etwas, das beschreibt, wie Sie ein Problem lösen können, aber wenn es keine im SDK dokumentierten APIs nutzt, wird es von Microsoft nicht unterstützt. Bevor Sie einen Entwickler eine Änderung durchführen lassen, sollten Sie sich vergewissern, dass unterstützte Methoden verwendet werden.  
   
  Wenn Entwickler die APIs und bewährten Methoden verwenden, die im SDK beschrieben sind, können wir sicher sein, dass wir testen können, um unsere Änderungen an Common Data Service bestehende Anpassungen beschädigen können. Unser Ziel ist es, dass Codeanpassungen, die mit unterstützten Methoden geschrieben wurden, weiterhin funktionieren, wenn neue Versionen oder Updates auf Common Data Service veröffentlicht werden. Sie profitieren davon, da Sie auf neue Versionen mit verbesserten Funktionen aktualisieren können, ohne dass Entwickler jedes Mal ihren Code ändern müssen.  
   
@@ -71,9 +71,9 @@ Sie müssen kein Entwickler sein, um PowerApps-Anwendungen zu erstellen und anzu
  Nachfolgend finden Sie eine Liste verbreiteter Anpassungspraktiken, die nicht unterstützt werden. Dies ist keine vollständige Liste. Weitere Informationen: [Unterstützte Erweiterungen für Dynamics 365: Nicht unterstützte Anpassungen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions#Unsupported). 
  
 **Interagieren mit Elementen der Webanwendung Document Object Model (DOM) mit JavaScript**  
- Alle JavaScript-Bibliotheken, die irgendwo in der Anwendung verwendet werden, dürfen nur mit der dokumentierten API interagieren. Wenn JavaScript-Entwickler mit Anwendungen arbeiten, greifen sie oft auf DOM-Elemente mithilfe bestimmter Namen zu. Da PowerApps-Anwendungen Webanwendungen sind, funktionieren diese Techniken, aber sie werden wahrscheinlich während eines Updates kaputt gehen, da die Namen der Elemente, auf die sie verweisen, jederzeit geändert werden können. Wir behalten uns das Recht vor, alle erforderlichen Änderungen in der Anwendung vorzunehmen, und dies bedeutet häufig, dass die Konstruktionsweise der Seite geändert wird. Das Hinzufügen von Änderungen, die von der aktuellen Struktur der Seite abhängen, bedeutet, dass Sie Tests durchführen und möglicherweise den benutzerdefinierten Code in diesen Skripts immer dann ändern müssen, wenn ein Update für Ihre Anwendung stattfindet.  
+ Alle JavaScript-Bibliotheken, die irgendwo in der Anwendung verwendet werden, dürfen nur mit der dokumentierten API interagieren. Wenn JavaScript-Entwickler mit Anwendungen arbeiten, greifen sie oft auf DOM-Elemente mithilfe bestimmter Namen zu. Da Power Apps-Anwendungen Webanwendungen sind, funktionieren diese Techniken, aber sie werden wahrscheinlich während eines Updates kaputt gehen, da die Namen der Elemente, auf die sie verweisen, jederzeit geändert werden können. Wir behalten uns das Recht vor, alle erforderlichen Änderungen in der Anwendung vorzunehmen, und dies bedeutet häufig, dass die Konstruktionsweise der Seite geändert wird. Das Hinzufügen von Änderungen, die von der aktuellen Struktur der Seite abhängen, bedeutet, dass Sie Tests durchführen und möglicherweise den benutzerdefinierten Code in diesen Skripts immer dann ändern müssen, wenn ein Update für Ihre Anwendung stattfindet.  
   
- jQuery ist eine sehr verbreitete Bibliothek, die von JavaScript-Entwicklern verwendet wird. Der meiste Nutzens bei der Verwendung von jQuery ist, dass es einem Entwickler vereinfacht, DOM-Elemente zu erstellen und darauf zuzugreifen. Genau das unterstützen wir auf den Common Data Service-Anwendungsseiten nicht. jQuery wird empfohlen, wenn Entwickler benutzerdefinierte Benutzerschnittstellen mit HTML-Webressourcen erstellen, aber innerhalb der PowerApps-Anwendungsseiten benötigen die unterstützen APIs keine Verwendung von jQuery.  
+ jQuery ist eine sehr verbreitete Bibliothek, die von JavaScript-Entwicklern verwendet wird. Der meiste Nutzens bei der Verwendung von jQuery ist, dass es einem Entwickler vereinfacht, DOM-Elemente zu erstellen und darauf zuzugreifen. Genau das unterstützen wir auf den Common Data Service-Anwendungsseiten nicht. jQuery wird empfohlen, wenn Entwickler benutzerdefinierte Benutzerschnittstellen mit HTML-Webressourcen erstellen, aber innerhalb der Power Apps-Anwendungsseiten benötigen die unterstützen APIs keine Verwendung von jQuery.  
   
  **Verwenden nicht dokumentierter interner Objekte oder Methode mit JavaScript**  
 Die Common Data Service verwendet viele JavaScript-Objekte innerhalb von Seiten. Ein JavaScript-Entwickler kann diese Objekte erkennen, indem er eine Seite debuggt und dann auf diese Objekte zugreift und sie wieder verwendet. Wir behalten uns das Recht vor, an diesen Objekten alle erforderlichen Änderungen vorzunehmen, einschließlich sie zu entfernen oder die Namen der Methoden zu ändern. Wenn ein Skript auf diese Objekte verweist, schlägt es fehl, wenn sie nicht gefunden werden.  <a name="BKMK_Metadata"></a>   
@@ -84,7 +84,7 @@ Die Common Data Service verwendet viele JavaScript-Objekte innerhalb von Seiten.
   
 <a name="BKMK_ChooseTheRightCustomization"></a>   
 ### <a name="choose-the-right-customization-capability-for-the-job"></a>Wahl der richtigen Anpassungsfunktion  
- Mit allen den verschiedenen verfügbaren Anpassungsmöglichkeiten in PowerApps, werden Sie schnell mit einem davon vertraut und versuchen möglicherweise jedes Problem damit zu lösen. Wenn Sie die Probleme prüfen, die Sie lösen müssen, denken Sie an das Endergebnis, das Sie erzielen wollen, und arbeiten Sie sich dann von dort rückwärts zu den Lösungsmöglichkeiten vor.  
+ Mit allen den verschiedenen verfügbaren Anpassungsmöglichkeiten in Power Apps, werden Sie schnell mit einem davon vertraut und versuchen möglicherweise jedes Problem damit zu lösen. Wenn Sie die Probleme prüfen, die Sie lösen müssen, denken Sie an das Endergebnis, das Sie erzielen wollen, und arbeiten Sie sich dann von dort rückwärts zu den Lösungsmöglichkeiten vor.  
  
 <a name="BKMK_changesinperformance"></a>   
 ## <a name="changes-that-affect-common-data-service-environment-performance"></a>Änderungen, die sich auf die Leistung der Common Data Service-Umgebung auswirken.  
@@ -99,5 +99,5 @@ Wenn Sie diese Änderungen an einem Produktionssystem anwenden, empfehlen wir, S
   
   
 ## <a name="next-steps"></a>Nächste Schritte  
-[Was sind modellgetriebene Apps in PowerApps?](../../maker/model-driven-apps/model-driven-app-overview.md)
+[Was sind modellgetriebene Apps in Power Apps?](../../maker/model-driven-apps/model-driven-app-overview.md)
 

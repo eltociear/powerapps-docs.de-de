@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 47730a2ba169b89534fa93221290c5598a95a8e8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c92b664c2c40c6bb6354e2666d583d5c7ed7aead
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760435"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874428"
 ---
 # <a name="add-record-based-security-by-using-entity-permissions-for-portals"></a>Hinzufügen von datensatzbasierter Sicherheit durch Verwendung von Entitätsberechtigungen für Portale
 
@@ -30,9 +30,11 @@ Zum Sichern dieser Funktionen wurden Entitätsberechtigungen eingeführt, die di
 
 2. Gehen Sie zu **Portale** &gt; **Webrollen** und öffnen die Webrolle, der Sie Berechtigungen hinzufügen möchten. 
 
-3. Wählen Sie **Hinzufügen**, um eine vorhandene Entitäts-Berechtigung einer Webrolle hinzuzufügen. 
+3. Unter **verbunden**, wählen **Entitätsberechtigungen**.
 
-4. Wählen Sie **Neu**, um einen Entitäts-Berechtigungsdatensatz zu erstellen.
+4. Wählen Sie **Hinzufügen einer bestehenden Entitätsberechtigung**, um eine vorhandene Entitäts-Berechtigung einer Webrolle hinzuzufügen. 
+
+4. Suchen Sie nach einer Entitätsberechtigung oder wählen Sie **Neue Entitätsberechtigung**, um einen neuen Entitätsberechtigungsdatensatzes zu erstellen.
 
     ![Hinzufügen von Entitätsberechtigungen zu Webrollen](../media/add-entity-permission-web-role.png "Hinzufügen von Entitätsberechtigungen zu Webrollen")  
 
@@ -51,7 +53,7 @@ Mit dem Kontakt-Geltungsbereich werden angemeldeten Benutzern in der Rolle, für
 
 Auf einer Liste mit Entitäten bedeutet dies, dass ein Filter hinzugefügt wird für alle modellgesteuerten App-Ansichten, die durch diese Liste angezeigt werden, wobei nur die Datensätze abgerufen werden, die direkt mit dem aktuellen Benutzer verknüpft sind. (Je nach Szenario entspricht diese Beziehung dem Besitz oder den Verwaltungsrechten.)
 
-Entitätsformulare erlauben nur die entsprechende Berechtigung zum Lesen, Erstellen, Schreiben usw., sofern diese Beziehung vorhanden ist, wenn der Datensatz geladen wird. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Definieren von Entitätsformularen und benutzerdefinierter Logik in einem Portal](entity-forms.md).  
+Entitätsformulare erlauben nur die entsprechende Berechtigung zum Lesen, Erstellen, Schreiben usw., sofern diese Beziehung vorhanden ist, wenn der Datensatz geladen wird. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Entitätsformulare definieren](entity-forms.md).  
 
 ### <a name="account-scope"></a>Firmen-Umfang
 

@@ -1,6 +1,6 @@
 ---
 title: 'Erstellen oder Bearbeiten von 1: N (1: n- oder n): n: 1-) Entitätsbeziehungen (1 mithilfe des Lösungs-Explorers | MicrosoftDocs'
-description: Weitere Informationen über das Erstellen von 1:n oder n:1 Entitätsbeziehungen mithilfe des PowerApps-Lösungs-Explorers
+description: Weitere Informationen über das Erstellen von 1:n oder n:1 Entitätsbeziehungen mithilfe des Power Apps-Lösungs-Explorers
 ms.custom: ''
 ms.date: 10/28/2018
 ms.reviewer: ''
@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3488b8228841f7b5323daee972472884e7c873d8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2c40ea1fc52849290135e04274fed5c5e0c9232f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758146"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866221"
 ---
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu-einer) Entitätsbeziehung mithilfe des Lösungs-Explorers 
 
 Der Lösungs-Explorer bietet eine Möglichkeit, um 1:N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen für Common Data Service zu erstellen und zu bearbeiten.
 
-Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. Weitere Informationen: 
+Das [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. Weitere Informationen: 
 - [1:N (1: n) oder N:1-Beziehungen erstellen](create-edit-1n-relationships.md)
-- [Erstellen und Bearbeiten von 1:N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen im PowerApps-Portal](create-edit-1n-relationships-portal.md)
+- [Erstellen und Bearbeiten von 1:N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen im Power Apps-Portal](create-edit-1n-relationships-portal.md)
   
 ## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
 
@@ -235,6 +235,6 @@ Bei übergeordneten Beziehungen gibt es einige Einschränkungen, an die Sie bei 
 
 [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)<br />
 [Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer)-Entitätsbeziehungen](create-edit-1n-relationships.md)<br />
-[Erstellen und Bearbeiten von 1:N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen im PowerApps-Portal](create-edit-1n-relationships-portal.md)<br />
+[Erstellen und Bearbeiten von 1:N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen im Power Apps-Portal](create-edit-1n-relationships-portal.md)<br />
 [N:N (n:n)-Beziehungen erstellen](create-edit-nn-relationships.md)
 

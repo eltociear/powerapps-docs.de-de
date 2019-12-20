@@ -1,6 +1,6 @@
 ---
-title: Übersicht über das powerapps-Portal Admin Center | MicrosoftDocs
-description: Informationen zum powerapps-Portal Admin Center.
+title: Übersicht über das Admin Center für Power Apps-Portale | Microsoft-Dokumentation
+description: Informationen zum Admin Center für Power Apps-Portale
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,52 +9,52 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 6f8434a6a395931fc4edfe02913f47536b4a709d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0996704ccbc10f81b95c41d86234ca626a33a345
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543075"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867397"
 ---
-# <a name="powerapps-portals-admin-center"></a>Powerapps-Portale Admin Center
+# <a name="power-apps-portals-admin-center"></a>Admin Center für Power Apps-Portale
 
-Das Admin Center für die powerapps-Portale ermöglicht das Ausführen erweiterter administrativer Aktionen in Portalen. Das Admin Center ist verfügbar, wenn ein Portal erfolgreich bereitgestellt wurde.
+Das Admin Center für Power Apps-Portale ermöglicht die Durchführung erweiterter administrativer Vorgänge auf Portalen. Das Admin Center ist verfügbar, wenn ein Portal ordnungsgemäß bereitgestellt wird.
 
-## <a name="open-powerapps-portals-admin-center"></a>Powerapps-Portale Admin Center öffnen
+## <a name="open-power-apps-portals-admin-center"></a>Öffnen Sie das Admin Center für Power Apps-Portale
 
-1. Wechseln Sie auf der powerapps-Startseite zum Abschnitt **zuletzt verwendete apps** , und suchen Sie Ihr Portal.
-
-    > [!div class=mx-imgBorder]
-    > ![Zuletzt verwendete apps](../media/recent-apps.png "Zuletzt verwendete apps")  
-
-2. Wählen Sie **Weitere Befehle (...)**  > **Einstellungen**aus.
+1. Wechseln Sie zum Abschnitt **Kürzlich verwendete Apps** auf der Power Apps-Homepage, und suchen Sie Ihr Portal.
 
     > [!div class=mx-imgBorder]
-    > ![Option Portal Einstellungen](../media/portal-settings-option.png "Option Portal Einstellungen")
+    > ![Neueste Apps](../media/recent-apps.png "Neueste Apps")  
 
-3. Wählen Sie im Bereich " **Portal Einstellungen** " die Option **Verwaltung**aus.
-
-    > [!div class=mx-imgBorder]
-    > ![Bereich Portal Einstellungen](../media/portal-settings-admin.png "Bereich Portal Einstellungen")
-
-## <a name="add-yourself-as-an-owner-of-the-azure-ad-application"></a>Fügen Sie sich als Besitzer der Azure AD Anwendung hinzu.
-
-Wenn Sie kein globaler Administrator sind und versuchen, ein Portal zu verwalten, das bereits bereitgestellt wurde, oder wenn Sie die Bereitstellung bei einem Fehler erneut übermitteln, müssen Sie der Besitzer der Azure Active Directory (Azure AD)-Anwendung sein, die mit Ihrem Portal verbunden ist.
-
-1. Wechseln Sie zum powerapps-Portal Admin Center, und öffnen Sie die Registerkarte " **Portal Details** ".
-
-2. Kopieren Sie den Wert aus dem Feld **Anwendungs-ID** .
+2. Wählen Sie **Weitere Befehle (...)** > **Einstellungen** aus.
 
     > [!div class=mx-imgBorder]
-    > ![Registerkarte Portals](../media/portal-details-admin.png "Registerkarte Portals")
+    > ![Option Portaleinstellungen](../media/portal-settings-option.png "Option Portaleinstellungen")
 
-3. Wechseln Sie zu Azure AD, die Ihrem Mandanten zugeordnet ist. [!include[](../../../includes/proc-more-information.md)] [übernehmen Sie ein nicht verwaltetes Verzeichnis als Administrator in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-o365-subscription)
+3. Wählen Sie unter **Portaleinstellungen** die Option **Administration** aus.
 
-4. Suchen Sie in Azure AD nach der APP-Registrierung, indem Sie die von Ihnen kopierte Anwendungs-ID verwenden. Möglicherweise müssen Sie von " **meine apps** " zu " **alle apps**" wechseln.
+    > [!div class=mx-imgBorder]
+    > ![Bereich Portaleinstellungen](../media/portal-settings-admin.png "Bereich Portaleinstellungen")
 
-5. Fügen Sie Benutzer oder Gruppen als Besitzer dieser APP-Registrierung hinzu. [!include[](../../../includes/proc-more-information.md)] [Verwalten des Zugriffs auf apps](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps)
+## <a name="add-yourself-as-an-owner-of-the-azure-ad-application"></a>Fügen Sie sich als Besitzer der Azure AD-Anwendung hinzu
+
+Wenn Sie kein globaler Administrator sind und Sie versuchen, ein bereits bereitgestelltes Portal zu verwalten oder die Bereitstellung erneut zu senden, wenn sie gescheitert ist, müssen Sie der Besitzer der Azure Active Directory (Azure AD)-Anwendung sein, die mit dem Portal verbunden ist.
+
+1. Gehen Sie zum Power Apps Admin-Center für Portale und öffnen Sie die Registerkarte **Portaldetails**.
+
+2. Kopieren Sie den Wert aus dem Feld **Anwendungs-ID**.
+
+    > [!div class=mx-imgBorder]
+    > ![Registerkarte Portaldetails](../media/portal-details-admin.png "Registerkarte Portaldetails")
+
+3. Gehen Sie zur Azure AD, das Ihrem Tenant zugeordnet ist. [!include[](../../../includes/proc-more-information.md)] [Ein nicht verwaltetes Verzeichnis als Administrator in Azure Active Directory übernehmen](https://docs.microsoft.com/azure/active-directory/active-directory-manage-o365-subscription)
+
+4. In Azure AD suchen Sie nach der App-Registrierung mithilfe der Anwendungs-ID, die Sie kopiert haben. Gegebenenfalls müssen Sie von **Meine Apps** auf **Alle Apps** ändern.
+
+5. Fügen Sie Benutzer oder Gruppen als Besitzer dieser App-Anmeldung hinzu. [!include[](../../../includes/proc-more-information.md)] [Verwalten von Zugriff auf Apps](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps)
 
     > [!Note]
-    > Diese Aufgabe kann entweder von einem globalen Administrator Ihrer Organisation oder dem vorhandenen Besitzer dieser Anwendung ausgeführt werden.
+    > Diese Aufgabe kann vom einem globalen Administrator Ihrer Organisation oder dem vorhandenen Besitzers dieser Anwendung ausgeführt werden.
 
-6. Nachdem Sie sich selbst als Besitzer hinzugefügt haben, öffnen Sie die Seite "powerapps-Portale Admin Center" erneut.
+6. Nachdem Sie sich selbst als Besitzer hinzugefügt haben, öffnen Sie die Power Apps Portaladministrator-Centerseite erneut.

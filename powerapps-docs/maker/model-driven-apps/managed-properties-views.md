@@ -1,5 +1,5 @@
 ---
-title: Verwaltete Eigenschaften in modellgesteuerten Apps für Ansichten mit PowerApps | Microsoft-Dokumentation
+title: Verwaltete Eigenschaften in modellgesteuerten Apps für Ansichten mit Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie verwaltete Eigenschaften für eine Ansicht festgelegt werden
 ms.custom: ''
 ms.date: 06/12/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b99fe00731066a4ee0f029bdba09c7eab9d8d67b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 335084ee98cdfe82382eac775d068a62c9a429d9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702981"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860013"
 ---
 # <a name="model-driven-app-managed-properties-for-views"></a>Verwaltete Eigenschaften in modellgesteuerten Apps für Ansichten
 
 <a name="BKMK_ManagedProperties"></a>   
  
- Wenn Sie eine benutzerdefinierte öffentliche Ansicht in PowerApps erstellen, die Sie in eine verwaltete Lösung einbeziehen möchten, die Sie verteilen werden, haben Sie die Option, für jeden Benutzer, der Ihre Lösung installiert, die Möglichkeit einzuschränken, die Ansicht anzupassen.  
+ Wenn Sie eine benutzerdefinierte öffentliche Ansicht in Power Apps erstellen, die Sie in eine verwaltete Lösung einbeziehen möchten, die Sie verteilen werden, haben Sie die Option, für jeden Benutzer, der Ihre Lösung installiert, die Möglichkeit einzuschränken, die Ansicht anzupassen.  
   
  Standardmäßig ist bei den meisten Ansichten die verwaltete Eigenschaft **Anpassbar** auf "Wahr" gesetzt, damit Benutzer sie anpassen können. Außer wenn Sie einen sehr triftigen Grund haben, dies zu ändern, wird empfohlen, dass Sie Benutzern erlauben, Ansichten in Ihrer App anzupassen.  
   

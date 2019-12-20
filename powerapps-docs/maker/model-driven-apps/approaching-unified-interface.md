@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe3a0a46d7e611c738ebbb4962d61bafd9c62cb8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 934aae075d185551cd1e3025880887b10689cc6d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754693"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869345"
 ---
 # <a name="approaching-a-user-experience-and-unified-interface-transition"></a>Annäherung an eine Benutzererfahrung und Übergang zur einheitlichen Benutzeroberfläche
 
-Dieses geschäftsorientierte Whitepaper enthält die Planungs-, Governance- und Verwaltungsprinzipien, die berücksichtigt werden müssen, wenn die Benutzerfreundlichkeit in einer modellgesteuerten Anwendung auf der PowerApps-Plattform geändert werden soll. Dieses Whitepaper konzentriert sich speziell auf Dynamics 365-Anwendungen wie Dynamics 365 Sales und Dynamics 365 Customer Service sowie die Übernahme der einheitlichen Oberfläche, viele Themen gelten jedoch für alle Änderungen der Benutzerfreundlichkeit.
+Dieses geschäftsorientierte Whitepaper enthält die Planungs-, Governance- und Verwaltungsprinzipien, die berücksichtigt werden müssen, wenn die Benutzerfreundlichkeit in einer modellgesteuerten Anwendung auf der Power Apps-Plattform geändert werden soll. Dieses Whitepaper konzentriert sich speziell auf Dynamics 365-Anwendungen wie Dynamics 365 Sales und Dynamics 365 Customer Service sowie die Übernahme der einheitlichen Oberfläche, viele Themen gelten jedoch für alle Änderungen der Benutzerfreundlichkeit.
 
 Dieses Handbuch unterstützt Sie bei folgenden Aufgaben:
 - Positionieren der einheitlichen Oberfläche.

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: fa375909ad3e909e70b3477d4e7ba0f24691fc0c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: cdccf267000247a7363a05f72c3ccdd93abb6fd6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707733"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866265"
 ---
 # <a name="variable-tags"></a>Variable Tags
 
@@ -75,4 +75,4 @@ Hello, DAVE BOWMAN.
 [Ablaufsteuerungstags](control-flow-tags.md)<br>
 [Iterationstags](iteration-tags.md)<br>
 [Vorlagentags](template-tags.md)<br>
-[PowerApps Common Data Service-Entitäts-Tags](portals-entity-tags.md)
+[Power Apps Common Data Service-Entitäts-Tags](portals-entity-tags.md)

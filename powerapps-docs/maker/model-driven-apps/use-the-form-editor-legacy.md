@@ -1,5 +1,5 @@
 ---
-title: Ändern der Navigation innerhalb eines modellgesteuerten App-Formulars in PowerApps | Microsoft-Dokumentation
+title: Ändern der Navigation innerhalb eines modellgesteuerten App-Formulars in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie die Navigation in einem Formular ändern
 ms.custom: ''
 ms.date: 06/06/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0d2a8be9daa7a98ab0ddd838b5a1c7388f2eb21f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 92d76b056c21ebe583679bc51b73b04dcf812e69
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710329"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867585"
 ---
 # <a name="change-navigation-within-a-model-driven-app-form"></a>Ändern der Navigation innerhalb eines modellgesteuerten Appformulars
 

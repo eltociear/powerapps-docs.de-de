@@ -2,7 +2,7 @@
 title: Datenabfrage mit Web-API (Common Data Service)| Microsoft Docs
 description: Informieren Sie sich über die verschiedenen Methoden, Common Data Service-Daten mit Common Data Service-Web-API und verschiedenen System-Abfrageoptionen abzufragen, die in diesen Abfragen angewendet werden können
 ms.custom: ''
-ms.date: 09/10/2019
+ms.date: 12/04/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61b958e6f08757154dba415ec59ca6f12e80fb5f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3db4a538b45b754b1c0a3ca823638c4850aae43b
+ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753690"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890709"
 ---
 # <a name="query-data-using-the-web-api"></a>Datenabfrage mit Web-API
 
@@ -323,7 +323,7 @@ Das folgende Beispiel veranschaulicht, wie Sie den [/any-Operator](#bkmk_anyoper
 
 - Jedes verknüpfte Budget der Verkaufschancendatensätze größer oder gleich 300 und
 - die Verkaufschancendatensätze haben keine Beschreibung oder
-- Die Beschreibung der Opportunity-Datensätze enthält den Begriff "*bad*".
+- Die Beschreibung der Verkaufschancen-Datensätze enthält den Begriff "*bad*".
 
 **Anforderung**
 
@@ -516,9 +516,13 @@ GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
 ## <a name="retrieve-a-count-of-entities"></a>Abrufen einer Anzahl von Entitäten
 
  Verwenden Sie die Systemabfrageoption `$count` mit dem Wert `true`, um eine Anzahl von Entitäten einzuschließen, die die Filterkriterien bis 5000 entsprechen.  
+
+ 
   
 > [!NOTE]
->  Der Zählwert steht nicht für die Gesamtanzahl von Entitäten im System. Er ist durch die maximale Anzahl von Entitäten begrenzt, die zurückgegeben werden können. Weitere Informationen: [Beschränkungen der Zahl der zurückgegebenen Entitäten](#bkmk_limits)  
+>  Der Zählwert steht nicht für die Gesamtanzahl von Entitäten im System. Er ist durch die maximale Anzahl von Entitäten begrenzt, die zurückgegeben werden können. Weitere Informationen: [Beschränkungen der Zahl der zurückgegebenen Entitäten](#bkmk_limits)
+>
+> Wenn Sie die Gesamtzahl der Datensätze für eine Entität abrufen möchten, die über 5000 hinausgeht, verwenden Sie die <xref href="Microsoft.Dynamics.CRM.RetrieveTotalRecordCount?text=RetrieveTotalRecordCount  Function" />.
   
  Die `@odata.count`-Antworteigenschaft enthält die Anzahl der Entitäten, die den Filterkriterien entsprechen, ungeachtet einer `odata.maxpagesize`-Einstellungsbeschränkung.  
   

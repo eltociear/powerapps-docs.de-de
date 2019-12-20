@@ -1,6 +1,6 @@
 ---
 title: 'Entwickler: Bewährte Methoden und Anleitungen zur Plug-In- und Workflow-Entwicklung für den Common Data Service | Microsoft Docs'
-description: Best Practices und Anleitungen zur Plug-in- und Workflow-Entwicklung für Entwickler der Common Data Service in PowerApps.
+description: Best Practices und Anleitungen zur Plug-in- und Workflow-Entwicklung für Entwickler der Common Data Service in Power Apps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a3915f554ef650df33f53921c4fba8135ea1baf5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ca0c34bfb12ba417c14426cbb14dc2382d8ffc55
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748247"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883548"
 ---
 # <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Bewährte Methoden und Anleitungen zur Plug-In- und Workflow-Entwicklung für den Common Data Service
 

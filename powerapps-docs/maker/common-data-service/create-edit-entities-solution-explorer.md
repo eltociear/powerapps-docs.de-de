@@ -19,16 +19,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2ec1fb0471ad1f47f4afad083ad89e87633ce9ed
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7774090950b179e349c6c576439ebd4ad47da67b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707293"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883746"
 ---
 # <a name="create-and-edit-entities-using-solution-explorer"></a>Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer
 
-Sie können Entität mithilfe des PowerApps-Portals für die meisten allgemeinen Situationen einfach erstellen, jedoch nicht alle Funktionen werden dort implementiert. Falls Sie die Bedingungen erfüllen müssen, die in [Entitäten erstellen und bearbeiten Common Data Service](create-edit-entities.md) beschrieben sind, können Sie sie ausführen, indem Sie mithilfe des Lösungs-Explorers Entitäten erstellen oder bearbeiten.
+Sie können Entität mithilfe des Power Apps-Portals für die meisten allgemeinen Situationen einfach erstellen, jedoch nicht alle Funktionen werden dort implementiert. Falls Sie die Bedingungen erfüllen müssen, die in [Entitäten erstellen und bearbeiten Common Data Service](create-edit-entities.md) beschrieben sind, können Sie sie ausführen, indem Sie mithilfe des Lösungs-Explorers Entitäten erstellen oder bearbeiten.
 
 ## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
 
@@ -203,5 +203,5 @@ Mehr Informationen: [Erstellen und Bearbeiten von virtuellen Entitäten, die Dat
 
 ### <a name="see-also"></a>Siehe auch
 [Entitäten erstellen und bearbeiten in Common Data Service](create-edit-entities.md)<br />
-[Tutorial: Erstellen Sie eine benutzerdefinierte Entität, die Komponenten in PowerApps enthält](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[Tutorial: Erstellen Sie eine benutzerdefinierte Entität, die Komponenten in Power Apps enthält](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Erstellen einer Lösung](create-solution.md)

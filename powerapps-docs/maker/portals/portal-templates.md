@@ -1,27 +1,24 @@
 ---
-title: Portalvorlagen verfügbar unter PowerApps | Microsoft Docs
-description: Erfahren Sie mehr über die verschiedenen Portalvorlagen, die unter PowerApps verfügbar sind.
+title: Portalvorlagen verfügbar unter Power Apps | Microsoft Docs
+description: Erfahren Sie mehr über die verschiedenen Portalvorlagen, die unter Power Apps verfügbar sind.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 01995c7d1d23d4986441e8ccdcbba59029004cdf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f37769e63d6231869aedfd83e834ffcdd86062ea
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755682"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884515"
 ---
 # <a name="portal-templates"></a>Portalvorlagen
 
-Abhängig von der ausgewählten Umgebung in PowerApps können Sie ein Common Data Service-Starterportal oder ein Portal in einer Umgebung erstellen, die modellgesteuerte Apps in Dynamics 365 enthält.
-
-> [!NOTE]
-> Bestehende Portale und bestehende Portalvorlagen (Community, Partner, Self-Service für Mitarbeiter, Self-Service für Kunden) werden im PowerApps-Portalstudio nicht vollständig unterstützt und einige Komponenten werden möglicherweise nicht dargestellt. Sie können jedoch die Bearbeitung der restlichen Komponenten wie gewohnt fortsetzen.
+Abhängig von der ausgewählten Umgebung in Power Apps können Sie ein Common Data Service-Starterportal oder ein Portal in einer Umgebung erstellen, die modellgesteuerte Apps in Dynamics 365 enthält.
 
 ## <a name="environment-with-common-data-service"></a>Umgebung mit Common Data Service.
 

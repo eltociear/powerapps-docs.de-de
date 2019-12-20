@@ -1,5 +1,5 @@
 ---
-title: Erstellen Sie 1:n- (eins-zu-viele) oder n:1-Beziehungsentitäten (viele zu eins) in PowerApps-Übersicht | Microsoft-Dokumentation
+title: Erstellen Sie 1:n- (eins-zu-viele) oder n:1-Beziehungsentitäten (viele zu eins) in Power Apps-Übersicht | Microsoft-Dokumentation
 description: Erfahren Sie, wie 1:n- oder n:1-Entitäts-Beziehungen erstellt werden
 ms.custom: ''
 ms.date: 05/27/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 724a887df3a5347f1d403ac30201297abf5201aa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 07e173dff08a10de5354c08d3530605f530e512d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758190"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866133"
 ---
 # <a name="create-one-to-many-or-many-to-one-entity-relationships-overview"></a>Erfahren Sie, wie 1:n- oder n:1-Entitäts-Beziehungsübersichten erstellt werden
 
@@ -40,7 +40,7 @@ Es gibt zwei Ansicht, die Sie verwenden können, um 1:n (eine-zu-vielen) oder N:
 
 |Designer| Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Erstellen und Bearbeiten von 1:n oder n:1-Entitätsbeziehungen im PowerApps-Portal](create-edit-1n-relationships-portal.md)|
+|[Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Erstellen und Bearbeiten von 1:n oder n:1-Entitätsbeziehungen im Power Apps-Portal](create-edit-1n-relationships-portal.md)|
 |Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen. <br />Weitere Informationen: [Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen mit dem Lösungsexplorer](create-edit-1n-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Es gibt zwei Ansicht, die Sie verwenden können, um 1:n (eine-zu-vielen) oder N:
 
 Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. 
 
-Sie sollten das PowerApps-Portal verwenden, um 1:n oder n:1-Entitätsbeziehungen zu erstellen und zu bearbeiten, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
+Sie sollten das Power Apps-Portal verwenden, um 1:n oder n:1-Entitätsbeziehungen zu erstellen und zu bearbeiten, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
 
 - Konfigurieren der Feldzuordnung
 - Konfigurieren Sie Navigationsbereichsoptionen für modellgetriebene Apps.
@@ -72,7 +72,7 @@ Sie sollten das PowerApps-Portal verwenden, um 1:n oder n:1-Entitätsbeziehungen
 ### <a name="see-also"></a>Siehe auch
 
 [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)<br />
-[Erstellen und Bearbeiten von 1:N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen im PowerApps-Portal](create-edit-1n-relationships-portal.md)<br />
+[Erstellen und Bearbeiten von 1:N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen im Power Apps-Portal](create-edit-1n-relationships-portal.md)<br />
 [Erstellen oder Bearbeiten von 1: N (1: n- oder n: n) Entitätsbeziehungen 1 mithilfe des Lösungs-Explorers](create-edit-1n-relationships-solution-explorer.md)<br />
 [Entwicklerdokumentation: Entitätsbeziehungseignungsmetadaten anpassen](/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [Entwicklerdokumentation: Entitätsbeziehungseignung](/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

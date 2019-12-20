@@ -1,6 +1,6 @@
 ---
-title: Anzeigen oder Herunterladen von Entwicklerressourcen für PowerApps und Common Data Service | MicrosoftDocs
-description: Finden Sie Entwicklerressourcen und Service-Endpunkt-URLs für PowerApps und Common Data Service.
+title: Anzeigen oder Herunterladen von Entwicklerressourcen für Power Apps und Common Data Service | MicrosoftDocs
+description: Finden Sie Entwicklerressourcen und Service-Endpunkt-URLs für Power Apps und Common Data Service.
 keywords: ''
 ms.date: 06/06/2018
 ms.service: powerapps
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3c51d7c80844f53d95c73c0bfce061aaa96e50a7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d0d3a36795506c7127be61657fee8d46baaae28e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748621"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862028"
 ---
 # <a name="view-or-download-developer-resources"></a>Anzeigen oder Herunterladen von Entwicklerressourcen
 
@@ -35,7 +35,7 @@ Diese Seite bietet Ressourcen für Entwickler und Informationen über die spezif
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>Zeigen Sie die Entwicklerressourceseite für Ihre Umgebung an
 
-1. Wählen Sie im Portal PowerApps die Schaltfläche ![Einstellungsschaltfläche](../../administrator/media/settings-button-nav-bar.png) Einstellungen und wählen Sie **Erweiterte Anpassungen**.
+1. Wählen Sie im Portal Power Apps die Schaltfläche ![Einstellungsschaltfläche](../../administrator/media/settings-button-nav-bar.png) Einstellungen und wählen Sie **Erweiterte Anpassungen**.
 
     ![Erweiterte Anpassungen](media/advanced-customizations-menu.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer Beziehung zwischen Entitäten, mithilfe eines Suchfelds | Microsoft Docs
-description: Schrittweise Anleitung zur Erstellung einer Beziehung zwischen Entitäten in PowerApps mithilfe eines Suchfelds.
+description: Schrittweise Anleitung zur Erstellung einer Beziehung zwischen Entitäten in Power Apps mithilfe eines Suchfelds.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ac4b57853e6dfc4c0969a4207538e15db0b58bc8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 468f31eeb48a3e79f79db9188be78a7fa6d28c18
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757530"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883570"
 ---
 # <a name="create-a-relationship-between-entities"></a>Erstellen einer Beziehung zwischen Entitäten
 Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Beispielsweise haben Sie eine **Lehrer**- und **Klasse**-Entität, und die **Klasse**-Entität weist möglicherweise eine Suchbeziehung mit der **Lehrer**-Entität, um zu veranschaulichen, welcher Lehrer welche Klasse unterrichtet. Sie können ein Suchfeld verwenden, um Daten aus der Entität **Lehrer** anzuzeigen. Dies wird allgemein als ein Suchfeld bezeichnet.
@@ -136,7 +136,7 @@ Weitere Informationen zu Standardwerten und angepassten Verhaltensweisen: [Konfi
 Wenn Sie [automatisch eine App erstellen](../canvas-apps/data-platform-create-app.md), die aus einer Entität erstellt wird, die ein Suchfeld enthält, wird es als **Dropdown**-Steuerelement angezeigt, das Daten im Feld **Primärer Name** der Entität enthält.
 
 ## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>Hinzufügen von 1:N- und N:N-Beziehungen für Canvas-Anwendungen
-Verwenden Sie die Funktion **Beziehung**, um zwei Datensätze über eine 1:n- oder m:n-Beziehung in Common Data Service zu verbinden. Mehr Informationen: [Verwandte und nicht verwandte Funktionen in PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
+Verwenden Sie die Funktion **Beziehung**, um zwei Datensätze über eine 1:n- oder m:n-Beziehung in Common Data Service zu verbinden. Mehr Informationen: [Verwandte und nicht verwandte Funktionen in Power Apps](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Generieren Sie eine App, indem Sie Common Data Service verwenden](../canvas-apps/data-platform-create-app.md)

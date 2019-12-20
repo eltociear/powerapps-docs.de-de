@@ -1,5 +1,5 @@
 ---
-title: Rollupfelder definieren mit PowerApps | Microsoft-Dokumentation
+title: Rollupfelder definieren mit Power Apps | Microsoft-Dokumentation
 description: Hier erfahren Sie, wie Sie Rollup-Felder definieren
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9691912bab995fac0b3489580aaa1fef82f9dcc8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e0c254635d6d51ee037ef7865f4b67b72710f319
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758630"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863990"
 ---
 # <a name="define-rollup-fields-that-aggregate-values"></a>Definition von Rollupfeldern, die Werte aggregieren
 
 Rollupfelder helfen Benutzern, Einblicke in die Daten zu erhalten, indem Sie Schlüsselunternehmensmetriken überwachen. Ein Rollupfeld enthält einen Gesamtwert, der über die Datensätze berechnet wird, die mit einem bestimmten Datensatz verknüpft sind. Dies umfasst reguläre Entitäten und Aktivitätsentitäten wie E-Mails und Termine.
 
-In den komplexeren Szenarien können Sie Daten über die Hierarchie von Datensätzen aggregieren. Wenn Sie Administrator oder Anpasser sind, können Sie Rollupfelder mithilfe der Anpassungstools in PowerApps definieren, ohne dass hierfür Code geschrieben werden muss.  
+In den komplexeren Szenarien können Sie Daten über die Hierarchie von Datensätzen aggregieren. Wenn Sie Administrator oder Anpasser sind, können Sie Rollupfelder mithilfe der Anpassungstools in Power Apps definieren, ohne dass hierfür Code geschrieben werden muss.  
   
 <a name="BKMK_benefitsandcapabilities"></a> 
  

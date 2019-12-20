@@ -1,5 +1,5 @@
 ---
-title: Deaktivieren des automatischen Speicherns in einer modellgesteuerten App mit PowerApps | Microsoft-Dokumentation
+title: Deaktivieren des automatischen Speicherns in einer modellgesteuerten App mit Power Apps | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fda8a194a47101eb26d000ea60ede5b38b0f235d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2f09cd488165643a3336c526050abc0b9223b49f
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759466"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875660"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>Deaktivieren des automatischen Speicherns in einer modellgesteuerten App
 
@@ -63,7 +63,7 @@ Die automatische Speicherung hilft App-Benutzern, sich auf ihre Arbeit zu konzen
 > [!NOTE]
 >  Die automatische Speicherung wird für das Formular deaktiviert, die Daten werden aber weiterhin gespeichert, wenn Sie die ![Schaltfläche „Automatisches Speichern“](media/auto-save-icon.png "ASchaltfläche „Automatisches Speichern“)-Schaltfläche rechts unten auswählen. Wenn Sie versuchen, von einem Formular wegzunavigieren oder ein Formular zu schließen, in dem Daten geändert wurden, werden Sie aufgefordert, die Änderungen zu speichern, bevor Sie dies tun können.  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.  
   

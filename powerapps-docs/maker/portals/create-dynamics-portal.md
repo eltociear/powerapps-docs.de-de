@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 50459f3fcd9ebe8894196f934c1b1d2275c490c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 896f6cfe9fabf08606e69b68b9957835a0147aee
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756386"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873395"
 ---
 # <a name="create-a-portal-in-an-environment-containing-model-driven-apps-in-dynamics-365"></a>Erstellen Sie ein Portal in einer Umgebung, die modellgesteuerte Apps in Dynamics 365 enthält
 
 Wenn Sie eine Umgebung auswählen, die modellgesteuerte Apps in Dynamics 365 (wie zum Beispiel Dynamics 365 Sales, Dynamics 365 Customer Service) enthält, können Sie die in [Portalvorlagen](portal-templates.md) erwähnten Portale erstellen.
 
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com) an.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com) an.
 
 2.  Wählen Sie im linken Bereich **Erstellen** aus und geben Sie **Portal** in das Feld **Suchvorlagen** ein, um alle Dynamics 365-Portalvorlagen anzuzeigen.
 
@@ -37,4 +37,5 @@ Wenn Sie eine Umgebung auswählen, die modellgesteuerte Apps in Dynamics 365 (wi
 > - Die Bereitstellung von Portalen von [make.powerapps.com](https://make.powerapps.com) verbraucht nicht die vorherigen Portal-Add-Ons. Außerdem sind diese Portale werden nicht auf der Registerkarte **Anwendungen** auf der **Dynamics 365-Verwaltungscenter** Seite aufgelistet.
 > - Ein Common Data Service Starterportal kann nicht von der **Dynamics 365-Verwaltungscenter** Seite erstellt werden.
 > - Um die Portalerstellung in einem Mandanten zu deaktivieren, siehe [Portalerstellung in einem Mandanten deaktivieren](create-portal.md#disable-portal-creation-in-a-tenant).
+> - Wenn Sie ein Portal erstellen, werden einige Lösungen installiert und Beispieldaten importiert.
 

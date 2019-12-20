@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Website-Zugriffsrechten in Dynamics 365 Portale | MicrosoftDocs
+title: Erstellen einer Websitezugriffsberechtigungen in Power Apps-Portalen | MicrosoftDocs
 description: Erfahren Sie, wie Sie Websitezugriffsberechtigungen erstellen und Elementen in einem Portal zuordnen.
 author: sbmjais
 manager: shujoshi
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0ac02992498204efc42a52e736284ea134ed42f5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ab85eb4feca871089366c8675305b4f6c741f0af
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760441"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873460"
 ---
 # <a name="create-website-access-permissions"></a>Erstellen von Websitezugriffsberechtigungen
 
@@ -38,8 +38,10 @@ So erstellen Sie eine Websitezugriffsberechtigung und fügen Sie einer Webrolle 
 
 4. Geben Sie unter **Allgemein** den Namen und die Website ein, und wählen Sie die erforderlichen Berechtigungen aus.
 
-5. Wählen Sie unter **Webrollen** die Webrolle aus, der die Berechtigung zugeordnet werden soll, und fügen Sie sie hinzu.
+    ![Erstellen von Websitezugriffsberechtigungen](../media/website-access-permission.png "Erstellen von Websitezugriffsberechtigungen")
+
+5. Wählen Sie unter **Webrollen** die Option **Vorhandene Webrolle hinzufügen** aus, der die Berechtigung zugeordnet werden soll, und fügen Sie sie hinzu.
 
 6. Speichern Sie die Änderungen.
 
-    ![Erstellen von Websitezugriffsberechtigungen](../media/website-access-permission.png "Erstellen von Websitezugriffsberechtigungen")  
+    

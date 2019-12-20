@@ -1,6 +1,6 @@
 ---
-title: Informationen zum PowerApps-Portallebenszyklus | Microsoft-Dokumentation
-description: Informationen zum PowerApps-Portallebenszyklus und Konvertieren von einer Testversion in eine Produktionsumgebung.
+title: Informationen zum Power Apps-Portallebenszyklus | Microsoft-Dokumentation
+description: Informationen zum Power Apps-Portallebenszyklus und Konvertieren von einer Testversion in eine Produktionsumgebung.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 5476bb0306b5d9e0767f451fba36a567a70c4c54
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 60300176f0a39258bbb7030c9e30d9b2e7711990
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756782"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874648"
 ---
 # <a name="about-portal-lifecycle"></a>Info über den Portallebenszyklus
 
@@ -28,13 +28,13 @@ Das erste Portal kann in einer Umgebung in einem Mandanten kostenlos erstellt we
 
 ### <a name="trial-portal"></a>Testportal
 
-Ein Portal wird immer als Testportal erstellt. Sie können es im PowerApps-Portal-Administratorcenter in eine Produktionsumgebung konvertieren, wenn Sie die erforderlichen Lizenzen besitzen. Informationen zum Konvertieren eines Testportals in die Produktionsumgebung finden Sie unter [Konvertieren eines Testportals in die Produktionsumgebung](#convert-a-trial-portal-to-production).
+Ein Portal wird immer als Testportal erstellt. Sie können es im Power Apps-Portal-Administratorcenter in eine Produktionsumgebung konvertieren, wenn Sie die erforderlichen Lizenzen besitzen. Informationen zum Konvertieren eines Testportals in die Produktionsumgebung finden Sie unter [Konvertieren eines Testportals in die Produktionsumgebung](#convert-a-trial-portal-to-production).
 
-Um ein Testportal in die Produktionsumgebung zu konvertieren, braucht die Umgebung die erforderlichen Add-Ons für externe Benutzer oder eine Lizenz für interne Benutzer. Weitere Informationen zu Lizenzen finden Sie unter [FAQs zur PowerApps- und Microsoft Flow-Lizenzierung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) und [PowerApps- Portal-Lizenzierung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
+Um ein Testportal in die Produktionsumgebung zu konvertieren, braucht die Umgebung die erforderlichen Add-Ons für externe Benutzer oder eine Lizenz für interne Benutzer. Weitere Informationen zu Lizenzen finden Sie unter [FAQs zur Power Apps- und Power Automate-Lizenzierung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) und [Power Apps- Portal-Lizenzierung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing).
 
 ### <a name="suspended-portal"></a>Abgeschaltetes Portal
 
-Es werden weiterhin Benachrichtigungen im PowerApps-Portal-Administratorcenter zum Ablauf des Testportals angezeigt. Testportale laufen nach 30 Tagen ab. Wenn Sie Ihr Portal innerhalb des Testzeitraums nicht in die Produktionsumgebung konvertieren, wird das Portal heruntergefahren und auf den Status „Abgeschaltet“ gesetzt. Es ist nicht möglich, auf das Portal nach dem Ablauf zuzugreifen.
+Es werden weiterhin Benachrichtigungen im Power Apps-Portal-Administratorcenter zum Ablauf des Testportals angezeigt. Testportale laufen nach 30 Tagen ab. Wenn Sie Ihr Portal innerhalb des Testzeitraums nicht in die Produktionsumgebung konvertieren, wird das Portal heruntergefahren und auf den Status „Abgeschaltet“ gesetzt. Es ist nicht möglich, auf das Portal nach dem Ablauf zuzugreifen.
 
 Das abgeschaltete Portal kann aber noch innerhalb von sieben Tagen nach Abschaltung in die Produktionsumgebung konvertiert werden. 
 
@@ -44,14 +44,14 @@ Wenn Sie Ihr Portal nicht innerhalb von sieben Tagen nach Abschaltung in die Pro
 
 ## <a name="convert-a-trial-portal-to-production"></a>Ein Testportal in die Produktionsumgebung konvertieren
 
-Sie können ein Testportal über die Benachrichtigungen, die im PowerApps-Portal-Administratorcenter angezeigt werden, in eine Produktionsumgebung konvertieren.
+Sie können ein Testportal über die Benachrichtigungen, die im Power Apps-Portal-Administratorcenter angezeigt werden, in eine Produktionsumgebung konvertieren.
 
 > [!NOTE]
 > Ihnen muss eine der folgenden Rollen zugewiesen sein, um ein Testportal in die Produktionsumgebung zu konvertieren:
 > - Globaler Administrator
 > - Systemadministrator
 
-Wenn Sie das [PowerApps-Portal-Administratorcenter](admin-overview.md) öffnen und zur Registerkarte [Portaldetails](portal-details.md) navigieren, wird die Benachrichtigung über den Testablauf unterhalb des **Typ**-Felds angezeigt.
+Wenn Sie das [Power Apps-Portal-Administratorcenter](admin-overview.md) öffnen und zur Registerkarte [Portaldetails](portal-details.md) navigieren, wird die Benachrichtigung über den Testablauf unterhalb des **Typ**-Felds angezeigt.
 
 > [!div class=mx-imgBorder]
 > ![Testbenachrichtigung auf der Portaldetail-Registerkarte](../media/admin-center-convert-notif.png "Testbenachrichtigung auf der Portaldetail-Registerkarte")

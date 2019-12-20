@@ -1,7 +1,7 @@
 ---
-title: Übersicht über das powerapps-Komponenten Framework | Microsoft-Dokumentation
-description: Verwenden Sie das powerapps-Komponenten Framework, um Code Komponenten zu erstellen, die es Benutzern ermöglichen, Daten in Formularen, Ansichten und Dashboards anzuzeigen und mit Ihnen zu arbeiten.
-keywords: Komponenten Framework, Code Komponenten, powerapps-Steuerelemente
+title: Power Apps component framework Übersicht | Microsoft Docs
+description: Verwenden Sie das Power Apps component framework, um Code-Komponenten zu erstellen, um Personen ein verbessertes Erlebnis beim Anzeigen und Arbeiten mit Daten in Formularen, Ansichten und Dashboards zu bieten.
+keywords: component framework, Code-Komponenten, Power Apps-Steuerelemente
 author: nkrb
 manager: kvivek
 ms.date: 09/05/2019
@@ -12,37 +12,43 @@ ms.custom:
 ms.topic: article
 ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
-ms.openlocfilehash: a9f157dfb3d0a7d29cebadee935c84826ae040d6
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c86182fe14617f971b8ca2183bdb4627b8e8c5b9
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025660"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895076"
 ---
-# <a name="powerapps-component-framework-overview"></a>Übersicht über das powerapps-Komponenten Framework
+# <a name="power-apps-component-framework-overview"></a>Power Apps component framework Übersicht
 
-Das powerapps-Komponenten Framework ermöglicht professionellen Entwicklern und App-Entwicklern das Erstellen von Code Komponenten für Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau), um Benutzern eine verbesserte Benutzeroberfläche zur Anzeige und Bearbeitung von Daten in Formularen, Ansichten, und Dashboards. Beispiel:
+Mit dem Power Apps component framework können professionelle Entwickler und App-Ersteller Codekomponenten für modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) erstellen, um eine Erhöhung Benutzerfreundlichkeit angeben, um Benutzern ein verbessertes Benutzererlebnis beim Anzeigen und Arbeiten mit Daten in Formularen, Ansichten und Dashboards zu bieten. Beispiel:
 
-- Ersetzen Sie ein Feld, das einen numerischen Textwert anzeigt, durch einen `dial` oder `slider` Code Komponente.
-- Transformieren Sie eine Liste in eine ganz andere visuelle Darstellung, die an das DataSet gebunden ist, wie eine `Calendar` oder `Map`.
+- Ersetzen Sie ein Feld, das einen numerischen Textwert anzeigt, mit einer `dial`- oder `slider`-Code-Komponente.
+- Transformieren Sie eine Liste in eine völlig andere Sichterfahrung, die an das Dataset gebunden ist, z. B. `Calendar` oder `Map`.
 
 > [!IMPORTANT]
-> - Das powerapps-Komponenten Framework ist als experimentelle Vorschau für Canvas-apps und in allgemeiner Verfügbarkeit für Modell gesteuerte apps verfügbar. Dies bedeutet, dass alle APIs, die für Modell gesteuerte Apps unterstützt werden, für Canvas-Apps möglicherweise noch nicht unterstützt werden.
-> - Standardmäßig ist das powerapps-Komponenten Framework für Modell gesteuerte apps aktiviert. Informationen zum Aktivieren dieses Features für Canvas-apps finden Sie unter [Verfügbarkeit für Canvas-apps](component-framework-for-canvas-apps.md).
+> - Power Apps component framework befindet sich in der experimentellen Vorschau für Canvas-Anwendungen und in GA für modellgetriebene Anwendungen. Dies bedeutet, dass alle APIs, die für modellgetriebene Anwendungen unterstützt werden, möglicherweise noch nicht auf Canvas-Anwendungen unterstützt werden.
+> - Standardmäßig ist das Power Apps component framework für modellgesteuerte Apps aktiviert. Informationen zum Aktivieren dieser Funktion für Canvas-Apps finden Sie unter [Codekomponenten für Canvas-Apps](component-framework-for-canvas-apps.md).
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
-> - Canvas-apps unterstützen nur den *Feldtyp* von Code Komponenten und nicht den *DataSet* -Typ.
+> - Canvas-Anwendungen unterstützen nur den Typ *Feld* der Codekomponenten und nicht den Typ *Datensatz*.
 
+## <a name="how-its-different-from-webresources"></a>Unterschiede zu Webressourcen
 
-Verwenden Sie das powerapps-Komponenten Framework zum Erstellen von Code Komponenten, die in allen Funktionen von powerapps verwendet werden können. Im Gegensatz zu HTML-Webressourcen werden Code Komponenten als Teil desselben Kontexts gerendert, gleichzeitig mit allen anderen Komponenten geladen, was eine nahtlose Benutzer Darstellung ermöglicht. Entwickler können alle HTML-, CSS-und typescript-oder JavaScript-Dateien in einer einzelnen Projektmappenpaketdatei bündeln. Code Komponenten können in unterschiedlichen Entitäten und Formularen mehrmals wieder verwendet werden.
+ Im Gegensatz zu HTML-Webressourcen werden Codekomponenten als Teil desselben Kontextes dargestellt, der gleichzeitig mit allen anderen Komponenten geladen wird, was den Benutzern ein nahtloses Erlebnis bietet. Entwickler können alle HTML-, CSS- und TypeScript- oder JavaScript-Dateien in einer einzigen [Lösungs](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview)-Paketdatei bündeln und über Umgebungen hinweg verschieben und per [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365) versenden. Codekomponenten können mehrfach über verschiedene Entitäten und Formulare hinweg wiederverwendet werden. Nutzen Sie das Power Apps component framework, um Code-Komponenten zu erstellen, die bei allen Power Apps-Funktionen verwendet werden können.
 
-Code Komponenten haben Zugriff auf einen umfangreichen Satz von Framework-APIs, die Funktionen wie die Verwaltung des Komponenten Lebenszyklus, den kontextbezogenen Daten und den Metadatenzugriff, den nahtlosen Server Zugriff über Web-API, das Hilfsprogramm und Daten Formatierungs Methoden, Gerätefunktionen wie Kamera Speicherort und Mikrofon sowie leicht aufzurufende UX-Elemente wie Dialogfelder, Lookups und das vollständige Rendering.  
+## <a name="advantages"></a>Vorteile 
 
-Entwickler und App-Ersteller können moderne Webpraktiken verwenden und die Leistungsfähigkeit externer Bibliotheken nutzen, um erweiterte Benutzerinteraktionen zu erstellen. Das Framework kümmert sich automatisch um den Lebenszyklus der Komponente, behält die Geschäftslogik der Anwendung bei und optimiert die Leistung (keine weiteren Async-iframes). Komponenten Definitionen, [Abhängigkeiten und Konfigurationen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview) können alle in eine Projekt Mappe gepackt und in Umgebungen verschoben werden. Sie können über [appsource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=dynamics-365)ausgeliefert werden.  
+- Zugriff auf eine Vielzahl von Framework-APIs, die Funktionen wie Management des Komponentenlebenszyklus, Kontextdaten und Metadaten bereitstellen. 
+- Nahtloser Serverzugriff über Web-API-, Dienstprogramm- und Datenformatierungsmethoden, Gerätefunktionen wie Kamera, Standort und Mikrofon sowie einfach aufzurufende UX-Elemente wie Dialogfelder, Nachschlagen und ganzseitiges Rendern.  
+- Unterstützung für moderne Webpraktiken.
+- Optimieren der Leistung.
+- Wiederverwendbarkeit
+- Bündeln Sie alle Dateien in einer einzigen Lösungsdatei.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Was sind Code Komponenten?](custom-controls-overview.md)<br/>
-[Verfügbarkeit für Canvas-apps](component-framework-for-canvas-apps.md)<br/>
-[Erstellen und Erstellen einer Code Komponente](create-custom-controls-using-pcf.md)<br/>
-[PowerApps für Entwickler](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer)
+[Was sind Code-Komponenten](custom-controls-overview.md)<br/>
+[Codekomponenten für Canvas-Apps](component-framework-for-canvas-apps.md)<br/>
+[Erstellen und Entwickeln einer Code-Komponente](create-custom-controls-using-pcf.md)<br/>
+[Power Apps für Entwickler](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer)
 

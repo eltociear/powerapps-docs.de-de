@@ -6,24 +6,24 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/22/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3735a0ef1a26fdd19b7bfb7f6db717cf9bd07861
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 722789d726d02b306eb794aa51665c13ce7f495d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710065"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874692"
 ---
 # <a name="add-a-power-bi-report-or-dashboard-to-a-web-page-in-portal"></a>Hinzufügen eines Power BI-Berichts oder -Dashboards zu einer Webseite im Portal
 
-Sie können einen Power BI-Bericht oder -Dashboard zu einer Webseite im Portal hinzufügen, indem Sie den [powerbi](../liquid/portals-entity-tags.md#powerbi)-Liquid-Tag verwenden. Sie können den Tag im Feld **Kopieren** auf einer Webseite oder im Feld **Quelle** auf einem Webvorlagen hinzufügen. Wenn Sie einen Power BI-Bericht oder -Dashboard hinzufügen, das im neuen Arbeitsbereich in Power BI erstellt wird, müssen Sie den Authentifizierungstyp als powerbiembedded im powerbi-Liquid-Tag angeben.
+Sie können einen Power BI-Bericht oder -Dashboard zu einer Webseite im Portal hinzufügen, indem Sie den [powerbi](../liquid/portals-entity-tags.md#powerbi)-Liquid-Tag verwenden. Sie können den Tag im Feld **Kopieren** auf einer Webseite oder im Feld **Quelle** auf einem Webvorlagen hinzufügen. Wenn Sie einen Power BI Bericht oder Dashboard hinzufügen, das im neuen Arbeitsbereich in Power BI erstellt wird, müssen Sie den Authentifizierungstyp als **powerbiembedded** im powerbi-Liquid-Tag angeben.
 
 Beispiel: 
 
 ```
-{% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
+{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
 > [!NOTE]
@@ -49,12 +49,12 @@ Beispiel:
 3.  Zeigen Sie auf die Kachel, wählen Sie **Weitere Möglichkeiten**, und wählen Sie dann **Im Fokusmodus öffnen** aus.
 
     > [!div class=mx-imgBorder]
-    > ![Geöffnete Power BI Dashboardkachel im Fokusmodus](../media/powerbi-dashboard-tile-focus.png "Power BI Dashboardkachel im Fokusmodus öffnen")
+    > ![Geöffnete Power BI Dashboardkachel im Fokusmodus](../media/powerbi-dashboard-tile-focus.png "Power BI-Dashboardkachel im Fokusmodus öffnen")
 
 4.  Kopieren Sie die Kachel ID von der URL in der Adressleiste. Die Kachel-ID ist der Wert nach /tiles/.
 
     > [!div class=mx-imgBorder]
-    > ![Power BI Dashboardkachel-ID](../media/powerbi-dashboard-tile-id.png "Power BI Dashboardkachel-ID")
+    > ![Power BI Dashboardkachel-ID](../media/powerbi-dashboard-tile-id.png "Power BI-Dashboardkachel-ID")
 
 
 ### <a name="see-also"></a>Siehe auch

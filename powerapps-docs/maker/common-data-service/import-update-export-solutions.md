@@ -1,6 +1,6 @@
 ---
 title: Importieren, Aktualisieren und Exportieren von Lösungen | MicrosoftDocs
-description: Erfahren Sie, wie Sie eine Lösung in PowerApps importieren, aktualisieren und exportieren.
+description: Erfahren Sie, wie Sie eine Lösung in Power Apps importieren, aktualisieren und exportieren.
 ms.custom: ''
 ms.date: 09/30/2019
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: de2c4a4ecefe303f607a9d7f19d892eae2c4bffb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d726860afa8aa2f3cdbb60ede7c549df4da424d2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701573"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884695"
 ---
 # <a name="import-update-and-export-solutions"></a>Lösungen importieren, aktualisieren und exportieren 
 
@@ -93,12 +93,12 @@ ms.locfileid: "2701573"
 <a name="BKMK_ExportSolutions"></a>   
 
 ## <a name="export-solutions"></a>Exportieren von Lösungen  
- Wir empfehlen Ihnen, eine nicht verwaltete Lösung zu erstellen, die Sie für den Export Ihrer Anpassungen verwenden können. Exportieren Sie dann Ihre Anpassungen regelmäßig, so dass Sie ein Backup haben, falls etwas passiert. Verwaltete Lösungen können nicht exportiert werden. Sie können entweder Lösungen von PowerApps exportieren oder mit der klassischen Erfahrung exportieren. 
+ Wir empfehlen Ihnen, eine nicht verwaltete Lösung zu erstellen, die Sie für den Export Ihrer Anpassungen verwenden können. Exportieren Sie dann Ihre Anpassungen regelmäßig, so dass Sie ein Backup haben, falls etwas passiert. Verwaltete Lösungen können nicht exportiert werden. Sie können entweder Lösungen von Power Apps exportieren oder mit der klassischen Erfahrung exportieren. 
  
 > [!IMPORTANT]
 > Der Export der Standardlösung wird nicht unterstützt. 
 
-### <a name="export-from-powerapps"></a>Exportieren von PowerApps aus
+### <a name="export-from-power-apps"></a>Exportieren von Power Apps aus
   
 1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.   
   
@@ -134,7 +134,7 @@ ms.locfileid: "2701573"
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
 ## <a name="settings-options-for-solution-export"></a>Einstellungsoptionen für den Lösungsexport  
- Wenn Sie die Lösung von PowerApps exportieren, beachten Sie bitte diesen Abschnitt nicht. In der folgenden Tabelle sind die verfügbaren Optionen beim Export von Lösungen in der klassischen Erfahrung aufgeführt.  
+ Wenn Sie die Lösung von Power Apps exportieren, beachten Sie bitte diesen Abschnitt nicht. In der folgenden Tabelle sind die verfügbaren Optionen beim Export von Lösungen in der klassischen Erfahrung aufgeführt.  
   
 |Gruppe|Einstellung|Beschreibung|  
 |-----------|-------------|-----------------|  

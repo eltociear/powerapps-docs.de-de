@@ -1,6 +1,6 @@
 ---
-title: Tutorial, um modellgesteuerte App-Komponenten mit PowerApps | Microsoft-Dokumentation hinzuzufügen oder zu bearbeiten
-description: Mithilfe des PowerApps-App-Designers Komponenten hinzufügen oder bearbeiten
+title: Tutorial, um modellgesteuerte App-Komponenten mit Power Apps | Microsoft-Dokumentation hinzuzufügen oder zu bearbeiten
+description: Mithilfe des Power Apps-App-Designers Komponenten hinzufügen oder bearbeiten
 keywords: ''
 ms.date: 10/15/2018
 ms.service: powerapps
@@ -23,14 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c9cbb77b0b312b4376aed8b5f9d106e2c2826ea4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f78b990432988de5ba1d6c2b254bef8577770d16
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752192"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873548"
 ---
-# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-powerapps-app-designer"></a>Tutorial: Modellgesteuerte Apps in PowerApps-App-Designer hinzufügen oder bearbeiten
+# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-power-apps-app-designer"></a>Tutorial: Modellgesteuerte Apps in Power Apps-App-Designer hinzufügen oder bearbeiten
 
 In diesem Lernprogramm wird erläutert, wie Sie Komponenten hinzufügen und Komponenten aus einer Modell-angetriebenen App löschen. 
 
@@ -56,7 +56,7 @@ Der App-Designer bezieht sich auf vorhandene Metadaten in der Standardlösung. S
  > ![Canvas-Suchoption](media/app-designer-search-tab.png "Canvas-Suche")
 
 ## <a name="open-an-app"></a>Eine App öffnen
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/) an. 
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/) an. 
 
 2. Wählen Sie eine vorhandene modellgetriebene Anwendung aus oder wählen Sie **Ohne Vorlage erstellen**. Weitere Informationen darüber, wie Sie eine App erstellen, finden Sie unter [Erstellen oder Bearbeiten einer Modell-angetriebene App, mithilfe von App-Designer](create-edit-app.md#create-an-app).
 
@@ -85,7 +85,7 @@ Der App-Designer bezieht sich auf vorhandene Metadaten in der Standardlösung. S
 
      Diese Dashboards werden der Kachel **Dashboard** auf der App-Designer-Canvas hinzugefügt. Die Kachel **Dashboard** zeigt auch die Anzahl der Dashboards an, die Sie der App hinzugefügt haben. Wenn Sie kein Dashboard auswählen, wird anstelle der Dashboard-Anzahl **Alle** angezeigt, und alle Dashboards sind für Benutzer verfügbar, wenn diese die App verwenden.  
   
-     Alle Entitäten, in denen das Dashboard verwendet wird, werden auch zum Bereich **Entitätsansicht** hinzugefügt. Wenn Sie das Kundenservicemanagerdashboard hinzufügen, werden die Fall-, Anspruchs- und Warteschlangenelemententitäten zum Entitätsansichtbereich hinzugefügt. Für jede Entität werden auch die Kacheln für die Ressourcen hinzugefügt. Sie können diese Kacheln verwenden, um die Formulare, Ansichten und Diagramme hinzufügen. Weitere Informationen:[Hinzufügen oder Bearbeiten von App-Komponenten im PowerApps-App-Designer](add-edit-app-components.md#bkmk_AddEntityAssets)   
+     Alle Entitäten, in denen das Dashboard verwendet wird, werden auch zum Bereich **Entitätsansicht** hinzugefügt. Wenn Sie das Kundenservicemanagerdashboard hinzufügen, werden die Fall-, Anspruchs- und Warteschlangenelemententitäten zum Entitätsansichtbereich hinzugefügt. Für jede Entität werden auch die Kacheln für die Ressourcen hinzugefügt. Sie können diese Kacheln verwenden, um die Formulare, Ansichten und Diagramme hinzufügen. Weitere Informationen:[Hinzufügen oder Bearbeiten von App-Komponenten im Power Apps-App-Designer](add-edit-app-components.md#bkmk_AddEntityAssets)   
   
     ![Hinzufügen der Entität zur App Designer-Canvas](../model-driven-apps/media/add-entity-app-designer-canvas.png "Hinzufügen einer Entität zur App Designer-Canvas")  
   

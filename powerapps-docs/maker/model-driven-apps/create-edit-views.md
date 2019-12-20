@@ -1,5 +1,5 @@
 ---
-title: Erstellen oder bearbeiten einer modellgesteuerten App-Ansicht in PowerApps | Microsoft-Dokumentation
+title: Erstellen oder bearbeiten einer modellgesteuerten App-Ansicht in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie eine Ansicht erstellt oder bearbeitet wird
 ms.custom: ''
 ms.date: 06/11/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78de24571448c0e3c8584ef3b31583acd9d6a4f4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0835e35f5815e7704cfe3d0de24ad4429600512b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704169"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868773"
 ---
 # <a name="understand-model-driven-app-views"></a>Grundlegendes zu Ansichten modellgestützter Apps
 
 <a name="BKMK_CreatingAndEditingViews"></a>   
 
-Mit PowerApps-Apps verwenden Sie Ansichten, um zu definieren, wie eine Liste mit den Datensätzen für eine bestimmte Entität in der Anwendung angezeigt wird. Mit einer Ansicht wird definiert:
+Mit Power Apps-Apps verwenden Sie Ansichten, um zu definieren, wie eine Liste mit den Datensätzen für eine bestimmte Entität in der Anwendung angezeigt wird. Mit einer Ansicht wird definiert:
 
 - Die angezeigten Spalten
 - Wie breit jede Spalte sein sollte
@@ -89,7 +89,7 @@ Sie können eine benutzerdefinierte öffentliche Ansichten erstellen. Sie könne
 
 ## <a name="places-where-you-can-access-the-view-editor-to-create-or-edit-views"></a>Orte, an denen Sie auf den Ansichtseditor zugreifen können, um Ansichten zu erstellen oder zu bearbeiten
 
-- PowerApps Standort: Sie können auf den Ansicht-Designer im Bereich **modellgestützt** > Registerkarten **Daten** > **Entitäten** > **Ansicht** zugreifen. Öffnen Sie eine vorhandene Ansicht oder erstellen Sie eine neue. Weitere Informationen: [Erstellen oder Bearbeiten einer Ansicht](create-and-edit-views.md)
+- Power Apps Standort: Sie können auf den Ansicht-Designer im Bereich **modellgestützt** > Registerkarten **Daten** > **Entitäten** > **Ansicht** zugreifen. Öffnen Sie eine vorhandene Ansicht oder erstellen Sie eine neue. Weitere Informationen: [Erstellen oder Bearbeiten einer Ansicht](create-and-edit-views.md)
 - App-Designer: Wenn Sie in einer App arbeiten, sollten Sie den App-Designer verwenden, der eine einfache und intuitive Benutzeroberfläche mit Drag- and Drop-Funktionen für erstellte Ansichten bereitstellt. Weitere Informationen: [Lernprogramm: Erstellen und Bearbeiten von öffentlichen oder Systemansichten mit dem App-Designer](create-edit-views-app-designer.md)
 - Projektmappen-Explorer: Wenn Sie bereits erfahren mit Dynamics 365 sind, sollten Sie den Projektmappen-Explorer verwenden. Weitere Informationen: [Navigieren zur erweiterten App-Herstellung und -Anpassungsbereichen](advanced-navigation.md#solution-explorer)
  

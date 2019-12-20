@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0bedeae7952f5ec11394b680064af9016ae2b82e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a6affbb0d13af137ddd044a7ae4b6d2cddbf813c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756606"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862442"
 ---
 # <a name="compose-a-page"></a>Erstellen einer Seite
 
@@ -33,11 +33,11 @@ Wenn Sie die erforderlichen Webseiten hinzugefügt und ihre Hierarchie in der Si
     - Breadcrumb
 
 > [!NOTE]
-> Wenn Sie Ihr Portal mithilfe des PowerApps-Portalstudios anpassen, würden die Websitebenutzer eine Auswirkung auf die Leistung feststellen. Wir empfehlen daher, die Änderungen nicht während der Hauptnutzungszeiten auf einem Liveportal durchzuführen. 
+> Wenn Sie Ihr Portal mithilfe des Power Apps-Portalstudios anpassen, würden die Websitebenutzer eine Auswirkung auf die Leistung feststellen. Wir empfehlen daher, die Änderungen nicht während der Hauptnutzungszeiten auf einem Liveportal durchzuführen. 
 
 ## <a name="use-the-wysiwyg-editor"></a>Verwenden des WYSIWYG-Editors
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.  
 
 2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
 
@@ -64,7 +64,7 @@ Wenn Sie die erforderlichen Webseiten hinzugefügt und ihre Hierarchie in der Si
 
 Mit Abschnitten können Sie eine Struktur für die Seite definieren und Portalkomponenten entsprechend anordnen. Nachdem Sie Abschnitte zur Seite hinzugefügt haben, können Sie Portalkomponenten in den Abschnitten gemäß der Anforderung hinzufügen.
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.
 
 2.  Wählen Sie die Seite aus, für die ein Abschnitt hinzugefügt werden soll.
 
@@ -115,7 +115,7 @@ Sie können die folgenden Komponenten auf einer Webseite hinzufügen.
 
 ### <a name="add-text-box"></a>Hinzufügen eines Textfelds
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.  
 
 2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
 
@@ -144,7 +144,7 @@ Sie können die folgenden Komponenten auf einer Webseite hinzufügen.
 
 ### <a name="add-image"></a>Hinzufügen eines Bilds
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.  
 
 2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
 
@@ -181,7 +181,7 @@ Sie können die folgenden Komponenten auf einer Webseite hinzufügen.
 
 ### <a name="add-iframe"></a>Hinzufügen eines IFrames
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.  
 
 2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
 
@@ -209,7 +209,7 @@ Sie können die folgenden Komponenten auf einer Webseite hinzufügen.
 
 Ein Formular ist eine datengestützte Konfiguration, mit der Sie ein Formular hinzuzufügen können, um Daten in einem Portal zu sammeln, ohne dass ein Entwickler hierfür das Formular auf der Portaloberfläche darstellen muß. [Formulare werden in Common Data Service erstellt](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-overview) und Sie können sie für Webseiten im Portal oder zusammen mit Listen verwenden, um vollständige Webanwendungen zu erstellen.  
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.  
 
 2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
 
@@ -264,7 +264,7 @@ Ein Formular ist eine datengestützte Konfiguration, mit der Sie ein Formular hi
 
 Eine Liste ist eine datengestützte Konfiguration, die Ihnen die Möglichkeit gibt, eine Webseite hinzuzufügen, die eine Liste von Einträgen rendert, ohne dass ein Entwickler das Raster im Portal bearbeiten muss. Bei Listen werden [Common Data Service-Ansichten](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-and-edit-views) verwendet, um Datensätze im Portal anzuzeigen.  
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.  
 
 2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
 
@@ -308,7 +308,7 @@ Eine Liste ist eine datengestützte Konfiguration, die Ihnen die Möglichkeit gi
 
 ### <a name="add-breadcrumb"></a>Hinzufügen eines Breadcrumbs
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.  
 
 2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
 
@@ -324,7 +324,7 @@ Standardmäßig wird das Menü auf der Website automatisch anhand der Hierarchie
 
 Nachdem Sie den Weblinksatz erstellt haben:
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.
 
 2.  Wählen Sie die Header-Komponente aus. 
 

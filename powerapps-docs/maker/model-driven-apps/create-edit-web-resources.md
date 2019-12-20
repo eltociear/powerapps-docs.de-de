@@ -1,5 +1,5 @@
 ---
-title: Erstellen oder Bearbeiten von Webressourcen für modellgesteuerte Apps in PowerApps | MicrosoftDocs
+title: Erstellen oder Bearbeiten von Webressourcen für modellgesteuerte Apps in Power Apps | MicrosoftDocs
 description: Erfahren Sie, wie Sie eine Webressouce erstellen oder bearbeiten
 ms.custom: ''
 ms.date: 06/02/2018
@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6711d78a217bc5bcee34f0bd209f7bdfe56249c5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4aa4e0399395861cf94740c92f35b738998b8209
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702453"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860500"
 ---
 # <a name="create-or-edit-model-driven-app-web-resources-to-extend-an-app"></a>Erstellen oder Bearbeiten von Webressourcen für modellgesteuerte Apps, um eine App zu erweitern
 
 Webressourcen werden in der Regel von Entwicklern verwendet, um eine App mithilfe von Dateien zu erweitern, die in der Webentwicklung verwendet werden. App-Benutzer müssen möglicherweise Webressourcen verwalten, die von einem Entwickler oder Designer bereitgestellt werden.  
 
 > [!TIP]
-> Eine ausführliche Diskussion zu Webressourcen finden Sie unter [Entwicklerdokumentation: Webressourcen für modellgesteuerte Apps](/powerapps/developer/model-driven-apps/web-resources).<br /> Informationen zu den Abhängigkeiten von Webressourcen, die in PowerApps hinzugefügt wurden, finden Sie unter [Entwicklerdokumentation: Abhängigkeiten von Webressourcen](/dynamics365/customer-engagement/developer/web-resources).
+> Eine ausführliche Diskussion zu Webressourcen finden Sie unter [Entwicklerdokumentation: Webressourcen für modellgesteuerte Apps](/powerapps/developer/model-driven-apps/web-resources).<br /> Informationen zu den Abhängigkeiten von Webressourcen, die in Power Apps hinzugefügt wurden, finden Sie unter [Entwicklerdokumentation: Abhängigkeiten von Webressourcen](/dynamics365/customer-engagement/developer/web-resources).
    
 <a name="BKMK_WhatAreWebResources"></a>
 

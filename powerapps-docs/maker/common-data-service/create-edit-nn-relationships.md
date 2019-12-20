@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90658adac8f04ea131968816a6004b4789ff42e4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 907a1147630cc779e6c1af7be2486548f1907c5a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757762"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865731"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>Überblick über die Erstellung von n:m-Entitätsbeziehungen
 
@@ -43,7 +43,7 @@ Es gibt zwei Ansicht, die Sie verwenden können, um 1:n (eine-zu-vielen) oder N:
 
 |Designer| Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [m:n-Entitätsbeziehungen in Common Data Service mit Hilfe des PowerApps-Portals erstellen](create-edit-nn-relationships-portal.md)|
+|[Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [m:n-Entitätsbeziehungen in Common Data Service mit Hilfe des Power Apps-Portals erstellen](create-edit-nn-relationships-portal.md)|
 |Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen.<br />Weitere Informationen: [Erstellen von m:n-Entitätsbeziehungen in Common Data Service mithilfe des Projektmappen-Explorers](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Es gibt zwei Ansicht, die Sie verwenden können, um 1:n (eine-zu-vielen) oder N:
 
 Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. 
 
-Sie sollten das PowerApps-Portal verwenden, um Viele-zu-viele (m:n)-Entitätsbeziehungen zu erstellen und zu bearbeiten, es sei den, Sie müssen eine der folgenden Anforderungen erfüllen:
+Sie sollten das Power Apps-Portal verwenden, um Viele-zu-viele (m:n)-Entitätsbeziehungen zu erstellen und zu bearbeiten, es sei den, Sie müssen eine der folgenden Anforderungen erfüllen:
 
 - Konfigurieren Sie Navigationsbereichsoptionen für modellgesteuerte Apps.
 - Verbergen Sie die Beziehung in der erweiterten Suche in modellgesteuerten Apps.
@@ -61,7 +61,7 @@ Sie sollten das PowerApps-Portal verwenden, um Viele-zu-viele (m:n)-Entitätsbez
 ## <a name="see-also"></a>Siehe auch
 
 [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)<br />
-[n:m-Entitätsbeziehungen in Common Data Service mit Hilfe des PowerApps-Portals erstellen](create-edit-nn-relationships-portal.md)<br />
+[n:m-Entitätsbeziehungen in Common Data Service mit Hilfe des Power Apps-Portals erstellen](create-edit-nn-relationships-portal.md)<br />
 [Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des Projektmappen-Explorers](create-edit-nn-relationships-solution-explorer.md)<br />
 [Entwicklerdokumentation: Entitätsbeziehungseignungsmetadaten anpassen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [Entwicklerdokumentation: Entitätsbeziehungseignung](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

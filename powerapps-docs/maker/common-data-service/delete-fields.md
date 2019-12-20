@@ -1,5 +1,5 @@
 ---
-title: Felder löschen in PowerApps | Microsoft-Dokumentation
+title: Felder löschen in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie Felder löschen
 ms.custom: ''
 ms.date: 06/20/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9438141001c4b3ce11bfe8c72bc14ec2866f3791
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 224c07600a13b0adf9cedd7592be7f1c2befec90
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705533"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864053"
 ---
 # <a name="delete-fields"></a>Felder löschen
 

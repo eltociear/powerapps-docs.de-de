@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 31b7d2b30a1ef83ca4400011d50854713cb260f6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 311bb23bac05ffc49be9366d281226fd755c8faa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748486"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862016"
 ---
 # <a name="component-implementation-library"></a>Komponentenimplementierungsbibliothek
 
-Die Komponentenbibliothek zu implementieren ist einer der wichtigen Schritte, wenn Sie Code-Komponenten mithilfe des PowerApps Component Framework entwickeln. Entwickler können die Komponentenbibliothek mithilfe von TypeScript implementieren. Jede Code-Komponente muss über eine Bibliothek verfügen, die die Definition einer Funktion umfasst, die ein Objekt zurückgibt, das die Methoden implementiert, die in der Code-Komponentenschnittstelle beschrieben werden. 
+Die Komponentenbibliothek zu implementieren ist einer der wichtigen Schritte, wenn Sie Code-Komponenten mithilfe des Power Apps Component Framework entwickeln. Entwickler können die Komponentenbibliothek mithilfe von TypeScript implementieren. Jede Code-Komponente muss über eine Bibliothek verfügen, die die Definition einer Funktion umfasst, die ein Objekt zurückgibt, das die Methoden implementiert, die in der Code-Komponentenschnittstelle beschrieben werden. 
 
 Das Objekt implementiert die folgenden Methoden:
 

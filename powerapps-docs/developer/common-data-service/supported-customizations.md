@@ -1,6 +1,6 @@
 ---
 title: Unterstützte Anpassungen für Common Data Service (Common Data Service) | Microsoft Docs
-description: Lesen Sie, wie Sie Common Data Service mit Hilfe von Tools anpassen können, die im Portal PowerApps verfügbar sind oder die in den Dokumenten beschrieben sind.
+description: Lesen Sie, wie Sie Common Data Service mit Hilfe von Tools anpassen können, die im Portal Power Apps verfügbar sind oder die in den Dokumenten beschrieben sind.
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e595ca13e4aac62861c6b00b5af0967ff1e9ad2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 38cf4a367c197649dde3e9f8737584f03c9b4a1a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748638"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883512"
 ---
 <!-- This is the portion of the old topic that applies to Common Data Service
 https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
@@ -28,22 +28,22 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-e
 
 # <a name="supported-customizations-for-common-data-service"></a>Unterstützte Anpassungen für Common Data Service.
 
-Sie können Common Data Service anpassen, indem Sie Werkzeuge verwenden, die im Portal PowerApps verfügbar sind oder die in der offiziellen Dokumentation beschrieben sind. Diese Anpassungen werden unterstützt und können aktualisiert werden.
+Sie können Common Data Service anpassen, indem Sie Werkzeuge verwenden, die im Portal Power Apps verfügbar sind oder die in der offiziellen Dokumentation beschrieben sind. Diese Anpassungen werden unterstützt und können aktualisiert werden.
 
 Anpassungen, die mit anderen Methoden als den hier beschriebenen Methoden vorgenommen werden, sind nicht unterstützt und können während Updates und Upgrades auf Common Data Service Probleme verursachen. Weitere Informationen finden Sie unter [Nicht unterstützte Anpassungen](#unsupported-customizations).
 
 Die Themen, die in technischen Artikeln auf Microsoft-Websites wie docs.microsoft.com, msdn.microsoft.com oder technet.microsoft.com veröffentlicht werden, werden unterstützt,sind jedoch möglicherweise nicht erweiterungsfähig.
 
 
-## <a name="customizations-using-powerapps-portal"></a>Anpassungen über das Portal PowerApps vornehmen
+## <a name="customizations-using-power-apps-portal"></a>Anpassungen über das Portal Power Apps vornehmen
 
-Es gibt eine Reihe von Tools, die in Common Data Service enthalten sind und die Sie für die Anpassung verwenden können. Anpassungen, die mit den PowerApps-Portalwerkzeugen und der Webanwendung vorgenommen werden, werden vollständig unterstützt und sind vollständig erweiterbar.
+Es gibt eine Reihe von Tools, die in Common Data Service enthalten sind und die Sie für die Anpassung verwenden können. Anpassungen, die mit den Power Apps-Portalwerkzeugen und der Webanwendung vorgenommen werden, werden vollständig unterstützt und sind vollständig erweiterbar.
 
 Die folgenden Anpassungsmethoden können verwendet werden, um vollständig unterstützte Anpassungen zu erstellen:
 
-- Anpassung im Portal PowerApps oder im Solution Explorer. Weitere Informationen finden Sie unter [Was ist Common Data Service?](../../maker/common-data-service/data-platform-intro.md).
+- Anpassung im Portal Power Apps oder im Solution Explorer. Weitere Informationen finden Sie unter [Was ist Common Data Service?](../../maker/common-data-service/data-platform-intro.md).
 
-- Einstellungen in der Webanwendung. Weitere Informationen finden Sie unter [Administration PowerApps](../../administrator/admin-guide.md).
+- Einstellungen in der Webanwendung. Weitere Informationen finden Sie unter [Administration Power Apps](../../administrator/admin-guide.md).
 
 - Reporting Services. Weitere Informationen finden Sie unter [Berichte zu Ihrer modellgesteuerten Anwendung hinzufügen](/powerapps/maker/model-driven-apps/add-reporting-to-app).
 

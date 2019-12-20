@@ -23,15 +23,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3d1ea2b05abb592ec6d2925e813cd213b5b7492a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5ea6ed1011ce9d21c78adf6beed9a2943c9f4cd0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706149"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860453"
 ---
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>Einbetten eines Power BI-Berichts in ein modellgestütztes Systemformular
-Sie können Power BI-Berichte in PowerApps-Modell-basierten Anwendungen verwenden, um Ihren Systemformen umfangreiche Berichte und Analysen zu liefern und Ihre Benutzer zu befähigen, mehr zu erreichen. Dadurch erhalten Sie die Möglichkeit, Daten über Systeme hinweg freizugeben und bis hin zum Kontext eines einzelnen Datensatzes anzupassen.
+Sie können Power BI-Berichte in Power Apps-Modell-basierten Anwendungen verwenden, um Ihren Systemformen umfangreiche Berichte und Analysen zu liefern und Ihre Benutzer zu befähigen, mehr zu erreichen. Dadurch erhalten Sie die Möglichkeit, Daten über Systeme hinweg freizugeben und bis hin zum Kontext eines einzelnen Datensatzes anzupassen.
  
 ## <a name="prerequisites"></a>Voraussetzungen
 Das Einbetten von Power BI-Inhalt ist eine optionale Funktion und auf allen Umgebung standardmäßig deaktiviert. Sie müssen sie aktivieren, bevor Sie Power BI-Inhalt einbetten können. Weitere Informationen: [Aktivieren von Power BI-Visualisierungen in der Organisation](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
@@ -127,14 +127,14 @@ Diese Tabelle beschreibt alle zusätzlichen Eigenschaften, die im vorherigen Bei
     }
 ```
 
-Der Zielanteil des vorherigen Ausdrucks identifiziert die Tabelle und die und die Spalte, auf die der Filter angewendet wird. Der Bediener identifiziert die Logik und Werte identifizieren die von der PowerApps modellgetriebenen App übergebenen Daten. Für eine generelle Parameterisierung werden die Werte durch Verwendung von Alias erstellt. Im letzten Ausdruck werden die Werte von **Vorname** und **Nachname** einer Firma übergeben, und einer davon wird in der Spalte **Firmenname** im Power BI-Bericht gesucht. Beachten Sie, dass **Vorname** und **Nachname** die eindeutigen Namen von Attributen der Firmenentität sind, deren Wert hier übergeben wird. 
+Der Zielanteil des vorherigen Ausdrucks identifiziert die Tabelle und die und die Spalte, auf die der Filter angewendet wird. Der Bediener identifiziert die Logik und Werte identifizieren die von der Power Apps modellgetriebenen App übergebenen Daten. Für eine generelle Parameterisierung werden die Werte durch Verwendung von Alias erstellt. Im letzten Ausdruck werden die Werte von **Vorname** und **Nachname** einer Firma übergeben, und einer davon wird in der Spalte **Firmenname** im Power BI-Bericht gesucht. Beachten Sie, dass **Vorname** und **Nachname** die eindeutigen Namen von Attributen der Firmenentität sind, deren Wert hier übergeben wird. 
 
 Sie können auch komplexere Filterausdrücke erstellen, indem Sie sich Beispiele für das [Erstellen von Filtern](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#contructingfilters) ansehen und die entsprechenden Werte für $schema und filterType zur Verfügung stellen. Stellen Sie sicher, jedes Literal im Filterteil mit *\"* zu umgeben, damit das JSON ordnungsgemäß generiert wird.
 
 ## <a name="known-issues-and-limitations"></a>Bekannte Probleme und Einschränkungen
 1. Diese Integration ist nur im Client der einheitlichen Oberfläche, auf unterstützten Webbrowsern und mobilen Geräten verfügbar.
-2. Das Öffnen dieses Formulars im PowerApps-Formulardesigner zeigt das Control nicht sinnvoll an. Dies geschieht, weil das Steuerelement nicht außerhalb des Formular-Designers angepasst wird.
-3. Die Benutzer werden automatisch mit ihrem PowerApps Benutzernamen und Passwort bei Power BI authentifiziert. Wenn kein Power BI-Konto mit passenden Anmeldeinformationen vorhanden ist, wird eine Anmeldeaufforderung angezeigt, wie hier dargestellt. 
+2. Das Öffnen dieses Formulars im Power Apps-Formulardesigner zeigt das Control nicht sinnvoll an. Dies geschieht, weil das Steuerelement nicht außerhalb des Formular-Designers angepasst wird.
+3. Die Benutzer werden automatisch mit ihrem Power Apps Benutzernamen und Passwort bei Power BI authentifiziert. Wenn kein Power BI-Konto mit passenden Anmeldeinformationen vorhanden ist, wird eine Anmeldeaufforderung angezeigt, wie hier dargestellt. 
 
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-1.png "Embed-powerbi-report-in-system-form-auth-1")
@@ -147,13 +147,13 @@ Sie können auch komplexere Filterausdrücke erstellen, indem Sie sich Beispiele
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-3.png "Embed-powerbi-report-in-system-form-auth-3")
 
-5. Die Ansicht der in PowerApps angezeigten Berichtsdaten ist die gleiche wie in Power BI, und PowerApps Sicherheitsrollen und -privilegien haben keinen Einfluss auf die angezeigten Daten. Daher werden sind die Daten im Wesentlichen identisch zu dem, was der Ersteller des Power BI-Datensatzes sehen würde. Um Datenzugriffsbeschränkungen ähnlich wie bei PowerApps Sicherheitsrollen und -teams anzuwenden, verwenden Sie [Row-Level Security (RLS) mit Power BI](https://docs.microsoft.com/power-bi/service-admin-rls).
+5. Die Ansicht der in Power Apps angezeigten Berichtsdaten ist die gleiche wie in Power BI, und Power Apps Sicherheitsrollen und -privilegien haben keinen Einfluss auf die angezeigten Daten. Daher werden sind die Daten im Wesentlichen identisch zu dem, was der Ersteller des Power BI-Datensatzes sehen würde. Um Datenzugriffsbeschränkungen ähnlich wie bei Power Apps Sicherheitsrollen und -teams anzuwenden, verwenden Sie [Row-Level Security (RLS) mit Power BI](https://docs.microsoft.com/power-bi/service-admin-rls).
 6. Wenn das Formular den Power BI-Bericht nach dem Import der Lösung und der Veröffentlichung von Anpassungen nicht anzeigt, öffnen Sie ihn im modellgesteuerten Formular-Editor und speichern Sie ihn, damit das Formular-JSON erneut erstellt wird.
 
 
 ### <a name="see-also"></a>Siehe auch
 
-[Einbetten eines Power BI Dashboards in ein PowerApps modellgetriebenes persönliches Dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[Einbetten eines Power BI Dashboards in ein Power Apps modellgetriebenes persönliches Dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
 [Verwenden Sie Power BI mit Dynamics 365 Apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 

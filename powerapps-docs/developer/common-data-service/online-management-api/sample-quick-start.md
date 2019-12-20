@@ -12,12 +12,12 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 8b900ff8a1d4eae9664289cdcb96e53a453579ad
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 520079abf73c0367628de3bca01b316554b3af8c
+ms.sourcegitcommit: 8f32eed48adf4b24b9ca607bbf6db3d19749c46f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748554"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "2830525"
 ---
 # <a name="quick-start-sample-retrieve-common-data-service-environements-using-online-management-api"></a>Schnellstartbeispiel: Abrufen von Common Data Service-Umgebungen über die Online Management API 
 
@@ -45,7 +45,7 @@ Bevor Sie dieses Beispiel ausführen können, stellen Sie sicher, dass Sie über
 - .NET Framework 4.6.2
 
 Um das Beispiel auszuführen:
-1. [Laden Sie herunter](https://code.msdn.microsoft.com/Sample-Retrieve-Customer-94e4076d) das Beispiel, und extrahieren Sie es.
+1. [Laden Sie herunter](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/online-management-api) das Beispiel, und extrahieren Sie es.
 2. Doppelklicken Sie auf die Visual Studio-Lösungsdatei (.sln) unter dem C#-Ordner an der extrahierten Speicherort, um die Lösung in Visual Studio zu öffnen.
 3. In der Datei **Programs.cs** geben Sie eine weitere URL Service an, wenn die Region nicht Nordamerika ist. Eine Liste der Service-URL-Werte für weltweite Regionen, siehe [Service-URL](get-started-online-management-api.md#service-url).
     ```csharp

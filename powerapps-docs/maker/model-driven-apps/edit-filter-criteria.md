@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten der Filterkriterien und Ändern der Sortierreihenfolge in modellgesteuerten App-Ansichten mit PowerApps | Microsoft-Dokumentation
+title: Bearbeiten der Filterkriterien und Ändern der Sortierreihenfolge in modellgesteuerten App-Ansichten mit Power Apps | Microsoft-Dokumentation
 description: Informationen zum Bearbeiten der Filterkriterien und Ändern der Sortierreihenfolge in Ansichten
 ms.custom: ''
 ms.date: 06/13/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 84ffba9df7eb09d6bc895fa10187eb000746b835
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8a2a5eabcae5c6e9829104927a0013aa60799558
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704081"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868553"
 ---
 # <a name="edit-filter-criteria-and-change-sort-order-in-model-driven-app-views"></a>Bearbeiten der Filterkriterien und Ändern der Sortierreihenfolge in modellgesteuerten App-Ansichten
 

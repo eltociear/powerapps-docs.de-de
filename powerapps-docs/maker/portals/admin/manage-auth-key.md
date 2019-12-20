@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 31632f4de1834855c696baa1b4b651ed777c8abd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 82245371095e523ba9221fc43ce21564e0445103
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709713"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862654"
 ---
 # <a name="connect-to-a-common-data-service-environment-using-a-portal"></a>Ein Portal mit einer Common Data Service-Umgebung verbinden
 
@@ -24,7 +24,7 @@ Ein Portal stellt eine Verbindung mit einer Common Data Service-Umgebung mit Hil
 
 Jedem Portal ist eine separate Azure Active Directory-Anwendung zugeordnet, ungeachtet dessen, ob es mit derselben Common Data Service-Umgebung verbunden ist. Der standardmäßige Azure Active Directory-Authentifizierungsanbieter, der für ein Portal erstellt ist, verwendet dieselbe Azure Active Directory-Anwendung, um das Portal zu authentifizieren. Die Autorisierung wird durch Webrollen erzwungen, die dem Benutzer zugewiesen werden, der auf das Portal zugreift.
 
-Sie können die zugeordneten Portalanwendung in Azure Active Directory sehen. Der Name dieser Anwendung wird Microsoft CRM-Portale sein, und die Portal-ID befindet sich im Feld **App-ID-URI** in der Azure Active Directory-Anwendung. Die Person, die das Portal bereitstellt, besitzt diese Anwendung. Sie dürfen diese Anwendung nicht löschen oder ändern. Anderenfalls zerstören Sie möglicherweise die Portalfunktionen. Sie müssen der Anwendungsbesitzer sein, um ein Portal aus dem Admin-Center für PowerApps-Portale zu verwalten.
+Sie können die zugeordneten Portalanwendung in Azure Active Directory sehen. Der Name dieser Anwendung wird Microsoft CRM-Portale sein, und die Portal-ID befindet sich im Feld **App-ID-URI** in der Azure Active Directory-Anwendung. Die Person, die das Portal bereitstellt, besitzt diese Anwendung. Sie dürfen diese Anwendung nicht löschen oder ändern. Anderenfalls zerstören Sie möglicherweise die Portalfunktionen. Sie müssen der Anwendungsbesitzer sein, um ein Portal aus dem Admin-Center für Power Apps-Portale zu verwalten.
 
 ## <a name="authentication-key"></a>Authentifizierungsschlüssel
 
@@ -35,16 +35,16 @@ Damit ein Portal eine Verbindung mit Common Data Service unter Verwendung einer 
 
 ### <a name="authentication-key-details"></a>Schlüsseldetails zur Authentifizierung
 
-Die Details eines Authentifizierungsschlüssels werden im Admin-Center und Portal für PowerApps-Portale angezeigt.
+Die Details eines Authentifizierungsschlüssels werden im Admin-Center und Portal für Power Apps-Portale angezeigt.
 
-**Admin-Center für PowerApps-Portale**
+**Admin-Center für Power Apps-Portale**
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2. Wählen Sie **Portalauthentifizierungsschlüssel verwalten** aus. Der Authentifizierungsschlüssel wird zusammen mit seinem Ablaufdatum und Fingerabdruck angezeigt.
 
    > [!div class=mx-imgBorder]
-   > ![Authentifizierungsschlüsseldetails im PowerApps-Portal-Administratorcenter](../media/manage-auth-key.png "Authentifizierungsschlüsseldetails im PowerApps-Portal-Administratorcenter")
+   > ![Authentifizierungsschlüsseldetails im Power Apps-Portal-Administratorcenter](../media/manage-auth-key.png "Authentifizierungsschlüsseldetails im Power Apps-Portal-Administratorcenter")
 
 **Portal**
 
@@ -60,7 +60,7 @@ Die Details eines Authentifizierungsschlüssels werden im Admin-Center und Porta
 
 ### <a name="authentication-key-expiration-notification"></a>Benachrichtigung über den Ablauf des Authentifizierungsschlüssels
 
-Bevor der Authentifizierungsschlüssel abläuft, werden Sie per E-Mails, Admin-Center der PowerApps-Portale und Portal benachrichtigt.
+Bevor der Authentifizierungsschlüssel abläuft, werden Sie per E-Mails, Admin-Center der Power Apps-Portale und Portal benachrichtigt.
 
 **Email**
 
@@ -88,12 +88,12 @@ Außerdem werden Sie benachrichtigt, nachdem der Schlüssel abgelaufen ist, und 
 > - Intervalle werden in UTC ab dem Schlüsselablaufdatum berechnet.
 > - Die E-Mail kann nicht zu genau den oben aufgelisteten Intervallen garantiert werden. Eine E-Mail-Benachrichtigung kann sich verzögern oder verpasst werden. Stellen Sie sicher, dass Sie auch online das Schlüsselablaufdatum überprüfen.
 
-**Admin-Center für PowerApps-Portale**
+**Admin-Center für Power Apps-Portale**
 
 Eine Nachricht über das Schlüsselablaufdatum wird oben auf der Seite angezeigt.
 
 > [!div class=mx-imgBorder]
-> ![Authentifizierungsschlüsselbenachrichtigung im PowerApps-Portal-Administratorcenter](../media/portal-admin-center-auth-notif.png "Authentifizierungsschlüsselbenachrichtigung im PowerApps-Portal-Administratorcenter")
+> ![Authentifizierungsschlüsselbenachrichtigung im Power Apps-Portal-Administratorcenter](../media/portal-admin-center-auth-notif.png "Authentifizierungsschlüsselbenachrichtigung im Power Apps-Portal-Administratorcenter")
 
 **Portal**
 
@@ -112,7 +112,7 @@ Sie müssen den Schlüssel alle zwei Jahre erneuern, um sicherzustellen, dass Ih
 > [!NOTE]
 > Um den Schlüssel zu erneuern, müssen Sie über Berechtigungen zur Verwaltung Ihres Portale verfügen.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2. Wählen Sie **Portalauthentifizierungsschlüssel verwalten** aus. Der Authentifizierungsschlüssel wird zusammen mit seinem Ablaufdatum und Fingerabdruck angezeigt.
 

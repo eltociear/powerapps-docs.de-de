@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 15ba73e097a03b1fd1b200f3653f169ec5afaf7f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9b9936cccd243213f785cf65b7dc2d94cfaa1763
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754587"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895132"
 ---
 # <a name="walkthrough-write-your-first-client-script"></a>Exemplarische Vorgehensweise: Schreiben des ersten Clientskripts
 
@@ -38,7 +38,7 @@ Wir lenken Ihre Aufmerksamkeit auf wichtige Fakten und verweisen gegebenenfalls 
 
 Der erste Schritt besteht darin, das betriebswirtschaftliche Problem zu ermitteln, dem Sie sich mit dem Clientskript widmen wollen. Nach dem Identifizieren müssen Sie einen JavaScript-Code schreiben, der die angepasste Geschäftslogik enthält, die sich dem Geschäftsproblem widmet. 
 
-modellgesteuerte Apps bieten keinen JavaScript-Editor. Sie können also ein externes Autorenwerkzeug verwenden, das Funktionen zur Verfügung stellt, die das Bearbeiten von JavaScript-Dateien gezielt unterstützen, wie z.B. [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript), oder [Microsoft Visual Studio](https://docs.microsoft.com/scripting/javascript/).
+Modellgesteuerte Apps bieten keinen JavaScript-Editor. Sie können also ein externes Autorenwerkzeug verwenden, das Funktionen zur Verfügung stellt, die das Bearbeiten von JavaScript-Dateien gezielt unterstützen, wie z.B. [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript), oder [Microsoft Visual Studio](https://docs.microsoft.com/scripting/javascript/).
 
 Sie können den gesamten Beispiel-Code dieser exemplarischen Vorgehensweise später einsehen.
 

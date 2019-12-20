@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: da8e6ac6d4e86a12ba196393073706c3705e4a92
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: efc0ea8449e387d292063f16ee6e38f69863267c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756122"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867233"
 ---
 # <a name="restrict-portal-access-by-ip-address"></a>Einschränken des Portalzugriffs mit IP-Adressen
 
@@ -39,7 +39,7 @@ Wenn Sie eine IP-Adresse einer Einschränkungsliste hinzufügen, ist das Portal 
 > [!NOTE]
 > Sie müssen einen öffentlichen IP-Adresse angeben, auf die über das Portal zugegriffen werden kann. Auf Private IP-Adresse kann nicht über das Portal zugegriffen werden.
 
-1.  Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1.  Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2.  Gehen Sie zu **IP-Adresseinschränkung einrichten** Eine Liste von IP-Adressen und ihr Typ wird angezeigt.
 
@@ -63,7 +63,7 @@ Wenn Sie eine IP-Adresse einer Einschränkungsliste hinzufügen, ist das Portal 
 
 Um den Zugriff in einem Portal von einer zuvor zulässigen IP-Adresse zu entfernen, können Sie die IP-Adresse aus der Liste entfernen. Wenn Sie alle IP-Adresse entfernen, ist ist das Portal von allen IP-Adressen aus verfügbar.
 
-1.  Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1.  Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2.  Gehen Sie zu **IP-Adresseinschränkung einrichten** Eine Liste von IP-Adressen und ihr Typ wird angezeigt.
 

@@ -1,6 +1,6 @@
 ---
 title: Entwickler-Tools (modellgesteuerte Anwendungen) | Microsoft Docs
-description: Enthält Informationen über die von der Community entwickelten Tools, die Sie mit modellgesteuerten Apps in PowerApps verwenden können.
+description: Enthält Informationen über die von der Community entwickelten Tools, die Sie mit modellgesteuerten Apps in Power Apps verwenden können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1288b04acee069345f15efbc3925229315fd83f7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 62bb1bd34fe5f6c20f385e22d2c41155762c2720
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748755"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883448"
 ---
 # <a name="developer-tools"></a>Entwicklertools
 

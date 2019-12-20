@@ -14,12 +14,12 @@ search.audienceType:
 - customizer
 search.app:
 - PowerApps
-ms.openlocfilehash: b9c0f192f96d9ce967d1b8e56266aadeb64646c9
-ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.openlocfilehash: bd40b60a82735d2bddb3629c8b34647df9e34857
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2768285"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875408"
 ---
 # <a name="create-guided-help-learning-path-for-your-app"></a>Erstellen eines interaktiven Begleiters (Lernpfads) für Ihre App
 
@@ -44,7 +44,7 @@ Der Lernpfad erleichtert das Lernen und die Akzeptanz von Apps und organisatoris
 
  Zum Erstellen von Lernpfadinhalt müssen Sie:  
 
-- PowerApps oder [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)] verwenden.  
+- Power Apps oder [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)] verwenden.  
 
 - Sich für Lernpfad angemeldet haben. Diese Einstellung ist standardmäßig aktiviert, kann aber deaktiviert worden sein.  
 
@@ -64,7 +64,7 @@ Der Lernpfad erleichtert das Lernen und die Akzeptanz von Apps und organisatoris
 ## <a name="turn-on-learning-path-for-your-organization"></a>Lernpfad für Ihre Organisation aktivieren  
  Lernpfad ist eine Zusatzeinrichtung, die für Ihre Organisation aktiviert oder deaktiviert werden kann. Sie können in [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] enthaltene Lernpfadinhalte anzeigen, Ihre eigenen Lernpfadinhalte für Benutzer erstellen oder beides tun.  
 
-1. Melden Sie sich mit einem Administratorkonto bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] an.  
+1. Melden Sie sich mit einem Administratorkonto bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] an.  
 
 2. Gehen Sie zu **Einstellungen** und wählen Sie dann **Verwaltung** unter **System** aus. Weitere Informationen: [Einstellungen](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
@@ -133,7 +133,7 @@ Der Lernpfad erleichtert das Lernen und die Akzeptanz von Apps und organisatoris
 <a name="ConfigureRoles"></a>   
 #### <a name="configure-security-roles"></a>Sicherheitsrollen konfigurieren  
 
-1. Melden Sie sich bei PowerApps mit einem Konto an, das Lernpfad-Erstellungsberechtigungen hat.  
+1. Melden Sie sich bei Power Apps mit einem Konto an, das Lernpfad-Erstellungsberechtigungen hat.  
 
 2. Öffnen Sie die **Inhaltsbibliothek**.  
 

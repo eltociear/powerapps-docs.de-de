@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: d660b570963cb57ac97426f35eb826a1bc9678c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4667a328775a41b254f80250caebaf88a8110a9f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757222"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866485"
 ---
 # <a name="work-with-liquid-templates"></a>Verwenden von Liquid-Vorlagen
 
@@ -22,9 +22,9 @@ Liquid ist eine Open Source-Vorlagensprache, die in Portale integriert ist. Füg
 
 - Fügen Sie dynamischen Inhalt direkt in das **Kopieren**-Feld einer Webseite oder den Inhalt von einem [Inhaltsausschnitt](../configure/customize-content-snippets.md) ein.  
 
-- [Speichern Sie Quellinhalt mithilfe von Webvorlagen](store-content-web-templates.md) vollständig durch Konfiguration in PowerApps zur Verwendung im PowerApps-Portalinhalt-Verwaltungssystem.  
+- [Speichern Sie Quellinhalt mithilfe von Webvorlagen](store-content-web-templates.md) vollständig durch Konfiguration in Power Apps zur Verwendung im Power Apps-Portalinhalt-Verwaltungssystem.  
 
-- [Rendern Sie eine Websitekopfzeile und eine primary Navigationsleiste](render-site-header-primary-navigation.md) vollständig durch Konfiguration in PowerApps.  
+- [Rendern Sie eine Websitekopfzeile und eine primary Navigationsleiste](render-site-header-primary-navigation.md) vollständig durch Konfiguration in Power Apps.  
 
 
 ### <a name="see-also"></a>Siehe auch

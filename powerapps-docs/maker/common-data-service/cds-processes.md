@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24e1ed3f2c2836bef1d861a2ef6b4b1f61dc09b9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ee7770528f104d383bbf2f1b6c810d261334800
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702629"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2780300"
 ---
 # <a name="apply-business-logic-in-common-data-service"></a>Geschäftslogik anwenden in Common Data Service
 
@@ -36,7 +36,7 @@ Definieren Sie *Geschäftsregeln* für eine Entität, die für alle Entitätsfor
 > [!NOTE]
 > Um eine Geschäftsregel zu definieren, die für ein Formular in einer modellgesteuerten Anwendung gilt, siehe [Geschäftsregeln für ein modellgesteuertes App-Formular](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md) erstellen.
 
-Sie können auch die klassischen Common Data Service-Prozesse verwenden, also Workflows und Aktionen. Weitere Informationen: [Microsoft FlowVerwendung von Workflowprozessen](/flow/workflow-processes) und [Microsoft Flow: Aktionsübersicht](/flow/actions).
+Sie können auch die klassischen Common Data Service-Prozesse verwenden, also Workflows und Aktionen. Weitere Informationen: [Power AutomateVerwendung von Workflowprozessen](/flow/workflow-processes) und [Power Automate: Aktionsübersicht](/flow/actions).
 
 ## <a name="see-also"></a>Siehe auch
 

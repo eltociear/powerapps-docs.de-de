@@ -9,25 +9,25 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 240af2f54e153490794358dc1598b72a16fe1c38
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 998a233f5051c1445d56dbeeba1f2d7faff5811d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757178"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862310"
 ---
 # <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>Erstellen einer benutzerdefinierte Seitenvorlage zum Rendern eines RSS-Feed
 In diesem Beispiel erstellen wir eine benutzerdefinierte Seitenvorlage, um einen [RSS-Feed](https://en.wikipedia.org/wiki/RSS) neuer Artikel mithilfe von Liquid und einer Webvorlage-Seitenvorlage zu rendern. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Quellinhalt mithilfe von Webvorlagen speichern](store-content-web-templates.md)  
 
-## <a name="step-1-create-a-new-powerapps-view"></a>Schritt 1: Erstellen einer neuen PowerApps-Ansicht
+## <a name="step-1-create-a-new-power-apps-view"></a>Schritt 1: Erstellen einer neuen Power Apps-Ansicht
 
-Zunächst erstellen wir eine neue PowerApps-Ansicht die wir verwenden, um die Daten für unseren Feed zu laden. In diesem Beispiel erstellen wir eine Ansicht auf Webseiten und verwenden diese Entität, um unsere Artikel zu speichern. Es können diese Ansicht verwenden, um den Filter und der Sortierung der Ergebnisse zu konfigurieren als Spalten und schließen welche Entitätsattribute ein, die wir in unserer Vorlage zur flüssigen soll.
+Zunächst erstellen wir eine neue Power Apps-Ansicht die wir verwenden, um die Daten für unseren Feed zu laden. In diesem Beispiel erstellen wir eine Ansicht auf Webseiten und verwenden diese Entität, um unsere Artikel zu speichern. Es können diese Ansicht verwenden, um den Filter und der Sortierung der Ergebnisse zu konfigurieren als Spalten und schließen welche Entitätsattribute ein, die wir in unserer Vorlage zur flüssigen soll.
 
 ![Bearbeiten einer Seitenvorlage](../media/edit-page-template.png "Bearbeiten einer Seitenvorlage")  
 
 ## <a name="step-2-create-a-web-template-for-rss-feed"></a>Schritt 2: Erstellen einer Webvorlage für einen RSS-Feed
 
-In diesem Schritt erstellen wir eine Webvorlage für unseren RSS-Feed. Diese Vorlage wird auf eine bestimmte Webseite in unserer Website angewendet, somit verwenden wir den Titel und die Zusammenfassung dieser Seite als Titel und Beschreibung des Feeds. Wir verwenden den Tag „entityview”, um unsere neu erstellte Ansicht „Neue Artikell” zu laden. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [PowerApps common data service Entitäts-Tags](portals-entity-tags.md). Beachten Sie, dass wir auch das Feld **MIME-Typ** der Webvorlage auf „application/rss+xml” festgelegt haben. Dadurch wird angegeben, welche Leistungen dem Warteinhaltstyp sein könnte, wenn wir unsere Vorlage gerendert wird.  
+In diesem Schritt erstellen wir eine Webvorlage für unseren RSS-Feed. Diese Vorlage wird auf eine bestimmte Webseite in unserer Website angewendet, somit verwenden wir den Titel und die Zusammenfassung dieser Seite als Titel und Beschreibung des Feeds. Wir verwenden den Tag „entityview”, um unsere neu erstellte Ansicht „Neue Artikell” zu laden. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Power Apps common data service Entitäts-Tags](portals-entity-tags.md). Beachten Sie, dass wir auch das Feld **MIME-Typ** der Webvorlage auf „application/rss+xml” festgelegt haben. Dadurch wird angegeben, welche Leistungen dem Warteinhaltstyp sein könnte, wenn wir unsere Vorlage gerendert wird.  
 
 ![Eine Webvorlage für einen RSS-Feed konfigurieren](../media/web-template-rss-feed.png "Eine Webvorlage für einen RSS-Feed konfigurieren")  
 
@@ -67,7 +67,7 @@ Jetzt bleibt nur noch, eine neue Webseite mit der RSS-Feed-Vorlage zu erstellen,
 
 ![Beispiel eines RSS-Feed](../media/rss-feed-example.png "Beispiel eines RSS-Feed")  
 
-In diesem Beispiel gesehen haben wir, wie wir Flüssigkeit, Internet-Vorlagen, PowerApps-Ansichten Funktionen zur Inhaltsverwaltung in Portalen kombinieren können, um einen angepassten RSS-Feed zu erstellen. Die Kombination dieser Funktionen wird jeder Portal-Anwendung leistungsstarke Anpassungsmöglichkeiten hinzu.
+In diesem Beispiel gesehen haben wir, wie wir Flüssigkeit, Internet-Vorlagen, Power Apps-Ansichten Funktionen zur Inhaltsverwaltung in Portalen kombinieren können, um einen angepassten RSS-Feed zu erstellen. Die Kombination dieser Funktionen wird jeder Portal-Anwendung leistungsstarke Anpassungsmöglichkeiten hinzu.
 
 ### <a name="see-also"></a>Siehe auch
 

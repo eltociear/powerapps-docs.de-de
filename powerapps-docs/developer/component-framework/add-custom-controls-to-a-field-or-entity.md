@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 63ecdde21328219b70af04b9b65edbb3073f3025
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 89dacd67f5a7876f7fd0950d0bba4cd60218f296
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748487"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862024"
 ---
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>Hinzufügen von Codekomponenten zu einem Feld oder einer Entität in modellgesteuerten Apps
 
@@ -27,13 +27,13 @@ Mit Codekomponenten können Sie Felder transformieren, die üblicherweise Text i
 
 ## <a name="add-a-code-component-to-a-field"></a>Hinzufügen einer Codekomponente zu einem Feld
 
-Durch Ausführen der Schritte in diesem Verfahren werden die Standardbezeichnung und das Textfeld im Feld **Budgetbetrag** in die Schieberegler-Codekomponente in der Entität „Geschäftschance” geändert. Sie können ähnliche Schritte verwenden, um ein vorhandenes Feld durch eine Codekomponente zu ersetzen oder eine Codekomponente für ein benutzerdefiniertes Feld zu konfigurieren.
+Das Ausführen der Schritte unten ändert die Standardbezeichnung und das Textfeld im **Budgetbetrag**-Feld auf die benutzerdefinierte Schiebreglerkomponente in der Entität Verkaufschance. Sie können ähnliche Schritte verwenden, um ein vorhandenes Feld durch eine Codekomponente zu ersetzen oder eine Codekomponente für ein benutzerdefiniertes Feld zu konfigurieren.
 
 1. Öffnen Sie den Projektmappen-Explorer.
 
 2. Erweitern Sie **Entitäten**, erweitern Sie die Entität, wie die Entität **Verkaufschance**, wählen Sie **Formulare**, und öffnen dann ein Formular wie das Formular **Hauptformular**.
 
-3. Klicken Sie zweimal im Formulareditor in das Feld, in dem Sie eine Codekomponente hinzufügen möchten, z. B. in das Feld **Budgetbetrag** im Geschäftschance-Hauptformular. Sie können ein benutzerdefiniertes Feld erstellen.
+3. Klicken Sie zweimal im Formulareditor in das Feld, in dem Sie eine Codekomponente hinzufügen möchten, z. B. in das Feld **Budgetbetrag** im Geschäftschance-Hauptformular. Sie können auch ein benutzerdefiniertes Feld erstellen.
 
 4. Klicken Sie auf der Seite **Feldeigenschaften** auf die Registerkarte **Steuerelemente**, und klicken Sie dann auf **Steuerelement hinzufügen**.
 
@@ -68,7 +68,7 @@ Durch Ausführen der Schritte in diesem Verfahren werden die Standardbezeichnung
   
    - **Schritt**. Stellt die Einheit für das Erhöhen oder Verringern dar, wenn vom aktuellen Wert abgezogen oder zu diesem hinzugefügt wird. Beispielsweise können Sie für den Budgetbetrag 100 Dollar Erhöhung\Verringerung auswählen.  
   
-   - **Standardsteuerelement ausblenden**. Durch die Auswahl der Option wird die Komponente ausgeblendet. Also werden weder die Komponente noch die Daten in einem der Clients angezeigt, die diese Codekomponente nicht unterstützen.   
+   - **Standardsteuerelement ausblenden**. Durch die Auswahl der Option wird die Komponente ausgeblendet. Also werden weder die Komponente noch die Daten in einem der Clients angezeigt, die diese benutzerdefinierte Code-Komponente nicht unterstützen.   
   
 8. Klicken Sie auf **OK**, um die Seite "Feldeigenschaften" zu schließen.  
   
@@ -97,5 +97,5 @@ Um eine Codekomponente wie die Datensatz-Komponente oder eine einfache Tabellenk
 ### <a name="see-also"></a>Siehe auch
 
 [Implementieren von Komponenten in TypeScript](implementing-controls-using-typescript.md)<br/>
-[PowerApps component framework API-Referenz](reference/index.md)<br/>
-[Übersicht über das PowerApps component framework](overview.md)
+[Power Apps component framework-API-Referenz](reference/index.md)<br/>
+[Power Apps component framework Übersicht](overview.md)

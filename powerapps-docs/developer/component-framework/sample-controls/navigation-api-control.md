@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 85dd665f7a3dc92b5198cfd8429b59af0896d5cc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8a6db9ca3f6eb34cee3c9d45d1d9917f4b33115d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748311"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861936"
 ---
 # <a name="implementing-navigation-api-component"></a>Implementieren der Navigations-API-Komponente
 
-Diese Beispielkomponente untersucht die verschiedenen Methoden, die als Teil der Formatierungs-API des PowerApps component framework zur Verfügung stehen. Im vorliegenden Beispiel, erstellen Sie eine Reihe von Eingabeelementen des Typs Schaltfläche , die in die jeweiligen Methoden der Navigations-API anrufen, die dem angezeigten Wert entsprechen.  
+Diese Beispielkomponente untersucht die verschiedenen Methoden, die als Teil der Formatierungs-API des Power Apps component framework zur Verfügung stehen. Im vorliegenden Beispiel, erstellen Sie eine Reihe von Eingabeelementen des Typs Schaltfläche , die in die jeweiligen Methoden der Navigations-API anrufen, die dem angezeigten Wert entsprechen.  
 
 > [!div class="mx-imgBorder"]
 > ![Navigations-API-Komponente](../media/navigation-api-control.png "Navigations-API-Komponente")
@@ -52,7 +52,7 @@ Modellgestützte Apps
 ```TypeScript
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
 export class TSNavigationAPI implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-// PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens. 
+// Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens. 
 private _notifyOutputChanged: () => void;
 // Reference to the div element that hold together all the HTML elements that we are creating as part of this control
 private divElement: HTMLDivElement;
@@ -245,6 +245,7 @@ In diesem Beispiel wird ein neues Fenster geöffnet und die microsoft.com home p
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten verwenden](../use-sample-components.md)<br/>
+[Power Apps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)
 

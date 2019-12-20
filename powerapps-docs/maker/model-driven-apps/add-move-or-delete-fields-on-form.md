@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eaa02abdc4c85d4d6abd5e5ca3afe176144c4027
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d711a46676003786363f3496515dbd387024dadb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701529"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860658"
 ---
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>Hinzufügen, Konfigurieren, Verschieben oder Löschen von Feldern in einem Formular  
 Sie können Felder mithilfe des Formulardesigners hinzufügen, konfigurieren, verschieben oder löschen.
@@ -123,7 +123,7 @@ Sie können Felder in einem Formular entweder per Drag & Drop oder durch Ausschn
 5. Wählen Sie im Dialogfeld **Neues Feld** die Option **Datentyp** aus, und konfigurieren Sie alle weiteren erforderlichen Eigenschaften des Felds.
 
      > [!NOTE]
-     >   -  Einige Feldtypen sind nicht verfügbar, wenn Sie ein Feld im Formulardesigner erstellen. Wenn ein gewünschter Feldtyp nicht verfügbar ist, können Sie die Schritte unter [Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des PowerApps-Portals](../common-data-service/create-edit-field-portal.md) ausführen.
+     >   -  Einige Feldtypen sind nicht verfügbar, wenn Sie ein Feld im Formulardesigner erstellen. Wenn ein gewünschter Feldtyp nicht verfügbar ist, können Sie die Schritte unter [Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des Power Apps-Portals](../common-data-service/create-edit-field-portal.md) ausführen.
 
 6. Wählen Sie **Fertig**, um ein neues Feld für die Entität zu erstellen. Das Feld wird im Bereich **Felder** angezeigt.
 7. Wenn Sie das neu erstellte Feld zum Formular hinzufügen möchten, führen Sie die Schritte unter [**Hinzufügen von Feldern zu einem Formular**](add-move-or-delete-fields-on-form.md#add-fields-to-a-form) aus.

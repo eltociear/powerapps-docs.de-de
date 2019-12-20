@@ -1,6 +1,6 @@
 ---
 title: Überprüfen des Analysestatus | Microsoft Docs
-description: Erfahren Sie, wie Sie eine GET-Anforderung mithilfe der PowerApps Überprüfungs-Web-API erstellen können, um den Status eines Analyseanforderungsauftrags zu überprüfen.
+description: Erfahren Sie, wie Sie eine GET-Anforderung mithilfe der Power Apps Überprüfungs-Web-API erstellen können, um den Status eines Analyseanforderungsauftrags zu überprüfen.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 97b244b59bccbde9c8e20a86723133af07d4eb2b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0e221ad292a1a973a79c308a8ec5bef7a4dadeaa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748434"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861819"
 ---
 # <a name="check-for-analysis-status"></a>Überprüfen des Analysestatus
 
@@ -121,7 +121,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der PowerApps-Überprüfungs-Web-API](overview.md)<br />
+[Verwenden der Power Apps-Überprüfungs-Web-API](overview.md)<br />
 [Abrufen der Regelsatz-Liste](retrieve-rulesets.md)<br />
 [Abrufen der Regel-Liste](retrieve-rules.md)<br />
 [Hochladen einer Datei](upload-file.md)<br />

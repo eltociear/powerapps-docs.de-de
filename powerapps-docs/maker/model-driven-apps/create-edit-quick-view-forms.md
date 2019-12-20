@@ -1,5 +1,5 @@
 ---
-title: Erstellen oder Bearbeiten von modellgesteuerter Schnellansichtsformulare-App in PowerApps | Microsoft-Dokumentation
+title: Erstellen oder Bearbeiten von modellgesteuerter Schnellansichtsformulare-App in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie ein Schnellansichtsformular erstellen oder bearbeiten
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0384b233ddd9df0f88019df6064f5a99ef8af0bd
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e6a4540927ad4329bab936fac631e2693d618104
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759114"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875264"
 ---
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>Erstellen und Bearbeiten eines Schnellansichtsformulars für modellgesteuerten Apps, um Informationen über eine verknüpfte Entität anzuzeigen
 
@@ -43,7 +43,7 @@ Ein Schnellansichtsformular kann einem anderen Formular als Steuerelement zur sc
 ## <a name="create-a-quick-view-form"></a>Erstellen eines Schnellansichtsformulars  
  Sie können Schnellansichtsformulare mithilfe des Formular-Editors erstellen, ähnlich wie auch andere Formulare erstellt werden. Schnellansichtsformulare sind schreibgeschützt. Verwenden Sie diese, um Formulare zu erstellen, um die nur zum Lesen bstimmt sind.  
   
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 
     > [!IMPORTANT]
@@ -79,7 +79,7 @@ Ein Schnellansichtsformular kann einem anderen Formular als Steuerelement zur sc
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>Hinzufügen eines Schnellansicht-Steuerelement zu einem Hauptformular  
  Schnellansichtsformulare können nur einem Hauptformular hinzugefügt werden, das ein Suchfeld enthält, das auf die Entität des Schnellansichtsformulars verweist.  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).     

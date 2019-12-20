@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e53380c39257645e9056a271226b6f7ef8c8c721
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: cc2c7aae9b2329bfa7b24d45049d7cbbab399e28
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709933"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862706"
 ---
 # <a name="maintenance-mode-for-a-portal"></a>Wartungsmodus für ein Portal
 
@@ -29,7 +29,7 @@ Als Portaladministrator können Sie das Portal konfigurieren, um Kunden eine kor
 
 Sie können den Wartungsmodus auf Ihrem Portal aktivieren, um eine einheitliche Nachricht bereitzustellen, anstatt sich mit unvorhersehbarem Verhalten auseinanderzusetzen, wenn die Website planmäßig gewartet wird. Dies bietet Ihren Portalbenutzern ein besseres Erlebnis.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 3. Wechseln Sie zu **Portalaktionen** > **Wartungsmodus aktivieren**.
 
@@ -45,6 +45,9 @@ Sie können den Wartungsmodus auf Ihrem Portal aktivieren, um eine einheitliche 
 
     - **Benutzerdefinierte Seiten-URL**: Dieses Feld wird aktiviert, wenn Sie die Option auswählen, um eine benutzerdefinierte HTML-Seite anzuzeigen. Sie müssen sicherstellen, dass Seiten-URL, die Sie bereitstellen, öffentlich zugänglich ist. Wenn die angegebene HTML-Seite nicht erreicht werden kann, wird die Standardseite mit einem Hinweis an den Administrator angezeigt.
 
+        > [!NOTE]
+        > Die benutzerdefinierte Wartungsseite verwendet IFrame, um die Seite anzuzeigen. Daher sollte die Seite keinen `x-frame-options:SAMEORIGIN`-Antwortheader enthalten, sonst wird die Seite nicht geladen.
+
 5. Wählen Sie **Aktivieren** aus. Bei aktiviertem Wartungsmodus wird das Portal neu gestartet, und es ist für einige Minuten nicht verfügbar. 
 
     > [!div class=mx-imgBorder]
@@ -56,7 +59,7 @@ Nachdem Sie den Wartungsmodus für Ihr Portal aktiviert haben, können Sie die W
 
 Sie können außerdem auswählen, dass der Wartungsmodus auf Ihrem Portal deaktiviert wird, wenn die geplante Wartung Ihrer Website abgeschlossen ist. Ihre Portalbenutzer können nun auf alle Webseiten wie gewohnt zugreifen und sie durchsuchen.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2. Wechseln Sie zu **Portalaktionen** > **Konfigurieren oder Deaktivieren des Wartungsmodus**.
 

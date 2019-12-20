@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3db46288b0f1fc384cae8c683648d1dd0a945d44
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 81b20a326be239445422cce51a54b2e0b991d5c4
+ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710857"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "2805691"
 ---
-# <a name="add-the-team-entity-as-a-lookup-option-in-your-app"></a>Hinzufügen der Team-Entität als Suchoption in Ihrer App
+# <a name="add-an-entity-as-a-lookup-option-in-your-app"></a>Hinzufügen einer Entität als Suchoption in Ihrer App
 
-Damit die Team-Entität in einer Suche bei Apps der Einheitlichen Oberfläche verfügbar ist, muss sie zur App hinzugefügt werden. Kontaktdatensätze können z. B. einem Benutzer oder einem Team zugewiesen werden.  
+Damit eine Entität in einer Suche bei Apps der einheitlichen Oberfläche verfügbar ist, muss sie zur App hinzugefügt werden. Kontaktdatensätze können z. B. einem Benutzer oder einem Team zugewiesen werden.  
 
 > [!div class="mx-imgBorder"] 
 > ![](media/entity-lookup-teams.png "Entity lookup with both users and teams available")

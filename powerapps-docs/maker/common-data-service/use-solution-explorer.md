@@ -1,5 +1,5 @@
 ---
-title: Lösungen in PowerApps verwenden | MicrosoftDocs
+title: Lösungen in Power Apps verwenden | MicrosoftDocs
 description: Hier erfahren Sie, wie Sie die Lösung nutzen, um Apps zu erstellen oder anzupassen
 ms.custom: ''
 ms.date: 10/28/2019
@@ -16,22 +16,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 57df12285848d67a8cd85016aec0bbb033fef89a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e4d8b6b69ab820541b822fc58ce5c079df7b5b19
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703157"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885328"
 ---
-# <a name="use-solutions-in-powerapps"></a>Lösungen in PowerApps verwenden
+# <a name="use-solutions-in-power-apps"></a>Lösungen in Power Apps verwenden
 
- Innerhalb von PowerApps können Sie eine Liste von Lösungen einsehen, indem Sie **Lösungen** in der linken Navigation auswählen. Sie können dann eine Lösung wählen, um alle ihrer Komponenten anzuzeigen. 
+ Innerhalb von Power Apps können Sie eine Liste von Lösungen einsehen, indem Sie **Lösungen** in der linken Navigation auswählen. Sie können dann eine Lösung wählen, um alle ihrer Komponenten anzuzeigen. 
  
 > [!div class="mx-imgBorder"]  
 > ![Demolösung mit allen Komponenten](media/solution-all-items-list.PNG "Demolösung mit allen Komponenten")  
  
 > [!NOTE]
->  Die Lösungserfahrung ist nur online und für Umgebungen ab Version 9.1.0.267 und höher verfügbar. Um Ihre Version zu überprüfen, gehen Sie bitte zu ...[PowerApps Admin-Center](https://admin.powerapps.com/)> **Umgebungen** > wählen Sie Ihre Umgebung > **Details** Registerkarte. Für Umgebungen mit früheren Versionen öffnet die Auswahl einer Lösung diese im klassischen Sinne.  
+>  Die Lösungserfahrung ist nur online und für Umgebungen ab Version 9.1.0.267 und höher verfügbar. Um Ihre Version zu überprüfen, gehen Sie bitte zu ...[Power Apps Admin-Center](https://admin.powerapps.com/)> **Umgebungen** > wählen Sie Ihre Umgebung > **Details** Registerkarte. Für Umgebungen mit früheren Versionen öffnet die Auswahl einer Lösung diese im klassischen Sinne.  
  
  Sie können alle Komponenten einer Lösung durchsuchen, indem Sie durch die Elemente scrollen. Wenn mehr als 100 Elemente in der Liste vorhanden sind, können Sie die Option **Die nächsten 100 Elemente laden** wählen, um mehr anzuzeigen. 
  
@@ -87,7 +87,7 @@ ms.locfileid: "2703157"
 
 ## <a name="classic-solution-explorer"></a>Klassischer Projektmappen-Explorer
 
-In PowerApps können Sie den klassischen Lösungsexplorer anzeigen, indem Sie im linken Navigationsbereich **Lösungen** auswählen und dann **Zum Klassiker wechseln** in der Befehlsleiste wählen. Der klassische Lösungsexplorer ist derjenige, der zuvor über den Bereich **Einstellungen > Erweiterte Anpassungen** in PowerApps verfügbar war. 
+In Power Apps können Sie den klassischen Lösungsexplorer anzeigen, indem Sie im linken Navigationsbereich **Lösungen** auswählen und dann **Zum Klassiker wechseln** in der Befehlsleiste wählen. Der klassische Lösungsexplorer ist derjenige, der zuvor über den Bereich **Einstellungen > Erweiterte Anpassungen** in Power Apps verfügbar war. 
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
@@ -98,7 +98,7 @@ Die folgenden Beschränkungen gelten für die Verwendung von Canvas-Apps, Flows 
 - Verbindungen erfordern die Authentifizierung und Zustimmung, was eine interaktive Benutzersitzung erfordert, und können daher nicht über Lösungen übermittelt werden. Nachdem Sie die Lösung importiert haben, geben Sie die App wieder, um die Verbindungen zu authentifizieren. Sie können die Verbindungen auch vor dem Importieren der Lösung in der Zielumgebung erstellen. 
 -   Canvas-Apps, die als Miteigentümer für eine Azure Active Directory (AAD)-Sicherheitsgruppe freigegeben wurden, können nicht zu Lösungen hinzugefügt werden. Heben Sie die Freigabe der App auf, bevor Sie sie zu einer Lösung hinzufügen.
 -   Canvas-Apps werden nicht im klassischen Projektmappen-Explorer angezeigt. Verwenden Sie die moderne Erfahrung.
--   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Common Data Service-Datenbank verwaltet.
+-   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in Power Apps und nicht in der Common Data Service-Datenbank verwaltet.
 - Datenbankvorgänge wie Sicherung, Wiederherstellung und Kopieren werden für Canvas-Apps und -Flows nicht unterstützt. Diese Vorgänge können Canvas-Apps und -Flows beschädigten.
 - Durch das Löschen einer verwalteten Lösung wird kein Rollback auf eine andere Version der Canvas-App ausgeführt. Stattdessen werden alle Versionen der App gelöscht.
 - Wenn eine Lösung importiert wird, die einen Flow enthält, werden die erforderlichen Verbindungen nicht automatisch erstellt oder zugeordnet. Der Flow muss bearbeitet werden, um feste Verbindungen sicherzustellen.

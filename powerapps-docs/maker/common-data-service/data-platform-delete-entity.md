@@ -1,6 +1,6 @@
 ---
 title: Löschen einer benutzerdefinierten Entität | Microsoft Docs
-description: Schrittweise Anweisungen zum Löschen einer benutzerdefinierten Entität und aller Daten in PowerApps
+description: Schrittweise Anweisungen zum Löschen einer benutzerdefinierten Entität und aller Daten in Power Apps
 author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8b4b9fb7942a7977bf6795ca21985b93c5469d26
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8925c11d202ce73a7690687762c8bc2282913050
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754913"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883658"
 ---
 # <a name="delete-a-custom-entity"></a>Löschen einer benutzerdefinierten Entität
 Sie können benutzerdefinierte Entitäten aber keine Standardentitäten löschen.

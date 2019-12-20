@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cf8a30ae29712804cea2da42b0e448acc6286553
-ms.sourcegitcommit: e4b3b6b610f91a0c704a4fa87c6ec238aa81d25f
+ms.openlocfilehash: 2b54cad59b1f5a6cc4199675308f5cd48d05240d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2767237"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873988"
 ---
 # <a name="types-of-fields"></a>Arten von Feldern
 
-Die Namen der Typen hängen vom verwendeten Designer ab. [PowerApps Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwendet eine Konvention, die die Art und Weise, wie die Daten formatiert werden, beinhaltet. Der Typ des Lösungsexplorers verwendet einen Namen, der mit einem Formatmodifikator auf den Datentyp der Datenbank ausgerichtet ist. Die folgende Tabelle enthält den entsprechenden `AttributeTypeDisplayName` API-Typ.
+Die Namen der Typen hängen vom verwendeten Designer ab. [Power Apps Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwendet eine Konvention, die die Art und Weise, wie die Daten formatiert werden, beinhaltet. Der Typ des Lösungsexplorers verwendet einen Namen, der mit einem Formatmodifikator auf den Datentyp der Datenbank ausgerichtet ist. Die folgende Tabelle enthält den entsprechenden `AttributeTypeDisplayName` API-Typ.
 
 |Typ Portal Daten |Typ Lösungs-Explorer| API-Typ|
 |--|--|--|
@@ -65,8 +65,8 @@ Die Namen der Typen hängen vom verwendeten Designer ab. [PowerApps Portal](http
 |**Ganze Zahl**|**Ganze Zahl**<br />*Kein*-Format|`IntegerType`|
 
 Weitere Beschreibungen für jeden Typ, den Sie hinzufügen oder bearbeiten können, finden Sie im Thema des entsprechenden Designers:
- - [Felder für Common Data Service mit dem Portal PowerApps erstellen und bearbeiten: Feld Datentypen](create-edit-field-portal.md#field-data-types)
- - [Erstellen und bearbeiten Sie Felder für Common Data Service mit dem PowerApps Solution Explorer: Feld Datentypen](create-edit-field-solution-explorer.md#field-data-types)
+ - [Felder für Common Data Service mit dem Portal Power Apps erstellen und bearbeiten: Feld Datentypen](create-edit-field-portal.md#field-data-types)
+ - [Erstellen und bearbeiten Sie Felder für Common Data Service mit dem Power Apps Solution Explorer: Feld Datentypen](create-edit-field-solution-explorer.md#field-data-types)
 
 Weitere Informationen darüber, wie Felddatentypen in der API definiert werden, finden Sie unter [Attributmetadaten](/powerapps/developer/common-data-service/entity-attribute-metadata)
 
@@ -188,11 +188,11 @@ Wenn ein Bild hochgeladen wird, wird es als „Miniaturansicht“ auf eine maxim
 By default, when an app user adds an image to display to a form or canvas app, the image displayed is the thumbnail image. To display a full image for a canvas app, see [Display a full-sized image on a canvas app form](../canvas-apps/display-full-image-on-form.md).
 
 
-### Add an image field to an entity using the PowerApps site
+### Add an image field to an entity using the Power Apps site
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-1. Sign in to [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Sign in to [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 2.  Select **Data** > **Entities** and then select the entity where you want to add an image field. 
 3. Select **Add field** on the command bar, enter the following properties, and then select **Done**: 
    - **Display name**. Enter a friendly name for the field. 

@@ -1,6 +1,6 @@
 ---
 title: Abrufen der Regelliste | Microsoft Docs
-description: Sehen Sie sich an, wie Sie eine GET-Anfrage mithilfe der PowerApps-Überprüfungs-Web-API stellen, um die Liste der verfügbaren Regeln abzurufen.
+description: Sehen Sie sich an, wie Sie eine GET-Anfrage mithilfe der Power Apps-Überprüfungs-Web-API stellen, um die Liste der verfügbaren Regeln abzurufen.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf01185c83e3bfd4f325e4cdfd5b6625e58f7058
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 54db18819f22b01195fa1462395fc2be17f5ec74
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753038"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861823"
 ---
 # <a name="retrieve-the-list-of-rules"></a>Abrufen der Regelliste
 
@@ -251,7 +251,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der PowerApps-Überprüfungs-Web-API](overview.md)<br />
+[Verwenden der Power Apps-Überprüfungs-Web-API](overview.md)<br />
 [Abrufen der Regelsatz-Liste](retrieve-rulesets.md)<br />
 [Hochladen einer Datei](upload-file.md)<br />
 [Analyse aufrufen](analyze.md)<br />

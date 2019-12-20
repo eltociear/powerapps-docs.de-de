@@ -23,15 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b534e3c4a7aae36d38901b75b34cc87fd7f511e
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752236"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895238"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>Verwendung eines lokalen Daten-Gateways in Power Platform Dataflows
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Installieren Sie ein lokales Daten-Gateway, um Daten schnell und sicher zwischen einem Power Platform-Dataflow und einer Datenquelle zu übertragen, die sich nicht in der Cloud befindet, wie beispielsweise eine lokale SQL-Server-Datenbank oder eine lokale SharePoint-Site.
 Sie können alle Gateways anzeigen, für die Sie Administratorrechte haben, und Berechtigungen und Verbindungen für diese Gateways verwalten.
@@ -52,13 +51,13 @@ Mit einem Gateway können Sie sich über diese Verbindungen mit lokalen Daten ve
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
--   Ein PowerApps-Konto. Sie haben keins? [Melden Sie sich für 30 Tage kostenlos an](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
+-   Ein Power Apps-Konto. Sie haben keins? [Melden Sie sich für 30 Tage kostenlos an](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
 
 -   Administrative Berechtigungen auf einem Gateway. Diese Berechtigungen werden standardmäßig für von Ihnen installierte Gateways bereitgestellt. Administratoren können anderen Personen Berechtigungen für Gateways erteilen. 
 
--   Eine Lizenz, die den Zugriff auf lokale Daten über ein lokales Gateway unterstützt. Weitere Informationen finden Sie im Abschnitt "Verbinden mit Ihren Daten und Systemen" des Abschnitts [Finden Sie die richtige PowerApps Planseite](https://powerapps.microsoft.com/pricing/).
+-   Eine Lizenz, die den Zugriff auf lokale Daten über ein lokales Gateway unterstützt. Weitere Informationen finden Sie im Abschnitt "Verbinden mit Ihren Daten und Systemen" des Abschnitts [Finden Sie die richtige Power Apps Planseite](https://powerapps.microsoft.com/pricing/).
 
--   Gateways und lokale Verbindungen können nur in der Standardumgebung des Benutzers erstellt und verwendet werden. Mehr Informationen: [Arbeiten mit Umgebungen und Microsoft PowerApps](../canvas-apps/working-with-environments.md).
+-   Gateways und lokale Verbindungen können nur in der Standardumgebung des Benutzers erstellt und verwendet werden. Mehr Informationen: [Arbeiten mit Umgebungen und Microsoft Power Apps](../canvas-apps/working-with-environments.md).
 
 ## <a name="install-a-gateway"></a>Ein Gateway installieren
 1.  Wählen Sie im linken Navigationsbereich von [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Gateways**.
@@ -107,9 +106,9 @@ Sie können das für einen bestimmten Dataflow verwendete Unternehmensgateway un
     - Um eine Verbindung freizugeben, wählen Sie **Freigeben** und fügen Sie dann Benutzer hinzu oder entfernen Sie sie.
 
       > [!NOTE]
-      > Sie können nur bestimmte Arten von Verbindungen freigeben, z.B. eine SQL-Server-Verbindung. Weitere Informationen finden Sie unter [Canvas-App-Ressourcen in PowerApps freigeben](../canvas-apps/share-app-resources.md). <br />
+      > Sie können nur bestimmte Arten von Verbindungen freigeben, z.B. eine SQL-Server-Verbindung. Weitere Informationen finden Sie unter [Canvas-App-Ressourcen in Power Apps freigeben](../canvas-apps/share-app-resources.md). <br />
       >
-      > Weitere Informationen zum Verwalten einer Verbindung finden Sie unter [Verwalten von Canvas-App-Verbindungen unter PowerApps](../canvas-apps/add-manage-connections.md).
+      > Weitere Informationen zum Verwalten einer Verbindung finden Sie unter [Verwalten von Canvas-App-Verbindungen unter Power Apps](../canvas-apps/add-manage-connections.md).
 
 
 ## <a name="limitations"></a>Einschränkungen
@@ -127,7 +126,7 @@ Informationen zur Fehlerbehebung bei Problemen mit Gateways oder zur Konfigurati
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Erstellen und Verwenden von Dataflows in PowerApps](create-and-use-dataflows.md)
+- [Erstellen und Verwenden von Dataflows in Power Apps](create-and-use-dataflows.md)
 
 - [Daten zu einer Entität in Common Data Service hinzufügen, indem Sie Power Query verwenden](data-platform-cds-newentity-pq.md)
 

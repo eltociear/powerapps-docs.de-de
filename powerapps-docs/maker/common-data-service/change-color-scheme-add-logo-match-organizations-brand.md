@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4aa2b77e9a9840532193fe50d92aabd796484c60
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c343c3d5d34f73500aa1295086b6329936d66259
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758378"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874270"
 ---
 # <a name="create-a-theme"></a>Erstellen eines Designs
 
@@ -77,7 +77,7 @@ Sie können ein angepasstes Erscheinungsbild (ein Design) für Ihre App erstelle
 ## <a name="copy-and-alter-the-existing-theme"></a>Kopieren und Ändern des vorhandenen Designs  
  Der einfachste und schnellste Weg, ein neues Design zu erstellen, ist, ein vorhandenes Design zu klonen und zu ändern, es dann zu speichern, eine Vorschau anzuzeigen und es zu veröffentlichen. 
  
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2.  Wählen Sie **Modellgesteuert** (unten links) aus. 
 

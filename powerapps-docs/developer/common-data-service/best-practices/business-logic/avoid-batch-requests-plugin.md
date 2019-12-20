@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/15/2019
+ms.date: 12/06/2019
 ms.author: jowells
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e0732dfee3d4824f33042936af7e8f6157bcec83
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6e1f27c68b020e7b22728d1c8e80c65f82e94d90
+ms.sourcegitcommit: adfad395aab302fb71b56d8b7a7490265bbdaaae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748250"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "2899503"
 ---
 # <a name="avoid-usage-of-batch-request-types-in-plug-ins-and-workflow-activities"></a>Vermeiden Sie die Verwendung von Batch-Requesttypen in Plugins und Workflow-Aktivitäten.
 
@@ -37,14 +37,8 @@ ms.locfileid: "2748250"
 
 ## <a name="symptoms"></a>Symptome
 
-Nachfolgend sind mögliche Auswirkungen bei der Verwendung von Nachrichtenanforderungsklassen <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> oder <xref:Microsoft.Xrm.Sdk.Messages.ExecuteTransactionRequest> im Rahmen einer Plugin- oder Workflow-Aktivität aufgeführt:
+Aufgrund ihrer Langlebigkeit verwenden <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> oder <xref:Microsoft.Xrm.Sdk.Messages.ExecuteTransactionRequest> Nachrichtenanforderungsklassen im Kontext eines Plug-Ins oder von Workflowaktivität und setzen Sandbox-isolierte Plug-In-Typen der Ausnahmebedingung einer Kanal-Zeitüberschreitung von 2 Minuten (12000 ms) aus und können die Benutzererfahrung für synchrone Registrierungen beeinträchtigen.
 
-- Aufgrund ihrer Langlebigkeit setzen Batch-Request-Messages Sandbox-isolierte Plug-In-Typen der zweiminütigen (2000 ms) Kanal-Timeout-Ausnahme aus und können die Benutzererfahrung bei synchronen Registrierungen beeinträchtigen.
-
-- Batch-Anfragen unterliegen einer Parallelitätsdrosselung, die zu unnötigen Ausnahmen bei Serverauslastung führen kann, wenn das Plug-in von mehreren Threads ausgeführt wird. Es gibt ein Limit von zwei gleichzeitigen `ExecuteMultiple`-Operationen pro Online-Instanz.
-
-    > [!NOTE]
-    > Für lokale Implementierungen vor Ort ermöglicht die Einstellung [ExecuteAsyncPerOrMaxConnectionsPerServer](/dotnet/api/microsoft.xrm.sdk.deployment.throttlesettings.executeasyncmaxconnectionsperserver) die gleiche Drosselung.  Standardmäßig ist sie nicht für lokale Anwendungen definiert.
 
 <a name='guidance'></a>
 

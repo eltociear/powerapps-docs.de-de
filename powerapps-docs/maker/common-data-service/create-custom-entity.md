@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer benutzerdefinierten Entität, die Komponenten PowerApps enthält | Microsoft-Dokumentation
-description: Thema mit schrittweisen Anweisungen zum Erstellen und Konfigurieren einer Entität zur Verwendung mit einer PowerApps-App.
+title: Erstellen einer benutzerdefinierten Entität, die Komponenten Power Apps enthält | Microsoft-Dokumentation
+description: Thema mit schrittweisen Anweisungen zum Erstellen und Konfigurieren einer Entität zur Verwendung mit einer Power Apps-App.
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 436e4f03a38efc3d61a0d4fb9f027ae6eff1c931
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 864bc9c8cfad92bac661db0b12b47d880cc86edf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754825"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883790"
 ---
-# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>Erstellen Sie eine benutzerdefinierte Entität mit Komponenten in PowerApps
+# <a name="create-a-custom-entity-that-has-components-in-power-apps"></a>Erstellen Sie eine benutzerdefinierte Entität mit Komponenten in Power Apps
 
-Mit PowerApps können Sie Ihre App genauer an die Branche, Benennungsstandards und besonderen Geschäftsprozesse Ihrer Organisation anpassen. PowerApps-App-Entwicklung umfasst das Hinzufügen von Standard "vordefinierten Entitäten" oder dem Erstellen benutzerdefinierter Entitäten. Eine Entität definiert die Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. 
+Mit Power Apps können Sie Ihre App genauer an die Branche, Benennungsstandards und besonderen Geschäftsprozesse Ihrer Organisation anpassen. Power Apps-App-Entwicklung umfasst das Hinzufügen von Standard "vordefinierten Entitäten" oder dem Erstellen benutzerdefinierter Entitäten. Eine Entität definiert die Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. 
 
 In diesem Thema erstellen Sie eine Entität und fügen Schlüsselkomponenten wie Felder, Beziehungen, Ansichten und Formularen hinzu und bearbeiten sie. Informationen zu:
 
@@ -36,7 +36,7 @@ Dieses Thema folgt der Firma Contoso, die ein Haustierpflegeunternehmen hat, das
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. Wenn Sie noch kein PowerApps-Konto haben, wählen Sie den Link **Kostenlos beginnen** aus [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. Wenn Sie noch kein Power Apps-Konto haben, wählen Sie den Link **Kostenlos beginnen** aus [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-a-custom-entity"></a>Erstellen einer benutzerdefinierten Entität.
 

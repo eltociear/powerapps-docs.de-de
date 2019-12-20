@@ -1,5 +1,5 @@
 ---
-title: Erstellen oder Bearbeiten einer modellgesteuerten App mithilfe des App-Designers in PowerApps | Microsoft-Dokumentation
+title: Erstellen oder Bearbeiten einer modellgesteuerten App mithilfe des App-Designers in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Apps mithilfe des App-Designer erstellt oder bearbeitet werden
 keywords: ''
 ms.date: 02/05/2019
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fb852ce8b6137d16eb8544da4eb6c9b92c12e29e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ef8fa8e20afd7d0e4ad1593ae169a132246d3992
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759290"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875414"
 ---
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>Erstellen oder Bearbeiten einer modellgesteuerten App mithilfe des App-Designers
 
@@ -37,13 +37,13 @@ In diesem Artikel lernen Sie die Grundlagen, wie Sie eine Modell-angetriebene Ap
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Überprüfen Sie die folgenden Voraussetzungen, bevor Sie mit dem Erstellen der App beginnen:
-- Eine PowerApps-Umgebung. Weitere Informationen: [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment)
+- Eine Power Apps-Umgebung. Weitere Informationen: [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment)
 - Systemadministrator oder Systemanpasser-Sicherheitsrollen Weitere Informationen: [Über vordefinierte Sicherheitsrollen](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app#about-predefined-security-roles).
  
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>App erstellen  
 
-1.  Wählen Sie auf der [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Homepage** die Option **Modellgesteuerte App ohne Vorlage** für eine modellgesteuerte App.  
+1.  Wählen Sie auf der [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Homepage** die Option **Modellgesteuerte App ohne Vorlage** für eine modellgesteuerte App.  
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment). 
@@ -82,7 +82,7 @@ In diesem Artikel lernen Sie die Grundlagen, wie Sie eine Modell-angetriebene Ap
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>App bearbeiten  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 > [!IMPORTANT]
 > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment). 

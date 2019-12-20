@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
-ms.openlocfilehash: f81c0bdf98e6db4ec3326a151e53961e4936f244
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b19028b8daa24d9a76692baf59121e6089b46f0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748781"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861964"
 ---
 # <a name="implementing-formatting-api-component"></a>Implementieren der Formatierung der API-Komponente
 
-Diese Beispielkomponente untersucht die verschiedenen Methoden, die als Teil der PowerApps Component Framework Navigation API verfügbar sind.Im vorliegenden Beispiel, erstellen Sie eine von Eingabeelementen, die in die jeweiligen Methoden der Formatierung-API anrufen, die dem angezeigten Wert entsprechen.
+Diese Beispielkomponente untersucht die verschiedenen Methoden, die als Teil der Power Apps Component Framework Navigation API verfügbar sind.Im vorliegenden Beispiel, erstellen Sie eine von Eingabeelementen, die in die jeweiligen Methoden der Formatierung-API anrufen, die dem angezeigten Wert entsprechen.
 
 > [!div class="mx-imgBorder"]
 > ![Formatieren der API-Komponente](../media/formatting-api.png "Formatieren der API-Komponente")
@@ -50,7 +50,7 @@ Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau)
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class FormattingAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // reference to the div element that holds together all the HTML elements that we are creating as part of this control
   private divElement: HTMLDivElement;
@@ -288,7 +288,8 @@ export class FormattingAPI
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten verwenden](../use-sample-components.md)<br/>
+[Power Apps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)
 
 

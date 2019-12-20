@@ -20,16 +20,16 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: f936dc4c6b78096b74b650bf8426ba1d78c41d19
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 557959f9bb561fcb138f15011bd8320dfa5c94ff
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711385"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862882"
 ---
 # <a name="rdl-sandboxing"></a>RDL-Sandkasten 
 
-Unter Common Data Service laufen Berichte im Sandbox-Modus. Dies geschieht durch Aktivieren von Report Definition Language (RDL) Sandboxing in SQL Server Reporting Services. Mit dem RDL-Sandboxing können Sie die Verwendung bestimmter Typen von Ressourcen entdecken und beschränken. Infolgedessen sind bestimmte Funktionen in PowerApps modellgetriebenen Apps möglicherweise nicht verfügbar. Weitere Informationen finden Sie unter [MSDN: Aktivieren und Deaktivieren von RDL-Sandkasten](https://msdn.microsoft.com/library/ee210591.aspx).  
+Unter Common Data Service laufen Berichte im Sandbox-Modus. Dies geschieht durch Aktivieren von Report Definition Language (RDL) Sandboxing in SQL Server Reporting Services. Mit dem RDL-Sandboxing können Sie die Verwendung bestimmter Typen von Ressourcen entdecken und beschränken. Infolgedessen sind bestimmte Funktionen in Power Apps modellgetriebenen Apps möglicherweise nicht verfügbar. Weitere Informationen finden Sie unter [MSDN: Aktivieren und Deaktivieren von RDL-Sandkasten](https://msdn.microsoft.com/library/ee210591.aspx).  
   
  Die aktuelle RDL-Sandboxingkonfigurationseinstellungen in Common Data Service werden in den folgenden Abschnitten im vorliegenden Thema beschrieben.  
     

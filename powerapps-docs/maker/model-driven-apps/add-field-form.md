@@ -1,5 +1,5 @@
 ---
-title: Feld einem modellgesteuerten App-Formular hinzufügen in PowerApps | Microsoft-Dokumentation
+title: Feld einem modellgesteuerten App-Formular hinzufügen in Power Apps | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -21,20 +21,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1eb7d5c88031f7269472906b5bfcad7c91214417
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 38ada6c4c63807c16dd577339c287808f389681a
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751863"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874950"
 ---
 # <a name="add-a-field-to-a-model-driven-app-form"></a>So fügen Sie ein Feld zu einem modellgesteuerten App-Formular hinzu: 
 
-Wenn ein PowerApps Formular für eine Standard-Entität nicht den Anforderungen Ihres Unternehmens entspricht, können Sie das Formular anpassen, indem Sie vorhandene Felder ändern oder neue Felder hinzufügen. Es ist zwar einfacher, die vorhandenen Felder in einem Formular zu bearbeiten, manchmal ist es jedoch besser, ein Feld hinzuzufügen, um auf ein bestimmtes Unternehmensszenario einzugehen.
+Wenn ein Power Apps Formular für eine Standard-Entität nicht den Anforderungen Ihres Unternehmens entspricht, können Sie das Formular anpassen, indem Sie vorhandene Felder ändern oder neue Felder hinzufügen. Es ist zwar einfacher, die vorhandenen Felder in einem Formular zu bearbeiten, manchmal ist es jedoch besser, ein Feld hinzuzufügen, um auf ein bestimmtes Unternehmensszenario einzugehen.
 
 In diesem Thema fügen Sie ein Feld einem Formular hinzu.   
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 
     > [!IMPORTANT]

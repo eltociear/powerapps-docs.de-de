@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 44112fee976b12f12b43ca2bf70157266be4d8ce
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8f359a11f55008d6f2c19575872decdd43b09e27
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759422"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873812"
 ---
 # <a name="pass-a-list-of-related-records-as-data-context-to-an-embedded-canvas-app"></a>Eine Liste von aktuellen Datensätzen als Datenkontext an eine eingebettete Canvas-App übergeben
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ In diesem Thema wird erläutert, wie Sie eine eingebettete Canvas-App hinzufüge
 
 Stellen Sie sich vor, Sie möchten eine eingebettete Canvas-App in ein Firmenhauptformular einfügen und eine Liste von Datensätzen, die in Bezug zum aktuellen Firmendatensatz stehen, an die eingebettete Canvas-App übergeben. Gehen Sie dazu wie folgt vor:
 
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und öffnen Sie im Formular-Editor ein Hauptformular einer Entität, wie beispielsweise der Firmenentität.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und öffnen Sie im Formular-Editor ein Hauptformular einer Entität, wie beispielsweise der Firmenentität.
 2.  Wählen Sie im Formular den Abschnitt aus, in dem die eingebettete Canvas-App angezeigt werden soll.
 3.  Innerhalb des ausgewählten Abschnitts klicken Sie auf der Registerkarte **Einfügen** in der Gruppe **Steuerelement** auf **Unterraster**.
 4.  Im Dialogfeld **Eigenschaften festlegen** wählen Sie die Registerkarte **Anzeigen** aus und geben dann im Eingabefeld **Name** einen Namen für das Rastersteuerelement ein.
@@ -53,10 +53,10 @@ Stellen Sie sich vor, Sie möchten eine eingebettete Canvas-App in ein Firmenhau
          -  Die Filterkriterien für eine Ansicht werden zum Zeitpunkt der Erstellung nicht verwendet. Daher werden die Daten, die Sie beim Erstellen von eingebetteten Canvas-Anwendungen sehen, nicht gefiltert, es ist lediglich eine Liste der wichtigsten Datensätze, auf die Sie Zugriff haben. Zur Laufzeit werden die Filterkriterien für die Ansicht erwartungsgemäß angewendet und den Benutzern werden nur relevante Daten angezeigt.
      -  Die Eigenschaft **App ID** gibt die ID der eingebetteten Canvas-App an. Sie ist bei Erstellung der Canvas-App automatisch generiert und eingetragen.
          -  Beachten Sie, dass jede Änderung des Wertes App ID die Verknüpfung von dem modellgestützten Formular zur eingebetteten Canvas-App unterbricht.
-10. Zum Erstellen oder Bearbeiten Ihrer Canvas-App wählen Sie die Schaltfläche **Anpassen** aus. Dadurch wird PowerApps Studio in einer neuen Browserregisterkarte geöffnet.
+10. Zum Erstellen oder Bearbeiten Ihrer Canvas-App wählen Sie die Schaltfläche **Anpassen** aus. Dadurch wird Power Apps Studio in einer neuen Browserregisterkarte geöffnet.
      > [!IMPORTANT]
-     > Wenn das Öffnen von PowerApps Studio aufgrund eines Popupblockers des Webbrowsers blockiert ist, müssen Sie die Website make.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann erneut **Anpassen** auswählen. 
-11. Beachten Sie in PowerApps Studio, dass sich im linken Bereich ein **ModelDrivenFormIntegration**-Steuerelement befindet. Dieses Steuerelement ist dafür verantwortlich, Kontextdaten aus dem Hostmodell-basierten Formular in die eingebettete Canvas-App zu bringen. 
+     > Wenn das Öffnen von Power Apps Studio aufgrund eines Popupblockers des Webbrowsers blockiert ist, müssen Sie die Website make.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann erneut **Anpassen** auswählen. 
+11. Beachten Sie in Power Apps Studio, dass sich im linken Bereich ein **ModelDrivenFormIntegration**-Steuerelement befindet. Dieses Steuerelement ist dafür verantwortlich, Kontextdaten aus dem Hostmodell-basierten Formular in die eingebettete Canvas-App zu bringen. 
 12. Wählen Sie das Steuerelement **Gallery1** und stellen Sie fest, dass die Eigenschaft **Elemente** auf **ModelDrivenFormIntegration.Data** gesetzt ist.
 13. Wählen Sie im Eigenschaftenbereich rechts neben **Felder** **Bearbeiten** aus.
 14. Ändern Sie im Datenbereich das dem **Titel1**-Steuerelement zugeordnete Feld auf **Vollständiger Name** oder ein anderes Feld, das Daten enthält.
@@ -69,7 +69,7 @@ Stellen Sie sich vor, Sie möchten eine eingebettete Canvas-App in ein Firmenhau
       -  Bei späterem Speichern, müssen Sie **Veröffentlichen** und dann **Diese Version veröffentlichen** auswählen, um Ihre Änderungen zur Verfügung stellen.
 20. Wählen Sie **Zurück** und dann die Browser-Registerkarte, auf der der Formular-Editor geöffnet ist. 
 21. Beachten Sie, dass die Eigenschaft **App ID** des **Canvas-App**-Steuerelements nun einen automatisch ausgefüllten Wert hat. Beachten Sie Folgendes: 
-     -  Der Formular-Editor verfügt über eine direkte Verbindung zu PowerApps Studio, das in einem früheren Schritt in einer anderen Browserregisterkarte geöffnet wurde.
+     -  Der Formular-Editor verfügt über eine direkte Verbindung zu Power Apps Studio, das in einem früheren Schritt in einer anderen Browserregisterkarte geöffnet wurde.
      -  Der Formular-Editor wartete darauf, dass die App ID an ihn gesendet wurde.
      -  Die App ID wurde gesendet, als die App gespeichert wurde.
 22. Wählen Sie im Dialog **Eigenschaften festlegen** die Registerkarte **Anzeige**, löschen Sie **Beschriftung im Formular anzeigen** und wählen Sie dann **OK**.

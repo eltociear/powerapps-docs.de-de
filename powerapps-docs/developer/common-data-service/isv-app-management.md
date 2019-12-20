@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 49628d24d6d87f4cc541ba11e498b255c9b71a2f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 38ab2ea7116093e41d7816e17eed9cc183b34d14
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748274"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861763"
 ---
 # <a name="introduction-to-isv-studio-for-the-power-platform"></a>Einführung in ISV Studio für die Power Platform
 
@@ -40,7 +40,7 @@ ISV Studio wurde als bevorzugtes Power Platform-Ziel für unabhängige Softwareh
 
 ISV Studio unterstützt Anwendungen, die auf der Grundlage von Common Data Service erstellt und für [AppSource](https://appsource.microsoft.com/) veröffentlicht und darüber bereitgestellt werden. Für seitengeladene Lösungen, die nicht über AppSource bereitgestellt werden, wird keine Telemetrie zur Verfügung gestellt.
 
-Die derzeit auf der Common Data Service verfügbaren Anwendungen umfassen PowerApps sowie Dynamics 365 for Sales, Marketing, Service und Talent.
+Die derzeit auf der Common Data Service verfügbaren Anwendungen umfassen Power Apps sowie Dynamics 365 for Sales, Marketing, Service und Talent.
 
 Wenn ein Endbenutzer eine Anwendung von AppSource installiert, wird ein Zustimmungsdialogfeld angezeigt, das den Benutzer auffordert, anzuerkennen, dass die Kontakt-, Nutzungs- und Transaktionsinformationen für den Anwendungsanbieter freigegeben werden dürfen. Diese Informationen werden vom Anbieter verwendet, um Rechnungs- und andere Transaktionsaktivitäten zu unterstützen und Telemetrie in ISV Studio für den ISV zu ermöglichen, um Erkenntnisse zu gewinnen und diese in Aktionen umsetzen zu können.
 
@@ -50,7 +50,7 @@ Um auf die öffentliche Vorschau von ISV Studio zuzugreifen, navigieren Sie übe
 
 ## <a name="pre-requisites"></a>Voraussetzungen
 
-1. Der ISV muss einer registrierten Microsoft-Partnerorganisation [ISV] zugeordnet sein, von der mindestens eine unterstützte App in [AppSource](https://appsource.microsoft.com/) veröffentlicht wurde. Zu den unterstützten Anwendungen gehören PowerApps und modellgetriebene Anwendungen in Dynamics 365 wie Dynamics 365 Sales und Dynamics 365 Customer Service.
+1. Der ISV muss einer registrierten Microsoft-Partnerorganisation [ISV] zugeordnet sein, von der mindestens eine unterstützte App in [AppSource](https://appsource.microsoft.com/) veröffentlicht wurde. Zu den unterstützten Anwendungen gehören Power Apps und modellgetriebene Anwendungen in Dynamics 365 wie Dynamics 365 Sales und Dynamics 365 Customer Service.
 
 2. Der ISV muss über eine [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD)-Firma verfügen und die Firma muss als App-Mitwirkender oder -Besitzer im Cloud-Partnerportal (CPP) für den jeweiligen ISV konfiguriert sein.
 

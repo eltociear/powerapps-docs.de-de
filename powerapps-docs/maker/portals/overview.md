@@ -1,29 +1,30 @@
 ---
-title: Was ist PowerApps Portals? | Microsoft-Dokumentation
-description: Entwerfen und erstellen Sie Websites mithilfe von powerapps, sodass externe Benutzer mit den Daten interagieren können, die in der Common Data Service gespeichert sind.
+title: Was sind Power Apps-Portale? | Microsoft Docs
+description: Entwerfen und erstellen Sie Websites mit Power Apps, die es externen Nutzern ermöglichen, mit den in der Common Data Service gespeicherten Daten zu interagieren.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 80205a54a05035b0a5cce86fba9ce523df4ed046
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fb74650acb032041e6b082a82dc35c446b313f39
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541863"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862134"
 ---
-# <a name="what-is-powerapps-portals"></a>Was ist PowerApps Portals?
+# <a name="what-is-power-apps-portals"></a>Was sind Power Apps-Portale?
 
-Powerapps-Entwickler können nun eine leistungsstarke neue Art von Benutzer Arbeit schaffen: externe Websites, die es Benutzern außerhalb ihrer Organisationen ermöglichen, sich mit einer Vielzahl von Identitäten anzumelden, Daten in Common Data Service zu erstellen und anzuzeigen oder sogar Inhalte anonym zu durchsuchen. Die vollständigen Funktionen von Dynamics 365-Portalen, die zuvor nur als Add-on für Modell gesteuerte apps in Dynamics 365 angeboten wurden, sind nun vollständig eigenständig in powerapps verfügbar.  
+Power Apps-Ersteller können nun eine leistungsstarke neue Art von Erfahrung schaffen: nach außen gerichtete Websites, die es Benutzern außerhalb ihres Unternehmens ermöglichen, sich mit einer Vielzahl von Identitäten anzumelden, Daten in Common Data Service zu erstellen und anzuzeigen oder sogar anonym Inhalte zu durchsuchen. Die vollen Funktionen von Dynamics 365-Portalen, die bisher nur als Add-On für modellgesteuerte Apps in Dynamics 365 angeboten wurden, sind nun vollständig eigenständig in Power Apps verfügbar.  
 
-Diese Funktionen verfügen über eine überarbeitete End-to-End-Funktionalität für Entwickler, um schnell eine Website zu erstellen und Sie mit Seiten, Layout und Inhalten anzupassen. Ersteller können Seiten Entwürfe mithilfe von Vorlagen wieder verwenden, Formulare und Ansichten hinzufügen, um Schlüsseldaten aus Common Data Service anzuzeigen und Sie für Benutzer zu veröffentlichen.
+Diese Funktionen bieten ein überarbeitetes End-to-End-Erlebnis für die Hersteller, um schnell eine Website zu erstellen und sie mit Seiten, Layout und Inhalt anzupassen. Hersteller können Seitendesigns über Vorlagen wiederverwenden, Formulare und Ansichten hinzufügen, um Schlüsseldaten von Common Data Service anzuzeigen und für Benutzer zu veröffentlichen.
 
 > [!NOTE]
-> Bestimmte Erfahrungen können bekannte Probleme haben. Diese Probleme werden im Abschnitt " [bekannte Probleme](known-issues.md) " weiter unten in diesem Dokument erwähnt.  
+> - Power Apps-Portale basieren auf Bootstrap 3.3.x mit Ausnahme vom [Veranstaltungsportal](https://docs.microsoft.com/dynamics365/marketing/developer/event-management-web-application). Portalentwickler sollten Bootstrap 3 nicht durch andere CSS-Bibliotheken ersetzen, da einige der Szenarien in Power Apps-Portalen abhängig von Bootstrap 3.3.x sind.
+> - Bestimmte Erfahrungen führen möglicherweise zu bekannten Problemen. Diese Probleme werden im Abschnitt [Bekannte Probleme](known-issues.md) weiter unten in diesem Dokument erwähnt.  
 
 
  

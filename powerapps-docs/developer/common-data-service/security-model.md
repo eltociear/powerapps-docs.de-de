@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4305fca9d8a343421bc1128a4d4dcc8103d373be
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b637d0a26acddad25dcfe56b5ad8067f34735398
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748645"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859915"
 ---
 # <a name="security-model"></a>Sicherheitsmodell
 
@@ -34,7 +34,7 @@ Common Data Service bietet ein Sicherheitsmodell, mit dem die Datenintegrität g
 **Datensatzbasierte Sicherheit** konzentriert sich auf die Zugriffsrechte für bestimmte Datensätze.
 
 **Feldbasierte Sicherheit** schränkt den Zugriff auf bestimmte Felder mit hoher Auswirkung auf das Unternehmen in einer Entität nur auf bestimmte Benutzer oder Teams ein.
-Kombinieren Sie rollenbasierte Sicherheit, datensatzbasierte Sicherheit und feldbasierte Sicherheit, um die Gesamtsicherheitsrechte zu definieren, über die Benutzer in der PowerApps-Anwendung verfügen.
+Kombinieren Sie rollenbasierte Sicherheit, datensatzbasierte Sicherheit und feldbasierte Sicherheit, um die Gesamtsicherheitsrechte zu definieren, über die Benutzer in der Power Apps-Anwendung verfügen.
 
 Als Entwickler sollten Sie wissen, dass Abfragen im Code in dem Kontext eines Benutzers ausgeführt werden und nur die Datensätze zurückgeben, für die der Benutzer über Leseberechtigungen verfügt.
 Außerdem kann Ihr Code nur Vorgänge basierend auf Berechtigungen ausführen, die dem Benutzerkonto über die Sicherheitsrollen oder Teammitgliedschaft zugewiesen sind.

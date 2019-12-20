@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a51bc5b959938d37e222c695bd949bdd08207b29
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 405e27d3461f78a2452de1c8b19d99d4d827d879
+ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748364"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "2854676"
 ---
 # <a name="compose-http-requests-and-handle-errors"></a>HTTP-Anforderungen verfassen und Fehler beheben
 
@@ -138,8 +138,8 @@ Sie können zusätzliche Kopfzeilen verwenden, um bestimmte Möglichkeiten zu ak
 |404 Seite nicht gefunden|Dies annehmen, wenn die Ressource nicht vorhanden ist.|Client-Fehler|  
 |405 Methode nicht erlaubt|Dieser Fehler tritt für falsche Methoden und Ressourcenkombinationen auf. Beispielsweise können Sie weder DELETE noch PATCH bei einer Sammlung von Entitäten verwenden.<br /><br /> Folgendes für die folgenden Fehlertypen annehmen:<br /><br /> -   CannotDeleteDueToAssociation<br />-   InvalidOperation<br />-   NotSupported|Client-Fehler|  
 |412 Vorbedingung gescheitert|Folgendes für die folgenden Fehlertypen annehmen:<br /><br /> -   ConcurrencyVersionMismatch<br />-   DuplicateRecord|Client-Fehler|
-|429 zu viele Anforderungen|Erwarten Sie dies, wenn API-Begrenzungen überschritten werden. Weitere Informationen:[API-Einschränkungen](../api-limits.md)|Client-Fehler|  
-|501 Nicht implementiert|Dies annehmen, wenn ein angeforderter Vorgang nicht implementiert wird.|Serverfehler|  
+|429 zu viele Anforderungen|Erwarten Sie dies, wenn API-Begrenzungen überschritten werden. Für weitere Informationen gehen Sie zu: [API-Grenzwerte für den Serviceschutz](../api-limits.md)|Client-Fehler|  
+|501 Nicht implementiert|Rechnen Sie damit, wenn ein angeforderter Vorgang nicht implementiert wird.|Serverfehler|  
 |503 Service nicht verfügbar|Dies annehmen, wenn der Web-API-Service nicht verfügbar ist.|Serverfehler|  
   
 <a name="bkmk_parseErrors"></a>

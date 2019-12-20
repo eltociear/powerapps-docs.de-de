@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa12284b6ca3eeca25ba01d52e4132319586eea4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c6625d36c889825a7cd4d68a17996e5ef8118284
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748358"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859939"
 ---
 # <a name="enhanced-quick-start"></a>Verbesserte Schnellstartfunktion
 
@@ -425,7 +425,7 @@ Führen Sie in Ihrem Visual Studio-Projekt die folgenden Schritte aus:
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Wenn Sie Probleme beim Ausführen dieser Beispiele haben, können Sie alle PowerApps-Beispiele aus dem GitHub-Repository unter [https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) herunterladen.
+Wenn Sie Probleme beim Ausführen dieser Beispiele haben, können Sie alle Power Apps-Beispiele aus dem GitHub-Repository unter [https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) herunterladen.
 
 Dieses Beispiel basiert auf der [SimpleWebApi](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/SimpleWebApi) im Ordner `PowerApps-Samples-master\PowerApps-Samples-master\cds\webapi\C#\SimpleWebApi`.
 

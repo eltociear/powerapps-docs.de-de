@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer benutzerdefinierten Entität | Microsoft Docs
-description: Weitere Informationen zum Erstellen einer benutzerdefinierten Entität in PowerApps.
+description: Weitere Informationen zum Erstellen einer benutzerdefinierten Entität in Power Apps.
 author: Mattp123
 ms.service: powerapps
 ms.component: cds
@@ -12,23 +12,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1331d272b30bb3455ae06a8dd726eb3a9dc630f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e24249573f6c7e56ff16de6808e2423acbf3c0cf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754957"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884186"
 ---
 # <a name="create-a-custom-entity"></a>Benutzerdefinierte Entität erstellen
-In PowerApps definiert eine *Entität* Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. Sie können dann diese Daten dann aufrufen, indem Sie eine App entwickeln, die auf diese Entität verweist. PowerApps bietet integrierte Standardentitäten für typische Szenarien in einer Organisation (z. B. das Nachverfolgen von Terminen), doch es gibt möglicherweise Zeiten, in denen Sie benutzerdefinierte Entitäten zum Speichern von Daten erstellen müssen, die spezifisch für Ihre Organisation sind.
+In Power Apps definiert eine *Entität* Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. Sie können dann diese Daten dann aufrufen, indem Sie eine App entwickeln, die auf diese Entität verweist. Power Apps bietet integrierte Standardentitäten für typische Szenarien in einer Organisation (z. B. das Nachverfolgen von Terminen), doch es gibt möglicherweise Zeiten, in denen Sie benutzerdefinierte Entitäten zum Speichern von Daten erstellen müssen, die spezifisch für Ihre Organisation sind.
 
 In diesem Thema erfahren Sie, wie Sie eine benutzerdefinierte Entität namens "Produktbewertung" erstellen, mit der eine App erstellen können, die Bewertungen und Kommentare für Produkte anzeigt, die Ihr Unternehmen vertreibt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Für dieses Verfahren müssen Sie über eine Systemadministrator- oder Systemanpasser-Sicherheitsrolle in Common Data Service verfügen.
 
-## <a name="sign-in-to-powerapps"></a>Bei PowerApps anmelden
-Melden Sie sich bei PowerApps unter [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+## <a name="sign-in-to-power-apps"></a>Bei Power Apps anmelden
+Melden Sie sich bei Power Apps unter [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 ## <a name="create-an-entity"></a>Entität erstellen
 1. Klicken oder tippen Sie im Navigationsbereich auf **Daten**, um sie zu erweitern, und klicken oder tippen Sie dann auf **Entitäten**.
@@ -45,7 +45,7 @@ Melden Sie sich bei PowerApps unter [https://make.powerapps.com](https://make.po
 
     Beachten Sie, dass die folgenden Felder automatisch aufgefüllt werden, wenn Sie einen Anzeigenamen eingeben:
 
-    * **Pluralanzeigename** - Dieses Feld wird automatisch befüllt, wenn Sie einen Anzeigenamen eingeben, aber Sie können ihn nach Bedarf ändern. Der Pluralanzeigename ist der Entitätsname in der Common Data Service-WebAPI und wird beim Interagieren mit dieser Entität aus PowerApps oder Flow verwendet.
+    * **Pluralanzeigename** - Dieses Feld wird automatisch befüllt, wenn Sie einen Anzeigenamen eingeben, aber Sie können ihn nach Bedarf ändern. Der Pluralanzeigename ist der Entitätsname in der Common Data Service-WebAPI und wird beim Interagieren mit dieser Entität aus Power Apps oder Flow verwendet.
     * **Name** - Dieses Feld wird auch automatisch befüllt, wenn Sie einen Anzeigenamen eingeben. Das Präfix wurde eingerichtet, als die Umgebung erstellt wurde. es stellt sicher, dass die Entitäten, die Sie erstellen, ohne Konflikte mit anderen Entitätsnamen aus und in andere Umgebungen exportiert und importiert werden können. Sie können dieses Präfix ändern, indem Sie das Präfix in Ihrem Herausgeber für die Standardlösung von Common Data Service aktualisieren. Damit vorhandene Apps nicht beschädigt werden, können Sie den Namen nach der Speicherung der Entität nicht mehr ändern.
 
        > [!NOTE]
@@ -111,4 +111,4 @@ In diesem Thema haben Sie erfahren, wie Sie eine benutzerdefinierte Entität nam
 > [Erstellen einer Beziehung](data-platform-entity-lookup.md)
 
 ## <a name="privacy-notice"></a>Datenschutzbestimmungen
-Mit dem allgemeinen Datenmodell von Microsoft PowerApps sammelt und speichert Microsoft benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen. Wir verwenden diese Informationen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die von App-Erstellern erstellt werden, helfen uns dabei, Szenarien zu verstehen, die in der Microsoft PowerApps-Community üblich sind, und Lücken bei den Standardentitäten des Service festzustellen, z. B. Schemas bezüglich der Organisationen. Die Daten in den Datenbanktabellen, die mit diesen Entitäten verknüpft werden, werden von Microsoft nicht verwendet, es wird nicht darauf zugegriffen und sie werden nicht außerhalb der Region, in der die Datenbank bereitgestellt wird, repliziert. Beachten Sie jedoch, dass die benutzerdefinierte Entität und die Feldnamen möglicherweise in Regionen repliziert werden und in Übereinstimmung mit unseren Richtlinien zur Datenaufbewahrung gelöscht werden. Microsoft legt großen Wert auf Ihren Datenschutz, wie weiter unten in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.
+Mit dem allgemeinen Datenmodell von Microsoft Power Apps sammelt und speichert Microsoft benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen. Wir verwenden diese Informationen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die von App-Erstellern erstellt werden, helfen uns dabei, Szenarien zu verstehen, die in der Microsoft Power Apps-Community üblich sind, und Lücken bei den Standardentitäten des Service festzustellen, z. B. Schemas bezüglich der Organisationen. Die Daten in den Datenbanktabellen, die mit diesen Entitäten verknüpft werden, werden von Microsoft nicht verwendet, es wird nicht darauf zugegriffen und sie werden nicht außerhalb der Region, in der die Datenbank bereitgestellt wird, repliziert. Beachten Sie jedoch, dass die benutzerdefinierte Entität und die Feldnamen möglicherweise in Regionen repliziert werden und in Übereinstimmung mit unseren Richtlinien zur Datenaufbewahrung gelöscht werden. Microsoft legt großen Wert auf Ihren Datenschutz, wie weiter unten in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.

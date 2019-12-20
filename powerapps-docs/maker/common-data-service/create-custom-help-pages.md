@@ -22,18 +22,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e5c0d84da984fbdb5d7bdb4a2f05a567f76cee09
-ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.openlocfilehash: 25ad6206fb76c1c26f182c4ff4b67c8815e7e8ba
+ms.sourcegitcommit: 94aa6fd38aab1e145e0b9a0189154fb69b0ee223
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2768418"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2778943"
 ---
 # <a name="create-guided-help-for-your-unified-interface-app"></a>Erstellen Sie einen interaktiven Begleiter für Ihre App Einheitliche Oberfläche
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Verwenden Sie benutzerdefinierte Hilfebereiche und Aufgabenhilfen, um Ihrer Einheitliche Oberfläche Anwendung eine benutzerdefinierte, auf Ihr Unternehmen zugeschnittene Hilfefunktion, im Produkt zu bieten. Verwenden Sie benutzerdefinierte Hilfebereiche, um eine Entitäts-, Formular- und sprachspezifische Hilfe und Anleitung bereitzustellen, die Rich-Text-, Inhaltslinks, Bilder und Videoverknüpfungen enthält. Benutzerdefinierte Hilfebereiche ersetzen die bisherige lernpfadgeführte Lernfunktion, die bei älteren Web-Client-Anwendungen verwendet wurde.
+Verwenden Sie benutzerdefinierte Hilfebereiche und Aufgabenhilfen, um Ihrer Einheitliche Oberfläche Anwendung eine benutzerdefinierte, auf Ihr Unternehmen zugeschnittene Hilfefunktion, im Produkt zu bieten. Verwenden Sie benutzerdefinierte Hilfebereiche, um eine Entitäts-, Formular- und sprachspezifische Hilfe und Anleitung bereitzustellen, die Rich-Text-, Inhaltslinks, Bilder und Videoverknüpfungen enthält. 
+
+> [!IMPORTANT]
+> Benutzerdefinierte Hilfebereiche ersetzen die bisherige lernpfadgeführte Lernfunktion, die bei älteren Web-Client-Anwendungen verwendet wurde.
 
 ## <a name="custom-help-panes-and-learning-path"></a>Benutzerdefinierte Hilfebereiche und -Lernpfad
 Die neue Implementierung des interaktiven Begleiters benutzerdefinierter Hilfebereiche unterscheidet sich von der vorherigen Funktion des interaktiven Lernpfadbegleiters. Beide Funktionen erlauben Ihnen die Erstellung benutzerdefinierter Hilfe für Ihre Anwendung. Allerdings werden benutzerdefinierte Hilfebereiche für die gängigsten Szenarien interaktiver Begleiter optimiert.   

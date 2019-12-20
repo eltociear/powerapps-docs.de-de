@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc5f2c366d77ca49e5103c89d7114f1defd44b52
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d2883f0912f9708acf8c24b5ec32996cb96ad3c6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752338"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863594"
 ---
 # <a name="additional-controls-for-dynamics-365-for-phones-and-tablets"></a>Zusätzliche Steuerelemente für Dynamics 365 für Smartphones und Tablets 
 
@@ -155,7 +155,7 @@ ms.locfileid: "2752338"
  Verwenden Sie das Websitevorschausteuerelement, um ein URL-Feld ein zuordnen und eine Vorschau der Website anzuzeigen.  
   
 > [!IMPORTANT]
->  Mit der Aktivierung dieses Steuerelements stimmen Sie zu, Ihren Benutzern bestimmte identifizierbare Geräteinformationen mit einem externen System freizugeben. Die Daten, die aus externen Systemen in eine PowerApps-App oder in Dynamics 365-Apps wie z. B. Dynamics 365 Sales oder Dynamics 365 Customer Service importiert werden, unterliegen unseren Datenschutzbestimmungen unter [Microsoft-Datenschutz und Cookies](https://go.microsoft.com/fwlink/p/?LinkId=521839).  
+>  Mit der Aktivierung dieses Steuerelements stimmen Sie zu, Ihren Benutzern bestimmte identifizierbare Geräteinformationen mit einem externen System freizugeben. Die Daten, die aus externen Systemen in eine Power Apps-App oder in Dynamics 365-Apps wie z. B. Dynamics 365 Sales oder Dynamics 365 Customer Service importiert werden, unterliegen unseren Datenschutzbestimmungen unter [Microsoft-Datenschutz und Cookies](https://go.microsoft.com/fwlink/p/?LinkId=521839).  
 >   
 >  [Datenschutzhinweise](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   

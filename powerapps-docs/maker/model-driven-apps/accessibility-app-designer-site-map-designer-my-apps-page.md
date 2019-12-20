@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zur Barrierefreiheit im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in PowerApps | Microsoft-Dokumentation
-description: Informationen zur Barrierefreiheit in modellgesteuerten Apps mit App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in PowerApps
+title: Grundlegendes zur Barrierefreiheit im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in Power Apps | Microsoft-Dokumentation
+description: Informationen zur Barrierefreiheit in modellgesteuerten Apps mit App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in Power Apps
 keywords: App-Designer, Siteübersicht-Designer; meine Apps; Dynamics 365
 author: Mattp123
 ms.author: matp
@@ -17,21 +17,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c0f845b1b1b390bb6033efa282792b0b5116e6fc
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5a2226e87193079c1b68858f30759f509562cbda
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752060"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885219"
 ---
-# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Barrierefreiheit in PowerApps, im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite
+# <a name="accessibility-in-power-apps-app-designer-site-map-designer-and-my-apps-page"></a>Barrierefreiheit in Power Apps, im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite
 
 Microsoft legt großen Wert darauf, dass die Produkte und Dienste von Microsoft für jeden möglichst einfach zu handhaben sind. Weitere Informationen: [Microsoft-Barrierefreiheit](https://www.microsoft.com/enable/default.aspx)  
  
 In diesem Thema wird die Barrierefreiheit beschrieben, die in modellgesteuerten Apps verfügbar ist.  
   
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen  
-In PowerApps wird mit Tastenkombinationen eine Hilfestellung geboten, um die Arbeit für Benutzer mit eingeschränkter Bewegungsfreiheit und Behinderungen zu erleichtern.  
+In Power Apps wird mit Tastenkombinationen eine Hilfestellung geboten, um die Arbeit für Benutzer mit eingeschränkter Bewegungsfreiheit und Behinderungen zu erleichtern.  
   
 |Meine Apps-Seite|||  
 |------------------|-|-|  
@@ -111,4 +111,4 @@ In PowerApps wird mit Tastenkombinationen eine Hilfestellung geboten, um die Arb
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden von Tastenkombinationen in PowerApps](/powerapps/user/keyboard-shortcuts)
+[Verwenden von Tastenkombinationen in Power Apps](/powerapps/user/keyboard-shortcuts)

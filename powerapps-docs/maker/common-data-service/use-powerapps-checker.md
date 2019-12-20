@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie den Lösungsprüfer, um Ihre Anwendungen in PowerApps | Microsoft Docs zu validieren.
+title: Verwenden Sie den Lösungsprüfer, um Ihre Anwendungen in Power Apps | Microsoft Docs zu validieren.
 description: Verwenden Sie den Lösungsprüfer, um Ihre Lösung zu überprüfen.
 author: Mattp123
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c42dfe260fd77f40cd3046f754177838b17eefc2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e9a3fb0c291678c5c571895c900bfde10a7f42ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758854"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885372"
 ---
-# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Verwenden Sie den Lösungsprüfer, um Ihre modellgetriebenen Anwendungen in PowerApps zu validieren.
+# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-power-apps"></a>Verwenden Sie den Lösungsprüfer, um Ihre modellgetriebenen Anwendungen in Power Apps zu validieren.
 
 Um komplexe geschäftliche Anforderungen zu liefern, können Modell-angetriebene App-Hersteller mit fortschrittlichen Lösungen arbeiten, die Common Data Service-Plattform anpassen und erweitern. Mit der erweiterten Implementierungen kommt ein erhöhtes Risiko, wo, Leistung und Stabilität Zuverlässigkeitsprobleme eingegeben werden, und sich auf die Benutzererfahrung negativ auswirken können. Identifizieren und verstehen, wie diese Probleme zeitaufwendig und kompliziert sein können. Mit der Lösungsprüferfunktion können Sie eine umfangreiche Prüfung der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen und diese problematischen Muster schnell ermitteln. Nach der Überprüfung erhalten Sie einen Bericht, der Probleme aufzeigt, die bestimmt werden, welche Komponenten und Code betroffen sind und die Dokumentation verknüpft, die beschreibt, wie ein Problem zu beheben ist.
 
@@ -33,13 +33,13 @@ Der Lösungsprüfer analysiert die Lösungskomponente:
 Lösungsprüfer abeiten mit nicht verwalteten Lösungen, die von einer Umgebung exportiert werden. 
 
 > [!NOTE]
-> - In diesem Thema wird erläutert, wie Sie den Lösungsprüfer über das Herstellerportal PowerApps ausführen. Ein PowerShell-Modul ist ebenfalls verfügbar, das Sie verwenden können, um direkt mit dem Service zu interagieren. Das Microsoft. PowerApps.Checker.PowerShell-Modul kann zur Analyse von verwalteten und nicht verwalteten Lösungen für unterstützte Versionen von lokalen und Online-Umgebungen oder zur Automatisierung und Integration des Dienstes in Ihre Build und Release Pipelines verwendet werden. Mehr Informationen: [Microsoft. PowerApps.Checker.PowerShell Übersicht]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
+> - In diesem Thema wird erläutert, wie Sie den Lösungsprüfer über das Herstellerportal Power Apps ausführen. Ein PowerShell-Modul ist ebenfalls verfügbar, das Sie verwenden können, um direkt mit dem Service zu interagieren. Das Microsoft. PowerApps.Checker.PowerShell-Modul kann zur Analyse von verwalteten und nicht verwalteten Lösungen für unterstützte Versionen von lokalen und Online-Umgebungen oder zur Automatisierung und Integration des Dienstes in Ihre Build und Release Pipelines verwendet werden. Mehr Informationen: [Microsoft. PowerApps.Checker.PowerShell Übersicht]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
 > - Der Lösungsprüfer funktioniert nicht für Lösungen, die JavaScript mit ECMAScript 6 (2015 ) oder höhere Versionen enthalten. Wenn JavaScript mit einer dieser Versionen erkannt wird, wird ein JS001 Syntax-Problem für die Webressource berichtet.
 
 ## <a name="enable-the-solution-checker"></a>Aktivieren des Lösungsprüfer
-Der Solution Checker ist standardmäßig in jeder Common Data Service-Umgebung aktiviert. Ein Menüpunkt **Lösungsprüfer** ist verfügbar, wenn Sie eine nicht verwaltete Lösung im Bereich **Lösungen** von PowerApps auswählen. Wenn die Option **Ausführen** im Menü **Build Checker** nicht verfügbar ist, können Sie sie aktivieren, indem Sie die Checkerlösung PowerApps installieren. Zur Installation führen Sie die folgenden Schritte aus:   
+Der Solution Checker ist standardmäßig in jeder Common Data Service-Umgebung aktiviert. Ein Menüpunkt **Lösungsprüfer** ist verfügbar, wenn Sie eine nicht verwaltete Lösung im Bereich **Lösungen** von Power Apps auswählen. Wenn die Option **Ausführen** im Menü **Build Checker** nicht verfügbar ist, können Sie sie aktivieren, indem Sie die Checkerlösung Power Apps installieren. Zur Installation führen Sie die folgenden Schritte aus:   
 
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie die Common Data Service-Umgebung, in der Sie den Lösungsprüfer aktivieren möchten. 
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie die Common Data Service-Umgebung, in der Sie den Lösungsprüfer aktivieren möchten. 
 2. Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.
 3. Klicken Sie auf der Symbolleiste die Option **Lösungsprüfer** und anschließend **Installieren** aus – das öffnet die Microsoft AppSource-Seite. Sie müssen Popup-Fenster ermöglichen, wenn der Browser die Seite am Öffnen hindert. 
 
@@ -48,25 +48,25 @@ Der Solution Checker ist standardmäßig in jeder Common Data Service-Umgebung a
 
 4. Wählen Sie **Kostenlose Testversion** auf der AppSource-Seite. 
 
-5. Wenn Sie zustimmen, akzeptieren Sie die Allgemeinen Geschäftsbedingungen und wählen Sie die Umgebung für die Installation der PowerApps Checker-Lösung. 
-6. Wenn die Installation abgeschlossen ist, aktualisieren Sie die Liste **Lösung** auf der Seite PowerApps, um sicherzustellen, dass der Lösungsprüfer verfügbar ist.  
+5. Wenn Sie zustimmen, akzeptieren Sie die Allgemeinen Geschäftsbedingungen und wählen Sie die Umgebung für die Installation der Power Apps Checker-Lösung. 
+6. Wenn die Installation abgeschlossen ist, aktualisieren Sie die Liste **Lösung** auf der Seite Power Apps, um sicherzustellen, dass der Lösungsprüfer verfügbar ist.  
 7. Wenn Sie eine Lösung prüfen [Führen Sie den aus Lösungsprüfer aus](#run-the-solution-checker).
 
 
-<!-- ### Components created with the PowerApps checker
-When you install the PowerApps checker these solution specific components are created. 
+<!-- ### Components created with the Power Apps checker
+When you install the Power Apps checker these solution specific components are created. 
 - Entities: The entities that are created are required to store the results of solution analysis and the status of analysis jobs in your environment.
    - Analysis Component
    - Analysis Job
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **Power Apps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The Power Apps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>Ausführen es Lösungsprüfer
-Nachdem Sie den PowerApps-Checker in Ihrer Umgebung installiert haben, steht Ihnen ein Menüpunkt **Lösungsprüfer** zur Verfügung, wenn Sie eine nicht verwaltete Lösung im Bereich **Lösungen** von PowerApps auswählen. 
+Nachdem Sie den Power Apps-Checker in Ihrer Umgebung installiert haben, steht Ihnen ein Menüpunkt **Lösungsprüfer** zur Verfügung, wenn Sie eine nicht verwaltete Lösung im Bereich **Lösungen** von Power Apps auswählen. 
 
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
 2. Wählen Sie im Navigationsbereich **Lösungen** aus. 
 3. Neben der nicht verwalteten Lösung, die Sie auch zum Analysieren möchten, wählen Sie **...** aus, zeigen Sie auf **Lösungsprüfer** und dann auf **Ausführen**. 
 
@@ -83,7 +83,7 @@ Nachdem Sie den PowerApps-Checker in Ihrer Umgebung installiert haben, steht Ihn
     
     - Während dieser Zeit wird **Ausführen…** angezeigt Status in der Spalte **Lösungsprüfung** der Liste **Lösung**. 
     
-    - Sie erhalten eine E-Mail-Benachrichtigung und eine Benachrichtigung im Bereich **Benachrichtigungen** auf der Seite PowerApps, wenn die Überprüfung abgeschlossen ist.  
+    - Sie erhalten eine E-Mail-Benachrichtigung und eine Benachrichtigung im Bereich **Benachrichtigungen** auf der Seite Power Apps, wenn die Überprüfung abgeschlossen ist.  
 
 5.  [Zum Anzeigen des Berichts](#review-the-solution-checker-report) Wenn eine Prüfung abgeschlossen ist.
 

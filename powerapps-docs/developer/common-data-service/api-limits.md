@@ -1,70 +1,113 @@
 ---
-title: API-Limits (Common Data Service) | Microsoft-Dokumentation
-description: Verstehen Sie die Begrenzungen für API-Anforderungen.
+title: Service Protection API-Beschränkungen (Common Data Service) | Microsoft Docs
+description: Verstehen Sie die Serviceschutzgrenzen für API-Anforderungen.
 ms.custom: ''
-ms.date: 03/21/2019
+ms.date: 11/23/2019
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
-ms.author: bsimons
-manager: annbe
+ms.author: jdaly
+manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6b332b1e71a8d440c02cc79f7566eec59533cce
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0e5f79553ea0a29c6dde908807aef950c30ecc8a
+ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753082"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "2854749"
 ---
-# <a name="api-limits"></a>API-Begrenzungen
+# <a name="service-protection-api-limits"></a>API-Grenzwerte für den Serviceschutz
 
-Wir begrenzen die Anzahl der API-Anforderungen, die von jedem Benutzer erteilt werden können, pro Organisationsinstanz in einem fünfminütigen gleitenden Fenster. Außerdem beschränken wir die Anzahl der gleichzeitigen Anforderungen, die auf einmal eingehen können.  Wenn einer dieser Grenzwerte überschritten wird, gibt die Plattform eine Ausnahme zurück.
+Um eine konsistente Verfügbarkeit und Leistung für alle zu gewährleisten, wenden wir einige Einschränkungen für die Verwendung von APIs anwenden. Wir begrenzen die Anzahl der gleichzeitigen Verbindungen pro Benutzerkonto, die Anzahl der API-Anforderungen pro Verbindung und die Ausführungszeit, die für jede Verbindung verwendet werden kann. Diese werden innerhalb eines fünfminütigen Schiebefensters ausgewertet. Wenn einer dieser Grenzwerte überschritten wird, gibt die Plattform eine Ausnahme zurück.
 
-Die Beschränkung stellt sicher, dass Benutzer, die Anwendungen ausführen, sich nicht aufgrund vorhandener Ressourceneinschränkungen gegenseitig stören. Die Grenzwerte haben keine Auswirkungen auf normale Plattformbenutzer. Nur Anwendungen, die eine sehr große Anzahl an API-Anforderungen ausführen, sind möglicherweise betroffen. Er bietet einen gewissen Schutz vor dem unwillkürlichen und unerwarteten Anstieg des Anforderungsvolumens, das die Verfügbarkeit und Leistungsfähigkeit der Common Data Service-Plattform gefährdet.
+Der Serviceschutz API Grenzwert stellt sicher, dass Benutzer, die Anwendungen ausführen, sich nicht aufgrund vorhandener Ressourceneinschränkungen gegenseitig stören. Die Grenzwerte haben keine Auswirkungen auf normale Plattformbenutzer. Nur Anwendungen, die eine sehr große Anzahl an API-Anforderungen ausführen, sind möglicherweise betroffen. Der Grenzwert bietet einen gewissen Schutz vor dem unwillkürlichen und unerwarteten Anstieg des Anforderungsvolumens, das die Verfügbarkeit und Leistungsfähigkeit der Common Data Service Plattform gefährdet.
 
-Da Plug-Ins und benutzerdefinierte Workflow-Aktivitäten auf dem Server unabhängig eines angemeldeten Benutzers ausgeführt werden, zählen Aufrufe vom Plugin-Code nicht zu diesem externen API-Aufruflimit.
+Da Plug-Ins und benutzerdefinierte Workflow-Aktivitäten auf dem Server unabhängig eines angemeldeten Benutzers ausgeführt werden, zählen Aufrufe vom Plugin-Code nicht zu diesen Serviceschutz API-Aufruflimit. 
 
-Falls bei Ihrer Anwendung die Möglichkeit besteht, diese Begrenzung zu überschreiten, beachten Sie bitte die Leitlinien, die Sie im Abschnitt [Was ist zu tun, wenn meine Anwendung die Begrenzung überschreitet?](#what-should-i-do-if-my-application-exceeds-the-limit) unten finden.
+## <a name="limits"></a>Begrenzungen
+
+> [!IMPORTANT]
+> Diese Grenzwerte gelten pro Webserver. Jede Skalierungsgruppe verfügt über mehrere Webserver, die je nach Lastenausgleich jede Anforderung verarbeiten können. Diese Zahlen repräsentieren einen einzelnen Webserver und daher aufgrund dieser Grenzwerte das niedrigstmögliche Durchsatzniveau. Ihr tatsächlicher Durchsatz sollte höher sein.
+> 
+> Sie werden signifikante Unterschiede zwischen Testumgebungen und Produktionsumgebungen feststellen. Testumgebungen sind weniger Ressourcen zugeordnet, sodass sie diese Grenzwerte leichter erreichen als Produktionsumgebungen.
+> 
+> Konzentrieren Sie sich nicht zu sehr auf die Zahlen hier. Es ist wichtig zu verstehen, dass Anwendungen, die von umfangreichen Datenoperationen abhängen, so konzipiert sein sollten, dass sie auf vom Server gesendete Signale reagieren, um anzuzeigen, wann die Grenzwerte erreicht sind. Versuchen Sie nicht, hard-Code-Lösungen basierend auf den Zahlen zu verwenden. Verwenden Sie stattdessen die unten beschriebenen Techniken, um den höchstmöglichen Durchsatz zu erzielen, indem Sie auf die vom Dienst gesendeten Signale reagieren.
+
+Serviceschutzbeschränkungen gehen davon aus, dass die Anwendung mehrere Threads verwendet, um die Leistung zu maximieren. Jeder Thread stellt eine separate Verbindung dar und jede Verbindung wird in einem Schiebefenster von 5 Minuten (300 Sekunden) ausgewertet.
+
+Innerhalb dieses 5-minütigen Schiebefensters gibt es drei Aspekte, die wie in der folgenden Tabelle beschrieben gemessen werden:
+
+|Kennzahl|Beschreibung|Limit pro Webserver|
+|--|--|--|
+|Anzahl von Anforderungen|Die tatsächliche Anzahl der Anfragen pro Verbindung.|6000|
+|Ausführungszeit|Die kombinierte Dauer für alle Verbindungen, die dasselbe Benutzerkonto verwenden| 20 Minuten (1200 Sekunden)|
+|Anzahl Verbindungen|Die Anzahl der Verbindungen, die dasselbe Benutzerkonto verwenden|52|
+
+Die Kombination von **Anzahl der Anfragen** und **Ausführungszeit** berücksichtigt die Tatsache, dass einige Vorgänge mehr Systemressourcen erfordern als andere. Das Ausführen einer komplexen Abfrage erfordert mehr Systemressourcen als das Erstellen oder Aktualisieren eines einzelnen Datensatzes.
+
+Während API-Aufrufe aus Plug-In-Code nicht mit der Anzahl der Anforderungen verrechnet werden, wird die Ausführungszeit dieser Aufrufe auf den ursprünglichen Aufruf angewendet.
+
+Bei einigen bekannten Systemvorgängen mit langer Laufzeit, wie z. B. ImportSolution, wird die Ausführungszeit nicht vollständig in die Berechnung des Grenzwerts einbezogen. Der Beitrag dieser Aufrufe zur Limitberechnung ist auf 5 Minuten begrenzt, wenn die tatsächliche Ausführungszeit größer ist.
+
+Falls bei Ihrer Anwendung die Möglichkeit besteht, diese Limitenbegrenzung zu überschreiten, beachten Sie bitte die Leitlinien, die Sie im Abschnitt [Was ist zu tun, wenn meine Anwendung die Begrenzung überschreitet?](#what-should-i-do-if-my-application-exceeds-the-limit) unten finden.
+
+Abhängig von der Art der Daten, die Sie verarbeiten, können Sie die Anzahl der gleichzeitigen Verbindungen anpassen, um den maximalen Durchsatz zu erzielen. Wenn jede Operation relativ schnell ist, verwenden Sie mehr Verbindungen.
 
 ## <a name="what-happens-when-the-limit-is-exceeded"></a>Was geschieht, wenn die Begrenzung überschritten wird?
 
-Wenn die Begrenzung überschritten wird, wird für alle Anforderungen desselben Benutzers eine Fehlerantwort zurückgegeben.
+Wenn die Begrenzung überschritten wird, wird für alle Anforderungen derselben Verbindung eine Fehlerantwort zurückgegeben.
 
 Wenn Sie die .NET-SDK-Assemblys verwenden, reagiert die Plattform mit einem `FaultException<OrganizationServiceFault>` WCF-Fehler.  
 
 | Fehlercode | Meldung |
 |------------|-------------------------------------|
-|`-2147015902`|`Number of requests exceeded the limit of 4000, measured over time window of 300 seconds.`|
+|`-2147015902`|`Number of requests exceeded the limit of 6000, measured over time window of 300 seconds.`|
 |`-2147015903`|`Combined execution time of incoming requests exceeded limit of 1,200,000 milliseconds over time window of 300 seconds. Decrease number of concurrent requests or reduce the duration of requests and try again later.`|
-|`-2147015898`|`Number of concurrent requests exceeded the limit of X`|
+|`-2147015898`|`Number of concurrent requests exceeded the limit of 52`|
 
-Wenn Sie HTTP-Anforderungen verwenden, beinhaltet die Antwort dieselbe Nachricht aber mit:<br />
+Wenn Sie HTTP-Anforderungen mit der Web-API verwenden, beinhaltet die Antwort dieselbe Nachricht aber mit:<br />
 `StatusCode` : `429`
 
 Von allen Anforderungen werden diese Fehlerantworten zurückgegeben, bis das Volumen der API-Anforderungen unter die Begrenzung fällt. Wenn Sie diese Antworten erhalten, sollten von Ihrer Anwendung keine weiteren API-Anforderungen mehr gesendet werden, bis das Volumen der Anforderungen unterhalb der Begrenzung liegt.
 
+> [!TIP]
+> Wenn Sie HTTP-Anforderungen mit der Web-API verwenden, können Sie die verbleibenden Grenzwerte mit den folgenden HTTP Header verfolgen:
+> 
+> |Kopfzeile  |Wertbeschreibung  |
+> |---------|---------|
+> |`x-ms-ratelimit-burst-remaining-xrm-requests` |Die verbleibende Anzahl von Anforderungen für diese Verbindung|
+> |`x-ms-ratelimit-time-remaining-xrm-requests`  |Die kombinierte verbleibende Dauer für alle Verbindungen, die dasselbe Benutzerkonto verwenden|
+
 ## <a name="what-should-i-do-if-my-application-exceeds-the-limit"></a>Was muss ich tun, wenn meine Anwendung die Begrenzung überschreitet?
 
-Wenn von Ihrer Anwendung die Begrenzung überschritten wird, gibt die Fehlerantwort vom Server möglicherweise an, wie lange Sie warten sollten, bis Sie weitere Anforderungen übermitteln. Das Antwortobjekt ist etwas anders, wenn Sie SDK-Assemblys oder HTTP-Anforderungen verwenden.
+Wenn von Ihrer Anwendung die Begrenzung überschritten wird, gibt die Fehlerantwort vom Server möglicherweise an, wie lange Sie warten sollten, bis Sie weitere Anforderungen übermitteln. Das Antwortobjekt ist etwas anders, wenn Sie SDK-Assemblys oder HTTP-Anforderungen mit der Web-API verwenden.
 
 Eine Diskussion zu bewährten Methoden finden Sie unter [Bewährte Methoden in der Azure-Architektur zur Behandlung von vorübergehenden Fehlern](/azure/architecture/best-practices/transient-faults)
 
 [Das Polly-Projekt](https://www.thepollyproject.org/) ist eine Bibliothek mit Funktionen zum Umgang mit vorübergehenden Fehlern mithilfe von Ausführungsrichtlinien.
 
-### <a name="http-requests"></a>HTTP-Anforderungen
+### <a name="http-requests-with-the-web-api"></a>HTPP Anforderungen funktionieren mit der Web-API
 
-Wenn Sie HTTP-Anforderungen verwenden, können Sie nach der `Retry-After`-HTTP-Kopfzeile suchen, die in der Fehlerantwort enthalten ist. Diese enthält einen Wert in Sekunden, der angibt, wie lange Sie warten müssen, bis Sie eine Folgeanforderung erteilen. Weitere Informationen: [MDN-Webdokumente – Neuversuch danach](https://developer.mozilla.org/docs/Web/HTTP/Headers/Retry-After)
+Wenn Sie auf einen 429-Fehlercode stoßen, können Sie nach dem `Retry-After` HTTP Header suchen, der in der Fehlerantwort enthalten ist. Diese enthält einen Wert in Sekunden, der angibt, wie lange Sie warten müssen, bis Sie eine Folgeanforderung erteilen. Weitere Informationen: [MDN-Webdokumente – Neuversuch danach](https://developer.mozilla.org/docs/Web/HTTP/Headers/Retry-After)
 
 ### <a name="sdk-assemblies"></a>SDK-Assemblys
 
-Wenn Sie die SDK-Assemblys verwenden, können Sie nach der `Retry-After`-Verzögerung in der <xref:Microsoft.Xrm.Sdk.OrganizationServiceFault>.<xref:Microsoft.Xrm.Sdk.BaseServiceFault.ErrorDetails> Eigenschaft, mithilfe des Schlüssels `"Retry-After"`suchen. Der zurückgegebene Wert ist ein [TimeSpan](/dotnet/api/system.timespan)-Objekt.
+> [!NOTE]
+> Sie müssen diese Muster nicht anwenden, wenn:
+>
+>  - Ihr Code wird in einem Plug-In oder in einer benutzerdefinierten Workflowaktivität ausgeführt. Sie müssen diese Muster nicht anwenden, da in diesen Fällen keine Serviceschutzbeschränkungen angewendet werden.
+>  - Sie verwenden <xref:Microsoft.Xrm.Tooling.Connector>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>. Diese Muster sind in diesen Client integriert. Dies ist die empfohlene Proxy-Klasse für Client-Anwendungen.
+>
+> Sie müssen diese Muster anwenden, wenn Sie das <xref:Microsoft.Xrm.Sdk.Client>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy> verwenden oder <xref:Microsoft.Xrm.Sdk.WebServiceClient>.<xref:Microsoft.Xrm.Sdk.WebServiceClient.OrganizationWebProxyClient> Proxy-Klassen.
 
-### <a name="net-sdk-assembly-example"></a>.NET SDK-Assembly-Beispiel
+Wenn Sie die SDK-Assemblys mit den <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy> oder <xref:Microsoft.Xrm.Sdk.WebServiceClient.OrganizationWebProxyClient> Proxy-Klassen verwenden, können Sie nach dem `Retry-After` Verzögerungswert in <xref:Microsoft.Xrm.Sdk.OrganizationServiceFault>.<xref:Microsoft.Xrm.Sdk.BaseServiceFault.ErrorDetails> suchen Eigenschaft, mithilfe des Schlüssels `"Retry-After"`suchen. Der zurückgegebene Wert ist ein [TimeSpan](/dotnet/api/system.timespan)-Objekt.
+
+## <a name="net-sdk-assembly-example"></a>.NET SDK-Assembly-Beispiel
 
 Im folgenden Beispiel wird die [„Retry”-Klasse](#retry-class) verwendet, die unten beschrieben wird, um ein Konto mithilfe der Methode <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>-abzurufen. Methode. Wenn die Anforderung fehlschlägt, weil eine API-Begrenzung überschritten wurde, wartet die Klasse `Retry` gemäß einer Verzögerung, die vom Server festgelegt ist und versucht es erneut.
 
@@ -73,7 +116,7 @@ var qe = new QueryExpression("account") { TopCount = 1 };
 EntityCollection result = Retry.Do(() => service.RetrieveMultiple(qe));
 ```
 
-#### <a name="retry-class"></a>„Retry”-Klasse
+### <a name="retry-class"></a>„Retry”-Klasse
 
 Die `Retry`-Klasse zeigt, wie Anforderungen wiederholt werden, die mit vorübergehenden Fehlern basierend auf bekannten <xref:Microsoft.Xrm.Sdk.OrganizationServiceFault>-Fehlercodes fehlschlagen. Die `Retry`-Klasse wartet vor dem Neuversuch. Wenn vom Fehler eine Wiederholungsverzögerung angegeben wird, wartet sie gemäß der vom Server angegebenen Verzögerung. Anderenfalls wird ein exponentieller Backoff verwendet, um die Verzögerung auf Grundlage der Anzahl der vorgenommenen Wiederholungsversuche zu berechnen.
 
@@ -139,7 +182,7 @@ public class Retry
 
 ### <a name="see-also"></a>Siehe auch
 
+[Verwalten Power Platform / Lizenzierung und Lizenzverwaltung / Anforderungsgrenzen und -zuordnungen](/power-platform/admin/api-request-limits-allocations)<br />
+[Common Data Service Übersicht über API-Grenzwerte](../../maker/common-data-service/api-limits-overview.md)<br />
 [Verwendung der Common Data Service Web-API](webapi/overview.md)<br />
-[ Common Data Service Organisationsdienst nutzen](org-service/overview.md)<br />
-[Ausführen von Batchbetrieben mithilfe der Web-API](webapi/execute-batch-operations-using-web-api.md)<br />
-[Verwenden von "ExecuteMultiple" zur Verbesserung der Leistung bei Massendatenlast](org-service/execute-multiple-requests.md)
+[Verwendung von Common Data Service Organisationsdienst](org-service/overview.md)

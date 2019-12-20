@@ -1,5 +1,5 @@
 ---
-title: Globale Suche in PowerApps-Portalen | Microsoft-Dokumentation
+title: Globale Suche in Power Apps-Portalen | Microsoft-Dokumentation
 description: Hier erfahren Sie, wie die globale Suche in einem Portal funktioniert.
 author: sbmjais
 manager: shujoshi
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: da142a452e903b890b1b395262771228e245140c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 71a06d24e628ddae508af031aa80b8a08b380905
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760432"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866705"
 ---
 # <a name="search"></a>Search
 
-In PowerApps-Portalen können Sie mit der globalen Suchfunktion des Portals nach Datensätzen über mehrere Entitäten hinweg suchen. Sie können auch innerhalb von Datensätzen der Entitätslisten suchen, indem Sie die Entitätsliste durchsuchen. 
+In Power Apps-Portalen können Sie mit der globalen Suchfunktion des Portals nach Datensätzen über mehrere Entitäten hinweg suchen. Sie können auch innerhalb von Datensätzen der Entitätslisten suchen, indem Sie die Entitätsliste durchsuchen. 
 
 Die Entitätslisten-Suchfunktion im Portal verwendet FetchXML im Backend, um die in der Entitätsliste definierten Spalten zu durchsuchen und die Ergebnisse anzuzeigen. 
 
@@ -36,7 +36,7 @@ Zu den Vorteilen der globalen Suche gehört die Möglichkeit:
 
 Je besser die Übereinstimmung, desto höher wird diese in den Ergebnissen der globalen Suche angezeigt. Eine Übereinstimmung hat eine größere Relevanz, wenn mehr Wörter vom Suchbegriff in unmittelbarer Nähe zueinander gefunden werden. Je kleiner der Text, in dem die Suchbegriffe gefunden werden, desto größer die Relevanz. Wenn Sie z. B. die Suchbegriffe in Unternehmensname und -adresse finden, kann es möglicherweise eine bessere Übereinstimmung sein als wenn die gleichen Wörter in einem langen Artikel weit voneinander entfernt gefunden werden. Da die Ergebnisse in einer einzelnen Liste zurückgegeben werden, sehen Sie eine Mischung von Datensätzen, die nacheinander angezeigt werden, und die übereinstimmenden werden hervorgehoben. 
 
-In den nachfolgenden Abschnitten finden Sie Details zur Funktionsweise der globalen Suche in PowerApps-Portalen und verschiedene Konfigurationsmöglichkeiten.
+In den nachfolgenden Abschnitten finden Sie Details zur Funktionsweise der globalen Suche in Power Apps-Portalen und verschiedene Konfigurationsmöglichkeiten.
 
 ## <a name="entities-searchable-in-portal-global-search"></a>Durchsuchbare Entitäten in der globalen Portalsuche
 
@@ -188,7 +188,7 @@ Sie können die globale Suche des Portals aus Liquid-Vorlagen aufrufen, indem Si
 
 ## <a name="update-search-index"></a>Suchindex aktualisieren
 
-Suchindex-Updates in PowerApps-Portalen erfolgen automatisch wie die Cache-Invalidierung. Diese wichtigen Dinge sind jedoch zu beachten:
+Suchindex-Updates in Power Apps-Portalen erfolgen automatisch wie die Cache-Invalidierung. Diese wichtigen Dinge sind jedoch zu beachten:
 
 - Alle suchaktivierten Entitäten müssen das Metadatenfeld "Änderungsbenachrichtigung" aktiviert haben, da sonst keine der Änderungen an das Portal gemeldet werden und der Suchindex nicht aktualisiert wird.
 

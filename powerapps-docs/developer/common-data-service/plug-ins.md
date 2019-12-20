@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 110a530c25c7f7e502c26da18bf2f473d53b6673
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1631ab73d2714a3c0981849ce37fa091bfa3f5a4
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748665"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2779945"
 ---
 # <a name="use-plug-ins-to-extend-business-processes"></a>Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen
 
@@ -49,7 +49,7 @@ Personen vergleichen häufig Workflows und Plug-Ins als Auswahlmöglichkeiten f�
 
 - Azure Servicebusintegration und Webhooks können verwendet werden, um Daten in externen Systemen bereitzustellen, in denen Logik mithilfe von vielen verschiedenen Ressourcen angewendet werden kann.
 
-- Microsoft Flow bietet viele Funktionen, die bisher mithilfe von Plug-Ins ausgeführt wurden.
+- Power Automate bietet viele Funktionen, die bisher mithilfe von Plug-Ins ausgeführt wurden.
 
 Ihnen stehen viele Optionen zur Verfügung. Sie müssen jede von ihnen auswerten, um die beste Methode zum Erfüllen Ihrer Bedingungen zu verstehen.
 

@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 434dea11e5238167e824561e247bc23ddbb7839b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758234"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874164"
 ---
 # <a name="configure-connection-roles"></a>Verbindungsrollen konfigurieren
 
@@ -38,7 +38,7 @@ Jeder Benutzer mit Schreibzugriff zur **Verbindungsrollen**-Entität kann defini
 > Damit eine Entität als Datensatztyp für eine neue oder vorhandene Verbindungsrolle verfügbar ist, muss die Eigenschaft **Verbindungen aktivieren** für die Entität aktiviert sein. 
 
 ## <a name="enable-connection-roles-for-an-entity"></a>Verbindungsrollen für eine Entität aktivieren.
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
 2. Erweitern Sie **Daten** und wählen dann **Entitäten** aus. 
 3. Wählen Sie die Entität, die Sie für Verbindungsrollen aktivieren möchten, und klicken Sie anschließend in der Befehlsleiste auf **Einstellungen**. 
 4. Erweitern Sie im Bereich **Einstellungen** den Bereich **Zusammenarbeit**, und wählen dann **Verbindungen aktivieren** aus.

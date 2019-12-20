@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 4475e9e2ccc474a6eeb3e7a2e959b360b3250aa8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 951b4055aa47a6fba31df5473bd517ed67c8f17d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757046"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873219"
 ---
 # <a name="template-tags"></a>Vorlagentags
 
@@ -22,7 +22,7 @@ Vorlagentags steuern die Ausgabe einer Vorlage auf verschiedene Arten und ermög
 
 ## <a name="include"></a>einschließlich
 
-Integriert die Contents einer Vorlage in eine andere nach Name. In PowerApps-Portalen ist die Quelle dieser anderen Vorlage in der Regel eine [Webvorlage](store-content-web-templates.md). Dadurch können die gängigen Vorlagenfragmenten an mehreren Orten wieder verwendet werden.  
+Integriert die Contents einer Vorlage in eine andere nach Name. In Power Apps-Portalen ist die Quelle dieser anderen Vorlage in der Regel eine [Webvorlage](store-content-web-templates.md). Dadurch können die gängigen Vorlagenfragmenten an mehreren Orten wieder verwendet werden.  
 
 Wenn eine Vorlage in einer anderen enthalten ist, hat die integrierte Vorlage Zugang zu Variablen, die in der übergeordneten Vorlage definiert sind.
 
@@ -40,7 +40,7 @@ Wird in Verbindung mit „extends” verwendet, um den Vorlagen-Vererbungsstatus
 
 Wird in Verbindung mit dem „block”-Tag verwendet, stellt die Vorlagenvererbung bereit. Dadurch können mehrere Vorlagen ein freigegebenes Layout verwenden, während spezifische Bereiche des übergeordneten Layouts überschrieben werden.
 
-In PowerApps-Portalen bezieht sich der für den Tag angegebene Name der übergeordneten Vorlage im Allgemeinen auf einen Namen für eine [Webvorlage](store-content-web-templates.md).  
+In Power Apps-Portalen bezieht sich der für den Tag angegebene Name der übergeordneten Vorlage im Allgemeinen auf einen Namen für eine [Webvorlage](store-content-web-templates.md).  
 
 Wenn „extends” verwendet wird, muss es der erste Inhalt in der Vorlage sein und kann nur von einem oder mehreren „block”-Tags gefolgt werden.
 
@@ -66,9 +66,13 @@ Ermöglicht die Ausgabe des Liquid-Codes auf einer Seite, ohne dass Sie analysie
 
 `Hello, {{ user.fullname }}. My name is Charles.`
 
+## <a name="substitution"></a>Ersatz
+
+Wenn der Benutzer das Zwischenspeichern von Kopf- und Fußzeilen aktiviert hat und das Zwischenspeichern bestimmter Abschnittsausgaben vermeiden möchte, kann er dieses Tag verwenden. Dieses Tag stellt den Inhaltsblock in der Kopf- oder Fußzeile bereit, in der die Ausgabe des umbrochenen Inhaltsblocks nicht zwischengespeichert wird. Dies ist hilfreich in Szenarien, in denen der Benutzer ein Objekt verwendet, das häufig aktualisiert werden kann, z. B. Anforderung, Seite, Sprache und Datum. In den Szenarien zur Aktualisierung des Quellcodes von Webvorlagen für Kopf- und Fußzeilen wird beispielsweise angegeben, wenn [das Zwischenspeichern von Kopf- und Fußzeilen aktiviert ist](../configure/enable-header-footer-output-caching.md).
+
 ### <a name="see-also"></a>Siehe auch
 
 [Ablaufsteuerungstags](control-flow-tags.md)<br>
 [Iterationstags](iteration-tags.md)<br>
 [Variable Tags](variable-tags.md)<br>
-[PowerApps Common Data Service-Entitäts-Tags](portals-entity-tags.md)
+[Power Apps Common Data Service-Entitäts-Tags](portals-entity-tags.md)

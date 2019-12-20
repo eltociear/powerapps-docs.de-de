@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8b1b38c94cbd4615ff0ab449944e65089865a823
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c13838bdd957d78552d71636b4a165902154e82c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758718"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865705"
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>Alternativschlüssel mithilfe des Projektmappen-Explorers festlegen
 
 Lösungs-Explorer bietet eine Möglichkeit, um Alternativschlüssel für Common Data Service anzuzeigen und zu erstellen.
 
-Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. <br />Weitere Informationen: 
+Das [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. <br />Weitere Informationen: 
 - [Definieren von Alternativschlüsseln für den Verweis auf Datensätze](define-alternate-keys-reference-records.md)<br />
-- [Alternativschlüssel mithilfe von PowerApps-Portalen festlegen](define-alternate-keys-portal.md)
+- [Alternativschlüssel mithilfe von Power Apps-Portalen festlegen](define-alternate-keys-portal.md)
 
 ## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
 
@@ -72,5 +72,5 @@ Während dem [Anzeigen von Alternativschlüsseln](#view-alternate-keys) wählen 
 ### <a name="see-also"></a>Siehe auch
 
 [Definieren von Alternativschlüsseln für den Verweis auf Datensätze](define-alternate-keys-reference-records.md)<br />
-[Alternativschlüssel mithilfe von PowerApps-Portalen festlegen](define-alternate-keys-portal.md)<br />
+[Alternativschlüssel mithilfe von Power Apps-Portalen festlegen](define-alternate-keys-portal.md)<br />
 [Entwicklerdokumentation: Definieren eines Alternativschlüssels für eine Entität](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)

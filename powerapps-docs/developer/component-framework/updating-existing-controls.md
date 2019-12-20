@@ -1,7 +1,7 @@
 ---
-title: Aktualisierung vorhandener Codekomponenten mit PowerApps component framework-Tools | Microsoft-Dokumentation
-description: Aktualisieren von Komponenten mit dem PowerApps component framework-Tools
-keywords: PowerApps component framework, Code-Komponente, Komponente Framework
+title: Aktualisierung vorhandener Codekomponenten mit Power Apps component framework-Tools | Microsoft-Dokumentation
+description: Aktualisieren von Komponenten mit dem Power Apps component framework-Tools
+keywords: Power Apps component framework, Code-Komponente, Komponente Framework
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,25 +11,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 05e32fb7e098dad3aabf36f2efdaf311c1bea327
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ddbacd01b76a99e385875a0b8af18d28ce24bed8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748778"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861912"
 ---
 # <a name="update-existing-code-components"></a>Aktualisieren vorhandener Codekomponenten 
 
-Wenn Sie ein Teilnehmer der Privaten Vorschau vom PowerApps component framework für modellgesteuerte Apps sind und bereits Codekomponenten erstellt haben, müssen Sie einige kleinere Updates vornehmen, um sie mit den neuen ALM-zentrierten Projektstrukturen kompatibel zu machen. 
+Wenn Sie ein Teilnehmer der Privaten Vorschau vom Power Apps component framework für modellgesteuerte Apps sind und bereits Codekomponenten erstellt haben, müssen Sie einige kleinere Updates vornehmen, um sie mit den neuen ALM-zentrierten Projektstrukturen kompatibel zu machen. 
 
-Einige Änderungen sind erforderlich, um das neue PowerApps CLI-Tooling mit Ihren bestehenden PowerApps component framework-Code Komponenten zu verwenden.
+Einige Änderungen sind erforderlich, um das neue Power Apps CLI-Tooling mit Ihren bestehenden Power Apps component framework-Code Komponenten zu verwenden.
 
 > [!NOTE]
-> Dieses Thema ist nur zum Aktualisieren von Codekomponenten für modellgesteuerte Apps anwendbar, da die PowerApps CLI-Tools nicht bei der Privaten Vorschau für die modellgesteuerten Apps verfügbar sind.  
+> Dieses Thema ist nur zum Aktualisieren von Codekomponenten für modellgesteuerte Apps anwendbar, da die Power Apps CLI-Tools nicht bei der Privaten Vorschau für die modellgesteuerten Apps verfügbar sind.  
 
 ## <a name="creating-an-empty-project"></a>Erstellen eines leeren Projekts
 
-Verwenden Sie die PowerApps CLI, um ein neues leeres Projekt für Ihre Codekomponente zu erstellen. Weitere Informationen: [Erstellen von Komponenten mit Hilfe von Tools](create-custom-controls-using-pcf.md)
+Verwenden Sie die Power Apps CLI, um ein neues leeres Projekt für Ihre Codekomponente zu erstellen. Weitere Informationen: [Erstellen von Komponenten mit Hilfe von Tools](create-custom-controls-using-pcf.md)
 
 Nachdem das Projekt erstellt wurde, migrieren Sie die Codekomponentenquelle zum neuen Projekt:
 
@@ -67,7 +67,7 @@ Wenn Sie eine Komponente mit der älteren Tool-Version erstellt haben und die ne
 
 1. Aktualisieren Sie Ihre bestehenden Projekte, um die neuesten Module zu verwenden.
  
-   - Aktualisieren Sie das Versionstag in `pcfproj`, das sich innerhalb Ihres PowerApps component framework-Projektordners befindet:
+   - Aktualisieren Sie das Versionstag in `pcfproj`, das sich innerhalb Ihres Power Apps component framework-Projektordners befindet:
 
       ```XML
       <Packagereference Include="Microsoft.PowerApps.MSBuild.Pcf" Version="1.*"/>
@@ -82,7 +82,7 @@ Wenn Sie eine Komponente mit der älteren Tool-Version erstellt haben und die ne
       > Nachdem Sie die oben beschriebenen Änderungen vorgenommen haben, führen Sie den Befehl `msbuild /t:restore` aus, um Ihr Projekt auf die korrekte Version zu aktualisieren.
 
 
-   - Aktualisieren Sie das Versions-Tag in Ihrer `package.json`-Datei, die sich in Ihrem Projektordner für das PowerApps component framework befindet:
+   - Aktualisieren Sie das Versions-Tag in Ihrer `package.json`-Datei, die sich in Ihrem Projektordner für das Power Apps component framework befindet:
 
       ```JSON
       "devDependencies":{
@@ -128,7 +128,7 @@ Die Erstellungstools erwarten, dass die Komponentenquelle mithilfe des Standard-
 
 ## <a name="using-generated-manifest-typing-file"></a>Verwenden der generierten Manifesttypisierungsdatei
 
-Legacy-Projekte erfordern die manuelle Erstellung und Bearbeitung einer `inputsOutputs.d.ts`-Tippdatei, die sich typischerweise unter dem Unterordner `private_typing` befindet. Das PowerApps CLI-Tooling generiert diese Datei nun beim Build automatisch. 
+Legacy-Projekte erfordern die manuelle Erstellung und Bearbeitung einer `inputsOutputs.d.ts`-Tippdatei, die sich typischerweise unter dem Unterordner `private_typing` befindet. Das Power Apps CLI-Tooling generiert diese Datei nun beim Build automatisch. 
 
 Code-gen stellt sicher, dass die im Quellcode der Komponente verwendeten `type`-Definitionen mit in der Manifestdatei der Komponente definierten `types` synchron bleiben.
 
@@ -173,6 +173,6 @@ So verwenden Sie eine neue Typisierungsdatei:
 
 ### <a name="see-also"></a>Siehe auch
 
-[Begrenzungen des PowerApps component framework](limitations.md)<br/>
-[PowerApps component framework API-Referenz](reference/index.md)<br/>
-[Übersicht über das PowerApps component framework](overview.md)
+[Begrenzungen des Power Apps component framework](limitations.md)<br/>
+[Power Apps component framework-API-Referenz](reference/index.md)<br/>
+[Power Apps component framework Übersicht](overview.md)

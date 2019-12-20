@@ -1,7 +1,7 @@
 ---
-title: Tooling-Abruf für das PowerApps component framework | Microsoft Docs
-description: Holen Sie sich die Microsoft PowerApps CLI, um Codekomponenten mit dem PowerApps component framework zu erstellen, zu debuggen und bereitzustellen.
-keywords: PowerApps Component Framework, Code-Komponenten, Komponentenframework
+title: Tooling-Abruf für das Power Apps component framework | Microsoft Docs
+description: Holen Sie sich die Microsoft Power Apps CLI, um Codekomponenten mit dem Power Apps component framework zu erstellen, zu debuggen und bereitzustellen.
+keywords: Power Apps Component Framework, Code-Komponenten, Komponentenframework
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,26 +11,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f393f227-7a88-4f25-9036-780b3bf14070
-ms.openlocfilehash: 496b7d443775da075dd8da52ac4b0a754121bf28
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4bc237027dab1459c3a9f83c6ff18310f35ff614
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748483"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895012"
 ---
-# <a name="get-tooling-for-powerapps-component-framework"></a>Tooling-Abruf für das PowerApps component framework
+# <a name="get-tooling-for-power-apps-component-framework"></a>Tooling-Abruf für das Power Apps component framework
 
-Verwenden Sie **Microsoft PowerApps CLI** (Befehlszeilenschnittstelle), um Codekomponenten mit dem PowerApps component framework zu erstellen, zu debuggen und bereitzustellen. Mit der PowerApps CLI können Entwickler Codekomponenten schnell erstellen. Künftig wird es erweitert, um Unterstützung für die weitere Entwicklung und Application Lifecycle Management (ALM)-Umgebungen einzuschließen. 
+Verwenden Sie **Microsoft Power Apps CLI** (Befehlszeilenschnittstelle), um Codekomponenten mit dem Power Apps component framework zu erstellen, zu debuggen und bereitzustellen. Mit der Power Apps CLI können Entwickler Codekomponenten schnell erstellen. Künftig wird es erweitert, um Unterstützung für die weitere Entwicklung und Application Lifecycle Management (ALM)-Umgebungen einzuschließen. 
 
-## <a name="what-is-microsoft-powerapps-cli"></a>Was ist Microsoft PowerApps CLI? 
+## <a name="what-is-microsoft-power-apps-cli"></a>Was ist Microsoft Power Apps CLI? 
 
-Die Microsoft PowerApps CLI ist eine einfache, einheitliche Befehlszeilenschnittstelle für Entwickler, mit der Entwickler und App-Ersteller Codekomponenten erstellen können. Die PowerApps CLI-Tools sind der erste Schritt in Richtung einer umfassenden ALM-Story, in der Unternehmensentwickler und ISVs ihre Erweiterungen sowie Anpassungen schnell und effizient erstellen, debuggen und veröffentlichen können.  
+Die Microsoft Power Apps CLI ist eine einfache, einheitliche Befehlszeilenschnittstelle für Entwickler, mit der Entwickler und App-Ersteller Codekomponenten erstellen können. Die Power Apps CLI-Tools sind der erste Schritt in Richtung einer umfassenden ALM-Story, in der Unternehmensentwickler und ISVs ihre Erweiterungen sowie Anpassungen schnell und effizient erstellen, debuggen und veröffentlichen können.  
 
-## <a name="install-microsoft-powerapps-cli"></a>Installieren der Microsoft PowerApps CLI
+## <a name="install-microsoft-power-apps-cli"></a>Installieren der Microsoft Power Apps CLI
 
-Um die Microsoft PowerApps CLI zu erhalten, gehen Sie wie folgt vor:
+Um die Microsoft Power Apps CLI zu erhalten, gehen Sie wie folgt vor:
 
-1. Installieren Sie [Npm](https://www.npmjs.com/get-npm) (wird mit Node.js geliefert) oder [Node.js](https://nodejs.org/en/) (wird mit npm geliefert). Wir empfehlen LTS (Long Term Support) Version 10.15.3 LTS, da es am stabilsten zu sein scheint.
+1. Installieren Sie [Npm](https://www.npmjs.com/get-npm) (wird mit Node.js geliefert) oder [Node.js](https://nodejs.org/en/) (wird mit npm geliefert). Wir empfehlen LTS (Long Term Support) Version 10.15.3 oder höher.
 
 1. Installieren Sie das [.NET Framework 4.6.2-Entwicklerpaket](https://dotnet.microsoft.com/download/dotnet-framework/net462). 
 
@@ -38,32 +38,37 @@ Um die Microsoft PowerApps CLI zu erhalten, gehen Sie wie folgt vor:
    - Option 1: Installieren Sie [Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2017) oder später.
    - Option 2: Installieren Sie das [.NET Core 2.2-SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2) und dann [Visual Studio Code](https://code.visualstudio.com/Download).
 
-1. Installieren Sie die [Microsoft PowerApps CLI](https://aka.ms/PowerAppsCLI).
-1. Um alle aktuellen Funktionen nutzen zu können, aktualisieren Sie die PowerApps CLI-Tools auf die neuste Version mit Hilfe dieses Befehls:
+1. Installieren Sie die [Microsoft Power Apps CLI](https://aka.ms/PowerAppsCLI).
+1. Um alle aktuellen Funktionen nutzen zu können, aktualisieren Sie die Power Apps CLI-Tools auf die neuste Version mit Hilfe dieses Befehls:
 
     ```CLI
     pac install latest
     ```
 
 > [!NOTE]
-> - Um Ihre Codekomponente über die CLI PowerApps bereitzustellen, benötigen Sie eine Umgebung Common Data Service mit Systemadministrator- oder System-Customizer-Rechten.
-> - Derzeit wird PowerApps CLI nur unter Windows 10 unterstützt.
+> - Um Ihre Codekomponente über die CLI Power Apps bereitzustellen, benötigen Sie eine Umgebung Common Data Service mit Systemadministrator- oder System-Customizer-Rechten.
+> - Derzeit wird Power Apps CLI nur unter Windows 10 unterstützt.
 
-## <a name="microsoft-powerapps-cli-telemetry"></a>Microsoft PowerApps CLI-Telemetrie
+## <a name="common-commands"></a>Allgemeine Befehle
 
-Das Funktionsteam sammelt die Telemetrie, um zu verstehen, welche Funktionen oder Fähigkeiten Entwickler am häufigsten im CLI-Tool PowerApps verwenden. Die aggregierten Daten ermöglichen die Bereitstellung des besten Erlebnisses für die Kunden, indem Sie sich darauf konzentrieren können, was wirklich ist wichtig ist.
+In dieser Tabelle sind einige allgemeine Befehle aufgeführt, die in der CLI verwendet werden
 
-> [!NOTE]
-> Um die Telemetrie zu deaktivieren, führe Sie den Befehl `pac telemetry disable` aus. Um die Telemetrie wieder einzuschalten, verwenden Sie den Befehl `pac telemetry enable`.
+|Befehl|Beschreibung|Beispiele|
+|------|-----------|--------|
+|**PCF**|Befehle zum Arbeiten mit Power Apps Component Framework Verfügt über die folgenden Parameter: <br/> - **init**: Initialisiert das Codekomponentenprojekt. <br/> - **namespace**: Namespace der Codekomponente. <br/> - **name**: Name der Codekomponente. <br/> - **template**: Feld oder DataSet <br/> - **push** : Verschiebt die Codekomponente mit den neuesten Änderungen auf die Common Data Service-Instanz.| `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>` <br/> <br/> `pac pcf push --publisher-prefix <your publisher prefix>`|
+|**Lösung**|Befehle zum Arbeiten mit Common Data Service-Projekten. Verfügt über die folgenden Parameter: <br/> - **init**: Initialisiert das Lösungsprojekt.<br/> - **publisher-name**: Name des Herausgebers der Organisation. <br/> - **publisher-prefix**: Präfix des Herausgebers der Organisation. <br/> - **add-reference**: Legt den Referenzpfad zum Komponentenprojektordner fest, indem der `path`-Parameter übergeben wird.<br/> - **Klonen**: Erstellt ein Lösungsprojekt auf der Grundlage des vorhandenen Lösungsprojekts, indem die Parameter `name`, `version` und `include` übergeben werden|`pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>` <br/><br/> `pac solution add-reference --path <path to your Power Apps component framework project>`<br/><br/> `pac solution clone –name<name of the solution to be exported> --version <version of your solution> --include <settings that should be included>`|
+|**auth**|Befehle zur Authentifizierung in Common Data Service. Verfügt über die folgenden Parameter: <br/> - **Erstellen**: Erstellt das Authentifizierungsprofil für Ihre Organisation durch Übergeben des `url`-Parameters. Sie müssen die Organisations-URL für den `url`-Parameter bereitstellen. <br/> - **Liste**: Bietet die Liste der Authentifizierungsprofile. <br/> - **Auswählen**: Bietet eine Möglichkeit zum Wechseln zwischen zuvor erstellten Authentifizierungsprofilen durch Übergeben des `index`-Parameters.|`pac auth create --url <your Common Data Service org’s url>` <br/> <br/> `pac auth list` <br/><br/> `Pac auth select --index <index of the active profile>`|
+|**Telemetrie**|Telemetrieeinstellungen verwalten. Es hat die folgenden Parameter: aktivieren und deaktivieren.|`pac telemetry enable` <br/><br/> `pac telemetry disable`|
+|**org**|Befehl zum Arbeiten mit Common Data Service.|`pac org who`|
+|**Plug-In**|Erstellt ein Plug-In-Projekt|`pac plugin init`|
 
+## <a name="uninstall-microsoft-power-apps-cli"></a>Deinstallieren der Microsoft Power Apps CLI
 
-## <a name="uninstall-microsoft-powerapps-cli"></a>Deinstallieren der Microsoft PowerApps CLI
-
-Um das PowerApps CLI-Tooling zu deinstallieren, führen Sie das MSI von [hier](https://aka.ms/PowerAppsCLI) aus. 
+Um das Power Apps CLI-Tooling zu deinstallieren, führen Sie das MSI von [hier](https://aka.ms/PowerAppsCLI) aus. 
 
 Wenn Sie ein Teilnehmer der Privaten Vorschau sind und eine ältere Version der CLI haben, führen Sie diese Schritte aus:
 
-1. Um herauszufinden, wo PowerApps CLI installiert ist, öffnen Sie eine Eingabeaufforderung und geben Sie `where pac` ein.
+1. Um zu finden, wo Power Apps-CLI installiert ist, öffnen Sie eine Eingabeaufforderung und geben `where pac` ein
 1. Löschen Sie den PowerAppsCLI-Ordner.
 1. Öffnen Sie das Tool Environment Variables, indem Sie den Befehl `rundll32 sysdm.cpl,EditEnvironmentVariables` in der Eingabeaufforderung ausführen.
 1. Klicken Sie zweimal im Abschnitt `User variable for...` auf `Path`.
@@ -72,4 +77,4 @@ Wenn Sie ein Teilnehmer der Privaten Vorschau sind und eine ältere Version der 
 
 ### <a name="see-also"></a>Siehe auch
 
-[Implementieren von Komponenten mithilfe von TypeScript](implementing-controls-using-typescript.md)<br/>
+[Erstellen Sie Ihre erste Codekomponente](implementing-controls-using-typescript.md)<br/>

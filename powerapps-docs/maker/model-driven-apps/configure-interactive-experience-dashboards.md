@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Dashboards für modellgesteuerte interaktive Funktionen in PowerApps | Microsoft-Dokumentation
-description: Informationen zum Konfigurieren von Dashboards für interaktive Funktionen in PowerApps
+title: Konfigurieren von Dashboards für modellgesteuerte interaktive Funktionen in Power Apps | Microsoft-Dokumentation
+description: Informationen zum Konfigurieren von Dashboards für interaktive Funktionen in Power Apps
 keywords: Interaktive Dashboards; Customer Service; Microsoft Dynamics 365; Interaktiver Service-Hub
 author: Mattp123
 ms.author: matp
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fefeebb0106907e59ea1fd5a13d620cdeb315774
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752553"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884999"
 ---
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>Informationen zum Konfigurieren von Dashboards für interaktive Funktionen
 
@@ -149,7 +149,7 @@ Die folgende Abbildung zeigt den Flyoutdialog mit der Liste der für das Sortier
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Konfigurieren Sie ein interaktives Dashboard mit mehreren Streams mithilfe des Layouts mit 4 Spalten.  
  
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
   
 2.  Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. 
 
@@ -203,7 +203,7 @@ Die folgende Abbildung ist ein Beispiel eines vollständig konfigurierten Diagra
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>Bearbeiten oder Löschen einzelner Streams eines vorhandenen Dashboards  
   
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.   
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.   
   
 2. Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. Wählen Sie auf die Registerkarte **Dashboards** aus.  
   
@@ -226,7 +226,7 @@ Die folgende Abbildung ist ein Beispiel eines vollständig konfigurierten Diagra
 
 Anstatt eine Entität auszuwählen, sind beispielsweise einige Felder im entitätsspezifischen Dashboard für die Entität, für die Sie das Dashboard erstellen, voreingestellt.  
   
-1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2.  Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. 
 

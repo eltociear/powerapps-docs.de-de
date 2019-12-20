@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef32c596a2740d5a459975061058d1bb682505fe
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3ba89c9798286e8aaf8a2a068c99347452b0effa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753070"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861275"
 ---
 # <a name="web-service-error-codes"></a>Webdienst-Fehlercodes
 
@@ -669,9 +669,9 @@ In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftrete
 > |**Name**:<br />CanvasAppsExpectedFileMissing<br />**Hex**:<br />80072356<br />**Nummer**:<br />-2147015850|Die Lösung gab eine erwartete Anlagendatei an, aber die Datei hat gefehlt oder war ungültig.|
 > |**Name**:<br />CanvasAppsInvalidSolutionFileContent<br />**Hex**:<br />80072354<br />**Nummer**:<br />-2147015852|Die Anfrage, eine Canvas-App zu importieren, sollte mindestens eine Anlagendatei enthalten.|
 > |**Name**:<br />CanvasAppsNotEnabled<br />**Hex**:<br />80072351<br />**Nummer**:<br />-2147015855|Das Erstellen und Bearbeiten von Canvas-Apps ist nicht aktiviert.|
-> |**Name**:<br />CanvasAppsServiceRequestClientFailure<br />**Hex**:<br />80072352<br />**Nummer**:<br />-2147015854|Die Anfrage an den PowerApps-Service ist mit einem Client-Fehler fehlgeschlagen.|
-> |**Name**:<br />CanvasAppsServiceRequestServerFailure<br />**Hex**:<br />80072353<br />**Nummer**:<br />-2147015853|Die Anfrage an den PowerApps-Service ist mit einem Server-Fehler fehlgeschlagen.|
-> |**Name**:<br />CanvasAppsUnexpectedCanvasAppId<br />**Hex**:<br />80072355<br />**Nummer**:<br />-2147015851|Die Anfrage an den PowerApps-Server hat zu einer neuen canvasappid geführt, obwohl ein bereits bestehender Wert erwartet wurde.|
+> |**Name**:<br />CanvasAppsServiceRequestClientFailure<br />**Hex**:<br />80072352<br />**Nummer**:<br />-2147015854|Die Anfrage an den Power Apps-Service ist mit einem Client-Fehler fehlgeschlagen.|
+> |**Name**:<br />CanvasAppsServiceRequestServerFailure<br />**Hex**:<br />80072353<br />**Nummer**:<br />-2147015853|Die Anfrage an den Power Apps-Service ist mit einem Server-Fehler fehlgeschlagen.|
+> |**Name**:<br />CanvasAppsUnexpectedCanvasAppId<br />**Hex**:<br />80072355<br />**Nummer**:<br />-2147015851|Die Anfrage an den Power Apps-Server hat zu einer neuen canvasappid geführt, obwohl ein bereits bestehender Wert erwartet wurde.|
 > |**Name**:<br />CanvasAppVersionDoesNotMatchLatestPublishedVersion<br />**Hex**:<br />80072358<br />**Nummer**:<br />-2147015848|Die aktuelle veröffentlichte Version der Canvas-App entspricht nicht der bekannten Version des Dynamics-Services.|
 > |**Name**:<br />CanvasAppVersionMissingOrInvalid<br />**Hex**:<br />80072357<br />**Nummer**:<br />-2147015849|Die App-Version der Canvas-App wurde nicht festgelegt oder war ein ungültiger Wert.|
 > |**Name**:<br />CAPolicyValidationFailedLateBind<br />**Hex**:<br />80072561<br />**Nummer**:<br />-2147015327|Der Benutzer befindet sich in einem Speicherort nur für Administratoren.|

@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des PowerApps-Projektmappen-Explorers | MicrosoftDocs
+title: Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des Power Apps-Projektmappen-Explorers | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
@@ -19,20 +19,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8bbae644cddd24bebfa03ab5e2a15a86c6ecd44e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8eee62b8190c2422e2e910fd28306a0d56da85ec
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758014"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865957"
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des PowerApps-Projektmappen-Explorers
+# <a name="create-and-edit-fields-for-common-data-service-using-power-apps-solution-explorer"></a>Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des Power Apps-Projektmappen-Explorers
 
 Der Projektmappen-Explorer bietet eine Möglichkeit, um Felder für Common Data Service zu erstellen und zu bearbeiten.
 
-Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. <br />Weitere Informationen: 
+Das [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. <br />Weitere Informationen: 
 - [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
-- [Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal](create-edit-field-portal.md)
+- [Erstellen und Bearbeiten von Feldern für Common Data Service mit dem Power Apps-Portal](create-edit-field-portal.md)
   
 ## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
 
@@ -268,7 +268,7 @@ Alle Felder, die direkte Texteingabe ermöglichen, haben einen IME-Modus. Der Ei
 
 ### <a name="see-also"></a>Siehe auch  
 [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)<br />
-[Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal](create-edit-field-portal.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mit dem Power Apps-Portal](create-edit-field-portal.md)<br />
 [Feldtypen und Felddatentypen](types-of-fields.md)<br />
 [Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](define-calculated-fields.md)<br />
 [Definition von Rollupfeldern, die Werte aggregieren](define-rollup-fields.md)<br />

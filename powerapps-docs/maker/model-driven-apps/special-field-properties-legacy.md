@@ -1,5 +1,5 @@
 ---
-title: Spezielle Feldeigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | Microsoft-Dokumentation
+title: Spezielle Feldeigenschaften für Hauptformulare in modellgesteuerten Apps in Power Apps | Microsoft-Dokumentation
 description: Grundlegendes zu speziellen Feldeigenschaften für Hauptformulare
 Keywords: Hauptformulare; Besondere Feldeigenschaften; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ad0fbb1208e612ba43d0a8c074ac62fab0000c2f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c98cc09bc0b7e9754af44e6602c35f4e32b382c3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711033"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865092"
 ---
 # <a name="overview-of-model-driven-app-special-field-properties"></a>Überblick über besondere Feldeigenschaften in modellgesteuerten Apps
 

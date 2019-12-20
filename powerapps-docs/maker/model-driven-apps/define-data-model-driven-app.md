@@ -1,5 +1,5 @@
 ---
-title: Definieren von Daten für Ihre modellgesteuerte App in PowerApps | Microsoft-Dokumentation
+title: Definieren von Daten für Ihre modellgesteuerte App in Power Apps | Microsoft-Dokumentation
 description: Grundlagen zum Definieren von Daten für die modellgesteuerte App
 Keywords: Daten, Entität, Felder, Beziehung, Attribute, modellgestützte App
 author: Mattp123
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 65a4766be330fba6a2ec0ed25a532a5ea37f7138
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7bdd0a9fdfce45c1e8d61f76cc542de09a0d344d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705049"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860365"
 ---
 # <a name="define-data-for-your-model-driven-app"></a>Definieren von Daten für die modellgesteuerte App
 

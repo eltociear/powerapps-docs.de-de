@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Bing Maps in einer modellgesteuerten App mit PowerApps | Microsoft-Dokumentation
+title: Konfigurieren von Bing Maps in einer modellgesteuerten App mit Power Apps | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 10/18/2019
 ms.reviewer: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff7f5c01e913da60409bb60c637b37ebd4bfa096
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 132f5c2cfb5763714176a86c1ea846085588f862
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756474"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875220"
 ---
 # <a name="configure-a-map-on-a-form"></a>Konfigurieren einer Karte in einem Formular
 Standardmäßig wird das Bing Maps-Steuerelement auf dem Hauptformular für das Konto und die Kontaktentitäten konfiguriert, womit die Möglichkeit gegeben ist, eine Karte auf Entitätsdatensätzen anzuzeigen. Obwohl nicht standardmäßig so konfiguriert, kann das Bing Maps-Steuerelement zur Systembenutzerentität hinzugefügt werden. Das Bing Maps-Steuerelement kann auch mit einigen Entitäten verwendet werden, einschließlich modellgesteuerter Apps in Dynamics 365, wie Dynamics 365 Sales und Dynamics 365 Customer Service. Dazu gehören beispielsweise der Lead, das Angebot, der Auftrag, die Rechnung und die Mitbewerber-Entitäten. Das Bing Maps-Seuerelement kann nicht für benutzerdefinierte Entitäten verwendet werden.  
@@ -49,7 +49,7 @@ Sie können den Kartenbereich aus dem Formulareditor mit der Schaltfläche **Bin
     ![Karten auf Formularen aktivieren](media/enable-maps.png)
 
 ## <a name="configure-a-map"></a>Konfigurieren einer Karte 
-1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
 2. Gehen Sie zu **Daten** > ,**Entitäten** und wählen Sie dann die Entität aus, für die Sie eine Karte auf dem Hauptformular konfigurieren möchten. 
 3. Wählen Sie die Registerkarte **Formulare**, und dann das Hauptformular aus. Wählen Sie dann auf der Befehlsleiste **In klassischen Modus wechseln** aus. 
 4. Doppelklicken Sie im klassischen Formular-Designer auf das **Kartenansicht**-Steuerelement, um die Eigenschaften anzuzeigen und zu bearbeiten. Weitere Informationen: [Anzeigen und Bearbeiten von Karteneigenschaften](#view-and-edit-map-properties)

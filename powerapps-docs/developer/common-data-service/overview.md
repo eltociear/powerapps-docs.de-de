@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 41eb896c56809d1ceb289e86ee427f7a1b9f18db
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ff18386dcad8f0a3dec918cd0d3ea1f35326e72
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748668"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895068"
 ---
 # <a name="common-data-service-developer-guide"></a>Common Data Service Entwicklerhandbuch
 
-PowerApps bietet Anwendern, Unternehmen, unabhängigen Softwareanbietern (ISVs) und Systemintegratoren (SIs) eine leistungsstarke Plattform für den Aufbau von Branchenanwendungen. **Common Data Service** ist die zugrunde liegende Datenplattform für PowerApps, die die Kernfunktionalitäten wie serverseitige Logik (Plugins und Workflows), Geschäftsprozessabläufe, ein hoch entwickeltes Sicherheitsmodell und eine erweiterbare Plattform für Entwickler zum Erstellen von Anwendungen enthält. 
+Power Apps bietet Anwendern, Unternehmen, unabhängigen Softwareanbietern (ISVs) und Systemintegratoren (SIs) eine leistungsstarke Plattform für den Aufbau von Branchenanwendungen. **Common Data Service** ist die zugrunde liegende Datenplattform für Power Apps, die die Kernfunktionalitäten wie serverseitige Logik (Plugins und Workflows), Geschäftsprozessabläufe, ein hoch entwickeltes Sicherheitsmodell und eine erweiterbare Plattform für Entwickler zum Erstellen von Anwendungen enthält. 
 
 Es gibt viele Aspekte, wie Entwickler zur Erstellung von Apps mit Common Data Service beitragen können. Während es möglich ist, eine Anwendung mit Code unter Verwendung von Common Data Service als Datenquelle zu erstellen, werden die meisten Projekte entweder [modellgesteuerte Anwendungen](/powerapps/maker/model-driven-apps/model-driven-app-overview) oder [Canvas-Anwendungen](/powerapps/maker/canvas-apps/getting-started) verwenden, um die Erfahrung zu generieren, die die Menschen nutzen werden. 
 
@@ -44,12 +44,12 @@ Bei einem Entwickler, der zu einem Projekt beiträgt, ist es wichtig, dass sie i
 
 ## <a name="content-for-on-premises-deployments"></a>Inhalt für lokale Bereitstellungen:
 
-Common Data Service ist derzeit nicht für On-Premise-Bereitstellungen verfügbar. Der Inhalt dieses Handbuch enthält keine Informationen zur Unterstützung von Optionen, die nur lokal oder mit Internetzugriff Bereitstellung (IFD) verfügbar sind. Informationen zu diesen Optionen finden Sie im [Entwicklerleitfaden für Dynamics 365 Customer Engagement (on-premises))](/dynamics365/customer-engagement/on-premises/developer/overview).
+Common Data Service ist derzeit nicht für On-Premise-Bereitstellungen verfügbar. Der Inhalt dieses Handbuch enthält keine Informationen zur Unterstützung von Optionen, die nur lokal oder mit Internetzugriff Bereitstellung (IFD) verfügbar sind. Informationen zu diesen Optionen finden Sie im [Entwicklerleitfaden für Dynamics 365 Customer Engagement (on-premises)](/dynamics365/customerengagement/on-premises/developer/overview).
 
 > [!div class="nextstepaction"]
 > [Erste Schritte](get-started-cds-developers.md)
 
 ### <a name="see-also"></a>Siehe auch
 
-[PowerApps für Entwickler](/powerapps/#pivot=home&panel=developer)<br/>
+[Power Apps für Entwickler](/powerapps/#pivot=home&panel=developer)<br/>
 [Entwicklerhandbuch zu modellgestützten Apps](../model-driven-apps/overview.md)

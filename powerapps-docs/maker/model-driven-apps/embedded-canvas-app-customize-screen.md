@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6be2a23a64108ec616fd95a0178d2008290bc289
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7d766a40dca689f6d0537be56edc9865437f62fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706017"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868357"
 ---
 # <a name="customize-the-screen-size-and-orientation-of-a-canvas-app-embedded-on-a-model-driven-form"></a>Anpassen der Bildschirmgröße und Ausrichtung einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist
 In diesem Thema wird erläutert, wie die Bildschirmgröße und Ausrichtung einer Canvas-App angepasst wird, die in einem modellgesteuerten Formular eingebettet ist.
@@ -34,7 +34,7 @@ In diesem Thema wird erläutert, wie die Bildschirmgröße und Ausrichtung einer
 1.  Führen Sie die Schritte aus, um eine eingebettete Canvas-App in einem modellgestützten Formular hinzuzufügen oder zu bearbeiten.
     - [Hinzufügen einer eingebetteten Canvas-App in einem modellgesteuerten Formular](embedded-canvas-app-add-classic-designer.md)
     - [Bearbeiten einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist](embedded-canvas-app-edit-classic-designer.md)
-2. Wählen Sie mit geöffneter Canvas-App in PowerApps Studio die Registerkarte **Datei** und dann **App-Einstellungen**.
+2. Wählen Sie mit geöffneter Canvas-App in Power Apps Studio die Registerkarte **Datei** und dann **App-Einstellungen**.
 3. Wählen Sie die Registerkarte **Bildschirmgröße + Anpassung** aus. Standardmäßig ist **Größe** auf **Benutzerdefiniert** eingestellt.
 4. Wählen Sie in der Liste der verfügbaren Optionen **Größe** und **Ausrichtung** oder **Benutzerdefiniert** aus und geben Sie die gewünschten Werte für **Breite** und **Höhe** an.
     > [!NOTE]

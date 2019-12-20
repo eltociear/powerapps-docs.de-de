@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 6572a92a46fa308eab6cb46b813a572605327197
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 01a5ce5662b27b9d95c15441ac1a791572890fcf
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760436"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816689"
 ---
 # <a name="provision-a-portal-using-the-older-portal-add-on"></a>Bereitstellen eines Portals mit dem früheren Portal-Add-On
 
@@ -25,15 +25,29 @@ Wenn Sie ein früheres Portal-Add-On erworben haben und ein Portal mit dem Add-O
 
 So stellen Sie ein Portal bereit:
 
-1.  Wechseln Sie zur Seite **Dynamics 365 Administration Center**, und klicken Sie auf die Registerkarte **Anwendungen**.
+1. Melden Sie sich beim [Microsoft 365-Administratorcenter](https://admin.microsoft.com) an.
+ 
+2. Wählen Sie in der Spalte auf der linken Seite **Alle anzeigen**.
 
-2.  Wählen Sie die Anwendungszeile mit dem Titel **Portal Add-On** aus und klicken Sie dann auf **Verwalten.**
+3. Wenn Sie mit dem neuen Admin Center arbeiten, wählen Sie **Alle Admin Center**. Wählen Sie aus der Liste aller Admin Center **Dynamics 365** aus.
 
-3.  Im Abschnitt **Allgemeine Einstellungen** geben Sie einen **Name** für Ihr Portal ein. Der **Name** unterstützt Sie dabei, das Portal zu identifizieren, und er kann später geändert werden.
+    > [!div class="mx-imgBorder"]
+    > ![Öffnen Sie das Dynamics 365 Admin Center über das neue Admin Center](media/from-new-admin-center.png "Öffnen Sie das Dynamics 365 Admin Center über das neue Admin Center") 
 
-4.  Das Feld **Typ** stellt den Typ des Portalabonnements dar (Testversion oder Produktion). Das ist ein Systemfeld. Deshalb kann es nicht durch den Benutzer geändert werden. Der Wert ändert sich abhängig davon, ob es ein Testabonnement oder ein bezahltes Abonnement ist.
+4. Wenn Sie mit dem alten Admin Center arbeiten, erweitern Sie **Admin Center** in der linken Navigationsspalte auf und wählen dann **Dynamics 365**.
 
-5. Optional in der Dropdownliste **Portalentwicklungsstand**, wählen Sie eine der folgenden Entwicklungsstände für das Portal aus:
+    > [!div class="mx-imgBorder"]
+    > ![Öffnen Sie das Dynamics 365 Admin Center über das alte Admin Center](media/from-old-admin-center.png "Öffnen Sie das Dynamics 365 Admin Center über das alte Admin Center") 
+
+5. Wählen Sie auf der Seite **Dynamics 365 Admin Center** die Registerkarte **Anwendungen**.
+
+6. Wählen Sie die Anwendungszeile mit dem Titel **Portal Add-On** aus und klicken Sie dann auf **Verwalten.**
+
+7. Im Abschnitt **Allgemeine Einstellungen** geben Sie einen **Name** für Ihr Portal ein. Der **Name** unterstützt Sie dabei, das Portal zu identifizieren, und er kann später geändert werden.
+
+8. Das Feld **Typ** stellt den Typ des Portalabonnements dar (Testversion oder Produktion). Das ist ein Systemfeld. Deshalb kann es nicht durch den Benutzer geändert werden. Der Wert ändert sich abhängig davon, ob es ein Testabonnement oder ein bezahltes Abonnement ist.
+
+9. Optional in der Dropdownliste **Portalentwicklungsstand**, wählen Sie eine der folgenden Entwicklungsstände für das Portal aus:
 
     - Prototyp
     - Entwicklung
@@ -46,22 +60,22 @@ So stellen Sie ein Portal bereit:
     > - Diese wird nur für die Dropdownliste Portale des Typs Produktion verfügbar.
     > - Das Feld wird von Microsoft verwendet, um ein Verwendungsmuster des Portals zu verstehen und hat keinen Einfluss auf die  Funktionen. Falls Sie unterschiedliche Namen für Entwicklungslebenszyklus verwenden, wählen Sie jenen aus, der besser zum Zweck passt. Dies kann zu einem späteren Zeitpunkt geändert werden, sobald es angegeben wird.
 
-5.  Im Feld **Portal-URL** geben Sie den Namen der Unterdomäne ein, den Sie für das Portal möchten. Sie können nur alphanumerische Zeichen oder Bindestriche (-) verwenden; andere Zeichen sind nicht zulässig.
+10. Im Feld **Portal-URL** geben Sie den Namen der Unterdomäne ein, den Sie für das Portal möchten. Sie können nur alphanumerische Zeichen oder Bindestriche (-) verwenden; andere Zeichen sind nicht zulässig.
 
     > [!NOTE]
     > - Um die URL des Portals ändern nachdem Sie bereitgestellt ist, gehen Sie zu [URL für Portal ändern](admin/change-base-url.md).
     > - Um Ihr Portal mit einer benutzerdefinierten Domäne zu verknüpfen, siehe [Verknüpfen Sie Ihr Portal mit einer benutzerdefinierten Domäne](admin/add-custom-domain.md).
 
-6.  Wählen Sie in der Dropdown-Liste **Dynamics 365 Instanz** die Instanz aus, mit der Sie das Portal verlinken möchten. Dazu ist es erforderlich, dass der Systemadministrator oder die Rolle System Anpasser in der von Ihnen ausgewählten Instanz verwendet wird.
+11. Wählen Sie in der Dropdown-Liste **Dynamics 365 Instanz** die Instanz aus, mit der Sie das Portal verlinken möchten. Dazu ist es erforderlich, dass der Systemadministrator oder die Rolle System Anpasser in der von Ihnen ausgewählten Instanz verwendet wird.
 
-7.  Wählen Sie die standardmäßige Sprache für Ihr Portal aus der Dropdownliste **Portalsprache wählen** aus. Die verfügbaren Sprachen hängen von den Sprachen ab, die in Ihrer Instanz installiert sind. 
-
+12. Wählen Sie die standardmäßige Sprache für Ihr Portal aus der Dropdownliste **Portalsprache wählen** aus. Die verfügbaren Sprachen hängen von den Sprachen ab, die in Ihrer Instanz installiert sind. 
+    
     > [!NOTE]
     > Beispieldaten werden nur in einer Sprache bereitgestellt. Die Auswahl einer Standardsprache entscheidet somit auch, wie die Beispieldaten übersetzt werden. Arabisch und Hebräisch werden nicht unterstützt und werden in der Liste nicht angezeigt.
 
-8. Wählen Sie in der Dropdown-Liste **Portaladministrator auswählen** den Benutzer aus, der das Portal konfigurieren, anpassen und pflegen soll. Alle Benutzer, die in der Organisation die Rolle Systemadministrator haben, werden als Optionen angezeigt. 
+13. Wählen Sie in der Dropdown-Liste **Portaladministrator auswählen** den Benutzer aus, der das Portal konfigurieren, anpassen und pflegen soll. Alle Benutzer, die in der Organisation die Rolle Systemadministrator haben, werden als Optionen angezeigt. 
 
-9. Wählen Sie im Abschnitt **Portalzielgruppe** den Typ der Zielgruppe aus, der das neue Portal besuchen wird.l Hiermit wird bestimmt, welche Optionen von Portalen Ihnen zugewiesen werden. Sie können aus folgenden Optionen auswählen:
+14. Wählen Sie im Abschnitt **Portalzielgruppe** den Typ der Zielgruppe aus, der das neue Portal besuchen wird.l Hiermit wird bestimmt, welche Optionen von Portalen Ihnen zugewiesen werden. Sie können aus folgenden Optionen auswählen:
 
     -   Partner    
         -   Kunden-Self-Service-Portal
@@ -79,12 +93,12 @@ So stellen Sie ein Portal bereit:
     -   Mitarbeiter
         -   Mitarbeiter-Self-Service-Portal
 
-10. Wählen Sie im Abschnitt **Bereitgestelltes Portal auswählen** die Art des Portals aus, die Sie erstellen möchten. Die Optionen, die angezeigt werden, basieren auf der Zielgruppe, die Sie ausgewählt haben.
+15. Wählen Sie im Abschnitt **Bereitgestelltes Portal auswählen** die Art des Portals aus, die Sie erstellen möchten. Die Optionen, die angezeigt werden, basieren auf der Zielgruppe, die Sie ausgewählt haben.
 
     > [!div class="mx-imgBorder"]
     > ![Einstellungen für Ihr Portal konfigurieren](media/configure-settings-portal.png "Einstellungen für Ihr Portal konfigurieren")  
 
-11. Klicken Sie auf **Übermitteln** und akzeptieren Sie die Servicebedingungen.
+16. Klicken Sie auf **Übermitteln** und akzeptieren Sie die Servicebedingungen.
     > [!div class="mx-imgBorder"]
     > ![Vertragsbedingungen](media/terms-of-service.png "Vertragsbedingungen")  
 

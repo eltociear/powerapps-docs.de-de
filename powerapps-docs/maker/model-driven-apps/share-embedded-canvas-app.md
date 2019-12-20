@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 23435229c30298a6e2ff6a3e8417b0c09dad1312
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8c4b56d78b4c7337a9baf442231636e3d35ee27c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711121"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884054"
 ---
 # <a name="share-an-embedded-canvas-app"></a>Freigeben einer eingebetteten Canvas-App
 In diesem Thema wird erklärt, wie Sie eine eingebettete Canvas-App freigeben, die Sie bereits erstellt haben.
@@ -34,7 +34,7 @@ In diesem Thema wird erklärt, wie Sie eine eingebettete Canvas-App freigeben, d
 Nachdem Sie eine eingebettete Canvas-App erstellt und einem modellgestützten Formular hinzugefügt haben, müssen Sie sicherstellen, dass alle Benutzer, die Zugriff auf das modellgestützte Formular haben, auch über Zugriff auf die Canvas-App und von ihr verwendeten Daten verfügen. Informationen halten die folgenden Richtlinien bereit:
 -   Geben Sie die eingebettete Canvas-App für alle Benutzern in der Organisation oder einer Sicherheitsgruppe oder für bestimmte Benutzer frei. Weitere Informationen: [Freigeben einer App](../canvas-apps/share-app.md#share-an-app).
 -   Stellen Sie sicher, dass alle Benutzer über die entsprechenden Berechtigungen für die Common Data Service-Entitäten verfügen, die von der eingebetteten Canvas-App verwendet werden. Weitere Informationen: [Verwalten von Entitätsberechtigungen](../canvas-apps/share-app.md#manage-entity-permissions)
--   Stellen Sie sicher, dass Benutzer über die entsprechende Berechtigung für Daten auf allen Cloudservices verfügen, die von der eingebetteten Canvas-App verwendet werden, z. B. SharePoint oder OneDrive. Die Freigabeschritte sind für jeden Cloudservice unterschiedlich und liegen außerhalb des Rahmens von PowerApps.
+-   Stellen Sie sicher, dass Benutzer über die entsprechende Berechtigung für Daten auf allen Cloudservices verfügen, die von der eingebetteten Canvas-App verwendet werden, z. B. SharePoint oder OneDrive. Die Freigabeschritte sind für jeden Cloudservice unterschiedlich und liegen außerhalb des Rahmens von Power Apps.
 
 > [!NOTE]
 > Aktuell können Sie das **Canvas-App**-Recht in einer Sicherheitsrolle nicht verwenden, um App-Benutzern Zugriff auf eine eingebettete oder eigenständige Canvas-App zu gewähren.

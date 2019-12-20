@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d25283531665a0e1c534bd0e797cbaa722c44bba
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a37efda1dd6593f30e90ade7e11f7e762d67b932
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748310"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861928"
 ---
 # <a name="implementing-table-component"></a>Implementieren einer Tabellenkomponente
 
@@ -25,6 +25,9 @@ Diese Beispielkomponente rendert eine Tabelle mit zwei Spalten. Die linke Spalte
 ## <a name="available-for"></a>Verfügbar für 
 
 Modellgestützte Apps
+
+> ![!NOTE]
+> Wenn Sie die Tabellenkomponente mit dem Befehl `npm start` debuggen, wird die Komponente nicht im Prüfstrang gerendert. Dies liegt daran, dass die Komponente die `context.utils.getEntityMetadata`-Methode verwendet, die von den Power Apps-CLI-Tool noch nicht unterstützt wird.
 
 ## <a name="manifest"></a>Manifest
 
@@ -444,5 +447,6 @@ Die Callback-Methode injiziert diese Informationen als HTML in ein Div, das auf 
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten verwenden](../use-sample-components.md)<br/>
+[Power Apps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)

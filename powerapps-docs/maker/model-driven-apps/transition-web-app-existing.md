@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e39cb11b9883e93d341232bcdcbb43dc17fa491a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 75175b34b158be75165c6bcdae5826060fb47f38
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759774"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884352"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>Schneller Einstieg in die Nutzung einer bestehenden Umgebung zur Validierung Ihrer bestehenden Web Client App mit der einheitlichen Benutzeroberfläche.
 Dieses Schnellstartthema zeigt Ihnen, wie Sie eine bestehende Umgebung verwenden können, um eine Anwendung für die einheitliche Benutzeroberfläche basierend auf Ihrer aktuellen Konfiguration oder Standardlösung zu erstellen. Auf diese Weise können Sie die einheitliche Benutzeroberfläche erkunden und testen, während Sie Ihre bestehenden Legacy-Webclient-Anwendungen parallel ausführen. Ein Benutzer kann dann zwischen den Umgebungen für eine Side-by-Side-Ansicht wechseln. 
@@ -65,7 +65,7 @@ Der Prozess zur Validierung Ihrer bestehenden Web Client App in einer bestehende
 Wenn Sie kürzlich den Modus **Nur einheitliche Benutzeroberfläche verwenden** auf **Ein** in Ihrer Entwicklungsumgebung umgestellt haben, z.B. durch Befolgen des [Schnellstart für die Umstellung Ihrer Dynamics 365 Legacy Web Client Anwendung auf die einheitliche Benutzeroberfläche](transition-web-app.md) Thema, müssen Sie die Einstellung auf **Aus** zurücksetzen, damit Sie die vorhandenen Legacy Web Client Anwendungen ausführen können.
 
 ### <a name="create-a-new-solution-thats-based-on-the-default-solution"></a>Erstellen Sie eine neue Lösung, die auf der Standardlösung basiert.
-1. Melden Sie sich beim [PowerApps Herstellerportal](https://make.powerapps.com) an.   
+1. Melden Sie sich beim [Power Apps Herstellerportal](https://make.powerapps.com) an.   
 2. Wählen Sie aus der Liste der Umgebungen die gewünschte Umgebung aus.  
 3. Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus. 
 4. Wählen Sie in der Menüleiste **Neue Lösung**. 
@@ -98,7 +98,7 @@ Im Browser öffnet sich ein neues Fenster mit Ihrer neuen modellgesteuerten Anwe
 > [!div class="mx-imgBorder"] 
 > ![Neue Einheitliche Oberfläche-App](media/new-unified-interface-app.png "Neue Einheitliche Oberfläche-App")
 
-Beachten Sie, dass, wenn Sie mit dem Bereich PowerApps des Herstellerportals **Lösungen** auf die Registerkarte Browser zurückkehren, Ihre neue modellgetriebene Anwendung und eine ähnlich benannte Sitemap-Client-Erweiterung Teil der von Ihnen erstellten Lösung sind.  
+Beachten Sie, dass, wenn Sie mit dem Bereich Power Apps des Herstellerportals **Lösungen** auf die Registerkarte Browser zurückkehren, Ihre neue modellgetriebene Anwendung und eine ähnlich benannte Sitemap-Client-Erweiterung Teil der von Ihnen erstellten Lösung sind.  
 
 > [!div class="mx-imgBorder"] 
 > ![Lösungskomponenten](media/solution-assets.png "Lösungskomponenten")
@@ -158,7 +158,7 @@ Wenn Ihre Anwendung die einheitliche Benutzeroberfläche präsentiert, können S
 > Die aktuelle Version von Common Data Service und modellgetriebenen Apps in Dynamics 365 enthält noch einige veraltete Funktionen. Sie sollten Ihre Anwendung auf veraltete Funktionen überprüfen und bei Bedarf durch neue Funktionen ersetzen. Mehr Informationen: [Wichtige Änderungen (veraltet) kommen ](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)
 
 > [!TIP]
-> Das PowerApps Checker-Tool unterstützt Sie bei der Qualitätsprüfung der Komponenten Ihrer Lösung.  Mehr Informationen: [Verwenden Sie den Solution Checker, um Ihre modellgetriebenen Anwendungen in PowerApps](../common-data-service/use-powerapps-checker.md) zu validieren.
+> Das Power Apps Checker-Tool unterstützt Sie bei der Qualitätsprüfung der Komponenten Ihrer Lösung.  Mehr Informationen: [Verwenden Sie den Solution Checker, um Ihre modellgetriebenen Anwendungen in Power Apps](../common-data-service/use-powerapps-checker.md) zu validieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Basierend auf Ihren Erkenntnissen kann Ihr Implementierungsteam oder Ihr Partner den Aufwand für die Umstellung Ihrer Anwendung auf die einheitliche Benutzeroberfläche abschätzen und mögliche Verbesserungen der Benutzerfreundlichkeit identifizieren. Mit einer Vielzahl neuer Funktionen und Fähigkeiten, die in der einheitlichen Benutzeroberfläche verfügbar sind, besteht die Möglichkeit, den Wert für Ihre Anwendungsbenutzer zu erhöhen. 
@@ -171,9 +171,9 @@ Mehr Informationen: [Entwerfen Sie modellbasierte Anwendungen mit dem App Design
 [Einheitliche Benutzeroberfläche - Playbook](unified-interface-playbook.md) <br />
 [Annäherung an eine Benutzererfahrung und Übergang zur einheitlichen Benutzeroberfläche](approaching-unified-interface.md) <br />
 [Über „Einheitliche Oberfläche”](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[Was sind modellgetriebene Apps in PowerApps?](model-driven-app-overview.md) <br />
+[Was sind modellgetriebene Apps in Power Apps?](model-driven-app-overview.md) <br />
 [Aktualisieren Ihrer Apps auf die einheitliche Oberfläche](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [Informationen zum Konfigurieren von Dashboards für interaktive Funktionen](configure-interactive-experience-dashboards.md) <br />
 [Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen](use-custom-controls-data-visualizations.md) <br />
-[PowerApps component framework Übersicht](/powerapps/developer/component-framework/overview) <br />
+[Power Apps component framework Übersicht](/powerapps/developer/component-framework/overview) <br />
 [Einheitliche Benutzeroberfläche für alle](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)

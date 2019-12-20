@@ -1,5 +1,5 @@
 ---
-title: Verwaltete Eigenschaften für Beziehungen in PowerApps festlegen | MicrosoftDocs
+title: Verwaltete Eigenschaften für Beziehungen in Power Apps festlegen | MicrosoftDocs
 description: Erfahren Sie, wie verwaltete Eigenschaften für eine Entitätsbeziehung festgelegt werden
 ms.custom: ''
 ms.date: 06/20/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6eb71b72be40b581f7579709bdbe18ac72db1e1d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5052f85fea1fb6c11976c2c1da021a03028c244c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702277"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865377"
 ---
 # <a name="set-managed-properties-for-relationships"></a>Festlegen von verwalteten Eigenschaften für Beziehungen
 

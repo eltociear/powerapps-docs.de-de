@@ -1,5 +1,5 @@
 ---
-title: n:n-Entitätsbeziehungen in Common Data Service mithilfe des PowerApps-Portals erstellen | Microsoft-Dokumentation
+title: n:n-Entitätsbeziehungen in Common Data Service mithilfe des Power Apps-Portals erstellen | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie N:N-Beziehungen erstellen
 ms.custom: ''
 ms.date: 06/11/2018
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9a0a8ec96760c6816ea2b6caaf4bcc760b9852de
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: dd85ee8b5b44ad6db9ac70a38984eb5c04cd12d8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757706"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865795"
 ---
-# <a name="create-many-to-many-entity-relationships-in-common-data-service-using-powerapps-portal"></a>n:n-Entitätsbeziehungen in Common Data Service mit Hilfe des PowerApps-Portals erstellen
+# <a name="create-many-to-many-entity-relationships-in-common-data-service-using-power-apps-portal"></a>n:n-Entitätsbeziehungen in Common Data Service mit Hilfe des Power Apps-Portals erstellen
 
-Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, 1:n- (eine-zu-viele) oder n:1-Entitätsbeziehungen (viele-zu-einer) für Common Data Service zu erstellen und zu bearbeiten.
+Das [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, 1:n- (eine-zu-viele) oder n:1-Entitätsbeziehungen (viele-zu-einer) für Common Data Service zu erstellen und zu bearbeiten.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. Weitere Informationen: 
 - [N:N (viele-zu-viele)-Beziehungen erstellen](create-edit-nn-relationships.md)
@@ -37,7 +37,7 @@ PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch b
 
 ## <a name="view-many-to-many-entity-relationships"></a>Viele-zu-viele-Entitätsbeziehungen anzeigen
 
-1. Wählen Sie im [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
+1. Wählen Sie im [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
 2. Wählen Sie **Daten**  >  **Entitäten** und wählen Sie die Entität aus, die die Beziehung enthält, die Sie anzeigen möchten.
 3. Wenn die Registerkarte **Beziehungen** ausgewählt ist, können Sie die folgenden Ansichten auswählen: 
 
@@ -76,7 +76,7 @@ Die Werte für diese Felder werden für Sie anhand der ausgewählten Entität er
 
 Wählen Sie **OK** aus, um den Bereich **n:n** zu schließen. Die Beziehung wird erstellt, wenn die Sie die Änderungen an der Entität speichern. 
 
-Sobald sie gespeichert sind, kann mit dem [PowerApps-Portal nichts mehr geändert werden](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Zum Bearbeiten der Eigenschaften der Beziehung für modellgesteuerte Apps verwenden Sie den [Projektmappen-Explorer](create-edit-nn-relationships-solution-explorer.md).
+Sobald sie gespeichert sind, kann mit dem [Power Apps-Portal nichts mehr geändert werden](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Zum Bearbeiten der Eigenschaften der Beziehung für modellgesteuerte Apps verwenden Sie den [Projektmappen-Explorer](create-edit-nn-relationships-solution-explorer.md).
 
 ## <a name="delete-relationships"></a>Beziehungen löschen
 

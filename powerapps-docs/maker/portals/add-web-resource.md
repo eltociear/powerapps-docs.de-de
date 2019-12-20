@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c735513bc0a8f325aaf0debca2170131d45178dc
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 873f2054856e21b7fbf56247a4234ae2fb2a72c9
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756870"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816469"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Hinzufügen der Azure Storage-Webressource zu einem Formular
 
@@ -67,7 +67,7 @@ Das Büroklammersymbol wurde durch ein Wolkensymbol ersetzt, um zu kennzeichnen,
 
 > [!Note]
 > Sie müssen auch die ursprungsübergreifende Ressourcenfreigabe (Cross-Origin Resource Sharing, CORS) in Ihrem Azure-Speicherkonto hinzufügen, andernfalls wird das reguläre Anlagensymbol anstelle des Wolkensymbols angezeigt.
-> - **Zulässige Ursprünge**: Geben Sie Ihre Domäne an. Zum Beispiel contoso.crm.dynamics.com.
+> - **Zulässige Ursprünge**: Geben Sie Ihre Domäne an. Zum Beispiel: `http://contoso.crm.dynamics.com`.
 > - **Zulässige Verben**: GET, PUT, DELETE, HEAD, POST
 > - **Zulässige Überschriften**: Geben Sie die erforderlichen Überschriften an, die möglicherweise die Ursprungsdomäne auf der CORS-Anforderung angibt. Beispielsweise x-ms-meta-data\*, x-ms-meta-target\*. Für dieses Szenario müssen Sie * angeben, da die Webressource sonst nicht richtig dargestellt wird.
 > - **Verfügbar gemachte Überschriften**: Geben Sie die Antwortheader an, die möglicherweise in der Antwort zur CORS-Anforderung gesendet und vom Browser für den angeforderten Aussteller verfügbar gemacht werden. Beispielsweise x-ms-meta-\*.

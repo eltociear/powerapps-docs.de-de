@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5735e425dd0d19dd5e52603433d56cc37e897cd6
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e4ffa1062d553e37776b1ff9a4625f7d80b4e46e
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758387"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874265"
 ---
 # <a name="autonumber-fields"></a>Felder mit automatischer Nummerierung
 
 Felder mit automatischer Nummerierung sind Felder, die automatisch alphanumerische Zeichenfolgen erstellen, wenn sie erstellt werden. Ersteller können das Format dieser Felder nach ihren Wünschen anpassen und sich dann darauf verlassen, dass vom System passende Werte erstellt werden, mit denen die Felder bei Laufzeit befüllt werden.
 
-Obwohl Felder mit automatischer Nummerierung formell nur Textfelder mit zusätzlichen erstellten Funktionen sind, vereinfacht [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) dieses Konzept, indem **Automatische Nummerierung** als eindeutiger Datentyp in der **Text**-Kategorie eingeblendet wird. Beachten Sie unbedingt, dass der [klassische Lösungs-Explorer](use-solution-explorer.md#classic-solution-explorer) das Erstellen oder Verwaltung von Felder mit automatischer Nummerierung nicht unterstützt.
+Obwohl Felder mit automatischer Nummerierung formell nur Textfelder mit zusätzlichen erstellten Funktionen sind, vereinfacht [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) dieses Konzept, indem **Automatische Nummerierung** als eindeutiger Datentyp in der **Text**-Kategorie eingeblendet wird. Beachten Sie unbedingt, dass der [klassische Lösungs-Explorer](use-solution-explorer.md#classic-solution-explorer) das Erstellen oder Verwaltung von Felder mit automatischer Nummerierung nicht unterstützt.
 
 Wenn Sie ein Feld mit automatischer Nummerierung erstellen möchten, führen Sie die gleichen Schritte aus, um [ein Feld zu erstellen](create-edit-field-portal.md#create-a-field) und wählen Sie einfach **Automatische Nummerierung** aus dem **Datentyp**-Dropdownlistenfeld aus. 
 
@@ -70,7 +70,7 @@ Der Startwert eines Felds für automatisierte Nummerierung ist die Startzahl, di
 
 ## <a name="create-an-autonumber-field"></a>Erstellen eines Felds mit automatisierter Nummerierung
   
-1.  Melden Sie sich beim [PowerAppsPortal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich beim [Power AppsPortal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
   
 2.  Erweitern Sie im linken Bereich **Daten** und wählen Sie **Entitäten** aus.
   
@@ -92,4 +92,4 @@ Der Startwert eines Felds für automatisierte Nummerierung ist die Startzahl, di
 9. **Fertig** auswählen
 
 ## <a name="see-also"></a>Siehe auch
- [Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal](create-edit-field-portal.md)
+ [Erstellen und Bearbeiten von Feldern für Common Data Service mit dem Power Apps-Portal](create-edit-field-portal.md)

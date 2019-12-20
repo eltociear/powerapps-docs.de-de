@@ -1,6 +1,6 @@
 ---
-title: Verwenden der PowerApps-Überprüfungs-Web-API | Microsoft-Dokumentation
-description: Die PowerApps-Überprüfungs-Web-API bietet eine Entwicklungserfahrung, die für eine Vielzahl von Programmiersprachen, Plattformen und Geräte verwendet werden kann
+title: Verwenden der Power Apps-Überprüfungs-Web-API | Microsoft-Dokumentation
+description: Die Power Apps-Überprüfungs-Web-API bietet eine Entwicklungserfahrung, die für eine Vielzahl von Programmiersprachen, Plattformen und Geräte verwendet werden kann
 ms.custom: ''
 ms.date: 06/3/2019
 ms.service: powerapps
@@ -20,22 +20,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 495a5e976ae3ef9579e96023e65be5bee85f5c01
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eed1556726cb947d7eba6b8f94ceed538f669ea3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753034"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861811"
 ---
-# <a name="use-the-powerapps-checker-web-api"></a>Verwenden der PowerApps-Überprüfungs-Web-API
+# <a name="use-the-power-apps-checker-web-api"></a>Verwenden der Power Apps-Überprüfungs-Web-API
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Die PowerApps-Überprüfungs-Web-API bietet einen Mechanismus für das Ausführen statischer Analyseprüfungen hinsichtlich Anpassungen und Erweiterungen für die Common Data Service-Plattform. Sie ist für Ersteller und Entwickler verfügbar, um umfangreiche Prüfungen der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen, um problematische Muster schnell zu ermitteln. Der Service bietet die Logik für die [Lösungsprüferfunktion](../../../../maker/common-data-service/use-powerapps-checker.md) im PowerApps-Ersteller-[Portal](https://make.powerapps.com) und ist als Teil der Automatisierung für [Anwendungen enthalten, die über AppSource eingereicht werden](../../publish-app-appsource.md). Das direkte Interagieren mit dem Service auf diese Weise ermöglicht eine Analyse von Lösungen, die in den lokalen (alle unterstützten Versionen) und Online-Umgebungen enthalten sind.
+Die Power Apps-Überprüfungs-Web-API bietet einen Mechanismus für das Ausführen statischer Analyseprüfungen hinsichtlich Anpassungen und Erweiterungen für die Common Data Service-Plattform. Sie ist für Ersteller und Entwickler verfügbar, um umfangreiche Prüfungen der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen, um problematische Muster schnell zu ermitteln. Der Service bietet die Logik für die [Lösungsprüferfunktion](../../../../maker/common-data-service/use-powerapps-checker.md) im Power Apps-Ersteller-[Portal](https://make.powerapps.com) und ist als Teil der Automatisierung für [Anwendungen enthalten, die über AppSource eingereicht werden](../../publish-app-appsource.md). Das direkte Interagieren mit dem Service auf diese Weise ermöglicht eine Analyse von Lösungen, die in den lokalen (alle unterstützten Versionen) und Online-Umgebungen enthalten sind.
 
  > [!IMPORTANT]
  >
- > - Die Web-API für die PowerApps-Überprüfung ist eine Vorschaufunktion.
+ > - Die Web-API für die Power Apps-Überprüfung ist eine Vorschaufunktion.
  > - [!INCLUDE[cc_preview_features_definition](../../../../includes/cc-preview-features-definition.md)]
 
 <a name="bkmk_altApproaches"></a>
@@ -80,7 +80,7 @@ In den folgenden Themen finden Sie Dokumentationen zu den einzelnen APIs:
 
 ## <a name="determine-a-geography"></a>Geografie bestimmen
 
-Beim Interagieren mit dem PowerApps-Überprüfungsservice werden Dateien zusammen mit den generierten Berichten vorübergehend in Azure gespeichert. Wenn Sie eine spezielle API für die Geografie verwenden, können Sie steuern, wo die Daten gespeichert werden. Es wird empfohlen, dieselbe Geografie für jeden API-Aufruf im Analyselebenszyklus zu verwenden. Jede Geografie kann aufgrund unseres mehrstufigen sicheren Bereitstellungsansatzes zu einem bestimmten Zeitpunkt eine andere Version haben. So können wir eine vollständige Versionskompatibilität sicherstellen. Außerdem kann dies die Ausführungszeit verringern, da die Daten in einigen Fällen einen kürzeren Weg haben. Im Folgenden finden Sie die verfügbaren Geografien:
+Beim Interagieren mit dem Power Apps-Überprüfungsservice werden Dateien zusammen mit den generierten Berichten vorübergehend in Azure gespeichert. Wenn Sie eine spezielle API für die Geografie verwenden, können Sie steuern, wo die Daten gespeichert werden. Es wird empfohlen, dieselbe Geografie für jeden API-Aufruf im Analyselebenszyklus zu verwenden. Jede Geografie kann aufgrund unseres mehrstufigen sicheren Bereitstellungsansatzes zu einem bestimmten Zeitpunkt eine andere Version haben. So können wir eine vollständige Versionskompatibilität sicherstellen. Außerdem kann dies die Ausführungszeit verringern, da die Daten in einigen Fällen einen kürzeren Weg haben. Im Folgenden finden Sie die verfügbaren Geografien:
 
 |Azure-Rechenzentrum|Name|Geografie|Basis-URI|
 |---|---|---|---|
@@ -112,7 +112,7 @@ Wenn dies nicht angegeben wird, wird die aktuelle API-Version standardmäßig ve
 
 ## <a name="rulesets-and-rules"></a>Regelsätze und Regeln
 
-Die PowerApps-Überprüfung erfordert bei der Ausführung eine Liste mit Regeln. Diese Regeln können im Formular der einzelnen Regeln oder einer Gruppierung von Regeln bereitgestellt werden, auch als *Regelsatz* bezeichnet. Ein Regelsatz ist eine bequeme Möglichkeit, eine Gruppe von Regeln anzugeben, statt jede Regeln einzeln anzugeben. Beispielsweise verwendet die Lösungsüberprüfungsfunktion einen Regelsatz namens *Lösungsprüfung*. Wenn neue Regeln hinzugefügt oder entfernt werden, berücksichtigt der Service diese Änderungen automatisch, ohne dass eine Änderung durch die nutzende Anwendung erforderlich wird. Wenn Sie angeben, dass die Liste mit Regeln nicht wie oben beschrieben automatisch geändert werden darf. Dann können die Regeln einzeln angegeben werden.
+Die Power Apps-Überprüfung erfordert bei der Ausführung eine Liste mit Regeln. Diese Regeln können im Formular der einzelnen Regeln oder einer Gruppierung von Regeln bereitgestellt werden, auch als *Regelsatz* bezeichnet. Ein Regelsatz ist eine bequeme Möglichkeit, eine Gruppe von Regeln anzugeben, statt jede Regeln einzeln anzugeben. Beispielsweise verwendet die Lösungsüberprüfungsfunktion einen Regelsatz namens *Lösungsprüfung*. Wenn neue Regeln hinzugefügt oder entfernt werden, berücksichtigt der Service diese Änderungen automatisch, ohne dass eine Änderung durch die nutzende Anwendung erforderlich wird. Wenn Sie angeben, dass die Liste mit Regeln nicht wie oben beschrieben automatisch geändert werden darf. Dann können die Regeln einzeln angegeben werden.
 Regelsätze können eine oder mehrere Regeln haben, es gibt keine Beschränkung. Eine Regel kann in keinem Regelsatz oder in mehreren Regelsätzen enthalten sein. Sie können eine Liste aller Regelsätze abrufen, indem Sie die API wie folgt aufrufen: `[Geographical URL]/api/ruleset`. Dieser Endpunkt ist offen und erfordert keine Authentifizierung.
 
 ### <a name="solution-checker-ruleset"></a>Lösungsprüfer-Regelsatz
@@ -143,7 +143,7 @@ Die Mandanten-ID ist der Wert der `ObjectId`-Eigenschaft, der von `Get-AzureADTe
 
 ## <a name="authentication-and-authorization"></a>Authentifizierung und Autorisierung
 
- Die Abfrage von Regeln und Regelsätzen erfordert kein OAuth-Token, aber bei allen anderen APIs wird das Token benötigt. Die APIs unterstützen die Autorisierungsermittlung, indem alle der APIs aufgerufen werden, die ein Token erfordern. Die Antwort ist ein nicht autorisierter HTTP-Statuscode von 401 mit einer WWW-Authentifizierungskopfzeile, der Autorisierungs-URI und der Ressourcen-ID. Sie sollten auch Ihre Mandanten-ID in der `x-ms-tenant-id`-Kopfzeile angeben. Unter [PowerApps-Prüfungsauthentifizierung und -autorisierung](/powershell/powerapps/overview#powerapps-checker-authentication-and-authorization) erhalten Sie weitere Informationen. Unten finden Sie ein Beispiel für eine Antwortkopfzeile, die von einer API-Abfrage zurückgegeben wird:
+ Die Abfrage von Regeln und Regelsätzen erfordert kein OAuth-Token, aber bei allen anderen APIs wird das Token benötigt. Die APIs unterstützen die Autorisierungsermittlung, indem alle der APIs aufgerufen werden, die ein Token erfordern. Die Antwort ist ein nicht autorisierter HTTP-Statuscode von 401 mit einer WWW-Authentifizierungskopfzeile, der Autorisierungs-URI und der Ressourcen-ID. Sie sollten auch Ihre Mandanten-ID in der `x-ms-tenant-id`-Kopfzeile angeben. Unter [Power Apps-Prüfungsauthentifizierung und -autorisierung](/powershell/powerapps/overview#powerapps-checker-authentication-and-authorization) erhalten Sie weitere Informationen. Unten finden Sie ein Beispiel für eine Antwortkopfzeile, die von einer API-Abfrage zurückgegeben wird:
 
 ```http
 WWW-Authenticate →Bearer authorization_uri="https://login.microsoftonline.com/0082fff7-33c5-44c9-920c-c2009943fd1e", resource_id="https://api.advisor.powerapps.com/"

@@ -1,5 +1,5 @@
 ---
-title: Unterrastereigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | Microsoft-Dokumentation
+title: Unterrastereigenschaften für Hauptformulare in modellgesteuerten Apps in Power Apps | Microsoft-Dokumentation
 description: Grundlegendes zu Unterrastereigenschaften für Hauptformulare
 Keywords: Hauptformular; Eigenschaften des Unterrasters; Dynamics 365
 author: Mattp123
@@ -18,19 +18,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a6bb86fde69554808f8cbf75f0366dc49ea485f4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ff9b79565525cee42eedfcd48c59669c4fe277d8
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759686"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872823"
 ---
 # <a name="sub-grid-properties-for-model-driven-app-main-forms-overview"></a>Unterrastereigenschaften für Hauptformulare in modellgesteuerten Apps im Überblick
 
 Sie können ein Unterraster auf einem Formular konfigurieren, um eine Liste von Datensätzen oder ein Diagramm anzuzeigen. Wählen Sie **Nur Diagramm anzeigen** auf der Registerkarte **Anzeigen**, um ein Diagramm statt der Liste anzuzeigen.  
 
-Sie können auf **Unterrastereigenschaften** über die PowerApps-Website zugreifen. 
-1.  Wählen Sie auf der Website [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Modellgesteuert** (unterer linker Teil des Navigationsbereichs) aus.  
+Sie können auf **Unterrastereigenschaften** über die Power Apps-Website zugreifen. 
+1.  Wählen Sie auf der Website [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Modellgesteuert** (unterer linker Teil des Navigationsbereichs) aus.  
 
      ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
 

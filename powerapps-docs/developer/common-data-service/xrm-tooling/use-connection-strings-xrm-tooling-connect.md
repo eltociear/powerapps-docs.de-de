@@ -2,17 +2,11 @@
 title: Verwenden Sie Verbindungszeichenfolgen in XRM-Tools, um eine Verbindung zu Common Data Service (Common Data Service)| Microsoft Docs herzustellen.
 description: XRM-Tools ermöglichen es Ihnen, sich mit Ihrer Common Data Service-Umgebung zu verbinden, indem Sie Verbindungszeichenfolgen verwenden.
 ms.custom: ''
-ms.date: 03/27/2019
+ms.date: 11/13/2019
 ms.reviewer: ''
 ms.service: powerapps
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-ms.assetid: a98b2fce-df49-4b60-91f4-a4446aa61cd3
-caps.latest.revision: 21
-author: MattB-msft
+author: nkrb
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
@@ -20,18 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 326904046c33ed426d879794c3076d7a509741dd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 648aba609cb8b7b8cafeefa9515fabf0751595c7
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748494"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815946"
 ---
 # <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden Sie Verbindungszeichenfolgen in XRM-Tools, um eine Verbindung mit Common Data Service herzustellen.
 
 Mit Common Data Service ermöglicht XRM-Tooling die Verbindung zu Ihrer Common Data Service-Umgebung über Verbindungszeichenfolgen. Dies ähnelt dem Konzept von Verbindungszeichenfolgen, das in **SQL Server** verwendet wird. Verbindungszeichenfolgen erhalten native Unterstützung in Konfigurationsdateien inklusive der Möglichkeit der Verschlüsselung der Konfigurationsabschnitte für maximale Sicherheit. Dies ermöglicht es Ihnen, Common Data Service-Verbindungen zur Bereitstellungszeit zu konfigurieren und nicht harten Code in Ihrer Anwendung, um eine Verbindung zu Ihrer Common Data Service-Umgebung herzustellen.  
-
-
 
 
 <a name="Create"></a> 
@@ -42,7 +34,7 @@ Mit Common Data Service ermöglicht XRM-Tooling die Verbindung zu Ihrer Common D
   
 ```xml  
 <connectionStrings>  
-    <add name="MyCDSServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com;Password=passcode;Url=https://contosotest.crm.dynamics.com;AppId=51f81489-12ee-4a9e-aaae-a2591f45987d;RedirectUri=app://58145B91-0C36-4500-8554-080854F2AC97;TokenCacheStorePath=c:\MyTokenCache;LoginPrompt=Auto"
+    <add name="MyCDSServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com;Password=passcode;Url=https://contosotest.crm.dynamics.com;AppId=51f81489-12ee-4a9e-aaae-a2591f45987d;RedirectUri=app://58145B91-0C36-4500-8554-080854F2AC97;TokenCacheStorePath=c:\MyTokenCache;LoginPrompt=Auto"/>
 </connectionStrings>  
 ```  
   
@@ -96,7 +88,7 @@ CrmServiceClient svc = new CrmServiceClient(ConnectionString);
 
 ## <a name="connection-string-examples"></a>Beispiele für Verbindungszeichenfolgen
  
-Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für die Verbindung mit Online-Bereitstellungen und Authentifizierungsszenarien verwenden können. Die Beispiele für Verbindungszeichenfolgen für lokale und IFD-Deployment-Instanzen sind nun in der Dokumentation Dynamics 365 Customer Engagement (on-premises) unter: [Verwenden Sie Verbindungszeichenfolgen in XRM-Tools, um eine Verbindung herzustellen](/dynamics365/customer-engagement/on-premises/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect). 
+Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für die Verbindung mit Online-Bereitstellungen und Authentifizierungsszenarien verwenden können. Die Beispiele für Verbindungszeichenfolgen für lokale und IFD-Deployment-Instanzen sind nun in der Dokumentation Dynamics 365 Customer Engagement (on-premises) unter: [Verwenden Sie Verbindungszeichenfolgen in XRM-Tools, um eine Verbindung herzustellen](/dynamics365/customerengagement/on-premises/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect). 
 
 ### <a name="named-account-using-office-365"></a>Benanntes Konto mit Office 365.  
   
@@ -110,6 +102,7 @@ Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für 
 ```  
   
 ### <a name="oauth-using-named-account-in-office-365-with-ux-to-prompt-for-authentication"></a>OAuth mit benanntem Konto in Office 365 mit UX zur Abfrage der Authentifizierung  
+
 Erstellen Sie eine neue Verbindung mit Common Data Service mit Hilfe einer UserID oder eines Kennworts via OAuth.
 
 > [!NOTE]
@@ -163,6 +156,7 @@ Erstellen einer neuen Verbindung mit Common Data Service mithilfe einer Anwendun
 ```
 
 ### <a name="clientid-or-client-secret-based-authentication"></a>Auf der ClientId oder dem geheimen Clientschlüssel basierte Authentifizierung
+
 Erstellen einer neuen Verbindung mit Common Data Service mithilfe einer Anwendung oder einer Client-ID und einem geheimen Clientschlüssel.
 ```xml
 <add name="MyCDSServer" 

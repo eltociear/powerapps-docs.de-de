@@ -9,23 +9,23 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 26bb1186710bbf0bc3fd40765459638245f3b027
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 077c1fee0c0a7b599516c0553ad190b6a3229dec
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756304"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864652"
 ---
 # <a name="create-and-manage-webpages"></a>Erstellen und Verwalten von Webseiten
 
 Eine Website ist ein Dokument, das über eine eindeutige URL in einer Website identifiziert wird. Sie ist eines der Kernobjekte der Website und bildet durch übergeordnete und untergeordnete Beziehungen zu anderen Webseiten eine Hierarchie der Website.
 
 > [!NOTE]
-> Wenn Sie Ihr Portal mithilfe des PowerApps-Portalstudios anpassen, würden die Websitebenutzer eine Auswirkung auf die Leistung feststellen. Wir empfehlen daher, die Änderungen nicht während der Hauptnutzungszeiten auf einem Liveportal durchzuführen.
+> Wenn Sie Ihr Portal mithilfe des Power Apps-Portalstudios anpassen, würden die Websitebenutzer eine Auswirkung auf die Leistung feststellen. Wir empfehlen daher, die Änderungen nicht während der Hauptnutzungszeiten auf einem Liveportal durchzuführen.
 
 ## <a name="create-webpage"></a>Erstellen einer Webseite
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.  
 
 2.  In der Befehlsleiste wählen Sie **Neue Seite** und entweder eine Seite aus **Layouts** oder **Feste Layouts** aus.
 
@@ -66,7 +66,7 @@ Wenn Sie mit einem Portal arbeiten, das in einer Umgebung, die modelgesteuerte A
 
 ## <a name="manage-webpage"></a>Verwalten der Webseite
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Power Apps-Portalstudio zu öffnen.  
 
 2.  Wählen Sie **Seiten** ![Seitensymbol](media/pages-icon.png "Seitensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
 

@@ -1,6 +1,6 @@
 ---
-title: Komplexe Entitäten, die PowerApps Plan 2 Lizenzen erfordern | Microsoft Docs
-description: Eine Liste der komplexen Entitäten in Common Data Service, die eine Lizenz für PowerApps Plan 2 benötigen.
+title: Komplexe Entitäten, die Power Apps Plan 2 Lizenzen erfordern | Microsoft Docs
+description: Eine Liste der komplexen Entitäten in Common Data Service, die eine Lizenz für Power Apps Plan 2 benötigen.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,25 +13,25 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f5ec7419ea7369a57308e046ae820557303f0d15
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a87b41fd2688992b85fb4dde36a2e7119f4e7a9f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706633"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861245"
 ---
 # <a name="complex-entities-and-licensing"></a>Komplexe Entitäten und Lizenzierung
 
 > [!IMPORTANT]
-> Dieses Thema ist veraltet und wird in Kürze aktualisiert, um die neuesten Lizenzierungsänderungen zu berücksichtigen, die ab dem 1. Oktober 2019 gelten. Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [PowerApps Lizenzhandbuch](https://go.microsoft.com/fwlink/?linkid=2085130).
+> Dieses Thema ist veraltet und wird in Kürze aktualisiert, um die neuesten Lizenzierungsänderungen zu berücksichtigen, die ab dem 1. Oktober 2019 gelten. Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [Power Apps Lizenzhandbuch](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-Entitäten, die die folgende komplexe serverseitige Logik beinhalten, erfordern, dass Benutzer einer App oder eines Flow, die diese Entitäten verwendet, eine PowerApps Plan 2 oder Microsoft Flow Plan 2 Lizenz besitzen:
+Entitäten, die die folgende komplexe serverseitige Logik beinhalten, erfordern, dass Benutzer einer App oder eines Flow, die diese Entitäten verwendet, eine Power Apps Plan 2 oder Power Automate Plan 2 Lizenz besitzen:
 
 * Code-Plug-Ins. Weitere Informationen: [Plug-In-Entwicklung](/powerapps/developer/common-data-service/plug-ins)
 * Echtzeitworkflows Weitere Informationen: [Workflowprozesse](/flow/workflow-processes)
 
     > [!IMPORTANT]
-    >  Nur Workflows, die in einen Echtzeitworkflow konvertiert werden, werden als in Echtzeit und synchron betrachtet. Workflows, die im Hintergrund laufen, können weiterhin mit dem entsprechenden PowerApps-Plan verwendet werden und benötigen keine zusätzlichen Lizenzen.
+    >  Nur Workflows, die in einen Echtzeitworkflow konvertiert werden, werden als in Echtzeit und synchron betrachtet. Workflows, die im Hintergrund laufen, können weiterhin mit dem entsprechenden Power Apps-Plan verwendet werden und benötigen keine zusätzlichen Lizenzen.
 
 Um zu wissen ob Sie Ihren Entitäten komplexere Geschäftslogik hinzugefügt haben, oder nicht, überprüfen Sie die Liste der Plug-In-Assemblys und Workflows, die in Ihrer Umgebung konfiguriert sind.
 
@@ -178,5 +178,5 @@ Die folgende Tabelle listet Entitäten auf, die im Rahmen der Installation von m
 
 
 ## <a name="licensing"></a>Lizenzierung
-Weitere Informationen zu PowerApps und Dynamics 365 Lizenzen finden Sie auf der Seite [Lizenzübersicht](../../administrator/pricing-billing-skus.md).
+Weitere Informationen zu Power Apps und Dynamics 365 Lizenzen finden Sie auf der Seite [Lizenzübersicht](../../administrator/pricing-billing-skus.md).
 

@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 42882b630cfe34cc17e310b32c9c072f0c2d5d8a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 20b37d6e4a75560a74fb31779dfd6965247baa7f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758454"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868401"
 ---
 # <a name="guidelines-on-working-with-embedded-canvas-apps"></a>Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps
 Dieses Thema enthält Richtlinien für die Arbeit mit eingebetteten Canvas-Apps sowie hilfreiche Tipps zur Fehlerbehebung bei Problemen, die auftreten können.
@@ -39,7 +39,7 @@ Dieses Thema enthält Richtlinien für die Arbeit mit eingebetteten Canvas-Apps 
 -   Wenn Sie eine eingebettete Canvas-App zu einem modellgesteuerten Formular hinzuzufügen, verwenden Sie immer ein Pflichtfeld, das garantiert einen Wert hat. Wenn Ihr Feld keinen Wert hat, wird Ihre eingebettete Canvas-App nicht aktualisiert, wenn sich die Daten auf dem Hostmodell-basierten Formular ändern.
 -   Das Veröffentlichen eines modellgestützten Formulars veröffentlicht nicht auch die eingebettete Canvas-App.
      - Eingebettete Canvas-Anwendungen müssen unabhängig vom Hostmodell-basierten Formular veröffentlicht werden. Weitere Informationen: [Veröffentlichen einer App](../canvas-apps/save-publish-app.md#publish-an-app).
--   Wenn das Öffnen von PowerApps Studio zum Erstellen oder Bearbeiten einer eingebetteten Canvas-App über die Schaltfläche **Anpassen** in den Eigenschaften der Canvas-App-Steuerungseigenschaften aufgrund eines Popupblockers des Webbrowsers blockiert wird, müssen Sie die Website web.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann **Anpassen** erneut auswählen.
+-   Wenn das Öffnen von Power Apps Studio zum Erstellen oder Bearbeiten einer eingebetteten Canvas-App über die Schaltfläche **Anpassen** in den Eigenschaften der Canvas-App-Steuerungseigenschaften aufgrund eines Popupblockers des Webbrowsers blockiert wird, müssen Sie die Website web.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann **Anpassen** erneut auswählen.
 -   Eingebettete Canvas-Apps werden beim Erstellen eines neuen Datensatzes nicht angezeigt, da sie einen Datensatz-Kontext benötigen, der an sie übergeben werden muss.
 -   Das ModelDrivenFormIntegration.Item-Objekt ist schreibgeschützt. 
      - Um Daten zurückzuschreiben, müssen Sie den Common Data Service-Connector verwenden. Weitere Informationen: [Common Data Service](/connectors/commondataservice/)

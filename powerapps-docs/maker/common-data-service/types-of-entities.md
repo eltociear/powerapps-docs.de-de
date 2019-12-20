@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2587dbcd76fe228ed017b2832bb37d05f6a1e884
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ebf5b794bcfc7ec01abf08315f1dbf59ce6e4808
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703289"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869894"
 ---
 # <a name="types-of-entities"></a>Arten von Entitäten
 
@@ -72,7 +72,7 @@ Die folgende Tabelle listet Aktivitätsentitäten auf, die in einer standardmä�
 Sie können neue benutzerdefinierte Aktivitätsentitäten erstellen. Sie können beispielsweise eine benutzerdefinierte Aktivitätsentität zur Aufzeichnung von IM-Kommunikationen erstellen. Die Erstellung einer Aktivitätsentität unterscheidet sich vom Erstellen einer Nicht-Aktivitätsentität, da Sie kein primäres Feld angeben. Alle Aktivitätsentitäten haben ein **Primäres Feld** mit **Betreff** und andere gemeinsame Felder, die durch die Aktivitätsentität definiert werden. Dies ermöglicht, alle Aktivitätstypen in einer Ansicht anzuzeigen, in der nur die gemeinsamen Felder angezeigt werden.  
 
 > [!NOTE]
-> Sie können eine benutzerdefinierte Aktivität nicht mithilfe des PowerApps-Portals erstellen. Sie müssen den Lösungs-Explorer über die Schaltfläche **Erweitert** öffnen.
+> Sie können eine benutzerdefinierte Aktivität nicht mithilfe des Power Apps-Portals erstellen. Sie müssen den Lösungs-Explorer über die Schaltfläche **Erweitert** öffnen.
   
 Wenn Sie eine benutzerdefinierte Aktivitätsentität erstellen, wählen Sie **Als Aktivitätsentität definieren** aus. Nachdem Sie diese Option ausgewählt haben, sehen Sie, dass **In Aktivitätsmenüs anzeigen** ausgewählt ist. Mit dieser Einstellung können Personen diese Aktivitätsart in den Aktivitätsmenüs erstellen. Diese Option ist nicht für Aktivitäten ausgewählt, die in der Regel mit bestimmten Ereignissen verbunden sind und im Hintergrund mit Code oder durch einen Workflow erstellt werden. Eine spätere Änderung dieser Entität ist nach dem Speichern nicht möglich.  
 

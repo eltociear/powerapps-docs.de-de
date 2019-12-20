@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: cfc2fd0ca753aebfe7bc77b73c7e7ec1ca011387
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a0ccf3fe2178b711a5eb61bc64814d343c648d25
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709977"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867321"
 ---
 # <a name="change-the-base-url-of-a-portal"></a>Ändern Sie die Basis-URL dieses Portals
 
@@ -23,7 +23,7 @@ Sie können die Basis-URL des Portals ändern, nachdem sie bereitgestellt ist. W
 > [!NOTE]
 > Nachdem Sie die Basis-URL des Portals ändern, ist die ältere URL nicht mehr verfügbar und wird für andere Kunden nur Nutzung auf deren Portalen frei.
 
-1.  Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1.  Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 
 2.  Öffnen Sie **Portalaktionen** > **Basis URL ändern**. 
 

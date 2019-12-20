@@ -1,5 +1,5 @@
 ---
-title: Zu einer bestimmten Lösung mit PowerApps navigieren | Microsoft-Dokumentation
+title: Zu einer bestimmten Lösung mit Power Apps navigieren | Microsoft-Dokumentation
 description: Erfahren Sie, wie eine bestimmte Lösung in Ihrer Umgebung gesucht und geöffnet wird
 ms.custom: ''
 ms.date: 10/29/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3c531af12b6a28346e5e3bfcfc865f643295c32e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b8dc0df3e32b6b5174166078b03228b730c909f9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700253"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870160"
 ---
 # <a name="navigate-to-a-specific-solution"></a>Navigieren zu einer bestimmten Lösung
 

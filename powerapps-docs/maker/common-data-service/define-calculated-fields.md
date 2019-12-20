@@ -1,5 +1,5 @@
 ---
-title: Berechnete Felder definieren in PowerApps | Microsoft-Dokumentation
+title: Berechnete Felder definieren in Power Apps | Microsoft-Dokumentation
 description: Hier erfahren Sie, wie Sie berechnete Felder definieren
 ms.custom: ''
 ms.date: 05/25/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d4f66e3f047da19fd040cccdd3f9af2da913df09
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 82bf8cad9b64f9866cb1cc856eff94eacf1f23a2
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758762"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873900"
 ---
 # <a name="define-calculated-fields-to-automate-manual-calculations"></a>Definition berechneter Felder für das Automatisieren von manuellen Berechnungen
 
 Verwenden Sie berechnete Felder, um manuelle Berechnungen zu automatisieren, die in Ihren Geschäftsprozessen verwendet werden. 
 
-Beispielsweise möchte ein Vertriebsmitarbeiter möglicherweise den gewichteten Umsatzes für eine Verkaufschance kennen, die auf dem geschätzten Umsatz einer Verkaufschance multipliziert mit der Wahrscheinlichkeit basiert. Oder er möchte automatisch einen Rabatt anwenden, wenn der Auftrag größer als $500 ist. Ein berechnetes Feld kann Werte enthalten, die sich aus einfachen Berechnungen ergeben, z. B. bedingte Operationen, wie größer als oder If-Else und viele andere. Sie können all dies erzielen, indem Sie PowerApps verwenden. Es ist nicht erforderlich, Code zu schreiben.  
+Beispielsweise möchte ein Vertriebsmitarbeiter möglicherweise den gewichteten Umsatzes für eine Verkaufschance kennen, die auf dem geschätzten Umsatz einer Verkaufschance multipliziert mit der Wahrscheinlichkeit basiert. Oder er möchte automatisch einen Rabatt anwenden, wenn der Auftrag größer als $500 ist. Ein berechnetes Feld kann Werte enthalten, die sich aus einfachen Berechnungen ergeben, z. B. bedingte Operationen, wie größer als oder If-Else und viele andere. Sie können all dies erzielen, indem Sie Power Apps verwenden. Es ist nicht erforderlich, Code zu schreiben.  
   
 ## <a name="capabilities"></a>Funktionen
   
@@ -60,9 +60,9 @@ Beispielsweise möchte ein Vertriebsmitarbeiter möglicherweise den gewichteten 
 
 ## <a name="create-a-calculated-field"></a>Erstellen eines berechneten Felds
 
-Verwenden Sie den Feldeditor, um ein berechnetes Feld anzugeben. In diesem Beispiel verwenden wir [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), aber die Schritte ähneln denen zur Verwendung des Projektmappen-Explorers. Weitere Informationen: [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)
+Verwenden Sie den Feldeditor, um ein berechnetes Feld anzugeben. In diesem Beispiel verwenden wir [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), aber die Schritte ähneln denen zur Verwendung des Projektmappen-Explorers. Weitere Informationen: [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)
   
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) öffnen
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) öffnen
 1. Erweitern Sie **Daten** > **Entitäten**.  
 1. Wählen Sie die gewünschte Entität und wählen Sie **Felder** aus. Wählen Sie **Feld hinzufügen** aus.  
 1. Geben die für das Feld erforderlichen Informationen an, einschließlich **Anzeigename**, **Name** und **Datentyp**. 
