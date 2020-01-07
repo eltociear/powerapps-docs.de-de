@@ -63,7 +63,7 @@ Dies ist die URL für das Web-API Ihrer Instanz. Das Web-API ist eine OData v4 R
 
 Dies ist die URL für den SOAP-Endpunkt des Organisationsservice Ihrer Instanz.
 Sie können die WSDL für diesen Dienst hier herunterladen, aber normalerweise werden Sie das Codegenerierungstool CrmSvcUtil.exe verwenden, um Entitätsklassen für .NET-Projekte zu erstellen. Weitere Informationen: 
-- [Dokumentation für Entwickler: Generieren Sie früh gebundene Entitätsklassen mit dem Codegenerierungstool (CrmSvcUtil.exe)](/powerapps/developer/common-data-service/org-service/generate-early-bound-classes).
+- [Dokumentation für Entwickler: Generieren Sie früh gebundene Entitätsklassen mit dem Codegenerierungstool (CrmSvcUtil.exe)](/powerapps/developer/common-data-service/org-service/generate-early-bound-classes)
 - [Dokumentation für Entwickler: Verwenden des Organisationsdienstes, um Daten oder Metadaten zu lesen und zu schreiben](/powerapps/developer/common-data-service/org-service/overview)
 
 ### <a name="instance-reference-information"></a>Instanzreferenzinformationen

@@ -123,5 +123,5 @@ Da Feldzuordnungen keine Metadaten sind, müssen Sie sie veröffentlichen, bevor
 
 ### <a name="see-also"></a>Siehe auch
 [Erstellen oder Bearbeiten von 1: N (1: n- oder n: n) Entitätsbeziehungen 1 mithilfe des Lösungs-Explorers](create-edit-1n-relationships-solution-explorer.md)<br />
-[Dokumentation für Entwickler: Anpassen von Entitäten und Attributzuordnungen](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings).<br />
+[Dokumentation für Entwickler: Anpassen von Entitäten und Attributzuordnungen](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)<br />
 [: Dokumentation für Entwickler: Web API Erstellen einer neuen Entität aus einer anderen Entität](/dynamics365/customer-engagement/developer/webapi/create-entity-web-api#create-a-new-entity-from-another-entity)

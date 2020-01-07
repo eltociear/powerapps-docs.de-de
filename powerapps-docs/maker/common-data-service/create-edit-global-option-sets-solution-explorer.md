@@ -91,4 +91,4 @@ Um einen globalen Optionssatz zu löschen, wenn Sie die Liste anzeigen, wählen 
 [Erstellen und Bearbeiten globaler Optionssätze für Common Data Service](create-edit-global-option-sets.md)<br />
 [Einen Optionssatz erstellen](custom-picklists.md)<br />
 [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)<br />
-[Entwicklerdokumentation: Globale Optionssätze anpassen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets).
+[Entwicklerdokumentation: Globale Optionssätze anpassen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)

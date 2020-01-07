@@ -51,7 +51,7 @@ Beim [Entitäten anzeigen](#view-entities) auf der Menüleiste, wählen Sie **Ne
 Das neue Entitätsformular umfasst zwei Registerkarten. Die Registerkarte **Allgemein** ist für Entitätsoptionen. Die Registerkarte **Hauptfeld** ist für Optionen über das spezielle Textfeld, die jede einzelne Entität hat, die den angezeigten Text definiert, wenn ein Link zum Öffnen der Entität im Suchfeld vorhanden ist.
 
 Weitere Informationen zu jedem Abschnitt finden Sie wie folgt:
-- [Hauptfeld konfigurieren](#configure-the-primary-field).
+- [Hauptfeld konfigurieren](#configure-the-primary-field)
 - [Pflichtfelder konfigurieren](#configure-required-fields)
 
 > [!NOTE]
