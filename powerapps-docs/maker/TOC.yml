@@ -84,7 +84,7 @@
               href: ../user/import-data.md
             - name: Exportieren von Daten nach Excel Online
               href: ../user/export-to-excel-online.md
-            - name: Exportieren von Daten nach Excel
+            - name: Exportieren von Daten in Excel
               href: ../user/export-data-excel.md
             - name: Exportieren in ein dynamisches Arbeitsblatt
               href: ../user/export-excel-dynamic-worksheet.md
@@ -128,7 +128,7 @@
       href: ./canvas-apps/limits-and-config.md
     - name: Tastenkombinationen
       href: ./canvas-apps/keyboard-shortcuts.md
-    - name: Beispiel-Apps erkunden
+    - name: Erkunden von Beispiel-Apps
       items:
         - name: Erstellen einer Canvas-App aus einem Beispiel
           href: ./canvas-apps/open-and-run-a-sample-app.md
@@ -138,7 +138,7 @@
           href: ./canvas-apps/help-desk-install.md
         - name: Meeting Capture-App
           href: ./canvas-apps/sample-meeting-capture.md
-    - name: Ihre erste App erstellen
+    - name: Erstellen Ihrer ersten App
       items:
         - name: '1: App aus einer Vorlage erstellen'
           href: ./canvas-apps/get-started-test-drive.md
@@ -168,7 +168,7 @@
           href: ./canvas-apps/get-started-create-from-blank.md
     - name: Entwerfen und Erstellen einer App
       items:
-        - name: Herstellen einer Datenverbindung
+        - name: Verbinden mit Daten
           items:
             - name: Verbindungsübersicht
               href: ./canvas-apps/connections-list.md
@@ -200,7 +200,7 @@
                   href: canvas-apps/connections/connection-azure-sqldatabase.md
                 - name: Twitter
                   href: canvas-apps/connections/connection-twitter.md
-            - name: Eine Verbindung hinzufügen
+            - name: Hinzufügen einer Verbindung
               href: ./canvas-apps/add-data-connection.md
             - name: Verwalten von Verbindungen
               href: ./canvas-apps/add-manage-connections.md
@@ -224,9 +224,9 @@
               href: ./canvas-apps/add-configure-controls.md
             - name: Hinzufügen und Konfigurieren einer Anzeige
               items:
-                - name: Bildschirm hinzufügen
+                - name: Hinzufügen eines Bildschirms
                   href: ./canvas-apps/add-screen-context-variables.md
-                - name: Scrollbildschirm hinzufügen
+                - name: Erstellen eines Scrollbildschirms
                   href: ./canvas-apps/add-scrolling-screen.md
                 - name: Konfigurieren von Office 365-Bildschirmen
                   items:
@@ -262,15 +262,15 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: Grundlegendes zu Karten
                   href: ./canvas-apps/working-with-cards.md
-            - name: Liste hinzufügen
+            - name: Hinzufügen einer Liste
               items:
                 - name: 'Hinzufügen von Listenfeldern, Dropdownlisten oder Optionsfeldern'
                   href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
                 - name: Erstellen einer abhängigen Dropdownliste
                   href: ./canvas-apps/dependent-drop-down-lists.md
-            - name: Diagramm hinzufügen
+            - name: Hinzufügen eines Diagramms
               href: ./canvas-apps/use-line-pie-bar-chart.md
-            - name: Multimedia hinzufügen
+            - name: Hinzufügen von Multimedia
               href: ./canvas-apps/add-images-pictures-audio-video.md
             - name: Hinzufügen von Power BI-Daten
               href: ./canvas-apps/powerapps-custom-visual.md
@@ -342,17 +342,17 @@
                   href: ./canvas-apps/controls/control-power-bi-tile.md
                 - name: Radio
                   href: ./canvas-apps/controls/control-radio.md
-                - name: Bewertung
+                - name: Rating
                   href: ./canvas-apps/controls/control-rating.md
                 - name: Rich-Text-Editor
                   href: ./canvas-apps/controls/control-richtexteditor.md
                 - name: Bildschirm
                   href: ./canvas-apps/controls/control-screen.md
-                - name: Form
+                - name: Formen
                   href: ./canvas-apps/controls/control-shapes-icons.md
                 - name: Schieberegler
                   href: ./canvas-apps/controls/control-slider.md
-                - name: Bezeichnung
+                - name: Beschriftung
                   href: ./canvas-apps/controls/control-text-box.md
                 - name: Texteingabe
                   href: ./canvas-apps/controls/control-text-input.md
@@ -370,7 +370,7 @@
                   href: ./canvas-apps/controls/properties-accessibility.md
                 - name: Farbe und Rahmen
                   href: ./canvas-apps/controls/properties-color-border.md
-                - name: Kern
+                - name: Kernbereich
                   href: ./canvas-apps/controls/properties-core.md
                 - name: Bild
                   href: ./canvas-apps/controls/properties-visual.md
@@ -386,15 +386,15 @@
               href: ./canvas-apps/working-with-variables.md
             - name: Grundlegendes zu Verhaltensformeln
               href: ./canvas-apps/working-with-formulas-in-depth.md
-            - name: Datums- und Zeitangaben anzeigen
+            - name: Anzeigen von Datums- und Zeitangaben
               href: ./canvas-apps/show-text-dates-times.md
             - name: Sammlung erstellen
               href: ./canvas-apps/create-update-collection.md
-            - name: Aktuellen Benutzer anzeigen
+            - name: Anzeigen des aktuellen Benutzers
               href: ./canvas-apps/show-current-user.md
             - name: Verbinden von Listen über Nachschlagebeziehungen
               href: ./canvas-apps/sharepoint-lookup-fields.md
-            - name: Einen Flow hinzufügen
+            - name: Hinzufügen eines Flows
               href: ./canvas-apps/using-logic-flows.md
             - name: Erstellen einer Regel in Canvas-Apps
               href: ./canvas-apps/working-with-rules.md
@@ -478,7 +478,7 @@
                   href: ./canvas-apps/functions/data-types.md
                 - name: DataSourceInfo
                   href: ./canvas-apps/functions/function-datasourceinfo.md
-                - name: Date
+                - name: Datum
                   href: ./canvas-apps/functions/function-date-time.md
                 - name: DateAdd
                   href: ./canvas-apps/functions/function-dateadd-datediff.md
@@ -552,9 +552,9 @@
                   href: ./canvas-apps/functions/function-astype-istype.md
                 - name: JSON
                   href: ./canvas-apps/functions/function-json.md
-                - name: Language
+                - name: Sprache
                   href: ./canvas-apps/functions/function-language.md
-                - name: Last
+                - name: Letzte
                   href: ./canvas-apps/functions/function-first-last.md
                 - name: LastN
                   href: ./canvas-apps/functions/function-first-last.md
@@ -620,11 +620,11 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Rand
                   href: ./canvas-apps/functions/function-rand.md
-                - name: Refresh
+                - name: Aktualisieren
                   href: ./canvas-apps/functions/function-refresh.md
                 - name: Relate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Remove
+                - name: Entfernen
                   href: ./canvas-apps/functions/function-remove-removeif.md
                 - name: RemoveIf
                   href: ./canvas-apps/functions/function-remove-removeif.md
@@ -666,7 +666,7 @@
                   href: ./canvas-apps/functions/function-shuffle.md
                 - name: Sin
                   href: ./canvas-apps/functions/function-trig.md
-                - name: Sort
+                - name: Sortieren
                   href: ./canvas-apps/functions/function-sort.md
                 - name: SortByColumns
                   href: ./canvas-apps/functions/function-sort.md
@@ -704,11 +704,11 @@
                   href: ./canvas-apps/functions/function-trim.md
                 - name: TrimEnds
                   href: ./canvas-apps/functions/function-trim.md
-                - name: Ungroup
+                - name: Gruppierung aufheben
                   href: ./canvas-apps/functions/function-groupby.md
                 - name: Unrelate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Update
+                - name: Aktualisieren
                   href: ./canvas-apps/functions/function-update-updateif.md
                 - name: UpdateContext
                   href: ./canvas-apps/functions/function-updatecontext.md
@@ -728,9 +728,9 @@
                   href: ./canvas-apps/functions/function-form.md
                 - name: Weekday
                   href: ./canvas-apps/functions/function-datetime-parts.md
-                - name: Mit
+                - name: Durch
                   href: ./canvas-apps/functions/function-with.md
-                - name: Year
+                - name: Jahr
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Erstellen einer App in einer Lösung
           href: ./canvas-apps/add-app-solution.md
@@ -762,7 +762,7 @@
               href: ./canvas-apps/accessible-apps-live-regions.md
         - name: Experimentelle und Vorschaufeatures
           href: ./canvas-apps/working-with-experimental-preview.md
-    - name: Eine App speichern und veröffentlichen
+    - name: Speichern und Veröffentlichen einer App
       href: ./canvas-apps/save-publish-app.md
     - name: Freigeben einer App und deren Abhängigkeiten
       items:
@@ -778,7 +778,7 @@
           href: ./canvas-apps/embed-teams-app.md
     - name: Verwalten einer App
       items:
-        - name: App bearbeiten
+        - name: Bearbeiten einer App
           href: ./canvas-apps/edit-app.md
         - name: Eine App löschen
           href: ./canvas-apps/delete-app.md
@@ -804,23 +804,23 @@
           items:
             - name: Übersicht
               href: ./canvas-apps/sharepoint-scenario-intro.md
-            - name: SharePoint Online-Listen einrichten
+            - name: Einrichten von SharePoint Online-Listen
               href: ./canvas-apps/sharepoint-scenario-setup.md
             - name: Eine App generieren
               href: ./canvas-apps/sharepoint-scenario-generate-app.md
-            - name: Einen Flow für Genehmigungen erstellen
+            - name: Erstellen eines Genehmigungsflows
               href: ./canvas-apps/sharepoint-scenario-approval-flow.md
             - name: App von Grund auf neu erstellen
               href: ./canvas-apps/sharepoint-scenario-build-app.md
-            - name: Einen Power BI-Bericht erstellen
+            - name: Erstellen eines Power BI-Berichts
               href: ./canvas-apps/sharepoint-scenario-build-report.md
-            - name: Den Power BI-Bericht veröffentlichen
+            - name: Veröffentlichen eines Power BI-Berichts
               href: ./canvas-apps/sharepoint-scenario-publish-report.md
-            - name: Den Power BI-Bericht einbetten
+            - name: Einbetten eines Power BI-Berichts
               href: ./canvas-apps/sharepoint-scenario-embed-report.md
-            - name: Einen Flow für Warnungen erstellen
+            - name: Erstellen eines Warnungsflows
               href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
-            - name: Das abgeschlossene Szenario durchlaufen
+            - name: Übersicht über das abgeschlossene Szenario
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
@@ -832,11 +832,11 @@
           href: ./canvas-apps/dev-enterprise-intro.md
         - name: Erstellen und Zertifizieren benutzerdefinierter Connectors
           href: ./canvas-apps/register-custom-api.md
-        - name: In Websites und andere Technologien integrieren
+        - name: Integrieren in Websites und andere Technologien
           href: ./canvas-apps/embed-apps-dev.md
-        - name: Offlinefähige Apps entwickeln
+        - name: Entwickeln von offlinefähigen Apps
           href: ./canvas-apps/offline-apps.md
-        - name: Kunden das Testen Ihrer Apps ermöglichen
+        - name: 'Ermöglichen, dass Kunden Ihre Apps testen'
           href: ./canvas-apps/dev-appsource-test-drive.md
         - name: Erstellen einer Komponente
           items:
@@ -850,9 +850,9 @@
   items:
     - name: Was sind modellgesteuerte Apps?
       href: ./model-driven-apps/model-driven-app-overview.md
-    - name: Beispiel-Apps erkunden
+    - name: Erkunden von Beispiel-Apps
       href: ./model-driven-apps/overview-model-driven-samples.md
-    - name: Ihre erste App erstellen
+    - name: Erstellen Ihrer ersten App
       href: ./model-driven-apps/build-first-model-driven-app.md
     - name: Entwerfen und Erstellen einer App
       items:
@@ -995,7 +995,7 @@
                   href: ./model-driven-apps/create-edit-views-app-designer.md
                 - name: Auswählen und konfigurieren von Spalten in Ansichten
                   href: ./model-driven-apps/choose-and-configure-columns.md
-                - name: 'Exemplarische Vorgehensweisen: Sichten'
+                - name: 'Exemplarische Vorgehensweisen: Ansichten'
                   items:
                     - name: Bearbeitbar machen von Rastern
                       href: ./model-driven-apps/make-grids-lists-editable-custom-control.md
@@ -1028,6 +1028,10 @@
               items:
                 - name: Einrichten des Notizsteuerelements
                   href: ./model-driven-apps/notes-control-legacy.md
+                - name: Einrichten des Zeitachsensteuerelements
+                  href: ./model-driven-apps/set-up-timeline-control.md
+                - name: Häufig gestellte Fragen zum Zeitachsensteuerelement
+                  href: ./model-driven-apps/faqs-timeline-control.md
                 - name: Eigenschaften zum Steuerelement für die Schnellansicht
                   href: ./model-driven-apps/quick-view-control-properties-legacy.md
                 - name: Zusätzliche Steuerelemente für Dynamics 365 für Smartphones und Tablets
@@ -1102,7 +1106,7 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: Für Entwickler
       href: ../developer/model-driven-apps/overview.md
-- name: Portals
+- name: Portale
   items:
     - name: Was sind Power Apps-Portale?
       href: ./portals/overview.md
@@ -1198,7 +1202,7 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: Migrieren von Identitätsanbietern zu Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
-        - name: Search
+        - name: Suchen
           items:
             - name: Informationen zur Suche
               href: ./portals/configure/search.md
@@ -1376,7 +1380,7 @@
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: Definieren von Alternativschlüsseln über den Projektmappen-Explorer
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
-        - name: 'Exemplarische Vorgehensweisen: Einrichtung'
+        - name: 'Exemplarische Vorgehensweisen: Entität'
           items:
             - name: Erstellen von Entitäten über das Power Apps-Portal
               href: ./common-data-service/create-edit-entities-portal.md
@@ -1538,7 +1542,7 @@
           href: ./common-data-service/data-platform-restricted-entities.md
     - name: 'Integration von SharePoint, OneNote und OneDrive'
       href: ./common-data-service/sharepoint-onedrive-onenote-intro.md
-    - name: Einen Power BI-Bericht erstellen
+    - name: Erstellen eines Power BI-Berichts
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: Übersetzen von benutzerdefiniertem Entitäts- und Feldtext
       href: ./common-data-service/export-customized-entity-field-text-translation.md
@@ -1566,7 +1570,7 @@
   items:
     - name: Tipps zur Leistungssteigerung für Canvas-Apps
       href: ./canvas-apps/performance-tips.md
-    - name: Häufige Probleme und Lösungen
+    - name: Häufige Probleme und deren Lösung
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: Abrufen einer Sitzungs- oder App-ID
       href: ./canvas-apps/get-sessionid.md
