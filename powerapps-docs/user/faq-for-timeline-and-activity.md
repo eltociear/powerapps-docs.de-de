@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 08859f70e047d1c53379e8a79f56997d6beedc58
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: 78b4e997a398bfb806a4e89a70c0ed3e466be381
+ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67456988"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333608"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>Häufig gestellte Fragen zu Aktivitäten und der Zeitachsenanzeige  
 
@@ -51,7 +51,12 @@ Sie können die Leistung der Zeitachsenanzeige verbessern, indem Sie optimieren,
 
 Wenn Sie die **Seitenansicht** in Dynamics 365 öffnen, wird die **Zeitachsenanzeige** nicht in der Liste angezeigt. Zwar werden **Hinweise** angezeigt, Aufgaben und E-Mails jedoch nicht.
 
+## <a name="see-also"></a>Siehe auch
 
+[Einrichten des Zeitachsen-Steuer Elements](../maker/model-driven-apps/set-up-timeline-control.md)
 
+[FAQs zum Zeitachsen-Steuerelement](../maker/model-driven-apps/faqs-timeline-control.md)
 
+[Hinzufügen einer Termin-, e-Mail-, Telefonanruf-, Notiz-oder Aufgaben Aktivität zur Zeitachse](add-activities.md)
 
+[Zeitachsen Abschnitt in der Customer Service Hub-App](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

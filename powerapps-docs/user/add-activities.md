@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6a64a5849b351b625468894696251895375d0c2
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7f437b649111c4ff51d21f35e73dabb442c57112
+ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74726081"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333631"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse 
 
@@ -189,5 +189,12 @@ Sie können Aktivitäten direkt auf der Zeitachse verwalten, z.B. eine Aktivitä
 > [!div class="mx-imgBorder"]
 > ![Verwalten von Aktivitäten. png](media/ManageActivities.png "Manageactivities. png")
 
+## <a name="see-also"></a>Siehe auch
 
+[Einrichten des Zeitachsen-Steuer Elements](../maker/model-driven-apps/set-up-timeline-control.md)
 
+[FAQs zum Zeitachsen-Steuerelement](../maker/model-driven-apps/faqs-timeline-control.md)
+
+[FAQs zu Aktivitäten und der Zeitachse](faq-for-timeline-and-activity.md)
+
+[Zeitachsen Abschnitt in der Customer Service Hub-App](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
