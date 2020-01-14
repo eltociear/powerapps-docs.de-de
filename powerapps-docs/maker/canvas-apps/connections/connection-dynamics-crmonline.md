@@ -6,25 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 07/12/2017
+ms.date: 11/27/2019
 ms.author: matp
-ms.reviewer: ''
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37818e3c7cca175218826c1707ab83cd5c193ae7
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4285a80d3751285929378336aa9806b3639f3457
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723921"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75928961"
 ---
 # <a name="connect-to-dynamics-365-from-power-apps"></a>Herstellen einer Verbindung mit Dynamics 365 aus Power apps
 Mit powerapps können Sie Mobile Apps mit geringem oder ohne Code schnell generieren, anpassen, freigeben und ausführen. Mithilfe des Dynamics 365-Connectors können Sie nützliche mobile Apps erstellen, die Sie in nur wenigen Minuten für Ihre Organisation freigeben können.
 
-Durch Ausführen der in diesem Artikel beschriebenen Schritte erstellen Sie eine App, in der Benutzer Kontakte in Dynamics 365 durchsuchen, hinzufügen, löschen und aktualisieren können. Benutzer können die App [in einem Browser](../../../user/run-app-browser.md) oder [auf einem mobilen Gerät](../../../user/run-app-client.md) wie einem Smartphone ausführen.
+Mithilfe der Schritte in diesem Thema erstellen Sie eine APP, in der Benutzer Kontakte in Modell gesteuerten apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing) durchsuchen, hinzufügen, löschen und aktualisieren können. und Dynamics 365 Project Service Automation). Benutzer können die App [in einem Browser](../../../user/run-app-browser.md) oder [auf einem mobilen Gerät](../../../user/run-app-client.md) wie einem Smartphone ausführen.
+
+> [!NOTE]
+> Es wird empfohlen, beim Herstellen einer Verbindung mit Modell gesteuerten apps in Dynamics 365 einen robusteren [Common Data Service-Connector](connection-common-data-service.md) zu verwenden.
 
 ## <a name="prerequisite"></a>Voraussetzung
 Zum Durcharbeiten dieses Lernprogramms benötigen Sie ein Microsoft Office 365-Konto mit einem Dynamics 365-Abonnement.
@@ -42,7 +44,7 @@ Zum Durcharbeiten dieses Lernprogramms benötigen Sie ein Microsoft Office 365-K
     ![Option „Verbindungen“ im Menü „Datei“](./media/connection-dynamics-crmonline/connection-d365.png)
 5. Klicken Sie im Dialogfeld auf **Erstellen**.
    
-    ![Erstellen der Verbindung](./media/connection-dynamics-crmonline/create-connection.png)
+    ![Erstellen einer Verbindung](./media/connection-dynamics-crmonline/create-connection.png)
 6. Geben Sie im Dialogfeld **Bei einem Konto anmelden** Ihre Anmeldeinformationen für den Dynamics 365 (Online)-Mandanten an.
    
     Eine Verbindung wird erstellt.
@@ -82,7 +84,7 @@ In diesem Verfahren konfigurieren Sie **BrowseScreen1** so, dass für die einzel
     ![Auswählen des Layouts](./media/connection-dynamics-crmonline/select-layout.png)
 4. Kopieren Sie diese Formel, und fügen Sie sie bei ausgewähltem Katalog in der Bearbeitungsleiste (rechts neben der Schaltfläche **fx**) ein:
    
-    `SortByColumns(Search(Filter(Contacts;statuscode=1); TextSearchBox1.Text; "lastname"); "lastname"; If(SortDescending1; Descending; Ascending))`
+    `SortByColumns(Search(Filter(Contacts,statuscode=1), TextSearchBox1.Text, "lastname"), "lastname", If(SortDescending1, Descending, Ascending))`
 5. Legen Sie im rechten Bereich die obere Dropdownliste auf **firstname** und die mittlere Dropdownliste auf **lastname** fest.
    
     ![Auswählen von Body1](./media/connection-dynamics-crmonline/firstname-lastname.png)
@@ -116,7 +118,7 @@ In diesem Verfahren konfigurieren Sie **BrowseScreen1** so, dass für die einzel
 7. Führen Sie die Schritte in diesem Verfahren erneut aus, um **EditScreen1** auf die gleiche Weise wie **DetailsScreen1** anzupassen.
 8. (optional) Speichern Sie die App.
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 * Testen Sie die App im Vorschaumodus, indem Sie in der linken Navigationsleiste auf **BrowseScreen1** klicken und anschließend F5 drücken oder indem Sie in der oberen rechten Ecke auf ![Vorschaumodus](./media/connection-dynamics-crmonline/runpowerapp.png) klicken.
 * [Geben Sie die App frei](../share-app.md).
 * [Fügen Sie eine zweite Datenquelle hinzu](../add-data-connection.md).
