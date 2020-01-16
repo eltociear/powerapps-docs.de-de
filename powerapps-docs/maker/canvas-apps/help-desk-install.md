@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/29/2019
+ms.date: 01/15/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 01fdadfd5ecf19d56ac115e53cef08a2cff2a254
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4eafe6aaafb2fe461a98212a64d3858ebf5f5f0f
+ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729650"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111111"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-power-apps"></a>Installieren und Konfigurieren des Helpdesk-Beispiels in powerapps
 
@@ -31,7 +31,7 @@ Geschätzte Dauer: **10–15 Minuten**.
 
 ## <a name="overview-of-the-sample"></a>Übersicht über das Beispiel
 
-Der Helpdesk bietet eine benutzerfreundliche benutzerfreundliche Benutzerfreundlichkeit, um Endbenutzern eine Verbindung mit Supportmitarbeitern zu ermöglichen. Finden Sie schnell Antworten auf Ihre wichtigsten Fragen, verfolgen Sie den Fortschritt offener Tickets, und überprüfen Sie die Details vorheriger Anforderungen. Diese App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen.
+Help Desk stellt eine benutzerfreundliche Oberfläche bereit, auf der Endbenutzer Supportexperten kontaktieren können. Hier finden Sie schnell Antworten auf Ihre wichtigsten Fragen und können den Status von offenen Tickets nachverfolgen sowie die Einzelheiten früherer Anfragen nachlesen. Diese App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen.
 
 ![Startbildschirm der PowerApps-App „Help Desk“](./media/help-desk-install/Login-screen.png)
 
@@ -100,7 +100,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 3. Klicken Sie in der Optionsfeldliste **Type of information in this column is** (Der Informationstyp dieser Spalte ist) auf **Auswahl**.
 4. Geben Sie im Textfeld **Geben Sie jede Auswahl in einer neuen Zeile ein** die folgenden Werte jeweils in einer neuen Zeile ein: 
     - HOCH
-    - Mittelalter
+    - MITTEL
     - NIEDRIG
 5. Wählen Sie in der Optionsfeldliste **Eindeutige Werte erzwingen** den Wert **Nein** aus.
 6. Wählen Sie in der Optionsfeldliste **Auswahl anzeigen durch** den Wert **Dropdownmenü** aus.
@@ -115,7 +115,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 4. Geben Sie im Textfeld **Geben Sie jede Auswahl in einer neuen Zeile ein** die folgenden Werte jeweils in einer neuen Zeile ein: 
     - NICHT GESTARTET
     - IN BEARBEITUNG
-    - ABGESCHLOSSEN
+    - COMPLETED
     - ZURÜCKGESTELLT
     - WARTEN AUF CSR
 5. Wählen Sie in der Optionsfeldliste **Eindeutige Werte erzwingen** den Wert **Nein** aus.
@@ -138,7 +138,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 2. Klicken Sie in der Optionsfeldliste **Require that this column contains information** (Diese Spalte muss Informationen enthalten) auf **Nein**.
 3. Klicken Sie auf **OK**.
 
-## <a name="download-the-app"></a>Herunterladen der APP
+## <a name="download-the-app"></a>Herunterladen der App
 
 1.  [Laden](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) Sie das powerapps-Paket herunter, und speichern Sie es auf Ihrem Computer.
 
@@ -216,12 +216,12 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 ### <a name="delete-connections"></a>Löschen von Verbindungen
 
-1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 1. Klicken Sie im Bereich **Daten** auf die Auslassungs Punkte (...) neben **Helpdesk**, und wählen Sie dann **Entfernen**aus.
 
 ### <a name="helpdesk-list"></a>HelpDesk-Liste
 
-1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 1. Klicken Sie im Bereich **Daten** auf **Datenquelle hinzufügen** > **Neue Verbindung** > **SharePoint** > **Erstellen**.
 1. Wählen Sie in der Liste **Zuletzt geöffnete Websites** die SharePoint-Website aus, auf der Sie die HelpDesk-Liste erstellt haben.
 
@@ -233,7 +233,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 ### <a name="update-admin-list"></a>Aktualisieren der Administratorliste
 
-1. Klicken Sie auf **LoginScreen** (Startseite).
+1. Wählen Sie die **App**aus.
 2. Wählen Sie in der Dropdownliste **OnStart** (Beim Start) aus.
 3. Erweitern Sie das Formelfenster, und suchen die Sammlung **AdminList**.
 4. Ersetzen Sie <strong>user@microsoft.com</strong> durch Ihre HelpDesk-Administratoren.
@@ -281,7 +281,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 > [!TIP]
 > Sehen Sie sich dieses [Video](https://youtu.be/sl5fXwwnvzI) an, um mehr über die Verwendung der PowerApps-Beispiel-App „Help Desk“ zu erfahren.
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 - [Anpassen eines SharePoint-Listenformulars mit PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
 - [Hinzufügen und Konfigurieren eines Steuerelements in PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
 - [Bearbeiten und Verwalten von Berechtigungen für eine SharePoint-Liste oder -Bibliothek](https://support.office.com/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
