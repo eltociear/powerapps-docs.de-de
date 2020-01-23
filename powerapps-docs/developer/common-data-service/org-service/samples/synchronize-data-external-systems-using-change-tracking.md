@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 53424095a8b07cb1b0544f592adc0abf139d6bb8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c6b855102f595460fd2324e94fff56a9ccd949d7
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748709"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934146"
 ---
 # <a name="sample-synchronize-data-with-external-systems-using-change-tracking"></a>Beispiel: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung
 
@@ -58,6 +58,4 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigen Sie eine Option an, um die verwaltete Lösung löschen, die in [Setup](#setup) importiert wird, die die `sample_book`-Entität und alle Daten entfernt, die im Beispiel erstellt werden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können `ChangeTrackingSample` manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigen Sie eine Option an, um die verwaltete Lösung löschen, die in [Setup](#setup) importiert wird, die die `sample_book`-Entität und alle Daten entfernt, die im Beispiel erstellt werden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können `ChangeTrackingSample` manuell löschen, um das gleiche Ergebnis zu erzielen.

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4125ffa1bf8d5c21646265fc2020484916af291f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e1753cbbc46be5fad8aeb7ab5285057098bd9c35
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748384"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934398"
 ---
 # <a name="sample-convert-an-appointment-to-a-recurring-appointment"></a>Beispiel: Konvertieren eines Termins in eine Terminserie
 
@@ -54,6 +54,4 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden. 
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Beispieldaten manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Beispieldaten manuell löschen, um das gleiche Ergebnis zu erzielen.

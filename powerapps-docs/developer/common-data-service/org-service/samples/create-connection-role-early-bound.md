@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ad3fd39f00d68af3a115c3bed2cc6d984eeeeb0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d8aebdc81d225369fbe8b964713c145242c6312e
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748589"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934382"
 ---
 # <a name="sample-create-a-connection-role"></a>Beispiel: Erstellen einer Verbindungsrolle
 
@@ -40,7 +40,8 @@ Dieses Beispiel zeigt, wie eine Verbindungsrolle erstellt wird, die für Firmen 
 Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene Szenario zu simulieren, geht das Beispiel wie folgt vor:
 
 ### <a name="setup"></a>Einrichten
-1. Prüft auf aktuelle Version der Organisation.
+
+Prüft auf aktuelle Version der Organisation.
 
 ### <a name="demonstrate"></a>Demonstrieren
 1. Definiert einige anonyme Typen, um den Bereich der möglichen Werte für die Verbindungseigenschaften festzulegen.
@@ -49,5 +50,4 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen.
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

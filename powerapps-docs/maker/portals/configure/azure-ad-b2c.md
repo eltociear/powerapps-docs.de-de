@@ -2,19 +2,19 @@
 title: Azure AD B2C-Anbietereinstellungen für Portale | MicrosoftDocs
 description: Anweisungen zum Aktivieren von Azure AD B2C-Anbietereinstellungen für Portale.
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/18/2019
+ms.date: 01/03/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.reviewer: tapanm
+ms.openlocfilehash: e8275fa256b00736501990c3abf127777097d938
+ms.sourcegitcommit: 82eec5da9c97fcb6ed50ae8e582f326af9278aa7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755485"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935202"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C-Anbietereinstellungen für Portale
 
@@ -518,8 +518,12 @@ Der Anspruchsname ist das Feld ANSPRUCHSTYP, das neben dem Attribut in den Anwen
 
 ### <a name="allow-auto-association-to-a-contact-record-based-on-email"></a>Zulassen der automatischen Zuordnung zu einem Kontaktdatensatz auf Grundlage der E-Mail-Adresse 
 
-Kunden, die Kontaktdatensätze mit verknüpften E-Mail-Adressen aufweisen, können eine Website starten, bei der die externen Benutzer sich mit [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C über einen E-Mail-Validierungsmechanismus anmelden. Die neue Anmeldung sollte dem vorhandenen Kontaktdatensatz zugeordnet werden, anstatt einen doppelten Datensatz zu erstellen. Diese Funktion ordnet nur Kontakte erfolgreich zu, die keine aktive Identität aufweisen, und die E-Mail-Adresse muss eindeutig (nicht mit mehreren Kontaktdatensätzen verknüpft) sein. Die folgende Websiteeinstellung ist erforderlich:
+Kunden, die Kontaktdatensätze mit verknüpften E-Mail-Adressen aufweisen, können eine Website starten, bei der die externen Benutzer sich mit [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C über einen E-Mail-Validierungsmechanismus anmelden. Die neue Anmeldung sollte dem vorhandenen Kontaktdatensatz zugeordnet werden, anstatt einen doppelten Datensatz zu erstellen. Diese Funktion ordnet nur Kontakte erfolgreich zu, die keine aktive Identität aufweisen, und die E-Mail-Adresse muss eindeutig (nicht mit mehreren Kontaktdatensätzen verknüpft) sein. Die folgenden Websiteeinstellungen sind erforderlich:
 
 **Name**: Authentication/[Protocol]/[Provider]/AllowContactMappingWithEmail
 
-**Beschreibung**: Gibt an, ob Kontakte einer entsprechenden E-Mail-Adresse zugeordnet werden. Wenn "true" festgelegt ist, ordnet diese Einstellung einen Kontaktdatensatz einer entsprechenden E-Mail-Adresse zu und weist den externen Identitätsanbieter dann automatisch dem Kontakt zu, wenn der Benutzer sich erfolgreich angemeldet hat. Standardmäßig ist dies auf "false" gesetzt.
+**Beschreibung**: Gibt an, ob Kontakte einer entsprechenden E-Mail-Adresse zugeordnet werden. Wenn "true" festgelegt ist, ordnet diese Einstellung einen Kontaktdatensatz einer entsprechenden E-Mail-Adresse zu und weist den externen Identitätsanbieter dann automatisch dem Kontakt zu, wenn der Benutzer sich erfolgreich angemeldet hat. Standardmäßig ist dies auf *false* festgelegt.
+
+**Name**: Authentication/UserManager/UserValidator/RequireUniqueEmail
+
+**Beschreibung**: Gibt an, ob eine eindeutige E-Mail-Adresse zum Überprüfen des Benutzers erforderlich ist. Wenn eine vorhandene Kontakt-E-Mail-Adresse zum Anmelden verwendet wird, muss die Einstellung auf „false“ festgelegt werden. Standardmäßig ist sie auf *true* festgelegt. Dies kann dazu führen, dass Anmeldeversuche für Kontaktdatensätze mit bereits vorhandener E-Mail-Adresse fehlschlagen.

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2053cb6fac411db7528d841cf76ea090ced136c9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 851908a437aac1078986a9d3fd599bac56bef25b
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748456"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909576"
 ---
 # <a name="web-resources-in-model-driven-apps"></a>Webressourcen in modellgesteuerten Apps
 
@@ -135,9 +135,12 @@ https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm
   
 > [!NOTE]
 >  Das Einfügen des Zeichens "/" und einer Dateinamenerweiterung im Namen der Webressource ist eine bewährte Methode.  
-  
-  
  Wenn Sie Code schreiben, der auf eine Webressource verweist, die für Common Data Service geeignet ist, sollten Sie die [getClientUrl](clientapi/reference/Xrm-Utility/getGlobalContext/getClientUrl.md)-Funktion verwenden.
+
+<a name="BKMK_rendering_differences"></a>
+## <a name="layout-differences-between-the-legacy-web-client-and-unified-interface"></a>Layoutunterschiede zwischen dem alten Webclient und Einheitliche Oberfläche
+
+Eine für die Verwendung einer bestimmten Anzahl von Zeilen konfigurierte Webressourcensteuerung weist in einer Unified Client-Anwendung andere Höhen auf als eine Webclient-Anwendung. Dies liegt daran, dass zwischen der Einheitlichen Oberfläche und dem Webclient ein Unterschied in der Zeilenhöhe besteht. Wenn sowohl im Webclient als auch in der Einheitlichen Oberfläche ein Formular benötigt wird, können Sie in der Einheitlichen Oberflächen-App und in der Webclient-App unterschiedliche Formulare verwenden, wobei das Steuerelement so konfiguriert ist, dass die entsprechende Anzahl von Zeilen in jedem Formular verwendet wird.
 
 ## <a name="community-tools"></a>Community-Tools
 

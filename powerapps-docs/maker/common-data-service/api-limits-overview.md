@@ -2,7 +2,7 @@
 title: API Grenzwerte, Übersicht (Common Data Service) | MicrosoftDocs
 description: Verstehen Sie die Begrenzungen für Common Data Service API-Anforderungen.
 ms.custom: ''
-ms.date: 11/23/2019
+ms.date: 12/08/2019
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 786994fa531698919d1506dc90217f435e43fb8a
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: aee2a6b256c991c178506c68a38f4821c341b1b5
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "2854775"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909502"
 ---
 # <a name="common-data-service-api-limits-overview"></a>Common Data Service Übersicht über API-Grenzwerte
 
@@ -35,7 +35,7 @@ Diese Grenzwerte geben die Anzahl der Anforderungen an, zu denen Benutzer tägli
 
 Wenn ein Benutzer seine Anforderungsberechtigung überschreitet, würde der Administrator benachrichtigt und könnte Power Apps zuweisen und Power Automate Kapazität für diesen Benutzer anfordern. Benutzer werden zu diesem Zeitpunkt nicht daran gehindert, Apps für gelegentliche und angemessene Überschreitungen zu verwenden.
 
-Für Common Data Service umfassen API-Anforderungen alle Datenoperationen, die mit Entitätsdatensätzen interagieren, in denen Datensätze erstellt, abgerufen, aktualisiert oder gelöscht werden (CRUD). Sonderoperationen wie *freigeben* und *zuweisen* sind enthalten, da sie als Updates gelten. Diese Anforderungen können von einem beliebigen Client oder einer beliebigen Anwendung stammen und einen beliebigen Endpunkt verwenden. Hierzu zählen unter anderem Vorgänge, die von Plug-Ins, asynchronen Workflows und benutzerdefinierten Steuerelementen ausgeführt werden. Es gibt eine kleine Reihe von systeminternen Vorgängen, die ausgeschlossen sind, wie Anmelde-, Abmelde- und Systemmetadatenvorgänge.
+Für Common Data Service umfassen API-Anforderungen alle Datenoperationen, die mit Entitätsdatensätzen interagieren, in denen Datensätze erstellt, abgerufen, aktualisiert oder gelöscht werden (CRUD). Sonderoperationen wie *freigeben* und *zuweisen* sind enthalten, da sie als Updates gelten. Diese Anforderungen können von einem beliebigen Client oder einer beliebigen Anwendung stammen und einen beliebigen Endpunkt verwenden. Hierzu zählen unter anderem Vorgänge, die von Plug-Ins ausgeführt werden, asynchrone Workflows, benutzerdefinierte Steuerelemente und $batch-Vorgänge (ExecuteMultiple). Es gibt eine kleine Reihe von systeminternen Vorgängen, die ausgeschlossen sind, wie Anmelde-, Abmelde- und Systemmetadatenvorgänge.
 
 > [!IMPORTANT]
 > Power Platform API-Anforderungszuordnungen umfassen die Verwendung von Power Automate, AI Builder und Connector-APIs. Alle Anfragen über einen Connector, die zu einer Common Data Service Anfrage führen, steht als 1 in der Power Platform Anfrage.

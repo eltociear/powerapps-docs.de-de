@@ -13,7 +13,6 @@
     - name: OrganizationServiceContext
       href: organizationservicecontext.md
     - name: Client-App erstellen
-      href: create-client-app.md
       items:
         - name: Abonnieren Sie SDK-Assembly-Updates mit NuGet.
           href: subscribe-sdk-assembly-updates-using-nuget.md

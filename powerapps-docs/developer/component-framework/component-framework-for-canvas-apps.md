@@ -1,5 +1,5 @@
 ---
-title: Power Apps component framework für Canvas-Apps | Microsoft-Dokumentation
+title: Codekomponenten für Canvas-Apps | Microsoft-Dokumentation
 description: Erstellen von Codekomponenten für Canvas-Apps
 keywords: ''
 ms.author: nabuthuk
@@ -11,14 +11,14 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 2008b9d57899697b60e47d24d3acb74a72c9700e
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 300da15802a7132115b91773544792a921f0a827
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895064"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909288"
 ---
-# <a name="power-apps-component-framework-for-canvas-apps"></a>Power Apps component framework für Canvas-Apps
+# <a name="code-components-for-canvas-apps"></a>Codekomponenten für Canvas-Apps
 
 > [!IMPORTANT]
 > Diese Funktion ist weiterhin experimenteller Natur und standardmäßig deaktiviert. Weitere Informationen finden Sie unter [Experimentelle und Vorschaufunktionen](../../maker/canvas-apps/working-with-experimental.md).
@@ -63,7 +63,9 @@ Um Codekomponenten zu einer App hinzuzufügen, müssen Sie die Funktion des Powe
 
 ## <a name="implementing-code-components"></a>Implementieren von Codekomponenten
 
-Nachdem Sie das Feature des Power Apps component framework in Ihrer Umgebung aktiviert haben, können Sie mit der Implementierung der Logik für Codekomponenten beginnen. Das [Erstellen Sie Ihre erste Codekomponente](implementing-controls-using-typescript.md) Thema demonstriert den schrittweisen Prozess zum Erstellen von Codekomponenten, die die benutzerdefinierte Logik- und Manifestdatei implementieren, den Debugging-Prozess ausführen, eine Lösungs-Zip-Datei erstellen und die Lösung importieren in Common Data Service.
+Nachdem Sie das Feature des Power Apps component framework in Ihrer Umgebung aktiviert haben, können Sie mit der Implementierung der Logik für Codekomponenten beginnen.
+
+ Das Thema [Erstellen Ihrer ersten Codekomponente](implementing-controls-using-typescript.md) demonstriert den schrittweisen Prozess zum Erstellen von Codekomponenten.
 
 > [!NOTE]
 > Codekomponenten zu implementieren ist gleich für modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau). Der einzige Unterschied ist das Hinzufügen der Codekomponenten. 
@@ -95,11 +97,11 @@ So fügen Sie Codekomponenten zu einer Canvas-App hinzu:
 
 ## <a name="delete-a-code-component"></a>Löschen einer Codekomponente 
 
-Wenn Sie eine Codekomponente aus einer Canvas-App löschen möchten, wählen Sie die Codekomponente, die Sie löschen möchten und dann die Schaltfläche **Löschen** aus dem Menü aus. Wenn die Codekomponente aus der App gelöscht wird, werden alle Codekomponentenelemente der App und dem App-Paket gelöscht. 
+Wenn Sie eine Codekomponente aus einer Canvas-App löschen möchten, wählen Sie die Codekomponente, die Sie löschen möchten und dann die Schaltfläche **Löschen** aus dem Menü aus. Wenn die Codekomponente aus der App gelöscht wird, werden alle Codekomponentenelemente aus der App und dem App-Paket gelöscht. 
 
 ## <a name="update-existing-code-components"></a>Aktualisieren vorhandener Codekomponenten
 
-Wenn Sie die Codekomponenten aktualisieren, geben wir das Attribut *Version* in der Manifestdatei an, damit die neuesten Änderungen in der Laufzeit wiedergegeben werden. Wenn Sie für Canvas-Apps die vorhandenen Codekomponenten aktualisieren, müssen Sie das Attribut *Version* nicht aktualisieren. Standardmäßig wählen Canvas-Apps die letzte Codekomponente aus und zeigen sie während der Laufzeit an. Nur eine einzige Version derselben Komponente kann in Canvas-Apps vorhanden sein.
+Immer wenn Sie die Codekomponenten aktualisieren und die Änderungen in der Laufzeit sehen möchten, müssen Sie das `version`-Attribut in der Manifestdatei anstoßen. Es wird empfohlen, die Version der Komponente immer anzustoßen, wenn Sie Änderungen vornehmen.
 
 > [!NOTE]
 > Vorhandene Codekomponenten werden nur aktualisiert, sofern die App geschlossen oder in Power Apps Studio erneut geöffnet wird. Wenn Sie die App erneut öffnen, werden sie aufgefordert, die Codekomponenten zu aktualisieren. Wenn Sie die Codekomponenten einfach löschen oder sie wieder in die App hinzufügen, werden die Komponenten nicht aktualisiert.

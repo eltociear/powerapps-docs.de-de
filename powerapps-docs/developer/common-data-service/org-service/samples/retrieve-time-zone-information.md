@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ed38ac3b9b699e8ec71b1c145434907055e00f30
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9eb0be763eb04aceb5de5918b6bd32cffdce6833
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748720"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934190"
 ---
 # <a name="sample-retrieve-time-zone-information"></a>Beispiel: Abrufen von Zeitzoneninformationen
 
@@ -41,7 +41,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="setup"></a>Einrichten
 
-1. Prüft auf aktuelle Version der Organisation.
+Prüft auf aktuelle Version der Organisation.
 
 ### <a name="demonstrate"></a>Demonstrieren
 
@@ -55,6 +55,4 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

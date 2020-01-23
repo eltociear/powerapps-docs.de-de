@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ab98ceb55faaefdc015fb969daab844428b7b53a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: dd0bacbd2743100380c67a8e0a0da14bd643465f
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753766"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922345"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>Verwenden Sie mehrinstanzenfähige Server-zu-Server-Authentifizierung
 
@@ -53,7 +53,7 @@ In diesem Szenario kann jeder Common Data Service Mandant Ihre mögliche mehrins
   
 1. Erstellen einer mehrinstanzenfähigen Webanwendung mit Ihrem Azure AD-Mandanten  
   
-2. Erstellen Sie einen Anwendungsnutzer, der einer registrierten Anwendung in Ihrem  Common Data Service Mandant zugeordnet ist  
+2. Erstellen Sie einen Anwendungsnutzer, der einer registrierten Anwendung in Ihrem Common Data Service Mandant zugeordnet ist  
   
 3. Erstellen Sie eine benutzerdefinierte Sicherheitsrolle und weisen Sie sie den Anwendungsbenutzern im Common Data Service Mandant zu.  
   
@@ -171,7 +171,7 @@ In diesem Szenario kann jeder Common Data Service Mandant Ihre mögliche mehrins
   
     Wenn Sie diesen Benutzer erstellen, werden die Werte für diese Felder aus Azure AD basierend auf dem Wert der **Anwendungs-ID** abgerufen, wenn Sie den Benutzer speichern.  
   
-5. Ordnen Sie den Anwendungsbenutzer der angepassten Sicherheitsrolle zu, die Sie in [Erstellen einer Sicherheitsrolle für den Anwendungsbenutzer](#bkmk_CreateSecurityRole) erstellt haben. Weitere Informationen: [Erstellen von Benutzern in Dynamics 365 (online) und Zuweisen von Sicherheitsrollen](/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles)  
+5. Ordnen Sie den Anwendungsbenutzer der angepassten Sicherheitsrolle zu, die Sie in [Erstellen einer Sicherheitsrolle für den Anwendungsbenutzer](#bkmk_CreateSecurityRole) erstellt haben. Weitere Informationen: [Erstellen von Benutzern und Zuweisen von Sicherheitsrollen](/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles)  
   
 <a name="bkmk_TestUsingYourTenant"></a>  
  

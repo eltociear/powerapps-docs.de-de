@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b0d9d5ae89e3e54224bc72fb32e951661c439133
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2efe8b44f2ea8cbe943466441df75dcb876a3bb3
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748375"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934342"
 ---
 # <a name="sample-detect-multiple-duplicate-records"></a>Beispiel: Erkennen von mehreren doppelten Datensätzen
 
@@ -48,11 +48,9 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Die `BulkDetectDuplicatesRequest`-Methode erstellt das BulkDetectDuplicatesRequest-Objekt.
+Die `BulkDetectDuplicatesRequest`-Methode erstellt das BulkDetectDuplicatesRequest-Objekt.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze zu löschen, die in der [Einrichtung](#setup)erstellt wurden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze zu löschen, die in der [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
 

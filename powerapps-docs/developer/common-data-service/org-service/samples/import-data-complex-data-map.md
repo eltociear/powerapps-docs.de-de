@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bb2583ce166564dd2ed8bad515bc2ab46409559e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 721b4da846aaca0433caf8aac8759fb35dd8199d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748744"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934286"
 ---
 # <a name="sample-import-data-using-complex-data-map"></a>Beispiel: Importieren von Daten mithilfe der komplexen Datenzuordnung
 
@@ -52,9 +52,7 @@ Um das oben beschriebene Beispiel zu simulieren, geht das Beispiel wie folgt vor
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze zu löschen, die in der [Einrichtung](#setup)erstellt wurden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze zu löschen, die in der [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
 
 
 ### <a name="see-also"></a>Siehe auch

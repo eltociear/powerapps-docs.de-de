@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 12/26/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 60300176f0a39258bbb7030c9e30d9b2e7711990
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.reviewer: tapanm
+ms.openlocfilehash: 26e02d2b8c8a8d47ed41727e13150875bfa307a4
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874648"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934512"
 ---
 # <a name="about-portal-lifecycle"></a>Info über den Portallebenszyklus
 
@@ -69,3 +69,26 @@ So konvertieren Sie ein Testportal in die Produktionsumgebung:
 
     > [!div class=mx-imgBorder]
     > ![Bestätigung für die Konvertierung der Testversion in die Produktionsumgebung](../media/trial-to-prod-confirm.png "Bestätigung für die Konvertierung der Testversion in die Produktionsumgebung")
+
+## <a name="considerations-for-add-on-portals"></a>Überlegungen zu Add-On-Portalen
+
+Die folgenden Bedingungen gelten für Portale [Bereitstellung mit dem Portal-Add-On-Plan](../provision-portal-add-on.md), die früher gekauft wurden:
+
+### <a name="trial-add-on-portal"></a>Test-Add-on-Portal
+
+Das Test-Add-On-Portal läuft nach 30 Tagen ab. Das abgelaufene Portal ist für 7 Tage gesperrt. Das Portal wird nach Ablauf der Sperrfrist gelöscht. Das Test-Add-On-Portal kann während des konfigurierten oder angehaltenen Zeitraums weiterhin auf die Produktion umgestellt werden.
+
+### <a name="production-add-on-portal"></a>Produktion-Add-On-Portal
+
+Das Produktions-Add-On-Portal läuft am Ende des erworbenen Lizenzzeitraums ab. Die Sperrfrist für ein Produktions-Add-On-Portal kann je nach erworbenem Lizenzplan variieren. Das Portal wird nach Ablauf der Sperrfrist gelöscht. Sie können die Lizenz eines Produktions-Add-On-Portals verlängern, während sich das Portal im konfigurierten oder angehaltenen Zustand befindet. Wenn das Portal angehalten wird, kann es nach Verlängerung des Lizenzzeitraums in den konfigurierten Status konvertiert werden.
+
+> [!IMPORTANT]
+> Das Aussetzen oder Löschen eines Portals kann zu Funktionsverlust führen. Stellen Sie eine zeitnahe Verlängerung des Lizenzzeitraums für das Add-On-Portal sicher, um ein Aussetzen oder Löschen zu vermeiden.
+
+### <a name="reset-add-on-portal"></a>Add-on-Portal zurücksetzen
+
+Folgen Sie den Schritten, um das Portal [zurücksetzen](reset-portal.md), das mit einem zuvor gekauften älteren Portal-Add-On-Plan bereitgestellt wird.
+
+## <a name="see-also"></a>Siehe auch
+
+[Power Apps Portale FAQs](../faq.md)

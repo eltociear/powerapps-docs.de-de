@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef1ae352f4d6b02d37c8b1be9629647b187761cf
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8b690bb3a7a27c278c9354073f5e4140dfe33b4d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748527"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934410"
 ---
 # <a name="sample-bulk-delete-exported-records"></a>Beispiel: Massenlöschung exportierter Datensätze
 
@@ -46,10 +46,8 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Die `PerformBulkDeleteBackup`-Methode führt den Hauptlöschvorgang bei inaktiven Verkaufschancen und Aktivitäten durch, um sie aus dem System zu entfernen.
+Die `PerformBulkDeleteBackup`-Methode führt den Hauptlöschvorgang bei inaktiven Verkaufschancen und Aktivitäten durch, um sie aus dem System zu entfernen.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

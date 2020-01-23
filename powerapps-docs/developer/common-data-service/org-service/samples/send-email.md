@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0484580dd9e385866feb18cb25999436b726f4de
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f61632eb0bae61848b24bc68684a477ca8d0a130
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748713"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934166"
 ---
 # <a name="sample-send-an-email"></a>Beispiel: Senden einer E-Mail
 
@@ -49,10 +49,8 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Die Methode `SendEmailRequest` sendet eine E-Mail-Nachricht, die in der [Setup](#setup) erstellt wird.
+Die Methode `SendEmailRequest` sendet eine E-Mail-Nachricht, die in der [Setup](#setup) erstellt wird.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze zu löschen, die in der [Einrichtung](#setup)erstellt wurden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze zu löschen, die in der [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

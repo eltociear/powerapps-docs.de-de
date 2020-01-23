@@ -2,7 +2,7 @@
 title: Ausführen bedingter Vorgänge mit der Web-API (Common Data Service) | Microsoft Docs
 description: Lesen Sie, wie Sie Bedingungen erstellen, die bestimmen, ob und wie die Vorgänge mithilfe von Web-API ausgeführt werden
 ms.custom: ''
-ms.date: 08/31/2019
+ms.date: 01/08/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f9bc022aadc020ecd46f6665efbd50a5322ac45a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 079aa0d3e55ea72a725023cd155f7269f345a8e2
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748615"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944302"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Bedingte Vorgänge mithilfe der Web-API ausführen
 
@@ -54,16 +54,9 @@ Abfragen angezeigt, die unter Umständen Sammlung-bewertete erweitern Navigation
 
 ## <a name="conditional-retrievals"></a>Bedingte Abrufe
 
-ETags ermöglichen es Ihnen, jedes Mal Datensatzabrufe zu optimieren, wenn Sie auf denselben Datensatz mehrere Male zugreifen. Wenn Sie vorher einen Datensatz abgerufen haben, können Sie den ETag-Wert mit dem Header `If-None-Match` senden, damit Daten nur dann abgerufen werden, wenn sie sich seit dem letzten Abruf geändert haben. Wenn sich die Daten geändert haben, gibt die Anfrage einen HTTP-Status von 200 (OK) mit den neuesten Daten im Text der Anfrage zurück. Wenn sich die Daten nicht geändert haben, wird der HTTP-Statuscode 304 (Not Modified) zurückgegeben, um anzuzeigen, dass die Entität nicht geändert worden ist. Das folgende Beispielmeldungspaar gibt Daten für eine Kontoentität zurück, wobei die `accountid` gleich `00000000-0000-0000-0000-000000000001` ist, wenn sich die Daten nicht geändert haben, seit sie das letzte Mal abgerufen wurden.  
+ETags ermöglichen es Ihnen, jedes Mal Datensatzabrufe zu optimieren, wenn Sie auf denselben Datensatz mehrere Male zugreifen. Wenn Sie vorher einen Datensatz abgerufen haben, können Sie den ETag-Wert mit dem Header `If-None-Match` senden, damit Daten nur dann abgerufen werden, wenn sie sich seit dem letzten Abruf geändert haben. Wenn sich die Daten geändert haben, gibt die Anfrage einen HTTP-Status von 200 `200 (OK)` mit den neuesten Daten im Text der Anfrage zurück. Wenn sich die Daten nicht geändert haben, wird der HTTP-Statuscode 304 `304 (Not Modified)` zurückgegeben, um anzuzeigen, dass die Entität nicht geändert worden ist. 
 
-> [!NOTE]
-> Bedingte Abrufes funktioniert nur bei Entitäten, bei denen die optimistische Parallelität aktiviert ist. Überprüfen Sie, ob für Entität die optimistische Parallelität aktiviert ist, indem Sie die unten gezeigte Web-API-Anforderung nutzen. Bei Entitäten mit aktivierter optimistischer Parallelität ist die <xref href="Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsOptimisticConcurrencyEnabled?text=EntityMetadata.IsOptimisticConcurrencyEnabled" />-Eigenschaft auf `true` festgelegt.
-
-> ```HTTP
-> GET [Organization URI]/api/data/v9.0/EntityDefinitions(LogicalName='<Entity Logical Name>')?$select=IsOptimisticConcurrencyEnabled
-> ```
-<!-- TODO:
-> For more information about optimistic concurrency, see [Reduce potential data loss using optimistic concurrency](../org-service/reduce-potential-data-loss-using-optimistic-concurrency.md).   -->
+Das folgende Beispielmeldungspaar gibt Daten für eine Kontoentität zurück, wobei die `accountid` gleich ist wie `00000000-0000-0000-0000-000000000001`, wenn sich die Daten nicht geändert haben, seit das letzte Mal der Etag-Wert `W/"468026"` abgerufen wurden.
 
  **Anforderung**  
 ```http  
@@ -80,6 +73,20 @@ HTTP/1.1 304 Not Modified
 Content-Type: application/json; odata.metadata=minimal  
 OData-Version: 4.0  
 ```  
+
+In den folgenden Abschnitten werden Einschränkungen für die Verwendung von bedingten Abrufen beschrieben.
+
+### <a name="entity-must-have-optimistic-concurrency-enabled"></a>Für die Entität muss die optimistische Parallelität aktiviert sein
+
+Überprüfen Sie, ob für Entität die optimistische Parallelität aktiviert ist, indem Sie die unten gezeigte Web-API-Anforderung nutzen. Bei Entitäten mit aktivierter optimistischer Parallelität ist die <xref href="Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsOptimisticConcurrencyEnabled?text=EntityMetadata.IsOptimisticConcurrencyEnabled" />-Eigenschaft auf `true` festgelegt.
+
+```http
+GET [Organization URI]/api/data/v9.0/EntityDefinitions(LogicalName='<Entity Logical Name>')?$select=IsOptimisticConcurrencyEnabled
+```
+
+### <a name="query-must-not-include-expand"></a>Die Abfrage darf $ erweitern nicht enthalten
+
+Das Etag kann nur feststellen, ob sich der einzelne Datensatz, der abgerufen wird, geändert hat. Wenn Sie `$expand` in Ihrer Abfrage verwenden, werden möglicherweise zusätzliche Datensätze zurückgegeben, und es kann nicht festgestellt werden, ob sich einer dieser Datensätze geändert hat. Wenn die Abfrage `$expand` enthält, wird `304 Not Modified` nie zurückgegeben.
   
 <a name="bkmk_limitUpsertOperations"></a>
   

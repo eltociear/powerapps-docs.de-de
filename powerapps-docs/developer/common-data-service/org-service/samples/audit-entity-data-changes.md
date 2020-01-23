@@ -14,18 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 93c441910b7bed967e709ddf4e3566c05f03d1d1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f6d70ce43942b9012f512fcbce931a616964abb8
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748529"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934422"
 ---
 # <a name="sample-audit-entity-data-changes"></a>Beispiel: Überwachung von Entitätsdatenänderungen
 
 Dieses Beispiel zeigt, wie Sie die Überwachung für eine Entität und ihre Attribute aktivieren und deaktivieren, die Datenänderungshistorie der überwachten Entität abrufen und die Überwachungsdatensätze löschen können. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AuditEntityData) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
+
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
 ## <a name="what-this-sample-does"></a>Funktionsweise:
@@ -50,6 +51,4 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

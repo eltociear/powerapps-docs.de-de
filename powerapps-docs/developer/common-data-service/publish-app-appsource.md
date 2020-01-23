@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61b34d32835cd3553f880791250efad48d783ffd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bbb8853a1193cffbf11840f847394466db61bd17
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861888"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922401"
 ---
 # <a name="publish-your-app-on-appsource"></a>App auf AppSource veröffentlichen
 
@@ -29,21 +29,17 @@ Veröffentlichen Sie Ihre App auf [Microsoft AppSource](https://appsource.micros
 
 Verwenden Sie folgende Schritte, um das Senden der App für Microsoft AppSource vorzubereiten:
 
-> [Schritt 1: Ausfüllen des App-Eingabeformulars auf AppSource](fill-app-submission-form-appsource.md)
+> [Schritt 1: Erstellen Sie ein Microsoft Partner Center Konto](register-microsoft-partner-network.md)
 > 
-> [Schritt 2: Für Microsoft Partners Network (MPN) Konto anmelden](register-microsoft-partner-network.md)
+> [Schritt 2: Erstellen einer verwalteten Lösung für die App](create-solution-app-appsource.md)
 > 
-> [Schritt 3: Erstellen einer verwalteten Lösung für die App](create-solution-app-appsource.md)
+> [Step 3: Erstellen eines AppSource-Pakets für die App](create-package-app-appsource.md)
 > 
-> [Step 4: Erstellen eines AppSource-Pakets für die App](create-package-app-appsource.md)
-> 
-> [Schritt 5: Speichern Sie das Paket auf Azure Storage](store-appsource-package-azure-storage.md)
+> [Schritt 4: Speichern Sie das Paket auf Azure Storage](store-appsource-package-azure-storage.md)
 
 ## <a name="submit-your-app-on-partner-center"></a>Senden der App im Partner Center
 
-Nachdem die App zur Übermittlung bereit ist, verwenden Sie das [Partner Center](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv), um die App an Microsoft AppSource zu senden. Zugriff auf das Partner Center und verwandte Dokumentationen sind nur für Microsoft Partner Network-Mitglieder verfügbar.
-
-Weitere Informationen: [Nächste Schritte: Senden der App an das Partner Center](next-steps-submit-app-cloud-partner-portal.md)
+Nachdem die App zur Übermittlung bereit ist, verwenden Sie das [Partner Center](https://partner.microsoft.com/dashboard/commercial-marketplace/overview), um die App an Microsoft AppSource zu senden. Zugriff auf das Partner Center und verwandte Dokumentationen sind nur für Microsoft Partner Network-Mitglieder verfügbar.
   
 ## <a name="checklists"></a>Checkliste
 

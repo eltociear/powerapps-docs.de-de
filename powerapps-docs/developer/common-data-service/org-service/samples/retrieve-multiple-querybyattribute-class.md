@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4b545431853a3f6ca66ce5906f6d6ff69edde1db
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0a6b20686f4e02afff576eb54133d061e4b82f18
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748719"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934210"
 ---
 # <a name="sample-retrieve-multiple-with-the-querybyattribute-class"></a>Beispiel: Abruf von Vielfachen mit der QueryByAttribute-Klasse
 
@@ -47,10 +47,8 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Die Methode `QueryByAttribute` erstellt eine Abfrage mit QueryByAttribute.
+Die Methode `QueryByAttribute` erstellt eine Abfrage mit QueryByAttribute.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an.
-
-Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an. Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.

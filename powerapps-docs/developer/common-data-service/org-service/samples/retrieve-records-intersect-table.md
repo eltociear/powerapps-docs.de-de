@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 49243b6d9dadc9fd9cc8dc35eba29c00f867004e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8ca8e3ec207627eb1b54024f1b05ee4730b70aef
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748721"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934198"
 ---
 # <a name="sample-retrieve-records-from-an-intersect-table"></a>Beispiel: Abrufen von Datensätzen aus einer Überschneidungstabelle
 
@@ -51,8 +51,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 1. `QueryExpression` ruft die Datensätze aus einer Überschneidungstabelle ab.
 1. `RetrieveMultipleRequest` erstellt die Fetch-Anforderung und erhält die Ergebnisse.
+
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze zu löschen, die in der [Einrichtung](#setup)erstellt wurden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze zu löschen, die in der [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

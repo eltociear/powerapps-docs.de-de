@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: afc3f967d8fe93cbd0c5c8d21f67773f970d9ca2
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 93d60cb1e6c00951e51acd4f92d8c62dce84fc28
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895023"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909079"
 ---
 # <a name="what-are-code-components"></a>Was sind Codekomponenten?
 
@@ -24,7 +24,7 @@ Sie fügen Codekomponenten hinzu, indem Sie sie in eine Lösung aufnehmen und da
 Codekomponenten bestehen aus drei Elemente:
 
 - [Manifest](#manifest)
-- [Komponentenimplementierungsbibliothek](#component-implementation-library)
+- [Komponentenimplementierung](#component-implementation)
 - [Ressourcen](#resources)
 
 ## <a name="manifest"></a>Manifest
@@ -39,9 +39,9 @@ Manifest ist die Metadatendatei, in der eine Komponente definiert wird. Es ist e
 
 Wenn ein Benutzer eine Codekomponente konfiguriert, filtern die Daten in der Manifestdatei die verfügbaren Komponenten heraus, so dass nur gültige Komponenten für den Kontext für die Konfiguration verfügbar sind. Die in der Manifestdatei für eine Komponente definierten Eigenschaften werden als Konfigurationsfelder dargestellt, so dass der Benutzer, der die Komponente konfiguriert, die Werte angeben kann. Diese Eigenschaftswerte stehen der Komponente dann zur Laufzeit zur Verfügung. Weitere Informationen: [Manifestschemaverweis](manifest-schema-reference/index.md)
 
-## <a name="component-implementation-library"></a>Komponentenimplementierungsbibliothek
+## <a name="component-implementation"></a>Komponentenimplementierung
 
-Die Komponentenbibliothek zu implementieren ist eine der wichtigen Schritte, wenn Sie benutzerdefinierte Codekomponenten mithilfe des Power Apps Component Framework entwickeln. Entwickler können eine Komponentenbibliothek mithilfe von TypeScript implementieren. Jede Code-Komponente muss über eine Bibliothek verfügen, die die Definition einer Funktion umfasst, die ein Objekt zurückgibt, das die Methoden implementiert, die in der Code-Komponentenschnittstelle beschrieben werden. 
+Die Komponente zu implementieren ist eine der wichtigen Schritte, wenn Sie benutzerdefinierte Codekomponenten mithilfe des Power Apps component framework entwickeln. Entwickler können eine Komponente mithilfe von TypeScript implementieren. Jede Codekomponente muss über eine `index.ts`-Datei verfügen, die die Definition einer Funktion umfasst, die ein Objekt zurückgibt, das die Methoden implementiert, die in der Codekomponentenschnittstelle beschrieben werden. Diese Datei wird über das CLI-Tooling mit den Hauptstubmethoden automatisch generiert.
 
 Das Objekt implementiert die folgenden Methoden:
 

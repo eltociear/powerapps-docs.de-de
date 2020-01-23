@@ -2,7 +2,7 @@
 title: Ausführen von Batchvorgängen mit der Web-API (Common Data Service) | Microsoft Docs
 description: Mit Batchvorgängen können Sie mehrere Vorgänge in einer einzigen HTTPS-Anforderung gruppieren. Infos zum Ausführen von Batchbetrieben mithilfe der Web-API
 ms.custom: ''
-ms.date: 07/13/2019
+ms.date: 12/10/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4029b07d07505d15f216279edbfc774026463a4f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 373902e69a6299144954f55067236abcfa5764f0
+ms.sourcegitcommit: 4fb0e2cd9c4bb7d0b83bd7fe6c7c88accfc70390
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753698"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "2907038"
 ---
 # <a name="execute-batch-operations-using-the-web-api"></a>Ausführen von Batchbetrieben mithilfe der Web-API
 
@@ -219,7 +219,9 @@ Weitere Informationen zu den Präferenzen für Einstellungskopfzeilen finden Sie
 
 ## <a name="reference-uris-in-an-operation"></a>Verweis-URIs in einem Vorgang
 
-Sie können `$parameter` wie `$1`, `$2` usw. verwenden, um auf URIs zu verweisen, die in einem frühreren Changeset in einer Batchanfrage verwendet wurden. In diesem Abschnitt werden verschiedene Beispiele dazu aufgeführt, wie `$parameter` im Anforderungstext eines Batchvorgangs verwendet werden kann, um auf URIs zu verweisen.
+Sie können `$parameter` wie `$1`, `$2` usw. verwenden, um auf URIs zu verweisen, die für neue Entitäten zurückgegeben wurden, die zuvor im selben Changeset in einer Batchanforderung erstellt wurden. Weitere Informationen finden Sie in der OData v4.0-Spezifikation: [11.7.3.1 Verweisen auf Anforderungen in einem Changeset](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793752).
+
+In diesem Abschnitt werden verschiedene Beispiele dazu aufgeführt, wie `$parameter` im Anforderungstext eines Batchvorgangs verwendet werden kann, um auf URIs zu verweisen.
 
 ### <a name="reference-uris-in-request-body"></a>Verweis-URIs im Anforderungstext
 

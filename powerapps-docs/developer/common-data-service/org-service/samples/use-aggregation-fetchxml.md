@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe241719b55278d77e2e564bfc55e83b45809aeb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ac38c8b53b6950c7bbf69583da1a83a24c1fe63
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748705"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934134"
 ---
 # <a name="sample-use-aggregation-in-fetchxml"></a>Beispiel: Verwendung von Aggregation in FetchXML
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-aggregation-fetchxml -->
 
-Dieses Beispiel zeigt, wie aggregierte Datensatzdaten mithilfe von FetchXMLs abgerufen werden.
+Dieses Beispiel zeigt, wie aggregierte Datensatzdaten mithilfe von FetchXMLs abgerufen werden. Sie können das Beispiel von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseAggregationInFetchXML) herunterladen.
 
 ## <a name="what-this-sample-does"></a>Funktionsweise:
 
@@ -60,6 +60,4 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an.
-
-Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an. Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.

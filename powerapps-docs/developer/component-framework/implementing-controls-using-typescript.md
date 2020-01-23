@@ -8,24 +8,26 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: dc71362d9b4076e74b836e9f7aa1603c8c84df47
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: b84af344a9057eed6084ca7ac2ef989146230089
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895072"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909083"
 ---
-# <a name="create-your-first-component-using-power-apps-component-framework"></a>Erstellen Sie Ihre erste Komponente mit Power Apps Component Framework
+# <a name="create-your-first-component"></a>Erstellen Sie Ihre erste Codekomponente 
 
-Dieses Thema führt Sie durch die Erstellung einer neuen Code-Komponente in TypeScript mit der Power Apps CLI. In diesem Lernprogramm erstellen wir eine lineare Beispiel-Codekomponente, mit der Benutzer die numerischen Werte mit Hilfe eines visuellen Schiebereglers ändern können, anstatt die Werte in das Feld eingeben zu müssen. 
+ In diesem Tutorial wird gezeigt, wie eine lineare Schieberegler-Codekomponente erstellt wird, die es Benutzern ermöglicht, die numerischen Werte mithilfe eines visuellen Schiebereglers zu ändern, anstatt die Werte in das Feld einzugeben. 
 
-Die Artefakte, die erforderlich sind, um Codekomponenten zu erstellen, sind:
+Die folgenden Schritte sind erforderlich, um eine lineare Schieberegler-Codekomponente zu erstellen:
 
-1. [Erstellen eines neuen Komponentenprojekts](#creating-a-new-component-project)
-2. [Implementieren des Manifests](#implementing-manifest)
-3. [Implementieren von Komponentenlogik mit Hilfe von TypeScript](#implementing-component-logic)
-4. [Hinzufügen von Stilen zu Codekomponenten](#adding-style-to-the-code-component)
-5. [Verpacken von Codekomponenten](#packaging-your-code-components)
+- [Erstellen eines neuen Komponentenprojekts](#creating-a-new-component-project)
+- [Implementieren des Manifests](#implementing-manifest)
+- [Implementieren von Komponentenlogik mit Hilfe von TypeScript](#implementing-component-logic)
+- [Hinzufügen von Stilen zu Codekomponenten](#adding-style-to-the-code-component)
+- [Verpacken von Codekomponenten](#packaging-your-code-components)
+- [Hinzufügen einer Komponente zu einer modellgesteuerten App](#adding-code-components-in-model-driven-apps)
+- [Hinzufügen einer Komponente zu einer Canvas-App](#adding-code-components-to-a-canvas-app)
 
 ## <a name="creating-a-new-component-project"></a>Erstellen eines neuen Komponentenprojekts
 
@@ -61,7 +63,7 @@ Nehmen Sie Änderungen an der vordefinierten Manifestdatei vor, wie hier gezeigt
    - **Version**: Version der Komponente. Wenn Sie die Komponente aktualisieren, müssen Sie die Version aktualisieren, um die neuesten Änderungen in der Laufzeit anzuzeigen.
    - **display-name-key**: Name der Codekomponente, die in der Benutzeroberfläche angezeigt wird.
    - **description-name-key**: Beschreibung der Codekomponente, die in der Benutzeroberfläche angezeigt wird.
-   - **control-type**: Der Codekomponententyp. Es werden nur *Standard* Art der Codekomponenten unterstützt.
+   - **control-type**: Der Codekomponententyp. Nur *Standard*-Typen von Codekomponenten werden unterstützt.
 
      ```XML
       <?xml version="1.0" encoding="utf-8" ?>
@@ -81,6 +83,7 @@ Nehmen Sie Änderungen an der vordefinierten Manifestdatei vor, wie hier gezeigt
      ```XML
       <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
       ```
+
 3. Der Knoten [ressources](manifest-schema-reference/resources.md) definiert die Visualisierung der Codekomponente. Sie enthält alle Ressourcen, die die Visualisierung und Formatierung der Codekomponente erstellen. Der [Code](manifest-schema-reference/code.md) ist als untergeordnetes Element unter dem Ressourcenelement angegeben. Definieren Sie die [Ressourcen](manifest-schema-reference/resources.md) wie hier gezeigt:
 
    - **Code**: Verweist auf den Pfad, in dem sich alle Ressourcendateien befinden.
@@ -330,7 +333,7 @@ Entwickler und App-Ersteller können mit CSS ihr Styling zur visuellen Darstellu
 
 ## <a name="debugging-your-code-component"></a>Debuggen Ihrer Codekomponente
 
-Wenn Sie mit der Implementierung Ihrer Codekomponentenlogik fertig sind, führen Sie den folgenden Befehl aus, um den Debugging-Prozess zu starten. Weitere Informationen: [Debugging von Codekomponenten](debugging-custom-controls.md)
+Sobald Sie die Codekomponentenlogik implementiert haben, führen Sie den folgenden Befehl aus, um den Prozess des Debuggens zu starten. Weitere Informationen: [Debugging von Codekomponenten](debugging-custom-controls.md)
 
 ```CLI
 npm start
@@ -375,7 +378,7 @@ Führen Sie diese Schritte aus, um eine [Lösung](https://docs.microsoft.com/pow
     > - Überprüfen Sie unter **Code-Tools** die Option **NuGet-Ziele und Build-Aufgaben**.
 
 6. Die erstelle Lösungs-ZIP-Datei befindet sich im Ordner `Solution\bin\debug`.
-7. [Importieren Sie die Lösung manuell in Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) über das Webportal, sobald die ZIP-Datei fertig ist, oder lesen Sie die Abschnitte [Verbindung mit der Umgebung](import-custom-controls.md#connecting-to-your-environment) und [Bereitstellung](import-custom-controls.md#deploying-code-components), um mit Power Apps-CLI-Befehlen zu importieren.
+7. Manuell [importieren Sie die Lösung in Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) mithilfe des Webportals, sobald die ZIP-Datei bereit ist, oder automatisch mithilfe der [Power Apps Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools).
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>Hinzufügen von Codekomponenten in modellgetriebenen Anwendungen
 

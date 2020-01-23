@@ -1,27 +1,27 @@
 ---
-title: 'Schritt 3: Erstellen einer verwalteten Lösung für Ihre App (Common Data Service) | Microsoft-Dokumentation'
+title: 'Schritt 2: Erstellen einer verwalteten Lösung für Ihre App (Common Data Service) | Microsoft-Dokumentation'
 description: Lernen Sie, wie Sie eine verwaltete Lösung erstellen, sodass die App alle Komponenten einschließt. Dies ist für das Veröffentlichen einer serverseitigen Synchronisierung Appsource erforderlich.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 12/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: shmcarth
-ms.author: jdaly
-manager: ryjones
+author: KumarVivek
+ms.author: kvivek
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8115e17ef999834e2134ef41c2a8472bf539438b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 25b80be0190fa2b520706d72166879e687a30f30
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748424"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922325"
 ---
-# <a name="step-3-create-a-managed-solution-for-your-app"></a>Schritt 3: Erstellen einer verwalteten Lösung für die App
+# <a name="step-2-create-a-managed-solution-for-your-app"></a>Schritt 2: Erstellen einer verwalteten Lösung für die App
 
 Erstellen Sie eine verwaltete Lösung, sodass die App alle Komponenten einschließt. Sie finden möglicherweise diese Themen hilfreich, während Sie eine verwaltete Lösung planen und erstellen, um die App-Komponenten zu integrieren:
 - [Einführung in Lösungen](introduction-solutions.md)
@@ -54,5 +54,5 @@ Sie haben eine Lösungsdatei (Beispiel: *SampleSolution.zip*) und optional eine 
 
 
 > [!div class="nextstepaction"]
-> [Step 4: Erstellen eines AppSource-Pakets für die App](create-package-app-appsource.md) 
+> [Step 3: Erstellen eines AppSource-Pakets für die App](create-package-app-appsource.md) 
   

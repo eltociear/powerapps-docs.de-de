@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c1f58228cb86ae7415739f5e6ffe4b3175b87b0d
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 03cdea2884f5ae4ac889218c4d9b87a48f1f8d81
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895034"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944341"
 ---
 # <a name="create-and-use-dataflows-in-power-apps"></a>Erstellen und Verwenden von Dataflows in Power Apps
 
@@ -51,6 +51,8 @@ In den folgenden Abschnitten werden die einzelnen Schritte genauer betrachtet, d
 ## <a name="create-a-dataflow"></a>Erstellen eines Dataflows
 Dataflows werden in einer Umgebung erstellt. Daher können Sie sie nur in dieser Umgebung sehen und verwalten. Darüber hinaus müssen Einzelpersonen, die Daten aus Ihrem Dataflow abrufen möchten, Zugriff auf die Umgebung haben, in der Sie diese erstellt haben.
 
+> [!NOTE]
+> Das Erstellen von Dataflows ist derzeit mit nicht verfügbar mit Power Apps-Communityplan-Lizenzen.
 
 1.  Melden Sie sich in Power Apps an, überprüfen Sie, in welcher Umgebung Sie sich befinden, und suchen Sie nach dem Umgebungs-Schnellzugriff auf der rechten Seite der Befehlsleiste.
 

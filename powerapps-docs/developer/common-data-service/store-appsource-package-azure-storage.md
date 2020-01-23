@@ -1,8 +1,8 @@
 ---
-title: 'Schritt 5: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS-Schlüssel (Common Data Service) | Microsoft Docs'
+title: 'Schritt 4: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS-Schlüssel (Common Data Service) | Microsoft Docs'
 description: Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSource-Paketdatei in einem Microsoft Azure-Blobspeicherkonto speichern und einen Schlüssel für die Signatur für den gemeinsamen Zugriff (SAS) verwenden, um die Paketdatei freizugeben. Ihre Paketdatei wird von Ihrem Azure Storage Standort für die Zertifizierung und anschließend für die AppSource-Testversionen abgerufen.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 12/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2924e93ed341293b79dada0023c36854df83583
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8eb263efed13149ea8abcce217116783fdb4b598
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753774"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922337"
 ---
-# <a name="step-5-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Schritt 5: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS-Schlüssel
+# <a name="step-4-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Schritt 4: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS-Schlüssel
 
 Microsoft Azure Storage ist ein von Microsoft verwalteter Cloud Service, der Speicher bereitstellt, der extrem verfügbar, sicher, robust, skalierbar und redundant ist. Weitere Informationen: [Einführung in Microsoft Azure-Speicher](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 

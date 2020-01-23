@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6121c32e74c0c302fe9370a67f960eee2d498033
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e905c2a1e687eef65535c9dcaa0a05432150b1ba
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748748"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934302"
 ---
 # <a name="sample-enable-field-security-for-an-entity"></a>Beispiel: Aktivierung der Feldsicherheit für eine Entität
 
@@ -58,6 +58,4 @@ Um das oben beschriebene Beispiel zu simulieren, geht das Beispiel wie folgt vor
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

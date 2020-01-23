@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 35237064a89309f2345e92122479ad059369a495
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4025a4da12cb909f0b481a9a821f9a9f77eaf70f
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748734"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934258"
 ---
 # <a name="sample-query-connections-by-reciprocal-roles"></a>Beispiel: Abfragen von Verbindungen durch reziproke Rollen
 
@@ -48,9 +48,8 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. `QueryExpression` ruft alle Verbindungsrollen ab, für die diese Rolle als reziprokale Rolle aufgelistet ist.
+`QueryExpression` ruft alle Verbindungsrollen ab, für die diese Rolle als reziprokale Rolle aufgelistet ist.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen.
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

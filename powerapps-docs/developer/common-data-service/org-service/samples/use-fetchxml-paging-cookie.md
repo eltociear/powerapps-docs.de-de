@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e910a6ee5737d7dbcc622b4d854f7799a73c3405
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7325fc94f4a73616dbd679ba0800879dc7c6ea2f
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748703"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934078"
 ---
 # <a name="sample-use-fetchxml-with-a-paging-cookie"></a>Beispiel: Verwenden von FetchXML mit einem Auslagerungscookie
 
@@ -47,11 +47,9 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. `fetchXml` erstellt die FetchXML-Zeichenfolge für das Abrufen aller untergeordneten Firmen in eine übergeordnete Firma. Diese Fetch-Abfrage verwendet 1 Platzhalter, um die ID der übergeordneten Firma für das Herausfiltern erforderlicher Firmen anzugeben.
+`fetchXml` erstellt die FetchXML-Zeichenfolge für das Abrufen aller untergeordneten Firmen in eine übergeordnete Firma. Diese Fetch-Abfrage verwendet 1 Platzhalter, um die ID der übergeordneten Firma für das Herausfiltern erforderlicher Firmen anzugeben.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an.
-
-Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an. Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.
 

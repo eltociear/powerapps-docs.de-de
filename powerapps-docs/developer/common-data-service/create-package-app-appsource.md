@@ -1,27 +1,27 @@
 ---
-title: 'Schritt 4: Erstellen eines AppSource-Pakets für die App (Common Data Service) | Microsoft Docs'
+title: 'Schritt 3: Erstellen eines AppSource-Pakets für die App (Common Data Service) | Microsoft Docs'
 description: Lernen Sie, wie Sie eine AppSource-Paket (ZIP-Datei) erstellen, um die Lösungs- und Demodatendateien zusammen mit anderen erforderlichen Dateien zu integrieren.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: shmcarth
-ms.author: jdaly
-manager: ryjones
+author: KumarVivek
+ms.author: kvivek
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9696ad4bafbd9556203243cb7ba785e3d0d8444c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 43accbf1e1acf8c32e76c5e0c0dab4975cd847a0
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753022"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922349"
 ---
-# <a name="step-4-create-an-appsource-package-for-your-app"></a>Schritt 4: Erstellen eines AppSource-Pakets für die App
+# <a name="step-3-create-an-appsource-package-for-your-app"></a>Schritt 3: Erstellen eines AppSource-Pakets für die App
 
 Sie müssen ein AppSource-Paket (ZIP-Datei) erstellen, um die Lösungs- und Demodatendateien zusammen mit anderen erforderlichen Dateien zu integrieren. Ein AppSource-Paket besteht aus den folgenden Dateien:
 
@@ -142,4 +142,4 @@ Letzter Schritt besteht darin, alle Komponenten hinzufügen, die Sie zuvor nach 
  
 
 > [!div class="nextstepaction"]
-> [Schritt 5: Speichern Sie das AppSource-Paket auf Azure Storage](store-appsource-package-azure-storage.md) 
+> [Schritt 4: Speichern Sie das AppSource-Paket auf Azure Storage](store-appsource-package-azure-storage.md) 

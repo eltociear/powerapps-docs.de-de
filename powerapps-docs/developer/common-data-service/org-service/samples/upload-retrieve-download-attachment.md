@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 51496631551d87b269030a07ed482584b3c93ece
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7e1f871cdf456322737df9da5990ae671f769034
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748706"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934138"
 ---
 # <a name="sample-upload-retrieve-and-download-an-attachment"></a>Beispiel: Hochladen, Abrufen und Herunterladen einer Anlage
 
@@ -42,14 +42,13 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="setup"></a>Einrichten
 
-1. Prüft auf aktuelle Version der Organisation.
+Prüft auf aktuelle Version der Organisation.
 
 ### <a name="demonstrate"></a>Demonstrieren
+
 1. Die `Annotation`-Methode instanziiert ein Anmerkungsobjekt.
 1. Die `IOrganizationService`-Methode erstellt und lädt das Anmerkungsobjekt hoch.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an.
-
-Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an. Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.

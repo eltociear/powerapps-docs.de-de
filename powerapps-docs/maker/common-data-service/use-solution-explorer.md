@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4d8b6b69ab820541b822fc58ce5c079df7b5b19
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9c4473b0b1cdcb2549b84a100a19c1663f795b2d
+ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885328"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2936237"
 ---
 # <a name="use-solutions-in-power-apps"></a>Lösungen in Power Apps verwenden
 
@@ -93,7 +93,7 @@ In Power Apps können Sie den klassischen Lösungsexplorer anzeigen, indem Sie i
 
 Die folgenden Beschränkungen gelten für die Verwendung von Canvas-Apps, Flows und benutzerdefinierten Connectors in Lösungen. 
 
-- Über Canvas-App ausgelöste Flows sind in Lösungen nicht verfügbar.
+- Von der Schaltfläche Canvas-App ausgelöste Flows sind in Lösungen nicht untertstützt. Erstellen Sie die App und den Flow außerhalb einer Lösung und exportieren Sie die .msapp-Datei, um Canvas-Apps mit einem eingebetteten, durch Schaltflächen ausgelösten Flow zu migrieren. 
 - Wenn eine Canvas-App in eine verwalteten Lösung gepackt wurde, kann sie in der Zielumgebung nicht bearbeitet und erneut veröffentlicht werden. Verwenden Sie nicht verwaltete Lösungen, wenn die Apps in der Zielumgebung Bearbeitung erfordern. 
 - Verbindungen erfordern die Authentifizierung und Zustimmung, was eine interaktive Benutzersitzung erfordert, und können daher nicht über Lösungen übermittelt werden. Nachdem Sie die Lösung importiert haben, geben Sie die App wieder, um die Verbindungen zu authentifizieren. Sie können die Verbindungen auch vor dem Importieren der Lösung in der Zielumgebung erstellen. 
 -   Canvas-Apps, die als Miteigentümer für eine Azure Active Directory (AAD)-Sicherheitsgruppe freigegeben wurden, können nicht zu Lösungen hinzugefügt werden. Heben Sie die Freigabe der App auf, bevor Sie sie zu einer Lösung hinzufügen.

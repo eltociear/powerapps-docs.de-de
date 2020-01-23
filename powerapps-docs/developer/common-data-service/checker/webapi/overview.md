@@ -2,7 +2,7 @@
 title: Verwenden der Power Apps-Überprüfungs-Web-API | Microsoft-Dokumentation
 description: Die Power Apps-Überprüfungs-Web-API bietet eine Entwicklungserfahrung, die für eine Vielzahl von Programmiersprachen, Plattformen und Geräte verwendet werden kann
 ms.custom: ''
-ms.date: 06/3/2019
+ms.date: 12/12/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,23 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eed1556726cb947d7eba6b8f94ceed538f669ea3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 01ef77aba8b6380b39c1514d317567132894c4af
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861811"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909580"
 ---
 # <a name="use-the-power-apps-checker-web-api"></a>Verwenden der Power Apps-Überprüfungs-Web-API
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
-
 Die Power Apps-Überprüfungs-Web-API bietet einen Mechanismus für das Ausführen statischer Analyseprüfungen hinsichtlich Anpassungen und Erweiterungen für die Common Data Service-Plattform. Sie ist für Ersteller und Entwickler verfügbar, um umfangreiche Prüfungen der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen, um problematische Muster schnell zu ermitteln. Der Service bietet die Logik für die [Lösungsprüferfunktion](../../../../maker/common-data-service/use-powerapps-checker.md) im Power Apps-Ersteller-[Portal](https://make.powerapps.com) und ist als Teil der Automatisierung für [Anwendungen enthalten, die über AppSource eingereicht werden](../../publish-app-appsource.md). Das direkte Interagieren mit dem Service auf diese Weise ermöglicht eine Analyse von Lösungen, die in den lokalen (alle unterstützten Versionen) und Online-Umgebungen enthalten sind.
-
- > [!IMPORTANT]
- >
- > - Die Web-API für die Power Apps-Überprüfung ist eine Vorschaufunktion.
- > - [!INCLUDE[cc_preview_features_definition](../../../../includes/cc-preview-features-definition.md)]
 
 <a name="bkmk_altApproaches"></a>
 

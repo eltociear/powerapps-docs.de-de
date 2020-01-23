@@ -2,19 +2,19 @@
 title: Aktivieren von Azure Storage für Portale | Microsoft-Dokumentation
 description: Anweisungen zum Aktivieren von Azure-Speicherung für Portale, um die größere Speicherungsfunktion von Azure zu nutzen.
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/11/2019
+ms.date: 01/07/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 0d9b49857528cf0e55fa2ad3dfcaae2aa88b77c0
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.reviewer: tapanm
+ms.openlocfilehash: 38705c143fdf3e85ec18f60c20423cc404aee043
+ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2815980"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2936101"
 ---
 # <a name="enable-azure-storage"></a>Aktivieren von Azure Storage
 
@@ -55,7 +55,7 @@ Navigieren Sie in der [App Portalverwaltung](configure/configure-portal.md) zu *
 
 Sie müssen auch die ursprungsübergreifende Ressourcenfreigabe (Cross-Origin Resource Sharing, CORS) in Ihrem Azure-Speicherkonto hinzufügen, andernfalls wird das reguläre Anlagensymbol anstelle des Wolkensymbols angezeigt:
 
-- **Zulässige Ursprünge**: Geben Sie Ihre Domäne an. Zum Beispiel: `http://contoso.crm.dynamics.com`.
+- **Zulässige Ursprünge**: Geben Sie Ihre Domäne an. Zum Beispiel: `https://contoso.crm.dynamics.com`.
 - **Zulässige Verben**: GET, PUT, DELETE, HEAD, POST
 - **Zulässige Überschriften**: Geben Sie die erforderlichen Überschriften an, die möglicherweise die Ursprungsdomäne auf der CORS-Anforderung angibt. Beispielsweise x-ms-meta-data\*, x-ms-meta-target\*. 
 - **Verfügbar gemachte Überschriften**: Geben Sie die Antwortheader an, die möglicherweise in der Antwort zur CORS-Anforderung gesendet und vom Browser für den angeforderten Aussteller verfügbar gemacht werden. Beispielsweise x-ms-meta-\*.

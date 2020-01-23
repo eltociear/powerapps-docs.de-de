@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 8235c8ed0400223a36324a301fdf172a0610efec
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 70532cfb3cc5cfad0f274f123857eedc5d54cae2
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2894996"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909280"
 ---
 # <a name="create-and-build-a-code-component"></a>Erstellen und Entwickeln einer Code-Komponente
 
@@ -48,40 +48,7 @@ Um das Komponentenprojekt zu erstellen, öffnen Sie den Projektordner, der `pack
 > [!TIP]
 > Zum Debuggen der Komponente während oder nach dem Buildvorgang siehe [Debuggen einer Code-Komponente](debugging-custom-controls.md).
 
-Nachdem Sie mit der Implementierung der Komponentenlogik in TypeScript fertig sind, müssen Sie alle Codekomponentenelemente in eine Lösungsdatei bündeln, damit Sie die Lösung nach Common Data Service importieren können. Weitere Informationen: [Bündeln einer Code-Komponente](import-custom-controls.md).
-
-## <a name="known-configuration-issues-and-workarounds"></a>Bekannte Konfigurationsprobleme und Behebungen
-
-**Msbuild-Fehler MSB4036:**
-
-1. Der Name der Aufgabe in der Projektdatei gleicht dem Namen der Aufgabenklasse.
-2. Die Aufgabenklasse ist öffentlich und implementiert die Microsoft.Build.Framework.ITask-Schnittstelle.
-3. Die Aufgabe ist mit *\<UsingTask>* korrekt in der Projektdatei in den *.tasks-Dateien im Pfadverzeichnis deklariert.
-
-**Lösung:**
-
-1. Öffnen Sie das Visual Studio-Installationsprogramm. 
-1. Wählen Sie für Visual Studio 2017 **Ändern** aus. 
-1. Klicken Sie auf **Einzelne Komponenten**.
-1. Überprüfen Sie unter „Code-Tools“ die Option **NuGet-Ziele und Build-Aufgaben**.
-
-**Herausgeberpräfix**
-
-Wenn eine Komponente mithilfe einer Power Apps-CLI-Tooling-Version erstellt wurde, die niedriger als 0.4.3 ist, erhalten Sie eine Fehlermeldung, wenn Sie versuchen, die Lösungsdatei erneut nach Common Data Service zu importieren. Dieser Fehler wird ausgegeben, weil dem Namen der neu importierten Komponente jetzt das Herausgeberpräfix angehängt wird, um sicherzustellen, dass dieser eindeutig ist, und um Konflikte zu vermeiden.
-
-**Problemumgehung**:
-
-- Löschen Sie die Lösung, die die relevante Komponente aus Common Data Service enthält. Ist die Komponente bereits im Formular oder einem Raster konfiguriert, muss sie zuerst entfernt werden, da die Komponentenlösung eine Abhängigkeit für die Konfiguration hatte.  
-- Importieren Sie die neue Lösung mit Updates auf die Komponente, die für die aktuelle CLI-Version erstellt wird.
-- Neu importierte Komponenten können jetzt in Formularen oder Rastern konfiguriert werden.  
-
-
-<!--2. When the components are created with the publisher prefix in mixed or upper case using the new CLI tooling version, it throws an error while importing the solution. This happens because the updated tooling version (0.4.3 and newer) now enforces the platform standard for lower case publisher prefix.
-
-   **Workaround**:
-
-    Update the solution and customizations to ensure that the associated prefix is modified to lower case and import the new solution into Common Data Service.-->
-
+Wenn Sie schließlich mit der Implementierung der Komponentenlogik in TypeScript fertig sind, müssen Sie alle Codekomponentenelemente in einer Lösungsdatei bündeln, damit Sie die Lösung in Common Data Service importieren können. Weitere Informationen: [Bündeln einer Code-Komponente](import-custom-controls.md).
 
 ### <a name="see-also"></a>Siehe auch
 

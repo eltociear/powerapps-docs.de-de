@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa71b952ee6612f01ca0b9f8936eaf2f67a7e1b1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f3d94d015c4fedc2bff838436c71bce9b8ddc13b
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748380"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934374"
 ---
 # <a name="sample-create-a-custom-activity"></a>Beispiel: Erstellen einer benutzerdefinierten Aktivität
 
@@ -39,7 +39,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="setup"></a>Einrichten
 
-1. Prüft auf aktuelle Version der aktuellen Organisation.
+Prüft auf aktuelle Version der aktuellen Organisation.
 
 ### <a name="demonstrate"></a>Demonstrieren
 
@@ -49,6 +49,4 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

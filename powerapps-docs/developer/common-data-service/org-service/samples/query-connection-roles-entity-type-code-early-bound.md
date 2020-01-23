@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 260bc503b4395e140339dd15596107f5b7ed7f23
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fe9e2d9ec06a6248bbe8f2d432fcee3decaf9e4c
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748735"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934262"
 ---
 # <a name="sample-query-connection-roles-by-entity-type-code"></a>Beispiel: Abfragen von Verbindungsrollen nach Entitätstypcode
 
@@ -39,7 +39,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="setup"></a>Einrichten
 
-1. Prüft auf aktuelle Version der Organisation.
+Prüft auf aktuelle Version der Organisation.
 
 ### <a name="demonstrate"></a>Demonstrieren
 
@@ -50,5 +50,4 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen.
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

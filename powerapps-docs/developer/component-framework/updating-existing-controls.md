@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: ddbacd01b76a99e385875a0b8af18d28ce24bed8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0f779dbddedbf76b3c2e7f55d314a9f0fda30332
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861912"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909087"
 ---
 # <a name="update-existing-code-components"></a>Aktualisieren vorhandener Codekomponenten 
 
@@ -143,33 +143,6 @@ So verwenden Sie eine neue Typisierungsdatei:
 3. Nennen Sie alle Verweise von **InputsOutputs.IOutputBag** in **IOutputs** um.
 4. Erstellen Sie das Projekt, um mithilfe des Befehls `npm run build` eine neue **ManifestTypes.d.ts**-Datei zu generieren.
 
-## <a name="troubleshooting-and-workarounds"></a>Fehlerbehebung und Workarounds
-
-1. Wenn Sie eine 1ES-Benachrichtigung erhalten, in der Sie gefragt werden, wie PCF-Skripte verwendet werden, beachten Sie, dass diese Skripte nur zum Erstellen der Codekomponenten verwendet werden, aber nicht von der resultierenden Komponente gebündelt oder verwendet werden.  
-2. Wenn Sie zuvor eine Codekomponente mit Hilfe der Toolversion 0.1.817.1 oder früher erstellt haben und sicherstellen möchten, dass die aktuellen Build- und Debug-Module verwendet werden, aktualisieren Sie package.json wie gezeigt:
-   
-    ```JSON
-     "dependencies": { "@types/node": "^10.12.18", "@types/powerapps-component-framework": "1.1.0"}, "devDependencies": { "pcf-scripts": "~0", "pcf-start": "~0" } 
-    ```
-3. Dem Benutzer wird die Fehlermeldung `Failed to retrieve information about Microsoft.PowerApps.MSBuild.Pcf from remote source <Feed Url>` angezeigt, wenn der Build aufgrund von Autorisierungsproblemen fehlschlägt. Hierfür gibt es eine Problemumgehung:
-
-   - Öffnen Sie die Konfigurationsdatei NuGet von **%APPDATA%\NuGet**. Der Feed, von dem der Benutzer den Fehler erhält, sollte in dieser Datei vorhanden sein. 
-   - Entfernen Sie den Feed aus der NuGet.Config-Datei oder erstellen Sie ein PAT-Token und fügen sie es der NuGet.Config-Datei hinzu. Beispiel:
-
-     ```XML
-     <?xml version="1.0" encoding="utf-8"?>  
-     <configuration>  
-     <packageSources>  
-         <add key="CRMSharedFeed" value="https://dynamicscrm.pkgs.visualstudio.com/_packaging/CRMSharedFeed/nuget/v3/index.json" />  
-      </packageSources>  
-     <packageSourceCredentials>  
-      <CRMSharedFeed>  
-      <add key="Username" value="anything" />  
-      <add key="Password" value="User PAT" />  
-    </CRMSharedFeed>  
-     </packageSourceCredentials>  
-   </configuration>
-     ```
 
 ### <a name="see-also"></a>Siehe auch
 

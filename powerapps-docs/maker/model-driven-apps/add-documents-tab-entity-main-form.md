@@ -17,12 +17,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: f245d4c2a9272d10f7aefa2b2847adba5ce0f6e5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fae464925ea755a1f9fd0cd77426bfdbaad6141c
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860805"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909326"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Hinzufügen der Registerkarte „SharePoint-Dokumente” zum Hauptformular für eine Entität
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,7 +45,7 @@ Wenn Sie eine Registerkarte zu einem Hauptformular für eine Entität zum Anzeig
 5. Wählen Sie im Formulardesigner **Neue Registerkarte** im Formularcanvas aus, wählen Sie **Feld hinzufügen**, und fügen Sie dann ein Feld wie z. B. *Address 1: Ort* im linken Bereich hinzu. Sie können einen beliebigen Text oder ein beliebiges numerisches Feld für die Registerkarte verwenden. ![Hinzufügen eines Felds zur Registerkarte](media/add-field-to-tab.png)
 6. Benennen Sie die Registerkartenbeschriftung um. Wählen Sie dazu die Option **Neue Registerkarte** aus, und ersetzen Sie im rechten Eigenschaftenbereich **Neue Registerkarte** durch etwas Aussagekräftigeres wie z. B. *Dateien*.
 7. Wählen Sie **Speichern** und **Veröffentlichen** aus, und schließen Sie dann den Formulardesigner. 
-8. Wählen Sie auf der Startseite von Power Apps Maker die Option **Lösungen**, und wählen Sie die Lösung aus. Wählen Sie dann **Exportieren**, um die Lösung als nicht verwaltete Lösung zu exportieren. Weitere Informationen: [Exportieren von Lösungen](../common-data-service/import-update-export-solutions.md#export-solutions) 
+8. Wählen Sie auf der Startseite von Power Apps Maker die Option **Lösungen**, und wählen Sie die Lösung aus. Wählen Sie dann **Exportieren**, um die Lösung als nicht verwaltete Lösung zu exportieren. Weitere Informationen: [Exportieren von Lösungen](../common-data-service/export-solutions.md) 
 9. Extrahieren Sie die Lösung, und öffnen Sie die Datei "customization.xml" mit einem XML- oder Texteditor. 
 10. Suchen Sie in der Datei "customization.xml" nach **label description="Dateien"** (oder wie auch immer Sie die Registerkartenbeschriftung im vorherigen Schritt benannt haben).
 11. Führen Sie einen Bildlauf zum Element control id="*Feldname*" durch, z. B. **control id="Adresse1_Ort"**, und ersetzen Sie das gesamte Element durch das [XML-Beispiel](#xml-sample-for-adding-the-documents-tab-to-a-form) in diesem Thema. 

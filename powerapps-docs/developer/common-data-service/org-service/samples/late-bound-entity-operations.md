@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 126d73385a9b3e2aca78f74f7132b87865801d52
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9e97dfc4ab319c30decbc07fa866ab5f6c861e28
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748743"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934274"
 ---
 # <a name="sample-late-bound-entity-operations"></a>Beispiel: Spät gebundene Entitätsvorgänge
 
@@ -44,7 +44,7 @@ Um das oben beschriebene Beispiel zu simulieren, geht das Beispiel wie folgt vor
 
 ### <a name="setup"></a>Einrichten
 
-1. Prüft auf aktuelle Version der Organisation.
+Prüft auf aktuelle Version der Organisation.
 
 
 ### <a name="demonstrate"></a>Demonstrieren
@@ -59,4 +59,4 @@ Um das oben beschriebene Beispiel zu simulieren, geht das Beispiel wie folgt vor
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Es ist kein Bereinigen erforderlich, da alle Beispieldatensätze, die erstellt werden, im Abschnitt  Veranschaulichen gelöscht werden.
+Es ist kein Bereinigen erforderlich, da alle Beispieldatensätze, die erstellt werden, im Abschnitt  Veranschaulichen gelöscht werden.

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0d4f785d266604d51d099a5b56885b6ad32b6249
-ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
+ms.openlocfilehash: 7b69f19979b154a08aca23dacab58e4882066495
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "2854123"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909292"
 ---
 # <a name="discover-the-url-for-your-organization-using-the-web-api"></a>Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API.
 
@@ -49,7 +49,7 @@ Zusätzlich zu Ermittlungsdiensten für bestimmte Datencenter, die für den 2011
  Organisationsinformationen werden in der Entität `Instance` des Ermittlungsdiensts gespeichert.  Um die Art der Informationen anzuzeigen, die in dieser Entität enthalten sind, senden Sie eine HTTP GET-Anforderung zum Service für eine Ihrer Instanzen.  
   
 ```http  
-GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
+GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(UniqueName='myorg')  
 ```  
   
 Im oben genannten Beispiel wird der globale Ermittlungsdienst von Common Data Service verwendet, um die Organisationsinformationen der Instanz mit einem eindeutigen Namen "myorg" abzurufen. Weitere Details zu dieser Anforderung werden später in diesem Thema ausführlicher behandelt.  
@@ -93,20 +93,20 @@ Die Ermittlungsdienst-Web-API unterstützt den CORS-Standard für den ursprungs�
 -   Rufen Sie die Details einer bestimmten Instanz ab. Wenn Sie die GUID auslassen, werden alle Instanzen zurückgegeben, auf die der authentifizierte Benutzer Zugriff hat.  
   
     ```http      
-    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(<guid>)
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(<guid>)
     GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(<guid>)  
     ```  
   
 -   Sie können das UniqueName-Attribut als Alternativschlüssel verwenden.  
   
     ```http  
-    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(UniqueName='myorg')  
     ```  
   
 -   Rufen Sie eine Liste verfügbarer Instanzen ab, die nach Produktionstyp gefiltert sind.  
   
     ```http  
-    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances?$select=DisplayName,Description&$filter=Type+eq+0   
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances?$select=DisplayName,Description&$filter=Type+eq+0   
     ```  
   
 -   Rufen Sie den Kennungseigenschaftswert einer bestimmten Instanz ab.  

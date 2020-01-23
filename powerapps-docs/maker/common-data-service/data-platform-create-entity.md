@@ -5,19 +5,19 @@ author: Mattp123
 ms.service: powerapps
 ms.component: cds
 ms.topic: quickstart
-ms.date: 05/01/2018
+ms.date: 12/23/2019
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e24249573f6c7e56ff16de6808e2423acbf3c0cf
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d5ce493618d5a7b7d736f56714fcfa2a1c6ba068
+ms.sourcegitcommit: da1a13776f3e27d6b3d2157d17196681e6fe3619
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884186"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "2922822"
 ---
 # <a name="create-a-custom-entity"></a>Benutzerdefinierte Entität erstellen
 In Power Apps definiert eine *Entität* Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. Sie können dann diese Daten dann aufrufen, indem Sie eine App entwickeln, die auf diese Entität verweist. Power Apps bietet integrierte Standardentitäten für typische Szenarien in einer Organisation (z. B. das Nachverfolgen von Terminen), doch es gibt möglicherweise Zeiten, in denen Sie benutzerdefinierte Entitäten zum Speichern von Daten erstellen müssen, die spezifisch für Ihre Organisation sind.
@@ -58,8 +58,17 @@ Melden Sie sich bei Power Apps unter [https://make.powerapps.com](https://make.p
     Beachten Sie auch, dass das Hauptfeld auch ein eigenes Feld für **Name** enthält, das auf ähnliche Weise wie der Entitätsname funktioniert, der oben beschrieben wird. Der Name des Hauptfelds wird automatisch voraufgefüllt, wenn ein Anzeigename eingegeben wurde, verwendet dasselbe Präfix wie die Entität und kann nicht mehr geändert werden, nachdem die Entität erstellt wurde.
 
     c. Öffnen Sie den Abschnitt **Weitere Einstellungen**, und erweitern Sie das **Beschreibung**-Akkordeon. Sie können eine Beschreibung für die Entität eingeben, wenn Sie möchten (Beschreibungen sind nützlich, wenn andere Personen diese Entität verwenden). 
+
+    d. Wählen Sie die Entitätsoption **Aktivität** aus der Dropdownliste **Entitätstyp wählen** aus, um eine Entität als Aktivität zu aktivieren.
+
+    e. Stellen Sie sicher, dass das Kontrollkästchen **In Aktivitätsmenüs anzeigen** aktiviert ist. Diese Option stellt sicher, dass die Aktivität im Aktivitätsmenü zur Verfügung gestellt wird.
+
+      > [!Note]
+      > Stellen Sie sicher, dass die Option **Aktivitätsmenüs anzeigen** aktiviert ist, bevor Sie die Entität erstellen.
+
+    f. Erweitern Sie **Einstellungen erstellen und aktualisieren**, und aktivieren Sie das Kontrollkästchen **Schnellerfassungsformulare aktivieren**. Diese Option stellt sicher, dass Sie das Schnellerfassungsformular zum Erstellen eines Datensatzes verwenden können.
     
-    d. Klicken Sie auf **Erstellen**, wenn Sie fertig sind.
+    g. Klicken Sie auf **Erstellen**, wenn Sie fertig sind.
      
     ![Neue Entität](./media/data-platform-cds-create-entity/newentitypanel.png "Neuer Entitätsbereich")
 

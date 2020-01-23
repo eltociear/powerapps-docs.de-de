@@ -2,7 +2,7 @@
 title: Arbeiten mit Lösungen in Power Apps | MicrosoftDocs
 description: Erfahren Sie, wie Lösungen verteilt werden
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 12/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 286d955bfa0e6b28061d6a73962da25156820c9a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 71ddf991d25f144ce24b078cf73ffc6b971de36f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870114"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909173"
 ---
 # <a name="solutions-overview"></a>Überblick über Lösungen  
 
@@ -41,73 +41,80 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 
 <a name="BKMK_SolutionComponents"></a>   
 ### <a name="components"></a>Komponenten  
- Eine Komponente steht für etwas, das Sie anpassen können. Alles, was Bestandteil einer Lösung sein kann, ist eine Komponente. Nachfolgend finden Sie eine Liste von Komponenten, die Sie in einer Lösung anzeigen können:  
-  
--   KI-Modell
+ Eine Komponente steht für etwas, das Sie anpassen können. Alles, was Bestandteil einer Lösung sein kann, ist eine Komponente. Um die in einer Lösung enthaltenen Komponenten anzuzeigen, wechseln Sie im Lösungsexplorer zu **Einstellungen** > **Lösungen** und öffnen Sie dann die gewünschte Lösung. Die Komponenten sind in der **Komponentenliste** aufgeführt. 
 
--   Anwendungsmenüband  
-  
--   Artikelvorlage  
-  
--   Geschäftsregel  
+> [!div class="mx-imgBorder"] 
+> ![Komponenten in Lösung](media/components-in-solution.png "Komponenten in Lösung") 
 
--   Canvas-App 
-  
--   Diagramm  
-  
--   Verbindungsrolle  
-  
--   Vertragsvorlage  
+Eine Liste der Komponententypen, die zu einer beliebigen Lösung hinzugefügt werden können, finden Sie unter [ComponentType-Optionen](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options).
 
--   Benutzerdefinierter Connector
+<!-- The following is a list of components that you can view in a solution:  
+  
+-   AI Model
+
+-   Application Ribbon  
+  
+-   Article Template  
+  
+-   Business Rule  
+
+-   Canvas App 
+  
+-   Chart  
+  
+-   Connection Role  
+  
+-   Contract Template  
+
+-   Custom Connector
  
--   Benutzerdefiniertes Steuerelement
+-   Custom Control
   
 -   Dashboard  
   
--   E-Mail-Vorlage  
+-   Email Template  
   
--   Entität  
+-   Entity  
   
--   Entitätsbeziehung  
+-   Entity Relationship  
 
--   Umgebungsvariable
+-   Environment variable
   
--   Feld  
+-   Field  
   
--   Feldsicherheitsprofil  
+-   Field Security Profile  
 
 -   Flow
   
--   Formular  
+-   Form  
   
--   Seriendruckvorlage  
+-   Mail Merge Template  
   
--   Meldung  
+-   Message  
 
--   Modellgesteuerte App
+-   Model-driven app
   
--   Optionssatz  
+-   Option Set  
   
--   Plug-In-Assembly  
+-   Plug-in Assembly  
   
--   Prozess  
+-   Process  
 
--   (Bericht)  
+-   Report  
 
--   SDK-Nachrichtenverarbeitungsschritt  
+-   Sdk Message Processing Step  
   
--   Sicherheitsrolle  
+-   Security Role  
   
--   Dienstendpunkt  
+-   Service Endpoint  
   
--   Siteübersicht  
+-   Site Map  
 
--   Virtueller Entitätsdatenanbieter
+-   Virtual Entity Data Provider
 
--   Virtuelle Entitätsdatenquelle
+-   Virtual Entity Data Source
   
--   Webressource  
+-   Web Resource  -->
   
  Einige Komponenten werden in anderen Komponenten geschachtelt. Zum Beispiel enthält eine Entität Formulare, Ansichten, Diagramme, Felder, Entitätsbeziehungen, Nachrichten und Geschäftsregeln. Jede dieser Komponenten erfordert eine Entität. Ein Feld kann nicht außerhalb einer Entität existieren. Wir sprechen davon, dass das Feld von der Entität abhängt. Es gibt tatsächlich zweimal so viele Arten von Komponenten wie in der vorherigen Liste angegeben, die meisten davon sind jedoch nicht in anderen Komponenten geschachtelt und sind in der Anwendung nicht sichtbar.  
   

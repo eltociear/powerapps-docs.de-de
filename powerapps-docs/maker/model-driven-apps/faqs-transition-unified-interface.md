@@ -1,8 +1,8 @@
 ---
-title: 'FAQs: Übergang Einheitliche Oberfläche | Microsoft-Dokumentation'
-description: FAQs bezogen auf den automatischen Übergangsprozess zum Verschieben von Benutzern vom Vorgängerwebclienten zur Einheitlichen Oberfläche.
+title: 'FAQs: Übergang zur einheitlichen Oberfläche | Microsoft-Dokumentation'
+description: Häufig gestellte Fragen im Zusammenhang mit dem Übergangsprozess zum Verschieben von Benutzern vom Vorgänger-Webclient zu Einheitliche Oberfläche.
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 12/20/2019
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,51 +14,62 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 373201de630b46adc80b25eed10686da9112bad6
-ms.sourcegitcommit: c094590862142155cbafa91c6ee0ade975c82083
+ms.openlocfilehash: e06fa6901ec123307adaabdbbb6071e5a11c47cc
+ms.sourcegitcommit: 41a78575a6533c45c7cf4c012f8ed30c4e43aae8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769438"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2918108"
 ---
-# <a name="faqs-unified-interface-transition"></a>FAQs: Übergang Einheitliche Oberfläche
+# <a name="faqs-transition-to-unified-interface"></a>FAQs: Übergang zur einheitlichen Oberfläche
 
-Dieses Thema enthält Antworten auf die am häufigsten gestellten Fragen zum Übergangsprozess zum Verschieben von Benutzern vom Vorgängerwebclienten zur Einheitlichen Oberfläche.
+Dieses Thema enthält Antworten auf die häufigsten Fragen zu den Übergangsoptionen für das Verschieben von Benutzern vom Vorgänger-Webclient zu Einheitliche Oberfläche.
 
-### <a name="where-can-i-go-to-see-the-transition-dates-that-have-been-assigned-to-my-environments"></a>Wo finde ich die Übergangsdatumsangaben, die meiner Umgebung zugewiesen wurden? 
+### <a name="where-can-i-go-to-see-the-transition-dates-that-have-been-suggested-for-my-environments"></a>Wo kann ich die Übergangstermine anzeigen, die für meine Umgebungen vorgeschlagen wurden? 
 
-Verwenden Sie das Auto-Übergangsportal, um Ihr Umgebungsübergangsdatum zu verwalten: <https://runone.powerappsportals.com>.
+Verwenden Sie das Übergangsportal, um das Übergangsdatum Ihrer Umgebung zu verwalten: <https://runone.powerappsportals.com>.
 
 ### <a name="how-do-i-gain-access-to-the-portal"></a>Wie erhalte ich Zugriff auf das Portal?
 
 Führen Sie die folgenden Schritte aus:
 1. Besuchen Sie <https://runone.powerappsportals.com>.
 2. Melden Sie sich mit den Administrator-Anmeldeinformationen des Mandanten, den Sie verwalten möchten, an.
-3. Wählen Sie **Meine Umgebungen** und überprüfen Sie alle Umgebungen, denen ein Stichdatum zugewiesen wurde.
+3. Wählen Sie **Meine Umgebungen** aus, und überprüfen Sie alle Umgebungen, auf die ein vorgeschlagenes Datum angewendet wurde.
 
-### <a name="i-see-my-environment-has-a-date-for-auto-transition-can-i-change-this-date"></a>Ich sehe, dass meine Umgebung ein Datum für den automatischen Übergang hat. Kann ich dieses Datum ändern?
+### <a name="i-see-my-environment-has-a-date-suggested-for-transition-can-i-change-this-date"></a>Ich sehe, dass meine Umgebung ein für den Übergang vorgeschlagenes Datum hat. Kann ich dieses Datum ändern?
 
-Ja, das ist möglich, wenn Sie die Rolle **Globaler Admin** oder **Service Admin** für den Mandanten besitzen. Zum Ändern des Datums wählen Sie das Dropdown-Symbol neben der Umgebung aus und zeigen Sie den Datensatz an. Mandantenadministratorrollen können dann ein Ausnahmeersuchen für früheres oder späterer Übergangsdatum einreichen.
+Ja, das ist möglich, wenn Sie die Rolle **globaler Administrator**, **Dynamics 365-Dienstadministrator** oder **Power Platform-Administrator** für den Mandanten haben. 
 
-- Für ein früheres Übergangsdatum aktualisieren Sie das vorhandene Datum durch Ihre bevorzugte Option in der Liste. Dies erfordert keinen Genehmigung. Sie können auch manuell wechseln, wenn Ihre Datumsangaben nicht geeignet sind.
+Die Ihrer Umgebung zugeordneten Daten sind ein Vorschlag, für den eine Genehmigung zum Fortfahren erforderlich ist. Bitte genehmigen Sie, wenn das Datum für Ihre Organisation in Ordnung ist.  
 
-- Für ein späteres Übergangsdatum können Sie eine Ausnahmeanforderung einreichen. Vorgeschlagene Datumsangaben sind im Dropdown verfügbar. Sobald genehmigt, wird das Datum entsprechend im Portal aktualisiert.
+Zum Ändern des Datums wählen Sie das Dropdown-Symbol neben der Umgebung aus und zeigen Sie den Datensatz an. Mandantenadministratorrollen können dann das Übergangsdatum auf ein früheres oder späteres Datum verschieben.
 
-Sie können insgesamt zwei Ausnahmen pro Umgebung anfordern. Ausnahmen werden basierend auf der Unternehmensrechtfertigung neben dem vorgeschlagenen ausgewählten Datum gewährt. Das Datum wird nach der Bestätigung im Portal aktualisiert.
+Um auf ein früheres Datum zu verschieben, aktualisieren Sie das vorhandene Datum zu Ihrer bevorzugten Option in der Liste. Sie können auch [manuell wechseln](transition-web-app.md) , wenn Ihre Datumsangaben nicht geeignet sind. 
+ 
+Um einen späteren Zeitpunkt einzuplanen, wählen Sie die Schaltfläche „Übergangsdatum neu planen“ aus. Vorgeschlagene Datumsangaben sind im Dropdown verfügbar. Nach der Genehmigung wird das Datum im Portal entsprechend aktualisiert. Akzeptieren Sie dann das aktualisierte Datum, wenn Sie möchten, dass Ihre Umgebung umgestellt wird. 
+ 
+Datumsänderungen werden überprüft und gewährt, wenn das Datum vor dem 1. Oktober 2020 liegt. Das Datum wird nach der Bestätigung im Portal aktualisiert. 
 
 > [!NOTE]
-> Wenn der geplante Übergang innerhalb von 48 Stunden ist, können Sie das Datum nicht ändern. Ebenso können Sie kein Datum nach dem 1. Oktober 2020 anfordern, da der Vorgängerwebclient nicht mehr verfügbar ist.
+> Wenn Sie einen genehmigten Übergang haben und das geplante Datum innerhalb von 48 Stunden liegt, können Sie das Datum nicht ändern. Ebenso können Sie kein Datum nach dem 1. Oktober 2020 anfordern, da der Vorgänger-Webclient dann nicht mehr verfügbar ist.
 
-### <a name="my-auto-transition-date-is-within-48-hours-and-i-cant-change-the-date-within-the-portal-how-can-i-stop-transition-taking-place"></a>Mein automatisches Übergangsdatum ist innerhalb von 48 Stunden und ich kann das Datum innerhalb des Portals nicht ändern. Wie kann ich den laufenden Übergang stoppen?
+### <a name="what-will-happen-if-i-dont-opt-in-and-approve-a-suggested-transition-date-for-my-environment"></a>Was passiert, wenn ich kein Abonnement abschließe und kein vorgeschlagenes Übergangsdatum für meine Umgebung genehmige?
+
+Es wird keine Änderung an Ihrer Umgebung geben, wenn Sie das vorgeschlagene Datum im Portal nicht genehmigt haben. Wenn das vorgeschlagene Datum verstrichen ist, werden wir versuchen, Ihnen ein weiteres Datum in der Zukunft Termin zur Verfügung zu stellen.  
+ 
+> [!NOTE]
+> Nach dem 1. Oktober 2020 werden alle Umgebungen auf Einheitliche Oberfläche aktualisiert, gemäß der Release-Welle von Oktober 2020.
+
+### <a name="my-transition-date-is-within-48-hours-and-i-cant-change-the-date-within-the-portal-how-can-i-stop-the-transition-from-taking-place"></a>Mein Übergangsdatum liegt innerhalb von 48 Stunden, und ich kann das Datum im Portal nicht ändern. Wie kann ich verhindern, dass der Übergang stattfindet?
 
 Die Möglichkeit, das Übergangsdatum für eine Umgebung zu ändern, ist nur bis 48 Stunden vor dem Übergang verfügbar. Um den Prozess nach diesem Zeitraum zu beenden, bringen Sie eine Supportanfrage zur Sprache. 
 
 > [!NOTE]
 > Es wird keine Garantie übernommen, dass der Übergang gestoppt werden kann, wenn die Anforderungen nach der Sperrung im Portal gemacht wurde (48 Stunden oder weniger).
 
-### <a name="i-have-environments-without-a-target-auto-transition-date-can-i-update-these-to-include-a-date"></a>Ich habe Umgebung ohne ein automatisches Übergangsdatumsziel. Kann ich diese aktualisieren, um ein Datum mit aufzunehmen?
+### <a name="i-have-environments-without-a-scheduled-date-can-i-update-these-to-include-a-date"></a>Ich habe Umgebungen ohne geplantes Datum. Kann ich diese aktualisieren, um ein Datum mit aufzunehmen?
 
-Ja, wenn Sie **Globaler Administrator** oder **Serviceadministrator** für die Mandanten sind, wählen Sie die Umgebung aus, reichen eine Ausnahmeanforderung ein und aktualisieren Sie Ihren vorgeschlagenen Zeitrahmen mithilfe der Stichdatumsliste. 
+Ja, wenn Sie die Rolle **globaler Administrator**, **Dynamics 365-Dienstadministrator** oder **Power Platform-Administrator** für den Mandaten haben, wählen Sie die Umgebung aus, und wählen Sie ein Datum aus, indem Sie auf die Schaltfläche „Übergangsdatum neu planen“ klicken.
 
 Wir aktualisieren das Portal mit dem Datum, um es zu bestätigen. Zudem werden Benachrichtigungs-E-Mails an die globalen Mandantenadministratoren senden, wenn das Übergangsdatum kurz bevorsteht. Dies entspricht der Standarderinnerungsvorgehensweise, die im Rahmen dieses Dokuments aufgeführt ist.
 
@@ -66,7 +77,7 @@ Wir aktualisieren das Portal mit dem Datum, um es zu bestätigen. Zudem werden B
 
 Sehen Sie sich den unterstützenden Inhalt an, der auf der [Community-Site](https://community.dynamics.com/365/unified-interface/) zur Verfügung steht. Wir haben auch eine [Übergangscheckliste](https://aka.ms/UIChecklist), mit deren Hilfe Sie effektiv planen können. Überprüfen Sie sie sorgfältig, um sicherzustellen, dass Sie mit dem Übergang zur Einheitlichen Oberfläche vertraut sind.
 
-### <a name="my-environment-has-been-transitioned-but-i-am-finding-blocking-issues-for-my-users-and-wish-to-move-back-to-the-legacy-web-client-is-this-possible"></a>Meine Umgebung hat den Übergang passiert, aber ich stoße auf Blockierprobleme für meine Benutzer und möchte auf den Vorgängerwebclienten zurückgehen. Ist das möglich?
+### <a name="my-environment-has-been-transitioned-but-i-am-finding-blocking-issues-for-my-users-and-want-to-move-back-to-the-legacy-web-client-is-this-possible"></a>Meine Umgebung wurde umgestellt, aber ich stelle Blockierprobleme für meine Benutzer fest und möchte zum Vorgänger-Webclient zurückkehren. Ist das möglich?
 
 Ja, Sie können wieder in den Vorgängerwebclienten bis maximal 10 Tage nach dem Übergang wechseln. Sie können den [Wechsel manuell](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only) während der ersten 4 Tage durchführen; danach stellen Sie eine Supportanfrage über Ihren üblichen Kanal, da der manuelle Wechsel deaktiviert wird. 
 
@@ -75,18 +86,18 @@ Ja, Sie können wieder in den Vorgängerwebclienten bis maximal 10 Tage nach de
 
 ### <a name="i-want-to-transition-after-october-1-2020-is-that-possible"></a>Ich möchte den Übergang nach dem 1. Oktober 2020 machen. Ist das möglich?
 
-Der verfügbare Vorgängerwebclient wird nach dem 1. Oktober 2020 nicht mehr zur Verfügung stehen. Wir verfügen nicht über die Möglichkeit, den Übergang über dieses Datum hinaus zu verzögern.
+Der Vorgänger-Webclient wird nach der Release-Welle von Oktober 2020 für Endbenutzer nicht mehr verfügbar sein. Wir können das Datum nicht über diesen Zeitraum hinaus verschieben.
 
 Falls blockierenden Elemente, auftreten, protokollieren Sie diese mithilfe des Standardunterstützungsprozesses so schnell wie möglich.
 
 ### <a name="what-is-the-standard-reminder-procedure-throughout-this-process"></a>Was ist die Standarderinnerungsvorgehensweise während des Prozesses?
 
-Microsoft sendet folgende Kommunikation:
+Die Kommunikation findet in Wellen, mindestens 30 Tage vor dem vorgeschlagenen Zeitrahmen, statt. Sie können sich jedoch im Portal (<https://runone.powerappsportals.com>) jederzeit anmelden, um den Status anzuzeigen. Microsoft sendet folgende Kommunikation:
 
--   Erste Meldung für jede Umgebung, der ein Übergangsdatum zugewiesen wurde
--   Erinnerungsnachricht 2 Tage bevor die Daten im Portal gesperrt werden
--   Abschließende Erinnerung zur Angabe des Übergangsdatum wird blockiert und fortgesetzt.
--   Abschließende Meldung, um den Erfolg zu bestätigen (oder ob ein Problem auftrat)
+-   Anfangsnachricht für jede Umgebung, die über ein vorgeschlagenes Übergangsdatum verfügt.
+-   Wenn Sie das Datum genehmigt haben, erhalten Sie 2 Tage vor der Sperrung des Datums/der Daten im Portal eine Erinnerungsmeldung. 
+-   Die letzte Erinnerung wird 2 Tage vor dem Übergang versandt. Hiermit wird angegeben, dass das Übergangsdatum gesperrt ist und der Übergang erfolgen wird.
+-   Nach dem Übergang wird eine Abschlussmeldung angezeigt, um den Erfolg zu bestätigen (oder ob ein Problem aufgetreten ist)
 
 Meldungen können mithilfe des folgenden Kanäle angesehen werden:
 -   Nachrichten-Center innerhalb des Mandanten Microsoft 365. Dies ist normalerweise für Rollen wie globalem Administrator, Service-Administrator, Bedienungsmeldungs-Leser sichtbar.
@@ -101,16 +112,20 @@ Als erstes empfehlen wir, das Übergangsportal (<https://runone.powerappsportals
 
 Wenn das Datum im Portal nicht auf das neue Datum aktualisiert ist, reichen Sie eine Supportanfrage nach der Standardvorgehensweise ein.
 
+Nur vom Administrator genehmigte Daten (Datumsangaben) werden umgestellt. 
+
 ### <a name="if-i-already-have-an-environment-transitioned-to-unified-interface-will-i-still-be-able-to-switch-back-to-the-legacy-web-client-manually"></a>Wenn ich bereits eine Umgebung habe, die zur Einheitlichen Oberfläche übergegangen ist, kann ich noch manuell in den Vorgängerwebclienten wechseln?
 
 Wenn Ihre Umgebung seit mindestens 4 Tagen übergegangen ist, versuchen wir den manuellen Wechsel zurück zum Vorgängerwebclienten zu deaktivieren. 
 
 Sollte dies deaktiviert worden sein und Sie eine Anfrage zum Zurückwechseln laufen haben, reichen Sie eine Supportanfrage über Ihren üblichen Kanal zur Auswertung ein.
 
-### <a name="is-there-a-specific-day-and-time-when-automatic-transitions-will-take-place"></a>Gibt es einen bestimmten Tag und eine bestimmte Uhrzeit, wann die automatischen Übergänge stattfinden? 
+### <a name="is-there-a-specific-day-and-time-when-approved-transitions-will-take-place"></a>Gibt es einen bestimmten Tag und eine bestimmte Uhrzeit für genehmigte Übergänge? 
 
-Wir erwarten keine Ausfallzeit, wenn wir den Übergang vornehmen. Allerdings werden wir einen automatischen Übergang nur an einem Freitag durchführen und dabei den gleichen Wartungszeitplänen folgen, die in unseren Standardrichtlinien und Kommunikation erklärt sind. Weitere Informationen: [Wartungszeitplan ](https://docs.microsoft.com/power-platform/admin/policies-communications#maintenance-timeline)
+Wir erwarten keine Ausfallzeit, wenn wir den Übergang vornehmen. Übergänge erfolgen jedoch nur an einem Freitag, wobei dieselbe Wartungszeitskalen eingehalten werden, die in unseren Standardrichtlinien und Mitteilungen dargelegt sind. Weitere Informationen: [Wartungszeitplan ](https://docs.microsoft.com/power-platform/admin/policies-communications#maintenance-timeline)
 
+### <a name="are-environments-from-all-data-centers-included-within-this-transition-service"></a>Sind Umgebungen aus allen Rechenzentren in diesem Übergangsdienst enthalten?
 
+Derzeit sind Umgebungen aus spezifischen Rechenzentren, wie z. B. Government Community Cloud (GCC), nicht im Portal einbezogen worden. Wir werden die vorgeschlagenen Übergangstermine für diese Umgebungen bis Juni 2020 bereitstellen. Kunden, die zu Einheitliche Oberfläche wechseln möchten, können jederzeit [manuell wechseln](/power-platform/admin/enable-unified-interface-only#how-to-enable-unified-interface-only-mode) zu jedem Zeitpunkt vor dem 1. Oktober 2020.
 
 

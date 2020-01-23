@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d0b91e7020db63d71a0cfa8e2bd5d009dbac2f85
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c38b1709e34ea85f7de84b0c9eaea0a2c9256c2d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748733"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934254"
 ---
 # <a name="sample-query-connections-by-a-record"></a>Beispiel: Abfragen von Verbindungen nach Datensatz 
 
@@ -49,9 +49,8 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. `QueryExpression` ruft alle Verbindungen ab, die dem Kontakt zugeordnet sind, der im Beispiel erstellt wird.
+`QueryExpression` ruft alle Verbindungen ab, die dem Kontakt zugeordnet sind, der im Beispiel erstellt wird.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen.
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Datensätze in [Einrichtung](#setup) zu löschen. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

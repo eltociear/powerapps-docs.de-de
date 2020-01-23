@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4f718c8414e76119c53bbb55648ee8b0a1941e1c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 296c325e84b2ac1d74321825ab19f38b88e82ab4
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748752"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934334"
 ---
 # <a name="sample-detect-solution-dependencies"></a>Beispiel: Erkennen von Lösungsabhängigkeiten
 
@@ -53,6 +53,4 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 1. Die `RetrieveDependentComponentsRequest` ruft alle Abhängigkeiten für die Komponente ab. Wenn es keine Abhängigkeiten gibt, können wir diese Komponente ignorieren. Wenn Abhängigkeiten von dieser Lösungskomponente bestehen und die Lösung selbst verwaltet wird, können Sie die Lösung nicht löschen.
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Lösungen zu löschen, die in [Einrichtung](#setup)erstellt wurden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Lösungen zu löschen, die in [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

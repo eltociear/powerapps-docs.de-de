@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7f85fe38e5f300d0f5a7a1a2d4e796837054bf9f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2939a005c5fac49706f6a582a71f0d11a520faac
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748722"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934202"
 ---
 # <a name="sample-retrieve-multiple-with-the-queryexpression-class"></a>Beispiel: Rufen Sie mit der QueryExpressions-Klasse Vielfaches ab
 
@@ -43,11 +43,13 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="setup"></a>Einrichten
 
-1. Prüft auf aktuelle Version der Organisation.
+Prüft auf aktuelle Version der Organisation.
 
 ### <a name="demonstrate"></a>Demonstrieren
+
 1. Erstellt mehrere Accounts mit primären Kontakten.
 1. Diese `QueryExpression`-Klasse erstellt einen Abfrageausdruck, der den Linkentitätsalias und Spalten der Linkentität angibt, die zurückgegeben werden sollen.
+
 ### <a name="clean-up"></a>Bereinigung
 
-1. Keine Bereinigung erforderlich.
+Keine Bereinigung erforderlich.

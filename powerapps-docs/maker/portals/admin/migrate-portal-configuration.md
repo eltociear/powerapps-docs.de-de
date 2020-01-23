@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/18/2019
+ms.date: 12/20/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 80f9cc89b0da2eec5d134f282507e68658e42a96
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.reviewer: tapanm
+ms.openlocfilehash: 2a3f9e6eba00446ce953975c99721d99bbe78338
+ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2816381"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "2924285"
 ---
 # <a name="migrate-portal-configuration"></a>Portalkonfiguration migrieren
 
@@ -45,7 +45,12 @@ Die standardmäßigen Schemadateien enthalten Informationen zu Portalentitäten,
 Nach dem Export der Konfigurationsdaten müssen Sie sie in die Zielumgebung importieren. Weitere Informationen: [Portalkonfigurationsdaten importieren](#import-portal-configuration-data)
 
 > [!NOTE]
-> Die Schemadateien werden bereitgestellt, um den erforderlichen Aufwand für die völlig neue Erstellung eines Schemas zu verringern. Schemas können für Ihre Implementierung mithilfe der Standardmethoden angepasst werden, die von dem Tool bereitgestellt werden. Schemadateien können im Tool für die Konfigurationsmigration geladen und geändert werden, um Entitäten, Attribute usw. hinzuzufügen, zu entfernen und zu ändern.
+> Das Konfigurationsmigrationstool verwendet Schemas, um Konfigurationsdaten zu exportieren und zu importieren. Das Tool migriert keine Entitäten oder Entitätsschemata. Die Migration schlägt möglicherweise mit fehlenden Elementen wie Entitäten und Feldern fehl, wenn Konfigurationsdaten nicht mit dem ausgewählten Schema übereinstimmen.
+>
+> Stellen Sie während des Exports sicher, dass die Quellumgebung Portalentitäten enthält, die in der Schemadatei des Konfigurationsmigrationstools angegeben sind. Schemadateien können im Tool für die Konfigurationsmigration geladen und immer noch geändert werden, um Entitäten, Attribute usw. hinzuzufügen, zu entfernen und zu ändern.
+>
+> Stellen Sie beim Import sicher, dass die Zielumgebung denselben Portaltyp enthält, der bereits installiert ist, und dass zusätzliche Anpassungen wie Entitäten, Felder, Formulare oder Ansichten separat als Lösungen importiert wurden.
+
 
 ## <a name="export-portal-configuration-data"></a>Exportieren von Portalkonfigurationsdaten
 

@@ -8,16 +8,16 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 1ffc32fdb1479552d77cd68d858c0d3b43d9b86e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8d1da235f93f98a8104c69511bb8c50f86ddcbda
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862000"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909284"
 ---
 # <a name="debug-code-components"></a>Debuggen von Codekomponenten
 
-Nachdem Sie die Code-Komponentenlogik implementiert haben, können Sie mit dem Testen und Debuggen der Codekomponente mit dem Befehl `npm start` starten. Dadurch wird die Codekomponente erstellt und im lokalen Testbereich geöffnet.
+Nach der Implementierung der Codekomponentenlogik können Sie mit dem Testen und Debuggen der Codekomponente mithilfe des Befehls `npm start` beginnen. Dieser Befehl erstellt die Codekomponente und öffnet sie in der lokalen Testumgebung.
 
 > [!div class="mx-imgBorder"]
 > ![Testumgebung 1](media/test-harness-1.png "Testumgebung 1")
@@ -68,7 +68,9 @@ Die Testumgebung unterstützt den `watch`-Modus, den Sie für Power Apps Compone
 
 ## <a name="debug-code-components-using-native-browsers"></a>Debuggen von Codekomponenten mit nativen Browsern
 
-Sie können die Debugging-Funktionen Ihres Browsers verwenden, um das Komponentenverhalten zu beobachten. Jeder Browser bietet ein Debugging-Tool, das Ihnen hilft, Ihren Code systemeigen im Browser zu debuggen. In der Regel können Sie das Debugging in Ihrem Browser aktivieren, indem Sie die Taste **F12** drücken, um das systemeigene Entwicklungstool anzuzeigen,d as für das Debugging verwendet wird.
+Sie können die Debugging-Funktionen Ihres Browsers verwenden, um das Komponentenverhalten zu beobachten. Jeder Browser bietet ein Debugging-Tool, das Ihnen hilft, Ihren Code systemeigen im Browser zu debuggen. 
+
+In der Regel können Sie das Debugging in Ihrem Browser aktivieren, indem Sie die Taste **F12** drücken, um das systemeigene Entwicklungstool anzuzeigen,d as für das Debugging verwendet wird.
 
 Zum Beispiel in **Microsoft Edge**:
 

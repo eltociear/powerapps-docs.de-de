@@ -6,21 +6,25 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/03/2019
+ms.date: 12/27/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 28df2292d18f38a78e913a9805ac39a33f6aaf54
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.reviewer: tapanm
+ms.openlocfilehash: 35f68ef861ac8908e1eb9227df6768b7a2c2c9f3
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890727"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934104"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps Portale-FAQs
 
 Damit Sie eine schnelle Übersicht erhalten, haben wir eine Liste mit häufig gestellten Fragen sowie kurze Antworten zusammengestellt, damit Sie schnell Ihre Informationen erhalten können.
 
 ## <a name="general"></a>Allgemein
+
+### <a name="when-is-an-add-on-portal-in-suspended-state"></a>Wann befindet sich ein Add-On-Portal im gesperrten Zustand?
+
+Portal [bereitgestellt mithilfe eines Portal-Add-On-Plans](provision-portal-add-on.md), das zuvor erworben wurde, wird nach Ablauf gesperrt. Die Gültigkeitsdauer beträgt 30 Tage für Testportale, während sie für ein Add-On-Portal in der Produktion mit einer erworbenen Lizenz unterschiedlich sein kann. Das gesperrte Testportal wird nach 7 Tagen gelöscht, während die Sperrfrist für das Produktionsportal variieren kann. Weitere Details finden Sie unter [Portal-Lebenszyklus](./admin/portal-lifecycle.md#considerations-for-add-on-portals) für Add-On-Portale.
 
 ### <a name="how-do-i-redirect-a-user-to-a-default-page-after-signing-in"></a>Wie kann man einen Benutzer nach der Anmeldung auf eine Standardseite umleiten?
 
@@ -115,11 +119,7 @@ Für interne Benutzer einer Organisation, die Portale zum Zugriff auf authentifi
 
 ### <a name="how-do-i-get-a-portal-subscription"></a>Wie erhalte ich ein Portalabonnement?
 
-Sie können ein Portalabonnement auf eine der folgenden Arten erhalten:
-
-- Ein Portal-Add-on wird zusammen mit dem Kauf einer bestimmten Art und Menge von Benutzerlizenz angeboten. Informationen finden Sie im Preisgestaltungs- und Lizenzierungshandbuch von Dynamics 365. Beachten Sie bitte, dass Sie nur ein Portal-Add-On mit Benutzerlizenzen erhalten, auch wenn Sie mehrere Arten von oder viele gültige Lizenzen erworben haben.
-
-- Zusätzliche Portalabonnements können erworben werden, indem ein Portal-Add-On-Abonnement gekauft wird. Dieses Abonnement ist ein Zusatzabonnement und kann erworben werden, wenn Sie über die entsprechenden Dynamics 365-Lizenzen verfügen.
+[Power Apps-Portale](overview.md) sind jetzt völlig eigenständig innerhalb von Power Apps verfügbar. Sie müssen keine Lizenz mehr erwerben, um ein Portal bereitzustellen. Der Benutzerzugriff zum Portal erfordert eine Lizenz abhängig vom Personatyp. Weitere Informationen finden Sie unter [Power Apps-Portallizenzierung – FAQ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing).
 
 ### <a name="how-do-i-change-the-audience-and-type-of-a-portal-after-it-is-provisioned"></a>Wie kann man die Zielgruppe und den Typ eines Portals ändern, nachdem es bereitgestellt wurde?
 

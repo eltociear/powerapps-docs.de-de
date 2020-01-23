@@ -14,23 +14,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a00d4e751452be55c824727af238900e964a649f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bb782e362692b63e9412493af0fb561846cdd6f1
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752994"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944298"
 ---
 # <a name="data-export-service"></a>Datenexportservice
 
-Der Datenexport ist ein Add-On-Service, der von der Common Data Service-Lösung bereitgestellt wird und der die Möglichkeit gibt, Common Data Service-Daten auf einen Microsoft Azure SQL-Datenbankspeicher in einem kundeneigenen Microsoft Azure-Abonnement zu replizieren. Die unterstützten Ziele sind Microsoft Azure SQL-Datenbank und Microsoft Azure SQL Server auf virtuellen Microsoft Azure-Computern. Datenexport synchronisiert intelligent das gesamte Dynamics 365-Schema und die Daten und synchronisiert danach auf fortlaufender Basis, wenn Änderungen im Dynamics 365 (online)-System eintreten (Delta-Änderungen).  
+Der Datenexport ist ein Add-On-Service, der von der Common Data Service-Lösung bereitgestellt wird und der die Möglichkeit gibt, Common Data Service-Daten auf einen Microsoft Azure SQL-Datenbankspeicher in einem kundeneigenen Microsoft Azure-Abonnement zu replizieren. Die unterstützten Ziele sind Microsoft Azure SQL-Datenbank und Microsoft Azure SQL Server auf virtuellen Microsoft Azure-Computern. Datenexport synchronisiert anfänglich intelligent das gesamte Common Data Service-Schema und die Daten und synchronisiert danach auf fortlaufender Basis, wenn Änderungen (Detla-Änderungen) in Common Data Service eintreten.  
   
- Der Datenexportservice bietet eine Schnittstelle zum Verwalten der Konfiguration und der laufenden Verwaltung dieses Service auf Common Data Service.  Weitere Informationen finden Sie unter [Datenexport](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). In diesem Thema werden die entsprechenden programmgesteuerte Benutzeroberfläche und die Probleme für diesen Service behandelt.  
+Der Datenexportservice bietet eine Schnittstelle zum Verwalten der Konfiguration und der laufenden Verwaltung dieses Service auf Common Data Service.  Weitere Informationen finden Sie unter [Replizieren von Daten in die Azure SQL-Datenbank](https://docs.microsoft.com/power-platform/admin/replicate-data-microsoft-azure-sql-database). In diesem Thema werden die entsprechenden programmgesteuerte Benutzeroberfläche und die Probleme für diesen Service behandelt.  
   
 ## <a name="prerequisites-for-using-the-data-export-service"></a>Voraussetzungen für die Verwendung des Datenexport-Service  
- Da dieser Service einen externen Zugriff auf die Microsoft Azure SQL-Datenbank vom Common Data Service erfordert, müssen einige Voraussetzungen erfüllt sein, bevor Sie erfolgreich auf den Service zugreifen können. Die folgenden Voraussetzungen werden im Detail aus Sicht eines Administrators erläutert im Abschnitt [Voraussetzungen für die Verwendung des Datenexport-Service-](https://technet.microsoft.com/library/mt744592.aspx).  
+ Da dieser Service einen externen Zugriff auf die Microsoft Azure SQL-Datenbank vom Common Data Service erfordert, müssen einige Voraussetzungen erfüllt sein, bevor Sie erfolgreich auf den Service zugreifen können. Die folgenden Voraussetzungen werden im Detail aus Sicht eines Administrators erläutert im Abschnitt [Voraussetzungen für die Verwendung des Datenexport-Service-](/power-platform/admin/replicate-data-microsoft-azure-sql-database#prerequisites-for-using-).  
   
- Der Common Data Service - Dienst muss konfiguriert werden, damit:  
+ Ihre Common Data Service-Umgebung muss konfiguriert werden, damit:  
   
 - Die Entitäten, die exportiert wurden, werden mit Änderungsnachverfolgung aktiviert. Weitere Informationen finden Sie unter [Verwenden von Änderungsnachverfolgung zum Synchronisieren von Daten mit externen Systemen](use-change-tracking-synchronize-data-external-systems.md).  
   
@@ -47,7 +47,7 @@ Der Datenexport ist ein Add-On-Service, der von der Common Data Service-Lösung 
   
 - Es wird empfohlen, die Option "Zugriff an Azure Services" aktiviert zu lassen.  
   
-- Der Datenbankbenutzer, der in der Datenexportverbindungszeichenfolge definiert ist, muss die richtigen Berechtigungen verfügen, um auf der Zieldatenbank zu erstellen und zu ändern.  Als Minimum schließen diese ein: `CRTB`, `CRTY`, `CRVW`, `CRPR`und `ALUS`. Weitere Informationen finden Sie unter [Berechtigungen (Database Engine)](https://msdn.microsoft.com/library/ms191291.aspx).  
+- Der Datenbankbenutzer, der in der Datenexportverbindungszeichenfolge definiert ist, muss die richtigen Berechtigungen verfügen, um auf der Zieldatenbank zu erstellen und zu ändern.  Als Minimum schließen diese ein: `CRTB`, `CRTY`, `CRVW`, `CRPR` und `ALUS`. Weitere Informationen finden Sie unter [Berechtigungen (Database Engine)](https://msdn.microsoft.com/library/ms191291.aspx).  
   
 - Mindestens ein Benutzer muss Berechtigungen für das Schema haben. Im folgenden Skript wird ein neuer Benutzer erstellt.  
   
@@ -76,7 +76,7 @@ Es ist ratsam, dass die Domäne https://discovery.crmreplication.azure.net/ der 
 |[https://discovery.crmreplication.azure.net/swagger/ui/index#](https://discovery.crmreplication.azure.net/swagger/ui/index)|Die benutzerfreundliche Version dieser API als Entwicklerreferenz|  
   
 <a name="bk_ApiQuickReference"></a>   
-### <a name="api-quick-reference"></a>API  Kurzübersicht  
+### <a name="api-quick-reference"></a>API Kurzübersicht  
  Diese Schnittstellen werden für den Benutzer in den folgenden Tabellen zusammengefasst.  
   
  **Metadaten-Vorgänge** (`https://discovery.crmreplication.azure.net/crm/exporter/metadata/`)  

@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f393f227-7a88-4f25-9036-780b3bf14070
-ms.openlocfilehash: 4bc237027dab1459c3a9f83c6ff18310f35ff614
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 16362dea63560e973c73fd5b94a80532faa515b2
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895012"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909272"
 ---
 # <a name="get-tooling-for-power-apps-component-framework"></a>Tooling-Abruf für das Power Apps component framework
 
@@ -24,7 +24,9 @@ Verwenden Sie **Microsoft Power Apps CLI** (Befehlszeilenschnittstelle), um Code
 
 ## <a name="what-is-microsoft-power-apps-cli"></a>Was ist Microsoft Power Apps CLI? 
 
-Die Microsoft Power Apps CLI ist eine einfache, einheitliche Befehlszeilenschnittstelle für Entwickler, mit der Entwickler und App-Ersteller Codekomponenten erstellen können. Die Power Apps CLI-Tools sind der erste Schritt in Richtung einer umfassenden ALM-Story, in der Unternehmensentwickler und ISVs ihre Erweiterungen sowie Anpassungen schnell und effizient erstellen, debuggen und veröffentlichen können.  
+Die Microsoft Power Apps CLI ist eine einfache, einheitliche Befehlszeilenschnittstelle für Entwickler, mit der Entwickler und App-Ersteller Codekomponenten erstellen können. 
+
+Die Power Apps CLI-Tools sind der erste Schritt in Richtung einer umfassenden ALM-Story, in der Unternehmensentwickler und ISVs ihre Erweiterungen sowie Anpassungen schnell und effizient erstellen, debuggen und veröffentlichen können.  
 
 ## <a name="install-microsoft-power-apps-cli"></a>Installieren der Microsoft Power Apps CLI
 
@@ -55,18 +57,19 @@ In dieser Tabelle sind einige allgemeine Befehle aufgeführt, die in der CLI ver
 
 |Befehl|Beschreibung|Beispiele|
 |------|-----------|--------|
-|**PCF**|Befehle zum Arbeiten mit Power Apps Component Framework Verfügt über die folgenden Parameter: <br/> - **init**: Initialisiert das Codekomponentenprojekt. <br/> - **namespace**: Namespace der Codekomponente. <br/> - **name**: Name der Codekomponente. <br/> - **template**: Feld oder DataSet <br/> - **push** : Verschiebt die Codekomponente mit den neuesten Änderungen auf die Common Data Service-Instanz.| `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>` <br/> <br/> `pac pcf push --publisher-prefix <your publisher prefix>`|
-|**Lösung**|Befehle zum Arbeiten mit Common Data Service-Projekten. Verfügt über die folgenden Parameter: <br/> - **init**: Initialisiert das Lösungsprojekt.<br/> - **publisher-name**: Name des Herausgebers der Organisation. <br/> - **publisher-prefix**: Präfix des Herausgebers der Organisation. <br/> - **add-reference**: Legt den Referenzpfad zum Komponentenprojektordner fest, indem der `path`-Parameter übergeben wird.<br/> - **Klonen**: Erstellt ein Lösungsprojekt auf der Grundlage des vorhandenen Lösungsprojekts, indem die Parameter `name`, `version` und `include` übergeben werden|`pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>` <br/><br/> `pac solution add-reference --path <path to your Power Apps component framework project>`<br/><br/> `pac solution clone –name<name of the solution to be exported> --version <version of your solution> --include <settings that should be included>`|
-|**auth**|Befehle zur Authentifizierung in Common Data Service. Verfügt über die folgenden Parameter: <br/> - **Erstellen**: Erstellt das Authentifizierungsprofil für Ihre Organisation durch Übergeben des `url`-Parameters. Sie müssen die Organisations-URL für den `url`-Parameter bereitstellen. <br/> - **Liste**: Bietet die Liste der Authentifizierungsprofile. <br/> - **Auswählen**: Bietet eine Möglichkeit zum Wechseln zwischen zuvor erstellten Authentifizierungsprofilen durch Übergeben des `index`-Parameters.|`pac auth create --url <your Common Data Service org’s url>` <br/> <br/> `pac auth list` <br/><br/> `Pac auth select --index <index of the active profile>`|
-|**Telemetrie**|Telemetrieeinstellungen verwalten. Es hat die folgenden Parameter: aktivieren und deaktivieren.|`pac telemetry enable` <br/><br/> `pac telemetry disable`|
+|**PCF**|Befehle zum Arbeiten mit Power Apps Component Framework Verfügt über die folgenden Parameter: <br/> - **init**: Initialisiert das Codekomponentenprojekt. Es hat die folgenden Parameter <br/> - *namespace*: Namespace der Codekomponente. <br/> - *name*: Name der Codekomponente. <br/> - *template*: Feld oder DataSet <br/> - **push** : Verschiebt die Codekomponente mit den neuesten Änderungen auf die Common Data Service-Instanz. Es hat die folgenden Parameter: <br/> - *publisher-prefix*: Präfix des Herausgebers der Organisation.| `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>` <br/> <br/> `pac pcf push --publisher-prefix <your publisher prefix>`|
+|**Lösung**|Befehle zum Arbeiten mit Common Data Service-Projekten. Verfügt über die folgenden Parameter: <br/> - **init**: Initialisiert das Lösungsprojekt. Verfügt über die folgenden Parameter:<br/> - *publisher-name*: Name des Herausgebers der Organisation. <br/> - *publisher-prefix*: Präfix des Herausgebers der Organisation. <br/> - **add-reference**: Legt den Referenzpfad zum Komponentenprojektordner fest, indem der `path`-Parameter übergeben wird.<br/> - **clone**: Erstellt ein Lösungsprojekt auf der Grundlage des vorhandenen Lösungsprojekts, indem die folgenden Parameter `name`, `version` und `include` übergeben werden|`pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>` <br/><br/> `pac solution add-reference --path <path to your Power Apps component framework project>`<br/><br/> `pac solution clone –name<name of the solution to be exported> --version <version of your solution> --include <settings that should be included>`|
+|**auth**|Befehle zur Authentifizierung in Common Data Service. Verfügt über die folgenden Parameter: <br/> - **Erstellen**: Erstellt das Authentifizierungsprofil für Ihre Organisation durch Übergeben des `url`-Parameters. Sie müssen die Organisations-URL für den `url`-Parameter übergeben. <br/> - **Liste**: Bietet die Liste der Authentifizierungsprofile. <br/> - **Auswählen**: Bietet eine Möglichkeit zum Wechseln zwischen zuvor erstellten Authentifizierungsprofilen durch Übergeben des `index`-Parameters.<br/>**delete**: Löscht das Authentifizierungsprofil, das durch Übergeben des Parameters `index` erstellt wurde.|`pac auth create --url <your Common Data Service org’s url>` <br/> <br/> `pac auth list` <br/><br/> `Pac auth select --index <index of the active profile>`|
+|**Telemetrie**|Telemetrieeinstellungen verwalten. Verfügt über die folgenden Parameter: <br/>- *enable*: Aktiviert die Telemetrieoption.<br/> - *disable*: Deaktiviert die Telemetrieoption.<br/> - *status*: Gibt zurück, ob die Telemetrie aktiviert oder deaktiviert ist.|`pac telemetry enable` <br/><br/> `pac telemetry disable`|
 |**org**|Befehl zum Arbeiten mit Common Data Service.|`pac org who`|
 |**Plug-In**|Erstellt ein Plug-In-Projekt|`pac plugin init`|
+
 
 ## <a name="uninstall-microsoft-power-apps-cli"></a>Deinstallieren der Microsoft Power Apps CLI
 
 Um das Power Apps CLI-Tooling zu deinstallieren, führen Sie das MSI von [hier](https://aka.ms/PowerAppsCLI) aus. 
 
-Wenn Sie ein Teilnehmer der Privaten Vorschau sind und eine ältere Version der CLI haben, führen Sie diese Schritte aus:
+Wenn Sie einen Teilnehmer der **Privaten Vorschau** sind und eine ältere Version der CLI haben, führen Sie diese Schritte aus:
 
 1. Um zu finden, wo Power Apps-CLI installiert ist, öffnen Sie eine Eingabeaufforderung und geben `where pac` ein
 1. Löschen Sie den PowerAppsCLI-Ordner.

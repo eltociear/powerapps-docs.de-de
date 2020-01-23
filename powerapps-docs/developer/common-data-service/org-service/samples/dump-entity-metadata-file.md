@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 007ac9701350f5b6ae86b411898f5190ad880816
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 500bbd38a24be73909ba297ee5e1149bcaa84c90
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748751"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934322"
 ---
 # <a name="sample-dump-entity-metadata-to-a-file"></a>Beispiel: Speichern von Entitätsmetadaten in einer Datei
 
@@ -41,7 +41,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="setup"></a>Einrichten
 
-1. Prüft auf aktuelle Version der Organisation.
+Prüft auf aktuelle Version der Organisation.
 
 
 ### <a name="demonstrate"></a>Demonstrieren
@@ -51,6 +51,6 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Dieses Beispiel erstellt keine Datensätze. Keine Bereinigung erforderlich
+Dieses Beispiel erstellt keine Datensätze. Keine Bereinigung erforderlich
 
 

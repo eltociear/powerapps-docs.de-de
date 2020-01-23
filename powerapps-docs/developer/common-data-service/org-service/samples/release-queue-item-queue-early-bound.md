@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8830d879ff6f8de08cb0fdacbbb5436226ebb377
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b773c8493b1305cea9b40f26499cc8f152f51d1
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748730"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934242"
 ---
 # <a name="sample-release-a-queue-item-to-the-queue"></a>Beispiel: Freigabe eines Warteschlangenelements zur Warteschlange
 
@@ -49,10 +49,8 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Die Message `ReleaseToQueueRequest` entfernt Mitarbeiter vom Warteschlangenelement, um ein in der Warteschlange stehendes Objekt aus der Warteschlange des Mitarbeiters freizugeben.
+Die Message `ReleaseToQueueRequest` entfernt Mitarbeiter vom Warteschlangenelement, um ein in der Warteschlange stehendes Objekt aus der Warteschlange des Mitarbeiters freizugeben.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden.
-
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Beispieldaten zu löschen, die in [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

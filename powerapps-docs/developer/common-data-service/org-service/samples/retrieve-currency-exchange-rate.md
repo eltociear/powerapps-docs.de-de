@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07d0901064e36d433e09a5c7732b4a653f4f0a1a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 62a85f5a13bd05cf4b730e747a71a1b88467055b
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748726"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934226"
 ---
 # <a name="sample-retrieve-currency-exchange-rate"></a>Beispiel: Abrufen von Wechselkursen
 
@@ -46,9 +46,8 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Die Message `RetrieveExchangeRateRequest` ruft den Wechselkurs für die Basiswährung der Organisation ab.
+Die Message `RetrieveExchangeRateRequest` ruft den Wechselkurs für die Basiswährung der Organisation ab.
 
 ### <a name="clean-up"></a>Bereinigung
 
-1. Zeigt eine Option an, um die Beispieldaten zu löschen, die unter [Einrichten](#setup) erstellt wurden.
-    Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
+Zeigt eine Option an, um die Beispieldaten zu löschen, die unter [Einrichten](#setup) erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.

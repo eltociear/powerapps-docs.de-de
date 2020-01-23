@@ -2,7 +2,7 @@
 title: Verwaltete Eigenschaften in Common Data Service-Metadaten festlegen | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie verwaltete Eigenschaften für Metadatenelemente in einer Lösung festlegen können.
 ms.custom: ''
-ms.date: 05/30/2018
+ms.date: 12/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,37 +22,45 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 287df9ac6daa38022a269177247a5b446bdfa1fa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4e0c0432626896acdabf89133c86510b651e3859
+ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869982"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2917911"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Verwaltete Eigenschaften in Common Data Service-Metadaten festlegen 
 
 Verwaltete Eigenschaften gelten nur, wenn Sie Metadaten in einer verwalteten Lösung hinzufügen und in eine andere Umgebung importieren. Diese Einstellungen ermöglichen einem Lösungsentwickler, die Anpassungsmöglichkeiten zu steuern, die Benutzer, die ihre verwaltete Lösung installieren, haben sollen. 
+
+Bei nicht verwalteten Komponenten können Sie die verwalteten Eigenschaften anzeigen und ändern. Bei verwalteten Komponenten können Sie die verwalteten Eigenschaften nicht anzeigen und ändern. 
 
 > [!TIP]
 > Im Allgemeinen ist es eine gute Idee, die Metadaten in Ihrer Lösung, die mit Geschäftsdaten arbeitet, zu erweitern. Dies ermöglicht es ihnen, Ihre Lösung genau so auf ihre Bedürfnisse zuzuschneiden, wie sie es für Standardentitäten können.
 >
 >Für Metadaten, die Funktionen zur Unterstützung Ihrer Lösung bieten, aber keine Geschäftsdaten enthalten, ist es eine gute Idee, die zulässigen Anpassungen einzuschränken.
 
-Die Einstellung der verwalteten Eigenschaften muss mit Hilfe des Lösungs-Explorers erfolgen.
-
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
 ## <a name="entity-managed-properties"></a>Verwaltete Eigenschaften der Entität
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** aus der linken Navigation aus. 
+2.  Öffnen Sie die gewünschte Lösung. 
+3.  Wählen Sie aus der Liste der Komponenten die Lösung und wählen Sie **...** Klicken Sie neben der nicht verwalteten Entität, die Sie anzeigen oder bearbeiten möchten und wählen Sie dann **Verwaltete Eigenschaften**. 
 
-Während Sie [Entitäten anzeigen](create-edit-entities-solution-explorer.md#view-entities), wählen Sie die Entität aus und dann **Verwaltete Eigenschaften** in der Menüleiste.  Dadurch wird das Dialogfeld **Verwaltete Eigenschaften festlegen** geöffnet.
+    > [!div class="mx-imgBorder"] 
+    > ![Von der Entität verwaltete Befehlseigenschaft](media/entity-managed-properties.png "Von der Entität verwaltete Befehlseigenschaft")
 
-![Verwaltete Eigenschaften der Entität festlegen](media/set-managed-properties.png)
+    Die Seite mit den verwalteten Eigenschaften wird angezeigt. 
+
+    > [!div class="mx-imgBorder"] 
+    > <img src="media/managed-properties-dialog.png" alt="Managed properties pane" height="572" width="300">
+
+<!-- [Managed properties pane](media/managed-properties-dialog.png "Managed properties pane") -->
   
 Entitäten haben mehr verwaltete Eigenschaften als andere Arten von Lösungskomponenten. Wenn die Entität angepasst werden kann, können Sie die folgenden Optionen einstellen:  
 
 |Option|Beschreibung|
 |--|--|
-|**Kann angepasst werden** |Steuert alle anderen Optionen. Wenn diese Option `False` ist, gelten keine der anderen Einstellungen. Wenn sie `True` ist, können Sie die anderen Anpassungsoptionen angeben. Bei `False` ist es gleichbedeutend mit dem Setzen aller anderen Optionen auf false.|
+|**Anpassungen zulassen** |Steuert alle anderen Optionen. Wenn diese Option `False` ist, gelten keine der anderen Einstellungen. Wenn sie `True` ist, können Sie die anderen Anpassungsoptionen angeben. Bei `False` ist es gleichbedeutend mit dem Setzen aller anderen Optionen auf false.|
 |**Anzeigename kann geändert werden**|Ob der Name der Entitätsanzeige geändert werden kann.|
 |**Ändern zusätzlicher Eigenschaften möglich** |Gilt für alles, was nicht durch andere Optionen abgedeckt ist.|
 |**Neue Formulare können erstellt werden**|Ob neue Formulare für die Entität erstellt werden können.|

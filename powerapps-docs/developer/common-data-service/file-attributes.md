@@ -14,19 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 30123b2e89b6c4c4432a7042e7cac26fcd8191cf
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 360194b69e049b7622f1c205c07add069e7f70ba
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861774"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909111"
 ---
 # <a name="file-attributes"></a>Dateiattribute
 
 Ein Dateiattribut wird zum Speichern von Dateidaten bis zu einer angegebenen maximalen Größe verwendet. Eine benutzerdefinierte oder anpassbare Entität kann null oder mehr Dateiattribute sowie eine Sammlung der Notizen (Anmerkungen) mit null bis einer Anlage in den jeweiligen Notizen haben. Der <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> des Dateiattributs ist `EntityFile`.
-
-> [!NOTE]
-> Das neue Dateiattribut und die verbesserte Bildattributfunktion werden derzeit nur in Microsoft-Rechenzentren sukzessive eingeführt. Ihre Organisation hat das Update bisher ggf. noch nicht erhalten. Sie können Ihre Organisation auf Dateiattributunterstützung regelmäßig überprüfen, indem vorübergehend ein neues Feld zu einer anpassbaren oder benutzerdefinierten Entität hinzugefügt und überprüft wird, ob „Datei“ in der Liste der unterstützten Felddatentypen verfügbar ist. Gehen Sie hierzu in Power Apps zu **Daten** > **Entitäten** oder in der klassischen Webanwendung zu **Einstellungen** > **Anpassungen**.
 
 Web-API (REST) | .NET-API (SOAP)
 ------- | -------
