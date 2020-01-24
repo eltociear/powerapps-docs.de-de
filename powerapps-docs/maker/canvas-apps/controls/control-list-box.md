@@ -13,31 +13,30 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0e949cb54a4835b887ae971f110f4c02e12dc7fa
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: c52b6779e5875e1304a80b2c63d0cf7b70e2c8b2
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727108"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315352"
 ---
-# <a name="list-box-control-in-power-apps"></a>Listenfeld-Steuerelement in powerapps
+# <a name="list-box-control-in-power-apps"></a>Listenfeld-Steuerelement in Power Apps
 Eine Liste, in der der Benutzer ein oder mehrere Elemente auswählen kann
 
 ## <a name="description"></a>Beschreibung
-Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Gegensatz zu einem **[Dropdown](control-drop-down.md)** -Steuerelement), wobei der Benutzer mehr als ein Element gleichzeitig auswählen kann (im Gegensatz zu einem **[Optionsfeld](control-radio.md)** -Steuerelement).
+Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Gegensatz zu einem **[Dropdown](control-drop-down.md)**-Steuerelement), wobei der Benutzer mehr als ein Element gleichzeitig auswählen kann (im Gegensatz zu einem **[Optionsfeld](control-radio.md)**-Steuerelement).
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
 
-**[Items](properties-core.md)** : Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
+**[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
-**Ausgewählt** – der Datensatz, der das ausgewählte Element darstellt.
+**Selected**: Der Datensatz, der das ausgewählte Element darstellt.  Sie können nur über ein standardmäßig ausgewähltes Element verfügen.  Wenn Sie mehrere ausgewählte Elemente benötigen, verwenden Sie das Steuerelement [Kombinationsfeld](control-combo-box.md).
 
 Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eigenschaftenliste standardmäßig **Items** an, sodass Sie ganz einfach die Daten angeben können, die das neue Steuerelement anzeigen soll. Sie können zum Beispiel die **Items**-Eigenschaft eines Katalogs auf die **Account**-Tabelle in Salesforce festlegen, eine Tabelle mit dem Namen **Inventory**, die Sie in Excel erstellt und in die Cloud hochgeladen haben, oder auf eine SharePoint-Liste mit dem Namen **ConferenceSpeakers**.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
@@ -47,23 +46,23 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
-**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[DisabledBorderColor](properties-color-border.md)** : Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)** -Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledBorderColor](properties-color-border.md)**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[DisabledColor](properties-color-border.md)** : Die Farbe des Texts in einem Steuerelement, wenn seine **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledColor](properties-color-border.md)**: Die Farbe des Texts in einem Steuerelement, wenn seine **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[DisabledFill](properties-color-border.md)** : Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledFill](properties-color-border.md)**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
-**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
+**[FontWeight](properties-text.md)**: die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Halbfett**, **Normal**, **Dünner**.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -77,19 +76,19 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 
 **ItemPaddingLeft**: gibt den Abstand zwischen Text in einem Listenfeld und dem linken Rand an.
 
-**[LineHeight](properties-text.md)** : Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.
+**[LineHeight](properties-text.md)**: Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.
 
-**[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
-**[PaddingBottom](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
+**[PaddingBottom](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
 
-**[PaddingLeft](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
+**[PaddingLeft](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
 
-**[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
+**[PaddingRight](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
 
 **[PressedBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
@@ -97,13 +96,13 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
-**SelectedText (veraltet)** – ein Zeichen folgen Wert, der das ausgewählte Element darstellt.
+**SelectedText (veraltet)**: ein Zeichenfolgenwert, der das ausgewählte Element darstellt
 
-**[SelectionColor](properties-color-border.md)** : Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.
+**[SelectionColor](properties-color-border.md)**: Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.
 
-**[SelectionFill](properties-color-border.md)** : gibt die Hintergrundfarbe der ausgewählten Elemente in einer Liste oder eines ausgewählten Bereichs des Stift-Steuerelements an.
+**[SelectionFill](properties-color-border.md)**: gibt die Hintergrundfarbe der ausgewählten Elemente in einer Liste oder eines ausgewählten Bereichs des Stift-Steuerelements an.
 
 **SelectMultiple**: gibt an, ob ein Benutzer mehr als ein Element in einem Listenfeld auswählen kann.
 
@@ -111,9 +110,9 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -126,33 +125,33 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
-1. Fügen Sie ein **Listenfeld**-Steuerungselement hinzu, nennen Sie es **CategoryList**, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf folgende Formel fest:<br>
-   **["Carpet";"Hardwood";"Tile"]**
+1. Fügen Sie ein **Listenfeld**-Steuerungselement hinzu, nennen Sie es **CategoryList**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf folgende Formel fest:<br>
+   **["Carpet","Hardwood","Tile"]**
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
    
     ![Kategorien für den Bodenbelag im Listenfeld](./media/control-list-box/category-listbox.png)
-2. Fügen Sie drei **[Dropdown](control-drop-down.md)** -Steuerelemente hinzu, verschieben Sie sie unter **CategoryList**, und nennen Sie diese **CarpetList**, **HardwoodList** und **TileList**.
-3. Legen Sie die **[Items](properties-core.md)** -Eigenschaft jedes **[Dropdown](control-drop-down.md)** -Steuerelements auf einen der folgenden Werte fest:
+2. Fügen Sie drei **[Dropdown](control-drop-down.md)**-Steuerelemente hinzu, verschieben Sie sie unter **CategoryList**, und nennen Sie diese **CarpetList**, **HardwoodList** und **TileList**.
+3. Legen Sie die **[Items](properties-core.md)**-Eigenschaft jedes **[Dropdown](control-drop-down.md)**-Steuerelements auf einen der folgenden Werte fest:
    
-   * CarpetList: **["Caserta Stone Beige"; "Ageless Beauty Clay"; "Lush II Tundra"]**
-   * HardwoodList: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
-   * TileList: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
+   * CarpetList: **["Caserta Stone Beige", "Ageless Beauty Clay", "Lush II Tundra"]**
+   * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
+   * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Bezeichnungen der Bodenbeläge in Dropdownlisten](./media/control-list-box/flooring-names.png)
-4. Legen Sie die **[Visible](properties-core.md)** -Eigenschaft jedes **[Dropdown](control-drop-down.md)** -Steuerelements auf einen der folgenden Werte fest:
+4. Legen Sie die **[Visible](properties-core.md)**-Eigenschaft jedes **[Dropdown](control-drop-down.md)**-Steuerelements auf einen der folgenden Werte fest:
    
-   * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value; true)**
-   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value; true)**
-   * TileList: **If("Tile" in CategoryList.SelectedItems.Value; true)**
+   * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
+   * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
      
-     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
+     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 5. Drücken Sie F5, und wählen Sie ein oder mehrere Elemente in **CategoryList** aus.
    
-    Die entsprechenden  **[Dropdown](control-drop-down.md)** -Steuerelemente werden entsprechend Ihrer Wahl oder Ihren Optionen angezeigt.
+    Die entsprechenden **[Dropdown](control-drop-down.md)**-Steuerelemente werden entsprechend Ihrer Wahl oder Ihren Optionen angezeigt.
    
     ![Bezeichnungen der Bodenbeläge in Dropdownlisten](./media/control-list-box/selected-lists.png)
 6. (optional) Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
@@ -173,7 +172,7 @@ Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessi
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
+* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
 
     > [!NOTE]
   > Über die TAB-TASTE können Sie zum **Listenfeld** navigieren oder dieses schließen. Über die Pfeiltasten können Sie durch die Inhalte des **Listenfelds** navigieren.

@@ -1,6 +1,6 @@
 ---
-title: Häufige Probleme und Lösungen für powerapps | Microsoft-Dokumentation
-description: Eine Liste der häufigen Probleme und Lösungen in Power apps.
+title: Häufige Probleme und Lösungen für Power Apps | Microsoft-Dokumentation
+description: Eine Liste häufiger Probleme und Lösungen für Power Apps.
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
@@ -13,47 +13,59 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b578d34217647658bb872ed22cd7ee8b3cc4a1cd
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 254034d608e5824f2e6358bfa84bb7f7fe9f178c
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723864"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315310"
 ---
-# <a name="common-issues-and-resolutions-for-power-apps"></a>Häufige Probleme und Lösungen für Power apps
+# <a name="common-issues-and-resolutions-for-power-apps"></a>Häufige Probleme und Lösungen für Power Apps
 
-In diesem Artikel werden einige häufige Probleme aufgelistet, die bei der Verwendung von powerapps auftreten können. Nach Möglichkeit werden Problemumgehungen bereitgestellt.
+Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von Power Apps auftreten können. Nach Möglichkeit werden Problemumgehungen bereitgestellt.
 
-1. **Anmelde Problem auf bestimmten mobilen Android-Geräten bei Verwendung des Authentifikators** (21. August 2019)
+1. **Kamerabilder werden beim Importieren über Edge gespiegelt** (20. Januar 2020)
 
-    In bestimmten Geräten und Szenarien können bei der Verwendung von Authenticator Anmeldefehler auftreten. Dies ist darauf zurückzuführen, dass OEM diese Funktionalität einschränkt. Weitere Informationen zum Fehler und zu möglichen entschärfungen finden Sie [hier](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING).    
+    Bei Verwendung der Kamera und des Edge-Browsers wird das Bild möglicherweise gespiegelt.  Dies liegt an einem Fehler in Edge.  Verwenden Sie den neuen Browser „Edge Chromium“ oder einen anderen Browser, um dieses Problem zu beheben.
+    
+1. **Kamerabilder enthalten keine Metadateninformationen** (20. Januar 2020)
 
-1. **Kamera Problem auf mobilen Android-Geräten** (Jan. 1, 2019)
+    Bei Verwendung des Kamerasteuerelements enthält das Bild keine Metadateninformationen. Dies ist auf eine Einschränkung zurückzuführen, wie wir Bilder mit der Kamera aufnehmen. Verwenden Sie das [Steuerelement „Bild hinzufügen“](controls/control-add-picture.md), um dies zu vermeiden.
 
-    Wenn das Kamera Steuerelement nicht mehr auf einem Android-Gerät funktioniert, veröffentlichen Sie die APP erneut, und öffnen Sie Sie auf dem Gerät erneut. Das Kamera Steuerelement wurde als Reaktion auf eine Änderung im Android-Betriebssystem aktualisiert, und Ihre APP profitiert von der Aktualisierung, wenn Sie Sie erneut veröffentlichen.
+1. **Von iOS hinzugefügte Bilder enthalten keine Metadateninformationen** (20. Januar 2020)
 
-1. **Scrollen in flexiblen Galerien** (Nov. 27, 2018)
+    Bei Verwendung des Steuerelements „Bild hinzufügen“ unter iOS enthalten Bilder, die mithilfe der Kamera oder dem Katalog importiert wurde, keine Metadaten.  
 
-    Wenn beim Scrollen mit dem Finger eine Einschränkung angezeigt wird, heben Sie die Übertragung auf, und starten Sie den Bildlauf erneut.
+1. **Anmeldeproblem auf bestimmten mobilen Android-Geräten bei Verwendung von Authenticator** (21. August 2019)
 
-1. Das **Zeichnen mit Maus-oder Finger Eingaben ist in Power Apps für Windows nicht reibungslos** (Sep. 24, 2018).
+    Bei bestimmten Geräten und Szenarios können bei der Verwendung von Authenticator Anmeldefehler auftreten. Das liegt daran, dass der OEM diese Funktionalität einschränkt. Weitere Informationen zum Fehler und den möglichen Maßnahmen zur Problembehebung finden Sie [hier](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING).    
 
-    Das Pen-Steuerelement verfügt nur über partielle Unterstützung für das Zeichnen mithilfe von Maus-oder Finger Eingaben in der Windows-App Striche können zeitweilig sein. Verwenden Sie für Smooth Drawing einen Stift, oder führen Sie die app in einem Browser aus.
+1. **Problem mit der Kamera auf mobilen Android-Geräten** (1. Januar 2019)
 
-1. **Mehrere mediensteuer Elemente in Power Apps Mobile** (Aug. 2, 2018)
+    Wenn das Kamerasteuerelement auf einem Android-Gerät nicht mehr funktioniert, veröffentlichen Sie Ihre App erneut, und öffnen Sie sie erneut auf dem Gerät. Das Kamerasteuerelement wurde infolge einer Änderung im Android-Betriebssystem aktualisiert, und Ihre App profitiert bei einer erneuten Veröffentlichung von diesem Update.
 
-    Powerapps Mobile kann auf verschiedenen Arten von Geräten ausgeführt werden, und einige von Ihnen weisen Einschränkungen auf, die für diese Plattform spezifisch sind:
+1. **Scrollen in Katalogen mit flexibler Höhe** (27. November 2018)
+
+    Wenn Sie beim Scrollen mit dem Finger auf eine Einschränkung stoßen, heben Sie den Finger kurz an, und scrollen Sie dann weiter.
+
+1. **Zeichnen mit der Maus oder durch Toucheingabe funktioniert in Power Apps für Windows nicht reibungslos** (24. September 2018)
+
+    Das Stiftsteuerelement unterstützt das Zeichnen mit der Maus oder durch Toucheingabe in der Windows-App nur teilweise. Die Striche werden möglicherweise unterbrochen. Verwenden Sie einen Stift, oder führen Sie die App in einem Browser aus, um flüssig zeichnen zu können.
+
+1. **Mehrere Mediensteuerelemente in Power Apps Mobile ** (2. August 2018)
+
+    Power Apps Mobile kann auf verschiedenen Arten von Geräten ausgeführt werden. Einige dieser Geräte weisen plattformspezifische Einschränkungen auf:
 
     - Mit Ausnahme von iPhone-Geräten können Sie Videos auf allen Plattformen in mehreren **Video**-Steuerelementen gleichzeitig abspielen.
     - Mit Ausnahme des Webplayers können Sie auf allen Plattformen Audio mit mehreren **Microphone**-Steuerelementen gleichzeitig aufzeichnen.
 
 1. **Erneutes Veröffentlichen von Apps** (2. August 2018)
 
-    Wenn Sie Ihre APP in mehreren Monaten nicht aktualisiert haben, veröffentlichen Sie Sie erneut, um Sie mit der neuesten Version von powerapps zu synchronisieren, die Leistungsverbesserungen und andere Korrekturen umfasst.
+    Wenn Sie Ihre App über mehrere Monate hinweg nicht aktualisiert haben, können Sie sie erneut veröffentlichen, um sie mit der aktuellsten Version von Power Apps zu synchronisieren, wobei Leistungsverbesserungen und andere Fehlerbehebungen angewendet werden.
 
 1. <a name="out-of-memory"></a>**Browser hat nicht genügend Arbeitsspeicher** (23. Juli 2018)
 
-    Wenn bei der Verwendung von powerapps nicht genügend Arbeitsspeicher verfügbar ist, sollten Sie eine 64-Bit-Version von Chrome, Microsoft Edge oder Internet Explorer herunterladen.
+    Wenn Sie bei der Verwendung von Power Apps nicht mehr genügend Arbeitsspeicher haben, sollten Sie eine 64-Bit-Version von Chrome, Microsoft Edge oder Internet Explorer herunterladen.
 
 1. **Starten einer Website aus einer eingebetteten App** (10. Mai 2018)
 
@@ -65,7 +77,7 @@ In diesem Artikel werden einige häufige Probleme aufgelistet, die bei der Verwe
 
 1. **Verwenden eines benutzerdefinierten Bilds als App-Symbol** (11. April 2018)
 
-    In powerapps Studio für Windows, Version 3,18043, können Sie kein benutzerdefiniertes Image hochladen, das als App-Symbol verwendet werden soll. Um dieses Problem zu umgehen, verwenden Sie [powerapps Studio für Web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , um ein benutzerdefiniertes Image hochzuladen. Alternativ dazu können Sie auch eines der Symbole verwenden, das in Power apps Studio für Windows enthalten ist, und die Hintergrundfarbe anpassen.
+    In Power Apps Studio für Windows Version 3.18043 können Sie kein benutzerdefiniertes Bild zur Verwendung als App-Symbol hochladen. Wenn Sie dieses Problem umgehen wollen, verwenden Sie [Power Apps Studio für Web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), um ein benutzerdefiniertes Bild hochzuladen. Stattdessen können Sie auch eins der Symbole verwenden, das in Power Apps Studio für Windows enthalten ist, und die Hintergrundfarbe anpassen.
 
 1. **Kopieren und Einfügen von Anzeigen über mehrere Apps hinweg** (4. April 2018)
 
@@ -79,33 +91,33 @@ In diesem Artikel werden einige häufige Probleme aufgelistet, die bei der Verwe
 
     Wenn Sie ein **Data Table**-Steuerelement kopieren und einfügen, für das die **Items**-Eigenschaft auf eine Formel mit einer **Filter**-Funktion festgelegt wurde, enthalten die Feldnamen in der Formel für die **Items**-Eigenschaft im neuen **Data Table**-Steuerelement das Suffix **_1**. Hierdurch werden die Feldnamen ungültig, und es werden keine Daten in der Datentabelle angezeigt. Um dieses Problem zu umgehen, überprüfen Sie vor dem Kopieren des Steuerelements, dass die **Filter**-Funktion nicht auf ein Feld in der Datenquelle verweist, dessen Name dem Namen einer Spalte im **Data Table**-Steuerelement entspricht. Wenn es der Fall ist, benennen Sie die Spalte im **Data Table**-Steuerelement um. Alternativ können Sie das Suffix **_1** aus den ungültigen Feldnamen entfernen, damit sie den Namen in der Entität entsprechen.
 
-1. **Kamera Steuerelemente in powerapps Studio für Windows**
+1. **Kamerasteuerelemente in Power Apps Studio für Windows**
 
-    Powerapps Studio für Windows stürzt möglicherweise ab, wenn Sie ein Kamera Steuerelement hinzufügen oder eine APP öffnen, die ein Kamera Steuerelement verwendet. Um dieses Problem zu vermeiden, verwenden Sie [powerapps Studio für Web](create-app-browser.md) , wenn Sie ein Kamera Steuerelement hinzufügen oder verwenden.
+    Power Apps Studio für Windows stürzt möglicherweise ab, wenn Sie ein Kamerasteuerelement hinzufügen oder eine App öffnen, die ein Kamerasteuerelement verwendet. Verwenden Sie [Power Apps Studio für Web](create-app-browser.md), wenn Sie ein Kamerasteuerelement hinzufügen oder nutzen, um dieses Problem zu vermeiden.
 
 1. **Version 2.0.700 auf Android-Geräten**
 
-    Wenn Sie Release 2.0.700 auf einem Android-Gerät installieren und anschließend keine apps öffnen können (oder eine APP nicht mehr reagiert), deinstallieren Sie powerapps, starten Sie das Gerät neu, und installieren Sie dann powerapps neu.
+    Wenn Sie Version 2.0.700 auf einem Android-Gerät installieren und Apps nicht geöffnet werden können (oder eine App nicht mehr reagiert), deinstallieren Sie Power Apps, starten Sie das Gerät neu, und installieren Sie dann Power Apps erneut.
 
 1. **„Leerer“ Katalog beim Öffnen einer App**
 
     Wenn Sie automatisch eine App auf der Grundlage von Daten erstellen, die App speichern und anschließend wieder öffnen, werden im durchsuchbaren Katalog möglicherweise nicht sofort Daten angezeigt. Geben Sie zum Beheben dieses Problems mindestens ein Zeichen im Suchfeld ein, und löschen Sie dann den eingegebenen Text. Im Katalog werden nun ordnungsgemäß die Daten angezeigt.
 
-1. **Aktualisieren von powerapps auf Windows 8.1**
+1. **Aktualisieren von Power Apps unter Windows 8.1**
 
-    Wenn Sie powerapps auf einem Computer installieren, auf dem Windows 8 oder Windows 8.1 ausgeführt wird, lassen Sie die Windows Store-App geöffnet und aktiv, verwenden Sie den Charm "Einstellungen", um nach Updates zu suchen, und installieren Sie Sie.
+    Wenn Sie Power Apps auf einem Computer installieren, auf dem Windows 8 oder Windows 8.1 ausgeführt wird, lassen Sie die Windows Store-App geöffnet und aktiv, suchen Sie über den Charm „Einstellungen“ nach Updates, und installieren Sie diese.
 
 1. **Benutzerdefinierte Connectors und der Common Data Service**
 
-    Wenn eine mit Power apps Build 2.0.540 oder früher erstellte App auf einer Datenbank im Common Data Service und mindestens einem benutzerdefinierten Connector in einer anderen Umgebung basiert, müssen Sie den Connector in der gleichen Umgebung wie die Datenbank bereitstellen und die APP so aktualisieren, dass Sie verwendet wird. e neuer Connector. Andernfalls teilt ein Dialogfeld Benutzern mit, dass die API nicht gefunden wurde. Weitere Informationen finden Sie in der [Übersicht zu Umgebungen](../../administrator/environments-overview.md).
+    Wenn eine mithilfe von Power Apps-Build 2.0.540 oder früher erstellte App auf einer Datenbank in Common Data Service und wenigstens einem benutzerdefinierten Connector in einer anderen Umgebung basiert, müssen Sie den Connector in der gleichen Umgebung wie die Datenbank bereitstellen und die App so aktualisieren, dass sie den neuen Connector verwendet. Andernfalls teilt ein Dialogfeld Benutzern mit, dass die API nicht gefunden wurde. Weitere Informationen finden Sie in der [Übersicht zu Umgebungen](../../administrator/environments-overview.md).
 
 1. **Ausführen einer App unter Windows 8.1**
 
-    Wenn Sie [dieses Update für Windows 8.1](https://technet.microsoft.com/library/security/ms16-118)installieren, können Sie keine apps ausführen, die Sie in powerapps Studio auf diesem Betriebssystem öffnen. Sie können jedoch weiterhin apps ausführen, die Sie in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder mithilfe von powerapps Mobile öffnen.
+    Wenn Sie [dieses Update für Windows 8.1](https://technet.microsoft.com/library/security/ms16-118) installieren, können Sie Apps, die Sie in Power Apps Studio öffnen, nicht unter diesem Betriebssystem ausführen. Sie können jedoch weiterhin Apps ausführen, die Sie in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder mithilfe von Power Apps Mobile öffnen.
 
 1. **Spaltennamen mit Leerzeichen**
 
-    Wenn Sie eine SharePoint-Liste oder Excel-Tabelle verwenden, in der ein Spaltenname ein Leerzeichen enthält, wird diese von powerapps durch **"\_x0020\_"** ersetzt. Beispielsweise wird **"Spalten Name"** in SharePoint oder Excel in powerapps als **"Column_x0020_Name"** angezeigt, wenn Sie im Datenlayout angezeigt oder in einer Formel verwendet werden.
+    Bei Verwendung einer SharePoint-Liste oder Excel-Tabelle, in denen ein Spaltenname ein Leerzeichen enthält, wird dieses von Power Apps durch **\_x0020\_** ersetzt. **Column Name** (Name der Spalte) in SharePoint oder Excel wird beispielsweise in Power Apps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **Column_x0020_Name** (Name_x0020_der_x0020_Spalte) angezeigt.
 
 1. **Ändern eines Flows in einer freigegebenen Anwendung**
 
@@ -131,7 +143,7 @@ In diesem Artikel werden einige häufige Probleme aufgelistet, die bei der Verwe
 
 1. **Erstellen und Bearbeiten von Apps in einem Browser**
 
-    Sie können in Power apps Studio für Windows viele, aber nicht alle gleichen Dinge tun wie in Power apps Studio für Windows. Weitere Informationen finden Sie unter [Create or edit apps in a browser (Erstellen oder Bearbeiten von Apps in einem Browser)](create-app-browser.md).
+    Viele (jedoch nicht alle) Vorgänge, die Sie in Power Apps Studio für Windows ausführen können, können Sie auch in Power Apps Studio für Web ausführen. Weitere Informationen finden Sie unter [Create or edit apps in a browser (Erstellen oder Bearbeiten von Apps in einem Browser)](create-app-browser.md).
 
 1. **Ändern eines Titelfelds in einer Entität**
 
@@ -139,15 +151,15 @@ In diesem Artikel werden einige häufige Probleme aufgelistet, die bei der Verwe
 
 1. **Apps, die eine Verbindung mit lokalem SharePoint herstellen**
 
-    Wenn Sie eine App freigeben, die auf Verbindungen beruht, die nicht automatisch freigegeben werden (z.B. eine lokale SharePoint-Website), wird Benutzern, die die App in einem Browser öffnen, ein Dialogfeld ohne Text angezeigt, wenn Sie auf **Anmelden** klicken oder tippen. Klicken oder tippen Sie auf das „Schließen“-Symbol (X) in der rechten oberen Ecke, um das Dialogfeld zu schließen. Das Dialogfeld wird nicht angezeigt, wenn Sie die app in powerapps Studio oder powerapps Mobile öffnen. Weitere Informationen zu freigegebenen Verbindungen finden Sie unter [Share app resources (Freigeben von App-Ressourcen)](share-app-resources.md).
+    Wenn Sie eine App freigeben, die auf Verbindungen beruht, die nicht automatisch freigegeben werden (z.B. eine lokale SharePoint-Website), wird Benutzern, die die App in einem Browser öffnen, ein Dialogfeld ohne Text angezeigt, wenn Sie auf **Anmelden** klicken oder tippen. Klicken oder tippen Sie auf das „Schließen“-Symbol (X) in der rechten oberen Ecke, um das Dialogfeld zu schließen. Das Dialogfeld wird nicht angezeigt, wenn Sie die App in Power Apps Studio oder Power Apps Mobile öffnen. Weitere Informationen zu freigegebenen Verbindungen finden Sie unter [Share app resources (Freigeben von App-Ressourcen)](share-app-resources.md).
 
-1. **Wenn Power apps eine APP aus Daten generiert, wird das für das Sortieren und suchen verwendete Feld nicht automatisch konfiguriert**.
+1. **Wenn Power Apps aus Daten eine App generiert, wird das Feld zum Sortieren und Durchsuchen nicht automatisch konfiguriert**.
 
-   Um dieses Feld zu konfigurieren, bearbeiten Sie die **[Elemente](controls/properties-core.md)** -Formel für den Katalog, wie in den Abschnitten zum Filtern und Sortieren unter [Add a gallery (Hinzufügen eines Katalogs)](add-gallery.md) beschrieben.
+   Um dieses Feld zu konfigurieren, bearbeiten Sie die **[Elemente](controls/properties-core.md)**-Formel für den Katalog, wie in den Abschnitten zum Filtern und Sortieren unter [Add a gallery (Hinzufügen eines Katalogs)](add-gallery.md) beschrieben.
 
 1. **Bei Apps, die aus Daten erstellt werden, kann nur auf die ersten 500 Datensätze einer Datenquelle zugegriffen werden**.
 
-     Im allgemeinen arbeitet Power apps mit jeder Größendaten Quelle, indem Vorgänge an die Datenquelle delegiert werden. Bei Vorgängen, die nicht delegiert werden können, gibt Power Apps bei der Erstellung eine Warnung aus und funktioniert nur für die ersten 500-Datensätze der Datenquelle.  Weitere Informationen zur Delegierung finden Sie im Artikel zur [Filterfunktion](functions/function-filter-lookup.md).
+     Im Allgemeinen arbeitet Power Apps mit Datenquellen jeder Größe, indem Vorgänge an die Datenquelle delegiert werden. Bei Vorgängen, die nicht delegiert werden können, gibt Power Apps beim Erstellen eine Warnung aus und führt den Vorgang nur für die ersten 500 Datensätze der Datenquelle aus.  Weitere Informationen zur Delegierung finden Sie im Artikel zur [Filterfunktion](functions/function-filter-lookup.md).
 
 1. **Excel-Daten müssen als Tabelle formatiert sein**.
 
@@ -157,7 +169,7 @@ In diesem Artikel werden einige häufige Probleme aufgelistet, die bei der Verwe
 
      Weitere Informationen finden Sie unter [SharePoint Online](connections/connection-sharepoint-online.md#known-issues).
 
-1. Die **gemeinsamen Erstellung wird nicht unterstützt. Einen Autor gleichzeitig, bitte**.
+1. **Die gemeinsame Erstellung wird nicht unterstützt. Bitte immer nur ein Autor zur gleichen Zeit**.
 
      Wenn mehr als eine Person zur gleichen Zeit die gleiche App bearbeitet, kann eine App beschädigt oder die Änderungen von Anderen überschrieben werden. Schließen Sie die App, bevor sie von einer anderen Person bearbeitet wird.
 
@@ -167,7 +179,7 @@ In diesem Artikel werden einige häufige Probleme aufgelistet, die bei der Verwe
 
 1. **Im [Formularsteuerelement](controls/control-form-detail.md), können Sie Daten nicht mithilfe einer benutzerdefinierten Karte ändern**.
 
-     Der bestehenden benutzerdefinierten Karte fehlt die **[Update](controls/control-card.md)** -Eigenschaft, die für das Zurückschreiben von Änderungen benötigt wird. Dieses Problem können Sie folgendermaßen umgehen:
+     Der bestehenden benutzerdefinierten Karte fehlt die **[Update](controls/control-card.md)**-Eigenschaft, die für das Zurückschreiben von Änderungen benötigt wird. Dieses Problem können Sie folgendermaßen umgehen:
 
     * Wählen Sie das Formularsteuerelement aus, und fügen Sie eine Karte mithilfe des rechten Bereichs basierend auf dem Feld ein, das mit der Karte angezeigt werden soll.  
     * Entsperren Sie die Karte, wie unter [Understand data cards (Grundlegendes zu Datenkarten)](working-with-cards.md#unlock-a-card) beschrieben.
