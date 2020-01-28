@@ -19,6 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/22/2020
 ms.locfileid: "76315421"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="select-function-in-power-apps"></a>Funktion „Select“ in Power Apps
 Simuliert eine Auswahlaktion für ein Steuerelement, sodass die Formel **OnSelect** ausgewertet wird.
@@ -61,13 +62,13 @@ Die Funktion „Select“ kann auch mit einem Katalog verwendet werden. Beispiel
 
 - *Katalog* 
 
-    ```Select(Gallery1, 1)```
+    ```Select(Gallery1; 1)```
 
     Simuliert einen Benutzer, der Zeile 1 oder Spalte 1 in Gallery1 auswählt. 
 
 - *Katalog* 
 
-    ```Select(Gallery1, 1, ChildControl1)```
+    ```Select(Gallery1; 1; ChildControl1)```
 
     Simuliert einen Benutzer, der ChildConttrol1 in Zeile 1 oder Spalte 1 von Gallery1 auswählt.
 
@@ -107,7 +108,7 @@ Die Funktion „Select“ kann auch mit einem Katalog verwendet werden. Beispiel
 
 5. Legen Sie die Eigenschaft **OnSelect** des Bildsteuerelements auf die folgende Formel fest:
 
-    **Notify( "Image Selected", Success )**
+    **Notify( "Image Selected"; Success )**
 
 6. Während Sie die ALT-TASTE gedrückt halten, klicken oder tippen Sie auf die verschiedenen Elemente des Katalogs.
 
@@ -119,7 +120,7 @@ Die Funktion „Select“ kann auch mit einem Katalog verwendet werden. Beispiel
 
 7. Fügen Sie auf dem gleichen Bildschirm ein **Schaltflächen**-Steuerelement hinzu, und legen Sie dessen Eigenschaft **OnSelect** auf diese Formel fest:
 
-    **Select( Gallery1,2,Image1 )**
+    **Select( Gallery1;2;Image1 )**
 
 8. Halten Sie die ALT-TASTE gedrückt, und wählen Sie die Schaltfläche aus.
    
