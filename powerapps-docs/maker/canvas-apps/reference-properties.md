@@ -7,20 +7,20 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm-msft
-ms.date: 11/26/2019
+ms.date: 01/24/2020
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6a4f85b5eb4d47bb4973de6902b0a69bb98df585
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 119c3c22d93c7b8985b9c9c5bf08129372c78409
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732781"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "76750769"
 ---
-# <a name="controls-and-properties-in-power-apps"></a>Steuerelemente und Eigenschaften in Power apps
+# <a name="controls-and-properties-in-power-apps"></a>Steuerelemente und Eigenschaften in Power Apps
 
 Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem Sie eine seiner Eigenschaften festlegen. Jeder Typ von Steuerelement verfügt über einen anderen Satz mit Eigenschaften. Einige Eigenschaften, z.B. **Height** und **Width**, sind für fast alle Typen von Steuerelementen gleich. Andere Eigenschaften, z.B. **CheckboxSize**, gelten nur für einen Typ von Steuerelement.
 
@@ -32,7 +32,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Audio](controls/control-audio-video.md)** : Dient zum Wiedergeben eines Audioclips oder des Audioteils eines Videoclips.
 
-**[Barcode Scanner](controls/control-new-barcode-scanner.md)** – scannt Barcodes, QR-Codes und datenmatrixcodes auf einem Android-oder IOS-Gerät.
+**[Barcode scanner](controls/control-new-barcode-scanner.md)** (Barcodescanner): Scannt Barcodes, QR-Codes und Datenmatrixcodes auf einem Android- oder iOS-Gerät
 
 **[Button](controls/control-button.md)** (Schaltfläche): Dient zum Interagieren mit der App, indem darauf geklickt oder getippt wird.
 
@@ -48,7 +48,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Kombinationsfeld](controls/control-combo-box.md)** : Ermöglicht es Benutzern, unter Optionen eine Auswahl zu treffen. Unterstützt die Suche und Mehrfachauswahl.
 
-**[Container (experimentell)](controls/control-container.md)** : Erstellen Sie eine eingefügte Hierarchie für Barrierefreiheit und Reaktionsfähigkeit. 
+**[Container (experimental)](controls/control-container.md)** (Container (experimentell)): Dient zum Erstellen einer geschachtelten Hierarchie für die Zugriffsberechtigung und Reaktionsbereitschaft 
 
 **[Data table](controls/control-data-table.md)** (Datentabelle): Dient zur Anzeige von Daten im Tabellenformat.
 
@@ -60,9 +60,9 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Edit form](controls/control-form-detail.md)** (Formular bearbeiten): Dient zum Bearbeiten und Erstellen von Datensätzen in einer Datenquelle mit einem Formular.
 
-**[Entity form](entity-form-control.md)** (Entitätsformular): Experimentelles Feature: Dient zum Hinzufügen von dynamischen Formularen, in denen Benutzer relationale Daten über den Common Data Service durchsuchen, anzeigen und bearbeiten können.
+**[Entity form](entity-form-control.md)** (Entitätsformular): Feature für Experimente Fügen Sie dynamische Formulare hinzu, in denen Benutzern relationale Daten aus dem Common Data Service anzeigen, sie durchlaufen und bearbeiten können.
 
-**[Exportieren](controls/control-export-import.md)** – Exportieren von Daten zur Verwendung an einer anderen Stelle in Power apps
+**[Export](controls/control-export-import.md)** : Dient zum Exportieren von Daten zur Verwendung an einer anderen Stelle von Power Apps.
 
 **[Gallery](controls/control-gallery.md)** (Katalog): Dient zum Anzeigen einer Liste mit Datensätzen, die mehrere Arten von Daten enthalten können.
 
@@ -72,7 +72,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Image](controls/control-image.md)** (Bild): Dient zum Anzeigen eines Bilds, z.B. aus einer lokalen Datei oder einer Datenquelle.
 
-**[Importieren](controls/control-export-import.md)** – importieren Sie Daten aus einer anderen Stelle in powerapps.
+**[Import](controls/control-export-import.md)** : Dient zum Importieren von Daten von anderen Orten in Power Apps.
 
 **[Line chart](controls/control-column-line-chart.md)** (Liniendiagramm): Dient zum Anzeigen von Werten als Datenpunkte relativ zu zwei Achsen.
 
@@ -92,13 +92,15 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Rating](controls/control-rating.md)** (Bewertung): Dient zum Angeben eines Werts zwischen 1 und einer angegebenen Zahl.
 
-**[Rich-Text-Editor](controls/control-richtexteditor.md)** – ermöglicht die Rich-Text-Formatierung durch App-Benutzer.
+**[Rich text editor](controls/control-richtexteditor.md)** (Rich-Text-Editor): Ermöglicht App-Benutzern die Formatierung von Rich-Text.
 
 **[Screen](controls/control-screen.md)** (Bildschirm): Dient zum Anzeigen und Aktualisieren von Daten zu einer bestimmten Aufgabe.
 
 **[Shape](controls/control-shapes-icons.md)** (Form): Dient zum Anzeigen von Pfeilen und geometrischen Formen, z.B. Rechtecken.
 
 **[Slider](controls/control-slider.md)** (Schieberegler): Dient zum Angeben eines Werts, indem ein Schieberegler verschoben wird.
+
+**[Stream Video](controls/control-stream-video.md)** (Video streamen): Dient zum Abspielen von Videos und zum Browsen durch Kanäle des Microsoft Stream-Diensts
 
 **[Label](controls/control-text-box.md)** (Bezeichnung): Dient zum Anzeigen von Daten wie Text, Zahlen, Datumsangaben oder Währungsangaben.
 
@@ -110,7 +112,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Video](controls/control-audio-video.md)** : Dient zum Wiedergeben eines Videoclips aus einer lokalen Datei, einer Datenquelle oder von YouTube.
 
-**[Web Barcode Scanner (experimentell)](controls/control-barcodescanner.md)** – der ältere Barcode Scanner, der veraltet ist, aber möglicherweise nützlich für das Scannen von Codes in einem Webbrowser ist.
+**[Web barcode scanner (experimental)](controls/control-barcodescanner.md)** (Web-Barcodescanner (experimentell)): Der ältere Barcodescanner, der zwar veraltet ist, jedoch noch für das Scannen von Codes im Webbrowser nützlich sein kann
 
 ## <a name="common-properties-by-category"></a>Allgemeine Eigenschaften nach Kategorie
 
@@ -144,7 +146,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 ### <a name="b"></a>B
 
-**[BackgroundImage](controls/properties-visual.md)** : der Name einer Bilddatei, die im Hintergrund eines Bildschirms angezeigt wird  Gilt für das **[Screen](controls/control-screen.md)** -Steuerelement.
+**[BackgroundImage](controls/properties-visual.md)** : Der Name einer Bilddatei, die als Hintergrund einer Bildschirmansicht angezeigt wird.  Gilt für das **[Screen](controls/control-screen.md)** -Steuerelement.
 
 **[BorderColor](controls/properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.  Gilt für viele Steuerelemente.
 
@@ -240,7 +242,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Font](controls/properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.  Gilt für viele Steuerelemente.
 
-**[FontWeight](controls/properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).  Gilt für viele Steuerelemente.
+**[FontWeight](controls/properties-text.md)** : die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Halbfett**, **Normal**, **Dünner**.  Gilt für viele Steuerelemente.
 
 ### <a name="g"></a>G
 
@@ -282,7 +284,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[ItemBorderThickness](controls/control-pie-chart.md)** : Die Linienstärke des Rahmens jedes Segments eines Kreisdiagramms.  Gilt für Steuerelemente des folgenden Typs: **[Kreisdiagramm](controls/control-pie-chart.md)** .
 
-**ItemColorSet**: gibt die Farbe der einzelnen Datenpunkte in einem Diagramm an.  Gilt für Steuerelemente des folgenden Typs: **[Spaltendiagramm](controls/control-column-line-chart.md)** , **[Liniendiagramm](controls/control-column-line-chart.md)** und **[Kreisdiagramm](controls/control-pie-chart.md)** .
+**ItemColorSet**: Die Farbe jedes Datenpunkts eines Diagramms.  Gilt für Steuerelemente des folgenden Typs: **[Spaltendiagramm](controls/control-column-line-chart.md)** , **[Liniendiagramm](controls/control-column-line-chart.md)** und **[Kreisdiagramm](controls/control-pie-chart.md)** .
 
 **[ItemPaddingLeft](controls/control-list-box.md)** : Der Abstand zwischen dem Text eines Listenfelds und seinem linken Rand.  Gilt für Steuerelemente des folgenden Typs: **[Listenfeld](controls/control-list-box.md)** .
 
@@ -296,7 +298,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[LastSubmit](controls/control-form-detail.md)** : Der letzte erfolgreich übermittelte Datensatz, einschließlich der vom Server generierten Felder.  Gilt für Steuerelemente des folgenden Typs: **[Formular bearbeiten](controls/control-form-detail.md)** .
 
-**Layout** – Gibt an, ob der Benutzer in einem Katalog scrollen oder einen Schieberegler von oben nach unten (**Vertical**) oder von links nach rechts (**Horizontal**) verschieben muss.  Gilt für Steuerelemente des folgenden Typs: **[Katalog](controls/control-gallery.md)** und **[Schieberegler](controls/control-slider.md)** .
+**Layout**: Gibt an, ob der Benutzer in einem Katalog einen Bildlauf durchführen oder einen Schieberegler von oben nach unten (**Vertical**) oder von links nach rechts (**Horizontal**) bewegen muss.  Gilt für Steuerelemente des folgenden Typs: **[Katalog](controls/control-gallery.md)** und **[Schieberegler](controls/control-slider.md)** .
 
 **[LineHeight](controls/properties-text.md)** : Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.  Gilt für Steuerelemente des folgenden Typs: **[Listenfeld](controls/control-list-box.md)** , **[Optionsfeld](controls/control-radio.md)** , **[Bezeichnung](controls/control-text-box.md)** und **[Texteingabe](controls/control-text-input.md)** .
 
@@ -342,7 +344,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[OnFailure](controls/control-form-detail.md)** : Das Verhalten einer App, wenn ein Datenvorgang nicht erfolgreich ist.  Gilt für Steuerelemente des folgenden Typs: **[Formular bearbeiten](controls/control-form-detail.md)** .
 
-**[OnHidden](controls/control-screen.md)** : Das Verhalten einer App, wenn der Benutzer zu einer anderen Bildschirmansicht wechselt.  Gilt für das **[Screen](controls/control-screen.md)** -Steuerelement.
+**[OnHidden](controls/control-screen.md)** : Das Verhalten einer App, wenn der Benutzer zu einer anderen Bildschirmansicht wechselt.  Gilt für Steuerelemente des folgenden Typs: **[Bildschirm](controls/control-screen.md)** .
 
 **[OnPause](controls/control-audio-video.md)** : Das Verhalten einer App, wenn der Benutzer den Clip anhält, der von einem Audio- oder Video-Steuerelement wiedergegeben wird.  Gilt für Steuerelemente des folgenden Typs: **[Audio](controls/control-audio-video.md)** und **[Video](controls/control-audio-video.md)** .
 
@@ -420,7 +422,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[RadiusTopRight](controls/properties-size-location.md)** – Der Grad der Rundung der rechten oberen Ecke eines Steuerelements.  Gilt für viele Steuerelemente.
 
-**RailFill**: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **FALSE** ist, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Schieberegler](controls/control-slider.md)** und **[Umschalten](controls/control-toggle.md)** .
+**RailFill**: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **false** ist, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Schieberegler](controls/control-slider.md)** und **[Umschalten](controls/control-toggle.md)** .
 
 **RailHoverFill**: Wenn Sie auf das Umschalten-Steuerelement oder den Schieberegler zeigen: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **false** ist, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Schieberegler](controls/control-slider.md)** und **[Umschalten](controls/control-toggle.md)** .
 
@@ -432,17 +434,17 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Required](controls/control-card.md)** : Gibt an, ob eine Karte beim Bearbeiten des Felds einer Datenquelle einen Wert enthalten muss.  Gilt für Steuerelemente des folgenden Typs: **[Karte](controls/control-card.md)** .
 
-**[Reset](controls/properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.  Gilt für viele Steuerelemente.  Siehe auch die **[Reset](functions/function-reset.md)** -Funktion.
+**[Reset](controls/properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.  Gilt für viele Steuerelemente.  Siehe auch die **[Reset](functions/function-reset.md)** -Funktion.
 
 ### <a name="s"></a>S
 
-**Selected** – Das ausgewählte Element.  Gilt für Steuerelemente des folgenden Typs: **[Dropdown](controls/control-drop-down.md)** und **[Katalog](controls/control-gallery.md)** .
+**Selected**: Das ausgewählte Element.  Gilt für Steuerelemente des folgenden Typs: **[Dropdown](controls/control-drop-down.md)** und **[Katalog](controls/control-gallery.md)** .
 
 **[SelectedDate](controls/control-date-picker.md)** : Das Datum, das in einem Datum-Steuerelement ausgewählt ist.  Gilt für Steuerelemente des folgenden Typs: **[Datumsauswahl](controls/control-date-picker.md)** .
 
 **[SelectionColor](controls/properties-color-border.md)** : Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Dropdown](controls/control-drop-down.md)** , **[Listenfeld](controls/control-list-box.md)** und **[Stifteingabe](controls/control-pen-input.md)** .
 
-**[SelectionFill](controls/properties-color-border.md)** : gibt die Hintergrundfarbe der ausgewählten Elemente in einer Liste oder eines ausgewählten Bereichs des Stift-Steuerelements an.  Gilt für Steuerelemente des folgenden Typs: **[Dropdown](controls/control-drop-down.md)** und **[Listenfeld](controls/control-list-box.md)** .
+**[SelectionFill](controls/properties-color-border.md)** : Die Hintergrundfarbe des ausgewählten Elements oder der Elemente in einer Liste oder eines ausgewählten Bereichs eines Stift-Steuerelements.  Gilt für Steuerelemente des folgenden Typs: **[Dropdown](controls/control-drop-down.md)** und **[Listenfeld](controls/control-list-box.md)** .
 
 **[SelectionThickness](controls/control-pen-input.md)** : Die Stärke des Auswahltools für ein Stifteingabe-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Stifteingabe](controls/control-pen-input.md)** .
 
@@ -490,7 +492,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Time](controls/control-audio-video.md)** : Die aktuelle Position eines Mediensteuerelements.  Gilt für Steuerelemente des folgenden Typs: **[Audio](controls/control-audio-video.md)** und **[Video](controls/control-audio-video.md)** .
 
-**[QuickInfo](controls/properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.  Gilt für viele Steuerelemente.
+**[Tooltip](controls/properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.  Gilt für viele Steuerelemente.
 
 **[Transition](controls/control-gallery.md)** : Der visuelle Effekt (**Pop**, **Push** oder **None**), wenn Benutzer im Katalog auf ein Element zeigen.  Gilt für Steuerelemente des folgenden Typs: **[Katalog](controls/control-gallery.md)** .
 
@@ -510,11 +512,11 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **Valid**: Gibt an, ob ein Steuerelement vom Typ **[Karte](controls/control-card.md)** oder **[Formular bearbeiten](controls/control-form-detail.md)** gültige Einträge enthält, die für die Übermittlung an die Datenquelle bereit sind.  Gilt für Steuerelemente des folgenden Typs: **[Karte](controls/control-card.md)** und **[Formular bearbeiten](controls/control-form-detail.md)** .
 
-**[Value](controls/properties-core.md)** : Gibt den Wert des Eingabesteuerelements an.  Gilt für Steuerelemente des folgenden Typs: **[Kontrollkästchen](controls/control-check-box.md)** , **[Optionsfeld](controls/control-radio.md)** , **[Schieberegler](controls/control-slider.md)** und **[Umschalten](controls/control-toggle.md)** .
+**[Value](controls/properties-core.md)** : Gibt den Wert eines Eingabesteuerelements an.  Gilt für Steuerelemente des folgenden Typs: **[Kontrollkästchen](controls/control-check-box.md)** , **[Optionsfeld](controls/control-radio.md)** , **[Schieberegler](controls/control-slider.md)** und **[Umschalten](controls/control-toggle.md)** .
 
 **ValueFill**: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **true** ist, oder die Farbe der Linie auf der linken Seite des Handles in einem Schieberegler-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Schieberegler](controls/control-slider.md)** und **[Umschalten](controls/control-toggle.md)** .
 
-**ValueHoverFill**: Wenn Sie mit dem Mauszeiger auf das Umschalten-Steuerelement oder den Schieberegler zeigen: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **TRUE** ist, oder die Farbe der Linie auf der linken Seite des Handles in einem Schieberegler-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Schieberegler](controls/control-slider.md)** und **[Umschalten](controls/control-toggle.md)** .
+**ValueHoverFill**: Wenn Sie mit dem Mauszeiger auf das Umschalten-Steuerelement oder den Schieberegler zeigen: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **true** ist, oder die Farbe der Linie auf der linken Seite des Handles in einem Schieberegler-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Schieberegler](controls/control-slider.md)** und **[Umschalten](controls/control-toggle.md)** .
 
 **[VerticalAlign](controls/properties-text.md)** – Die Position des Texts in einem Steuerelement in Relation zur vertikalen Mitte des Steuerelements.  Gilt für viele Steuerelemente.
 

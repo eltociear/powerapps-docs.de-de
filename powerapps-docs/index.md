@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 707f714ca658faa6255ee2e79c08184cb6f2a2fb
-ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
+ms.openlocfilehash: 8374df8f8e440fb7ae3e2c481d201f3d1cfeaf23
+ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74959562"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76708795"
 ---
 <div id="main"
    class="v2">
@@ -61,7 +61,7 @@ ms.locfileid: "74959562"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Neuerungen</h3>
+                                             <h3>Neuigkeiten</h3>
                                              <p>Machen Sie sich mit neuen Features vertraut, die in den letzten Wochen veröffentlicht wurden bzw. in den folgenden Monaten veröffentlicht werden.</p>
                                           </div>
                                        </div>
@@ -81,7 +81,7 @@ ms.locfileid: "74959562"
                                           </div>
                                           <div class="cardText">
                                              <h3>Power Apps kennen lernen</h3>
-                                             <p>Entdecken Sie Lernpfade in Microsoft Learn, die Schrittanleitungen zum Einstieg in Power Apps bereitstellen. Kostenlos!</p>
+                                             <p>Entdecken Sie Lernpfade in Microsoft Learn, die Schrittanleitungen zum Einstieg in Power Apps bereitstellen. Ist kostenlos!</p>
                                           </div>
                                        </div>
                                     </div>
@@ -215,7 +215,7 @@ ms.locfileid: "74959562"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. Sie können in Power Apps drei Arten von Apps erstellen: <strong>Canvas-Apps</strong>, <strong>modellgesteuerte Apps</strong> und <strong>Portale</strong>. <strong>Common Data Service</strong> ist eine Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen finden Sie unter: <a href="/powerapps/maker">Erstellen von Apps</a>.</p>
+                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. Sie können in Power Apps drei Arten von Apps erstellen: <strong>Canvas-Apps</strong>, <strong>modellgesteuerte Apps</strong> und <strong>Portale</strong>. <strong>Common Data Service</strong> ist eine Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen: <a href="/powerapps/maker">Erstellen von Apps</a>.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -287,7 +287,7 @@ ms.locfileid: "74959562"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Portals</h3>
+                                    <h3 style="font-size: 1.15rem">Portale</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Was sind Power Apps-Portale?</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Erstellen eines Portals</a></p>
@@ -354,6 +354,7 @@ ms.locfileid: "74959562"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Hilfe und Support</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Abonnieren der Freigabewelle 2 für 2019</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Einstellungen verwalten</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Whitepaper: Verwalten einer Entwicklungsplattform mit geringem Code</a></p>
                                  </div>
                               </div>
                            </div>
