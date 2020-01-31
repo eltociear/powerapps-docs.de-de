@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 03/01/2019
+ms.date: 01/29/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,31 +15,36 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 175216611d77ad249e3ddb7a9bd72c29fdfcad73
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 6b1e53d95145cc947681971264c0b160d0510e92
+ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61555979"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886463"
 ---
 # <a name="work-with-business-processes"></a>Arbeiten mit Geschäftsprozessen
 
-Benutzer können sich an Geschäftsprozessflows orientieren, um ihre Aufgaben effizient zu erledigen. Mit diesen Flows können Sie Daten konsistent eingeben und immer die gleichen Schritte durchführen, wenn Sie mit einem Datensatz arbeiten. 
+Geschäftsprozesse helfen allen bewährten Methoden, auch für Situationen, die nicht sehr häufig auftreten. Sofern verfügbar, stellen Geschäftsprozesse eine schrittweise Zeitachse für die Phasen eines Prozesses am Anfang des relevanten Datensatzes dar. Öffnen Sie das Menü für die aktive Phase, geben Sie jedes Feld der erforderlichen und geschäftskritischen Daten ein, und wählen Sie dann die nächste Phase aus, wenn Sie damit arbeiten möchten. Einige Geschäftsprozesse können in dem Zeitraum abgeschlossen werden, der zum Tätigen eines einzelnen Telefonanrufs benötigt wird, während andere einige Wochen dauern können.
 
-Wenn Sie z.B. an einem neuen Kundendatensatz arbeiten, können Sie im Geschäftsprozessflow jeden erforderlichen Schritt sehen, um einen neuen Datensatz zu erstellen und die erforderlichen Informationen entsprechend dem Geschäftsprozesses Ihrer Organisationen auszufüllen. 
 
-Die Prozessleiste kann rechts in der Anzeige angedockt werden, um sich während der Arbeit am Kundendatensatz daran orientieren zu können. 
+Wenn Sie an einem neuen Kundendaten Satz arbeiten, können Sie mit dem Geschäftsprozess Ablauf jeden Schritt, den Sie zum Erstellen des neuen Datensatzes ausführen müssen, und die erforderlichen Informationen entsprechend dem Geschäftsprozess Ihrer Organisation anzeigen. 
+
 
 > [!div class="mx-imgBorder"]
-> ![Geschäftsprozessleiste](media/BPdock.png "Geschäftsprozessleiste")
+> ![Geschäftsprozess Leiste](media/business-process.png "Geschäftsprozess Leiste")
+
+
+
+Die Prozess Leiste kann auch an der rechten Seite des Bildschirms angedockt werden, um bei der Arbeit mit einem Kundendaten Satz eine einfache Referenz zu erhalten. 
+
+> [!div class="mx-imgBorder"]
+> ![Geschäftsprozess Leiste](media/bpdock.gif "Geschäftsprozess Leiste")
  
-
-> [!div class="mx-imgBorder"]
-> ![Geschäftsprozessleiste](media/BPdocked.png "Geschäftsprozessleiste")
-
-Weitere Informationen zum Erstellen und Verwalten von Geschäftsprozessflows finden Sie in der [Übersicht über Geschäftsprozessflows](/flow/business-process-flows-overview).
   
  
 ## <a name="what-if-your-business-processes-looks-different-from-these-examples"></a>Was, wenn sich mein Geschäftsprozess von den hier genannten Beispielen unterscheidet?  
 
 Das System enthält Geschäftsprozesse für häufige Aufgaben. Diese Prozesse werden von den meisten Unternehmen an ihre Arbeitsweise angepasst. Sie können dem System auch Prozesse hinzufügen, die genau an Ihre Branche oder Ihre Geschäftsziele angepasst sind. Anders gesagt: Was Sie hier sehen, muss nicht unbedingt mit den Prozessleisten in Ihrem System übereinstimmen. Dennoch funktionieren die Prozessleisten für alle gleich. Sie gebe Daten in die Feldern ein und wechseln dann mit dem Kunden zum nächsten Schritt.
+
+
+Weitere Informationen zum Erstellen und Verwalten von Geschäftsprozess Abläufen finden Sie unter [Erstellen einer Geschäftsregel für eine Entität](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-create-business-rule).

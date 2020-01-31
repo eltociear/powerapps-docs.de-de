@@ -14,60 +14,90 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f0b095b3cb69eb7b6fd373b28eb2255291c7893a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 93c0f84dd5b37c8db67d66dbfa2d1af0ee532949
+ms.sourcegitcommit: 4d858e628c89d245317d6192801d136f3591ea52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543529"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76832851"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Einfache Navigation in einer modellgesteuerten App 
 
-Verwenden Sie die Navigationsleiste, um in Ihren Arbeitsbereich zu wechseln, einen neuen Datensatz zu erstellen oder andere Aufgaben in einer modellgesteuerten App durchzuführen.
+In dieser Einführung wird erläutert, wie Sie eine APP suchen und öffnen und wie Sie mit ihren allgemeinen Benutzeroberflächen Elementen, einschließlich Listen, Formularen und Geschäftsprozessen, arbeiten.
 
-> [!div class="mx-imgBorder"]
-> ![Modell gesteuerte App-Navigationsleiste](media/nav.png "Modell gesteuerte App-Navigationsleiste")
+## <a name="navigating-among-apps-areas-and-entities"></a>Navigieren zwischen apps, Bereichen und Entitäten
 
-1. Die Siteübersicht ist erweitert und wird standardmäßig angezeigt.
-2. Der Unterbereich, in dem Sie sich derzeit befinden, ist hervorgehoben, damit Sie wissen, wo genau Sie sich in der App befinden.
-3. Für den einfachen Zugriff befinden sich **aktuelle** und **angeheftete** Elemente ganz oben. 
-4. Verwenden Sie die Schalter für den Bereich, um zwischen Apps zu wechseln.
-5. Für Symbole sind eindeutige Farben auf der Befehlsleiste festgelegt, um die Unterschiede zwischen Befehlen zu verdeutlichen.
-  
-## <a name="get-back-to-recent-records-items-or-view"></a>Zurückwechseln zu kürzlich verwendeten Datensätzen, Elementen oder der Ansicht
-Sie arbeiten wahrscheinlich in den meisten Fällen mit denselben Datensätzen. Sie greifen z.B. möglicherweise regelmäßig auf denselben Kontakt oder dasselbe Konto zu. Vielleicht arbeiten Sie auch wiederholt mit denselben Datenlisten (Ansichten). Sie können über die Siteübersicht schnell zurück zu den zuletzt verwendeten Datensätzen oder Ansichten wechseln. Sie können Datensätze und Ansichten auch anheften, um sie leichter finden zu können. 
-  
-1. Wählen Sie auf der **Siteübersicht** die Option **Recent** (Zuletzt verwendet) aus.
-  
-2. Wählen Sie unter **Recent** (Zuletzt verwendet) den Datensatz, das Element oder die Ansicht aus, zu dem bzw. der Sie zurückkehren möchten. 
+Eine Modell gesteuerte APP wird aus Anwendungen (Apps), Bereichen und Entitäten erstellt.
 
-## <a name="pin-records-items-or-view"></a>Anheften von Datensätzen, Elementen oder Ansichten
+- *Apps* bietet eine Auflistung von Funktionen für die Durchführung einer bestimmten Aktivitäts Klasse, z. b. das Verwalten von Konten und Kontakten. Verwenden Sie das Menü App-Selektor, um zwischen den für Ihre Organisation verfügbaren apps zu navigieren.
 
-1. Wählen Sie in der **Siteübersicht** **Recent** (Zuletzt verwendet) aus, um die Liste der Elemente zu erweitern, auf die zuletzt zugegriffen wurde.
-2. Klicken Sie auf das Stecknadelsymbol neben dem Element in der Liste der zuletzt verwendeten Elemente. Das Element wird so zur Liste der angehefteten Elemente hinzugefügt.
+- Ein *Arbeitsbereich* ist eine Unterteilung einer APP, die für ein bestimmtes Feature reserviert ist. Jeder Arbeitsbereich bietet eine gezielte Auflistung von Entitäten für die Arbeit in diesem Bereich. In einigen Fällen wird dieselbe Entität in mehr als einem Bereich (oder sogar mehr als einer APP) angezeigt. Die Entitäten "Contacts" und "Accounts" werden z. b. in einer Vielzahl von apps und Arbeitsbereichen angezeigt. Verwenden Sie das Menü Arbeitsbereich, um zwischen Arbeitsbereichen für Ihre aktuelle APP zu navigieren.
 
-   > [!div class="mx-imgBorder"]
-   > ![Fixierte Datensätze](media/pinnedrecords.png "Fixierte Datensätze")
+- *Entitäten* stellen einen bestimmten Datentyp dar, z. b. Kontakte und Konten. Entitäten verwenden ein strukturiertes Datenformat, das die für die Entität verfügbare Auflistung von Feldern definiert. Jede Entität besteht aus einer Sammlung einzelner Datensätze. Für die Entität "Kontakte" beschreibt jeder Datensatz z. b. eine einzelne Person, und jeder Datensatz enthält eine Auflistung von Feldern, z. b. Vorname, Nachname und e-Mail-Adresse. Entitäten verfügen normalerweise über zwei Ansichten: eine Listenansicht, in der Regel eine Tabelle mit verfügbaren Datensätzen. und eine Formularansicht, in der alle verfügbaren Daten und Einstellungen für einen einzelnen Datensatz angezeigt werden. Verwenden Sie den Seiten Navigator, um zwischen Entitäten im aktuellen Arbeitsbereich zu wechseln.
 
-## <a name="unpin-records-items-or-view"></a>Loslösen von Datensätzen, Elementen oder Ansichten
+### <a name="move-between-apps"></a>Wechseln zwischen Apps
 
-1. Wählen Sie in der **Siteübersicht** die Option **Pinned** (Angeheftet) aus, um die Liste der angehefteten Elemente zu erweitern.
-2. Klicken Sie auf das Symbol zum Loslösen neben dem Element, um es von der Liste loszulösen.  
+Verwenden Sie das Menü App-Selektor, um zwischen apps zu wechseln.
 
-   > [!div class="mx-imgBorder"]
-   > ![Datensätze lösen](media/unpinnedrecords.png "Datensätze lösen")
+![Das App-Selektor-Menü](media/app-selector.png "Das App-Selektor-Menü")
+
+Die apps, die in Ihrem App-Selektor angezeigt werden, hängen davon ab, auf welche apps Sie zugreifen können. 
+
+### <a name="move-between-entities-records-and-work-areas"></a>Verschieben zwischen Entitäten, Datensätzen und Arbeitsbereichen
+
+Es ist ganz einfach, zu Ihren bevorzugten oder am häufigsten verwendeten Datensätzen zurückzukehren. Die folgende Abbildung zeigt die primären Navigationselemente.
+
+![Navigations Steuerelemente, erweiterte Ansicht](media/nav-expanded.png "Navigations Steuerelemente, erweiterte Ansicht")
+
+Legende
+
+1. **App-Auswahl**: Öffnen Sie dieses Menü, um zwischen apps zu wechseln.
+1. **Schaltfläche "reduzieren/erweitern**": Wählen Sie diese Option aus, um den Navigator zu reduzieren, um mehr Platz für den Hauptteil der Seite zuzulassen. Wenn der Navigator bereits reduziert ist, klicken Sie auf diese Schaltfläche, um Sie erneut zu erweitern.
+1. **Letzte Datensätze**: Erweitern Sie diesen Eintrag, um eine Liste der zuletzt verwendeten Datensätze anzuzeigen. Wählen Sie hier einen Datensatz aus, um ihn zu öffnen. Wählen Sie das Push-Pin-Symbol neben einem hier aufgelisteten Datensatz aus, um den Favoriten (angeheftete Datensätze) hinzuzufügen.
+1. **Favoriten Datensätze**: Erweitern Sie diesen Eintrag, um Ihre bevorzugten (fixierten) Datensätze anzuzeigen und zu öffnen. Verwenden Sie die Liste **Letzte Datensätze** , um hier Datensätze hinzuzufügen. Wählen Sie das Symbol Entfernen-Pin neben einem hier aufgelisteten Datensatz aus, um es aus der Liste zu entfernen.
+1. **Entitäts Navigator**: in diesem Bereich werden alle für den aktuellen Arbeitsbereich verfügbaren Entitäten und Dashboards aufgelistet. Wählen Sie einen beliebigen Eintrag aus, um das benannte Dashboard oder die Listenansicht für diese Entität zu öffnen.
+1. **Arbeitsbereichs Auswahl**: Öffnen Sie dieses Menü, um zu einem anderen Arbeitsbereich zu wechseln. Der aktuelle Arbeitsbereich wird hier benannt.
+
+## <a name="working-with-list-views"></a>Arbeiten mit Listenansichten
+
+Wenn Sie eine Entität zum ersten Mal öffnen, wird die Listenansicht angezeigt, in der eine Liste der Datensätze angezeigt wird, die zu dieser Entität gehören und als Tabelle formatiert sind. Wenn Sie z. b. die Entität **Accounts** öffnen, sehen Sie eine Liste der Konten.
+
+![Eine typische Listenansicht](media/list-view.png "Eine typische Listenansicht")
+
+Legende
+
+1. **Datensätze auswählen**: Wählen Sie einen oder mehrere Datensätze aus, indem Sie diese Spalte einchecken. Abhängig davon, wo Sie arbeiten, können Sie möglicherweise einen einzelnen Vorgang auf alle ausgewählten Datensätze gleichzeitig mithilfe der Schaltflächen in der Befehlsleiste anwenden.
+2. **Öffnen eines Datensatzes**: Wählen Sie einen beliebigen Datensatz in der Liste aus, um die Daten Satz Ansicht zu öffnen, in der alle Details zum Datensatz angezeigt werden. In der Regel sollten Sie in der Spalte **Name** die Option zum Öffnen eines Datensatzes aus der aktuellen Entität auswählen. Einige Entitäten stellen Links zu Datensätzen aus verknüpften Entitäten in anderen Spalten bereit (z. b. ein verwandter Kontakt).
+3. **Sortieren oder Filtern der Liste**: Wählen Sie diese Option aus, um die Liste nach Werten in dieser Spalte zu sortieren, oder Filtern Sie die Liste nach Werten in dieser Spalte. Ein Pfeil in der Spaltenüberschrift gibt an, welche Spalte sortiert und in welcher Richtung sortiert wird. 
+4. **Befehlsleiste**: Verwenden Sie die Befehle in der Befehlsleiste, um Datensätze in der Liste zu verarbeiten und verwandte Aktionen auszuführen. Einige Befehle (z. b. **Delete**) erfordern, dass Sie zuerst einen oder mehrere Ziel Datensätze auswählen, indem Sie ein Häkchen in der Spalte ganz links ablegen, während andere die gesamte Liste verwenden. Abhängig von der Art der Datensätze, mit denen Sie arbeiten, können Sie die Liste in eine Excel-Arbeitsmappe exportieren (möglicherweise basierend auf einer Vorlage), Diagramme und Dashboards öffnen und vieles mehr.
+5. **Durchsuchen der Ansicht**: Geben Sie Text in das Suchfeld oberhalb der Liste ein, um nur die Datensätze in der aktuellen Ansicht anzuzeigen, die Ihren Text enthalten.
+6. **Filtern und Paging**: Wählen Sie einen Buchstaben aus, um nur die Datensätze anzuzeigen, deren Namen mit diesem Buchstaben beginnen. Wenn die Liste mehr Datensätze enthält, als auf einer Seite angezeigt werden können, verwenden Sie die Auslagerungs Pfeile am unteren Rand der Liste, um die Seiten vorwärts und rückwärts zu bewegen.
+
+## <a name="working-with-record-views"></a>Arbeiten mit Daten Satz Ansichten
+
+In den Daten Satz Sichten werden alle Details zu einem einzelnen Datensatz angezeigt, und manchmal werden auch besondere Features für die Arbeit mit dem Datensatz angezeigt. Normalerweise wird eine Daten Satz Ansicht geöffnet, indem ein Datensatz ausgewählt wird, der in einer Listenansicht angezeigt wird. Sie können jedoch auch eine Daten Satz Ansicht öffnen, indem Sie einen Link aus einem verknüpften Datensatz befolgen.
+
+![Eine typische Daten Satz Ansicht](media/form-view.png "Eine typische Daten Satz Ansicht")
+
+Legende
+
+1. **Registerkarten**: die meisten Daten Satz Sichten werden in die Registerkarte aufgeteilt. Jede Registerkarte stellt eine Sammlung verwandter Felder aus dem Datensatz bereit. Wenn Registerkarten verfügbar sind, werden Sie unter dem Daten Satz Namen aufgelistet. Wählen Sie einen beliebigen Tabstopp Namen, um zu dieser Registerkarte zu wechseln Die Registerkarte aktuell wird unterstrichen angezeigt.
+2. **Related**: fast alle Arten von Datensätzen zeigen eine **Verwandte** Registerkarte an, nachdem Sie Sie mindestens einmal gespeichert haben. Diese Registerkarte ist eine Dropdown Liste, die Sie verwenden können, um andere Typen von Datensätzen zu suchen, die den angezeigten Datensatz verwenden oder darauf verweisen. Wenn Sie in der Dropdown Liste **Verwandte** Entitäten einen Entitäts Namen auswählen, wird eine neue Registerkarte mit dem Namen für diese Entität geöffnet, auf der eine Liste aller zugehörigen Datensätze dieses Typs angezeigt wird. Die **zugehörige** Registerkarte bleibt verfügbar, und Sie können Sie weiterhin verwenden, um andere Typen von Datensätzen zu finden, die auf die aktuelle Registerkarte verweisen.
+3. **Befehlsleiste**: Verwenden Sie die Befehle in der Befehlsleiste, um den aktuellen Datensatz auszuführen, oder führen Sie einen Task aus, der mit dem Datensatz verknüpft ist. Welche Befehle verfügbar sind, hängt vom Typ des Datensatzes ab. Sie können jedoch in der Regel die Befehlsleiste verwenden, um die Änderungen zu speichern, den Datensatz zu löschen, die Seite zu aktualisieren, einen Link zum Datensatz zu senden, den Daten Satz Besitzer neu zuzuweisen oder den Datensatz mithilfe einer Word-Vorlage zu exportieren.
+4. Über **Schriften Leiste**: einige Daten Satz Sichten zeigen einige besonders wichtige Felder in der Überschriften Leiste an, die dem Daten Satz Namen entgegen liegen. Dabei handelt es sich in der Regel um Felder, die für die Arbeit mit Datensätzen des aktuellen Typs (z. b. der Daten Satz Name oder Daten Satz Besitzer) von Grund
+5. **Alle Feldwerte anzeigen und bearbeiten**: im Hauptteil der Daten Satz Ansicht finden Sie alle Felder, die sich auf die aktuelle Registerkarte, die Formularansicht und den Daten Satz Typ beziehen. Felder, die mit einem roten Sternchen gekennzeichnet sind, sind erforderlich, und Sie können den Datensatz nicht speichern, ohne dass gültige Werte vorhanden sind. Felder, die mit einem blauen Pluszeichen gekennzeichnet sind, sind besonders wichtig oder werden empfohlen, sind jedoch nicht unbedingt erforderlich. Felder mit einem Sperrsymbol sind schreibgeschützt und können nicht bearbeitet werden.
 
 ## <a name="record-set-navigation"></a>Navigation durch die Datensatzgruppe 
 Navigieren Sie durch mehrere Datensätze mit vordefinierten Ansichten und Abfragen. Die auf Datensätze ausgerichtete Navigation steigert die Produktivität, indem es Benutzern ermöglicht wird, in der Liste von Datensatz zu Datensatz zu springen und ganz einfach zurück zu navigieren, ohne dabei den Verlust der Liste für die Arbeit zu riskieren.
 
 > [!div class="mx-imgBorder"]
-> ![Navigation in Daten Satz Gruppen](media/recordset.png "Navigation durch die Datensatzgruppe")
+> ![Navigation in Daten Satz Gruppen](media/recordset1.png "Navigation durch die Datensatzgruppe")
 
 ## <a name="reference-panel"></a>Referenzbereich
 Im Referenzbereich können Sie Aufgaben erledigen, ohne die Bildschirmansicht verlassen zu müssen, in der Sie sich gerade befinden. Sie können im Rahmen des Datensatzes, den Sie anzeigen, darauf bezogene Informationen nachschlagen, z.B. Fälle oder Möglichkeiten für ein Konto, ohne dafür in eine andere Ansicht navigieren zu müssen.
 
 > [!div class="mx-imgBorder"]
-> ![Verweis Bereich](media/reference-panel.png "Referenzbereich")
+> ![Verweis Bereich](media/reference-panel1.png "Referenzbereich")
 
  Sehen Sie sich dieses Video an, um mehr über den Referenzbereich zu erfahren:
 
@@ -81,46 +111,20 @@ Wenn Sie die Fehler Benachrichtigung auswählen, gelangen Sie zum Feld im Formul
 
 ![Beispiel für Benachrichtigungen](media/notifications.png "Beispiel für Benachrichtigungen")
 
+Legende
+
+1. **Info**: die Benachrichtigung dient nur zu Informationszwecken.
+2. **Warnung: die**Benachrichtigung ist eine Warnung. 
+3. **Fehler**: die Benachrichtigung ist ein Fehler. 
+
+
+### <a name="single-notification"></a>Einzelne Benachrichtigung
 Wenn nur eine Benachrichtigung vorhanden ist, wird nur eine Zeile angezeigt.
 
 ![Beispiel für einzelne Benachrichtigungen](media/single_notification.png "Beispiel für einzelne Benachrichtigungen")
 
+### <a name="multiple-notifications"></a>Mehrere Benachrichtigungen
 Wenn mehrere Benachrichtigungen vorhanden sind, wird die Anzahl der Benachrichtigungen angezeigt. Klicken Sie auf das Chevron, um die einzelnen Meldung anzuzeigen.
 
 ![Beispiel für mehrere Benachrichtigungen](media/multiple_notification.png "Beispiel für mehrere Benachrichtigungen")
-
-## <a name="grids"></a>Vorantreiben
-
-Raster in der vereinheitlichten Oberfläche wurden verbessert, um die Datenmenge zu erhöhen, die auf dem Bildschirm angezeigt werden kann. Raster haben auch verbesserte Filteroptionen, die das Speichern des letzten Filters und die Sortierreihenfolge einschließen. 
-
-Wenn Raster Bereich Daten abruft, wird ein Lade Indikator angezeigt, der Sie darüber informiert, dass das System am Abrufen von Daten arbeitet.
-
-Die Haupt Raster Seite speichert den Filter, den Sortiervorgang und den Seiten Zustand, wenn Sie hin und her navigieren. Dies umfasst Schnellsuche, Spalten Filterung, Seitenzahl und mehr. Die Navigation außerhalb der Seite wird mit dem ursprünglichen Zustand geöffnet.
-
-
-   > [!div class="mx-imgBorder"]
-   > ![Status von Raster speichern](media/grid-remember-state-on-back-navigate.gif "Status von Raster speichern")
-
-
-Die Sprung Leiste verwendet das erste sortierte Feld. Wenn keine Sortier Änderung vorgenommen wurde, verwendet die Sprung Leiste das primäre Feld. 
-
-   > [!div class="mx-imgBorder"]
-   > ![Status von Raster speichern](media/jumpbar-filter-on-sorted-column.gif "Status von Raster speichern")
-   
-
-Sie können das Feld **Aktivitätstyp** Filtern und mehrere Filtertypen auswählen. Außerdem können verwandte Entitäts Felder wie "Owner", "Status" und "Reason" gefiltert werden.
-
-   > [!div class="mx-imgBorder"]
-   > ![Raster Filterung](media/grid-activity-type-column-filter.gif "Raster Filterung")
-   
-Wenn Sie das Hierarchie Symbol auswählen, wird das Hierarchie Formular angezeigt.
-
-   > [!div class="mx-imgBorder"]
-   > ![Hierarchie Symbol](media/grid-row-hierarchy-icon.png "Hierarchie Symbol")
-   
-Sie können auch primäre Felder und Nachschlage Felder in einer neuen Registerkarte oder in einem neuen Fenster öffnen.
-
-   > [!div class="mx-imgBorder"]
-   > ![In neuem Fenster öffnen](media/newtab.png "[In neuem Fenster öffnen")
-
 

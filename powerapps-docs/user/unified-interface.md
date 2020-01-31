@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 1/29/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c5c620590400fc6fe276c8107c94d89b3daa42b9
-ms.sourcegitcommit: 6380b5ac248fc5d2f5d4a34af8831b4f7b6ef1aa
+ms.openlocfilehash: 66888b11d3dc3f62dcc174fbf0f2827c9d9f4867
+ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801082"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886490"
 ---
 # <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Erweiterte Benutzeroberfläche mit der einheitlichen Oberfläche für Modell gesteuerte apps 
 
@@ -34,18 +34,20 @@ Eine Übersicht über die vereinheitlichte Schnittstelle in Modell gesteuerten a
 > [!NOTE]
 > Der Legacy-WebClient ist veraltet, und die Kunden müssen vor dem 1. Oktober 2020 zu Unified Interface übergehen. Weitere Informationen finden Sie unter [Blog: ankündigen der Zeitachse zum Verschieben in eine einheitliche Schnittstelle](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Weitere Informationen zum Übergang finden Sie unter [Schnellstart für](https://docs.microsoft.com/powerapps/maker/model-driven-apps/transition-web-app)den Übergang.
 
-## <a name="navigation"></a>Navig
+## <a name="navigation"></a>Navigation
 
-Mit den Menü Optionen können Sie schnell durch die verschiedenen apps im System navigieren. Sie bieten schnellen Zugriff auf kürzlich angezeigte Datensätze und angeheftete Favoriten. 
+Mit den Menü Optionen können Sie schnell durch die verschiedenen apps im System navigieren. Sie bieten schnellen Zugriff auf kürzlich angezeigte Datensätze und angeheftete Favoriten.
 
-> [!div class="mx-imgBorder"]
-> ![Modell gesteuerte App-Navigationsleiste](media/nav.png "Modell gesteuerte App-Navigationsleiste")
+![Navigations Steuerelemente, erweiterte Ansicht](media/nav-expanded.png "Navigations Steuerelemente, erweiterte Ansicht")
 
-1. Site Map ist erweitert und wird standardmäßig beibehalten.
-2. Das untergeordnete Element, in dem Sie sich gerade befinden, wird hervorgehoben, um anzugeben, wo sich die APP befindet.
-3. Für den einfachen Zugriff befinden sich **aktuelle** und **angeheftete** Elemente ganz oben. 
-4. Verwenden Sie die Schalter für den Bereich, um zwischen Apps zu wechseln.
-5. Für Symbole sind eindeutige Farben auf der Befehlsleiste festgelegt, um die Unterschiede zwischen Befehlen zu verdeutlichen.
+Legende
+
+1. **App-Auswahl**: Öffnen Sie dieses Menü, um zwischen apps zu wechseln.
+1. **Schaltfläche "reduzieren/erweitern**": Wählen Sie diese Option aus, um den Navigator zu reduzieren, um mehr Platz für den Hauptteil der Seite zuzulassen. Wenn der Navigator bereits reduziert ist, klicken Sie auf diese Schaltfläche, um Sie erneut zu erweitern.
+1. **Letzte Datensätze**: Erweitern Sie diesen Eintrag, um eine Liste der zuletzt verwendeten Datensätze anzuzeigen. Wählen Sie hier einen Datensatz aus, um ihn zu öffnen. Wählen Sie das Push-Pin-Symbol neben einem hier aufgelisteten Datensatz aus, um den Favoriten (angeheftete Datensätze) hinzuzufügen.
+1. **Favoriten Datensätze**: Erweitern Sie diesen Eintrag, um Ihre bevorzugten (fixierten) Datensätze anzuzeigen und zu öffnen. Verwenden Sie die Liste **Letzte Datensätze** , um hier Datensätze hinzuzufügen. Wählen Sie das Symbol Entfernen-Pin neben einem hier aufgelisteten Datensatz aus, um es aus der Liste zu entfernen.
+1. **Entitäts Navigator**: in diesem Bereich werden alle für den aktuellen Arbeitsbereich verfügbaren Entitäten und Dashboards aufgelistet. Wählen Sie einen beliebigen Eintrag aus, um das benannte Dashboard oder die Listenansicht für diese Entität zu öffnen.
+1. **Arbeitsbereichs Auswahl**: Öffnen Sie dieses Menü, um zu einem anderen Arbeitsbereich zu wechseln. Der aktuelle Arbeitsbereich wird hier benannt.
 
 Weitere Informationen finden Sie unter [grundlegende Navigation in einer Modell gesteuerten App](navigation.md).
 

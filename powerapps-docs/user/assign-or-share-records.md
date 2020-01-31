@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 7/22/2019
+ms.date: 1/20/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9091121e874726681e062ef3bb09fc4f561a8a18
-ms.sourcegitcommit: 8f27a61ce2ec32b8d911845dd00708e3c87b86bb
+ms.openlocfilehash: 81a6513f98351f656fdac3fd0ccc24a10061ca85
+ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428885"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886503"
 ---
 # <a name="assign-or-share-records"></a>Zuweisen oder Freigeben von Datensätzen
 
@@ -43,7 +43,7 @@ Verwenden Sie die Option **Freigeben** , wenn Sie den Besitz des Datensatzes beh
 4. Wählen Sie im Dialogfeld zuweisen im Bereich **zuweisen zu** die Option **mir** oder **Benutzer oder Team**aus.
 
    > [!div class="mx-imgBorder"]
-   > ![Neuzuweisen eines Datensatzes zu mir oder Team](media/assign2.png "Neuzuweisen eines ich-Teams") für die Aufzeichnung
+   > ![Neuzuweisen eines Datensatzes zu mir oder Team](media/assign2.png "Neuzuweisen eines ich-Teams für die Aufzeichnung")
   
    Wenn Sie **Benutzer oder Team**auswählen, geben Sie im Feld **nach Datensätzen suchen** den Namen des Benutzers oder Teams ein. Wenn Sie einen neuen Datensatz erstellen müssen, wählen Sie **+ neu**aus.
   
@@ -51,7 +51,7 @@ Verwenden Sie die Option **Freigeben** , wenn Sie den Besitz des Datensatzes beh
 
 ## <a name="use-advanced-find-to-reassign-records"></a>Verwenden der erweiterten Suche zum erneuten Zuweisen von Datensätzen
 
-Verwenden Sie die erweiterte Suche, um nach Datensätzen zu suchen und diese dann einem anderen Benutzer zuzuweisen. Weitere Informationen zur erweiterten Suche finden Sie unter [erstellen, bearbeiten oder Speichern einer erweiterten suchsuche](create-edit-or-save-advanced-find-search.md).
+Verwenden Sie die erweiterte Suche, um nach Datensätzen zu suchen und diese dann einem anderen Benutzer zuzuweisen. Weitere Informationen zur erweiterten Suche finden Sie unter [erstellen, bearbeiten oder Speichern einer erweiterten suchsuche](advanced-find.md).
 
 
 1. Wählen Sie auf der Befehlsleiste die Option **Erweiterte Suche**aus.
@@ -62,7 +62,7 @@ Verwenden Sie die erweiterte Suche, um nach Datensätzen zu suchen und diese dan
 2. Wählen Sie aus der Liste der Datensätze die Datensätze aus, die Sie neu zuweisen möchten, und wählen Sie dann die Option zuweisen aus.
 
    > [!div class="mx-imgBorder"]
-   > ![Neuzuweisen eines Datensatzes mithilfe der erweiterten Suche](media/assign4.png "Neuzuweisen eines Datensatzes mithilfe von \"advacned Find") "
+   > ![Neuzuweisen eines Datensatzes mithilfe der erweiterten Suche](media/assign4.png "Neuzuweisen eines Datensatzes mithilfe von "advacned Find"")
    
  
  ## <a name="reassign-all-records-for-admins"></a>Alle Datensätze neu zuweisen (für Administratoren)
@@ -79,7 +79,7 @@ Verwenden Sie die erweiterte Suche, um nach Datensätzen zu suchen und diese dan
  4. Wählen Sie im Dialogfeld **Datensätze neu zuweisen** aus, wie Sie alle Datensätze neu zuweisen möchten, und klicken Sie dann auf **OK**.
  
   > [!NOTE]
-   > Mit der Option **Datensätze neu zuweisen** werden alle Datensätze unabhängig von Ihrem Status neu zugewiesen. Inaktive und aktive Datensätze werden dem anderen Benutzer oder Team zugewiesen.
+   > Mit der Option **Datensätze neu zuweisen** werden alle Datensätze unabhängig von Ihrem Status neu zugewiesen. Inaktive und aktive Datensätze werden dem anderen Benutzer oder Team zugewiesen. Dadurch werden auch alle aktivierten Prozesse, einschließlich Geschäftsregeln und Workflows, deaktiviert, wenn der Datensatz einem anderen Benutzer oder Team zugewiesen wird. Der neue Besitzer muss die Prozesse, die verwendet werden müssen, aktiv sein.
  
    > [!div class="mx-imgBorder"]
    > ![Alle Datensätze einem Benutzer oder Team neu zuweisen](media/assign6.png "Alle Datensätze einem Benutzer oder Team neu zuweisen")
