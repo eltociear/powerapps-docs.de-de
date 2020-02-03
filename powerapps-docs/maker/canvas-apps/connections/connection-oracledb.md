@@ -1,27 +1,27 @@
 ---
 title: Herstellen einer Verbindung mit einer Oracle-Datenbank | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie eine Verbindung mit Oracle Database herstellen und zum Entwickeln von apps in powerapps verwenden.
+description: Erfahren Sie, wie Sie eine Verbindung mit einer Oracle-Datenbank herstellen und damit Apps in Power Apps erstellen.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/14/2017
+ms.date: 01/29/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b742193e2d127993779e2bba94f35c0c24ecfd7b
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: b60ab00d4f4fecca7ead1cac629e0e34f26f302b
+ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74728412"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886279"
 ---
-# <a name="connect-to-an-oracle-database-from-power-apps"></a>Herstellen einer Verbindung mit einer Oracle-Datenbank aus Power apps
-Auflisten von Tabellen und erstellen, lesen, aktualisieren und Löschen von Tabellenzeilen in einer Oracle-Datenbank nach dem Erstellen einer Verbindung und Erstellen einer APP in powerapps. Die Verbindung mit der Oracle-Datenbank unterstützt die vollständige Delegierung von Filtern, Sortieren und weiteren Funktionen, jedoch keine Trigger und gespeicherten Prozeduren.
+# <a name="connect-to-an-oracle-database-from-power-apps"></a>Herstellen einer Verbindung mit einer Oracle-Datenbank aus Power Apps
+Nachdem Sie eine Verbindung mit einer Oracle-Datenbank hergestellt und eine App in Power Apps erstellt haben, können Sie Tabellen in der Oracle-Datenbank auflisten und Tabellenzeilen erstellen, lesen und aktualisieren. Die Verbindung mit der Oracle-Datenbank unterstützt die vollständige Delegierung von Filtern, Sortieren und weiteren Funktionen, jedoch keine Trigger und gespeicherten Prozeduren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 * Oracle 9 und höher
@@ -32,13 +32,13 @@ Auflisten von Tabellen und erstellen, lesen, aktualisieren und Löschen von Tabe
 ### <a name="install-an-on-premises-data-gateway"></a>Installation eines lokalen Datengateways
 Führen Sie zum Installieren eines Gateways die Schritte in [diesem Tutorial](../gateway-management.md) aus.
 
-Ein lokales Daten Gateway fungiert als Brücke und bietet eine schnelle und sichere Datenübertragung zwischen lokalen Daten (Daten, die nicht in der Cloud gespeichert sind) und den Diensten Power BI, Energie automatisiert, Logic apps und Power apps. Sie können dasselbe Gateway für mehrere Dienste und mehrere Datenquellen verwenden. Weitere Informationen finden Sie unter [Grundlegendes zu Gateways](../gateway-reference.md).
+Ein lokales Datengateway fungiert als Brücke, die die schnelle und sichere Übertragung von Daten zwischen lokalen Quellen (Daten, die nicht in der Cloud gespeichert sind) und den Diensten Power BI, Power Automate, Logic Apps und Power Apps ermöglicht. Sie können dasselbe Gateway für mehrere Dienste und mehrere Datenquellen verwenden. Weitere Informationen finden Sie unter [Grundlegendes zu Gateways](../gateway-reference.md).
 
 ### <a name="install-oracle-client"></a>Installieren des Oracle-Clients
 Installieren Sie auf dem Computer, auf dem sich das lokale Datengateway befindet, Oracle Data Access Components (ODAC) [64-Bit-ODAC 12c-Version 4 (12.1.0.2.4) für Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html). Andernfalls wird ein Fehler angezeigt, wenn Sie versuchen, die Verbindung zu erstellen oder zu verwenden, wie in der Liste bekannter Probleme beschrieben.
 
 ## <a name="create-an-app-from-a-table-in-an-oracle-database"></a>Erstellen einer App aus einer Tabelle in einer Oracle-Datenbank
-1. Klicken oder tippen Sie in powerapps Studio im Menü **Datei** auf **neu** (am linken Rand).
+1. Klicken oder tippen Sie in Power Apps Studio im Menü **Datei** auf **Neu** (nahe dem linken Rand).
    
    ![Neue Option](./media/connection-oracledb/new-app.png)
 2. Klicken oder tippen Sie auf den Pfeil unter **Mit eigenen Daten beginnen**.
@@ -74,7 +74,7 @@ Installieren Sie auf dem Computer, auf dem sich das lokale Datengateway befindet
     
     ![Neu](./media/connection-oracledb/connect-button.png)
 
-Powerapps erstellt eine APP mit drei Bildschirmen und zeigt die Daten aus der Tabelle an, die Sie ausgewählt haben:
+Es wird eine App von Power Apps erstellt, die drei Bildschirme enthält und in der Daten aus der von Ihnen ausgewählten Tabelle angezeigt werden:
 
 * **BrowseScreen1** – Dort werden alle Einträge in der Tabelle aufgelistet.
 * **DetailScreen1** – Bietet weitere Informationen über einen einzelnen Eintrag.
@@ -99,5 +99,5 @@ Powerapps erstellt eine APP mit drei Bildschirmen und zeigt die Daten aus der Ta
 3. Für die Tabelle „[Tabellenname]“ sind keine Schlüsselspalten definiert.
    
     Dieser Fehler wird angezeigt, wenn Sie eine Verbindung mit einer Tabelle herstellen, die keinen Primärschlüssel enthält. Dieser ist für die Verbindung mit der Oracle-Datenbank erforderlich.
-4. Zum Zeitpunkt der Erstellung dieses Dokuments werden gespeicherte Prozeduren, Tabellen mit zusammengesetzten Schlüsseln und geschachtelte Objekttypen in Tabellen nicht unterstützt.
+4. Zum Zeitpunkt der Erstellung dieses Dokuments werden gespeicherte Prozeduren, Tabellen mit zusammengesetzten Schlüsseln und geschachtelte Objekttypen in Tabellen nicht direkt in Power Apps unterstützt. Gespeicherte Prozeduren, die Power Automate verwenden, werden jedoch unterstützt.
 

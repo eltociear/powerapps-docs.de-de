@@ -31,7 +31,7 @@
           href: ../user/unified-interface.md
         - name: Navigation und Grundlagen
           items:
-            - name: Übersicht
+            - name: Grundlagen zur Navigation
               href: ../user/navigation.md
             - name: Anzeigen des Profils
               href: ../user/view-your-user-profile.md
@@ -72,12 +72,14 @@
               href: ../user/collaborate-using-sharepoint.md
         - name: Durchsuchen von Datensätzen
           items:
-            - name: Vergleichen der Suche mit den Suchoptionen
-              href: ../user/search-and-find.md
-            - name: Suchen nach Datensätzen
-              href: ../user/search-records.md
-            - name: Verwenden der erweiterten Suche
-              href: ../user/create-edit-or-save-advanced-find-search.md
+            - name: Vergleichen von Suchoptionen
+              href: ../user/search.md
+            - name: Relevanzsuche
+              href: ../user/relevance-search.md
+            - name: Schnellsuche
+              href: ../user/quick-find.md
+            - name: Erweiterte Suche
+              href: ../user/advanced-find.md
         - name: Importieren und Exportieren von Daten
           items:
             - name: Importieren von Daten
