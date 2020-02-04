@@ -19,6 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2020
 ms.locfileid: "76541288"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="assert-function-in-power-apps-test-studio"></a>Funktion „Assert“ in Power Apps Test Studio
 
@@ -36,9 +37,9 @@ Assertionsmeldungen für sowohl erfolgreiche als auch fehlgeschlagene Assertione
 
 ## <a name="examples"></a>Beispiele
 
-```Assert(lblResult.Text = "Success", "lblResult value Expected : Success , Actual : " & lblResult.Text)```<br>
-```Assert(ListBox1.Selected.Value = "Success", "ListBox1 selection Expected : Success,  Actual : " & ListBox1.Selected.Value)```<br>
-```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
+```Assert(lblResult.Text = "Success"; "lblResult value Expected : Success , Actual : " & lblResult.Text)```<br>
+```Assert(ListBox1.Selected.Value = "Success"; "ListBox1 selection Expected : Success,  Actual : " & ListBox1.Selected.Value)```<br>
+```Assert(kudosAfterTest = kudosBeforeTest + 1; "Kudos count. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
 ### <a name="see-also"></a>Siehe auch
 
