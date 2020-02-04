@@ -1,50 +1,57 @@
 ---
 title: Erstellen einer Canvas-App aus einer Vorlage | Microsoft-Dokumentation
-description: Hier finden Sie Schritt-für-Schritt-Anleitungen zum automatischen Erstellen einer Canvas-App basierend auf einer Power apps-Vorlage.
+description: Hier finden Sie eine ausführliche Anleitung zum automatischen Erstellen einer Canvas-App auf Grundlage einer Power Apps-Vorlage.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/19/2018
+ms.date: 01/29/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 682657a62db520c431bd0f594a87ae50c5e3ac0c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d64b1ef3f6d885093fc9f89ecf31b785c07ea6bd
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732174"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76918755"
 ---
-# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Erstellen einer Canvas-App aus einer Vorlage in powerapps
+# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Erstellen einer Canvas-App aus einer Vorlage in Power Apps
 
 Erstellen Sie eine Canvas-App automatisch aus einer Vorlage für ein bestimmtes Szenario, z.B. das Nachverfolgen von Budgets oder das Planen von Urlauben, und führen Sie die App dann aus, um deren Standardverhalten nachvollziehen zu können.
 
 Sie benötigen ein Cloudspeicherkonto (z.B. Dropbox, OneDrive oder Google Drive), um die Beispieldaten von Vorlagen zu speichern und eine App aus einer Vorlage zu erstellen.
 
-Wenn Sie nicht über eine Lizenz für Power apps verfügen, können Sie [sich kostenlos registrieren](../signup-for-powerapps.md).
+Wenn Sie keine Lizenz für Power Apps haben, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Erstellen einer App
 
-1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an.
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com) an.
 
-1. Zeigen Sie unter **Eigene App erstellen** auf **Mit Daten beginnen**, und klicken oder tippen Sie dann auf **Diese App erstellen**.
+1. Klicken Sie im linken Navigationsbereich auf **Apps**. Klicken Sie auf das Dropdownmenü **Neue App**, und wählen Sie **Canvas** aus.
 
-    ![Kachel „Diese App erstellen“](./media/get-started-test-drive/make-this-app.png)
+    ![Neue Canvas-App](./media/get-started-test-drive/new-canvas-app.png)
 
-1. Klicken oder tippen Sie auf der Kachel **App-Vorlagen** auf **Smartphonelayout** oder **Tabletlayout**.
+    Dadurch wird [Power Apps Studio](https://docs.microsoft.com/powerapps/powerapps-overview#power-apps-for-app-makerscreators) in einer neuen Registerkarte geöffnet.
+
+1. Klicken Sie bei der Kachel **App-Vorlagen** auf **Smartphonelayout** oder auf **Tabletlayout**.
 
     ![Kachel „App aus Vorlage“](./media/get-started-test-drive/template-tile.png)
 
-4. In der Liste der Vorlagen, klicken oder tippen Sie auf eine Vorlage, und klicken oder tippen Sie anschließend auf **Use** (Verwenden) in der Nähe der rechten unteren Ecke.
+1. Wählen Sie eine Vorlage aus der Liste aus, und klicken Sie anschließend rechts unten auf **Verwenden**.
 
-    ![Öffnen einer powerapps-Vorlage](./media/get-started-test-drive/open-template.png)
+    ![Power Apps-Vorlage öffnen](./media/get-started-test-drive/open-template.png)
 
-    Die Beispieldaten werden in Ihr Cloudspeicherkonto kopiert, die App wird erstellt und die Startseite wird angezeigt.
+    Power Apps Studio wird in einer neuen Registerkarte geöffnet, und die App wird erstellt.
+
+    > [!NOTE]
+    > Wenn die Schaltfläche **Verwenden** deaktiviert ist, müssen Sie eine Datenquelle für die App auswählen. Klicken Sie dazu unten auf **Auswählen**.
+    >
+    > ![Datenquelle auswählen](./media/get-started-test-drive/choose-data-source.png)
 
 ## <a name="run-the-app"></a>Ausführen der App
 Eine App aus einer Vorlage wird im Standardarbeitsbereich geöffnet, wo Sie den größten Teil Ihrer Zeit mit Anpassen verbringen. Testen Sie, wie die App im **Vorschaumodus** funktioniert, bevor Sie Änderungen an der App vornehmen.
