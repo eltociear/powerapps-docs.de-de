@@ -15,7 +15,7 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 254034d608e5824f2e6358bfa84bb7f7fe9f178c
 ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/22/2020
 ms.locfileid: "76315310"
@@ -52,7 +52,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
     Das Stiftsteuerelement unterstützt das Zeichnen mit der Maus oder durch Toucheingabe in der Windows-App nur teilweise. Die Striche werden möglicherweise unterbrochen. Verwenden Sie einen Stift, oder führen Sie die App in einem Browser aus, um flüssig zeichnen zu können.
 
-1. **Mehrere Mediensteuerelemente in Power Apps Mobile ** (2. August 2018)
+1. **Mehrere Mediensteuerelemente in Power Apps Mobile** (2. August 2018)
 
     Power Apps Mobile kann auf verschiedenen Arten von Geräten ausgeführt werden. Einige dieser Geräte weisen plattformspezifische Einschränkungen auf:
 
@@ -155,7 +155,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. **Wenn Power Apps aus Daten eine App generiert, wird das Feld zum Sortieren und Durchsuchen nicht automatisch konfiguriert**.
 
-   Um dieses Feld zu konfigurieren, bearbeiten Sie die **[Elemente](controls/properties-core.md)**-Formel für den Katalog, wie in den Abschnitten zum Filtern und Sortieren unter [Add a gallery (Hinzufügen eines Katalogs)](add-gallery.md) beschrieben.
+   Um dieses Feld zu konfigurieren, bearbeiten Sie die **[Elemente](controls/properties-core.md)** -Formel für den Katalog, wie in den Abschnitten zum Filtern und Sortieren unter [Add a gallery (Hinzufügen eines Katalogs)](add-gallery.md) beschrieben.
 
 1. **Bei Apps, die aus Daten erstellt werden, kann nur auf die ersten 500 Datensätze einer Datenquelle zugegriffen werden**.
 
@@ -179,7 +179,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. **Im [Formularsteuerelement](controls/control-form-detail.md), können Sie Daten nicht mithilfe einer benutzerdefinierten Karte ändern**.
 
-     Der bestehenden benutzerdefinierten Karte fehlt die **[Update](controls/control-card.md)**-Eigenschaft, die für das Zurückschreiben von Änderungen benötigt wird. Dieses Problem können Sie folgendermaßen umgehen:
+     Der bestehenden benutzerdefinierten Karte fehlt die **[Update](controls/control-card.md)** -Eigenschaft, die für das Zurückschreiben von Änderungen benötigt wird. Dieses Problem können Sie folgendermaßen umgehen:
 
     * Wählen Sie das Formularsteuerelement aus, und fügen Sie eine Karte mithilfe des rechten Bereichs basierend auf dem Feld ein, das mit der Karte angezeigt werden soll.  
     * Entsperren Sie die Karte, wie unter [Understand data cards (Grundlegendes zu Datenkarten)](working-with-cards.md#unlock-a-card) beschrieben.

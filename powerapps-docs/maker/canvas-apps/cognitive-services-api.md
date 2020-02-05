@@ -15,11 +15,10 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 4f8f4694b1ffdf6f415ae5f8a9275976b7dd20d7
 ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/22/2020
 ms.locfileid: "76315375"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="use-cognitive-services-in-power-apps"></a>Verwenden von Cognitive Services in Power Apps
 In diesem Artikel wird erläutert, wie Sie eine einfache Canvas-App erstellen, die die [Textanalyse-API von Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) verwendet, um Text zu analysieren. Es wird veranschaulicht, wie die Textanalyse-API eingerichtet und mit dem [Textanalyse-Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/) verbunden wird. Anschließend wird beschrieben, wie eine Canvas-App erstellt wird, die die API aufruft.
@@ -93,7 +92,7 @@ Befolgen Sie die Schritte unten, um diesen Bildschirm zu erstellen. Ist ein Steu
 
 1. Klicken oder tippen Sie auf der Registerkarte **Start** auf **Neuer Bildschirm** und anschließend auf **Scrollbarer Bildschirm**. 
 
-2. Wählen Sie auf **Screen2****[Title]** aus, und ändern Sie ihn in **Text Analysis**.
+2. Wählen Sie auf **Screen2** **[Title]** aus, und ändern Sie ihn in **Text Analysis**.
 
 3. Fügen Sie ein **Bezeichnungs**-Steuerelement für den Einführungstext hinzu.
 
@@ -113,7 +112,7 @@ Befolgen Sie die Schritte unten, um diesen Bildschirm zu erstellen. Ist ein Steu
    
     ![App mit Bezeichnungen und Katalog](./media/cognitive-services-api/partial-app-step3.png)
 
-9. Wählen Sie im linken Bereich **Screen1** > Auslassungspunkte (**. . .**) > **Löschen** aus (dieser Bildschirm wird für die App nicht benötigt).
+9. Wählen Sie im linken Bereich **Screen1** > Auslassungspunkte ( **. . .** ) > **Löschen** aus (dieser Bildschirm wird für die App nicht benötigt).
 
 Diese App ist bewusst einfach gehalten, um sich auf das Aufrufen der Textanalyse-API zu konzentrieren. Natürlich könnten Sie einige Elemente hinzufügen, wie z.B. Logik zum Ein- und Ausblenden von Steuerelementen je nach den aktivierten Kontrollkästchen, Fehlerbehandlung, wenn der Benutzer keine Optionen auswählt usw.
 
@@ -128,33 +127,33 @@ Nun verfügen Sie über eine App, die ganz ordentlich aussieht, damit können ab
 
 Vor diesem Hintergrund fügen wir nun die Formel für die **OnSelect**-Eigenschaft der Schaltfläche hinzu. Hier liegt nun die ganze Zauberei.
 
-```powerapps-comma
-If( chkLanguage.Value = true;
-    ClearCollect( languageCollect; 
+```powerapps-dot
+If( chkLanguage.Value = true,
+    ClearCollect( languageCollect, 
         TextAnalytics.DetectLanguageV2(
             {
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);;
+);
 
-If( chkPhrases.Value = true;
-    ClearCollect( phrasesCollect; 
+If( chkPhrases.Value = true,
+    ClearCollect( phrasesCollect, 
         TextAnalytics.KeyPhrasesV2(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);;
+);
 
-If( chkSentiment.Value = true;
-    ClearCollect( sentimentCollect; 
+If( chkSentiment.Value = true,
+    ClearCollect( sentimentCollect, 
         TextAnalytics.DetectSentimentV2(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -187,15 +186,15 @@ Zum Anzeigen der Ergebnisse der API-Aufrufe verweisen Sie auf die entsprechende 
 
 1. Legen Sie die **Text**-Eigenschaft der Sprachbezeichnung auf folgenden Wert fest: `"The language detected is " & First(languageCollect).name`.
    
-    Die **First()**-Funktion gibt den ersten (und in diesem Fall einzigen) Eintrag in **languageCollect** zurück, und die App zeigt **name** (das einzige Feld) für den Eintrag an.
+    Die **First()** -Funktion gibt den ersten (und in diesem Fall einzigen) Eintrag in **languageCollect** zurück, und die App zeigt **name** (das einzige Feld) für den Eintrag an.
 
-2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)*100 & "% positive."`.
+2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)*100 & "% positive."`.
    
-    Diese Formel verwendet ebenfalls die **First()**-Funktion, ruft den **Value** (0-1) aus dem ersten und einzigen Eintrag ab und formatiert ihn anschließend als Prozentsatz.
+    Diese Formel verwendet ebenfalls die **First()** -Funktion, ruft den **Value** (0-1) aus dem ersten und einzigen Eintrag ab und formatiert ihn anschließend als Prozentsatz.
 
 3. Legen Sie die **Items**-Eigenschaft des Katalogs mit Schlüsselbegriffen auf folgenden Wert fest: `phrasesCollect`.
    
-    Sie arbeiten nun mit einem Katalog, daher benötigen Sie nicht die **First()**-Funktion zum Abrufen eines Einzelwerts. Sie verweisen auf die Sammlung, und im Katalog werden die Schlüsselbegriffe als Liste angezeigt.
+    Sie arbeiten nun mit einem Katalog, daher benötigen Sie nicht die **First()** -Funktion zum Abrufen eines Einzelwerts. Sie verweisen auf die Sammlung, und im Katalog werden die Schlüsselbegriffe als Liste angezeigt.
 
 ## <a name="run-the-app"></a>Ausführen der App
 
