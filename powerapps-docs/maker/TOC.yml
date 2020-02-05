@@ -1562,8 +1562,10 @@
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: Übersetzen von benutzerdefiniertem Entitäts- und Feldtext
       href: ./common-data-service/export-customized-entity-field-text-translation.md
-    - name: Importieren von übersetztem Entitäts- und Feldtext in eine App
+    - name: Importieren von übersetztem Entitäts- und Feldtext
       href: ./common-data-service/import-translated-entity-field-text.md
+    - name: In Data Lake exportieren
+      href: ./common-data-service/export-to-data-lake.md
     - name: Sicherheit im Common Data Service
       href: /power-platform/admin/wp-security
     - name: Übersicht über API-Grenzwerte
