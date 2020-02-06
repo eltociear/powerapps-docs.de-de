@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 8374df8f8e440fb7ae3e2c481d201f3d1cfeaf23
-ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
+ms.openlocfilehash: ed27dfe0846924d14de7d7837977d73c9f02e1c4
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76708795"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76974870"
 ---
 <div id="main"
    class="v2">
@@ -609,6 +609,7 @@ ms.locfileid: "76708795"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV-App-Verwaltung und -Überwachung</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Veröffentlichen einer App in AppSource</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/powerapps-cli"> Abrufen der Power Apps-CLI</a></p>
                                  </div>
                               </div>
                            </div>
