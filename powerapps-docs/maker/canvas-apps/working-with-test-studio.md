@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/18/2019
+ms.date: 02/05/2020
 ms.author: aheaney
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd2427a0c24461fa79e363787a7ec6c28bb4038
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: 79ae7206c729a9628ee183e0c64c395f6a235b7c
+ms.sourcegitcommit: 86c81c9efb105d11f4def49eef823af6c69059a4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541610"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034394"
 ---
 # <a name="working-with-test-studio-experimental"></a>Arbeiten mit Test Studio (experimentell)
 
@@ -47,6 +46,9 @@ Dieses Feature müssen Sie nicht wie bei anderen experimentellen Features in Ihr
 
     ![Öffnen von Test Studio](./media/working-with-test-studio/open-tests.png)
 
+> [!NOTE]
+> Tests werden im App-Paket veröffentlicht und gespeichert. Beim Exportieren und Importieren eines Canvas-App-Pakets in eine andere Umgebung sind auch alle Test Definitionen enthalten, wie z. b. Test Auflistungen und erstellte Testfälle. 
+
 ## <a name="create-a-test-suite"></a>Erstellen einer Testsammlung
 
 Standardmäßig werden für Sie eine Testsammlung und ein Testfall in Test Studio erstellt. Einzelne Testfälle können mithilfe von Testsammlungen sortiert werden. Eine App kann eine oder auch mehrere Testsammlungen enthalten. Entweder verwenden Sie die Standardtestsammlung und den Standardtestfall, um sofort mit dem Schreiben von Tests zu beginnen, oder Sie erstellen eine neue Testsammlung.
@@ -56,7 +58,7 @@ Standardmäßig werden für Sie eine Testsammlung und ein Testfall in Test Studi
 
     ![Neue Testsammlung](./media/working-with-test-studio/new-test-suite.png)
 
-## <a name="create-a-test-case"></a>Erstellen eines Testfalls
+## <a name="create-a-test-case"></a>Testfall erstellen
 
 Je nachdem, ob Sie Ihre Tests einzeln anordnen oder miteinander gruppieren möchten, können Sie auch mehrere Testfälle in einer Testsammlung erstellen. Mit jedem Testfall kann ein bestimmtes Feature oder ein bestimmter Teilbereich von Funktionen Ihrer App getestet werden.
 
@@ -107,7 +109,7 @@ So fügen Sie in der Kudos-App Testschritte und Testassertionen hinzu:
 
 2. Klicken Sie oben im Menü auf **Insert a step above** (Über diesem Schritt einen Schritt einfügen) oder auf die Option in der ausgewählten Zeile. Dadurch wird ein leerer Schritt erstellt.
 
-    ![Einfügen eines Schritts](./media/working-with-test-studio/insert-step-above.png)
+    ![Schritt einfügen](./media/working-with-test-studio/insert-step-above.png)
 
     > [!NOTE]
     > Wenn Sie auf die Option **Insert a step above** (Über diesem Schritt einen Schritt einfügen) klicken, wird oberhalb des aktuellen Schritts ein neuer, leerer Schritt eingefügt. Alternativ können Sie auch die Aktionen **Assert**, **SetProperty**, **Select** oder **Trace** verwenden. Dadurch wird jeweils ein Schritt mit entsprechender Aktionsformel hinzugefügt, die Sie bearbeiten können.
@@ -118,7 +120,7 @@ So fügen Sie in der Kudos-App Testschritte und Testassertionen hinzu:
 
     Sie können jeden beliebigen unterstützten Ausdruck verwenden. Sie können auch beliebige Datenquellen, Sammlungen, Variablen oder Flowausführungen abfragen, die in Ihrer App enthalten sind, und neue globale Variablen oder Sammlungen erstellen, die in Ihren Tests verwendet werden.
 
-    ```Set(kudosBeforeTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
+    ```Set(kudosBeforeTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
 
 5. Wählen Sie Schritt 2 oder einen Schritt aus, über dem Sie einen neuen Schritt einfügen möchten.
 
@@ -126,17 +128,17 @@ So fügen Sie in der Kudos-App Testschritte und Testassertionen hinzu:
 
 7. Geben Sie in die Aktionseingabe einen [Trace](./functions/function-trace.md)-Ausdruck oder eine entsprechende Formel ein, und schreiben Sie den Wert *kudosBeforeTest* in den Datensatz der Testergebnisse.
 
-    ```Trace("kudosBeforeTest : " & kudosBeforeTest);;```
+    ```Trace("kudosBeforeTest : " & kudosBeforeTest);```
 
     ![Lobanzahl vor dem Test](./media/working-with-test-studio/kudos-before-test.png)
 
 8. Scrollen Sie im Testfall nach unten, und fügen Sie dort einen neuen Schritt ein, um die Datensätze in der Datenbank nach Abschluss des Tests zählen zu lassen.
 
-    ```Set(kudosAfterTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
+    ```Set(kudosAfterTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
 
 9. Fügen Sie einen abschließenden Schritt hinzu, um zu überprüfen, ob die Anzahl der Datensätze in der Datenbank um 1 inkrementiert wurde, und geben Sie die folgende Assertionsaktion ein, damit dies überprüft wird:
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 1; "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
     ![Lobanzahl nach der Testassertion](./media/working-with-test-studio/kudos-after-test-assert.png)
 
@@ -173,7 +175,7 @@ In diesem Abschnitt ändern Sie die Testassertion, um zu sehen, was im Fall eine
 
 2. Ändern Sie in der Testaktion ```+ 1``` in ```+ 2```. Das bedeutet, dass der Test erwartet, dass zwei Datensätze erstellt werden. Das ist jedoch falsch. Wenn der Test erfolgreich ist, sollte in der Datenbank lediglich ein Datensatz erstellt werden.
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 2; "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 2, "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
 
     ![Geänderte Assert-Anweisung zum Überprüfen der Anzahlinkrementierung](./media/working-with-test-studio/assert-count-update.png)
 
@@ -219,7 +221,7 @@ Es gibt im Testobjekt jedoch zwei Eigenschaften namens **OnTestCaseComplete** un
 
 Der für diese Eigenschaften eingegebene Ausdruck wird ausgelöst, wenn ein jeweiliger Testfall oder eine Testsammlung abgeschlossen ist. Sie können diese Eigenschaften auch anpassen, sodass die Ergebnisse Ihrer Tests verarbeitet und z. B. an die folgenden Datenquellen oder Dienste gesendet werden:
 
-- SQL Server.
+- SQL Server sichern.
 - Common Data Service
 - Power Automate
 - E-Mail über Office 365
@@ -309,7 +311,7 @@ Weitere Beispiele für Ausdrücke, die Sie in diesen Eigenschaften verwenden kö
 
 - Senden der Ergebnisse per E-Mail:
 
-    ```Office365.SendMailV2(“someone@example.com”; “Test case results”; JSON(TestCaseResult; JSONFormat.IndentFour))```
+    ```Office365.SendMailV2(“someone@example.com”, “Test case results”, JSON(TestCaseResult, JSONFormat.IndentFour))```
 
 - Erhalten einer App-Benachrichtigung mit dem Testergebnis:
 
@@ -332,5 +334,5 @@ Zusätzlich zu den in Power Apps verfügbaren [Funktionen](formula-reference.md)
 
 - [Auswählen](./functions/function-select.md)
 - [SetProperty](./functions/function-setproperty.md)
-- [Assert](./functions/function-assert.md)
-- [Ablaufverfolgung](./functions/function-trace.md)
+- [Machung](./functions/function-assert.md)
+- [Ablauf Verfolgungs](./functions/function-trace.md)
