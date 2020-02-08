@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6b1e53d95145cc947681971264c0b160d0510e92
-ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
+ms.openlocfilehash: 7dd0d9a3dc9b78b693565d66f1894484b686b946
+ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886463"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77037365"
 ---
 # <a name="work-with-business-processes"></a>Arbeiten mit Geschäftsprozessen
 
@@ -47,4 +47,4 @@ Die Prozess Leiste kann auch an der rechten Seite des Bildschirms angedockt werd
 Das System enthält Geschäftsprozesse für häufige Aufgaben. Diese Prozesse werden von den meisten Unternehmen an ihre Arbeitsweise angepasst. Sie können dem System auch Prozesse hinzufügen, die genau an Ihre Branche oder Ihre Geschäftsziele angepasst sind. Anders gesagt: Was Sie hier sehen, muss nicht unbedingt mit den Prozessleisten in Ihrem System übereinstimmen. Dennoch funktionieren die Prozessleisten für alle gleich. Sie gebe Daten in die Feldern ein und wechseln dann mit dem Kunden zum nächsten Schritt.
 
 
-Weitere Informationen zum Erstellen und Verwalten von Geschäftsprozess Abläufen finden Sie unter [Erstellen einer Geschäftsregel für eine Entität](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-create-business-rule).
+Weitere Informationen zum Anwenden benutzerdefinierter Geschäftslogik mit Geschäftsregeln und Flows finden Sie unter Anwenden von [benutzerdefinierter Geschäftslogik mit Geschäftsregeln und Flows in einer Modell gesteuerten App](https://docs.microsoft.com/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes).

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: bf8ee15b37e9fcae5027bb91e89ceb225325dcc5
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71924439"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77054874"
 ---
 # <a name="create-a-new-record"></a>Neuen Datensatz erstellen
 
@@ -57,8 +57,26 @@ Mit dem Befehl **Neuen Datensatz erstellen** oder **Schnellerfassung** ist die E
   
 3. Geben Sie die entsprechenden Details für neuer Kontakt ein, und wählen Sie dann **Speichern und schließen**aus.
 
+    > [!NOTE]
+    > Wenn Sie nicht gespeicherte Änderungen vorgenommen haben und versuchen, zu einem anderen Datensatz oder Formular zu wechseln, wird das Dialogfeld **nicht gespeicherte Änderungen** angezeigt. Wenn Sie **Speichern und Fortfahren**auswählen, wird versucht, die Informationen zu speichern und die gewünschte Seite zu öffnen. Wenn Sie sich für das Speichern und Fortfahren entscheiden und ein Fehler in einem Feld vorliegt, wird das Dialogfeld geschlossen, und Sie bleiben auf der Seite, um den Fehler zu beheben, bevor Sie navigieren können.
+
     > [!div class="mx-imgBorder"] 
     > ![Neue Schaltfläche erstellen](media/newrecord3.png "Neue Schaltfläche erstellen")
 
-    > [!NOTE]
-    > Wenn Sie nicht gespeicherte Änderungen vorgenommen haben und versuchen, zu einem anderen Datensatz oder Formular zu wechseln, wird das Dialogfeld **nicht gespeicherte Änderungen** angezeigt. Wenn Sie **Speichern und Fortfahren**auswählen, wird versucht, die Informationen zu speichern und die gewünschte Seite zu öffnen. Wenn Sie sich für das Speichern und Fortfahren entscheiden und ein Fehler in einem Feld vorliegt, wird das Dialogfeld geschlossen, und Sie bleiben auf der Seite, um den Fehler zu beheben, bevor Sie navigieren können.
+ 
+ ## <a name="preview-use-the-save-or-save--close-option-when-editing-a-record"></a>Vorschau: Verwenden Sie die Option Speichern oder Speichern & schließen, wenn Sie einen Datensatz bearbeiten. 
+ 
+Verwenden Sie die Schaltfläche **Speichern** oder **Speichern & schließen** in der Befehlsleiste, wenn Sie einen vorhandenen Datensatz bearbeiten. Vor dieser Version war die Option **Speichern** nur in der unteren rechten Ecke verfügbar.
+
+> [!NOTE]
+> Dies ist ein frühes Zugriffs Feature. Sie können sich früh entscheiden, dieses Feature in Ihrer Umgebung zu aktivieren, sodass Sie diese Features testen und in ihren Umgebungen übernehmen können. Informationen dazu, wie Sie diese Features aktivieren, finden [Sie unter Opt in 2020 Release Wave 1 Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+
+
+1. Wählen Sie im linken Navigationsbereich den Daten Recordtyp aus, den Sie bearbeiten möchten. Wählen Sie z. b. **Konten**aus.
+2. Öffnen Sie den Kontodaten Satz, den Sie bearbeiten möchten, und nehmen Sie die Änderungen am Datensatz vor.
+3. Um die Änderungen zu speichern, klicken Sie in der Befehlsleiste auf **Speichern** oder **speichern, & schließen**. Die Option **Speichern** ist nach wie vor in der unteren rechten Ecke verfügbar.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Option zum Speichern in einem Datensatz](media/saveoptionalwaysvisible.png "Option zum Speichern in einem Datensatz")
+
+

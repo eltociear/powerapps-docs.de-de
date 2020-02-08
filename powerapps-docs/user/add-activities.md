@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7f437b649111c4ff51d21f35e73dabb442c57112
-ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
+ms.openlocfilehash: 1a721f5dfa0a07d270e6b1d9d310236bebb21023
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75333631"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973386"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse 
 
@@ -34,7 +34,16 @@ Fügen Sie **Aktivitäten** der Pinnwand **Zeitachse** hinzu, um den Überblick 
 - Eine e-Mail mit einem angefügten Bild wird Inline mit dem Textkörper der e-Mail angezeigt.
 
   > [!div class="mx-imgBorder"]
-  > ![Zeitachsen Ansicht von Aktivitäten in Power apps](media/TimelineViewOfActivity.png "Zeitachsen Ansicht von Aktivitäten in Power apps")  
+  > ![Zeitachsen Ansicht von Aktivitäten in Power apps](media/TimelineViewOfActivity.png "Zeitachsen Ansicht von Aktivitäten in Power apps")
+
+  1. Datensätze suchen
+  2. Notieren Sie sich
+  3. Informationen und Aktivitäten hinzufügen
+  4. Filter
+  5. Weitere Befehle
+  6. Aktivitätsstatus
+  7. Aktivitäts Symbole
+  8. Datum und Uhrzeit
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>Hinzufügen einer Aktivität über die Navigationsleiste
  
@@ -68,7 +77,7 @@ Der schnellste Weg, eine Aktivität hinzuzufügen, ist das Verwenden der Verknü
   
      Das Feld **Anrufen** wird automatisch mit dem Datensatz aufgefüllt, dem Sie die Telefonanrufaktivität hinzugefügt haben. Sie können bei Bedarf einen anderen Datensatz auswählen.  
   
-4. Die Richtung ist standardmäßig auf **Ausgehend** festgelegt. Sie können sie in **Eingehend** ändern, indem Sie **Ausgehend** auswählen. 
+4. Die Richtung ist standardmäßig auf **Ausgehend** festgelegt. Sie können sie in **Eingehend** ändern, indem Sie **Ausgehend** auswählen.
   
 5. Wenn Sie mit dem Ausfüllen des Formulars fertig sind, klicken Sie auf **Speichern**, um die Aktivität zu speichern.  
   
@@ -94,19 +103,21 @@ Um eine E-Mail-Aktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst d
   
 4. Um eine Anlage an die E-Mail anzufügen, speichern Sie die E-Mail. Klicken Sie dann im Abschnitt **Anlagen** auf **+** , um eine Anlage hinzuzufügen.  
   
-5. Um eine Vorlage für den E-Mail-Text zu verwenden, klicken Sie auf der Befehlsleiste auf **Vorlage einfügen**, und wählen Sie dann die Vorlage aus.   
+5. Wenn Sie eine Vorlage für den e-Mail-Text verwenden möchten, wählen Sie in der Befehlsleiste **Vorlage einfügen**aus, und wählen Sie dann die Vorlage aus. Weitere Informationen zum Einfügen einer e-Mail-Vorlage finden Sie unter [Einfügen einer e-Mail-Vorlage](insert-email-template.md). 
   
 6. Wenn Sie mit dem Ausfüllen des Formulars fertig sind, klicken Sie auf **Senden**. 
 
 
-    > [!NOTE]
-    > Um e-Mails in einer Konversations Ansicht aufzulisten, wechseln Sie zu **Einstellungen** > **Personalisierungs Einstellungen** > Registerkarte " **e-Mail** ", und wählen Sie dann **e-Mail als Konversation auf der Zeitachse anzeigen** Weitere Informationen zu persönlichen Einstellungen finden Sie unter [Set Personal Options](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Nach der Aktivierung können Sie ein beliebiges Formular öffnen, das über eine Zeitachse verfügt, und Ihre e-Mail-Nachrichten werden in Konversations Threads mit der neuesten e-Mail gruppiert.
+
+### <a name="list-emails-in-a-conversation-view"></a>Auflisten von e-Mails in einer Konversations Ansicht
+
+Um e-Mails in einer Konversations Ansicht aufzulisten, wechseln Sie zu **Einstellungen** > **Personalisierungs Einstellungen** > Registerkarte " **e-Mail** ", und wählen Sie dann **e-Mail als Konversation auf der Zeitachse anzeigen** Weitere Informationen zu persönlichen Einstellungen finden Sie unter [Set Personal Options](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Nach der Aktivierung können Sie ein beliebiges Formular öffnen, das über eine Zeitachse verfügt, und Ihre e-Mail-Nachrichten werden in Konversations Threads mit der neuesten e-Mail gruppiert.
 
    > [!div class="mx-imgBorder"]
    > ![Persönliche Optionen festlegen](media/emailsettings1.png "Festlegen persönlicher Optionen")
    
-    > [!div class="mx-imgBorder"]
-    > ![Persönliche e-Mail-Optionen festlegen](media/emailsettings2.png "Persönliche e-Mail-Optionen festlegen")
+   > [!div class="mx-imgBorder"]
+   > ![Persönliche e-Mail-Optionen festlegen](media/emailsettings2.png "Persönliche e-Mail-Optionen festlegen")
 
   
 ## <a name="add-an-appointment"></a>Hinzufügen eines Termins  
@@ -141,7 +152,7 @@ Sie können im Aktivitätsbereich auch ganz einfach Notizen hinzufügen.
    > [!div class="mx-imgBorder"]
    > ![Hinweis hinzufügen](media/addnote.png "Hinweis hinzufügen")
 
-Nachdem die Notiz hinzugefügt wurde, können Sie sie löschen oder bearbeiten.
+Nachdem die Notiz hinzugefügt wurde, können Sie sie löschen oder bearbeiten. Wählen Sie den Hinweis aus, oder zeigen Sie mit der Maus auf den Hinweis, um die Symbole zum Bearbeiten und löschen anzuzeigen.
 
 
 > [!div class="mx-imgBorder"]
@@ -178,16 +189,14 @@ Sie können Aktivitäten, Notizen oder Beiträge auf der Pinnwand „Zeitachse�
 
 - Wählen Sie in der **Zeit** Achsen-Wand das Symbol Filter Bereichs Symbol **Öffnen** aus.
 
-> [!div class="mx-imgBorder"]
-> ![Filter Bereich in der Zeitachse](media/filterpane.png "Filter Bereich in der Zeitachse")
+
+![Filterbereich im Zeit](media/timeline-filter2.png "Filter Bereich in der Zeitachse") Achsen ![Filterbereich auf der Zeitachse](media/timeline-filter5.png "Filter Bereich in der Zeitachse")
 
 
 ## <a name="manage-activities"></a>Verwalten von Aktivitäten
 Sie können Aktivitäten direkt auf der Zeitachse verwalten, z.B. eine Aktivität einer anderen Person zuordnen, eine Aktivität löschen oder schließen, eine Aktivität zu einer Warteschlange hinzufügen, einen zugehörigen Datensatz öffnen oder Notizen und Beiträge bearbeiten.
 
-
-> [!div class="mx-imgBorder"]
-> ![Verwalten von Aktivitäten. png](media/ManageActivities.png "Manageactivities. png")
+  ![Zeitachse Optionen](media/timeline-options1.png "Optionen für die Zeitachse") ![Zeitachse](media/timeline-options2.png "Optionen für die Zeitachse") Befehlsleiste Optionen Zeitachse Befehlsleiste Optionen ![Zeitachse](media/timeline-options3.png "Optionen für die Zeitachse") Befehls ![leisten Optionen](media/timeline-options4.png "Optionen für die Zeitachse")
 
 ## <a name="see-also"></a>Siehe auch
 

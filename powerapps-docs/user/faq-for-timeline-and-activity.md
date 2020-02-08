@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78b4e997a398bfb806a4e89a70c0ed3e466be381
-ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
+ms.openlocfilehash: ff83a238715ef6f78650eeb03b087088cb5f0c1e
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75333608"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973176"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>Häufig gestellte Fragen zu Aktivitäten und der Zeitachsenanzeige  
 
@@ -50,6 +50,10 @@ Sie können die Leistung der Zeitachsenanzeige verbessern, indem Sie optimieren,
 ## <a name="activity-wall-is-not-supported-in-print-preview"></a>Die Zeitachsenanzeige wird in der Seitenansicht nicht unterstützt.
 
 Wenn Sie die **Seitenansicht** in Dynamics 365 öffnen, wird die **Zeitachsenanzeige** nicht in der Liste angezeigt. Zwar werden **Hinweise** angezeigt, Aufgaben und E-Mails jedoch nicht.
+
+## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>Warum werden keine anderen Benutzeraktivitäten und Datensätze im Datenstrom der eigenen Aktivitäten im Dashboard angezeigt?
+
+Der Stream " **meine Aktivitäten** " im Dashboard zeigt die Datensätze und Aktivitäten an, die Sie besitzen (Benutzer). Benutzer **a** zeigt z. b. Datensätze und Aktivitäten an, die im Besitz von **sind, und**Benutzer **b** zeigt Datensätze und Aktivitäten an, die sich im Besitz von **B**befinden.
 
 ## <a name="see-also"></a>Siehe auch
 
