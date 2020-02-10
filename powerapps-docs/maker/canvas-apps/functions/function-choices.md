@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ebe6b2019652b1f2e59419c718136aced81c62e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: ab805ec283ca43c96982eb04357ded9aed934a03
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731409"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089878"
 ---
 # <a name="choices-function-in-power-apps"></a>Auswahlfunktion in Power apps
 Gibt eine Tabelle mit den möglichen Werten für eine Suchspalte zurück.
@@ -32,7 +32,7 @@ Bei Suchvorgängen stimmt die Tabelle, die die Funktion **Choices** zurückgibt 
 
 Da die Funktion **Choices** eine Tabelle zurückgibt, können Sie die Funktionen [**Filter**](function-filter-lookup.md), [**Sort**](function-sort.md) und [**AddColumns**](function-table-shaping.md) sowie alle weiteren Funktionen verwenden, die zur Bearbeitung einer Tabelle beitragen und die Tabelle filtern, sortieren und formen. 
 
-Derzeit kann die Funktion **Choices** nicht [delegiert](../delegation-overview.md) werden. Wenn diese Einschränkung ein Problem für Ihre App hervorruft, fügen Sie die Fremdentität als Datenquelle hinzu, und verwenden Sie diese. 
+Zu diesem Zeitpunkt können Sie keine **Optionen**[delegieren](../delegation-overview.md). Wenn diese Einschränkung ein Problem für Ihre App hervorruft, fügen Sie die Fremdentität als Datenquelle hinzu, und verwenden Sie diese. 
 
 Für die Funktion **Choices** ist es nicht wie bei den Funktionen [**ShowColumns**](function-table-shaping.md) und [**Search**](function-filter-lookup.md) sowie anderen Tabellenfunktionen erforderlich, dass Spaltennamen Zeichenfolgen darstellen und in doppelten Anführungszeichen stehen. Geben Sie die Formel so an, als würden Sie direkt auf die Spalte verweisen.
 
@@ -92,7 +92,7 @@ Zu diesem Zeitpunkt können Sie Such Spalten nur mit SharePoint und Common Data 
 
      ![Eine Canvas-Anzeige mit einem Formularsteuerelement Das Kombinations Feld-Steuerelement in der primären Kontaktkarte ist ausgewählt, und die Items-Eigenschaft mit den Formel Optionen ("Accounts", "primärer Kontakt") wird angezeigt.](media/function-choices/accounts-primary-contact.png)
 
-1. Klicken Sie erst auf der Registerkarte **Start** auf die Option **Neuer Bildschirm** und anschließend auf **Blank**.
+1. Zur Veranschaulichung können wir die gesamte Tabelle anzeigen, die von der **Auswahl** Funktion in einem **Datentabellen** -Steuerelement zurückgegeben wird.  Klicken Sie erst auf der Registerkarte **Start** auf die Option **Neuer Bildschirm** und anschließend auf **Blank**.
 
 1. Klicken Sie auf der Registerkarte **Einfügen** auf die Option **Datentabelle**.
 

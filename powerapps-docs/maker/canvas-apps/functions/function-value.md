@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/07/2015
+ms.date: 02/06/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec168ce00fff1abdb624a8decc1c5d44ec7bd61c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 51ceb1dfc67e24ff0f38f9bf51db37b78410544e
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729783"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089763"
 ---
 # <a name="value-function-in-power-apps"></a>Funktion "Value" in powerapps
 Konvertiert eine Textzeichenfolge in eine Zahl
@@ -35,12 +34,12 @@ Hinweise zum Format der Zeichenfolge:
 * Der Zeichenfolge wird eventuell ein Prozentzeichen ( **%** ) am Ende hinzugefügt, das angibt, dass es sich um einen Prozentsatz handelt.  Die Anzahl wird vor der Rückgabe durch 100 dividiert.  Prozentsätze und Währungssymbolen können nicht kombiniert werden.
 * Die Zeichenfolge kann in wissenschaftlicher Schreibweise sein, in der 12 x 10<sup>3</sup> als "12e3" ausgedrückt wird.
 
-Wenn die Anzahl nicht in einem entsprechenden Format ist, gibt **Value** *blank* zurück.
+Wenn die Anzahl nicht in einem entsprechenden Format ist, gibt **Value***blank* zurück.
 
-Verwenden Sie zum Konvertieren von Datums-und Uhrzeitwerten die Funktionen [**DateValue**](function-datevalue-timevalue.md), [ **TimeValue**](function-datevalue-timevalue.md) oder [**DateTimeValue**](function-datevalue-timevalue.md).
+Verwenden Sie zum Konvertieren von Datums-und Uhrzeitwerten die Funktionen [**DateValue**](function-datevalue-timevalue.md), [**TimeValue**](function-datevalue-timevalue.md) oder [**DateTimeValue**](function-datevalue-timevalue.md).
 
 ## <a name="syntax"></a>Syntax
-**Value**(*Zeichenfolge* [;*LanguageTag*])
+**Value**(*Zeichenfolge* [,*LanguageTag*])
 
 * *Zeichenfolge*: erforderlich. Die Zeichenfolge, die in einen numerischen Wert konvertiert werden soll
 * *LanguageTag*: optional.  Das Sprachkennzeichen, in dem die Zeichenfolge analysiert werden soll.  Standardmäßig wird die Sprache des aktuellen Benutzers verwendet, wenn die Sprache nicht angegeben wurde.
@@ -51,10 +50,10 @@ Der Benutzer, der diese Formeln ausführt, befindet sich in den USA und hat Engl
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Value( "123.456" )** |Die Standardsprache "En-US" wird verwendet, in der ein Punkt als Dezimaltrennzeichen verwendet wird. |123.456 |
-| **Value( "123.456"; "es-ES" )** |"es-ES" steht für Spanisch (Spanien).  In Spanien ist ein Punkt ein Tausendertrennzeichen. |123456 |
+| **Value( "123.456", "es-ES" )** |"es-ES" steht für Spanisch (Spanien).  In Spanien ist ein Punkt ein Tausendertrennzeichen. |123456 |
 | **Value( "123,456" )** |Die Standardsprache "En-US" wird verwendet, in der ein Komma als Tausendertrennzeichen verwendet wird. |123456 |
-| **Value( "123,456"; "es-ES" )** |"es-ES" steht für Spanisch (Spanien).  In Spanien ist das Dezimaltrennzeichen ein Komma. |123.456 |
+| **Value( "123,456", "es-ES" )** |"es-ES" steht für Spanisch (Spanien).  In Spanien ist das Dezimaltrennzeichen ein Komma. |123.456 |
 | **Value( "12.34%" )** |Das Prozentzeichen am Ende der Zeichenfolge gibt an, dass dies ein Prozentsatz ist. |0.1234 |
 | **Value( "$ 12.34" )** |Das Währungssymbol der aktuellen Sprache wird ignoriert. |12.34 |
-| **Value( "24e3" )** |Wissenschaftliche Schreibweise für 12 x 10<sup>3</sup>. |24000 |
+| **Value( "24e3" )** |Wissenschaftliche Schreibweise für 24 x 10<sup>3</sup>. |24000 |
 

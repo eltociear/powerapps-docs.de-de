@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fe02683e0b420a97fe674543a2f0d16bb076f266
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 259ab99ca38a472fda5c8cd8cdf99533a5f5dfc2
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731031"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089740"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-power-apps"></a>Funktionen "EncodeURL" und "Plaintext" in powerapps
 Codiert und decodiert Zeichenfolgen
@@ -46,7 +46,7 @@ Der Rückgabewert dieser Funktionen ist die codierte oder decodierte Zeichenfolg
 Wenn Sie einen RSS-Feed in einem Textkatalog anzeigen, und Sie anschließend die **[Text](../controls/properties-core.md)** -Eigenschaft einer Bezeichnung in dem Katalog auf **ThisItem.description** festlegen, zeigt die Bezeichnung möglicherweise unformatierten HTML- oder XML-Code wie in folgendem Beispiel:
 
 ```html
-    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.<p>
+    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.</p>
 ```
 
 Wenn Sie die **[Text](../controls/properties-core.md)** -Eigenschaft auf **PlainText(ThisItem.description)** festlegen, wird der Text wie in folgendem Beispiel angezeigt:
