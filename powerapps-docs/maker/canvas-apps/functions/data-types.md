@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/08/2020
 ms.locfileid: "77089840"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="data-types-in-canvas-apps"></a>Datentypen in Canvas-apps
 
@@ -39,9 +40,9 @@ Dieser Artikel enthält Details zu den Datentypen, die von Canvas-Apps unterstü
 | **Medien** | Eine URI-Text Zeichenfolge für eine Video-oder Audioaufzeichnung. | **MyVideo** als App-Ressource hinzugefügt<br>**„https://northwindtraders.com/intro.mp4“**<br>**"appres://blobmanager/3ba411c..."** |
 | **Einigen** | Eine Gleit Komma Zahl. | **123**<br>**-4,567**<br>**8.903e121** |
 | **Options Satz** | Eine Auswahl aus einer Reihe von Optionen, die durch eine Zahl unterstützt werden. Dieser Datentyp kombiniert eine lokalisierbare Text Bezeichnung mit einem numerischen Wert. Die Bezeichnung wird in der App angezeigt, und der numerische Wert wird gespeichert und für Vergleiche verwendet. | **Thisitem. OrderStatus** |
-| **Datensatz** | Ein Datensatz von Datenwerten. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie [unter Arbeiten mit Tabellen](../working-with-tables.md). | **{Company: "Northwind Traders",<br>Personal: 35, <br>Non Profit: false}** |
+| **Datensatz** | Ein Datensatz von Datenwerten. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie [unter Arbeiten mit Tabellen](../working-with-tables.md). | **{Company: "Northwind Traders";<br>Personal: 35; <br>Non Profit: false}** |
 | **Daten Satz Verweis** | Ein Verweis auf einen Datensatz in einer Entität. Solche Verweise werden häufig bei polymorphen Such Vorgängen verwendet. Weitere Informationen finden Sie [unter Arbeiten mit verweisen](../working-with-references.md).| **Zuerst (Konten). Eigentor** |
-| **Tabelle** | Eine Tabelle mit Datensätzen.  Alle Datensätze müssen die gleichen Namen für Ihre Felder mit denselben Datentypen aufweisen, und ausgelassene Felder werden als *leer*behandelt. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie [unter Arbeiten mit Tabellen](../working-with-tables.md). | **Table ({FirstName: "Sidney",<br>LastName: "Higa"}, <br>{FirstName: "Nancy",<br>LastName: "Anderson"})**
+| **Tabelle** | Eine Tabelle mit Datensätzen.  Alle Datensätze müssen die gleichen Namen für Ihre Felder mit denselben Datentypen aufweisen, und ausgelassene Felder werden als *leer*behandelt. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie [unter Arbeiten mit Tabellen](../working-with-tables.md). | **Table ({FirstName: "Sidney";<br>LastName: "Higa"}; <br>{FirstName: "Nancy";<br>LastName: "Anderson"})**
 | **Text** | Eine Unicode-Text Zeichenfolge. | **"Hello, World"** |
 | **Zeit** | Eine Uhrzeit ohne Datum in der Zeitzone des App-Benutzers. | **Zeit (11, 23, 45)** |
 | **Zwei Optionen** | Eine Auswahl aus einer Reihe von zwei Optionen, die von einem booleschen Wert unterstützt werden. Dieser Datentyp kombiniert eine lokalisierbare Text Bezeichnung mit einem booleschen Wert. Die Bezeichnung wird in der App angezeigt, und der boolesche Wert wird gespeichert und für Vergleiche verwendet. | **Thisitem. steuerlich** |
@@ -66,7 +67,7 @@ Alle vier dieser Datentypen basieren auf einer [Unicode](https://en.wikipedia.or
 
 Eingebettete Text Zeichenfolgen in einer Formel sind in doppelte Anführungszeichen eingeschlossen.  Verwenden Sie zwei doppelte Anführungszeichen, um ein einzelnes doppeltes Anführungszeichen in der Text Zeichenfolge darzustellen.  Verwenden Sie beispielsweise die folgende Formel in der **onselect** -Eigenschaft eines [**Button**](../controls/control-button.md) -Steuer Elements:
 
-```powerapps-dot
+```powerapps-comma
 Notify( "Jane said ""Hello, World!""" )
 ```
 
@@ -96,7 +97,7 @@ Canvas-Apps verweisen auf jedes Bild oder jede andere Mediendatei, ob Sie in der
 
 Beispielsweise akzeptiert die **Image** -Eigenschaft eines Image-Steuer Elements nicht nur App-Ressourcen, sondern auch Links zu Bildern im Web, z. b. "https://northwindtraders.com/logo.jpg". Die-Eigenschaft akzeptiert auch Inline Bilder, die das [Daten-URI-Schema](https://en.wikipedia.org/wiki/Data_URI_scheme)verwenden, wie in diesem Beispiel:
 
-```powerapps-dot
+```powerapps-comma
 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAAB0J3UMNU6VAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGJgCGVg6GgAkkA2AA8/AffqCEBsAAAAAElFTkSuQmCC"
 ```
 
@@ -189,11 +190,11 @@ Canvas-Apps verwenden die enthaltenen Zeitzoneninformationen in **DateTimeOffset
 
 Canvas-apps lesen und schreiben Werte des [**time**](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql) -Datentyps in SQL Server als Text Zeichenfolgen im [ISO 8601-Duration-Format](https://en.wikipedia.org/wiki/ISO_8601#Durations). Beispielsweise müssen Sie dieses Zeichen folgen Format analysieren und die [**time**](function-date-time.md) -Funktion verwenden, um die Text Zeichenfolge **"PT2H1M39S"** **in einen Uhrzeitwert** zu konvertieren:
 
-```powerapps-dot
+```powerapps-comma
 First(
     ForAll(
-        MatchAll( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
-        Time( Value( hours ), Value( minutes ), Value( seconds ) )
+        MatchAll( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
+        Time( Value( hours ); Value( minutes ); Value( seconds ) )
     )
 ).Value
 ```
@@ -216,18 +217,18 @@ Wenn ein App-Benutzer eine Option auswählt und diese Änderung speichert, über
 
 Die Bezeichnungen dienen nur zu Anzeige Zwecken. Sie können keine direkten Vergleiche mit den Bezeichnungen durchführen, da Sie für eine Sprache spezifisch sind. Stattdessen hat jeder Options Satz eine Enumeration, die mit der zugrunde liegenden Zahl oder dem booleschen Wert arbeitet. Beispielsweise können Sie diese Formel nicht verwenden:
 
-`If( ThisItem.OrderStatus = "Active", ...`
+`If( ThisItem.OrderStatus = "Active"; ...`
 
 Aber Sie können diese Formel verwenden:
 
-`If( ThisItem.OrderStatus = OrderStatus.Active, ...`
+`If( ThisItem.OrderStatus = OrderStatus.Active; ...`
 
 Bei globalen Options Sätzen (bei denen die Entitäten gemeinsam genutzt werden) entspricht der Name der Options Satz-Enumeration dem Namen der globalen Options Menge. Für lokale Optionssätze (die auf eine Entität bezogen sind) kann der Name den Namen der Entität enthalten. Dieses Verhalten vermeidet Konflikte, wenn mehrere Entitäten über Optionssätze verfügen, die denselben Namen aufweisen. Beispielsweise kann für die Entität " **Accounts** " eine Option " **OrderStatus** " festgelegt werden, und der Name kann " **OrderStatus (Accounts)** " lauten. Dieser Name enthält ein oder mehrere Leerzeichen und Klammern, sodass Sie ihn in einfache Anführungszeichen einschließen müssen, wenn Sie ihn in einer Formel referenzieren.
 
 Außerdem können sich zwei Optionswerte auch als boolesche Werte Verhalten. Beispielsweise kann für einen zwei-Options-Wert mit dem Namen " **taxstatus** " die Bezeichnung "Tax **" und "** **Non-** Tax" lauten, die " *true* " bzw. " *false* " Um dies zu veranschaulichen, können Sie die folgende Formel verwenden:
 
-`If( ThisItem.Taxable = TaxStatus.Taxable, ...`
+`If( ThisItem.Taxable = TaxStatus.Taxable; ...`
 
 Sie können auch diese äquivalente Formel verwenden:
 
-`If( ThisItem.Taxable, ...`
+`If( ThisItem.Taxable; ...`
