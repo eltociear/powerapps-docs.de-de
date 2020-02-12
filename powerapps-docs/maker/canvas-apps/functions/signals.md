@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/29/2019
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9cd0470d6911452b38040531ec17060b3bc69fa0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 1cd90e345b41f8316e8cd8c50f4077ee1f64ee91
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729582"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77145388"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Signale für Beschleunigung, APP, Kompass, Verbindung und Standort in Power apps
 
@@ -60,7 +60,7 @@ Das Signal **Compass** gibt die Kompassausrichtung des oberen Bildschirmrands zu
 | --- | --- |
 | **Compass.Heading** |Ausrichtung in Grad.  Gibt eine Zahl von 0 bis 360 zurück, 0 ist Norden. |
 
-### <a name="connection"></a>Connection
+### <a name="connection"></a>Verbindung
 Das Signal **Connection** gibt die Informationen über die Netzwerkverbindung zurück. Bei einer getakteten Verbindung empfiehlt es sich, die über das Netzwerk gesendeten oder empfangenen Daten zu beschränken.
 
 | Eigenschaft | Beschreibung |
@@ -68,7 +68,7 @@ Das Signal **Connection** gibt die Informationen über die Netzwerkverbindung zu
 | **Connection.Connected** |Gibt einen booleschen Wert **TRUE** oder **FALSE** zurück, der angibt, ob das Gerät mit einem Netzwerk verbunden ist |
 | **Connection.Metered** |Gibt einen booleschen Wert **TRUE** oder **FALSE** zurück, der angibt, ob die Verbindung getaktet ist |
 
-### <a name="location"></a>Ort
+### <a name="location"></a>Location
 Das Signal **Location** gibt den Standort des Geräts anhand des Globalen Positionsbestimmungssystems (GPS) und anderer Geräteinformationen zurück, z.B. der Kommunikation von Funktürmen und der IP-Adresse.
 
 Wenn ein Benutzer zum ersten Mal auf die Positionsinformationen zugreift, kann das Gerät diesen Benutzer dazu auffordern, Zugriff auf diese Informationen zu erteilen.
@@ -78,8 +78,8 @@ Wenn sich der Standort ändert, werden Abhängigkeiten vom Standort kontinuierli
 | Eigenschaft | Beschreibung |
 | --- | --- |
 | **Location.Altitude** |Gibt eine Zahl zurück, die die Höhe über dem Meeresspiegel in Metern angibt |
-| **Location.Latitude** |Gibt eine Zahl zwischen -90 und 90 zurück, die den Breitengrad vom Äquator aus in Grad angibt. Eine positive Zahl gibt einen Standort nördlich vom Äquator an. |
-| **Location.Longitude** |Gibt eine Zahl zwischen 0 und 180 zurück, die den Längengrad westwärts von Greenwich, England in Grad angibt. |
+| **Location.Latitude** |Gibt eine Zahl von – 90 bis 90 zurück, die die Breite angibt, gemessen in Grad vom Äquator. Eine positive Zahl gibt einen Standort nördlich vom Äquator an. |
+| **Location.Longitude** |Gibt eine Zahl von – 180 bis 180 zurück, die den Längengrad von Greenwich, England (gemessen in Grad) angibt.  Eine positive Zahl gibt einen Standort an, der den Osten von greenwhat hat. |
 
 ## <a name="examples"></a>Beispiele
 In einem Baseball-Feld löst ein Pitcher ein Telefon aus dem Muter des Pitcher an einen Fänger an der Hausplatte aus. Das Telefon fliegt flach über dem Boden, der obere Bildschirmrand zeigt auf den Catcher, und der Pitcher fügt kein Drehmoment hinzu. In diesem Moment hat das Telefon getakteten Mobilfunknetzdienst, jedoch kein WLAN. Die **PlayBall**-Bildschirm wird angezeigt.   
@@ -88,7 +88,7 @@ In einem Baseball-Feld löst ein Pitcher ein Telefon aus dem Muter des Pitcher a
 | --- | --- | --- |
 | **Location.Latitude** |Gibt den Breitengrad der aktuellen Position zurück. Das Feld befindet sich in den Kartenkoordinaten 47,591 N, 122,333 W. |47.591<br><br>Der Breitengrad wird fortlaufend geändert, während sich der Ball vom Pitcher zum Catcher bewegt. |
 | **Location.Longitude** |Gibt den Längengrad der aktuellen Position zurück |122.333<br><br>Der Längengrad wird fortlaufend geändert, während sich der Ball vom Pitcher zum Catcher bewegt. |
-| **Location** |Gibt den Längen- und Breitengrad des aktuellen Standorts in einem Datensatz zurück |{&nbsp;Breitengrad:&nbsp;47.591, Längengrad:&nbsp;122.333&nbsp;} |
+| **Speicherort** |Gibt den Längen- und Breitengrad des aktuellen Standorts in einem Datensatz zurück |{&nbsp;Breitengrad:&nbsp;47.591, Längengrad:&nbsp;122.333&nbsp;} |
 | **Compass.Heading** |Gibt die Kompassausrichtung des oberen Bildschirmrands zurück In diesem Feld befindet sich die Hausplatte ungefähr Südwest von der Spitze des Pitcher. |230.25 |
 | **Acceleration.X** |Gibt die Beschleunigung des Geräts von linkem zu rechtem Rand an. Der Pitcher wirft das Gerät in Bezug auf den oberen Bildschirmrand geradeaus, sodass das Gerät nicht von Seite zu Seite beschleunigt. |0 |
 | **Acceleration.Y** |Gibt die Beschleunigung des Geräts zwischen Vorder- und Rückseite an. Der Pitcher beschleunigt das Gerät anfänglich durch den Wurf erheblich, von 0 auf 90 Meilen pro Stunde (132 Fuß pro Sekunde) innerhalb einer halben Sekunde. Einmal in der Luft beschleunigt das Telefon, wenn die Luftreibung außen vor gelassen wird, nicht weiter. Das Gerät wird verlangsamt, wenn der Catcher es fängt, und wird angehalten. |8.2, während der Pitcher das Geräts wirft<br><br>0, während sich das Gerät in der Luft befindet<br><br>-8.2, während der Catcher das Gerät fängt |

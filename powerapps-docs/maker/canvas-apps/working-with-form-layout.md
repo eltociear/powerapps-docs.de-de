@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 06/17/2017
+ms.date: 02/10/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dbc33f1a1e4ff0434ee69ad9f7c34ead441f6776
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 6c2024059c5e549d93c8195afbdc0c6272c912b2
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733173"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77145456"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-power-apps"></a>Grundlegendes zum Layout von Daten Formularen für Canvas-apps in powerapps
 
@@ -28,7 +28,7 @@ Erstellen Sie auf einfache Weise ein attraktives und effizientes Formular, wenn 
 
 In diesem Tutorial durchlaufen wir die Schritte zum Erstellen dieses Formulars. Außerdem beschäftigen wir uns mit einigen komplexeren Themen wie der dynamischen Größenänderung von Feldern zum Ausfüllen des verfügbaren Platzes.
 
-## <a name="before-you-start"></a>Bevor Sie beginnen
+## <a name="before-you-start"></a>Vorbereitungen
 
 Wenn Sie noch nicht mit Power apps vertraut sind (oder nur automatisch Apps generiert haben), sollten Sie [eine APP von Grund auf neu erstellen](get-started-create-from-blank.md) , bevor Sie sich mit diesem Thema befassen. Durch Erstellen einer App von Grund auf machen Sie sich mit den grundlegenden Konzepten vertraut, beispielsweise mit dem Hinzufügen von Datenquellen und Steuerelementen, die in diesem Artikel zwar erwähnt, jedoch nicht erläutert werden.
 
@@ -178,13 +178,9 @@ Das Ergebnis für die vollständige dritte Adresszeile:
 Beachten Sie, dass viele Karten mit dynamischen Formeln für ihre Eigenschaften anfangen. Das Texteingabe-Steuerelement, dessen Größe wir geändert und das wir nach oben verschoben haben, hat z.B. eine **Width**-Eigenschaft, die auf der Breite seines übergeordneten Elements basiert. Beim Verschieben und Ändern der Größe eines Steuerelements werden diese dynamischen Formeln durch statische Werte ersetzt. Falls gewünscht, können Sie dynamische Formeln mithilfe der Bearbeitungsleiste wiederherstellen.
 
 ## <a name="turning-off-snap-to-columns"></a>Deaktivieren von „An Spalten ausrichten“
-Gelegentlich benötigen Sie eine präzisere Steuerung, als sie mit den standardmäßigen 12 Spalten möglich ist. In diesen Fällen können Sie **An Spalten ausrichten** deaktivieren und Karten manuell positionieren. Das Formular wird weiterhin an 12 Spalten ausgerichtet, Sie können jedoch auch die ALT-TASTE gedrückt halten, um eine Karte nach Wunsch manuell zu positionieren und ihre Größe festzulegen.
+Gelegentlich benötigen Sie eine präzisere Steuerung, als sie mit den standardmäßigen 12 Spalten möglich ist. In diesen Fällen können Sie **An Spalten ausrichten** deaktivieren und Karten manuell positionieren. Das Formular wird mit dem Andocken an 12 Spalten fortgesetzt, aber Sie können auch die Alt-Taste oder STRG + UMSCHALTTASTE gedrückt halten, nachdem Sie die Größe oder die Position zum Überschreiben der Andockpunkte gestartet haben.  Weitere Informationen finden Sie unter [Alternative Verhaltens Tastenkombinationen](keyboard-shortcuts.md#alternate-behavior). 
 
-In unserem Beispiel haben die vier Komponenten, aus denen die dritte Zeile der Adresse besteht, alle genau die gleiche Breite. Dieses Layout ist möglicherweise nicht optimal, da Namen von Städten häufig länger als Namen von US-Bundesstaaten sind. Das Texteingabefeld für Länder/Regionen ist aufgrund der Länge seiner Bezeichnung kurz.
-
-Deaktivieren Sie zum Optimieren dieses Raums die Option **An Spalten ausrichten** im rechten Bereich, und halten Sie die ALT-TASTE gedrückt, während Sie Größe und die Position dieser Karten anpassen. Wenn Sie die ALT-TASTE gedrückt halten, weisen alle Steuerelemente schwarze Beschriftungen auf. Dieses Verhalten ist beabsichtigt, damit die Steuerelementnamen lesbar sind.
-
-![Positionieren und Ändern der Größe bei gedrückter ALT-TASTE](./media/working-with-form-layout/delivery-address-alt-resize.png)
+In unserem Beispiel haben die vier Komponenten, aus denen die dritte Zeile der Adresse besteht, alle genau die gleiche Breite. Dieses Layout ist möglicherweise nicht optimal, da Namen von Städten häufig länger als Namen von US-Bundesstaaten sind. Das Texteingabefeld für Länder/Regionen ist aufgrund der Länge seiner Bezeichnung kurz.  Um diesen Bereich zu optimieren, deaktivieren Sie im rechten Bereich die Option **an Spalten** ausrichten, und halten Sie die Alt-Taste oder STRG + UMSCHALTTASTE gedrückt, nachdem Sie mit der Größe und Position dieser Karten begonnen haben. Geben Sie unter
 
 Nach sorgfältiger Positionierung weist das Ergebnis entsprechende Größen für jedes Feld und einen gleichmäßigen horizontalen Abstand zwischen Feldern auf:
 
@@ -195,7 +191,7 @@ Was sind zusammengefasst die Unterschiede zwischen der Aktivierung und Deaktivie
 | Verhalten | „An Spalten ausrichten“ ein | „An Spalten ausrichten“ aus |
 | --- | --- | --- |
 | Bei Größenänderung erfolgt eine Ausrichtung an |Anzahl der von Ihnen gewählten Spalten:<br>1, 2, 3, 4, 6 oder 12 |12 Spalten |
-| Ausrichten bei Größenänderung kann außer Kraft gesetzt werden |Nein |Ja, mit der ALT-TASTE |
+| Ausrichten bei Größenänderung kann außer Kraft gesetzt werden |Nein |Ja, mit alt oder STRG + UMSCHALTTASTE nach dem Start der Größenänderung |
 | Das Layout von Karten wird zwischen Zeilen neu angeordnet (mehr dazu später) |Ja |Nein |
 
 ## <a name="set-width-and-height"></a>Breite und Höhe festlegen
