@@ -1,24 +1,24 @@
 ---
 title: Freigeben von in der Canvas-Apps verwendeten Ressourcen | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie Ressourcen freigeben, die ihre Canvas-app in Power Apps verwendet.
-author: archnair
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 06/28/2016
-ms.author: archanan
+ms.date: 02/03/2020
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0dec0f593dee36cbdcff62667177c194abfc6e0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a1385e45fbbd932e0575c5c5b69b051dc292c824
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732473"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282330"
 ---
 # <a name="share-canvas-app-resources-in-power-apps"></a>Freigeben von Canvas-App-Ressourcen in Power apps
 
@@ -40,11 +40,21 @@ Sie können auch Verbindungen, benutzerdefinierte Connectors und ein lokales Dat
 
 ## <a name="connections"></a>Verbindungen
 
-Einige Typen von Verbindungen, z. B. SQL Server, werden automatisch freigegeben. Andere erfordern jedoch, dass Benutzer eigene Verbindungen mit der Datenquelle oder den Datenquellen in der App erstellen.
+Einige Verbindungen (z. b. SQL Server mit SQL-oder Windows-Authentifizierung) werden implizit für die APP frei [gegeben](share-app-resources.md#implicit-sharing) , wenn Sie die APP für andere Benutzer freigeben. Andere Verbindungen erfordern, dass Benutzer eigene Verbindungen erstellen (z. b. onedrive for Business oder SQL Server mit Azure AD Authentifizierung).
 
-Auf [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) können Sie bestimmen, ob eine Verbindung automatisch freigegeben wird, und Sie können Freigabeberechtigungen aktualisieren. Klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, und klicken oder tippen Sie anschließend auf **Verbindungen**. Wenn die Registerkarte **Freigabe** angezeigt wird, wird die Verbindung automatisch freigegeben.
+Sie können bestimmen, ob eine Verbindung automatisch als Teil der APP freigegeben wird, wenn Sie die APP für andere Benutzer freigeben. ermöglicht Ihnen das Aktualisieren von Freigabe Berechtigungen. Wechseln Sie zu diesem Zweck zu make.powerapps.com, und wählen Sie **Daten** -> **Verbindungen** von Links Navigation aus. Wählen Sie dann die erforderliche Verbindung aus. Wenn die Schaltfläche **Freigeben** bei der oberen Navigation angezeigt wird oder wenn die Option **Freigeben** angezeigt wird, wenn Sie *Weitere Befehle* (...) auswählen, kann die ausgewählte Verbindung für andere Benutzer freigegeben werden.
 
-  ![Registerkarte „Freigeben“ auf der Seite für Verbindungsdetails](./media/share-app-resources/shared-connections.png)
+  ![Keine Freigabe für onedrive for Business](./media/share-app-resources/shared-connections-odb.png)
+
+  ![SQL-Authentifizierungs Verbindung für SQL Server freigeben](./media/share-app-resources/shared-connections-sqlauth.png)
+
+### <a name="implicit-sharing"></a>Implizite Freigabe
+
+Wenn Sie eine APP freigeben, die eine Verbindung verwendet, die freigegeben werden kann, wird die APP-Verbindung implizit gemeinsam mit der APP frei **gegeben** . Beispielsweise wird die folgende Meldung angezeigt, wenn Sie zu make.powerapps.com wechseln, **apps**auswählen, eine App auswählen, die eine solche Verbindung verwendet, *Weitere Befehle* auswählen (...) und dann **Freigeben**:
+
+  ![Warnung zur impliziten Berechtigung](./media/share-app-resources/share-app-implicit-permission.png)
+
+Wenn Sie die ausgewählte APP **bestätigen** und für andere Benutzer freigeben auswählen, wird die APP-Verbindung implizit für diese Benutzer gemeinsam mit der APP freigegeben.
 
 ## <a name="on-premises-data-gateways"></a>Lokale Datengateways
 Wenn Sie eine App erstellen und freigeben, die Daten aus einer lokalen Quelle enthält, werden das [lokale Datengateway](gateway-management.md) selbst und bestimmte Typen von Verbindungen mit diesem Gateway automatisch freigegeben. Sie können jede Verbindung, die nicht automatisch freigegeben wird, manuell freigeben (wie im vorherigen Abschnitt gezeigt) oder die Benutzer durch die App auffordern lassen, eigene Verbindungen zu erstellen. So zeigen Sie die Verbindung(en) an, mit denen ein Gateway konfiguriert wurde:
