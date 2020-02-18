@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: ed27dfe0846924d14de7d7837977d73c9f02e1c4
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: c32a87a38029f4a01750f04ecc2f9c0d0314ac66
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76974870"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282383"
 ---
 <div id="main"
    class="v2">
@@ -350,11 +350,11 @@ ms.locfileid: "76974870"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Admin Center für die Power-Plattform</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">Verwalten der Power-Plattform</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-documentation">Verwalten der Power-Plattform</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Hilfe und Support</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Abonnieren der Freigabewelle 2 für 2019</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Einstellungen verwalten</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Whitepaper: Verwalten einer Entwicklungsplattform mit geringem Code</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/opt-in-early-access-updates">Abonnieren von Updates für den frühen Zugriff</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Sicherheitskonzepte</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Einstellungen verwalten</a></p>                                    
                                  </div>
                               </div>
                            </div>
@@ -411,9 +411,28 @@ ms.locfileid: "76974870"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Umgebung und Sicherheit</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-administration">Verwalten von Umgebungen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">Konfigurieren der Umgebungssicherheit</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-view-apps">Anzeigen von Apps in einer Umgebung</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-overview">Umgebungen – Übersicht</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/trial-environments">Kostenlose Testumgebungen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">Umgebungssicherheit</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                       <img alt="" src="media/index/i_guidelines.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">Ressourcen</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Whitepaper: Verwalten der Unternehmensbereitstellung mit Power Apps und Power Automate</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://powerapps.microsoft.com/blog/introducing-the-powerapps-center-of-excellence-starter-kit/">Starter Kit für Power Apps Center of Excellence (CoE)</a></p>
                                  </div>
                               </div>
                            </div>

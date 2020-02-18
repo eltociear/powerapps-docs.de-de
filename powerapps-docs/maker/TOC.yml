@@ -1018,6 +1018,8 @@
                   href: ./model-driven-apps/create-edit-views-app-designer.md
                 - name: Auswählen und konfigurieren von Spalten in Ansichten
                   href: ./model-driven-apps/choose-and-configure-columns.md
+                - name: Erstellen oder Bearbeiten von Filtern in App-Ansichten
+                  href: ./model-driven-apps/create-edit-view-filters.md
                 - name: 'Exemplarische Vorgehensweisen: Ansichten'
                   items:
                     - name: Bearbeitbar machen von Rastern
