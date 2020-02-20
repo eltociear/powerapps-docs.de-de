@@ -1,6 +1,6 @@
 ---
 title: Erstellen eines Berichts mithilfe des Berichts-Assistenten | Microsoft-Dokumentation
-description: Erstellen eines Berichts mithilfe des Berichts-Assistenten in Power apps
+description: Erstellen eines Berichts mithilfe des Berichts-Assistenten in Power Apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -18,7 +18,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: 8c7bde8d3aa5406a7ddcc5ecb2df4c2c7db7051e
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74733272"
@@ -28,67 +28,67 @@ ms.locfileid: "74733272"
 
 Verwenden Sie den Berichts-Assistenten, um Berichte mit Diagrammen und Tabellen zu erstellen, mit denen Sie Ihre Daten problemlos analysieren können. 
 
-Alle Berichte, die mit dem Berichts-Assistenten erstellt werden, sind Abruf basierte Berichte. Beachten Sie, dass alle mit dem Berichts-Assistenten generierten Berichte im Querformat gedruckt werden.
+Alle Berichte, die mit dem Berichts-Assistenten erstellt werden, sind abrufbasierte Berichte. Beachten Sie, dass alle mit dem Berichts-Assistenten generierten Berichte im Querformat gedruckt werden.
 
-## <a name="create-a-new-report"></a>Neuen Bericht erstellen
+## <a name="create-a-new-report"></a>Erstellen eines neuen Berichts
 
-1. Wählen Sie im linken Navigationsbereich den Bereich Berichte aus.  
-2. Klicken Sie in der Befehlsleiste auf **neu**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Erstellen eines neuen Berichts](media/newreport.png "Neuen Bericht erstellen")
-  
-3. Ein **Bericht:** der Bildschirm neuer Bericht wird angezeigt. Überlassen Sie für **Berichtstyp** die Standardauswahl, **melden** Sie den Bericht, und wählen Sie die Schaltfläche **Berichts-Assistent** aus. 
+1. Wählen Sie im linken Navigationsbereich den Bereich „Berichte“ aus.  
+2. Wählen Sie in der Befehlsleiste **Neu** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Berichts-Assistent](media/report_wizard.png "Berichts-Assistent")
+    > ![Erstellen eines neuen Berichts](media/newreport.png "Erstellen eines neuen Berichts")
   
-4. Überprüfen Sie auf dem nächsten Bildschirm die Standardauswahl, und klicken Sie dann auf **weiter**.
+3. Der Bildschirm **Bericht: Neuer Bericht** wird angezeigt. Behalten Sie für **Berichtstyp** die Standardauswahl **Bericht des Berichts-Assistenten** bei, und wählen Sie die Schaltfläche **Berichts-Assistenten** aus. 
+
+    > [!div class="mx-imgBorder"]
+    > ![Berichts-Assistent](media/report_wizard.png "Bildschirm „Berichts-Assistent“")
+  
+4. Behalten Sie im nächsten Bildschirm die Standardauswahl bei, und wählen Sie dann **Weiter** aus.
  
     > [!div class="mx-imgBorder"]
-    > ![Berichts-Assistent](media/report_wizard_1.png "Berichts-Assistent")
+    > ![Berichts-Assistent](media/report_wizard_1.png "Bildschirm „Berichts-Assistent“")
    
-4. Geben Sie auf dem Bildschirm **Berichts Eigenschaften** einen Namen für den Bericht ein, und wählen Sie dann den Datensatz aus, der in den Bericht eingeschlossen werden soll. Klicken Sie anschließend auf **weiter**
+4. Geben Sie im Bildschirm **Berichtseigenschaften** einen Namen für den Bericht ein, und wählen Sie dann den Datensatz aus, der in den Bericht eingeschlossen werden soll. Klicken Sie dann auf **Weiter**.
  
     > [!div class="mx-imgBorder"]
-    > ![Berichts Eigenschaften-Bildschirm](media/report_wizard_2.png "Berichts Eigenschaften-Bildschirm")
+    > ![Bildschirm „Berichtseigenschaften“](media/report_wizard_2.png "Bildschirm „Berichtseigenschaften“")
   
-5.  Wählen Sie auf der Seite **Datensätze auswählen, die im Bericht** eingeschlossen werden sollen die Filter aus, um zu bestimmen, welche Datensätze in den Bericht eingeschlossen werden. Wenn Sie z. b. nur Ergebnisse für Datensätze anzeigen möchten, die in den letzten 60 Tagen geändert wurden, können Sie diesen Filter in diesem Bildschirm festlegen. Wenn Sie nicht möchten, dass die Daten gefiltert werden, wählen Sie **Löschen**aus.
+5.  Wählen Sie im Bildschirm **Wählen Sie die Datensätze aus, die im Bericht enthalten sein sollen.** die Filter aus, um zu bestimmen, welche Datensätze in den Bericht eingeschlossen werden. Wenn Sie z. B. nur Ergebnisse für Datensätze anzeigen möchten, die in den letzten 60 Tagen geändert wurden, können Sie diesen Filter in diesem Bildschirm festlegen. Wenn Sie nicht möchten, dass die Daten gefiltert werden, wählen Sie **Löschen** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Datensätze auswählen, die in den Bericht eingeschlossen werden sollen *](media/report_wizard_3.png "Datensätze auswählen, die in den Bericht aufgenommen werden sollen")
+    > ![Wählen Sie die Datensätze aus, die im Bericht enthalten sein sollen.*](media/report_wizard_3.png "Auswählen der Datensätze, die im Bericht enthalten sein sollen")
   
-6. Wählen Sie auf dem Bildschirm Layout- **out-Felder** das Layout des Berichts aus. Wählen Sie **hier klicken, um eine Gruppierung hinzuzufügen,** und wählen Sie aus, wie die Daten gruppiert werden sollen.
+6. Wählen Sie im Bildschirm **Layout für Felder** das Layout des Berichts aus. Wählen Sie **Klicken Sie hier, um eine Gruppierung hinzuzufügen.** aus, und wählen Sie aus, wie die Daten gruppiert werden sollen.
 
     > [!div class="mx-imgBorder"]
     > ![Layout für Felder](media/report_wizard_4.png "Layout für Felder")
 
-7. Wählen Sie den Daten **Banktyp** und die **Spalte** für die Daten aus, die im Bericht gruppiert werden sollen. Wenn Sie Ihre Auswahl getroffen haben, wählen Sie **OK**aus.
+7. Wählen Sie den **Datensatztyp** und die **Spalte** für die Daten aus, die im Bericht gruppiert werden sollen. Wenn Sie Ihre Auswahl getroffen haben, wählen Sie **OK** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![DD-Gruppierungs Bildschirm](media/report_wizard_5.png "Gruppierungs Bildschirm hinzufügen")
+    > ![Bildschirm „Gruppierung hinzufügen“](media/report_wizard_5.png "Bildschirm „Gruppierung hinzufügen“")
   
-8. Wählen Sie **Klicken Sie hier, um eine Spalte** zu Datenspalten hinzuzufügen, die sich auf den im vorherigen Schritt ausgewählten Datensatz-Typ beziehen.  
+8. Wählen Sie **Hier klicken, um eine Spalte hinzuzufügen.** für Spalten mit Daten aus, die sich auf den im vorherigen Schritt ausgewählten Datensatztyp beziehen.  
 
     > [!div class="mx-imgBorder"]
-    > ![Gruppierungs Bildschirm hinzufügen](media/report_wizard_6.png "Gruppierungs Bildschirm hinzufügen")
+    > ![Bildschirm „Gruppierung hinzufügen“](media/report_wizard_6.png "Bildschirm „Gruppierung hinzufügen“")
 
-9. Wählen Sie auf dem Bildschirm **Spalte hinzufügen** die Daten aus, die für die Spalte angezeigt werden sollen, und klicken Sie dann auf **OK**. 
+9. Wählen Sie im Bildschirm **Spalte hinzufügen** die Daten aus, die für die Spalte angezeigt werden sollen, und wählen Sie dann **OK** aus. 
 
     > [!div class="mx-imgBorder"]
-    > ![Spalten Bildschirm hinzufügen](media/report_wizard_7.png "Spalten Bildschirm hinzufügen")
+    > ![Bildschirm „Spalte hinzufügen“](media/report_wizard_7.png "Bildschirm „Spalte hinzufügen“")
   
-10. Wiederholen Sie den vorherigen Schritt für alle zusätzlichen Spalten, die Sie hinzufügen möchten. Wenn Sie den Vorgang abgeschlossen haben, können Sie auf dem Bildschirm zum Anordnen **von Feldern** **auf weiter gehen.**
+10. Wiederholen Sie den vorherigen Schritt für alle zusätzlichen Spalten, die Sie hinzufügen möchten. Wenn Sie den Vorgang abgeschlossen haben, wählen Sie im Bildschirm **Layout für Felder** die Option **Weiter** aus.
  
     > [!div class="mx-imgBorder"]
-    > ![weiteren Spalten Bildschirm hinzufügen](media/report_wizard_8.png "Weiteren Spalten Bildschirm hinzufügen")
+    > ![Bildschirm „Weitere Spalte hinzufügen“](media/report_wizard_8.png "Bildschirm „Weitere Spalte hinzufügen“")
   
-11. Wählen Sie auf dem Bildschirm **Format Bericht formatieren** Sie den Bericht aus, und klicken Sie dann auf **weiter**.
+11. Wählen Sie im Bildschirm **Bericht formatieren** aus, wie der Bericht formatiert werden soll, und wählen Sie dann **Weiter** aus.
  
     > [!div class="mx-imgBorder"]
-    > ![Formatieren von Berichten](media/report_wizard_9.png "Berichts Bildschirm formatieren")
+    > ![Bericht formatieren](media/report_wizard_9.png "Bildschirm „Bericht formatieren“")
 
-12. Überprüfen Sie die Zusammenfassung des Berichts, und klicken Sie auf **weiter** und dann auf **Fertig**stellen. Dieser Bericht kann nun in der Liste der Berichte im System angezeigt werden.
+12. Überprüfen Sie die Zusammenfassung des Berichts, und wählen Sie **Weiter** und dann **Fertigstellen** aus. Dieser Bericht wird nun in der Berichtsliste im System angezeigt.
 
     > [!div class="mx-imgBorder"]
     > ![Bericht anzeigen](media/report_wizard_10.png "Anzeigen des Berichts")
@@ -96,9 +96,9 @@ Alle Berichte, die mit dem Berichts-Assistenten erstellt werden, sind Abruf basi
 ### <a name="see-also"></a>Siehe auch
 [Arbeiten mit Berichten](work-with-reports.md) 
 
-[Vorhandenen Bericht hinzufügen](add-existing-report.md)
+[Hinzufügen eines vorhandenen Berichts](add-existing-report.md)
 
-[Berichts Filter bearbeiten](edit-report-filter.md)
+[Filter „Bericht bearbeiten“](edit-report-filter.md)
 
 [Problembehandlung bei Daten, die nicht in einem Bericht angezeigt werden](troubleshoot-reports.md)
 

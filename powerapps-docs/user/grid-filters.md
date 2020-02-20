@@ -1,5 +1,5 @@
 ---
-title: Filtern von Daten in Rastern | MicrosoftDocs
+title: Filtern von Daten in Rastern | Microsoft-Dokumentation
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -14,139 +14,121 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2cfe55db19b5d8a7aeed86169a188455686cf81b
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 3489266ab82600c1d902dcd6ec0383b4ef6b408a
+ms.sourcegitcommit: db8005866acab318c2fa894db64df88aaf7e3785
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051965"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076060"
 ---
-# <a name="use-grid-filters"></a>Verwenden von Raster Filtern 
+# <a name="use-grid-filters"></a>Verwenden von Rasterfiltern 
 
-Raster in der vereinheitlichten Oberfläche wurden verbessert, um die Datenmenge zu erhöhen, die auf dem Bildschirm angezeigt werden kann. Nun können Sie aus vielen verschiedenen Filteroptionen für eine Spalte auswählen. der Typ der Daten in der Spalte bestimmt, welche Filteroptionen verfügbar sind. Beispielsweise weist die Spalte **Vollständiger Name** im Feld **Kontakte** verschiedene Filteroptionen auf als die Spalte **Aktivitätstyp** im **Aktivitäts Raster.**
+Raster in der einheitlichen Oberfläche wurden verbessert, um die Datenmenge zu erhöhen, die auf dem Bildschirm angezeigt werden kann. Sie können jetzt aus vielen verschiedenen Filteroptionen für eine Spalte auswählen. Der Datentyp der Spalte bestimmt, welche Filteroptionen verfügbar sind. Die Spalte **Vollständiger Name** im Raster **Kontakte** weist beispielsweise andere Filteroptionen als die Spalte **Aktivitätstyp** im Raster **Aktivitäten** auf.
 
 
    > [!div class="mx-imgBorder"]
-   > ![Raster Filterung](media/filter-options.png "Raster Filterung")
+   > ![Rasterfilterung](media/filter-options.png "Rasterfilterung")
    
 
-## <a name="grid-and-filter-navigation"></a>Raster-und Filter Navigation
+## <a name="grid-and-filter-navigation"></a>Raster- und Filternavigation
 
-Wenn Sie Daten in einem Raster filtern, speichert die Haupt Raster Seite den Filter, die Sortierreihenfolge und den Seiten Zustand, wenn Sie zu der Seite navigieren und dann zur Seite zurückkehren. Dies funktioniert genauso, wenn Daten nach Schnellsuche, Spalten Filterung, Seitenzahl usw. gefiltert werden. 
-
-   > [!div class="mx-imgBorder"]
-   > ![Wenn Sie zurück zur Seite navigieren, wird Sie in demselben Zustand geöffnet.](media/grid-remember-state-on-back-navigate.gif "Wenn Sie zurück zur Seite navigieren, wird Sie in demselben Zustand geöffnet.")
-
-Die Seitensprung Leiste verwendet das erste sortierte Feld. Wenn keine Änderung an der Sortierreihenfolge vorgenommen wurde, verwendet die Sprung Leiste das primäre Feld.
+Wenn Sie Daten in einem Raster filtern, speichert die Hauptseite des Rasters den Filter, die Sortierreihenfolge und den Seitenzustand, wenn Sie von der Seite weg navigieren und dann zurückkehren. Die gleiche Funktionsweise ist auch gegeben, wenn die Daten z. B. nach Schnellsuche, Spalten oder Seitenzahl gefiltert sind. 
 
    > [!div class="mx-imgBorder"]
-   > ![Filter auf der Sprung Leiste auswählen](media/jumpbar-filter-on-sorted-column.gif "Filter auf der Sprung Leiste auswählen")
+   > ![Seite wird im gleichen Zustand geöffnet, wenn zurücknavigiert wird](media/grid-remember-state-on-back-navigate.gif "Seite wird im gleichen Zustand geöffnet, wenn zurücknavigiert wird")
+
+Die Navigationsleiste der Seite verwendet das erste sortierte Feld. Wenn keine Änderung an der Sortierreihenfolge vorgenommen wurde, verwendet die Navigationsleiste das primäre Feld.
+
+   > [!div class="mx-imgBorder"]
+   > ![Auswahl eines Filters auf der Navigationsleiste](media/jumpbar-filter-on-sorted-column.gif "Auswahl eines Filters auf der Navigationsleiste")
   
-Wenn Sie das Hierarchie Symbol auswählen, navigieren Sie zur Hierarchie Ansicht.
+Wenn Sie auf das Hierarchiesymbol klicken, wechseln Sie zur Hierarchieansicht.
 
    > [!div class="mx-imgBorder"]
-   > ![Hierarchie Symbol](media/grid-row-hierarchy-icon.png "Symbol "Hierarchie"")
+   > ![Hierarchiesymbol](media/grid-row-hierarchy-icon.png "Hierarchiesymbol")
 
-Sie können auch primäre Feld-und Nachschlage Felder in einer neuen Registerkarte oder einem neuen Fenster öffnen.
+Sie können auch das primäre Feld und Nachschlagefelder in einer neuen Registerkarte oder in einem neuen Fenster öffnen.
 
    > [!div class="mx-imgBorder"]
-   > ![In neuem Fenster öffnen](media/newtab.png "[In neuem Fenster öffnen")
-   
-   
-### <a name="known-issue"></a>Bekannte Probleme
+   > ![In neuem Fenster öffnen](media/newtab.png "In neuem Fenster öffnen")
+  
 
-Wenn Sie das Standard Anzeige Format für Number, Currency, Time oder Date ändern und dann Daten in einem Raster filtern, zeigt der Filter das ausgewählte Anzeige Format nicht an. Die Filter werden weiterhin im Standardformat des Systems angezeigt, und in einigen Fällen funktioniert das Filtern möglicherweise überhaupt nicht. 
+## <a name="preview-new-grid-filters-and-search-option"></a>Vorschauversion: Neue Rasterfilter und Suchoption
 
-Um das Problem zu beheben, legen Sie das Anzeige Format für Anzahl, Währung, Uhrzeit und Datum auf die Standardeinstellung zurück. 
-
-1. Wählen Sie in der oberen rechten Ecke das Zahnrad Symbol ![Zahnrad Symbol](media/selection-rule-gear-button.png)aus, und wählen Sie dann **Personalisierungs Einstellungen**aus.
-
-2. Ändern Sie auf der Registerkarte **Formate** die Werte für Anzahl, Währung, Uhrzeit und Datum wieder in die Standardeinstellung.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Format Einstellungen](media/default-format.png "Format Einstellungen")
-    
-    
-  Wir arbeiten an diesem Problem. Überprüfen Sie die Verfügbarkeit. 
-
-
-
-## <a name="preview-new-grid-filters-and-search-option"></a>Vorschau: neue Raster Filter und Suchoption
-
-Dieser Abschnitt ist für Funktionen für den frühen Zugriff vorgesehen. Sie können sich früh entscheiden, diese Features in Ihrer Umgebung zu aktivieren. Auf diese Weise können Sie diese Features testen und Sie dann in ihren Umgebungen übernehmen. Informationen dazu, wie Sie diese Features aktivieren, finden [Sie unter Opt in 2020 Release Wave 1 Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+In diesem Abschnitt werden Early-Access-Features behandelt. Sie können diese Features frühzeitig in Ihrer Umgebung aktivieren. So können Sie diese testen und dann in Ihre Umgebungen einführen. Weitere Informationen zur Aktivierung dieser Features finden Sie unter [Aktivieren von Early-Access-Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
 
 
    > [!NOTE]
-   > Ändern Sie das Standard Anzeige Format für Zeit, Anzahl, Währung, Uhrzeit oder Datum nicht, da hierdurch ein Problem verursacht wird. Weitere Informationen finden Sie unter [bekanntes Problem](https://docs.microsoft.com/powerapps/user/grid-filters#known-issue).
+   > Ändern Sie das Standardanzeigeformat für Uhrzeiten, Datumsangaben, Zahlen oder Währungen nicht, da dies zu Problemen führen kann. Weitere Informationen finden Sie unter [Bekannte Probleme](https://docs.microsoft.com/powerapps/user/grid-filters#known-issue).
 
-### <a name="lookup-field-column"></a>Spalte für Nachschlage Feld
+### <a name="lookup-field-column"></a>Nachschlagefeldspalte
 
-Wenn Sie nach einer Such Spalte filtern, können Sie aus einer Liste von Datensätzen auswählen, nach denen gefiltert werden soll, anstatt Sie manuell einzugeben. Beispielsweise können Sie in einer **primären Kontakt** Such Spalte den Kontaktnamen aus der Liste der Datensätze auswählen, nach denen gefiltert werden soll.
+Wenn Sie eine Nachschlagespalte filtern, können Sie aus einer Liste die zu filternden Datensätze auswählen, anstatt die Daten manuell einzugeben. In der Nachschlagespalte **Hauptkontakt** können Sie beispielsweise den Kontaktnamen aus der Datensatzliste auswählen, nach dem gefiltert werden soll.
 
    > [!div class="mx-imgBorder"]
-   > ![Such Filterung](media/lookup-filter.png "Such Filterung")
+   > ![Nachschlagefilterung](media/lookup-filter.png "Nachschlagefilterung")
 
 ### <a name="date-filter"></a>Datumsfilter
 
-Der robuste **Datums** Filter umfasst viele verschiedene Werte, aus denen Sie auswählen können, z. b. ein **, um nach** einem exakten Datum zu suchen, oder das **Nächste X-Geschäftsjahr** oder **in einem Geschäfts Zeitraum** , um nach Jahr oder Quartal zu suchen.
+Der robuste Filter **Datum** enthält viele verschiedene Werte wie **Am**, um nach einem genauen Datum zu suchen, oder **Nächste x Geschäftsjahre** bzw. **Im Finanzzeitraum**, um nach Jahr oder Quartal zu suchen.
 
    > [!div class="mx-imgBorder"]
-   > ![Datums Filterung](media/date-filter.png "Datums Filterung")
+   > ![Datumsfilterung](media/date-filter.png "Datumsfilterung")
 
-### <a name="filter-the-list-of-activities"></a>Filtern der Liste der Aktivitäten
+### <a name="filter-the-list-of-activities"></a>Filtern der Aktivitätenliste
 
-Sie können die Liste der Aktivitäten filtern, um nur diejenigen anzuzeigen, die für Sie von Interesse sind. Beispielsweise können Sie die Aktivitäten, die Sie in einer Ansicht sehen, mit dem Aktivitätstyp Filter weiter einschränken. Mit dem Aktivitätstyp Filter können Sie Aktivitäten filtern, die auf dem Typ basieren, z. b. e-Mail, Aufgabe, Telefonanruf usw.
+Sie können die Aktivitätenliste so filtern, dass nur relevante Einträge angezeigt werden. Sie können die Aktivitäten in einer Ansicht beispielsweise einschränken, indem Sie nach Aktivitätstyp filtern. Aktivitäten können also nach ihrem Typ (E-Mail, Aufgabe, Telefonanruf usw.) gefiltert werden.
 
 
    > [!div class="mx-imgBorder"]
-   > ![Aktivitäts Filter](media/activity_filter.png "Aktivitäts Filter")
+   > ![Aktivitätsfilter](media/activity_filter.png "Aktivitätsfilter")
 
 
-#### <a name="known-issue"></a>Bekannte Probleme
+### <a name="known-issue"></a>Bekanntes Problem
 
-Wenn Sie das Standard Anzeige Format für Number, Currency, Time oder Date ändern und dann Daten in einem Raster filtern, zeigt der Filter das ausgewählte Anzeige Format nicht an. Die Filter werden weiterhin im Standardformat des Systems angezeigt, und in einigen Fällen funktioniert das Filtern möglicherweise überhaupt nicht. 
+Wenn Sie das Standardanzeigeformat für Zahlen, Währungen, Uhrzeiten und Datumsangaben ändern und anschließend die Daten in einem Raster filtern, zeigt der Filter das ausgewählte Anzeigeformat nicht an. Die Filter werden weiterhin im Standardformat des Systems angezeigt, und in einigen Fällen funktioniert das Filtern möglicherweise überhaupt nicht. 
 
-Um das Problem zu beheben, legen Sie das Anzeige Format für Anzahl, Währung, Uhrzeit und Datum auf die Standardeinstellung zurück. 
+Legen Sie das Anzeigeformat für Zahlen, Währungen, Uhrzeiten und Datumsangaben wieder auf die Standardeinstellung fest. 
 
-1. Wählen Sie in der oberen rechten Ecke das Zahnrad Symbol ![Zahnrad Symbol](media/selection-rule-gear-button.png)aus, und wählen Sie dann **Personalisierungs Einstellungen**aus.
+1. Klicken Sie in der rechten oberen Ecke auf das Zahnradsymbol ![Zahnradsymbol](media/selection-rule-gear-button.png) und anschließend auf **Personalisierungseinstellungen**.
 
-2. Ändern Sie auf der Registerkarte **Formate** die Werte für Anzahl, Währung, Uhrzeit und Datum wieder in die Standardeinstellung.
+2. Ändern Sie auf der Registerkarte **Formate** die Werte für Zahlen, Währungen, Uhrzeiten und Datumsangaben zurück in die Standardeinstellung.
 
     > [!div class="mx-imgBorder"] 
-    > ![Format Einstellungen](media/default-format.png "Format Einstellungen")
+    > ![Formateinstellungen](media/default-format.png "Formateinstellungen")
     
-    
-Wir arbeiten an diesem Problem. Überprüfen Sie die Verfügbarkeit. 
+Wir arbeiten an diesem Problem und veröffentlichen so schnell wie möglich Informationen zu einer Lösung.
+
   
 ### <a name="use-search-on-a-grid"></a>Verwenden der Suche in einem Raster
 
-Wenn Sie die Option **diese Ansicht suchen** auf einer Raster Seite verwenden, sucht das System in der Sicht, in der Sie sich gerade befinden, nach Daten. Im folgenden Beispiel führen Sie eine Suche im **Kontakt** Raster aus.
+Wenn Sie die Option **Diese Ansicht durchsuchen** auf einer Rasterseite verwenden, sucht das System nach Daten in der aktuellen Ansicht. Im folgenden Beispiel führen Sie eine Suche im Raster **Kontakte** durch.
 
-1. Wechseln Sie zum **Kontakt** Raster, und wählen Sie dann in der Liste der Ansichten **meine aktiven Kontakte** aus.
-
-    > [!div class="mx-imgBorder"]
-    > ![Meine aktive Kontaktansicht](media/myactive-contacts-view.png "Meine aktive Kontaktansicht")
-
-2. Wählen Sie **diese Ansicht durchsuchen** aus, um Daten in der Ansicht zu suchen, in der Sie sich befinden.
+1. Navigieren Sie zum Raster **Kontakte**, und wählen Sie dann **Meine aktiven Kontakte** aus der Ansichtsliste aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Such Ansicht](media/search-view.png "Diese Ansicht durchsuchen")
+    > ![Ansicht „Meine aktiven Kontakte“](media/myactive-contacts-view.png "Ansicht „Meine aktiven Kontakte“")
 
-Das System sucht in der Ansicht " **meine aktive Kontakte** " nach Daten und zeigt die Suchergebnisse an, indem die gleichen Spalten verwendet werden, die in der aktuellen Ansicht verwendet werden.
+2. Klicken Sie auf **Diese Ansicht durchsuchen**, um nach Daten in der aktuellen Ansicht zu suchen.
+
+    > [!div class="mx-imgBorder"]
+    > ![Suchansicht](media/search-view.png "Diese Ansicht durchsuchen")
+
+Das System durchsucht die Ansicht **Meine aktiven Kontakte** nach Daten und zeigt die Suchergebnisse an. Dabei werden die Spalten angezeigt, die in Ihrer aktuellen Ansicht verwendet werden.
 
    > [!div class="mx-imgBorder"]
-   > ![Such Ansicht](media/search-view2.png "Suchergebnisse im Befehl "diese Ansicht durchsuchen"")
+   > ![Suchansicht](media/search-view2.png "Suchergebnisse des Befehls „Diese Ansicht durchsuchen“")
 
 
-#### <a name="use-the-quick-find-search-experience"></a>Verwenden Sie die Schnellsuche
+#### <a name="use-the-quick-find-search-experience"></a>Verwenden der Schnellsuche
 
-Sie benötigen Administrator Berechtigungen, um zur alten Schnellsuche-Suchfunktion zurückzukehren, die die Schnellsuche-Sicht Definition einer Entität zum Durchführen von Such Vorgängen verwendet.
+Sie können zur alten Schnellsuche zurückkehren, bei der die Schnellsucheansichtdefinition einer Entität für die Suche verwendet wird. Dafür benötigen Sie jedoch Administratorrechte.
 
-1. Wählen Sie in der oberen rechten Ecke das Zahnrad Symbol ![Zahnrad Symbol](media/selection-rule-gear-button.png), und klicken Sie dann auf **Erweiterte Einstellungen**.
+1. Klicken Sie in der rechten oberen Ecke auf das Zahnradsymbol ![Zahnradsymbol](media/selection-rule-gear-button.png) und anschließend auf **Erweiterte Einstellungen**.
 
-2. Wechseln Sie zu **Einstellungen** > **Verwaltung** > **System Einstellungen**.
+2. Navigieren Sie zu **Einstellungen** > **Verwaltung** > **Systemeinstellungen**.
 
-3. Wählen Sie auf der Registerkarte **Allgemein** unter **Schnellsuche einrichten**die Option **Ja** aus, um die **Schnellsuche-Ansicht einer Entität für die Suche in Raster und unter Raster zu verwenden**.
+3. Wählen Sie auf der Registerkarte **Allgemein** unter **Schnellsuche einrichten** **Ja** für die Option **Use quick find view of an entity for searching on grids and sub-grids** (Schnellsucheansicht einer Entität für Suche in Rastern und Unterrastern verwenden) aus.
 
 
 

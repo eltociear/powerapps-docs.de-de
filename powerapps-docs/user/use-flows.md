@@ -1,5 +1,5 @@
 ---
-title: Verwenden der Energie Automatisierung zum Automatisieren von Prozessen in Modell gesteuerten apps | MicrosoftDocs
+title: Automatisieren von Prozessen mit Power Automate in modellgesteuerten Apps | Microsoft-Dokumentation
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -17,37 +17,37 @@ search.app:
 - D365CE
 ms.openlocfilehash: 784a12d7ab9c525ee8bb9f68ed8fc2188433d103
 ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/09/2019
 ms.locfileid: "73900383"
 ---
-# <a name="use-power-automate-to-automate-processes"></a>Verwenden der Energie Automatisierung zum Automatisieren von Prozessen
+# <a name="use-power-automate-to-automate-processes"></a>Verwenden von Power Automate zum Automatisieren von Prozessen
 
-Mit der Energie Automatisierung können Sie automatisierte Prozesse zwischen Ihren bevorzugten apps und Diensten erstellen. Innerhalb Ihrer App können Sie einen Flow auf einen oder mehrere Datensätze anwenden. 
+Power Automate ermöglicht Ihnen das Einrichten automatisierter Prozesse zwischen Ihren bevorzugten Apps und Diensten. Innerhalb Ihrer App können Sie einen Flow auf einen oder mehrere Datensätze anwenden. 
 
-Darüber hinaus können Sie die Energie Automatisierung über Ihre APP öffnen, um neue Flows anzuzeigen, zu bearbeiten oder zu erstellen.  Weitere Informationen: [Einstieg in die Energie Automatisierung](https://docs.microsoft.com/flow/getting-started)
+Außerdem können Sie Power Automate in Ihrer App öffnen, um Flows anzuzeigen oder zu bearbeiten bzw. neue Flows zu erstellen.  Weitere Informationen: [Erste Schritte mit Power Automate](https://docs.microsoft.com/flow/getting-started)
 
 ## <a name="manage-your-flows"></a>Verwalten Ihrer Flows 
-Verbinden Sie sich über Ihre APP mit der Strom Automatisierung, um Ihre Flows zu verwalten.
+Stellen Sie in Ihrer App eine Verbindung mit Power Automate her, um Ihre Flows zu verwalten.
   
 > [!NOTE]
-> Um die Energie Automatisierung über Ihre APP zu verwalten und auszuführen, muss die Energie Automatisierung in den System Einstellungen für Ihre Organisation aktiviert sein. Weitere Informationen: [Flows in Ihrer Organisation](https://docs.microsoft.com/flow/organization-q-and-a) 
+> Zum Verwalten und Ausführen von Power Automate in Ihrer App muss Power Automate in den Systemeinstellungen für Ihre Organisation aktiviert sein. Weitere Informationen:  [Flows in Ihrer Organisation](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. Wählen Sie in der Befehlsleiste **Flow**aus.  
+1. Wählen Sie in der Befehlsleiste **Flow** aus.  
   
    > [!div class="mx-imgBorder"]
-   > ![Menü "Energie automatisiert"](media/flow.png "Menü "Energie automatisiert"") 
+   > ![Menü „Power Automate“](media/flow.png "Menü „Power Automate“") 
   
 2. Die folgenden Optionen werden angezeigt:  
   
-   -   Wählen Sie **Flow erstellen** aus, um eine neue Browser Registerkarte zu öffnen und Sie zur Strom automatisierten Website zu leiten. Wählen Sie auf der Seite Energie Automatisierung die Option **weiter** , um eine vorhandene Vorlage oder **X** zu verwenden, um eine andere Vorlage zu schließen, auszuwählen oder zu erstellen.  
+   -   Wählen Sie **Flow erstellen** aus, um eine neue Browserregisterkarte zu öffnen, auf der Sie zur Power Automate-Website weitergeleitet werden. Klicken Sie auf der Power Automate-Seite auf **Weiter**, um eine vorhandene Vorlage zu verwenden, oder auf **X**, um die Seite zu schließen bzw. eine andere Vorlage auszuwählen oder zu erstellen.  
   
-   -   Wählen Sie **Flows** anzeigen aus, um eine neue Browser Registerkarte zu öffnen und Sie zur Strom automatisierten Website zu leiten, auf der alle Flows in der Flow-Umgebung angezeigt werden.  
+   -   Klicken Sie auf **Ihre Flows anzeigen**, um eine neue Browserregisterkarte zu öffnen, auf der Sie zur Power Automate-Website weitergeleitet werden. Hier werden alle Flows in der Flow-Umgebung angezeigt.  
   
-   -   Wählen Sie für **Flow anmelden** aus, um eine Verbindung mit der Strom Automatisierung herzustellen und verfügbare Flows anzuzeigen Dies wird nur angezeigt, wenn Sie zurzeit nicht für die Energie Automatisierung angemeldet sind.   
+   -   Klicken Sie auf **Beim Flow anmelden**, um sich mit Power Automate zu verbinden und alle Flows anzuzeigen, die Sie ausführen können. Diese Option wird nur angezeigt, wenn Sie aktuell nicht bei Power Automate angemeldet sind.   
 
-    Weitere Informationen zum Erstellen eines Flows finden [Sie unter Get Started with Power automatisieren](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow) .  
+    Weitere Informationen zum Erstellen eines Flows finden Sie unter [Erste Schritte mit Power Automate](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
     
  
     

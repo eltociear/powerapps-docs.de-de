@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Tastenkombinationen in Power apps | MicrosoftDocs
+title: Verwenden von Tastenkombinationen in Power Apps | Microsoft-Dokumentation
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -17,192 +17,192 @@ search.app:
 - D365CE
 ms.openlocfilehash: 7fbcbe315f3af9554d53329f35469af4ca236181
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74733191"
 ---
-# <a name="use-keyboard-shortcuts-in-power-apps"></a>Verwenden von Tastenkombinationen in Power apps
+# <a name="use-keyboard-shortcuts-in-power-apps"></a>Verwenden von Tastenkombinationen in Power Apps
 
-Tastenkombinationen bieten Ihnen eine alternative Möglichkeit, häufige Aufgaben auszuführen, anstatt die Maus zu verwenden oder auf den Finger zu tippen. Sie helfen bei der nahtlosen Navigation der-Schnittstelle. Die folgenden Tastenkombinationen gelten für apps. 
+Tastenkombinationen bieten eine alternative Möglichkeit, häufige Aufgaben auszuführen, anstatt die Maus zu verwenden oder zu tippen. Sie erleichtern die flüssige Navigation auf der Benutzeroberfläche. Folgende Tastenkombinationen gelten App-übergreifend. 
 
 > [!NOTE]
-> Die hier beschriebenen Tastenkombinationen beziehen sich auf das USA Tastaturlayout. Schlüssel auf anderen Tastaturlayouts entsprechen möglicherweise nicht exakt den Schlüsseln auf einer US-Tastatur. 
+> Die hier beschriebenen Tastenkombinationen beziehen sich auf das US-amerikanische Tastaturlayout. Tasten anderer Tastaturlayouts entsprechen möglicherweise nicht exakt den Tasten auf einer US-Tastatur. 
 
-## <a name="form-shortcuts"></a>Formular Verknüpfungen
+## <a name="form-shortcuts"></a>Tastenkombinationen für Formulare
 
 <!--does the N/A mean not available? If so, why include them? -->
 
 
-|Task  | Einheitliche Oberfläche |
+|Aufgabe  | Einheitliche Oberfläche |
 |---------|---------|
-|Vervollständigen Sie den Befehl für die aktive Option oder die Schaltfläche.|  EINGABETASTE|
-|Abbrechen eines Befehls oder Schließen einer ausgewählten Liste oder eines ausgewählten Dialog Felds| ESC-TASTE|
-|Speichern| Strg+S |
-|Speichern und schließen| Nicht zutreffend|
-|Bearbeitung abbrechen und schließen (schließen) |ESC-TASTE|
-|Löschen des Datensatzes (wenn sich Formulare im Bearbeitungsmodus befinden)| Nicht zutreffend|
-|Speichern und anschließendes Öffnen eines neuen Formulars (speichern und neu) (wenn sich Formulare im Bearbeitungsmodus befinden)| Nicht zutreffend|
-|Öffnen Sie das Nachschlage Menü mit den zuletzt verwendeten Elementen in alphabetischer Reihenfolge.| Pfeil nach unten|
-|Dropdown Liste für Suche öffnen| EINGABETASTE|
-|Schließen der Dropdown Liste "Suche"|ESC-TASTE|
-|Öffnet einen Datensatz, der in der Suche mit Formularen im Bearbeitungsmodus gefunden wurde.| EINGABETASTE|
-|Hinzufügen eines Artikels zu einer e-Mail| Nicht zutreffend|
-|E-Mail-Vorlage anwenden (beim Bearbeiten einer e-Mail-Nachricht)| Nicht zutreffend|
+|Befehl für aktive Option oder Schaltfläche abschließen|  EINGABETASTE|
+|Befehl abbrechen oder ausgewählte Liste bzw. ausgewähltes Dialogfeld schließen| ESC-TASTE|
+|Speichern| STRG+S |
+|Speichern und schließen| N/V|
+|Änderungen verwerfen und schließen (Schließen) |ESC-TASTE|
+|Datensatz löschen (wenn sich das Formular im Bearbeitungsmodus befindet)| N/V|
+|Speichern und neues Formular öffnen (Speichern und neu) (wenn sich das Formular im Bearbeitungsmodus befindet)| N/V|
+|Nachschlagemenü mit zuletzt verwendeten Elementen in alphabetischer Reihenfolge öffnen| Pfeil nach unten|
+|Dropdownliste zum Nachschlagen öffnen| EINGABETASTE|
+|Dropdownliste zum Nachschlagen schließen|ESC-TASTE|
+|Datensatz öffnen, der über das Nachschlagen ermittelt wurde (Formulare im Bearbeitungsmodus)| EINGABETASTE|
+|Artikel zu einer E-Mail hinzufügen| N/V|
+|E-Mail-Vorlage anwenden (beim Bearbeiten einer E-Mail-Nachricht)| N/V|
 
-## <a name="form-navigation-shortcuts"></a>Formular Navigations Verknüpfungen
+## <a name="form-navigation-shortcuts"></a>Tastenkombinationen zur Navigation in Formularen
 
-|Task | Einheitliche Oberfläche |
+|Aufgabe | Einheitliche Oberfläche |
 |---------|---------|
-|Wechseln Sie zur nächsten Option, Optionsgruppe oder Feld.|Registerkarte|
-|Wechseln zur vorherigen Option, Optionsgruppe oder Feld| UMSCHALT+TAB |
-|Wechseln zwischen Optionen in einer geöffneten Liste oder zwischen Optionen in einer Gruppe von Optionen|Pfeiltasten|
-|Zur Befehlsleiste wechseln| Nicht zutreffend |
-|Zum Abschnitt "Landmark" einer Seite wechseln| STRG +\[ |
+|Zur nächsten Option, Optionsgruppe oder zum nächsten Feld wechseln|TAB|
+|Zur vorherigen Option, Optionsgruppe oder zum vorherigen Feld wechseln| UMSCHALT+TAB |
+|Zwischen Optionen in einer geöffneten Liste oder einer Optionengruppe wechseln|Pfeiltasten|
+|Zur Befehlszeile navigieren| N/V |
+|Zum Abschnitt „Landmark“ einer Seite navigieren| STRG+\[ |
 
 
 <!--Is the one above supposed to include just one straight bracket? (I added the backslash to keep the bracket from causing GitHub format issues. It won't show up.)--> 
 
 
-## <a name="editable-grids-views"></a>Bearbeitbare Raster (Sichten)
-Wenn Ihr Administrator editierbare Raster (Ansichten) aktiviert hat, können Sie Daten direkt in einem Raster (Ansicht) bearbeiten. In der folgenden Tabelle sind die Tastenkombinationen aufgeführt:
+## <a name="editable-grids-views"></a>Bearbeitbare Raster (Ansichten)
+Wenn Ihr Administrator bearbeitbare Raster (Ansichten) aktiviert hat, können Sie Daten direkt in einem Raster bearbeiten. In der folgenden Tabelle werden die Tastenkombinationen aufgeführt:
 
-|Task  | Einheitliche Oberfläche|
+|Aufgabe  | Einheitliche Oberfläche|
 |---------|---------|
-|Wenn sich der Fokus auf einem Spaltenheader befindet, Sortieren Sie nach Spalte. | Schlüssel eingeben |
-|Wenn sich der Fokus auf einem Spaltenheader befindet, öffnen Sie das Dialogfeld "Filter" | LEERTASTE|
-|Wenn sich der Fokus auf den Zellen befindet, wechseln Sie zum nächsten Feld. |  Taste mit dem Pfeil nach rechts (→)  | 
-|Wenn sich der Fokus auf den Zellen befindet, wechseln Sie zum vorherigen Feld.   |  Taste für nach-links-Taste|
-|Wenn sich der Fokus auf der Spalten Kopfzeile befindet, wechseln Sie zur nächsten Spaltenüberschrift. |  Registerkarte  | 
-|Wenn sich der Fokus auf der Spalten Kopfzeile befindet, wechseln Sie zur vorherigen Spaltenüberschrift.  |  UMSCHALT+TAB |
-|In die Zelle oben verschieben | Taste mit dem Pfeil nach oben |
-|In die Zelle unten verschieben|  Pfeil nach unten (↓) **oder** EINGABETASTE, wenn sich die Zelle nicht im Bearbeitungsmodus befindet |
-|Wechseln Sie in den Bearbeitungsmodus für Text-, Zahlen-und einfache Felder, wenn sich der Fokus auf einem Feld befindet.  |  Geben Sie den Wert direkt ein, um den vorhandenen Wert **oder** die Leertaste zu überschreiben, um den **vorhandenen Wert oder F2 zu** ändern und den vorhandenen Wert auszuwählen.  |
-|Wechseln Sie in den Bearbeitungsmodus für Datums-und Uhrzeit Felder.| Geben Sie den Wert direkt **oder** F4 oder alt + ↓ ein, um die Datums-/Uhrzeitauswahl anzuzeigen. |
-|Wechseln Sie in den Bearbeitungsmodus für Dropdown Felder (Suche, Options Satz).|Leertaste zum Öffnen der Liste|
-|Wechseln Sie in den Bearbeitungsmodus für zwei Options Felder.| Leertaste zum Wechseln zwischen den beiden Optionen **oder** F4 **bzw** . alt + ↓, um die Liste zu öffnen.|
-|Wechseln zwischen Einträgen in einer geöffneten Dropdown Liste| Pfeiltasten nach oben/nach unten (↓)|
-|Wählen Sie eine Option in einer geöffneten Dropdown Liste aus.|  EINGABETASTE|
-|Öffnende Dropdown Liste schließen|ESC-TASTE|
-|Abbrechen der Änderungen|ESC-TASTE | 
-|Navigieren Sie zum Such Daten Satz, und öffnen Sie ihn.| Geben Sie ein, wenn der Fokus auf dem Symbol (→) steht.|
-|Zur nächsten Seite wechseln (sofern vorhanden)| Bild-ab-Taste|
-|Zur vorherigen Seite wechseln (sofern vorhanden)|Bild-auf-Taste|
-|Zum Spaltenkopf wechseln, wenn sich der Fokus im Raster befindet|  UMSCHALT+TAB |
-|Wechseln Sie zur Schaltfläche speichern, wenn sich der Fokus auf der Spaltenüberschrift befindet (wenn es sich um nicht gespeicherte Daten handelt).| Registerkarte|
-|Wechseln Sie zur Schaltfläche "Aktualisieren", wenn der Fokus auf der Spaltenüberschrift liegt.| Registerkarte|
+|Nach Spalte sortieren, wenn ein Spaltenheader ausgewählt ist | EINGABETASTE |
+|Filterdialogfeld öffnen, wenn ein Spaltenheader ausgewählt ist | LEERTASTE|
+|Zum nächsten Feld wechseln, wenn Zellen ausgewählt sind |  NACH-RECHTS-TASTE (→)  | 
+|Zum vorherigen Feld wechseln, wenn Zellen ausgewählt sind   |  NACH-LINKS-TASTE (←)|
+|Zum nächsten Spaltenheader wechseln, wenn ein Spaltenheader ausgewählt ist |  TAB  | 
+|Zum vorherigen Spaltenheader wechseln, wenn ein Spaltenheader ausgewählt ist  |  UMSCHALT+TAB |
+|Eine Zelle nach oben | NACH-OBEN-TASTE (↑) |
+|Eine Zelle nach unten|  NACH-UNTEN-TASTE (↓) **oder** EINGABETASTE, wenn die Zelle sich nicht im Bearbeitungsmodus befindet |
+|Zum Bearbeitungsmodus für Textfelder, Zahlenfelder und einfache Felder wechseln, wenn ein Feld ausgewählt ist  |  Geben Sie den Wert direkt ein, um den vorhandenen Wert zu überschreiben, **oder** drücken Sie die LEERTASTE, um einen vorhandenen Wert zu bearbeiten, **oder** drücken Sie F2, um den vorhandenen Wert auszuwählen.  |
+|Zum Bearbeitungsmodus für Datums- und Uhrzeitfelder wechseln| Geben Sie den Wert direkt ein, **oder** drücken Sie F4 oder ALT+NACH-UNTEN-TASTE, um die Datums-/Uhrzeitauswahl anzuzeigen. |
+|Zum Bearbeitungsmodus für Dropdownfelder (Nachschlagefeld, Optionsgruppe) wechseln|Drücken Sie die LEERTASTE, um die Liste zu öffnen.|
+|Zum Bearbeitungsmodus für zwei Optionsfelder wechseln| Drücken Sie die LEERTASTE, um zwischen zwei Optionen zu wechseln, **oder** drücken Sie F4 **oder** ALT+NACH-UNTEN-TASTE, um die Liste zu öffnen.|
+|Zwischen Einträgen in einer geöffneten Dropdownliste navigieren| NACH-OBEN- und NACH-UNTEN-TASTE|
+|Option aus einer geöffneten Dropdownliste auswählen|  EINGABETASTE|
+|Geöffnete Dropdownliste schließen|ESC-TASTE|
+|Änderungen verwerfen|ESC-TASTE | 
+|Zu Nachschlagedatensatz navigieren und diesen öffnen| EINGABETASTE, wenn das Symbol (→) ausgewählt ist|
+|Zur nächsten Seite navigieren (falls vorhanden)| BILD-AB-TASTE|
+|Zur vorherigen Seite navigieren (falls vorhanden)|BILD-AUF-TASTE|
+|Zum Spaltenheader wechseln, wenn das Raster ausgewählt ist|  UMSCHALT+TAB |
+|Zur Schaltfläche „Speichern“ wechseln, wenn der Spaltenheader ausgewählt ist (sofern nicht gespeicherte Daten vorliegen)| TAB|
+|Zur Schaltfläche „Aktualisieren“ wechseln, wenn der Spaltenheader ausgewählt ist| TAB|
 
-## <a name="interactive-dashboard-shortcuts"></a>Interaktive dashboardverknüpfungen
-Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortierung und schnelle Aktionen. 
+## <a name="interactive-dashboard-shortcuts"></a>Tastenkombinationen für interaktive Dashboardstreams
+Interaktive Dashboards ermöglichen neue Funktionen, z. B. das Filtern, Sortieren und Schnellaktionen. 
 
-|Task             |Einheitliche Oberfläche  |
+|Aufgabe             |Einheitliche Oberfläche  |
 |---------|---------|
-|Dashboard-Element aktivieren (mit der linken Maustaste simulieren)| Eingabe **oder** Leertaste |
-|Zum nächsten Element wechseln  | Registerkarte | 
+|Ein Dashboardelement aktivieren (Linksklick simulieren)| EINGABETASTE **oder** LEERTASTE |
+|Zum nächsten Element wechseln  | TAB | 
 |Zum vorherigen Element wechseln  | UMSCHALT+TAB  | 
-|Zum nächsten Element innerhalb eines Dashboardelements wechseln  | Down (↓) Pfeiltaste |
-|Zum vorherigen Element innerhalb eines Dashboardelements wechseln  | Nach-oben-Taste (-Taste) | 
-|Menü schließen | ESCAPE-TASTE |
-|Aktivieren Sie ein Kontrollkästchen oder ein Optionsfeld. | LEERTASTE |
-|Ändern des Datums Bereichs Filters | STRG+ALT+D |
-|Visuellen Filterbereich anzeigen | STRG+ALT+V |
-|Wechseln zur globalen Befehlsleiste | STRG+ALT+A | 
+|Zum nächsten Element innerhalb eines Dashboardelements wechseln  | NACH-UNTEN-TASTE (↓) |
+|Zum vorherigen Element innerhalb eines Dashboardelements wechseln  | NACH-OBEN-TASTE (↑) | 
+|Menü schließen | Escape |
+|Kontrollkästchen oder Optionsfeld aktivieren | LEERTASTE |
+|Datumsbereichfilter ändern | STRG+ALT+D |
+|Filterbereich des Visuals anzeigen | STRG+ALT+V |
+|Zur globalen Befehlsleiste wechseln | STRG+ALT+A | 
 
-### <a name="global-filter-shortcuts"></a>Globale Filter Verknüpfungen
+### <a name="global-filter-shortcuts"></a>Tastenkombinationen für globale Filter
 
-|Task             |Einheitliche Oberfläche  |
+|Aufgabe             |Einheitliche Oberfläche  |
 |---------|---------|
-|Öffnen eines Menüs | EINGABETASTE **oder** Leertaste **oder** nach unten (↓) Pfeiltaste |
-|Aktivieren einer Schaltfläche | Eingabe **oder** Leertaste |
-|Zum nächsten Element wechseln | Registerkarte |
+|Menü öffnen | EINGABETASTE **oder** LEERTASTE **oder** NACH-UNTEN-TASTE (↓) |
+|Schaltfläche aktivieren | EINGABETASTE **oder** LEERTASTE |
+|Zum nächsten Element wechseln | TAB |
 |Zum vorherigen Element wechseln | UMSCHALT+TAB |
-|Öffnen eines Strukturansicht-Steuer Elements | Right (→) Pfeiltaste |
-|Schließen eines Strukturansicht-Steuer Elements | Left-Pfeiltaste |
-|Zum nächsten Struktur Ansichts Knoten wechseln | Nach-oben-Taste (-Taste) |
-|Zum vorherigen Struktur Ansichts Knoten wechseln | Down (↓) Pfeiltaste |
-|Zum ersten Struktur Ansichts Knoten wechseln | -Startseite |
-|Zum letzten Struktur Ansichts Knoten wechseln | Ende |
-|Ausführen der Standardaktion für den Struktur Ansichts Knoten | EINGABETASTE |
-|Entfernen eines Filters | Löschen |
+|Steuerelement für Strukturansicht öffnen | NACH-RECHTS-TASTE (→) |
+|Steuerelement für Strukturansicht schließen | NACH-LINKS-TASTE (←) |
+|Zum nächsten Knoten der Strukturansicht wechseln | NACH-OBEN-TASTE (↑) |
+|Zum vorherigen Knoten der Strukturansicht wechseln | NACH-UNTEN-TASTE (↓) |
+|Zum ersten Knoten der Strukturansicht wechseln | Start |
+|Zum letzten Knoten der Strukturansicht wechseln | Ende |
+|Standardaktion für den Knoten der Strukturansicht ausführen | EINGABETASTE |
+|Filter entfernen | Löschen |
 
-### <a name="dashboard-stream-control-shortcuts"></a>Dashboard
+### <a name="dashboard-stream-control-shortcuts"></a>Tastenkombinationen für Dashboardstreamsteuerelemente
 
-|Task             |Einheitliche Oberfläche  |
+|Aufgabe             |Einheitliche Oberfläche  |
 |---------|---------|
-|Wechseln zum ersten Befehl in der Befehlsleiste des aktiven dashboardstreams | STRG+ALT+Q | 
-|Zum nächsten Element wechseln | Registerkarte |
+|Zum ersten Befehl auf der Befehlsleiste des aktiven Dashboardstreams wechseln | STRG+ALT+Q | 
+|Zum nächsten Element wechseln | TAB |
 |Zum vorherigen Element wechseln | UMSCHALT+TAB |
-|Aktivieren einer Schaltfläche | Eingabe **oder** Leertaste |
-|Aktivieren Sie die Schaltfläche **nach Feld Sortieren** , und öffnen Sie Flyout. | EINGABETASTE **oder** Leertaste **oder** nach unten (↓) Pfeiltaste |
-|Zum nächsten Element wechseln | Down (↓) Pfeiltaste |
-|Zum vorherigen Element wechseln | Nach-oben-Taste (-Taste) |
-|Zum ersten Element wechseln | -Startseite |
+|Schaltfläche aktivieren | EINGABETASTE **oder** LEERTASTE |
+|Schaltfläche **Nach Feld sortieren** aktivieren und Flyout öffnen | EINGABETASTE **oder** LEERTASTE **oder** NACH-UNTEN-TASTE (↓) |
+|Zum nächsten Element wechseln | NACH-UNTEN-TASTE (↓) |
+|Zum vorherigen Element wechseln | NACH-OBEN-TASTE (↑) |
+|Zum ersten Element wechseln | Start |
 |Zum letzten Element wechseln | Ende |
 |Zum nächsten Stream wechseln | STRG+F6 |
-|Zum vorherigen Stream verschieben | Ctrl+Shift+F6 |
-|Menü schließen | ESCAPE-TASTE |
-|Ändern des Status eines Kontrollkästchens | LEERTASTE |
+|Zum vorherigen Stream wechseln | STRG+UMSCHALT+F6 |
+|Menü schließen | Escape |
+|Status eines Kontrollkästchens ändern | LEERTASTE |
 
 ## <a name="common-controls"></a>Allgemeine Steuerelemente
 
-### <a name="chart-shortcuts"></a>Diagramm Verknüpfungen
+### <a name="chart-shortcuts"></a>Tastenkombinationen für Diagramme
 
-|Task             |Einheitliche Oberfläche  |
+|Aufgabe             |Einheitliche Oberfläche  |
 |---------|---------|
-|Wechseln zum ersten Element in einem Diagramm | Registerkarte |
-|Zum nächsten Datenpunkt wechseln | Right (→) Pfeiltaste **oder** nach unten (↓) Pfeiltaste|
-|Zum vorherigen Datenpunkt verschieben | Left-Pfeiltaste **oder** nach-oben-Taste (-Taste)|
-|Zum ersten Datenpunkt verschieben | -Startseite |
+|Zum ersten Element in einem Diagramm wechseln | TAB |
+|Zum nächsten Datenpunkt wechseln | NACH-RECHTS-TASTE (→) **oder** NACH-UNTEN-TASTE (↓)|
+|Zum vorherigen Datenpunkt wechseln | NACH-LINKS-TASTE (←) **oder** NACH-OBEN-TASTE (↑)|
+|Zum ersten Datenpunkt wechseln | Start |
 |Zum letzten Datenpunkt wechseln | Ende |
-|Wechseln zur Schaltfläche " **Weitere** anzeigen" in einem tagdiagramm | Registerkarte |
-|Wechseln von der Schaltfläche " **Weitere** anzeigen" zu den Tags in einem tagdiagramm | UMSCHALT+TAB |
-|Filtern des Dashboards, wenn sich der Fokus auf einem Datenpunkt in einem interaktiven Dashboard befindet | Eingabe **oder** Leertaste |
+|Zur Schaltfläche **Mehr anzeigen** in einem Tagdiagramm wechseln | TAB |
+|Von der Schaltfläche **Mehr anzeigen** zurück zu den Tags in einem Tagdiagramm wechseln | UMSCHALT+TAB |
+|Dashboard filtern, wenn ein Datenpunkt in einem interaktiven Dashboard ausgewählt ist | EINGABETASTE **oder** LEERTASTE |
 
-### <a name="date-time-control-shortcuts"></a>Zeit Steuerungs Verknüpfungen für Datum/Uhrzeit
+### <a name="date-time-control-shortcuts"></a>Tastenkombinationen für Datums- und Uhrzeitsteuerelemente
 
-|Task             |Einheitliche Oberfläche  |
+|Aufgabe             |Einheitliche Oberfläche  |
 |---------|---------|
-|Öffnen Sie das Flyout für die Datumsauswahl. | EINGABETASTE **oder** Leertaste **oder** nach unten (↓) Pfeiltaste |
-|Aktivieren Sie die Option, und schließen Sie das Flyout. | Eingabe **oder** Leertaste |
-|Zum nächsten Element wechseln | Down (↓) Pfeiltaste |
-|Zum vorherigen Element wechseln | Nach-oben-Taste (-Taste) |
-|Zum ersten Element wechseln | -Startseite |
+|Flyout für Datumsauswahl öffnen | EINGABETASTE **oder** LEERTASTE **oder** NACH-UNTEN-TASTE (↓) |
+|Option aktivieren und Flyout schließen | EINGABETASTE **oder** LEERTASTE |
+|Zum nächsten Element wechseln | NACH-UNTEN-TASTE (↓) |
+|Zum vorherigen Element wechseln | NACH-OBEN-TASTE (↑) |
+|Zum ersten Element wechseln | Start |
 |Zum letzten Element wechseln | Ende |
-|Schließen Sie das Flyout für die Datumsauswahl. | ESCAPE-TASTE |
-|Zum nächsten Element wechseln | Registerkarte |
+|Flyout für Datumsauswahl schließen | Escape |
+|Zum nächsten Element wechseln | TAB |
 |Zum vorherigen Element wechseln | UMSCHALT+TAB |
-|Kalender auswählen | Eingabe **oder** Leertaste |
-|Aktivieren einer Schaltfläche | Eingabe **oder** Leertaste
+|Kalender auswählen | EINGABETASTE **oder** LEERTASTE |
+|Schaltfläche aktivieren | EINGABETASTE **oder** LEERTASTE
 
-### <a name="search-results-shortcuts"></a>Suchergebnis Verknüpfungen
+### <a name="search-results-shortcuts"></a>Tastenkombinationen für Suchergebnisse
 
-|Task             |Einheitliche Oberfläche  |
+|Aufgabe             |Einheitliche Oberfläche  |
 |---------|---------|
-|Zum nächsten Suchergebnis wechseln | Nach-oben-Taste (-Taste) |
-|Zum vorherigen Suchergebnis wechseln | Down (↓) Pfeiltaste |
-|In die Liste der verfügbaren Ansichten verschieben | Right (→) Pfeiltaste |
-|Aus der Liste der verfügbaren Ansichten in Suchergebnisse verschieben | Left-Pfeiltaste |
-|Navigieren zwischen Schaltflächen | Registerkarte |
+|Zum nächsten Suchergebnis wechseln | NACH-OBEN-TASTE (↑) |
+|Zum vorherigen Suchergebnis wechseln | NACH-UNTEN-TASTE (↓) |
+|Zur Liste der verfügbaren Ansichten wechseln | NACH-RECHTS-TASTE (→) |
+|Von der Liste der verfügbaren Ansichten zu den Suchergebnissen wechseln | NACH-LINKS-TASTE (←) |
+|Zwischen Schaltflächen navigieren | TAB |
 
 
-## <a name="navigating-submenus"></a>Navigieren in Untermenüs
-Wenn Sie eine Sprachausgabe verwenden, führen Sie die folgenden Schritte aus, um auf eines der Untermenüs zuzugreifen, die angezeigt werden, wenn Sie mit der Maus auf einen Navigations Link zeigen.
+## <a name="navigating-submenus"></a>Navigation in Untermenüs
+Wenn Sie eine Sprachausgabe verwenden, können Sie folgendermaßen auf eines der angezeigten Untermenüs zuzugreifen, wenn Sie mit der Maus auf einen Navigationslink zeigen.
 
-1. Navigieren Sie mithilfe der Standardlink Navigation zwischen den Menü Optionen.
-2. Aktivieren Sie den Link, indem Sie die EINGABETASTE oder die Leertaste wie gewohnt auswählen. Eine Liste der Untermenüs wird angezeigt.
-3. Um auf diese Untermenüoptionen zuzugreifen, verwenden Sie die Tastenkombination Hilfstechnologie (at), um zur Schaltfläche weiter zu navigieren. Wenn Sie z. b. den NVDA-Bildschirm Reader verwenden, verwenden Sie die Tastenkombination "b" (NVDA + b). Um durch alle Optionen zu navigieren, wählen Sie den Schlüssel wiederholt aus.
+1. Navigieren Sie mithilfe der Standardlinknavigation zwischen den Menüoptionen.
+2. Aktivieren Sie den Link, indem Sie wie gewohnt die EINGABETASTE oder die LEERTASTE drücken. Eine Liste der Untermenüs wird angezeigt.
+3. Sie können die Tastenkombination für die Hilfstechnologie nutzen, um zur nächsten Schaltfläche zu wechseln und so auf die Untermenüoptionen zuzugreifen. Wenn Sie die NVDA-Sprachausgabe nutzen, würden Sie beispielsweise die Tastenkombination NVDA+B verwenden. Drücken Sie diese Taste wiederholt, um durch alle Optionen zu navigieren.
 
 > [!IMPORTANT]
-> Mehrere Bereiche in der Benutzeroberfläche (User Interface, UI) verfügen über automatische zuklappen für Menüs. Dies schließt die Navigation in die Navigationsleiste und das Formular ein. Beide werden bei Auswahl von erweitert, aber nach 30 Sekunden Inaktivität werden die Elemente reduziert.
+> Einige Bereiche auf der Benutzeroberfläche enthalten integrierte Optionen zum automatischen Reduzieren von Menüs. Dazu zählen die Navigationsleiste und die Formularnavigation. Beide werden erweitert, wenn Sie diese anklicken, aber nach 30 Sekunden Inaktivität wieder reduziert.
 
-## <a name="navigating-through-stages-of-a-process"></a>Navigieren durch Phasen eines Prozesses
-Wenn Sie in einem Datensatz sind – z. b. ein Lead – werden in diesem Abschnitt die Tastenkombinationen angezeigt, um durch die verschiedenen Phasen im Vertriebsprozess zu navigieren, um den Lead zu qualifizieren und die Auswahl in diesen Phasen zu treffen. Wenn Sie z. b. problemlos von der qualifiziere-Phase bis zur Schlussphase wechseln möchten, können Sie diese Tastatur Aktionen ausführen:
-- Nachdem Sie eine Stufe ausgewählt haben, gelangen Sie zu den Feldern, indem Sie den Pfeil nach unten (↓) auswählen.
-- Wenn eine Stufe reduziert ist, wählen Sie die EINGABETASTE, um Sie zu erweitern.
+## <a name="navigating-through-stages-of-a-process"></a>Navigieren durch die Phasen eines Prozesses
+Wenn Sie sich in einem Datensatz (z. B. „Lead“) befinden, werden in diesem Abschnitt die Tastenkombinationen für die Navigation durch die unterschiedlichen Phasen des Vertriebsprozesses zur Qualifizierung des Leads angezeigt und wie Sie in diesen eine Auswahl treffen können. Wenn Sie beispielsweise schnell von der Phase „Qualifizieren“ zur Phase „Abschluss“ wechseln möchten, können Sie diese Tastaturaktionen nutzen:
+- Nachdem Sie eine Phase ausgewählt haben, können Sie über die NACH-UNTEN-TASTE (↓) zu den Feldern navigieren.
+- Wenn eine Phase reduziert ist, drücken Sie die EINGABETASTE, um diese zu erweitern.
 
   > [!NOTE]
-  > Der Prozess Name ist ein Symbol am unteren Rand der Seite, nicht am oberen Rand.
+  > Der Prozessname ist ein Symbol im unteren statt oberen Bereich auf der Seite.
 
-- **Tastenkombinationen in Windows**: Wenn Sie das Windows-Betriebssystem verwenden, wählen Sie den folgenden Link aus, und wählen Sie die Versionsnummer in der Dropdown Liste aus. Sie können alle Tastenkombinationen anzeigen, die für eine Windows-Umgebung gelten. Siehe [Windows-Tastenkombinationen](https://support.microsoft.com/help/12445/windows-keyboard-shortcuts). 
-- **Tastenkombinationen in Mac**: Wenn Sie ein Mac-Betriebssystem verwenden, klicken Sie auf den folgenden Link, um alle Verknüpfungen anzuzeigen, die für eine Mac-Umgebung gelten. Siehe [Mac-Tastenkombinationen](https://support.apple.com/HT201236).
+- **Windows-Tastenkombinationen:** Wenn Sie Windows als Betriebssystem verwenden, klicken Sie auf folgenden Link, und wählen Sie die Versionsnummer aus der Dropdownliste aus. Dort werden alle Tastenkombinationen aufgeführt, die für Ihre Windows-Umgebung gelten. Weitere Informationen finden Sie unter [Windows-Tastenkombinationen](https://support.microsoft.com/help/12445/windows-keyboard-shortcuts). 
+- **Mac-Tastenkombinationen** Wenn Sie Mac als Betriebssystem verwenden, klicken Sie auf folgenden Link, um die Tastenkombinationen für Ihre Mac-Umgebung anzuzeigen. Weitere Informationen finden Sie unter [Mac-Tastenkombinationen](https://support.apple.com/HT201236).
 

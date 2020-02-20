@@ -1,5 +1,5 @@
 ---
-title: " Verwenden von Bildschirmlesern in Modell gesteuerten apps | MicrosoftDocs"
+title: " Verwenden der Sprachausgabe in modellgesteuerten Apps | Microsoft-Dokumentation"
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -18,7 +18,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: c8ef71753fd743788b52b4f3578f829f153c0898
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73543452"
@@ -26,68 +26,68 @@ ms.locfileid: "73543452"
 # <a name="use-a-screen-reader"></a>Verwenden einer Sprachausgabe 
 
 
-Sprachausgaben machen Modell gesteuerte Apps für Personen verfügbar, die eine geringe oder keine Vision haben oder zusätzliche Unterstützung für ein temporäres Szenario benötigen, z. b. die Augen Müdigkeit. Häufig verwendete Bildschirm Sprachausgaben, wie z. b. Sprachausgabe, Kiefer und NVDA, werden unterstützt. 
+Über die Sprachausgabe können sehbehinderte Personen oder Personen, die in bestimmten Szenarios zusätzliche Unterstützung (z. B. bei Asthenopie) benötigen, modellgesteuerte Apps selbstständig nutzen. Häufig verwendete Sprachausgaben wie die Sprachausgabe von Microsoft, JAWS und NVDA werden unterstützt. 
 
-- [Weitere Informationen zum Arbeiten mit der Microsoft-Sprachausgabe](https://support.microsoft.com/help/22798)
+- [Weitere Informationen zum Arbeiten mit der Sprachausgabe von Microsoft](https://support.microsoft.com/help/22798)
 - [Weitere Informationen zum Arbeiten mit JAWS](https://www.freedomscientific.com/Products/Blindness/JawsDocumentation)
 
 
 - [Weitere Informationen zum Arbeiten mit NVDA](https://www.nvaccess.org/get-help/)
 
 
-## <a name="basic-tasks-using-a-screen-reader"></a>Grundlegende Aufgaben mithilfe einer Bildschirm Sprachausgabe 
+## <a name="basic-tasks-using-a-screen-reader"></a>Grundlegende Aufgaben mit der Sprachausgabe 
 
 ### <a name="open-an-app"></a>Öffnen einer App
 
-1.  Wechseln Sie in der Navigationsleiste mit der **Tab** -Taste zum Dropdown-Steuerelement der APP, und drücken **Sie die Eingabe** Taste, um die Site Übersicht zu öffnen.
-2.  Drücken Sie die **Tab** -Taste, bis Sie den Namen der Anwendung, die Sie öffnen möchten, hören – z. b. "Sales". Drücken **Sie die Eingabe** Taste, um die APP zu öffnen.
+1.  Verwenden Sie auf der Navigationsleiste die **TAB-TASTE**, um zum Dropdownsteuerelement der App zu wechseln, und drücken Sie die **EINGABETASTE**, um die Siteübersicht zu öffnen.
+2.  Drücken Sie die **TAB-TASTE**, bis Sie den Namen der Anwendung hören, die Sie öffnen möchten (z. B. „Sales“). Drücken Sie die **EINGABETASTE**, um die App zu öffnen.
 
-### <a name="use-scan-mode-in-narrator"></a>Überprüfungs Modus in der Sprachausgabe verwenden
-Sie können den Scanmodus verwenden, um schnell mithilfe der Pfeiltasten und der allgemeinen Tastenkombinationen zu navigieren. Springen Sie schnell zu Überschriften, Links, Sehenswürdigkeiten, Formularfeldern, Steuerelementen und Tabellen in diesem Modus. Aktivieren und deaktivieren Sie den Überprüfungs Modus durch Drücken der **Taste "Lock + SPACEBAR**". Weitere Informationen: [Verwenden des Scanmodus](https://support.microsoft.com/help/22809/windows-10-narrator-using-scan-mode)
+### <a name="use-scan-mode-in-narrator"></a>Verwenden des Scanmodus in der Sprachausgabe
+Sie können den Scanmodus verwenden, um schnell mithilfe der Pfeiltasten und gängiger Tastenkombinationen zu navigieren. In diesem Modus können Sie schnell zu Überschriften, Links, Landmarks, Formularfeldern, Steuerelementen und Tabellen springen. Aktivieren oder deaktivieren Sie den Scanmodus, indem Sie **FESTSTELLTASTE+LEERTASTE** drücken. Weitere Informationen: [Verwenden des Scanmodus](https://support.microsoft.com/help/22809/windows-10-narrator-using-scan-mode)
 
-### <a name="find-your-way-around-the-app"></a>Finden Sie Ihre Art und Weise um die APP
+### <a name="find-your-way-around-the-app"></a>Orientierung in der App
 
 #### <a name="navigation-bar"></a>Navigationsleiste
-Wenn Sie eine APP öffnen, wird auf der linken Seite ein vertikaler Strich mit unter Bereichs-Symbolen angezeigt. Sie können entweder die **Tab** -Taste verwenden, um diese Symbole zu durchlaufen, bis Sie den Namen des gewünschten Unterarrays (z. b. "Konten") hören, oder Sie können das Site Map-Steuerelement verwenden. Drücken Sie z. b. die **Tab** -Taste, bis Sie "Accounts" hören, und drücken Sie dann die **Eingabe** Taste, um die Konten Ansicht zu öffnen
+Wenn Sie eine App öffnen, wird auf der linken Seite ein vertikaler Strich mit Unterbereichsymbolen angezeigt. Sie können entweder die **TAB-TASTE** drücken, um durch diese Symbole zu navigieren, bis Sie den Namen des gewünschten Unterbereichs (z. B. „Konten“) hören, oder das Steuerelement für die Siteübersicht nutzen. Drücken Sie beispielsweise die **TAB-TASTE**, bis Sie „Konten“ hören, und drücken Sie dann die **EINGABETASTE**, um die Ansicht „Konten“ zu öffnen.
 
-#### <a name="grids"></a>Vorantreiben
-Bildschirm Ausgaben Navigieren in den Rastern zuverlässiger und konsistent und geben Zeilen-und Spaltenüberschriften sowie die Position im Raster an. Wenn Sie ein Raster zum ersten Mal öffnen, ist der Standard Tabstopp der Ansichts Auswahl. 
+#### <a name="grids"></a>Raster
+Mit der Sprachausgabe können Sie zuverlässiger und konsistenter durch Raster navigieren. Dabei werden Zeilen- und Spaltenüberschriften sowie die Position im Raster ausgegeben. Wenn Sie ein Raster zum ersten Mal öffnen, ist standardmäßig die Ansichtsauswahl ausgewählt. 
 
-Wenn Sie eine Zelle innerhalb des Rasters von außerhalb des Rasters eingeben, gibt die Sprachausgabe den Namen der Tabelle, die Zeilen-und Spalten Anzahl und die Position des Cursors innerhalb der Tabelle an.
+Wenn Sie eine Zelle innerhalb des Rasters von außerhalb des Rasters auswählen, gibt die Sprachausgabe den Namen der Tabelle, die Zeilen- und Spaltenanzahl und die Position des Cursors innerhalb der Tabelle aus.
 
-Wenn sich der Cursor in der Tabellen Kopfzeile befindet, navigieren Sie mithilfe der **Tab** -Taste oder **UMSCHALT + TAB**schnell zwischen den Headern. Die Sprachausgabe gibt den Namen der einzelnen Header an, wenn Sie die Header Zelle eingeben. Außerdem wird der Typ der Zelle (z. b. "Spalten Kopfzeile"), der Speicherort der Spalte (z. b. "Spalte 1 von 6") und der Sortier-oder Auswahl Wert der Spalte angekündigt. Wenn Sie in einem Tabellenheader die **Eingabe** Taste drücken, wird die Tabelle nach dieser Spalte sortiert. Die Sprachausgabe gibt die Sortierreihenfolge an, und Sie können erneut die **Eingabe** Taste drücken, um die Reihenfolge
+Wenn der Cursor sich innerhalb des Tabellenheaders befindet, können Sie über die **TAB-TASTE** oder **UMSCHALT+TAB-TASTE** schnell zwischen Headern navigieren. Die Sprachausgabe gibt den Namen des Headers aus, wenn Sie die Headerzelle auswählen. Es wird auch der Zelltyp (z. B. „Spaltenheader“), die Position der Spalte (z. B. „Spalte 1 von 6“) und eine Angabe, ob die Spalte sortiert oder ausgewählt ist, ausgegeben. Wenn Sie in einem Tabellenheader die **EINGABETASTE** drücken, wird die Tabelle nach dieser Spalte sortiert. Die Sprachausgabe gibt die Sortierreihenfolge aus, und Sie können die **EINGABETASTE** noch mal drücken, um die Reihenfolge zu ändern.
 
-Wenn Sie aus der letzten Spalte in der Tabelle wechseln, wechselt der Cursor zur zweiten Zeile des Rasters, und ab diesem Punkt müssen Sie die nach-oben-und nach-unten-Taste verwenden, um zwischen den nicht-Header Zellen zu navigieren. Wenn Sie die **Tab** -Taste erneut drücken, wechselt der Cursor zum nächsten interaktiven Element, in der Regel die Tabellen Filterliste. Beim Verschieben zwischen Zeilen Zellen, die keine Kopfzeile sind, kündigt die Sprachausgabe den Spaltennamen, den Speicherort der Spalte und den Text in der Zelle an.
+Wenn Sie aus der letzten Spalte in der Tabelle navigieren, springt der Cursor in die zweite Zeile des Rasters. Von diesem Punkt aus müssen Sie mit den Pfeiltasten nach oben und unten navigieren, um zwischen den Zellen zu wechseln, die nicht zum Header zählen. Wenn Sie stattdessen noch mal die **TAB-TASTE** drücken, springt der Cursor zum nächsten interaktiven Element (üblicherweise zur Tabellenfilterliste). Wenn Sie zwischen Zeilenzellen navigieren, die nicht zum Header zählen, gibt die Sprachausgabe den Spaltennamen, die Position der Spalte und den Zellentext aus.
 
 #### <a name="forms"></a>Formulare
-Zum Navigieren in einem Formular mithilfe der Sprachausgabe stehen mehrere Navigationsmodi zur Verfügung, wobei die gängigsten Modi als Marken, Überschriften und Formularfelder dienen. Wenn Sie den Navigationsmodus ändern möchten, drücken Sie die Taste gedrückt + nach- **oben**. Halten Sie die Feststell Taste gedrückt, während Sie die nach-oben-Taste drücken, um die Modi zu durchlaufen, bis Sie den gewünschten Modus erhalten. Verwenden Sie dann die Taste mit den Pfeiltasten, um durch die verschiedenen Elemente zu navigieren. Wenn Sie z. b. im Abschnitt mit den Kontaktinformationen eines Kontakts zum Feld Nachname wechseln möchten, gehen Sie wie folgt vor:
+Mehrere Navigationsmodi sind verfügbar, wenn Sie über die Sprachausgabe in einem Formular navigieren. Hierbei sind die gängigsten Modi als Landmarks, Überschriften und Formularfelder vermerkt. Sie können den Navigationsmodus ändern, indem Sie **FESTSTELLTASTE+NACH-OBEN-TASTE** drücken. Halten Sie die FESTSTELLTASTE gedrückt, während Sie auf die NACH-OBEN-TASTE drücken, um die Modi zu durchlaufen, bis Sie den Modus hören, den Sie verwenden möchten. Drücken Sie dann die FESTSTELLTASTE und die NACH-LINKS- oder NACH-RECHTS-TASTE, um durch die verschiedenen Elemente zu navigieren. Wenn Sie beispielsweise zum Feld „Nachname“ im Abschnitt „Kontaktinformationen“ eines Kontakts springen möchten, müssen Sie folgendermaßen vorgehen:
 
-1.  Halten Sie die Feststell Taste gedrückt, und drücken Sie die nach-oben **-Taste** **,** bis Sie "Meilensteine" hören.
-2.  Halten Sie die **Schließ** Taste gedrückt, und drücken Sie die nach- **Rechts** -Taste, bis Sie "Kontaktinformationen" erhalten.
-3.  Ändern Sie den Modus, indem Sie die Taste für die Feststell Taste gedrückt halten und die nach-oben **-Taste drücken** **,** bis Sie "Formularfelder" hören.
-4.  Navigieren Sie zum Feld Last Name, indem Sie die Taste mit den nach-rechts-und nach-rechts-Pfeiltasten verwenden, bis Sie "Nachname" hören. Die Sprachausgabe kündigt auch den Steuerungstyp, den Wert, den Status und alle speziellen Anweisungen für das Feld an.
+1.  Halten Sie die **FESTSTELLTASTE** gedrückt, und drücken Sie die **NACH-OBEN-TASTE**, bis Sie „Landmarks“ hören.
+2.  Halten Sie die **FESTSTELLTASTE** gedrückt, und drücken Sie die **NACH-RECHTS-TASTE**, bis Sie „Kontaktinformationen“ hören.
+3.  Sie können den Modus ändern, indem Sie die **FESTSTELLTASTE** gedrückt halten und die **NACH-OBEN-TASTE** drücken, bis Sie „Formularfelder“ hören.
+4.  Navigieren Sie zum Feld „Nachname“, indem Sie die FESTSTELLTASTE und die NACH-LINKS- oder NACH-RECHTS-TASTE drücken, bis Sie „Nachname“ hören. Die Sprachausgabe gibt auch den Typ des Steuerelements, den Wert, den Status und besondere Anweisungen für das Feld aus.
 
-Sie können auch die Tab-Taste verwenden, um schnell zu interaktiven Elementen im Formular zu navigieren. Einige Formularfelder verfügen über ein Symbol, das die Standardaktion ausführt, wenn Sie STRG + EINGABETASTE drücken. Ein e-Mail-Formular könnte z. b. ein Umschlag Symbol enthalten, das einen e-Mail-Editor öffnet. 
+Sie können auch mit der TAB-TASTE schnell durch interaktive Formularfelder navigieren. Einige Formularfelder weisen ein Symbol auf, über das die Standardaktion ausgeführt wird, wenn Sie STRG+EINGABETASTE drücken. Bei einem Formularfeld in einer E-Mail kann beispielsweise ein Umschlagsymbol vorhanden sein, das einen E-Mail-Editor öffnet. 
 
-#### <a name="dashboardscharts"></a>Dashboards/Diagramme
-Sie können durch die Dashboarddiagramme navigieren, indem Sie die Tab-Taste und die Tasten-Taste + Pfeiltaste drücken. Drücken Sie die **Tab** -Taste, um schnell zu den interaktiven Elementen zu wechseln, und verwenden Sie für die Navigation nicht interaktiver Elemente, wie z. b. Überschriften, Kennzeichen und Elemente, die Tastenkombination und eine Pfeiltaste.
+#### <a name="dashboardscharts"></a>Dashboards und Diagramme
+Sie können durch die Dashboarddiagramme navigieren, indem Sie die TAB-TASTE und die FESTSTELLTASTE+PFEILTASTEN drücken. Drücken Sie die **TAB-TASTE**, um schnell zu interaktiven Elementen zu navigieren. Drücken Sie dann die FESTSTELLTASTE+PFEILTASTEN, um durch nicht-interaktive Elemente wie Überschriften und Landmarks zu navigieren.
 
 
 > [!NOTE]
-> Sie müssen das neueste [Windows 10](https://www.microsoft.com/enable/products/windows10/default.aspx) -Update installiert haben, damit alle Barrierefreiheits Funktionen für Diagramme verfügbar sind.
+> Sie müssen das aktuelle Update für [Windows 10](https://www.microsoft.com/enable/products/windows10/default.aspx) installiert haben, um alle Barrierefreiheitsfeatures für Diagramme zu nutzen.
 
-#### <a name="interactive-dashboard-streams"></a>Interaktive dashboardstreams
-Sie können die **Tab** -Taste oder die **UMSCHALT + TAB** -Taste verwenden, um zwischen interaktiven dashboardstreams zu wechseln, z. b. im Konten Dashboard. Sie können auch einfach den Navigationsmodus ändern, bis Sie "Überschriften" hören, und dann die **Tab** -Taste verwenden, um schnell zwischen dashboardstreams.
+#### <a name="interactive-dashboard-streams"></a>Interaktive Dashboardstreams
+Sie können die **TAB-TASTE** oder **UMSCHALT+TAB-TASTE** drücken, um zwischen interaktiven Dashboardstreams zu wechseln, die es beispielsweise im Dashboard „Konten“ gibt. Sie können aber auch den Navigationsmodus ändern, bis Sie „Überschriften“ hören und dann die **TAB-TASTE** drücken, um schnell zwischen Dashboardstreams zu wechseln.
 
-Verwenden Sie die nach-oben-oder nach-unten-Taste, um durch jedes Element eines dashboardstreams zu navigieren. Die Sprachausgabe liest den Typ des Steuer Elements und den Titel des Steuer Elements.
+Sie können mithilfe der NACH-OBEN- oder NACH-UNTEN-TASTE durch die einzelnen Elemente eines Dashboardstreams navigieren. Die Sprachausgabe gibt den Steuerelementtyp und -titel aus.
 
-#### <a name="business-process-flows"></a>Geschäftsprozess Abläufe
-Sie können durch einen Geschäftsprozess Fluss navigieren, z. b. den oben im Lead Formular, indem Sie die **Tab** -Taste drücken, um vorwärts zu navigieren, und **UMSCHALT + TAB** , um zwischen den Entitäten rückwärts zu wechseln. Verwenden **Sie die Eingabe** Taste auf der **linken Seite** , oder **wechseln Sie zur rechten** Schaltfläche, um weitere Entitäten im Prozessablauf anzuzeigen. Die Sprachausgabe liest Entitätstyp, Phase, Status, Titel, Element Nummer aus den Gesamt Elementen und gibt an, ob Sie aktuell ausgewählt ist.
+#### <a name="business-process-flows"></a>Geschäftsprozessflüsse
+Sie können durch einen Geschäftsprozessflow navigieren (z. B. im oberen Bereich des Formulars „Lead“), indem Sie die **TAB-TASTE** drücken, um vorwärts zu springen, und **UMSCHALT+TAB-TASTE**, um rückwärts zwischen Entitäten zu springen. Drücken Sie die **EINGABETASTE** auf der Schaltfläche **Nach links verschieben** oder **Nach rechts verschieben**, um zusätzliche Entitäten im Prozessflow anzuzeigen. Die Sprachausgabe gibt den Entitätstyp, die Phase, den Status, den Titel, die Anzahl der Elemente im Vergleich zur Gesamtanzahl und eine Angabe aus, ob das Element aktuell ausgewählt ist.
 
-#### <a name="dialog-boxes"></a>Dialog Felder
+#### <a name="dialog-boxes"></a>Dialogfelder
 
-Wenn ein Dialogfeld geöffnet wird, kündigt die Sprachausgabe den Titel an. In Dialogfeldern mit Eingabefeldern hat die Schaltfläche **Schließen** den Standard Fokus, sodass Sie das Dialogfeld schließen können, indem Sie die **Eingabe**Taste drücken. In Dialogfeldern, die eine Benutzeraktion erfordern, befindet sich der Fokus auf der Schaltfläche Primary Action, wie z. b. **Delete** oder **OK**.
+Wenn ein Dialogfeld geöffnet wird, gibt die Sprachausgabe den Titel aus. Bei Dialogfeldern mit Eingabefeldern ist standardmäßig die Schaltfläche **Schließen** ausgewählt. Dadurch können Sie das Dialogfeld über die **EINGABETASTE** schließen. Bei Dialogfeldern, die eine Benutzeraktion fordern, ist die primäre Aktionsschaltfläche ausgewählt, z. B. **Löschen** oder **OK**.
 
-Sie können durch die Steuerelemente navigieren, indem Sie die **Tab** -Taste verwenden. Der Cursor durchläuft jedes Element im Dialogfeld, und Sie können **ESC** drücken, um es zu schließen.
+Sie können mit der **TAB-TASTE** durch die Steuerelemente navigieren. Der Cursor springt durch die Elemente des Dialogfelds, und Sie können **ESC** drücken, um dieses zu schließen.
 
 

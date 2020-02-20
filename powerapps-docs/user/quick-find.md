@@ -1,5 +1,5 @@
 ---
-title: Schnellsuche | MicrosoftDocs
+title: Schnellsuche | Microsoft-Dokumentation
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -17,7 +17,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: 42691193a90d56f773de5723c4c27e883b3216ad
 ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/01/2020
 ms.locfileid: "76918620"
@@ -26,40 +26,40 @@ ms.locfileid: "76918620"
 
 ## <a name="single-entity-quick-find"></a>Schnellsuche mit einer einzelnen Entität
 
-Die Schnellsuche mit einer einzelnen Entität wird verwendet, um nur Datensätze eines Typs zu suchen. Diese Suchoption ist in einer Ansicht verfügbar. 
+Die Schnellsuche mit einer einzelnen Entität wird verwendet, um Datensätze nur eines Typs zu suchen. Diese Suchoption ist in einer Ansicht verfügbar. 
 
    > [!div class="mx-imgBorder"]
    > ![Schnellsuche mit einer einzelnen Entität](media/single-quick-find-search-box.png "Suchfeld für die Schnellsuche mit einer einzelnen Entität") 
 
-## <a name="multiple-entity-quick-find-categorized-search"></a>Schnellsuche mit mehreren Entitäten (kategorisierte Suche)
+## <a name="multiple-entity-quick-find-categorized-search"></a>Schnellsuche mit mehreren Entitäten (Suche nach Kategorien)
 
-Die Schnellsuche mit mehreren Entitäten wird auch als kategorisierte Suche bezeichnet. 
+Die Schnellsuche mit mehreren Entitäten wird auch als Suche nach Kategorien bezeichnet. 
 
-1.  Wählen Sie in der oberen Navigationsleiste die Option **Suchen**aus, um eine kategorisierte Suche zu starten.  
-
-     > [!div class="mx-imgBorder"]
-     > ![Globale Such Schaltfläche](media/global-search-button.png "Globale Suche")
-  
-2.  Geben Sie die Suchbegriffe in das Suchfeld ein, und wählen Sie dann **Suchen**aus. Die kategorisierte Suche gibt Ergebnisse nach Entitäts Typen, z. b. Konten oder Kontakten, gruppiert zurück.
+1.  Wählen Sie in der oberen Navigationsleiste **Suchen** aus, um eine Suche nach Kategorien zu starten.  
 
      > [!div class="mx-imgBorder"]
-     > ![Kategorisierte Suchergebnisse](media/categorized-search-results.png "Kategorisierte Suchergebnisse (Seite)") 
+     > ![Schaltfläche „Globale Suche“](media/global-search-button.png "Globale Suche")
+  
+2.  Geben Sie die Suchbegriffe in das Suchfeld ein, und wählen Sie dann **Suchen** aus. Die Suche nach Kategorien gibt Ergebnisse nach Entitätstypen wie Konten oder Kontakte gruppiert zurück.
 
-Mit der kategorisierten Suche können Sie nach Datensätzen suchen, die mit einem bestimmten Wort beginnen oder ein Platzhalter Zeichen verwenden.
+     > [!div class="mx-imgBorder"]
+     > ![Ergebnisse der Suche nach Kategorien](media/categorized-search-results.png "Ergebnisse der Suche nach Kategorien (Seite)") 
+
+Mit der Suche nach Kategorien können Sie nach Datensätzen suchen, die mit einem bestimmten Wort beginnen oder ein Platzhalterzeichen verwenden.
   
-- **Beginnt mit**: Ergebnisse enthalten Datensätze, die mit einem bestimmten Wort beginnen. Wenn Sie z. b. nach "Alpine Ski House" suchen möchten, geben Sie " **Alm** " in das Suchfeld ein. Wenn Sie **Ski**eingeben, wird der Datensatz nicht angezeigt.  
+- **Beginnt mit:** Zu den Ergebnissen zählen Datensätze, die mit einem bestimmten Wort beginnen. Wenn Sie z. B. nach „Alpine Ski House suchen“ möchten, geben Sie **alp** in das Suchfeld ein. Wenn Sie **ski** eingeben, wird der Datensatz nicht angezeigt.  
   
-- Platz **Halter: z**. b. * Ski-oder * Ski-\*. 
+- **Platzhalter:** Beispielsweise *ski-oder *ski\*. 
 
   > [!NOTE]
-  >  Die Verwendung eines Platzhalters am Anfang der Suchabfrage (Single oder Multiple-Entity) kann zu einer langsameren Leistung führen.
+  >  Die Verwendung eines Platzhalters am Anfang der Suchabfrage (mit einer einzelnen Entität oder mehreren Entitäten) kann zu einer langsameren Leistung führen.
   
-## <a name="filter-categorized-search-results"></a>Filtern kategorisierter Suchergebnisse 
+## <a name="filter-categorized-search-results"></a>Filtern der Ergebnisse der Suche nach Kategorien 
   
--   Wenn Sie Ergebnisse nach einem Daten Satz Typen filtern möchten, wählen Sie einen Daten Recordtyp aus der Liste **Filter mit** aus. 
+-   Wenn Sie Ergebnisse nach einem Datensatztyp filtern möchten, wählen Sie einen Datensatztyp aus der Liste **Filtern mit** aus. 
 
     > [!div class="mx-imgBorder"]
-    > ![Filtern kategorisierter Suchergebnisse](media/filter-categorized-search-results.png "Filtern kategorisierter Suchergebnisse")  
+    > ![Filtern der Ergebnisse der Suche nach Kategorien](media/filter-categorized-search-results.png "Filtern der Ergebnisse der Suche nach Kategorien")  
 
   
--   Wenn Sie alle Daten Satz Typen durchsuchen möchten, wählen Sie **keine** aus der Liste **Filter mit** aus.  
+-   Wählen Sie in der Liste **Filtern mit** die Option **Keine** aus, um alle Datensatztypen zu durchsuchen.  

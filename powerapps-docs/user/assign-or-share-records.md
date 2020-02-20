@@ -1,5 +1,5 @@
 ---
-title: Zuweisen oder Freigeben von Datensätzen | MicrosoftDocs
+title: Zuweisen oder Freigeben von Datensätzen | Microsoft-Dokumentation
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -17,71 +17,71 @@ search.app:
 - D365CE
 ms.openlocfilehash: 81a6513f98351f656fdac3fd0ccc24a10061ca85
 ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2020
 ms.locfileid: "76886503"
 ---
 # <a name="assign-or-share-records"></a>Zuweisen oder Freigeben von Datensätzen
 
-Wenn Sie möchten, dass eine andere Person in Ihrer Organisation einen Kundendaten Satz behandelt, können Sie dieser Person den Datensatz zuweisen. Sie können einem Team auch einen Datensatz oder selbst zuweisen.  
+Wenn Sie möchten, dass eine andere Person in Ihrer Organisation einen Kundendatensatz bearbeitet, können Sie dieser Person den Datensatz zuweisen. Sie können einen Datensatz auch einem Team oder sich selbst zuweisen.  
 
-Verwenden Sie die Option **Freigeben** , wenn Sie den Besitz des Datensatzes behalten, aber eine andere Person daran arbeiten möchten. 
+Verwenden Sie die Option **Freigeben**, wenn Sie im Besitz des Datensatzes bleiben möchten, jedoch auch eine andere Person daran arbeiten soll. 
 
-1. Wählen Sie im linken Navigationsbereich einen Daten Recordtyp aus. Beispielsweise **Kontakte**.
+1. Wählen Sie im linken Navigationsbereich einen Datensatztyp aus, z. B. **Kontakte**.
 
 2. Wählen Sie aus der Liste der Datensätze den Datensatz aus, den Sie neu zuweisen möchten.  
   
-3. Klicken Sie in der Befehlsleiste auf **zuweisen**.
+3. Wählen Sie in der Befehlsleiste **Zuweisen** aus.
 
    > [!div class="mx-imgBorder"]
    > ![Neuzuweisen eines Datensatzes](media/assign1.png "Neuzuweisen eines Datensatzes")
 
    > [!NOTE]
-   > Wenn Sie den Besitz des Datensatzes behalten, aber eine andere Person daran arbeiten möchten, wählen Sie **Freigeben**aus. Verwenden Sie dann die Quick Infos, um Sie durch die **Freigabe** -Option zu leiten. 
+   > Wenn Sie im Besitz des Datensatzes bleiben möchten, eine andere Person jedoch auch daran arbeiten soll, wählen Sie **Freigeben** aus. Verwenden Sie dann die QuickInfos, um sich durch die Option **Freigeben** führen zu lassen. 
    
-4. Wählen Sie im Dialogfeld zuweisen im Bereich **zuweisen zu** die Option **mir** oder **Benutzer oder Team**aus.
+4. Wählen Sie im Dialogfeld „Zuweisen“ im Bereich **Zuweisen zu** die Option **Mir** oder **Benutzer oder Team** aus.
 
    > [!div class="mx-imgBorder"]
-   > ![Neuzuweisen eines Datensatzes zu mir oder Team](media/assign2.png "Neuzuweisen eines ich-Teams für die Aufzeichnung")
+   > ![Neuzuweisen eines Datensatzes zu meiner Person oder zu einem Team](media/assign2.png "Neuzuweisen eines Datensatzes zu meiner Person oder zu einem Team")
   
-   Wenn Sie **Benutzer oder Team**auswählen, geben Sie im Feld **nach Datensätzen suchen** den Namen des Benutzers oder Teams ein. Wenn Sie einen neuen Datensatz erstellen müssen, wählen Sie **+ neu**aus.
+   Wenn Sie **Benutzer oder Team** auswählen, geben Sie im Feld **Nach Datensätzen suchen** den Namen des Benutzers bzw. Teams ein. Wenn Sie einen neuen Datensatz erstellen müssen, wählen Sie **+ Neu** aus.
   
-5. Wenn Sie fertig sind, wählen Sie **zuweisen**aus.
+5. Wenn Sie fertig sind, wählen Sie **Zuweisen** aus.
 
 ## <a name="use-advanced-find-to-reassign-records"></a>Verwenden der erweiterten Suche zum erneuten Zuweisen von Datensätzen
 
-Verwenden Sie die erweiterte Suche, um nach Datensätzen zu suchen und diese dann einem anderen Benutzer zuzuweisen. Weitere Informationen zur erweiterten Suche finden Sie unter [erstellen, bearbeiten oder Speichern einer erweiterten suchsuche](advanced-find.md).
+Verwenden Sie die erweiterte Suche, um nach Datensätzen zu suchen und diese dann einem anderen Benutzer zuzuweisen. Weitere Informationen zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](advanced-find.md).
 
 
-1. Wählen Sie auf der Befehlsleiste die Option **Erweiterte Suche**aus.
-
-   > [!div class="mx-imgBorder"]
-   > ![Erweiterte Suche](media/assign3.png "Auffinden von suchen")
-   
-2. Wählen Sie aus der Liste der Datensätze die Datensätze aus, die Sie neu zuweisen möchten, und wählen Sie dann die Option zuweisen aus.
+1. Wählen Sie in der Befehlsleiste **Erweiterte Suche** aus.
 
    > [!div class="mx-imgBorder"]
-   > ![Neuzuweisen eines Datensatzes mithilfe der erweiterten Suche](media/assign4.png "Neuzuweisen eines Datensatzes mithilfe von "advacned Find"")
+   > ![Erweiterte Suche](media/assign3.png "Erweiterte Suche")
+   
+2. Wählen Sie aus der Liste der Datensätze die Datensätze aus, die Sie neu zuweisen möchten, und wählen Sie dann die Option „Zuweisen“ aus.
+
+   > [!div class="mx-imgBorder"]
+   > ![Neuzuweisen eines Datensatzes mithilfe der erweiterten Suche](media/assign4.png "Neuzuweisen eines Datensatzes mithilfe der erweiterten Suche")
    
  
- ## <a name="reassign-all-records-for-admins"></a>Alle Datensätze neu zuweisen (für Administratoren)
+ ## <a name="reassign-all-records-for-admins"></a>Neuzuweisen aller Datensätze (für Administratoren)
  
- Ein Administrator kann den gesamten Datensatz für einen Benutzer über den Bereich admin Setting neu zuweisen.
+ Ein Administrator kann einem Benutzer den gesamten Datensatz über den Administratorbereich „Einstellung“ neu zuweisen.
  
  1. Wechseln Sie zu **Einstellungen** > **Sicherheit**.
- 2. Wählen Sie **Benutzer** aus, und wählen Sie einen Benutzernamen aus, um das Benutzerprofil zu öffnen.
- 3. Wählen Sie in der Befehlsleiste die Option **Datensätze neu zuweisen**aus.
+ 2. Wählen Sie **Benutzer** und anschließend einen Benutzernamen aus, um das Profil des Benutzers zu öffnen.
+ 3. Wählen Sie auf der Befehlsleiste **Datensätze neu zuweisen** aus.
  
    > [!div class="mx-imgBorder"]
-   > ![Alle Datensätze neu zuweisen](media/assign5.png "Alle Datensätze neu zuweisen")
+   > ![Neuzuweisen aller Datensätze](media/assign5.png "Neuzuweisen aller Datensätze")
    
- 4. Wählen Sie im Dialogfeld **Datensätze neu zuweisen** aus, wie Sie alle Datensätze neu zuweisen möchten, und klicken Sie dann auf **OK**.
+ 4. Legen Sie im Dialogfeld **Datensätze neu zuweisen** fest, wie Sie alle Datensätze neu zuweisen möchten, und wählen Sie dann **OK** aus.
  
   > [!NOTE]
-   > Mit der Option **Datensätze neu zuweisen** werden alle Datensätze unabhängig von Ihrem Status neu zugewiesen. Inaktive und aktive Datensätze werden dem anderen Benutzer oder Team zugewiesen. Dadurch werden auch alle aktivierten Prozesse, einschließlich Geschäftsregeln und Workflows, deaktiviert, wenn der Datensatz einem anderen Benutzer oder Team zugewiesen wird. Der neue Besitzer muss die Prozesse, die verwendet werden müssen, aktiv sein.
+   > Mit der Option **Datensätze neu zuweisen** werden alle Datensätze unabhängig von ihrem Status neu zugewiesen. Inaktive und aktive Datensätze werden dem anderen Benutzer oder Team zugewiesen. Wenn der Datensatz einem anderen Benutzer oder Team zugewiesen wird, werden auch alle aktivierten Prozesse, einschließlich Geschäftsregeln und Workflows, deaktiviert. Der neue Besitzer muss die zu verwendeten Prozesse aktivieren.
  
    > [!div class="mx-imgBorder"]
-   > ![Alle Datensätze einem Benutzer oder Team neu zuweisen](media/assign6.png "Alle Datensätze einem Benutzer oder Team neu zuweisen")
+   > ![Alle Datensätze einem Benutzer oder Team neu zuweisen](media/assign6.png "Neuzuweisen aller Datensätze zu einem Benutzer oder Team")
  
 
