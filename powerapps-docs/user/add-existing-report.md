@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen eines Berichts von außerhalb von powerapps | Microsoft-Dokumentation
-description: Hinzufügen eines Berichts von außerhalb von powerapps
+title: Hinzufügen eines Berichts außerhalb von Power Apps | Microsoft-Dokumentation
+description: Hinzufügen eines Berichts außerhalb von Power Apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -18,54 +18,54 @@ search.app:
 - D365CE
 ms.openlocfilehash: e730d498a4d82518d0f908645e26a541c1e8c6af
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74725854"
 ---
-# <a name="add-a-report-from-outside-power-apps"></a>Hinzufügen eines Berichts von außerhalb von powerapps
+# <a name="add-a-report-from-outside-power-apps"></a>Hinzufügen eines Berichts außerhalb von Power Apps
 
-Wenn Sie einen benutzerdefinierten Bericht außerhalb des Systems erstellt haben, können Sie ihn problemlos zu powerapps hinzufügen.
+Wenn Sie einen benutzerdefinierten Bericht außerhalb des Systems erstellt haben, können Sie ihn problemlos zu Power Apps hinzufügen.
 
-Informationen zum Erstellen eines benutzerdefinierten Berichts finden Sie im [Handbuch zur Berichterstattung und Analyse](https://docs.microsoft.com/dynamics365/customer-engagement/analytics/get-started-writing-reports).
+Informationen zum Erstellen eines benutzerdefinierten Berichts finden Sie unter [Übersicht über Berichte](https://docs.microsoft.com/dynamics365/customer-engagement/analytics/get-started-writing-reports).
 
-1. Wählen Sie im linken Navigationsbereich den Bereich Berichte aus. 
-2. Klicken Sie in der Befehlsleiste auf **neu**.
+1. Wählen Sie im linken Navigationsbereich den Bereich „Berichte“ aus. 
+2. Wählen Sie auf der Befehlsleiste **Neu** aus.
   
    **Hinzufügen einer Datei, die in einer anderen Anwendung erstellt wurde**  
   
-   1. Wählen Sie im Abschnitt **Quelle** im Feld **Berichtstyp** die Option **vorhandene Datei**aus.  
+   1. Wählen Sie im Abschnitt **Quelle** im Feld **Berichtstyp** die Option **Vorhandene Datei** aus.  
    
      > [!div class="mx-imgBorder"]
-     > ![Vorhandenen Bericht hinzufügen](media/add_existing_report.png "Vorhandenen Bericht hinzufügen")
+     > ![Hinzufügen eines vorhandenen Berichts](media/add_existing_report.png "Hinzufügen eines vorhandenen Berichts")
   
-   2. Geben Sie im Feld **Datei Speicherort** den Pfad und den Dateinamen der hinzu zufügenden Datei ein, oder wählen Sie **Durchsuchen** aus, um die Datei zu suchen. 
+   2. Geben Sie im Feld **Dateispeicherort** den Pfad und den Dateinamen der hinzuzufügenden Datei ein, oder wählen Sie **Durchsuchen** aus, um die Datei zu suchen. 
    
-      Sie können viele andere Dateitypen, z. b. eine Excel-Datei, hochladen, damit diese z. b. wie ein SQL Server Reporting Services Bericht oder Berichts-Assistent erstellt werden kann. RDL-Datei. Weitere Informationen finden Sie unter [Report Writing Environment Using SQL Server Data Tools](https://docs.microsoft.com/dynamics365/customer-engagement/analytics/report-writing-environment-using-sql-server-data-tools).
+      Sie können auch viele andere Dateitypen hochladen (beispielsweise eine Excel-Datei). Wenn die Datei aber wie ein SQL Server Reporting Services-Bericht oder wie ein durch den Berichts-Assistenten erstellter Bericht funktionieren soll, muss es sich um eine RDL-Datei handeln. Weitere Informationen finden Sie unter [Berichtverfassungsumgebung mit SQL Server Data Tools](https://docs.microsoft.com/dynamics365/customer-engagement/analytics/report-writing-environment-using-sql-server-data-tools).
   
-      Oder  
+      ODER:  
   
    **Hinzufügen eines Links zu einer Webseite**  
   
-   1.  Wählen Sie im Abschnitt **Quelle** im Feld **Berichtstyp** die Option **mit Webseite verknüpfen**aus.  
+   1.  Wählen Sie im Abschnitt **Quelle** im Feld **Berichtstyp** die Option **Link zu Webseite** aus.  
   
    2.  Geben Sie im Feld **Webseiten-URL** die URL der Webseite ein.  
   
 3. Geben Sie die Eigenschaften für den Bericht an.
   
-   1.  Geben Sie im **Detail** Abschnitt einen aussagekräftigen Namen und eine Beschreibung für den Bericht an.  
+   1.  Geben Sie im Abschnitt **Details** einen aussagekräftigen Namen und eine Beschreibung für den Bericht an.  
   
-   2.  Das Textfeld über **geordneter Bericht** zeigt den übergeordneten Bericht des aktuellen Berichts an, sofern vorhanden.  
+   2.  Im Textfeld **Übergeordneter Bericht** wird der übergeordnete Bericht des aktuellen Berichts angezeigt (sofern vorhanden).  
   
-   3. **Kategorien**. Wählen Sie die ![Schaltfläche](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") **Werte für dieses Feld mit den Auslassungs Zeichen auswählen oder ändern aus** , und geben Sie dann die Kategorien an, die in diesem Bericht enthalten sein sollen.  
+   3. **Kategorien**: Wählen Sie die Schaltfläche ![Auslassungspunkte](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") aus, um **die Werte für dieses Feld auszuwählen oder zu ändern**, und geben Sie anschließend die Kategorien ein, die in diesen Bericht einbezogen werden sollen.  
   
-   4. **Zugehörige Daten Satz Typen**. Damit der Bericht in der Liste Berichte auf einer Seite für bestimmte Daten Satz Typen angezeigt wird, wählen Sie die Schaltfläche **auswählen oder ändern Sie die Schaltfläche Werte für dieses Feld** ![](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") aus, und wählen Sie dann Daten Satz Typen aus.  
+   4. **Verknüpfte Datensatztypen**: Wählen Sie die Schaltfläche ![Auslassungspunkte](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") aus, um **die Werte für dieses Feld auszuwählen oder zu ändern**, und wählen Sie anschließend die gewünschten Datensatztypen aus, damit der Bericht in der Berichtsliste einer Seite für bestimmte Datensatztypen angezeigt wird.  
   
-   5. **Anzeigen in**. Wenn Sie angeben möchten, wo Berichte sichtbar sein sollen, wählen Sie die Schaltfläche **auswählen oder ändern Sie die Schaltfläche Werte für dieses Feld aus** ![](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") , und wählen Sie dann eine oder mehrere der Optionen aus.  
+   5. **Anzeigen in**: Wählen Sie die Schaltfläche ![Auslassungspunkte](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") aus, um **die Werte für dieses Feld auszuwählen oder zu ändern**, und wählen Sie anschließend eine oder mehrere der Optionen aus, um anzugeben, wo der Bericht angezeigt werden soll.  
   
-        Wenn keine Werte ausgewählt sind, ist der Bericht für Endbenutzer nicht sichtbar.  
+        Wenn Sie nichts auswählen, wird der Bericht den Endbenutzern nicht angezeigt.  
   
-4. Wählen Sie **Speichern** oder **Speichern und schließen**aus.  
+4. Wählen Sie **Speichern** oder **Speichern und schließen** aus.  
 
 
 
@@ -75,6 +75,6 @@ Informationen zum Erstellen eines benutzerdefinierten Berichts finden Sie im [Ha
 
 [Erstellen eines Berichts mithilfe des Berichts-Assistenten](create-report-with-wizard.md)
 
-[Berichts Filter bearbeiten](edit-report-filter.md)
+[Bearbeiten des Standardfilters eines Berichts](edit-report-filter.md)
 
-[Problembehandlung bei Daten, die nicht in einem Bericht angezeigt werden](troubleshoot-reports.md)
+[Behandeln von Problemen im Zusammenhang mit nicht angezeigten Berichtsdaten](troubleshoot-reports.md)

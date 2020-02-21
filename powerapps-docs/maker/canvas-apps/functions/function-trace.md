@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86d28400e0eaea89b59286df173d0e67655bb7a5
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: 23bfbb3b97764a427d5422e4ad207d4af7cc1589
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541242"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530786"
 ---
 # <a name="trace-function"></a>Funktion „Trace“ 
 
 Die Funktion „Trace“ stellt in Test Studio einen optionalen Ausdruck dar, der verwendet werden kann, um über das Ereignis **OnTestCaseComplete** zusätzliche Informationen zu Ihren Testergebnissen bereitzustellen. Meldungen zu „Trace“-Ereignissen sowie sämtliche Meldungen zu erfolgreichen und fehlgeschlagenen Assertionen sind in der Tabelle „Traces“ im Datensatz „TestCaseResult“ enthalten. Die Tabelle „Traces“ verfügt über zwei Eigenschaften: „Message“ und „Timestamp“. 
 
-Wenn Sie für Ihre App das Senden von Telemetriedaten an Azure Application Insights freigegeben haben, kann die Funktion „Trace“ auch verwendet werden, um benutzerdefinierte Ereignis- oder Diagnoseinformationen an Ihre Application Insights-Ressource zu senden. Sie können diese Daten in Application Insights überprüfen, um Probleme zu diagnostizieren oder um Informationen zur Nutzung Ihrer Apps und Features zu erhalten. Die in den Tests verwendeten „Trace“-Informationen werden ebenfalls in Application Insights gespeichert. Alle „Trace“-Meldungen können ebenfalls im Tool Power Apps Monitor abgerufen werden. Dieses hilft Ihnen beim Debuggen oder Ermitteln von Problemen, die Sie für Diagnosesitzungen für Ihre App in Echtzeit verwenden können.   
+Ablauf Verfolgungs Meldungen können auch in der APP definiert werden. Diese können im powerapps-Monitor Tool zusammen mit anderen APP-Aktivitäten angezeigt werden, um das Debuggen oder identifizieren von Problemen mit Diagnoseinformationen in Echtzeit für Ihre APP zu unterstützen. Wenn Sie für Ihre App das Senden von Telemetriedaten an Azure Application Insights freigegeben haben, kann die Funktion „Trace“ auch verwendet werden, um benutzerdefinierte Ereignis- oder Diagnoseinformationen an Ihre Application Insights-Ressource zu senden. Sie können diese Daten in Application Insights überprüfen, um Probleme zu diagnostizieren oder um Informationen zur Nutzung Ihrer Apps und Features zu erhalten. Die in den Tests verwendeten „Trace“-Informationen werden ebenfalls in Application Insights gespeichert. Die Test Ablauf Verfolgungs Informationen sind im Überwachungs Tool nicht verfügbar, da der Monitor mit der App verbunden ist, wenn er von der Canvas Studio wiedergegeben wird. 
 
 ## <a name="syntax"></a>Syntax
 

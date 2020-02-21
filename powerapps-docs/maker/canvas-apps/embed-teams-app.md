@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/29/2019
+ms.date: 02/18/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a12cd7c17a6aca93f254cc2e2cb89cb848245392
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7f98025fbc3a2f392b45cce22af41d075a3bfaac
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731504"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530863"
 ---
 # <a name="embed-an-app-in-teams"></a>Einbetten einer App in Teams
 
@@ -29,12 +29,12 @@ Ein Administrator kann die APP hochladen, sodass er für **alle** Teams in Ihrem
 > [!NOTE]
 > Benutzerdefinierte App-Richtlinien müssen festgelegt werden, damit benutzerdefinierte apps hochgeladen werden können Wenn Sie Ihre APP nicht in Teams einbetten können, wenden Sie sich an Ihren Administrator, um festzustellen, ob [benutzerdefinierte App-Einstellungen](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings)eingerichtet wurden.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 - Sie benötigen eine gültige [powerapps-Lizenz](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus).
 - Zum Einbetten einer APP in Teams benötigen Sie eine vorhandene APP, die [mit powerapps erstellt](data-platform-create-app.md)wurde.
 
-## <a name="download-the-app"></a>Herunterladen der APP
+## <a name="download-the-app"></a>Herunterladen der App
 
 1. Melden Sie sich bei [make.powerapps.com](https://make.powerapps.com)an, und wählen Sie dann im Menü **apps** aus.
 
@@ -62,6 +62,21 @@ Ein Administrator kann die APP hochladen, sodass er für **alle** Teams in Ihrem
 ## <a name="publish-the-app-to-the-teams-catalogue"></a>Veröffentlichen der APP im Teams-Katalog
 
 Wenn Sie ein Administrator sind, können Sie [die APP](https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams) auch im Microsoft Teams-Katalog veröffentlichen.
+
+## <a name="improve-the-performance-of-your-app"></a>Verbessern Sie die Leistung Ihrer APP
+
+Optional können Sie Ihre APP innerhalb von Teams vorab laden, um die Leistung zu verbessern.
+
+1. Melden Sie sich bei [make.powerapps.com](https://make.powerapps.com)an, und wählen Sie dann im Menü **apps** aus.
+
+2. Wählen Sie **Weitere Aktionen** (...) für die APP aus, die Sie in Teams freigeben möchten, und wählen Sie dann **Einstellungen**aus.
+
+3. Wechseln **Sie im**Einstellungsbereich **zum vorab laden der APP, um die Leistung** zu verbessern. Power apps lädt Ihre APP dann vorab, wenn Sie in Teams eingebettet ist.
+
+    ![App-Details](./media/embed-teams-app/preload-app.png "App vorab laden, um die Leistung zu verbessern")
+
+4. Damit die Änderungen wirksam werden, importieren Sie Ihre APP erneut in Teams.
+
 
 ### <a name="see-also"></a>Siehe auch
 
