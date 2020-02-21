@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten des Standard Filters eines Berichts | Microsoft-Dokumentation
+title: Bearbeiten des Standardfilters eines Berichts | Microsoft-Dokumentation
 description: Bearbeiten des Standardfilters eines Berichts
 author: mduelae
 manager: kvivek
@@ -18,62 +18,62 @@ search.app:
 - D365CE
 ms.openlocfilehash: 53e4f2fc61bb72b4c3fc6fed188b513641c2034d
 ms.sourcegitcommit: e9671e018c1ee4b640528915350a367758991b6a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/27/2019
 ms.locfileid: "67420212"
 ---
 # <a name="edit-the-default-filter-of-a-report"></a>Bearbeiten des Standardfilters eines Berichts
 
-Wenn es sich bei einem Bericht um einen SQL Server Reporting Services Bericht handelt, der für die Vorfilterung aktiviert ist und über einen Standardfilter verfügt, können Sie den Standardfilter ändern, um die Daten anzuzeigen, die Sie im Bericht erwarten. Dieser Filter wird jedes Mal verwendet, wenn ein Benutzer den Bericht ausführt.
+Wenn es sich bei einem Bericht um einen SQL Server Reporting Services-Bericht handelt, der für die Vorfilterung aktiviert ist und über einen Standardfilter verfügt, können Sie den Standardfilter ändern, um die Daten anzuzeigen, die Sie im Bericht anzeigen möchten. Dieser Filter wird jedes Mal verwendet, wenn ein Benutzer den Bericht ausführt.
 
-1. Wählen Sie im linken Navigationsbereich den Bereich Berichte aus.
-2. Wählen Sie einen Bericht aus, und wählen Sie auf der Leiste der Zeilen Leiste die Option **Standard Filter bearbeiten**aus.
+1. Wählen Sie im linken Navigationsbereich den Bereich „Berichte“ aus.
+2. Wählen Sie einen Bericht aus, und wählen Sie auf der Befehlsleiste **Standardfilter bearbeiten** aus.
 
      > [!div class="mx-imgBorder"]
-     > ![Standard Berichts Filter bearbeiten](media/edit_filter.png "Standard Berichts Filter bearbeiten")
+     > ![Standardberichtsfilter bearbeiten](media/edit_filter.png "Standardberichtsfilter bearbeiten")
   
 3. Ändern Sie die Filterkriterien.  
   
-   Die Kriterien sind nach Daten Satz Typen gruppiert, die Sie im Filter verwenden können, z. b. **Konten** oder **Kontakte**.  
+   Die Kriterien sind nach Datensatztypen gruppiert, die Sie im Filter verwenden können, wie z. B. **Konten** oder **Kontakte**.  
   
-   ### <a name="to-edit-an-existing-row"></a>So bearbeiten Sie eine vorhandene Zeile
-   1. Wählen Sie den relationalen Abfrage Operator aus, und wählen Sie einen Operator aus. Alternativ können Sie den unterstrichenen Wert auswählen und einen neuen  
+   ### <a name="to-edit-an-existing-row"></a>Bearbeiten einer vorhandenen Zeile
+   1. Wählen Sie den relationalen Abfrageoperator aus, und wählen Sie einen Operator aus. Alternativ können Sie den unterstrichenen Wert auswählen und einen neuen Wert eingeben.  
   
-   2. Wählen Sie den relationalen Abfrage Operator aus, und wählen Sie einen Operator aus.  
+   2. Wählen Sie den relationalen Abfrageoperator aus, und wählen Sie einen Operator aus.  
   
-   So fügen Sie eine Kriterienzeile hinzu:  
+   Hinzufügen Sie eine Kriterienzeile:  
 
-   1.  Wählen Sie **auswählen**aus, und geben Sie das zu filternde Feld an.  
+   1.  Wählen Sie **Auswählen**, und geben Sie das Feld an, nach dem gefiltert werden soll.  
 
-   2.  Wählen Sie den relationalen Abfrage Operator aus, und wählen Sie einen Operator aus.  
+   2.  Wählen Sie den relationalen Abfrageoperator aus, und wählen Sie einen Operator aus.  
 
-   3.  Wählen Sie **Wert eingeben**, und geben Sie einen Wert ein, nach dem gefiltert werden soll. Für einige Werte können Sie die Schalt ![](media/ellipsis-button.png "Fläche mit den") Auslassungs Punkten der Schaltfläche mit den Auslassungs Punkten **für dieses Feld auswählen oder ändern** auswählen, um das Dialogfeld **Werte auswählen** zu öffnen und den gewünschten Wert auszuwählen.  
+   3.  Wählen Sie **Wert eingeben** aus, und geben Sie einen Wert ein, nach dem gefiltert werden soll. Für einige Werte können Sie die Schaltfläche **Wählen Sie die Werte für dieses Feld aus, oder ändern Sie sie.** ![Schaltfläche mit Auslassungspunkten](media/ellipsis-button.png "Schaltfläche mit Auslassungspunkten") auswählen, um das Dialogfeld **Werte auswählen** zu öffnen und den gewünschten Wert auszuwählen.  
 
-   ### <a name="to-group-criteria"></a>So gruppieren Sie Kriterien
-   Sie müssen mindestens zwei Zeilen für denselben Daten Satz Typen auswählen. Allerdings können Zeilen mit Feldwerten aus unterschiedlichen Daten Satz Typen, z. b. **Konto** -und **Kontakt** Daten Satz Typen, nicht gruppiert werden.  
+   ### <a name="to-group-criteria"></a>Gruppieren von Kriterien
+   Sie müssen mindestens zwei Zeilen für denselben Datensatztyp auswählen. Allerdings können Zeilen mit Feldwerten aus unterschiedlichen Datensatztypen wie z. B. **Konto** und **Kontakt** nicht gruppiert werden.  
 
-   1.  Wählen Sie für jede Zeile, die Sie gruppieren möchten, im detaillierten Modus die Menü Schaltfläche **Optionen** für diese Zeile aus, und klicken Sie dann auf **Zeile auswählen**.  
+   1.  Wählen Sie für jede Zeile, die Sie gruppieren möchten, im detaillierten Modus die Schaltfläche **Menüoptionen** für diese Zeile und anschließend **Zeile auswählen** aus.  
 
-   2.  Wählen Sie auf der Filter Symbolleiste die Option **Gruppieren und** oder **Gruppe oder**aus.  
+   2.  Wählen Sie auf der Filtersymbolleiste **Gruppieren UND** oder **Gruppieren ODER** aus.  
 
-   3.  Um eine Zeile aus einer Gruppe zu entfernen, wählen Sie die Menü Schaltfläche **Optionen** für diese Zeile aus, und wählen Sie dann **Löschen**aus.  
+   3.  Wenn Sie eine Zeile aus einer Gruppe entfernen möchten, wählen Sie die Schaltfläche **Menüoptionen** für diese Zeile und anschließend **Löschen** aus.  
 
-   4.  Um eine Gruppe auszuwählen, wählen Sie die Menü Schaltfläche **Optionen** für diese Gruppe aus, und wählen Sie dann **Gruppe auswählen**aus.  
+   4.  Wenn Sie eine Gruppe auswählen möchten, wählen Sie die Schaltfläche **Menüoptionen** für diese Gruppe und anschließend **Gruppe auswählen** aus.  
 
-   5.  Um einer Gruppe eine kriterienklausel hinzuzufügen, wählen Sie die Menü Schaltfläche **Optionen** für diese Gruppe und dann **Klausel hinzufügen**aus, und wählen Sie dann das Feld, den relationalen Abfrage Operator und den Wert aus.  
+   5.  Wenn Sie eine Kriterienklausel zu einer Gruppe hinzufügen möchten, wählen Sie die Schaltfläche **Menüoptionen** für diese Gruppe und anschließend **Klausel hinzufügen** aus. Wählen Sie danach das Feld, den relationalen Abfrageoperator und den Wert aus.  
 
-   6.  Um die Auswahl einer zuvor ausgewählten Gruppe zu deaktivieren, wählen Sie die **Menü** Schaltfläche Optionen für diese Gruppe aus, und wählen Sie dann **Gruppe deaktivieren**aus.  
+   6.  Wenn Sie die Auswahl einer zuvor ausgewählten Gruppe aufheben möchten, wählen Sie die Schaltfläche **Menüoptionen** für diese Gruppe und anschließend **Gruppenauswahl aufheben** aus.  
 
-   7.  Um die Gruppierung einer Gruppe zu deaktivieren, wählen Sie die Menü Schaltfläche **Optionen** für diese Gruppe aus, und wählen Sie dann Gruppierung **Deaktivieren**aus.  
+   7.  Wenn Sie eine Gruppierung aufheben möchten, wählen Sie die Schaltfläche **Menüoptionen** für diese Gruppe und anschließend **Gruppierung aufheben** aus.  
 
-   8.  Wenn Sie eine **Gruppe und** Gruppe in eine Gruppe **oder** Gruppe oder eine Gruppe **oder** Gruppe in eine **Gruppe und** Gruppe ändern möchten, wählen Sie die Menü Schaltfläche **Optionen** für diese Gruppe aus, und wählen Sie dann **in oder** ändern **aus.**  
+   8.  Wenn Sie eine **Gruppe UND**-Gruppe in eine **Gruppe ODER**-Gruppe oder eine **Gruppe ODER**- in eine **Gruppe UND**-Gruppe ändern möchten, wählen Sie die Schaltfläche **Menüoptionen** für diese Gruppe aus, und wählen Sie dann **In ODER ändern** oder **In UND ändern** aus.  
 
    > [!TIP]
-   > - Um alle Kriterien zu löschen und zu beginnen, wählen Sie auf der Filter Symbolleiste die Option **Löschen**aus, und wählen Sie dann **bestätigen**aus.  
-   > - Um eine Zeile zu löschen, wählen Sie die Menü Schaltfläche **Optionen** für diese Zeile aus, und wählen Sie dann **Löschen**aus.  
+   > - Wenn Sie alle Kriterien löschen und neu beginnen möchten, wählen Sie auf der Filtersymbolleiste **Löschen** und anschließend **Bestätigen** aus.  
+   > - Wenn Sie eine Zeile löschen möchten, wählen Sie die Schaltfläche **Menüoptionen** für diese Zeile und anschließend **Löschen** aus.  
   
-4. Wenn Sie dies abgeschlossen haben, wählen Sie **Standard Filter speichern**aus.
+4. Wählen Sie **Standardfilter speichern** aus, wenn der Vorgang abgeschlossen ist.
 
 
 
@@ -82,7 +82,7 @@ Wenn es sich bei einem Bericht um einen SQL Server Reporting Services Bericht ha
 
 [Erstellen eines Berichts mithilfe des Berichts-Assistenten](create-report-with-wizard.md)
 
-[Vorhandenen Bericht hinzufügen](add-existing-report.md)
+[Hinzufügen eines vorhandenen Berichts](add-existing-report.md)
 
 [Problembehandlung bei Daten, die nicht in einem Bericht angezeigt werden](troubleshoot-reports.md)
 

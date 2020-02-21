@@ -1,6 +1,6 @@
 ---
-title: Verwenden der Dynamics 365-App für Outlook | MicrosoftDocs
-description: Verwenden Sie die Dynamics 365-App für Outlook mit Power apps und Common Data Service.
+title: Verwenden der Dynamics 365-App für Outlook | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie die Dynamics 365-App für Outlook mit Power Apps und Common Data Service verwenden.
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -18,39 +18,39 @@ search.app:
 - D365CE
 ms.openlocfilehash: 527f3f90b2fafbb8b2ac52a0dabf99a32e4c7521
 ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74680395"
 ---
 # <a name="use-dynamics-365-app-for-outlook"></a>Verwenden der Dynamics 365-App für Outlook
 
-Verwenden Sie die Dynamics 365-App für Outlook zum Verwalten Ihrer Dynamics 365-Daten mithilfe von Outlook auf dem Desktop, dem Web oder dem Telefon. Wenn Dynamics 365-App für Outlook installiert ist, wird abhängig von der installierten Version der APP ein Common Data Service Bereich oder Fenster neben einer ausgewählten Outlook-e-Mail angezeigt, oder wenn Sie eine e-Mail-Nachricht erstellen oder eine Besprechung einrichten oder Ernen.
+Mit der Dynamics 365-App für Outlook können Sie Ihre Dynamics 365-Daten mit Outlook auf dem Desktop, im Web oder auf einem Smartphone verwalten. Wenn die Dynamics 365-App für Outlook installiert ist, wird abhängig von der installierten App-Version neben einer ausgewählten Outlook-E-Mail, beim Erstellen einer E-Mail oder beim Einrichten einer Besprechung oder eines Termins ein Common Data Service-Bereich oder -Fenster angezeigt.
 
 
    > [!div class="mx-imgBorder"] 
-   > ![Dynamics 365-App für Outlook](media/outlookapp.png "Dynamics 365-App für Outlook")
+   > ![Dynamics 365-App für Outlook](media/outlookapp.png "Dynamics 365-App für Outlook")
 
-## <a name="what-dynamics-365-app-for-outlook-offers"></a>Was Dynamics 365-App für Outlook bietet?
+## <a name="what-dynamics-365-app-for-outlook-offers"></a>Funktionen der Dynamics 365-App für Outlook
 
-Mit der Dynamics 365-App für Outlook können Sie folgende Aktionen ausführen:  
+Die Dynamics 365-App für Outlook ermöglicht Folgendes:  
   
-- Anzeigen von Informationen zu Common Data Service Kontakten und Konten während der Arbeit in Outlook. Sie können diese Informationen im Kontext einer e-Mail-Nachricht, einer Besprechung oder eines Termins anzeigen. Sehen Sie sich z. b. Telefonnummern, Firmenname, letzte und nächste Aktivitäten und aktuelle Datensätze an. 
+- Anzeigen von Informationen zu Common Data Service-Kontakten und -Konten während der Arbeit in Outlook: Diese Informationen können im Kontext einer E-Mail, einer Besprechung oder eines Termins angezeigt werden. So können Sie beispielsweise Telefonnummern, den Firmennamen, die letzte und nächste Aktivität sowie aktuelle Datensätze anzeigen. 
   
-- Verknüpfen von e-Mail-Nachrichten, Besprechungen und Terminen mit einem Datensatz mit einem einzigen Mausklick. Verknüpfen Sie z. b. eine e-Mail-Nachricht mit einem bestimmten Konto oder Kontakt. Die Dynamics 365-App für Outlook unterstützt auch benutzerdefinierte Entitäten.  
+- Verknüpfen von E-Mails, Besprechungen und Terminen mit einem Datensatz mit nur einem Klick: Dadurch können Sie beispielsweise eine E-Mail mit einem bestimmten Konto oder Kontakt verknüpfen. Die Dynamics 365-App für Outlook unterstützt auch benutzerdefinierte Entitäten.  
   
-- Öffnen Sie Datensätze direkt, um ausführlichere Informationen zu suchen oder einzugeben.  
+- Direktes Öffnen von Datensätzen, um nach ausführlicheren Informationen zu suchen oder sie einzugeben  
   
-- Fügen Sie eine Telefonanruf-, Task-oder Termin Aktivität hinzu.  
+- Hinzufügen einer Anruf-, Aufgaben- oder Terminaktivität  
   
-- Erstellen Sie einen neuen Datensatz für jede Entität (Daten Satz Typen).  
+- Erstellen eines neuen Datensatzes für eine beliebige Entität (Datensatztyp)  
   
-- Verfolgen Sie Outlook-Kontakte in Common Data Service.  
+- Nachverfolgen von Outlook-Kontakten in Common Data Service  
 
-Informationen zur Verwendung der Dynamics 365-App für Outlook finden Sie im [Benutzerhandbuch zu Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/customer-engagement/outlook-app/dynamics-365-app-outlook-user-s-guide).
+Informationen zur Verwendung der Dynamics 365-App für Outlook finden Sie im [Benutzerhandbuch der Dynamics 365-App für Outlook](https://docs.microsoft.com/dynamics365/customer-engagement/outlook-app/dynamics-365-app-outlook-user-s-guide).
 
 ### <a name="see-also"></a>Siehe auch
 
-[Anpassen der Dynamics 365-App für Outlook](../maker/model-driven-apps/app-for-outlook-customize.md)  
+[Anpassen der Dynamics 365-App für Outlook](../maker/model-driven-apps/app-for-outlook-customize.md)  
 
 

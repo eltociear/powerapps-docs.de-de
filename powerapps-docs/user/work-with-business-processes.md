@@ -17,28 +17,28 @@ search.app:
 - D365CE
 ms.openlocfilehash: 7dd0d9a3dc9b78b693565d66f1894484b686b946
 ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "77037365"
 ---
 # <a name="work-with-business-processes"></a>Arbeiten mit Geschäftsprozessen
 
-Geschäftsprozesse helfen allen bewährten Methoden, auch für Situationen, die nicht sehr häufig auftreten. Sofern verfügbar, stellen Geschäftsprozesse eine schrittweise Zeitachse für die Phasen eines Prozesses am Anfang des relevanten Datensatzes dar. Öffnen Sie das Menü für die aktive Phase, geben Sie jedes Feld der erforderlichen und geschäftskritischen Daten ein, und wählen Sie dann die nächste Phase aus, wenn Sie damit arbeiten möchten. Einige Geschäftsprozesse können in dem Zeitraum abgeschlossen werden, der zum Tätigen eines einzelnen Telefonanrufs benötigt wird, während andere einige Wochen dauern können.
+Geschäftsprozesse sind hilfreich, um bewährte Methoden anzuwenden, auch in Situationen, die nicht sehr häufig auftreten. Sofern verfügbar stellen Geschäftsprozesse zu Beginn des relevanten Datensatzes eine schrittweise Zeitachse für die Phasen eines Prozesses dar. Öffnen Sie das Menü für die aktive Phase, füllen Sie alle Felder mit erforderlichen und unternehmenskritischen Daten aus, und wählen Sie anschließend die nächste Phase aus, wenn Sie damit arbeiten möchten. Einige Geschäftsprozesse können innerhalb weniger Minuten abgeschlossen werden, während andere unter Umständen ein paar Wochen in Anspruch nehmen.
 
 
-Wenn Sie an einem neuen Kundendaten Satz arbeiten, können Sie mit dem Geschäftsprozess Ablauf jeden Schritt, den Sie zum Erstellen des neuen Datensatzes ausführen müssen, und die erforderlichen Informationen entsprechend dem Geschäftsprozess Ihrer Organisation anzeigen. 
+Wenn Sie an einem neuen Kundendatensatz arbeiten, sehen Sie im Geschäftsprozessflow jeden erforderlichen Schritt, um einen neuen Datensatz zu erstellen und die erforderlichen Informationen dem Geschäftsprozess Ihrer Organisationen entsprechend auszufüllen. 
 
 
 > [!div class="mx-imgBorder"]
-> ![Geschäftsprozess Leiste](media/business-process.png "Geschäftsprozess Leiste")
+> ![Geschäftsprozessleiste](media/business-process.png "Geschäftsprozessleiste")
 
 
 
-Die Prozess Leiste kann auch an der rechten Seite des Bildschirms angedockt werden, um bei der Arbeit mit einem Kundendaten Satz eine einfache Referenz zu erhalten. 
+Die Prozessleiste kann auch rechts in der Anzeige angedockt werden, damit Sie sich während der Arbeit am Kundendatensatz daran orientieren können. 
 
 > [!div class="mx-imgBorder"]
-> ![Geschäftsprozess Leiste](media/bpdock.gif "Geschäftsprozess Leiste")
+> ![Geschäftsprozessleiste](media/bpdock.gif "Geschäftsprozessleiste")
  
   
  
@@ -47,4 +47,4 @@ Die Prozess Leiste kann auch an der rechten Seite des Bildschirms angedockt werd
 Das System enthält Geschäftsprozesse für häufige Aufgaben. Diese Prozesse werden von den meisten Unternehmen an ihre Arbeitsweise angepasst. Sie können dem System auch Prozesse hinzufügen, die genau an Ihre Branche oder Ihre Geschäftsziele angepasst sind. Anders gesagt: Was Sie hier sehen, muss nicht unbedingt mit den Prozessleisten in Ihrem System übereinstimmen. Dennoch funktionieren die Prozessleisten für alle gleich. Sie gebe Daten in die Feldern ein und wechseln dann mit dem Kunden zum nächsten Schritt.
 
 
-Weitere Informationen zum Anwenden benutzerdefinierter Geschäftslogik mit Geschäftsregeln und Flows finden Sie unter Anwenden von [benutzerdefinierter Geschäftslogik mit Geschäftsregeln und Flows in einer Modell gesteuerten App](https://docs.microsoft.com/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes).
+Weitere Informationen zum Anwenden von benutzerdefinierter Geschäftslogik mit Geschäftsregeln und -flows finden Sie unter [Anwenden benutzerdefinierter Geschäftslogik mit Geschäftsregeln und -flows in modellgesteuerten Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes).

@@ -17,7 +17,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: ff83a238715ef6f78650eeb03b087088cb5f0c1e
 ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/03/2020
 ms.locfileid: "76973176"
@@ -38,7 +38,7 @@ Ja. Sie können Aktivitäten zu schreibgeschützten Entitäten wie Hinweisen, Te
 
 ## <a name="are-html-tags-supported-in-notes"></a>Werden HTML-Tags in **Hinweisen** unterstützt?
 
-Nein. Beim Erstellen einer Hinweisaktivität werden HTML-Tags unabhängig vom Datensatz oder der Entität nicht unterstützt. Wenn Sie z. b. `<TAG> </TAG>` einem Hinweisfeld hinzufügen, wird es als `<TAG_XXX="XX"> </TAG>`angezeigt.
+Nein. Beim Erstellen einer Hinweisaktivität werden HTML-Tags unabhängig vom Datensatz oder der Entität nicht unterstützt. Wenn Sie beispielsweise `<TAG> </TAG>` einem Hinweisfeld hinzufügen, wird es als `<TAG_XXX="XX"> </TAG>` angezeigt.
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>Wie kann ich die Leistung der Zeitachsenanzeige verbessern?
 
@@ -51,16 +51,16 @@ Sie können die Leistung der Zeitachsenanzeige verbessern, indem Sie optimieren,
 
 Wenn Sie die **Seitenansicht** in Dynamics 365 öffnen, wird die **Zeitachsenanzeige** nicht in der Liste angezeigt. Zwar werden **Hinweise** angezeigt, Aufgaben und E-Mails jedoch nicht.
 
-## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>Warum werden keine anderen Benutzeraktivitäten und Datensätze im Datenstrom der eigenen Aktivitäten im Dashboard angezeigt?
+## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>Warum werden auf dem Dashboard im Stream „Meine Aktivitäten“ keine Aktivitäten und Datensätze anderer Benutzer angezeigt?
 
-Der Stream " **meine Aktivitäten** " im Dashboard zeigt die Datensätze und Aktivitäten an, die Sie besitzen (Benutzer). Benutzer **a** zeigt z. b. Datensätze und Aktivitäten an, die im Besitz von **sind, und**Benutzer **b** zeigt Datensätze und Aktivitäten an, die sich im Besitz von **B**befinden.
+Im Stream **Meine Aktivitäten** auf dem Dashboard werden die Datensätze und Aktivitäten angezeigt, deren Besitzer (Benutzer) Sie sind. Beispiel: Dem Benutzer **A** werden Datensätze und Aktivitäten des Besitzers **A** angezeigt, und dem Benutzer **B** werden Datensätze und Aktivitäten des Besitzers **B** angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Einrichten des Zeitachsen-Steuer Elements](../maker/model-driven-apps/set-up-timeline-control.md)
+[Einrichten des Zeitachsenabschnitts (Steuerelement)](../maker/model-driven-apps/set-up-timeline-control.md)
 
-[FAQs zum Zeitachsen-Steuerelement](../maker/model-driven-apps/faqs-timeline-control.md)
+[Häufig gestellte Fragen zum Zeitachsensteuerelement](../maker/model-driven-apps/faqs-timeline-control.md)
 
-[Hinzufügen einer Termin-, e-Mail-, Telefonanruf-, Notiz-oder Aufgaben Aktivität zur Zeitachse](add-activities.md)
+[Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse](add-activities.md)
 
-[Zeitachsen Abschnitt in der Customer Service Hub-App](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
+[Zeitachsenabschnitt in der Kundenservicehub-App](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

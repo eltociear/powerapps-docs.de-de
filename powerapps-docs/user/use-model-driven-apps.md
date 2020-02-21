@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Modell gesteuerten apps in powerapps | Microsoft-Dokumentation
-description: Bietet Informationen zur Verwendung von Modell gesteuerten apps in powerapps.
+title: Verwenden modellgesteuerter Apps in Power Apps | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie modellgesteuerte Apps in Power Apps verwenden.
 author: mduelae
 ms.service: powerapps
 ms.topic: overview
@@ -17,26 +17,26 @@ search.app:
 - D365CE
 ms.openlocfilehash: d9b2b9ce12d5899729050b3405b4eefc5e788f9f
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74725925"
 ---
-# <a name="use-model-driven-apps-in-power-apps"></a>Verwenden von Modell gesteuerten apps in powerapps
+# <a name="use-model-driven-apps-in-power-apps"></a>Verwenden modellgesteuerter Apps in Power Apps
 
-Eine Modell gesteuerte App verfügt über mehrere Komponenten, einschließlich Dashboards, Formularen, Ansichten, Diagrammen und Geschäftsprozessen, mit denen die APP problemlos verwendet werden kann. Dieser Abschnitt enthält Informationen zum Navigieren in einer Modell gesteuerten APP, zum Arbeiten mit Datensätzen, zum Importieren/Exportieren von Daten und zum Automatisieren von Prozessen mithilfe der Energie Automatisierung. 
+Eine modellgesteuerte App enthält mehrere Komponenten wie Dashboards, Formulare, Ansichten, Diagramme und Geschäftsprozesse, die zur Benutzerfreundlichkeit der App beitragen. In diesem Abschnitt erfahren Sie, wie Sie in einer modellgesteuerten App navigieren, mit Datensätzen arbeiten, Daten importieren/exportieren und Prozesse mithilfe von Power Automate automatisieren. 
 
 > [!IMPORTANT]
-> Da Canvas-apps eine große Kontrolle über die Benutzeroberfläche bieten und im Grunde etwas zu tun haben, ist es nicht sehr hilfreich, *eine Canvas-APP zu verwenden*. Wenn Sie Hilfe bei der Verwendung einer Canvas-App benötigen, wenden Sie sich an Ihren app-Ersteller oder an den Administrator
+> Da die Benutzererfahrung bei Canvas-Apps größtenteils frei gestaltbar ist und eine Canvas-App somit nahezu alles sein kann, steht nicht viel Dokumentationsmaterial für die *Verwendung einer Canvas-App* zur Verfügung. Wenden Sie sich an den Ersteller Ihrer App oder an den Power Apps-Administrator, wenn Sie Hilfe bei einer Canvas-App benötigen.
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Erweiterte Benutzeroberfläche mit der vereinheitlichten Oberfläche](unified-interface.md)<br/>
-[Einfache Navigation in einer Modell gesteuerten App](navigation.md)
+[Erweiterte Benutzeroberfläche mit der einheitlichen Oberfläche für modellgesteuerte Apps](unified-interface.md)<br/>
+[Einfache Navigation in einer modellgesteuerten App](navigation.md)
 
 ### <a name="see-also"></a>Siehe auch
 
 [Finden und Ausführen von Apps](index.md)<br/>
-[Was ist eine Modell gesteuerte App?](/powerapps/maker/model-driven-apps/model-driven-app-overview)<br/>
-[Was ist eine Canvas-App?](/powerapps/maker/canvas-apps/getting-started)
+[Was sind modellgesteuerte Apps in Power Apps?](/powerapps/maker/model-driven-apps/model-driven-app-overview)<br/>
+[Was sind Canvas-Apps in Power Apps?](/powerapps/maker/canvas-apps/getting-started)
 

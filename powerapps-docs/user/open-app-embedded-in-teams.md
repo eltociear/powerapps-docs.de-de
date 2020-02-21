@@ -18,28 +18,28 @@ search.app:
 - D365CE
 ms.openlocfilehash: 97be49797df13b82901425ae9389e85538068f5d
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74726219"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Hinzufügen einer App zu Microsoft Teams
 
-Bei Microsoft Teams handelt es sich im eine auf Chats basierende Plattform für die Zusammenarbeit, die auf Office 365-Technologien aufbaut. Sie können die Benutzeroberfläche anpassen, indem Sie ihren Kanälen in Teams powerapps-Canvas-apps hinzufügen. In diesem Thema erfahren Sie, wie Sie die Beispiel-App für Product Showcase erst zu dem Teams-Kanal hinzufügen und dann die App über diesen Kanal öffnen. 
+Bei Microsoft Teams handelt es sich im eine auf Chats basierende Plattform für die Zusammenarbeit, die auf Office 365-Technologien aufbaut. Sie können die Benutzerfreundlichkeit von Microsoft Teams verbessern, indem Sie Ihrem Kanal in Microsoft Teams mit Power Apps generierte Canvas-Apps hinzufügen. In diesem Thema erfahren Sie, wie Sie die Beispiel-App für Product Showcase erst zu dem Teams-Kanal hinzufügen und dann die App über diesen Kanal öffnen. 
 
 ![In Microsoft Teams eingebettete App](./media/open-app-embedded-in-teams/embedded-app.png)
 
-Wenn Sie nicht für Power apps registriert sind, melden Sie sich [kostenlos an](https://make.powerapps.com/signup?redirect=marketing&email=) , bevor Sie beginnen.
+Falls Sie noch nicht bei Power Apps registriert sind, müssen Sie sich zuerst [kostenlos registrieren](https://make.powerapps.com/signup?redirect=marketing&email=).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Sie benötigen hierzu ein [Office 365-Abonnement](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) und einen [Kanal in Microsoft Teams](https://www.youtube.com/watch?v=he2f1quaR7M).
 
-## <a name="sign-in-to-power-apps"></a>Anmelden bei Power apps
+## <a name="sign-in-to-power-apps"></a>Bei Power Apps anmelden
 
-Melden Sie sich bei powerapps unter [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an.
+Melden Sie sich unter [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) bei Power Apps an.
 
-## <a name="add-an-app"></a>Hinzufügen einer App
+## <a name="add-an-app"></a>App hinzufügen
 
 1. Wählen Sie in Microsoft Teams ein Team und einen Kanal des Teams aus. In diesem Beispiel wird der Kanal **Allgemein** des Teams **Business Development** verwendet.
 
@@ -84,7 +84,7 @@ In der Desktop-App für Microsoft Teams:
 
 * Apps müssen Inhalte wie Bilder und PDF-Dateien über eine sichere (HTTPS-) Verbindung laden.
 * Nicht alle Sensoren, z. B. **Acceleration**, **Compass** und **Location**, werden unterstützt.
-* Nur diese Audio-Formate werden unterstützt: AAC, H264 OGG Vorbis und WAV.
+* Es werden nur die folgenden Audioformate unterstützt: AAC, H264, OGG Vorbis und WAV.
 
 ## <a name="clean-up-resources"></a>Bereinigen von Ressourcen
 
@@ -92,7 +92,7 @@ Wenn Sie die App aus dem Kanal entfernen möchten, klicken Sie erst auf die Regi
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Thema haben Sie erfahren, wie Sie die Beispiel-App für Product Showcase erst zum Teams-Kanal hinzufügen und dann die App über diesen Kanal öffnen können. Weitere Informationen zu powerapps finden Sie in den Tutorials zu Power apps.
+In diesem Thema haben Sie erfahren, wie Sie die Beispiel-App für Product Showcase erst zum Teams-Kanal hinzufügen und dann die App über diesen Kanal öffnen können. Weitere Informationen zu Power Apps finden Sie in den entsprechenden Tutorials.
 
 > [!div class="nextstepaction"]
-> [Tutorials zu Power apps](../maker/canvas-apps/get-started-create-from-blank.md)
+> [Erstellen einer Canvas-App anhand von Excel-Daten](../maker/canvas-apps/get-started-create-from-blank.md)

@@ -1,6 +1,6 @@
 ---
-title: Anzeigen und Erstellen von e-Mails in Modell gesteuerten apps | MicrosoftDocs
-description: Anzeigen und Erstellen von e-Mails bei Verwendung einer Modell gesteuerten app.
+title: Anzeigen und Erstellen von E-Mails in modellgesteuerten Apps | Microsoft-Dokumentation
+description: Anzeigen und Erstellen von E-Mails bei Verwendung einer modellgesteuerten App.
 ms.date: 02/03/2020
 ms.service:
 - dynamics-365
@@ -10,83 +10,83 @@ ms.author: lalexms
 manager: shujoshi
 ms.openlocfilehash: 7a0dee04334f52518c1746b6650f75ebfb67634d
 ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "77051911"
 ---
-# <a name="preview-view-and-create-email-through-the-activities-grid"></a>Vorschau: anzeigen und Erstellen von e-Mails über das Raster "Aktivitäten"
+# <a name="preview-view-and-create-email-through-the-activities-grid"></a>Vorschauversion: Anzeigen und Erstellen von E-Mails über das Aktivitätsraster
 
-Das anzeigen und Erstellen von e-Mails über das Raster "Aktivitäten" ist eine Funktion für den frühen Zugriff. Sie können sich früh entscheiden, diese Features in Ihrer Umgebung zu aktivieren. Auf diese Weise können Sie diese Features testen und Sie dann in ihren Umgebungen übernehmen. Informationen dazu, wie Sie diese Features aktivieren, finden [Sie unter Opt in 2020 Release Wave 1 Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+Das Anzeigen und Erstellen von E-Mails über das Aktivitätsraster ist ein Early-Access-Feature. Sie können diese Features frühzeitig in Ihrer Umgebung aktivieren. So können Sie diese testen und dann in Ihre Umgebungen einführen. Weitere Informationen zur Aktivierung dieser Features finden Sie unter [Aktivieren von Early-Access-Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
 
-Mit den Modell gesteuerten Dynamics 365-Apps können Sie per e-Mail mit Kunden interagieren. Die e-Mail-Funktionalität ermöglicht Ihnen Folgendes:
+Mit den modellgesteuerten Dynamics 365-Apps können Sie per E-Mail mit Kunden interagieren. Die E-Mail-Funktionalität bietet Ihnen folgende Möglichkeiten:
 
-- Sie können e-Mails anzeigen und darauf reagieren. 
+- Anzeigen und Reagieren auf E-Mails 
 
-- Nutzen Sie die allgemeinen Funktionen für e-Mail-Symbolleisten und Rich Texteditor 
+- Nutzen der allgemeinen E-Mail-Symbolleistenfunktionen und der Steuerelemente des Rich-Text-Editors 
 
-- Verwenden Sie die Drag & Drop-Funktion oder die Kopier-und Einfügefunktion, um Bilder inline anzuzeigen und einzufügen. 
+- Anzeigen und Einfügen von Bildern inline mithilfe von Drag & Drop oder Kopieren und Einfügen. 
 
-- Erstellen Sie eine e-Mail in einem Popup Fenster.  
+- Erstellen von E-Mails in einem Popupfenster  
 
-- Vorschau Vorlagen vor deren Anwendung. 
+- Vorschau von Vorlagen vor der Anwendung 
 
 
 
-## <a name="view-your-email"></a>E-Mail anzeigen
+## <a name="view-your-email"></a>Anzeigen Ihrer E-Mail
 
-So zeigen Sie Ihre e-Mail an:
+Zum Anzeigen Ihrer E-Mail:
 
-1. Wählen Sie in der Sitemap der Modell gesteuerten APP **Aktivitäten**aus. 
+1. Wählen Sie in der Sitemap der modellgesteuerten App  **Aktivitäten** aus. 
 
-2. Wählen Sie die Dropdown-Option **alle Aktivitäten** aus, und wählen Sie dann **meine empfangenen e-Mails**aus.
+2. Wählen Sie die Dropdownliste **Alle Aktivitäten** aus, und wählen Sie dann **Meine eingegangenen E-Mails** aus.
 
-    ![e-Mail anzeigen](media/view-email.png "Empfangene e-Mails anzeigen")
+    ![view-email](media/view-email.png "Empfangene E-Mails anzeigen")
 
-3. Wählen Sie die e-Mail aus, die Sie anzeigen möchten, um Sie zu öffnen. Die e-Mail wird geöffnet, und Sie können dann an den Absender und die Empfänger Antworten oder Sie weiterleiten.
+3. Wählen Sie die E-Mail aus, die Sie anzeigen möchten, um sie zu öffnen. Die E-Mail wird geöffnet. Anschließend können Sie dem Absender oder den Empfängern antworten oder die E-Mail weiterleiten.
 
 ## <a name="create-email"></a>E-Mail erstellen
 
-In den folgenden Schritten wird beschrieben, wie Sie eine e-Mail erstellen.
+In den folgenden Schritten wird beschrieben, wie Sie eine E-Mail erstellen.
 
-1. Wählen Sie in der Sitemap der Modell gesteuerten APP **Aktivitäten**aus.
+1. Wählen Sie in der Sitemap der modellgesteuerten App **Aktivitäten** aus.
 
-2. Wählen Sie in der Befehlsleiste **e-Mail**aus. Ein neues e-Mail-Fenster wird geöffnet.
+2. Wählen Sie in der Befehlsleiste **E-Mail** aus. Daraufhin wird ein neues E-Mail-Fenster geöffnet.
 
-    ![e-Mail erstellen](media/create-email.png "Neue e-Mail-Adresse erstellen")
+    ![create-email](media/create-email.png "Neue E-Mail erstellen")
 
-    Das Feld **from** wird automatisch basierend auf dem aktuell angemeldeten Benutzer ausgefüllt.
+    Das Feld **Von** wird basierend auf dem aktuell angemeldeten Benutzer automatisch ausgefüllt.
 
-3. Schreiben Sie Ihre e-Mail direkt in den Composer, oder wählen Sie **Vorlage einfügen** aus, um nach einer Vorlage zu suchen und diese anzuwenden. Weitere Informationen zum Einfügen einer e-Mail-Vorlage finden Sie unter [Einfügen einer e-Mail-Vorlage](insert-email-template.md).
+3. Sie können entweder direkt eine E-Mail schreiben oder **Vorlage einfügen** auswählen, um nach einer Vorlage zu suchen und sie anzuwenden. Weitere Informationen zum Einfügen einer E-Mail-Vorlage finden Sie unter [Vorschauversion: Hinzufügen einer E-Mail-Vorlage](insert-email-template.md).
 
-4. Wählen Sie zum Verfassen Ihrer e-Mail in einem voll Bildfenster das Erweiterungs Symbol aus.
+4. Wählen Sie zum Verfassen Ihrer E-Mail in einem Vollbildfenster das Erweiterungssymbol aus.
 
-    ![e-Mail-erweitern-Fenster](media/email-expand-window.png "Fenster "e-Mail" erweitern")
+    ![email-expand-window](media/email-expand-window.png "E-Mail-Fenster erweitern")
 
-    Das Meldungs Feld enthält einen Rich-Text-Editor, mit dem Sie umfangreiche und gut formatierte Inhalte für die e-Mails mit Betonung erstellen können. Der-Editor bietet allgemeine Textverarbeitungsfunktionen wie die folgenden: 
+    Das Nachrichtenfeld enthält einen Rich-Text-Editor, mit dem Sie umfangreiche und gut formatierte Inhalte für wichtige E-Mails erstellen können. Der Editor bietet allgemeine Textverarbeitungsfunktionen wie zum Beispiel: 
 
-    - Kopier Formatierung
-    - Schriftart und Größe
+    - Kopieren der Formatierung
+    - Schriftart und -größe
     - Fett, kursiv und unterstrichen
     - Hintergrundfarbe für Text und Textfarbe
-    - Aufzählige und nummerierte Liste
-    - Einzug verkleinern und vergrößern
-    - Anführungszeichen
-    - Text Ausrichtung (ausrichten Links, zentriert und rechts)
-    - Verknüpfung und Verknüpfung aufheben
-    - Text durchgestrichen
+    - Aufzählungen und nummerierte Listen
+    - Verkleinern und Vergrößern des Einzugs
+    - Blockzitat
+    - Textausrichtung (links, zentriert und rechts)
+    - Verknüpfen und Verknüpfungen aufheben
+    - Durchgestrichener Text
     - Bild
-    - Text Richtung von rechts nach links und von links nach rechts
-    - Rückgängig und wiederholen
+    - Textrichtung von rechts nach links und von links nach rechts
+    - Rückgängig machen und Wiederholen
     - Format entfernen
-    - Table
+    - Tabelle
 
-    ![e-Mail-Symbolleiste](media/email-toolbar.png "Verwenden der Rich-Text-Editor-Funktionen")
+    ![email-toolbar](media/email-toolbar.png "Verwenden der Rich-Text-Editor-Funktionen")
 
-5. Wenn Sie fertig sind, wählen Sie **senden**aus.
+5. Wählen Sie abschließend **Senden** aus.
 
 
 ### <a name="see-also"></a>Siehe auch
 
-[Erweiterte e-Mail einrichten](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
-[E-Mail-Vorlage einfügen](insert-email-template.md)
+[Einrichten von erweiterten E-Mail-Funktionen](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
+[Hinzufügen einer E-Mail-Vorlage](insert-email-template.md)

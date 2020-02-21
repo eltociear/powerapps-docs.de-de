@@ -1,6 +1,6 @@
 ---
-title: Vorschau für e-Mail senden mithilfe der erweiterten e-Mail-Leistung in Modell gesteuerten apps | MicrosoftDocs
-description: Verwenden Sie die erweiterte e-Mail-Erfahrung, um eine e-Mail zu verfassen, ohne den Kontext ihrer Arbeit zu belassen.
+title: 'Vorschau: Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion in modellgesteuerten Apps | Microsoft-Dokumentation'
+description: Hier erfahren Sie, wie Sie die erweiterte E-Mail-Funktion verwenden, um eine E-Mail zu erstellen, ohne Ihren aktuellen Arbeitskontext zu verlassen.
 ms.date: 02/03/2020
 ms.service:
 - dynamics-365-sales
@@ -10,55 +10,55 @@ ms.author: shujoshi
 manager: annbe
 ms.openlocfilehash: 6f3c603284e5f5d53380f5caa932cafac11e2d7a
 ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "77051934"
 ---
-# <a name="preview-send-email-using-the-enhanced-email-experience"></a>Vorschau: Senden von e-Mails mithilfe der erweiterten e-Mail-Funktion
+# <a name="preview-send-email-using-the-enhanced-email-experience"></a>Vorschau: Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion
 
-Das Senden von e-Mails mithilfe der erweiterten e-Mail-Funktion ist eine Funktion für den frühen Zugriff. Sie können sich früh entscheiden, diese Features in Ihrer Umgebung zu aktivieren. Auf diese Weise können Sie diese Features testen und Sie dann in ihren Umgebungen übernehmen. Informationen dazu, wie Sie diese Features aktivieren, finden [Sie unter Opt in 2020 Release Wave 1 Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+Das Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion ist ein Early-Access-Feature. Diese Features können frühzeitig in Ihrer Umgebung aktiviert werden, um sie zu testen und in Ihren Umgebungen einzuführen. Weitere Informationen zur Aktivierung dieser Features finden Sie unter [Aktivieren von Early-Access-Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
 
-Dank der verbesserten e-Mail-Benutzererfahrung in Modell gesteuerten Apps können Sie eine e-Mail verfassen, ohne den Datensatz zu belassen, an dem Sie arbeiten. Mit der verbesserten e-Mail-Leistung können Sie folgende Aktionen ausführen:
+Mithilfe der erweiterten E-Mail-Funktion in modellgesteuerten Apps können Sie eine E-Mail erstellen, ohne den Datensatz zu verlassen, an dem Sie gerade arbeiten. Die erweiterte E-Mail-Funktion ermöglicht Folgendes:
 
-- Navigieren zu anderen Seiten, ohne den e-Mail-Inhalt zu verlieren.
-- Minimieren Sie das e-Mail-Fenster, um zu den Datensätzen zurückzukehren, an denen Sie arbeiteten
-- Erweitern Sie das Popup Fenster e-Mail-Editor, um weitere e-Mail-Optionen anzuzeigen.
-- Öffnen Sie gleichzeitig drei Popup Fenster für das Erstellen von e-Mail.
-- Suchen Sie eine vordefinierte Vorlage, und wenden Sie Sie auf eine von Ihnen zusammengesetzte e-Mail an.
-- Fügt Anlagen in eine e-Mail ein.
+- Navigieren zu anderen Seiten, ohne dass der E-Mail-Inhalt verloren geht
+- Minimieren des E-Mail-Fensters, um zu den Datensätzen zurückzukehren, an denen Sie gearbeitet haben
+- Erweitern des Popupfensters des E-Mail-Editors, um weitere E-Mail-Optionen anzuzeigen
+- Gleichzeitiges Öffnen von drei Popupfenstern für die E-Mail-Erstellung
+- Suchen nach einer vordefinierten Vorlage und Anwenden dieser Vorlage auf eine E-Mail, die Sie gerade erstellen
+- Einfügen von Anlagen in eine E-Mail
 
 
 > [!IMPORTANT]
-> - System Administratoren müssen die erweiterte e-Mail-Leistung aktivieren, bevor Sie Sie verwenden können.
+> - Die erweiterte E-Mail-Funktion muss von einem Systemadministrator aktiviert werden, damit Sie sie verwenden können.
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]  
 > - [!INCLUDE[cc_preview_features_expect_changes](../includes/cc-preview-features-expect-changes.md)]
 > - [!INCLUDE[cc-preview-features-no-ms-support](../includes/cc-preview-features-no-ms-support.md)]
 
-Erstellen Sie eine e-Mail mithilfe des erweiterten Erlebnisses:
+Gehen Sie wie folgt vor, um eine E-Mail mithilfe der erweiterten Funktion zu erstellen:
 
-1. Wählen Sie im Abschnitt **Zeitachse** von Datensätzen wie Konto oder Kontakt **+** aus, und wählen Sie dann unter **Aktivitäten**die Option **e-Mail**aus.
+1. Wählen Sie im Abschnitt **Zeitachse** von Datensätzen (Konto, Kontakt oder Ähnliches) das Pluszeichen ( **+** ) und anschließend unter **Aktivitäten** die Option **E-Mail** aus.
 
-   Ein neues e-Mail-Popup Fenster wird geöffnet. 
+   Daraufhin wird ein neues E-Mail-Popupfenster geöffnet. 
 
    > [!div class="mx-imgBorder"]
-   > ![Popup Fenster für erweiterte e-Mail](media/enhanced-email-pop-up.png "Popup Fenster für erweiterte e-Mail")
+   > ![Popupfenster der erweiterten E-Mail-Funktion](media/enhanced-email-pop-up.png "Popupfenster der erweiterten E-Mail-Funktion")
 
-   Die Felder **from** und **to** werden automatisch basierend auf dem Benutzer und dem Konto und dem Kontakt zum ursprünglichen Datensatz aufgefüllt.
+   Die Felder **Von** und **An** werden automatisch auf der Grundlage des Benutzers sowie des Kontos und Kontakts des ursprünglichen Datensatzes ausgefüllt.
 
-2. Schreiben Sie Ihre e-Mail von Grund auf, oder wählen Sie **Vorlage einfügen** aus, um nach Vorlagen zu suchen und diese anzuwenden. Weitere Informationen zum Einfügen einer e-Mail-Vorlage finden Sie unter [Einfügen einer e-Mail-Vorlage](insert-email-template.md).
+2. Sie können entweder eine E-Mail ohne Vorlage schreiben oder **Vorlage einfügen** auswählen, um nach einer Vorlage zu suchen und sie anzuwenden. Weitere Informationen zum Einfügen einer E-Mail-Vorlage finden Sie unter [Vorschau: Einfügen einer E-Mail-Vorlage](insert-email-template.md).
 
-3. Wählen Sie **Datei** anfügen aus, wenn Sie Anlagen hinzufügen möchten.
+3. Falls Sie eine Anlage hinzufügen möchten, wählen Sie **Datei anfügen** aus.
 
-4. Wählen Sie **Signatur einfügen** aus, um die Signatur zu suchen und hinzuzufügen.
+4. Wählen Sie **Signatur einfügen** aus, um nach Ihrer Signatur zu suchen und sie hinzuzufügen.
 
-5. Wenn Sie fertig sind, wählen Sie **senden**aus. 
+5. Wählen Sie abschließend **Senden** aus. 
 
 > [!IMPORTANT]
-> - Die erweiterte e-Mail-Leistung ist nur für e-Mail-Aktivitäten verfügbar, die im Abschnitt " **Timeline** " einer Modell gesteuerten App erstellt wurden. 
-> - Das Popup Fenster Erweiterte e-Mail wird nur geöffnet, wenn die Höhe und Breite der Bildschirmgröße mindestens 400 x 650 Pixel oder größer ist. Wenn Sie niedriger sind, werden Sie anstelle der erweiterten e-Mail-Leistung zum Standardformular weitergeleitet. 
+> - Die erweiterte E-Mail-Funktion steht nur für E-Mail-Aktivitäten zur Verfügung, die im Abschnitt **Zeitachse** einer modellgesteuerten App erstellt werden. 
+> - Das Popupfenster der erweiterten E-Mail-Funktion wird nur geöffnet, wenn die Höhe und Breite Ihrer Bildschirmgröße mindestens 400 x 650 Pixel beträgt. Andernfalls wird anstelle der erweiterten E-Mail-Funktion das Standardformular verwendet. 
 
 ### <a name="see-also"></a>Siehe auch
 
-[Erweiterte e-Mail einrichten](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
-[E-Mail-Vorlage einfügen](insert-email-template.md)
+[Systemeinstellungen – E-Mail (Registerkarte)](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
+[Vorschau: Einfügen einer E-Mail-Vorlage](insert-email-template.md)

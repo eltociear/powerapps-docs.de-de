@@ -18,13 +18,13 @@ search.app:
 - D365CE
 ms.openlocfilehash: deff041b14d469055efc7947e3b5febcc94facc5
 ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74680533"
 ---
 # <a name="discover-apps-via-appsource"></a>Suchen nach Apps über AppSource
-Die apps, die Sie mit Power Apps erstellen und veröffentlichen, werden in Dynamics 365 im Web ermittelt und verwendet. Alle Ihre Apps werden angezeigt, d.h. die Apps, für deren Verwendung Sie sich speziell entschieden haben (durch Starten aus einer Freigabe-E-Mail oder durch Öffnen aus AppSource) bzw. die ein Administrator für Sie bereitgestellt hat. Dies schließt all Ihre apps aus Power apps sowie Dynamics 365-Anwendungen von Microsoft ein. Sie können nach Apps suchen, nach Umgebungen filtern und die am häufigsten verwendeten Apps am oberen Rand der Seite anheften.
+Die mit Power Apps erstellten und veröffentlichten Apps werden in Dynamics 365 im Web gesucht und verwendet. Alle Ihre Apps werden angezeigt, d.h. die Apps, für deren Verwendung Sie sich speziell entschieden haben (durch Starten aus einer Freigabe-E-Mail oder durch Öffnen aus AppSource) bzw. die ein Administrator für Sie bereitgestellt hat. Hierzu zählen alle Ihre Apps aus Power Apps sowie Dynamics 365-Anwendungen von Microsoft. Sie können nach Apps suchen, nach Umgebungen filtern und die am häufigsten verwendeten Apps am oberen Rand der Seite anheften.
 
   ![Apps in Dynamics 365](./media/app-source/apps-dynamics365.png)
 
@@ -33,6 +33,6 @@ Microsoft AppSource ist nun auf der Startseite von [Dynamics 365](https://home.d
 
 ![Apps in Dynamics 365](./media/app-source/getmoreapps.png)
 
-Apps, die mit Power Apps erstellt und mit einer Sicherheitsgruppe oder dem gesamten Unternehmen mit **Benutzer** Berechtigungen gemeinsam genutzt werden, werden hier angezeigt, anstatt Ihre Startseite standardmäßig zu gruppieren. Wenn Sie eine App aus AppSource abrufen, wird diese anschließend auf der Startseite angezeigt, und sie ist über die Umgebung ohne Weiteres zugänglich.
+Apps, die mit Power Apps erstellt und für eine Sicherheitsgruppe oder mit **Benutzerberechtigung** für das gesamte Unternehmen freigegeben wurden, werden hier angezeigt, um die Startseite übersichtlicher zu machen. Wenn Sie eine App aus AppSource abrufen, wird diese anschließend auf der Startseite angezeigt, und sie ist über die Umgebung ohne Weiteres zugänglich.
 
   ![Apps in Dynamics 365](./media/app-source/appsource.png)

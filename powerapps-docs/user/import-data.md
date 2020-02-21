@@ -18,7 +18,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: 8f1105fc88fe87aabceaa10160b96e2d7299cbe0
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74733208"
@@ -27,7 +27,7 @@ ms.locfileid: "74733208"
 
 Ob Ihre Daten in einem Tabellenblatt, auf Ihrem Telefon oder in einem E-Mail-Programm gespeichert sind, hier erfahren Sie, wie Sie die Daten in Ihre App importieren. Beispielsweise können Sie die Kontaktliste Ihrer Kunden aus einem Excel-Arbeitsblatt in die App importieren, damit Sie alle Ihre Kundeninformationen an einem zentralen Ort nachverfolgen können.
   
-## <a name="step-1-get-your-import-file-ready"></a>Schritt 1: Vorbereiten der Import Datei  
+## <a name="step-1-get-your-import-file-ready"></a>Schritt 1: Vorbereiten Ihrer Importdatei  
 Zunächst exportieren Sie Ihre Daten in eine Excel-Datei. Folgende Dateiformate werden unterstützt:
  - Excel-Arbeitsmappe (.xlsx)
  - Durch Trennzeichen getrennte Werte (.csv)
@@ -53,9 +53,9 @@ Die maximal zulässige Größe für ZIP-Dateien beträgt 32 MB. Für die anderen
 
     |**Spaltenname im Tabellenblatt (Schreibweise muss genau übereinstimmen)**|
     |---------|
-    |Vorname|  
+    |First Name|  
     |Zweiter Vorname|  
-    |Nachname|  
+    |Last Name|  
     |Telefon (geschäftlich)|  
     |Mobiltelefon|  
     |Position|  
@@ -76,12 +76,12 @@ Spezifische Anweisungsschritte zum Exportieren von Kontakten für die Marke Ihre
   
 Um eine App zu finden, durchsuchen Sie den Online Store Ihres Telefons.  
   
-## <a name="step-2-import-the-file"></a>Schritt 2: Importieren der Datei 
+## <a name="step-2-import-the-file"></a>Schritt 2: Importieren der Datei 
   
 1. Wählen Sie auf der Befehlsleiste **Aus Excel importieren** oder **Aus CSV importieren** aus.
 
    > [!div class="mx-imgBorder"]
-   > ![Hauptmenü in Power apps](media/import.png "Hauptmenü in Power apps")
+   > ![Hauptmenü in Power Apps](media/import.png "Hauptmenü in Power Apps")
   
 2. Navigieren Sie zu dem Ordner, in dem Sie die Datei gespeichert haben, die den Export Ihrer Kontakte enthält. Wählen Sie die Datei aus, wählen Sie **Öffnen** aus, und wählen Sie dann **Weiter** aus.  
   
@@ -90,7 +90,7 @@ Um eine App zu finden, durchsuchen Sie den Online Store Ihres Telefons.
    
 3. Überprüfen Sie den Dateinamen, und stellen Sie sicher, dass die Feld- und Datentrennzeichen richtig sind, indem Sie die Option **Zuordnung überprüfen** verwenden. Wenn alles gut aussieht, wählen Sie **Import fertig stellen** aus.  
  
-## <a name="step-3-check-that-the-import-is-successful"></a>Schritt 3: Überprüfen Sie, ob der Import erfolgreich war.
+## <a name="step-3-check-that-the-import-is-successful"></a>Schritt 3: Überprüfen, ob der Import erfolgreich war
 
 Nach Fertigstellung des Assistenten überprüfen Sie Ihre Daten (z. B. die Liste der Kontakte), um sicherzustellen, dass sie richtig importiert wurden.  
   
