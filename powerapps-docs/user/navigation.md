@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7bf1b81047cc9ebb9e2812d08c84245b7f83c5a9
-ms.sourcegitcommit: 4728372a4a467f65bab9ae17e91738f420e17374
+ms.openlocfilehash: b05b3220c4e67565a6055a23915cc65f5d434eb2
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77067477"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282436"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Einfache Navigation in einer modellgesteuerten App 
 
@@ -53,11 +53,11 @@ Es ist ganz einfach, zwischen Ihren bevorzugten oder am häufigsten verwendeten 
 Legende:
 
 1. **App-Auswahl:** Öffnen Sie dieses Menü, um zwischen Apps zu wechseln.
-1. **Schaltfläche „Reduzieren/Erweitern“:** Klicken Sie auf diese Schaltfläche, um den Navigator zu reduzieren und mehr Platz für den Hauptteil der Seite zu schaffen. Wenn der Navigator bereits reduziert ist, klicken Sie auf diese Schaltfläche, um ihn wieder zu erweitern.
-1. **Zuletzt verwendete Datensätze:** Erweitern Sie diesen Eintrag, um eine Liste der zuletzt verwendeten Datensätze anzuzeigen. Klicken Sie hier auf einen Datensatz, um ihn zu öffnen. Klicken Sie auf das Stecknadelsymbol neben einem aufgelisteten Datensatz, um diesen zu Ihren Favoriten (angeheftete Datensätze) hinzuzufügen.
-1. **Bevorzugte Datensätze:** Erweitern Sie diesen Eintrag, um Ihre bevorzugten (angehefteten) Datensätze anzuzeigen und zu öffnen. Über die Liste **Zuletzt verwendete Datensätze** können Sie Datensätze hinzufügen. Klicken Sie erneut auf das Stecknadelsymbol neben einem aufgelisteten Datensatz, um diesen aus der Liste zu entfernen.
-1. **Entitätennavigator:** In diesem Bereich werden alle für den aktuellen Arbeitsbereich verfügbaren Entitäten und Dashboards aufgelistet. Wählen Sie einen beliebigen Eintrag aus, um das benannte Dashboard oder die Listenansicht für diese Entität zu öffnen.
-1. **Arbeitsbereichauswahl:** Öffnen Sie dieses Menü, um zu einem anderen Arbeitsbereich zu wechseln. Der aktuelle Arbeitsbereich wird hier angezeigt.
+2. **Schaltfläche „Reduzieren/Erweitern“:** Klicken Sie auf diese Schaltfläche, um den Navigator zu reduzieren und mehr Platz für den Hauptteil der Seite zu schaffen. Wenn der Navigator bereits reduziert ist, klicken Sie auf diese Schaltfläche, um ihn wieder zu erweitern.
+3. **Zuletzt verwendete Datensätze:** Erweitern Sie diesen Eintrag, um eine Liste der zuletzt verwendeten Datensätze anzuzeigen. Klicken Sie hier auf einen Datensatz, um ihn zu öffnen. Klicken Sie auf das Stecknadelsymbol neben einem aufgelisteten Datensatz, um diesen zu Ihren Favoriten (angeheftete Datensätze) hinzuzufügen.
+4. **Bevorzugte Datensätze:** Erweitern Sie diesen Eintrag, um Ihre bevorzugten (angehefteten) Datensätze anzuzeigen und zu öffnen. Über die Liste **Zuletzt verwendete Datensätze** können Sie Datensätze hinzufügen. Klicken Sie erneut auf das Stecknadelsymbol neben einem aufgelisteten Datensatz, um diesen aus der Liste zu entfernen.
+5. **Entitätennavigator:** In diesem Bereich werden alle für den aktuellen Arbeitsbereich verfügbaren Entitäten und Dashboards aufgelistet. Wählen Sie einen beliebigen Eintrag aus, um das benannte Dashboard oder die Listenansicht für diese Entität zu öffnen.
+6. **Arbeitsbereichauswahl:** Öffnen Sie dieses Menü, um zu einem anderen Arbeitsbereich zu wechseln. Der aktuelle Arbeitsbereich wird hier angezeigt.
 
 ## <a name="working-with-list-views"></a>Arbeiten mit Listenansichten
 
