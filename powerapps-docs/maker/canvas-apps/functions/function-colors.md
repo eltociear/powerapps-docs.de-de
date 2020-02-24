@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74731748"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-power-apps"></a>Color-Enumeration und colorfade-, ColorValue-und RGBA-Funktionen in powerapps
 
@@ -63,12 +62,12 @@ Wenn Sie einen farbenumerationswert angeben oder eine **ColorValue** -Formel mit
 
 - *CSSColor*: Erforderlich.  Name einer Cascading Stylesheet-Definition (CSS). Sie können einen Namen (z. b. **OliveDrab**) oder einen Hexadezimalwert angeben, z. b. **#6b8e23** oder **#7fffd420**. Hexadezimale Werte können entweder die Form "#*RRGGBB* " oder "#*RRGGBBAA*" haben.
 
-**RGBA**( *Red*; *Green*; *Blue*; *Alpha* )
+**RGBA**( *Red*, *Green*, *Blue*, *Alpha* )
 
 - *Red*, *Green*, *Blue*: Erforderlich.  Farbkomponenten Werte, die zwischen 0 (keine Sättigung) und 255 (vollständige Sättigung) liegen.
 - *Alpha*: Erforderlich.  Alpha Komponente, die zwischen 0 (vollständig transparent) und 1 (vollständig nicht transparent) liegt. Sie können auch einen Prozentsatz, 0 % bis 100 %, verwenden.
 
-**ColorFade**( *Color*; *FadeAmount* )
+**ColorFade**( *Color*, *FadeAmount* )
 
 - *Color*: Erforderlich.  Ein Farbwert wie z.B. **Color.Red** oder die Ausgabe von **ColorValue** oder **RGBA**.
 - *FadeAmount*: Erforderlich.  Eine Zahl zwischen -1 und 1. -1 markiert eine Farbe vollständig in schwarz, 0 wirkt sich nicht auf die Farbe aus, und 1 lässt eine Farbe vollständig in weiß aus. Sie können auch einen Prozentsatz zwischen-100% und 100% verwenden.
@@ -190,7 +189,7 @@ Wenn Sie einen farbenumerationswert angeben oder eine **ColorValue** -Formel mit
 | **Color.PaleTurquoise** |**ColorValue ("#afeeee"&nbsp;)**<br>**ColorValue ("paletürkis"-&nbsp;)** |**RGBA (&nbsp;175,&nbsp;238,&nbsp;238,&nbsp;1&nbsp;)** |![paleturquoise](./media/function-colors/color-paleturquoise.png) |
 | **Color.PaleVioletRed** |**ColorValue ("#db7093"&nbsp;)**<br>**ColorValue ("PaleVioletRed"&nbsp;)** |**RGBA (&nbsp;219,&nbsp;112,&nbsp;147,&nbsp;1&nbsp;)** |![palevioletred](./media/function-colors/color-palevioletred.png) |
 | **Color.PapayaWhip** |**ColorValue ("#ffefd5"&nbsp;)**<br>**ColorValue ("PapayaWhip"&nbsp;)** |**RGBA (&nbsp;255,&nbsp;239,&nbsp;213,&nbsp;1&nbsp;)** |![papayawhip](./media/function-colors/color-papayawhip.png) |
-| **Color.PeachPuff** |**ColorValue ("#ffdab9"&nbsp;)**<br>**ColorValue ("Peer-Puff"-&nbsp;)** |**RGBA (&nbsp;255,&nbsp;218,&nbsp;185,&nbsp;1&nbsp;)** |![peachpuff](./media/function-colors/color-peachpuff.png) |
+| **Color.PeachPuff** |**ColorValue ("#ffdab9"&nbsp;)**<br>**ColorValue ("PeachPuff"-&nbsp;)** |**RGBA (&nbsp;255,&nbsp;218,&nbsp;185,&nbsp;1&nbsp;)** |![peachpuff](./media/function-colors/color-peachpuff.png) |
 | **Color.Peru** |**ColorValue ("#cd853f"&nbsp;)**<br>**ColorValue ("Peru"&nbsp;)** |**RGBA (&nbsp;205,&nbsp;133,&nbsp;63,&nbsp;1&nbsp;)** |![peru](./media/function-colors/color-peru.png) |
 | **Color.Pink** |**ColorValue ("#ffc0cb"&nbsp;)**<br>**ColorValue ("Rosa"&nbsp;)** |**RGBA (&nbsp;255,&nbsp;192,&nbsp;203,&nbsp;1&nbsp;)** |![pink](./media/function-colors/color-pink.png) |
 | **Color.Plum** |**ColorValue ("#dda0dd"&nbsp;)**<br>**ColorValue ("Plum"-&nbsp;)** |**RGBA (&nbsp;221,&nbsp;160,&nbsp;221,&nbsp;1&nbsp;)** |![plum](./media/function-colors/color-plum.png) |

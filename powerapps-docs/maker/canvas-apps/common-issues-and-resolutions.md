@@ -26,7 +26,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. **Kamerabilder werden beim Importieren über Edge gespiegelt** (20. Januar 2020)
 
-    Bei Verwendung der Kamera und des Edge-Browsers wird das Bild möglicherweise gespiegelt.  Dies liegt an einem Fehler in Edge.  Verwenden Sie den neuen Browser „Edge Chromium“ oder einen anderen Browser, um dieses Problem zu beheben.
+    Bei Verwendung der Kamera und des Microsoft Edge-Browsers wird das Bild möglicherweise gespiegelt.  Dies liegt an einem Fehler in Edge.  Verwenden Sie den neuen Browser „Microsoft Edge Chromium“ oder einen anderen Browser, um dieses Problem zu beheben.
     
 1. **Kamerabilder enthalten keine Metadateninformationen** (20. Januar 2020)
 
