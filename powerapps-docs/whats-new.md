@@ -7,7 +7,7 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.reviewer: ''
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.author: kvivek
 search.audienceType:
 - maker
@@ -19,12 +19,12 @@ search.app:
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f3eaab5226946c3a5cfbb99c7b4029d587fca247
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d07cec7afb328917b7fe8e01038fad0fa5d3d516
+ms.sourcegitcommit: 1137abc4660ffb3432adbc702b1c5dae3293aa58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680349"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77479149"
 ---
 # <a name="whats-new-in-power-apps"></a>Neuerungen bei Power Apps
 
@@ -41,7 +41,9 @@ Informationen zum Durchsuchen der wöchentlichen Versionshinweise finden Sie in 
 
 ## <a name="release-plan"></a>Releaseplan
 
-Informationen zu neuen Features, die in den nächsten Monaten veröffentlicht werden, finden Sie unter [Neuerungen und geplante Funktionen für Power Apps](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features).
+Informationen zu neuen Features, die in den nächsten Monaten veröffentlicht werden, finden Sie unter:
+- [Releaseplan 2019, Freigabewelle 2](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
+- [Releaseplan 2020, Freigabewelle 1](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 

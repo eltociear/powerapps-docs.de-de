@@ -8,16 +8,16 @@ ms.topic: article
 author: shubhadaj
 ms.author: shujoshi
 manager: annbe
-ms.openlocfilehash: 6f3c603284e5f5d53380f5caa932cafac11e2d7a
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 546f94f67608ab735d2c2eb6bb39f105335549f7
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051934"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282586"
 ---
 # <a name="preview-send-email-using-the-enhanced-email-experience"></a>Vorschau: Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion
 
-Das Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion ist ein Early-Access-Feature. Diese Features können frühzeitig in Ihrer Umgebung aktiviert werden, um sie zu testen und in Ihren Umgebungen einzuführen. Weitere Informationen zur Aktivierung dieser Features finden Sie unter [Aktivieren von Early-Access-Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+Das Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion ist ein Early-Access-Feature. Diese Features können frühzeitig in Ihrer Umgebung aktiviert werden, So können Sie diese testen und dann in Ihre Umgebungen einführen. Weitere Informationen zur Aktivierung dieser Features finden Sie unter [Aktivieren von Early-Access-Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
 
 Mithilfe der erweiterten E-Mail-Funktion in modellgesteuerten Apps können Sie eine E-Mail erstellen, ohne den Datensatz zu verlassen, an dem Sie gerade arbeiten. Die erweiterte E-Mail-Funktion ermöglicht Folgendes:
 
@@ -58,7 +58,7 @@ Gehen Sie wie folgt vor, um eine E-Mail mithilfe der erweiterten Funktion zu ers
 > - Die erweiterte E-Mail-Funktion steht nur für E-Mail-Aktivitäten zur Verfügung, die im Abschnitt **Zeitachse** einer modellgesteuerten App erstellt werden. 
 > - Das Popupfenster der erweiterten E-Mail-Funktion wird nur geöffnet, wenn die Höhe und Breite Ihrer Bildschirmgröße mindestens 400 x 650 Pixel beträgt. Andernfalls wird anstelle der erweiterten E-Mail-Funktion das Standardformular verwendet. 
 
-### <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Weitere Informationen
 
-[Systemeinstellungen – E-Mail (Registerkarte)](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
+[Einrichten von erweiterten E-Mail-Funktionen](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
 [Vorschau: Einfügen einer E-Mail-Vorlage](insert-email-template.md)
