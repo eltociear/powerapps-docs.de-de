@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c6f033027fb9ce29ba443efab2b5c14ec5ea013
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: 2f41edb15bec061887ebe41f375cb1498280857c
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77145350"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77563674"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>Tastenkombinationen für Canvas-apps
 
@@ -32,6 +32,7 @@ ms.locfileid: "77145350"
 | STRG + O (oder ALT + F) | Öffnen Sie eine Datei. |
 | STRG + UMSCHALT + S (oder ALT + P) | Speichern Sie die APP mit einem anderen Namen. |
 | Strg+S | Speichern Sie die APP mit dem gleichen Namen oder zum ersten Mal. |
+| STRG+UMSCHALT+P | Speichern Sie die APP, und aktivieren Sie das Dialogfeld veröffentlichen. |
 | F12 | Laden Sie die APP-Datei (. msapp) herunter. |
 | ALT+D | Öffnen Sie das Menü **Datei** . |
 
@@ -42,7 +43,7 @@ ms.locfileid: "77145350"
 | Daten | Führt den ausgewählten Befehl aus. |
 | Registerkarte | Wechselt zwischen Befehlen auf der ausgewählten Registerkarte und dann zur nächsten Registerkarte. |
 | STRG+F6 | Navigieren Sie zum nächsten-Meilenstein. |
-| STRG + UMSCHALT + F6 | Navigieren Sie zum vorherigen-Meilenstein. |
+| STRG+UMSCHALT+F6 | Navigieren Sie zum vorherigen-Meilenstein. |
 | Alt + I | Wählen Sie die Registerkarte **Einfügen** aus. |
 
 ## <a name="editing"></a>Bearbeitung

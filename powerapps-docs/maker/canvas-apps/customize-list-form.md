@@ -13,22 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 61cf2ad5926daf8b1b5bea6310b9fb29563208e2
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9e8a7fe44c10d4f189136e05013b68fbd407fe9c
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731692"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77563707"
 ---
-# <a name="customize-a-sharepoint-list-form-by-using-power-apps"></a>Anpassen eines SharePoint-Listen Formulars mithilfe von powerapps
+# <a name="customize-a-sharepoint-list-or-library-form-by-using-power-apps"></a>Anpassen einer SharePoint-Liste oder eines Bibliotheks Formulars mithilfe von powerapps
 
-Sie können das Formular für eine SharePoint-Liste problemlos anpassen, indem Sie Power apps in einem Browser öffnen. Sie müssen keinen herkömmlichen Code (wie C#) schreiben oder eine weitere App (wie InfoPath) herunterladen. Wenn Sie Ihre Änderungen veröffentlichen, wird das Formular in die SharePoint-Liste eingebettet, sodass es von allen Benutzern verwendet werden kann. In powerapps können Sie auch Analyseberichte überprüfen, auf einfache Weise bedingte Formatierungen erstellen und eine Verbindung mit anderen Datenquellen herstellen.
+Sie können das Formular für eine SharePoint-Liste oder eine SharePoint-Dokumentbibliothek problemlos anpassen, indem Sie Power apps in einem Browser öffnen. Sie müssen keinen herkömmlichen Code (wie C#) schreiben oder eine weitere App (wie InfoPath) herunterladen. Wenn Sie Ihre Änderungen veröffentlichen, wird das Formular in die SharePoint-Liste eingebettet, sodass es von allen Benutzern verwendet werden kann. In powerapps können Sie auch Analyseberichte überprüfen, auf einfache Weise bedingte Formatierungen erstellen und eine Verbindung mit anderen Datenquellen herstellen.
 
 Für die in diesem Artikel beschriebenen Schritte benötigen Sie eine einfache Liste, um nachvollziehen zu können, wie die Anpassung funktioniert. Anschließend können Sie diese Konzepte auf Ihre eigene Liste anwenden.
 
 > [!NOTE]
 > - Wenn die Option **Formulare anpassen** nicht verfügbar ist oder für Ihre Liste nicht ordnungsgemäß funktioniert, kann Sie Datentypen enthalten, die von [powerapps nicht unterstützt](connections/connection-sharepoint-online.md#known-issues)werden. Sie können Ihr Formular nicht in eine andere Liste oder [Umgebung](working-with-environments.md) verschieben. 
 > - Benutzerdefinierte Formulare für Listen werden nur in generischen Listen unterstützt. Unterstützung für generische Dokument Bibliotheken wird in Kürze verfügbar sein. Benutzerdefinierte Listen-und Bibliotheks Vorlagen werden zurzeit nicht unterstützt. einschließlich, aber nicht beschränkt auf Listen wie Ankündigungen, Kontakte und Aufgaben.
+> - Benutzerdefinierte Formulare für Dokument Bibliotheken unterstützen nur das Bearbeiten benutzerdefinierter Metadaten. Das Bearbeiten oder Verwalten von Dateien wird nicht unterstützt.
 
 ## <a name="create-a-list"></a>Liste erstellen
 
@@ -130,7 +131,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
     ![Benutzerdefiniertes Formular löschen](./media/customize-list-form/use-default-sharepoint.png)
 
-## <a name="q--a"></a>Q & A
+## <a name="q--a"></a>Fragen und Antworten
 
 ### <a name="forms-vs-apps"></a>Vergleich: Formulare und Apps
 
