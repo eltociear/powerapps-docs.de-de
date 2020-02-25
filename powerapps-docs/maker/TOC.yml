@@ -8,6 +8,22 @@
       href: dev-community-plan.md
     - name: Neuerungen
       href: ../whats-new.md
+    - name: Ausbildungskatalog
+      items:
+        - name: Ausbildungskatalog
+          href: ../learning-catalog/get-started.md
+        - name: Geschäftsentscheidungsträger
+          href: ../learning-catalog/bdm.md
+        - name: App-Entwickler
+          href: ../learning-catalog/app-maker.md
+        - name: Entwickler
+          href: ../learning-catalog/developer.md
+        - name: Administrator
+          href: ../learning-catalog/administrator.md
+        - name: Funktionsberater
+          href: ../learning-catalog/functional-consultant.md
+        - name: Lösungsarchitekt
+          href: ../learning-catalog/solution-architect.md
 - name: Finden und Ausführen von Apps
   href: ../user/index.md
   items:
