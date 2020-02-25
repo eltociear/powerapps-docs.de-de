@@ -1,6 +1,6 @@
 ---
 title: " Web-API-Komponente | Microsoft Docs"
-description: Implementieren einer Web-API-Komponente
+description: Implementierung der Web-API-Komponente
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 15a0314f043d130ac5afabf1591dbd4b0b789d1e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bb2af534bbe6484a9b16ec0a165727456e06c18f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861920"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017388"
 ---
 # <a name="implementing-web-api-component"></a>Implementieren einer Web-API-Komponente
 
-Die Web-API-Komponente wurde entworfen, um Aktionen auszuführen, zu erstellen, abzurufen, zu aktualisieren und zu löschen. Die Komponente rendert vier Schalflächen, die angeklickt werden können, um verschiedene Web-API-Aktionen aufzurufen. Das Ergebnis des Web-API-Aufrufs wird in ein HTML-Div-Element am unteren Rand der Codekomponente injiziert.  
+Die Web-API-Komponente ist für die Durchführung von Erstellungs-, Abruf-, Aktualisierungs- und Löschaktionen vorgesehen. Die Komponente stellt vier Schaltflächen zur Verfügung, die angeklickt werden können, um verschiedene Web-API-Aktionen aufzurufen. Das Ergebnis des Web-API-Aufrufs wird in ein HTML-Div-Element am unteren Ende der Code-Komponente injiziert. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_WebAPI) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Web-API-Komponente](../media/web-api-control.png "Web-API-Komponente")
@@ -614,7 +614,7 @@ export class TSWebAPI
 }
 ```
 
-Standardmäßig wird die im Beispiel Komponente so konfiguriert, dass Aktionen "Erstellen", "Abrufen", "Aktualisieren" für die `Account`-Entität durchgeführt und der die Felder "Name" und "Umsatz" in den Web-API-Beispielen festgelegt werden.
+Standardmäßig ist die Komponente in dem Beispiel so konfiguriert, dass sie die Aktionen zum Erstellen, Abrufen und Aktualisieren der Entität `Account` ausführt und die Namens- und Umsatzfelder in den Web-API-Beispielen festlegt.
 
 Um die Standardkonfiguration zu einer beliebigen Entität oder einen Feld zu ändern, aktualisieren Sie die Konfigurationswerte wie dargestellt.  
 
@@ -627,15 +627,15 @@ Um die Standardkonfiguration zu einer beliebigen Entität oder einen Feld zu än
 
 Die `createRecord`-Methode rendert drei Schaltflächen, mit denen Sie einen Firmendatensatz erstellen können, bei dem das Umsatzfeld auf verschiedene Werte (100, 200, 300) festgelegt werden kann.
 
-Wenn Sie auf eine der Erstellen-Schaltflächen klicken, prüft der `onClick`-Ereignishandler der Schaltfläche den Wert der geklickten Schaltfläche und verwendet die Web-API-Aktion, um einen Firmendatensatz zu erstellen, bei dem das Umsatzfeld auf den Wert der Schaltfläche festgelegt ist. Der Namensfeld des Firmendatensatzes wird auf `Web API code component (Sample)` festgelegt und ein zufälliges `int`-Element wird dem Ende der Zeichenfolge angehängt. Die Rückrufmethode des Web-API-Aufrufs bringt das Ergebnis des Web-API-Aufrufs in das Ergebnis-div (Erfolg oder Fehler) des benutzerdefinierten Steuerelements ein.  
+Wenn Sie auf eine der Schaltflächen klicken, prüft der Ereignisbehandler `onClick` der Schaltfläche den Wert der angeklickten Schaltfläche und verwendet die Web-API-Aktion, um einen Kontodatensatz zu erstellen, bei dem das Umsatzfeld auf den Wert der Schaltfläche gesetzt ist. Der Namensfeld des Firmendatensatzes wird auf `Web API code component (Sample)` festgelegt und ein zufälliges `int`-Element wird dem Ende der Zeichenfolge angehängt. Die Callback-Methode aus dem Web-API-Aufruf injiziert das Ergebnis des Web-API-Aufrufs (Erfolg oder Misserfolg) in die Ergebnisdiv. des benutzerdefinierten Steuerelements.  
  
-Die `deleteRecord`-Methode rendert eine Schaltfläche, mit der bei Aufurf ein Suchdialog geöffnet wird. Mit dem Suchdialog können Sie den Firmendatensatz auswählen, den Sie löschen möchten. Sobald ein Firmendatensatz aus dem Suchdialog ausgewählt wurde, wird er an `deleteRecord` übergeben, damit der Datensatz aus der Datenbank gelöscht wird. Die Rückrufmethode des Web-API-Aufrufs bringt das Ergebnis des Web-API-Aufrufs in das Ergebnis-div (Erfolg oder Fehler) des benutzerdefinierten Steuerelements ein.  
+Die `deleteRecord`-Methode rendert eine Schaltfläche, mit der bei Aufurf ein Suchdialog geöffnet wird. Mit dem Suchdialog können Sie den Firmendatensatz auswählen, den Sie löschen möchten. Sobald ein Firmendatensatz aus dem Suchdialog ausgewählt wurde, wird er an `deleteRecord` übergeben, damit der Datensatz aus der Datenbank gelöscht wird. Die Callback-Methode aus dem Web-API-Aufruf injiziert das Ergebnis des Web-API-Aufrufs (Erfolg oder Misserfolg) in die Ergebnisdiv. des benutzerdefinierten Steuerelements.  
 
-Die Methode FetchXML `retrieveMultiple` rendert eine Schaltfläche in der Codekomponente. Bei `onClick` auf diese Schaltfläche wird FetchXML generiert und an die `retrieveMultiple`-Funktion übergeben, um den Durchschnittswert des Umsatzfelds für alle Firmendatensätze zu berechnen. Die Rückrufmethode des Web-API-Aufrufs bringt das Ergebnis des Web-API-Aufrufs in das Ergebnis-div (Erfolg oder Fehler) des benutzerdefinierten Steuerelements ein.  
+Die Methode FetchXML `retrieveMultiple` rendert eine Schaltfläche in der Codekomponente. Bei `onClick` auf diese Schaltfläche wird FetchXML generiert und an die `retrieveMultiple`-Funktion übergeben, um den Durchschnittswert des Umsatzfelds für alle Firmendatensätze zu berechnen. Die Callback-Methode aus dem Web-API-Aufruf injiziert das Ergebnis des Web-API-Aufrufs (Erfolg oder Misserfolg) in die Ergebnisdiv. des benutzerdefinierten Steuerelements.  
 
 Die OData `retrieveMultiple`-Methode stellt eine Schaltfläche in der Codekomponente dar. `onClick` dieser Schaltfläche wird eine OData-Zeichenkette erzeugt und an die Funktion `retrieveMultiple` übergeben, um alle Kontendatensätze mit einem Namensfeld abzurufen, das wie die "Codekomponente Web API (Sample)" aussieht, was für alle Kontendatensätze gilt, die von diesem Codekomponentenbeispiel erstellt wurden.  
 
-Nach erfolgreichem Abruf der Datensätze hat die Codekomponente die Logik, um zu zählen, wie viele Kontensätze das Erlösfeld auf 100, 200 oder 300 gesetzt haben, und diese Zählung in einen Odata-Statuscontainer div auf der Codekomponente anzuzeigen.  Die Rückrufmethode des Web-API-Aufrufs bringt das Ergebnis des Web-API-Aufrufs in das Ergebnis-div (Erfolg oder Fehler) des benutzerdefinierten Steuerelements ein.  
+Nach erfolgreichem Abruf der Datensätze hat die Codekomponente die Logik, um zu zählen, wie viele Kontensätze das Erlösfeld auf 100, 200 oder 300 gesetzt haben, und diese Zählung in einen Odata-Statuscontainer div auf der Codekomponente anzuzeigen.  Die Callback-Methode aus dem Web-API-Aufruf injiziert das Ergebnis des Web-API-Aufrufs (Erfolg oder Misserfolg) in die Ergebnisdiv. des benutzerdefinierten Steuerelements.  
 
 ### <a name="related-topics"></a>Verwandte Themen
 

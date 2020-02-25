@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f93574f9a994d7363129f99fec9b33d4c9ee66ad
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f5c3fe93939ae2eb37457490c45689fc967df590
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861948"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017444"
 ---
 # <a name="implementing-increment-component"></a>Implementieren einer Erhöhungskomponente
 
 Diese Beispielkomponente zeigt, wie man Daten mit dem Power Apps component framework und der Fehlerbehandlung bindet. Diese Komponente wird zur Laufzeit als Textfeld mit einer `Increment`-Schaltfläche gerendert. Das Textfeld zeigt den aktuellen Wert und die `Increment`-Schaltfläche kann angeklickt werden. Wenn Sie auf die Schaltfläche klicken, wird der Wert innerhalb des Textfelds um 1 erhöht. Der Wert der Erhöhung kann zu einem beliebigen Zahl geändert werden.
 
-Wenn Sie diese Komponente implementieren möchten, müssen Sie als erstes die [Manifest](../manifest-schema-reference/manifest.md)-Datei definieren und dann die benutzerdefinierte Logik in TypeScript implementieren.
+Wenn Sie diese Komponente implementieren möchten, müssen Sie als erstes die [Manifest](../manifest-schema-reference/manifest.md)-Datei definieren und dann die benutzerdefinierte Logik in TypeScript implementieren. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_IncrementControl) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Erhöhungskomponente](../media/increment-control.png "Erhöhungskomponente")

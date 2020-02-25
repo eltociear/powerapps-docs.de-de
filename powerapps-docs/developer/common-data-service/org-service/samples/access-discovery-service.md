@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3f707eef358454053436d633c4ad48e30348ea17
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d33f6cedbbfdaa22f4de7da6348c22c1e25cbc53
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748390"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956293"
 ---
 # <a name="sample-access-the-discovery-service"></a>Beispiel: Zugreifen auf den Suchdienst
 
@@ -29,7 +29,7 @@ Dieser Beispielcode zeigt, wie Sie den Suchdienst mit SDK-Assemblies verwenden k
 
 Dieses Beispiel öffnet keinen Dialog, um Sie nach Verbindungsinformationen zu fragen.
 
-Wenn Sie `Username`- und `Password`-Werte in den App.config-Verbindungszeichenfolgen festgelegt haben, werden diese verwendet. Andernfalls müssen Sie `username` und `password` Variablen in der `SampleProgram.Main`-Methode festlegen.
+Wenn Sie Werte in den App.config-Verbindungszeichenfolgen festgelegt haben, werden diese verwendet. Andernfalls müssen Sie `username` und `password` Variablen in der `SampleProgram.Main`-Methode festlegen.
 
 ## <a name="what-this-sample-does"></a>Funktionsweise:
 

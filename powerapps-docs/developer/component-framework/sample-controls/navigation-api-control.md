@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 8a6db9ca3f6eb34cee3c9d45d1d9917f4b33115d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e17ad5f8e792b6759e917017a8c2b2b056727d46
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861936"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017408"
 ---
 # <a name="implementing-navigation-api-component"></a>Implementieren der Navigations-API-Komponente
 
-Diese Beispielkomponente untersucht die verschiedenen Methoden, die als Teil der Formatierungs-API des Power Apps component framework zur Verfügung stehen. Im vorliegenden Beispiel, erstellen Sie eine Reihe von Eingabeelementen des Typs Schaltfläche , die in die jeweiligen Methoden der Navigations-API anrufen, die dem angezeigten Wert entsprechen.  
+Diese Beispielkomponente untersucht die verschiedenen Methoden, die als Teil der Formatierungs-API des Power Apps component framework zur Verfügung stehen. Im vorliegenden Beispiel, erstellen Sie eine Reihe von Eingabeelementen des Typs Schaltfläche , die in die jeweiligen Methoden der Navigations-API anrufen, die dem angezeigten Wert entsprechen. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_NavigationAPI) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Navigations-API-Komponente](../media/navigation-api-control.png "Navigations-API-Komponente")

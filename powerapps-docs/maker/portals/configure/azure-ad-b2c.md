@@ -1,20 +1,20 @@
 ---
 title: Azure AD B2C-Anbietereinstellungen für Portale | MicrosoftDocs
 description: Anweisungen zum Aktivieren von Azure AD B2C-Anbietereinstellungen für Portale.
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/03/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: e8275fa256b00736501990c3abf127777097d938
-ms.sourcegitcommit: 82eec5da9c97fcb6ed50ae8e582f326af9278aa7
+ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935202"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979555"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C-Anbietereinstellungen für Portale
 
@@ -124,7 +124,7 @@ Wenn die Registrierung für einen Benutzer deaktiviert wird, nachdem der Benutze
 
 **Wert**: Registrierung wurde deaktiviert.
 
-## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>Anpassen der [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Benutzeroberfläche
+## <a name="customize-the-includeazure-ad-b2c-user-interface"></a>Anpassen der [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Benutzeroberfläche
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C unterstützt die Anpassung der Benutzeroberfläche. Sie können die Benutzeroberfläche für Anmelde- und Abmeldeszenarien anpassen.
 
@@ -467,7 +467,7 @@ Websiteeinstellungen sind erforderlich, um die ursprungsübergreifende Ressource
 
 Eine vollständige Liste mit weiteren CORS-Einstellungen finden Sie unter [CORS-Protokollunterstützung](../add-web-resource.md#cors-protocol-support).
 
-### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>Schritt 5: [!include[Azure](../../../includes/pn-azure-shortest.md)]-Konfiguration
+### <a name="step-5-includeazure-configuration"></a>Schritt 5: [!include[Azure](../../../includes/pn-azure-shortest.md)]-Konfiguration
 
 1. Melden Sie sich bei Ihrem [!include[Azure portal](../../../includes/pn-azure-portal.md)] an.
 2. Navigieren Sie zum Blatt **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Mandantenverwaltung**.
@@ -483,7 +483,7 @@ Eine vollständige Liste mit weiteren CORS-Einstellungen finden Sie unter [CORS-
 
 Wenn Benutzer sich anmelden, entweder zum ersten Mal oder später, stellt der verbundbasierte Identitätsanbieter basierend auf seiner Datenbank hinsichtlich der Anmeldungen der Benutzer Ansprüche bereit. Diese Ansprüche sind im Identitätsanbieter konfigurierbar.
 
-### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-E-Mail-Ansprüche
+### <a name="includeazure-ad-b2c-email-claims"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-E-Mail-Ansprüche
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C sendet den E-Mail-Anspruch als Sammlung. Das Portal nimmt die erste E-Mail-Adresse, die in der Sammlung bereitgestellt wird, als die primäre E-Mail-Adresse der Kontaktperson an.
 

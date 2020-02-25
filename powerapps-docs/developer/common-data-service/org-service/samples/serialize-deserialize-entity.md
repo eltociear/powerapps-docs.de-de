@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6bc85049df107821dd8cdaba0a33b1ec0f15a979
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 5e37ef6f9fb64cd8e9ed29f4a4b2a6d0adf3fa03
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934555"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956137"
 ---
 # <a name="serialize-and-deserialize-an-entity-instance"></a>Eine Entitätsinstanz serialisieren und deserialisieren 
 
@@ -29,7 +29,7 @@ Sie können das Beispiel von [hier](https://github.com/microsoft/PowerApps-Sampl
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 
-Weitere Informationen unter [Wie man Beispiele lässt](https://github.com/microsoft/PowerApps-Samples/blob/master/cds/README.md) zum Ausführen dieses Beispiels.
+[!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
 ## <a name="what-this-sample-does"></a>Funktionsweise:
 
@@ -52,4 +52,3 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 ### <a name="clean-up"></a>Bereinigung
 
 Zeigt eine Option an, um die Datensätze zu löschen, die in der [Einrichtung](#setup)erstellt wurden. Das Löschen ist optional, falls Sie die Entitäten und Daten durchsuchen möchten, die durch das Beispiel erstellt wurden. Sie können die Datensätze manuell löschen, um das gleiche Ergebnis zu erzielen.
-

@@ -1,8 +1,8 @@
 ---
-title: Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API (Common Data Service) | Microsoft Docs
-description: Hier erfahren Sie, wie Sie Web-API verwenden können, um die zur Laufzeit die Organisationen zu erkunden, oder Instanzen, zu denen der angemeldete Benutzer gehört.
+title: Ermitteln Sie die URL für Ihre Organisation (Common Data Service) | Microsoft Docs
+description: Verwenden Sie den Ermittlungsdienst, um die Organisationen (Instanzen) zu finden, zu denen der angemeldete Benutzer gehört
 ms.custom: ''
-ms.date: 04/22/2019
+ms.date: 1/16/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,52 +14,43 @@ caps.latest.revision: 18
 author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
-manager: annbe
+manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7b69f19979b154a08aca23dacab58e4882066495
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: cc170191c97d2519d73690fcdf557dfaae86d1be
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909292"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975717"
 ---
-# <a name="discover-the-url-for-your-organization-using-the-web-api"></a>Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API.
+# <a name="discover-the-url-for-your-organization"></a>Die URL für Ihre Organisation entdecken
 
 [!INCLUDE [cc-discovery-service-description](../includes/cc-discovery-service-description.md)]
 
-Mit dem Web API Discovery Service können Sie die Standardparameter `$filter` und `$select` für eine Web API Service-Anforderung verwenden, um die zurückgegebene Liste der Instanzdaten anzupassen.
-<!-- TODO should only talk about the global discovery service -->
+Wenn Sie mit der OData V4 RESTful-API auf den Discovery-Dienst zugreifen, können Sie der Dienstanforderung Standard `$filter` und `$select` Parameter hinzufügen, um die zurückgegebene Liste der Instance-Daten anzupassen.
 
-## <a name="global-discovery-service"></a>Globaler Suchdienst
-
-Zusätzlich zu Ermittlungsdiensten für bestimmte Datencenter, die für den 2011 (SOAP)-Endpunkt verfügbar sind, und durch die Web-API, gibt es auch einen globalen Ermittlungsdienst nur für Web-API, der sich über alle betriebsbereiten Datencenter erstreckt. Weitere Informationen zu dem Ermittlungsdienst für den 2011-Endpunkt finden Sie unter [Discovery Service](../org-service/discovery-service.md).
-
-> [!NOTE]
-> Es wird empfohlen, dass Benutzer vom bisherigen regionalen Suchdienst (`https://disco.crm.dynamics.com`) zum globalen Suchdienst (`https://globaldisco.crm.dynamics.com`) wechseln.
-> 
-> Für Dynamics 365 US Government-Benutzer ist der globale Suchdienst für **GCC**- und **GCC High**-Benutzer verfügbar, und die URL unterscheidet sich von der regulären globalen Suchdienst-URL. Weitere Informationen: [Dynamics 365 Government-URLs](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
+> [!IMPORTANT]
+> - Ab dem 2. März 2020 wird der *regionale* Suchdienst [veraltet sein](/power-platform/important-changes-coming#regional-discovery-service-is-deprecated). Anwendungen müssen den globalen Ermittlungsdienst verwenden, der in dieser Thema dokumentiert ist.  
+> - Für Dynamics 365 US Government-Benutzer ist ein *globaler* Suchdienst Endpunkt für **GCC** und **GCC High** Benutzer verfügbar, und die URL unterscheidet sich von der regulären globalen Suchdienst-URL. Weitere Informationen: [Dynamics 365 Government-URLs](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
 
   
 ## <a name="information-provided-by-the-discovery-service"></a>Informationen, die vom Ermittlungsdienst bereitgestellt werden 
  
- Organisationsinformationen werden in der Entität `Instance` des Ermittlungsdiensts gespeichert.  Um die Art der Informationen anzuzeigen, die in dieser Entität enthalten sind, senden Sie eine HTTP GET-Anforderung zum Service für eine Ihrer Instanzen.  
+Organisationsinformationen werden in der `Instance` Entität des Ermittlungsdiensts gespeichert.  Um die Art der Informationen anzuzeigen, die in dieser Entität enthalten sind, senden Sie eine HTTP GET-Anforderung zum Service für eine Ihrer Instanzen.  
   
 ```http  
 GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(UniqueName='myorg')  
 ```  
   
-Im oben genannten Beispiel wird der globale Ermittlungsdienst von Common Data Service verwendet, um die Organisationsinformationen der Instanz mit einem eindeutigen Namen "myorg" abzurufen. Weitere Details zu dieser Anforderung werden später in diesem Thema ausführlicher behandelt.  
+Im oben genannten Beispiel wird der globale Ermittlungsdienst verwendet, um die Organisationsinformationen der Instanz mit einem eindeutigen Namen "myorg" abzurufen. Weitere Details zu dieser Anforderung werden später in diesem Thema ausführlicher dargelegt.  
 
- 
-
-  
 ### <a name="scope-of-the-returned-information"></a>Umfang der zurückgegebenen Informationen
 
-Für den globalen Ermittlungsdienst gibt der Entitätssatz `Instances` den Entitätssatz zurück, auf den der Benutzer an allen geografischen Orten Zugriff hat, wenn keine Filter angewendet werden.   Die zurückgegebenen Daten haben einen Umfang, wie unten beschrieben.  
+Für den globalen Ermittlungsdienst gibt der Entitätssatz `Instances` den Entitätssatz zurück, auf den der Benutzer an allen geografischen Orten Zugriff hat, wenn keine Filter angewendet wurden.   Die zurückgegebenen Daten haben einen Umfang, wie unten beschrieben.  
   
 -   Enthält alle Instanzen in der Handelscloud, wo der Benutzer bereitgestellt und aktiviert ist, außer dass Sovereign-Couds-Instanzen nicht zurückgegeben werden
 -   Enthält nicht Instanzen, bei denen das Konto des Benutzers deaktiviert ist
@@ -67,9 +58,9 @@ Für den globalen Ermittlungsdienst gibt der Entitätssatz `Instances` den Entit
 -   Umfasst nicht Instanzen, auf die der Benutzer Zugriff hat, da er ein stellvertretender Administrator ist
 -   Wenn der aufrufende Benutzer Zugriff auf keine Instanzen hat, gibt die Antwort einfach eine leere Liste zurück
 
-## <a name="how-to-access-the-discovery-services"></a>Wie erfolgt der Zugriff auf die Ermittlungsdienste
+## <a name="how-to-access-the-discovery-service"></a>Zugreifen auf den Ermittlungsdienst
 
-Im Allgemeinen hat die Web-API-Adresse des Ermittlungsdiensts das folgende Format: `<service base address>/api/discovery/`.  Die Adressen für jeden Bereitstellungstyp werden unten identifiziert. Sie können die Web-API-Adressen und Versionsnummer für Ihre Bereitstellung einfach in der Common Data Service-Webanwendung finden, indem Sie zu **Einstellungen > Anpassung > Entwicklerressourcen** navigieren  
+Im Allgemeinen hat die Web-API-Adresse vom Ermittlungsdienst das folgende Format: `<service base address>/api/discovery/`.  Sie können die Web-API-Adressen und Versionsnummer für Ihre Bereitstellung einfach in der Common Data Service Webanwendung finden, indem Sie zu **Einstellungen > Anpassung > Entwicklerressourcen** navigieren  
   
 ### <a name="common-data-service-discovery-services"></a>Common Data Service-Suchdienste  
 
@@ -81,12 +72,13 @@ Ein Entitätssatz mit der Bezeichnung `Instances` wird zum Abrufen von Instanzin
   
 ### <a name="authentication"></a>Authentifizierung
 
-Common Data Service-Web-API-Instanzen des Ermittlungsdiensts benötigen die Authentifizierung mit OAuth-Zugriffstokens.
+Für den Zugriff auf den Ermittlungsdienst ist eine Authentifizierung mit einem Oauth Zugriffstoken erforderlich.
 
-Wenn der Ermittlungsdienst für die OAuth-Authentifizierung konfiguriert ist, löst eine Anforderung, die an die Service-Web-API ohne einen Zugriffstoken gesendet wird, eine Trägerabfrage mit der Autorität des "allgemeinen" Endpunkts und der Ressourcenkennung des Service aus.
+Wenn der Ermittlungsdienst für die OAuth-Authentifizierung konfiguriert ist, löst eine Anforderung, die an die Service-Web-API ohne einen Zugriffstoken gesendet wird, eine Trägerabfrage mit der Autorität des allgemeinen Endpunkts und der Ressourcenkennung des Service aus.
+
 ### <a name="cors-support"></a>CORS-Support
 
-Die Ermittlungsdienst-Web-API unterstützt den CORS-Standard für den ursprungsübergreifenden Zugriff, wie das für die Web-API zutrifft.  Für weitere Informationen zu CORS-Support siehe [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung zu verbinden](../oauth-cross-origin-resource-sharing-connect-single-page-application.md)  
+Der Ermittlungsdienst unterstützt den CORS-Standard für den ursprungsübergreifenden Zugriff. Für weitere Informationen zu CORS-Support siehe [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung zu verbinden](../oauth-cross-origin-resource-sharing-connect-single-page-application.md)  
   
 ### <a name="examples"></a>Beispiele  
   
@@ -94,7 +86,6 @@ Die Ermittlungsdienst-Web-API unterstützt den CORS-Standard für den ursprungs�
   
     ```http      
     GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(<guid>)
-    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(<guid>)  
     ```  
   
 -   Sie können das UniqueName-Attribut als Alternativschlüssel verwenden.  
@@ -109,13 +100,7 @@ Die Ermittlungsdienst-Web-API unterstützt den CORS-Standard für den ursprungs�
     GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances?$select=DisplayName,Description&$filter=Type+eq+0   
     ```  
   
--   Rufen Sie den Kennungseigenschaftswert einer bestimmten Instanz ab.  
-  
-    ```http  
-    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(UniqueName='myorg')/Id/$value  
-    ```
-
 ## <a name="see-also"></a>Siehe auch
 
-[Web API Globaler Discovery Service-Beispiel (C#)](samples/global-discovery-service-csharp.md)
+[Suchdienst Beispiel (C#)](samples/global-discovery-service-csharp.md)
 

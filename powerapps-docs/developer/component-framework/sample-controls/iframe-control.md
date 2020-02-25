@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 7998810edc8332d390b17b353964e5cdd874a9ae
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: af13a83b675ad097e532b0c04eda9766e6c1818e
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861960"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017434"
 ---
 # <a name="implementing-a-iframe-component"></a>Implementieren einer IFRAME-Komponente
 
-Dieses Beispiel beschreibt, wie man eine Codekomponente an verschiedene Felder auf dem Formular bindet und den Wert dieser Felder als Eingabeeigenschaften für die Komponente verwendet.  
+Dieses Beispiel beschreibt, wie man eine Codekomponente an verschiedene Felder auf dem Formular bindet und den Wert dieser Felder als Eingabeeigenschaften für die Komponente verwendet. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_IFrameControl) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![IFRAME-Komponente](../media/iframe-control.png "IFRAME-Komponente")

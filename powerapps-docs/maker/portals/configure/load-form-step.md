@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren eines Schritttyps zum Laden von Formularen und Registerkarten für ein Portal | MicrosoftDocs
 description: Anweisungen, ein Lastformular zu definieren und einen Registerkartentyp ein Portal zu laden.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: e9e1fe038562f78359db485c84a77bcc95118d82
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 634ded2a7ab03e953c13ca0abe568eaecb3b75a7
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760446"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979907"
 ---
 # <a name="define-a-load-form-and-load-tab-step-type"></a>Definieren der Schritte zum Laden von Formularen und Registerkarten
 

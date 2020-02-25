@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 85f8f71c633d1a89aa20b5325123ce6e57b6298b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 71f39d432e551df456f3d339155d1f3105d6891b
+ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753074"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "2992808"
 ---
 # <a name="auditing-overview"></a>Überwachungsübersicht
 
@@ -81,7 +81,5 @@ Organisationen müssen oft verschiedene Vorschriften beachten, um Verfügbarkeit
  Das Aktivieren oder Deaktivieren der Sicherheit auf Feldebene durch Festlegen des <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsSecured>-Attributs kann nicht überwacht werden.  
   
 ### <a name="see-also"></a>Siehe auch
- [Datenverwaltung in Dynamics 365](/dynamics365/customer-engagement/developer/manage-data)   
- [Überwachung von Entitätsdatenänderungen](/dynamics365/customer-engagement/developer/audit-entity-data-changes)   
- [Konfigurieren von Entitäten und Attributen für die Überwachung](configure-entities-attributes-auditing.md)       
- [Blog: Wiederherstellen gelöschter CRM-Daten und Neuerstellung mit der CRM-API](https://blogs.msdn.com/b/crm/archive/2011/05/23/recover-your-deleted-crm-data-and-recreate-them-using-crm-api.aspx)
+   
+ [Konfigurieren von Entitäten und Attributen für die Überwachung](configure-entities-attributes-auditing.md) 

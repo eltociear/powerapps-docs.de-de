@@ -2,7 +2,7 @@
 title: Überwachungsbenutzerzugriff (Common Data Service) | Microsoft-Dokumente
 description: Unterstützung für die Funktion zur Überwachung von Benutzerzugriffen einschließlich Benutzeidentifizierung, Zugriffsgeschwindigkeit und Clienttyp.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c0cf65855d669934db614b83c525055a337d90de
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3f13813b0f6e6c5cde945e5a2b8fcdf1590a62db
+ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748255"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "2992803"
 ---
 # <a name="audit-user-access"></a>Benutzerzugriff überwachen
 
@@ -43,10 +43,10 @@ Common Data Service unterstützen die Möglichkeit, den Benutzerzugriff zu über
   
 -   `AuditAction.UserAccessAuditStopped`  
   
- `UserAccessviaWeb` gibt den Zugriff über die Common Data Service-Webanwendung oder Dynamics 365 for Outlook an. `UserAccessviaWebServices` gibt eine Webdienstanforderung des SDK an. Die `AuditAction`-Aufzählung ist für Ihren Code verfügbar, wenn Sie `OptionSets.cs` oder `OptionSets.vb` im Projekt der Anwendung einschließen.  
+ `UserAccessviaWeb` gibt den Zugriff über die Common Data Service-Webanwendung oder Dynamics 365 for Outlook an. `UserAccessviaWebServices` gibt eine Webdienstanforderung des SDK an. Die `AuditAction` Aufzählung ist für Ihren Code verfügbar, wenn Sie `OptionSets.cs` in Ihrer Projektanwendung einschließen.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Überwachung von Änderungen in Dynamics 365](/dynamics365/customer-engagement/developer/audit-entity-data-changes)   
- [Konfigurieren von Entitäten und Attributen für die Überwachung](/dynamics365/customer-engagement/developer/configure-entities-attributes-auditing)     
- [Beispiel: Überwachung von Entitätsdatenänderungen](/dynamics365/customer-engagement/developer/sample-audit-entity-data-changes)   
- [Beispiel: Überwachung von Benutzerzugriffen](/dynamics365/customer-engagement/developer/sample-audit-user-access)
+ [Datenänderungen überwachen](/powerapps/developer/common-data-service/auditing-overview)   
+ [Konfigurieren von Entitäten und Attributen für die Überwachung](/powerapps/developer/common-data-service/configure-entities-attributes-auditing)     
+ [Beispiel: Überwachung von Entitätsdatenänderungen](/powerapps/developer/common-data-service/org-service/samples/audit-entity-data-changes)   
+ [Beispiel: Überwachung von Benutzerzugriffen](/powerapps/developer/common-data-service/org-service/samples/audit-user-access)

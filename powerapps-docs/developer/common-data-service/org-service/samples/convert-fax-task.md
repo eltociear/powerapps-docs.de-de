@@ -1,6 +1,6 @@
 ---
 title: 'Beispiel: Konvertieren einer Faxanfrage (Common Data Service) | Microsoft-Dokumentation'
-description: 'Beispiel, das zeigt, wie man einen Fax in eine Aufgabe umwandelt. '
+description: 'Beispiel, das zeigt, wie man einen Fax in eine Aufgabe umwandelt '
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 73c3e640ed26eceddeecc16cfafa33da2eb293cc
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: f018257e2cacd8b9e60de4e82e2724885fe7ab91
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934394"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956233"
 ---
 # <a name="sample-convert-a-fax-to-a-task"></a>Beispiel: Konvertieren eines Faxes für eine Aufgabe
 
@@ -56,4 +56,5 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="clean-up"></a>Bereinigung
 
-Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an. Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.
+1. Zeigt eine Option zum Löschen aller im Beispiel erstellten Daten an.
+2. Das Löschen ist optional, falls Sie die Daten überprüfen möchten, die durch das Beispiel erstellt wurden. Sie können die Daten manuell löschen, um das gleiche Ergebnis zu erzielen.

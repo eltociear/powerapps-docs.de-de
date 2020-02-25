@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2d59aa35a81ed776f712b55e7f7179087dfaf061
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: fe900da6db667d4ffb5ceffc61430b7acab9befe
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934238"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956173"
 ---
 # <a name="sample-reschedule-and-cancel-a-recurring-appointment"></a>Beispiel: Erneutes Planen und Stornieren eines Serientermins
 
@@ -49,8 +49,8 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 ### <a name="demonstrate"></a>Demonstrieren
 
 1. Die Message `QueryExpression` fragt die einzelne Termininstanz ab, die auf das heutige Datum oder 10 Tage danach fällt. Im Allgemeinen ist dies die zweite Instanz in der Serienterminserie.
-3. Die Message `RescheduleRequest` aktualisiert wird das Zeitplanstart- und enddatum eines Termins.
-4. Die Message `SetStateRequest` bricht die letzte Instanz des Termins ab. Der Status dieser Termininstanz wird auf `canceled` eingestellt. Sie können diese Termininstanz in der Ansicht `All Activities` anzeigen.
+2. Die Message `RescheduleRequest` aktualisiert wird das Zeitplanstart- und enddatum eines Termins.
+3. Die Message `SetStateRequest` bricht die letzte Instanz des Termins ab. Der Status dieser Termininstanz wird auf `canceled` eingestellt. Sie können diese Termininstanz in der Ansicht `All Activities` anzeigen.
 
 ### <a name="clean-up"></a>Bereinigung
 

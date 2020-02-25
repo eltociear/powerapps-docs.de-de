@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: d9a5d345204d82a1e5f6629a3f0bb7cf2159ddd7
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 5f8be754e8042001fa331183e39df61eb4db2226
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914449"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956229"
 ---
 # <a name="common-issues-and-workarounds"></a>Allgemeine Probleme und Problemumgehungen
 
@@ -78,3 +78,12 @@ Wenn eine Komponente mit einer CLI-Version kleiner als 0.4.3 erstellt wird, trit
         </packageSourceCredentials>  
        </configuration>
      ```
+
+**Inhalt der Webressource ist zu groß.**
+
+Fehler **Importieren der Lösung fehlgeschlagen: Webressourceninhalt ist zu groß**.
+
+**Problemumgehung**
+
+1. Wenn Sie die `bundle.js` Datei aus dem CLI-Tool erstellen, werden viele Komponenten gebündelt, wodurch die Datei groß wird. Entfernen Sie einige der Komponenten, die nicht erforderlich sind. 
+2. Erstellen Sie `production` die Komponente im `node_modules/pcf-scripts/webpackconfig.js` Modus, indem Sie die Datei ändern.

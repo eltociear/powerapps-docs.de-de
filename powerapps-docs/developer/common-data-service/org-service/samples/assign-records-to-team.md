@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a2e1bea56c0fa13a3a0d1d5c1bf7c2e55caf791f
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 578cb901780699dd7141567bdeeda72221da86e5
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934562"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956241"
 ---
 # <a name="assign-a-record-to-a-team"></a>Zuweisen eines Datensatzes an einem Team
 
@@ -30,6 +30,7 @@ Sie können das Beispiel von [hier](https://github.com/microsoft/PowerApps-Sampl
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
+
 ## <a name="what-this-sample-does"></a>Funktionsweise:
 
 Die [AssignRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.assignrequest?view=dynamics-general-ce-9)-Meldung soll in einem Szenario verwendet werden, in dem sie die Daten enthält, die erforderlich sind, um den angegebenen Datensatz einem neuen Besitzer(Benutzer oder Team) zuzuweisen, indem das OwnerId-Attribut des Datensatzes geändert wird.

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6d1bc234c4587a5fe1074245e17f44c962f7f710
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 7d4e3f2de06a2ba946d3548d67072149ab5b7d6a
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934406"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956237"
 ---
 # <a name="sample-bulk-delete-records-that-match-common-criteria"></a>Beispiel: Massenlöschen von Datensätzen, die allgemeinen Kriterien entsprechen
 
@@ -44,9 +44,9 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 1. Prüft auf aktuelle Version der Organisation.
 2. Einen Beispiel-Firmendatensatz erstellen.
 3. Abfrage, ob einem Systembenutzer eine E-Mail gesendet werden soll, nachdem der Vorgang zum Löschen von Massenanfragen abgeschlossen ist.
-3. Die `BulkDeleteRequest` erstellt den Massenlöschungsprozess und setzt die Eigenschaften der Anforderung.
-4. Die `InspectBulkDeleteOperation`-Methode prüft und zeigt die Informationen über die erstellte `BulkDeleteOperation` an.
-5. Die `RetrieveBulkDeleteOperation`-Methode ruft die `BulkDeleteOperation` ab.
+4. Die `BulkDeleteRequest` erstellt den Massenlöschungsprozess und setzt die Eigenschaften der Anforderung.
+5. Die `InspectBulkDeleteOperation`-Methode prüft und zeigt die Informationen über die erstellte `BulkDeleteOperation` an.
+6. Die `RetrieveBulkDeleteOperation`-Methode ruft die `BulkDeleteOperation` ab.
 
 ### <a name="demonstrate"></a>Demonstrieren
 

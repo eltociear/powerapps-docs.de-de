@@ -1,20 +1,20 @@
 ---
 title: Hinzufügen einer Webseite zum Rendern einer Liste von Datensätzen in einem Portal | MicrosoftDocs
 description: Anweisungen zum Hinzufügen und Konfigurieren von Entitätslisten zum Rendern eine Liste von Datensätzen zu einem Portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/18/2019
-ms.author: shjais
+ms.date: 02/05/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4fa68ace39f9a1b2dbcb2d9111e71364fde49fbc
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 96c5ede672a57b6f01a87cf8aacf093db57ab234
+ms.sourcegitcommit: 2d21c2c65875f97dff6d5843611d4221a4282f22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874384"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027683"
 ---
 # <a name="about-entity-lists"></a>Über Entitätslisten
 
@@ -284,6 +284,10 @@ Das Sichern einer Entitätsliste stellt sicher, dass für beliebige Benutzer, di
 Außerdem beachten alle Aktionen, die für die Liste definiert sind, die entsprechenden Berechtigungen für diese Aktion auf einer Pro-Datensatz-Grundlage. D.h., wenn Sie über "Bearbeiten" für einen Datensatz verfügen, wird die Bearbeiten-Aktion für diesen Datensatz aktiviert. Dasselbe gilt für "Löschen", "Erstellen" usw. Beachten Sie, dass wenn keine Datensätzen zur Verfügung stehen, eine Nachricht mit dieser Information angezeigt wird, wenn die Liste geladen wird.
 
 Ein guter Websiteentwurf erfordert jedoch, dass wenn ein Benutzer nicht in einer Rolle ist, die Berechtigungen für die Entität hat, (d. h. es wird niemals zu einer Situation kommen, in der sie Datensätzen sehen sollten), sie überhaupt keinen Zugriff zur Seite haben sollten. Idealerweise sollte die Seite mit Webseiten-Zugriffsberechtigungen geschützt werden.
+
+Wenn Sie eine Entitätsliste durch Auswahl von **Entitätsberechtigungen aktivieren** gesichert haben und die Aktionen auf Datensatzebene anzeigen möchten, die für den angemeldeten Benutzer gelten, müssen Sie den Wert von der **EntityList/ShowRecordLevelActions** Website-Einstellung auf **wahr** festlegen. Zum Beispiel gibt es zwei Benutzer: Preston und Teddy. Preston hat auf Kontaktebene den gesamten Zugriff auf die Fall-Entität, während Teddy globalen Lesezugriff hat. Wenn eine Entitätsliste erstellt wird, in der alle Falldatensätze angezeigt werden, sieht Preston alle Aktionen (Anzeigen, Bearbeiten und Löschen) für die Datensätze, die mit seinem Kontakt verknüpft sind. Auf anderen Datensätzen würde er nur die Aktion **Anzeigen** sehen. Auf der anderen Seite würde Teddy nur die Aktion **Anzeigen** auf allen Datensätzen sehen.
+
+Wenn die **EntityList/ShowRecordLevelActions** Standorteinstellung auf **falsch** eingestellt ist und die Entität mehrere Berechtigungen hat, sind alle Aktionen auf Datensatzebene sichtbar. Wenn ein Benutzer jedoch versucht, eine Aktion auszuführen, für die er nicht autorisiert ist, wird ein Fehler angezeigt.
 
 ## <a name="adding-a-view-details-page"></a>Hinzufügen einer Ansichtsdetailseite
 

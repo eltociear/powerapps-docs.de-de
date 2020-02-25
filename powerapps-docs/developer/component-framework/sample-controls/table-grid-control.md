@@ -8,17 +8,17 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d466c748a6ad46cef37094f3413acdcaf61f1992
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f2cd6ca1e1d534cd15b65998edb965753777669b
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861924"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017393"
 ---
 # <a name="implementing-table-grid-component"></a>Implementieren der Tabellenrasterkomponente
 
 Dieses Beispiel demonstriert, wie eine einfache Dataset-Komponente erstellt wird, Spaltenmetadatenbindung einer Ansicht, Datensatzbindung, mehrere Datensätze vom Blättern und Datensatznavigation zum Formular.
-Die Komponentenüberschriftspalten die internen Datensatzwerte werden an vorhandene Ansichten gebunden.
+Die Komponentenüberschriftspalten die internen Datensatzwerte werden an vorhandene Ansichten gebunden. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_TableGrid) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Tabellenrasterkomponente](../media/table-grid-control.png "Tabellenrasterkomponente")

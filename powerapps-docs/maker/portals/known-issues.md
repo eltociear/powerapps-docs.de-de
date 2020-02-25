@@ -1,25 +1,27 @@
 ---
 title: Bekannte Probleme in Power Apps-Portalen | Microsoft-Dokumentation
 description: Erfahren Sie mehr über die bekannten Probleme in Power Apps-Portalen
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/17/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 584dc1518179c17e929c46b3659fad37085f1c31
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c7f5aaa46acd255f15e0a040f44710a608d34a2
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866561"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977355"
 ---
 # <a name="known-issues"></a>Bekannte Probleme
 
 
 ## <a name="general-issues"></a>Allgemeine Fragen
+
+- Aufgrund laufender Kompatibilitätsprobleme zwischen dem aktualisierten Yahoo YDN Oauth-Anbieter Endpunkt und Power Apps können sich Benutzer vorübergehend nicht beim [Yahoo-Identitätsanbieter](./configure/configure-oauth2-settings.md#yahoo-ydn-app-settings) authentifizieren.
 
 - Das **Änderungsdatum** für die App könnte falsch sein, da es sich um vorab bereitgestellte Apps handelt und früher hätte bereitgestellt werden können.
 

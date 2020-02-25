@@ -1,20 +1,20 @@
 ---
 title: Migrieren der Portalkonfiguration | MicrosoftDocs
 description: Informationen zum Migrieren der Portalkonfiguration.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/20/2019
-ms.author: shjais
+ms.date: 01/08/2020
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 2a3f9e6eba00446ce953975c99721d99bbe78338
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: cb0e92db15cf3f33ca89975ec3bd8750ca8ee6e2
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924285"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978499"
 ---
 # <a name="migrate-portal-configuration"></a>Portalkonfiguration migrieren
 
@@ -86,9 +86,6 @@ Sie können Portalkonfigurationsdaten aus einem Quellsystem exportieren, indem S
 
     > [!div class=mx-imgBorder]
     > ![Exportfortschritt der Konfigurationsdaten](../media/export-config-status.png "Exportfortschritt der Konfigurationsdaten")
-
-    > [!IMPORTANT]
-    > Das Configuration Migration Tool unterstützt nicht das Filtern von Datensätzen in einer Entität. Standardmäßig werden alle Datensätze in der ausgewählten Entität exportiert. Wenn Sie also mehr als einen Website-Datensatz erstellt haben, werden alle Websitedatensätzen exportiert.
 
 9.  Wählen Sie **Schließen**, um das Tool zu schließen.
 

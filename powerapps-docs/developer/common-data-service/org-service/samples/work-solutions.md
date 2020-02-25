@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cd2ebd7516adcbf036529880b20457d064f8eeb3
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 807cd14c385fecddb03f783b9fa7acab6c535ac7
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934074"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956161"
 ---
 # <a name="sample-work-with-solutions"></a>Beispiel: Verwenden von Lösungen
 
@@ -60,11 +60,11 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 1. Die `ExportSolutionRequest`-Methode exportiert die erstellte Lösung im [Setup](#setup).
 1. Die `DeleteSolutionRequest`-Methode löscht die Lösung und die Komponenten.
 
-
 ### <a name="demonstrate"></a>Demonstrieren
+
 1. Die `querySDKSamplePublisher`-Methode überprüft, ob der Herausgeber bereits im System vorhanden ist.
 1. Die `querySampleSolutionResults`-Methode überprüft, ob die Lösung bereits im System vorhanden ist.
-1. Die `ExportSolutionRequest`-Methode exportiert die Lösung. 
+1. Die `ExportSolutionRequest`-Methode exportiert die Lösung.
 1. Die `ImportSolutionRequest`-Methode importiert die Lösung.
 
 ### <a name="clean-up"></a>Bereinigung

@@ -2,7 +2,7 @@
 title: Rollupfelder definieren mit Power Apps | Microsoft-Dokumentation
 description: Hier erfahren Sie, wie Sie Rollup-Felder definieren
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 01/23/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e0c254635d6d51ee037ef7865f4b67b72710f319
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ee3e6b75202e901e72af7bc353770add253f2038
+ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863990"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "2982455"
 ---
 # <a name="define-rollup-fields-that-aggregate-values"></a>Definition von Rollupfeldern, die Werte aggregieren
 
@@ -81,22 +81,23 @@ Die Rollups werden nach geplanten Systemaufträgen berechnet, die asynchron im H
 So zeigen Sie Rollup-Aufträge an:
 
 1. Beim Anzeigen der **Common Data Service-Standardlösung** bearbeiten Sie die URL und entfernen alles nach `dynamics.com` und aktualisieren die Seite.
-2. Wählen Sie im Bereich **Einstellungen** auf die Option **System** > **Systemaufträge**.<br />![Navigieren zu Systemaufträgen](media/navigate-system-jobs.png)
+2. Wählen Sie im Bereich **Einstellungen** und **System** > **Systemaufträge**.<br />![Navigieren zu Systemaufträgen](media/navigate-system-jobs.png)
 1. In der Ansichtsauswahl wählen Sie **Seriensystemaufträge** aus.
 2. Um einen relevanten Vorgang schnell zu finden, können Sie nach dem Systemauftragstyp filtern: **Rollupfeld Massenberechnung** oder **Rollupfeld Neuberechnung**.
  
 ### <a name="mass-calculate-rollup-field"></a>Massenberechnung des Rollupfelds
 
-**Rollupfeld-Massenberechnung** sind ein iterativer Vorgang, der pro Rollupfeld erstellt wird. Er wird einmal ausgeführt, wenn Sie ein Rollupfeld erstellt oder aktualisiert haben. Der Vorgang berechnet den angegebenen Rollupfeldwert in allen vorhandenen Datensätzen neu, die dieses Feld enthalten. Standardmäßig wird der Vorgang 12 Stunden, nachdem Sie ein Feld erstellt oder aktualisiert haben, ausgeführt. Wenn der Vorgang abgeschlossen ist, wird automatisch geplant, ihn in der ferneren in der Zukunft, in 10 Jahren, auszuführen. Wenn das Feld geändert wird, wird der Vorgang zurückgesetzt, um 12 Stunden nach dem Update erneut ausgeführt zu werden. Die 12-stündige Verzögerung ist erforderlich, um zu gewährleisten, dass das **Massenberechnungs-Rollupfeld** nicht in den Umgebungsbetriebsstunden ausgeführt wird. Es wird empfohlen, dass ein Administrator die Startzeit des **Massenberechnungs-Rollupfeld**-Auftrags anpasst, nachdem das Rollupfeld erstellt oder geändert wurde, sodass er in Nicht-Betriebsstunden ausgeführt wird. Beispielsweise ist Mitternacht eine gute Zeit, um den Auftrag zu aktivieren, um eine effizienten Verarbeitung der Rollupfelder zu gewährleisten.  
+**Rollupfeld-Massenberechnung** sind ein iterativer Vorgang, der pro Rollupfeld erstellt wird. Er wird einmal ausgeführt, wenn Sie ein Rollupfeld erstellt oder aktualisiert haben. Der Vorgang berechnet den angegebenen Rollupfeldwert in allen vorhandenen Datensätzen neu, die dieses Feld enthalten. Standardmäßig wird der Vorgang 12 Stunden, nachdem Sie ein Feld erstellt oder aktualisiert haben, ausgeführt. Wenn der Vorgang abgeschlossen ist, wird automatisch geplant, ihn in der ferneren in der Zukunft, in 10 Jahren, auszuführen. Wenn das Feld geändert wird, wird der Vorgang zurückgesetzt, um 12 Stunden nach dem Update erneut ausgeführt zu werden. Die 12-stündige Verzögerung ist erforderlich, um zu gewährleisten, dass das **Massenberechnungs-Rollupfeld** nicht in den Betriebsstunden der Umgebung ausgeführt wird. Es wird empfohlen, dass ein Administrator die Startzeit des **Massenberechnungs-Rollupfeld**-Auftrags anpasst, nachdem das Rollupfeld erstellt oder geändert wurde, sodass er in Nicht-Betriebsstunden ausgeführt wird. Beispielsweise ist Mitternacht eine gute Zeit, um den Auftrag zu aktivieren, um eine effizienten Verarbeitung der Rollupfelder zu gewährleisten.  
 
 ### <a name="calculate-rollup-field"></a>Rollupfeld berechnen 
 
 **Rollupfelder berechnen** ist ein iterativer Auftrag, der inkrementelle Berechnungen aller Rollupfelder in den vorhandenen Datensätzen für eine bestimmte Entität ausführt. Es gibt nur einen Auftrag **Rollupfeldfeld berechnen** pro Entität. Die inkrementellen Berechnungen bedeuten, dass der **Rollupfeld berechnen**-Auftrag die Datensätze verarbeitet, die nach der letzten abgeschlossenen Ausführung des **Massenberechnungs-Rollupfeldes** erstellt, aktualisiert oder gelöscht wurden. Die standardmäßige maximale Wiederholungseinstellung ist auf eine Stunde festgelegt. Der Auftrags wird automatisch erstellt, wenn das erste Rollupfeld für eine Entität erstellen und gelöscht wird, wenn die letzte Rollupfeld gelöscht wird.  
 
 ## <a name="online-recalculation-option"></a>Online-Neuberechnungsoption
-Wenn Sie den Mauszeiger über dem Rollupfeld auf dem Formular bewegen, können Sie die Zeit des letzten Rollups sehen, und Sie können den Rollupwert aktualisieren, indem sie auf das Aktualisierungssymbol neben dem Feld klicken, wie unten gezeigt:  
+Das Rollup-Feld im Formular zeigt ein Taschenrechnerbild, einen Rollup-Wert und den Zeitpunkt der letzten Berechnung an. Wählen Sie zum erneuten Berechnen das Taschenrechnerbild die Schaltfläche **Neuberechnen**, die angezeigt wird. 
 
-![Rollupfeld auf dem Firmenformular](media/rollup-field-on-account-form.png)
+> [!div class="mx-imgBorder"] 
+> ![Rollupfeld auf dem Firmenformular](media/rollup-field-on-account-form.png)
   
 
 Es gibt einige Gesichtspunkte, an die Sie denken sollten, wenn Sie die Online-Neuberechnungsoption verwenden (das Formular manuell aktualisieren):  
@@ -108,9 +109,9 @@ Es gibt einige Gesichtspunkte, an die Sie denken sollten, wenn Sie die Online-Ne
 
 ## <a name="modify-rollup-job-recurrence"></a>Ändern der Rollupauftragswiederholung
 
-Als Systemadministrator können Sie das Rollupauftragsserienmuster ändern, die Rollupauftrag zurückstellen, anhalten oder fortsetzen. Allerdings können Sie einen Rollupauftrag nicht stornieren oder löschen. 
+Als Systemadministrator können Sie das Rollupauftragsserienmuster ändern und den Rollupauftrag zurückstellen, anhalten oder fortsetzen. Allerdings können Sie einen Rollupauftrag nicht stornieren oder löschen. 
 
-Um ein Serienmuster zu unterbrechen, zu verschieben, wiederaufnehmen oder zu ändern, gehen müssen Sie die Systemaufträge anzeigen. Weitere Informationen [Anzeigen von Rollupaufträgen](#view-rollup-jobs) 
+Um ein Serienmuster zu unterbrechen, zu verschieben, wiederaufnehmen oder zu ändern, müssen Sie die Systemaufträge anzeigen. Weitere Informationen [Anzeigen von Rollupaufträgen](#view-rollup-jobs) 
 
 Klicken oder tippen Sie auf der Navigationsleiste auf **Aktionen** und wählen Sie die Aktion aus, die angezeigt werden sollen. 
 

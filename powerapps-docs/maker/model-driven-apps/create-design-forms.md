@@ -1,7 +1,7 @@
 ---
 title: Erstellen und entwerfen von Modell-angetriebenen App-Formularen | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/06/2018
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d052e981d80578a2db844f3e8ff3f70ff0c07c2c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 2e64771257519bded104aa49bde84ac993e1b361
+ms.sourcegitcommit: 60a721432b3fa2abd14ccb3bd16a6b34e13ada85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884911"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026423"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>Erstellen und entwerfen von Modell-angetriebenen App-Formularen 
 
@@ -42,6 +42,8 @@ Wenn Sie eine verwaltete Lösung anzeigen, können Sie keine neuen Formulare fü
 ## <a name="type-of-forms"></a>Typ der Formulare
 Es gibt mehrere unterschiedliche Arten von Formularen und jeder Typ verfügt über eine Funktion oder Verwendung. Weitere Informationen: [Typen von Formularen in Power Apps](types-forms.md).  
 
+## <a name="main-form-dialogs-preview"></a>Hauptanwendungsformulardialoge (Vorschau)
+Mit der Client-API können Sie Hauptformulardialogfelder verwenden, damit Benutzer eine zugehörige Datensatzentität in einem übergeordneten oder Basisformular öffnen können, ohne vom Formular weg navigieren zu müssen. Weitere Informationen: [Öffnen des Hauptformulars in einem Dialogfeld mithilfe der Client-API](../../developer/model-driven-apps/customize-entity-forms.md#open-main-form-in-a-dialog-using-client-api) 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
 ## <a name="updated-versus-classic-entities"></a>Aktualisierte versus klassische Entitäten  
@@ -57,6 +59,7 @@ Es gibt immer noch mehrere Entitäten (klassische Entitäten), die die Darstellu
 |Preisliste|Warteschlangenelement|Angebot (Produkt)|Rollupfeld|Rollupabfrage|  
 |Gespeicherte Ansicht|Service|Serviceaktivität|SharePoint-Website|Standort|  
 |Gebiet|Einheit|Einheitengruppe|||  
+
   
 ## <a name="form-display-faq"></a>Formularanzeige FAQ
 

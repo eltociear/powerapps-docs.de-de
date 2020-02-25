@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren von Notizen in Entitätsformularen und Webformularen für ein Portal | MicrosoftDocs
 description: Anweisungen, Notizen zu Entitätsformularen und Webformularen in einem Portal hinzuzufügen und zu konfigurieren.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 9e46f1273d9c599078cbcd814ebe54f6a55701f3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d1e8048f4cc4dbb2023788fcc3d3cf28fdfb7f7b
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862398"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979687"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Konfigurieren von Hinweisen für Entitätsformulare und Internetformulare in Portalen
 
@@ -50,7 +50,7 @@ Notizen zu verwalteten Formularen im Portal hinzuzufügen ist genauso einfach wi
 | Optionen des Dialogs \"Bearbeiten\"   | Enthält Einstellungen zur Konfiguration des Dialogs, wenn **EditEnabled** aktiviert ist. Weitere Informationen finden Sie unter "Optionen des Dialogs 'Bearbeiten'".                                         |
 | \"Löschen\" aktiviert        | Aktiviert die Möglichkeit Notizen aus einer Entität zu löschen.                                                                                                         |
 | Optionen für Dialog \"Löschen\" | Enthält Einstellungen zur Konfiguration des Dialogs, wenn **DeleteEnabled** aktiviert ist. Weitere Informationen finden Sie unter "Optionen des Dialogs 'Löschen'".                                     |
-|Speicherort für Dateianlagen | Wählen Sie den Speicherort für die Dateianlage aus.<ul><li>Hinweisanlage</li><li>Azure-BLOB-Speicher</li></ul>|
+|Speicherort für Dateianlagen | Wählen Sie den Speicherort für die Dateianlage aus.<ul><li>Hinweisanlage</li><li>Azure-Blobspeicher</li></ul>|
 |MIME-Typ(en) akzeptieren | Ermöglicht Ihnen, eine Liste der akzeptierten MIME-Typen anzugeben. |
 |MIME-Typen einschränken | Wählen Sie aus, ob MIME-Typen zugelassen oder eingeschränkt werden sollen.|
 |Maximale Dateigröße (in KB) |Ermöglicht Ihnen, die maximale Größe einer Datei festzulegen, die angefügt werden kann. |
@@ -62,7 +62,7 @@ Notizen zu verwalteten Formularen im Portal hinzuzufügen ist genauso einfach wi
 | Fehlermeldung         | Überschreibt die Nachricht, die angezeigt wird, wenn ein Fehler auftritt, während die Notizliste lädt.                                                                     |
 | Meldung vom Typ "Zugriff verweigert" | Überschreibt die Meldung, die angezeigt wird, wenn ein Benutzer keine ausreichenden Berechtigungen zur Anzeige der Notizenliste besitzt.                                                    |
 | Leere Meldung         | Überschreibt die angezeigte Meldung, wenn die aktuelle Entität keine Notizen besitzt, die angezeigt werden können.                                                              |
-| Listenreihenfolgen           | Ermöglicht das Festlegen der Reihenfolge, in der Notizen angezeigt werden. Über die Einstellung zu Listenreihenfolgen können Sie Folgendes festlegen: <ul><li>Attribut: der logische Name der Spalte, nach der sortiert wird.</li><li>Alias: der Alias für das Attribut in der Abfrage</li><li>Sortierung: Wählen Sie „Aufsteigend“ (kleinste bis größte, oder erste bis letzte) oder „Absteigend“ (größte bis kleinste oder letzte bis erste) aus.</li></ul>  ![Festlegen von Attributen für Listenreihenfolgen](media/set-attributes-list-orders.png "SeT Attribute für Listenaufträge) Klicken Sie zum Hinzufügen einer Sortierregel auf Spalte (4), und füllen Sie die Details aus. Die Listensortierung wird von oben verarbeitet. Das oberste Element hat die höchste Priorität.|
+| Listenreihenfolgen           | Ermöglicht das Festlegen der Reihenfolge, in der Notizen angezeigt werden. Über die Einstellung zu Listenreihenfolgen können Sie Folgendes festlegen: <ul><li>Attribut: der logische Name der Spalte, nach der sortiert wird.</li><li>Alias: der Alias für das Attribut in der Abfrage</li><li>Sortierung: Wählen Sie „Aufsteigend“ (kleinste bis größte, oder erste bis letzte) oder „Absteigend“ (größte bis kleinste oder letzte bis erste) aus.</li></ul>  ![Festlegen von Attributen für Listenreihenfolgen](media/set-attributes-list-orders.png "Legen Sie Attribute für Listenreihenfolgen fest") Klicken Sie zum Hinzufügen einer Sortierregel auf Spalte (4), und füllen Sie die Details aus. Die Listensortierung wird von oben verarbeitet. Das oberste Element hat die höchste Priorität.|
 ||
 
 

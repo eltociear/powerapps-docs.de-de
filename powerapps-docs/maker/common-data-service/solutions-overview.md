@@ -2,7 +2,7 @@
 title: Arbeiten mit Lösungen in Power Apps | MicrosoftDocs
 description: Erfahren Sie, wie Lösungen verteilt werden
 ms.custom: ''
-ms.date: 12/04/2019
+ms.date: 01/21/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 71ddf991d25f144ce24b078cf73ffc6b971de36f
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909173"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975803"
 ---
 # <a name="solutions-overview"></a>Überblick über Lösungen  
 
@@ -40,8 +40,8 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
   
 
 <a name="BKMK_SolutionComponents"></a>   
-### <a name="components"></a>Komponenten  
- Eine Komponente steht für etwas, das Sie anpassen können. Alles, was Bestandteil einer Lösung sein kann, ist eine Komponente. Um die in einer Lösung enthaltenen Komponenten anzuzeigen, wechseln Sie im Lösungsexplorer zu **Einstellungen** > **Lösungen** und öffnen Sie dann die gewünschte Lösung. Die Komponenten sind in der **Komponentenliste** aufgeführt. 
+## <a name="components"></a>Komponenten  
+ Eine Komponente steht für etwas, das Sie anpassen können. Alles, was Bestandteil einer Lösung sein kann, ist eine Komponente. Um die in einer Lösung enthaltenen Komponenten anzuzeigen, wechseln Sie im Lösungsexplorer zu **Einstellungen** > **Lösungen** und öffnen Sie dann die gewünschte Lösung. Die Komponenten sind in der **Komponentenliste** aufgeführt. Beachten Sie, dass Sie die in einer verwalteten Lösung enthaltenen Komponenten nicht bearbeiten können. 
 
 > [!div class="mx-imgBorder"] 
 > ![Komponenten in Lösung](media/components-in-solution.png "Komponenten in Lösung") 
@@ -121,7 +121,7 @@ Eine Liste der Komponententypen, die zu einer beliebigen Lösung hinzugefügt we
  Der Zweck von Komponenten besteht darin, alle Einschränkungen hinsichtlich der Anpassbarkeit mit verwalteten Eigenschaften, und alle Abhängigkeiten nachzuverfolgen, sodass sie exportiert, importiert und (in verwalteten Lösungen) restlos gelöscht werden können.  
   
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
-### <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen  
+## <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen  
  Es gibt **verwaltete** und **nicht verwaltete** Lösungen. Eine **verwaltete** Lösung kann nicht geändert werden und kann nach dem Import deinstalliert werden. Alle Komponenten dieser Lösung werden durch die Deinstallation der Lösung gelöscht.  
   
  Wenn Sie eine **nicht verwaltete** Lösung importieren, fügen Sie alle Komponenten dieser Lösung der Umgebung hinzu. Sie können die Komponenten nicht löschen, indem Sie die Lösung deinstallieren.  
@@ -156,17 +156,22 @@ Eine Liste der Komponententypen, die zu einer beliebigen Lösung hinzugefügt we
  Dies ist, was Sie in Ihrer Umgebung sehen. Die Standardsystemlösung plus alle verwalteten und nicht verwalteten Anpassungen, die Sie vorgenommen haben.  
   
 <a name="BKMK_ManagedProperties"></a>   
-### <a name="managed-properties"></a>Verwaltete Eigenschaften  
+## <a name="managed-properties"></a>Verwaltete Eigenschaften  
  Einige Komponenten können nicht angepasst werden. Diese Komponenten in der Systemlösung verfügen über Metadaten, die Sie an ihrer Anpassung hindern. Diese werden als **Verwaltete Eigenschaften** bezeichnet. Der Herausgeber einer verwalteten Lösung kann die verwalteten Eigenschaften auch so festlegen, dass Sie seine Lösung nicht in einer Weise anpassen können, die er nicht wünscht.  
   
 <a name="BKMK_Dependencies"></a>   
-### <a name="solution-dependencies"></a>Lösungsabhängigkeiten  
+## <a name="solution-dependencies"></a>Lösungsabhängigkeiten  
  Aufgrund der Schichtung verwalteter Lösungen können einige verwaltete Lösungen von Lösungskomponenten in anderen verwalteten Lösungen abhängen. Einige Lösungsherausgeber nutzen dies, um modulare Lösungen zu erstellen. Möglicherweise müssen Sie zuerst eine verwaltete "Basis"-Lösung installieren und können dann eine zweite verwaltete Lösung installieren, die die Komponenten in der ersten verwalteten Lösung weiter anpasst. Die zweite verwaltete Lösung hängt von den Lösungskomponenten ab, die Teil ersten Lösung sind.  
   
  Das System verfolgt diese Abhängigkeiten zwischen Lösungen nach. Wenn Sie versuchen, eine Lösung zu installieren, die eine nicht installierte Basislösung erfordert, können Sie dies nicht tun. Sie erhalten eine Meldung angezeigt, die besagt, dass die Lösung eine andere Lösung erfordert, die zuerst installiert werden muss. Ähnlich gilt, dass Sie aufgrund der Abhängigkeiten die Basislösung nicht deinstallieren können, solange eine Lösung, die von ihr abhängt, noch installiert ist. Sie müssen die abhängige Lösung deinstallieren, bevor Sie die Basislösung deinstallieren können.  
+ 
+## <a name="solution-publisher-prefix"></a>Präfix des Lösungsverlegers 
+
+Standardmäßig ist die Lösung, die Sie in Power Apps bearbeiten, die **Common Data Service-Standardlösung** die dem **Common Data Service-Standardherausgeber** zugeordnet ist. Das Standardanpassungspräfix wird zufällig für diesen Herausgeber zugewiesen, und ist beispielsweise`cr8a3`. Das bedeutet, dass der Name jedes neuen Artikels der Metadaten, die für die Organisation erstellt wurden, diese Endung im Namen hat, um die Elemente eindeutig zu identifizieren. 
+
+Wir empfehlen Ihnen, das Präfix des Lösungsverlegers zu ändern, damit es aussagekräftiger wird. Weitere Informationen [Lösungsherausgeberpräfix ändern](change-solution-publisher-prefix.md)
   
-  
-## <a name="next-steps"></a>Nächste Schritte  
+### <a name="next-steps"></a>Nächste Schritte  
 [Lösungen importieren, aktualisieren und exportieren](import-update-export-solutions.md) <br/>
 [Zu einer bestimmten Lösung navigieren](navigate-specific-solution.md)
  

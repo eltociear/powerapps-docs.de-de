@@ -2,7 +2,7 @@
 title: Abrufen von verknüpften Entitätsdatensätzen mit einer Abfrage (Common Data Service) | Microsoft-Dokumentation
 description: Lesen Sie, wie Sie verknüpfte Entitätsdatensätze abrufen können, indem Sie die Navigationseigenschaften erweitern.
 ms.custom: ''
-ms.date: 07/15/2019
+ms.date: 01/08/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1119734dd8d61aacdbb3dc553b65c12b4d6c20a9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9c91d3c0b4bf3eed9757f75c763519eab73b08c3
+ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748614"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2944991"
 ---
 # <a name="retrieve-related-entity-records-with-a-query"></a>Abrufen von verknüpften Entitätsdatensätzen mit einer Abfrage
 
@@ -37,7 +37,9 @@ Verwenden Sie die `$expand`-Systemabfrageoption in den Navigationseigenschaften,
 Wenn Sie nur den Namen der Navigationseigenschaft einschließen, rufen Sie alle Eigenschaften für in Verbindung stehende Datensätze ab. Sie können die Eigenschaften begrenzen, die für in Verbindung stehende Aufzeichnungen unter Verwendung der Systemabfrageoption `$select` in Klammern nach dem Namen der Navigationseigenschaft zurückgegeben werden. Verwenden Sie dieses für einzelwertige und sammlungswertige Navigationseigenschaften.  
 
 > [!NOTE]
->  Um verknüpfte Entitäten für eine Entitätsinstanz abzurufen, siehe [Abrufen verwandter Entitäten für eine Entität durch Erweitern der Navigationseigenschaften](retrieve-entity-using-web-api.md#bkmk_expandRelated).  
+>  - Um verknüpfte Entitäten für eine Entitätsinstanz abzurufen, siehe [Abrufen verwandter Entitäten für eine Entität durch Erweitern der Navigationseigenschaften](retrieve-entity-using-web-api.md#bkmk_expandRelated). 
+> - Abfragen angezeigt, die unter Umständen Sammlung-bewertete erweitern Navigationseigenschaften zwischengespeicherten Daten für diese Eigenschaften zurückgibt, die keine neuen Änderungen angezeigt. Es wird empfohlen, eine `If-None-Match`-Kopfzeile mit Wert `null` zu verwenden, um Browserzwischenspeichern zu überschrieben. Siehe [HTTP Headers](compose-http-requests-handle-errors.md#bkmk_headers) für weitere Details.
+> 
 
 <a bkmk="bkmk_retrieverelatedentityexpandsinglenavprop"></a>
 

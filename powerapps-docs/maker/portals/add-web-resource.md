@@ -1,20 +1,20 @@
 ---
 title: Hinzufügen der Azure Storage-Webressource zu einem Formular | Microsoft-Dokumentation
 description: Schritte zum Hinzufügen einer Azure Storage-Webressource zu einem Formular, um das Hochladen von Anhängen zu Azure Storage zu aktivieren.
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/07/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: b98bce4b3b9d2fae1015250c509df30ec69c7797
-ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
+ms.openlocfilehash: 32bde2ec2c97f33c426a57b17216a7086930eaca
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2936193"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977926"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Hinzufügen der Azure Storage-Webressource zu einem Formular
 

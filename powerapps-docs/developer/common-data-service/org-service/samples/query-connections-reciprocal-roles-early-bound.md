@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4025a4da12cb909f0b481a9a821f9a9f77eaf70f
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 86cd5b567d6db0ede136530a51511beb8febb07e
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934258"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956185"
 ---
-# <a name="sample-query-connections-by-reciprocal-roles"></a>Beispiel: Abfragen von Verbindungen durch reziproke Rollen
+# <a name="sample-query-connections-by-reciprocal-roles-early-bound"></a>Beispiel: Abfragen von Verbindungen durch reziproke Rollen (frühe Bindung)
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-connections-reciprocal-roles-early-bound -->
 
@@ -40,6 +40,7 @@ Dieses Beispiel zeigt, wie entsprechende Rollen erstellt werden und dann eine en
 Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene Szenario zu simulieren, geht das Beispiel wie folgt vor:
 
 ### <a name="setup"></a>Einrichten
+
 1. Prüft auf aktuelle Version der Organisation.
 2. Definiert einige anonyme Typen, um den Bereich der möglichen Werte für die Verbindungseigenschaften festzulegen.
 3. `ConnectionRole` erstellt die primäre Instanz der Verbindungsrolle.

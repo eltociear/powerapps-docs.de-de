@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 360194b69e049b7622f1c205c07add069e7f70ba
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 73858109ed8e43c5693061a2141e8e30e68f8623
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909111"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2987921"
 ---
 # <a name="file-attributes"></a>Dateiattribute
 
@@ -27,7 +27,7 @@ Ein Dateiattribut wird zum Speichern von Dateidaten bis zu einer angegebenen max
 
 Web-API (REST) | .NET-API (SOAP)
 ------- | -------
-[FieAttributeMetadata](/dynamics365/customer-engagement/web-api/fileattributemetadata) | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
+FileAttributeMetadata | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
 
 Informationen zu den nicht zulässigen Dateitypen finden Sie auf der [Registerkarte „Systemeinstellungen“ > „Allgemein“](/power-platform/admin/system-settings-dialog-box-general-tab) unter der Einstellung **Gesperrte Dateierweiterungen für Anlagen festlegen**.
 

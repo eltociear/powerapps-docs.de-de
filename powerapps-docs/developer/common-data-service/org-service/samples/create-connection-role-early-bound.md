@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d8aebdc81d225369fbe8b964713c145242c6312e
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: ab669bca920aee564a2ad0b8fe3fee06ad06165e
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934382"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956217"
 ---
 # <a name="sample-create-a-connection-role"></a>Beispiel: Erstellen einer Verbindungsrolle
 
@@ -44,6 +44,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 Prüft auf aktuelle Version der Organisation.
 
 ### <a name="demonstrate"></a>Demonstrieren
+
 1. Definiert einige anonyme Typen, um den Bereich der möglichen Werte für die Verbindungseigenschaften festzulegen.
 2. Erstellt eine Verbindungsrolle für Firmen- und Kontaktentitäten.
 3. Erstellt einen der Verbindungsrolle zugehörigen Objekttypcodedatensatz für Firmen- und Kontaktentität.

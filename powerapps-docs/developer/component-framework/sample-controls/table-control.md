@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: a37efda1dd6593f30e90ade7e11f7e762d67b932
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f20285b882e3505a1464f7801b8808eef5a08f7c
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861928"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017403"
 ---
 # <a name="implementing-table-component"></a>Implementieren einer Tabellenkomponente
 
-Diese Beispielkomponente rendert eine Tabelle mit zwei Spalten. Die linke Spalte enthält den Namen der API-Methode oder -Eigenschaft und die rechte Spalte enthält den Wert, der von der API zurückgegeben wird. Sie können diese Komponente auf verschiedenen Gerätetypen öffnen oder Ihre Sprache oder Benutzereinstellungen ändern, um zu sehen, dass die Werte in der Tabelle ordnungsgemäß geändert werden.
+Diese Beispielkomponente rendert eine Tabelle mit zwei Spalten. Die linke Spalte enthält den Namen der API-Methode oder -Eigenschaft und die rechte Spalte enthält den Wert, der von der API zurückgegeben wird. Sie können diese Komponente auf verschiedenen Gerätetypen öffnen oder Ihre Sprache oder Benutzereinstellungen ändern, um zu sehen, dass die Werte in der Tabelle ordnungsgemäß geändert werden. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_TableControl) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Tabellenkomponente](../media/table-control.png "Tabellenkomponente")
@@ -26,7 +26,7 @@ Diese Beispielkomponente rendert eine Tabelle mit zwei Spalten. Die linke Spalte
 
 Modellgestützte Apps
 
-> ![!NOTE]
+> [!NOTE]
 > Wenn Sie die Tabellenkomponente mit dem Befehl `npm start` debuggen, wird die Komponente nicht im Prüfstrang gerendert. Dies liegt daran, dass die Komponente die `context.utils.getEntityMetadata`-Methode verwendet, die von den Power Apps-CLI-Tool noch nicht unterstützt wird.
 
 ## <a name="manifest"></a>Manifest
@@ -434,15 +434,15 @@ export class TSTableControl
 }
 ```
 
-Dieses Beispiel enthält Beispiele zur Verwendung von Methoden aus `IClient, IUserSettings, IUtility, IFormatting interfaces`.
+Dieses Beispiel enthält Beispiele für die Verwendung von Methoden aus den Schnittstellen `Client`, `UserSettings`, `Utility` und `Formatting`.
 
 Diese Komponente demonstriert außerdem die zwei Dienstprogrammfunktionen `setFullScreen` und `lookupObjects`. Diese Funktionen werden durch Anklicken der Schaltfläche aufgerufen, die als Teil der Codekomponente dargestellt wird. Die `setFullScreen`-Schaltfläche schaltet die Komponente in oder aus dem Vollbildmodus. Die `lookupObjects`-Schaltfläche öffnet einen Suchdialog und bringt dann den ausgewählten Datensatz als Text in div ein.
 
-In diesem Beispiel rendern wir eine HTML-Schaltfläche und fügen die Schaltfläche einen JavaScript-`onClick`-Ereignishandler `onLookupObjectsButtonClick` hinzu. Beim Klicken auf diese Schaltfläche rufen wir die `context.utils.lookupObjects()`-Methode auf und übergeben sie als einen Parameter an ein Array von Entitätsnamen. 
+In diesem Beispiel wird ein HTML-Button gerendert und ein `onClick`-Ereignishandler `onLookupObjectsButtonClick` an den Button angehängt. Beim Klicken auf diese Schaltfläche rufen wir die `context.utils.lookupObjects()`-Methode auf und übergeben sie als einen Parameter an ein Array von Entitätsnamen. 
 
-Diese Methode gibt ein JavaScript-Promise-Objekt zurück, das den Abschluss oder den Fehler des Anrufs im Suchdialog angezeigt. Wenn das Promise erfolgreich aufgelöst wird, wird das Suchobjekt, das der Benutzer ausgewählt hat, als Parameter in die Rückrufmethode übergeben und kann als data.id, data.name, data.entityType verwiesen werden.
+Diese Methode gibt ein `Promise`-Objekt zurück, das den Abschluss oder das Scheitern des Aufrufs des Nachschlagdialogs darstellt. Wenn die p`Promise` erfolgreich aufgelöst wird, wird das vom Benutzer ausgewählte Lookup-Objekt als Parameter an die Callback-Methode übergeben und kann als `data.id`, `data.name`, `data.entityType` referenziert werden.
 
-Die Callback-Methode injiziert diese Informationen als HTML in ein Div, das auf der Codekomponente gerendert wird, um dem Benutzer die ausgewählten Ergebnisse zu präsentieren. Wenn das Promise abgelehnt wird, wird die Fehler-Rückrufmethode ausgelöst, wo Ihre Komponente das Fehlerszenario entsprechend behandeln kann.
+Die Callback-Methode injiziert diese Informationen als HTML in ein Div, das auf der Codekomponente gerendert wird, um dem Benutzer die ausgewählten Ergebnisse zu präsentieren. Wenn die `Promise` zurückgewiesen wird, wird die Fehlerrückrufmethode aufgerufen, bei der Ihre Komponente das Fehlerszenario entsprechend behandeln kann.
 
 ### <a name="related-topics"></a>Verwandte Themen
 

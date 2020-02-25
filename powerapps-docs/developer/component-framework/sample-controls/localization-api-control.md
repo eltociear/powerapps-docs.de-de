@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 43be87e84ea321db6f5df6919914bbccb48e0130
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5a60884e6cefab9b4bfa0735e03b5d5eb4761523
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861944"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017423"
 ---
 # <a name="implementing-localization-api-component"></a>Implementieren der Lokalisierungs-API-Komponente
 
-Dieses Beispiel demonstriert, wie Lokalisierung für benutzerdefinierte Steuerelemente ausgeführt wird. In diesem Beispiel verwenden wir die [Erhöhungskomponente](increment-control.md), um den Text zu lokalisieren, der auf der Erhöhungsschaltfläche angezeigt wird, basierend auf der vom Benutzer ausgewählten Sprache. 
+Dieses Beispiel demonstriert, wie Lokalisierung für benutzerdefinierte Codekomponenten ausgeführt wird. In diesem Beispiel verwenden wir die [Erhöhungskomponente](increment-control.md), um den Text zu lokalisieren, der auf der Erhöhungsschaltfläche angezeigt wird, basierend auf der vom Benutzer ausgewählten Sprache. 
 
-Power Apps component framework verwendet das Konzept der Implementierung von String(resx)-Webressourcen, die zur Verwaltung der lokalisierten Zeichenketten verwendet werden, die auf jeder Benutzeroberfläche angezeigt werden. Weitere Informationen: [String (Resx)-Webressourcen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
+Power Apps component framework verwendet das Konzept der Implementierung von String(resx)-Webressourcen, die zur Verwaltung der lokalisierten Zeichenketten verwendet werden, die auf jeder Benutzeroberfläche angezeigt werden. Weitere Informationen: [String (Resx)-Webressourcen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_LocalizationAPI) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Lokalisierungs-API-Komponente](../media/localization-api-control.png "Lokalisierungs-API-Komponente")

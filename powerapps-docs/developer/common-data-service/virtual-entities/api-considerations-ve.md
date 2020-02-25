@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cbd3da97fcf4e2f8d21f5475221eb39455c09050
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fed9bc722c09b157dfd1f62b6ea27d2603bcc969
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748507"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005089"
 ---
 # <a name="api-considerations-of-virtual-entities"></a>API-Rücksichten auf virtuelle Entitäten
 
@@ -72,7 +72,7 @@ Zwei neue Eigenschaften wurden zur Klasse <xref:Microsoft.Xrm.Sdk.Metadata.Attri
 |<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.ExternalName>|Name für diesen Typ in der externen Datenquelle|
 |<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsDataSourceSecret>|Bestimmt, ob das Feld vertrauliche Informationen enthält.|
 
-Die `ExternalName`-Eigenschaft wurde ebenfalls den Klassen <xref:Microsoft.Xrm.Sdk.Metadata.OptionMetadata> und <xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata> übergeben. Diese externe Namen helfen bei der externen Datenquellenzuordnung, indem der Name des verbundenen Typs in der externen Datenquelle bestimmt wird. Diese Eigenschaften werden nur für virtuelle Entitäten verwendet; für einen eingebauten oder Standardtyp der benutzerdefinierten Entität müssen diese externen Namen `null` sein.
+Die `ExternalName`-Eigenschaft wurde ebenfalls den Klassen <xref:Microsoft.Xrm.Sdk.Metadata.OptionMetadata> und <xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata> übergeben. Diese externen Namen helfen bei der externen Datenquellenzuordnung, indem der Name des verbundenen Typs in der externen Datenquelle bestimmt wird. Diese Eigenschaften werden nur für virtuelle Entitäten verwendet; für einen eingebauten oder Standardtyp der benutzerdefinierten Entität müssen diese externen Namen `null` sein.
 
 
 ### <a name="virtual-entity-creation"></a>Erstellung einer virtuellen Entität

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c917314137580ffee9d70f702c87bfb265a55810
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 25ea1db66e61d3e0b03090a0a91f35bd90d7b649
+ms.sourcegitcommit: b746aad895b152259680f5179dcee0281c951d0a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872955"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "2948830"
 ---
 # <a name="create-a-solution"></a>Erstellen einer Lösung
 
@@ -43,7 +43,7 @@ Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich 
     |-----------|-----------------|  
     |**Anzeigename**|Der in der Liste der Lösungen angezeigte Name. Sie können ihn später ändern.|  
     |**Name**|Der eindeutige Name der Lösung. Dieser wird anhand des Werts generiert, den Sie im Feld Anzeigename eingegeben haben. Sie können diesen bearbeiten, bevor Sie die Lösung speichern, nach dem Speichern der Lösung ist jedoch keine Änderung mehr möglich.|  
-    |**Herausgeber**|Sie können den Standardherausgeber auswählen oder einen neuen Herausgeber erstellen. Sofern Sie nicht planen, Ihre Lösung zu verteilen, sollten Sie den Standardherausgeber für Ihre Organisation verwenden.|  
+    |**Herausgeber**|Sie können den Standardherausgeber auswählen oder einen neuen Herausgeber erstellen. Es wird empfohlen, einen Herausgeber für Ihre Organisation zu erstellen, der konsistent in Ihren Umgebungen verwendet wird, in denen Sie die Lösung verwenden. Weitere Informationen: [Ändern des Lösungsherausgeberpräfix für einen beliebigen Verleger](change-solution-publisher-prefix.md#change-the-solution-publisher-prefix-for-any-publisher) |  
     |**Version**|Geben Sie eine Nummer für die Version Ihrer Lösung an. Dies ist nur erforderlich, wenn Sie die Lösung exportieren. Die Versionsnummer wird im Dateinamen enthalten sein, wenn Sie die Lösung exportieren.|  
   
 3.  Wählen Sie **Speichern** aus.  

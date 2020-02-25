@@ -1,26 +1,49 @@
 ---
 title: Häufig gestellte Fragen | Microsoft Docs
 description: Häufig gestellte Fragen in Power Apps Portalen.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/27/2019
-ms.author: shjais
-ms.reviewer: tapanm
-ms.openlocfilehash: 35f68ef861ac8908e1eb9227df6768b7a2c2c9f3
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.date: 01/17/2020
+ms.author: tapanm
+ms.reviewer: ''
+ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934104"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988077"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps Portale-FAQs
 
 Damit Sie eine schnelle Übersicht erhalten, haben wir eine Liste mit häufig gestellten Fragen sowie kurze Antworten zusammengestellt, damit Sie schnell Ihre Informationen erhalten können.
 
 ## <a name="general"></a>Allgemein
+
+### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>Was ist der Unterschied zwischen Power Apps Portal, Dynamics 365 Portalen und Add-On Portalen?
+
+Mit dem Start von Power Apps Portalen am 1. Oktober 2019 werden Dynamics 365 Portale als Power Apps Portale bezeichnet. Mit anderen Worten, alle Portale werden als **Power Apps Portale** bezeichnet.
+
+Eine der wichtigsten Änderungen, die nach dem 1. Oktober 2019 in Portalen eingeführt wurden, ist das Lizenzmodell. Früher waren Portale lizenzierte Add-Ons für Dynamics 365-Apps, während bestimmte Dynamics 365-Lizenzen ein Standardportal-Add-On enthielten. Nach dem 1. Oktober 2019 sind Portale [lizenziert basierend auf der Verwendung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing). Alle vorhandenen Portale sind Teil einer Übergangsfrist auf der Grundlage des aktuellen Kundenvertrags, nach deren Ablauf sie auf ein neues Lizenzmodell umgestellt werden müssen.
+
+Sie können den Typ eines Portals über das [Power Apps Portals Administratorcenter](./admin/admin-overview.md) überprüfen:
+
+![Power Apps Portaltyp](./media/power-apps-portals-type.png)
+
+Für Add-On-Portale wurde dem Portaltyp das Suffix Add-On hinzugefügt. Ein Produktions-Add-On-Portal-Typ wird beispielsweise als Produktion (Add-On) aufgeführt.
+
+Es gibt keinen Unterschied in der Funktionalität zwischen Power Apps Portalen mit kapazitätsbasierten Lizenzen und Add-On-basierten Lizenzen. Die Bereitstellungsmethode für Portale mit kapazitätsbasierten Lizenzen und Add-On-basierten Lizenzen ist jedoch unterschiedlich.
+
+Sie können Power Apps Portale mit kapazitätsbasierter Lizenz mit den in den folgenden Artikeln beschriebenen Schritten erstellen:
+
+- [Erstellen eines Common Data Service Starterportals](create-portal.md)
+- [Erstellen Sie ein Portal mit einer Dynamics 365-Umgebung](create-dynamics-portal.md)
+
+Um ein Power Apps Portal mit Add-On-basierter Lizenz zu erstellen, siehe [Bereitstellung eines Portals mit dem Portal-Add-On](provision-portal-add-on.md).
+
+Gehen Sie zu [Power Apps FAQ zur Lizenzierung von Portalen](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#what-is-the-difference-between-power-apps-portals-and-dynamics-365-portals-in-terms-of-licensing) für Lizenzierungsunterschiede zwischen Add-On-basierten Lizenzen und kapazitätsbasierten Lizenzen.
 
 ### <a name="when-is-an-add-on-portal-in-suspended-state"></a>Wann befindet sich ein Add-On-Portal im gesperrten Zustand?
 
@@ -167,7 +190,7 @@ Wenn eine Common Data Service-Umgebung aus einem Backup wiederhergestellt wird, 
 
 - Wenn die Organisations-ID nach dem Wiederherstellungsvorgang gleich ist und zudem Portallösungen zur Verfügung stehen:
 
-1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin/admin-overview.md).
+1. Öffnen Sie [Power Apps Portale Administratorcenter](admin/admin-overview.md).
 2. Gehen Sie zur Registerkarte **Portaldetails**.
 3. Wählen Sie in der Dropdownliste **Portalstatus** die Option **Aus** aus.
 4. Wählen Sie **Aktualisieren**. 
@@ -183,7 +206,7 @@ Wenn eine Common Data Service-Umgebung aus einem Backup wiederhergestellt wird, 
 
 Wenn Sie die URL Ihrer Common Data Service-Umgebung ändern, funktioniert Ihr Portal nicht mehr, da es die Common Data Service-Umgebungs-URL nicht mehr identifizieren kann. So beheben Sie dieses Problem:
 
-1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin/admin-overview.md).
+1. Öffnen Sie [Power Apps Portale Administratorcenter](admin/admin-overview.md).
 2. Wechseln Sie zu **Portalaktionen** > **Dynamics 365 URL aktualisieren**.
 3. Führen Sie die Anweisungen im Assistenten aus.
 
@@ -204,6 +227,15 @@ Es ist ratsam, dies nur zu verwenden, wenn Sie ein Portal entwickeln. Sobald das
 Wenn Sie Diagnoseprotokollierung aktivieren, können Sie nach bestimmten Fehlern suchen, die Benutzer unter der Aktivitäts-ID auf der allgemeinen Fehlerseite melden. Die Aktivitäts-ID wird zusammen mit Fehlerdetails protokolliert und ist nützlich, um das tatsächliche Problem zu suchen.
 
 ## <a name="portal-administration-and-management"></a>Portalverwaltung und -verwaltung
+
+### <a name="do-portals-use-any-static-content-from-cdns-content-delivery-network-that-i-need-to-whitelist"></a>Verwenden Portale statische Inhalte von CDNs (Content Delivery Network), die ich für die Whitelist benötige?
+
+Ja. Power Apps Portale verwendet die statischen Ressourcen des Standardportals von Azure CDN, die standardmäßig JavaScript enthält und CSS Dateien für die Präsentation, die zuvor als Teil der Portal-App gerendert wurden. Sie müssen die folgende CDN-URL auf die Whitelist setzen, um Portale erfolgreich zu rendern:
+
+    https://content.powerapps.com/resource/powerappsportal
+
+> [!NOTE]
+> Power Apps Portale, die in Microsoft Government Cloud gehostete werden, verwenden kein CDN.
 
 ### <a name="how-do-i-use-a-custom-login-provider-on-my-portal"></a>Wie wird ein benutzerdefinierter Anmeldeanbieter auf meinem Portal verwendet?
 
@@ -229,7 +261,7 @@ Nachfolgend finden Sie eine Liste der häufigsten Ursachen und der entsprechende
 
 Dies geschieht, wenn die URL der Umgebung Common Data Service von einem Benutzer geändert wird, nachdem das Portal für das Unternehmen bereitgestellt wurde. Um dieses Problem zu beheben, aktualisieren Sie die URL von Dynamics 365:
 
-1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin/admin-overview.md).
+1. Öffnen Sie das [Power Apps Portale Administratorcenter](admin/admin-overview.md).
 2. Wechseln Sie zu **Portalaktionen** > **Dynamics 365 URL aktualisieren**. Sobald diese Aktion erfolgreich ausgeführt wurde, wird Ihre Common Data Service Umgebungs-URL aktualisiert und das Portal beginnt zu funktionieren.
 
 #### <a name="common-data-service-environment-connected-to-your-portal-is-in-administration-mode"></a>Die mit Ihrem Portal verbundene Common Data Service-Umgebung befindet sich im Administratormodus.
@@ -242,7 +274,7 @@ Wenn dies die Ursache ist, können Sie den Administrationsmodus deaktivieren, in
 
 Dieses Problem tritt auf, wenn die Authentifizierungsverbindung zwischen Dynamic 365-Organisation und Portal unterbrochen ist, weil entweder die Common Data Service-Umgebung aus einem Backup wiederhergestellt wurde oder gelöscht und aus einem Backup wiederhergestellt wurde. So beheben Sie dieses Problem:
 
-1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin/admin-overview.md).
+1. Öffnen Sie das [Power Apps Portale Administratorcenter](admin/admin-overview.md).
 2. Wählen Sie auf der Registerkarte **Portaldetails** in der Liste **Portalstatus** die Option **Aus**.
 3. Wählen Sie **Aktualisieren**.
 4. Wählen Sie **Ein** aus der Liste **Portalstatus**.
@@ -254,7 +286,7 @@ In bestimmten Situationen, insbesondere wenn sich die Organisations-ID nach der 
 
 Dieses Problem ist typischerweise ein vorübergehendes Problem, das auftreten kann, wenn die API-Anfragen an Ihre Common Data Service-Umgebung abgelaufen sind. Dieses Problem wird sich automatisch verringern, sobald die API-Anfragen funktionieren. Um dieses Problem zu beheben, können Sie auch versuchen, das Portal neu zu starten:
 
-1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin/admin-overview.md).
+1. Öffnen Sie das [Power Apps Portale Administratorcenter](admin/admin-overview.md).
 2. Gehen Sie zu **Portalaktionen** > **Neustart**.
 
 Wenn der Neustart des Portals nicht funktioniert und dieses Problem über einen längeren Zeitraum auftritt, wenden Sie sich bitte an den Microsoft-Support.
@@ -304,7 +336,7 @@ Wenn bei einer dieser Entitäten ein veraltetes Datenproblem auftritt, können S
 
 Abgesehen davon, dass jede Entität für die Änderungsverfolgung aktiviert wird, müssen Organisationen im Ganzen auch für die Änderungsverfolgung aktiviert werden. Eine Organisation ist für die Änderungsverfolgung aktiviert, wenn eine Portalbereitstellungsanforderung übermittelt wird. Dies kann jedoch abbrechen, wenn eine Organisation aus einer alten Datenbank wiederhergestellt oder zurückgesetzt wird. So beheben Sie dieses Problem:
 
-1. Öffnen Sie das [Admin Center für Power Apps-Portale](admin/admin-overview.md).
+1. Öffnen Sie das [Power Apps Portale Administratorcenter](admin/admin-overview.md).
 2. Wählen Sie auf der Registerkarte **Portaldetails** in der Liste **Portalstatus** die Option **Aus**.
 3. Wählen Sie **Aktualisieren**.
 4. Wählen Sie **Ein** aus der Liste **Portalstatus**.

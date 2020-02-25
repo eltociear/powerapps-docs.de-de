@@ -1,20 +1,20 @@
 ---
 title: Globale Suche in Power Apps-Portalen | Microsoft-Dokumentation
 description: Hier erfahren Sie, wie die globale Suche in einem Portal funktioniert.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
-ms.author: shjais
+ms.date: 01/30/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 71a06d24e628ddae508af031aa80b8a08b380905
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9b2a2333c3e8422470521a7af135ea2c7d7040f2
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866705"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012624"
 ---
 # <a name="search"></a>Search
 
@@ -222,35 +222,23 @@ Im folgenden Beispiel wird die Anfrage-Entität aus der globalen Suche des Porta
 
 Um zu verhindern, dass die Anfrage-Entität indiziert wird, müssen Sie die Ansicht der Anfrage-Entität umbenennen, die die Datensätze definiert, die vom Portal indiziert werden sollen (definiert durch die Websiteeeinstellung Suche/IndexQueryName). Standardmäßig ist der Name dieser Ansicht "Portalsuche".
 
-1.  Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
+1.  Gehen Sie zu https://make.powerapps.com und wählen Sie Lösungen. 
 
-2.  Wählen Sie das Symbol **Einstellungen** in der Symbolleiste oben rechts auf der Seite und dann **Erweiterte Einstellungen** aus.
+    ![Lösungen](../media/solutions-page.png)
 
-2.  Gehen Sie zu **Einstellungen** > **Anpassung** > **System anpassen**.
+1. Suchen Sie nach **Standardlösung** und wählen Sie dann zum Öffnen Bearbeiten.
 
-    ![Anpassen des Systems](../media/customize-system.png "Anpassen des Systems")
+    ![Lösung bearbeiten](../media/edit-solution.png)
 
-3.  Gehen Sie im Anpassungsdialogfeld auf **Komponenten** > **Entitäten** > **Anfrage** im linken Navigationsbereich. 
+1. Suchen und bearbeiten Sie **Anfrage** Entität, um ihre Komponenten zu sehen. 
 
-4.  Erweitern Sie die **Anfrage** Entität und wählen Sie **Ansicht**.
+1. Wählen Sie **Ansichten** und dann **Portalsuche**, um es in einem Ansichtseditor zu öffnen.
 
-5.  Wählen Sie die Ansicht **Portalsuche** aus der Liste aus und öffnen Sie sie im Ansicht-Editor.
+1. Benennen Sie im Ansichtseditor die Ansicht entsprechend Ihren Anforderungen um. Stellen Sie sicher, dass der neue Name nicht den Begriff *Portalsuche* enthält. 
 
-    ![Ansicht für Anfrage](../media/case-view.png "Ansicht für Anfrage")
+1. Speichern und veröffentlichen Sie die Änderungen und schließen Sie den Ansichtseditor.
 
-6.  Klicken Sie im Ansicht-Editor" auf **Eigenschaften anzeigen**.
-
-    ![Ansicht-Editor](../media/view-editor.png "Ansicht-Editor")
-
-7.  Benennen Sie die Ansicht entsprechend der Anforderung um. Stellen Sie sicher, dass der neue Name nicht den Begriff "Portalsuche" enthält.
-
-    ![Eigenschaften anzeigen](../media/view-properties.png "Eigenschaften anzeigen")
-
-8.  Speichern Sie Ihre Änderungen und schließen Sie den Ansicht-Editor
-
-9.  Wählen Sie **Alle Anpassungen veröffentlichen** aus.
-
-10. Erstellen Sie den vollständigen Index anschließend neu, wie im Abschnitt [Vollständigen Suchindex neu erstellen](#rebuild-full-search-index) beschrieben.
+1. Erstellen Sie den vollständigen Index anschließend neu, wie im Abschnitt [Vollständigen Suchindex neu erstellen](#rebuild-full-search-index) beschrieben.
 
 > [!NOTE]
 > In diesem Beispiel werden die Änderungen in einer nicht verwalteten Ebene vorgenommen, indem Sie die Ansicht direkt bearbeiten. Sie können dies auch über eine verwaltete Lösung durchführen.

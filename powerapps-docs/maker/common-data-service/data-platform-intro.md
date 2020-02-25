@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2b5a84179a4d9c6598331a6e728326a2318f9a9a
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 8e7bb5e6ac623b1fc3cbf9a496746ebf2bbf71c7
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883614"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004834"
 ---
 # <a name="what-is-common-data-service"></a>Was ist Common Data Service?
 Mit Common Data Service können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendungen verwendet werden. Daten in Common Data Service werden in einem Satz von Entitäten gespeichert. Eine *Entität* ist eine Datensatzgruppe, in der Daten gespeichert werden, ähnlich zur Speicherung von Daten in einer Tabelle einer Datenbank. Common Data Service umfasst einen Basissatz an Standardentitäten, die typischen Szenarien abdecken, jedoch können Sie auch benutzerdefinierte Entitäten erstellen, die für Ihre Organisation spezifisch sind und sie mit Power Query mit Daten auffüllen. App-Hersteller können dann Power Apps verwenden, um mithilfe dieser Daten umfangreiche Anwendungen zu erstellen.
@@ -47,7 +47,7 @@ Dynamics 365-Anwendungen, wie Dynamics 365 Sales, Dynamics 365 Customer Service,
 * **Wiederverwendbare Fähigkeiten in Dynamics 365 und Power Apps** &ndash; Benutzer mit Fähigkeiten, die zuvor aus Power Apps oder Dynamics 365 stammen, können diese neuen Fähigkeiten jetzt auf der neuen Common Data Service-Plattform nutzen. Das Erstellen von Entitäten, Formularen, Diagrammen usw. ist jetzt in Ihren Anwendungen üblich.
 
     > [!NOTE]
-    > Die Finance und Operations-App erfordert derzeit die Konfiguration von [Data Integrator](/power-platform/admin/data-integrator), um Ihre Geschäftsdaten von Finance and Operations in Common Data Service verfügbar zu machen.
+    > Finance and Operations Apps erfordern derzeit die Konfiguration von [Data Integrator](/power-platform/admin/data-integrator), um Ihre Geschäftsdaten von Finance and Operations Apps verfügbar zu machen in Common Data Service.
 
 ## <a name="integrating-data-into-the-common-data-service"></a>Integration von Daten in Common Data Service
 

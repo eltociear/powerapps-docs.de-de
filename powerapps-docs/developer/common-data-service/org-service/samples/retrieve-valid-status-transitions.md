@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dd99019e867b4bc95540c5bb4c08af768891086b
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: e4e69e22dbe8a4e9ec59866bc60026e998779a8b
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934186"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956165"
 ---
 # <a name="sample-retrieve-valid-status-transitions"></a>Beispiel: Abrufen gültiger Statusübergänge
 
- Dieses Beispiel zeigt, wie gültige Statusübergänge unabhängig davon abrufen werden können, ob benutzerdefinierte Statusübergänge für die Entität definiert wurden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveValidTransitions) herunterladen.
+Dieses Beispiel zeigt, wie gültige Statusübergänge unabhängig davon abrufen werden können, ob benutzerdefinierte Statusübergänge für die Entität definiert wurden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveValidTransitions) herunterladen.
  
- ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
+## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
@@ -43,6 +43,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 1. Die Methode `MetadataFilterExpression` prüft auf die Entitäten-Metadaten.
 
 ### <a name="demonstrate"></a>Demonstrieren
+
 1. Die Methode `MetadataFilterExpression` ruft die Statusoptionen für die Entität `Incident` ab.
 1. Die Methode `RetrieveMetadataChangeRequest` ruft die Metadaten ab.
 1. Die Methdoe `GetValidStatusOptions` fordert die gültigen Statusübergänge für jede Statusoption an.

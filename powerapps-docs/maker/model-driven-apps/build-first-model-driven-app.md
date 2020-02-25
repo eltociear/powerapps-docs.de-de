@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2a1e27dea75ba2e15ee7b96be2b7597430f89cba
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 04c083624b8f9d971698c97d133cdd209a8a6e5c
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885043"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004928"
 ---
 # <a name="build-your-first-model-driven-app-from-scratch"></a>Erstellen Sie Ihre erste Modell-angetriebene App neu
 Modell-angetriebener App-Entwurf ist eine Komponenten-fokussierte Methode zur App-Entwicklung. In diesem Thema vereinfachen Sie, wie Sie eine modellgesteuerte App erstellen, indem Sie eine der Standardentitäten verwenden, die in Ihrer Power Apps-Umgebung verfügbar ist.
@@ -45,7 +45,7 @@ Melden Sie sich bei [Power Apps](https://make.powerapps.com/) an. Wenn Sie noch 
 
 3.  Klicken Sie auf der Seite **Eine neue App erstellen "** und geben Sie die folgenden Details ein und wählen dann **Fertig** aus: 
   - **Name**: Geben Sie einen Namen für die App ein, z. B. *Meine erste App*. 
-  - **Eindeutiger Name**: Standardmäßig verwendet der eindeutige Name den Namen, den Sie im Feld **Name** ohne Leerzeichen angegeben haben und der durch das Verlagspräfix und einen Unterstrich (_) eingeleitet wird. Zum Beispiel *crecf_Myfirstapp*. Weitere Informationen [Lösungsherausgeberpräfix ändern](../common-data-service/change-solution-publisher-prefix.md)
+  - **Eindeutiger Name**: Standardmäßig verwendet der eindeutige Name den Namen, den Sie im Feld **Name** ohne Leerzeichen angegeben haben und der durch das Verlegerpräfix und einen Unterstrich (_) eingeleitet wird. Zum Beispiel *crecf_Myfirstapp*. Weitere Informationen [Lösungsherausgeberpräfix ändern](../common-data-service/change-solution-publisher-prefix.md)
   - **Beschreibung**: Geben Sie eine kurze Beschreibung ein, um was es bei der App geht, wie *Dies ist meine erste App*.
 Informationen zu den zusätzlichen App-Eigenschaften finden Sie unter [Eine App erstellen](create-edit-app.md#create-an-app)
 

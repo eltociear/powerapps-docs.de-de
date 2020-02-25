@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 637ee2f171eaae493a219e245c2bf1147cd13bd2
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 54a2aeed489cf3e3621bcf21f5f6e0f12b15deff
+ms.sourcegitcommit: 2d21c2c65875f97dff6d5843611d4221a4282f22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867497"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027584"
 ---
 # <a name="show-or-hide-model-driven-app-form-elements"></a>Anzeigen oder verbergen von modellgesteuerten App-Formularelementen
 
@@ -36,7 +36,10 @@ ms.locfileid: "2867497"
 > [!NOTE]
 >  Das Ausblenden von Formularelementen ist keine empfohlene Möglichkeit zur Durchsetzung von Sicherheitsprinzipien. Es gibt verschiedene Möglichkeiten, mit denen Benutzer alle Elemente und Daten im Formular anzeigen können, wenn Elemente ausgeblendet werden. 
   
- Anstatt Formulare zu entwerfen, die von Skripts für die Sichtbarkeit von Optionen abhängen, sollten Sie überlegen, ob ein Geschäftsprozessfluss, ein Dialogfeld oder der Wechsel zu einem anderen Formular für Ihre Anforderungen die bessere Lösung sein könnte. Wenn Sie Skripts verwenden, sollten Sie sicherstellen, dass jedes Element, das möglicherweise ausgeblendet wird, standardmäßig ausgeblendet ist. Es sollte nur durch Skripte angezeigt werden, wenn Ihre Logik dies verlangt. Auf diese Weise wird es nicht in Präsentationen angezeigt, die keine Skripts unterstützen.  
+ Anstatt Formulare zu entwerfen, die von Skripts für die Sichtbarkeit von Optionen abhängen, sollten Sie überlegen, ob ein Geschäftsprozessfluss, ein Dialogfeld oder der Wechsel zu einem anderen Formular für Ihre Anforderungen die bessere Lösung sein könnte. Wenn Sie Skripts verwenden, sollten Sie sicherstellen, dass jedes Element, das möglicherweise ausgeblendet wird, standardmäßig ausgeblendet ist. Es sollte nur durch Skripte angezeigt werden, wenn Ihre Logik dies verlangt. Auf diese Weise wird es nicht in Präsentationen angezeigt, die keine Skripts unterstützen.
+ 
+ > [!NOTE]
+> In der vereinheitlichten Oberfläche wird bei Abschnitten, in denen sich Felder nicht über mehr als eine Spalte erstrecken, durch Ausblenden eines Feldes im Abschnitt das Feld darunter im Formular nach oben verschoben. Wenn sich ein Feld in einem Abschnitt über mehr als zwei Spalten erstreckt, wird durch das Ausblenden eines Feldes im Abschnitt, dem ein Steuerelement gegenüberliegt, das darunter liegende Feld im Formular nicht nach oben verschoben. Sie sehen zusätzlichen Leerraum an der Stelle, an der sich das versteckte Feld im Abschnitt befindet.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

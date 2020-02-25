@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 079aa0d3e55ea72a725023cd155f7269f345a8e2
-ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
+ms.openlocfilehash: beadf1822a46067efaa6b5a113338d85f40d153c
+ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2944302"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2944975"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Bedingte Vorgänge mithilfe der Web-API ausführen
 
@@ -44,8 +44,6 @@ Common Data Service generiert eine schwache Überprüfungs-`@odata.etag`-Eigensc
 ## <a name="if-match-and-if-none-match-headers"></a>"If-Match"- und "If-None-Match"-Kopfzeilen
 
 Verwenden Sie [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) und [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2)-Kopfzeilen mit ETag-Werten, um zu prüfen, ob die aktuelle Version einer Ressource mit der zuletzt abgerufenen Version, irgendeiner vorherigen Version oder mit keiner Version übereinstimmt.  Diese Vergleiche bilden die Grundlage bedingter Vorgangsunterstützung. Common Data Service stellt ETags bereit, um bedingte Abrufe, optimistische Parallelität und begrenzte upsert-Vorgänge zu unterstützen.
- 
-Abfragen angezeigt, die unter Umständen Sammlung-bewertete erweitern Navigationseigenschaften zwischengespeicherten Daten für diese Eigenschaften zurückgibt, die keine neuen Änderungen angezeigt. Es wird empfohlen, eine `If-None-Match`-Kopfzeile mit Wert `null` zu verwenden, um Browserzwischenspeichern zu überschrieben. Siehe [HTTP Headers](compose-http-requests-handle-errors.md#bkmk_headers) für weitere Details. Verwenden Sie `If-None-Match`-Kopfzeile mit einem bestimmten ETag-Wert, um sicherzustellen, dass nur Daten die zurückgegeben werden.
   
 > [!WARNING]
 > Der Clientcode sollte dem spezifischen Wert eines ETag keine Bedeutung geben, noch irgendeine offensichtliche Beziehung zwischen ETags außer Gleichheit und Ungleichheit. Beispielsweise wird nicht garantiert, dass ein ETag-Wert für eine aktuellere Version einer Ressource größer als der ETag-Wert für eine frühere Version ist. Außerdem kann der Algorithmus, der zum Generieren neuer ETag-Werte verwendet wird, ohne Vorankündigung zwischen Versionen eines Service geändert werden.  

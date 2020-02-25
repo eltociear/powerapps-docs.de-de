@@ -1,20 +1,20 @@
 ---
 title: Platzieren von Unterknoten mithilfe von Verknüpfungen für ein Portal | MicrosoftDocs
 description: Anweisungen für das Platzieren von untergeordneten Knoten mithilfe von Verknüpfungen für Portale
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2a9bd271c8aaa2f1dbc0278078868606fb4c64de
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e438803fa817d1b02a303a6a6e4873f2ba1e295f
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864960"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980567"
 ---
 # <a name="place-child-nodes-by-using-shortcuts-for-portals"></a>Platzieren von untergeordneten Knoten mithilfe von Verknüpfungen für Portale
 Verknüpfungen ermöglichen es, untergeordnete Knoten über die Siteübersicht im Portal zu platzieren, die dann einfach an anderen Knoten in der Siteübersicht oder auf externe URLs verweisen. Das bedeutet, Webseiten, Webdateien, Ereignisse und Foren können als feste Knoten für die Siteübersicht des Portals betrachtet werden. Sie werden zur Siteübersicht hinzugefügt, wenn Sie zu diesen navigieren; der tatsächliche Inhalt dieser Knoten wird direkt angezeigt. Verknüpfungen dagegen können als immaterielle Knoten betrachtet werden: Sie werden ebenfalls der Siteübersicht hinzugefügt (außer Weblinks, diese nicht), aber wenn Sie zu diesen navigieren, sehen sie den Inhalt für den festen Knoten, auf den die Verknüpfung verweist, wobei dieser Inhalt von der Seitenvorlage für jenen Knoten gerendert wird.

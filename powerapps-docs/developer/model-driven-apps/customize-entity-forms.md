@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d108949576e682e88a140f62426d4351cb3ef82c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5bec04a5f2104eb2dda3cc7515390c7d52573a7f
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748470"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012605"
 ---
 # <a name="customize-entity-forms"></a>Anpassen von Entitätsformularen
 
@@ -66,17 +66,79 @@ Formulare bieten die Benutzeroberfläche (UI), mit der Benutzer Entitätsdatens�
 |      `IsDefault`      |                       Nicht zutreffend                       |                                                                          Informationen, die angeben, ob es sich bei Formular oder Dashboard um den Systemstandard handelt.                                                                          |
 |        `Name`         |               `<LocalizedNames>`                |       `Name` ist eine Zeichenfolge und `<LocalizedNames>` enthält alle Bezeichnungen des lokalisierten Namens des Formulars.<br /><br /> Die lokalisierten Etiketten können mithilfe von <xref:Microsoft.Crm.Sdk.Messages.RetrieveLocLabelsRequest> abgerufen werden.       |
 |   `ObjectTypeCode`    | Das Formular stammt von dem `Entity`-Element. |                                                                                        Der `ObjectTypeCode`-Wert ist der logische Name der Entität.                                                                                         |
-|        `Type`         |       `<forms>`Element-`type`Attribute        |                                                       Gültige Werte für Formulare sind:<br /><br /> -   2: `main`<br />-   5: `mobile`<br />-   6: `quick`<br />-   7: `quickCreate`                                                        |
+|        `Type`         |       `<forms>` Element `type` Attribute        |                                                       Gültige Werte für Formulare sind:<br /><br /> -   2: `main`<br />-   5: `mobile`<br />-   6: `quick`<br />-   7: `quickCreate`                                                        |
 
 <a name="BKMK_CreateAndEditForms"></a>   
+
 ## <a name="create-and-edit-forms"></a>Erstellen und Bearbeiten von Formularen  
+
  Sie können neue Formulare für eine Entität nur erstellen, wenn <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>. <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanCreateForms> dies zulässt.  
 
  Sie können neue Formulare entweder mit einer <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> oder mit <xref:Microsoft.Crm.Sdk.Messages.CopySystemFormRequest> erstellen. Wenn Sie <xref:Microsoft.Crm.Sdk.Messages.CopySystemFormRequest> oder **Speichern unter** im Formulareditor verwenden, findet keine Vererbung zwischen den Formularen statt. Daher werden Änderungen am Basisformular nicht automatisch auf auf dessen Grundlage erstellte Formulare angewendet.  
 
  Das Ändern der Formulardefinitionen aus einer exportierten verwalteten Lösung und der anschließende erneute Import der Lösung ist das unterstützte Verfahren für die Bearbeitung von Entitätsformularen. Beik manuellen Bearbeiten von Formularen wird nachdrücklich empfohlen, einen XML-Editor zu verwenden, der die Schemaevaluierung ermöglicht. Weitere Informationen: [Bearbeiten der Anpassungs-XML-Datei mit Schemaüberprüfung](edit-customizations-xml-file-schema-validation.md).  
 
+## <a name="open-main-form-in-a-dialog-using-client-api"></a>Öffnen des Hauptformulars in einem Dialogfeld mithilfe der Client-API
+
+Um das Hauptformular in einem Dialogfeld mithilfe der Client-API zu öffnen, müssen Sie den Aufruf mithilfe der [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto) Methode aufrufen. Mit [der Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto) API-Methode können Sie das Dialogfeld mit mehreren Optionen öffnen, einschließlich Größe und Position.
+
+> [!IMPORTANT]
+> - Das geöffnete Hauptformular in einem Dialogfeld mit der Client-API befindet sich noch in der Vorschau.
+> - Die Vorschaufunktionen sind nicht für die Produktion vorgesehen und weisen möglicherweise eine eingeschränkte Funktionalität auf. Diese Funktionen stehen vor der offiziellen Version zur Verfügung, damit Kunden früher Zugriff darauf erhalten und Feedback geben können.
+
+
+> [!NOTE]
+> [Die Xrm.Navigation.openForm](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/openform) Methode wird nicht unterstützt, um ein Hauptformular als Dialog zu öffnen.
+
+## <a name="examples"></a>Beispiele
+
+### <a name="open-a-new-record"></a>Einen neuen Datensatz öffnen
+
+In diesem Beispiel öffnet das Dialogfeld ein neues Kontoformular zum Erstellen eines neuen Datensatzes. Das Dialogfeld wird in der Mitte angezeigt, indem bis zu 50 % des verfügbaren Fensters als Modal auf dem Formular verwendet werden, das aufgerufen oder aufgerufen wurde.
+
+```JavaScript
+Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 1, width: {value: 50, unit:"%"}});
+```
+> [!div class="mx-imgBorder"]
+> ![Einen neuen Datensatz öffnen](media/open-new-record-mfd.png "Einen neuen Datensatz öffnen")
+
+### <a name="open-an-existing-record"></a>Vorhandenen Datensatz öffnen
+
+In diesem Beispiel öffnet das Dialogfeld einen vorhandenen Firmendatensatz mit dem Kontoentitäts-ID-Wert über dem Kontaktformular. Ersetzen Sie die Entitäts-ID durch einen beliebigen Datensatz-ID-Wert, den Sie im Dialogfeld öffnen möchten.
+
+```JavaScript
+Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2, entityId:"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"}, {target: 2, position: 1, width: {value: 80, unit:"%"}});
+```
+> [!div class="mx-imgBorder"]
+> ![Vorhandenen Datensatz öffnen](media/open-existing-record-mfd.png "Vorhandenen Datensatz öffnen")
+
+### <a name="open-a-new-record-on-the-side-pane"></a>Öffnen eines neuen Datensatzes im Seitenbereich
+
+In diesem Beispiel öffnet das Dialogfeld einen neuen Datensatz in der rechten Ecke des Fensters. Dies kann durch die Verwendung der Pixeloptionen erreicht werden.
+
+```JavaScript
+Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 2, width: {value: 500, unit:"px"}});
+```
+> [!div class="mx-imgBorder"]
+> ![Öffnen eines bestehenden Datensatzes im Seitenbereich](media/open-record-side-pane-mfd.png "Öffnen eines bestehenden Datensatzes im Seitenbereich")
+
+### <a name="open-main-form-in-a-dialog-with-callback-method"></a>Hauptformular in einem Dialog mit Rückrufmethode öffnen
+
+Dieses Beispiel zeigt, wie ein Hauptformulardialog mit einer Rückrufmethode aufgerufen wird, nachdem ein Datensatz gespeichert und das Dialogfeld geschlossen wurde.
+
+```Javascript
+Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2},{target: 2, position: 2, width: {value: 80, unit:"%"}}).then(
+    function (retVal) {
+        console.log(retVal.savedEntityReference[0].id + ", " + retVal.savedEntityReference[0].name)
+    },
+    function (error) {
+        console.log(error);
+    });
+```
+
 ### <a name="see-also"></a>Siehe auch  
+
  [Erstellen und Gesalten von Formularen](../../maker/model-driven-apps/create-design-forms.md)   
  [SystemForm-Entität](../common-data-service/reference/entities/systemform.md)  
- [Formular-XML-Schema](form-xml-schema.md)
+ [Formular-XML-Schema](form-xml-schema.md)<br/>
+ [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto)

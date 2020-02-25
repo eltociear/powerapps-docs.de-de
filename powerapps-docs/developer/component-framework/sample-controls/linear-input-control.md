@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 131ca8fecf58477d9e51d2a31b53ad894c851f7f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 3be35f54e4f4371208bb521fcf9927c53b993b2c
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861952"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017418"
 ---
 # <a name="implementing-linear-input-component"></a>Implementieren der linearen Eingabekomponente
 
 Diese Beispielkomponente ändert die Benutzerfreundlichkeit beim Interagieren mit numerischen Typen im Formular. Anstatt die Zahlen einzugeben, stellt die lineare Eingangskomponente einen linearen Schieberegler zur Verfügung, mit dem der Wert des Attributs auf dem Formular eingestellt werden kann.  
 
-Um diese Komponente zu implementieren, müssen Sie zunächst die Datei [Manifest](../manifest-schema-reference/manifest.md) definieren, und sie implementieren die benutzerdefinierte Logik in TypeScript.
+Um diese Komponente zu implementieren, müssen Sie zunächst die Datei [Manifest](../manifest-schema-reference/manifest.md) definieren, und dann die benutzerdefinierte Logik in TypeScript implementieren. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_LinearInputControl) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Lineare Eingabekomponente](../media/linear-input-control.png "Lineare Eingabekomponente")

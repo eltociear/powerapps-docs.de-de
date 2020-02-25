@@ -1,20 +1,20 @@
 ---
 title: Hinzufügen eines Diagramms zu einem Portal | MicrosoftDocs
 description: Anweisungen, ein Diagramm, das in einer modellgesteuerten App erstellt wurde, zu einer Webseite im Portal hinzuzufügen.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
-ms.author: shjais
+ms.date: 01/29/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 3cc2e390b988689e9a21317d80aa7d94d2ea9e6d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3d9a2ec3ef4e2589c51717629213dfe73d3418eb
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760431"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012573"
 ---
 # <a name="add-a-chart-created-in-a-model-driven-app-to-a-webpage-in-portal"></a>Ein Diagramm, das in einer modellgesteuerten App erstellt wurde, zu einer Webseite im Portal hinzufügen
 
@@ -52,21 +52,20 @@ Sie können auch die ID einer Ansicht angeben (gespeicherte Anfrage), um die Abf
 
 Sie müssen den Ansichtseditor öffnen, um die Ansichts-ID abzurufen, die mit dem Liquid-Tag zu verwenden ist.
  
-1.  Gehen Sie zur Zielentität, beispielsweise **Vertrieb** > **Leads**
-2.  Wählen Sie die Ansicht, die Sie brauchen, in der Ansichtsdropdownkopfzeile aus.
-3.  Wählen Sie **Ansicht** in der Symbolleiste. Das Fenster "Ansicht" wird geöffnet.
+1. Gehen Sie zu make.powerapps.com und wählen Sie die entsprechende Umgebung aus.
+1. Wählen Sie in der linken Navigationsleiste die Option Daten > Entitäten.
+1. Wählen Sie die entsprechende Entität aus und wechseln Sie zur Registerkarte Ansichten.
+1. Sie können die Liste der Ansichten sehen. Gehen Sie zu den Optionen (...) und wählen Sie Ansicht bearbeiten.
+1. Kopieren Sie den ID-Wertaus der Adressleiste des Ansichtsfensters.
 
-    ![Öffnen Sie die Leads im Ansichtseditor](../media/dynamics365-chart-view.png "Öffnen Sie die Leads im Ansichtseditor")
+    ![Anzeigen ID des Formulars](../media/dynamics365-chart-viewid.png)
 
-4. Kopieren Sie den Wert von **ID** aus der URL des Ansichtsfensters.
+1. Fügen Sie diese ID in die Liquid-Tag-Diagrammdeklaration für den Ansichts-ID-Parameter ein, beispielsweise:
 
-    ![Abrufen der Ansichts-ID im Ansichtseditor](../media/dynamics365-chart-viewid.png "Abrufen der Ansichts-ID im Ansichtseditor")
-
-5. Fügen Sie diese ID in die Liquid-Tag-Diagrammdeklaration für den Ansichts-ID-Parameter ein, beispielsweise:
-
+    ```
     <!—Leads by Source – Open Leads -->
-
-    {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
+    {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001004" %}
+    ```
 
 ## <a name="entity-permission-requirement"></a>Entitätsberechtigung-Anforderung
 

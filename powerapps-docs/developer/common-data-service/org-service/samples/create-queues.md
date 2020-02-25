@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0850108fdc3eb45a8f6c585b7a16fff870cc22e0
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 3b980f388c8ea9227ad18d66548e8e2992281a6e
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934370"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956213"
 ---
-# <a name="create-a-queue"></a>Warteschlange erstellen
+# <a name="create-a-queue-early-bound"></a>Erstellen einer Warteschlange (mit früher Bindung)
 
 In diesem Beispiel wird gezeigt, wie Sie eine einfache Warteschlange erstellen und die erforderlichen Attribute mithilfe der Nachricht [IOrganizationService.Create](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9) festlegen.
 

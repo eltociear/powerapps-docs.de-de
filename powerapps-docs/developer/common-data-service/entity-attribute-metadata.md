@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 51f75af11ca276d96611fcaef29cc65db72e4c7c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0223157f7b37218f36c7eab969d6ec70cf98add5
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861783"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005042"
 ---
 <!-- This topic was not migrated it was written for Power Apps 
 Was Mike Carter
@@ -232,7 +232,7 @@ Weitere Informationen:
 
 #### <a name="use-the-web-api-to-retrieve-options"></a>Nutzen Sie den Web API, um Optionen abzurufen
 
-Der Web API stellt einen beruhigenden Stil zum Abfragen von Optionswerten bereit. Sie können diese lokalen bzw. globalen Optionen abrufen, indem Sie die Attribute innerhalb einer Entität abrufen. Im folgenden Beispiel gibt [OptionSetMetadata](/dynamics365/customer-engagement/web-api/optionsetmetadata) für die Optionen zurück, einschließlich [Konto](reference/entities/account.md).[AccountCategoryCode property](reference/entities/account.md#BKMK_AccountCategoryCode).
+Der Web API stellt einen beruhigenden Stil zum Abfragen von Optionswerten bereit. Sie können diese lokalen oder. globalen Optionen abrufen, indem Sie die Attribute innerhalb einer Entität abrufen. Im folgenden Beispiel gibt [OptionSetMetadata](/dynamics365/customer-engagement/web-api/optionsetmetadata) für die Optionen zurück, einschließlich [Konto](reference/entities/account.md).[AccountCategoryCode property](reference/entities/account.md#BKMK_AccountCategoryCode).
 
 `GET <organization url>/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes(LogicalName='accountcategorycode')/Microsoft.Dynamics.CRM.PicklistAttributeMetadata?$select=LogicalName&$expand=OptionSet`
 

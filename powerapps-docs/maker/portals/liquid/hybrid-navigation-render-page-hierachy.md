@@ -1,20 +1,20 @@
 ---
 title: Verwenden der Hybrid-Navigation zum Rendern der Seitenhierarchie für ein Portal | MicrosoftDocs
 description: Anleitungen zum Verwenden von Hybrid-Navigation zum Rendern der Seitenhierarchie für ein Portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: aace949be3cc191af5edd95c461e422b9c3217f5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2fa7927d13a7cb940bb1d2d9b1281110a196b48f
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708349"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978939"
 ---
 # <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>Rendern von bis zu drei Ebenen der Seitenhierarchie mithilfe der hybriden Navigation
 

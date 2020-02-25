@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 216199c227d0fd201d5ce14992a576e689b58296
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: c879f6d73e8ae8d2244e20080fdf64d376ff9bfd
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909095"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017449"
 ---
 # <a name="implementing-data-set-component"></a>Implementieren der Daten-Set-Komponente
 
-Diese Beispielkomponente zeigt, wie Sie die Benutzerfreundlichkeit beim Interagieren mit dem Dataset ändern. Zum Beispiel wird nur das Homepageraster auf einer Entitätshomepage als Tabelle angezeigt. Sie können Ihre Codekomponente erstellen, die die Daten nach Ihren Wünschen anzeigen kann. Dieses Beispiel veranschaulicht die Datensätze als Kacheln anstelle des regulären tabellarischen Rasters an.
+Diese Beispielkomponente zeigt, wie Sie die Benutzerfreundlichkeit beim Interagieren mit dem Dataset ändern. Zum Beispiel wird nur das Homepageraster auf einer Entitätshomepage als Tabelle angezeigt. Sie können Ihre Codekomponente erstellen, die die Daten nach Ihren Wünschen anzeigen kann. Dieses Beispiel veranschaulicht die Datensätze als Kacheln anstelle des regulären tabellarischen Rasters an. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_DataSetGrid) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Dataset-Rasterkomponente](../media/data-set-grid.png "Dataset-Rasterkomponente")

@@ -1,20 +1,20 @@
 ---
 title: Darstellung eines Website-Headers und einer primären Navigationsleiste in einem Portal | MicrosoftDocs
 description: Anweisungen und Beispielcode, eine Websitekopfzeile und eine primäre Navigationsleiste auf einem Portal zu rendern.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 3cfd5ced4da80cae70b4f51d81e30b0d909a81c3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d7725c5e577f7b2bc5f30d78cf3b13c6cd6d494d
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707865"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981051"
 ---
 # <a name="render-a-website-header-and-primary-navigation-bar"></a>Eine Websitekopfzeile und die primäre Navigationsleiste rendern.
 

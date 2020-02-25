@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 77d3e219adadec3baa01f1eacf014318062e3735
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 5e2f07225b842821a32ad6818842c8e08f1ab198
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934418"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956225"
 ---
 # <a name="sample-audit-user-access"></a>Beispiel: Überwachung von Benutzerzugriffen
 
@@ -46,7 +46,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Ermittelt die ID der Organisation aus dem Systembenutzerdatensatz und ruft den Unternehmensdatensatz ab.
+1. Ruft die ID der Organisation aus dem Systembenutzersatz ab und ruft den Organisationsdatensatz ab.
 2. Aktiviert die Überwachung der Organisation, inklusive der Überwachung des Benutzerzugriffs.
 3. Stellt eine Aktualisierungsanforderung an die Accountentität, die durch die Überwachung nachverfolgt werden soll.
 4. setzen Sie die Organisations- und Kontoüberprüfungsflags wieder auf alte Werte und rufen Sie sie ab, wenn sie tatsächlich geändert wurden.

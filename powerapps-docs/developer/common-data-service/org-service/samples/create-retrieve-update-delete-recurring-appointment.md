@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7dd9cfec4eff14c8d5575be6c5c2279958242ecb
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 08789d9be9b093428733ab13424a75e307504bdd
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934351"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005057"
 ---
 # <a name="sample-create-retrieve-update-and-delete-a-recurring-appointment"></a>Beispiel: Einen wiederkehrenden Termin erstellen, abbrufen, aktualisieren und löschen
 
@@ -53,7 +53,7 @@ Prüft auf aktuelle Version der Organisation.
 1. Definierne Sie anonyme Typen , um die möglichen Werte für Wiederholungsmuster, mögliche Werte für Wochentage und mögliche Werte für den Serienregel-Muster-Endtyp zu definieren. 
 1. Die `RecurringAppointmentMaster`-Methode erstellt einen Serientermin.
 1. Die `QueryExpression`-Methode ruft den neu erstellten Serientermin ab.
-1. Die `Update`-Methode aktualisiert das Thema, die Anzahl der Vorkommnisse auf 5, das Terminintervall auf 2 für den abgerufenen wiederkehrenden Termin.
+1. Die `Update` Methode aktualisiert das Thema, die Anzahl der Vorkommnisse auf 5, das Terminintervall auf 2 für den abgerufenen wiederkehrenden Termin.
 
 
 ### <a name="clean-up"></a>Bereinigung

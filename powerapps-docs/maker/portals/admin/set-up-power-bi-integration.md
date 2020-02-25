@@ -1,20 +1,20 @@
 ---
 title: Einrichten der Power BI-Integration mit Ihrem Portal | MicrosoftDocs
 description: Informationen zum Einrichten der Power BI-Integration mit dem Portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: f307e84ccfae749b86b34f787716b80784c8c617
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 18ae2abded4208a3caf2e02408c4cf0eef7af09f
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867145"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978631"
 ---
 # <a name="set-up-power-bi-integration"></a>Power BI-Integration einrichten
 

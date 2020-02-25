@@ -1,20 +1,20 @@
 ---
 title: Erstellen und Verwalten von Veröffentlichungsstatus in Power Apps-Portalen | MicrosoftDocs
 description: Erfahren Sie, wie Sie in einem Portal Veröffentlichungsstatus erstellen und verwalten.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 5ba33887a0b99cc3ddf1eb118ca506a9b740d015
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 6daf92aa4d821b66b8388826d69dcb8bbd99ddb4
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883904"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980523"
 ---
 # <a name="create-and-manage-publishing-states"></a>Erstellen und Verwalten von Veröffentlichungsstatus
 

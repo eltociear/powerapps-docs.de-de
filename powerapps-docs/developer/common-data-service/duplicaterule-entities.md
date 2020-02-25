@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7434dd58137919d81486539d1ab843ad0c4aaf1f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 428b801f1868a4b25870f4da4cf7ee52d8adc7b2
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748222"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005079"
 ---
 # <a name="duplicate-rule-entities"></a>Duplikatregelentitäten
 
@@ -125,7 +125,7 @@ Die folgenden Sondermeldungen können auch verwendet werden:
 
 ## <a name="duplicaterulecondition-special-messages"></a>DuplicateRuleCondition-Sondermeldungen
 
-[DuplicateRuleCondition](/reference/entities/duplicaterulecondition.md) ist eine untergeordnete Entität zu `DuplicateRule`. Der Zugriff, um diese Entitäten anzuzeigen oder zu ändern, hängt vom Zugriff auf die `DuplicateRule` an, der sie zugeordnet ist. Weitere Informationen: [DuplicateRuleCondition-Nachrichten](/reference/entities/duplicaterulecondition.md#messages)
+[DuplicateRuleCondition](/reference/entities/duplicaterulecondition.md) ist eine untergeordnete Entität zu `DuplicateRule`. Der Zugriff, zum Anzeigen oder Ändern dieser Entitäten hängt vom Zugriff auf die `DuplicateRule` ab, der sie zugeordnet ist. Weitere Informationen: [DuplicateRuleCondition-Nachrichten](/reference/entities/duplicaterulecondition.md#messages)
 
 Die folgenden Sondermeldungen können auch verwendet werden:
 

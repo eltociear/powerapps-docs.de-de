@@ -1,26 +1,34 @@
 ---
 title: Verwenden von OAuth 2.0, um den Flow mit IHrem Portal zu gewährleisten| MicrosoftDocs
 description: Erfahren Sie, wie Sie clientseitige Aufrufe an externe APIs durchführen und diese mit Hilfe des Flows zur implizierten OAuth-Genehmigung in Ihrem Portal sichern können.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/24/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 9c4ea4e34dacf70a9bb51c28c5761700904a3053
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a69d77122a6beb657a322da156e3cf895b5bec36
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862179"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988032"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>Verwenden des Flows zur implizierten OAuth 2.0-Genehmigung innerhalb des Portals 
 
 Mit dieser Funktion können Kunden clientseitige Aufrufe von externen APIs durchführen und sichern, indem sie den Flow zur implizierten OAuth-Genehmigung verwenden. Er bietet einen Endpunkt, um sichere Zugriffstoken zu erhalten, die die Benutzeridentitätsinformationen enthalten, die von externen APIs für die Autorisierung gemäß des Flows zur implizierten OAuth 2.0-Genehmigung verwendet werden müssen. Die Identitätsinformationen eines angemeldeten Benutzers werden in eine sichere Weise an externe AJAX-Aufrufe übergeben. Dieses Vorgehen hilft nicht nur Entwicklern, den Authentifizierungskontext zu übergeben, sondern hilft auch Benutzern, ihre APIs mit dieser Funktion zu sichern.
 
 Der Flows zur implizierten OAuth 2.0-Genehmigung unterstützt Endpunkte, die ein Client aufrufen kann, um ein ID-Token abzurufen. Zwei Endpunkte werden zu diesem Zweck verwendet: [authorize](#authorize-endpoint-details) und [token](#token-endpoint-details).
+
+> [!NOTE]
+> Power Apps-Portale unterstützt folgende OpenIdConnect-Flows und Antworttypen:
+>
+> - **Impliziter Flow** mit Antworttypen *id_token* oder *id_token token*.
+> - **Hybridfluss** mit Antworttyp *code id_token*.
+>
+> **Autorisierungscodefluss** mit Antworttyp *Code* wird **nicht unterstützt**. Weitere Informationen finden Sie unter [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html#Authentication)-Dokumentation zur Authentifizierung.
 
 ## <a name="authorize-endpoint-details"></a>Details zum authorize-Endpunkt 
 

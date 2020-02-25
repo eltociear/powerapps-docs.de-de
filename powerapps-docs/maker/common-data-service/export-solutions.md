@@ -2,7 +2,7 @@
 title: Exportieren von Lösungen | MicrosoftDocs
 description: Erfahren Sie, wie eine Lösung exportiert in Power Apps exportiert wird
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ab3bc284b6bc9e6749d8aabae5e0fbd7a1edbec
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 496cc3bcf55dfdff26a51f221df7b22d5ac7479f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914335"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017664"
 ---
 # <a name="export-solutions"></a>Exportieren von Lösungen  
  Wir empfehlen Ihnen, eine nicht verwaltete Lösung zu erstellen, die Sie für den Export Ihrer Anpassungen verwenden können. Exportieren Sie dann Ihre Anpassungen regelmäßig, so dass Sie ein Backup haben, falls etwas passiert. Verwaltete Lösungen können nicht exportiert werden. Sie können entweder Lösungen von Power Apps exportieren oder mit der klassischen Erfahrung exportieren. 
@@ -34,18 +34,26 @@ ms.locfileid: "2914335"
 > [!IMPORTANT]
 > Der Export der Standardlösung wird nicht unterstützt. 
 
-### <a name="export-from-power-apps"></a>Exportieren von Power Apps aus
+## <a name="export-from-power-apps"></a>Exportieren von Power Apps aus
   
-1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.   
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** in der linken Navigation.   
   
-2.  Wählen Sie in der Liste die Lösung aus, die Sie exportieren möchten, und wählen Sie dann **Export**. 
+2.  Wählen Sie in der Lösungsliste die nicht verwaltete Lösung aus, die Sie exportieren möchten, und klicken Sie dann auf **Export**. Beachten Sie, verwaltete Lösungen können nicht exportiert werden. 
 
-3.  Wählen Sie den Pakettyp **nicht verwaltet** oder **verwaltet** aus. Dies startet den Export, der mehrere Minuten dauern kann, um den Vorgang abzuschließen. Nach Abschluss ist die Exportzip-datei im Downloadordner verfügbar, der über den Webbrowser angegeben ist.
+3. Der rechte Bereich **Bevor Sie exportieren** wird angezeigt. Wählen Sie aus den folgenden Optionen und wählen Sie **Weiter**:  
+    - **Veröffentlichen Sie alle Änderungen**. Lösungskomponenten müssen veröffentlicht werden, bevor sie exportiert werden können. 
+    - **Auf Probleme überprüfen**. Führen Sie die Lösungsprüfung für die Lösung aus, um Leistungs- und Stabilitätsprobleme zu erkennen.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Lösung exportieren](media/solution-export.png "Lösung exportieren") 
+4.  Der rechte Bereich **Diese Lösung exportieren** wird angezeigt. Geben Sie die folgenden Optionen ein oder wählen Sie sie aus, und wählen Sie dann aus **Export**:  
+    - **Versionsnummer** : Power Apps erhöht automatisch Ihre Lösungsversion, während die aktuelle Version angezeigt wird. Sie können die Standardversion akzeptieren oder eine eigene eingeben. 
+    - **Exportieren als**: Wählen Sie den Pakettyp, entweder **verwaltet** oder **nicht verwaltet** aus. 
 
-### <a name="export-from-the-classic-experience"></a>Export in der klassischen Erfahrung
+   <!-- UI has changed  [!div class="mx-imgBorder"]  
+    > ![Export solution](media/solution-export.png "Export solution")  -->
+
+Der Export kann einige Minuten dauern. Nach Abschluss ist die Exportzip-datei im Downloadordner verfügbar, der über den Webbrowser angegeben ist.
+
+## <a name="export-from-the-classic-experience"></a>Export in der klassischen Erfahrung
 
 1.  Wählen Sie **Lösungen** in der linken Navigation und dann **Zu den Klassiker wechseln**. 
   
@@ -69,7 +77,7 @@ ms.locfileid: "2914335"
 
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
-## <a name="settings-options-for-solution-export"></a>Einstellungsoptionen für den Lösungsexport  
+### <a name="settings-options-for-solution-export"></a>Einstellungsoptionen für den Lösungsexport  
  Wenn Sie die Lösung von Power Apps exportieren, beachten Sie bitte diesen Abschnitt nicht. In der folgenden Tabelle sind die verfügbaren Optionen beim Export von Lösungen in der klassischen Erfahrung aufgeführt.  
   
 |Gruppe|Einstellung|Beschreibung|  
@@ -120,7 +128,7 @@ ms.locfileid: "2914335"
 |Intervall für automatische Kennzeichnung|Normale Abruffrequenz für die automatische Kennzeichnung von E-Mails in Outlook.|  
 |ISV-Konfiguration|Servicekalender-Darstellungs-Konfiguration|Sie können visuelle Stile für Servicekalender definieren.
 
-Weitere Informationen:   [Servicekalender-Darstellungs-Konfiguration](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)|
+Weitere Informationen:   [Servicekalender-Darstellungs-Konfiguration](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)
 
 ### <a name="see-also"></a>Siehe auch
 [Lösung importieren](import-update-export-solutions.md) <br />

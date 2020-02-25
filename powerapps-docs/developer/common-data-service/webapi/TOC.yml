@@ -80,6 +80,8 @@
   items:
     - name: Erste Schritte
       href: discover-url-organization-web-api.md
+    - name: 'Ändern Sie Ihren Code, um den globalen Suchdienst zu verwenden'
+      href: discovery-orgsdk-to-webapi.md
     - name: 'Globaler Discovery Service Beispiel (C#)'
       href: samples/global-discovery-service-csharp.md
 - name: Web-API-Versionen und -Einschränkungen

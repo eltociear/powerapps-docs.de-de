@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 95850e967347040618f7b445df7bd802bb5e33bb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 56214c61e3440b3612a4b4433cefdb22162a5e31
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748285"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004970"
 ---
 # <a name="handle-exceptions-in-plug-ins"></a>Behandlung von Ausnahmen in Plug-ins
 
@@ -33,7 +33,7 @@ Ihr Code kann dazu führen, dass der aktuelle Verarbeitungsvorgang der Nachricht
 
 Wenn Ihre Geschäftslogik vorschreibt, dass der Vorgang abgebrochen werden soll, sollten Sie eine <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException>-Ausnahme auslösen und eine Nachricht bereitstellen, um zu erklären, warum der Vorgang abgebrochen wurde.
 
-Idealerweise sollten Sie nur Vorgänge mithilfe synchroner Plug-Ins abbrechen, die in der Phase **PreValidation** registriert wurden. Diese Phase erfolgt *gewöhnlich* außerhalb der Hauptdatenbanktransaktion. Das Abbrechen eines Vorgangs, bevor er die Transaktion erreicht, ist hoch erwünscht, da der abgebrochene Vorgang zurückgesetzt werden muss. Der Rollback des Vorgangs erfordert beträchtliche Ressourcen und wirkt sich auf die Systemleistung aus. Vorgänge in den Phasen **PreOperation** und **PostOperation** befinden sich immer innerhalb der Datenbanktransaktion.
+Idealerweise sollten Sie nur Vorgänge mithilfe synchroner Plug-Ins abbrechen, die in der Phase **PreValidation** registriert wurden. Diese Phase erfolgt *gewöhnlich* außerhalb der Hauptdatenbanktransaktion. Das Abbrechen eines Vorgangs, bevor er die Transaktion erreicht, ist sehr erwünscht, da der abgebrochene Vorgang zurückgesetzt werden muss. Der Rollback des Vorgangs erfordert beträchtliche Ressourcen und wirkt sich auf die Systemleistung aus. Vorgänge in den Phasen **PreOperation** und **PostOperation** befinden sich immer innerhalb der Datenbanktransaktion.
 
 Manchmal sind **PreValidation**-Phasen innerhalb einer Transaktion, wenn sie von Logik in einem anderen Vorgang initiiert sind. Wenn Sie beispielsweise einen Aufgabenentitätsdatensatz in der Phase **PreOperation** der Erstellung einer Firma erstellen, wird die Aufgabenerstellung durch die Ereignisausführungspipeline übergeben und wird innerhalb der Phase **PreValidation** erfolgen. Sie wird aber ein Bestandteil der Transaktion sein, durch den der Firmaenentitätsdatensatz erstellt wird. -Sie können feststellen, ob sich ein Vorgang innerhalb einer Transaktion befindet anhand des Werts der <xref:Microsoft.Xrm.Sdk.IExecutionContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.IsInTransaction> -Eigenschaft verfügbar.
 

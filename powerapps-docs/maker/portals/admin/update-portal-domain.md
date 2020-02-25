@@ -1,20 +1,20 @@
 ---
 title: Aktualisierung von Dynamics 365-Domäne auf Power Apps-Portaldomäne | Microsoft-Dokumentation
 description: Anleitungen zum Aktualisieren von Dynamics 365-Domäne auf Power Apps-Portaldomäne.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: b65ffaad5bebc7b5237f74dd09f96e2462d3fba7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cddb04f048c9af2a3c5873577a36a3929d6c6a34
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867057"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978587"
 ---
 # <a name="update-to-power-apps-portals-domain"></a>Aktualisierung auf Power Apps-Portaldomäne
 

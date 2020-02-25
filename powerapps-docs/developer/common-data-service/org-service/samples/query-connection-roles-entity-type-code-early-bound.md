@@ -1,6 +1,6 @@
 ---
 title: 'Beispiel: Abfrageverbindungsrollen mithilfe von Entitätstypcode (Common Data Service) | Microsoft-Dokumentation'
-description: In diesem Beispiel wird gezeigt, wie Sie einen Verbindungsrolle abfragen
+description: Dieses Beispiel zeigt, wie man eine Verbindungsro
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe9e2d9ec06a6248bbe8f2d432fcee3decaf9e4c
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 25432f43350b6c32dc31a87f913233c3e71bd427
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934262"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956189"
 ---
-# <a name="sample-query-connection-roles-by-entity-type-code"></a>Beispiel: Abfragen von Verbindungsrollen nach Entitätstypcode
+# <a name="sample-query-connection-roles-by-entity-type-code-early-bound"></a>Beispiel: Abfragenverbindungsrollen mithilfe von Entitätstypcode (frühe Bindung)
 
 Dieses Beispiel zeigt, wie Sie eine Abfrage verwenden können, um eine Verbindungsrolle für eine Firmenentität zu suchen, indem Sie einen Entitätstypcode angeben. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryRoleByEntityType) herunterladen.
 

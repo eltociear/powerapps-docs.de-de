@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f18141c5937d5ca46013e8865c9fb50bc2a6f5b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f05345c50f5f1e907f17147a9006ca9eed29c09d
+ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752970"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "2957600"
 ---
 # <a name="image-attributes"></a>Bildattribute
 
@@ -262,8 +262,7 @@ byte[]
 In der oben genannten Anfrage wird der nächste Block von Daten hochgeladen. Wenn alle Bilddaten vom Webdienst empfangen wurden, wird eine Miniaturansicht automatisch vom Webdienst erstellt.
 
 ### <a name="see-also"></a>Siehe auch  
-[Beispiel: Festlegen und Abrufen von Entitätsbildern](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
 [Dateiattribute](file-attributes.md)  
 [Einführung in Entitäten in Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entities)   
- [Einführung in die Entitätsattribute in Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entity-attributes)   
- [Beispiel: Festlegen und Abrufen von Entitätsbildern](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
+[Einführung in die Entitätsattribute in Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entity-attributes)   
+[Beispiel: Festlegen und Abrufen von Entitätsbildern](/dynamics365/customerengagement/on-premises/developer/sample-set-retrieve-entity-images)

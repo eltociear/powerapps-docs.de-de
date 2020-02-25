@@ -28,6 +28,8 @@
           href: business-logic/set-timeout-for-external-calls-from-plug-ins.md
         - name: InvalidPluginExecutionExceptionException in Plugins und Workflow-Aktivitäten verwenden
           href: business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities.md
+        - name: 'Verifizieren Sie die Zertifizierungsabhängigkeiten für Plug-ins, die ausgehende Aufrufe tätigen'
+          href: business-logic/verify-certification-dependencies.md
     - name: Verwenden von Daten mit Code
       href: work-with-data/index.md
       items:

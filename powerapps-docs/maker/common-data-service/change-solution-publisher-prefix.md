@@ -1,7 +1,7 @@
 ---
-title: So ändern Sie das Lösungsherausgeberpräfix | MicrosoftDocs
+title: Lösungsherausgeber Übersicht | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/11/2018
+ms.date: 02/03/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -20,46 +20,50 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f78aefd09433c956d278db7d1c7ae209b5239450
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b54afabbed9e7dfcc53fe887f600593e77a02a7f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861689"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017568"
 ---
-# <a name="change-the-solution-publisher-prefix"></a>Ändern des Lösungsherausgeberpräfix
+# <a name="solution-publisher-overview"></a>Lösungsherausgeber Übersicht
 
-Alle Anpassungen, die Sie vornehmen, ist Teil einer Lösung. Jede Lösung hat einen Herausgeber. Standardmäßig ist die Lösung, die Sie in Power Apps bearbeiten, die **Common Data Service-Standardlösung** die dem **Common Data Service-Standardherausgeber** zugeordnet ist.
+Jede App, die Sie erstellen, ist Teil einer Lösung. Jede Lösung hat einen Herausgeber. Sie geben den Herausgeber an, wenn Sie eine Lösung erstellen. 
 
-Das Standardanpassungspräfix wird zufällig für diesen Herausgeber zugewiesen, und ist beispielsweise`cr8a3`. Das bedeutet, dass der Name jedes neuen Artikels der Metadaten, die für die Organisation erstellt wurden, diese Endung im Namen hat, um die Elemente eindeutig zu identifizieren. Wenn Sie eine neue Entität namens **Tier** erstellen, lautet der eindeutige Name, der von Common Data Service verwendet wird, `cr8a3_animal`. Dasselbe gilt für alle neuen Felder (Attribute), Beziehungen oder optionset Optionen.
+> [!div class="mx-imgBorder"] 
+> <img src="media/solution-publisher-select.png" alt="Select solution publisher" height="731" width="416">
 
-Ausgenommen Sie werden die Lösung verteilen, so dass sie zusammen mit Metadatenelementen installiert wird, die für einen anderen Lösungsherausgeber erstellt wurden, ist es nicht wichtig, wie der Anpassungspräfix lautet. Es ist für die meisten Benutzer nicht sichtbar, die Ihre Apps verwenden. Aber er ist für Entwickler und andere technische Personen verfügbar, die beispielsweise Berichte erstellen. Damit kann schnell nachvollzogen werden, welche Lösung dem Element hinzugefügt wurde.
+Die Lösungsherausgeber gibt an, wer die App entwickelt hat. Das Präfix gibt schnell an, wie man versteht, welche Lösung dem Element hinzugefügt wurde. Aus diesen Gründen sollten Sie ein Lösungsherausgeber erstellen und ein aussagekräftiges Präfix angeben. Dies ist besonders wichtig, wenn Metadatenelemente aus importierten Lösungen angezeigt werden. Beispielsweise wird die Lösung verwendet, die die Fundraiser-Beispiel-App enthält und *Beispiel* als Verleger-Präfix verwendet. 
 
-Aus diesem Grund werden viele Benutzer das Lösungsherausgeberpräfix ändern, sodass es mehr aussagt, besonders wenn Metadatenelemente angezeigt werden, die auch diese wichtigen Informationen von anderen Lösungen enthalten. 
+> [!div class="mx-imgBorder"] 
+> ![Fundraiser-Lösungsherausgeberpräfix](media/fundraiser-sample-app-prefix.png)
 
 > [!NOTE]
-> Wenn Sie das Lösungsherausgeberpräfix ändern, sollten Sie diese Schritte ausführen, bevor Sie neue Metadatenelemente erstellen. Sie können die Namen von Metadaten-Elementen ändern.
-> Wenn Sie den Wert ändern, gehen Sie zum nächsten Feld weiter. Die Option **Wert Präfix** generiert automatisch eine Nummer auf der Grundlage des Anpassungspräfixes. Diese Nummer wird verwendet, wenn Sie Optionen zu Optionssätzen hinzufügen, und zeigt an, welche Lösung zum Hinzufügen der Option verwendet wurde. 
+> Wenn Sie ein Lösungsherausgeberpräfix ändern, sollten Sie diese Schritte ausführen, bevor Sie neue Metadatenelemente erstellen. Sie können die Namen von Metadaten-Elementen ändern. 
 
-## <a name="change-the-solution-publisher-prefix-for-the-common-data-service-default-publisher"></a>So ändern Sie das Lösungsherausgeberpräfix für den Common Data Service-Standardherausgeber  
+## <a name="common-data-services-default-solution"></a>Common Data Service Standardlösung
+Die Standardlösung in Power Apps ist die Common Data Service Standardlösung, die mit dem Common Data Service Standardverleger assoziiert ist. Das Standardverlegerpräfix wird zufällig für diesen Herausgeber zugewiesen, und lautet beispielsweise *cr8a3*. Das bedeutet, dass der Name jedes neuen Artikels der Metadaten in der Standardlösung, die für die Organisation erstellt wurden, diese Endung im Namen hat, um die Elemente eindeutig zu identifizieren. Wenn Sie eine neue Entität mit Namen *Animal* erstellen, wäre der eindeutige Name, der von Common Data Service verwendet wird *cr8a3_animal*. Dasselbe gilt für alle neuen Felder (Attribute), Beziehungen oder optionset Optionen. Wenn Sie die Standardlösung anpassen, sollten Sie das Publisher-Präfix ändern. 
 
- 1. Im Power Apps-Portal wählen Sie **Modellgesteuert** in der unteren linken Ecke.
- 2. Klicken Sie auf **Erweitert** in der linken Navigation, um **Common Data Service-Standardlösung zu öffnen**
- 3. Klicken Sie im Lösungsexplorer und wählen Sie **Informationen** im linken Navigationsbereich aus.
- 4. Klicken Sie auf den Link **Herausgeber**, um das Formular **Common Data Service-Standardherausgeber** zu öffnen.
- 5. Bearbeiten Sie den **Präfix** Feldwer zum Anpassungspräfix, den Sie verwenden möchten.
- 6. Klicken Sie auf **Speichern und schließen**.
-  
-## <a name="change-the-solution-publisher-prefix-for-any-publisher"></a>So ändern Sie das Lösungsherausgeberpräfix für einen Herausgeber
+## <a name="create-a-solution-publisher"></a>Erstellen eines Lösungsherausgebers
+1.  Wählen Sie im Power Apps Portal **Einstellungen** (Zahnrad) und wählen Sie **Erweiterte Einstellungen**. 
+2.  Wählen Sie **Einstellungen** > **Anpassungen** > **Veeöffentlicher**. 
+3.  In der Befehlsleiste **Publisher-Hauptansicht** wählen Sie **Neu**. 
+4.  Geben Sie die erforderlichen Informationen ein: 
+   - **Anzeigename**: Geben Sie den Anzeigename für den Herausgeber ein. 
+   - **Name** Geben Sie den eindeutigen Anzeigename für den Herausgeber ein. 
+   - **Präfix**. Geben Sie das gewünschte Herausgeber-Präfix ein. 
+   -    **Optionswertpräfix**. Dieses Feld generiert eine Nummer basierend auf dem Verleger-Präfix. Diese Nummer wird verwendet, wenn Sie Optionen zu Optionssätzen hinzufügen, und zeigt an, welche Lösung zum Hinzufügen der Option verwendet wurde. 
+   - **Kontaktdetails**. Optional können Sie Kontakt- und Adressinformationen hinzufügen.
+5. Klicken Sie auf **Speichern und schließen**.
 
-Personen, die Ihre Lösungen verteilen, arbeiten in der Regel in einer Lösung, die sie erstellen und weniger der **Common Data Service-Standardlösung**. Der Anpassungspräfix wird in der Regel festgelegt, wenn sie die Lösung erstellen. Sie können das Anpassungspräfix für eine andere nicht verwaltete Lösung ändern, mit der Sie Arbeiten mit folgenden Schritten: 
+## <a name="change-a-solution-publisher"></a>Ändern eines Lösungsherausgebers
+Sie können einen Lösungsherausgeber für eine nicht verwaltete Lösung ändern, indem Sie die folgenden Schritte ausführen:
+1.  In dem Power Apps Portal wählen Sie **Lösungen**, und wählen **…** neben der gewünschten Lösung wählen Sie **Einstellungen**. 
+2.  In dem **Lösungseinstellungen** Bereich wählen Sie **Herausgeber bearbeiten**. 
+3.  Bearbeiten Sie die Felder**Anzeigename** und **Präfix** und geben die gewünschten Werte ein. Das Feld **Option Wertpräfix** generiert eine Nummer basierend auf dem Verleger-Präfix. Diese Nummer wird verwendet, wenn Sie Optionen zu Optionssätzen hinzufügen, und zeigt an, welche Lösung zum Hinzufügen der Option verwendet wurde. 
+4.  Zusätzlich zum Präfix können Sie auch den Lösungsherausgeber-Anzeigename, Kontaktinformationen und Adresse im Abschnitt **Kontaktdetails** ändern. 
+5.  Klicken Sie auf **Speichern und schließen**.
 
- 1. Im Power Apps-Portal wählen Sie **Modellgesteuert** in der unteren linken Ecke.
- 2. Klicken Sie auf **Erweitert** in der linken Navigation, um **Common Data Service-Standardlösung zu öffnen**
- 3. Bearbeiten Sie die URL der Seite, um alles nach zu `dynamics.com` entfernen und laden Sie die Seite erneut.
- 4. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**. 
- 5. Klicken Sie auf **Veröffentlichen**. Sie können eine Liste der verfügbaren Herausgeber sehen.
- 6. Doppelklicken Sie in der Liste auf das entsprechende Feld, um das zu bearbeitende Formular zu öffnen.
- 7. Bearbeiten Sie den **Präfix** Feldwer zum Anpassungspräfix, den Sie verwenden möchten.
- 6. Klicken Sie auf **Speichern und schließen**.
-  
+### <a name="see-also"></a>Siehe auch
+[Erstellen einer Lösung](create-solution.md)

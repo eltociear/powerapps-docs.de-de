@@ -1,20 +1,20 @@
 ---
 title: Identitätsanbieter nach Azure AD B2C migrieren | MicrosoftDocs
 description: Identitätsanbieter nach Azure AD B2C migrieren.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a57398d08e190140a3383aef29825f4c08e90363
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 30051019d90bc042ceb50ef486fb184da39a8892
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708877"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980127"
 ---
 # <a name="migrate-identity-providers-to-azure-ad-b2c"></a>Identitätsanbieter nach Azure AD B2C migrieren
 

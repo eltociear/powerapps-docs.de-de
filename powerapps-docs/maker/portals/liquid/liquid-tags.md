@@ -1,20 +1,20 @@
 ---
 title: Verwenden von Liquid-Tags für ein Portal | MicrosoftDocs
 description: Lesen Sie mehr zu den verfügbaren Liquid-Tags in einem Portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: b04c6447911d1a884627bd2cbb4ad7b74b9c5ce5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3f85e4b86b305696f5b155c7e9e3b773f8ba2103
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708129"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981095"
 ---
 # <a name="available-liquid-tags"></a>Verfügbare Liquid-Tags
 

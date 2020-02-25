@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
-ms.openlocfilehash: 9b19028b8daa24d9a76692baf59121e6089b46f0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bc22e8dd153396d4cbcac8715c0b04c49b246ac5
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861964"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017439"
 ---
 # <a name="implementing-formatting-api-component"></a>Implementieren der Formatierung der API-Komponente
 
-Diese Beispielkomponente untersucht die verschiedenen Methoden, die als Teil der Power Apps Component Framework Navigation API verfügbar sind.Im vorliegenden Beispiel, erstellen Sie eine von Eingabeelementen, die in die jeweiligen Methoden der Formatierung-API anrufen, die dem angezeigten Wert entsprechen.
+Diese Beispielkomponente untersucht die verschiedenen Methoden, die als Teil der Power Apps Component Framework Navigation API verfügbar sind.Im vorliegenden Beispiel, erstellen Sie eine von Eingabeelementen, die in die jeweiligen Methoden der Formatierung-API anrufen, die dem angezeigten Wert entsprechen. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_FormattingAPI) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Formatieren der API-Komponente](../media/formatting-api.png "Formatieren der API-Komponente")

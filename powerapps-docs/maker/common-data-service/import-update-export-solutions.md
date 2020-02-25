@@ -2,7 +2,7 @@
 title: Lösungen importieren | Microsoft-Dokumentation
 description: Erfahren Sie, wie eine Lösung in Power Apps importiert wird
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,29 +22,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0eb65eb9ac1240769ba0cc885cb9c2e30a8f83f9
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 504e66801c122810da12810d9b19e5069136f7d6
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909458"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017619"
 ---
 # <a name="import-solutions"></a>Lösung importieren 
 
  Sie können Lösungen mithilfe der unten angegebenen Schritte manuell importieren. Importieren Sie nur Lösungen, die von einer vertrauenswürdigen Quelle stammen. Anpassungen können Code enthalten, durch den Daten an externe Quellen gesendet werden.   
   
-1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** in der linken Navigation.  
   
-2.  Wählen Sie in der Lösungsliste die Option **Import** aus.  
+2.  Wählen Sie in der Befehlsleiste **Importieren**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Importieren einer Lösung](media/solution-import.png "Importieren einer Lösung") 
   
-3.  Navigieren Sie im Dialogfeld **Lösung importieren** , wählen Sie Schritt **Lösungspaket auswählen** und **wählen die Datei**, gehen Sie zur komprimierten Datei (ZIP- oder CAB-Datei), die die Lösung enthält, die Sie importieren möchten. 
+3.  Auf der Seite **Lösungspaket auswählen** wählen Sie komprimierte Datei (.ZIP oder .CAB) **suchen**, die die Lösung enthält, die Sie importieren möchten. 
   
 4.  Wählen Sie **Weiter**.  
   
-5.  Informationen über eine vorgeschlagene Lösung anzeigen. Klicken Sie auf **Importieren**.  
+5.  Informationen darüber, wie die Lösung angezeigt wird. Klicken Sie auf **Importieren**.  
   
 6. Möglicherweise müssen Sie einige Momente beim Lösungsimport warten. Anzeigen der Ergebnisse und wählen Sie dann **Schließen** aus.  
   

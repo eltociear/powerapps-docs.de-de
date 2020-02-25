@@ -10,10 +10,10 @@
       href: promote-email-message.md
     - name: Abrufen von E-Mail-Anlagen für eine E-Mail-Vorlage
       href: retrieve-email-attachments-email-template.md
-    - name: Senden einer E-Mail mit Hilfe einer Vorlage
-      href: send-email-template.md
     - name: Eine E-Mail senden
       href: send-email.md
+    - name: Senden einer E-Mail mit Hilfe einer Vorlage
+      href: send-email-template.md
     - name: Senden von Massen-E-Mails und Überwachen der Ergebnisse
       href: send-bulk-email-monitor-results.md
     - name: 'Hochladen, Abrufen und Herunterladen einer Anlage'
@@ -22,10 +22,14 @@
       href: work-activity-party-records.md
 - name: Verwaltung und Sicherheit
   items:
-    - name: Zuordnen einer Sicherheitsrolle zu einem Team
+    - name: Dem Team eine Sicherheitsrolle zuweisen
       href: associate-security-role-team.md
+    - name: Sicherheitsrolle einem Benutzer zuweisen
+      href: associate-security-role-user.md
     - name: 'Bestimmen, ob ein Benutzer über eine Rolle verfügt'
       href: determine-whether-user-has-role.md
+    - name: Einen Benutzer deaktivieren oder aktivieren
+      href: disable-a-user.md
     - name: Entfernen einer Rolle für einen Benutzer
       href: remove-role-for-user.md
     - name: Lizenzinformationen abrufen
@@ -108,6 +112,8 @@
       href: query-connection-roles-entity-type-code-early-bound.md
     - name: Abfragen von Verbindungen durch reziproke Rollen
       href: query-connections-reciprocal-roles-early-bound.md
+    - name: Aktualisieren einer Verbindungsrolle
+      href: update-connection-role.md
 - name: Währung
   items:
     - name: Abrufen von Wechselkursen
@@ -116,6 +122,12 @@
   items:
     - name: Erstellen einer benutzerdefinierten Aktivität
       href: create-custom-activity.md
+    - name: Erstellen und Abrufen von Entitätsbeziehungen
+      href: create-retrieve-entity-relationships.md
+    - name: Erstellen und Aktualisieren einer E-Mail-fähigen Entität
+      href: create-update-emailable-entity.md
+    - name: Erstellen und Aktualisieren von Entitätsmetadaten
+      href: create-update-entity-metadata.md
     - name: Setzen von Attributmetadaten in eine Datei
       href: dump-attribute-metadata.md
     - name: Speichern von Entitätsmetadaten in einer Datei
@@ -126,8 +138,16 @@
       href: dump-entity-relationships.md
     - name: Attributauswahllisteninformationen in einer Datei ablegen
       href: dump-picklist-information.md
+    - name: Informationen über globale Optionssätze in eine Datei ausgeben
+      href: dump-global-option-set.md
+    - name: Exportieren von Menübanddefinitionen
+      href: export-ribbon-definitions.md
     - name: Abrufen gültiger Statusübergänge
       href: retrieve-valid-status-transitions.md
+    - name: Verwenden von Attributen
+      href: work-with-attributes.md
+    - name: Arbeit mit Optionssätzen
+      href: work-with-option-sets.md
 - name: Duplikaterkennung
   items:
     - name: Erkennen von mehreren doppelten Datensätzen
@@ -138,6 +158,8 @@
       href: use-duplicate-detection-when-creating-and-updating-records.md
 - name: Entitätsdatensätze
   items:
+    - name: Einen Datensatz einem neuen Besitzer zuweisen
+      href: assign-record-to-new-owner.md
     - name: Zuweisen eines Datensatzes an einem Team
       href: assign-records-to-team.md
     - name: Erstellen und Aktualisieren von Datensätzen mit verknüpften Datensätzen
@@ -168,12 +190,12 @@
       href: use-optimistic-concurrency-update-delete-operations.md
 - name: Sicherheit auf Feldebene
   items:
+    - name: Aktivierung der Feldsicherheit für eine Entität
+      href: enable-field-security-entity.md
     - name: Abrufen von Feldberechtigungen
       href: retrieve-field-permissions.md
     - name: Abrufen von Feldfreigabedatensätzen
       href: retrieve-field-sharing-records.md
-    - name: Aktivierung der Feldsicherheit für eine Entität
-      href: enable-field-security-entity.md
 - name: Zielverwaltung
   items:
     - name: Rollup-Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz
@@ -190,6 +212,10 @@
       href: export-import-data-map.md
     - name: Importieren von Daten mit Hilfe der komplexen Datenzuordnung
       href: import-data-complex-data-map.md
+- name: Outlook
+  items:
+    - name: Erstellen und Abrufen von Outlook-Filtern
+      href: create-retrieve-outlook-filters.md
 - name: Plug-Ins
   items:
     - name: Erstellen eines grundlegenden Plug-Ins
@@ -212,8 +238,18 @@
       href: delete-queues.md
     - name: Freigabe eines Warteschlangenelements für die Warteschlange
       href: release-queue-item-queue-early-bound.md
+    - name: Eine Warteschlange freigeben
+      href: share-queue.md
     - name: Ein zu bearbeitendes Warteschlangenelement angeben
       href: specify-queue-item-work-early-bound.md
+- name: Berichte
+  items:
+    - name: Berichtshistorienlimit erhalten
+      href: get-report-history-limit.md
+    - name: Bericht für die Organisation verfügbar oder nicht verfügbar machen
+      href: make-report-available-to-organization.md
+    - name: Einen Bericht veröffentlichen
+      href: publish-report.md
 - name: SharePoint
   items:
     - name: Abruf der absoluten URL und der Websitesammlungs-URL eines Ortsdatensatzes
@@ -222,6 +258,8 @@
   items:
     - name: Ausführen mehrerer Anforderungen
       href: execute-multiple-requests.md
+    - name: Ausführen mehrerer Anfragen in der Transaktion
+      href: execute-multiple-transaction.md
 - name: Lösungen
   items:
     - name: Mit Lösungen arbeiten
@@ -250,9 +288,11 @@
       href: use-aggregation-fetchxml.md
     - name: Verwenden von FetchXML mit einem Auslagerungscookie
       href: use-fetchxml-paging-cookie.md
-- name: WebResources
+- name: Webressourcen
   items:
     - name: Importieren von Dateien als Webressourcen
       href: import-files-as-web-resources.md
+- name: Workflow-Operationen
+  href: workflow-operations.md
 - name: Zugreifen auf den Suchdienst
   href: access-discovery-service.md

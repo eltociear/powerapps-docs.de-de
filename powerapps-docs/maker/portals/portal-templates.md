@@ -1,20 +1,20 @@
 ---
 title: Portalvorlagen verfügbar unter Power Apps | Microsoft Docs
 description: Erfahren Sie mehr über die verschiedenen Portalvorlagen, die unter Power Apps verfügbar sind.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: f37769e63d6231869aedfd83e834ffcdd86062ea
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: ec678eccc0c4321db0576821035f714590b13b89
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884515"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981447"
 ---
 # <a name="portal-templates"></a>Portalvorlagen
 

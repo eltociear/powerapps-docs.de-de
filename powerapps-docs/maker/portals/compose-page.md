@@ -1,20 +1,20 @@
 ---
 title: Erstellen von Webseiten | Microsoft Docs
 description: Anweisungen zum Erstellen von Webseiten im Portal.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: a6affbb0d13af137ddd044a7ae4b6d2cddbf813c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.date: 01/10/2020
+ms.author: tapanm
+ms.reviewer: tapanm
+ms.openlocfilehash: ec982dded0d67719effc0c2b0b4faecc19e656b8
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862442"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979775"
 ---
 # <a name="compose-a-page"></a>Erstellen einer Seite
 
@@ -197,13 +197,16 @@ Sie können die folgenden Komponenten auf einer Webseite hinzufügen.
 
     - **Höhe**: Geben Sie die Höhe des IFrames ein.
 
-    - **Link**: Geben Sie die URL der Website ein, die im IFrame angezeigt werden soll. Nur gesicherte Links werden akzeptiert – d. h. https:// ist erforderlich. Standardmäßig ist <https://www.bing.com> als Wert verfügbar.
+        > [!NOTE]
+        > Sie können auch den IFrame auf der Canvas auswählen und die Ziehpunkte ziehen, um seine Größe zu ändern.
 
+    - **Link**: Geben Sie die URL der Website ein, die im IFrame angezeigt werden soll. Nur gesicherte Links werden akzeptiert – d. h. https:// ist erforderlich. Standardmäßig ist <https://www.bing.com> als Wert verfügbar.
+    
         > [!div class=mx-imgBorder]
         > ![IFrame-Eigenschaften](media/iframe-props.png "iFrame-Eigenschaften")  
 
-    > [!NOTE]
-    > Sie können auch den IFrame auf der Canvas auswählen und die Ziehpunkte ziehen, um seine Größe zu ändern.
+> [!NOTE]
+> Sie können auch [Power Virtual Agent](https://docs.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents) Bot dem IFrame in ähnlicher Weise mit Schritten wie beschrieben in [Bot einer Website hinzufügen](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-web-channels#custom-website) hinzufügen.
 
 ### <a name="add-form"></a>Hinzufügen eines Formulars
 

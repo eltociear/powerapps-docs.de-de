@@ -43,8 +43,8 @@
               href: page-large-result-sets-with-queryexpression.md
             - name: 'Verwenden einer linken äußeren Verknüpfung in QueryExpression für Abfragen nach Datensätzen, die „nicht in“ sind.'
               href: use-left-outer-join-queryexpression-query-records-not-in.md
-            - name: Verwenden der QueryByAttribute-Klasse
-              href: use-querybyattribute-class.md
+        - name: Verwenden der QueryByAttribute-Klasse
+          href: use-querybyattribute-class.md
     - name: Entitäten erstellen
       href: entity-operations-create.md
     - name: Eine Entität abrufen

@@ -1,29 +1,29 @@
 ---
-title: Web-API Globaler Discovery Service-Beispiel (C#) (Common Data Service) | Microsoft-Dokumentation
-description: Dieses Beispiel zeigt, wie Sie den Web API Global Discovery Service nutzen
+title: 'Global Discovery Service-Beispiel (C #) (Common Data Service) | Microsoft Docs'
+description: Dieses Beispiel zeigt, wie Sie über die OData V4 RESTful API auf den globalen Ermittlungsdienst zugreifen
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 1/16/2020
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
-manager: ryjones
+manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 057810ed53433f29b2f514b20b3b20cbbfd3f919
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 11c2d71263ac9c60e9dc88b00f78da81755d40f0
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909296"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975713"
 ---
-# <a name="web-api-global-discovery-service-sample-c"></a>Web API Globaler Discovery Service Beispiel (C#)
+# <a name="global-discovery-service-sample-c"></a>Globaler Discovery Service Beispiel (C#)
 
-Dieses Beispiel zeigt, wie Sie den Web API Global Discovery Service nutzen
+Dieses Beispiel zeigt, wie Sie über die OData V4 RESTful API auf den Ermittlungsdienst zugreifen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 
@@ -40,13 +40,13 @@ Stattdessen wird es nur die Anmeldeinformationen und das clientid nutzen.
 
 ### <a name="demonstrates"></a>Demonstriert
 
-In diesem Beispiel wird ein HttpClient verwendet, um mithilfe von ADAL (v2.29) die Authentifizierung zu nutzen und den Global Discovery Service anzurufen, um die Informationen über verfügbare Instanzen anzurufen, mit der Benutzer eine Verbindung herstellen können.
+In diesem Beispiel wird ein HttpClient verwendet, um mithilfe von ADAL (v2.29) die Authentifizierung zu nutzen und den Globalen Ermittlungsdienst anzurufen, um die Informationen über verfügbare Instanzen anzurufen, mit der Benutzer eine Verbindung herstellen können.
 
 Das Beispiel hängt von der `GetInstances` Methode und der `Instance` Klasse unten ab:
 
 ```csharp
     /// <summary>
-    /// Uses the global web api discovery service to return instances
+    /// Uses the Discovery Service to return organization instances.
     /// </summary>
     /// <param name="clientId">The Azure AD client (app) registration</param>
     /// <param name="username">The user name</param>
@@ -93,7 +93,7 @@ Das Beispiel hängt von der `GetInstances` Methode und der `Instance` Klasse unt
 
 ```csharp
 /// <summary>
-  /// Object returned by the discovery service
+  /// Object returned from the Discovery Service.
   /// </summary>
   class Instance
   {

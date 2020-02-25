@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren der OpenID Connect-Anbietereinstellungen für ein Portal | MicrosoftDoc
 description: Anweisungen, OpenID Connect-Providereinstellungen für ein Portal hinzuzufügen und zu konfigurieren.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2b4d31165ccd12b2cb5c8c2a4c8ec6f9dd04a7c7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b36150e7193975305fb8a478852070628268d4ee
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755353"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979203"
 ---
 # <a name="configure-open-id-connect-provider-settings-for-portals"></a>Konfigurieren von OpenID Connect-Anbietereinstellungen für Portale
 
@@ -30,7 +30,7 @@ Jeder OpenID Connect-Anbieter einbezieht auch das Registrieren einer Anwendung (
 > [!Note]
 > Der Google OpenID-Endpunkt wird derzeit nicht unterstützt, da sich die zugrunde liegenden Bibliotheken in den Anfangsstadien der Veröffentlichung befinden und Kompatibilitätsprobleme noch nicht augeschlossen sind. Der [OAuth2-Anbietereinstellungen für Portale](configure-oauth2-settings.md)-Endpunkt kann stattdessen verwendet werden.
 
-## <a name="openid-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>OpenID-Einstellungen für [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
+## <a name="openid-settings-for-pn-azure-active-directory"></a>OpenID-Einstellungen für [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
 
 Um sich am [[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] Management Portal](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal) anzumelden und ein vorhandenes Verzeichnis zu erstellen oder auszuwählen. Wenn kein Verzeichnis verfügbar ist, folgen Sie den Anweisungen zum [Hinzufügen einer Anwendung](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) zu einem Verzeichnis.  
 

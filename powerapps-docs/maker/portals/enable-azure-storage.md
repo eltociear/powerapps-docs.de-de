@@ -1,20 +1,20 @@
 ---
 title: Aktivieren von Azure Storage für Portale | Microsoft-Dokumentation
 description: Anweisungen zum Aktivieren von Azure-Speicherung für Portale, um die größere Speicherungsfunktion von Azure zu nutzen.
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/07/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 38705c143fdf3e85ec18f60c20423cc404aee043
-ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
+ms.openlocfilehash: 8575bdc4379091204dbdfe4fd04d9d2d56a06cc9
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2936101"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2976827"
 ---
 # <a name="enable-azure-storage"></a>Aktivieren von Azure Storage
 

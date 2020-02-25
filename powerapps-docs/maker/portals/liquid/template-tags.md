@@ -1,24 +1,90 @@
 ---
 title: Vorlagen-Tags für ein Portal verwenden | MicrosoftDocs
 description: Lesen Sie mehr zu den verschiedenen verfügbaren Vorlage-Tags in einem Portal
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/24/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 951b4055aa47a6fba31df5473bd517ed67c8f17d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: a152fc23b71b2e564bad28a9f1717c15acfe9a60
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873219"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2987985"
 ---
 # <a name="template-tags"></a>Vorlagentags
 
 Vorlagentags steuern die Ausgabe einer Vorlage auf verschiedene Arten und ermöglichen die Kombinationen mehrerer Vorlagen in einer einzigen Ausgabe.
+
+## <a name="fetchxml"></a>fetchxml
+
+Ermöglicht es dem Benutzer, Daten aus dem CDS abzufragen und die Ergebnisse auf einer Seite darzustellen.
+
+> [!NOTE]
+> Mehr über die Abfrage der Daten mit fetchxml erfahren Sie unter [Daten mit FetchXML abfragen ](https://docs.microsoft.com/powerapps/developer/common-data-service/use-fetchxml-construct-query).
+
+```
+{% fetchxml resultVariable %}
+<!— Fetchxml query -->
+...
+{% endfetchxml %}
+```
+
+### <a name="results-attribute"></a>Ergebnis-Attribut
+
+Das Ergebnis-Attribut in der bereitgestellten Variable (wie z. B. 'resultVariable' in obigem Beispiel) enthält FetchXML-Abfrageergebnisse und einige andere Attribute.
+
+- *Entitäten*
+
+    Dieses Attribut enthält das Ergebnis der fetchxml-Abfrage. Sie können das Ergebnis iterieren und in Ihrer Webvorlage verwenden.
+
+    ```
+    <table> 
+    {% for entityVariable in resultVariable.results.entities %} 
+    <tr> 
+    <td>Attribut-1: {{ entityVariable.attribute1 }}</td> 
+    <td>Attribut-2: {{ entityVariable.attribute2 }}</td> 
+    </tr> 
+    {% endfor %} 
+    </table> 
+    ```
+
+- *EntityName*
+
+    Ruft den logischen Namen der Entität ab.
+
+- *ExtensionData*
+
+    Ruft die Struktur ab, die zusätzliche Daten enthält.
+
+- *MinActiveRowVersion*
+
+    Ruft den niedrigsten aktiven Zeilenversionswert ab.
+
+- *MoreRecords*
+
+    Ruft ab, ob mehr Datensätze verfügbar sind.
+
+- *PagingCookie*
+
+    Ruft die aktuellen Paging-Informationen ab.
+
+- *TotalRecordCount*
+
+    Ruft die Gesamtzahl der Datensätze in der Sammlung ab. <br/>
+    ReturnTotalRecordCount war wahr, als die Abfrage ausgeführt wurde.
+
+- *TotalRecordCountLimitExceeded*
+
+    Ruft ab, ob das Ergebnis der Abfrage die Gesamtzahl der Datensätze überschreitet.
+
+### <a name="xml-attribute"></a>XML-Attribut
+
+Das XML-Attribut in der bereitgestellten Variable (wie z. B. 'resultVariable' in obigem Beispiel) enthält die resultierende Abfrage, die verwendet werden kann, um Daten von Common Data Service zu erhalten. Dieses Attribut ist für Debugging-Zwecke nützlich, wenn Sie verstehen wollen, wie die Entitätsberechtigung auf dieses *fetchxml*-Tag angewendet wird.  
 
 ## <a name="include"></a>einschließlich
 

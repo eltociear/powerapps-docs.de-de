@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 714ac2ede999e423ef310a2d0fe738bc6bad97da
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a029fa57a3caf02414e20127ba24dc961c85551b
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753642"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004960"
 ---
 # <a name="web-api-types-and-operations"></a>Internet API-Typen und -Vorgänge
 
@@ -256,7 +256,7 @@ OData unterstützt eine Vielzahl von Datentypen, Common Data Service unterstütz
 |ManagedProperty|Nicht verfügbar|Nur zur internen Verwendung|  
 |Memo|Edm.String|Reihenfolge von UTF-8-Zeichen|  
 |Zahlung|Edm.Decimal|Numerische Werte mit fester Genauigkeit und Skala|  
-|Eigentümer|einzelwertige Navigationseigenschaften|Ein Verweis auf <xref href="Microsoft.Dynamics.CRM.principal?text=principal EntityType" />. Systemuser- und Team-Entitättypen erben ihre ownerid-Eigenschaft vom prinzipalen Entitätstyp.|  
+|Eigentümer|einzelwertige Navigationseigenschaften|Ein Verweis auf <xref href="Microsoft.Dynamics.CRM.principal?text=principal EntityType" />. Sowohl Systembenutzer- als auch Team-Entitätstypen erben ihre ownerid-Eigenschaft vom Haupt-Entitätstyp.|  
 |Bei Auswahllistenattributen ist keine Texteingabe möglich.|Edm.Int32|32-Bit-Ganzzahl|  
 |Status|Edm.Int32|32-Bit-Ganzzahl|  
 |Status|Edm.Int32|32-Bit-Ganzzahl|  

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ca0c34bfb12ba417c14426cbb14dc2382d8ffc55
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 8cf5d26243fe3c4f19eebebcdaea64477e364552
+ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883548"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2944987"
 ---
 # <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Bewährte Methoden und Anleitungen zur Plug-In- und Workflow-Entwicklung für den Common Data Service
 
@@ -33,7 +33,7 @@ Diese Liste enthält alle Anleitungen und bewährte Methoden für die Plug-In- u
 
 |Bewährte Methode  |Beschreibung  |
 |---------|---------|
-|[Vermeiden Sie die Verwendung von Batch-Requesttypen in Plugins und Workflow-Aktivitäten.](avoid-batch-requests-plugin.md)     |Sie sollten die Nachrichtenanforderungsklassen ExecuteMultipleRequest oder ExecuteTransactionRequest nicht im Rahmen einer Plug-in- oder Workflow-Aktivität verwenden.         |
+|[Vermeiden Sie die Verwendung von Batch-Requesttypen in Plugins und Workflow-Aktivitäten.](avoid-batch-requests-plugin.md)|Sie sollten die Nachrichtenanforderungsklassen ExecuteMultipleRequest oder ExecuteTransactionRequest nicht im Rahmen einer Plug-in- oder Workflow-Aktivität verwenden.|
 |[Entwicklung von IPlugin-Implementierungen als zustandslose Systeme](develop-iplugin-implementations-stateless.md)     |Mitglieder von Klassen, die IPlugin implementieren, sind potenziellen Thread-Sicherheitsproblemen ausgesetzt, die zu Dateninkonsistenz- oder Performanceproblemen führen können.         |
 |[Keine Registrierung von Plug-in-Schritten duplizieren](do-not-duplicate-plugin-step-registration.md)     |Die Registrierung eines doppelten Plug-in-Schrittes bewirkt, dass das Plug-in bei derselben Nachricht/Ereignis mehrmals ausgelöst wird.         |
 |[Verwenden Sie keine parallele Ausführung in Plug-Ins und Workflow-Aktivitäten](do-not-use-parallel-execution-in-plug-ins.md)|Multithreading oder paralleles Threading in Plug-Ins oder benutzerdefinierten Workflowaktivitäten wird nicht unterstützt.|
@@ -45,6 +45,7 @@ Diese Liste enthält alle Anleitungen und bewährte Methoden für die Plug-In- u
 |[KeepAlive auf falsch setzen, wenn Sie mit externen Hosts in einem Plug-in interagieren](set-keepalive-false-interacting-external-hosts-plugin.md)     |Die KeepAlive-Eigenschaft, die im HTTP-Request-Header auf true gesetzt oder nicht explizit als false definiert ist, kann zu längeren Ausführungszeiten von Plug-Ins führen.         |
 |[Timeout einstellen bei externen Anrufen in einem Plugin](set-timeout-for-external-calls-from-plug-ins.md)     |Begrenzen Sie den Zeitraum, in dem externe Anrufe eine Antwort innerhalb von Plugins erwarten.|   
 |[InvalidPluginExecutionExceptionException in Plugins und Workflow-Aktivitäten verwenden](use-invalidpluginexecutionexception-plugin-workflow-activities.md)     |Verwenden Sie InvalidPluginExecutionExceptionException, wenn Sie im Rahmen einer Plug-in- oder Workflow-Aktivität Fehler melden.         |
+|[Überprüfen von Zertifizierungsabhängigkeiten für Plug-Ins, die ausgehende Anrufe tätigen](verify-certification-dependencies.md)|Stellen Sie sicher, dass alle Zertifikate, von denen Ihr Code für ausgehende Anrufe abhängt, über eine gültige Kette von Zertifikaten verfügen.|
 
 ### <a name="see-also"></a>Siehe auch
 

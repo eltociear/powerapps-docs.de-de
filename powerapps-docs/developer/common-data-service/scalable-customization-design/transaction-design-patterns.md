@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bbf96b3d9dbe1daa1b0d4538a0dc58dda8dfb9cd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fa1c5e62abfa63e3a5c11f0498dab54a3b4eaeec
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748646"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005094"
 ---
 # <a name="scalable-customization-design-transaction-design-patterns"></a>Skalierbares Anpassungsdesign: Transaktionsdesign-Muster
 
@@ -160,7 +160,7 @@ Obwohl es wichtig ist, den Nutzen eines Common Data Service-Systems nicht zu ver
  
 Wenn wir jedes Mal, wenn wir eine Aufgabe erstellen, auch den Benutzerdatensatz mit der Anzahl der Aufgaben aktualisieren, die sie derzeit zugewiesen haben, könnte dies zu einer sekundären Sperrebene führen, da der Benutzerdatensatz nun ebenfalls stark beansprucht werden würde. Es würde eine weitere Ressource hinzufügen, die jede Anforderung möglicherweise blockieren und warten muss, obwohl sie nicht unbedingt kritisch für die Aktion ist. In diesem Beispiel sollten Sie sorgfältig prüfen, ob die Speicherung der Anzahl der Aufgaben für den Benutzer wichtig ist oder ob die Anzahl bei Bedarf berechnet oder an anderer Stelle gespeichert werden kann, z. B. durch die native Verwendung von Hierarchie- und Rollup-Feldfunktionen in Common Data Service. 
 
-![Problembeispiel mit Anzeige unnötiger Updates](media/only-update-things-you-need-to.png)
+![Problembeispiel, das unnötige Updates zeigt](media/only-update-things-you-need-to.png)
 
 Wie später gezeigt wird, kann die Aktualisierung der Systembenutzerdatensätze aus Sicht der Skalierbarkeit negative Folgen haben. 
 

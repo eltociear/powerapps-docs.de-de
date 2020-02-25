@@ -1,20 +1,20 @@
 ---
 title: Aktivieren von Mehrsprachenportalunterstützung | MicrosoftDocs
 description: Anweisungen, wie Sie mehrere Sprachen für ein Portal aktivieren und Inhalte in mehreren Sprachen erstellen können.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: f8da1ac4be7098fc712faef82f6c9566d5f10512
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a91ffe1c00b7dbcc40b786731e956bfdd8fc6d94
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760454"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012723"
 ---
 # <a name="enable-multiple-language-portal-support"></a>Aktivieren von Mehrsprachenportalunterstützung
 Unternehmen sind nicht auf eine Region oder eine Sprache beschränkt. Ein einzelnes Portal kann Inhalte in mehreren Sprachen anzeigen, um Kunden auf der ganzen Welt zu erreichen. Der Inhalt des Portals kann in mehreren Sprachen unter Beibehaltung einer einzelnen Inhaltshierarchie übersetzt werden.
@@ -32,6 +32,8 @@ Um mehrere Sprachen für ein Portal zu aktivieren, folgenden Sie diesen Schritte
    ![Fügen Sie eine neue Portalsprache hinzu](../media/add-new-portal-language.png "Fügen Sie eine neue Portalsprache hinzu")
 
    ![Festlegen der Standardsprache für Ihr Portal](../media/set-default-language-portal.png "Festlegen der Standardsprache für Ihr Portal")
+
+   ![Unterstützte Sprachen](../media/supported-languages.png "Unterstützte Sprachen")
 
 > [!Note]
 > Wenn Sie neue Sprachen aktivieren, nachdem das Portal bereitgestellt wurde, können Sie [Metadatenübersetzungen importieren](../admin/import-metadata-translation.md), um die Metadaten, die für die neu aktivierten Sprachen übersetzt wurden abzurufen.

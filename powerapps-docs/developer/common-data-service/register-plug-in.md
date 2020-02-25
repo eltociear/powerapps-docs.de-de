@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 893e10844ee6e4c5f4e35b228d23ddf06e3c90e7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: bba0a473d76fc69832e05ec316a6ed6da6ad899d
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748659"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975741"
 ---
 # <a name="register-a-plug-in"></a>Registrieren eines Plug-Ins
 
@@ -77,7 +77,7 @@ Sie können Informationen zu registrierten Assemblys im Anwendungsprojektmappen-
 
 ![Alle Lösungen – intern](media/all-solutions-internal-view.png)
 
-Hier können Sie alle Assemblys suchen, die für diese Umgebung registriert sind.
+Nachdem Sie den Namen der Standardlösung in der internen Lösungsliste ausgewählt haben, finden Sie alle Assemblies, die für diese Umgebung registriert sind.
 
 ![Alle registrierten Assemblys anzeigen](media/view-plug-in-assemblies-default-solution.png)
 
@@ -134,7 +134,7 @@ Weitere Informationen: [Verwendung von FetchXML mit FetchExpression](org-service
 
 Wie in [Anzeigen registrierter Assemblys](#view-registered-assemblies) beschrieben, wurde die Assemblyregistrierung, die Sie erstellt haben, der **Standardlösung** des Systems hinzugefügt. Sie sollten die Assembly einer nicht verwalteten Lösung hinzufügen, sodass Sie sie an andere Organisationen verteilen können.
 
-Innerhalb der nicht verwalteten Lösung, die Sie verwenden, wechseln Sie mithilfe des Projektmappen-Explorers zu **Plug-In-Assemblys**. Wählen Sie im Listenmenü **Vorh. hinzufügen** aus.
+Innerhalb der nicht verwalteten Lösung, die Sie verwenden, wechseln Sie mithilfe des Projektmappen-Explorers zu **Plug-In-Assemblys**. Wählen Sie im Listenmenü **Vorh. hinzufügen** aus. Beachten Sie, dass in den folgenden Abbildungen eine benutzerdefinierte Lösung mit dem Namen Common Data Service Standardlösung verwendet wird.
 
 ![Hinzufügen einer vorhandenen Plug-In-Assembly](media/add-existing-plug-in-assembly.png)
 
@@ -294,7 +294,7 @@ Das PRT bietet Befehle zum Aufheben der Registrierung von Assemblys, Typen, Schr
 
 Dies sind Löschvorgänge für die Entitäten [PluginAssembly](reference/entities/pluginassembly.md), [PluginType](reference/entities/plugintype.md), [SdkMessageProcessingStep](reference/entities/sdkmessageprocessingstep.md) und [SdkMessageProcessingStepImage](reference/entities/sdkmessageprocessingstepimage.md).
 
-Sie können auch **Plug-In-Assemblys** und **SDK-Nachrichtenverarbeitungsschritte** im Projektmappen-Explorer löschen, um dasselbe Ergebnis zu erzielen.
+Sie können auch **Plug-In-Assemblys** und **SDK-Nachrichtenverarbeitungsschritte** im Projektmappen-Explorer löschen, um dasselbe Ergebnis zu erzielen. In der Abbildung unten wird eine benutzerdefinierte Lösung mit dem Namen Common Data Service Standardlösung angezeigt.
 
 ![Löschen eines Schritts im Projektmappen-Explorer](media/delete-sdk-message-processing-step.png)
 

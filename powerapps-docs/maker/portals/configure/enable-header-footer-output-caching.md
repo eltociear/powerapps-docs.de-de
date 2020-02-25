@@ -1,20 +1,20 @@
 ---
 title: Aktivieren des Zwischenspeicherns von Kopf- undFußzeilenausgaben in einem Portal | MicrosoftDocs
 description: Anweisungen zum Aktivieren des Zwischenspeicherns von Kopfzeilen- und Fußzeilenausgaben in einem Portal für vorhandene Benutzer.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/11/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 705035ef04fd728f9e9e99462b32c62985db2a23
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: e7a112c722e284f9060696d0fac5a3389b47b0d3
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2817961"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977091"
 ---
 # <a name="enable-header-and-footer-output-caching-on-a-portal"></a>Aktivieren des Zwischenspeicherns von Kopfzeilen- undFußzeilenausgaben in einem Portal
 

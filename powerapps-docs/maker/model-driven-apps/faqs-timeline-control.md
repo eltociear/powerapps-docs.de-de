@@ -1,7 +1,7 @@
 ---
 title: FAQs für Zeitskala-Steuerelement (Abschnitt) in Power Apps | Microsoft-Dokumentation
 description: FAQs für Zeitskala-Steuerelement (Abschnitt) in Power Apps
-ms.date: 12/23/2019
+ms.date: 02/03/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4851f4e5dc173f8861db0ba0b761e01f2537b0e8
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924402"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013055"
 ---
 # <a name="faqs-for-timeline-control"></a>FAQs für Zeitskala-Steuerelement
 
@@ -93,6 +93,11 @@ Wenn Sie die Regel **HideCustomActions** zum Ausblenden von Schaltflächen in de
 **Sie verfügen über keine Berechtigung zum Ausführen dieser Aktion. Wenden Sie sich an den Systemadministrator.**
 
 Blenden Sie die Schaltflächen in den Befehlsleistendefinitionen ein, um das Problem zu beheben.
+
+
+## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>Warum sehen meine Benutzer unterschiedliche Aktivitäten und Datensätze in ihrem Stream Meine Aktivitäten im Dashboard?
+
+Der Stream **Meine Aktivitäten** im Dashboard zeigt die Datensätze und Aktivitäten an, die einem bestimmten Benutzer gehören. Zum Beispiel Benutzer **A** sieht Datensätze und Aktivitäten, die Eigentum von **A** sind und Benutzer **B** sieht Datensätze und Aktivitäten, die Eigentum von **B** sind.
 
 ## <a name="see-also"></a>Siehe auch
 

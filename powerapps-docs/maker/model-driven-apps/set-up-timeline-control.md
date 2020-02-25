@@ -1,7 +1,7 @@
 ---
 title: Richten Sie das Zeitskala-Steuerelement (Abschnitt) ein in PowerApps | MicrosoftDocs
 description: Erfahren Sie , wie Sie das Zeitskala-Steuerelement (Abschnitt) in PowerApps einrichten
-ms.date: 12/23/2019
+ms.date: 02/03/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,19 +12,28 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 10c526c8e8df192b6f5b4e7fb31224e0742bf90a
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: 8afb5427a74b879b0e407b1038705a0bbc15920b
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924446"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013100"
 ---
 # <a name="set-up-timeline-section-control"></a>Zeitskala Abschnitt einrichten (Steuerung)
 
 Die Aktivitäten, die Sie in der Zeitskala verwenden, um die gesamte Kommunikation mit einem Kunden oder Kontakt zu verfolgen, können an Ihre geschäftlichen oder organisatorischen Anforderungen angepasst werden.
 
   > [!div class="mx-imgBorder"]
-  > ![Zeitskala Ansicht der Aktivitäten in PowerApps](../../user/media/TimelineViewOfActivity.png "Zeitskala-Ansicht der Aktivitäten in PowerApps")  
+  > ![Zeitskala Ansicht der Aktivitäten in PowerApps](../../user/media/TimelineViewOfActivity.png "Zeitskala-Ansicht der Aktivitäten in PowerApps")
+
+  1. Datensätze suchen
+  2. Notizen machen
+  3. Infos und Aktivitäten hinzufügen
+  4. Filter
+  5. Weitere Befehle
+  6. Aktivitätsstatus
+  7. Aktivitäts-Symbol
+  8. Datum und Uhrzeit
 
 Weitere Informationen finden Sie unter [Fügen Sie der Zeitskala einen Termin, eine E-Mail, einen Telefonanruf, eine Notiz oder eine Aufgabenaktivität hinzu](../../user/add-activities.md).
 
@@ -68,7 +77,7 @@ Die Module sind Aktivitäten, Beiträge und Notizen. Als Anpassungsprogramm kön
 
 8.  Wählen Sie die Option **Ausgewählte anzeigen** für das Feld **Zeigen Sie diese Module** im Container **Filtern nach** aus.
 
-9.  Wählen Sie die Module aus, die Sie dem Benutzer anzeigen möchten.
+9.  Wählen Sie die Module aus, die Sie dem Benutzer anzeigen möchten. Wählen Sie nur die Module aus, die von Ihrer Organisation benötigt werden.
 
 10. Geben Sie im Feld Folgendes an **Zusätzliche Optionen** Container.
 
@@ -78,7 +87,7 @@ Die Module sind Aktivitäten, Beiträge und Notizen. Als Anpassungsprogramm kön
     | Standardmodul für die Erstellungsumgebung | Wählen Sie das Modul aus, für das die Standarderstellungserfahrung in der Zeitleiste verwendet werden soll. <br><br> Der Standardwert ist **Hinweise**.  | Hinweise |
     | Bereich „Filter“ anzeigen | Aktivieren Sie das Kontrollkästchen, wenn Sie das Filtersymbol für die Benutzer anzeigen möchten. Wenn Sie das Kontrollkästchen leer lassen, werden keine Filter für die Benutzer angezeigt. |  |
     | Bereich „Filter“ standardmäßig erweitern | Aktivieren Sie standardmäßig das Kontrollkästchen, wenn Sie das Filterfenster im erweiterten Modus anzeigen möchten. |
-    | Sort | Wählen Sie die Sortierreihenfolge aus, nach der die Datensätze auf der Zeitachse angezeigt werden. Die Sortierung basiert auf dem Feld, das Sie für Aktivitäten auswählen. Wenn für den Beitrag, die Notizen oder die Aktivität kein Feld vorhanden ist, erfolgt die Sortierung anhand dem Feld **Zuletzt aktualisiert**. <br><br>Die Standardsortierreihenfolge ist **Absteigend**.  | Absteigend |
+    | Sort | Wählen Sie die Sortierreihenfolge aus, nach der die Datensätze auf der Zeitachse angezeigt werden. Die Sortierung basiert auf dem Feld, das Sie für Aktivitäten auswählen. Wenn für den Beitrag, die Notizen oder die Aktivität kein Feld vorhanden ist, erfolgt die Sortierung anhand dem Feld **Zuletzt aktualisiert**. <br><br> Die Standardsortierreihenfolge ist **Absteigend**.  <br><br> **Hinweis:** Die Änderung der Sortierreihenfolge ändert nicht die im Zeitleisten-Steuerelement visualisierte Zeiteigenschaft. Zur Anpassung des Zeitleistenformulars siehe [Anpassen des Kartenformulars](#customize-the-card-form).  | Absteigend |
     | Ergebnisanzahl | Die maximale Anzahl von Datensätzen, die auf der Zeitskala angezeigt werden, bevor Sie die Option auswählen **Mehr**. Bei jeder Auswahl der Option **Mehr** zeigt die Zeitskala die konfigurierte Anzahl von Datensätzen. Sie können den Wert 1 bis 50 konfigurieren. <br><br> Der Standardwert ist **10**. | 10 |
 
     > [!div class=mx-imgBorder] 
@@ -90,7 +99,7 @@ Die Module sind Aktivitäten, Beiträge und Notizen. Als Anpassungsprogramm kön
 
 ## <a name="customize-activity"></a>Benutzerdefinierte Aktivität
 
-Als Anpassungsprogramm können Sie auswählen, welche Entitäten Sie den Benutzern gemäß Ihren Geschäftsanforderungen anzeigen möchten.
+Als Anpasser können Sie wählen, welche Entitäten Sie den Benutzern gemäß Ihren Geschäftsanforderungen anzeigen möchten. Um eine bessere Leistung zu erzielen, wählen Sie nur die Aktivitäten aus, die spezifisch für das Geschäft sind, und heben Sie die nicht verwendeten Aktivitäten auf.
 
 1.  Melden Sie sich in Ihrer `https://<YourOrgURL>.dynamics.com/apps`-Umgebung an.
 
@@ -158,6 +167,8 @@ Da das Beispiel in dieser Prozedur, das betrachtet wird **Konto** ist, wollen wi
    1. E-Mail des \<Besitzers\>
    2. Betreff
    3. Beschreibung
+   4. Aktivitätsstatus
+   5. Datum und Uhrzeit
 
 Nach dem Ändern des Formulars **E-Mail-Karte** (aus der **E-Mail** Entität) und der Aktualisierung der Optionen im Formular **Konto für Interaktive Funktionen** in der Entität **Konto** können Sie die Änderungen anzeigen.
 
@@ -176,6 +187,7 @@ Nach dem Ändern des Formulars **E-Mail-Karte** (aus der **E-Mail** Entität) un
    1. Besitzer \<Name\>
    2. Priorität
    3. Beschreibung
+   4. Aktivitätsstatus
 
 Die Standardzeichenfolge für die Aktivitäten lautet wie folgt:
 
@@ -191,14 +203,20 @@ Die Standardzeichenfolge für die Aktivitäten lautet wie folgt:
 
 ## <a name="customize-field-sections"></a>Feldabschnitte anpassen
 
-Im Abschnitt Zeitskala sehen Benutzer eine Karte für jede Aktivität (basierend auf den aktivierten Aktivitäten). Jede Karte zeigt bestimmte Felder im reduzierten und erweiterten Modus an. Zum Beispiel **E-Mail** Aktivitätskarte im reduzierten und erweiterten Modus. 
+Im Abschnitt Zeitskala sehen Benutzer eine Karte für jede Aktivität (basierend auf den aktivierten Aktivitäten). Jede Karte zeigt bestimmte Felder im reduzierten und erweiterten Modus an. Siehe z. B. **E-Mail** Aktivitätskarte im eingeklappten, hover und erweiterten Modus. 
 
-Ausgeblendete E-Mail-Karte:
+**E-Mail-Karte eingeklappt**: Standardmäßig befinden sich die Aktivitätskarten im eingeklappten Modus.
+
 
    > [!div class=mx-imgBorder] 
    > ![Zeitskala-Karte im reduzierten Modus](media/email.png "Zeitskala-Karte im reduzierten Modus")
 
-Erweiterter Modus in der Zeitskala-Karte:
+**E-Mail-Karten Hover-Modus**: Wenn Sie den Mauszeiger bewegen, können Sie einige Befehle sehen, die spezifisch für jede der Aktivitätskartenarten sind.
+
+   > [!div class=mx-imgBorder] 
+   > ![Zeitskala-Karte im reduzierten Modus](media/email-hover.png "Zeitskala-Karte im reduzierten Modus")
+
+**Zeitplankarte erweiterter Modus**: Wenn Sie auf der Karte auswählen, wird sie mit wenigen Befehlen erweitert, die für jeden der Aktivitätskartentypen spezifisch sind.
 
    > [!div class=mx-imgBorder] 
    > ![Erweiterter Modus in der Zeitskala-Karte](media/email-expanded.png "Erweiterter Modus in der Zeitskala-Karte")
@@ -230,9 +248,16 @@ Felder **1** und **2** vom **Header** Abschnitt und Felder **3** und **4** von d
    > [!div class=mx-imgBorder] 
    > ![Ausgeblendete E-Mail-Karte](media/email-card-collapsed.png "Ausgeblendete E-Mail-Karte")
 
+**E-Mail-Karte Hover-Modus**
+
+Felder  **1** und  **2** aus der Sektion  **Kopfzeile** und Felder  **3** und  **4** aus der Sektion  **Details** werden im Hover-Modus angezeigt.
+
+   > [!div class=mx-imgBorder] 
+   > ![Ausgeblendete E-Mail-Karte](media/email-card-hover.png "Ausgeblendete E-Mail-Karte")
+
 **Erweiterter E-Mail-Kartenmouds**
 
-Feld **5** von dem der **Einzelheiten** Abschnitt im reduzierten Modus angezeigt wird.
+Das Feld **5** aus dem Abschnitt **Details** wird im erweiterten Modus angezeigt.
 
    > [!div class=mx-imgBorder] 
    > ![E-Mail Karten im erweiterten Modus](media/email-card-expanded.png "E-Mail Karten im erweiterten Modus")
@@ -247,9 +272,9 @@ Um das Kartenformular anzupassen, führen Sie folgende Schritte aus:
 
 4.  Erweitern Sie **Entitäten** unter **Komponenten** im Standardlösungsbereich.
 
-5.  Wählen Sie eine Entität, und wählen Sie **Formulare** aus. Wählen Sie beispielsweise die Entität **Aufgabe** aus.
+5.  Wählen Sie eine Entität, und wählen Sie **Formulare** aus. Wählen Sie zum Beispiel die Entität **E-Mail**.
 
-6.  Wählen Sie den Datensatz **Aufgabe Kartenformular** aus der Liste aus. Das **Aufgaben-Kartenformular** öffnet sich in einem neuen Browserfenster.
+6.  Wählen Sie aus der Liste den Eintrag **E-Mail-Kartenformular**. Das Formular **E-Mail-Karte** wird in einem neuen Browserfenster geöffnet.
 
 7.  Hinzufügen, verschieben oder löschen von Feldern. Mehr Informationen: [Felder hinzufügen, konfigurieren, verschieben oder löschen](add-move-or-delete-fields-on-form.md).
 
@@ -383,7 +408,7 @@ Wenn Sie benutzerdefinierte Aktivitäten haben, die Sie für Benutzer mit Mobilg
 
 1.  Melden Sie sich in Ihrer `https://<YourOrgURL>.dynamics.com/apps`-Umgebung an.
 
-2.  Öffnen Sie eine modellgesteuerte App und wählen Sie dann in der Befehlsleiste **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) > **Erweiterte Einstellungen** aus.
+2. Öffnen Sie eine modellgesteuerte App und wählen Sie dann in der Befehlsleiste **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) > **Erweiterte Einstellungen** aus.
 
 3.  Gehen Sie zu **Einstellungen** > **Anpassung** > **System anpassen**. Die Seite „Projektmappen-Explorer“ wird in einem neuen Browserfenster geöffnet.  
 
@@ -407,6 +432,25 @@ Befolgen Sie die in der Anleitung beschriebenen Schritte 1 bis 8 [Module anpasse
 
    > [!div class=mx-imgBorder] 
    > ![Auswählen der Zeitskala-Modulen zum Anzeigen](media/timeline-activity.png "Auswählen der Zeitskala-Modulen zum Anzeigen")
+
+## <a name="enable-or-disable-rich-text-editor-for-notes-in-timeline"></a>Aktivieren oder Deaktivieren des Rich-Text-Editors für Notizen in der Zeitleiste
+
+Mit dem Rich-Text-Editor können Benutzer reichhaltige und gut formatierte Inhalte für die Notizen mit Betonung erstellen. Der Editor bringt allgemeine Textverarbeitungsfunktionen mit. Weitere Informationen finden Sie unter [Notizen ](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#take-a-note).
+
+Die Funktion ist standardmäßig aktiviert. Wenn Sie die Funktionen später für Ihre Benutzer deaktivieren und aktivieren möchten, folgen Sie den Schritten:
+
+1.  Melden Sie sich in Ihrer `https://<YourOrgURL>.dynamics.com/apps`-Umgebung an.
+
+2. Öffnen Sie eine modellgesteuerte Anwendung, und wählen Sie dann in der Befehlsleiste **Einstellungen** ![Einstellungen ](../model-driven-apps/media/powerapps-gear.png) > **Verwaltung** > **Systemeinstellungen**.
+
+3. Blättern Sie im Dialog **Systemeinstellungen** unter **Registerkarte Allgemein** nach unten und aktivieren oder deaktivieren Sie das Kontrollkästchen für **Verwende Rich Text, um die Formatierung der in der Zeitleiste erstellten Notizen zu erleichtern.** Feld.
+
+4. Wählen Sie **OK** aus.
+
+    > [!div class=mx-imgBorder] 
+    > ![Rich-Text-Editor aktivieren](media/timeline-note-enable-rich-text-editor.png "Rich-Text-Editor aktivieren")
+
+Der Rich-Text-Editor wird für Ihre Benutzer je nach Auswahl des Kontrollkästchens aktiviert oder deaktiviert. 
 
 ## <a name="see-also"></a>Siehe auch
 

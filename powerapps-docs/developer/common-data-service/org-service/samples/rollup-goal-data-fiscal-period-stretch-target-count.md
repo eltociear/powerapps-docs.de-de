@@ -1,6 +1,6 @@
 ---
-title: 'Beispiel: Rollup für Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl (Common Data Service) | Microsoft-Dokumentation'
-description: Dieses Beispiel veranschaulicht das Rollup von Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl.
+title: 'Beispiel: Rollup-Zieldaten für eine Fiskalperiode gegen Streckzielzahl (Common Data Service) | Microsoft Docs'
+description: Dieses Beispiel zeigt, wie man die Zieldaten für eine Steuerperiode gegen die Streckzielzählung rollt.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a363f45d2e71b993557e8f940f6888143add8e2c
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: a99f10644768cf5d9f7cba07460b673c3e198786
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934178"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956149"
 ---
 # <a name="sample-rollup-goal-data-for-a-fiscal-period-against-the-stretch-target-count"></a>Beispiel: Rollup für Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl
 
@@ -68,7 +68,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Erstellt die Metrik und legt den Metriktyp auf **Anzahl** fest und aktiviert die Streckungsnachverfolgung.
+1. Erstellt Metrik und setzt den Typ Metrik auf **Zahl** und aktiviert die Dehnungsverfolgung.
 2. Erstellt ein Rollupfeld, das auf abgeschlossene (empfangene) Telefonanrufe ausgerichtet ist.
 3. `GoalRollupQuery` erstellt die Zielrollupabfragen zum Lokalisieren der ein- und ausgehenden abgeschlossenen Telefonanrufe. 
 4. Erstellt drei Ziele, ein übergeordnetes Ziel und zwei untergeordnete Ziele.

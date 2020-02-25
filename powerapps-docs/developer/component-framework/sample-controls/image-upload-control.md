@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: c1e61cc74d3ee739a0b25cd84153e9040d18e7d1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0183e1b9e9b9a10bf3d33cf3c18ab262d012d71f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861956"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017429"
 ---
 # <a name="implementing-an-image-upload-component"></a>Implementieren einer Bild-Upload-Komponente
 
 Diese Beispielkomponente wird als `Upload`-Schaltfläche gerendert, um das Bild und ein Standardbild hochzuladen, wenn die Komponente zum ersten Mal geladen wird. Wenn Sie auf `Upload` klicken, wird ein Dateiexplorer geöffnet, in dem das Bild ausgewählt werden kann.
  
-Das ausgewählte Bild wird innerhalb der Komponente gerendert. Auch wird die `Remove`-Schaltfläche angezeigt, wenn wir zurücksetzen müssen. Wenn Sie auf die Schaltfläche `Remove` klicken, wird das Standardbild angezeigt.  
+Das ausgewählte Bild wird innerhalb der Komponente gerendert. Auch wird die `Remove`-Schaltfläche angezeigt, wenn wir zurücksetzen müssen. Wenn Sie auf die Schaltfläche `Remove` klicken, wird das Standardbild angezeigt. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_ImageUploadControl) herunterladen.
 
 > [!div class="mx-imgBorder"]
 > ![Bild-Upload-Komponente](../media/image-upload-control.png "Bild-Upload-Komponente")

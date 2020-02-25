@@ -2,7 +2,7 @@
 title: Hinzufügen der Registerkarte „Dokumente” zum Hauptformular für eine Entität | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie die Registerkarte „Dokumente” zum Hauptformular für eine Entität hinzufügen.
 s.custom: ''
-ms.date: 09/05/2019
+ms.date: 01/06/2020
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -17,14 +17,14 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: fae464925ea755a1f9fd0cd77426bfdbaad6141c
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: c08c3fa1f6291278728db15200e9cb71de699f8a
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909326"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2952002"
 ---
-# <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Hinzufügen der Registerkarte „SharePoint-Dokumente” zum Hauptformular für eine Entität
+# <a name="add-or-remove-the-sharepoint-documents-tab-to-the-main-form-for-any-entity"></a>Hinzufügen oder entfernen der SharePoint Registerkarte Dokumente zum Hauptformular für eine Entität
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Wenn Sie eine Registerkarte zu einem Hauptformular für eine Entität zum Anzeigen von SharePoint-Dokumenten hinzufügen, können Benutzer die Integrationsfeatures von SharePoint finden und verwenden, die in einer modellgesteuerten App verfügbar sind. 
@@ -86,6 +86,16 @@ Wenn Sie eine Registerkarte zu einem Hauptformular für eine Entität zum Anzeig
     </parameters> 
   </control> 
 ```
+
+## <a name="remove-the-documents-tab"></a>Die Registerkarte Dokumente entfernen
+1.   Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und erweitern Sie im linken Navigationsbereich **Daten** und wählen dann **Entitäten** aus. 
+2.  Wählen Sie die gewünschte **Entität** aus, wählen Sie die Registerkarte Formulare aus, und öffnen Sie dann das Formular, in dem die Dateiregisterkarte entfernt werden soll. 
+3. Wählen Sie die Registerkarte **Dateien** und anschließend auf der Symbolleiste des Formulardesigners die Option **Löschen** aus. 
+
+    ![Die Registerkarte Dateien löschen](media/delete-files-tab.png)
+
+4. Wählen Sie auf der Symbolleiste des Formulardesigners **Veröffentlichen** aus.
+
 
 ### <a name="see-also"></a>Siehe auch
 [Ihre Dokumente mit SharePoint verwalten](/dynamics365/customer-engagement/admin/manage-documents-using-sharepoint)

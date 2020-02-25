@@ -1,20 +1,20 @@
 ---
 title: Darstellen eines RSS-Feeds mit einer benutzerdefinierten Seitenvorlage für ein Portal | MicrosoftDocs
 description: Anweisungen, eine benutzerdefinierte Seitenvorlage zu erstellen und anschließend zu verwenden, um einen RSS-Feed zu rendern.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 998a233f5051c1445d56dbeeba1f2d7faff5811d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d2c4956bd6d5e1a15e6308b4e40442ef15502178
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862310"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981007"
 ---
 # <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>Erstellen einer benutzerdefinierte Seitenvorlage zum Rendern eines RSS-Feed
 In diesem Beispiel erstellen wir eine benutzerdefinierte Seitenvorlage, um einen [RSS-Feed](https://en.wikipedia.org/wiki/RSS) neuer Artikel mithilfe von Liquid und einer Webvorlage-Seitenvorlage zu rendern. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Quellinhalt mithilfe von Webvorlagen speichern](store-content-web-templates.md)  

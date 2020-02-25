@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ffdcf4e38aa735a5c7377ad9f239f4c9ab3c250
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 27bf02f8b050e9638b281f74018c9e914364fa94
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748657"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005099"
 ---
 # <a name="register-a-webhook"></a>Registrieren eines Webhooks
 
@@ -147,7 +147,7 @@ Weitere Informationen: [Verwendung von FetchXML mit FetchExpression](org-service
 [!INCLUDE [synchronous-webhook-error](includes/synchronous-webhook-error.md)]
 
 > [!NOTE]
-> Sie sollten den synchronen Modus verwenden, wenn es wichtig ist, dass die Operation, die vom Webhook ausgelöst wird, sofort erfolgt, oder wenn Sie möchten, dass die gesamte Transaktion fehlschlägt, sofern die Webhook-Nutzlast von einem Service empfangen wird. Eine einfache Webhook-Schritt-Registrierung bietet begrenzte Optionen zur Fehlerbehandlung. Sie können aber auch Webhooks mit den Plug-In-Workflowaktivitäten aufrufen, wenn Sie mehr Kontrolle benötigen. Weitere Informationen: [Aufrufen des Webhooks von einem Plug-In oder einer benutzerdefinierten Workflowaktivität](use-webhooks.md#invoke-a-webhook-from-a-plugin-or-workflow-activity).
+> Sie sollten den synchronen Modus verwenden, wenn es wichtig ist, dass die durch den Webhook ausgelöste Operation sofort ausgeführt wird, oder wenn Sie möchten, dass die gesamte Transaktion fehlschlägt, wenn die Webhook-Nutzlast nicht vom Service empfangen wird. Eine einfache Webhook-Schritt-Registrierung bietet begrenzte Optionen zur Fehlerbehandlung. Sie können aber auch Webhooks mit den Plug-In-Workflowaktivitäten aufrufen, wenn Sie mehr Kontrolle benötigen. Weitere Informationen: [Aufrufen des Webhooks von einem Plug-In oder einer benutzerdefinierten Workflowaktivität](use-webhooks.md#invoke-a-webhook-from-a-plugin-or-workflow-activity).
 
 ## <a name="query-steps-registered-for-a-webhook"></a>Abfragen von Schritten, die für ein Webhook registriert sind
 

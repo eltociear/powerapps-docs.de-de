@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9b773c8493b1305cea9b40f26499cc8f152f51d1
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 91f24e217d6945675dce4ed0cd926b48760a43bc
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934242"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956177"
 ---
 # <a name="sample-release-a-queue-item-to-the-queue"></a>Beispiel: Freigabe eines Warteschlangenelements zur Warteschlange
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-release-queue-item-queue-early-bound
 Couldn't each of the operations in this series of samples be added to just one sample?
  -->
- Dieses Beispiel zeigt, wie Sie [ReleaseToQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.releasetoqueuerequest?view=dynamics-general-ce-9) verwenden können, um die Zuordnung eines Benutzers zu einem Warteschlangenelement, an dem er gearbeitet hat, aufzuheben und das Warteschlangenelement wieder für die Warteschlange freizugeben. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReleaseQueueItems) herunterladen.
+Dieses Beispiel zeigt, wie Sie [ReleaseToQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.releasetoqueuerequest?view=dynamics-general-ce-9) verwenden können, um die Zuordnung eines Benutzers zu einem Warteschlangenelement, an dem er gearbeitet hat, aufzuheben und das Warteschlangenelement wieder für die Warteschlange freizugeben. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReleaseQueueItems) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

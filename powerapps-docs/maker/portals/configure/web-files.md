@@ -1,20 +1,20 @@
 ---
 title: Erstellen und Verwalten von Webdateien in Power Apps-Portalen | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie Webdateien in einem Portal erstellen und verwalten
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 0e8487e211cf685c77aef545ebc39a43968f8e40
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9e1e32291f6bc92bb5b1a873562dd966e4b394b7
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864916"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980391"
 ---
 # <a name="create-and-manage-web-files"></a>Erstellen und Verwalten von Webdateien
 

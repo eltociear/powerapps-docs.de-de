@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 44455de71df45c02bd22620c9252421a4a68ca89
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 07e6849d7888550338206fd76fec174a0d25fade
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934402"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956221"
 ---
 # <a name="sample-clean-up-history-for-a-queue"></a>Beispiel: Bereinigung des Verlaufs für eine Warteschlange
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-clean-up-history-queue-early-bound -->
 
- Dieses Beispiel zeigt, wie Sie den Verlauf für die Warteschlange bereinigen können, indem Sie [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) mit inaktiven Elementen verwenden. Es werden beendete Telefonanrufe in der Warteschlange gefunden und die zugeordneten Warteschlangenelemente werden entfernt. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue) herunterladen.
+Dieses Beispiel zeigt, wie Sie den Verlauf für die Warteschlange bereinigen können, indem Sie [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) mit inaktiven Elementen verwenden. Es werden beendete Telefonanrufe in der Warteschlange gefunden und die zugeordneten Warteschlangenelemente werden entfernt. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

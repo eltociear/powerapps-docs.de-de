@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren der SAML 2.0-Anbietereinstellungen für ein Portal | MicrosoftDocs
 description: Anweisungen, SAML 2.0-Providereinstellungen für ein Portal hinzuzufügen und zu konfigurieren.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: af5b0ae8eddb68127c7271fccb4696a23fedfc60
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4126ba564027291d8bbcb853f0769aa67f0de7d7
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759642"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979115"
 ---
 # <a name="configure-saml-20-provider-settings-for-portals"></a>Konfigurieren von SAML 2.0-Anbietereinstellungen für Portale
 
@@ -210,7 +210,7 @@ $idpInitiatedUrl = {0}?RelayState={1} -f $adfsPath, $encodedPathRpid
 Write-Output $idpInitiatedUrl
 ```
 
-## <a name="saml-20-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>SAML 2.0-Einstellungen für [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
+## <a name="saml-20-settings-for-pn-azure-active-directory"></a>SAML 2.0-Einstellungen für [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
 
 Im vorherigen Abschnitt wird beschrieben, dass [!include[](../../../includes/pn-adfs-short.md)] auf für [[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD](https://msdn.microsoft.com/library/azure/mt168838.aspx) angewendet werden kann, da sich [!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD wie ein normaler [SAML 2.0](https://msdn.microsoft.com/library/azure/dn195591.aspx)&ndash;-konformer IdP verhält. Um zu beginnen, melden Sie sich am [[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] Management Portal](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal) an und erstellen ein Verzeichnis oder wählen ein vorhandenes Verzeichnis. Wenn kein Verzeichnis verfügbar ist, folgen Sie den Anweisungen zum [Hinzufügen einer Anwendung](https://msdn.microsoft.com/library/azure/dn132599.aspx) zu einem Verzeichnis.  
 

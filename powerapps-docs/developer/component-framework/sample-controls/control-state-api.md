@@ -10,18 +10,18 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
-ms.openlocfilehash: 507a2f68c331556d7085f3add597996175130572
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fa21dbb8d141f06066a2d7d61ad68cadcd77124a
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861972"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017454"
 ---
 # <a name="implementing-control-state-api-component"></a>Implementieren der Steuerelementstatus-API-Komponente
 
 Das Power Apps Component Framework ermöglicht es, den Status der Komponente für mehrere Renderings der Komponente in derselben Sitzung verfügbar zu halten. Es bietet Ihnen die Möglichkeit, Komponenten zu erstellen, die den Benutzerstatus während der Sitzung eines Benutzers zu wahren, wenn der Benutzer zur und von der Komponente navigiert.
 
-Wenn beispielsweise Ihre Code-Komponente eine lange Liste ist, durch die der Benutzer scrollen kann, können Sie die Funktion **_SetControlState_** nutzen, um die Position in der Liste zu speichern, die der Benutzer anzeigt, wenn er vom Formular fort navigiert. Sie können dann bei der Komponenteninitialisierung Logik hinzufügen, um den gespeicherten Status zu überprüfen und die Liste der Komponente an dem Punkt zu rendern, an dem der Benutzer zuvor gelesen hat.
+Wenn beispielsweise Ihre Code-Komponente eine lange Liste ist, durch die der Benutzer scrollen kann, können Sie die Funktion **_SetControlState_** nutzen, um die Position in der Liste zu speichern, die der Benutzer anzeigt, wenn er vom Formular fort navigiert. Sie können dann bei der Komponenteninitialisierung Logik hinzufügen, um den gespeicherten Status zu überprüfen und die Liste der Komponente an dem Punkt zu rendern, an dem der Benutzer zuvor gelesen hat. Sie können die Beispielkomponente von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_ControlStateAPI) herunterladen.
 
 > [!div class="mx-imgBorder"] 
 > ![Steuerungsstatus API](../media/control-state-api.png "Steuerungsstatus API")

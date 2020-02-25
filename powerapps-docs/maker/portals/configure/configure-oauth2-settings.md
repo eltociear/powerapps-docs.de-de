@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren der OAuth2-Anbietereinstellungen für ein Portal | MicrosoftDocs
 description: Anweisungen, OAuth2-Providereinstellungen für ein Portal hinzuzufügen und zu konfigurieren.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/18/2019
-ms.author: shjais
+ms.date: 01/17/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6065c842831aa9aa0c225d12470a4469fe51146d
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755441"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012678"
 ---
 # <a name="configure-oauth2-provider-settings-for-portals"></a>Konfigurieren von OAuth2-Anbietereinstellungen für Portale
 
@@ -33,24 +33,40 @@ Die unterstützten Anbieter sind:
 
 Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-Wert benötigen, geben Sie <https://portal.contoso.com/or> https://portal.contoso.com/signin-\[Anbieter\] an. Dies hängt davon ab, wie der Anbieter die Umleitungs-URI prüft (einige Anbietern benötigen den vollständigen URL-Pfad zusammen mit dem Domänennamen). Ersetzen Sie den Namen des Anbieters durch den \[Anbieter\] in der Umleitungs-URI.
 
-### <a name="google"></a>Google
+## <a name="google-people-api-settings"></a>Google People API-Einstellungen
 
-[Google OAuth2 API-Anmeldeinformationen-Anweisungen](https://developers.google.com/accounts/docs/OpenIDConnect#appsetup)  
+> [!NOTE]
+> [Google + API](https://developers.google.com/people/legacy) ist veraltet. Wir empfehlen dringend, dass Sie migrieren zu [Google People API](https://developers.google.com/people).
+
+Befolgen Sie diese Schritte, um Ihr Power Apps Portal mit [Googles Oauth 2.0 Authentifizierung] zur Benutzerauthentifizierung zu konfigurieren.
 
 1. Öffnen Sie die [Google Developers-Konsole](https://console.developers.google.com/).  
-2. Erstellen Sie ein API-Projekt oder Öffnen Sie eine vorhandenes Projekt.
-3. Navigieren Sie zu**APIs & Auth** &gt;**APIs**und unter **Soziale APIs** wählen Sie**Google+ API**und dann wählen Sie**API aktivieren**
-4. Navigieren Sie zu**APIs & Authentifizierung** &gt;**Zustimmungsbildschirm**.
-    - Geben Sie eine**E-Mail-Adresse** an.
-    - Geben Sie einen benutzerdefinierten**Produktname** an.
-    - Wählen Sie**Speichern** aus.
-5. Navigieren Sie zu**APIs & Authentifizierung** &gt;**Anmeldeinformationen** und erstellen Sie eine neue Client-ID.
-   - Anwendungstyp: **Webanwendung**
-   - Berechtigte [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] Ursprünge: https://portal.contoso.com
-   - Autorisierte Umleitungs-URIs: https://portal.contoso.com/signin-google 
-   - Klicken Sie auf **Neue Client-ID erstellen**.
+1. Erstellen Sie ein API-Projekt oder öffnen Sie ein vorhandenes Projekt.
+1. Wählen Sie **APIS UND DIENSTLEISTUNGEN AKTIVIEREN** aus dem Dashboard von APIs und Services.
+1. API **Google People API** suchen und aktivieren.
+1. Innerhalb von **Google APIs** wählen Sie **Anmeldeinformationen** auf der linken Navigation.
 
-### <a name="facebook-app-settings"></a>Facebook-App-Einstellungen
+    > [!NOTE]
+    > Wenn Sie den Zustimmungsbildschirm bereits für die Top-Level-Domain des Portals konfiguriert haben, können Sie die Schritte 6 bis 14 überspringen und direkt zu Schritt 15 wechseln. Fahren Sie jedoch mit Schritt 11 fort, bevor Sie mit Schritt 15 fortfahren, wenn Ihr Zustimmungsbildschirm konfiguriert ist, die Top-Level-Domain des Portals jedoch nicht hinzugefügt wurde.
+
+1. Wählen **KONFIGURIEREN SIE DEN EINWILLIGUNGS-BILDSCHIRM**.
+1. Wählen Sie **Externer** Benutzertyp.
+1. Wählen Sie **Erstellen** aus.
+1. Art **Anwendungsname** und laden Sie bei Bedarf ein Bild für das Logo hoch.
+1. Wählen Sie die entsprechende **Support-E-Mail**.
+1. Art **powerappsportals.com** als Top-Level-Domain in **Autorisierte Domänen**. Verwenden Sie **microsoftcrmportals.com**, wenn Sie [Ihren Power Apps Portal-Domainname nicht aktualisiert haben](../admin/update-portal-domain.md). Sie können auch einen [benutzerdefinierten Domain-Namen](../admin/add-custom-domain.md) eingeben, wenn Sie einen konfiguriert haben. 
+1. Stellen Sie nach Bedarf Links für die Startseite, die Datenschutzbestimmungen und die Nutzungsbedingungen bereit. 
+1. Wählen Sie **Speichern** aus.
+1. Wählen Sie **Anmeldeinformationen** aus dem linken Navigationsmenü.
+1. Wählen Sie **Oauth Client-ID** von dem Dropdown-Menü **Anmeldeinformationen erstellen**.
+1. Wählen Sie einen Anwendungstyp als **Webanwendung**.
+1. Art **Name** für die Client-ID Oauth.
+1. Geben Sie Ihre Power Apps Portal-URL in **Autorisierte JavaScript-Ursprünge** ein.
+1. Art **Autorisierte Weiterleitungs-URIs** als die Power Apps Portal-URL gefolgt von **/signin-google**. Zum Beispiel, wenn die Portal-URL lautet https://contoso.powerappsportals.com authorized Redirect URIs sollte https://contoso.powerappsportals.com/signin-google sein.
+1. Wählen Sie **Erstellen** aus.
+1. Kopieren Sie die **Kunden ID** und den **geheimen Clientschlüssel** vom **Oauth Client** Dialogfeld und konfigurieren Sie [OAuth2-Siteeinstellungen](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-oauth2-settings#create-site-settings-by-using-oauth2) in Power Apps Portalen.
+
+## <a name="facebook-app-settings"></a>Facebook-App-Einstellungen
 
 1. Öffnen Sie das [Facebook-Entwickler-App-Dashboard](https://developers.facebook.com/apps)  
 2. Klicken Sie auf **Eine neue App hinzufügen**.
@@ -70,14 +86,14 @@ Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-We
 7. Navigieren Sie zur Registerkarte **Status & Prüfung** &gt; **Status**.
 8. Wählen Sie **Ja**, wenn Sie dazu aufgefordert werden, um die App und alle ihre Funktionen für die Allgemeinheit verfügbar zu machen. Sie müssen die gültigen Daten in Schritt 5 oben eingefüllt haben, um die Einstellung zu aktivieren.
 
-### <a name="includecc-microsoftincludescc-microsoftmd-application-settings"></a>[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]-Anwendungseinstellungen
+### <a name="cc-microsoft-application-settings"></a>[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]-Anwendungseinstellungen
 
 1. Öffnen Sie das [[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]-Account Entwicklercenter](https://account.live.com/developers/applications/index)  
 2. Klicken Sie auf **Anwendung erstellen**, und geben Sie einen **Anwendungsnamen** an.
 3. Klicken Sie auf **Ich stimme zu**, um die Bedingungen anzunehmen.
 4. Öffnen Sie **Einstellungen** &gt;**API-Einstellungen** und anschließend den Wert Umleitungs-URL wie https://portal.contoso.com/signin-microsoft 
 
-### <a name="twitter-apps-settings"></a>Twitter-App-Einstellungen
+## <a name="twitter-apps-settings"></a>Twitter-App-Einstellungen
 
 1. Öffnen Sie [Twitter Application Management](https://apps.twitter.com/). 
 2. Wählen Sie **Neue App erstellen** aus.
@@ -88,7 +104,7 @@ Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-We
 
 3. Klicken Sie auf **Twitter-Anwendung erstellen**.
 
-### <a name="linkedin-app-settings"></a>LinkedIn-App-Einstellungen
+## <a name="linkedin-app-settings"></a>LinkedIn-App-Einstellungen
 
 1. Öffnen Sie [LinkedIn Developer Network](https://www.linkedin.com/secure/developer).  
 2. Wählen Sie **Neue Anwendung hinzufügen** aus.
@@ -100,7 +116,10 @@ Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-We
 
 3. Wählen Sie **Anwendung hinzufügen** aus.
 
-### <a name="yahoo-ydn-app-settings"></a>Yahoo! YDN App-Einstellungen
+## <a name="yahoo-ydn-app-settings"></a>Yahoo! YDN App-Einstellungen
+
+> [!NOTE]
+> Aufgrund laufender Kompatibilitätsprobleme zwischen dem aktualisierten Yahoo YDN Oauth-Anbieter Endpunkt und Power Apps können sich Benutzer vorübergehend nicht beim Yahoo-Identitätsanbieter authentifizieren.
 
 1. Öffnen Sie [Yahoo! Developer Network](https://developer.yahoo.com/apps).
 2. Wählen Sie **Eine App erstellen** aus.

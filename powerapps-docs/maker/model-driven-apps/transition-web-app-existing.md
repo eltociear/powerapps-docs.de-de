@@ -1,6 +1,6 @@
 ---
 title: Schneller Einstieg in die Nutzung einer bestehenden Umgebung zur Validierung Ihrer bestehenden Web-Client-Anwendung mit der einheitlichen Benutzeroberfläche | MicrosoftDocs
-description: Erfahren Sie, wie Sie Ihre Transaktion vom Legacy-Webclient zur einheitlichen Benutzeroberfläche planen und durchführen können.
+description: Lernen Sie, wie Sie den Übergang vom alten Web-Client zur einheitlichen Schnittstelle planen und durchführen können
 ms.custom: ''
 ms.date: 09/11/2019
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 75175b34b158be75165c6bcdae5826060fb47f38
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4c0b7f3e477990accf3b92e9e3964fc2751deb19
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884352"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005169"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>Schneller Einstieg in die Nutzung einer bestehenden Umgebung zur Validierung Ihrer bestehenden Web Client App mit der einheitlichen Benutzeroberfläche.
 Dieses Schnellstartthema zeigt Ihnen, wie Sie eine bestehende Umgebung verwenden können, um eine Anwendung für die einheitliche Benutzeroberfläche basierend auf Ihrer aktuellen Konfiguration oder Standardlösung zu erstellen. Auf diese Weise können Sie die einheitliche Benutzeroberfläche erkunden und testen, während Sie Ihre bestehenden Legacy-Webclient-Anwendungen parallel ausführen. Ein Benutzer kann dann zwischen den Umgebungen für eine Side-by-Side-Ansicht wechseln. 

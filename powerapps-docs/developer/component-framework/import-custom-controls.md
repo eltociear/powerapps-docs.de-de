@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: b53995a6ce9d7c0e6d19f0f1305a41a0c45a998d
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 46bfdf070970e89cbe6eeb9aa4d3864ab493794b
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909276"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012659"
 ---
 # <a name="package-a-code-component"></a>Verpacken einer Codekomponente
 
@@ -73,7 +73,7 @@ Sie können die Codekomponenten direkt über die Power Apps-CLI bereitstellen, i
 3. Um zwischen den zuvor erstellten Authentifizierungsprofilen zu wechseln, verwenden Sie den Befehl: 
    
    ```CLI
-    Pac auth select --index <index of the active profile>
+    pac auth select --index <index of the active profile>
     ``` 
 
 4. Verwenden Sie den folgenden Befehl, um die grundlegenden Informationen zur Umgebung abzurufen. Die Verbindung wird mit Hilfe des Standardauthentifizierungsprofils hergestellt. 
@@ -82,7 +82,7 @@ Sie können die Codekomponenten direkt über die Power Apps-CLI bereitstellen, i
     pac org who 
     ```
  
-5. Um ein bestimmtes Authentifizierungsprofil zu löschen, verwenden Sie den Befehl `pac auth delete --index < index of the profile >`. 
+5. Um ein bestimmtes Authentifizierungsprofil zu löschen, verwenden Sie den Befehl `pac auth delete --index <index of the profile>`. 
 6. Wenn Sie alle Authentifizierungsprofile von Ihrem lokalen Computer löschen möchten, verwenden Sie den Befehl `pac auth clear`. Diese Aktion ist irreversibel, da sie die Datei `authprofile.json` und die Token-Cachedatei auf Ihrem lokalen Computer endgültig löscht. 
 
 ## <a name="deploying-code-components"></a>Bereitstellung von Codekomponenten 

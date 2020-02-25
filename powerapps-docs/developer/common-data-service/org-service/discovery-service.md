@@ -1,32 +1,36 @@
 ---
 title: Verwenden des Suchdienstes mit SDK Assemblies (Common Data Service) | Microsoft-Dokumentation
-description: Beschreibt, wie Sie den Suchdienst mit .NET SDK-Assemblies verwenden können.
+description: Beschreibt, wie Sie den Suchdienst mit den APIs verwenden können, die in SDK-Assemblies enthalten sind.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/16/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
-manager: ryjones
+manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4790ae64c38cbf89a9af90822ff5b5910f64634
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1eaf51018a94a226a5fa240a6f18f6107dc833dd
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748402"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975685"
 ---
 # <a name="use-the-discovery-service-with-the-sdk-assemblies"></a>Verwenden Sie den Suchdienst mit SDK Assemblys
 
+> [!IMPORTANT]
+> Ab dem 2. März 2020 wird der *regionale* Suchdienst [veraltet sein](/power-platform/important-changes-coming#regional-discovery-service-is-deprecated).
+> 
+> Informationen wie der Übergang zur Nutzung des *globalen* Suchdienstes erfolgt, finden Sie unter [Code ändern, um globalen Suchdienst zu verwenden](../webapi/discovery-orgsdk-to-webapi.md).
+
 [!INCLUDE [cc-discovery-service-description](../includes/cc-discovery-service-description.md)]
 
-
-Um den Suchdienst mit SDK Assemblies zu verwenden, fügen Sie einen Verweis auf die `Microsoft.Xrm.Sdk.dll`-Assembly Ihrem Visual Studio-Projekt hinzu, und dann ein `using`-Statement, um auf den <xref:Microsoft.Xrm.Sdk.Discovery>-Namespace zuzugreifen. 
+Um den Suchdienst mit SDK Assemblys APIs zu verwenden, fügen Sie einen Verweis auf die `Microsoft.Xrm.Sdk.dll` Assembly in Ihrem Visual Studio Projekt hinzu, und fügen dann ein `using` Anweisung hinzu, um auf den <xref:Microsoft.Xrm.Sdk.Discovery> Namespace zuzugreifen.
 
 Der <xref:Microsoft.Xrm.Sdk.WebServiceClient.DiscoveryWebProxyClient> implementiert die <xref:Microsoft.Xrm.Sdk.Discovery.IDiscoveryService>-Schnittstelle.
 
@@ -39,7 +43,7 @@ Wenn Sie den <xref:Microsoft.Xrm.Sdk.WebServiceClient.DiscoveryWebProxyClient> i
 [!INCLUDE [regional-discovery-services](../../../includes/regional-discovery-services.md)]
 
 > [!NOTE]
-> Wenn Sie die Region des Benutzers nicht kennen, müssen Sie die verfügbaren Regionen durchlaufen, bis Sie Ergebnisse erhalten. Die Web API bietet einen einzelnen globalen Suchdienst. Weitere Informationen: [Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API](../webapi/discover-url-organization-web-api.md)
+> Wenn Sie die Region des Benutzers nicht kennen, müssen Sie die verfügbaren Regionen durchlaufen, bis Sie Ergebnisse erhalten. Ein einzelner globaler Suchdienst ist ebenfalls verfügbar. Weitere Informationen: [Ermitteln Sie die URL für Ihre Organisation](../webapi/discover-url-organization-web-api.md)
 
 ## <a name="discovery-service-messages"></a>Suchdienstmeldungen
 
@@ -166,4 +170,4 @@ Endpoints:
 ### <a name="see-also"></a>Siehe auch
 
 [Suchdienste](../discovery-service.md)<br />
-[Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API.](../webapi/discover-url-organization-web-api.md)
+[Die URL für Ihre Organisation entdecken](../webapi/discover-url-organization-web-api.md)

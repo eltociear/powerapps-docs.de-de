@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f9617f1320de9f9e1ad3d0dc807e76797d98623
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: e5c0d2697037852bdd12986bc56b55fb7e445009
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934294"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956201"
 ---
 # <a name="sample-execute-multiple-requests"></a>Beispiel: Ausführen mehrerer Anforderungen
 
@@ -41,12 +41,12 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="setup"></a>Einrichten
 
-1. Prüft auf aktuelle Version der Organisation.
+Prüft auf aktuelle Version der Organisation.
 
 ### <a name="demonstrate"></a>Demonstrieren
 
 1. Die `ExecuteMultipleRequest` Methode erstellt das `ExecuteMultipleRequest`-Objekt.
-1. Die `ExecutingMultipleSettings` Methode weist Einstellungen zu, die Ausführungsverhalten definiert: auf Fehler fortgahren, Rückantworten.
+1. Die `ExecutingMultipleSettings` Methode weist Einstellungen zu, die Ausführungsverhalten definiert: auf Fehler fortfahren, Rückantworten.
 1. Die `OrganizationRequestCollection` Methode erstellt eine leere Organisationsanforderungssammlung.
 1. Die `CreateRequest` Methode ist für jede Entität in Anforderungssammlung hinzugefügt.
 1. Diese `GetCollectionOdEntitiesToUpdate`-Klasse aktualisiert die Entitäten, die zuvor erstellt werden.

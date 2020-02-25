@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c41dfe21ad8a706b5502b637e0a9a3c68317c6a0
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: cc5c62686b936053099ab2d70673894d2ee283fe
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934438"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956245"
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>Beispiel: Hinzufügen eines Sicherheitsprinzipals (Benutzer oder Team) zu einer Warteschlange 
 
@@ -44,7 +44,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 3. Die `QueryExpression` ruft die Standardunternehmenseinheit für die Erstellung eines Teams und der Rolle ab.
 4. Erstellt ein neues Beispielsteam und eine neue -Rolle, die für das Beispiel benötigt werden.
 5. Ruft `prvReadQueue` und `prvAppendToQueue` -Rechte ab.
-6. Die `AddPrivilegeRoleRequest`-Methode fügt der Beispielrolle die `prvReadQueue` und `prvAppendToQueue`-Rechte hinzu.
+6. Die `AddPrivilegeRoleRequest`-Methode fügt der Beispielrolle die `prvReadQueue` sowie die `prvAppendToQueue`-Rechte hinzu.
 
 ### <a name="demonstrate"></a>Demonstrieren
 

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d0d3a36795506c7127be61657fee8d46baaae28e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 52c4b3217b9520db99679ddad0e773d17705fdb4
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862028"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975721"
 ---
 # <a name="view-or-download-developer-resources"></a>Anzeigen oder Herunterladen von Entwicklerressourcen
 
@@ -81,7 +81,7 @@ Mehr Informationen: [Azure-Integration](/powerapps/developer/common-data-service
 
 Da Personen möglicherweise Zugriff auf mehrere Common Data Service-Umgebungen haben, können mit den Discovery Services die verfügbaren Umgebungen abgerufen werden, auf die eine Person basierend auf ihren Benutzerdaten zugreifen kann.
 
-### <a name="discovery-web-api"></a>Suchdienst-Web-API
+### <a name="discovery-restful-api"></a>Discovery RESTful API
 
 Dies ist die Endpunktadresse für die RESTful OData v4-Version des Suchdienstes, die für Ihre Instanz verwendet werden soll. Sie können das Servicedokument auch hier herunterladen.
 Weitere Informationen: [Dokumentation für Entwickler: Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)
@@ -89,7 +89,7 @@ Weitere Informationen: [Dokumentation für Entwickler: Ermitteln Sie die URL fü
 
 ### <a name="discovery-service"></a>Suchdienst
 
-Dies ist die Endpunktadresse für die SOAP-Version des Suchdienstes, die für Ihre Instanz verwendet werden soll. Sie können das Servicedokument auch hier herunterladen.
+Dies ist die Endpunktadresse für die SOAP-Version des Discovery Service, die Sie für Ihre Instanz verwenden können. Sie können das Servicedokument auch hier herunterladen.
 Mehr Informationen: [Dokumentation für Entwickler: Finden Sie die URL für Ihr Unternehmen mit dem Organisationsservice](/powerapps/developer/common-data-service/org-service/discovery-service).
   
   
