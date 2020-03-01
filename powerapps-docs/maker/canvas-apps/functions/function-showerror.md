@@ -1,31 +1,30 @@
 ---
-title: ShowError-Funktion | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispielen, für die ShowError-Funktion in powerapps
+title: Notify-Funktion | Microsoft-Dokumentation
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktion "Benachrichtigen" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 06/05/2018
+ms.date: 02/28/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02881fdf284a174f5118e7ee0ae185cca61578f8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: bc3a27960a95b47115e1b7a43863572ce0c44334
+ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730189"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "78204390"
 ---
 # <a name="notify-function-in-power-apps"></a>Funktion "Benachrichtigen" in powerapps
 Zeigt dem Benutzer eine Bannermeldung an.
 
 ## <a name="description"></a>Beschreibung
-Über die **Benachrichtigungsfunktion** „Notify“ wird dem Benutzer im oberen Bereich des Bildschirms eine Bannermeldung über der zu diesem Zeitpunkt geöffneten Seite angezeigt.  
+Über die **Benachrichtigungsfunktion** wird dem Benutzer im oberen Bereich des Bildschirms eine Bannermeldung über der zu diesem Zeitpunkt geöffneten Seite angezeigt.  Die Benachrichtigung bleibt erhalten, bis Sie vom Benutzer geschlossen wird, Sie durch eine andere Benachrichtigung ersetzt wird oder das Timeout abläuft, das standardmäßig 10 Sekunden beträgt.
 
 Abhängig vom Typ der Meldung werden eine passende Farbe und ein passendes Symbol angezeigt.   Der Typ wird vom zweiten Argument der Funktion angegeben:
 
@@ -49,10 +48,11 @@ Powerapps kann auch Pushbenachrichtigungen mit einem völlig anderen Mechanismus
 Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn nur Fehlermeldungen angezeigt werden konnten.
 
 ## <a name="syntax"></a>Syntax
-**Notify**( *Message*; [ *NotificationType* ] )
+**Benachrichtigen**( *Meldung* [, *NOTIFICATIONTYPE* [, *Timeout* ]])
 
 * *Message* – Erforderlich.  Meldung, die dem Benutzer angezeigt wird.
 * *NotificationType* – Optional.  In der obenstehenden Tabelle aufgelisteter Meldungstyp, der angezeigt werden soll.  Standardmäßig wird **NotificationType.Information** angezeigt.  
+* *Timeout* – optional.  Anzahl der Millisekunden, die gewartet werden soll, bevor die Benachrichtigung automatisch verworfen wird.  Der Standardwert ist 10 Sekunden (oder 10.000 Millisekunden).  Die Benachrichtigung wird unbegrenzt mit einem *Timeout* von 0 angezeigt.
 
 ## <a name="examples"></a>Beispiele
 
@@ -66,36 +66,36 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 3. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.  
 
-    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als Information angezeigt.
+    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als Information angezeigt.  Sie wird automatisch in 10 Sekunden geschlossen (Standard Timeout), wenn der Benutzer Sie nicht schließt oder die Schaltfläche erneut drückt.
 
     ![Anzeige der Schaltfläche in der Erstellungsumgebung. Durch Button.OnSelect wird Notify aufgerufen, wodurch die Meldung „Hello, World“ dem Benutzer auf einem blauen Banner angezeigt wird.](media/function-showerror/hello-world.png)
 
 4. Ändern Sie den Meldungstyp, damit ein Fehler angezeigt wird.  Fügen Sie ein zweites Argument zu der Formel hinzu:
 
-    **Notify( "Hello, World"; NotificationType.Error )**
+    **Notify( "Hello, World", NotificationType.Error )**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
-    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als ein Fehler angezeigt.
+    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als ein Fehler angezeigt.  Sie wird automatisch in 10 Sekunden geschlossen (Standard Timeout), wenn der Benutzer Sie nicht schließt oder die Schaltfläche erneut drückt.
 
     ![Anzeige der Schaltfläche in der Erstellungsumgebung. Durch Button.OnSelect wird Notify aufgerufen, wodurch die Meldung „Hello, World“ dem Benutzer auf einem roten Banner angezeigt wird.](media/function-showerror/hello-world-error.png)
 
 4. Ändern Sie den Meldungstyp, damit eine Warnung angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    **Notify( "Hello, World"; NotificationType.Warning )**
+    **Benachrichtigen ("Hello, World", NOTIFICATIONTYPE. Warning, 4000)**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
-    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als Warnung angezeigt.
+    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als Warnung angezeigt.  Sie wird automatisch in 4 Sekunden (4.000 Millisekunden) geschlossen, wenn der Benutzer Sie nicht schließt oder die Schaltfläche erneut drückt.
 
     ![Anzeige der Schaltfläche in der Erstellungsumgebung. Durch Button.OnSelect wird Notify aufgerufen, wodurch die Meldung „Hello, World“ dem Benutzer auf einem orangen Banner angezeigt wird.](media/function-showerror/hello-world-warning.png)
 
 4. Ändern Sie den Meldungstyp, damit ein Erfolg angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    **Notify( "Hello, World"; NotificationType.Success )**
+    **Benachrichtigen ("Hello, World", NOTIFICATIONTYPE. Success, 0)**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
-    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als Erfolg angezeigt.
+    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als Erfolg angezeigt.  Bei einem Timeout von **0** wird die Benachrichtigung nur vom Benutzer oder durch erneutes Drücken der Schaltfläche verworfen.
 
     ![Anzeige der Schaltfläche in der Erstellungsumgebung. Durch Button.OnSelect wird Notify aufgerufen, wodurch die Meldung „Hello, World“ dem Benutzer auf einem grünen Banner angezeigt wird.](media/function-showerror/hello-world-success.png)
