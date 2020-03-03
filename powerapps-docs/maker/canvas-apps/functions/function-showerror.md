@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/01/2020
 ms.locfileid: "78204390"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="notify-function-in-power-apps"></a>Funktion "Benachrichtigen" in powerapps
 Zeigt dem Benutzer eine Bannermeldung an.
@@ -48,7 +49,7 @@ Powerapps kann auch Pushbenachrichtigungen mit einem völlig anderen Mechanismus
 Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn nur Fehlermeldungen angezeigt werden konnten.
 
 ## <a name="syntax"></a>Syntax
-**Benachrichtigen**( *Meldung* [, *NOTIFICATIONTYPE* [, *Timeout* ]])
+**Benachrichtigen**( *Meldung* [; *NOTIFICATIONTYPE* [; *Timeout* ]])
 
 * *Message* – Erforderlich.  Meldung, die dem Benutzer angezeigt wird.
 * *NotificationType* – Optional.  In der obenstehenden Tabelle aufgelisteter Meldungstyp, der angezeigt werden soll.  Standardmäßig wird **NotificationType.Information** angezeigt.  
@@ -72,7 +73,7 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit ein Fehler angezeigt wird.  Fügen Sie ein zweites Argument zu der Formel hinzu:
 
-    **Notify( "Hello, World", NotificationType.Error )**
+    **Notify( "Hello, World"; NotificationType.Error )**
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 

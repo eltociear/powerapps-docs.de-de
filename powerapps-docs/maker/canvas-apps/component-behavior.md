@@ -17,6 +17,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "77910977"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="behavior-formulas-for-components"></a>Verhaltens Formeln für Komponenten
 
@@ -61,7 +62,7 @@ Neben dem Zurücksetzen einer Komponenteninstanz von außerhalb der Komponente g
 
 Das obige Beispiel zeigt das Überprüfen von Bestellnummern und das Aktualisieren der Zahlen. Die numerische Komponente "nach oben" und "nach unten" wird verwendet, um die Anzahl der Bestellungen zu erhöhen Wenn Sie den Katalog auf der linken Seite auswählen, wird die Standard Anzahl der numerischen und Downstreamkomponenten zurückgesetzt, um die Bestellnummer des ausgewählten Tools anzuzeigen. "**Onreset bei Wertänderungen**zurücksetzen" ermöglicht es, den Standardwert zurückzusetzen, wenn die Eingabe geändert wird. 
 
-Aktivieren Sie zu diesem Zweck die Option "**onreset bei Wertänderungen zurücksetzen**" der Standardeingabe Eigenschaft. Das **onreset** der Komponente ist auf Set festgelegt **(_numericValue, ' numeric up '. DefaultValue)** . _numericValue ist die Variable zum Speichern des Werts des aktuellen Auftragswerts. Und legen Sie die **Standardeinstellung** des Texteingabe-Steuer Elements auf **if (isblank (_numericValue), ' numeric on Down ' fest. DefaultValue, _numericValue)** . 
+Aktivieren Sie zu diesem Zweck die Option "**onreset bei Wertänderungen zurücksetzen**" der Standardeingabe Eigenschaft. Das **onreset** der Komponente ist auf Set festgelegt **(_numericValue; ' numeric up '. DefaultValue)** . _numericValue ist die Variable zum Speichern des Werts des aktuellen Auftragswerts. Und legen Sie die **Standardeinstellung** des Texteingabe-Steuer Elements auf **if (isblank (_numericValue), ' numeric on Down ' fest. DefaultValue, _numericValue)** . 
 
 ### <a name="see-also"></a>Siehe auch
 
