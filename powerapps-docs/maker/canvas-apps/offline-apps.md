@@ -7,29 +7,30 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/31/2019
+ms.date: 02/29/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1dbf192664f2c8a812650b487a9931de0160eeab
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6ec1a55713b3cce0a98c02058124b5b3d159b376
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675514"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78265565"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Entwickeln von offlinefähigen Canvas-Apps
 
 Mobile Benutzer müssen häufig produktiv sein, auch wenn Sie über eingeschränkte oder keine Konnektivität verfügen. Wenn Sie eine Canvas-app erstellen, können Sie folgende Aufgaben ausführen:
 
 - Öffnen Sie powerapps Mobile, und führen Sie apps Offline aus.
-- Mithilfe des Signalobjekts [Connection](../canvas-apps/functions/signals.md#connection) bestimmen, ob eine App offline, online oder in einer getakteten Verbindung ist.
-- Verwenden von [Sammlungen](../canvas-apps/create-update-collection.md) und Nutzung von Funktionen wie [LoadData und SaveData](../canvas-apps/functions/function-savedata-loaddata.md), um offline grundlegende Datenspeicherung zur Verfügung zu machen.
+- Mithilfe des Signalobjekts [Connection](functions/signals.md#connection) bestimmen, ob eine App offline, online oder in einer getakteten Verbindung ist.
+- Verwenden Sie Auflistungen, [und nutzen Sie](create-update-collection.md) die [ **LoadData** -Funktion und die **SaveData** -](functions/function-savedata-loaddata.md) Funktion für die grundlegende Datenspeicherung
 
-## <a name="limitations"></a>Einschränken
+Dieser Artikel enthält ein Beispiel für die Verwendung von Twitter-Daten.  Ein noch einfacheres Beispiel, das keine Verbindung erfordert, ist in der [Funktionsreferenz " **LoadData** " und " **SaveData** ](functions/function-savedata-loaddata.md)" enthalten.
+
+## <a name="limitations"></a>Einschränkungen
 
 **LoadData** und **SaveData** bilden einen einfachen Mechanismus zum Speichern kleiner Datenmengen auf einem lokalen Gerät. Mithilfe dieser Funktionen können Sie Ihrer app einfache Offline Funktionen hinzufügen.
 
@@ -79,14 +80,14 @@ Auf hoher Ebene führt die APP die folgenden Aufgaben aus:
 
 1. Wählen Sie im Struktur **Ansichts** Bereich **App**aus, und legen Sie dann die zugehörige **OnStart** -Eigenschaft auf die folgende Formel fest:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
-            Set( statusText; "Online data" );
-        LoadData( LocalTweets; "LocalTweets"; true );;
-            Set( statusText; "Local data" )
-    );;
-    SaveData( LocalTweets; "LocalTweets" );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
     ```
 
     > [!div class="mx-imgBorder"]
@@ -114,7 +115,7 @@ Diese Formel überprüft, ob das Gerät online ist:
 1. Fügen Sie in der Katalog Vorlage drei [**Label**](controls/control-text-box.md) -Steuerelemente hinzu, und legen Sie die **Text** -Eigenschaft jeder Bezeichnung auf einen der folgenden Werte fest:
 
     - `ThisItem.UserDetails.FullName & " (@" & ThisItem.UserDetails.UserName & ")"`
-    - `Text(DateTimeValue(ThisItem.CreatedAtIso); DateTimeFormat.ShortDateTime)`
+    - `Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)`
     - `ThisItem.TweetText`
 
 1. Legen Sie den Text in der letzten Bezeichnung Fett fest, damit der Katalog dem folgenden Beispiel ähnelt.
@@ -128,7 +129,7 @@ Diese Formel überprüft, ob das Gerät online ist:
 
 1. Legen Sie die **Text** -Eigenschaft der neuesten Bezeichnung auf diese Formel fest:
 
-    `If( Connection.Connected; "Connected"; "Offline" )`
+    `If( Connection.Connected, "Connected", "Offline" )`
 
 Diese Formel bestimmt, ob das Gerät online ist. Wenn dies der Fall ist, zeigt die Bezeichnung **verbunden**an. Andernfalls wird es **Offline**angezeigt.
 
@@ -149,26 +150,26 @@ Diese Formel bestimmt, ob das Gerät online ist. Wenn dies der Fall ist, zeigt d
 
 1. Legen **Sie die onselect** -Eigenschaft der Schaltfläche auf die folgende Formel fest:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        Twitter.Tweet( ""; {tweetText: NewTweetTextInput.Text} );
-        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
-            SaveData( LocalTweetsToPost; "LocalTweetsToPost" )
-    );;
-    Reset( NewTweetTextInput );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
+    );
+    Reset( NewTweetTextInput );
     ```  
 
 1. Fügen Sie in der **OnStart** -Eigenschaft für die **App**am Ende der Formel eine Zeile hinzu:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 100} ) );;
-            Set( statusText; "Online data" );
-        LoadData( LocalTweets; "LocalTweets"; true );;
-            Set( statusText; "Local data" )
-    );;
-    SaveData( LocalTweets; "LocalTweets" );;
-    LoadData( LocalTweetsToPost; "LocalTweetsToPost"; true );;  // added line
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
+    LoadData( LocalTweetsToPost, "LocalTweetsToPost", true );  // added line
     ```
 
     > [!div class="mx-imgBorder"]
@@ -194,12 +195,12 @@ Anschließend setzt die Formel den Text im Texteingabefeld zurück.
 
 1. Legen Sie die **ontimerend** -Eigenschaft des Timers auf diese Formel fest:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ForAll( LocalTweetsToPost; Twitter.Tweet( ""; {tweetText: tweetText} ) );;
-        Clear( LocalTweetsToPost );;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
-        SaveData( LocalTweets; "LocalTweets" );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
+        Clear( LocalTweetsToPost );
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+        SaveData( LocalTweets, "LocalTweets" );
    )
     ```
 

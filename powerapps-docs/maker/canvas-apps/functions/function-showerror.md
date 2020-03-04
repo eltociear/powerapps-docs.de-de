@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc3a27960a95b47115e1b7a43863572ce0c44334
-ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
+ms.openlocfilehash: 9a4facf4689ed09e7628411f1c55739f8980336f
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204390"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78265535"
 ---
 # <a name="notify-function-in-power-apps"></a>Funktion "Benachrichtigen" in powerapps
 Zeigt dem Benutzer eine Bannermeldung an.
@@ -49,7 +48,7 @@ Powerapps kann auch Pushbenachrichtigungen mit einem völlig anderen Mechanismus
 Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn nur Fehlermeldungen angezeigt werden konnten.
 
 ## <a name="syntax"></a>Syntax
-**Benachrichtigen**( *Meldung* [; *NOTIFICATIONTYPE* [; *Timeout* ]])
+**Benachrichtigen**( *Meldung* [, *NOTIFICATIONTYPE* [, *Timeout* ]])
 
 * *Message* – Erforderlich.  Meldung, die dem Benutzer angezeigt wird.
 * *NotificationType* – Optional.  In der obenstehenden Tabelle aufgelisteter Meldungstyp, der angezeigt werden soll.  Standardmäßig wird **NotificationType.Information** angezeigt.  
@@ -61,9 +60,11 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 1. Fügen Sie der Anzeige ein **Schaltflächen-Steuerelement** („Button“) hinzu.
 
-2. Legen Sie die Eigenschaft **OnSelect** der **Schaltfläche** auf die folgende Formel fest:
+2. Legen **Sie die onselect** -Eigenschaft der **Schaltfläche** auf die folgende Formel fest:
 
-    **Notify( "Hello, World" )**
+    ```powerapps-dot
+    Notify( "Hello, World" )
+    ```
 
 3. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.  
 
@@ -73,7 +74,9 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit ein Fehler angezeigt wird.  Fügen Sie ein zweites Argument zu der Formel hinzu:
 
-    **Notify( "Hello, World"; NotificationType.Error )**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Error )
+    ```
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
@@ -83,7 +86,9 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit eine Warnung angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    **Benachrichtigen ("Hello, World", NOTIFICATIONTYPE. Warning, 4000)**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Warning, 4000 )
+    ```
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
@@ -93,7 +98,9 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit ein Erfolg angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    **Benachrichtigen ("Hello, World", NOTIFICATIONTYPE. Success, 0)**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Success, 0 )
+    ```
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
 
