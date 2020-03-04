@@ -91,6 +91,12 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: Hinzufügen von Power BI-Dashboards
               href: ../user/add-powerbi-dashboards.md
+        - name: Kollaboration
+          items:
+            - name: Verwenden von OneDrive for Business
+              href: ../user/one-drive.md
+            - name: Notizen mit OneNote
+              href: ../user/onenote.md
             - name: Zusammenarbeiten mithilfe von SharePoint
               href: ../user/collaborate-using-sharepoint.md
         - name: Durchsuchen von Datensätzen
