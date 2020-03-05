@@ -11,13 +11,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3c2864a7953e115c650ff5cee879d2a1227acdb4
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: b86f6c94a7a267fc28a70216c6b89d154cd7b865
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77911199"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78293222"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Erstellen einer Komponente für Canvas-apps
 
@@ -113,7 +112,7 @@ In diesem Beispiel erstellen Sie eine Menü Komponente, die der folgenden Grafik
 
 1. Legen Sie die **Items** -Eigenschaft der Komponente auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Table({Item:"SampleText"})
     ```
 
@@ -123,7 +122,7 @@ In diesem Beispiel erstellen Sie eine Menü Komponente, die der folgenden Grafik
 
 1. Stellen Sie sicher, dass in der Eigenschaften Liste die **Items** -Eigenschaft angezeigt wird (wie in der Standardeinstellung). Legen Sie dann den Wert dieser Eigenschaft auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     MenuComponent.Items
     ```
 
@@ -147,8 +146,8 @@ Als Nächstes fügen Sie die Komponente einem Bildschirm hinzu und geben eine Ta
 
 1. Legen Sie die **Items** -Eigenschaft **MenuComponent_1** auf diese Formel fest:
 
-    ```powerapps-comma
-    Table({Item:"Home"}; {Item:"Admin"}; {Item:"About"}; {Item:"Help"})
+    ```powerapps-dot
+    Table({Item:"Home"}, {Item:"Admin"}, {Item:"About"}, {Item:"Help"})
     ```
 
     Diese Instanz ähnelt dieser Grafik, aber Sie können den Text und andere Eigenschaften jeder Instanz anpassen.
@@ -171,7 +170,7 @@ Bisher haben Sie eine Komponente erstellt und einer app hinzugefügt. Als Nächs
 
 1. Legen Sie auf der Registerkarte **erweitert** den Wert der **ausgewählten** Eigenschaft auf diesen Ausdruck fest, und passen Sie ggf. die Zahl im Katalognamen an:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected.Item
     ```
 
@@ -179,7 +178,7 @@ Bisher haben Sie eine Komponente erstellt und einer app hinzugefügt. Als Nächs
 
 1. Fügen Sie auf dem Standard Bildschirm der App eine Bezeichnung hinzu, und legen Sie deren **Text** -Eigenschaft auf diesen Ausdruck fest. passen Sie ggf. die Zahl im Komponentennamen an:
 
-    ```powerapps-comma
+    ```powerapps-dot
     MenuComponent_1.Selected
     ```
 
