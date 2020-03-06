@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Bearbeiten von Feldern für Common Data Service mit dem Power Apps-Portal | Microsoft-Dokumentation
+title: Erstellen und Bearbeiten von Feldern für Common Data Service über das powerapps-Portal | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/13/2019
 ms.reviewer: ''
@@ -19,101 +19,104 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 21e0d713608b2c0bddcf9dc7d292973f0f58259f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: HT
+ms.openlocfilehash: c8788aea002942bae7828411cec298592ea6e872
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861425"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404159"
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-power-apps-portal"></a>Erstellen und Bearbeiten von Feldern für Common Data Service mit dem Power Apps-Portal
+# <a name="create-and-edit-fields-for-common-data-service-using-power-apps-portal"></a>Erstellen und Bearbeiten von Feldern für Common Data Service über das powerapps-Portal
 
-Das [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Entitätsfelder mit dem Common Data Service zu erstellen und zu bearbeiten.
+Das [powerapps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) bietet eine einfache Möglichkeit zum Erstellen und Bearbeiten von Entitäts Feldern mit dem Common Data Service.
 
-PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. <br />Weitere Informationen: 
+Das Portal ermöglicht das Konfigurieren der am häufigsten verwendeten Optionen, aber bestimmte Optionen können nur mit dem Projektmappen-Explorer festgelegt werden. <br />Weitere Informationen: 
 - [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
-- [Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des Power Apps-Projektmappen-Explorers](create-edit-field-solution-explorer.md)
+- [Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des Projektmappen-Explorers](create-edit-field-solution-explorer.md)
 
-## <a name="view-fields"></a>Ansichtsfelder
+## <a name="view-fields"></a>Felder anzeigen
 
-1. Wählen Sie im [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
-2. Wählen Sie > **Daten** und **Entitäten** wählen Sie die Entität aus, die die Felder enthält, die Sie anzeigen möchten.
-3. Wenn die Registerkarte **Felder** ausgewählt ist, können Sie die folgenden Ansichten auswählen: 
+1. Wählen Sie im [powerapps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)-Portal **Daten** > **Entitäten** aus, und wählen Sie die Entität aus, die die Felder enthält, die Sie anzeigen möchten.
+2. Wenn die Registerkarte **Felder** ausgewählt ist, können Sie die folgenden Sichten auswählen: 
 
- |Ansicht|Beschreibung|
+ |Anzeigen|Beschreibung|
  |--|--|
- |**Alle**| Zeigt alle Felder der Entität an|
- |**Benutzerdefiniert**|Zeigt nur benutzerdefinierte Felder der Entität an|
- |**Standard**|Zeigt nur Standard-Felder der Entität an|
+ |**Allen**| Zeigt alle Felder für die Entität an.|
+ |**Ge**| Zeigt nur verwaltete Felder und Standard Felder für die Entität an.|
+ |**Zollunion**|Zeigt nur benutzerdefinierte Felder für die Entität an.|
+ |**Vorgegebene**|Zeigt nur die Standard Felder für die Entität an.|
 <!-- TODO: What is the actual difference between All and Default? -->
 
-## <a name="create-a-field"></a>Erstellen Sie ein neues Feld
+## <a name="create-a-field"></a>Ein Feld erstellen
 
-Während Felder angezeigt werden in der Befehlsleiste, klicken Sie auf  **Feld hinzufügen** um den Bereich **Feldeigenschaften** anzuzeigen.
+Klicken Sie beim Anzeigen der Felder in der Befehlsleiste auf **Feld hinzufügen** , um den **Bereich Feldeigenschaften** anzuzeigen.
 
 ![Feldeigenschaften](media/field-properties.png)
 
-
-Es sind nur drei Feldeigenschaften verfügbar:
+Anfänglich sind nur drei Feldeigenschaften verfügbar:
 
  |Eigenschaft|Beschreibung|
  |--|--|
- |**Anzeigename**|Der Text für das Feld auf der Benutzeroberfläche, der angezeigt werden soll.|
- |**Name**|Der eindeutige Name Ihrer Umgebung. Ein Name wird für Sie basierend auf dem Anzeigenamen generiert, die Sie eingegeben haben, aber Sie können ihn ändern, bevor Sie ihn speichern. Sobald ein Feld erstellt wurde, kann der Name nicht geändert werden, da er unter Umständen auf die Anwendungen oder Code verweist. Der Name hat folgendes Anpassungspräfix für den **Common Data Service Standardherausgeber** verwendet.|
- |**Datentyp**|Steuert, wie Werte gespeichert werden sowie wie sie in einigen Anwendungen formatiert werden. Sobald ein Feld gespeichert ist, können Sie den Datentyp nicht ändern, abgesehen von der Konvertierung von Feldern mit automatischer Nummerierung.|
+ |**Anzeigename**|Der Text, der für das Feld in der Benutzeroberfläche angezeigt werden soll.|
+ |**Name**|Der eindeutige Name in Ihrer Umgebung. Basierend auf dem anzeigen Amen, den Sie eingegeben haben, wird ein Name für Sie generiert, aber Sie können ihn vor dem Speichern bearbeiten. Nachdem ein Feld erstellt wurde, kann der Name nicht mehr geändert werden, da in Ihren Anwendungen oder Code darauf verwiesen werden kann. Der Name verfügt über das Anpassungs Präfix für den **Common Data Service Standard Herausgeber** , der ihm vorangestellt wird.|
+ |**Datentyp**|Steuert, wie Werte gespeichert werden und wie Sie in einigen Anwendungen formatiert werden. Nachdem ein Feld gespeichert wurde, können Sie den Datentyp nicht mehr ändern, mit Ausnahme von Textfeldern in automatische Umber Felder.|
+ |**Erforderlich**| Ein Datensatz kann in diesem Feld nicht ohne Daten gespeichert werden. |
+ |**Durchsuchbaren**| Dieses Feld wird unter Erweiterte Suche angezeigt und ist verfügbar, wenn Ansichten angepasst werden. |
+ |**Berechnetes oder Rollup**| Verwenden Sie, um manuelle Berechnungen zu automatisieren. Verwenden Sie Werte, Datumsangaben oder Text.|
+ |**Erweiterte Optionen**| Fügen Sie eine Beschreibung hinzu, und geben Sie eine maximale Länge und einen IME-Modus für das Feld an.
 
-Sie können auch weitere Optionen abhängig von der Auswahl von **Datentyp** festlegen.
+Sie können zusätzliche Optionen abhängig von der Auswahl des **Datentyps**festlegen.
 
-## <a name="field-data-types"></a>Felddatentypen
+## <a name="field-data-types"></a>Feld Datentypen
 
-Es gibt zahlreiche unterschiedlichen Arten Felder, aber Sie können nur einige davon erstellen. Weitere Informationen für alle Feldtypen unter [Feldttypen und Datenfeldertypen](types-of-fields.md)
+Es gibt viele verschiedene Arten von Feldern, aber Sie können nur einige davon erstellen. Weitere Informationen zu allen Typen von Feldern finden Sie unter [Typen von Feldern und Feld Datentypen](types-of-fields.md).
 
-Wenn ein Feld erstellt wird gibt**Datentyp** die folgenden Optionen:
+Wenn Sie ein Feld erstellen, bietet der **Datentyp** die folgenden Optionen:
 
 ### <a name="text"></a>Text 
 
-Standardtextfelder können bis zu 4.000 Zeichen speichern. Die Standardoption [Maximal zulässige Dauer](#max-length) wird auf einen niedrigeren Wert festgelegt, den Sie anpassen können.
+Standard Textfelder können bis zu 4.000 Zeichen speichern. Die Option [maximale Standardlänge](#max-length) ist auf einen niedrigeren Wert festgelegt, den Sie anpassen können.
 
 |Datentyp|Beschreibung|
 |--|--|
-|**Text**|Ein beabsichtigte Textwert, um ein einzeiliges Textfeld anzuzeigen.|
-|**Textbereich**|Ein beabsichtigte Textwert, um ein emehrzeiliges Textfeld anzuzeigen. Wenn Sie mehr als 4.000 Zeichen brauchen, verwenden Sie einen [Mehrzeiliger Text](#multi-line-field) Datentyp.|
-|**Email**|Ein Textwert überprüft die E-Mail-Adresse und wird als mailto Link im Feld gerendert. |
-|**URL**|Ein Textwert als URL validiert und gerendert als Link, um die URL zu öffnen.|
-|**Tickersymbol**|Ein Textwert für ein Tickersymbol, das einen Link anzeigt, der geöffnet wird, um ein Angebot für ein Börsentickersymbol anzuzeigen. |
-|**Telefonnummer**|Ein als Textwert überprüfte Telefonnummer gerendert als Link, um einen Telefonanruf einzuleiten mithilfe von Skype. |
-|**Automatische Nummerierung**|Eine anpassbare Kombination von Zahlen und Buchstaben, die automatisch von Server generiert wird, wenn der Datensatz erstellt wird. Weitere Informationen: [Felder mit automatischer Nummerierung](autonumber-fields.md). |
+|**Text**|Ein Textwert, der in einem einzeiligen Textfeld angezeigt werden soll.|
+|**Text Bereich**|Ein Textwert, der in einem mehrzeiligen Textfeld angezeigt werden soll. Wenn Sie mehr als 4.000 Zeichen benötigen, verwenden Sie einen [mehrzeiligen Text](#multi-line-field) Datentyp.|
+|**Email**|Ein Textwert, der als e-Mail-Adresse überprüft und als mailto-Link im Feld gerendert wird. |
+|**URL**|Ein Textwert, der als URL validiert und als Link zum Öffnen der URL gerendert wird.|
+|**Ticker-Symbol**|Ein Textwert für ein Ticker-Symbol, das einen Link anzeigt, der zum Anzeigen eines Angebots für das Aktien Ticker Symbol geöffnet wird. |
+|**Smartphone**|Ein Textwert, der als Link zum Initiieren eines Telefonanrufs mithilfe von Skype überprüft wird. |
+|**AutoNumber**|Eine anpassbare Kombination aus Zahlen und Buchstaben, die automatisch vom Server generiert wird, wenn der Datensatz erstellt wird. Weitere Informationen: [autonome Felder](autonumber-fields.md) |
 
-#### <a name="max-length"></a> Max. Länge 
+#### <a name="max-length"></a>Maximale Länge
 
-Felder, die Text speichern, haben ein absolutes Maximum, abhängig vom Typ. Die **Maximal Länge** von Optionen legt einen Werst fest, der niedriger als die maximal bestimmte der Umgebung ist. Sie können dieses Maximum erhöhen, aber Sie sollten es nicht senken, wenn Sie Daten im System haben, die den niedrigeren Wert übersteigen.
+Felder, in denen Text gespeichert ist, haben je nach Typ einen absoluten Höchstwert. Die Option **Max. Länge** legt einen niedrigeren Wert als den für Ihre Umgebung spezifischen maximalen Wert fest. Sie können diese maximale Länge erhöhen, Sie sollten Sie jedoch nicht verringern, wenn Sie über Daten im System verfügen, die den niedrigeren Wert überschreiten.
 
 ### <a name="whole-number"></a>Ganze Zahl
 
-Diese Felder speichern Daten als Zahlen aber enthalten andere Darstellungs- und Überprüfungsoptionen.
+In diesen Feldern werden Daten als Zahl gespeichert, aber es sind unterschiedliche Präsentations-und Validierungs Optionen enthalten.
 
 |Datentyp|Beschreibung|
 |--|--|
-|**Ganze Zahl**|Ein Zahlenwert dargestellt in einem Textfeld.|
-|**Dauer**|Ein Zahlenwert dargestellt als Dropdownliste, die Zeitintervalle enthält. Ein Benutzer kann einen Wert in der Liste auswählen oder einen ganzzahligen Wert eingeben, der die Anzahl von Minuten darstellt. Die Dauer muss im folgenden Format eingegeben werden: "x Minuten", "x Stunden" oder "x Tage". Stunden und Tagen können auch mit Dezimalstellen eingegeben werden, z. B. "x,x Stunden" oder "x,x Tage". Die Werte müssen in Minuten eingegeben werden. Unterminütige Werte werden auf die nächste Minute gerundet.|
-|**Zeitzone**|Ein Zahlenwert dargestellt als Dropdownliste, die Zeitzonen enthält.|
-|**Sprache**|Ein Zahlenwert als Dropdownliste, die eine Liste von Sprachen enthält, die für die Organisation aktiviert sind. Wenn keine anderen Sprachen aktiviert sind, ist die einzige Option die Ausgangssprache. Der gespeicherte Wert ist der Locale Identifier (LCID)-Wert für die Sprache.|
+|**Ganze Zahl**|Ein Zahlenwert, der in einem Textfeld angezeigt wird.|
+|**Auf**|Ein Zahlenwert, der als Dropdown Liste angezeigt wird, die Zeitintervalle enthält. Ein Benutzer kann einen Wert aus der Liste auswählen oder einen Ganzzahlwert eingeben, der die Anzahl von Minuten darstellt. Die Dauer muss im folgenden Format eingegeben werden: "x Minutes", "x Hours" oder "x Days". Stunden und Tage können auch mithilfe von Dezimalstellen eingegeben werden, z. b. "x. x Stunden" oder "x. x Tage". Die eingegebenen Werte müssen in Minuten ausgedrückt werden, und die Werte der untergeordneten Minute werden auf die nächste Minute gerundet.|
+|**Zeitzone**|Ein Zahlenwert, der als Dropdown Liste angezeigt wird, die eine Liste von Zeitzonen enthält.|
+|**Sprache**|Ein Zahlenwert, der als Dropdown Liste angezeigt wird, die eine Liste von Sprachen enthält, die für die Umgebung aktiviert wurden. Wenn keine anderen Sprachen aktiviert wurden, ist die Basissprache die einzige Option. Der gespeicherte Wert ist der Gebiets Schema Bezeichner (Locale Identifier, LCID) für die Sprache.|
 
 
-### <a name="date-time"></a>Datum/Uhrzeit
+### <a name="date-time"></a>Datum / Uhrzeit
 
-Verwenden Sie diese Felder, um Zeitwerte zu speichern. Sie können Werte so früh wie 1/1/1753 12:00 AM speichern.
+Verwenden Sie diese Felder, um Zeit Werte zu speichern. Sie können Werte so früh wie 1/1/1753 12:00 Uhr speichern.
 
 |Datentyp|Beschreibung|
 |--|--|
-|**Datum und Uhrzeit**|Geben Sie ein Datum und einen Wert ein.|
-|**Nur Datum**|Ein Datums- und Uhrzeitwert, der nur ein Datum anzeigt. Der Zeitwert wird gespeichert als 12:00 morgens (00:00: 00) im System.|
+|**Datum und Uhrzeit**|Ein Datums- und Uhrzeitwert.|
+|**Nur Datum**|Ein Datums-und Uhrzeitwert, der nur ein Datum anzeigt. Der Uhrzeitwert wird als 12:00 Uhr (00:00:00) im System gespeichert.|
 
-Sie können bestimmte **Verhalten** für Datum-Zeit-Fenster unter **Erweiterte Optionen** festlegen.
+Sie können auch ein bestimmtes **Verhalten** für Datums-/Uhrzeitfelder in den **erweiterten Optionen**festlegen.
 
-- **Ortszeit Benutzer** : Zeigt die Werte an, die in der aktuellen lokalen Zeitzone des Benutzers umgewandelt werden. Dies ist Standardeinstellung für dieses neue Feld.
-- **Nur Datum**: Dieses Verhalten ist für den Typ **Nur Datum** verfügbar. Zeigt Werte ohne Zeitzonenkonvertierung an. Verwenden Sie diese Option für Daten wie Geburtstage und Jahrestage.
-- **Zeitzonen unabhängig**: Zeigt Werte ohne Zeitzonenkonvertierung an.
+- **Lokaler Benutzer** : zeigt Werte an, die in in der lokalen Zeitzone des aktuellen Benutzers konvertiert werden. Dies ist die Standardeinstellung für neue Felder.
+- **Nur Datum**: Dieses Verhalten ist für den Typ " **nur Datum** " verfügbar. Zeigt Werte ohne Zeit Zonen Konvertierung an. Verwenden Sie dies für Daten wie Geburtstage und Jubiläen.
+- **Zeit Zonen unabhängig**: zeigt Werte ohne Zeit Zonen Konvertierung an.
 
 Weitere Informationen: [Verhalten und Format des Datums- und Uhrzeitfelds](behavior-format-date-time-field.md)
 
@@ -121,120 +124,122 @@ Weitere Informationen: [Verhalten und Format des Datums- und Uhrzeitfelds](behav
 
 |Datentyp|Beschreibung|
 |--|--|
-|**Währung**|Ein Geldbetrag für die Währung für die Umgebung konfiguriert. Sie können eine Präzisionsebene angeben, die Präzision auf einer bestimmten Währung basieren oder eine von der Organisation genutzte einzelne Standardpräzision verwenden. Mehr Informationen [Währungsfelder verwenden](types-of-fields.md#using-currency-fields)|
-|**Dezimalzahl**| Ein Dezimalwert mit bis zu 10 Dezimalpräzisionspunkten. Weitere Informationen: [Mithilfe des richtigen Typ der Anzahl](types-of-fields.md#using-the-right-type-of-number)|
-|**Gleitkommazahl**|Ein fließender Dezimalwert mit bis zu 5 Dezimalpräzisionspunkten. Weitere Informationen: [Mithilfe des richtigen Typ der Anzahl](types-of-fields.md#using-the-right-type-of-number)|
-|**Bild**|Zeigt ein einzelnes Bild pro Datensatz in der Anwendung an. Jede Entität kann über ein Bildfeld verfügen. Der **Name** den Sie eingeben, wenn ein Bildfeld ignoriert wird. Bildfelder werden immer 'EntityImage' genannt.|
-|**Mehrfachauswahl-Optionssatz**|Zeigt eine Liste von Optionen an, in der mehr als eine ausgewählt werden kann.|
-|<a name="multi-line-field"></a>**Mehrzeiliger Text**|Ein beabsichtigte Textwert, um ein emehrzeiliges Textfeld anzuzeigen. Beschränkt auf 1.048.576 Zeichen. Sie können eine tiefere [maximale Länge](#max-length) festlegen. |
-|**Optionssatz**|Zeigt eine Liste der Optionen an, n der nur eine ausgewählt werden kann.|
-|**Zwei Optionen**|Zeigt zwei Optionen an, von denen eine ausgewählt werden kann. Wählen Sie aus, welche Optionen für jede Option angezeigt werden soll. Die Standardwerte sind **Ja** und **Nein**.|
+|**Währung**|Ein Geld Wert für alle Währungen, die für die Umgebung konfiguriert sind. Sie können einen Genauigkeits Grad festlegen oder festlegen, dass die Genauigkeit auf eine bestimmte Währung oder eine einzelne von der Organisation verwendete Standardgenauigkeit basieren soll. Weitere Informationen: [Verwenden von Währungs Feldern](types-of-fields.md#using-currency-fields)|
+|**Dezimalzahl**| Ein Dezimalwert mit bis zu 10 Genauigkeits Punkten. Weitere Informationen: [Verwenden des richtigen Typs der Zahl](types-of-fields.md#using-the-right-type-of-number)|
+|**Datei**| Zum Speichern von Binärdaten.|
+|**Gleitkommazahl**|Eine Gleit Komma Zahl mit bis zu 5 Genauigkeits Punkten. Weitere Informationen: [Verwenden des richtigen Typs der Zahl](types-of-fields.md#using-the-right-type-of-number)|
+|**Bild**|Zeigt ein einzelnes Bild pro Datensatz in der Anwendung an. Jede Entität kann über ein Bildfeld verfügen. Der **Name** , den Sie beim Erstellen eines Bildfelds eingeben, wird ignoriert. Bildfelder werden immer als "entityimage" bezeichnet.|
+|**Nachschlagen**| Erstellt einen Verweis auf einen einzelnen Datensatz für einen einzelnen Zieldatensatz Typen.|
+|**Mehrfachauswahl-Options Satz**|Zeigt eine Liste von Optionen an, in denen mehrere Optionen ausgewählt werden können.|
+|<a name="multi-line-field"></a>**Mehrzeiligen Text**|Ein Textwert, der in einem mehrzeiligen Textfeld angezeigt werden soll. Auf maximal 1.048.576 Zeichen beschränkt. Sie können auch eine niedrigere [Maximale Länge](#max-length)festlegen. |
+|**Optionssatz**|Zeigt eine Liste von Optionen an, in denen nur eine ausgewählt werden kann.|
+|**Zwei Optionen**|Zeigt zwei Optionen an, in denen nur eine ausgewählt werden kann. Sie wählen aus, welche Bezeichnungen für die einzelnen Optionen angezeigt werden. Die Standardwerte **lauten "Yes** " und " **No**".|
 
-## <a name="save-new-field"></a>Neues Feld speichern
+## <a name="save-new-field"></a>Neues Feld Speichern
 
-Nachdem Sie den **Anzeigename**, **Name** und **Datentyp** ausgewählt haben, können Sie **Fertig** klicken, um den Bereich **Feldeigenschaften** zu schließen. 
+Nachdem Sie die Eigenschaften " **Anzeige Name**", " **Name** " und " **Datentyp** " festgelegt haben, können Sie auf " **durch** klicken" klicken, um den **Bereich** 
 
-Sie können den Vorgang fortsetzen, um die Entität zu bearbeiten und zusätzliche Felder hinzuzufügen oder das Bearbeiten des Felds in den Entwurfsstatus zurückversetzen und fortsetzen. Die Felder werden nicht erstellt, bis Sie **Entität speichern** klicken, sodass alle Änderungen für die Entität gespeichert werden.
+Sie können die Entität weiter bearbeiten und weitere Felder hinzufügen oder zurückkehren und die Bearbeitung dieses Felds fortsetzen. Die Felder werden erst erstellt, wenn Sie auf **Entität speichern** klicken, um alle Änderungen an der Entität zu speichern.
 
-![Speichern der Entitäts-Schaltfläche](media/save-entity-button.png)
+![Schaltfläche Entität speichern](media/save-entity-button.png)
 
-Sie können auch **Verwerfen** klicken, um die Änderungen zu verwerfen, die Sie ausgeführt haben.
+Sie können auch auf **verwerfen** klicken, um die vorgenommenen Änderungen zu verwerfen.
  
-## <a name="edit-a-field"></a>Bearbeiten eines Felds
+## <a name="edit-a-field"></a>Feld bearbeiten
 
-Während dem Anzeigen von Feldern klicken Sie auf das Feld, das Sie bearbeiten möchten. Sie können die Angaben zu **Anzeigename** ändern, aber Sie können **Name** und **Datentyp** nicht ändern, falls Sie Änderungen an der Entität gespeichert haben, die dem Feld hinzugefügt werden.
+Wählen Sie beim Anzeigen der Felder das Feld aus, das Sie bearbeiten möchten. Sie können den **anzeigen Amen** ändern, aber Sie können den **Namen** und den **Datentyp** nicht ändern, wenn Sie Änderungen an der Entität gespeichert haben, um das Feld hinzuzufügen.
 
 ### <a name="general-properties"></a>Allgemeine Eigenschaften
-Jedes Feld hat folgende Feldeigenschaften, die Sie ändern können:
+Jedes Feld verfügt über die folgenden Eigenschaften, die Sie ändern können:
 
 |Eigenschaft|Beschreibung|
 |--|--|
-|**Erforderlich**|Wenn dies ausgewählt ist, kann der Datensatz nicht ohne Daten in diesem Feld gespeichert werden.|
-|**Durchsuchbar**|Legen Sie das auf Nein für Felder für die Entität fest, die Sie nicht verwenden.  Wenn ein Feld durchsuchbar ist, wird es in der **erweiterten Suche** angezeigt und ist verfügbar, wenn Ansichten angepasst werden. Durch die Einstellung auf Nein wird die Anzahl von Optionen reduziert, die den Benutzern angezeigt werden, wenn sie die erweiterte Suche verwenden.|
-|**Beschreibung**|Gesucht in **Erweiterte Optionen**. Geben Sie Instruktionen für den Benutzer ein, um was es sich beim Feld handelt. Diese Beschreibung erscheint als Quickinfo für den Benutzer in Modell-angetriebenen Apps, wenn diese mit der Maus über die Beschriftung des Felds fahren.|
+|**Erforderlich**|Wenn diese Option ausgewählt ist, kann ein Datensatz nicht ohne Daten in diesem Feld gespeichert werden.|
+|**Durchsuchbaren**|Deaktivieren Sie diese Option für Felder für die Entität, die Sie nicht verwenden.  Wenn ein Feld durchsuchbar ist, wird es unter **Erweiterte Suche** angezeigt und ist verfügbar, wenn Ansichten angepasst werden. Wenn Sie diese Option deaktivieren, wird die Anzahl der Optionen verringert, die Personen mithilfe der erweiterten Suche angezeigt werden.|
+|**Beschreibung**|Gefunden in **erweiterten Optionen**. Geben Sie dem Benutzeranweisungen zum Zweck des Felds. Diese Beschreibungen werden als Quick Infos für den Benutzer in Modell gesteuerten apps angezeigt, wenn Sie mit der Maus auf die Bezeichnung des Felds zeigen.|
 
 > [!NOTE]
-> **Felder erforderlich machen**: Geben Sie acht, wenn Sie die erforderlichen Felder erstellen. Benutzer werden die Anwendung nicht nutzen, wenn sie Datensätze nicht speichern können, weil ihnen die für ein erforderliches Feld benötigten Daten fehlen. Möglicherweise geben sie dann einfach falsche Daten ein, nur, um weiterarbeiten zu können.
+> **Erstellen von Feldern erforderlich**: gehen Sie vorsichtig vor, wenn Sie Felder benötigen. Personen können die Anwendung nicht verwenden, wenn Sie keine Datensätze speichern können, weil Sie nicht über die richtigen Informationen verfügen, um Sie in ein Pflichtfeld einzugeben. Personen können falsche Daten eingeben, um den Datensatz zu speichern und mit der Arbeit zu arbeiten.
 >
->**Anforderungen dynamisch festlegen**: In Modell-angetriebenen Apps können Sie Geschäftsregeln oder Formularskripts verwenden, um die Erforderlichkeitsstufe zu ändern, wenn sich die Daten in dem Datensatz ändern. Weitere Informationen: [Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung einer Logik in einem Formular](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md)
+>**Dynamische Festlegung von Anforderungen**: in Modell gesteuerten Apps können Sie Geschäftsregeln oder Formular Skripts verwenden, um die Anforderungs Ebene zu ändern, da die Daten im Datensatz geändert werden, wenn Benutzer daran arbeiten. Weitere Informationen: [Erstellen von Geschäftsregeln und Empfehlungen zum Anwenden von Logik in einem Formular](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md)
 >
->**Verfügbarkeit der erweiterten Suche**: Die erweiterte Suche ist nur für Modell-angetriebene Apps mithilfe des Webclients derzeit verfügbar. Die erweiterte Suche ist zurzeit in Einheitlichen Oberflächen Clients nicht verfügbar.
+>**Erweiterte Such Verfügbarkeit**: die erweiterte Suche ist derzeit nur für Modell gesteuerte apps verfügbar, die den WebClient verwenden. Die erweiterte Suche ist derzeit nicht in Unified Interface-Clients verfügbar.
 
-## <a name="calculated-or-rollup"></a>Berechnet oder Rollup
+## <a name="calculated-or-rollup"></a>Berechnetes oder Rollup
 
-Sie können ein benutzerdefiniertes Feld als **berechnet** oder als **Rollup**-Feld festlegen. Felder, die keine berechneten oder Rollup-Felder sind werden manchmal *einfache* Felder genannt.
+Sie können ein benutzerdefiniertes Feld als **berechnetes** Feld oder **Rollup** -Feld festlegen. Felder, bei denen es sich nicht um berechnete oder Rollup-Felder handelt, werden mitunter als *einfache* Felder bezeichnet.
 
 ### <a name="calculated"></a>Berechnet
 
-Mit einem berechneten Feld können Sie eine Formel eingeben, um einen Wert für das Feld zuzuweisen. Diese Daten können auf berechnete Felder festgelegt werden: **Währung**, **Datum und Uhrzeit**, **Nur Datum**, **Dezimalzahl**, **Dauer**, **E-Mail**, **Sprache**, **mehrfach ausgewählter Optionssatz**, **Optionssatz**, **Text**, **Textbereich**, **Börsenkürzel**, **Zeitzone**, **Zwei Optionen**, **URL** und **Ganze Zahl**.
+Mit einem berechneten Feld können Sie eine Formel eingeben, um dem Feld einen Wert zuzuweisen. Diese Datentypen können auf berechnete Felder festgelegt werden: **Währung**, **Datum und Uhrzeit**, **nur Datum**, **Dezimalzahl**, **Dauer**, **e-Mail**, **Sprache**, **Mehrfachauswahl-Options Satz**, **options Satz**, **Text**, **Textbereich**, **ticksymbol**, **Zeitzone**, **zwei Optionen**, **URL**und **ganze Zahl**.
 
-Weitere Informationen [Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](define-calculated-fields.md)
+Weitere Informationen: [Definieren von berechneten Feldern zum Automatisieren manueller Berechnungen](define-calculated-fields.md)
 
 ### <a name="rollup"></a>Rollup
 
-Mit ein Rollupfeld können Sie Aggregationsfunktionen festlegen, die regelmäßig ausgeführt werden, um einen Zahlenwert für das Feld festlegen. Diese Daten können auf ein berechnetes Feld festgelegt werden: **Währung**, **Datum und Uhrzeit**, **Nur Datum**, **Dezimalzahl**, **Dauer**, **Sprache**, **Zeitzone** und **Ganze Zahl**.
+Mit einem Rollup-Feld können Sie Aggregations Funktionen festlegen, die regelmäßig ausgeführt werden, um einen Zahlenwert für das Feld festzulegen. Diese Datentypen können auf berechnete Felder festgelegt werden: **Währung**, **Datum und Uhrzeit**, **nur Datum**, **Dezimalzahl**, **Dauer**, **Sprache**, **Zeitzone**und **ganze Zahl**.
 
-Weitere Informationen: [Definieren der Rollupfelder für die Gesamtwerte](define-rollup-fields.md)
+Weitere Informationen: [Definieren von Rollupfeldern, die Werte aggregieren](define-rollup-fields.md)
 
-## <a name="number-field-options"></a>Nummernfeldoptionen
+## <a name="number-field-options"></a>Zahlenfeld Optionen
 
-Jeder Typ Zahlenfeld hat absolute minimale und maximale Werte. Sie können einen entsprechenden **Minimalen Wert** und **Maximalen Wert** in diesen absoluten Werte festlegen. Tun Sie dies, um Common Data Service die Werte für die Daten prüfen zu lassen, die Sie im Feld speichern möchten.
+Jede Art von Zahlenfeld hat absolute Mindest-und Höchstwerte. Sie können den entsprechenden **Minimal** -und **Maximalwert** in diesen absoluten Werten festlegen. Damit Common Data Service die Werte für die Daten überprüfen, die Sie im Feld speichern möchten.
 
-Für **Gleitkommazahl** und **Dezimalzahl** Datentypen können Sie einige **Dezimalstellen** angeben.
+Für Gleit **Komma Zahlen** -und **Dezimalzahl** Datentypen können Sie eine Anzahl von **Dezimalstellen**angeben.
 
 
-## <a name="option-set-field-options"></a>Optionssatzfeldoptionen
+## <a name="option-set-field-options"></a>Optionsfeld Optionen festlegen
 
-Felder, die einen Satz von Optionen bereitstellen, können ihren eigenen Satz von *lokalen* Optionen haben oder sich auf *globale* Optionen festlegen, die in mehreren Feldern verwendet werden können.
+Felder, die eine Reihe von Optionen bereitstellen, können Ihren eigenen Satz *lokaler* Optionen einschließen oder auf einen gemeinsamen Satz *globaler* Optionen verweisen, die von mehreren Feldern verwendet werden können.
 
-Verwenden eines globalen Optionssatzes ist dann von Nutzen, wenn Sie denselben Satz von Optionen für mehrere Felder erstellen möchten. Durch einen globalen Optionssatzes müssen Sie nur die Gruppe von Optionen von einem Ort verwalten. 
+Die Verwendung eines globalen Options Satzes ist wertvoll, wenn Sie den gleichen Satz von Optionen für mehrere Felder erstellen. Wenn eine globale Option festgelegt ist, müssen Sie den Satz von Optionen nur an einem Ort aufbewahren. 
 
-Wenn Sie **mehrfach ausgewählter Optionssatz** oder **Optionssatz** auswählen, ist der Datentyp der Liste eine Ansicht, die die verfügbaren globalen Optionssätze festlegt, damit Sie die Option auswählen und bereitstellen können als **Neuer Optionssatz**.
+Wenn Sie die **Option Mehrfachauswahl festlegen** oder Datentyp **festlegen** auswählen, listet der Designer eine Reihe von verfügbaren globalen Options Sätzen auf, aus denen Sie wählen können. Sie können auch die Option zum Erstellen eines **neuen Options Satzes**angeben.
 
-![Optionssatz-Typ wählen](media/option-set-options.png)
+![Options fest gelegungstyp auswählen](media/option-set-options.png)
 
-Wenn Sie **Neuer Optionssatz** auswählen, wird basierend darauf ein neuer globaler Optionssatz erstellt.
-
-> [!NOTE]
-> Wenn Sie die Optionen für einen  neuen globalen Optionssatz bearbeiten, sind **Anzeigename** und **Name**-Wert für den globalen Optionssatz anstelle für das Feld. Die Standardwerte entsprechen dem Feldwert, jedoch können Sie sie ändern, während Sie den globalen Optionssatz bearbeiten, sodass Sie sich vom Feld unterscheiden, das Sie gerade erstellen.
-
-Wenn Sie einen lokalen Optionssatz erstellen möchten, müssen Sie **Weitere anzeigen** klicken und **Lokaler Optionssatz** auswählen.
-
-![Lokaler Optionssatz](media/local-option-set.png)
+Wenn Sie die **Option neu** auswählen, legen Sie das Standardverhalten fest, um einen neuen globalen Options Satz zu erstellen.
 
 > [!NOTE]
-> Wenn Sie jeden Optionssatz als globalen Optionssatz in der Liste der globalen Optionssätze definieren, wächst diese Liste und könnte zum Verwalten schwierig werden. Wenn Sie wissen, dass der Datensatz von Optionen nur an einer Stelle verwendet wird, verwenden Sie einen lokalen Optionssatz.
+> Beim Bearbeiten von Optionen für einen neuen globalen Options Satz sind der **Anzeige Name** und die **namens** Werte für die globale Options Menge und nicht für das Feld. Die Standardwerte entsprechen den Feldwerten, aber Sie können Sie bearbeiten, während Sie die globale Option so bearbeiten, dass Sie sich von dem Feld unterscheidet, das Sie gerade erstellen.
+
+Wenn Sie einen lokalen Options Satz erstellen möchten, klicken Sie auf **mehr anzeigen** , und wählen Sie **lokale Options Satz**aus.
+
+![Lokaler Options Satz](media/local-option-set.png)
+
+> [!NOTE]
+> Wenn Sie jede Option festlegen, die als globale Option festgelegt ist, wird die Liste der globalen Optionssätze vergrößert, und es kann schwierig sein, Sie zu verwalten. Wenn Sie wissen, dass der Satz von Optionen nur an einem Ort verwendet wird, verwenden Sie einen lokalen Options Satz.
 
 [!INCLUDE [cc_remove-option-warning](../../includes/cc_remove-option-warning.md)]
 
 ## <a name="delete-a-field"></a>Löschen eines Felds
 
-Als Benutzer mit der Sicherheitsrolle "Systemadministrator" können Sie benutzerdefinierte Felder löschen, die nicht Teil einer verwalteten Lösung sind. Wenn Sie Felder löschen, werden alle Daten in den Feldern gelöscht. Die einzige Möglichkeit, Daten aus einem Feld wiederherzustellen, das entfernt wurde, besteht darin, die Datenbank von einem Zeitpunkt wiederherzustellen, bevor das Feld gelöscht wurde.
+Mit der Sicherheitsrolle "Systemadministrator" können Sie alle benutzerdefinierten Felder löschen, die nicht Teil einer verwalteten Lösung sind. Wenn Sie Felder löschen, werden alle in den Feldern gespeicherte Daten gelöscht. Daten aus einem gelöschten Feld können nur durch Wiederherstellen der Datenbank von einem Zeitpunkt vor dem Löschen des Felds wiederhergestellt werden.
 
 > [!NOTE]
-> Vor dem Löschen eines benutzerdefinierten Feldes müssen Sie alle Abhängigkeiten in anderen Lösungskomponenten entfernen. 
+> Bevor Sie ein benutzerdefiniertes Feld löschen können, müssen Sie alle Abhängigkeiten entfernen, die möglicherweise in anderen Lösungskomponenten vorhanden sind. 
 
-Während dem [Anzeigen von Feldern](#view-fields) wählen Sie ein benutzerdefiniertes Feld aus, das in der Liste gelöscht werden kann und klicken auf die Schaltfläche **Befehl löschen** in der Befehlsleiste.
+Wenn Sie beim [Anzeigen von Feldern](#view-fields)ein benutzerdefiniertes Feld auswählen, das in der Liste gelöscht werden kann, wird der Befehl **Feld löschen** angezeigt, und ist aktiviert.
 
 ![Löschen eines Felds mithilfe des Portals](media/delete-field-portal.png)
 
-Verwenden Sie den Befehl **Feld löschen**, um das Feld zu löschen. Wenn Sie das Feld gelöscht haben, müssen Sie die Änderungen an der Entität speichern.
+Verwenden Sie den Befehl **Feld löschen** , um das Feld zu löschen. Nachdem Sie das Feld gelöscht haben, müssen Sie die Änderungen an der Entität speichern.
 
-![Speichern einer Entität, nach dem das Feld gelöscht wurde](media/delete-field-portal-save-entity.png)
+![Entität nach dem Löschen des Felds speichern](media/delete-field-portal-save-entity.png)
 
 > [!NOTE]
-> Wenn eine Fehlermeldung angezeigt, die zu den Abhängigkeiten verknüpft ist, müssen Sie den Lösungsexplorer verwenden, um die Abhängigkeiten zu ermitteln. Weitere Informationen: [Feldabhängigkeiten überprüfen](create-edit-field-solution-explorer.md#check-field-dependencies)
+> Wenn ein Fehler im Zusammenhang mit Abhängigkeiten auftritt, müssen Sie den Projektmappen-Explorer verwenden, um Abhängigkeiten zu erkennen. Weitere Informationen: [Überprüfen von Feld Abhängigkeiten](create-edit-field-solution-explorer.md#check-field-dependencies)
 
 ## <a name="ime-mode"></a>IME-Modus
 
-Alle Felder, die direkte Texteingabe ermöglichen, haben einen IME-Modus. Der Eingabemethoden-Editor (IME) wird für ostasiatische Sprachen wie Japanisch verwendet. IMEs ermöglichen Benutzern die Eingabe von Tausenden von ostasiatischen Schriftzeichen über eine normale Tastatur mit 101 Tasten.
+Jedes der Felder, die eine direkte Texteingabe bereitstellen, verfügt über einen IME-Modus. Der Eingabemethoden-Editor (IME) wird für ostasiatische Sprachen wie Japanisch verwendet. Mit "IMEs" kann der Benutzer die Tausenden verschiedener Zeichen, die in ostasiatischen Sprachen geschrieben wurden, mithilfe einer Standardtastatur für 101-Tasten eingeben.
 
 
 
 ### <a name="see-also"></a>Siehe auch  
 [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)<br />
-[Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des Power Apps-Projektmappen-Explorers](create-edit-field-solution-explorer.md)<br />
-[Feldtypen und Felddatentypen](types-of-fields.md)<br />
-[Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](define-calculated-fields.md)<br />
-[Definition von Rollupfeldern, die Werte aggregieren](define-rollup-fields.md)<br />
-[ Verhalten und Format des Datums- und Uhrzeitfelds.](behavior-format-date-time-field.md)
+[Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des Projektmappen-Explorers](create-edit-field-solution-explorer.md)<br />
+[Typen von Feldern und Feld Datentypen](types-of-fields.md)<br />
+[Definieren berechneter Felder zum Automatisieren von manuellen Berechnungen](define-calculated-fields.md)<br />
+[Definieren von Rollup-Feldern, die Werte aggregieren](define-rollup-fields.md)<br />
+[Verhalten und Format des Felds „Datum und Uhrzeit“](behavior-format-date-time-field.md)
