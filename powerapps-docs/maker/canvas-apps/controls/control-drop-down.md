@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cc9b12f6cf899d0a57e56eda9fe0dd4bc5ba6c2e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723112"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403987"
 ---
 # <a name="drop-down-control-in-power-apps"></a>Dropdown-Steuerelement in powerapps
 Eine Liste, die nur das erste Element anzeigt, bis der Benutzer sie öffnet.
@@ -34,7 +33,7 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
   
 **Value**: Die Datenspalte, die Sie im Steuerelement anzeigen möchten (z.B., wenn eine Datenquelle mehrere Spalten besitzt).
 
-**Ausgewählt** – der Datensatz, der das ausgewählte Element darstellt.
+**Selected**: Der Datensatz, der das ausgewählte Element darstellt.
 
 " **Zuweisung** " – gibt an, ob das Steuerelement eine leere Auswahl anzeigt, wenn kein Element ausgewählt wurde. App-Benutzer können Ihre Auswahl auch löschen, indem Sie das leere Element auswählen.
 
@@ -91,7 +90,7 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 
 **[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem oberen Rand des Steuerelements.
 
 **[PressedBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
@@ -99,13 +98,13 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
-**SelectedText (veraltet)** – ein Zeichen folgen Wert, der das ausgewählte Element darstellt.
+**SelectedText (veraltet)** : ein Zeichenfolgenwert, der das ausgewählte Element darstellt
 
 **[SelectionColor](properties-color-border.md)** : Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.
 
-**[SelectionFill](properties-color-border.md)** : gibt die Hintergrundfarbe der ausgewählten Elemente in einer Liste oder eines ausgewählten Bereichs des Stift-Steuerelements an.
+**[SelectionFill](properties-color-border.md)** : Die Hintergrundfarbe des ausgewählten Elements oder der Elemente in einer Liste oder eines ausgewählten Bereichs eines Stift-Steuerelements.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -113,7 +112,7 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -131,7 +130,7 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 
 1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf diesen Ausdruck fest:
 
-    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
@@ -144,19 +143,19 @@ Die Prinzipien in diesem Verfahren gelten für jede [Datenquelle, die Tabellen b
 
 1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-    `Distinct(Accounts; address1_city)`
+    `Distinct(Accounts, address1_city)`
 
     Diese Formel zeigt alle Städte in dem Element **Konten** (Accounts) an. Wenn mehr als ein Datensatz die gleiche Stadt besitzt, versteckt die **[Distinct](../functions/function-distinct.md)** -Funktion die Duplizierung in Ihrem Dropdown-Steuerelement.
 
 1. (optional) Benennen Sie Ihr **Dropdown**-Steuerelement in **Cities** (Städte) um, fügen Sie ein vertikales **Gallery**-Steuerelement (Katalog) hinzu, und legen Sie die **[Items](properties-core.md)** -Eigenschaft des Katalogs auf diese Formel fest:
 
-    `Filter(Accounts; address1_city = Cities.Selected.Value)`
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Diese **[Filter](../functions/function-filter-lookup.md)** -Funktion zeigt nur die Datensätze im **Accounts**-Element (Konten) an, bei denen die Stadt zu dem ausgewählten Wert im Steuerelement **Cities** (Städte) passt.
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **ChevronFill** und **ChevronBackground**
 * **ChevronHoverFill** und **ChevronHoverBackground**
 * **SelectionColor** und **SelectionFill**

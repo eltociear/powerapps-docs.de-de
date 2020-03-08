@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1322fd34f4e3a59a62a414fc0e2e7ccca48fc99f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731970"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403860"
 ---
 # <a name="text-input-control-in-power-apps"></a>Text Eingabe-Steuerelement in powerapps
 Ein Feld, in das der Benutzer Text, Zahlen und andere Daten eingeben kann
@@ -28,7 +27,7 @@ Ein Feld, in das der Benutzer Text, Zahlen und andere Daten eingeben kann
 Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement eingibt. Abhängig davon, wie Sie die App konfigurieren, werden diese Daten möglicherweise zu einer Datenquelle hinzugefügt, dazu verwendet, einen temporären Wert zu berechnen oder auf eine andere Weise eingebunden.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
+**[Default](properties-core.md)** : Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.
 
 **[Text](properties-core.md)** – Text, der in einem Steuerelement angezeigt wird oder von einem Benutzer in ein Steuerelement eingegeben wird.
 
@@ -99,7 +98,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 
 **[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem oberen Rand des Steuerelements.
 
 **[PressedBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
@@ -115,7 +114,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 
 **[RadiusTopRight](properties-size-location.md)** – Der Grad der Rundung der rechten oberen Ecke eines Steuerelements.
 
-**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -123,7 +122,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -146,7 +145,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie eine Schaltfläche hinzu, legen Sie ihre **[Text](properties-core.md)** -Eigenschaft auf **Add** (Hinzufügen) und ihre **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
-   **Collect(Names; {FirstName:inputFirst.Text; LastName:inputLast.Text})**
+   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder zu [anderen Funktionen](../formula-reference.md)?
 3. Fügen Sie einen Textkatalog im Hochformat hinzu, legen sie seine **[Items](properties-core.md)** -Eigenschaft auf **Names** und seine **[Text](properties-core.md)** -Eigenschaft von **Subtitle1** auf **ThisItem.FirstName** fest.
@@ -159,7 +158,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 1. Fügen Sie ein Texteingabe-Steuerelement hinzu, nennen Sie es **inputPassword**, und legen Sie seine **Mode**-Eigenschaft auf **Password** fest.
 
 1. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:<br>
-   **If(inputPassword.Text = "P@ssw0rd"; "Access granted"; "Access denied")**
+   **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
 
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
@@ -167,7 +166,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 
     Wenn Sie mit der Eingabe des Kennworts fertig sind, zeigt die Bezeichnung nicht mehr **Access denied** (Zugriff verweigert) sondern **Access granted** (Zugriff gewährt) an.
 
-1. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+1. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 1. (Optional:) Fügen Sie ein Steuerelement wie z.B. einen Pfeil hinzu, konfigurieren Sie es so, dass es zu einem anderen Bildschirm navigiert, und lassen Sie es erst anzeigen, wenn der Benutzer das Kennwort eingegeben hat.
 

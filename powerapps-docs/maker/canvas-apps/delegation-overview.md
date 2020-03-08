@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1d98f01920dbcbf960b1e2bb21159586318e0386
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679590"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403557"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Grundlagen der Delegierung in einer Canvas-App
 Powerapps enthält eine Reihe leistungsfähiger Funktionen zum Filtern, Sortieren und Strukturieren von Tabellen von Daten in einer Canvas-App: die Funktionen " **[Filter](functions/function-filter-lookup.md)** ", " **[Sort](functions/function-sort.md)** " und " **[AddColumns](functions/function-table-shaping.md)** ", um nur ein paar zu benennen. Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen. Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.
@@ -94,10 +93,10 @@ Andere Aggregatfunktionen wie **[StdevP](functions/function-aggregates.md)** und
 
 Wie in diesem Beispiel verwenden die Hersteller häufig **AddColumns** und **Lookup** , um Informationen aus einer Tabelle in eine andere zusammenzuführen, die häufig als Join in der Datenbanksprache bezeichnet wird:
 
-```powerapps-comma
-AddColumns( Products; 
-    "Supplier Name"; 
-    LookUp( Suppliers; Suppliers.ID = Product.SupplierID ).Name 
+```powerapps-dot
+AddColumns( Products, 
+    "Supplier Name", 
+    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
 )
 ```
 

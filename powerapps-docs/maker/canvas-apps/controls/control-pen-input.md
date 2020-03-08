@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a5645f2f0d515d7eca125f3cd89ecff0c63cfa51
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729062"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404051"
 ---
 # <a name="pen-input-control-in-power-apps"></a>Stift Eingabe-Steuerelement in powerapps
 Ein Steuerelement, mit dem der Benutzer Bereiche eines Bildes zeichnen, löschen oder markieren kann.
@@ -30,7 +29,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Image**: Ausgabeeigenschaft, die das vom Endbenutzer gezeichnete Bild repräsentiert.
 
-**[Color](properties-color-border.md)**  – Die Farbe der Eingabestriche.
+**[Color](properties-color-border.md)** – Die Farbe der Eingabestriche.
 
 **Mode** – Das Steuerelement ist im Modus **Draw** oder **Erase**.  Der Modus „Select“ ist veraltet.
 
@@ -57,11 +56,11 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 
 **SelectionThickness**: Die Stärke des Auswahltools für ein Stifteingabe-Steuerelement.
 
-**ShowControls**: Gibt beispielsweise an, ob für einen Audio- oder Videoplayer eine Schaltfläche für die Wiedergabe und ein Lautstärkeregler und für ein Stift-Steuerelement Symbole zum Zeichnen oder Löschen angezeigt werden.
+**ShowControls** – Gibt an, ob ein Audio- oder Videoplayer, z.B. eine Schaltfläche für Wiedergabe und ein Lautstärkeregler, und ein Stift-Steuerelement angezeigt wird, z.B. Symbole zum Zeichnen oder Löschen.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -72,7 +71,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Collect**( *CollectionName*; *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
+[**Collect**( *CollectionName*, *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
 
 ## <a name="example"></a>Beispiel
 ### <a name="create-a-set-of-images"></a>Erstellen Sie einen Satz von Bildern
@@ -81,7 +80,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein Steuerelement **[Button](control-button.md)** hinzu, verschieben Sie es unter **MyDoodles**, und legen Sie die Eigenschaft **[Text](properties-core.md)** des Steuerelements **[Button](control-button.md)** so fest, dass **Add** angezeigt wird.
 3. Legen Sie die Eigenschaft **[OnSelect](properties-core.md)** des Steuerelements **[Button](control-button.md)** auf die folgende Formel fest:<br>
-   **Collect(Doodles; {Sketch:MyDoodles.Image})**
+   **Collect(Doodles, {Sketch:MyDoodles.Image})**
 4. Fügen Sie ein Steuerelement **Image gallery** hinzu, verschieben Sie es unter das Steuerelement **[Button](control-button.md)** , und verkleinern Sie die Breite des **Image gallery**, bis drei Elemente angezeigt werden.
 5. Legen Sie die Eigenschaft **[Items](properties-core.md)** des Steuerelements **Image gallery** auf **Doodles** fest, und drücken Sie anschließend F5.
 6. Zeichnen Sie ein Bild in **MyDoodles**, und klicken oder tippen Sie anschließend auf das Steuerelement **[Button](control-button.md)** .
@@ -89,7 +88,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
     Das Bild, das Sie gezeichnet haben, wird im Steuerelement **Image gallery** angezeigt.
 7. (optional) Klicken oder tippen Sie im Steuerelement **Pen input** auf das Symbol, um das gezeichnete Bild zu löschen, zeichnen Sie ein anderes Bild, und klicken oder tippen Sie auf das Steuerelement **[Button](control-button.md)** .
 8. Legen Sie im Steuerelement **Image gallery** die Eigenschaft **[OnSelect](properties-core.md)** des Steuerelements **[Image](control-image.md)** auf diese Formel fest:<br>
-   **Remove(Doodles; ThisItem)**
+   **Remove(Doodles, ThisItem)**
 9. Entfernen Sie eine Zeichnung, indem Sie auf das Steuerelement **Image gallery** klicken oder tippen.
 
 Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)** -Funktion, um Ihre Zeichnungen lokal zu speichern, oder die **[Patch](../functions/function-patch.md)** -Funktion zur Speicherung in einer Datenquelle.
@@ -97,7 +96,7 @@ Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)** -Fu
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[BorderColor](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn es einen Rahmen gibt
 * **[Fill](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn es keinen Rahmen gibt
 

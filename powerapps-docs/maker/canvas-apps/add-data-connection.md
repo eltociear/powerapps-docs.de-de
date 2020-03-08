@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724924"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404569"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>Hinzufügen einer Datenverbindung zu einer Canvas-app in Power apps
 
@@ -27,11 +27,11 @@ Fügen Sie in powerapps einer vorhandenen Canvas-APP oder einer APP, die Sie von
 Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten aus dieser Datenquelle in der App anzuzeigen und zu verwalten; siehe folgende Beispiele:
 
 * Verbinden mit OneDrive und Verwalten von Daten in einer Excel-Arbeitsmappe in Ihrer App.
-* Verbinden mit Twilio und Senden einer SMS-Nachricht von Ihrer App.
+* Verbinden mit Twilio und senden einer SMS-Nachricht von Ihrer App.
 * Stellen Sie eine Verbindung mit Common Data Service her, und aktualisieren Sie eine Entität von Ihrer APP.
 * Herstellen einer Verbindung mit SQL Server und Aktualisieren einer Tabelle aus Ihrer App.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 [Registrieren](../signup-for-powerapps.md) Sie sich für powerapps, und [melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich dann mit den Anmelde Informationen an, die Sie bei der Registrierung verwendet haben.
 
@@ -57,7 +57,7 @@ Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten au
 
 1. Wählen Sie **neue Verbindung** aus, um eine Liste der Verbindungen anzuzeigen.
 
-    ![Hinzufügen einer Verbindung](./media/add-data-connection/add-connection.png)
+    ![Verbindung hinzufügen](./media/add-data-connection/add-connection.png)
 
 1. Geben Sie in der Suchleiste die ersten Buchstaben der gewünschten Verbindung ein, oder fügen Sie Sie ein, und wählen Sie dann die Verbindung aus, wenn Sie angezeigt wird.
 

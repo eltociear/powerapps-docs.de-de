@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 66de4ee34cf52f3c351fe3f9c624596e5dd1211d
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649843"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404005"
 ---
 # <a name="label-control-in-canvas-apps"></a>Label-Steuerelement in Canvas-apps
 
@@ -31,7 +30,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 ## <a name="key-properties"></a>Haupteigenschaften
 
-**[AutoHeight](properties-core.md)** – auf true festgelegt, um der Bezeichnung zu ermöglichen, die Höhe automatisch zu vergrößern, um den gesamten Text anzuzeigen. Durch Festlegen auf FALSE wird der Text auf die zugewiesene Größe abgeschnitten.
+**[AutoHeight](properties-core.md)** – auf true festgelegt, um der Bezeichnung zu ermöglichen, die Höhe automatisch zu vergrößern, um den gesamten Text anzuzeigen. Bei „false“ wird der Text für die zugewiesene Größe abgeschnitten.
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
@@ -97,7 +96,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 **[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem oberen Rand des Steuerelements.
 
 **[PressedBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
@@ -113,7 +112,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -131,7 +130,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Text**( *Zahl*; "*CodesFormatieren*" )](../functions/function-text.md)
+[**Text**( *Zahl*, "*CodesFormatieren*" )](../functions/function-text.md)
 
 ## <a name="examples"></a>Beispiele
 
@@ -139,7 +138,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 * Fügen Sie eine Bezeichnung hinzu, und legen Sie deren **[Text](properties-core.md)** -Eigenschaft auf **"Hello, world"** fest (einschließlich der doppelten Anführungszeichen).
   
-    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
 ### <a name="show-the-result-of-a-formula"></a>Anzeigen des Ergebnisses einer Formel
 
@@ -156,7 +155,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 In diesem Verfahren erstellen Sie eine Sammlung mit dem Namen **CityPopulations**, die Daten über die Bevölkerung verschiedener Städte in Europa enthält. Als Nächstes zeigen Sie diese Daten in einem Katalog an, der drei Bezeichnungen enthält, und geben den Datentyp an, der in jeder Bezeichnung angezeigt wird.
 
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](properties-core.md)** auf diese Formel fest:<br>
-   **ClearCollect(CityPopulations; {City:"London"; Country:"United Kingdom"; Population:8615000}; {City:"Berlin"; Country:"Germany"; Population:3562000}; {City:"Madrid"; Country:"Spain"; Population:3165000}; {City:"Rome"; Country:"Italy"; Population:2874000}; {City:"Paris"; Country:"France"; Population:2273000}; {City:"Hamburg"; Country:"Germany"; Population:1760000}; {City:"Barcelona"; Country:"Spain"; Population:1602000}; {City:"Munich"; Country:"Germany"; Population:1494000}; {City:"Milan"; Country:"Italy"; Population:1344000})**
+   **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 2. Drücken Sie F5, wählen Sie die Schaltfläche aus, und drücken Sie dann die ESC-TASTE.
 3. Fügen Sie einen Textkatalog hinzu, und legen Sie dessen **[Items](properties-core.md)** -Eigenschaft auf **CityPopulations** fest.
 
@@ -167,11 +166,11 @@ In diesem Verfahren erstellen Sie eine Sammlung mit dem Namen **CityPopulations*
 
 Ein **Bezeichnungs**-Steuerelement wird nicht ausschließlich als Bezeichnung für ein anderes Steuerelement verwendet. Es kann auch verwendet werden, um ein beliebiges Textfragment anzuzeigen.
 
-Außerdem kann es als Schaltfläche oder Link verwendet werden, indem **[OnSelect](properties-core.md)** -Verhalten angegeben wird. Wenn das Steuerelement auf diese Weise verwendet wird, gelten ähnliche Aspekte im Hinblick auf die Barrierefreiheit wie bei Schaltflächen.
+Außerdem kann es als Schaltfläche oder Link verwendet werden, indemOnSelect **[-Verhalten angegeben wird. Wenn das Steuerelement auf diese Weise verwendet wird, gelten ähnliche Aspekte im Hinblick auf die Barrierefreiheit wie bei Schaltflächen.
 
 ### <a name="color-contrast"></a>Farbkontrast
 
-Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 
 * **[Color](properties-color-border.md)** und **[Fill](properties-color-border.md)**
 * Es gelten die [Standardanforderungen für Farbkontraste](../accessible-apps-color.md), wenn das Steuerelement als Schaltfläche oder Link verwendet wird.
@@ -192,5 +191,5 @@ Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast ge
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 
-* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, wenn der Text als Schaltfläche oder Link verwendet wird. So können Benutzer über die Tastatur dorthin navigieren.
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, wenn der Text als Schaltfläche oder Link verwendet wird. So können Benutzer per Tastatur dorthin navigieren.
 * Fokusindikatoren müssen übersichtlich angezeigt werden, wenn der Text als Schaltfläche oder Link verwendet wird. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.

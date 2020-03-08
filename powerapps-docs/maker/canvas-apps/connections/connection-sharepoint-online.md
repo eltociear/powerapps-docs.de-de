@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0c0f4744e7b323e3262a63278e7c12348142a99b
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727720"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403411"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Herstellen einer Verbindung mit SharePoint über eine Canvas-App
 
@@ -38,7 +38,7 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Si
 > [!NOTE]
 > Wenn die SharePoint-Liste eine Spalte " **Choice**", " **Lookup**" oder " **Person" oder "Group** " enthält, finden Sie weitere Informationen unter Anzeigen von [Daten in einem](connection-sharepoint-online.md#show-list-columns-in-a-gallery) Katalog weiter unten
 
-## <a name="create-a-connection"></a>Verbindung erstellen
+## <a name="create-a-connection"></a>Erstellen einer Verbindung
 
 1. [Melden Sie sich bei powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, wählen Sie **Daten** > **Verbindungen** in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke **neue Verbindung** aus.
 
@@ -178,13 +178,13 @@ Wenn Sie die gewünschte Datei finden, wählen Sie diese aus, um Sie im **Video*
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-### <a name="lists"></a>Aufli
+### <a name="lists"></a>Listen
 
 Powerapps kann Spaltennamen lesen, die Leerzeichen enthalten, aber die Leerzeichen werden durch den hexadezimalen Escapecode **"\_x0020\_"** ersetzt. Beispielsweise wird **"Spalten Name"** in SharePoint in powerapps als **"Column_x0020_Name"** angezeigt, wenn Sie im Datenlayout angezeigt oder in einer Formel verwendet werden.
 
 Nicht alle Spaltentypen werden unterstützt, und nicht alle Typen von Spalten unterstützen alle Kartentypen.
 
-| Spaltentyp | Support | Standardkarten |
+| Spaltentyp | Unterstützungswert | Standardkarten |
 | --- | --- | --- |
 | Eine Textzeile |Ja |Text anzeigen |
 | Mehrere Textzeilen |Ja |Text anzeigen |
@@ -192,7 +192,7 @@ Nicht alle Spaltentypen werden unterstützt, und nicht alle Typen von Spalten un
 | Number |Ja |Prozentsatz anzeigen<br>Bewertung anzeigen<br>Text anzeigen |
 | Währung |Ja |Prozentsatz anzeigen<br>Bewertung anzeigen<br>Text anzeigen |
 | Datum und Uhrzeit |Ja |Text anzeigen |
-| Nachschlagen |Ja |Suche anzeigen<br>Suche bearbeiten<br>Mehrfachauswahl anzeigen<br>Mehrfachauswahl bearbeiten |
+| Suche |Ja |Suche anzeigen<br>Suche bearbeiten<br>Mehrfachauswahl anzeigen<br>Mehrfachauswahl bearbeiten |
 | Boolesch (Ja/Nein) |Ja |Text anzeigen<br>Ansicht umschalten |
 | Person oder Gruppe |Ja |Suche anzeigen<br>Suche bearbeiten<br>Mehrfachauswahl anzeigen<br>Mehrfachauswahl bearbeiten |
 | Hyperlink |Ja |URL anzeigen<br>Text anzeigen |
@@ -202,7 +202,7 @@ Nicht alle Spaltentypen werden unterstützt, und nicht alle Typen von Spalten un
 | Ergebnis der Aufgabe |Nein | |
 | Externe Daten |Nein | |
 | Verwaltete Metadaten |Ja (schreibgeschützt) | |
-| Bewertung |Nein | |
+| Rating |Nein | |
 
 ### <a name="libraries"></a>Bibliotheken
 
