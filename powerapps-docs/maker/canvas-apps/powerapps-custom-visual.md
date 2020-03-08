@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/02/2019
+ms.date: 03/06/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c5814eedfd05ea5bba19a469dad1b3e28c311974
-ms.sourcegitcommit: 6f94650ea540db69d2723c3c5dff9de8c59056cd
+ms.openlocfilehash: 3e06023319cdc799dd7573e830f499fbcf15348d
+ms.sourcegitcommit: 14723b60c9568169c7d7becea06051e7314080bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75859124"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856864"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Benutzerdefiniertes Visual apps-Visual für Power BI
 
@@ -54,7 +53,7 @@ Sehen wir uns nun die Schritte an, die erforderlich sind, um die benutzerdefinie
 
     ![Benutzerdefinierte Formel](./media/powerapps-custom-visual/custom-formula.png)
 
-    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
+    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
 
    Der Power BI Bericht und die Instanz von powerapps Studio, die gestartet wurde, haben eine Live Datenverbindung gemeinsam. Obwohl beide offen sind, können Sie die Daten im Bericht filtern oder ändern, damit die aktualisierten Daten sofort in der app in powerapps Studio angezeigt werden.
 
@@ -83,6 +82,7 @@ Die folgenden Einschränkungen gelten für die benutzerdefinierte Visualisierung
     - Sie müssen eine neue APP aus dem benutzerdefinierten powerapps-Visual in Power BI Bericht erstellen, damit diese Funktion in der app verfügbar ist.
     - Sie müssen eine Quelle verwenden, die [directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) unterstützt, und die Datenverbindung muss mithilfe der directquery-Methode erstellt werden.
 - Power apps in Power BI Desktop stellen Daten für Power apps Studio bereit, wenn Sie Apps erstellen, aber nicht während der Bearbeitung. Verwenden Sie Power BI Web, um beim Bearbeiten von apps eine Vorschau der Daten anzuzeigen.
+- Die Power BI Mobile App unterstützt das Mikrofon-Steuerelement in Power apps-Visuals nicht.
 
 > [!NOTE]
 > Es wird empfohlen, zuerst den Bericht auf dem Power BI-Dienst zu veröffentlichen und dann apps zu erstellen oder zu ändern.
@@ -91,7 +91,7 @@ Die folgenden Einschränkungen gelten für die benutzerdefinierte Visualisierung
 
 In der folgenden Tabelle sind die Browserunterstützung für das anzeigen, erstellen und Ändern von Aktionen der benutzerdefinierten Visualisierung von powerapps aufgelistet. Unterstützte Browser und Aktionen werden durch ein Häkchen (&check;) identifiziert.
 
-|Browser|Ansicht|Erstellen|Ändern
+|Browser|Anzeigen|Erstellen|Ändern
 |-|-|-|-
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
@@ -114,7 +114,7 @@ Führen Sie die folgenden Schritte aus, um die Visual apps-Visualisierung mithil
 Weitere Informationen finden Sie unter [Power BI-Dokumentation zur Barrierefreiheit]( https://docs.microsoft.com/power-bi/desktop-accessibility) .
 
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 * Befolgen Sie ein einfaches, [ausführliches Tutorial](embed-powerapps-powerbi.md).
 * Sehen Sie sich unser [Video](https://aka.ms/powerappscustomvisualvideo)an.

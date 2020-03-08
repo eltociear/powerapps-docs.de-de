@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1385e45fbbd932e0575c5c5b69b051dc292c824
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 77ccf02395c4d697a6d2054dd1a6dedda26d6e6e
+ms.sourcegitcommit: 56c8c7cc64695ccb00e0d021c9f98cf70b69b4a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282330"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78845174"
 ---
 # <a name="share-canvas-app-resources-in-power-apps"></a>Freigeben von Canvas-App-Ressourcen in Power apps
 
@@ -40,7 +40,7 @@ Sie können auch Verbindungen, benutzerdefinierte Connectors und ein lokales Dat
 
 ## <a name="connections"></a>Verbindungen
 
-Einige Verbindungen (z. b. SQL Server mit SQL-oder Windows-Authentifizierung) werden implizit für die APP frei [gegeben](share-app-resources.md#implicit-sharing) , wenn Sie die APP für andere Benutzer freigeben. Andere Verbindungen erfordern, dass Benutzer eigene Verbindungen erstellen (z. b. onedrive for Business oder SQL Server mit Azure AD Authentifizierung).
+Einige Verbindungen (z. b. SQL Server mit SQL-oder Windows-Authentifizierung) werden implizit für die APP frei [gegeben](share-app-resources.md#implicit-sharing) , wenn Sie die APP für andere Benutzer freigeben. Andere Verbindungen erfordern, dass Benutzer eigene Verbindungen erstellen und Sicherheitsaufgaben explizit erteilen (z. b. Sicherheitsrollen für die Common Data Service, onedrive for Business SQL Server mit Azure AD-Authentifizierung).
 
 Sie können bestimmen, ob eine Verbindung automatisch als Teil der APP freigegeben wird, wenn Sie die APP für andere Benutzer freigeben. ermöglicht Ihnen das Aktualisieren von Freigabe Berechtigungen. Wechseln Sie zu diesem Zweck zu make.powerapps.com, und wählen Sie **Daten** -> **Verbindungen** von Links Navigation aus. Wählen Sie dann die erforderliche Verbindung aus. Wenn die Schaltfläche **Freigeben** bei der oberen Navigation angezeigt wird oder wenn die Option **Freigeben** angezeigt wird, wenn Sie *Weitere Befehle* (...) auswählen, kann die ausgewählte Verbindung für andere Benutzer freigegeben werden.
 

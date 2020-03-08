@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d4c558e40b9bb351f3ea6b4d202ef4849cb4e85d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 75b7b4e1f4c66745bdbddebb30c0e4ca45dfeb2b
+ms.sourcegitcommit: 56c8c7cc64695ccb00e0d021c9f98cf70b69b4a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729878"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78845351"
 ---
 # <a name="user-function-in-power-apps"></a>Benutzerfunktion in Power apps
 Gibt Informationen über den aktuellen Benutzer zurück.
@@ -34,6 +34,9 @@ Die Funktion **User** gibt einen [Datensatz](../working-with-tables.md#records) 
 
 > [!NOTE]
 > Die zurückgegebenen Informationen sind für den aktuellen powerapps-Benutzer.  Sie entspricht den "Konto"-Informationen, die in den powerapps-Playern und in Studio angezeigt werden, die außerhalb der erstellten apps gefunden werden können.  Möglicherweise stimmen sie nicht mit den Informationen des aktuellen Benutzers in Office 365 oder anderen Diensten überein.
+
+> [!NOTE]
+> Wenn Sie Ihre Anwendung vor dem 2020 mit einer Benutzerfunktion veröffentlicht haben, werden Sie möglicherweise feststellen, dass Sie nicht mehr Fotos abruft. Die Probleme wurden in der Version vom Ende März 2020 behoben.  Wenn Sie die aktualisierte Implementierung nutzen möchten, öffnen Sie einfach Ihre Anwendung erneut, speichern Sie Sie, und veröffentlichen Sie Sie erneut.  
 
 ## <a name="syntax"></a>Syntax
 **User**()
