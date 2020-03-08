@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d7c1361593595c89bb67781f78a8f67e23f97cac
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 37c98470d3239cefa008235f295aaf9af2db3f5a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723137"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403913"
 ---
 # <a name="add-picture-control-in-power-apps"></a>Hinzufügen eines Bild Steuer Elements in Power apps
 Nimmt ein Foto auf oder lädt Bilder vom lokalen Gerät.
@@ -27,11 +26,11 @@ Nimmt ein Foto auf oder lädt Bilder vom lokalen Gerät.
 ## <a name="description"></a>Beschreibung
 Mit diesem Steuerelement können die Benutzer Fotos aufnehmen oder Bilddateien von ihrem Gerät laden und die Datenquelle mit diesem Inhalt aktualisieren. Auf einem mobilen Gerät wird für den Benutzer das Auswahldialogfeld des Geräts angezeigt, in dem zwischen dem Aufnehmen eines Fotos und dem Auswählen eines bereits verfügbaren Fotos gewählt werden kann.
 
-Bei dem Steuerelement handelt es sich um ein gruppiertes Steuerelement mit zwei weiteren Steuerelementen: ein **Bild** und eine **Medien hinzufügen**-Schaltfläche. Das **Bild**-Steuerelement zeigt das hochgeladene Bild bzw. (wenn kein Bild hochgeladen wurde) einen Platzhalter an. Über die Schaltfläche **Medien hinzufügen** werden Sie dazu aufgefordert, ein Bild hochzuladen.
+Dieses Steuerelement ist ein gruppiertes Steuerelement mit zwei Steuerelementen: einem **Bild** und einer **Schaltfläche Bild hinzufügen**. Das **Bild**-Steuerelement zeigt das hochgeladene Bild bzw. (wenn kein Bild hochgeladen wurde) einen Platzhalter an. Mit der **Schaltfläche Bild hinzufügen werden Sie** dazu aufgefordert, ein Bild hochzuladen.
 
-Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referenz zu dem Steuerelement „Bild“](control-image.md).
+Weitere Informationen zu den [Bild](control-image.md)-Eigenschaften erhalten Sie in der **Referenz zu dem Steuerelement „Bild“** .
 
-## <a name="add-media-button-properties"></a>Eigenschaften der Schaltfläche „Medien hinzufügen“
+## <a name="add-picture-button-properties"></a>Schaltflächen Eigenschaften für Bild hinzufügen
 **[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Sollte beschreiben, warum ein Bild hochgeladen werden soll.
 
 **[Align](properties-text.md)** – Die Position von Text in Relation zur horizontalen Mitte des Steuerelements.
@@ -76,7 +75,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 
 **[Italic](properties-text.md)** – Legt fest, ob der Text in einem Steuerelement kursiv formatiert ist.
 
-**Media**: Ein Bezeichner für den Clip, der von einem Audio- oder Video-Steuerelement wiedergegeben wird.
+**Media** – Ein Bezeichner für den Clip, der von einem Audio- oder Video-Steuerelement wiedergegeben wird.
 
 **[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
@@ -90,7 +89,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -100,7 +99,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 
 **[Text](properties-core.md)** : Text, der angezeigt wird, wenn kein Bild hochgeladen wurde.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -115,7 +114,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="examples"></a>Beispiele
 ### <a name="add-images-to-an-image-gallery-control"></a>Hinzufügen von Bildern zu einem Bildkatalog-Steuerelement
@@ -124,7 +123,7 @@ Weitere Informationen zu den **Bild**-Eigenschaften erhalten Sie in der [Referen
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Klicken oder tippen Sie im Dialogfeld **Öffnen** auf eine Bilddatei, und klicken oder tippen Sie dann auf **Öffnen**.
 3. Fügen Sie ein **[Schaltfläche](control-button.md)** -Steuerelement hinzu, verschieben Sie es unter das Steuerelement **Bild hinzufügen**, und legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft für das **[Schaltfläche](control-button.md)** -Steuerelement auf die folgende Formel fest:<br>
-   **Collect(MyPix; AddMediaButton1.Media)**
+   **Collect(MyPix, AddMediaButton1.Media)**
    
     Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder zu [anderen Funktionen](../formula-reference.md)?
 4. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu, und legen Sie dessen **[Items](properties-core.md)** -Eigenschaft auf **MyPix** fest.
@@ -143,12 +142,12 @@ Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)** -Fu
 Es gelten für die **[Schaltfläche](control-button.md)** und das **[Bild](control-image.md)** dieselben Richtlinien. Ziehen Sie außerdem Folgendes in Betracht:
 
 ### <a name="color-contrast"></a>Farbkontrast
-* Der Farbkontrast zwischen dem Text und dem Hintergrund der Schaltfläche **Medien hinzufügen** muss angemessen sein. Da die Farben des hochgeladenen Bilds unterschiedlich sein können, sollte die **[Füllfarbe](properties-color-border.md)** auf der Schaltfläche **Medien hinzufügen** undurchsichtig sein, damit der Kontrast immer gleich hoch ist.
+* Die **Schaltfläche Bild hinzufügen** muss einen ausreichenden Kontrast zwischen Text und Hintergrund aufweisen. Da das hochgeladene Bild möglicherweise unterschiedliche Farben hat, **[verwenden Sie](properties-color-border.md)** die **Schaltfläche Bild hinzufügen** , um einen konsistenten Kontrast sicherzustellen.
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
-* Die Schaltfläche **Medien hinzufügen** muss die Eigenschaften **Text** und **ChangePictureText** aufweisen, über die der Benutzer aufgefordert wird, ein Bild hinzuzufügen oder zu ändern.
+* Die **Schaltfläche Bild hinzufügen** muss **Text** und **changepicturetext** aufweisen, die den Benutzer auffordert, ein Bild hinzuzufügen oder zu ändern.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
-* Für die Schaltfläche **Medien hinzufügen** muss **[TabIndex](properties-accessibility.md)** gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Die Schaltfläche **Medien hinzufügen** muss für Fokusindikatoren deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
+* Die **Schaltfläche Bild hinzufügen** muss einen **[TabIndex](properties-accessibility.md)** von 0 (null) oder größer aufweisen, damit Tastatur Benutzer dorthin navigieren können.
+* Die **Schaltfläche Bild hinzufügen** muss deutlich sichtbare Fokus Indikatoren aufweisen. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
  

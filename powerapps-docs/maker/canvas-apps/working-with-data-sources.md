@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 351e6cd6c680d4d5dc89f4e77c98bdd520f4c2ee
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732337"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403511"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-power-apps"></a>Grundlegendes zu Datenquellen für Canvas-apps in powerapps
 
@@ -40,7 +40,7 @@ Andere Datenquellen als Tabellen sind z.B. E-Mail, Kalender, Twitter und Benachr
 
 ### <a name="local-data-sources"></a>Lokale Datenquellen
 
-Mithilfe von **[Katalog](controls/control-gallery.md)** -, **[Formular anzeigen](controls/control-form-detail.md)** - und **[Formular bearbeiten](controls/control-form-detail.md)** -Steuerelementen können Sie auf einfache Weise eine App erstellen, die Daten aus einer Datenquelle liest und schreibt.  Lesen Sie für den Einstieg den Artikel [Grundlegendes zu Datenformularen](working-with-forms.md).  
+Mithilfe der Steuerelemente **[Katalog](controls/control-gallery.md)** , **[Formular anzeigen](controls/control-form-detail.md)** und **[Formular bearbeiten](controls/control-form-detail.md)** ist es einfach, eine App zu erstellen, die Daten aus einer Datenquelle liest und schreibt.  Lesen Sie zunächst den Artikel [Understand data forms (Grundlegendes zu Datenformularen)](working-with-forms.md).  
 
 Wenn Sie Power apps auffordern, eine APP aus Daten zu erstellen, werden diese Steuerelemente verwendet. Im Hintergrund verwendet die App eine interne Tabelle zum Speichern und Bearbeiten der Daten, die aus der Datenquelle stammen.
 
@@ -55,12 +55,12 @@ Externe Tabellen werden in einer Datenquelle für späteren Abruf und Freigabe g
 Wenn Sie mehr erfahren möchten, wird unter [Arbeiten mit Tabellen](working-with-tables.md) ausführlicher auf interne Tabellen eingegangen, aber auch auf externe Tabellen, die sich in einem Clouddienst befinden.
 
 ## <a name="working-with-tables"></a>Arbeiten mit Tabellen
-Sie können Tabellendaten Quellen auf die gleiche Weise wie eine interne powerapps-Tabelle verwenden.  Wie eine interne Tabelle weist auch jede Datenquelle [Datensätze](working-with-tables.md#records), [Spalten](working-with-tables.md#columns) und Eigenschaften auf, die Sie in Formeln verwenden können. Weitere Anforderungen:
+Sie können Tabellendaten Quellen auf die gleiche Weise wie eine interne powerapps-Tabelle verwenden.  Wie eine interne Tabelle weist auch jede Datenquelle [Datensätze](working-with-tables.md#records), [Spalten](working-with-tables.md#columns) und Eigenschaften auf, die Sie in Formeln verwenden können. Zusätzlich:
 
 * Die Datenquelle weist die gleichen Spaltennamen und Datentypen auf wie die zugrunde liegende Tabelle in der Verbindung.
   
     > [!NOTE]
-  > Für SharePoint-und Excel-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt powerapps die Leerzeichen durch **"\_x0020\_"** . Beispielsweise wird **"Spalten Name"** in SharePoint oder Excel in powerapps als **"Column_x0020_Name"** angezeigt, wenn Sie im Datenlayout angezeigt oder in einer Formel verwendet werden.
+  > Für SharePoint-und Excel-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt powerapps die Leerzeichen durch **"\_x0020\_"** . **Column Name** (Name der Spalte) in SharePoint oder Excel wird beispielsweise in Power Apps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **Column_x0020_Name** (Name_x0020_der_x0020_Spalte) angezeigt.
 * Die Datenquelle wird automatisch vom Dienst geladen, wenn die App geladen wird.  Sie können erzwingen, dass die Daten aktualisiert werden, indem Sie die **[Refresh](functions/function-refresh.md)** -Funktion verwenden.
 * Wenn Benutzer eine App ausführen, können sie Datensätze erstellen, ändern und löschen und diese Änderungen mithilfe von Push an die zugrunde liegende Tabelle im Dienst zurückleiten.
   * Datensätze können mithilfe der Funktionen **[Patch](functions/function-patch.md)** und **[Collect](functions/function-clear-collect-clearcollect.md)** erstellt werden.  
@@ -80,7 +80,7 @@ Datenquellen einer Sammlung *können* innerhalb einer App erstellt und geändert
 * Die Informationen werden gespeichert und über einen Speicherdienst geteilt (in diesem Fall eine SharePoint-Liste einer Office 365-Website).
 * Eine Verbindung stellt diese Informationen der App zur Verfügung.  Die Verbindung übernimmt die Authentifizierung des Benutzers, der auf die Informationen zugreift.
 * Wenn die App gestartet wird oder die **[Refresh](functions/function-refresh.md)** -Funktion gedrückt wird, werden Informationen zur lokalen Verwendung aus der Verbindung in eine Datenquelle in der App geholt.
-* Formeln werden verwendet, um die Informationen zu lesen und sie in Steuerelementen verfügbar zu machen, die der Benutzer sehen kann. Sie können die Datensätze einer Datenquelle anzeigen, indem Sie einen Katalog auf einem Formular verwenden und die **[Items](controls/properties-core.md)** -Eigenschaft mit der Datenquelle verknüpfen: **Gallery.Items = DataSource**.  Sie verknüpfen Steuerelemente innerhalb des Katalogs mit dem Katalog, indem Sie die **[Default](controls/properties-core.md)** -Eigenschaft der Steuerelemente verwenden.  
+* Formeln werden verwendet, um die Informationen zu lesen und sie in Steuerelementen verfügbar zu machen, die der Benutzer sehen kann. Sie können die Datensätze einer Datenquelle mithilfe eines Katalogs auf einem Bildschirm anzeigen und die **[Items](controls/properties-core.md)** -Eigenschaft mit der Datenquelle verknüpfen: **Gallery. Items = DataSource**.  Sie verknüpfen Steuerelemente innerhalb des Katalogs mit dem Katalog, indem Sie die **[Default](controls/properties-core.md)** -Eigenschaft der Steuerelemente verwenden.  
 * Die Datenquelle ist auch eine Tabelle.  Sie können also **[Filter](functions/function-filter-lookup.md)** , **[Sort](functions/function-sort.md)** , **[AddColumns](functions/function-table-shaping.md)** und andere Funktionen verwenden, um die Datenquelle zu optimieren und zu erweitern, bevor Sie sie als Ganzes verwenden.  Sie können auch **[Lookup](functions/function-filter-lookup.md)** , **[First](functions/function-first-last.md)** , **[Last](functions/function-first-last.md)** und andere Funktionen zur Arbeit mit einzelnen Datensätzen verwenden.
 
 ### <a name="modify-a-record"></a>Ändern eines Datensatzes

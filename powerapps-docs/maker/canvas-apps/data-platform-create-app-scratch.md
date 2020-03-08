@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 624dd66a2f0574a33f4bb796b88e3e4d5845c973
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709562"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404113"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Erstellen einer Canvas-App von Grund auf mit Common Data Service
 
@@ -27,7 +26,7 @@ Erstellen Sie eine Canvas-App, um Daten zu verwalten, die in Common Data Service
 
 Wenn Sie eine APP aus Common Data Service erstellen, müssen Sie keine Verbindung von powerapps erstellen, wie dies bei Datenquellen wie SharePoint, Dynamics 365 oder Salesforce der Fall ist. Sie müssen nur die Entitäten angeben, die Sie in der App anzeigen bzw. verwalten möchten.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 - Bevor Sie eine APP von Grund auf neu erstellen, machen Sie sich mit den Grundlagen von Power apps vertraut, indem Sie [eine APP](data-platform-create-app.md) erstellen und [dann den Katalog, die](customize-layout-sharepoint.md) [Formulare](customize-forms-sharepoint.md)und die [Karten](customize-card.md)der APP anpassen.
 - [Wechseln Sie in eine Umgebung](working-with-environments.md), in der mithilfe von einfachen Daten eine Datenbank erstellt wurde. Wenn Sie über eine entsprechende Lizenz verfügen, können Sie dafür eine [Umgebung erstellen](../../administrator/create-environment.md).
@@ -35,7 +34,7 @@ Wenn Sie eine APP aus Common Data Service erstellen, müssen Sie keine Verbindun
 
 ## <a name="open-a-blank-app"></a>Öffnen einer leeren App
 
-1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an.
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 1. Wählen Sie unter **Eigene App erstellen** die Option **Canvas-App ohne Vorlage** aus.
 
@@ -61,7 +60,7 @@ Wenn Sie eine APP aus Common Data Service erstellen, müssen Sie keine Verbindun
 
 1. Klicken Sie in der linken Navigationsleiste auf **BrowseGallery1**, und legen Sie dann den Wert für die Eigenschaft **Elemente** auf die folgende Formel fest:
 
-    `SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; SortOrder.Descending; SortOrder.Ascending))`
+    `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
     Diese Formel gibt Folgendes an:
 
@@ -107,7 +106,7 @@ Wenn Sie eine APP aus Common Data Service erstellen, müssen Sie keine Verbindun
     > [!NOTE]
     > Außerhalb dieses Szenarios können Sie ein benutzerdefiniertes Feld erstellen, indem Sie **Neues Feld**auswählen, die erforderlichen Informationen bereitstellen und dann **abgeschlossen**auswählen. Weitere Informationen finden Sie unter [Erstellen eines Felds](../common-data-service/create-edit-field-portal.md#create-a-field).<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Select and add a field")
 
-1. Klicken Sie auf **Hinzufügen**.
+1. Wählen Sie **Hinzufügen**.
 
 1. Legen Sie die **Text**-Eigenschaft der Titelleiste auf **Create/Edit** (Erstellen/Bearbeiten) fest.
 
@@ -123,29 +122,29 @@ Wenn Sie eine APP aus Common Data Service erstellen, müssen Sie keine Verbindun
 
     `Refresh(Accounts)`
 
-    ![Symbol zum Aktualisieren](./media/data-platform-create-app-scratch/refresh-icon.png)
+    ![Symbol "Aktualisierung"](./media/data-platform-create-app-scratch/refresh-icon.png)
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Pluszeichen auf die folgende Formel fest:
 
-    `NewForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
-    ![Symbol „Hinzufügen“](./media/data-platform-create-app-scratch/plus-icon.png)
+    ![Symbol "Hinzufügen"](./media/data-platform-create-app-scratch/plus-icon.png)
 
 1. Legen Sie die Eigenschaft **OnSelect** für den ersten Pfeil nach rechts auf die folgende Formel fest:
 
-    `EditForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
-    ![Symbol „Weiter“](./media/data-platform-create-app-scratch/next-icon.png)
+    ![Symbol "Weiter"](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. Legen Sie unter **FormScreen** die Eigenschaft **OnSelect** für das Symbol „Abbrechen“ auf die folgende Formel fest:
 
-    `ResetForm(EditForm1);;Navigate(BrowseScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
-    ![Symbol „Abbrechen“](./media/data-platform-create-app-scratch/cancel-icon.png)
+    ![Symbol "Abbrechen"](./media/data-platform-create-app-scratch/cancel-icon.png)
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Häkchensymbol auf die folgende Formel fest:
 
-    `SubmitForm(EditForm1);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Häkchensymbol](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
@@ -153,7 +152,7 @@ Wenn Sie eine APP aus Common Data Service erstellen, müssen Sie keine Verbindun
 
 1. Legen Sie für das **Papierkorbsymbol** die **Color**-Eigenschaft auf **Weiß** und die **OnSelect**-Eigenschaft auf die folgende Formel fest:
 
-    `Remove(Accounts; BrowseGallery.Selected);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `Remove(Accounts, BrowseGallery.Selected); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Papierkorbsymbol](./media/data-platform-create-app-scratch/trash-icon.png)
 

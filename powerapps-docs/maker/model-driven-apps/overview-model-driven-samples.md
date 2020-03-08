@@ -1,6 +1,6 @@
 ---
-title: Modellgesteuerte Beispielapps
-description: Erfahren Sie, wie Sie modelgesteuerte Beispiel-Apps erhalten, anpassen und entfernen können.
+title: Modellgesteuerte Beispiel-Apps
+description: Informationen zum Abrufen, Anpassen und Entfernen von modellgesteuerten Beispiel-Apps
 documentationcenter: na
 author: mr-dang-msft
 manager: kvivek
@@ -16,77 +16,77 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 13ec511c692af8694012f94f881cb02ee1280ee2
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: HT
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863154"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404505"
 ---
-# <a name="model-driven-sample-apps"></a>Modellgesteuerte Beispielapps
+# <a name="model-driven-sample-apps"></a>Modellgesteuerte Beispiel-Apps
 
-In [powerapps.com](https://powerapps.com) verwenden Sie eine Beispielanwendung, um Designmöglichkeiten kennenzulernen und Konzepte zu entdecken, die Sie bei der Entwicklung Ihrer eigenen Apps anwenden können. Jede Beispiel-App verwendet fiktive Daten, um ein reales Szenario darzustellen. 
+Verwenden Sie unter [powerapps.com](https://powerapps.com) eine Beispiel-App, um Designmöglichkeiten und Konzepte zu entdecken, die Sie anwenden können, wenn Sie Ihre eigenen Apps entwickeln. Jede Beispiel-App verwendet fiktive Daten, um ein Szenario aus der realen Welt darzustellen. 
 
-Schauen Sie sich die Dokumentation zu jeder Beispiel-App an, um weitere Details zu erfahren. 
+Wenn Sie mehr erfahren möchten, sollten Sie die Dokumentation zu den einzelnen Beispiel-Apps lesen. 
 
-![Beispiel-App zur Mittelbeschaffung](media/overview-model-driven-samples/fundraiser-app1.png)
+![Beispiel-App zum Sammeln von Spenden](media/overview-model-driven-samples/fundraiser-app1.png)
 
 
-## <a name="get-sample-apps"></a>Beispiel-Apps herunterladen
+## <a name="get-sample-apps"></a>Abrufen von Beispiel-Apps
 
-Um modellgesteuerte Beispiel-Apps abspielen oder bearbeiten zu können, müssen die Apps zunächst in einer Common Data Service-Datenbank bereitgestellt werden. Erstellen Sie zunächst eine Testumgebung und eine Datenbank und stellen Sie sicher, dass Sie **Beispiel-Apps und Daten einschließen**.
+Damit modellgesteuerte Apps ausgeführt oder verändert werden können, müssen diese Apps zuerst in einer Common Data Service-Datenbank bereitgestellt werden. Erstellen Sie zunächst eine Testumgebung und eine Datenbank, und achten Sie dabei darauf, das Feld **Include sample apps and data** (Beispiel-Apps und -Daten hinzufügen).
 
 ![Datenbank erstellen](media/overview-model-driven-samples/create-database1.png)
 
 
 > [!IMPORTANT]
-> Diese Option installiert alle verfügbaren Beispiel-Apps in Ihrer Datenbank. Beispielapps sind für Schulungs- und Demonstrationszwecke gedacht und wir empfehlen nicht, sie in Produktionsdatenbanken zu installieren. 
+> Über diese Option werden alle in Ihrer Datenbank verfügbaren Beispiel-Apps installiert. Beispiel-Apps sind für das Lernen und Vorführen konzipiert und sollten nicht in Produktionsdatenbanken installiert werden. 
 
 ## <a name="customize-a-sample-app"></a>Anpassen einer Beispiel-App
 
-1. Anmelden bei [powerapps.com](https://powerapps.com)  
+1. Melden Sie sich bei [powerapps.com](https://powerapps.com) an.  
 
     
 
-2. Fahren Sie auf der Seite **Erstellen** mit der Maus über die Beispiel-App und klicken Sie auf **Diese App erstellen**.
+2. Zeigen Sie auf der Seite **Erstellen** auf die Beispiel-APP, und klicken Sie **dann auf diese APP erstellen**.
 
-![Entwicklen einer Beispiel-App](media/overview-model-driven-samples/model-driven-create-page-sample.png)
+![Modell-Beispiel-App](media/overview-model-driven-samples/model-driven-create-page-sample.png)
 
-3. Der App-Designer öffnet sich und bietet mehrere Optionen zum Anpassen der App. 
-4. Für zusätzliche Anpassungsoptionen klicken Sie auf **Erweitert** in der linken Navigation im Portal.
+3. Dann sollte sich der App-Designer öffnen, und Sie können aus mehreren Optionen zum Anpassen Ihrer App auswählen. 
+4. Klicken Sie im Portal im linken Navigationsbereich auf **erweitert** , um zusätzliche Anpassungsoptionen zu erhalten.
 
 ## <a name="remove-sample-apps-and-data"></a>Entfernen von Beispiel-Apps und -Daten 
-- Das Löschen einer Beispielanwendung erfordert das Löschen der entsprechenden  [verwalteten Lösung](https://docs.microsoft.com/dynamics365/customer-engagement/developer/uninstall-delete-solution). 
-- Das Löschen der Lösung löscht auch alle Beispieldaten, die für die benutzerdefinierten Entitäten der App spezifisch sind.
-- Wenn Anpassungen an der Beispielanwendung vorgenommen wurden, kann es [Abhängigkeiten](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components) geben, die vor dem Löschen der Lösung entfernt werden müssen.
+- Zum Löschen einer Beispiel-app muss die entsprechende [verwaltete Lösung](https://docs.microsoft.com/dynamics365/customer-engagement/developer/uninstall-delete-solution)gelöscht werden. 
+- Wenn Sie die Lösung löschen, werden auch alle Beispieldaten gelöscht, die zu den benutzerdefinierten Entitäten der App gehören.
+- Wenn Sie Anpassungen an der Beispiel-App vornehmen, entstehen möglicherweise [Abhängigkeiten](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components), die entfernt werden müssen, bevor die Lösung gelöscht wird.
 
 ### <a name="steps"></a>Schritte
-1. Melden Sie sich am [Power Apps-Verwaltungsportal](https://admin.powerapps.com) an.
+1. Melden Sie sich beim [powerapps-Verwaltungs Portal](https://admin.powerapps.com)an.
 
 2. Wählen Sie eine Umgebung aus.
 
-3. Klicken Sie auf **Dynamics 365 Administration Center** 
+3. Klicken Sie auf **Dynamics 365 Admin Center**. 
 
-    ![Dynamics 365 Administration Center](media/overview-model-driven-samples/admin-center.png)
+    ![Dynamics 365 Admin Center](media/overview-model-driven-samples/admin-center.png)
 
-4. Wählen Sie Ihre Datenbank aus der Liste aus und klicken Sie **ÖFFNEN**.
+4. Suchen Sie Ihre Datenbank in der Liste, und klicken Sie auf **ÖFFNEN**.
 
     ![Datenbank auswählen](media/overview-model-driven-samples/select-database.png)
 
-5. Navigieren Sie zu **Einstellungen/Lösungen**.
+5. Navigieren Sie zu **Settings/Solutions** (Einstellungen/Lösungen).
 
-6. Wählen Sie die Lösung für die App, die gelöscht werden soll und klicken Sie auf **Löschen**.
+6. Suchen Sie die Lösung zu der App, die gelöscht werden soll, und klicken Sie auf **Löschen**.
 
     ![Lösung löschen](media/overview-model-driven-samples/delete-solution.png)
 
-*Alternativ navigieren Sie zur Liste der Lösungen, indem Sie auf **Erweitert** im Herstellerportal klicken und alles in der URL nach .dynamics.com/ löschen*
+*Stattdessen können Sie auch in der Liste der Lösungen navigieren, indem Sie im Maker-Portal auf **Erweitert** klicken, und aus der URL alle Zeichen löschen, die auf .dynamics.com/* folgen.
 
 > [!IMPORTANT]
-> Löschen Sie keine anderen Systemlösungen, es sei denn, Ihnen sind die Auswirkungen bekannt.
+> Löschen Sie keine anderen Systemlösungen, wenn Sie nicht wissen, welche Folgen dies haben kann.
 
-## <a name="install-or-uninstall-sample-data"></a>Installieren oder deinstallieren von Beispieldaten
-1. Führen Sie die oben genannten Schritte 1-4 aus.
-2. Navigieren Sie zu **Einstellungen/Datenverwaltung/Beispieldaten**.
-3. Wenn Beispieldaten installiert sind, ist die Option zum Entfernen verfügbar. Andernfalls ist diese Option zum Installieren verfügbar. 
+## <a name="install-or-uninstall-sample-data"></a>Installieren oder Deinstallieren der Beispieldaten
+1. Führen Sie die oben aufgeführten Schritte 1 bis 4 aus.
+2. Navigieren Sie zu **Settings/Data Management/Sample Data**.
+3. Wenn Beispieldaten installiert sind, ist die Option zum Entfernen verfügbar. Andernfalls ist die Option zum Installieren verfügbar. 
 
     ![Beispieldaten entfernen](media/overview-model-driven-samples/remove-sample-data.png)
 
