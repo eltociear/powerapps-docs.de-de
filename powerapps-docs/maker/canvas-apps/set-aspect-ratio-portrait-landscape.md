@@ -14,21 +14,20 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b6ec2006266a15b7552d1a83b2d7d67c14560470
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732979"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404331"
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Ändern der Bildschirmgröße und der Ausrichtung einer Canvas-app in Power apps
 Passen Sie eine Canvas-App an, indem Sie Bildschirmgröße und -ausrichtung ändern.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Erstellen Sie eine APP, oder öffnen Sie eine APP zum Bearbeiten, und wählen Sie dann im Menü **Datei** die Option **App-Einstellungen** aus.
 
-## <a name="change-screen-size-and-orientation"></a>Ändern der Bildschirmgröße und -ausrichtung
+## <a name="change-screen-size-and-orientation"></a>Bildschirmgröße und -ausrichtung ändern
 1. Wählen Sie unter **App settings**  (App-Einstellungen) die Option **Screen size + orientation**  (Bildschirmgröße und -ausrichtung) aus.
 
     ![Option zum Ändern der Bildschirmgröße und -ausrichtung einer App](./media/set-aspect-ratio-portrait-landscape/size-orientation.png)
@@ -48,7 +47,7 @@ Erstellen Sie eine APP, oder öffnen Sie eine APP zum Bearbeiten, und wählen Si
 
     Wenn Sie diese Einstellung deaktivieren, wird die APP an das Seitenverhältnis des Geräts angepasst, auf dem es ausgeführt wird, und es wird der gesamte verfügbare Speicherplatz belegt. Die APP wird nicht skaliert, und daher können Bildschirme Weitere Informationen anzeigen.
 
-    Wenn diese Einstellung deaktiviert ist, wird das **Seitenverhältnis für Sperren** automatisch deaktiviert und deaktiviert. Außerdem ist die **Width** -Eigenschaft aller Bildschirme auf `Max(App.Width; App.DesignWidth)`festgelegt, und Ihre **height** -Eigenschaft wird auf `Max(App.Height; App.DesignHeight)` festgelegt, sodass die Dimensionen des Fensters, in dem die app ausgeführt wird, nachverfolgt werden. Mit dieser Änderung können Sie Apps erstellen, die auf verschiedene Geräte und Fenster Dimensionen reagieren. Weitere Informationen: [Erstellen eines reaktionsfähigen Layouts](create-responsive-layout.md)
+    Wenn diese Einstellung deaktiviert ist, wird das **Seitenverhältnis für Sperren** automatisch deaktiviert und deaktiviert. Außerdem ist die **Width** -Eigenschaft aller Bildschirme auf `Max(App.Width, App.DesignWidth)`festgelegt, und Ihre **height** -Eigenschaft wird auf `Max(App.Height, App.DesignHeight)` festgelegt, sodass die Dimensionen des Fensters, in dem die app ausgeführt wird, nachverfolgt werden. Mit dieser Änderung können Sie Apps erstellen, die auf verschiedene Geräte und Fenster Dimensionen reagieren. Weitere Informationen: [Erstellen eines reaktionsfähigen Layouts](create-responsive-layout.md)
 
 1. Geben Sie unter **Seitenverhältnis sperren** entweder **Ein** oder **Aus** an.
 
@@ -62,7 +61,7 @@ Erstellen Sie eine APP, oder öffnen Sie eine APP zum Bearbeiten, und wählen Si
 
     Sie können auch die Ausrichtung der App ändern, indem Sie die Option App-Einbettung der Benutzerumgebung in **erweiterten Einstellungen** **aktivieren aktivieren** . Diese Funktion oben links richtet die APP an, wenn Sie eingebettet ist, und ändert die Hintergrundfarbe des Hostens in weiß.
 
-1. Zum Speichern Ihrer Änderungen wählen Sie **Anwenden** aus.
+1. Klicken Sie auf **Anwenden**, um Ihre Änderungen zu speichern.
 
 ## <a name="next-step"></a>Nächster Schritt
 Wählen Sie im Menü **Datei** die Option **Speichern** aus, um Ihre App mit den neuen Einstellungen erneut zu veröffentlichen.
