@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4b159bbfe568e4f3a6501a0d98af83ac062b8c19
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732938"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404262"
 ---
 # <a name="understand-data-cards-in-power-apps"></a>Grundlegendes zu Datenkarten in Power apps
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4ef67695603f3badeba92f46c6da90e21715c98b
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: 482d06a91d3cb3a7c22e41e4e880aa72294d2b3f
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177847"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78264978"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Verwenden des Nachschlagefelds für einen Datensatz
 
@@ -54,9 +54,9 @@ Sie können über ein Nachschlagefeld suchen, indem Sie auf das Textfeld klicken
   > ![Durchsuchen eines Nachschlagefelds](media/MRU.png "Durchsuchen eines Nachschlagefelds")  
   
 >[!NOTE]   
-> Das Standardsuchergebnis für die Nachschlage suche ist „Beginnt mit“. Das bedeutet, dass die Ergebnisse Datensätze sind, die mit einem bestimmten Wort beginnen. Wenn Sie z. B. nach **Alpine Ski House** suchen möchten, geben Sie **alp** in das Suchfeld ein. Wenn Sie **ski** eingeben, wird der Datensatz nicht im Suchergebnis angezeigt.
+> Das Standardsuchergebnis für die Nachschlagesuche ist **Beginnt mit**. Das bedeutet, dass die Ergebnisse Datensätze sind, die mit einem bestimmten Wort beginnen. Wenn Sie z. B. nach **Alpine Ski House** suchen möchten, geben Sie **alp** in das Suchfeld ein. Wenn Sie **ski** eingeben, wird der Datensatz nicht im Suchergebnis angezeigt.
 >
-> Bei einer Platzhaltersuche werden Sternchen verwendet: Geben Sie beispielsweise *ski oder *Ski ein.
+> Bei einer Platzhaltersuche werden Sternchen verwendet: Geben Sie beispielsweise \*ski oder \*ski\* ein.
 
 ## <a name="browse-in-a-lookup-field"></a>Durchsuchen eines Nachschlagefelds
 Sie können das Nachschlagefeld durchsuchen, indem Sie auf das Nachschlagesymbol (Lupe) klicken. Ein Dropdownmenü mit allen Elementen wird daraufhin angezeigt.

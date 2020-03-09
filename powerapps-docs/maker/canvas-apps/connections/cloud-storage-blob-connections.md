@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dd5135aa04a552fc5606918a8158b40457a6eb6f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724010"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404250"
 ---
 # <a name="connect-to-cloud-storage-from-power-apps"></a>Herstellen einer Verbindung mit dem cloudspeicher aus Power apps
 Powerapps bietet mehrere cloudspeicherverbindungen. Bei Verwendung einer dieser Verbindungen können Sie eine Excel-Datei speichern und die darin enthaltenen Informationen in Ihrer gesamten App nutzen. Hierzu zählen folgende Verbindungen:  
