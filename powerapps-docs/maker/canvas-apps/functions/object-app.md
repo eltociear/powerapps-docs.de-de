@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78404324"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="app-object-in-power-apps"></a>App-Objekt in Power apps
 
@@ -101,7 +102,7 @@ In einem Browser wird das Bestätigungs Dialogfeld möglicherweise mit einer gen
 
 1. Legen Sie die **confirmexit** -Eigenschaft des **App** -Objekts auf diesen Ausdruck fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -112,9 +113,9 @@ In einem Browser wird das Bestätigungs Dialogfeld möglicherweise mit einer gen
 
 1. Legen Sie die **confirmexitmessage** -Eigenschaft des **App** -Objekts auf diese Formel fest:
 
-    ```powerapps-dot
-    If( AccountsForm.Unsaved,
-        "Accounts form has unsaved changes.",
+    ```powerapps-comma
+    If( AccountsForm.Unsaved;
+        "Accounts form has unsaved changes.";
         "Contacts form has unsaved changes."
     )
     ```

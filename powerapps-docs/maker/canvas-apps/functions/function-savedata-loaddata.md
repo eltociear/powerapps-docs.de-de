@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/04/2020
 ms.locfileid: "78265303"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="savedata-and-loaddata-functions-in-power-apps"></a>Funktionen "SaveData" und "LoadData" in powerapps
 Speichert und lädt eine [Sammlung](../working-with-data-sources.md#collections) von einem lokalen Gerät erneut.
@@ -41,7 +42,7 @@ Die geladenen Daten werden an die Auflistung angefügt. Verwenden Sie die **[Cle
 Die integrierten App-Sandbox-Funktionen des Geräts werden zum isolieren gespeicherter Daten von anderen apps verwendet.  Das Gerät kann die Daten auch verschlüsseln, oder Sie können ein Verwaltungs Tool für mobile Geräte wie [Microsoft InTune](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/microsoft-intune) verwenden, um Sie bei Bedarf zu verschlüsseln.
 
 ## <a name="syntax"></a>Syntax
-**SaveData**( *Sammlung*, *Name* )<br>**LoadData**( *Sammlung*, *Name* [, *NichtVorhandeneDateiIgnorieren* ])
+**SaveData**( *Sammlung*; *Name* )<br>**LoadData**( *Sammlung*; *Name* [; *NichtVorhandeneDateiIgnorieren* ])
 
 * *Sammlung*: Erforderlich.  Die zu speichernde oder zu ladende Sammlung.
 * *Name*: Erforderlich.  Der Name des Speichers. Sie müssen den gleichen Namen verwenden und den gleichen Satz von Daten laden. Der Namespace wird nicht für andere Apps oder Benutzer freigegeben.
@@ -71,8 +72,8 @@ Sie müssen über ein Gerät verfügen, um dieses Beispiel zu bearbeiten, da es 
 2. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um den Schaltflächen Text zum **Hinzufügen** von Elementen zu ändern (oder die **Text** -Eigenschaft
 
 3. Legen Sie die **onseelct** -Eigenschaft des Schaltflächen-Steuer Elements auf diese Formel fest, mit der der Auflistung ein Element hinzugefügt wird:
-    ```powerapps-dot
-    Collect( MyItems, { Item: TextInput1.Text, Picture: Camera1.Photo } )
+    ```powerapps-comma
+    Collect( MyItems; { Item: TextInput1.Text; Picture: Camera1.Photo } )
     ```
     > [!div class="mx-imgBorder"] 
     > ![ein Schaltflächen-Steuerelement hinzu, das mit dem Text "Add Item" und der onselect-Eigenschaft hinzugefügt wurde](media/function-savedata-loaddata/simple-additem.png)
@@ -82,8 +83,8 @@ Sie müssen über ein Gerät verfügen, um dieses Beispiel zu bearbeiten, da es 
 2. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um den Schaltflächen Text zum **Speichern von Daten** (oder zum Ändern der **Text** -Eigenschaft)
 
 3. Legen Sie die **onseelct** -Eigenschaft des Schaltflächen-Steuer Elements auf diese Formel fest, um die Sammlung auf dem lokalen Gerät zu speichern:
-    ```powerapps-dot
-    SaveData( MyItems, "LocalSavedItems" )
+    ```powerapps-comma
+    SaveData( MyItems; "LocalSavedItems" )
     ```
     > [!div class="mx-imgBorder"] 
     > ![ein Button-Steuerelement hinzugefügt, das mit dem Text "Daten speichern" und der onselect-Eigenschaft festgelegt wurde](media/function-savedata-loaddata/simple-savedata.png)
@@ -95,8 +96,8 @@ Sie müssen über ein Gerät verfügen, um dieses Beispiel zu bearbeiten, da es 
 2. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um den Schaltflächen Text zum **Laden von Daten** zu ändern (oder um die **Text** -Eigenschaft
 
 3. Legen Sie die **onseelct** -Eigenschaft des Schaltflächen-Steuer Elements auf diese Formel fest, um die Sammlung vom lokalen Gerät zu laden:
-    ```powerapps-dot
-    LoadData( MyItems, "LocalSavedItems" )
+    ```powerapps-comma
+    LoadData( MyItems; "LocalSavedItems" )
     ``` 
     > [!div class="mx-imgBorder"] 
     > ![ein Button-Steuerelement hinzugefügt, das mit dem Text "Load Data" und der onselect-Eigenschaft festgelegt wurde](media/function-savedata-loaddata/simple-loaddata.png)

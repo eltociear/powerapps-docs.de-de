@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78403987"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="drop-down-control-in-power-apps"></a>Dropdown-Steuerelement in powerapps
 Eine Liste, die nur das erste Element anzeigt, bis der Benutzer sie öffnet.
@@ -130,7 +131,7 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 
 1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf diesen Ausdruck fest:
 
-    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
+    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
@@ -143,13 +144,13 @@ Die Prinzipien in diesem Verfahren gelten für jede [Datenquelle, die Tabellen b
 
 1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-    `Distinct(Accounts, address1_city)`
+    `Distinct(Accounts; address1_city)`
 
     Diese Formel zeigt alle Städte in dem Element **Konten** (Accounts) an. Wenn mehr als ein Datensatz die gleiche Stadt besitzt, versteckt die **[Distinct](../functions/function-distinct.md)** -Funktion die Duplizierung in Ihrem Dropdown-Steuerelement.
 
 1. (optional) Benennen Sie Ihr **Dropdown**-Steuerelement in **Cities** (Städte) um, fügen Sie ein vertikales **Gallery**-Steuerelement (Katalog) hinzu, und legen Sie die **[Items](properties-core.md)** -Eigenschaft des Katalogs auf diese Formel fest:
 
-    `Filter(Accounts, address1_city = Cities.Selected.Value)`
+    `Filter(Accounts; address1_city = Cities.Selected.Value)`
 
     Diese **[Filter](../functions/function-filter-lookup.md)** -Funktion zeigt nur die Datensätze im **Accounts**-Element (Konten) an, bei denen die Stadt zu dem ausgewählten Wert im Steuerelement **Cities** (Städte) passt.
 

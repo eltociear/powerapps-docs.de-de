@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78845374"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="common-data-service-and-the-improved-data-source-experience"></a>Common Data Service und die verbesserte Datenquelle
 
@@ -89,10 +90,10 @@ Möglicherweise möchten Sie auch die **explizite Spaltenauswahl** aktivieren:
     
     Wenn Sie ein Optionsfeld oder einen hart codierten GUID-Textwert verwenden, sind in dieser Phase möglicherweise Fehler aufgetreten.  <br><br> 
     
-    - *Options Satz Werte*: Wenn Sie ein Options Satz Feld mit einem Text Bezeichner für den Options Satz Wert verwenden, verwenden Sie stattdessen die Punkt Notation, um auf den Options Satz Wert zu verweisen. Ändern Sie beispielsweise `Patch(Accounts, OptionSet1 = “12345”)` in `Patch(Accounts, OptionSet.Item1)`, wobei `Item1` dem `12345` Wert entspricht. <br>
+    - *Options Satz Werte*: Wenn Sie ein Options Satz Feld mit einem Text Bezeichner für den Options Satz Wert verwenden, verwenden Sie stattdessen die Punkt Notation, um auf den Options Satz Wert zu verweisen. Ändern Sie beispielsweise `Patch(Accounts; OptionSet1 = “12345”)` in `Patch(Accounts; OptionSet.Item1)`, wobei `Item1` dem `12345` Wert entspricht. <br>
     Weitere Informationen finden Sie im Abschnitt [ausführliche Beispiele](#detailed-examples) .
     - *GUIDs*: Wenn Sie eine statische GUID-Zeichenfolge wie z. b. `015e45e1044e49f388115be07f2ee116`verwenden, konvertieren Sie Sie in eine Funktion, die ein GUID-Objekt zurückgibt. beispielsweise `GUID(“015e45e1044e49f388115be07f2ee116”)`. 
-    - *Lookups*: Wenn Sie Suchfunktionen zum Abrufen von Such Werten der ersten Ebene verwenden, z. b. `Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)`, sollten Sie die Verwendung von `ThisItem.PrimaryContacts` in Erwägung nehmen (wobei primarycontacts der Name der Entität ist).
+    - *Lookups*: Wenn Sie Suchfunktionen zum Abrufen von Such Werten der ersten Ebene verwenden, z. b. `Lookup(Contacts; ‘contactID’ = ThisItem.ContactID”)`, sollten Sie die Verwendung von `ThisItem.PrimaryContacts` in Erwägung nehmen (wobei primarycontacts der Name der Entität ist).
 
 ### <a name="improve-data-source-experience-and-common-data-service-views-is-off"></a>*Verbessern der Datenquellen Leistung und Common Data Service Ansichten* sind deaktiviert:
 
@@ -124,10 +125,10 @@ Bei der Konvertierung können Fehler auftreten, wenn Sie keine anzeigen Amen ver
 
 - Wenn der Name des Steuer Elements Konflikte verursacht, ändern Sie den Namen des Steuer Elements in einen anderen und einen eindeutigen Namen. 
 - Bei Konflikten mit dem anzeigen Amen von Feldern und Entitäten wird möglicherweise eine Formel angezeigt, die eine Entität erwartet, aber in einen stärker lokal Bereichs bezogenen Feldnamen aufgelöst wird. Verwenden Sie die eckige Klammer mit einem *@* Symbol, um einen globalen Bereich anzugeben, sodass er in die Entität aufgelöst wird. Beispiel: **[@entityName]** .
-- *Options Satz Werte*: Wenn Sie ein Options Satz Feld mit einem Text Bezeichner für den Options Satz Wert verwenden, verwenden Sie stattdessen die Punkt Notation, um auf den Options Satz Wert zu verweisen. Ändern Sie beispielsweise `Patch(Accounts, OptionSet1 = “12345”)` in `Patch(Accounts, OptionSet.Item1)`, wobei `Item1` dem `12345` Wert entspricht. <br>
+- *Options Satz Werte*: Wenn Sie ein Options Satz Feld mit einem Text Bezeichner für den Options Satz Wert verwenden, verwenden Sie stattdessen die Punkt Notation, um auf den Options Satz Wert zu verweisen. Ändern Sie beispielsweise `Patch(Accounts; OptionSet1 = “12345”)` in `Patch(Accounts; OptionSet.Item1)`, wobei `Item1` dem `12345` Wert entspricht. <br>
 Weitere Informationen finden Sie im Abschnitt [ausführliche Beispiele](#detailed-examples) .
 - *GUIDs*: Wenn Sie eine statische GUID-Zeichenfolge wie z. b. `015e45e1044e49f388115be07f2ee116`verwenden, konvertieren Sie Sie in eine Funktion, die ein GUID-Objekt zurückgibt. beispielsweise `GUID(“015e45e1044e49f388115be07f2ee116”)`. 
-- *Lookups*: Wenn Sie Suchfunktionen zum Abrufen von Such Werten der ersten Ebene verwenden, z. b. `Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)`, sollten Sie die Verwendung von `ThisItem.PrimaryContacts` in Erwägung nehmen (wobei primarycontacts der Name der Entität ist).
+- *Lookups*: Wenn Sie Suchfunktionen zum Abrufen von Such Werten der ersten Ebene verwenden, z. b. `Lookup(Contacts; ‘contactID’ = ThisItem.ContactID”)`, sollten Sie die Verwendung von `ThisItem.PrimaryContacts` in Erwägung nehmen (wobei primarycontacts der Name der Entität ist).
 - Weitere polymorphe Verweise finden Sie unten im Abschnitt ausführliche Beispiele. 
 
 ## <a name="detailed-examples"></a>Ausführliche Beispiele
@@ -152,14 +153,14 @@ Mit der neuen *verbesserten Funktion für Datenquellen Funktionen und Common Dat
 
 Wenn Sie zuvor einen Options Satz Wert in einem Filter Ausdruck verwenden möchten, müssen Sie das *Wertfeld* verwenden. Beispiel:
 
-```powerapps-dot
-Filter(Account,'Category Value' = "1")
+```powerapps-comma
+Filter(Account;'Category Value' = "1")
 ```
 
 Sie müssen diese Formel bearbeiten. Der Options Satz-textidentifer wird nicht mehr für den Wert verwendet. Dieser Ausdruck sollte aktualisiert werden, um Folgendes zu sehen:
 
-```powerapps-dot
-Filter(Account, Category= ‘Category (Accounts)’.’Preferred Customer’)
+```powerapps-comma
+Filter(Account; Category= ‘Category (Accounts)’.’Preferred Customer’)
 ```
 
 "Category (Accounts)" ist der Name der Enumeration, der im Feld "Category" der Entität "Accounts" verwendet wird. Dies ist ein lokaler Options Satz.  Weitere Informationen zu lokalen und globalen Options Sätzen finden Sie hier: [globale Optionssätze.](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-global-option-sets)
@@ -168,22 +169,22 @@ Filter(Account, Category= ‘Category (Accounts)’.’Preferred Customer’)
 
 Im folgenden finden Sie ein Beispiel für eine frühere patchanweisung für options Satz:
 
-```powerapps-dot
-Patch( Accounts, First(Accounts), { ‘Category Value’: 1 } ) )
+```powerapps-comma
+Patch( Accounts; First(Accounts); { ‘Category Value’: 1 } ) )
 ```
 
 Sie müssen Ihre-Anweisungen aktualisieren, damit Sie dem folgenden Formular folgen:
 
-```powerapps-dot
-Patch( Accounts, First(Accounts), { Category: ‘Category (Accounts)’.’Preferred Customer’ } )
+```powerapps-comma
+Patch( Accounts; First(Accounts); { Category: ‘Category (Accounts)’.’Preferred Customer’ } )
 ```
 
 #### <a name="option-set-disambiguation"></a>Options Satz-Eindeutigkeit
 
 Wenn der Anzeige Name eines Options Satz **Felds** und der Name des Options Satzes identisch sind, müssen Sie die Formel eindeutig machen. Um das Code Beispiel für die Konten Kategorie weiterhin verwenden zu können, impliziert der **@** , dass der Options Satz verwendet wird, nicht das-Feld.
 
-```powerapps-dot
-Filter(Accounts, 'Category Code' = [@’Category Code’].'Preferred Customer')
+```powerapps-comma
+Filter(Accounts; 'Category Code' = [@’Category Code’].'Preferred Customer')
 ```
 
 ### <a name="two-options"></a>Zwei Optionen
@@ -200,12 +201,12 @@ Mit der neuen *verbesserten Funktion für Datenquellen Funktionen und Common Dat
 
 Wenn Sie den Schalter für das boolesche Feld bevorzugen, können Sie die Datenkarte entsperren und das Steuerelement in der Datenkarte durch ein Umschalten ersetzen.  Sie müssen diese Eigenschaften auch beim Umschalten festlegen.
 
-```powerapps-dot
+```powerapps-comma
 Toggle1.Default = ThisItem.’Do not allow Bulk Emails’
 Toggle1.TrueText = ‘Do not allow Bulk Emails (Accounts)’.’Do Not Allow’
 Toggle1.FalseText = ‘Do not allow Bulk Emails (Accounts)’.Allow
-DataCard.Value = If( Toggle1.Value,
-    ‘Do not allow Bulk Emails (Accounts)’.’Do Not Allow’,
+DataCard.Value = If( Toggle1.Value;
+    ‘Do not allow Bulk Emails (Accounts)’.’Do Not Allow’;
     ‘Do not allow Bulk Emails (Accounts)’.Allow )
 ```
 
@@ -229,9 +230,9 @@ Beispielsweise kann das Feld "Owner" in einer Entität auf einen Datensatz in de
 
 Daten Satz Verweise können genauso wie ein vollständiger Datensatz verwendet werden:
 
-```powerapps-dot
-Filter( Accounts, Owner = First( Teams ) )
-Patch( Accounts, First( Accounts ), { Owner: First( Users ) })
+```powerapps-comma
+Filter( Accounts; Owner = First( Teams ) )
+Patch( Accounts; First( Accounts ); { Owner: First( Users ) })
 ```
 
 ##### <a name="polymorphic-with-a-gallery-displaying-owner-name"></a>Polymorph mit einem Katalog, der den Besitzer Namen anzeigt
@@ -250,10 +251,10 @@ Es gibt zwei neue Funktionen, die Sie verwenden können:
 
 Mit diesen Funktionen können Sie eine Formel schreiben, die den Namen des Besitzers, der aus zwei unterschiedlichen benannten Feldern stammt, basierend auf dem Entitätstyp des Besitzers anzeigt:
 
-```powerapps-dot
-If( IsType( ThisItem.Owner,  [@Teams]), 
-    AsType( ThisItem.Owner, [@Teams]).'Team Name', 
-    AsType( ThisItem.Owner, [@Users]).'Full Name' )
+```powerapps-comma
+If( IsType( ThisItem.Owner;  [@Teams]); 
+    AsType( ThisItem.Owner; [@Teams]).'Team Name'; 
+    AsType( ThisItem.Owner; [@Users]).'Full Name' )
 ```
 
 ![Katalog mit AS-Typ](./media/use-native-cds-connector/Polymorphic-And-AsType-in-Gallery.png)
@@ -268,12 +269,12 @@ Das Feld "Kundensuche" ist eine weitere polymorphe Suche, die dem Besitzer ähne
 
 Polymorphe suchen sind nicht auf Konten und Kontakte beschränkt. Die Liste der Entitäten ist mit benutzerdefinierten Entitäten erweiterbar. Die Faxe-Entität hat z. b. ein polymorph in Bezug auf das Nachschlage Feld, das auf Konten, Kontakte und andere Entitäten verweisen kann. Wenn Sie einen Katalog mit der Datenquelle auf Faxe festgelegt haben, können Sie die folgende Formel verwenden, um den Namen anzuzeigen, der dem Feld bezüglich des Nachschlage Vorgangs zugeordnet ist. 
  
- ```powerapps-dot
-If( IsBlank( ThisItem.Regarding ), "",
-    IsType( ThisItem.Regarding, [@Accounts] ),
-        "Account: " & AsType( ThisItem.Regarding, [@Accounts] ).'Account Name',
-    IsType( ThisItem.Regarding, [@Contacts] ),
-        "Contacts: " & AsType( ThisItem.Regarding, [@Contacts] ).'Full Name',
+ ```powerapps-comma
+If( IsBlank( ThisItem.Regarding ); "";
+    IsType( ThisItem.Regarding; [@Accounts] );
+        "Account: " & AsType( ThisItem.Regarding; [@Accounts] ).'Account Name';
+    IsType( ThisItem.Regarding; [@Contacts] );
+        "Contacts: " & AsType( ThisItem.Regarding; [@Contacts] ).'Full Name';
     "" )
 ```
 
@@ -297,11 +298,11 @@ Die Datensätze werden aus der Aktivitäts Entität angezeigt. Sie können jedoc
  
 Mit dieser Formel können Sie den Daten Satz Typen in einem Label-Steuerelement innerhalb des Katalogs anzeigen:
 
- ```powerapps-dot
-If( IsType( ThisItem, [@Faxes] ), "Fax",
-    IsType( ThisItem, [@'Phone Calls'] ), "Phone Call",
-    IsType( ThisItem, [@'Email Messages'] ), "Email Message",
-    IsType( ThisItem, [@Chats] ), "Chat",
+ ```powerapps-comma
+If( IsType( ThisItem; [@Faxes] ); "Fax";
+    IsType( ThisItem; [@'Phone Calls'] ); "Phone Call";
+    IsType( ThisItem; [@'Email Messages'] ); "Email Message";
+    IsType( ThisItem; [@Chats] ); "Chat";
     "Unknown")
 ```
 
@@ -317,7 +318,7 @@ Beim Erstellen einer Entität können Sie Anlagen aktivieren. Wenn Sie das Kontr
 
 Basierend auf dem Feld "betrifft" können Sie nicht lesen oder filtern. Die 1: n-Beziehung der umgekehrten Hinweise ist jedoch verfügbar. Um alle Anmerkungen aufzulisten, die einer Konto Entität zugeordnet sind, können Sie die folgende Formel verwenden:
 
-```powerapps-dot
+```powerapps-comma
 First( Accounts ).Notes
 ```
 
@@ -325,8 +326,8 @@ First( Accounts ).Notes
 
 Sie können das Feld Notizen für eine Entität nicht mithilfe von Patch festlegen. Zum Hinzufügen eines Datensatzes zur Notizen-Tabelle einer Entität können Sie die Funktion "in Beziehung" verwenden. Erstellen Sie zuerst den Hinweis, wie in diesem Beispiel:
 
-```powerapps-dot
-Relate( ThisItem.Notes, Patch( Notes, Defaults( Notes ), { Title: "A new note", isdocument:'Is Document (Notes)'.No } ) )
+```powerapps-comma
+Relate( ThisItem.Notes; Patch( Notes; Defaults( Notes ); { Title: "A new note"; isdocument:'Is Document (Notes)'.No } ) )
 ```
 
 ## <a name="next-steps"></a>Nächste Schritte

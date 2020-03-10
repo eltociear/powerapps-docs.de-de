@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/04/2020
 ms.locfileid: "78265535"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="notify-function-in-power-apps"></a>Funktion "Benachrichtigen" in powerapps
 Zeigt dem Benutzer eine Bannermeldung an.
@@ -48,7 +49,7 @@ Powerapps kann auch Pushbenachrichtigungen mit einem völlig anderen Mechanismus
 Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn nur Fehlermeldungen angezeigt werden konnten.
 
 ## <a name="syntax"></a>Syntax
-**Benachrichtigen**( *Meldung* [, *NOTIFICATIONTYPE* [, *Timeout* ]])
+**Benachrichtigen**( *Meldung* [; *NOTIFICATIONTYPE* [; *Timeout* ]])
 
 * *Message* – Erforderlich.  Meldung, die dem Benutzer angezeigt wird.
 * *NotificationType* – Optional.  In der obenstehenden Tabelle aufgelisteter Meldungstyp, der angezeigt werden soll.  Standardmäßig wird **NotificationType.Information** angezeigt.  
@@ -62,7 +63,7 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 2. Legen **Sie die onselect** -Eigenschaft der **Schaltfläche** auf die folgende Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Notify( "Hello, World" )
     ```
 
@@ -74,8 +75,8 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit ein Fehler angezeigt wird.  Fügen Sie ein zweites Argument zu der Formel hinzu:
 
-    ```powerapps-dot
-    Notify( "Hello, World", NotificationType.Error )
+    ```powerapps-comma
+    Notify( "Hello, World"; NotificationType.Error )
     ```
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
@@ -86,8 +87,8 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit eine Warnung angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    ```powerapps-dot
-    Notify( "Hello, World", NotificationType.Warning, 4000 )
+    ```powerapps-comma
+    Notify( "Hello, World"; NotificationType.Warning; 4000 )
     ```
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
@@ -98,8 +99,8 @@ Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn
 
 4. Ändern Sie den Meldungstyp, damit ein Erfolg angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
 
-    ```powerapps-dot
-    Notify( "Hello, World", NotificationType.Success, 0 )
+    ```powerapps-comma
+    Notify( "Hello, World"; NotificationType.Success; 0 )
     ```
 
 5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.

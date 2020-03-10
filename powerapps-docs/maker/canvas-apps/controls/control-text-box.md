@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78404005"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="label-control-in-canvas-apps"></a>Label-Steuerelement in Canvas-apps
 
@@ -130,7 +131,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Text**( *Zahl*, "*CodesFormatieren*" )](../functions/function-text.md)
+[**Text**( *Zahl*; "*CodesFormatieren*" )](../functions/function-text.md)
 
 ## <a name="examples"></a>Beispiele
 
@@ -155,7 +156,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 In diesem Verfahren erstellen Sie eine Sammlung mit dem Namen **CityPopulations**, die Daten über die Bevölkerung verschiedener Städte in Europa enthält. Als Nächstes zeigen Sie diese Daten in einem Katalog an, der drei Bezeichnungen enthält, und geben den Datentyp an, der in jeder Bezeichnung angezeigt wird.
 
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](properties-core.md)** auf diese Formel fest:<br>
-   **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
+   **ClearCollect(CityPopulations; {City:"London"; Country:"United Kingdom"; Population:8615000}; {City:"Berlin"; Country:"Germany"; Population:3562000}; {City:"Madrid"; Country:"Spain"; Population:3165000}; {City:"Rome"; Country:"Italy"; Population:2874000}; {City:"Paris"; Country:"France"; Population:2273000}; {City:"Hamburg"; Country:"Germany"; Population:1760000}; {City:"Barcelona"; Country:"Spain"; Population:1602000}; {City:"Munich"; Country:"Germany"; Population:1494000}; {City:"Milan"; Country:"Italy"; Population:1344000})**
 2. Drücken Sie F5, wählen Sie die Schaltfläche aus, und drücken Sie dann die ESC-TASTE.
 3. Fügen Sie einen Textkatalog hinzu, und legen Sie dessen **[Items](properties-core.md)** -Eigenschaft auf **CityPopulations** fest.
 
