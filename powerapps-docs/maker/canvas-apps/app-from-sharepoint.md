@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 346bb27911549715b6c4fdc40f64552c524527be
-ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74959447"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403367"
 ---
 # <a name="create-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Erstellen einer Canvas-app in powerapps aus einer SharePoint-Liste
 
@@ -42,7 +42,7 @@ Das Grundprinzip beim Erstellen einer App ändert sich nicht, auch wenn Sie eine
 
 ## <a name="create-an-app-from-within-power-apps"></a>Erstellen einer APP innerhalb von powerapps
 
-1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an.
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 1. Zeigen Sie unter **Eigene App erstellen** auf **Mit Daten beginnen**, und wählen Sie dann **Diese App erstellen** aus.
 
@@ -62,7 +62,7 @@ Das Grundprinzip beim Erstellen einer App ändert sich nicht, auch wenn Sie eine
 
 1. Klicken Sie unter **Liste auswählen** erst auf **SimpleApp** und dann auf **Verbinden**.
 
-    Nach wenigen Minuten wird Ihre App auf dem Bildschirm zum Durchsuchen geöffnet, auf dem eine Liste der Elemente anzeigt wird, die Sie in Ihrer Liste erstellt haben. Wenn Ihre Liste auch Daten in anderen Spalten als nur der Spalte **Titel** enthält, zeigt die App diese Daten an. Im oberen Bereich des Bildschirms werden in einer Titelleiste Symbole zum Aktualisieren und Sortieren der Liste sowie zum Erstellen eines Elements in einer Liste angezeigt. Unter der Titelleiste ermöglicht ein Suchfeld das Filtern der Liste basierend auf dem Text, den Sie in das Suchfeld eingeben bzw. einfügen. 
+    Nach wenigen Minuten wird Ihre App auf dem Bildschirm zum Durchsuchen geöffnet, auf dem eine Liste der Elemente anzeigt wird, die Sie in Ihrer Liste erstellt haben. Wenn Ihre Liste auch Daten in anderen Spalten als nur der Spalte **Titel** enthält, zeigt die App diese Daten an. Im oberen Bereich des Bildschirms werden in einer Titelleiste Symbole zum Aktualisieren und Sortieren der Liste sowie zum Erstellen eines Elements in einer Liste angezeigt. Unterhalb der Titelleiste können Sie über ein Suchfeld die Liste basierend auf dem Text filtern, den Sie darin eingeben bzw. einfügen. 
 
     ![Bildschirm zum Durchsuchen](./media/app-from-sharepoint/browse-screen.png)
 

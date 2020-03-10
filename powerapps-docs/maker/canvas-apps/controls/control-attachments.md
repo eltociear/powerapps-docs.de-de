@@ -6,24 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 04/23/2018
+ms.date: 03/09/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 35e4107934134a229817deb258bacf5e36c9dbb6
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204040"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970979"
 ---
 # <a name="attachments-control-in-power-apps"></a>Anlagen-Steuerelement in powerapps
 Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien aus einer SharePoint-Liste oder einer Common Data Service Entität hochladen und löschen können.
 
-## <a name="limitations"></a>Einschränken
+## <a name="limitations"></a>Einschränkungen
 Für das Steuerelement für Anlagen gelten folgende Einschränkungen:
 1. Anlagen werden mit SharePoint-Listen und Common Data Service Entitäten unterstützt.
 
@@ -48,7 +48,7 @@ Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Li
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf eine Anlage klickt.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte den Zweck dieser Anlagen beschreiben.
+**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Sollte den Zweck dieser Anlagen beschreiben.
 
 **AddAttachmentText** – Der Beschriftungstext des Links, mit dem eine neue Anlage hinzugefügt wird.
 
@@ -58,11 +58,11 @@ Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Li
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement das Hinzufügen und Löschen von Dateien zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement das Hinzufügen und Löschen von Dateien zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -70,7 +70,7 @@ Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Li
 
 **NoAttachmentsText** – Hinweistext, der für den Benutzer, der angezeigt wird, wenn keine Anlagen vorhanden sind.
 
-**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -82,13 +82,15 @@ Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Li
 
 
 ## <a name="example"></a>Beispiel
-1. Erstellen Sie eine App aus Daten, wobei eine SharePoint-Liste als Datenquelle verwendet wird. Alternativ können Sie der App ein Formular hinzufügen und eine SharePoint-Liste als Datenquelle festlegen.
+1. Fügen Sie der APP ein Formular hinzu, und legen Sie eine SharePoint-Liste als Datenquelle fest.
 
-2. Wählen Sie in der Strukturansicht auf der linken Seite das **Form**-Steuerelement aus.
+2. Wählen Sie in der Strukturansicht auf der linken Seite das **Formular Formular anzeigen** aus. Sie können stattdessen auch das **Formular bearbeiten** verwenden.
 
-3. Klicken Sie im Optionsbereich auf der rechten Seite auf der Registerkarte „Eigenschaften“ auf **Daten**.
+3. Wählen Sie auf der Registerkarte Eigenschaften im Bereich Optionen auf der rechten Seite **Datenquelle** , und wählen Sie dann die SharePoint-Liste aus, mit der Sie verbunden sind.
 
-4. Aktivieren Sie unter **Felder**, das Feld **Anlagen**.
+4. Wählen *Sie im Feld Abschnitt Felder* **Bearbeiten** und **Feld hinzufügen**aus. 
+
+5. Wählen Sie das Feld **Anlagen** und dann **Hinzufügen**aus.
 
     Im Formular wird das der SharePoint-Liste zugeordnete Feld „Anlagen“ angezeigt.
 
@@ -97,7 +99,7 @@ Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Li
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **ItemColor** und **ItemFill**
 * **ItemHoverColor** und **ItemHoverFill**
 * **ItemPressedColor** und **ItemPressedFill**

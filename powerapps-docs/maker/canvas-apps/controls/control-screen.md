@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732074"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404322"
 ---
 # <a name="screen-control-in-power-apps"></a>Bildschirm-Steuerelement in Power apps
 
@@ -31,7 +30,7 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 ## <a name="key-properties"></a>Haupteigenschaften
 
-**[BackgroundImage](properties-visual.md)** : der Name einer Bilddatei, die im Hintergrund eines Bildschirms angezeigt wird
+**[BackgroundImage](properties-visual.md)** : Der Name einer Bilddatei, die als Hintergrund einer Bildschirmansicht angezeigt wird.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
@@ -39,7 +38,7 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 **Height** : die Höhe des Bildschirms. Wenn die APP reaktionsfähig ist (die[**Skalierung**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation) ist **deaktiviert) und**das Gerät, auf dem die app ausgeführt wird, kürzer als diese Eigenschaft ist, kann der Bildschirm vertikal scrollen.
 
-**[ImagePosition](properties-visual.md)** : Die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Bilds auf einem Bildschirm oder in einem Steuerelement, wenn die Größe nicht mit der Bildgröße identisch ist.
+**[ImagePosition](properties-visual.md)** : gibt die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Images in einem Bildschirm oder in einem Steuerelement an, wenn es nicht die gleiche Größe wie das Image hat.
 
 **Name** : der Name des Bildschirms.
 
@@ -55,13 +54,13 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
 
 1. Fügen Sie ein **[Optionsfeld](control-radio.md)** -Steuerelement hinzu, nennen Sie es **ScreenFills**, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf folgenden Wert fest:
 
-    `["Red"; "Green"]`
+    `["Red", "Green"]`
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
@@ -69,17 +68,17 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 1. Fügen Sie in **Source**ein **[Shape](control-shapes-icons.md)** -Steuerelement hinzu (z. b. einen Pfeil), und legen Sie dessen **[onselect](properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-    `Navigate(Target; ScreenTransition.Fade)`
+    `Navigate(Target, ScreenTransition.Fade)`
 
     Benötigen Sie weitere Informationen zur **[Navigate](../functions/function-navigate.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
 1. Fügen Sie in **Target** ein **[Shape](control-shapes-icons.md)** -Steuerelement hinzu (z.B. einen Pfeil), und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-    `Navigate(Source; ScreenTransition.Fade)`
+    `Navigate(Source, ScreenTransition.Fade)`
 
 1. Legen Sie die **[Fill](properties-color-border.md)** -Eigenschaft von **Target** auf diese Formel fest:
 
-    `If("Red" in ScreenFills.Selected.Value; RGBA(255; 0; 0; 1); RGBA(54; 176; 75; 1))`
+    `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
 
 1. Wählen Sie den **Quell** Bildschirm aus, und wählen Sie dann bei gedrückter Alt-Taste eine **[der beiden](control-radio.md)** Optionen im Optionsfeld aus, und wählen Sie dann das **[Shape](control-shapes-icons.md)** -Steuerelement aus.
 

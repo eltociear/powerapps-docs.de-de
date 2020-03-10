@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 03/09/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fe22d1503193c7c26f0ac8532085bb9b7db2eac
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 5d5144db3147defa43c5e11cb169a6ebc9b02105
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727302"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970970"
 ---
 # <a name="export-control-and-import-control-in-power-apps"></a>Exportieren von Steuerelement und Import-Steuerelement in powerapps
 Steuerelemente zum Exportieren von Daten in eine lokale Datei und zum anschließenden Importieren dieser Daten in eine andere app in powerapps.
@@ -30,7 +29,7 @@ Wenn Sie mehrere Apps erstellen möchten, die die gleichen Daten verwenden, dies
 ## <a name="warning"></a>Warnung
 Das Aktivieren dieser Funktion in Ihrer App kann Sicherheitslücken und Datenlecks verursachen.  Sie sollten die Benutzer anweisen, nur bekannte und vertrauenswürdige Dateien zu importieren und nur Daten zu exportieren, die nicht vertraulich oder sensibel sind.
 
-## <a name="limitations"></a>Einschränken
+## <a name="limitations"></a>Einschränkungen
 Die Exportfunktion wird in Webbrowsern nicht unterstützt.
 
 ## <a name="key-properties"></a>Haupteigenschaften
@@ -116,20 +115,19 @@ Die Exportfunktion wird in Webbrowsern nicht unterstützt.
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="example"></a>Beispiel
-1. Fügen Sie ein **[Button](control-button.md)** -Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:
-   <br>**ClearCollect(Products; {Name:"Europa"; Price:"10.99"}; {Name:"Ganymede"; Price:"12.49"}; {Name:"Callisto"; Price:"11.79"})**
-   
-    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
-   
-    Benötigen Sie weitere Informationen zur **[ClearCollect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
-2. Drücken Sie F5, klicken oder tippen Sie auf das **[Button](control-button.md)** -Steuerelement (Schaltfläche), und drücken Sie dann ESC.
+1. Fügen Sie ein **[Button](control-button.md)** -Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest: <br>
+   ```
+   ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})
+   ```
+   Weitere Informationen finden Sie unter [hinzufügen, benennen und Konfigurieren eines Steuer](../add-configure-controls.md)Elements, **[clearcollect](../functions/function-clear-collect-clearcollect.md)** und [andere Funktionen](../formula-reference.md).
+2. Drücken Sie F5, und wählen Sie **[Button](control-button.md)** -Steuerelement aus. Drücken Sie dann ESC.
 3. Fügen Sie ein **Export**-Steuerelement hinzu, und legen Sie seine **Data**-Eigenschaft auf **Products** fest.
-4. Drücken Sie F5, klicken oder tippen Sie auf das **Export**-Steuerelement, und geben Sie dann den Namen der Datei an, in die Sie die Daten exportieren möchten.
-5. Klicken oder tippen Sie auf **Speichern**, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
+4. Drücken Sie F5, und wählen Sie das Steuerelement **exportieren** aus, um die Datei *Data. zip*herunterzuladen.
+5. Wählen Sie **Speichern**aus, und drücken Sie dann ESC, um zum Standard Arbeitsbereich zurückzukehren.
 6. Fügen Sie in einer neuen oder vorhandenen App ein **Import**-Steuerelement hinzu, benennen Sie es mit **MyData**, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
-   **Collect(ImportedProducts; MyData.Data)**
-7. Drücken Sie F5, klicken oder tippen Sie auf **MyData**, klicken oder tippen Sie auf die Datei, die Sie exportiert haben, und klicken oder tippen Sie dann auf **Öffnen**.
-8. Drücken Sie ESC, klicken oder tippen Sie im Menü **Datei** auf **Collections** (Sammlungen), und vergewissern Sie sich, dass die aktuelle App die Daten enthält, die Sie exportiert haben.
+   **Collect(ImportedProducts, MyData.Data)**
+7. Drücken Sie F5, und wählen Sie **MyData**aus. Wählen Sie dann die exportierte Datei aus, und wählen Sie dann **Öffnen**aus.
+8. Drücken Sie ESC, wählen Sie im Menü **Datei** die Option **Sammlungen** aus, und vergewissern Sie sich, dass die aktuelle APP die Daten enthält, die Sie exportiert haben.
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit

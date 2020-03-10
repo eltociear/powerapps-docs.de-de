@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
-ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302909"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403420"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Übersicht über Canvas-App-Connectors für Power apps
 Die Daten sind der Kern der meisten apps, einschließlich derjenigen, die Sie in Power Apps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. Powerapps verfügt über Connectors für viele beliebte Dienste und lokale Datenquellen, einschließlich SharePoint, SQL Server, Office 365, Salesforce und Twitter. Informationen zu den ersten Schritten beim Hinzufügen von Daten zu einer Canvas-App finden Sie unter [Hinzufügen einer Datenverbindung in powerapps](add-data-connection.md).
@@ -45,7 +45,7 @@ Weitere Informationen zum Anpassen der Formel mit Tabellen finden Sie in den fol
   > [!NOTE]
   > Zum Herstellen einer Verbindung mit Daten in einer Excel-Arbeitsmappe muss die Arbeitsmappe in einem Cloudspeicherdienst wie OneDrive gehostet werden. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit cloudspeicher aus Power apps](connections/cloud-storage-blob-connections.md).
 
-## <a name="actions"></a>Handlungs
+## <a name="actions"></a>Aktionen
 
 Wenn Ihr Connector Aktionen bereitstellt, müssen Sie trotzdem weiterhin wie oben die Datenquelle auswählen. Sie wählen allerdings als nächsten Schritt keine Tabelle aus, sondern stellen manuell eine Verbindung zwischen einem Steuerelement und einer Aktion her, indem Sie die **Items**-Eigenschaft des Steuerelements bearbeiten, das Ihre Daten anzeigen soll. Die Formel, auf die Sie die **Items**-Eigenschaft festlegen, gibt die Aktion an, die Daten abruft. Die App ruft beispielsweise keine Daten ab, wenn Sie eine Verbindung mit Yammer herstellen und dann die **Items**-Eigenschaft auf den Namen der Datenquelle festlegen. Um ein Steuerelement mit Daten aufzufüllen, geben Sie eine Aktion an, wie z.B. **GetMessagesInGroup(5033622).messages**.
 
@@ -66,15 +66,15 @@ Diese Tabelle enthält Links zu weiteren Informationen zu den am häufigsten ver
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
-| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![Cloudspeicher](./media/connections-list/onedrive.png) |[**Cloud-Speicher**](connections/cloud-storage-blob-connections.md) ** |
+| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![Cloud-Speicher](./media/connections-list/onedrive.png) |[**Cloud-Speicher**](connections/cloud-storage-blob-connections.md) ** |
 | ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; | ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md) |
 |![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |&nbsp; |![Microsoft Translator](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md) |
 |![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |&nbsp; | ![Office 365-Benutzer](./media/connections-list/office365.png) |[**Office 365-Benutzer**](connections/connection-office365-users.md) |
 | ![Oracle](./media/connections-list/oracle-icon.png) |[**Orakel**](connections/connection-oracledb.md) |&nbsp; | ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
-| ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
+| ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-* * Gilt für Azure-BLOB, Box, Dropbox, Google Drive, onedrive und onedrive for Business
+\* * Gilt für Azure-BLOB, Box, Dropbox, Google Drive, onedrive und onedrive for Business
 
 ## <a name="standard-and-custom-connectors"></a>Standardmäßige und benutzerdefinierte Connectors
 Powerapps bietet *Standardconnectors* für viele häufig verwendete Datenquellen, z. b. die oben aufgeführten Datenquellen. Wenn Power Apps über einen Standardconnector für den Typ der Datenquelle verfügt, den Sie verwenden möchten, sollten Sie diesen Connector verwenden. Wenn Sie eine Verbindung mit anderen Arten von Datenquellen herstellen möchten, z.B. mit einem von Ihnen erstellten Dienst, finden Sie weitere Informationen unter [Registrieren und Verwenden von benutzerdefinierten Connectors](../canvas-apps/register-custom-api.md).

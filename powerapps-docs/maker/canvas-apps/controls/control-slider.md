@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6cabcfe58841a5d507ec31b6279cc9a00922850f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731986"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403846"
 ---
 # <a name="slider-control-in-power-apps"></a>Schieberegler-Steuerelement in powerapps
 Ein Steuerelement, mit dem der Benutzer durch Ziehen eines Handles einen Wert angeben kann
@@ -28,7 +27,7 @@ Ein Steuerelement, mit dem der Benutzer durch Ziehen eines Handles einen Wert an
 Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert eingeben. Ziehen Sie dazu den Handle des Schiebereglers von links nach rechts oder von unten nach oben, je nach ausgewählter Richtung.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
+**[Default](properties-core.md)** : Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.
 
 **Max**: Der maximale Wert, auf den der Benutzer einen Schieberegler oder eine Bewertung festlegen kann.
 
@@ -65,7 +64,7 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 
 **[HoverBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer den Mauszeiger über das Steuerelement hält.
 
-**Layout** – Gibt an, ob der Benutzer in einem Katalog scrollen oder einen Schieberegler von oben nach unten (**Vertical**) oder von links nach rechts (**Horizontal**) verschieben muss.
+**Layout**: gibt an, ob der Benutzer einen Bildlauf durch einen Katalog durchführt oder einen Schieberegler von oben nach unten anpasst (**Vertical**) oder von links nach rechts (**Horizontal**).
 
 **[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
@@ -75,19 +74,19 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 
 **RailFill**: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **FALSE** ist, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.
 
-**RailHoverFill**: Wenn Sie auf das Umschalten-Steuerelement oder den Schieberegler zeigen: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **false** ist, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.
+**RailHoverFill**: Wenn Sie auf ein Umschalten-Steuerelement oder einen Schieberegler zeigen, gibt dies die Hintergrundfarbe des Rechtecks in einem Umschalten-Steuerelement mit dem Wert **FALSE** an, oder die Farbe der Linie auf der rechten Seite des Handles in einem Schieberegler-Steuerelement.
 
 **ReadOnly**: Gibt an, ob ein Benutzer den Wert eines Schiebereglers oder eines Bewertung-Steuerelements ändern kann.
 
-**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **ShowValue**: Gibt an, ob ein Wert des Schiebereglers oder der Bewertung angezeigt wird, wenn der Benutzer diesen Wert ändert oder auf das Steuerelement zeigt.
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
-**ValueFill**: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **true** ist, oder die Farbe der Linie auf der linken Seite des Handles in einem Schieberegler-Steuerelement.
+**ValueFill**: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **TRUE** ist, oder die Farbe der Linie auf der linken Seite des Handles in einem Schieberegler-Steuerelement.
 
 **ValueHoverFill**: Wenn Sie mit dem Mauszeiger auf das Umschalten-Steuerelement oder den Schieberegler zeigen: Die Farbe des Hintergrunds des Rechtecks im Umschalten-Steuerelement, wenn sein Wert **TRUE** ist, oder die Farbe der Linie auf der linken Seite des Handles in einem Schieberegler-Steuerelement.
 
@@ -100,11 +99,11 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Sum**( *Value1*; *Value2* )](../functions/function-aggregates.md)
+[**Sum**( *Value1*, *Value2* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](properties-core.md)** auf diese Formel fest:
-   <br>**ClearCollect(CityPopulations; {City:"London"; Country:"United Kingdom"; Population:8615000}; {City:"Berlin"; Country:"Germany"; Population:3562000}; {City:"Madrid"; Country:"Spain"; Population:3165000}; {City:"Rome"; Country:"Italy"; Population:2874000}; {City:"Paris"; Country:"France"; Population:2273000}; {City:"Hamburg"; Country:"Germany"; Population:1760000}; {City:"Barcelona"; Country:"Spain"; Population:1602000}; {City:"Munich"; Country:"Germany"; Population:1494000}; {City:"Milan"; Country:"Italy"; Population:1344000})**
+   <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
    
@@ -113,18 +112,18 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 3. Fügen Sie einen Schieberegler ein, verschieben Sie ihn unter die Schaltfläche, und nennen Sie ihn **MinPopulation**.
 4. Legen Sie die **Max**-Eigenschaft des Schiebereglers auf **5000000** und seine **Min**-Eigenschaft auf **1000000** fest.
 5. Fügen Sie einen Textkatalog in vertikaler/Hochformat-Ausrichtung ein, verschieben Sie ihn unten den Schieberegler, und legen Sie die **[Items](properties-core.md)** -Eigenschaft des Katalogs auf diese Formel fest:<br>
-   **Filter(CityPopulations; Population > MinPopulation)**
-6. Legen Sie im ersten Element des Katalogs die Eigenschaft **[Text](properties-core.md)** der obersten Bezeichnung auf **ThisItem.City** und die Eigenschaft **[Text](properties-core.md)** der untersten Bezeichnung auf diese Formel fest:<br> **Text(ThisItem.Population; "##,###")**
+   **Filter(CityPopulations, Population > MinPopulation)**
+6. Legen Sie im ersten Element des Katalogs die Eigenschaft **[Text](properties-core.md)** der obersten Bezeichnung auf **ThisItem.City** und die Eigenschaft **[Text](properties-core.md)** der untersten Bezeichnung auf diese Formel fest:<br> **Text(ThisItem.Population, "##,###")**
 7. Drücken Sie F5, und passen Sie **MinPopulation** so an, dass nur Städte angezeigt werden, deren Einwohnerzahl die von Ihnen angegebene übersteigt.
-8. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+8. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **ValueFill** und **RailFill**
 * **ValueHoverFill** und **RailHoverFill**
-* **[FocusedBorderColor](properties-color-border.md)** und der Farbe außerhalb des Steuerelements
+* **[FocusedBorderColor](properties-color-border.md)** und die Farbe außerhalb des Steuerelements
 * **ValueFill** und Hintergrundfarbe
 * **RailFill** und Hintergrundfarbe
 * **ValueHoverFill** und Hintergrundfarbe
