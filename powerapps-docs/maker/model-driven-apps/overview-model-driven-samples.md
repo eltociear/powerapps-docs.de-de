@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 13ec511c692af8694012f94f881cb02ee1280ee2
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 65a650b979c4196eff8c103717a63aea5309ec57
+ms.sourcegitcommit: 551af7e0273862b28d9b2387671a4eeaf719eb37
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404505"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79084667"
 ---
 # <a name="model-driven-sample-apps"></a>Modellgesteuerte Beispiel-Apps
 
@@ -33,10 +33,10 @@ Wenn Sie mehr erfahren möchten, sollten Sie die Dokumentation zu den einzelnen 
 
 ## <a name="get-sample-apps"></a>Abrufen von Beispiel-Apps
 
-Damit modellgesteuerte Apps ausgeführt oder verändert werden können, müssen diese Apps zuerst in einer Common Data Service-Datenbank bereitgestellt werden. Erstellen Sie zunächst eine Testumgebung und eine Datenbank, und achten Sie dabei darauf, das Feld **Include sample apps and data** (Beispiel-Apps und -Daten hinzufügen).
+Damit modellgesteuerte Apps ausgeführt oder verändert werden können, müssen diese Apps zuerst in einer Common Data Service-Datenbank bereitgestellt werden. Erstellen Sie zunächst eine Testumgebung und eine Datenbank, und wählen Sie die Option zum Auswählen von " **Beispiel-apps und Daten**" aus.
 
-![Datenbank erstellen](media/overview-model-driven-samples/create-database1.png)
-
+> [!div class="mx-imgBorder"] 
+> ![Create Database](media/overview-model-driven-samples/create-database1.png)
 
 > [!IMPORTANT]
 > Über diese Option werden alle in Ihrer Datenbank verfügbaren Beispiel-Apps installiert. Beispiel-Apps sind für das Lernen und Vorführen konzipiert und sollten nicht in Produktionsdatenbanken installiert werden. 
@@ -45,13 +45,13 @@ Damit modellgesteuerte Apps ausgeführt oder verändert werden können, müssen 
 
 1. Melden Sie sich bei [powerapps.com](https://powerapps.com) an.  
 
-    
+2. Wählen Sie auf der Seite **Erstellen** die Beispiel-App aus, und klicken Sie auf **Erstellen**.
 
-2. Zeigen Sie auf der Seite **Erstellen** auf die Beispiel-APP, und klicken Sie **dann auf diese APP erstellen**.
+> [!div class="mx-imgBorder"] 
+> Beispiel-App für ![Modell](media/overview-model-driven-samples/model-driven-create-page-sample.png)
 
-![Modell-Beispiel-App](media/overview-model-driven-samples/model-driven-create-page-sample.png)
+3. Dann sollte sich der App-Designer öffnen, und Sie können aus mehreren Optionen zum Anpassen Ihrer App auswählen.
 
-3. Dann sollte sich der App-Designer öffnen, und Sie können aus mehreren Optionen zum Anpassen Ihrer App auswählen. 
 4. Klicken Sie im Portal im linken Navigationsbereich auf **erweitert** , um zusätzliche Anpassungsoptionen zu erhalten.
 
 ## <a name="remove-sample-apps-and-data"></a>Entfernen von Beispiel-Apps und -Daten 

@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefiniertes Visual apps-Visual für Power BI | Microsoft-Dokumentation
+title: Powerapps-Visualisierung für Power BI | Microsoft-Dokumentation
 description: Verfahren und Einschränkungen für das Einbetten einer Canvas-App, die die gleiche Datenquelle wie andere Berichtselemente in Power BI verwendet und ebenfalls gefiltert werden kann
 author: chmoncay
 manager: kvivek
@@ -7,29 +7,28 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/06/2020
+ms.date: 03/11/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3e06023319cdc799dd7573e830f499fbcf15348d
-ms.sourcegitcommit: 14723b60c9568169c7d7becea06051e7314080bc
+ms.openlocfilehash: b3678c01210d5cb0398ce12e2111dba516404cfe
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856864"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133604"
 ---
-# <a name="power-apps-custom-visual-for-power-bi"></a>Benutzerdefiniertes Visual apps-Visual für Power BI
+# <a name="power-apps-visual-for-power-bi"></a>Powerapps-Visualisierung für Power BI
 
-Power BI ermöglicht Einblicke in die Daten und bessere Entscheidungsfindung, während mit Power apps Apps erstellt und verwendet werden können, die eine Verbindung mit Geschäftsdaten herstellen. Mithilfe der benutzerdefinierten Visualisierung von powerapps können Sie kontextabhängige Daten an eine Canvas-App übergeben, die in Echtzeit aktualisiert wird, wenn Sie Änderungen am Bericht vornehmen. Dadurch können die Benutzer der App Einblicke in das Unternehmen gewinnen und innerhalb der Power BI-Berichte und -Dashboards Aktionen durchführen.
+Power BI ermöglicht Einblicke in die Daten und bessere Entscheidungsfindung, während mit Power apps Apps erstellt und verwendet werden können, die eine Verbindung mit Geschäftsdaten herstellen. Mithilfe der Visualisierung von powerapps können Sie kontextabhängige Daten an eine Canvas-App übergeben, die in Echtzeit aktualisiert wird, wenn Sie Änderungen am Bericht vornehmen. Dadurch können die Benutzer der App Einblicke in das Unternehmen gewinnen und innerhalb der Power BI-Berichte und -Dashboards Aktionen durchführen.
 
-## <a name="using-the-power-apps-custom-visual"></a>Verwenden der benutzerdefinierten Visualisierung von powerapps
+## <a name="using-the-power-apps-visual"></a>Verwenden der visuellen powerapps-Visualisierung
 
-Sehen wir uns nun die Schritte an, die erforderlich sind, um die benutzerdefinierte Visualisierung von powerapps in Ihrem Power BI Bericht zu verwenden.
+Sehen wir uns nun die Schritte an, die erforderlich sind, um das Visual apps-Visual in Ihrem Power BI Bericht zu verwenden.
 
-1. Die benutzerdefinierte Visualisierung von powerapps ist standardmäßig im Power BI-Dienst verfügbar. Wenn Sie Power BI Desktop verwenden und nicht sehen, müssen Sie ein Upgrade auf die neueste Version von Power BI Desktop durchführen.
+1. Powerapps Visual ist standardmäßig im Power BI-Dienst verfügbar. Wenn Sie Power BI Desktop verwenden und nicht sehen, müssen Sie ein Upgrade auf die neueste Version von Power BI Desktop durchführen.
 
 2. Fügen Sie dem Bericht die Visualisierung "powerapps" hinzu, und legen Sie die zugeordneten Datenfelder fest.
 
@@ -46,7 +45,7 @@ Sehen wir uns nun die Schritte an, die erforderlich sind, um die benutzerdefinie
     Wenn Sie eine neue APP erstellen, erstellt Power apps eine einfache APP mit den erforderlichen Komponenten, die bereits eingerichtet sind.
 
     > [!NOTE]
-    > Sie müssen eine neue APP aus dem benutzerdefinierten powerapps-Visual in Power BI Bericht erstellen, damit die `PowerBIIntegration.Refresh()`-Funktion in der app verfügbar ist.
+    > Sie müssen eine neue APP aus der powerapps-Visualisierung in Power BI Bericht erstellen, damit die `PowerBIIntegration.Refresh()`-Funktion in der app verfügbar ist.
 
     ![Neue App](./media/powerapps-custom-visual/new-app.png)
 
@@ -54,7 +53,7 @@ Sehen wir uns nun die Schritte an, die erforderlich sind, um die benutzerdefinie
 
     ![Benutzerdefinierte Formel](./media/powerapps-custom-visual/custom-formula.png)
 
-    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
+    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
 
    Der Power BI Bericht und die Instanz von powerapps Studio, die gestartet wurde, haben eine Live Datenverbindung gemeinsam. Obwohl beide offen sind, können Sie die Daten im Bericht filtern oder ändern, damit die aktualisierten Daten sofort in der app in powerapps Studio angezeigt werden.
 
@@ -70,17 +69,17 @@ Sehen wir uns nun die Schritte an, die erforderlich sind, um die benutzerdefinie
 
     ![Bearbeiten einer App](./media/powerapps-custom-visual/edit-app.png)
 
-## <a name="limitations-of-the-power-apps-custom-visual"></a>Einschränkungen der benutzerdefinierten Visualisierung von powerapps
+## <a name="limitations-of-the-power-apps-visual"></a>Einschränkungen der visuellen powerapps-Visualisierung
 
-Die folgenden Einschränkungen gelten für die benutzerdefinierte Visualisierung von powerapps:
+Die folgenden Einschränkungen gelten für die Visual apps-Visualisierung:
 
 - Wenn Sie die mit dem Visual verknüpften Datenfelder ändern, müssen Sie die App innerhalb des Power BI-Diensts bearbeiten, indem Sie auf die Auslassungspunkte (...) und dann auf **Bearbeiten** klicken. Andernfalls werden die Änderungen nicht an Power apps weitergegeben, und die APP verhält sich auf unerwartete Weise.
-- Das benutzerdefinierte powerapps-Visual kann keine Aktualisierung von Power BI Berichten und Power BI Datenquellen innerhalb Power BI Desktop auslöst. Wenn Sie Daten aus der app in dieselbe Datenquelle wie den Bericht zurückschreiben, werden die Änderungen nicht sofort in Power BI Desktop angezeigt. Die Änderungen werden bei der nächsten geplanten Aktualisierung übernommen.
-- Das benutzerdefinierte powerapps-Visual kann die Daten nicht filtern oder Daten an den Bericht zurücksenden.
+- Das Visual apps-Visual kann keine Aktualisierung von Power BI Berichten und Power BI Datenquellen innerhalb Power BI Desktop auslöst. Wenn Sie Daten aus der app in dieselbe Datenquelle wie den Bericht zurückschreiben, werden die Änderungen nicht sofort in Power BI Desktop angezeigt. Die Änderungen werden bei der nächsten geplanten Aktualisierung übernommen.
+- Das Visual apps-Visual kann die Daten nicht filtern oder Daten an den Bericht zurücksenden.
 - Sie müssen die powerapps-App getrennt von Ihrem Bericht freigeben. Erfahren Sie mehr über das Freigeben von [apps in powerapps](share-app.md).
-- Die benutzerdefinierte Visualisierung von powerapps wird von Power BI-Berichtsserver nicht unterstützt.
+- Die Visual apps-Visualisierung wird von Power BI-Berichtsserver nicht unterstützt.
 - Die folgenden Einschränkungen gelten, wenn die `PowerBIIntegration.Refresh()`-Funktion verwendet wird:
-    - Sie müssen eine neue APP aus dem benutzerdefinierten powerapps-Visual in Power BI Bericht erstellen, damit diese Funktion in der app verfügbar ist.
+    - Sie müssen eine neue APP aus Power apps-Visualisierung in Power BI Bericht erstellen, damit diese Funktion in der app verfügbar ist.
     - Sie müssen eine Quelle verwenden, die [directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) unterstützt, und die Datenverbindung muss mithilfe der directquery-Methode erstellt werden.
 - Power apps in Power BI Desktop stellen Daten für Power apps Studio bereit, wenn Sie Apps erstellen, aber nicht während der Bearbeitung. Verwenden Sie Power BI Web, um beim Bearbeiten von apps eine Vorschau der Daten anzuzeigen.
 - Die Power BI Mobile App unterstützt das Mikrofon-Steuerelement in Power apps-Visuals nicht.
@@ -90,7 +89,7 @@ Die folgenden Einschränkungen gelten für die benutzerdefinierte Visualisierung
 
 ## <a name="browser-support"></a>Browserunterstützung
 
-In der folgenden Tabelle sind die Browserunterstützung für das anzeigen, erstellen und Ändern von Aktionen der benutzerdefinierten Visualisierung von powerapps aufgelistet. Unterstützte Browser und Aktionen werden durch ein Häkchen (&check;) identifiziert.
+In der folgenden Tabelle sind die Browserunterstützung für die Anzeige, Erstellung und Änderung von powerapps-Visualisierungen aufgeführt. Unterstützte Browser und Aktionen werden durch ein Häkchen (&check;) identifiziert.
 
 |Browser|Anzeigen|Erstellen|Ändern
 |-|-|-|-
@@ -101,7 +100,7 @@ In der folgenden Tabelle sind die Browserunterstützung für das anzeigen, erste
 |Mozilla Firefox
 |Alle anderen Browser
 
-\* in Safari müssen Sie die standortübergreifende Überwachung (**Einstellungen** > **Datenschutz**) aktivieren und die Option " **standortübergreifende Überwachung verhindern**" deaktivieren, um das benutzerdefinierte Visual powerapps-Visual anzuzeigen.
+\* in Safari müssen Sie die standortübergreifende Überwachung aktivieren (**Einstellungen** > **Datenschutz**und Deaktivieren von **Standort übergreifender Überwachung**), um das visuelle Element von powerapps anzuzeigen.
 
 ## <a name="accessibility-support"></a>Barrierefreiheits Unterstützung
 
@@ -117,5 +116,5 @@ Weitere Informationen finden Sie unter [Power BI-Dokumentation zur Barrierefreih
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* Befolgen Sie ein einfaches, [ausführliches Tutorial](embed-powerapps-powerbi.md).
+* Befolgen Sie ein einfaches, [ausführliches Tutorial](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-powerapp).
 * Sehen Sie sich unser [Video](https://aka.ms/powerappscustomvisualvideo)an.

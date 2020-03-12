@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/06/2020
+ms.date: 03/11/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7dd989bcd87e910812bf41509585c31c1fc107a9
-ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
+ms.openlocfilehash: 742d33b2d87969df19fe6c0e82f96ecfa9da27e4
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78971008"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133625"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Einrichten und Erlernen der Beispiel Vorlage für die Krisenkommunikation in Power apps
 
@@ -37,12 +37,20 @@ In dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 - Importieren von Flows zum Senden von Benachrichtigungen an Benutzer
 - Erstellen eines zentral verwalteten Teams-Teams, um Daten zu aggregieren und effektiv auf Probleme zu reagieren
 
+> [!NOTE]
+> Die Beispiel Vorlage für die Krisenkommunikation ist auch für die Pläne "Power Apps" und "Power automatisieren US Government" verfügbar. Die Dienst-URLs für Power apps und die powerautomatisiert US Government-Version unterscheiden sich von der kommerziellen Version. Weitere Informationen finden Sie unter [powerapps US Government-Dienst-URLs](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls) und [Energie automatisierte US Government-Dienst-URLs](https://docs.microsoft.com/power-automate/us-govt#power-automate-us-government-service-urls).
+
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
 - [Registrieren Sie sich](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) für powerapps.
 - Sie müssen über eine gültige SharePoint Online-Lizenz verfügen und über die Berechtigung zum Erstellen von Listen verfügen.
 - Sie müssen über eine öffentliche SharePoint-Website verfügen, auf der Sie die Daten für die APP speichern können.
 - Laden Sie die Assets aus [aka.ms/CrisisCommunicationSolution](https://aka.ms/CrisisCommunicationSolution)herunter.
+
+> [!IMPORTANT]
+> Wenn Sie Feedback oder Probleme im Zusammenhang mit der **App zur Krisenkommunikation**haben, verwenden Sie die folgenden Links:
+> - **[Backs](https://aka.ms/crisis-communication-feedback)**
+> - **[Probleme](https://aka.ms/crisis-communication-issues)**
 
 ## <a name="create-a-home-for-your-data"></a>Erstellen eines Zuhause für Ihre Daten
 
@@ -119,7 +127,7 @@ Die APP erfordert mehrere Listen, in denen alle Daten gespeichert werden. Zum Au
 
 > [!NOTE]
 > Möglicherweise wird eine Fehlermeldung angezeigt, die besagt, dass Standortdienste erforderlich sind.
-Wenn dies der Fall ist, gestatten Sie den Standort Diensten das Automatisieren und Aktualisieren der Seite, bevor Sie es erneut versuchen.
+Wenn dies der Fall ist, lassen Sie die Standortdienste die Automatisierung und Aktualisierung der Seite durch, bevor Sie es erneut versuchen.
 
 Der Flow erstellt dann die folgenden SharePoint-Listen auf der SharePoint-Website:
 
@@ -136,7 +144,7 @@ Der Flow erstellt dann die folgenden SharePoint-Listen auf der SharePoint-Websit
 
 > [!NOTE]
 > - Alle oben aufgeführten Listen Spalten sollten als Abhängigkeiten angesehen werden.
-    Schützen Sie die Listen vor versehentlichen Schema Änderungen (z. b. das Hinzufügen neuer Spalten ist zulässig, aber das Löschen von Spalten kann die APP unterbrechen).
+    Schützt die Listen vor versehentlichen Schema Änderungen (z. b. das Hinzufügen neuer Spalten ist zulässig, aber das Löschen von Spalten kann die APP unterbrechen.)
 > - Beim Löschen von Listenelementen Vorsicht walten lassen; durch das Löschen von Listenelementen werden historische Datensätze gelöscht. Sie können den veralnungs Wert von *Nein* auf *Ja* umschalten, um Datensätze aus Kontakten, Nachrichten, FAQs oder Links zu löschen.
 
 ## <a name="import-and-set-up-the-crisis-communication-app"></a>Importieren und Einrichten der App zur Krisenkommunikation
@@ -169,9 +177,7 @@ Nachdem Sie alle SharePoint-Listen erstellt haben, können Sie nun die App impor
 
     ![Bearbeiten einer App](media/sample-crisis-communication-app/05-Edit-App.png)
 
-1. **Melden Sie sich an** , oder erstellen Sie erforderliche Verbindungen, und wählen Sie **zulassen**:
-
-    ![Verbindungen zulassen](media/sample-crisis-communication-app/allow-connections.png)
+1. **Melden Sie sich an** , oder erstellen Sie erforderliche Verbindungen, und wählen Sie **zulassen**
 
 1. Navigieren Sie im linken Bereich zu den Datenquellen:
 
@@ -199,11 +205,11 @@ Nachdem Sie alle SharePoint-Listen erstellt haben, können Sie nun die App impor
 
 1. **Speichern** und **veröffentlichen** Sie die app.
 
-#### <a name="disable-location-updates"></a>Speicherort Aktualisierungen deaktivieren
+#### <a name="enable-location-updates"></a>Speicherort Aktualisierungen aktivieren
 
-Diese APP zeichnet einen Benutzer Speicherort auf und speichert ihn auf der SharePoint-Website, wenn ein Benutzer seinen Status festlegt. Dadurch kann Ihr Krisenmanagementteam diese Daten in einem Power BI Bericht anzeigen.
+Mit dieser APP können Sie den Speicherort eines Benutzers aufzeichnen und auf der SharePoint-Website speichern, wenn ein Benutzer seinen Status festlegt. Ihr Krisenmanagementteam kann diese Daten in einem Power BI Bericht anzeigen.
 
-Um diese Funktion zu deaktivieren, führen Sie die folgenden Schritte aus:
+Um diese Funktionalität zu aktivieren, führen Sie die folgenden Schritte aus:
 
   1. Suchen nach dem **btndaterange** -Steuerelement
   1. Öffnen **Sie die onselect** -Eigenschaft des **btndaterante** -Steuer Elements in der Bearbeitungs Leiste.
@@ -231,8 +237,8 @@ ForAll(
             PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value),
             
              
-            Latitude: Blank(),
-            Longitude: Blank()
+            Latitude: Location.Latitude,
+            Longitude: Location.Longitude
         }
     )
 );
@@ -329,7 +335,7 @@ Um die APP zu verwalten, die Sie importiert haben, sollten Sie die gleichen Schr
 1. Melden Sie sich bei [Power Apps](https://make.powerapps.com) an.
 1. Wählen Sie im linken Navigationsbereich **apps** aus.
 1. Klicken Sie in der Befehlsleiste auf **importieren** .
-1. Laden Sie die Datei **crisiscommunicationadminapp. zip** aus dem GitHub-Repository hoch:
+1. Laden Sie die Datei **crisiscommunicationadmin. zip** aus dem GitHub-Repository hoch:
 
     ![App-Paket importieren](media/sample-crisis-communication-app/import-app.png)
 
@@ -390,15 +396,19 @@ Um die APP zu initialisieren, müssen Sie alle erforderlichen Felder bereitstell
 
 Füllen Sie alle Felder aus, und wählen Sie **Speichern**aus.
 
-| **Feldname** | **Logischer Name in SharePoint** | **Zweck** |
-|-|-|-|
-| E-Mail mit Administrator Berechtigungen | "Admincontactemail" | Wird verwendet, um andere Personen zu benachrichtigen, die die Anwendung verwalten. |
-| Logo-URL | Logo | Das Logo Ihrer APP, das in der linken oberen Ecke angezeigt wird. |
-| Aad-Gruppen-ID | Aadgroupid | Wird zum Senden von Benachrichtigungen an Endbenutzer über interne Unternehmens Updates über den Nachrichtenfluss " *Benutzer bei neuer Krisen Mitteilung Benachrichtigen* " verwendet. |  
-| APP-URL | AppURL | Der Speicherort der APP, sodass der *Nachrichtenfluss "Benutzer über neue Krisenkommunikation Benachrichtigen* " Benutzer nach Auswahl von " **Weitere**Informationen" umleiten kann. | 
-| RSS-Feed für Government | Governmentrssfeed | Wird verwendet, um das World News-Feature in der APP aufzufüllen. Nützlich, wenn Sie Ihren Mitarbeitern zusätzliche Informationen aus einer vertrauenswürdigen Quelle bereitstellen möchten. |
-| Benachrichtigungs Methode | Preferredsentnotification | Wird vom Nachrichtenfluss " *Benutzer bei neuer Krisen Mitteilung Benachrichtigen* " verwendet, um zu bestimmen, welcher Verteilungs Kanal beim Versenden von Benachrichtigungen verwendet werden soll. |
-| Merkmals Flags | Feature1... 88 | Wird verwendet, um die einzelnen Funktionen innerhalb der Anwendung zu deaktivieren oder zu aktivieren. |
+| **Feldname** | **Logischer Name in SharePoint** | **Zweck** | **Beispiel** |
+|-|-|-|-|
+| E-Mail mit Administrator Berechtigungen | "Admincontactemail" | Wird verwendet, um andere Personen zu benachrichtigen, die die Anwendung verwalten.  | admin@contoso.com |
+| Logo-URL | Logo | Das Logo Ihrer APP, das in der linken oberen Ecke angezeigt wird. | https://contoso.com/logo.png |
+| Aad-Gruppen-ID | Aadgroupid | Wird zum Senden von Benachrichtigungen an Endbenutzer über interne Unternehmens Updates über den Nachrichtenfluss " *Benutzer bei neuer Krisen Mitteilung Benachrichtigen* " verwendet. Befolgen Sie die nachfolgenden Anweisungen, um die Aad-ID Ihrer Gruppe zu erhalten. | c0ddf873-b4fe-4602-b3a9-502dd944c8d5 |
+| APP-URL | AppURL | Der Speicherort der Endbenutzer-APP, sodass der *Nachrichtenfluss "Benutzer über neue Krisen Mitteilung Benachrichtigen* " Benutzer nach Auswahl von " **Weitere**Informationen" umleiten kann. | https://apps.preview.powerapps.com/play/<app URL>? tenantid =<tenant ID>
+| RSS-Feed für Government | Governmentrssfeed | Wird verwendet, um das World News-Feature in der APP aufzufüllen. Nützlich, wenn Sie Ihren Mitarbeitern zusätzliche Informationen aus einer vertrauenswürdigen Quelle bereitstellen möchten. | https://www.who.int/rss-feeds/news-english.xml |
+| Benachrichtigungs Methode | Preferredsentnotification | Wird vom Nachrichtenfluss " *Benutzer bei neuer Krisen Mitteilung Benachrichtigen* " verwendet, um zu bestimmen, welcher Verteilungs Kanal beim Versenden von Benachrichtigungen verwendet werden soll. Dieses Feld ist ein Pflichtfeld. | E-Mail, Teams-Benachrichtigung, Pushbenachrichtigung |
+| Merkmals Flags | Feature1... 88 | Wird verwendet, um die einzelnen Funktionen innerhalb der Anwendung zu deaktivieren oder zu aktivieren. |  |
+
+> [!NOTE]
+> Team Benachrichtigung und Pushbenachrichtigung werden in gcc derzeit nicht unterstützt.
+
 
 #### <a name="finding-the-aad-of-your-distribution-group"></a>Suchen der Aad-Gruppe ihrer Verteiler Gruppe
 1. Navigieren Sie zu [Aad.Portal.Azure.com](https://aad.portal.azure.com)
@@ -587,7 +597,7 @@ Später erhalten alle Benutzer in der Verteilerliste ein Update anhand ihrer bev
 
 ## <a name="monitor-office-absences-with-power-bi"></a>Überwachen von Office-Abwesenheits Punkten mit Power BI
 
-Nachdem Sie die APP bereitgestellt haben und die Mitarbeiter mit der Benachrichtigung benachrichtigt werden, dass Sie aus verschiedenen Gründen aus dem Büro bestehen (z. b. krank oder von Hause aus), können Sie jetzt mithilfe eines Power BI Berichts nachverfolgen, wie viele und wo sich diese Personen befinden.
+Nachdem Sie die APP bereitgestellt haben und die Mitarbeiter mit der Benachrichtigung benachrichtigt werden, dass Sie aus verschiedenen Gründen aus dem Büro bestehen (z. b. krank oder von Hause aus), können Sie jetzt mithilfe eines Power BI Berichts nachverfolgen, wie viele und wo sich diese Personen befinden. Beachten Sie, dass Sie die [Standortüberwachung aktivieren](#enable-location-updates) müssen, damit das Karten Steuerelement funktioniert.
 
 Zum starten können Sie den Beispiel Bericht "Anwesenheitsstatus Bericht. pbix" verwenden, der im heruntergeladenen [Assets-Paket](#prerequisites)verfügbar ist.
 Laden Sie bei Bedarf [Power BI Desktop](https://powerbi.microsoft.com/downloads)herunter. Wir benötigen auch einige Informationen aus der bereits erstellten **CI_Employee Status** -SharePoint-Liste. Wir werden also zuerst darauf eingehen. Öffnen Sie die Liste in Ihrer Website, und wählen Sie unter dem Symbol "Einstellungen" die Option Listen Einstellungen
@@ -710,6 +720,25 @@ So fügen Sie den Power BI Bericht hinzu:
 1. Suchen Sie nach **Power BI**und wählen Sie ihn aus.
 1. Suchen Sie den Power BI Bericht, und wählen Sie ihn aus.
 1. Wählen Sie **Speichern** aus.
+
+## <a name="faq"></a>Häufig gestellte Fragen
+
+1. **Welche Lizenzen benötige ich, um diese Lösung auszuführen?**
+
+    - Die Lösung in dieser APP verwendet Office-Connectors. Aus diesem Grund genügt eine per Seeding betriebene Power apps-Lizenz aus Office, um die Benutzer-und admin-apps auszuführen und wiederzugeben. Weitere Informationen finden Sie unter [Übersicht über die Power Platform-Lizenzierung](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus) 
+    - Wenn Sie den Power BI Bericht verwenden möchten (verpackt als Teil der Lösung), benötigen Sie eine Power BI-Lizenz. Weitere Informationen finden Sie unter [Power BI Preise](https://powerbi.microsoft.com/pricing/).
+
+1. **Wo sollte ich mich Feedback zur Lösung machen?**
+
+    Wir freuen uns, Ihnen bei der Bereitstellung und Anpassung dieser Lösung zu hören. Besuchen Sie [aka.ms/Crisis-Communication-Feedback](https://aka.ms/crisis-communication-feedback).
+
+1. **Es scheint einen Fehler mit der APP zu finden. wo sollte ich es tun?**
+
+   Wechseln Sie zu [aka.ms/Crisis-Communication-Issues](https://aka.ms/crisis-communication-issues), um einen Fehler in der Lösung zu melden.
+
+1. **Welche Features werden in gcc derzeit nicht unterstützt?**
+
+    Der Power automatisierter bot-Connector für Teams und der pushbenachrichtigungsconnector sind zurzeit nicht für gcc verfügbar. Verwenden Sie die Option e-Mail, um Benutzer über interne News Updates für gcc zu benachrichtigen.
 
 ***Haftungsausschluss:*** *diese APP ist ein Beispiel und kann mit Microsoft powerapps und Teams für die Verbreitung von Referenzinformationen verwendet werden. Diese APP ist nicht für das medizinische Gerät, den klinischen Support, das Diagnosetool oder andere Technologien vorgesehen, die bei der Diagnose, beim Schutz, bei der Entschärfung, bei der Behandlung oder bei der Verhinderung von Krankheiten oder anderen Bedingungen verwendet werden sollen, und von Microsoft wird keine Lizenz oder das Recht erteilt, diese APP zu diesem Zweck zu verwenden.  Diese APP ist nicht als Ersatz für professionelle medizinische Beratung, Diagnose, Behandlung oder Beurteilung gedacht und sollte nicht als solche verwendet werden.  Der Kunde hat das alleinige Risiko und die Verantwortung für die Verwendung dieser app.  Microsoft garantiert nicht, dass die APP oder die darin enthaltenen Materialien zu medizinischen Zwecken ausreichen oder die Integritäts-oder medizinischen Anforderungen beliebiger Personen erfüllen.*  
 

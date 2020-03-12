@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 23bfbb3b97764a427d5422e4ad207d4af7cc1589
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 927b8dae59a4dc6fc55d74c1998b0d434eb8356c
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530786"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133586"
 ---
 # <a name="trace-function"></a>Funktion „Trace“ 
 
@@ -28,10 +28,10 @@ Ablauf Verfolgungs Meldungen können auch in der APP definiert werden. Diese kö
 
 ## <a name="syntax"></a>Syntax
 
-*Trace(Meldung, Schweregrad, custom_record)*
+*Ablauf Verfolgung (Nachricht, trace_severity custom_record)*
 
 - *Message* – Erforderlich. Dies sind die nachzuverfolgenden Informationen. In Tests erstellt dieses Element einen Eintrag in der Tabelle „Traces“ im Datensatz „TestCaseResult“. 
-- *Schweregrad:* optional. Dies entspricht dem Schweregrad des in Application Insights aufgezeichneten Trace-Elements. Es gibt die folgenden Optionen: „Information“, „Warnung“ oder „Fehler“. 
+- *Trace_severity* : optional. Dies entspricht dem Schweregrad des in Application Insights aufgezeichneten Trace-Elements. Optionen sind "traceseverity. Information", "traceseverity. Warning" oder "traceseverity. Error". 
 - *custom_record:* optional. Dies ist ein Datensatz mit benutzerdefinierten Daten, die in Application Insights gespeichert werden. 
   
 
