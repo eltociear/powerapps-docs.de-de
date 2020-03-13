@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7fbcbe315f3af9554d53329f35469af4ca236181
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: b5f273fcc14b7c8bd9cbde947133fd70d4a2a432
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733191"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79035624"
 ---
 # <a name="use-keyboard-shortcuts-in-power-apps"></a>Verwenden von Tastenkombinationen in Power Apps
 
@@ -31,7 +31,7 @@ Tastenkombinationen bieten eine alternative Möglichkeit, häufige Aufgaben ausz
 
 ## <a name="form-shortcuts"></a>Tastenkombinationen für Formulare
 
-<!--does the N/A mean not available? If so, why include them? -->
+
 
 
 |Aufgabe  | Einheitliche Oberfläche |
@@ -152,8 +152,6 @@ Interaktive Dashboards ermöglichen neue Funktionen, z. B. das Filtern, Sortier
 |Zum ersten Element in einem Diagramm wechseln | TAB |
 |Zum nächsten Datenpunkt wechseln | NACH-RECHTS-TASTE (→) **oder** NACH-UNTEN-TASTE (↓)|
 |Zum vorherigen Datenpunkt wechseln | NACH-LINKS-TASTE (←) **oder** NACH-OBEN-TASTE (↑)|
-|Zum ersten Datenpunkt wechseln | Start |
-|Zum letzten Datenpunkt wechseln | Ende |
 |Zur Schaltfläche **Mehr anzeigen** in einem Tagdiagramm wechseln | TAB |
 |Von der Schaltfläche **Mehr anzeigen** zurück zu den Tags in einem Tagdiagramm wechseln | UMSCHALT+TAB |
 |Dashboard filtern, wenn ein Datenpunkt in einem interaktiven Dashboard ausgewählt ist | EINGABETASTE **oder** LEERTASTE |

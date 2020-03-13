@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b05b3220c4e67565a6055a23915cc65f5d434eb2
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 1932699e669b47eba91c4e576416d287d590b5e8
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282436"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133552"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Einfache Navigation in einer modellgesteuerten App 
 
@@ -105,7 +105,7 @@ Im Referenzbereich können Sie Aufgaben erledigen, ohne die Bildschirmansicht ve
 
  In diesem Video wird der Referenzbereich näher erläutert:
 
-<div class="embeddedvideo"><iframe src="https://www.microsoft.com/videoplayer/embed/d8224c3f-6e20-4b8e-9d0d-b0f5602c7708" frameborder="0" allowfullscreen=""></iframe></div>
+<div class="embeddedvideo"><iframe src="https://www.youtube.com/embed/ruAPEKY5vNc" frameborder="0" allowfullscreen=""></iframe></div>
 
 ## <a name="notifications"></a>Benachrichtigungen 
 
