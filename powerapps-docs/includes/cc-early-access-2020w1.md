@@ -1,0 +1,2 @@
+> [!NOTE]
+> Dies ist eine Funktion für den Vorabzugang. Sie können sich für einen Vorabzugang anmelden, um diese Funktionen in Ihrer Umgebung zu aktivieren. Auf diese Weise können Sie die Funktionen testen und sie dann in all Ihren Umgebungen anwenden. Informationen zum Aktivieren dieser Funktionen finden Sie im Abschnitt „Abonnieren von Updates für die Veröffentlichungswelle 1 im Jahr 2020“ [Abonnieren von Updates für die Veröffentlichungswelle 1 im Jahr 2020](https://aka.ms/EarlyAccessOpt-in).
