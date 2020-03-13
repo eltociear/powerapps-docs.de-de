@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b6ec2006266a15b7552d1a83b2d7d67c14560470
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404331"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211432"
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Ändern der Bildschirmgröße und der Ausrichtung einer Canvas-app in Power apps
 Passen Sie eine Canvas-App an, indem Sie Bildschirmgröße und -ausrichtung ändern.
@@ -48,7 +47,7 @@ Erstellen Sie eine APP, oder öffnen Sie eine APP zum Bearbeiten, und wählen Si
 
     Wenn Sie diese Einstellung deaktivieren, wird die APP an das Seitenverhältnis des Geräts angepasst, auf dem es ausgeführt wird, und es wird der gesamte verfügbare Speicherplatz belegt. Die APP wird nicht skaliert, und daher können Bildschirme Weitere Informationen anzeigen.
 
-    Wenn diese Einstellung deaktiviert ist, wird das **Seitenverhältnis für Sperren** automatisch deaktiviert und deaktiviert. Außerdem ist die **Width** -Eigenschaft aller Bildschirme auf `Max(App.Width; App.DesignWidth)`festgelegt, und Ihre **height** -Eigenschaft wird auf `Max(App.Height; App.DesignHeight)` festgelegt, sodass die Dimensionen des Fensters, in dem die app ausgeführt wird, nachverfolgt werden. Mit dieser Änderung können Sie Apps erstellen, die auf verschiedene Geräte und Fenster Dimensionen reagieren. Weitere Informationen: [Erstellen eines reaktionsfähigen Layouts](create-responsive-layout.md)
+    Wenn diese Einstellung deaktiviert ist, wird das **Seitenverhältnis für Sperren** automatisch deaktiviert und deaktiviert. Außerdem ist die **Width** -Eigenschaft aller Bildschirme auf `Max(App.Width, App.DesignWidth)`festgelegt, und Ihre **height** -Eigenschaft wird auf `Max(App.Height, App.DesignHeight)` festgelegt, sodass die Dimensionen des Fensters, in dem die app ausgeführt wird, nachverfolgt werden. Mit dieser Änderung können Sie Apps erstellen, die auf verschiedene Geräte und Fenster Dimensionen reagieren. Weitere Informationen: [Erstellen eines reaktionsfähigen Layouts](create-responsive-layout.md)
 
 1. Geben Sie unter **Seitenverhältnis sperren** entweder **Ein** oder **Aus** an.
 

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 8c7f982f4d2eca1b097a312f74aff70063bf3396
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403179"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212674"
 ---
 # <a name="operators-and-identifiers-in-power-apps"></a>Operatoren und Bezeichner in powerapps
 
@@ -33,7 +33,7 @@ Einige dieser Operatoren sind von der Sprache des Erstellers abhängig.  Weitere
 |                                **+**                                |                Arithmetische operatoren                 |                                                                                  **1+2**                                                                                   |                                                                                                                             Addition                                                                                                                             |
 |                                **-**                                |                       &nbsp;                        |                                                                                  **2-1**                                                                                   |                                                                                                                       Subtraktion und Vorzeichen                                                                                                                       |
 |                              *                               |                       &nbsp;                        |                                                                                  **2 \* 3**                                                                                  |                                                                                                                          Multiplikation                                                                                                                          |
-|                                **/**                                |                       &nbsp;                        |                                                                                  **2/3**                                                                                   |                                                                                                   Division (siehe auch Funktion **[Mod](function-mod.md)** )                                                                                                    |
+|                                **/**                                |                       &nbsp;                        |                                                                                  **2/3**                                                                                   |                                                                                                   Division (siehe auch Funktion **[Mod](function-mod.md)**)                                                                                                    |
 |                                **^**                                |                       &nbsp;                        |                                                                                  **2^3**                                                                                   |                                                                                          Potenzierung, entspricht der Funktion **[Power](function-numericals.md)**                                                                                          |
 |                                **%**                                |                       &nbsp;                        |                                                                                   **20 %**                                                                                    |                                                                                                         Prozentsatz (entspricht &quot;\* 1/100&quot;)                                                                                                          |
 |                                **=**                                |                Vergleichsoperatoren                 |                                                                               **Price = 100**                                                                                |                                                                                                                             Gleich                                                                                                                             |
@@ -61,28 +61,28 @@ Einige dieser Operatoren sind von der Sprache des Erstellers abhängig.  Weitere
 Sie können die Operatoren **[in](operators.md#in-and-exactin-operators)** und **[exactin](operators.md#in-and-exactin-operators)** verwenden, um in einer [Datenquelle](../working-with-data-sources.md) nach einer Zeichenfolge zu suchen, z.B. einer Sammlung oder importierten Tabelle. Mit dem Operator **[in](operators.md#in-and-exactin-operators)** werden Übereinstimmungen unabhängig von der Groß- und Kleinschreibung identifiziert, und mit dem Operator **[exactin](operators.md#in-and-exactin-operators)** ergeben sich nur dann Übereinstimmungen, wenn sie exakt die gleiche Schreibweise haben. Im Folgenden ein Beispiel:
 
 1. Erstellen oder importieren Sie eine Sammlung mit dem Namen **Inventory**, und zeigen Sie sie in einem Katalog an. Dies wird im ersten Verfahren unter [Show images and text in a gallery](../show-images-text-gallery-sort-filter.md) (Anzeigen von Bildern und Text in einem Katalog) beschrieben.
-2. Legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs auf diese Formel fest:
+2. Legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft des Katalogs auf diese Formel fest:
    <br>**Filter(Inventory, "E" in ProductName)**
 
     Im Katalog werden alle Produkte mit Ausnahme von „Callisto“ angezeigt, weil der Name dieses Produkts der einzige Name ist, der den von Ihnen angegebenen Buchstaben nicht enthält.
-3. Ändern Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs in diese Formel:
+3. Ändern Sie die **[Items](../controls/properties-core.md)**-Eigenschaft des Katalogs in diese Formel:
    <br>**Filter(Inventory, "E" exactin ProductName)**
 
     Im Katalog wird nur „Europa“ angezeigt, weil nur dieser Name den von Ihnen angegebenen Großbuchstaben enthält.
 
 ## <a name="thisitem-operator"></a>ThisItem-Operator
-Sie können Daten in den Steuerelementen **[Katalog](../controls/control-gallery.md)** , **[Formular bearbeiten](../controls/control-form-detail.md)** oder **[Formular anzeigen](../controls/control-form-detail.md)** anzeigen, indem Sie sie an eine Tabelle oder Sammlung binden.  Diese Steuerelemente stellen einen Container für andere Karten und Steuerelemente dar.  Jede Karte bzw. jedes Steuerelement im Container kann über den Operator **[ThisItem](operators.md#thisitem-operator)** auf die angebundenen Daten zugreifen.   
+Sie können Daten in den Steuerelementen **[Katalog](../controls/control-gallery.md)**, **[Formular bearbeiten](../controls/control-form-detail.md)** oder **[Formular anzeigen](../controls/control-form-detail.md)** anzeigen, indem Sie sie an eine Tabelle oder Sammlung binden.  Diese Steuerelemente stellen einen Container für andere Karten und Steuerelemente dar.  Jede Karte bzw. jedes Steuerelement im Container kann über den Operator **[ThisItem](operators.md#thisitem-operator)** auf die angebundenen Daten zugreifen.   
 
 Verwenden Sie den **[thisitem](operators.md#thisitem-operator)** -Operator, um die [Spalte](../working-with-tables.md#columns) der Daten anzugeben, die in den einzelnen Karten oder Steuerelementen innerhalb des äußeren Steuer Elements angezeigt werden sollen. Mit dem Operator im Produktkatalog für [Show images and text in a gallery](../show-images-text-gallery-sort-filter.md) (Anzeigen von Bildern und Text in einem Katalog) wurde beispielsweise angegeben, dass für das Bildsteuerelement das Produktdesign, für die obere Bezeichnung der Produktname und für die untere Bezeichnung die Anzahl von auf Lager befindlichen Einheiten angezeigt werden soll.
 
 Für geschachtelte Kataloge bezieht sich **[ThisItem](operators.md#thisitem-operator)** auf die Elemente des innersten Katalogs. Wenn für die Zeilenfelder in den inneren und äußeren Katalogen kein Konflikt besteht, können Sie die nicht qualifizierten Feldnamen (Spaltennamen) auch direkt verwenden. Mit diesem Ansatz ist es möglich, dass sich Regeln eines inneren Katalogs auf die Elemente eines äußeren Katalogs beziehen.
 
 ## <a name="parent-operator"></a>Parent-Operator
-Einige Steuerelemente hosten andere Steuerelemente. Bei den Steuerelementen vom Typ **[Bildschirm](../controls/control-screen.md)** , **[Katalog](../controls/control-gallery.md)** , **[Karte](../controls/control-card.md)** , **[Formular bearbeiten](../controls/control-form-detail.md)** und **[Formular anzeigen](../controls/control-form-detail.md)** handelt es sich beispielsweise jeweils um Container für Steuerelemente. Wir bezeichnen das hostende Steuerelement als übergeordnetes Steuerelement (Parent) der darin enthaltenen Steuerelemente.
+Einige Steuerelemente hosten andere Steuerelemente. Bei den Steuerelementen vom Typ **[Bildschirm](../controls/control-screen.md)**, **[Katalog](../controls/control-gallery.md)**, **[Karte](../controls/control-card.md)**, **[Formular bearbeiten](../controls/control-form-detail.md)** und **[Formular anzeigen](../controls/control-form-detail.md)** handelt es sich beispielsweise jeweils um Container für Steuerelemente. Wir bezeichnen das hostende Steuerelement als übergeordnetes Steuerelement (Parent) der darin enthaltenen Steuerelemente.
 
 Alle Steuerelemente in Power Apps können von überall in der APP anhand ihres Namens referenziert werden. **Screen1** kann beispielsweise der Name eines Bildschirms in Ihrer App sein. Zum Abrufen der Hintergrundfarbe dieses Bildschirms können Sie **Screen1.Fill** verwenden.
 
-Steuerelemente auf diesem Bildschirm verfügen über eine weitere Option. Sie können einen relativen Verweis nutzen: **Parent.Fill**. Der **[Parent](operators.md#parent-operator)** -Operator bezieht sich auf das Steuerelement, mit dem dieses Steuerelement gehostet wird, und macht alle zugehörigen Eigenschaften verfügbar. Die Verwendung von **[Parent](operators.md#parent-operator)** ist hilfreich, weil dafür keine Abhängigkeit vom Namen des Steuerelements besteht. Sie können ein Containersteuerelement kopieren und einfügen, ohne dass Sie Verweise im Container anpassen müssen. Mit diesem Operator wird außerdem die Beziehung zwischen dem untergeordneten und übergeordneten Steuerelement beim Lesen von Formeln besser verdeutlicht.
+Steuerelemente auf diesem Bildschirm verfügen über eine weitere Option. Sie können einen relativen Verweis nutzen: **Parent.Fill**. Der **[Parent](operators.md#parent-operator)**-Operator bezieht sich auf das Steuerelement, mit dem dieses Steuerelement gehostet wird, und macht alle zugehörigen Eigenschaften verfügbar. Die Verwendung von **[Parent](operators.md#parent-operator)** ist hilfreich, weil dafür keine Abhängigkeit vom Namen des Steuerelements besteht. Sie können ein Containersteuerelement kopieren und einfügen, ohne dass Sie Verweise im Container anpassen müssen. Mit diesem Operator wird außerdem die Beziehung zwischen dem untergeordneten und übergeordneten Steuerelement beim Lesen von Formeln besser verdeutlicht.
 
 ## <a name="identifier-names"></a>Bezeichnernamen
 
@@ -146,10 +146,10 @@ Da Anzeige Namen nicht eindeutig sind, kann derselbe Anzeige Name mehrmals in de
 Namens mehrdeutigkeits Zeichenfolgen werden in anderen Fällen hinzugefügt, in denen Namenskonflikte auftreten, z. b. die Namen von Entitäten, Options Sätzen und andere Common Data Service Elemente. 
 
 ## <a name="disambiguation-operator"></a>Operator zur Mehrdeutigkeitsvermeidung
-Für einige Funktionen werden [Datensatzbereiche](../working-with-tables.md#record-scope) zum Zugreifen auf die Felder der Tabelle erstellt, während die einzelnen Datensätze verarbeitet werden, z.B. **Filter**, **AddColumns** und **Sum**.  Feldnamen, die mit auf Datensatzebene hinzugefügt wurden, haben Vorrang vor denselben Namen von woanders in der App.  Wenn dies passiert, können Sie mit dem **@** -Operator zur Mehrdeutigkeitsvermeidung trotzdem auf Werte außerhalb des Datensatzbereichs zugreifen:
+Für einige Funktionen werden [Datensatzbereiche](../working-with-tables.md#record-scope) zum Zugreifen auf die Felder der Tabelle erstellt, während die einzelnen Datensätze verarbeitet werden, z.B. **Filter**, **AddColumns** und **Sum**.  Feldnamen, die mit auf Datensatzebene hinzugefügt wurden, haben Vorrang vor denselben Namen von woanders in der App.  Wenn dies passiert, können Sie mit dem **@**-Operator zur Mehrdeutigkeitsvermeidung trotzdem auf Werte außerhalb des Datensatzbereichs zugreifen:
 
-* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@** -Operator mit dem Namen der jeweiligen Tabelle, indem Sie das folgende Muster verwenden:<br>_Tabelle_ **[@** _Feldname_ **]**
-* Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@** _Objektname_ **]** (ohne Tabellenbezeichnung).
+* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das folgende Muster verwenden:<br>_Tabelle_**[@**_Feldname_**]**
+* Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@**_Objektname_**]** (ohne Tabellenbezeichnung).
 
 Weitere Informationen und Beispiele finden Sie unter [Datensatzbereiche](../working-with-tables.md#record-scope).
 

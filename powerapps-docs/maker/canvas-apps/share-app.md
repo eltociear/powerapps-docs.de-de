@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e21db21ff9c161e8ae8ab55d4d3ef295da7d419e
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75676227"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211386"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>Freigeben einer Canvas-app in Power apps
 
@@ -27,7 +27,7 @@ Nachdem Sie eine Canvas-App erstellt haben, die eine geschäftliche Anforderung 
 > [!IMPORTANT]
 > Damit eine freigegebene App erwartungsgemäß funktioniert, müssen Sie auch Berechtigungen für die Datenquelle oder die Quellen verwalten, auf denen die APP basiert, z. b. [Common Data Service](#common-data-service) oder [Excel](share-app-data.md). Sie müssen möglicherweise auch [andere Ressourcen freigeben](share-app-resources.md), von denen die App abhängt, z.B. Flows, Gateways oder Verbindungen.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) und dann veröffentlichen.
 
@@ -35,7 +35,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 
 - Wenn Sie Änderungen vornehmen, müssen Sie die App speichern und erneut veröffentlichen, wenn andere Personen diese Änderungen sehen sollen.
 
-## <a name="share-an-app"></a>Eine App freigeben
+## <a name="share-an-app"></a>Freigeben einer App
 
 1. [Melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und wählen Sie dann am linken Rand die Option **apps** aus.
 
@@ -52,7 +52,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 1. Geben Sie die Benutzer oder Sicherheitsgruppen in Azure Active Directory, mit denen Sie die APP freigeben möchten, nach Namen oder Aliasnamen an.
 
     - Um ihrer gesamten Organisation das Ausführen der APP zu gestatten (ohne Sie zu ändern oder freizugeben), geben Sie im Freigabe Bereich **alle** ein.
-    - Wenn die Elemente durch Semikolons voneinander getrennt sind, können Sie eine APP mit einer Liste von Aliasen, anzeigen Amen oder einer Kombination aus diesen Teilen (z. b. **Jane Doe &lt;jane.doe@contoso.com** ). Wenn mehr als eine Person denselben Namen, aber unterschiedliche Aliase hat, wird die erste gefundene Person zur Liste hinzugefügt. Eine QuickInfo wird angezeigt, wenn ein Name oder Alias bereits über eine Berechtigung verfügt oder nicht aufgelöst werden kann. 
+    - Wenn die Elemente durch Semikolons voneinander getrennt sind, können Sie eine APP mit einer Liste von Aliasen, anzeigen Amen oder einer Kombination aus diesen Teilen (z. b. **Jane Doe &lt;jane.doe@contoso.com>**). Wenn mehr als eine Person denselben Namen, aber unterschiedliche Aliase hat, wird die erste gefundene Person zur Liste hinzugefügt. Eine QuickInfo wird angezeigt, wenn ein Name oder Alias bereits über eine Berechtigung verfügt oder nicht aufgelöst werden kann. 
 
     ![Angeben von Benutzern und Mitbesitzern](./media/share-app/share-everyone.png)
 
@@ -111,7 +111,7 @@ Gehen Sie folgendermaßen vor, um zu überprüfen, ob für eine Office 365-Grupp
 
 1. [Herstellen einer Verbindung mit Azure AD mithilfe von](https://docs.microsoft.com/powershell/module/azuread/connect-azuread) PowerShell:
 
-    ![Connect-AzureAD](media/share-app/azure_cmdlet_connect.png)
+    ![Connect-azuread](media/share-app/azure_cmdlet_connect.png)
 
 1. Verwenden Sie ```Get-AzureADGroup -ObjectId <ObjectID\> |
     select *```, um die [Gruppendetails](https://docs.microsoft.com/powershell/module/AzureAD/Get-AzureADGroup) anzuzeigen. <br> Stellen Sie sicher, dass die Eigenschaft **securityaktiviin** der Ausgabe auf **true**festgelegt ist:
@@ -133,7 +133,7 @@ Nach einer Weile können Sie diese Gruppe im Power apps-Freigabe Panel ermitteln
 
 ### <a name="common-data-service"></a>Common Data Service
 
-Wenn Sie eine App auf Grundlage von Common Data Service erstellen, müssen Sie sicherstellen, dass die Benutzer, für die Sie die App freigeben, über die entsprechenden Berechtigungen für die Entität bzw. Entitäten verfügen, auf denen die App basiert. Insbesondere müssen diese Benutzer einer Sicherheitsrolle angehören, die Aufgaben wie das Erstellen, Lesen, Schreiben und Löschen relevanter Datensätze ausführen kann. In vielen Fällen sollten Sie eine oder mehrere benutzerdefinierte Sicherheitsrollen mit den genauen Berechtigungen erstellen, die Benutzer benötigen, um die App auszuführen. Sie können dann jedem Benutzer nach Bedarf eine Rolle zuweisen.
+Wenn Sie eine App basierend auf Common Data Service erstellen, müssen Sie auch sicherstellen, dass die Benutzer, für die Sie die APP freigeben, über die entsprechenden Berechtigungen für die Entitäten oder Entitäten verfügen, von denen die APP abhängig ist. Insbesondere müssen diese Benutzer zu einer Sicherheitsrolle gehören, die Aufgaben wie das Erstellen, lesen, schreiben und löschen relevanter Datensätze ausführen kann. In vielen Fällen empfiehlt es sich, eine oder mehrere benutzerdefinierte Sicherheitsrollen mit den genauen Berechtigungen zu erstellen, die Benutzer zum Ausführen der APP benötigen. Anschließend können Sie jedem Benutzer eine Rolle zuweisen.
 
 > [!NOTE]
 > Zum Zeitpunkt der Erstellung dieses Artikels können Sie einzelnen Benutzern und Sicherheitsgruppen in Azure Active Directory, aber nicht in Office-Gruppen Sicherheitsrollen zuweisen.
@@ -161,7 +161,7 @@ Canvas-Apps für Power Apps können für Gastbenutzer eines Azure Active Directo
 > [!NOTE]
 > Gästen darf nur die **Benutzer** Rolle und nicht die **Mitbesitzer** Rolle für apps zugewiesen werden, die für Sie freigegeben wurden.
 
-### <a name="prerequisites"></a>Voraussetzungen
+### <a name="prerequisites"></a>Erforderliche Komponenten
 - Aktivieren Sie in Azure Active Directory (Azure AD) die externe B2B-Zusammenarbeit für den Mandanten. Weitere Informationen: [Aktivieren der externen B2B-Zusammenarbeit und Verwalten von Gästen, die Gäste einladen dürfen](/azure/active-directory/b2b/delegate-invitations)
     - Aktivieren der externen B2B-Zusammenarbeit ist standardmäßig aktiviert. Die Einstellungen können jedoch von einem Mandanten Administrator geändert werden.  Weitere Informationen zu Azure AD B2B finden Sie unter [Was ist der Gastbenutzer Zugriff in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
 - Zugriff auf ein Konto, das Gastbenutzer zu einem Azure AD-Mandanten hinzufügen kann. Administratoren und Benutzer mit der Rolle "Gast einladter" können einem Mandanten Gäste hinzufügen.   
@@ -204,7 +204,7 @@ Canvas-apps ermöglichen das Erstellen einer APP, die auf das Digitalisieren von
 
 In der folgenden Tabelle werden einige grundlegende Unterschiede zwischen Power apps-Portalen und Canvas-apps erläutert.  
 
-| | Benutzeroberfläche | Authentifizierung | Barrierefreie Datenquellen |
+| | Schnittstelle | Authentifizierung | Barrierefreie Datenquellen |
 |------|--------|----------|-------------------|
 | Power apps-Portale | Nur Browser | Ermöglicht anonymen und authentifizierten Zugriff | Common Data Service |
 | Canvas-Apps | Browser und Mobile Apps | Erfordert die Authentifizierung über Azure AD | Alle ~ 150 out-of-Box-Connectors und alle benutzerdefinierten Connectors  |
@@ -263,18 +263,18 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | Adobe Creative Cloud                              | Nein                                                                     |
 | Adobe Sign                                        | Nein                                                                     |
 | Asana                                             | Nein                                                                     |
-| AtBot Admin                                       | Nein                                                                     |
-| AtBot Logic                                       | Nein                                                                     |
+| Atbot-Administrator                                       | Nein                                                                     |
+| Atbot-Logik                                       | Nein                                                                     |
 | Azure AD                                          | Ja                                                                    |
 | Azure Automation                                  | Ja                                                                    |
-| Azure Container Instances                          | Ja                                                                    |
+| Azure-Container Instanz                          | Ja                                                                    |
 | Azure Data Factory                                | Ja                                                                    |
 | Azure Data Lake                                   | Ja                                                                    |
 | Azure DevOps                                      | Nein                                                                     |
 | Azure Event Grid                                  | Nein                                                                     |
-| Azure IoT Central                                 | Ja                                                                    |
+| Azure-IOT Central                                 | Ja                                                                    |
 | Azure Key Vault                                   | Nein                                                                     |
-| Azure Kusto                                       | Ja                                                                    |
+| Azure-Kusto                                       | Ja                                                                    |
 | Azure Log Analytics                               | Ja                                                                    |
 | Azure Resource Manager                            | Ja                                                                    |
 | Basecamp 2                                        | Nein                                                                     |
@@ -283,24 +283,24 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | bttn                                              | Nein                                                                     |
 | Buffer                                            | Nein                                                                     |
 | Business Central                                  | Nein                                                                     |
-| CandidateZip                                      | Nein                                                                     |
+| Candidatezip                                      | Nein                                                                     |
 | Capsule CRM                                       | Nein                                                                     |
 | Cloud-PKI-Verwaltung                              | Nein                                                                     |
 | Cognito Forms                                     | Nein                                                                     |
 | Common Data Service                               | Nein                                                                     |
 | Common Data Service (Legacy)                      | Nein                                                                     |
-| D&B Optimizer                                     | Nein                                                                     |
+| D & B-Optimierer                                     | Nein                                                                     |
 | Derdack SIGNL4                                    | Nein                                                                     |
 | Disqus                                            | Nein                                                                     |
-| Dokumentzusammenführung                                    | Nein                                                                     |
+| Dokument Zusammenführung                                    | Nein                                                                     |
 | Dynamics 365                                      | Nein                                                                     |
-| Dynamics 365 AI for Sales                         | Ja                                                                    |
-| Dynamics 365 for Fin & Ops                        | Nein                                                                     |
-| Enadoc                                            | Nein                                                                     |
+| Dynamics 365 AI für Vertrieb                         | Ja                                                                    |
+| Dynamics 365 for FIN & OPS                        | Nein                                                                     |
+| Enadoc My Workspace                                            | Nein                                                                     |
 | Eventbrite                                        | Nein                                                                     |
 | Excel Online (Business)                           | Nein                                                                     |
-| Excel Online (OneDrive)                           | Nein                                                                     |
-| Ablauferinnerung                               | Nein                                                                     |
+| Excel Online (onedrive)                           | Nein                                                                     |
+| Ablauf Erinnerung                               | Nein                                                                     |
 | FreshBooks                                        | Nein                                                                     |
 | GoToMeeting                                       | Nein                                                                     |
 | GoToTraining                                      | Nein                                                                     |
@@ -312,18 +312,18 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | Intercom                                          | Nein                                                                     |
 | JotForm                                           | Nein                                                                     |
 | kintone                                           | Nein                                                                     |
-| LinkedIn                                          | Nein                                                                     |
-| Marketing Content Hub                             | Nein                                                                     |
+| Zuzugreifen                                          | Nein                                                                     |
+| Marketing-inhaltshub                             | Nein                                                                     |
 | Mittel                                            | Nein                                                                     |
 | Metatask                                          | Nein                                                                     |
 | Microsoft Forms                                   | Nein                                                                     |
-| Microsoft Forms Pro                               | Nein                                                                     |
+| Microsoft Forms pro                               | Nein                                                                     |
 | Microsoft Graph-Sicherheit                          | Nein                                                                     |
-| Microsoft Kaizala                                 | Nein                                                                     |
-| Microsoft School Data Sync                        | Nein                                                                     |
+| Microsoft kaizala                                 | Nein                                                                     |
+| Synchronisierung von Microsoft-Schuldaten                        | Nein                                                                     |
 | Microsoft StaffHub                                | Nein                                                                     |
 | Microsoft Teams                                   | Ja                                                                    |
-| Microsoft To-Do (Business)                        | Nein                                                                     |
+| Microsoft to-do (Business)                        | Nein                                                                     |
 | Muhimbi PDF                                       | Nein                                                                     |
 | NetDocuments                                      | Nein                                                                     |
 | Office 365-Gruppen                                 | Ja                                                                    |
@@ -337,15 +337,15 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | Outlook-Aufgaben                                     | Ja                                                                    |
 | Outlook.com                                       | Nein                                                                     |
 | Paylocity                                         | Nein                                                                     |
-| Planner                                           | Nein                                                                     |
-| Plumsail Forms                                    | Nein                                                                     |
-| Power BI verwalten und aufrufen                                          | Ja                                                                    |
+| Planer                                           | Nein                                                                     |
+| Plumsail-Formulare                                    | Nein                                                                     |
+| Power BI                                          | Ja                                                                    |
 | Project Online                                    | Nein                                                                     |
-| Integration eines ProjectWise-Entwurfs                    | Nein                                                                     |
-| Projectwise-Freigabe                                 | Nein                                                                     |
+| ProjectWise-Design Integration                    | Nein                                                                     |
+| ProjectWise-Freigabe                                 | Nein                                                                     |
 | SharePoint                                        | Ja                                                                    |
-| SignNow                                           | Nein                                                                     |
-| Skype für Unternehmen Online                         | Nein                                                                     |
+| Signnow                                           | Nein                                                                     |
+| Skype for Business Online                         | Nein                                                                     |
 | Soft1                                             | Nein                                                                     |
 | Stormboard                                        | Nein                                                                     |
 | Survey123                                         | Nein                                                                     |
@@ -353,6 +353,6 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | Toodledo                                          | Nein                                                                     |
 | Typeform                                          | Nein                                                                     |
 | Vimeo                                             | Nein                                                                     |
-| Webex Teams                                       | Nein                                                                     |
+| WebEx-Teams                                       | Nein                                                                     |
 | Windows Defender Advanced Threat Protection (ATP) | Nein                                                                     |
 | Word Online (Business)                            | Nein                                                                     |

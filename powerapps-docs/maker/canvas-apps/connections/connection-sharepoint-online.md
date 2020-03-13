@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0c0f4744e7b323e3262a63278e7c12348142a99b
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403411"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212444"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Herstellen einer Verbindung mit SharePoint über eine Canvas-App
 
@@ -113,20 +113,20 @@ Wenden Sie die Konzepte in [Erstellen einer APP von Grund](../get-started-create
 
 Wenn die benutzerdefinierte **Liste einen dieser** Spaltentypen enthält, zeigen Sie diese Daten in einem Katalog-Steuerelement an, indem Sie die Bearbeitungs Leiste verwenden, um die **Text** -Eigenschaft eines oder mehrerer Label-Steuerelemente in diesem **Katalog** festzulegen:
 
-- Geben **Sie** für eine Spalte vom Typ " **Choice** " oder "Suche" **thisitem an.** _ColumnName_ **. Der Wert** , mit dem Daten in dieser Spalte angezeigt werden.
+- Geben **Sie** für eine Spalte vom Typ " **Choice** " oder "Suche" **thisitem an.** _ColumnName_**. Der Wert** , mit dem Daten in dieser Spalte angezeigt werden.
 
     Geben Sie z.B. **ThisItem.Standort.Value** an, wenn Sie eine **Auswahl**-Spalte mit dem Namen **Standort** haben. Geben Sie **ThisItem.PostalCode.Value** für eine **Nachschlage**-Spalte namens **PostalCode** ein.
 
-- Geben Sie für eine **Person oder eine Gruppen** Spalte **thisitem an.** _ColumnName_ **. Display Name** , um den anzeigen amen des Benutzers oder der Gruppe anzuzeigen.
+- Geben Sie für eine **Person oder eine Gruppen** Spalte **thisitem an.** _ColumnName_**. Display Name** , um den anzeigen amen des Benutzers oder der Gruppe anzuzeigen.
 
     Geben Sie z.B. **ThisItem.Manager.DisplayName** an, um die Anzeigenamen aus einer **Person oder Gruppe**-Spalte mit dem Namen **Manager** anzuzeigen.
 
-    Sie können auch andere Informationen zu Benutzern anzeigen, z.B. E-Mail-Adressen oder Positionsbeschreibungen. Um eine komplette Liste der Optionen anzuzeigen, geben Sie **thisitem an.** _ColumnName_ **.** (einschließlich des nachfolgenden Zeitraums).
+    Sie können auch andere Informationen zu Benutzern anzeigen, z.B. E-Mail-Adressen oder Positionsbeschreibungen. Um eine komplette Liste der Optionen anzuzeigen, geben Sie **thisitem an.** _ColumnName_**.** (einschließlich des nachfolgenden Zeitraums).
 
     > [!NOTE]
     > Geben Sie für eine Spalte vom Typ " **kreatedby** " **thisitem. Author. Display Name** an, um die anzeigen Amen von Benutzern anzuzeigen, die Elemente in der Liste erstellt haben. Für eine **ModifiedBy**-Spalte geben Sie **ThisItem.Editor.DisplayName** ein, um die Anzeigenamen von Benutzern anzuzeigen, die die Elemente in der Liste geändert haben.
 
-- Für eine **verwaltete Metadatenspalte** geben Sie **thisitem an.** _ColumnName_ **. Bezeichnung** zum Anzeigen von Daten in dieser Spalte.
+- Für eine **verwaltete Metadatenspalte** geben Sie **thisitem an.** _ColumnName_**. Bezeichnung** zum Anzeigen von Daten in dieser Spalte.
 
     Geben Sie z.B. **ThisItem.Sprachen.Label** ein, wenn Sie mit einer **Verwaltete Metadaten**-Spalte mit dem Namen **Sprachen** arbeiten.
 

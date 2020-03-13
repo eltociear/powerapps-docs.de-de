@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1cd90e345b41f8316e8cd8c50f4077ee1f64ee91
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403452"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212628"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Signale für Beschleunigung, APP, Kompass, Verbindung und Standort in Power apps
 
@@ -28,7 +28,7 @@ Gibt Informationen zur App-Umgebung zurück, z.B. den Standort des Benutzers und
 
 Signale sind Werte, die jederzeit geändert werden können, unabhängig davon, wie der Benutzer mit der APP interagieren kann. Formeln, die auf Signalen basieren, werden automatisch neu berechnet, wenn sich diese Werte ändern.
 
-Signale geben in der Regel einen [Datensatz](../working-with-tables.md#records) von Informationen zurück. Sie können diese Informationen als Datensatz verwenden und speichern oder einzelne Eigenschaften mithilfe des **.** - [Operators](operators.md) extrahieren.
+Signale geben in der Regel einen [Datensatz](../working-with-tables.md#records) von Informationen zurück. Sie können diese Informationen als Datensatz verwenden und speichern oder einzelne Eigenschaften mithilfe des **.**- [Operators](operators.md) extrahieren.
 
 > [!NOTE]
 > Die Funktionen **Acceleration** und **Compass** geben genaue Werte in einem systemeigenen Player wie z. b. unter IOS oder Android zurück, aber diese Funktionen geben beim Erstellen oder Ändern einer APP im Browser NULL-Werte zurück.

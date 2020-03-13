@@ -14,15 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1d98f01920dbcbf960b1e2bb21159586318e0386
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403557"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211570"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Grundlagen der Delegierung in einer Canvas-App
-Powerapps enthält eine Reihe leistungsfähiger Funktionen zum Filtern, Sortieren und Strukturieren von Tabellen von Daten in einer Canvas-App: die Funktionen " **[Filter](functions/function-filter-lookup.md)** ", " **[Sort](functions/function-sort.md)** " und " **[AddColumns](functions/function-table-shaping.md)** ", um nur ein paar zu benennen. Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen. Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.
+Powerapps enthält eine Reihe leistungsfähiger Funktionen zum Filtern, Sortieren und Strukturieren von Tabellen von Daten in einer Canvas-App: die Funktionen " **[Filter](functions/function-filter-lookup.md)**", " **[Sort](functions/function-sort.md)**" und " **[AddColumns](functions/function-table-shaping.md)** ", um nur ein paar zu benennen. Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen. Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.
 
 Der Schlüssel zur Erstellung von effizienten Apps besteht darin, die Datenmenge gering zu halten, die auf Ihr Gerät übertragen werden muss. Unter Umständen benötigen Sie aus Millionen von Datensätzen nur eine Handvoll von Datensätzen, oder ein einzelner Aggregatwert kann für Tausende von Datensätzen stehen. Vielleicht ist es auch möglich, nur den ersten Satz mit Datensätzen abzurufen, und den Rest erst dann bereitzustellen, wenn er vom Benutzer angefordert wird. Wenn zielgerichtet vorgegangen wird, können die Verarbeitungsleistung, der Arbeitsspeicher und die Netzwerkbandbreite, die für die App erforderlich sind, deutlich gesenkt werden. Dies führt zu kürzeren Reaktionszeiten für Ihre Benutzer – sogar auf Smartphones, die über ein Mobilfunknetz verbunden sind. 
 
@@ -50,30 +49,30 @@ Der nächste Schritt besteht darin, nur diejenigen Formeln zu verwenden, die del
 Diese Listen werden sich im Laufe der Zeit ändern. Wir arbeiten daran, die Delegierung für weitere Funktionen und Operatoren zu unterstützen.
 
 ### <a name="filter-functions"></a>Filterfunktionen
-Die Funktionen **[Filter](functions/function-filter-lookup.md)** , **[Search](functions/function-filter-lookup.md)** und **[LookUp](functions/function-filter-lookup.md)** können delegiert werden.  
+Die Funktionen **[Filter](functions/function-filter-lookup.md)**, **[Search](functions/function-filter-lookup.md)** und **[LookUp](functions/function-filter-lookup.md)** können delegiert werden.  
 
 In den Funktionen **Filter** und **LookUp** können Sie für Spalten der Tabelle Folgendes verwenden, um die entsprechenden Datensätze auszuwählen:
 
-* **[And](functions/function-logicals.md)** (einschließlich **[&&](functions/operators.md)** ), **[Or](functions/function-logicals.md)** (einschließlich **[||](functions/operators.md)** ), **[Not](functions/function-logicals.md)** (einschließlich **[!](functions/operators.md)** )
+* **[And](functions/function-logicals.md)** (einschließlich **[&&](functions/operators.md)**), **[Or](functions/function-logicals.md)** (einschließlich **[||](functions/operators.md)**), **[Not](functions/function-logicals.md)** (einschließlich **[!](functions/operators.md)**)
 * **[In](functions/operators.md)**
-* **[=](functions/operators.md)** , **[<>](functions/operators.md)** , **[>=](functions/operators.md)** , **[<=](functions/operators.md)** , **[>](functions/operators.md)** , **[<](functions/operators.md)**
-* **[+](functions/operators.md)** , **[-](functions/operators.md)**
+* **[=](functions/operators.md)**, **[<>](functions/operators.md)**, **[>=](functions/operators.md)**, **[<=](functions/operators.md)**, **[>](functions/operators.md)**, **[<](functions/operators.md)**
+* **[+](functions/operators.md)**, **[-](functions/operators.md)**
 * **[TrimEnds](functions/function-trim.md)**
 * **[IsBlank](functions/function-isblank-isempty.md)**
-* **[Startzwith](functions/function-startswith.md)** ,  **[EndsWith](functions/function-startswith.md)**
+* **[Startzwith](functions/function-startswith.md)**, ** [EndsWith](functions/function-startswith.md)**
 * Konstante Werte, die in allen Datensätzen gleich sind, z.B. Steuerelementeigenschaften sowie [globale und Kontextvariablen](working-with-variables.md).
 
-Sie können auch Teile Ihrer Formel verwenden, die zu einem konstanten Wert für alle Datensätze ausgewertet werden. Beispielsweise ist **Left (Language (), 2)** , **Date (2019, 3, 31)** und **Today ()** nicht von Spalten des Datensatzes abhängig und gibt daher denselben Wert für alle Datensätze zurück. Diese Werte können als Konstante an die Datenquelle gesendet werden und blockieren nicht die Delegierung. 
+Sie können auch Teile Ihrer Formel verwenden, die zu einem konstanten Wert für alle Datensätze ausgewertet werden. Beispielsweise ist **Left (Language (), 2)**, **Date (2019, 3, 31)** und **Today ()** nicht von Spalten des Datensatzes abhängig und gibt daher denselben Wert für alle Datensätze zurück. Diese Werte können als Konstante an die Datenquelle gesendet werden und blockieren nicht die Delegierung. 
 
 In der obigen Liste werden die folgenden wichtigen Elemente nicht aufgeführt:
 
 * **[If](functions/function-if.md)**
-* **[*](functions/operators.md)** , **[/](functions/operators.md)** , **[Mod](functions/function-mod.md)**
-* **[Concatenate](functions/function-concatenate.md)** (einschließlich **[&](functions/operators.md)** )
+* **[*](functions/operators.md)**, **[/](functions/operators.md)**, **[Mod](functions/function-mod.md)**
+* **[Concatenate](functions/function-concatenate.md)** (einschließlich **[&](functions/operators.md)**)
 * **[ExactIn](functions/operators.md)**
-* Funktionen für die Zeichenfolgenbearbeitung: **[Lower](functions/function-lower-upper-proper.md)** , **[Upper](functions/function-lower-upper-proper.md)** , **[Left](functions/function-left-mid-right.md)** , **[Mid](functions/function-left-mid-right.md)** , **[Len](functions/function-left-mid-right.md)** , ...
-* Signale: **[Location](functions/signals.md)** , **[Acceleration](functions/signals.md)** , **[Compass](functions/signals.md)** , ...
-* Volatile: **[Rand](functions/function-rand.md)** ,...
+* Funktionen für die Zeichenfolgenbearbeitung: **[Lower](functions/function-lower-upper-proper.md)**, **[Upper](functions/function-lower-upper-proper.md)**, **[Left](functions/function-left-mid-right.md)**, **[Mid](functions/function-left-mid-right.md)**, **[Len](functions/function-left-mid-right.md)**, ...
+* Signale: **[Location](functions/signals.md)**, **[Acceleration](functions/signals.md)**, **[Compass](functions/signals.md)**, ...
+* Volatile: **[Rand](functions/function-rand.md)**,...
 * [Sammlungen](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>Sortierfunktionen
@@ -82,22 +81,22 @@ In der obigen Liste werden die folgenden wichtigen Elemente nicht aufgeführt:
 Bei **Sort** kann die Formel nur der Name einer einzelnen Spalte sein und keine anderen Operatoren und Funktionen enthalten.
 
 ### <a name="aggregate-functions"></a>Aggregatfunktionen
-**[Sum](functions/function-aggregates.md)** , **[Average](functions/function-aggregates.md)** , **[Min](functions/function-aggregates.md)** und **[Max](functions/function-aggregates.md)** können delegiert werden. Diese Delegierung wird derzeit nur von einer begrenzten Anzahl von Datenquellen unterstützt. Weitere Informationen finden Sie in der [Delegierungsliste](delegation-list.md).
+**[Sum](functions/function-aggregates.md)**, **[Average](functions/function-aggregates.md)**, **[Min](functions/function-aggregates.md)** und **[Max](functions/function-aggregates.md)** können delegiert werden. Diese Delegierung wird derzeit nur von einer begrenzten Anzahl von Datenquellen unterstützt. Weitere Informationen finden Sie in der [Delegierungsliste](delegation-list.md).
 
-Zählfunktionen wie **[CountRows](functions/function-table-counts.md)** , **[CountA](functions/function-table-counts.md)** und **[Count](functions/function-table-counts.md)** können nicht delegiert werden.
+Zählfunktionen wie **[CountRows](functions/function-table-counts.md)**, **[CountA](functions/function-table-counts.md)** und **[Count](functions/function-table-counts.md)** können nicht delegiert werden.
 
 Andere Aggregatfunktionen wie **[StdevP](functions/function-aggregates.md)** und **[VarP](functions/function-aggregates.md)** können nicht delegiert werden.
 
 ### <a name="table-shaping-functions"></a>Tabellen Strukturierungs Funktionen
 
-**[AddColumns](functions/function-table-shaping.md)** , **[dropcolumns](functions/function-table-shaping.md)** , **[renamecolumns](functions/function-table-shaping.md)** und **[showcolumns](functions/function-table-shaping.md)** unterstützen die Delegierung teilweise.  Formeln in ihren Argumenten können delegiert werden.  Die Ausgabe dieser Funktionen unterliegt jedoch dem Grenzwert für nicht Delegierungs Datensätze.
+**[AddColumns](functions/function-table-shaping.md)**, **[dropcolumns](functions/function-table-shaping.md)**, **[renamecolumns](functions/function-table-shaping.md)** und **[showcolumns](functions/function-table-shaping.md)** unterstützen die Delegierung teilweise.  Formeln in ihren Argumenten können delegiert werden.  Die Ausgabe dieser Funktionen unterliegt jedoch dem Grenzwert für nicht Delegierungs Datensätze.
 
 Wie in diesem Beispiel verwenden die Hersteller häufig **AddColumns** und **Lookup** , um Informationen aus einer Tabelle in eine andere zusammenzuführen, die häufig als Join in der Datenbanksprache bezeichnet wird:
 
-```powerapps-comma
-AddColumns( Products; 
-    "Supplier Name"; 
-    LookUp( Suppliers; Suppliers.ID = Product.SupplierID ).Name 
+```powerapps-dot
+AddColumns( Products, 
+    "Supplier Name", 
+    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
 )
 ```
 
@@ -108,12 +107,12 @@ Wenn Sie **AddColumns** auf diese Weise verwenden, muss die **Suche** separate A
 ## <a name="non-delegable-functions"></a>Nicht delegierbare Funktionen
 Für alle anderen Funktionen einschließlich der Folgenden wird die Delegierung nicht unterstützt:
 
-* **[First](functions/function-first-last.md)** , **[FirstN](functions/function-first-last.md)** , **[Last](functions/function-first-last.md)** , **[LastN](functions/function-first-last.md)**
+* **[First](functions/function-first-last.md)**, **[FirstN](functions/function-first-last.md)**, **[Last](functions/function-first-last.md)**, **[LastN](functions/function-first-last.md)**
 * **[Choices](functions/function-choices.md)**
 * **[Concat](functions/function-concatenate.md)**
-* **[Collect](functions/function-clear-collect-clearcollect.md)** , **[ClearCollect](functions/function-clear-collect-clearcollect.md)**
-* **[CountIf](functions/function-table-counts.md)** , **[RemoveIf](functions/function-remove-removeif.md)** , **[UpdateIf](functions/function-update-updateif.md)**
-* **[GroupBy](functions/function-groupby.md)** , **[Ungroup](functions/function-groupby.md)**
+* **[Collect](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)**
+* **[CountIf](functions/function-table-counts.md)**, **[RemoveIf](functions/function-remove-removeif.md)**, **[UpdateIf](functions/function-update-updateif.md)**
+* **[GroupBy](functions/function-groupby.md)**, **[Ungroup](functions/function-groupby.md)**
 
 ## <a name="non-delegable-limits"></a>Grenzwerte für Fälle, in denen keine Delegierung möglich ist
 Formeln, die nicht delegiert werden können, werden lokal verarbeitet. Dadurch kann die volle Bandbreite der Formelsprache von powerapps verwendet werden. Dies hat aber einen Preis: Alle Daten müssen zuerst auf das Gerät übertragen werden, sodass unter Umständen eine größere Datenmenge über das Netzwerk abgerufen werden muss. Dies kann eine Weile dauern, sodass der Eindruck entsteht, dass Ihre App langsam ist oder hängt.

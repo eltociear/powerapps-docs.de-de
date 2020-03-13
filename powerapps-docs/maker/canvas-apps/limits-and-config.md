@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 18abbc91426c74b48aefd51f1867d8bff806d718
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404575"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211501"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 Dieses Thema enthält die Anforderungen an Geräteplattform und Webbrowser sowie Grenzwerte und Konfigurationswerte für Canvas-apps.

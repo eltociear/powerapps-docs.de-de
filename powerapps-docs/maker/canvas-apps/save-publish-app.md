@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 740107af85e59baf44c6cfbe89eb62a42daa08a2
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
-ms.translationtype: HT
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76750690"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211984"
 ---
 # <a name="save-and-publish-a-canvas-app-in-power-apps"></a>Speichern und Veröffentlichen einer Canvas-App in Power Apps
 Wenn Sie Änderungen an einer Canvas-App speichern, veröffentlichen Sie diese automatisch nur für sich selbst und andere Benutzer, die über Berechtigungen zum Bearbeiten der App verfügen. Wenn Sie die Änderungen abgeschlossen haben, müssen Sie sie explizit veröffentlichen, um sie allen Benutzern zur Verfügung zu stellen, für die die App freigegeben ist.
@@ -39,10 +39,10 @@ Die App kann auch automatisch alle 2 Minuten von Power Apps gespeichert werden. 
 
 ![Einstellung „Automatisch speichern“](./media/save-publish-app/autosave.png)
 
-## <a name="publish-an-app"></a>Veröffentlichen einer App
+## <a name="publish-an-app"></a>Veröffentlichen einer Anwendung
 1. Klicken Sie in Power Apps Studio im Menü **Datei** (auf der linken Seite) auf **Speichern**, und führen Sie dann **Veröffentlichen** aus.
 
-    ![App veröffentlichen](./media/save-publish-app/publish-app.png)
+    ![Veröffentlichen der App](./media/save-publish-app/publish-app.png)
 2. Klicken Sie im Dialogfeld **Veröffentlichen** auf **Diese Version veröffentlichen**, um die App für alle Benutzer zu veröffentlichen, für die die App freigegeben ist.
 
    ![Überprüfen der Veröffentlichung](./media/save-publish-app/publish-review.png)
@@ -57,7 +57,7 @@ Die **Liveversion** wird für alle Benutzer veröffentlicht, für die die App fr
 
 ![Veröffentlichen über das Portal](./media/save-publish-app/publish-portal.png)
 
-Um die neueste Version zu veröffentlichen, markieren Sie die Version, und klicken Sie auf die Auslassungspunkte (...). Wählen Sie anschließend im Dropdownmenü **Diese Version veröffentlichen** aus.
+Um die neueste Version zu veröffentlichen, markieren Sie die Version, und wählen Sie Auslassungs Punkte (...) aus. Wählen Sie dann im Dropdown Menü die Option **Diese Version veröffentlichen** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 * Suchen Sie die App, und führen Sie sie in einem [Browser](../../user/run-app-browser.md) oder auf einem [Telefon](../../user/run-app-client.md) aus.

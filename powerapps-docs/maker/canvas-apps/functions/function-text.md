@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9ebc28c72d1d25c4a6e85e25a14c8addaf457318
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403248"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212490"
 ---
 # <a name="text-function-in-power-apps"></a>Funktion "Text" in powerapps
 Konvertiert einen beliebigen Wert und formatiert eine Zahl oder einen Datums-/Uhrzeitwert in eine Text Zeichenfolge.
@@ -56,7 +56,7 @@ Die **Text** -Funktion kann auch jeden Datentyp in eine Text Darstellung mit ein
 | **0** (*null*) |Zeigt nicht signifikante Nullen an, wenn eine Zahl weniger Stellen aufweist, als Nullen im Format festgelegt sind. Verwenden Sie beispielsweise das Format **#,00**, wenn Sie **8,9** im Format **8,90** anzeigen möchten. |
 | **#** |Folgt den gleichen Regeln wie **0** (null). **Text** gibt jedoch keine zusätzlichen Nullen zurück, wenn die Zahl weniger Stellen auf beiden Seiten des Dezimaltrennzeichens aufweist, als #-Symbole im Format vorhanden sind. Beispielsweise wird **8,9** angezeigt, wenn das benutzerdefinierte Format **#,##** und die zu formatierende Zahl **8,9** ist. |
 | **.** (*Punkt*) |Zeigt das Dezimaltrennzeichen in einer Zahl an. Hängt von der Sprache des benutzerdefinierten Formats ab. Weitere Informationen finden Sie unter [globale apps](#global-apps) . |
-| **.** (*Komma*) |Zeigt das Gruppierungstrennzeichen in einer Zahl an, häufig für Tausender verwendet. **Text** trennt Gruppen durch Punkte ab, wenn ein Format einen Punkt enthält, der von Zahlenzeichen ( **#** ) oder Nullen eingeschlossen ist. Hängt von der Sprache des benutzerdefinierten Formats ab. Weitere Informationen finden Sie unter [globale apps](#global-apps) . |
+| **.** (*Komma*) |Zeigt das Gruppierungstrennzeichen in einer Zahl an, häufig für Tausender verwendet. **Text** trennt Gruppen durch Punkte ab, wenn ein Format einen Punkt enthält, der von Zahlenzeichen (**#**) oder Nullen eingeschlossen ist. Hängt von der Sprache des benutzerdefinierten Formats ab. Weitere Informationen finden Sie unter [globale apps](#global-apps) . |
 
 Wenn eine Zahl mehr Stellen rechts vom Dezimaltrennzeichen aufweist, als Platzhalter im Format vorhanden sind, wird die Zahl zu der im Format definierten Anzahl Dezimalstellen gerundet. Wenn links vom Dezimaltrennzeichen mehr Stellen als Platzhalter vorhanden sind, werden die zusätzlichen Stellen angezeigt. Wenn das Format nur Zahlenzeichen (#) links vom Dezimaltrennzeichen aufweist, beginnen Zahlen kleiner als 1 mit dem Dezimaltrennzeichen (z. B. **,47**).
 
@@ -109,7 +109,7 @@ Sie können jedes dieser Zeichen in Ihre Formatzeichenfolge aufnehmen.  Sie werd
 ## <a name="global-apps"></a>Globale Anwendungen
 Die Funktion **Text** ist global kompatibel. Sie „weiß“ für eine Vielzahl von Sprachen, wie Datumswerte, Uhrzeiten, Währungen und Zahlen ordnungsgemäß geschrieben werden. Für ihren Job benötigt sie zwei Informationen :
 
-* **Die Sprache des benutzerdefinierten Formats:** Wie soll ein benutzerdefiniertes Format für Ersteller interpretiert werden? Die Trennzeichen ( **.** und **,** ) haben in verschiedenen Sprachen verschiedene Bedeutungen. Wenn Sie ein benutzerdefiniertes Format angeben, können Sie einen sprach Platzhalter einschließen oder den Standardwert verwenden, der die Sprache angibt, in der das Gerät festgelegt ist. Noch einfacher können Sie eines der [vordefinierten Datums-/Uhrzeitformate](#predefined-datetime-formats)verwenden, die sprach agnostisch sind.
+* **Die Sprache des benutzerdefinierten Formats:** Wie soll ein benutzerdefiniertes Format für Ersteller interpretiert werden? Die Trennzeichen (**.** und **,**) haben in verschiedenen Sprachen verschiedene Bedeutungen. Wenn Sie ein benutzerdefiniertes Format angeben, können Sie einen sprach Platzhalter einschließen oder den Standardwert verwenden, der die Sprache angibt, in der das Gerät festgelegt ist. Noch einfacher können Sie eines der [vordefinierten Datums-/Uhrzeitformate](#predefined-datetime-formats)verwenden, die sprach agnostisch sind.
 * **Die Sprache des Ergebnisses:** In welcher Sprache soll das Ergebnis der Funktion angezeigt werden? Namen von Monaten und Wochentagen müssen sich in der entsprechenden Sprache für den Benutzer der APP befinden, den Sie durch Hinzufügen eines dritten optionalen Arguments zur **Text** Funktion angeben können. 
 
 Für beide müssen Sie die Sprache mithilfe eines [sprach Tags](function-language.md#language-tags)angeben. Wenn Sie die Liste der unterstützten Sprachen anzeigen möchten, geben Sie **Text (1234, "",)** in die Bearbeitungs Leiste oder die Registerkarte " **erweitert** " im rechten Bereich ein, und Scrollen Sie dann durch die Liste der Gebiets Schemas, die für das dritte Argument vorgeschlagen werden.

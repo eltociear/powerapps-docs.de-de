@@ -14,15 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4b159bbfe568e4f3a6501a0d98af83ac062b8c19
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404262"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212789"
 ---
 # <a name="understand-data-cards-in-power-apps"></a>Grundlegendes zu Datenkarten in Power apps
 
-**[Card](controls/control-card.md)** -Steuerelemente sind die Bausteine der Steuerelemente **[Formular bearbeiten](controls/control-form-detail.md)** und **[Formular anzeigen](controls/control-form-detail.md)** in Canvas-Apps. Das Formular stellt den gesamten Datensatz dar, und jede Karte stellt ein einzelnes Feld dieses Datensatzes dar.
+**[Card](controls/control-card.md)**-Steuerelemente sind die Bausteine der Steuerelemente **[Formular bearbeiten](controls/control-form-detail.md)** und **[Formular anzeigen](controls/control-form-detail.md)** in Canvas-Apps. Das Formular stellt den gesamten Datensatz dar, und jede Karte stellt ein einzelnes Feld dieses Datensatzes dar.
 
 Am einfachsten können Sie mit Karten im rechten Bereich interagieren, nachdem Sie ein Formularsteuerelement im Designarbeitsbereich ausgewählt haben. In diesem Bereich können Sie auswählen, welche Felder auf welche Weise in welcher Reihenfolge angezeigt werden sollen. In diesem Beispiel wird ein **Bearbeitungsformular**-Steuerelement in einer App veranschaulicht, die anhand der SharePoint-Liste **Assets** erstellt wurde.
 
@@ -45,14 +45,14 @@ Verschiedene Felder dieser Datenquelle werden nicht angezeigt, Sie können jedoc
 ![](./media/working-with-cards/add-security-code.png)
 
 ## <a name="customize-a-card"></a>Eine Karte anpassen
-Karten enthalten andere Steuerelemente. Der Benutzer gibt in einem **Bearbeitungsformular**-Steuerelement Daten in einem standardmäßigen **[Texteingabe](controls/control-text-input.md)** -Steuerelement ein, das Sie von der Registerkarte **Einfügen** hinzufügen.  
+Karten enthalten andere Steuerelemente. Der Benutzer gibt in einem **Bearbeitungsformular**-Steuerelement Daten in einem standardmäßigen **[Texteingabe](controls/control-text-input.md)**-Steuerelement ein, das Sie von der Registerkarte **Einfügen** hinzufügen.  
 
 Arbeiten wir schrittweise ein Beispiel dafür durch, wie Sie das Erscheinungsbild einer Karte ändern können, indem Sie ihre Steuerelemente bearbeiten.
 
 1. Kehren Sie zunächst zu der Karte zurück, die Sie als letztes hinzugefügt haben, und machen Sie das Feld **SecurityCode** (Sicherheitscode) ausfindig. Wählen Sie diese Karte aus, indem Sie einmal darauf klicken oder tippen:
    
     ![](./media/working-with-cards/select-security-code.png)
-2. Klicken oder tippen Sie auf das **[Texteingabe](controls/control-text-input.md)** -Steuerelement auf der Karte, um es auszuwählen.
+2. Klicken oder tippen Sie auf das **[Texteingabe](controls/control-text-input.md)**-Steuerelement auf der Karte, um es auszuwählen.
    
     ![](./media/working-with-cards/select-text-input.png)
 3. Verschieben Sie das Steuerelement auf der Karte durch Ziehen des Auswahlfelds, und ändern Sie die Größe des Steuerelements mithilfe der Ziehpunkte am Rand des Auswahlfelds:
@@ -66,9 +66,9 @@ Karten sind selbst auch Steuerelemente, die über Eigenschaften und Formeln verf
 
 ![](./media/working-with-cards/advanced-locked.png)
 
-Sie sehen umgehend eine der wichtigsten Eigenschaften der Karte: die **[DataField](controls/control-card.md)** -Eigenschaft (Datenfeld). Diese Eigenschaft gibt an, welches Feld der Datenquelle dem Benutzer angezeigt wird und was er auf dieser Karte bearbeiten kann.  
+Sie sehen umgehend eine der wichtigsten Eigenschaften der Karte: die **[DataField](controls/control-card.md)**-Eigenschaft (Datenfeld). Diese Eigenschaft gibt an, welches Feld der Datenquelle dem Benutzer angezeigt wird und was er auf dieser Karte bearbeiten kann.  
 
-Auf der Registerkarte **Erweitert** gibt das Banner am oberen Rand an, dass die Eigenschaften dieser Karte gesperrt sind. Außerdem wird neben den Eigenschaften **[DataField](controls/control-card.md)** , **[DisplayName](controls/control-card.md)** und **[Required](controls/control-card.md)** ein Schlosssymbol angezeigt. Diese Formeln wurden im rechten Bereich erstellt, und das Schloss verhindert das versehentliche Ändern dieser Eigenschaften.
+Auf der Registerkarte **Erweitert** gibt das Banner am oberen Rand an, dass die Eigenschaften dieser Karte gesperrt sind. Außerdem wird neben den Eigenschaften **[DataField](controls/control-card.md)**, **[DisplayName](controls/control-card.md)** und **[Required](controls/control-card.md)** ein Schlosssymbol angezeigt. Diese Formeln wurden im rechten Bereich erstellt, und das Schloss verhindert das versehentliche Ändern dieser Eigenschaften.
 
 ![](./media/working-with-cards/lock-icons.png)
 
@@ -76,7 +76,7 @@ Klicken oder tippen Sie auf das Banner oben, um die Smartcard zu entsperren, dam
 
 ![](./media/working-with-cards/unlocked-card.png)
 
-Ändern Sie **[DisplayName](controls/control-card.md)** , um ein Leerzeichen zwischen **Asset** und **ID** einzufügen. Durch diese Änderung ändern Sie das, was für Sie generiert wurde.  Im rechten Bereich hat diese Karte eine andere Bezeichnung:
+Ändern Sie **[DisplayName](controls/control-card.md)**, um ein Leerzeichen zwischen **Asset** und **ID** einzufügen. Durch diese Änderung ändern Sie das, was für Sie generiert wurde.  Im rechten Bereich hat diese Karte eine andere Bezeichnung:
 
 ![](./media/working-with-cards/change-display-name.png)
 
@@ -111,25 +111,25 @@ Nach dem Entsperren einer Karte können Sie ändern, wie sie mit dem Formular in
 Im Folgenden finden Sie einige Richtlinien für die Funktionsweise von Steuerelementen mit ihrer Karte und mit dem Formular. Dies sind nur Richtlinien. Wie bei allen Steuerelementen in powerapps können Sie Formeln erstellen, die auf ein beliebiges anderes Steuerelement in Power Apps verweisen, und das gilt nicht für Karten und Steuerelemente in Karten. Seien Sie kreativ: Erstellen Sie eine Anwendung auf verschiedene Arten.  
 
 ### <a name="datafield-property"></a>DataField-Eigenschaft
-Die wichtigste Eigenschaft auf der Karte ist die **[DataField](controls/control-card.md)** -Eigenschaft.  Diese Eigenschaft steuert die Validierung, die Aktualisierung von Feldern und andere Aspekte der Karte.
+Die wichtigste Eigenschaft auf der Karte ist die **[DataField](controls/control-card.md)**-Eigenschaft.  Diese Eigenschaft steuert die Validierung, die Aktualisierung von Feldern und andere Aspekte der Karte.
 
 ### <a name="information-flowing-in"></a>Informationsfluss (eingehend)
 Als Container stellt das Formular **ThisItem** für alle Karten, die es enthält, zur Verfügung. Dieser Datensatz enthält alle Felder für den aktuellen, relevanten Datensatz.  
 
-Die **[Default](controls/properties-core.md)** -Eigenschaft jeder Karte sollte auf **ThisItem**.*FieldName* festgelegt werden.  Unter bestimmten Umständen möchten Sie diesen Wert vor der Zuweisung umwandeln. Z.B. möchten Sie möglicherweise eine Zeichenfolge formatieren oder einen Wert in eine andere Sprache übersetzen.
+Die **[Default](controls/properties-core.md)**-Eigenschaft jeder Karte sollte auf **ThisItem**.*FieldName* festgelegt werden.  Unter bestimmten Umständen möchten Sie diesen Wert vor der Zuweisung umwandeln. Z.B. möchten Sie möglicherweise eine Zeichenfolge formatieren oder einen Wert in eine andere Sprache übersetzen.
 
-Jedes Steuerelement der Karte sollte auf **Parent.Default** verweisen, um den Wert des Feld abrufen zu können. Diese Strategie bietet ein Maß an Datenkapselung für die Karte, damit sich die **[Default](controls/properties-core.md)** -Eigenschaft der Karte ändern kann, ohne die interne Formeln der Karte zu ändern.
+Jedes Steuerelement der Karte sollte auf **Parent.Default** verweisen, um den Wert des Feld abrufen zu können. Diese Strategie bietet ein Maß an Datenkapselung für die Karte, damit sich die **[Default](controls/properties-core.md)**-Eigenschaft der Karte ändern kann, ohne die interne Formeln der Karte zu ändern.
 
-Standardmäßig werden die Eigenschaften **DefaultValue** und **[Required](controls/control-card.md)** aus den Metadaten der Datenquelle genommen, auf der Grundlage der **[DataField](controls/control-card.md)** -Eigenschaft. Sie können diese Formeln mit Ihrer eigenen Logik überschreiben und die Metadaten der Datenquelle mithilfe der **[DataSourceInfo](functions/function-datasourceinfo.md)** -Funktion integrieren.
+Standardmäßig werden die Eigenschaften **DefaultValue** und **[Required](controls/control-card.md)** aus den Metadaten der Datenquelle genommen, auf der Grundlage der **[DataField](controls/control-card.md)**-Eigenschaft. Sie können diese Formeln mit Ihrer eigenen Logik überschreiben und die Metadaten der Datenquelle mithilfe der **[DataSourceInfo](functions/function-datasourceinfo.md)**-Funktion integrieren.
 
 ### <a name="information-flowing-out"></a>Informationsfluss (ausgehend)
-Nachdem der Benutzer einen Datensatz mithilfe der Steuerelemente auf den Karten geändert hat, speichert die **[SubmitForm](functions/function-form.md)** -Funktion die Änderungen der Datenquelle. Wenn diese Funktion ausgeführt wird, liest das Formularsteuerelement die Werte der **[DataField](controls/control-card.md)** -Eigenschaft jeder Karte, um herauszufinden, welches Feld geändert werden soll.  
+Nachdem der Benutzer einen Datensatz mithilfe der Steuerelemente auf den Karten geändert hat, speichert die **[SubmitForm](functions/function-form.md)**-Funktion die Änderungen der Datenquelle. Wenn diese Funktion ausgeführt wird, liest das Formularsteuerelement die Werte der **[DataField](controls/control-card.md)**-Eigenschaft jeder Karte, um herauszufinden, welches Feld geändert werden soll.  
 
-Des Formularsteuerelements liest auch den Wert der **[Update](controls/control-card.md)** -Eigenschaft jeder Karte. Dieser Wert wird in der Datenquelle für dieses Feld gespeichert. Hier können Sie eine weiter Transformierung anwenden, um eventuell die Transformierung umzukehren, die auf die **[Default](controls/properties-core.md)** -Formel der Karte angewendet wurde.
+Des Formularsteuerelements liest auch den Wert der **[Update](controls/control-card.md)**-Eigenschaft jeder Karte. Dieser Wert wird in der Datenquelle für dieses Feld gespeichert. Hier können Sie eine weiter Transformierung anwenden, um eventuell die Transformierung umzukehren, die auf die **[Default](controls/properties-core.md)**-Formel der Karte angewendet wurde.
 
-Die **Valid**-Eigenschaft wird von den Metadaten der Datenquelle gesteuert, auf Grundlage der **[DataField](controls/control-card.md)** -Eigenschaft. Außerdem basiert sie auf der **[Required](controls/control-card.md)** -Eigenschaft und darauf, ob die **[Update](controls/control-card.md)** -Eigenschaft einen Wert enthält. Wenn der Wert für die **[Update](controls/control-card.md)** -Eigenschaft nicht gültig ist, bietet die **Fehler**-Eigenschaft eine benutzerfreundliche Fehlermeldung.
+Die **Valid**-Eigenschaft wird von den Metadaten der Datenquelle gesteuert, auf Grundlage der **[DataField](controls/control-card.md)**-Eigenschaft. Außerdem basiert sie auf der **[Required](controls/control-card.md)**-Eigenschaft und darauf, ob die **[Update](controls/control-card.md)**-Eigenschaft einen Wert enthält. Wenn der Wert für die **[Update](controls/control-card.md)**-Eigenschaft nicht gültig ist, bietet die **Fehler**-Eigenschaft eine benutzerfreundliche Fehlermeldung.
 
-Wenn die **[DataField](controls/control-card.md)** -Eigenschaft einer Karte *blank* ist, ist die Smartcard lediglich ein Container für Steuerelemente. Seine Eigenschaften **Valid** und **[Update](controls/control-card.md)** werden nicht einbezogen, wenn das Formular gesendet wird.
+Wenn die **[DataField](controls/control-card.md)**-Eigenschaft einer Karte *blank* ist, ist die Smartcard lediglich ein Container für Steuerelemente. Seine Eigenschaften **Valid** und **[Update](controls/control-card.md)** werden nicht einbezogen, wenn das Formular gesendet wird.
 
 ## <a name="dissecting-an-example"></a>Analyse eines Beispiels
 Sehen Sie sich die Steuerelemente an, aus denen eine einfache Dateneingabekarte besteht. Der Zwischenraum zwischen Steuerelementen wurde verbessert, um sie besser voneinander abgrenzen zu können:
@@ -144,17 +144,17 @@ Dies Karte funktioniert durch vier Steuerelemente:
 
 | Name | Typ | Beschreibung |
 | --- | --- | --- |
-| **TextRequiredStar** |**[Label](controls/control-text-box.md)** -Steuerelement (Bezeichnung) |Zeigt einen Stern an, der häufig in Dateneingabeformularen verwendet wird, um erforderliche Felder zu kennzeichnen |
-| **TextFieldDisplayName** |**[Label](controls/control-text-box.md)** -Steuerelement (Bezeichnung) |Zeigt den benutzerfreundlichen Namen dieses Felds an. Dieser Name kann von dem im Schema der Datenquelle abweichen. |
+| **TextRequiredStar** |**[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) |Zeigt einen Stern an, der häufig in Dateneingabeformularen verwendet wird, um erforderliche Felder zu kennzeichnen |
+| **TextFieldDisplayName** |**[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) |Zeigt den benutzerfreundlichen Namen dieses Felds an. Dieser Name kann von dem im Schema der Datenquelle abweichen. |
 | **InputText** |**Eingabetext**-Steuerelement |Zeigt den anfänglichen Wert des Felds und ermöglicht es dem Benutzer, diesen Wert zu ändern |
-| **TextErrorMessage** |**[Label](controls/control-text-box.md)** -Steuerelement (Bezeichnung) |Zeigt eine benutzerfreundliche Fehlermeldung für den Benutzer an, wenn ein Problem mit der Validierung auftritt. Außerdem stellt es sicher, dass das Feld einen Wert hat, wenn einer erforderlich ist. |
+| **TextErrorMessage** |**[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) |Zeigt eine benutzerfreundliche Fehlermeldung für den Benutzer an, wenn ein Problem mit der Validierung auftritt. Außerdem stellt es sicher, dass das Feld einen Wert hat, wenn einer erforderlich ist. |
 
 Um diese Steuerelemente mit Daten aufzufüllen, können deren Eigenschaften von den Eigenschaften der Karte anhand dieser Schlüsselformeln gesteuert werden. Beachten Sie, dass keine dieser Formeln auf ein bestimmtes Feld verweist. Stattdessen stammen alle Informationen von der Karte.
 
 | Control-Eigenschaft | Formel | Beschreibung |
 | --- | --- | --- |
 | **TextRequiredStar.Visible** |**Parent.Required** |Der Stern erscheint nur, wenn das Feld erforderlich ist. Eine Formel ist erforderlich, die von Ihnen oder den Metadaten der Datenquelle gesteuert wird. |
-| **TextFieldDisplayName.Text** |**Parent.DisplayName** |Das Textfeld-Steuerelement zeigt den benutzerfreundlichen Namen, den Sie oder die Metadaten der Datenquelle bereitstellen, und die in der **[DisplayName](controls/control-card.md)** -Eigenschaft der Karte festgelegt wird. |
+| **TextFieldDisplayName.Text** |**Parent.DisplayName** |Das Textfeld-Steuerelement zeigt den benutzerfreundlichen Namen, den Sie oder die Metadaten der Datenquelle bereitstellen, und die in der **[DisplayName](controls/control-card.md)**-Eigenschaft der Karte festgelegt wird. |
 | **InputText.Default** |**Parent.Default** |Das Texteingabe-Steuerelements zeigt zuerst den Wert des Felds der Datenquelle, wie er vom Standardwert der Karte bereitgestellt wird. |
 | **TextErrorMessage.Text** |**Parent.Error** |Wenn ein Überprüfungsproblem auftritt, bietet die **Error**-Eigenschaft der Karte eine entsprechende Fehlermeldung. |
 

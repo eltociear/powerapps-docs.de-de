@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a5645f2f0d515d7eca125f3cd89ecff0c63cfa51
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404051"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211938"
 ---
 # <a name="pen-input-control-in-power-apps"></a>Stift Eingabe-Steuerelement in powerapps
 Ein Steuerelement, mit dem der Benutzer Bereiche eines Bildes zeichnen, löschen oder markieren kann.
@@ -35,7 +34,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 **Mode** – Das Steuerelement ist im Modus **Draw** oder **Erase**.  Der Modus „Select“ ist veraltet.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Kann verwendet werden, um den Zweck des Steuerelements sowie alternative Eingabemethoden zu beschreiben.
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Kann verwendet werden, um den Zweck des Steuerelements sowie alternative Eingabemethoden zu beschreiben.
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
@@ -43,7 +42,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
@@ -53,7 +52,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
-**[SelectionColor](properties-color-border.md)** : Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.
+**[SelectionColor](properties-color-border.md)**: Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.
 
 **SelectionThickness**: Die Stärke des Auswahltools für ein Stifteingabe-Steuerelement.
 
@@ -72,7 +71,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Collect**( *CollectionName*; *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
+[**Collect**( *CollectionName*, *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
 
 ## <a name="example"></a>Beispiel
 ### <a name="create-a-set-of-images"></a>Erstellen Sie einen Satz von Bildern
@@ -81,18 +80,18 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein Steuerelement **[Button](control-button.md)** hinzu, verschieben Sie es unter **MyDoodles**, und legen Sie die Eigenschaft **[Text](properties-core.md)** des Steuerelements **[Button](control-button.md)** so fest, dass **Add** angezeigt wird.
 3. Legen Sie die Eigenschaft **[OnSelect](properties-core.md)** des Steuerelements **[Button](control-button.md)** auf die folgende Formel fest:<br>
-   **Collect(Doodles; {Sketch:MyDoodles.Image})**
-4. Fügen Sie ein Steuerelement **Image gallery** hinzu, verschieben Sie es unter das Steuerelement **[Button](control-button.md)** , und verkleinern Sie die Breite des **Image gallery**, bis drei Elemente angezeigt werden.
+   **Collect(Doodles, {Sketch:MyDoodles.Image})**
+4. Fügen Sie ein Steuerelement **Image gallery** hinzu, verschieben Sie es unter das Steuerelement **[Button](control-button.md)**, und verkleinern Sie die Breite des **Image gallery**, bis drei Elemente angezeigt werden.
 5. Legen Sie die Eigenschaft **[Items](properties-core.md)** des Steuerelements **Image gallery** auf **Doodles** fest, und drücken Sie anschließend F5.
-6. Zeichnen Sie ein Bild in **MyDoodles**, und klicken oder tippen Sie anschließend auf das Steuerelement **[Button](control-button.md)** .
+6. Zeichnen Sie ein Bild in **MyDoodles**, und klicken oder tippen Sie anschließend auf das Steuerelement **[Button](control-button.md)**.
    
     Das Bild, das Sie gezeichnet haben, wird im Steuerelement **Image gallery** angezeigt.
-7. (optional) Klicken oder tippen Sie im Steuerelement **Pen input** auf das Symbol, um das gezeichnete Bild zu löschen, zeichnen Sie ein anderes Bild, und klicken oder tippen Sie auf das Steuerelement **[Button](control-button.md)** .
+7. (optional) Klicken oder tippen Sie im Steuerelement **Pen input** auf das Symbol, um das gezeichnete Bild zu löschen, zeichnen Sie ein anderes Bild, und klicken oder tippen Sie auf das Steuerelement **[Button](control-button.md)**.
 8. Legen Sie im Steuerelement **Image gallery** die Eigenschaft **[OnSelect](properties-core.md)** des Steuerelements **[Image](control-image.md)** auf diese Formel fest:<br>
-   **Remove(Doodles; ThisItem)**
+   **Remove(Doodles, ThisItem)**
 9. Entfernen Sie eine Zeichnung, indem Sie auf das Steuerelement **Image gallery** klicken oder tippen.
 
-Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)** -Funktion, um Ihre Zeichnungen lokal zu speichern, oder die **[Patch](../functions/function-patch.md)** -Funktion zur Speicherung in einer Datenquelle.
+Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)**-Funktion, um Ihre Zeichnungen lokal zu speichern, oder die **[Patch](../functions/function-patch.md)**-Funktion zur Speicherung in einer Datenquelle.
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
@@ -105,7 +104,7 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[AccessibleLabel](properties-accessibility.md)** sollte vorhanden sein.
 
     > [!IMPORTANT]
-  > Die **Stifteingabe** ist für Benutzer der Sprachausgabe nicht verfügbar. Stellen Sie stets eine alternative Eingabemöglichkeit zur Verfügung. Wenn z.B. eine Skizze erforderlich ist, sollten Sie ein **[Bild hinzufügen](control-add-picture.md)** -Steuerelement hinzufügen, damit Benutzer Bilder hochladen können. Sie können beide Methoden zur Verfügung stellen und der Benutzer die von ihm bevorzugte auswählen.
+  > Die **Stifteingabe** ist für Benutzer der Sprachausgabe nicht verfügbar. Stellen Sie stets eine alternative Eingabemöglichkeit zur Verfügung. Wenn z.B. eine Skizze erforderlich ist, sollten Sie ein **[Bild hinzufügen](control-add-picture.md)**-Steuerelement hinzufügen, damit Benutzer Bilder hochladen können. Sie können beide Methoden zur Verfügung stellen und der Benutzer die von ihm bevorzugte auswählen.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6cabcfe58841a5d507ec31b6279cc9a00922850f
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403846"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212122"
 ---
 # <a name="slider-control-in-power-apps"></a>Schieberegler-Steuerelement in powerapps
 Ein Steuerelement, mit dem der Benutzer durch Ziehen eines Handles einen Wert angeben kann
@@ -27,16 +27,16 @@ Ein Steuerelement, mit dem der Benutzer durch Ziehen eines Handles einen Wert an
 Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert eingeben. Ziehen Sie dazu den Handle des Schiebereglers von links nach rechts oder von unten nach oben, je nach ausgewählter Richtung.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)** : Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.
+**[Default](properties-core.md)**: Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.
 
 **Max**: Der maximale Wert, auf den der Benutzer einen Schieberegler oder eine Bewertung festlegen kann.
 
 **Min**: gibt den Mindestwert an, auf den der Benutzer einen Schieberegler festlegen kann.
 
-**[Value](properties-core.md)** : Gibt den Wert des Eingabesteuerelements an.
+**[Value](properties-core.md)**: Gibt den Wert des Eingabesteuerelements an.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
@@ -44,13 +44,13 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[DisabledBorderColor](properties-color-border.md)** : Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)** -Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledBorderColor](properties-color-border.md)**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **HandleActiveFill**: gibt die Farbe des Handles für einen Schieberegler an, wenn der Benutzer seinen Wert ändert.
 
@@ -66,7 +66,7 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 
 **Layout**: gibt an, ob der Benutzer einen Bildlauf durch einen Katalog durchführt oder einen Schieberegler von oben nach unten anpasst (**Vertical**) oder von links nach rechts (**Horizontal**).
 
-**[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)**: Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -82,7 +82,7 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 
 **ShowValue**: Gibt an, ob ein Wert des Schiebereglers oder der Bewertung angezeigt wird, wenn der Benutzer diesen Wert ändert oder auf das Steuerelement zeigt.
 
-**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
@@ -107,11 +107,11 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
    
-    Benötigen Sie weitere Informationen zur **[ClearCollect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
+    Benötigen Sie weitere Informationen zur **[ClearCollect](../functions/function-clear-collect-clearcollect.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 2. Drücken Sie F5, wählen Sie die Schaltfläche aus, und drücken Sie dann die ESC-TASTE.
 3. Fügen Sie einen Schieberegler ein, verschieben Sie ihn unter die Schaltfläche, und nennen Sie ihn **MinPopulation**.
 4. Legen Sie die **Max**-Eigenschaft des Schiebereglers auf **5000000** und seine **Min**-Eigenschaft auf **1000000** fest.
-5. Fügen Sie einen Textkatalog in vertikaler/Hochformat-Ausrichtung ein, verschieben Sie ihn unten den Schieberegler, und legen Sie die **[Items](properties-core.md)** -Eigenschaft des Katalogs auf diese Formel fest:<br>
+5. Fügen Sie einen Textkatalog in vertikaler/Hochformat-Ausrichtung ein, verschieben Sie ihn unten den Schieberegler, und legen Sie die **[Items](properties-core.md)**-Eigenschaft des Katalogs auf diese Formel fest:<br>
    **Filter(CityPopulations, Population > MinPopulation)**
 6. Legen Sie im ersten Element des Katalogs die Eigenschaft **[Text](properties-core.md)** der obersten Bezeichnung auf **ThisItem.City** und die Eigenschaft **[Text](properties-core.md)** der untersten Bezeichnung auf diese Formel fest:<br> **Text(ThisItem.Population, "##,###")**
 7. Drücken Sie F5, und passen Sie **MinPopulation** so an, dass nur Städte angezeigt werden, deren Einwohnerzahl die von Ihnen angegebene übersteigt.

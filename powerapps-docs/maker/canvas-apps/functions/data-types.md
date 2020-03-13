@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 87af59cfc755ea7ad33f3891ae4f27589318eddc
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403192"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211708"
 ---
 # <a name="data-types-in-canvas-apps"></a>Datentypen in Canvas-apps
 
@@ -164,8 +164,8 @@ Zurückkehren zum obigen Beispiel:
 
 | Datums-/Uhrzeittyp | In der Datenbank gespeicherter Wert | Angezeigter Wert und 7 Stunden, Westen von UTC | Rückgabe **Wert** Funktion |
 |--------------------------|------------------------------|------------------------------|
-| **Lokaler Benutzer** | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | Samstag,&nbsp;&nbsp;18. Mai,&nbsp;2019<br>9:00 PM | 1\.558.238.400.000<br> (Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr UTC) |
-| **Zeit Zonen unabhängig** | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr |1\.558.263.600.000<br> (Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>11:00 Uhr UTC) |
+| **Lokaler Benutzer** | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | Samstag,&nbsp;&nbsp;18. Mai,&nbsp;2019<br>9:00 PM | 1.558.238.400.000<br> (Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr UTC) |
+| **Zeit Zonen unabhängig** | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr |1.558.263.600.000<br> (Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>11:00 Uhr UTC) |
 
 ### <a name="converting-unix-times"></a>Wechseln von UNIX-Zeiten
 
@@ -222,7 +222,7 @@ Aber Sie können diese Formel verwenden:
 
 `If( ThisItem.OrderStatus = OrderStatus.Active, ...`
 
-Bei globalen Options Sätzen (bei denen die Entitäten gemeinsam genutzt werden) entspricht der Name der Options Satz-Enumeration dem Namen der globalen Options Menge. Für lokale Optionssätze (die auf eine Entität bezogen sind) kann der Name den Namen der Entität enthalten. Dieses Verhalten vermeidet Konflikte, wenn mehrere Entitäten über Optionssätze verfügen, die denselben Namen aufweisen. Beispielsweise kann für die Entität " **Accounts** " eine Option " **OrderStatus** " festgelegt werden, und der Name kann " **OrderStatus (Accounts)** " lauten. Dieser Name enthält ein oder mehrere Leerzeichen und Klammern, sodass Sie ihn in einfache Anführungszeichen einschließen müssen, wenn Sie ihn in einer Formel referenzieren.
+Bei globalen Options Sätzen (bei denen die Entitäten gemeinsam genutzt werden) entspricht der Name der Options Satz-Enumeration dem Namen der globalen Options Menge. Für lokale Optionssätze (die auf eine Entität bezogen sind) kann der Name den Namen der Entität enthalten. Dieses Verhalten vermeidet Konflikte, wenn mehrere Entitäten über Optionssätze verfügen, die denselben Namen aufweisen. Beispielsweise kann für die Entität " **Accounts** " eine Option " **OrderStatus** " festgelegt werden, und der Name kann " **OrderStatus (Accounts)**" lauten. Dieser Name enthält ein oder mehrere Leerzeichen und Klammern, sodass Sie ihn in einfache Anführungszeichen einschließen müssen, wenn Sie ihn in einer Formel referenzieren.
 
 Außerdem können sich zwei Optionswerte auch als boolesche Werte Verhalten. Beispielsweise kann für einen zwei-Options-Wert mit dem Namen " **taxstatus** " die Bezeichnung "Tax **" und "** **Non-** Tax" lauten, die " *true* " bzw. " *false* " Um dies zu veranschaulichen, können Sie die folgende Formel verwenden:
 

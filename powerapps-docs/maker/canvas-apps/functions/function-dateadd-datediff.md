@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e5c321617f08b6747824757344e3cc61b1abf27b
-ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
-ms.translationtype: HT
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76708785"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211547"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-power-apps"></a>Die Funktionen „DateAdd“, „DateDiff“ und „TimeZoneOffset“ in Power Apps
 Dienen zum Hinzufügen zu oder Auffinden des Unterschiedes bei Datum-/Uhrzeit-Werten und Konvertieren zwischen Ortszeit und UTC.
@@ -38,17 +37,17 @@ Sie können **DateAdd** mit **TimeZoneOffset** zum Konvertieren zwischen der Ort
 Weitere Informationen finden Sie unter [Datentypen „date“, „time“ und „datetime“](../functions/data-types.md#date-time-and-datetime) sowie [Arbeiten mit Daten und Uhrzeitangaben](../show-text-dates-times.md).
 
 ## <a name="syntax"></a>Syntax
-**DateAdd**( *DateTime*; *Addition* [; *Units* ] )
+**DateAdd**( *DateTime*, *Addition* [, *Units* ] )
 
 * *DatumUhrzeit*: erforderlich. Der zu verarbeitende Datum/Uhrzeit-Wert
 * *Addition*: erforderlich. Die *DateTime* hinzuzufügende Anzahl in *Einheiten*.
-* *Einheiten*: optional. Die hinzuzufügenden Typen von*Einheiten*: **Millisekunden**, **Sekunden**, **Minuten**, **Stunden**, **Tage**, **Monate**, **Quartale** oder **Jahre**  Wenn nicht angegeben, werden **Tage** verwendet.
+* *Einheiten*: optional. Mögliche Typen von *Einheiten* sind **Millisekunden**, **Sekunden**, **Minuten**, **Stunden**, **Tage**, **Monate**, **Quartale** oder **Jahre**.  Wenn nicht angegeben, werden **Tage** verwendet.
 
-**DateDiff**( *StartDateTime*; *EndDateTime* [; *Units* ] )
+**DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
 * *AnfangDatumUhrzeit*: erforderlich. Der Anfangs-Datum/Uhrzeit-Wert
 * *EndeDatumUhrzeit*: erforderlich. Der End-Datum/Uhrzeit-Wert
-* *Einheiten*: optional. Die hinzuzufügenden Typen von*Einheiten*: **Millisekunden**, **Sekunden**, **Minuten**, **Stunden**, **Tage**, **Monate**, **Quartale** oder **Jahre**  Wenn nicht angegeben, werden **Tage** verwendet.
+* *Einheiten*: optional. Mögliche Typen von *Einheiten* sind **Millisekunden**, **Sekunden**, **Minuten**, **Stunden**, **Tage**, **Monate**, **Quartale** oder **Jahre**.  Wenn nicht angegeben, werden **Tage** verwendet.
 
 **TimeZoneOffset**( [ *DateTime* ] )
 
@@ -61,25 +60,25 @@ Bei allen diesen Beispielen wird davon ausgegangen, dass der Datum/Uhrzeit-Wert 
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text( DateAdd( Now(); 3 );<br>"dd-mm-yyyy hh:mm" )** |Dem aktuellen Datum/Uhrzeit-Wert werden drei Tage (Standardeinheiten) hinzugefügt. |"18-07-2013 13:02" |
-| **Text( DateAdd( Now(); 4; Stunden );<br>"dd-mm-yyyy hh:mm" )** |Dem aktuellen Datum/Uhrzeit-Wert werden vier Stunden hinzugefügt. |"15-07-2013 17:02" |
-| **Text( DateAdd( Today(); 1; Monate );<br>"dd-mm-yyyy hh:mm" )** |Fügt dem aktuellen Datum einen Monat hinzu. Ohne Uhrzeit als **Today** wird keine Zeitangabe zurückgegeben. |"15-08-2013 00:00" |
-| **Text( DateAdd( Now(); &#8209;;30; Minuten );<br>"dd-mm-yyyy hh:mm" )** |Subtrahiert 30 Minuten vom dem aktuellen Datum/Uhrzeit-Wert. |"15-07-2013 12:32" |
+| **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |Dem aktuellen Datum/Uhrzeit-Wert werden drei Tage (Standardeinheiten) hinzugefügt. |"18-07-2013 13:02" |
+| **Text( DateAdd( Now(), 4, Stunden ),<br>"dd-mm-yyyy hh:mm" )** |Dem aktuellen Datum/Uhrzeit-Wert werden vier Stunden hinzugefügt. |"15-07-2013 17:02" |
+| **Text( DateAdd( Today(), 1, Monate ),<br>"dd-mm-yyyy hh:mm" )** |Fügt dem aktuellen Datum einen Monat hinzu. Ohne Uhrzeit als **Today** wird keine Zeitangabe zurückgegeben. |"15-08-2013 00:00" |
+| **Text( DateAdd( Now(), &#8209;30, Minuten ),<br>"dd-mm-yyyy hh:mm" )** |Subtrahiert 30 Minuten vom dem aktuellen Datum/Uhrzeit-Wert. |"15-07-2013 12:32" |
 
 ### <a name="simple-datediff"></a>Einfache DateDiff-Funktion
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **DateDiff( Now(); DateValue("1/1/2014") )** |Gibt die Differenz zwischen den zwei Einheiten in der Standardeinheit **Tage** zurück. |170 |
-| **DateDiff( Now(); DateValue("1/1/2014"); Monate )** |Gibt die Differenz zwischen den beiden Werten in **Monaten** zurück. |6 |
-| **DateDiff( Now(); Today(); Minuten )** |Gibt die Differenz zwischen dem aktuellen Datum/Uhrzeit-Wert und dem aktuellen Datum nur in Minuten (ohne Uhrzeit) zurück.  Da **Now** (jetzt) später als **Today** (heute) ist, ist das Ergebnis negativ. |-782 |
+| **DateDiff( Now(), DateValue("1/1/2014") )** |Gibt die Differenz zwischen den zwei Einheiten in der Standardeinheit **Tage** zurück. |170 |
+| **DateDiff( Now(), DateValue("1/1/2014"), Monate )** |Gibt die Differenz zwischen den beiden Werten in **Monaten** zurück. |6 |
+| **DateDiff( Now(), Today(), Minuten )** |Gibt die Differenz zwischen dem aktuellen Datum/Uhrzeit-Wert und dem aktuellen Datum nur in Minuten (ohne Uhrzeit) zurück.  Da **Now** (jetzt) später als **Today** (heute) ist, ist das Ergebnis negativ. |-782 |
 
 ### <a name="converting-to-utc"></a>Konvertieren in UTC
 Fügen Sie zum Konvertieren in UTC (Coordinated Universal Time) **TimeZoneOffset** der angegebenen Uhrzeit hinzu.  
 
 Angenommen, der aktuelle Datum/Uhrzeit-Wert ist der **15. Juli 2013, 13:02 Uhr** in Pacific Daylight Time (PDT, UTC-7).  Verwenden Sie zum Bestimmen der aktuellen Uhrzeit in UTC Folgendes:
 
-* **DateAdd( Now(); TimeZoneOffset(); Minuten )**
+* **DateAdd( Now(), TimeZoneOffset(), Minuten )**
 
 **TimeZoneOffset** ist standardmäßig auf die aktuelle Uhrzeit festgelegt, sodass Sie kein Argument dafür übergeben müssen.
 
@@ -90,7 +89,7 @@ Zum Konvertieren aus UTC subtrahieren Sie **TimeZoneOffset** (durch Hinzufügen 
 
 Angenommen, das UTC-Datum und die Uhrzeit **15. Juli 2013, 20:02 Uhr** werden in einer Variablen namens **StartTime** gespeichert. Verwenden Sie zum Anpassen der Zeit für die Zeitzone des Benutzers Folgendes:
 
-* **DateAdd( StartTime; &minus;TimeZoneOffset( StartTime ); Minuten )**
+* **DateAdd( StartTime, &minus;TimeZoneOffset( StartTime ), Minuten )**
 
 Beachten Sie das negative Vorzeichen vor **TimeZoneOffset**, damit der Offset subtrahiert und nicht addiert wird.
 

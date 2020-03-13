@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404322"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211892"
 ---
 # <a name="screen-control-in-power-apps"></a>Bildschirm-Steuerelement in Power apps
 
@@ -26,11 +26,11 @@ Ein Benutzeroberflächenelement, das in einer App ein oder mehrere Steuerelement
 
 ## <a name="description"></a>Beschreibung
 
-Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[Bezeichnung](control-text-box.md)** -Steuerelemente, **[Schaltflächen-](control-button.md)** und andere Steuerelemente enthalten und Daten anzeigen sowie die Navigation unterstützen. Informationen dazu, wie Sie einen Bildschirm hinzufügen, Bildschirme neu anordnen und die Navigation konfigurieren, finden [Sie unter Hinzufügen eines Bildschirms](../add-screen-context-variables.md).
+Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[Bezeichnung](control-text-box.md)**-Steuerelemente, **[Schaltflächen-](control-button.md)** und andere Steuerelemente enthalten und Daten anzeigen sowie die Navigation unterstützen. Informationen dazu, wie Sie einen Bildschirm hinzufügen, Bildschirme neu anordnen und die Navigation konfigurieren, finden [Sie unter Hinzufügen eines Bildschirms](../add-screen-context-variables.md).
 
 ## <a name="key-properties"></a>Haupteigenschaften
 
-**[BackgroundImage](properties-visual.md)** : Der Name einer Bilddatei, die als Hintergrund einer Bildschirmansicht angezeigt wird.
+**[BackgroundImage](properties-visual.md)**: Der Name einer Bilddatei, die als Hintergrund einer Bildschirmansicht angezeigt wird.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
@@ -38,7 +38,7 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 **Height** : die Höhe des Bildschirms. Wenn die APP reaktionsfähig ist (die[**Skalierung**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation) ist **deaktiviert) und**das Gerät, auf dem die app ausgeführt wird, kürzer als diese Eigenschaft ist, kann der Bildschirm vertikal scrollen.
 
-**[ImagePosition](properties-visual.md)** : gibt die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Images in einem Bildschirm oder in einem Steuerelement an, wenn es nicht die gleiche Größe wie das Image hat.
+**[ImagePosition](properties-visual.md)**: gibt die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Images in einem Bildschirm oder in einem Steuerelement an, wenn es nicht die gleiche Größe wie das Image hat.
 
 **Name** : der Name des Bildschirms.
 
@@ -58,7 +58,7 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 ## <a name="example"></a>Beispiel
 
-1. Fügen Sie ein **[Optionsfeld](control-radio.md)** -Steuerelement hinzu, nennen Sie es **ScreenFills**, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf folgenden Wert fest:
+1. Fügen Sie ein**[Optionsfeld](control-radio.md)**-Steuerelement hinzu, nennen Sie es **ScreenFills**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf folgenden Wert fest:
 
     `["Red", "Green"]`
 
@@ -70,13 +70,13 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
     `Navigate(Target, ScreenTransition.Fade)`
 
-    Benötigen Sie weitere Informationen zur **[Navigate](../functions/function-navigate.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
+    Benötigen Sie weitere Informationen zur **[Navigate](../functions/function-navigate.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 
-1. Fügen Sie in **Target** ein **[Shape](control-shapes-icons.md)** -Steuerelement hinzu (z.B. einen Pfeil), und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:
+1. Fügen Sie in **Target** ein **[Shape](control-shapes-icons.md)**-Steuerelement hinzu (z.B. einen Pfeil), und legen Sie seine **[OnSelect](properties-core.md)**-Eigenschaft auf diese Formel fest:
 
     `Navigate(Source, ScreenTransition.Fade)`
 
-1. Legen Sie die **[Fill](properties-color-border.md)** -Eigenschaft von **Target** auf diese Formel fest:
+1. Legen Sie die **[Fill](properties-color-border.md)**-Eigenschaft von **Target** auf diese Formel fest:
 
     `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
 
@@ -103,7 +103,7 @@ Wenn die **Anzeige** als Hintergrund für Text gilt, muss zwischen den folgenden
 
 Wenn beispielsweise eine **Anzeige** eine **[Bezeichnung](control-text-box.md)** enthält und die Füllung der Bezeichnung durchsichtig ist, wird diese **[Füllung](properties-color-border.md)** als Hintergrundfarbe für die Bezeichnung verwendet.
 
-Sie sollten nicht nur den Text überprüfen, sondern auch den Farbkontrast mit grundlegenden graphischen Objekten wie Bildern mit Sternen in einem **[Bewertungs](control-rating.md)** -Steuerelement.
+Sie sollten nicht nur den Text überprüfen, sondern auch den Farbkontrast mit grundlegenden graphischen Objekten wie Bildern mit Sternen in einem **[Bewertungs](control-rating.md)**-Steuerelement.
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 
