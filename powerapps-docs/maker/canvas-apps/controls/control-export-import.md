@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/10/2020
 ms.locfileid: "78970970"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="export-control-and-import-control-in-power-apps"></a>Exportieren von Steuerelement und Import-Steuerelement in powerapps
 Steuerelemente zum Exportieren von Daten in eine lokale Datei und zum anschließenden Importieren dieser Daten in eine andere app in powerapps.
@@ -125,7 +126,7 @@ Die Exportfunktion wird in Webbrowsern nicht unterstützt.
 4. Drücken Sie F5, und wählen Sie das Steuerelement **exportieren** aus, um die Datei *Data. zip*herunterzuladen.
 5. Wählen Sie **Speichern**aus, und drücken Sie dann ESC, um zum Standard Arbeitsbereich zurückzukehren.
 6. Fügen Sie in einer neuen oder vorhandenen App ein **Import**-Steuerelement hinzu, benennen Sie es mit **MyData**, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
-   **Collect(ImportedProducts, MyData.Data)**
+   **Collect(ImportedProducts; MyData.Data)**
 7. Drücken Sie F5, und wählen Sie **MyData**aus. Wählen Sie dann die exportierte Datei aus, und wählen Sie dann **Öffnen**aus.
 8. Drücken Sie ESC, wählen Sie im Menü **Datei** die Option **Sammlungen** aus, und vergewissern Sie sich, dass die aktuelle APP die Daten enthält, die Sie exportiert haben.
 
