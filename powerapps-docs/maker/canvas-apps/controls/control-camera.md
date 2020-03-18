@@ -6,110 +6,175 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 10/25/2016
+ms.date: 03/16/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f70e6d8015a75f26d0716a144c7f524181f34664
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: fd3c468134e979732ead5e0144e60aaf1b3e38df
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211777"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436792"
 ---
 # <a name="camera-control-in-power-apps"></a>Kamerasteuerelement in Power Apps
-Ein Steuerelement, mit dem der Benutzer mithilfe der Kamera des Geräts Fotos aufnehmen kann.
+
+Ein Steuerelement, mit dem Benutzer mit der Kamera auf einem Gerät Bilder aufnehmen können.
 
 ## <a name="description"></a>Beschreibung
-Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mit einem oder mehreren Fotos vom aktuellen Ort, an dem die App ausgeführt wird, aktualisieren. Vom Kamerasteuerelement generierte Bilder werden nicht in der vollen Auflösung der Kamera dargestellt.  Wenn Sie Bilder mit voller Auflösung benötigen, sollten Sie das Steuerelement **[Bild hinzufügen](control-add-picture.md)** verwenden.
+
+Verwenden Sie das **Kamera** Steuerelement, um Bilder mit der Kamera eines Geräts zu erfassen.  Das Gerät muss über eine Kamera verfügen, und der Benutzer muss die APP für die Verwendung der Kamera autorisieren. Das Kamera Steuerelement wird unterstützt, wenn es in einem Webbrowser ausgeführt wird.
+
+Das zuletzt erfasste Bild steht über die **Photo** -Eigenschaft zur Verfügung. Mit dieser Eigenschaft können die Images wie folgt lauten:
+
+- **Angezeigt mit dem Image-Steuerelement.** Verwenden Sie das [Image](control-image.md) -Steuerelement, um das erfasste Bild anzuzeigen. Weitere Informationen finden Sie in den [Beispielen](#examples).  
+- **Temporär in eine Variable oder eine Auflistung einfügen.**  Verwenden Sie die Funktion " [Set](../functions/function-set.md) " oder " [Collect](../functions/function-clear-collect-clearcollect.md) " zum Speichern von Bildern in einer Variablen oder einer Sammlung.  Gehen Sie vorsichtig vor, wenn Sie mehrere Abbilder in einer Sammlung gleichzeitig mit eingeschränktem Arbeitsspeicher des Geräts verwenden. Verwenden Sie die Funktionen [SaveData](../functions/function-savedata-loaddata.md) und [LoadData](../functions/function-savedata-loaddata.md) , um Bilder in den lokalen Speicher auf dem Gerät und in [Offline Szenarien](../offline-apps.md)zu verschieben.
+- **In einer Datenbank gespeichert.**  Verwenden Sie die [Patch](../functions/function-patch.md) -Funktion, um Bilder in einer Datenbank zu speichern.
+- **Als Base64-codierte Text Zeichenfolge übertragen.**  Verwenden Sie die [JSON](../functions/function-json.md) -Funktion zum Base64-Codieren von Bildern.
+
+Verwenden Sie die Eigenschaften " **Stream**", " **streamrate**" und " **OnStream** ", um Bilder automatisch auf einem Timer zu erfassen, z. b. das anpacken eines Bilds an eine Zeitverlaufs Sequenz.
+
+Auf erfasste Medien wird durch einen Textzeichen folgen-URI verwiesen. Weitere Informationen finden Sie in der [Dokumentation zum Datentyp](../functions/data-types.md#uris-for-images-and-other-media).
+
+Bilder, die vom Kamera Steuerelement generiert werden, sind in der Regel nicht vollständig in der Kamera. Wenn Sie Bilder mit vollständiger Auflösung benötigen, verwenden Sie das Steuerelement [Bild hinzufügen](control-add-picture.md) .
 
 ## <a name="key-properties"></a>Haupteigenschaften
+
 **Camera** – Auf einem Gerät mit mehreren Kameras ist dies die ID der von der App verwendeten Kamera.
 
+**OnStream** – Legt fest, wie die App reagiert, wenn die **Stream**-Eigenschaft aktualisiert wird.
+
+**Photo** – das Bild, das aufgezeichnet wird, wenn der Benutzer ein Bild annimmt. 
+
+**Stream** – Das automatisch entsprechend der **StreamRate**-Eigenschaft aktualisierte Bild.
+
+**StreamRate** – Gibt an, wie oft das Bild in der **Stream**-Eigenschaft aktualisiert wird (in Millisekunden). Dieser Wert kann zwischen 100 (einer Zehntelsekunde) und 3.600.000 (eine Stunde) liegen.
+
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte beschreiben, warum ein Bild aufgenommen werden soll.
 
-**[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
+[AccessibleLabel](properties-accessibility.md): Bezeichnung für Sprachausgaben. Sollte beschreiben, warum ein Bild aufgenommen werden soll.
 
-**[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
+[BorderColor](properties-color-border.md): Die Farbe des Rahmens eines Steuerelements.
 
-**[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
+[BorderStyle](properties-color-border.md): Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
+
+[BorderThickness](properties-color-border.md): Die Linienstärke des Rahmens eines Steuerelements.
 
 **Brightness** – Bestimmt die Helligkeit, die von einem Benutzer voraussichtlich im Bild wahrgenommen wird.
 
 **Contrast** – Gibt an, wie leicht ähnliche Farben in einem Bild für den Benutzer voneinander zu unterscheiden sind.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+[Display Mode](properties-core.md) – gibt an, ob das Steuerelement Benutzereingaben zulässt (**Edit**), nur Daten (**Ansicht**) anzeigt oder deaktiviert (**deaktiviert**) ist.
 
-**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+[Focusedbordercolor](properties-color-border.md) – die Farbe des Rahmens eines Steuer Elements, wenn sich das Steuerelement im Fokus befindet.
 
-**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+[Focusedborderdicke](properties-color-border.md) – die Stärke des Rahmens eines Steuer Elements, wenn sich das Steuerelement im Fokus befindet.
 
-**[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
+[Height](properties-size-location.md): Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
-**[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
+[OnSelect](properties-core.md): Gibt an, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
-**OnStream** – Legt fest, wie die App reagiert, wenn die **Stream**-Eigenschaft aktualisiert wird.
+[TabIndex](properties-accessibility.md) – Reihenfolge der Tastaturnavigation im Vergleich zu anderen Steuerelementen.
 
-**Photo** – Das Bild, das aufgenommen wird, wenn der Benutzer ein Foto macht.
+[QuickInfo](properties-core.md): Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
-**Stream** – Das automatisch entsprechend der **StreamRate**-Eigenschaft aktualisierte Bild.
+[Visible](properties-core.md): Gibt an, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
-**StreamRate** – Gibt an, wie oft das Bild in der **Stream**-Eigenschaft aktualisiert wird (in Millisekunden).  Dieser Wert kann zwischen 100 (einer Zehntelsekunde) und 3.600.000 (eine Stunde) liegen.
+[Width](properties-size-location.md): Der Abstand zwischen dem linken und rechten Rand eines Steuerelements.
 
-**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+[X](properties-size-location.md) – der Abstand zwischen dem linken Rand eines Steuer Elements und dem linken Rand des übergeordneten Containers oder Bildschirms.
 
-**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+[Y](properties-size-location.md) – der Abstand zwischen dem oberen Rand eines Steuer Elements und dem oberen Rand des übergeordneten Containers oder Bildschirms.
 
-**[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
+## <a name="examples"></a>Beispiele
 
-**[Width](properties-size-location.md)** – Der Abstand zwischen dem linken und rechten Rand eines Steuerelements.
+Für diese Beispiele benötigen Sie ein Gerät mit einer Kamera. Verwenden Sie zum Testen Ihrer APP eine Web-Cam, auf die Sie über Ihren Browser zugreifen können. Oder indem Sie Ihre APP speichern und in ein IOS-oder Android-Gerät mit einer Kamera laden.
 
-**[X](properties-size-location.md)** – Der Abstand zwischen dem linken Rand eines Steuerelements und dem linken Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
+### <a name="simple-display-of-a-captured-picture"></a>Einfache Anzeige eines aufgezeichneten Bilds
 
-**[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
+1. [Fügen Sie](../add-configure-controls.md) ein **Kamera** Steuerelement hinzu.
 
-## <a name="related-functions"></a>Verwandte Funktionen
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+1. Autorisieren Sie die APP für die Verwendung der Gerätekamera.
 
-## <a name="example"></a>Beispiel
-### <a name="add-photos-to-an-image-gallery-control"></a>Hinzufügen von Fotos zu einem Bildkatalog-Steuerelement
-1. Fügen Sie ein **Kamera**-Steuerelement hinzu, benennen Sie es **MyCamera**, und legen Sie dessen **[OnSelect](properties-core.md)**-Eigenschaft auf die folgende Formel fest:<br>
-   **Collect(MyPix; MyCamera.Photo)**
+1. Fügen Sie ein **Bild** Steuerelement hinzu.
 
-    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
+1. Legen Sie die **Image** -Eigenschaft des **Bild** -Steuer Elements auf diese Formel fest:
 
-    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)**-Funktion oder zu [anderen Funktionen](../formula-reference.md)?
-2. Drücken Sie F5, und nehmen Sie dann ein Foto auf, indem Sie auf **MyCamera** klicken oder tippen.
-3. Fügen Sie ein **[vertikaler Katalog](control-gallery.md)**-Steuerelement hinzu, und passen Sie dann die Größe des zugehörigen **[Bild](control-image.md)**-Steuerelements, seiner Vorlage und des **Bildkatalog**-Steuerelements so an, dass sie den Bildschirm ausfüllen.
-4. Legen Sie die **[Items](properties-core.md)**-Eigenschaft des **Bildkatalog**-Steuerelements auf den folgenden Ausdruck fest:<br>**MyPix**.
-5. Legen Sie die **[Image](properties-visual.md)**-Eigenschaft des **Bild**-Steuerelements im Katalog auf den folgenden Ausdruck fest:<br>
-   **ThisItem.Url**
+    ```powerapps-dot
+    Camera1.Photo
+    ```
 
-    Das aufgenommene Foto wird im **Bildkatalog**-Steuerelement angezeigt.
-6. Machen Sie beliebig viele Fotos, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
-7. (optional) Legen Sie die **OnSelect**-Eigenschaft des **Bild**-Steuerelements im **Bildkatalog**-Steuerelement auf **Remove(MyPix; ThisItem)** fest, drücken Sie F5, und klicken oder tippen Sie dann auf ein Foto, um dieses zu entfernen.
+    > [!NOTE]
+    > Ersetzen Sie den Kamera-Steuerelement Namen *Camera1* nach Bedarf.
 
-Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)**-Funktion, um die Fotos lokal zu speichern, oder die **[Patch](../functions/function-patch.md)**-Funktion, um eine Datenquelle zu aktualisieren.
+1. Drücken Sie F5, um die app in der Vorschau anzuzeigen.
 
+1. Wählen Sie das Kamera Steuerelement aus, oder tippen Sie auf das Steuerelement.  Das Ergebnis sollte im Image-Steuerelement angezeigt werden.
+
+### <a name="add-pictures-to-an-image-gallery-control"></a>Hinzufügen von Bildern zu einem Bildkatalog-Steuerelement
+
+1. Fügen Sie ein **Kamera** Steuerelement hinzu, benennen Sie es **MyCamera**, und legen Sie dessen [onselect](properties-core.md) -Eigenschaft auf diese Formel fest:
+
+    ```powerapps-dot
+    Collect( MyPix, MyCamera.Photo )
+    ```
+
+    Weitere Informationen:
+
+    - [Vorgehensweise beim Hinzufügen, benennen und Konfigurieren eines Steuer Elements](../add-configure-controls.md)
+    - Erfahren Sie mehr über die [Collect](../functions/function-clear-collect-clearcollect.md) -Funktion oder [andere Funktionen](../formula-reference.md).
+
+1. Drücken Sie F5, und wählen Sie dann ein Bild aus, indem Sie auf **MyCamera**klicken oder tippen.
+
+1. Hinzufügen eines [vertikalen](control-gallery.md) Katalog-Steuer Elements. Und ändern Sie dann die Größe des [Image](control-image.md) -Steuer Elements, seiner Vorlage und des **Bild** Katalog-Steuer Elements, sodass es in den Bildschirm passt.
+
+1. Legen Sie die [Items](properties-core.md) -Eigenschaft des **Bild** Katalog-Steuer Elements auf diese Formel fest:
+ 
+    ```powerapps-dot
+    MyPix
+    ```
+
+1. Legen Sie die [Image](properties-visual.md) -Eigenschaft des **Bild** -Steuer Elements im Katalog auf diese Formel fest:
+
+    ```powerapps-dot   
+    ThisItem.Url
+    ```
+
+    Das Bild, das Sie aufgerufen haben, wird im **Bild** Katalog-Steuerelement angezeigt.
+
+1. Nehmen Sie beliebig viele Bilder an, und kehren Sie dann zum Standard Arbeitsbereich zurück, indem Sie ESC drücken.
+
+1. optionale Legen **Sie die onselect** -Eigenschaft des **Bild** -Steuer Elements im **Bild** Katalog-Steuerelement auf die folgende Formel fest:
+
+    ```powerapps-dot
+    Remove( MyPix, ThisItem )
+    ```
+
+1. Drücken Sie F5, und wählen Sie dann ein Bild aus, um es zu entfernen.
+
+Verwenden Sie die [SaveData](../functions/function-savedata-loaddata.md) -Funktion, um die Bilder lokal zu speichern, oder die [Patch](../functions/function-patch.md) -Funktion, um eine Datenquelle zu aktualisieren.
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
-Das gesamte Steuerelement „Kamera“ zeigt nicht nur den Kamerafeed an, sondern dient auch als Schaltfläche, die Bilder aufnimmt. Daher gelten ähnliche Aspekte im Hinblick auf die Barrierefreiheit wie bei Schaltflächen.
+
+Das Kamera Steuerelement zeigt den Kamera-Feed an und fungiert auch als Schaltfläche, die ein Bild annimmt. Daher gibt es ähnliche Barrierefreiheits Überlegungen wie bei Schaltflächen.
 
 ### <a name="video-alternatives"></a>Videoalternativen
-* Sie sollten eine alternative Eingabemöglichkeit für Benutzer hinzufügen, die eine Sehbehinderung haben. Sie können z.B. die Option **[Bild hinzufügen](control-add-picture.md)** hinzufügen, damit Benutzer ein Bild auf Ihrem Gerät hochladen können.
+
+Sie sollten eine alternative Eingabemöglichkeit für Benutzer hinzufügen, die eine Sehbehinderung haben. Fügen Sie z. b. [Bild hinzu](control-add-picture.md) , damit Benutzer ein Bild von Ihrem Gerät hochladen können.
 
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
-* **[FocusedBorderColor](properties-color-border.md)** und die äußere Farbe
+
+Es muss ein angemessener Farbkontrast zwischen [focusedbordercolor](properties-color-border.md) und der äußeren Farbe bestehen.
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
-* **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
+
+[Accessiblelabel](properties-accessibility.md) muss vorhanden sein.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
-* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
+
+- [TabIndex](properties-accessibility.md) muss 0 (null) oder größer sein, damit Tastatur Benutzer dorthin navigieren können.
+
+- Fokusindikatoren müssen deutlich sichtbar sein. Verwenden Sie [focusedbordercolor](properties-color-border.md) und [focusedborderdicke](properties-color-border.md) , um die Sichtbarkeit von Fokus Indikatoren zu aktualisieren.

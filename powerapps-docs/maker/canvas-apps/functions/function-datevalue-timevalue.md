@@ -1,102 +1,144 @@
 ---
 title: Funktionen „DateValue“, „TimeValue“ und „DateTimeValue“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "DateValue", "TimeValue" und "dateTimeValue" in powerapps
+description: Referenzinformationen, Syntax und Beispiele für die Funktionen "DateValue", "TimeValue" und "dateTimeValue" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/07/2015
+ms.date: 03/16/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aab6d3d00f960d2e0b4ca5cc5b309eee4fb9a7b7
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: fc28b370b36be8d309c292e110d0b927d08c4a11
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731188"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436737"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Funktionen "DateValue", "TimeValue" und "dateTimeValue" in powerapps
-Konvertiert ein Datum und/oder eine Uhrzeit in einer Zeichenfolge in einen Datum/Uhrzeit-Wert
+
+Konvertiert ein Datum, eine Uhrzeit oder beides in einer *Zeichenfolge* in einen *Datums-/Uhrzeitwert* .
 
 ## <a name="description"></a>Beschreibung
-Die **DateValue**-Funktion konvertiert eine Datumzeichenfolge (z.B. „10/01/2014“) in einen Datum/Uhrzeit-Wert.
 
-Die **TimeValue**-Funktion konvertiert eine Uhrzeitzeichenfolge (z.B. „12:15 PM“) in einen Datum/Uhrzeit-Wert.
+- Die **DateValue** -Funktion konvertiert eine *Datums Zeichenfolge* (z. b. "10/01/2014") in einen *Datums-/Uhrzeitwert* .
 
-Die **DateTimeValue**-Funktion konvertiert eine Datums- und Uhrzeitzeichenfolge (z.B. „January 10, 2013 12:13 AM“) in einen Datum/Uhrzeit-Wert.
+- Die **TimeValue** -Funktion konvertiert eine *Zeit Zeichenfolge* (z. b. "12:15 pm") in einen *Datums-/Uhrzeitwert* .
 
-Die **DateValue**-Funktion ignoriert Zeitinformationen in der Datumzeichenfolge, und die **TimeValue**-Funktion ignoriert Datuminformationen in der Uhrzeitzeichenfolge.
+- Die **dateTimeValue** -Funktion konvertiert eine *Datums-und Uhrzeit Zeichenfolge* (z. b. "January 10, 2013 12:13 am") in einen *Datums-/Uhrzeitwert* .
 
-Standardmäßig wird die Sprache des aktuellen Benutzers verwendet; Sie können dies außer Kraft setzen, um sicherzustellen, dass Zeichenfolgen ordnungsgemäß interpretiert werden. Beispielsweise wird „10/1/1920“ als der 1. Oktober in „en“ und als 10. Januar in „fr“ interpretiert.
+Die **DateValue** -Funktion ignoriert alle Zeit Informationen in der Datums Zeichenfolge, und die **TimeValue** -Funktion ignoriert alle Datumsinformationen in der Zeit Zeichenfolge.
+
+> [!NOTE]
+> Die Funktionen DateValue, TimeValue und dateTimeValue verwenden standardmäßig die Sprache aus den Einstellungen des aktuellen Benutzers. Sie können es überschreiben, um sicherzustellen, dass Zeichen folgen ordnungsgemäß interpretiert werden. Beispielsweise wird "10/1/1920" als *1<sup>.</sup> Oktober* in "*en*" und als 10. *Januar in<sup>th</sup>*  "*fr*" interpretiert.
 
 Datumsangaben müssen eines der folgenden Formate aufweisen:
 
-* MM/TT/JJJJ
-* TT/MM/JJJJ
-* TT Mon JJJJ
-* Monat DD, YYYY
+- TT.MM.JJJJ
+- TT/MM/JJJJ
+- TT Mon JJJJ
+- Monat TT, JJJJ
 
-Weitere Informationen zum Konvertieren der numerischen Komponenten Datum, Monat und Jahr, und Stunde, Minute und Sekunde finden Sie unter den **[Date](function-date-time.md)** - und **[Time](function-date-time.md)** -Funktionen.
+Zum Konvertieren aus numerischen Date-, month-und Year-Komponenten lesen Sie [Date](function-date-time.md). <br>
+Zum Konvertieren von numerischen Stunden-, Minuten-und zweiten Komponenten lesen Sie die [Zeit](function-date-time.md).
 
-Weitere Informationen finden Sie unter [Working with dates and times (Arbeiten mit Datums- und Uhrzeitangaben)](../show-text-dates-times.md).
+Weitere Informationen finden Sie unter:
 
-Informationen zum Konvertieren von Zahlen finden Sie unter der **[Value](function-value.md)** -Funktion.
+- [Arbeiten mit Datum und Uhrzeit](../show-text-dates-times.md).
+- [Datums-/Uhrzeit-und Datentypen](data-types.md#date-time-and-datetime).
 
 ## <a name="syntax"></a>Syntax
-**DateValue**( *String* [; *Language* ])<br>**DateTimeValue**( *String* [; *Language* ])<br>**TimeValue**( *String* [; *Language* ])
 
-* *Zeichenfolge*: erforderlich.  Eine Textzeichenfolge, die einen Datum-, Uhrzeit- oder einen Datum/Uhrzeit-Wert enthält.
-* *Sprache*: optional.  Eine Sprachzeichenfolge, wie man sie durch die ersten beiden Zeichen des Rückgabewertes der **[Language](function-language.md)** -Funktion erhält.  Wenn nicht anders angegebenen, wird die Sprache des Clients des aktuellen Benutzers verwendet.  
+**DateValue**( *String* [, *Language* ])<br>
+**DateTimeValue**( *String* [, *Language* ])<br>
+**TimeValue**( *String* [, *Language* ])
+
+* *Zeichenfolge*: erforderlich. Eine Textzeichenfolge, die einen Datum-, Uhrzeit- oder einen Datum/Uhrzeit-Wert enthält.
+* *Sprache*: optional. Eine sprach Zeichenfolge, z. b., wird von den ersten zwei Zeichen aus der [Language](function-language.md) -Funktion zurückgegeben.  Wenn keine Angabe erfolgt, wird die Sprache der Einstellungen des aktuellen Benutzers verwendet.  
 
 ## <a name="examples"></a>Beispiele
-### <a name="datevalue"></a>DateValue
-Wenn Sie **10/11/2014** in ein Texteingabe-Steuerelement mit dem Namen **StartDate** eingegeben haben, und Sie dann die **[Text](../controls/properties-core.md)** -Eigenschaft einer Bezeichnung für diese Funktion festgelegt haben, gibt es mehrere Möglichkeiten:
 
-* **Text(DateValue(Startdate.Text); DateTimeFormat.LongDate)**
-  
-    Die Bezeichnung zeigt **Saturday, October 11, 2014** an, wenn das Gebietsschema Ihres Computers auf **en** festgelegt wurde.
+### <a name="datevalue"></a>DateValue
+
+Wenn Sie **10/11/2014** in ein Texteingabe-Steuerelement mit dem Namen **StartDate**eingeben, und legen Sie dann die [Text](../controls/properties-core.md) -Eigenschaft einer Bezeichnung auf die folgenden Formeln fest:
+
+- Konvertiert ein Datum aus einer Zeichenfolge in das Gebiets Schema des Benutzers und zeigt das Ergebnis als langes Datum an.
+
+    ```powerapps-dot
+    Text( DateValue( Startdate.Text ), DateTimeFormat.LongDate )
+    ```
+
+    Auf dem Gebiets Schema " **en** " wird die Bezeichnung **Samstag, 11. Oktober 2014**angezeigt.
   
     > [!NOTE]
-  > Sie können mehrere Optionen mit dem **DateTimeFormat**-Parameter verwenden, allerdings nicht **LongDateTime**. Geben Sie den Parameter, unmittelbar gefolgt von einem Ausrufezeichen, in das Funktionsfeld ein, um eine Liste dieser Optionen anzuzeigen.
-* **Text(DateValue(Startdate.Text; "fr"); DateTimeFormat.LongDate)**
-  
-    Die Bezeichnung zeigt **Monday, November 10, 2014** an.
+    > Im Vergleich zu **longdatetime**können Sie mehrere Optionen mit **DateTimeFormat** verwenden. Zum Anzeigen einer Liste von Optionen geben Sie den Parameter ein, gefolgt von einem Ausrufezeichen ( **!** ) in der Bearbeitungs Leiste.
 
-Wenn Sie dasselbe für **October 20, 2014** durchgeführt haben:
+- Konvertieren Sie das Datum aus einer Zeichenfolge im französischen Gebiets Schema, und zeigen Sie das Ergebnis als langes Datum an. In diesem Beispiel werden die Monate und der Tag des Monats anders als Englisch interpretiert.
 
-* **DateDiff(DateValue(Startdate.Text); Today())**
+    ```powerapps-dot
+    Text( DateValue( Startdate.Text, "fr" ), DateTimeFormat.LongDate )
+    ```
   
-    Wenn die Sprache Ihres Computers auf **en** festgelegt wurde, zeigt die Bezeichnung **9** an, was die Anzahl der Tage zwischen dem 11. und 20. Oktober ist. Die **[DateDiff](function-dateadd-datediff.md)** -Funktion kann auch die Differenz in Monaten, Quartalen oder Jahren angezeigt.
+    Auf dem Gebiets Schema " **en** " wird die Bezeichnung **Montag, 10. November 2014**angezeigt.
+
+Wenn Sie stattdessen den **20. Oktober 2014 eingegeben haben** :
+
+- Konvertieren Sie ein Datum aus einer Zeichenfolge in das Gebiets Schema des Benutzers, und berechnen Sie die Differenz zwischen zwei Tagen (in Tagen).
+
+    ```powerapps-dot
+    DateDiff( DateValue( Startdate.Text ), Today() )
+    ```
+  
+    Auf dem Gebiets Schema " **en** " wird die Bezeichnung **9**angezeigt, die die Anzahl der Tage zwischen dem 11. und dem 20. Oktober angibt. Die [DateDiff](function-dateadd-datediff.md) -Funktion kann auch den Unterschied in Monaten, Quartalen oder Jahren anzeigen.
 
 ### <a name="datetimevalue"></a>DateTimeValue
-Wenn Sie **10/11/2014 1:50:24.765 PM** in ein Texteingabe-Steuerelement mit dem Namen **Start** eingegeben haben, und Sie anschließend die **[Text](../controls/properties-core.md)** -Eigenschaft einer Bezeichnung auf folgende Funktion festgelegt haben, gibt es mehrere Möglichkeiten:
 
-* **Text(DateTimeValue(Start.Text); DateTimeFormat.LongDateTime)**
+Wenn Sie **10/11/2014 1:50:24.765 pm** in ein Texteingabe-Steuerelement mit dem Namen **Start**eingegeben haben, legen Sie die [Text](../controls/properties-core.md) -Eigenschaft einer Bezeichnung auf die folgende Formel fest:
+
+- Konvertiert eine Datums-und Uhrzeit Zeichenfolge im aktuellen Gebiets Schema.
+ 
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text ), DateTimeFormat.LongDateTime )
+    ```    
+    
+    Auf dem Gebiets Schema " **en** " wird die Bezeichnung **Samstag, 11. Oktober 2014 1:50:24 Uhr**angezeigt.
   
-    Die Bezeichnung zeigt **Saturday, October 11, 2014 1:50:24 PM**, wenn das Gebietsschema Ihres Computers auf „en“ konfiguriert wurde.
+  > [!NOTE]
+  > Im Vergleich zu **longdatetime**können Sie mehrere Optionen mit **DateTimeFormat** verwenden. Zum Anzeigen einer Liste von Optionen geben Sie den Parameter ein, gefolgt von einem Ausrufezeichen ( **!** ) in der Bearbeitungs Leiste.
+
+- Konvertieren Sie eine Datums-und Uhrzeit Zeichenfolge in das französische Gebiets Schema. Monat und Tag des Monats werden unterschiedlich interpretiert.
+
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text, "fr"), DateTimeFormat.LongDateTime )
+    ```
   
-    > [!NOTE]
-  > Sie können mehrere Optionen mit dem **DateTimeFormat**-Parameter verwenden, allerdings nicht **LongDateTime**. Geben Sie den Parameter, unmittelbar gefolgt von einem Ausrufezeichen, in das Funktionsfeld ein, um eine Liste dieser Optionen anzuzeigen.
-* **Text(DateTimeValue(Start.Text; "fr"); DateTimeFormat.LongDateTime)**
+    Auf dem Gebiets Schema " **en** " ist die Bezeichnung **Montag, 10. November 2014 1:50:24 Uhr**.
+
+- Konvertieren Sie eine Datums-und Uhrzeit Zeichenfolge in das Gebiets Schema des Benutzers, und zeigen Sie das Ergebnis mit einer Sekundenbruchteile an.
+
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text ), "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
+    ```
   
-    Die Bezeichnung zeigt **Monday, November 10, 2014 1:50:24 PM** an.
-* **Text(DateTimeValue(Start.Text); "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM")**
+    Auf dem Gebiets Schema " **en** " wird die Bezeichnung **Samstag, 11. Oktober, 2014 01:50:24.765 Uhr**angezeigt.
   
-    Die Bezeichnung zeigt **Saturday, October 11, 2014 01:50:24:765 PM**, wenn das Gebietsschema Ihres Computers auf **en** festgelegt ist.
-  
-    Als Alternative können Sie **hh:mm:ss.f** oder **hh:mm:ss.ff** angeben, um die Zeit auf das nächste Zehntel oder Hundertstel einer Sekunde zu runden.
+    Als Alternative können Sie **hh: mm: SS. f** oder **hh: mm: SS. FF** angeben, um die Uhrzeit auf die nächst<sup>gelegene 10.</sup> <sup>oder 100. Sekunde einer Sekunde</sup> zu runden.
 
 ### <a name="timevalue"></a>TimeValue
-Benennen Sie ein Texteingabe-Steuerelement **FinishedAt**, und legen Sie die **[Text](../controls/properties-core.md)** -Eigenschaft einer Bezeichnung auf folgende Funktion fest:
 
-**If(TimeValue(FinishedAt.Text)<TimeValue("5:00:00.000 PM"); "You made it!"; "Too late!")**
+Benennen Sie ein Texteingabe-Steuerelement **finishedat**, und legen Sie die [Text](../controls/properties-core.md) -Eigenschaft einer Bezeichnung auf diese Formel fest:
 
-* Wenn Sie **4:59:59.999 PM** in das **FinishedAt**-Steuerelement eingegeben haben, zeigt die Bezeichnung „You made it!“ (Geschafft!) an
-* Wenn Sie **5:00:00.000 PM** in das **FinishedAt**-Steuerelement eingeben, zeigt die Bezeichnung „Too late!“ (Zu spät!) an
+```powerapps-dot
+If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ), 
+    "You made it!", 
+    "Too late!"
+)
+```
 
+- Wenn Sie im **finishedat** -Steuerelement **4:59:59.999 PM** eingeben, zeigt die Bezeichnung "*Sie haben Sie!* "
+- Wenn Sie im **finishedat** -Steuerelement **5:00:00.000 pm** eingeben, zeigt die Bezeichnung "*zu spät!* " an.
