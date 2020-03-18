@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/10/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91da88baa13204f8538ba3eb673a515e539f7fa7
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 58e64d275a7d1380cd580a86f9899053b140b99e
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282500"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970937"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse 
 
@@ -63,7 +63,7 @@ Der schnellste Weg, eine Aktivität hinzuzufügen, ist das Verwenden der Verknü
 
 ## <a name="add-an-activity-from-within-a-record"></a>Hinzufügen einer Aktivität aus einem Datensatz
 
-Sie können auch einen Datensatz öffnen und dann eine Aktivität zu diesem hinzufügen. 
+Sie können auch einen Datensatz öffnen und diesem dann eine Aktivität hinzufügen. 
 
    > [!div class="mx-imgBorder"]
    > ![Verknüpfung zum Hinzufügen einer Aktivität in Power Apps](media/add_new_activity_from_record.gif "Verknüpfung zum Hinzufügen einer Aktivität in Power Apps") 
@@ -205,6 +205,9 @@ Sie können Aktivitäten, Notizen oder Beiträge auf der Pinnwand „Zeitachse�
 
 - Klicken Sie im Bereich **Zeitachse** auf die Option **Filterbereich öffnen**, und wählen Sie aus, welche Filtermöglichkeit Sie auf die Aktivitäten anwenden möchten.
 
+ > [!Note]
+ > Wenn Sie im Browser herauszoomen, werden der Filterbereich und die Zeitachsen-Datensätze in zwei Spalten angezeigt. Wenn die Zeitachse in mehreren Spalten angezeigt wird, wird der Filterbereich neben den Zeitachsen-Datensätzen als Spalte angezeigt. Weitere Informationen finden Sie unter [Filterbereich wird im Zwei-Spalten-Modus angezeigt](../maker/model-driven-apps/faqs-timeline-control.md#why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared). 
+
   > [!div class="mx-imgBorder"]
   > ![Filterbereich auf der Zeitachse](media/timeline-filter2.png "Filterbereich in der Zeitachse") ![Filterbereich auf der Zeitachse](media/timeline-filter5.png "Filterbereich in der Zeitachse")
 
@@ -214,7 +217,7 @@ Sie können Aktivitäten direkt auf der Zeitachse verwalten, z.B. eine Aktivitä
 
   ![Optionen auf der Zeitachsen-Befehlsleiste](media/timeline-options1.png "Optionen für die Zeitachsen-Befehlsleiste") ![Optionen auf der Zeitachsen-Befehlsleiste](media/timeline-options2.png "Optionen für die Zeitachsen-Befehlsleiste") ![Optionen auf der Zeitachsen-Befehlsleiste](media/timeline-options3.png "Optionen für die Zeitachsen-Befehlsleiste") ![Optionen auf der Zeitachsen-Befehlsleiste](media/timeline-options4.png "Optionen für die Zeitachsen-Befehlsleiste")
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Einrichten des Zeitachsenabschnitts (Steuerelement)](../maker/model-driven-apps/set-up-timeline-control.md)
 

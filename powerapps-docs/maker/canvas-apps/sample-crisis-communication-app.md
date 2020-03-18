@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60d8cf270c7706de8a82bc7fe3ee66787404264a
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: ce3974f399948f1f9ccd125c0b9727f51abc644b
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79209399"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431852"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Einrichten und Erlernen der Beispiel Vorlage für die Krisenkommunikation in Power apps
 
@@ -591,7 +591,7 @@ Die APP verwendet einen Flow, um Benachrichtigungen an Endbenutzer zu senden, we
 
     ![Erstellen einer neuen Verbindung](media/sample-crisis-communication-app/create-connection.png)
 
-1. Suchen Sie nach dem Namen der Verbindung. Beispiel: **powerapps-Benachrichtigung (Vorschau)**:
+1. Suchen Sie nach dem Namen der Verbindung. Beispiel: **powerapps-Benachrichtigung (Vorschau)** :
 
     ![Benachrichtigungen](media/sample-crisis-communication-app/notifications.png)
 
@@ -798,7 +798,12 @@ So fügen Sie den Power BI Bericht hinzu:
 
     Der Power automatisierter bot-Connector für Teams und der pushbenachrichtigungsconnector sind zurzeit nicht für gcc verfügbar. Verwenden Sie die Option e-Mail, um Benutzer über interne News Updates für gcc zu benachrichtigen.
 
-***Haftungsausschluss:*** *diese APP ist ein Beispiel und kann mit Microsoft powerapps und Teams für die Verbreitung von Referenzinformationen verwendet werden. Diese APP ist nicht für das medizinische Gerät, den klinischen Support, das Diagnosetool oder andere Technologien vorgesehen, die bei der Diagnose, beim Schutz, bei der Entschärfung, bei der Behandlung oder bei der Verhinderung von Krankheiten oder anderen Bedingungen verwendet werden sollen, und von Microsoft wird keine Lizenz oder das Recht erteilt, diese APP zu diesem Zweck zu verwenden.  Diese APP ist nicht als Ersatz für professionelle medizinische Beratung, Diagnose, Behandlung oder Beurteilung gedacht und sollte nicht als solche verwendet werden.  Der Kunde hat das alleinige Risiko und die Verantwortung für die Verwendung dieser app.  Microsoft garantiert nicht, dass die APP oder die darin enthaltenen Materialien zu medizinischen Zwecken ausreichen oder die Integritäts-oder medizinischen Anforderungen beliebiger Personen erfüllen.*  
+## <a name="issues--feedback"></a>Probleme & Feedback
+
+- **Feedback** zur *Beispiel Vorlage für die Krisenkommunikation*finden Sie unter [aka.ms/Crisis-Communication-Feedback](https://aka.ms/crisis-communication-feedback).
+- Wenn Sie **ein Problem** mit der *App zur Krisenkommunikation*melden möchten, gehen Sie zu [aka.ms/Crisis-Communication-Issues](https://aka.ms/crisis-communication-issues).
+
+***Haftungsausschluss:*** *diese APP ist ein Beispiel und kann mit Microsoft powerapps und Teams für die Verbreitung von Referenzinformationen verwendet werden. Diese APP ist nicht für das medizinische Gerät, den klinischen Support, das Diagnosetool oder andere Technologien vorgesehen, die bei der Diagnose, beim Schutz, bei der Entschärfung, bei der Behandlung oder bei der Verhinderung von Krankheiten oder anderen Bedingungen verwendet werden sollen, und von Microsoft wird keine Lizenz oder das Recht erteilt, diese APP zu diesem Zweck zu verwenden.  Diese APP ist nicht als Ersatz für professionelle medizinische Beratung, Diagnose, Behandlung oder Beurteilung gedacht und sollte nicht als solche verwendet werden.  Der Kunde hat das alleinige Risiko und die Verantwortung für die Verwendung dieser app.  Microsoft garantiert nicht, dass die APP oder die darin enthaltenen Materialien zu medizinischen Zwecken ausreichen oder die Integritäts-oder medizinischen Anforderungen beliebiger Personen erfüllen.* 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
