@@ -547,7 +547,7 @@ Vervollständigen Sie alle Felder, wie in der folgenden Tabelle gezeigt, und wä
 |-|-|-|
 | Vollständiger Name | FullName | Der Name des Kontakts. |
 | E-Mail | E-Mail | Die für den Kontakt angezeigte e-Mail-Adresse. |
-| Land | Land | Das Land für den Kontakt. Dieses Feld wird verwendet, um die Kontakte zu gruppieren. Sie können andere Werte verwenden, um Kontakte nach zu gruppieren, wenn Länder für Sie nicht sinnvoll sind. |
+| Land | Land | Das Land/die Region für den Kontakt. Dieses Feld wird verwendet, um die Kontakte zu gruppieren. Sie können andere Werte verwenden, um Kontakte nach zu gruppieren, wenn Länder für Sie nicht sinnvoll sind. |
 | Comments | Comments | Zeigt zusätzliche Informationen über den Kontakt an. Es ist hilfreich zu beschreiben, wann Sie sich an diesen Kontakt wenden müssen. |
 | Als veraltet markiert | Als veraltet markiert | Verwenden Sie, um einen vorhandenen Notfallkontakt auszublenden. |
 
