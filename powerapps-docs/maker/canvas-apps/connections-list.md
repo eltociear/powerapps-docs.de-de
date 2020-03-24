@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 00273fefd24b9e0f76ed284b2f9ab526fb7706d6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: c0710f36b5c49037d5104ab1085d1c990290b967
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211846"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122884"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Übersicht über Canvas-App-Connectors für Power apps
 Die Daten sind der Kern der meisten apps, einschließlich derjenigen, die Sie in Power Apps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. Powerapps verfügt über Connectors für viele beliebte Dienste und lokale Datenquellen, einschließlich SharePoint, SQL Server, Office 365, Salesforce und Twitter. Informationen zu den ersten Schritten beim Hinzufügen von Daten zu einer Canvas-App finden Sie unter [Hinzufügen einer Datenverbindung in powerapps](add-data-connection.md).
@@ -74,7 +74,7 @@ Diese Tabelle enthält Links zu weiteren Informationen zu den am häufigsten ver
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-* * Gilt für Azure-BLOB, Box, Dropbox, Google Drive, onedrive und onedrive for Business
+\* * Gilt für Azure-BLOB, Box, Dropbox, Google Drive, onedrive und onedrive for Business
 
 ## <a name="standard-and-custom-connectors"></a>Standardmäßige und benutzerdefinierte Connectors
 Powerapps bietet *Standardconnectors* für viele häufig verwendete Datenquellen. Wenn Power Apps über einen Standardconnector für den Typ der Datenquelle verfügt, den Sie verwenden möchten, sollten Sie diesen Connector verwenden. Wenn Sie eine Verbindung mit anderen Arten von Datenquellen herstellen möchten, z.B. mit einem von Ihnen erstellten Dienst, finden Sie weitere Informationen unter [Registrieren und Verwenden von benutzerdefinierten Connectors](../canvas-apps/register-custom-api.md).
@@ -102,4 +102,4 @@ Diese Art von Verbindung ist nicht sehr sicher, da Sie nicht von der Authentifiz
 
 ### <a name="windows-authentication"></a>Windows-Authentifizierung
 
-Diese Art von Verbindung ist nicht sehr sicher, da Sie sich auch nicht auf die Authentifizierung durch Endbenutzer verlassen muss.  Wenn Sie eine **Verbindung mit einer**lokalen Datenquelle herstellen müssen, verwenden Sie die Windows-Authentifizierung.  Ein Beispiel für diese Art von Verbindung ist ein lokaler Server, der über eine SQL Server verfügt.  Die Verbindung muss über ein Gateway durchlaufen werden.  Da es ein Gateway durchläuft, hat der Connector Zugriff auf alle Daten in der Datenquelle. Daher stehen alle Informationen, auf die Sie mit den von Ihnen bereitgestellten Windows-Anmelde Informationen zugreifen können, dem Connector zur Verfügung. Nachdem die Anwendung veröffentlicht wurde, wird die Verbindung auch veröffentlicht und für Ihre Benutzer verfügbar.   Dies bedeutet, dass Ihre Endbenutzer auch Anwendungen erstellen können, die dieselbe Verbindung verwenden, und auf die Daten auf diesem Computer zugreifen.  Verbindungen mit der Datenquelle werden auch **implizit** für die Benutzer freigegeben, für die die APP freigegeben ist.  Diese Art von Verbindung ist möglicherweise gültig, wenn Ihre Datenquelle nur auf einem lokalen Server gespeichert ist und die Daten auf dieser Quelle frei freiwillig sind.
+Diese Art von Verbindung ist nicht sehr sicher, da Sie nicht auf die Authentifizierung durch Endbenutzer angewiesen ist. Verwenden Sie die Windows-Authentifizierung, wenn eine **Verbindung mit einer**lokalen Datenquelle hergestellt werden muss. Ein Beispiel für diese Art von Verbindung ist ein lokaler Server, der über eine SQL Server verfügt. Die Verbindung muss über ein Gateway durchlaufen werden. Da es ein Gateway durchläuft, hat der Connector Zugriff auf alle Daten in der Datenquelle. Daher stehen alle Informationen, auf die Sie mit den von Ihnen bereitgestellten Windows-Anmelde Informationen zugreifen können, dem Connector zur Verfügung. Nachdem die Anwendung veröffentlicht wurde, wird die Verbindung auch veröffentlicht und für Ihre Benutzer verfügbar.  Dies bedeutet, dass Ihre Endbenutzer auch Anwendungen erstellen können, die dieselbe Verbindung verwenden, und auf die Daten auf diesem Computer zugreifen. Verbindungen mit der Datenquelle werden auch **implizit** für die Benutzer freigegeben, für die die APP freigegeben ist. Diese Art von Verbindung ist möglicherweise gültig, wenn Ihre Datenquelle nur auf einem lokalen Server gespeichert ist und die Daten auf dieser Quelle frei freiwillig sind.

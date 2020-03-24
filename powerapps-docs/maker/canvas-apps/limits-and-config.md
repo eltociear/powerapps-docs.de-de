@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/30/2019
+ms.date: 03/19/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 18abbc91426c74b48aefd51f1867d8bff806d718
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 7e434de24af417b5871c762d1aecd64cc41c5c72
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211501"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122761"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 Dieses Thema enthält die Anforderungen an Geräteplattform und Webbrowser sowie Grenzwerte und Konfigurationswerte für Canvas-apps.
@@ -92,6 +92,7 @@ In dieser Liste werden alle Dienste identifiziert, mit denen Power apps Studio k
 
 | Domäne(n) | Protokolle | Verwendung |
 | --- | --- | --- |
+| api.bap.microsoft.com<br/>api.businessappdiscovery.microsoft.com | https | Verwaltung von Umgebungs Berechtigungen|
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |Laufzeit der Connector/APIs |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
@@ -102,9 +103,10 @@ In dieser Liste werden alle Dienste identifiziert, mit denen Power apps Studio k
 | \*. azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
 | \*. BLOB.Core.Windows.net |https | Blobspeicher |
 | \*. Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
-| *. Dynamics.com | https | Common Data Service |
+| \*. Dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetrie |
-| Localhost | https | Powerapps Mobile
+| Localhost | https | Powerapps Mobile|
+
 
 > [!NOTE]
 > Wenn Sie ein VPN verwenden, muss es so konfiguriert werden, dass localhost von Tunneln für Power Apps Mobile ausgeschlossen wird.

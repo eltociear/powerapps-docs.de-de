@@ -7,45 +7,62 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 01/31/2019
+ms.date: 03/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 11208b68c3ec63f3a762771844adaaf7cd35aec1
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: c90f0be8d1f8f62afd3fdec1701b98b434f74387
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78265303"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122825"
 ---
 # <a name="savedata-and-loaddata-functions-in-power-apps"></a>Funktionen "SaveData" und "LoadData" in powerapps
-Speichert und lädt eine [Sammlung](../working-with-data-sources.md#collections) von einem lokalen Gerät erneut.
+Speichert und lädt eine [Sammlung](../working-with-data-sources.md#collections) von einem lokalen Gerät.
 
 ## <a name="description"></a>Beschreibung
 Die Funktion **SaveData** speichert eine Sammlung für die spätere Verwendung unter einem Namen.  
 
-Die Funktion **LoadData** lädt eine Sammlung über den Namen, über den diese zuvor mit **SaveData** gespeichert wurde, erneut. Sie können diese Funktion nicht dazu verwenden, eine Sammlung aus einer anderen Quelle zu laden.  
+Die **LoadData** -Funktion lädt eine Auflistung anhand des Namens, der zuvor mit **SaveData**gespeichert wurde, erneut. Sie können diese Funktion nicht dazu verwenden, eine Sammlung aus einer anderen Quelle zu laden.  
 
-Verwenden Sie diese Funktionen, um die Leistung beim APP-Start zu verbessern, indem Sie Daten in der **[app. OnStart](../controls/control-screen.md#additional-properties)** -Formel bei einer ersten Ausführung zwischenspeichern und dann bei nachfolgenden Ausführungen den lokalen Cache erneut laden. Sie können diese Funktionen auch verwenden, um Ihrer APP [einfache Offline Funktionen](../offline-apps.md) hinzuzufügen.
+Verwenden Sie diese Funktionen, um die APP-Startleistung zu verbessern:
 
-Diese Funktionen können nicht in einem Browser verwendet werden, wenn Sie die app in powerapps Studio erstellen oder wenn Sie die APP im Web Player ausführen. Um Ihre APP zu testen, führen Sie Sie in powerapps Mobile auf einem iPhone-oder Android-Gerät aus.
+- Zwischenspeichern von Daten in der **[app. OnStart](../controls/control-screen.md#additional-properties)** -Formel bei einer ersten Testlauf.
+- Der lokale Cache wird bei den nächsten Ausführungen erneut geladen.
 
-Diese Funktionen sind durch die Menge des verfügbaren APP-Speichers beschränkt, da Sie für eine Auflistung im Arbeitsspeicher ausgeführt werden. Der verfügbare Arbeitsspeicher kann je nach Gerät und Betriebssystem, dem vom Power apps-Player verwendeten Arbeitsspeicher und der Komplexität der app in Bezug auf Bildschirme und Steuerelemente variieren. Wenn Sie mehr als ein paar Megabyte Daten speichern, testen Sie Ihre APP mit den erwarteten Szenarien auf den Geräten, auf denen die app ausgeführt werden soll. Sie sollten im Allgemeinen zwischen 30 und 70 Megabyte verfügbarem Arbeitsspeicher erwarten.  
+Sie können diese Funktionen auch verwenden, um Ihrer APP [einfache Offline Funktionen](../offline-apps.md) hinzuzufügen.
 
-Diese Funktionen hängen davon ab, dass die Auflistung implizit definiert ist, wenn ein **[Collect](function-clear-collect-clearcollect.md)** -oder **[clearcollect](function-clear-collect-clearcollect.md)** -Funktions aufrufin einer beliebigen Formel in der app vorhanden ist.  Sie müssen " **Collect** " oder " **clearcollect** " nicht aufrufen, um Daten in die Auflistung zu laden, um Sie zu definieren, was bei der Verwendung von " **LoadData** " nach einem vorherigen " **SaveData**" üblich ist.  Alles, was erforderlich ist, besteht darin, dass diese Funktionen in einer Formel vorhanden sind, um die Struktur der Auflistung implizit zu definieren.  Weitere Informationen finden Sie unter [Erstellen und Entfernen von Variablen](../working-with-variables.md#create-and-remove-variables).
+Sie können diese Funktionen nicht in einem Browser verwenden, wenn:
+
+- Erstellen der app in powerapps Studio.
+- Ausführen der APP im Web Player. 
+
+Um Ihre APP zu testen, führen Sie Sie in powerapps Mobile auf einem iPhone-oder Android-Gerät aus.
+
+Diese Funktionen werden durch die Menge an verfügbarem App-Arbeitsspeicher begrenzt, wenn Sie für eine Auflistung im Arbeitsspeicher ausgeführt werden. Der verfügbare Arbeitsspeicher kann abhängig von folgenden Faktoren variieren: 
+
+- Das Gerät und das Betriebssystem.
+- Der Arbeitsspeicher, den der Power apps-Player verwendet.
+- Komplexität der APP mit Bildschirmen und Steuerelementen. 
+
+Testen Sie Ihre APP mit erwarteten Szenarien auf dem Typ der Geräte, die bei der Speicherung großer Daten von der APP erwartet werden. Erwarten Sie in der Regel zwischen 30 MB und 70 MB verfügbarem Arbeitsspeicher.
+
+Diese Funktionen hängen davon ab, dass die Sammlung implizit mit **[Collect](function-clear-collect-clearcollect.md)** oder **[clearcollect](function-clear-collect-clearcollect.md)** definiert wird. Sie müssen **Collect** oder **clearcollect** nicht aufrufen, um Daten in die Auflistung zu laden, um Sie zu definieren. Bei der Verwendung von **LoadData** nach einem vorherigen **SaveData**-Wert ist dies häufig der Fall.  Alles, was erforderlich ist, besteht darin, dass diese Funktionen in einer Formel vorhanden sind, um die Struktur der Auflistung implizit zu definieren.  Weitere Informationen finden Sie unter [Erstellen und Entfernen von Variablen](../working-with-variables.md#create-and-remove-variables).
 
 Die geladenen Daten werden an die Auflistung angefügt. Verwenden Sie die **[Clear](function-clear-collect-clearcollect.md)** -Funktion vor dem Aufrufen von **LoadData** , wenn Sie mit einer leeren Auflistung beginnen möchten.
 
-Die integrierten App-Sandbox-Funktionen des Geräts werden zum isolieren gespeicherter Daten von anderen apps verwendet.  Das Gerät kann die Daten auch verschlüsseln, oder Sie können ein Verwaltungs Tool für mobile Geräte wie [Microsoft InTune](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/microsoft-intune) verwenden, um Sie bei Bedarf zu verschlüsseln.
+Die integrierten App-Sandbox-Funktionen des Geräts werden zum isolieren gespeicherter Daten von anderen apps verwendet. 
+
+Das Gerät kann auch die Daten verschlüsseln. oder Sie können ein Verwaltungs Tool für mobile Geräte wie [Microsoft InTune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune)verwenden.
 
 ## <a name="syntax"></a>Syntax
-**SaveData**( *Sammlung*; *Name* )<br>**LoadData**( *Sammlung*; *Name* [; *NichtVorhandeneDateiIgnorieren* ])
+**SaveData**( *Sammlung*, *Name* )<br>**LoadData**( *Sammlung*, *Name* [, *NichtVorhandeneDateiIgnorieren* ])
 
 * *Sammlung*: Erforderlich.  Die zu speichernde oder zu ladende Sammlung.
-* *Name*: Erforderlich.  Der Name des Speichers. Sie müssen den gleichen Namen verwenden und den gleichen Satz von Daten laden. Der Namespace wird nicht für andere Apps oder Benutzer freigegeben.
+* *Name*: Erforderlich.  Der Name des Speichers. Der Name muss identisch sein, um denselben Datensatz zu speichern und zu laden. Der Namespace wird nicht für andere Apps oder Benutzer freigegeben.
 * *NichtVorhandeneDateiIgnorieren*: optional. Ein boolescher Wert, der angibt, was geschehen soll, wenn die Datei nicht bereits vorhanden ist.  Verwenden Sie *false* (Standard), um einen Fehler zurückzugeben, und *true* , um den Fehler zu unterdrücken.   
 
 ## <a name="examples"></a>Beispiele
@@ -57,9 +74,9 @@ Die integrierten App-Sandbox-Funktionen des Geräts werden zum isolieren gespeic
 
 ### <a name="simple-offline-example"></a>Einfaches Beispiel für Offline
 
-In diesem sehr einfachen Beispiel werden die Namen und Bilder täglicher Elemente im Offline Modus erfasst und gespeichert.  Sie speichert die Informationen zur späteren Verwendung im lokalen Speicher des Geräts, sodass die app geschlossen oder das Gerät neu gestartet werden kann, ohne dass Daten verloren gehen.  
+Im folgenden einfachen Beispiel werden die Namen und Bilder täglicher Elemente im Offline Modus erfasst und gespeichert.  Sie speichert die Informationen zur späteren Verwendung im lokalen Speicher des Geräts. Dadurch kann die app geschlossen oder das Gerät neu gestartet werden, ohne dass Daten verloren gehen.  
 
-Sie müssen über ein Gerät verfügen, um dieses Beispiel zu bearbeiten, da es die **LoadData** -und **SaveData** -Funktionen verwendet, die nicht in einem Webbrowser ausgeführt werden.
+Sie müssen über ein Gerät verfügen, um dieses Beispiel zu bearbeiten, da es die **LoadData** -und **SaveData** -Funktionen verwendet, die in einem Webbrowser nicht funktionieren.
 
 1. Erstellen Sie eine leere Canvas-App mit einem Tablet-Layout.  Weitere Informationen finden Sie unter [Erstellen einer App aus einer Vorlage](../get-started-test-drive.md) und auswählen des **Tablet-Layouts** unter **leere App**.  
 
@@ -69,35 +86,35 @@ Sie müssen über ein Gerät verfügen, um dieses Beispiel zu bearbeiten, da es 
 
 1. Hinzufügen eines [**Schalt**](../controls/control-button.md) Flächen-Steuer Elements
 
-2. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um den Schaltflächen Text zum **Hinzufügen** von Elementen zu ändern (oder die **Text** -Eigenschaft
+2. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um den Text der Schaltfläche zum **Hinzufügen eines Elements** zu ändern (oder die **Text** -Eigenschaft
 
-3. Legen Sie die **onseelct** -Eigenschaft des Schaltflächen-Steuer Elements auf diese Formel fest, mit der der Auflistung ein Element hinzugefügt wird:
-    ```powerapps-comma
-    Collect( MyItems; { Item: TextInput1.Text; Picture: Camera1.Photo } )
+3. Legen **Sie die onselect** -Eigenschaft des Schaltflächen-Steuer Elements auf diese Formel fest, mit der der Auflistung ein Element hinzugefügt wird:
+    ```powerapps-dot
+    Collect( MyItems, { Item: TextInput1.Text, Picture: Camera1.Photo } )
     ```
     > [!div class="mx-imgBorder"] 
     > ![ein Schaltflächen-Steuerelement hinzu, das mit dem Text "Add Item" und der onselect-Eigenschaft hinzugefügt wurde](media/function-savedata-loaddata/simple-additem.png)
 
 1. Fügen Sie eine weitere **Schaltfläche** hinzu.
 
-2. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um den Schaltflächen Text zum **Speichern von Daten** (oder zum Ändern der **Text** -Eigenschaft)
+2. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um den Schaltflächen Text zum **Speichern von Daten** (oder Ändern der **Text** -Eigenschaft) zu ändern
 
-3. Legen Sie die **onseelct** -Eigenschaft des Schaltflächen-Steuer Elements auf diese Formel fest, um die Sammlung auf dem lokalen Gerät zu speichern:
-    ```powerapps-comma
-    SaveData( MyItems; "LocalSavedItems" )
+3. Legen **Sie die onselect** -Eigenschaft des Schaltflächen-Steuer Elements auf diese Formel fest, um die Sammlung auf dem lokalen Gerät zu speichern:
+    ```powerapps-dot
+    SaveData( MyItems, "LocalSavedItems" )
     ```
     > [!div class="mx-imgBorder"] 
     > ![ein Button-Steuerelement hinzugefügt, das mit dem Text "Daten speichern" und der onselect-Eigenschaft festgelegt wurde](media/function-savedata-loaddata/simple-savedata.png)
 
-    Es ist verlockend, die Schaltfläche zu testen, und Sie tut nichts weh, wenn Sie versuchen möchten, aber es wird nur eine Fehlermeldung angezeigt, wenn die Erstellung in einem Webbrowser erfolgt.  Sie müssen zunächst die APP speichern und auf einem Gerät öffnen, bevor wir diese Formel testen können, die wir in den folgenden Schritten ausführen werden.
+    Es ist verlockend, die Schaltfläche zu testen, da Sie nichts beeinträchtigt. Beim Erstellen eines Webbrowsers wird jedoch nur ein Fehler angezeigt. Speichern Sie zuerst die APP, und öffnen Sie Sie auf einem Gerät, bevor Sie die nächsten Schritte ausführen, um diese Formel zu testen:
 
 1. Fügen Sie ein drittes **Button** -Steuerelement hinzu.
 
-2. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um den Schaltflächen Text zum **Laden von Daten** zu ändern (oder um die **Text** -Eigenschaft
+2. Doppelklicken Sie auf das Schaltflächen-Steuerelement, um den Schaltflächen Text zum **Laden von Daten** zu ändern (oder ändern Sie die **Text** -Eigenschaft
 
-3. Legen Sie die **onseelct** -Eigenschaft des Schaltflächen-Steuer Elements auf diese Formel fest, um die Sammlung vom lokalen Gerät zu laden:
-    ```powerapps-comma
-    LoadData( MyItems; "LocalSavedItems" )
+3. Legen **Sie die onselect** -Eigenschaft des Schaltflächen-Steuer Elements auf diese Formel fest, um die Sammlung vom lokalen Gerät zu laden:
+    ```powerapps-dot
+    LoadData( MyItems, "LocalSavedItems" )
     ``` 
     > [!div class="mx-imgBorder"] 
     > ![ein Button-Steuerelement hinzugefügt, das mit dem Text "Load Data" und der onselect-Eigenschaft festgelegt wurde](media/function-savedata-loaddata/simple-loaddata.png)
@@ -114,7 +131,7 @@ Sie müssen über ein Gerät verfügen, um dieses Beispiel zu bearbeiten, da es 
     > [!div class="mx-imgBorder"] 
     > ![Galerie auf der rechten Seite des Bildschirms neu positioniert](media/function-savedata-loaddata/simple-gallery-placed.png)
 
-1. Speichern Sie Ihre APP.  Wenn Sie zum ersten Mal gespeichert wird, müssen Sie Sie nicht veröffentlichen. Wenn dies nicht der gibt, veröffentlichen Sie die APP ebenfalls.
+1. Speichern Sie Ihre APP.  Wenn es das erste Mal ist, dass es gespeichert wurde, ist es nicht erforderlich, es zu veröffentlichen. Wenn dies nicht der erste Zeitpunkt ist, veröffentlichen Sie die APP nach dem Speichern.
 
 1. Öffnen Sie die APP auf einem Gerät, z. b. einem Telefon oder Tablet.  **SaveData** und **LoadData** können nicht in Studio oder in einem Webbrowser verwendet werden.  Aktualisieren der APP-Liste wenn Sie Ihre APP nicht sofort sehen können, kann es einige Sekunden dauern, bis die APP auf Ihrem Gerät angezeigt wird.  Sie können sich auch bei Ihrem Konto abmelden und wieder anmelden.
     > [!div class="mx-imgBorder"] 
@@ -134,7 +151,7 @@ Sie müssen über ein Gerät verfügen, um dieses Beispiel zu bearbeiten, da es 
     > [!div class="mx-imgBorder"] 
     > ![APP wird erneut ausgeführt, und es werden keine Elemente hinzugefügt](media/function-savedata-loaddata/simple-mobile.png) 
 
-1. Wählen Sie die Schaltfläche **Daten laden** aus.  Die Sammlung wird von den gespeicherten Daten auf Ihrem Gerät erneut ausgefüllt, und ihre Elemente werden wieder im Katalog angezeigt.  Beachten Sie, dass die Auflistung leer war, bevor diese Schaltfläche die **LoadData** -Funktion aufruft. vor dem Laden der Daten aus dem Speicher war es nicht erforderlich, **Collect** oder **clearcollect** aufzurufen.
+1. Wählen Sie die Schaltfläche **Daten laden** aus.  Die Sammlung wird von den gespeicherten Daten auf Ihrem Gerät erneut ausgefüllt, und ihre Elemente werden wieder im Katalog angezeigt.  Die Auflistung war leer, bevor diese Schaltfläche die **LoadData** -Funktion aufruft. vor dem Laden der Daten aus dem Speicher war es nicht erforderlich, **Collect** oder **clearcollect** aufzurufen.
     > [!div class="mx-imgBorder"] 
     > ![APP, die mit drei Elementen ausgeführt wird, nachdem Sie die LoadData-Funktion aufgerufen haben](media/function-savedata-loaddata/simple-mobile-load1.png) 
 

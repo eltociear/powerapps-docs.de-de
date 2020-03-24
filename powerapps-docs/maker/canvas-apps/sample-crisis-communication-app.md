@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a8ef720b45f3a9e02129c79f883b007a1fac3b22
-ms.sourcegitcommit: 0ca700b2982a4dec430f0b02b00cb1b3a045cf1c
+ms.openlocfilehash: febec328c291972563599eb56a32f80e22eb070a
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79543056"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122517"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Einrichten und Erlernen der Beispiel Vorlage für die Krisenkommunikation in Power apps
 <!--note from editor: Suggest moving the overview into the usual overview position (i.e. after the H1). Other notes: According to the Docs Contributor Guide, graphic file names should be all lowercase, including the extension. I didn't change this, but something to note for next time. -->
@@ -142,7 +142,7 @@ Wenn dies der Fall ist, gestatten Sie Standort Diensten den Zugriff.<!--edit oka
 
 Der Flow erstellt die folgenden SharePoint-Listen auf der SharePoint-Website.<!--general note; You don't need to introduce tables or graphics with colons, only lists.-->
 
-| **Anzeige Titel**| **Zweck** | **Beschreibung** |
+| **Anzeige Titel**| **Zweck** | **Description** (Beschreibung) |
 |-|-|-|
 | CI_LogosAssets| , Um das Logo und/oder andere Bilder aufzunehmen, auf die von der APP verwiesen werden soll. Auf das Logo wird in powerapps über einen direkten Link oder über die ID-Nummer des Logos verwiesen, das Sie verwenden möchten. | Die Bibliothek für Verwandte Logos und andere Image Ressourcen für die app " *[App-Name]* ". |
 | CI_configAdminSetup | Wird für die featurekonfiguration durch den Administrator der APP verwendet.<br>**Hinweis**: Diese Liste sollte für alle Mitglieder, die keine Administratoren sind, schreibgeschützt sein. | Die Administrator Konfigurationsliste für die app " *[App-Name]* ".
@@ -547,7 +547,7 @@ Vervollständigen Sie alle Felder, wie in der folgenden Tabelle gezeigt, und wä
 |-|-|-|
 | Vollständiger Name | FullName | Der Name des Kontakts. |
 | E-Mail | E-Mail | Die für den Kontakt angezeigte e-Mail-Adresse. |
-| Land | Land | Das Land/die Region für den Kontakt. Dieses Feld wird verwendet, um die Kontakte zu gruppieren. Sie können andere Werte verwenden, um Kontakte nach zu gruppieren, wenn Länder für Sie nicht sinnvoll sind. |
+| Land | Land | Das Land für den Kontakt. Dieses Feld wird verwendet, um die Kontakte zu gruppieren. Sie können andere Werte verwenden, um Kontakte nach zu gruppieren, wenn Länder für Sie nicht sinnvoll sind. |
 | Comments | Comments | Zeigt zusätzliche Informationen über den Kontakt an. Es ist hilfreich zu beschreiben, wann Sie sich an diesen Kontakt wenden müssen. |
 | Als veraltet markiert | Als veraltet markiert | Verwenden Sie, um einen vorhandenen Notfallkontakt auszublenden. |
 
@@ -700,6 +700,31 @@ Die APP verwendet einen Flow, um Benachrichtigungen an Endbenutzer zu senden, we
 > [!NOTE]
 > Sie erhalten möglicherweise eine Fehlermeldung, wenn eine ihrer Verbindungen noch nicht autorisiert wurde.
 Öffnen Sie in diesem Fall die Karte mit der nicht autorisierten Verbindung, und führen Sie eine erneute Autorisierung durch.
+
+
+### <a name="optional-sending-notifications-to-more-than-999-users"></a>Optional: Senden von Benachrichtigungen an mehr als 999 Benutzer
+
+Die aktuelle Aktion zum Abrufen von **Gruppenmitgliedern** ist auf das Abrufen von 999-Benutzern beschränkt (standardmäßig 100-Benutzer). Zum Verteilen an weitere Benutzer können Sie den Flow ändern, um stattdessen eine e-Mail an eine Verteiler Gruppe zu senden.
+
+1. Löschen Sie die folgenden Karten: **Gruppenmitglieder gruppieren** und **auf bevorzugte Sende Benachrichtigungs Einstellung wechseln**:
+
+    ![Lösch Aktionen](media/sample-crisis-communication-app/36-delete-actions.png)
+
+1. Fügen Sie eine neue Aktion hinzu.
+
+1. Suchen und wählen Sie **eine e-Mail senden (v2)** :
+
+    ![Hinzufügen einer e-Mail senden](media/sample-crisis-communication-app/37-add-send-an-email.png)
+
+1. Geben Sie im Feld **an** den Namen der Verteiler Gruppe ein.
+
+1. Wählen Sie im Feld **Betreff** die Schaltfläche **dynamischen Wert hinzufügen** aus, und fügen Sie das Feld **Title** von der Karte **Wenn ein Nachrichten Element gepostet wird** hinzu:
+
+    ![Titel hinzufügen](media/sample-crisis-communication-app/38-add-title.png)
+
+1. Wählen Sie im Feld **Text** die Schaltfläche **dynamischen Wert hinzufügen** aus, und fügen Sie das Feld **Details** der Karte **Wenn ein Nachrichten Element gepostet angezeigt wird** hinzu.
+
+1. Wählen Sie **Speichern** aus.
 
 ### <a name="test-the-news-notification-flow"></a>Testen des nachrichtenbenachrichtigungs Flusses
 

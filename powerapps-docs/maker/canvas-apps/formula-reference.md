@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/19/2019
+ms.date: 03/21/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c70d73cb2dcdd9fd1832a10c4c89029cdb5c45ad
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 49f25d01c646916738e583729e12e7b0544f7390
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264928"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122797"
 ---
 # <a name="formula-reference-for-power-apps"></a>Referenz zu Formeln für Power Apps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -149,7 +149,7 @@ Andere Elemente enthalten:
 
 **[EncodeUrl](functions/function-encode-decode.md)** : codiert Sonderzeichen mit URL-Codierung.
 
-**[Exit](functions/function-exit.md)** : beendet die derzeit ausgeführte App.
+**[Exit](functions/function-exit.md)** – beendet die derzeit ausgelaufende APP und meldet optional den aktuellen Benutzer ab.
 
 **[Exp](functions/function-numericals.md)** : gibt *e* zur Potenz erhoben zurück.
 
