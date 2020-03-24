@@ -2,7 +2,7 @@
 title: Verwenden der Standardlösung zum Anpassen mit Power Apps | Microsoft-Dokumentation
 description: Erfahren, wie Standardlösungen angepasst werden
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 02/20/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,30 +22,38 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: da116f81addf057a5f3fd4c44264bc6305e7b884
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 1525cdb41cb7e809a54b6389472e5be842a87697
+ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869674"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "3093617"
 ---
-# <a name="use-the-common-data-services-default-solution"></a>Die Common Data Service-Standardlösung verwenden  
-  
- Alle Power Apps-Umgebungen beinhalten die folgenden Lösungen.
--   **Common Data Service-Standardlösung** – Dies ist eine Basislösung, die für Entwickler zur standardmäßigen Nutzung verfügbar ist, um Ihre Anpassungen an einer Umgebung vorzunehmen.
--   **Standardlösung** - Dies ist eine spezielle Lösung, die alle Anpassungen aus allen Lösungen in einer Umgebung enthält. 
-<!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->
+# <a name="use-a-solution-to-customize"></a>Eine Lösung zum Anpassen verwenden
+Wir empfehlen Ihnen, eine nicht verwaltete Lösung zu erstellen, um Ihre Anpassungen zu verwalten. Mit einer benutzerdefinierten Lösung können Sie ganz einfach nur die von Ihnen angepassten Lösungskomponenten finden, Ihren Präfix-Lösungsherausgeber konsistent anwenden und Ihre Lösung zur Verteilung in andere Umgebungen exportieren.  
 
-Beachten Sie, dass, wenn Sie andere Anwendungen oder Lösungen installiert oder importiert haben, zusätzliche Lösungen in der Lösungsliste verfügbar sein können. 
+Wenn Sie keine benutzerdefinierte Lösung verwenden, arbeiten Sie mit einer Standardlösung in der nicht verwalteten Ebene. Es gibt jeweils zwei Standardlösungen in jeder Common Data Service Umgebung:  
+- Common Data Service Standardlösung. Dies ist eine Basislösung, die den Herstellern als Standardlösung für Ihre Anpassungen in einer Umgebung zur Verfügung steht. Dies Common Data Service Standardlösung ist nützlich, wenn Sie bewerten oder lernen möchten Power Apps.  
+- Standardlösung. Dies ist eine besondere Lösung, die alle Komponenten im System enthält. Die Standardlösung ist nützlich, um alle Komponenten und Konfigurationen in Ihrem System zu ermitteln.  
 
-Wenn Sie eine modellgesteuerte App erstellen oder anpassen, arbeiten Sie standardmäßig mit der Common Data Service-Standardlösung. Sie können die Common Data Service-Standardlösung öffnen, um die in ihr enthaltenen Komponenten anzuzeigen und zu bearbeiten. Führen Sie dazu die folgenden Schritte aus:
+## <a name="why-you-shouldnt-use-the-default-solutions-to-manage-customizations"></a>Warum Sie eine Standardlösung nicht zum Verwalten von Anpassungen verwenden sollten
+Es gibt verschiedene Gründe, warum Sie in der Standardlösung keine Apps erstellen und Anpassungen vornehmen sollten:  
+- Die Standardlösung enthält alle Komponenten und Anpassungen aus allen Lösungen in der Umgebung. 
+- Standardmäßig können alle aktivierten Benutzer in einer Umgebung Apps erstellen und Komponenten in der Common Data Services Standardlösung anpassen. 
+- Es ist schwierig, die Anpassungen, die Sie in der Umgebung vorgenommen haben, mit der Standardlösung zu finden oder zu identifizieren. 
+- Wenn Sie eine der Standardlösungen verwenden, wird beim Erstellen von Komponenten auch der ihr zugewiesene Standardherausgeber verwendet. Dies kann dazu führen, dass auf einige Komponenten das falsche Herausgeber-Präfix angewendet wird. 
+- Die Standardlösung kann nicht exportiert werden. Daher können Sie die Standardlösung nicht an eine andere Umgebung verteilen. 
+
+<!-- Notice that if you have installed or imported other applications or solutions, additional solutions may be available in the solutions list. 
+
+By default,  when you build or customize a model-driven app, you work with the solution called Common Data Services Default Solution. You can open the Common Data Services Default Solution to view and edit the components that are contained in it. To do this, follow these steps.
  
-1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.
+1.  On the left navigation pane select **Solutions**.
 
-2.  Wählen Sie in der Liste der Lösungen die Option **Common Data Service-Standardlösung** aus.
+2.  In the list of solutions, select **Common Data Services Default Solution**.
   
 > [!TIP]
->  Wenn Sie vorhaben, die von Ihnen erstellten Anwendungen zu verteilen, sollten Sie unter Umständen das Präfix für die Anpassung des Herausgebers ändern. Weitere Informationen [Lösungsherausgeberpräfix](change-solution-publisher-prefix.md)  
+>  If you plan to distribute the applications your make, consider changing the publisher customization prefix. More information: [Solution publisher prefix](change-solution-publisher-prefix.md).  -->
   
 <a name="BKMK_PrivacyNotice"></a>   
 
@@ -54,7 +62,8 @@ Wenn Sie eine modellgesteuerte App erstellen oder anpassen, arbeiten Sie standar
   
  [!INCLUDE[cc_privacy_crm_customizations](../../includes/cc-privacy-crm-customizations.md)]  
   
-## <a name="see-also"></a>Siehe auch  
-[Modellgesteuerte App-Komponenten verstehen](../model-driven-apps/model-driven-app-components.md)
- <br/>
- [Whitepaper: Muster und Prinzipien für Lösungsentwickler](https://go.microsoft.com/fwlink/p/?LinkID=533946)
+### <a name="see-also"></a>Siehe auch  
+[Erstellen einer Lösung](create-solution.md) <br />
+[Grundlegendes zu Komponenten modellgestützter Apps](../model-driven-apps/model-driven-app-components.md)
+
+

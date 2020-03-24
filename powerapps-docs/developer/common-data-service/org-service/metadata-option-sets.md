@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1b7bec1539b2b3e45df4465cc28fa9a9ba7eb357
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 50e923cb096870645980e358fb8a0065513226b4
+ms.sourcegitcommit: 04ba6f3773b23e4e89c23269b84707d19e9ed04c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017383"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "3094440"
 ---
 # <a name="customize-option-sets"></a>Optionssätze anpassen
 
 Normalerweise können Sie mithilfe von *globalen* Optionssätzen Felder festlegen, sodass andere Felder denselben Satz von Optionen nutzen können, die an einem Ort verwaltet werden. Anders als *lokale* Optionssätze, die nur für ein bestimmtes Attribut definiert werden, können Sie Globale Optionssätze wiederverwenden. Sie können auch in Anforderungsparametern auf eine ähnliche Weise wie eine Enumeration verwendet werden.  
   
-Beim Definieren eines globalen Optionssatzes mithilfe von <xref:Microsoft.Xrm.Sdk.Messages.CreateOptionSetRequest> wird empfohlen, das System einen Wert zuweisen zu lassen. Dazu übergeben Sie einen **null** -Wert, wenn Sie die neue `OptionMetadata`-Instanz erstellen. Wenn Sie eine Option definieren, enthält sie ein für den Kontext des Herausgebers spezifisches Optionswertpräfix, festgelegt für die Lösung, in der der Optionssatz erstellt wird. Dieses Präfix hilft, die Möglichkeit der Erstellung von doppelten Optionssätzen für eine verwaltete Lösung zu verringern, sowie in allen Optionssätzen, die in Organisationen definiert werden, in denen die verwaltete Lösung installiert ist. Weitere Informationen finden Sie unter [Zusammenführung von Optionssatz-Optionen](../understand-managed-solutions-merged.md#merge-option-set-options).  
+Beim Definieren eines globalen Optionssatzes mithilfe von <xref:Microsoft.Xrm.Sdk.Messages.CreateOptionSetRequest> wird empfohlen, das System einen Wert zuweisen zu lassen. Dazu übergeben Sie einen **null** -Wert, wenn Sie die neue `OptionMetadata`-Instanz erstellen. Wenn Sie eine Option definieren, enthält sie ein für den Kontext des Herausgebers spezifisches Optionswertpräfix, festgelegt für die Lösung, in der der Optionssatz erstellt wird. Dieses Präfix hilft, die Möglichkeit der Erstellung von doppelten Optionssätzen für eine verwaltete Lösung zu verringern, sowie in allen Optionssätzen, die in Organisationen definiert werden, in denen die verwaltete Lösung installiert ist. Weitere Informationen finden Sie unter [Zusammenführung von Optionssatz-Optionen](../../../maker/common-data-service/how-managed-solutions-merged.md).  
 
 Sie können das Beispiel von [hier](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/WorkWithOptionSets) herunterladen.
 

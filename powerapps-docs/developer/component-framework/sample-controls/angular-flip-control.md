@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 42539d33e5439b71f523c69b0ac44d6ee10c6640
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: d04656cb3ce2970eded1bcf39e2d5c6a2f121410
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017600"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091225"
 ---
 # <a name="implementing-flip-component"></a>Implementieren einer Kippkomponente
 
@@ -24,7 +24,7 @@ In diesem Beispiel wird gezeigt, wie Sie Drittanbieterbibliotheken verwenden, um
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
+Modellgesteuerte Anwendungen und Canvas-Anwendungen (öffentliche Vorschau) 
 
 ## <a name="manifest"></a>Manifest
 

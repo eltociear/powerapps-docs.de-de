@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 40c59ccdebe8ee5192510b5d8ac7e825c6b68c58
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 39f3780d0c8bbe33512b5eaec2719bd6f3912d91
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909414"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100057"
 ---
 # <a name="best-practices-when-working-with-solutions"></a>Bewährte Methoden für die Arbeit mit Lösungen 
 Dieses Thema beschreibt bewährte Methoden für die Arbeit mit Lösungen. 
@@ -38,7 +38,7 @@ Um die App zu aktualisieren, die in die verwaltete Lösung eingebunden wurde, nu
 
 
 ## <a name="use-security-roles-to-manage-app-access"></a>Den Zugriff auf die Apps mit Sicherheitsrollen verwalten
-Bei modellgesteuerten Apps sollten Sicherheitsrollen zum Steuern des Benutzerzugriffs zugewiesen werden. Weitere Informationen: [Fügen Sie Sicherheitsrollen der App hinzu](../model-driven-apps/share-model-driven-app.md#add-security-roles-to-the-app) 
+Bei modellgesteuerten Apps sollten Sicherheitsrollen zum Steuern des Benutzerzugriffs zugewiesen werden. Weitere Informationen: [Eine modellgesteuerte App mit Power Apps teilen](../model-driven-apps/share-model-driven-app.md) 
 
 ## <a name="delete-the-managed-solution-to-delete-a-model-driven-app"></a>Löschen der verwalteten Lösung, um eine modellgesteuerte App zu löschen 
 Um eine modellgesteuerte App zu löschen, die in der Standardlösung als Bestandteil einer verwalteten Lösung installiert wurde, löschen Sie die verwaltete Lösung. 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f9a379824587f9e399ea215fa20d0b676480ab05
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d713bee10d98006e8310d614175cdaf6898631e2
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752670"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080848"
 ---
 # <a name="create-packages-for-the-package-deployer"></a>Erstellen von Paketen für den Package Deployer
 
@@ -149,7 +149,7 @@ Common Data Service bietet Ihnen eine Visual Studio Vorlage zum Erstellen dieser
 
    ```  
 
-    `<filestoimportnode>` Knoten  
+    `<filestoimport>` Knoten  
     Enthält ein Array von `<configimportfile>` und `<zipimportdetails>` Knoten, die verwendet werden, um die einzelnen Dateien und ZIP-Dateien zu beschreiben, die importiert werden.  
 
     `<configimportfile>` Knoten  

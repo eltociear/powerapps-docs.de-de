@@ -8,24 +8,30 @@ ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 93d60cb1e6c00951e51acd4f92d8c62dce84fc28
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 6b563136dba6cc2144e66654860c1f760adbea60
+ms.sourcegitcommit: 27cb5ad024d43f208ef6acfbea456a05df3edf8e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909079"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "3082815"
 ---
 # <a name="what-are-code-components"></a>Was sind Codekomponenten?
 
 Codekomponenten sind eine Art Lösungskomponenten, d.h. sie können in eine Lösungsdatei aufgenommen und in verschiedenen Umgebungen installiert werden. Weitere Informationen: [Verpacken und Bereitstellen von Erweiterungen mithilfe von Lösungen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
 
-Sie fügen Codekomponenten hinzu, indem Sie sie in eine Lösung aufnehmen und dann in Common Data Service importieren. Sobald die Komponenten in Common Data Service sind, können Systemadministratoren und Systemanpasser Formularfelder, Unterraster, Ansichten und Dashboard-Unterraster konfigurieren, um sie anstelle von Standardkomponenten zu verwenden. Sie können diese Codekomponenten auch in Canvas-Anwendungen hinzufügen. 
+> [!div class="mx-imgBorder"] 
+> ![Codekomponenten](media/code-components.gif "Code-Komponenten")
+
+Sie fügen Codekomponenten hinzu, indem Sie sie in eine Lösung aufnehmen und dann in Common Data Service importieren. Sobald die Komponenten in Common Data Service sind, können Systemadministratoren und Systemanpasser Formularfelder, Unterraster, Ansichten und Dashboard-Unterraster konfigurieren, um sie anstelle von Standardkomponenten zu verwenden. Sie können diese Codekomponenten sowohl zu **modellgesteuerten als auch zu Canvas-Apps** hinzufügen. 
 
 Codekomponenten bestehen aus drei Elemente:
 
 - [Manifest](#manifest)
 - [Komponentenimplementierung](#component-implementation)
 - [Ressourcen](#resources)
+
+> [!NOTE]
+> Die Definition und Implementierung von Codekomponenten unter Verwendung des Power Apps component framework ist für modellgetriebene und Canvas-Anwendungen gleich. Der einzige Unterschied zwischen beiden ist der Konfigurationsteil. 
 
 ## <a name="manifest"></a>Manifest
 

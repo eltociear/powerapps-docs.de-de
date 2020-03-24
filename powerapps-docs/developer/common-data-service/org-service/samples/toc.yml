@@ -272,6 +272,8 @@
       href: retrieve-time-zone-information.md
 - name: Daten abfragen
   items:
+    - name: Abfdragedaten mithilfe von LINQ
+      href: query-using-linq.md
     - name: Verwenden von QueryExpression mit einem Auslagerungscookie
       href: use-queryexpression-with-a-paging-cookie.md
     - name: Rufen Sie mit der QueryExpressions-Klasse Vielfaches ab

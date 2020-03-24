@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf9b21936a0b1a9d843d248cf4941854dcdbbd7d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 8db8442c7cb5a53d1c836f814e6d7b1d5e58a84a
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874560"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029672"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>Schnellstart für die Umstellung Ihrer bestehenden Web-Client-Anwendung auf die einheitliche Oberfläche
 
@@ -49,11 +49,6 @@ Wählen Sie zuerst eine Nicht-Produktionsumgebung aus und aktivieren Sie den Mod
 
    > [!div class="mx-imgBorder"] 
    > ![Einstellung für „Nur Einheitliche Oberfläche verwenden“](media/use-unified-interface-only-pac.png)
-
-Sie können dies auch im Einstellungsbereich einstellen. Gehen Sie zu **Einstellungen** > **Verwaltung** > **Systemeinstellungen** und dann auf die Registerkarte **Allgemein**, und legen Sie **Nur die Einheitliche Oberfläche aktivieren** auf **Ja** fest.
-
-> [!div class="mx-imgBorder"] 
-> ![Nur die neue Einheitliche Oberfläche verwenden](media/use-unified-interface-only.png "Nur die neue Einheitliche Oberfläche verwenden")
 
 
 > [!NOTE]

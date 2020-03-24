@@ -19,128 +19,144 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 152fc65e69ccb728727f92ed77d6495f6dc5dcab
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 6adf35a76df347ca8a99bd12620e7beea4b403d5
+ms.sourcegitcommit: 97a36c9df2a7067a29fb6bd254975dadc2bc16fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005276"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3072862"
 ---
-# <a name="export-entity-data-to-azure-data-lake-gen-2"></a>Exportieren Sie Entitätsdaten in Azure Data Lake Gen 2
+# <a name="export-entity-data-to-azure-data-lake-storage-gen2"></a>Entitätsdaten nach Azure Data Lake Storage Gen2 exportieren
 
-Der Export nach Data Lake Service ist eine Pipeline, aus der Daten kontinuierlich exportiert werden von Common Data Service zu Azure Data Lake Gen 2. Der Export zum Data Lake-Service wurde für die Big Data-Analyse im Unternehmen entwickelt, indem skalierbare Hochverfügbarkeit mit Funktionen zur Wiederherstellung nach einem Katastrophenfall bereitgestellt wird. Daten werden im Common Data Model Format (CDM) gespeichert, das eine semantische Konsistenz für alle Apps und Bereitstellungen bietet. 
+Der Export to Data Lake-Dienst ist eine Pipeline zum kontinuierlichen Export von Daten von Common Data Service bis Azure Data Lake Storage Gen2. Der Export to Data Lake-Dienst wurde für die Analyse großer Unternehmensdaten entwickelt, indem er eine skalierbare Hochverfügbarkeit mit Disaster Recovery-Funktionen bietet. Die Daten werden im Common Data Model-Format gespeichert, das für semantische Konsistenz über Anwendungen und Implementierungen hinweg sorgt. 
 
-![Zu Data Lake exportieren, Übersicht](media/export-data-lake-overview.png)
+![Zu Data Lake exportieren, Übersicht](media/export-data-lake-overview.png "Export to Data Lake Übersicht")
 
-Der Export zu Data Lake bietet die folgenden Funktionen: 
-- Verknüpfen oder trennen Sie die Common Data Service Umgebung zu einem Data Lake Gen 2 in Ihrem Azure Abonnement. 
-- Fortlaufende Replikation von Entitäten in Azure Data Lake Gen 2.
-- Erstes Schreiben, gefolgt von inkrementellen Schreibvorgängen für Daten und Metadaten. 
-- Repliziert sowohl Standard- als auch benutzerdefinierte Entitäten. 
-- Replikate erstellen, aktualisieren und Transaktionen löschen. 
+Export to Data Lake bietet diese Funktionen: 
+
+- Verknüpfen oder Entkoppeln der Common Data Service-Umgebung mit Data Lake Storage Gen2 in Ihrem Azure-Abonnement. 
+- Kontinuierliche Replikation von Entitäten zu Data Lake Storage Gen2.
+- Anfängliches Schreiben, gefolgt von inkrementellen Schreibvorgängen für Daten und Metadaten. 
+- Replikation sowohl von Standard- als auch von benutzerdefinierten Entitäten. 
+- Replikation von Erstellungs-, Aktualisierungs- und Löschvorgängen (CrUD). 
 - Kontinuierliche Snapshot-Updates für umfangreiche Analyseszenarien. 
-- Erleichtert die Suche nach Metadaten und die Interoperabilität zwischen Datenproduzenten und -konsumenten wie Power BI, Azure Data Factory, Azure Databricks und Azure Machine Learning Service.
+- Erleichterte Metadatenerkennung und Interoperabilität zwischen Datenproduzenten und -konsumenten wie Power BI, Azure Data Factory, Azure Databricks und Azure Machine Learning.
 
 ## <a name="how-data-and-metadata-are-exported"></a>Wie Daten und Metadaten exportiert werden
-Der Export in den Data Lake Service unterstützt das anfängliche und inkrementelle Schreiben von Entitätsdaten und Metadaten. Alle Daten oder Metadatenänderungen in Common Data Service werden ohne weitere Aktion automatisch zum Data Lake übertragen. Dies ist eher eine Push- als eine Pull-Operation. Änderungen werden an das Ziel übertragen, ohne dass Aktualisierungsintervalle eingerichtet werden müssen. 
+
+Der Export to Data Lake-Dienst unterstützt anfängliches und inkrementelles Schreiben für Entitätsdaten und Metadaten. Alle Daten oder Metadatenänderungen in Common Data Service werden ohne weitere Aktion automatisch zum Data Lake übertragen. Es handelt sich hierbei eher um eine Push-Operation als um eine Pull-Operation. Änderungen werden an den Zielort geschoben, ohne dass Sie Aktualisierungsintervalle einrichten müssen. 
 
 Es können sowohl Standard- als auch benutzerdefinierte Entitäten exportiert werden. Beachten sie, dass die Änderungsnachverfolgungsfunktion in Common Data Service verwendet wird, um die Daten effizient zu synchronisieren, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden. 
 
-Alle Erstellungs-, Aktualisierungs- und Löschvorgänge (CrUD) werden aus exportiert Common Data Service zum Data Lake. Wenn ein Benutzer beispielsweise einen Kontoentitätsdatensatz in Common Data Service löscht, wird die Transaktion auf den Ziel Data Lake repliziert.
+Alle Erstellungs-, Aktualisierungs- und Löschvorgänge werden von Common Data Service in den Data Lake exportiert. Wenn ein Benutzer beispielsweise einen Kontoentitätsdatensatz in Common Data Service löscht, wird die Transaktion in den Ziel-Data Lake repliziert.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Bevor Sie die Common Data Service Daten zu einem Data Lake exportieren können, müssen Sie ein Azure StorageV2-Speicherkonto (General Purpose v2) erstellen und konfigurieren. 
 
-Folgen Sie den Schritten im [Erstellen Sie ein Azure Storage Konto](/azure/storage/blobs/data-lake-storage-quickstart-create-account) Artikel und beachten Sie diese Anforderungen: 
+Bevor Sie Daten aus Common Data Service in einen Data Lake exportieren können, müssen Sie ein Azure Storage v2 (general-purpose v2)-Speicherkonto erstellen und konfigurieren. 
+
+Befolgen Sie die Schritte im Artikel  [Azure Storage-Konto erstellen](/azure/storage/blobs/data-lake-storage-quickstart-create-account) und beachten Sie diese Anforderungen: 
+
 - Ihnen muss eine Besitzerrolle im Speicherkonto zugewiesen werden. 
 - Stellen Sie Ihren Speichertyp ein als **Speicher v2 (Universell v2)**. 
 - Bei dem Speicherkonto muss die Funktion für den **Hierarchischen Namespace** aktiviert sein. 
- - Wir empfehlen, die Replikationseinstellung auf Georedundanter Speicher (RA-GRS) mit Leseberechtigung festzulegen. Mehr Informationen: [Georedundanter Speicher mit Lesezugriff](/azure/storage/common/storage-redundancy-grs#read-access-geo-redundant-storage) 
->   ![Speicherkonto Eigenschaften](media/storage-account-properties.png)
+
+ Wir empfehlen, die Replikationseinstellung auf Georedundanter Speicher (RA-GRS) mit Leseberechtigung festzulegen. Mehr Informationen: [Georedundanter Speicher mit Lesezugriff](/azure/storage/common/storage-redundancy-grs#read-access-geo-redundant-storage)
+
+>   ![Speicherkonto Eigenschaften](media/storage-account-properties.png "Speicherkonto Eigenschaften")
 
 > [!NOTE]
-> - Das Speicherkonto muss im selben Azure AD-Mandanten wie Ihr PowerApps-Mandant erstellt werden.  
-> - Es wird empfohlen, das Speicherkonto in derselben Region wie die PowerApps Umgebung zu erstellen, in der die Funktion verwendet werden soll.  
->  - Zum verlinken der Common Data Service Umgebung für Azure Data Lake Gen 2 müssen Sie ein Common Data Service Administrator sein. 
->  - Nur Entitäten, die die Änderungsnachverfolgung aktiviert haben, können exportiert werden. 
+> - Das Speicherkonto muss im gleichen Azure Active Directory (Azure AD) Mandanten wie Ihr Power Apps Mandanten angelegt werden.  
+> - Das Speicherkonto muss in der gleichen Region wie die Power Apps-Umgebung, in der Sie die Funktion verwenden werden, erstellt werden.  
+> - Um die Common Data Service-Umgebung mit der Azure Data Lake Storage-Gen2-Umgebung zu verknüpfen, müssen Sie ein Common Data Service-Administrator sein. 
+> - Nur Entitäten, die die Änderungsnachverfolgung aktiviert haben, können exportiert werden. 
 
+## <a name="select-and-export-common-data-service-entity-data-to-azure-data-lake-storage-gen2"></a>Wählen und exportieren Sie die Daten der Common Data Service Entität in Azure Data Lake Storage Gen2
 
-## <a name="select-and-export-common-data-service-entity-data-to-azure-data-lake-gen-2"></a>Wählen und exportieren Sie Common Data Service Entitätsdaten in Azure Data Lake Gen 2
-1. Einloggen in [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern von **Daten** und dann **Entitäten** auswählen. 
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, erweitern Sie **Daten**, und wählen Sie dann **Entitäten**. 
 2. Wählen Sie in der Befehlsleiste **In Data Lake exportieren** und dann auf der Seite **In Data Lake exportieren** wählen Sie **Neuer Link zum Data Lake**. 
 3. Wählen Sie jeder der folgenden Einstellungen und dann **Weiter**: 
    - **Abonnement**. Wählen Sie Ihr Azure Abonnement. 
-   - **Ressourcengruppe**. Wählen Sie die Ressourcengruppe aus, die das Speicherkonto Storagev2 (General Purpose v2) enthält.
-   - **Speicherkonto**. Wählen Sie die Ressourcengruppe aus, die das Speicherkonto Storagev2 (General Purpose v2) enthält, das für den Export verwendet wird. 
+   - **Ressourcengruppe**. Wählen Sie die Ressourcengruppe, die das Speicherkonto Storage v2 (general-purpose v2) enthält.
+   - **Speicherkonto**. Wählen Sie das Speicherkonto Storage v2 (general-purpose v2), das für den Export verwendet werden soll. 
 4. Wählen Sie die Entitäten aus, die Sie zum Data Lake exportieren möchten und wählen Sie dann **Speichern** aus. Nur Entitäten, die die Änderungsnachverfolgung aktiviert haben, können exportiert werden. Mehr Informationen: [Änderungsverfolgung für eine Entität aktivieren](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
 
    > [!div class="mx-imgBorder"] 
-   > ![Die zu exportierende Entitäten auswählen](media/export-data-lake-select-entity.png)
+   > ![Die zu exportierende Entitäten auswählen](media/export-data-lake-select-entity.png "Die zu exportierende Entitäten auswählen")
 
-Ihre Common Data Service Umgebung ist mit dem Azure Data Lake Gen 2-Speicherkonto verknüpft. Das Dateisystem im Azure-Speicherkonto wird mit einem Ordner für jede Entität erstellt, die zum Replizieren in den Data Lake ausgewählt wurde. 
+Ihre Common Data Service-Umgebung ist mit dem Azure Data Lake Storage-Gen2-Konto verknüpft. Das Dateisystem im Azure-Speicherkonto wird mit einem Ordner für jede für die Replikation im Data Lake ausgewählte Entität erstellt. 
 
 ## <a name="manage-entity-data-to-the-data-lake"></a>Entitätsdaten zum Data Lake verwalten
-Nachdem Sie in Ihrem Abonnement den Datenexport in den Azure-Datensee 2 eingerichtet haben, können Sie den Export von Entitätsdaten in den Data Lake auf zwei Arten verwalten. 
+
+Nachdem Sie den Datenexport zu Azure Data Lake Storage Gen2 in Ihrem Abonnement eingerichtet haben, können Sie den Export von Entitätsdaten in den Data Lake auf eine von zwei Arten verwalten: 
 
 - Im Bereich Power Apps Herstellerportal **zum Data Lake exportieren** wählen Sie **Entitäten verwalten** in der Befehlsleiste, um eine oder mehrere verknüpfte Entitäten hinzuzufügen oder zu entfernen.
 - Im Bereich Power Apps Herstellerportal **Entitäten** wählen Sie **…** Klicken Sie neben einer Entität auf den verknüpften Data Lake, in den Sie Entitätsdaten exportieren möchten. 
-   ![Wählen Sie eine Entität für den Export aus](media/select-entity-export.png)
 
+   ![Wählen Sie eine Entität für den Export aus](media/select-entity-export.png "Wählen Sie eine Entität für den Export aus")
 
-Um die Verknüpfung aller verknüpften Entitäten zu lösen, klicken Sie auf Power Apps Herstellerportal **In Data Lake Bereich exportieren**, wählen **Verknüpfung zum Data Lake aufheben**. 
+Um die Verknüpfung aller verknüpften Entitäten aufzuheben, wählen Sie auf dem Power Apps Erstellerportal **Export zu Data Lake** Bereich, wählen Sie **Data Lake** verknüpfen.
 
-## <a name="view-your-data-in-the-azure-data-lake-gen-2"></a>Zeigen Sie Ihre Daten im Azure Data Lake Gen 2 an
-1. Melden Sie sich bei [Azure](https://portal.azure.com) an und wählen Sie das Speicherkonto aus, und wählen Sie dann im linken Navigationsbereich **Speicher-Explorer**. 
+## <a name="view-your-data-in-azure-data-lake-storage-gen2"></a>Anzeigen Ihrer Daten in Azure Data Lake Storage Gen2
+
+1. Melden Sie sich bei [Azure](https://portal.azure.com) an, wählen Sie das Speicherkonto aus und wählen Sie dann im linken Navigationsbereich **Speicherexplorer**. 
 2. Erweitern von **Dateisysteme**, wählen Sie dann commondataservice-*environmentName*-org-*ID*. 
 
-Die Datei model.json enthält neben Name und Version eine Liste der Entitäten, die in den Lake exportiert wurden. Die model.json-Datei enthält auch den anfänglichen Synchronisierungsstatus und die abgeschlossene Zeit. 
+Die Datei model.json bietet zusammen mit ihrem Namen und ihrer Version eine Liste der Entitäten, die in den Data Lake exportiert wurden. Die Datei model.json enthält auch den anfänglichen Synchronisationsstatus und die Zeit der Fertigstellung der Synchronisierung. 
 
-Es wird ein Ordner für jede Entität angezeigt, die in den Data Lake exportiert wurde. Dieser Ordner enthält Dateien im CSV-Format (Snapshot Command Delimited Format). 
+Für jede in den Data Lake exportierte Entität wird ein Ordner mit durch Kommata getrennten Snapshot-Dateien (CSV-Format) angezeigt.
    > [!div class="mx-imgBorder"] 
-   > ![Objektdaten im Lake](media/entity-data-in-lake.png) 
+   > ![Entitätsdaten im Data Lake](media/entity-data-in-lake.png "Entitätsdaten im Data Lake") 
 
 ### <a name="continuous-snapshot-updates"></a>Kontinuierliche Snapshot-Updates
-Common Data Service Daten können sich kontinuierlich durch das Erstellen, Aktualisieren und Löschen von Transaktionen ändern. Snapshots bieten eine schreibgeschützte Snapshot-Kopie von Daten, die in regelmäßigen Abständen, dh stündlich, aktualisiert werden. Dies stellt sicher, dass ein Datenanalyse-Konsument zu jedem Zeitpunkt zuverlässig Daten im Lake konsumieren kann.   
 
-![Kontinuierliche Snapshot Updates](media/snapshot-updates.png)
+Common Data Service Daten können sich kontinuierlich durch das Erstellen, Aktualisieren und Löschen von Transaktionen ändern. Snapshots stellen eine schreibgeschützte Kopie der Daten dar, die in regelmäßigen Abständen, in diesem Fall stündlich, aktualisiert wird. Dies stellt sicher, dass ein Datenanalyse-Konsument zu jedem Zeitpunkt zuverlässig Daten im Lake konsumieren kann.
 
-Wenn beim ersten Export Entitäten hinzugefügt werden, werden die Entitätsdaten in die Datei entity.csv unter den entsprechenden Ordnern im Lake geschrieben. Dies ist das T1-Intervall, in dem eine schreibgeschützte Momentaufnahme-Datei namens *Entität* -T1.csv, z. B. Konto-T1.csv und Kontakte-T1.csv, erstellt wird. Darüber hinaus wird die model.json-Datei aktualisiert, um auf diese Momentaufnahme-Dateien zu verweisen. Durch Öffnen der Datei model.json können Sie die Details der Momentaufnahme anzeigen. 
+![Kontinuierliche Snapshot-Updates](media/snapshot-updates.png "Kontinuierliche Snapshot-Updates")
 
-Hier ist ein Beispiel für eine partitionierte Account.csv-Datei und einen Momentaufnahme-Ordner im See.
-![Momentaufnahme der Kontenentität](media/export-data-lake-account-snapshots.png) 
+Wenn Entitäten als Teil des anfänglichen Exports hinzugefügt werden, werden die Entitätsdaten in die entity.csv-Dateien unter den entsprechenden Ordnern im Data Lake geschrieben. Dies ist das T1-Intervall, in dem eine schreibgeschützte Snapshot-Datei mit dem Namen *Entität*-T1.csv&mdash;z.B. Account-T1.csv oder Contacts-T1.csv&mdash;erstellt wird. Darüber hinaus wird die model.json-Datei aktualisiert, um auf diese Momentaufnahme-Dateien zu verweisen. Wenn Sie model.json öffnen, können Sie die Details des Snapshots anzeigen. 
 
-Änderungen in Common Data Service werden unter Verwendung der Trickle-Feed-Engine kontinuierlich in die entsprechenden CSV-Dateien verschoben. Dies ist das T2-Intervall, in dem eine weitere Momentaufnahme erstellt wird. *Entität* -T2.csv, z. B. Accounts-T2.csv und Contacts-T2.csv (vorausgesetzt, es gibt Änderungen für beide Entitäten), und model.json werden auf die neuen Momentaufnahme-Dateien aktualisiert. Jede neue Person, die Momentaufnahme-Daten ab T2 anzeigt, wird zu den neueren Momentaufnahme-Dateien weitergeleitet. Auf diese Weise kann der ursprüngliche Momentaufnahme-Viewer weiterhin mit den älteren Momentaufnahme-T1-Dateien arbeiten, während neuere Viewer die neuesten Updates lesen können. Dies ist nützlich in Szenarien mit länger laufenden nachgeordneten Prozessen. 
+Hier ist ein Beispiel für eine in Account.csv partitionierte Datei und einen Snapshot-Ordner im Data Lake.
 
-Hier ist ein Beispiel für die model.json-Datei, die immer auf die aktuellste mit einem Zeitstempel versehene Konto-Momentaufnahme-Datei verweist. 
+![Momentaufnahme der Kontenentität](media/export-data-lake-account-snapshots.png "Momentaufnahme der Kontenentität") 
 
-![Beispiel Momentaufnahme-Json](media/sample-snapshot-json.png) 
+Änderungen in Common Data Service werden kontinuierlich mit Hilfe der Trickle-Feed-Engine in die entsprechenden CSV-Dateien übertragen. Dies ist das T2-Intervall, in dem eine weitere Momentaufnahme erstellt wird. *Entity*-T2.csv &mdash;zum Beispiel, Accounts-T2.csv oder Contacts-T2.csv (vorausgesetzt, es gibt Änderungen für die Entität) &mdash;und model.json werden auf die neuen Snapshot-Dateien aktualisiert. Jede neue Person, die die Snapshot-Daten ab T2 anzeigt, wird zu den neueren Snapshot-Dateien geleitet. Auf diese Weise kann der ursprüngliche Snapshot-Viewer weiterhin an den älteren Snapshot-T1-Dateien arbeiten, während neuere Viewer die neuesten Aktualisierungen lesen können. Dies ist in Szenarien mit länger laufenden Downstream-Prozessen nützlich. 
 
-## <a name="transporting-export-to-data-lake-configuration-across-environments"></a>Transportieren des Exports in die Data Lake-Konfiguration in verschiedenen Umgebungen
-In Power Apps werden Lösungen genutzt, um Anwendungen und Komponenten von einer Umgebung in eine andere zu transportieren oder eine Reihe von Anpassungen auf bestehende Anwendungen anzuwenden. Importieren Sie die Lösung Export in Data Lake Core in die Umgebung, um den Export in Data Lake-Konfigurationen zu ermöglichen. Dies ermöglicht grundlegende Funktionen für das Application Lifecycle Management (ALM) wie die Verteilung sowie das Sichern und Wiederherstellen des Exports in die Data Lake-Konfiguration. 
+Hier ist ein Beispiel für die Datei model.json, die immer auf die letzte zeitgestempelte Konto-Snapshot-Datei verweist. 
 
-### <a name="import-the-export-to-data-lake-core-solution"></a>Importieren Sie die Export to Data Lake Core-Lösung 
-1.  Von dem Power Apps Herstellerportal wählen Sie die Umgebung aus, in der Sie den Export in die Data Lake-Konfiguration verteilen möchten.
-2.  Wählen Sie im linken Navigationsbereich **Lösungen** aus und wählen Sie **Öffnen AppSource**, Suchen Sie nach der Lösung mit dem Namen **In Data Lake Core exportieren** und importieren Sie dann die Lösung.
+![Beispiel-Snapshot modell.json-Datei](media/sample-snapshot-json.png "Beispiel für eine Snapshot model.json-Datei") 
 
-### <a name="add-an-export-to-data-lake-configuration-to-a-solution"></a>Hinzufügen eines Exports zur Data Lake Konfiguration zu einer Lösung
+## <a name="transporting-an-export-to-data-lake-configuration-across-environments"></a>Transportieren einer Export to Data Lake-Konfiguration über mehrere Umgebungen hinweg
+
+In Power Apps werden Lösungen verwendet, um Anwendungen und Komponenten von einer Umgebung in eine andere zu transportieren oder um einen Satz von Anpassungen auf bestehende Anwendungen anzuwenden. Um die Export to Data Lake-Konfigurationen lösungsorientiert zu gestalten, importieren Sie die Export to Data Lake Core-Lösung in die Umgebung. Dies ermöglicht grundlegende ALM-Fähigkeiten (Application Lifecycle Management) wie Verteilung sowie Sicherung und Wiederherstellung der Export to Data Lake-Konfiguration. 
+
+### <a name="import-the-export-to-data-lake-core-solution"></a>Importieren Sie die Export to Data Lake Core-Lösung
+
+1.  Wählen Sie im Power Apps-Erstellerportal die Umgebung aus, in der Sie die Export to Data Lake-Konfiguration verteilen möchten.
+2.  Wählen Sie im linken Navigationsbereich **Lösungen**, wählen Sie **AppSource öffnen**, suchen Sie nach der Lösung mit dem Namen **Export to Data Lake Core** und importieren Sie dann die Lösung.
+
+### <a name="add-an-export-to-data-lake-configuration-to-a-solution"></a>Einer Lösung eine Export to Data Lake-Konfiguration hinzufügen
 
 > [!IMPORTANT]
-> Bevor Sie einen Export zur Data Lake Konfiguration hinzufügen können, müssen Sie die zuvor beschriebene Export to Data Lake Core-Lösung installieren. 
+> Bevor Sie eine Export to Data Lake-Konfiguration hinzufügen können, müssen Sie die zuvor beschriebene Export to Data Lake Core-Lösung installieren. 
 
-1.  Von dem Power Apps Herstellerportal wählen Sie die Umgebung aus, in der Sie den Export in die Data Lake-Konfiguration verteilen möchten, und klicken Sie dann im linken Navigationsbereich auf **Lösungen**. 
+1.  Wählen Sie im Power Apps Erstellerportal die Umgebung aus, in der Sie die Export to Data Lake-Konfiguration verteilen möchten, und wählen Sie dann im linken Navigationsbereich **Lösungen**. 
 2.  Wählen Sie **Neue Lösung** und geben Sie einen Namen ein, wählen Sie einen Herausgeber aus und geben Sie dann eine Versionsnummer an.  
 3.  Öffnen Sie die im vorherigen Schritt erstellte Lösung und wählen Sie **Vorhandenes hinzufügen** > **Andere** > **Export nach Data Lake Config**. 
 4.  Wählen Sie die verknüpften Data Lake Konfigurationen aus, die Sie möchten, und wählen Sie dann **hinzufügen** aus. 
-5.  In dem **Lösungen** Bereich, wählen Sie die Lösung, wählen Sie in der Befehlsleiste **Export**. 
+5.  Wählen Sie im Bereich **Lösungen** die Lösung aus und wählen Sie dann in der Befehlsleiste **Export**. 
 6.  In dem **Bevor Sie exportieren** Bereich auswählen **Veröffentlichen**, um alle Änderungen vor dem Export zu veröffentlichen, und wählen Sie dann **Nächster**. 
 
-### <a name="import-the-solution-that-contains-the-export-to-data-lake-configuration"></a>Importieren Sie die Lösung, die den Export in die Data Lake-Konfiguration enthält
-In der Umgebung, in die Sie Ihre Lösung importieren möchten, klicken Sie im Bereich Power Apps Herstellerportal **Lösungen** und importieren Sie die Lösung. 
+### <a name="import-the-solution-that-contains-the-export-to-data-lake-configuration"></a>Importieren Sie die Lösung, die die Konfiguration Export to Data Lake enthält
 
-#### <a name="verify-the-export-to-data-lake-configuration"></a>Prüfen Sie den Export zur Data Lake Konfiguration
-Von dem Power Apps Herstellerportal in der Umgebung, in der Sie den Export in die Data Lake-Konfiguration importiert haben, prüfen Sie, dass Sie Ihre verknüpften Data Lake sowie die Entitäten sehen können, die Sie aus Ihrer anderen Umgebung transportiert haben.
+In der Umgebung, in der Sie Ihre Lösung importieren möchten, importieren Sie im Bereich Power Apps Erstellerportal **Lösungen** die Lösung. 
+
+#### <a name="verify-the-export-to-data-lake-configuration"></a>Überprüfen Sie die Konfiguration Export to Data Lake
+
+Vergewissern Sie sich im Herstellerportal Power Apps in der Umgebung, in der Sie die Konfiguration Export to Data Lake importiert haben, dass Sie Ihren verknüpften Data Lake zusätzlich zu den Entitäten sehen können, die Sie aus Ihrer anderen Umgebung transportiert haben.
+
 > [!div class="mx-imgBorder"] 
-> ![Importierter Export in Data Lake-Entitäten](media/imported-export-entities.png) 
+> ![Importierte Export to Data Lake-Entitäten](media/imported-export-entities.png "Importierter Export in Data Lake-Entitäten") 
 
 ### <a name="see-also"></a>Siehe auch
+
 [Blog: Exportieren von CDS-Daten nach Azure Data Lake](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/)

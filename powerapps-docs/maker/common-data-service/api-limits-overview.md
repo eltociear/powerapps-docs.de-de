@@ -2,7 +2,7 @@
 title: API Grenzwerte, Übersicht (Common Data Service) | MicrosoftDocs
 description: Verstehen Sie die Begrenzungen für Common Data Service API-Anforderungen.
 ms.custom: ''
-ms.date: 12/08/2019
+ms.date: 03/05/2020
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aee2a6b256c991c178506c68a38f4821c341b1b5
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 69e55b7b917a95158caa13322be21471bd43df3a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909502"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109105"
 ---
 # <a name="common-data-service-api-limits-overview"></a>Common Data Service Übersicht über API-Grenzwerte
 
@@ -55,9 +55,9 @@ Um eine konsistente Verfügbarkeit und Leistung für alle zu gewährleisten, wen
 Wir begrenzen die Anzahl der gleichzeitigen Verbindungen pro Benutzerkonto, die Anzahl der API-Anforderungen pro Verbindung und die Ausführungszeit, die für jede Verbindung verwendet werden kann. Diese werden innerhalb eines fünfminütigen Schiebefensters ausgewertet. Wenn einer dieser Grenzwerte überschritten wird, gibt die Plattform eine Ausnahme zurück.
 
 > [!NOTE]
-> Serviceschutzbeschränkungen gelten für alle Anforderungen, nicht nur für die CRUD-Operationen für Entitäten, die auf Berechtigungsbeschränkungen angerechnet werden.
+> Die Schutzbegrenzungen für den Dienst gelten für alle externen Web-Service-Anfragen, nicht nur für die CRUD-Operationen an Entitäten, die auf die Berechtigungsbegrenzungen angerechnet werden.
 > 
-> Da Plug-Ins und benutzerdefinierte Workflow-Aktivitäten auf dem Server unabhängig eines angemeldeten Benutzers ausgeführt werden, gelten Serviceschutz API-Grenzwerte nicht für APi Auruflimiten, die für API-Aufrufe über Plug-In Codes erfolgen.
+> API-Beschränkungen für den Dienstschutz werden nicht auf API-Aufrufe innerhalb von Workflows, benutzerdefinierte Workflow-Aktivitäten oder Plugin-Code angewendet. Diese Operationen werden intern aufgerufen.
 
 Da Serviceschutzbeschränkungen normalerweise nur von Anwendungen angewendet werden, die eine große Anzahl von Datenvorgängen ausführen, wird empfohlen, dass Entwickler, die diese Anwendungen erstellen, nach einem bestimmten Zeitraum Muster anwenden, um Vorgänge erneut zu versuchen, wenn diese Ausnahmen zurückgegeben werden. Auf diese Weise kann die Anwendung auf vom Dienst gesendete Ausnahmen reagieren, die Gesamtzahl der Anforderungen verringern und den höchstmöglichen Durchsatz erzielen.
 

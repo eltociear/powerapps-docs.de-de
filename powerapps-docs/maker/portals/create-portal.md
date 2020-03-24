@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 02/07/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: fb5799514de32d3046ccba7479b3019da64bf4aa
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 987541aff2cb3585fa19c1c9f8007ad4a79b163d
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977003"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "3033096"
 ---
 # <a name="create-a-common-data-service-starter-portal"></a>Erstellen eines Common Data Service-Starterportal
 
@@ -56,6 +56,9 @@ So erstellen Sie ein Portal:
 
 5.  Geben Sie im Fenster **Portal neu erstellen** einen Namen für das Portal und die Adresse für die Website ein, und wählen Sie eine Sprache aus der Dropdownliste aus. Wählen Sie **Erstellen** aus, wenn Sie fertig sind.
 
+    > [!TIP]
+    > Um ein Portal in einer anderen Sprache zu erstellen, müssen Sie zunächst [die Sprache in der Umgebung](https://docs.microsoft.com/power-platform/admin/enable-languages#enable-the-language) aktivieren, damit sie in der Dropdown-Liste für die Sprache verfügbar ist.
+
     > [!div class=mx-imgBorder]
     > ![Erstellen eines neuen Portals](media/create-new-portal.png "Erstellen eines neuen Portals")  
 
@@ -74,7 +77,7 @@ Nachdem das Portal erfolgreich bereitgestellt wurde, wird der Status aktualisier
 Um das Portal im Power Apps Portal-Stuido zu bearbeiten, sehen Sie sich die Informationen unter [Bearbeiten eines Portals](manage-existing-portals.md#edit) an.
 
 > [!NOTE]
-> - Sie können maximal fünf Portale in einem Mandanten erstellen. Allerdings kann nur ein Portal des jeweiligen Typs in einer Umgebung erstellt werden.
+> - Von jedem Typ und für eine in einer Umgebung angelegte Sprache kann es nur ein Portal geben.
 > - Wenn Sie nicht über ausreichende Rechte verfügen, um ein Portal bereitzustellen, wird ein Fehler angezeigt. Sie müssen über die Systemadministrator-Rolle in Common Data Service verfügen, um ein Portal zu erstellen. Der **Zugriffsmodus** muss auch auf **Lesen-Schreiben** unter **Informationen zur Clientzugriffslizenz (CAL)** im Benutzerdatensatz festgelegt sein.
 > - Wenn Sie ein früheres Portal-Add-On erworben haben und ein Portal mit dem Add-On bereitstellen möchten, müssen Sie zur **Dynamics 365 Admin Center**-Seite gehen. Weitere Informationen: [Bereitstellen eines Portals mit dem früheren Portal-Add-On](provision-portal-add-on.md)
 > - Wenn Sie ein Portal mit dem früheren Portal-Add-On bereitgestellt haben, können Sie es trotzdem noch anpassen und verwalten aus [make.powerapps.com](https://make.powerapps.com).

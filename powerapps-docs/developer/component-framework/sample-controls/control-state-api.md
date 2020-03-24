@@ -10,12 +10,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
-ms.openlocfilehash: fa21dbb8d141f06066a2d7d61ad68cadcd77124a
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 1b76b9b506dcf1842da9ddbddd8bb21d7190cb60
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017454"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091193"
 ---
 # <a name="implementing-control-state-api-component"></a>Implementieren der Steuerelementstatus-API-Komponente
 
@@ -28,7 +28,7 @@ Wenn beispielsweise Ihre Code-Komponente eine lange Liste ist, durch die der Ben
 
 ## <a name="available-for"></a>Verfügbar für
 
-Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau)
+Modellgesteuerte Anwendungen und Canvas-Anwendungen (öffentliche Vorschau)
 
 ## <a name="manifest"></a>Manifest
 

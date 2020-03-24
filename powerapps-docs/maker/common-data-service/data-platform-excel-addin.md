@@ -13,17 +13,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24164d6eb03de550a1f3f4a8f3e8402154d03046
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7cf24511fd8f314fde5f653608c1a4fa43ebc4e4
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865605"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040653"
 ---
 # <a name="open-entity-data-in-excel"></a>Entitätsdaten in Excel öffnen
 Durch das Öffnen von Entitätsdaten in Microsoft Excel können Sie Daten mithilfe des Microsoft Power Apps Excel-Add-Ins schnell und problemlos anzeigen und bearbeiten. Das Power Apps Excel Add-in erfordert Microsoft Excel 2016.
 
 ![Excel-Add-In](./media/data-platform-cds-excel-addin/ExcelAddin.png "Power Apps Excel-Add-In")
+
+Um das Excel-Add-in Power Apps zu installieren, siehe [Microsoft PowerApps Office-Add-in](https://appsource.microsoft.com/en-us/product/office/WA104380330?tab=Overview). Weitere Informationen zum Hinzufügen oder Entfernen eines Office Excel-Add-ins finden Sie unter [Add-ins in Excel](https://support.office.com/en-us/article/add-or-remove-add-ins-in-excel-0af570c4-5cf3-4fa9-9b88-403625a0b460) hinzufügen oder entfernen.
 
 ## <a name="open-entity-data-in-excel"></a>Entitätsdaten in Excel öffnen
 1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**. Es werden alle Entitäten angezeigt.

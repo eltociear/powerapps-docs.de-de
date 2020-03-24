@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d1e8048f4cc4dbb2023788fcc3d3cf28fdfb7f7b
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 97c049394bac97106b6de970d40f07321ed927bd
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979687"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069625"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Konfigurieren von Hinweisen für Entitätsformulare und Internetformulare in Portalen
 
@@ -158,3 +158,6 @@ Wenn Sie ein benutzerdefiniertes Formular erstellt und den Abschnitt „Notizen�
 ## <a name="notes-configuration-for-web-forms"></a>Konfiguration von Notizen für Webformulare
 
 Webformularnotizen werden genau wie [Entitätsformularnotizen](#notes-configuration-for-entity-forms) konfiguriert. Erstellen Sie zunächst einen Metadatendatensatz für den Webformularschritt, der eine Notiz aufweist, und fügen Sie Konfigurationsmetadaten hinzu.
+
+> [!NOTE]
+> Der Beschreibung der Notizen muss das Präfix *WEB* (d.h. das Schlüsselwort „WEB“ mit einem Sternchen (*) davor und danach) vorangestellt werden, damit sie im Portal angezeigt werden können.

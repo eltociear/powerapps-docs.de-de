@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 46bfdf070970e89cbe6eeb9aa4d3864ab493794b
-ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
+ms.openlocfilehash: 8a84d9b52f913f3c7f6da2bf07e11124277f2f52
+ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012659"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095488"
 ---
 # <a name="package-a-code-component"></a>Verpacken einer Codekomponente
 
@@ -22,7 +22,7 @@ In diesem Thema wird beschrieben, wie Codekomponenten in Common Data Service imp
 
 So erstellen und importieren Sie eine Lösungsdatei:
 
-1. Erstellen Sie einen neuen Ordner in dem Ordner mit der `cdsproj`-Datei und nennen sie ihn **Lösungen** (oder einen beliebigen Namen Ihrer Wahl) mit dem Befehl `mkdir Solutions`. Navigieren Sie mit dem Befehl `cd Solutions` in das Verzeichnis.
+1. Erstellen Sie einen neuen Ordner in dem Ordner mit der `pcfproj`-Datei und nennen sie ihn **Lösungen** (oder einen beliebigen Namen Ihrer Wahl) mit dem Befehl `mkdir Solutions`. Navigieren Sie mit dem Befehl `cd Solutions` in das Verzeichnis.
 
 2. Erstellen Sie ein neues Lösungsprojekt mit dem folgenden Befehl. Das Lösungsprojekt wird für das Verpacken einer Codekomponente in einer ZIP-Datei der Lösung verwendet, die zum Importieren in Common Data Service verwendet wird.
    

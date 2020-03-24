@@ -12,25 +12,26 @@ ms.custom:
 ms.topic: article
 ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
-ms.openlocfilehash: 6401bead52f3a36fdd51595cb1fdf38510438459
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: cc809d81b7b9adf7327aa9cb8f74515816022118
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909203"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091233"
 ---
 # <a name="power-apps-component-framework-overview"></a>Power Apps component framework Übersicht
 
-Power Apps component framework ermöglicht professionellen Entwicklern und App-Entwicklern das Erstellen von Code-Komponenten für modellbasierte und Canvas-Apps (experimentelle Vorschau), um den Benutzern eine verbesserte Benutzererfahrung für die Arbeit mit Daten in Formularen, Ansichten und Dashboards zu bieten. Beispiel:
+Power Apps component framework können professionelle Entwickler und App-Hersteller Code-Komponenten für modellgesteuerte und Canvas-Apps erstellen (öffentliche Vorschau), um den Benutzern eine verbesserte Benutzererfahrung für die Arbeit mit Daten in Formularen, Ansichten und Dashboards zu bieten. Beispiel:
 
 - Ersetzen Sie ein Feld, das einen numerischen Textwert anzeigt, mit einer `dial`- oder `slider`-Code-Komponente.
 - Transformieren Sie eine Liste in eine völlig andere Sichterfahrung, die an das Dataset gebunden ist, z. B. `Calendar` oder `Map`.
 
 > [!IMPORTANT]
-> - Power Apps component framework befindet sich in der experimentellen Vorschau für Canvas-Anwendungen und in GA für modellgetriebene Anwendungen. Dies bedeutet, dass alle APIs, die für modellgetriebene Anwendungen unterstützt werden, möglicherweise noch nicht auf Canvas-Anwendungen unterstützt werden.
+> - PowerApps component framework befindet sich in der öffentlichen Vorschau für Canvas-Apps und ist im Allgemeinen für modellgesteuerte Apps verfügbar. Dies bedeutet, dass alle APIs, die für modellgetriebene Anwendungen unterstützt werden, möglicherweise noch nicht auf Canvas-Anwendungen unterstützt werden.
 > - Standardmäßig ist das Power Apps component framework für modellgesteuerte Apps aktiviert. Informationen zum Aktivieren dieser Funktion für Canvas-Apps finden Sie unter [Codekomponenten für Canvas-Apps](component-framework-for-canvas-apps.md).
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
-> - Canvas-Anwendungen unterstützen nur den Typ *Feld* der Codekomponenten und nicht den Typ *Datensatz*.
+> - Power Apps component framework funktioniert nur auf Einheitliche Oberfläche und nicht auf dem Webclient. 
+> - Power Apps component framework funktioniert nicht für lokale Instanzen. 
 
 ## <a name="how-is-it-different-from-web-resources"></a>Wie unterscheidet es sich von Webressourcen
 
@@ -48,6 +49,18 @@ Codekomponenten können mehrfach über verschiedene Entitäten und Formulare hin
 - Optimieren der Leistung.
 - Wiederverwendbarkeit
 - Bündeln Sie alle Dateien in einer einzigen Lösungsdatei.
+
+## <a name="licensing"></a>Lizenzierung
+
+Power Apps Lizenzanforderungen für das component framework stimmen mit den vorhandenen Konnektoren und Komponenten überein und basieren auf der Art der in Ihrer App verwendeten Daten und Verbindungen. Weitere Informationen [Power Apps Preise](https://powerapps.microsoft.com/pricing/). Um den Lizenzanforderungen gerecht zu werden, werden wir Codekomponenten in zwei Typen klassifizieren:
+
+- Code-Komponenten, die direkt und nicht über Konnektoren eine Verbindung zu externen Diensten oder Daten herstellen. Wenn diese Komponenten in einer App verwendet werden, wird die App zu einer Premium-App, für die Endbenutzer **Power Apps** Lizenzen benötigen.
+- Codekomponenten, die keine Verbindung zu externen Diensten oder Daten herstellen. Wenn diese Komponenten in einer App verwendet werden, die Standardfunktionen verwendet, bleibt die App Standard, und Endbenutzer müssen mindestens eine Lizenz für **Office 365** haben.
+
+> [!NOTE]
+> Wenn Sie derzeit Codekomponenten in modellgesteuerten Apps verwenden, mit denen eine Verbindung  zu Common Data Service besteht, benötigen Endbenutzer **Power Apps** Lizenzen.
+
+Mit der allgemeinen Verfügbarkeit des Frameworks können Entwickler von Codekomponenten Komponenten als Teil des Komponentenmanifests klassifizieren, damit Hersteller sehen können, welche Komponenten Premium sind.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

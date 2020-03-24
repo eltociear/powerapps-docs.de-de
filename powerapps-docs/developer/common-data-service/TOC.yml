@@ -394,6 +394,8 @@
           href: authenticate-dot-net-framework.md
         - name: OAuth verwenden
           href: authenticate-oauth.md
+        - name: Office365 Authentifizierung mit WS-Trust
+          href: authenticate-office365-deprecation.md
     - name: 'Lernprogramm: Registrieren einer App mit Azure Active Directory'
       href: walkthrough-register-app-azure-active-directory.md
     - name: Erstellen von Webanwendungen mit Server-to-Server-Authentifizierung (S2S)

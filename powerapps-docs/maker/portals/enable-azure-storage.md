@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/07/2020
+ms.date: 02/12/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 8575bdc4379091204dbdfe4fd04d9d2d56a06cc9
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: ceb25954357efeafec6b33338ff4b617af82ebda
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2976827"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069757"
 ---
 # <a name="enable-azure-storage"></a>Aktivieren von Azure Storage
 
@@ -24,6 +24,8 @@ Sie müssen ein Speicherkonto mit dem **Ressourcenmanager** als Bereitstellungsm
 
 Wenn das Speicherkonto ausgeführt wird, sind bestimmte globale Einstellungen für Portale erforderlich, die der Anwendung mitteilen, wie Ihr Speicherkonto lokalisiert werden kann. Navigieren Sie in der App Portalverwaltung zu **Einstellungen** > **Neu** und fügen Sie eine neue Einstellung mit dem Namen **FileStorage/CloudStorageAccount** hinzu.
 
+Die Integration der Azure-Speicherung funktioniert nur mit **Notizen**, die in den Entitätsformular-Metadaten konfiguriert sind. Azure Blob als Speicher wird nicht verwendet, wenn Sie **Portal-Kommentare** verwenden, die mit **Timeline** eingerichtet werden können. Obwohl die Portalkommentare auch die Möglichkeit bieten, Dateien als Anhang hochzuladen, werden diese Dateien nur in Common Data Service gespeichert.
+ 
 > [!NOTE]
 > Die maximale Dateigröße für den Upload beträgt 125 MB.
 

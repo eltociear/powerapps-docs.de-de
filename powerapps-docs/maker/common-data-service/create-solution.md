@@ -2,7 +2,7 @@
 title: Erstellen einer Lösung | MicrosoftDocs
 description: Erfahren Sie, wie eine Lösung erstellt wird
 ms.custom: ''
-ms.date: 10/30/2018
+ms.date: 02/28/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 25ea1db66e61d3e0b03090a0a91f35bd90d7b649
-ms.sourcegitcommit: b746aad895b152259680f5179dcee0281c951d0a
+ms.openlocfilehash: f4f2b4941e049a08bde978a318f5fda39f3dd30e
+ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "2948830"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "3093726"
 ---
 # <a name="create-a-solution"></a>Erstellen einer Lösung
 
-Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich einfacher für Sie, nur die Lösungskomponenten zu suchen, die Sie angepasst haben, wenn Sie eine separate Lösung erstellen, und alle Anpassungen dort vornehmen. Dies erleichtert auch den Export eines Backups Ihrer Lösung als kleinere Datei. Wenn Sie sich dafür entscheiden, müssen Sie stets daran denken, alle von Ihnen bearbeiteten Lösungskomponenten dieser Lösung hinzuzufügen. Wenn Sie neue Lösungskomponenten erstellen, sollten Sie sie immer im Kontext dieser Lösung erstellen. Dadurch wird das Lösungsherausgeberanpassungspräfix einheitlich verwendet. Nachdem Sie Lösungskomponenten in Ihrer Lösung erstellt oder bestehende Lösungskomponenten zu dieser Lösung hinzugefügt haben, können Sie sie jetzt nach Wunsch in der Standardlösung bearbeiten.  
+Um nur die Komponenten zu finden und mit ihnen zu arbeiten, die Sie angepasst haben, erstellen Sie eine Lösung und nehmen Sie dort alle Ihre Anpassungen vor. Denken Sie dann immer daran, im Kontext der angepassten Lösung zu arbeiten, wenn Sie Komponenten hinzufügen, bearbeiten und erstellen. Dadurch ist es einfach, Ihre Lösung zum Import in eine andere Umgebung oder als Backup zu exportieren.   
   
- Weitere Informationen zu Lösungskonzepte, siehe [Arbeiten mit Lösungen](solutions-overview.md).  
+Weitere Informationen zu Lösungskonzepte, siehe [Arbeiten mit Lösungen](solutions-overview.md).  
   
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** aus der linken Navigation. 
   
@@ -43,7 +43,7 @@ Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich 
     |-----------|-----------------|  
     |**Anzeigename**|Der in der Liste der Lösungen angezeigte Name. Sie können ihn später ändern.|  
     |**Name**|Der eindeutige Name der Lösung. Dieser wird anhand des Werts generiert, den Sie im Feld Anzeigename eingegeben haben. Sie können diesen bearbeiten, bevor Sie die Lösung speichern, nach dem Speichern der Lösung ist jedoch keine Änderung mehr möglich.|  
-    |**Herausgeber**|Sie können den Standardherausgeber auswählen oder einen neuen Herausgeber erstellen. Es wird empfohlen, einen Herausgeber für Ihre Organisation zu erstellen, der konsistent in Ihren Umgebungen verwendet wird, in denen Sie die Lösung verwenden. Weitere Informationen: [Ändern des Lösungsherausgeberpräfix für einen beliebigen Verleger](change-solution-publisher-prefix.md#change-the-solution-publisher-prefix-for-any-publisher) |  
+    |**Herausgeber**|Sie können den Standardherausgeber auswählen oder einen neuen Herausgeber erstellen. Es wird empfohlen, einen Herausgeber für Ihre Organisation zu erstellen, der konsistent in Ihren Umgebungen verwendet wird, in denen Sie die Lösung verwenden. Mehr Informationen: [Lösungsherausgeberübersicht](change-solution-publisher-prefix.md) |  
     |**Version**|Geben Sie eine Nummer für die Version Ihrer Lösung an. Dies ist nur erforderlich, wenn Sie die Lösung exportieren. Die Versionsnummer wird im Dateinamen enthalten sein, wenn Sie die Lösung exportieren.|  
   
 3.  Wählen Sie **Speichern** aus.  
@@ -68,5 +68,22 @@ Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich 
 > [!IMPORTANT]
 >  Wenn Sie Termine in Lösungen aufnehmen möchten, sollten Sie nicht nur Termine und nur Terminserien in separate Lösungen einschließen. Beim Installieren und Deinstallieren separater Lösungen mit verschiedenen Termintypen tritt ein SQL Server-Fehler auf, und die Termine müssen erneut erstellt werden. 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="publish-changes"></a>Änderungen veröffentlichen 
+
+ Bestimmte Anpassungen, die Änderungen an der Benutzeroberfläche vornehmen, erfordern, dass sie veröffentlicht werden, bevor Benutzern sie in der Anwendung verwenden können. 
+ 
+### <a name="publish-your-customizations"></a>Veröffentlichen Ihrer Anpassungen
+
+1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.
+
+2.  Wählen Sie die Lösung aus, die Sie öffentlichen möchten, um sie zu öffnen.
+
+3.  Wählen Sie in der Liste von Befehlen **Alle Anpassungen veröffentlichen** aus.  
+
+![Alle Anpassungen veröffentlichen](media/publish-all-customizations.PNG "Alle Anpassungen veröffentlichen")  
+  
+> [!IMPORTANT]
+>  Das Vorbereiten von Anpassungen nimmt möglicherweise einige Zeit in Anspruch. Wenn Sie eine Mitteilung sehen, dass die Browserseite nicht mehr reagiert, warten Sie darauf, dass diese wieder reagiert und schießen Sie sie nicht.  
+
+### <a name="see-also"></a>Siehe auch
  [Verwenden von Lösungen](use-solution-explorer.md)

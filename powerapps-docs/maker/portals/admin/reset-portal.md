@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 02/11/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 96e661f5774cedff7a3bc2317f02273af7041d13
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: b788d0b1a0935949e7114e220ad714fa6495c294
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978675"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069449"
 ---
 # <a name="reset-a-portal"></a>Ein Portal zurücksetzen
 
@@ -41,7 +41,8 @@ Um ein konfiguriert Portal zurücksetzen:
 > - Ohne die entsprechenden Berechtigungen einer zugeordneten Azure Active Directory-Anwendung wird ein Fehler angezeigt. Sie müssen den globalen Administrator für die entsprechenden Rechte kontaktieren.
 > - Wenn Sie ein Portal mit dem älteren Portal-Add-On bereitgestellt haben und das Portal erfolgreich zurückgesetzt wurde, werden der Portalname und sein Status auf der Registerkarte **Anwendungen** auf der Seite **Dynamics 365 Admin Center** nicht geändert. Beispielsweise wenn der Status Portalname und Portal 1 entsprechend konfiguriert wurden, ändern diese Werte nach dem Zurücksetzen des Portals nicht. Wenn Sie den Portalnamen ändern möchten, können Sie ihn auf der Registerkarte **Portaldetails** im Power Apps Portale Administrationscenter ändern. Allerdings kann der Wert nicht zu nicht konfiguriert zurückgesetzt werden.
 > - Beachten Sie bitte, dass es wichtig ist, dass der Status des Portals auf der Registerkarte **Anwendungen** nicht den Bereitstellungsstatus darstellt und sich nicht auf das Anliegen des Portals auswirkt. Es wird nur angezeigt, ob Sie jemals auf das Power Apps Portale Administrationscenter für das entsprechende Portal zugegriffen haben oder nicht.
-
+> - Wenn Sie ein Portal mit dem älteren Portal-Add-On bereitgestellt haben, können Sie das Portal auf **nicht konfiguriert** und [Erstellen Sie ein neues Portal](../provision-portal-add-on.md) zurücksetzen.
+ 
 Wenn das Portal nicht ordnungsgemäß bereitgestellt ist, hat es einen Fehlerstatus und der folgende Bildschirm wird angezeigt. Sie können in diesem Fall das Portal auch zurücksetzen, indem Sie **Portal zurücksetzen** auf dem Fehlerbildschirm auswählen.
 
 > [!div class=mx-imgBorder]

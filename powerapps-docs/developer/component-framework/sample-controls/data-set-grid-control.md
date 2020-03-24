@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: c879f6d73e8ae8d2244e20080fdf64d376ff9bfd
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 2a87a321db887e9d56f8be30da67465f084a1089
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017449"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091201"
 ---
 # <a name="implementing-data-set-component"></a>Implementieren der Daten-Set-Komponente
 
@@ -28,6 +28,9 @@ Diese Beispielkomponente zeigt, wie Sie die Benutzerfreundlichkeit beim Interagi
 ## <a name="available-for"></a>Verfügbar für 
 
 Modellgestützte Apps
+
+> [!NOTE]
+> Einige der Dataset-API-Methoden werden in Canvas-Anwendungen immer noch nicht unterstützt. Siehe [Dataset-Komponente für Canvas-Anwendungen](data-set-component-canvas.md), um mehr darüber zu erfahren, wie Komponenten vom Datensatztyp in Canvas-Anwendungen implementiert werden.
 
 ## <a name="manifest"></a>Manifest 
 

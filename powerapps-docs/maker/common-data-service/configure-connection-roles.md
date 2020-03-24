@@ -1,7 +1,7 @@
 ---
 title: Verbindungsrollen konfigurieren | MicrosoftDocs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 02/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 434dea11e5238167e824561e247bc23ddbb7839b
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 0827acf9d7699e6bf88374d57a6e5218e3000ef5
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874164"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040491"
 ---
 # <a name="configure-connection-roles"></a>Verbindungsrollen konfigurieren
 
@@ -49,46 +49,54 @@ Jeder Benutzer mit Schreibzugriff zur **Verbindungsrollen**-Entität kann defini
 
 ## <a name="view-connection-roles"></a>Verbindungsrollen anzeigen
 
-Es gibt mehrere Standardverbindungsrollen, die in Common Data Service konfiguriert werden. Um sie anzuzeigen, wechseln Sie zu Einstellungsbereich. 
+Es gibt mehrere Standardverbindungsrollen, die in Common Data Service konfiguriert werden.  
 
-### <a name="navigate-to-the-settings-area"></a>Navigieren Sie zum Einstellungsbereich
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wählen Sie dann im linken Fensterbereich **Lösungen**. 
+2. Öffnen Sie die gewünschte nicht verwaltete Lösung. 
+3. Wählen Sie in der Befehlsleiste **Existierende Lösungen** und dann **Verbindungsrolle**. 
+   Die Liste der verfügbaren Verbindungsrollen wird angezeigt. 
+4. Wählen Sie **Abbrechen**, um das Dialogfeld **Bestehende Verbindungsrollen hinzufügen** zu schließen, ohne der Lösung eine Verbindungsrolle hinzuzufügen.
 
-1. In einer modellgesteuerten App **Einstellungen** > **Erweiterte Einstellungen** auswählen. 
+> [!NOTE]
+> - Wenn Sie Verbindungsrollen mit einer Lösung verteilen möchten, stellen Sie sicher, dass sie in der Lösung enthaltenen sind, die Sie verteilen möchten. Weitere Informationen: [Fügen Sie Verbindungsrollen einer Lösung hinzu](#add-connection-roles-to-a-solution)
+
+### <a name="view-and-edit-connection-roles-using-the-classic-experience"></a>Anzeigen und Bearbeiten von Verbindungsrollen unter Verwendung der klassischen Erfahrung
+
+Die meisten der Verbindungsrollen, die Sie im Bereich **Einstellungen** sehen können, sind innerhalb des Bereichs *Intern* **Standardlösung** definiert (nicht zu verwechseln mit der **Common Data Services Standardlösung**). Diese interne **Standardlösung** enthält alle Anpassungen im System. Um die **Standardlösung** anzuzeigen, wählen Sie **Alle Lösungen - intern** anzeigen. 
+
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie dann in der Befehlsleiste **Einstellungen**![Einstellungen](media/powerapps-gear.png) und dann **Erweiterte Einstellungen**.
 2. Navigieren Sie zu **Einstellungen** > **Geschäftlich** > **Unternehmensmanagement** und dann auf **Verbindungsrollen**.
 
    > [!div class="mx-imgBorder"] 
-    > ![Verbindungsrollen in den Business Management-Einstellungen](media/navigate-settings-connection-roles.png "Verbindungsrollen in den Business Management-Einstellungen")
+   > ![Verbindungsrollen in den Business Management-Einstellungen](media/navigate-settings-connection-roles.png "Verbindungsrollen in den Business Management-Einstellungen")
 
 In dieser Ansicht können Sie alle Verbindungsrollen sehen, die für die Umgebung verfügbar sind und Sie können Sie hier bearbeiten.
 
-> [!NOTE]
-> Wenn Sie Verbindungsrollen mit einer Lösung verteilen möchten, stellen Sie sicher, dass sie in der Lösung enthaltenen sind, die Sie verteilen möchten. Weitere Informationen: [Fügen Sie Verbindungsrollen einer Lösung hinzu](#add-connection-roles-to-a-solution)
-
-## <a name="view-connection-roles-in-the-solution-explorer"></a>Verbindungsrollen im Lösungs-Explorer anzeigen.
-
+## <a name="add-connection-roles-to-a-solution"></a>Verbindungsrollen einer Lösung hinzufügen
 Da Verbindungsrollen *Lösungsbewusst* sind, d.h. sie können einer Lösung hinzugefügt werden, können Sie auch Verbindungsrollen einer Lösung zum Verteilen hinzufügen.
 
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
+Im Allgemeinen wird jedoch nicht empfohlen, Komponenten in der internen **Standardlösung** zu bearbeiten. Innerhalb der Lösung, die Sie für die Arbeit in der Lösung erstellt haben, können Sie den Befehl **Bestehende hinzufügen** im Bereich **Lösungen** verwenden, um jede der aktiven Verbindungsrollen in Ihre Lösung zu bringen.
 
-Die meisten Verbindungsrollen, die Sie im Bereich **Einstellungen** sehen, werden in der *internen* **Standardlösung** definiert (nicht zu verwechseln mit der **Common Data Services-Standardlösung**). Diese interne **Standardlösung** enthält alle Anpassungen im System. Um die **Standardlösung** anzuzeigen, wählen Sie **Alle Lösungen - intern** anzeigen.
-
-## <a name="add-connection-roles-to-a-solution"></a>Verbindungsrollen einer Lösung hinzufügen
-
-Im Allgemeinen wird jedoch nicht empfohlen, Komponenten in der internen **Standardlösung** zu bearbeiten. In der **Common Data Service-Standardlösung** oder einer anderen Lösung, in der Sie Arbeit erstellt haben, können Sie den Befehl **Bestehendes hinzufügen** auswählen, um eine Standardverbindungsrolle in die Lösung zu integrieren.
-
-![Bestehende Verbindungsrolle hinzufügen](media/add-existing-connection-role.png)
+> [!div class="mx-imgBorder"] 
+> ![Bestehende Verbindungsrolle hinzufügen](media/add-existing-connection-role.png)
 
 Nachdem Sie eine entsprechende Verbindungsrolle Ihrer Lösung hinzugefügt haben, können Sie sie ändern, wo sie angezeigt wird.
 
-## <a name="create-or-edit-connection-roles"></a>Erstellen oder bearbeiten von Verbindungsrollen.
+> [!NOTE]
+> Der Status der Verbindungsrolle wird beim Export aus einer Lösung nicht in die Verbindungsrolle übernommen. Wenn die Lösung in eine Zielumgebung importiert wird, wird der Status daher standardmäßig auf aktiv gesetzt. 
+
+
+## <a name="create-a-connection-role"></a>Erstellen einer Verbindungsrolle
 
 > [!IMPORTANT]
 > Wenn Sie eine Lösung verteilen möchten, die neue Verbindungsrollen enthält oder Änderungen an vorhandenen Verbindungsrollen machen möchten, müssen Sie sie der Lösung hinzufügen, die Sie verteilen möchten. Neue Verbindungsrollen bearbeiten oder hinzufügen mithilfe vom Bereich **Einstellungen** fügt diese Verbindungsollen der internen **Standardlösung** hinzu und wird sie nicht in der Lösung integrieren, die Sie verteilen, es sei denn, Sie fügen das Ihrer Lösung hinzu. Weitere Informationen: [Fügen Sie Verbindungsrollen einer Lösung hinzu](#add-connection-roles-to-a-solution)
 
-In der Liste **Verbindungsrollen** wählen Sie eine der Verbindungsrollen aus, um sie zu bearbeiten.
-Es gibt drei Schritte, um eine Verbindungsrolle zu definieren, die im Formular eindeutig ausgerufen wird.
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie dann im linken Fensterbereich **Lösungen**. 
+2. Öffnen Sie die gewünschte nicht verwaltete Lösung und wählen Sie dann in der Befehlsleiste **Neu** > **Andere** > **Verbindungsrolle**. 
+3. Füllen Sie die drei Schritte auf dem Formular aus, um [Beschreiben Sie die Verbindungsrolle](#describe-the-connection-role).
 
-![Verbindungsrollen-Formular erstellen](media/create-connection-role-form.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Verbindungsrollen-Formular erstellen](media/create-connection-role-form.png)
 
 ### <a name="describe-the-connection-role"></a>Beschreiben der Verbindungsrolle
 
@@ -114,14 +122,14 @@ Die standardmäßige **Verbindungsrollen-Kategorie**-Werte lauten:
 
 Sie können neue Kategorien hinzufügen oder vorhandene ändern, indem Sie die **Kategorie** globalen Optionssatz bearbeiten. Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service (Auswahllisten)](create-edit-global-option-sets.md)
 
-### <a name="select-record-types"></a>Datensatztyp auswählen
+#### <a name="select-record-types"></a>Datensatztyp auswählen
 
 Wählen Sie aus, welche Datensatztypen angezeigt werden sollen - Organisation.
 
 > [!NOTE]
 > Obwohl standardmäßig **Alle** ausgewählt wird, stellen Sie sicher, dass Sie überlegen, welche Arten für die Verbindungsrolle geeignet sind, die Sie hinzufügen.
 
-### <a name="matching-connection-roles"></a>Verbindungsrollen: Übereinstimmend
+#### <a name="matching-connection-roles"></a>Verbindungsrollen: Übereinstimmend
 
 In diesem optionalen Schritt können Sie alle Rollen definieren, die in einer Weise gegenseitig angewendet werden. Es ist kein Pflichtfeld, aber Verbindungen sind sinnvoller, wenn diese definiert werden.
 

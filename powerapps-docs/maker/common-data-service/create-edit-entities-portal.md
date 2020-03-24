@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2aa8cb6f5bb0cd3e58eda61c2b9c7b9d03637ec7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 199399fe75103df2d8fde902d54a803ec56fc395
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866089"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040565"
 ---
 # <a name="create-and-edit-entities-using-power-apps-portal"></a>Entitäten mit dem Power Apps-Portal erstellen und bearbeiten
 
@@ -38,8 +38,7 @@ PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch b
 
 ## <a name="view-entities"></a>Entitäten anzeigen
 
-1. Wählen Sie im [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
-2. Wählen Sie **Daten** > **Entitäten** aus.
+1. Wählen Sie auf dem [Power Apps Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Daten** > **Entitäten**.
 
 ![Entitäten anzeigen](media/view-entities-portal.png)
 
@@ -50,6 +49,7 @@ Sie können die Entitäten filtern, die Sie mit der folgenden Ansichten in einer
  |Ansicht|Beschreibung|
  |--|--|
  |**Alle**| Zeigt alle Entitäten an|
+ |**Verwaltet**| Zeigt nur verwaltete und Standard-Entitäten an|
  |**Benutzerdefiniert**|Zeigt nur benutzerdefinierte Entitäten an|
  |**Standard**|Zeigt nur die Standard-Entitäten |
 
@@ -68,23 +68,33 @@ Geben Sie Daten in die folgenden Felder ein:
 |**Anzeigename**|Dies ist der Name im Singular für die Entität, die in der App angezeigt wird. Dieses Limit kann später geändert werden.|
 |**Plural-Anzeigename**|Dies ist der Name im Plural für die Entität, die in der App angezeigt wird. Dieses Limit kann später geändert werden.|
 |**Name**|Dieses Feld wird basierend auf dem von Ihnen eingegebenen **Anzeigenamen** vorab ausgefüllt. Es enthält das Anpassungspräfix des Common Data Service-Lösungsherausgebers. Eine spätere Änderung ist nach dem Speichern der Entität nicht möglich.|
-|**Beschreibung**|Geben Sie eine aussagekräftige Beschreibung des Zwecks der Entität ein.|
+|**Primärname**|Dies ist das einzige an dieser Stelle sichtbare Feld.| Bearbeiten Sie es, wenn Sie den **Anzeigename**oder **Name** des Feldes ändern möchten.
+|**Anzeigename**|Dies ist der wichtigste benutzerfreundliche Textbezeichner für Ihren Datensatz (normalerweise ein Name oder eine Nummer). Der Wert dieses Feldes wird den Benutzern angezeigt, wenn sie aus einer Liste von Datensätzen auswählen müssen.
+|**Name**|Dieses Feld wird basierend auf dem von Ihnen eingegebenen **Anzeigenamen** vorab ausgefüllt. Es enthält das Anpassungspräfix des Common Data Service-Lösungsherausgebers. Eine spätere Änderung ist nach dem Speichern der Entität nicht möglich.|
 
-Wählen Sie **Weiter**, um fortzufahren, dadurch wird der Bereich **Neue Entität** beendet und die Liste der Felder angezeigt.
+Wählen Sie **Anhänge** aktivieren, um Notizen und Dateien an Datensätze für diese Entität anzuhängen.
 
-Das Feld **Primärer Name** ist das einzige Feld, das zu einem späteren Zeitpunkt angezeigt wird. Aktivieren Sie das Kontrollkästchen **Primärer Name**, um ihn zu bearbeiten, wenn Sie **Anzeigename** oder **Name** im Feld ändern möchten. Die Werte sind standardmäßig und unten angezeigt:
+Wählen Sie **Weitere Einstellungen**. Diese Einstellungen sind für eine Entität optional.
+
+|Feld|Beschreibung|
+|--|--|
+|**Beschreibung**|Geben Sie eine aussagekräftige Beschreibung des Entitätszwecks ein.|
+|**Entitätstyp und Eigentümer**|Schalten Sie den Entitätstyp auf Aktivitätsentität um, um Entitäten anzulegen, die Aufgaben verwalten können. Der Typ **Eigentümer** definiert, wer Operationen auf einem Datensatz durchführen kann.|
+|**Zusammenarbeit**|Aktivieren Sie Funktionen, die den Benutzern die Zusammenarbeit an dieser Entität erleichtern.|
+|**Einstellungen erstellen und aktualisieren**|Sie können die schnelle Erstellung von Formularen aktivieren, um Ihrer Anwendung eine optimierte Dateneingabe zu ermöglichen. Mit der Dublettenerkennung können Sie Richtlinien für die Dublettenerkennung festlegen und Regeln für die Dublettenerkennung erstellen. Die Änderungsverfolgung bietet eine Möglichkeit, die Daten performant zu synchronisieren.|
+|**Dynamics 365 for Outlook**|Konfigurieren Sie, wie diese Entität in Outlook angezeigt wird.|
+
+Wählen Sie **Erstellen** um fortzufahren. Dadurch wird das Fenster **Neue Entität** geschlossen und die Liste der Felder angezeigt.
+
+Das Feld **Primärname** der Entität wird in der Liste der Felder angezeigt. Aktivieren Sie das Kontrollkästchen **Primärer Name**, um ihn zu bearbeiten, wenn Sie **Anzeigename** oder **Name** im Feld ändern möchten. Die Werte sind standardmäßig und unten angezeigt:
 
 ![Name für Primärbereich](media/primary-name-panel.png)
 
-Wählen Sie **Entität speichern**, um die Entität zu erstellen oder weiter zu bearbeiten.
-
-![Die Entität speichern.](media/save-entity-portal.png)
-
-## <a name="edit-an-entity"></a>Bearbeiten einer Entität
+## <a name="edit-an-entity"></a>Entität bearbeiten
 
 Während dem [Anzeigen von Feldern](#view-entities) klicken Sie auf das Feld, das Sie bearbeiten möchten.
 
-Wählen Sie die Einstellungen im Menü , wenn Sie **Anzeigename**, **Mehrzahl- Anzeigename** oder **Beschreibung** für die Entität verwenden möchten.
+Wählen Sie **Einstellungen** aus dem Menü, wenn Sie den **Anzeigename**, **Pluraler Anzeigename** oder **Beschreibung** für die Entität bearbeiten möchten.
 
 ![Entitätseinstellungen](media/entity-settings-portal.png)
 
@@ -92,7 +102,7 @@ Für andere Elemente wählen Sie aus den Registerkarten.
 
 ### <a name="fields"></a>Felder
 
-Vgl. [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)
+Siehe [Felder anlegen und bearbeiten](create-edit-fields.md)
 
 ### <a name="relationships"></a>Beziehungen
 
@@ -141,7 +151,7 @@ Als Benutzer mit der Sicherheitsrolle "Systemadministrator" können Sie benutzer
 > [!NOTE]
 > Die einzige Möglichkeit, Daten aus einer Entität wiederherzustellen, die entfernt wurde, besteht darin, die Datenbank von einem Zeitpunkt wiederherzustellen, bevor die Entität gelöscht wurde. Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung von Instanzen.](/dynamics365/customer-engagement/admin/backup-restore-instances)
 
-Unter [Betrachtungsentitäten](#view-entities) wählen Sie die Entität, und wählen **Löschungsentität** aus dem Menü oder dem Kontextmenü.
+Wenn Sie [Entitäten](#view-entities) ansehen, wählen Sie die Entität aus und wählen Sie **Entität löschen** aus dem Menü.
 
 ![Löschen einer Entität mithilfe des Power Apps-Portals](media/delete-entity-powerapps-portal.png)
 

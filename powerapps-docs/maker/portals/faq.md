@@ -6,21 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/17/2020
+ms.date: 03/04/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.openlocfilehash: 9293288a8f3de86807342466771d197754b65706
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2988077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100013"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps Portale-FAQs
 
 Damit Sie eine schnelle Übersicht erhalten, haben wir eine Liste mit häufig gestellten Fragen sowie kurze Antworten zusammengestellt, damit Sie schnell Ihre Informationen erhalten können.
 
 ## <a name="general"></a>Allgemein
+
+### <a name="does-power-apps-portals-support-tls-12"></a>Unterstützt Power Apps-Portale TLS 1.2?
+
+Power Apps-Portale ab Version 8.3 unterstützt [TLS 1.2](https://support.microsoft.com/help/4041984/portal-capabilities-for-microsoft-dynamics-365-version-8-3-2-85-releas).
 
 ### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>Was ist der Unterschied zwischen Power Apps Portal, Dynamics 365 Portalen und Add-On Portalen?
 
@@ -32,9 +36,11 @@ Sie können den Typ eines Portals über das [Power Apps Portals Administratorcen
 
 ![Power Apps Portaltyp](./media/power-apps-portals-type.png)
 
-Für Add-On-Portale wurde dem Portaltyp das Suffix Add-On hinzugefügt. Ein Produktions-Add-On-Portal-Typ wird beispielsweise als Produktion (Add-On) aufgeführt.
+Weitere Unterschiede zwischen Power Apps-Portalen mit kapazitätsbasierten Lizenzen und add-on-basierten Lizenzen:
 
-Es gibt keinen Unterschied in der Funktionalität zwischen Power Apps Portalen mit kapazitätsbasierten Lizenzen und Add-On-basierten Lizenzen. Die Bereitstellungsmethode für Portale mit kapazitätsbasierten Lizenzen und Add-On-basierten Lizenzen ist jedoch unterschiedlich.
+- Für Add-On-Portale wurde dem Portaltyp das Suffix Add-On hinzugefügt. Ein Produktions-Add-On-Portal-Typ wird beispielsweise als Produktion (Add-On) aufgeführt.
+- Power Apps-Portale haben einen [anderen Caching-Mechanismus](https://powerapps.microsoft.com/en-us/blog/publishing-changes-to-powerapps-portals/) im Vergleich zu Portalen mit Add-on-basierten Lizenzen.
+- Die Bereitstellungsmethode ist bei Portalen mit kapazitätsbasierten Lizenzen anders als bei Portalen mit add-on-basierten Lizenzen.
 
 Sie können Power Apps Portale mit kapazitätsbasierter Lizenz mit den in den folgenden Artikeln beschriebenen Schritten erstellen:
 
@@ -213,6 +219,10 @@ Wenn Sie die URL Ihrer Common Data Service-Umgebung ändern, funktioniert Ihr Po
 Das Portal wird neu gestartet und funktioniert wieder.
 
 ## <a name="debugging-and-fixing-problems"></a>Debuggen und Beheben von Problemen
+
+### <a name="performance-of-entity-forms-actions-such-as-createupdatedelete-on-entity-forms-take-a-lot-of-time-to-complete-or-timeout"></a>Leistung der Entitätsformen: Aktionen wie das Erstellen/Aktualisieren/Löschen von Entitätsformularen nehmen viel Zeit in Anspruch oder werden zeitweise abgebrochen.
+
+Dies kann aus verschiedenen Gründen geschehen, abhängig von Ihren Daten und den Anpassungen, die an dieser Entität innerhalb von Common Data Service vorgenommen wurden. Bei der Fehlerbehebung solcher leistungsbezogenen Probleme bei Datensatzaktionen von Portalen ist sicherzustellen, dass keine synchronen Plugins für diese Ereignisse registriert sind, die diese Verzögerungen möglicherweise verursachen könnten. Wo immer möglich, versuchen Sie, sie asynchron zu implementieren, damit sie die Transaktion nicht halten oder verzögern.
 
 ### <a name="when-accessing-my-portal-i-see-a-generic-error-page-how-can-i-see-the-actual-error"></a>Wenn ich auf mein Portal zugreife, wird eine allgemeine Fehlerseite angezeigt. Wie kann ich den tatsächlichen Fehler anzeigen?
 

@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9859fd06ca31ed44d22474cd92491fc3194252c6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cf8fdf1b14ef7bbc503c49fac217bb071bd56305
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861733"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029764"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Häufige Probleme und Lösungen für Lösungsprüfer
 
@@ -220,7 +220,7 @@ Wenn eine Lösung eine Geschäftsprozessflusskomponente im Entwurfsstatus enthä
 
 Referenz [Wissensdatenbankartikel #4337537: Ungültiger Export – Geschäftsprozessentität fehlt](https://support.microsoft.com/en-hk/help/4337537/invalid-export-business-process-entity-missing) für Einzelheiten zum Fehler und Schritte zur Lösung.
 
-## <a name="solution-cchecker-fails-to-export-patched-solutions"></a>Der Lösungsprüfer kann keine gepatchten Lösungen exportieren
+## <a name="solution-checker-fails-to-export-patched-solutions"></a>Die Lösungsprüfung kann keine gepatchten Lösungen exportieren
 
 Wenn eine Lösung mit einem [Patch](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates) installiert wurde, kann der Solution Checker die Lösung nicht zur Analyse exportieren. Wenn eine Lösung mit einem Patch versehen wurde, wird die ursprüngliche Lösung gesperrt und kann nicht geändert oder exportiert werden, solange es abhängige Patches in dem Unternehmen gibt, die die Lösung als übergeordnete Lösung identifizieren.
 

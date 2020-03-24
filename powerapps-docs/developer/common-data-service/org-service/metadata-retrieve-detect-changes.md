@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ce5d1442fce4720d2d0d489f8dbadd7c5f7db43b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 18b5659731f790196a11fb4b27c84bead474940f
+ms.sourcegitcommit: c8d982ad7da95206bbe40c8a8e4debd58edd67db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752958"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "3082308"
 ---
 # <a name="retrieve-and-detect-changes-to-metadata"></a>Abrufen und Erkennen von Änderungen bei Metadaten
 
@@ -463,7 +463,7 @@ protected String updateOptionLabelList(EntityQueryExpression entityQueryExpressi
 ### <a name="see-also"></a>Siehe auch  
  [Schreiben von Anwendungen und Servererweiterungen](/dynamics365/customer-engagement/developer/extend-dynamics-365-server)   
  [Offline-Verwendung der Dynamics 365-Services](/dynamics365/customer-engagement/developer/org-service/offline-use-services)   
- [Beispiel: Abfragen von Metadaten und Erkennen von Änderungen](/dynamics365/customer-engagement/developer/org-service/sample-query-metadata-detect-changes)   
+ [Beispiel: Abfragen von Metadaten und Erkennen von Änderungen](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/MetadataQuery)   
  [Erweitern Sie das Metadatenmodell für Dynamics 365](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)   
  [Anpassen von Entitätsmetadaten](/dynamics365/customer-engagement/developer/customize-entity-metadata)   
  [Anpassen von Entitätsattributmetadaten](/dynamics365/customer-engagement/developer/customize-entity-attribute-metadata)   

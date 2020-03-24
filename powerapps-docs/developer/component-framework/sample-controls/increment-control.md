@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f5c3fe93939ae2eb37457490c45689fc967df590
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 3a9b6880b681cffac05f98f623116c4748091ea8
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017444"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091197"
 ---
 # <a name="implementing-increment-component"></a>Implementieren einer Erhöhungskomponente
 
@@ -26,7 +26,7 @@ Wenn Sie diese Komponente implementieren möchten, müssen Sie als erstes die [M
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
+Modellgesteuerte Anwendungen und Canvas-Anwendungen (öffentliche Vorschau) 
 
 ## <a name="manifest"></a>Manifest
 

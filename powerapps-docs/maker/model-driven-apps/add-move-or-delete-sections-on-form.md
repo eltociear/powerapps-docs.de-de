@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c8ead91a40fc0f79f801fee64c8eff2891723264
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2731520659633c305e19e02b67670bb12796dc50
+ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863821"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "3094020"
 ---
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>Hinzufügen, Konfigurieren, Verschieben oder Löschen von Abschnitten in einem Formular 
 Sie können Abschnitte in einem Formular mithilfe des Formulardesigners hinzufügen, konfigurieren, verschieben oder löschen. 
@@ -113,7 +113,8 @@ Sie können Abschnitte in einem Formular entweder per Drag & Drop oder durch Aus
     >   - Wenn Sie einen Abschnitt versehentlich löschen, wählen Sie in der Befehlsleiste **Rückgängig** aus, um das Formular in seinen vorherigen Zustand zurückzusetzen. 
     >   - Sie können einen Abschnitt nicht löschen, der benötigte oder gesperrte Felder enthält. 
     >   - Sie können keinen gesperrten Abschnitt löschen. 
-    >   - Eine Registerkarte muss mindestens einen Abschnitt in jeder Registerkartenspalte haben. Wenn Sie den letzten verbleibenden Abschnitt in einer Registerkartenspalte löschen, wird ein neuer Abschnitt automatisch hinzugefügt. 
+    >   - Eine Registerkarte muss mindestens einen Abschnitt in jeder Registerkartenspalte haben. Wenn Sie den letzten verbleibenden Abschnitt in einer Registerkartenspalte löschen, wird ein neuer Abschnitt automatisch hinzugefügt.
+    >   - In der einheitlichen Benutzeroberfläche werden Abschnitte nicht dargestellt, wenn Sie sie einschließlich des Titels und des Rahmens ausgeblendet haben.  Dies unterscheidet sich von dem herkömmlichen Web-Client und ist so konzipiert, dass die korrekte Darstellung des Formulars über verschiedene Ansichtsports von extra breit bis schmal gewährleistet ist.
 
 ### <a name="see-also"></a>Siehe auch
 [Übersicht über den modellgestützten Formulardesigner](form-designer-overview.md)  

@@ -3,9 +3,13 @@
     - name: Übersicht
       href: overview.md
     - name: Was sind Codekomponenten?
-      href: custom-controls-overview.md
-    - name: Codekomponenten für Canvas-Apps
-      href: component-framework-for-canvas-apps.md
+      items:
+        - name: Übersicht
+          href: custom-controls-overview.md
+        - name: Code-Komponenten für modellgesteuerte Anwendungen
+          href: code-components-model-driven-apps.md
+        - name: Codekomponenten für Canvas-Apps
+          href: component-framework-for-canvas-apps.md
     - name: Power Apps CLI abrufen
       href: get-powerapps-cli.md
     - name: Tutorial
@@ -34,6 +38,8 @@
           href: issues-and-workarounds.md
         - name: Einschränkungen
           href: limitations.md
+    - name: Häufig gestellte Fragen
+      href: faq.md
     - name: Beispielkomponenten
       items:
         - name: Beispielkomponenten verwenden
@@ -42,8 +48,10 @@
           href: sample-controls/angular-flip-control.md
         - name: Steuerelementstatus-API-Komponente
           href: sample-controls/control-state-api.md
-        - name: Dataset-Rasterkomponente
+        - name: Dataset Grid-Komponente für modellgetriebene Apps
           href: sample-controls/data-set-grid-control.md
+        - name: Datenset Komponenen für Canvas-Apps
+          href: sample-controls/data-set-component-canvas.md
         - name: Formatieren der API-Komponente
           href: sample-controls/formatting-api-control.md
         - name: IFRAME-Komponente
@@ -340,7 +348,13 @@
               href: manifest-schema-reference/feature-usage.md
             - name: uses-feature
               href: manifest-schema-reference/uses-feature.md
-    - name: Communityressourcen
-      href: community-resources.md
+    - name: Ressourcen
+      items:
+        - name: Communityressourcen
+          href: community-resources.md
+        - name: Community-Forum
+          href: 'https://aka.ms/PCFForum'
+        - name: Funktions-Ideen
+          href: 'https://aka.ms/PCFIdea'
     - name: Teilen Sie Ihr Feedback
       href: share-your-feedback-for-pcf.md

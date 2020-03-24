@@ -19,18 +19,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ce1c313c5c3b76f57d3ed2c04acba048a0772fe2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3aa755e0f6f0d5d403c6a4d1c6d585009aa912b2
+ms.sourcegitcommit: 04ba6f3773b23e4e89c23269b84707d19e9ed04c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748499"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "3094384"
 ---
 # <a name="create-and-update-option-sets-using-the-web-api"></a>Erstellen und Aktualisieren von Optionssätzen mit der Web-API
 
 Normalerweise können Sie mithilfe von *globalen* Optionssätzen Felder festlegen, sodass andere Felder denselben Satz von Optionen nutzen können, die an einem Ort verwaltet werden. Anders als *lokale* Optionssätze, die nur für ein bestimmtes Attribut definiert werden, können Sie Globale Optionssätze wiederverwenden. Sie können auch in Anforderungsparametern auf eine ähnliche Weise wie eine Enumeration verwendet werden.  
   
-Beim Definieren eines globalen Optionssatzes mithilfe einer POST-Anfrage an *[Organisations-URI]*`/api/data/v9.0/GlobalOptionSetDefinitions` wird empfohlen, das System einen Wert zuweisen zu lassen. Dazu übergeben Sie einen **null** -Wert, wenn Sie die neue `OptionMetadata`-Instanz erstellen. Wenn Sie eine Option definieren, enthält sie ein für den Kontext des Herausgebers spezifisches Optionswertpräfix, festgelegt für die Lösung, in der der Optionssatz erstellt wird. Dieses Präfix hilft, die Möglichkeit der Erstellung von doppelten Optionssätzen für eine verwaltete Lösung zu verringern, sowie in allen Optionssätzen, die in Organisationen definiert werden, in denen die verwaltete Lösung installiert ist. Weitere Informationen finden Sie unter [Zusammenführung von Optionssatz-Optionen](../understand-managed-solutions-merged.md#merge-option-set-options).
+Beim Definieren eines globalen Optionssatzes mithilfe einer POST-Anfrage an *[Organisations-URI]*`/api/data/v9.0/GlobalOptionSetDefinitions` wird empfohlen, das System einen Wert zuweisen zu lassen. Dazu übergeben Sie einen **null** -Wert, wenn Sie die neue `OptionMetadata`-Instanz erstellen. Wenn Sie eine Option definieren, enthält sie ein für den Kontext des Herausgebers spezifisches Optionswertpräfix, festgelegt für die Lösung, in der der Optionssatz erstellt wird. Dieses Präfix hilft, die Möglichkeit der Erstellung von doppelten Optionssätzen für eine verwaltete Lösung zu verringern, sowie in allen Optionssätzen, die in Organisationen definiert werden, in denen die verwaltete Lösung installiert ist. Weitere Informationen finden Sie unter [Zusammenführung von Optionssatz-Optionen](../../../maker/common-data-service/how-managed-solutions-merged.md#merge-option-set-options).
 
  ## <a name="messages"></a>Nachrichten  
  Die folgende Tabelle enthält die Meldungen, die Sie mit globalen Optionssätzen verwenden können.  

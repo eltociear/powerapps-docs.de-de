@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fdeea48a4bcdb996580d542a01a61fef22625b98
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3481ef129b91883df648b956a31fffc9aa55067e
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748398"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091253"
 ---
 # <a name="create-extensions-for-the-code-generation-tool"></a>Erstellen von Erweiterungen für das Codegenerierungstool
 
@@ -133,5 +133,4 @@ Guid accountId = service.Create(account);
 
  [Entitätsklassen mit früher Bindung mit dem Codegenerierungstool erstellen (CrmSvcUtil.exe)](/dynamics365/customer-engagement/developer/create-early-bound-entity-classes-code-generation-tool)<br />
  [Verwenden der Entitätsklassen mit früher Bindung zum Erstellen, Löschen und Aktualisieren](/dynamics365/customer-engagement/developer/use-entity-class-create-update-delete)<br />
- [Problembehandlungs-Tipps](/dynamics365/customer-engagement/developer/troubleshooting-tips)<br />
  [Ausführen eines einfachen Programms mit Webdiensten](/dynamics365/customer-engagement/developer/simple-program-web-services)

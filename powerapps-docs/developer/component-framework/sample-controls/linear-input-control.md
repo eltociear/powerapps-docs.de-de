@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 3be35f54e4f4371208bb521fcf9927c53b993b2c
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 8c252b8b5baff22400aa510d0d71a3546c6361c4
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017418"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091205"
 ---
 # <a name="implementing-linear-input-component"></a>Implementieren der linearen Eingabekomponente
 
@@ -26,7 +26,7 @@ Um diese Komponente zu implementieren, müssen Sie zunächst die Datei [Manifest
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
+Modellgesteuerte Anwendungen und Canvas-Anwendungen (öffentliche Vorschau) 
 
 ## <a name="manifest"></a>Manifest
 

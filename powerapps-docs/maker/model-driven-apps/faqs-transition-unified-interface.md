@@ -2,7 +2,7 @@
 title: 'FAQs: Übergang zur einheitlichen Oberfläche | Microsoft-Dokumentation'
 description: Häufig gestellte Fragen im Zusammenhang mit dem Übergangsprozess zum Verschieben von Benutzern vom Vorgänger-Webclient zu Einheitliche Oberfläche.
 ms.custom: ''
-ms.date: 12/20/2019
+ms.date: 02/26/2020
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e06fa6901ec123307adaabdbbb6071e5a11c47cc
-ms.sourcegitcommit: 41a78575a6533c45c7cf4c012f8ed30c4e43aae8
+ms.openlocfilehash: 003bc58cc0c4db717a92d75d6157b7b53eb3629c
+ms.sourcegitcommit: bb1a684d4ce2d342ad092a29ebca2bb502736e6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2918108"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087790"
 ---
 # <a name="faqs-transition-to-unified-interface"></a>FAQs: Übergang zur einheitlichen Oberfläche
 
@@ -79,7 +79,7 @@ Sehen Sie sich den unterstützenden Inhalt an, der auf der [Community-Site](http
 
 ### <a name="my-environment-has-been-transitioned-but-i-am-finding-blocking-issues-for-my-users-and-want-to-move-back-to-the-legacy-web-client-is-this-possible"></a>Meine Umgebung wurde umgestellt, aber ich stelle Blockierprobleme für meine Benutzer fest und möchte zum Vorgänger-Webclient zurückkehren. Ist das möglich?
 
-Ja, Sie können wieder in den Vorgängerwebclienten bis maximal 10 Tage nach dem Übergang wechseln. Sie können den [Wechsel manuell](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only) während der ersten 4 Tage durchführen; danach stellen Sie eine Supportanfrage über Ihren üblichen Kanal, da der manuelle Wechsel deaktiviert wird. 
+Ja, Sie können wieder in den Vorgängerwebclienten bis maximal 10 Tage nach dem Übergang wechseln. Sie können den [manuellen Wechsel](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only) für die ersten 10 Tage vornehmen oder eine [Standard-Supportanfrage](https://admin.powerplatform.microsoft.com/support?referer=mbssupport) stellen und den Problemtyp auf „Übergang vom alten Web-Client zur einheitlichen Benutzeroberfläche“ einstellen, da der manuelle Wechsel deaktiviert wird. 
 
 > [!NOTE]
 > Die 10 Tage müssen vor dem 1. Oktober 2020 sein, da der Vorgängerwebclient nach diesem Datum nicht mehr zur Verfügung steht.
@@ -116,9 +116,9 @@ Nur vom Administrator genehmigte Daten (Datumsangaben) werden umgestellt.
 
 ### <a name="if-i-already-have-an-environment-transitioned-to-unified-interface-will-i-still-be-able-to-switch-back-to-the-legacy-web-client-manually"></a>Wenn ich bereits eine Umgebung habe, die zur Einheitlichen Oberfläche übergegangen ist, kann ich noch manuell in den Vorgängerwebclienten wechseln?
 
-Wenn Ihre Umgebung seit mindestens 4 Tagen übergegangen ist, versuchen wir den manuellen Wechsel zurück zum Vorgängerwebclienten zu deaktivieren. 
+Wenn Ihre Umgebung seit mindestens 10 Tagen übergegangen ist, versuchen wir den manuellen Wechsel zurück zum Vorgängerwebclienten zu deaktivieren. 
 
-Sollte dies deaktiviert worden sein und Sie eine Anfrage zum Zurückwechseln laufen haben, reichen Sie eine Supportanfrage über Ihren üblichen Kanal zur Auswertung ein.
+Wenn Sie feststellen, dass dies deaktiviert wurde und Sie zurückschalten müssen, stellen Sie eine [Standard-Supportanfrage](https://admin.powerplatform.microsoft.com/support?referer=mbssupport) und stellen Sie den Problemtyp auf „Übergang vom alten Web-Client zur einheitlichen Benutzeroberfläche“ ein.
 
 ### <a name="is-there-a-specific-day-and-time-when-approved-transitions-will-take-place"></a>Gibt es einen bestimmten Tag und eine bestimmte Uhrzeit für genehmigte Übergänge? 
 

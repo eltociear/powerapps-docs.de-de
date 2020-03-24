@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d52b3fa67863a43f82f020f3894bbabf5d38df84
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b0528015899ccc624fed1d83566c445f348343c9
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865465"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040433"
 ---
 # <a name="define-alternate-keys-using-power-apps-portal"></a>Alternativschlüssel mithilfe von Power Apps-Portal definieren
 
@@ -37,9 +37,8 @@ PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch b
 
 ## <a name="view-alternate-keys"></a>Alternativschlüssel anzeigen
 
-1. Wählen Sie im [Power Apps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
-2. Wählen Sie **Daten** > **Entitäten** und die Entität aus, die Sie anzeigen möchten.
-3. Wählen Sie **Schlüssel** aus, um eine Liste der Alternativschlüssel anzuzeigen, die definiert werden.
+1. Wählen Sie im [Power Apps Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Daten** > **Entitäten** und wählen Sie die Entität, die Sie anzeigen möchten.
+2. Wählen Sie **Schlüssel** aus, um eine Liste der Alternativschlüssel anzuzeigen, die definiert werden.
 
     ![Alternativschlüssel anzeigen](media/view-alternate-keys-portal.png)
 

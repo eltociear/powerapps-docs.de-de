@@ -10,23 +10,23 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 08/09/2018
+ms.date: 02/12/2020
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11febe03a69fe774f2c0394ee5d3a016c901498d
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.openlocfilehash: d29ec6ca429efb4a7c221b888c77f01841542a18
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890657"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069801"
 ---
 # <a name="what-are-model-driven-apps-in-power-apps"></a>Was sind modellgetriebene Apps in Power Apps?
 
-Modell-angetriebener App-Entwurf ist eine Komponenten-fokussierte Methode zur App-Entwicklung. Modellgesteuertes App-Design erfordert keinen Code und die von Ihnen erstellten Apps können einfach oder sehr komplex sein.  Im Gegensatz zur Entwicklung von Canvas-Apps, bei denen der Designer die volle Kontrolle über das App-Layout hat, wird bei modellgesteuerten Apps ein Großteil des Layouts für Sie bestimmt und weitgehend durch die Komponenten bestimmt, die Sie der App hinzufügen. 
+Modell-angetriebener App-Entwurf ist eine Komponenten-fokussierte Methode zur App-Entwicklung. Modellgesteuertes App-Design erfordert keinen Code und die von Ihnen erstellten Apps können einfach oder sehr komplex sein.  Im Gegensatz zur Entwicklung von Canvas-Apps, bei denen der Designer die volle Kontrolle über das App-Layout hat, wird bei modellgesteuerten Apps ein Großteil des Layouts für Sie bestimmt und weitgehend durch die Komponenten bestimmt, die Sie der App hinzufügen.
 
 ![Beispiel einer modellgesteuerten Anwendung](media/model-driven-app-overview/model-app-sample.png)
 

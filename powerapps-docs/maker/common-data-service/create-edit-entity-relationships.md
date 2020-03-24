@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f96485d0c47da3b1d48ed9e1cafad89984133535
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 89a28060f7894afe49d0abe36b4461d6e2cbc474
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866001"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040389"
 ---
 # <a name="entity-relationships-overview"></a>Überblick über Entitätsbeziehungen
 Entitätsbeziehungen definieren, wie Datensätze in der Datenbank miteinander verknüpft werden können. Auf der einfachsten Ebene erstellt das Hinzufügen eines Suchfeldes zu einer Entität eine neue 1:n (eins-zu-viele)-Beziehung zwischen den beiden Entitäten und ermöglicht Ihnen, dieses Suchfeld in ein Formular einzusetzen. Mit dem Suchfeld können Benutzer mehrere *untergeordnete* Datensätze dieser Entität einer einzelnen *übergeordneten* Entität zuordnen.  
@@ -108,6 +108,13 @@ Dies sind die Aktionen, die dieses Verhalten auslösen können:
 |**Zusammenführen**|Was sollte geschehen, wenn ein primäre Entitätsdatensatz zusammengefügt wird?|Alle kaskadieren<br />Nicht kaskadieren|
 |**Rollupansicht**|Welches ist das gewünschte Verhalten der Rollupansicht, die in dieser Beziehung verknüpft wird? |Alle kaskadieren<br />Aktive kaskadieren<br />Kaskadieren, falls gleicher Besitzer<br />Nicht kaskadieren|
 
+> [!NOTE]
+> Die Aktionen Zuweisen, Löschen, Zusammenführen und Ersetzen werden in den folgenden Situationen nicht ausgeführt:
+> - Wenn der ursprüngliche Stammdatensatz und die angeforderte Aktion die gleichen Werte enthalten. Beispiel: Der Versuch, eine Zuweisung auszulösen und einen Kontakt auszuwählen, der bereits der Eigentümer des Datensatzes ist
+> - Versuch, eine Aktion auf einen übergeordneten Datensatz auszuführen, der bereits eine Kaskadenaktion ausführt
+
+> [!NOTE]
+> Bei der Ausführung einer Zuweisung werden alle Workflows oder Geschäftsregeln, die derzeit auf den Datensätzen aktiv sind, automatisch deaktiviert, wenn die Neuzuweisung erfolgt. Der neue Besitzer des Datensatzes muss den Workflow oder die Geschäftsregel reaktivieren, wenn er sie weiterhin verwenden möchte.
 
 ### <a name="parental-entity-relationships"></a>Übergeordnete Entitätsbeziehungen
 Zwischen jedem Entitätenpaar, das 1:n-Beziehung haben darf, können 1:n-Beziehungen bestehen. Dennoch kann nur eine dieser Beziehungen als übergeordnete Entitätsbeziehung gelten.

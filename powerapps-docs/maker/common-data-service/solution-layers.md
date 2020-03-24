@@ -1,8 +1,8 @@
 ---
-title: Anzeigen von Lösungsebenen | MicrosoftDocs
+title: Lösungsebenen | MicrosoftDocs
 description: Erfahren Sie, wie Sie Lösungsebenen verwenden können
 keywords: ''
-ms.date: 04/18/2019
+ms.date: 02/05/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -20,27 +20,33 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a5b507384b3fdf157aa029ad98d4d4203f624d8f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 10ab6feca7843d64d20938561d44748fc6756768
+ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702101"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3028337"
 ---
-<!--note from editor: Best practice is that H1 title and title in metadata are different.    -->
+# <a name="solution-layers"></a>Lösungsebenen
 
-# <a name="view-solution-layers"></a>Anzeigen von Lösungsebenen
-Lösungsebenen ermöglichen es Ihnen, alle Komponentenänderungen anzuzeigen, bei denen im Laufe der Zeit Lösungsänderungen auftreten. Innerhalb einer Lösungsebene können Sie einen Drilldown ausführen, um die bestimmten geänderten und nicht geänderten Eigenschaftendetails einer Komponente anzuzeigen. 
+Verwaltete und nicht verwaltete Lösungen existieren auf verschiedenen Ebenen innerhalb von einer Common Data Service Umgebung. Im Common Data Service gibt es zwei verschiedene Schichten:  
+- Nicht verwaltete Ebene. Auf dieser Ebene sind alle importierten nicht verwalteten Lösungen und nicht verwalteten Anpassungen vorhanden. Die nicht verwaltete Ebene ist eine einzelne Ebene.  
+- Verwaltete Ebene. Auf dieser Ebene sind alle importierten verwalteten Lösungen und die Systemlösung vorhanden. Wenn mehrere verwaltete Lösungen installiert sind, wird die erste unter den später installierten verwalteten Lösungen installiert. Dies bedeutet, dass die zweite installierte Lösung die zuvor installierte anpassen kann. Wenn die Definitionen zweier verwalteter Lösungen Konflikte haben, gilt die allgemeine Regel, dass die „letzte den Vorzug hat“ Wenn Sie eine verwaltete Lösung deinstallieren, wird die verwaltete Lösung darunter wirksam. Wenn Sie die verwaltete Lösung deinstallieren, wird das innerhalb der Systemlösung definierte Standardverhalten angewendet. Die Basis der verwalteten Ebene ist die Systemebene. Die Systemebene enthält die Systemlösung, die alle Standardentitäten und -komponenten enthält. Die Systemlösung definiert, was Sie mit verwalteten Eigenschaften anpassen können und was nicht. Herausgeber von verwalteten Lösungen haben dieselbe Möglichkeit, Ihre Möglichkeiten zu begrenzen, Lösungskomponenten anzupassen, die sie in ihrer Lösung hinzufügen. Sie können alle Lösungskomponenten anpassen, die keine verwalteten Eigenschaften haben, die Sie an ihrer Anpassung hindern. Weitere Informationen: [Verwaltete Eigenschaften für Common Data Service Metadaten festlegen](set-managed-properties-metadata.md) 
 
-Lösungsebenen: 
--   Sie zeigen Ihnen die Reihenfolge der von einer Lösung geänderten Komponente an. 
--   Sie zeigen Ihnen alle Eigenschaften einer Komponente in einer bestimmten Lösung, einschließlich der Änderungen an der Komponente. 
--   Kann verwendet werden, um die Probleme bei Abhängigkeit oder Lösungsebenen zu beheben, indem Änderungsdetails für eine Komponente angezeigt werden, die durch eine Lösungsänderung eingeführt wurden.
+![Lösungsebenen](media/solution-layers.png)
+
+## <a name="solution-merge-behavior"></a>Lösungszusammenführungsverhalten
+Wenn Sie die Installation Ihrer verwalteten Lösung zur Verteilung vorbereiten, denken Sie daran, dass eine Umgebung mehrere Lösungen installiert haben kann oder dass andere Lösungen in der Zukunft installiert werden können. Erstellen Sie eine Lösung, die erfolgreich bewährten Praktiken folgt, so dass Ihre Lösung nicht andere Lösungen behindert.
+
+Die Prozesse, die von Common Data Service verwendet werden, um Anpassungen zusammenzuführen, legt den Fokus auf die Aufrechterhaltung der Funktionalität der Lösung. Während alle Anstrengungen unternommen werden, um die Darstellung zu wahren, können Inkompatibilitäten zwischen Anpassungen es erforderlich machen, dass die gesteuerte Endpunktauflösung gewisse Darstellungsdetails zugunsten der Anpassungsfunktionalität ändert. Weitere Informationen: [Verstehen, wie verwaltete Lösungen zusammengeführt werden](../../developer/common-data-service/understand-managed-solutions-merged.md)
 
 ## <a name="view-the-solution-layers-for-a-component"></a>Zeigen Sie die Lösungsebenen für eine Lösung an
-Sie können auf Lösungsebenen aus der Liste der **Komponenten** oder aus dem Dialogfeld **Abhängigkeitsdetails** im Projektmappen-Explorer zugreifen. 
+Die Lösungsebenen ermöglichen es Ihnen, alle Komponentenänderungen anzuzeigen, bei denen im Laufe der Zeit Lösungsänderungen auftreten. Innerhalb einer Lösungsebene können Sie einen Drilldown ausführen, um die bestimmten geänderten und nicht geänderten Eigenschaftendetails einer Komponente anzuzeigen. Sie können auf Lösungsebenen aus der Liste der **Komponenten** oder aus dem Dialogfeld **Abhängigkeitsdetails** im Projektmappen-Explorer zugreifen. 
 
-<!--note from editor: In step 2 below, does the page display a name at top? If so, use the same capitalization in text. -->
+Die Lösungsebenen bieten: 
+-   Sie zeigen Ihnen die Reihenfolge der von einer Lösung geänderten Komponente an. 
+-   Sie zeigen alle Eigenschaften einer Komponente in einer bestimmten Lösung, einschließlich der Änderungen an der Komponente. 
+-   Kann verwendet werden, um die Probleme bei Abhängigkeit oder Lösungsebenen zu beheben, indem Änderungsdetails für eine Komponente angezeigt werden, die durch eine Lösungsänderung eingeführt wurden.
 
 1. Um die Lösungsebenen aus der Liste **Komponenten** anzuzeigen, öffnen Sie den [Projektmappen-Explorer](../model-driven-apps/advanced-navigation.md#solution-explorer). In der Liste **Komponenten** wählen Sie eine Komponente aus, zum Beispiel **Firma**, und wählen Sie dann die Option **Lösungsebenen** in der Symbolleiste aus. 
 

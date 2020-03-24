@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4c657afc77e710769a803d313b36a7437c3e3f9a
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: e354a3a784a984e070f5948b4b14c9eb4c32417b
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977543"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069537"
 ---
 # <a name="add-a-custom-domain-name"></a>Einen benutzerdefinierten Domänennamen hinzufügen
 
@@ -31,10 +31,12 @@ Eine benutzerdefinierte Domäne kann Ihren Kunden helfen, die Supportressource e
      > [!Note]
      > Das SSL-Zertifikat muss alle folgenden Voraussetzungen erfüllen:
      > - Unterzeichnet von einer vertrauenswürdigen Zertifizierungsstelle
-     > - Exportiert als eine kennwortgeschützte PFX-Datei
+     > - [Exportiert](https://docs.microsoft.com/powershell/module/pkiclient/export-pfxcertificate?view=win10-ps) als kennwortgeschützte PFX-Datei
      > - Enthält privaten Schlüssel mindestens 2048 Bits lang
      > - Enthält alle Zwischenzertifikate in der Zertifikatskette
      > - SHA2 muss aktiviert sein; SHA1-Unterstüzungen wird aus gängigen Browsern entfernt
+     > 
+     > Die Schritte zum Exportieren von SSL-Zertifikaten als kennwortgeschützte PFX-Datei können je nach Ihrem Zertifikatsanbieter variieren. Wenden Sie sich an Ihren Zertifikatsanbieter, um eine Empfehlung zu erhalten. Beispielsweise können bestimmte Anbieter vorschlagen, das OpenSSL Drittanbieter-Tool von [OpenSSL](https://www.openssl.org/) oder [OpenSSL-Binärdateien](https://wiki.openssl.org/index.php/Binaries) Sites zu verwenden. 
 
 4. Wählen Sie **Weiter**.
 

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6c6d37d688ad60054be4387d813dcb7d9c9305fb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 01eb5a0a390ac399633e4f335f7322289056de1f
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748430"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040371"
 ---
 # <a name="configure-entity-relationship-cascading-behavior"></a>Konfigurieren der Entitätsbeziehungen mit ableitendem Verhalten  
 
@@ -62,7 +62,16 @@ Die `CascadeConfiguration` (<xref:Microsoft.Xrm.Sdk.Metadata.CascadeConfiguratio
 |Erneut überordnen|Siehe [Informationen zur erneut übergeordneten Aktion](#about-the-reparent-action) weiter unten.|Active<br />Kaskadieren<br />NoCascade<br />UserOwned|  
 |Freigeben|Wenn der referenzierte Entitätsdatensatz für einen anderen Benutzer freigegeben wird.|Active<br />Kaskadieren<br />NoCascade<br />UserOwned|  
 |Freigabe aufheben|Wenn das Freigeben für den referenzierten Entitätsdatensatz entfernt wird.|Active<br />Kaskadieren<br />NoCascade<br />UserOwned|  
-  
+
+> [!NOTE]
+> Die Aktionen Zuweisen, Löschen, Zusammenführen und Ersetzen werden in den folgenden Situationen nicht ausgeführt:
+> - Wenn der ursprüngliche Stammdatensatz und die angeforderte Aktion die gleichen Werte enthalten. Beispiel: Der Versuch, eine Zuweisung auszulösen und einen Kontakt auszuwählen, der bereits der Eigentümer des Datensatzes ist
+> - Versuch, eine Aktion auf einen übergeordneten Datensatz auszuführen, der bereits eine Kaskadenaktion ausführt
+
+
+> [!NOTE]
+> Bei der Ausführung einer Zuweisung werden alle Workflows oder Geschäftsregeln, die derzeit auf den Datensätzen aktiv sind, automatisch deaktiviert, wenn die Neuzuweisung erfolgt. Der neue Besitzer des Datensatzes muss den Workflow oder die Geschäftsregel reaktivieren, wenn er sie weiterhin verwenden möchte.
+
 <a name="BKMK_ReparentAction"></a>   
 ### <a name="about-the-reparent-action"></a>Informationen zur erneut übergeordneten Aktion  
  Die erneut übergeordnete Aktion ist der Freigabenaktion sehr ähnlich, außer dass sie mit den geerbten Lesezugriffsauskunftsrechten anstelle der expliziten Lesezugriffsauskunftsrechte arbeitet. Die Aktion zur erneuten Überordnen geschieht, wenn der Wert des Referenzattributs in einer übergeordneten Beziehung geändert wird. Wenn eine reparent-Aktion auftritt, ändert sich möglicherweise der gewünschte Bereich der geerbten Lesezugriffsauskunftsrechte für verknüpfte Entitäten. Die cascade-Aktionen, die mit der reparent-Aktion verknüpft sind, verweisen auf Änderungen der Lesezugriffsauskunftsrechte bei Entitätsdatensätzen und allem verknüpften Entitätsdatensätzen.  

@@ -1,39 +1,67 @@
 ---
-title: Häufig gestellte Fragen | Microsoft Docs
+title: FAQs | MicrosoftDocs
 description: Häufig gestellte Fragen zum Komponenten-Framework
 manager: kvivek
 ms.date: 10/01/2019
 ms.service: powerapps
 ms.topic: index-page
 ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
-ms.author: nabuthuk
-author: Nkrb
-ms.openlocfilehash: 89ca91795b0644b0b7275697864211a4d3263c80
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.author: grhurl
+author: ghurlman
+ms.reviewer: nkrb
+ms.openlocfilehash: e471cd617243b98635fa0db4a1487be4ddb1e5e9
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861996"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091245"
 ---
-# <a name="faq"></a>Häufig gestellte Fragen
+# <a name="faqs"></a>Häufig gestellte Fragen
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-## <a name="multiple-components-in-single-manifest-file"></a>Mehrere Komponenten in einer Manifestdatei
+### <a name="component-changes-are-not-reflected-after-the-updated-solution-import"></a>Änderungen an den Komponenten werden nach dem Import der aktualisierten Lösung nicht berücksichtigt?
 
-Es ist nicht möglich, mehrere Komponenten in einer Manifestdatei zu definieren. 
+Aktualisieren Sie die Komponentenversion (Minor oder Patch) in der Komponentenmanifestdatei (z.B. 1.0.0 auf 1.0.1). Jede Aktualisierung in der Komponente benötigt einen Komponentenversions-Stoß, um auf dem Common Data Service-Server widergespiegelt zu werden.
 
-## <a name="calling-processesactions"></a>Aufrufprozesse/-Aktionen
+> [!NOTE]
+> - Eine neue Lösung muss jedes Mal erstellt werden, wenn Sie einen größeren Versions-Stoß haben möchten. Das Erhöhen der Hauptversionsnummer (z.B. 1.0 auf 2.0) wird nicht als Upgrade unterstützt.
+> - Es werden nur drei Versionsabschnitte unterstützt (d.h. MAJOR.MINOR.PATCH). Diese Abschnitte der Versionsnummer sollten zwischen 0 und 65536 liegen.
 
-Diese Aktion wird nicht unterstützt. Ab heute können Sie Dialogfelder mithilfe der [Navigation](reference/navigation.md)-Methode aufrufen.
+### <a name="what-are-the-things-to-be-considered-from-a-performance-perspective"></a>Was sind die Dinge, die aus Sicht der Leistung zu beachten sind?
 
-## <a name="calling-components-within-another-component"></a>Aufrufen von Komponenten in einer anderen Komponente
+1. Wenn Sie auf große Datenmengen zugreifen möchten, implementieren Sie [Filterung](reference/filtering.md) und [Paging](reference/paging.md) Methoden, um die Menge der zu ladenden Daten zu begrenzen.
+2. Stellen Sie Ihre Netzwerkaufrufe zusammen und machen Sie alle Netzwerkaufrufe asynchron. Entwerfen Sie die Komponente so, dass alle erforderlichen Informationen mit einem einzigen Aufruf bereitgestellt werden. 
+3. Gestalten Sie die Komponente so, dass der Benutzer eine Aktion (z. B. das Klicken auf eine Schaltfläche) durchführen muss, um das Laden bestimmter Daten des Elements zu initiieren, anstatt den Aufruf für jedes Datenelement durchzuführen.
+4. Stellen Sie sicher, dass Sie die Ressourcen mit der Funktion [destroy](reference/control/destroy.md) bereinigen. Offene Netzwerkaufrufe, Verbindungen und Ereignisbehandler müssen bereinigt werden, um die Leistung zu erhöhen.
 
-Diese Aktion wird nicht unterstützt.
+### <a name="where-can-i-find-some-good-examples-of-code-components"></a>Wo finde ich einige gute Beispiele für Code-Komponenten?
 
-## <a name="font-resource"></a>Schriftartressource
+Viele gute Beispiele aus der Community sind auf den [Power Apps Community-Foren](https://powerusers.microsoft.com/t5/Power-Apps-Component-Framework/Community-content-sample-components-blogs-etc-Link-to-this-page/td-p/280710) verfügbar.
 
-Die Font Ressource (.tff) wird im Power Apps component framework derzeit nicht unterstützt.
+### <a name="how-to-use-rich-data-types-in-code-components-such-as-collections"></a>Wie kann man reichhaltige Datentypen in Code-Komponenten wie z.B. Sammlungen verwenden?
+
+Derzeit wird diese Funktion nicht unterstützt. Es gibt jedoch eine [JSON-Funktion](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-json) in Canvas-Apps, die es App-Machern erlaubt, ihre Daten zu stringentieren.
+
+1. Übergeben Sie die Sammlung an die JSON-Funktion.
+2. Übergeben Sie die String-Repräsentation der Sammlungsdaten, die von der JSON-Funktion zurückgegeben wird, an eine der String-Eigenschaften der Komponente.
+3. Verwenden Sie [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) im Komponentencode, um ihn wieder in ein JavaScript-Objekt zu konvertieren.
+
+### <a name="how-can-i-define-multiple-components-in-a-single-manifest-file"></a>Wie kann ich mehrere Komponenten in einer einzigen Manifestdatei definieren?
+
+Die Definition mehrerer Komponenten in einer einzigen Manifestdatei wird nicht unterstützt. 
+
+### <a name="how-can-i-define-behavior-properties"></a>Wie kann ich Verhaltenseigenschaften definieren?
+
+Dies wird zur Zeit nicht unterstützt. Zurzeit können Sie Dialogfelder nur über die Methode [Navigation](reference/navigation.md) in modellgesteuerten Anwendungen aufrufen.
+
+### <a name="how-can-i-call-other-components-from-within-another-component"></a>Wie kann ich andere Komponenten aus einer anderen Komponente heraus aufrufen?
+
+Dies wird vom Framework nicht nativ unterstützt. Sie können eine von vielen Bibliotheken von Drittanbietern verwenden, um diese Funktionalität in Ihren Komponenten zu aktivieren.
+
+### <a name="can-i-bundle-font-resources"></a>Kann ich Font-Ressourcen bündeln?
+
+Derzeit werden Schriftartenressourcen (Dateien mit der Dateierweiterung .ttf) vom Framework nicht unterstützt.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

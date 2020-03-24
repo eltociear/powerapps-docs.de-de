@@ -21,19 +21,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1832d3bd9fc222f3c71089ae386e455a53f512f7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 67173c01bc6a96f0ada55c62688db76ca0af0596
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2868157"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069669"
 ---
 # <a name="configure-header-properties-in-the-form-designer"></a>Konfigurieren von Kopfzeileneigenschaften im Formulardesigner
 
 Hersteller können die Dichte der modellgetriebenen App-Formularheader steuern, um die Bedürfnisse aller Benutzer des Formulars zu erfüllen.
-
-> [!NOTE]
-> Diese Funktion ist nur in Umgebungen verfügbar, die sich für die frühe Vorschau auf die Funktionen der Release Wave 2 2019 entscheiden. Mehr Informationen: [Frühzeitiges Opt-in zu Release Wave 2 2019](https://docs.microsoft.com/power-platform/admin/preview-october-2019-updates) 
 
 ## <a name="high-density-header"></a>Kopf mit hoher Dichte
 
@@ -147,6 +144,10 @@ Die Kopfzeile mit hoher Dichte zeigt schreibgeschützte Werte von Feldern in der
 Die Nachricht informiert den Ersteller darüber, dass er versucht, ein Feld aus dem Formularkörper in den Formularkopf zu verschieben. Hierdurch wird das Feld zu einem schreibgeschützten Feld. Der Entwickler kann entscheiden, ob er das Feld in die Kopfzeile verschiebt oder der Kopfzeile eine Kopie des Felds hinzufügt. Durch das Verschieben des Felds in die Kopfzeile ist das Feld in der ursprünglichen Position im Formularhauptteil für Benutzer nicht mehr zur Bearbeitung verfügbar. Wenn Sie eine Kopie des Feldes in die Kopfzeile einfügen, bleibt das Feld an der ursprünglichen Position, so dass die Benutzer es weiterhin im Formular bearbeiten können.
 
 ### <a name="form-headers-now-default-to-high-density-to-display-more-data-use-the-new-form-designer-to-edit-header-density"></a>Formularkopfzeilen werden jetzt standardmäßig hohe Dichte, um mehr Daten anzuzeigen. Verwenden Sie den neuen Formulardesigner, um die Kopfzeilendichte zu bearbeiten.  
+Diese Nachricht wird im klassischen Formulardesigner angezeigt, wenn ein Entwickler ein Hauptformular zum Bearbeiten öffnet, das so konfiguriert ist, dass eine Kopfzeile mit niedriger Dichte verwendet wird.  
+  
+Diese Nachricht trägt dazu bei, das Bewusstsein für die hohe Header-Dichte und ihre Vorteile zu erhöhen und dass die Hersteller den neuen Formular-Designer zur Konfiguration der Header-Dichte verwenden sollten.  
+
 Diese Nachricht wird im klassischen Formulardesigner angezeigt, wenn ein Entwickler ein Hauptformular zum Bearbeiten öffnet, das so konfiguriert ist, dass eine Kopfzeile mit niedriger Dichte verwendet wird. 
 
 Die Botschaft trägt dazu bei, das Bewusstsein für den High-Density-Kopf und seine Vorteile zu schärfen, und dass Hersteller den neuen Formulardesigner verwenden sollten, um die Kopfdichte zu konfigurieren.  

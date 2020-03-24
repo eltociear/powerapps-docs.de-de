@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3a87868d86dca1326dcff1ad9b1c052606943de4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 006dccecfed21b29f3af48f657c2bb64b1708cf3
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748662"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3037137"
 ---
 # <a name="query-hierarchical-data"></a>Abfragen von hierarchischen Daten
 
@@ -38,8 +38,8 @@ Sie können neue Abfragebedingungsoperatoren nutzen, um Entitäten mit explizite
 |`under`|`Under`|Gibt alle untergeordneten Datensätze in dem referenzierten Datensatz in der Hierarchie zurück.|  
 |`eq-or-under`|`UnderOrEqual`|Gibt den referenzierten Datensatz und allle untergeordneten Datensätze in in der Hierarchie zurück.|  
 |`not-under`|`NotUnder`|Gibt alle untergeordneten Datensätze nicht unter dem referenzierten Datensatz in der Hierarchie zurück.|  
-|`eq-owneduseroruserhierarchy`|`OwnedByMeOrMyReports`|Wenn hierarchische Sicherheitsmodelle verwendet werden, ist dies dem aktuellen Benutzer oder dessen Berichterstellungshierarchie gleich.|  
-|`eq-useroruserhierarchyandteams`|`OwnedByMeOrMyReportsAndTeams`|Wenn hierarchische Sicherheitsmodelle verwendet werden, ist dies dem aktuellen Benutzer und seinen Teams oder seiner Berichterstellungshierarchie und ihren Teams gleich.|  
+|`eq-owneduseroruserhierarchy`|`OwnedByMeOrMyReports`|Wenn hierarchische Sicherheitsmodelle verwendet werden, ist dies dem aktuellen Benutzer oder desse°n Berichterstellungshierarchie gleich|  
+|`eq-useroruserhierarchyandteams`|`OwnedByMeOrMyReportsAndTeams`|Wenn hierarchische Sicherheitsmodelle verwendet werden, ist dies dem aktuellen Benutzer und seinen Teams oder seiner Berichterstellungshierarchie und deren Teams gleich|  
   
 ### <a name="recursion-limits-when-querying-hierarchical-data"></a>Rekursion begrenzt, wann hierarchisch Daten abgefragt werden  
  Da das Abfragen von Daten ressourcenintensiv sein kann, gibt es ein Standardlimit von 100 rekursionenszulässigen Bedingungen für hierarchische Abfragen mithilfe von `Above`, `AboveOrEqual`, `Under`, `UnderOrEqual` und `NotUnder`-Bedingungsoperatoren.  

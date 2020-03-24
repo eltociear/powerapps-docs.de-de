@@ -2,7 +2,7 @@
 title: Bildattribute (Common Data Service) | Microsoft-Dokumentation
 description: Infos zu Bildattributen, die Bilddaten speichern, sowie zum Unterstützen von Attributen, Abrufen von Bilddaten und Hochladen von Bilddaten.
 ms.custom: ''
-ms.date: 10/01/2019
+ms.date: 02/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,16 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f05345c50f5f1e907f17147a9006ca9eed29c09d
-ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
+ms.openlocfilehash: 988a403bdd3badd720a46ee5b58a9539bc1ac9f9
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "2957600"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3037081"
 ---
 # <a name="image-attributes"></a>Bildattribute
 
 Bestimmte Systementitäten und alle benutzerdefinierten Entitäten unterstützen Bilder. Entitäten, die Bilder unterstützen, können eine Miniaturansicht und ein primäres Bild in voller Größe enthalten. Die Miniaturansicht kann in der Webanwendung angezeigt werden, wenn die Formulardaten der Entität anzeigt werden. Es können mehrere Bildattribute in einer Entitätsinstanz vorhanden sein, jedoch nur ein primäres Bild. Sie können jedoch das primäre Bild von einem Bild in ein anderes ändern, indem Sie [IsPrimaryImage](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.isprimaryimage?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_Metadata_ImageAttributeMetadata_IsPrimaryImage) für dieses Attribut auf `true` festlegen. Jedes Bildattribut in voller Größe kann maximal 30 MB groß sein. Der <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> des Entitätsbildattributs ist `EntityImage`. Weitere Informationen: [Entitätsbilder](/dynamics365/customer-engagement/developer/introduction-entities#entity-images).
+
+Vorschaubilder und Bild-Metadaten werden in Common Data Service gespeichert, die die zum Abrufen des vollständigen Bildes erforderlichen Informationen enthalten. Die Vollbilder werden im Dateispeicher auf dem Azure Blob gespeichert, um den Datenspeicherverbrauch zu reduzieren.
 
 Web-API (REST) | .NET-API (SOAP) 
 ------- | -------
