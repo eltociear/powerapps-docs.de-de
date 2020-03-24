@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/17/2020
 ms.locfileid: "79436753"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="microphone-control-in-power-apps"></a>Mikrofon-Steuerelement in powerapps
 
@@ -124,7 +125,7 @@ In diesem Beispiel verbinden wir direkt ein **Mikrofon** -Steuerelement mit eine
 1. Fügen Sie der APP ein **Audiosteuerelement** hinzu.
 1. Legen Sie die **Media** -Eigenschaft des **audiosteuerelements** auf die folgende Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Microphone1.Audio
     ```
 
@@ -145,15 +146,15 @@ In diesem Beispiel erstellen wir einen Katalog mit Audioclips, die in einer Samm
 
 1. Legen Sie mit der [Collect](../functions/function-clear-collect-clearcollect.md) -Funktion die **onstopeigenschaft** auf diese Formel fest:
 
-    ```powerapps-dot
-    Collect( MySounds, MyMic.Audio )
+    ```powerapps-comma
+    Collect( MySounds; MyMic.Audio )
     ```
 
 1. Fügen Sie **ein Katalog** -Steuerelement hinzu, verschieben Sie es unter **mymic**.
 
 1. Legen Sie die [Items](properties-core.md) -Eigenschaft für den Katalog auf diese Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     MySounds
     ```
 
@@ -161,7 +162,7 @@ In diesem Beispiel erstellen wir einen Katalog mit Audioclips, die in einer Samm
 
 1. Legen Sie die **Media** -Eigenschaft des audiosteuerelements auf diese Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Url
     ```
 
@@ -177,8 +178,8 @@ In diesem Beispiel erstellen wir einen Katalog mit Audioclips, die in einer Samm
 
 1. Legen [Sie die onselect](properties-core.md) -Eigenschaft auf die folgende Formel fest:
 
-    ```powerapps-dot
-    Remove( MySounds, ThisItem )
+    ```powerapps-comma
+    Remove( MySounds; ThisItem )
     ```
 
 1. Drücken Sie F5, und entfernen Sie dann eine Aufzeichnung, indem Sie das entsprechende **Schalt** Flächen-Steuerelement auswählen.
