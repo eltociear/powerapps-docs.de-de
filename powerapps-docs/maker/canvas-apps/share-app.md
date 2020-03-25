@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/02/2020
+ms.date: 03/24/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e21db21ff9c161e8ae8ab55d4d3ef295da7d419e
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 6cbbc3442a54a0c84ff82b7e32f255c2b400d073
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211386"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80242876"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>Freigeben einer Canvas-app in Power apps
 
@@ -52,7 +52,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 1. Geben Sie die Benutzer oder Sicherheitsgruppen in Azure Active Directory, mit denen Sie die APP freigeben möchten, nach Namen oder Aliasnamen an.
 
     - Um ihrer gesamten Organisation das Ausführen der APP zu gestatten (ohne Sie zu ändern oder freizugeben), geben Sie im Freigabe Bereich **alle** ein.
-    - Wenn die Elemente durch Semikolons voneinander getrennt sind, können Sie eine APP mit einer Liste von Aliasen, anzeigen Amen oder einer Kombination aus diesen Teilen (z. b. **Jane Doe &lt;jane.doe@contoso.com>**). Wenn mehr als eine Person denselben Namen, aber unterschiedliche Aliase hat, wird die erste gefundene Person zur Liste hinzugefügt. Eine QuickInfo wird angezeigt, wenn ein Name oder Alias bereits über eine Berechtigung verfügt oder nicht aufgelöst werden kann. 
+    - Wenn die Elemente durch Semikolons voneinander getrennt sind, können Sie eine APP mit einer Liste von Aliasen, anzeigen Amen oder einer Kombination aus diesen Teilen (z. b. **Jane Doe &lt;jane.doe@contoso.com>** ). Wenn mehr als eine Person denselben Namen, aber unterschiedliche Aliase hat, wird die erste gefundene Person zur Liste hinzugefügt. Eine QuickInfo wird angezeigt, wenn ein Name oder Alias bereits über eine Berechtigung verfügt oder nicht aufgelöst werden kann. 
 
     ![Angeben von Benutzern und Mitbesitzern](./media/share-app/share-everyone.png)
 
@@ -159,7 +159,8 @@ Wenn Sie eine APP freigeben, die auf einer älteren Version von Common Data Serv
 Canvas-Apps für Power Apps können für Gastbenutzer eines Azure Active Directory Mandanten freigegeben werden. Dadurch können externe Geschäftspartner, Auftragnehmer und Drittanbieter zum Ausführen der Canvas-apps Ihres Unternehmens eingeladen werden. 
 
 > [!NOTE]
-> Gästen darf nur die **Benutzer** Rolle und nicht die **Mitbesitzer** Rolle für apps zugewiesen werden, die für Sie freigegeben wurden.
+> - Gästen darf nur die **Benutzer** Rolle und nicht die **Mitbesitzer** Rolle für apps zugewiesen werden, die für Sie freigegeben wurden.
+> - Der Gast Zugriff auf der Power apps-Canvas-App nutzt Azure B2B. Powerapps erkennt Gäste, die in den Zuständen 1 – 4 in der [Azure B2B-Dokumentation](https://docs.microsoft.com/azure/active-directory/b2b/user-properties)beschrieben sind. In Power Apps können keine Gäste erkannt werden, die sich mit [Azure AD Direct Federation](https://docs.microsoft.com/azure/active-directory/b2b/direct-federation)authentifizieren. 
 
 ### <a name="prerequisites"></a>Erforderliche Komponenten
 - Aktivieren Sie in Azure Active Directory (Azure AD) die externe B2B-Zusammenarbeit für den Mandanten. Weitere Informationen: [Aktivieren der externen B2B-Zusammenarbeit und Verwalten von Gästen, die Gäste einladen dürfen](/azure/active-directory/b2b/delegate-invitations)
@@ -241,6 +242,9 @@ Weitere Informationen zu den Preisen und Funktionen verschiedener Pläne finden 
 
 #### <a name="in-power-apps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>Wie wird in Power Apps Mobile für einen Gast Apps für seinen Heim Mandanten angezeigt?
 Alle Benutzer, die auf eine Canvas-App auf Ihrem mobilen Gerät zugegriffen haben und die in einem Azure AD Mandanten veröffentlicht werden, der nicht Ihr Privat Mandant ist, müssen sich bei Power apps abmelden und sich wieder bei Power Apps Mobile anmelden.  
+
+#### <a name="in-power-apps-mobile-how-does-a-guest-see-apps-in-the-guest-tenant"></a>Wie wird in Power Apps Mobile für einen Gast apps im Gast Mandanten angezeigt?
+Öffnen Sie als Gastbenutzer die e-Mail, die empfangen wurde, als eine APP im Gast Mandanten freigegeben wurde, und klicken Sie auf die Schaltfläche **app öffnen** . Dies gilt sowohl für Azure Active Directory-als auch für Microsoft-Kontobenutzer.   
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>Muss ein Gast die Azure AD Guest-Einladung annehmen, bevor er eine APP für den Gast freigibt?
 Nein. Wenn ein Gast eine APP startet, die für ihn freigegeben wurde, bevor er eine Gast Einladung annimmt, wird der Gast aufgefordert, die Einladung im Rahmen der Anmelde Erfahrung beim Starten der APP zu akzeptieren.  
