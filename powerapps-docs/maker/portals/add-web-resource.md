@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/07/2020
+ms.date: 02/11/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 32bde2ec2c97f33c426a57b17216a7086930eaca
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 0c011c61c2084662d1e759d7226140dcf3ddfad6
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977926"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109294"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Hinzufügen der Azure Storage-Webressource zu einem Formular
 
@@ -22,8 +22,8 @@ Anlagen, die zu Azure Storage und nicht direkt zu Common Data Service hochgelade
 
 Damit Anlagen aus einem bestimmten Formular nach Azure Storage hochgeladen werden können, müssen Sie eine Webressource zu diesem Formular hinzufügen und [Azure Storage für Ihre Organisation konfigurieren](enable-azure-storage.md).
 
-> [!Note]
-> In diesem Beispiel wird das Formular zum Lead-Formular für die Lead-Entität hinzugefügt. Wir empfehlen Ihnen, beim Bearbeiten vorhandener Formulare vorsichtig vorzugehen.
+> [!NOTE]
+In diesem Beispiel wird das Formular zum Lead-Formular für die Lead-Entität hinzugefügt. Wir empfehlen Ihnen, beim Bearbeiten vorhandener Formulare vorsichtig vorzugehen.
 
 Wenn eine Datei (beispielsweise attachments.zip) über das Portal nach Azure Storage hochgeladen wird, wird dies durch eine Notiz zu einer Entität und einen Platzhalter für die Anlage dargestellt.
 
@@ -87,13 +87,15 @@ Wenn es sich bei der angehängten Datei um ein Bild handelt, zeigt das Steuerele
 Das Protokoll zur [ursprungsübergreifenden Ressourcenfreigabe (Cross-Origin Resource Sharing, CORS)](https://www.w3.org/TR/cors/) besteht aus einem Satz an Headern, der angibt, ob eine Antwort für eine andere Domäne freigegeben werden kann.
 Die folgenden Websiteeinstellungen werden verwendet, um CORS zu konfigurieren:
 
-|                 Name                  |                                                                            Beschreibung                                                                            |
-|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HTTP/Access-Control-Allow-Credentials | Der einzige gültige Wert für diesen Header ist "true" (Groß-/Kleinschreibung wird beachtet). Wenn keine Anmeldeinformationen erforderlich sind, können Sie diesen Header vollständig weglassen (anstatt den Wert auf "false" zu setzen). |
-|   HTTP/Access-Control-Allow-Headers   |                                                   Eine durch Kommas getrennte Liste der unterstützten HTTP-Anforderungsheader.                                                   |
-|   HTTP/Access-Control-Allow-Methods   |                                      Eine durch Kommas getrennte Liste der zulässigen HTTP-Anforderungsmethoden wie ABRUFEN, POSTEN, OPTIONEN.                                       |
-|   HTTP/Access-Control-Allow-Origin    |                   Damit alle Ressourcen auf Ihre Ressourcen zugreifen können, können Sie \* angeben. Geben Sie andernfalls die URI an, die auf die Ressourcen zugreifen kann.                   |
-|  HTTP/Access-Control-Expose-Headers   |                Eine durch Kommas getrennte Liste mit anderen HTTP-Headernamen als den einfachen Antwortheadern, die die Ressource verwenden kann und die eingeblendet werden kann.                 |
-|      HTTP/Access-Control-Max-Age      |                                                       Die maximale Anzahl an Sekunden, die die Ergebnisse zwischengespeichert werden können.                                                        |
-|                                       |                                                                                                                                                                   |
-
+| Website-Einstellung | Anfrage-Kopf | Beschreibung |
+|-|-|-|
+| HTTP/Access-Control-Allow-Credentials | Access-Control-Allow-Credentials | Der einzige gültige Wert für diesen Header ist "true" (Groß-/Kleinschreibung wird beachtet). Wenn keine Anmeldeinformationen erforderlich sind, können Sie diesen Header vollständig weglassen (anstatt den Wert auf "false" zu setzen). 
+| HTTP/Access-Control-Allow-Headers | Access-Control-Allow-Headers | Eine durch Kommas getrennte Liste der unterstützten HTTP-Anforderungsheader.
+| HTTP/Access-Control-Allow-Methods | Access-Control-Allow-Methods | Eine durch Kommas getrennte Liste der zulässigen HTTP-Anforderungsmethoden wie ABRUFEN, POSTEN, OPTIONEN.
+| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | Damit alle Ressourcen auf Ihre Ressourcen zugreifen können, können Sie \* angeben. Geben Sie andernfalls die URI an, die auf die Ressourcen zugreifen kann.                   |
+|  HTTP/Access-Control-Expose-Headers | Access-Control-Expose-Headers | Eine durch Kommas getrennte Liste mit anderen HTTP-Headernamen als den einfachen Antwortheadern, die die Ressource verwenden kann und die eingeblendet werden kann.
+| HTTP/Access-Control-Max-Age | Access-Control-Max-Age |  Die maximale Anzahl an Sekunden, die die Ergebnisse zwischengespeichert werden können.
+| HTTP/Content-Security-Policy | Content-Security-Policy | Steuert die Ressourcen, die der Benutzeragent für eine bestimmte Seite laden darf.
+| HTTP/Content-Security-Policy-Report-Only | Content-Security-Policy-Report-Only | Ermöglicht es Webentwicklern, mit Richtlinien zu experimentieren, indem ihre Auswirkungen überwacht, aber nicht durchgesetzt werden. Diese Verletzungsberichte bestehen aus JSON-Dokumenten, die über eine HTTP-POST-Anforderung an den angegebenen URI gesendet werden.
+| HTTP/X-Frame-Optionen | X-Frame-Optionen | Gibt an, ob ein Browser eine Seite in einem *\<frame \>*, *\<iframe\>*, *\<embed\>* oder *\<object\>* darstellen darf.
+| HTTP/X-Content-Type-Options | X-Content-Type-Options | Deaktiviert das MIME-Sniffing und zwingt den Browser, den unter *Content-Type* angegebenen Typ zu verwenden.

@@ -11,31 +11,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 300da15802a7132115b91773544792a921f0a827
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: b7d93d18ee9e176d936912235f71920f3cdeff48
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909288"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109013"
 ---
 # <a name="code-components-for-canvas-apps"></a>Codekomponenten für Canvas-Apps
 
-> [!IMPORTANT]
-> Diese Funktion ist weiterhin experimenteller Natur und standardmäßig deaktiviert. Weitere Informationen finden Sie unter [Experimentelle und Vorschaufunktionen](../../maker/canvas-apps/working-with-experimental.md).
-
 Das Power Apps component framework ermöglicht es App-Entwicklern, Codekomponenten für die Verwendung in einer App oder über Apps zu erstellen. Weitere Informationen: [Übersicht über das Power Apps Komponenten Framework](overview.md) 
 
-In dieser experimentellen Vorschau können App-Entwickler mit dem Power Apps component framework Codekomponenten erstellen, debuggen, importieren und zu Canvas-Apps mithilfe der Power Apps-CLI-Werkzeuge hinzuzufügen. Nur bestimmte APIs werden in dieser experimentellen Vorschau unterstützt. Es empfiehlt sich, jede einzelne API zu überprüfen, um zu ermitteln, ob sie Canvas-Apps unterstützt. 
+In dieser öffentlichen Vorschau ermöglicht das Power Apps component framework den Herstellern von Anwendungen, Codekomponenten zu erstellen, zu debuggen, zu importieren und mit dem Power Apps-CLI-Werkzeug zu Canvas-Anwendungen hinzuzufügen. In dieser öffentlichen Vorschau werden nur bestimmte APIs unterstützt. Wir empfehlen Ihnen, jede API zu prüfen, um festzustellen, ob sie Canvas-Anwendungen unterstützt. 
 
 > [!WARNING]
 > Codekomponenten enthalten Code, der möglicherweise nicht von Microsoft generiert werden kann und ggf. auf Sicherheitstoken und Daten zugreifen kann. Wenn Sie Codekomponenten zu einer App hinzufügen, sollten Sie sicherstellen, dass die Codekomponentenlösungen von einer vertrauenswürdigen Quelle stammen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Es sind Systemadministratorrechte erforderlich, um die Power Apps-Komponentenfunktion in der Umgebung zu aktivieren.
-
-> [!IMPORTANT]
-> Standardmäßig ist das Power Apps Component Framework für modellgesteuerte Apps aktiviert.
+1. Eine Power Apps-Lizenz ist erforderlich. Weitere Informationen: [Power Apps component framework Lizenz](overview.md#licensing)
+2. Es sind Systemadministratorrechte erforderlich, um die Power Apps-Komponentenfunktion in der Umgebung zu aktivieren.
 
 ## <a name="enable-power-apps-component-framework-feature"></a>Aktivieren der Funktion des Power Apps component framework
 
@@ -67,13 +62,7 @@ Nachdem Sie das Feature des Power Apps component framework in Ihrer Umgebung akt
 
  Das Thema [Erstellen Ihrer ersten Codekomponente](implementing-controls-using-typescript.md) demonstriert den schrittweisen Prozess zum Erstellen von Codekomponenten.
 
-> [!NOTE]
-> Codekomponenten zu implementieren ist gleich für modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau). Der einzige Unterschied ist das Hinzufügen der Codekomponenten. 
-
 ## <a name="add-components-to-a-canvas-app"></a>Hinzufügen von Komponenten zu einer Canvas-App
-
-> [!NOTE]
-> Um Codekomponenten zu einem Feld oder einer Entität für modellgesteuerte Apps hinzuzufügen, lesen Sie [Hinzufügen von Codekomponenten zu modellgesteuerten Apps](add-custom-controls-to-a-field-or-entity.md)
 
 So fügen Sie Codekomponenten zu einer Canvas-App hinzu:
 
@@ -97,7 +86,7 @@ So fügen Sie Codekomponenten zu einer Canvas-App hinzu:
 
 ## <a name="delete-a-code-component"></a>Löschen einer Codekomponente 
 
-Wenn Sie eine Codekomponente aus einer Canvas-App löschen möchten, wählen Sie die Codekomponente, die Sie löschen möchten und dann die Schaltfläche **Löschen** aus dem Menü aus. Wenn die Codekomponente aus der App gelöscht wird, werden alle Codekomponentenelemente aus der App und dem App-Paket gelöscht. 
+Wenn Sie eine Codekomponente aus einer Canvas-App löschen möchten, wählen Sie die Codekomponente, die Sie löschen möchten und dann die Schaltfläche **Löschen** aus dem Menü aus. Wenn die Codekomponente aus der App gelöscht wird, werden alle Codekomponentenelemente aus der App und dem App-Paket gelöscht.
 
 ## <a name="update-existing-code-components"></a>Aktualisieren vorhandener Codekomponenten
 
@@ -110,4 +99,3 @@ Immer wenn Sie die Codekomponenten aktualisieren und die Änderungen in der Lauf
 
 [Power Apps component framework Übersicht](overview.md)<br/>
 [Erstellen Sie Ihre erste Codekomponente](implementing-controls-using-typescript.md)
-

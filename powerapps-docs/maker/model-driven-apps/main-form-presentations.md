@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 03eca0ade83c4d241eca9e4f7a6004232aac2b87
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860101"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108276"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>Wie Hauptformulare in modelgesteuerten Apps auf verschiedenen Geräten erscheinen
 
@@ -57,7 +57,7 @@ Das Hauptformular wird von allen modellgesteuerten App-Clients verwendet. Dieses
 |Komponente|Zusammenfassung|  
 |---------------|-------------|  
 |**Navigationsleiste**|Verwendet die Daten in der SiteMap, um die Fähigkeit bereitzustellen, sich zu verschiedenen Bereichen der Anwendung zu bewegen.<br /><br /> Der Navigationsbereich, der in klassischen Formularen verwendet wurde, ist im aktualisierten Formular nicht enthalten. Im Rahmen eines Datensatzes bietet die Navigationsleiste Zugriff auf Ansichten der verknüpften Datensätze. Anstatt zu den verknüpften Datensätzen mithilfe des Navigationsbereichs oder der Navigationsleiste zu navigieren, bietet das Hinzufügen von Unterrastern, die so konfiguriert werden, dass sie nützliche verknüpfte Entitätsdatensätze anzeigen, eine bessere Umgebung für die meisten Benutzer.|  
-|**Befehlsleiste**|Verwendet die Daten, auf für Menübänder definiert wurden, um relevante Befehle für den Datensatz zur Verfügung zu stellen.<br /><br /> Die ersten fünf Befehle werden gefolgt von Auslassungspunkten (![Schaltfläche „Weitere Befehle“](media/not-available.gif "MSchaltfläche "Weitere Befehle")) angezeigt, die ein Flyoutmenü bereitstellen, um zusätzliche Befehle auszuwählen.|  
+|**Befehlsleiste**|Verwendet die Daten, auf für Menübänder definiert wurden, um relevante Befehle für den Datensatz zur Verfügung zu stellen.<br /><br /> Die ersten fünf Befehle werden gefolgt von Auslassungspunkten (![Schaltfläche „Weitere Befehle“](media/not-available.gif "Schaltfläche "Weitere Befehle"")) angezeigt, die ein Flyoutmenü bereitstellen, um zusätzliche Befehle auszuwählen.|  
 |**Bild**|Wenn eine Entität eine Bildfeld hat und die Option **Primäres Bild** der Entität auf **Standardbild** festgelegt wurde, kann ein Bild in der Kopfzeile angezeigt werden, wenn das Formular so konfiguriert ist, um das Bild anzuzeigen.|  
 |**Kopfzeile**|Felder, die in die Kopfzeile platziert sind, bleiben sichtbar, wenn Mitarbeiter nach unten durch den Text des Formulars scrollen.<br /><br /> Bis zu vier Felder können in die Kopfzeilen platziert werden. Mehrere Textzeilen,Webressourcen oder iFrames sind in der Kopfzeile nicht zulässig. Kopf- und Fußzeilen haben einige Eigenschaften mit Abschnitten gemein.|  
 |**Prozesssteuerung**|Wenn eine Entität über aktive Geschäftsprozessflüsse verfügt, wird die Prozesssteuerung unter der Kopfzeile angezeigt. Weitere Informationen: [Geschäftsprozessflüsse](/flow/business-process-flows-overview)|  

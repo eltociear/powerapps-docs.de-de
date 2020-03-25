@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c9fe500fc2f3a7991b09c346b4fd931f8802160
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d85aa0cf9b27647a64631b5b39ba01e432b6148c
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748426"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109025"
 ---
 # <a name="create-install-and-update-a-managed-solution"></a>Eine verwaltete Lösung erstellen, installieren und aktualisieren
 
@@ -51,7 +51,7 @@ Erstellen Sie eine verwaltete Lösung, indem Sie eine nicht verwaltete Lösung a
 > [!IMPORTANT]
 >  Das Installieren einer Lösung oder Veröffentlichen von Anpassungen kann den normalen Systembetrieb stören. Es ist empfehlenswert, den Import von Lösungsimporte einzuplanen, wenn er für die Benutzer am wenigsten Unterbrechungen mit sich bringt.  
   
- Wenn die Lösung nicht erfolgreich importiert wurde, können Sie im Dialogfeld auf **Download-Protokoll** klicken, um einen Bericht aufzurufen, der Formationen zum Fehler enthält und der verhinderte, dass die verwaltete Lösung erfolgreiche importiert werden konnte. Diese Datei ist ein XML-Dokument und so konfiguriert, dass es mithilfe von Office Excel geöffnet werden kann.  
+ Wenn die Lösung nicht erfolgreich importiert wurde, können Sie im Dialogfeld auf **Download-Protokoll** klicken, um einen Bericht aufzurufen, der Formationen zum Fehler enthält und der verhinderte, dass die verwaltete Lösung erfolgreiche importiert werden konnte. Bei dieser Datei handelt es sich um ein XML-Dokument, das so konfiguriert ist, dass es mit Office Excel geöffnet werden kann.  
   
  Sie können eine programmgesteuerte verwaltete Lösung importieren oder aktualisieren, indem Sie die <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> Nachricht verwenden. Wenn Sie diese Meldung verwenden, können Sie ein Verweis auf einen Entitätsdatensatz `ImportJob` anfordern, der Details über den Erfolg des Imports enthält. Weitere Informationen: [Installieren oder Aktualisieren einer Lösung](work-solutions.md#BKMK_InstallUpgradeSolution).  
   

@@ -20,11 +20,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 73cfe1f28eb95e87e4aedf7eed9e51710ba9b8b2
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005069"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109011"
 ---
 # <a name="detect-duplicate-data-using-the-web-api"></a>Erkennen von doppelten Daten mit der Web-API
 

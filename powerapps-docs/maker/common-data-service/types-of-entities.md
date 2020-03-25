@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ebf5b794bcfc7ec01abf08315f1dbf59ce6e4808
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4e01abce4f047c0f801a3f24a7d49f09f024e659
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869894"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109299"
 ---
 # <a name="types-of-entities"></a>Arten von Entitäten
 
@@ -71,10 +71,7 @@ Die folgende Tabelle listet Aktivitätsentitäten auf, die in einer standardmä�
   
 Sie können neue benutzerdefinierte Aktivitätsentitäten erstellen. Sie können beispielsweise eine benutzerdefinierte Aktivitätsentität zur Aufzeichnung von IM-Kommunikationen erstellen. Die Erstellung einer Aktivitätsentität unterscheidet sich vom Erstellen einer Nicht-Aktivitätsentität, da Sie kein primäres Feld angeben. Alle Aktivitätsentitäten haben ein **Primäres Feld** mit **Betreff** und andere gemeinsame Felder, die durch die Aktivitätsentität definiert werden. Dies ermöglicht, alle Aktivitätstypen in einer Ansicht anzuzeigen, in der nur die gemeinsamen Felder angezeigt werden.  
 
-> [!NOTE]
-> Sie können eine benutzerdefinierte Aktivität nicht mithilfe des Power Apps-Portals erstellen. Sie müssen den Lösungs-Explorer über die Schaltfläche **Erweitert** öffnen.
-  
-Wenn Sie eine benutzerdefinierte Aktivitätsentität erstellen, wählen Sie **Als Aktivitätsentität definieren** aus. Nachdem Sie diese Option ausgewählt haben, sehen Sie, dass **In Aktivitätsmenüs anzeigen** ausgewählt ist. Mit dieser Einstellung können Personen diese Aktivitätsart in den Aktivitätsmenüs erstellen. Diese Option ist nicht für Aktivitäten ausgewählt, die in der Regel mit bestimmten Ereignissen verbunden sind und im Hintergrund mit Code oder durch einen Workflow erstellt werden. Eine spätere Änderung dieser Entität ist nach dem Speichern nicht möglich.  
+Öffnen Sie zum Erstellen einer benutzerdefinierten Aktivitätsentität den Abschnitt **Mehr Einstellungen** und wählen im Bereich **Neue Entität** die Option **Aktivitätsentität** aus der Dropdown-Liste **Wählen Sie den Entitätstyp**. Nachdem Sie diese Option ausgewählt haben, sehen Sie, dass **In Aktivitätsmenüs anzeigen** ausgewählt ist. Mit dieser Einstellung können Personen diese Aktivitätsart in den Aktivitätsmenüs erstellen. Diese Option ist nicht für Aktivitäten ausgewählt, die in der Regel mit bestimmten Ereignissen verbunden sind und im Hintergrund mit Code oder durch einen Workflow erstellt werden. Eine spätere Änderung dieser Entität ist nach dem Speichern nicht möglich.  
 
 ### <a name="see-also"></a>Siehe auch
 [Erstellen oder Bearbeiten von Entitäten](create-edit-entities.md)

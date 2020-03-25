@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 329e9f1845bfdfc9f2afa87528fbfd10bc4aa886
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753602"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109002"
 ---
 # <a name="pass-data-from-a-page-as-a-parameter-to-ribbon-actions"></a>Übergeben von Daten von einer Seite als Parameter an Menüband-Aktionen
 

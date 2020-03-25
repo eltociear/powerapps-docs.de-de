@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a029fa57a3caf02414e20127ba24dc961c85551b
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 2a93239f648c5f69676ad7903d1379b4cb1cd2a4
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004960"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109006"
 ---
 # <a name="web-api-types-and-operations"></a>Internet API-Typen und -Vorgänge
 
@@ -344,7 +344,7 @@ Ein normale überschneidene Entität hat nur die folgenden vier grundlegenden Ei
 
 *Komplexe Typen* sind schlüssellose benannte strukturierte Typen, die einen Satz von Eigenschaften enthalten. Komplexe Typen werden als Eigenschaftswerte in Modelentitäten oder als Parameter oder Rückgabewerte für Vorgänge verwendet.  
   
-<xref:Microsoft.Dynamics.CRM.ComplexTypeIndex> enthält alle systemkomplexen Typen. *Komplexe Typen* sind schlüssellose benannte strukturierte Typen, die einen Satz von Eigenschaften enthalten. Sie werden allgemein als Eigenschaftswerte in Modelentitäten oder als Parameter oder Rückgabewerte für Vorgänge verwendet. Nachfolgend finden Sie den <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> der $metadata.  
+<xref:Microsoft.Dynamics.CRM.ComplexTypeIndex> enthält alle systemkomplexen Typen. Nachfolgend finden Sie den <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> der $metadata.  
   
 ```xml  
 <ComplexType Name="WhoAmIResponse">  

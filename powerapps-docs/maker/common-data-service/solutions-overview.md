@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975803"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108291"
 ---
 # <a name="solutions-overview"></a>Überblick über Lösungen  
 
@@ -167,7 +167,7 @@ Eine Liste der Komponententypen, die zu einer beliebigen Lösung hinzugefügt we
  
 ## <a name="solution-publisher-prefix"></a>Präfix des Lösungsverlegers 
 
-Standardmäßig ist die Lösung, die Sie in Power Apps bearbeiten, die **Common Data Service-Standardlösung** die dem **Common Data Service-Standardherausgeber** zugeordnet ist. Das Standardanpassungspräfix wird zufällig für diesen Herausgeber zugewiesen, und ist beispielsweise`cr8a3`. Das bedeutet, dass der Name jedes neuen Artikels der Metadaten, die für die Organisation erstellt wurden, diese Endung im Namen hat, um die Elemente eindeutig zu identifizieren. 
+Standardmäßig ist die Lösung, die Sie in Power Apps bearbeiten, die **Common Data Services Standardlösung**, die dem **Common Data Service Standardherausgeber** zugeordnet wird. Das Standardanpassungspräfix wird zufällig für diesen Herausgeber zugewiesen, und ist beispielsweise`cr8a3`. Das bedeutet, dass der Name jedes neuen Artikels der Metadaten, die für die Organisation erstellt wurden, diese Endung im Namen hat, um die Elemente eindeutig zu identifizieren. 
 
 Wir empfehlen Ihnen, das Präfix des Lösungsverlegers zu ändern, damit es aussagekräftiger wird. Weitere Informationen [Lösungsherausgeberpräfix ändern](change-solution-publisher-prefix.md)
   

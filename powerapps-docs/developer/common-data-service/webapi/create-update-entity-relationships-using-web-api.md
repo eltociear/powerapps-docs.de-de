@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 90479dca5ecd6fcb230847533ed98533fda2e876
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748360"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109027"
 ---
 # <a name="create-and-update-entity-relationships-using-the-web-api"></a>Erstellen und Aktualisieren von Entitätsbeziehungen mit der Web-API
 

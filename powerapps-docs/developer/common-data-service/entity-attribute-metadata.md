@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 0223157f7b37218f36c7eab969d6ec70cf98add5
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005042"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109012"
 ---
 <!-- This topic was not migrated it was written for Power Apps 
 Was Mike Carter

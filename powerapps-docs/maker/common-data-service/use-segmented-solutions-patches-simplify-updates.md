@@ -22,57 +22,33 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d13eafa6858a6eec86de2db08504575c7fab9acd
-ms.sourcegitcommit: 60a721432b3fa2abd14ccb3bd16a6b34e13ada85
+ms.openlocfilehash: 16730151eb6d7ec45fad7a6803eed3e76f68f8d4
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026367"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109300"
 ---
 # <a name="use-segmented-solutions"></a>Segmentierte Lösungen verwenden 
 
-Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösungen verteilt werden, verwenden Sie Lösungssegmentierung. Abhängig von der Komplexität Ihrer Anwendung kann die Segmentierung der Lösung so einfach sein wie alles in einer einzigen Lösung zur Segmentierung nach Komponententyp, z. B. Entitäten in einer Lösung, Canvas-Anwendungen in einer anderen und Plugins in einer dritten. Um die segmentierten Lösungen zu erstellen, können Sie den Lösungsbereich in Power Apps verwenden, ohne Code zu schreiben.  
+Verwenden Sie die Lösungssegmentierung, damit Sie nur Entitätskomponenten einbeziehen, die beim Verteilen von Lösungsaktualisierungen aktualisiert werden. Mit der Lösungssegmentierung können Sie Lösungen mit ausgewählten Entitätsanlagen exportieren, beispielsweise Entitätsfelder, Formulare oder Ansichten, anstatt gesamte Entitäten mit allen Anlagen. <!-- Depending on the complexity of your app, segmentation of the solution can be as simple as everything in a single solution to segmenting by component type, such as entities in one solution, canvas apps in another, and plugins in a third. --> Um eine segmentierte Lösung zu erstellen, können Sie die **Lösungen** im Beeich Power Apps verwenden.  
 
-Es gibt drei Hauptmöglichkeiten zur Segmentierung von Lösungen: 
-- Segmentieren Sie Lösungen während der Erstellung Ihrer Anwendung. Dazu fügen Sie spezifische Komponenten hinzu, um zu steuern, was in die Lösung einfließt. Mehr Informationen: [Eine segmentierte Lösung mit Entitätsvermögen erstellen](#create-a-segmented-solution-with-entity-assets)
-- Erstellen Sie segmentierte Lösungen, um kleinere Aktualisierungen einer Lösung zu erstellen und zu veröffentlichen. Dazu klonen Sie einen Patch. Weitere Informationen: [Lösungsflicken erstellen](#create-a-solution-patch)
-- Erstellen Sie segmentierte Lösungen, um größere Updates einer Lösung zu erstellen und zu veröffentlichen. Dazu klonen Sie die Lösung. Mehr Informationen: [Klonen einer Lösung](#clone-a-solution)
+Sie können eine Lösung segmentieren, wenn Sie aus den folgenden Optionen auswählen, um der Lösung eine vorhandene Entität hinzuzufügen: 
+- Keine Komponenten einbinden. Wenn Sie keine Komponenten oder Metadaten auswählen, werden die minimalen Entitätsinformationen zur Lösung hinzugefügt. Daher werden Anzeigenamen, Entitätsattribute (Metadaten) oder Komponenten nicht berücksichtigt.   
+- **Komponenten auswählen**. Sie können Ihre Lösung segmentieren, indem Sie jede der Entität zugeordnete Komponente einzeln auswählen, wie Felder, Beziehungen, Geschäftsregeln, Ansichten, Formulare und Diagramme. Verwenden Sie diese Option, um nur die Komponenten auszuwählen, die der Entität hinzugefügt oder die geändert wurden, z. B. ein neues benutzerdefiniertes Feld oder das Hinzufügen eines Formulars.  
+- **Einschließen der Metadaten der Entität**. Diese Option enthält keine Komponenten, wie verwandte Entitäten, enthält jedoch nicht *alle* Metadaten, die der Entität zugeordnet sind. Zu den Metadaten gehören die Attribute der Entitäten, wie z. B. Auditierung, Dublettenerkennung oder Änderungsverfolgung. 
+- **Alle Komponenten einbeziehen**. Diese Option umfasst alle Komponenten *und* die mit der Entität verbundenen Metadaten. Es kann andere Entitäten oder Entitätskomponenten wie z. B. Geschäftsprozessflows, Berichte, Verbindungen und Warteschlangen enthalten. Sie sollten diese Option nur verwenden, wenn Sie eine nicht verwaltete Entität verteilen, die in der Zielumgebung nicht vorhanden ist. 
 
-## <a name="when-to-plan-for-segmentation"></a>Wann ist die Segmentierung zu planen? 
-Ähnlich wie bei der Planung, wie Sie die Daten modellieren, die in Ihre Anwendung eingehen, sollte die Planung für die Segmentierung in Betracht gezogen werden, bevor Sie Ihre Lösung verteilen. Die Segmentierung von Lösungen aus einer einzelnen Lösung in mehrere Lösungen einen Monat oder zwei Jahre nach der Erstellung der ersten Anwendung kann komplex sein und kann Probleme verursachen.  
+    > [!WARNING]
+    > Fügen Sie Ihrer Lösung keine Komponenten hinzu, die Sie nicht beabsichtigt haben. Wenn Ihr Update in die Zielumgebung importiert wird, kann eine Lösung mit unbeabsichtigten Komponenten zu unerwartetem Verhalten der vorhandenen Komponenten führen, die jetzt unter der Ebene liegen, die Sie mit Ihrem Lösungsupdate eingeführt haben. Wenn Sie beispielsweise eine Ansicht für eine Entität hinzufügen, die nicht aktualisiert wird, und die Ansicht in der vorhandenen Ebene Anpassungen enthält, werden die vorhandenen Anpassungen möglicherweise inaktiv. Weitere Informationen finden Sie unter [-Lösungsebenen](solution-layers.md).
 
-## <a name="solutions-as-patches"></a>Lösungen als Patches
-Mit der Lösungssegmentierung können Sie Lösungs-Patches mit ausgewählten Entitäts-Assets wie Entitätsfeldern, Formularen und Ansichten exportieren, anstatt ganze Entitäten mit allen Assets. 
+<!-- The below was from Per but I don't think it fits in this topic that is only about solution segmentation with entities. 
+Similar to the planning that goes into how you model the data that goes into your app, planning for segmentation should be considered before you distribute your solution. Segmenting solutions from a single solution into multiple solutions a month or two years after the initial app has been built can be complex and is prone to cause issues.  -->
 
-Sie haben nicht nur mehr Kontrolle über den Inhalt einer Lösung, sondern können auch kontrollieren, was in den Patch einfließt. Sie können einen Patch für eine übergeordnete Lösung erstellen und ihn als ein Nebenupdate für die Basislösung exportieren. Wenn Sie eine Lösung klonen, führt das System ein Rollup für alle verknüpften Patches in die Basislösung aus, und es erstellt eine neue Version.  
-  
- Wenn Sie mit Patches und geklonten Lösungen arbeiten, berücksichtigen Sie die folgenden Informationen:  
-  
--   Ein Patch stellt ein inkrementelles Nebenupdate für die übergeordnete Lösung dar. Ein Patch kann Komponenten und Anlagen in der übergeordneten Lösung hinzufügen oder aktualisieren, wenn es auf dem Zielsystem installiert ist, es kann aber keine Komponenten oder Anlagen aus der übergeordneten Lösung löschen.  
-  
--   Ein Patch kann nur eine übergeordnete Lösung haben, aber eine übergeordnete Lösung kann ein oder mehrere Patches haben.  
-  
--   Für eine nicht verwaltete Lösung wird ein Patch erstellt. Sie können keinen Patch für eine verwaltete Lösung erstellen.  
-  
--   Wenn Sie ein Patch auf ein Zielsystem exportieren, sollten sie es als verwaltetes Patch exportieren. Verwenden Sie keine unverwalteten Patches in Produktionsumgebungen.  
-  
--   Die übergeordnete Lösung muss im Zielsystem vorhanden sein, um ein Patch zu installieren.  
-  
--   Sie können ein Patch löschen oder aktualisieren.  
-  
--   Wenn Sie eine übergeordnete Lösung löschen, werden auch alle untergeordneten Patches gelöscht. Das System gibt Ihnen eine Warnmeldung, dass Sie den Löschvorgang nicht rückgängig machen können. Das Löschen wird in einer einzigen Transaktion ausgeführt. Wenn eines der Patches oder die übergeordnete Lösung nicht gelöscht werden kann, wird für die gesamte Transaktion ein Rollback ausgeführt.  
-  
--   Wenn Sie das erste Patch für übergeordnete Lösung erstellt haben, wird die Lösung gesperrt, und Sie können keine Änderungen in dieser Lösung vornehmen oder sie exportieren. Wenn Sie jedoch alle ihre untergeordneten Patches löschen, wird die übergeordnete Lösung entsperrt.  
-  
--   Wenn Sie eine Basislösung klonen, wird für alle untergeordneten Patches ein Rollup in die Basislösung ausgeführt, und sie wird zu einer neuen Version. Sie können Komponenten und Anlagen in der geklonten Lösung hinzufügen, bearbeiten oder löschen.  
-  
--   Eine geklonte Lösung stellt einen Ersatz der Basislösung dar, wenn sie im Zielsystem als verwaltete Lösung installiert wird. Normalerweise verwenden Sie eine geklonte Lösung, um ein Hauptupdate an die vorhergehende Lösung zu versenden.  
-  
-### <a name="understanding-version-numbers-for-cloned-solutions-and-patches"></a>Versionsnummern für geklonte Lösungen und Patches verstehen  
- Eine Lösungsversion hat das folgende Format: major.minor.build.revision. Ein Patch muss eine höhere Build- oder Revisionsnummer als die übergeordnete Lösung haben. Es kann keine höhere Haupt- oder Nebenversion haben. Beispielsweise bei einer Basislösungsversion 3.1.5.7 könnte ein Patch Version 3.1.5.8 oder Version 3.1.7.0 sein, aber nicht Version 3.2.0.0. Eine geklonte Lösung muss die Versionsnummer haben, die höher oder gleich der Versionsnummer der Basislösung ist. Beispielsweise bei einer Basislösungsversion 3.1.5.7 könnte eine geklonte Lösung Version 3.2.0.0 oder Version 3.1.5.7 sein. In der Benutzeroberfläche können Sie die Werte für die Haupt- und Nebenversion für eine geklonte Lösung festlegen sowie die Build- oder Revisionswerte für ein Patch.  
-  
 ## <a name="create-a-segmented-solution-with-entity-assets"></a>Erstellen Sie eine segmentierte Lösung mit Entitäts-Assets 
- Um eine segmentierte Lösung zu erstellen, starten Sie mit dem Erstellen einer nicht verwalteten Lösung und fügen Sie die vorhandenen Ressourcen hinzu Sie können mehrere Systementitäten oder benutzerdefinierte Entitäten für jede Entität hinzufügen, die Anlagen auswählen, die Sie der Lösung hinzufügen möchten. Die assistentenähnliche Einrichtung führt Sie Schritt für Schritt durch den Prozess des Hinzufügens von Entitäts-Assets.  
+ Um eine segmentierte Lösung zu erstellen, starten Sie mit dem Erstellen einer nicht verwalteten Lösung und fügen Sie die aktualisierte Komponenten hinzu. Die assistentenähnliche Einrichtung führt Sie Schritt für Schritt durch den Prozess des Hinzufügens von Entitäts-Assets. 
+
+Stellen Sie sich beispielsweise vor, Sie haben eine neue benutzerdefinierte Entität erstellt, die in keiner anderen Umgebung mit dem Namen vorhanden ist *Benutzerdefinierte Entität* und die auch ein neues Feld mit dem Namen *topten* für die Konteneinheit hinzufügte. Führen Sie die folgenden Schritte aus, um eine segmentierte Lösung zu erstellen. 
   
 1. Gehen Sie zum Portal Power Apps und wählen Sie dann **Lösungen**.  
   
@@ -80,18 +56,23 @@ Sie haben nicht nur mehr Kontrolle über den Inhalt einer Lösung, sondern könn
   
 3.  Öffnen Sie die von Ihnen erstellte Lösung. Wählen Sie in der Befehlsleiste **Vorhandenes hinzufügen** und wählen Sie dann **Entität**.  
   
-4.  Wählen Sie im Bereich **Existierende Entitäten hinzufügen** eine oder mehrere Entitäten aus, die Sie der Lösung hinzufügen möchten, z. B. eine Standard-Entität wie Kontakt und eine benutzerdefinierte Entität. Wählen Sie **Weiter**.  
-    > [!div class="mx-imgBorder"] 
-    > ![Vorhandene Entitäten hinzufügen ](media/add-existing-entities1.png)
+4.  Im Bereich **Bestehende Entitäten hinzufügen** wählen Sie eine oder mehrere Entitäten aus, die Sie der Lösung hinzufügen möchten. Wählen Sie zum Beispiel **Konto** und **Benutzerdefinierte Entität**. Wählen Sie **Weiter**.  
 
-5.  Im Bereich **Entitäten auswählen** können Sie aus den einzubeziehenden Assets wählen. 
+5.  Im Bereich **Entitäten auswählen** können Sie aus den einzubeziehenden Assets wählen: 
     - **Alle Komponenten einbeziehen**. Diese Option umfasst alle Komponenten *und* die mit der Entität verbundenen Metadaten. Es kann andere Entitäten oder Entitätskomponenten wie z. B. Geschäftsprozessflows, Berichte, Verbindungen und Warteschlangen enthalten. 
     - **Einschließen der Metadaten der Entität**. Diese Option umfasst *nur* die mit der Entität verbundenen Metadaten. Zu den Metadaten gehören die Attribute der Entitäten, wie z. B. Auditierung, Dublettenerkennung oder Änderungsverfolgung. 
     - **Komponenten auswählen**. Mit dieser Option können Sie jede Komponente, die mit der Entität verknüpft ist, wie Felder, Beziehungen, Geschäftsregeln, Ansichten, Formulare und Diagramme, einzeln auswählen. 
+    - Keine Komponenten einbinden. 
+
+      Für dieses Beispiel, weil *Benutzerdefinierte Entität* nie in die Zielumgebung importiert wurde neben der **Benutzerdefinierten Entität**, wählen Sie **Schließen Sie alle Komponenten ein**. Unter **Konto**, wählen Sie **Komponenten auswählen**.  
       > [!div class="mx-imgBorder"] 
-      > ![Entitätskomponenten auswählen](media/add-existing-entities2.png)
+      > ![Vorhandene Entitäten hinzufügen ](media/add-existing-entities1.png)
   
-6.  Wählen Sie **Hinzufügen** aus.  
+6.  Da nur das *topten* benutzerdefinierte Feld neu für die Kontoentität ist, wählen Sie **Top Ten** und dann **Hinzufügen** aus.  
+     > [!div class="mx-imgBorder"] 
+     > ![Entitätskomponenten auswählen](media/add-existing-entities2.png)
+
+7. Wählen sie **hinzufügen**, um die Komponenten der Lösung hinzuzufügen. 
 
 ### <a name="create-a-segmented-solution-using-solution-explorer"></a>Erstellen Sie eine segmentierte Lösung mit dem Lösungsexplorer  
 Folgende Abbildungen stellen ein Beispiel der Erstellung einer segmentierten Lösung bereit, indem Entitätsanlagen von den Entitäten `Account`, `Case` sowie `Contact` ausgewählt werden.  
@@ -129,52 +110,8 @@ Beginnen Sie mit dem Öffnen einer nicht verwalteten Lösung, die Sie erstellt h
  > [!div class="mx-imgBorder"] 
  > ![Lösung mit Entitäten.](media/solution-segmentation-solution-entities-admin.png "Lösung mit Entitäten.")  
   
-## <a name="create-a-solution-patch"></a>Einen Lösungspatch erstellen  
- Ein Patch enthält Änderungen an der übergeordneten Lösung, wie beispielsweise das Hinzufügen oder Bearbeiten von Komponenten und Anlagen. Sie müssen die Komponenten des übergeordneten Elements nicht einfügen, es sei denn, Sie planen, Sie zu bearbeiten.  
   
-### <a name="create-a-patch-for-an-unmanaged-solution"></a>Ein Patch für eine nicht verwaltete Lösung erstellen  
-  
-1. Gehen Sie zum Portal Power Apps und wählen Sie dann **Lösungen**.   
-  
-2. Wählen Sie in der Lösungsliste eine nicht verwaltete Lösung aus, für die Sie einen Patch erstellen möchten. Wählen Sie in der Befehlsleiste **Klonen** und wählen Sie dann **Klonen Sie einen Patch**. Das rechte Fenster, das sich öffnet, enthält den Namen der Basislösung und die Patch-Versionsnummer. Wählen Sie **Speichern** aus.  
-   > [!div class="mx-imgBorder"] 
-   > <img src="media/clone-a-patch.png" alt="Clone a patch" height="735" width="408">
- 
-3. Suchen Sie in der Lösungsliste den neu erstellten Patch und öffnen Sie ihn. Beachten Sie, dass der eindeutige Name der Lösung mit _Patch_*Hex-Nummer* angehängt wurde. Fügen Sie wie bei der Basislösung die gewünschten Komponenten und Assets hinzu.  
-  
-#### <a name="create-a-patch-using-solution-explorer"></a>Erstellen Sie einen Patch mit dem Lösungsexplorer
- Folgende Abbildungen stellen ein Beispiel zum Erstellen eines Patches für eine vorhandene Lösung bereit. Beginnen Sie durch Klicken auf **Ein Patch klonen** (in der komprimierten Ansicht wird das Symbol **Ein Patch klonen** als zwei kleine Quadrate, wie unten gezeigt, abgebildet).  
-  
- > [!div class="mx-imgBorder"] 
- > ![Klonen Sie ein Patch-Symbol.](media/solution-segmentation-click-patch-icon-admin.png "Klonen Sie ein Patch-Symbol.")  
-  
- Im Dialogfeld **Zu patchender Klon** sehen Sie, dass die Versionsnummer für den Patch auf der Versionsnummer der übergeordneten Lösung basiert, aber die Buildnummer wird um eins erhöht. Jeder darauffolgende Patch hat eine höhere Build- oder Revisionsnummer als der vorhergehende Patch.  
-  
- ![Verwenden Sie das „Zu patchender Klon“-Dialogfeld.](media/solution-segmentation-clone-patch-dialog-admin.png "Verwenden Sie das „Zu patchender Klon“-Dialogfeld.")  
-  
- Der folgende Screenshot zeigt die Basislösung **SegmentedSolutionExample**, Version **1.0.1.0**, und den Patch **SegmentedSolutionExample_Patch**, Version **1.0.2.0**.  
-  
- > [!div class="mx-imgBorder"] 
- > ![Ein Raster mit Lösungen und Patches.](media/solution-segmentation-solution-patch-grid-admin.png "Ein Raster mit Lösungen und Patches.")  
-  
- Im Patch haben wir eine neue benutzerdefinierte Entität namens `Book` hinzugefügt und alle Assets der Entität `Book` in den Patch aufgenommen.  
-  
- ![Fügen Sie die benutzerdefinierte Entität im Patch hinzu.](media/solution-segmentation-add-book-patch-admin.png "Fügen Sie die benutzerdefinierte Entität im Patch hinzu.")  
-  
-## <a name="clone-a-solution"></a>Eine Lösung klonen  
- Wenn Sie eine nicht verwaltete Lösung klonen, werden die ursprüngliche Lösung und alle Patches, die sich auf die Lösung beziehen, in eine neu erstellte Version der ursprünglichen Lösung hochgerollt. Nach dem Klonen enthält die neue Lösungsversion die ursprünglichen Entitäten sowie alle Komponenten oder Entitäten, die in einem Patch hinzugefügt wurden. 
-
-![Eine Lösung klonen](media/cloned-solution.png)
-
-> [!IMPORTANT]
-> Durch das Klonen einer Lösung werden die ursprüngliche Lösung und die zugehörigen Patches entfernt. 
-  
-1. Gehen Sie zum Portal Power Apps und wählen Sie dann **Lösungen**.   
-  
-2.  Wählen Sie in der Lösungsliste eine nicht verwaltete Lösung aus, um einen Klon zu erstellen. Wählen Sie in der Befehlsleiste **Klonen** und wählen Sie dann **Lösung klonen**. Im rechten Fensterbereich werden der Name der Basislösung und die neue Versionsnummer angezeigt. Wählen Sie **Speichern** aus.  
-  
-  
-### <a name="next-steps"></a>Nächste Schritte  
+### <a name="see-also"></a>Siehe auch  
  [Überblick über Lösungen](solutions-overview.md)
 
 

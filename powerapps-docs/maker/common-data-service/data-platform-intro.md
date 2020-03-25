@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e7bb5e6ac623b1fc3cbf9a496746ebf2bbf71c7
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 11e131918e629f9373441c4307b0f4fc51e6dd30
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004834"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108283"
 ---
 # <a name="what-is-common-data-service"></a>Was ist Common Data Service?
 Mit Common Data Service können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendungen verwendet werden. Daten in Common Data Service werden in einem Satz von Entitäten gespeichert. Eine *Entität* ist eine Datensatzgruppe, in der Daten gespeichert werden, ähnlich zur Speicherung von Daten in einer Tabelle einer Datenbank. Common Data Service umfasst einen Basissatz an Standardentitäten, die typischen Szenarien abdecken, jedoch können Sie auch benutzerdefinierte Entitäten erstellen, die für Ihre Organisation spezifisch sind und sie mit Power Query mit Daten auffüllen. App-Hersteller können dann Power Apps verwenden, um mithilfe dieser Daten umfangreiche Anwendungen zu erstellen.
