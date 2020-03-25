@@ -1551,36 +1551,41 @@
           href: ./common-data-service/use-solutions-for-your-customizations.md
         - name: Übersicht über den Lösungsherausgeber
           href: ./common-data-service/change-solution-publisher-prefix.md
-        - name: Erstellen einer Lösung
-          href: ./common-data-service/create-solution.md
-        - name: Importieren von Lösungen
-          href: ./common-data-service/import-update-export-solutions.md
-        - name: Update oder Upgrade von Lösungen
-          href: ./common-data-service/update-solutions.md
-        - name: Exportieren von Lösungen
-          href: ./common-data-service/export-solutions.md
-        - name: Zusammenführen von verwalteten Lösungen
-          href: ./common-data-service/how-managed-solutions-merged.md
-        - name: Verwenden von Umgebungsvariablen
-          href: ./common-data-service/EnvironmentVariables.md
-        - name: Anzeigen von Lösungsebenen
-          href: ./common-data-service/solution-layers.md
-        - name: Anzeigen des Lösungsverlauf
-          href: ./common-data-service/solution-history.md
-        - name: Verwenden der Lösungsprüfung
-          href: ./common-data-service/use-powerapps-checker.md
-        - name: 'Häufige Probleme und Lösungen: Lösungsüberprüfung'
-          href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Verwenden von segmentierten Lösungen
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: Festlegen von verwalteten Eigenschaften in den Metadaten
-          href: ./common-data-service/set-managed-properties-metadata.md
+        - name: Zusammenführen von verwalteten Lösungen
+          href: ./common-data-service/how-managed-solutions-merged.md
+        - name: Verwenden der Lösungsprüfung
+          href: ./common-data-service/use-powerapps-checker.md
+          items:
+            - name: 'Häufige Probleme und Lösungen: Lösungsüberprüfung'
+              href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Bewährte Methoden
           href: ./common-data-service/solution-best-practices.md
-        - name: Erweiterte Themen
+        - name: Vorgehensweise
           items:
             - name: Erstellen von Lösungspatches
               href: ./common-data-service/solution-patches.md
+            - name: Erstellen einer Lösung
+              href: ./common-data-service/create-solution.md
+            - name: Update oder Upgrade von Lösungen
+              href: ./common-data-service/update-solutions.md
+            - name: Importieren von Lösungen
+              href: ./common-data-service/import-update-export-solutions.md
+            - name: Exportieren von Lösungen
+              href: ./common-data-service/export-solutions.md
+            - name: Verwenden von Umgebungsvariablen
+              href: ./common-data-service/EnvironmentVariables.md
+            - name: Anzeigen von Lösungsebenen
+              href: ./common-data-service/solution-layers.md
+            - name: Anzeigen des Lösungsverlauf
+              href: ./common-data-service/solution-history.md
+            - name: Festlegen von verwalteten Eigenschaften in den Metadaten
+              href: ./common-data-service/set-managed-properties-metadata.md
+            - name: Erweiterte Themen
+              items:
+                - name: Erstellen von Lösungspatches
+                  href: ./common-data-service/solution-patches.md
     - name: Arbeit mit Dataflows
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
