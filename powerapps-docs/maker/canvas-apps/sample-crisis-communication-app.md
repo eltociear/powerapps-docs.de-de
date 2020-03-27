@@ -7,21 +7,21 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/18/2020
+ms.date: 03/25/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: febec328c291972563599eb56a32f80e22eb070a
-ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
+ms.openlocfilehash: b4a356903c741b97a9b8dbe49d402f71f7196f0b
+ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80122517"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80328549"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Einrichten und Erlernen der Beispiel Vorlage für die Krisenkommunikation in Power apps
-<!--note from editor: Suggest moving the overview into the usual overview position (i.e. after the H1). Other notes: According to the Docs Contributor Guide, graphic file names should be all lowercase, including the extension. I didn't change this, but something to note for next time. -->
+
 Die APP zur Krisenkommunikation bietet eine benutzerfreundliche benutzerfreundliche Benutzerfreundlichkeit, um Benutzer mit Informationen zu einer Krise zu verbinden. Holen Sie sich schnell Aktualisierungen zu internen Unternehmensnachrichten, erhalten Sie Antworten auf häufig gestellte Fragen, und erhalten Sie Zugriff auf wichtige Informationen wie Links und Notfallkontakte. Diese App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen.
 
 In dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
@@ -647,7 +647,7 @@ Die APP verwendet einen Flow, um Benachrichtigungen an Endbenutzer zu senden, we
 
     ![Erstellen einer neuen Verbindung](media/sample-crisis-communication-app/create-connection.png)
 
-1. Suchen Sie nach dem Namen der Verbindung. Beispiel: **powerapps-Benachrichtigung (Vorschau)** .
+1. Suchen Sie nach dem Namen der Verbindung. Beispiel: **powerapps-Benachrichtigung (Vorschau)**.
 
     ![Beispiel für Verbindungs Name](media/sample-crisis-communication-app/notifications.png)
 
@@ -702,27 +702,21 @@ Die APP verwendet einen Flow, um Benachrichtigungen an Endbenutzer zu senden, we
 Öffnen Sie in diesem Fall die Karte mit der nicht autorisierten Verbindung, und führen Sie eine erneute Autorisierung durch.
 
 
-### <a name="optional-sending-notifications-to-more-than-999-users"></a>Optional: Senden von Benachrichtigungen an mehr als 999 Benutzer
+### <a name="optional-sending-notifications-to-more-than-5000-users"></a>Optional: Senden von Benachrichtigungen an mehr als 5000 Benutzer
 
-Die aktuelle Aktion zum Abrufen von **Gruppenmitgliedern** ist auf das Abrufen von 999-Benutzern beschränkt (standardmäßig 100-Benutzer). Zum Verteilen an weitere Benutzer können Sie den Flow ändern, um stattdessen eine e-Mail an eine Verteiler Gruppe zu senden.
+Die aktuelle Aktion zum Abrufen von **Gruppenmitgliedern** ist auf das Abrufen von 5000-Benutzern beschränkt, wenn Sie die Office-Lizenz der Energie Automatisierung verwenden. Wenn Sie über eine Premium-Lizenz verfügen und eine Verteilung an bis zu 100000 Benutzer durchführen möchten, können Sie die folgenden Schritte ausführen, um an weitere Benutzer zu senden.
 
-1. Löschen Sie die folgenden Karten: **Gruppenmitglieder gruppieren** und **auf bevorzugte Sende Benachrichtigungs Einstellung wechseln**:
+1. Wählen Sie das Menü **...** für die Karte **Gruppenmitglieder erhalten** aus.
 
-    ![Lösch Aktionen](media/sample-crisis-communication-app/36-delete-actions.png)
+    ![Wählen Sie... stehen](media/sample-crisis-communication-app/40-Settings.png)
 
-1. Fügen Sie eine neue Aktion hinzu.
+1. Wählen Sie **Einstellungen** aus.
 
-1. Suchen und wählen Sie **eine e-Mail senden (v2)** :
+1. Ändern Sie das Feld **Schwellenwert** in 100.000.
 
-    ![Hinzufügen einer e-Mail senden](media/sample-crisis-communication-app/37-add-send-an-email.png)
+    ![Festlegen des Schwellenwert Felds](media/sample-crisis-communication-app/41-Threshold.png)
 
-1. Geben Sie im Feld **an** den Namen der Verteiler Gruppe ein.
-
-1. Wählen Sie im Feld **Betreff** die Schaltfläche **dynamischen Wert hinzufügen** aus, und fügen Sie das Feld **Title** von der Karte **Wenn ein Nachrichten Element gepostet wird** hinzu:
-
-    ![Titel hinzufügen](media/sample-crisis-communication-app/38-add-title.png)
-
-1. Wählen Sie im Feld **Text** die Schaltfläche **dynamischen Wert hinzufügen** aus, und fügen Sie das Feld **Details** der Karte **Wenn ein Nachrichten Element gepostet angezeigt wird** hinzu.
+1. Auswahl **abgeschlossen**
 
 1. Wählen Sie **Speichern** aus.
 
@@ -840,7 +834,7 @@ Wenn Sie ein Team Administrator sind, können Sie die APP per Push an alle Benut
 
 ### <a name="create-a-central-crisis-management-team-in-teams"></a>Erstellen eines Teams für das zentrale Krisenmanagement in Teams<a name="create-a-central-crisis-management-teams-team"></a>
 
-Um Ihre Reaktion auf Ihre Reaktion zu koordinieren, sollten Sie ein zentrales Krisenmanagementteam in Teams erstellen und es mit allen relevanten Informationen füllen.
+Um Ihre Reaktion auf Ihre Reaktion zu koordinieren, sollten Sie ein zentrales Krisenmanagementteam in Teams erstellen und es mit allen relevanten Informationen füllen. Dieses Team muss nur für das zentrale Antwort Team freigegeben werden.
 
 1. Wechseln Sie zu Teams.
 1. Wählen Sie in der linken App-Leiste **Teams** aus.
@@ -886,6 +880,10 @@ Nachdem Sie das Team erfolgreich erstellt haben, können Sie relevante Informati
 * **Welche Features werden in gcc derzeit nicht unterstützt?**
 
     Der Power automatisierter bot-Connector für Teams und der pushbenachrichtigungsconnector sind zurzeit nicht für gcc verfügbar. Verwenden Sie die Option e-Mail, um Benutzer über interne News Updates zu benachrichtigen.
+
+* **Wie kann ich die Anwendung aktualisieren?**
+
+    Wenn Sie die Anwendung aktualisieren möchten, führen Sie die unter [aka.ms/CrisisCommunicationSolution](https://aka.ms/CrisisCommunicationSolution)beschriebenen Schritte aus.
 
 ## <a name="issues-and-feedback"></a>Probleme und Feedback
 
