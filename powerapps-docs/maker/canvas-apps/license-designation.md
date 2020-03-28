@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 95478501e6ca5af36ef993637b3612cdf1ea0196
-ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
+ms.openlocfilehash: 495325949776b066ed30d629fb031730e4463179
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80328776"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80374997"
 ---
 # <a name="how-to-check-license-designation-for-an-app"></a>Überprüfen der Lizenz Bezeichnung für eine APP
 
@@ -32,7 +32,7 @@ In der folgenden Tabelle werden die Bezeichnungen und die Lizenz erläutert, die
 |-|-|
 | Standard | Eine APP, die nur Standardconnectors verwendet. Ein Endbenutzer muss über einen powerapps für Office 365-Plan, pro App-Plan oder einen pro-Benutzer-Plan verfügen, um auf diese APP zuzugreifen.
 | Erweitert | Eine APP, die Connectors verwenden darf, die am 1. Oktober 2019 auf Premium herauf gestuft wurden. Ein Endbenutzer muss über einen powerapps für Office 365-Plan, pro App-Plan oder pro Benutzer Plan verfügen. Häufig gestellte Fragen zur  [powerapps-Lizenzierung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#office-365) , welche Connectors am 1. Oktober 2019 zu Premium herauf gestuft wurden.
-| Premium | Eine APP, die mindestens einen Premium-Connector verwendet. Ein Endbenutzer muss über einen pro-App-Plan oder einen Benutzer Plan verfügen, auf den zugegriffen werden soll.
+| Premium | Eine APP, die mindestens einen Premium-Connector, einen benutzerdefinierten Connector oder ein lokales Gateway verwendet. Ein Endbenutzer muss über einen pro-App-Plan oder einen Benutzer Plan verfügen, auf den zugegriffen werden soll.
 
 ## <a name="check-app-license-designation-from-app-settings"></a>App-Lizenz Bezeichnung über App-Einstellungen überprüfen
 
@@ -40,7 +40,7 @@ In der folgenden Tabelle werden die Bezeichnungen und die Lizenz erläutert, die
 
 1. Wählen Sie **apps** von Links aus.
 
-1. Wählen Sie eine APP aus der APP-Liste aus. Verwenden Sie die Option **Einstellungen** von oben oder, verwenden Sie die **weiteren Befehle** (**...**) und dann **Einstellungen** aus dem Dropdown Menü:
+1. Wählen Sie eine APP aus der APP-Liste aus. Verwenden Sie die Option **Einstellungen** von oben oder, verwenden Sie die **weiteren Befehle** ( **...** ) und dann **Einstellungen** aus dem Dropdown Menü:
 
     ![Einstellungs Option](media/license-designation/app-settings.png)
 
@@ -54,7 +54,7 @@ In der folgenden Tabelle werden die Bezeichnungen und die Lizenz erläutert, die
 
 1. Wählen Sie **apps** von Links aus.
 
-1. Wählen Sie eine APP aus der APP-Liste aus. Sie können die Option **Details** von oben oder aus verwenden. verwenden Sie dazu die **weiteren Befehle** (**...**) und dann **Details** aus dem Dropdown Menü:
+1. Wählen Sie eine APP aus der APP-Liste aus. Sie können die Option **Details** von oben oder aus verwenden. verwenden Sie dazu die **weiteren Befehle** ( **...** ) und dann **Details** aus dem Dropdown Menü:
 
     ![App-Details](media/license-designation/app-details.png)
 

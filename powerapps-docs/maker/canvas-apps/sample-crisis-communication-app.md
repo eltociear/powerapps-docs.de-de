@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b4a356903c741b97a9b8dbe49d402f71f7196f0b
-ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
+ms.openlocfilehash: 465f18474c7054467db8e22bb1702db250177395
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80328549"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375062"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Einrichten und Erlernen der Beispiel Vorlage für die Krisenkommunikation in Power apps
 
@@ -142,7 +142,7 @@ Wenn dies der Fall ist, gestatten Sie Standort Diensten den Zugriff.<!--edit oka
 
 Der Flow erstellt die folgenden SharePoint-Listen auf der SharePoint-Website.<!--general note; You don't need to introduce tables or graphics with colons, only lists.-->
 
-| **Anzeige Titel**| **Zweck** | **Description** (Beschreibung) |
+| **Anzeige Titel**| **Zweck** | **Beschreibung** |
 |-|-|-|
 | CI_LogosAssets| , Um das Logo und/oder andere Bilder aufzunehmen, auf die von der APP verwiesen werden soll. Auf das Logo wird in powerapps über einen direkten Link oder über die ID-Nummer des Logos verwiesen, das Sie verwenden möchten. | Die Bibliothek für Verwandte Logos und andere Image Ressourcen für die app " *[App-Name]* ". |
 | CI_configAdminSetup | Wird für die featurekonfiguration durch den Administrator der APP verwendet.<br>**Hinweis**: Diese Liste sollte für alle Mitglieder, die keine Administratoren sind, schreibgeschützt sein. | Die Administrator Konfigurationsliste für die app " *[App-Name]* ".
@@ -647,7 +647,7 @@ Die APP verwendet einen Flow, um Benachrichtigungen an Endbenutzer zu senden, we
 
     ![Erstellen einer neuen Verbindung](media/sample-crisis-communication-app/create-connection.png)
 
-1. Suchen Sie nach dem Namen der Verbindung. Beispiel: **powerapps-Benachrichtigung (Vorschau)**.
+1. Suchen Sie nach dem Namen der Verbindung. Beispiel: **powerapps-Benachrichtigung (Vorschau)** .
 
     ![Beispiel für Verbindungs Name](media/sample-crisis-communication-app/notifications.png)
 
@@ -704,19 +704,25 @@ Die APP verwendet einen Flow, um Benachrichtigungen an Endbenutzer zu senden, we
 
 ### <a name="optional-sending-notifications-to-more-than-5000-users"></a>Optional: Senden von Benachrichtigungen an mehr als 5000 Benutzer
 
-Die aktuelle Aktion zum Abrufen von **Gruppenmitgliedern** ist auf das Abrufen von 5000-Benutzern beschränkt, wenn Sie die Office-Lizenz der Energie Automatisierung verwenden. Wenn Sie über eine Premium-Lizenz verfügen und eine Verteilung an bis zu 100000 Benutzer durchführen möchten, können Sie die folgenden Schritte ausführen, um an weitere Benutzer zu senden.
+Die aktuelle Aktion zum Abrufen von **Gruppenmitgliedern** ist auf das Abrufen von 5000-Benutzern für die Office-Lizenz der Energie Automatisierung beschränkt. Selbst bei der Premium-Lizenz können Sie Drosselungs Limits mit dem Teams-Connector erreichen, wenn Sie versuchen, Benachrichtigungen an zu viele Benutzer zu senden. Um an weitere Benutzer zu verteilen, können Sie in den Flow ändern, um stattdessen eine e-Mail an eine Verteilerliste zu senden.
 
-1. Wählen Sie das Menü **...** für die Karte **Gruppenmitglieder erhalten** aus.
+1. Löschen Sie die folgenden Karten: **Gruppenmitglieder gruppieren** und **auf bevorzugte Sende Benachrichtigungs Einstellung wechseln**:
 
-    ![Wählen Sie... stehen](media/sample-crisis-communication-app/40-Settings.png)
+    ![Lösch Aktionen](media/sample-crisis-communication-app/36-delete-actions.png)
 
-1. Wählen Sie **Einstellungen** aus.
+1. Fügen Sie eine neue Aktion hinzu.
 
-1. Ändern Sie das Feld **Schwellenwert** in 100.000.
+1. Suchen und wählen Sie **eine e-Mail senden (v2)** :
 
-    ![Festlegen des Schwellenwert Felds](media/sample-crisis-communication-app/41-Threshold.png)
+    ![Hinzufügen einer e-Mail senden](media/sample-crisis-communication-app/37-add-send-an-email.png)
 
-1. Auswahl **abgeschlossen**
+1. Geben Sie im Feld **an** den Namen der Verteiler Gruppe ein.
+
+1. Wählen Sie im Feld **Betreff** die Schaltfläche **dynamischen Wert hinzufügen** aus, und fügen Sie das Feld **Title** von der Karte **Wenn ein Nachrichten Element gepostet wird** hinzu:
+
+    ![Titel hinzufügen](media/sample-crisis-communication-app/38-add-title.png)
+
+1. Wählen Sie im Feld **Text** die Schaltfläche **dynamischen Wert hinzufügen** aus, und fügen Sie das Feld **Details** der Karte **Wenn ein Nachrichten Element gepostet angezeigt wird** hinzu.
 
 1. Wählen Sie **Speichern** aus.
 
