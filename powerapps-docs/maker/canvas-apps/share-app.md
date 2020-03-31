@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/24/2020
+ms.date: 03/30/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cbbc3442a54a0c84ff82b7e32f255c2b400d073
-ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
+ms.openlocfilehash: 7d47d5fc808ebd13a101093b58b1e3e890730f25
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80242876"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80406338"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>Freigeben einer Canvas-app in Power apps
 
@@ -191,7 +191,7 @@ Canvas-Apps für Power Apps können für Gastbenutzer eines Azure Active Directo
           > [!div class="mx-imgBorder"] 
           > ![Für Gast freigeben](media/share-app/guest_access_doc_2.png "Für Gast freigeben")
  
-Nachdem Sie eine APP für den Gast Zugriff freigegeben haben, können Gäste apps, die für Sie freigegeben wurden, über die im Rahmen der Freigabe gesendete e-Mail ermitteln und darauf zugreifen.
+Nachdem Sie eine APP für den Gast Zugriff freigegeben haben, können Gäste apps, die für Sie freigegeben wurden, über die im Rahmen der Freigabe gesendete e-Mail ermitteln und darauf zugreifen. Stattdessen können Sie die App-URL auch direkt mit dem Gast freigeben. Um die URL zu finden, wechseln Sie zu [powerapps](https://make.powerapps.com), wählen Sie im linken Bereich **apps** aus, **Wählen Sie eine APP** aus, und wählen Sie dann die Registerkarte **Details** Die App-URL wird unter **Weblink**angezeigt.
 
 > [!div class="mx-imgBorder"]  
 > ![Gast-e-Mails für e-Mail erhalten](media/share-app/guest_access_doc_4.png "Gast-e-Mails für e-Mail erhalten")

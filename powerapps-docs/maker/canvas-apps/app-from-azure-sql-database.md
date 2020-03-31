@@ -7,56 +7,58 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 10/29/2019
+ms.date: 03/30/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4980d7989a65032cec28aab1bc70ae3e01d1747d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: c17fff957091a13e26e4bbbb3bc90f34fa5659f7
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724163"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80406092"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>Vorschau: Erstellen einer Canvas-App aus einer Azure SQL-Datenbank
 
-[Dieses Thema ist Teil der Vorabdokumentation und unterliegt Änderungen.]
+[Dieser Artikel ist Teil der Vorabversion der Dokumentation. Änderungen sind vorbehalten.]
 
 In diesem Thema verwenden Sie Daten in ihrer Azure SQL-Datenbank, um innerhalb weniger Minuten eine APP mit powerapps zu erstellen. Sie verfügen über eine voll funktionsfähige App mit Ihren Daten, die Sie anpassen können, um Ihre geschäftlichen Anforderungen zu erfüllen und auf jedem Gerät zu teilen.
 
 > [!IMPORTANT]
-> - Dies ist ein Vorschau Feature.
-> - Ein Vorschau Feature weist möglicherweise eingeschränkte Verfügbarkeit und eingeschränkte Funktionen auf. Vor einer offiziellen Version ist ein Vorschau Feature verfügbar, damit Kunden frühzeitig Zugriff erhalten und Feedback geben können.
+> - Dies ist ein Vorschaufeature.
+> - Eine Previewfunktion kann eine eingeschränkte Verfügbarkeit und Funktionalität aufweisen. Eine Previewfunktion ist vor einem offiziellen Release verfügbar, damit Kunden frühzeitig Zugriff erhalten und Feedback geben können.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 - Für Ihren Browser müssen Popups aktiviert sein.
 - Sie benötigen ein Azure-Abonnement. </br>Wenn Sie über kein Azure-Abonnement verfügen, [Erstellen Sie ein kostenloses Konto](https://azure.microsoft.com/free/).
 - Sie benötigen Zugriff auf eine vorhandene SQL-Datenbank. </br> Wenn Sie nicht über eine vorhandene SQL-Datenbank verfügen, [Erstellen Sie eine neue Datenbank](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-get-started?tabs=azure-portal).
 - Sie müssen in den Firewalleinstellungen für die [IP-Adressen der Azure-Region oder Azure-Dienste](#app-access-to-sql-database) den Zugriff auf SQL-Datenbank zulassen.
 - Die SQL-Datenbanktabelle muss mindestens eine Spalte mit dem Text-Datentyp aufweisen.
-- Sie benötigen eine gültige powerapps-Lizenz, oder registrieren Sie sich für eine [30-tägige Testlizenz](../signup-for-powerapps.md).
 
-## <a name="create-an-app"></a>Erstellen einer App
+## <a name="create-an-app-from-azure-portal"></a>Erstellen einer App aus Azure-Portal
 
-1. Anmelden beim [Azure-Portal](https://portal.azure.com).
+> [!TIP]
+> Sie können auch eine APP erstellen, die Azure SQL-Datenbank aus [Power apps](https://make.powerapps.com)verwendet. Weitere Informationen finden Sie unter [SQL Server Connector für Power apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections/connection-azure-sqldatabase).
+
+1. Melden Sie sich bei [Azure-Portal](https://portal.azure.com)an.
 2. Navigieren Sie zu Ihrer SQL-Datenbank.
 3. Wählen Sie powerapps aus.
-
     
     ![Option "Power Apps" in den SQL-Daten Bankoptionen](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "Option "Power Apps" in der SQL-Datenbank")
-
-    > [!NOTE]
-    > Wenn Sie nicht über eine powerapps-Lizenz verfügen, wird eine blaue Informationsleiste mit einem Link zum Starten einer Testversion angezeigt. Wenn Sie eine Testversion starten, gelangen Sie zu einer neuen Registerkarte, auf der Sie sich für eine Lizenz registrieren. Wechseln Sie nach Abschluss des Vorgangs zurück zum Azure-Portal, und aktualisieren Sie das Blatt, um den Vorgang fortzusetzen.
 
 4. Geben Sie einen Namen für die APP ein, z. b. "Website Überprüfung", "Spenden" oder "Budget Protokollierung".
 
 5. Geben Sie ein SQL-Authentifizierungs Kennwort ein, und ändern Sie ggf. den Benutzernamen
+    
+    > [!NOTE]
+    > Wenn Sie Azure AD integrierte Authentifizierung anstelle der SQL-Authentifizierung mit Azure SQL-Datenbank verwenden möchten, erstellen Sie stattdessen eine APP aus [Power apps](https://make.powerapps.com) , und verwenden Sie [SQL Server Connector](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections/connection-azure-sqldatabase).
+
 6. Wählen Sie eine Tabelle aus der Dropdown Liste aus, die Sie zum Erstellen der App verwenden möchten.
 
-7. Wählen Sie die Option **Erstellen**.
+7. Wählen Sie **Erstellen** aus.
 
 
     ![Geben Sie die Informationen für Ihre APP an.](./media/app-from-azure-sql-database/powerapps-create-page-azure-portal.png "Geben Sie die Informationen für Ihre APP an.")
@@ -91,14 +93,14 @@ Power Apps können mithilfe der Azure-Portal eine Verbindung mit der SQL-Datenba
 > [!IMPORTANT]
 > Wenn Sie das Steuerelement auf ON festgelegt lassen, akzeptiert der Azure SQL-Datenbankserver die Kommunikation von jedem Subnetz innerhalb der Azure-Grenze, das von einer der IP-Adressen stammt, die als solche innerhalb der für Azure-Rechenzentren definierten Bereiche erkannt werden. Wenn das Steuerelement auf ON festgelegt ist, kann der Zugriff auf die Sicherheitsperspektive übermäßig hoch sein.
 
-## <a name="limitations"></a>Einschränken
+## <a name="limitations"></a>Einschränkungen
 
 - Der App-Name darf nur Buchstaben, Ziffern, Bindestriche, Klammern oder Unterstriche enthalten.
-- Powerapps erfordert die SQL-Authentifizierung, um eine Verbindung mit SQL-Datenbank herzustellen
+- Zum Erstellen einer App aus Azure-Portal ist die SQL-Authentifizierung erforderlich.
 - Beim Erstellen einer Canvas-App aus der Azure-Portal können Sie nur eine Tabelle auswählen. Passen Sie die APP nach der Erstellung der APP an, wenn Sie weitere Tabellen und andere Datenquellen hinzufügen möchten, indem Sie weitere Datenverbindungen hinzufügen.
-- Powerapps kann keine Verbindung mit der SQL-Datenbank mithilfe von vnet-Dienst Endpunkten herstellen. Weitere Informationen finden Sie unter [Zulassen des Zugriffs über vnet-Dienst Endpunkte](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview).
+- Power Apps können keine Verbindung mit der SQL-Datenbank mithilfe von vnet-Dienst Endpunkten herstellen. Weitere Informationen finden Sie unter [Zulassen des Zugriffs über vnet-Dienst Endpunkte](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview).
 
-## <a name="other-considerations"></a>Weitere Überlegungen
+## <a name="other-considerations"></a>Andere Aspekte
 
 - Der Zugriff der APP auf die SQL-Datenbank wird implizit für alle Benutzer freigegeben, für die Sie [diese APP freigeben](share-app.md) . Stellen Sie sicher, dass die Anmelde Informationen für die SQL-Authentifizierung den entsprechenden Zugriff zum Lesen und schreiben </br> Beispielsweise können Sie eine separate app erstellen, die eine Verbindung mit derselben SQL-Datenbank mit verschiedenen Anmelde Informationen für die SQL-Authentifizierung herstellt, um Lese-und Lese-/Schreibzugriff zu trennen.
 - Überprüfen Sie Drosselungs Limits, delegatbare Funktionen und Vorgänge, bekannte Probleme und Einschränkungen des [SQL-Datenbankverbindungs](https://docs.microsoft.com/connectors/sql/) -Connector, der von dieser Funktion zur Leistungsüberprüfung verwendet wird.
@@ -106,7 +108,7 @@ Power Apps können mithilfe der Azure-Portal eine Verbindung mit der SQL-Datenba
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In dieser Schnellstartanleitung haben Sie mithilfe der Azure-Portal eine App mithilfe von Daten aus der SQL-Datenbank erstellt. Im nächsten Schritt passen Sie die APP mit Steuerelementen, Bildern und Logik an, um Ihre geschäftlichen Anforderungen besser zu erfüllen.
+Im nächsten Schritt verwenden Sie [powerapps](https://make.powerapps.com) Studio, um die APP anzupassen, indem Sie zusätzliche Steuerelemente, Bilder und Logik hinzufügen, um Ihre geschäftlichen Anforderungen besser zu erfüllen.
 
 > [!div class="nextstepaction"]
 > [Entwerfen der Canvas-App-Schnittstelle in Power apps](add-configure-controls.md)
