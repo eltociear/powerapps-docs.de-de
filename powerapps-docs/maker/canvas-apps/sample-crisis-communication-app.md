@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/25/2020
+ms.date: 03/31/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 465f18474c7054467db8e22bb1702db250177395
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: fedcec7c8f3f093bf59b3ef607cbe4fbeea6ac54
+ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "80375062"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80516722"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Einrichten und Erlernen der Beispiel Vorlage für die Krisenkommunikation in Power apps
 
@@ -725,6 +725,30 @@ Die aktuelle Aktion zum Abrufen von **Gruppenmitgliedern** ist auf das Abrufen v
 1. Wählen Sie im Feld **Text** die Schaltfläche **dynamischen Wert hinzufügen** aus, und fügen Sie das Feld **Details** der Karte **Wenn ein Nachrichten Element gepostet angezeigt wird** hinzu.
 
 1. Wählen Sie **Speichern** aus.
+
+### <a name="optional-deep-link-teams-notification-into-teams-app"></a>Optional: Deep Link Teams-Benachrichtigung in Teams-App
+
+Wenn die Benachrichtigung Ihrer Teams direkt in der Canvas-APP innerhalb von Teams geöffnet werden soll, führen Sie die folgenden Schritte aus:
+
+1. Aktualisieren Sie die App-URL so, dass Sie auf den Deep-Link Teams in der admin-App verweist. <br>
+Ändern Sie in der admin-APP die App-URL in Folgendes, wobei `App ID` die ID Ihrer APP ist.
+
+    ```
+    https://teams.microsoft.com/l/entity/<APP ID>/<APP ID>
+    ```
+
+    ![Admin-App](media/sample-crisis-communication-app/42-admin-app.png)
+
+1. Aktualisieren Sie die APP-Verknüpfung, die innerhalb des Benachrichtigungs Flusses generiert wurde. <br> Öffnen Sie die Karte App-Link Variable festlegen, und ändern Sie den Ausdruck für Wert in den folgenden Wert:
+
+    ```
+    concat(items('Apply_to_each')?['AppUrl'], if(greater(indexOf(items('Apply_to_each')?['AppUrl'], '?'),0),'&','?'), 'context=%7B%22subEntityId%22%3A%22',triggerBody()?['ID'],'%22%7D')
+    ```
+    ![Fluss Einstellungen ändern](media/sample-crisis-communication-app/43-flow-settings.png)
+
+1. Aktualisieren Sie die Canvas-APP so, dass die Kontext Variable Teams verwendet wird, um einen tiefen Link zum richtigen Nachrichten Artikel zu verwenden. <br> Ändern Sie für die **OnStart** -Eigenschaft der APP den Parameter von `newsid` in `subEntityId`.
+
+    ![OnStart ändern](media/sample-crisis-communication-app/44-onstart.png)
 
 ### <a name="test-the-news-notification-flow"></a>Testen des nachrichtenbenachrichtigungs Flusses
 
