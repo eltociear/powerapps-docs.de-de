@@ -6,7 +6,7 @@
       href: signup-for-powerapps.md
     - name: Für Communityplan registrieren
       href: dev-community-plan.md
-    - name: Neuigkeiten
+    - name: Neuerungen
       href: ../whats-new.md
     - name: Ausbildungskatalog
       items:
@@ -29,13 +29,13 @@
   items:
     - name: In einem Browser
       href: ../user/run-app-browser.md
+    - name: Auf einem Telefon (Vorschau)
+      href: ../user/run-canvas-and-model-apps-on-mobile.md
     - name: Auf einem Telefon (Canvas)
       href: ../user/run-app-client.md
-    - name: Auf einem Telefon (modellgesteuert)
-      href: ../user/run-app-client-model-driven.md
-    - name: Auf einer SharePoint Online-Seite (Zeichenbereich)
+    - name: Auf einer SharePoint Online-Seite (Canvas-Apps)
       href: ../user/powerapps-web-part.md
-    - name: In Microsoft Teams (Zeichenbereich)
+    - name: In Microsoft Teams (Canvas-Apps)
       href: ../user/open-app-embedded-in-teams.md
     - name: Aus AppSource
       href: ../user/app-source.md
@@ -91,7 +91,7 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: Hinzufügen von Power BI-Dashboards
               href: ../user/add-powerbi-dashboards.md
-        - name: Zusammenarbeit
+        - name: Kollaboration
           items:
             - name: Verwenden von OneDrive for Business
               href: ../user/one-drive.md
@@ -109,7 +109,7 @@
               href: ../user/quick-find.md
             - name: Erweiterte Suche
               href: ../user/advanced-find.md
-        - name: Importieren und Exportieren von Daten.
+        - name: Importieren und Exportieren von Daten
           items:
             - name: Importieren von Daten
               href: ../user/import-data.md
@@ -143,6 +143,8 @@
               href: ../user/work-with-business-processes.md
             - name: Verwenden von Flows
               href: ../user/use-flows.md
+    - name: Verwenden von modellgesteuerten Apps auf mobilen Geräten (Vorschau)
+      href: ../user/use-custom-model-driven-app-on-mobile.md
     - name: Verwenden der Dynamics 365-App für Outlook
       href: ../user/use-outlook-app.md
 - name: Apps erstellen
@@ -179,7 +181,7 @@
               href: ./canvas-apps/data-platform-create-app.md
             - name: Aus SharePoint
               href: ./canvas-apps/app-from-sharepoint.md
-            - name: Über Excel
+            - name: Aus Excel
               href: ./canvas-apps/get-started-create-from-data.md
             - name: Aus Azure SQL-Datenbank
               href: ./canvas-apps/app-from-azure-sql-database.md
@@ -195,7 +197,7 @@
       items:
         - name: Über Common Data Service
           href: ./canvas-apps/data-platform-create-app-scratch.md
-        - name: Über Excel
+        - name: Aus Excel
           href: ./canvas-apps/get-started-create-from-blank.md
     - name: Entwerfen und Erstellen einer App
       items:
@@ -203,7 +205,7 @@
           items:
             - name: Verbindungsübersicht
               href: ./canvas-apps/connections-list.md
-            - name: Bekannte Connectors
+            - name: Gängige Connectors
               items:
                 - name: Common Data Service
                   items:
@@ -235,7 +237,7 @@
                   href: canvas-apps/connections/connection-azure-sqldatabase.md
                 - name: Twitter
                   href: canvas-apps/connections/connection-twitter.md
-            - name: Verbindung hinzufügen
+            - name: Hinzufügen einer Verbindung
               href: ./canvas-apps/add-data-connection.md
             - name: Verwalten von Verbindungen
               href: ./canvas-apps/add-manage-connections.md
@@ -317,13 +319,13 @@
                   href: ./canvas-apps/reference-properties.md
                 - name: Bild hinzufügen
                   href: ./canvas-apps/controls/control-add-picture.md
-                - name: Attachments
+                - name: Anlagen
                   href: ./canvas-apps/controls/control-attachments.md
                 - name: Audio
                   href: ./canvas-apps/controls/control-audio-video.md
                 - name: Barcodescanner
                   href: ./canvas-apps/controls/control-new-barcode-scanner.md
-                - name: Taste
+                - name: Schaltfläche
                   href: ./canvas-apps/controls/control-button.md
                 - name: Kamera
                   href: ./canvas-apps/controls/control-camera.md
@@ -333,7 +335,7 @@
                   href: ./canvas-apps/controls/control-check-box.md
                 - name: Säulendiagramm
                   href: ./canvas-apps/controls/control-column-line-chart.md
-                - name: Column
+                - name: Spalte
                   href: ./canvas-apps/controls/control-column.md
                 - name: Kombinationsfeld
                   href: ./canvas-apps/controls/control-combo-box.md
@@ -351,13 +353,13 @@
                   href: ./canvas-apps/controls/control-form-detail.md
                 - name: Exportieren
                   href: ./canvas-apps/controls/control-export-import.md
-                - name: Galerie
+                - name: Katalog
                   href: ./canvas-apps/controls/control-gallery.md
                 - name: HTML-Text
                   href: ./canvas-apps/controls/control-html-text.md
                 - name: Symbol
                   href: ./canvas-apps/controls/control-shapes-icons.md
-                - name: Image
+                - name: Bild
                   href: ./canvas-apps/controls/control-image.md
                 - name: Importieren
                   href: ./canvas-apps/controls/control-export-import.md
@@ -383,13 +385,13 @@
                   href: ./canvas-apps/controls/control-richtexteditor.md
                 - name: Bildschirm
                   href: ./canvas-apps/controls/control-screen.md
-                - name: Form
+                - name: Formen
                   href: ./canvas-apps/controls/control-shapes-icons.md
                 - name: Schieberegler
                   href: ./canvas-apps/controls/control-slider.md
                 - name: Streamen von Videos
                   href: ./canvas-apps/controls/control-stream-video.md
-                - name: Bezeichnung
+                - name: Beschriftung
                   href: ./canvas-apps/controls/control-text-box.md
                 - name: Texteingabe
                   href: ./canvas-apps/controls/control-text-input.md
@@ -407,9 +409,9 @@
                   href: ./canvas-apps/controls/properties-accessibility.md
                 - name: Farbe und Rahmen
                   href: ./canvas-apps/controls/properties-color-border.md
-                - name: Core
+                - name: Kernbereich
                   href: ./canvas-apps/controls/properties-core.md
-                - name: Image
+                - name: Bild
                   href: ./canvas-apps/controls/properties-visual.md
                 - name: Größe und Speicherort
                   href: ./canvas-apps/controls/properties-size-location.md
@@ -425,7 +427,7 @@
               href: ./canvas-apps/working-with-formulas-in-depth.md
             - name: Anzeigen von Datums- und Zeitangaben
               href: ./canvas-apps/show-text-dates-times.md
-            - name: Erstellen einer Sammlung
+            - name: Sammlung erstellen
               href: ./canvas-apps/create-update-collection.md
             - name: Anzeigen des aktuellen Benutzers
               href: ./canvas-apps/show-current-user.md
@@ -517,7 +519,7 @@
                   href: ./canvas-apps/functions/data-types.md
                 - name: DataSourceInfo
                   href: ./canvas-apps/functions/function-datasourceinfo.md
-                - name: Date
+                - name: Datum
                   href: ./canvas-apps/functions/function-date-time.md
                 - name: DateAdd
                   href: ./canvas-apps/functions/function-dateadd-datediff.md
@@ -595,7 +597,7 @@
                   href: ./canvas-apps/functions/function-json.md
                 - name: Sprache
                   href: ./canvas-apps/functions/function-language.md
-                - name: Last (Letzter)
+                - name: Letzte
                   href: ./canvas-apps/functions/function-first-last.md
                 - name: LastN
                   href: ./canvas-apps/functions/function-first-last.md
@@ -613,7 +615,7 @@
                   href: ./canvas-apps/functions/signals.md
                 - name: LookUp
                   href: ./canvas-apps/functions/function-filter-lookup.md
-                - name: Geringer
+                - name: Lower
                   href: ./canvas-apps/functions/function-lower-upper-proper.md
                 - name: Übereinstimmung
                   href: ./canvas-apps/functions/function-ismatch.md
@@ -629,7 +631,7 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Mod
                   href: ./canvas-apps/functions/function-mod.md
-                - name: Month (Monat)
+                - name: Month
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Navigate
                   href: ./canvas-apps/functions/function-navigate.md
@@ -665,7 +667,7 @@
                   href: ./canvas-apps/functions/function-refresh.md
                 - name: Relate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Remove (Entfernen)
+                - name: Entfernen
                   href: ./canvas-apps/functions/function-remove-removeif.md
                 - name: RemoveIf
                   href: ./canvas-apps/functions/function-remove-removeif.md
@@ -745,7 +747,7 @@
                   href: ./canvas-apps/functions/function-now-today-istoday.md
                 - name: Trace
                   href: ./canvas-apps/functions/function-trace.md
-                - name: Glätten
+                - name: Trim
                   href: ./canvas-apps/functions/function-trim.md
                 - name: TrimEnds
                   href: ./canvas-apps/functions/function-trim.md
@@ -771,9 +773,9 @@
                   href: ./canvas-apps/functions/function-aggregates.md
                 - name: ViewForm
                   href: ./canvas-apps/functions/function-form.md
-                - name: Wochentag
+                - name: Weekday
                   href: ./canvas-apps/functions/function-datetime-parts.md
-                - name: With
+                - name: Durch
                   href: ./canvas-apps/functions/function-with.md
                 - name: Jahr
                   href: ./canvas-apps/functions/function-datetime-parts.md
@@ -825,7 +827,7 @@
       items:
         - name: Bearbeiten einer App
           href: ./canvas-apps/edit-app.md
-        - name: Löschen einer App
+        - name: Eine App löschen
           href: ./canvas-apps/delete-app.md
         - name: Lizenzbezeichnung für eine App
           href: ./canvas-apps/license-designation.md
@@ -1052,7 +1054,7 @@
                   href: ./model-driven-apps/choose-and-configure-columns.md
                 - name: Erstellen oder Bearbeiten von Filtern in App-Ansichten
                   href: ./model-driven-apps/create-edit-view-filters.md
-                - name: 'Exemplarische Vorgehensweisen: Sichten'
+                - name: 'Exemplarische Vorgehensweisen: Ansichten'
                   items:
                     - name: Bearbeitbar machen von Rastern
                       href: ./model-driven-apps/make-grids-lists-editable-custom-control.md
@@ -1124,7 +1126,7 @@
           href: ./model-driven-apps/manage-app-properties.md
         - name: Angeben von Eigenschaften für Apps mit einheitlicher Oberfläche
           href: ./model-driven-apps/specify-properties-for-unified-interface-apps.md
-        - name: Löschen einer App
+        - name: Eine App löschen
           href: ./model-driven-apps/delete-model-driven-app.md
     - name: Erweiterte App-Erstellung und -Anpassung
       href: ./model-driven-apps/advanced-navigation.md
@@ -1261,7 +1263,7 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: Migrieren von Identitätsanbietern zu Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
-        - name: 'Suchen,'
+        - name: Suchen
           items:
             - name: Informationen zur Suche
               href: ./portals/configure/search.md
@@ -1375,7 +1377,7 @@
                   href: ./portals/liquid/render-rss-custom-page-template.md
                 - name: Rendern eines Websiteheaders und einer primären Navigationsleiste
                   href: ./portals/liquid/render-site-header-primary-navigation.md
-        - name: Impliziter OAuth 2.0-Gewährungsablauf
+        - name: OAuth 2.0-Flow zur impliziten Gewährung
           href: ./portals/oauth-implicit-grant-flow.md
         - name: Verwalten von Webseiten
           href: ./portals/configure/web-page.md
@@ -1564,7 +1566,7 @@
               href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Bewährte Methoden
           href: ./common-data-service/solution-best-practices.md
-        - name: Anleitung
+        - name: Vorgehensweise
           items:
             - name: Erstellen von Lösungspatches
               href: ./common-data-service/solution-patches.md
@@ -1656,7 +1658,7 @@
       href: ./canvas-apps/get-sessionid.md
     - name: Behandlung von Startproblemen bei Power Apps
       href: troubleshooting-startup-issues.md
-    - name: Problembehandlung mit Power Query
+    - name: Problembehandlung in Power Query
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
     - name: Support
       href: 'https://powerapps.microsoft.com/support/'
