@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 02/03/2019
+ms.date: 03/31/2020
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3489266ab82600c1d902dcd6ec0383b4ef6b408a
-ms.sourcegitcommit: db8005866acab318c2fa894db64df88aaf7e3785
+ms.openlocfilehash: 54ddcf717b26859e71ed1339caa533fa9c6bcbb8
+ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076060"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80516662"
 ---
 # <a name="use-grid-filters"></a>Verwenden von Rasterfiltern 
 
@@ -52,30 +52,22 @@ Sie können auch das primäre Feld und Nachschlagefelder in einer neuen Register
    > [!div class="mx-imgBorder"]
    > ![In neuem Fenster öffnen](media/newtab.png "In neuem Fenster öffnen")
   
-
-## <a name="preview-new-grid-filters-and-search-option"></a>Vorschauversion: Neue Rasterfilter und Suchoption
-
-In diesem Abschnitt werden Early-Access-Features behandelt. Sie können diese Features frühzeitig in Ihrer Umgebung aktivieren. So können Sie diese testen und dann in Ihre Umgebungen einführen. Weitere Informationen zur Aktivierung dieser Features finden Sie unter [Aktivieren von Early-Access-Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
-
-
-   > [!NOTE]
-   > Ändern Sie das Standardanzeigeformat für Uhrzeiten, Datumsangaben, Zahlen oder Währungen nicht, da dies zu Problemen führen kann. Weitere Informationen finden Sie unter [Bekannte Probleme](https://docs.microsoft.com/powerapps/user/grid-filters#known-issue).
-
-### <a name="lookup-field-column"></a>Nachschlagefeldspalte
+  
+## <a name="lookup-field-column"></a>Nachschlagefeldspalte
 
 Wenn Sie eine Nachschlagespalte filtern, können Sie aus einer Liste die zu filternden Datensätze auswählen, anstatt die Daten manuell einzugeben. In der Nachschlagespalte **Hauptkontakt** können Sie beispielsweise den Kontaktnamen aus der Datensatzliste auswählen, nach dem gefiltert werden soll.
 
    > [!div class="mx-imgBorder"]
    > ![Nachschlagefilterung](media/lookup-filter.png "Nachschlagefilterung")
 
-### <a name="date-filter"></a>Datumsfilter
+## <a name="date-filter"></a>Datumsfilter
 
 Der robuste Filter **Datum** enthält viele verschiedene Werte wie **Am**, um nach einem genauen Datum zu suchen, oder **Nächste x Geschäftsjahre** bzw. **Im Finanzzeitraum**, um nach Jahr oder Quartal zu suchen.
 
    > [!div class="mx-imgBorder"]
    > ![Datumsfilterung](media/date-filter.png "Datumsfilterung")
 
-### <a name="filter-the-list-of-activities"></a>Filtern der Aktivitätenliste
+## <a name="filter-the-list-of-activities"></a>Filtern der Aktivitätenliste
 
 Sie können die Aktivitätenliste so filtern, dass nur relevante Einträge angezeigt werden. Sie können die Aktivitäten in einer Ansicht beispielsweise einschränken, indem Sie nach Aktivitätstyp filtern. Aktivitäten können also nach ihrem Typ (E-Mail, Aufgabe, Telefonanruf usw.) gefiltert werden.
 
@@ -84,7 +76,7 @@ Sie können die Aktivitätenliste so filtern, dass nur relevante Einträge angez
    > ![Aktivitätsfilter](media/activity_filter.png "Aktivitätsfilter")
 
 
-### <a name="known-issue"></a>Bekanntes Problem
+### <a name="known-issue"></a>Bekanntes Problem 
 
 Wenn Sie das Standardanzeigeformat für Zahlen, Währungen, Uhrzeiten und Datumsangaben ändern und anschließend die Daten in einem Raster filtern, zeigt der Filter das ausgewählte Anzeigeformat nicht an. Die Filter werden weiterhin im Standardformat des Systems angezeigt, und in einigen Fällen funktioniert das Filtern möglicherweise überhaupt nicht. 
 
@@ -100,7 +92,7 @@ Legen Sie das Anzeigeformat für Zahlen, Währungen, Uhrzeiten und Datumsangaben
 Wir arbeiten an diesem Problem und veröffentlichen so schnell wie möglich Informationen zu einer Lösung.
 
   
-### <a name="use-search-on-a-grid"></a>Verwenden der Suche in einem Raster
+## <a name="use-search-on-a-grid"></a>Verwenden der Suche in einem Raster
 
 Wenn Sie die Option **Diese Ansicht durchsuchen** auf einer Rasterseite verwenden, sucht das System nach Daten in der aktuellen Ansicht. Im folgenden Beispiel führen Sie eine Suche im Raster **Kontakte** durch.
 
@@ -120,7 +112,7 @@ Das System durchsucht die Ansicht **Meine aktiven Kontakte** nach Daten und zeig
    > ![Suchansicht](media/search-view2.png "Suchergebnisse des Befehls „Diese Ansicht durchsuchen“")
 
 
-#### <a name="use-the-quick-find-search-experience"></a>Verwenden der Schnellsuche
+## <a name="use-the-quick-find-search-experience"></a>Verwenden der Schnellsuche
 
 Sie können zur alten Schnellsuche zurückkehren, bei der die Schnellsucheansichtdefinition einer Entität für die Suche verwendet wird. Dafür benötigen Sie jedoch Administratorrechte.
 

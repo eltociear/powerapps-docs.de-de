@@ -1,12 +1,12 @@
 ---
 title: Ausführen einer auf Canvas basierenden App auf einem mobilen Gerät | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen.
-author: Mattp123
+author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 11/16/2018
-ms.author: matp
+ms.date: 04/1/2020
+ms.author: mkaur
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ad34f7daacf07ebc8ecde2a8ce29c163d0c28e95
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 1494c1624fc37b59b5e20b0cdaa15a9c9edb33e3
+ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733339"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527449"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>Ausführen einer Canvas-App auf einem mobilen Gerät
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Thema erfahren Sie, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen können. Apps, die auf mobilen Geräten ausgeführt werden, können auch die Funktionen des Geräts nutzen, z.B. Ortungsdienste und die Kamera.
@@ -66,7 +66,7 @@ Wenn Sie auf die App-Kachel tippen, können Sie eine Canvas-App auf einem mobile
 
 Wenn Sie Power Apps zum ersten Mal verwenden, veranschaulicht eine Anzeige die Wischgeste zum Schließen der App.
 
-![Starten einer App](./media/run-app-client/run-client-app.png)
+![Starten einer App](media/run_client.png)
 
 ## <a name="give-consent"></a>Erteilen der Zustimmung
 Wenn eine App eine Verbindung mit einer Datenquelle oder die Berechtigung zur Nutzung von Funktionen des Geräts (z.B. Kamera oder Ortungsdienste) erfordert, müssen Sie Ihre Zustimmung erteilen, bevor Sie die App verwenden können. Normalerweise werden Sie nur beim ersten Mal dazu aufgefordert.
