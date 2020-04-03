@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c83e713a5f29198779b0b9b8968bb38b98bc2a5a
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: d2499a597295147cea1b39bb18fee2cbb056b413
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75203994"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624985"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Barcode-Scanner-Steuerelement für Canvas-apps
 
@@ -32,13 +32,21 @@ Das-Steuerelement öffnet einen nativen Scanner auf einem Android-oder IOS-Gerä
 
 **Value** – Output-Eigenschaft, die den Textwert des zuletzt überprüften Codes enthält.
 
-**TextText** , der auf der Schaltfläche angezeigt wird, mit der der Scanner aktiviert wird.
+**Geben** Sie die – Output-Eigenschaft ein, die den Typ des zuletzt gescannten Codes enthält.
 
 **Onscan** – gibt an, wie eine APP reagiert, wenn ein Barcode erfolgreich gescannt wird.
 
-## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**OnCancel** – gibt an, wie eine APP reagiert, wenn ein Barcode Scan vom Benutzer abgebrochen wird.
 
 **Barcodetype** : der zu Scannertyp. Sie können mehrere Barcode Typen als Ziel zuweisen, indem Sie Sie verketten. Fern. Barcodetype. Code128 & Barcodetype. Code39 **Default: Auto**
+
+**Preferfrontcamera** : gibt an, ob die Frontkamera, sofern verfügbar, für die Überprüfung verwendet wird.
+
+**Flash lightenabled** : gibt an, ob die Taschenlampe beim Öffnen des Scanners automatisch aktiviert wird.
+
+## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+
+**TextText** , der auf der Schaltfläche angezeigt wird, mit der der Scanner aktiviert wird.
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
@@ -46,15 +54,11 @@ Das-Steuerelement öffnet einen nativen Scanner auf einem Android-oder IOS-Gerä
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
-
-**Flash lightenabled** : gibt an, ob die Taschenlampe beim Öffnen des Scanners automatisch aktiviert wird.
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **[Height](properties-size-location.md)** – die Höhe der Schaltfläche, mit der der Scanner aktiviert wird.
 
-**Preferfrontcamera** : gibt an, ob die Frontkamera, sofern verfügbar, für die Überprüfung verwendet wird.
-
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **Type** : der Typ des Codes, der in der zuletzt erfolgreichen Überprüfung erkannt wurde.
 
