@@ -51,6 +51,8 @@
               href: ../user/navigation.md
             - name: Verwenden von Rasterfiltern
               href: ../user/grid-filters.md
+            - name: Erstellen persönlicher Ansichten mit erweiterten Rasterfiltern
+              href: ../user/grid-filters-advanced.md
             - name: Anzeigen des Profils
               href: ../user/view-your-user-profile.md
             - name: Finden Ihres Administrators oder Supportmitarbeiters
@@ -937,7 +939,7 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: Hinzufügen oder bearbeiten von App-Komponenten
                   href: ./model-driven-apps/add-edit-app-components.md
-                - name: Hinzufügen der Teamentität als Nachschlageoption
+                - name: Hinzufügen einer Entität für die Suche
                   href: ./model-driven-apps/team-entity-lookup.md
             - name: Arbeiten mit Formularen
               href: ./model-driven-apps/create-design-forms.md
@@ -1630,9 +1632,9 @@
       href: ../use-ai-builder.md
 - name: Beispiel-Apps und -lösungen
   items:
-    - name: App zur Krisenkommunikation
+    - name: Krisenkommunikation
       href: ./canvas-apps/sample-crisis-communication-app.md
-    - name: Lösung für die Notfallreaktion
+    - name: Notfalleinsatz im Krankenhaus
       items:
         - name: Übersicht
           href: ../sample-apps/emergency-response/overview.md
