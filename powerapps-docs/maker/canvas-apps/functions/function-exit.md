@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/21/2020
+ms.date: 04/02/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e66c9a6c079baef3b7f67631c4a21cda6334478
-ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
+ms.openlocfilehash: e0ed91cc66f5b42bbea769443ad086476245029c
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80122783"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759804"
 ---
 # <a name="exit-function-in-power-apps"></a>Exit-Funktion in powerapps
 Beendet die derzeit ausgelaufende APP und meldet optional den aktuellen Benutzer ab.
@@ -30,12 +30,12 @@ Die **Exit**-Funktion beendet die derzeit ausgeführte App. Der Benutzer wird zu
 
 Verwenden Sie das optionale *SignOut* -Argument, um den aktuellen Benutzer von powerapps zu signieren. *SignOut* ist nützlich, wenn Geräte freigegeben werden, um die Benutzersicherheit sicherzustellen.
 
-Beim Erstellen der APP wird der Benutzer durch Aufrufen von **Exit** nicht beendet oder abgemeldet.  Die Auswertung der restlichen Formel wird jedoch nicht beendet.
+Beim Erstellen der APP wird der Benutzer durch Aufrufen von **Exit** nicht beendet oder abgemeldet.  Die Auswertung der restlichen Formel wird jedoch beendet.
 
 **Exit** kann nur in [Verhaltens Formeln](../working-with-formulas-in-depth.md)verwendet werden.
 
 > [!NOTE]
-> Die Abmeldung wird nicht unterstützt, wenn die app in einem Webbrowser ausgeführt wird.
+> Die Abmeldung mit der **Exit** -Funktion wird nicht unterstützt, wenn die app in einem Webbrowser ausgeführt wird.
 
 ## <a name="syntax"></a>Syntax
 **Exit**([*SignOut*])
