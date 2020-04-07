@@ -6,18 +6,18 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/26/2020
+ms.date: 03/30/2020
 ms.author: kvivek
 ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: e58b23503e1730c8606a833cb05f7253b5b96f49
-ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
+ms.openlocfilehash: f126a415cfe42e38e2131967a29564fc0255f6bb
+ms.sourcegitcommit: b6beb1b76d9ddb0f9846253f895d581bda9012ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80327694"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80417479"
 ---
 # <a name="deploy-and-configure-the-emergency-response-app"></a>Bereitstellen und Konfigurieren der Notfallreaktions-App
 
@@ -42,8 +42,8 @@ Führen Sie die folgenden Schritte aus, um die Beispiel-App für die Notfallreak
 - [Schritt 2: Herunterladen des Bereitstellungspakets](#step-2-download-the-deployment-package)
 - [Schritt 3: Importieren der Lösungsdatei in Ihre Umgebung](#step-3-import-the-solution-file-into-your-environment)
 - [Schritt 4: Laden der Konfigurations- und Stammdaten für Ihre Organisation](#step-4-load-configuration-and-master-data-for-your-organization)
-    - [Schritt 4.1: Laden von Daten aus Datendateien](#step-41-how-to-load-data-from-data-files)
-    - [Schritt 4.2: Importieren obligatorischer Konfigurationsdaten](#step-42-import-mandatory-configuration-data)
+    - [Schritt 4.1: Laden obligatorischer Konfigurationsdaten](#step-41-load-mandatory-configuration-data)
+    - [Schritt 4.2: Laden von Masterdaten](#step-42-load-master-data)
 - [Schritt 5: Aktualisieren des Brandings der mobilen App](#step-5-update-the-mobile-app-branding)
 - [Schritt 6: Umgehen der Zustimmung für mobile Apps](#step-6-bypass-consent-for-mobile-apps)
 - [Schritt 7: Hinzufügen des Azure Application Insights-Schlüssels zu mobilen Apps für Telemetriezwecke](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry)
@@ -65,6 +65,9 @@ Nachdem Sie Power Apps erworben haben, erstellen Sie eine Umgebung mit einer Com
 1.  Melden Sie sich beim [Power Platform Admin Center](https://aka.ms/ppac) an.
 
 2.  Erstellen Sie eine Common Data Service-Umgebung mit der Datenbank. Weitere Informationen: [Erstellen und Verwalten von Umgebungen](https://docs.microsoft.com/power-platform/admin/create-environment)
+
+    > [!IMPORTANT]
+    > Wenn Sie beim Erstellen der Datenbank eine Sicherheitsgruppe für die Datenbank auswählen, können die Apps *nur* für Benutzer freigegeben werden, die Mitglieder der Sicherheitsgruppe sind.
 
 3.  Erstellen Sie in Ihrer Umgebung entsprechende Benutzer. Weitere Informationen: [Erstellen von Benutzern und Zuweisen von Rollen](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
 
@@ -97,7 +100,7 @@ Extrahieren Sie die Bereitstellungsdatei (.zip) an einem Speicherort auf Ihrem C
 
 5.  Wählen Sie im Dialogfeld **Lösung importieren** die in Schritt 1 erwähnte Lösungsdatei aus, und befolgen Sie dann die Schritte im Assistenten zum Importieren der Lösung.
 
-6.  Wählen Sie nach erfolgreichem Import im Importdialogfeld **Schließen** und danach die Option **Alle Anpassungen veröffentlichen** aus. Dieser Schritt kann eine Weile dauern.
+6.  Klicken Sie nach dem erfolgreichem Import der Lösung im Importdialogfeld auf **Schließen**.
 
 Anschließend sehen Sie unter **Apps** neue Apps:
 
@@ -150,11 +153,11 @@ Der Ordner **Data Files** enthält die folgenden Dateien und Ordner:
 <td><p>Der Ordner enthält die Beispieldatendateien (.xlsx), die Sie importieren können, um die Beispieldaten in Ihrer Anwendung aufzufüllen. Die Dateien sind so benannt, dass sie die Reihenfolge angeben, in der die Daten in Ihre App importiert werden sollen. </p>
 <p>Sie müssen Daten für die folgenden Entitäten importieren, die die Beispielstammdaten für die Notfallreaktions-App enthalten:
 <ul>
-<li>Systems (Systeme)</li>
-<li>Regions (Regionen)</li>
+<li>Systeme</li>
+<li>Regionen</li>
 <li>Facilities (Einrichtungen)</li>
-<li>Locations (Standorte)</li>
-<li>Departments (Abteilungen)</li>
+<li>Standorte</li>
+<li>Abteilungen</li>
 </ul>
 <p>Wenn Sie anstelle der Beispieldaten Ihre Organisationsdaten importieren möchten, können Sie die Beispieldaten in diesen Excel-Dateien durch Ihre Organisationsdaten ersetzen und dann die Daten in die App importieren.</p>
 <p>Sie können Daten auch manuell in diese Entitäten eingeben. Informationen über alle diese Entitäten und Felder in diesen Entitäten finden Sie unter <a href="#manually-configure-and-manage-master-data-for-your-organization"> Manuelles Konfigurieren und Verwalten von Stammdaten für Ihre Organisation</a>.</p></td>
@@ -168,52 +171,59 @@ Der Ordner **Data Files** enthält die folgenden Dateien und Ordner:
 </tr>
 </table>
 
-#### <a name="step-41-how-to-load-data-from-data-files"></a>Schritt 4.1: Laden von Daten aus Datendateien
-
-So laden Sie Beispieldaten aus einer der Datendateien in eine Entität
-
-1.  Wählen Sie im linken Navigationsbereich der Admin-App eine Entität aus, in die Sie die Daten laden möchten. Wählen Sie z. B. in der Bereichsauswahl **Location** (Standort) und dann **Systems** (Systeme) aus.
-
-2.  Wählen Sie **Import from Excel** (Aus Excel importieren) und dann im Ordner **Sample Data** die Datei **01 - Load Systems.xlsx** aus.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Aus Excel importieren](media/conf-import-from-excel.png "Importieren aus Excel")
-
-3.  Fahren Sie mit dem Import-Assistenten fort, um die Daten zu importieren.
-
-4.  Nachdem die Beispieldaten importiert wurden, wird der importierte Datensatz in der Entität angezeigt:
-
-    > [!div class="mx-imgBorder"] 
-    > ![Entitätsdatensatz](media/conf-entity-record.png "Datensatz in der Entität nach Import")
-
-Wiederholen Sie diese Schritte mit anderen Entitäten.
-
-Wenn Sie die Stammdaten manuell eingeben möchten, finden Sie weitere Informationen unter [Manuelles Konfigurieren und Verwalten von Stammdaten für Ihre Organisation](#manually-configure-and-manage-master-data-for-your-organization).
-
-#### <a name="step-42-import-mandatory-configuration-data"></a>Schritt 4.2: Importieren obligatorischer Konfigurationsdaten
+#### <a name="step-41-load-mandatory-configuration-data"></a>Schritt 4.1: Laden obligatorischer Konfigurationsdaten
 
 Das Importieren der Konfigurationsdaten in die folgenden Entitäten in der Admin-App ist  **obligatorisch**, bevor Sie mit dem nächsten Schritt fortfahren:
 
 | Bereichsname | Entitätsname| Dateiname
 |-|-|-
-| Locations (Standorte) | Acuities (Pflegestufen) | 00 - Acuities Import.xlsx
-| Administration (Verwaltung) | Apps Config (App-Konfiguration) | 00 - App Config Import.xlsx
-| Administration (Verwaltung) | Apps | 00 - App Import.xlsx
+| Standorte | Acuities (Pflegestufen) | 00 - Acuities Import.xlsx
+| Verwaltung | Apps Config (App-Konfiguration) | 00 - App Config Import.xlsx
+| Verwaltung | Apps | 00 - App Import.xlsx
 | Staffing (Personalbedarf) | Request Roles (Rollen anfordern) | 00 - Request Roles Import.xlsx
-| Locations (Standorte) | Supplies (Verbrauchsmaterialien) | 00 - Supplies Import.xlsx
+| Standorte | Supplies (Verbrauchsmaterialien) | 00 - Supplies Import.xlsx
 
-Daten für andere Entitäten können [zu einem späteren Zeitpunkt manuell](#manually-configure-and-manage-master-data-for-your-organization) oder mithilfe der zuvor erläuterten Beispieldatendateien hinzugefügt werden.
+##### <a name="how-to-load-data-from-data-files"></a>Laden von Daten aus Datendateien
+
+So importieren Sie Daten aus einer der Datendateien in eine Entität:
+
+1.  Wählen Sie im linken Navigationsbereich der Admin-App eine Entität aus, in die Sie die Daten laden möchten. Klicken Sie z. B. in der Bereichsauswahl auf **Administration** (Verwaltung) und dann auf **Acuities** (Pflegestufen).
+
+2.  Klicken Sie auf **Aus Excel importieren**, und wählen Sie dann im Ordner **Data Files** (Datendateien) die Datei **00 - Acuities Import.xlsx** aus.
+
+    > [!div class="mx-imgBorder"]
+    > ![Importieren aus Excel](media/conf-import-from-excel.png "Importieren aus Excel")
+
+3.  Fahren Sie mit dem Import-Assistenten fort, um die Daten zu importieren.
+
+4.  Nachdem die Daten importiert wurden, wird der importierte Datensatz in der Entität angezeigt:
+
+    > [!div class="mx-imgBorder"] 
+    > ![Entitätsdatensatz](media/conf-entity-record.png "Datensatz in der Entität nach Import")
+
+Wiederholen Sie diese Schritte mit anderen Konfigurationsdatenentitäten.
+
+Wenn Sie die Stammdaten manuell eingeben möchten, finden Sie weitere Informationen unter [Manuelles Konfigurieren und Verwalten von Stammdaten für Ihre Organisation](#manually-configure-and-manage-master-data-for-your-organization).
+
+#### <a name="step-42-load-master-data"></a>Schritt 4.2: Laden von Masterdaten
+
+Wie bereits erläutert:
+- Sie können die Beispieldatendateien für Masterdatenentitäten im Ordner **Data Files/Sample Data** (Datendateien/Beispieldaten) verwenden, um die Beispieldaten in die erforderlichen Entitäten zu importieren. 
+
+- Sie können die leeren Datendateien für Masterentitäten im Ordner **Data Files/Data Template File for Master Data** (Datendateien/Datenvorlagendatei für Masterdaten) zum Befüllen mit Ihren Organisationsdaten verwenden und die Daten dann in die erforderlichen Entitäten importieren.
+
+Sie können später auch manuell Masterdaten hinzufügen. Weitere Informationen: [Manuelles Konfigurieren und Verwalten von Stammdaten für Ihre Organisation](#manually-configure-and-manage-master-data-for-your-organization)
 
 ### <a name="step-5-update-the-mobile-app-branding"></a>Schritt 5: Aktualisieren des Brandings der mobilen App
 
-Sie können das Symbol oder Farbschema der mobilen Apps an das Branding Ihrer Organisation anpassen.
+Sie können das App-Symbol, das Farbschema oder den Anzeigename der mobilen Apps an das Branding Ihrer Organisation anpassen.
 
-Dazu verwenden Sie die Entitäten **App** und **App Config** im Bereich **Administration**, indem Sie, wie im vorherigen Schritt erläutert, App-Daten und App-Konfigurationsdaten aus der im Ordner **Data Files** unter dem Bereitstellungspaket verfügbaren Excel-Datei importieren.
+Dazu verwenden Sie die Entitäten **App** und **App Config** im Bereich **Administration** (Verwaltung), indem Sie App-Daten und App-Konfigurationsdaten aus der im Ordner **Data Files** (Datendateien) unter dem Bereitstellungspaket verfügbaren Excel-Datei sowie aus Symboldateien im Ordner **App Icons** (App-Symbole) importieren. Eine genaue Erläuterung hierzu finden Sie unter [Schritt 2: Herunterladen des Bereitstellungspakets](#step-2-download-the-deployment-package).
 
 > [!div class="mx-imgBorder"] 
 > ![Entitäten „Apps“ und „App Config“](media/conf-app-app-config-entities.png "Entitäten „Apps“ und „App Config“")
 
-1.  Vergewissern Sie sich, dass Sie die Konfigurationsdaten für **Apps** und **App Config** aus den Dateien **App Import.xlsx** bzw. **App Config Import.xlsx** des extrahierten Bereitstellungspakets importiert haben.
+1.  Vergewissern Sie sich, dass Sie die Konfigurationsdaten für **Apps** und **App Config**-Entitäten mithilfe der entsprechenden Dateien **App Import.xlsx** bzw. **App Config Import.xlsx** importiert haben.
 
 1.  Nun kopieren wir die App-IDs von Canvas-Apps so, dass wir sie in die von uns importierten **Apps**-Datensätze einfügen können. Melden Sie sich bei [Power Apps](https://make.powerapps.com) an.
 
@@ -224,12 +234,12 @@ Dazu verwenden Sie die Entitäten **App** und **App Config** im Bereich **Admini
     > [!div class="mx-imgBorder"] 
     > ![App-Details](media/conf-environments-apps-details.png "App-Details")
 
-1.  Die App-ID wird unten im Bereich  **Details**  für die App angezeigt. Kopieren Sie die App-ID zusammen mit ihrem Namen in die Editor-Datei.
+1.  Die App-ID wird unten im Bereich  **Details**  für die App angezeigt. Kopieren Sie die App-ID zusammen mit ihrem Namen in eine Editor-Datei.
 
     > [!div class="mx-imgBorder"] 
     > ![Details zur App-ID](media/conf-details-app-id.png "Details zur App-ID")
 
-1.  Wiederholen Sie für jede Canvas-App die Schritte 3 und 4.
+1.  Wiederholen Sie für jede Canvas-App die Schritte 4 und 5.
 
 1.  Öffnen Sie die Admin-App, und wählen Sie im linken Navigationsbereich in der Bereichsauswahl **Administration** und dann **Apps** aus. Dadurch werden alle Canvas-App-Datensätze angezeigt, die Sie aus der Datei **App Import.xlsx** importiert haben.
 
@@ -241,19 +251,29 @@ Dazu verwenden Sie die Entitäten **App** und **App Config** im Bereich **Admini
     > [!div class="mx-imgBorder"] 
     > ![Feld „Power App ID“](media/conf-powerapp-id-field.png "Feld „Power App ID“")
 
-1.  Kopieren Sie die App-ID aus der Editor-Datei, in die Sie sie zuvor in den Schritten 2-6 kopiert haben, in das Feld **Power App ID**. Sie können das App-Symbol auch aktualisieren, indem Sie darauf doppelklicken und ein anderes Bild angeben. Speichern Sie den Datensatz.
+1.  Auf der Seite „App-Details“:
 
-1.  Wiederholen Sie Schritt 9 für jeden Canvas-App-Datensatz unter **Apps**, um den Wert **Power App ID** hinzuzufügen.
+    1. Kopieren Sie die App-ID aus der Editor-Datei, in die Sie sie zuvor kopiert haben, in das Feld **Power App ID** (Power-App-ID).
+
+    2. Doppelklicken Sie auf das App-Symbol, und wählen Sie aus dem Ordner **App-Symbole** eine Symboldatei für die App aus. Die Bilddateien werden intuitiv benannt, sodass Sie das richtige Symbol problemlos auswählen können. Wählen Sie z. B. die Datei „Emergency Response App.png“ für die **Notfallreaktions-App** aus. Sie können auch ein benutzerdefiniertes Bild auswählen, das zum Branding Ihrer Organisation passt.
+
+    3. Aktualisieren Sie bei Bedarf die **Beschreibung** oder den **Anzeigenamen** der App.
+
+    4. Aktualisieren Sie bei Bedarf den Wert **Hide App from Menu** (App im Menü ausblenden), mit dem Sie festlegen, ob die App in der App-Liste angezeigt werden soll. Da es sich bei der **Notfallreaktions-App** um eine Container-App handelt, ist der Standardwert **Nein**.
+
+    5. Aktualisieren Sie bei Bedarf den Wert **App Display Rank** (App-Anzeigerang), mit dem Sie die Anzeigeposition der App in der App-Liste festlegen.
+
+    6. Wählen Sie **Speichern**.
+
+1.  Wiederholen Sie für jeden Canvas-App-Eintrag unter **Apps** die Schritte 8 und 9.
 
 1.  Wählen Sie im linken Bereich **App Config** aus.
 
 1.  Wählen Sie den Datensatz **Emergency Response App** (Notfallreaktions-App) aus, um ihn zur Bearbeitung zu öffnen.
 
-    1.  Doppelklicken Sie auf das Symbol, um ein neues Bild als App-Symbol anzugeben.
+    1.  Aktualisieren Sie bei Bedarf die Farben für Ihre App.
 
-    2.  Aktualisieren Sie die Namen und Farben Ihrer App.
-
-    3.  Wählen Sie im Feld **Device Sharing Enabled** (Gerätefreigabe aktiviert) entweder **Yes** (Ja) oder **No** (Nein) aus, um anzugeben, ob in den mobilen Apps die Option **Sign Out** (Abmelden) verfügbar sein soll oder nicht. Wenn Sie **Yes** (Ja) auswählen, ist die Option **Sign Out** (Abmelden) verfügbar.
+    2.  Wählen Sie im Feld **Device Sharing Enabled** (Gerätefreigabe aktiviert) entweder **Yes** (Ja) oder **No** (Nein) aus, um anzugeben, ob in den mobilen Apps die Option **Sign Out** (Abmelden) verfügbar sein soll oder nicht. Wenn Sie **Yes** (Ja) auswählen, ist die Option **Sign Out** (Abmelden) verfügbar.
 
     > [!div class="mx-imgBorder"] 
     > ![Feld „Device Sharing Enabled“](media/conf-device-sharing-enabled-field.png "Feld „Device Sharing Enabled“")
@@ -289,7 +309,7 @@ Gehen Sie anschließend wie folgt vor:
     Set-AdminPowerAppApisToBypassConsent -AppName APPGUIDHERE
     ```
 
-2.  Ersetzen Sie den Wert `APPGUIDHERE` in jeder Zeile durch die tatsächliche App-ID einer Canvas-App.
+2.  Ersetzen Sie den Wert `APPGUIDHERE` durch die tatsächliche App-ID einer Canvas-App.
 
 3.  Speichern Sie die Datei als PS-Datei.
 
@@ -299,7 +319,7 @@ Gehen Sie anschließend wie folgt vor:
 
 ### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry"></a>Schritt 7: Hinzufügen des Azure Application Insights-Schlüssels zu mobilen Apps für Telemetriezwecke
 
-Mit Azure Application Insights können Sie detaillierte Telemetriedaten für Ihre mobilen Apps (Canvas-Apps) sammeln, um Einblicke in die App-Nutzung zu erhalten. Ausführliche Informationen hierzu finden Sie unter [Protokollieren von Telemetriedaten für Ihre Apps mithilfe von Azure Application Insights](https://powerapps.microsoft.com/blog/log-telemetry-for-your-apps-using-azure-application-insights/).
+Mit Azure Application Insights können Sie detaillierte Telemetriedaten für Ihre mobilen Apps (Canvas-Apps) sammeln, um Einblicke in die App-Nutzung zu erhalten. Ausführliche Informationen hierzu finden Sie unter [Analysieren von App-Telemetriedaten mithilfe von Application Insights](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights).
 
 ### <a name="step-8-share-canvas-apps-with-users-in-your-organization"></a>Schritt 8: Freigeben von Canvas-Apps für Benutzer in Ihrer Organisation
 
@@ -314,7 +334,7 @@ Damit Ihre Benutzer an vorderster Front Daten mithilfe der Canvas-Apps auf ihren
     > [!div class="mx-imgBorder"] 
     > ![Freigeben von Canvas-Apps](media/conf-share-canvas-apps.png "Freigeben von Canvas-Apps")
 
-4.  Geben Sie die Azure AD-Gruppe oder Benutzer an, für die Sie diese App freigeben möchten. Da sich die App mit Common Data Service-Daten verbindet, müssen Sie auch Berechtigungen für die Entitäten erteilen. Im Freigabepanel werden Sie aufgefordert, die Sicherheit für die Entitäten zu verwalten. Weisen Sie den von dieser App verwendeten Entitäten die Sicherheitsrollen **COVID 19 End User** (COVID 19-Endbenutzer) und **Common Data Service User** (Common Data Service-Benutzer) zu, und wählen Sie **Share** (Freigeben) aus.
+4.  Geben Sie die Azure AD-Gruppe oder Benutzer an, für die Sie diese App freigeben möchten. Da sich die App mit Common Data Service-Daten verbindet, müssen Sie auch Berechtigungen für die Entitäten erteilen. Im Freigabepanel werden Sie aufgefordert, die Sicherheit für die Entitäten zu verwalten. Weisen Sie den von dieser App verwendeten Entitäten die Sicherheitsrollen **Emergency Response User** (Notfallreaktionsbenutzer) und **Common Data Service User** (Common Data Service-Benutzer) zu, und klicken Sie auf **Share** (Freigeben).
 
     > [!div class="mx-imgBorder"] 
     > ![Freigeben einer App für Azure AD-Gruppe oder Benutzer](media/conf-share-app-groups-users.png "Freigeben einer App für Azure AD-Gruppe oder Benutzer")
@@ -357,11 +377,12 @@ Gehen Sie anschließend wie folgt vor:
     Set-AdminPowerAppAsHero -AppName APPGUIDHERE
     ```
 
-2.  Ersetzen Sie den Wert `APPGUIDHERE` in jeder Zeile durch die tatsächliche App-ID der App, die Sie als empfohlene oder herausragende App festlegen möchten.
+2.  Ersetzen Sie den Wert `APPGUIDHERE` im Skript durch die tatsächliche App-ID der App, die Sie als empfohlene oder herausragende App festlegen möchten.
 
 3.  Speichern Sie die Datei als PS-Datei.
 
 4.  Führen Sie PowerShell als Administrator und dann die soeben erstellte PS-Datei aus.
+ 
 
 ### <a name="step-10-share-model-driven-app-with-admins-in-your-organization"></a>Schritt 10: Freigeben der modellgesteuerten App für Administratoren in Ihrer Organisation
 
@@ -387,11 +408,11 @@ Sie müssen Stammdaten in diesen Entitäten in der folgenden Reihenfolge hinzuf�
 
 1. [Systems (Systeme)](#systems-data)
 
-1. [Regions (Regionen)](#regions-data)
+1. [Regionen](#regions-data)
 
 1. [Facilities (Einrichtungen)](#facilities-data)
 
-1. [Locations (Standorte)](#locations-data)
+1. [Speicherorte](#locations-data)
 
 1. [Departments (Abteilungen)](#departments-data)
 
@@ -418,12 +439,12 @@ So erstellen Sie einen Datensatz
 
    | **Feld**            | **Beschreibung**                                    |
    |----------------------|----------------------------------------------------|
-   | System Name (Systemname)          | Geben Sie für Ihr Krankenhaus einen Namen ein.                     |
-   | Description (Beschreibung)          | Geben Sie eine optionale Beschreibung ein.                      |
+   | Systemname          | Geben Sie für Ihr Krankenhaus einen Namen ein.                     |
+   | Beschreibung          | Geben Sie eine optionale Beschreibung ein.                      |
    | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für dieses Krankenhaussystem ein. |
    | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für dieses Krankenhaussystem ein.   |
 
-3. Wählen Sie **Speichern und schließen** aus. Der neu erstellte Datensatz ist in der Liste **Systems** verfügbar.
+3. Wählen Sie **Speichern und Schließen** aus. Der neu erstellte Datensatz ist in der Liste **Systems** verfügbar.
 
 Um den Datensatz zu bearbeiten, wählen Sie ihn aus. Aktualisieren Sie die Werte wie gewünscht, und wählen Sie **Speichern und schließen** aus.
 
@@ -443,8 +464,8 @@ So erstellen Sie einen Datensatz
     | **Feld**            | **Beschreibung**                                                                                          |
     |----------------------|----------------------------------------------------------------------------------------------------------|
     | System               | Wählen Sie ein Krankenhaussystem aus. Diese Liste wird auf Grundlage der Daten zu den **Systemen** aufgefüllt, die Sie zuvor erstellt haben. |
-    | Region Name (Regionsname)          | Geben Sie den Namen der Region ein. Beispiel: Seattle.                                                              |
-    | Description (Beschreibung)          | Geben Sie eine optionale Beschreibung ein.                                                                            |
+    | Name der Region          | Geben Sie den Namen der Region ein. Beispiel: Seattle.                                                              |
+    | Beschreibung          | Geben Sie eine optionale Beschreibung ein.                                                                            |
     | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für dieses Krankenhaussystem ein.                                                       |
     | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für dieses Krankenhaussystem ein.                                                         |
 
@@ -469,14 +490,14 @@ So erstellen Sie einen Datensatz
     |----------------------|-------------------------------------------------------------------------------------------------|
     | Region               | Wählen Sie eine Region aus. Diese Liste wird auf Grundlage der Daten zu den **Regionen** aufgefüllt, die Sie zuvor erstellt haben. |
     | Facility Name (Name der Einrichtung)        | Geben Sie den Namen der Einrichtung ein. Beispiel: Bellevue.                                                  |
-    | Description (Beschreibung)          | Geben Sie eine optionale Beschreibung ein.                                                                   |
+    | Beschreibung          | Geben Sie eine optionale Beschreibung ein.                                                                   |
     | Total Vents (Beatmungsgeräte insgesamt)          | Geben Sie die Gesamtanzahl der in der Einrichtung verfügbaren Beatmungsgeräte ein.                                  |
     | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für diese Einrichtung ein.                                                     |
     | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für diese Einrichtung ein.                                                       |
 
     Geben Sie bei Bedarf die Adresse der Einrichtung ein.
 
-3. Wählen Sie **Speichern und schließen** aus. Der neu erstellte Datensatz ist in der Liste **Facilities** verfügbar.
+3. Wählen Sie **Speichern und Schließen** aus. Der neu erstellte Datensatz ist in der Liste **Facilities** verfügbar.
 
 Um den Datensatz zu bearbeiten, wählen Sie ihn aus. Aktualisieren Sie die Werte wie gewünscht, und wählen Sie **Speichern und schließen** aus.
 
@@ -498,10 +519,10 @@ So erstellen Sie einen Datensatz
 
     | **Feld**            | **Beschreibung**                                                                                      |
     |----------------------|------------------------------------------------------------------------------------------------------|
-    | Location Name (Name des Standorts)        | Geben Sie den Namen des Standorts ein.                                                                       |
-    | Facility (Einrichtung)             | Wählen Sie eine Einrichtung aus. Diese Liste wird auf Grundlage der Daten zu den **Einrichtungen** aufgefüllt, die Sie zuvor erstellt haben. |
-    | Floor (Etage)                | Geben Sie die Informationen zur Etage der Einrichtung ein.                                                         |
-    | Unit (Einheit)                 | Geben Sie die Informationen zur Einheit der Einrichtung ein.                                                           |
+    | Standortname        | Geben Sie den Namen des Standorts ein.                                                                       |
+    | Facility             | Wählen Sie eine Einrichtung aus. Diese Liste wird auf Grundlage der Daten zu den **Einrichtungen** aufgefüllt, die Sie zuvor erstellt haben. |
+    | Etage                | Geben Sie die Informationen zur Etage der Einrichtung ein.                                                         |
+    | Einheit                 | Geben Sie die Informationen zur Einheit der Einrichtung ein.                                                           |
     | Location Acuity (Pflegestufe am Standort)      | Wählen Sie den Datensatz zur Pflegestufe aus, der mit diesem Standort verknüpft ist.                                                                                                     |
     | Total Beds (Betten insgesamt)           | Geben Sie die Gesamtanzahl der Betten in der Einrichtung ein.                                                       |
     | Blocked beds (Belegte Betten)         | Geben Sie die Anzahl der belegten Betten in der Einrichtung ein.                                                     |
@@ -512,7 +533,7 @@ So erstellen Sie einen Datensatz
     | Location Order (Standortreihenfolge)       | Geben Sie eine Zahl zum Sortieren des Standorts in die Dropdownlisten für den Standort ein.                               |
     | Alternate Site Flag (Flag für alternatives Standort)  | Zur internen Verwendung                                                                                     |
 
-3. Wählen Sie **Speichern und schließen** aus. Der neu erstellte Datensatz ist in der Liste **Locations** verfügbar.
+3. Wählen Sie **Speichern und Schließen** aus. Der neu erstellte Datensatz ist in der Liste **Locations** verfügbar.
 
 Um den Datensatz zu bearbeiten, wählen Sie ihn aus. Aktualisieren Sie die Werte wie gewünscht, und wählen Sie **Speichern und schließen** aus.
 
@@ -531,12 +552,12 @@ So erstellen Sie einen Datensatz
 
     | **Feld**            | **Beschreibung**                                    |
     |----------------------|----------------------------------------------------|
-    | Department Name (Abteilungsname)      | Geben Sie einen Abteilungsnamen ein.                            |
-    | Description (Beschreibung)          | Geben Sie eine optionale Beschreibung ein.                      |
+    | Department Name      | Geben Sie einen Abteilungsnamen ein.                            |
+    | Beschreibung          | Geben Sie eine optionale Beschreibung ein.                      |
     | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für dieses Krankenhaussystem ein. |
     | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für dieses Krankenhaussystem ein.   |
 
-3. Wählen Sie **Speichern und schließen** aus. Der neu erstellte Datensatz ist in der Liste **Departments** verfügbar.
+3. Wählen Sie **Speichern und Schließen** aus. Der neu erstellte Datensatz ist in der Liste **Departments** verfügbar.
 
 Um den Datensatz zu bearbeiten, wählen Sie ihn aus. Aktualisieren Sie die Werte wie gewünscht, und wählen Sie **Speichern und schließen** aus.
 
