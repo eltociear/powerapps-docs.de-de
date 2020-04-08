@@ -6,18 +6,18 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/30/2020
+ms.date: 04/02/2020
 ms.author: kvivek
 ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f126a415cfe42e38e2131967a29564fc0255f6bb
-ms.sourcegitcommit: b6beb1b76d9ddb0f9846253f895d581bda9012ba
+ms.openlocfilehash: bd85066993a317af0d9a594fa856ce1d5800b849
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80417479"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624996"
 ---
 # <a name="deploy-and-configure-the-emergency-response-app"></a>Bereitstellen und Konfigurieren der Notfallreaktions-App
 
@@ -325,6 +325,9 @@ Mit Azure Application Insights können Sie detaillierte Telemetriedaten für Ihr
 
 Damit Ihre Benutzer an vorderster Front Daten mithilfe der Canvas-Apps auf ihren mobilen Geräten nutzen können, müssen die Apps für sie freigegeben werden. Es wird empfohlen, Azure AD-Gruppen zu verwenden, um Apps einfach für Benutzergruppen freizugeben.
 
+> [!IMPORTANT]
+> Stellen Sie sicher, dass die Benutzer oder Gruppen, für die Sie die Apps freigeben möchten, *bereits* Zugriff auf Ihre Umgebung haben. In der Regel haben Sie bei der [Einrichtung der Umgebung](#step-1-sign-up-for-power-apps-and-create-an-environment) bereits Benutzer oder Gruppen hinzugefügt. Alternativ können Sie die hier beschriebenen Schritte befolgen, um Ihrer Umgebung Benutzer hinzuzufügen und diesen den entsprechenden Zugriff zu erteilen, bevor Sie Apps für sie freigeben: [Erstellen von Benutzern und Zuweisen von Sicherheitsrollen](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
+
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com) an.
 
 2.  Wählen Sie im linken Navigationsbereich **Apps** aus, um eine Liste aller Apps anzuzeigen.
@@ -387,6 +390,9 @@ Gehen Sie anschließend wie folgt vor:
 ### <a name="step-10-share-model-driven-app-with-admins-in-your-organization"></a>Schritt 10: Freigeben der modellgesteuerten App für Administratoren in Ihrer Organisation
 
 Damit Ihre administrativen Benutzer die Admin-App (modellgesteuerte App) verwenden können, muss sie für sie freigegeben werden. Es wird empfohlen, Azure AD-Gruppen zu verwenden, um Apps einfach für Gruppen administrativer Benutzer freizugeben.
+
+> [!IMPORTANT]
+> Stellen Sie sicher, dass die Benutzer oder Gruppen, für die Sie die App freigeben möchten, *bereits* Zugriff auf Ihre Umgebung haben. In der Regel haben Sie bei der [Einrichtung der Umgebung](#step-1-sign-up-for-power-apps-and-create-an-environment) bereits Benutzer oder Gruppen hinzugefügt. Alternativ können Sie die hier beschriebenen Schritte befolgen, um Ihrer Umgebung Benutzer hinzuzufügen und diesen den entsprechenden Zugriff zu erteilen, bevor Sie eine App für sie freigeben: [Erstellen von Benutzern und Zuweisen von Sicherheitsrollen](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
 
 1. Melden Sie sich bei [Power Apps](https://make.powerapps.com) an.
 

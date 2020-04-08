@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 482d06a91d3cb3a7c22e41e4e880aa72294d2b3f
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 91f027af2f7d8b10fcfd15380fae46f62bc5603b
+ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264978"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80615411"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Verwenden des Nachschlagefelds für einen Datensatz
 
@@ -96,8 +96,11 @@ Sie können Folgendes festlegen, indem Sie auf **Ansicht ändern** klicken:
 
     ![Ändern der angezeigten Kontakte](media/change-view.png "Ändern der angezeigten Kontakte")
 
->[!IMPORTANT] 
->Die Option **Ansicht ändern** wird nicht angezeigt, wenn der Administrator nicht festgelegt hat, dass diese in Ihrer Ansicht angezeigt wird.
+### <a name="filter-by-only-my-records-or-filter-by-related-primary-contact"></a>Filterung nach eigenen Datensätzen oder nach entsprechendem Hauptkontakt
+
+Wenn Sie zusätzliche Filter anwenden möchten, klicken Sie im Menü **Ansicht ändern** auf die Option **Only my records** (Nur meine Datensätze) oder auf **Filter by related Primary Contact** (Nach entsprechendem Hauptkontakt filtern).
+
+![Hinzufügen weiterer Filter](media/extra_filters.png "Hinzufügen weiterer Filter")
 
 ### <a name="choose-from-multiple-records"></a>Auswahl aus mehreren Datensätzen
 
