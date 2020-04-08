@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 75450ef67217bdc7a1b86086fd07f1d3adbd7831
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: ca48ccaf4aca72301d3a8b7f2eb79885d7c7cdf5
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436773"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871325"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Katalog-Steuerelement in Canvas-apps
 
@@ -61,6 +61,8 @@ Wenn ein Benutzer einen Bildlauf zum **flexiblen Height** Gallery-Steuerelement 
 
 [BorderThickness](properties-color-border.md): Die Linienstärke des Rahmens eines Steuerelements.
 
+**Delta laden** : verzögert das Laden von Elementen (Zeilen), bis der Bildschirm zuerst geladen wird.
+
 [Display Mode](properties-core.md) – gibt an, ob das Steuerelement Benutzereingaben zulässt (**Edit**), nur Daten (**Ansicht**) anzeigt oder deaktiviert (**deaktiviert**) ist.
 
 [Fill](properties-color-border.md): Die Hintergrundfarbe eines Steuerelements.
@@ -68,6 +70,10 @@ Wenn ein Benutzer einen Bildlauf zum **flexiblen Height** Gallery-Steuerelement 
 [Height](properties-size-location.md): Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
 **Itemaccessiblelabel** – Bezeichnung der einzelnen Galerie Elemente für Bildschirm Sprachausgaben. Sollte die einzelnen Elemente beschreiben.
+
+**Loadingspinner** (**keine**, Steuer **Elemente** oder **Daten**)-Wenn kein Wert angezeigt wird, wird Spinner nicht angezeigt. Wenn Steuerelemente | Daten, Spinner werden angezeigt, wenn ein renderdurchlauf auftritt, der zu sichtbaren leeren Zeilen führt.
+
+**Loadingspinnercolor** : die Füllfarbe des Lade Spinners.  Default ist auf BorderColor festgelegt.
 
 **NavigationStep** – Gibt an, wie weit in einem Katalog gescrollt werden kann, wenn die **ShowNavigation**-Eigenschaft auf **true** festgelegt ist und der Benutzer am Ende des Katalogs jeweils einen Navigationspfeil verwendet.
 
@@ -97,7 +103,7 @@ Wenn ein Benutzer einen Bildlauf zum **flexiblen Height** Gallery-Steuerelement 
 
 [Y](properties-size-location.md) – der Abstand zwischen dem oberen Rand eines Steuer Elements und dem oberen Rand des übergeordneten Containers oder Bildschirms.
 
-## <a name="related-functions"></a>Verwandte Funktionen
+## <a name="related-functions"></a>Ähnliche Funktionen
 
 [Filter ( *DataSource*, *Formel* )](../functions/function-filter-lookup.md)
 

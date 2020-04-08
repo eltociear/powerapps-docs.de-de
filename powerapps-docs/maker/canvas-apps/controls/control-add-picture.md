@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37c98470d3239cefa008235f295aaf9af2db3f5a
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 3f2afd3a1097ec0b201b5857509f1ff42d1fedad
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211524"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871279"
 ---
 # <a name="add-picture-control-in-power-apps"></a>Hinzufügen eines Bild Steuer Elements in Power apps
 Nimmt ein Foto auf oder lädt Bilder vom lokalen Gerät.
@@ -29,10 +28,10 @@ Mit diesem Steuerelement können die Benutzer Fotos aufnehmen oder Bilddateien v
 
 Dieses Steuerelement ist ein gruppiertes Steuerelement mit zwei Steuerelementen: einem **Bild** und einer **Schaltfläche Bild hinzufügen**. Das **Bild**-Steuerelement zeigt das hochgeladene Bild bzw. (wenn kein Bild hochgeladen wurde) einen Platzhalter an. Mit der **Schaltfläche Bild hinzufügen werden Sie** dazu aufgefordert, ein Bild hochzuladen.
 
-Weitere Informationen zu den [Bild](control-image.md)-Eigenschaften erhalten Sie in der **Referenz zu dem Steuerelement „Bild“**.
+Weitere Informationen zu den [Bild](control-image.md)-Eigenschaften erhalten Sie in der **Referenz zu dem Steuerelement „Bild“** .
 
 ## <a name="add-picture-button-properties"></a>Schaltflächen Eigenschaften für Bild hinzufügen
-**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte beschreiben, warum ein Bild hochgeladen werden soll.
+**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Sollte beschreiben, warum ein Bild hochgeladen werden soll.
 
 **[Align](properties-text.md)** – Die Position von Text in Relation zur horizontalen Mitte des Steuerelements.
 
@@ -46,21 +45,21 @@ Weitere Informationen zu den [Bild](control-image.md)-Eigenschaften erhalten Sie
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
-**[DisabledBorderColor](properties-color-border.md)**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledBorderColor](properties-color-border.md)** : Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)** -Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[DisabledColor](properties-color-border.md)**: Die Farbe des Texts in einem Steuerelement, wenn seine **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledColor](properties-color-border.md)** : Die Farbe des Texts in einem Steuerelement, wenn seine **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[DisabledFill](properties-color-border.md)**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledFill](properties-color-border.md)** : Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **Error** – Falls beim Hochladen eines Bilds ein Problem auftritt, enthält diese Eigenschaft eine entsprechende Fehlerzeichenfolge.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
-**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
@@ -78,7 +77,7 @@ Weitere Informationen zu den [Bild](control-image.md)-Eigenschaften erhalten Sie
 
 **Media** – Ein Bezeichner für den Clip, der von einem Audio- oder Video-Steuerelement wiedergegeben wird.
 
-**[OnChange](properties-core.md)**: Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -96,9 +95,9 @@ Weitere Informationen zu den [Bild](control-image.md)-Eigenschaften erhalten Sie
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Text](properties-core.md)**: Text, der angezeigt wird, wenn kein Bild hochgeladen wurde.
+**[Text](properties-core.md)** : Text, der angezeigt wird, wenn kein Bild hochgeladen wurde.
 
 **[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
@@ -114,29 +113,30 @@ Weitere Informationen zu den [Bild](control-image.md)-Eigenschaften erhalten Sie
 
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
-## <a name="related-functions"></a>Verwandte Funktionen
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+## <a name="related-functions"></a>Ähnliche Funktionen
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="examples"></a>Beispiele
 ### <a name="add-images-to-an-image-gallery-control"></a>Hinzufügen von Bildern zu einem Bildkatalog-Steuerelement
 1. Fügen Sie ein **Bild hinzufügen**-Steuerelement hinzu, und klicken Sie dann dreimal darauf.
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
-2. Klicken oder tippen Sie im Dialogfeld **Öffnen** auf eine Bilddatei, und klicken oder tippen Sie dann auf **Öffnen**.
-3. Fügen Sie ein **[Schaltfläche](control-button.md)**-Steuerelement hinzu, verschieben Sie es unter das Steuerelement **Bild hinzufügen**, und legen Sie die **[OnSelect](properties-core.md)**-Eigenschaft für das **[Schaltfläche](control-button.md)**-Steuerelement auf die folgende Formel fest:<br>
-   **Collect(MyPix; AddMediaButton1.Media)**
+1. Klicken oder tippen Sie im Dialogfeld **Öffnen** auf eine Bilddatei, und klicken oder tippen Sie dann auf **Öffnen**.
+1. Fügen Sie ein **[Schaltfläche](control-button.md)** -Steuerelement hinzu, verschieben Sie es unter das Steuerelement **Bild hinzufügen**, und legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft für das **[Schaltfläche](control-button.md)** -Steuerelement auf die folgende Formel fest:<br>
+   **Collect(MyPix, AddMediaButton1.Media)**
    
-    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)**-Funktion oder zu [anderen Funktionen](../formula-reference.md)?
-4. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu, und legen Sie dessen **[Items](properties-core.md)**-Eigenschaft auf **MyPix** fest.
-5. Drücken Sie F5, und klicken oder tippen Sie auf das **[Schaltfläche](control-button.md)**-Steuerelement.
+    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder zu [anderen Funktionen](../formula-reference.md)?
+1. Fügen Sie ein **vertikales** Katalog Steuerelement hinzu, und legen Sie die Eigenschaft **[Items](properties-core.md)** auf **myPIX**fest.
+1. Wählen Sie im Katalog das **[Image](control-image.md)** -Steuerelement aus, und legen Sie dessen **Image** -Eigenschaft auf **thisitem. Value**fest.
+1. Drücken Sie F5, und klicken oder tippen Sie auf das **[Schaltfläche](control-button.md)** -Steuerelement.
    
-    Das Bild aus dem **Bild hinzufügen**-Steuerelement wird im Steuerelement **Bildkatalog** angezeigt. Wenn das Bild nicht das gleiche Seitenverhältnis wie das **[Bild](control-image.md)**-Steuerelement im **Bildkatalog**-Steuerelement aufweist, legen Sie die **[ImagePosition](properties-visual.md)**-Eigenschaft des **[Bild](control-image.md)**-Steuerelements auf **Fit** fest.
-6. Klicken oder tippen Sie auf das **Bild hinzufügen**-Steuerelement, auf eine andere Bilddatei, auf **Öffnen** und dann auf das hinzugefügte **[Schaltfläche](control-button.md)**-Steuerelement.
+    Das Bild aus dem Steuerelement **Bild hinzufügen** wird im **vertikalen artenkatalog** -Steuerelement angezeigt. Wenn das Bild nicht das gleiche Seitenverhältnis wie das **[Image](control-image.md)** -Steuerelement im **senkrechten** Katalog Steuerelement aufweist, legen Sie die **[imageposition](properties-visual.md)** -Eigenschaft des **[Image](control-image.md)** -Steuer Elements auf **Anpassen**fest.
+1. Klicken oder tippen Sie auf das **Bild hinzufügen**-Steuerelement, auf eine andere Bilddatei, auf **Öffnen** und dann auf das hinzugefügte **[Schaltfläche](control-button.md)** -Steuerelement.
    
     Das zweite Bild wird im **Bildkatalog**-Steuerelement angezeigt.
-7. (optional) Wiederholen Sie den vorherigen Schritt beliebig oft, und kehren Sie dann zurück zum Standardarbeitsbereich, indem Sie ESC drücken.
+1. (optional) Wiederholen Sie den vorherigen Schritt beliebig oft, und kehren Sie dann zurück zum Standardarbeitsbereich, indem Sie ESC drücken.
 
-Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)**-Funktion, um die Bilder lokal zu speichern, oder die **[Patch](../functions/function-patch.md)**-Funktion, um eine Datenquelle zu aktualisieren.
+Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)** -Funktion, um die Bilder lokal zu speichern, oder die **[Patch](../functions/function-patch.md)** -Funktion, um eine Datenquelle zu aktualisieren.
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit

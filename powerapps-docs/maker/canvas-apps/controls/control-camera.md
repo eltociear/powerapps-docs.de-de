@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd3c468134e979732ead5e0144e60aaf1b3e38df
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 59c0f85dd71c9dc512e348d6d8ee9686d6945fa1
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436792"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871118"
 ---
 # <a name="camera-control-in-power-apps"></a>Kamerasteuerelement in Power Apps
 
@@ -44,7 +43,15 @@ Bilder, die vom Kamera Steuerelement generiert werden, sind in der Regel nicht v
 
 ## <a name="key-properties"></a>Haupteigenschaften
 
-**Camera** – Auf einem Gerät mit mehreren Kameras ist dies die ID der von der App verwendeten Kamera.
+**Availabledevices** – Tabelle der verfügbaren Kameras auf dem Gerät.
+
+Die Tabelle enthält zwei Spalten: 
+- *ID* -Nummer, die mit der **Kamera** -Eigenschaft verwendet werden soll 
+- Der *Name* , der vom Gerät zur Identifizierung der Kamera bereitgestellt wird. Einige Plattformen können *vor* und *nach dem* Auffinden der Kamera enthalten.
+
+*Hinweis*: nicht alle Geräte in der Tabelle sind möglicherweise in Ihrer APP verwendbar.  Dabei kann es sich um spezielle Treiber oder Anwendungen handeln, die für bestimmte Zwecke vorgesehen sind.  
+
+**Kamera** – die numerische ID der zu verwendenden Kamera.  Hilfreich auf Geräten mit mehr als einer Kamera.  
 
 **OnStream** – Legt fest, wie die App reagiert, wenn die **Stream**-Eigenschaft aktualisiert wird.
 
@@ -100,11 +107,11 @@ Für diese Beispiele benötigen Sie ein Gerät mit einer Kamera. Verwenden Sie z
 
 1. Autorisieren Sie die APP für die Verwendung der Gerätekamera.
 
-1. Fügen Sie ein **Bild** Steuerelement hinzu.
+1. Fügen Sie ein [**Bild**](../controls/control-image.md) Steuerelement hinzu.
 
-1. Legen Sie die **Image** -Eigenschaft des **Bild** -Steuer Elements auf diese Formel fest:
+1. Legen Sie die **Image** -Eigenschaft des **Image** -Steuer Elements auf die folgende Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Camera1.Photo
     ```
 
@@ -113,14 +120,14 @@ Für diese Beispiele benötigen Sie ein Gerät mit einer Kamera. Verwenden Sie z
 
 1. Drücken Sie F5, um die app in der Vorschau anzuzeigen.
 
-1. Wählen Sie das Kamera Steuerelement aus, oder tippen Sie auf das Steuerelement.  Das Ergebnis sollte im Image-Steuerelement angezeigt werden.
+1. Wählen Sie das Kamera Steuerelement aus, oder tippen Sie auf das Steuerelement. Das Ergebnis sollte im Image-Steuerelement angezeigt werden.
 
 ### <a name="add-pictures-to-an-image-gallery-control"></a>Hinzufügen von Bildern zu einem Bildkatalog-Steuerelement
 
 1. Fügen Sie ein **Kamera** Steuerelement hinzu, benennen Sie es **MyCamera**, und legen Sie dessen [onselect](properties-core.md) -Eigenschaft auf diese Formel fest:
 
-    ```powerapps-comma
-    Collect( MyPix; MyCamera.Photo )
+    ```powerapps-dot
+    Collect( MyPix, MyCamera.Photo )
     ```
 
     Weitere Informationen:
@@ -134,13 +141,13 @@ Für diese Beispiele benötigen Sie ein Gerät mit einer Kamera. Verwenden Sie z
 
 1. Legen Sie die [Items](properties-core.md) -Eigenschaft des **Bild** Katalog-Steuer Elements auf diese Formel fest:
  
-    ```powerapps-comma
+    ```powerapps-dot
     MyPix
     ```
 
 1. Legen Sie die [Image](properties-visual.md) -Eigenschaft des **Bild** -Steuer Elements im Katalog auf diese Formel fest:
 
-    ```powerapps-comma   
+    ```powerapps-dot   
     ThisItem.Url
     ```
 
@@ -150,13 +157,41 @@ Für diese Beispiele benötigen Sie ein Gerät mit einer Kamera. Verwenden Sie z
 
 1. optionale Legen **Sie die onselect** -Eigenschaft des **Bild** -Steuer Elements im **Bild** Katalog-Steuerelement auf die folgende Formel fest:
 
-    ```powerapps-comma
-    Remove( MyPix; ThisItem )
+    ```powerapps-dot
+    Remove( MyPix, ThisItem )
     ```
 
 1. Drücken Sie F5, und wählen Sie dann ein Bild aus, um es zu entfernen.
 
 Verwenden Sie die [SaveData](../functions/function-savedata-loaddata.md) -Funktion, um die Bilder lokal zu speichern, oder die [Patch](../functions/function-patch.md) -Funktion, um eine Datenquelle zu aktualisieren.
+
+### <a name="change-the-active-camera-from-a-drop-down"></a>Ändern der aktiven Kamera aus einer Dropdown-Dropdown-
+
+1. [Fügen Sie](../add-configure-controls.md) ein **Kamera** Steuerelement hinzu.
+
+1. Autorisieren Sie die APP für die Verwendung der Gerätekamera.
+    
+1. [Fügen Sie](../add-configure-controls.md) ein [Dropdown](control-drop-down.md) -Steuerelement hinzu.
+
+1. Legen Sie die **Elemente** der Dropdown Liste auf Folgendes fest:
+
+    ```powerapps-dot
+    Camera1.AvailableDevices
+    ```
+
+    > [!NOTE]
+      > Ersetzen Sie den Kamera-Steuerelement Namen *Camera1* nach Bedarf.
+    
+1. Legen Sie die **Kamera** -Eigenschaft der Kamera auf fest: 
+
+    ```powerapps-dot
+    Dropdown1.Selected.Id
+    ```
+
+    > [!NOTE]
+      > Ersetzen Sie den Namen des Dropdown-Steuer Elements *Dropdown1* nach Bedarf.
+
+1. Drücken Sie F5, und wählen Sie dann ein Element aus der Dropdown Liste aus, um die Kamera zu ändern.
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 
