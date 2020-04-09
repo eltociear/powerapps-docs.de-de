@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/16/2020
+ms.date: 04/08/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc28b370b36be8d309c292e110d0b927d08c4a11
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 2fc1a91b4468926ee98351f79d7ce2e84133aa46
+ms.sourcegitcommit: 7d3caf698d367a56af9e16c43af8005adb9f87cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436737"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80987243"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Funktionen "DateValue", "TimeValue" und "dateTimeValue" in powerapps
 
@@ -40,8 +39,11 @@ Die **DateValue** -Funktion ignoriert alle Zeit Informationen in der Datums Zeic
 
 Datumsangaben müssen eines der folgenden Formate aufweisen:
 
-- TT.MM.JJJJ
-- TT/MM/JJJJ
+- Mm/dd/yyyy oder mm-dd-yyyy
+- Dd/mm/yyyy oder dd-mm-yyyy
+- Yyyy/mm/dd oder yyyy-mm-dd
+- Mm/dd/yy oder mm-dd-yy
+- Dd/mm/yy oder dd-mm-yy
 - TT Mon JJJJ
 - Monat TT, JJJJ
 
@@ -55,9 +57,9 @@ Weitere Informationen finden Sie unter:
 
 ## <a name="syntax"></a>Syntax
 
-**DateValue**( *String* [; *Language* ])<br>
-**DateTimeValue**( *String* [; *Language* ])<br>
-**TimeValue**( *String* [; *Language* ])
+**DateValue**( *String* [, *Language* ])<br>
+**DateTimeValue**( *String* [, *Language* ])<br>
+**TimeValue**( *String* [, *Language* ])
 
 * *Zeichenfolge*: erforderlich. Eine Textzeichenfolge, die einen Datum-, Uhrzeit- oder einen Datum/Uhrzeit-Wert enthält.
 * *Sprache*: optional. Eine sprach Zeichenfolge, z. b., wird von den ersten zwei Zeichen aus der [Language](function-language.md) -Funktion zurückgegeben.  Wenn keine Angabe erfolgt, wird die Sprache der Einstellungen des aktuellen Benutzers verwendet.  
@@ -70,19 +72,19 @@ Wenn Sie **10/11/2014** in ein Texteingabe-Steuerelement mit dem Namen **StartDa
 
 - Konvertiert ein Datum aus einer Zeichenfolge in das Gebiets Schema des Benutzers und zeigt das Ergebnis als langes Datum an.
 
-    ```powerapps-comma
-    Text( DateValue( Startdate.Text ); DateTimeFormat.LongDate )
+    ```powerapps-dot
+    Text( DateValue( Startdate.Text ), DateTimeFormat.LongDate )
     ```
 
     Auf dem Gebiets Schema " **en** " wird die Bezeichnung **Samstag, 11. Oktober 2014**angezeigt.
   
     > [!NOTE]
-    > Im Vergleich zu **longdatetime**können Sie mehrere Optionen mit **DateTimeFormat** verwenden. Zum Anzeigen einer Liste von Optionen geben Sie den Parameter ein, gefolgt von einem Ausrufezeichen ( **!** ) in der Bearbeitungs Leiste.
+    > Sie können mehrere Optionen mit der **DateTimeFormat** -Enum verwenden. Zum Anzeigen einer Liste von Optionen geben Sie den Parameter ein, gefolgt von einem Punkt oder Punkt ( **.** ) in der Bearbeitungs Leiste oder in der Funktionsreferenz für den [ **Text** ](function-text.md).
 
 - Konvertieren Sie das Datum aus einer Zeichenfolge im französischen Gebiets Schema, und zeigen Sie das Ergebnis als langes Datum an. In diesem Beispiel werden die Monate und der Tag des Monats anders als Englisch interpretiert.
 
-    ```powerapps-comma
-    Text( DateValue( Startdate.Text; "fr" ); DateTimeFormat.LongDate )
+    ```powerapps-dot
+    Text( DateValue( Startdate.Text, "fr" ), DateTimeFormat.LongDate )
     ```
   
     Auf dem Gebiets Schema " **en** " wird die Bezeichnung **Montag, 10. November 2014**angezeigt.
@@ -91,8 +93,8 @@ Wenn Sie stattdessen den **20. Oktober 2014 eingegeben haben** :
 
 - Konvertieren Sie ein Datum aus einer Zeichenfolge in das Gebiets Schema des Benutzers, und berechnen Sie die Differenz zwischen zwei Tagen (in Tagen).
 
-    ```powerapps-comma
-    DateDiff( DateValue( Startdate.Text ); Today() )
+    ```powerapps-dot
+    DateDiff( DateValue( Startdate.Text ), Today() )
     ```
   
     Auf dem Gebiets Schema " **en** " wird die Bezeichnung **9**angezeigt, die die Anzahl der Tage zwischen dem 11. und dem 20. Oktober angibt. Die [DateDiff](function-dateadd-datediff.md) -Funktion kann auch den Unterschied in Monaten, Quartalen oder Jahren anzeigen.
@@ -103,27 +105,27 @@ Wenn Sie **10/11/2014 1:50:24.765 pm** in ein Texteingabe-Steuerelement mit dem 
 
 - Konvertiert eine Datums-und Uhrzeit Zeichenfolge im aktuellen Gebiets Schema.
  
-    ```powerapps-comma
-    Text( DateTimeValue( Start.Text ); DateTimeFormat.LongDateTime )
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text ), DateTimeFormat.LongDateTime )
     ```    
     
     Auf dem Gebiets Schema " **en** " wird die Bezeichnung **Samstag, 11. Oktober 2014 1:50:24 Uhr**angezeigt.
   
   > [!NOTE]
-  > Im Vergleich zu **longdatetime**können Sie mehrere Optionen mit **DateTimeFormat** verwenden. Zum Anzeigen einer Liste von Optionen geben Sie den Parameter ein, gefolgt von einem Ausrufezeichen ( **!** ) in der Bearbeitungs Leiste.
+  > Sie können mehrere Optionen mit der **DateTimeFormat** -Enum verwenden. Zum Anzeigen einer Liste von Optionen geben Sie den Parameter ein, gefolgt von einem Punkt oder Punkt ( **.** ) in der Bearbeitungs Leiste oder in der Funktionsreferenz für den [ **Text** ](function-text.md).
 
 - Konvertieren Sie eine Datums-und Uhrzeit Zeichenfolge in das französische Gebiets Schema. Monat und Tag des Monats werden unterschiedlich interpretiert.
 
-    ```powerapps-comma
-    Text( DateTimeValue( Start.Text; "fr"); DateTimeFormat.LongDateTime )
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text, "fr"), DateTimeFormat.LongDateTime )
     ```
   
     Auf dem Gebiets Schema " **en** " ist die Bezeichnung **Montag, 10. November 2014 1:50:24 Uhr**.
 
 - Konvertieren Sie eine Datums-und Uhrzeit Zeichenfolge in das Gebiets Schema des Benutzers, und zeigen Sie das Ergebnis mit einer Sekundenbruchteile an.
 
-    ```powerapps-comma
-    Text( DateTimeValue( Start.Text ); "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text ), "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
     ```
   
     Auf dem Gebiets Schema " **en** " wird die Bezeichnung **Samstag, 11. Oktober, 2014 01:50:24.765 Uhr**angezeigt.
@@ -134,9 +136,9 @@ Wenn Sie **10/11/2014 1:50:24.765 pm** in ein Texteingabe-Steuerelement mit dem 
 
 Benennen Sie ein Texteingabe-Steuerelement **finishedat**, und legen Sie die [Text](../controls/properties-core.md) -Eigenschaft einer Bezeichnung auf diese Formel fest:
 
-```powerapps-comma
-If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ); 
-    "You made it!"; 
+```powerapps-dot
+If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ), 
+    "You made it!", 
     "Too late!"
 )
 ```

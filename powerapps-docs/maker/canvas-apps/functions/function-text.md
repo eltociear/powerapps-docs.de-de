@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9ebc28c72d1d25c4a6e85e25a14c8addaf457318
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: cc27232ea4a6c153b57ab5ce5f94a49f96ef5996
+ms.sourcegitcommit: 7d3caf698d367a56af9e16c43af8005adb9f87cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79212490"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80987210"
 ---
 # <a name="text-function-in-power-apps"></a>Funktion "Text" in powerapps
 Konvertiert einen beliebigen Wert und formatiert eine Zahl oder einen Datums-/Uhrzeitwert in eine Text Zeichenfolge.
@@ -34,21 +33,23 @@ Weitere Informationen finden Sie unter [Arbeiten mit Datums- und Uhrzeitangaben]
 
 Die **Text** -Funktion kann auch jeden Datentyp in eine Text Darstellung mit einem Standardformat konvertieren. Verwenden Sie diese Eigenschaft, um nicht-Text-Werte an textbasierte Funktionen wie z. b. [**len**](function-len.md), [**right**](function-left-mid-right.md)und [**IsMatch**](function-ismatch.md)zu übergeben.
 
-### <a name="predefined-datetime-formats"></a> Vordefinierte Datums-/Uhrzeitformate
+### <a name="predefined-datetime-formats"></a><a name="predefined-datetime-formats"></a> Vordefinierte Datums-/Uhrzeitformate
 
-| Vordefiniertes Format | Beschreibung |
-| --- | --- |
-| **DateTimeFormat.LongDate** |Vollständiges Jahr, Monat, Tag des Monats und Wochentag. Monatsnamen und Wochentage sind nicht abgekürzt. |
-| **DateTimeFormat.LongDateTime** |Vollständiges Jahr, Monat, Tag des Monats und Wochentag plus Stunde (12-Stunden-Format), Minuten, Sekunden und AM/PM-Angabe. Monatsnamen und Wochentage sind nicht abgekürzt. |
-| **DateTimeFormat.LongDateTime24** |Vollständiges Jahr, Monat, Tag des Monats und Wochentag plus Stunde (24-Stunden-Format), Minuten und Sekunden. Monatsnamen und Wochentage sind nicht abgekürzt. |
-| **DateTimeFormat.LongTime** |Stunde (12-Stunden-Format), Minuten, Sekunden und AM/PM-Angabe. Identisch mit ShortTime. |
-| **DateTimeFormat.LongTime24** |Stunde (24-Stunden-Format), Minuten, Sekunden. Identisch mit ShortTime24. |
-| **DateTimeFormat.ShortDate** |Vierstellige Jahresangabe mit zweistellig angegebenem Monat und Tag im Monat. |
-| **DateTimeFormat.ShortDateTime** |Vierstellige Jahresangabe mit zweistellig angegebenem Monat und Tag im Monat plus Stunde (12-Stunden-Format), Minuten, Sekunden und AM/PM-Angabe. |
-| **DateTimeFormat.ShortDateTime24** |Vierstellige Jahresangabe mit zweistellig angegebenem Monat und Tag im Monat plus Stunde (24-Stunden-Format), Minuten und Sekunden. |
-| **DateTimeFormat.ShortTime** |Stunde (12-Stunden-Format), Minuten, Sekunden und AM/PM-Angabe.  Identisch mit LongTime. |
-| **DateTimeFormat.ShortTime24** |Stunde (24-Stunden-Format), Minuten und Sekunden.  Identisch mit LongTime24. |
-| **DateTimeFormat.UTC** |Der Datums-/Uhrzeitwert wird basierend auf der Zeitzone des Benutzers in UTC konvertiert und gemäß dem ISO 8601-Standard formatiert. |
+In diesen Beispielen werden Datum und Uhrzeit in der Zeitzone UTC-7 Stunden Dienstag, 7. April, 2020 8:26:59.180 Uhr verwendet.
+ 
+| DateTimeFormat-Enumeration | Beschreibung | Beispiele (mit **en-US**) |
+| --- | --- | --- |
+| **LongDate** |Vierstellige Jahres Angabe, Monats Name, Tag des Monats und Wochentag. Die Namen des Monats und des Wochentags werden nicht abgekürzt. | "Dienstag, 7. April 2020" |
+| **LongDateTime** |Vierstellige Jahres Angabe, Monats Name, Tag des Monats und Wochentag Plus Stunde (12-Stunden-Format), Minuten, Sekunden und am/pm-Bezeichnung. Die Namen des Monats und des Wochentags werden nicht abgekürzt. | "Dienstag, 7. April, 2020 8:26:59 Uhr" |
+| **LongDateTime24** |Vierstellige Angabe für Jahr, Monat, Tag des Monats und Wochentag Plus Stunde (24-Stunden-Format), Minuten und Sekunden. Die Namen des Monats und des Wochentags werden nicht abgekürzt. | "Dienstag, 7. April, 2020 20:26:59" |
+| **Jährige** |Stunde (12-Stunden-Format), Minuten, Sekunden und AM/PM-Angabe.  | "8:26:59 Uhr" |
+| **LongTime24** |Stunde (24-Stunden-Format), Minuten, Sekunden.  | "20:26:59" | 
+| **SHORTDATE** |Vierstellige Jahres Angabe mit dem numerischen Monat und Tag des Monats. | "4/7/2020" | 
+| **Kurzdatetime** |Vierstellige Jahres Angabe mit einem numerischen Monat und Tag im Monat plus Stunde (12-Stunden-Takt), Minuten und am/pm-Bezeichnung. | "4/7/2020 8:26 Uhr" |
+| **ShortDateTime24** |Vierstellige Jahres Angabe mit einem numerischen Monat und Tag im Monat plus Stunde (24-Stunden-Takt) und Minuten. | "4/7/2020 20:26" |
+| **Kurzzeit** |Stunde (12-Stunden-Takt), Minuten und am/pm-Bezeichnung.   | "8:26 Uhr" |
+| **ShortTime24** |Stunde (24-Stunden-Takt) und Minuten.   | "20:26" |
+| **UTC** |Der Datums-/Uhrzeitwert wird basierend auf der Zeitzone des Benutzers in UTC konvertiert und gemäß dem ISO 8601-Standard formatiert. | "2020-04-08t03:26:59.180 z" |
 
 ### <a name="number-placeholders"></a>Zahlplatzhalter
 
@@ -57,7 +58,7 @@ Die **Text** -Funktion kann auch jeden Datentyp in eine Text Darstellung mit ein
 | **0** (*null*) |Zeigt nicht signifikante Nullen an, wenn eine Zahl weniger Stellen aufweist, als Nullen im Format festgelegt sind. Verwenden Sie beispielsweise das Format **#,00**, wenn Sie **8,9** im Format **8,90** anzeigen möchten. |
 | **#** |Folgt den gleichen Regeln wie **0** (null). **Text** gibt jedoch keine zusätzlichen Nullen zurück, wenn die Zahl weniger Stellen auf beiden Seiten des Dezimaltrennzeichens aufweist, als #-Symbole im Format vorhanden sind. Beispielsweise wird **8,9** angezeigt, wenn das benutzerdefinierte Format **#,##** und die zu formatierende Zahl **8,9** ist. |
 | **.** (*Punkt*) |Zeigt das Dezimaltrennzeichen in einer Zahl an. Hängt von der Sprache des benutzerdefinierten Formats ab. Weitere Informationen finden Sie unter [globale apps](#global-apps) . |
-| **.** (*Komma*) |Zeigt das Gruppierungstrennzeichen in einer Zahl an, häufig für Tausender verwendet. **Text** trennt Gruppen durch Punkte ab, wenn ein Format einen Punkt enthält, der von Zahlenzeichen (**#**) oder Nullen eingeschlossen ist. Hängt von der Sprache des benutzerdefinierten Formats ab. Weitere Informationen finden Sie unter [globale apps](#global-apps) . |
+| **.** (*Komma*) |Zeigt das Gruppierungstrennzeichen in einer Zahl an, häufig für Tausender verwendet. **Text** trennt Gruppen durch Punkte ab, wenn ein Format einen Punkt enthält, der von Zahlenzeichen ( **#** ) oder Nullen eingeschlossen ist. Hängt von der Sprache des benutzerdefinierten Formats ab. Weitere Informationen finden Sie unter [globale apps](#global-apps) . |
 
 Wenn eine Zahl mehr Stellen rechts vom Dezimaltrennzeichen aufweist, als Platzhalter im Format vorhanden sind, wird die Zahl zu der im Format definierten Anzahl Dezimalstellen gerundet. Wenn links vom Dezimaltrennzeichen mehr Stellen als Platzhalter vorhanden sind, werden die zusätzlichen Stellen angezeigt. Wenn das Format nur Zahlenzeichen (#) links vom Dezimaltrennzeichen aufweist, beginnen Zahlen kleiner als 1 mit dem Dezimaltrennzeichen (z. B. **,47**).
 
@@ -110,7 +111,7 @@ Sie können jedes dieser Zeichen in Ihre Formatzeichenfolge aufnehmen.  Sie werd
 ## <a name="global-apps"></a>Globale Anwendungen
 Die Funktion **Text** ist global kompatibel. Sie „weiß“ für eine Vielzahl von Sprachen, wie Datumswerte, Uhrzeiten, Währungen und Zahlen ordnungsgemäß geschrieben werden. Für ihren Job benötigt sie zwei Informationen :
 
-* **Die Sprache des benutzerdefinierten Formats:** Wie soll ein benutzerdefiniertes Format für Ersteller interpretiert werden? Die Trennzeichen (**.** und **,**) haben in verschiedenen Sprachen verschiedene Bedeutungen. Wenn Sie ein benutzerdefiniertes Format angeben, können Sie einen sprach Platzhalter einschließen oder den Standardwert verwenden, der die Sprache angibt, in der das Gerät festgelegt ist. Noch einfacher können Sie eines der [vordefinierten Datums-/Uhrzeitformate](#predefined-datetime-formats)verwenden, die sprach agnostisch sind.
+* **Die Sprache des benutzerdefinierten Formats:** Wie soll ein benutzerdefiniertes Format für Ersteller interpretiert werden? Die Trennzeichen ( **.** und **,** ) haben in verschiedenen Sprachen verschiedene Bedeutungen. Wenn Sie ein benutzerdefiniertes Format angeben, können Sie einen sprach Platzhalter einschließen oder den Standardwert verwenden, der die Sprache angibt, in der das Gerät festgelegt ist. Noch einfacher können Sie eines der [vordefinierten Datums-/Uhrzeitformate](#predefined-datetime-formats)verwenden, die sprach agnostisch sind.
 * **Die Sprache des Ergebnisses:** In welcher Sprache soll das Ergebnis der Funktion angezeigt werden? Namen von Monaten und Wochentagen müssen sich in der entsprechenden Sprache für den Benutzer der APP befinden, den Sie durch Hinzufügen eines dritten optionalen Arguments zur **Text** Funktion angeben können. 
 
 Für beide müssen Sie die Sprache mithilfe eines [sprach Tags](function-language.md#language-tags)angeben. Wenn Sie die Liste der unterstützten Sprachen anzeigen möchten, geben Sie **Text (1234, "",)** in die Bearbeitungs Leiste oder die Registerkarte " **erweitert** " im rechten Bereich ein, und Scrollen Sie dann durch die Liste der Gebiets Schemas, die für das dritte Argument vorgeschlagen werden.
@@ -137,13 +138,13 @@ Das Ergebnis von **Text** umfasst übersetzte Zeichen folgen für Monate, Wochen
 Standardmäßig verwendet **Text** die Sprache des Benutzers, der die Anwendung ausführt. Die Funktion **Language** gibt das Sprachkennzeichen für den aktuellen Benutzer zurück. Sie können diesen Standardwert überschreiben, indem Sie ein Sprachtag für das dritte Argument für **Text**angeben.
 
 ## <a name="syntax"></a>Syntax
-**Text**(" *numordatetime*"; " *datetimeformaterum* " [; *resultlanguagetag* ])
+**Text**(" *numordatetime*", " *datetimeformaterum* " [, *resultlanguagetag* ])
 
 * *Numordatetime* : erforderlich. Die zu formatierende Zahl bzw. der zu formatierende Datums-/Uhrzeitwert.
 * *DateTimeFormat*: erforderlich.  Ein Mitglied der **DateTimeFormat**-Enumeration.
 * *ResultLanguageTag*: optional. Das Sprachkennzeichen, das für den Ergebnistext verwendet werden soll. Standardmäßig wird die Sprache des aktuellen Benutzers verwendet.
 
-**Text**( *databordatetime*; *CustomFormat* [; *resultlanguagetag* ])
+**Text**( *databordatetime*, *CustomFormat* [, *resultlanguagetag* ])
 
 * *Zahl*: erforderlich. Die zu formatierende Zahl bzw. der zu formatierende Datums-/Uhrzeitwert.
 * *CustomFormat*: erforderlich. Mindestens ein in doppelte Anführungszeichen gesetzter Platzhalter.
@@ -163,8 +164,8 @@ Sofern nicht anders angegeben, befindet sich der Benutzer, der diese Formeln dur
 | **Text (&nbsp;1234.59,&nbsp;"###, #"&nbsp;)** |Formatiert die Zahl mit einer Dezimalstelle. |"1234,6" |
 | **Text (&nbsp;8,9&nbsp;"#,000"&nbsp;)** |Füllt die Nachkommastellen der Zahl mit nachfolgenden Nullen auf, falls erforderlich. |"8,900" |
 | **Text (&nbsp;0,631,&nbsp;"0,#"&nbsp;)** |Füllt den ganzzahligen Teil der Zahl mit führenden Nullen auf, falls erforderlich. |"0,6" |
-| **Text(&nbsp;12;;&nbsp;"#,0#"&nbsp;)**<br>**Text(&nbsp;1234;568;;&nbsp;"#,0#"&nbsp;)** |Füllt die Nachkommastellen der Zahl mit Nullen für eine Dezimalstelle auf und schließt eine zweite Dezimalstelle ein, wenn sie angegeben wird. |"12,0"<br>"1234,57" |
-| **Text(&nbsp;12000;;&nbsp;"$ #.###"&nbsp;)**<br>**Text(&nbsp;1200000;;&nbsp;"$&nbsp;#.###"&nbsp;)** |Fügt nach jeweils drei Stellen ein Tausendertrennzeichen ein und schließt ein Währungssymbol mit ein. |"$&nbsp;12.000"<br>"$&nbsp;1.200.000" |
+| **Text(&nbsp;12;&nbsp;"#,0#"&nbsp;)**<br>**Text(&nbsp;1234,568;&nbsp;"#,0#"&nbsp;)** |Füllt die Nachkommastellen der Zahl mit Nullen für eine Dezimalstelle auf und schließt eine zweite Dezimalstelle ein, wenn sie angegeben wird. |"12,0"<br>"1234,57" |
+| **Text(&nbsp;12000;&nbsp;"$ #.###"&nbsp;)**<br>**Text(&nbsp;1200000;&nbsp;"$&nbsp;#.###"&nbsp;)** |Fügt nach jeweils drei Stellen ein Tausendertrennzeichen ein und schließt ein Währungssymbol mit ein. |"$&nbsp;12.000"<br>"$&nbsp;1.200.000" |
 
 ### <a name="datetime"></a>Datum/Uhrzeit
 * Um **2:37:47 PM** am **Montag, 23. November 2015**
@@ -172,21 +173,21 @@ Sofern nicht anders angegeben, befindet sich der Benutzer, der diese Formeln dur
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text( Now();; DateTimeFormat.LongDate )** |Formatiert als lange Datumszeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers. |"Montag, 23 November 2015" |
-| **Text( Now();; DateTimeFormat.LongDateTime )** |Formatiert als lange Datums- und Uhrzeitzeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers und legt eine 12-Stunden-Uhr zugrunde. |"Montag, 23. November 2015 2:37:47 PM" |
-| **Text( Now();; DateTimeFormat.LongTime24 )** |Formatiert als lange Uhrzeitzeichenfolge und legt eine 24-Stunden-Uhr zugrunde. |"14:37:47" |
-| **Text( Now();; DateTimeFormat.ShortDate )** |Formatiert als kurze Datumszeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers. |"23.11.2015" |
-| **Text( Now();; "d-mmm-yy" )** |Formate mit Platzhalterzeichen: <ul><li>**d** für eine einstellige oder zweistellige Angabe des Tags im Monat<li>**-** als literales Zeichen, das in das Ergebnis kopiert wird<li>**mmm** für eine aus drei Buchstaben bestehende Abkürzung des Monats<li>**-** als weiteres literales Zeichen, das in das Ergebnis kopiert wird<li>**yy** für eine zweistellige Kurzform für das Jahr</ul> |"23. Nov. 15" |
+| **Text( Now(); DateTimeFormat.LongDate )** |Formatiert als lange Datumszeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers. |"Montag, 23 November 2015" |
+| **Text( Now(); DateTimeFormat.LongDateTime )** |Formatiert als lange Datums- und Uhrzeitzeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers und legt eine 12-Stunden-Uhr zugrunde. |"Montag, 23. November 2015 2:37:47 PM" |
+| **Text( Now(); DateTimeFormat.LongTime24 )** |Formatiert als lange Uhrzeitzeichenfolge und legt eine 24-Stunden-Uhr zugrunde. |"14:37:47" |
+| **Text( Now(); DateTimeFormat.ShortDate )** |Formatiert als kurze Datumszeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers. |"23.11.2015" |
+| **Text( Now(); "d-mmm-yy" )** |Formate mit Platzhalterzeichen: <ul><li>**d** für eine einstellige oder zweistellige Angabe des Tags im Monat<li>**-** als literales Zeichen, das in das Ergebnis kopiert wird<li>**mmm** für eine aus drei Buchstaben bestehende Abkürzung des Monats<li>**-** als weiteres literales Zeichen, das in das Ergebnis kopiert wird<li>**yy** für eine zweistellige Kurzform für das Jahr</ul> |"23. Nov. 15" |
 | **Text (1448318857 * 1000, "MMM". DD, JJJJ (hh: mm: SS am/pm))** | Zeigt einen UNIX-Datums-/Uhrzeitwert in einem von menschenlesbaren Format an, wenn Sie den Quellwert mit 1.000 multiplizieren. | "Nov. 23, 2015 (02:47:37 Uhr)" |
 
 ### <a name="global-apps"></a>Globale Anwendungen
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text (1234567,89; "[$-fr-FR] # # # #, # # &euro;"; "fr-FR")** | Zeigt ein Leerzeichen als Gruppierungs Trennzeichen, das Komma als Dezimaltrennzeichen und **&euro;** als Währungssymbol an. |"1&nbsp;234&nbsp;567, 89 &euro;" |
-| **Text (1234567; 89;; "[$-fr-FR] # # # #, # # &euro;")** | Wenn die Quelldaten dem französischen Französisch entsprechen und ein Komma als Dezimaltrennzeichen verwendet wird, müssen Sie das Gebiets Schema in Französisch ändern und die Argumente mit einem Semikolon anstelle eines Kommas trennen, um das gleiche Ergebnis wie oben zu erhalten. |"1&nbsp;234&nbsp;567, 89 &euro;" |
-| **Text( Date(2016;1;31); "dddd mmmm d" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache des aktuellen Benutzers zurück. Da keiner der Platzhalter sprachabhängig ist, gibt es keine Notwendigkeit für ein Textformat-Sprachkennzeichen. |"Samstag&nbsp;Januar&nbsp;31" |
-| **Text( Date(2016;1;31); "dddd mmmm d"; "es-ES" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache „es-ES“ zurück. |"Domingo&nbsp;enero&nbsp;31" |
+| **Text (1234567.89, "[$-fr-FR] # # # #, # # &euro;", "fr-FR")** | Zeigt ein Leerzeichen als Gruppierungs Trennzeichen, das Komma als Dezimaltrennzeichen und **&euro;** als Währungssymbol an. |"1&nbsp;234&nbsp;567, 89 &euro;" |
+| **Text (1234567, 89; "[$-fr-FR] # # # #, # # &euro;")** | Wenn die Quelldaten dem französischen Französisch entsprechen und ein Komma als Dezimaltrennzeichen verwendet wird, müssen Sie das Gebiets Schema in Französisch ändern und die Argumente mit einem Semikolon anstelle eines Kommas trennen, um das gleiche Ergebnis wie oben zu erhalten. |"1&nbsp;234&nbsp;567, 89 &euro;" |
+| **Text( Date(2016,1,31), "dddd mmmm d" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache des aktuellen Benutzers zurück. Da keiner der Platzhalter sprachabhängig ist, gibt es keine Notwendigkeit für ein Textformat-Sprachkennzeichen. |"Samstag&nbsp;Januar&nbsp;31" |
+| **Text( Date(2016,1,31), "dddd mmmm d", "es-ES" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache „es-ES“ zurück. |"Domingo&nbsp;enero&nbsp;31" |
 
 ### <a name="converting-values-to-text"></a>Werte werden in Text umgerechnet
 
