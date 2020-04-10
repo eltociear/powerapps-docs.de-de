@@ -1,23 +1,21 @@
 ---
 title: Einfügen einer E-Mail-Vorlage beim Verfassen einer E-Mail in modellgesteuerten Apps | Microsoft-Dokumentation
 description: Einfügen einer vorformatierten E-Mail-Nachricht beim Verfassen einer E-Mail
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365-sales
 ms.topic: article
 author: sbmjais
 ms.author: shjais
 manager: shujoshi
-ms.openlocfilehash: abbef00f3b93809dadf617c4180b52a1372e625a
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 8f5b607375cccd03b3bcea2bd5d50664e7033ae4
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051842"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81007983"
 ---
-# <a name="preview-insert-an-email-template"></a>Vorschauversion: Hinzufügen einer E-Mail-Vorlage
-
-Das Einfügen einer E-Mail-Vorlage ist ein Early-Access-Feature. Sie können diese Features frühzeitig in Ihrer Umgebung aktivieren. So können Sie diese testen und dann in Ihre Umgebungen einführen. Weitere Informationen zur Aktivierung dieser Features finden Sie unter [Aktivieren von Early-Access-Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+# <a name="insert-an-email-template"></a>Hinzufügen einer E-Mail-Vorlage
 
 Zum schnellen Erstellen und Senden von E-Mails können Sie eine E-Mail-Vorlage bzw. eine vorformatierte E-Mail-Nachricht verwenden. Sie können die Vorlage einfügen, während Sie eine E-Mail verfassen. Wählen Sie hierzu auf der Befehlsleiste **Vorlage einfügen** aus. Die Liste der verfügbaren Vorlagen wird im Fenster **E-Mail-Vorlagen** angezeigt. Im Abschnitt **Zuletzt verwendet** werden die vier von Ihnen zuletzt verwendeten Vorlagen angezeigt. Im Abschnitt **Alle Vorlagen** wird eine Liste aller standardmäßig verfügbaren E-Mail-Vorlagen (globale und entitätsspezifische) in alphabetischer Reihenfolge angezeigt. Globale Vorlagen werden als Typ „Benutzer“ angezeigt. Wenn Sie eine benutzerdefinierte E-Mail-Vorlage erstellt haben, ist sie hier ebenfalls verfügbar. Weitere Informationen zum Erstellen einer benutzerdefinierten E-Mail-Vorlage finden Sie unter [Vorlagen für E-Mails erstellen](https://docs.microsoft.com/power-platform/admin/create-templates-email).
 

@@ -1,23 +1,21 @@
 ---
 title: 'Vorschau: Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion in modellgesteuerten Apps | Microsoft-Dokumentation'
 description: Hier erfahren Sie, wie Sie die erweiterte E-Mail-Funktion verwenden, um eine E-Mail zu erstellen, ohne Ihren aktuellen Arbeitskontext zu verlassen.
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365-sales
 ms.topic: article
 author: shubhadaj
 ms.author: shujoshi
 manager: annbe
-ms.openlocfilehash: 546f94f67608ab735d2c2eb6bb39f105335549f7
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: bc4b7023e56ae75b34f797089a812ab4ea1f8d84
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282586"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81007937"
 ---
-# <a name="preview-send-email-using-the-enhanced-email-experience"></a>Vorschau: Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion
-
-Das Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion ist ein Early-Access-Feature. Diese Features können frühzeitig in Ihrer Umgebung aktiviert werden, So können Sie diese testen und dann in Ihre Umgebungen einführen. Weitere Informationen zur Aktivierung dieser Features finden Sie unter [Aktivieren von Early-Access-Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+# <a name="send-email-using-the-enhanced-email-experience"></a>Senden von E-Mails mithilfe der erweiterten E-Mail-Funktion
 
 Mithilfe der erweiterten E-Mail-Funktion in modellgesteuerten Apps können Sie eine E-Mail erstellen, ohne den Datensatz zu verlassen, an dem Sie gerade arbeiten. Die erweiterte E-Mail-Funktion ermöglicht Folgendes:
 
@@ -58,7 +56,7 @@ Gehen Sie wie folgt vor, um eine E-Mail mithilfe der erweiterten Funktion zu ers
 > - Die erweiterte E-Mail-Funktion steht nur für E-Mail-Aktivitäten zur Verfügung, die im Abschnitt **Zeitachse** einer modellgesteuerten App erstellt werden. 
 > - Das Popupfenster der erweiterten E-Mail-Funktion wird nur geöffnet, wenn die Höhe und Breite Ihrer Bildschirmgröße mindestens 400 x 650 Pixel beträgt. Andernfalls wird anstelle der erweiterten E-Mail-Funktion das Standardformular verwendet. 
 
-### <a name="see-also"></a>Weitere Informationen
+### <a name="see-also"></a>Siehe auch
 
 [Einrichten von erweiterten E-Mail-Funktionen](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
 [Vorschau: Einfügen einer E-Mail-Vorlage](insert-email-template.md)

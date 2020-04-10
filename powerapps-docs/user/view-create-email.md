@@ -1,23 +1,21 @@
 ---
 title: Anzeigen und Erstellen von E-Mails in modellgesteuerten Apps | Microsoft-Dokumentation
 description: Anzeigen und Erstellen von E-Mails bei Verwendung einer modellgesteuerten App.
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365
 ms.topic: article
 author: lalexms
 ms.author: lalexms
 manager: shujoshi
-ms.openlocfilehash: 7d4930b03f175133a769226a407436d37f698633
-ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
+ms.openlocfilehash: 1ec0a3f6903bb5bcccf429e6f11941206a5e4f72
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431737"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81008006"
 ---
-# <a name="preview-view-and-create-email-through-the-activities-grid"></a>Vorschauversion: Anzeigen und Erstellen von E-Mails über das Aktivitätsraster
-
-Das Anzeigen und Erstellen von E-Mails über das Aktivitätsraster ist ein Early-Access-Feature. Sie können diese Features frühzeitig in Ihrer Umgebung aktivieren. So können Sie diese testen und dann in Ihre Umgebungen einführen. Weitere Informationen zur Aktivierung dieser Features finden Sie unter [Aktivieren von Early-Access-Updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+# <a name="view-and-create-email-through-the-activities-grid"></a>Anzeigen und Erstellen von E-Mails über das Aktivitätsraster
 
 Mit den modellgesteuerten Dynamics 365-Apps können Sie per E-Mail mit Kunden interagieren. Die E-Mail-Funktionalität bietet Ihnen folgende Möglichkeiten:
 
