@@ -7,24 +7,23 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3275c93aea5492384727701d1074982a345fae67
-ms.sourcegitcommit: fa88889cd109651d403ab03287b7f0521bb90e02
+ms.openlocfilehash: 4d241eb8ce8ec9f6d0fa17ac802aeddbd142de25
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324940"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223355"
 ---
 # <a name="date-picker-control-in-power-apps"></a>Steuerelement für die Datumsauswahl in Power apps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen ein Datum angeben können.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Beschreibung
 Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](control-text-input.md)** -Steuerelements verwenden, geben Benutzer das Datum in jedem Fall im richtigen Format an.
 
 ## <a name="key-properties"></a>Haupteigenschaften
@@ -86,13 +85,17 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
-**[PaddingBottom](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem unteren Rand des Steuerelements.
+**[OnChange](properties-core.md)** – gibt an, wie die APP reagiert, wenn der Benutzer den Wert eines Steuer Elements ändert. 
+
+Unterschied zwischen **OnChange** und **onselect**: onselect-und OnChange-Triggern für die gleiche Benutzeraktion, wenn der Benutzer das *Klicken* auf die Änderung bewirkt. In diesem Fall löst onselect Trigger **vor** OnChange aus.
+
+**[PaddingBottom](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
 
 **[PaddingLeft](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
 
 **[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem oberen Rand des Steuerelements.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -118,13 +121,13 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein **[Label](control-text-box.md)** -Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](properties-core.md)** -Eigenschaft auf diese Formel fest:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     Benötigen Sie weitere Informationen zur **[DateDiff](../functions/function-dateadd-datediff.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 3. Drücken Sie F5, legen Sie für **Deadline** ein Datum fest, und klicken oder tippen Sie dann auf **OK**.
 
     Im **[Label](control-text-box.md)** -Steuerelement (Bezeichnung) wird angezeigt, wie viele Tage zwischen dem aktuellen und dem gewählten Datum verbleiben.
-4. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+4. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
@@ -136,7 +139,7 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
 
 > [!TIP]
 > Wenn der Kalender geöffnet ist, klicken Sie auf der **Seite nach oben** und Bild- **ab** , um zwischen Monaten und **UMSCHALT +** Bild-auf und **UMSCHALT + Seite nach unten** zu navigieren und zwischen Jahren zu navigieren.

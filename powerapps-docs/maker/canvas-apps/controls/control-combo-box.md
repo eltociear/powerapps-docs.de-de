@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 09/13/2017
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68fad4cb2c73bcaeb448212012133c171d682cb4
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9193b3d4ba16b5dca10a8dab471eb731f07d56bf
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74722999"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223378"
 ---
 # <a name="combo-box-control-in-power-apps"></a>Kombinations Feld-Steuerelement in Power apps
 Ein Steuerelement, das es Benutzern ermöglicht, unter Optionen eine Auswahl zu treffen.  Unterstützt die Suche und Mehrfachauswahl.
@@ -29,6 +29,9 @@ Mit einem **Kombinationsfeld**-Steuerelement können Sie Elemente suchen, die Si
 Der Einfach- oder Mehrfachauswahlmodus wird mit der SelectMultiple-Eigenschaft konfiguriert.
 
 Wenn Sie auszuwählende Elemente suchen, können Sie für jedes Element festlegen, dass ein einzelner Datenwert, zwei Werte oder ein Bild und zwei Werte (Person) angezeigt werden. Hierzu ändern Sie die Einstellung „Layout“ im Bereich „Daten“.
+
+> [!NOTE]
+> Wenn Sie nach Elementen mit *Zahlen*suchen möchten, konvertieren Sie Zahlen in Text mit der [Text ()](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-text) -Funktion. Beispielsweise *Text (12345)* .
 
 ## <a name="people-picker"></a>Personenauswahl
 Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wählen Sie im Datenbereich in den Layouteinstellungen die Vorlage **Person** aus, und konfigurieren Sie die folgenden Dateneigenschaften, die für die Person angezeigt werden sollen.
@@ -102,7 +105,7 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **ChevronFill** und **ChevronBackground**
 * **ChevronHoverFill** und **ChevronHoverBackground**
 * **SelectionColor** und **SelectionFill**

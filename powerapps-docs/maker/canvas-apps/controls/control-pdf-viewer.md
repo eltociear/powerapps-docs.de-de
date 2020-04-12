@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df568e6a61ca43f6c98ee80c33ed9efe4148de9e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a8136fc1ce04ed696aeb68af7139d1b538dd879e
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729080"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223332"
 ---
 # <a name="pdf-viewer-control-experimental-in-power-apps"></a>PDF-Viewer-Steuerelement (experimentell) in powerapps
 Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
@@ -26,7 +26,7 @@ Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
 ## <a name="description"></a>Beschreibung
 Zeigen Sie Text, Grafiken und anderen Inhalt in einer PDF-Datei an, indem Sie diese Art von Steuerelement hinzufügen und seine **Document**-Eigenschaft auf die URL der Datei festlegen, die Sie anzeigen möchten. Verwenden Sie dabei doppelte Anführungszeichen.
 
-## <a name="limitations"></a>Einschränken
+## <a name="limitations"></a>Einschränkungen
 1. Die Sicherheitsarchitektur von powerapps erfordert, dass der PDF-Viewer nur HTTPS-Links, nicht aber http unterstützt.  
 
 2. Die **Document** -Eigenschaft muss direkt mit der PDF-Datei verknüpft werden. Server Umleitungen oder HTML-Ansichten des Dokuments werden nicht unterstützt.
@@ -36,8 +36,6 @@ Zeigen Sie Text, Grafiken und anderen Inhalt in einer PDF-Datei an, indem Sie di
 4. Möglicherweise sind Sie nicht in der Lage, ein PDF-Dokument in Ihrer APP anzuzeigen, wenn sich das Dokument auf einem Server befindet, der restriktive cors-Einstellungen (Cross-Origin Resource Sharing) aufweist. Um dieses Problem zu beheben, muss der Server, der PDF-Dokumente hostet, Ursprungs übergreifende Anforderungen von powerapps.com zulassen.
 
 App-Benutzer können diese Einschränkungen umgehen, indem Sie PDF-Dokumente in einem externen Browser öffnen, wie Sie dazu aufgefordert werden, wenn das Steuerelement ein Dokument nicht öffnen kann. Diese Option ist auch im Systemmenü für alle externen Dokumente verfügbar.
-
-App-Ersteller können diese Einschränkungen umgehen, indem Sie PDF-Dokumente als Medienressourcen in die APP einschließen. Auf diese Weise kann das PDF-Viewer-Steuerelement das Dokument immer anzeigen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Document**: gibt die, in doppelten Anführungszeichen gesetzte, URL der PDF-Datei an.
@@ -81,7 +79,7 @@ App-Ersteller können diese Einschränkungen umgehen, indem Sie PDF-Dokumente al
 
 **[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem oberen Rand des Steuerelements.
 
 **Page**: gibt die Nummer der Seite an, die Sie anzeigen möchten.
 
@@ -89,9 +87,9 @@ App-Ersteller können diese Einschränkungen umgehen, indem Sie PDF-Dokumente al
 
 **[PressedBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**ShowControls**: Gibt beispielsweise an, ob für einen Audio- oder Videoplayer eine Schaltfläche für die Wiedergabe und ein Lautstärkeregler und für ein Stift-Steuerelement Symbole zum Zeichnen oder Löschen angezeigt werden.
+**ShowControls** – Gibt an, ob ein Audio- oder Videoplayer, z.B. eine Schaltfläche für Wiedergabe und ein Lautstärkeregler, und ein Stift-Steuerelement angezeigt wird, z.B. Symbole zum Zeichnen oder Löschen.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -101,7 +99,7 @@ App-Ersteller können diese Einschränkungen umgehen, indem Sie PDF-Dokumente al
 
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
-**Zoom**: Der Prozentsatz, mit dem ein Bild einer Kamera vergrößert wird (oder die Ansicht einer Datei in einem PDF-Viewer).
+**Zoom**– Der Prozentsatz, mit dem ein Bild einer Kamera oder die Ansicht einer Datei in einem PDF-Viewer vergrößert wird.
 
 ## <a name="example"></a>Beispiel
 
@@ -111,7 +109,7 @@ Fügen Sie ein Steuerelement des Typs **PDF-Viewer** hinzu, und legen Sie seine 
 
 Das Steuerelement zeigt die PDF-Datei.
 
-Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 
