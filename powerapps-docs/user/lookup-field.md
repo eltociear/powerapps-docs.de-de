@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91f027af2f7d8b10fcfd15380fae46f62bc5603b
-ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
+ms.openlocfilehash: bdb1b0bf1a500087f11804f6da55d1c3abe2eaf3
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80615411"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871348"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Verwenden des Nachschlagefelds für einen Datensatz
 
@@ -68,7 +68,7 @@ Sie können das Nachschlagefeld durchsuchen, indem Sie auf das Nachschlagesymbol
 In der Liste der zuletzt verwendeten Datensätze werden Bilder angezeigt, damit Sie die Datensatztypen unterscheiden können.
 
 >[!NOTE] 
->Zuletzt verwendete Datensätze werden nicht nach Suchbegriff oder ausgewählter Ansicht gefiltert.
+>Zuletzt verwendete Datensätze werden nicht nach Suchbegriff, ausgewählter Ansicht oder zugehörigen Datensätzen gefiltert.
 
   > [!div class="mx-imgBorder"]
   > ![Nachschlagefeld mit Bild](media/Lookup_03-MRU_Entity_Images_56[1].png "Nachschlagefeld mit Bild")  

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5523ef67ed6912f7eae36228884b0c9a300d0785
-ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
+ms.openlocfilehash: fbd6233eb775fb7f1c48ec6cc05006ac0237f72d
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80530007"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80645573"
 ---
 # <a name="run-canvas-apps-and-model-driven-apps-on-a-mobile-device"></a>Ausführen von Canvas- und modellgesteuerten Apps auf einem mobilen Gerät
 
@@ -155,8 +155,7 @@ Klicken Sie auf „Siteübersicht“ ![Symbol „Siteübersicht“](media/pa_mo
 
 Wir arbeiten noch an bekannten Problemen und veröffentlichen im Laufe der Zeit entsprechende Fehlerbehebungen. Sorgen Sie dafür, immer manuell auf den neuesten Vorschaubuild zu aktualisieren, sobald dieser verfügbar ist. 
 
-Zu den bekannten Problemen gehören:
+Bekannte Probleme:
 
-- In der App-Liste werden keine Apps angezeigt, wenn Sie die Power Apps-App im Offlinemodus öffnen.
 - Symbole in modellgesteuerten Apps werden manchmal nicht angezeigt.
 

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 03/12/2020
+ms.date: 04/07/2020
 ms.author: mkaur
 ms.custom: ''
 ms.reviewer: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 84fe0685f9a128fb0cbbeadfbea01aceaa86cb19
-ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
+ms.openlocfilehash: 1668b6a10ba651fd7f4986fcd1f83357d83b79bc
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80530421"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871456"
 ---
 # <a name="user-guide-for-model-driven-apps-running-on-the-power-apps-mobile-app"></a>Benutzerhandbuch für in der mobilen Power Apps-App ausgeführte modellgesteuerte Apps
 
@@ -36,27 +36,28 @@ Verwenden Sie die mobile Power Apps-App, um modellgesteuerte Apps auf Ihrem mobi
 
 Das Verwenden der mobilen Power Apps-Apps ist einfach und intuitiv. Auf der folgenden Abbildung werden die primären Navigationselemente auf dem Startbildschirm veranschaulicht. 
 
-![Navigationssteuerelemente, erweiterte Ansicht](media/pa_mobile_main_nav_android.png "Navigationssteuerelemente, erweiterte Ansicht")
+![Navigationssteuerelemente, erweiterte Ansicht](media/home_screen_iphone.png "Navigationssteuerelemente, erweiterte Ansicht")
 
 Legende:
 
 1. **Siteübersicht:** Öffnen Sie das Menü, und wechseln Sie z. B. zwischen Apps, rufen Sie häufig und vor Kurzem verwendete Datensätze auf, oder greifen Sie auf Einstellungen zu.
 2. **Suchen**: Suchen Sie nach Apps in Common Data Service.
 3. **Schnelles Erstellen:** Wenn Sie einen neuen Datensatz erstellen, können Sie ohne Umschweife nahezu alle Arten von Informationen in das System eingeben.
-4. **Globale Befehle:** Greifen Sie auf globale Befehle zu, die von Ihrem Administrator angepasst wurden.
-5. **Mehr:** Greifen Sie auf weitere Befehle für die Datensätze zu, mit denen Sie arbeiten, z. B. Sortieren, Suchen, Löschen und Aktualisieren.<!--There really are "more"? Or can you end the list at "refresh"?-->
-6. **Datensätze sortieren:** Sortieren Sie Datensätze, und zeigen Sie sie in alphabetischer Reihenfolge an.
+4. **Beziehungsassistent**: Verwenden Sie den Assistenten, um tägliche Aktionen und Kommunikationen zu überwachen und zu verfolgen. Er erleichtert Ihnen mithilfe von Erkenntniskarten, die in der gesamten App an exponierter Stelle angezeigt werden und maßgeschneiderte und umsetzbare Erkenntnisse liefern, den Überblick über Ihren Tag zu behalten.
 
 ## <a name="site-map"></a>Siteübersicht 
 
 Klicken Sie auf dem Startbildschirm auf die Siteübersicht ![Symbol „Siteübersicht“](media/pa_mobile_sitemap_icon.png "Symbol „Siteübersicht“"), um auf Entitäten, häufig oder zuletzt verwendete Datensätze, andere Apps und Einstellungen zuzugreifen.
 
+ 
    > [!div class="mx-imgBorder"]
-   > ![Anzeige „Siteübersicht“](media/pa_mobile_site_map.gif "Anzeige „Siteübersicht“")
+   > ![Anzeige „Siteübersicht“](media/go_to_sitemap_iphone.gif "Diese Abbildung zeigt, wie Sie zum Bildschirm mit der Siteübersicht gelangen.")
+   
+ *Aktualisieren Sie die Seite, um die GIF-Aktion neu zu starten*.
 
 Auf der folgenden Abbildung werden die primären Navigationselemente auf der Anzeige „Siteübersicht“ veranschaulicht. 
 
-![Anzeige „Siteübersicht“](media/pa_mobile_sitemap_android.png "Anzeige „Siteübersicht“")
+![Anzeige „Siteübersicht“](media/site_map_iphone.png "Bildschirm „Siteübersicht“")
 
 Legende
 
@@ -80,8 +81,11 @@ Legende
 
 3. Klicken Sie auf das ![Symbol „Zurück“](media/mobile_go_back_icon.png "Symbol „Zurück“"), und klicken Sie dann auf **Angeheftet** ![Symbol für angeheftete Favoriten](media/mobile_pinned_favs_icon.png "Symbol für angeheftete Favoriten"), um die neu angehefteten Datensätze anzuzeigen.
 
+
    > [!div class="mx-imgBorder"]
-   > ![Anheften eines Datensatzes als Favorit](media/pin_favs.gif "Anheften eines Datensatzes als Favorit")
+   > ![Anheften eines Datensatzes als Favorit](media/pin_favs.gif "Diese Abbildung zeigt, wie häufig verwendete Datensätze angeheftet werden.")
+   
+*Aktualisieren Sie die Seite, um die GIF-Aktion neu zu starten*.
 
 ### <a name="unpin-a-record"></a>Loslösen eines Datensatzes
 
@@ -89,15 +93,21 @@ Legende
 
 2. Klicken Sie auf das Symbol zum Loslösen des Datensatzes ![Symbol für das Loslösen des Datensatzes](media/pa_mobile_remove_pin_icon.png "Symbol für das Loslösen eines Datensatzes") neben einem Datensatz, um ihn aus den Favoriten (angeheftete Datensätze) zu entfernen.
 
+
    > [!div class="mx-imgBorder"]
-   > ![Loslösen eines Datensatzes](media/unpin_favs.gif "Loslösen eines Datensatzes")
+   > ![Loslösen eines Datensatzes](media/unpin_favs.gif "Diese Abbildung veranschaulicht, wie ein Datensatz losgelöst wird.")
+   
+*Aktualisieren Sie die Seite, um die GIF-Aktion neu zu starten*.
 
 ## <a name="change-views"></a>Ändern von Ansichten
 
 - Klicken Sie auf dem Startbildschirm auf den Abwärtspfeil ![Symbol „Ansicht ändern“](media/mobile_view_selector_icon.png "Symbol für das Ändern einer Ansicht") neben der aktuellen Ansicht, und wählen Sie dann eine neue Ansicht aus.
 
+
    > [!div class="mx-imgBorder"]
-   > ![Ändern von Ansichten](media/pa_mobile_change_view.gif "Ändern von Ansichten")
+   > ![Ändern von Ansichten](media/change_views_iphone.gif "In dieser Abbildung wird gezeigt, wie eine andere Ansicht ausgewählt wird.")
+
+*Aktualisieren Sie die Seite, um die GIF-Aktion neu zu starten*.
 
 ## <a name="add-a-record-quickly"></a>Schnelles Hinzufügen eines Datensatzes
 
@@ -106,22 +116,28 @@ Legende
 3. Nachdem der Datensatz erstellt wurde, können Sie sich den neuen Datensatz ansehen. 
 
    > [!div class="mx-imgBorder"]
-   > ![Erstellen eines Datensatzes](media/pamobile_add_record.gif "Erstellen eines Datensatzes")
+   > ![Erstellen eines Datensatzes](media/pamobile_add_record.gif "Diese Abbildung veranschaulicht, wie ein neuer Datensatz erstellt wird.")
+
+*Aktualisieren Sie die Seite, um die GIF-Aktion neu zu starten*.
 
 -  Wenn Sie den Datensatz, den Sie erstellt haben, speichern und öffnen möchten, klicken Sie auf **Mehr** ![Symbol „Weitere Befehle“](media/pa_mobile_more_commands_icon.png "Symbol für weitere Befehle"), und klicken Sie dann auf **Speichern und öffnen**.
 
 - Wenn Sie den Datensatz, den Sie erstellt haben, speichern und einen weiteren erstellen möchten, klicken Sie auf **Mehr** ![Symbol „Weitere Befehle“](media/pa_mobile_more_commands_icon.png "Symbol für weitere Befehle"), und klicken Sie dann auf **Save and Create new** (Speichern und neu erstellen).
 
    > [!div class="mx-imgBorder"]
-   > ![Erstellen eines Datensatzes](media/pa_mobile_save_create_new.gif "Erstellen eines Datensatzes")
+   > ![Erstellen eines Datensatzes](media/pa_mobile_save_create_new.gif "Diese Abbildung zeigt, wie ein Datensatz gespeichert und geöffnet oder ein neuer Datensatz erstellt und gespeichert wird.")
 
-## <a name="view-commands-for-a-record"></a>Anzeigen von Befehlen für einen Datensatz
+*Aktualisieren Sie die Seite, um die GIF-Aktion neu zu starten*.
+
+## <a name="view-commands-for-a-record-android"></a>Anzeigen von Befehlen für einen Datensatz (Android)
 
 1. Öffnen Sie auf dem Startbildschirm einen Datensatz.
 2. Klicken Sie im geöffneten Datensatz auf **Mehr** ![Symbol für weitere Datensatzbefehle](media/access_record_commands_icon.png "Symbol für weitere Datensatzbefehle"), um Zugriff auf weitere Befehle zu erhalten.
 
    > [!div class="mx-imgBorder"]
-   > ![Befehle für einen Datensatz](media/pa_mobile_view_record_commands.gif "Befehle für einen Datensatz")
+   > ![Befehle für einen Datensatz](media/pa_mobile_view_record_commands.gif "Diese Abbildung zeigt, wie Sie auf weitere Befehle für einen Datensatz zugreifen.")
+
+*Aktualisieren Sie die Seite, um die GIF-Aktion neu zu starten*.
 
 ## <a name="edit-a-record"></a>Datensatz bearbeiten
 
@@ -129,7 +145,9 @@ Legende
 2. Wenn Sie das Bearbeiten des Datensatzes abgeschlossen haben, klicken Sie auf **Speichern**. Um Ihre Änderungen rückgängig zu machen, wählen Sie **Verwerfen** aus.
 
    > [!div class="mx-imgBorder"]
-   > ![Bearbeitung eines Datensatzes](media/pa_mobile_edit_record.gif "Datensatz bearbeiten")
+   > ![Bearbeitung eines Datensatzes](media/save_on_iphone.gif "Diese Abbildung zeigt, wie ein Datensatz bearbeitet und dann gespeichert wird.")
+
+*Aktualisieren Sie die Seite, um die GIF-Aktion neu zu starten*.
 
 ## <a name="go-back-to-the-home-screen"></a>Zurück zum Startbildschirm
 
@@ -137,7 +155,9 @@ Legende
 - Sie können **Zurück** ![Symbol „Zurück“](media/pa_mobile_back_icon.png "Symbol „Zurück“") jederzeit drücken und gedrückt halten, um zurück auf den Startbildschirm zu gelangen. 
 
    > [!div class="mx-imgBorder"]
-   > ![Zurück zum Startbildschirm](media/go_back_home.gif "Zurück zum Startbildschirm")
+   > ![Zurück zum Startbildschirm](media/go_back_home.gif "Diese Abbildung zeigt, wie Sie durch Gedrückthalten des Symbols „Zurück“ zum Startbildschirm zurückkehren.")
+
+*Aktualisieren Sie die Seite, um die GIF-Aktion neu zu starten*.
 
 ## <a name="sign-out"></a>Abmelden
 

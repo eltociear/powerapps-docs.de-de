@@ -1,42 +1,59 @@
 ---
-title: Bereitstellen und Konfigurieren der Notfallreaktions-App | Microsoft-Dokumentation
+title: Bereitstellen und Konfigurieren der Notfallreaktions-App für Krankenhäuser | Microsoft-Dokumentation
 description: Detaillierte Anweisungen für IT-Administratoren von Krankenhäusern für die Bereitstellung und Konfiguration der Beispielanwendung in ihrer Organisation.
-author: KumarVivek
+author: pankajarora-msft
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/02/2020
-ms.author: kvivek
+ms.date: 04/07/2020
+ms.author: pankar
 ms.reviewer: kvivek
 searchScope:
-- GetStarted
 - PowerApps
-ms.openlocfilehash: bd85066993a317af0d9a594fa856ce1d5800b849
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: 97de25b8c1f80ad4bd89242a2c71f97eeec1c9aa
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80624996"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871647"
 ---
-# <a name="deploy-and-configure-the-emergency-response-app"></a>Bereitstellen und Konfigurieren der Notfallreaktions-App
+# <a name="deploy-and-configure-the-hospital-emergency-response-app"></a>Bereitstellen und Konfigurieren der Notfallreaktions-App für Krankenhäuser
 
-Die Notfallreaktions-App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen. Dieser Artikel enthält detaillierte Anweisungen für IT-Administratoren von Krankenhäusern für die Bereitstellung und Konfiguration der Anwendung in ihrer Organisation.
+Die Notfallreaktions-App für Krankenhäuser erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen. Dieser Artikel enthält detaillierte Anweisungen für IT-Administratoren von Krankenhäusern für die Bereitstellung und Konfiguration der Anwendung in ihrer Organisation.
 
 Geschätzte Dauer: **35-40 Minuten**.
 
-## <a name="demo-deploy-and-configure-the-emergency-response-app"></a>Demo: Bereitstellen und Konfigurieren der Notfallreaktions-App
+## <a name="demo-deploy-and-configure-the-hospital-emergency-response-app"></a>Demo: Bereitstellen und Konfigurieren der Notfallreaktions-App für Krankenhäuser
 
-Sehen Sie sich an, wie Sie die Notfallreaktions-App bereitstellen und konfigurieren können.
+Sehen Sie sich an, wie Sie die Notfallreaktions-App für Krankenhäuser bereitstellen und konfigurieren können.
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/-1g44wNiuWI]
 
 
-## <a name="deploy-the-emergency-response-app"></a>Bereitstellen der Notfallreaktions-App
+## <a name="service-urls-for-us-government-customers"></a>Dienst-URLs für Kunden in US-Regierungsbehörden
 
-Führen Sie die folgenden Schritte aus, um die Beispiel-App für die Notfallreaktion in Ihrer Organisation bereitzustellen.
+Die Notfallreaktionslösung für Krankenhäuser steht auch Kunden in US-Regierungsbehörden zur Verfügung. Es gibt eine andere Gruppe von URLs für den Zugriff auf Power Apps für US-Regierungsbehörden und Power BI als in der kommerziellen Version.
+
+In diesem Artikel wird die kommerzielle Version der Dienst-URL verwendet. Wenn Sie Kunde in einer Kunden in einer US-Regierungsbehörde sind, verwenden Sie für Ihre Bereitstellung die entsprechende URL für Kunden in US-Regierungsbehörden wie hier erwähnt:
+
+
+| **URL der kommerziellen Version**                | **URL der Version für Kunden in US-Regierungsbehörden**  |
+|-------------------------------------------|--------------------------------|
+| https://make.powerapps.com                | https://make.gov.powerapps.us (GCC)<br/><br/>https://make.high.powerapps.us (GCC High)                |
+| https://admin.powerplatform.microsoft.com | https://gcc.admin.powerplatform.microsoft.us (GCC)<br/><br/>https://high.admin.powerplatform.microsoft.us (GCC High) |
+| https://app.powerbi.com/                  | <https://app.powerbigov.us> (GCC)<br/><br/>https://app.high.powerbigov.us (GCC High)                  |
+
+Ausführliche Informationen zu den Plänen für Kunden in US-Regierungsbehörden für Power Apps und Power BI finden Sie unter:
+- [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+- [Power BI für Angehörige von US-Behörden](https://docs.microsoft.com/power-bi/service-govus-overview)
+
+
+## <a name="deploy-the-hospital-emergency-response-app"></a>Bereitstellen der Notfallreaktions-App für Krankenhäuser
+
+Führen Sie die folgenden Schritte aus, um die Beispiel-App für die Notfallreaktion für Krankenhäuser in Ihrer Organisation bereitzustellen.
 
 - [Schritt 1: Registrieren für Power Apps und Erstellen einer Umgebung](#step-1-sign-up-for-power-apps-and-create-an-environment)
 - [Schritt 2: Herunterladen des Bereitstellungspakets](#step-2-download-the-deployment-package)
@@ -46,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um die Beispiel-App für die Notfallreak
     - [Schritt 4.2: Laden von Masterdaten](#step-42-load-master-data)
 - [Schritt 5: Aktualisieren des Brandings der mobilen App](#step-5-update-the-mobile-app-branding)
 - [Schritt 6: Umgehen der Zustimmung für mobile Apps](#step-6-bypass-consent-for-mobile-apps)
-- [Schritt 7: Hinzufügen des Azure Application Insights-Schlüssels zu mobilen Apps für Telemetriezwecke](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry)
+- [Schritt 7: Hinzufügen des Azure Application Insights-Schlüssels zu mobilen Apps für Telemetriezwecke (optional)](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry-optional)
 - [Schritt 8: Freigeben von Canvas-Apps für Benutzer in Ihrer Organisation](#step-8-share-canvas-apps-with-users-in-your-organization)
 - [Schritt 9: Festlegen Ihrer mobilen App als herausragende und empfohlene App](#step-9-set-your-mobile-app-as-hero-and-featured-app)
 - [Schritt 10: Freigeben der modellgesteuerten App für Administratoren in Ihrer Organisation](#step-10-share-model-driven-app-with-admins-in-your-organization)
@@ -73,9 +90,16 @@ Nachdem Sie Power Apps erworben haben, erstellen Sie eine Umgebung mit einer Com
 
 ### <a name="step-2-download-the-deployment-package"></a>Schritt 2: Herunterladen des Bereitstellungspakets
 
-Laden Sie das neueste Bereitstellungspaket (.zip) von <https://aka.ms/emergency-response-solution> herunter, das die Lösungsdatei, Images und Datendateien enthält, um die Apps und Geschäftslogik für die Notfallreaktions-App einzurichten.
+Laden Sie das neueste Bereitstellungspaket (.zip) von <https://aka.ms/emergency-response-solution> herunter, das die Lösungsdatei, Images und Datendateien enthält, um die Apps und Geschäftslogik für die Notfallreaktions-App für Krankenhäuser einzurichten.
 
-Extrahieren Sie die Bereitstellungsdatei (.zip) an einem Speicherort auf Ihrem Computer, um den Bereitstellungsprozess zu starten. Der extrahierte Ordner enthält die folgenden Ordner:
+> [!IMPORTANT]
+> Stellen Sie vor dem Extrahieren des Bereitstellungspakets (ZIP-Datei) sicher, dass Sie die Datei entsperren. So erfolgt das Entsperren
+> 1. Klicken Sie mit der rechten Maustaste auf die ZIP-Datei, und wählen Sie **Eigenschaften** aus.
+> 2. Wählen Sie im Dialogfeld Eigenschaften **Blockierung aufheben** und dann nacheinander **Übernehmen** und **OK** aus.
+
+<br/>
+
+Nachdem Sie die Bereitstellungsdatei (ZIP-Datei) entsperrt haben, extrahieren Sie sie an einen Speicherort auf Ihrem Computer. Der extrahierte Ordner enthält die folgenden Ordner:
 
 | **Ordner/Datei**       | **Beschreibung**  |
 |-----------------------|------------------|
@@ -83,7 +107,7 @@ Extrahieren Sie die Bereitstellungsdatei (.zip) an einem Speicherort auf Ihrem C
 | **Data Files**        | Enthält die Stamm- und Beispieldatendateien (. xlsx), damit die Lösung/App funktioniert. Sie können Daten aus diesen Dateien importieren, um mit der Arbeit in der App zu beginnen. Weitere Informationen finden Sie unter [Schritt 4: Laden der Konfigurations- und Stammdaten für Ihre Organisation](#step-4-load-configuration-and-master-data-for-your-organization) |
 | **Power BI Template** | Enthält die Power BI-Berichtsvorlagendatei (.pbit), die Sie zum Konfigurieren der Berichterstellung für Ihre Organisation verwenden. Weitere Informationen: [Gewinnen von Erkenntnissen mithilfe von Power BI-Dashboards](#get-insights-using-power-bi-dashboards)|
 | **PowerShell**        | Enthält Skripts, die Sie zum Konfigurieren Ihrer mobilen Apps (Canvas-Apps) nutzen. |
-| **Solution File**     | Enthält die Common Data Service-Lösungsdatei, die die Apps und Metadaten erstellt, die für die Notfallreaktions-App erforderlich sind.  |
+| **Solution File**     | Enthält die Common Data Service-Lösungsdatei, die die Apps und Metadaten erstellt, die für die Notfallreaktions-App für Krankenhäuser erforderlich sind.  |
 
 ### <a name="step-3-import-the-solution-file-into-your-environment"></a>Schritt 3: Importieren der Lösungsdatei in Ihre Umgebung
 
@@ -116,7 +140,7 @@ Die Admin-App verfügt über eine Reihe von Entitäten, in denen Sie Daten für 
 
 ### <a name="step-4-load-configuration-and-master-data-for-your-organization"></a>Schritt 4: Laden der Konfigurations- und Stammdaten für Ihre Organisation
 
-Alle für die Notfallreaktions-App erforderlichen Daten sind im Ordner **Data Files** unter Ihrem extrahierten Bereitstellungsordner verfügbar.
+Alle für die Notfallreaktions-App für Krankenhäuser erforderlichen Daten sind im Ordner **Data Files** unter Ihrem extrahierten Bereitstellungsordner verfügbar.
 
 Der Ordner **Data Files** enthält die folgenden Dateien und Ordner:
 
@@ -143,7 +167,7 @@ Der Ordner **Data Files** enthält die folgenden Dateien und Ordner:
 <li>Request Roles (Rollen anfordern)</li>
 <li>Supplies Import (Verbrauchsmaterialien importieren)</li>
 </ul>
-<br/>Durch Importieren von Daten in diese Entitäten werden Datensätze erstellt, die für das Funktionieren der Notfallreaktions-App erforderlich sind.
+<br/>Durch Importieren von Daten in diese Entitäten werden Datensätze erstellt, die für das Funktionieren der Notfallreaktions-App für Krankenhäuser erforderlich sind.
 <br/>
 <br/>
 <strong>Achtung:</strong> Stellen Sie sicher, dass Sie die Konfigurationswerte in diesen Entitäten nicht aktualisieren. Eine Ausnahme bilden die Entitäten <strong>Apps</strong> und <strong>App Config</strong>, die später erläutert werden.</td>
@@ -151,7 +175,7 @@ Der Ordner **Data Files** enthält die folgenden Dateien und Ordner:
 <tr>
 <td>Ordner <strong>Sample Data</strong></td>
 <td><p>Der Ordner enthält die Beispieldatendateien (.xlsx), die Sie importieren können, um die Beispieldaten in Ihrer Anwendung aufzufüllen. Die Dateien sind so benannt, dass sie die Reihenfolge angeben, in der die Daten in Ihre App importiert werden sollen. </p>
-<p>Sie müssen Daten für die folgenden Entitäten importieren, die die Beispielstammdaten für die Notfallreaktions-App enthalten:
+<p>Importieren Sie Daten für die folgenden Entitäten, die die Beispielstammdaten für die Notfallreaktions-App für Krankenhäuser enthalten:
 <ul>
 <li>Systeme</li>
 <li>Regionen</li>
@@ -246,7 +270,7 @@ Dazu verwenden Sie die Entitäten **App** und **App Config** im Bereich **Admini
     > [!div class="mx-imgBorder"] 
     > ![Admin-Apps](media/conf-admin-app-records.png "Admin-Apps")
 
-1.  Öffnen Sie einen der App-Datensätze, indem Sie ihn auswählen. Beachten Sie, dass das Feld „Power App ID“ leer ist.
+1.  Öffnen Sie einen der App-Datensätze, indem Sie ihn auswählen. Beachten Sie, dass das Feld **Power App ID** leer ist.
 
     > [!div class="mx-imgBorder"] 
     > ![Feld „Power App ID“](media/conf-powerapp-id-field.png "Feld „Power App ID“")
@@ -271,9 +295,9 @@ Dazu verwenden Sie die Entitäten **App** und **App Config** im Bereich **Admini
 
 1.  Wählen Sie den Datensatz **Emergency Response App** (Notfallreaktions-App) aus, um ihn zur Bearbeitung zu öffnen.
 
-    1.  Aktualisieren Sie bei Bedarf die Farben für Ihre App.
+    1.  Aktualisieren Sie bei Bedarf die Farben Ihrer App.
 
-    2.  Wählen Sie im Feld **Device Sharing Enabled** (Gerätefreigabe aktiviert) entweder **Yes** (Ja) oder **No** (Nein) aus, um anzugeben, ob in den mobilen Apps die Option **Sign Out** (Abmelden) verfügbar sein soll oder nicht. Wenn Sie **Yes** (Ja) auswählen, ist die Option **Sign Out** (Abmelden) verfügbar.
+    2.  Wählen Sie im Feld **Device Sharing Enabled** (Gerätefreigabe aktiviert) entweder **Yes** (Ja) oder **No** (Nein) aus, um anzugeben, ob in mobilen Apps die Option **Sign Out** (Abmelden) verfügbar sein soll oder nicht. Wenn Sie **Yes** (Ja) auswählen, ist die Option **Sign Out** (Abmelden) verfügbar. Weitere Informationen: [Abmelden bei Schichtende](use.md#end-shift---sign-out) im Benutzerhandbuch
 
     > [!div class="mx-imgBorder"] 
     > ![Feld „Device Sharing Enabled“](media/conf-device-sharing-enabled-field.png "Feld „Device Sharing Enabled“")
@@ -317,9 +341,9 @@ Gehen Sie anschließend wie folgt vor:
 
 5.  Wiederholen Sie für jede Canvas-App die Schritte 2 bis 4.
 
-### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry"></a>Schritt 7: Hinzufügen des Azure Application Insights-Schlüssels zu mobilen Apps für Telemetriezwecke
+### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry-optional"></a>Schritt 7: Hinzufügen des Azure Application Insights-Schlüssels zu mobilen Apps für Telemetriezwecke (optional)
 
-Mit Azure Application Insights können Sie detaillierte Telemetriedaten für Ihre mobilen Apps (Canvas-Apps) sammeln, um Einblicke in die App-Nutzung zu erhalten. Ausführliche Informationen hierzu finden Sie unter [Analysieren von App-Telemetriedaten mithilfe von Application Insights](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights).
+Mit Azure Application Insights können Sie optional detaillierte Telemetriedaten für Ihre mobilen Apps (Canvas-Apps) sammeln, um Einblicke in die App-Nutzung zu erhalten. Ausführliche Informationen hierzu finden Sie unter [Analysieren von App-Telemetriedaten mithilfe von Application Insights](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights).
 
 ### <a name="step-8-share-canvas-apps-with-users-in-your-organization"></a>Schritt 8: Freigeben von Canvas-Apps für Benutzer in Ihrer Organisation
 
@@ -405,7 +429,7 @@ Damit Ihre administrativen Benutzer die Admin-App (modellgesteuerte App) verwend
 
 ## <a name="manually-configure-and-manage-master-data-for-your-organization"></a>Manuelles Konfigurieren und Verwalten von Stammdaten für Ihre Organisation
 
-Administratoren können mit der modellgesteuerten App in [Power Apps](https://make.powerapps.com) Stammdaten für ihre Organisation erstellen und verwalten. Diese Daten werden benötigt, damit die Notfallreaktions-App funktionieren kann.
+Administratoren können mit der modellgesteuerten App in [Power Apps](https://make.powerapps.com) Stammdaten für ihre Organisation erstellen und verwalten. Diese Daten werden benötigt, damit die Notfallreaktions-App für Krankenhäuser funktionieren kann.
 
 > [!NOTE]
 > Sie können Ihre Organisationsdaten auch in Datendateien importieren, die im Bereitstellungspaket verfügbar sind, und sie anschließend in diese Entitäten importieren. Weitere Informationen: [Schritt 4: Laden der Konfigurations- und Stammdaten für Ihre Organisation](#step-4-load-configuration-and-master-data-for-your-organization)
@@ -450,7 +474,7 @@ So erstellen Sie einen Datensatz
    | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für dieses Krankenhaussystem ein. |
    | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für dieses Krankenhaussystem ein.   |
 
-3. Wählen Sie **Speichern und Schließen** aus. Der neu erstellte Datensatz ist in der Liste **Systems** verfügbar.
+3. Wählen Sie **Speichern und schließen** aus. Der neu erstellte Datensatz ist in der Liste **Systems** verfügbar.
 
 Um den Datensatz zu bearbeiten, wählen Sie ihn aus. Aktualisieren Sie die Werte wie gewünscht, und wählen Sie **Speichern und schließen** aus.
 
@@ -472,10 +496,10 @@ So erstellen Sie einen Datensatz
     | System               | Wählen Sie ein Krankenhaussystem aus. Diese Liste wird auf Grundlage der Daten zu den **Systemen** aufgefüllt, die Sie zuvor erstellt haben. |
     | Name der Region          | Geben Sie den Namen der Region ein. Beispiel: Seattle.                                                              |
     | Beschreibung          | Geben Sie eine optionale Beschreibung ein.                                                                            |
-    | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für dieses Krankenhaussystem ein.                                                       |
-    | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für dieses Krankenhaussystem ein.                                                         |
+    | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für diese Region ein.                                                       |
+    | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für diese Region ein.                                                         |
 
-3. Wählen Sie **Speichern und Schließen** aus. Der neu erstellte Datensatz ist in der Liste **Regions** verfügbar.
+3. Wählen Sie **Speichern und schließen** aus. Der neu erstellte Datensatz ist in der Liste **Regions** verfügbar.
 
 Um den Datensatz zu bearbeiten, wählen Sie ihn aus. Aktualisieren Sie die Werte wie gewünscht, und wählen Sie **Speichern und schließen** aus.
 
@@ -503,7 +527,7 @@ So erstellen Sie einen Datensatz
 
     Geben Sie bei Bedarf die Adresse der Einrichtung ein.
 
-3. Wählen Sie **Speichern und Schließen** aus. Der neu erstellte Datensatz ist in der Liste **Facilities** verfügbar.
+3. Wählen Sie **Speichern und schließen** aus. Der neu erstellte Datensatz ist in der Liste **Facilities** verfügbar.
 
 Um den Datensatz zu bearbeiten, wählen Sie ihn aus. Aktualisieren Sie die Werte wie gewünscht, und wählen Sie **Speichern und schließen** aus.
 
@@ -525,21 +549,23 @@ So erstellen Sie einen Datensatz
 
     | **Feld**            | **Beschreibung**                                                                                      |
     |----------------------|------------------------------------------------------------------------------------------------------|
-    | Standortname        | Geben Sie den Namen des Standorts ein.                                                                       |
-    | Facility             | Wählen Sie eine Einrichtung aus. Diese Liste wird auf Grundlage der Daten zu den **Einrichtungen** aufgefüllt, die Sie zuvor erstellt haben. |
-    | Etage                | Geben Sie die Informationen zur Etage der Einrichtung ein.                                                         |
-    | Einheit                 | Geben Sie die Informationen zur Einheit der Einrichtung ein.                                                           |
-    | Location Acuity (Pflegestufe am Standort)      | Wählen Sie den Datensatz zur Pflegestufe aus, der mit diesem Standort verknüpft ist.                                                                                                     |
+    | Location Name (Standortname)        | Geben Sie den Namen des Standorts ein.                                                                       |
+    | Facility (Einrichtung)             | Wählen Sie eine Einrichtung aus. Diese Liste wird auf Grundlage der Daten zu den **Einrichtungen** aufgefüllt, die Sie zuvor erstellt haben. |
+    | Floor (Etage)                | Geben Sie die Informationen zur Etage der Einrichtung ein.                                                         |
+    | (Unit) Einheit                 | Geben Sie die Informationen zur Einheit der Einrichtung ein.                                                           |
+    | Acuity (Pflegestufe)      | Wählen Sie den Datensatz zur Pflegestufe aus, der mit diesem Standort verknüpft ist.                                                                                                     |
+    | COVID Location (COVID-Standort)      | Wählen Sie aus, ob dieser Standort zur Behandlung von COVID-Patienten genutzt wird (**Yes** oder **No**.)                                                                                                      |
     | Total Beds (Betten insgesamt)           | Geben Sie die Gesamtanzahl der Betten in der Einrichtung ein.                                                       |
+    | Surge Beds (Notbetten)           | Geben Sie die Gesamtanzahl der Notbetten in der Einrichtung ein. Notbetten sind solche, die über die zugelassene Bettenkapazität hinaus belegt werden können, wenn Patienten aufgenommen werden müssen.                                                      |
     | Blocked beds (Belegte Betten)         | Geben Sie die Anzahl der belegten Betten in der Einrichtung ein.                                                     |
-    | Last Census (Letzte Volkszählung)          | Wird basierend auf dem zuletzt erstellten Volkszählungs-Datensatz aufgefüllt.                                             |
-    | Occupancy Percentage (Belegungsprozentsatz) | Wird basierend auf der letzten Volkszählung und den insgesamt belegten Betten automatisch berechnet.                                         |
-    | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für dieses Krankenhaussystem ein.                                                   |
-    | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für dieses Krankenhaussystem ein.                                                     |
+    | Last Census (Letzte Zählung)          | Wird basierend auf dem zuletzt erstellten Zählungsdatensatz aufgefüllt.                                             |
+    | Occupancy Percentage (Belegungsprozentsatz) | Wird basierend auf der letzten Zählung und den insgesamt belegten Betten automatisch berechnet.                                         |
+    | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für diesen Standort ein.                                                   |
+    | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für diesen Standort ein.                                                     |
     | Location Order (Standortreihenfolge)       | Geben Sie eine Zahl zum Sortieren des Standorts in die Dropdownlisten für den Standort ein.                               |
-    | Alternate Site Flag (Flag für alternatives Standort)  | Zur internen Verwendung                                                                                     |
+    | Alternate Site Flag (Flag für alternatives Standort)  | Für die interne Verwendung.                                                                                     |
 
-3. Wählen Sie **Speichern und Schließen** aus. Der neu erstellte Datensatz ist in der Liste **Locations** verfügbar.
+3. Wählen Sie **Speichern und schließen** aus. Der neu erstellte Datensatz ist in der Liste **Locations** verfügbar.
 
 Um den Datensatz zu bearbeiten, wählen Sie ihn aus. Aktualisieren Sie die Werte wie gewünscht, und wählen Sie **Speichern und schließen** aus.
 
@@ -551,7 +577,7 @@ So erstellen Sie einen Datensatz
 
 1. Wählen Sie im linken Bereich **Departments** und dann **New** aus.
 
-2. Geben Sie auf der Seite **New Department** (Neue Abteilung) die entsprechenden Werte an:    
+2. Geben Sie auf der Seite **New Department** (Neue Abteilung) die entsprechenden Werte an:
 
     > [!div class="mx-imgBorder"]
     > ![Details zu neuer Abteilung eingeben](media/enter-details-new-department.png)
@@ -560,16 +586,16 @@ So erstellen Sie einen Datensatz
     |----------------------|----------------------------------------------------|
     | Department Name      | Geben Sie einen Abteilungsnamen ein.                            |
     | Beschreibung          | Geben Sie eine optionale Beschreibung ein.                      |
-    | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für dieses Krankenhaussystem ein. |
-    | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für dieses Krankenhaussystem ein.   |
+    | Effective Start Data (Tatsächliches Startdatum) | Geben Sie Startdatum und -uhrzeit für diese Abteilung ein. |
+    | Effective Start End (Tatsächliches Enddatum)   | Geben Sie Enddatum und -uhrzeit für diese Abteilung ein.   |
 
-3. Wählen Sie **Speichern und Schließen** aus. Der neu erstellte Datensatz ist in der Liste **Departments** verfügbar.
+3. Wählen Sie **Speichern und schließen** aus. Der neu erstellte Datensatz ist in der Liste **Departments** verfügbar.
 
 Um den Datensatz zu bearbeiten, wählen Sie ihn aus. Aktualisieren Sie die Werte wie gewünscht, und wählen Sie **Speichern und schließen** aus.
 
 ## <a name="get-insights-using-common-data-service-dashboards"></a>Gewinnen von Erkenntnissen mithilfe von Common Data Service-Dashboards
 
-Die folgenden Dashboards sind in der modellgesteuerten Notfallreaktions-Admin-App standardmäßig verfügbar:
+Die folgenden Dashboards sind in der modellgesteuerten Notfallreaktions-Admin-App für Krankenhäuser standardmäßig verfügbar:
 
 - **Bed Management** (Bettenmanagement)
 
@@ -661,7 +687,9 @@ Veröffentlichen Sie das Power BI-Dashboard, und geben Sie es für Benutzer in I
 - Installation von Power BI Desktop über den Microsoft Store: <https://aka.ms/pbidesktop>
 
    > [!NOTE] 
-   > Wenn Sie bisher Power BI durch direktes Herunterladen von der Power BI-Website als ausführbare Datei installiert haben, entfernen Sie es und, verwenden Sie die Version aus dem Microsoft Store. Die Microsoft Store-Version wird automatisch aktualisiert, sobald neue Releases verfügbar sind.
+   > Wenn Sie Power BI Desktop bislang direkt von der Download-Center-Seite als ausführbare Datei heruntergeladen und installiert haben, entfernen Sie diese Datei, und verwenden Sie diejenige aus dem Microsoft Store. Die Microsoft Store-Version wird automatisch aktualisiert, sobald neue Releases verfügbar sind.
+   >
+   > Wenn die Installation nicht über den Microsoft Store möglich ist, installieren Sie die neueste Nicht-Microsoft Store-Version über die [Download Center-Seite](https://www.microsoft.com/download/details.aspx?id=58494).
 
 - Nachdem Sie Power BI Desktop über den Microsoft Store installiert haben, führen Sie es aus. Melden Sie sich mit einem Konto an, das die Berechtigung hat, Power BI-Anwendungen in Ihrer Organisation zu veröffentlichen.
 
@@ -669,59 +697,65 @@ Veröffentlichen Sie das Power BI-Dashboard, und geben Sie es für Benutzer in I
 
 1. Wechseln Sie zum Speicherort, an dem Sie das Bereitstellungspaket extrahiert haben. Sie finden die Datei **Emergency Response App.pbit** im Ordner **Power BI Template**.
 
-2. Öffnen Sie die Datei **Emergency Response App.pbit** in Power BI Desktop. Wenn diese Datei in Power BI Desktop geöffnet wird, sehen Sie das Dialogfeld **Aktualisieren**, das angibt, dass die Datenaktualisierung fehlgeschlagen ist. Der Grund dafür ist, dass wir die Details der Verbindung mit Ihrer Common Data Service-Umgebung noch nicht festgelegt haben.
+2. Öffnen Sie die Datei **Emergency Response App.pbit** in Power BI Desktop. Sie werden aufgefordert, die folgenden Informationen einzugeben:
 
-3. Wählen Sie **Daten transformieren** aus, um die Verbindung mit Ihrer Common Data Service-Umgebung anzugeben.  
-    
-    > [!div class="mx-imgBorder"]
-    > ![„Daten transformieren“ auswählen](media/select-transform-data.png)
-
-4. Aktualisieren Sie im Abfrage-Editor den Parameter **CDSBaseURL** mit der URL Ihrer Common Data Service-Umgebung. Klicken Sie mit der rechten Maustaste auf **CDSBaseURL**, wählen Sie **Erweiterter Editor** aus, und geben Sie dann den entsprechenden Wert an.  
+    - **Organization_name**: Geben Sie den Namen Ihrer Organisation ein, der links oben auf jeder Berichtsseite angezeigt wird.
+    - **CDS_base_solution_URL**: Geben Sie die URL Ihrer Common Data Service-Umgebungsinstanz ein. Beispiel: https:// *[myenv]* .crm.dynamics.com
 
     > [!div class="mx-imgBorder"]
-    > ![„Erweiterter Editor“ auswählen](media/select-advanced-editor.png)
+    > ![Organisationsnamen und Basis-URL angeben](media/pbi-pub-rep1.png)
 
-5. Speichern Sie die Änderungen. Daraufhin wird eine Meldung angezeigt, in der Sie aufgefordert werden, ausstehende Änderungen an Ihrer Abfrage zu übernehmen. Klicken Sie auf **Übernehmen**.
+    Wählen Sie **Laden** aus.
 
-6. Sie werden aufgefordert, Anmeldeinformationen einzugeben, um sich mit Ihrer Common Data Service-Umgebung zu verbinden. Wählen Sie **Organisationskonto** > **Anmelden** aus, um Ihre Common Data Service-Anmeldeinformationen anzugeben.  
+3. Sie werden aufgefordert, Anmeldeinformationen einzugeben, um sich mit Ihrer Common Data Service-Umgebung zu verbinden. Wählen Sie **Organisationskonto** > **Anmelden** aus, um Ihre Common Data Service-Anmeldeinformationen anzugeben.  
 
     > [!div class="mx-imgBorder"]
     > ![Organisationskonto auswählen](media/select-organizational-account.png)
 
-7. Wählen Sie **Verbinden** aus, um eine Verbindung herzustellen.
+4. Wählen Sie nach der Anmeldung **Verbinden** aus, um eine Verbindung mit Ihren Daten in Common Data Service herzustellen.
 
-8. Bei erfolgreicher Verbindung werden Sie aufgefordert, die Datei als PBIX-Datei zusammen mit den Informationen zu Ihrer Common Data Service-Umgebung zu speichern. Geben Sie einen Namen an, und speichern Sie sie auf Ihrem Computer.
+5. Bei erfolgreichem Verbindungsaufbau werden Ihre Daten im Power BI-Bericht angezeigt. Sie werden aufgefordert, ausstehende Änderungen an Ihrer Abfrage zu übernehmen. Wählen Sie **Änderungen übernehmen** aus.
 
-9. Wählen Sie auf der Registerkarte **Start** den Befehl **Schließen und übernehmen** aus.
+6. Wählen Sie **Veröffentlichen** aus, um Daten in Ihrem Power BI-Arbeitsbereich zu veröffentlichen. Sie werden aufgefordert, die Änderungen zu speichern. Wählen Sie **Speichern** aus.
 
-10. Wählen Sie **Aktualisieren** aus, um die Daten in Ihrer Common Data Service-Umgebung zu aktualisieren. Wählen Sie **Veröffentlichen** aus, um Daten in Ihrem Power BI-Arbeitsbereich zu veröffentlichen.  
-    
     > [!div class="mx-imgBorder"]
     > ![„Veröffentlichen“ auswählen](media/select-refresh-publish.png)
 
-11. Wählen Sie auf der Seite **In Power BI veröffentlichen** den Arbeitsbereich aus, in dem die Veröffentlichung erfolgen soll.
+7. Sie werden aufgefordert, die Datei als PBIX-Datei zusammen mit den Informationen zu Ihrer Common Data Service-Umgebung zu speichern. Geben Sie einen Namen an, und speichern Sie sie auf Ihrem Computer.
 
-12. Der Bericht wird in Ihrem Arbeitsbereich verfügbar. Nun konfigurieren wir die Datenaktualisierung für das Dataset. Wählen Sie das Dataset in Ihrem Arbeitsbereich und das Symbol **Zeitplan aktualisieren** aus.  
+8. Nachdem Sie die PBIX-Datei gespeichert haben, werden Sie aufgefordert, den Bericht zu veröffentlichen. Wählen Sie auf der Seite **In Power BI veröffentlichen** den Arbeitsbereich aus, in dem die Veröffentlichung erfolgen soll, und klicken Sie auf **Auswählen**.
+
+12. Der Bericht wird in Ihrem Arbeitsbereich verfügbar. Nun konfigurieren wir die Datenaktualisierungseinstellungen für das Dataset. Wählen Sie das Dataset in Ihrem Arbeitsbereich und das Symbol **Zeitplan aktualisieren** aus.  
     
     > [!div class="mx-imgBorder"]
     > ![Zeitplan aktualisieren](media/schedule-refresh.png)
 
-13. Erweitern Sie auf der Einstellungsseite für Ihren Datensatz **Anmeldeinformationen für die Datenquelle**. Wählen Sie **Anmeldeinformationen bearbeiten** aus, um sicherzustellen, dass die Details zur Herstellung der Verbindung mit Ihrer Datenquelle zutreffend sind.  
+13. Wenn Sie zum ersten Mal versuchen, die Datenaktualisierungseinstellung festzulegen, wird die Seite **Einstellungen** mit der Meldung angezeigt, dass Ihre Anmeldedaten ungültig sind. Wählen Sie unter **Anmeldeinformationen für die Datenquelle** die Option **Anmeldeinformationen bearbeiten** aus, um Ihre Anmeldeinformation anzugeben.  
 
     > [!div class="mx-imgBorder"]
     > ![„Anmeldeinformationen bearbeiten“ auswählen](media/select-edit-credentials.png)
 
-14. Erweitern Sie **Geplante Aktualisierung**, und geben Sie die erforderlichen Details für die Aktualisierung von Daten auf Grundlage eines Zeitplans an.
+14. Gehen Sie auf dem nächsten Bildschirm so vor:
+    - Wählen Sie **OAuth2** als **Authentifizierungsmethode** aus.
+    - Wählen Sie **Organisation** als **Datenschutzebene für diese Datenquelle** aus.
+    - Wählen Sie **Anmelden** aus.
+
+    Sie werden aufgefordert, Ihre Anmeldeinformationen anzugeben und sich anzumelden. Nach erfolgreicher Anmeldung gelangen Sie zurück zur Seite **Einstellungen**.
+
+15. Erweitern Sie auf der Seite **Einstellung** den Eintrag **Geplante Aktualisierung**, und geben Sie die erforderlichen Details für die Aktualisierung von Daten auf Grundlage eines Zeitplans an. Klicken Sie auf **Übernehmen**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Geplante Aktualisierung](media/refresh-schedule.png)
 
     > [!NOTE] 
     > Es gibt Beschränkungen, wie oft Daten aktualisiert werden können. Power BI begrenzt Datasets auf gemeinsam genutzter Kapazität auf acht tägliche Aktualisierungen. Wenn das Dataset sich auf einer Premium-Kapazität befindet, können Sie in den Dataseteinstellungen bis zu 48 Aktualisierungen pro Tag planen. Weitere Informationen: [Aktualisieren von Daten](https://docs.microsoft.com/power-bi/refresh-data#data-refresh)
 
-15. Wählen Sie im linken Bereich den Namen Ihres Arbeitsbereichs und dann rechts oben **App erstellen** aus.  
+16. Wählen Sie im linken Bereich den Namen Ihres Arbeitsbereichs und dann rechts oben **App erstellen** aus.  
 
     > [!div class="mx-imgBorder"]
     > ![„App erstellen“ auswählen](media/select-create-app.png)
 
-16. Auf der Seite zum Veröffentlichen der App:
+17. Auf der Seite zum Veröffentlichen der App:
 
     1. Geben Sie auf der Registerkarte **Setup** den Namen und die Beschreibung Ihrer App an.
 
@@ -732,14 +766,105 @@ Veröffentlichen Sie das Power BI-Dashboard, und geben Sie es für Benutzer in I
         > [!div class="mx-imgBorder"]
         > ![„Apps automatisch installieren“ auswählen](media/select-install-apps-automatically.png)
 
-17. Wählen Sie **App veröffentlichen** aus. Ausführliche Informationen zum Veröffentlichen von Apps in Power BI finden Sie unter [Veröffentlichen Ihrer App](https://docs.microsoft.com/power-bi/service-create-distribute-apps#publish-your-app).
+18. Wählen Sie **App veröffentlichen** aus. Ausführliche Informationen zum Veröffentlichen von Apps in Power BI finden Sie unter [Veröffentlichen Ihrer App](https://docs.microsoft.com/power-bi/service-create-distribute-apps#publish-your-app).
 
 ### <a name="view-the-power-bi-dashboard"></a>Anzeigen des Power BI-Dashboards
 
 Melden Sie sich bei [Power BI](https://apps.powerbi.com) an, um auf das Power BI-Dashboard zuzugreifen und es anzuzeigen.
 
 > [!div class="mx-imgBorder"]
-> ![Power BI-Dashboard anzeigen](media/view-power-dashboard.png)
+> ![Anzeigen des Power BI-Dashboards](media/view-power-dashboard.png)
+
+Mit den Filtern oben im Bericht können Sie Daten für Krankenhaussysteme, Regionen und Einrichtungen filtern. Sie können auch nach COVID-Standorten filtern.
+
+> [!div class="mx-imgBorder"]
+> ![Berichtsfilter](media/report-filters.png)
+
+#### <a name="system-at-a-glance-page"></a>Die Seite „Systems at a glance“ (Systeme auf einen Blick) 
+
+Die Seite **Systems at a glance** (Systeme auf einen Blick) ist die Standardseite bzw. Seite der obersten Ebene, die einen allgemeinen Überblick bietet.  
+
+Auf der Seite wird eine Übersicht der folgenden Punkte gezeigt: 
+
+- **COVID patients** (COVID-Patienten): Zeigt die Gesamtanzahl der COVID-Patienten, die Anzahl der positiv auf COVID-19 getesteten Patienten und die Anzahl der untersuchten Patienten. 
+
+- **Bed Management** (Bettenmanagement): Zeigt die Verfügbarkeit von Betten, die prozentuale Belegung, die Anzahl der Notbetten und die Gesamtanzahl der Betten. Sie können auch das nachstehende Raster verwenden, um die Zahlen nach Akut-Einheiten anzuzeigen. 
+
+- **Nurse staffing management** (Management des Pflegepersonals): Zeigt die Anzahl der Patienten auf der Intensivstation, die zugewiesenen Pflegekräfte und das Verhältnis von Pflegekraft zu Patienten.  
+
+- **Discharges** (Entlassungen): Zeigt die Gesamtanzahl der Patienten mit Langzeitaufenthalt, die Anzahl der Patienten, die voraussichtlich entlassen werden, und die tatsächlichen Entlassungen. 
+
+- **Equipment** (Geräte): Zeigt die Gesamtanzahl der Beatmungsgeräte, die Anzahl der verwendeten Beatmungsgeräte und die verfügbaren Beatmungsgeräte. 
+
+- **Supplies** (Verbrauchsmaterialien): Zeigt die Anzahl der verfügbaren Verbrauchsmaterialien in Tagen an.
+
+> [!NOTE]
+> - Wenn Sie in einem der Übersichtsbereiche das Informationssymbol (i) auswählen, gelangen Sie zur entsprechenden Detailseite für den Bereich. 
+> - Sie können auch andere Aktionen auf Berichte anwenden, z. B. Daten filtern und sortieren, den Bericht in das PDF- und PowerPoint-Format exportieren, ein Spotlight hinzufügen usw. Ausführliche Informationen zu Berichtsfeatures in Power BI finden Sie unter [Berichte in Power BI](https://docs.microsoft.com/power-bi/consumer/end-user-reports).
+> - Die zuletzt verwendeten oder aktualisierten Spalten in einigen dieser Berichte zeigen das Datum und die Uhrzeit, zu der die Daten zuletzt aktualisiert wurden. Es ist auch einfach, die Aktualität zu erkennen, indem Sie sich die Farbe der Datums- und Uhrzeitangaben in diesen Spalten ansehen:
+>    - Schwarz: Die Daten werden vor weniger als 20 Stunden aktualisiert.
+>    - Grau: Die Daten wurden vor 20-24 Stunden aktualisiert.
+>    - Rot: Die Daten werden vor mehr als 24 Stunden aktualisiert. 
+ 
+#### <a name="system-view-page"></a>Seite „System View“ (Systemansicht)
+
+Auf der Seite **System View** (Systemansicht) werden Diagramme mit den folgenden Informationen für ein Krankenhaussystem angezeigt:
+- Verwendete Beatmungsgeräte und verfügbare Beatmungsgeräte
+- Verfügbarkeit von Betten und Akutpflegebetten und Belegungsprozentsatz
+- Angefordertes Personal insgesamt, Anzahl der Patienten (Zählung), Verhältnis Pflegepersonal zu Patienten.
+- Supplies on hand in days (Vorrat an Verbrauchsmaterialien in Tagen)
+
+> [!div class="mx-imgBorder"]
+> ![System View](media/report-system-view.png) (Systemansicht)
+
+#### <a name="location-details-page"></a>Seite „Location Details“ (Standortdetails) 
+
+Um den Bericht nach Standort zu durchsuchen, klicken Sie rechts oben auf **Location Details** (Standortdetails). Auf der Seite **Location Details** (Standortdetails) werden Daten nach Standort wie Gesamtanzahl der Betten, verfügbaren Betten, Notbetten, COVID-Patienten usw. angezeigt. 
+
+> [!div class="mx-imgBorder"]
+> ![Location Details](media/report-location-details.png) (Standortdetails) 
+
+#### <a name="covid-patient-details-page"></a>Seite „COVID Patient Details“ (Details zu COVID-Patienten) 
+
+Die Seite **COVID Patient Details** (Details zu COVID-Patienten) bietet detaillierte Informationen zu den COVID-Patienten, wie z. B. Patienten an den einzelnen Standorten, Patiententrend im Zeitverlauf mit Spitzen und Senken bei der Anzahl der untersuchten Patienten und der Anzahl der positiv getesteten Patienten, und vermittelt ein Bild davon, wo sich die Patienten innerhalb des Krankenhauses befinden.
+
+> [!div class="mx-imgBorder"]
+> ![COVID Patient Details](media/report-covid-details.png) (Details zu COVID-Patienten)
+
+#### <a name="bed-management-page"></a>Seite „Bed Management“ (Bettenmanagement) 
+
+Die Seite **Bed Management** (Bettenmanagement) bietet detaillierte Informationen nach Standort, wie z. B. insgesamt verfügbare Betten und prozentuale Belegung.
+
+> [!div class="mx-imgBorder"]
+> ![Bed Management](media/report-bed-details.png) (Bettenmanagement)
+
+#### <a name="staff-details-page"></a>Seite „Staff Details“ (Details zum Personal)  
+
+Die Seite **Staff Details** (Details zum Personal) bietet Details zum Personal nach Standort, zur Anzahl der zugeteilten Pflegekräfte, zur Gesamtanzahl der Patienten und zur Anzahl der COVID-Patienten. Außerdem wird das Verhältnis von Pflegepersonal zu Patienten und von Intensivpflegepersonal zu Patienten über einen bestimmten Zeitraum gezeigt.
+
+> [!div class="mx-imgBorder"]
+> ![Staff Details](media/report-staff-details.png) (Details zum Personal)
+
+#### <a name="equipment-details-page"></a>Seite „Equipment Details“ (Details zu Geräten) 
+
+Die Seite **Equipment Details** (Details zu Geräten) enthält Einzelheiten zu den Geräten nach Standort, die Gesamtanzahl der genutzten Beatmungsgeräte, überlagert durch die Anzahl der COVID-Patienten, und anderer Geräte, wie z. B. Gürtel, Ladegeräte und Hauben, die in Gebrauch sind.
+
+> [!div class="mx-imgBorder"]
+> ![Equipment Details](media/report-equipment-details.png) (Details zu Geräten)
+
+#### <a name="discharge-details-page"></a>Seite „Discharge Details“ (Details zu Entlassungen) 
+
+Die Seite **Discharge Details** (Details zu Entlassungen) liefert Einzelheiten zu den Langzeitpatienten, Entlassungshindernissen über einen bestimmten Zeitraum und der Varianz in Bezug auf tatsächliche und erwartete Entlassungen.
+
+> [!div class="mx-imgBorder"]
+> ![Equipment Details](media/report-discharge-details.png) (Details zu Geräten)
+
+#### <a name="supplies-on-hand-details-page"></a>Seite „Supplies on hand“ (Vorrat an Verbrauchsmaterialien) 
+
+Die Seite **Supplies on Hand Details** (Details zum Vorrat an Verbrauchsmaterialien) enthält Einzelheiten zu den Vorräten nach Standort und Angebot. Sie enthält auch Daten zum Vorrat, der für einen bestimmten Zeitraum zur Verfügung steht.
+
+> [!div class="mx-imgBorder"]
+> ![Equipment Details](media/report-discharge-details.png) (Details zu Geräten)
 
 ## <a name="view-and-manage-app-feedback"></a>Anzeigen und Verwalten von Feedback zur App
 
@@ -758,10 +883,10 @@ So wird Feedback zur App angezeigt und verwaltet
 
 ## <a name="issues-and-feedback"></a>Issues und Feedback
 
-- Wenn Sie ein Issue mit der Beispiel-App für die Notfallreaktion melden möchten, besuchen Sie <https://aka.ms/emergency-response-issues>.
+- Wenn Sie ein Issue mit der Beispiel-App für die Notfallreaktion für Krankenhäuser melden möchten, besuchen Sie <https://aka.ms/emergency-response-issues>.
 
-- Wenn Sie Feedback zur Beispiel-App für die Notfallreaktion geben möchten, besuchen Sie <https://aka.ms/emergency-response-feedback>.
+- Wenn Sie Feedback zur Beispiel-App für die Notfallreaktion für Krankenhäuser geben möchten, besuchen Sie <https://aka.ms/emergency-response-feedback>.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Verwenden der Notfallreaktions-App](use.md)
+[Verwenden der Notfallreaktions-App für Krankenhäuser](use.md)
