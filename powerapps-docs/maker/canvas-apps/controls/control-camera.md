@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/08/2020
 ms.locfileid: "80871118"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="camera-control-in-power-apps"></a>Kamerasteuerelement in Power Apps
 
@@ -111,7 +112,7 @@ Für diese Beispiele benötigen Sie ein Gerät mit einer Kamera. Verwenden Sie z
 
 1. Legen Sie die **Image** -Eigenschaft des **Image** -Steuer Elements auf die folgende Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Camera1.Photo
     ```
 
@@ -126,8 +127,8 @@ Für diese Beispiele benötigen Sie ein Gerät mit einer Kamera. Verwenden Sie z
 
 1. Fügen Sie ein **Kamera** Steuerelement hinzu, benennen Sie es **MyCamera**, und legen Sie dessen [onselect](properties-core.md) -Eigenschaft auf diese Formel fest:
 
-    ```powerapps-dot
-    Collect( MyPix, MyCamera.Photo )
+    ```powerapps-comma
+    Collect( MyPix; MyCamera.Photo )
     ```
 
     Weitere Informationen:
@@ -141,13 +142,13 @@ Für diese Beispiele benötigen Sie ein Gerät mit einer Kamera. Verwenden Sie z
 
 1. Legen Sie die [Items](properties-core.md) -Eigenschaft des **Bild** Katalog-Steuer Elements auf diese Formel fest:
  
-    ```powerapps-dot
+    ```powerapps-comma
     MyPix
     ```
 
 1. Legen Sie die [Image](properties-visual.md) -Eigenschaft des **Bild** -Steuer Elements im Katalog auf diese Formel fest:
 
-    ```powerapps-dot   
+    ```powerapps-comma   
     ThisItem.Url
     ```
 
@@ -157,8 +158,8 @@ Für diese Beispiele benötigen Sie ein Gerät mit einer Kamera. Verwenden Sie z
 
 1. optionale Legen **Sie die onselect** -Eigenschaft des **Bild** -Steuer Elements im **Bild** Katalog-Steuerelement auf die folgende Formel fest:
 
-    ```powerapps-dot
-    Remove( MyPix, ThisItem )
+    ```powerapps-comma
+    Remove( MyPix; ThisItem )
     ```
 
 1. Drücken Sie F5, und wählen Sie dann ein Bild aus, um es zu entfernen.
@@ -175,7 +176,7 @@ Verwenden Sie die [SaveData](../functions/function-savedata-loaddata.md) -Funkti
 
 1. Legen Sie die **Elemente** der Dropdown Liste auf Folgendes fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Camera1.AvailableDevices
     ```
 
@@ -184,7 +185,7 @@ Verwenden Sie die [SaveData](../functions/function-savedata-loaddata.md) -Funkti
     
 1. Legen Sie die **Kamera** -Eigenschaft der Kamera auf fest: 
 
-    ```powerapps-dot
+    ```powerapps-comma
     Dropdown1.Selected.Id
     ```
 

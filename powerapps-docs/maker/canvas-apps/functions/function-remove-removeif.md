@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/07/2020
 ms.locfileid: "80759851"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="remove-and-removeif-functions-in-power-apps"></a>Funktionen "Remove" und "removeif" in powerapps
 Entfernt [Datensätze](../working-with-tables.md#records) aus einer [Datenquelle](../working-with-data-sources.md).
@@ -40,19 +41,19 @@ Sie können auch die **[Clear](function-clear-collect-clearcollect.md)** Funktio
 [!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Syntax
-**Remove**( *DataSource*, *Record1* [, *Record2*, ... ] [, **All** ] )
+**Remove**( *DataSource*; *Record1* [; *Record2*; ... ] [; **All** ] )
 
 * *DataSource*: erforderlich. Die Datenquelle mit den Datensatz bzw. Datensätze, die Sie entfernen möchten.
 * *Datensatz/Datensätze*: erforderlich. Der Datensatz oder die Datensätze, die entfernt werden sollen.
 * **All**: Optional. In einer Sammlung wird möglicherweise der gleiche Datensatz mehr als einmal angezeigt.  Sie können das **All**-Argument hinzufügen, um alle Kopien des Datensatzes zu entfernen.
 
-**Remove**( *DataSource*, *Table* [, **All** ] )
+**Remove**( *DataSource*; *Table* [; **All** ] )
 
 * *DataSource*: erforderlich. Die Datenquelle, die die Datensätze enthält, die Sie entfernen möchten.
 * *Tabelle*: erforderlich. Eine Tabelle von zu entfernenden Datensätzen
 * **All**: Optional. In einer Sammlung wird möglicherweise der gleiche Datensatz mehr als einmal angezeigt.  Sie können das **All**-Argument hinzufügen, um alle Kopien des Datensatzes zu entfernen.
 
-**RemoveIf**( *DataSource*, *Condition* [, ... ] )
+**RemoveIf**( *DataSource*; *Condition* [; ... ] )
 
 * *DataSource*: erforderlich. Die Datenquelle mit den Datensatz bzw. Datensätze, die Sie entfernen möchten.
 * *Bedingung(en)* : Erforderlich. Eine Formel, die **TRUE** für die zu ersetzenden Datensätze ergibt.  Sie können auch die Spaltennamen aus *DataSource* in der Formel verwenden.  Wenn Sie mehrere *Bedingungen* angeben, müssen alle für Datensätze oder zu entfernende Datensätze zu **TRUE** ausgewertet werden.
@@ -70,11 +71,11 @@ So erstellen Sie eine Sammlung mit diesen Daten:
 1. Ein [**Schalt**](../controls/control-button.md) Flächen-Steuerelement einfügen.
 1. Legen **Sie die onselect** -Eigenschaft des Schaltflächen Steuer Elements auf die folgende Formel fest:
 
-    ```powerapps-dot
-    ClearCollect( IceCream,
-                  { ID: 1, Flavor: "Chocolate",  Quantity: 100 },
-                  { ID: 2, Flavor: "Vanilla",    Quantity: 200 },
-                  { ID: 3, Flavor: "Strawberry", Quantity: 300 }
+    ```powerapps-comma
+    ClearCollect( IceCream;
+                  { ID: 1; Flavor: "Chocolate";  Quantity: 100 };
+                  { ID: 2; Flavor: "Vanilla";    Quantity: 200 };
+                  { ID: 3; Flavor: "Strawberry"; Quantity: 300 }
     )
     ```
 1. Wählen Sie die Schaltfläche, [während Sie die Alt-Taste gedrückt halten](../keyboard-shortcuts.md#alternate-behavior):
@@ -84,11 +85,11 @@ So erstellen Sie eine Sammlung mit diesen Daten:
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) )** |Entfernt den Datensatz **Chocolate** (Schokolade) aus der Datenquelle |<style>IMG {max-width: None}</style> ![](media/function-remove-removeif/icecream-no-chocolate.png)<br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
-| **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Strawberry"&nbsp;)&nbsp;) )** |Entfernt zwei Datensätze aus der Datenquelle. |![](media/function-remove-removeif/icecream-only-vanilla.png)<br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
-| **RemoveIf(&nbsp;IceCream, Quantity&nbsp;>&nbsp;150 )** |Entfernt die Datensätze mit einer **Quantity** (Menge) größer als **150**. |![](media/function-remove-removeif/icecream-only-chocolate.png)<br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
-| **RemoveIf(&nbsp;IceCream, Quantity&nbsp;>&nbsp;150, Left(&nbsp;Flavor,&nbsp;1&nbsp;) = "S" )** |Entfernt die Datensätze mit einer **Quantity** (Menge) größer als 150 und einem **Flavor** (Geschmack), der mit **S** beginnt |![](media/function-remove-removeif/icecream-no-strawberry.png)<br><br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
-| **RemoveIf(&nbsp;IceCream, true )** |Entfernt alle Einträge aus der Datenquelle |![](media/function-remove-removeif/icecream-empty.png)<br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
+| **Remove(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) )** |Entfernt den Datensatz **Chocolate** (Schokolade) aus der Datenquelle |<style>IMG {max-width: None}</style> ![](media/function-remove-removeif/icecream-no-chocolate.png)<br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
+| **Remove(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Strawberry"&nbsp;)&nbsp;) )** |Entfernt zwei Datensätze aus der Datenquelle. |![](media/function-remove-removeif/icecream-only-vanilla.png)<br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
+| **RemoveIf(&nbsp;IceCream; Quantity&nbsp;>&nbsp;150 )** |Entfernt die Datensätze mit einer **Quantity** (Menge) größer als **150**. |![](media/function-remove-removeif/icecream-only-chocolate.png)<br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
+| **RemoveIf(&nbsp;IceCream; Quantity&nbsp;>&nbsp;150; Left(&nbsp;Flavor;&nbsp;1&nbsp;) = "S" )** |Entfernt die Datensätze mit einer **Quantity** (Menge) größer als 150 und einem **Flavor** (Geschmack), der mit **S** beginnt |![](media/function-remove-removeif/icecream-no-strawberry.png)<br><br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
+| **RemoveIf(&nbsp;IceCream; true )** |Entfernt alle Einträge aus der Datenquelle |![](media/function-remove-removeif/icecream-empty.png)<br><br>Die Datenquelle **IceCream** (Eiscreme) wurde geändert. |
 
 ## <a name="examples---remove-button-outside-a-gallery"></a>Beispiele: Entfernen der Schaltfläche außerhalb eines Katalogs
 
@@ -136,8 +137,8 @@ In diesem Beispiel entfernen Sie ein Element mithilfe einer *Schaltfläche* auß
 
 1. Legen **Sie die onselect** -Eigenschaft für dieses Schaltflächen-Steuerelement auf die folgende Formel fest:
 
-    ```powerapps-dot
-    Remove( Contacts, Gallery1.Selected )
+    ```powerapps-comma
+    Remove( Contacts; Gallery1.Selected )
     ```
 
     ![Festlegen der onselect-Eigenschaft des Schaltflächen-Steuer Elements](media/function-remove-removeif/gallery-button-onselect.png)
@@ -174,15 +175,15 @@ Wenn Sie bereits [Beispiel Daten vorbereitet](#prepare-for-sample-data)haben, ü
 1. Fügen Sie dem Bildschirm ein [**Button**](../controls/control-button.md) -Steuerelement hinzu.
 1. Legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
 
-    ```powerapps-dot
-    ClearCollect( SampleContacts, 
-          { 'Full Name': "Yvonne McKay (sample)",      'Primary Email': "someone_a@example.com" },
-          { 'Full Name': "Susanna Stubberod (sample)", 'Primary Email': "someone_b@example.com" },
-          { 'Full Name': "Nancy Anderson (sample)",    'Primary Email': "someone_c@example.com" },
-          { 'Full Name': "Maria Campbell (sample)",    'Primary Email': "someone_d@example.com" },
-          { 'Full Name': "Robert Lyon (sample)",       'Primary Email': "someone_e@example.com" },
-          { 'Full Name': "Paul Cannon (sample)",       'Primary Email': "someone_f@example.com" },
-          { 'Full Name': "Rene Valdes (sample)",       'Primary Email': "someone_g@example.com" } 
+    ```powerapps-comma
+    ClearCollect( SampleContacts; 
+          { 'Full Name': "Yvonne McKay (sample)";      'Primary Email': "someone_a@example.com" };
+          { 'Full Name': "Susanna Stubberod (sample)"; 'Primary Email': "someone_b@example.com" };
+          { 'Full Name': "Nancy Anderson (sample)";    'Primary Email': "someone_c@example.com" };
+          { 'Full Name': "Maria Campbell (sample)";    'Primary Email': "someone_d@example.com" };
+          { 'Full Name': "Robert Lyon (sample)";       'Primary Email': "someone_e@example.com" };
+          { 'Full Name': "Paul Cannon (sample)";       'Primary Email': "someone_f@example.com" };
+          { 'Full Name': "Rene Valdes (sample)";       'Primary Email': "someone_g@example.com" } 
     )
     ```
 1. Wählen Sie die Schaltfläche, [während Sie die Alt-Taste gedrückt halten](../keyboard-shortcuts.md#alternate-behavior).
@@ -230,7 +231,7 @@ Die Beispiel Sammlung wird erstellt, die Sie im folgenden Beispiel verwenden kö
 
 1. Wählen Sie die **Symbol** Eigenschaft für Symbol aus, und legen Sie Sie auf die folgende Formel fest, um das Symbolbild als Papierkorb Symbol zu aktualisieren:
 
-    ```powerapps-dot 
+    ```powerapps-comma 
     Icon.Trash
     ```
     
@@ -241,8 +242,8 @@ Die Beispiel Sammlung wird erstellt, die Sie im folgenden Beispiel verwenden kö
 
 1. Legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
 
-    ```powerapps-dot
-    Remove( [@Contacts], ThisItem )
+    ```powerapps-comma
+    Remove( [@Contacts]; ThisItem )
     ```
 
     > [!NOTE]
