@@ -3,7 +3,7 @@ title: 'Beispiel: Abrufen von Wechselkursen (Common Data Service) | Microsoft-Do
 description: Dieses Beispiel veranschaulicht, wie Sie eine neue Währung erstellen und den Wechselkurs abrufen und anzeigen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 62a85f5a13bd05cf4b730e747a71a1b88467055b
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: e30973cef9bdf195e10b7700ac7eecf29eceade6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934226"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155650"
 ---
 # <a name="sample-retrieve-currency-exchange-rate"></a>Beispiel: Abrufen von Wechselkursen
 

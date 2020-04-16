@@ -3,7 +3,7 @@ title: Verwenden einer linken äußeren Verknüpfung in QueryExpression für Abf
 description: Erfahren Sie, wie eine linke äußere Verknüpfung mithilfe der QueryExpression-Klasse verwendet wird, um eine Abfrage auszuführen, die die Verknüpfungstabelle filtert, und eine Abfrage zu erstellen, die Datensätze des Typs &quot;nicht in&quot; in einer Gruppe findet
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 009621e7e749255d64eae851629e5d7f0bd61e79
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 30ddf17cc593c172ee55dfa984088b781d2b9c95
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748686"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155442"
 ---
 # <a name="use-a-left-outer-join-in-queryexpression-to-query-for-records-not-in"></a>Verwenden einer linken äußeren Verknüpfung in QueryExpression für Abfragen nach Datensätzen, die „nicht in“ sind.
 

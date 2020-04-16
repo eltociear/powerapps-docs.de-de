@@ -2,8 +2,8 @@
 title: Arbeiten mit Alternativschlüsseln (Common Data Service) | Microsoft Docs
 description: Das Thema erläutert, wie Sie Alternativschlüssel für eine Entität erstellen. Sie können Alternativschlüssel programmgesteuert erstellen oder mithilfe der Anpassungstools.
 ms.custom: ''
-ms.date: 06/04/2019
-ms.reviewer: ''
+ms.date: 03/16/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bd5b71f6817aed5de4c34220a2d27e9f9cb02c86
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 03c15a27a20dc36609438d82fe4789af1dc1f95c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748416"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156270"
 ---
 # <a name="work-with-alternate-keys"></a>Arbeiten mit Alternativschlüsseln
 
@@ -52,7 +52,7 @@ Sie sollten folgende Einschränkungen berücksichtigen, wenn Alternativschlüsse
 
 - **Gültige Schlüsselgröße**  
 
-   Wenn ein Schlüssel erstellt wurde, überprüft das System, ob dieser Schlüssel von der Plattform unterstützt werden kann, u. a. auch, ob die Gesamtschlüsselgröße nicht gegen die SQL-basierten Indexeinschränkungen verstößt, zum Beispiel 900 Bytes pro Schlüssel und 16 Spalten pro Schlüssel. Wenn die Schlüsselgröße die Einschränkungen nicht erfüllt, wird eine Fehlermeldung angezeigt.  
+   Wenn ein Schlüssel erstellt wurde, überprüft das System, ob dieser Schlüssel von der Plattform unterstützt werden kann, u. a. auch, ob die Gesamtschlüsselgröße nicht gegen die SQL-basierten Indexeinschränkungen verstößt, zum Beispiel 900 Bytes pro Schlüssel und 16 Spalten pro Schlüssel. Wenn die Schlüsselgröße nicht die Einschränkungen erfüllt, wird eine Fehlermeldung angezeigt.  
 
 - **Maximale Anzahl an Alternativschlüsseldefinitionen für eine Entität**  
 
@@ -60,7 +60,7 @@ Sie sollten folgende Einschränkungen berücksichtigen, wenn Alternativschlüsse
 
 - **Unicode-Zeichen im Schlüsselwert**
 
-  Wenn die Daten innerhalb eines Felds, das in einem Alternativschlüssel verwendet wird, eines der folgenden Zeichen enthält `<`,`>`,`*`,`%`,`&`,`:`,`\\` funktionieren Abruf- oder Patchaktionen nicht.  Wenn Sie nur Eindeutigkeit benötigen, reicht dieser Ansatz aus, wenn Sie jedoch diese Schlüssel im Rahmen der Datenintegration benötigen, sollten Sie den Schlüssel besser in Feldern ohne Daten mit diesen Zeichen erstellen.
+  Wenn die Daten innerhalb eines Feldes, das in einem Alternativschlüssel verwendet wird, eines der folgenden Zeichen enthält `/`,`<`,`>`,`*`,`%`,`&`,`:`,`\\`, funktionieren Abruf- oder Patchaktionen nicht.  Wenn Sie nur Eindeutigkeit benötigen, reicht dieser Ansatz aus, wenn Sie jedoch diese Schlüssel im Rahmen der Datenintegration benötigen, sollten Sie den Schlüssel besser in Feldern ohne Daten mit diesen Zeichen erstellen.
 
 <a name="BKMK_crud"></a>   
 
@@ -94,3 +94,4 @@ Wenn der Alternativschlüssel gelöscht wird, während ein Indexerstellungsauftr
  [Verwenden von Alternativschlüsseln](use-alternate-key-create-record.md)<br />
  [Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung](use-change-tracking-synchronize-data-external-systems.md)<br />
  [Einen Datensatz mit Upsert einfügen oder aktualisieren](use-upsert-insert-update-record.md) [Definieren von Alternativschlüsseln für den Verweis auf Datensätze](../../maker/common-data-service/define-alternate-keys-reference-records.md)
+ 

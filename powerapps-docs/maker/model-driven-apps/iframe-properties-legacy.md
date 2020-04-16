@@ -9,7 +9,7 @@ applies_to:
 - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/18/2018
+ms.date: 03/18/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 1b7e6a0c-18a9-47e2-aa7d-0cffb8c93b19
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7c4d4348726dfb53b0b54e3a8d86a1809a568b7b
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 0775689b2edab8cdbee1b9a595ff73e56ee9af9b
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875000"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166743"
 ---
 # <a name="iframe-properties-for-model-driven-app-main-forms"></a>iFrame-Eigenschaften für Hauptformulare in modellgesteuerten Apps
 
@@ -35,9 +35,14 @@ Gehen Sie folgendermaßen vor, um die iFrame-Eigenschaften anzuzeigen.
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**. 
 
-3. Öffnen Sie in der Liste der Formulare ein Formular des Typs **Haupt**. Klicken Sie dann auf der Registerkarte **Einfügen** auf IFRAME, um die IFRAME-Eigenschaft anzuzeigen.
+3. Öffnen Sie in der Liste der Formulare ein Formular des Typs **Haupt**.
 
-![iFrame-Eigenschaften](media/iframe-properties.png)
+4.  Wählen Sie **In klassischen Modus wechseln** aus, um das Formular im klassischen Formulardesigner zu bearbeiten.
+
+4.  Klicken Sie auf der Registerkarte **Einfügen** auf IFRAME, um die IFRAME-Eigenschaften anzuzeigen.
+
+      > [!div class="mx-imgBorder"] 
+      > ![iFrame-Eigenschaften](media/iframe-properties.png)
 
 
 > [!NOTE]

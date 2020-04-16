@@ -3,7 +3,7 @@ title: 'Beispiel: Hinzufügen eines Sicherheitsprinzipals (Benutzer oder Team) z
 description: Hinzufügen eines Sicherheitsprinzipals zu einer Warteschlange
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cc5c62686b936053099ab2d70673894d2ee283fe
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: a9d8b35cf3d856ed1f72f56f0640bb0dc0cb1779
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956245"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155974"
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>Beispiel: Hinzufügen eines Sicherheitsprinzipals (Benutzer oder Team) zu einer Warteschlange 
 

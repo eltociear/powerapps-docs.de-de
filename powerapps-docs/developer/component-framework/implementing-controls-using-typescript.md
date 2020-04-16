@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: e2a9ceb90ec91e7c13c50b966b3a2808d988cf31
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 3dfb75a6d4ccf70863436bae8c7c6264f96f18d8
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017368"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218543"
 ---
 # <a name="create-your-first-component"></a>Erstellen Sie Ihre erste Codekomponente 
 
@@ -25,6 +25,7 @@ Die folgenden Schritte sind erforderlich, um eine lineare Schieberegler-Codekomp
 - [Implementieren des Manifests](#implementing-manifest)
 - [Implementieren von Komponentenlogik mit Hilfe von TypeScript](#implementing-component-logic)
 - [Hinzufügen von Stilen zu Codekomponenten](#adding-style-to-the-code-component)
+- [Erstellen Ihrer Codekomponenten](#build-your-code-components)
 - [Verpacken von Codekomponenten](#packaging-your-code-components)
 - [Hinzufügen einer Komponente zu einer modellgesteuerten App](#adding-code-components-in-model-driven-apps)
 - [Hinzufügen einer Komponente zu einer Canvas-App](#adding-code-components-to-a-canvas-app)
@@ -33,14 +34,13 @@ Die folgenden Schritte sind erforderlich, um eine lineare Schieberegler-Codekomp
 
 Um ein neues Projekt zu erstellen:
 
-1. Öffnen Sie eine **Entwickler Eingabeaufforderung für VS 2017** Fenster.
-1. Erstellen Sie einen neuen Ordner für das Projekt mit dem folgenden Befehl: 
+1. Öffnen Sie eine **Entwickler Eingabeaufforderung für VS 2017** Fenster. Erstellen Sie einen neuen Ordner für das Projekt mit dem folgenden Befehl: 
     ```CLI
-    mkdir LinearComponent
+     mkdir LinearComponent
     ```
-
+                     
 1. Wechseln Sie zum Komponentenordner mit dem Befehl `cd LinearComponent`. 
-   
+         
 1. Führen Sie den Befehl aus, um ein neues Komponentenprojekt zu erstellen, indem Sie Basisparameter übergeben.
 
    ```CLI
@@ -48,7 +48,7 @@ Um ein neues Projekt zu erstellen:
     ``` 
 
 1. Installieren Sie die Projekt-Build-Tools mit dem Befehl `npm install`. 
-1. Öffnen Sie Ihren Projektordner `C:\Users\<your name>\Documents\<My_code_Component>` in einer Entwicklerumgebung Ihrer Wahl und beginnen Sie mit der Entwicklung Ihrer Codekomponente. Am schnellsten starten Sie mit Hilfe der Ausführung von `code .` über die Eingabeaufforderung, sobald Sie sich im Verzeichnis `C:\Users\<your name>\Documents\<My_code_Component>` befinden. Durch diesen Befehl wird das Komponentenprojekt in Visual Studio Code geöffnet.
+1. Öffnen Sie Ihren Projektordner in einer Entwicklerumgebung Ihrer Wahl und beginnen Sie mit der Entwicklung Ihrer Codekomponente. Die schnellste Startmöglichkeit ist es, `code .` an der Eingabeaufforderung auszuführen, sobald Sie sich im Projektverzeichnis befinden. Durch diesen Befehl wird das Komponentenprojekt in Visual Studio Code geöffnet.
 
 ## <a name="implementing-manifest"></a>Implementieren des Manifests
 
@@ -68,7 +68,7 @@ Nehmen Sie Änderungen an der vordefinierten Manifestdatei vor, wie hier gezeigt
      ```XML
       <?xml version="1.0" encoding="utf-8" ?>
       <manifest>
-      <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
+      <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="TSLinearInputComponent_Display_Key" description-key="TSLinearInputComponent_Desc_Key" control-type="standard">
      ```
 
 2. Der Knoten [Property](manifest-schema-reference/property.md) definiert die Eigenschaften der Codekomponente wie die Definition des Datentyps des Feldes. Der Eigenschaftenknoten wird als untergeordnetes Element unter dem `control`-Element angezeigt. Definieren Sie den [property](manifest-schema-reference/property.md)-Knoten wie hier gezeigt:
@@ -92,14 +92,14 @@ Nehmen Sie Änderungen an der vordefinierten Manifestdatei vor, wie hier gezeigt
       <resources>
         <code path="index.ts" order="1" />
         <css path="css/TS_LinearInputComponent.css" order="1" />
-        </resources>
+      </resources>
         ```
       Die gesamte Manifestdatei sollte in etwa so aussehen: 
 
      ```XML
       <?xml version="1.0" encoding="utf-8" ?>
       <manifest>
-      <control namespace="SampleNamespace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
+      <control namespace="SampleNamespace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="TSLinearInputComponent_Display_Key" description-key="TSLinearInputComponent_Desc_Key" control-type="standard">
         <type-group name="numbers">
           <type>Whole.None</type>
           <type>Currency</type>
@@ -116,10 +116,6 @@ Nehmen Sie Änderungen an der vordefinierten Manifestdatei vor, wie hier gezeigt
      ```
 
 4. Speichern Sie die Änderungen in der `ControlManifest.Input.xml`-Datei.
-5. Jetzt können Sie einen neuen Ordner innerhalb des `TSLinearInputComponent`-Ordners erstellen und ihn mit **css** benennen.
-6. Erstellen Sie eine CSS-Datei zu [Hinzufügen eines Stylings zur Codekomponente](#adding-style-to-the-code-component).
-7. Erstellen Sie das Komponentenprojekt mit dem Befehl `npm run build`.
-8. Das Build generiert eine aktualisierte TypeScript-Typdeklinationsdatei unter dem Ordner `TSLinearInputComponent/generated`.
 
 ## <a name="implementing-component-logic"></a>Implementieren von Komponentenlogik
 
@@ -232,12 +228,7 @@ export class TSLinearInputComponent
 
 ```
 
-3. Erstellen Sie das Projekt mit dem Befehl `npm run build` neu. 
- 
-4. Die Komponente wird in den Ordner `out/controls/TSLinearInputComponent` kompiliert. Die Build-Artefakte umfassen:
-
-   - bundle.js – Gebündelter Komponentenquellcode. 
-   - ControlManifest.xml – Tatsächliche Komponentenmanifestdatei, die in die Common Data Service-Organisation hochgeladen wird.
+3. Speichern Sie die Änderung in der `index.ts`-Datei.
 
 ## <a name="adding-style-to-the-code-component"></a>Hinzufügen eines Styles zur Codekomponente
 
@@ -245,7 +236,7 @@ Entwickler und App-Ersteller können mit CSS ihr Styling zur visuellen Darstellu
 
 1. Erstellen Sie einen neuen `css`-Unterordner im `TSLinearInputComponent`-Ordner. 
 2. Erstellen Sie eine neue `TS_LinearInputComponent.css`-Datei im `css`-Unterordner. 
-3. Fügen Sie der `TS_LinearInputComponent.css`-Datei den folgenden Stilinhalt hinzu:
+3. Fügen Sie der `TS_LinearInputComponent.css`-Datei den folgenden Stilinhalt hinzu:""""""""
 
     ```CSS
     .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider {
@@ -325,11 +316,19 @@ Entwickler und App-Ersteller können mit CSS ihr Styling zur visuellen Darstellu
       <css path="css/TS_LinearInputComponent.css" order="1"/> 
     </resources> 
      ```
-7. Erstellen Sie das Projekt mit dem folgenden Befehl neu: 
-   ```CLI
-   npm run build
-   ```
-8. Überprüfen Sie die Buildausgabe unter **./out/controls/TSLinearInputComponent** und beachten Sie, dass die Datei **TS_LinearInputComponent.css** nun mit den kompilierten Build-Artefakten enthalten ist. 
+
+## <a name="build-your-code-components"></a>Erstellen Ihrer Codekomponenten
+
+Nachdem Sie das Hinzufügen von Manifest, Komponentenlogik und Stil abgeschlossen haben, erstellen Sie die Codekomponenten mit dem folgenden Befehl:
+```
+npm run build
+```
+
+Um das Komponentenprojekt zu erstellen, öffnen Sie alternativ den Projektordner, der `package.json` in Visual Studio Code enthält, und verwenden Sie den (Strg-Umschalt-B) Befehl. Wählen Sie dann die Build-Optionen aus. Das Build generiert eine aktualisierte TypeScript-Typdeklinationsdatei unter dem Ordner `TSLinearInputComponent/generated`.
+Die Komponente wird in den Ordner `out/controls/TSLinearInputComponent` kompiliert. Die Build-Artefakte umfassen:
+
+   - bundle.js – Gebündelter Komponentenquellcode. 
+   - ControlManifest.xml – Tatsächliche Komponentenmanifestdatei, die in die Common Data Service-Organisation hochgeladen wird.
 
 ## <a name="debugging-your-code-component"></a>Debuggen Ihrer Codekomponente
 
@@ -365,11 +364,14 @@ Führen Sie diese Schritte aus, um eine [Lösung](https://docs.microsoft.com/pow
      msbuild /t:restore
     ```
 
-5. Führen Sie erneut den folgenden Befehl msbuild aus:
+5. Führen Sie erneut den folgenden Befehl aus:
     ```CLI
      msbuild
     ```
-
+    > [!TIP]
+    > Sie erhalten den Fehler: *Verwenden Sie nicht die `eval`-Funktion oder ihre funktionalen Äquivalente*, wenn Sie die Lösungsdatei mit dem `msbuild`-Befehl erstellen, in Common Data Service importieren und den Lösungsprüfer ausführen.
+    > Erstellen Sie die Lösungsdatei mit dem Befehl `msbuild/property:configuration:Release` neu, importieren Sie die Lösung erneut in Common Data Service und führen Sie den Lösungsprüfer aus.
+      
     > [!NOTE]
     > Stellen Sie sicher, dass die **NuGet-Ziele und Build-Aufgaben** überprüft werden. Um es zu aktivieren:
     > - Öffnen Sie das **Visual Studio-Installationsprogramm**.
@@ -382,15 +384,16 @@ Führen Sie diese Schritte aus, um eine [Lösung](https://docs.microsoft.com/pow
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>Hinzufügen von Codekomponenten in modellgetriebenen Anwendungen
 
-Um eine Codekomponente wie eine lineare Eingangskomponente hinzuzufügen, führen Sie die im Thema [Komponenten zu Feldern und Entitäten hinzufügen](add-custom-controls-to-a-field-or-entity.md) genannten Schritte aus.
+Führen Sie die im Artikel [Hinzufügen von Komponenten zu Feldern und Entitäten](add-custom-controls-to-a-field-or-entity.md) genannten Schritte aus, um eine Codekomponente wie eine lineare Eingabekomponente hinzuzufügen.
 
 ## <a name="adding-code-components-to-a-canvas-app"></a>Hinzufügen von Codekomponenten zu einer Canvas-App
 
-Um die Codekomponenten zu einer Canvas-App hinzuzufügen, befolgen Sie die Schritte in dem Thema [Hinzufügen von Codekomponenten zu einer Canvas-App](component-framework-for-canvas-apps.md#add-components-to-a-canvas-app).
+Befolgen Sie die Schritte im Artikel [Hinzufügen von Codekomponenten zu einer Canvas-App](component-framework-for-canvas-apps.md#add-components-to-a-canvas-app), um die Codekomponenten zu einer Canvas-App hinzuzufügen.
 
 ### <a name="see-also"></a>Siehe auch
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
+[Erlernen des Power Apps component framework](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)<br/>
 [Aktualisieren vorhandener Power Apps component framework-Komponenten](updating-existing-controls.md)<br/>
 [Power Apps Build Tools](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-overview)<br/>
 [Power Apps component framework-API-Referenz](reference/index.md)<br/>

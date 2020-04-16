@@ -3,7 +3,7 @@ title: Generieren von Klassen mit früher Bindung für den Organisationsservice 
 description: CrmSvcUtil.exe ist ein Befehlszeilen-Codegenerierungstool für die Verwendung mit Common Data Service. Dieses Tool erstellt .NET-Framework-Klassen mit früher Bindung, die das Entitätsdatenmodell darstellen, das von Common Data Service verwendet wird.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: be14add9a5c63a63583e18dba45c4b4abc867097
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6e8b739c7c3b5583b5e0cfe56f2211fbf70811de
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748541"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156050"
 ---
 # <a name="generate-early-bound-classes-for-the-organization-service"></a>Generieren von Klassen mit früher Bindung für den Organisationsdienst
 

@@ -3,7 +3,7 @@ title: Organisieren Ihres Teams, um Lösungen zu entwickeln (Common Data Service
 description: Dieses Dokument enthält einige Strategien, die verwendet werden, wenn mehrere Entwickler an derselben Lösung arbeiten
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a53a0d1568e271ec49b44d757666d0365c246ec6
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 48439c2ef459a3714cd40be7a303aaff0fbf56b6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752662"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155406"
 ---
 # <a name="organize-your-team-to-develop-solutions"></a>Organisieren des Teams zum Entwickeln von Lösungen
 

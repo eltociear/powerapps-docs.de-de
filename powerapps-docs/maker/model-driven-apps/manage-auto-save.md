@@ -1,7 +1,7 @@
 ---
 title: Deaktivieren des automatischen Speicherns in einer modellgesteuerten App mit Power Apps | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 03/19/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2f09cd488165643a3336c526050abc0b9223b49f
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 86d70ba6d91fdd0179932401ceffd619ae50ce7e
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875660"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166704"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>Deaktivieren des automatischen Speicherns in einer modellgesteuerten App
 
@@ -34,15 +34,15 @@ Die automatische Speicherung hilft App-Benutzern, sich auf ihre Arbeit zu konzen
 <a name="BKMK_HowAutoSaveWorks"></a>   
 
 ## <a name="how-auto-save-works"></a>Wie die automatische Speicherung funktioniert  
- Standardmäßig ist für alle Hauptformulare für [aktualisierte Entitäten und klassische Entitäten](create-design-forms.md#updated-versus-classic-entities) die automatische Speicherung aktiviert. Nachdem ein Datensatz erstellt (zum ersten Mal gespeichert) wurde, werden alle Änderungen an einem Formular automatisch dreißig Sekunden nach der Änderung gespeichert. Wenn keine Änderungen im Formular vorgenommen werden, wird die automatische Speichern nicht durchgeführt, solange das Formular geöffnet ist. Nachdem eine Änderung vorgenommen wurde, beginnt der 30-Sekunden-Zeitraum vor der nächsten automatischen Speicherung erneut. Das Feld, das gerade bearbeitet wird, ist von der automatischen Speicherung ausgeschlossen. Wenn ein anderer Benutzer den gleichen Datensatz aktualisiert hat, während Sie ihn bearbeiten, werden diese Änderungen abgerufen und bei der automatischen Speicherung in dem Formular angezeigt.  
+ Standardmäßig ist für alle Hauptformulare für [aktualisierte Entitäten und klassische Entitäten](create-design-forms.md#updated-versus-classic-entities) die automatische Speicherung aktiviert. Nachdem ein Datensatz erstellt (zum ersten Mal gespeichert) wurde, werden alle Änderungen an einem Formular automatisch dreißig Sekunden nach der Änderung gespeichert. Wenn keine Änderungen im Formular vorgenommen werden, wird das automatische Speichern nicht durchgeführt, solange das Formular geöffnet ist. Nachdem eine Änderung vorgenommen wurde, beginnt der 30-Sekunden-Zeitraum vor der nächsten automatischen Speicherung erneut. Das Feld, das gerade bearbeitet wird, ist von der automatischen Speicherung ausgeschlossen. Wenn ein anderer Benutzer den gleichen Datensatz aktualisiert hat, während Sie ihn bearbeiten, werden diese Änderungen abgerufen und bei der automatischen Speicherung in dem Formular angezeigt.  
   
  Wenn die automatische Speicherung aktiviert ist, wird die Speichern-Schaltfläche nur für die erste Speicherung des Datensatzes angezeigt. Nachdem der Datensatz erstellt wurde, wird die Speichern-Schaltfläche auf der Befehlsleiste nicht angezeigt, Sie sehen jedoch eine ![Schaltfläche „Automatisches Speichern“](media/auto-save-icon.png "Schaltfläche "Automatisches Speichern"")-Schaltfläche in der rechten unteren Ecke, die anzeigt, ob nicht gespeicherte Änderungen vorhanden sind. Dieses Steuerelement wird auch angezeigt, wenn die automatische Speicherung deaktiviert ist.  
   
- Sie können diese Schaltfläche auswählen, um den Datensatz zu speichern und gleichzeitig Daten im Formular zu aktualisieren. Ob die automatische Speicherung aktiviert ist oder nicht: Wenn Sie von einem Datensatz wegnavigieren oder ein separates Fenster mit einem Datensatz schließen, wird der Datensatz gespeichert. Die Schaltfläche **Speichern und schließen**, die in Formularen für nicht gespeicherte Entitäten angezeigt wird, wird nicht benötigt.  
+ Sie können diese Schaltfläche auswählen, um den Datensatz zu speichern und gleichzeitig Daten im Formular zu aktualisieren. Ob die automatische Speicherung aktiviert ist oder nicht: Wenn Sie von einem Datensatz wegnavigieren oder ein separates Fenster mit einem Datensatz schließen, wird der Datensatz gespeichert. Die Schaltfläche **Speichern und Schließen**, die in Formularen für nicht aktualisierte Entitäten angezeigt wird, wird nicht benötigt.  
   
 <a name="BKMK_AutoSave"></a>   
 ## <a name="should-you-disable-auto-save"></a>Sollten Sie die automatische Speicherung deaktivieren?  
- Wenn Sie Workflows, Plug-Ins oder Formularskripts haben, die ausgeführt werden, wenn ein Datensatz gespeichert wird, werden diese bei jeder automatischen Speicherung ausgeführt. Dieses kann u. U. zu unerwünschtem Verhalten führen, wenn diese Erweiterungen nicht zur Arbeit mit der automatischen Speicherung ausgelegt wurden. Unabhängig davon, ob die automatische Speicherung aktiviert ist, sollten Plugins, Workflows und Formularskripte so entworfen werden, dass sie nach bestimmten Änderungen suchen und nicht unterschiedslos bei einem bestimmten Ereignis ausgelöst werden.  
+ Wenn Sie Workflows, Plug-Ins oder Formularskripts haben, die ausgeführt werden, wenn ein Datensatz gespeichert wird, werden diese bei jeder automatischen Speicherung ausgeführt. Dieses kann u. U. zu unerwünschtem Verhalten führen, wenn diese Erweiterungen nicht zur Arbeit mit der automatischen Speicherung ausgelegt wurden. Unabhängig davon, ob die automatische Speicherung aktiviert ist, sollten Plugins, Workflows und Formularskripte so entworfen werden, dass sie nach bestimmten Änderungen suchen und nicht unterschiedslos bei jedem Speichern-Ereignis ausgelöst werden.  
   
  Wenn Sie für eine Entität die Überwachung konfiguriert haben, wird jede Speicherung wie eine separate Aktualisierung behandelt. Wenn jemand auf einem Formular mit nicht gespeicherten Änderungen länger als dreißig Sekunden verweilt, sehen Sie nur dann einen zusätzlichen Eintrag, wenn dieser Benutzer nach der automatischen Speicherung weitere Daten hinzufügt. Wenn Sie Berichte haben, die von der Überwachung von Daten abhängen und jede Speicherung als individuelle Manipulation eines Datensatzes behandeln, sehen Sie möglicherweise eine Zunahme der Zahl der Manipulationen. Wenn Sie dieses Konzept verwenden, sollten Sie bedenken, dass, ob mit oder ohne automatische Speicherung, individuelles Benutzerverhalten dies zu einer unzuverlässigen Metrik macht.  
   
@@ -61,15 +61,17 @@ Die automatische Speicherung hilft App-Benutzern, sich auf ihre Arbeit zu konzen
  Wenn Sie die automatische Speicherung für bestimmte Entitätsformulare deaktivieren möchten, können Sie dem `OnSave`-Ereignis in einer Entität Code hinzufügen.  
   
 > [!NOTE]
->  Die automatische Speicherung wird für das Formular deaktiviert, die Daten werden aber weiterhin gespeichert, wenn Sie die ![Schaltfläche „Automatisches Speichern“](media/auto-save-icon.png "ASchaltfläche „Automatisches Speichern“)-Schaltfläche rechts unten auswählen. Wenn Sie versuchen, von einem Formular wegzunavigieren oder ein Formular zu schließen, in dem Daten geändert wurden, werden Sie aufgefordert, die Änderungen zu speichern, bevor Sie dies tun können.  
+>  Die automatische Speicherung wird für das Formular deaktiviert, die Daten werden aber weiterhin gespeichert, wenn Sie die ![Schaltfläche „Automatisches Speichern“](media/auto-save-icon.png "Schaltfläche "Automatisches Speichern"")-Schaltfläche rechts unten auswählen. Wenn Sie versuchen, von einem Formular wegzunavigieren oder ein Formular zu schließen, in dem Daten geändert wurden, werden Sie aufgefordert, die Änderungen zu speichern, bevor Sie dies tun können.  
   
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.  
   
-3.  Öffnen Sie das Formular, das Sie bearbeiten möchten.  
+3.  Öffnen Sie das Formular, das Sie bearbeiten möchten.
+
+4.  Wählen Sie **In klassischen Modus wechseln** aus, um das Formular im klassischen Formulardesigner zu bearbeiten.
   
-4.  Erstellen Sie eine JavaScript-Webressource, und fügen Sie sie dem Formular hinzu:  
+5.  Erstellen Sie eine JavaScript-Webressource, und fügen Sie sie dem Formular hinzu:  
   
     1.  Wählen Sie im Formulareditor in der Gruppe **Formular** den Eintrag **Formulareigenschaften** aus.  
   
@@ -105,7 +107,7 @@ Die automatische Speicherung hilft App-Benutzern, sich auf ihre Arbeit zu konzen
   
     9. Die Webressource, die Sie erstellt haben, ist jetzt im Dialogfeld **Datensatz suchen** ausgewählt. Wählen Sie **Hinzufügen** aus, um das Dialogfeld zu schließen.  
   
-5.  Konfigurieren des OnSave-Ereignisses:  
+6.  Konfigurieren des OnSave-Ereignisses:  
   
     1.  Setzen Sie im Fenster **Formulareigenschaften** im Abschnitt **Ereignishandler** das **Ereignis** auf **OnSave**.  
   
@@ -113,7 +115,7 @@ Die automatische Speicherung hilft App-Benutzern, sich auf ihre Arbeit zu konzen
   
     3.  Setzen Sie im Fenster **Handlereigenschaften** **Bibliothek** auf die Webressource, die Sie im vorherigen Schritt hinzugefügt haben.  
   
-    4.  Geben Sie "`preventAutoSave`" in das Feld **Funktion** ein. Dabei die Groß-/Kleinschreibung beachten. Geben Sie keine Anführungszeichen ein.  
+    4.  Geben Sie „`preventAutoSave`“ in das Feld **Funktion** ein. Dabei die Groß-/Kleinschreibung beachten. Geben Sie keine Anführungszeichen ein.  
   
     5.  Stellen Sie sicher, dass **Aktiviert** markiert ist.  
   
@@ -122,7 +124,7 @@ Die automatische Speicherung hilft App-Benutzern, sich auf ihre Arbeit zu konzen
         > [!IMPORTANT]
         >  Andernfalls funktioniert das Skript nicht.  
   
-         Das Dialogfeld **Handlereigenschaften** sollte so aussehen. Das Anpassungspräfix "new_ " kann je nach dem für den Standardherausgeber für Ihre Organisation eingerichteten Anpassungspräfix abweichen.  
+         Das Dialogfeld **Handlereigenschaften** sollte so aussehen. Das Anpassungspräfix „new_“ kann je nach dem für den Standardherausgeber für Ihre Organisation eingerichteten Anpassungspräfix abweichen.  
   
          ![OnSave-Ereignishandler zur Verhinderung der automatischen Speicherung in Dynamics 365](media/prevent-auto-save-script.png "OnSave-Ereignishandler zur Verhinderung der automatischen Speicherung in Dynamics 365")  
   
@@ -130,11 +132,11 @@ Die automatische Speicherung hilft App-Benutzern, sich auf ihre Arbeit zu konzen
   
     8.  Wenn noch weitere Ereignishandler für das Ereignis `OnSave` vorhanden sind, verwenden Sie die grünen Pfeile, um diesen nach oben zu verschieben.  
   
-6. Wählen Sie **OK** aus, um das Dialogfeld **Formulareigenschaften** zu schließen.  
+7. Wählen Sie **OK** aus, um das Dialogfeld **Formulareigenschaften** zu schließen.  
   
-7. Klicken Sie auf **Speichern und schließen**, um das Formular zu schließen.  
+8. Klicken Sie auf **Speichern und schließen**, um das Formular zu schließen.  
   
-8. Wählen Sie im Projektmappen-Explorer die Option **Alle Anpassungen veröffentlichen** aus.  
+9. Wählen Sie im Projektmappen-Explorer die Option **Alle Anpassungen veröffentlichen** aus.  
   
  Nachdem Sie dieses Skript auf das `OnSave`-Ereignis angewendet haben, erscheint dann, wenn Benutzer mit diesem Formular einen Datensatz bearbeiten, in der unteren rechten Ecke des Formulars die Meldung **nicht gespeicherte Änderungen**, genau so, als ob die automatische Speicherung nicht aktiviert wäre. Diese Meldung verschwindet jedoch erst, wenn Benutzer die Schaltfläche ![Schaltfläche „Automatisches Speichern“](media/auto-save-icon.png "Schaltfläche "Automatisches Speichern"") daneben auswählen.  
   

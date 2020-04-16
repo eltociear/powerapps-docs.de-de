@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 6c56f40ebc741e591eae1bd6a0b1d0dbdc5296f8
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 606f76c4956a5f2249d8d42f78ade3e91c1cda64
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091217"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162071"
 ---
 # <a name="implementing-the-facepile-component"></a>Implementieren der FacePile-Komponente
 
@@ -135,7 +135,7 @@ export class ReactStandardControl
 
   /**
    * It is called by the framework prior to a control receiving new data.
-   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as “bound” or “output”
+   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as "bound" or "output"
    */
   public getOutputs(): IOutputs {
     return {
@@ -420,6 +420,7 @@ export const TestImages = {
 
 ### <a name="related-topics"></a>Verwandte Themen
 
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Beispielkomponenten verwenden](../use-sample-components.md)<br/>
 [Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)<br />
 [Power Apps component framework-API-Referenz](../reference/index.md)<br />

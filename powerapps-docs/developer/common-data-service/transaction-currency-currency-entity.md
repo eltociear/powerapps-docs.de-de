@@ -3,7 +3,7 @@ title: Entität der Transaktionswährung (Währung) (Common Data Service) | Micr
 description: Erfahren Sie mehr über die Transaktionswährung, die eine Mehrfachwährungsfunktion ist und es Benutzern ermöglicht, finanzielle Transaktionen in mehreren Währungen auszuführen. Mehrere Datensätze in verschiedenen Transaktionswährungen können in einer einheitlichen Währung aggregiert, verglichen oder analysiert werden, indem die Basiswährung verwendet wird.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 28dac174671b4577a42e488afa4e007f7e0d9212
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9744ed3acb2758cede516f55f1eba764d366c8ab
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748635"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155242"
 ---
 # <a name="transaction-currency-currency-entity"></a>Entität der Transaktionswährung (Währung)
 

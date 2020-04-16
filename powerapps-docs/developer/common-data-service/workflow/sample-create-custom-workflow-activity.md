@@ -3,7 +3,7 @@ title: 'Beispiel: Eine benutzerdefinierte Workflowaktivität erstellen (Common D
 description: Dieses Beispiel zeigt, wie Sie eine benutzerdefinierte Workflowaktivität schreiben, die eine neue Firma sowie eine Aufgabe für die Firma erstellen kann. Dieses Beispiel verwendet frühere Bindungen.
 ms.custom: ''
 ms.date: 1/28/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa3766bd8d034b66bb56ff0d4b12b529972eb981
-ms.sourcegitcommit: 4d858e628c89d245317d6192801d136f3591ea52
+ms.openlocfilehash: d54298423488ee67ecd011fc413dac254677fd81
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "2994581"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154926"
 ---
 # <a name="sample-create-a-custom-workflow-activity"></a>Beispiel: Eine benutzerdefinierte Workflowaktivität erstellen
 

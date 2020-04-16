@@ -3,7 +3,7 @@ title: Meldungen für Entitätsbeziehungen-Metadaten (Common Data Service) | Mic
 description: In diesem Artikel sind die Meldungen aufgeführt, die Sie verwenden können, um Entitätsmetadatenbeziehungen mithilfe von Web API und Organisationservice zu erstellen, abzurufen, zu aktualisieren und zu löschen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e574711366f7f47cdce758867293a17cb01bf3e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 88ced3454045917012c3736dcc6faad5dfcdf091
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748294"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156210"
 ---
 # <a name="entity-relationship-metadata-messages"></a>Entitätsbeziehungsmetadatennachrichten
 

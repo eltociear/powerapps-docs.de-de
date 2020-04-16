@@ -3,7 +3,7 @@ title: Einen Datensatz mit Upsert einfügen oder aktualisieren (Common Data Serv
 description: Die UpsertRequest(Update oder Insert)-Meldung hilft Ihnen, verschiedene Datenintegrationsszenarien zu vereinfachen, in denen Sie nicht wissen, ob ein Datensatz bereits in Dynamics 365 existiert. In solchen Fällen wissen Sie nicht, ob Sie einen UpdateRequest- oder CreateRequest-Vorgang aufrufen müssen. Dies führt dazu, dass bei der Abfrage des Datensatzes zuerst bestimmt werden muss, ob er vorhanden ist, bevor der entsprechende Vorgang ausgeführt wird. Die UpsertRequest-Meldung hilft Ihnen, dieses zu Problem beheben
 ms.custom: ''
 ms.date: 02/23/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67b8793ae57633d6e5ffa15b1aa68f4104829c67
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: aa262c8371af0b0154269f2fe7b47b9308f0f577
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753710"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155150"
 ---
 # <a name="use-upsert-to-insert-or-update-a-record"></a>Einen Datensatz mit Upsert einfügen oder aktualisieren
 

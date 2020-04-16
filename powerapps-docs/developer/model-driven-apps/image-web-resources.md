@@ -2,7 +2,7 @@
 title: Webbildressourcen (modellgesteuerte Apps) | Microsoft Docs
 description: Infos zu Bildwebressourcen, um Bilder zur Verwendung bereitzustellen.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,18 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a31cdc5c3c987f68ab9e46aef985501737d3c0f9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b87b36d0262a3bf634b9d8e22cc79f7f1816373
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748462"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3119756"
 ---
 # <a name="image-web-resources"></a>Bildwebressourcen
 
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/image-web-resources -->
-
-Verwenden von Bildwebressourcen, um  Bilder zur Verwendung in modellgesteuerten Apps  bereitzustellen.  
+Verwenden von Bildwebressourcen, um Bilder zur Verwendung in modellgesteuerten Apps bereitzustellen.  
 
 Es gibt 5 Arten von Bild-Webressourcen: 
 * PNG-Format
@@ -48,6 +46,9 @@ Es gibt 5 Arten von Bild-Webressourcen:
 - Hintergrundbilder, die von CSS-Webressourcen verwendet werden  
 
 Verwenden Sie Vektorformat (SVG)-Webressourcen für alle Symbole, die in der Anwendung angezeigt werden. Vektorbilder werden als skalierbare Vektorgrafiken (Scalable Vector Graphics, SVG), ein XML-basiertes Vektorbildformat, definiert. Der Vorteil von Vektorbildern gegenüber anderen Bildwebressourcen ist ihre Skalierbarkeit. Sie können ein Vektorbild definieren und es wiederverwenden, anstatt Bilder in mehreren Größen zu bereitzustellen. Sie verwenden diese mit einer neuen <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IconVectorName> Eigenschaft zum Definieren des Symbols einer benutzerdefinierten Entität anstelle der `IconLargeName`, `IconMediumName` oder `IconSmallName`-Eigenschaften.
+
+> [!NOTE]
+> Vektorformat (SVG)-Webressourcen werden wie [Skript (JScript)](/powerapps/developer/model-driven-apps/script-jscript-web-resources)-Webressourcen behandelt und weisen die gleichen Sicherheitsrisiken wie Skript (JScript)-Webressourcen auf, da SVG-Dateien das Einbetten von JScript ermöglichen.
   
 <a name="BKMK_Limitations"></a>   
 ## <a name="limitations-of-image-web-resources"></a>Einschränkungen von Bildwebressourcen  

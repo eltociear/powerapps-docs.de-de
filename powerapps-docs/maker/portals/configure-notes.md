@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 03/24/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 97c049394bac97106b6de970d40f07321ed927bd
-ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
+ms.openlocfilehash: 11bd758bae85e8af91dc8c821d9a7083755e30b5
+ms.sourcegitcommit: ee95def32000accdb58a13492f0d0cec1770d98c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "3069625"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165534"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Konfigurieren von Hinweisen für Entitätsformulare und Internetformulare in Portalen
 
@@ -160,4 +160,4 @@ Wenn Sie ein benutzerdefiniertes Formular erstellt und den Abschnitt „Notizen�
 Webformularnotizen werden genau wie [Entitätsformularnotizen](#notes-configuration-for-entity-forms) konfiguriert. Erstellen Sie zunächst einen Metadatendatensatz für den Webformularschritt, der eine Notiz aufweist, und fügen Sie Konfigurationsmetadaten hinzu.
 
 > [!NOTE]
-> Der Beschreibung der Notizen muss das Präfix *WEB* (d.h. das Schlüsselwort „WEB“ mit einem Sternchen (*) davor und danach) vorangestellt werden, damit sie im Portal angezeigt werden können.
+> Der Beschreibung der Notizen muss **\*WEB\*** (*WEB-Schlüsselwort mit Sternchen (\*) vorher und nachher*) vorangestellt werden, um auf dem Portal angezeigt zu werden.

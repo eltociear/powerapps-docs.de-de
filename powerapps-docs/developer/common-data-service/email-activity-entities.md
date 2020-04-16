@@ -3,7 +3,7 @@ title: E-Mail-Aktivitäten (Common Data Service) | Microsoft Docs
 description: Mithilfe der E-Mail-Aktivität in Dynamics 365 können Sie die E-Mail-Kommunikation mit Kunden nachverfolgen und verwalten.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3cc31d8cc572eae36d42535160cffab287098ca5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 438f34c54b0c9aa188557a709b4ff8ccf9df481a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748221"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156226"
 ---
 # <a name="email-activity-entities"></a>E-Mail-Aktivitätsentitäten
 

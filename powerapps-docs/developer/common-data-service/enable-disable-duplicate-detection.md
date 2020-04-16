@@ -3,7 +3,7 @@ title: Aktivieren und Deaktivieren der Duplikaterkennung (Common Data Service) |
 description: Dieses Thema enthält Informationen dazu, wie Sie die Duplikaterkennung für alle Entitäten in einer Organisation, für eine bestimmte Entität oder für Einzelgeschäfte aktivieren und wie Sie diese global oder für einen Entitätstyp deaktivieren, indem die Veröffentlichung der Duplikaterkennungsregeln rückgängig gemacht wird oder indem die veröffentlichten Regeln gelöscht werden.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 381cb4eb4a9f5372e218d71a7372f0161605f950
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b1690e7d9d000770823e6d0164a1bf0812054bc3
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748219"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156222"
 ---
 # <a name="enable-and-disable-duplicate-detection"></a>Aktivieren und Deaktivieren der Duplikaterkennung
 

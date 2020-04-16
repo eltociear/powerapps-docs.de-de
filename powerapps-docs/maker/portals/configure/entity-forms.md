@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/22/2019
+ms.date: 03/11/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: feb982b47ddcb2212e43c55f2e48e9dd9cb3b3e1
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 372b710115609115e8090d21821c45a1037472ab
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977047"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3125571"
 ---
 # <a name="about-entity-forms"></a>Über Entitätsformulare
 
@@ -54,35 +54,35 @@ Um Ihre Formulare zu sichern, müssen Sie Entitätsberechtigungen erstellen, die
 |-----|----------|
 |Name|Der beschreibende Name des Datensatzes. In diesem Feld ist ein Eintrag erforderlich.|
 |Entitätsname|Der Name der Entität, aus der das Formular geladen wird. In diesem Feld ist ein Eintrag erforderlich.|
-|Formularname| Der Name des Formulars auf der Zielentität, das gerendert werden soll. In diesem Feld ist ein Eintrag erforderlich.|
-|Registerkartenname|  Optionaler Name einer Registerkarte in einem Formular, das für eine bestimmte Entität gerendert werden soll.|
-|Modus|Einer der folgenden Werte:<ul><li>Einfügen</li><li>Bearbeiten</li><li>Schreibgeschützt</li></ul>Die Auswahl _Einfügen_ zeigt an, dass das Formular nach der Übermittlung einen neuen Datensatz einfügen soll. Die Angabe _Bearbeiten_ zeigt an, dass das Formular einen vorhandenen Datensatz bearbeiten soll. Die Auswahl _Schreibgeschützt_ gibt an, dass das Formular ein nicht bearbeitbares Formular eines vorhandenen Datensatzes anzeigen soll. _Bearbeiten_ und _Schreibgeschützt_ erfordern, dass ein Quelldatensatz vorhanden ist und die Parameter in den Feldern "Datensatzquelltyp" und "Abfragezeichenfolgen-Parametername für Datensatz-ID" angegeben werden, um den entsprechenden Datensatz auszuwählen, wenn das Formular Portal geladen wird.|
+|Formularname|    Der Name des Formulars auf der Zielentität, das gerendert werden soll. In diesem Feld ist ein Eintrag erforderlich.|
+|Registerkartenname|    Optionaler Name einer Registerkarte in einem Formular, das für eine bestimmte Entität gerendert werden soll.|
+|Modus|Einer der folgenden Werte:<ul><li>Einfügen</li><li>Bearbeiten</li><li>Schreibgeschützt</li></ul>Die Auswahl _Einfügen_ zeigt an, dass das Formular nach der Übermittlung einen neuen Datensatz einfügen soll. Die Angabe _Bearbeiten_ zeigt an, dass das Formular einen vorhandenen Datensatz bearbeiten soll. Das Auswahl _Schreibgeschützt_ gibt an, dass das Formular ein nicht bearbeitbares Formular eines vorhandenen Datensatzes anzeigen soll. _Bearbeiten_ und _Schreibgeschützt_ erfordern, dass ein Quelldatensatz vorhanden ist und die Parameter in den Feldern "Datensatzquelltyp" und "Abfragezeichenfolgen-Parametername für Datensatz-ID" angegeben werden, um den entsprechenden Datensatz auszuwählen, wenn das Formular Portal geladen wird.|
 |Datensatzquelltyp|Einer der folgenden Werte:<ul><li>Abfragezeichenfolge</li><li>Aktueller Portalbenutzer</li><li>Dem aktuellen Portalbenutzer zugeordneter Datensatz</li></ul>Das Auswählen der _Abfragezeichenfolge_ erfordert einen Parameternamen, der in der Abfragezeichenfolge derURL des Formulars angegeben werden muss. Dies kann im Feld "Abfragezeichenfolgen-Parametername für Datensatz-ID"angegeben werden.<br>Die Auswahl _Aktueller Portalbenutzer_ ruft den Portalbenutzerdatensatz des aktuellen authentifizierten Benutzers ab.<br>Die Auswahl von _Datensatz aktuellem Portalbenutzer zugeordnet_ ruft den Portalbenutzerdatensatz für den aktuellen authentifizierten Benutzer ab und ruft dann den Datensatz für die bestimmte Beziehung ab, wie im Feld "Beziehungsname" angegeben.|
-|Abfragezeichenfolgen-Parametername für Datensatz-ID| Ein Parametername, der in der Abfragezeichenfolge der URL der Webseite angegeben wird und dieses Entitätsformular umfasst.|
-|Beziehungsname| Erforderlich, wenn der Datensatzquelltyp ein Datensatz ist, der dem aktuellen Portalbenutzer zugeordnet ist. Der logische Name der Beziehung zwischen dem aktuellen Portalbenutzerdatensatz und dem Zieldatensatz. Hier muss derselbe Entitätstyp zurückgegeben werden, wie im Feld "Entitätsname" angegeben.|
-|Erstellen zulassen, falls NULL|  Ein optionaler Boolescher Wert ist verfügbar, wenn der Datensatzquelltyp "Dem aktuellen Portalbenutzer zugeordneter Datensatz" ist. "Aktiviert" gibt an, dass der Benutzer Datensätze erstmalig erstellen kann, wenn der verknüpfte Datensatz nicht vorhanden ist. Wenn kein Datensatz vorhanden ist, wird eine Ausnahme ausgelöst, da das Formular einen Datensatz zur Datenbindung benötigt.|
-|Entitätsberechtigungen aktivieren| Veranlaßt das Formular, Entitäts-Berechtigungen zu berücksichtigen. Der Standard für Abwärtskompatibilitätsgründe ist false. Wenn der Wert "true" festgelegt ist, sind explizite Berechtigungen für jeden Benutzer ERFORDERLICH, der auf das Formular zugreifen will.|
+|Abfragezeichenfolgen-Parametername für Datensatz-ID|    Ein Parametername, der in der Abfragezeichenfolge der URL der Webseite angegeben wird und dieses Entitätsformular umfasst.|
+|Beziehungsname|    Erforderlich, wenn der Datensatzquelltyp ein Datensatz ist, der dem aktuellen Portalbenutzer zugeordnet ist. Der logische Name der Beziehung zwischen dem aktuellen Portalbenutzerdatensatz und dem Zieldatensatz. Hier muss derselbe Entitätstyp zurückgegeben werden, wie im Feld "Entitätsname" angegeben.|
+|Erstellen zulassen, falls NULL|    Ein optionaler Boolescher Wert ist verfügbar, wenn der Datensatzquelltyp "Dem aktuellen Portalbenutzer zugeordneter Datensatz" ist. "Aktiviert" gibt an, dass der Benutzer Datensätze erstmalig erstellen kann, wenn der verknüpfte Datensatz nicht vorhanden ist. Wenn kein Datensatz vorhanden ist, wird eine Ausnahme ausgelöst, da das Formular einen Datensatz zur Datenbindung benötigt.|
+|Entitätsberechtigungen aktivieren|    Veranlaßt das Formular, Entitäts-Berechtigungen zu berücksichtigen. Der Standard für Abwärtskompatibilitätsgründe ist false. Wenn der Wert "true" festgelegt ist, sind explizite Berechtigungen für jeden Benutzer ERFORDERLICH, der auf das Formular zugreifen will.|
 |||
 
 ### <a name="form-options"></a>Formularoptionen
 
 |Name|Beschreibung|
 |----|---------|
-|Captcha hinzufügen|   Zeigt das Captcha an.|
-|Captcha für authentifizierte Benutzer anzeigen|  Zeigt Captcha für authentifizierte Benutzer an.|
-|Überprüfungsgruppe|  Der Gruppenname, der Eingabesteuerelemente zum Auswerten einer gültigen Eingabe der benannter Gruppen.|
-|Schritte aus Registerkarten automatisch generieren| Zeigt an, dass in einem Entitätsformular mehrere Registerkarten angezeigt werden, die, beginnend mit der ersten Registerkarte, der Reihe nach bearbeitet werden müssen und bei denen nach dem Absenden der Letzten Registerkarte ein Datensatz eingefügt wird. Dies ist standardmäßig nicht ausgewählt. Der Standardwert zeigt an, dass nur eine Registerkarte oder ein Formular für den Schritt gerendert werden soll. Wenn kein Registerkarten-Name angegeben ist, wird die erste Registerkarte angezeigt.|
-|Webressourcen inline rendern|   Beseitigt den IFrame, der in einem Entitätsformular eine Webressource umfasst.|
-|QuickInfos aktiviert|  Die QuickInfo wird mithilfe der Beschreibung des Attributs in der Zielentität festgelegt.|
-|Nicht unterstützte Felder anzeigen|   Alle Felder werden derzeit unterstützt. Dies ist für potentielle Änderungen reserviert, die möglicherweise durch Common Data Service an den Feldtypen vorgenommen werden.|
-|Empfohlene Felder nach Bedarf festlegen|    Erfordert die Eingabe aller Attribute, deren Feldanforderungsstufe auf "Eingabe empfohlen" festgelegt ist.|
-|Alle Felder als Pflichtfelder aktivieren|  Erfordert die Eingabe aller Felder, unabhängig von der Feldanforderungsstufe.|
-|CSS-Klasse für Überprüfungszusammenfassung|  CSS-Klassenname, der der Überprüfungszusammenfassung zugewiesen ist. Standard ist "Überprüfungszusammenfassungswarnung Warnung-Fehler Warnung-Blockiert"|
-|Links für Überprüfungszusammenfassung aktivieren|   Ein Boolescher Wert von "true" oder "false" gibt an, ob Ankerlinks in der Überprüfungszusammenfassung so gerendert werden sollen, dass das Feld, welches den Fehler enthält, zu scrollen ist. Standardwert ist true.|
-|Linktext für Überprüfungszusammenfassung|  Die Beschriftung, die den Links zur Überprüfungszusammenfassung zugeordnet ist. Standardwert ist "Klicken Sie hier".|
+|Captcha hinzufügen|    Zeigt das Captcha an.|
+|Captcha für authentifizierte Benutzer anzeigen|    Zeigt Captcha für authentifizierte Benutzer an.|
+|Überprüfungsgruppe|    Der Gruppenname, der Eingabesteuerelemente zum Auswerten einer gültigen Eingabe der benannter Gruppen.|
+|Schritte aus Registerkarten automatisch generieren|    Zeigt an, dass in einem Entitätsformular mehrere Registerkarten angezeigt werden, die, beginnend mit der ersten Registerkarte, der Reihe nach bearbeitet werden müssen und bei denen nach dem Absenden der Letzten Registerkarte ein Datensatz eingefügt wird. Dies ist standardmäßig nicht ausgewählt. Der Standardwert zeigt an, dass nur eine Registerkarte oder ein Formular für den Schritt gerendert werden soll. Wenn kein Registerkarten-Name angegeben ist, wird die erste Registerkarte angezeigt.|
+|Webressourcen inline rendern|    Beseitigt den IFrame, der in einem Entitätsformular eine Webressource umfasst.|
+|QuickInfos aktiviert|    Die QuickInfo wird mithilfe der Beschreibung des Attributs in der Zielentität festgelegt.|
+|Nicht unterstützte Felder anzeigen|    Alle Felder werden derzeit unterstützt. Dies ist für potentielle Änderungen reserviert, die möglicherweise durch Common Data Service an den Feldtypen vorgenommen werden.|
+|Empfohlene Felder nach Bedarf festlegen|     Erfordert die Eingabe aller Attribute, deren Feldanforderungsstufe auf "Eingabe empfohlen" festgelegt ist.|
+|Alle Felder als Pflichtfelder aktivieren|     Erfordert die Eingabe aller Felder, unabhängig von der Feldanforderungsstufe.|
+|CSS-Klasse für Überprüfungszusammenfassung|    CSS-Klassenname, der der Überprüfungszusammenfassung zugewiesen ist. Standard ist "Überprüfungszusammenfassungswarnung Warnung-Fehler Warnung-Blockiert"|
+|Links für Überprüfungszusammenfassung aktivieren|    Ein Boolescher Wert von "true" oder "false" gibt an, ob Ankerlinks in der Überprüfungszusammenfassung so gerendert werden sollen, dass das Feld, welches den Fehler enthält, zu scrollen ist. Standardwert ist true.|
+|Linktext für Überprüfungszusammenfassung|    Die Beschriftung, die den Links zur Überprüfungszusammenfassung zugeordnet ist. Standardwert ist "Klicken Sie hier".|
 |Kopfzeilentext für Überprüfungszusammenfassung|    Die Beschriftung, die den Header zur Überprüfungszusammenfassung zugeordnet ist.|
-|Anweisungen|  Anweisungen, die mit der Formular arbeiten sollen.|
-|Meldung „Datensatz nicht gefunden“|  Nachricht, die angezeigt werden soll, wenn ein Datensatz nicht gefunden wird.|
+|Anweisungen|    Anweisungen, die mit der Formular arbeiten sollen.|
+|Meldung „Datensatz nicht gefunden“|    Nachricht, die angezeigt werden soll, wenn ein Datensatz nicht gefunden wird.|
 |||
 
 ### <a name="on-success-settings"></a>Einstellungen für "Bei Erfolg"
@@ -90,15 +90,15 @@ Um Ihre Formulare zu sichern, müssen Sie Entitätsberechtigungen erstellen, die
 |Name|Beschreibung|
 |----|----------|
 |Bei Erfolg|    Einer der folgenden Werte:<ul><li>Erfolgsmeldung anzeigen (Standard)</li><li>Umleiten</li></ul>|
-|Formular bei Erfolg ausblenden|  Erfordert, dass "Bei Erfolg" auf "Erfolgsmeldung anzeigen" festgelegt ist. Wenn diese Option ausgewählt ist, wird das Formular bei erfolgreichem Übermitteln des Formulars ausgeblendet.|
-|Erfolgsmeldung|   Erfordert, dass "Bei Erfolg" auf "Erfolgsmeldung anzeigen" festgelegt ist. Die Meldung, die dem Benutzer bei erfolgreicher Übermitteln angezeigt wird. Wenn keine angegeben ist, wird die Standardnachricht (Übermittlung erfolgreich abgeschlossen") angezeigt. Für jedes Language Pack, das für die Organisation installiert und aktiviert ist, ist ein Feld ist verfügbar, in das die Nachricht in der zugehörigen Sprache eingeben werden kann.|
+|Formular bei Erfolg ausblenden|    Erfordert, dass "Bei Erfolg" auf "Erfolgsmeldung anzeigen" festgelegt ist. Wenn diese Option ausgewählt ist, wird das Formular bei erfolgreichem Übermitteln des Formulars ausgeblendet.|
+|Erfolgsmeldung|    Erfordert, dass "Bei Erfolg" auf "Erfolgsmeldung anzeigen" festgelegt ist. Die Meldung, die dem Benutzer bei erfolgreicher Übermitteln angezeigt wird. Wenn keine angegeben ist, wird die Standardnachricht (Übermittlung erfolgreich abgeschlossen") angezeigt. Für jedes Language Pack, das für die Organisation installiert und aktiviert ist, ist ein Feld ist verfügbar, in das die Nachricht in der zugehörigen Sprache eingeben werden kann.|
 |Externe URL|Erfordert, das "On Success" auf "Redirect" festgelegt ist. Geben Sie eine URL für eine externe Webressource an.
 |oder Webseite|Erfordert, das "On Success" auf "Redirect" festgelegt ist. Wählen Sie eine Webseite der aktuellen Webseite aus.|
-|Vorhandene Abfragezeichenfolge anfügen|  Erfordert, das "On Success" auf "Redirect" festgelegt ist. Wenn ausgewählt, werden die vorhandenen Abfragezeichenfolgenparameter zur Ziel-URL vor der Umleitung hinzugefügt.|
-|Datensatz-ID an Abfragezeichenfolge anfügen|  Erfordert, das "On Success" auf "Redirect" festgelegt ist. Wenn ausgewählt, wird die ID des erstellten Datensatzes zur Abfragezeichenfolge der URL an die umgeleitet wird angefügt.|
+|Vorhandene Abfragezeichenfolge anfügen|    Erfordert, das "On Success" auf "Redirect" festgelegt ist. Wenn ausgewählt, werden die vorhandenen Abfragezeichenfolgenparameter zur Ziel-URL vor der Umleitung hinzugefügt.|
+|Datensatz-ID an Abfragezeichenfolge anfügen|     Erfordert, das "On Success" auf "Redirect" festgelegt ist. Wenn ausgewählt, wird die ID des erstellten Datensatzes zur Abfragezeichenfolge der URL an die umgeleitet wird angefügt.|
 |Abfragezeichenfolgen-Parametername für Datensatz-ID|     Erfordert, das "On Success" auf "Redirect" festgelegt ist. Der Name des ID-Parameters in der Abfragezeichenfolge der URL, an die umgeleitet wird.|
 |Benutzerdefinierte Abfragezeichenfolge anfügen|    Erfordert, das "On Success" auf "Redirect" festgelegt ist. Eine benutzerdefinierte Zeichenfolge, die an die Abfragezeichenfolge der Umleitungs-URL angefügt werden kann.|
-|Attributwert an Abfragezeichenfolge anfügen – Parametername|   Erfordert, das "On Success" auf "Redirect" festgelegt ist. Ein Name für den Parameter, der mit dem Attributwert der Zielentität übereinstimmt, die der Abfragezeichenfolge der Umleitungs-URL angefügt wird.|
+|Attributwert an Abfragezeichenfolge anfügen – Parametername|    Erfordert, das "On Success" auf "Redirect" festgelegt ist. Ein Name für den Parameter, der mit dem Attributwert der Zielentität übereinstimmt, die der Abfragezeichenfolge der Umleitungs-URL angefügt wird.|
 |Attributwert an Abfragezeichenfolge anfügen – Logischer Attributname|Erfordert, das "On Success" auf "Redirect" festgelegt ist. Ein logischer Name eines Attributs der Zielentität, um den Wert an die Abfragezeichenfolge der Umleitungs-URL anzufügen.|
 |||
 
@@ -106,21 +106,21 @@ Um Ihre Formulare zu sichern, müssen Sie Entitätsberechtigungen erstellen, die
 
 |Name|Beschreibung|
 |----|----------|
-|Aktuellen Portalbenutzer zuordnen| Gibt an, ob der Datensatz des geraden angemeldeten Benutzers dem Zielentitätsdatensatz zugeordnet werden soll.|
+|Aktuellen Portalbenutzer zuordnen|    Gibt an, ob der Datensatz des derzeit angemeldeten Benutzers dem Zielentitätsdatensatz zugeordnet werden soll.|
 |Suchattribut: Portalbenutzer für Zielentität|    Der logische Name des Attributs in der Zielentität, die den Portalbenutzer speichert.|
-|Ist Aktivitätspartei| Boolesche Werte geben an, ob das Suchattribut: Portalbenutzer für Zielentität ein ActivityParty-Typ ist.|
-|Datei anfügen|   Wird aktiviert, um ein Dateiuploadsteuerelement unten im Formular hinzuzufügen, dass es ermöglicht, dem Datensatz Dateien anzufügen. Sie müssen **Entitätsberechtigungen aktivieren** auswählen und der Anmerkungsentität die Berechtigungen "Erstellen", "Anhängen" und "Anhängen an" zuweisen, damit ein Benutzer Dateien an das Formular anhängen kann. Weitere Informationen: [Zuweisen von Entitätsberechtigungen](assign-entity-permissions.md)<br>**Hinweis**: Wenn ein Benutzer nicht über die erforderlichen Berechtigungen zum Hochladen einer Datei verfügt oder "Entitätsberechtigungen aktivieren" nicht ausgewählt ist, wird die Option zum Hochladen einer Datei nicht im Formular angezeigt.|
-|Datei anfügen: Speicherort|  Optionen: Notizanlage, Azure-Blob-Speicher. Wenn Ihre Organisation zur Verwendung von Azure Storage konfiguriert ist, können Sie hochgeladenen Dateien für dieses Entitätsformular dort speichern. Andernfalls werden Dateien als Notizanlagen gespeichert.|
+|Ist Aktivitätspartei|    Boolesche Werte geben an, ob das Suchattribut: Portalbenutzer für Zielentität ein ActivityParty-Typ ist.|
+|Datei anfügen |  Wird ausgewählt, um ein Dateiuploadsteuerelement unten im Formular hinzuzufügen, das es ermöglicht, dem Datensatz Dateien anzufügen. <br> **Hinweis**: Portale mit [Version 9.2.2.x und höher](https://support.microsoft.com/help/4541765/power-apps-portals-version-9-2-2-x-release) erfordern keine Aktivierung von **Entitätsberechtigungen aktivieren** im Entitätsformular, um Dateien anzuhängen. Wenn Sie es jedoch ausgewählt haben, müssen Sie sicherstellen, dass für die übergeordnete Entität und die Anmerkungsentität entsprechende Berechtigungen bereitgestellt werden, um die Schaltfläche **Datei anhängen** im Formular anzuzeigen. Die Anmerkungsentität muss mindestens die Berechtigungen **Erstellen** und **Anfügen** und die übergeordnete Entität die entsprechende Berechtigung **AppendTo** aufweisen. Je nachdem, ob Sie ein Formular zum Erstellen oder Aktualisieren haben, benötigen Sie möglicherweise auch die Berechtigungen **Erstellen**, **Lesen** und **Schreiben** zum Ausfüllen des Szenarios des Formulars. |
+|Datei anfügen: Speicherort|    Optionen: Notizanlage, Azure-Blob-Speicher. Wenn Ihre Organisation zur Verwendung von Azure Storage konfiguriert ist, können Sie hochgeladenen Dateien für dieses Entitätsformular dort speichern. Andernfalls werden Dateien als Notizanlagen gespeichert.|
 |Mehrere Dateien zulassen|Boolescher Wert, der angibt, ob der Benutzer mehrere Dateien hochladen kann oder nicht.|
 |Akzeptieren|    Das "Akzeptieren"-Attribut gibt die MIME-Typen von Dateien an, die der Server beim Dateiupload annimmt. Um mehr als einen Wert anzugeben, trennen Sie die Werte mit einem Komma (z.B. audio/*,video/*,image/*).|
-|Beschriftung| Der Text wird neben dem Dateiuploadsteuerelement angezeigt . Für jedes Language Pack, das für die Organisation installiert und aktiviert ist, ist ein Feld ist verfügbar, in das die Nachricht in der zugehörigen Sprache eingeben werden kann.|
+|Beschriftung|    Der Text wird neben dem Dateiuploadsteuerelement angezeigt . Für jedes Language Pack, das für die Organisation installiert und aktiviert ist, ist ein Feld ist verfügbar, in das die Nachricht in der zugehörigen Sprache eingeben werden kann.|
 |Datei anfügen: Erforderlich| Ermöglicht das Verarbeiten eines Dateianhangs.|
 |Fehlermeldung für "Erforderlich"|Die Nachricht, die während der Formularüberprüfung angezeigt wird, wenn "Ist erforderlich" auf "True"gesetzt ist und der Benutzer keine Datei angefügt hat. Für jedes Language Pack, das für die Organisation installiert und aktiviert ist, ist ein Feld ist verfügbar, in das die Nachricht in der zugehörigen Sprache eingeben werden kann.|
-|Dateien auf akzeptierte Typen beschränken|  Erzwingt die Überprüfung des Felds "Akzeptieren". Wenn nicht ausgewählt, wird das Akzeptieren-Attribut nur als ein Vorschlag für den Dateiupload-Dialog verwendet.|
+|Dateien auf akzeptierte Typen beschränken|    Erzwingt die Überprüfung des Felds "Akzeptieren". Wenn nicht ausgewählt, wird das Akzeptieren-Attribut nur als ein Vorschlag für den Dateiupload-Dialog verwendet.|
 |Fehlermeldung für "Dateityp"|Die Meldungen, die bei der Überprüfung des Formular angezeigt wird, wenn "Dateien auf akzeptierte Typen beschränken" wahr ist und der Benutzer versucht hat, einen ungültigen Dateityp hochzuladen. Für jedes Language Pack, das für die Organisation installiert und aktiviert ist, ist ein Feld ist verfügbar, in das die Nachricht in der zugehörigen Sprache eingeben werden kann.|
-|Maximale Dateigröße (in Kilobyte)|  Erzwingt die Überprüfung der maximal zulässigen Größe der hochgeladenen Datei.|
-|Fehlermeldung für "Dateigröße"|   Die Meldungen, die bei der Überprüfung des Formulars angezeigt werden, wenn "Maximale Dateigröße (in Kilobyte)" wahr ist und der Benutzer versucht hat, eine zu große Datei hochzuladen. Für jedes Language Pack, das für die Organisation installiert und aktiviert ist, ist ein Feld ist verfügbar, in das die Nachricht in der zugehörigen Sprache eingeben werden kann.|
-|Benutzerdefiniertes JavaScript| Ein benutzerdefinierter JavaScript-Satz wird unten an der Seite platziert, direkt vor dem Tag zum Schließen des Elements. Die HTML-Eingabe-ID eines Entitätsfelds wird auf den logischen Namen des Attributs festgelegt. Dadurch wird das Auswählen von Feldern, Einstellungswerten oder anderen clientseitigen Änderungen mit jQuery erleichtert.<br>`$(document).ready(function() {   $(“#address1_stateorprovince”).val(“Saskatchewan”);});`|
+|Maximale Dateigröße (in Kilobyte)|    Erzwingt die Überprüfung der maximal zulässigen Größe der hochgeladenen Datei.|
+|Fehlermeldung für "Dateigröße"|    Die Meldungen, die bei der Überprüfung des Formulars angezeigt werden, wenn "Maximale Dateigröße (in Kilobyte)" wahr ist und der Benutzer versucht hat, eine zu große Datei hochzuladen. Für jedes Language Pack, das für die Organisation installiert und aktiviert ist, ist ein Feld ist verfügbar, in das die Nachricht in der zugehörigen Sprache eingeben werden kann.|
+|Benutzerdefiniertes JavaScript|    Ein benutzerdefinierter JavaScript-Satz wird unten an der Seite platziert, direkt vor dem Tag zum Schließen des Elements. Die HTML-Eingabe-ID eines Entitätsfelds wird auf den logischen Namen des Attributs festgelegt. Dadurch wird das Auswählen von Feldern, Einstellungswerten oder anderen clientseitigen Änderungen mit jQuery erleichtert.<br>`$(document).ready(function() {   $("#address1_stateorprovince").val("Saskatchewan");});`|
 |||
 
 ### <a name="entity-reference"></a>Entitätsreferenz
@@ -135,14 +135,14 @@ Dies bietet eine Möglichkeit, den aktuellen Datensatz, der durch das Formular e
 |Beziehungsname|Der Beziehungsdefinitionsname für eine jeweilige Beziehung zwischen zwei Entitätstypen.|
 |Logischer Entitätsname|Der logische Name der Referenzentität.|
 |Logischer Name des Zielsuchattributs|Logischer Name des Suchattributs in der Zielentität wird erstellt oder aktualisiert.|
-|Suchfeld auffüllen| Wenn sich die Suche bezüglich der Referenzentität im Formular befindet, wird bei er Aktivierung dieses Wertes der über die Einstellungen unten abgerufene Wert in das Feld im Formular eingetragen.|
-|Referenzentitäts-Quelltyp|  Einer der folgenden Werte:<ul><li>Abfragezeichenfolge</li><li>Aktueller Portalbenutzer</li><li>Ergebnis aus vorherigem Schritt</li></ul> Das Auswählen der _Abfragezeichenfolge_ erfordert einen Parameternamen, der in der Abfragezeichenfolge derURL des Formulars angegeben werden muss. Dies kann im Feld **Abfragezeichenfolgenname** angegeben werden. Wenn dieser Parameter der Primärschlüssel ist, dann wählen Sie "Ja" für **Abfragezeichenfolge ist Primärschlüssel**, andernfalls wählen Sie "Nein" und geben den logischen Namen des Attributs an, der in der im Feld **Logischer Name des Abfrageattributs** festgelegten Zielentität abgefragt werden soll.  Die Auswahl Aktueller Portalbenutzer ruft den Kontaktdatensatz des aktuell authentifizierten Benutzers ab. Die Auswahl Ergebnis aus vorherigem Schritt ruft den Datensatz ab, der als Ergebnis des vorherigen Schrittes oder eines bestimmten Schrittes auf der Grundlage des Schrittes erstellt wurde, der dem Entitätsquellschritt zugeordnet ist.|
-|Referenzentitätsschritt| Der Webformular-Schrittdatensatz eines vorherigen Schritt, der benötigt wird, um die Entität abzurufen, die in diesem Schritt erstellt oder bearbeitet wurde und sie dem Datensatz des aktuellen Schritts zuzuordnen.|
-|Abfragezeichenfolgenname| Ein Parametername, der in der Abfragezeichenfolge der URL der Webseite angegeben wird und das Webformular umfasst.|
-|Abfragezeichenfolge ist Primärschlüssel|   "Ja" gibt an, dass der Abfragezeichenfolgenwert dem Primärschlüsselwert entspricht. Kein gibt an, dass der Abfragezeichenfolgenwert ein anderer Attributtyp als der Primärschlüssel ist.|
-|Logischer Name des Abfrageattributs|  Logischer Name des Attributs zum Abfragen des Datensatzes.|
-|Details für Schreibschutz anzeigen| Gibt an, dass ein Formular oben auf der Seite gerendert wird und schreibgeschützte Informationen des Referenzdatensatzes anzeigt. Benötigt einen Formular-Namen.|
-|Formularname| Der Name des Formulars auf der Referenzentität, die verwendet werden soll, um schreibgeschützte Details anzuzeigen.|
+|Suchfeld auffüllen|    Wenn sich die Suche bezüglich der Referenzentität im Formular befindet, wird bei er Aktivierung dieses Wertes der über die Einstellungen unten abgerufene Wert in das Feld im Formular eingetragen.|
+|Referenzentitäts-Quelltyp|    Einer der folgenden Werte:<ul><li>Abfragezeichenfolge</li><li>Aktueller Portalbenutzer</li><li>Ergebnis aus vorherigem Schritt</li></ul> Das Auswählen der _Abfragezeichenfolge_ erfordert einen Parameternamen, der in der Abfragezeichenfolge derURL des Formulars angegeben werden muss. Dies kann im Feld **Abfragezeichenfolgenname** angegeben werden. Wenn dieser Parameter der Primärschlüssel ist, dann wählen Sie "Ja" für **Abfragezeichenfolge ist Primärschlüssel**, andernfalls wählen Sie "Nein" und geben den logischen Namen des Attributs an, der in der im Feld **Logischer Name des Abfrageattributs** festgelegten Zielentität abgefragt werden soll.  Die Auswahl Aktueller Portalbenutzer ruft den Kontaktdatensatz des aktuell authentifizierten Benutzers ab. Die Auswahl Ergebnis aus vorherigem Schritt ruft den Datensatz ab, der als Ergebnis des vorherigen Schrittes oder eines bestimmten Schrittes auf der Grundlage des Schrittes erstellt wurde, der dem Entitätsquellschritt zugeordnet ist.|
+|Referenzentitätsschritt|    Der Webformular-Schrittdatensatz eines vorherigen Schritt, der benötigt wird, um die Entität abzurufen, die in diesem Schritt erstellt oder bearbeitet wurde und sie dem Datensatz des aktuellen Schritts zuzuordnen.|
+|Abfragezeichenfolgenname|    Ein Parametername, der in der Abfragezeichenfolge der URL der Webseite angegeben wird und das Webformular umfasst.|
+|Abfragezeichenfolge ist Primärschlüssel|    "Ja" gibt an, dass der Abfragezeichenfolgenwert dem Primärschlüsselwert entspricht. Kein gibt an, dass der Abfragezeichenfolgenwert ein anderer Attributtyp als der Primärschlüssel ist.|
+|Logischer Name des Abfrageattributs|    Logischer Name des Attributs zum Abfragen des Datensatzes.|
+|Details für Schreibschutz anzeigen|    Gibt an, dass ein Formular oben auf der Seite gerendert wird und schreibgeschützte Informationen des Referenzdatensatzes anzeigt. Benötigt einen Formular-Namen.|
+|Formularname|    Der Name des Formulars auf der Referenzentität, die verwendet werden soll, um schreibgeschützte Details anzuzeigen.|
 |||
 
 
@@ -188,6 +188,33 @@ Das Kartensteuerelement des Formulars erfordert eine zusätzliche Konfiguration,
 > [!Note]
 > - Das Adressfeld in einem schreibgeschützten Entitätsformular wird durch die Zuordnung ersetzt, wenn Geolocation aktiviert ist.
 > - Der Geolocation-Abschnitt wird in der deutschen Sovereign Cloud-Umgebung nicht angezeigt. Wenn ein Benutzer Geolocation mithilfe eines anderen Formulars aktiviert hat, wird es während des Renderings im Portal nicht angezeigt.
+
+## <a name="request-validation"></a>Anfrage-Validierung
+
+[Anforderungsvalidierung](https://docs.microsoft.com/aspnet/whitepapers/request-validation), eine Funktion von ASP.NET seit Version 1.1, verhindert, dass der Server Inhalte mit unverschlüsseltem HTML akzeptiert. Diese Funktion soll dazu beitragen, einige Skript-Injektions-Angriffe zu verhindern, bei denen Skriptcode oder HTML vom Client unwissentlich an einen Server übermittelt, gespeichert und dann anderen Benutzern präsentiert werden kann. Wir empfehlen Ihnen dennoch dringend, alle Eingabedaten zu validieren und sie gegebenenfalls in HTML zu kodieren.
+
+Standardmäßig ist die Anforderungsvalidierung im Portal aktiviert, was zu folgendem generischen Fehler führt, wenn Sie Skriptcode ohne HTML-Kodierung in Entitätsformularfeldern eingeben:
+
+![Anfrage-Validierungsfehler](../media/request-validation-error.png)
+
+Um die Anforderungsvalidierung zu deaktivieren, führen Sie folgende Schritte aus:
+
+1. Gehen Sie zu [Portal-Einstellungen](https://docs.microsoft.com/powerapps/maker/portals/manage-existing-portals#settings) und wählen Sie **Site-Einstellungen**.
+
+1. Wählen Sie **Neu** aus.
+
+1. Geben Sie den Namen als **ValidationWebTemplate deaktivieren** ein.
+
+1. Wählen Sie den entsprechenden Website-Eintrag aus.
+
+1. Geben Sie den Wert als **Wahr** ein. Standardmäßig ist die Einstellung **falsch**, die die Validierung der Anfrage ermöglicht.
+
+1. Geben Sie eine geeignete Beschreibung ein.
+
+1. Klicken Sie auf **Speichern und schließen**.
+
+> [!CAUTION]
+> Wenn die Anforderungsvalidierung deaktiviert ist, kann der Inhalt auf einer Seite eingereicht werden. Sie müssen sicherstellen, dass der Inhalt richtig kodiert oder verarbeitet wird.
 
 ### <a name="see-also"></a>Siehe auch
 

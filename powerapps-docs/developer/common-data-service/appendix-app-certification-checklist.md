@@ -3,7 +3,7 @@ title: 'Anhang: App-Zertifizierungscheckliste (PowerApps) | Microsoft-Dokumentat
 description: Die App-Zertifizierungscheckliste bietet Ihnen Informationen zu den Prüfungen, die Ihre modellgestützten Apps, Canvas-Apps und Flows vor der Veröffentlichung auf AppSource durchlaufen müssen.
 ms.custom: ''
 ms.date: 03/20/2019
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: omarcdoc
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 795b7797c36a4491ed5e748bdbd42e0ad9add01f
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: d36fe4c8d62ea8cbc2750d44fbe28901fd7a827a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080844"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156478"
 ---
 # <a name="appendix-app-certification-checklist"></a>Anhang: App-Zertifizierungscheckliste
 

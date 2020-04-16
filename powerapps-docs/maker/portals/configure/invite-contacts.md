@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 03/16/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 74ad7201f84e7b96c785d77092048e24d24f3333
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: f6e6989e1005f12fd3e9d3a02222a8cd95226cca
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980298"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136219"
 ---
 # <a name="invite-contacts-to-your-portals"></a>Laden Sie Kontakte für Ihre Portale ein
 
@@ -29,7 +29,7 @@ Mit der Portaleinladungsfunktion haben Sie die Möglichkeit, Kontakte durch auto
 
 Die Einladungseinlösung kann mithilfe unserer vielen Authentifizierungsoptionen erreicht werden. Die Dokumentation zur Portalauthentifizierung finden Sie unter [Authentifizierungsidentität für ein Portal festlegen](set-authentication-identity.md), wo Sie das Modell entsprechend Ihrer Portalversion und -konfiguration auswählen können. Der Benutzer übernimmt die Einstellungen, die vom Administrator bei Einlösung bereitgestellt werden. Eine Einladungseinlösungs-Aktivität wird für die Einladung und den Kontakt erstellt.
 
-Einladungen werden über den **Einladung senden**-Workflow gesendet. Standardmäßig erstellt der Workflow eine E-Mail mit einer allgemeinen Nachricht und sendet diese an die primäre E-Mail-Adresse des eingeladenen Kontakts. Der **Einladung senden**-Workflow enthält eine E-Mail-Vorlage, die bearbeitet werden muss, um eine bestimmte Nachricht für das Portal und den korrekten Link zur **Einladungseinlösungsseite** des Portals einzuschließen.
+Einladungen werden über den **Einladung senden**-Workflow gesendet. Standardmäßig erstellt der Workflow eine E-Mail mit einer allgemeinen Nachricht und sendet diese an die primäre E-Mail-Adresse des eingeladenen Kontakts. Die E-Mail-Adressen in den Feldern CC und BCC werden ignoriert, um eine sichere Kommunikation zu gewährleisten. Der **Einladung senden**-Workflow enthält eine E-Mail-Vorlage, die bearbeitet werden muss, um eine bestimmte Nachricht für das Portal und den korrekten Link zur **Einladungseinlösungsseite** des Portals einzuschließen.
 
 Um die **Einladung senden** Workflowe-E-Mail-Vorlage zu bearbeiten, suchen und deaktivieren Sie sie. Nach dem Deaktivieren können Sie die E-Mail-Vorlage bearbeiten, um die gewünschte Nachricht zu senden und einen Link zur **Einladungseinlösungsseite** des Portals bereitzustellen.
 
@@ -40,7 +40,7 @@ Um die **Einladung senden** Workflowe-E-Mail-Vorlage zu bearbeiten, suchen und d
 
 1.  Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
 
-2.  Gehen Sie zu **Portale**Vertrieb  >  **Kontakte**.
+2.  Gehen Sie zu **Portale** > **Kontakte**.
     Als Alternative können Sie auch die Seite **Kontakte** des Bereichs [Freigeben](../manage-existing-portals.md#share) öffnen. 
 
 3.  Wählen Sie einen Kontakt aus oder öffnen den einzuladenden Kontaktdatensatz.
@@ -51,7 +51,7 @@ Um die **Einladung senden** Workflowe-E-Mail-Vorlage zu bearbeiten, suchen und d
 
 6.  Wählen Sie **Speichern** aus.
 
-7.  Wählen Sie in der Befehlsleiste **Fluss**  >  **Einladung senden** aus.
+7.  Wählen Sie in der Befehlsleiste **Fluss** > **Einladung senden** aus.
 
     > [!div class="mx-imgBorder"]
     > ![„Einladung senden“-Workflow](../media/send-invitation-portal-app.png "„Einladung senden“-Workflow")
@@ -65,11 +65,11 @@ Um die **Einladung senden** Workflowe-E-Mail-Vorlage zu bearbeiten, suchen und d
 
 Sie können die Einladungen für Kontakte erstellen und diesen anschließend sofort senden.
 
-1.  Erstellen Sie Einladungen für die erforderlichen Kontakte und wechseln Sie dann zu  > **Portale**.**Einladungen**.
+1.  Erstellen Sie Einladungen für die erforderlichen Kontakte und gehen Sie dann zu **Portale** > **Einladungen**.
 
 2.  Wählen Sie die erstellten Einladungen aus.
 
-3.  Wählen Sie in der Befehlsleiste **Fluss**  >  **Einladung senden** aus.
+3.  Wählen Sie in der Befehlsleiste **Fluss** > **Einladung senden** aus.
 
     > [!div class="mx-imgBorder"]
     > ![„Einladung senden“-Workflow](../media/send-invitation-portal-app.png "„Einladung senden“-Workflow")

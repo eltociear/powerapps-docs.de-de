@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 2a87a321db887e9d56f8be30da67465f084a1089
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 7355c056a3dc88594e6ca1840984814591831771
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091201"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162091"
 ---
 # <a name="implementing-data-set-component"></a>Implementieren der Daten-Set-Komponente
 
@@ -445,7 +445,7 @@ Die ***getSortedColumnsOnView***-Methode gibt die Liste der Spalten anhand der d
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Beispielkomponenten verwenden](../use-sample-components.md)<br/>
 [Power Apps component framework-API-Referenz](../reference/index.md)<br/>
 [Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)

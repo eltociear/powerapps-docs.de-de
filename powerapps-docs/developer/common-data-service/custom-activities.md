@@ -3,7 +3,7 @@ title: Benutzerdefinierte Aktivitäten (Common Data Service) | Microsoft-Dokumen
 description: Benutzerdefinierte Aktivitäten unterstützen den Kommunikationsbedarf eines modernen Unternehmens, wie z. B. Instant Messaging (IM) in Dynamics 365.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ee86c88222c0385f1fec8458af6ee9d2cfeabf18
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 942680191db63b6238efdaaa07b5b113d9a5604e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748566"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156314"
 ---
 # <a name="custom-activities"></a>Benutzerdefinierte Aktivitäten
 

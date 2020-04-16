@@ -3,7 +3,7 @@ title: " Speichern eines globalen Optionssatzes in einer Datei (Common Data Serv
 description: Dieses Beispiel zeigt, wie ein globaler Optionssatz in einer Datei gespeichert wird.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 17940374791955a43cc27a030bc14c9d9abc2e73
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: a522996f85877dcac665291185b7ffdd57d71ca0
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956324"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155798"
 ---
 # <a name="dump-global-option-information-to-a-file"></a>Speichern eines globalen Optionssatzes in einer Datei
 

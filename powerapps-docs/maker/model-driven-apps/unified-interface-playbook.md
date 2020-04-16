@@ -2,16 +2,12 @@
 title: 'Einheitliche Benutzeroberfläche: Playbook | MicrosoftDocs'
 description: Erfahren Sie, wie Sie den Übergang vom Legacy-Webclient zur einheitlichen Benutzeroberfläche planen und dann durchführen können
 ms.custom: ''
-ms.date: 08/29/2019
+ms.date: 03/13/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
 author: Mattp123
 ms.assetid: ''
 caps.latest.revision: 25
@@ -22,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe0f90d888ae1a3e5b12cfac8929fa7fbb934eab
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 6359f4b673640bfdd5cd1093dc7e6da063da0fce
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005124"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "3134045"
 ---
 # <a name="unified-interface-playbook"></a>Einheitliche Benutzeroberfläche - Playbook
 
@@ -49,3 +45,5 @@ Zusammenfassend lässt sich sagen, dass Ihnen die Playbook-Dokumente zur einheit
 | [Kapitel 3: Übergang](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch3-transition.pptx)|  PowerPoint     |
 | [Kapitel 4: Optimierung](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch4-optimize.pptx)  | PowerPoint  |
 
+### <a name="see-also"></a>Siehe auch
+[Dynamics 365 Project Service Automation Upgraden des Playbook](https://aka.ms/PSAUCIUpgrade)

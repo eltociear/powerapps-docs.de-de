@@ -3,7 +3,7 @@ title: FAQ und Lernprogramm zu Buildtools| Microsoft Docs
 description: 'Bei Power Apps build tools handelt es sich um eine Sammlung von Power Apps-spezifischen Azure DevOps-Buildaufgaben, die vermeiden, dass Skripts manuell heruntergeladen werden müssen, um die Entwicklung von Power Apps zu verwalten. In diesem Thema werden das Lernprogramm und die FAQs beschrieben, auf die Sie zugreifen können, um mehr über diese Tools zu erfahren. '
 ms.custom: ''
 ms.date: 07/21/2019
-ms.reviewer: Dean-Haas
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mikkelsen2000
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ac7b2aeabe6121ee45b8593abb3234cfb6fb566b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0aa106f7d4f162f20d7274f596f1b5354d968ffa
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861831"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156411"
 ---
 # <a name="tutorial-and-faq"></a>Lernprogramm und FAQ
 
@@ -49,7 +49,7 @@ Die praktische Übungseinheit bietet ein Lernprogramm mit schrittweisen Anweisun
 
 **Funktionieren Power Apps build tools nur für Power Apps?**  
 
-*Die Power Apps build tools funktionieren für Power Apps und modellgesteuerte Apps in Dynamics 365 wie z. B. Dynamics 365 Sales und Dynamics 365 Customer Service. Separate Buildaufgaben sind für Microsoft Dynamics for Finance and Operations verfügbar.*
+*Die Power Apps build tools funktionieren für sowohl Power Apps als auch modellgesteuerte Apps in Dynamics 365 wie Dynamics 365 Sales und Dynamics 365 Customer Service. Für Microsoft Dynamics for Finance and Operations sind separate Build-Aufgaben verfügbar.*
 
 **Kann ich Flow- und Canvas-Apps einbeziehen?**
 
@@ -57,7 +57,7 @@ Die praktische Übungseinheit bietet ein Lernprogramm mit schrittweisen Anweisun
 
 **Wie viel kosten die Power Apps build tools?**
 
-*Die Power Apps build tools sind kostenlos erhältlich. Es ist jedoch ein gültiges Azure DevOps-Abonnement erforderlich, um die  build tools zu nutzen. Weitere Informationen sind [hier](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) verfügbar.*
+*Die Power Apps build tools sind kostenlos erhältlich. Es ist jedoch ein gültiges Azure DevOps-Abonnement erforderlich, um die build tools zu nutzen. Weitere Informationen sind [hier](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) verfügbar.*
 
 **Ich kann die Erweiterung anzeigen, aber warum ist keine Option verfügbar, um sie zu installieren?**
 

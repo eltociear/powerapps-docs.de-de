@@ -3,7 +3,7 @@ title: Registrieren eines Plug-Ins (Common Data Service) | Microsoft-Dokumentati
 description: Erfahren Sie, wie Sie ein Plug-In registrieren, um benutzerdefinierte Geschäftslogik auf Common Data Service anzuwenden.
 ms.custom: ''
 ms.date: 02/19/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bba0a473d76fc69832e05ec316a6ed6da6ad899d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: a4b9bdbc10af7afcc3fd5165c98d25c60727a5dd
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109596"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165199"
 ---
 # <a name="register-a-plug-in"></a>Registrieren eines Plug-Ins
 
@@ -46,6 +46,7 @@ Inhalt in diesem Thema beschreibt die Schritte **in fett** oben und unterstützt
 - [Lernprogramm: Schreiben und Registrieren eines Plugins](tutorial-write-plug-in.md)
 - [Lernprogramm: Debuggen eines Plug-Ins](tutorial-debug-plug-in.md)
 - [Lernprogramm: Aktualisieren eines Plug-Ins](tutorial-update-plug-in.md)
+
 
 ## <a name="plugin-registration-tool-prt"></a>Plugin Registration Tool (PRT)
 
@@ -169,10 +170,6 @@ Wenn Sie einen Schritt registrieren, gibt es viele Optionen, die für Sie verfü
 |**Ausführungsreihenfolge**|Mehrere Schritte können für dieselbe Phase derselben Nachricht registriert werden. Der Wert in diesem Feld bestimmt die Reihenfolge, in der sie vom niedrigsten bis hin zum höchsten angewendet werden. <br/> **Hinweis**: Sie sollten dies einstellen, um die Reihenfolge zu steuern, in der Plug-Ins im Stadium angewendet werden. Es wird nicht empfohlen, einfach den Standardwert zu übernehmen. Wenn alle Plugins für die gleiche Stufe, Entität und Nachricht den gleichen Wert haben, bestimmt der Wert von [SdkMessageProcessingStep.SdkMessageFilterId](/dynamics365/customer-engagement/developer/entities/sdkmessageprocessingstep#BKMK_SdkMessageFilterId) die Reihenfolge, in der sie ausgeführt werden.|
 |**Beschreibung**|Eine Beschreibung des Schritts. Dieser Wert ist vorbelegt, kann aber überschrieben werden.|
 
-> [!NOTE]
-> Es gibt bestimmte Fälle, in denen für das Ereignis `Update` registrierte Plugins zweimal aufgerufen werden können. Weitere Informationen: [Verhalten spezieller Vorgänge mithilfe Update](special-update-operation-behavior.md)
-
-
 ### <a name="event-pipeline-stage-of-execution"></a>Ereignis-Pipeline-Phase der Ausführung
 
 Wählen Sie die Phase in der Ereignis-Pipeline aus, die für den Zweck Ihres Plug-Ins optimal geeignet ist.
@@ -194,7 +191,13 @@ Es gibt zwei Modi der Ausführung, asynchron und synchron.
 |**Asynchron**|Der Ausführungskontext und die Definition der Geschäftslogik, die angewendet werden soll, werden zum Systemauftrag verschoben, der ausgeführt wird, wenn der Vorgang abgeschlossen wurde.|
 |**Synchron**|Plug-Ins werden sofort gemäß der Phase der Ausführung und der Ausführungsreihenfolge ausgeführt. Der gesamte Vorgang wartet, bis sie ausgeführt wurden.|
 
-Asynchrone Plug-Ins können nur für die Phase **PostOperation** registriert werden. Weitere Informationen darüber, wie Systemaufträge funktionieren, finden Sie unter [Asynchroner Service](asynchronous-service.md).
+Asynchrone Plug-Ins können nur für die Phase **PostOperation** registriert werden. Weitere Informationen darüber, wie Systemaufträge funktionieren, finden Sie unter [Asynchroner Service](asynchronous-service.md).       
+
+### <a name="special-step-registration-scenarios"></a>Spezielle Schrittregistrierungsszenarien
+Es gibt bestimmte Szenarien, in denen die Schrittregistrierung für eine Kombination aus Nachricht und Entität nicht offensichtlich ist. Dies ist das Ergebnis der internen Auslegung des Systems, wenn eine besondere Beziehung zwischen Entitäten oder Vorgängen besteht. Die folgenden Informationen identifizieren diese Fälle und bieten Anleitungen zur Schrittregistrierung.
+
+- Es gibt bestimmte Fälle, in denen für das Ereignis _Update_ registrierte Plug-Ins zweimal aufgerufen werden können. Weitere Informationen: [Verhalten spezieller Vorgänge mithilfe Update](https://github.com/MicrosoftDocs/powerapps-docs-pr/blob/8c969ed391d6fc8e423bde15c65db1f60f5fab2f/powerapps-docs/developer/common-data-service/special-update-operation-behavior.md)
+- Registrieren Sie einen Plug-In-Schritt auf **Konto** oder **Kontakt**, wenn Sie Datenänderungen an den Entitätsinstanzen **customeraddress**, **leadaddress**, **publisheraddress** oder **competitoraddress** verarbeiten möchten.
 
 ### <a name="deployment"></a>Bereitstellung
 
@@ -251,11 +254,11 @@ Wenn Sie ein Entitätsbild konfigurieren, ist es wichtig, zu erkennen, dass der 
 
 #### <a name="add-an-entity-image"></a>Hinzufügen eines Entitätsbilds
 
-Unter dem Schritt [Hinzufügen eines Bilds](tutorial-update-plug-in.md#add-an-image)im [Lernprogramm: Aktualisieren eines Plug-Ins](tutorial-update-plug-in.md) finden Sie die Schritte, um ein Entitätsbild hinzuzufügen.
+Unter dem Schritt [Hinzufügen eines Bilds](tutorial-update-plug-in.md#add-an-image) im [Tutorial: Aktualisieren eines Plug-Ins](tutorial-update-plug-in.md) finden Sie die Schritte, um ein Entitätsbild hinzuzufügen.
 
 ### <a name="add-step-to-solution"></a>Hinzufügen eines Schritts zur Lösung
 
-Wie unter [Hinzufügen einer Assembly zu einer Lösung ](#add-your-assembly-to-a-solution) beschrieben, sind **Plug-In-Assemblys** Lösungskomponenten, die einer nicht verwalteten Lösung hinzugefügt werden können. **SDK-Nachrichtenverarbeitungsschritte** sind auch Lösungskomponenten und müssen zu einer nicht verwalteten Lösung hinzugefügt werden, damit sie verteilt werden können.
+Wie unter [Hinzufügen einer Assembly zu einer Lösung](#add-your-assembly-to-a-solution) beschrieben, sind **Plug-In-Assemblys** Lösungskomponenten, die einer nicht verwalteten Lösung hinzugefügt werden können. **SDK-Nachrichtenverarbeitungsschritte** sind auch Lösungskomponenten und müssen zu einer nicht verwalteten Lösung hinzugefügt werden, damit sie verteilt werden können.
 
 Die Vorgehensweise zum Hinzufügen eines Schritts zu einer Lösung ist mit dem Hinzufügen einer Assembly vergleichbar. Sie verwenden den Befehl **Vorhandenes Element hinzufügen**, um ihn zur gewünschten, nicht verwalteten Lösung zu verschieben. Der einzige Unterschied ist, dass Sie, wenn Sie versuchen, einen Schritt hinzuzufügen, ohne zuvor die Assembly hinzugefügt zu haben, die die im Schritt verwendete Klasse enthält, aufgefordert werden, fehlende erforderliche Komponenten hinzuzufügen.
 

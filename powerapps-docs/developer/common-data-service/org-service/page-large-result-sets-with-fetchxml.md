@@ -3,7 +3,7 @@ title: Auslagern von umfangreichen Ergebnissätzen mit FetchXML (Common Data Ser
 description: Sie können die Ergebnisse einer FetchXML-Abfrage auslagern, indem Sie das Auslagerungscookie verwenden.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 00170d4639ccb618f63767d6cd5f5b6f73037323
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e21786ec68f6e23a2d50b17f246c1e51d0eb764a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748533"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155994"
 ---
 # <a name="page-large-result-sets-with-fetchxml"></a>Auslagern von umfangreichen Ergebnissätzen mit FetchXML
 

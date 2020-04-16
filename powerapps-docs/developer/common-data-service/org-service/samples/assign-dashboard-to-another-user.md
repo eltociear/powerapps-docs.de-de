@@ -3,7 +3,7 @@ title: " Zuweisen eines Dashboards zu einem anderen Benutzer (Common Data Servic
 description: 'Dieses Beispiel zeigt, wie ein Dashboard im Besitz eines Benutzers einem anderen Benutzer zugewiesen wird '
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bbfd3f468bc59c4cbd455bda93ed8e0deae07729
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: ba91f8afc6c7043f9b160fe5969bcf5dcfcd6387
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934430"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155962"
 ---
 # <a name="assign-a-user-owned-dashboard-to-another-user"></a>Zuweisen eines Dashboards im Besitz eines Benutzers an einen anderen Benutzer
 

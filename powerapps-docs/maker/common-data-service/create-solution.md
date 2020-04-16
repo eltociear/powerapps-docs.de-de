@@ -2,7 +2,7 @@
 title: Erstellen einer Lösung | MicrosoftDocs
 description: Erfahren Sie, wie eine Lösung erstellt wird
 ms.custom: ''
-ms.date: 02/28/2020
+ms.date: 03/20/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f4f2b4941e049a08bde978a318f5fda39f3dd30e
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: 59c041d7fe74e1a1dbbce9f1516057d324447478
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093726"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162193"
 ---
 # <a name="create-a-solution"></a>Erstellen einer Lösung
 
@@ -61,12 +61,13 @@ Weitere Informationen zu Lösungskonzepte, siehe [Arbeiten mit Lösungen](soluti
   
  Dieses Dialogfeld informiert Sie, dass die Lösungskomponente von anderen Lösungskomponenten abhängt. Wenn Sie **Nein, erforderliche Komponenten nicht einschließen** auswählen, kann die Lösung fehlschlagen, wenn Sie sie in eine andere Organisation importieren, in der alle diese erforderlichen Komponenten nicht vorhanden sind. Wenn der Lösungsimport erfolgreich ist, kann es sein, dass das Verhalten in der anderen Lösung nicht dem der ursprünglichen Lösung entspricht, da die Komponenten anders als die in der Quelllösung konfiguriert sind.  
   
- Im Allgemeinen ist es sicherer, die erforderlichen Komponenten hinzufügen, wenn Sie die Lösung in eine andere Organisation exportieren wollen. Wenn Sie diese Komponenten nicht hinzufügen, wenn Sie eine einzelne Lösungskomponente hinzufügen, können Sie später zu diesem Punkt zurückkehren, die hinzugefügte Lösungskomponente auswählen und aus dem Menü **Erforderliche Komponenten hinzufügen** auswählen.  
+Bei der Auswahl von Entitätskomponenten empfehlen wir, die Lösungssegmentierung zu verwenden, damit Sie nur Entitätskomponenten einbeziehen, die neu oder aktualisiert sind, wenn Sie Lösungsupdates verteilen. Mit der Lösungssegmentierung können Sie in einer Lösung mit ausgewählten Entitätsanlagen arbeiten, beispielsweise Entitätsfelder, Formulare oder Ansichten, anstatt gesamte Entitäten mit allen Anlagen. Weitere Informationen: [Verwenden von segmentierten Lösungen](use-segmented-solutions-patches-simplify-updates.md)
   
  Wenn Sie die Lösung nicht exportieren möchten, oder wenn Sie sie nur als nicht verwaltete Lösung exportieren und dann wieder in dieselbe Organisation importieren möchten, ist es nicht nötig, erforderliche Komponenten hinzufügen. Wenn Sie jemals die Lösung exportieren, sehen Sie eine weitere Warnung, die besagt, dass einige erforderliche Komponenten fehlen. Wenn Sie diese Lösung nur wieder in dieselbe Organisation importieren, können diese Warnung missachten. Bei diesen Schritten zur Bearbeitung der Anwendungsnavigation oder des Menübands ohne ein Bearbeitungstool eines Drittanbieters zu verwenden, wird erwartet, dass Sie die Lösung wieder in dieselbe Organisation exportieren.  
 
+<!-- >
 > [!IMPORTANT]
->  Wenn Sie Termine in Lösungen aufnehmen möchten, sollten Sie nicht nur Termine und nur Terminserien in separate Lösungen einschließen. Beim Installieren und Deinstallieren separater Lösungen mit verschiedenen Termintypen tritt ein SQL Server-Fehler auf, und die Termine müssen erneut erstellt werden. 
+>  If you plan to include appointments in solutions, we strongly recommend that you don’t include only appointments and only recurring appointments in separate solutions. If you install and uninstall separate solutions with different appointment types, you’ll encounter a SQL Server error and you’ll have to re-create the appointments.  -->
 
 ## <a name="publish-changes"></a>Änderungen veröffentlichen 
 

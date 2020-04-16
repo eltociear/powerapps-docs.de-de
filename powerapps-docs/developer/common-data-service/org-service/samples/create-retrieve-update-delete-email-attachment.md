@@ -3,7 +3,7 @@ title: 'Beispiel: CRUD-E-Mail-Anlagen <Topic Title> (Common Data Service) | Micr
 description: In diesem Beispiel wird gezeigt, wie CRUD-Vorgänge auf E-Mail- Anhänge ausführt werden
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0b5c0105ac67603826ffa1b6402d10cda2cc845f
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 93b995fb9e76416e7d34a0540f6b96dc50577243
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934352"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155858"
 ---
 # <a name="sample-create-retrieve-update-and-delete-an-email-attachment"></a>Beispiel: Erstellen, abrufen, aktualisieren und löschen einer E-Mail-Anlage
 

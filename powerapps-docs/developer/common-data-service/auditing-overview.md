@@ -3,7 +3,7 @@ title: Überwachungsübersicht (Common Data Service) | Microsoft-Dokumentation
 description: Lesen Sie, wie die Überwachungsfähigkeit Common Data Service genutzt werden kann, um Änderungen von Attribut- und Entitätsdaten im Laufe der Zeit für Analyse- und Berichtszwecke aufzuzeichnen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 71f39d432e551df456f3d339155d1f3105d6891b
-ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
+ms.openlocfilehash: 43cd755b6746d52aa1aa9a0c89f7134566ee2c1b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "2992808"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156454"
 ---
 # <a name="auditing-overview"></a>Überwachungsübersicht
 

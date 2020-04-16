@@ -20,18 +20,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 10ab6feca7843d64d20938561d44748fc6756768
-ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
+ms.openlocfilehash: 1b5d71f8683b5cb86f79d90540dcf5aa99f6415d
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3028337"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114220"
 ---
 # <a name="solution-layers"></a>Lösungsebenen
 
-Verwaltete und nicht verwaltete Lösungen existieren auf verschiedenen Ebenen innerhalb von einer Common Data Service Umgebung. Im Common Data Service gibt es zwei verschiedene Schichten:  
+Verwaltete und nicht verwaltete Lösungen existieren auf verschiedenen Ebenen innerhalb einer Common Data Service-Umgebung. In Common Data Service gibt es zwei verschiedene Ebenen:  
 - Nicht verwaltete Ebene. Auf dieser Ebene sind alle importierten nicht verwalteten Lösungen und nicht verwalteten Anpassungen vorhanden. Die nicht verwaltete Ebene ist eine einzelne Ebene.  
-- Verwaltete Ebene. Auf dieser Ebene sind alle importierten verwalteten Lösungen und die Systemlösung vorhanden. Wenn mehrere verwaltete Lösungen installiert sind, wird die erste unter den später installierten verwalteten Lösungen installiert. Dies bedeutet, dass die zweite installierte Lösung die zuvor installierte anpassen kann. Wenn die Definitionen zweier verwalteter Lösungen Konflikte haben, gilt die allgemeine Regel, dass die „letzte den Vorzug hat“ Wenn Sie eine verwaltete Lösung deinstallieren, wird die verwaltete Lösung darunter wirksam. Wenn Sie die verwaltete Lösung deinstallieren, wird das innerhalb der Systemlösung definierte Standardverhalten angewendet. Die Basis der verwalteten Ebene ist die Systemebene. Die Systemebene enthält die Systemlösung, die alle Standardentitäten und -komponenten enthält. Die Systemlösung definiert, was Sie mit verwalteten Eigenschaften anpassen können und was nicht. Herausgeber von verwalteten Lösungen haben dieselbe Möglichkeit, Ihre Möglichkeiten zu begrenzen, Lösungskomponenten anzupassen, die sie in ihrer Lösung hinzufügen. Sie können alle Lösungskomponenten anpassen, die keine verwalteten Eigenschaften haben, die Sie an ihrer Anpassung hindern. Weitere Informationen: [Verwaltete Eigenschaften für Common Data Service Metadaten festlegen](set-managed-properties-metadata.md) 
+- Verwaltete Ebene. Auf dieser Ebene sind alle importierten verwalteten Lösungen und die Systemlösung vorhanden. Wenn mehrere verwaltete Lösungen installiert werden, befindet sich die zuletzt installierte über der zuvor installierten verwalteten Lösung. Dies bedeutet, dass die zweite installierte Lösung die zuvor installierte anpassen kann. Wenn zwei verwaltete Lösungen widersprüchliche Definitionen haben, lautet das Laufzeitverhalten entweder „Letzter gewinnt“ oder es wird eine Zusammenführungslogik implementiert.  Wenn Sie eine verwaltete Lösung deinstallieren, wird die verwaltete Lösung darunter wirksam. Wenn Sie die verwaltete Lösung deinstallieren, wird das innerhalb der Systemlösung definierte Standardverhalten angewendet. Die Basis der verwalteten Ebene ist die Systemebene. Die Systemebene enthält die Entitäten und Komponenten, die für das Funktionieren der Plattform erforderlich sind. 
 
 ![Lösungsebenen](media/solution-layers.png)
 

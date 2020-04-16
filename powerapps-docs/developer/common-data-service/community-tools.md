@@ -3,10 +3,10 @@ title: Community-Tools für Common Data Service (Common Data Service) | Microsof
 description: Informieren Sie sich über die mit Community erstellten Tools, mit denen Sie verschiedene Aufgaben mit Power Apps Common Data Service ausführen können.
 ms.custom: ''
 ms.date: 02/09/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: KUmarVivek
+author: KumarVivek
 ms.author: kvivek
 manager: annbe
 search.audienceType:
@@ -14,18 +14,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5aee328227074de39d3856cdee1ceca162d9650d
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: bd5e53ab606f5d2d9a33a8fa4185e9c00070768b
+ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3037133"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3180254"
 ---
 # <a name="community-tools-for-common-data-service"></a>Community-Tools für Common Data Service
 
 Die Power Apps-Community erstellt Tools! 
 
-Viele der beliebtesten werden über die [XrmToolBox](https://www.xrmtoolbox.com/) verteilt. XrmToolBox ist eine Windows-Anwendung, die sich mit dem Common Data Service verbindet und Tools zur Verfügung stellt, die die Anpassung, Konfiguration und Bedienung erleichtern. Es wird mit mehr als 30 Plugins ausgeliefert, um Administrations-, Anpassungs- oder Konfigurationsaufgaben einfacher und zeitsparender zu gestalten. Nachfolgend finden Sie eine ausgewählte Liste von Community-Tools, die über die XrmToolBox verteilt werden und die Sie mit Common Data Service verwenden können.
+Viele der beliebtesten werden über die [XrmToolBox](https://www.xrmtoolbox.com/) verteilt. XrmToolBox ist eine Windows-Anwendung, die sich mit dem Common Data Service verbindet und Tools zur Verfügung stellt, die die Anpassung, Konfiguration und Bedienung erleichtern. Es wird mit mehr als 30 Plugins ausgeliefert, um Administrations-, Anpassungs- oder Konfigurationsaufgaben einfacher und zeitsparender zu gestalten. 
+
+> [!IMPORTANT]
+> Die Community-Tools werden von Microsoft nicht unterstützt. Falls Sie Fragen haben oder Probleme mit Community-ools, wenden Sie sich an den Herausgeber des Tools.
+
+Nachfolgend finden Sie eine ausgewählte Liste von Community-Tools, die über die XrmToolBox verteilt werden und die Sie mit Common Data Service verwenden können.
 
 |Tool  |Beschreibung  |
 |---------|---------|
@@ -39,5 +44,4 @@ Viele der beliebtesten werden über die [XrmToolBox](https://www.xrmtoolbox.com/
 
 Hier ist ein weiteres Werkzeug, [Chrom-Metadaten-Browser](https://community.dynamicslabs.io/feed/metadata-browser), mit dem Sie Metadaten wie Entitäten, Attribute, Beziehungen, Optionssätze von Common Data Service-Umgebungen durchsuchen können. Es funktioniert mit den Browsern Microsoft Edge und Google Chrome. 
 
-> [!IMPORTANT]
-> Die Community-Tools werden von Microsoft nicht unterstützt. Falls Sie Fragen haben oder Probleme mit Community-ools, wenden Sie sich an den Herausgeber des Tools.
+

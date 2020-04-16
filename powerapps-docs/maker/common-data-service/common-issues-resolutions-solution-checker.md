@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cf8fdf1b14ef7bbc503c49fac217bb071bd56305
-ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
+ms.openlocfilehash: 2280ea28178a85429367ea0359660b3b94f5f99b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029764"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154720"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Häufige Probleme und Lösungen für Lösungsprüfer
 
@@ -146,7 +146,7 @@ Der Power Apps Anwendungsprüfer-Bentuzer in der Common Data Service Organisatio
 
 ### <a name="how-to-enable-the-power-apps-checker-application-user"></a>So aktivieren Sie die Power Apps Anwendungsbenutzerprüfung
 
-1. In dem Power Platform  Administration Center, wählen Sie die Umgebung und gehen Sie zu **Einstellungen** > **Benutzer + Berechtigungen**  > **Benutzer**.
+1. Wählen Sie im Power Platform Admin Center die Umgebung aus und gehen Sie zu **Einstellungen** > **Benutzer + Berechtigungen**  > **Benutzer**.
 2. In der Ansicht **Anwendungsbenutzer** wählen Sie das Häkchen neben dem Power Apps Anwendungsbenutzerprüfer aus.
 3. Wählen Sie auf der Aktionssymbolleiste **Aktivieren** aus.
 
@@ -224,7 +224,7 @@ Referenz [Wissensdatenbankartikel #4337537: Ungültiger Export – Geschäftspro
 
 Wenn eine Lösung mit einem [Patch](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates) installiert wurde, kann der Solution Checker die Lösung nicht zur Analyse exportieren. Wenn eine Lösung mit einem Patch versehen wurde, wird die ursprüngliche Lösung gesperrt und kann nicht geändert oder exportiert werden, solange es abhängige Patches in dem Unternehmen gibt, die die Lösung als übergeordnete Lösung identifizieren.
 
-Um dieses Problem zu lösen, klonen Sie die Lösung so, dass für alle mit der Lösung verbundenen Patches ein Rollup in die neu erstellte Lösung ausgeführt wird. Dadurch wird die Lösung entsperrt und die Lösung kann aus dem System exportiert werden.  Weitere Informationen finden Sie unter [Klonen einer Lösung](use-segmented-solutions-patches-simplify-updates.md#clone-a-solution).
+Um dieses Problem zu lösen, klonen Sie die Lösung so, dass für alle mit der Lösung verbundenen Patches ein Rollup in die neu erstellte Lösung ausgeführt wird. Dadurch wird die Lösung entsperrt und die Lösung kann aus dem System exportiert werden.  Weitere Informationen finden Sie unter [Klonen einer Lösung](solution-patches.md#clone-a-solution).
 
 ## <a name="solution-checker-will-not-analyze-empty-solutions"></a>Der Lösungsprüfer analysiert keine leeren Lösungen
 

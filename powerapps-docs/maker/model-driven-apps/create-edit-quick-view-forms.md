@@ -2,7 +2,7 @@
 title: Erstellen oder Bearbeiten von modellgesteuerter Schnellansichtsformulare-App in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie ein Schnellansichtsformular erstellen oder bearbeiten
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 03/13/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6a4540927ad4329bab936fac631e2693d618104
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 1e94b836fc7718f3aa259b677edc58419c98af06
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875264"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3167100"
 ---
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>Erstellen und Bearbeiten eines Schnellansichtsformulars für modellgesteuerten Apps, um Informationen über eine verknüpfte Entität anzuzeigen
 
@@ -45,33 +45,27 @@ Ein Schnellansichtsformular kann einem anderen Formular als Steuerelement zur sc
   
 1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-
-    > [!IMPORTANT]
-    > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).     
-  
 2. Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**. 
   
 3. Wählen Sie in der Symbolleiste **Formular hinzufügen** > **Schnellansichtsformular** aus.  
   
-4. Wählen Sie in der Formular-Editor-Symbolliste **Formulareigenschaften** aus.  
+5. Geben Sie im Bereich **Formular** einen **Anzeigenamen** und eine **Beschreibung** ein, um dieses Schnellansichtsformular von beliebigen anderen zu unterscheiden.  
   
-5. Geben Sie im Dialogfeld **Formulareigenschaften** einen **Formularnamen** und eine **Beschreibung** ein, um dieses Schnellansichtsformular von beliebigen anderen zu unterscheiden. Wählen Sie **OK** aus, um das Dialogfeld **Formulareigenschaften** zu schließen.  
-  
-6. Ziehen Sie im Formulardesigner beliebige Felder aus dem **Feld-Explorer** im Abschnitt im Formular. 
-  
-    > [!IMPORTANT]
-    >  Wenn Sie ein Feld hinzufügen und auf **Feldanforderung** > **Eingabe erforderlich** klicken und dann speichern, ist es nicht möglich, das Feld zu löschen.  
-  
-7. Zum Speichern des Formulars und Schließen des Formular-Editor wählen Sie **Speichern und schließen** aus.  
+6. Ziehen Sie im Formulardesigner beliebige Felder aus dem **Felder-Explorer** in den Abschnitt im Formular.
 
-8. Wählen Sie **Veröffentlichen**, damit das neue Formular in der Anwendung angezeigt wird.
+    > [!IMPORTANT]
+    > Erforderliche Felder können nicht aus einem Formular entfernt werden. Wenn Sie dem Formular ein erforderliches Feld hinzufügen und es entfernen möchten, müssen Sie das Formular löschen und anschließend neu erstellen. Wenn Sie die Eigenschaft „Erforderlich“ für ein Feld festlegen, kann ein Datensatz nicht ohne Daten in diesem Feld gespeichert werden.
+
+7. Wählen Sie **Speichern** aus, um das Formular zu speichern.  
+
+8. Wählen Sie **Veröffentlichen**, damit das neue Formular in der Anwendung angezeigt wird. <!-- Which app? What does Publish do?-->
   
 <a name="BKMK_EditQVF"></a>   
 ## <a name="edit-a-quick-view-form"></a>Bearbeiten eines Schnellansichtsformulars  
  Schnellansichtsformulare besitzen ein vereinfachtes Layout, da sie zur Anzeige innerhalb eines Formularabschnitts konzipiert sind. Nur eine Einspaltenregisterkarte ist verfügbar. Sie können nur weitere Einspaltenabschnitte, Felder, Unterraster und Abstandhalter hinzufügen.   
   
-> [!NOTE]
->  Sie können ein Feld nicht löschen, für das **Eingabe erforderlich** ist. Sie erhalten diese Nachricht, wenn Sie versuchen, das Feld zu löschen: "Das Feld, das Sie gerade zu entfernen versuchen, wird vom System oder Unternehmen benötigt." Wenn Sie das Feld nicht im Formular haben möchten, müssen Sie das gesamte Formular löschen und es dann neu erstellen.  
+  > [!IMPORTANT]
+  > Erforderlich Felder können nicht gelöscht werden. Wenn Sie dem Formular ein erforderliches Feld hinzufügen, können Sie es nicht löschen. Wenn Sie das Feld nicht im Formular haben möchten, müssen Sie das Formular löschen und anschließend neu erstellen.
   
  Wenn Sie ein Schnellansichtsformular bearbeiten, müssen Sie Ihre Änderungen veröffentlichen, bevor sie in der Anwendung sichtbar sind.  
   
@@ -81,21 +75,21 @@ Ein Schnellansichtsformular kann einem anderen Formular als Steuerelement zur sc
   
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-    > [!IMPORTANT]
-    > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).     
-  
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.  
 
 3. Wählen Sie ein Formular mit **Typ** **Haupt** aus.
 
-4. Wählen Sie im Formular-Designer auf die Registerkarte **Einfügen** und anschließend auf der Symbolleiste **Schnellansichtsformular** aus.  
+4. Wählen Sie im Bereich Komponenten des Formulardesigners die Option **Schnellansicht** aus.  
   
-5.  Im Dialogfeld **Eigenschaften zum Steuerelement für die Schnellansicht** legen Sie die Eigenschaften für das Steuerelement der Schnellansicht auf **Name**, **Bezeichnung** und **Schnellansichtsformular** fest. Weitere Informationen: [Eigenschaften zum Steuerelement für die Schnellansicht](quick-view-control-properties-legacy.md)  
-  
-6.  Wählen oder tippen Sie auf **OK**, um das Dialogfeld **Eigenschaften des Schnellansicht-Steuerelements** zu schließen.  
-  
-7.  Wählen Sie die Registerkarte **Startseite** und dann **Veröffentlichen** aus, um das Steuerelement für die Schnellansicht im Formular angezeigt werden.  
-  
+5.  Wählen Sie im Dialogfeld **Schnellansichtsformulare auswählen** das Feld **Suche** und dann den Wert für das Suchfeld aus. Weitere Informationen: [Eigenschaften zum Steuerelement für die Schnellansicht](quick-view-control-properties-legacy.md)  
+
+    > [!div class="mx-imgBorder"] 
+    > ![Hinzufügen von Schnellansicht-Steuerelement](media/add-quick-view-control.png "Hinzufügen von Schnellansicht-Steuerelement zu Hauptformular")
+
+6.  Wählen Sie **Fertig** aus, um das Dialogfeld **Schnellansichtsformulare auswählen** zu schließen. Das Schnellansichtsformular wird im Formular angezeigt.
+
+7.  Wählen Sie **Speichern** aus, um das Formular zu speichern.  
+
 ## <a name="next-steps"></a>Nächste Schritte   
  [Erstellen und Gesalten von Formularen](create-design-forms.md)   
- [Erstellen oder Bearbeiten von Schnellerstellungsformularen](create-edit-quick-create-forms.md)
+ [Schnellerstellungsformulare erstellen oder bearbeiten](create-edit-quick-create-forms.md)

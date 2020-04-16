@@ -3,7 +3,7 @@ title: 'Beispiel: Verwenden von Dynamics 365 for Outlook-Methoden (Common Data S
 description: Dieses Beispiel zeigt, wie die Methoden in der `Microsoft.Crm.Outlook.Sdk.dll`-Assembly verwendet werden.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: sriharibs
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 49ea89b034c617c03e23b11a115eada4735b83ab
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 35f1e643c67738518d3bca3735c5ab2af7db5efb
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748671"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155378"
 ---
 # <a name="sample-use-dynamics-365-for-outlook-methods"></a>Beispiel: Verwendung von Dynamics 365 for Outlook Methoden
 

@@ -3,7 +3,7 @@ title: 'Beispiel: Abfrage in der Vorbereitungsphase ändern (Common Data Service
 description: Dieses Beispiel zeigt, wie man ein Plug-in schreibt, das eine Abfrage ändert, die im PreOperation-Stadium einer RetrieveMultiple-Anfrage definiert ist.
 ms.custom: ''
 ms.date: 09/23/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 92a8a5889eba5068b3cf4eddb095fe98ce6fc097
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a9e0cfa0a639d50a60fbc793ad87b35ed4faf8d8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748740"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155710"
 ---
 # <a name="sample-modify-query-in-preoperation-stage"></a>Beispiel: Abfrage in der Phase PreOperation ändern
 

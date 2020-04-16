@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11e131918e629f9373441c4307b0f4fc51e6dd30
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: bbc56604668a82582092ed305876618651118403
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108283"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "3134117"
 ---
 # <a name="what-is-common-data-service"></a>Was ist Common Data Service?
 Mit Common Data Service können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendungen verwendet werden. Daten in Common Data Service werden in einem Satz von Entitäten gespeichert. Eine *Entität* ist eine Datensatzgruppe, in der Daten gespeichert werden, ähnlich zur Speicherung von Daten in einer Tabelle einer Datenbank. Common Data Service umfasst einen Basissatz an Standardentitäten, die typischen Szenarien abdecken, jedoch können Sie auch benutzerdefinierte Entitäten erstellen, die für Ihre Organisation spezifisch sind und sie mit Power Query mit Daten auffüllen. App-Hersteller können dann Power Apps verwenden, um mithilfe dieser Daten umfangreiche Anwendungen zu erstellen.
 
-![Screenshot der Übersicht der Geschäftsanwendungsplattform.](./media/data-platform-cds-intro/platform.png "Plattformübersicht")
+![Screenshot mit Übersicht über Power Platform.](./media/data-platform-cds-intro/platform.png "Common Data Service in Power Platform")
 
 Informationen zum Erwerb eines Plans zur Verwendung von Common Data Service finden Sie unter [Preisinformationen](../../administrator/pricing-billing-skus.md).
 
@@ -51,7 +51,7 @@ Dynamics 365-Anwendungen, wie Dynamics 365 Sales, Dynamics 365 Customer Service,
 
 ## <a name="integrating-data-into-the-common-data-service"></a>Integration von Daten in Common Data Service
 
-Das Erstellen einer App erfordert in der Regel Daten aus mehr als einer Quelle. Obwohl dies gelegentlich auf Anwendungsebene geschehen kann, gibt es auch Fälle, in denen eine gemeinsame Integration dieser Daten in einem allgemeinen Speicher eine einfache App-Erstellungserfahrung zulässt, und einen einzelnen Logiksatz, um die Daten zu warten, und damit zu arbeiten. Common Data Service gestattet die Integration der Daten aus verschiedenen Quellen in einen einzelnen Speicher, der in Power Apps, Flow und Power BI zusammen mit den Daten verwendet werden kann, die aus Dynamics 365-Anwendungen stammen.
+Das Erstellen einer App erfordert in der Regel Daten aus mehr als einer Quelle. Obwohl dies gelegentlich auf Anwendungsebene geschehen kann, gibt es auch Fälle, in denen eine gemeinsame Integration dieser Daten in einem allgemeinen Speicher eine einfache App-Erstellungserfahrung zulässt, und einen einzelnen Logiksatz, um die Daten zu warten, und damit zu arbeiten. Common Data Service gestattet die Integration der Daten aus verschiedenen Quellen in einen einzelnen Speicher, der in Power Apps, Power Automate, Power BI und Power Virtual Agents zusammen mit den Daten verwendet werden kann, die aus Dynamics 365-Anwendungen stammen.
 
 * **Geplante Integration mit anderen Systemen** &ndash;-Daten, die in einer anderen Anwendung gespeichert werden, können regelmäßig mit Common Data Service synchronisiert werden, damit Sie andere Anwendungsdaten in Power Apps nutzen können.
 * **Daten mit PowerQuery transformieren und importieren** &ndash; Daten beim Import in Common Data Service zu transformieren kann über PowerQuery aus vielen Datenquellen online durchgeführt werden. Es ist ein Tool, das in Excel und Power BI genutzt wird.

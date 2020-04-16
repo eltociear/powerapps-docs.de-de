@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b0bcb58ceab5c0fd711bbe7316b93ce2b8c036e8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 66f0516651d73fbf881a1bfa36529cc9998cfbd6
+ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748373"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3218316"
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>Festlegen von Feldwerten mithilfe von Parametern, die an ein Formular übergeben werden
 
@@ -35,7 +35,7 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
   
  Wenn Sie ein neues Formular öffnen, indem Sie die URL-Adresse verwenden, können Sie Argumente in den Parameter `extraqs` einfügen, um Feldwerte festzulegen. Die folgenden Anforderungen müssen erfüllt sein:  
   
-- Sie müssen den Parameter codieren, der im Parameter `extraqs` übergeben wird. Um die Parameter zu codieren, verwenden Sie [encodeURIComponent](https://msdn.microsoft.com/library/aeh9cef7\(VS.85\).aspx).  
+- Sie müssen den Parameter codieren, der im Parameter `extraqs` übergeben wird. Um die Parameter zu codieren, verwenden Sie [encodeURIComponent](https://msdn.microsoft.com/library/aeh9cef7\(VS.85\).aspx).  Um Sonderzeichen wie „=“ oder „&“ in den Parameterwerten zu verwenden, müssen Sie doppelt codieren (z. B. um `name` auf `A=B&C` festzulegen, wäre es `extraqs=name%3DA%253DB%2526C`).
   
 - Die Namen der Abfragezeichenfolgenargumente müssen mit den Namen der Attribute für die Entität übereinstimmen oder diese enthalten.  
   
@@ -88,7 +88,7 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
 ## <a name="example-set-the-value-for-lookup-fields"></a>Beispiel: Festlegen des Werts für Suchfelder  
  Um Werte für Suchfelder festzulegen, verwenden Sie den Datenwert, den Namenswert, und geben Sie nur bei Kunden- oder Besitzersuchen den Typwert für das jeweilige Feld an. Im folgenden Beispiel wird das Besitzerfeld auf einen Benutzer mit dem Namen "Mark Folkerts" festgelegt.  
   
- Der uncodierte Wert für den `extraqs` Parameter lautet "**ownerid**={B8C6E040-656E-DF11-B414-00155DB1891A}&**owneridname** = Mark Folkerts&**owneridtype**=systemuser”.  
+ Der uncodierte Wert für den `extraqs` Parameter lautet "**ownerid**={B8C6E040-656E-DF11-B414-00155DB1891A}&**owneridname**= Mark Folkerts&**owneridtype**=systemuser”.  
   
 ```  
 /main.aspx?etn=lead&pagetype=entityrecord&extraqs=ownerid%3D%7bB8C6E040-656E-DF11-B414-00155DB1891A%7d%26owneridname%3DMark%20Folkerts%26owneridtype%3Dsystemuser  

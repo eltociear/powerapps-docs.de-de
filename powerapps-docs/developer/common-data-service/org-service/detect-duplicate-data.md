@@ -3,7 +3,7 @@ title: Erkennen von doppelten Daten mit dem Organisationsdienst (Common Data Ser
 description: Der Organisationsdienst ermöglicht es Ihnen, doppelte Datensätze im Common Data Service zu erkennen, um die Integrität der Daten zu gewährleisten.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cb2ecce70adaf47ea55117831d2ced866bce10f1
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 6d34d8e58f313fcd10824a88578c6fc0ae69d84b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109019"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156090"
 ---
 # <a name="detect-duplicate-data-using-the-organization-service"></a>Duplikaterkennung mithilfe des Organisation-Service
 

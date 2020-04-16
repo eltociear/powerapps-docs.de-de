@@ -9,18 +9,18 @@ ms.assetid: 86c4a8a8-7401-6d75-7979-3b04b506eb0c
 author: paulliew
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2cf649ad1bcba55e32192a8f72f3a7c7aabf10f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7ea2afe0b3a4770be48a7df13f9378069926b0b5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859931"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155134"
 ---
 # <a name="walkthrough-register-an-app-with-azure-active-directory"></a>Exemplarische Vorgehensweise: Registrieren einer App mit Azure Active Directory
 
@@ -44,7 +44,7 @@ Die App-Registrierung kann auch von einem Anwendungsentwickler oder einem einzel
 1. Melden Sie sich beim [Azure-Portal](https://go.microsoft.com/fwlink/?linkid=2083908) mit einem Konto mit Administratorrechten an. Sie müssen ein Konto im gleichen Office 365-Abonnement (Mandant) verwenden, in dem Sie auch die App registrieren möchten. Sie können das Azure-Portal auch über die Schaltfläche Office 365 [Admin Center](https://admin.microsoft.com/adminportal) aufrufen, indem Sie das Element **Admin Center** im linken Navigationsbereich erweitern und **Azure Active Directory** auswählen.  
   
    > [!NOTE]
-   > Wenn Sie keinen Azure-Mandaten (Konto) haben oder wenn Sie einen haben, aber Ihr Office365-Abonnement mit Common Data Service in Ihrem Azure-Abonnement nicht verfügbar ist, folgen Sie den Anweisungen im Thema [Einrichten des Azure Active Directory-Zugriffs für Ihre Entwicklerseite](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment), um die beiden Konten zu verbinden.<br><br> Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Weitere Informationen: [Active Directory-Preisberechnungsdetails](https://azure.microsoft.com/pricing/details/active-directory/)  
+   > Wenn Sie keinen Azure-Mandaten (Konto) haben oder wenn Sie einen haben, aber Ihr Office365-Abonnement mit Common Data Service in Ihrem Azure-Abonnement nicht verfügbar ist, folgen Sie den Anweisungen im Thema [Einrichten des Azure Active Directory-Zugriffs für Ihre Entwicklerseite](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment), um die beiden Konten zu verbinden.<br><br> Wenn Sie kein Konto haben, können Sie sich für eines registrieren, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Weitere Informationen: [Active Directory-Preisberechnungsdetails](https://azure.microsoft.com/pricing/details/active-directory/)  
   
 2. Wählen Sie im Azure-Portal im linken Bereich **Azure Active Directory** und wählen Sie **App-Registrierungen** und klicken Sie auf **Neue Registrierung**.
     
@@ -58,11 +58,11 @@ Die App-Registrierung kann auch von einem Anwendungsentwickler oder einem einzel
 
       ![Seite „Neue App-Registrierung“](media/new-app-registration-page.png "Seite „Neue App-Registrierung“")
 
-5. Bewegen Sie auf der Seite App-**Übersicht** den Mauszeiger über den Wert **Anwendungs-ID (Client)** und wählen Sie das Symbol **In die Zwischenablage kopieren**, um den Wert zu kopieren, da Sie dies gegebenenfalls im Authentifizierungscode Ihrer Anwendung oder in der app.config-Datei angeben müssen.
+5. Bewegen Sie auf der Seite App-**Übersicht** den Mauszeiger über den Wert **Anwendungs-ID (Client)** und wählen Sie das Symbol **In die Zwischenablage kopieren** aus, um den Wert zu kopieren, da Sie dies gegebenenfalls im Authentifizierungscode Ihrer Anwendung oder in der app.config-Datei angeben müssen.
 
     ![Anwendungs-ID kopieren](media/app-registration-overview-page.png "Anwendungs-ID kopieren")
   
-5. Wählen Sie die Registerkarte **Manifest**, setzen Sie im Manifest Editor die Eigenschaft **allowPublicClient** auf **true** und klicken Sie auf **Speichern**.
+5. Wählen Sie die Registerkarte **Manifest** aus, setzen Sie im Manifest Editor die Eigenschaft *allowPublicClient** auf **true** und klicken Sie auf **Speichern**.
    
     ![App-Registrierungsmanifest](media/app-registration-manifest-page.png "App-Registrierungsmanifest")
 

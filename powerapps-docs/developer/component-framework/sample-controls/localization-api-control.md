@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 33ba9adb4e1f1d94973e8210a2eb32bdee0eaf7d
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: e92752114e6b1f8ff38ad053f3b2f95a3b588f81
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091221"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162051"
 ---
 # <a name="implementing-localization-api-component"></a>Implementieren der Lokalisierungs-API-Komponente
 
@@ -455,7 +455,7 @@ Bei der Ausführung dieser Codezeile identifiziert das Power Apps component fram
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Beispielkomponenten verwenden](../use-sample-components.md)<br/>
 [Power Apps component framework-API-Referenz](../reference/index.md)<br/>
 [Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)

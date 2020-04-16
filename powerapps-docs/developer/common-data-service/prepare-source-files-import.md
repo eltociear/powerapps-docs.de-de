@@ -3,7 +3,7 @@ title: Vorbereiten einer Quelldatei für den Import (Common Data Service) | Micr
 description: Datenimport unterstützt Quellendateien, die als durch Trennzeichen getrennten Datei (CSV-Datei), Textdateien oder 2003 (XML-Dateien) Textdateien formatiert sind.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 19ddeb03ffc6132e67da8140c63f392769db4fe2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0e2e89f178e30d8b0f1f704149f64e496f7740e4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752666"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155366"
 ---
 # <a name="prepare-source-files-for-import"></a>Vorbereiten einer Quelldatei für den Import
 

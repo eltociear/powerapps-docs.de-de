@@ -3,7 +3,7 @@ title: Doppelte Regelentitäten (Common Data Service) | Microsoft-Dokumentation
 description: Diese Entitäten enthalten Daten, die Duplikaterkennungsregeln definieren.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 428b801f1868a4b25870f4da4cf7ee52d8adc7b2
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 359c8580b0257fc382958a3ef303abc5c0bb8c59
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005079"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156238"
 ---
 # <a name="duplicate-rule-entities"></a>Duplikatregelentitäten
 

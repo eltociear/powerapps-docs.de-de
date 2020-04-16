@@ -1,8 +1,8 @@
 ---
-title: Aktualisieren oder upgraden einer Lösung | Microsoft Docs
+title: Aktualisieren einer Lösung | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie eine Lösung in Power Apps aktualisieren oder upgraden können
 ms.custom: ''
-ms.date: 01/24/2020
+ms.date: 03/18/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,21 +21,31 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 178c4e6d618ad29975c37c5e690847b27899fc08
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 0bebbc9eeead8fb4f02c4bf958c33b79c0d9cc1c
+ms.sourcegitcommit: 48414442a10210d49911c3eda8b49f68db85f684
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017523"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "3151172"
 ---
-# <a name="update-or-upgrade-a-solution"></a>Aktualisieren einer Lösung  
-Manchmal möchten Sie eine Aktualisierung zu einer vorhandenen verwalteten Lösung installieren. Die Vorgehensweise entspricht dem Installieren einer neuen verwalteten Lösung, mit Ausnahme einiger unterschiedlicher Optionen. Wenn Sie eine Lösung aktualisieren, die Sie von jemand anderem erhalten haben, sollten Sie den Lösungsherausgeber danach fragen, welche Optionen Sie auswählen sollten.  
+# <a name="upgrade-or-update-a-solution"></a>Upgraden oder Aktualisieren einer Lösung  
+Es gibt Zeiten, in denen Sie eine vorhandene verwaltete Lösung aktualisieren müssen. Führen Sie die folgenden Schritte aus, um die Lösung zu aktualisieren: 
 
-1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** in der linken Navigation.  
+1.  Öffnen Sie die nicht verwaltete Lösung in Ihrer Entwicklungsumgebung, erstellen Sie neue Komponenten oder fügen Sie Komponenten hinzu und entfernen Sie bestehende Komponenten. 
+2.  Erhöhen Sie die Versionsnummer, wenn Sie die Lösung als verwaltete Lösung exportieren. Weitere Informationen: [Verstehen der Versionsnummern für Updates](#understanding-version-numbers-for-updates) 
+
+    > [!div class="mx-imgBorder"] 
+    > ![Aktualisieren der Lösungsversion](media/update-solution-version.png)
+3. [Übernehmen des Upgrades oder Updates in der Zielumgebung](#apply-the-upgrade-or-update-in-the-target-environment)
+
+## <a name="apply-the-upgrade-or-update-in-the-target-environment"></a>Übernehmen des Upgrades oder Updates in der Zielumgebung
+Das Verfahren zum Importieren der aktualisierten Lösung ähnelt dem Installieren einer neuen verwalteten Lösung, außer dass Sie verschiedene Optionen erhalten. Wenn Sie eine Lösung aktualisieren, die Sie von jemand anderem erhalten haben, sollten Sie den Lösungsherausgeber danach fragen, welche Optionen Sie auswählen sollten.  
+
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, wählen Sie die gewünschte Zielumgebung und dann **Lösungen** in der linken Navigation aus.  
 
 2. Wählen Sie in der Befehlsleiste **Importieren**.  
 
-3. Wählen Sie auf der Seite **Lösungspaket wählen**Seite **Durchsuchen**, um die komprimierte Datei (.zip oder .cab) zu finden, die die zu aktualisierende Lösung enthält.  
+3. Wählen Sie auf der Seite **Lösungspaket auswählen** die Option **Durchsuchen** aus, um die komprimierte Datei (.zip oder .cab) zu finden, die die zu aktualisierende Lösung enthält.  
 
 4. Wählen Sie **Weiter**.  
 
@@ -70,8 +80,11 @@ Manchmal möchten Sie eine Aktualisierung zu einer vorhandenen verwalteten Lösu
 
 **Abschließen von Lösungs-Upgrades** Wenn Sie die ausgewählte Phase für Upgrades wählen oder das System ein Problem hat, das Upgrade zu beenden, sehen Sie, dass die erste Lösung immer noch in Ihrem System installiert ist, zusammen mit einer neuen Lösung, die den gleichen Namen hat wie die Lösung, der Sie das \_Upgrade hinzugefügt haben.  Um das Upgrade abzuschließen, wählen Sie die Basislösung in der Lösungsliste aus und wählen Sie **Lösungs-Upgrade anwenden**.  Dadurch werden alle vorherigen Patches deinstalliert und die ursprüngliche Lösung erhält die \_Upgrade-Lösung, die dann den gleichen Namen hat wie die vorherige Lösung.  Alle Komponenten, die in der ursprünglichen Lösung und Lösungspatches enthalten waren und in der \_Upgrade-Lösung nicht vorhanden sind, werden als Teil des Prozesses gelöscht.
 
+## <a name="understanding-version-numbers-for-updates"></a>Verstehen der Versionsnummern für Updates
+Eine Lösungsversion hat das folgende Format: major.minor.build.revision. Ein Update muss eine höhere Haupt-, Neben-, Build- oder Revisionsnummer als die übergeordnete Lösung haben. Beispielsweise könnte für eine Basislösungsversion 3.1.5.7 ein kleines Update eine Version 3.1.5.8 oder ein etwas bedeutenderes Update die Version 3.1.7.0 sein. Ein wesentlich bedeutenderes Update könnte die Version 3.2.0.0 sein.
+
 
 ### <a name="see-also"></a>Siehe auch
+[Hinzufügen von Lösungskomponenten](create-solution.md#add-solution-components) <br />
 [Exportieren von Lösungen](export-solutions.md) <br />
-[Lösungen und Patches verteilen](use-segmented-solutions-patches-simplify-updates.md) <br />
 [Lösung importieren](import-update-export-solutions.md)

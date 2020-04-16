@@ -3,7 +3,7 @@ title: Arbeiten mit Daten mit Hilfe von Code in Common Data Service (PowerApps) 
 description: 'Common Data Service bietet zwei Webdienste, die Sie verwenden können, um mit Daten zu interagieren: Web-API und Organisationsdienst.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d905bdcdd8cccccf841c16579243d4788faa6ab3
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 3da5976eba337c6b816f7414403876f3470b77ea
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109594"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154910"
 ---
 # <a name="work-with-data-using-code-in-common-data-service"></a>Arbeiten mit Daten mit Hilfe von Code in Common Data Service
 

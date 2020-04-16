@@ -2,7 +2,7 @@
 title: Hinzufügen der modellgesteuerten App Formularnavigation für zugehörige Entitäten in Power Apps | Microsoft-Dokumentation
 description: Mehr zu Formularnavigation für verknüpfte Entitäten hinzufügen
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 03/18/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9751a917dc553355c89aa2a42865ad69bfee5c10
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: da8842d2c83761fff2730b09b4b39f058da6e5d1
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874902"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166968"
 ---
 # <a name="add-model-driven-app-form-navigation-for-related-entities"></a>Modell-angetriebene Appformularnavigation für zugehörige Entitäten in PowerApps hinzufügen
 
@@ -35,19 +35,17 @@ In diesem Thema nutzen Sie das Formular Navigationsbereich, das verwendet wird, 
   
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-  
-    > [!IMPORTANT]
-    > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment). 
-
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**. 
   
-3.  Öffnen Sie in der Liste der Formulare das Formular des Typs **Primär**, um es zu bearbeiten.  
+3.  Öffnen Sie in der Liste der Formulare das Formular des Typs **Primär**, um es zu bearbeiten.
+
+4.  Wählen Sie **In klassischen Modus wechseln** aus, um das Formular im klassischen Formulardesigner zu bearbeiten.
   
-4.  Wenn Sie einer verknüpften Entität einen Link hinzufügen möchten, wählen Sie auf der Registerkarte **Start** in der Gruppe **Auswählen** die Option **Navigation**.  
+5.  Wenn Sie einer verknüpften Entität einen Link hinzufügen möchten, wählen Sie auf der Registerkarte **Start** in der Gruppe **Auswählen** die Option **Navigation**.  
   
      Der Bereich **Beziehungs-Explorer** wird auf der rechten Seite des Formular-Editors geöffnet.  
   
-5.  Wählen Sie im Bereich **Beziehungs-Explorer** in der Liste **Filter** eine der folgenden Optionen aus:  
+6.  Wählen Sie im Bereich **Beziehungs-Explorer** in der Liste **Filter** eine der folgenden Optionen aus:  
   
     - **Verfügbare Beziehungen**. Listet alle Entitäten auf, die mit der Entität verknüpft werden können, der das Formular zugeordnet ist.  
   
@@ -58,28 +56,28 @@ In diesem Thema nutzen Sie das Formular Navigationsbereich, das verwendet wird, 
     > [!NOTE]
     >  Wenn im Bereich **Beziehungs-Editor** keine zugehörigen Entitäten angezeigt werden, können Sie von diesem Formular aus keine Verknüpfung zu einer verbundenen Entität herstellen.  
   
-6.  Wählen Sie die verbundene Entität aus, zu der Sie eine Verknüpfung herstellen wollen, ziehen Sie sie in den Navigationsbereich, und legen Sie sie dort ab, wo sie angezeigt werden soll.  
+7.  Wählen Sie die verbundene Entität aus, zu der Sie eine Verknüpfung herstellen wollen, ziehen Sie sie in den Navigationsbereich, und legen Sie sie dort ab, wo sie angezeigt werden soll.  
   
     > [!TIP]
     >  Sie können auch eine neue Beziehung erstellen, indem Sie im Bereich **Beziehungs-Explorer** die Schaltfläche **Neue 1:n-Beziehung** oder **Neue N:N-Beziehung** wählen.   
   
-7. Zum Bearbeiten der Eigenschaften des Links für diese oder für eine andere verknüpfte Entität im Navigationsbereich, markieren Sie den Link, und wählen Sie dann auf der Registerkarte **Start** die Option **Eigenschaften ändern**.  
+8. Zum Bearbeiten der Eigenschaften des Links für diese oder für eine andere verknüpfte Entität im Navigationsbereich, markieren Sie den Link, und wählen Sie dann auf der Registerkarte **Start** die Option **Eigenschaften ändern**.  
   
-8. Geben Sie im Dialogfeld **Beziehungseigenschaften** auf der Registerkarte **Anzeige** eine neue Anzeigebeschriftung ein.  
+9. Geben Sie im Dialogfeld **Beziehungseigenschaften** auf der Registerkarte **Anzeige** eine neue Anzeigebeschriftung ein.  
   
-9. Wählen Sie auf der Registerkarte **Name** die Option **Bearbeiten**, um Details anzuzeigen oder zu bearbeiten, die dem Beziehungsdatensatz zugeordnet sind.  
+10. Wählen Sie auf der Registerkarte **Name** die Option **Bearbeiten**, um Details anzuzeigen oder zu bearbeiten, die dem Beziehungsdatensatz zugeordnet sind.  
   
-10. Wählen Sie **OK**.  
+11. Wählen Sie **OK**.  
   
-11. Prüfen Sie in einer Vorschau die Darstellung des Hauptformulars und die Funktionsweise der Ereignisse:  
+12. Prüfen Sie in einer Vorschau die Darstellung des Hauptformulars und die Funktionsweise der Ereignisse:  
   
     1.  Wählen Sie auf der Registerkarte **Homepage** die Option **Vorschau** aus, und wählen Sie dann **Formular erstellen**, **Formular aktualisieren** oder **Schreibgeschütztes Formular** aus.  
   
     2.  Wählen Sie zum Schließen des Formulars **Vorschau** im Menü **Datei** die Option **Schließen** aus.  
   
-12. Wenn Sie die Bearbeitung des Formulars abgeschlossen haben, wählen Sie zum Schließen des Formulars **Speichern und schließen**.  
+13. Wenn Sie die Bearbeitung des Formulars abgeschlossen haben, wählen Sie zum Schließen des Formulars **Speichern und schließen**.  
   
-13. Sind die Anpassungen vollständig, können sie veröffentlicht werden:  
+14. Sind die Anpassungen vollständig, können sie veröffentlicht werden:  
   
     -   Wenn Sie Anpassungen für ausschließlich die Komponente veröffentlichen möchten, die Sie gerade bearbeiten, wählen Sie in der Navigationsleiste die Entität aus, an der Sie gearbeitet haben, und wählen Sie dann **Veröffentlichen** aus.  
   

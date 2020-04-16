@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 8d1da235f93f98a8104c69511bb8c50f86ddcbda
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: cc4e4dd513cc627c7c9622854151f6a3f85c3e77
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909284"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162167"
 ---
 # <a name="debug-code-components"></a>Debuggen von Codekomponenten
 
@@ -26,7 +26,7 @@ Wie in der obigen Abbildung dargestellt wird das Browserfenster mit vier Abschni
 
 - **Context inputs** bietet eine Möglichkeit, den Formfaktor zu spezifizieren und die Codekomponente mit jedem Formfaktor (Web, Tablett, Telefon) zu testen. Dies ist hilfreich, wenn die Codekomponente von einer bestimmten Formfaktorfähigkeit abhängig ist.
 - **Data inputs** ist eine interaktive Benutzeroberfläche, die alle Eigenschaften und deren [Typen](manifest-schema-reference/types.md) oder [Typgruppen](manifest-schema-reference/type-group.md) anzeigt, die in der Datei [manifest](manifest-schema-reference/manifest.md) definiert sind. Damit können Sie Pseudodaten für jede Eigenschaft eingeben. 
-- **Outputs** rendert die Ausgabe, wenn die Methode [getOutputs](reference/control/getoutputs.md) einer Komponente aufgerufen wird.  
+- Die **Ausgabe** rendert die Ausgabe, wenn die [getOutputs](reference/control/getoutputs.md)-Methode einer Komponente aufgerufen wird.  
 
      > [!div class="mx-imgBorder"]
      > ![Testumgebung 2](media/test-harness-2.png "Testumgebung 2")
@@ -61,10 +61,10 @@ Wie in der obigen Abbildung dargestellt wird das Browserfenster mit vier Abschni
 
 Die Testumgebung unterstützt den `watch`-Modus, den Sie für Power Apps Component Framework-Projekte nutzen können. Um den `watch`-Modus zu aktivieren, starten Sie den Testbereich mit dem Befehl `npm start watch`. Im `watch`-Modus werden die Änderungen, die an einem der folgenden Komponentenobjekte vorgenommen werden, automatisch in der Testumgebung angezeigt, ohne sie neu starten zu müssen:
 
-1.  `index.ts`-Datei enthalten sind.
-2.  `ControlManifest.Input.xml`-Datei enthalten sind.
-3.  Importierte Bibliotheken in `index.ts`.
-4.  Alle Ressourcen, die in der Manifestdatei aufgeführt sind.
+1.    `index.ts`-Datei enthalten sind.
+2.    `ControlManifest.Input.xml`-Datei enthalten sind.
+3.    Importierte Bibliotheken in `index.ts`.
+4.    Alle Ressourcen, die in der Manifestdatei aufgeführt sind.
 
 ## <a name="debug-code-components-using-native-browsers"></a>Debuggen von Codekomponenten mit nativen Browsern
 

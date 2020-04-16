@@ -3,7 +3,7 @@ title: ActivityParty-Entität (Common Data Service) | Microsoft-Dokumentation
 description: Eine Aktivitätspartei stellt eine Person oder Gruppe dar, die einer Aktivität zugeordnet ist. Eine Aktivität kann mehrere Aktivitätsparteien haben.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa10c95e2b5345f70399d1b19c5e0df0bf1f8527
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e73bd118ed15503610f6122c11fc67a657062743
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748266"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156498"
 ---
 # <a name="activityparty-entity"></a>ActivityParty-Entität
 

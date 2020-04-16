@@ -3,7 +3,7 @@ title: 'Beispiel: Einen Bericht für die Organisation verfügbar oder nicht verf
 description: Dieses Beispiel zeigt, wie Sie einen Bericht für die Organisation verfügbar machen bzw. wie Sie die Verfügbarkeit aufheben.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 204caead7dc4416305964ff449c787b348414891
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 7c248c4393bd2872b3fba32977b47ebd32b15c17
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956319"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155726"
 ---
 # <a name="make-a-report-available-or-unavailable-to-organization"></a>Stellen Sie der Organisation einen Bericht zur Verfügung oder nicht zur Verfügung
 

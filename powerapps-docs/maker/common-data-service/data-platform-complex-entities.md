@@ -6,24 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 09/26/2019
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a87b41fd2688992b85fb4dde36a2e7119f4e7a9f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e497b7dcf1b815acfaad7df170e3801083b8433e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861245"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156568"
 ---
 # <a name="complex-entities-and-licensing"></a>Komplexe Entitäten und Lizenzierung
 
 > [!IMPORTANT]
-> Dieses Thema ist veraltet und wird in Kürze aktualisiert, um die neuesten Lizenzierungsänderungen zu berücksichtigen, die ab dem 1. Oktober 2019 gelten. Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [Power Apps Lizenzhandbuch](https://go.microsoft.com/fwlink/?linkid=2085130).
+> Komplexe Entitäten gelten nur für Power Apps Plan 1 und Plan 2 Lizenzen und nicht für Power Apps pro App und Power Apps pro User-Plan.
+> Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [Power Apps Lizenzhandbuch](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 Entitäten, die die folgende komplexe serverseitige Logik beinhalten, erfordern, dass Benutzer einer App oder eines Flow, die diese Entitäten verwendet, eine Power Apps Plan 2 oder Power Automate Plan 2 Lizenz besitzen:
 

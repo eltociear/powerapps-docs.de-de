@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 89dacd67f5a7876f7fd0950d0bba4cd60218f296
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6f801328a4fc6b400cecd9ae7d8d233d8f3241a7
+ms.sourcegitcommit: 551af7e0273862b28d9b2387671a4eeaf719eb37
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862024"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3116871"
 ---
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>Hinzufügen von Codekomponenten zu einem Feld oder einer Entität in modellgesteuerten Apps
 
@@ -29,7 +29,7 @@ Mit Codekomponenten können Sie Felder transformieren, die üblicherweise Text i
 
 Das Ausführen der Schritte unten ändert die Standardbezeichnung und das Textfeld im **Budgetbetrag**-Feld auf die benutzerdefinierte Schiebreglerkomponente in der Entität Verkaufschance. Sie können ähnliche Schritte verwenden, um ein vorhandenes Feld durch eine Codekomponente zu ersetzen oder eine Codekomponente für ein benutzerdefiniertes Feld zu konfigurieren.
 
-1. Öffnen Sie den Projektmappen-Explorer.
+1. Navigieren Sie dann zu **Einstellungen** > **Anpassungen** > **System anpassen**.
 
 2. Erweitern Sie **Entitäten**, erweitern Sie die Entität, wie die Entität **Verkaufschance**, wählen Sie **Formulare**, und öffnen dann ein Formular wie das Formular **Hauptformular**.
 

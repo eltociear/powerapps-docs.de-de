@@ -3,7 +3,7 @@ title: Beschreiben einer Beziehung zwischen Entitäten mit Verbindungsrollen (Co
 description: Beschreibung einer Beziehung zwischen Entitäten unter Verwendung von Verbindungsrollen und Verbindungsrollenkategorien.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07bd45625e0947ed7123f891aa9b33aac214869d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e99661b98905e43b2e3a24b37f945fbcd3d5287d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748230"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156246"
 ---
 # <a name="describe-a-relationship-between-entities-with-connection-roles"></a>Beschreiben einer Beziehung zwischen Entitäten mit Verbindungsrollen
 

@@ -3,7 +3,7 @@ title: Konfigurieren von Entitäten und Attributen für die Überwachung (Common
 description: Erläutert die Konfigurationsanforderungen, um die Entitäten und Attributen für die Überwachung zu aktivieren und zu deaktivieren.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a5a21fbf701d5e84b8a8fdb056d8fc66617fe23
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3db84b0806f9fc1136e60d4b92febacc5b351df9
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748575"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156370"
 ---
 # <a name="configure-entities-and-attributes-for-auditing"></a>Konfigurieren von Entitäten und Attributen für die Überwachung
 

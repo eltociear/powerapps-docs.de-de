@@ -3,7 +3,7 @@ title: Verwenden von FetchXML, um Daten abzufragen (Common Data Service) | Micro
 description: FetchXML ist eine herstellereigene Abfragesprache, die im Common Data Service verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt.
 ms.custom: ''
 ms.date: 07/23/2019
-ms.reviewer: susikka
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1337df809d0f696d81882089877c4ab9304ef3d8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 70dd2fe43d882d36f54fa6b13c87f5a6782d692f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748512"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155186"
 ---
 # <a name="use-fetchxml-to-construct-a-query"></a>Verwenden von FetchXML zum Erstellen einerAbfrage
 
-FetchXML ist eine herstellereigene Abfragesprache, die im Common Data Service verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt. Die FetchXML-Sprache unterstützt ähnliche Abfragefunktionen als Abfrageausdrücke. Zusätzlich wird sie als serialisiertes Abfrageformular verwendet, das verwendet wird, um eine Abfrage als gespeicherte benutzereigene Ansicht in der [UserQuery Entität](reference/entities/userquery.md) und als gespeicherte organisationseigene Ansicht in der [SavedQuery-Entität](reference/entities/savedquery.md) zu speichern.  
+FetchXML ist eine herstellereigene Abfragesprache, die im Common Data Service verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt. Die FetchXML-Sprache unterstützt ähnliche Abfragefunktionen als Abfrageausdrücke. Zusätzlich wird sie als serialisiertes Abfrageformular verwendet, das dazu dient, um eine Abfrage als gespeicherte benutzereigene Ansicht in der [UserQuery-Entität](reference/entities/userquery.md) und als gespeicherte organisationseigene Ansicht in der [SavedQuery-Entität](reference/entities/savedquery.md) zu speichern.  
   
 Eine FetchXML-Abfrage kann mithilfe von **Web API** oder **Organization Service** ausgeführt werden.
 
@@ -143,3 +143,4 @@ foreach (var c in result.Entities)
 ## <a name="fetchxml-query-results"></a>FetchXML-Abfrageergebnisse  
  Wenn Sie einer FetchXML-Abfrage ausführen, indem Sie die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.RetrieveMultiple(Microsoft.Xrm.Sdk.Query.QueryBase)> Methode authentifiziert den Benutzer. Methode, ist der Rückgabewert eine <xref:Microsoft.Xrm.Sdk.EntityCollection>, die die Ergebnisse der Abfrage enthält. Sie können dann die Entitätssammlung durchlaufen. Der vorherige Beispiel verwendet die `foreach`-Schleife, um die Ergebnissammlung der FetchXML-Abfrage zu durchlaufen.  
   
+ 

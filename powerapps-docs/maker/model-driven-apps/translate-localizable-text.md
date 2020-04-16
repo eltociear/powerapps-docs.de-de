@@ -2,7 +2,7 @@
 title: Übersetzen von lokalisierbarem Text für modellgetriebene Anwendungen | MicrosoftDocs
 description: Erfahren Sie, wie Sie lokalisierbaren Text in mehrere Sprachen übersetzen lassen können.
 ms.custom: ''
-ms.date: 06/03/2018
+ms.date: 03/05/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 32e6eb8439cdd5a685f761b1326a0cc891f0e6bb
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d0f8f154d4a2cb92a062b7ce37f9e6a0b17e9b6b
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754869"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136387"
 ---
 # <a name="translate-localizable-text-for-model-driven-apps"></a>Übersetzen von lokalisierbarem Text für modellgesteuerte Anwendungen
 
@@ -51,20 +51,25 @@ Wenn Sie die Sprachen für Ihre Umgebung noch nicht aktiviert haben, führen Sie
 
 ## <a name="export-the-localizable-text"></a>Exportieren des lokalisierbaren Textes
 
-Der Umfang des zu exportierenden lokalisierbaren Textes ist die nicht verwaltete Lösung, die den lokalisierbaren Text enthält. Dies ist nur mit dem Lösungs-Explorer möglich.
+Der Umfang des zu exportierenden lokalisierbaren Textes ist die nicht verwaltete Lösung, die den lokalisierbaren Text enthält.
 
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
+<!-- [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)] -->
 
-Öffnen Sie die nicht verwaltete Lösung, die den lokalisierbaren Text in der Menüleiste enthält, wählen Sie **Übersetzungen** > **Übersetzungen exportieren**. 
+1. Wählen Sie im Power Apps-Portal die Option **Lösungen** aus.
 
-![Exportieren von Übersetzungen](media/export-localizable-text.png)
+2. Wählen Sie in der Liste **Alle Lösungen** die nicht verwaltete Lösung aus, die den gewünschten lokalisierbaren Text enthält.
 
-Sie sollten folgende Warnung sehen:
-> Das Exportieren angepasster Beschriftungen zur Übersetzung kann einige Minuten in Anspruch nehmen. Klicken Sie nicht erneut auf den Exportlink, bevor der erste Exportvorgang abgeschlossen ist. Möchten Sie den Exportvorgang jetzt wirklich ausführen? 
+3. Wählen Sie in der Menüleiste die Optionen **Übersetzungen** > **Übersetzungen exportieren** aus. 
 
-Klicken Sie auf **OK**, wenn Sie den Vorgang fortsetzen möchten.
+    > [!div class="mx-imgBorder"] 
+    > ![Übersetzungen exportieren](media/export-localizable-text.png "Exportieren von Übersetzungen")
 
-Wenn der Export abgeschlossen ist, finden Sie in Ihrem Download-Ordner eine Datei mit dem Namen `CrmTranslations_{0}_{1}.zip`, wobei `{0}` der eindeutige Name der Lösung und `{1}` die Versionsnummer der Lösung ist.
+    Es könnte folgende Warnung angezeigt werden:
+    > Das Exportieren angepasster Beschriftungen zur Übersetzung kann einige Minuten in Anspruch nehmen. Klicken Sie nicht erneut auf den Exportlink, bevor der erste Exportvorgang abgeschlossen ist. Möchten Sie den Exportvorgang jetzt wirklich ausführen?
+    
+    > Klicken Sie auf **OK**, wenn Sie den Vorgang fortsetzen möchten.
+
+Speichern Sie nach Abschluss des Exports die ZIP-Datei für die Übersetzungen. Die Datei heißt zum Beispiel `CrmTranslations_{0}_{1}.zip`, wobei `{0}` der eindeutige Name der Lösung und `{1}` die Versionsnummer der Lösung ist.
 
 ## <a name="get-the-localizable-text-translated"></a>Den lokalisierbaren Text übersetzen lassen
 
@@ -84,7 +89,7 @@ Sie können die CrmTranslations.xml-Datei mit Microsoft Office Excel öffnen.
 
 Wenn Sie die Daten in Excel anzeigen, sehen Sie sich die Registerkarte **Lokalisierte Beschriftungen** an.
 
-![Exportierter Text für die Lokalisierung](media/localized-labels-tab-exported-languages.png)
+![Exportierter Text für die Lokalisierung](media/localized-labels-tab-exported-languages.png "Exportierter Text für die Lokalisierung")
 
 Alle benutzerdefinierten Entitäten oder Felder haben leere Zellen für den lokalisierbaren Text. Fügen Sie die lokalisierten Werte für diese Elemente hinzu.
 
@@ -117,13 +122,14 @@ Nachdem Änderungen an der `CrmTranslations.xml`-Datei vorgenommen wurden, müss
 
 Aus derselben nicht verwalteten Lösung, aus der Sie die Übersetzungen exportiert haben, wählen Sie im Menü **Übersetzungen** > **Übersetzungen importieren**. 
 
-![Übersetzungen importieren](media/import-translations.png)
+<!-- ![Import translations](media/import-translations.png) -->
+
+> [!div class="mx-imgBorder"] 
+> ![Ausgewählte Datei importieren](media/import-translated-text-dialog.png "Importieren von lokalisiertem Text")
 
 Wählen Sie die Datei, die den komprimierten übersetzten Text enthält und wählen Sie **Import**.
 
-![Ausgewählte Datei importieren](media/import-translated-text-dialog.png)
-
-Nachdem der übersetzte Text importiert wurde, sollten Sie alle Anpassungen veröffentlichen, um die Änderungen in Ihrer(n) App(s) zu sehen;
+Nachdem der übersetzte Text importiert wurde, sollten Sie alle Anpassungen veröffentlichen, um die Änderungen in Ihrer(n) App(s) zu sehen.
 
 ## <a name="community-tools"></a>Community-Tools
 
@@ -137,4 +143,3 @@ Nachdem der übersetzte Text importiert wurde, sollten Sie alle Anpassungen ver�
 ## <a name="next-steps"></a>Nächste Schritte
 [Regions- und Sprachoptionen für Ihre Organisation](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages)<br />
 [Bearbeiten von Systementitätenmeldungen](../common-data-service/edit-system-entity-messages.md)
-

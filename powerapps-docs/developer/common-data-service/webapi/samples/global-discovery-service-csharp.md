@@ -7,19 +7,19 @@ ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11c2d71263ac9c60e9dc88b00f78da81755d40f0
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.openlocfilehash: c65092ed5b34bd06645e92f691cfe07ffc3eb233
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975713"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155014"
 ---
 # <a name="global-discovery-service-sample-c"></a>Globaler Discovery Service Beispiel (C#)
 
@@ -29,22 +29,21 @@ Dieses Beispiel zeigt, wie Sie über die OData V4 RESTful API auf den Ermittlung
 
 Dieses Beispiel ist auf Github verfügbar unter [https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/GlobalDiscovery](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/GlobalDiscovery)
 
-## <a name="what-this-sample-does"></a>Funktionsweise:
-
-Dieses Beispiel gibt die verfügbaren Common Data Service-Instanzen für angegebene Benutzeranmeldeinformationen zurück.
+## <a name="what-this-sample-does"></a>Funktionsweise''
+'' Dieses Beispiel gibt die verfügbaren Common Data Service-Instanzen für angegebene Benutzeranmeldeinformationen zurück.
 
 ## <a name="how-this-sample-works"></a>Wie dieses Beispiel funktioniert
 
 Dieses Beispiel verwendeten Anmeldeinformationen in der verwendet App.config-Datei, aber nicht die URL, die in die Verbindungszeichenfolge konfiguriert ist.
 Stattdessen wird es nur die Anmeldeinformationen und das clientid nutzen.
-
+''''''''''''
 ### <a name="demonstrates"></a>Demonstriert
 
 In diesem Beispiel wird ein HttpClient verwendet, um mithilfe von ADAL (v2.29) die Authentifizierung zu nutzen und den Globalen Ermittlungsdienst anzurufen, um die Informationen über verfügbare Instanzen anzurufen, mit der Benutzer eine Verbindung herstellen können.
 
 Das Beispiel hängt von der `GetInstances` Methode und der `Instance` Klasse unten ab:
 
-```csharp
+```csharp    
     /// <summary>
     /// Uses the Discovery Service to return organization instances.
     /// </summary>
@@ -60,7 +59,7 @@ Das Beispiel hängt von der `GetInstances` Methode und der `Instance` Klasse unt
 
       UserCredential cred = new UserCredential(username, password);
       AuthenticationResult authResult = authContext.AcquireToken(GlobalDiscoUrl, clientId, cred);
-
+'
       HttpClient client = new HttpClient();
       client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResult.AccessToken);
       client.Timeout = new TimeSpan(0, 2, 0);
@@ -74,19 +73,19 @@ Das Beispiel hängt von der `GetInstances` Methode und der `Instance` Klasse unt
         //Get the response content and parse it.
         string result = response.Content.ReadAsStringAsync().Result;
         JObject body = JObject.Parse(result);
-        JArray values = (JArray)body.GetValue("value");
+        JArray values = (JArray)body.GetValue("value");''
 
         if (!values.HasValues)
         {
           return new List<Instance>();
-        }
+        }'
 
         return JsonConvert.DeserializeObject<List<Instance>>(values.ToString());
-      }
+      }'
       else
       {
         throw new Exception(response.ReasonPhrase);
-      }
+      }'
     }
 ```
 
@@ -109,3 +108,4 @@ Das Beispiel hängt von der `GetInstances` Methode und der `Instance` Klasse unt
   }
 ```
 
+                                                                                                                    '''

@@ -3,7 +3,7 @@ title: Erstellen von Webanwendungen mit Server-to-Server-Authentifizierung (Comm
 description: Verwenden Sie Server-zu-Server (S2S) Authentifizierung, um sicher und nahtlos mit Common Data Service mit unseren Webanwendungen und Services zu kommunizieren.. Die S2S-Authentifizierung ist der normale Weg, über den bei Microsoft AppSource registrierte Apps auf die Common Data Service-Daten der Abonnenten zugreifen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0fc18f342257eaaa878107ae5b729c672c2f0433
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f8e435a3f3a899e9d15d173b1f33b0f07ca7f265
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861839"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156398"
 ---
 # <a name="build-web-applications-using-server-to-server-s2s-authentication"></a>Erstellen von Webanwendungen mit Server-to-Server-Authentifizierung (S2S)
 

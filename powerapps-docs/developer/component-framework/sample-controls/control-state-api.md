@@ -10,12 +10,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
-ms.openlocfilehash: 1b76b9b506dcf1842da9ddbddd8bb21d7190cb60
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: bf8e9a49adef1a0de8b6b3687a54c6992f38fa25
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091193"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162095"
 ---
 # <a name="implementing-control-state-api-component"></a>Implementieren der Steuerelementstatus-API-Komponente
 
@@ -297,7 +297,7 @@ export class TSControlStateAPI
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Beispielkomponenten verwenden](../use-sample-components.md)<br/>
 [Power Apps component framework-API-Referenz](../reference/index.md)<br/>
 [Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)

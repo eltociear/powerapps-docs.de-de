@@ -3,7 +3,7 @@ title: Konfigurieren des Datenimports (Common Data Service) | Microsoft-Dokument
 description: Die Konfigurationsinformationen, die zum Importieren von Daten erforderlich sind, sind in der Datenimportentität und der Importquelldateientität enthalten.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: de387cf362a8cef5971f7abf16afdd06a07cb32f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3a0e4a8e79b16ff8d641d6f790c20419e0956c25
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753030"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156374"
 ---
 # <a name="configure-data-import"></a>Konfiguration des Datenimports
 

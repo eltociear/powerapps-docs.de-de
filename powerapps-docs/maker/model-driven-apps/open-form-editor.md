@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5824f2acfdcf1a6dc6e3491abfdd8896528597a1
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 2b2e19a11e176729ecaaa47fceb95f27999bb219
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872691"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166616"
 ---
 # <a name="open-the-model-driven-app-form-editor"></a>Öffnen Sie den modellgesteuerten App-Formular-Editor 
 Im Formular-Editor können Sie Formulare entwerfen, indem Sie Komponenten wie Abschnitte, Registerkarten, Felder und Steuerelemente auf die Formular-Editor-Canvas ziehen. In diesem Thema erfahren Sie, wie Sie auf verschiedene Arten auf den Formular-Editor zugreifen.
@@ -68,9 +68,11 @@ Wenn Sie neue Lösungskomponenten bei der Bearbeitung des Formulars erstellen, e
   
 1.  Öffnen Sie die [Lösung](advanced-navigation.md#solutions).  
   
-2.  Doppelklicken Sie auf die nicht verwaltete Lösung, die Sie verwenden möchten.  
+2.  Wählen Sie die nicht verwaltete Lösung aus, mit der Sie arbeiten möchten.  
   
-3.  Suchen Sie die Entität mit dem Formular, das Sie bearbeiten möchten. Falls die Entität nicht vorhanden ist, müssen Sie sie hinzufügen möchten. Weitere Informationen: [Hinzufügen einer Entität zu einer nicht verwalteten Lösung](#add-an-entity-to-an-unmanaged-solution) 
+3.  Öffnen Sie die Entität mit dem Formular, das Sie bearbeiten möchten. Falls die Entität nicht vorhanden ist, müssen Sie sie hinzufügen. Weitere Informationen: [Hinzufügen einer Entität zu einer nicht verwalteten Lösung](#add-an-entity-to-an-unmanaged-solution)
+
+4.  Wählen Sie die Registerkarte **Formulare** aus, und öffnen Sie dann das Formular, das Sie bearbeiten möchten.
   
 ### <a name="add-an-entity-to-an-unmanaged-solution"></a>Hinzufügen einer Entität zu einer nicht verwalteten Lösung  
   

@@ -3,7 +3,7 @@ title: Verwendung der Office365-Authentifizierung mit dem Sicherheitsprotokoll W
 description: Beschreibt die Verwerfung des WS-Trust-Sicherheitsprotokolls und die in Anwendungen erforderlichen Änderungen des Authentifizierungscodes.
 ms.custom: ''
 ms.date: 02/05/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: phecke
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 734d64fe24e7fbaec56109987fc8f0bb9163f5c8
-ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
+ms.openlocfilehash: 4f4879c51dc9d07c5bab5b425e389e5b97660ec6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029794"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156438"
 ---
 # <a name="use-of-office365-authentication-with-the-ws-trust-security-protocol"></a>Verwendung der Office365-Authentifizierung mit dem WS-Trust-Sicherheitsprotokoll
 

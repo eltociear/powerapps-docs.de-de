@@ -3,23 +3,23 @@ title: Durchsuchen der Metadaten für Ihre Organisation (Common Data Service) | 
 description: Sie können den Entitätsmetadaten-Browser verwenden, um Entitäten und ihre Eigenschaften in Common Data Service anzuzeigen. Der Entitätsmetadaten-Browser ist eine verwaltete Lösung, die Sie in Ihrer Organisation herunterladen und installieren können.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: JimDaly
-ms.author: jdaly
+author: phecke
+ms.author: pehecke
 manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 50a7c59ac5655fdcf6928f626c5714a75fe3f57e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fed8e202cd7deb17b8861b43444be228fb5ccb92
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753054"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176151"
 ---
 # <a name="browse-the-metadata-for-your-environment"></a>Durchsuchen Sie Metadaten für die Organisation
 
@@ -79,7 +79,7 @@ Die folgenden Aktionen können Sie für eine einzelne Entität ausführen:
     - Filtern Sie die angezeigten Rechte mithilfe der `PrivilegeId`.
 
 > [!NOTE]
-> Wenn Sie die Entitätsdetaileigenschaften anzeigen, sehen Sie, dass viele komplexen Eigenschaften erweiterbar sind. Der nützlichste Wert wird mit einem Link angezeigt, der das Umschalten zu einer detaillierten Ansicht ermöglicht. Die detaillierte Ansicht zeigt die Struktur der Daten an, wenn diese programmgesteuert abgerufen werden. Die detaillierte Ansicht zeigt auch andere relevante Daten an, die in demselben Bereich abgerufen werden können, beispielsweise wenn lokalisierte Beschriftungen für **Anzeigename**-Eigenschaften vorhanden sind.
+> Wenn Sie die Entitätsdetaileigenschaften anzeigen, sehen Sie, dass viele komplexe Eigenschaften erweiterbar sind. Der nützlichste Wert wird mit einem Link angezeigt, der das Umschalten zu einer detaillierten Ansicht ermöglicht. Die detaillierte Ansicht zeigt die Struktur der Daten an, wenn diese programmgesteuert abgerufen werden. Die detaillierte Ansicht zeigt auch andere relevante Daten an, die in demselben Bereich abgerufen werden können, beispielsweise wenn lokalisierte Beschriftungen für **Anzeigename**-Eigenschaften vorhanden sind.
 
 > [!TIP]
 > Wenn Sie Text aus der Seite kopieren möchten, wählen Sie einfach den Text aus und verwenden Sie die Tastenkombination Strg+C oder den Kontextmenübefehl **Kopieren**.
@@ -89,10 +89,10 @@ Die folgenden Aktionen können Sie für eine einzelne Entität ausführen:
 **Metadaten-Browser** ist ein Tool, das die XrmToolbox-Community für Common Data Service entwickelt hat. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
 
 > [!NOTE]
-> Die Communitytools sind kein Produkt von Common Data Service. Es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).
+> Die Community-Tools sind kein Produkt von Common Data Service und Microsoft bietet keinen Support für die Community-Tools. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>Siehe auch
 
  [Entwicklertools für Common Data Service](developer-tools.md)<br />
  [Anpassen von Entitätsmetadaten](customize-entity-metadata.md)<br />
- 
+  

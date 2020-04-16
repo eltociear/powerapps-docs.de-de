@@ -3,7 +3,7 @@ title: 'Beispiel: Arbeiten mit Ansichten (Common Data Service) | Microsoft Docs'
 description: Dieses Beispiel zeigt, wie man mit Ansichten arbeitet
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f52268aa2b2ee0a7f12c6e95f66eb4aec395672
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: f69eb5cb40e293847ec520913aa15c94572117cb
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956315"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155478"
 ---
 # <a name="work-with-views"></a>Mit Ansichten arbeiten
 

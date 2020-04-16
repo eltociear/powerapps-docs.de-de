@@ -3,7 +3,7 @@ title: Abfragen von Daten mit dem Organisationsdienst (Common Data Service) | Mi
 description: Stellt die verschiedenen Arten vor, Daten mithilfe von Common Data Service-SDK-Assemblies abzufragen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2fd09284e99a11ad55625d63a30975c36164a7bd
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 2994d2e606e3d7936c4085c75b0443300006b414
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109017"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156102"
 ---
 # <a name="query-data-using-the-organization-service"></a>Daten abfragen mithilfe des Organisation-Service
 

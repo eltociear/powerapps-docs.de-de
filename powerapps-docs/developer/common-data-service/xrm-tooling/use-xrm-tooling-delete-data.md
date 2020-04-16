@@ -3,7 +3,7 @@ title: Verwendung von XRM-Tools zum Löschen von Daten (Common Data Service) | M
 description: Verwenden der CrmServiceClient-Klasse, um Daten aus Common Data Service zu löschen
 ms.custom: ''
 ms.date: 03/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ac21ffa82890c580f8683b555601a064c848d9e4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e999a46f92ab20e034151bdd69ad795a76a638db
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748323"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154854"
 ---
 # <a name="use-xrm-tooling-to-delete-data"></a>Verwendung von XRM-Tooling zum Löschen von Daten
 

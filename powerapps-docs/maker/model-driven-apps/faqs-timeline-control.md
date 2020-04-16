@@ -1,7 +1,7 @@
 ---
 title: FAQs für Zeitskala-Steuerelement (Abschnitt) in Power Apps | Microsoft-Dokumentation
 description: FAQs für Zeitskala-Steuerelement (Abschnitt) in Power Apps
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
-ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
+ms.openlocfilehash: c664ca490f3a03d02dfe273c26d061698242a6c3
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3013055"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114364"
 ---
 # <a name="faqs-for-timeline-control"></a>FAQs für Zeitskala-Steuerelement
 
@@ -98,6 +98,11 @@ Blenden Sie die Schaltflächen in den Befehlsleistendefinitionen ein, um das Pro
 ## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>Warum sehen meine Benutzer unterschiedliche Aktivitäten und Datensätze in ihrem Stream Meine Aktivitäten im Dashboard?
 
 Der Stream **Meine Aktivitäten** im Dashboard zeigt die Datensätze und Aktivitäten an, die einem bestimmten Benutzer gehören. Zum Beispiel Benutzer **A** sieht Datensätze und Aktivitäten, die Eigentum von **A** sind und Benutzer **B** sieht Datensätze und Aktivitäten, die Eigentum von **B** sind.
+
+
+## <a name="why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared"></a>Warum sehen meine Agents den Filterbereich, auch wenn das Kontrollkästchen „Filterbereich standardmäßig erweitern“ deaktiviert ist?
+
+Wenn die Zeitskala in mehr als einer Spalte angezeigt wird, wird der Filterbereich als Spalte neben den Zeitskalaeinträgen angezeigt. Obwohl Sie das Kontrollkästchen in den Zeitskalakonfigurationen **Filterbereich standardmäßig erweitern** deaktiviert haben, wir der Filterbereich Ihren Agents immer angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 

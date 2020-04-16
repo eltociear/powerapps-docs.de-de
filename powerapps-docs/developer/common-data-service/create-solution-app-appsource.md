@@ -3,7 +3,7 @@ title: 'Schritt 2: Erstellen einer verwalteten Lösung für Ihre App (Common Dat
 description: Lernen Sie, wie Sie eine verwaltete Lösung erstellen, sodass die App alle Komponenten einschließt. Dies ist für das Veröffentlichen einer serverseitigen Synchronisierung Appsource erforderlich.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 25b80be0190fa2b520706d72166879e687a30f30
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: d1c5407f408f11ce8bfed3443cc29be2b3f27675
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922325"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156326"
 ---
 # <a name="step-2-create-a-managed-solution-for-your-app"></a>Schritt 2: Erstellen einer verwalteten Lösung für die App
 

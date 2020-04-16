@@ -2,7 +2,7 @@
 title: Tutorial, um modellgesteuerte App-Komponenten mit Power Apps | Microsoft-Dokumentation hinzuzufügen oder zu bearbeiten
 description: Mithilfe des Power Apps-App-Designers Komponenten hinzufügen oder bearbeiten
 keywords: ''
-ms.date: 10/15/2018
+ms.date: 03/05/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f78b990432988de5ba1d6c2b254bef8577770d16
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 5f357bd55060258ca8545fae6ad4bb3c7621ab5c
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873548"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136475"
 ---
 # <a name="tutorial-add-or-edit-model-driven-app-components-in-the-power-apps-app-designer"></a>Tutorial: Modellgesteuerte Apps in Power Apps-App-Designer hinzufügen oder bearbeiten
 
@@ -41,7 +41,8 @@ Der App-Designer bezieht sich auf vorhandene Metadaten in der Standardlösung. S
 ## <a name="app-designer-layout"></a>App-Designer Darstellung  
  Der Anwendungs-Designer hat zwei Hauptbereiche. Auf der linken Seite sind die Canvas, in denen Sie App-Komponenten hinzufügen.  
   
-![Anwendungs-Designer-Canvas](../model-driven-apps/media/app-designer-canvas-pane.png)
+ > [!div class="mx-imgBorder"]
+ > ![Anwendungs-Designer-Canvas](../model-driven-apps/media/app-designer-canvas-pane.png "Anwendungs-Designer-Canvas")
 
  Auf der rechten Seite sind Registerkarten, die Sie verwenden, um Komponenten auszuwählen und Komponenteneigenschaften festzulegen.  
  
@@ -58,7 +59,7 @@ Der App-Designer bezieht sich auf vorhandene Metadaten in der Standardlösung. S
 ## <a name="open-an-app"></a>Eine App öffnen
 1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/) an. 
 
-2. Wählen Sie eine vorhandene modellgetriebene Anwendung aus oder wählen Sie **Ohne Vorlage erstellen**. Weitere Informationen darüber, wie Sie eine App erstellen, finden Sie unter [Erstellen oder Bearbeiten einer Modell-angetriebene App, mithilfe von App-Designer](create-edit-app.md#create-an-app).
+2. Wählen Sie eine vorhandene modellgesteuerte App oder die Option **Modellgesteuerte App ohne Vorlage** aus. Weitere Informationen darüber, wie Sie eine App erstellen, finden Sie unter [Erstellen oder Bearbeiten einer Modell-angetriebene App, mithilfe von App-Designer](create-edit-app.md#create-an-app).
 
 ## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>Hinzufügen eines Artefakt (Entität, Dashboard oder Geschäftsprozessfluss)  
  Wenn Sie ein Dashboard oder einen Geschäftsprozessfluss zu einer App hinzufügen, werden die verwendeten Entitäten automatisch der App hinzugefügt. Wenn eine Entität hinzugefügt wird, werden die Kacheln für die Anlagen automatisch hinzugefügt. Es gibt zwei Arten, wie Sie Artefakte dem Designer-Canvas hinzufügen können: Mithilfe der Schaltfläche **Hinzufügen** ![Hinzufügen-Schaltfläche im Designer](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Schaltfläche im Designer hinzufügen") auf der Befehlsleiste oder mithilfe der Kacheln auf der Registerkarte **Komponenten**.  
@@ -85,9 +86,10 @@ Der App-Designer bezieht sich auf vorhandene Metadaten in der Standardlösung. S
 
      Diese Dashboards werden der Kachel **Dashboard** auf der App-Designer-Canvas hinzugefügt. Die Kachel **Dashboard** zeigt auch die Anzahl der Dashboards an, die Sie der App hinzugefügt haben. Wenn Sie kein Dashboard auswählen, wird anstelle der Dashboard-Anzahl **Alle** angezeigt, und alle Dashboards sind für Benutzer verfügbar, wenn diese die App verwenden.  
   
-     Alle Entitäten, in denen das Dashboard verwendet wird, werden auch zum Bereich **Entitätsansicht** hinzugefügt. Wenn Sie das Kundenservicemanagerdashboard hinzufügen, werden die Fall-, Anspruchs- und Warteschlangenelemententitäten zum Entitätsansichtbereich hinzugefügt. Für jede Entität werden auch die Kacheln für die Ressourcen hinzugefügt. Sie können diese Kacheln verwenden, um die Formulare, Ansichten und Diagramme hinzufügen. Weitere Informationen:[Hinzufügen oder Bearbeiten von App-Komponenten im Power Apps-App-Designer](add-edit-app-components.md#bkmk_AddEntityAssets)   
+     Alle Entitäten, in denen das Dashboard verwendet wird, werden auch zum Bereich **Entitätsansicht** hinzugefügt. Wenn Sie das Kundenservicemanagerdashboard hinzufügen, werden die Fall-, Anspruchs- und Warteschlangenelemententitäten zum Entitätsansichtbereich hinzugefügt. Für jede Entität werden auch die Kacheln für die Ressourcen hinzugefügt. Sie können diese Kacheln verwenden, um die Formulare, Ansichten und Diagramme hinzufügen. Weitere Informationen: [Hinzufügen oder Bearbeiten von App-Komponenten im Power Apps-App-Designer](add-edit-app-components.md#bkmk_AddEntityAssets)   
   
-    ![Hinzufügen der Entität zur App Designer-Canvas](../model-driven-apps/media/add-entity-app-designer-canvas.png "Hinzufügen einer Entität zur App Designer-Canvas")  
+    > [!div class="mx-imgBorder"]
+    > ![Hinzufügen der Entität zur App Designer-Canvas](../model-driven-apps/media/add-entity-app-designer-canvas.png "Hinzufügen einer Entität zur App Designer-Canvas")  
   
 4.  Wenn das gewünschte Dashboard nicht in der Standardlösung vorhanden ist, erstellen Sie ein Dashboard, indem Sie auf **Neu erstellen** auf der Registerkarte **Komponenten** rechts neben der Canvas klicken.  
   

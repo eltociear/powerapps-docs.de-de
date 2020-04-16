@@ -3,7 +3,7 @@ title: Arbeiten mit Metadaten mithilfe von Code (Common Data Service) | Microsof
 description: Sowohl die [Web-API](org-service/overview.md) als auch der [Organisationsservice](webapi/overview.md) enthalten Funktionen für CRUD-Vorgänge auf dem Entitätsschema.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 853fc53221f82a25aeab271c5fca53b19d17eabe
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f226814935e7a0c4b7a005897dc2ae7fbb7f93c5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748559"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156138"
 ---
 # <a name="work-with-metadata-using-code"></a>Verwenden von Metadaten mit Code
 

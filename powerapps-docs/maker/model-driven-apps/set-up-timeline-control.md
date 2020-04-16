@@ -1,7 +1,7 @@
 ---
 title: Richten Sie das Zeitskala-Steuerelement (Abschnitt) ein in PowerApps | MicrosoftDocs
 description: Erfahren Sie , wie Sie das Zeitskala-Steuerelement (Abschnitt) in PowerApps einrichten
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8afb5427a74b879b0e407b1038705a0bbc15920b
-ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
+ms.openlocfilehash: 272eab58ed332f87a49eae275a98e4a4bdc69cc6
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3013100"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114308"
 ---
 # <a name="set-up-timeline-section-control"></a>Zeitskala Abschnitt einrichten (Steuerung)
 
@@ -86,7 +86,7 @@ Die Module sind Aktivitäten, Beiträge und Notizen. Als Anpassungsprogramm kön
     |------------------------------------------|--------------------------------------------------------------|---------------------------|
     | Standardmodul für die Erstellungsumgebung | Wählen Sie das Modul aus, für das die Standarderstellungserfahrung in der Zeitleiste verwendet werden soll. <br><br> Der Standardwert ist **Hinweise**.  | Hinweise |
     | Bereich „Filter“ anzeigen | Aktivieren Sie das Kontrollkästchen, wenn Sie das Filtersymbol für die Benutzer anzeigen möchten. Wenn Sie das Kontrollkästchen leer lassen, werden keine Filter für die Benutzer angezeigt. |  |
-    | Bereich „Filter“ standardmäßig erweitern | Aktivieren Sie standardmäßig das Kontrollkästchen, wenn Sie das Filterfenster im erweiterten Modus anzeigen möchten. |
+    | Bereich „Filter“ standardmäßig erweitern | Aktivieren Sie standardmäßig das Kontrollkästchen, wenn Sie das Filterfenster im erweiterten Modus anzeigen möchten. <br><br> **Hinweis:** Wenn die Zeitskala in mehr als einer Spalte angezeigt wird, wird der Filterbereich als Spalte neben den Zeitskalaeinträgen angezeigt. Obwohl Sie das Kontrollkästchen in den Zeitskalakonfigurationen **Filterbereich standardmäßig erweitern** deaktiviert haben, wir der Filterbereich Ihren Agents immer angezeigt.|
     | Sort | Wählen Sie die Sortierreihenfolge aus, nach der die Datensätze auf der Zeitachse angezeigt werden. Die Sortierung basiert auf dem Feld, das Sie für Aktivitäten auswählen. Wenn für den Beitrag, die Notizen oder die Aktivität kein Feld vorhanden ist, erfolgt die Sortierung anhand dem Feld **Zuletzt aktualisiert**. <br><br> Die Standardsortierreihenfolge ist **Absteigend**.  <br><br> **Hinweis:** Die Änderung der Sortierreihenfolge ändert nicht die im Zeitleisten-Steuerelement visualisierte Zeiteigenschaft. Zur Anpassung des Zeitleistenformulars siehe [Anpassen des Kartenformulars](#customize-the-card-form).  | Absteigend |
     | Ergebnisanzahl | Die maximale Anzahl von Datensätzen, die auf der Zeitskala angezeigt werden, bevor Sie die Option auswählen **Mehr**. Bei jeder Auswahl der Option **Mehr** zeigt die Zeitskala die konfigurierte Anzahl von Datensätzen. Sie können den Wert 1 bis 50 konfigurieren. <br><br> Der Standardwert ist **10**. | 10 |
 
@@ -243,21 +243,21 @@ Zum Beispiel siehe **E-Mail-Formular**.
 
 **Ausgeblendeter E-Mail-Kartenmodus**
 
-Felder **1** und **2** vom **Header** Abschnitt und Felder **3** und **4** von den **Einzelheiten** Abschnitten werden im reduzierten Modus angezeigt.
+Felder **1** und **2** vom **Header** Abschnitt und Felder **3** und **4** von den **Einzelheiten** Abschnitten werden im reduzierten Modus angezeigt. Felder **3** und **4** im reduzierten Modus zeigen keine Inhalte im Rich-Text-Format an.
 
    > [!div class=mx-imgBorder] 
    > ![Ausgeblendete E-Mail-Karte](media/email-card-collapsed.png "Ausgeblendete E-Mail-Karte")
 
 **E-Mail-Karte Hover-Modus**
 
-Felder  **1** und  **2** aus der Sektion  **Kopfzeile** und Felder  **3** und  **4** aus der Sektion  **Details** werden im Hover-Modus angezeigt.
+Felder **1** und **2** aus dem Abschnitt **Kopfzeile** und Felder **3** und **4** aus dem Abschnitt **Details** werden im Hover-Modus angezeigt.
 
    > [!div class=mx-imgBorder] 
    > ![Ausgeblendete E-Mail-Karte](media/email-card-hover.png "Ausgeblendete E-Mail-Karte")
 
 **Erweiterter E-Mail-Kartenmouds**
 
-Das Feld **5** aus dem Abschnitt **Details** wird im erweiterten Modus angezeigt.
+Das Feld **5** aus dem Abschnitt **Details** wird im erweiterten Modus angezeigt. Feld **3** im erweiterten Modus zeigt keine Inhalte im Rich-Text-Format an, wohingegen Feld **4** im erweiterten Modus Inhalte im Rich-Text-Format anzeigt.
 
    > [!div class=mx-imgBorder] 
    > ![E-Mail Karten im erweiterten Modus](media/email-card-expanded.png "E-Mail Karten im erweiterten Modus")
@@ -435,13 +435,13 @@ Befolgen Sie die in der Anleitung beschriebenen Schritte 1 bis 8 [Module anpasse
 
 ## <a name="enable-or-disable-rich-text-editor-for-notes-in-timeline"></a>Aktivieren oder Deaktivieren des Rich-Text-Editors für Notizen in der Zeitleiste
 
-Mit dem Rich-Text-Editor können Benutzer reichhaltige und gut formatierte Inhalte für die Notizen mit Betonung erstellen. Der Editor bringt allgemeine Textverarbeitungsfunktionen mit. Weitere Informationen finden Sie unter [Notizen ](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#take-a-note).
+Mit dem Rich-Text-Editor können Benutzer reichhaltige und gut formatierte Inhalte für die Notizen mit Betonung erstellen. Der Editor bringt allgemeine Textverarbeitungsfunktionen mit. Weitere Informationen finden Sie unter [Notizen machen](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#take-a-note).
 
 Die Funktion ist standardmäßig aktiviert. Wenn Sie die Funktionen später für Ihre Benutzer deaktivieren und aktivieren möchten, folgen Sie den Schritten:
 
 1.  Melden Sie sich in Ihrer `https://<YourOrgURL>.dynamics.com/apps`-Umgebung an.
 
-2. Öffnen Sie eine modellgesteuerte Anwendung, und wählen Sie dann in der Befehlsleiste **Einstellungen** ![Einstellungen ](../model-driven-apps/media/powerapps-gear.png) > **Verwaltung** > **Systemeinstellungen**.
+2. Öffnen Sie eine modellgesteuerte App, und wählen Sie dann in der Befehlsleiste **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) > **Verwaltung** > **Systemeinstellungen** aus.
 
 3. Blättern Sie im Dialog **Systemeinstellungen** unter **Registerkarte Allgemein** nach unten und aktivieren oder deaktivieren Sie das Kontrollkästchen für **Verwende Rich Text, um die Formatierung der in der Zeitleiste erstellten Notizen zu erleichtern.** Feld.
 

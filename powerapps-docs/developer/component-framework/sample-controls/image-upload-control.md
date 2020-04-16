@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 0183e1b9e9b9a10bf3d33cf3c18ab262d012d71f
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 633b99d6bd15a71270633c12f155b48c5e6b1575
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017429"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162079"
 ---
 # <a name="implementing-an-image-upload-component"></a>Implementieren einer Bild-Upload-Komponente
 
@@ -392,7 +392,7 @@ Die `device.pickFile`-Methode öffnet ein Dialogfeld, um Dateien auf Ihrem Compu
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Beispielkomponenten verwenden](../use-sample-components.md)<br/>
 [Power Apps component framework-API-Referenz](../reference/index.md)<br/>
 [Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)

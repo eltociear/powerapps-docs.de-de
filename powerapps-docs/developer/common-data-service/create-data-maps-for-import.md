@@ -3,7 +3,7 @@ title: Erstellen von Datenzuordnungen für den Import (Common Data Service) | Mi
 description: Datenzuordnungen sind für Datenimport erforderlich und enthalten Zuordnungen zwischen den Daten in der Quelldatei und die entsprechenden Entitätsattributen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1137ee735e36a6ab36a4f3e9eed9a9abb48c6464
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 61640886d08131eb8d16d57279d82c4d1ae78190
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753014"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156349"
 ---
 # <a name="create-data-maps-for-import"></a>Erstellen von Datenzuordnungen für den Import
 

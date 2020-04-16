@@ -3,7 +3,7 @@ title: Testen der Webhook-Registrierung mit der Anforderungsprotokollierungs-Web
 description: Um die kontextbezogenen Daten zu verstehen, die mit einem Webhook übergeben werden, ist die Verwendung einer Anforderungsprotokoll-Website nützlich, um die Daten zu untersuchen. In diesem Thema wird beschrieben, wie Sie dies durchführen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 75bccd3cbc7425279338fa58bd77592fbc5c3d64
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a92de35959665dd99eae405c10f2b38d6fd0c15a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748524"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155254"
 ---
 # <a name="test-webhook-registration-with-request-logging-site"></a>Webhook-Registrierung mit Anforderungsprotokollierungs-Website testen 
 

@@ -3,7 +3,7 @@ title: " Aktualisieren einer Verbindungsrolle (Common Data Service) | Microsoft 
 description: Dieses Beispiel zeigt, wie man eine Verbindungsrolle aktualisiert
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7c35643dddf9c5b8760fdedc5f1d5e574f62b64a
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: e858b2722a2af2a24bf2ef65bb2a9ba53caf058e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956312"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155546"
 ---
 # <a name="update-a-connection-role-early-bound"></a>Aktualisieren einer Verbindungsrolle (frühe Bindung)
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 41b33926303c6211636c6a20e4e12651ae6a7586
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6494c278f147be996beb10d0e295666ae39a564b
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748754"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172581"
 ---
 # <a name="export-prepare-to-edit-and-import-the-ribbon"></a>Exportieren, Vorbereitung der Bearbeitung und Importieren des Menübands
 
@@ -142,7 +142,11 @@ Um das Menüband zu bearbeiten, müssen folgende Aufgaben ausgeführt werden:
     >  Der häufigste Fehlertyp ist ein Fehler beim Verweisen auf ein abhängiges Element im RibbonDiffXml. Möglicherweise vergaßen Sie, ein LocLabel einzuschließen, auf das irgendwo verwiesen wurde. Möglicherweise es gibt ein zusätzliches Leerzeichen, das am Ende eines XML-Attributs enthalten ist, das auf ein anderes Element verweist. Alle Verweise müssen genau übereinstimmen.  
   
 4.  Wenn Sie den Fehler behoben haben, führen Sie die Schritte aus, um das Menüband erneut zu importieren.  
-  
+
+## <a name="troubleshoot-ribbon-issues"></a>Beheben von Menübandproblemen
+
+Wenn ein Problem mit einer Menüband-Befehlsleistenschaltfläche auftritt, verwenden Sie diese Anleitung zur Fehlerbehebung, um das Problem zu finden und zu beheben: <https://support.microsoft.com/help/4552163>
+
 ### <a name="see-also"></a>Siehe auch  
  [Anpassen des Menübands](customize-commands-ribbon.md)   
  [Exportieren von Menübanddefinitionen](export-ribbon-definitions.md)   

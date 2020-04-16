@@ -3,7 +3,7 @@ title: Überwachungsbenutzerzugriff (Common Data Service) | Microsoft-Dokumente
 description: Unterstützung für die Funktion zur Überwachung von Benutzerzugriffen einschließlich Benutzeidentifizierung, Zugriffsgeschwindigkeit und Clienttyp.
 ms.custom: ''
 ms.date: 01/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3f13813b0f6e6c5cde945e5a2b8fcdf1590a62db
-ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
+ms.openlocfilehash: 5bc524f4cfbd4d5623894b4de4607d7b3ff96bf5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "2992803"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156462"
 ---
 # <a name="audit-user-access"></a>Benutzerzugriff überwachen
 

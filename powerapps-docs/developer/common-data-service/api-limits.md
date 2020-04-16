@@ -3,7 +3,7 @@ title: Service Protection API-Beschränkungen (Common Data Service) | Microsoft 
 description: Verstehen Sie die Serviceschutzgrenzen für API-Anforderungen.
 ms.custom: ''
 ms.date: 11/23/2019
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0e5f79553ea0a29c6dde908807aef950c30ecc8a
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: f46360623cd3cf530f9d6b2a0c7c1aecd3c66c0c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "2854749"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156482"
 ---
 # <a name="service-protection-api-limits"></a>API-Grenzwerte für den Serviceschutz
 

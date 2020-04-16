@@ -3,7 +3,7 @@ title: Annehmen der Identität eines anderen Benutzers (Common Data Service) | M
 description: Mit Hilfe eines Identitätswechsels können Sie die Geschäftslogik im Auftrag eines anderen Common Data Service-Benutzers ausführen, um eine gewünschte Funktion oder einen Service mit der entsprechenden rollen- und objektbasierten Sicherheit dieses imitierten Benutzers bereitzustellen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0701f48caa7b45d49cd85c6d8c97ff6568e4813e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e817468da9cf506acbaedf6b1617ca1a563661e9
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748282"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156158"
 ---
 # <a name="impersonate-another-user"></a>Annehmen der Identität eines anderen Benutzers
 

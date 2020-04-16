@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 43cfc92c988ea2d01e88c850b0845bcf276c25e5
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: e17598f682175687c9f56d5b085756223ecdcab1
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091213"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162083"
 ---
 # <a name="implementing-a-iframe-component"></a>Implementieren einer IFRAME-Komponente
 
@@ -193,7 +193,7 @@ Die [updateView](../reference/control/updateview.md)-Methode wird aufgerufen, we
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Beispielkomponenten verwenden](../use-sample-components.md)<br/>
 [Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)<br />
 [Power Apps component framework-API-Referenz](../reference/index.md)<br />

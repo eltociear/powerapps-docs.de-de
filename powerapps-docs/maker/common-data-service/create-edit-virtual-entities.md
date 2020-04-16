@@ -2,7 +2,7 @@
 title: Erstellen und Bearbeiten virtueller Entitäten mit Common Data Service | MicrosoftDocs
 description: Informationen zum Erstellen virtueller Entitäten
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 03/03/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07a6d262aeaba818d5a965409ce28a90934536c3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c8fdc0a1f6cd29117b78c19526f0e03dfe28718e
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861293"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226467"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>Erstellen und Bearbeiten von virtuellen Entitäten, die Daten aus einer externen Datenquelle enthalten
 
@@ -150,6 +150,7 @@ Virtueller Entitäten haben die folgenden Einschränkungen.
 - Wir empfehlen, bei Verwendung von virtuellen Entitäten in erweiterten Suchen nur eine Datenquelle anzusprechen. Beispielsweise wird das Erstellen einer erweiterten Suche, durch die letztendlich eine Verbindung zwischen Daten im Eigenformat des Common Data Service und den externen Daten der virtuellen Entität hergestellt wird, nicht unterstützt.  
 - Feldmetadateneigenschaften, die bei Update validiert werden, gelten nicht für virtuelle Entitäten. Beispielsweise kann ein Ganzzahlenfeld in einem virtuellen Entitätsfeld so festgelegt werden, dass es einen Minimalwert Null hat. Allerdings, da der Wert aus einer externen Datenquelle kommt, gibt eine Abfrage Werte zurück, die weniger als null sind, wenn sie von einer virtuellen Entität abgerufen wird.  Die Minimalwert-Eigenschaft ist in der Abfrage nicht impliziert.  Sie müssten die Werte filtern, die größer als null sind, wenn diese gewünscht werden.
 - Virtuelle Entitäten unterstützen nicht Änderungsnachverfolgung und können nicht synchronisiert werden mithilfe eines Common Data Service-Features, wie Datenexportservice.
+- Virtuelle Entitäten, die den enthaltenen OData v4 Datenanbieter verwenden, werden am ausgehenden Port 443 aktiviert.
   
 ### <a name="see-also"></a>Siehe auch  
 

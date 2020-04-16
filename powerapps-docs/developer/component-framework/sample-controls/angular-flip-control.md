@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d04656cb3ce2970eded1bcf39e2d5c6a2f121410
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: fba81f5c95a2a88fc8279ea6c6d908b4f71718cc
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091225"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162099"
 ---
 # <a name="implementing-flip-component"></a>Implementieren einer Kippkomponente
 
@@ -227,7 +227,7 @@ public updateView(context: ComponentFramework.Context<IInputs>): void {
 
 /** 
  * It is called by the framework prior to a control receiving new data. 
- * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as â€œboundâ€ or â€œoutputâ€
+ * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as â&euro;œboundâ&euro; or â&euro;œoutputâ&euro;
  */
 public getOutputs(): IOutputs {
     var returnValue = this._currentValue;
@@ -348,6 +348,7 @@ fieldset[disabled].btn-primary:hover {
 
 ### <a name="related-topics"></a>Verwandte Themen
 
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Beispielkomponenten verwenden](../use-sample-components.md)<br/>
 [Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)<br />
 [Power Apps component framework-API-Referenz](../reference/index.md)<br />

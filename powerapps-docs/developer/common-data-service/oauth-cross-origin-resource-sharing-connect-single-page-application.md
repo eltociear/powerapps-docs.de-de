@@ -3,7 +3,7 @@ title: Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Pag
 description: Erfahren Sie, wie Sie OAuth mit Cross-Origin Resource Sharing verwenden, um eine Single Page-Anwendung mit zu verbinden
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c875326bd6c93c9b9d1ab946cc22e251820773c6
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7a063bde208d648389d818893698d552a16b84ce
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752928"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156130"
 ---
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/oauth-cross-origin-resource-sharing-connect-single-page-application 
 

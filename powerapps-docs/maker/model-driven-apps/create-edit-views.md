@@ -2,7 +2,7 @@
 title: Erstellen oder bearbeiten einer modellgesteuerten App-Ansicht in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie eine Ansicht erstellt oder bearbeitet wird
 ms.custom: ''
-ms.date: 06/11/2018
+ms.date: 03/19/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0835e35f5815e7704cfe3d0de24ad4429600512b
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 0d84734a618aac445f5b7dd1b46e0d9de8c97dca
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108284"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166792"
 ---
 # <a name="understand-model-driven-app-views"></a>Grundlegendes zu Ansichten modellgestützter Apps
 
@@ -42,7 +42,7 @@ Mit Power Apps-Apps verwenden Sie Ansichten, um zu definieren, wie eine Liste mi
 
 Eine Dropdownliste von Ansichten wird häufig in der Anwendung angezeigt, damit Benutzer Optionen für unterschiedliche Ansichten von Entitätsdaten haben.
 
-Die Datensätze, die in den einzelnen Ansichten in einer Liste angezeigt werden, manchmal Raster genannt, die häufig Optionen bereitstellen, damit Mitarbeiter die Standardsortierung, Spaltenbreiten und Filter einfacher ändern können, um die Daten anzuzeigen, die für sie am Wichtigsten sind Ansichten definieren auch die Datenquelle zu Diagrammen, die in der Anwendung verwendet werden.  
+Die Datensätze, die in den einzelnen Ansichten in einer Liste angezeigt werden, manchmal als Raster bezeichnet, die häufig Optionen bereitstellen, mit denen Benutzer die Standardsortierung, Spaltenbreiten und Filter ändern können, um die für sie wichtigen Daten leichter erkennen zu können. Ansichten definieren auch die Datenquelle zu Diagrammen, die in der Anwendung verwendet werden.  
   
 ## <a name="types-of-views"></a>Typen von Ansichten  
   
@@ -89,15 +89,15 @@ Sie können eine benutzerdefinierte öffentliche Ansichten erstellen. Sie könne
 
 ## <a name="places-where-you-can-access-the-view-editor-to-create-or-edit-views"></a>Orte, an denen Sie auf den Ansichtseditor zugreifen können, um Ansichten zu erstellen oder zu bearbeiten
 
-- Power Apps Standort: Sie können auf den Ansicht-Designer im Bereich **modellgestützt** > Registerkarten **Daten** > **Entitäten** > **Ansicht** zugreifen. Öffnen Sie eine vorhandene Ansicht oder erstellen Sie eine neue. Weitere Informationen: [Erstellen oder Bearbeiten einer Ansicht](create-and-edit-views.md)
-- App-Designer: Wenn Sie in einer App arbeiten, sollten Sie den App-Designer verwenden, der eine einfache und intuitive Benutzeroberfläche mit Drag- and Drop-Funktionen für erstellte Ansichten bereitstellt. Weitere Informationen: [Lernprogramm: Erstellen und Bearbeiten von öffentlichen oder Systemansichten mit dem App-Designer](create-edit-views-app-designer.md)
+- Power Apps-Site: Um auf den Ansicht-Designer zuzugreifen, wählen Sie **Daten** > **Entitäten**, eine Entität und dann die Registerkarte **Ansicht** aus. Öffnen Sie eine vorhandene Ansicht oder erstellen Sie eine neue. Weitere Informationen: [Erstellen oder Bearbeiten einer Ansicht](create-and-edit-views.md)
+- App-Designer: Wenn Sie in einer App arbeiten, sollten Sie den App-Designer verwenden, der eine einfache und intuitive Benutzeroberfläche mit Drag & Drop-Funktionen für erstellte Ansichten bietet. Weitere Informationen: [Lernprogramm: Erstellen und Bearbeiten von öffentlichen oder Systemansichten mit dem App-Designer](create-edit-views-app-designer.md)
 - Projektmappen-Explorer: Wenn Sie bereits erfahren mit Dynamics 365 sind, sollten Sie den Projektmappen-Explorer verwenden. Weitere Informationen: [Navigieren zur erweiterten App-Herstellung und -Anpassungsbereichen](advanced-navigation.md#solution-explorer)
  
 ## <a name="customize-views"></a>Anpassen von Ansichten
 
 Als Systemadministrator können Sie Ansichten von Steuerelementen anpassen, indem Sie Raster (Listen) bearbeitbar und kompatibel mit der einheitlichen Schnittstelle machen. Die folgenden Steuerelemente werden verwendet:
 
-- Bearbeitbares Raster: Mit bearbeitbaren Rastern können Benutzer umfangreiches Inline-Bearbeiten direkt in Rastern und Unterrastern ausführen, ob Sie eine Internet-App, Tablet oder Smartphone verwenden. Weitere Informationen: [Raster (Listen) mithilfe des benutzerdefinierten Steuerelements „Bearbeitbares Raster” bearbeitbar machen](make-grids-lists-editable-custom-control.md)
+- Bearbeitbares Raster: Mit bearbeitbaren Rastern können Benutzer umfangreiches Inline-Bearbeiten direkt in Rastern und Unterrastern ausführen, ob Sie eine Web-App, ein Tablet oder ein Smartphone verwenden. Weitere Informationen: [Raster (Listen) mithilfe des benutzerdefinierten Steuerelements „Bearbeitbares Raster” bearbeitbar machen](make-grids-lists-editable-custom-control.md)
 - Schreibgeschütztes Raster: Bietet eine optimale Anzeige- und Interaktionserfahrung für jede Bildschirmgröße und -ausrichtung von Smartphones und Tablets, da die Prinzipien des dynamischen des Designs angewendet werden. Weitere Informationen: [Angeben von Eigenschaften für Apps der einheitlichen Oberfläche](specify-properties-for-unified-interface-apps.md)
 
 ## <a name="next-steps"></a>Nächste Schritte

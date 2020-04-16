@@ -3,7 +3,7 @@ title: " Ereignisframework (Common Data Service) | Microsoft Docs"
 description: Beschreibt das Ereignisframework und Informationsentwickler sollten wissen, wenn sie damit arbeiten.
 ms.custom: ''
 ms.date: 06/18/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4c055dbac811186dde54cc4a002ee721e3ca25cf
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 217a3706e06cb8e36899b51882a0de33ca6141ec
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109007"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156206"
 ---
 # <a name="event-framework"></a>Ereignisframework
 

@@ -3,7 +3,7 @@ title: " Abrufen von Diagrammen, die an eine Entität angehängt sind (Common Da
 description: 'In diesem Beispiel wird gezeigt, wie an eine Entität angehängte Diagramme abgerufen werden '
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7d58caf3be322ab0d0f6b3153021423b926df413
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 4567549633ddadb46add977ea26e6b45a69e2538
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934230"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155646"
 ---
 # <a name="retrieve-all-charts-attached-to-an-entity"></a>Abrufen aller Diagramme die einer Entität angefügt wurden
 

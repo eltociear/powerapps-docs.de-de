@@ -3,7 +3,7 @@ title: Verbinden mit Microsoft Office 365 und Common Data Service (Common Data S
 description: Das Microsoft Office 365 Portal bietet einmaliges Anmelden für Office 365 Kunden, sodass sie sich nur einmal anmelden müssen und auf jede Office 365 Anwendung, einschließlich Dynamics 365 (online) zugreifen können.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e28977766c0e7043edb866384c59737ffe5a700d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6157a015debf9fd4dd6bd8b746db7280c0f35ccc
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753026"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156347"
 ---
 # <a name="connect-with-microsoft-office-365-and-common-data-service"></a>Verbinden von Microsoft Office 365 und Common Data Service
 

@@ -3,7 +3,7 @@ title: Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools (Common D
 description: XRM-Tools sind ein Satz neuer APIs, der den Aufbau von Windows-Client-Anwendungen für Common Data Service unterstützt.
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4b05e59426f507b10645a20044a67ee28620f2e6
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 67a8fc3be719d38c818c87091947606feb93dac6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753966"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154890"
 ---
 # <a name="build-windows-client-applications-using-the-xrm-tools"></a>Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools
 

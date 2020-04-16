@@ -1,6 +1,6 @@
 ---
 title: Komponenten importieren | Microsoft Docs
-description: In diesem Thema wird beschrieben, wie Codekomponenten importiert werden
+description: In diesem Artikel wird das Importieren von Codekomponenten beschrieben.
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
@@ -9,16 +9,16 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 8a84d9b52f913f3c7f6da2bf07e11124277f2f52
-ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
+ms.openlocfilehash: 717fb3a5ceba7b2136382736b462206c72a3d8e0
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095488"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218539"
 ---
 # <a name="package-a-code-component"></a>Verpacken einer Codekomponente
 
-In diesem Thema wird beschrieben, wie Codekomponenten in Common Data Service importiert werden. Nach der Implementierung der Codekomponenten über die Power Apps CLI besteht der nächste Schritt darin, alle Codekomponenten-Elemente in einer Lösungsdatei zu bündeln und die Lösungsdatei in Common Data Service zu importieren, so dass Sie die Codekomponenten zur Laufzeit sehen können.
+In diesem Artikel wird das Importieren von Codekomponenten in Common Data Service beschrieben. Nach der Implementierung der Codekomponenten über die Power Apps CLI besteht der nächste Schritt darin, alle Codekomponenten-Elemente in einer Lösungsdatei zu bündeln und die Lösungsdatei in Common Data Service zu importieren, so dass Sie die Codekomponenten zur Laufzeit sehen können.
 
 So erstellen und importieren Sie eine Lösungsdatei:
 
@@ -56,7 +56,9 @@ So erstellen und importieren Sie eine Lösungsdatei:
 
 ## <a name="connecting-to-your-environment"></a>Verbindung mit der Umgebung
 
-Sie können die Codekomponenten direkt über die Power Apps-CLI bereitstellen, indem Sie eine Verbindung mit der Common Data Service-Umgebung herstellen und dann die aktualisierten Komponenten per Push verschieben. Führen Sie die folgenden Schritte aus, um das Authentifizierungsprofil zu erstellen, eine Verbindung zu Common Data Service herzustellen und die aktualisierten Komponenten zu übertragen. 
+Sie können die Codekomponenten direkt über die Power Apps-CLI bereitstellen, indem Sie eine Verbindung mit der Common Data Service-Umgebung herstellen und dann die aktualisierten Komponenten per Push verschieben.
+
+Führen Sie die folgenden Schritte aus, um das Authentifizierungsprofil zu erstellen, eine Verbindung zu Common Data Service herzustellen und die aktualisierten Komponenten zu übertragen. 
  
 1. Erstellen Sie Ihr Authentifizierungsprofil mit dem Befehl: 
  
@@ -118,26 +120,26 @@ Weitere Informationen: [Einstellungsoptionen](https://docs.microsoft.com/dotnet/
 > [!NOTE]
 > Der Plug-In-Befehl befindet sich in der öffentlichen Vorschau, und Power Apps CLI unterstützt jetzt das Erstellen eines Plug-In-Projekts und das Packen in eine Lösung, indem ein Verweis auf das Plug-In-Projekt hinzugefügt wird. Der `pac plugin init`-Befehl erstellt die Vorlagendateien (csproj, Plugin.cs & ServiceHelper.cs) im Verzeichnis. Um dies zu tun: 
 
-1.  Stellen Sie sicher, dass Sie ein gültiges Authentifizierungsprofil erstellt haben.
-2.  Navigieren Sie zum Stammverzeichnis, in dem Sie das Projekt erstellen möchten.
-3.  Führen Sie den Befehl aus. 
+1.    Stellen Sie sicher, dass Sie ein gültiges Authentifizierungsprofil erstellt haben.
+2.    Navigieren Sie zum Stammverzeichnis, in dem Sie das Projekt erstellen möchten.
+3.    Führen Sie den Befehl aus. 
 
      ```CLI
      pac auth create –url <https://xyz.crm.dynamics.com>
      ```
-4.  Führen Sie den Befehl aus, um das Plug-In-Projekt zu erstellen
+4.    Führen Sie den Befehl aus, um das Plug-In-Projekt zu erstellen
 
     ```CLI
     pac plugin init
     ```
 
-5.  Fügen Sie mit dem folgenden Befehl einen Verweis auf Ihr Lösungsprojekt hinzu, damit das Plug-In-Projekt beim Erstellen der Lösung erstellt wird.
+5.    Fügen Sie mit dem folgenden Befehl einen Verweis auf Ihr Lösungsprojekt hinzu, damit das Plug-In-Projekt beim Erstellen der Lösung erstellt wird.
 
     ```CLI
     pac solution add-reference –path <path to your plugin project>
     ```
 
-6.  Führen Sie den Befehl aus, um die Lösung und das referenzierte Plug-In zu erstellen.
+6.    Führen Sie den Befehl aus, um die Lösung und das referenzierte Plug-In zu erstellen.
     ```CLI
     msbuild
     ```

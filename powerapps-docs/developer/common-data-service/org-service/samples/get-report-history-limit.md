@@ -3,7 +3,7 @@ title: 'Beispiel: Berichtsverlaufsgrenzenwerte (Common Data Service) abrufen | M
 description: In diesem Beispiel wird gezeigt, wie Sie Berichtsverlaufsgrenzen abrufen.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f02bcc8faadf6bc00032aee2372a93f63a140e52
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 80dc150533914c64983aa6ec4450fde23dbb6b0a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956322"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155758"
 ---
 # <a name="get-report-history-limits"></a>Abrufen des Berichtsverlaufsgrenzen für den Bericht
 

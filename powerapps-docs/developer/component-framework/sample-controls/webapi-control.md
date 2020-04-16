@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: bb2af534bbe6484a9b16ec0a165727456e06c18f
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 567c47220d34ef68c918a9eea9b3601acfd7a245
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017388"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162056"
 ---
 # <a name="implementing-web-api-component"></a>Implementieren einer Web-API-Komponente
 
@@ -639,7 +639,7 @@ Nach erfolgreichem Abruf der Datensätze hat die Codekomponente die Logik, um zu
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Beispielkomponenten verwenden](../use-sample-components.md)<br/>
 [Power Apps component framework-API-Referenz](../reference/index.md)<br/>
 [Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)

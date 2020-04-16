@@ -2,12 +2,12 @@
 title: Menübandbefehle definieren (modellgesteuerte Apps) | Microsoft Docs
 description: Ein Menübandbefehl erstellt eine wiederverwendbare Definition, auf die von Menübandkontrollelementen verwiesen werden kann.
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 60933770-8c7c-499c-12b4-8b64f6eedb35
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef323b97c8f051519b8d9755e808d8a2f2dfd64c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3ea2f5cfdffb19589719780e7da1afaf3c510243
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748467"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218555"
 ---
 # <a name="define-ribbon-commands"></a>Menübandbefehle definieren
 
@@ -45,4 +45,4 @@ Ein *Menübandbefehl* erstellt eine wiederverwendbare Definition, auf die von Me
 ### <a name="see-also"></a>Siehe auch  
  [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
  [Verwenden von lokalisierten Bezeichnungen in Menübändern](use-localized-labels-ribbons.md)   
- [Definieren von Menüband-Aktivierungsregeln](define-ribbon-enable-rules.md)
+ [Definieren von Menüband-Aktivierungsregeln](define-ribbon-enable-rules.md) [Beheben von Menübandproblemen](https://support.microsoft.com/help/4552163)

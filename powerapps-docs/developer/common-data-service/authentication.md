@@ -3,7 +3,7 @@ title: Authentifizieren mit Common Data Service Webdiensten (Common Data Service
 description: Stellt Authentifizierungsoptionen vor, die vom Software-Framework abhängen, das Sie verwenden.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3250c9e22881d24924997395a744a5bd45018786
-ms.sourcegitcommit: 4728372a4a467f65bab9ae17e91738f420e17374
+ms.openlocfilehash: 0503114883dd93a2b57d380cf5686853e0315ea8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3029985"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156434"
 ---
 # <a name="authentication-with-common-data-service-web-services"></a>Authentifizierung mit Common Data Service-Webdiensten
 

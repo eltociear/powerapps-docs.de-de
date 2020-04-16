@@ -3,7 +3,7 @@ title: Behandlung von Ausnahmen in Ihrem Code (Common Data Service) | Microsoft 
 description: In diesem Artikel werden die Ausnahmen erläutert, die von einem Common Data Service-Webdienst-Methodenaufruf zurückgegeben werden. Durch das Beispiel in diesem Artikel werden die allgemeinen Fehler und Ausnahmen hervorgehoben, die Ihr Anwendungsentwurf behandeln sollte.
 ms.custom: ''
 ms.date: 06/17/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1888da184a7452ddaee79bdcf9dad0817a36befa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 549cec78e4a56bf90d578ecef9a62e50282ba573
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752934"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156046"
 ---
 # <a name="handle-exceptions-in-your-code"></a>Behandlung von Ausnahmen in Ihrem Code
 

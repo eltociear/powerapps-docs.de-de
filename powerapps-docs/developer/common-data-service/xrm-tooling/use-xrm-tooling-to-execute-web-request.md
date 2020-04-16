@@ -3,7 +3,7 @@ title: XRM-Tooling zur Ausführung von Aktionen in Common Data Service verwenden
 description: Ein Objekt der CrmServiceClient-Klasse kann verwendet werden, um Operationen mit Daten in Dynamics 365 zu erstellen, abzurufen, zu aktualisieren und zu löschen
 ms.custom: ''
 ms.date: 03/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: ff161483f631fbd1673f36465041c5e0dbc0ac8c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 17560de9f14ff900cfcfa9d36cc0c72748d53ea4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748488"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154842"
 ---
 # <a name="use-xrm-tooling-to-execute-a-web-request-against-web-api"></a>Verwenden von XRM-Tooling, um eine Webanforderung anhand von Web-API auszuführen
 

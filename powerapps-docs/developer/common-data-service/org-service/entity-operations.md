@@ -3,7 +3,7 @@ title: Entitätsvorgänge mit dem Organisationsdienst (Common Data Service) | Mi
 description: Weitere Informationen über die Entitätsklasse, die für Datenvorgänge mithilfe des Common Data Service-Organisationsservice verwendet wird
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bbd71c47e31f619885a91f2042d4d7de6f7b7143
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 810d13ca894e1152438b667e409a1989623be5b8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748400"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156062"
 ---
 # <a name="entity-operations-using-the-organization-service"></a>Entitäts-Vorgänge mithilfe des Organisationsservice
 

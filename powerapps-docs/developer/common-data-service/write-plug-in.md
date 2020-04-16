@@ -3,7 +3,7 @@ title: Schreiben eines Plug-Ins (Common Data Service) | Microsoft Docs
 description: Erfahren Sie über die Konzepte und technischen Details, die für das Schreiben von Plug-Ins notwendig sind.
 ms.custom: ''
 ms.date: 07/03/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d1fa83ed9ac70bcacfc1d76065f09dcae9e96555
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: d3611db4461f199995543a70064bd8de9375155a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109014"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154894"
 ---
 # <a name="write-a-plug-in"></a>Schreiben eines Plug-Ins
 

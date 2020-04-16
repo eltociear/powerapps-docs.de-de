@@ -3,7 +3,7 @@ title: 'Beispiel: E-Mail senden (Common Data Service) | Microsoft-Dokumentation'
 description: Dieses Beispiel zeigt, wie eine E-Mail gesendet wird.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f61632eb0bae61848b24bc68684a477ca8d0a130
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: aa053f5940f7f315d3d3cbadfc6550b70ed3959e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934166"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155580"
 ---
 # <a name="sample-send-an-email"></a>Beispiel: Senden einer E-Mail
 

@@ -9,18 +9,18 @@ ms.assetid: 33c9da5b-27dd-d82d-1eb1-7b3b69b6032b
 author: shmcarth
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6a99ee0bbc5487575d56b571442db5e6a6d2f329
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: eb5d340bcd1f12926925791678d12dc98cbdf387
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109023"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154918"
 ---
 # <a name="work-with-solutions"></a>Mit Lösungen arbeiten
 
@@ -164,7 +164,7 @@ if (SampleSolutionResults == null)
 
 Um eine bestimmte Lösung abzurufen, können Sie den `UniqueName` der Lösung verwenden. Jede Organisation hat eine Standardlösung mit einem konstanten GUID-Wert: `FD140AAF-4DF4-11DD-BD17-0019B9312238`.  
   
-Dieses Beispiel zeigt, wie Daten für eine Lösung mit dem eindeutigen Namen "samplesolution" abgerufen werden. Eine Lösung mit diesem Namen wird unter [Erstellen einer Lösung](work-solutions.md#BKMK_CreateASolution) erstellt.  
+Dieses Beispiel zeigt, wie Daten für eine Lösung mit dem eindeutigen Namen „samplesolution“ abgerufen werden. Eine Lösung mit diesem Namen wird unter [Erstellen einer Lösung](work-solutions.md#BKMK_CreateASolution) erstellt.  
   
  ```csharp
  // Retrieve a solution
@@ -184,7 +184,7 @@ Solution SampleSolution = (Solution)_serviceProxy.RetrieveMultiple(querySampleSo
   
 ## <a name="add-a-new-solution-component"></a>Hinzufügen einer neuen Lösungskomponente 
  
-Dieses Beispiel zeigt, wie eine Lösungskomponente erstellt wird, die mit einer bestimmten Lösung verbunden ist. Wenn Sie die Lösungskomponente nicht mit einer bestimmten Lösung verbinden, wenn sie erstellt wird, wird sie nur der Standardlösung hinzugefügt, und Sie müssen sie manuell einer Lösung hinzufügen, wobei Sie den Code verwenden, der in [Eine vorhandene Lösungskomponente](work-solutions.md#BKMK_AddExistingSolutionComponent) enthalten ist.  
+Dieses Beispiel zeigt, wie eine Lösungskomponente erstellt wird, die mit einer bestimmten Lösung verbunden ist. Wenn Sie die Lösungskomponente nicht mit einer bestimmten Lösung verbinden, wenn sie erstellt wird, wird sie nur der Standardlösung hinzugefügt, und Sie müssen sie manuell einer Lösung hinzufügen, wobei Sie den Code verwenden, der in [Hinzufügen einer vorhandenen Lösungskomponente](work-solutions.md#BKMK_AddExistingSolutionComponent) enthalten ist.  
   
  Dieser Code erstellt einen neuen globalen Optionssatz und fügt ihn der Lösung mit dem eindeutigen Namen `_primarySolutionName` hinzu.  
   
@@ -216,7 +216,7 @@ _serviceProxy.Execute(createOptionSetRequest);
 
 Dieses Beispiel zeigt, wie einer Lösungskomponente eine vorhandene Lösung hinzugefügt wird.  
   
-Der folgende Code verwendet die <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> zum Hinzufügen der `Account`-Entität als  Lösungskomponente zu einer nicht verwalteten Lösung.  
+Der folgende Code verwendet die <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> zum Hinzufügen der `Account`-Entität als Lösungskomponente zu einer nicht verwalteten Lösung.  
   
  ```csharp
  // Add an existing Solution Component
@@ -309,7 +309,7 @@ Console.WriteLine("Imported Solution from {0}", ManagedSolutionLocation);
   
 ### <a name="tracking-import-success"></a>Nachverfolgen des Importerfolgs
 
- Wenn Sie eine <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest.ImportJobId> für die  `ImportSolutionRequest` angegeben haben, können Sie diesen Wert verwenden, um `ImportJob` nach dem Status des Imports abzufragen.  
+ Wenn Sie eine <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest.ImportJobId> für die `ImportSolutionRequest` angegeben haben, können Sie diesen Wert verwenden, um die `ImportJob`-Entität nach dem Status des Imports abzufragen.  
   
  Die `ImportJobId` kann auch für den Download einer Importprotokolldatei mit der <xref:Microsoft.Crm.Sdk.Messages.RetrieveFormattedImportJobResultsRequest>-Meldung verwendet werden.  
   
@@ -493,7 +493,7 @@ Der Inhalt der Eigenschaft `Data` eine Zeichenfolge, die eine XML-Datei repräse
 
 ## <a name="delete-a-solution"></a>Löschen einer Lösung
 
- Dieses Beispiel zeigt, wie Sie eine Lösung löschen. Das folgende Beispiel zeigt, wie Sie eine Lösung mit der Lösung `uniquename` abrufen und dann die  `solutionid` aus den Ergebnissen extrahieren. Verwenden Sie die `solutionid` mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService>-Methode. <xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>-Methode.  
+ Dieses Beispiel zeigt, wie Sie eine Lösung löschen. Das folgende Beispiel zeigt, wie Sie eine Lösung mit der Lösung `uniquename` abrufen und dann die `solutionid` aus den Ergebnissen extrahieren. Verwenden Sie die `solutionid` mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService>-Methode. <xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*>-Methode.  
   
 ```csharp
 // Delete a solution
@@ -719,3 +719,4 @@ if (_globalOptionSetId != null)
  [Deinstallieren oder Löschen einer Lösung](uninstall-delete-solution.md)   
  [Lösungsentitäten](/dynamics365/customer-engagement/developer/solution-entities)   
  [Beispiel: Mit Lösungen arbeiten](org-service/samples/work-solutions.md) [Beispiel: Lösungsabhängigkeiten erkennen](/dynamics365/customer-engagement/developer/sample-detect-solution-dependencies)
+ 

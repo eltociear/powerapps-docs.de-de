@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 70d150d0405bf6196387a39c807a26ba3e6efbfa
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4f5378eb97f452c0a7dc57fa5b8e8cc314f7779b
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883504"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3167130"
 ---
 # <a name="best-practices-and-guidance-for-model-driven-apps"></a>Best Practices und Anleitungen für modellgetriebene Anwendungen
 
@@ -33,7 +33,12 @@ Model-driven Apps ist ein komponentenorientierter Ansatz zur App-Entwicklung, de
 
 In diesem Abschnitt erfahren Sie mehr über die von uns identifizierten Probleme, ihre Auswirkungen und verstehen die Leitlinien zu ihrer Lösung. Wir werden die Hintergründe erklären, warum die Dinge auf eine bestimmte Weise geschehen sollten und mögliche Probleme in der Zukunft vermeiden. Dies kann der Benutzerfreundlichkeit, der Supportfähigkeit und der Leistung Ihrer Umgebung zugute kommen. Die Anleitungsdokumentation unterstützt die vorhandenen Informationen innerhalb der Entwickler- und Administrationsleitfäden.
 
+> [!NOTE]
+> Derzeit sind nur Best Practices für Client-Skripte im Inhaltsverzeichnis dokumentiert, und der Rest wird später hinzugefügt.
+> Dieses Dokument behandelt die Gesamtstruktur, wie die Best-Practice-Seite mit den Abschnitten und Richtlinien aussehen sollte.
+
 ## <a name="targeted-customization-types"></a>Betroffene Anpassungsarten
+
 Die Dokumentation richtet sich an die folgenden Anpassungsarten:
 
 - Modellgetriebenes App-Design
@@ -42,6 +47,7 @@ Die Dokumentation richtet sich an die folgenden Anpassungsarten:
 - Webressourcen
 
 ## <a name="sections"></a>Abschnitte
+
 Jeder Leitartikel enthält die meisten oder alle der folgenden Abschnitte:
 
 - Titel - Beschreibung des Leitfadens
@@ -54,6 +60,7 @@ Jeder Leitartikel enthält die meisten oder alle der folgenden Abschnitte:
 - Siehe auch - Referenzen, um mehr über etwas zu erfahren, das im Artikel erwähnt wird.
 
 ## <a name="categories"></a>Kategorien
+
 Jeder Leitartikel wird in eine oder mehrere der folgenden Kategorien eingeteilt:
 
 - Verwendung - unsachgemäße Verwendung einer bestimmten API, eines bestimmten Musters oder einer bestimmten Konfiguration.

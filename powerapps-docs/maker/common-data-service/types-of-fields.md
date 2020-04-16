@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2b54cad59b1f5a6cc4199675308f5cd48d05240d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 2c98ab7d40d89460995e69aed86dcdecc97ada25
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108285"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225626"
 ---
 # <a name="types-of-fields"></a>Arten von Feldern
 
@@ -152,7 +152,7 @@ Sie sollten jedoch wissen, dass sich nicht jede Suche so verhält. Es gibt, wie 
 |-----------------|-----------------|  
 |**Einfach**|Erlaubt eine einzelne Referenz zu einer bestimmten Entität. Alle benutzerdefinierten Suchen haben diesen Typ.|  
 |**Kunde**|Erlaubt eine einzelne Referenz zu einem Konto- oder einem Kontaktdatensatz.|  
-|**Besitzer**|Erlaubt eine einzelne Referenz zu einem Team- oder einem Benutzerdatensatz. Alle team- oder benutzereigenen Entitäten verfügen darüber. Mehr Informationen: [Hinzufügen der Team-Entität als Lookup-Option in Ihrer App](../model-driven-apps/team-entity-lookup.md).|  
+|**Besitzer**|Erlaubt eine einzelne Referenz zu einem Team- oder einem Benutzerdatensatz. Alle team- oder benutzereigenen Entitäten verfügen darüber. Weitere Informationen: [Hinzufügen einer Entität als Suchoption in Ihrer App](../model-driven-apps/team-entity-lookup.md).|  
 |**PartyList**|Erlaubt mehrere Referenzen zu mehreren Entitäten. Diese Suchen finden sich in der E-Mail-Entität in den Feldern **An** und **Cc**. Sie werden auch in den Entitäten Telefon und Termin verwendet.|  
 |**Betreff**|Erlaubt eine einzelne Referenz zu mehreren Entitäten. Diese Suchen finden sich in dem in Aktivitäten verwendeten relevanten Feld.|  
 

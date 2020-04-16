@@ -1,5 +1,5 @@
 ---
-title: Code-Komponenten für modellgetriebene Anwendungen | Microsoft Docs
+title: Codekomponenten für modellgesteuerte Apps | Microsoft-Dokumentation
 description: Erstellen von Codekomponenten für Canvas-Apps
 keywords: ''
 ms.author: nabuthuk
@@ -11,29 +11,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 4380d99439b9103ea40800ea8a5a20e1e13768d8
-ms.sourcegitcommit: 27cb5ad024d43f208ef6acfbea456a05df3edf8e
+ms.openlocfilehash: 7011c11ef8beb9549e864f650fad891f9c3d61bc
+ms.sourcegitcommit: 13d4042c7bd73580cc8c595e137de7e7fec22875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "3082823"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3170218"
 ---
-# <a name="code-components-for-model-driven-apps"></a>Code-Komponenten für modellgesteuerte Anwendungen
+# <a name="code-components-for-model-driven-apps"></a>Codekomponenten für modellgesteuerte Apps
 
-Power Apps component framework gibt Entwicklern die Möglichkeit, die Visualisierungen in modellgesteuerten Anwendungen zu erweitern. Professionelle Entwickler können mit Hilfe von [Power Apps CLI](get-powerapps-cli.md) Codekomponenten in modellgesteuerten Anwendungen erstellen, debuggen, importieren und hinzufügen. Sie können Codekomponenten zu Feldern, Gittern und Untergittern in modellgesteuerten Anwendungen hinzufügen. 
+Power Apps component framework gibt Entwicklern die Möglichkeit, die Visualisierungen in modellgesteuerten Apps zu erweitern. Dank [Power Apps CLI](get-powerapps-cli.md) wird es professionellen Entwicklern ermöglicht, Codekomponenten für modellgesteuerte Apps zu erstellen, zu debuggen, zu importieren und hinzuzufügen. Sie können Codekomponenten zu Feldern, Rastern und Unterrastern in modellgesteuerten Apps hinzufügen. 
 
 > [!IMPORTANT]
-> Das Power Apps component framework ist für modellgesteuerte Anwendungen standardmäßig aktiviert. Siehe [Komponenten für Canvas-Anwendungen](component-framework-for-canvas-apps.md), um zu erfahren, wie das Power Apps component framework für Canvas-Anwendungen aktiviert wird.
+> Das Power Apps component framework ist für modellgesteuerte Apps standardmäßig aktiviert. Siehe [Komponenten für Canvas-Anwendungen](component-framework-for-canvas-apps.md), um zu erfahren, wie das Power Apps component framework für Canvas-Anwendungen aktiviert wird.
 
 ## <a name="implementing-code-components"></a>Implementieren von Codekomponenten
 
-Bevor Sie mit der Erstellung von Code-Komponenten beginnen, stellen Sie sicher, dass Sie alle Voraussetzungen installiert haben, die für die Entwicklung von Komponenten mit dem Power Apps component framework erforderlich sind. 
+Bevor Sie mit der Erstellung von Codekomponenten beginnen, stellen Sie sicher, dass Sie alle Voraussetzungen installiert haben, die für die Entwicklung von Komponenten mit dem Power Apps component framework erforderlich sind. 
 
-Das Thema [Erstellen Ihrer ersten Codekomponente](implementing-controls-using-typescript.md) demonstriert den schrittweisen Prozess zur Erstellung von Codekomponenten.
+Im Artikel [Erstellen der ersten Codekomponente](implementing-controls-using-typescript.md) wird der schrittweise Prozess zum Erstellen von Codekomponenten beschrieben.
 
-## <a name="add-code-components-to-model-driven-apps"></a>Hinzufügen von Codekomponenten zu modellgesteuerten Anwendungen
+## <a name="add-code-components-to-model-driven-apps"></a>Hinzufügen von Codekomponenten zu modellgesteuerten Apps
 
-Um Codekomponenten zu einem Feld oder einer Entität in modellgesteuerten Anwendungen hinzuzufügen, siehe [Codekomponenten zu modellgesteuerten Anwendungen hinzufügen](add-custom-controls-to-a-field-or-entity.md).
+Um Codekomponenten zu einem Feld oder einer Entität in modellgesteuerten Apps hinzuzufügen, siehe [Hinzufügen von Codekomponenten zu modellgesteuerten Apps](add-custom-controls-to-a-field-or-entity.md).
 
 > [!div class="mx-imgBorder"] 
 > ![Lineares Schieberegler-Steuerelement hinzufügen](../../maker/model-driven-apps/media/add-slider.PNG "Lineares Schieberegler-Steuerelement hinzufügen")
@@ -48,4 +48,5 @@ Immer wenn Sie die Codekomponenten aktualisieren und die Änderungen in der Lauf
 ## <a name="see-also"></a>Siehe auch
 
 [Power Apps component framework Übersicht](overview.md)<br/>
-[Erstellen Sie Ihre erste Codekomponente](implementing-controls-using-typescript.md)
+[Erstellen Sie Ihre erste Codekomponente](implementing-controls-using-typescript.md)<br/>
+[Erlernen des Power Apps component framework](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)

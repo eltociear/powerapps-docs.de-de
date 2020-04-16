@@ -2,7 +2,7 @@
 title: Ausführen von Batchvorgängen mit der Web-API (Common Data Service) | Microsoft Docs
 description: Mit Batchvorgängen können Sie mehrere Vorgänge in einer einzigen HTTPS-Anforderung gruppieren. Infos zum Ausführen von Batchbetrieben mithilfe der Web-API
 ms.custom: ''
-ms.date: 12/10/2019
+ms.date: 03/30/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,19 +13,19 @@ ms.assetid: 799b2346-bda1-4a26-a330-79d0927a7743
 caps.latest.revision: 11
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1c7d738212bee75306ed5a693087c4ae7d6324d2
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 3d1b6d2e3abcef9101210d659dc155d6d4cb9a2f
+ms.sourcegitcommit: ee60386ecdd26df1d48176beb96f5e74874f2e5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109005"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175467"
 ---
 # <a name="execute-batch-operations-using-the-web-api"></a>Ausführen von Batchbetrieben mithilfe der Web-API
 
@@ -37,12 +37,12 @@ Sie können mehrere Vorgänge in einer einzelnen HTTP-Anforderung gruppieren mit
 
 Der Wert, den Stapelverarbeitungsanfragen bieten, ist, dass sie Änderungssätze umfassen können, die eine Weise liefern, einige Operationen zusammenzufassen, die als Gruppe entweder erfolgreich durchgeführt werden oder scheitern. Verglichen mit anderen Operationen, die unter Verwendung der Web-API durchgeführt werden können, sind sie schwieriger zu verfassen ohne irgendein Objektmodell, das Serialisierung von Objekten oder ein tieferes Verständnis des HTTPS-Protokolls umfasst, weil der Anfragekörper im Wesentlichen ein Textdokument ist, das sehr spezifische Anforderungen erfüllen muss.  
   
-Beachten Sie, dass zugeordnete Entitäten leichter in einem einzelnen Vorgang erstellt werden können als in einer Batchanforderung. Batchanforderungen werden am besten verwendet, wenn Sie Vorgänge an Entitäten ausführen, die nicht die einander zugeordnet sind, wenn alle Vorgänge in einem einzigen Transaktionsvorgang ausgeführt werden müssen.  
+Beachten Sie, dass zugeordnete Entitäten leichter in einem einzelnen Vorgang erstellt werden können als in einer Batchanforderung. Batchanforderungen werden am besten verwendet, wenn Sie Vorgänge an Entitäten ausführen, die einander nicht zugeordnet sind, wenn alle Vorgänge in einem einzigen Transaktionsvorgang ausgeführt werden müssen.  
   
-Auch die zurückgegebenen Antworten sind im Wesentlichen Textdateien und nicht Objekte, die in JSON einfach analysiert werden können. Sie müssen den Text in der Antwort analsieren oder eine Hilfsbibliothek finden, um auf Daten in der Antwort zuzugreifen.  
+Auch die zurückgegebenen Antworten sind im Wesentlichen Textdateien und nicht Objekte, die in JSON einfach analysiert werden können. Sie müssen den Text in der Antwort analysieren oder eine Hilfsbibliothek finden, um auf Daten in der Antwort zuzugreifen.  
  
 >[!NOTE]
->  Batchanforderung kann bis zu 100 einzelne Anforderungen enthalten und kann keine anderen Batchanforderungen enthalten.  
+>  Batchanforderung kann bis zu 1000 einzelne Anforderungen enthalten und kann keine anderen Batchanforderungen enthalten.  
   
 <a name="bkmk_BatchRequests"></a> 
 
@@ -56,7 +56,7 @@ Die POST Batchanforderung müssen eine Inhaltstyp-Kopfzeile mit einem Wert besit
 --batch_<unique identifier>
 ```  
   
-Die eindeutige Kennung muss kein GUID sein, aber einzigartig. Jedem Element im Batch muss der Batchbezeichner vorausgehen mit einer Inhaltstyp und Inhaltstransferkodierung-Kopfzeile wie der Folgenden:  
+Der eindeutige Bezeichner muss kein GUID sein, aber einzigartig. Jedem Element im Batch muss der Batchbezeichner vorausgehen mit einer Inhaltstyp und Inhaltstransferkodierung-Kopfzeile wie der Folgenden:  
   
 ```  
 --batch_WKQS9Yui9r
@@ -80,7 +80,7 @@ Wenn mehrere Vorgänge in einem Changeset enthalten sind, gelten alle Vorgänge 
 --changeset_<unique identifier>
 ```  
   
-Die eindeutige Kennung muss kein GUID sein, aber einzigartig. Jedem Element im Änderungssatz muss der Änderungssatzbezeichner vorausgehen mit einer Inhaltstyp und Inhaltstransferkodierung-Kopfzeile wie der Folgenden:  
+Der eindeutige Bezeichner muss kein GUID sein, aber einzigartig. Jedem Element im Änderungssatz muss der Änderungssatzbezeichner vorausgehen mit einer Inhaltstyp und Inhaltstransferkodierung-Kopfzeile wie der Folgenden:  
   
 ```  
 --changeset_BBB456

@@ -9,18 +9,18 @@ ms.assetid: cf68e0a9-c240-59e7-c501-68cbfa0df455
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4247a7561bc0fc2116030737db72f99390f46c3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4988b5c3210b083658c539c53a9479abdd03d2ee
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748339"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154898"
 ---
 # <a name="write-a-listener-application-for-a-azure-solution"></a>Schreiben einer Listener-Anwendung für eine Azure-Lösung
 
@@ -30,7 +30,7 @@ In diesem Thema wird beschrieben, wie Sie eine Azure-Lösungs-Listener-Anwendung
 
 ## <a name="write-a-queue-listener"></a>Warteschlangenlistener schreiben
 
-Eine Nachrichten-*Warteschlange* ist eine Sammlung von Nachrichten, die an einem Servicebusendpunkt empfangen wurden. Ein *Warteschlangenlistener* ist eine Anwendung, die diese Nachrichten in der Warteschlange liest und verarbeitet. Da die Servicebusnachrichten in einer Warteschlange gespeichert werden, muss ein Listener nicht aktiv lauschen, damit Nachrichten in einer Warteschlange empfangen werden können. Ein Warteschlangenlistener kann gestartet werden, nachdem die Nachrichten in der Warteschlange angekommen sind und diese Nachrichten dennoch verarbeiten. Andere im nächsten Abschnitt behandelte Listener müssen aktiv lauschen, oder sie verpassen die Gelegenheit, die Nachricht zu lesen. Diese Meldungen können von Common Data Service oder einer anderen Quelle stammen. 
+Eine Nachrichten-*Warteschlange* ist eine Sammlung von Nachrichten, die an einem Service Bus-Endpunkt empfangen wurden. Ein *Warteschlangenlistener* ist eine Anwendung, die diese Nachrichten in der Warteschlange liest und verarbeitet. Da die Servicebusnachrichten in einer Warteschlange gespeichert werden, muss ein Listener nicht aktiv lauschen, damit Nachrichten in einer Warteschlange empfangen werden können. Ein Warteschlangenlistener kann gestartet werden, nachdem die Nachrichten in der Warteschlange angekommen sind und diese Nachrichten dennoch verarbeiten. Andere im nächsten Abschnitt behandelte Listener müssen aktiv lauschen, oder sie verpassen die Gelegenheit, die Nachricht zu lesen. Diese Meldungen können von Common Data Service oder einer anderen Quelle stammen. 
   
 > [!IMPORTANT]
 >  Wenn Sie einen Warteschlangenlistener schreiben, überprüfen Sie jede einzelne Nachrichtenkopfaktion, um zu bestimmen, ob die Meldung von Common Data Service stammt. Informationen dazu finden Sie unter [Filtermeldungen](write-listener-application-azure-solution.md#filter).  
@@ -140,3 +140,4 @@ else if (receivedMessage.ContentType = "application/xml")
 [Beispiel: REST-Listener](org-service/samples/rest-listener.md)<br />
 [Arbeiten mit Common Data Service-Daten in Ihrer Azure-Lösung](work-data-azure-solution.md)<br />
 [Arbeiten mit Common Data Service-Ereignisdaten in Ihrer Azure-Ereignishub-Lösung](work-event-data-azure-event-hub-solution.md)
+ 

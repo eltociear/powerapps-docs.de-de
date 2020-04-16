@@ -3,7 +3,7 @@ title: 'Beispiel: Verknüpfen von benutzerdefinierten Attributen zwischen Reihen
 description: Dieses Beispiel zeigt, wie benutzerdefinierte Attributen zwischen Reihen und Instanzen verknüpft werden.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 142600c4e8cc9cc5d959b42670678234245e6f1d
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: af76525dd628f7e9399e1808c970f974e167f77a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934282"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155730"
 ---
 # <a name="sample-link-custom-attributes-between-series-and-instances"></a>Beispiel: Verknüpfen von benutzerdefinierten Attributen zwischen Reihen und Instanzen
 

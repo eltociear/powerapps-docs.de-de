@@ -3,7 +3,7 @@ title: " Erstellen und Aktualisieren von Datensätzen mit verknüpften Datensät
 description: Dieses Beispiel zeigt, wie Datensätze mit verknüpften Datensätzen erstellt und aktualisiert werden.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9431acf1ec8597e56c451eb7e9956395d59ef93b
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 4cbe34abef35224b4fc1eaf93a5f2307e9f4b8f6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934561"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155838"
 ---
 # <a name="create-and-update-records-with-related-records-early-bound"></a>Erstellen und Aktualisieren von Datensätzen mit verknüpften Datensätzen (mit früher Bindung)
 

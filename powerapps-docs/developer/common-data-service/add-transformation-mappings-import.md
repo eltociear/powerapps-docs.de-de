@@ -3,7 +3,7 @@ title: Hinzufügen von Transformationszuordnungen für den Import (Common Data S
 description: Transformationszuordnung aktiviert optionale Änderung von Quelldaten vor dem Import.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2ec4a7ec143559fc3c64987764ee996b6e3d5cc4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6d1ed5076307e3e38db42eaa190accc509df514f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748263"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156490"
 ---
 # <a name="add-transformation-mappings-for-import"></a>Hinzufügen von Transformationszuordnungen für den Import
 

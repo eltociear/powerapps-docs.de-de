@@ -3,7 +3,7 @@ title: " Eine Rolle für einen Benutzer entfernen (Common Data Service) | Micros
 description: 'Dieses Beispiel zeigt, wie Sie eine Rolle von einem Benutzer entfernen '
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: afc53ef3cf6a06d44cf9c5c3e52157ee85f96aae
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 5e6719002a2180aed19fa030e03611f5ce6b893c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914442"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155658"
 ---
 # <a name="remove-a-role-for-a-user"></a>Entfernen einer Rolle für einen Benutzer
 

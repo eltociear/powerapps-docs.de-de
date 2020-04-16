@@ -12,12 +12,12 @@ ms.custom:
 ms.topic: article
 ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
-ms.openlocfilehash: cc809d81b7b9adf7327aa9cb8f74515816022118
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 10344af0eca776ae6cc32547e2e61bde5ce9713d
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091233"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218531"
 ---
 # <a name="power-apps-component-framework-overview"></a>Power Apps component framework Übersicht
 
@@ -25,6 +25,10 @@ Power Apps component framework können professionelle Entwickler und App-Herstel
 
 - Ersetzen Sie ein Feld, das einen numerischen Textwert anzeigt, mit einer `dial`- oder `slider`-Code-Komponente.
 - Transformieren Sie eine Liste in eine völlig andere Sichterfahrung, die an das Dataset gebunden ist, z. B. `Calendar` oder `Map`.
+
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4slRe]
+
 
 > [!IMPORTANT]
 > - PowerApps component framework befindet sich in der öffentlichen Vorschau für Canvas-Apps und ist im Allgemeinen für modellgesteuerte Apps verfügbar. Dies bedeutet, dass alle APIs, die für modellgetriebene Anwendungen unterstützt werden, möglicherweise noch nicht auf Canvas-Anwendungen unterstützt werden.
@@ -67,5 +71,6 @@ Mit der allgemeinen Verfügbarkeit des Frameworks können Entwickler von Codekom
 [Was sind Code-Komponenten](custom-controls-overview.md)<br/>
 [Codekomponenten für Canvas-Apps](component-framework-for-canvas-apps.md)<br/>
 [Erstellen und Entwickeln einer Code-Komponente](create-custom-controls-using-pcf.md)<br/>
+[Erlernen des Power Apps component framework](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)<br/>
 [Power Apps für Entwickler](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer)
 

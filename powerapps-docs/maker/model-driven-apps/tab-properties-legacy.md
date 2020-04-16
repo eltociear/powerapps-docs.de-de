@@ -9,7 +9,7 @@ applies_to:
 - powerapps
 ms.author: Mattp123
 manager: kvivek
-ms.date: 06/07/2018
+ms.date: 03/17/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: e0790865-c5a4-4e86-bce2-584af2b8ed93
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d0653ad2089be03ff06bfd5495c8995d92ec704e
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 613352e9ec86101b776fce5b0bf18d64b175f363
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874604"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166528"
 ---
 # <a name="tab-properties-for-model-driven-app-forms-overview"></a>Registerkarten-Eigenschaften für Hauptformulare in modellgesteuerten Apps im Überblick
 
@@ -32,21 +32,31 @@ ms.locfileid: "2874604"
  Registerkarten enthalten bis zu drei Spalten, und die Breite der Spalten kann auf einen Prozentsatz der Gesamtbreite festgelegt werden. Wenn Sie eine neue Registerkarte erstellen, wird die Spalte mit Abschnitt vorab ausgefüllt.  
 
 Sie können auf **Registerkarten-Eigenschaften** über die Power Apps-Website zugreifen. 
-1.  Wählen Sie auf der Website [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Modellgesteuert** (unterer linker Teil des Navigationsbereichs) aus.  
-
-     ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.  
 
-3.  Öffnen Sie in der Liste der Formulare das Formular des Typs **Haupt**. Doppelklicken Sie dann auf eines der Felder, um „Allgemeine Feldeigenschaften” anzuzeigen.
+3.  Öffnen Sie in der Liste der Formulare das Formular des Typs **Haupt**. Wählen Sie dann eine der Registerkarten im Formular aus, um die Registerkarteneigenschaften anzuzeigen.
 
-    ![Registerkarte „Eigenschaften“](media/tab-properties.png)
+|Eigenschaft|Beschreibung|  
+|--------------|-----------------|  
+|**Registerkartenbeschriftung**|**Erforderlich**: Die lokalisierbare Beschriftung für die Registerkarte, die für Benutzer sichtbar ist.|  
+|**Name**|**Erforderlich**: Der eindeutige Name für die Registerkarte, der verwendet wird, wenn auf sie in Skripts verwiesen wird. Der Name kann nur alphanumerische Zeichen und Unterstrichzeichen enthalten.|  
+|**Registerkarte standardmäßig erweitern**|Der Status der Registerkarte kann durch Formularskripts oder durch Klicken auf die Beschriftung zwischen erweitert und reduziert gewechselt werden. Wählen Sie den Standardstatus für die Registerkarte.|  
+|**Registerkarte ausblenden**|Die Anzeige der Registerkarte ist optional und kann durch Skripts gesteuert werden. Wählen Sie, ob die Registerkarte angezeigt werden soll. Weitere Informationen: [Sichtbarkeitsoptionen](visibility-options-legacy.md)|  
+|**Auf Telefon ausblenden**|Wählen Sie, ob Sie möchten, dass die Registerkarte auf dem Smartphone verfügbar ist. Um eine verkürzte Version dieses Formulars auf Smartphone-Bildschirmen anzuzeigen, können Sie die Registerkarte ausblenden.|  
+|**Formatierung**|Registerkarten können bis zu drei Spalten haben. Verwenden Sie diese Optionen, um die Anzahl der Spalten festzulegen, sowie, welchen Prozentsatz der gesamten Breite sie ausfüllen sollen.|  
+
+  > [!div class="mx-imgBorder"] 
+  > ![Registerkarteneigenschaften](media/newform-tab-properties.png "Eigenschaften der Registerkarte")
+
+## <a name="tab-properties-for-model-driven-app-main-forms-classic"></a>Registerkarteneigenschaften für Hauptformulare in modellgesteuerten Apps: Klassisch
+
+Dies sind die Eigenschaften, die konfiguriert werden können, wenn eine Registerkarte in einem Formular mithilfe des klassischen Formulardesigners verwendet wird. Die folgende Tabelle zeigt Eigenschaften, die Sie für Registerkarten im Formular festlegen können:
   
- In der folgenden Tabelle werden die Eigenschaften angezeigt, die für Registerkarten im Formular eingestellt werden können:
-  
-|Tabstopp|Eigenschaft|Beschreibung|  
+|Registerkarte|Eigenschaft|Beschreibung|  
 |---------|--------------|-----------------|  
-|**Anzeige**|**Name**|**Erforderlich**: Der eindeutige Name für die Registerkarte, der verwendet wird, wenn auf sie in Skripts verwiesen wird. Der Name kann nur alphanumerische Zeichen und Unterstrichzeichen enthalten.|  
+|**Anzeigen**|**Name**|**Erforderlich**: Der eindeutige Name für die Registerkarte, der verwendet wird, wenn auf sie in Skripts verwiesen wird. Der Name kann nur alphanumerische Zeichen und Unterstrichzeichen enthalten.|  
 ||**Bezeichnung**|**Erforderlich**: Die lokalisierbare Beschriftung für die Registerkarte, die für Benutzer sichtbar ist.|  
 ||**Beschriftung dieser Registerkarte auf dem Formular anzeigen**|Wenn die Beschriftung angezeigt wird, können Benutzer darauf klicken, um die Registerkarte zu erweitern oder zu reduzieren. Wählen Sie, ob Beschriftung angezeigt werden soll.|  
 ||**Registerkarte standardmäßig erweitern**|Der Status der Registerkarte kann durch Formularskripts oder durch Klicken auf die Beschriftung zwischen erweitert und reduziert gewechselt werden. Wählen Sie den Standardstatus für die Registerkarte.|  
@@ -55,7 +65,10 @@ Sie können auf **Registerkarten-Eigenschaften** über die Power Apps-Website zu
 |**Formatierung**|**Layout**|Registerkarten können bis zu drei Spalten haben. Verwenden Sie diese Optionen, um die Anzahl der Spalten festzulegen, sowie, welchen Prozentsatz der gesamten Breite sie ausfüllen sollen.|  
 |**Ereignisse**|**Formularbibliotheken**|Geben Sie JavaScript-Webressourcen an, die in der Registerkarte `TabStateChange`-Ereignishandler verwendet werden sollen.<br /><br />|  
 ||**Ereignishandler**|Konfigurieren Sie die Funktionen aus den Bibliotheken, die für das Ereignis `TabStateChange`-Registerkarte aufgerufen werden sollen. Weitere Informationen: [Konfigurieren Sie Ereignishandler](configure-event-handlers-legacy.md)|  
-  
+
+  > [!div class="mx-imgBorder"] 
+  > ![Registerkarteneigenschaften Klassisch](media/tab-properties.png "Registerkarteneigenschaften in Klassisch")
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 [Verwenden des Hauptformulars und seiner Komponenten](use-main-form-and-components.md)

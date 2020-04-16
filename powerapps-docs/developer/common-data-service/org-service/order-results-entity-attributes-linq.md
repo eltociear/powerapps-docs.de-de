@@ -3,7 +3,7 @@ title: Anordnen von Ergebnissen mit Hilfe von Entitätsattributen mit LINQ (Comm
 description: Infos zu Such- oder Optionen (Auswahlliste)-Attributen, um Ergebnisse innerhalb der LINQ-Abfrage zu finden.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90b98b99e84a544ae524af6ed56eaa458c351a11
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e665e66b4ec138532dd5476561b6cc0c7becc330
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748535"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156026"
 ---
 # <a name="order-results-using-entity-attributes-with-linq"></a>Bestellergebnisse mithilfe von LINQ der Entitätsattributen
 

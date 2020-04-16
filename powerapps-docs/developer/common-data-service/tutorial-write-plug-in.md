@@ -3,7 +3,7 @@ title: 'Lernprogramm: Schreiben und Registrieren eines Plug-Ins (Common Data Ser
 description: Dieses Lernprogramm ist das erste in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten.
 ms.custom: ''
 ms.date: 02/23/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0c7f4bf3c380c7cb0dfbc3466093f0687ded7473
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 3526682a420c0e6e10cc4ad1457497f1a27bc39a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109595"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155230"
 ---
 # <a name="tutorial-write-and-register-a-plug-in"></a>Lernprogramm: Schreiben und Registrieren eines Plugins
 

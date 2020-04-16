@@ -2,7 +2,7 @@
 title: Erstellen oder Bearbeiten von modellgesteuerten Schnellerstellungsformularen in Power Apps | MicrosoftDocs
 description: Erfahren Sie, wie Sie ein Schnellerfassungsformular erstellen oder bearbeiten
 ms.custom: ''
-ms.date: 05/14/2019
+ms.date: 03/23/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 171d64581fd0a9feb51d5a6111c79e63de1ba845
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: e6f3c1313ad006d9280145fd2802f83369410ec3
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875352"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166924"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>Erstellen oder Bearbeiten von modellgesteuerten Schnellerstellungsformularen für eine optimierte Dateneingabeerfahrung
 
@@ -46,7 +46,7 @@ In diesem Thema erstellen und bearbeiten Sie ein Schnellerfassungsformular.
 |Firma|Kampagnenreaktion|Anfrage|Mitbewerber|  
 |Kontakt|Lead|Verkaufschance||  
   
-Obwohl Sie, mit Ausnahme der Terminentität, Schnellerfassungsformulare für Systemaktivitätsentitäten erstellen können, unterstützen sie keine Schnellerfassungsformulare. Mit der Veröffentlichung von Dynamics 365, Version 9.0 enthält die Terminentität ein Schnellerfassungsformular für die Verwendung mit der einheitlichen Oberfläche. Derzeit wird die Option zur Deaktivierung des Schnellerfassungsformulars für die Terminentität nicht unterstützt. Alle anderen [Aktualisierten Entitäten](create-design-forms.md) sowie alle benutzerdefinierten Entitäten können zur Unterstützung dieser Formulare aktiviert werden, indem in der Entitätsdefinition **Schnellerfassung erlauben** ausgewählt und für die Entität ein Schnellerfassungsformular erstellt wird. 
+Obwohl Sie, mit Ausnahme der Terminentität, Schnellerfassungsformulare für Systemaktivitätsentitäten erstellen können, unterstützen sie keine Schnellerfassungsformulare. Derzeit wird die Option zur Deaktivierung des Schnellerfassungsformulars für die Terminentität nicht unterstützt. Alle anderen [aktualisierten Entitäten](create-design-forms.md) sowie alle benutzerdefinierten Entitäten können zur Unterstützung dieser Formulare aktiviert werden, indem in der Entitätsdefinition die Option **Schnellerfassungsformulare aktivieren** ausgewählt und für die Entität ein Schnellerfassungsformular erstellt wird. 
 
 Sie können benutzerdefinierte Aktivitätsentitäten aktivieren, um Schnellerfassungsformulare zu unterstützen, und Sie können Schnellerfassungsformulare für diese Entitäten erstellen. Jedoch wird das Schnellerfassungsformular für benutzerdefinierte Aktivitätsentitäten nicht verwendet, wenn Personen **Erstellen** auf der Navigationsleiste auswählen. Diese Schnellerfassungsformulare können nur verwendet werden, wenn Benutzer einen neuen Datensatz für ein Unterraster hinzufügen, das diese bestimmte angepasste Aktivitätsentität anzeigt.  
   
@@ -55,18 +55,14 @@ Sie können benutzerdefinierte Aktivitätsentitäten aktivieren, um Schnellerfas
  Obwohl Sie mehrere Schnellerfassungsformulare definieren können, kann nur ein Schnellerfassungsformular von jedem Benutzer verwendet werden. Das Formular, das jeder verwenden wird, wird mithilfe der Formularreihenfolge festgelegt. Schnellerfassungsformulare können nicht Sicherheitsrollen zugewiesen werden, und sie ermöglichen dem Benutzer nicht, Formulare zu wechseln.  
   
 > [!NOTE]
->  - Für die Entität muss die Option **Schnellerfassung erlauben** aktiviert sein, damit das Schnellerfassungsformular angezeigt werden kann. 
+>  - Für die Entität muss die Option **Schnellerfassungsformulare aktivieren** aktiviert sein, damit das Schnellerfassungsformular angezeigt werden kann. 
 >  - Sie müssen ebenfalls die Entität und das Schnellerfassungsformular Ihrer App hinzufügen.
->  - Einige Felder wie das CREATEDON Feld, können nicht in einem Schnellerfassungsformular hinzuzugefügt werden.  
+>  - Einige Felder wie das CREATEDON-Feld können nicht in einem Schnellerfassungsformular hinzugefügt werden.  
   
 ### <a name="how-to-create-a-quick-create-form"></a>So erstellen Sie ein Schnellerfassungsformular  
   
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
-
-> [!IMPORTANT]
-> "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).     
-  
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.  
 
 3.  Wählen Sie in der Symbolleiste **Formular hinzufügen** > **Schnellerfassungsformular** aus.  
@@ -101,9 +97,6 @@ Wenn Sie einem Schnellerfassungsformular ein zusammengesetztes Feld hinzufügen,
   
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-> [!IMPORTANT]
-> "Wenn der **Modell-angetriebe** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).    
-  
 2. Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.    
 
 3. Wählen Sie in der Formularliste, in der sich das Formular **Typ** befindet **Schnellerfassung** aus.  
@@ -116,15 +109,15 @@ Wenn Sie einem Schnellerfassungsformular ein zusammengesetztes Feld hinzufügen,
   
 5.  Wählen Sie **Veröffentlichen**, damit das geänderte Formular in der Anwendung angezeigt wird.  
 
-## <a name="allow-quick-create-property-form-behavior-for-activities"></a>Eigenschaftenformularverhalten "Schnellerfassung erlauben" für Aktivitäten
-Ab dem Update 9.1.0.2007 kann die Eigenschaft **Schnellerfassung erlauben** für alle Standardaktivitäten, außer wiederkehrenden Terminen, aktiviert oder deaktiviert werden. Mit dieser Eigenschaft können Sie das angezeigte Formular standardmäßig für die meisten Aktivitäten ändern. Standardmäßig wird die Eigenschaft **Schnellerfassung erlauben** aktiviert und das Schnellerfassungsformular ist das Formular, das in App-Bereichen und unterstützenden Aktivitätsentitäten angezeigt wird. 
+## <a name="enable-quick-create-form-property-behavior-for-activities"></a>Eigenschaftsverhalten „Schnellerfassungsformular aktivieren“ für Aktivitäten
+Die Eigenschaft **Schnellerfassungsformulare aktivieren** kann für alle Standardaktivitäten außer wiederkehrenden Terminen aktiviert oder deaktiviert werden. Mit dieser Eigenschaft können Sie das angezeigte Formular standardmäßig für die meisten Aktivitäten ändern. Standardmäßig wird die Eigenschaft **Schnellerfassungsformulare aktivieren** aktiviert und das Schnellerfassungsformular ist das Formular, das in App-Bereichen und unterstützenden Aktivitätsentitäten angezeigt wird. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/allow-quick-create.png "Allow Quick Create property on appointment entity")
 
 
 ### <a name="unified-interface-client-form-display-behavior"></a>Einheitliche Oberfläche-Clientformular – Anzeigeverhalten
-Die folgende Tabelle gibt an, welches Formular standardmäßig angezeigt wird, wenn die Eigenschaft **Schnellerfassung erlauben** im Client der einheitlichen Oberfläche *aktiviert* ist.
+Die folgende Tabelle gibt an, welches Formular standardmäßig angezeigt wird, wenn die Eigenschaft **Schnellerfassungsformulare aktivieren** im Client der einheitlichen Oberfläche *aktiviert* ist.
  
 |Speicherort, an dem auf das Formular zugegriffen wird  |Angezeigtes Formular  |
 |---------|---------|
@@ -138,11 +131,11 @@ Die folgende Tabelle gibt an, welches Formular standardmäßig angezeigt wird, w
 |Aktivitäten (activitypointer)-Raster   | Hauptbereich   |
 |Raster der spezifischen Aktivität    | Hauptbereich   |
 
-<sup>1</sup>Aktivitäten werden auf den globalen Schaltflächen **Erstellen** oder **+ Neu** angezeigt, wenn die Eigenschaft **Schnellerfassung erlauben** aktiviert ist. In diesem Fall wird das Schnellerfassungsformular verwendet, wenn es vorhanden ist, anderenfalls das Hauptformular. Wenn **Schnellerfassung erlauben** deaktiviert ist, wird der Eintrag für die Entität nicht angezeigt.
+<sup>1</sup>Aktivitäten werden auf den globalen Schaltflächen **Erstellen** oder **+ Neu** angezeigt, wenn die Eigenschaft **Schnellerfassungsformulare aktivieren** aktiviert ist. In diesem Fall wird das Schnellerfassungsformular verwendet, wenn es vorhanden ist, anderenfalls das Hauptformular. Wenn die Option **Schnellerfassungsformulare aktivieren** deaktiviert ist, wird der Eintrag für die Entität nicht angezeigt.
 
 ### <a name="classic-web-client-form-display-behavior"></a>Klassisches Webclientformular-Anzeigeverhalten
 
-Die folgende Tabelle gibt an, welches Formular standardmäßig angezeigt wird, wenn die Eigenschaft **Schnellerfassung erlauben** im klassischen Webclient *aktiviert* ist.
+Die folgende Tabelle gibt an, welches Formular standardmäßig angezeigt wird, wenn die Eigenschaft **Schnellerfassungsformulare aktivieren** im klassischen Webclient *aktiviert* ist.
 
 |Speicherort, an dem auf das Formular zugegriffen wird  |Angezeigtes Formular  |
 |---------|---------|
@@ -156,7 +149,7 @@ Die folgende Tabelle gibt an, welches Formular standardmäßig angezeigt wird, w
 
  #### <a name="classic-web-client-social-pane-behavior"></a>Social Media-Bereich des klassischen Webclients – Verhalten
  
-Der Social Media-Bereich ist ein Sonderfall, da er die Eigenschaft **Schnellerfassung erlauben** nicht verwendet. Er verwendet aber unterschiedliche Formulare für unterschiedliche Aktivitäten wie hier angegeben.
+Der Social Media-Bereich ist ein Sonderfall, da er die Eigenschaft **Schnellerfassungsformulare aktivieren** nicht verwendet. Er verwendet aber unterschiedliche Formulare für unterschiedliche Aktivitätsentitäten, wie hier angegeben.
 
 
 |Aktivität  |Angezeigtes Formular  |
@@ -169,9 +162,9 @@ Der Social Media-Bereich ist ein Sonderfall, da er die Eigenschaft **Schnellerfa
 
 ### <a name="solution-import-allow-quick-create-value-behavior"></a>Lösungsimport "Schnellerfassung zulassen"-Wertverhalten
 
-Wenn Sie eine Lösung aus Version 8.2 importieren, werden die folgenden Entitäten, unabhängig vom Wert der Eigenschaft **Schnellerfassung erlauben** in der Lösung , auf den Standardformular-Anzeigewert zurückgesetzt und das Hauptformular zeigt: Aufgabe, Anruf, E-Mail und Termin. In dieser Situation muss die Option **Schnellerfassung erlauben** für diese Aktivitätsentitäten zurück auf *aktiviert* nach dem Import gesetzt werden.
+Wenn Sie eine Lösung aus Version 8.2 importieren, werden die folgenden Entitäten, unabhängig vom Wert der Eigenschaft **Schnellerfassungsformulare aktivieren** in der Lösung, auf den Standardformular-Anzeigewert zurückgesetzt und das Hauptformular zeigt: Aufgabe, Telefonanruf, E-Mail und Termin. In dieser Situation muss nach dem Import die Option **Schnellerfassungsformulare aktivieren** für diese Aktivitätsentitäten zurück auf *aktiviert* gesetzt werden.
  
-Liegt eine Anpassung in einer Version 9.0-Lösung für Entitäten vor, bei denen **Schnellerfassung erlauben** aktiviert ist, ändert sich der Wert nach dem Import nicht.  Wenn Sie die Option **Schnellerfassung erlauben** aber für die Entitäten Aufgabe, Telefonanruf, E-Mail und Termin auf *deaktiviert* gesetzt haben, wird der Wert in "aktiviert" geändert. In dieser Situation muss die Option **Schnellerfassung erlauben** für diese Aktivitätsentitäten nach dem Import zurück auf "deaktiviert" gesetzt werden. 
+Wenn eine Anpassung in einer Version 9.0-Lösung für Entitäten durchgeführt wird, bei denen die Option **Schnellerfassungsformulare aktivieren** aktiviert ist, ändert sich der Wert nach dem Import nicht.  Wenn Sie die Option **Schnellerfassungsformulare aktivieren** aber für die Entitäten Aufgabe, Telefonanruf, E-Mail und Termin auf *deaktiviert* gesetzt haben, wird der Wert in „aktiviert“ geändert. In dieser Situation muss nach dem Import die Option **Schnellerfassungsformulare aktivieren** für diese Aktivitätsentitäten zurück auf „deaktiviert“ gesetzt werden. 
   
 ### <a name="see-also"></a>Siehe auch  
 [Übersicht zur Formular-Editor-Benutzeroberfläche](form-editor-user-interface-legacy.md)

@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 0f75c9c38b3fbd74f330de5e80a2c0f7df8d6e13
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109301"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124955"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Verwaltete Eigenschaften in Common Data Service-Metadaten festlegen 
 Sie können steuern, welche der von Ihnen verwalteten Lösungskomponenten mithilfe von verwalteten Eigenschaften anpassbar sind. ISVs sollten die Anpassung von Lösungskomponenten ermöglichen, wenn dies sinnvoll ist. Damit können Organisationen Ihre Lösung entsprechend ihren eindeutigen Anforderungen anpassen. Schränken Sie Anpassung von kritischen Lösungskomponenten, die die Kernfunktionen Ihrer Lösung sicherstellen ein oder lassen Sie diese nicht zu, sodass Sie diese vorhersagbar unterstützen und verwalten können. Für die meisten Nicht-ISV-Entwicklungsumgebungen empfehlen wir, dass Sie keine Anpassung für Ihre verwaltete Lösung-Komponenten zulassen. 

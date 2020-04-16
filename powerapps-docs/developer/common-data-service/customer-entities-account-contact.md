@@ -1,9 +1,9 @@
 ---
-title: Kundenentitäten (Firma, Kontakt) (Common Data Service) | Microsoft-Dokumentation
+title: Kundenentitäten (Firma, Kontakt, Kundenadresse) (Common Data Service) | Microsoft-Dokumentation
 description: Die Entitäten Firma und Kontakt in Dynamics 365 werden für das Identifizieren und Verwalten von Kunden, für den Verkauf von Produkten und Services und für die Bereitstellung eines hervorragenden Kundenservice benötigt. Eine Kundenadressenentität wird verwendet, um die Adresse und Lieferinformationen für einen Kunden zu speichern.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 03/30/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48a9f4e8a18fcf6db639e2a17c21779fa8de90c3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4181206bef39f6834b5aef096ed90931f725d310
+ms.sourcegitcommit: b6beb1b76d9ddb0f9846253f895d581bda9012ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748422"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176667"
 ---
-# <a name="customer-entities-account-contact"></a>Kundenentitäten (Firma, Kontakt)
+# <a name="customer-entities-account-contact-customeraddress"></a>Kundenentitäten (Firma, Kontakt, Kundenadresse)
 
 <!-- 
 Was Mike Carter
@@ -66,7 +66,14 @@ Die Kontaktentität speichert alle Informationen zu einer Person wie E-Mail-Adre
   
 Die wesentliche Vorgängen, die Sie mit einem Kontakt ausführen können, umfassen das Erstellen, Lesen, Aktualisieren und Löschen.  
   
-Das Verknüpfen von Entitäten wie Aktivitäten und Notizen mit der Kontaktentität ermöglicht es Benutzern, ihre gesamte Kommunikation mit einem Kunden anzuzeigen, sowie alle Aktionen, die im Auftrag des Kunden durchgeführt wurden, und alle Informationen, die der Benutzer zu dem Kunden benötigt.  
+Das Verknüpfen von Entitäten wie Aktivitäten und Notizen mit der Kontaktentität ermöglicht es Benutzern, ihre gesamte Kommunikation mit einem Kunden anzuzeigen, sowie alle Aktionen, die im Auftrag des Kunden durchgeführt wurden, und alle Informationen, die der Benutzer zu dem Kunden benötigt.
+
+## <a name="customeraddress-entity"></a>CustomerAddress-Entität
+
+Diese Entität enthält Adress- und Versandinformationen. Sie wird dazu verwendet, um für eine Firma oder einen Kontakt zusätzliche Adressen zu speichern.
+
+>[!NOTE]
+>Die Kundenadressentabelle wird auf Plattformebene aktualisiert, wenn Änderungen an den Firmen- oder Kontaktentitäten vorgenommen werden. Aus diesem Grund wird kein separater SDK-Aufruf zum Aktualisieren oder Erstellen der Kundenadressenentität ausgeführt. Jeder Code, der bei Adressaktualisierungen oder -erstellungen ausgelöst wird, sollte auf die Kontakt- oder Firmenentitäten verweisen.
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Firmenentität](reference/entities/account.md)  

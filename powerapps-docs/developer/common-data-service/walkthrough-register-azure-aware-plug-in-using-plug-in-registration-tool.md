@@ -9,18 +9,18 @@ ms.assetid: b5ef50fa-8085-f425-3968-804d012fc840
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf065cc4b2eb1c76156e5373fecfc0193a870380
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 727b627a3069d8010828c829f5c133a0e868700f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748503"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155162"
 ---
 # <a name="tutorial-register-an-azure-aware-plug-in-using-the-plug-in-registration-tool"></a>Tutorial: Azure-fähiges Plug-In mit Plug-In-Registrierungstool registrieren
 
@@ -85,7 +85,7 @@ Nachdem der Endpunkt registrieren ist, können Sie diesen testen. Ein Listener m
 1. Erstellen Sie einen neuen Firmenentitätsdatensatz.
 1. Geben Sie einen Firmennamen, beispielsweise „Adventure Works Cycle” in das Feld **Firmenname** ein und klicken Sie dann auf **Speichern**.  
 1. Warten Sie etwa 10 Minuten, damit der Azure Service Bus-Beitrag erfolgen kann.  
-1. Wählen Sie in der modellgesteuerte App **Dynamics 365 – benutzerdefiniert** **Einstellungen > System > Systemaufträge**.  
+1. Wählen Sie in der modellgesteuerten App **Dynamics 365 – benutzerdefiniert** die Optionen **Einstellungen > System > Systemaufträge** aus.  
 1. Öffnen Sie den Systemauftrag, der denselben Namen hat, den Sie auch für Ihren Dienstendpunkt angegeben haben. Überprüfen Sie den Status, um zu sehen, ob der Post erfolgreich war, wartet oder fehlerhaft war.  
   
 Sie können die Registrierung des Endpunkts jetzt aufheben, wenn Sie das wünschen, indem Sie ihn in der Strukturansicht des Tools auswählen und auf **Registrierung aufheben** klicken.  
@@ -94,3 +94,4 @@ Sie können die Registrierung des Endpunkts jetzt aufheben, wenn Sie das wünsch
 
 [Azure-Integration für CDS](azure-integration.md)<br />
 [Einführung in die Microsoft Azure-Integration mit CDS](azure-integration.md)
+ 

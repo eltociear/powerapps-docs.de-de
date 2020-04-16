@@ -3,7 +3,7 @@ title: 'Beispiel: Abfrageverbindungsrollen mithilfe von Entitätstypcode (Common
 description: Dieses Beispiel zeigt, wie man eine Verbindungsro
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 25432f43350b6c32dc31a87f913233c3e71bd427
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: d4354e2a861f6b0f68916c2c9ca2104429c2b443
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956189"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155694"
 ---
 # <a name="sample-query-connection-roles-by-entity-type-code-early-bound"></a>Beispiel: Abfragenverbindungsrollen mithilfe von Entitätstypcode (frühe Bindung)
 

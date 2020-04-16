@@ -3,7 +3,7 @@ title: Abonnieren von SDK-Assembly-Updates mit NuGet (Common Data Service) | Mic
 description: .NET SDK-Assemblies und einige Befehlszeilen-Tools sind über eine Software-Verteilungs-Website namens nuget.org verfügbar. Die Verwendung von NuGet-Paketen in Ihrem Anwendungsprojekt ermöglicht es Ihnen, Ihr Projekt auf dem neuesten Stand der neuesten Versionen der SDK-Assemblies und -Tools zu halten.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 15790d37a187eafa73a5dc837aa090833f3d95ee
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 027793bf373e0a3554fcbc4c2059eaf0f79f1a7b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859991"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155470"
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>Abonnieren Sie SDK-Assembly-Updates mit NuGet.
 

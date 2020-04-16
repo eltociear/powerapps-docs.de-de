@@ -3,7 +3,7 @@ title: Aufgaben von Buildtools| Microsoft Docs
 description: 'Bei Power Apps build tools handelt es sich um eine Sammlung von Power Apps-spezifischen Azure DevOps-Buildaufgaben, die vermeiden, dass Tools und Skripts manuell heruntergeladen werden müssen, um den Anwendungslebenszyklus von Power Apps zu verwalten. In diesem Thema werden die Aufgaben beschrieben, die verfügbar sind. '
 ms.custom: ''
 ms.date: 07/21/2019
-ms.reviewer: Dean-Haas
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mikkelsen2000
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7271fb611f6ddff6d36dd1984b760ce3bbf19b45
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 20c4dfe96f7293f9a00a97867beda7ac8a0f4b41
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861835"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156413"
 ---
 # <a name="build-tools-tasks"></a>Aufgaben von Buildtools
 
@@ -52,9 +52,9 @@ Nachfolgend wird beschrieben, wie Sie die erforderliche Azure Active Directory-A
 > Rechte zum Erstellen von Dienstprinzipalen in einem AAD-Mandanten, der für Power Apps (P1/P2) oder D365 CE lizenziert ist, sind erforderlich, um diese Schritte auszuführen. 
 
 1. Öffnen Sie einen PowerShell-Befehl mit Administratorrechten.
-![PowerShell-Befehlsfenster](media/pscommand.png "PPowerShell-Befehlsfenster)
+![PowerShell-Befehlsfenster](media/pscommand.png "PowerShell-Befehlsfenster")
 2. Führen Sie den folgenden Befehl in PowerShell aus: *Install-Module -Name AzureAD*.
-![Installations-Modulbefehl](media/pscommand-install.png "IInstallations-Modulbefehlsbildschirm)
+![Installations-Modulbefehl](media/pscommand-install.png "Installationsmodul-Befehlsbildschirm")
  
 3.  Dies erfordert Sie auf, den Module aus PSGallery zu vertrauen. Klicken Sie auf **A (Ja zu allen)**.
 1. Kopieren Sie Folgendes, und fügen Sie es dann in die PowerShell-Eingabeaufforderung ein:
@@ -119,17 +119,17 @@ $newApp = New-PowerAppsCheckerAzureADApplication -ApplicationDisplayName "Power 
  ```
 
 5.  Wenn Sie dazu aufgefordert werden, wählen Sie immer **A (Immer ausführen)** aus.
-![PowerShell-Befehlsfenster](media/pscommand-always-run.png "PPowerShell Befehl Screenshot)
+![PowerShell-Befehlsfenster](media/pscommand-always-run.png "Screenshot des PowerShell-Befehls")
 6. Ein Anmeldedialogfeld wird angezeigt. Melden Sie sich als Benutzer an. Beachten Sie, dass Sie sich in einigen Fällen zweimal anmelden müssen.
 7. Nachdem das Skript abgeschlossen ist, werden die Anwendung-ID und der Mandant im Befehlsfenster angezeigt.
 8. Melden Sie sich anschließend bei [Azure AD](https://portal.azure.com) an, um den geheimen Clientschlüssel abzurufen.
 9. Wählen Sie in Microsoft Azure **Azure Active Directory –> App-Registrierungen –> Power Apps-Prüfungs-Client.**
-![Auswählen des Prüferclient in Azure](media/azure-select-checker.png "AAzure Screenshot)
+![Auswählen des Prüferclient in Azure](media/azure-select-checker.png "Azure-Screenshot")
 10. Klicken Sie im linken Navigationsbereich unter **Verwalten** auf **Zertifikate und geheime Schlüssel**.
 11. Wählen Sie im Bildschirm **Zertifikate und geheime Schlüssel** unter **Geheime Clientschlüssel** die Option **Neuer geheimer Clientschlüssel** aus. 
 12. Geben Sie eine Beschreibung für den geheimen Clientschlüssel ein, wählen Sie die Ablaufeinstellung, und klicken Sie dann auf **Hinzufügen**.
 13. Kopieren Sie den geheimen Clientschlüssel, der auf dem nächsten Bildschirm angezeigt wird. 
-![Clientgeheimnis kopieren](media/client-secret-copy.png "ClClient geheimer Screenshot
+![Clientgeheimnis kopieren](media/client-secret-copy.png "Screenshot des geheimen Clientschlüssels")
     > [!NOTE]
     > Dies ist das einzige Mal, dass der geheime Clientschlüssel angezeigt wird.
 14. Öffnen Sie die Verbindung des Power Apps-Prüfungsdiensts, und fügen Sie den geheimen Clientschlüssel in das Feld **Dienstprinzipalschüssel** ein, und klicken Sie dann **OK**.

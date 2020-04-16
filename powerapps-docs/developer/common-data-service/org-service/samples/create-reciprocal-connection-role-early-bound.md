@@ -3,7 +3,7 @@ title: 'Beispiel: Erstellen einer reziproken Verbindungsrolle (Common Data Servi
 description: Dieses Beispiel veranschaulicht, wie eine reziproke Verbindungsrolle erstellt wird.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c95aae107b84172b92fa73c9073e41c168187d07
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: bf4c86bffee4d99a9b678f831e78323f8a4262b7
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934366"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155878"
 ---
 # <a name="sample-create-a-reciprocal-connection-role"></a>Beispiel: Eine reziproke Verbindungsrolle erstellen
 

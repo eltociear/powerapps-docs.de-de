@@ -3,7 +3,7 @@ title: 'Beispiel: Anlegen, Abrufen, Aktualisieren und Löschen (späte Bindung) 
 description: Dieses Beispiel veranschaulicht die Erstellungs-, Abruf-, Aktualisierungs- und Löschungsvorgänge für ein Konto mithilfe der Entität-Klasse mit später Bindung.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9e97dfc4ab319c30decbc07fa866ab5f6c861e28
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 8228f099689526594274e406147b26956b9a1ff3
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934274"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155734"
 ---
 # <a name="sample-late-bound-entity-operations"></a>Beispiel: Spät gebundene Entitätsvorgänge
 

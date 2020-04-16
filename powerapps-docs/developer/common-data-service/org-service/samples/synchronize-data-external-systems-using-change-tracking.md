@@ -3,7 +3,7 @@ title: 'Beispiel: Synchronisieren Sie Daten mit externen Systemen mithilfe des �
 description: Dieses Beispiel zeigt, wie Änderungen aus einer Entität abgerufen werden und Daten mit externen Systemen synchronisiert werden.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c6b855102f595460fd2324e94fff56a9ccd949d7
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 380a4c5e959b1cd7dac0c9b491cea753038db60e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934146"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155554"
 ---
 # <a name="sample-synchronize-data-with-external-systems-using-change-tracking"></a>Beispiel: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung
 

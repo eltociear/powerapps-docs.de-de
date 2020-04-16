@@ -1,6 +1,6 @@
 ---
-title: Verwenden der Standardlösung zum Anpassen mit Power Apps | Microsoft-Dokumentation
-description: Erfahren, wie Standardlösungen angepasst werden
+title: Verwenden einer Lösung zum Anpassen von Power Apps | Microsoft-Dokumentation
+description: Informationen zum Anpassen von Power Apps
 ms.custom: ''
 ms.date: 02/20/2020
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1525cdb41cb7e809a54b6389472e5be842a87697
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: e32920e3a3ae2bd3c65bfaae6da4b875d4dff645
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093617"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226423"
 ---
 # <a name="use-a-solution-to-customize"></a>Eine Lösung zum Anpassen verwenden
 Wir empfehlen Ihnen, eine nicht verwaltete Lösung zu erstellen, um Ihre Anpassungen zu verwalten. Mit einer benutzerdefinierten Lösung können Sie ganz einfach nur die von Ihnen angepassten Lösungskomponenten finden, Ihren Präfix-Lösungsherausgeber konsistent anwenden und Ihre Lösung zur Verteilung in andere Umgebungen exportieren.  

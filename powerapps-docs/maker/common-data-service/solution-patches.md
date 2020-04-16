@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Lösungspatches | MicrosoftDocs
+title: Erstellen von Lösungspatches | Microsoft-Dokumentation
 description: Erfahren Sie, wie Lösungspatches erstellt werden
 ms.custom: ''
 ms.date: 02/04/2020
@@ -22,25 +22,30 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2a498ab6b5efbca0e3970769dcc3e19c4ecd77d
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: 9bddae4295a891d4c4dd86593b4fa27815b2b03c
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100166"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165261"
 ---
-# <a name="create-solution-patches"></a>Lösungspatches erstellen 
-Ein Patch enthält nur Änderungen für eine übergeordnete verwaltete Lösung, wie beispielsweise das Hinzufügen oder Bearbeiten von Komponenten und Anlagen. Wenn Patches importiert werden, werden sie über die übergeordnete Lösung gelegt. Wenn Sie eine Lösung klonen, führt das System ein Rollup für alle verknüpften Patches in die Basislösung aus, und es erstellt eine neue Version.  
-  
+# <a name="create-solution-patches"></a>Lösungspatches erstellen  
+Sie können einen Patch für eine übergeordnete Lösung erstellen und ihn als ein Nebenupdate für die Basislösung exportieren. Wenn Sie eine Lösung klonen, führt das System ein Rollup für alle verknüpften Patches in die Basislösung aus, und es erstellt eine neue Version.
+
+> [!WARNING]
+> Die Verwendung von „Einen Patch klonen“ und „Lösung klonen“ zum Aktualisieren einer Lösung wird nicht empfohlen, da dies die Teamentwicklung einschränkt und die Komplexität beim Speichern Ihrer Lösung in einem Quellcodeverwaltungssystem erhöht. Weitere Informationen zum Aktualisieren einer Lösung finden Sie unter [Upgraden oder Aktualisieren einer Lösung](update-solutions.md).
+
+
+## <a name="creating-updates-using-clone-solution-and-clone-to-patch"></a>Erstellen von Updates mit „Lösung klonen“ und „Zu patchender Klon“
  Wenn Sie mit Patches und geklonten Lösungen arbeiten, berücksichtigen Sie die folgenden Informationen:  
   
 -   Ein Patch stellt ein inkrementelles Nebenupdate für die übergeordnete Lösung dar. Ein Patch kann Komponenten und Anlagen in der übergeordneten Lösung hinzufügen oder aktualisieren, wenn es auf dem Zielsystem installiert ist, es kann aber keine Komponenten oder Anlagen aus der übergeordneten Lösung löschen.  
   
 -   Ein Patch kann nur eine übergeordnete Lösung haben, aber eine übergeordnete Lösung kann ein oder mehrere Patches haben.  
   
--   Für eine nicht verwaltete Lösung wird ein Patch erstellt. Sie können keinen Patch für eine verwaltete Lösung erstellen.  
+-   Ein Patch wird aus einer nicht verwalteten Lösung erstellt. Sie können keinen Patch aus einer verwalteten Lösung erstellen.  
   
--   Wenn Sie ein Patch auf ein Zielsystem exportieren, sollten sie es als verwaltetes Patch exportieren. Verwenden Sie keine unverwalteten Patches in Produktionsumgebungen.  
+-   Wenn Sie einen Patch in ein Zielsystem importieren, sollten Sie ihn als verwalteten Patch exportieren. Verwenden Sie keine unverwalteten Patches in Produktionsumgebungen.  
   
 -   Die übergeordnete Lösung muss im Zielsystem vorhanden sein, um ein Patch zu installieren.  
   
@@ -53,11 +58,19 @@ Ein Patch enthält nur Änderungen für eine übergeordnete verwaltete Lösung, 
 -   Wenn Sie eine Basislösung klonen, wird für alle untergeordneten Patches ein Rollup in die Basislösung ausgeführt, und sie wird zu einer neuen Version. Sie können Komponenten und Anlagen in der geklonten Lösung hinzufügen, bearbeiten oder löschen.  
   
 -   Eine geklonte Lösung stellt einen Ersatz der Basislösung dar, wenn sie im Zielsystem als verwaltete Lösung installiert wird. Normalerweise verwenden Sie eine geklonte Lösung, um ein Hauptupdate an die vorhergehende Lösung zu versenden.  
-  
-## <a name="understanding-version-numbers-for-cloned-solutions-and-patches"></a>Versionsnummern für geklonte Lösungen und Patches verstehen  
- Eine Lösungsversion hat das folgende Format: major.minor.build.revision. Ein Patch muss eine höhere Build- oder Revisionsnummer als die übergeordnete Lösung haben. Es kann keine höhere Haupt- oder Nebenversion haben. Beispielsweise bei einer Basislösungsversion 3.1.5.7 könnte ein Patch Version 3.1.5.8 oder Version 3.1.7.0 sein, aber nicht Version 3.2.0.0. Eine geklonte Lösung muss die Versionsnummer haben, die höher oder gleich der Versionsnummer der Basislösung ist. Beispielsweise bei einer Basislösungsversion 3.1.5.7 könnte eine geklonte Lösung Version 3.2.0.0 oder Version 3.1.5.7 sein. In der Benutzeroberfläche können Sie die Werte für die Haupt- und Nebenversion für eine geklonte Lösung festlegen sowie die Build- oder Revisionswerte für ein Patch.  
-  
 
+Wenn Sie eine Lösung klonen, enthält die von Ihnen angegebene Versionsnummer die Haupt- und Nebenpositionen. 
+
+   > [!div class="mx-imgBorder"]
+   > <img src="media/clone-solution.png" alt="Clone a patch major and minor version" height="560" width="307"> 
+
+ Wenn Sie einen Patch klonen, enthält die von Ihnen angegebene Versionsnummer die Build- und Revisionspositionen. 
+
+   > [!div class="mx-imgBorder"] 
+   > <img src="media/clone-a-patch2.png" alt="Clone a patch build and revision version" height="560" width="307">
+
+Im Artikel [Versionsnummern der geklonten Lösung und des geklonten Patches](#clone-solution-and-clone-patch-version-numbers) finden Sie weitere Informationen zu Versionsnummern.
+  
 ## <a name="create-a-solution-patch"></a>Einen Lösungspatch erstellen  
  Ein Patch enthält Änderungen an der übergeordneten Lösung, wie beispielsweise das Hinzufügen oder Bearbeiten von Komponenten und Anlagen. Sie müssen die Komponenten des übergeordneten Elements nicht einfügen, es sei denn, Sie planen, Sie zu bearbeiten.  
   
@@ -96,11 +109,14 @@ Ein Patch enthält nur Änderungen für eine übergeordnete verwaltete Lösung, 
 ![Eine Lösung klonen](media/cloned-solution.png)
 
 > [!IMPORTANT]
-> Durch das Klonen einer Lösung werden die ursprüngliche Lösung und die zugehörigen Patches entfernt. 
+> Durch das Klonen einer Lösung werden die ursprüngliche Lösung und die zugehörigen Patches zu einer neuen Basislösung zusammengeführt und die ursprüngliche Lösung und die Patches entfernt. 
   
 1. Gehen Sie zum Portal Power Apps und wählen Sie dann **Lösungen**.   
   
 2.  Wählen Sie in der Lösungsliste eine nicht verwaltete Lösung aus, um einen Klon zu erstellen. Wählen Sie in der Befehlsleiste **Klonen** und wählen Sie dann **Lösung klonen**. Im rechten Fensterbereich werden der Name der Basislösung und die neue Versionsnummer angezeigt. Wählen Sie **Speichern** aus.  
+
+## <a name="clone-solution-and-clone-patch-version-numbers"></a>Versionsnummern der geklonten Lösung und des geklonten Patches
+Ein Patch muss eine höhere Build- oder Revisionsnummer als die übergeordnete Lösung haben. Es kann keine höhere Haupt- oder Nebenversion haben. Beispielsweise bei einer Basislösung mit Version 3.1.5.7 könnte ein Patch Version 3.1.5.8 oder Version 3.1.7.0 sein, aber nicht Version 3.2.0.0. Eine geklonte Lösung muss die Versionsnummer haben, die höher oder gleich der Versionsnummer der Basislösung ist. Beispielsweise bei einer Basislösungsversion 3.1.5.7 könnte eine geklonte Lösung Version 3.2.0.0 oder Version 3.1.5.7 sein. Wenn Sie eine Lösung oder einen Patch klonen, legen Sie die Werte für die Haupt- und Nebenversion für eine geklonte Lösung sowie die Build- oder Revisionswerte für einen Patch fest.  
   
 ### <a name="see-also"></a>Siehe auch
-[Überblick über Lösungen](solutions-overview.md)
+[Upgraden oder Aktualisieren einer Lösung](update-solutions.md)

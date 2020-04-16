@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7645910490aee24b7f3c2b239f1a6dd841b67df2
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 3a36cf57710da4e6306c7de48e19d4af6c722f10
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "3060218"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225582"
 ---
 # <a name="create-or-edit-filters-in-model-driven-app-views"></a>Erstellen oder Bearbeiten von Filtern in modellgesteuerten Anwendungsansichten
 
@@ -142,7 +142,8 @@ In diesem Thema erstellen oder bearbeiten Sie Filter, indem Sie die folgenden Au
     > [!div class="mx-imgBorder"] 
     > ![Gruppierter Bedingungsfilter](media/group-conditions-filter.png "Gruppierter Bedingungsfilter")
 
-### <a name="next-steps"></a>Nächste Schritte
-[Aktivieren und Konfigurieren von Spalten](choose-and-configure-columns.md)  
+### <a name="see-also"></a>Siehe auch
+[Bearbeiten oder Erstellen von persönlichen Ansichten mithilfe erweiterter Rasterfilter](../../user/grid-filters-advanced.md)
+[Auswählen und Konfigurieren von Spalten](choose-and-configure-columns.md)  
 [Filterkriterien bearbeiten](edit-filter-criteria.md)  
 [1:N (1: n) oder N:1-Beziehungen erstellen](../common-data-service/create-edit-1n-relationships.md)

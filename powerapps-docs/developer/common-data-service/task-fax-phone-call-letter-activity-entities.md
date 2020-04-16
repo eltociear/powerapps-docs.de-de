@@ -3,7 +3,7 @@ title: Aktivitätsentitäten wie Aufgabe, Fax, Telefonanruf und Brief (Common Da
 description: Erfahren Sie mehr über Entitäten, die es Ihnen ermöglichen, Hauptaktivitäten zu verwalten, die in einer Beziehungsverwaltungslösung ausgeführt werden.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 32937c558986fa36db2dff4d290d8bc222709f7c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ef35c677c932f6c23266bd0a2b5e2b8ce0c351f2
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748637"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155258"
 ---
 # <a name="task-fax-phone-call-and-letter-activity-entities"></a>Aktivitätsentitäten wie Aufgabe, Fax, Telefonanruf und Brief
 

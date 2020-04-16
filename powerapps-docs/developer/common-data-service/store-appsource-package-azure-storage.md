@@ -3,7 +3,7 @@ title: 'Schritt 4: Speichern Sie das AppSource-Paket in Azure Storage und generi
 description: Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSource-Paketdatei in einem Microsoft Azure-Blobspeicherkonto speichern und einen Schlüssel für die Signatur für den gemeinsamen Zugriff (SAS) verwenden, um die Paketdatei freizugeben. Ihre Paketdatei wird von Ihrem Azure Storage Standort für die Zertifizierung und anschließend für die AppSource-Testversionen abgerufen.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8eb263efed13149ea8abcce217116783fdb4b598
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: cb6436f85a9961bad403c3a6c97440f154877b00
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922337"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155274"
 ---
 # <a name="step-4-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Schritt 4: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS-Schlüssel
 

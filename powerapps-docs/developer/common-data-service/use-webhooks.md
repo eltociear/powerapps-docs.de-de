@@ -3,7 +3,7 @@ title: Verwenden von Webhooks, um externe Handler für Serverereignisse zu erste
 description: Sie können Daten zu Ereignissen senden, die auf dem Server für eine Webanwendung mit Webhooks auftreten. Webhooks ist ein einfaches HTTP-Muster zur Verbindung von Web-APIs und -diensten mit einem Veröffentlichungs-/Abonnementmodell. Webhooks-Absender benachrichtigen Empfänger über Ereignisse, indem sie Anfragen mit einigen Informationen zu den Ereignissen an Empfängerendpunkte senden.
 ms.custom: ''
 ms.date: 09/04/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae74c23170feb73bc128dff74e4e842190d3d50e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 360bf7689406195c369e74b0f255cd8db32bda8d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748623"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155166"
 ---
 # <a name="use-webhooks-to-create-external-handlers-for-server-events"></a>Verwenden Sie Webhooks zum Erstellen externer Handler für Serverereignisse
 

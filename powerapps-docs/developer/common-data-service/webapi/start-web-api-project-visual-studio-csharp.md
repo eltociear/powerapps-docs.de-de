@@ -3,7 +3,7 @@ title: Starten eines Common Data Service Web-API-Projekts in Visual Studio (C#) 
 description: Erstellen eines neuen Projekts in Visual Studio, um eine Konsolenanwendung zu erstellen, die die Common Data Service-Web-API verwendet
 ms.custom: ''
 ms.date: 04/22/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -17,12 +17,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: 37548edcebb037a64599f405b3cf4d121d38d517
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8914412cd7189a1b0e79de1d13690dcd877a9b8a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753658"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154990"
 ---
 # <a name="start-a-common-data-service-web-api-project-in-visual-studio-c"></a>Starten Sie ein Common Data Service Web-API-Projekt in Visual Studio (C#).
 
@@ -55,7 +55,7 @@ Die folgende Vorgehensweise zeigt, wie Sie ein Konsolenanwendungsprojekt in C# e
   
    ![Ein neues Konsolen-App-Projektdialogfeld in Common Data Service](media/new-project.PNG "Ein neues Konsolen-App-Projektdialogfeld in Common Data Service")  
   
-5. Geben Sie für das Projekt in den Feldern in der Nähe des unteren Bereichs des Formulars einen Speicherort und einen Namen an, und wählen Sie dann OK aus. (In diesem Thema, wurde der Lösungsname "StartWebAPI-CS" verwendet.) Die Ausgangslösungsdateien wird generiert und die Lösung in geladen. Visual Studio  
+5. Geben Sie für das Projekt in den Feldern in der Nähe des unteren Bereichs des Formulars einen Speicherort und einen Namen an, und wählen Sie dann OK aus. (In diesem Thema wurde der Lösungsname „StartWebAPI-CS“ verwendet.) Die Ausgangslösungsdateien werden generiert und die Lösung wird in Visual Studio geladen.  
   
 6. Öffnen Sie im Menü **Projekt** das Eigenschaftenformular des Projekts und überprüfen Sie, ob das Zielframework auf **.NET Framework 4.6.2** festgelegt ist.  
   

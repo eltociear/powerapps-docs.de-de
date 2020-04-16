@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4f1c05ca41e6873a0072e8ea6720343e468e38bb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 31578198bb468a2a4269b7fda23a2ac2cc2cab73
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863058"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136299"
 ---
 # <a name="understand-model-driven-app-components"></a>Grundlegendes zu Komponenten modellgestützter Apps
 Eine gut gestaltete modellgesteuerte Anwendung besteht aus mehreren Komponenten, die Sie mit Hilfe des Designers auswählen, um das Aussehen und die Funktionalität der fertigen App zu gestalten. Die Komponenten und Komponenteneigenschaften, aus denen Designer eine App zusammensetzen, werden zu Metadaten. 
@@ -52,7 +52,8 @@ Diese Komponenten bestimmen, wie Benutzer mit der App interagieren.
 |Formular     | Ein Satz von Dateneingabefeldern für eine bestimmte Entität, die mit den Elementen übereinstimmen, die Ihre Organisation für die Entität verfolgt. Zum Beispiel eine Reihe von Dateneingabefeldern, in denen der Benutzer relevante Informationen eingibt, um die früheren Bestellungen eines Kunden zusammen mit bestimmten gewünschten Nachbestellungsdaten zu verfolgen.        | Formulardesigner        |
 |Ansicht     | Ansichten definieren, wie eine Liste von Datensätzen für eine bestimmte Entität in Ihrer Anwendung angezeigt wird. Eine Ansicht definiert die anzuzeigenden Spalten, die Breite jeder Spalte, das Sortierverhalten und die Standardfilter.   |  Ansicht-Designer       |
 
-![App-Designer und Formular-Designer](media/model-driven-app-overview/app-and-form-designers.png)
+> [!div class="mx-imgBorder"] 
+> ![App-Designer und Formular-Designer](media/model-driven-app-overview/app-and-form-designers.png "App-Designer und Formular-Designer")
 
 ## <a name="logic"></a>Logik
 Bestimmt die Geschäftsprozesse, Regeln und die Automatisierung der Anwendung. [!INCLUDE [powerapps](../../includes/powerapps.md)] Hersteller verwenden einen Designer, der für die Art des Prozesses oder der Regel spezifisch ist. 
@@ -66,7 +67,7 @@ Bestimmt die Geschäftsprozesse, Regeln und die Automatisierung der Anwendung. [
 |Geschäftsregel     | Wird verwendet, um eine Regel- oder Empfehlungslogik auf ein Formular anzuwenden, z. B. um Feldanforderungen festzulegen, Felder auszublenden oder Daten zu validieren. App-Designer verwenden eine einfache Schnittstelle, um schnell wechselnde und häufig verwendete Regeln zu implementieren und zu pflegen.         |  Geschäftsregel-Designer       |
 |Flow     | Flow ist ein Cloud-basierter Dienst, mit dem Sie automatisierte Workflows zwischen Anwendungen und Diensten erstellen können, um Benachrichtigungen zu erhalten, Dateien zu synchronisieren, Daten zu sammeln und vieles mehr.        | Power Automate        |
 
-![Workflow-, Aktions- und Geschäftsprozessfluss-Designer](media/model-driven-app-overview/designer-mash.png)
+![Workflow-, Aktions- und Geschäftsprozessfluss-Designer](media/model-driven-app-overview/designer-mash.png "Workflow-, Aktions- und Geschäftsprozessfluss-Designer")
 
 Weitere Informationen: [Geschäftslogik in Ihrer modellgesteuerten App anwenden](guide-staff-through-common-tasks-processes.md) 
 
@@ -84,18 +85,23 @@ Legt fest, welcher Typ von Datenvisualisierung und Berichten der App zur Verfüg
 |Informationsleiste     | Dient als Auswahl einer oder mehrerer grafischer Visualisierungen, die einen Überblick über verwertbare Geschäftsdaten gibt.        | Dashboard-Designer        |
 |Power BI-Einbettung     | Fügen Sie eingebettete Power BI-Kacheln und -Dashboards zu Ihrer App hinzu. Power BI ist ein Cloud-basierter Service, der Einblicke in die Business Intelligence bietet.        |  Kombination aus Diagramm-Designer, Dashboard-Designer und Power BI       |
 
-![Beispiel-Dashboard](media/model-driven-app-overview/dashboard-designer.png)
+> [!div class="mx-imgBorder"] 
+> ![Beispiel-Dashboard](media/model-driven-app-overview/dashboard-designer.png "Beispiel-Dashboard")
 
 ## <a name="advanced-model-driven-app-making"></a>Erweiterte modellgesteuerte App-Erstellung
 Der Lösungs-Explorer ist ein umfassendes Werkzeug zur modellgesteuerten Anwendungsentwicklung. Innerhalb des Lösungs-Explorers können Sie über den Navigationsbereich auf der linken Seite des Tools durch eine Hierarchie navigieren, die aus allen App-Komponenten besteht.
 
-![Lösungs-Explorer](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png)
+> [!div class="mx-imgBorder"] 
+> ![Projektmappen-Explorer](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png "Projektmappen-Explorer")
 
-Um den Lösungs-Explorer zu öffnen, wählen Sie **Modellgesteuert** im linken Bereich von [!INCLUDE [powerapps](../../includes/powerapps.md)]"2".
+Zum Öffnen des Projektmappen-Explorer, 
 
-  ![Wählen Sie Modellgesteuert aus.](media/model-driven-app-overview/app-type-picker-mod.png)
+1. Wählen Sie auf der Homepage [!INCLUDE [powerapps](../../includes/powerapps.md)] die Option **Einstellungen** und dann **Erweiterte Einstellungen** aus.
 
-Wählen Sie dann die Registerkarte **Erweitert**.
+2. Wählen Sie auf der Seite Dynamics 365 Business Management die Option **Einstellungen**, **Anpassungen** und dann **System anpassen** aus.
+
+  > [!div class="mx-imgBorder"] 
+  > ![Öffnen Sie den Lösungs-Explorer](media/model-driven-app-overview/app-settings-solutions-explorer.png "Öffnen des Projektmappen-Explorer")
 
 Weitere Informationen: [Erweiterte App-Erstellung und -Anpassung](advanced-navigation.md)
 

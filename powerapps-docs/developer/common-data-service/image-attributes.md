@@ -3,7 +3,7 @@ title: Bildattribute (Common Data Service) | Microsoft-Dokumentation
 description: Infos zu Bildattributen, die Bilddaten speichern, sowie zum Unterstützen von Attributen, Abrufen von Bilddaten und Hochladen von Bilddaten.
 ms.custom: ''
 ms.date: 02/11/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 988a403bdd3badd720a46ee5b58a9539bc1ac9f9
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: 79cacd85ae1478ed43ee21e499fdfd4b1e606c14
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3037081"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156182"
 ---
 # <a name="image-attributes"></a>Bildattribute
 

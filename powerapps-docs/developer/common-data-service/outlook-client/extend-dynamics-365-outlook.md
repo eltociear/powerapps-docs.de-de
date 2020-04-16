@@ -3,7 +3,7 @@ title: Erweitern von Dynamics 365 for Outlook (Common Data Service) | Microsoft-
 description: Dynamics 365 for Outlook ermöglicht Benutzern, mit den Daten zu interagieren, während sie offline und nicht mit dem Server verbunden sind. Common Data Service umfasst Features, die es Ihnen ermöglichen, Ihre Lösungen auch auf Offline-Szenarien auszuweiten, indem Sie die Webdienste offline von Ihrem benutzerdefinierten Code abrufen. Darüber hinaus bietet die Sdk-Assembly programmgesteuerten Support für grundlegende Outlook-Aktionen wie Synchronisierung, Wechsel in den Offline- oder Onlinemodus und Dynamics 365 for Outlook Statusüberprüfung. Offline-Programmierung verwendet den ASP.NET Entwicklungsserver.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: sriharibs
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8004814b49fb54a902f09fd77807d817a7800b69
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b73543ce9220db75269e9452b4e839fcd6d2cb1c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748675"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155402"
 ---
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/extend-customer-engagement-outlook 
 

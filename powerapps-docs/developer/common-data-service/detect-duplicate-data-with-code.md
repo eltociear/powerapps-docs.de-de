@@ -3,7 +3,7 @@ title: Erkennen von doppelten Daten mithilfe von Code (Common Data Service) | Mi
 description: Mit der Duplikaterkennung können Organisationen Duplikaterkennungsrichtlinien festlegen und Duplikaterkennungsegeln für Geschäfts- sowie benutzerdefinierte Entitäten erstellen
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9218dc6cf84ca771385082f58a10c710fb402390
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e2a1b6d37f458cbd2f2b78818184e00f1bdd784a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748229"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156250"
 ---
 # <a name="detect-duplicate-data-using-code"></a>Erkennen von doppelten Daten mit Code
 

@@ -3,7 +3,7 @@ title: " Erstellen und Aktualisieren einer E-Mail-fähigen Entität (Common Data
 description: Dieses Beispiel zeigt, wie Sie eine per E-Mail versendbare Entität erstellen und aktualisieren.
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 44eaa3c701b5af17a45652459b5755fbd56e1406
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 26150d445c129658b91c51810c99e74ff56e5f64
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956209"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155854"
 ---
 # <a name="create-an-email-entity"></a>Eine E-Mail-Entität erstellen
 

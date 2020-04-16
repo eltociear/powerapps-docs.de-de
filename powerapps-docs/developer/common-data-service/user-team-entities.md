@@ -3,7 +3,7 @@ title: Benutzer- und Teamentitäten (Common Data Service) | Microsoft-Dokumentat
 description: Erfahren Sie mehr über die Benutzer- und Teamverwaltung, mit der Sie die Benutzerkonten und -profile erstellen und verwalten können.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6915cd693589ed0e5d9b41ca96ffb96450d1132c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4757fc868e9d3b9d893c81511338729de1918a4a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753737"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155142"
 ---
 # <a name="user-and-team-entities"></a>Benutzer- und Teamentitäten
 

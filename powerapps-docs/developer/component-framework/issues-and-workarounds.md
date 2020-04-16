@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: aaaa3e01902f1e2a9a96b1d2501d9931a6c8d085
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: ee265ae0c82cc6b8fe82595ae555b989579177d2
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3099907"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218535"
 ---
 # <a name="common-issues-and-workarounds"></a>Allgemeine Probleme und Problemumgehungen
 
@@ -44,7 +44,7 @@ Wenn eine Komponente mit einer CLI-Version kleiner als 0.4.3 erstellt wird, trit
 **Problemumgehung**:
 
 - Löschen Sie die Lösung, die die relevante Komponente aus Common Data Service enthält. 
-- Die Komponente muss aus dem Feld oder Raster entfernt werden, wenn die Komponente bereits konfiguriert ist, um Abhängigkeiten zu vermeiden.
+- Die Komponente sollte aus dem Feld oder Raster entfernt werden, wenn die Komponente bereits konfiguriert ist, um Abhängigkeiten zu vermeiden.
 - Importieren Sie die neue Lösung mit Updates auf die Komponente, die für die aktuelle CLI-Version erstellt wird.
 - Neu importierte Komponenten können jetzt in Formularen oder Rastern konfiguriert werden.  
 
@@ -79,18 +79,45 @@ Wenn eine Komponente mit einer CLI-Version kleiner als 0.4.3 erstellt wird, trit
        </configuration>
      ```
 
-## <a name="web-resource-size-is-too-big"></a>Inhalt der Webressource ist zu groß.
+## <a name="web-resource-size-is-too-large"></a>Webressourcengröße ist zu groß.
 
 Fehler **Importieren der Lösung fehlgeschlagen: Webressourceninhalt ist zu groß**.
 
 **Problemumgehung**
 
-- Wenn Sie die `bundle.js` Datei aus dem CLI-Tool erstellen, werden viele Komponenten gebündelt, wodurch die Datei groß wird. Entfernen Sie einige der Komponenten, die nicht erforderlich sind.
-- Erstellen Sie `production` die Komponente im `node_modules/pcf-scripts/webpackconfig.js` Modus, indem Sie die Datei ändern.
+- Erstellen Sie `.pcfproj` als Release-Konfiguration, die das Webpack mit dem Befehl in den Produktionsmodus versetzt. 
+  ```CLI
+  msbuild /property:configuration=Release
+  ```
+- Führen Sie den Befehl msbuild mit einer zusätzlichen Eigenschaft wie unten angezeigt aus: 
+  ```CLI
+  msbuild /p:PcfBuildMode=production
+  ```
+- Bearbeiten Sie `.pcfproj`, um das Webpack immer im Produktionsmodus zu erstellen, indem Sie die Eigenschaft `PcfBuildMode` in die Produktion festlegen:
+  ```XML
+  <PropertyGroup>
+    <Name>TS_ReactStandardControl</Name>
+    <ProjectGuid>0df84c56-2f55-4a80-ac9f-85b7a14bf378</ProjectGuid>
+    <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
+    <PcfBuildMode>production</PcfBuildMode>
+  </PropertyGroup>
+  ```
+## <a name="solution-checker-issue"></a>Lösungsprüferproblem
+
+**Fehler: Verwenden Sie nicht die eval-Funktion oder ihre funktionalen Äquivalente.**
+
+Dieser Fehler tritt auf, wenn der Benutzer Codekomponenten mithilfe der CLI erstellt und verpackt, die Lösungsdatei mithilfe von `msbuild` erstellt, die Lösungsdatei in Common Data Service importiert und den Lösungsprüfer ausführt.
+
+**Problemumgehung**
+
+Erstellen Sie die Lösungsdatei mit dem folgenden Befehl neu, importieren Sie die Lösung erneut in Common Data Service und führen Sie den Lösungsprüfer aus.
+```CLI
+msbuild/property:configuration:Release
+```
 
 ## <a name="power-apps-component-framework-datasets-getvalue-by-property-alias-doesnt-work"></a>Power Apps component framework Datensätze getValue via Eigenschafts-Alias funktioniert nicht
 
-Power Apps component framework-Dataset-APIs Die Funktion getValue durchsucht den Datensatz nur anhand des Spaltennamens des Datensatzes und nicht anhand des im Manifest festgelegten Eigenschaftsalias. Der Versuch, den Wert nach dem Eigenschaftsalias zu erhalten, gibt einen leeren Wert zurück.
+Die getValue-Funktion der Power Apps component framework DataSet-API durchsucht Datensätze nur nach dem DataSet-Spaltennamen und nicht nach dem im Manifest festgelegten Eigenschafts-Alias. Der Versuch, den Wert nach dem Eigenschaftsalias zu erhalten, gibt einen leeren Wert zurück.
 
 **Problemumgehung**
 

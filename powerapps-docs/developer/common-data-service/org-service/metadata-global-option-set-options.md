@@ -3,7 +3,7 @@ title: Einfügen, Aktualisieren, Löschen und Anordnen von globalen Optionssatzo
 description: Die Codebeispiele zeigen, wie Option im globalen Optionssatz eingefügt, aktualisiert, gelöscht und angeordnet werden.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ac224afc2497d5c7600c95a37f61d5b72c8eb461
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 600c3c91f4aac12f6438798999f20583da6cb628
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748538"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156030"
 ---
 # <a name="insert-update-delete-and-order-global-option-set-options"></a>Einfügen, Aktualisieren, Löschen und Anordnen von globalen Optionssatzoptionen
 

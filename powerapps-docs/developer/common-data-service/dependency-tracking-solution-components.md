@@ -3,7 +3,7 @@ title: Abhängigkeitsnachverfolgung für Lösungskomponenten (Common Data Servic
 description: Mithilfe der Komponentenabhängigkeiten kann sichergestellt werden, dass Sie beim Verwenden von Lösungen über eine zuverlässige Umgebung verfügen. Diese können in der Anwendung angezeigt werden, indem Sie auf "Abhängigkeiten anzeigen" klicken
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf8e53658fce9599cb0f0415f130fb5afd5e7e01
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 538c26f0f0a0dfbd1347137e0086945783dec441
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748236"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156254"
 ---
 # <a name="dependency-tracking-for-solution-components"></a>Abhängigkeitsnachverfolgung für Lösungskomponenten
 

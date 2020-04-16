@@ -3,7 +3,7 @@ title: 'Beispiel: Berechnen Sie mit einer benutzerdefinierten Workflowaktivität
 description: Die folgende Beispielworkflowaktivität berechnet den Kreditscore anhand der Sozialversicherungsnummer (SSN) und des Namens.
 ms.custom: ''
 ms.date: 1/28/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cb66d92382f38a6646a80f889a97f2d6bed49e7e
-ms.sourcegitcommit: 4d858e628c89d245317d6192801d136f3591ea52
+ms.openlocfilehash: 5d007765af7f8c22d027a65f2a1c8818e1890410
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "2994602"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154902"
 ---
 # <a name="sample-calculate-a-credit-score-with-a-custom-workflow-activity"></a>Beispiel: Berechnen Sie mit einer benutzerdefinierten Workflowaktivität einen Kreditscore
 

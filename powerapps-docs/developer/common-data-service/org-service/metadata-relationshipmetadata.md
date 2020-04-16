@@ -3,7 +3,7 @@ title: Erstellen und Abrufen der Entitätsbeziehung (Common Data Service) | Micr
 description: Zeigt Codebeispiele zum Erstellen und Abrufen von Entitätsbeziehungen.
 ms.custom: ''
 ms.date: 01/28/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a11458cae9e38a3ff5ab26cae5185836b10b82af
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 228ddbab089d695ff22ff2d954aa1e10d6270931
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017363"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156018"
 ---
 # <a name="create-and-retrieve-entity-relationships"></a>Erstellen und Abrufen von Entitätsbeziehungen
 

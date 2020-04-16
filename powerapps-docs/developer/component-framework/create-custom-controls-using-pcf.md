@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 70532cfb3cc5cfad0f274f123857eedc5d54cae2
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: ccdb91def96f485d4641a71a6d12199117063e78
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909280"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162163"
 ---
 # <a name="create-and-build-a-code-component"></a>Erstellen und Entwickeln einer Code-Komponente
 
-Dieses Thema zeigt, wie Sie Code-Komponenten mithilfe von Power Apps CLI erstellen und bereitstellen. Stellen Sie sicher, dass [Microsoft Power Apps CLI](https://aka.ms/PowerAppsCLI) installiert ist.
+In diesem Artikel wird beschrieben, wie Sie Codekomponenten mithilfe von Power Apps CLI erstellen und bereitstellen. Stellen Sie sicher, dass [Microsoft Power Apps CLI](https://aka.ms/PowerAppsCLI) installiert ist.
 
 ## <a name="create-a-new-component"></a>Erstellen einer neuen Komponente
 
@@ -43,7 +43,9 @@ Zum Starten öffnen Sie **Entwickler-Eingabeaufforderung für VS 2017** nach dem
 
 ## <a name="build-your-component"></a>Entwickeln Ihrer Komponente
 
-Um das Komponentenprojekt zu erstellen, öffnen Sie den Projektordner, der `package.json` in Visual Studio Code enthält, und verwenden Sie den Befehl (Strg-Umschalt-B). Dann wählen Sie Ihre Build-Optionen aus. Alternativ können Sie Ihre Komponente schnell mit dem `npm run build`-Befehl in Ihrem Entwicklereingabeaufforderung für VS 2017-Fenster erstellen.
+Um das Komponentenprojekt zu erstellen, öffnen Sie den Projektordner, der `package.json` in Visual Studio Code enthält, und verwenden Sie den Befehl (Strg-Umschalt-B). Dann wählen Sie Ihre Build-Optionen aus. 
+
+Alternativ können Sie Ihre Komponente schnell mit dem `npm run build`-Befehl in Ihrem Entwicklereingabeaufforderung für VS 2017-Fenster erstellen.
 
 > [!TIP]
 > Zum Debuggen der Komponente während oder nach dem Buildvorgang siehe [Debuggen einer Code-Komponente](debugging-custom-controls.md).

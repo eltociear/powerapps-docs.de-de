@@ -11,7 +11,7 @@ tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.workload: na
 ms.date: 01/28/2019
 ms.author: jdaly
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a621bf0ff0093a5100a14ccad9f3e4c3ebb9e1e7
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: ff175320897f156027cd394cf8319032c9f8a6ff
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109009"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156162"
 ---
 # <a name="introduction-to-solutions"></a>Einführung in Lösungen
 
@@ -49,7 +49,7 @@ Eine **verwaltete** Lösung ist eine abgeschlossene Lösung, die dafür vorgeseh
 - Wenn einer verwalteten Lösung gelöscht (deinstalliert) wird, werden alle Anpassungen und Erweiterungen die darin enthalten sind, entfernt.
 
   > [!IMPORTANT]
-  > Wenn Sie eine verwaltete Lösung deinstallieren, gehen die folgenden Daten verloren: Daten in  benutzerdefinierten Entitäten, die Teil der Lösung sind sowie die Daten, die in benutzerdefinierten Attributen in Systementitäten gespeichert werden, die nicht Teil der verwalteten Lösung sind.
+  > Wenn Sie eine verwaltete Lösung deinstallieren, gehen die folgenden Daten verloren: Daten, die in benutzerdefinierten Entitäten gespeichert sind, die Teil der verwalteten Lösung sind, und Daten, die in benutzerdefinierten Attributen gespeichert sind, die Teil der verwalteten Lösung in anderen Entitäten sind, die nicht Teil der verwalteten Lösung sind.
 
 Eine **nicht verwaltete** Lösung ist eine Lösung, die sich immer noch in der Entwicklung befindet oder nicht dafür vorgesehen ist, verteilt zu werden. 
 - Während eine Lösung nicht verwaltet ist, können Sie den Vorgang fortsetzen, um Komponenten hinzuzufügen und zu entfernen. 
@@ -64,7 +64,7 @@ Eine **nicht verwaltete** Lösung ist eine Lösung, die sich immer noch in der E
 
 Jede Lösung ist mit einem Lösungsherausgeber verbunden. Dem Lösungsherausgeber werden Informationen bereitgestellt, wie der Herausgeber kontaktiert werden kann und wie der Anpassungspräfixwert ist. Der Standardwert ist `new`.
 
-Wenn beliebige Schemaänderungen als Teil einer Lösung enthalten sind, wird das Lösungsherausgeberanpassungspräfix  mit dem Namen der Schemaelemente verwendet. Alle benutzerdefinierten Aktionen haben auch diesen Wert, der für diese Anfragen angefügt wird. Dies ist dann von Nutzen, da dies eine einfache Erkennung erlaubt, welche Lösungen dem Schemaelement oder der benutzerdefinierten Aktion hinzugefügt werden. Es ist nicht für alle Schemaelemente und benutzerdefinierte Aktionen des Schemas erforderlich, in einer Lösung dasselbe Anpassungspräfix zu verwenden, aber es ist jedoch empfohlen.
+Wenn beliebige Schemaänderungen als Teil einer Lösung enthalten sind, wird das Lösungsherausgeberanpassungspräfix mit dem Namen der Schemaelemente verwendet. Alle benutzerdefinierten Aktionen haben auch diesen Wert, der für diese Anfragen angefügt wird. Dies ist dann von Nutzen, da dies eine einfache Erkennung erlaubt, welche Lösungen dem Schemaelement oder der benutzerdefinierten Aktion hinzugefügt werden. Es ist nicht für alle Schemaelemente und benutzerdefinierte Aktionen des Schemas erforderlich, in einer Lösung dasselbe Anpassungspräfix zu verwenden, aber es ist jedoch empfohlen.
 
 > [!IMPORTANT]
 > Bevor Sie mit dem Erstellen einer Lösung beginnen, sollten Sie einen Lösungsherausgeberdatensatz erstellen und eine neue Lösung erstellen, die mit diesen verknüpft ist. Sie müssen sicherstellen, dass der Wert einen Anpassungspräfix darstellt, der für Sie Sinn ergibt. 
@@ -81,14 +81,14 @@ Von [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=link
 
 1. Wählen Sie das Symbol *Waffel* oben links aus
 2. Wählen Sie **Alle Apps**.
-3. Suchen Sie nach **Common Data Service – benutzerdefinierte App**.
+3. Suchen Sie nach **Common Data Service – benutzerdefinierte App**.
  Sie können auf die Ellipse (...) klicken und **App anheften** auswählen, sodass die Navigation beim nächsten Mal einfacher ist.
-4. Klicken Sie auf die App **Common Data Service – benutzerdefinierte App** und wählen Sie sie aus.
+4. Klicken Sie auf die App **Common Data Service – benutzerdefinierte App** und wählen Sie sie aus.
 5. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**.
 
 Von [home.dynamics.com](https://home.dynamics.com/)
 
-1. Suchen Sie die Kachel **Common Data Service – benutzerdefiniert** und klicken Sie darauf.
+1. Suchen Sie die Kachel **Common Data Service – benutzerdefiniert** und klicken Sie darauf.
 2. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**.
 
 ### <a name="create-a-solution-publisher"></a>Erstellen eines Lösungsherausgebers
@@ -106,8 +106,8 @@ Von [home.dynamics.com](https://home.dynamics.com/)
 1. Klicken Sie im Anpassungsbereich und wählen Sie **Lösungen**
 2. Klicken Sie auf **Neu**.
 3. Im Lösungsformular geben Sie einen **Anzeigename** ein. Ein **Namen**-Wert wird basierend auf dem Wert in Anzeigename generiert. Sie können den generierten Wert übernehmen oder einen neuen Namen eingeben.
-4. Klicken Sie im Feld **Herausgeber** und suchen Sie dann den Wert, den darin erstellt haben unter[Lösungsherausgeber erstellen](#create-a-solution-publisher)
-5. Klicken Sie im Feld **Version** und wählen Sie eine entsprechende Versionen für die Lösung aus, z. B.  1.0.0.0.
+4. Suchen Sie im Feld **Herausgeber** den Herausgeber, den Sie in [Erstellen eines Lösungsherausgebers](#create-a-solution-publisher) erstellt haben.
+5. Wählen Sie im Feld **Version** eine entsprechende Versionen für die Lösung aus, z. B. 1.0.0.0.
 6. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
 
 > [!IMPORTANT]
@@ -138,7 +138,7 @@ Weitere Informationen: [Bearbeiten von verwalteten Eigenschaften](use-managed-pr
 
 Sie können das Lösungsframework verwenden, um einen einzelnen Satz von Komponenten zu erstellen, die eine Reihe von Funktionen aufweisen. Jede verwaltete Lösung kann installiert und deinstalliert werden, um die Bereitstellung der Kunden an den ursprünglichen Zustand zurückzukehren. Jede verwaltete Lösung, die Sie erstellen, läuft auf der Systemlösung und Sie können auf die Funktionen zugreifen, die dieser Lösung zugrunde liegen.
 
-Sie können außerdem verwaltete Lösungen erstellen, die auf anderen Lösungen ausgeführt werden, um um eine Reihe von Funktionen zu erstellen, die von unterschiedlichen Lösungen verwendet werden können. Auf diese Weise können Sie ein häufiges Modul als Lösung erstellen und verwalten, um mehrere Lösungen zu unterstützen. Aus diesem Grund müssen Kunden nur Lösungen installieren, die für sie richtig sind und Sie müssen Sie nicht in freigegebenen Funktion in jeder Lösung freigeben. Wenn Sie ein Update zur Lösung zurückstellen müssen, das mehrere Lösungen unterstützt, müssen Sie nur das allgemeine Modul aktualisieren.
+Sie können außerdem verwaltete Lösungen erstellen, die auf anderen Lösungen ausgeführt werden, um um eine Reihe von Funktionen zu erstellen, die von unterschiedlichen Lösungen verwendet werden können. Auf diese Weise können Sie ein häufiges Modul als Lösung erstellen und verwalten, um mehrere Lösungen zu unterstützen. Aus diesem Grund müssen Kunden nur Lösungen installieren, die für sie richtig sind und Sie müssen nicht in jeder Lösung dieselben freigegebenen Funktionen mit einbeziehen. Wenn Sie ein Update zur Lösung zurückstellen müssen, das mehrere Lösungen unterstützt, müssen Sie nur das allgemeine Modul aktualisieren.
 
 Kunden, System-Implementierungen und anderer ISV können dann Lösungen auf den Lösung aufbauen, die dann bestimmte Anpassungene rreichen, die sie benötigen.
 
@@ -149,7 +149,7 @@ Wenn ein Satz von Unternehmens-Funktionalitäten aus mehreren Lösungen besteht,
 Verwenden Sie den *Package Deployer*, um ein benutzerdefiniertes Installationsprogramm für ein Paket zu erstellen, das Folgendes umfassen kann: 
 - Eine oder mehrere Lösungsdateien.
 - Flache Dateien oder exportierte Konfigurationsdateien. 
-- Benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket  bereitgestellt wurde.
+- Benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket bereitgestellt wurde.
 - inhaltsspezifische HTML für das Paket, das bei Start und Ende des Bereitstellungsprozesses angezeigt werden kann. Dies kann nützlich sein, um eine Beschreibung der Lösungen und Dateien bereitzustellen, die im Paket bereitgestellt werden.
 
 Weitere Informationen: [Erstellen von Paketen für den Common Data Service Package Deployer](package-deployer/create-packages-package-deployer.md).

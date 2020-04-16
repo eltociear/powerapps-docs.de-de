@@ -3,7 +3,7 @@ title: Verwenden der PowerShell-Cmdlets für XRM-Tools, um eine Verbindung mit C
 description: Erfahren Sie, wie Sie Powershell-Cmdlets für XRM-Tools wie Get-CrmConnection und Get-CrmOrganizations verwenden, um eine Verbindung mit Common Data Service herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer Zugriff hat.
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bdf7fd2f1fe10d23b0d99d03e9c5652a98dc3dfa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7875c0b4c407f2c5da5a0cce9e334747a4abf1ab
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753626"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154870"
 ---
 # <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden Sie PowerShell-Cmdlets für XRM-Tools, um eine Verbindung mit Common Data Service herzustellen.
 

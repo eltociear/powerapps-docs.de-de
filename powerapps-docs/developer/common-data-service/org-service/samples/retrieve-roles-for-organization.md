@@ -3,7 +3,7 @@ title: " Abrufen der Rollen für eine Organisation (Common Data Service) | Micro
 description: 'Dieses Beispiel zeigt, wie die Rollen für eine Organisation abgerufen werden '
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 86699593824ac4c4507e4a313eb15747a9e007c6
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 2ae0d99ca905959e30fa6ae7a009387a2dd38300
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956169"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155614"
 ---
 # <a name="retrieve-the-roles-for-an-organization"></a>Rufen Sie die Rollen für einer Organisation ab
 

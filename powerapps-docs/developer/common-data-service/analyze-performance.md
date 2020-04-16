@@ -3,7 +3,7 @@ title: Analysieren der Plug-in-Leistung (Common Data Service) | Microsoft-Dokume
 description: Erfahren Sie, wie Sie Daten darüber finden und analysieren können, wie Ihre registrierten Plugins funktionieren.
 ms.custom: ''
 ms.date: 1/29/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6a3d1a571e7a85ab328c2cd1b7e69770524d3be
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a2145cfadf018d4bf92f748d0b1982ef09449a2d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748262"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156486"
 ---
 # <a name="analyze-plug-in-performance"></a>Analysieren von Plug-In-Leistung
 

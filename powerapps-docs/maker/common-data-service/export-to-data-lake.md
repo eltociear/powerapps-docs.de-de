@@ -2,7 +2,7 @@
 title: Zu Data Lake exportieren | MicrosoftDocs
 description: Erfahren Sie, wie Sie Entitätsdaten in einen Azure Data Lake exportieren in Power Apps
 ms.custom: ''
-ms.date: 01/28/2020
+ms.date: 03/04/2020
 ms.reviewer: Mattp123
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6adf35a76df347ca8a99bd12620e7beea4b403d5
-ms.sourcegitcommit: 97a36c9df2a7067a29fb6bd254975dadc2bc16fa
+ms.openlocfilehash: 04913c04d6f8209ed3d0a11105964627eec96220
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3072862"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3119899"
 ---
 # <a name="export-entity-data-to-azure-data-lake-storage-gen2"></a>Entitätsdaten nach Azure Data Lake Storage Gen2 exportieren
 
@@ -78,6 +78,10 @@ Befolgen Sie die Schritte im Artikel  [Azure Storage-Konto erstellen](/azure/s
    - **Abonnement**. Wählen Sie Ihr Azure Abonnement. 
    - **Ressourcengruppe**. Wählen Sie die Ressourcengruppe, die das Speicherkonto Storage v2 (general-purpose v2) enthält.
    - **Speicherkonto**. Wählen Sie das Speicherkonto Storage v2 (general-purpose v2), das für den Export verwendet werden soll. 
+
+    > [!NOTE]
+    > Wenn Sie die Common Data Service-Umgebung mit einem Data Lake verknüpfen, gewähren Sie dem Export to Data Lake-Service Zugriff auf Ihr Speicherkonto. Stellen Sie sicher, dass Sie den [Voraussetzungen](#prerequisites) zum Erstellen und Konfigurieren des Azure Data Lake Storage-Kontos gefolgt sind und Ihnen selbst eine Besitzerrolle im Speicherkonto zuweisen. Zusätzlich gewähren Sie dem Power Platform-Dataflows-Service Zugriff auf Ihr Speicherkonto. Weitere Informationen: [Self-Service Datenaufbereitung mit Dataflows](self-service-data-prep-with-dataflows.md).  
+
 4. Wählen Sie die Entitäten aus, die Sie zum Data Lake exportieren möchten und wählen Sie dann **Speichern** aus. Nur Entitäten, die die Änderungsnachverfolgung aktiviert haben, können exportiert werden. Mehr Informationen: [Änderungsverfolgung für eine Entität aktivieren](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
 
    > [!div class="mx-imgBorder"] 
@@ -119,7 +123,7 @@ Hier ist ein Beispiel für eine in Account.csv partitionierte Datei und einen Sn
 
 ![Momentaufnahme der Kontenentität](media/export-data-lake-account-snapshots.png "Momentaufnahme der Kontenentität") 
 
-Änderungen in Common Data Service werden kontinuierlich mit Hilfe der Trickle-Feed-Engine in die entsprechenden CSV-Dateien übertragen. Dies ist das T2-Intervall, in dem eine weitere Momentaufnahme erstellt wird. *Entity*-T2.csv &mdash;zum Beispiel, Accounts-T2.csv oder Contacts-T2.csv (vorausgesetzt, es gibt Änderungen für die Entität) &mdash;und model.json werden auf die neuen Snapshot-Dateien aktualisiert. Jede neue Person, die die Snapshot-Daten ab T2 anzeigt, wird zu den neueren Snapshot-Dateien geleitet. Auf diese Weise kann der ursprüngliche Snapshot-Viewer weiterhin an den älteren Snapshot-T1-Dateien arbeiten, während neuere Viewer die neuesten Aktualisierungen lesen können. Dies ist in Szenarien mit länger laufenden Downstream-Prozessen nützlich. 
+Änderungen in Common Data Service werden kontinuierlich mit Hilfe der Trickle-Feed-Engine in die entsprechenden CSV-Dateien übertragen. Dies ist das T2-Intervall, in dem eine weitere Momentaufnahme erstellt wird. *Entity*-T2.csv &mdash; zum Beispiel, Accounts-T2.csv oder Contacts-T2.csv (vorausgesetzt, es gibt Änderungen für die Entität) &mdash; und model.json werden auf die neuen Snapshot-Dateien aktualisiert. Jede neue Person, die die Snapshot-Daten ab T2 anzeigt, wird zu den neueren Snapshot-Dateien geleitet. Auf diese Weise kann der ursprüngliche Snapshot-Viewer weiterhin an den älteren Snapshot-T1-Dateien arbeiten, während neuere Viewer die neuesten Aktualisierungen lesen können. Dies ist in Szenarien mit länger laufenden Downstream-Prozessen nützlich. 
 
 Hier ist ein Beispiel für die Datei model.json, die immer auf die letzte zeitgestempelte Konto-Snapshot-Datei verweist. 
 

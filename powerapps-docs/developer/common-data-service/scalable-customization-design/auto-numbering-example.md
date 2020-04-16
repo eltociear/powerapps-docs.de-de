@@ -3,7 +3,7 @@ title: 'Skalierbares Anpassungsdesign: Beispiel für automatische Nummerierung (
 description: Dieses Beispiel veranschaulicht, wie Transaktionen und Probleme mit der Parallelität in einer Codeanpassung berücksichtigt werden müssen.
 ms.custom: ''
 ms.date: 1/15/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: rogergilchrist
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d414b589fada6251172113a2016c3c286edc28aa
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 407137caea199fcb7aee10c34c8f6ba82624185f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748651"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155314"
 ---
 # <a name="scalable-customization-design-auto-numbering-example"></a>Skalierbares Anpassungsdesign: Beispiel für automatische Nummerierung
 

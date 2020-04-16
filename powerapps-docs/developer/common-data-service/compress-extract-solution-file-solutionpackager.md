@@ -3,7 +3,7 @@ title: SolutionPackager-Tool (Common Data Service) | Microsoft Docs
 description: SolutionPackager ist ein Tool, mit dem eine komprimierte Lösungsdatei von Common Data Service reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cf459d4a81876440dc1bccb83b4020484198a7d7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9fe35f7378f80c74a32e51575667d6edee0de31b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748433"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156402"
 ---
 # <a name="solutionpackager-tool"></a>SolutionPackager-Tool
 

@@ -3,7 +3,7 @@ title: Aktivitätsentitäten (Common Data Service) | Microsoft-Dokumentation
 description: In Dynamics 365 (online) sind Aktivitäten Aufgaben, die Sie oder Ihre Teams ausführen, wenn sie mit Kunden in Kontakt treten, z. B. über Briefe oder Telefonanrufe.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5a7b44cc526b20181d75de67a66c4e1e001c1bbe
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6affff8692c279865b0f97a896be257f24c25be7
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748588"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156502"
 ---
 # <a name="activity-entities"></a>Aktivitätsentitäten
 

@@ -3,7 +3,7 @@ title: Erstellen, Exportieren oder Importieren einer nicht verwalteten Lösung (
 description: Eine nicht verwaltete Lösung ist nützlich als Möglichkeit, einen Satz nicht verwalteter Anpassungen zu einem Satz zu gruppieren, der zwischen Organisationen transportiert werden kann.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8a525320894a280bb8a092892180879f3bf626ea
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: d6c53721affbcd0ada74e4b01a1306364a3d44d6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109020"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156366"
 ---
 # <a name="create-export-or-import-an-unmanaged-solution"></a>Erstellen, Exportieren oder Importieren einer nicht verwalteten Lösung
 

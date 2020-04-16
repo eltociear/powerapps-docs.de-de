@@ -3,7 +3,7 @@ title: Dateireferenz von Lösungskomponenten (Common Data Service) | Microsoft-D
 description: In diesem Thema werden die Ordnerstruktur- und Datei-Benennungsschema beschrieben, die durch SolutionPackager-Tool verwendet werden. Dieses Tool wird verwendet, um Dynamics 365-Lösungsdateien in XML-Dateien zu zerlegen (entpacken), die durch ein Quellcodeverwaltungssystem verwaltet werden können.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 646cfaae94072aff8328070b4bae0e955f8bc01c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c8c16b5dd1d11f49bf33333475ceb0ea4af1a08d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748644"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155282"
 ---
 # <a name="solution-component-file-reference-solutionpackager"></a>Dateireferenz von Lösungskomponenten (SolutionPackager)
 

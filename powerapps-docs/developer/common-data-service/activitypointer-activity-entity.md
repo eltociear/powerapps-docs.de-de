@@ -3,7 +3,7 @@ title: Entität ActivityPointer (Aktivität) (Common Data Service) | Microsoft-D
 description: Die Aktivitätszeiger (Aktivität)-Entität stellt eine Aktivität oder Aufgabe dar, die von einem Benutzer ausgeführt wird, oder ausgeführt werden soll. Eine Aktivität ist eine beliebige Aktion, für die ein Eintrag in einem Kalender vorgenommen werden kann.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f979296356ba5cce562272ae1291a4aa39189a33
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0131950c398c1a21e05205a64ddb4b0bf79f7b62
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748264"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156494"
 ---
 # <a name="activitypointer-activity-entity"></a>ActivityPointer (Aktivität) Entität
 

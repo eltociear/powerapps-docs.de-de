@@ -11,7 +11,7 @@ applies_to:
 ms.assetid: 424d7f29-de44-4ce0-94f1-be8777ad6485
 author: Mattp123
 ms.author: matp
-manager: amyla
+manager: annbe
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -22,12 +22,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: 929230a38cf0c9ea1dc23b98550c45fa54f18545
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 1fb1c7289e287c96ce53474baba7632106ada79e
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753819"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115940"
 ---
 # <a name="customize-dynamics-365-apps-power-bi-content-packs"></a>Anpassen von Dynamics 365 Apps Power BI Inhaltspaketen
 
@@ -350,4 +350,4 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
 3. Wenn mehrere Ziele verfügbar sind, wählen Sie das gewünschte aus und wählen Sie dann **Veröffentlichen**.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Verwenden Sie Power BI mit Dynamics 365 Customer Engagement (on-premises) ](use-power-bi.md).
+ [Verwenden Sie Power BI mit Dynamics 365 Customer Engagement (on-premises) ](use-power-bi.md)

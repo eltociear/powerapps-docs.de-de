@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 44cad6fe7eafb457db7b2d5d3204612a42944a02
-ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
+ms.openlocfilehash: 6bc0f3da0b66dc929b1f6410453df88b3069bf8d
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095484"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162147"
 ---
 # <a name="implementing-data-set-component-for-canvas-apps"></a>Implementierung einer Datensatzkomponente für Canvas-Anwendungen
 
@@ -582,7 +582,7 @@ In modellgesteuerten Anwendungen werden Ansichten für die Datensatzkomponenten 
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Beispielkomponenten herunterladen](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Beispielkomponenten verwenden](../use-sample-components.md)<br/>
 [Power Apps component framework-API-Referenz](../reference/index.md)<br/>
 [Manifestschemareferenz des Power Apps component framework](../manifest-schema-reference/index.md)

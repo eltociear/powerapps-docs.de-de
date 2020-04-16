@@ -2,7 +2,7 @@
 title: HTTP-Abfragen erstellen und Fehler behandeln (Common Data Service)| Microsoft Docs
 description: Lesen Sie über die HTTP-Methoden und Header, die einen Teil der HTTP-Anforderungen, die mit der Web-API interagieren, formieren, und wie Fehler, die in Antwort zurückgegeben werden, zu erkennen und zu beheben.
 ms.custom: ''
-ms.date: 11/05/2018
+ms.date: 04/03/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,19 +13,19 @@ ms.assetid: 64a39182-25de-4d31-951c-852025a75811
 caps.latest.revision: 13
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 405e27d3461f78a2452de1c8b19d99d4d827d879
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 4ce55b03411e7a7d3e3a8695a97db96ea350b95a
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109024"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226365"
 ---
 # <a name="compose-http-requests-and-handle-errors"></a>HTTP-Anforderungen verfassen und Fehler beheben
 
@@ -44,7 +44,7 @@ Um auf die Web-API zuzugreifen, müssen Sie eine URL mithilfe von Teilen der fol
 |Region|Ihre Umgebung ist in der Regel in einem Rechenzentrum in Ihrer Nähe verfügbar.<br />Nordamerika: `crm`<br />Südamerika: `crm2`<br />Kanada: `crm3`<br />Europa, Naher Osten und Afrika (EMEA): `crm4`<br />Asien-Pazifik (APAC): `crm5`<br />Ozeanien: `crm6`<br />Japan: `crm7`<br />Indien: `crm8`<br />Nordamerika 2: `crm9`<br />Vereinigtes Königreich: `crm11`<br />Frankreich: `crm12`<br />Die Werte werden im Laufe der Zeit hinzugefügt, wenn neue Rechenzentrumregionen geöffnet werden.|
 |Basis-URL|`dynamics.com.`|
 |Web-API-Pfad|Der Pfad zur Web-API ist `/api/data/`.|
-|Version|   Die Version wird auf folgende Weise ausgedrückt: `v[Major_version].[Minor_version][PatchVersion]/`. Die gültige Version für diese Freigabe ist `v9.0`.|
+|Version|    Die Version wird auf folgende Weise ausgedrückt: `v[Major_version].[Minor_version][PatchVersion]/`. Die gültige Version für diese Freigabe ist `v9.1`.|
 |Ressource|Der Name der Entität, Funktion oder Aktionen, die Sie verwenden möchten.|
 
 
@@ -74,7 +74,7 @@ Sobald neue Funktionen eingeführt sind, können sie mit früheren Versionen kol
 |POST|Wird verwendet wenn Entitäten erstellt oder Aktionen aufgerufen werden.|  
 |PATCH|Wird verwendet, wenn Entitäten aktualisiert werden oder Upsert Vorgänge ausgeführt werden.|  
 |DELETE|Wir verwendet, wenn Entitäten oder Einzelpersoneneigenschaften gelöscht werden.|  
-|PUT|Verwendung in bestimmten Fällen zur Aktualisierung einzelner Eigenschaften von Entitäten. Diese Methode wird nicht empfohlen, wenn die meisten Entitäten aktualisiert werden. Verwenden Sie diese Option, wenn Sie Entitäten vorbildliche aktualisieren.|  
+|PUT|Verwendung in bestimmten Fällen zur Aktualisierung einzelner Eigenschaften von Entitäten. Diese Methode wird nicht empfohlen, wenn die meisten Entitäten aktualisiert werden. Verwenden Sie diese Option, wenn Sie Modellentitäten aktualisieren.|  
   
 <a name="bkmk_headers"></a>
 
@@ -86,7 +86,7 @@ Jede Anfrage sollte den Accept-Kopfzeilenwert von `application/json` beinhalten,
   
 Die aktuelle OData-Version ist 4.0, aber zukünftige Versionen werden die Möglichkeit bieten neue Funktionen zu verwenden. Um sicherzustellen dass es keine Verwechselung der OData-Version für den Code gibt, sollten Sie immer eine die aktuellen OData-Version sowie die neustmögliche Version für den Code angeben. Verwenden Sie OData-Version- und OData-MaxVersion-Kopfzeilen, um einen Wert auf 4.0 zu setzen.  
  
-Abfragen angezeigt, die unter Umständen Sammlung-bewertete erweitern Navigationseigenschaften zwischengespeicherten Daten für diese Eigenschaften zurückgibt, die keine neuen Änderungen angezeigt. Fügen Sie `If-None-Match: null`-Kopfzeile im Anforderungstext, um Browserzwischenspeicher der Web-API-Anforderung zu überschreiben. Weitere Informationen finden Sie unter [Hypertext Transfer Protocol (HTTP/1.1): Bedingte Anforderungen 3.2 : If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2).
+Abfragen, die Navigationseigenschaften mit Sammlungswert erweitern, geben möglicherweise zwischengespeicherte Daten für die Eigenschaften zurück, die die letzten Änderungen nicht widerspiegeln. Fügen Sie `If-None-Match: null`-Kopfzeile im Anforderungstext, um Browserzwischenspeicher der Web-API-Anforderung zu überschreiben. Weitere Informationen finden Sie unter [Hypertext Transfer Protocol (HTTP/1.1): Bedingte Anforderungen 3.2 : If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2).
  
 Alle HTTP-Kopfzeilen sollten folgende mindestens folgende Kopfzeilen enthalten.  
   
@@ -107,15 +107,15 @@ Sie können zusätzliche Kopfzeilen verwenden, um bestimmte Möglichkeiten zu ak
   
 -   Um Daten für Erstellen- (POST) oder Aktualisieren (PATCH)-Vorgänge für Entitäten zurückzugeben, nutzen Sie die `return=representation`-Einstellung. Wenn diese Einstellung auf eine POST-Anfrage angewendet wurde, hat eine erfolgreiche Antwort den Status 201 (erstellt). Eine PATCH-Anfrage hat eine erfolgreiche Antwort den Status 200 (OK). Ohne diese angewendete Einstellung haben beide Vorgänge Status 204 (Kein Inhalt), um anzuzeigen, dass standardmäßig keine Daten im Textteil der Antwort zurückgegeben werden.  
   
--   Um formatierte Werte mit einer Abfrage zurückzugeben, schließen die odata.include-annotations-Einstellung, gesetzt auf Microsoft.Dynamics.CRM.formattedvalue mithilfe der [Prefer](https://tools.ietf.org/html/rfc7240)-Kopfzeile festgelegt wurde, ein. Weitere Informationen:[Formatierte Werte einschließen](query-data-web-api.md#bkmk_includeFormattedValues)  
+-   Um formatierte Werte mit einer Abfrage zurückzugeben, beziehen Sie die odata.include-annotations-Einstellung mit dem Wert `Microsoft.Dynamics.CRM.formattedvalue` über die [Prefer](https://tools.ietf.org/html/rfc7240)-Kopfzeile mit ein. Weitere Informationen:[Formatierte Werte einschließen](query-data-web-api.md#bkmk_includeFormattedValues)  
   
--   Sie können die Prefer-Kopfzeile mit der odata.maxpagesize-Option auch dazu verwenden, anzugeben, wie viele Seiten Sie zurückgeben möchten. Weitere Informationen:[Anzahl der auf einer Seite zurückzugebenden Entitäten angeben](query-data-web-api.md#bkmk_specifyNumber)  
+-   Sie können die `Prefer`-Kopfzeile mit der `odata.maxpagesize`-Option auch dazu verwenden, anzugeben, wie viele Seiten Sie zurückgeben möchten. Weitere Informationen:[Anzahl der auf einer Seite zurückzugebenden Entitäten angeben](query-data-web-api.md#bkmk_specifyNumber)  
   
--   Um den Kontaxt eines andern Benutzers zu nutzen wenn der Aufrufer die entsprechenden Berechtigungen hat, fügen Sie die MSCRMCallerID-Kopfzeile mit dem systemuserid-Wert des Benutzers hinzu. Weitere Informationen:[Annehmen eines anderen Benutzerkontos mit Web API](impersonate-another-user-web-api.md).  
+-   Um sich als ein anderer Benutzer auszugeben, wenn der Anrufer über die entsprechenden Berechtigungen verfügt, fügen Sie die `CallerObjectId`-Kopfzeile mit dem Azure Active Directory-Objekt-ID-Wert des Benutzers hinzu. Diese Daten befinden sich in der [SystemUser-Entität](/reference/entities/systemuser) [AzureActiveDirectoryObjectId](/reference/entities/systemuser#BKMK_AzureActiveDirectoryObjectId)-Attribut. Weitere Informationen:[Annehmen eines anderen Benutzerkontos mit Web API](impersonate-another-user-web-api.md).  
   
--   Um die optimistische Parallelität anzuwenden, können Sie die [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1)-Kopfzeile mit einem Etag-Wert anwenden. Weitere Informationen:[Wenden Sie optimistische Parallelität an](perform-conditional-operations-using-web-api.md#bkmk_Applyoptimisticconcurrency).  
+-   Um die optimistische Parallelität anzuwenden, können Sie die [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1)-Kopfzeile mit dem `Etag`-Wert anwenden. Weitere Informationen:[Wenden Sie optimistische Parallelität an](perform-conditional-operations-using-web-api.md#bkmk_Applyoptimisticconcurrency).  
   
--   Um zu prüfen, ob ein Upsert-Vorgang tatsächlich eine Entität erstellen oder aktualisiert, können Sie die Kopfzeilen If-Match- und [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2)-Kopfzeilen verwenden. Weitere Informationen:[Upsert einer Entität](update-delete-entities-using-web-api.md#bkmk_upsert).  
+-   Um zu steuern, ob ein Upsert-Vorgang tatsächlich eine Entität erstellen oder aktualisiert, können Sie die Kopfzeilen `If-Match` and [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2) verwenden. Weitere Informationen:[Upsert einer Entität](update-delete-entities-using-web-api.md#bkmk_upsert).  
   
 -   Wenn Sie Batchbetriebe ausführen, müssen Sie in der Anforderung verschiedene Kopfzeilen anwenden sowie für jeden Teil, in dem der Text gesendet wird. Weitere Informationen:[Ausführen von Batchvorgängen mit der Web-API](execute-batch-operations-using-web-api.md).  
   
@@ -146,21 +146,42 @@ Sie können zusätzliche Kopfzeilen verwenden, um bestimmte Möglichkeiten zu ak
 
 ## <a name="parse-errors-from-the-response"></a>Analysefehler von der Antwort
 
- Details zu Fehlern sind als JSON in der Antwort enthalten. Fehler werden in diesem Format angezeigt.  
+Details zu Fehlern sind als JSON in der Antwort enthalten. Fehler werden in diesem Format angezeigt.  
   
 ```json  
 {  
  "error":{  
   "code": "<This code is not related to the http status code and is frequently empty>",  
-  "message": "<A message describing the error>",  
-  "innererror": {  
-   "message": "<A message describing the error, this is frequently the same as the outer message>",  
-   "type": "Microsoft.Crm.CrmHttpException",  
-   "stacktrace": "<Details from the server about where the error occurred>"  
-  }  
+  "message": "<A message describing the error>"  
  }  
 }  
-```  
+```
+
+> [!IMPORTANT]
+> Die Struktur der Fehlermeldungen ändert sich. Diese Änderung wird voraussichtlich in einem Zeitraum von Ende April bis Mai 2020 in verschiedenen Regionen umgesetzt.
+> 
+> Vor dieser Änderung hatten die zurückgegebenen Fehler folgendes Format:
+> 
+> ```json  
+> {  
+>  "error":{  
+>   "code": "<This code is not related to the http status code and is frequently empty>",  
+>   "message": "<A message describing the error>",  
+>   "innererror": {  
+>    "message": "<A message describing the error, this is frequently the same as the outer message>",  
+>    "type": "Microsoft.Crm.CrmHttpException",  
+>    "stacktrace": "<Details from the server about where the error occurred>"  
+>   }  
+>  }  
+> }  
+> ```
+> 
+> Wir entfernen die `innererror`-Eigenschaft der Fehlermeldung. Sie sollten jeden Code entfernen, der diese Eigenschaft analysieren soll.
+>
+> Die OData [Leitfaden zur Fehlerantwort](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) gibt Folgendes an: „*Das innererror name/value-Paar DARF nur in Entwicklungsumgebungen verwendet werden, um potenziellen Sicherheitsbedenken hinsichtlich der Offenlegung von Informationen vorzubeugen.*“. Um mit diesem Leitfaden übereinzustimmen, entfernen wir diese Eigenschaft.
+> 
+> Wenn Sie feststellen, dass eine von Ihnen verwendete Anwendung nach der Bereitstellung dieser Änderung von dieser Eigenschaft abhängig ist, können Sie sich an den Support wenden und die vorübergehende Entfernung der Änderung für Ihre Umgebung anfordern. Dies gibt dem Anwendungsentwickler Zeit, entsprechende Änderungen vorzunehmen, um diese Abhängigkeit zu entfernen.
+
   
 ### <a name="see-also"></a>Siehe auch  
 

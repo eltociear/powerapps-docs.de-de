@@ -3,7 +3,7 @@ title: Offline- und Outlook-Filter und -Vorlagen (Common Data Service) | Microso
 description: Daten, die zwischen Common Data Service und Dynamics 365 for Outlook synchronisiert werden sollen, werden durch Datenfilter für Outlook festgelegt
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: sriharibs
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b68f2013e49ce85d78efe588a9308efa55b361c8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8dde102e360535cb297e70881cde206ae232b2bd
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748674"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155394"
 ---
 # <a name="offline-and-outlook-filters-and-templates"></a>Offline- und Outlook-Filter und -Vorlagen
 

@@ -2,7 +2,7 @@
 title: Sie können auf eine Modell-angetriebene App-Ansichtsdefinition über die Startseite zugreifen | MicrosoftDocs
 description: In diesem Thema erfahren Sie, wie Sie auf Entitätsansichten zugreifen
 ms.custom: ''
-ms.date: 11/27/2018
+ms.date: 03/23/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 43a35f82f93260b4f4a8f6b5084e6827e46eff8f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 26d9abdd0703519d36c5f51a20a8617e4801f552
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885131"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166660"
 ---
 # <a name="access-a-model-driven-app-view-definition-in-power-apps"></a>Zugriff auf eine modellgesteuerte App-Ansichtsdefinition in Power Apps
 
@@ -41,11 +41,8 @@ ms.locfileid: "2885131"
 
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-
-    > [!IMPORTANT]
-    > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment). 
-
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die gewünschte Entität aus, beispielsweise die **Firma**-Entität.   
+
 3. Klicken Sie auf die Registerkarte **Ansichten**.
 
     > [!div class="mx-imgBorder"] 

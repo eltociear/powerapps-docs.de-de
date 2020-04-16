@@ -3,7 +3,7 @@ title: 'Beispiel: Arbeiten mit Suchdienst (Common Data Service) | Microsoft Docs
 description: Dieser Beispielcode zeigt, wie Sie mit Suchdiensten arbeiten
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48cbd588783963dbdd0f12ce98eac2e780c06b02
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 6099f304e62092dd63dd35472b80d3c22471de8e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934552"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155482"
 ---
 # <a name="work-with-discovery-service"></a>Arbeiten mit Suchdiensten
 

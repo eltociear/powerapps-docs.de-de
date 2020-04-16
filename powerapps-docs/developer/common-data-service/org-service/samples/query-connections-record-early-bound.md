@@ -3,7 +3,7 @@ title: 'Beispiel: Abfragen von Verbindungen nach Datensatz (Common Data Service)
 description: Dieses Beispiel zeigt, wie ein bestimmter Datensatz in Verbindungen abgefragt wird.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e588c6dedf4326e5a5bb38793d1de6d588e74d8
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 296e6ccedacfaac4504f47c8356bb12de3ad286c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956181"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155686"
 ---
 # <a name="sample-query-connections-by-a-record-early-bound"></a>Beispiel: Abfragen von Verbindungen nach Datensatz (frühe Bindung)
 

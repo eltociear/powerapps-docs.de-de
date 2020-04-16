@@ -3,7 +3,7 @@ title: 'Beispiel: Persistenter Warteschlangenlistener (Common Data Service) | Mi
 description: Dieses Beispiel zeigt, wie eine Azure Service Bus-Listeneranwendung für einen persistenten Warteschlangenendpunktvertrag geschrieben wird.
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c558df03a54c1eaa53d876b3c135c90790f3b3b5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f277caf86819ee00ead90855a6d60e09e76ec077
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748737"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155706"
 ---
 # <a name="sample-persistent-queue-listener"></a>Beispiel: Persistenter Warteschlangenlistener
 

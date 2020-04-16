@@ -9,22 +9,22 @@ ms.assetid: a327d2ff-e252-61cf-1190-6a974130ef19
 author: paulliew
 ms.author: nabuthuk
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 874fb17ddb2911f1464b07e7dacd597f89fc8c75
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 91e51f55a6a2066f8a72d61aa4ef6f889bd8f6c4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859935"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155130"
 ---
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>Exemplarische Vorgehensweise: SPA-Anwendung mit adal.js registrieren und konfigurieren
 
-Diese Vorgehensweise beschreibt den Prozess des Registrierens und Konfigurierens der grundlegenden SPA (Single Page Application) für den Zugriff auf Daten in Common Data Service mithilfe von adal.js und Cross-origin Resource Sharing (CORS). Mehr Informationen: [Verwenden Sie OAuth mit Cross-Origin Resource Sharing, um eine Single Page Application mit Common Data Service zu verbinden.](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
+Diese Vorgehensweise beschreibt den Prozess des Registrierens und Konfigurierens der grundlegenden SPA (Single Page Application) für den Zugriff auf Daten in Common Data Service mithilfe von adal.js und Cross-origin Resource Sharing (CORS). Weitere Informationen: [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page Application mit Common Data Service zu verbinden](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
   
 ## <a name="prerequisites"></a>Voraussetzungen  
   
@@ -293,7 +293,7 @@ Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abz
 1. Melden Sie sich beim [Azure-Portal](https://go.microsoft.com/fwlink/?linkid=2083908) mit einem Konto mit Administratorrechten an. Sie müssen ein Konto im gleichen Office 365-Abonnement (Mandant) verwenden, in dem Sie auch die App registrieren möchten. Sie können auch über das Microsoft 365 Administratoren-Center auf das Azure-Porta zugreifen, indem Sie das Element **ADMIN** im linken Navigationsbereich erweitern und **Azure AD** auswählen.  
   
     > [!NOTE]
-    > Falls Sie keinen Azure-Mandanten (Konto) haben oder darüber zwar verfügen, aber Ihr Office 365-Abonnement mit Common Data Service nicht in Ihrem Azure-Abonnement verfügbar ist, folgen Sie den Anweisungen im Thema [Einrichten des Azure Active Directory-Zugriffs für die Entwickler-Website](https://docs.microsoft.com/office/developer-program/office-365-developer-program), um die beiden Konten zuzuordnen.<br/><br/> Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Mehr Informationen: [Active Directory Preisgestaltung Details](https://azure.microsoft.com/pricing/details/active-directory/).  
+    > Falls Sie keinen Azure-Mandanten (Konto) haben oder darüber zwar verfügen, aber Ihr Office 365-Abonnement mit Common Data Service nicht in Ihrem Azure-Abonnement verfügbar ist, folgen Sie den Anweisungen im Thema [Einrichten des Azure Active Directory-Zugriffs für die Entwicklerseite](https://docs.microsoft.com/office/developer-program/office-365-developer-program), um die beiden Konten zuzuordnen.<br/><br/> Wenn Sie kein Konto haben, können Sie sich für eines registrieren, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Mehr Informationen: [Active Directory Preisgestaltung Details](https://azure.microsoft.com/pricing/details/active-directory/).  
   
 2. Klicken Sie in der linken Spalte der Seite auf **Azure Active Directory**. Möglicherweise müssen Sie in der linken Spalte einen Bildlauf durchführen, um das Symbol und die Beschriftung von **Azure Active Directory** zu sehen.  
   
@@ -301,7 +301,7 @@ Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abz
 
    ![Unternehmensanwendungen auswählen](media/register-spa-app-registration.PNG)
 
-4. Wählen Sie **Neue Anwendung** (oben auf der Seite) und dann unter **Eigene Anwendung hinzufügen** die Option **Anwendung, die Sie gerade entwickeln**.  
+4. Wählen Sie **Neue Anwendung** (oben auf der Seite) und dann unter **Eigene Anwendung hinzufügen** die Option **Anwendung, die Sie gerade entwickeln** aus.  
 
    ![Wählen Sie die Anwendung, die Sie entwickeln möchten.](media/register-spa-app-you-developing.PNG)
   
@@ -309,7 +309,7 @@ Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abz
 
    ![Wählen Sie Ok, bringen Sie mich zu den App-Registrierungen.](media/register-spa-take-me-app-reg.PNG)
 
-6. Klicken Sie nun auf **Registrierung neuer Anwendungen** (oben auf der Seite).  
+6. Klicken Sie nun auf **Neue Anwendungsregistrierung** (oben auf der Seite).  
 
    ![Wählen Sie die Registrierung einer neuen Anwendung](media/register-spa-new-reg.PNG)
   
