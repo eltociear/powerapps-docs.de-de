@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac8f7a3838d29324408a6041c9ad0e9cdbcfa666
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 959f8eaee539febbb7c00441453da9bab23a1812
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74728334"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81441763"
 ---
 # <a name="power-bi-tile-control-in-power-apps"></a>Power BI Kachel-Steuerelement in powerapps
 
@@ -34,7 +34,7 @@ Profitieren Sie von Ihrer vorhandenen Datenanalyse und -berichterstellung, indem
 
 Wenn Sie eine App freigeben, die Power BI-Inhalt enthält, müssen Sie nicht nur die App selbst sondern auch das [Dashboard](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports) freigeben, aus dem die Kachel stammt. Andernfalls wird der Power BI-Inhalt auch nicht für Benutzer, die die App öffnen, angezeigt. Apps, die Power BI-Inhalt enthalten, berücksichtigen die Berechtigungen für diesen Inhalt.
 
-## <a name="performance"></a>Leistungs
+## <a name="performance"></a>Leistung
 
 Es wird nicht empfohlen, mehr als drei Power BI-Kacheln zur gleichen Zeit in einer App zu laden. Sie können den Ladungsvorgang von Kacheln und auch das Entladen steuern, indem Sie die Eigenschaft **LoadPowerBIContent** festlegen.
 
@@ -54,7 +54,13 @@ Fügen Sie diese Syntax an diesen Wert an:
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-Mit dem-Parameter wird ein Wert im DataSet des Berichts gefiltert, von dem die Kachel stammt.
+Mit dem-Parameter wird ein Wert im DataSet des Berichts gefiltert, von dem die Kachel stammt. Die Filterfunktion weist jedoch die folgenden Einschränkungen auf:
+
+- Es kann nur ein Filter angewendet werden.
+- Nur der `eq`-Operator wird unterstützt.
+- Der Feldtyp muss eine Zeichenfolge sein.
+
+Sie können berechnete Felder im Power BI Bericht verwenden, um andere Werttypen in eine Zeichenfolge zu konvertieren oder mehrere Felder zu einer zu kombinieren.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 
@@ -94,7 +100,7 @@ Mit dem-Parameter wird ein Wert im DataSet des Berichts gefiltert, von dem die K
 
 1. Öffnen Sie auf der Registerkarte **Einfügen** das Menü **Steuerelemente**, und fügen Sie dann das Steuerelement **Power BI-Kachel** hinzu.
 
-    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
 2. Klicken oder tippen Sie auf der Registerkarte **Daten** im Optionsbereich für die Einstellung **Arbeitsbereich** auf **Mein Arbeitsbereich**.
 
