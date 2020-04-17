@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 0610e1cfabde8bd62e083ca1cff65825c28918e4
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79212467"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385256"
 ---
 # <a name="image-control-in-power-apps"></a>Image-Steuerelement in Power apps
 Ein Steuerelement, das ein Image aus einer lokalen Datei oder einer Datenquelle anzeigt
@@ -31,7 +30,7 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 **[Image](properties-visual.md)** – Der Name des Bilds, das in einem Bild-, Audio- oder Mikrofon-Steuerelement angezeigt wird.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
+**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben
 
 **ApplyEXIFOrientation**: Gibt an, ob Ausrichtung, die in den im Bild eingebetteten EXIF-Daten angegeben ist, automatisch angewendet wird.
 
@@ -45,11 +44,11 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 
 **CalculateOriginalDimensions**: aktiviert die **OriginalHeight** und **OriginalWidth**-Eigenschaften.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[DisabledBorderColor](properties-color-border.md)**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledBorderColor](properties-color-border.md)** : Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)** -Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[DisabledFill](properties-color-border.md)**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledFill](properties-color-border.md)** : Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
@@ -57,9 +56,9 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 
 **FlipVertical**: Gibt an, ob das Bild vor der Anzeige vertikal gekippt werden soll.
 
-**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -67,7 +66,7 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 
 **[HoverFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer den Mauszeiger über ihm hält.
 
-**[ImagePosition](properties-visual.md)**: gibt die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Images in einem Bildschirm oder in einem Steuerelement an, wenn es nicht die gleiche Größe wie das Image hat.
+**[ImagePosition](properties-visual.md)** : gibt die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Images in einem Bildschirm oder in einem Steuerelement an, wenn es nicht die gleiche Größe wie das Image hat.
 
 **ImageRotation**: Gibt an, wie das Bild vor der Anzeige gedreht werden soll.  Zulässige Werte sind „none“, „clockwise (CW) 90 degrees“, „counter-clockwise (CCW) 90 degrees“ und „clockwise 180 degrees“.
 
@@ -77,11 +76,11 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 
 **OriginalWidth**: gibt die ursprüngliche Breite eines Images an, wobei die **CalculateOriginalDimensions**-Eigenschaft aktiviert ist.
 
-**[PaddingBottom](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
+**[PaddingBottom](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
 
-**[PaddingLeft](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
+**[PaddingLeft](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
 
-**[PaddingRight](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
+**[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
 **[PaddingTop](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem oberen Rand des Steuerelements.
 
@@ -97,11 +96,11 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 
 **[RadiusTopRight](properties-size-location.md)** – Der Grad der Rundung der rechten oberen Ecke eines Steuerelements.
 
-**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
-**Transparency**: gibt an, inwieweit Steuerelemente hinter einem Bild sichtbar bleiben.
+**Transparency**: gibt an, inwieweit Steuerelemente hinter einem Bild sichtbar bleiben. Dezimalwerte reichen von 0 bis 1.  Wenn 0 nicht transparent ist, ist 0,5 halbtransparent und 1 ist transparent. 
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -112,7 +111,7 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Remove**( *DataSource*; ThisItem)](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*, ThisItem)](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Beispiele
 ### <a name="show-an-image-from-a-local-file"></a>Anzeigen eines Images aus einer lokalen Datei
@@ -131,7 +130,7 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
     Wenn im rechten Bereich **Datenquelle hinzufügen** nicht angezeigt wird, klicken oder tippen Sie auf der linken Navigationsleiste auf einen beliebigen Bildschirm.
 3. Klicken oder tippen Sie auf **Add static data to your app** (Statische Daten zu Ihrer App hinzufügen), klicken oder tippen Sie auf die Excel-Datei, die Sie heruntergeladen haben, und klicken oder tippen Sie anschließend auf **Open** (Öffnen).
 4. Aktivieren Sie das Kontrollkästchen **Flooring Estimates** (Kostenschätzungen für Bodenbeläge), und klicken oder tippen Sie auf **Connect** (Verbinden).
-5. Fügen Sie ein **Katalog**-Steuerelement mit Bildern hinzu, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf **FlooringEstimates** (Kostenschätzungen für Bodenbeläge) fest.
+5. Fügen Sie ein **Katalog**-Steuerelement mit Bildern hinzu, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf **FlooringEstimates** (Kostenschätzungen für Bodenbeläge) fest.
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
@@ -147,7 +146,7 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein, wenn die Grafik als Schaltfläche oder zumindest nicht nur der Dekoration dient.
 * **[AccessibleLabel](properties-accessibility.md)** muss leer sein oder der leeren Zeichenfolge **""** entsprechen, wenn die Grafik ausschließlich Dekoration ist. Dadurch wird die Grafik von der Sprachausgabe ignoriert.
 * **[AccessibleLabel](properties-accessibility.md)** kann leer sein oder der leeren Zeichenfolge **""** entsprechen, falls die Grafik redundante Informationen enthält.
-  * Beispiel: Ein **Bild** mit Zahnrädern, für das **[AccessibleLabel](properties-accessibility.md)** auf **Einstellungen** festgelegt ist und das nicht als Schaltfläche verwendet wird. Es befindet sich neben einer **[Bezeichnung](control-text-box.md)**, die ebenfalls den Namen **Einstellungen** hat. Sprachausgaben lesen das Bild als **Einstellungen** und die Bezeichnung auch als **Einstellungen**. Dies ist zu ausführlich. In diesem Fall benötigt das **Bild** kein **[AccessibleLabel](properties-accessibility.md)**.
+  * Beispiel: Ein **Bild** mit Zahnrädern, für das **[AccessibleLabel](properties-accessibility.md)** auf **Einstellungen** festgelegt ist und das nicht als Schaltfläche verwendet wird. Es befindet sich neben einer **[Bezeichnung](control-text-box.md)** , die ebenfalls den Namen **Einstellungen** hat. Sprachausgaben lesen das Bild als **Einstellungen** und die Bezeichnung auch als **Einstellungen**. Dies ist zu ausführlich. In diesem Fall benötigt das **Bild** kein **[AccessibleLabel](properties-accessibility.md)** .
 
     > [!IMPORTANT]
     > Sprachausgaben lesen alle **Bilder**, deren **[TabIndex](properties-accessibility.md)** 0 (null) oder größer entspricht, selbst wenn **[AccessibleLabel](properties-accessibility.md)** leer ist. Dies liegt daran, dass sie als Schaltflächen gerendert werden. Wenn kein **[AccessibleLabel](properties-accessibility.md)** bereitgestellt wird, lesen Sprachausgaben die Grafik als **Schaltfläche**.

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2462f82420713e93c3ac0598a73e2dc43bc7c0b1
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 88c96535de5fc4f77da06ca11ba3f6c49b37bcdd
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731940"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385233"
 ---
 # <a name="timer-control-in-power-apps"></a>Timer-Steuerelement in powerapps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -32,7 +31,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**Duration**: Gibt an, wie lange ein Timer ausgeführt wird (in Millisekunden).  Es gibt keinen Höchstwert.
+**Duration**: Gibt an, wie lange ein Timer ausgeführt wird (in Millisekunden). Der Höchstwert beträgt 24 Stunden in Millisekunden. Der Standardwert ist 60 Sekunden.
 
 **OnTimerEnd**: Wie eine App beim Beenden der Ausführung eines Timers reagiert.
 
@@ -91,7 +90,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -103,7 +102,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 
 **[Text](properties-core.md)** – Text, der in einem Steuerelement angezeigt wird oder von einem Benutzer in ein Steuerelement eingegeben wird.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** – Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -126,7 +125,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 2. Legen Sie die Eigenschaft **Duration** für den Timer auf **10000** und seine Eigenschaften **Repeat** und **Autostart** auf **TRUE** fest.
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:
-   <br>**"Anzahl verbleibender Sekunden: " & RoundUp(10-Countdown.Value/1000; 0)**
+   <br>**"Anzahl verbleibender Sekunden: " & RoundUp(10-Countdown.Value/1000, 0)**
 
     Benötigen Sie weitere Informationen zur **[If](../functions/function-round.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
@@ -139,7 +138,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 2. Legen Sie für diese Eigenschaften des Timers Folgendes fest: **Dauer** = **5000**, **Wiederholen** = **TRUE** und **[Text](properties-core.md)** = **Toggle animation** (Umschalter-Animation).
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf **Welcome!** fest und legen Sie dessen Eigenschaft **[Color](properties-color-border.md)** auf diese Formel fest:
-   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     Benötigen Sie weitere Informationen zur **[ColorFade](../functions/function-colors.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
