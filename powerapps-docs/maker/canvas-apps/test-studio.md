@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dc5ad83a127c812c2a97750ce0fbd05abee50bc7
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: b4f4576105ab29b1576fdef0bc3988433bbc1419
+ms.sourcegitcommit: 223c3d19ec4fbe43fcc7a16b76423c00f8602ecd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541173"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81488948"
 ---
 # <a name="test-studio-experimental"></a>Test Studio (experimentell) 
 
@@ -35,7 +35,7 @@ Die Low-Code-Lösung Test Studio von Power Apps bietet die Möglichkeit, Tests f
 ![Test Studio](./media/test-studio/test-studio.png)
 
 > [!NOTE]
-> Dieses Feature ist noch experimentell, und Sie sollten es noch nicht zum Schreiben von Tests für Apps verwenden, die nicht für die Produktion vorgesehen sind. Weitere Informationen finden Sie unter [Experimentelle Features und Previewfunktionen](working-with-experimental-preview.md).
+> Dieses Feature ist noch experimentell, und Sie sollten es noch nicht verwenden, um Tests für Produktions-Apps zu schreiben. Weitere Informationen finden Sie unter [Experimentelle Features und Previewfunktionen](working-with-experimental-preview.md).
 
 ## <a name="test-studio-terminology"></a>Terminologie zu Test Studio
 
@@ -47,15 +47,15 @@ Testfälle bestehen aus einer Reihe von Anweisungen oder Aktionen, die als Tests
 
 In Test Studio werden die Testschritte mithilfe der Power Apps-Ausdruckssprache geschrieben. Testausdrücke können sowohl aus den Funktionen, die beim Erstellen der App verfügbar sind, als auch aus zusätzlichen Ausdrücken bestehen, um die automatisierten Tests zu unterstützen.
 
-### <a name="test-suites"></a>Testsammlungen
+### <a name="test-suites"></a>Testauflistungen
 
 Testsammlungen werden verwendet, um Testfälle zusammen zu sortieren oder zu gruppieren. Wenn immer mehr Testfälle zu einer App hinzukommen, bietet es sich möglicherweise an, diese in bestimmte Features oder Funktionen zu sortieren. Zum Beispiel können Sie eine Testsammlung mit Testfällen zum Überprüfen der übermittelten Ausgabenberichte erstellen und eine weitere Testsammlung verwenden, deren Fokus auf den Genehmigungen von Ausgaben liegt.
 
-In Testsammlungen enthaltene Testfälle werden sequenziell ausgeführt. Der App-Status wird für alle Testfälle in einer Sammlung beibehalten. Wenn z. B. ein Testfall in Bildschirm 5 Ihrer App abgeschlossen wird, beginnt der nächste Testfall in Ihrer Testsammlung ab Bildschirm 5. Dadurch haben Sie die Möglichkeit, komplexe Testszenarios in mehrere Testfälle innerhalb einer einzelnen Sammlung zu unterteilen, und der Status wird für alle Testfälle übernommen. Wenn Ihr zweiter Testfall auf dem Startbildschirm der App beginnen soll, können Sie im ersten Schritt für Ihren Testfall zum Startbildschirm navigieren. Beachten Sie dabei, dass die App nicht zu Beginn jedes Testfalls in einer Testsammlung neu geladen wird, wenn Sie die Testausführung planen.
+In Testsammlungen enthaltene Testfälle werden sequenziell ausgeführt. Der App-Status wird für alle Testfälle in einer Sammlung beibehalten. Wenn z. B. ein Testfall in Bildschirm 5 Ihrer App abgeschlossen wird, beginnt der nächste Testfall in Ihrer Testsammlung ab Bildschirm 5. Dadurch haben Sie die Möglichkeit, komplexe Testszenarios in mehrere Testfälle innerhalb einer einzelnen Sammlung zu unterteilen, und der Status wird für alle Testfälle übernommen. Wenn Ihr zweiter Testfall auf dem Startbildschirm der App beginnen soll, können Sie im ersten Schritt für Ihren Testfall zum Startbildschirm navigieren. Beachten Sie, dass die APP beim Planen der Testausführung nicht zu Beginn jedes Testfalls in einer Test Sammlung neu geladen wird.
 
 ### <a name="test-assertions"></a>Testassertionen
 
-Für jeden Testfall sollte es ein zu erwartendes Ergebnis geben. Sie können Testassertionen schreiben, um das erwartete Ergebnis eines Tests mit dem tatsächlichen Testergebnis abzugleichen. Eine Assertion ist ein Ausdruck, der die Ergebnisse TRUE oder FALSE für den jeweiligen Test zurückgibt. Wenn der Ausdruck FALSE zurückgibt, schlägt dieser Testfall fehl.
+Jeder Testfall sollte zum zu erwarteten Ergebnis führen. Sie können Testassertionen schreiben, um das erwartete Ergebnis eines Tests mit dem tatsächlichen Testergebnis abzugleichen. Eine Assertion ist ein Ausdruck, der die Ergebnisse TRUE oder FALSE für den jeweiligen Test zurückgibt. Wenn der Ausdruck FALSE zurückgibt, schlägt der Testfall fehl.
 
 Im obigen Beispiel der Ausgaben-App können Sie eine Assertion schreiben, um zu überprüfen, ob ein Ausgabenbericht mit einer Position erstellt wird, der keine Kosten zugeordnet sind.
 
@@ -65,7 +65,7 @@ Beachten Sie beim Testen der Canvas-App mithilfe von Test Studio die folgenden b
 
 1. **Bestimmen Sie, welche Testfälle automatisiert werden sollen.**
 
-    Es ist schwierig, alle Tests zu automatisieren, und es wird nicht empfohlen, sich voll und ganz auf die Testautomatisierung zu verlassen. Neben automatisierten Tests sollten auch manuelle Tests durchgeführt werden. Tests, die am besten für die Automatisierung geeignet sind:
+    Es ist schwierig, alle Tests zu automatisieren, und es wird nicht empfohlen, die Testautomatisierung vollständig zu verwenden. Neben automatisierten Tests sollten auch manuelle Tests durchgeführt werden. Tests, die am besten für die Automatisierung geeignet sind:
 
     - wiederkehrende Tests
     - Tests von Funktionen, die essenziell für das Geschäft sind
@@ -100,3 +100,11 @@ Es wird derzeit daran gearbeitet, Vollzugriff in Power Apps Test Studio zu integ
 - Das experimentelle Feature zur Fehlerverwaltung auf Formelebene muss für die App aktiviert werden.
 - Unterstützung für Steuerelemente, die nicht in den Funktionen [Select](./functions/function-select.md) und [SetProperty](./functions/function-setproperty.md) aufgeführt sind.
 - Spalten für die Personentypen
+
+## <a name="next-steps"></a>Nächste Schritte
+
+- [Arbeiten mit Test Studio](working-with-test-studio.md)
+
+### <a name="see-also"></a>Siehe auch
+
+- [Automatisieren von Tests mit dem klassischen Azure devops-Pipeline-Editor](test-studio-classic-pipeline-editor.md)
