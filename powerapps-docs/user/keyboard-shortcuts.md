@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b5f273fcc14b7c8bd9cbde947133fd70d4a2a432
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: a3e1bb7acbe645a6a1c9ae39dfe37634ac2c2deb
+ms.sourcegitcommit: 365155c2d81a78958561b89b46285f5bcbffa853
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79035624"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224601"
 ---
 # <a name="use-keyboard-shortcuts-in-power-apps"></a>Verwenden von Tastenkombinationen in Power Apps
 
@@ -69,8 +69,8 @@ Wenn Ihr Administrator bearbeitbare Raster (Ansichten) aktiviert hat, können Si
 
 |Aufgabe  | Einheitliche Oberfläche|
 |---------|---------|
-|Nach Spalte sortieren, wenn ein Spaltenheader ausgewählt ist | EINGABETASTE |
-|Filterdialogfeld öffnen, wenn ein Spaltenheader ausgewählt ist | LEERTASTE|
+|Nach Spalte sortieren, wenn ein Spaltenheader ausgewählt ist | LEERTASTE zum Auswählen der Dropdownliste, dann NACH-UNTEN-TASTE zum Auswählen einer Aktion, dann EINGABETASTE |
+|Filterdialogfeld öffnen, wenn ein Spaltenheader ausgewählt ist | LEERTASTE zum Auswählen der Dropdownliste, dann NACH-UNTEN-TASTE zum Auswählen der Option **Filtern nach**, dann EINGABETASTE |
 |Zum nächsten Feld wechseln, wenn Zellen ausgewählt sind |  NACH-RECHTS-TASTE (→)  | 
 |Zum vorherigen Feld wechseln, wenn Zellen ausgewählt sind   |  NACH-LINKS-TASTE (←)|
 |Zum nächsten Spaltenheader wechseln, wenn ein Spaltenheader ausgewählt ist |  TAB  | 
