@@ -1,29 +1,27 @@
 ---
 title: Eingeschränkte Entitäten, die Dynamics 365-Lizenzen benötigen | Microsoft Docs
 description: Eine Liste der eingeschränkten Entitäten in Common Data Service, die Dynamics 365-Lizenzen benötigen.
-author: lancedMicrosoft
-manager: kfile
+author: KumarVivek
 ms.service: powerapps
-ms.component: cds
 ms.topic: reference
-ms.date: 03/20/2020
-ms.author: lanced
+ms.date: 04/15/2020
+ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6f2518a4ee7b141c9c480d9a8f32bc923882f73
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 9656f9db1a00fe82a2788b20513014bc49a09d4f
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154764"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264926"
 ---
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Eingeschränkte Entitäten, die Dynamics 365-Lizenzen benötigen
 
 > [!IMPORTANT]
-> Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [Power Apps Lizenzhandbuch](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> Dieses Thema ist veraltet und wird in Kürze aktualisiert, um die neuesten Lizenzierungsänderungen zu berücksichtigen, die ab dem 1. Oktober 2019 gelten. Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [Power Apps Lizenzhandbuch](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 App-Ersteller können die meisten der in Common Data Service verfügbaren Entitäten verwenden, um Apps und Abläufe für Benutzer zu erstellen, die nur eine Power Apps Plan 1-Lizenz haben. Einige Entitäten enthalten jedoch eine komplexe Geschäftslogik, die erfordert, dass App-Benutzer eine Power Apps Plan 2 oder Power Automate Plan 2 Lizenz haben (für weitere Informationen siehe [Entitäts-Lizenzanforderungen](data-platform-entity-licenses.md)). Ein noch kleinere Gruppe von Entitäten, die zu Dynamics 365-Produkten gehören, erfordern von Canvas und modellgesteuerte App-Benutzern, dass sie eine Lizenz für das jeweilige Dynamics 365-Produkt haben, wenn sie Datensätzen in Entitäten erstellen, aktualisieren oder löschen. Diese Elemente werden als *eingeschränkte* Entitäten bezeichnet.
 

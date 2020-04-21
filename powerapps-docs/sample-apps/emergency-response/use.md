@@ -1,6 +1,6 @@
 ---
-title: Verwenden der mobilen Notfallreaktions-App für Krankenhäuser | Microsoft-Dokumentation
-description: Exemplarische Vorgehensweise beim Einsatz verschiedener Apps und Komponenten für die Benutzer der Vorlage der Beispiel-App zur Notfallreaktion für Krankenhäuser
+title: Die mobile App für Notfallmaßnahmen im Krankenhaus verwenden | Microsoft Docs
+description: Durchlaufen verschiedener Apps und Komponenten für die Benutzer der Hospital Emergency Response-Beispiel-App-Vorlage
 author: pankajarora-msft
 ms.service: powerapps
 ms.topic: conceptual
@@ -15,257 +15,257 @@ ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2020
-ms.locfileid: "81441511"
+ms.locfileid: "3265014"
 ---
-# <a name="use-the-hospital-emergency-response-mobile-app"></a>Verwenden der mobilen Notfallreaktions-App für Krankenhäuser
+# <a name="use-the-hospital-emergency-response-mobile-app"></a>Die mobile App für Notfallmaßnahmen im Krankenhaus verwenden
 
-Krankenhauspersonal steht vor der Herausforderung, einer steigenden Anzahl von Patienten gerecht zu werden und gleichzeitig die Logistikkette in Notfallsituationen im Griff zu behalten. Mithilfe der mobilen Notfallreaktions-App für Krankenhäuser können Mitarbeiter an vorderster Front schnell Daten zu Beatmungsgeräten, Personal, anstehenden Entlassungen und Patienten mit COVID-19-Befund anzeigen und hinzufügen.
+Das Krankenhauspersonal ist gefordert, eine Zunahme der Patientenzahlen zu bewältigen und gleichzeitig die Lieferkette im Notfall zu verwalten. Mithilfe der Hospital Emergency Response-Mobile App können Mitarbeiter an vorderster Front schnell Daten für Beatmungsgeräte, Personal, ausstehende Entlassungen und Patienten im Zusammenhang mit COVID-19 anzeigen und hinzufügen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Um die Arbeit mit der mobilen App aufzunehmen, müssen Sie Power Apps Mobile über den App Store des Geräts auf Ihr Gerät herunterladen.
+Um mit der mobilen App zu beginnen, müssen Sie Power Apps Mobile auf Ihr Gerät über den App Store des Geräts herunterladen.
 
-- **Laden Sie**  die [**mobilen Power Apps** ](https://powerapps.microsoft.com/downloads) herunter
-    - Verwenden Sie für **Apple**-Geräte mit iOS wie iPhone und iPad den [**App Store**](https://aka.ms/powerappsios).
-    - Verwenden Sie für **Android**-Geräte [**Google Play**](https://aka.ms/powerappsandroid).
-- Vergewissern Sie sich, dass Ihre Organisation die Notfallreaktions-App für Krankenhäuser, wie unter [Bereitstellen und Konfigurieren der App](deploy-configure.md) erläutert, bereitgestellt und konfiguriert hat.
+- **Herunterladen** der [**Power Apps Mobile**](https://powerapps.microsoft.com/downloads)
+    - Verwenden Sie den [**App-Store**](https://aka.ms/powerappsios) für **Apple**-Geräte mit iOS wie iPhone und iPad.
+    - Verwenden Sie [**Google Play**](https://aka.ms/powerappsandroid) für **Android**-Geräte.
+- Stellen Sie sicher, dass Ihre Organisation die Hospital Emergency Response-App bereitgestellt und konfiguriert hat, wie erläutert in [Bereitstellen und Konfigurieren der App](deploy-configure.md).
 
-Nachdem Sie die mobilen Power Apps installiert haben, öffnen Sie die App auf Ihrem Gerät. Melden Sie sich mit dem Azure Active Directory-Konto Ihres Unternehmens an. Sie können, sobald Sie sich angemeldet haben, alle Apps anzeigen, die von Ihrer Organisation für Sie freigegeben wurden. Weitere Informationen finden Sie unter [Anmelden bei Power Apps auf einem mobilen Gerät](https://docs.microsoft.com/powerapps/user/run-app-client#open-power-apps-and-sign-in).
+Nachdem Sie die Power Apps Mobile installiert haben, öffnen Sie die App von Ihrem Gerät aus und melden Sie sich mit Ihrem Azure Active Directory-Konto des Unternehmens an. Sie können alle Apps anzeigen, die Ihnen von Ihrer Organisation freigegeben wurden, sobald Sie sich angemeldet haben. Weitere Informationen finden Sie unter [Power Apps-Anmeldung für Mobilgeräte](https://docs.microsoft.com/powerapps/user/run-app-client#open-power-apps-and-sign-in).
 
-## <a name="demo-use-the-hospital-emergency-response-mobile-app"></a>Demo: Verwenden der mobilen Notfallreaktions-App für Krankenhäuser
+## <a name="demo-use-the-hospital-emergency-response-mobile-app"></a>Demo: Die mobile App für Notfallmaßnahmen im Krankenhaus verwenden
 
-Sehen Sie sich an, wie die Notfallreaktions-App für Krankenhäuser verwendet wird.
+Sehen Sie sich an, wie Sie die Hospital Emergency Response-App verwenden.
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/H1u6SYt3UsQ]
 
-## <a name="hospital-emergency-response-mobile-app"></a>Mobile Notfallreaktions-App für Krankenhäuser
+## <a name="hospital-emergency-response-mobile-app"></a>Mobile App für Notfallmaßnahmen im Krankenhaus
 
-![Notfallreaktions-App für Krankenhäuser](media/use/app-launcher.png)
+![Hospital Emergency Response-App](media/use/app-launcher.png)
 
-Die mobile Notfallreaktions-App für Krankenhäuser hat eine modulare Struktur mit verschiedenen der jeweiligen Rolle entsprechenden Apps. Öffnen Sie in den mobilen Power Apps die mobile Notfallreaktions-App für Krankenhäuser. Wählen Sie Ihre Einstellungen für **Hospital system** (Krankenhaussystem), **Region, Facility** (Einrichtung) und dann **Next** (Weiter) aus, um die ersten Schritte zu unternehmen.
+Die Hospital Emergency Response-Mobile App ist modular aufgebaut und enthält je nach Rolle unterschiedliche Apps. Öffnen Sie die Hospital Emergency Response-Mobile App über die Power Apps Mobile, wählen Sie Ihr **Krankenhaussystem**, **Region, Einrichtung** und dann **Weiter** aus, um loszulegen.
 
 > [!NOTE]
-> Wenn Sie die mobile Notfallreaktions-App für Krankenhäuser oder eine ihrer Komponenten zum *ersten Mal* starten, werden Sie um Ihre Zustimmung gebeten, dass die App Ihr Profil *Office 365-Benutzer* und Ihren *Standort* auslesen darf. Sie müssen **Zulassen** wählen, damit Sie die ausgewählte App verwenden können. Weitere Informationen finden Sie unter [Erteilen von Zustimmung](https://docs.microsoft.com/powerapps/user/run-app-client#give-consent).
+> Wenn Sie die Hospital Emergency Response-Mobile App oder eine ihrer Komponenten das *erste Mal* starten, werden Sie um Ihre Zustimmung für den Zugriff der App auf Ihr *Office 365-Benutzer*-Profil und Ihren *Standort* gebeten. Sie müssen die Option **Zulassen** auswählen, bevor Sie die ausgewählte App verwenden können. Weitere Informationen finden Sie unter [Zustimmung geben](https://docs.microsoft.com/powerapps/user/run-app-client#give-consent).
 
 ## <a name="app-components"></a>App-Komponenten
 
-![Komponenten der mobilen Notfallreaktions-App für Krankenhäuser](media/use/app-components.png)
+![Komponenten der Hospital Emergency Response-Mobile App](media/use/app-components.png)
 
-Die Beispiellösungs-App für die Notfallreaktion für Krankenhäuser besteht für eine bessere Benutzererfahrung aus mehreren Apps. Je nach Ihrer Rolle sehen Sie in der **Notfallreaktions-App für Krankenhäuser** möglicherweise eine oder mehrere Komponenten.
+Die Hospital Emergency Response-Beispiellösungs-App besteht aus mehreren Apps für eine verbesserte Benutzererfahrung. Abhängig von Ihrer Rolle sehen Sie möglicherweise eine oder mehrere Komponenten in der **Hospital Emergency Response-App**.
 
-- **Bed capacity**
-     (Bettenkapazität)<br> Erfassen Sie Informationen zur Bettenkapazität, z. B. zur Anzahl von belegbaren Betten, Intensivbetten und anderen Betten.
+- **Bettenkapazität**
+    <br> Sammeln Sie Bettinformationen wie lizenzierte Betten, Intensivbetten und andere Daten zur Bettenkapazität.
 
-- **COVID-19 stats**
-     (Statistik zu COVID-19)<br> Erfassen Sie den Stand, wie viele Patienten auf COVID-19 untersucht und wie viele positiv getestet wurden.
+- **COVID-19-Statistiken**
+    <br> Sammeln Sie den Status darüber, wie viele Patienten auf COVID-19 untersucht werden und wie viele positiv getestet wurden.
 
-- **Equipment**
-     (Geräte)<br> Verfolgen Sie Informationen zur Geräten nach, z. B. die Anzahl von Beatmungsgeräten, Geräten für nicht-invasive Überdruckbeatmung und akkubetriebenen gebläseunterstützten Atemschutzgeräten.
+- **Arbeitsgerät**
+    <br> Verfolgen Sie Geräteinformationen wie Beatmungsgeräte, NIPPV und PAPR.
 
-- **Staff**
-     (Personal)<br> Erfassen Sie die Anzahl von Patienten und Informationen zum Status der Pflegekräfte, z. B. Partner, beantragte, zugewiesene und nicht zugewiesene Pflegekräfte.
+- **Personal**
+    <br> Sammeln Sie die Anzahl der Patienten und RN-Statusinformationen, z. B. „Partner“, „Zugewiesen“, „Angefordert“ und „Nicht zugewiesen“.
 
-- **Supplies**
-     (Verbrauchsmaterialien)<br> Behalten Sie wichtige Verbrauchsmaterialien im Blick, um den Bestand effektiver zu verfolgen, zu verwalten und zu prognostizieren. 
+- **Bedarf**
+    <br> Verfolgen Sie wichtigen Bedarf, um das Inventar effektiver zu verfolgen, zu verwalten und zu prognostizieren. 
 
-- **Staffing**
-     (Personalbedarf)<br> Erfassen Sie Beantragungen von Personal nach Abteilung, Rolle und Dringlichkeit.
+- **Personalbedarf**
+    <br> Sammeln Sie Personalanfragen nach Abteilung, Rolle und Dringlichkeit.
 
-- **Discharge planning**
-     (Entlassungsplanung)<br> Erfassen Sie den Status von und Prognosen zu Patientenentlassungen.
+- **Entlassungsplanung**
+    <br> Sammeln Sie Status und Projektionen zu Patientenentlassungen.
 
 > [!NOTE]
-> Standardmäßig können Sie Informationen in den folgenden Apps auf Ebene des *Standorts* nachverfolgen: **COVID-19 stats** (Statistik zu COVID-19), **Equipment** (Geräte) und **Staff** (Personal). In den anderen Apps können Sie Informationen auf Ebene der *Einrichtung* nachverfolgen. Ihr Administrator kann die standardmäßige Nachverfolgungsebene ggf. ändern. Weitere Informationen: [Verwalten der Nachverfolgungsebene für mobile Apps](configure-data-reporting.md#manage-tracking-level-for-mobile-apps)
+> Standardmäßig können Sie Informationen in den folgenden Apps auf der Ebene *Standort* verfolgen: **COVID-19-Statistiken**, **Ausrüstung**, und **Personal**. In den restlichen Apps können Sie Informationen standardmäßig unter *Einrichtung* verfolgen. Ihr Administrator kann bei Bedarf die Standardverfolgungsebene ändern. Weitere Informationen: [Verwalten der Nachverfolgungsebene für mobile Apps](configure-data-reporting.md#manage-tracking-level-for-mobile-apps)
 
-## <a name="bed-capacity"></a>Bed capacity (Bettenkapazität)
+## <a name="bed-capacity"></a>Bettenkapazität
 
-![Bed capacity (Bettenkapazität)](media/use/bed-capacity.png)
+![Bettenkapazität](media/use/bed-capacity.png)
 
-Übermitteln Sie Informationen zu Betten, z. B. Anzahl von belegbaren Betten, Intensivbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung), Akutbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung) und Informationen dazu, ob die ausgewählte Einrichtung über genügend Personal für eine vollständige Belegung verfügt.
+Senden Sie bettbezogene Informationen wie lizenzierte Betten, Betten auf der Intensivstation (AIIR/Nicht-AIIR), Betten für Akutversorgung (AIIR/Nicht-AIIR) und ob die ausgewählte Einrichtung mit voller Lizenzbettkapazität besetzt ist.
 
-Wählen Sie links oben **Back** (Zurück) aus, wenn Sie zur **Notfallreaktions-App für Krankenhäuser** zurückkehren möchten, ohne eine Änderung zu übermitteln. Über die Schaltfläche **Submit** (Senden) werden die von Ihnen eingegebenen Werte übermittelt.
+Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Response-App** gehen möchten, ohne Änderungen zu senden. Die Schaltfläche **Senden** sendet die von Ihnen eingegebenen Werte.
 
-Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **Bed capacity** (Bettenkapazität) zurückzukehren, um über die Schaltfläche **Track another** (Weiteren nachverfolgen) einen weiteren Datensatz zu erstellen. Wählen Sie **Home** (Start) aus, um zur **Notfallreaktions-App für Krankenhäuser** zurückzukehren.
+Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **Bettkapazität** zurückzukehren, um einen weiteren Datensatz mit der Schaltfläche **Andere nachverfolgen** zu erstellen. Wählen Sie **Home** aus, um zur **Hospital Emergency Response-App** zurückzugehen.
 
 ### <a name="fields-and-description"></a>Felder und Beschreibung
 
 | **Optionsname**                                               | **Beschreibung**                                                                       |
 |---------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| How many licensed beds are currently in use in this facility? (Wie viele belegbaren Betten sind in dieser Einrichtung derzeit belegt?) | Die Anzahl der belegbaren Betten in dieser Einrichtung, die derzeit belegt sind.                            |
-| Number of ICU Beds (AIIR Room) currently in use (Anzahl von derzeit belegten Intensivbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung))               | Die Anzahl der derzeit belegten Intensivbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung).                                      |
-| Number of ICU Beds (non-AIIR Room) currently in use (Anzahl von derzeit belegten Intensivbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung))           | Die Anzahl der derzeit belegten Intensivbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung).                                  |
-| Number of Acute Care Beds (AIIR Room) currently in use (Anzahl von derzeit belegten Akutbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung))        | Die Anzahl der derzeit belegten Akutbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung).                               |
-| Number of Acute Care Beds (non-AIIR Room) currently in use (Anzahl von derzeit belegten Akutbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung))    | Die Anzahl der derzeit belegten Akutbetten (Isolationszimmer mit Unterdruck zum Schutz vor aerogener Übertragung).                           |
-| Is your facility staffed to its full license bed capacity? (Sind in Ihrer Einrichtung genügend Mitarbeiter für die vollständige Kapazität der belegbaren Betten vorhanden?)    | Ja/Nein. Falls die Antwort „Nein“ lautet, können Sie alle zutreffenden Gründe auswählen: <br> – Staff (Personal) <br> – Space (Verfügbarer Platz) <br> – PPE (Persönliche Schutzausrüstung, PSA) <br> – Equipment (Geräte) <br> – Low Patient Volume (Geringe Patientenzahl) |
-| Are you able to surge beyond your licensed beds? (Können Sie Ihre Kapazität über die genehmigte Anzahl von Betten hinaus aufstocken?)              | Ja/Nein. Falls die Antwort „Nein“ lautet, können Sie alle zutreffenden Gründe auswählen: <br> – Staff (Personal) <br> – Space (Verfügbarer Platz) <br> – PPE (Persönliche Schutzausrüstung, PSA) <br> – Equipment (Geräte) <br> – Low Patient Volume (Geringe Patientenzahl)  |
-| Number of surge beds currently in use (Anzahl von derzeit belegten Notbetten)                         | Die Anzahl der derzeit belegten Notbetten.                                                |
+| Wie viele lizenzierte Betten werden derzeit in dieser Einrichtung verwendet? | Anzahl der lizenzierten Betten, die derzeit in dieser Einrichtung verwendet werden.                            |
+| Anzahl derzeit verwendeter Intensivbetten (Luftübertragungsisolationsräume)               | Anzahl derzeit verwendeter Intensivbetten (Luftübertragungsisolationsräume).                                      |
+| Anzahl derzeit verwendeter Intensivbetten (Nicht-Luftübertragungsisolationsräume)           | Anzahl derzeit verwendeter Intensivbetten (Nicht-Luftübertragungsisolationsräume).                                  |
+| Anzahl derzeit verwendeter Akutversorgungsbetten (Luftübertragungsisolationsräume)        | Anzahl derzeit verwendeter Akutversorgungsbetten (Luftübertragungsisolationsräume).                               |
+| Anzahl derzeit verwendeter Akutversorgungsbetten (Nicht-Luftübertragungsisolationsräume)    | Anzahl derzeit verwendeter Akutversorgungsbetten (Nicht-Luftübertragungsisolationsräume).                           |
+| Ist Ihre Einrichtung mit einer voll lizenzierten Bettenkapazität besetzt?    | Ja/Nein: Wenn die Antwort Nein lautet, können Sie alle zutreffenden Gründe auswählen: <br> - Personal <br> - Platz <br> - PSA <br> - Arbeitsgerät <br> - Geringes Patientenvolumen |
+| Können Sie einen plötzlichen Anstieg über lizenzierte Betten hinaus bewältigen?              | Ja/Nein: Wenn die Antwort Nein lautet, können Sie alle zutreffenden Gründe auswählen: <br> - Personal <br> - Platz <br> - PSA <br> - Arbeitsgerät <br> - Geringes Patientenvolumen  |
+| Anzahl derzeit verwendeter Betten für plötzlichen Anstieg                         | Anzahl derzeit verwendeter Betten für plötzlichen Anstieg.                                                |
 
-## <a name="covid-19-stats"></a>COVID-19 stats (Statistik zu COVID-19)
+## <a name="covid-19-stats"></a>COVID-19-Statistiken
 
-![COVID-19 Stats (Statistik zu COVID-19)](media/use/covid19-stats.png)
+![COVID-19-Statistiken](media/use/covid19-stats.png)
 
-Übermitteln Sie mit der App  **COVID-19 stats** COVID-19-spezifische Details. Sie können die standortspezifischen Details zu Patienten wie beispielsweise die Anzahl von Verdachtsfällen sowie von positiv getesteten, intubierten und entlassenen Patienten aktualisieren.
+Senden Sie COVID-19-spezifische Details mit der App **COVID-19-Statistiken**. Sie können die ortsspezifischen Patientendetails wie PUIs, positive, intubierte und entlassene Patienten aktualisieren.
 
-Wählen Sie links oben **Back** (Zurück) aus, wenn Sie zur **Notfallreaktions-App für Krankenhäuser** zurückkehren möchten, ohne eine Änderung zu übermitteln. Über die Schaltfläche **Submit** (Senden) werden die von Ihnen eingegebenen Werte übermittelt.
+Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Response-App** gehen möchten, ohne Änderungen zu senden. Die Schaltfläche **Senden** sendet die von Ihnen eingegebenen Werte.
 
-Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **COVID-19 stats** (COVID-19-Statistik) zurückzukehren, um über die Schaltfläche **Track another** (Weiteren nachverfolgen) einen weiteren Datensatz zu erstellen. Wählen Sie **Home** (Start) aus, um zur **Notfallreaktions-App für Krankenhäuser** zurückzukehren.
-
-### <a name="fields-and-description"></a>Felder und Beschreibung
-
-| **Feldname**  | **Beschreibung**                                                                                    |
-|-----------------|----------------------------------------------------------------------------------------------------|
-| Standort        | Name und Typ des Raums, der Station oder eines anderen speziellen Bereichs innerhalb der ausgewählten Einrichtung.  |
-| PUIs (Untersuchte Patienten)            | Anzahl der untersuchten Patienten.                                                            |
-| Positive        | Anzahl der Patienten mit positivem Befund auf COVID-19.                                                         |
-| Intubiert        | Die Anzahl der Patienten, die intubiert sind.                                                         |
-| Entlassen        | Die Anzahl der COVID-19-Patienten, die bereits entlassen wurden.                                                         |
-
-## <a name="equipment"></a>Geräte
-
-![Geräte](media/use/equipment.png)
-
-Übermitteln Sie über die App  **Equipment** (Geräte) Informationen zu Geräten und Ausrüstung an Ihrem Standort. Sie können die Anzahl der verwendeten Geräte (z. B. Beatmungsgeräte, Geräte für nicht-invasive Überdruckbeatmung und akkubetriebene gebläseunterstützte Atemschutzgeräte) aktualisieren.
-
-Wählen Sie links oben **Back** (Zurück) aus, wenn Sie zur **Notfallreaktions-App für Krankenhäuser** zurückkehren möchten, ohne eine Änderung zu übermitteln. Über die Schaltfläche **Submit** (Senden) werden die von Ihnen eingegebenen Werte übermittelt.
-
-Nach Übermittlung der Daten haben Sie die Möglichkeit, zur App **Staff + equipment** (Personal und Geräte) zurückzukehren, um über die Schaltfläche **Track another** (Weiteren nachverfolgen) einen weiteren Datensatz zu erstellen. Wählen Sie **Home** (Start) aus, um zur **Notfallreaktions-App für Krankenhäuser** zurückzukehren.
+Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **COVID-19-Statistiken** zurückzugehen, um einen weiteren Datensatz mit der Schaltfläche **Weiteren nachverfolgen** zu erstellen. Wählen Sie **Home** aus, um zur **Hospital Emergency Response-App** zurückzugehen.
 
 ### <a name="fields-and-description"></a>Felder und Beschreibung
 
 | **Feldname**  | **Beschreibung**                                                                                    |
 |-----------------|----------------------------------------------------------------------------------------------------|
-| Standort        | Name und Typ des Raums, der Station oder eines anderen speziellen Bereichs innerhalb der ausgewählten Einrichtung.  |
-| Ventilators (Beatmungsgeräte)            | Die Anzahl der derzeit genutzten Beatmungsgeräte.                                                            |
-| NIPPV (Geräte für nicht-invasive Überdruckbeatmung)        | Die Anzahl der derzeit genutzten Geräte für nicht-invasive Überdruckbeatmung.                                                         |
-| PAPR belts (Gurte für akkubetriebene gebläseunterstützte Atemschutzgeräte)        | Die Anzahl der derzeit genutzten Gurte für akkubetriebene gebläseunterstützte Atemschutzhauben.                                                         |
-| PAPR chargers (Ladegeräte für akkubetriebene gebläseunterstützte Atemschutzgeräte)        | Die Anzahl der derzeit genutzten Ladegeräte für akkubetriebene gebläseunterstützte Atemschutzhauben.                                                         |
-| PAPR hoods (Hauben für akkubetriebene gebläseunterstützte Atemschutzgeräte)        | Die Anzahl der derzeit genutzten Hauben für akkubetriebene gebläseunterstützte Atemschutzhauben.                                                         |
+| Standort        | Name und Typ des Raums, der Station oder eines anderen speziellen Standortes innerhalb der ausgewählten Einrichtung.  |
+| PUIs            | Anzahl der untersuchten Patienten.                                                            |
+| Positiv        | Anzahl der mit COVID-19 positiven Patienten.                                                         |
+| Intubiert        | Anzahl intubierter Patienten.                                                         |
+| Entlassen        | Anzahl der entlassenen Patienten mit COVID-19.                                                         |
+
+## <a name="equipment"></a>Arbeitsgerät
+
+![Arbeitsgerät](media/use/equipment.png)
+
+Senden Sie ortsspezifische Gerätedetails mit der App **Ausrüstung**. Sie können die Anzahl der verwendeten Geräte wie Beatmungsgeräte, NIPPV und PAPR aktualisieren.
+
+Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Response-App** gehen möchten, ohne Änderungen zu senden. Die Schaltfläche **Senden** sendet die von Ihnen eingegebenen Werte.
+
+Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **Ausrüstung** zurückzukehren, um einen weiteren Datensatz mit der Schaltfläche **Andere nachverfolgen** zu erstellen. Wählen Sie **Home** aus, um zur **Hospital Emergency Response-App** zurückzugehen.
+
+### <a name="fields-and-description"></a>Felder und Beschreibung
+
+| **Feldname**  | **Beschreibung**                                                                                    |
+|-----------------|----------------------------------------------------------------------------------------------------|
+| Standort        | Name und Typ des Raums, der Station oder eines anderen speziellen Standortes innerhalb der ausgewählten Einrichtung.  |
+| Beatmungsgeräte            | Anzahl der derzeit verwendeten Beatmungsgeräte.                                                            |
+| NIPPV (Nichtinvasive Überdrückbeatmung)        | Anzahl der verwendeten nichtinvasiven Überdruckventilatoren.                                                         |
+| PAPR-Gürtel        | Anzahl der verwendeten Atemschutzgurte mit Luftreinigung.                                                         |
+| PAPR-Ladegeräte        | Anzahl der verwendeten Atemschutzladegeräte mit Luftreinigung.                                                         |
+| PAPR-Hauben        | Anzahl der verwendeten Atemschutzhauben mit Luftreinigung.                                                         |
 
 ## <a name="staff"></a>Personal
 
 ![Personal](media/use/staff.png)
 
-Übermitteln Sie den standortspezifischen Stand bei Pflegepersonal, Patienten und Geräten. Sie müssen nicht in jedes Feld auf dem Bildschirm Werte eingeben. Geben Sie einen Wert in das Feld ein, der in der Lösungsdatenbank gespeichert werden soll.
+Senden Sie ein standortspezifisches Inventar für registrierte Krankenschwestern, Patienten und Arbeitsgeräte. Sie müssen nicht für jedes Feld auf dem Bildschirm Werte eingeben. Geben Sie eine Nummer für das Feld ein, das Sie in der Lösungsdatenbank speichern müssen.
 
-Wenn Sie z. B. drei examinierte Krankenschwestern oder -pfleger als beantragt eintragen möchten, geben Sie in das Feld **Registered nurses on duty - Requested** (Examiniertes Pflegepersonal im Dienst – beantragt) die Zahl 3 ein, und wählen Sie dann **Submit** (Senden) aus. Wenn Sie außerdem die Anzahl unter **Registered nurses on duty - Assigned** (Examiniertes Pflegepersonal im Dienst – zugewiesen) auf 6 aktualisieren möchten, geben Sie die Zahl 3 im Feld **Registered nurses on duty - Requested** (Examiniertes Pflegepersonal im Dienst – beantragt) und dann die Zahl 6 im Feld **Registered nurses on duty - Assigned** (Examiniertes Pflegepersonal im Dienst – zugewiesen) ein. Wählen Sie dann **Submit** (Senden) aus.
+Wenn Sie beispielsweise die Anzahl der angeforderten examinierten Krankenschwestern als 3 hinzufügen müssen, geben Sie 3 in das Feld **Examinierte Krankenschwestern im Dienst – Angefordert** ein und wählen Sie **Absenden**. Wenn Sie auch **Examinierte Krankenschwestern im Dienst – Zugewiesen** als 6 aktualisieren müssen, geben Sie 3 in das Feld **Examinierte Krankenschwestern im Dienst – Angefordert** ein, dann geben Sie 6 in **Examinierte Krankenschwestern im Dienst – Zugewiesen** ein und wählen Sie dann **Absenden** aus.
 
-Wählen Sie links oben **Back** (Zurück) aus, wenn Sie zur **Notfallreaktions-App für Krankenhäuser** zurückkehren möchten, ohne eine Änderung zu übermitteln. Über die Schaltfläche **Submit** (Senden) werden die von Ihnen eingegebenen Werte übermittelt.
+Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Response-App** gehen möchten, ohne Änderungen zu senden. Die Schaltfläche **Senden** sendet die von Ihnen eingegebenen Werte.
 
-Nach Übermittlung der Daten haben Sie die Möglichkeit, zur App **Staff** (Personal) zurückzukehren, um über die Schaltfläche **Track another** (Weiteren nachverfolgen) einen weiteren Datensatz zu erstellen. Wählen Sie **Home** (Start) aus, um zur **Notfallreaktions-App für Krankenhäuser** zurückzukehren.
+Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **Personal** zurückzukehren, um einen weiteren Datensatz mit der Schaltfläche **Andere nachverfolgen** zu erstellen. Wählen Sie **Home** aus, um zur **Hospital Emergency Response-App** zurückzugehen.
 
 ### <a name="fields-and-description"></a>Felder und Beschreibung
 
 | **Optionsname**               | **Beschreibung**                                                                                   |
 |-------------------------------|---------------------------------------------------------------------------------------------------|
-| Standort                      | Name und Typ des Raums, der Station oder eines anderen speziellen Bereichs innerhalb der ausgewählten Einrichtung. |
-| Number of patients (Anzahl der Patienten)            | Aktuelle Gesamtanzahl der Patienten am ausgewählten Standort.                                        |
-| **Registered nurses on duty** (Pflegepersonal im Dienst) |                                                                                                   |
-| *Partner*                    | Anzahl der Partner des Pflegepersonals am ausgewählten Standort.                             |
-| *Requested* (Beantragt)                   | Umfang des am ausgewählten Standort beantragten Pflegepersonals.                                  |
-| *Assigned* (Zugewiesen)                    | Anzahl des dem ausgewählten Standort zugewiesenen Pflegepersonals.                                    |
-| *Unassigned* (Nicht zugewiesen)                  | Umfang des Pflegepersonals, dem am ausgewählten Standort keine Aufgaben zugewiesen ist.                    |
-| **Nachverfolgung auf Ebene der Einrichtung** |                                                                                                   |
-| % of essential care personnel currently absent in this facility (Prozentsatz des in dieser Einrichtung derzeit nicht anwesenden essenziellen Pflegepersonals)                  | In dieser Einrichtung nicht anwesendes essenzielles Pflegepersonal als Prozentsatz des Personals in der **gesamten Einrichtung**.                    |
+| Standort                      | Name und Typ des Raums, der Station oder eines anderen speziellen Standortes innerhalb der ausgewählten Einrichtung. |
+| Anzahl der Patienten            | Aktuelle Gesamtzahl der Patienten am ausgewählten Standort.                                        |
+| **Registrierte Krankenschwestern im Dienst** |                                                                                                   |
+| *Partner*                    | Anzahl der am ausgewählten Standort anwesenden registrierten Krankenschwesterpartner.                             |
+| *Angefordert*                   | Anzahl der für den ausgewählten Standort angeforderten registrierten Krankenschwestern.                                  |
+| *Zugewiesen*                    | Anzahl der registrierten Krankenschwestern, die dem ausgewählten Standort zugewiesen sind.                                    |
+| *Nicht zugewiesen*                  | Anzahl der registrierten Krankenschwestern, die am ausgewählten Standort keiner Aufgabe zugewiesen sind.                    |
+| **Nachverfolgung auf Einrichtungsebene** |                                                                                                   |
+| % des derzeit abwesenden wichtigen Personals in dieser Einrichtung                  | Das Personal für die Grundversorgung fehlt derzeit im prozentualen Format der Gesamtsumme für **gesamte Einrichtung**.                    |
 
-## <a name="supplies"></a>Supplies (Verbrauchsmaterialien)
+## <a name="supplies"></a>Bedarf
 
-![Supplies (Verbrauchsmaterialien)](media/use/supplies.png)
+![Bedarf](media/use/supplies.png)
 
-In der App **Supplies** (Verbrauchsmaterialien) können Sie den Bestand an Verbrauchsmaterialien einsehen. In dieser App können Sie die Mengen der einzelnen Verbrauchsmaterialien im gesamten Bestand der Einrichtung und den täglichen Verbrauch aktualisieren.
+Zeigen Sie das Bedarfsinventar mit der App **Bedarf** an. Über diese App können Sie die Mengen der Bedarfskomponenten im gesamten Einrichtungsinventar und die tägliche Verbrauchsrate aktualisieren.
 
 > [!NOTE]
-> Geben Sie in beide Felder, **In stock** (Auf Lager) und **Used past 24 hr** (Verbrauch in den letzten 24 Stunden), Werte ein, bevor Sie **Submit** (Senden) auswählen.
+> Geben Sie Werte in beide Felder **Auf Lager** und **Verwendet in letzten 24 Stunden** ein, bevor Sie **Senden** auswählen.
 
-Wählen Sie links oben **Back** (Zurück) aus, wenn Sie zur **Notfallreaktions-App für Krankenhäuser** zurückkehren möchten, ohne eine Änderung zu übermitteln. Über die Schaltfläche **Submit** (Senden) werden die von Ihnen eingegebenen Werte übermittelt. Wählen Sie **Home** (Start) aus, um nach dem Übermitteln zur **Notfallreaktions-App für Krankenhäuser** zurückzukehren.
+Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Response-App** gehen möchten, ohne Änderungen zu senden. Die Schaltfläche **Senden** sendet die von Ihnen eingegebenen Werte. Wählen Sie nach dem Senden **Home** aus, um zur **Hospital Emergency Response-App** zurückzugehen.
 
 ### <a name="fields-and-description"></a>Felder und Beschreibung
 
-Die Liste der Verbrauchsmaterialien kann je nach Anforderungen Ihrer Organisation variieren. Die Namen von Verbrauchsmaterialien finden Sie in den Dokumentationsressourcen Ihrer Organisation.
+Die Artikelliste der Bedarfs-App kann je nach den Anforderungen Ihres Unternehmens unterschiedlich sein. Beschreibungen der Bedarfsnamen finden Sie in den Ressourcen Ihrer Organisation.
 
-IT-Administratoren können mithilfe der modellgesteuerten App für Power Apps die Liste der Artikel in der App „Supplies“ ergänzen oder aktualisieren. Weitere Informationen finden Sie in der [Konfigurationsanleitung](deploy-configure.md).
+IT-Administratoren können die Artikelliste der Bedarfs-App mithilfe der modellgesteuerten App für Power Apps hinzufügen oder aktualisieren. Weitere Informationen finden Sie unter [Konfigurationsanleitung](deploy-configure.md).
 
 > [!NOTE]
-> Die Werte der Artikel im Verbrauchsmaterialbestand müssen im Zahlenformat vorliegen.
+> Die Artikelwerte des Bedarfsinventars müssen im Zahlenformat vorliegen.
 
-## <a name="staffing-needs"></a>Staffing needs (Personalbedarf)
+## <a name="staffing-needs"></a>Personalbedarf
 
-![Staffing needs (Personalbedarf)](media/use/staffing-needs.png)
+![Personalbedarf](media/use/staffing-needs.png)
 
-Erfasst Beantragungen von Pflegepersonal in der gewählten Einrichtung. Bevor Sie die Beantragung von Pflegepersonal für eine Einrichtung übermitteln können, müssen Sie die als *Pflichtfeld* (*) gekennzeichneten Felder unbedingt ausfüllen.
+Sammelt Arbeitspoolanforderungen für die ausgewählte Einrichtung. Stellen Sie sicher, dass die als *erforderlich* (*) gekennzeichneten Felder ausgefüllt sind, bevor Sie die Arbeitspoolanforderung für eine Einrichtung senden können.
 
-Wählen Sie links oben **Back** (Zurück) aus, wenn Sie zur **Notfallreaktions-App für Krankenhäuser** zurückkehren möchten, ohne eine Änderung zu übermitteln. Über die Schaltfläche **Submit** (Senden) werden die von Ihnen eingegebenen Werte übermittelt. Wählen Sie **Home** (Start) aus, um nach dem Übermitteln zur **Notfallreaktions-App für Krankenhäuser** zurückzukehren.
+Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Response-App** gehen möchten, ohne Änderungen zu senden. Die Schaltfläche **Senden** sendet die von Ihnen eingegebenen Werte. Wählen Sie nach dem Senden **Home** aus, um zur **Hospital Emergency Response-App** zurückzugehen.
 
 ### <a name="fields-and-description"></a>Felder und Beschreibung
 
 | **Feldname**           | **Beschreibung**                                                                            |
 |--------------------------|--------------------------------------------------------------------------------------------|
-| Abteilung               | Der Name der Abteilung, das Pflegepersonal beantragt. Dies ist ein *Pflichtfeld*.             |
-| Department location (Standort der Abteilung)      | Der Standort der Abteilung.                                                                |
-| Anforderungstyp             | Typ des beantragten Personals, z. B. klinisch und nicht klinisch. Dies ist ein *Pflichtfeld*. |
-| Role needed (Erforderliche Rolle)              | Rolle des angeforderten Personals, z. B. Pfleger oder examinierte Krankenschwester.                          |
-| Needed now or next shift (Jetzt oder in der nächsten Schicht benötigt) | Wählen Sie eine Schicht für das beantragte Personal aus: aktuelle Schicht oder eine kommende Schicht.                |
-| How many (Anzahl)                 | Die Anzahl der benötigten Mitarbeiter im numerischen Format.                |
-| Details                  | Geben Sie zusätzliche Details oder Kommentare für die Beantragung von Personal an.                        |
+| Abteilung               | Name der Abteilung, die die Arbeitsanforderung anfordert. In diesem Feld ist ein Eintrag *erforderlich*.             |
+| Abteilungsstandort      | Standort der Abteilung.                                                                |
+| Anforderungstyp             | Art der Arbeitsanforderung wie klinisch und nicht klinisch. In diesem Feld ist ein Eintrag *erforderlich*. |
+| Rolle benötigt              | Rolle der angeforderten Arbeit wie Sitter oder eine registrierte Krankenschwester.                          |
+| Jetzt oder nächste Schicht benötigt | Wählen Sie eine Schicht für die angeforderte Arbeit, die aktuelle Schicht oder eine bevorstehende Schicht aus.                |
+| Wie viele                 | Wie viele Ressourcen benötigt werden, im Zahlenformat.                |
+| Details                  | Beschreiben Sie zusätzliche Details oder Kommentare für die Arbeitspoolanforderung.                        |
 
 
 
-## <a name="discharge-planning"></a>Discharge planning (Entlassungsplanung)
+## <a name="discharge-planning"></a>Entlassungsplanung
 
-![Discharge (Entlassen)](media/use/discharge.png)
+![Entlassung](media/use/discharge.png)
 
-Mithilfe der App  **Discharge planning** (Entlassungsplanung) können Sie Informationen zu Entlassungen und den Patientenstatus samt Gesamtanzahl übermitteln. Sie können die Entlassungsdetails der letzten 24 Stunden, die aktuellen Entlassungssperren und die Aufhebung der Sperren aktualisieren.
+Übermitteln Sie die Entlassungsinformationen und den Patientenstatus insgesamt mithilfe der App **Entlassungsplanung**. Sie können die Entlassungsdetails für die letzten 24 Stunden, die aktuellen Entlassungsbarrieren und die Aufteilung der Barrieren aktualisieren.
 
-Wählen Sie links oben **Back** (Zurück) aus, wenn Sie zur **Notfallreaktions-App für Krankenhäuser** zurückkehren möchten, ohne eine Änderung zu übermitteln. Über die Schaltfläche **Submit** (Senden) werden die von Ihnen eingegebenen Werte übermittelt. Wählen Sie **Home** (Start) aus, um nach dem Übermitteln zur **Notfallreaktions-App für Krankenhäuser** zurückzukehren.
+Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Response-App** gehen möchten, ohne Änderungen zu senden. Die Schaltfläche **Senden** sendet die von Ihnen eingegebenen Werte. Wählen Sie nach dem Senden **Home** aus, um zur **Hospital Emergency Response-App** zurückzugehen.
 
 ### <a name="fields-and-description"></a>Felder und Beschreibung
 
 | **Feldname**            | **Beschreibung**                                                    |
 |---------------------------|--------------------------------------------------------------------|
-| Autorisierung             | Anzahl der Patienten im Autorisierungsprozess.                   |
-| Durable medical equipment (Langlebige medizinische Geräte) | Anzahl der Patienten, die langlebige medizinische Geräte nutzen.            |
-| Guardianship (Vormundschaft)              | Anzahl der Patienten unter Vormundschaft.                             |
-| Home + Community Services (Ambulante Pflegedienste) | Anzahl der Patienten, die ambulante Pflegedienste nutzen.               |
-| Platzierung                 | Anzahl der benötigten Unterbringungen.                                       |
-| Skilled Nursing Facility (Pflegeheim)  | Anzahl der Pflegeheime.                              |
-| **Discharges** (Entlassungen)            |                                                                    |
-| Past 24 h (Letzte 24 Stunden)                 | Anzahl der Patienten, die voraussichtlich in den letzten 24 Stunden entlassen wurden.  |
-| Likely next 24 h (Wahrscheinlich in den nächsten 24 Stunden)          | Anzahl der Patienten, die in den nächsten 24 Stunden entlassen werden.                    |
+| Autorisierung             | Anzahl der Patienten im Autorisierungsverfahren.                   |
+| Langlebige medizinische Arbeitsgeräte | Anzahl der Patienten, die die langlebigen medizinischen Arbeitsgeräte verwenden.            |
+| Vormundschaft              | Anzahl der Patienten unter Vormundschaft.                             |
+| Heim- und Pflegedienste | Anzahl der Patienten, die Heim- und Pflegedienste nutzen.               |
+| Unterbringung                 | Anzahl der benötigten Unterbringungen.                                       |
+| Qualifizierte Pflegeeinrichtungen  | Anzahl qualifizierter Pflegeeinrichtungen.                              |
+| **Entlassungen**            |                                                                    |
+| Letzte 24 Stunden                 | Anzahl der Patienten, deren Entlassung in den letzten 24 Stunden erwartet wird.  |
+| Voraussichtlich nächste 24 Stunden          | Anzahl der Patienten, die in den letzten 24 Stunden entlassen wurden.                    |
 
-## <a name="other-options"></a>Weitere Optionen
+## <a name="other-options"></a>Weitere Möglichkeiten
 
-In diesem Abschnitt werden weitere Aktionen erläutert, die mit den Komponenten der mobilen Notfallreaktions-App für Krankenhäuser möglich sind.
+In diesem Abschnitt werden weitere Aktionen erläutert, die Sie mit den Komponenten der Hospital Emergency Response-Mobile App ausführen können.
 
-### <a name="end-shift---sign-out"></a>Abmelden bei Schichtende
+### <a name="end-shift---sign-out"></a>Schicht beenden – abmelden
 
-Sie können sich über das Profilsymbol links oben auf dem Bildschirm von der App abmelden.  
+Sie können sich über das Profilsymbol oben links auf dem Bildschirm von der App abmelden.  
 
-![Abmeldung](media/use/sign-out.png)
+![Abmelden](media/use/sign-out.png)
 
-Wählen Sie die Schaltfläche **End shift** (Schicht beenden) aus, um die Sitzung zu beenden und sich anzumelden.
+Wählen Sie die Schaltfläche **Schicht beenden** aus, um Ihre Sitzung zu beenden und sich abzumelden.
 
 > [!NOTE]
-> *End shift* (Schicht beenden) ist möglicherweise nicht möglich, wenn Ihr IT-Administrator die Gerätefreigabe deaktiviert hat.
+> *Schicht beenden* ist möglicherweise nicht verfügbar, wenn Ihr IT-Administrator die Gerätefreigabe deaktiviert hat.
 
 ### <a name="app-feedback"></a>App-Feedback
 
-Sie können in jeder Komponente der mobilen Notfallreaktions-App über die Option **App feedback** Ihr Feedback abgeben. Um Ihr Feedback zu übermitteln, wählen Sie links oben Ihr Profil und dann die Schaltfläche **Submit feedback** (Feedback senden) aus:
+Sie können Ihr Feedback mit der Option **App-Feedback** aus einer beliebigen mobilen Komponente der Notfalleinsatz-App teilen. Um Ihr Feedback zu teilen, wählen Sie Ihr Profil oben links aus und wählen Sie dann die Schaltfläche **Feedback senden** aus:
 
 ![Feedback geben](media/use/give-feedback.png)
 
-Wenn Sie **App-Feedback** auswählen, haben Sie die Möglichkeit, Lob, Anregungen oder ein Problem mit der App zu melden.
+Wenn Sie **App-Feedback** auswählen, haben Sie die Möglichkeit, ein Lob, eine Idee oder ein Problem mit der App zu teilen.
 
-### <a name="switch-facility"></a>Ändern der Einrichtung
+### <a name="switch-facility"></a>Einrichtung wechseln
 
-![Ändern der Einrichtung](media/use/switch-facility.png)
+![Einrichtung wechseln](media/use/switch-facility.png)
 
-Sie können jederzeit die Einrichtung ändern, indem Sie rechts oben auf dem Bildschirm den Namen der Einrichtung auswählen. Nach Wahl des Standortnamens gelangen Sie zum Bildschirm der **Notfallreaktions-App für Krankenhäuser**, auf dem Sie ein anderes Krankenhaus, eine andere Region oder eine andere Einrichtung auswählen können.
+Wechseln Sie die Einrichtung jederzeit, indem Sie den Namen der Einrichtung oben rechts auf dem Bildschirm auswählen. Nachdem Sie den Standortnamen ausgewählt haben, gelangen Sie zum Bildschirm der **Hospital Emergency Response-App**, auf dem Sie ein anderes Krankenhaus, eine andere Region oder eine andere Einrichtung auswählen können.
 
-## <a name="issues-and-feedback"></a>Issues und Feedback
+## <a name="issues-and-feedback"></a>Probleme und Feedback
 
-- Wenn Sie ein Issue mit der Beispiel-App für die Notfallreaktion für Krankenhäuser melden möchten, besuchen Sie <https://aka.ms/emergency-response-issues>.
+- Um ein Problem mit der Hospital Emergency Response-Beispiel-App zu melden, navigieren Sie zu <https://aka.ms/emergency-response-issues>.
 
-- Wenn Sie Feedback zur Beispiel-App für die Notfallreaktion für Krankenhäuser geben möchten, besuchen Sie <https://aka.ms/emergency-response-feedback>.
+- Feedback zur Hospital Emergency Response-Beispiel-App finden Sie unter <https://aka.ms/emergency-response-feedback>.
 
 

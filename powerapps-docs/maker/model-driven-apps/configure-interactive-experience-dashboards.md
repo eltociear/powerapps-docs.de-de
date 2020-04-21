@@ -1,12 +1,12 @@
 ---
-title: Konfigurieren von Dashboards für modellgesteuerte interaktive Funktionen in Power Apps | Microsoft-Dokumentation
-description: Informationen zum Konfigurieren von Dashboards für interaktive Funktionen in Power Apps
+title: Dashboards für modellgesteuerte interaktive Funktionen in Power Apps konfigurieren | Microsoft Docs
+description: Informationen zum Erstellen und Konfigurieren von Dashboards für interaktive Funktionen in Power Apps
 keywords: Interaktive Dashboards; Customer Service; Microsoft Dynamics 365; Interaktiver Service-Hub
 author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 04/19/2019
+ms.date: 04/08/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,20 +22,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fefeebb0106907e59ea1fd5a13d620cdeb315774
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 584aeae66230e94296b386023c00f95d07c51a13
+ms.sourcegitcommit: 7d3caf698d367a56af9e16c43af8005adb9f87cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884999"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3250055"
 ---
-# <a name="configure-model-driven-app-interactive-experience-dashboards"></a>Informationen zum Konfigurieren von Dashboards für interaktive Funktionen
+# <a name="create-and-configure-model-driven-app-interactive-experience-dashboards"></a>Informationen zum Erstellen und Konfigurieren von Dashboards für interaktive Funktionen
 
 Dashboards für interaktive Funktionen können ein zentraler Arbeitsbereich für App-Benutzer sein, wie beispielsweise Servicebeauftragte, damit sie Arbeitsauslastungsinformationen anzeigen können und tätig werden können. Sie sind vollständig konfigurierbar, auf Sicherheits-Rolle basierend und liefern Arbeitsauslastungsinformationen für mehrere Streams in Echtzeit. Interaktive Dashboardbenutzer müssen nicht die ganze Anwendung durchgehen, um nach einem bestimmten Datensatz zu suchen. Sie können direkt vom Dashboard aus daraufhin handeln. 
 
  Es gibt zwei Arten von Dashboards mit interaktiven Funktionen: Streamübersichts- und Streamdetail-Dashboards. Darüber hinaus können Streamübersichts-Dashboard homepage- oder entitätsspezifische Dashboards sein. Die entitätsspezifischen Dashboards werden in einem anderen Teil der Benutzeroberfläche konfiguriert und teilweise mit den entitätsspezifischen Konfigurationsinformationen vorab geladen.  
   
  Die Streamübersichts-Dashboards zeigen Daten in Echtzeit für mehrere Datenstreams an. Es gibt keine Begrenzung darüber, wie viele Streams Sie am Dashboard konfigurieren können. Die Daten in einem Stream können nur auf einer Entität, basieren, aber jeder Stream kann auf Basis einer anderen Entität basiert werden. In entitätsspezifischen Dashboards basieren alle Streams auf derselben Entität. Die Daten fließen aus verschiedenen Ansichten oder Warteschlangen, beispielsweise **Meine Aktivitäten**, **Meine Anfragen** oder **Anfragen in der Banking-Warteschlange**. 
+ 
+> [!NOTE]
+> In den hier beschriebenen Beispielen wird die Anfrageentität verwendet, die mit der Dynamics 365 Customer Service -App verfügbar ist.
   
  Die Streamdetail-Dashboards zeigen Echtzeitdaten über einen Stream basierend auf einer Entitätsansicht oder Warteschlange an. Die Kacheln befinden sich auf der rechten Seite der Dashboards und werden immer angezeigt. Die Streamdetail-Dashboards sind in der Regel für Serviceleiter und -Manager der Ebene 2 hilfreich, die weniger aber komplexere oder eskalierte Anfragen überwachen.  
   
@@ -97,11 +100,12 @@ In diesem Beispiel gibt es zwei interaktive Dashboardoptionen, die in der Anfrag
   
 ### <a name="configure-the-appears-in-global-filter-in-interactive-experience-option"></a>Konfigurieren der Option „Wird im globalen Filter in interaktiven Funktionen angezeigt”
 
-1. Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).  
-2. Erweitern Sie unter **Komponenten** den Ordner **Entitäten**, und erweitern Sie dann die gewünschte Entität.
-3. Wählen Sie im Navigationsbereich **Felder** aus, und doppelklicken Sie im Raster auf das Feld, das Sie aktivieren möchten.
-4. Aktiveren Sie auf der Registerkarte **Allgemein** das Kontrollkästchen **Wird im globalen Filter in interaktiven Funktionen angezeigt**. Klicken Sie auf **Speichern und schließen**.
-5. Wählen Sie **Alle Anpassungen veröffentlichen** aus, damit die Änderungen wirksam werden.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+2.  Wählen Sie **Lösungen**, öffnen Sie die gewünschte Lösung wählen Sie dann in der Symbolleiste **In klassischen Modus wechseln** aus. 
+3. Erweitern Sie unter **Komponenten** den Ordner **Entitäten**, und erweitern Sie dann die gewünschte Entität.
+4. Wählen Sie im Navigationsbereich **Felder** aus, und doppelklicken Sie im Raster auf das Feld, das Sie aktivieren möchten.
+5. Aktiveren Sie auf der Registerkarte **Allgemein** das Kontrollkästchen **Wird im globalen Filter in interaktiven Funktionen angezeigt**. Klicken Sie auf **Speichern und schließen**.
+6. Wählen Sie **Alle Anpassungen veröffentlichen** aus, damit die Änderungen wirksam werden.
   
  Die Felder, die Sie für **Wird im globalen Filter in interaktiven Funktionen angezeigt** aktivieren, werden im Flyoutfenster für den globalen Filter angezeigt, wenn auf das Symbol des globalen Filters auf der Dashboardkopfzeile geklickt wird. In Flyoutfenster können die Servicemitarbeiter die Felder auswählen, auf denen sie global filtern möchten, z. B. in Diagrammen und ebenfalls in Streams und Kacheln, die auf der Filterentität basieren.   
   
@@ -114,11 +118,12 @@ In diesem Beispiel gibt es zwei interaktive Dashboardoptionen, die in der Anfrag
   
 ### <a name="configure-the-sortable-in-interactive-experience-dashboard-option"></a>Konfigurieren der Option „Im Dashboard für interaktive Funktionen sortierbar”
   
-1. Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).  
-2. Erweitern Sie unter **Komponenten** den Ordner **Entitäten**, und erweitern Sie dann die gewünschte Entität.
-3. Wählen Sie im Navigationsbereich Felder aus, und doppelklicken Sie im Raster auf das Feld, das Sie aktivieren möchten.
-4. Aktiveren Sie auf der Registerkarte **Allgemein** das Kontrollkästchen **Im Dashboard für interaktive Funktionen sortierbar**. Klicken Sie auf **Speichern und schließen**.
-5. Wählen Sie **Alle Anpassungen veröffentlichen** aus, damit die Änderungen wirksam werden.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+2.  Wählen Sie **Lösungen**, öffnen Sie die gewünschte Lösung wählen Sie dann in der Symbolleiste **In klassischen Modus wechseln** aus. 
+3. Erweitern Sie unter **Komponenten** den Ordner **Entitäten**, und erweitern Sie dann die gewünschte Entität.
+4. Wählen Sie im Navigationsbereich **Felder** aus, und doppelklicken Sie im Raster auf das Feld, das Sie aktivieren möchten.
+5. Aktiveren Sie auf der Registerkarte **Allgemein** das Kontrollkästchen **Im Dashboard für interaktive Funktionen sortierbar**. Klicken Sie auf **Speichern und schließen**.
+6. Wählen Sie **Alle Anpassungen veröffentlichen** aus, damit die Änderungen wirksam werden.
   
 Die Felder, die Sie zum Sortieren konfigurieren, werden in der Dropdownliste in der Streamkopfzeile angezeigt. 
 
@@ -131,44 +136,50 @@ Die folgende Abbildung zeigt den Flyoutdialog mit der Liste der für das Sortier
   
 #### <a name="enable-security-roles-for-interactive-dashboards"></a>Sicherheitsrollen für interaktive Dashboards aktivieren
 
-1. Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
   
-2. Wählen Sie unter **Komponenten** die Option **Dashboards** aus.  
+2.  Wählen Sie **Lösungen** aus und öffnen Sie dann die gewünschte Lösung. 
+
+3.  Wählen Sie das gewünschte Dashboard und dann in der Symbolleiste **Sicherheitsrollen aktivieren** aus. 
   
-3.  Wählen Sie im Raster das gewünschte interaktive Dashboard aus, und wählen Sie **Sicherheitsrollen aktivieren** auf der Taskleiste aus.  
-  
+    > [!div class="mx-imgBorder"] 
+    > ![Sicherheitsrollen aktivieren](media/dashboard-enable-security-roles.png)
+
 4.  Wählen Sie im Dialogfeld **Sicherheitsrollen zuweisen** die Option **Nur für ausgewählte Sicherheitsrollen anzeigen** aus und Wählen Sie die Rollen aus, die Sie aktivieren möchten. Wählen Sie **OK** aus.  
+
+     ![Sicherheitsrollen aktivieren](media/security-roles.png "Sicherheitsrollen aktivieren")    
   
-5.  Wählen Sie **Alle Anpassungen veröffentlichen** aus, damit die Änderungen wirksam werden.    
+5.  Wählen Sie **Veröffentlichen** aus, damit die Änderungen wirksam werden.    
   
- ![Sicherheitsrollen aktivieren](media/security-roles.png "Sicherheitsrollen aktivieren")    
   
 <a name="BKMK_Configure"></a>   
-## <a name="configure-interactive-experience-dashboards"></a>Interaktive Dashboards konfigurieren  
- In den folgenden Abschnitten wird das Konfigurieren verschiedener Typen von interaktiven Dashboards beschrieben.  
+## <a name="create-interactive-experience-dashboards"></a>Interaktive Dashboards erstellen  
+In den folgenden Abschnitten wird das Erstellen und Konfigurieren der verschiedenen Typen von interaktiven Dashboards beschrieben.  
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Konfigurieren Sie ein interaktives Dashboard mit mehreren Streams mithilfe des Layouts mit 4 Spalten.  
  
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
   
-2.  Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. 
+2.  Wählen Sie **Lösungen**, öffnen Sie die gewünschte Lösung wählen Sie dann in der Symbolleiste **In klassischen Modus wechseln** aus. 
 
-3.  Wählen Sie die Registerkarte **Dashboards** und anschließend auf der Symbolleiste die Option **Dashboard hinzufügen** aus. 
+3.  Wählen Sie im linken Navigationsbereich **Dashboards** aus, wählen Sie in der Symbolleiste **Neu** und dann **Dashboard für interaktive Funktionen** aus. 
+
+    ![Neues Dashboard für interaktive Funktionen](media/interactive-exp-dash-sol-explorer.png)
   
 4.  Wählen Sie das Layout aus, entweder mit einer Spaltenbreite von 2, 3 oder 4.  
   
 5.  Wenn das Dashboardformular geöffnet wird, geben Sie die Filterungsinformationen oben im Formular ein, wie hier beschrieben.  
  
- > [!div class="mx-imgBorder"] 
- > ![Visuelle Filter hinzufügen](media/interactive-dashboards-add-visual-filters.png "Visuelle Filter hinzufügen")  
+    > [!div class="mx-imgBorder"] 
+    > ![Visuelle Filter hinzufügen](media/interactive-dashboards-add-visual-filters.png "Visuelle Filter hinzufügen")  
   
    - **Filterentität**: Die visuellen Filter und globalen Filterattribute basieren auf dieser Entität.  
       
-    - **Entitätsansicht**: Die visuellen Filter basieren auf dieser Ansicht.  
+   - **Entitätsansicht**: Die visuellen Filter basieren auf dieser Ansicht.  
       
-    - **Filtern nach**: Das Feld, für das der Zeitrahmenfilter gilt.  
+   - **Filtern nach**: Das Feld, für das der Zeitrahmenfilter gilt.  
       
-    - **Zeitrahmen**: Der standardmäßige Zeitrahmenfilterwert für das Feld **Filtern nach**.  
+   - **Zeitrahmen**: Der standardmäßige Zeitrahmenfilterwert für das Feld **Filtern nach**.  
       
  Nachdem Sie die Filterungsinformationen angegeben haben, starten Sie das Hinzufügen von Komponenten für die Diagramme und die Datenstreams. Um eine Komponente hinzufügen, wählen Sie das Element in der Mitte des Diagramms oder des Streams aus. Wenn der Dialog angezeigt wird, wählen Sie die erforderlichen Informationen aus der Dropdownliste aus, wie in den folgenden Abbildungen zu sehen.  
   
@@ -205,23 +216,17 @@ Die folgende Abbildung ist ein Beispiel eines vollständig konfigurierten Diagra
   
 1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.   
   
-2. Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. Wählen Sie auf die Registerkarte **Dashboards** aus.  
+2. Wählen Sie **Lösungen** aus, öffnen Sie dann die gewünschte Lösung und öffnen Sie dann das interaktive Dashboard.  
   
-     -ODER-  
-   
-   Öffnen Sie den [Projektmappen-Explorer](advanced-navigation.md#solution-explorer) und dann unter **Komponenten** die Option **Dashboards** aus.
+3.  Wählen Sie den zu bearbeitenden Stream aus, um ihn auszuwählen, und wählen Sie dann **Komponente bearbeiten** aus.  
   
-3.  Wählen Sie im Gitter das interaktive Dashboard aus, das Sie bearbeiten möchten, um es zu öffnen.  
+4.  Abhängig davon, ob Sie dem Stream eine Ansicht oder eine Warteschlange hinzufügen möchten, wählen Sie die Ansichts- oder die Warteschlangendetails für den Stream aus, und wählen Sie dann **Festlegen** aus.  
   
-4.  Wählen Sie den zu bearbeitenden Stream aus, um ihn auszuwählen, und wählen Sie dann **Komponente bearbeiten** aus.  
+5.  Wählen Sie **Speichern** aus.  
   
-5.  Abhängig davon, ob Sie dem Stream eine Ansicht oder eine Warteschlange hinzufügen möchten, wählen Sie die Ansichts- oder die Warteschlangendetails für den Stream aus, und wählen Sie dann **Festlegen** aus.  
+ Sie können einen einzelnen Stream auch aus einem Dashboard löschen. Wählen Sie dazu den Stream aus, und wählen Sie dann auf der Symbolleiste die Option **Löschen** aus.  
   
-6.  Wählen Sie **Speichern** aus.  
-  
- Sie können einen einzelnen Stream auch aus einem Dashboard löschen. Wählen Sie dazu den Stream aus, und wählen Sie dann auf der Befehlsleiste die Option **Löschen** aus.  
-  
-### <a name="configure-an-entity-specific-dashboard"></a>Konfigurieren eines entitätsspezifischen Dashboards  
+### <a name="create-an-entity-specific-dashboard"></a>Erstellen eines entitätsspezifischen Dashboards  
  Ein entitätsspezifisches Dashboard ist ein Streamübersichts-Dashboard. Das Konfigurieren dieses Dashboard verläuft ähnlich wie das Konfigurieren eines Homepage-Streamübersichts-Dashboards, aber es geschieht an einer anderen Position der Benutzeroberfläche und es gibt weitere kleine Unterschiede. 
 
 Anstatt eine Entität auszuwählen, sind beispielsweise einige Felder im entitätsspezifischen Dashboard für die Entität, für die Sie das Dashboard erstellen, voreingestellt.  
@@ -244,7 +249,7 @@ Anstatt eine Entität auszuwählen, sind beispielsweise einige Felder im entitä
   
 <a name="BKMK_ConfigureColors"></a>   
 ## <a name="configure-dashboard-colors"></a>Dashboardfarben konfigurieren  
- Für alle Typfelder wie **Optionssatz** und **Zwei Optionen**, wie beispielsweise **Anfragetyp**, **IsEscalated** oder **Priorität** der **Anfrage**-Entität, können Sie eine bestimmte Farbe konfigurieren, die in den Diagrammen und Streams für bestimmte Feldwerte angezeigt wird. Beispielsweise können Anfragen mit hoher Priorität im interaktiven Diagramm in Rot angezeigt werden, Anfragen mit mittlerer Priorität in Blau und solche mit geringer Priorität in Grün. In den Streams befindet sich eine dünne vertikale Linie in Farbe neben der Arbeitselementbeschreibung.  
+Für alle Typfelder wie **Optionssatz** und **Zwei Optionen**, wie beispielsweise **Anfragetyp**, **IsEscalated** oder **Priorität** der **Anfrage**-Entität, können Sie eine bestimmte Farbe konfigurieren, die in den Diagrammen und Streams für bestimmte Feldwerte angezeigt wird. Beispielsweise können Anfragen mit hoher Priorität im interaktiven Diagramm in Rot angezeigt werden, Anfragen mit mittlerer Priorität in Blau und solche mit geringer Priorität in Grün. In den Streams befindet sich eine dünne vertikale Linie in Farbe neben der Arbeitselementbeschreibung.  
   
 > [!NOTE]
 >  Die Farbkennzeichnung ist für die Tagdiagramme und -Ringdiagramme verfügbar. Diese Diagramme erscheinen auf dem Dashboard in Weiß, Grau und Schwarz.  
@@ -258,7 +263,7 @@ Anstatt eine Entität auszuwählen, sind beispielsweise einige Felder im entitä
   
 5.  Wenn das Dialogfeld **Listenwert ändern** angezeigt wird, geben Sie im Textfeld **Farbe** den neuen Wert ein. Wählen Sie **OK** aus.  
   
-     Klicken Sie auf **Speichern und schließen**.  
+6.  Klicken Sie auf **Speichern und schließen**.  
   
 7.  Wählen Sie **Veröffentlichen** aus, damit die Änderungen wirksam werden.  
   
@@ -267,7 +272,7 @@ Im folgenden Beispiel ändern wir die Farbe für das Feld **IsEscalated**. Verwe
  > [!div class="mx-imgBorder"] 
  > ![Farbe im Dashboard ändern](media/edit-color.png "Farbe im Dashboard ändern")  
   
-Wenn das Dialogfeld **Listenwert bearbeiten** angezeigt wird, wählen Sie die Farbe, wie hier gezeigt:  
+Wenn das Dialogfeld **Listenwert bearbeiten** angezeigt wird, geben Sie den Hexadezimalfarbcode ein, z. B. #800000, wie hier gezeigt:  
   
  ![Ändern der Dashboardfarbe](media/modify-color.png "Ändern der Dashboardfarbe")  
 

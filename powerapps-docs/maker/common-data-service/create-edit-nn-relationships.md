@@ -2,7 +2,7 @@
 title: Überblick über die Erstellung von m:n-Entitätsbeziehungen in Common Data Service | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie N:N-Beziehungen erstellen
 ms.custom: ''
-ms.date: 05/29/2018
+ms.date: 04/07/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,16 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 907a1147630cc779e6c1af7be2486548f1907c5a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5f5c0f78f94ae2ec452bcbf6f5d677723d5ede52
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865731"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238280"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>Überblick über die Erstellung von n:m-Entitätsbeziehungen
 
 1:n-Entitätsbeziehungen richten eine Hierarchie zwischen Datensätzen ein. Mit viele-zu-viele-Beziehungen (N:N) gibt es keine explizite Hierarchie. Es müssen keine Suchfelder oder Verhaltensweisen konfiguriert werden. Mit n:n-Beziehungen erstellte Datensätze gelten als gleichwertig, und die Beziehung ist reziprok.  
+
+Ein Beispiel für eine Viele-zu-Viele-Beziehung wird zwischen zwei Standardentitäten definiert, die in der Dynamics 365 Sales-App enthalten sind. Die Verkaufschancenentität verfügt über eine N:N-Beziehung mit der Mitbewerberentität. Dies ermöglicht das Hinzufügen mehrerer Wettbewerber zur Verkaufschance und mehrerer Verkaufschancen, die demselben Wettbewerber zugeordnet sind. 
   
 Mit n:n-Beziehungen speichert eine Beziehungs (oder Überschneidungs)-Entität die Daten, die die Entitäten zuweist. Diese Entität weist eine n:n-Beziehung zu beiden verknüpften Entitäten auf und speichert nur die für die Definition der Beziehung benötigten Werte. Sie können einer Beziehungsentität keine benutzerdefinierten Felder hinzufügen und sie wird nie in der Benutzeroberfläche angezeigt. 
   

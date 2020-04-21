@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 01/03/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 37a515486afd2c57fa07cea24905584e9515ba60
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979555"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238500"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C-Anbietereinstellungen für Portale
 
@@ -28,29 +28,31 @@ Beim Konfigurieren von [!include[Azure](../../../includes/pn-azure-shortest.md)]
 |-------------------|-------|-----------------------------------------------------------------------|
 | Anwendungsname  |       | Name der Anwendung, die das Portal als vertrauende Seite darstellt |
 | Anwendungs-ID    |       | Die Anwendungs-ID, die mit der in Azure Active Directory B2C erstellten Anwendung verknüpft ist.  |
-| Richtlinien-Anmeldungs-URL |       | Die im Metadatenendpunkt definierte Aussteller-URL (iss).                |
+| Aussteller-URL |       | Die im Metadatenendpunkt definierte Aussteller-URL (iss).                |
 | Verbundname   |       | Ein eindeutiger Name zur Identifizierung des Typs des Verbundanbieters wie beispielsweise „B2C”. Dieser wird in den Website-Einstellungsnamen verwendet, um Konfigurationseinstellungen für diesen speziellen Anbieter zu gruppieren.                                                                      |
 | | | |
 
 ### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>Verwenden von Azure AD B2C als Identitätsanbieter für Ihr Portal
 
 1. Melden Sie sich bei Ihrem [Azure-Portal](https://portal.azure.com/) an.
-2. [Erstellen Sie einen Azure AD B2C Mandanten](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
-3. Wählen Sie auf der Navigationsleiste ganz links **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C**.
-4. [Erstellen einer Azure-Anwendung](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
+1. [Erstellen Sie einen Azure AD B2C Mandanten](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
+1. Wählen Sie auf der Navigationsleiste ganz links **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C**.
+1. [Erstellen einer Azure-Anwendung](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
 
    > [!Note]
    > Sie müssen **Ja** für das Feld **Impliziten Fluss zulassen** auswählen und Ihre Portal-URL im Feld **Antwort-URL** angeben. Der Wert im Feld **Antwort-URL** sollte das Format [Portaldomäne]/Anmelde-[Verbundname] aufweisen. Zum Beispiel: `https://contosocommunity.microsoftcrmportals.com/signin-B2C`.
 
-5. Kopieren Sie den Anwendungsnamen, und geben Sie ihn als Wert für den Anwendungsnamen in der vorherigen Tabelle ein.
-6. Kopieren Sie die Anwendungs-ID, und geben Sie sie als Wert für die Anwendungs-ID in der vorherigen Tabelle ein.
-7. [Erstellen einer Registrierungs- oder Anmelderichtlinie](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
-8. Wählen Sie die Richtlinie aus, und wählen Sie dann **Bearbeiten** aus.
-9. Wählen Sie **Token-, Sitzungs- und SSO-Konfiguration** aus.
-10. Wählen Sie in der Liste **Ausstelleranspruch (iss)** die URL aus, deren Pfad **/tfp** enthält.
-11. Speichern Sie die Richtlinie.
-12. Klicken Sie auf die URL im Feld **Metadatenendpunkte für diese Richtlinie**.
-13. Kopieren Sie den Wert des Ausstellerfelds, und geben Sie diesen als Wert der Richtlinien-Anmeldungs-URL in der vorherigen Tabelle ein. 
+1. Kopieren Sie den Anwendungsnamen, und geben Sie ihn als Wert für den Anwendungsnamen in der vorherigen Tabelle ein.
+1. Kopieren Sie die Anwendungs- oder Client-ID, und geben Sie sie als Wert für die Anwendungs-ID in der vorherigen Tabelle ein.
+1. [Erstellen einer Registrierungs- oder Anmelderichtlinie](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
+1. Navigieren Sie zur Ressource **Azure AD B2C**.
+1. Wählen Sie unter Richtlinien **Benutzerflüsse** aus.
+1. Wählen Sie die neu erstellte Registrierungs- und Anmelderichtlinie.
+1. Wählen Sie aus der Liste **Einstellungen** **Eigenschaften** aus.
+1. Wählen Sie unter **Token-Kombatibilitätseinstellungen** in der Liste **Ausstelleranspruch (iss)** die URL aus, deren Pfad **/tfp** enthält.
+1. Speichern Sie die Richtlinie.
+1. Klicken Sie auf die URL im Feld **Metadatenendpunkte für diese Richtlinie**.
+1. Kopieren Sie den Wert des Ausstellerfelds, und geben Sie diesen als Wert der Aussteller-URL in der vorherigen Tabelle ein. 
 
 ## <a name="portal-configuration"></a>Portalkonfiguration
 
@@ -64,7 +66,7 @@ Wenn Sie den B2C-Mandanten in [!include[Azure](../../../includes/pn-azure-shorte
 5. Erstellen Sie die folgenden Websiteeinstellungen:
    -   **Name**: Authentication/OpenIdConnect/[Federation-Name]/Authority
 
-       **Wert**: [Policy-Signin-URL]
+       **Wert**: [Aussteller-URL]
    -   **Name**: Authentication/OpenIdConnect/[Federation-Name]/ClientId
 
        **Wert**: [Application-ID]
@@ -80,7 +82,7 @@ Wenn Sie den B2C-Mandanten in [!include[Azure](../../../includes/pn-azure-shorte
 7. Zum Hartcodieren Ihres Portals für einen einzigen Identitätsanbieter erstellen Sie die folgenden Websiteeinstellungen:
    - **Name**: Authentication/Registration/LoginButtonAuthenticationType
 
-     **Wert**: [Policy-Signin-URL]
+     **Wert**: [Aussteller-URL]
 
 8. Um die Kennwortrücksetzung zu unterstützen, erstellen Sie die erforderlichen Websiteeinstellungen, die [hier](#password-reset) beschrieben sind.
 9. Um die Anspruchszuordnung zu unterstützen, erstellen Sie die erforderlichen Websiteeinstellungen, die [hier](#claims-mapping) beschrieben sind.
@@ -94,7 +96,7 @@ Die folgenden Websiteeinstellungen sind erforderlich, wenn Sie die Kennwortrück
 | Website-Einstellung                                                        | Beschreibung                                                                                                          |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Authentication/OpenIdConnect/[Federation-Name/PasswordResetPolicyId | ID der Richtlinie für die Kennwortrücksetzung.                                                                                     |
-| Authentication/OpenIdConnect/[Federation-Name]/ValidIssuers         | Eine durch Komma getrennte Liste von Ausstellern, die die [Richtlinien-Anmeldungs-URL] und den Aussteller der Richtlinie für die Kennwortrücksetzung umfasst. |
+| Authentication/OpenIdConnect/[Federation-Name]/ValidIssuers         | Eine durch Komma getrennte Liste von Ausstellern, die die [Aussteller-URL] und den Aussteller der Richtlinie für die Kennwortrücksetzung umfasst. |
 |Authentication/OpenIdConnect/[Federation-Name]/DefaultPolicyId | ID der Anmeldungs- oder Registrierungsrichtlinie.|
 |||
 

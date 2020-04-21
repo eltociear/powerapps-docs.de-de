@@ -1,29 +1,27 @@
 ---
 title: Lizenzanforderungen für Entitäten | Microsoft Docs
 description: Eine Erläuterung der Lizenzanforderungen für Unternehmen unter Common Data Service.
-author: lancedMicrosoft
-manager: kvivek
+author: KumarVivek
 ms.service: powerapps
-ms.component: cds
 ms.topic: conceptual
-ms.date: 03/20/2020
-ms.author: lanced
+ms.date: 04/15/2020
+ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0a6b950c35043ecf47f45373f758ce62953945e7
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: eddcaff1464b0ac541b97f19889e2635f47d9cd9
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156524"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264782"
 ---
 # <a name="license-requirements-for-entities"></a>Lizenzanforderungen für Entitäten
 
 > [!IMPORTANT]
-> Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [Power Apps Lizenzhandbuch](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> Dieses Thema ist veraltet und wird in Kürze aktualisiert, um die neuesten Lizenzierungsänderungen zu berücksichtigen, die ab dem 1. Oktober 2019 gelten. Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [Power Apps Lizenzhandbuch](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 App-Ersteller können die meisten der innerhalb von Common Data Service verfügbaren Entitäten (einschließlich benutzerdefinierter Entitäten und Entitäten, die Teil des gemeinsamen Datenmodells sind) verwenden, um Anwendungen und Abläufe für Benutzer zu erstellen, die eine Lizenz für Power Apps Plan 1 oder Power Automate Plan 1 haben. In einigen Fällen enthalten Entitäten komplexe Geschäftslogik oder sind an Dynamics 365-Anwendungen gebunden, die von App-Benutzer eine bestimmte Lizenz erfordern. 
 

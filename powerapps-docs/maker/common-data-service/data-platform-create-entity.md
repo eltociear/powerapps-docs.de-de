@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d5ce493618d5a7b7d736f56714fcfa2a1c6ba068
-ms.sourcegitcommit: da1a13776f3e27d6b3d2157d17196681e6fe3619
+ms.openlocfilehash: b85441d10f3079e90f911939d3752e5ccce91bc6
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "2922822"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238324"
 ---
 # <a name="create-a-custom-entity"></a>Benutzerdefinierte Entität erstellen
 In Power Apps definiert eine *Entität* Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. Sie können dann diese Daten dann aufrufen, indem Sie eine App entwickeln, die auf diese Entität verweist. Power Apps bietet integrierte Standardentitäten für typische Szenarien in einer Organisation (z. B. das Nachverfolgen von Terminen), doch es gibt möglicherweise Zeiten, in denen Sie benutzerdefinierte Entitäten zum Speichern von Daten erstellen müssen, die spezifisch für Ihre Organisation sind.
@@ -66,7 +66,7 @@ Melden Sie sich bei Power Apps unter [https://make.powerapps.com](https://make.p
       > [!Note]
       > Stellen Sie sicher, dass die Option **Aktivitätsmenüs anzeigen** aktiviert ist, bevor Sie die Entität erstellen.
 
-    f. Erweitern Sie **Einstellungen erstellen und aktualisieren**, und aktivieren Sie das Kontrollkästchen **Schnellerfassungsformulare aktivieren**. Diese Option stellt sicher, dass Sie das Schnellerfassungsformular zum Erstellen eines Datensatzes verwenden können.
+    f. Erweitern Sie **Einstellungen erstellen und aktualisieren**, und aktivieren Sie das Kontrollkästchen **Schnellerfassungsformulare aktivieren**. Diese Option stellt sicher, dass Sie das Schnellerstellungsformular verwenden können, um einen Datensatz zu erstellen.
     
     g. Klicken Sie auf **Erstellen**, wenn Sie fertig sind.
      

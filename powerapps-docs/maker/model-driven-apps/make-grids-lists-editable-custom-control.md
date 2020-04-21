@@ -2,7 +2,7 @@
 title: Modellgesteuerte App-Raster (Listen) bearbeitbar machen mit Hilfe des benutzerdefinierten Steuerelements für bearbeitbares Raster mit Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie das benutzerdefinierte Steuerelement „Bearbeitbares Raster” verwendet wird
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 04/09/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 866c058ad873fa278ee0bb8bf026983ed0201df7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: edb149b72716eb22e97ffce2d54a14be3bf84de5
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867981"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258513"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>Modellgetriebene App-Raster (Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster
 
@@ -47,7 +47,7 @@ In früheren Versionen von Dynamics CRM konnten Benutzer Daten nicht direkt in R
   
 -   Navigation mit Tastatur oder Maus  
   
--   Gruppieren und Sortieren (Sie können nach einer beliebigen Spalte in der aktuellen Ansicht gruppieren)  
+-   Gruppieren und Sortieren (Sie können clientseitige Datensätze nach einer beliebigen Spalte in der aktuellen Ansicht gruppieren)  
   
 -   Filtern  
   
@@ -140,7 +140,11 @@ In früheren Versionen von Dynamics CRM konnten Benutzer Daten nicht direkt in R
 |Firma<br /><br /> Termin<br /><br /> Buchbare Ressource<br /><br /> Buchbare Ressourcenbuchung<br /><br /> Kopfzeile für buchbare Ressourcenbuchungen<br /><br /> Buchbare Ressourcenkategorie<br /><br /> Zuordnung der buchbaren Ressourcenkategorie<br /><br /> Merkmal der buchbaren Ressource<br /><br /> Buchbare Ressourcengruppe<br /><br /> Buchungsstatus<br /><br /> Anfrage<br /><br /> Kateg.<br /><br /> Merkmal<br /><br /> Mitbewerber<br /><br /> Kontakt<br /><br /> E-Mail<br /><br /> Berechtigung<br /><br /> Feedback<br /><br /> Rechnung<br /><br /> Wissensartikel<br /><br /> Wissensartikelansichten<br /><br /> Wissensdatenbankdatensatz<br /><br /> Lead<br /><br /> Verkaufschance<br /><br /> Auftrag<br /><br /> Telefonanruf<br /><br /> Preisliste<br /><br /> Produkt<br /><br /> Warteschlange<br /><br /> Angebot<br /><br /> Bewertungsmodell<br /><br /> Bewertungswert<br /><br /> SLA-KPI-Instanz<br /><br /> Social Media-Aktivität<br /><br /> Social Media-Profil<br /><br /> Synchronisierungsfehler<br /><br /> Aufgabe<br /><br /> Teams<br /><br /> Benutzer|Aktivität<br /><br /> Anlage<br /><br /> Element der Kanalzugriffsprofilregel<br /><br /> Mitbewerberadresse<br /><br /> Verbindung<br /><br /> Verbindungsrolle<br /><br /> E-Mail-Signatur<br /><br /> E-Mail-Vorlage<br /><br /> Abgelaufener Prozess<br /><br /> Rechnung (Produkt)<br /><br /> Vorfall mit Wissensartikel<br /><br /> Lead für Vertriebs-Verkaufschance<br /><br /> Prozess<br /><br /> Postfach<br /><br /> Neuer Prozess<br /><br /> Hinweise<br /><br /> Verkaufschance (Produkt)<br /><br /> Vertriebsprozess Verkaufschance<br /><br /> Auftrag (Produkt)<br /><br /> Organisation<br /><br /> Telefon-zu-Anfrage-Prozess<br /><br /> Preislistenelement<br /><br /> Warteschlangenelement<br /><br /> Angebot (Produkt)<br /><br /> SharePoint-Dokument<br /><br /> Übersetzungsprozess|Kampagne<br /><br /> Kampagnenaktivität<br /><br /> Kampagnenreaktion<br /><br /> Kanalzugriffsprofil<br /><br /> Kanalzugriffsprofilregel<br /><br /> Vertrag<br /><br /> Anspruchsvorlage<br /><br /> Externe Partei<br /><br /> Fax<br /><br /> Brief<br /><br /> Marketingliste<br /><br /> Position<br /><br /> Schnellkampagne<br /><br /> Terminserie<br /><br /> Vertriebsdokumentation<br /><br /> SLA|  
  
 ##  <a name="data-types-that-arent-editable-in-an-editable-grid"></a>Datentypen, die in einem bearbeitbaren Raster nicht bearbeitbar sind
-Die folgenden Datentypen sind nicht in bearbeitbaren Rastern bearbeitbar: Kunden und Partylist-Suchfelder; Zusammengesetzte (Adress-) Felder, Status/Statusfelder; mit der Suchentität verknüpfte Felder (beispielsweise umfasst die Firmenentität eine Kontaktsuche, in der das Kontaktfeld bearbeitbar ist, jedoch ist das Feld EmailAdress (Kontakt) nicht bearbeitbar).  
+Die folgenden Datentypen sind nicht in bearbeitbaren Rastern bearbeitbar: Kunden und Partylist-Suchfelder; Zusammengesetzte (Adress-) Felder, Status/Statusfelder; mit der Suchentität verknüpfte Felder (beispielsweise umfasst die Firmenentität eine Kontaktsuche, in der das Kontaktfeld bearbeitbar ist, jedoch ist das Feld EmailAdress (Kontakt) nicht bearbeitbar). 
+
+## <a name="group-by-views-work-on-client-side-only"></a>Das Gruppieren nach Ansichten funktioniert nur auf der Clientseite
+Das Gruppierungsverhalten funktioniert nur auf der Clientseite und erstreckt sich nicht über Seiten. „Gruppieren nach“ ist eine Nur-Client-Funktion und funktioniert nur auf einer Datenseite. Bei „Gruppieren nach“ werden nicht alle Optionen angezeigt, die auf Ihrem vollständigen Dataset auf dem Server basieren. „Gruppieren nach“ zeigt die Gruppierung nur auf der aktuellen Seite an. Sie können die Gruppierung deaktivieren, indem Sie die Eigenschaft in der benutzerdefinierten Steuerelementkonfiguration verwenden. Weitere Informationen: [Hauptgitter bearbeitbar machen](#make-main-grids-editable)
+
  
 ## <a name="next-steps"></a>Nächste Schritte  
  [Verwenden von Tastenkombinationen in bearbeitbaren Rastern](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts#editable-grids-views)

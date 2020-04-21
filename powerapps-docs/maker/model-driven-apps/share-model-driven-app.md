@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 42ba7e8416477890614b00f6aa89ea241287475b
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: e1187757c90af2ec245ace51031f5e0345c92bd2
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3099925"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238456"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>Gemeinsame Nutzung einer modellgesteuerten App mit Power Apps
 
@@ -151,7 +151,7 @@ Diese vordefinierten Rollen sind in einer [!INCLUDE [powerapps](../../includes/p
 *Recht hat globalen Umfang, soweit nicht anders angegeben.
 
 ## <a name="use-azure-active-directory-groups-to-manage-access"></a>Zugriff auf Azure Active Directory Gruppen, um den Zugriff zu verwalten
-Administratoren können ihre Organisation verwenden Azure Active Directory (Azure AD) Gruppen, um Zugriffsrechte für lizenzierte Common Data Service Benutzer zu verwalten. Beide Arten von Azure AD Gruppen - Office und Sicherheit - können zur Sicherung der Benutzerzugriffsrechte für eine App verwendet werden. Weitere Informationen: [Über Gruppenteams](/power-platform/admin/manage-teams.md#about-group-teams) 
+Administratoren können ihre Organisation verwenden Azure Active Directory (Azure AD) Gruppen, um Zugriffsrechte für lizenzierte Common Data Service Benutzer zu verwalten. Beide Arten von Azure AD Gruppen - Office und Sicherheit - können zur Sicherung der Benutzerzugriffsrechte für eine App verwendet werden. Weitere Informationen: [Über Gruppenteams](/power-platform/admin/manage-teams#about-group-teams) 
 
 
 ### <a name="see-also"></a>Siehe auch

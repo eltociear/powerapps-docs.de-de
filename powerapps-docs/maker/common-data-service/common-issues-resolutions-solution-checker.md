@@ -2,7 +2,7 @@
 title: Häufige Probleme und Lösungen für Lösungsprüfer | Microsoft Docs
 description: " Eine Liste der häufigsten Probleme und Lösungen im Lösungsprüfer"
 keywords: ''
-ms.date: 02/11/2019
+ms.date: 04/07/2020
 ms.service: powerapps
 ms.custom:
 - ''
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2280ea28178a85429367ea0359660b3b94f5f99b
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: fb40f10fae12afb16f59c98c6e1a43c3acf64e89
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154720"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238412"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Häufige Probleme und Lösungen für Lösungsprüfer
 
@@ -46,6 +46,12 @@ Fehler, die während der Hintergrundverarbeitung der Analyse auftreten, schlagen
 Durch Auswählen der Portalbenachrichtigung erfolgt eine Verknüpfung zu dieser Seite mit allgemeinen Problemen zur weiteren Problembehandlung. Wenn eine der genannten allgemeinen Probleme das Problem nicht löst, wird auch eine Referenznummer zurückgegeben. Stellen Sie diese Referenznummer dem Microsoft Support zur weiteren Überprüfung bereit.
 
 ![Fehlerbenachrichtigung](media/solution-checker-failure-notification.png)
+
+
+## <a name="solution-checker-fails-to-check-default-solution"></a>Solution Checker kann die Standardlösung nicht überprüfen
+
+Solution Checker exportiert die Lösung aus der Common Data Service-Umgebung für die Analyse. Das Exportieren der Standardlösung wird nicht unterstützt und die Prüfung wird möglicherweise nicht erfolgreich abgeschlossen. Mehr Informationen: [Solution Checker kann keine großen Lösungen exportieren](#solution-checker-fails-to-export-large-solutions).
+
 
 ## <a name="solution-checker-fails-due-to-unsupported-version-of-power-apps-checker"></a>Der Lösungsprüfer funktioniert nicht, da die Power Apps-Prüfungsversion nicht unterstützt wird
 

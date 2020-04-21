@@ -1,6 +1,6 @@
 ---
-title: Übersicht über eine Beispiellösung für die Notfallreaktion für Krankenhäuser für Power Platform | Microsoft-Dokumentation
-description: Übersicht über die Notfallreaktionslösung für Krankenhäuser.
+title: Übersicht über die Hospital Emergency Response-Beispiellösung für Power Platform | Microsoft-Dokumentation
+description: Bietet einen Überblick über die Hospital Emergency Response-Lösung.
 author: pankajarora-msft
 manager: annbe
 ms.service: powerapps
@@ -16,27 +16,27 @@ ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2020
-ms.locfileid: "81441257"
+ms.locfileid: "3264882"
 ---
-# <a name="hospital-emergency-response---power-platform-sample-solution"></a>Notfallreaktion für Krankenhäuser: Power Platform-Beispiellösung
+# <a name="hospital-emergency-response---power-platform-sample-solution"></a>Hospital Emergency Response – Power Platform-Beispiellösung
 
-Die Beispiellösung für die Notfallreaktion für Krankenhäuser bietet eine Reihe von Funktionen für das Gesundheitswesen zur Erfassung von Daten mit Blick auf verfügbare Betten und Verbrauchsmaterialien, unter COVID-19 leidende Patienten, die Personalausstattung und anstehende Entlassungen. Die Lösung bietet auch Dashboards, die wichtige Daten und Erkenntnisse zusammenfassen, damit Sie fundierte Entscheidungen treffen können, die zu einer effizienten Bereitstellung und Nutzung von Kapazitäten führen.
+Die Hospital Emergency Response-Beispiellösung bietet eine Reihe von Funktionen für Gesundheitsorganisationen, um Daten für das Situationsbewusstsein verfügbarer Betten und Verbrauchsmaterialien, COVID-19-bezogener Patienten, Personal und ausstehender Entlassungen zu sammeln. Die Lösung bietet auch Dashboards, in denen wichtige Daten und Erkenntnisse zusammengefasst werden, damit Sie fundierte Entscheidungen treffen können, die zu einer effizienten Bereitstellung und Nutzung von Ressourcen führen.
 
 > [!div class="mx-imgBorder"] 
-> ![Notfallreaktions-App für Krankenhäuser](media/conf-ermerg-response-solution-overview.png)
+> ![Hospital Emergency Response-App](media/conf-ermerg-response-solution-overview.png)
 
-Es folgen die Hauptkomponenten der Notfallreaktionslösung für Krankenhäuser:
+Die Hauptkomponenten der Hospital Emergency Response-Lösung sind:
 
-- **Mobile App für das Personal an vorderster Front**: Mitarbeiter an vorderster Front, wie z. B. Pflege- und medizinische Fachkräfte, können die mobile App nutzen, um Informationen bei Bedarf schnell anzuzeigen und einzugeben.
-- **Web-App für Krankenhausadministratoren**: IT-Administratoren von Krankenhäusern können mit dieser App Systemdaten hinzufügen und verwalten, die für das Funktionieren der Lösung erforderlich sind.
-- **Dashboards für Entscheidungsträger im Gesundheitswesen**: Mithilfe von Dashboards können Sie schnell wichtige Daten und Metriken einsehen, die Sie bei der effizienten Entscheidungsfindung unterstützen.
+- **Mobile App für Mitarbeiter an vorderster Front**: Mitarbeiter an vorderster Front, wie Krankenschwestern und Ärzte, können die mobile App verwenden, um Informationen nach Bedarf schnell anzuzeigen und einzugeben.
+- **Web-App für Krankenhausadministratoren**: Krankenhausadministratoren können mit dieser App Systemdaten hinzufügen und verwalten, die für das Funktionieren der Lösung erforderlich sind.
+- **Dashboards für Entscheidungsträger im Gesundheitswesen**: Verwenden Sie Dashboards, um wichtige Daten und Metriken schnell anzuzeigen, die Ihnen bei der effizienten Entscheidungsfindung helfen.
 
-Die Beispiellösung für die Notfallreaktion für Krankenhäuser ist in den folgenden Sprachen verfügbar: Englisch, Französisch, Deutsch, Italienisch, Japanisch, Portugiesisch (Brasilien) und Spanisch.
+Die Beispiellösung für Notfallmaßnahmen im Krankenhaus ist in den folgenden Sprachen verfügbar: Englisch, Französisch, Deutsch, Italienisch, Japanisch, Portugiesisch – Brasilien und Spanisch.
 
 
-## <a name="demo-quick-overview"></a>Demo: Kurzübersicht
+## <a name="demo-quick-overview"></a>Demo: Schnelle Übersicht
 
-Sehen Sie sich eine Kurzübersicht über die Notfallreaktionslösung für Krankenhäuser an.
+Sehen Sie sich eine schnelle Übersicht über die Hospital Emergency Response-Lösung an.
 
 <br/>
 
@@ -45,29 +45,29 @@ Sehen Sie sich eine Kurzübersicht über die Notfallreaktionslösung für Kranke
 ## <a name="licensing-requirements"></a>Lizenzanforderungen
 
 - Power Apps-Lizenz.
-- Power BI-Lizenz, wenn Sie das als Teil dieser Lösung verfügbare Power BI-Dashboard verwenden werden.
+- Power BI-Lizenz, wenn Sie das als Teil dieser Lösung verfügbare Power BI-Dashboard verwenden.
 
-Wenden Sie sich bei Fragen zur Lizenzierung an den für Sie zuständigen Microsoft-Kundenbetreuer.
+Wenden Sie sich bei Fragen zur Lizenzierung an Ihren lokalen Microsoft-Kundenbetreuer.
 
-Siehe auch: [Übersicht über die Lizenzierung für Power Platform](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
+Weitere Informationen finden Sie auch unter [Lizenzierungsübersicht für Power Platform](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus).
 
-## <a name="start-here"></a>Beginnen Sie hier
+## <a name="start-here"></a>Starten Sie hier
 
-|Aufgabe | Zielgruppe|Daten|
+|Aufgabe | Zielgruppe|Siehe|
 |--|--|--|
-|Bereitstellen von Beispiel-App und Dashboard|IT-Administrator|[Bereitstellen der Notfallreaktions-App für Krankenhäuser](deploy-configure.md)|
-|Verwenden der Administrator-App zum Hinzufügen/Verwalten von Masterdaten|Geschäftlicher Administrator|[Konfigurieren und Verwalten von Masterdaten für Ihre Organisation](configure-data-reporting.md#configure-and-manage-master-data-for-your-organization)|
-|Verwenden von Dashboards für Erkenntnisse und Entscheidungsfindung|Geschäftlicher Administrator|[Anzeigen von Common Data Service-Dashboards](configure-data-reporting.md#view-common-data-service-dashboards)<br/><br/>[Anzeigen des Power BI-Dashboards](configure-data-reporting.md#view-power-bi-dashboard)|
-|Verwenden der mobilen App zum Nachverfolgen von Daten für Beatmungsgeräte, Personal, ausstehende Entlassungen und COVID-19-Patienten|Mitarbeiter an vorderster Front|[Verwenden der mobilen Notfallreaktions-App für Krankenhäuser](use.md)
-|Verwenden der Administrator-App zum Nachverfolgen von Feedback aus der mobilen App|Geschäfts-/IT-Administrator|[Anzeigen und Verwalten von Feedback zur App](configure-data-reporting.md#view-and-manage-app-feedback)|
+|Beispiel-App und Dashboard bereitstellen|IT-Administrator|[Bereitstellen der Hospital Emergency Response-App](deploy-configure.md)|
+|Die Administrator-App verwenden, um Stammdaten hinzuzufügen/zu verwalten|Unternehmensadministrator|[Stammdaten für Ihre Organisation konfigurieren und verwalten](configure-data-reporting.md#configure-and-manage-master-data-for-your-organization)|
+|Dashboards für Einblicke und Entscheidungsfindung verwenden|Unternehmensadministrator|[Common Data Service-Dashboards anzeigen](configure-data-reporting.md#view-common-data-service-dashboards)<br/><br/>[Power BI-Dashboard anzeigen](configure-data-reporting.md#view-power-bi-dashboard)|
+|Verwenden Sie die mobile App, um Daten für Beatmungsgeräte, Personal, ausstehende Entlassungen und Patienten im Zusammenhang mit COVID-19 zu verfolgen|Frontpersonal|[Die mobile App für Notfallmaßnahmen im Krankenhaus verwenden](use.md)
+|Die Administrator-App verwenden, um das Feedback der mobilen App zu verfolgen|Unternehmens- /IT-Administrator|[Anzeigen und Verwalten von App-Feedback](configure-data-reporting.md#view-and-manage-app-feedback)|
 
 
-## <a name="issues-and-feedback"></a>Issues und Feedback
+## <a name="issues-and-feedback"></a>Probleme und Feedback
 
-- Wenn Sie ein Issue mit der Beispiel-App für die Notfallreaktion für Krankenhäuser melden möchten, besuchen Sie <https://aka.ms/emergency-response-issues>.
+- Um ein Problem mit der Hospital Emergency Response-Beispiel-App zu melden, navigieren Sie zu <https://aka.ms/emergency-response-issues>.
 
-- Wenn Sie Feedback zur Beispiel-App für die Notfallreaktion für Krankenhäuser geben möchten, besuchen Sie <https://aka.ms/emergency-response-feedback>.
+- Feedback zur Hospital Emergency Response-Beispiel-App finden Sie unter <https://aka.ms/emergency-response-feedback>.
 
-### <a name="disclaimer"></a>Disclaimer
+### <a name="disclaimer"></a>Haftungsausschluss
 
-Dies ist eine Beispiellösung, die nur zur Verbreitung von Referenzinformationen mit Microsoft Power Apps und Microsoft Power BI verwendet werden darf. Diese App ist nicht als medizinisches Gerät, zur klinischen Unterstützung, als Diagnosetool oder als andere Technologie zur Diagnose, Heilung, Linderung, Behandlung oder Vorbeugung von Krankheiten oder anderen Beschwerden vorgesehen oder erhältlich. Microsoft gewährt weder eine Lizenz noch das Recht, diese App für solche Zwecke zu nutzen. Diese App ist nicht als Ersatz für eine professionelle medizinische Konsultation, Diagnose, Behandlung oder Beurteilung konzipiert oder vorgesehen und darf nicht in dieser Form eingesetzt werden. Kunden tragen das alleinige Risiko und die Verantwortung für jegliche Nutzung dieser App. Microsoft garantiert nicht, dass die App oder die in Verbindung damit bereitgestellten Materialien für medizinische Zwecke ausreichen oder die gesundheitlichen oder medizinischen Anforderungen beliebiger Personen erfüllen.
+Dies ist eine Beispiellösung und darf nur mit Microsoft Power Apps und Microsoft Power BI zur Verbreitung von Referenzinformationen verwendet werden. Diese App ist nicht vorgesehen oder verfügbar gemacht für die Verwendung als Medizinprodukt, klinische Unterstützung, Diagnosewerkzeug oder andere Technologie, die zur Diagnose, Heilung, Linderung, Behandlung oder Vorbeugung von Krankheiten oder anderen Erkrankungen verwendet werden soll. Microsoft gewährt keine Lizenz oder kein Recht, diese App für solche Zwecke zu verwenden. Diese App ist nicht als Ersatz für professionelle medizinische Beratung, Diagnose, Behandlung oder Beurteilung konzipiert oder vorgesehen und sollte nicht als solche verwendet werden. Der Kunde trägt das alleinige Risiko und die alleinige Verantwortung für die Nutzung dieser App. Microsoft garantiert nicht, dass die App oder die damit verbundenen Materialien für medizinische Zwecke ausreichen oder den gesundheitlichen oder medizinischen Anforderungen einer Person entsprechen.

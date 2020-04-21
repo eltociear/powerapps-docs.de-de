@@ -1,7 +1,7 @@
 ---
 title: Erstellen oder bearbeiten Modell-angetriebener App-Dashboards  | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 04/08/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,56 +21,56 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 81943d73ac8c6189e62d25af4ff38b993182c269
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: bcd178eef75c5ee63389048aff2f1cf0baf01fae
+ms.sourcegitcommit: cbaf5ba8b6435796a538ece2da5cc172c0781fad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875484"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254358"
 ---
 # <a name="create-or-edit-model-driven-app-dashboards"></a>Erstellen oder bearbeiten von Modell-angetriebene App-Dashboards
 
-Es gibt zwei Arten von Dashboards: Benutzerdashboards und Systemdashboards- Ein App-Benutzer kann ein Dashboard erstellen, das ausschließlich in den App-Bereichen angezeigt wird, in denen sie über Rechte verfügt. Ein Administrator oder Anpasser kann Systemdashboards erstellen oder anpassen. Diese sind bei Veröffentlichung für alle App-Benutzer in der Organisation sichtbar. Ein Benutzer kann festlegen, dass seine Benutzerdashboards als Standarddashboard anzeigt werden und die Systemdashboards überschreiben. Der Schwerpunkt dieses Themas liegt auf Systemdashboards.  
+Es gibt zwei Arten von Dashboards: Benutzerdashboards und Systemdashboards- Ein App-Benutzer kann ein Dashboard erstellen, das ausschließlich in den App-Bereichen angezeigt wird, in denen sie über Rechte verfügt. Ein Administrator oder Anpasser kann Systemdashboards erstellen oder anpassen. Diese sind bei Veröffentlichung für alle App-Benutzer in der Organisation sichtbar. Ein Benutzer kann festlegen, dass seine Benutzerdashboards als Standarddashboard anzeigt werden und die Systemdashboards überschreiben.   
+
+Dashboards können Standard oder interaktiv sein. Standard-Dashboards unterstützen das Hinzufügen einer oder mehrerer nicht zusammenhängender Komponenten wie Diagramme oder Listen. Interaktive Dashboards bieten Benutzern die Möglichkeit, direkt vom Dashboard aus auf einen bestimmten Datensatz zu reagieren. Der Schwerpunkt dieses Themas liegt auf standardmäßigen Systemdashboards. Informationen zu interaktivem Dashboards finden Sie unter [Konfigurieren von modellgesteuerten Dashboards für interaktive Funktionen](configure-interactive-experience-dashboards.md).
   
 <a name="BKMK_createdashboard"></a>   
-## <a name="create-a-new-dashboard"></a>Neues Dashboard erstellen  
+## <a name="create-a-new-standard-dashboard"></a>Ein neues Standard-Dashboard erstellen  
   
 1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
-
-    > [!IMPORTANT]
-    > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).   
   
-2. Erweitern Sie, **Daten** und wählen Sie **Entitäten**, wählen Sie die Entität aus, die Sie als Grundlage für das Dashboard möchten, wie beispielsweise Entität **Firma** und dann wählen Sie die Registerkarte **Dashboards** aus. 
+2. Wählen Sie **Lösungen** aus und öffnen Sie dann die gewünschte Lösung.
 
-3. Klicken Sie auf der Symbolleiste auf **Ein Dashboard hinzufügen** und dann auf ein Layout mit 2, 3 oder 4 Spalten aus.  
+3. Klicken Sie auf der Symbolleiste auf **Neu**, wählen Sie **Dashboard** und dann auf ein Layout mit 2, 3 oder 4 Spalten aus.  
   
-4.  Geben Sie im Dialogfeld **Dashboard: Neu** einen Namen für das Dashboard ein.  
+4.  Geben Sie auf der Seite **Dashboard: Neu** einen Namen für das Dashboard ein.  
   
 5.  Wählen Sie einen der Komponentenbereiche und wählen Sie das Symbol für ein Diagramm oder eine Liste aus.  
   
      Sie können bis zu sechs Komponenten im Dashboard verwenden.  
   
-6.  Um beispielsweise ein Diagramm hinzuzufügen, wäehlen Sie im Dialogfeld **Komponente hinzufügen** in die Werte für **Datensatztyp**, **Ansicht** und **Diagramm** aus, und wählen Sie dann **Hinzufügen**, um das Diagramm im Dashboard hinzuzufügen.  
+6.  Um beispielsweise ein Diagramm hinzuzufügen, wählen Sie das Diagrammsymbol auf der Kachel des Dashboard-Bereichs aus, auf der das Diagramm angezeigt werden soll. Wählen Sie dann im Dialogfeld **Komponente hinzufügen** in die Werte für **Datensatztyp**, **Ansicht** und **Diagramm** aus, und wählen Sie dann **Hinzufügen**, um das Diagramm im Dashboard hinzuzufügen. Weitere Informationen zum Erstellen eines Diagramms finden Sie unter [Erstellen eines Systemdiagramms für modellgesteuerte Apps](create-edit-system-chart.md).
   
-7.  Wenn Sie mit dem Hinzufügen fertig sind, wählen Sie **Speichern** und dann **Veröffentlichen** aus.  
+7.  Wenn Sie mit dem Hinzufügen fertig sind, wählen Sie **Speichern** und dann **Schließen** aus.  
+
+8. Wählen Sie auf der Symbolleiste der Lösung **Veröffentlichen** aus. 
   
 <a name="BKMK_editdashboard"></a>   
 ## <a name="edit-an-existing-dashboard"></a>Bearbeiten eines vorhandenen Dashboards  
   
 1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
-    > [!IMPORTANT]
-    > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).    
-  
-2. Erweitern Sie, **Daten** und wählen Sie **Entitäten**, wählen Sie die Entität aus, die Sie als Grundlage für das Dashboard möchten, wie beispielsweise Entität **Firma** und dann wählen Sie die Registerkarte **Dashboards** aus.  
+2. Wählen Sie **Lösungen** aus und öffnen Sie dann die gewünschte Lösung.  
 
-3. Öffnen (Doppelklick) Sie ein Dashboard, wählen Sie einen der Komponentenbereiche aus, und wählen Sie dann **Komponente bearbeiten** aus.  
+3. Öffnen Sie in der Liste der Lösungskomponenten das Dashboard, wählen Sie einen der Komponentenbereiche aus, und wählen Sie dann **Komponente bearbeiten** aus.  
   
-4.  Im Dialogfeld **Eigenschaften festlegen** können Sie Änderungen zu Diagrammen oder einer Liste machen wie die Änderungen vornehmen an Entität, Standardansicht, eine Diagrammauswahl hinzufügen oder das Dashboard auf dem mobilen Apps zur Verfügung stellen. Wählen Sie **Festlegen** aus, wenn Sie fertig sind.  
+4.  Im Dialogfeld **Eigenschaften festlegen** können Sie Änderungen zu Diagrammen oder einer Liste machen wie die Änderungen vornehmen an Entität, Standardansicht, eine Diagrammauswahl hinzufügen oder das Dashboard auf dem mobilen Apps zur Verfügung stellen. Wählen Sie **OK**, wenn Sie fertig sind.  
   
      Weitere Informationen zu Einstellungsdashboardkomponenteeigenschaften finden Sie unter [Eigenschaften für ein Diagramm oder eine Liste in einem Dashboard festlegen](set-properties-chart-list-included-dashboard.md)  
   
-4.  Wenn Sie Ihre Änderungen abgeschlossen haben, müssen Sie diese Speichern und veröffentlichen.  
+5.  Wenn Sie Ihre Änderungen in der Symbolleiste abgeschlossen haben, wählen Sie **Speichern**und dann **Schließen** aus. 
+
+6. Wählen Sie auf der Symbolleiste der Lösung **Veröffentlichen** aus.  
   
 Zusätzliche Systemdashboard-Aufgaben sind unter anderem:  
   

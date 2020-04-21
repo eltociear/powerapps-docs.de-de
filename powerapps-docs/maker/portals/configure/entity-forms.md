@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/11/2020
+ms.date: 04/09/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 372b710115609115e8090d21821c45a1037472ab
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 4ddc8daba01d281a483d51b1ce7a42205d0c6e93
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125571"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "3256677"
 ---
 # <a name="about-entity-forms"></a>Über Entitätsformulare
 
@@ -33,7 +33,7 @@ Wenn Sie ein neues Entitätsformular erstellen, müssen Sie als erstes die **Ent
 > [!Note]
 > - Ein **Entitätsformular** muss einer Webseite auf einer bestimmten Website zugeordnet sein, damit das Formular auf der Website angezeigt wird.
 > - Die Verbindungsentitätsunterraster werden in Entitätsformularen nicht unterstützt. Wenn Sie ein Verbindungsentitätsunterraster dem Formular mithilfe des Formulardesigners hinzufügen, werden Fehlermeldungen angezeigt, wenn Sie das Formular auf dem Portal rendern und die Verbindungsentität verwenden.
-> - Doppelte Felder, verschiedene Optionssätze, benutzerdefinierte Steuerelemente und Geschäftsregeln werden nicht in Entitätsformularen unterstützt.
+> - Doppelte Felder, verschiedene Optionssätze, benutzerdefinierte Steuerelemente, Parteilistenfelder und Geschäftsregeln werden nicht in Entitätsformularen unterstützt.
 > - Geschäftsregeln und Client-API können gesperrte Felder in einem schreibgeschützten Formular aktivieren.
 > - Wenn Sie ein Einfügemodus im Entitätsformular erstellen, können Sie jedoch die Ausrichtung eine Schaltfläche nicht mehr ändern und eine interaktiv Schaltfläche zu dem Entitätsformular platzieren.
 > - Wenn Sie ein Nachschlagesteuerelement im Formular als Dropdownliste rendern, funktioniert der Filter der verknüpften Datensätze nicht.
