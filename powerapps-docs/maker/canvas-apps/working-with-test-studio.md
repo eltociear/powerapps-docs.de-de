@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2020
 ms.locfileid: "81489040"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="working-with-test-studio-experimental"></a>Arbeiten mit Test Studio (experimentell)
 
@@ -120,7 +121,7 @@ So fügen Sie in der Kudos-App Testschritte und Testassertionen hinzu:
 
     Sie können jeden beliebigen unterstützten Ausdruck verwenden. Sie können auch beliebige Datenquellen, Sammlungen, Variablen oder Flowausführungen abfragen, die in Ihrer App enthalten sind, und neue globale Variablen oder Sammlungen erstellen, die in Ihren Tests verwendet werden.
 
-    ```Set(kudosBeforeTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
+    ```Set(kudosBeforeTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
 
 5. Wählen Sie Schritt 2 oder einen Schritt aus, über dem Sie einen neuen Schritt einfügen möchten.
 
@@ -128,17 +129,17 @@ So fügen Sie in der Kudos-App Testschritte und Testassertionen hinzu:
 
 7. Geben Sie in die Aktionseingabe einen [Trace](./functions/function-trace.md)-Ausdruck oder eine entsprechende Formel ein, und schreiben Sie den Wert *kudosBeforeTest* in den Datensatz der Testergebnisse.
 
-    ```Trace("kudosBeforeTest : " & kudosBeforeTest);```
+    ```Trace("kudosBeforeTest : " & kudosBeforeTest);;```
 
     ![Lobanzahl vor dem Test](./media/working-with-test-studio/kudos-before-test.png)
 
 8. Scrollen Sie im Testfall nach unten, und fügen Sie dort einen neuen Schritt ein, um die Datensätze in der Datenbank nach Abschluss des Tests zählen zu lassen.
 
-    ```Set(kudosAfterTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
+    ```Set(kudosAfterTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
 
 9. Fügen Sie einen abschließenden Schritt hinzu, um zu überprüfen, ob die Anzahl der Datensätze in der Datenbank um 1 inkrementiert wurde, und geben Sie die folgende Assertionsaktion ein, damit dies überprüft wird:
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 1; "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
     ![Lobanzahl nach der Testassertion](./media/working-with-test-studio/kudos-after-test-assert.png)
 
@@ -175,7 +176,7 @@ In diesem Abschnitt ändern Sie die Testassertion, um zu sehen, was im Fall eine
 
 2. Ändern Sie in der Testaktion ```+ 1``` in ```+ 2```. Das bedeutet, dass der Test erwartet, dass zwei Datensätze erstellt werden. Das ist jedoch falsch. Wenn der Test erfolgreich ist, sollte in der Datenbank lediglich ein Datensatz erstellt werden.
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 2, "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 2; "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
 
     ![Geänderte Assert-Anweisung zum Überprüfen der Anzahlinkrementierung](./media/working-with-test-studio/assert-count-update.png)
 
@@ -311,7 +312,7 @@ Weitere Beispiele für Ausdrücke, die Sie in diesen Eigenschaften verwenden kö
 
 - Senden der Ergebnisse per E-Mail:
 
-    ```Office365.SendMailV2("someone@example.com", "Test case results", JSON(TestCaseResult, JSONFormat.IndentFour))```
+    ```Office365.SendMailV2("someone@example.com"; "Test case results"; JSON(TestCaseResult; JSONFormat.IndentFour))```
 
 - Erhalten einer App-Benachrichtigung mit dem Testergebnis:
 
