@@ -1,8 +1,8 @@
-- name: Docs
+- name: Dokumente
   href: /
   topicHref: /
   items:
-    - name: Power-Plattform
+    - name: Power Platform
       href: /power-platform/
       topichref: /power-platform/
       items:
@@ -27,7 +27,7 @@
                   tocHref: /powerapps/developer/common-data-service/
                   topicHref: /powerapps/maker/common-data-service/index
                   items:
-                    - name: Developer
+                    - name: Entwickler
                       tocHref: /powerapps/developer/common-data-service/
                       topicHref: /powerapps/developer/common-data-service/index
                       items:
@@ -45,6 +45,6 @@
                   tocHref: /powerapps/developer/model-driven-apps/
                   topicHref: /powerapps/maker/model-driven-apps/index
                   items:
-                    - name: Developer
+                    - name: Entwickler
                       tocHref: /powerapps/developer/model-driven-apps/
                       topicHref: /powerapps/developer/model-driven-apps/index

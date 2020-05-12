@@ -1,6 +1,6 @@
 ---
 layout: HubPage
-title: Microsoft Power Apps-Dokumentation | Microsoft-Dokumentation
+title: Microsoft Power Apps-Dokumentation | Microsoft Docs
 description: Microsoft Power Apps-Dokumentation
 searchScope:
 - PowerApps
@@ -14,7 +14,7 @@ ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2020
-ms.locfileid: "81441809"
+ms.locfileid: "3302355"
 ---
 <div id="main"
    class="v2">
@@ -61,7 +61,7 @@ ms.locfileid: "81441809"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Neuigkeiten</h3>
+                                             <h3>Neuerungen</h3>
                                              <p>Machen Sie sich mit neuen Features vertraut, die in den letzten Wochen veröffentlicht wurden bzw. in den folgenden Monaten veröffentlicht werden.</p>
                                           </div>
                                        </div>
@@ -100,7 +100,7 @@ ms.locfileid: "81441809"
                                           </div>
                                           <div class="cardText">
                                              <h3>Blog</h3>
-                                             <p>Informieren Sie sich im offiziellen Power Apps-Blog über die neuesten Power Apps-Features und -Ankündigungen.</p>
+                                             <p>Lesen Sie im offiziellen Power Apps-Blog alles über die neuesten Power Apps-Features und -Ankündigungen.</p>
                                           </div>
                                        </div>
                                     </div>
@@ -170,14 +170,14 @@ ms.locfileid: "81441809"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Finden und Ausführen von Apps</h3>
+                                    <h3 style="font-size: 1.15rem">Apps finden und ausführen</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/run-app-browser">Im Webbrowser</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/run-app-client">Auf einem mobilen Gerät (Canvas-App)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/run-app-client-model-driven">Auf einem mobilen Gerät (modellgesteuerte App)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/powerapps-web-part">In SharePoint (Canvas-App)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/open-app-embedded-in-teams">In Microsoft Teams (Canvas-App)</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/app-source">Über AppSource</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/app-source">Von AppSource</a></p>
                                  </div>
                               </div>
                            </div>
@@ -195,12 +195,12 @@ ms.locfileid: "81441809"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Verwenden modellgesteuerter Apps</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/unified-interface">Einheitliche Benutzeroberfläche</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/unified-interface">Einheitliche Oberfläche</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/navigation">Navigation und Grundlagen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/create-a-record">Erstellen eines Datensatzes</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/search-records">Suchen von Datensätzen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/import-data">Importieren von Daten aus Excel</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/export-to-excel-online">Daten in Excel exportieren</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/create-a-record">Einen Datensatz erstellen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/search-records">Datensätze durchsuchen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/import-data">Daten aus Excel importieren</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/export-to-excel-online">Daten nach Excel exportieren</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/use-flows">Verwenden von Flow zur Prozessautomatisierung</a></p>
                                  </div>
                               </div>
@@ -215,7 +215,7 @@ ms.locfileid: "81441809"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. Sie können in Power Apps drei Arten von Apps erstellen: <strong>Canvas-Apps</strong>, <strong>modellgesteuerte Apps</strong> und <strong>Portale</strong>. <strong>Common Data Service</strong> ist eine Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen: <a href="/powerapps/maker">Erstellen von Apps</a>.</p>
+                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. In Power Apps können Sie drei Arten von Apps erstellen: <strong>Canvas-Apps</strong>, <strong>modellgesteuerte Apps</strong> und <strong>Portal-Apps</strong>. <strong>Common Data Service</strong> ist die Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen: <a href="/powerapps/maker">Apps erstellen</a>.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -235,12 +235,12 @@ ms.locfileid: "81441809"
                                     <ul>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/getting-started">Was sind Canvas-Apps?</a></p>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/open-and-run-a-sample-app">Erstellen einer Beispiel-App</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/data-platform-create-app-scratch">Erstellen einer App von Grund auf</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/data-platform-create-app-scratch">Eine neue App erstellen</a></p>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/connections-list">Connectors</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-create-business-rule">Anwenden von Geschäftslogik</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/add-configure-controls">Entwerfen der Schnittstelle</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/working-with-formulas">Konfigurieren von App-Funktionen</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/edit-app">Verwalten einer App</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-create-business-rule">Geschäftslogik anwenden</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/add-configure-controls">Schnittstelle entwerfen</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/working-with-formulas">App-Funktionen konfigurieren</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/edit-app">Eine App verwalten</a></p>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/share-app">Eine App freigeben</a></p>
                                     </ul>
                                  </div>
@@ -261,17 +261,17 @@ ms.locfileid: "81441809"
                                     <h3 style="font-size: 1.15rem">Modellgesteuerte Apps</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/model-driven-app-overview">Was sind modellgesteuerte Apps?</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/build-first-model-driven-app">Erstellen einer App</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/build-first-model-driven-app">Eine App erstellen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/model-driven-app-components">Grundlegendes zu App-Komponenten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-design-forms">Erstellen und Entwerfen von App-Formularen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes">Anwenden von Geschäftslogik</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes">Geschäftslogik anwenden</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-edit-views">Erstellen und Verwalten von App-Ansichten</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-edit-system-chart">Verwenden von Diagrammen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-edit-system-chart">Diagramme verwenden</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-edit-dashboards">Verwenden von Dashboards</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/use-custom-controls-data-visualizations">Verwenden von benutzerdefinierten Steuerelementen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-themes-organization-branding">Verwenden von Designs für Brandingzwecke</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/share-model-driven-app">Eine App freigeben</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/distribute-model-driven-app">Verteilen einer App</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/distribute-model-driven-app">Eine App verteilen</a></p>
                                  </div>
                               </div>
                            </div>
@@ -290,8 +290,8 @@ ms.locfileid: "81441809"
                                     <h3 style="font-size: 1.15rem">Portale</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Was sind Power Apps-Portale?</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Erstellen eines Portals</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">Verwalten vorhandener Portale</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Ein Portal erstellen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">Vorhandene Portale verwalten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">Portalverwaltung</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Häufig gestellte Fragen zu Power Apps-Portalen</a></p>
                                  </div>
@@ -315,11 +315,11 @@ ms.locfileid: "81441809"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/entity-overview">Entitäten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/relationships-overview">Entitätsbeziehungen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">Felder</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">Anwenden von Geschäftslogik</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">Geschäftslogik anwenden</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">Lösungen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Sicherheit im Common Data Service</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Erstellen von Power BI-Berichten aus Common Data Service-Daten</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Sicherheit in Common Data Service</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Lösungen mithilfe von ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Power BI-Berichte mit Daten aus Common Data Service erstellen</a></p>
                                  </div>
                               </div>
                            </div>
@@ -333,7 +333,7 @@ ms.locfileid: "81441809"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>Administratoren können das Admin Center für Power Platform verwenden, um Daten zu schützen, Umgebungen zu verwalten und die Nutzung zu überwachen.</p>
+                           <p>Administratoren können das Power Platform-Admin Center verwenden, um Daten zu schützen, Umgebungen zu verwalten und die Nutzung zu überwachen.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -348,11 +348,11 @@ ms.locfileid: "81441809"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Admin Center für die Power-Plattform</h3>
+                                    <h3 style="font-size: 1.15rem">Power Platform Admin Center</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-documentation">Verwalten der Power-Plattform</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-documentation">Power Platform verwalten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Hilfe und Support</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/opt-in-early-access-updates">Abonnieren von Updates für den frühen Zugriff</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/opt-in-early-access-updates">Updates für den Vorabzugang abonnieren</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Sicherheitskonzepte</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Einstellungen verwalten</a></p>                                    
                                  </div>
@@ -411,7 +411,7 @@ ms.locfileid: "81441809"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Umgebung und Sicherheit</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-overview">Umgebungen – Übersicht</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-overview">Übersicht zu Umgebungen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/trial-environments">Kostenlose Testumgebungen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">Umgebungssicherheit</a></p>
                                  </div>
@@ -431,7 +431,7 @@ ms.locfileid: "81441809"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Ressourcen</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Whitepaper: Verwalten der Unternehmensbereitstellung mit Power Apps und Power Automate</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Whitepaper: Verwalten von Power Apps- und Power Automate Enterprise-Bereitstellungen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/guidance/coe/starter-kit">Starter Kit für Power Apps Center of Excellence (CoE)</a></p>
                                  </div>
                               </div>
@@ -446,7 +446,7 @@ ms.locfileid: "81441809"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>Entwickler sind <a href="/powerapps/?branch=release-crm-mig-vivek#pivot=home&panel=maker">App-Ersteller</a>, die Geschäftsanwendungen mithilfe von Code erweitern können. Außerdem haben sie die Möglichkeit, Clientanwendungen zu erstellen, die eine Verbindung mit Common Data Service herstellen.</p>
+                           <p>Entwickler sind <a href="/powerapps/?branch=release-crm-mig-vivek#pivot=home&panel=maker">App-Ersteller</a>, die Geschäftsanwendungen mithilfe von Code erweitern sowie Clientanwendungen erstellen können, die eine Verbindung mit Common Data Service herstellen.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -486,8 +486,8 @@ ms.locfileid: "81441809"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/register-custom-api">Benutzerdefinierte Connectors</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/embed-apps-dev">Integration in Websites und andere Dienste</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/offline-apps">Entwickeln von offlinefähigen Apps</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/dev-appsource-test-drive">Erstellen von App-Testversionen in AppSource</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/offline-apps">Offlinefähige Apps entwickeln</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/dev-appsource-test-drive">Apps in AppSource testen</a></p>
                                  </div>
                               </div>
                            </div>
@@ -508,9 +508,9 @@ ms.locfileid: "81441809"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-entity-forms">Anpassen von Entitätsformularen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-entity-views">Anpassen von Entitätsansichten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-visualizations-dashboards">Anpassen von Visualisierungen und Dashboards</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">Anwenden von Geschäftslogik durch Erstellen von Clientskripts</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-commands-ribbon">Anpassen von Befehlen und Menübändern</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">Erstellen benutzerdefinierter Komponenten (Power Apps-Komponentenframework)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">Geschäftslogik mithilfe von Clientskripts anwenden</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-commands-ribbon">Befehle und Menübänder anpassen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">Benutzerdefinierte Komponenten (Power Apps Component Framework) erstellen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/create-manage-model-driven-apps-using-code">Erstellen, Verwalten und Veröffentlichen einer App</a></p>
                                  </div>
                               </div>
@@ -527,14 +527,14 @@ ms.locfileid: "81441809"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Arbeiten mit Common Data Service-Daten</h3>
+                                    <h3 style="font-size: 1.15rem">Mit Daten aus Common Data Service arbeiten</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/webapi/overview">Verwenden der Web-API</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/webapi/overview">Web-API verwenden</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/org-service/overview">Verwenden des Organisationsdiensts</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/use-fetchxml-construct-query">Abfragen von Daten mithilfe von FetchXML</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/detect-duplicate-data-with-code">Erkennen von duplizierten Daten</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/detect-duplicate-data-with-code">Datenduplikate erkennen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/optimistic-concurrency">Verwenden von optimistischer Parallelität</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/work-with-data">Best Practices</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/work-with-data">Bewährte Methoden</a></p>
                                  </div>
                               </div>
                            </div>
@@ -550,14 +550,14 @@ ms.locfileid: "81441809"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Arbeiten mit Common Data Service-Metadaten</h3>
+                                    <h3 style="font-size: 1.15rem">Mit Metadaten aus Common Data Service arbeiten</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/metadata-services">Erste Schritte mit Metadaten</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/browse-your-metadata">Durchsuchen von Umgebungsmetadaten</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/browse-your-metadata">Umgebungsmetadaten durchsuchen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/entity-metadata">Entitätsmetadaten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/entity-attribute-metadata">Attributmetadaten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/entity-relationship-metadata">Metadaten für Entitätsbeziehungen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/work-with-metadata">Best Practices</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/work-with-metadata">Bewährte Methoden</a></p>
                                  </div>
                               </div>
                            </div>
@@ -573,13 +573,13 @@ ms.locfileid: "81441809"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Anwenden von Geschäftslogik</h3>
+                                    <h3 style="font-size: 1.15rem">Geschäftslogik anwenden</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/plug-ins">Plug-Ins (Common Data Service)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/workflow/workflow-extensions">Workflowerweiterungen (Common Data Service)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">Erstellen von Clientskripts (modellgesteuerte Apps)</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/business-logic">Best Practices: Plug-Ins und Workflowerweiterungen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices/business-logic">Best Practices: Erstellen von Clientskripts</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/business-logic">Bewährte Methoden: Plug-Ins und Workflowerweiterungen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices/business-logic">Best practices: Client scripting (Bewährte Methoden: Erstellen von Clientskripts)</a></p>
                                  </div>
                               </div>
                            </div>
@@ -595,12 +595,12 @@ ms.locfileid: "81441809"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Integrieren von Daten in Common Data Service</h3>
+                                    <h3 style="font-size: 1.15rem">Daten mithilfe von Common Data Service integrieren</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/virtual-entities/get-started-ve">Virtuelle Entitäten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/azure-integration">Azure-Integration</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/use-webhooks">Webhooks</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/import-data">Importieren von Daten</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/import-data">Daten importieren</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/data-export-service">Datenexportdienst</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/data-synchronization">Datensynchronisierung</a></p>
                                  </div>
@@ -621,14 +621,14 @@ ms.locfileid: "81441809"
                                     <h3 style="font-size: 1.15rem">Packen und Verteilen von Apps oder Erweiterungen</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/introduction-solutions">Verwenden von Lösungen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Power Apps-Buildtools für Azure DevOps</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Power Apps-Build Tools für Azure DevOps</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">SolutionPackager-Tool</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">PackageDeployer-Tool</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Verwenden der Power Apps-Überprüfung</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer-Tool</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Power Apps Checker verwenden</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV-App-Verwaltung und -Überwachung</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Veröffentlichen einer App in AppSource</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/powerapps-cli"> Abrufen der Power Apps-CLI</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">App in AppSource veröffentlichen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Lösungen mithilfe von ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/powerapps-cli"> Power Apps-CLI herunterladen</a></p>
                                  </div>
                               </div>
                            </div>
@@ -644,10 +644,10 @@ ms.locfileid: "81441809"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Erstellen von Clientanwendungen für Common Data Service</h3>
+                                    <h3 style="font-size: 1.15rem">Clientanwendungen für Common Data Service erstellen</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/authentication">Authentifizierung</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/discovery-service">Ermitteln von Benutzerorganisationen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/discovery-service">Benutzerorganisationen ermitteln</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/xrm-tooling/build-windows-client-applications-xrm-tools">Erstellen von Windows-Clientanwendungen mithilfe von XRM-Tools</a></p>
                                  </div>
                               </div>
@@ -689,7 +689,7 @@ ms.locfileid: "81441809"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/reference/about-entity-reference">Entitätsreferenz</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9">Web-API-Referenz</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk?view=dynamics-general-ce-9">Organisationsdienstreferenz</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/clientapi/reference">Client-API-Referenz für Customer Engagement</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/clientapi/reference">Client-API-Referenz</a></p>
                                  </div>
                               </div>
                            </div>
@@ -707,9 +707,9 @@ ms.locfileid: "81441809"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Beispiele</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/webapi/quick-start-console-app-csharp">Schnellstart: Web-API-Beispiel</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/org-service/quick-start-org-service-console-app">Schnellstart: Beispiel zum Organisationsdienst</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/clientapi/walkthrough-write-your-first-client-script">Schnellstart: Client-API-Beispiel</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/webapi/quick-start-console-app-csharp">Schnellstart: Beispiel für Web-API</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/org-service/quick-start-org-service-console-app">Schnellstart: Beispiel für Organisationsservice</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/clientapi/walkthrough-write-your-first-client-script">Schnellstart: Beispiel für Client-API</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/webapi/web-api-samples-csharp">Web-API-Beispiele</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/org-service/samples/convert-fax-task">Beispiele zum Organisationsdienst</a></p>
                                  </div>

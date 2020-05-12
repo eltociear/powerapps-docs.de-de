@@ -1,6 +1,6 @@
 ---
 title: Wie kann ich Apps in Power Apps finden und ausführen? | Microsoft-Dokumentation
-description: 'Übersicht: So können Sie Power Apps-Apps finden und ausführen.'
+description: Übersicht zum Finden und Ausführen von Power Apps-Apps.
 author: mduelae
 ms.service: powerapps
 ms.component: pa-user
@@ -21,24 +21,24 @@ ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680441"
+ms.locfileid: "3302309"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>Wie kann ich Apps finden und ausführen?
 
-Sie müssen nicht manuell an einer Aufgabe arbeiten, um Ihre Arbeit zu erledigen. Mit Power Apps können Sie eine Canvas-App oder eine modellgesteuerte App erstellen und verwenden, um Ihre Arbeit schnell zu erledigen. Wenn Sie eine App erstellt haben, können Sie diese für Ihre Organisation freigeben. 
+Sie müssen nicht manuell an einer Aufgabe arbeiten, um Ihre Arbeit zu erledigen. Mit Power Apps können Sie eine Canvas- oder modellgesteuerte App erstellen und verwenden, um Ihre Arbeit schnell zu erledigen. Nach der Erstellung einer App können Sie diese für Ihre Organisation freigeben. 
 
-Mit [Canvas-Apps](/powerapps/maker/canvas-apps/getting-started) können Sie die Benutzererfahrung der App stark beeinflussen. Der Ersteller einer App kann Vorlagen zum Erstellen einer Canvas-App verwenden oder die App nach Belieben konfigurieren. Eine Canvas-App verhält sich gemäß ihrem Namen wie eine leere Leinwand, sodass Sie eine App erstellen können, die die Anforderungen der Benutzer in Ihrer Organisation erfüllt.
+Mit [Canvas-Apps](/powerapps/maker/canvas-apps/getting-started) können Sie die Benutzererfahrung der App stark beeinflussen. App-Entwickler können für die Erstellung einer Canvas-App Vorlagen verwenden oder die App nach eigenen Vorstellungen konfigurieren. Eine Canvas-App ist, wie der Name bereits sagt, zunächst ein leerer Canvas. Daher können Sie eine App erstellen, die den Anforderungen der Benutzer in Ihrer Organisation entspricht.
 
-Da Canvas-Apps im Prinzip alles sein können, gibt es nicht viel Dokumentation, die nach dem Erstellen einer App bei der Benutzung hilft. Wenden Sie sich an den Ersteller Ihrer App oder an den Power Apps-Administrator, wenn Sie Hilfe bei einer Canvas-App benötigen.
+Da Canvas-Apps im Prinzip alles sein können, gibt es nicht viel Dokumentation, die nach dem Erstellen einer App bei der Benutzung hilft. Wenn Sie Hilfe bei der Verwendung einer Canvas-App benötigen, müssen Sie sich an den App-Entwickler oder den Power Apps-Administrator wenden.
 
 [Modellgesteuerte Apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) verwenden die [Einheitliche Oberfläche](unified-interface.md), die ein reaktionsschnelles und zugängliches Design bietet. Sie können die App in einem Webbrowser oder auf gängigen mobilen Geräten ausführen. Die App enthält mehrere Komponenten wie Dashboards, Formulare, Ansichten, Diagramme und Geschäftsprozesse, die zu einer einfachen Benutzung der App beitragen.
 
-Dieser Abschnitt enthält Informationen, wie Sie Canvas-Apps und modellgesteuerte Apps von verschiedenen Orten aus suchen und ausführen. Zudem bietet er Informationen zum Navigieren und Arbeiten in einer modellgesteuerten App: [Use model-driven apps (Verwenden modellgesteuerter Apps)](use-model-driven-apps.md).
+Dieser Abschnitt enthält Informationen, wie Sie Canvas-Apps und modellgesteuerte Apps von verschiedenen Orten aus suchen und ausführen. Zudem bietet sie Informationen zum Navigieren und Arbeiten in einer modellgesteuerten App: [Modellgesteuerte Apps verwenden](use-model-driven-apps.md).
 
 
 ## <a name="whats-required-to-run-apps"></a>Was ist zum Ausführen von Apps erforderlich?
 - Achten Sie darauf, dass Sie eine [unterstützte Geräteplattform und einen unterstützten Browser verwenden](../maker/canvas-apps/limits-and-config.md).
-- Laden Sie Power Apps über den [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) oder [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) herunter, und installieren Sie diesen Dienst, damit Sie Canvas-Apps ausführen können.
+- Laden Sie über den [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) oder [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) Power Apps herunter, und installieren Sie diesen Dienst, damit Sie Canvas-Apps ausführen können.
 - So führen Sie modellgesteuerte Apps aus:
     - Auf einem Smartphone, indem Sie über den [App Store](https://itunes.apple.com/app/dynamics-crm-for-phones/id1003997947?ls=1&mt=8) oder [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone) Dynamics 365 für Smartphones herunterladen und installieren. 
     - Auf einem Tablet, indem Sie über den [App Store](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8), [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmtablet) oder den [Microsoft Store](https://www.microsoft.com/store/p/microsoft-dynamics-365/9nblggh4rfqp) Dynamics 365 für Tablets herunterladen.
