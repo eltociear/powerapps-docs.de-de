@@ -20,13 +20,13 @@ ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "73609883"
+ms.locfileid: "3302631"
 ---
 # <a name="merge-duplicate-records"></a>Zusammenführen doppelter Datensätze 
 
-Wenn Sie oder andere Personen Daten manuell eingeben oder im Massenvorgang importieren, kann es zu doppelten Datensätzen kommen. Mit Common Data Service können Sie eventuelle Duplikate vermeiden, indem Sie eine Duplikaterkennung für aktive Datensätze wie Konten und Kontakte bereitstellen. Wenn Sie einen Datensatz zusammenführen, werden auch alle zugehörigen oder untergeordneten Datensätze zusammengeführt. Ihr Administrator kann Regeln zur Duplikaterkennung auch für andere Situationen einrichten.  
+Wenn Sie oder andere Personen Daten manuell eingeben oder im Massenvorgang importieren, kann es zu doppelten Datensätzen kommen. Common Data Service unterstützt Sie beim Erkennen potenzieller Duplikate mithilfe von Duplikaterkennung für aktive Datensätze wie Firmen und Kontakte. Wenn Sie einen Datensatz zusammenführen, werden auch alle zugehörigen oder untergeordneten Datensätze zusammengeführt. Der Administrator kann auch Duplikaterkennungsregeln für andere Situationen einrichten.  
   
-Angenommen, Sie geben den Kontaktdatensatz Jim Glynn und eine Mobiltelefonnummer ein.  Die Regel zur Duplikaterkennung ermittelt, ob Sie bereits über einen ähnlichen Datensatz verfügen, und zeigt das folgende Dialogfeld an:  
+So können Sie beispielsweise einen Kontaktdatensatz, Cosimo Meller, zusammen mit einer Mobiltelefonnummer eingeben.  Die Regel zur Duplikaterkennung ermittelt, ob Sie bereits über einen ähnlichen Datensatz verfügen, und zeigt das folgende Dialogfeld an:  
   
  > [!div class="mx-imgBorder"] 
  > ![Doppelter Kontaktdatensatz erkannt](media/duplicates-detected.png "Doppelter Kontaktdatensatz erkannt")  
@@ -38,7 +38,7 @@ Angenommen, Sie geben den Kontaktdatensatz Jim Glynn und eine Mobiltelefonnummer
  > [!div class="mx-imgBorder"] 
  > ![Doppelter Kontaktdatensatz erkannt](media/duplicates-detected_1.png "Doppelter Kontaktdatensatz erkannt")  
  
-Common Data Service umfasst Regeln zur Duplikaterkennung für Konten und Kontakte. Diese Regeln werden automatisch aktiviert. Sie müssen also keine weiteren Schritte ausführen, um die Duplikaterkennung für diese Datensatztypen einzurichten.  
+Common Data Service enthält Duplikaterkennungsregeln für Firmen und Kontakte. Diese Regeln werden automatisch aktiviert. Sie müssen also keine weiteren Schritte ausführen, um die Duplikaterkennung für diese Datensatztypen einzurichten.  
   
 > [!NOTE]
 >  Wenn dies für Ihr System verfügbar ist, können Sie auch prüfen, ob neben Kontakt- und Kontoduplikaten auch Duplikate anderer Datensatztypen vorhanden sind. Wenden Sie sich hierfür an den Systemadministrator. [Suchen Sie nach Ihrem Administrator oder Supportmitarbeiter](find-admin.md).  
@@ -50,7 +50,7 @@ Common Data Service umfasst Regeln zur Duplikaterkennung für Konten und Kontakt
    > [!div class="mx-imgBorder"] 
    > ![Doppelter Kontaktdatensatz erkannt](media/duplicates-detected_2.png "Doppelter Kontaktdatensatz erkannt")  
   
-2. Wählen Sie im Dialogfeld **Datensätze zusammenführen** den Masterdatensatz aus, den Sie beibehalten möchten, und wählen Sie anschließend alle Felder im neuen Datensatz aus, die Sie im Masterdatensatz zusammenführen möchten. Die Daten in diesen Feldern überschreiben unter Umständen die vorhandenen Daten im Masterdatensatz. Wählen Sie **OK** aus.  
+2. Im Dialogfeld **Datensätze zusammenführen** wählen Sie den Masterdatensatz (der, den Sie behalten möchten) aus, und wählen Sie dann alle Felder des neuen Datensatzes aus, die im Masterdatensatz zusammengeführt werden sollen. Die Daten in diesen Feldern überschreiben unter Umständen die vorhandenen Daten im Masterdatensatz. Wählen Sie **OK** aus.  
   
      
    > [!div class="mx-imgBorder"] 
@@ -59,8 +59,8 @@ Common Data Service umfasst Regeln zur Duplikaterkennung für Konten und Kontakt
 > [!NOTE]
 >  Duplikate können in verschiedenen Situationen auftreten:  
 > 
-> - Wenn ein Datensatz erstellt oder aktualisiert wird  
->   - Wenn Sie Dynamics 365 für Outlook verwenden und von offline zu online wechseln  
+> - Beim Erstellen oder Aktualisieren eines Datensatzes.  
+>   - Wenn Sie Dynamics 365 for Outlook verwenden und vom Offline- in den Onlinemodus wechseln.  
 >   - Wenn Sie Daten mit dem Datenimport-Assistenten importieren  
 > 
 >   Duplikate werden nicht erkannt, wenn Sie Datensätze zusammenführen, eine Aktivität als abgeschlossen speichern oder den Status eines Datensatzes ändern und ihn beispielsweise aktivieren oder reaktivieren.  

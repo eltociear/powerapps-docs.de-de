@@ -20,13 +20,13 @@ ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/03/2020
-ms.locfileid: "76973176"
+ms.locfileid: "3303137"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>Häufig gestellte Fragen zu Aktivitäten und der Zeitachsenanzeige  
 
 ## <a name="is-a-title-required-when-adding-a-new-note"></a>Sind Titel beim Hinzufügen eines neuen Hinweises erforderlich?
 
-Nein. Beim Hinzufügen eines Hinweises zu einer Aktivität ist das Titelfeld zwar als Pflichtfeld markiert, aber es ist nicht erforderlich. Dies ist ein bekanntes Problem des alten Webclients.
+Nr. Beim Hinzufügen eines Hinweises zu einer Aktivität ist das Titelfeld zwar als Pflichtfeld markiert, aber es ist nicht erforderlich. Dies ist ein bekanntes Problem des alten Webclients.
 
 ## <a name="for-an-appointment-when-i-choose-the-option-to-save-as-draft-it-doesnt-show-that-the-appointment-has-been-saved-as-a-draft"></a>Wenn ich Termine mit der Option *Als Entwurf speichern* speichere, wird nicht angegeben, dass sie als Entwurf gespeichert wurden.
 
@@ -38,7 +38,7 @@ Ja. Sie können Aktivitäten zu schreibgeschützten Entitäten wie Hinweisen, Te
 
 ## <a name="are-html-tags-supported-in-notes"></a>Werden HTML-Tags in **Hinweisen** unterstützt?
 
-Nein. Beim Erstellen einer Hinweisaktivität werden HTML-Tags unabhängig vom Datensatz oder der Entität nicht unterstützt. Wenn Sie beispielsweise `<TAG> </TAG>` einem Hinweisfeld hinzufügen, wird es als `<TAG_XXX="XX"> </TAG>` angezeigt.
+Nr. Beim Erstellen einer Hinweisaktivität werden HTML-Tags unabhängig vom Datensatz oder der Entität nicht unterstützt. Wenn Sie beispielsweise `<TAG> </TAG>` einem Hinweisfeld hinzufügen, wird es als `<TAG_XXX="XX"> </TAG>` angezeigt.
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>Wie kann ich die Leistung der Zeitachsenanzeige verbessern?
 
@@ -53,7 +53,7 @@ Wenn Sie die **Seitenansicht** in Dynamics 365 öffnen, wird die **Zeitachsenanz
 
 ## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>Warum werden auf dem Dashboard im Stream „Meine Aktivitäten“ keine Aktivitäten und Datensätze anderer Benutzer angezeigt?
 
-Im Stream **Meine Aktivitäten** auf dem Dashboard werden die Datensätze und Aktivitäten angezeigt, deren Besitzer (Benutzer) Sie sind. Beispiel: Dem Benutzer **A** werden Datensätze und Aktivitäten des Besitzers **A** angezeigt, und dem Benutzer **B** werden Datensätze und Aktivitäten des Besitzers **B** angezeigt.
+Im Stream **Meine Aktivitäten** auf dem Dashboard werden die Datensätze und Aktivitäten angezeigt, deren Besitzer (Benutzer) Sie sind. Zum Beispiel Benutzer **A** sieht Datensätze und Aktivitäten, die Eigentum von **A** sind und Benutzer **B** sieht Datensätze und Aktivitäten, die Eigentum von **B** sind.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,4 +63,4 @@ Im Stream **Meine Aktivitäten** auf dem Dashboard werden die Datensätze und Ak
 
 [Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse](add-activities.md)
 
-[Zeitachsenabschnitt in der Kundenservicehub-App](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
+[Zeitskala-Abschnitt in der Kunderservicehub-App](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

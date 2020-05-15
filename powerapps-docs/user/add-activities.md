@@ -20,7 +20,7 @@ ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/10/2020
-ms.locfileid: "78970937"
+ms.locfileid: "3303275"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse 
 
@@ -34,14 +34,14 @@ Fügen Sie **Aktivitäten** der Pinnwand **Zeitachse** hinzu, um den Überblick 
 - Eine E-Mail mit einem angefügten Bild wird inline mit dem E-Mail-Text angezeigt.
 
   > [!div class="mx-imgBorder"]
-  > ![Zeitachsenansicht von Aktivitäten in Power Apps](media/TimelineViewOfActivity.png "Zeitachsenansicht von Aktivitäten in Power Apps")
+  > ![Zeitskala Ansicht der Aktivitäten in Power Apps](media/TimelineViewOfActivity.png "Zeitskala-Ansicht der Aktivitäten in Power Apps")
 
 
 Legende:
 
-  1. Suchen von Datensätzen
-  2. Notizen
-  3. Hinzufügen von Informationen und Aktivitäten
+  1. Datensätze durchsuchen
+  2. Notizen machen
+  3. Infos und Aktivitäten hinzufügen
   4. Filtern
   5. Weitere Befehle
   6. Aktivitätsstatus
@@ -57,7 +57,7 @@ Der schnellste Weg, eine Aktivität hinzuzufügen, ist das Verwenden der Verknü
    > [!div class="mx-imgBorder"]
    > ![Verknüpfung zum Hinzufügen einer Aktivität in Power Apps](media/add_new_activity_from_nav.gif "Verknüpfung zum Hinzufügen einer Aktivität in Power Apps")  
  
-3. Geben Sie die erforderlichen Informationen ein. Verwenden Sie das Feld **Bezug**, um die Aktivität einem Datensatz zuzuordnen.
+3. Füllen Sie die erforderlichen Informationen aus: Verwenden Sie das Feld **Bezug**, um die Aktivität einem Datensatz zuzuordnen.
 
 4. Wenn Sie fertig sind, klicken Sie auf **Speichern und schließen** oder auf **Speichern und neu erstellen**. 
 
@@ -77,7 +77,7 @@ Sie können auch einen Datensatz öffnen und diesem dann eine Aktivität hinzuf�
 
 
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen einer Telefonaktivität in Power Apps](media/addphonecall.png "Hinzufügen einer Telefonaktivität in Power Apps")
+   > ![Eine Telefonanrufaktivität hinzufügen in Power Apps](media/addphonecall.png "Eine Telefonanrufaktivität hinzufügen in Power Apps")
   
 3. Geben Sie den **Betreff** des Anrufs ein.
 
@@ -114,7 +114,7 @@ Um eine E-Mail-Aktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst d
    > [!NOTE]
    > Eine E-Mail mit einem angefügten Bild wird inline mit dem E-Mail-Text angezeigt.
   
-5. Um eine Vorlage für den E-Mail-Text zu verwenden, wählen Sie auf der Befehlsleiste **Vorlage einfügen** und anschließend die Vorlage aus. Weitere Informationen zum Einfügen einer E-Mail-Vorlage finden Sie unter [Vorschauversion: Hinzufügen einer E-Mail-Vorlage](insert-email-template.md). 
+5. Um eine Vorlage für den E-Mail-Text zu verwenden, wählen Sie auf der Befehlsleiste **Vorlage einfügen** und anschließend die Vorlage aus. Weitere Informationen zum Einfügen einer E-Mail-Vorlage finden Sie unter [Einfügen einer E-Mail-Vorlage](insert-email-template.md). 
   
 6. Wenn Sie mit dem Verfassen der E-Mail fertig sind, klicken Sie in der Befehlsleiste auf **Senden**. 
 
@@ -137,7 +137,7 @@ Um eine E-Mail-Aktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst d
 Um eine Terminaktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst den Datensatz speichern, dem Sie die Terminaktivität hinzufügen.  
 
 > [!NOTE]
-> Wiederkehrende Termine werden in der Dynamics 365-App für Outlook, der Dynamics 365 für Smartphones-App und beim Ausführen des Webclients für modellgesteuerte Apps auf dem Webbrowser des Mobiltelefons nicht unterstützt.
+> Laufende Termine werden in Dynamics 365 App for Outlook, der Dynamics 365 für Smartphones-App und wenn Sie den modellgesteuerten App-Webclient in Ihrem Mobiltelefon-Webbrowser verwenden, nicht unterstützt.
   
 1. Öffnen Sie den Datensatz, dem die Aktivität hinzugefügt werden soll. Öffnen Sie z. B. einen Kontaktdatensatz.
   
@@ -147,7 +147,7 @@ Um eine Terminaktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst de
   
 4. Wenn Sie mit dem Ausfüllen der Termindetails fertig sind, klicken Sie auf **Speichern und schließen**, um den Termin zu speichern.
 
-### <a name="add-notes"></a>Hinzufügen von Notizen
+### <a name="add-notes"></a>Notizen hinzufügen
 
 Sie können im Aktivitätsbereich auch ganz einfach Notizen hinzufügen.
   
@@ -162,7 +162,7 @@ Sie können im Aktivitätsbereich auch ganz einfach Notizen hinzufügen.
 3. Wenn Sie fertig sind, klicken Sie auf **Notiz hinzufügen**, um sie zu speichern.
 
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen einer Notiz](media/addnote.png "Hinzufügen einer Notiz")
+   > ![Notiz hinzufügen](media/addnote.png "Notiz hinzufügen")
 
 > [!NOTE]
 > Sie können auch eine Notiz hinzufügen, indem Sie **Infos und Aktivitäten hinzufügen** und dann ![Aktivitäten hinzufügen](media/add-activity-button.png "Schaltfläche „Aktivitäten hinzufügen“") > **Notiz** auswählen.
@@ -225,4 +225,4 @@ Sie können Aktivitäten direkt auf der Zeitachse verwalten, z.B. eine Aktivitä
 
 [Häufig gestellte Fragen zu Aktivitäten und der Zeitachsenanzeige](faq-for-timeline-and-activity.md)
 
-[Zeitachsenabschnitt in der Kundenservicehub-App](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
+[Zeitskala-Abschnitt in der Kunderservicehub-App](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

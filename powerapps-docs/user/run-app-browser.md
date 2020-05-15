@@ -21,29 +21,29 @@ ms.sourcegitcommit: 15c6b26ff085928459ad9b3f52fb607fae4a997d
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "74956782"
+ms.locfileid: "3302976"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>Ausführen einer App in einem Webbrowser
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App in der mobilen Dynamics 365-App oder in einem Webbrowser auf einem Tablet ausführen. In diesem Artikel erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser auf einem Tablet ausführen.
 
-Für vollständige Funktionalität und optimierte Benutzererfahrung wird jedoch dringend die Verwendung der mobilen Dynamics 365-App für Smartphones und Tablets empfohlen. Wenn Sie Dynamics 365 für Smartphones und Tablets nicht installiert haben, können Sie trotzdem den Webbrowser auf Ihrem Tablet verwenden, sofern Ihr Gerät eine ausreichend hohe Bildschirmauflösung aufweist. Weitere Informationen finden Sie unter: [Unterstützte Funktionen](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets#supported-devices-for-the-mobile-app)
+Für vollständige Funktionalität und optimierte Benutzererfahrung wird jedoch dringend die Verwendung der mobilen Dynamics 365-App für Smartphones und Tablets empfohlen. Wenn Sie Dynamics 365 für Smartphones und Tablets nicht installiert haben, können Sie trotzdem den Webbrowser auf Ihrem Tablet verwenden, sofern Ihr Gerät eine ausreichend hohe Bildschirmauflösung aufweist. Weitere Informationen: [Was wird unterstützt?](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets#supported-devices-for-the-mobile-app).
 
 > [!NOTE]
 > Die Verwendung des Webbrowsers auf Ihrem Smartphone zum Ausführen von modellgesteuerten Apps wird nicht unterstützt. Sie müssen die Dynamics 365-App für Smartphones verwenden.
 
 Für diesen Schnellstart benötigen Sie Folgendes:
-- Eine Power Apps-Lizenz. Diese ist in einem Power Apps-Plan wie der [Testversion für den Power Apps-Plan 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) oder in den [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)- oder [Dynamics 365](https://dynamics.microsoft.com/pricing/)-Plänen enthalten, in denen Power Apps enthalten ist. 
+- Eine Power Apps-Lizenz Diese ist in einem Power Apps-Plan enthalten, z. B. in der [Testversion von Power Apps Plan 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) oder in jedem [Microsoft Office 365-](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) oder [Dynamics 365-](https://dynamics.microsoft.com/pricing/)Plan, in dem Power Apps enthalten ist. 
 - Zugriff auf eine App, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat
 - Zugriff auf einen unterstützten Webbrowser bzw. ein unterstütztes Betriebssystem
-   - Informationen zu Canvas-Apps finden Sie unter: [Systemanforderungen, Einschränkungen und Konfigurationswerte](../maker/canvas-apps/limits-and-config.md)
-   - Informationen zu modellgesteuerten Apps finden Sie unter [Unterstützte Webbrowser und Mobilgeräte](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+   - Für Canvas-Apps: [Systemanforderungen, Einschränkungen und Konfigurationswerte](../maker/canvas-apps/limits-and-config.md)
+   - Für modellgesteuerte Apps: [Unterstützte Webbrowser und Mobilgeräte](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
 
 
 ## <a name="sign-in-to-dynamics-365"></a>Anmelden bei Dynamics 365
 Melden Sie sich unter [https://home.dynamics.com](https://home.dynamics.com) bei Dynamics 365 an.
 
 ## <a name="find-an-app-on-the-home-page"></a>Finden einer App auf der Startseite
-Die Startseite zeigt möglicherweise verschiedene Arten von Geschäfts-Apps an. Sie können nach einer bestimmten App suchen, indem Sie einen Teil des App-Namens in das Suchfeld eingeben. Sie können die Liste ebenfalls filtern, damit nur Apps angezeigt werden, die von einer bestimmten Quelle (z. B. Power Apps) erstellt wurden. Klicken oder tippen Sie dafür auf **Filter**, und wählen Sie anschließend die Quelle aus.
+Die Startseite zeigt möglicherweise verschiedene Arten von Geschäfts-Apps an. Sie können nach einer bestimmten App suchen, indem Sie einen Teil des App-Namens in das Suchfeld eingeben. Sie können die Liste ebenfalls filtern, damit nur Apps angezeigt werden, die von einer bestimmten Quelle (z.B. Power Apps) erstellt wurden. Klicken oder tippen Sie dafür auf **Filter**, und wählen Sie anschließend die Quelle aus.
 
 Wenn Sie eine App erst vor Kurzem installiert haben, wird sie möglicherweise nicht sofort in der Liste der Apps angezeigt. Wählen Sie **Synchronisieren** aus, um Ihre Apps anzuzeigen. Dieser Vorgang kann bis zu einer Minute dauern.
 
@@ -55,7 +55,7 @@ Sie können die URL einer App als Lesezeichen in dem Browser Ihres Tablets speic
 
 ![](./media/run-app-browser/web-login.png)
 
-## <a name="connect-to-data"></a>Verbinden mit Daten
+## <a name="connect-to-data"></a>Mit Daten verbinden
 Wenn eine App eine Verbindung mit einer Datenquelle oder die Berechtigung zur Nutzung von Funktionen des Geräts (z.B. Kamera oder Ortungsdienste) erfordert, müssen Sie Ihre Zustimmung erteilen, bevor Sie die App verwenden können. Normalerweise werden Sie nur beim ersten Mal dazu aufgefordert.
 
 ![Verbindung](./media/run-app-browser/app-connection.png)

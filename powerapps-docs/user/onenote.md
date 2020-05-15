@@ -1,5 +1,5 @@
 ---
-title: Verwenden von OneNote in Common Data Service | Microsoft-Dokumentation
+title: Verwenden von OneNote in Common Data Service| Microsoft-Dokumentation
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -20,19 +20,19 @@ ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237165"
+ms.locfileid: "3303229"
 ---
 # <a name="take-notes-by-using-onenote"></a>Notizen mit OneNote 
 
 Mithilfe von OneNote können Sie sich Notizen machen und Ideen, Pläne und Forschungsinformationen festhalten sowie sie bewerten. Verwenden Sie dazu die Ansicht **Zugeordnetes Raster des Dokuments** eines Datensatzes in Common Data Service.
 
-Bevor Sie OneNote verwenden können, muss OneNote von Ihrem Systemadministrator aktiviert werden. Weitere Informationen:
+Bevor Sie OneNote verwenden können, muss es von Ihrem Systemadministrator aktiviert werden. Weitere Informationen:
 
 -   [Suchen Sie nach Ihrem Administrator oder Supportmitarbeiter](find-admin.md).  
 
 -   [Einrichten der OneNote-Integration](https://docs.microsoft.com/power-platform/admin/set-up-onenote-integration-in-dynamics-365)  
 
-## <a name="start-a-new-onenote-notebook"></a>Starten eines neuen OneNote-Notebooks
+## <a name="start-a-new-onenote-notebook"></a>Ein neues OneNote-Notebook starten
 
 1. Öffnen Sie einen Datensatz, und navigieren Sie zur Ansicht **Zugeordnetes Raster des Dokuments**. Öffnen Sie z. B. einen Kontaktdatensatz.
 
@@ -43,14 +43,14 @@ Bevor Sie OneNote verwenden können, muss OneNote von Ihrem Systemadministrator 
 
 3. Klicken Sie auf **Dokumentspeicherort**, und wählen Sie den Speicherort aus, an dem das Notebook gespeichert werden soll. Weitere Informationen finden Sie unter [Anzeigen vorhandener OneDrive-Dokumente](one-drive.md#view-existing-onedrive-documents).
 
-4. Klicken Sie auf **Neu** und dann auf **OneNote**. 
+4. Wählen Sie **Neu** und dann **OneNote** aus. 
 
     > [!div class="mx-imgBorder"]
-    > ![Erstellen eines neuen OneNote-Notebooks](media/onenote.png "Erstellen eines neuen OneNote-Notebooks")
+    > ![Ein neues OneNote -Notebook erstellen](media/onenote.png "Ein neues OneNote-Notizbuch erstellen")
 
 5. Geben Sie einen Namen für das Notebook ein, und klicken Sie anschließend auf **Speichern**. Ein neues Notebook wird erstellt und geöffnet.
 
-## <a name="open-an-existing-onenote-notebook"></a>Öffnen eines vorhandenen OneNote-Notebooks
+## <a name="open-an-existing-onenote-notebook"></a>Vorhandenes OneNote-Notebook öffnen
 
 1. Öffnen Sie einen Datensatz, und navigieren Sie zur Ansicht **Zugeordnetes Raster des Dokuments**. Öffnen Sie z. B. einen Kontaktdatensatz.
 
@@ -59,9 +59,9 @@ Bevor Sie OneNote verwenden können, muss OneNote von Ihrem Systemadministrator 
     > [!div class="mx-imgBorder"]
     > ![Öffnen der Registerkarte „Dokumente“ in einem Datensatz](media/onedrive_nav.png "Öffnen der Registerkarte „Dokumente“ in einem Datensatz")
 
-3. Klicken Sie auf **Dokumentspeicherort**, und wählen Sie dann den Speicherort Ihres Notebooks aus. Klicken Sie beispielsweise auf **OneDrive**, wenn Ihr Notebook in OneDrive gespeichert ist. Weitere Informationen: [Anzeigen vorhandener OneDrive-Dokumente](one-drive.md#view-existing-onedrive-documents)
+3. Klicken Sie auf **Dokumentspeicherort**, und wählen Sie dann den Speicherort Ihres Notebooks aus. Klicken Sie beispielsweise auf **OneDrive**, wenn Ihr Notebook in OneDrive gespeichert ist. Weitere Informationen: [Anzeigen vorhandener OneDrive-Dokumente](one-drive.md#view-existing-onedrive-documents).
 
 4. Wählen Sie Ihr Notebook aus, um mit dem Hinzufügen von Notizen zu beginnen.
  
     > [!div class="mx-imgBorder"]
-    > ![Öffnen eines vorhandenen OneNote-Notebooks](media/existing_onenote.png "Öffnen eines vorhandenen OneNote-Notebooks")
+    > ![Vorhandenes OneNote-Notebook öffnen](media/existing_onenote.png "Vorhandenes OneNote-Notebook öffnen")

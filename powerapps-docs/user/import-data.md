@@ -21,13 +21,13 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733208"
+ms.locfileid: "3302884"
 ---
-# <a name="import-data"></a>Importieren von Daten
+# <a name="import-data"></a>Daten importieren
 
 Ob Ihre Daten in einem Tabellenblatt, auf Ihrem Telefon oder in einem E-Mail-Programm gespeichert sind, hier erfahren Sie, wie Sie die Daten in Ihre App importieren. Beispielsweise können Sie die Kontaktliste Ihrer Kunden aus einem Excel-Arbeitsblatt in die App importieren, damit Sie alle Ihre Kundeninformationen an einem zentralen Ort nachverfolgen können.
   
-## <a name="step-1-get-your-import-file-ready"></a>Schritt 1: Vorbereiten Ihrer Importdatei  
+## <a name="step-1-get-your-import-file-ready"></a>Schritt 1: Bereiten Sie Ihre Importdatei vor  
 Zunächst exportieren Sie Ihre Daten in eine Excel-Datei. Folgende Dateiformate werden unterstützt:
  - Excel-Arbeitsmappe (.xlsx)
  - Durch Trennzeichen getrennte Werte (.csv)
@@ -44,26 +44,26 @@ Die maximal zulässige Größe für ZIP-Dateien beträgt 32 MB. Für die anderen
   
 ### <a name="export-data-from-a-spreadsheet"></a>Exportieren von Daten aus einem Tabellenblatt  
   
-1.  Öffnen Sie das Tabellenblatt.  
+1.  Öffnen Sie die Tabelle.  
   
 2.  Bearbeiten Sie ggf. alle Spaltennamen im Tabellenblatt, damit sie genau mit den hier angezeigten entsprechenden Namen übereinstimmen.  
   
     > [!WARNING]
-    > Wenn das Tabellenblatt nicht alle aufgeführten Spaltennamen enthält, ist das in Ordnung. Wenn jedoch ein Spaltenname vorhanden ist, muss dieser exakt mit dem entsprechenden Namen in der Liste übereinstimmen, weil der Import sonst nicht funktioniert. Leerzeichen sind erforderlich. Beachten Sie, dass das Wort „Email“ keinen Bindestrich enthält.  
+    > Wenn das Tabellenblatt nicht alle aufgeführten Spaltennamen enthält, ist das in Ordnung. Wenn jedoch ein Spaltenname vorhanden ist, muss dieser exakt mit dem entsprechenden Namen in der Liste übereinstimmen, weil der Import sonst nicht funktioniert. Leerzeichen sind erforderlich. Beachten Sie, dass das Wort "E-Mail" einen Bindestrich enthält.  
 
-    |**Spaltenname im Tabellenblatt (Schreibweise muss genau übereinstimmen)**|
+    |**Spaltenname in Spreadsheet (muss exakt entsprechen)**|
     |---------|
-    |First Name|  
-    |Zweiter Vorname|  
-    |Last Name|  
+    |Vorname|  
+    |Weitere Vornamen|  
+    |Nachname|  
     |Telefon (geschäftlich)|  
     |Mobiltelefon|  
     |Position|  
-    |Straße (geschäftlich)|  
-    |Ort (geschäftlich)|  
-    |Bundesland/Kanton (geschäftlich)|  
-    |PLZ (geschäftlich)|  
-    |Land/Region (geschäftlich)|  
+    |Straße geschäftlich|  
+    |Ort geschäftlich|  
+    |Region geschäftlich|  
+    |Postleitzahl geschäftlich|  
+    |Land/Region geschäftlich|  
     |E-Mail-Adresse|  
   
 3.  Speichern Sie die Datei.  
@@ -76,7 +76,7 @@ Spezifische Anweisungsschritte zum Exportieren von Kontakten für die Marke Ihre
   
 Um eine App zu finden, durchsuchen Sie den Online Store Ihres Telefons.  
   
-## <a name="step-2-import-the-file"></a>Schritt 2: Importieren der Datei 
+## <a name="step-2-import-the-file"></a>Schritt 2: Importieren Sie die Datei. 
   
 1. Wählen Sie auf der Befehlsleiste **Aus Excel importieren** oder **Aus CSV importieren** aus.
 
@@ -102,7 +102,7 @@ Nach Fertigstellung des Assistenten überprüfen Sie Ihre Daten (z. B. die Liste
 
 Wenn Sie Daten importieren, die Doublebyte-Zeichen für ostasiatische Sprachen enthalten, stellen Sie sicher, dass die Datei als UTF-8-BOM codiert ist. Einfaches UTF-8 ist möglicherweise nicht ausreichend.
 
-1. Öffnen Sie die CSV-Datei mithilfe von Visual Studio Code.
+1. Öffnen Sie die CSV-Datei mit Visual Studio Code.
 2. Klicken Sie unten in der Leiste auf die Bezeichnung **UTF-8-** (Popupfenster wird geöffnet). 
 3. Wählen Sie **Mit Codierung speichern** aus. 
 

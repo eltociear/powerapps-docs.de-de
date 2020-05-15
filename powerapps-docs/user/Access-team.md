@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 7dd418db04f72310210925345611bc1a0b2a6f17
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63318515"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3302539"
 ---
 # <a name="share-records-using-access-team"></a>Freigeben von Datensätzen mit Access Team
 
@@ -35,10 +35,10 @@ Ein Zugriffsteam gewährt den Zugriff auf Datensätze über deren Freigabe. Mitg
   > [!div class="mx-imgBorder"]
   > ![Meine aktiven Konten](media/AccessTeam1.png "Meine aktiven Konten")
 
-3. Klicken Sie im Abschnitt **Mitglieder des Zugriffsteams** auf **Weitere Befehle** ( **…** ) > **Benutzer hinzufügen**.
+3. Klicken Sie im Abschnitt **Mitglieder des Zugriffsteams** auf **Weitere Befehle** (**…**) > **Benutzer hinzufügen**.
 
   > [!div class="mx-imgBorder"]
-  > ![Hinzufügen eines Benutzers zum Zugriffsteam](media/AccessTeam2.png "Hinzufügen eines Benutzers zum Zugriffsteam")
+  > ![Benutzer Zugriffsteam hinzufügen](media/AccessTeam2.png "Benutzer Zugriffsteam hinzufügen")
 
  4. Geben Sie in das Suchfeld den Benutzernamen ein, um den Benutzer zu finden, und wählen Sie dann **Hinzufügen** aus.
   
@@ -54,6 +54,6 @@ Ein Zugriffsteam gewährt den Zugriff auf Datensätze über deren Freigabe. Mitg
 2.  Klicken Sie unter dem Unterraster **Mitglieder des Zugriffsteams** auf **Benutzer entfernen**.
 
   > [!div class="mx-imgBorder"]
-  > ![Entfernen eines Benutzers aus dem Zugriffsteam](media/AccessTeam4.png "Entfernen eines Benutzers aus dem Zugriffsteam")  
+  > ![Benutzer aus Zugriffteam entfernen](media/AccessTeam4.png "Benutzer aus Zugriffteam entfernen")  
   
   

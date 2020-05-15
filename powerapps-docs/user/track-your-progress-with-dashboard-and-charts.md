@@ -21,14 +21,14 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74726169"
+ms.locfileid: "3302769"
 ---
 # <a name="track-your-progress-with-dashboards-and-charts"></a>Verfolgen des Fortschritts mit Dashboards und Diagrammen
 
 Dashboards enthalten erfasste App-Daten und bieten Einblicke, um KPI (Key Performance Indicator) und andere wichtige Daten in leicht lesbaren interaktiven Diagrammen und Diagrammen anzuzeigen. Dashboards sind für alle Datensatztypen verfügbar.
 
 > [!div class="mx-imgBorder"]
-> ![Dashboard](media/Dashboard.png "Dashboard") 
+> ![Dashboard](media/Dashboard.png "Informationsleiste") 
 
 -  Wenn Sie ein anderes Dashboardlayout anzeigen möchten, wählen Sie den Pfeil nach unten neben dem Namen des Dashboards aus, und wählen Sie dann das gewünschte Layout aus.
 -  Zum Auswählen eines Standarddashboards zeigen Sie das gewünschte Dashboard an, und wählen Sie dann am oberen Rand des Bildschirms **Als Standard festlegen** aus.
@@ -36,7 +36,7 @@ Dashboards enthalten erfasste App-Daten und bieten Einblicke, um KPI (Key Perfor
    > [!div class="mx-imgBorder"]
    > ![Dashboard hinzufügen oder ändern](media/add_dashboard.png "Hinzufügen oder Ändern eines Dashboards") 
 
-## <a name="create-a-new-dashboard"></a>Erstellen eines neuen Dashboards
+## <a name="create-a-new-dashboard"></a>Neues Dashboard erstellen
 
 1. Wählen Sie zum Erstellen eines neuen Dashboards **Dynamics 365-Dashboard erstellen** aus. 
 
@@ -52,7 +52,7 @@ Dashboards enthalten erfasste App-Daten und bieten Einblicke, um KPI (Key Perfor
 4. Fügen Sie den gewünschten Inhalt für die einzelnen Bereiche des Dashboards hinzu. Wir fügen z. B. ein Diagramm hinzu. 
 
    > [!div class="mx-imgBorder"]
-   > ![Diagramm hinzufügen](media/add_chart.png "Hinzufügen eines Diagramms")
+   > ![Diagramm hinzufügen](media/add_chart.png "Diagramm hinzufügen")
  
  5. Wählen Sie den **Datensatztyp** für das Diagramm aus.
  6. Wählen Sie eine **Ansicht** aus, in der die Daten im Diagramm angezeigt werden.
@@ -68,7 +68,7 @@ Diagramme bieten Ihnen einen schnellen Überblick über die Nachverfolgung ihrer
 -   Zeigen Sie mit der Maus auf das Diagramm, um eine QuickInfo zu diesem Bereich des Diagramms anzuzeigen.
 -   Klicken Sie auf den Bereich eines Diagramms, um eine Rasteransicht mit weiteren Details zu den Daten im Diagramm anzuzeigen.
 -   Wenn Sie ein Diagramm erweitern möchten, wählen Sie die Schaltfläche **Diagramm erweitern** ![Ansicht „Diagramm erweitern“](media/expandviewbutton.png "Erweitern der Diagrammansicht") aus.
--   Wählen Sie ![Weitere Befehle](media/MoreButton.png "Weitere Befehle") aus, und führen Sie dann eine Aktion aus, um Datensätze im Diagramm anzuzeigen oder das Diagramm zu aktualisieren: **Aktualisieren** oder **Datensätze anzeigen**
+-   Wenn Sie Datensätze im Diagramm anzeigen möchten oder das Diagramm zu aktualisieren, wählen Sie ![Weitere Befehle](media/MoreButton.png "Weitere Befehle") und wählen Sie dann eine Aktion: **Aktualisieren** oder **Datensätze anzeigen**.
      
      > [!div class="mx-imgBorder"]
      > ![Anzeigen von Diagrammen in Power Apps](media/ViewOfCharts.png "Anzeigen von Diagrammen in Power Apps")  
@@ -81,7 +81,7 @@ Wenn Sie die Diagrammansicht ändern, wird eine andere Aufschlüsselung der Date
 Wählen Sie z. B. „Alle Verkaufschancen“ aus, und wählen Sie dann eine andere Ansicht aus. Das Diagramm und das Raster werden daraufhin aktualisiert.
 
 > [!div class="mx-imgBorder"]
-> ![Ändern einer Diagrammansicht in Power Apps](media/ChangeChartView.png "Ändern einer Diagrammansicht in Power Apps")
+> ![Eine Diagrammansicht in Power Apps ändern](media/ChangeChartView.png "Eine Diagrammansicht in Power Apps ändern")
 
 ## <a name="known-issues"></a>Bekannte Probleme  
 Im Diagramm-Designer wird das Hinzufügen eines Auftrags für bestimmte berechnete Felder nicht unterstützt und führt zu einem Fehler.  Die berechneten Felder, die zu diesem Fehler führen, verwenden ein anderes berechnetes Feld, ein verknüpftes Entitätsfeld oder ein lokales Feld in der Entität.

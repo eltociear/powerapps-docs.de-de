@@ -20,7 +20,7 @@ ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/01/2020
-ms.locfileid: "80516644"
+ms.locfileid: "3303413"
 ---
 # <a name="create-a-new-record"></a>Neuen Datensatz erstellen
 
@@ -39,7 +39,7 @@ Mit dem Befehl **Neuen Datensatz erstellen** oder **Schnellerfassung** ist die E
 2.  Füllen Sie die Felder aus, und klicken Sie dann auf **Speichern und schließen**. Oder klicken Sie zum Speichern und Erstellen eines weiteren Datensatzes auf den Pfeil nach unten, und wählen Sie **Speichern und neu erstellen** aus.
 
      > [!div class="mx-imgBorder"] 
-     > ![Speichern eines Datensatzes](media/quick_create.png "Speichern eines Datensatzes")
+     > ![Datensatz speichern](media/quick_create.png "Datensatz speichern")
   
 > [!NOTE]
 > Ein Sternchen ![Schaltfläche „Pflichtfeld“](media/required-field-button.png "Schaltfläche „Pflichtfeld“") neben dem Feld auf dem Bildschirm bedeutet, dass dieses Feld ein Pflichtfeld ist. Wenn Sie auf **Speichern und schließen** klicken, noch bevor Sie die erforderlichen Felder ausgefüllt haben, wird eine Fehlermeldung angezeigt. Eine Warnung wird angezeigt, wenn Sie Informationen eingegeben haben und auf **Abbrechen** geklickt haben.
@@ -50,7 +50,7 @@ Mit dem Befehl **Neuen Datensatz erstellen** oder **Schnellerfassung** ist die E
 ## <a name="create-a-new-record-using-the-new-button"></a>Erstellen eines neuen Datensatzes mithilfe der Schaltfläche „Neu“ 
 
 1. Wählen Sie im linken Navigationsbereich einen Datensatztyp aus. Wählen Sie beispielsweise **Kontakte** aus, um einen neuen Kontaktdatensatz zu erstellen.
-2. Wählen Sie in der Befehlsleiste **+Neu** aus.
+2. Klicken Sie in der Befehlsleiste auf **+Neu**.
 
     > [!div class="mx-imgBorder"] 
     > ![Schaltfläche „Neu“](media/newrecord2.png "Schaltfläche „Neu“")

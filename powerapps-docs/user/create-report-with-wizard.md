@@ -21,19 +21,19 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733272"
+ms.locfileid: "3302930"
 ---
 # <a name="create-a-report-using-the-report-wizard"></a>Erstellen eines Berichts mithilfe des Berichts-Assistenten
 
 
 Verwenden Sie den Berichts-Assistenten, um Berichte mit Diagrammen und Tabellen zu erstellen, mit denen Sie Ihre Daten problemlos analysieren können. 
 
-Alle Berichte, die mit dem Berichts-Assistenten erstellt werden, sind abrufbasierte Berichte. Beachten Sie, dass alle mit dem Berichts-Assistenten generierten Berichte im Querformat gedruckt werden.
+Alle mit dem Berichts-Assistenten erstellten Berichte basieren auf der Fetch-Funktion. Beachten Sie, dass alle mit dem Berichts-Assistenten generierten Berichte im Querformat gedruckt werden.
 
 ## <a name="create-a-new-report"></a>Erstellen eines neuen Berichts
 
 1. Wählen Sie im linken Navigationsbereich den Bereich „Berichte“ aus.  
-2. Wählen Sie in der Befehlsleiste **Neu** aus.
+2. Wählen Sie auf der Befehlsleiste **Neu** aus.
 
     > [!div class="mx-imgBorder"]
     > ![Erstellen eines neuen Berichts](media/newreport.png "Erstellen eines neuen Berichts")
@@ -56,7 +56,7 @@ Alle Berichte, die mit dem Berichts-Assistenten erstellt werden, sind abrufbasie
 5.  Wählen Sie im Bildschirm **Wählen Sie die Datensätze aus, die im Bericht enthalten sein sollen.** die Filter aus, um zu bestimmen, welche Datensätze in den Bericht eingeschlossen werden. Wenn Sie z. B. nur Ergebnisse für Datensätze anzeigen möchten, die in den letzten 60 Tagen geändert wurden, können Sie diesen Filter in diesem Bildschirm festlegen. Wenn Sie nicht möchten, dass die Daten gefiltert werden, wählen Sie **Löschen** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Wählen Sie die Datensätze aus, die im Bericht enthalten sein sollen.*](media/report_wizard_3.png "Auswählen der Datensätze, die im Bericht enthalten sein sollen")
+    > ![Wählen Sie die Datensätze aus, die im Bericht enthalten sein sollen.*](media/report_wizard_3.png "Wählen Sie die Datensätze aus, die im Bericht enthalten sein sollen.")
   
 6. Wählen Sie im Bildschirm **Layout für Felder** das Layout des Berichts aus. Wählen Sie **Klicken Sie hier, um eine Gruppierung hinzuzufügen.** aus, und wählen Sie aus, wie die Daten gruppiert werden sollen.
 
@@ -98,8 +98,8 @@ Alle Berichte, die mit dem Berichts-Assistenten erstellt werden, sind abrufbasie
 
 [Hinzufügen eines vorhandenen Berichts](add-existing-report.md)
 
-[Filter „Bericht bearbeiten“](edit-report-filter.md)
+[Bearbeiten des Standardfilters eines Berichts](edit-report-filter.md)
 
-[Problembehandlung bei Daten, die nicht in einem Bericht angezeigt werden](troubleshoot-reports.md)
+[Behandeln von Problemen im Zusammenhang mit nicht angezeigten Berichtsdaten](troubleshoot-reports.md)
 
 

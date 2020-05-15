@@ -17,27 +17,27 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 1156aa8fb5fbc3ae51c21b8aa41606df6dbc2e86
-ms.sourcegitcommit: e9671e018c1ee4b640528915350a367758991b6a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67420764"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3302401"
 ---
 # <a name="troubleshoot-problems-with-data-not-displaying-in-a-report"></a>Behandeln von Problemen im Zusammenhang mit nicht angezeigten Berichtsdaten
 
-Das Problem, dass erwartete Daten in einem Bericht nicht angezeigt werden, kann verschiedene Ursachen haben:  
+Es gibt verschiedene Gründe, warum Daten möglicherweise nicht wie erwartet in einem Bericht angezeigt werden:  
   
-- **Unzureichende Sicherheitsberechtigungen:** Wenn Sie in Common Data Service nicht zum Anzeigen eines Datensatzes berechtigt sind, wird er im Bericht nicht angezeigt.  
+- **Unzureichende Sicherheitsberechtigungen**. Wenn Sie in Common Data Service nicht die Berechtigung zum Anzeigen eines Datensatzes besitzen, ist er nicht im Bericht enthalten.  
   
-- **Daten nicht eingegeben:** Die Person, die die Daten eingegeben hat, hat möglicherweise nicht alle Felder ausgefüllt.  
+- **Daten wurden nicht engegeben.** Der Benutzer, der die Daten eingegeben hat, hat möglicherweise nicht alle Felder ausgefüllt.  
   
-- **Daten entsprechen nicht den Kriterien für den Bericht:** Viele Berichte enthalten einen Standardfilter, der dafür sorgt, dass nur aktive Datensätze angezeigt werden. Möglicherweise haben Sie aber auch Kriterien ausgewählt, für die keine passenden Datensätze vorhanden sind. Ändern Sie den Berichtsfilter. Weitere Informationen finden Sie unter [Bearbeiten des Standardfilters eines Berichts](edit-report-filter.md).  
+- **Die Daten entsprechen nicht den Kriterien des Berichts** Viele Berichte enthalten einen Standardfilter, der dafür sorgt, dass nur aktive Datensätze angezeigt werden. Möglicherweise haben Sie aber auch Kriterien ausgewählt, für die keine passenden Datensätze vorhanden sind. Ändern Sie den Berichtsfilter. Weitere Informationen finden Sie unter [Bearbeiten des Standardfilters eines Berichts](edit-report-filter.md).  
   
-- **Betrachtung einer zwischengespeicherten Kopie des Berichts:** Standardmäßig werden Daten in Common Data Service-Berichten bei jeder Berichtsausführung aus der Datenbank gepullt. Es kann jedoch sein, dass Ihr Systemadministrator einen Bericht so geändert hat, dass er aus dem Cache ausgeführt wird. Sollten kürzlich eingegebene Daten nicht in dem Bericht enthalten sein, wird unter Umständen eine ältere Berichtsversion aus dem Cache verwendet. Wählen Sie zum Aktualisieren des Berichts auf der Berichtssymbolleiste die Schaltfläche **Aktualisieren** aus.  
+- **Möglicherweise zeigen Sie eine Kopie des Berichts aus dem Cache an.** Die Daten in Common Data Service-Berichten werden standardmäßig bei jedem Ausführen des Berichts aus der Datenbank abgerufen. Möglicherweise hat jedoch der Systemadministrator festgelegt, dass ein Bericht aus dem Cache ausgeführt wird. Wenn kürzlich eingegebene Daten nicht im Bericht eingeschlossen sind, wird möglicherweise eine ältere Version des Berichts aus dem Cache angezeigt. Wählen Sie zum Aktualisieren des Berichts auf der Berichtssymbolleiste die Schaltfläche **Aktualisieren** aus.  
   
-- **Keine Berechtigung zum Lesen von Datensätzen in einem Unterbericht:** Wenn Sie nicht zum Lesen von Datensatztypen aus einem Unterbericht berechtigt sind, erhalten Sie eine Fehlermeldung mit dem Hinweis, dass der Unterbericht nicht angezeigt werden konnte.  
+- **Sie besitzen möglicherweise nicht die Berechtigung zum Lesen von Datensätzen in einem Unterbericht.** Wenn Sie nicht zum Lesen der Datensatztypen in einem Unterbericht berechtigt sind, wird eine Fehlermeldung angezeigt, dass der Unterbericht nicht angezeigt werden konnte.  
   
-- **Blockierung erforderlicher Cookies durch die Datenschutzeinstellungen von Microsoft Internet Explorer:** Falls bei Diagrammberichten anstelle des Diagramms ein rotes X angezeigt wird, wird durch Ihre Datenschutzeinstellungen möglicherweise ein für das Diagrammsteuerelement erforderliches Cookie blockiert. Aktivieren Sie zur Behebung dieses Problems in Ihrem Browser Cookies für den Server, auf dem Reporting Services ausgeführt wird.  
+- **Ihre Microsoft Internet Explorer Datenschutzeinstellungen können erforderliche Cookies blockieren.** Wenn anstelle eines Diagrammberichts ein rotes X angezeigt wird, blockieren Ihre Datenschutzeinstellungen möglicherweise ein Cookie, das für die Steuerung des Diagramms benötigt wird. Zum Beheben dieses Problems müssen Sie in Ihrem Browser für den Server, auf dem Reporting Services ausgeführt wird, Cookies aktivieren.  
   
 
 ### <a name="see-also"></a>Siehe auch

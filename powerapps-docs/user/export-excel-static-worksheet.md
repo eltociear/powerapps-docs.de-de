@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 82d14f70bbdcd9faddc467636db255f0b512830e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61544819"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3302470"
 ---
 # <a name="export-to-an-excel-static-worksheet"></a>Exportieren in ein statisches Excel-Arbeitsblatt
 
@@ -33,14 +33,14 @@ Möglicherweise haben Sie die Option, Daten in allen Datensatztypen in ein stati
   
 1. Öffnen Sie eine Liste mit Datensätzen in der App, wählen Sie den Pfeil rechts neben **Nach Excel exportieren** aus, und wählen Sie dann **Statisches Arbeitsblatt (nur Seite)** aus.  
   
-2. Standardmäßig enthält ein exportiertes Arbeitsblatt die Felder, die in der Liste angezeigt werden, und verwendet die gleiche Feldreihenfolge, Sortierung und Feldbreite. Um Änderungen an den Spalten in einer Ansicht für die erweiterte Suche vorzunehmen, wählen Sie **Spalten bearbeiten** aus. 
+2. Standardmäßig schließt eine exportierte Tabelle die Felder ein, die in der Liste angezeigt werden, und verwendet die gleiche Feldanordnung, Sortierung und Feldbreite. Wenn Sie Änderungen an den Spalten in einer Ansicht für die erweiterte Suche vornehmen möchten, wählen Sie **Spalten bearbeiten**. 
   
 3. Wählen Sie **Speichern** aus, und speichern Sie dann die XLSX-Datei. Notieren Sie sich den Speicherort der Datei.  
   
    > [!NOTE]
-   > Wenn Sie die Datendatei später bearbeiten möchten, empfiehlt es sich, die Datei zu speichern, bevor Sie sie öffnen. Andernfalls wird möglicherweise diese Fehlermeldung angezeigt: **Excel kann keine weiteren Dateien öffnen oder speichern, da nicht genügend Arbeitsspeicher oder Festplattenspeicherplatz vorhanden ist.**  
+   > Wenn Sie die Datendatei später bearbeiten möchten, empfiehlt es sich, die Datei zu speichern, bevor Sie sie öffnen. Andernfalls erhalten Sie möglicherweise die Fehlermeldung: **Excel kann keine weiteren Dokumente mehr öffnen, da nicht genügend Speicherplatz vorhanden ist.**  
    > 
-   > So beheben Sie das Problem:  
+   > Gehen Sie wie folgt vor, um das Problem zu beheben:  
    > 
    > 1. Öffnen Sie Excel, und navigieren Sie zu **Datei** > **Optionen** > **Trust Center** > **Trust Center-Einstellungen** > **Geschützte Ansicht**.  
    > 2.  Deaktivieren Sie unter **Geschützte Ansicht** alle drei Optionen.  
@@ -51,13 +51,13 @@ Möglicherweise haben Sie die Option, Daten in allen Datensatztypen in ein stati
 
 4. Öffnen Sie Excel und dann die XLSX-Datei, die Sie im vorherigen Schritt gespeichert haben.  
   
-   Standardmäßig enthält ein exportiertes Arbeitsblatt die Felder, die in der Liste angezeigt werden, und verwendet die gleiche Feldreihenfolge, Sortierung und Feldbreite.  
+   Standardmäßig schließt eine exportierte Tabelle die Felder ein, die in der Liste angezeigt werden, und verwendet die gleiche Feldanordnung, Sortierung und Feldbreite.  
   
 ## <a name="tips"></a>Tipps  
   
 - Sie können ein exportiertes statisches Arbeitsblatt an alle senden oder es in einer freigegebenen Datei speichern. Jede Person, die die Datei öffnet, sieht sämtliche in der Datei enthaltenen Daten.
   
-- Die Spalten für die Systemansicht, wie etwa **Alle aktiven Konten**, können nicht geändert werden. Sie müssen entweder die Ansicht anpassen, wofür die Sicherheitsrolle Systemadministrator oder Systemanpasser erforderlich ist, oder die erweiterte Suche verwenden, um Ihre eigene Ansicht auf der Grundlage der aktuellen Ansicht zu erstellen.  
+- Die Spalten für eine Systemansicht, wie z. B. **Alle aktiven Firmen**, können Sie nicht ändern. Sie müssen entweder die Ansicht anpassen, wofür die Sicherheitsrolle "Systemadministrator" oder "Systemanpasser" erforderlich ist, oder die erweiterte Suche verwenden, um basierend auf der aktuellen Ansicht eine eigene Ansicht zu erstellen.  
     
 - In modellgesteuerten Apps werden Währungswerte als Zahlen nach Excel exportiert. Lesen Sie nach dem Abschluss des Exports das Excel-Hilfethema „Anzeigen von Zahlen als Währung“, um die Daten als Währung zu formatieren.
   

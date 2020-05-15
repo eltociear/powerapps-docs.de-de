@@ -20,7 +20,7 @@ ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/12/2020
-ms.locfileid: "79133552"
+ms.locfileid: "3303298"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Einfache Navigation in einer modellgesteuerten App 
 
@@ -32,9 +32,9 @@ Eine modellgesteuerte App wird aus Anwendungen (Apps), Bereichen und Entitäten 
 
 - *Apps* bieten Funktionen für bestimmte Aktivitäten, z. B. zum Verwalten von Konten und Kontakten. Über das Menü für die App-Auswahl können Sie zwischen den Apps Ihrer Organisation navigieren.
 
-- Eine *Arbeitsbereichs* ist ein Unterbereich einer App, der für ein bestimmtes Feature vorgesehen ist. In jedem Arbeitsbereich werden gezielt die Entitäten für die Arbeit in diesem Bereich aufgelistet. In einigen Fällen wird dieselbe Entität in mehr als einem Bereich (oder in mehr als einer App) aufgeführt. Die Entitäten „Kontakt“ und „Konto“ erscheinen beispielsweise in vielen Apps und Arbeitsbereichen. Über das Menü „Arbeitsbereich“ können Sie zwischen den Arbeitsbereichen der aktuellen App navigieren.
+- Eine *Arbeitsbereichs* ist ein Unterbereich einer App, der für ein bestimmtes Feature vorgesehen ist. In jedem Arbeitsbereich werden gezielt die Entitäten für die Arbeit in diesem Bereich aufgelistet. In einigen Fällen wird dieselbe Entität in mehr als einem Bereich (oder in mehr als einer App) aufgeführt. Die Entitäten „Kontakt“ und „Konto“ erscheinen beispielsweise in vielen Apps und Arbeitsbereichen. Verwenden Sie das Arbeitsbereichsmenü, um zwischen den Arbeitsbereichen für die aktuelle App zu navigieren.
 
-- *Entitäten* stehen für einen bestimmten Datentyp, z. B. Kontakte und Konten. Entitäten verwenden ein strukturiertes Datenformat, das die für die Entität verfügbaren Felder definiert. Jede Entität besteht aus einzelnen Datensätzen. Bei der Entität „Kontakt“ beschreibt beispielsweise jeder Datensatz eine Einzelperson und enthält Felder wie „Vorname“, „Nachname“ und „E-Mail-Adresse“. Entitäten verfügen normalerweise über zwei Ansichten: eine Listenansicht (in der Regel eine Tabelle mit den verfügbaren Datensätzen) und eine Formularansicht, in der alle verfügbaren Daten und Einstellungen für einen einzelnen Datensatz angezeigt werden. Verwenden Sie den Navigator auf der Seite, um zwischen den Entitäten im aktuellen Arbeitsbereich zu navigieren.
+- *Entitäten* stehen für einen bestimmten Datentyp, z. B. Kontakte und Konten. Entitäten verwenden ein strukturiertes Datenformat, das die für die Entität verfügbaren Felder definiert. Jede Entität besteht aus einzelnen Datensätzen. Bei der Entität „Kontakt“ beschreibt beispielsweise jeder Datensatz eine Einzelperson und enthält Felder wie „Vorname“, „Nachname“ und „E-Mail-Adresse“. Entitäten haben normalerweise zwei Ansichten: eine Listenansicht, üblicherweise in Form einer Tabelle mit den verfügbaren Datensätze, sowie eine Formularansicht, in der alle verfügbaren Daten und Einstellungen eines einzelnen Datensatzes angezeigt werden. Mit dem Seitennavigator können Sie sich zwischen Entitäten in Ihrem aktuellen Arbeitsbereich bewegen.
 
 ### <a name="move-between-apps"></a>Navigation zwischen Apps
 
@@ -52,12 +52,12 @@ Es ist ganz einfach, zwischen Ihren bevorzugten oder am häufigsten verwendeten 
 
 Legende:
 
-1. **App-Auswahl:** Öffnen Sie dieses Menü, um zwischen Apps zu wechseln.
-2. **Schaltfläche „Reduzieren/Erweitern“:** Klicken Sie auf diese Schaltfläche, um den Navigator zu reduzieren und mehr Platz für den Hauptteil der Seite zu schaffen. Wenn der Navigator bereits reduziert ist, klicken Sie auf diese Schaltfläche, um ihn wieder zu erweitern.
-3. **Zuletzt verwendete Datensätze:** Erweitern Sie diesen Eintrag, um eine Liste der zuletzt verwendeten Datensätze anzuzeigen. Klicken Sie hier auf einen Datensatz, um ihn zu öffnen. Klicken Sie auf das Stecknadelsymbol neben einem aufgelisteten Datensatz, um diesen zu Ihren Favoriten (angeheftete Datensätze) hinzuzufügen.
-4. **Bevorzugte Datensätze:** Erweitern Sie diesen Eintrag, um Ihre bevorzugten (angehefteten) Datensätze anzuzeigen und zu öffnen. Über die Liste **Zuletzt verwendete Datensätze** können Sie Datensätze hinzufügen. Klicken Sie erneut auf das Stecknadelsymbol neben einem aufgelisteten Datensatz, um diesen aus der Liste zu entfernen.
-5. **Entitätennavigator:** In diesem Bereich werden alle für den aktuellen Arbeitsbereich verfügbaren Entitäten und Dashboards aufgelistet. Wählen Sie einen beliebigen Eintrag aus, um das benannte Dashboard oder die Listenansicht für diese Entität zu öffnen.
-6. **Arbeitsbereichauswahl:** Öffnen Sie dieses Menü, um zu einem anderen Arbeitsbereich zu wechseln. Der aktuelle Arbeitsbereich wird hier angezeigt.
+1. **App-Auswahl**: Öffnen Sie dieses Menü, um zwischen Apps zu wechseln.
+2. **Schaltfläche Minimieren/Erweitern**: Wählen Sie diese Option aus, um den Navigator zu minimieren, damit mehr Platz für den Hauptteil der Seite bleibt. Wenn der Navigator bereits reduziert ist, klicken Sie auf diese Schaltfläche, um ihn wieder zu erweitern.
+3. **Aktuelle Datensätze**: Erweitern Sie diesen Eintrag, um eine Liste von Datensätzen anzuzeigen, die Sie vor Kurzem verwendet haben. Klicken Sie hier auf einen Datensatz, um ihn zu öffnen. Klicken Sie auf das Stecknadelsymbol neben einem aufgelisteten Datensatz, um diesen zu Ihren Favoriten (angeheftete Datensätze) hinzuzufügen.
+4. **Lieblingsdatensätze**: Erweitern Sie den Eintrag, um Ihre Lieblingsdatensätze (angeheftet) anzuzeigen und zu öffnen. Über die Liste **Zuletzt verwendete Datensätze** können Sie Datensätze hinzufügen. Klicken Sie erneut auf das Stecknadelsymbol neben einem aufgelisteten Datensatz, um diesen aus der Liste zu entfernen.
+5. **Entitätsnavigator**: In diesem Bereich wird jede Entität und jedes Dashboard aufgeführt, die bzw. das für den aktuellen Arbeitsbereich verfügbar ist. Wählen Sie einen beliebigen Eintrag aus, um das benannte Dashboard oder die Listenansicht für diese Entität zu öffnen.
+6. **Arbeitsbereichsauswahl**: Öffnen Sie dieses Menü, um in einen anderen Arbeitsbereich zu wechseln. Der aktuelle Arbeitsbereich wird hier angezeigt.
 
 ## <a name="working-with-list-views"></a>Arbeiten mit Listenansichten
 
@@ -67,12 +67,12 @@ Wenn Sie eine Entität zum ersten Mal öffnen, wird die Listenansicht angezeigt,
 
 Legende:
 
-1. **Datensätze auswählen:** Wählen Sie einen oder mehrere Datensätze aus, indem Sie in dieser Spalte ein Häkchen setzen. Je nachdem, wo Sie arbeiten, können Sie einen Vorgang auf alle ausgewählten Datensätze anwenden, indem Sie die Schaltflächen auf der Befehlsleiste verwenden.
-2. **Einen Datensatz öffnen:** Wählen Sie einen beliebigen Datensatz in der Liste aus, um die zugehörige Ansicht zu öffnen, in der alle Details zum Datensatz angezeigt werden. In der Regel treffen Sie eine Auswahl in der Spalte **Name**, um einen Datensatz aus der aktuellen Entität zu öffnen. Einige Entitäten enthalten Links zu Datensätzen aus verknüpften Entitäten in anderen Spalten (z. B. ein zugehöriger Kontakt).
-3. **Listen sortieren oder filtern:** Legen Sie fest, dass eine Spalte nach Werten sortiert wird, oder filtern Sie die Liste nach Werten in der Spalte. Ein Pfeil in der Spaltenüberschrift gibt an, welche Spalte in welche Richtung sortiert wird. 
-4. **Befehlsleiste:** Verwenden Sie die Befehle auf der Befehlsleiste, um Datensätze in der Liste zu verarbeiten und ähnliche Aktionen auszuführen. Für einige Befehle (z. B. **Löschen**) ist es erforderlich, dass Sie zuerst einen oder mehrere Zieldatensätze auswählen, indem Sie ein Häkchen in der Spalte ganz links setzen, während andere auf die gesamte Liste angewendet werden. Sie können je nach Datensatz z. B. die Liste in eine Excel-Arbeitsmappe (ggf. anhand einer Vorlage) exportieren oder Diagramme und Dashboards öffnen.
-5. **Ansicht durchsuchen:** Geben Sie Text in das Suchfeld oberhalb der Liste ein, um nur die Datensätze in der aktuellen Ansicht anzuzeigen, die diesen Text enthalten.
-6. **Filtern und durch Seiten navigieren:** Wählen Sie einen Buchstaben aus, um nur die Datensätze anzuzeigen, deren Namen mit diesem Buchstaben beginnen. Wenn die Liste mehr Datensätze enthält als auf einer Seite angezeigt werden können, verwenden Sie die Pfeile am unteren Rand der Liste, um vorwärts und rückwärts durch die Seiten zu navigieren.
+1. **Datensätze auswählen**: Wählen Sie einen oder mehrere Datensätze aus, indem Sie in dieser Spalte ein Häkchen setzen. Je nachdem, wo Sie arbeiten, können Sie einen Vorgang auf alle ausgewählten Datensätze anwenden, indem Sie die Schaltflächen auf der Befehlsleiste verwenden.
+2. **Einen Datensatz öffnen**: Wählen Sie einen beliebigen Datensatz in der Ansicht aus, um dessen Formularseite zu öffnen. Auf ihr werden alle Details zum Datensatz angezeigt. In der Regel treffen Sie eine Auswahl in der Spalte **Name**, um einen Datensatz aus der aktuellen Entität zu öffnen. Einige Entitäten enthalten Links zu Datensätzen aus verknüpften Entitäten in anderen Spalten (z. B. ein zugehöriger Kontakt).
+3. **Listen sortieren oder filtern**: Legen Sie fest, dass eine Spalte nach Werten sortiert wird, oder filtern Sie die Liste nach Werten in der Spalte. Ein Pfeil in der Spaltenüberschrift gibt an, welche Spalte in welche Richtung sortiert wird. 
+4. **Befehlsleiste**: Verwenden Sie die Befehle in der Befehlsleiste, um Datensätze in der Liste zu bearbeiten und zugehörige Aktionen auszuführen. Bei einigen Befehlen (wie beispielsweise **Löschen**) muss zuerst mindestens ein Zieldatensatz ausgewählt werden. Dazu setzen Sie in die Spalte ganz links ein Häkchen. Bei anderen Befehlen wird die gesamte Liste bearbeitet. Sie können je nach Datensatz z. B. die Liste in eine Excel-Arbeitsmappe (ggf. anhand einer Vorlage) exportieren oder Diagramme und Dashboards öffnen.
+5. **Die Ansicht durchsuchen**: Um nur die Datensätze in der aktuellen Ansicht abzurufen, die einen bestimmten Text enthalten, geben Sie den gewünschten Text in das Suchfeld über der Liste ein.
+6. **Filtern und durch Seiten navigieren**: Wählen Sie einen Buchstaben aus, um nur die Datensätze anzuzeigen, deren Namen mit diesem Buchstaben beginnen. Wenn die Liste mehr Datensätze enthält als auf einer Seite angezeigt werden können, verwenden Sie die Pfeile am unteren Rand der Liste, um vorwärts und rückwärts durch die Seiten zu navigieren.
 
 ## <a name="working-with-record-views"></a>Arbeiten mit Datensatzansichten
 
@@ -83,11 +83,11 @@ In den Datensatzansichten werden alle Details zu einem Datensatz und ggf. spezie
 Legende:
 
 
-1. **Registerkarten**: Die meisten Datensatzansichten sind in Registerkarten unterteilt. Jede Registerkarte enthält ähnliche Felder aus dem Datensatz. Wenn Registerkarten verfügbar sind, werden sie unter dem Datensatznamen aufgelistet. Klicken Sie auf den Namen einer Registerkarte, um zu dieser zu navigieren. Die aktuelle Registerkarte wird unterstrichen.
-2. **Ähnlich:** Fast alle Datensatztypen enthalten die Registerkarte **Ähnlich**, nachdem Sie den Datensatz mindestens einmal gespeichert haben. Diese Registerkarte ist eine Dropdownliste, die Sie verwenden können, um andere Datensatztypen zu suchen, die den angezeigten Datensatz verwenden oder auf diesen verweisen. Wenn Sie einen Entitätsnamen aus der Dropdownliste **Ähnlich** auswählen, wird eine neue Registerkarte für diese Entität geöffnet, die alle ähnlichen Datensätze für diesen Typ anzeigt. Die Registerkarte **Ähnlich** ist weiterhin verfügbar, und Sie können diese verwenden, um andere Datensatztypen zu suchen, die auf den aktuellen Datensatz verweisen.
-3. **Befehlsleiste:** Verwenden Sie die Befehle in der Befehlsleiste, um im aktuellen Datensatz zu agieren, oder führen Sie eine Aufgabe in Zusammenhang mit dem Datensatz durch. Welche Befehle verfügbar sind, hängt vom Datensatztyp ab. Sie können jedoch in der Regel die Befehlsleiste verwenden, um Änderungen zu speichern, den Datensatz zu löschen, die Seite zu aktualisieren, einen Link zum Datensatz per E-Mail zu senden, den Datensatzbesitzer neu festzulegen oder den Datensatz mithilfe einer Word-Vorlage zu exportieren.
-4. **Überschriftenleiste:** Einige Datensatzansichten zeigen gegenüber des Datensatznamens wichtige Felder in der Überschriftenleiste an. Dabei handelt es sich in der Regel um Felder, die für die Arbeit mit Datensätzen des aktuellen Typs essenziell sind (z. B. den Datensatznamen oder -besitzer).
-5. **Alle Feldwerte anzeigen und bearbeiten:** Im Hauptteil der Datensatzansicht befinden sich alle Felder, die sich auf die aktuelle Registerkarte, die Formularansicht und den Datensatztyp beziehen. Mit einem roten Sternchen gekennzeichnete Felder sind Pflichtfelder. Sie können den Datensatz nicht speichern, wenn in diesen keine gültigen Werte vorhanden sind. Felder, die mit einem blauen Pluszeichen gekennzeichnet sind, sind besonders wichtig oder werden empfohlen, sind jedoch nicht unbedingt erforderlich. Felder mit einem Sperrsymbol sind schreibgeschützt und können nicht bearbeitet werden.
+1. **Registerkarten**: Die meisten Datensatzansichten sind in Registerkarten unterteilt. Jede Registerkarte enthält ähnliche Felder aus dem Datensatz. Wenn Registerkarten verfügbar sind, werden sie unter dem Datensatznamen aufgelistet. Wählen Sie einen Registerkartennamen aus, um zu dieser Registerkarte zu wechseln. Die aktuelle Registerkarte wird unterstrichen angezeigt.
+2. **Verknüpft**: Fast alle Datensatztypen enthalten die Registerkarte **Ähnlich**, nachdem Sie den Datensatz mindestens einmal gespeichert haben. Diese Registerkarte ist eine Dropdownliste, die Sie verwenden können, um andere Datensatztypen zu suchen, die den angezeigten Datensatz verwenden oder auf diesen verweisen. Wenn Sie einen Entitätsnamen aus der Dropdownliste **Ähnlich** auswählen, wird eine neue Registerkarte für diese Entität geöffnet, die alle ähnlichen Datensätze für diesen Typ anzeigt. Die Registerkarte **Ähnlich** ist weiterhin verfügbar, und Sie können diese verwenden, um andere Datensatztypen zu suchen, die auf den aktuellen Datensatz verweisen.
+3. **Befehlsleiste**: Mit den Befehlen in der Befehlsleiste bearbeiten Sie den aktuellen Datensatz oder führen eine Aufgabe aus, die sich auf den Datensatz bezieht. Welche Befehle verfügbar sind, hängt vom Datensatztyp ab. Sie können jedoch in der Regel die Befehlsleiste verwenden, um Änderungen zu speichern, den Datensatz zu löschen, die Seite zu aktualisieren, einen Link zum Datensatz per E-Mail zu senden, den Datensatzbesitzer neu festzulegen oder den Datensatz mithilfe einer Word-Vorlage zu exportieren.
+4. **Überschriftenleiste**: Einige Datenansichten zeigen einige wenige besonders wichtige Felder in der Überschriftenleiste gegenüber dem Datensatznamen an. Dabei handelt es sich in der Regel um Felder, die für die Arbeit mit Datensätzen des aktuellen Typs essenziell sind (z. B. den Datensatznamen oder -besitzer).
+5. **Alle Feldwerte anzeigen und bearbeiten**: Im Hauptteil der Datensatzanzeige finden Sie die Felder, die zur aktuellen Registerkarte, Formularansicht sowie zum aktuellen Datensatztyp gehören. Mit einem roten Sternchen markierte Felder sind Pflichtfelder. Sie können den Datensatz nicht speichern, wenn diese keine gültigen Werte enthalten. Felder, die mit einem blauen Pluszeichen gekennzeichnet sind, sind besonders wichtig oder werden empfohlen, sind jedoch nicht unbedingt erforderlich. Felder mit einem Sperrsymbol sind schreibgeschützt und können nicht bearbeitet werden.
 
 ## <a name="record-set-navigation"></a>Navigation durch die Datensatzgruppe 
 
@@ -96,12 +96,12 @@ Navigieren Sie mit vordefinierten Ansichten und Abfragen durch mehrere Datensät
 > [!div class="mx-imgBorder"]
 > ![Navigation durch Datensatzgruppen](media/recordset1.png "Navigation durch die Datensatzgruppe")
 
-## <a name="reference-panel"></a>Referenzbereich
+## <a name="reference-panel"></a>Bereich „Verweise“
 
-Im Referenzbereich können Sie Aufgaben erledigen, ohne die Bildschirmansicht verlassen zu müssen, in der Sie sich gerade befinden. Sie können im Rahmen des angezeigten Datensatzes ähnliche Elemente nachschlagen, z. B. Fälle oder Möglichkeiten für ein Konto, ohne dafür den Bildschirm wechseln zu müssen.
+Im Referenzbereich können Sie Aufgaben erledigen, ohne die Bildschirmansicht verlassen zu müssen, in der Sie sich gerade befinden. Sie können im Rahmen des angezeigten Datensatzes ähnliche Elemente nachschlagen&mdash;z. B. Fälle oder Möglichkeiten für ein Konto&mdash;ohne dafür den Bildschirm wechseln zu müssen.
 
 > [!div class="mx-imgBorder"]
-> ![Referenzbereich](media/reference-panel1.png "Referenzbereich")
+> ![Bereich „Verweise“](media/reference-panel1.png "Bereich „Verweise“")
 
  In diesem Video wird der Referenzbereich näher erläutert:
 
@@ -117,9 +117,9 @@ Wenn Sie auf eine Fehlermeldung klicken, gelangen Sie zu dem Feld im Formular, i
 
 Legende:
 
-1. **Info:** Bei dieser Benachrichtigung handelt es sich um eine Information.
-2. **Warnen:** Bei dieser Benachrichtigung handelt es sich um eine Warnung. 
-3. **Fehler:** Bei dieser Benachrichtigung handelt es sich um eine Fehlermeldung. 
+1. **Info**: Bei dieser Benachrichtigung handelt es sich um eine Information.
+2. **Warnen**: Bei dieser Benachrichtigung handelt es sich um eine Warnung. 
+3. **Fehler**: Bei dieser Benachrichtigung handelt es sich um eine Fehlermeldung. 
 
 
 

@@ -20,9 +20,9 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74725809"
+ms.locfileid: "3302907"
 ---
-# <a name="deactivate-or-activate-an-account-or-contact"></a>Deaktivieren oder Aktivieren eines Kontos oder Kontakts
+# <a name="deactivate-or-activate-an-account-or-contact"></a>Deaktivieren oder Aktivieren einer Firma oder eines Kontakts
 
 In einer modellgesteuerten App können Sie Konten oder Kontakte deaktivieren, anstatt sie zu löschen. Dadurch wird die Integrität des Überwachungspfads für den betreffenden Datensatz sichergestellt.  
   
@@ -37,7 +37,7 @@ Ein deaktiviertes Konto kann später problemlos wieder aktiviert werden.
 2.  Wählen Sie das aktive Konto bzw. den aktiven Kontakt aus, das bzw. den Sie deaktivieren möchten, wählen Sie auf der Befehlsleiste den Befehl **Deaktivieren** aus, und bestätigen Sie die Deaktivierung.
 
     > [!div class="mx-imgBorder"]
-    > ![Deaktivieren eines Kontos in Power Apps](media/DeactiveAccounts.png "Deaktivieren eines Kontos in Power Apps")
+    > ![Deaktivieren Sie ein Konto in Power Apps](media/DeactiveAccounts.png "Deaktivieren Sie ein Konto in Power Apps")
 
 
 ## <a name="activate-an-account-or-contact"></a>Aktivieren eines Kontos oder Kontakts  
@@ -53,7 +53,7 @@ Ein deaktiviertes Konto kann später problemlos wieder aktiviert werden.
 5.  Wählen Sie **Aktivieren** aus, und bestätigen Sie die Aktivierung.  
 
     > [!div class="mx-imgBorder"]
-    > ![Aktivieren eines Kontos in Power Apps](media/ActiveAccounts.png "Aktivieren eines Kontos in Power Apps")  
+    > ![Aktivieren Sie ein Konto in Power Apps](media/ActiveAccounts.png "Aktivieren Sie ein Konto in Power Apps")  
 
 
 

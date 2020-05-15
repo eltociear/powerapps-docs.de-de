@@ -14,17 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 54ddcf717b26859e71ed1339caa533fa9c6bcbb8
-ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
+ms.openlocfilehash: 047263130052c412b69d4b69d219352b214b0671
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80516662"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332700"
 ---
 # <a name="use-grid-filters"></a>Verwenden von Rasterfiltern 
 
 Raster in der einheitlichen Oberfläche wurden verbessert, um die Datenmenge zu erhöhen, die auf dem Bildschirm angezeigt werden kann. Sie können jetzt aus vielen verschiedenen Filteroptionen für eine Spalte auswählen. Der Datentyp der Spalte bestimmt, welche Filteroptionen verfügbar sind. Die Spalte **Vollständiger Name** im Raster **Kontakte** weist beispielsweise andere Filteroptionen als die Spalte **Aktivitätstyp** im Raster **Aktivitäten** auf.
 
+> [!IMPORTANT]
+> In den Einheitliche Oberfläche-Rastern werden Spaltenfilter basierend auf der aktuellen Ansichtsdefinition nicht vorab ausgefüllt.
 
    > [!div class="mx-imgBorder"]
    > ![Rasterfilterung](media/filter-options.png "Rasterfilterung")
@@ -33,6 +35,7 @@ Raster in der einheitlichen Oberfläche wurden verbessert, um die Datenmenge zu 
 ## <a name="grid-and-filter-navigation"></a>Raster- und Filternavigation
 
 Wenn Sie Daten in einem Raster filtern, speichert die Hauptseite des Rasters den Filter, die Sortierreihenfolge und den Seitenzustand, wenn Sie von der Seite weg navigieren und dann zurückkehren. Die gleiche Funktionsweise ist auch gegeben, wenn die Daten z. B. nach Schnellsuche, Spalten oder Seitenzahl gefiltert sind. 
+
 
    > [!div class="mx-imgBorder"]
    > ![Seite wird im gleichen Zustand geöffnet, wenn zurücknavigiert wird](media/grid-remember-state-on-back-navigate.gif "Seite wird im gleichen Zustand geöffnet, wenn zurücknavigiert wird")
@@ -76,7 +79,7 @@ Sie können die Aktivitätenliste so filtern, dass nur relevante Einträge angez
    > ![Aktivitätsfilter](media/activity_filter.png "Aktivitätsfilter")
 
 
-### <a name="known-issue"></a>Bekanntes Problem 
+### <a name="known-issue"></a>Bekannte Probleme 
 
 Wenn Sie das Standardanzeigeformat für Zahlen, Währungen, Uhrzeiten und Datumsangaben ändern und anschließend die Daten in einem Raster filtern, zeigt der Filter das ausgewählte Anzeigeformat nicht an. Die Filter werden weiterhin im Standardformat des Systems angezeigt, und in einigen Fällen funktioniert das Filtern möglicherweise überhaupt nicht. 
 
@@ -118,9 +121,11 @@ Sie können zur alten Schnellsuche zurückkehren, bei der die Schnellsucheansich
 
 1. Klicken Sie in der rechten oberen Ecke auf das Zahnradsymbol ![Zahnradsymbol](media/selection-rule-gear-button.png) und anschließend auf **Erweiterte Einstellungen**.
 
-2. Navigieren Sie zu **Einstellungen** > **Verwaltung** > **Systemeinstellungen**.
+2. Gehen Sie zu **Einstellungen** > **Verwaltung** > **Systemeinstellungen**.
 
 3. Wählen Sie auf der Registerkarte **Allgemein** unter **Schnellsuche einrichten** **Ja** für die Option **Use quick find view of an entity for searching on grids and sub-grids** (Schnellsucheansicht einer Entität für Suche in Rastern und Unterrastern verwenden) aus.
+
+
 
 
 

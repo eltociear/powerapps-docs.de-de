@@ -1,5 +1,5 @@
 ---
-title: Exportieren von Daten nach Excel in Power Apps | Microsoft-Dokumentation
+title: Daten nach Excel exportieren in Power Apps | MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -21,9 +21,9 @@ ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680625"
+ms.locfileid: "3302723"
 ---
-# <a name="export-data-to-excel"></a>Exportieren von Daten in Excel
+# <a name="export-data-to-excel"></a>Daten in Excel exportieren
 
 Müssen Sie Ihre Daten analysieren und sie in umsetzbare Elemente konvertieren, die Sie bei der Umsatzförderung unterstützen? Jetzt können Sie das tun, wenn Sie Ihre Daten nach Excel oder Excel Online exportieren. Außerdem ist das Analysieren großer Datasets kein Problem, da Sie bis zu 100.000 Zeilen Daten exportieren können.
   
@@ -35,22 +35,22 @@ Sie können Daten in eine Excel-Standarddatei exportieren, die Sie auf jedem Ger
   
 | Datenformat in modellgesteuerten Apps |                                            Zellformat in Excel                                             |
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            Text, Tickersymbol, Telefon, Optionsmenge und Nachschlagevorgang            |                                                       Wird als Text angezeigt, und Optionsmengen werden zu Dropdownlisten                                                       |
-|                                 E-Mail, URL                                 |                                                                        Wird als „Allgemein“ angezeigt                                                                         |
-|                                   Zahl                                   |                                                             Wird als Zahl ohne Gruppentrennzeichen angezeigt                                                             |
+|            Text, Tickersymbol, Telefon, Optionsmenge und Nachschlagevorgang            |                                                       Wird als Text angezeigt. Optionssatz wird zu Dropdownliste.                                                       |
+|                                 E-Mail, URL                                 |                                                                        Wird als "Allgemein" angezeigt.                                                                         |
+|                                   Anzahl                                   |                                                             Wird als Zahl ohne Gruppentrennzeichen angezeigt                                                             |
 |                                  Währung                                  |                                                         Wird als Zahl ohne Währungssymbol ($) angezeigt                                                         |
 |                          Nur Datum, Datum und Uhrzeit                          |                                                                       Wird nur als Datum angezeigt                                                                        |
-|                       Berechnete und Rollupfelder                        | In Excel editierbar, können aber nicht mehr in Power Apps zurück importiert werden |
-|                               Geschützte Felder                               | In Excel editierbar, können aber nicht mehr in Power Apps zurück importiert werden |
+|                       Berechnete und Rollupfelder                        | Bearbeitung in Excel möglich, kann jedoch nicht wieder in Power Apps importiert werden |
+|                               Geschützte Felder                               | Bearbeitung in Excel möglich, kann jedoch nicht wieder in Power Apps importiert werden |
   
 ## <a name="see-which-type-of-export-works-best-for-you"></a>Finden Sie heraus, welche Art Export sich für Sie am besten eignet  
   
-|                                                                                                               Aufgabe                                                                                                                |                                              Weitere Informationen                                               |
+|                                                                                                               Aufgabe                                                                                                                |                                              Erhalten Sie weitere Informationen                                               |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 |   Nehmen Sie eine *Ad-Hoc*- oder *Was-wäre-wenn*-Analyse vor, ohne App-Daten zu ändern. Oder nehmen Sie schnell eine Massenbearbeitung an mehreren Datensätzen vor.   | [Nach Excel Online exportieren](export-to-excel-online.md) |
 |                                                                   Rufen Sie eine Momentaufnahme der Daten zum aktuellen Datum und der aktuellen Uhrzeit ab, oder weil Sie sie mit anderen teilen möchten.                                                                    |           [Exportieren in ein statisches Excel-Arbeitsblatt](export-excel-static-worksheet.md)           |
-| Rufen Sie die aktuellsten Informationen ab, die Sie in Excel jederzeit aktualisieren und mit dem abgleichen können, was Sie in der App sehen. |          [Exportieren in ein dynamisches Excel-Arbeitsblatt](export-excel-dynamic-worksheet.md)          |
-|                                                                      Zeigen Sie App-Daten in einer PivotTable an.                                                                      |                 [Exportieren in eine Excel-PivotTable](export-excel-pivottable.md)                 |
+| Rufen Sie die aktuellsten Informationen ab, die Sie in Excel jederzeit aktualisieren und mit dem abgleichen können, was Sie in der App sehen. |          [In eine dynamische Excel-Tabelle exportieren](export-excel-dynamic-worksheet.md)          |
+|                                                                      Zeigen Sie App-Daten in einer PivotTable an.                                                                      |                 [In eine Excel-PivotTable exportieren](export-excel-pivottable.md)                 |
 
 
 
@@ -64,7 +64,7 @@ Die Fehlermeldung tritt aufgrund einer Einstellung in Excel auf. So beheben Sie 
   
 1. Öffnen Sie Excel 2010.  
   
-2. Navigieren Sie zu **Datei** > **Optionen**.  
+2. Gehen Sie zu **Datei** > **Optionen**.  
   
 3. Navigieren Sie zu **Trust Center** > **Trust Center-Einstellungen**.  
   

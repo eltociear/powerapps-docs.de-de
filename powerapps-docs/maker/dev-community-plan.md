@@ -1,131 +1,133 @@
 ---
-title: 'PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung | Microsoft-Dokumentation'
-description: Registrieren Sie sich, um Ihre Kenntnisse auszubauen und mehr über PowerApps, Microsoft Flow und den Common Data Service zu erfahren.
-author: AFTOwen
+title: Power Apps Communityplan -- eine kostenlose Entwicklungsumgebung für die individuelle Nutzung | Microsoft Docs
+description: Melden Sie sich an, um Fähigkeiten aufzubauen und mehr über Power Apps, Power Automate und Common Data Service zu erfahren.
+author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: canvas
-ms.date: 05/01/2016
-ms.author: anneta
+ms.custom: ''
+ms.date: 04/30/2019
+ms.author: dileeps
 ms.reviewer: ''
-ms.openlocfilehash: a187e50bd4d1819d1579c6db219588e3582f5c25
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+searchScope:
+- GetStarted
+- PowerApps
+ms.openlocfilehash: 33d29fbf24f914d4e3858de2741e751efa09b0be
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195678"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3303390"
 ---
-# <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung
-Wenn Sie Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und den Common Data Service erfahren möchten, ist der PowerApps-Communityplan der richtige Plan für Sie. Mit dem PowerApps-Communityplan erhalten Sie eine kostenlose Entwicklungsumgebung für die individuelle Verwendung, in der Sie folgende Möglichkeiten haben:
+# <a name="power-apps-community-plan-a-free-development-environment-for-individual-use"></a>Power Apps Communityplan: eine kostenlose Entwicklungsumgebung für die individuelle Nutzung
+Wenn Sie Fähigkeiten erlangen und mehr über Power Apps, Power Automate und Common Data Service erfahren möchten, ist der Power Apps Communityplan der richtige Plan für Sie. Der Power Apps Communityplan bietet Ihnen eine kostenlose Entwicklungsumgebung für einzelne Verwendung, in der Sie Folgendes tun können:
 
-* Erlernen der Erstellung von Geschäftsanwendungen und Workflows mit dem gesamten Funktionsumfang von PowerApps und Microsoft Flow.
-* Herstellen von Verbindungen mit beliebigen Datenquellen mithilfe unserer über 100 [fertig konfigurierten Connectors](./canvas-apps/connections-list.md) oder durch Erstellen Ihrer eigenen [benutzerdefinierten Connectors](./canvas-apps/register-custom-api.md).
-* Erforschen, wie Sie den [Common Data Service](https://docs.microsoft.com/common-data-service/entity-reference/introduction) zum Erstellen von leistungsstarken Geschäftsanwendungen mit dem Common Data Model und dem [SDK](https://aka.ms/eek20s) verwenden können.
-* Exportieren der in Ihrer individuellen Umgebung erstellten Lösungen, die Sie anschließend [auf AppSource auflisten](./canvas-apps/dev-appsource-test-drive.md) können, damit Ihre Kunden sie ausprobieren können.
+* Erfahren Sie, wie Sie Unternehmens-Apps und Workflows mit der vollständigen Funktionalität von Power Apps und Power Automate erstellen.
+* Stellen Sie eine Verbindung zu jeder Datenquelle her, indem Sie unsere integrierten 100+[Konnektoren](./canvas-apps/connections-list.md) verwenden, oder indem Sie eigene [benutzerdefinierte Konnektoren](./canvas-apps/register-custom-api.md) erstellen.
+* Erkunden Sie, wie Sie [den Common Data Service](https://docs.microsoft.com/common-data-service/entity-reference/introduction) verwenden können, um leistungsstarke Unternehmens-Apps für das allgemeine Datenmodell und [das SDK](https://aka.ms/eek20s) zu erstellen.
+* Exportieren Sie die Lösungen, die Sie in der individuellen Umgebung erstellen, und [führen Sie sie in der AppSource auf](./canvas-apps/dev-appsource-test-drive.md), damit Ihre Kunden einen Test damit durchführen können.
 
-## <a name="who-can-sign-up-for-the-powerapps-community-plan"></a>Wer kann sich für den PowerApps-Communityplan registrieren?
-Jeder Benutzer mit einem [Geschäfts-, Schul- oder Unikonto](signup-for-powerapps.md#faq) kann sich für den PowerApps-Communityplan registrieren. Wir empfehlen diesen Plan jedoch ganz besonders, wenn Folgendes auf Sie zutrifft:
+## <a name="who-can-sign-up-for-the-power-apps-community-plan"></a>Wer kann sich für den Power Apps Communityplan registrieren?
+Jeder Benutzer mit einem [Arbeits- oder Schulkonto](signup-for-powerapps.md#faq) kann sich für den Power Apps Communityplan registrieren. Wir empfehlen diesen Plan jedoch ganz besonders, wenn Folgendes auf Sie zutrifft:
 
-* Sie möchten Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und den Common Data Service erfahren.
-* Sie interessieren sich für die Erstellung von Geschäftsanwendungen und Workflows zur Verteilung auf AppSource.
+* Melden Sie sich an, um Fähigkeiten aufzubauen und mehr über Power Apps, Power Automate und Common Data Service zu erfahren.
+* An der Erstellung von Unternehmens-Apps und Workflows zur Bereitstellung über AppSource interessiert sind.
 
-## <a name="where-can-i-sign-up-for-the-powerapps-community-plan"></a>Wo kann ich mich für den PowerApps-Communityplan registrieren?
-Registrieren Sie sich auf der [PowerApps-Communityplan-Website](https://powerapps.microsoft.com/communityplan). Wenn Sie bereits Benutzer von PowerApps mit Office 365 oder Dynamics 365 sind, können Sie darüber hinaus [eine Umgebung zur individuellen Nutzung erstellen](https://web.powerapps.com/community/signup).
+## <a name="where-can-i-sign-up-for-the-power-apps-community-plan"></a>Wo kann ich mich für den Power Apps Communityplan registrieren?
+Registrieren Sie sich auf der [Power Apps Communityplan-Website](https://powerapps.microsoft.com/communityplan). Wenn Sie bereits ein Benutzer von Power Apps mit Office 365 oder Dynamics 365 sind, können Sie auch [eine Umgebung für einzelne Nutzung](https://make.powerapps.com/community/signup) erstellen.
 
-Nach der Registrierung für den Communityplan werden Sie auf die [PowerApps-Website](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) weitergeleitet und gelangen so zu Ihrer individuellen Umgebung. Die Umgebung wird mit Ihrem Namen benannt, beispielsweise „Erika Mustermanns Umgebung“. Wenn bereits eine Umgebung mit diesem Namen vorhanden ist, wird die individuelle Umgebung mit dem Namen „Erika Mustermanns (1) Umgebung“ versehen.  In der folgenden Abbildung können Sie sehen, wie die Umgebung dargestellt wird.
+Nach der Registrierung für den Communityplan werden Sie zu zur [Power Apps Website](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) weitergeleitet und gelangen zu Ihrer individuellen Umgebung. Die Umgebung wird mit Ihrem Namen benannt, beispielsweise „Erika Mustermanns Umgebung“. Falls bereits eine Umgebung mit diesem Namen vorhanden ist, wird die einzelne Umgebung als "Umgebung von John Doe (1)" bezeichnet.  Das folgende Bild zeigt das Erscheinungsbild der Umgebung.
 
 ![Individuelle Umgebung für Communityplan](./media/dev-community-plan/individual-environment.png)
 
-### <a name="get-the-community-plan-with-visual-studio-dev-essentials"></a>Abrufen des Communityplans mit Visual Studio Dev Essentials
-Wenn Sie ein Visual Studio Dev Essentials-Benutzer sind, ist PowerApps in Ihren Vorteilen enthalten. Suchen Sie [Meine Vorteile](https://my.visualstudio.com/benefits) auf, und klicken oder tippen Sie auf die PowerApps-Kachel, um sich für den PowerApps-Communityplan zu registrieren.
+### <a name="get-the-community-plan-with-visual-studio-dev-essentials"></a>Holen Sie sich den Communityplan mit Visual Studio Dev Essentials
+Wenn Sie ein Benutzer von Visual Studio Dev Essentials sind, ist Power Apps in Ihren Vorteilen enthalten. Besuchen Sie [Meine Vorteile](https://my.visualstudio.com/benefits), und klicken oder tippen Sie auf die Power Apps Kachel, um sich für den Power Apps Communityplan zu registrieren.
 
 ![Communityplan in Visual Studio](./media/dev-community-plan/visual-studio.png)
 
-## <a name="which-features-are-included-in-the-powerapps-community-plan"></a>Welche Funktionen sind im PowerApps-Communityplan enthalten?
+## <a name="which-features-are-included-in-the-power-apps-community-plan"></a>Welche Funktionen sind im Power Apps Communityplan eingeschlossen?
 Mit der individuellen Umgebung erhalten Sie die folgenden Funktionen:
 
-| **Funktionen** | **Umgebung zur individuellen Verwendung** |
+| **Funktionen** | **Umgebung für einzelne Verwendung** |
 | --- | --- |
-| **Wichtigste Funktionen** | |
+| **Wichtige Features** | |
 | Apps erstellen und ausführen |Ja. Sie können Apps in unbeschränktem Umfang erstellen |
-| Apps freigeben\* |Nein |
-| Common Data Service nutzen |Ja** |
-| Daten mithilfe von Common Data Service modellieren |Ja** |
+| Apps freigeben\* |Nr. |
+| Verwenden Sie die Common Data Service. |Ja |
+| Modellieren von Daten mithilfe des Common Data Service |Ja|
 | Unternehmensweite Verwaltung der Umgebungen und Benutzerrichtlinien |Ja |
 | **Konnektivität** | |
-| Herstellen von Verbindungen mit Office 365, Dynamics 365 und anderen Connectors |Ja |
+| Stellen Sie eine Verbindung mit Office 365, Dynamics 365 und anderen Konnektoren her |Ja |
 | Herstellen von Verbindungen mit cloudbasierten Diensten, wie Azure SQL, Dropbox, Twitter und vielen anderen |Ja |
-| Verwenden von Premium-Connectors, wie Salesforce, DB2 und vielen anderen |Ja |
-| Auf lokale Daten mithilfe eines lokalen Gateways zugreifen |Ja |
+| Verwenden Sie Premium-Konnektoren wie Salesforce, DB2 und viele mehr |Ja |
+| Greifen Sie mit einem lokalen Gateway auf lokale Daten zu |Ja |
 | Erstellen von benutzerdefinierten Connectors zum Herstellen von Verbindungen mit Ihren eigenen Systemen |Ja. Sie können benutzerdefinierte Connectors in unbeschränktem Umfang erstellen |
 | **Common Data Service** | |
-| Erstellen und Ausführen von Anwendungen auf dem Common Data Service |Ja** |
-| Modellieren Ihrer Daten in Common Data Service |Ja** |
-| Erstellen einer Datenbank in Common Data Service |Ja** |
+| Eigenständige Anwendungen erstellen und ausführen im Common Data Service |Ja |
+| Modellieren von Daten im Common Data Service |Ja |
+| Testdatenbank im Common Data Service erstellen |Ja |
+| Erstellen und Verwenden von Dataflows |Nr. |
 | **Verwaltung** | |
 | Hinzufügen von Arbeitskollegen als Ersteller und Administratoren von Umgebungen |Nein |
-| Hinzufügen von Arbeitskollegen zu Datenbankrollen |Nein |
-| Unterstützt vom Office 365-Administrator eingerichtete Datenrichtlinien |Ja |
+| Hinzufügen von Arbeitskollegen zu Datenbankrollen |Nr. |
+| Unterstützt die Datenrichtlinien, die vom Office 365 Administrator eingerichtet wurden |Ja |
 | Einrichten von Datenrichtlinien für die individuelle Umgebung |Ja |
 
-*Sie können Apps, Flows, Verbindungen usw. nicht für andere Benutzer Ihres Mandanten freigeben. Ferner können Sie andere Benutzer weder als Umgebungsadministratoren oder -ersteller hinzufügen noch zu den Datenbankrollen im Admin Center hinzufügen.
-
-\*\*Sie können derzeit keine Datenbank mit Common Data Service in einer individuellen Umgebung erstellen. Diese Funktion ist aber bald wieder verfügbar. Wenn Sie zuvor eine Datenbank erstellt haben, können Sie diese weiterhin ohne Probleme nutzen. 
+*Sie können keine Apps, Flows, Verbindungen usw. für andere Benutzer Ihres Mandanten freigeben. Ferner können Sie andere Benutzer weder als Umgebungsadministratoren oder -ersteller hinzufügen noch zu den Datenbankrollen im Admin Center hinzufügen.
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>Welche Kapazitätsgrenzen bestehen für die individuelle Umgebung?
 
 | **Kapazität** |  |
 | --- | --- |
-| Flowausführungen/Monat |750 |
-| Datenbankgröße |200 MB |
+| Flow-Ausführungen pro Monat |750 |
+| Größe der Datenbank |200 MB |
 | Dateispeicher |2 GB |
 
-Sie können auf die enthaltenen Mengen keine Add-Ons anwenden. Wenn Sie die Kapazitätsgrenze erreichen, empfehlen wir den Kauf von PowerApps-Plan 2. Weitere Informationen finden Sie auf der [PowerApps-Preisseite](https://powerapps.microsoft.com/pricing/).
+Sie können auf die enthaltenen Mengen keine Add-Ons anwenden. Wenn Sie Kapazitätsgrenzen erreichen, empfehlen wird, Power Apps Plan pro Benutzer zu kaufen. Erfahren Sie mehr auf der [Power Apps Preisseite](https://powerapps.microsoft.com/pricing/).
 
 > [!NOTE]
 > Die Kapazität der individuellen Umgebung wird, gleich, ob sie verwendet wird oder nicht, nicht auf das Gesamtkontingent Ihres Unternehmens angerechnet.
 
-## <a name="publishing-to-appsource"></a>Veröffentlichen auf AppSource
-Haben Sie eine App, die Sie mit Kunden teilen möchten? Wir unterstützen jetzt eine PowerApps Test Drive-Lösung auf [AppSource.com](https://appsource.microsoft.com), um Ihnen die Möglichkeit zu geben, Apps und Flows mit Kunden zu teilen und Leads für Ihr Unternehmen zu generieren. Weitere Informationen finden Sie unter [Kunden das Testen Ihrer Apps auf AppSource ermöglichen](./canvas-apps/dev-appsource-test-drive.md).
+## <a name="publishing-to-appsource"></a>In AppSource veröffentlichen
+Haben Sie eine App, die Sie gerne mit Kunden teilen möchten? Wir unterstützen jetzt eine Power Apps Test Drive-Lösung auf [AppSource](https://appsource.microsoft.com), sodass Sie Apps und Flows für Kunden freigeben und Leads für das Unternehmen generieren können. Weitere Informationen finden Sie unter [Kunden Ihre Apps auf AppSource testen lassen](./canvas-apps/dev-appsource-test-drive.md).
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
-**F:** Wie kann ich vorgehen, wenn ich die Kapazitätsgrenzen der Umgebung erreiche?
+**F:** Was tue ich, wenn ich die Kapazitätsgrenzen der Umgebungen erreiche?
 
-**A:** Es wird eine eingeschränkte Kapazität bereitgestellt, da diese Umgebung für den individuellen Einsatz vorgesehen ist, nicht für ein Team oder den Produktionseinsatz. Dies ist die bereitgestellte Kapazität:
+**A:** Die Kapazität wird begrenzt, da diese Umgebungen für individuelle Nutzung und nicht für ein Team oder Herstellungsnutzung gedacht ist. Die bereitgestellte Kapazität ist:
 
 | **Kapazität** |  |
 | --- | --- |
-| Flowausführungen/Monat |750 |
-| Datenbankgröße |200 MB |
+| Flow-Ausführungen pro Monat |750 |
+| Größe der Datenbank |200 MB |
 | Dateispeicher |2 GB |
 
-Wenn Sie eine der Kapazitätsgrenzen erreichen, empfehlen wir Ihnen den Erwerb eines Plans, der den Produktionseinsatz unterstützt. Weitere Informationen über unsere Pläne und die für sie geltenden Grenzwerte erfahren Sie auf der [PowerApps-Preisseite](https://powerapps.microsoft.com/pricing/).
+Wenn Sie eine der Kapazitätsgrenzen erreichen, empfehlen wir Ihnen den Erwerb eines Plans, der den Produktionseinsatz unterstützt. Weitere Informationen zu unseren Plänen und deren Grenzen finden Sie auf der [Power Apps Preisseite](https://powerapps.microsoft.com/pricing/).
 
-**F:** Kann ich die Apps, Flows und sonstigen Ressourcen, die in der individuellen Umgebung erstellt wurden, in eine andere Umgebung übertragen?
+**F:** Kann ich die Apps, Flows und anderen Ressourcen, die ich in der individuellen Umgebung erstelle, in eine andere Umgebung übertragen?
 
-**A:** Ja, Sie sollten imstande sein, die Ressourcen aus dieser Umgebung in andere Umgebungen zu exportieren. Weitere Informationen finden Sie unter [Migration der Umgebungs- und Mandanten-App](../administrator/environment-and-tenant-migration.md).
+**A:** Ja, Sie sollten die Ressourcen aus dieser Umgebung in andere Umgebungen exportieren können. Weitere Informationen finden Sie unter [Migration der Umgebung und Mandaten-App](../administrator/environment-and-tenant-migration.md).
 
-**F:** Läuft das Abonnement des PowerApps-Communityplans irgendwann ab?
+**F:** Läuft mein Abonnement des Power Apps Communityplans eines Tages ab?
 
-**A:** Sie können Ihr PowerApps-Communityplan-Abonnement dauerhaft kostenlos verwenden. Wenn Sie eine individuelle Umgebung aktiv verwenden, verlieren Sie den Zugriff auf die Ressourcen oder Funktionen in dieser Umgebung nicht. Allerdings bemerken Sie möglicherweise eine Verzögerung beim ersten Zugriff auf Ihre Common Data Service-Datenbank nach einer langen Phase ohne Aktivität.  Diese Verzögerung hat keinen Einfluss auf die im Common Data Service gespeicherten Daten oder Entitäten.
+**A:** Sie können Ihr Power Apps Communityplan-Abonnement kostenlos unbegrenzt verwenden. Wenn Sie eine individuelle Umgebung aktiv verwenden, verlieren Sie den Zugriff auf die Ressourcen oder Funktionen in dieser Umgebung nicht. Sie werden jedoch eine Verzögerung bemerken, wenn Sie Ihre Common Data Service Datenbank nach einer längeren Zeit der Inaktivität das erste Mal wieder verwenden.  Diese Verzögerung wirkt sich nicht auf die Daten oder Entitäten aus, die in Common Data Service gespeichert werden.
 
-**F:** Kann ich mehrere individuelle Umgebungen erhalten oder erstellen?
+**F:** Kann ich mehrere individuelle Umgebung abrufen oder erstellen?
 
-**A:** Nein, Sie können nur über eine individuelle Umgebung verfügen, die für Sie von PowerApps erstellt wird, wenn Sie sich für den Communityplan registrieren.
+**A:** Nein, Sie können nur über eine individuelle Umgebung verfügen, die für Sie von Power Apps erstellt wird, wenn Sie sich für den Community-Plan registrieren.
 
-**F:** Worin besteht der Unterschied zwischen der PowerApps-Plan 2-Testversion und dem PowerApps-Communityplan, und für welche sollte ich mich registrieren?
+**F:** Was ist der Unterschied zwischen der Testversion von Power Apps Plan und dem Power Apps Communityplan. Für welchen sollte ich mich registrieren?
 
-**A:** Sowohl die PowerApps Plan 2-Testversion und der PowerApps-Communityplan sind kostenlos, sie wurden aber für verschiedene Zwecke entwickelt:
+**A:** Die Testversion von Power Apps und Power Apps Communityplan sind kostenlos. Sie wurden jedoch für unterschiedliche Zwecke erstellt:
 
-Mit der **PowerApps-Plan 2-Testversion** erhalten Sie PowerApps-Plan 2 für einen Zeitraum von 30 Tagen. Dies ist dafür vorgesehen, Ihnen das Ausprobieren von PowerApps, Common Data Service und Microsoft Flow zu ermöglichen. Nach dem Ablauf Ihrer Testversion können Sie einen Plan erwerben. Wenn Sie PowerApps bereits mit Office 365 oder Dynamics 365 verwenden, ist dies der richtige Plan, um die Premium-Funktionen von PowerApps auszuprobieren, die in PowerApps Plan 2 zur Verfügung stehen.
+**Power Apps Testversion** bietet Power Apps Plan 2 für 30 Tage. Dies ist zum Testen von Power Apps, Common Data Service, und Power Automate. Nach dem Ablauf Ihrer Testversion können Sie einen Plan erwerben. Wenn Sie Power Apps bereits mit Office 365 oder Dynamics 365 verwenden, ist dies der richtige Plan, um die Premiumfunktionen von Power Apps zu testen, die im Power Apps Plan pro Benutzer verfügbar sind.
 
-**PowerApps-Communityplan** gibt Ihnen Zugriff auf PowerApps-Premium-Funktionen, Common Data Service und Microsoft Flow für die individuelle Verwendung. Dieser Plan ist in erster Linie für Lernzwecke oder das Erstellen von Geschäftslösungen zur Verteilung über [AppSource Test Drive](./canvas-apps/dev-appsource-test-drive.md) vorgesehen. Dieser Plan ist dauerhaft verfügbar, jedoch nur für Lernzwecke und den Ausbau Ihrer Kenntnisse in PowerApps, Common Data Services und Microsoft Flow.
+**Power Apps Communitypla** gibt Ihnen Zugriff auf Power Apps Premium-Funktionen, Common Data Service, und Power Automate für den individuellen Gebrauch. Der Plan ist hauptsächlich für Lernzwecke oder das Erstellen von Unternehmenslösungen gedacht, die für [AppSource Test Drive](./canvas-apps/dev-appsource-test-drive.md) bereitgestellt werden. Dieser Plan ist unbegrenzt verfügbar aber nur zum Lernen und Verbessern Ihrer Fähigkeiten mit Power Apps, Common Data Services und Power Automate gedacht.
 
-**F:** Kann ich mich mit meinem persönlichen Konto registrieren?
+**F:** Kann die mich mit meinem persönlichen Konto registrieren?
 
-**A:** Nein, Sie können sich nur mit Ihrem [Geschäfts-, Schul- oder Unikonto](signup-for-powerapps.md#faq) registrieren. Wir unterstützen die Registrierung mit einem persönlichen Konto derzeit nicht.
+**A:** Nein, Sie können sich nur mit Ihrem [Arbeits- oder Schulkonto](signup-for-powerapps.md#faq) anmelden. Wir unterstützen derzeit keine Registrierung mit persönlichen Konten.
 
 **F:** Kann ich meine individuelle Umgebung löschen?
 
-**A:** Sie können diese Umgebung nicht auf eigene Faust löschen. Ihr Mandantenadministrator verfügt über die Berechtigung zum Löschen der Umgebung.
+**A:** Sie können diese Umgebung nicht selbstständig löschen. Ihr Mandantenadministrator hat die Berechtigungen, die Umgebung zu löschen.

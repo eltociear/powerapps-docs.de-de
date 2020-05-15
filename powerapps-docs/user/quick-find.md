@@ -20,7 +20,7 @@ ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/01/2020
-ms.locfileid: "76918620"
+ms.locfileid: "3303091"
 ---
 # <a name="using-quick-find-to-search-for-records"></a>Verwenden der Schnellsuche zum Suchen nach Datensätzen
 
@@ -47,9 +47,9 @@ Die Schnellsuche mit mehreren Entitäten wird auch als Suche nach Kategorien bez
 
 Mit der Suche nach Kategorien können Sie nach Datensätzen suchen, die mit einem bestimmten Wort beginnen oder ein Platzhalterzeichen verwenden.
   
-- **Beginnt mit:** Zu den Ergebnissen zählen Datensätze, die mit einem bestimmten Wort beginnen. Wenn Sie z. B. nach „Alpine Ski House suchen“ möchten, geben Sie **alp** in das Suchfeld ein. Wenn Sie **ski** eingeben, wird der Datensatz nicht angezeigt.  
+- **Beginnt mit**: Ergebnisse enthalten Datensätze, die mit einem bestimmten Wort beginnen. Wenn Sie z. B. nach „Alpine Ski House suchen“ möchten, geben Sie **alp** in das Suchfeld ein. Wenn Sie **ski** eingeben, wird der Datensatz nicht angezeigt.  
   
-- **Platzhalter:** Beispielsweise *ski-oder *ski\*. 
+- **Platzhalter**: z. B. *ski* oder *ski\*. 
 
   > [!NOTE]
   >  Die Verwendung eines Platzhalters am Anfang der Suchabfrage (mit einer einzelnen Entität oder mehreren Entitäten) kann zu einer langsameren Leistung führen.

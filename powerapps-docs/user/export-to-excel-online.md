@@ -17,11 +17,11 @@ search.app:
 - D365CE
 - D365CE
 ms.openlocfilehash: 6cb8fe650db464f41c63af87c3fcb34bb2203cf2
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61544777"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3302447"
 ---
 # <a name="export-your-data-to-excel-online"></a>Exportieren von Daten nach Excel Online 
 
@@ -31,13 +31,13 @@ Wenn Sie Änderungen an den Daten in Excel Online vornehmen, können Sie die akt
   
 ## <a name="prerequisites"></a>Voraussetzungen  
   
-- Dieses Feature erfordert, dass Sie über ein Office 365-Abonnement oder ein Abonnement für einen Onlinedienst wie SharePoint Online oder Exchange Online verfügen.
+- Für diese Funktion benötigen Sie ein Abonnement von Office 365 oder ein Abonnement von einem Onlinedienst wie SharePoint Online oder Exchange Online.
   
 - Sie benötigen ein Microsoft-Konto.    
   
 ## <a name="open-app-data-in-excel-online"></a>Öffnen von App-Daten in Excel Online  
 
-Die Option zum Öffnen von Daten in Excel Online ist nicht für alle Datensatztypen verfügbar. Wenn die Option nicht angezeigt wird, ist sie für diesen Datensatz nicht verfügbar.  
+Die Option zum Öffnen von Daten in Excel Online ist nicht für alle Datensatztypen verfügbar. Wenn die Option nicht angezeigt wird, ist sie für den betreffenden Datensatz nicht verfügbar.  
   
 > [!NOTE]
 > Aktualisierte Daten in einer App werden nicht sofort in Excel Online angezeigt, wenn dieselbe Ansicht in den letzten zwei Minuten in Excel Online geöffnet wurde. Nach diesem Zeitraum sollten alle aktualisierten Daten in Excel Online angezeigt werden.
@@ -57,7 +57,7 @@ Wenn Sie eine Liste der Datensätze in einer App öffnen möchten, wählen Sie i
    > 
    > - Der Dateiimport schlägt möglicherweise fehl, wenn Sie viele Änderungen vornehmen. Wenn Sie viele Änderungen an den Daten vornehmen und diese zurück in die App importieren müssen, empfiehlt es sich, stattdessen das Arbeitsblatt in Excel zu exportieren.  
    > 
-   > - Es ist in Excel Online nicht möglich, den Vorgang „**Datei** > **Speichern unter**“ durchzuführen. Wenn Sie dies tun, erhalten Sie eine Fehlermeldung, dass **die Arbeitsmappe nicht gespeichert werden kann**.   
+   > - Es ist in Excel Online nicht möglich, den Vorgang **Datei** > **Speichern unter** durchzuführen. Wenn Sie es versuchen, wird eine Fehlermeldung. **Arbeitsmappe kann nicht gespeichert werden** angezeigt.   
 2. Wählen Sie im Dialogfeld **Daten für Import übermittelt** die Option **Schließen** aus.  
   
 

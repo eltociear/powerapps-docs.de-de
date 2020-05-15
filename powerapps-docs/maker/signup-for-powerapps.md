@@ -1,135 +1,103 @@
 ---
-title: Registrieren für eine kostenlose Testversion | Microsoft-Dokumentation
-description: Registrieren Sie sich als Einzelperson für eine kostenlose Lizenz, um PowerApps 30 Tage lang zu testen.
-author: AFTOwen
+title: Power Apps für 30 Tage lang kostenlos erkunden | Microsoft-Dokumentation
+description: Melden Sie sich für eine kostenlose Lizenz an, die alle Power Apps-Funktionen beinhaltet und nach 30 Tagen abläuft.
+author: KumarVivek
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.date: 03/12/2018
-ms.author: anneta
-ms.reviewer: ''
-ms.openlocfilehash: cfe9dd8d7a1a1342e7db4fb2786f68942bec7784
-ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
+ms.date: 02/28/2020
+ms.author: kvivek
+ms.reviewer: kvivek
+searchScope:
+- GetStarted
+- PowerApps
+ms.openlocfilehash: 17cc56ec99f364ad817175e3314d36be0a5584a7
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726904"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3303344"
 ---
-# <a name="sign-up-for-a-free-license-to-try-powerapps"></a>Registrieren für eine kostenlose Lizenz zum Testen von PowerApps
-Zum Erstellen einer App in PowerApps benötigen Sie eine der verfügbaren Lizenzen. Diese enthalten unterschiedliche Funktionen. Sie besitzen bereits eine Lizenz für PowerApps, wenn Ihre Organisation eine Version von Office 365 oder Dynamics 365 oder Lizenzen für PowerApps-Plan 1 oder 2 für Sie erworben hat.
+# <a name="explore-power-apps-for-free-for-30-days"></a>Power Apps für 30 Tage lang kostenlos erkunden
+
+Sie können alle erkunden Power AppsFunktionen kostenlos durch Anmeldung für a Power Apps-Testplan, der nach 30 Tagen abläuft. Wenn Sie keine Lizenz für Power Apps haben, bietet der Testplan vorübergehenden Zugriff auf diese und andere Funktionen:
+
+- Erweitern Sie die Funktionen von Office 365 (SharePoint Online, Teams, Excel und mehr).
+- Sie können Canvas-Apps erstellen und ausführen, mit denen eine Verbindung zu Common Data Service und einer breiten Palette von mehr als 200 anderen Datenquellen hergestellt wird , einschließlich Premium-Connectors und lokale Daten.
+- Sie können modellgesteuerte Apps erstellen und ausführen.
+- Erstellen Sie automatisierte Workflows mit Power Automate.
+- Erstellen und verwalten Sie Umgebungen in Common Data Service.
+
+Wenn Sie eine Power Apps-Lizenz oder eine Lizenz über Office 365 haben, haben Sie bereits Zugriff auf einige dieser Funktionen; Die Testlizenz erweitert Ihren Zugriff vorübergehend um alle Funktionen in der vorherigen Liste. Informationen zu den Funktionen, die die einzelnen Lizenztypen bieten, finden Sie auf der [Preisseite](https://powerapps.microsoft.com/pricing/).
 
 > [!NOTE]
-> Wenn Sie Administrator sind, finden Sie weitere Informationen unter [Erwerben von PowerApps für Ihre Organisation](../administrator/signup-for-powerapps-admin.md) oder [PowerApps in your organization Q&A (PowerApps in Ihrer Organisation – häufig gestellte Fragen)](../administrator/signup-question-and-answer.md).
+> - Wenn Sie Administrator sind, sehen Sie sich [Power Apps für Ihre Organisation kaufen](../administrator/signup-for-powerapps-admin.md) oder [Power Apps in Ihrer Organisation – F&A](../administrator/signup-question-and-answer.md).
+> - Ab Januar 2020 sind Self-Service-Kauf, Abonnement und Lizenzverwaltung für Power Platform-Produkte (Power BI, Power Apps und Power Automate) für kommerzielle Cloud-Kunden in den USA verfügbar. Weitere Informationen – einschließlich der Schritte zum Aktivieren oder Deaktivieren des Self-Service-Erwerbs in Ihrer Organisation – finden Sie unter [FAQ zum Self-Service-Kauf](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide).
 
-Dort sehen Sie, [welche Lizenzen PowerApps enthalten](https://powerapps.microsoft.com/pricing/) und was diese bieten. Wenn Sie noch nicht sicher sind, ob Sie bereits eine Lizenz haben, öffnen Sie die [PowerApps-Website](http://powerapps.microsoft.com), und klicken Sie auf **Anmelden**.
+## <a name="identify-your-current-license"></a>Identifizieren Ihrer aktuellen Lizenz
 
-![Anmeldeoption für PowerApps](./media/signup-for-powerapps/sign-in.png)
+Um herauszufinden, welche Lizenz oder Lizenzen Sie bereits haben, [melden Sie sich bei Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) mit den Anmeldeinformationen Ihres Geschäfts-, Schul-oder Unikontos an.
 
-Wenn Sie keine Lizenz besitzen oder mehr Funktionen möchten als Ihre aktuelle Lizenz Ihnen bietet, können Sie sich für eine kostenlose Testversion von PowerApps-Plan 2 anmelden. Diese Lizenz stellt alle PowerApps-Funktionen bereit, läuft jedoch nach 30 Tagen ab.
+- Wenn Sie sich nicht anmelden können, haben Sie keine Power Apps-Lizenzen, und Sie müssen [eine Testversion starten](#get-a-license-from-scratch), wenn Sie auf Power Apps zugreifen möchten.
 
-## <a name="upgrade-an-existing-license"></a>Aktualisieren einer vorhandenen Lizenz 
-Sie können eine kostenlose, 30-tägige Testversion von PowerApps-Plan 2 beginnen, indem Sie sich bei PowerApps mit einer vorhandenen Lizenzanmelden und anschließend eines der folgenden Features testen:
+    > [!IMPORTANT]
+    > Sie können sich nicht mit einer persönlichen E-Mail-Adresse anmelden, die beispielsweise mit outlook.com, hotmail.com oder gmail.com endet. Weitere Informationen finden Sie unter [Welche E-Mail-Adresse kann ich verwenden?](#what-email-address-can-i-use) weiter unten in diesem Thema.
 
-* [Erstellen und Verwalten einer Instanzen](../administrator/signup-for-powerapps-admin.md) von Common Data Service
-* [Modellieren von Daten](./common-data-service/data-platform-intro.md) mithilfe des Common Data Service.
-* [Erstellen und Verwalten von Umgebungen](../administrator/environments-administration.md) über das PowerApps Admin Center
-* [Verwalten eines lokalen Datengateways](./canvas-apps/gateway-management.md) in PowerApps.  
+- Wenn Sie sich anmelden können, wählen Sie das Zahnradsymbol in der Nähe der oberen rechten Ecke und dann **Pläne** aus.
 
-Wenn Sie eines dieser Features ohne eine Lizenz für PowerApps-Plan 2 ausprobieren, werden Sie dazu aufgefordert, eine kostenlose, 30-tägige Testversion zu beginnen. Klicken Sie einfach auf **Meine Testversion starten**, und stimmen Sie im angezeigten Dialogfeld den Nutzungsbedingungen zu.
+    ![Zahnradsymbol](./media/signup-for-powerapps/gear-icon.png)
 
-![Zu Nutzungsbedingungen zustimmen](./media/signup-for-powerapps/trial-consent.png)
+## <a name="upgrade-an-existing-license"></a>Aktualisieren einer vorhandenen Lizenz
+
+Um eine kostenlose 30-Tage-Testversion von Power Apps Plan 2 über eine bestehende Lizenz zu starten, [melden Sie sich bei Power Apps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) und testen Sie eine Funktion, die Plan 2 erfordert. (Wählen Sie beispielsweise das Zahnradsymbol in der oberen rechten Ecke aus und wählen Sie **Admin center**und dann **Neue Umgebung** in der Nähe der oberen rechten Ecke aus) Befolgen Sie dann die Anweisungen, um den Anmeldevorgang abzuschließen.
 
 ## <a name="get-a-license-from-scratch"></a>Erhalten einer Lizenz (kompletter Vorgang)
-Wenn Sie keine Lizenz für PowerApps besitzen, können Sie sich über die [PowerApps-Website](http://powerapps.microsoft.com) für eine kostenlose, 30-tägige Testversion von PowerApps-Plan 2 anmelden.
 
-* Wenn Sie diese Inhalte mit einem Browser auf einem Smartphone anzeigen, tippen Sie auf das Menüsymbol in der oberen rechten Ecke, und tippen Sie auf **Kostenlos registrieren**.
-* Wenn Sie einen Browser auf einem anderen Gerätetyp verwenden, klicken Sie in der oberen rechten Ecke auf **Kostenlos anmelden**.
+Unabhängig davon, ob Sie eine Lizenz für Power Apps haben, können Sie eine kostenlose 30-Tage-Testversion von Power Apps Plan 2 folgendermaßen starten:
 
-    ![Kostenlos registrieren](./media/signup-for-powerapps/sign-up-browser.png)
+1. Öffnen Sie die [Power Apps-Website](https://powerapps.microsoft.com) und wählen Sie dann **Kostenlos anmelden** aus.
 
-Klicken Sie in der Mitte des Bildschirms auf **Preise** und dann auf **Kostenlose Testversion starten**.
+    Wenn einSmartphone verwenden, öffnen Sie zuerst das Menü in der oberen rechten Ecke und wählen Sie dann **Kostenlos anmelden**.
 
-![Kostenlose Testversion starten](./media/signup-for-powerapps/start-free-trial.png)
+1. Wählen Sie neben der Bildschirmmitte die Option **Preisgestaltung** und anschließend **Kostenlose Testversion starten** aus.
 
-Geben oder fügen Sie im angezeigten Dialogfeld Ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse ein, und klicken oder tippen Sie auf **Übermitteln**.
+1. Geben Sie im angezeigten Dialogfeld die Arbeits- oder Schul-E-Mail-Adresse ein oder fügen Sie sie ein und wählen Sie dann **Übermitteln**.
 
-> [!IMPORTANT]
-> Private E-Mail-Dienste, Telekommunikationsanbieter und E-Mail-Adressen wie die folgenden von Behörden oder des Militärs werden nicht unterstützt:  
-> 
-> * outlook.com, hotmail.com, gmail.com usw.  
-> * .gov und .mil
->
-> Wenn Sie versuchen, sich mit einer privaten E-Mail-Adresse zu registrieren, weist Sie eine Nachricht darauf hin, dass Sie eine Geschäfts-, Schul- oder Uni-E-Mail-Adresse verwenden müssen.
+    > [!IMPORTANT]
+    > Weitere Informationen finden Sie unter [Welche E-Mail-Adresse kann ich verwenden?](#what-email-address-can-i-use) weiter unten in diesem Thema.
 
-![E-Mail-Adresse eingeben](./media/signup-for-powerapps/get-started-old.png)
+1. Wenn ein Dialogfeld anzeigt, dass Power Apps die Anmeldeinformationen Ihrer Organisation erkennt, folgen Sie den Anweisungen, um die Anmeldung abzuschließen.
 
-Wenn PowerApps Ihre Organisation erkennt, können Sie sich mit Ihren Anmeldeinformationen für diese Organisation anmelden und die restlichen Anweisungen überspringen.
+    ![Mit Geschäftskonto anmelden](./media/signup-for-powerapps/we-know-you.png)
 
-![Mit Geschäftskonto anmelden](./media/signup-for-powerapps/we-know-you.png)
+    Befolgen Sie andernfalls die Anweisungen, um Ihre E-Mails zu überprüfen, Ihre E-Mail-Adresse zu überprüfen, gegebenenfalls weitere Informationen bereitzustellen und wählen Sie dann **Start**.
 
-Andernfalls werden Sie dazu aufgefordert, Ihre E-Mails zu überprüfen. 
-
-![Aufforderung, in der E-Mail nachzusehen](./media/signup-for-powerapps/check-email.png)
-
-Klicken Sie in der E-Mail auf den Link, um Ihre E-Mail-Adresse zu verifizieren, und geben Sie weitere Informationen an, wenn Sie dazu aufgefordert werden.
-
-Wenn dieses Dialogfeld angezeigt wird, klicken Sie auf **Start**. Nun können Sie mit der Verwendung von [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) beginnen.
-
-![Auf „Starten“ klicken](./media/signup-for-powerapps/almost-there.png)
-
-> [!NOTE]
-> Wenn Sie mehr Zeit zum Beurteilen von PowerApps möchten, können Sie eine Verlängerung Ihres Testzeitraums um weitere 30 Tage anfordern.
-
-## <a name="faq"></a>FAQ
-
-### <a name="what-premium-features-does-the-trial-license-include"></a>Welche Premium-Features sind in der Testlizenz enthalten?
-
-* **Zugriff auf den Common Data Service**, eine sichere, in PowerApps integrierte Geschäftsdatenplattform. [Common Data Service](./common-data-service/data-platform-intro.md) verfügt über Hunderte Standardgeschäftsentitäten. So können alle Apps auf dieselbe Definition für „Kunde“, „Produkt“, „Lead“ und weitere Entitäten zugreifen.
-* **Zugriff auf Premium-Verbindungen** wie Salesforce, DB2, Zendesk und den Common Data Service. Mit vielen Office 365- und Dynamics 365-Plänen können Sie Verbindungen mit Datenquellen wie Office 365, Dynamics 365, Dropbox und Twitter herstellen. Mit der Testlizenz können Sie unter anderem ebenfalls eine Verbindung mit Daten über diese Premium-Connectors herstellen:
-
-    ![](./media/signup-for-powerapps/premium-connectors.png)
-
-    In der [vollständigen Liste der Connectors](./canvas-apps/connections-list.md) sind Premium-Connectors gekennzeichnet:
-
-    ![](./media/signup-for-powerapps/premium-badge.png)
-* **Zugriff auf das PowerApps Admin Center**, wo Sie Umgebungen, Datenbanken, Benutzerberechtigungen und Datenrichtlinien verwalten können. [Weitere Informationen](../administrator/admin-guide.md)
-* **Erstellen Sie Apps im modellgesteuerten Modus**, in dem Sie Komponenten zu einer App hinzufügen und PowerApps das Layout und andere Elemente der Benutzeroberfläche erstellen lassen. 
-
-Informationen zu Funktionen und zur Kapazität der Testversion finden Sie auf der [Tarifseite](https://powerapps.microsoft.com/pricing/).
+## <a name="faq"></a>Häufig gestellte Fragen
 
 ### <a name="what-email-address-can-i-use"></a>Welche E-Mail-Adresse kann ich verwenden?
+
 Sie können eine Geschäfts-, Schul- oder Uni-Adresse verwenden, um sich für eine Testlizenz anzumelden. Wenn Sie eine andere Adresse verwenden, kann eines der in dieser Tabelle aufgelisteten Symptome auftreten:
 
 
-|                                                                                                                                                                                                                             Symptom / Fehlermeldung                                                                                                                                                                                                                             |                                                                                                                                                                                                     Ursache und Problemumgehung                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                             Symptom/Fehlermeldung                                                                                                                                                                                                                             |                                                                                                                                                                                                     Ursache und Problemumgehung                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>Private E-Mail-Adressen (z.B. nancy@gmail.com)</strong> <br> <br> Sie erhalten während der Registrierung eine Fehlermeldung wie die folgende: <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> oder <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |                                                                                                        PowerApps unterstützt keine E-Mail-Adressen, die von privaten E-Mail-Diensten oder Telekommunikationsanbietern bereitgestellt werden. <br> <br> Versuchen Sie es erneut mit einer E-Mail-Adresse, die von Ihrem Unternehmen, Ihrer Schule oder Ihrer Universität zugewiesen wurde, um die Registrierung abzuschließen.                                                                                                        |
-|                             **Adressen, die auf „.gov“ oder „.mil“ enden** <br> <br> Sie erhalten während der Registrierung eine Fehlermeldung wie die folgende: <br> <br> `PowerApps unavailable: PowerApps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> oder <br> <br> `We can't finish signing you up. It looks like Microsoft PowerApps isn't currently available for your work or school.`                              |                                                                                                                                                                                PowerApps unterstützt derzeit keine E-Mail-Adressen, die auf „.gov“ oder „.mil“ enden.                                                                                                                                                                                |
-|                                                                                             **Die E-Mail-Adresse ist keine Office 365-ID** <br> <br>  Sie erhalten während der Registrierung eine Fehlermeldung wie die folgende: <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.`                                                                                              | Ihre Organisation meldet sich bei Office 365 und anderen Microsoft-Diensten mit anderen IDs als E-Mail-Adressen an. Beispielsweise kann Ihre Nancy.Smith@contoso.com lauten, Ihre ID ist jedoch nancys@contoso.com. <br> <br> Verwenden Sie die ID, die Ihre Organisation Ihnen für die Anmeldung bei Office 365 oder anderen Microsoft-Diensten zugewiesen hat, um die Registrierung abzuschließen.  Wenn Sie diese nicht kennen, wenden Sie sich an Ihren IT-Administrator. |
+| <strong>Private E-Mail-Adressen (z.B. nancy@gmail.com)</strong> <br> <br> Während der Registrierung wird eine Fehlermeldung wie die folgende ausgegeben: <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> or <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |                                                                                                        Power Apps unterstützt keine E-Mail-Adressen, die von E-Mail-Diensten für Endkunden oder von Telekommunikationsanbietern zur Verfügung gestellt werden. <br> <br> Um die Anmeldung abzuschließen, versuchen Sie es erneut mithilfe einer E-Mail-Adresse, die von Ihrer Arbeit oder Ihrer Schule zugewiesen wurde.                                                                                                        |
+|                             **.gov- oder .mil-Adressen** <br> <br> Während der Registrierung wird eine Fehlermeldung wie die folgende ausgegeben: <br> <br> `Power Apps unavailable: Power Apps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> or <br> <br> `We can't finish signing you up. It looks like Microsoft Power Apps isn't currently available for your work or school.`                              |                                                                                                                                                                                Power Apps unterstützt .gov- oder .mil-Adressen noch nicht.                                                                                                                                                                                |
+|                                                                                             **Eine E-Mail-Adresse ist keine Office 365-ID** <br> <br>  Während der Registrierung wird eine Fehlermeldung wie die folgende ausgegeben: <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.`                                                                                              | Ihre Organisation meldet sich in Office 365 und anderen Microsoft-Diensten mit anderen IDs als E-Mail-Adressen an. Ihre E-Mail-Adresse könnte beispielsweise Nancy.Smith@contoso.com lauten, Ihre ID hingegen nancys@contoso.com. <br> <br> Um die Anmeldung abzuschließen, verwenden Sie die ID, die Ihre Organisation Ihnen für die Anmeldung in Office 365 oder anderen Microsoft-Diensten zugewiesen hat.  Wenn Sie diese nicht kennen, wenden Sie sich an Ihren IT-Administrator. |
+
+<!--
+### When will my trial license expire?
+
+To determine when your trial license will expire, select the gear icon near the upper-right corner of the [Power Apps site](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), and then select **Plan(s)**.
+-->
 
 ### <a name="what-happens-when-my-trial-expires"></a>Was passiert, wenn die Testversion abläuft?
-Nach 30 Tagen werden Sie dazu aufgefordert, eine Verlängerung des Testzeitraums anzufordern oder einen Plan zu erwerben. Einzelheiten zu allen Plänen finden Sie auf der [Tarifseite](https://powerapps.microsoft.com/pricing/).
 
-* Wenn Sie auf PowerApps über Office 365, Dynamics 365 oder eine Lizenz von PowerApps-Plan 1 zugreifen können, können Sie PowerApps weiter verwenden, verlieren aber möglicherweise den Zugriff auf Common Data Service, die Premium-Connectors, das PowerApps Admin Center und andere Features von PowerApps-Plan 2. Beispielsweise kann dieser Bildschirm angezeigt werden, wenn Sie versuchen, eine Premium-Verbindung zu erstellen:
+30 Tage nach Beginn der Testversion werden Sie aufgefordert, eine Verlängerung der Testversion anzufordern oder einen Plan zu erwerben. Sie können die Informationen zu allen Plänen auf der [Seite für die Preisgestaltung](https://powerapps.microsoft.com/pricing/) finden.
 
-    ![](./media/signup-for-powerapps/premium-trial-expired.png)
+Wenn Sie die Testversion nicht verlängern oder keinen Plan erwerben, aber noch eine andere Art von Lizenz haben, können Sie weiterhin alle Funktionen von Power Apps nutzen, die Ihre andere Lizenz bietet. Alle Daten in Common Data Service bleiben unverändert und jede App oder jeder Flow, der Common Data Service verwendet, wird weiterhin ausgeführt, wenn Ihre Lizenz sie unterstützt. Wenn Sie versuchen, Funktionen zu verwenden, die von Plan 2 unterstützt werden, von Ihrer vorhandenen Lizenz jedoch nicht (ändern Sie beispielsweise ein Schema oder Entitäten in Common Data Service) werden Sie aufgefordert, einen Plan zu kaufen.
 
-* Wenn Sie nur über die Testversion auf PowerApps zugreifen können (für die Sie sich über die [PowerApps-Website](http://powerapps.microsoft.com/) oder die [Tarifseite](http://powerapps.microsoft.com/pricing) angemeldet haben), können Sie eine Erweiterung der Testlizenz um 30 Tage anfordern, um weiterhin auf PowerApps zugreifen zu können.
+### <a name="more-questions"></a>Weitere Fragen?
 
-### <a name="when-will-my-trial-license-expire"></a>Wann läuft meine Testlizenz ab?
-Wenn Sie bestimmen möchten, wann Ihre Testlizenz abläuft, klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke der [PowerApps-Website](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken Sie dann auf **Pläne**.
-
-![](./media/signup-for-powerapps/show-duration.png)
-
-### <a name="what-happens-to-my-data-if-my-trial-license-expires"></a>Was geschieht mit meinen Daten, wenn die Testlizenz abläuft?
-Wenn Sie weiterhin Zugriff auf PowerApps haben, können Sie sie weiterhin verwenden. Daten im Common Data Service bleiben unangetastet, Apps und Flows, die den Common Data Service als Datenquelle verwenden, werden weiter ausgeführt. Sie können diese Apps und Flows allerdings nicht mehr verwenden, und Sie werden dazu aufgefordert, eine Verlängerung des Testzeitraums um 30 Tage anzufordern oder einen Plan zu erwerben, wenn Sie versuchen, ein Schema oder Entitäten in Common Data Service zu ändern.
-
-### <a name="what-should-i-do-next"></a>Wie sollte ich weiter vorgehen?
-Wenn Sie weiterhin Zugriff auf PowerApps oder dessen Features haben möchten, befolgen Sie einen dieser Schritte:
-
-* Erweitern Sie Ihre Testlizenz um 30 Tage, wenn Sie dazu aufgefordert werden.
-* Sehen Sie sich die verfügbaren Pläne auf der [Tarifseite](https://powerapps.microsoft.com/pricing/) von PowerApps an, und [kaufen Sie einen davon](../administrator/signup-for-powerapps-admin.md).
-
-## <a name="more-questions"></a>Weitere Fragen?
-Wenden Sie sich an die [PowerApps-Community](https://community.powerapps.com).
+Testen Sie die Power Apps-[Community](https://community.powerapps.com).

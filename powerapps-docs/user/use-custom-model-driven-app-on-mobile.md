@@ -16,21 +16,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1668b6a10ba651fd7f4986fcd1f83357d83b79bc
-ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
+ms.openlocfilehash: 1b1c0b6158bb19ed64bc70282aed2d4c62d07fe3
+ms.sourcegitcommit: 597849e2942c88a5c54953eeb8f14c8c81ac0ae2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80871456"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326200"
 ---
 # <a name="user-guide-for-model-driven-apps-running-on-the-power-apps-mobile-app"></a>Benutzerhandbuch für in der mobilen Power Apps-App ausgeführte modellgesteuerte Apps
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Verwenden Sie die mobile Power Apps-App, um modellgesteuerte Apps auf Ihrem mobilen Gerät auszuführen. Weitere Informationen zur Installation und zu den ersten Schritten mit einer App finden Sie unter [Ausführen von Canvas- und modellgesteuerten Apps auf einem mobilen Gerät](run-canvas-and-model-apps-on-mobile.md).
 
 > [!IMPORTANT]
-> Modellgesteuerte Apps für Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service<!--For sure this list doesn't include Dynamics 365 Marketing, and Dynamics 365 Project Service Automation? That's the list of model-driven apps according to the Dynamics Style Guide.--> können in der mobilen Power Apps-App nicht ausgeführt werden. Stattdessen verwenden Sie die Dynamics 365-App für Smartphones und Tablets. Weitere Informationen finden Sie unter [Benutzerhandbuch (Dynamics 365 für Smartphones und Tablets)](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide).
+> Modellgesteuerte Apps für Dynamics 365 Sales, Dynamics 365 Customer Service und Dynamics 365 Field Service<!--For sure this list doesn't include Dynamics 365 Marketing, and Dynamics 365 Project Service Automation? That's the list of model-driven apps according to the Dynamics Style Guide.--> können in der mobilen Power Apps-App nicht ausgeführt werden. Stattdessen verwenden Sie die Dynamics 365-App für Smartphones und Tablets. Weitere Informationen finden Sie unter [Benutzerhandbuch (Dynamics 365 für Smartphones und Tablets)](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide).
 
 ## <a name="home-screen"></a>Startbildschirm 
 
@@ -40,10 +38,10 @@ Das Verwenden der mobilen Power Apps-Apps ist einfach und intuitiv. Auf der folg
 
 Legende:
 
-1. **Siteübersicht:** Öffnen Sie das Menü, und wechseln Sie z. B. zwischen Apps, rufen Sie häufig und vor Kurzem verwendete Datensätze auf, oder greifen Sie auf Einstellungen zu.
-2. **Suchen**: Suchen Sie nach Apps in Common Data Service.
-3. **Schnelles Erstellen:** Wenn Sie einen neuen Datensatz erstellen, können Sie ohne Umschweife nahezu alle Arten von Informationen in das System eingeben.
-4. **Beziehungsassistent**: Verwenden Sie den Assistenten, um tägliche Aktionen und Kommunikationen zu überwachen und zu verfolgen. Er erleichtert Ihnen mithilfe von Erkenntniskarten, die in der gesamten App an exponierter Stelle angezeigt werden und maßgeschneiderte und umsetzbare Erkenntnisse liefern, den Überblick über Ihren Tag zu behalten.
+1. **Siteübersicht**: Öffnen Sie das Menü, und wechseln Sie z. B. zwischen Apps, rufen Sie häufig und vor Kurzem verwendete Datensätze auf, oder greifen Sie auf Einstellungen zu.
+2. **Suche**: Suchen nach App-Datensätzen in Common Data Service.
+3. **Schnellerfassung**: Wenn Sie einen neuen Datensatz erstellen, können Sie ohne Umschweife nahezu alle Arten von Informationen in das System eingeben.
+4. **Kundenbeziehungsassistent**: Verwenden Sie den Assistenten, um tägliche Aktionen und Kommunikationen zu überwachen und zu verfolgen. Er erleichtert Ihnen mithilfe von Erkenntniskarten, die in der gesamten App an exponierter Stelle angezeigt werden und maßgeschneiderte und umsetzbare Erkenntnisse liefern, den Überblick über Ihren Tag zu behalten.
 
 ## <a name="site-map"></a>Siteübersicht 
 
@@ -57,19 +55,19 @@ Klicken Sie auf dem Startbildschirm auf die Siteübersicht ![Symbol „Siteübe
 
 Auf der folgenden Abbildung werden die primären Navigationselemente auf der Anzeige „Siteübersicht“ veranschaulicht. 
 
-![Anzeige „Siteübersicht“](media/site_map_iphone.png "Bildschirm „Siteübersicht“")
+![Anzeige „Siteübersicht“](media/site_map_iphone.png "Anzeige „Siteübersicht“")
 
 Legende
 
-1. **App-Auswahl:** Öffnen Sie dieses Menü, um Ihre App zu schließen und zu einer anderen App zu wechseln.
-2. **Startbildschirm:** Klicken Sie auf diese Option, um zurück zum Startbildschirm zu wechseln.
-3. **Profil:** Rufen Sie die Anzeige „Profil“ auf, um sich abzumelden oder die App neu zu konfigurieren. 
-4. **Zuletzt verwendete Datensätze:** Sehen Sie sich eine Liste der Datensätze an, die Sie vor Kurzem verwendet haben. 
-5. **Angeheftete Datensätze:** Sehen Sie sich Ihre häufig verwendeten (angehefteten) Datensätze an, und öffnen Sie sie. 
-6. **Entitätennavigator:** In diesem Bereich werden die Entitäten aufgeführt, die in der App verfügbar sind.
-7. **Hilfe:** Greifen Sie auf Hilfeinhalte zu, um weitere Informationen zur Verwendung der mobilen Power Apps-App zu erhalten.
-8. **Offlinestatus:** Arbeiten Sie mit Ihren Daten im Offlinemodus, wenn Sie keinen Internetzugriff haben. Weitere Informationen: [Offline auf einem mobilen Gerät arbeiten](https://docs.microsoft.com/dynamics365/mobile-app/work-in-offline-mode)
-9. **Einstellungen**: Zugriffseinstellungen.
+1. **App-Auswahl**: Öffnen Sie dieses Menü, um Ihre App zu schließen und zu einer anderen App zu wechseln.
+2. **Startseite**: Klicken Sie auf diese Option, um zurück zum Startbildschirm zu wechseln.
+3. **Profil**: Rufen Sie die Anzeige „Profil“ auf, um sich abzumelden oder die App neu zu konfigurieren. 
+4. **Kürzlich verwendete Datensätze**: Sehen Sie sich eine Liste der Datensätze an, die Sie vor Kurzem verwendet haben. 
+5. **Angeheftete Datensätze**: Sehen Sie sich Ihre häufig verwendeten (angehefteten) Datensätze an, und öffnen Sie sie. 
+6. **Entitätsnavigator**: In diesem Bereich werden die Entitäten aufgeführt, die in der App verfügbar sind.
+7. **Hilfe**: Greifen Sie auf Hilfeinhalte zu, um weitere Informationen zur Verwendung der mobilen Power Apps-App zu erhalten.
+8. **Offlinestatus**: Verwenden von Daten im Offlinemodus, auch wenn Sie keinen Internet-Zugriff haben. Weitere Informationen: [Offline auf einem mobilen Gerät arbeiten](https://docs.microsoft.com/dynamics365/mobile-app/work-in-offline-mode)
+9. **Einstellungen**: Greifen Sie auf die Einstellungen zu.
 
 ## <a name="pin-favorite-records"></a>Anheften häufig verwendeter Datensätze
 
@@ -112,7 +110,7 @@ Legende
 ## <a name="add-a-record-quickly"></a>Schnelles Hinzufügen eines Datensatzes
 
 1. Klicken Sie auf dem Startbildschirm auf **Neu** ![Schaltfläche „Datensatz erstellen“](media/create-record-button.png "Schaltfläche „Datensatz erstellen“").
-2. Füllen Sie die Felder aus, und klicken Sie dann auf **Speichern**.
+2. Füllen Sie die Felder aus, und wählen Sie dann **Speichern** aus.
 3. Nachdem der Datensatz erstellt wurde, können Sie sich den neuen Datensatz ansehen. 
 
    > [!div class="mx-imgBorder"]
@@ -142,7 +140,7 @@ Legende
 ## <a name="edit-a-record"></a>Datensatz bearbeiten
 
 1. Öffnen Sie auf dem Startbildschirm einen Datensatz, den Sie bearbeiten möchten. 
-2. Wenn Sie das Bearbeiten des Datensatzes abgeschlossen haben, klicken Sie auf **Speichern**. Um Ihre Änderungen rückgängig zu machen, wählen Sie **Verwerfen** aus.
+2. Wenn Sie das Bearbeiten des Datensatzes abgeschlossen haben, klicken Sie auf **Speichern**. Um Ihre Änderungen zu verwerfen auf, klicken Sie auf **Verwerfen**.
 
    > [!div class="mx-imgBorder"]
    > ![Bearbeitung eines Datensatzes](media/save_on_iphone.gif "Diese Abbildung zeigt, wie ein Datensatz bearbeitet und dann gespeichert wird.")

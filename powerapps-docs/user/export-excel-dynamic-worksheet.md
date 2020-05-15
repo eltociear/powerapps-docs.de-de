@@ -20,15 +20,15 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733245"
+ms.locfileid: "3302861"
 ---
-# <a name="export-to-an-excel-dynamic-worksheet"></a>Exportieren in ein dynamisches Excel-Arbeitsblatt
+# <a name="export-to-an-excel-dynamic-worksheet"></a>In eine dynamische Excel-Tabelle exportieren
 
 Exportieren Sie Ihre App-Daten in ein Office Excel-Arbeitsblatt, damit alle Benutzer auf die aktuellen Informationen zugreifen können. Stellen Sie sich vor, der CEO Ihres Unternehmens könnte an wichtige Informationen gelangen, ohne in einer App navigieren zu müssen, sondern indem dieser einfach eine Excel-Verknüpfung auf dem Desktop öffnet. Sie können bis zu 100.000 Datensätze gleichzeitig exportieren.    
   
 ## <a name="export-data-to-an-excel-dynamic-worksheet"></a>Exportieren von Daten in ein dynamisches Excel-Arbeitsblatt  
 
-Sie können Daten nicht für alle Datensatztypen in ein dynamisches Arbeitsblatt in Excel exportieren. Wenn die Option nicht angezeigt wird, ist sie für diesen Datensatz nicht verfügbar.  
+Sie können Daten nicht für alle Datensatztypen in ein dynamisches Arbeitsblatt in Excel exportieren. Wenn die Option nicht angezeigt wird, ist sie für den betreffenden Datensatz nicht verfügbar.  
   
 1. Öffnen Sie eine Datensatzliste in der App, und klicken Sie auf den Pfeil rechts neben **In Excel exportieren**. 
   
@@ -36,10 +36,10 @@ Sie können Daten nicht für alle Datensatztypen in ein dynamisches Arbeitsblatt
   
 3. Wählen Sie im Dialogfeld **Spalten für dynamisches Excel auswählen** die Spalteneinstellungen, und klicken Sie auf **Exportieren**.  
   
-4. Klicken Sie auf **Speichern**, und speichern Sie die Datei im XLSX-Format. Notieren Sie sich den Speicherort der Datei.  
+4. Wählen Sie **Speichern** aus, und speichern Sie die XLSX-Datei. Notieren Sie den Speicherort, an dem Sie die Datei gespeichert haben.  
   
    > [!NOTE]
-   > Wenn Sie die Datendatei später bearbeiten möchten, empfiehlt es sich, die Datei zu speichern, bevor Sie sie öffnen. Andernfalls wird möglicherweise diese Fehlermeldung angezeigt: **Excel cannot open or save any more documents because there is not enough available memory or disk space.** (Excel kann keine weiteren Dokumente öffnen oder speichern, da nicht genügend Arbeitsspeicher oder Festplattenspeicher vorhanden ist.)  
+   > Wenn Sie die Datendatei später bearbeiten möchten, empfiehlt es sich, die Datei zu speichern, bevor Sie sie öffnen. Andernfalls erhalten Sie möglicherweise die Fehlermeldung: **Excel kann keine weiteren Dokumente mehr öffnen, da nicht genügend Speicherplatz vorhanden ist.**  
    > 
    > So beheben Sie das Problem:  
    > 
@@ -51,9 +51,9 @@ Sie können Daten nicht für alle Datensatztypen in ein dynamisches Arbeitsblatt
   
 5. Öffnen Sie Excel und dann die XLSX-Datei, die Sie im vorherigen Schritt gespeichert haben.  
   
-6. Wenn die Sicherheitswarnung **Externe Datenverbindungen wurden deaktiviert.** angezeigt wird, klicken Sie auf **Inhalt aktivieren**.  
+6. Wenn die Sicherheitswarnung **Externe Datenverbindungen wurden deaktiviert** angezeigt wird, wählen Sie **Inhalt aktivieren** aus.  
   
-7. Klicken Sie auf der Registerkarte **Daten** auf **Refresh from Power Apps** (Über Power Apps aktualisieren), um die Daten in der Datei zu aktualisieren.  
+7. Wählen Sie zum Aktualisieren der Daten in der Datei unter der Registerkarte **Daten** die Option **Aus Power Apps aktualisieren** aus.  
   
    > [!NOTE]
    > Wenn Ihre Telefonnummer mit **+** oder **–** beginnt (z. B. +1-123-456-7890), wird diese im Feld „Telefonnummer“ nicht richtig angezeigt, wenn Sie das dynamische Arbeitsblatt aktualisieren.   
@@ -64,9 +64,9 @@ Sie können Daten nicht für alle Datensatztypen in ein dynamisches Arbeitsblatt
   
 - Sie können eine dynamische Excel-Datei per E-Mail versenden oder diese als freigegebene Datei speichern, wenn die Empfänger sich in derselben Domäne befinden. Wenn Empfänger die dynamische Datei öffnen, werden ihnen die Daten angezeigt, für die sie in der App die Berechtigung besitzen. Es ist also möglich, dass diesen andere Daten angezeigt werden als Ihnen.  
   
-- Einige Systemansichten wie „Firmen: Keine Kampagnenaktivitäten in den letzten 3 Mon.“ können nur in ein statisches Excel-Arbeitsblatt exportiert werden.  
+- Einige Ansichten, z. B. "Firmen: Keine Kampagnenaktivitäten in den letzten 3 Mon.", können nur in eine statische Excel-Tabelle exportiert werden.  
   
-- In Power Apps werden Währungswerte als Zahlen nach Excel exportiert. Weitere Informationen zum Formatieren von Daten als Währung nach dem Export finden Sie im Excel-Hilfeartikel „Anzeigen von Zahlen als Währung“.
+- In Power Apps werden Geldbeträge als Zahlen nach Excel exportiert. Weitere Informationen zum Formatieren von Daten als Währung nach dem Export finden Sie im Excel-Hilfeartikel „Anzeigen von Zahlen als Währung“.
 
 - Die Datums- und Uhrzeitwerte, die in der App angezeigt werden, werden nur als Datum angezeigt, wenn Sie die Datei nach Excel exportieren, aber die Zelle zeigt das Datum und die Uhrzeit an.  
   

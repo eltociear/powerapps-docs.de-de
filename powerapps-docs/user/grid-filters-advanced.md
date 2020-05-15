@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0a27f7104b85b8ae45146ea7a3626cd1b0e2157c
-ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
+ms.openlocfilehash: 47d7c34d36ff5bed1a69ead94514afc2b2054561
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "80661326"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332656"
 ---
 # <a name="edit-or-create-personal-views-using-advanced-grid-filters"></a>Erstellen oder Bearbeiten persönlicher Ansichten mithilfe erweiterter Rasterfilter 
 
@@ -27,7 +27,9 @@ Mit den erweiterten Filteroptionen können Sie eine persönliche Ansicht erstell
 
 
 > [!NOTE]
-> Die erweiterte Filteroption ist nur in Versionen in englischer Sprache verfügbar.
+> - Die erweiterte Filteroption ist nur in Versionen in englischer Sprache verfügbar.
+> - Die erweiterte Filteroption für die Entität Warteschlangen funktioniert nicht und zeigt diese Fehlermeldung an: Die Filterbedingungen für diese Ansicht können nicht angezeigt werden.
+> - In den Einheitliche Oberfläche-Rastern werden Spaltenfilter basierend auf der aktuellen Ansichtsdefinition nicht vorab ausgefüllt.
 
 Wenn Sie eine persönliche Ansicht erstellen und speichern, wird sie in Ihrer Liste der persönlichen Ansichten unter **Meine Ansichten** angezeigt.
 
@@ -37,19 +39,19 @@ Wenn Sie eine persönliche Ansicht erstellen und speichern, wird sie in Ihrer Li
 
 ## <a name="see-the-current-view-definition"></a>Anzeigen der aktuellen Ansichtsdefinition
 
-Um zu prüfen, welche Filter auf die aktuelle Ansicht angewendet wurden, wählen Sie eine Ansicht und dann **Filter** ![Filtersymbol](media/commandbar_filter_icon.png "Filtersymbol") aus. Der Ausdrucks-Generator wird geöffnet und die Standardansichtsdefinition angezeigt.
+Um zu prüfen, welche Filter auf die aktuelle Ansicht angewendet wurden, wählen Sie eine Ansicht und dann **Filter** ![Filtersymbol](media/commandbar_filter_icon.png "Symbol Filter") aus. Der Ausdrucks-Generator wird geöffnet und die Standardansichtsdefinition angezeigt.
 
 > [!div class="mx-imgBorder"] 
 > ![Aktuelle Ansichtsdefinition](media/current_view_def.gif "Diese Abbildung zeigt, wie die Filter für die Ansicht angezeigt werden.")
 
 ## <a name="add-conditions-to-filters"></a>Hinzufügen von Bedingungen zu Filtern
 
-1. Um die aktuelle Ansicht zu bearbeiten und weitere Filter hinzuzufügen, wählen Sie eine Ansicht und dann **Filter** ![Filtersymbol](media/commandbar_filter_icon.png "Filtersymbol") aus.
+1. Um die aktuelle Ansicht zu bearbeiten und weitere Filter hinzuzufügen, wählen Sie eine Ansicht und dann **Filter** ![Filtersymbol](media/commandbar_filter_icon.png "Symbol Filter") aus.
 2. Verwenden Sie auf dem Bildschirm **Erweiterte Filter** den Ausdrucks-Generator, um Bedingungen zu Filtern hinzuzufügen. Weitere Informationen zum Hinzufügen von Bedingungen finden Sie unter [Hinzufügen von Bedingungen zu einem Filter](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-view-filters#add-conditions-to-a-filter).
 3. Wenn Sie fertig sind, wählen Sie **Übernehmen** aus. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Hinzufügen von Filtern](media/add_filters.gif "Diese Abbildung zeigt, wie Filter mit dem Ausdrucks-Generator hinzugefügt werden können.")
+   > ![Filter hinzufügen](media/add_filters.gif "Diese Abbildung zeigt, wie Filter mit dem Ausdrucks-Generator hinzugefügt werden können.")
 
 ### <a name="add-grouped-or-nested-conditions"></a>Hinzufügen gruppierter oder geschachtelter Bedingungen
 
@@ -58,7 +60,7 @@ Um Ihre Daten eingehender zu untersuchen, können Sie den Filtern gruppierte ode
    > [!div class="mx-imgBorder"] 
    > ![Hinzufügen einer gruppierten oder geschachtelten Bedingung](media/group_condition.gif "Diese Abbildung zeigt, wie einem Filter eine gruppierte oder geschachtelte Bedingung hinzugefügt wird.")
 
-### <a name="clear-filters"></a>Löschen von Filtern
+### <a name="clear-filters"></a>Filter löschen
 
 Um angewendete Filter zu löschen und die Ansicht wieder auf die Ursprungsdefinition zurückzusetzen, wählen Sie **Filter löschen** ![Symbol „Filter löschen“](media/clear_filter_icon.png "Symbol „Filter löschen“") aus.
 

@@ -21,21 +21,21 @@ ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/13/2020
-ms.locfileid: "79239957"
+ms.locfileid: "3303367"
 ---
 # <a name="work-with-reports"></a>Arbeiten mit Berichten
 
 Mithilfe von Berichten können Sie Ihre Fortschritte im Hinblick auf Ihre Geschäftsziele überwachen. Darüber hinaus können Sie Trends nachverfolgen, was Ihnen ggf. einen Wettbewerbsvorteil verschafft.  
 
-Weitere Informationen zur Strukturierung und Erstellung von Berichten finden Sie hier: [Hinzufügen von Berichtsfeatures zur modellgesteuerten App](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
+Weitere Informationen über das Erstellen und Bearbeiten von Berichten finden Sie in: [Anpassen und Organisieren von Berichten](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app).
   
 ## <a name="run-a-report"></a>Ausführen eines Berichts  
   
 1. Wählen Sie im linken Navigationsbereich den Bereich „Berichte“ aus. 
-2. Wählen Sie den gewünschten Bericht und anschließend **Bericht ausführen** aus.  
+2. Wählen Sie den Bericht aus, den Sie wünschen > **Bericht ausführen**  
   
    > [!NOTE]
-   >  Im Dialogfeld **Berichts-Viewer** können Sie die Suchkriterien unverändert lassen oder nach Bedarf ändern.  
+   >  Im Dialogfeld **Report Viewer** können Sie die Suchkriterien unverändert lassen oder sie bei Bedarf ändern.  
    
    > [!div class="mx-imgBorder"]
    > ![Ausführen eines Berichts](media/report-run.png "Ausführen eines Berichts")
@@ -61,7 +61,7 @@ Weitere Informationen zur Strukturierung und Erstellung von Berichten finden Sie
    > [!div class="mx-imgBorder"]
    > ![Hinzufügen eines Benutzers für die Berichtsfreigabe](media/report-share2.png "Hinzufügen eines Benutzers für die Berichtsfreigabe")
   
-7. Wählen Sie im Dialogfeld **Bericht freigeben** den gewünschten Zugriffstyp aus. Folgende Berechtigungen stehen zur Verfügung: „Lesen“, „Schreiben“, „Löschen“, „Anfügen“, „Zuweisen“ und „Freigeben“. Dadurch wird der Benutzer- oder Teamdatensatz dem Feld **Ausgewählte Datensätze** hinzugefügt.
+7. Wählen Sie im Dialogfeld **Bericht teilen** die gewünschte Art des Freigabezugriffs aus. Die folgenden Berechtigungen sind verfügbar: Lesen, Schreiben, Löschen, Anfügen, Zuweisen oder Freigeben. Dadurch wird der Benutzer- oder Teamdatensatz dem Feld **Ausgewählte Datensätze** hinzugefügt.
 
    > [!div class="mx-imgBorder"]
    > ![Auswählen des Freigabezugriffs](media/report-share3.png "Auswählen des Freigabezugriffs")
@@ -72,7 +72,7 @@ Weitere Informationen zur Strukturierung und Erstellung von Berichten finden Sie
 
 1. Wählen Sie im linken Navigationsbereich den Bereich „Berichte“ aus.  
 2. Wählen Sie in der Liste mit den Berichten den Bericht aus, den Sie freigeben möchten.  
-3. Wählen Sie auf der Befehlsleiste **Bearbeiten** aus.  
+3. Wählen Sie auf der Befehlsleiste die Option **Bearbeiten** aus.  
 4. Wählen Sie im Menü **Aktionen** die Option **Bericht der Organisation zur Verfügung stellen**.  
   
    > [!div class="mx-imgBorder"]
@@ -82,7 +82,7 @@ Weitere Informationen zur Strukturierung und Erstellung von Berichten finden Sie
 
 1. Wählen Sie im linken Navigationsbereich den Bereich „Berichte“ aus. 
 2. Wählen Sie in der Liste mit den Berichten den Bericht aus, den Sie freigeben möchten.  
-3. Wählen Sie auf der Befehlsleiste **Bearbeiten** aus.  
+3. Wählen Sie auf der Befehlsleiste die Option **Bearbeiten** aus.  
 4. Wählen Sie im Menü **Aktionen** die Option **Bericht herunterladen** aus.  
 Die RDL-Datei enthält die FetchXML-Abfrage, auf der der Bericht basiert.
 5. Öffnen Sie den Bericht nach Abschluss des Downloadvorgangs.

@@ -1,6 +1,6 @@
 ---
 title: Zusammenarbeiten mithilfe von SharePoint | Microsoft-Dokumentation
-description: Hier erfahren Sie, wie die Zusammenarbeit mithilfe von SharePoint in einer modellgesteuerten App funktioniert.
+description: Hier erfahren Sie, wie die Zusammenarbeit mithilfe von SharePoint in einer modellgesteuerten App funktioniert
 documentationcenter: ''
 author: mduelae
 manager: kvivek
@@ -22,26 +22,26 @@ ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/03/2020
-ms.locfileid: "78236107"
+ms.locfileid: "3303206"
 ---
-# <a name="collaborate-using-sharepoint"></a>Zusammenarbeiten mithilfe von SharePoint 
+# <a name="collaborate-using-sharepoint"></a>Zusammenarbeit mithilfe von SharePoint 
 
-Mit Common Data Service können Sie Ihre Dokumente in SharePoint speichern und über Ihre App verwalten. Dokumente, die Sie in Ihrer App erstellen, werden in SharePoint gespeichert und automatisch auf Ihren Computern und mobilen Geräten synchronisiert.
+Mit Common Data Service können Sie Ihre Dokumente in SharePoint speichern und aus der App verwalten. Die Dokumente, die Sie in der Ihrer erstellen, werden auf SharePoint gespeichert und automatisch mit Ihren Desktop- und Mobilgeräten synchronisiert.
 
-Bevor Sie SharePoint verwenden können, um Ihre Dokumente zu speichern, muss SharePoint von Ihrem Systemadministrator aktiviert werden. Weitere Informationen:
+Bevor Sie SharePoint zum Ablegen von Dokumenten verwenden können, muss es von Ihrem Systemadministrator aktiviert werden. Weitere Informationen:
 
 -   [Suchen Sie nach Ihrem Administrator oder Supportmitarbeiter](find-admin.md).  
 
--   [Verwalten von Dokumenten mit SharePoint](https://docs.microsoft.com/power-platform/admin/manage-documents-using-sharepoint)  
+-   [Ihre Dokumente mit SharePoint verwalten](https://docs.microsoft.com/power-platform/admin/manage-documents-using-sharepoint)  
 
 ## <a name="where-do-you-access-the-documents-from"></a>Von wo aus können Sie auf die Dokumente zugreifen?
 
-1. Bei Datensatztypen, die die Dokumentenverwaltung unterstützen, öffnen Sie den Datensatz, klicken auf die Registerkarte **Verknüpft** und dann auf **Dokumente**.
+1. Für Datensatztypen, die die Dokumentenverwaltung unterstützen, öffnen Sie den Datensatz, wählen die Registerkarte **Verknüpft** und dann **Dokumente**.
 
    > [!div class="mx-imgBorder"]
    > ![Öffnen der Registerkarte „Dokumente“ in einem Datensatz](media/onedrive_nav.png "Öffnen der Registerkarte „Dokumente“ in einem Datensatz")
 
-2. Klicken Sie auf **Dokumentspeicherort**  >  **Documents on Default Site 1** (Dokumente auf der Standardwebsite 1). Wenn SharePoint aktiviert ist, ist der Speicherort standardmäßig auf **Documents on Default Site 1** (Dokumente auf der Standardwebsite 1) festgelegt.
+2. Klicken Sie auf **Dokumentspeicherort**  >  **Documents on Default Site 1** (Dokumente auf der Standardwebsite 1). Wenn SharePoint aktiviert ist, ist der Speicherort standardmäßig auf **Dokumente auf der Standardwebsite 1** festgelegt.
 
    > [!div class="mx-imgBorder"]
    > ![Standardspeicherort](media/sharepoint_defualtsite.png "Standardspeicherort")
@@ -61,11 +61,11 @@ Bevor Sie SharePoint verwenden können, um Ihre Dokumente zu speichern, muss Sha
 3. Klicken Sie auf **Neu**, und wählen Sie dann einen Dokumenttyp aus, z. B. Word, Excel oder PowerPoint.
 
     > [!div class="mx-imgBorder"]
-    > ![Erstellen eines neuen Dokuments](media/onedrive_new_doc.png "Erstellen eines neuen Dokuments")
+    > ![Ein neues Dokument erstellen](media/onedrive_new_doc.png "Ein neues Dokument erstellen")
 
-4. Geben Sie einen Dokumentnamen ein, und klicken Sie dann auf **Speichern**.  
+4. Geben Sie einen Dokumentnamen ein, und wählen Sie dann **Speichern**.  
 
-## <a name="create-a-new-folder-in-the-default-sharepoint-site-location"></a>Erstellen eines neuen Ordners am Standardspeicherort der SharePoint-Website
+## <a name="create-a-new-folder-in-the-default-sharepoint-site-location"></a>Erstellen eines neuen Ordners am Standardspeicherort der SharePoint Website
 
 1. Öffnen Sie einen Datensatz, und navigieren Sie zur Ansicht **Zugeordnetes Raster des Dokuments**. Öffnen Sie z. B. einen Kontaktdatensatz.
 
@@ -79,16 +79,16 @@ Bevor Sie SharePoint verwenden können, um Ihre Dokumente zu speichern, muss Sha
 3. Klicken Sie auf **Neu** und dann auf **Ordner**.
 
     > [!div class="mx-imgBorder"]
-    > ![Erstellen eines neuen Ordners](media/Sharepoint_new_folder.png "Erstellen eines neuen Ordners")
+    > ![Neuen Ordner erstellen](media/Sharepoint_new_folder.png "Neuen Ordner erstellen")
     
  4. Geben Sie einen Ordnernamen ein, und klicken Sie auf **Speichern**.  
  
  
- ## <a name="upload-an-existing-document-to-sharepoint-from-your-app"></a>Hochladen eines vorhandenen Dokuments in SharePoint in Ihrer App
+ ## <a name="upload-an-existing-document-to-sharepoint-from-your-app"></a>Ein bestehendes Dokument aus Ihrer App auf SharePoint hochladen
 
 1. Navigieren Sie zu dem Datensatz, für den Sie das Dokument erstellen möchten, klicken Sie auf die Registerkarte **Verknüpft** und dann auf **Dokumente**.
  
-2. Klicken Sie auf **Hochladen**.
+2. Wählen Sie **Hochladen.**
 
    > [!div class="mx-imgBorder"]
    > ![Hochladen von Dokumenten](media/upload_doc.png "Hochladen von Dokumenten")
@@ -98,28 +98,28 @@ Bevor Sie SharePoint verwenden können, um Ihre Dokumente zu speichern, muss Sha
    Das Dokument wird am Dokumentspeicherort erstellt, an dem Sie sich gerade befinden.
 
    > [!Note]
-   > Sie können eine Datei mit bis zu 50 MB hochladen. Wenn Ihre Internetverbindung langsam ist, wird beim Hochladen großer Dateien möglicherweise eine Fehlermeldung zurückgegeben.
+   > Sie können eine Datei mit bis zu 50 MB hochladen. Wenn Ihre Internetverbindung langsam ist, tritt unter Umständen ein Fehler beim Hochladen von großen Dateien aus.
 
-4. Wenn es in SharePoint Dateien mit demselben Namen gibt, müssen Sie entscheiden, ob die Dateien überschrieben werden sollen.
+4. Wenn Dateien mit demselben Namen in SharePoint vorhanden sind, wählen Sie aus, ob Sie die Dateien überschreiben möchten.
 
-5. Klicken Sie auf **OK**.
+5. Wählen Sie **OK** aus.
 
-## <a name="manage-sharepoint-locations"></a>Verwalten von SharePoint-Speicherorten
+## <a name="manage-sharepoint-locations"></a>Verwalten von SharePoint Standorten
 
-In Common Data Service in Ihrer App können Sie neue oder vorhandene SharePoint-Speicherorte erstellen und bearbeiten.
+Sie können in Ihrer App neue oder bestehende SharePoint Positionen anlegen oder bearbeiten in Common Data Service.
 
 ### <a name="edit-a-location"></a>Bearbeiten eines Speicherorts
 
 1. Öffnen Sie einen Datensatz, klicken Sie auf die Registerkarte **Verknüpft** und dann auf **Dokumente**.
 
-2. Klicken Sie auf **Speicherort bearbeiten**, und wählen Sie dann einen Speicherort für die SharePoint-Website aus.
+2. Klicken Sie auf **Speicherort bearbeiten**, und wählen Sie dann einen Speicherort für die SharePoint Website aus.
 
-   Daraufhin wird das Dialogfeld **Speicherort bearbeiten** angezeigt.
+   Das Dialogfeld **Speicherort bearbeiten** wird angezeigt.
 
    > [!div class="mx-imgBorder"]
-   > ![Bearbeiten eines Speicherorts](media/edit_location.png "Bearbeiten des Speicherorts")
+   > ![Speicherort bearbeiten](media/edit_location.png "Speicherort bearbeiten")
 
-3. Der Anzeigename, der übergeordnete Standort und der Ordnername werden automatisch aufgefüllt. Geben Sie die Informationen zum neuen Speicherort ein, und klicken Sie dann auf **Speichern**.
+3. Der Anzeigename, der übergeordnete Standort und der Ordnername werden automatisch aufgefüllt. Geben Sie Informationen zum neuen Standort ein, und wählen Sie dann **Speichern** aus.
 
 ### <a name="add-a-new-location"></a>Hinzufügen eines neuen Speicherorts
 
@@ -127,23 +127,23 @@ In Common Data Service in Ihrer App können Sie neue oder vorhandene SharePoint-
 
 2. Klicken Sie auf **Speicherort hinzufügen**. 
 
-   Daraufhin wird das Dialogfeld **Speicherort hinzufügen** angezeigt.
+   Das Dialogfeld **Speicherort hinzufügen** wird angezeigt.
 
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen eines Speicherorts](media/add_location.png "Hinzufügen eines Speicherorts")
+   > ![Speicherort hinzufügen](media/add_location.png "Speicherort hinzufügen")
 
-3. Der Anzeigename, der übergeordnete Standort und der Ordnername werden automatisch aufgefüllt. Passen Sie die Angaben bei Bedarf an, und klicken Sie dann auf **Speichern**.
+3. Der Anzeigename, der übergeordnete Standort und der Ordnername werden automatisch aufgefüllt. Ändern Sie die Informationen nach Bedarf, und wählen Sie dann **Speichern** aus.
 
 ## <a name="files-tab-faq"></a>Häufig gestellte Fragen zur Registerkarte „Dateien“
 
 *Warum wurde der Speicherort für den Zugriff auf Dokumente verschoben?* 
-- Der Befehl wurde verschoben, damit Dokumente mit weniger Klicks gesucht und gefunden werden können.
+- Der Befehl wurde verschoben, damit Dokumente leichter, mit weniger Klicks, gefunden werden können.
 
 *Wurde die Registerkarte „Dokumente“ entfernt?*
 - Nein, sie wurde nicht entfernt. Benutzer können weiterhin wie gewohnt auf mit dem Datensatz verknüpfte Dokumente zugreifen, indem sie auf das Menü **Verknüpft** und dann auf den Link **Dokumente** klicken.
 
-*Werden trotz der Änderung noch automatisch Unterordner in SharePoint erstellt?*
-- Ja. Das Verhalten ähnelt dem Link **Dokumente** im Menü **Verknüpft**. Wenn ein Benutzer zum ersten Mal auf die Registerkarte **Dateien** klickt, wird der entsprechende SharePoint-Unterordner vom System erstellt. 
+*Werden mit der Änderung Unterordner in SharePoint immer noch automatisch erstellt werden?*
+- Ja. Das Verhalten ist ähnlich dem des Links **Dokumente** unter dem Menü **Verknüpft**. Wenn ein Benutzer zum ersten Mal auf die Registerkarte **Dateien** klickt, wird der entsprechende SharePoint Unterordner vom System erstellt. 
 
 *Gibt es eine Möglichkeit, die Registerkarte „Dateien“ zu anderen Entitäten hinzuzufügen oder zu entfernen?*
-- Ja. Befolgen Sie die Schritte in diesem Artikel, um die Registerkarte **Dateien** hinzuzufügen oder zu entfernen: [Hinzufügen der Registerkarte „SharePoint-Dokumente” zum Hauptformular für eine Entität](../maker/model-driven-apps/add-documents-tab-entity-main-form.md)  
+- Ja. Hinzufügen oder Entfernen der **Dateien** befolgen Sie auf der Registerkarte die Schritte in diesem Artikel: [Ergänzen Sie die SharePoint Registerkarte Dokumente zum Hauptformular für eine Entität](../maker/model-driven-apps/add-documents-tab-entity-main-form.md)  

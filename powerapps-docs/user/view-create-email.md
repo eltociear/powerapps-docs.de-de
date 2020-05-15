@@ -13,7 +13,7 @@ ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/10/2020
-ms.locfileid: "81008006"
+ms.locfileid: "3303574"
 ---
 # <a name="view-and-create-email-through-the-activities-grid"></a>Anzeigen und Erstellen von E-Mails über das Aktivitätsraster
 
@@ -23,9 +23,9 @@ Mit den modellgesteuerten Dynamics 365-Apps können Sie per E-Mail mit Kunden in
 
 - Nutzen der allgemeinen E-Mail-Symbolleistenfunktionen und der Steuerelemente des Rich-Text-Editors 
 
-- Anzeigen und Einfügen von Bildern inline mithilfe von Drag & Drop oder Kopieren und Einfügen. 
+- Bilder inline mithilfe von Drag-and-Drop- oder Copy-and-Paste-Funktionen anzeigen und einfügen. 
 
-- Erstellen von E-Mails in einem Popupfenster  
+- Ein neues E-Mail-Popupfenster öffnen.  
 
 - Vorschau von Vorlagen vor der Anwendung 
 
@@ -37,7 +37,7 @@ Zum Anzeigen Ihrer E-Mail:
 
 1. Wählen Sie in der Sitemap der modellgesteuerten App **Aktivitäten** aus. 
 
-2. Wählen Sie die Dropdownliste **Alle Aktivitäten** aus, und wählen Sie dann **Meine eingegangenen E-Mails** aus.
+2. Wählen Sie die Dropdown-Liste **Alle Aktivitäten** und dann **Meine empfangenen E-Mails** aus.
 
     ![view-email](media/view-email.png "Empfangene E-Mails anzeigen")
 
@@ -49,42 +49,42 @@ In den folgenden Schritten wird beschrieben, wie Sie eine E-Mail erstellen.
 
 1. Wählen Sie in der Sitemap der modellgesteuerten App **Aktivitäten** aus.
 
-2. Wählen Sie in der Befehlsleiste **E-Mail** aus. Daraufhin wird ein neues E-Mail-Fenster geöffnet.
+2. Klicken Sie auf der Befehlsleiste auf **E-Mail**. Daraufhin wird ein neues E-Mail-Fenster geöffnet.
 
-    ![create-email](media/create-email.png "Neue E-Mail erstellen")
+    ![create-email](media/create-email.png "Verfassen einer neuen E-Mail")
 
-    Das Feld **Von** wird basierend auf dem aktuell angemeldeten Benutzer automatisch ausgefüllt.
+    Das Feld **Von** wird automatisch basierend auf dem aktuell angemeldeten Benutzer ausgewählt.
 
-3. Sie können entweder direkt eine E-Mail schreiben oder **Vorlage einfügen** auswählen, um nach einer Vorlage zu suchen und sie anzuwenden. Weitere Informationen zum Einfügen einer E-Mail-Vorlage finden Sie unter [Vorschauversion: Hinzufügen einer E-Mail-Vorlage](insert-email-template.md).
+3. Schreiben Sie Ihre E-Mail direkt im Ersteller oder wählen Sie **Vorlage einfügen** zum Suchen und Anwenden einer Vorlage. Weitere Informationen zum Einfügen einer E-Mail-Vorlage finden Sie unter [Einfügen einer E-Mail-Vorlage](insert-email-template.md).
 
 4. Wählen Sie zum Verfassen Ihrer E-Mail in einem Vollbildfenster das Erweiterungssymbol aus.
 
     ![email-expand-window](media/email-expand-window.png "E-Mail-Fenster erweitern")
 
-    Das Nachrichtenfeld enthält einen Rich-Text-Editor, mit dem Sie umfangreiche und gut formatierte Inhalte für wichtige E-Mails erstellen können. Der Editor bietet allgemeine Textverarbeitungsfunktionen wie zum Beispiel: 
+    Das Nachrichtenfeld enthält einen Rich-Text-Editor, mit dem Sie umfangreiche und gut formatierte Inhalte für wichtige E-Mails erstellen können. Der Editor enthält allgemeine Textverarbeitungsfunktionen wie: 
 
     - Kopieren der Formatierung
     - Schriftart und -größe
-    - Fett, kursiv und unterstrichen
+    - Fett, Kursiv, Unterstrichen
     - Hintergrundfarbe für Text und Textfarbe
-    - Aufzählungen und nummerierte Listen
-    - Verkleinern und Vergrößern des Einzugs
-    - Blockzitat
-    - Textausrichtung (links, zentriert und rechts)
-    - Verknüpfen und Verknüpfungen aufheben
+    - Aufzählung und nummerierte Liste
+    - Einzug verringern und vergrößern
+    - Zitatblock
+    - Textausrichtung (links, mittig und rechts ausrichten)
+    - Verknüpfen und trennen
     - Durchgestrichener Text
     - Bild
     - Textrichtung von rechts nach links und von links nach rechts
     - Rückgängig machen und Wiederholen
     - Format entfernen
-    - Tabelle
+    - Table
 
     ![email-toolbar](media/email-toolbar.png "Verwenden der Rich-Text-Editor-Funktionen")
 
-5. Wählen Sie abschließend **Senden** aus.
+5. Wählen Sie **Senden** aus, wenn Sie fertig sind.
 
 
 ### <a name="see-also"></a>Siehe auch
 
 [Einrichten von erweiterten E-Mail-Funktionen](https://docs.microsoft.com/power-platform/admin/system-settings-dialog-box-email-tab)<br>
-[Hinzufügen einer E-Mail-Vorlage](insert-email-template.md)
+[E-Mail-Vorlage einfügen](insert-email-template.md)

@@ -20,9 +20,9 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74725791"
+ms.locfileid: "3302838"
 ---
-# <a name="export-to-an-excel-pivottable"></a>Exportieren in eine Excel-PivotTable
+# <a name="export-to-an-excel-pivottable"></a>In eine Excel-PivotTable exportieren
 
 
 Sie können App-Daten in eine Office Excel-PivotTable exportieren, um Muster und Trends in Daten zu erkennen. Eine Excel-PivotTable ist eine hervorragende Möglichkeit, Ihre Daten aus der App zusammenzufassen, zu analysieren, zu untersuchen und darzustellen. Sie können bis zu 100.000 Datensätze gleichzeitig exportieren.  
@@ -37,10 +37,10 @@ Die Option zum Exportieren von Daten in eine Excel-PivotTable steht nicht für a
   
    Standardmäßig enthält die **PivotTable-Feldliste** nur Felder, die in der Liste **Spalten für Navigationssteuerung in Excel auswählen** angezeigt werden.  
   
-3. Wählen Sie **Speichern** aus, und speichern Sie die Datei im XLSX-Format. Notieren Sie sich den Speicherort der Datei.  
+3. Wählen Sie **Speichern** aus, und speichern Sie die XLSX-Datei. Notieren Sie sich den Speicherort der Datei.  
   
    > [!NOTE]
-   > Wenn Sie die Datendatei später bearbeiten möchten, empfiehlt es sich, die Datei zu speichern, bevor Sie sie öffnen. Andernfalls wird möglicherweise diese Fehlermeldung angezeigt: **Excel kann keine weiteren Dateien öffnen oder speichern, da nicht genügend Arbeitsspeicher oder Festplattenspeicherplatz vorhanden ist.**  
+   > Wenn Sie die Datendatei später bearbeiten möchten, empfiehlt es sich, die Datei zu speichern, bevor Sie sie öffnen. Andernfalls erhalten Sie möglicherweise die Fehlermeldung: **Excel kann keine weiteren Dokumente mehr öffnen, da nicht genügend Speicherplatz vorhanden ist.**  
    > 
    > So beheben Sie das Problem:  
    > 
@@ -53,15 +53,15 @@ Die Option zum Exportieren von Daten in eine Excel-PivotTable steht nicht für a
   
 4. Öffnen Sie Excel und dann die XLSX-Datei, die Sie im vorherigen Schritt gespeichert haben.  
   
-5. Wenn die Sicherheitswarnung **Externe Datenverbindungen wurden deaktiviert.** angezeigt wird, klicken Sie auf **Inhalt aktivieren**.  
+5. Wenn die Sicherheitswarnung **Externe Datenverbindungen wurden deaktiviert** angezeigt wird, wählen Sie **Inhalt aktivieren** aus.  
   
-6. Klicken Sie auf der Registerkarte **Daten** auf **Refresh from Power Apps** (Über Power Apps aktualisieren), um die Daten in der Datei zu aktualisieren.  
+6. Wählen Sie zum Aktualisieren der Daten in der Datei unter der Registerkarte **Daten** die Option **Aus Power Apps aktualisieren** aus.  
   
-7. Ziehen Sie die Felder aus der PivotTable-Feldliste auf die PivotTable. Weitere Informationen finden Sie in der Excel-Hilfe.  
+7. Ziehen Sie die Felder aus der PivotTable-Feldliste in die PivotTable. Weitere Informationen finden Sie in der Excel-Hilfe.  
   
 ## <a name="tips"></a>Tipps  
   
-- In Power Apps werden Währungswerte als Zahlen nach Excel exportiert. Lesen Sie nach dem Abschluss des Exports das Excel-Hilfethema „Anzeigen von Zahlen als Währung“, um die Daten als Währung zu formatieren.
+- In Power Apps werden Geldbeträge als Zahlen nach Excel exportiert. Lesen Sie nach dem Abschluss des Exports das Excel-Hilfethema „Anzeigen von Zahlen als Währung“, um die Daten als Währung zu formatieren.
   
 - Die Datums- und Uhrzeitwerte, die in der App angezeigt werden, werden nur als Datum angezeigt, wenn Sie die Datei nach Excel exportieren, aber die Zelle zeigt das Datum und die Uhrzeit an.  
   

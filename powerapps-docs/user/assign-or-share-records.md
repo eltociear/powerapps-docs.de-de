@@ -20,7 +20,7 @@ ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886503"
+ms.locfileid: "3303068"
 ---
 # <a name="assign-or-share-records"></a>Zuweisen oder Freigeben von Datensätzen
 
@@ -28,11 +28,11 @@ Wenn Sie möchten, dass eine andere Person in Ihrer Organisation einen Kundendat
 
 Verwenden Sie die Option **Freigeben**, wenn Sie im Besitz des Datensatzes bleiben möchten, jedoch auch eine andere Person daran arbeiten soll. 
 
-1. Wählen Sie im linken Navigationsbereich einen Datensatztyp aus, z. B. **Kontakte**.
+1. Wählen Sie im linken Navigationsbereich einen Datensatztyp aus. z. B. **Kontakte**.
 
 2. Wählen Sie aus der Liste der Datensätze den Datensatz aus, den Sie neu zuweisen möchten.  
   
-3. Wählen Sie in der Befehlsleiste **Zuweisen** aus.
+3. Klicken Sie in der Befehlsleiste auf **Zuweisen**.
 
    > [!div class="mx-imgBorder"]
    > ![Neuzuweisen eines Datensatzes](media/assign1.png "Neuzuweisen eines Datensatzes")
@@ -69,12 +69,12 @@ Verwenden Sie die erweiterte Suche, um nach Datensätzen zu suchen und diese dan
  
  Ein Administrator kann einem Benutzer den gesamten Datensatz über den Administratorbereich „Einstellung“ neu zuweisen.
  
- 1. Wechseln Sie zu **Einstellungen** > **Sicherheit**.
+ 1. Gehen Sie zu **Einstellungen** > **Sicherheit**.
  2. Wählen Sie **Benutzer** und anschließend einen Benutzernamen aus, um das Profil des Benutzers zu öffnen.
  3. Wählen Sie auf der Befehlsleiste **Datensätze neu zuweisen** aus.
  
    > [!div class="mx-imgBorder"]
-   > ![Neuzuweisen aller Datensätze](media/assign5.png "Neuzuweisen aller Datensätze")
+   > ![Alle Datensätze neu zuweisen](media/assign5.png "Alle Datensätze neu zuweisen")
    
  4. Legen Sie im Dialogfeld **Datensätze neu zuweisen** fest, wie Sie alle Datensätze neu zuweisen möchten, und wählen Sie dann **OK** aus.
  

@@ -20,11 +20,11 @@ ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/28/2020
-ms.locfileid: "76828590"
+ms.locfileid: "3303022"
 ---
-# <a name="compare-search-options-in-common-data-service"></a>Vergleich der Suchoptionen in Common Data Service
+# <a name="compare-search-options-in-common-data-service"></a>Vergleichen von Suchoptionen in Common Data Service
 
-Datensätze in Common Data Service können auf drei Arten durchsucht werden:
+Dazu gibt es drei Möglichkeiten zum Suchen von Datensätzen in Common Data Service:
 
 -   Relevanzsuche   
   
@@ -39,10 +39,10 @@ Die folgende Tabelle enthält eine kurze Gegenüberstellung der drei Optionen:
 
 |Funktionalität|[Relevanzsuche](relevance-search.md)|[Schnellsuche](quick-find.md)|[Erweiterte Suche](advanced-find.md)|  
 |-------------------|---------------------------|----------------|-------------------|  
-|Standardmäßig aktiviert?|Nein. Muss von einem Administrator manuell aktiviert werden.|Ja|Ja|  
-|Suchbereich: einzelne Entität|Nicht in einem Entitätsraster verfügbar. Die Suchergebnisse können auf der Ergebnisseite nach einer Entität gefiltert werden.|In einem Entitätsraster verfügbar.|In einem Entitätsraster verfügbar.|  
-|Suchbereich: mehrere Entitäten|Sie können beliebig viele Entitäten durchsuchen. **Hinweis**:  Sie können zwar beliebig viele Entitäten durchsuchen, vom Filter für den Datensatztyp werden jedoch nur Daten für zehn Entitäten angezeigt.|Durchsucht bis zu zehn Entitäten (gruppiert durch eine Entität).|Keine Suche mit mehreren Entitäten verfügbar.|  
-|Suchverhalten|Sucht in sämtlichen Feldern der Entität nach Übereinstimmungen für ein beliebiges Wort aus dem Suchbegriff.|Sucht in einem einzelnen Feld einer Entität nach Übereinstimmungen für alle Wörter im Suchbegriff ohne Berücksichtigung der Wortreihenfolge im Feld.|Abfrage-Generator zum Definieren von Suchkriterien für den ausgewählten Datensatztyp. Kann auch verwendet werden, um Daten für den Export in Office Excel vorzubereiten, damit Sie sie dort analysieren, zusammenfassen oder aggregieren können. Eine weitere Möglichkeit ist die Erstellung von PivotTables, um Ihre Daten aus verschiedenen Blickwinkeln zu betrachten.|  
-|Durchsuchbare Felder|Textfelder wie einzelne Textzeilen, mehrere Textzeilen, Nachschlagefelder und Optionssätze. Die Suche in numerischen Feldern oder Datumsfeldern wird nicht unterstützt.|Alle durchsuchbaren Felder.|Alle durchsuchbaren Felder.|  
-|Suchergebnisse|Gibt die Suchergebnisse in einer einzelnen, nach Relevanz sortierten Liste zurück.|Bei einer einzelnen Entität werden die Suchergebnisse in einem Entitätsraster zurückgegeben. Bei mehreren Entitäten werden die zurückgegebenen Suchergebnisse nach Kategorien gruppiert (beispielsweise nach Konten, Kontakten oder Leads).|Gibt die Suchergebnisse des ausgewählten Datensatztyps mit den von Ihnen angegebenen Spalten in der von Ihnen konfigurierten Sortierreihenfolge zurück.|
-|Platzhalter (*)|Nachgestellter Platzhalter für Wortvervollständigung wird unterstützt.|Vorangestellter Platzhalter wird unterstützt. Nachgestellter Platzhalter wird standardmäßig hinzugefügt.|Wird nicht unterstützt.|  
+|Standardmäßig aktiviert?|Nr. Muss von einem Administrator manuell aktiviert werden.|Ja|Ja|  
+|Suchbereich: einzelne Entität|Nicht verfügbar in einem Entitätsraster. Sie können die Suchergebnisse nach einer Entität auf der Ergebnisseite filtern.|Verfügbar in einem Entitätsraster.|Verfügbar in einem Entitätsraster.|  
+|Suchbereich für mehrere Entitäten|Es gibt keine Höchstgrenze für die Anzahl der Entitäten, die Sie suchen können. **Hinweis:** Wenn keine Höchstgrenze auf der Anzahl Entitäten vorhanden ist, kann die Suche ausgeführt werden. Der Datensatzfilter zeigt nur 10 Entitäten an.|Durchsucht bis zu zehn Entitäten (gruppiert durch eine Entität).|Keine Suche mit mehreren Entitäten verfügbar.|  
+|Suchverhalten|Sucht nach Übereinstimmungen für jedes Wort im Suchbegriff in jedem Entitätsfeld.|Sucht in einem einzelnen Feld einer Entität nach Übereinstimmungen für alle Wörter im Suchbegriff ohne Berücksichtigung der Wortreihenfolge im Feld.|Abfrage-Generator zum Definieren von Suchkriterien für den ausgewählten Datensatztyp. Kann außerdem verwendet werden, um Daten für den Export nach Office Excel vorzubereiten, sodass Sie Daten analysieren, zusammenfassen oder aggregieren können, oder PivotTables erstellen, um die Daten in verschiedenen Perspektiven anzuzeigen.|  
+|Suchbare Felder|Textfelder wie einzelne Textzeilen, mehrere Textzeilen, Suchen und Optionssätze. Die Suche in numerischen Feldern oder Datumsfeldern wird nicht unterstützt.|Alle durchsuchbaren Felder.|Alle durchsuchbaren Felder.|  
+|Suchergebnisse|Gibt die Suchergebnisse nach Relevanz zurück, in einer einzelnen Liste.|Gibt die Suchergebnisse für eine einzelne Entität in einem Entitätsraster zurück. Gibt die Suchergebnisse für mehrere Entitäten nach Kategorien gruppiert zurück, beispielsweise nach Firmen, Kontakten oder Leads.|Gibt Suchergebnisse des ausgewählten Datensatztyps mit den Spalten, die Sie angegeben haben, in der Sortierreihenfolge, die Sie konfiguriert haben, zurück.|
+|Platzhalter (*)|Nachfolgender Platzhalter wird für die Wortvervollständigung unterstützt.|Vorangestellter Platzhalter wird unterstützt. Nachgestellter Platzhalter wird standardmäßig hinzugefügt.|Nicht unterstützt.|  

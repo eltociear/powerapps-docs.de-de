@@ -15,16 +15,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d2fb92fcec1ac0954eeb35e4161efd21f2ff13a1
-ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
+ms.openlocfilehash: f2ea5297a72d386d063f9876da4920c418d7585c
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223441"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332568"
 ---
 # <a name="create-edit-or-save-an-advanced-find-search"></a>Erstellen, Bearbeiten oder Speichern einer erweiterten Suche
 
 Suchen Sie die Datensätze, die Sie in Ihrer App verwenden möchten, mithilfe der Suchoption Erweiterte Suche. Sie können die Erweiterte Suche außerdem verwenden, um Daten für den Export in Office Excel vorzubereiten, damit Sie sie dort analysieren, zusammenfassen oder aggregieren können. Eine weitere Möglichkeit ist die Erstellung von PivotTables, um Ihre Daten aus verschiedenen Blickwinkeln zu betrachten.  
+
   
 1. Klicken Sie in der Befehlsleiste auf die Schaltfläche **Erweiterte Suche**.
   
@@ -34,25 +35,25 @@ Suchen Sie die Datensätze, die Sie in Ihrer App verwenden möchten, mithilfe de
   
    2.  Klicken Sie auf **Auswählen**, um Suchkriterien zu definieren: ein Feld (beispielsweise „Kontoname“ oder „Stadt“), den relationalen Abfrageoperator (Teil eines Ausdrucks, wie etwa „ist gleich“ oder „enthält“, der definiert, wie ein bestimmtes Attribut mit einem Wert verglichen werden soll) und die zu suchenden Werte (z. B. „Seattle“ oder „E-Mail“).  
   
-       Sie können Felder aus dem aktuellen Datensatztyp oder aus verknüpften Datensätzen auswählen. Beispielsweise kann ein Konto zahlreiche verknüpfte Kontaktdatensätze aufweisen.  
+       Sie können Felder aus dem aktuellen Datensatztyp oder aus verknüpften Datensätzen auswählen. Eine Firma kann beispielsweise über viele verknüpfte Kontaktdatensätze verfügen.  
   
-       Unten in der Liste **Auswählen** werden im Abschnitt **Verwandt** verknüpfte Datensatztypen angezeigt. Beispielsweise weisen die meisten Datensatztypen einen verknüpften Datensatztyp „Notes“ (Anmerkungen) auf. Um Felder aus einem verknüpften Datensatztyp auszuwählen, wählen Sie ein Feld aus, dann wird ein neuer Link **Auswählen** angezeigt.  
+       Unten in der Liste **Auswählen** werden im Abschnitt **Verknüpft** zugehörige Datensatztypen angezeigt. Beispielsweise verfügen die meisten Datensatztypen über einen verknüpften Datensatz vom Typ Hinweise. Um Felder aus einem verknüpften Datensatztyp auszuwählen, wählen Sie ein Feld aus, dann wird ein neuer Link **Auswählen** angezeigt.  
 
-3. Geben Sie die Spalten an, die in den Suchergebnissen enthalten sein sollen.  
+3. Geben Sie die Spalten an, die in die Suchergebnisse einbezogen werden sollen.  
   
-   1.  Wählen Sie **Spalten bearbeiten** und dann **Spalten hinzufügen** aus.  
+   1.  Wählen Sie **Spalten bearbeiten**, und wählen Sie dann **Spalten hinzufügen**.  
   
-   2.  Wählen Sie den Datensatztyp aus, der die Spalten enthält, die Sie hinzufügen möchten.  
+   2.  Wählen Sie den Datensatztyp aus, der die hinzuzufügenden Spalten enthält.  
   
-   3.  Wählen Sie die hinzuzufügenden Spalten und dann **OK**aus.  
+   3.  Wählen Sie die Spalten aus, die Sie hinzufügen möchten, und wählen Sie dann **OK**.  
   
 4. Geben Sie die Sortierreihenfolge an.  
   
-   1.  Wählen Sie **Spalten bearbeiten** aus.  
+   1.  Wählen Sie **Spalten bearbeiten**.  
   
-   2.  Wählen Sie **Sortierung konfigurieren** aus.  
+   2.  Wählen Sie **Sortierung konfigurieren**.  
   
-   3.  Geben Sie die Spalte an, nach der sortiert werden soll, geben Sie die Sortierreihenfolge an, und wählen Sie dann **OK** aus.  
+   3.  Geben Sie die zu sortierende Spalte an, geben Sie die Sortierreihenfolge an und wählen Sie dann **OK**.  
   
    4.  Wählen Sie **OK** aus.  
   

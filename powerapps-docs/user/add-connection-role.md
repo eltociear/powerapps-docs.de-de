@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 4552c874ca6be72d37465abd2492a64979aba865
-ms.sourcegitcommit: 5ec4cab1dd934446ec57c320a375e577560ac88a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239576"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3302516"
 ---
 # <a name="add-a-connection-role-to-link-records-to-each-other"></a>Hinzufügen einer Verbindungsrolle zum Verknüpfen von Datensätzen miteinander
 
@@ -30,13 +30,13 @@ Es ist eine schnelle Möglichkeit, um mehrere Verbindungen und Rollen für einen
 
 Verbindungsrollen werden direkt einer Verbindung zugeordnet. Um eine Verbindungsrolle zu verwenden, müssen Sie zuerst eine Verbindung mit Ihrem Datensatz hinzufügen.
 
-Bevor Sie Verbindungsrollen hinzufügen können, muss dies von Ihrem Administrator aktiviert werden. Weitere Informationen finden Sie unter [Konfigurieren von Verbindungsrollen](https://docs.microsoft.com/powerapps/maker/common-data-service/configure-connection-roles).
+Bevor Sie Verbindungsrollen hinzufügen können, muss diese von Ihrem Administrator aktiviert werden. Weitere Informationen finden Sie unter [Verbindungsrollen konfigurieren](https://docs.microsoft.com/powerapps/maker/common-data-service/configure-connection-roles).
 
 1. Wählen Sie zum Hinzufügen oder Verwalten von Verbindungen den Datensatz, z. B. eine Verkaufschance, aus, den Sie verwalten möchten.  
 2. Wählen Sie die Registerkarte **Verknüpft** und anschließend **Verbindung** aus. Dadurch wird das Verbindungsraster mit der Liste der Verbindungen für den Datensatz geöffnet.
 
     > [!div class="mx-imgBorder"]
-    > ![Neue Verbindungsrolle hinzufügen](media/connection1.png "Neue Verbindungsrolle hinzufügen") 
+    > ![Hinzufügen einer neuen Verbindungsrolle](media/connection1.png "Hinzufügen einer neuen Verbindungsrolle") 
 
 3. Wählen Sie **Verbinden** und anschließend **An anderen** oder **An mich** aus.
 
@@ -56,7 +56,7 @@ Bevor Sie Verbindungsrollen hinzufügen können, muss dies von Ihrem Administrat
 6. Um eine neue Verbindungsrolle zu erstellen, geben Sie auf dem Bildschirm **New Connection Role** (Neue Verbindungsrolle) einen Namen ein, und wählen Sie dann eine **Kategorie** aus.
 
     > [!div class="mx-imgBorder"]
-    >  ![Verbindungsrollenkategorie hinzufügen](media/connection4.png "Verbindungsrollenkategorie hinzufügen") 
+    >  ![Eine Verbindungsrollenkategorie hinzufügen](media/connection4.png "Eine Verbindungsrollenkategorie hinzufügen") 
 
 7. Wählen Sie **Speichern und schließen** aus, wenn der Vorgang abgeschlossen ist.
 
