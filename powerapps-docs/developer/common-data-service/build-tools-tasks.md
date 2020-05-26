@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 20c4dfe96f7293f9a00a97867beda7ac8a0f4b41
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 7f2d41bcc951b2044f2a70b62e683525e98e5bcc
+ms.sourcegitcommit: 8e76afb331745f1da929a39e831634680dfa6008
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156413"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346863"
 ---
 # <a name="build-tools-tasks"></a>Aufgaben von Buildtools
 
@@ -37,7 +37,7 @@ Die Power Apps-Prüfungsaufgabe führt eine statische Analyseprüfung Ihrer Lös
 
 | **Parameter** | **Beschreibung** |
 | --- | --- |
-| Power Apps-Prüfungsdienst  |   Wählen Sie den Dienstendpunkt für die Power Apps-Prüfung aus. Der Dienstendpunkt wird unter **Dienstverbindungen** in **Projekteinstellungen** definiert.  **HINWEIS:** Die Dienstverbindungsart, die nur für diese bestimmte Aufgabe verwendet werden muss, lautet „Power Apps-Prüfung“. Dies ist eine Dienstprinzipalverbindung. Weitere Informationen dazu, wie Sie Dienstprinzipale konfigurieren, bevor Sie die Aufgabe verwenden können, finden Sie [hier](https://aka.ms/buildtoolsconnection).  |
+| Power Apps-Prüfungsdienst  |   Wählen Sie den Dienstendpunkt für die Power Apps-Prüfung aus. Der Dienstendpunkt wird unter **Dienstverbindungen** in **Projekteinstellungen** definiert.  **HINWEIS:** Die Dienstverbindungsart, die nur für diese bestimmte Aufgabe verwendet werden muss, lautet „Power Apps-Prüfung“. Dies ist eine Dienstprinzipalverbindung. Weitere Informationen dazu, wie Sie Dienstprinzipale konfigurieren, bevor Sie die Aufgabe verwenden können, finden Sie [hier](build-tools-tasks#configure-service-connection-for-power-apps-checker).  |
 | Speicherort der zu analysierenden Datei  | Geben Sie an, ob auf eine lokale Datei oder eine Referenzdatei über eine SAS-URL verwiesen wird. 
 | Lokale zu analysierende Datei/SAS-URI für zu analysierende Datei |  Geben Sie den Pfad und Dateinamen der zu analysierenden ZIP-Dateien an.   Platzhalter können verwendet werden. Beispielsweise **\*.zip für alle Dateien in allen Unterordnern. Sie können die Dateien direkt angeben oder einen Verweis auf eine Datei über eine SAS-URI.   |
 |  Regelsatz |   Geben Sie an, welcher Regelsatz angewendet werden soll. Die folgenden zwei Regelsätze stehen zur Verfügung: **Lösungsprüfung:** Dies ist derselbe Regelsatz, der über das [Hersteller-Portal](https://make.powerapps.com/) ausgeführt wird.    **AppSource:** Dies ist der erweiterte Regelsatz, der verwendet wird, um eine Anwendung zu zertifizieren, bevor sie in [AppSource](https://appsource.microsoft.com/) veröffentlicht werden kann.   |

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cdc3a2c20f8459787e01001e070ed01b684ceb83
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 3ba1bdb37eef71584a2992855c61f0ac0799e2b9
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155170"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341367"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>Verwenden Sie mehrinstanzenfähige Server-zu-Server-Authentifizierung
 
@@ -209,7 +209,7 @@ In diesem Szenario kann jeder Common Data Service Mandant Ihre mögliche mehrins
   
   Informationen zum Erstellen einer Common Data Service-Lösung, finden Sie in den folgenden Themen:
   
-- [Verwendung von Lösungen für die Anpassungen](../../maker/common-data-service/use-solutions-for-your-customizations.md)  
+- [Verwendung von Lösungen für die Anpassungen](/power-platform/alm/use-solutions-for-your-customizations)  
 - [Packen und Verteilen von Erweiterungen mithilfe von Lösungen](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)  
   
   Allerdings kann der Anwendungsbenutzer nicht einer Lösung hinzugefügt werden. Sie müssen daher eine Möglichkeit bereitstellen, die Anwendungsbenutzer erstellen und diese den benutzerdefinierten Sicherheitsrollen zuordnen.  

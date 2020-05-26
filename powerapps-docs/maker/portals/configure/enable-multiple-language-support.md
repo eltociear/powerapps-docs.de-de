@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 04/30/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a91ffe1c00b7dbcc40b786731e956bfdd8fc6d94
-ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
+ms.openlocfilehash: 3af930d100dca4920c3bcb832aefc0f06c93e612
+ms.sourcegitcommit: 8e76afb331745f1da929a39e831634680dfa6008
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012723"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346977"
 ---
 # <a name="enable-multiple-language-portal-support"></a>Aktivieren von Mehrsprachenportalunterstützung
 Unternehmen sind nicht auf eine Region oder eine Sprache beschränkt. Ein einzelnes Portal kann Inhalte in mehreren Sprachen anzeigen, um Kunden auf der ganzen Welt zu erreichen. Der Inhalt des Portals kann in mehreren Sprachen unter Beibehaltung einer einzelnen Inhaltshierarchie übersetzt werden.
@@ -23,7 +23,7 @@ Unternehmen sind nicht auf eine Region oder eine Sprache beschränkt. Ein einzel
 
 Um mehrere Sprachen für ein Portal zu aktivieren, folgenden Sie diesen Schritten:
 
-1. [Aktivieren Sie Sprachen in einer Common Data Service-Umgebung.](https://technet.microsoft.com/library/dn832148.aspx)  
+1. [Aktivieren Sie Sprachen in einer Common Data Service-Umgebung.](https://docs.microsoft.com/power-platform/admin/enable-languages)  
 2. Wechseln Sie zu **Portale** > **Website** > **Websites**.
 3. Wählen Sie die Website aus, der Sprachensupport hinzugefügt werden soll.
 4. Im Abschnitt **Unterstützte Sprachen** auf der Registerkarte **Allgemein**, wählen Sie **Neue Website-Sprache**.

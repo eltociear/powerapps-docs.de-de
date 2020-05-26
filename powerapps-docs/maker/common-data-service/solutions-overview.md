@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 1838f1303d706ab7b9c2ec7356a4ad447a6d0d23
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125439"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341385"
 ---
 # <a name="solutions-overview"></a>Überblick über Lösungen  
 
-  In Power Apps werden Lösungen genutzt, um Anwendungen und Komponenten von einer Umgebung in eine andere zu transportieren oder eine Reihe von Anpassungen auf bestehende Anwendungen anzuwenden. Eine Lösung kann eine oder mehrere Anwendungen sowie andere Komponenten wie Sitemaps, Entitäten, Prozesse, Webressourcen, Optionssets und mehr enthalten.  Eine Lösung erhalten Sie bei [AppSource](https://appsource.microsoft.com/) oder bei einem unabhängigen Softwareanbieter (ISV).
+In Power Apps werden Lösungen genutzt, um Anwendungen und Komponenten von einer Umgebung in eine andere zu transportieren oder eine Reihe von Anpassungen auf bestehende Anwendungen anzuwenden. Eine Lösung kann eine oder mehrere Anwendungen sowie andere Komponenten wie Sitemaps, Entitäten, Prozesse, Webressourcen, Optionssets und mehr enthalten.  Eine Lösung erhalten Sie bei [AppSource](https://appsource.microsoft.com/) oder bei einem unabhängigen Softwareanbieter (ISV).
   
-Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.microsoft.com/download/details.aspx?id=57777)  
+Weitere Informationen finden Sie in [Lösungskonzepte](/power-platform/alm/solution-concepts-alm).
   
 > [!NOTE]
 >  Als ISV, der eine App erstellt, die Sie verteilen werden, müssen Sie Lösungen verwenden. Weitere Informationen zum Verwenden von Lösungen finden Sie unter [Entwicklerhandbuch: Einführung in Lösungen](/powerapps/developer/common-data-service/introduction-solutions).  
@@ -46,7 +46,17 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 > [!div class="mx-imgBorder"] 
 > ![Komponenten in Lösung](media/components-in-solution.png "Komponenten in Lösung") 
 
-Eine Liste der Komponententypen, die zu einer beliebigen Lösung hinzugefügt werden können, finden Sie unter [ComponentType-Optionen](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options).
+Eine Liste der Komponententypen, die zu einer beliebigen Lösung hinzugefügt werden können, finden Sie unter [ComponentType-Optionen](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options). 
+
+Weitere Informationen zu Lösungen finden Sie in diesen Artikeln: 
+- [Lösungskonzepte](/power-platform/alm/solution-concepts-alm)
+- [Lösungsebenen](/power-platform/alm/solution-layers-alm)
+- [Verstehen, wie verwaltete Lösungen zusammengeführt werden](/power-platform/alm/how-managed-solutions-merged)
+- [Lösung zum Anpassen verwenden](/power-platform/alm/use-solutions-for-your-customizations)
+- [Verwaltete Eigenschaften](/power-platform/alm/managed-properties-alm)
+- [Segmentierte Lösungen verwenden](/power-platform/alm/segmented-solutions-alm)
+- [Eine Lösung aktualisieren](/power-platform/alm/update-solutions-alm)
+
 
 <!-- The following is a list of components that you can view in a solution:  
   
@@ -119,59 +129,60 @@ Eine Liste der Komponententypen, die zu einer beliebigen Lösung hinzugefügt we
  Einige Komponenten werden in anderen Komponenten geschachtelt. Zum Beispiel enthält eine Entität Formulare, Ansichten, Diagramme, Felder, Entitätsbeziehungen, Nachrichten und Geschäftsregeln. Jede dieser Komponenten erfordert eine Entität. Ein Feld kann nicht außerhalb einer Entität existieren. Wir sprechen davon, dass das Feld von der Entität abhängt. Es gibt tatsächlich zweimal so viele Arten von Komponenten wie in der vorherigen Liste angegeben, die meisten davon sind jedoch nicht in anderen Komponenten geschachtelt und sind in der Anwendung nicht sichtbar.  
   
  Der Zweck von Komponenten besteht darin, alle Einschränkungen hinsichtlich der Anpassbarkeit mit verwalteten Eigenschaften, und alle Abhängigkeiten nachzuverfolgen, sodass sie exportiert, importiert und (in verwalteten Lösungen) restlos gelöscht werden können.  
-  
+
+<!--  
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
-## <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen  
- Es gibt **verwaltete** und **nicht verwaltete** Lösungen. Eine **verwaltete** Lösung kann nicht geändert werden und kann nach dem Import deinstalliert werden. Alle Komponenten dieser Lösung werden durch die Deinstallation der Lösung gelöscht.  
+## Managed and unmanaged solutions  
+ There are **managed** and **unmanaged** solutions. A **managed** solution cannot be modified and can be uninstalled after it is imported. All the components of that solution are deleted by uninstalling the solution.  
   
- Wenn Sie eine **nicht verwaltete** Lösung importieren, fügen Sie alle Komponenten dieser Lösung der Umgebung hinzu. Sie können die Komponenten nicht löschen, indem Sie die Lösung deinstallieren.  
+ When you import an **unmanaged** solution, you add all the components of that solution into your environment. You can’t delete the components by uninstalling the solution.  
   
- Wenn Sie eine **nicht verwaltete** Lösung importieren, die bereits von Ihnen angepasste Komponenten enthält, werden Ihre Anpassungen von den Anpassungen in der importierten nicht verwalteten Lösung überschrieben. Sie können dies nicht rückgängig machen.  
+ When you import an **unmanaged** solution that contains components that you have already customized, your customizations will be overwritten by the customizations in the imported unmanaged solution. You can’t undo this.  
   
 > [!IMPORTANT]
->  Installieren Sie eine nicht verwaltete Lösung nur, wenn Sie alle Komponenten Ihrer Umgebung hinzufügen wollen und alle vorhandenen Anpassungen überschrieben werden sollen.  
+>  Install an unmanaged solution only if you want to add all the components to your environment and overwrite any existing customizations.  
   
- Selbst wenn Sie Ihre Apps oder Anpassungen nicht verteilen wollen, sollten Sie eine nicht verwaltete Lösung so erstellen und verwenden, dass sie über eine separate Ansicht verfügt, die nur die Teile der Anwendung enthält, die Sie angepasst haben. Wenn Sie irgend etwas anpassen, fügen Sie es einfach der nicht verwalteten Lösung hinzu, die Sie erstellt haben.  
+ Even if you don’t plan on distributing your apps or customizations, you may want to create and use an unmanaged solution to have a separate view that only includes those parts of the application that you have customized. Whenever you customize something, just add it to the unmanaged solution that you created.  
   
- Zur Erstellung einer **verwalteten** Lösung wählen Sie die Option **Als verwaltet** aus, wenn Sie die Lösung exportieren. Wenn Sie eine verwaltete Lösung erstellen, können Sie sie nicht wieder in die Umgebung importieren, die Sie für die Erstellung verwendet haben. Sie können sie nur in eine andere Umgebung importieren werden.  
+ To create a **managed** solution, you choose the **As managed** option when you export the solution. If you create a managed solution, you can’t import it back into the same environment you used to create it. You can only import it into a different environment.  
   
 <a name="BKMK_HowSolutionsAreApplied"></a>   
-### <a name="how-solutions-are-applied"></a>Wie Lösungen angewendet werden  
- Alle Lösungen werden als Ebenen evaluiert, um zu bestimmen, was Ihre App tatsächlich tun wird. Das folgende Diagramm zeigt, wie verwaltete und nicht verwaltete Lösungen evaluiert werden, und wie Änderungen an ihnen in Ihrer Umgebung erscheinen.  
+### How solutions are applied  
+ All solutions are evaluated as layers to determine what your app will actually do. The following diagram shows how managed and unmanaged solutions are evaluated and how changes in them will appear in your environment.  
   
- ![Lösungsebenen](media/solution-layering.png "Lösungsebenen")  
+ ![Solution layering](media/solution-layering.png "Solution layering")  
   
- Von unten nach oben:  
+ Starting from the bottom and working up to top:  
   
- **Systemlösung**  
- Die ist Systemlösung entspricht einer verwalteten Lösung, die jede Umgebung hat. Die Systemlösung ist die Definition aller direkt einsetzbaren Komponenten in dem System.  
+ **System Solution**  
+ The system solution is like a managed solution that every environment has. The system solution is the definition of all the out-of-the box components in the system.  
   
- **Verwaltete Lösungen**  
- Verwaltete Lösungen können die Systemlösungskomponenten ändern und neue hinzufügen. Wenn mehrere verwaltete Lösungen installiert sind, wird die erste unter den später installierten verwalteten Lösungen installiert. Dies bedeutet, dass die zweite installierte Lösung die zuvor installierte anpassen kann. Wenn die Definitionen zweier verwalteter Lösungen Konflikte haben, ist die allgemeine Regel, dass die letzte den Vorzug hat. Wenn Sie eine verwaltete Lösung deinstallieren, wird die verwaltete Lösung darunter wirksam. Wenn Sie die verwaltete Lösung deinstallieren, wird das innerhalb der Systemlösung definierte Standardverhalten angewendet.  
+ **Managed Solutions**  
+ Managed solutions can modify the system solution components and add new components. If multiple managed solutions are installed, the first one installed is below the managed solution installed later. This means that the second solution installed can customize the one installed before it. When two managed solutions have conflicting definitions, the general rule is “Last one wins”. If you uninstall a managed solution, the managed solution below it takes effect. If you uninstall all managed solution, the default behavior defined within the system solution is applied.  
   
- **Nicht verwaltete Anpassungen**  
- Nicht verwaltete Anpassungen sind alle Änderungen, die Sie an Ihrer Umgebung durch eine nicht verwaltete Lösung vornehmen. Die Systemlösung definiert, was Sie mit verwalteten Eigenschaften anpassen können und was nicht. Herausgeber von verwalteten Lösungen haben dieselbe Möglichkeit, Ihre Möglichkeiten zu begrenzen, Lösungskomponenten anzupassen, die sie in ihrer Lösung hinzufügen. Sie können alle Lösungskomponenten anpassen, die keine verwalteten Eigenschaften haben, die Sie an ihrer Anpassung hindern.  
+ **Unmanaged Customizations**  
+ Unmanaged customizations are any change you have made to your environment through an unmanaged solution. The system solution defines what you can or can't customize by using managed properties. Publishers of managed solutions have the same ability to limit your ability to customize solution components that they add in their solution. You can customize any of the solution components that do not have managed properties that prevent you from customizing them.  
   
- **Anwendungsverhalten**  
- Dies ist, was Sie in Ihrer Umgebung sehen. Die Standardsystemlösung plus alle verwalteten und nicht verwalteten Anpassungen, die Sie vorgenommen haben.  
+ **Application Behavior**  
+ This is what you actually see in your environment. The default system solution plus any managed solutions, plus any unmanaged customizations you have applied.  
   
 <a name="BKMK_ManagedProperties"></a>   
-## <a name="managed-properties"></a>Verwaltete Eigenschaften  
- Einige Komponenten können nicht angepasst werden. Diese Komponenten in der Systemlösung verfügen über Metadaten, die Sie an ihrer Anpassung hindern. Diese werden als **Verwaltete Eigenschaften** bezeichnet. Der Herausgeber einer verwalteten Lösung kann die verwalteten Eigenschaften auch so festlegen, dass Sie seine Lösung nicht in einer Weise anpassen können, die er nicht wünscht.  
+## Managed properties  
+ Some components can’t be customized. These components in the system solution have metadata that prevents you from customizing them. These are called **managed properties**. The publisher of a managed solution can also set the managed properties to prevent you from customizing their solution in ways they don’t want you to.  
   
 <a name="BKMK_Dependencies"></a>   
-## <a name="solution-dependencies"></a>Lösungsabhängigkeiten  
- Aufgrund der Schichtung verwalteter Lösungen können einige verwaltete Lösungen von Lösungskomponenten in anderen verwalteten Lösungen abhängen. Einige Lösungsherausgeber nutzen dies, um modulare Lösungen zu erstellen. Möglicherweise müssen Sie zuerst eine verwaltete "Basis"-Lösung installieren und können dann eine zweite verwaltete Lösung installieren, die die Komponenten in der ersten verwalteten Lösung weiter anpasst. Die zweite verwaltete Lösung hängt von den Lösungskomponenten ab, die Teil ersten Lösung sind.  
+## Solution dependencies  
+ Because of the way that managed solutions are layered, some managed solutions can be dependent on solution components in other managed solutions. Some solution publishers will take advantage of this to build solutions that are modular. You may need to install a “base” managed solution first and then you can install a second managed solution that will further customize the components in the base managed solution. The second managed solution depends on solution components that are part of the first solution.  
   
- Das System verfolgt diese Abhängigkeiten zwischen Lösungen nach. Wenn Sie versuchen, eine Lösung zu installieren, die eine nicht installierte Basislösung erfordert, können Sie dies nicht tun. Sie erhalten eine Meldung angezeigt, die besagt, dass die Lösung eine andere Lösung erfordert, die zuerst installiert werden muss. Ähnlich gilt, dass Sie aufgrund der Abhängigkeiten die Basislösung nicht deinstallieren können, solange eine Lösung, die von ihr abhängt, noch installiert ist. Sie müssen die abhängige Lösung deinstallieren, bevor Sie die Basislösung deinstallieren können.  
+ The system tracks these dependencies between solutions. If you try to install a solution that requires a base solution that isn’t installed, you won’t be able to install the solution. You will get a message saying that the solution requires another solution to be installed first. Similarly, because of the dependencies, you can’t uninstall the base solution while a solution that depends on it is still installed. You have to uninstall the dependent solution before you can uninstall the base solution.  
  
-## <a name="solution-publisher-prefix"></a>Präfix des Lösungsverlegers 
+## Solution publisher prefix 
 
-Standardmäßig ist die Lösung, die Sie in Power Apps bearbeiten, die **Common Data Services Standardlösung**, die dem **Common Data Service Standardherausgeber** zugeordnet wird. Das Standardanpassungspräfix wird zufällig für diesen Herausgeber zugewiesen, und ist beispielsweise`cr8a3`. Das bedeutet, dass der Name jedes neuen Artikels der Metadaten, die für die Organisation erstellt wurden, diese Endung im Namen hat, um die Elemente eindeutig zu identifizieren. 
+By default, the solution you will work with in Power Apps will be the **Common Data Services Default Solution** which is associated with the **Common Data Service Default Publisher**. The default customization prefix will be randomly assigned for this publisher, for example it could be `cr8a3`. This means that the name of every new item of metadata created for your organization will have this prepended to the names used to uniquely identify the items. 
 
-Wir empfehlen Ihnen, das Präfix des Lösungsverlegers zu ändern, damit es aussagekräftiger wird. Weitere Informationen [Lösungsherausgeberpräfix ändern](change-solution-publisher-prefix.md)
+We recommend that you change the solution publisher prefix so that it will be more meaningful. More information: [Change the solution publisher prefix](change-solution-publisher-prefix.md) -->
   
 ### <a name="next-steps"></a>Nächste Schritte  
-[Lösungen importieren, aktualisieren und exportieren](import-update-export-solutions.md) <br/>
-[Zu einer bestimmten Lösung navigieren](navigate-specific-solution.md)
+[Lösungen in Power Apps verwenden](use-solution-explorer.md) <br/>
+
  

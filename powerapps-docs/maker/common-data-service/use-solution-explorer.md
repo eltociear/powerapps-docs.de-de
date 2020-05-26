@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c926e0fb48791879ea88c19212b30c79731cb3be
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: bb53212044c79798a124dfa74251b32ecc2f78c3
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125791"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341521"
 ---
 # <a name="use-solutions-in-power-apps"></a>Lösungen in Power Apps verwenden
 
@@ -75,7 +75,7 @@ ms.locfileid: "3125791"
 > [!div class="mx-imgBorder"]  
 > ![Hinzufügen einer vorhandenen Komponente zu einer Lösung](media/solution-add-existing-component.PNG "Hinzufügen einer vorhandenen Komponente zu einer Lösung")  
   
- Bei verwalteten Lösungen sind nur bestimmte Befehle verfügbar, und Sie sehen die unten angezeigte Message. Sie müssen es zu einer anderen nicht verwalteten Lösung hinzufügen, die Sie erstellt haben, um die Komponente anzupassen. Möglicherweise kann die Komponente nicht angepasst werden. Weitere Informationen: [Verwaltete Eigenschaften](solutions-overview.md#managed-properties)
+ Bei verwalteten Lösungen sind nur bestimmte Befehle verfügbar, und Sie sehen die unten angezeigte Message. Sie müssen es zu einer anderen nicht verwalteten Lösung hinzufügen, die Sie erstellt haben, um die Komponente anzupassen. Möglicherweise kann die Komponente nicht angepasst werden. Weitere Informationen: [Verwaltete Eigenschaften](/power-platform/alm/managed-properties-alm)
 
 > [!div class="mx-imgBorder"]  
 > ![Verwaltete Lösung](media/managed-solution.PNG "Verwaltete Lösung")  
@@ -93,12 +93,11 @@ In Power Apps können Sie den klassischen Lösungsexplorer anzeigen, indem Sie i
 
 Die folgenden Beschränkungen gelten für die Verwendung von Canvas-Apps, Flows und benutzerdefinierten Connectors in Lösungen. 
 
-- Von der Schaltfläche Canvas-App ausgelöste Flows sind in Lösungen nicht untertstützt. Erstellen Sie die App und den Flow außerhalb einer Lösung und exportieren Sie die .msapp-Datei, um Canvas-Apps mit einem eingebetteten, durch Schaltflächen ausgelösten Flow zu migrieren. 
-- Wenn eine Canvas-App in eine verwalteten Lösung gepackt wurde, kann sie in der Zielumgebung nicht bearbeitet und erneut veröffentlicht werden. Verwenden Sie nicht verwaltete Lösungen, wenn die Apps in der Zielumgebung Bearbeitung erfordern. 
 - Verbindungen erfordern die Authentifizierung und Zustimmung, was eine interaktive Benutzersitzung erfordert, und können daher nicht über Lösungen übermittelt werden. Nachdem Sie die Lösung importiert haben, geben Sie die App wieder, um die Verbindungen zu authentifizieren. Sie können die Verbindungen auch vor dem Import der Lösung in der Zielumgebung anlegen. 
+- Von der Canvas-App-Schaltfläche ausgelöste Flows müssen aus einer App erstellt werden, die sich bereits in einer Lösung befindet. Das Hinzufügen dieser Art von Flow aus externen Lösungen ist blockiert.
+  - Die App und der Flow werden derzeit nach der Bereitstellung nicht in der Zielumgebung verbunden. Verknüpfen Sie zuerst gültige Verbindungen mit dem Flow und aktivieren Sie den Flow. Bearbeiten Sie dann die App und ordnen Sie den Flow der Schaltfläche erneut zu.
 -   Canvas-Apps, die als Miteigentümer für eine Azure Active Directory (AAD)-Sicherheitsgruppe freigegeben wurden, können nicht zu Lösungen hinzugefügt werden. Heben Sie die Freigabe der App auf, bevor Sie sie zu einer Lösung hinzufügen.
--   Canvas-Apps werden nicht im klassischen Projektmappen-Explorer angezeigt. Verwenden Sie die moderne Erfahrung.
--   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in Power Apps und nicht in der Common Data Service-Datenbank verwaltet.
+-   Canvas-Apps werden nicht im klassischen Projektmappen-Explorer angezeigt. Verwenden Sie die moderne Erfahrung. Es ist nicht geplant, sie dem klassischen Projektmappen-Explorer hinzuzufügen. 
 - Datenbankvorgänge wie Sicherung, Wiederherstellung und Kopieren werden für Canvas-Apps und -Flows nicht unterstützt. Diese Vorgänge können Canvas-Apps und -Flows beschädigten.
 - Durch das Löschen einer verwalteten Lösung wird kein Rollback auf eine andere Version der Canvas-App ausgeführt. Stattdessen werden alle Versionen der App gelöscht.
 - Wenn eine Lösung importiert wird, die einen Flow enthält, werden die erforderlichen Verbindungen nicht automatisch erstellt oder zugeordnet. Der Flow muss bearbeitet werden, um feste Verbindungen sicherzustellen.

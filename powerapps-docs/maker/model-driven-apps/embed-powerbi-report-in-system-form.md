@@ -3,38 +3,28 @@ title: Einbetten eines Power BI-Berichts in ein modellgestütztes Systemformular
 ms.custom: ''
 ms.date: 03/05/2019
 ms.reviewer: matp
-ms.service: crm-online
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.service: powerapps
 ms.topic: get-started-article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- PowerApps
-ms.assetid: 99c795e0-9165-4112-85b1-6b5e1a4aa5ec
-caps.latest.revision: 1
-author: prsi-msft
-ms.author: prsi
+author: adrianorth
+ms.author: aorth
 manager: kvivek
-tags:
-- Links to topic not migrated
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ea6ed1011ce9d21c78adf6beed9a2943c9f4cd0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c31121b0de0c1256d12f6bbdbb4367d8122cab68
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860453"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341431"
 ---
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>Einbetten eines Power BI-Berichts in ein modellgestütztes Systemformular
 Sie können Power BI-Berichte in Power Apps-Modell-basierten Anwendungen verwenden, um Ihren Systemformen umfangreiche Berichte und Analysen zu liefern und Ihre Benutzer zu befähigen, mehr zu erreichen. Dadurch erhalten Sie die Möglichkeit, Daten über Systeme hinweg freizugeben und bis hin zum Kontext eines einzelnen Datensatzes anzupassen.
  
 ## <a name="prerequisites"></a>Voraussetzungen
-Das Einbetten von Power BI-Inhalt ist eine optionale Funktion und auf allen Umgebung standardmäßig deaktiviert. Sie müssen sie aktivieren, bevor Sie Power BI-Inhalt einbetten können. Weitere Informationen: [Aktivieren von Power BI-Visualisierungen in der Organisation](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
+Das Einbetten von Power BI-Inhalt ist eine optionale Funktion und auf allen Umgebung standardmäßig deaktiviert. Sie müssen sie aktivieren, bevor Sie Power BI-Inhalt einbetten können. Weitere Informationen: [Aktivieren von Power BI-Visualisierungen in der Organisation](/power-platform/admin/use-power-bi#embed--visualizations-on-personal-dashboards).
 
 Für diese Funktion muss eine Lösung exportiert, dann geändert werden, um den XML-Ausschnitt hinzuzufügen, und dann wieder zurück in die Umgebung importiert werden. Vergessen Sie nicht, die Änderungen nur über eine verwaltete Lösung in die Zielumgebung zu importieren. Siehe [Lösungen importieren, aktualisieren und exportieren](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) für Anleitungen zur Installation eines Updates für eine vorhandene verwaltete Lösung.
 
@@ -153,8 +143,8 @@ Sie können auch komplexere Filterausdrücke erstellen, indem Sie sich Beispiele
 
 ### <a name="see-also"></a>Siehe auch
 
-[Einbetten eines Power BI Dashboards in ein Power Apps modellgetriebenes persönliches Dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[Einbetten eines Power BI Dashboards in ein Power Apps modellgetriebenes persönliches Dashboard](/powerapps/user/add-powerbi-dashboards)
 
-[Verwenden Sie Power BI mit Dynamics 365 Apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
+[Verwenden Sie Power BI mit Dynamics 365 Apps](/power-platform/admin/use-power-bi)
 
 [Lösungen importieren, aktualisieren und exportieren](../common-data-service/import-update-export-solutions.md)

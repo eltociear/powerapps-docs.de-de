@@ -6,25 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/14/2019
+ms.date: 04/30/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: ae3d928a6beb05819c7c752503993a7b789a0fd7
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: ce0b60b8801873376696c446a56e28ffa69b8d80
+ms.sourcegitcommit: 8e76afb331745f1da929a39e831634680dfa6008
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2976871"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346933"
 ---
 # <a name="manage-websites"></a>Verwalten von Websites
 
-Eine Website ist die Kernentität der Portal-Anwendung. Eine Portal-Anwendung wählt einen einzelnen Website-Datensatz aus, und damit wird bestimmt, welche Portalentitäten [Webseiten](web-page.md), [Webdateien](web-files.md), [Webrollen](create-web-roles.md), [Inhaltsausschnitte](customize-content-snippets.md) usw. bei der Anwendung anwendbar sind.
+Eine Website ist die Kernentität der Portal-Anwendung. Eine Portal-Anwendung wählt einen einzelnen Website-Datensatz aus, und damit wird bestimmt, welche Portalentitäten, z. B. [Webseiten](web-page.md), [Webdateien](web-files.md), [Webrollen](create-web-roles.md) und [Inhaltsausschnitte](customize-content-snippets.md) usw. bei der Anwendung anwendbar sind.
 
 Da eine Website einen Anwendungsbereich bereitstellt, können mehrere verschiedene Portalanwendungen mit einem einzigen Unternehmen verbunden werden.
 
 > [!NOTE]
 > Die Ermittlung, an welchen Websitedatensatz eine bestimmte Portal-Anwendung gebunden wird, hängt gewöhnlich vom Namen der Website ab, der in der Konfiguration der Portalbereitstellung angegeben wird.
-Es ist jedoch auch möglich, dies durch einen URL-Pfad-Präfix (siehe die Beschreibung der übergeordneten Website und Teil-URL unter) [Website-Attribute](#website-attributes)) oder nach Domäne, mithilfe von Website-Bindungen zu steuern.
+Es ist jedoch auch möglich, dies durch Domänennamen oder Websitebindungen zu steuern.
 
 ## <a name="manage-websites"></a>Verwalten von Websites
 
@@ -46,12 +46,15 @@ Websites werden erstellt, wenn Sie ein neues Portal erstellen. Die erweiterte We
 ### <a name="website-attributes"></a>Website-Attribute
 
 |Name|Beschreibung|
-|-----|----------|
+|-|-|
 |Name|Der beschreibende Name der Website. In diesem Feld ist ein Eintrag erforderlich.|
+| Standardsprache | Standardsprache für das ausgewählte Portal. Bevor Sie die Standardsprache ändern, müssen Sie Folgendes tun: <br> - [Die Sprache in der Common Data Service-Umgebung hinzufügen](https://docs.microsoft.com/power-platform/admin/enable-languages). <br> - [Die Sprache im Bereich „Unterstützte Sprachen“](enable-multiple-language-support.md) für den Websites-Datensatz hinzufügen.
+| Besitzer  | Der Besitzerkontaktdatensatz für den ausgewählten Website-Datensatz.
 |Primärer Domänenname|Der primäre Domänenname des Portals, dem dieser Websitedatensatz hinzugefügt wird.|
-|Übergeordnete Website|Die übergeordnete Website der Website. Dieses Feld kann im Allgemeinen ignoriert werden, außer in bestimmten erweiterten Portalkonfigurationen, bei denen eine einzelne Portal-Anwendung am Anwendungsstammpfad an eine Master-Website gebunden ist, wobei mindestens eine untergeordnete Website an bestimmten Unterpfaden verfügbar ist.|
-|Teil-URL|Das URL-Stammpfadsegment für alle URLs pfadsegment URLs, die für die mit dieser Website verknüpften Portalentitäten generiert wurden.<br>Wenn beispielsweise eine Portal-Anwendung bereitgestellt wird, um am Stamm der Domäne example.com verfügbar zu sein, wird dieses Attribut über keinen Wert verfügt, wird die Start-Webseite einer Anwendungs-Webseite durch eine Anforderung an `http://example.com/` gerendert (da die Teil-URL einer Start-Webseite auf "/" festgelegt sein muss).<br>Wenn dieses Attribut auf den Wert "my-website" festgelegt wird, wird die Start-Webseite stattdessen die URL `http://example.com/my-website/` aufweisen und alle Sieten der Website verfügen über denselben "/my-website/ "Pfad-Präfix.<br>In den meisten Portalkonfigurationen kann dieses Feld ignoriert und leer gelassen werden.<br>Partielle URL-Werte werden als URL-Pfadsegmente verwendet. Daher sollten sie keine ungültigen URL-Pfadzeichen enthalten, wie "?", "#", "!", "%". Da Portal-URLs generiert werden, indem Teil-URL-Werte mit Schrägstrichen ("/") verknüpft werden, sollten sie diese Schrägstriche grundsätzlich nicht enthalten.<br>Die empfohlene Vorgehensweise ist, partielle URL-Werte auf Buchstaben, Zahlen und Bindestriche oder Unterstriche zu beschränken. Zum Beispiel: "Pressemitteilungen", "Users_Guide", "product1".|
-|||
+|Übergeordnete Website\*|Die übergeordnete Website der Website. Dieses Feld kann im Allgemeinen ignoriert werden, außer in bestimmten erweiterten Portalkonfigurationen, bei denen eine einzelne Portal-Anwendung am Anwendungsstammpfad an eine Master-Website gebunden ist, wobei mindestens eine untergeordnete Website an bestimmten Unterpfaden verfügbar ist. <br>\* Nur aus Gründen der Abwärtskompatibilität, nicht für neue oder vorhandene Portale. |
+| Kopf- und Fußzeilenvorlagen | Die [Webvorlagen für Kopf- und Fußzeilen](../liquid/store-content-web-templates.md#web-templates-as-page-templates) überschreiben globale Kopf- und Fußzeilen.
+| Unterstützte Sprachen | Die [unterstützten Sprachen](enable-multiple-language-support.md) für den ausgewählten Website-Datensatz.
 
 ### <a name="see-also"></a>Siehe auch
+
 [Websitebindungen](website-bindings.md)
