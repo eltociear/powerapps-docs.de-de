@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ed08b46825e5cbf4d4045fe95df8266d326a4a44
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: b4eda2dd6d5414a60837729a18a3ff62632033a4
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172585"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275854"
 ---
 # <a name="command-bar-or-ribbon-presentation"></a>Darstellen von Befehlsleisten und Menübändern
 
@@ -104,7 +104,7 @@ Daten, die Befehle in Common Data Service definieren, können abhängig vom Clie
   Außerdem ist bereits ein `<CrmClientTypeRule>`-Element vorhanden, aber das `Type`-Elementattribut kann nur zwischen `Web`- und `Outlook`-Clients unterscheiden. Diese Regel wertet den Dynamics 365 für Tablets-Client als auch den Webclient aus.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
  [Verfügbare Menübänder](/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365)   
  [Exportieren von Menübanddefinitionen](export-ribbon-definitions.md)   
  [Beheben von Menübandproblemen](https://support.microsoft.com/help/4552163)

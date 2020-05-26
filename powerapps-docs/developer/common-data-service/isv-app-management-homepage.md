@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7ad26853dd63163672cd3a981251a57dd7735857
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5b473b1f9eeec11e25c22202cb56e28b86dbdb55
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748277"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3261793"
 ---
 # <a name="the-home-page"></a>Die Homepage
 
@@ -41,7 +41,7 @@ Der Homepage-Übersichtsabschnitt enthält die folgenden Diagramme und Metriken.
 
 ## <a name="successful-app-package-installs-by-tenant"></a>Erfolgreiche App-Paketinstallationen nach Mandant
 
-Das erste Diagramm veranschaulicht die veröffentlichten Apps und Mandanten, in denen die App-Pakete installiert wurden, und sie werden in absteigender Reihenfolge nach der Nummer der Paketinstallation angezeigt.
+Das erste Diagramm visualisiert die veröffentlichten Apps und die Tenants, in denen die App-Pakete installiert sind, und sie werden in absteigender Reihenfolge basierend auf der Anzahl der Paketinstallationen angezeigt.
 
 Beim Hovern über eine Mandantenkachel im Diagramm werden die folgenden Informationen angezeigt:
 
@@ -76,5 +76,7 @@ Die App-Namen und -Symbole stammen von AppSource.
 ### <a name="see-also"></a>Siehe auch
 
 [Einführung in ISV Studio für die Power Platform](isv-app-management.md)  
-[App-Seite](isv-app-management-apppage.md)  
-[Mandantenseite](isv-app-management-tenantpage.md)
+[App-Seite](isv-app-management-apppage.md)<br/>  
+[Mandantenseite](isv-app-management-tenantpage.md)<br/> 
+[AppSource Checker](isv-app-management-appsource-checker.md)<br/> 
+[Zertifizierung von Konnektoren](isv-app-management-certification.md)

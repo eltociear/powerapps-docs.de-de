@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 04/27/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 18ae2abded4208a3caf2e02408c4cf0eef7af09f
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: aa5bf8a76097f1f2885487ac9550326e7e0eba23
+ms.sourcegitcommit: 8dd68565e03a4e66db1f8937630fa4c52eb93871
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978631"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "3321243"
 ---
 # <a name="set-up-power-bi-integration"></a>Power BI-Integration einrichten
 
@@ -23,10 +23,11 @@ Power BI ist eines der besten Tools zur Vermittlung von Erkenntnissen mit einfac
 > [!NOTE]
 > - Sie müssen über eine entsprechende Power BI-Lizenz verfügen.
 > - Um den Power BI Embedded-Dienst nutzen zu können, müssen Sie über eine entsprechende Power BI Embedded-Lizenz verfügen. Weitere Informationen finden Sie unter [Lizenzierung](https://docs.microsoft.com/power-bi/developer/embedded-faq#licensing).
+> - Stellen Sie sicher, dass **Inhalt in Apps einbetten** in den [Entwicklereinstellungen](https://docs.microsoft.com/power-bi/guidance/admin-tenant-settings#developer-settings) Ihres Power BI-Mandanten *Aktiviert* ist. Wenn diese Option deaktiviert ist, kann das Portal keine eingebetteten Power BI-Dashboards oder -Bericht rendern.
 
 ## <a name="enable-power-bi-visualization"></a>Power BI-Visualisierung aktivieren
 
-Wenn Sie die Power BI-Visualisierung aktivieren, können Sie Dashboards und Berichte auf Webseiten in ein Portal einbetten, indem Sie das Powerbi-Liquid-Tag verwenden.
+Wenn Sie die Power BI-Visualisierung aktivieren, können Sie Dashboards und Berichte auf Webseiten in ein Portal einbetten, indem Sie das *powerbi*-Liquid-Tag verwenden.
 
 1.  Öffnen Sie das [Admin Center für Power Apps-Portale](admin-overview.md).
 

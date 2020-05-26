@@ -3,20 +3,21 @@ title: Lernkatalog für App-Entwickler
 description: Hier finden Sie alle Trainingsoptionen für Power Apps
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 03/25/2020
+ms.date: 04/28/2020
 ms.author: v-lshann
-ms.openlocfilehash: cb3d45d16c339afea5ae92e0544e93706f6f76ba
-ms.sourcegitcommit: ca7df48f819795d28ccfcd4a862639e20a7fe8fe
+ms.openlocfilehash: 0efcfd80cec71fb3dc3ee507f749f56b35b78fd5
+ms.sourcegitcommit: 08184794f3438c8293b88dbbd16bfe8be4f6c229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3168755"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3321931"
 ---
 # <a name="app-maker-learning-catalog"></a>Lernkatalog für App-Entwickler
 
 Möchten Sie schnell benutzerdefinierte Geschäftsanwendungen erstellen, ohne Code schreiben zu müssen? 
 
 Der folgende Katalog ist vom Kernwissen bis zu bestimmten Domänen und vom Grundlegendsten bis zum Fortgeschrittensten organisiert. Wenn Inhalte in mehreren Formaten vorliegen, teilen wir Ihnen dies mit, damit Sie das Trainingsformat auswählen können, das Ihren Anforderungen am besten entspricht. 
+
 
 ## <a name="get-started"></a>Erste Schritte<a name="get-started"></a>
 | Inhalt   | Beschreibung  | Format  | Länge    |
@@ -25,7 +26,10 @@ Der folgende Katalog ist vom Kernwissen bis zu bestimmten Domänen und vom Grund
 | [Automatisieren eines Geschäftsprozesses mit Power Automate](https://docs.microsoft.com/learn/paths/automate-process-power-automate/)                 | Dieser Lernpfad führt Sie in Power Automate ein, zeigt Ihnen, wie Sie Workflows erstellen und wie Sie Flows verwalten.                                                                                        | Kostenloser, eigenverantwortlicher Online-Lernpfad | 3 Stunden, 11 Minuten |
 | [Tutorial: Erstellen eines Geschäftsprozessflusses, um Prozesse zu standardisieren](https://docs.microsoft.com/power-automate/create-business-process-flow) | Dieses Tutorial zeigt, wie Sie mit Power Apps einen Geschäftsprozessfluss erstellen.                                                                                                                               | Kostenloser, eigenverantwortlicher Online-Lernpfad | 14 Minuten zum Lesen |
 | [Erstellen einer Canvas-App in Power Apps](https://docs.microsoft.com/learn/paths/create-powerapps/)                                               | Möchten Sie Apps erstellen, um Ihr Unternehmen effizienter zu gestalten? Dann eignet sich dieser Pfad für Sie. Er führt Sie in Power Apps ein, hilft Ihnen beim Erstellen und Anpassen sowie beim Verwalten und Verteilen einer App. | Kostenloser, eigenverantwortlicher Online-Lernpfad | 2 Std. 11 Min.        |
-| [Erstellen einer modellgesteuerten App in Power Apps](https://docs.microsoft.com/learn/paths/create-app-models-business-processes/)             | Dieser Lernpfad führt Sie in die Erstellung einer modellgesteuerten App in Power Apps ein, die Common Data Service nutzt.                                                                                                | Kostenloser, eigenverantwortlicher Online-Lernpfad | 2 Std. 35 Min.        |
+| [Erstellen einer modellgesteuerten App in Power Apps](https://docs.microsoft.com/learn/paths/create-app-models-business-processes/)             | In diesem Lernpfad erhalten Sie eine Einführung in das Erstellen von modellgesteuerten Apps in Power Apps, die Common Data Service verwenden.                                                                                                | Kostenloser, eigenverantwortlicher Online-Lernpfad | 2 Std. 35 Min.        |
+| [Power Apps Top-Innovationsbereiche](https://www.youtube.com/watch?v=oFuQ1R8IJis&feature=youtu.be&t=4936)|  Demo von einem Summit  |Video | 10 Minuten |
+
+
 ## <a name="app-creation"></a>App-Erstellung<a name="app-creation"></a>
 | Inhalt   | Beschreibung  | Format  | Länge    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
@@ -36,3 +40,10 @@ Der folgende Katalog ist vom Kernwissen bis zu bestimmten Domänen und vom Grund
 | [Verwenden von Grundformeln, um bessere Power Apps-Canvas-Apps zu erstellen](https://docs.microsoft.com/learn/paths/use-basic-formulas-powerapps-canvas-app/)                    | Möchten Sie Formeln verwenden, um Funktionalität und Verhalten in Ihrer Power Apps-Canvas-App zu verbessern bzw. zu ändern? Dieser Lernpfad kann Ihnen helfen, Ihr Ziel zu erreichen. | Kostenloser, eigenverantwortlicher Online-Lernpfad | 2 Std. 16 Min.       |
 | [Verwenden der Benutzeroberfläche und Steuerelemente in einer Canvas-App in Power Apps](https://docs.microsoft.com/learn/paths/ui-controls-canvas-app-powerapps/)                              | Die Benutzererfahrung der App bestimmt häufig den Erfolg Ihrer App. In diesem Lernpfad geht es darum, wie Sie die beste App-Navigation bereitstellen und die beste Benutzeroberfläche mithilfe von Themen, Symbolen, Bildern, Personalisierung, verschiedenen Formfaktoren und Steuerelementen erstellen.  | Kostenloser, eigenverantwortlicher Online-Lernpfad | 1 Std. 58 Min.       |
 | [Arbeiten mit Daten in einer Power Apps-Canvas-App](https://docs.microsoft.com/learn/paths/work-with-data-in-a-canvas-app/)                                            | Müssen Sie eine App verbinden, um auf Daten zuzugreifen? Dann eignet sich dieser Lernpfad für Sie. In diesem Lernpfad geht es darum, wie eine Verbindung zu Datenquellen hergestellt wird. Außerdem erfahren Sie, wie Sie mithilfe von Filtern, Bedingungen und anderen Funktionen Ihre Daten formen und Daten in Ihre Datenquelle schreiben.   | Kostenloser, eigenverantwortlicher Online-Lernpfad | 2 Std. 14 Min.       |
+| [AIAD-Anwendung an einem Tag](https://aka.ms/appinaday)                                                                      | Vollständiges Kursleiter- und Teilnehmerpaket zum Erlernen von Power Apps | Schulung mit Kursleiter | Arbeitstag   |
+| [Formelbezug für Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/formula-reference) | Glossar   | Kostenlose Referenz |
+
+## <a name="flow-creation"></a>Erstellen von Flüssen<a name="flow-creation"></a>
+| Inhalt   | Beschreibung  | Format  | Länge    |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
+| [Flüsse an einem Tag](https://aka.ms/flowinaday)    |Vollständiges Kursleiter- und Teilnehmerpaket zum Erlernen von Flow |Kostenloser, vom Kursleiter geleiteter Workshop| Arbeitstag |

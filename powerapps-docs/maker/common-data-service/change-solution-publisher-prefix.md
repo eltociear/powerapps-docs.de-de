@@ -20,33 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c8d16a0c8451abc769990dbd88e6ad7f1e7846a5
-ms.sourcegitcommit: c9c1c78dadc92913558dab44af0890e90e2adcd0
+ms.openlocfilehash: 516f4a35cf7d31c45df011b7685ade1526246582
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3088579"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341273"
 ---
 # <a name="solution-publisher-overview"></a>Lösungsherausgeber Übersicht
 
 Jede App, die Sie erstellen, ist Teil einer Lösung. Jede Lösung hat einen Herausgeber. Sie geben den Herausgeber an, wenn Sie eine Lösung erstellen. 
 
-> [!div class="mx-imgBorder"] 
-> <img src="media/solution-publisher-select.png" alt="Select solution publisher" height="731" width="416">
+Der Herausgeber der Lösung gibt an, wer die App entwickelt hat. Aus diesem Grund sollten Sie einen aussagekräftigen Lösungsherausgeber anlegen. Sie können den Lösungsherausgeber für eine Lösung anzeigen, indem Sie **Einstellungen** aus dem Bereich **Lösungen** in Power Apps wählen.
 
-Der Herausgeber der Lösung gibt an, wer die App entwickelt hat. Aus diesem Grund sollten Sie einen aussagekräftigen Solution Publisher anlegen. Sie können den Lösungsherausgeber für eine Lösung anzeigen, indem Sie **Einstellungen** aus dem Bereich **Lösungen** in Power Apps wählen.
-
-## <a name="solution-publisher-prefix"></a>Präfix des Lösungsverlegers
-Ein Lösungsherausgeber enthält ein Präfix. Das Präfix kann helfen, den für die Komponente zuständigen Herausgeber zu bestimmen. Beispielsweise enthält die hier angezeigte *Contoso-Lösung* ein Lösungsherausgeber-Präfix, das *contoso* lautet. 
-
-> [!div class="mx-imgBorder"] 
-> ![Fundraiser-Lösungsherausgeberpräfix](media/publisher-prefix.png)
-
-> [!NOTE]
-> Wenn Sie ein Lösungsherausgeberpräfix ändern, sollten Sie diese Schritte ausführen, bevor Sie neue Metadatenelemente erstellen. Sie können die Namen von Metadaten-Elementen ändern. 
-
-## <a name="common-data-services-default-solution"></a>Common Data Services Standardlösung
-Die Standardlösung in Power Apps ist die Common Data Services Standardlösung, die mit dem Common Data Service Standard-Publisher verbunden ist. Das Standardverlegerpräfix wird zufällig für diesen Herausgeber zugewiesen, und lautet beispielsweise *cr8a3*. Das bedeutet, dass der Name jedes neuen Artikels der Metadaten in der Standardlösung, die für die Organisation erstellt wurden, diese Endung im Namen hat, um die Elemente eindeutig zu identifizieren. Wenn Sie eine neue Entität mit Namen *Animal* erstellen, wäre der eindeutige Name, der von Common Data Service verwendet wird *cr8a3_animal*. Dasselbe gilt für alle neuen Felder (Attribute), Beziehungen oder optionset Optionen. Wenn Sie die Standardlösung anpassen, sollten Sie das Publisher-Präfix ändern. 
+Weitere Informationen über den Lösungsherausgeber finden Sie unter [Lösungsherausgeber](/power-platform/alm/solution-concepts-alm#solution-publisher).
 
 ## <a name="create-a-solution-publisher"></a>Erstellen eines Lösungsherausgebers
 1.  Wählen Sie im Portal Power Apps die Option **Lösungen**. 

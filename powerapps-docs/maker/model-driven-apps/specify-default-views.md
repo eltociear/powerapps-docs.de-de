@@ -2,7 +2,7 @@
 title: Festlegen einer modellgesteuerten App-Standardansicht in Power Apps | Microsoft-Dokumentation
 description: Informationen zum Angeben einer Standardansicht
 ms.custom: ''
-ms.date: 06/12/2018
+ms.date: 03/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 08050d002f9c8b17ab63516b440ec3e26d6f3955
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2742ba8b34717cc6ed137e71e225ceb35bf87d63
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862750"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285694"
 ---
 # <a name="specify-a-model-driven-app-default-view"></a>Festlegen einer modellgesteuerten App-Standardansicht
 
@@ -35,7 +35,16 @@ ms.locfileid: "2862750"
 
 Außer wenn ein Benutzer eine andere Ansicht in Ihrer App als persönlichen Standard „angeheftet” hat, sehen Sie die Standardansicht, die Sie als App-Hersteller angeben. Sie können jede der öffentlichen Ansichten als Standardansicht für eine Entität festlegen.  
   
-## <a name="set-the-default-view-for-an-entity"></a>Festlegen der Standardansicht für eine Entität  
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+
+2.  Erweitern Sie **Daten**, wählen Sie **Entitäten** und dann die gewünschte Entität aus und wählen Sie die dann die Registerkarte **Ansichten** aus.
+
+3.  Wählen Sie neben der gewünschten Ansicht **Weitere Befehle** ![Schaltfläche „Weitere Befehle“](media/more-commands.gif "Schaltfläche „Weitere Befehle“ für Formulare") und dann **Als Standardansicht festlegen** aus. Sie können auch in der Menüleiste **Als Standardansicht festlegen** auswählen.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Als Standard festlegen](media/set-as-default-menu-maker.png)
+
+## <a name="set-the-default-view-for-an-entity-in-solution-explorer"></a>Standardansicht für eine Entität im Projektmappen-Explorer festlegen 
   
 1.  Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer), erweitern Sie **Entitäten**, wählen Sie die gewünschte Entität und dann **Ansichten** aus.    
   

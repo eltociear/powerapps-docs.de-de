@@ -2,14 +2,10 @@
 title: Anzeigen oder Herunterladen von Entwicklerressourcen für Power Apps und Common Data Service | MicrosoftDocs
 description: Finden Sie Entwicklerressourcen und Service-Endpunkt-URLs für Power Apps und Common Data Service.
 keywords: ''
-ms.date: 06/06/2018
+ms.date: 04/09/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
 ms.assetid: e200d242-ff3f-48e5-af32-aed050e02441
 author: Mattp123
 ms.author: matp
@@ -18,16 +14,16 @@ ms.reviewer: pehecke
 ms.suite: ''
 ms.tgt_pltfrm: ''
 search.audienceType:
-- maker
+- developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 71bbb3d4b17d518e251ccedb1d2e8244d011853e
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: bd3b907411d0e43b572908204aeff9c64069ed15
+ms.sourcegitcommit: cbaf5ba8b6435796a538ece2da5cc172c0781fad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155154"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254400"
 ---
 # <a name="view-or-download-developer-resources"></a>Anzeigen oder Herunterladen von Entwicklerressourcen
 
@@ -35,11 +31,21 @@ Diese Seite bietet Ressourcen für Entwickler und Informationen über die spezif
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>Zeigen Sie die Entwicklerressourceseite für Ihre Umgebung an
 
-1. Wählen Sie im Portal Power Apps die Schaltfläche ![Einstellungsschaltfläche](../../administrator/media/settings-button-nav-bar.png) Einstellungen und wählen Sie **Erweiterte Anpassungen**.
+1. Melden Sie sich bei [Power Apps](https://make.powerapps.com) an und wählen Sie Ihre Umgebung in der oberen rechten Ecke aus.
+
+1. Wählen Sie in der oberen rechten Ecke die Schaltfläche **Einstellungen** aus und wählen Sie **Erweiterte Einstellungen** aus.
 
     ![Erweiterte Anpassungen](media/advanced-customizations-menu.png)
 
-1. Innerhalb des Bereichs **Erweiterte Anpassungen** wählen Sie den Link **Entwicklerressourcen** aus:<br />![Entwicklerressourcen-Link](media/developer-resources-link.png)
+1. Wählen Sie auf der Seite **Einstellungen** den Dropdownpfeil neben **Einstellungen** aus und wählen Sie **Anpassungen** aus.
+
+    ![Anpassungen auswählen](media/dev-customization.png)
+
+1. Wählen Sie auf der Seite **Anpassungen** die Option **Entwicklerressourcen** aus, um die Seite mit Ressourcen und Entwicklern anzuzeigen.
+
+    ![Entwicklerressourcenseite](media/developer-resources-page.png)
+
+In den folgenden Abschnitten werden alle Informationen erläutert, die auf der Entwicklerressourcenseite verfügbar sind.
 
 ## <a name="getting-started"></a>Erste Schritte 
 
@@ -50,9 +56,9 @@ Dieser Abschnitt enthält Links für Entwickler zum Finden von Ressourcen. Die f
 |---------|---------|
 |[Developer Center](https://go.microsoft.com/fwlink/?LinkId=551006)|Der zentrale Einstieg in die Dokumentation für Entwickler.|
 |[Entwicklerforen](https://go.microsoft.com/fwlink/?LinkId=550993)|Tauschen Sie Fragen und Antworten mit anderen Entwicklern aus.|
-|[NuGetPakete](https://go.microsoft.com/fwlink/?LinkId=550994)|Finden Sie NuGet-Pakete, um SDK-Assemblies zu Ihren Projekten hinzuzufügen.|
-|[Tools herunterladen](https://go.microsoft.com/fwlink/?LinkID=512122)|Tools, die Sie benötigen, können Sie unter NuGet herunterladen. Verwenden Sie das PowerShell-Skript auf dieser Seite, um die neuesten Versionen zu erhalten.|
-|[Beispielcode](https://go.microsoft.com/fwlink/?LinkId=553007)|Eine Liste der verfügbaren Beispiele.|
+|[SDK NuGet-Pakete](https://go.microsoft.com/fwlink/?LinkId=550994)|Finden Sie NuGet-Pakete, um SDK-Assemblies zu Ihren Projekten hinzuzufügen.|
+|SDK-Download|Wir liefern das SDK-Paket nicht mehr als Download im Microsoft Download Center. Stattdessen sind die SDK-Assemblys und -Tools als [NuGet-Pakete](https://go.microsoft.com/fwlink/?LinkId=550994) verfügbar. Verwenden Sie das PowerShell-Skript in diesem Artikel, um die neueste Version der SDK-Tools zu erhalten: [Tools von NuGet herunterladen](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget)|
+|[Beispielcode](https://go.microsoft.com/fwlink/?LinkId=553007)|Eine Liste der verfügbaren Codebeispiele.|
 |[Entwicklerübersicht](https://go.microsoft.com/fwlink/?LinkId=550995)|Verknüpfen Sie sich mit einem Thema, um eine Übersicht für Entwickler zu erhalten.|
 
 
@@ -81,7 +87,7 @@ Mehr Informationen: [Azure-Integration](/powerapps/developer/common-data-service
 
 Da Personen möglicherweise Zugriff auf mehrere Common Data Service-Umgebungen haben, können mit den Discovery Services die verfügbaren Umgebungen abgerufen werden, auf die eine Person basierend auf ihren Benutzerdaten zugreifen kann.
 
-### <a name="discovery-restful-api"></a>Discovery RESTful API
+### <a name="discovery-web-api"></a>Suchdienst-Web-API
 
 Dies ist die Endpunktadresse für die RESTful OData v4-Version des Suchdienstes, die für Ihre Instanz verwendet werden soll. Sie können das Servicedokument auch hier herunterladen.
 Weitere Informationen: [Dokumentation für Entwickler: Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)

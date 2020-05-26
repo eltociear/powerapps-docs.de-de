@@ -5,17 +5,17 @@ author: pankajarora-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/15/2020
+ms.date: 04/28/2020
 ms.author: pankar
 ms.reviewer: tapanm
 searchScope:
 - PowerApps
-ms.openlocfilehash: 3e77410c59eebc0008bf15a5aef3ed477669af0f
-ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
+ms.openlocfilehash: 1aea1458a0bb02915736df1a88ba79bf4252f34c
+ms.sourcegitcommit: 08184794f3438c8293b88dbbd16bfe8be4f6c229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265014"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3322107"
 ---
 # <a name="use-the-hospital-emergency-response-mobile-app"></a>Die mobile App für Notfallmaßnahmen im Krankenhaus verwenden
 
@@ -28,13 +28,13 @@ Um mit der mobilen App zu beginnen, müssen Sie Power Apps Mobile auf Ihr Gerät
 - **Herunterladen** der [**Power Apps Mobile**](https://powerapps.microsoft.com/downloads)
     - Verwenden Sie den [**App-Store**](https://aka.ms/powerappsios) für **Apple**-Geräte mit iOS wie iPhone und iPad.
     - Verwenden Sie [**Google Play**](https://aka.ms/powerappsandroid) für **Android**-Geräte.
-- Stellen Sie sicher, dass Ihre Organisation die Hospital Emergency Response-App bereitgestellt und konfiguriert hat, wie erläutert in [Bereitstellen und Konfigurieren der App](deploy-configure.md).
+- Vergewissern Sie sich, dass Ihre Organisation die mobile Notfallreaktions-App für Krankenhäuser, wie unter [Bereitstellen und Konfigurieren der App](deploy-configure.md) erläutert, bereitgestellt und konfiguriert hat.
 
 Nachdem Sie die Power Apps Mobile installiert haben, öffnen Sie die App von Ihrem Gerät aus und melden Sie sich mit Ihrem Azure Active Directory-Konto des Unternehmens an. Sie können alle Apps anzeigen, die Ihnen von Ihrer Organisation freigegeben wurden, sobald Sie sich angemeldet haben. Weitere Informationen finden Sie unter [Power Apps-Anmeldung für Mobilgeräte](https://docs.microsoft.com/powerapps/user/run-app-client#open-power-apps-and-sign-in).
 
 ## <a name="demo-use-the-hospital-emergency-response-mobile-app"></a>Demo: Die mobile App für Notfallmaßnahmen im Krankenhaus verwenden
 
-Sehen Sie sich an, wie Sie die Hospital Emergency Response-App verwenden.
+Sehen Sie sich an, wie die mobile Notfallreaktions-App für Krankenhäuser verwendet wird.
 
 <br/>
 
@@ -42,7 +42,7 @@ Sehen Sie sich an, wie Sie die Hospital Emergency Response-App verwenden.
 
 ## <a name="hospital-emergency-response-mobile-app"></a>Mobile App für Notfallmaßnahmen im Krankenhaus
 
-![Hospital Emergency Response-App](media/use/app-launcher.png)
+![Mobile App für Notfallmaßnahmen im Krankenhaus](media/use/app-launcher.png)
 
 Die Hospital Emergency Response-Mobile App ist modular aufgebaut und enthält je nach Rolle unterschiedliche Apps. Öffnen Sie die Hospital Emergency Response-Mobile App über die Power Apps Mobile, wählen Sie Ihr **Krankenhaussystem**, **Region, Einrichtung** und dann **Weiter** aus, um loszulegen.
 
@@ -53,10 +53,10 @@ Die Hospital Emergency Response-Mobile App ist modular aufgebaut und enthält je
 
 ![Komponenten der Hospital Emergency Response-Mobile App](media/use/app-components.png)
 
-Die Hospital Emergency Response-Beispiellösungs-App besteht aus mehreren Apps für eine verbesserte Benutzererfahrung. Abhängig von Ihrer Rolle sehen Sie möglicherweise eine oder mehrere Komponenten in der **Hospital Emergency Response-App**.
+Die Hospital Emergency Response-Beispiellösungs-App besteht aus mehreren Apps für eine verbesserte Benutzererfahrung. Je nach Ihrer Rolle sehen Sie in der **mobilen Notfallreaktions-App für Krankenhäuser** möglicherweise eine oder mehrere Komponenten.
 
 - **Bettenkapazität**
-    <br> Sammeln Sie Bettinformationen wie lizenzierte Betten, Intensivbetten und andere Daten zur Bettenkapazität.
+    <br> Sammeln Sie Bettinformationen wie lizenzierte Betten, Intensivbetten, Pädiatrische Intensivbetten/Akutversorgungsbetten und sonstige Daten zur Bettenkapazität.
 
 - **COVID-19-Statistiken**
     <br> Sammeln Sie den Status darüber, wie viele Patienten auf COVID-19 untersucht werden und wie viele positiv getestet wurden.
@@ -87,20 +87,22 @@ Senden Sie bettbezogene Informationen wie lizenzierte Betten, Betten auf der Int
 
 Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Response-App** gehen möchten, ohne Änderungen zu senden. Die Schaltfläche **Senden** sendet die von Ihnen eingegebenen Werte.
 
-Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **Bettkapazität** zurückzukehren, um einen weiteren Datensatz mit der Schaltfläche **Andere nachverfolgen** zu erstellen. Wählen Sie **Home** aus, um zur **Hospital Emergency Response-App** zurückzugehen.
+Wählen Sie **Home** (Start) aus, um nach dem Übermitteln der Daten zur **Notfallreaktions-App für Krankenhäuser** zurückzukehren.
 
 ### <a name="fields-and-description"></a>Felder und Beschreibung
 
 | **Optionsname**                                               | **Beschreibung**                                                                       |
 |---------------------------------------------------------------|---------------------------------------------------------------------------------------|
 | Wie viele lizenzierte Betten werden derzeit in dieser Einrichtung verwendet? | Anzahl der lizenzierten Betten, die derzeit in dieser Einrichtung verwendet werden.                            |
-| Anzahl derzeit verwendeter Intensivbetten (Luftübertragungsisolationsräume)               | Anzahl derzeit verwendeter Intensivbetten (Luftübertragungsisolationsräume).                                      |
-| Anzahl derzeit verwendeter Intensivbetten (Nicht-Luftübertragungsisolationsräume)           | Anzahl derzeit verwendeter Intensivbetten (Nicht-Luftübertragungsisolationsräume).                                  |
-| Anzahl derzeit verwendeter Akutversorgungsbetten (Luftübertragungsisolationsräume)        | Anzahl derzeit verwendeter Akutversorgungsbetten (Luftübertragungsisolationsräume).                               |
-| Anzahl derzeit verwendeter Akutversorgungsbetten (Nicht-Luftübertragungsisolationsräume)    | Anzahl derzeit verwendeter Akutversorgungsbetten (Nicht-Luftübertragungsisolationsräume).                           |
-| Ist Ihre Einrichtung mit einer voll lizenzierten Bettenkapazität besetzt?    | Ja/Nein: Wenn die Antwort Nein lautet, können Sie alle zutreffenden Gründe auswählen: <br> - Personal <br> - Platz <br> - PSA <br> - Arbeitsgerät <br> - Geringes Patientenvolumen |
-| Können Sie einen plötzlichen Anstieg über lizenzierte Betten hinaus bewältigen?              | Ja/Nein: Wenn die Antwort Nein lautet, können Sie alle zutreffenden Gründe auswählen: <br> - Personal <br> - Platz <br> - PSA <br> - Arbeitsgerät <br> - Geringes Patientenvolumen  |
-| Anzahl derzeit verwendeter Betten für plötzlichen Anstieg                         | Anzahl derzeit verwendeter Betten für plötzlichen Anstieg.                                                |
+| Anzahl der derzeit verwendeten ICU-Betten (Luftübertragungsisolationsraum)               | Anzahl der derzeit verwendeten Intensivbetten in Luftübertragungsisolationsräumen (AIIR-Raum).                                      |
+| Anzahl der derzeit verwendeten ICU-Betten (Nicht-Luftübertragungsisolationsraum)           | Anzahl derzeit verwendeter Intensivbetten (Nicht-Luftübertragungsisolationsräume).                                  |
+| Anzahl der derzeit verwendeten Akutversorgungsbetten (Luftübertragungsisolationsräume)        | Anzahl derzeit verwendeter Akutversorgungsbetten (Luftübertragungsisolationsräume).                               |
+| Anzahl der derzeit verwendeten Akutversorgungsbetten (Nicht-Luftübertragungsisolationsräume)    | Anzahl derzeit verwendeter Akutversorgungsbetten (Nicht-Luftübertragungsisolationsräume).                           |
+| Ist die Einrichtung mit einer voll lizenzierten Bettenkapazität besetzt?    | Ja/Nein: Wenn die Antwort Nein lautet, können Sie alle zutreffenden Gründe auswählen: <br> - Personal <br> - Platz <br> - PSA <br> - Arbeitsgerät <br> - Niedriges Patientenvolumen |
+| Können Sie einen plötzlichen Anstieg über lizenzierte Betten hinaus bewältigen?              | Ja/Nein: Wenn die Antwort Nein lautet, können Sie alle zutreffenden Gründe auswählen: <br> - Personal <br> - Platz <br> - PSA <br> - Arbeitsgerät <br> - Niedriges Patientenvolumen  |
+| Anzahl der derzeit verwendeten Betten für plötzlichen Anstieg                         | Anzahl derzeit verwendeter Betten für plötzlichen Anstieg.                                                |
+| Anzahl derzeit verwendeter IPS-Betten für Kinder (Luftübertragungsisolation und Nicht-Luftübertragungsisolation) | Anzahl der pädiatrischen Intensivbetten (Luftübertragungsisolation und Nicht-Luftübertragungsisolation), die derzeit in dieser Einrichtung verwendet werden. |
+| Anzahl derzeit verwendeter Akutversorgungsbetten für Kinder (Luftübertragungsisolation und Nicht-Luftübertragungsisolation) | Anzahl der pädiatrischen Akutversorgungsbetten (Luftübertragungsisolation und Nicht-Luftübertragungsisolation), die derzeit in dieser Einrichtung verwendet werden. |  
 
 ## <a name="covid-19-stats"></a>COVID-19-Statistiken
 
@@ -139,9 +141,9 @@ Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **
 | Standort        | Name und Typ des Raums, der Station oder eines anderen speziellen Standortes innerhalb der ausgewählten Einrichtung.  |
 | Beatmungsgeräte            | Anzahl der derzeit verwendeten Beatmungsgeräte.                                                            |
 | NIPPV (Nichtinvasive Überdrückbeatmung)        | Anzahl der verwendeten nichtinvasiven Überdruckventilatoren.                                                         |
-| PAPR-Gürtel        | Anzahl der verwendeten Atemschutzgurte mit Luftreinigung.                                                         |
-| PAPR-Ladegeräte        | Anzahl der verwendeten Atemschutzladegeräte mit Luftreinigung.                                                         |
-| PAPR-Hauben        | Anzahl der verwendeten Atemschutzhauben mit Luftreinigung.                                                         |
+| PAPR-Hauben        | Anzahl der verwendeten Atemschutzhauben mit Luftreinigung (PAPR).                                                         |
+| PAPR-Gürtel        | Anzahl der derzeit verwendeten PAPR-Gürtel                                                         |
+| PAPR-Ladegeräte        | Anzahl der derzeit verwendeten PAPR-Ladegeräte                                                         |
 
 ## <a name="staff"></a>Personal
 
@@ -162,10 +164,10 @@ Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **
 | Standort                      | Name und Typ des Raums, der Station oder eines anderen speziellen Standortes innerhalb der ausgewählten Einrichtung. |
 | Anzahl der Patienten            | Aktuelle Gesamtzahl der Patienten am ausgewählten Standort.                                        |
 | **Registrierte Krankenschwestern im Dienst** |                                                                                                   |
-| *Partner*                    | Anzahl der am ausgewählten Standort anwesenden registrierten Krankenschwesterpartner.                             |
-| *Angefordert*                   | Anzahl der für den ausgewählten Standort angeforderten registrierten Krankenschwestern.                                  |
-| *Zugewiesen*                    | Anzahl der registrierten Krankenschwestern, die dem ausgewählten Standort zugewiesen sind.                                    |
-| *Nicht zugewiesen*                  | Anzahl der registrierten Krankenschwestern, die am ausgewählten Standort keiner Aufgabe zugewiesen sind.                    |
+| *Partner* <br> Exam. Krankenschwestern-Partner/Extender unterstützen exam. Krankenschwestern und Patienten                   | Anzahl der am ausgewählten Standort anwesenden registrierten Krankenschwesterpartner.                             |
+| *Angefordert* <br> Anzahl angeforderter exam. Krankenschwestern                  | Anzahl der für den ausgewählten Standort angeforderten registrierten Krankenschwestern.                                  |
+| *Zugewiesen* <br> Anzahl exam. Krankenschwestern mit einer Zuweisung                   | Anzahl der registrierten Krankenschwestern, die dem ausgewählten Standort zugewiesen sind.                                    |
+| *Nicht zugewiesen* <br> Anzahl exam. Krankenschwestern, die keiner Aufgabe zugewiesen sind                  | Anzahl der registrierten Krankenschwestern, die am ausgewählten Standort keiner Aufgabe zugewiesen sind.                    |
 | **Nachverfolgung auf Einrichtungsebene** |                                                                                                   |
 | % des derzeit abwesenden wichtigen Personals in dieser Einrichtung                  | Das Personal für die Grundversorgung fehlt derzeit im prozentualen Format der Gesamtsumme für **gesamte Einrichtung**.                    |
 
@@ -173,7 +175,7 @@ Nachdem Sie die Daten übermittelt haben, haben Sie die Möglichkeit, zur App **
 
 ![Bedarf](media/use/supplies.png)
 
-Zeigen Sie das Bedarfsinventar mit der App **Bedarf** an. Über diese App können Sie die Mengen der Bedarfskomponenten im gesamten Einrichtungsinventar und die tägliche Verbrauchsrate aktualisieren.
+In der App **Verbrauchsmaterialien** können Sie den Bestand an Verbrauchsmaterialien sammeln. Über diese App können Sie die Mengen der Bedarfskomponenten im gesamten Einrichtungsinventar und die tägliche Verbrauchsrate aktualisieren.
 
 > [!NOTE]
 > Geben Sie Werte in beide Felder **Auf Lager** und **Verwendet in letzten 24 Stunden** ein, bevor Sie **Senden** auswählen.
@@ -209,15 +211,15 @@ Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Re
 | Wie viele                 | Wie viele Ressourcen benötigt werden, im Zahlenformat.                |
 | Details                  | Beschreiben Sie zusätzliche Details oder Kommentare für die Arbeitspoolanforderung.                        |
 
-
-
 ## <a name="discharge-planning"></a>Entlassungsplanung
 
 ![Entlassung](media/use/discharge.png)
 
-Übermitteln Sie die Entlassungsinformationen und den Patientenstatus insgesamt mithilfe der App **Entlassungsplanung**. Sie können die Entlassungsdetails für die letzten 24 Stunden, die aktuellen Entlassungsbarrieren und die Aufteilung der Barrieren aktualisieren.
+Übermitteln Sie die Entlassungsinformationen und den Patientenstatus insgesamt mithilfe der App **Entlassungsplanung**. Sie können die Entlassungsdetails für die letzten 24 Stunden, die aktuellen Entlassungsbarrieren und die Aufteilung der Barrieren aktualisieren. 
 
 Wählen **Zurück** von oben links, wenn Sie zurück zur **Hospital Emergency Response-App** gehen möchten, ohne Änderungen zu senden. Die Schaltfläche **Senden** sendet die von Ihnen eingegebenen Werte. Wählen Sie nach dem Senden **Home** aus, um zur **Hospital Emergency Response-App** zurückzugehen.
+
+**Barrieren für Entlassung nach langem Aufenthalt** wird automatisch mit der Gesamtzahl der Patienten, die Sie über alle Barrieren hinweg in das Formular eingeben.
 
 ### <a name="fields-and-description"></a>Felder und Beschreibung
 
@@ -250,7 +252,7 @@ Wählen Sie die Schaltfläche **Schicht beenden** aus, um Ihre Sitzung zu beende
 
 ### <a name="app-feedback"></a>App-Feedback
 
-Sie können Ihr Feedback mit der Option **App-Feedback** aus einer beliebigen mobilen Komponente der Notfalleinsatz-App teilen. Um Ihr Feedback zu teilen, wählen Sie Ihr Profil oben links aus und wählen Sie dann die Schaltfläche **Feedback senden** aus:
+Sie können Ihr Feedback mit der Option **App-Feedback** aus einer beliebigen mobilen Komponente der App für Krankenhausnotfalleinsätze teilen. Um Ihr Feedback zu teilen, wählen Sie Ihr Profil oben links aus und wählen Sie dann die Schaltfläche **Feedback senden** aus:
 
 ![Feedback geben](media/use/give-feedback.png)
 
@@ -262,10 +264,16 @@ Wenn Sie **App-Feedback** auswählen, haben Sie die Möglichkeit, ein Lob, eine 
 
 Wechseln Sie die Einrichtung jederzeit, indem Sie den Namen der Einrichtung oben rechts auf dem Bildschirm auswählen. Nachdem Sie den Standortnamen ausgewählt haben, gelangen Sie zum Bildschirm der **Hospital Emergency Response-App**, auf dem Sie ein anderes Krankenhaus, eine andere Region oder eine andere Einrichtung auswählen können.
 
+## <a name="view-the-mobile-app-in-your-language"></a>Mobile App in Ihrer Sprache anzeigen
+
+[!include[cc-lang](includes/cc-lang.md)]
+
+Sie können die mobile App für Notfallmaßnahmen im Krankenhaus in einer der unterstützten Sprachen auf Ihrem mobilen Gerät anzeigen, indem Sie die Standardsprache Ihres mobilen Geräts (Apple oder Android) auf eine unterstützten Sprache festlegen. Informationen zum Ändern der Standardsprache für Ihr Gerät finden Sie in der Hilfedokumentation für Ihr jeweiliges Mobilgerät.
+
+Wenn Sie die mobilen Apps in einem Browser auf Ihrem Computer verwenden, wählen Sie die Standardsprache Ihres Browsers in einer unterstützten Sprache für die mobile App für Notfallmaßnahmen im Krankenhaus aus. Weitere Informationen finden Sie unter [Verwenden von Microsoft Edge in einer anderen Sprache](https://support.microsoft.com/help/4532129).
+
 ## <a name="issues-and-feedback"></a>Probleme und Feedback
 
-- Um ein Problem mit der Hospital Emergency Response-Beispiel-App zu melden, navigieren Sie zu <https://aka.ms/emergency-response-issues>.
+- Wenn Sie ein Problem mit der mobilen App für Notfallmaßnahmen im Krankenhaus melden möchten, besuchen Sie <https://aka.ms/emergency-response-issues>.
 
-- Feedback zur Hospital Emergency Response-Beispiel-App finden Sie unter <https://aka.ms/emergency-response-feedback>.
-
-
+- Wenn Sie Feedback zur mobilen App für Notfallmaßnahmen im Krankenhaus geben möchten, besuchen Sie <https://aka.ms/emergency-response-feedback>.

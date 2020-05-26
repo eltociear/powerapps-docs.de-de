@@ -15,16 +15,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 02b8e2b80821e3a59f3522f25f455d6cc3b4a083
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 069e5d2b41176e7c947db1460f76cd34011124e5
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115914"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275834"
 ---
 # <a name="create-a-dashboard"></a>Erstellen eines Dashboards
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
 
 Sie können ein Dashboard im Besitz der Organisation erstellen, indem Sie das Common Data Service verwenden oder das Entitätsformular in Common Data Service anpassen, indem Sie die customizations.xml-Datei bearbeiten.  
   
@@ -146,7 +144,7 @@ SystemForm dashboard = new SystemForm
 _dashboardId = _serviceProxy.Create(dashboard);
  ``` 
   
- Ein vollständiges Beispiel finden Sie unter [Beispiel: Erstellen, Abrufen, Aktualisieren und Löschen eines Dialogs](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard). Ein Beispiel des Erstellens eines benutzereigenenn Dashboards und dessen Zuordnung an einen anderen Benutzer finden Sie unter [Beispiel: Zuordnung eines benutzereigenenn Dashboards an einen anderen Benutzer](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user).  <!-- TODO relevant powerapps repo topic must be linked> 
+ Ein vollständiges Beispiel finden Sie unter [Beispiel: Erstellen, Abrufen, Aktualisieren und Löschen eines Dialogs](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard). Ein Beispiel des Erstellens eines benutzereigenenn Dashboards und dessen Zuordnung an einen anderen Benutzer finden Sie unter [Beispiel: Zuordnung eines benutzereigenenn Dashboards an einen anderen Benutzer](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user).  
   
 <a name="UsingFormCustomization"></a>   
 ## <a name="create-an-organization-owned-dashboard-by-customizing-the-entity-form"></a>Erstellen eines Dashboards im Besitz eines Benutzers durch Anpassen des Entitätsformulars  
@@ -211,8 +209,8 @@ _dashboardId = _serviceProxy.Create(dashboard);
   
 ### <a name="see-also"></a>Siehe auch  
  [Dashboards](analyze-data-with-dashboards.md)   
- [Nutzung der FormXML-Datei für Dashboards](understand-dashboards-dashboard-components-formxml.md)   
+ [FormXML für Dashboards verwenden](understand-dashboards-dashboard-components-formxml.md)   
  [Aktionen für Dashboards](actions-dashboards.md)   
  [Beispiel-Dashboards](sample-dashboards.md)   
- [Beispiel: Ein Dashboard erstellen, abrufen, aktualisieren und löschen (EAAL)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)   <!-- TODO relevant powerapps repo topic must be linked-->
+ [Beispiel: Erstellen, Abrufen, Aktualisieren und Löschen (CRUD) eines Dashboards](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)   <!-- TODO relevant powerapps repo topic must be linked-->
  [Anpassen von Entitätsformularen](customize-entity-forms.md)

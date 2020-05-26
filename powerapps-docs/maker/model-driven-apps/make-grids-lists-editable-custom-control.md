@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: edb149b72716eb22e97ffce2d54a14be3bf84de5
-ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
+ms.openlocfilehash: 12cc43b30b48c9bcfbb735939ad93ace1a7382c7
+ms.sourcegitcommit: 81d6996e870b55797372429d66f9b56a7200d154
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258513"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270498"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>Modellgetriebene App-Raster (Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster
 
@@ -145,7 +145,9 @@ Die folgenden Datentypen sind nicht in bearbeitbaren Rastern bearbeitbar: Kunden
 ## <a name="group-by-views-work-on-client-side-only"></a>Das Gruppieren nach Ansichten funktioniert nur auf der Clientseite
 Das Gruppierungsverhalten funktioniert nur auf der Clientseite und erstreckt sich nicht über Seiten. „Gruppieren nach“ ist eine Nur-Client-Funktion und funktioniert nur auf einer Datenseite. Bei „Gruppieren nach“ werden nicht alle Optionen angezeigt, die auf Ihrem vollständigen Dataset auf dem Server basieren. „Gruppieren nach“ zeigt die Gruppierung nur auf der aktuellen Seite an. Sie können die Gruppierung deaktivieren, indem Sie die Eigenschaft in der benutzerdefinierten Steuerelementkonfiguration verwenden. Weitere Informationen: [Hauptgitter bearbeitbar machen](#make-main-grids-editable)
 
- 
+## <a name="business-rules-work-only-if-conditional-field-is-a-column-on-the-grid"></a>Geschäftsregeln funktionieren nur, wenn das bedingte Feld eine Spalte im Raster ist
+Geschäftsregeln auf einem bearbeitbaren Raster werden nur unterstützt, wenn das bedingte Feld auch eine Spalte im Raster ist. Wenn es sich bei dem Feld nicht um eine Spalte handelt, funktionieren die Geschäftsregeln nicht. Stellen Sie sicher, dass jedes Feld, auf das in der Geschäftsregel verwiesen wird, auch auf dem Formular enthalten ist. Beachten Sie, dass Geschäftsregeln auf einem editierbaren Raster nicht ausgelöst werden, wenn das editierbare Raster auf einem Dashboard konfiguriert ist.
+
 ## <a name="next-steps"></a>Nächste Schritte  
  [Verwenden von Tastenkombinationen in bearbeitbaren Rastern](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts#editable-grids-views)
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ded46aa0fcae233370fc514e3268314639b4225
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 6d4818eead8924ea16f4deb8f08dfa112e005b85
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115630"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275918"
 ---
 # <a name="use-editable-grids"></a>Bearbeitbare Raster verwenden
 
@@ -29,26 +29,45 @@ Bearbeitbare Raster ist ein benutzerdefiniertes Steuerelement, das umfangreiche 
 > Wenn Sie Vorgängerformulare verwenden (Versionen vor Dynamics CRM 2016) und ein bearbeitbares Raster für ein Unterraster aktivieren, wird das bearbeitbare Unterraster nicht gerendert. Systemadministratoren können Vorgängerformulare in den Systemeinstellungen nach Bedarf deaktivieren. 
 
 <a name="Enable"></a>   
+
 ## <a name="enable-editable-grids"></a>Bearbeitbare Raster aktivieren  
- Sie können bearbeitbare Entitätsebenenraster auf der Entitätsebene aktivieren, um den Hauptraster zu verwenden oder auf Formularebene schreibgeschützte Raster und Unterraster (zugeordnete Raster) über einen bearbeitbaren Raster auf dem Menüband zu ersetzen.  
+
+Sie können bearbeitbare Entitätsebenenraster auf der Entitätsebene aktivieren, um den Hauptraster zu verwenden oder auf Formularebene schreibgeschützte Raster und Unterraster (zugeordnete Raster) über einen bearbeitbaren Raster auf dem Menüband zu ersetzen.  
   
- Sie können das Steuerelement für bearbeitbare Raster für eine Entität aktivieren, indem Sie das Anpassungstool in modellgestützten Apps verwenden (**Einstellungen** > **Anpassungen**  > **System anpassen** > **Entitäten** > *[Entity_Name]* > Registerkarte **Steuerelemente**).  
+1. Öffnen Sie den [Lösungs-Explorer](../../maker/model-driven-apps/advanced-navigation.md#solution-explorer).  
   
- Um den bearbeitbaren Raster für einen Raster zu aktivieren, öffnen Sie den Formular-Editor, doppelklicken auf den schreibgeschützten Raster, den Sie mit dem bearbeitbaren Raster ersetzen möchten und fügen Sie den bearbeitbaren Raster in der Registerkarte **Steuerelemente** hinzu oder aktivieren Sie ihn.  
+2. Öffnen Sie in der Liste **Entitäten** die entsprechende Entität, wählen Sie die Registerkarte **Steuerelemente** aus, und wählen Sie dann **Steuerelement hinzufügen** aus.  
   
- Sie können den nicht-bearbeitbaren Raster und die verknüpften Raster jederzeit auf dem Hauptraster wiederherstellen, falls erforderlich. Zur Ausführungszeit können Benutzer auch zwischen schreibgeschützten Rastern und bearbeitbaren Rastern umschalten.  
+     ![Benutzerdefiniertes Steuerelement für bearbeitbares Raster hinzufügen](../../maker/model-driven-apps/media/add-editable-grids-custom-control.png "Benutzerdefiniertes Steuerelement für bearbeitbares Raster hinzufügen")  
   
- Weitere Informationen: [Modellgetriebene App-Raster (Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster](../../maker/model-driven-apps/make-grids-lists-editable-custom-control.md)  
+3. Wählen Sie im Dialogfeld **Steuerelement hinzufügen** die Option **Bearbeitbares Raster** aus, und wählen Sie dann **Hinzufügen** aus.  
+  
+4. Wählen Sie in der Zeile **Bearbeitbares Raster**, die hinzugefügt wird, den/die Formfaktor(en) aus, auf den/die das Raster angewendet werden soll. Dadurch wird das bearbeitbare Rastersteuerelement zum Standardsteuerelement für den/die ausgewählten Formfaktor(en).  
+  
+     ![Bearbeitbare Rasterzeile mit Formfaktor-Auswahl](../../maker/model-driven-apps/media/editable-grid-row-wit-factor-selection.png "Bearbeitbare Rasterzeile mit Formfaktor-Auswahl")    
+
+   > [!NOTE]
+   >  Zur Ausführungszeit können Benutzer zwischen schreibgeschützten Rastern und bearbeitbaren Rastern umschalten. 
+  
+Um den bearbeitbaren Raster für einen Raster zu aktivieren, öffnen Sie den Formular-Editor, doppelklicken auf den schreibgeschützten Raster, den Sie mit dem bearbeitbaren Raster ersetzen möchten und klicken Sie auf **Steuerelemente** und wählen Sie das bearbeitbare Raster aus der Liste der Steuerelemente aus.  
+  
+Sie können den nicht-bearbeitbaren Raster und die verknüpften Raster jederzeit auf dem Hauptraster wiederherstellen, falls erforderlich. Zur Ausführungszeit können Benutzer auch zwischen schreibgeschützten Rastern und bearbeitbaren Rastern umschalten.  
+  
+Weitere Informationen: [Modellgetriebene App-Raster (Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster](../../maker/model-driven-apps/make-grids-lists-editable-custom-control.md)  
   
 <a name="FormScripting"></a>   
-## <a name="form-scripting-support"></a>Formularskript-Unterstützung  
- Die bearbeitbaren Raster unterstützen clientseitige Ereignisse und Methoden, die verwendet werden, um benutzerdefinierte Clienterweiterungen gemäß Ihren Geschäftsanforderungen zu schreiben. Weitere Informationen: [Raster und Unterraster in modellgestützten Apps (Client-API-Referenz)](clientapi/reference/grids.md)
+
+## <a name="form-scripting-support"></a>Formularskript-Unterstützung 
+
+Die bearbeitbaren Raster unterstützen clientseitige Ereignisse und Methoden, die verwendet werden, um benutzerdefinierte Clienterweiterungen gemäß Ihren Geschäftsanforderungen zu schreiben. Weitere Informationen: [Raster und Unterraster in modellgestützten Apps (Client-API-Referenz)](clientapi/reference/grids.md)
   
-<a name="EntitiesSupported"></a>   
-## <a name="entities-and-views-supported-by-editable-grid"></a>Erstellen von Ansichten, die von bearbeitbaren Raster unterstützt werden  
- Nicht alle Entitäten und Ansichten unterstützen die Verwendung der bearbeitbaren Raster.  
+<a name="EntitiesSupported"></a>  
+
+## <a name="entities-and-views-supported-by-editable-grid"></a>Erstellen von Ansichten, die von bearbeitbaren Raster unterstützt werden 
+
+Nicht alle Entitäten und Ansichten unterstützen die Verwendung der bearbeitbaren Raster.  
   
- Im Webclient wird eine Entität einen bearbeitbaren Raster unterstützen, wenn die folgenden Bedingungen erfüllt sind:  
+Im Webclient wird eine Entität einen bearbeitbaren Raster unterstützen, wenn die folgenden Bedingungen erfüllt sind:  
   
 - Die Entität ist anpassbar (IsCustomizable = true)  
   
@@ -56,13 +75,13 @@ Bearbeitbare Raster ist ein benutzerdefiniertes Steuerelement, das umfangreiche 
   
 - Die Entität ist keine untergeordnete Entität (IsChildEntity = false)  
   
-  Auf dem mobilen Client unterstützt eine Entität bearbeitbare Raster, wenn die Entität auf dem mobilen Client in der Siteübersicht angezeigt wird.  
+ Auf dem mobilen Client unterstützt eine Entität bearbeitbare Raster, wenn die Entität auf dem mobilen Client in der Siteübersicht angezeigt wird.  
   
-  Informationen zu den Entitäten, die bearbeitbare Raster unterstützen, siehe Abschnitt **Unterstützte vorgefertigte Entitäten** in [Modellgetriebene App-Raster (Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster](../../maker/model-driven-apps/make-grids-lists-editable-custom-control.md) 
+Informationen zu den Entitäten, die bearbeitbare Raster unterstützen, siehe Abschnitt **Unterstützte vorgefertigte Entitäten** in [Modellgetriebene App-Raster (Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster](../../maker/model-driven-apps/make-grids-lists-editable-custom-control.md) 
    
-  Bearbeitbare Raster unterstützen keine zugeordneten Roll-up-Ansichten (**Rollup-Typ** = `Related`).  
+Bearbeitbare Raster unterstützen keine zugeordneten Roll-up-Ansichten (**Rollup-Typ** = `Related`).  
   
-  Verwenden Sie den folgenden Beispielcode, um eine XML-Datei zu generieren, die Sie in Excel als XML-Kalkulationstabelle öffnen können, um die Entitätsunterstützungs-Informationen für bearbeitbare Steuerelemente anzuzeigen. Excel findet das Schema automatisch und zeigt die Informationen unter den folgenden Spalten:  
+Verwenden Sie den folgenden Beispielcode, um eine XML-Datei zu generieren, die Sie in Excel als XML-Kalkulationstabelle öffnen können, um die Entitätsunterstützungs-Informationen für bearbeitbare Steuerelemente anzuzeigen. Excel findet das Schema automatisch und zeigt die Informationen unter den folgenden Spalten:  
   
 - `LogicalName`Logischer Entitätsname  
   

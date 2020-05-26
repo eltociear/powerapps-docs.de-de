@@ -10,6 +10,16 @@
       href: conditional-operations-csharp.md
     - name: Funktionen und Aktionen
       href: functions-actions-csharp.md
+- name: '(C#) CDSWebApiService-Beispiele'
+  items:
+    - name: CDSWebApiService-Klasse
+      href: cdswebapiservice.md
+    - name: Grundlegende CDSWebApiService-Operationen
+      href: cdswebapiservice-basic-operations.md
+    - name: Parallele CDSWebApiService-Operationen
+      href: cdswebapiservice-parallel-operations.md
+    - name: Asynchrone parallele CDSWebApiService-Operationen
+      href: cdswebapiservice-async-parallel-operations.md
 - name: Beispiele für clientseitige JavaScript-Datenvorgänge
   items:
     - name: Erste Schritte mit clientseitigen JavaScript-Beispielen

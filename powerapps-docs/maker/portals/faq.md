@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/04/2020
+ms.date: 04/23/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 9293288a8f3de86807342466771d197754b65706
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: 9d74d408cc6a1000b9f8d29e4c91d62952b70e40
+ms.sourcegitcommit: 504bf052f7fe276484fa8c9b1ea04b19ad63484f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100013"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3288418"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps Portale-FAQs
 
@@ -39,7 +39,7 @@ Sie können den Typ eines Portals über das [Power Apps Portals Administratorcen
 Weitere Unterschiede zwischen Power Apps-Portalen mit kapazitätsbasierten Lizenzen und add-on-basierten Lizenzen:
 
 - Für Add-On-Portale wurde dem Portaltyp das Suffix Add-On hinzugefügt. Ein Produktions-Add-On-Portal-Typ wird beispielsweise als Produktion (Add-On) aufgeführt.
-- Power Apps-Portale haben einen [anderen Caching-Mechanismus](https://powerapps.microsoft.com/en-us/blog/publishing-changes-to-powerapps-portals/) im Vergleich zu Portalen mit Add-on-basierten Lizenzen.
+- Power Apps-Portale haben einen [anderen Caching-Mechanismus](admin/clear-server-side-cache.md) im Vergleich zu Portalen mit Add-on-basierten Lizenzen.
 - Die Bereitstellungsmethode ist bei Portalen mit kapazitätsbasierten Lizenzen anders als bei Portalen mit add-on-basierten Lizenzen.
 
 Sie können Power Apps Portale mit kapazitätsbasierter Lizenz mit den in den folgenden Artikeln beschriebenen Schritten erstellen:

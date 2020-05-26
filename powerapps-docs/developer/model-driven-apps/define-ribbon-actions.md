@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f17a21544a1f218b7f3c21264e723bd3750a843
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 13efb9c8962f14dffe73beb67aff1f1c229a9286
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115642"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275958"
 ---
 # <a name="define-ribbon-actions"></a>Definieren von Menübandaktionen
 
@@ -45,7 +45,7 @@ Definieren Sie die Aktionen, die durch Befehlsleisten- oder Menübandsteuereleme
 [!INCLUDE[ribbon_element_BoolParameter](../../includes/ribbon-element-boolparameter.md)]
   
  `<CrmParameter>`  
- [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Mehr Informationen: [Daten von einer Seite als Parameter an Ribbon Actions übergeben](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo -->
+ [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Mehr Informationen: [Daten von einer Seite als Parameter an Ribbon Actions übergeben](pass-data-page-parameter-ribbon-actions.md) 
   
  `<DecimalParameter>`  
  [!INCLUDE[ribbon_element_DecimalParameter](../../includes/ribbon-element-decimalparameter.md)]
@@ -56,13 +56,14 @@ Definieren Sie die Aktionen, die durch Befehlsleisten- oder Menübandsteuereleme
  `<StringParameter>`  
  [!INCLUDE[ribbon_element_StringParameter](../../includes/ribbon-element-stringparameter.md)]
   
- Wenn Parameter an ein `<Url>`-Element übergeben werden, werden sie als Abfragezeichenfolge übergeben. Daher müssen Sie einen Namenswert einschließen, um den "Schlüssel" in dem Paar aus Abfragezeichenfolgenschlüssel und -wert darzustellen.  
+ Wenn Parameter an ein `<Url>`-Element übergeben werden, werden sie als Abfragezeichenfolge übergeben. Daher müssen sie einen Namenswert enthalten, der den "Schlüssel" im Schlüssel/Wert-Paar der Suchzeichenfolge darstellt.  
   
  Die Parameter, die an `<JavaScriptFunction>` übergeben werden, benötigen keinen Namen, aber sie müssen in folgender Reihenfolge eingeschlossen werden, die von der Funktion erwartet wird, und müssen vom richtigen Datentyp sein.  
   
 ## <a name="see-also"></a>Siehe auch  
 
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
- [Definieren von Menüband-Anzeigeregeln](define-ribbon-display-rules.md)   
- [Daten von einer Seite als Parameter an Menüband-Aktionen übermitteln](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  
-<!-- TODO need to update the relevant link from the powerapps repo-->
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
+ [Anzeigeregeln für Menübänder definieren](define-ribbon-display-rules.md)   
+ [Daten von einer Seite als Parameter an Menüband-Aktionen übergeben](pass-data-page-parameter-ribbon-actions.md)  
+
+

@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8abda26be50d31f734d3143c9cfa79b38fd3f130
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 93f73878e8bc978a01f6100b76829f60365f5967
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753598"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326440"
 ---
 # <a name="query-and-edit-an-organization-theme"></a>Abfragen und Bearbeiten eines Organisationsdesigns
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme -->
 
-Sie können visuelle Designs für eine Organisation definieren und anwenden. Dies bietet eine unterstützte Methode, um das Logo und die Farbauswahl einer Organisation für die Anwendung zu übernehmen. Sie können ein angepasstes Design für Ihre Anwendung erstellen, indem Sie Änderungen an den Standardfarben und visuellen Elementen im nicht benutzerdefinierten System modellgestützter Apps vornehmen. Sie können beispielsweise Ihr persönliches Produktbranding erstellen, ein Unternehmenslogo hinzufügen und entitätsspezifischen Farbton zur Verfügung stellen. Die Designfarben werden global bei der Anwendung übernommen, mit Ausnahme einiger Vorgängerbereiche.  
+Sie können visuelle Designs für eine Organisation definieren und anwenden. Dies bietet eine unterstützte Methode, um das Logo und die Farbauswahl einer Organisation für die Anwendung zu übernehmen. Sie können ein benutzerdefiniertes Thema für Ihre Anwendung erstellen, indem Sie Änderungen an den Standardfarben und visuellen Elementen vornehmen, die in dem nicht angepassten modellbasierten Apps-System bereitgestellt werden. Sie können beispielsweise Ihr persönliches Produktbranding erstellen, ein Unternehmenslogo hinzufügen und entitätsspezifischen Farbton zur Verfügung stellen. Die Designfarben werden global bei der Anwendung übernommen, mit Ausnahme einiger Vorgängerbereiche.  
   
 <!-- [!NOTE]
 > [!INCLUDE[cc_feature_included_with_2015_update_1_admins](../../includes/cc-feature-included-with-2015-update-1-admins.md)]  -->
@@ -102,7 +102,7 @@ OData-Version: 4.0
 |LogoId|String|NULL|Der Name einer als Logo zu verwendende Webressource. Empfohlene Dimensionen sind eine Höhe von 50 Pixel und eine maximale Breite von 400 Pixel.|  
 |LogoToolTip|String|Modellgestützte Apps|Der Text, der als QuickInfo und alternativer Text für das Logo verwendet wird.| 
 |MainColor|String|#3B79B7|Das primäre Farbdesign für die einheitliche Oberfläche auswählen, das in der Hauptbefehlsleiste, auf Schaltflächen und Registerkarten verwendet wird.| 
-|Name|String|Standard-MDA-Design|Der Name der Designentität.|  
+|Name|Zeichenfolge|Modellbasierte Apps Standardthema|Der Name der Designentität.|  
 |NavBarBackgroundColor|String|#002050|Die Primärfarbe für die Navigationsleiste.|  
 |NavBarShelfColor|String|#DFE2E8|Die Sekundärfarbe für die Navigationsleiste.|  
 |OverriddenCreatedOn|DateTime|NULL|Datum und Uhrzeit der Datensatzmigration|  

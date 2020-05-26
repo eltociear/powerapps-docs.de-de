@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dbd648bd96d087ce34d8482d96507fa2391902b6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 85850ce83fa7431e1f881f18ae95c59b320c9dd1
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125131"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341177"
 ---
 # <a name="overview-of-the-model-driven-app-form-editor-user-interface"></a>Übersicht der Benutzeroberfläche des Formulareditors in der modellgesteuerten App
 
@@ -116,7 +116,7 @@ Wählen Sie **Datei** Registerkarten/Entitätsansicht hinzuzufügen die folgende
 ||**Vorschau**|Verwenden Sie diesen Antworttyp, um festzustellen, wie das Formular nach der Veröffentlichung aussieht. Sie können außerdem in der Vorschau anzeigen, um die in Skripts testen, die mit von Ereignissen zugeordnet werden.|         
 ||**Sicherheitsrollen aktivieren**|Verwenden Sie dies, um einzustellen, welche Sicherheitsrollen auf die Formulare Zugriff haben. Weitere Informationen:  [Zugriff auf Formulare steuern](control-access-forms.md) **Wichtig:**  Wenn Sie ein neues Formular erstellen, haben nur die Sicherheitsrollen "Systemadministrator" und "Systemanpasser" Zugriff auf das Formular. Sie müssen anderen Sicherheitsrollen den Zugriff gewähren, damit Benutzer das Formular verwenden können.|  
 ||**Abhängigkeiten anzeigen**|Sehen Sie, welche Lösungskomponenten von diesem Formular abhängen, und welche Lösungskomponente für dieses Formular erforderlich sind. |  
-||**Verwaltete Eigenschaften**|Verwalter besitzt zwei Eigenschaftenbefehl Eigenschaften **Anpassbar** und **Kann gelöscht werden** Das Setzen dieser Eigenschaften auf false bedeutet, dass das Formular nicht anpassbar ist und nicht gelöscht werden kann, nachdem Sie es in eine Lösung aufgenommen haben, diese Lösung als verwaltete Lösung exportieren und diese verwaltete Lösung in eine andere Umgebung importieren. Weitere Informationen: [Verwaltete Eigenschaften](../common-data-service/solutions-overview.md#managed-properties)| 
+||**Verwaltete Eigenschaften**|Verwalter besitzt zwei Eigenschaftenbefehl Eigenschaften **Anpassbar** und **Kann gelöscht werden** Das Setzen dieser Eigenschaften auf false bedeutet, dass das Formular nicht anpassbar ist und nicht gelöscht werden kann, nachdem Sie es in eine Lösung aufgenommen haben, diese Lösung als verwaltete Lösung exportieren und diese verwaltete Lösung in eine andere Umgebung importieren. Weitere Informationen: [Verwaltete Eigenschaften](/power-platform/alm/managed-properties-alm)| 
 |**Upgraden**|**Formulare zusammenführen**|Ggf. können diese Option Sie das Formular mit einem Formular in einer früheren Version von Dynamics 365 Formular zusammenführen|
   
 

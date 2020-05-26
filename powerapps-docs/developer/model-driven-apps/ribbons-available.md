@@ -14,34 +14,38 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c839738bb0ab1a533a432ea4d6e8ad6be1f7a6ce
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c51852f54770acc7299f73478529d3f5ea303680
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754563"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326436"
 ---
 # <a name="ribbons-available"></a>Verfügbare Menübänder
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365 -->
 
-In diesem Thema wird beschrieben, wo Menübänder in modellgestützten Apps definiert und geändert werden.
+Dieses Thema beschreibt, wo Menübänder in modellbasierten Apps definiert und modifiziert werden.
 
-<a name="ribbon_defs"></a>   
-## <a name="ribbon-definitions"></a>Menübanddefinitionen  
- Modellgestützte Apps enthalten Stanard-`<RibbonDiffXml>`-Definitionen für jedes Menüband in der Anwendung. Sie können die aktuelle XML, die das Menübands für Ihre Organisation definiert exportieren und anzeigen, aber Sie können die XML nicht direkt aktualisieren. Sie können das Menüband anpassen, indem Sie definieren, wie es geändert werden soll. Die Änderungsdefinitionen, die Sie angeben, werden zur Laufzeit angewendet, wenn das Menübands in der Anwendung angezeigt wird. Alle Ihre Änderungen werden in den Elementen `<CustomAction>` oder `<HideCustomAction>` ausgeführt. Diese Elemente werden über die standardmäßigen Menübanddefinitionen angewendet, die von modellgestützten bereitgestellt werden.  
+<a name="ribbon_defs"></a>  
 
- Wenn Sie Ihre Änderungsdefinitionen schreiben, müssen Sie die Definitionen der Standardmenübänder häufig verweisen. Wenn sie beispielsweise ein bestimmtes Menübandelement ausblenden möchten, müssen Sie die eindeutige ID des Elements kennen. Wenn Sie ein neues Menübandelement innerhalb oder neben einem vorhandenen Menübandelement positionieren möchten, müssen Sie die ID-Werte für diese Elemente sowie die Reihenfolge kennen, die die relative Stellung der Elemente steuert.  
+## <a name="ribbon-definitions"></a>Menübanddefinitionen 
 
- Wegen dieser Anforderung ist es erforderlich, die Definitionen von vorhandenen Menübandelementen zu verweisen, es ist sehr wichtig, die aktuellen Menübanddefinitionen in Ihrer Organisation zu verstehen. Es gibt zwei Nachrichten, die Sie verwenden können, um XML-Dateien, die den aktuellen Status der Menübänder darstellen, zu exportieren. Die Definitionen enthalten alle Anpassungen, die bereits auf dem System angewendet wurden, damit Sie zuvor angewendete Menübänder anpassen können. Weitere Informationen finden Sie unter [Exportieren von Menübanddefinitionen](export-ribbon-definitions.md).  
+Modellgestützte Apps enthalten Stanard-`<RibbonDiffXml>`-Definitionen für jedes Menüband in der Anwendung. Sie können die aktuelle XML, die das Menübands für Ihre Organisation definiert exportieren und anzeigen, aber Sie können die XML nicht direkt aktualisieren. Sie können das Menüband anpassen, indem Sie definieren, wie es geändert werden soll. Die Änderungsdefinitionen, die Sie angeben, werden zur Laufzeit angewendet, wenn das Menübands in der Anwendung angezeigt wird. Alle Ihre Änderungen werden in den Elementen `<CustomAction>` oder `<HideCustomAction>` ausgeführt. Diese Elemente werden über die standardmäßigen Menübanddefinitionen angewendet, die von modellbasierten Apps bereitgestellt werden.  
 
- Um Ihnen bei den ersten Schritten zu helfen, können Sie die standardmäßigen Menübanddefnitionen für MDA von [Microsoft Downloads: ExportedRibbonXml.zip](https://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) herunterladen. Die ExportedRibbonXml.zip-Datei enthält die Ausgabedatei, die Sie für eine Organisation mit einem Menüband, das nicht angepasst wurde, haben würden. Sie müssen keine Beispielanwendung auszuführen, um diese Daten zu exportieren. Wenn Sie ein angepasstes Menüband haben, sollten Sie die Beispielanwendung ausführen, um die Dateien in diesem Ordner mit allen zuvor angewendeten Anpassungen für Ihre Organisation zu aktualisieren.  
+Wenn Sie Ihre Änderungsdefinitionen schreiben, müssen Sie die Definitionen der Standardmenübänder häufig verweisen. Wenn sie beispielsweise ein bestimmtes Menübandelement ausblenden möchten, müssen Sie die eindeutige ID des Elements kennen. Wenn Sie ein neues Menübandelement innerhalb oder neben einem vorhandenen Menübandelement positionieren möchten, müssen Sie die ID-Werte für diese Elemente sowie die Reihenfolge kennen, die die relative Stellung der Elemente steuert.  
 
- Innerhalb der exportierten XML-Datei enthält die applicationRibbon.xml-Datei alle Menübänder, die nicht für eine bestimmte Entität definiert sind. Diese entsprechen der Lösungskomponente **Anwendungsmenübänder**. Für jede Entität finden Sie eine *Entitätsname*-ribbon.xml-Datei. Das entspricht der `RibbonDiffXml`, die in jeder Entität enthalten ist. Wenn Sie das Menüband für eine bestimmte Entität bearbeiten möchten, sollten Sie die Menüband-XML-Datei für diese Entität finden.  
+Wegen dieser Anforderung ist es erforderlich, die Definitionen von vorhandenen Menübandelementen zu verweisen, es ist sehr wichtig, die aktuellen Menübanddefinitionen in Ihrer Organisation zu verstehen. Es gibt zwei Nachrichten, die Sie verwenden können, um XML-Dateien, die den aktuellen Status der Menübänder darstellen, zu exportieren. Die Definitionen enthalten alle Anpassungen, die bereits auf dem System angewendet wurden, damit Sie zuvor angewendete Menübänder anpassen können. Weitere Informationen finden Sie unter [Exportieren von Menübanddefinitionen](export-ribbon-definitions.md).  
 
-<a name="entity_ribbons"></a>   
+Um Ihnen den Einstieg zu erleichtern, können Sie die Standard-Menübanddefinitionen für modellbasierte Apps unter [Exportieren von Menübanddefinitionen Beispiel](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportRibbonDefinitions) herunterladen. `The ExportedRibbonXml`-Datei enthält die Ausgabedateien, die Sie für eine Organisation haben würden.  
+
+Innerhalb der exportierten XML-Datei enthält die applicationRibbon.xml-Datei alle Menübänder, die nicht für eine bestimmte Entität definiert sind. Diese entsprechen der Lösungskomponente **Anwendungsmenübänder**. Für jede Entität finden Sie eine *Entitätsname*-ribbon.xml-Datei. Das entspricht der `RibbonDiffXml`, die in jeder Entität enthalten ist. Wenn Sie das Menüband für eine bestimmte Entität bearbeiten möchten, sollten Sie die Menüband-XML-Datei für diese Entität finden.  
+
+<a name="entity_ribbons"></a>  
+
 ## <a name="entity-ribbons"></a>Entitätsmenübänder  
- Alle Entitäten verwenden eine gemeinsame Menübanddefinition genannt *Entitätsmenübandvorlage*. Die Entitätsmenüband-Vorlagendefinition befindet sich in der applicationribbon.xml-Datei. Wenn Sie eine benutzerdefinierte Entität erstellen, ist das angezeigte Menüband das das standardmäßige Menüband, das von der Entitätsmenübandvorlage definiert wird. Jede Systementität hat eine separate `<RibbonDiffXml>`-Definition, die auf der Entitätsmenüband-Vorlagendefinition aufbaut.  
+
+Alle Entitäten verwenden eine gemeinsame Menübanddefinition genannt *Entitätsmenübandvorlage*. Die Definition der Entitäten Menüband-Vorlage befindet sich in der Datei `applicationribbon.xml`. Wenn Sie eine benutzerdefinierte Entität erstellen, ist das angezeigte Menüband das das standardmäßige Menüband, das von der Entitätsmenübandvorlage definiert wird. Jede Systementität hat eine separate `<RibbonDiffXml>`-Definition, die auf der Entitätsmenüband-Vorlagendefinition aufbaut.  
 
  Innerhalb der applicationribbon.xml-Datei werden die folgenden Registerkarten angezeigt, die für alle Entitäten gelten:  
 
@@ -131,7 +135,7 @@ In diesem Thema wird beschrieben, wo Menübänder in modellgestützten Apps defi
 
 <a name="BKMK_BasicHomeTab"></a>   
 ## <a name="basic-home-tab"></a>Standard-Startregisterkarte  
- Die Standard-Startregisterkarte wird auf dem Haupt-Anwendungsmenüband angezeigt, wenn eine alternative Registerkarte aufgrund des Entitätskontexts oder einer Anzeigenregel, die sie für bestimmte Seiten unterdrückt, nicht definiert ist. Diese Registerkarte wird beispielsweise angezeigt, wenn die MDA-**Hilfe** anzuzeigen. Die ID der Standard-Startregisterkarte ist `Mscrm.BasicHomeTab`.  
+ Die Standard-Startregisterkarte wird auf dem Haupt-Anwendungsmenüband angezeigt, wenn eine alternative Registerkarte aufgrund des Entitätskontexts oder einer Anzeigenregel, die sie für bestimmte Seiten unterdrückt, nicht definiert ist. Dieses Register wird z.B. angezeigt, wenn Sie die modellbasierten Apps **Hilfe** anzeigen. Die ID der Standard-Startregisterkarte ist `Mscrm.BasicHomeTab`.  
 
 <!-- [!NOTE]-->
 <!-- >  The Jewel that was shown in [!INCLUDE[pn_crm2011_and_online](../../includes/pn-crm2011-and-online.md)] is no longer displayed. Changes to the Jewel will not appear in [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)]  -->
@@ -146,7 +150,7 @@ In diesem Thema wird beschrieben, wo Menübänder in modellgestützten Apps defi
 <!--### Microsoft Office Outlook 2010  
  The [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)] controls to support [!INCLUDE[ribbon_enum_Version_2010](../../includes/ribbon-enum-version-2010.md)] toolbars and menus are defined as tabs with the Id values of `Mscrm.Outlook14GlobalToolbar` and `Mscrm.Outlook14GlobalMenubar`, respectively.  -->
 
-<a name="other_ribbons"></a> ## Andere Menübänder Einige andere Menübandregisterkarten und Kontextgruppen für besondere Zwecken werden von MDA definiert.
+<a name="other_ribbons"></a> ## Andere Menübänder Mehrere andere spezielle Menüband-Registerkarten und eine kontextbezogene Gruppe werden durch modellgesteuerte Anwendungen definiert.
 Jede Registerkarte wird einer bestimmten <TabDisplayRule> zugeordnet, die steuert, wann sie angezeigt werden. In der folgenden Liste sind diese Registerkarten aufgeführt.  
 
 

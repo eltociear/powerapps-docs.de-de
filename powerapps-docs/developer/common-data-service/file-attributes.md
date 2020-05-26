@@ -2,7 +2,7 @@
 title: Dateiattribute (Common Data Service) | Microsoft-Dokumentation
 description: Infos zu Dateiattributen, die Dateidaten in der Anwendung speichern, sowie zum Unterstützen von Attributen, Abrufen von Daten und Hochladen von Dateidaten.
 ms.custom: ''
-ms.date: 10/04/2019
+ms.date: 04/27/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d8a64f994f035f61506a26836386f5f087777928
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 55b9e10d0d6e40394f8c4119ff1b47a11edb1540
+ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156194"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3292978"
 ---
 # <a name="file-attributes"></a>Dateiattribute
 
@@ -32,7 +32,9 @@ FileAttributeMetadata | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
 Informationen zu den nicht zulässigen Dateitypen finden Sie auf der [Registerkarte „Systemeinstellungen“ > „Allgemein“](/power-platform/admin/system-settings-dialog-box-general-tab) unter der Einstellung **Gesperrte Dateierweiterungen für Anlagen festlegen**.
 
 > [!IMPORTANT]
-> Einige Einschränkungen gelten, wenn die Datei und die erweiterten Bild-Datentypen von Common Data Service verwendet werden. Wenn Customer Managed Keys (CMK) für den Mandanten aktiviert sind, sind Datei-, Bild- und IoT-Datentypen nicht für Organisationen des Mandanten verfügbar. Lösungen, die ausgeschlossene Datentypen enthalten, werden nicht installiert. Kunden müssen sich bei CMK abmelden, um diese Daten verwenden zu können.
+> Einige Einschränkungen gelten, wenn die Datei und die erweiterten Bild-Datentypen von Common Data Service verwendet werden. Wenn Customer Managed Keys (CMK) für den Mandanten aktiviert sind, sind Datei-, Bild- und IoT-Datentypen nicht für Organisationen des Mandanten verfügbar. Lösungen, die ausgeschlossene Datentypen enthalten, werden nicht installiert. Kunden müssen sich bei CMK abmelden, um diese Daten verwenden zu können.<p/>
+> Dateiattribute werden in <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.SdkClientVersion> 9.0.45.329 oder höher und Web API Version 9.1 oder höher unterstützt.
+
 
 <!--File data is not passed to plug-ins for performance reasons. You must retrieve the file data in plug-in code using an explicit retrieve call. -->
   

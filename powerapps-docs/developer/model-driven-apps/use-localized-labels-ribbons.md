@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48737a053227cbe5daa6b07ef727a4eba31c1ba7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c4eb7d7bf269541aef706a6e47ae25d7511a1590
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748789"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275906"
 ---
 # <a name="use-localized-labels-with-ribbons"></a>Verwenden lokalisierten Bezeichnungen in Menübändern
 
@@ -28,6 +28,7 @@ ms.locfileid: "2748789"
 Obwohl in Menübandelementen, die Text anzeigen, direkt Text eingegeben werden kann, ist die Verwendung lokalisierter Menübänder für die Definition von Text, der im Menüband angezeigt wird, die bewährte Methode. Das ermöglicht mehrsprachige Funktionen und verbesserte Verwaltung von freigegebenem Text.  
   
 ## <a name="using-localized-labels"></a>Verwenden von lokalisierten Beschriftungen  
+
  Das `<RibbonDiffXml>`-Element enthält das `<LocLabels>`-Element. Wie in dem folgenden Beispiel gezeigt können Sie hier angeben, welcher Text in den Menübandbeschriftungen und Tooltips mithilfe des Elements `<Titles>` angezeigt werden soll.  
   
 ```xml  
@@ -55,12 +56,13 @@ ToolTipDescription="$LocLabels:MyISV.account.SendToOtherSystem.ToolTip"
 ```  
   
 ## <a name="force-a-line-break-in-a-ribbon-control-label"></a>Erzwingen eines Zeilenumbruchs in einem Steuerelement für die Menübandbeschriftung  
+
  Wenn Sie ein sehr langes Steuerelement für die Menübeschriftung haben, wird der Text umgebrochen, um in den verfügbaren Platz zu passen. Sie können angeben, wo ein Zeilenumbruch eingefügt werden soll, indem Sie die folgenden Zeichen verwenden: `&#x200b;&#x200b;`.  
   
  Wenn der Beschriftungstexts sehr lang ist und kein Platz für einen Zeilenumbruch bleibt, wird die Breite des Steuerelements erweitert, damit die gesamte Beschriftung angezeigt wird.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
  [Exportieren, Vorbereitung der Bearbeitung und Importieren des Menübands](export-prepare-edit-import-ribbon.md)   
  [Verwenden von lokalisierten Bezeichnungen in Menübändern](use-localized-labels-ribbons.md)   
  [Menübandbefehle definieren](define-ribbon-commands.md)

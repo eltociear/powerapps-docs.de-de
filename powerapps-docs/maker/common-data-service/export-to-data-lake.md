@@ -2,7 +2,7 @@
 title: Zu Data Lake exportieren | MicrosoftDocs
 description: Erfahren Sie, wie Sie Entitätsdaten in einen Azure Data Lake exportieren in Power Apps
 ms.custom: ''
-ms.date: 03/04/2020
+ms.date: 04/27/2020
 ms.reviewer: Mattp123
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 04913c04d6f8209ed3d0a11105964627eec96220
-ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
+ms.openlocfilehash: 52ab32a0ddf27a2a6be3566305655399918b01e4
+ms.sourcegitcommit: 51fa748cde4ea81e918dae1b39f9dca1d6e4e546
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3119899"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3292065"
 ---
 # <a name="export-entity-data-to-azure-data-lake-storage-gen2"></a>Entitätsdaten nach Azure Data Lake Storage Gen2 exportieren
 
@@ -44,7 +44,7 @@ Export to Data Lake bietet diese Funktionen:
 
 ## <a name="how-data-and-metadata-are-exported"></a>Wie Daten und Metadaten exportiert werden
 
-Der Export to Data Lake-Dienst unterstützt anfängliches und inkrementelles Schreiben für Entitätsdaten und Metadaten. Alle Daten oder Metadatenänderungen in Common Data Service werden ohne weitere Aktion automatisch zum Data Lake übertragen. Es handelt sich hierbei eher um eine Push-Operation als um eine Pull-Operation. Änderungen werden an den Zielort geschoben, ohne dass Sie Aktualisierungsintervalle einrichten müssen. 
+Der Export to Data Lake-Dienst unterstützt anfängliches und inkrementelles Schreiben für Entitätsdaten und Metadaten. Alle Daten oder Metadatenänderungen in Common Data Service werden ohne weitere Aktion automatisch zum Data Lake übertragen. Es handelt sich hierbei eher um eine Push-Operation als um eine Pull-Operation. Änderungen werden an das Ziel übertragen, ohne dass Sie Aktualisierungsintervalle einrichten müssen. 
 
 Es können sowohl Standard- als auch benutzerdefinierte Entitäten exportiert werden. Beachten sie, dass die Änderungsnachverfolgungsfunktion in Common Data Service verwendet wird, um die Daten effizient zu synchronisieren, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden. 
 
@@ -88,6 +88,9 @@ Befolgen Sie die Schritte im Artikel  [Azure Storage-Konto erstellen](/azure/s
    > ![Die zu exportierende Entitäten auswählen](media/export-data-lake-select-entity.png "Die zu exportierende Entitäten auswählen")
 
 Ihre Common Data Service-Umgebung ist mit dem Azure Data Lake Storage-Gen2-Konto verknüpft. Das Dateisystem im Azure-Speicherkonto wird mit einem Ordner für jede für die Replikation im Data Lake ausgewählte Entität erstellt. 
+
+> [!NOTE]
+> Die vom Dienst Export to data lake exportierten Daten werden im Ruhezustand in Azure Data Lake Storage Gen2 verschlüsselt. Zusätzlich werden transiente Daten im Blobspeicher auch im Ruhezustand verschlüsselt. Die Verschlüsselung in Azure Data Lake Storage Gen2 hilft Ihnen beim Schutz Ihrer Daten, bei der Implementierung von Sicherheitsrichtlinien des Unternehmens und bei der Erfüllung gesetzlicher Vorschriften. Weitere Informationen: [Azure Datenverschlüsselung im Ruhezustand]( /azure/security/fundamentals/encryption-atrest)
 
 ## <a name="manage-entity-data-to-the-data-lake"></a>Entitätsdaten zum Data Lake verwalten
 

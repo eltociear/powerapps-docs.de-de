@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6da18a7795f2e39e5f51f62403327bcfef09287c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f02e62c57724e172398788ed1283a99d62c47b14
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754571"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275858"
 ---
 # <a name="publish-request-schema"></a>Veröffentlichen des Anforderungsschemas
 
@@ -119,4 +119,4 @@ Folgendes ist die Schemadefinition für die <xref:Microsoft.Crm.Sdk.Messages.Pub
 ### <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest>   
  [Anpassungen veröffentlichen](publish-customizations.md)   
- [In modellgestützten Apps verwendete Schemas](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)
+ [Schemata, die in modellbasierten Apps verwendet werden](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)

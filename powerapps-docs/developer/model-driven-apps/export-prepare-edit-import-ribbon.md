@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6494c278f147be996beb10d0e295666ae39a564b
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: 624b158e50807396ccc3e349b1afc2c158bbc82c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172581"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275914"
 ---
 # <a name="export-prepare-to-edit-and-import-the-ribbon"></a>Exportieren, Vorbereitung der Bearbeitung und Importieren des Menübands
 
@@ -27,24 +27,26 @@ ms.locfileid: "3172581"
 
 Um das Menüband zu bearbeiten, müssen folgende Aufgaben ausgeführt werden:  
   
-1.  [Exportieren des Menübands](export-prepare-edit-import-ribbon.md#BKMK_ExportTheRibbon)  
+1. [Exportieren des Menübands](export-prepare-edit-import-ribbon.md#BKMK_ExportTheRibbon)  
   
-2.  [Vorbereitung zum Bearbeiten der XML-Datei](export-prepare-edit-import-ribbon.md#BKMK_PrepareToEditTheXML)  
+2. [Vorbereitung zum Bearbeiten der XML-Datei](export-prepare-edit-import-ribbon.md#BKMK_PrepareToEditTheXML)  
   
-3.  Bearbeiten des `<RibbonDiffXml>`  
+3. Bearbeiten des `<RibbonDiffXml>`  
   
-4.  [Importieren des Menübands](export-prepare-edit-import-ribbon.md#BKMK_ImportTheRibbon)  
+4. [Importieren des Menübands](export-prepare-edit-import-ribbon.md#BKMK_ImportTheRibbon)  
   
-<a name="BKMK_ExportTheRibbon"></a>   
+<a name="BKMK_ExportTheRibbon"></a>
+
 ## <a name="export-the-ribbon"></a>Exportieren des Menübands  
- Exportieren Sie das Menüband, indem Sie es in eine Lösung einschließen und dann die Lösung exportieren. Sie können auswählen, alle Anpassungen zu exportieren, aber dies kann eine große Datenmenge darstellen. Wir empfehlen, dass Sie eine vorhandene nicht-verwaltete Lösung verwenden oder eine neue Lösung erstellen.  
+
+Exportieren Sie das Menüband, indem Sie es in eine Lösung einschließen und dann die Lösung exportieren. Sie können auswählen, alle Anpassungen zu exportieren, aber dies kann eine große Datenmenge darstellen. Wir empfehlen, dass Sie eine vorhandene nicht-verwaltete Lösung verwenden oder eine neue Lösung erstellen.  
   
 #### <a name="create-a-new-solution"></a>Erstellen einer neuen Lösung  
   
 1. Gehen Sie zu **Einstellungen > Anpassungen**.
 1. Gehen Sie zu **Einstellungen > Lösungen**.
 1. Klicken oder tippen Sie auf **Neu**.  
-1. Geben Sie einen aussagefähigen **Anzeigenamen**, **Eindeutigen Namen** ein, und geben Sie einen **Herausgeber** ein, und geben Sie eine **Versionsnr.** ein.  
+1. Geben Sie einen aussagekräftigen **Anzeigenamen**, **Namen** und einen **Herausgeber** sowie eine **Versionsnummer** ein.  
   
    > [!NOTE]
    >  Sie können den Standardherausgeber für die Organisation verwenden.  
@@ -106,12 +108,13 @@ Um das Menüband zu bearbeiten, müssen folgende Aufgaben ausgeführt werden:
 ## <a name="prepare-to-edit-the-xml"></a>Vorbereitung zum Bearbeiten der XML-Datei  
  Für eine verbesserten Anwendungsleistung bearbeiten Sie die Datei customizations.xml mit einer Anwendung, die die Schemaüberprüfung verwenden kann, um IntelliSense-Support bereitzustellen. Weitere Informationen finden Sie unter [Bearbeiten der Anpassungsdatei mit Schemaüberprüfung](edit-customizations-xml-file-schema-validation.md).  
   
-<a name="BKMK_ImportTheRibbon"></a>   
+<a name="BKMK_ImportTheRibbon"></a>
+
 ## <a name="import-the-ribbon"></a>Importieren des Menübands  
   
 1. Nachdem Sie die customization.xml-Datei bearbeitet haben, Visual Studio klicken Sie mit der rechten Maustaste in Visual Web Developer 2010 Express auf die Registerkarte customization.xml und wählen Sie **Enthaltenden Ordner öffnen**.  
   
-2. Wählen Sie alle Dateien oder Ordner aus, die enthalten waren, als Sie die Lösung extrahierten. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, wählen Sie **Senden an**, und wählen Sie dann **Komprimierter (gezippter) Ordner**.  
+2. Wählen Sie alle Dateien oder Ordner aus, die enthalten waren, als Sie die Lösung extrahierten. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, wählen Sie **Senden an** und wählen Sie dann **Komprimierter (gezippter) Ordner**.  
   
    > [!NOTE]
    >  Dies erstellt eine komprimierte ZIP-Datei im gleichen Ordner. Der Name der Dateikann abweichen, aber er ist identisch mit einer der anderen Dateien im Ordner - außer mit einer eine ZIP-Dateinamenerweiterung.  
@@ -130,6 +133,7 @@ Um das Menüband zu bearbeiten, müssen folgende Aufgaben ausgeführt werden:
 10. Nachdem Sie die Lösung erfolgreich importiert haben, müssen Sie Anpassungen veröffentlichen, bevor Sie die Änderungen anzeigen können. Klicken Sie der Lösungsliste auf **Alle Anpassungen veröffentlichen**.  
   
 <a name="BKMK_DealWithErrorsOnImport"></a>   
+
 ### <a name="dealing-with-errors-on-import"></a>Behandeln von Fehlern beim Import  
   
 1.  Wenn Sie eine Benachrichtigung erhalten, dass Fehler aufgetreten sind, durch die der Import scheiterte, klicken Sie auf **Exportprotokoll**.  
@@ -145,7 +149,7 @@ Um das Menüband zu bearbeiten, müssen folgende Aufgaben ausgeführt werden:
 
 ## <a name="troubleshoot-ribbon-issues"></a>Beheben von Menübandproblemen
 
-Wenn ein Problem mit einer Menüband-Befehlsleistenschaltfläche auftritt, verwenden Sie diese Anleitung zur Fehlerbehebung, um das Problem zu finden und zu beheben: <https://support.microsoft.com/help/4552163>
+Wenn bei Ihnen ein Problem mit einer Schaltfläche in der Menüband-Befehlsleiste auftritt, verwenden Sie diesen [Fehlerbehebungsleitfaden](https://support.microsoft.com/help/4552163), um das Problem zu finden und zu lösen.
 
 ### <a name="see-also"></a>Siehe auch  
  [Anpassen des Menübands](customize-commands-ribbon.md)   

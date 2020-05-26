@@ -2,7 +2,7 @@
 title: Entitätsformulare anpassen (modellgesteuerte Apps) | Microsoft Docs
 description: Formulare bieten die Benutzeroberfläche (UI), mit der Benutzer Entitätsdatensätze erstellen, anzeigen oder bearbeiten. Verwenden Sie den Formular-Designer in der Anpassungstools, um Entitätsformulare zu erstellen und zu bearbeiten. Dieses Thema enthält die erforderlichen Informationen, um programmgesteuert Formulare zu erstellen oder zu bearbeiten.
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/10/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: e6a25bbe-e484-cfe9-9ad9-20ac6f19336a
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f81937377d647aae58f189236c1d656d6ab988e5
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: b5ca535e329f20813662e9a218ed47da19d09a08
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126505"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275938"
 ---
 # <a name="customize-entity-forms"></a>Anpassen von Entitätsformularen
 
@@ -44,7 +44,7 @@ Formulare bieten die Benutzeroberfläche (UI), mit der Benutzer Entitätsdatens�
 ### <a name="view-formxml-from-an-exported-entity"></a>Anzeige von FormXML aus einer exportierten Entität  
  Nur Definitionen von Systementitätsformularen, die angepasst wurden, sind in einer exportierten verwalteten Lösung enthalten. Um die Definition eines Systementitätsformulars anzuzeigen, müssen Sie sie entweder irgendwie ändern oder ein neues Formular erstellen, indem Sie das vorhandene Formular unter einem neuen Namen speichern.  
 
- Nachdem Sie die Lösung exportiert haben, extrahieren Sie die Inhalte und zeigen Sie die customizations.xml-Datei an. Sie finden die Definition der Formulare in `ImportExportXml` > `Entities` > `Entity` > `FormXml`. Im `<FormXml>`-Knoten finden Sie alle Formulartypen gruppiert in einem `<forms>`-Element mit dem Attribut `type`, das den Typ des Formulars angibt.  
+ Nachdem Sie die Lösung exportiert haben, extrahieren Sie die Inhalte und zeigen Sie die customizations.xml-Datei an. Die Definition der Formulare finden Sie unter `ImportExportXml` > `Entities` > `Entity` > `FormXml`. Im Knoten `<FormXml>` finden Sie jeden Formulartyp in einem `<forms>`-Element gruppiert, wobei das Attribut `type` den Formulartyp angibt.  
 
 <a name="BKMK_FormProperties"></a>   
 ## <a name="form-properties"></a>Formulareigenschaften  
@@ -56,7 +56,7 @@ Formulare bieten die Benutzeroberfläche (UI), mit der Benutzer Entitätsdatens�
 |   `AncestorFormId`    |                  `<ancestor>`                   |                      Eindeutiger Bezeichner des übergeordneten Formulars. Dieser wird festgelegt, wenn Sie ein neues Formular erstellen, indem Sie ein Formular mit **Speichern unter** fürein bestehendes Formular oder mit <xref:Microsoft.Crm.Sdk.Messages.CopySystemFormRequest> erstellen.                      |
 |    `CanBeDeleted`     |                `<CanBeDeleted>`                 |                                    Informationen, mit denen angegeben wird, ob die Komponente gelöscht werden kann. Diese verwaltete Eigenschaft wird erst angewendet, wenn das Formular erstellt wurde, indem eine verwaltete Lösung importiert wird.                                    |
 |     `Description`     |                `<Descriptions>`                 | `Description` ist eine Zeichenfolge und `<Descriptions>` enthält alle Bezeichnungen der lokalisierten Beschreibung des Formulars.<br /><br /> Die lokalisierten Etiketten können mithilfe von <xref:Microsoft.Crm.Sdk.Messages.RetrieveLocLabelsRequest> abgerufen werden. |
-| `FormActivationState` |             `<FormActivationState>`             |                                  Legt den Status des Formulars fest.<br /><br /> Nur Formulare des Typs "Haupt" können deaktiviert werden.<br /><br /> Gültige Werte:<br /><br /> -   0 : Inaktiv<br />-   1 : Aktiv                                  |
+| `FormActivationState` |             `<FormActivationState>`             |                                  Legt den Status des Formulars fest.<br /><br /> Nur Formulare vom Typ "main" können deaktiviert werden.<br /><br /> Gültige Werte:<br /><br /> -   0 : Inaktiv<br />-   1 : Aktiv                                  |
 |       `FormId`        |                   `<formid>`                    |                                                                                                     Eindeutiger Bezeichner des Formulars                                                                                                     |
 |  `FormPresentation`   |              `<FormPresentation>`               |                                     Gibt an, ob sich dieses Formular im aktualisierten UI-Layout in Common Data Service befindet.                                      |
 |       `FormXml`       |                    `<form>`                     |                                                                                                XML-Darstellung des Formularlayouts.                                                                                                 |
@@ -74,7 +74,7 @@ Formulare bieten die Benutzeroberfläche (UI), mit der Benutzer Entitätsdatens�
 
  Sie können neue Formulare für eine Entität nur erstellen, wenn <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>. <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanCreateForms> dies zulässt.  
 
- Sie können neue Formulare entweder mit einer <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> oder mit <xref:Microsoft.Crm.Sdk.Messages.CopySystemFormRequest> erstellen. Wenn Sie <xref:Microsoft.Crm.Sdk.Messages.CopySystemFormRequest> oder **Speichern unter** im Formulareditor verwenden, findet keine Vererbung zwischen den Formularen statt. Daher werden Änderungen am Basisformular nicht automatisch auf auf dessen Grundlage erstellte Formulare angewendet.  
+ Sie können neue Formulare entweder mit einer <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> oder mit <xref:Microsoft.Crm.Sdk.Messages.CopySystemFormRequest> erstellen. Wenn Sie <xref:Microsoft.Crm.Sdk.Messages.CopySystemFormRequest> oder **Speichern unter** im Formulareditor verwenden, findet keine Vererbung zwischen den Formularen statt. Änderungen am Basisformular werden daher nicht automatisch auf alle daraus erstellten Formulare angewendet.  
 
  Das Ändern der Formulardefinitionen aus einer exportierten verwalteten Lösung und der anschließende erneute Import der Lösung ist das unterstützte Verfahren für die Bearbeitung von Entitätsformularen. Beik manuellen Bearbeiten von Formularen wird nachdrücklich empfohlen, einen XML-Editor zu verwenden, der die Schemaevaluierung ermöglicht. Weitere Informationen: [Bearbeiten der Anpassungs-XML-Datei mit Schemaüberprüfung](edit-customizations-xml-file-schema-validation.md).  
 
@@ -82,10 +82,10 @@ Formulare bieten die Benutzeroberfläche (UI), mit der Benutzer Entitätsdatens�
 
 Um das Hauptformular in einem Dialogfeld mithilfe der Client-API zu öffnen, müssen Sie den Aufruf mithilfe der [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto) Methode aufrufen. Mit [der Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto) API-Methode können Sie das Dialogfeld mit mehreren Optionen öffnen, einschließlich Größe und Position.
 
+
 > [!IMPORTANT]
 > - Das geöffnete Hauptformular in einem Dialogfeld mit der Client-API befindet sich noch in der Vorschau.
-> - Die Vorschaufunktionen sind nicht für die Produktion vorgesehen und weisen möglicherweise eine eingeschränkte Funktionalität auf. Diese Funktionen stehen vor der offiziellen Version zur Verfügung, damit Kunden früher Zugriff darauf erhalten und Feedback geben können.
-
+> - Vorschaufunktionen sind nicht für den produktiven Einsatz gedacht und haben möglicherweise eingeschränkte Funktionalität. Diese Funktionen stehen vor der offiziellen Version zur Verfügung, damit Kunden früher Zugriff darauf erhalten und Feedback geben können.
 
 > [!NOTE]
 > [Die Xrm.Navigation.openForm](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/openform) Methode wird nicht unterstützt, um ein Hauptformular als Dialog zu öffnen.
@@ -97,7 +97,17 @@ Um das Hauptformular in einem Dialogfeld mithilfe der Client-API zu öffnen, mü
 In diesem Beispiel öffnet das Dialogfeld ein neues Kontoformular zum Erstellen eines neuen Datensatzes. Das Dialogfeld wird in der Mitte angezeigt, indem bis zu 50 % des verfügbaren Fensters als Modal auf dem Formular verwendet werden, das aufgerufen oder aufgerufen wurde.
 
 ```JavaScript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 1, width: {value: 50, unit:"%"}});
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2,
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 50, unit:"%"},
+    position: 1
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions);
 ```
 > [!div class="mx-imgBorder"]
 > ![Einen neuen Datensatz öffnen](media/open-new-record-mfd.png "Einen neuen Datensatz öffnen")
@@ -107,7 +117,18 @@ Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formTy
 In diesem Beispiel öffnet das Dialogfeld einen vorhandenen Firmendatensatz mit dem Kontoentitäts-ID-Wert über dem Kontaktformular. Ersetzen Sie die Entitäts-ID durch einen beliebigen Datensatz-ID-Wert, den Sie im Dialogfeld öffnen möchten.
 
 ```JavaScript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2, entityId:"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"}, {target: 2, position: 1, width: {value: 80, unit:"%"}});
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2,
+    entityId: "5a57f2c3-5672-ea11-a812-000d3a339706" //replace with actual ID
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 80, unit:"%"},
+    position: 1
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions);
 ```
 > [!div class="mx-imgBorder"]
 > ![Vorhandenen Datensatz öffnen](media/open-existing-record-mfd.png "Vorhandenen Datensatz öffnen")
@@ -117,7 +138,17 @@ Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formTy
 In diesem Beispiel öffnet das Dialogfeld einen neuen Datensatz in der rechten Ecke des Fensters. Dies kann durch die Verwendung der Pixeloptionen erreicht werden.
 
 ```JavaScript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 2, width: {value: 500, unit:"px"}});
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2,
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 500, unit:"px"},
+    position: 2
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions);
 ```
 > [!div class="mx-imgBorder"]
 > ![Öffnen eines bestehenden Datensatzes im Seitenbereich](media/open-record-side-pane-mfd.png "Öffnen eines bestehenden Datensatzes im Seitenbereich")
@@ -127,13 +158,26 @@ Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formTy
 Dieses Beispiel zeigt, wie ein Hauptformulardialog mit einer Rückrufmethode aufgerufen wird, nachdem ein Datensatz gespeichert und das Dialogfeld geschlossen wurde.
 
 ```Javascript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2},{target: 2, position: 2, width: {value: 80, unit:"%"}}).then(
-    function (retVal) {
-        console.log(retVal.savedEntityReference[0].id + ", " + retVal.savedEntityReference[0].name)
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 80, unit:"%"},
+    position: 2  
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions).then(
+    function success(result) {
+            console.log("Record created with ID: " + result.savedEntityReference[0].id + 
+            " Name: " + result.savedEntityReference[0].name)
+            // Handle dialog closed
     },
-    function (error) {
-        console.log(error);
-    });
+    function error() {
+            // Handle errors
+    }
+);
 ```
 
 ### <a name="see-also"></a>Siehe auch  

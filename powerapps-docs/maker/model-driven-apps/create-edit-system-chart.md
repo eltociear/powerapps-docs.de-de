@@ -2,7 +2,7 @@
 title: Erstellen oder bearbeiten eines Systemdiagramms für modellgesteuerte Apps in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie ein Diagramm erstellt oder bearbeitet wird
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 03/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,22 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24c932f34c23c42f938f54ffa4f328f25a714c59
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 426bfaf0ab53e1d896f7e0b098e089c8596ad907
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875176"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285606"
 ---
 # <a name="create-a-model-driven-app-system-chart"></a>Erstellen eines Systemdiagramms für modellgesteuerte Apps
 
-In diesem Thema erfahren Sie, wie Sie ein Systemdiagramm erstellen. Systemdiagramme sind Diagramme im Besitz der Organisation. Dadurch stehen sie allen Benutzern mit Lesezugriff auf die Daten, mit denen die App ausgeführt werden. Systemdiagramme können nicht zugewiesen oder für bestimmte App-Benutzer freigegeben werden.  
+In diesem Thema erfahren Sie, wie Sie ein Systemdiagramm erstellen. Systemdiagramme sind Diagramme im Besitz der Organisation. Dadurch stehen sie allen Benutzern mit Lesezugriff auf die Daten, mit denen die App ausgeführt werden. Systemdiagramme können nicht bestimmten App-Benutzern zugewiesen oder mit ihnen geteilt werden.  
   
 1. Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-    > [!IMPORTANT]
-    > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).     
-  
 2. Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Diagramme**.  
   
 3.  Wählen Sie **Diagramm hinzufügen** in der Symbolleiste.  

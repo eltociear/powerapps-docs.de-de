@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9b87b36d0262a3bf634b9d8e22cc79f7f1816373
-ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
+ms.openlocfilehash: a55cebde012018b68aac06cf144e1b91a9e065f5
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3119756"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275930"
 ---
-# <a name="image-web-resources"></a>Bildwebressourcen
+# <a name="image-web-resources"></a>Image-Webressourcen
 
-Verwenden von Bildwebressourcen, um Bilder zur Verwendung in modellgesteuerten Apps bereitzustellen.  
+Verwenden Sie Bild-Webressourcen, um Bilder zur Verwendung in modellbasierten Apps verfügbar zu machen.  
 
 Es gibt 5 Arten von Bild-Webressourcen: 
 * PNG-Format
@@ -33,7 +33,7 @@ Es gibt 5 Arten von Bild-Webressourcen:
 * Vektorformat (SVG)
 
 > [!NOTE]
-> Vektorformat (SVG)-Webressourcen wurden hinzugefügt mit der modellgesteuerten App.
+> Mit den modellbasierten Apps wurden Webressourcen im Vektorformat (SVG) hinzugefügt.
 
   
 <a name="BKMK_Capabilities"></a>   
@@ -109,13 +109,13 @@ Verwenden Sie Vektorformat (SVG)-Webressourcen für alle Symbole, die in der Anw
 ```  
   
 > [!NOTE]
->  Die Verwendung der `$webresource:`-Direktive fügt eine Lösungsabhängigkeit hinzu, die verhindert, dass die referenzierten Bildwebressourcen gelöscht werden, solange sie von einer anderen Lösungskomponente verwendet werden.  
+> Die Verwendung der `$webresource:`-Direktive fügt eine Lösungsabhängigkeit hinzu, die verhindert, dass die referenzierten Bildwebressourcen gelöscht werden, solange sie von einer anderen Lösungskomponente verwendet werden.  
   
 ### <a name="see-also"></a>Siehe auch  
  [Webressourcen](web-resources.md)   
- [Verwenden von Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   
- [Verwenden von Stylesheet(CSS)-Webressourcen](css-web-resources.md)   
- [Verwenden von Webressourcen für Skripts (JScript)](script-jscript-web-resources.md)   
- [Verwenden von Daten (XML)-Webressourcen](data-xml-web-resources.md)   
- [Verwenden von Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  
- [Verwenden von Stylesheet (XSL)-Webressourcen](stylesheet-xsl-web-resources.md)
+ [Verwendung von Web-Seiten (HTML) Web-Ressourcen](webpage-html-web-resources.md)   
+ [Verwendung von Style Sheet (CSS) Webressourcen](css-web-resources.md)   
+ [Benutzung von Skript (JScript)-Webressourcen](script-jscript-web-resources.md)   
+ [Verwenden von Daten (XML) Web-Ressourcen](data-xml-web-resources.md)   
+ [Benutzung von Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  
+ [Verwendung von Stylesheet (XSL)-Webressourcen](stylesheet-xsl-web-resources.md)

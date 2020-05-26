@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 27809198af9348b246dd7d0c2a5401880c13eb73
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0301d48ccc739d8f6382deb8b01eeac7719e6dc2
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748442"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275982"
 ---
 # <a name="publish-customizations"></a>Veröffentlichen von Anpassungen
 
@@ -52,7 +52,7 @@ Das Veröffentlichen von Anpassungen macht die Webanwendung auf Änderungen an d
   
 <a name="BKMK_RetrieveUnpublishedMetadata"></a>   
 ## <a name="retrieving-unpublished-metadata"></a>Abrufen von nicht veröffentlichten Metadaten  
- Wenn Sie eine Anwendung erstellen möchten, um anpassbare Elemente in modellgestützten Apps zu bearbeiten, müssen Sie alle nicht veröffentlichten Definitionen dieser Elemente abrufen. Wenn ein Entwickler Änderungen definiert, sie jedoch nicht veröffentlicht, muss die Anwendung in der Lage sein, sie abzurufen, um sie in der Benutzeroberfläche anzuzeigen. 
+ Wenn Sie eine Anwendung zur Bearbeitung anpassbarer Elemente in modellbasierten Apps erstellen möchten, müssen Sie alle unveröffentlichten Definitionen dieser Elemente abrufen. Wenn ein Entwickler Änderungen definiert, sie jedoch nicht veröffentlicht, muss die Anwendung in der Lage sein, sie abzurufen, um sie in der Benutzeroberfläche anzuzeigen. 
   
  Verwenden Sie die folgenden zwei Möglichkeiten, um nicht veröffentlichte Metadaten abzurufen:  
   
@@ -79,11 +79,12 @@ Das Veröffentlichen von Anpassungen macht die Webanwendung auf Änderungen an d
 - <xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedMultipleRequest>  
   
 ### <a name="see-also"></a>Siehe auch  
- [Anpassen modellgestützter Apps](/dynamics365/customer-engagement/developer/customize-dev/customize-applications)<br/>
+
+ [Anpassen modellbasierter Apps](/dynamics365/customer-engagement/developer/customize-dev/customize-applications)<br/>
  [Erweitern des Metadatenmodells](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)<br/>
  [Veröffentlichen des Anforderungsschemas](publish-request-schema.md)<br/>
  [Anpassen von Entitätsformularen](customize-entity-forms.md)<br/>
  [Anpassen von Entitätsansichten](customize-entity-views.md)<br/>
  [Anpassen von globalen Optionssätzen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)<br/>
- [Anwendungsnavigation mithilfe von SiteMap ändern](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)
+ [Änderungsantragnavigation mithilfe von SiteMap](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)
 

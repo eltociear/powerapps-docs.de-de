@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 28ac02182471d35b77d2c45dc1f3148d881ff5d9
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 8a16f2553411878a769a486f7b0fc7df25bcfb70
+ms.sourcegitcommit: cbaf5ba8b6435796a538ece2da5cc172c0781fad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156042"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254300"
 ---
 # <a name="iorganizationservice-interface"></a>IOrganizationService-Schnittstelle
 
@@ -59,7 +59,7 @@ Jede der Klassen, die die Benutzeroberfläche <xref:Microsoft.Xrm.Sdk.IOrganizat
 |<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>|Ändern den Attributwert eines Entitätsdatensatzes.|
 
 > [!NOTE]
-> Der Organisationsservice macht nur die `Execute` Methode verfügbar. Die anderen Methoden in der <xref:Microsoft.Xrm.Sdk.IOrganizationService> Schnittstelle sind einfach  Verpackungen rund um die `Execute` Methode. Diese anderen Methoden werden für doe Benutzerfreundlichkeit bereitgestellt. Sie können alle Vorgänge mithilfe der Methode `Execute` ausführen. Weitere Informationen: [Verwenden von Meldungen mit dem Organisationsservice](use-messages.md)
+> Der Organisationsdienst stellt nur die `Execute`-Methode dar. Die anderen Methoden in der <xref:Microsoft.Xrm.Sdk.IOrganizationService> Schnittstelle sind einfach  Verpackungen rund um die `Execute` Methode. Diese anderen Methoden werden für doe Benutzerfreundlichkeit bereitgestellt. Sie können alle Vorgänge mithilfe der Methode `Execute` ausführen. Weitere Informationen: [Verwenden von Meldungen mit dem Organisationsservice](use-messages.md)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,7 +1,7 @@
 ---
 title: Feld einem modellgesteuerten App-Formular hinzufügen in Power Apps | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 03/18/2020
+ms.date: 05/04/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f3b24d42fa8a9c800bf16eab51f39bb741c3d3bc
-ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
+ms.openlocfilehash: dcf292660c89e55ec83739c4dba662ff4cf7bff4
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3166880"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332474"
 ---
 # <a name="add-a-field-to-a-model-driven-app-form"></a>So fügen Sie ein Feld zu einem modellgesteuerten App-Formular hinzu: 
 
@@ -49,8 +49,13 @@ In diesem Thema fügen Sie ein Feld einem Formular hinzu.
   
 6.  Wenn Sie die Bearbeitung des Formulars abgeschlossen haben, klicken Sie auf **Speichern und schließen**.  
   
+> [!IMPORTANT]
+>  Wenn Sie in der einheitlichen Benutzeroberfläche Sicherheit auf Feldebene einstellen, empfehlen wir nicht, dass Sie für ein erforderliches Feld unter Verwendung von Sicherheitsregeln auf Feldebene schreibgeschützt festlegen.  Wenn der Datensatz erstellt wird, ignoriert die Speicher-Pipeline die schreibgeschützte Einstellung für das erforderliche Feld und speichert den Datensatz. Wir empfehlen, dass Sie die Entität mit rollenbasierter Sicherheit auf schreibgeschützt setzen. Dadurch wird sichergestellt, dass es beim Erstellen oder Speichern eines Datensatzes keine Konflikte gibt.
+  
+  
 > [!NOTE]
->  Das Veröffentlichen von Anpassungen kann sich auf den normalen Systembetrieb auswirken. Wir empfehlen, dass Sie Veröffentlichungen zu einem Zeitpunkt durchführen, wenn dies die Benutzer am wenigsten stört.  
+>  Das Veröffentlichen von Anpassungen kann sich auf den normalen Systembetrieb auswirken. Wir empfehlen, dass Sie Veröffentlichungen zu einem Zeitpunkt durchführen, wenn dies die Benutzer am wenigsten stört.
+
   
 ## <a name="next-steps"></a>Nächste Schritte  
  

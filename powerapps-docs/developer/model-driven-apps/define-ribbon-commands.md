@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ea2f5cfdffb19589719780e7da1afaf3c510243
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: 0578be828ec9d061df54df173320e8719137bf9c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218555"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275974"
 ---
 # <a name="define-ribbon-commands"></a>Menübandbefehle definieren
 
@@ -43,6 +43,6 @@ Ein *Menübandbefehl* erstellt eine wiederverwendbare Definition, auf die von Me
 >  Alle Befehlsdefinitionen werden auf den Computer eines Benutzers heruntergeladen, damit sie bei Laufzeit ausgewertet werden können. Das bedeutet, dass ein Benutzer, der keine Berechtigung hat, ein bestimmtes Steuerelement im Menüband zu sehen, den Browserbefehl **Quelle anzeigen** verwenden, den Code überarbeiten und bestimmen kann, ob ein Steuerelement besteht, das nicht angezeigt wird.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
  [Verwenden von lokalisierten Bezeichnungen in Menübändern](use-localized-labels-ribbons.md)   
- [Definieren von Menüband-Aktivierungsregeln](define-ribbon-enable-rules.md) [Beheben von Menübandproblemen](https://support.microsoft.com/help/4552163)
+ [Freigaberegeln für Menüband definieren](define-ribbon-enable-rules.md) [Fehlerbehebung bei Menüband-Problemen](https://support.microsoft.com/help/4552163)

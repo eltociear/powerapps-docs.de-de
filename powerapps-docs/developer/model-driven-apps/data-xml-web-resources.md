@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8d6669c644b3ecc9419f7900030eb663cf25ebe1
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: bc5eeb970ecd8d54b7276e0f932e4822456e04e4
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115650"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276126"
 ---
 # <a name="data-xml-web-resources"></a>Webressourcen von Daten (XML)
 
@@ -40,9 +40,9 @@ Verwenden Sie Webressourcen von Daten (XML), um Daten sicher aufzurufen und zu s
   
 ### <a name="see-also"></a>Siehe auch  
  [Webressourcen](web-resources.md)   
- [Verwenden von Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   
- [Verwenden von Stylesheet(CSS)-Webressourcen](css-web-resources.md)   
- [Verwenden von Webressourcen für Skripts (JScript)](script-jscript-web-resources.md)   
- [Verwenden von Bild (JPG, PNG, GIF, ICO)-Webressourcen](image-web-resources.md)   
- [Verwenden von Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo-->
- [Verwenden von Stylesheet (XSL)-Webressourcen](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Verwendung von Web-Seiten (HTML) Web-Ressourcen](webpage-html-web-resources.md)   
+ [Verwendung von Style Sheet (CSS) Webressourcen](css-web-resources.md)   
+ [Benutzung von Skript (JScript)-Webressourcen](script-jscript-web-resources.md)   
+ [Verwendung von Bildern (JPG, PNG, GIF) Web-Ressourcen](image-web-resources.md)   
+ [Benutzung von Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Verwendung von Stylesheet (XSL)-Webressourcen](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->

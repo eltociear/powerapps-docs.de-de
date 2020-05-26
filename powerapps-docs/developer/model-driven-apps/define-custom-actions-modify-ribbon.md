@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 368801cbac62fee5f51646959c6f62380a6c61db
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 13c793dbc4e9011ee1d5685374010a7b9e204ffe
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115862"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276130"
 ---
 # <a name="define-custom-actions-to-modify-the-ribbon"></a>Festlegen benutzerdefinierter Aktionen zur Änderung des Menübands
 
@@ -61,6 +61,6 @@ Der Standard, eine Anwendungsbefehlsleiste oder ein Menüband, wird von den Comm
  Das Element **HideActionId** bietet eine eindeutige ID für die Aktion. Aus Gründen der Konsistenz und Lesbarkeit, sollten Sie derselben Namenskonvention folgen wie für `<CustomAction>` -Elemente. Das Attribut **Ort** muss der ID des Menübandelements entsprechen, das Sie entfernen möchten.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
- [Daten von einer Seite als Parameter an Menüband-Aktionen übermitteln](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant Power Apps repo link-->
- [Definieren der Skalierung für Menübandelemente](define-scaling-ribbon-elements.md)
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
+ [Daten von einer Seite als Parameter an Menüband-Aktionen übergeben](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant Power Apps repo link-->
+ [Skalierung für Menüband-Elemente definieren](define-scaling-ribbon-elements.md)

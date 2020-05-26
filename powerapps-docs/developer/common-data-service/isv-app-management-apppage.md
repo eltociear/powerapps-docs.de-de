@@ -20,18 +20,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9624293706f8b1307f19fc168f37c6464c724c65
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 037625ac96dd64b6093b7a898479d4f88cca46f9
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748278"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3261805"
 ---
 # <a name="the-app-page"></a>Die App-Seite
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Nachdem der Benutzer eine App ausgewählt hat, wird der Benutzer zur Detailseite der App geführt, die eine Ansicht zur Analyse der Installationshistorie in den Mandanten für diese bestimmte App bietet. Die Beschreibung der App stammt von [AppSource](https://appsource.microsoft.com/).
+Nachdem der Benutzer eine App ausgewählt hat, wird er zur Detailseite der App navigiert, die eine Ansicht zur Analyse der Installationshistorie über Mandanten hinweg für diese bestimmte App bietet. Die Beschreibung der App stammt von [AppSource](https://appsource.microsoft.com/).
 
 ![App-Detailseite](media/isv-portal-apppage-appname.png)
 
@@ -87,5 +87,7 @@ Beim Hovern über ein Diagrammelement werden die folgenden Informationen angezei
 ### <a name="see-also"></a>Siehe auch
 
 [Einführung in ISV Studio für die Power Platform](isv-app-management.md)  
-[Homepage](isv-app-management-homepage.md)  
-[Mandantenseite](isv-app-management-tenantpage.md)
+[Homepage](isv-app-management-homepage.md)<br/>
+[Mandantenseite](isv-app-management-tenantpage.md)<br/>
+[AppSource Checker](isv-app-management-appsource-checker.md)<br/>
+[Zertifizierung von Konnektoren](isv-app-management-certification.md)

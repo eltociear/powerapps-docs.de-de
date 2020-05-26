@@ -6,17 +6,17 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/15/2020
+ms.date: 05/01/2020
 ms.author: pankar
 ms.reviewer: kvivek
 searchScope:
 - PowerApps
-ms.openlocfilehash: 5a622a7d945fa78536c3addb75cfa64d327c7c90
-ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
+ms.openlocfilehash: dc58fcf20d79e0557e2f2e1a2999ac669e089c95
+ms.sourcegitcommit: b75b29d58adf1547c9fcd3ddd1f14f69fb7f572b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265403"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "3330247"
 ---
 # <a name="configure-master-data-and-view-dashboards"></a>Masterdaten konfigurieren und Dashboards anzeigen
 
@@ -29,9 +29,7 @@ Diese Aufgaben werden normalerweise von Geschäftsadministratoren in Ihrer Organ
 Verwenden Sie die Administrator-App, um Stammdaten für Ihre Organisation zu erstellen und zu verwalten. Diese Daten sind erforderlich, damit die Hospital Emergency Response-App funktioniert.
 
 > [!IMPORTANT]
-> - Stellen Sie sicher, dass Ihr IT-Administrator die Lösung in Ihrem Unternehmen bereitgestellt und Geschäftsadministratoren die entsprechenden Berechtigungen zur Verwendung der Administrator-App erteilt hat. Mehr Informationen: [Die App für Notfallmaßnahmen im Krankenhaus bereitstellen](deploy-configure.md#deploy-the-hospital-emergency-response-app)
-> 
-> - Sie können Ihre Daten auch aus den im Bereitstellungspaket verfügbaren Datendateien importieren. Weitere Informationen: [Schritt 4: Laden der Konfigurations- und Stammdaten für Ihre Organisation](deploy-configure.md#step-4-load-configuration-and-master-data-for-your-organization)
+> Stellen Sie sicher, dass Ihr IT-Administrator die Lösung in Ihrem Unternehmen bereitgestellt und Geschäftsadministratoren die entsprechenden Berechtigungen zur Verwendung der Administrator-App erteilt hat. Mehr Informationen: [Die App für Notfallmaßnahmen im Krankenhaus bereitstellen](deploy-configure.md)
 
 Sie müssen Stammdaten zu diesen Entitäten in der folgenden Reihenfolge hinzufügen:
 
@@ -53,7 +51,7 @@ Die Stammdaten werden vom Bereich **Standorte** in der linken Navigation in der 
 Die Entitäten im Bereich **Hierarchie** werden in der Reihenfolge aufgelistet, in der Sie Daten auffüllen sollten.
 
 > [!NOTE]
-> Pflegekategoriendaten werden während der Bereitstellung der Lösung importiert. Weitere Informationen: [Schritt 4: Laden der Konfigurations- und Stammdaten für Ihre Organisation](deploy-configure.md#step-4-load-configuration-and-master-data-for-your-organization)
+> Die Genauigkeitsdaten werden bei der Neuinstallation der App automatisch importiert. Weitere Informationen: [Installieren Sie die App](deploy-configure.md#step-3-install-the-app)
 
 ### <a name="systems-data"></a>Systemdaten
 
@@ -147,7 +145,7 @@ Um den Datensatz zu bearbeiten, wählen Sie den Datensatz aus, aktualisieren Sie
 Mit der Entität **Standorte** können Sie bestimmte Standorte in jeder Krankenhauseinrichtung verwalten.
 
 > [!NOTE]
-> Stellen Sie vor dem Erstellen eines **Standorte**-Datensatzes sicher, dass Sie die Pflegekategoriedaten mit der Datei **00 – Acuities Import.xlsx** wie weiter oben erläutert in [Schritt 4: Laden der Konfigurations- und Stammdaten für Ihre Organisation](deploy-configure.md#step-4-load-configuration-and-master-data-for-your-organization) importiert haben. Dies liegt daran, dass Pflegekategoriedaten zur Erstellung eines **Standort**-Datensatzes erforderlich sind.
+> Bevor Sie einen Datensatz **Standorte** erstellen, vergewissern Sie sich, dass Sie über die Schärfegraddaten verfügen. Dies liegt daran, dass Pflegekategoriedaten zur Erstellung eines **Standort**-Datensatzes erforderlich sind.
 
 So erstellen Sie einen Datensatz:
 
@@ -282,7 +280,7 @@ Sie können zusätzlich zu den standardmäßig verfügbaren Dashboards auch eige
 
 So verwalten Sie Dashboards:
 
-1. Melden Sie sich bei [Power Apps](https://make.powerapps.com) an und navigieren Sie zu Ihrer Administrator-App.
+1. Melden Sie sich bei der Administrator-App (modellgesteuerte App) unter der von Ihrem IT-Administrator angegebenen URL an.
 
 2. Wählen Sie im linken Navigationsbereich die Option **Dashboards** aus der Bereichsauswahl aus:
 
@@ -341,7 +339,7 @@ Zeigen Sie die Power BI-Dashboards für Einblicke und Entscheidungsfindung an.
 
 - Power BI-Premium-Kapazität oder Power BI-Pro-Lizenzen für Benutzer, die auf den Bericht zugreifen. 
 
-- Ihr IT-Administrator muss den Power BI-Bericht veröffentlicht haben und Ihnen die Berechtigung zum Zugriff erteilt haben. Weitere Information: [Power BI-Dashboard veröffentlichen](deploy-configure.md#publish-the-power-bi-dashboard) 
+- Ihr IT-Administrator muss den Power BI-Bericht veröffentlicht haben und Ihnen die Berechtigung zum Zugriff erteilt haben. Weitere Information: [Power BI-Dashboard veröffentlichen](deploy-configure.md#step-10-publish-the-power-bi-dashboard) 
 
 ### <a name="view-the-dashboard"></a>Dashboard anzeigen
 
@@ -444,7 +442,7 @@ Alle Rückmeldungen von Mitarbeitern an vorderster Front, die Canvas-Apps auf ih
 
 So erfolgt das Anzeigen und Verwalten von App-Feedback:
 
-1. Melden Sie sich bei [Power Apps](https://make.powerapps.com) an und navigieren Sie zu Ihrer Administrator-App.
+1. Melden Sie sich bei der Administrator-App (modellgesteuerte App) unter der von Ihrem IT-Administrator angegebenen URL an.
 
 2. Wählen Sie im linken Navigationsbereich die Option **Administration** aus der Bereichsauswahl aus.
 
@@ -452,6 +450,55 @@ So erfolgt das Anzeigen und Verwalten von App-Feedback:
 
     > [!div class="mx-imgBorder"]
     > ![App-Feedback auswählen](media/select-app-feedback.png)
+
+## <a name="view-the-admin-app-in-your-language"></a>Sehen Sie sich die Admin Apps in Ihrer Sprache an
+
+[!include[cc-lang](includes/cc-lang.md)]
+
+### <a name="enable-languages-for-your-environment"></a>Aktivieren Sie Sprachen für Ihre Umgebung
+
+Bevor Sie die Admin App in einer der unterstützten Sprachen anzeigen können, müssen die Sprachen vom Systemadministrator in Ihrer Umgebung aktiviert werden. Der Systemadministrator kann einen Konfigurationsschritt *Einmalig* durchführen, um die erforderlichen Sprachen aus einer der von der Admin Apps unterstützten Sprachen zu aktivieren.
+
+1. Melden Sie sich beim [Power Platform Admin-Center](https://aka.ms/ppac) an.
+
+2. Wählen Sie im linken Fensterbereich **Umgebungen** und wählen Sie dann [Ihre Umgebung] > **Einstellungen** > **Produkt** > **Sprachen**.
+
+    > [!div class="mx-imgBorder"]
+    > ![ppac-settings](media/ppac-settings.png)
+
+3. Wählen Sie auf der Seite **Spracheinstellungen** die Sprachen, die Sie aus einer der oben erwähnten unterstützten Sprachen aktivieren möchten, und wählen Sie **Anwenden** in der unteren rechten Ecke. Beispielsweise aktivieren wir die Sprachen **Französisch** und **Deutsch**.
+
+    > [!div class="mx-imgBorder"]
+    > ![ppac-lang-settings](media/ppac-lang-settings.png)
+
+4. Wählen Sie im Dialogfeld **Sprachänderung bestätigen** die Option **OK**.
+
+    > [!IMPORTANT]
+    > Die Aktivierung jeder ausgewählten Sprache kann mehrere Minuten dauern.
+
+### <a name="set-the-language-of-your-choice"></a>Legen Sie die Sprache Ihrer Wahl fest
+
+Nachdem die erforderlichen Sprachen von Ihrem Systemadministrator aktiviert wurden, kann jeder Admin-Benutzer die Sprache auswählen, in der er die Admin-App angezeigt haben möchte.
+
+1. Melden Sie sich bei der Administrator-App (modellgesteuerte App) unter der von Ihrem IT-Administrator angegebenen URL an.
+
+2. Wählen Sie die Schaltfläche **Einstellungen** in der oberen rechten Ecke des Bildschirms und wählen Sie dann **Personalisierungseinstellungen**.
+
+    > [!div class="mx-imgBorder"]
+    > ![personal-settings](media/personal-settings.png)
+
+3. Wählen Sie auf der Seite **Persönliche Optionen einstellen** die Registerkarte **Sprachen** und wählen Sie dann eine Sprache aus der Liste **Sprache der Benutzeroberfläche**. Die Liste zeigt alle Sprachen, die von Ihrem Systemadministrator für Ihre Umgebung aktiviert wurden.
+
+    > [!div class="mx-imgBorder"]
+    > ![select-lang](media/select-lang.png)
+
+4. Wählen Sie **OK** in der unteren rechten Ecke.
+
+Die Benutzeroberfläche der Admin Apps wechselt zur Anzeige in der von Ihnen gewählten Sprache.
+
+## <a name="extend-mobile-app-labels-experimental"></a>Erweitern Sie mobile App-Beschriftungen (experimentell)
+
+Sie können die Labels der mobilen Apps von Hospital Emergency Response mit benutzerdefiniertem Text erweitern. Dazu müssen Sie die Lösung **Canvas Apps Strings** importieren. Die Lösung fügt eine modellbasierte App namens **Canvas App Label Management** hinzu, mit der Sie die mobilen App-Labels der Hospital Emergency Response anpassen können. Fügen Sie mit der modellbasierten App neue von der Lösung unterstützte Sprachen und Text für entsprechende Labels mobiler Apps hinzu. Schritt-für-Schritt-Anweisungen und das Herunterladen der Lösung finden Sie unter [Extend Hospital Emergency Response Mobile App Labels ( experimentell)](https://github.com/microsoft/powerapps-tools/tree/master/Apps/EmergencyResponse/Experimental/LabelCustomizations).
 
 ## <a name="issues-and-feedback"></a>Probleme und Feedback
 

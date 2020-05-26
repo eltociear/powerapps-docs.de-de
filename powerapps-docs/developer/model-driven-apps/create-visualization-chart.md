@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48245a8034c8dde9da77e7cbd6e2c8d9163bb5d5
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: ef9bb60a64b4b7b88d252fcfbbc99e74307eb298
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115866"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275838"
 ---
 # <a name="create-a-visualization-chart"></a>Erstellen einer Visualisierung (Diagramm)
 
@@ -72,7 +72,7 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
   
 ```  
   
- Wenn Sie eine Webressourcenvisualisierung erstellen möchten, indem Sie die Dynamics 365 Common Data Service-Webanwendung verwenden, müssen Sie eine XML-Datei im folgenden Format erstellen und dann **Diagramm importieren** auf dem Menüband verwenden, um die Visualisierung zu importieren.  
+ Wenn Sie eine Webressourcen-Visualisierung unter Verwendung der Common Data Service erstellen möchten, müssen Sie eine XML-Datei im folgenden Format erstellen und dann **Diagramm importieren** im Menüband verwenden, um die Visualisierung zu importieren.  
   
 ```xml  
 <visualization>  

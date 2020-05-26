@@ -2,7 +2,7 @@
 title: Erkennen von doppelten Daten mit der Web-API (Common Data Service) | Microsoft-Dokumentation
 description: Lesen Sie, wie Sie mit dem MSCRM.SuppressDuplicateDetections-Header und der Common Data Service-Web-API Duplikate erkennen.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/06/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 73cfe1f28eb95e87e4aedf7eed9e51710ba9b8b2
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 0a32cc136d9876cdf84acd80a2f5229449115876
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126401"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "3233694"
 ---
 # <a name="detect-duplicate-data-using-the-web-api"></a>Erkennen von doppelten Daten mit der Web-API
 
@@ -44,7 +44,7 @@ Verwenden Sie die Voreinstellungskopfzeile `MSCRM.SuppressDuplicateDetection`, u
 
 
 > [!NOTE]
-> Stellen Sie sicher, dass entsprechende Duplikaterkennungsregeln vorhanden sind. Common Data Service enthält standardmäßige Duplikaterkennungsregeln für Firmen, Kontakte und Leads, jedoch nicht für andere Datensatztypen. Wenn Sie das System von Duplikate für andere Datensatztypen erkennen soll, müssen Sie eine neue Regel erstellen. <br/>- Informationen darüber, wie Sie eine Duplikaterkennungsregel mithilfe der Benutzeroberfläche erstellen, finden Sie unter [Einrichten einer Duplikaterkennungsregel, um Ihre Daten sauber zu halten](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean).<br/>- Weitere Informationen zum Erstellen von Duplikaterkennungsregeln mit Code [vgl. Duplikaterkennungsregeln](../duplicaterule-entities.md). 
+> Stellen Sie sicher, dass entsprechende Duplikaterkennungsregeln vorhanden sind. Common Data Service enthält standardmäßige Duplikaterkennungsregeln für Firmen, Kontakte und Leads, jedoch nicht für andere Datensatztypen. Wenn das System Duplikate für andere Datensatztypen erkennen soll, müssen Sie eine neue Regel erstellen. <br/>- Informationen darüber, wie Sie eine Duplikaterkennungsregel mithilfe der Benutzeroberfläche erstellen, finden Sie unter [Einrichten einer Duplikaterkennungsregel, um Ihre Daten sauber zu halten](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean).<br/>- Weitere Informationen zum Erstellen von Duplikaterkennungsregeln mit Code [vgl. Duplikaterkennungsregeln](../duplicaterule-entities.md). 
 
 
 
@@ -81,12 +81,7 @@ OData-Version: 4.0
 {
     "error": {
         "code": "0x80040333",
-        "message": "A record was not created or updated because a duplicate of the current record already exists.",
-        "innererror": {
-            "message": "A record was not created or updated because a duplicate of the current record already exists.",
-            "type": "Microsoft.Crm.CrmException",
-            [ Stack Trace and internal exception details omitted for brevity]
-        }
+        "message": "A record was not created or updated because a duplicate of the current record already exists."
     }
 }
 ```
@@ -128,12 +123,7 @@ OData-Version: 4.0
 {
     "error": {
         "code": "0x80040333",
-        "message": "A record was not created or updated because a duplicate of the current record already exists.",
-        "innererror": {
-            "message": "A record was not created or updated because a duplicate of the current record already exists.",
-            "type": "Microsoft.Crm.CrmException",
-            [ Stack Trace and internal exception details omitted for brevity]
-        }
+        "message": "A record was not created or updated because a duplicate of the current record already exists."
     }
 }
 ```

@@ -2,7 +2,7 @@
 title: Beispiel für Web-API-Funktionen und -Aktionen (Common Data Service) | Microsoft-Dokumentation
 description: Diese Beispielgruppe veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mit Hilfe der Common Data Service-Web-API ausgeführt werden. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/06/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 531ebab75dcbac2e00004ae91fd9ff5349670382
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: e5b5a2d825d51c8b5197adc1dc6751bae1698445
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154958"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "3233754"
 ---
 # <a name="web-api-functions-and-actions-sample"></a>Web API-Funktionen- und Aktionen-Beispiel
 
@@ -475,11 +475,7 @@ Content-Length: 2760
 {  
    "error":{  
       "code":"",  
-      "message":"ContactFirstName and ContactLastName are required when CustomerType is contact.",  
-      "innererror":{  
-         "message":"ContactFirstName and ContactLastName are required when CustomerType is contact.",  
-         ...[truncated]  
-      }  
+      "message":"ContactFirstName and ContactLastName are required when CustomerType is contact."
    }  
 }  
 ```  

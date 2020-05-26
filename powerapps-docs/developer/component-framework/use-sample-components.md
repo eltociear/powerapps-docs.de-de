@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: a674b37fd4616a21fe8d61336f255debafd552dd
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 59069a6ae5a42b3fb2eb52bf069ba084f6ea0166
+ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080840"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "3289282"
 ---
 # <a name="how-to-use-the-sample-components"></a>Beispielkomponenten verwenden
 
@@ -24,20 +24,23 @@ Alle in diesem Abschnitt aufgeführten Beispielkomponenten können [hier](https:
 In den einzelnen Themen zu Beispielkomponenten in diesem Abschnitt erhalten Sie einen Überblick über die Beispielkomponente, ihr visuelles Erscheinungsbild sowie das Manifest, den Code und die Ressourcen für die Beispielkomponente.
 
 ## <a name="before-you-can-try-the-sample-components"></a>Bevor Sie die Beispielkomponenten ausführen können
+
 Um die Beispielkomponenten zu testen, müssen Sie zuerst:
+
 - Eine lokale Kopie der Beispielkomponenten [herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525).
 - Installieren Sie die [Power Apps CLI](https://aka.ms/PowerAppsCLI).
 
 ## <a name="try-the-sample-components"></a>Testen der Beispielkomponenten
+
 Führen Sie die folgenden Schritte aus, um die Beispielkomponenten in Ihre modellgesteuerte oder Canvas-App zu importieren und zu testen:
 
 1. Navigieren Sie zum Ordner auf Ihrem Computer, in den Sie die Beispielkomponenten heruntergeladen haben, und extrahieren Sie die ZIP-Datei.  
-1. Öffnen Sie die Entwicklereingabeaufforderung für Visual Studio 2017 und navigieren Sie zum Beispielkomponentenordner im extrahierten Ordner, den Sie zur Laufzeit anzeigen möchten. Navigieren Sie zum Beispiel zum Ordner \<extracted_folder>/TS_IncrementComponent.
+1. Öffnen Sie die Entwicklereingabeaufforderung für Visual Studio 2017 und navigieren Sie zum Beispielkomponentenordner im extrahierten Ordner, den Sie zur Laufzeit anzeigen möchten. Navigieren Sie beispielsweise zum Ordner `/extracted_folder/TS_IncrementComponent`.
 1. Um alle erforderlichen Abhängigkeiten abzurufen, führen Sie den folgenden Befehl aus:
     ```CLI
     npm install
     ```
-1. Erstellen Sie mit dem Befehl `mkdir <folder name>` einen neuen Ordner innerhalb des Beispielkomponentenordners und navigieren Sie mit dem Befehl `cd <folder name>` zum Ordner. 
+1. Erstellen Sie mit dem Befehl `mkdir <folder name>` einen neuen Ordner innerhalb des Beispielkomponentenordners mit der Datei `pcfproj` und navigieren Sie mit dem Befehl `cd <folder name>` zum Ordner. 
 1. Erstellen Sie mithilfe des folgenden Befehls ein neues Lösungsprojekt im Ordner:
     ```CLI
     pac solution init --publisher-name <Name of the publisher> --publisher-prefix <Publisher prefix>

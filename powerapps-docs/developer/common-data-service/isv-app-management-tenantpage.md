@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11e38cf505a2fa6bb597c24fbf03bdbe1ddc9de1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e94e5a0058d6f892a06e982fba454551b15f5374
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748276"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3261789"
 ---
 # <a name="the-tenant-page"></a>Die Mandantenseite
 
@@ -88,5 +88,7 @@ Beim Hovern über ein Diagrammelement werden die folgenden Informationen angezei
 ### <a name="see-also"></a>Siehe auch
 
 [Einführung in ISV Studio für die Power Platform](isv-app-management.md)  
-[Homepage](isv-app-management-homepage.md)  
-[App-Seite](isv-app-management-apppage.md)
+[Homepage](isv-app-management-homepage.md)<br/> 
+[App-Seite](isv-app-management-apppage.md)<br/> 
+[AppSource Checker](isv-app-management-appsource-checker.md)<br/> 
+[Zertifizierung von Konnektoren](isv-app-management-certification.md)

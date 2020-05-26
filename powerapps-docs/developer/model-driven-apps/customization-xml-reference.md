@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0006367c852d5f3490c4c63cc5b923b952f997e8
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 28bf6d2499cf5739421a548d0ac9e8030e95a6cb
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115858"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275950"
 ---
 # <a name="customization-xml-reference"></a>Anpassungs-XML-Verweis
 
@@ -45,7 +45,7 @@ Die customizations.xml -Datei ist eine der Dateien, die in einer exportierten ni
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
  [In Dynamics 365 verwendete Schemas](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)<br/> <!-- TODO need to fix the link--> 
- [Wann Anpassungsdatei zu bearbeiten ist](../common-data-service/when-edit-customization-file.md)  
-[Bearbeiten der Anpassungsdatei mit Schemaüberprüfung](edit-customizations-xml-file-schema-validation.md)  
+ [Informationen zum Bearbeiten der Anpassungsdatei](../common-data-service/when-edit-customization-file.md)  
+[Bearbeiten Sie die Anpassungsdatei mit Schemavalidierung](edit-customizations-xml-file-schema-validation.md)  
  [Anpassen des Menübands für Dynamics 365](customize-commands-ribbon.md)  
- [Anwendungsnavigation mithilfe von SiteMap ändern](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap) <!-- TODO need to fix the link--> 
+ [Änderungsantragnavigation mithilfe von SiteMap](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap) <!-- TODO need to fix the link--> 

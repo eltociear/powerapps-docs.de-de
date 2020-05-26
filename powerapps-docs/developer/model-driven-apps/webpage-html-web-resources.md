@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 642d4f74e8d4e0c613bbc42381fecd4418f93030
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: abf6098de965ae83da968bf6b59da3615fb1c7f5
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126533"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275798"
 ---
 # <a name="webpage-html-web-resources"></a>Webressourcen der Webseite (HTML)
 
@@ -145,10 +145,11 @@ Da der HTML-Code in Webressourcen mithilfe des Texteditors geändert werden kann
  Wenn im Datenparameter mehrere Werte übergeben werden, werden diese automatisch kodiert. Es muss auch eine Logik enthalten sein, um die verschiedenen Parameter mit Hilfe von Skripten in Ihrer HTML-Webressource zu dekodieren. Dieses [Beispiel: Übergeben mehrerer Werte an eine Webressource mit dem Datenparameter](sample-pass-multiple-values-web-resource-through-data-parameter.md)-Thema zeigt eine Methode zum Übergeben von mehreren Parameterwerten.  
 
 ### <a name="see-also"></a>Siehe auch
+
  [Webressourcen](web-resources.md)   
  [Erstellen von barrierefreien Webressourcen](create-accessible-web-resources.md)   
- [Verwenden von Stylesheet(CSS)-Webressourcen](css-web-resources.md)   
- [Verwenden von Webressourcen für Skripts (JScript)](script-jscript-web-resources.md)   
- [Verwenden von Daten (XML)-Webressourcen](data-xml-web-resources.md)   
- [Verwenden von Bild (JPG, PNG, GIF, ICO)-Webressourcen](image-web-resources.md)   
- [Verwenden von Stylesheet (XSL)-Webressourcen](stylesheet-xsl-web-resources.md)
+ [Verwendung von Style Sheet (CSS) Webressourcen](css-web-resources.md)   
+ [Benutzung von Skript (JScript)-Webressourcen](script-jscript-web-resources.md)   
+ [Verwenden von Daten (XML) Web-Ressourcen](data-xml-web-resources.md)   
+ [Verwendung von Bildern (JPG, PNG, GIF) Web-Ressourcen](image-web-resources.md)   
+ [Verwendung von Stylesheet (XSL)-Webressourcen](stylesheet-xsl-web-resources.md)

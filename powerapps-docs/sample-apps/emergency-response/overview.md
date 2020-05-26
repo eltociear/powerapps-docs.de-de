@@ -6,17 +6,17 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/15/2020
+ms.date: 04/23/2020
 ms.author: pankar
 ms.reviewer: kvivek
 searchScope:
 - PowerApps
-ms.openlocfilehash: 1923c9a39fe4cc820de05acc8d8225500c2711af
-ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
+ms.openlocfilehash: be5ebbab60cb941518d655df5256f8b4070684b3
+ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3264882"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "3289248"
 ---
 # <a name="hospital-emergency-response---power-platform-sample-solution"></a>Hospital Emergency Response – Power Platform-Beispiellösung
 
@@ -31,7 +31,7 @@ Die Hauptkomponenten der Hospital Emergency Response-Lösung sind:
 - **Web-App für Krankenhausadministratoren**: Krankenhausadministratoren können mit dieser App Systemdaten hinzufügen und verwalten, die für das Funktionieren der Lösung erforderlich sind.
 - **Dashboards für Entscheidungsträger im Gesundheitswesen**: Verwenden Sie Dashboards, um wichtige Daten und Metriken schnell anzuzeigen, die Ihnen bei der effizienten Entscheidungsfindung helfen.
 
-Die Beispiellösung für Notfallmaßnahmen im Krankenhaus ist in den folgenden Sprachen verfügbar: Englisch, Französisch, Deutsch, Italienisch, Japanisch, Portugiesisch – Brasilien und Spanisch.
+[!include[cc-lang](includes/cc-lang.md)]
 
 
 ## <a name="demo-quick-overview"></a>Demo: Schnelle Übersicht
@@ -53,9 +53,9 @@ Weitere Informationen finden Sie auch unter [Lizenzierungsübersicht für Power 
 
 ## <a name="start-here"></a>Starten Sie hier
 
-|Aufgabe | Zielgruppe|Siehe|
+|Aufgabe | Zielgruppe|Unter|
 |--|--|--|
-|Beispiel-App und Dashboard bereitstellen|IT-Administrator|[Bereitstellen der Hospital Emergency Response-App](deploy-configure.md)|
+|Laden Sie die Beispiel-App und das Dashboard herunter und stellen Sie sie bereit|IT-Administrator|[Bereitstellen der Hospital Emergency Response-App](deploy-configure.md)|
 |Die Administrator-App verwenden, um Stammdaten hinzuzufügen/zu verwalten|Unternehmensadministrator|[Stammdaten für Ihre Organisation konfigurieren und verwalten](configure-data-reporting.md#configure-and-manage-master-data-for-your-organization)|
 |Dashboards für Einblicke und Entscheidungsfindung verwenden|Unternehmensadministrator|[Common Data Service-Dashboards anzeigen](configure-data-reporting.md#view-common-data-service-dashboards)<br/><br/>[Power BI-Dashboard anzeigen](configure-data-reporting.md#view-power-bi-dashboard)|
 |Verwenden Sie die mobile App, um Daten für Beatmungsgeräte, Personal, ausstehende Entlassungen und Patienten im Zusammenhang mit COVID-19 zu verfolgen|Frontpersonal|[Die mobile App für Notfallmaßnahmen im Krankenhaus verwenden](use.md)
@@ -70,4 +70,4 @@ Weitere Informationen finden Sie auch unter [Lizenzierungsübersicht für Power 
 
 ### <a name="disclaimer"></a>Haftungsausschluss
 
-Dies ist eine Beispiellösung und darf nur mit Microsoft Power Apps und Microsoft Power BI zur Verbreitung von Referenzinformationen verwendet werden. Diese App ist nicht vorgesehen oder verfügbar gemacht für die Verwendung als Medizinprodukt, klinische Unterstützung, Diagnosewerkzeug oder andere Technologie, die zur Diagnose, Heilung, Linderung, Behandlung oder Vorbeugung von Krankheiten oder anderen Erkrankungen verwendet werden soll. Microsoft gewährt keine Lizenz oder kein Recht, diese App für solche Zwecke zu verwenden. Diese App ist nicht als Ersatz für professionelle medizinische Beratung, Diagnose, Behandlung oder Beurteilung konzipiert oder vorgesehen und sollte nicht als solche verwendet werden. Der Kunde trägt das alleinige Risiko und die alleinige Verantwortung für die Nutzung dieser App. Microsoft garantiert nicht, dass die App oder die damit verbundenen Materialien für medizinische Zwecke ausreichen oder den gesundheitlichen oder medizinischen Anforderungen einer Person entsprechen.
+Diese App ist ein Beispiel und darf mit Microsoft Power Platform nur zur Verbreitung von Referenzinformationen verwendet werden. Diese App ist nicht vorgesehen oder verfügbar gemacht für die Verwendung als Medizinprodukt, klinische Unterstützung, Diagnosewerkzeug oder andere Technologie, die zur Diagnose, Heilung, Linderung, Behandlung oder Vorbeugung von Krankheiten oder anderen Erkrankungen verwendet werden soll. Microsoft gewährt keine Lizenz oder kein Recht, diese App für solche Zwecke zu verwenden. Diese App ist nicht als Ersatz für professionelle medizinische Beratung, Diagnose, Behandlung oder Beurteilung konzipiert oder gedacht und sollte nicht als solche verwendet werden. Der Kunde trägt das alleinige Risiko und die alleinige Verantwortung für die Nutzung dieser App. Microsoft garantiert nicht, dass die App oder die in Verbindung damit bereitgestellten Materialien für medizinische Zwecke ausreichen oder die gesundheitlichen oder medizinischen Anforderungen einer Person erfüllen. Die in dieser App enthaltenen Beispieldaten dienen nur zur Veranschaulichung und sind fiktiv. Eine echte Vereinigung ist weder beabsichtigt noch wird daraus geschlossen.

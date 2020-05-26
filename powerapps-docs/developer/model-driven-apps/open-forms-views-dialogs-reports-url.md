@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e99433c2fce04ec5b72579645ccfda838892dbea
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: c2176e4915970f214a8c74fa8c4f1ac61fd81f53
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091301"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326444"
 ---
 # <a name="open-forms-views-dialogs-and-reports-with-a-url"></a>Öffnen von Formularen, Ansichten, Dialogen und Berichten mit einer URL
 
@@ -90,8 +90,9 @@ https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid=
 |   `cmdbar`   |                                                                                                                Steuert, ob die Befehlsleiste angezeigt wird. **Hinweis:**  Diese Funktion unterstützt die Anforderungen für die Unified Service Desk-Anwendung. Die Verwendung, um eine Entität in einem IFrame anzuzeigen, das eingebettet in einem anderen Entitätsformular ist, wird nicht unterstützt. <br /><br /> -   `true`<br />     Die Befehlsleiste wird angezeigt. Dies ist die Standardeinstellung.<br />-   `false`<br />     Die Befehlsleiste wird ausgeblendet.                                                                                                                |
 
 <a name="BKMK_CopyViewURL"></a>   
+
 ### <a name="copy-the-url-for-a-view"></a>Kopieren der URL für eine Ansicht  
- Viele Ansichten in modellgestützten Apps ermöglichen es einem Benutzer, die URL für eine bestimmte Ansicht zu kopieren oder eine E-Mail zu senden, in der die URL für eine bestimmte Ansicht in der Nachricht eingebettet ist. Diese Funktion vereinfacht die Kommunikation zwischen Benutzern und ermöglicht es Ihnen, auf eine URL für eine Ansicht zuzugreifen, die Benutzer in einer anderen Anwendung, z. B. in einer SharePoint-Website, einschließen können.  
+ Bei vielen Ansichten in modellbasierten Apps kann ein Benutzer die URL für eine bestimmte Ansicht kopieren oder eine E-Mail mit der URL für eine bestimmte Ansicht senden, die in der Nachricht eingebettet ist. Diese Funktion vereinfacht die Kommunikation zwischen Benutzern und ermöglicht es Ihnen, auf eine URL für eine Ansicht zuzugreifen, die Benutzer in einer anderen Anwendung, z. B. in einer SharePoint-Website, einschließen können.  
 
 > [!NOTE]
 >  Verwenden Sie diese URL nicht, um die Ansicht in der Anwendungsnavigation mithilfe der Siteübersicht einzuschließen. Informationen hierzu finden Sie unter [Anzeigen einer Ansicht in der Anwendungsnavigation mithilfe der Siteübersicht](open-forms-views-dialogs-reports-url.md#BKMK_DisplayViewInApplicationUsingSiteMap).  
@@ -102,7 +103,7 @@ https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid=
 
 1. Öffnen Sie die Ansicht, die Sie verwenden möchten.  
 
-2. Klicken Sie auf der Befehlsleiste auf **Link senden** und anschließend auf **Für aktuelle Ansicht**.  
+2. Klicken Sie in der Befehlsleiste auf **Aktionen** und klicken Sie dann auf **Link per E-Mail senden**.  
 
 3. Fügen Sie den Link in Notepad ein, und bearbeiten Sie ihn, um nur den URL-Teil des gewünschten Textes zu extrahieren.  
 
@@ -110,13 +111,16 @@ https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid=
 > - Ansichten, die den Benutzerkontext als Parameter verwenden, beispielsweise **Meine Konten**, können nicht kopiert werden.  
 >   - Die GUID, die Systemansichten für Systementitäten darstellt, ist bei jeder Installation gleich. Die GUID für benutzerdefinierte Entitäten und benutzerdefinierte Ansichten ist für jede Installation von  eindeutig.  
 
-<a name="BKMK_DisplayViewInApplicationUsingSiteMap"></a>   
+<a name="BKMK_DisplayViewInApplicationUsingSiteMap"></a>  
+
 ### <a name="display-a-view-in-the-application-navigation-using-the-site-map"></a>Anzeigen einer Ansicht in der Anwendungsnavigation mithilfe der Siteübersicht  
- Wenn Sie die Anwendungsnavigation mithilfe der Siteübersicht anpassen, verwenden Sie nicht die Ansicht-URL, die Sie aus der Anwendung mithilfe der Schritte in [Kopieren der URL für eine Ansicht](open-forms-views-dialogs-reports-url.md#BKMK_CopyViewURL) kopiert haben, um die URL festzulegen. Mit dieser URL wird eine Seite angezeigt, die das Menüband enthält und zu unerwünschten Ergebnissen führt, wenn sie in einem `<SubArea>`-URL-Attribut verwendet wird.  
 
- Wenn Sie eine Liste von Entitätsdatensätzen innerhalb der Anwendung für einen Unterbereich anzeigen möchten, legen Sie den Entitätsattributwert fest. Dadurch wird die standardmäßige Ansicht für diese Entität mit dem richtigen Titel und Symbol angezeigt.  
+Wenn Sie die Anwendungsnavigation mithilfe der Siteübersicht anpassen, verwenden Sie nicht die Ansicht-URL, die Sie aus der Anwendung mithilfe der Schritte in [Kopieren der URL für eine Ansicht](open-forms-views-dialogs-reports-url.md#BKMK_CopyViewURL) kopiert haben, um die URL festzulegen.
+Mit dieser URL wird eine Seite angezeigt, die das Menüband enthält und zu unerwünschten Ergebnissen führt, wenn sie in einem `<SubArea>`-URL-Attribut verwendet wird.  
 
- Wenn Sie jedoch ein SubArea-Element wünschen, das eine bestimmte Standard-Anfangsansicht verwendet, verwenden Sie folgendes URL-Muster.  
+Wenn Sie eine Liste von Entitätsdatensätzen innerhalb der Anwendung für einen Unterbereich anzeigen möchten, legen Sie den Entitätsattributwert fest. Dadurch wird die standardmäßige Ansicht für diese Entität mit dem richtigen Titel und Symbol angezeigt.  
+
+Wenn Sie jedoch ein SubArea-Element wünschen, das eine bestimmte Standard-Anfangsansicht verwendet, verwenden Sie folgendes URL-Muster.  
 
 ```xml  
 Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value of view id>%7d”  
@@ -125,13 +129,15 @@ Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value
  Wenn Sie diese URL verwenden, müssen Sie außerdem entsprechende Werte für `<Titles>` und `<Descriptions>` sowie ein Symbol für die Entität angeben.  
 
 > [!NOTE]
->  Wenn Sie die Ansicht mithilfe der `/_root/homepage.aspx`-Seite angeben, wird die Ansichtsauswahl weiterhin angezeigt. Wenn der Benutzer die Ansicht ändert, merkt sich die modellgestützte App die aktuellste Auswahl des Benutzers, und die Standard-Anfangsansicht wird angezeigt, nachdem der Benutzer den Browser geschlossen und erneut geöffnet hat.  
+> Wenn Sie die Ansicht mithilfe der `/_root/homepage.aspx`-Seite angeben, wird die Ansichtsauswahl weiterhin angezeigt. Wenn der Benutzer die Ansicht ändert, merkt sich die modellgestützte App die aktuellste Auswahl des Benutzers, und die Standard-Anfangsansicht wird angezeigt, nachdem der Benutzer den Browser geschlossen und erneut geöffnet hat.  
 
 <a name="BKMK_OpenADialogProcess"></a>   
-## <a name="opening-a-dialog-process-by-using-a-url"></a>Öffnen eines Dialogprozess durch Verwendung einer URL  
- Eine gebräuchliche Anpassung besteht darin, einem Benutzer die Möglichkeit zu geben, einen bestimmten Dialogprozess im Kontext eines bestimmten Datensatzes zu öffnen. Beispielsweise können Sie eine benutzerdefinierte Schaltfläche zum Menüband für eine bestimmte Entität mithilfe des ID-Werts für den aktuellen Datensatz als Eingabeparameter für den Dialogprozess hinzufügen.  
 
- Zum Öffnen eines Dialogs ist Folgendes erforderlich:  
+## <a name="opening-a-dialog-process-by-using-a-url"></a>Öffnen eines Dialogprozess durch Verwendung einer URL
+
+Eine gebräuchliche Anpassung besteht darin, einem Benutzer die Möglichkeit zu geben, einen bestimmten Dialogprozess im Kontext eines bestimmten Datensatzes zu öffnen. Beispielsweise können Sie eine benutzerdefinierte Schaltfläche zum Menüband für eine bestimmte Entität mithilfe des ID-Werts für den aktuellen Datensatz als Eingabeparameter für den Dialogprozess hinzufügen.  
+
+Zum Öffnen eines Dialogs ist Folgendes erforderlich:  
 
 -   Der eindeutige Bezeichner für den Dialog.  
 
@@ -181,12 +187,12 @@ function openDialogProcess(dialogId, entityName, objectId)
  Zwei mögliche Werte für diesen Parameter lauten `run` oder `filter`. Wenn `run` verwendet wird, wird der Bericht mit den Standardfiltern angezeigt. Wenn `filter` verwendet wird, zeigt der Bericht einen Filter an, den der Benutzer bearbeiten kann, bevor er auf die Schaltfläche **Bericht ausführen** klickt, um den Bericht anzuzeigen.  
 
  **helpID**  
- Dieser Parameter ist optional. Für Berichte, die in modellgestützten Apps enthalten sind, lässt der Wert in diesem Parameter zu, dass über die Schaltfläche **Hilfe** entsprechender Inhalt zu diesem Bericht angezeigt wird, wenn **Hilfe zu dieser Seite** ausgewählt ist. Der Wert sollte dem `FileName`-Attributwert des Berichts entsprechen.  
+ Dieser Parameter ist optional. Bei Berichten, die in modellbasierten Apps enthalten sind, erlaubt der Wert in diesem Parameter, dass die Schaltfläche **Hilfe** den entsprechenden Inhalt über diesen Bericht anzeigt, wenn **Hilfe auf dieser Seite** gewählt wird. Der Wert sollte dem `FileName`-Attributwert des Berichts entsprechen.  
 
  **id**  
  Dieser Parameter ist der `ReportId`-Attributwert des Berichts.  
 
- Die folgenden Beispiele zeigen URLs, die zum Öffnen von Berichten in MDA verwendet werden können.  
+ Die folgenden Beispiele zeigen URLs, die zum Öffnen von Berichten in modellbasierten Apps verwendet werden können.  
 
  Öffnen Sie den Bericht **Vernachlässigte Anfragen** mithilfe des Standardfilters:  
  ```  

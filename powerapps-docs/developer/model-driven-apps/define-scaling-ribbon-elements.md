@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 844ac96d1e5e0a0a47b4a0c64d649a417d6fd632
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 0de4ce4a3475be0f5f6a6b4ed67284722601cc7a
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115846"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275814"
 ---
 # <a name="define-scaling-for-ribbon-elements"></a>Definieren der Skalierung für Menübandelemente
 
@@ -66,6 +66,6 @@ Für Anwendungsmenübänder und aktualisierte Entitätsformular-Menübänder gib
 >  Die `Sequence`-Attributwerte der `Scale`-Elemente werden nicht verwendet, um die Reihenfolge zu bestimmen, in der die Skalierung erfolgt. Die Skalierung wird entsprechend der relativen Reihenfolge der `MaxSize` und `Scale`-Element in RibbonDiffXML angewendet wird. Der `Sequence`-Wert ist wichtig sowohl für das `MaxSize`-Element als auch für das `Scale`-Element, weil alle `MaxSize`-Elemente über die `Scale`-Elemente zusammengefasst sein müssen. Wenn Sie neue `MaxSize`- oder `Scale`-Elemente hinzufügen, müssen Sie die `Sequence`-Standardwertbereiche überprüfen, die allen `MaxSize`- und `Scale`-Elementen zugewiesen sind. Ein häufiger Fehler ist die Zuweisung von `Sequence`-Werten, die zur Überschneidung der Bereiche führen können.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
- [Festlegen benutzerdefinierter Aktionen zur Änderung des Menübands](define-custom-actions-modify-ribbon.md)   
- [Definieren von Menüband-Registerkartenanzeigeregeln](define-ribbon-tab-display-rules.md)
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
+ [Definieren Sie benutzerdefinierte Aktionen zur Modifizierung des Menübands](define-custom-actions-modify-ribbon.md)   
+ [Darstellungsregeln für Menüband-Registerkarten definieren](define-ribbon-tab-display-rules.md)

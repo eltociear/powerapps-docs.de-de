@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 34ca8223ecf08bda2ed38353684a0971ab289b19
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 759c43e922d6d0d17f7efbf84ae8f442ee19850a
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748448"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326372"
 ---
 # <a name="sample-charts"></a>Beispieldiagramme
 
@@ -33,7 +33,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
   
 <a name="ColumnChart"></a>   
 ## <a name="column-chart"></a>Säulendiagramm  
- Im Folgenden sehen Sie ein Säulendiagramm, das die Firma nach Branche zeigt. Wir haben die Präsentationsbeschreibung des vorhandenen Standarddiagramms "Firma nach Branche" in modellgestützten Apps für die Entität `Account` geändert, um es in ein Säulendiagramm zu ändern.  
+ Im Folgenden sehen Sie ein Säulendiagramm, das die Firma nach Branche zeigt. Wir haben die Präsentationsbeschreibung des in modellbasierten Apps verfügbaren Standard-Diagramms "Konto nach Branche" für die `Account` Entität in ein Säulendiagramm geändert.  
   
  ![Beispiel-Säulendiagramm: Firmen nach Branche](media/charts-accounts-by-industry.gif "Beispiel-Säulendiagramm: Firmen nach Branche")  
   
@@ -92,7 +92,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
   
 <a name="BarChart"></a>   
 ## <a name="bar-chart"></a>Balkendiagramm  
- Es folgt ein Balkendiagramm, in dem die zehn wichtigsten Kunden dargestellt werden. Dies ist eines der Standarddiagramme, die in MDA für die Entität `Opportunity` verfügbar sind.  
+ Es folgt ein Balkendiagramm, in dem die zehn wichtigsten Kunden dargestellt werden. Dies ist eines der in modellbasierten Apps verfügbaren Standard-Diagramme für die `Opportunity`-Entität.  
   
  ![Beispiel-Balkendiagramm: Die 10 wichtigsten Kunden](media/charts-top-10-customers.gif "Beispiel-Balkendiagramm: Die 10 wichtigsten Kunden")  
   
@@ -212,7 +212,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
   
 <a name="LineChart"></a>   
 ## <a name="line-chart"></a>Liniendiagramm  
- Es folgt ein Liniendiagramm, in dem Anzahl der Leads gezeigt wird, die in den letzten fünf Monaten generiert wurden. Dies ist eines der Standarddiagramme, die in MDA für die Entität `Lead` verfügbar sind. 
+ Es folgt ein Liniendiagramm, in dem Anzahl der Leads gezeigt wird, die in den letzten fünf Monaten generiert wurden. Dies ist eines der in modellbasierten Apps verfügbaren Standard-Diagramme für die `Lead`-Entität. 
   
 ![Beispiel-Liniendiagramm: Leadgenerierungsrate](media/lead-generation-rate-chart.png "Beispiel-Liniendiagramm: Leadgenerierungsrate") --> 
   
@@ -269,7 +269,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
   
 <a name="PieChart"></a>   
 ## <a name="pie-chart"></a>Kreisdiagramm  
- Es folgt ein Kreisdiagramm, das die Gesamtanzahl der Leads und deren Bedeutung zeigt. Dies ist eines der Standarddiagramme, die in MDA für die Entität `Lead` verfügbar sind.  
+ Es folgt ein Kreisdiagramm, das die Gesamtanzahl der Leads und deren Bedeutung zeigt. Dies ist eines der in modellbasierten Apps verfügbaren Standard-Diagramme für die `Lead`-Entität.  
   
  ![Beispiel-Kreisdiagramm: Leads nach Bewertung](media/leads-by-source-chart.png "Beispiel-Kreisdiagramm: Leads nach Bewertung")  
   
@@ -323,7 +323,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
   
 <a name="FunnelChart"></a>   
 ## <a name="funnel-chart"></a>Trichterdiagramm  
- Es folgt ein Trichterdiagramm, das die Summe des geschätzten Umsatzes für alle Phasen der Verkaufspipeline zeigt. Dies ist eines der Standarddiagramme, die in MDA für die Entität `Opportunity` verfügbar sind.  
+ Es folgt ein Trichterdiagramm, das die Summe des geschätzten Umsatzes für alle Phasen der Verkaufspipeline zeigt. Dies ist eines der in modellbasierten Apps verfügbaren Standard-Diagramme für die `Opportunity`-Entität.  
   
  ![Beispiel-Trichterdiagramm: Verkaufspipeline](media/charts-sales-pipeline-chart.png "Beispiel-Trichterdiagramm: Verkaufspipeline")  
   
@@ -379,7 +379,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
   
 ## <a name="multi-series-chart"></a>Mehrfachseriendiagramm  
 
- Es folgt ein Mehrfachseriendiagramm, das den geschätzten Umsatz im Vergleich zum tatsächlichen Umsatz pro Monat zeigt. Mithilfe des Diagrammdesigners in MDS oder mit den in der Entwicklerdokumentation beschriebenen Methoden können Sie diese Diagrammarten erstellen.  
+ Es folgt ein Mehrfachseriendiagramm, das den geschätzten Umsatz im Vergleich zum tatsächlichen Umsatz pro Monat zeigt. Sie können den Diagramm-Designer in modellbasierten Apps oder in Methoden verwenden, die in der Entwicklerdokumentation beschrieben sind, um diese Arten von Diagrammen zu erstellen.  
   
  Ein Mehrfachseriendiagramm enthält mehrere `<measurecollection>`-Elemente in der Datenbeschreibung, wobei jedes dem entsprechenden `<Series>`-Element der Präsentationsbeschreibungs-XML-Zeichenfolge zugeordnet wird.  
   
@@ -458,7 +458,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
   
 <a name="ComparisonChart"></a>   
 ## <a name="comparison-chart-stacked-chart"></a>Vergleichsdiagramm (Gestapeltes Diagramm)  
- Es folgt ein Vergleichsdiagramm, das die Anzahl der Aktivitäten nach Typ und Priorität zeigt. Mithilfe des Diagrammdesigners in MDS oder mit den in der Entwicklerdokumentation beschriebenen Methoden können Sie diese Diagrammarten erstellen.  
+ Es folgt ein Vergleichsdiagramm, das die Anzahl der Aktivitäten nach Typ und Priorität zeigt. Sie können den Diagramm-Designer in modellbasierten Apps oder in Methoden verwenden, die in der Entwicklerdokumentation beschrieben sind, um diese Arten von Diagrammen zu erstellen.  
   
  Ein Vergleichsdiagramm enthält zwei `groupby`-Klauseln im Datenbeschreibungs-XML.  
   
@@ -525,7 +525,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
 
 ## <a name="comparison-chart-100-stacked-chart"></a>Vergleichsdiagramm (Gestapeltes Diagramm, 100 %)  
 
- Es folgt ein Vergleichsdiagramm, das die Anzahl der an einem beliebigen Datum geöffneten Anfragen gruppiert nach Priorität zeigt. Mithilfe des Diagrammdesigners in MDA oder mit den in den Webdiensten verfügbaren Methoden können Sie diese Diagrammarten erstellen.  
+ Es folgt ein Vergleichsdiagramm, das die Anzahl der an einem beliebigen Datum geöffneten Anfragen gruppiert nach Priorität zeigt. Sie können den Diagramm-Designer in modellbasierten Apps oder in den in den Webdiensten verfügbaren Methoden verwenden, um diese Art von Diagrammen zu erstellen.  
   
  Ein Vergleichsdiagramm enthält zwei `groupby`-Klauseln im Datenbeschreibungs-XML.  
   
@@ -588,6 +588,7 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
 ```  
   
 ### <a name="see-also"></a>Siehe auch  
+
  [Datenvisualisierung und Analysen](customize-visualizations-dashboards.md)   
  [Visualisierungsdaten-Beschreibungsschema](visualization-data-description-schema.md)   
  [Erstellen eines Diagramms](create-visualization-chart.md)   

@@ -15,51 +15,41 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c6a1be2be5bda302dcdbaebf57cfb3b50cc71b14
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 61a0ba6433290f832323766699a792f1e57aa9eb
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115854"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276142"
 ---
 # <a name="customize-visualizations-and-dashboards"></a>Anpassen von Visualisierungen und Dashboards
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-visualizations-dashboards -->
 
-Datenvisualisierung und Analysen in Modellgesteuerten Apps ermöglichen Ihnen, die Daten für Ihr Unternehmen grafisch anzuzeigen und zu analysieren, und helfen Ihnen, schneller Einblicke zu gewinnen, um wichtige unternehmerische Entscheidungen zu treffen. Sie können Dashboards so konfigurieren, dass Sie Daten aus verschiedenen Bereichen , beispielsweise Vertrieb, Marketing und Service, anzeigen können. Sie können sogar die in Visualisierungen und Dashboards angezeigten Daten entsprechend Ihren Unternehmensanforderungen anpassen, indem Sie Filter anwenden.  
+Datenvisualisierung und -analyse in modellbasierten Apps ermöglichen Ihnen die grafische Darstellung und Analyse der Daten für Ihr Unternehmen und helfen Ihnen, schnelle Einblicke für wichtige Geschäftsentscheidungen zu gewinnen. Sie können Dashboards so konfigurieren, dass Sie Daten aus verschiedenen Bereichen , beispielsweise Vertrieb, Marketing und Service, anzeigen können. Sie können sogar die in Visualisierungen und Dashboards angezeigten Daten entsprechend Ihren Unternehmensanforderungen anpassen, indem Sie Filter anwenden.  
   
  Die folgenden Elemente konstituieren die Visualisierungs-und Analysefähigkeiten:  
   
-- **Visualisierung**. Visualisierungen ermöglichen Ihnen, Ihre Daten in Form von Diagrammen anzuzeigen. Diagramme ermöglichen Ihnen, die aggregierte oder nicht-aggregierte Zusammenfassung von Rasterdaten in Modellgesteuerten Apps anzuzeigen. Die Diagramme sind mit dem Raster integriert und zeigen Daten im Kontext mit Rastern an. Die Diagramme werden automatisch aktualisiert, um die Filterung wiederzugeben, die an den Daten in den Rastern ausgeführt wird. Ebenso werden, wenn Sie einen Drilldownvorgang für das Diagramm ausführen, die Daten in dem entsprechenden Raster entsprechend aktualisiert. Sie können auch eine Webressource anstelle von Diagrammen in der Visualisierung verwenden.  
+- **Visualisierung**. Visualisierungen ermöglichen Ihnen, Ihre Daten in Form von Diagrammen anzuzeigen. Mit Hilfe von Diagrammen können Sie die aggregierte oder nicht aggregierte Zusammenfassung von Rasterdaten in modellbasierten Apps anzeigen. Die Diagramme sind mit dem Raster integriert und zeigen Daten im Kontext mit Rastern an. Die Diagramme werden automatisch aktualisiert, um die Filterung wiederzugeben, die an den Daten in den Rastern ausgeführt wird. Ebenso werden, wenn Sie einen Drilldownvorgang für das Diagramm ausführen, die Daten in dem entsprechenden Raster entsprechend aktualisiert. Sie können auch eine Webressource anstelle von Diagrammen in der Visualisierung verwenden.  
   
-- **Dashboard**. Dashboards fungieren als Business Intelligence-Tool in Modellgesteuerten Apps, indem sie eine Momentaufnahme Ihrer Daten in verschiedenen Formen bereitstellen. Sie können ein Dashboard verwenden, um Daten aus bis zu sechs Diagrammen, Rastern, IFrames oder Webressourcen gleichzeitig darzustellen.  
+- **Dashboard**. Dashboards dienen als Business Intelligence Tool in modellbasierten Apps, indem sie eine Momentaufnahme Ihrer Daten in verschiedenen Formen bereitstellen. Sie können ein Dashboard verwenden, um Daten aus bis zu sechs Diagrammen, Rastern, IFrames oder Webressourcen gleichzeitig darzustellen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Daten mit Visualisierungen (Diagramme) anzeigen](view-data-with-visualizations-charts.md)  
+
+[Daten mit Visualisierungen (Diagramme) anzeigen](view-data-with-visualizations-charts.md)  
+[Analysieren von Daten mit Dashboards](analyze-data-with-dashboards.md)  
+[Visualisierungsdaten-Beschreibungsschema](visualization-data-description-schema.md)  
   
- [Analysieren von Daten mit Dashboards](analyze-data-with-dashboards.md)  
-  
- [Visualisierungsdaten-Beschreibungsschema](visualization-data-description-schema.md)  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Erweitern des Metadatenmodells](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Anpassen von Entitätsformularen](customize-entity-forms.md)  
-  
- [Anpassen von Entitätsansichten](customize-entity-views.md)  
-  
- [Anpassen von globalen Optionssätzen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Änderungsantragnavigation mithilfe von SiteMap](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)  
-  
- [Servicekalender-Darstellungs-Konfiguration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Veröffentlichen von Anpassungen](publish-customizations.md)  
-  
- [Informationen zum Bearbeiten der Anpassungsdatei](when-edit-customization-file.md)  
-  
- [Erweitern des Clients](/dynamics365/customer-engagement/developer/extend-client)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Webressourcen](web-resources.md)
+## <a name="related-sections"></a>Verwandte Abschnitte 
+
+[Erweitern des Metadatenmodells](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)
+[Anpassen von Entitätsformen](customize-entity-forms.md)  
+[Entitätsansichten anpassen](customize-entity-views.md) 
+[Globale Optionssätze anpassen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)<br/>
+[Änderungsantragnavigation mithilfe von SiteMap](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)<br/>  
+[Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)  
+[Konfiguration des Erscheinungsbilds des Dienstkalenders](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration) 
+[Anpassungen veröffentlichen](publish-customizations.md)  
+[Informationen zum Bearbeiten der Anpassungsdatei](when-edit-customization-file.md)  
+[Erweitern des Clients](/dynamics365/customer-engagement/developer/extend-client)  
+[Webressourcen](web-resources.md)

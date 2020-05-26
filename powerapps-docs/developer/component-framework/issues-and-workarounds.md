@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: ee265ae0c82cc6b8fe82595ae555b989579177d2
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: 1d53a01d91822743311d350ddfce7733aba3f661
+ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218535"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260660"
 ---
 # <a name="common-issues-and-workarounds"></a>Allgemeine Probleme und Problemumgehungen
 
@@ -85,7 +85,7 @@ Fehler **Importieren der Lösung fehlgeschlagen: Webressourceninhalt ist zu gro�
 
 **Problemumgehung**
 
-- Erstellen Sie `.pcfproj` als Release-Konfiguration, die das Webpack mit dem Befehl in den Produktionsmodus versetzt. 
+- Erstellen Sie `.pcfproj` als Versionskonfiguration, die das Webpack mit dem Befehl in den Produktionsmodus versetzt. 
   ```CLI
   msbuild /property:configuration=Release
   ```
@@ -102,17 +102,21 @@ Fehler **Importieren der Lösung fehlgeschlagen: Webressourceninhalt ist zu gro�
     <PcfBuildMode>production</PcfBuildMode>
   </PropertyGroup>
   ```
-## <a name="solution-checker-issue"></a>Lösungsprüferproblem
 
-**Fehler: Verwenden Sie nicht die eval-Funktion oder ihre funktionalen Äquivalente.**
+## <a name="when-running-power-apps-checker-with-the-solution-built-using-cli-tooling-in-default-configuration"></a>Beim Ausführen von Power Apps Checker mit der Lösung, die mit CLI-Tooling in der Standardkonfiguration erstellt wurde, kann der Administrator entscheiden, ob die Anwendung in den Anwendungskatalog gehört
 
-Dieser Fehler tritt auf, wenn der Benutzer Codekomponenten mithilfe der CLI erstellt und verpackt, die Lösungsdatei mithilfe von `msbuild` erstellt, die Lösungsdatei in Common Data Service importiert und den Lösungsprüfer ausführt.
+**Fehler: Verwenden Sie nicht die Bewertungsfunktion oder ihre funktionalen Äquivalente** Diese Warnung ist beabsichtigt, da die Standardkonfiguration `msbuild` die `Configuration=Debug` ist. Dies wiederum weist Webpack (das zum Bündeln der Code-Komponente verwendet wird) an, im Entwicklungsmodus zu paketieren, der eine `eval()` ausgibt. 
 
 **Problemumgehung**
 
-Erstellen Sie die Lösungsdatei mit dem folgenden Befehl neu, importieren Sie die Lösung erneut in Common Data Service und führen Sie den Lösungsprüfer aus.
+Bauen Sie die Lösungsdatei mit einem der folgenden Befehle neu auf und importieren Sie die Lösung wieder in Common Data Service.
+
 ```CLI
 msbuild/property:configuration:Release
+```
+
+```CLI
+npm run build -- --buildMode production
 ```
 
 ## <a name="power-apps-component-framework-datasets-getvalue-by-property-alias-doesnt-work"></a>Power Apps component framework Datensätze getValue via Eigenschafts-Alias funktioniert nicht

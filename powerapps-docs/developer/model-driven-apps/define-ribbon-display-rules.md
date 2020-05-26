@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 190659fb75b6cb6e89b1952178ff4eb0301f47b7
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 71fd2e8592622f894d3636610767c078e92a33e8
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115658"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275926"
 ---
 # <a name="define-ribbon-display-rules"></a>Definieren von Menüband-Anzeigeregeln
 
@@ -198,6 +198,6 @@ Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definiere
 >  Bei Befehlen, die für das Unterraster für Formulare mithilfe der aktualisierten Benutzererfahrung definiert werden, können Werteregeln nicht innerhalb von Anzeigeregeln verwendet werden. Verwenden Sie dieses Element innerhalb von `<EnableRule>`, um ein Element auszublenden.  
 
 ### <a name="see-also"></a>Siehe auch  
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
- [Definieren von Menüband-Aktivierungsregeln](define-ribbon-enable-rules.md)   
- [Definieren von Menübandaktionen](define-ribbon-actions.md)
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
+ [Freigaberegeln für Menüband definieren](define-ribbon-enable-rules.md)   
+ [Definieren von Menüband-Aktionen](define-ribbon-actions.md)

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3617be54131274dc82f6940e39621b864e9fd76c
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 7a6b628c1c59de02078f96abf3a46abe21e446cf
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115910"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275826"
 ---
 # <a name="css-web-resources"></a>CSS Webressourcen
 
@@ -48,10 +48,10 @@ Verwenden Sie Cascading Stylesheets (CSS)-Webressourcen, um Stylesheets zur Verw
   
 ### <a name="see-also"></a>Siehe auch  
  [Webressourcen](web-resources.md)   
- [Verwenden von Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   
- [Verwenden von Webressourcen für Skripts (JScript)](script-jscript-web-resources.md)   
- [Verwenden von Daten (XML)-Webressourcen](data-xml-web-resources.md)   
- [Verwenden von Bild (JPG, PNG, GIF, ICO)-Webressourcen](image-web-resources.md)   
- [Verwenden von Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  
- [Verwenden von Stylesheet (XSL)-Webressourcen](stylesheet-xsl-web-resources.md)   
+ [Verwendung von Web-Seiten (HTML) Web-Ressourcen](webpage-html-web-resources.md)   
+ [Benutzung von Skript (JScript)-Webressourcen](script-jscript-web-resources.md)   
+ [Verwenden von Daten (XML) Web-Ressourcen](data-xml-web-resources.md)   
+ [Verwendung von Bildern (JPG, PNG, GIF) Web-Ressourcen](image-web-resources.md)   
+ [Benutzung von Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  
+ [Verwendung von Stylesheet (XSL)-Webressourcen](stylesheet-xsl-web-resources.md)   
  [WebResource-Entität](../common-data-service/reference/entities/webresource.md)

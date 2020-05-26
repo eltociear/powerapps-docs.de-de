@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen, Konfigurieren, Verschieben oder Löschen von Feldern in einem Formular | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 08/26/2019
+ms.date: 05/04/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d711a46676003786363f3496515dbd387024dadb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ce9bea71cb941628d943b60da30558c0d7794ed1
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860658"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332524"
 ---
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>Hinzufügen, Konfigurieren, Verschieben oder Löschen von Feldern in einem Formular  
 Sie können Felder mithilfe des Formulardesigners hinzufügen, konfigurieren, verschieben oder löschen.
@@ -78,6 +78,9 @@ Dies sind die verfügbaren Eigenschaften für die Konfiguration eines Felds, wen
 |**Anzeigeoptionen** | **Feld ausblenden** | Wenn diese Option ausgewählt ist, wird das Feld standardmäßig ausgeblendet und kann mithilfe von Code angezeigt werden. |
 |**Anzeigeoptionen** | **Auf Telefon ausblenden** | Um eine verkürzte Version dieses Formulars auf Smartphone-Bildschirmen anzuzeigen, können Felder ausgeblendet werden. |
 |**Formatierung** | **Feldbreite** |  Wenn der Abschnitt, der die Felder enthält, mehr als eine Spalte enthält, können Sie festlegen, dass das Feld die Anzahl von Spalten belegt, die der Abschnitt enthält. |
+
+[!NOTE] 
+> In der vereinheitlichten Benutzeroberfläche wird die Einstellung der Labelgröße ignoriert, da das Formular die Breite für alle Felder anpasst, um eine korrekte Darstellung für Bildschirmgrößen von sehr klein bis extragroß zu gewährleisten.
 
 ## <a name="move-fields-on-a-form"></a>Verschieben von Feldern in einem Formular
 Sie können Felder in einem Formular entweder per Drag & Drop oder durch Ausschneiden und Einfügen verschieben. 

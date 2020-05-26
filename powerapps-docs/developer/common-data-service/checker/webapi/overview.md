@@ -20,16 +20,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 01ef77aba8b6380b39c1514d317567132894c4af
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: ed1900a217d0f193f3026b6e48219489eb58d0cf
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909580"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341359"
 ---
 # <a name="use-the-power-apps-checker-web-api"></a>Verwenden der Power Apps-Überprüfungs-Web-API
 
 Die Power Apps-Überprüfungs-Web-API bietet einen Mechanismus für das Ausführen statischer Analyseprüfungen hinsichtlich Anpassungen und Erweiterungen für die Common Data Service-Plattform. Sie ist für Ersteller und Entwickler verfügbar, um umfangreiche Prüfungen der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen, um problematische Muster schnell zu ermitteln. Der Service bietet die Logik für die [Lösungsprüferfunktion](../../../../maker/common-data-service/use-powerapps-checker.md) im Power Apps-Ersteller-[Portal](https://make.powerapps.com) und ist als Teil der Automatisierung für [Anwendungen enthalten, die über AppSource eingereicht werden](../../publish-app-appsource.md). Das direkte Interagieren mit dem Service auf diese Weise ermöglicht eine Analyse von Lösungen, die in den lokalen (alle unterstützten Versionen) und Online-Umgebungen enthalten sind.
+
+Informationen über die Verwendung des Checker-Dienstes aus PowerShell-Code finden Sie unter [Arbeiten mit Lösungen mit PowerShell](/power-platform/alm/powershell-api).
 
 <a name="bkmk_altApproaches"></a>
 

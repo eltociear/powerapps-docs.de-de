@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 329e9f1845bfdfc9f2afa87528fbfd10bc4aa886
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 9741aa279c4164eb97e7c7489ab11adf2f506318
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126537"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275790"
 ---
 # <a name="pass-data-from-a-page-as-a-parameter-to-ribbon-actions"></a>Übergeben von Daten von einer Seite als Parameter an Menüband-Aktionen
 
@@ -119,9 +119,9 @@ function mySampleFunction(primaryControl) {
   
 ### <a name="see-also"></a>Siehe auch  
  [Anpassen des Menübands](customize-commands-ribbon.md)   
- [Parameter mit dem Menüband an eine URL übergeben](pass-parameters-url-by-using-ribbon.md)    
- [Definieren von Menübandaktionen](define-ribbon-actions.md)   
- [Festlegen benutzerdefinierter Aktionen zur Änderung des Menübands](define-custom-actions-modify-ribbon.md)<br>
+ [Übergabe von Parametern an eine URL über das Menüband](pass-parameters-url-by-using-ribbon.md)    
+ [Definieren von Menüband-Aktionen](define-ribbon-actions.md)   
+ [Definieren Sie benutzerdefinierte Aktionen, um das Menüband zu modifizieren](define-custom-actions-modify-ribbon.md)<br>
  [Formularkontext der Client-API](clientapi/clientapi-form-context.md)<br>
  [Rasterkontext der Client-API](clientapi/clientapi-grid-context.md)<br>
  

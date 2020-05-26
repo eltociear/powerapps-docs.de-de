@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6176e627bde57c71424cf657e698ed8aef66de20
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: fdb1fc5ceb8ec5ead1b5e43bc79e500de0f6a39a
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115970"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276134"
 ---
 # <a name="actions-on-dashboards"></a>Aktionen für Dashboards
 
@@ -56,6 +56,7 @@ Sie können fAktionen ausführen, wie Dashboards im Besitz der Organisation und 
   Eine Liste der unterstützten Meldungen für die benutzereigene Dashboardentität finden Sie unter [UserForm Entity](../common-data-service/reference/entities/userform.md).  
   
 ### <a name="see-also"></a>Siehe auch  
+
  [Dashboards für Microsoft Dynamics 365](analyze-data-with-dashboards.md)   
  [Nutzung der FormXML-Datei für Dashboards](understand-dashboards-dashboard-components-formxml.md)   
  [Erstellen eines Dashboards](create-dashboard.md)   

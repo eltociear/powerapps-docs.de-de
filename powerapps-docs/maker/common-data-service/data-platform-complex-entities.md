@@ -6,24 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 03/20/2020
+ms.date: 04/15/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e497b7dcf1b815acfaad7df170e3801083b8433e
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 464222180188a4295c8662b70f5b5d7cdef49509
+ms.sourcegitcommit: 371fb08328f88f8bae7335db413d52b5c961c3e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156568"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3266036"
 ---
 # <a name="complex-entities-and-licensing"></a>Komplexe Entitäten und Lizenzierung
 
 > [!IMPORTANT]
-> Komplexe Entitäten gelten nur für Power Apps Plan 1 und Plan 2 Lizenzen und nicht für Power Apps pro App und Power Apps pro User-Plan.
+> *Dieses Thema ist nur auf ältere Power Apps Plan 1 und Plan 2 Lizenzen anwendbar.* 
+>
+> Komplexe Einheiten sind *nur* für die älteren Power Apps Plan-1- und Plan-2-Lizenzen anwendbar, und nicht für die neuesten Power Apps pro App und Power Apps pro Benutzer Pläne.
+> 
 > Aktuelle Informationen zu den Lizenzbestimmungen für Unternehmen finden Sie im [Power Apps Lizenzhandbuch](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 Entitäten, die die folgende komplexe serverseitige Logik beinhalten, erfordern, dass Benutzer einer App oder eines Flow, die diese Entitäten verwendet, eine Power Apps Plan 2 oder Power Automate Plan 2 Lizenz besitzen:
@@ -31,7 +34,7 @@ Entitäten, die die folgende komplexe serverseitige Logik beinhalten, erfordern,
 * Code-Plug-Ins. Weitere Informationen: [Plug-In-Entwicklung](/powerapps/developer/common-data-service/plug-ins)
 * Echtzeitworkflows Weitere Informationen: [Workflowprozesse](/flow/workflow-processes)
 
-    > [!IMPORTANT]
+    > [!NOTE]
     >  Nur Workflows, die in einen Echtzeitworkflow konvertiert werden, werden als in Echtzeit und synchron betrachtet. Workflows, die im Hintergrund laufen, können weiterhin mit dem entsprechenden Power Apps-Plan verwendet werden und benötigen keine zusätzlichen Lizenzen.
 
 Um zu wissen ob Sie Ihren Entitäten komplexere Geschäftslogik hinzugefügt haben, oder nicht, überprüfen Sie die Liste der Plug-In-Assemblys und Workflows, die in Ihrer Umgebung konfiguriert sind.
@@ -176,8 +179,4 @@ Die folgende Tabelle listet Entitäten auf, die im Rahmen der Installation von m
 * Arbeitsauftragsserviceaufgabe
 * Substatus des Arbeitsauftrags
 * Arbeitsvorlage
-
-
-## <a name="licensing"></a>Lizenzierung
-Weitere Informationen zu Power Apps und Dynamics 365 Lizenzen finden Sie auf der Seite [Lizenzübersicht](../../administrator/pricing-billing-skus.md).
 

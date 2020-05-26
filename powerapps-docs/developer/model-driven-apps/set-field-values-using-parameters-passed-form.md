@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 66f0516651d73fbf881a1bfa36529cc9998cfbd6
-ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
+ms.openlocfilehash: 347aca146b6edd1d1f7d6e05eb5f442fd2912dc7
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3218316"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275954"
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>Festlegen von Feldwerten mithilfe von Parametern, die an ein Formular übergeben werden
 
@@ -43,7 +43,7 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
   
 - Der Wert kann kein Skript sein.  
   
-  Jeder Versuch, einen ungültigen Parameter oder Wert zu übergeben, ergibt einen Fehler.  
+- Jeder Versuch, einen ungültigen Parameter oder Wert zu übergeben, ergibt einen Fehler.  
   
 - Verwenden Sie für boolesche Felder entweder einen Ganzzahlwert von `0` bzw. `1` oder einen Textwert von `true` bzw. `false`, um den Wert festzulegen.  
   

@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e4b7f1cbfc167d999881e396d53436387c2f184
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 5ad0f76512d423cbe94072cc96ec09da1b56ce9c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115634"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276154"
 ---
 # <a name="define-ribbon-tab-display-rules"></a>Definieren von Menüband-Registerkartenanzeigenregeln
 
@@ -39,6 +39,6 @@ Registerkartenanzeigeregeln legen fest, ob eine bestimmte Registerkarte für ein
  Wenn Sie eine Registerkartenanzeigenregel global in `RibbonDiffXml` für die Anwendungsmenübänder definieren, können Sie sowohl `EntityRule`-Elemente und `<PageRule>`-Elemente anwenden.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
- [Definieren der Skalierung für Menübandelemente](define-scaling-ribbon-elements.md)   
- [Parameter mit dem Menüband an eine URL übergeben](pass-parameters-url-by-using-ribbon.md)
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
+ [Skalierung für Menüband-Elemente definieren](define-scaling-ribbon-elements.md)   
+ [Parameter mit Hilfe des Menübands an eine URL übergeben](pass-parameters-url-by-using-ribbon.md)

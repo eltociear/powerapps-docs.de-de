@@ -6,25 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 04/24/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: cc1a2107b6e0b5bcdbad1dacff396791b61627c3
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: bbc5cc51fceadb5dfb836ca36483002f6537620b
+ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978367"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "3289344"
 ---
 # <a name="portal-checker"></a>Portalprüfer
 
-Der Portal-Checker ist ein Self-Service-Diagnosewerkzeug, das von Portaladministratoren verwendet werden kann, um häufige Probleme in ihrem Portal zu identifizieren. Der Portalprüfer hilft Ihnen, Probleme mit Ihrem Portal zu identifizieren, indem er sich verschiedene Konfigurationsparameter ansieht und Vorschläge zur Behebung gibt.
+Der Portal-Checker ist ein Self-Service-Diagnosewerkzeug, das von Portaladministratoren verwendet werden kann, um häufige Probleme in ihrem Portal zu identifizieren. Der Portal Checker hilft bei der Identifizierung von Problemen mit einem Portal, indem er verschiedene Konfigurationsparameter betrachtet und Vorschläge zu deren Behebung macht.
 
 Wenn Sie den Portal-Checker ausführen, werden die Ergebnisse im Abschnitt **Diagnosedaten** in einem Rasterformat angezeigt. Das Ergebnistabelle hat die folgenden Spalten:
 
 - **Problem:** Zeigt das oberste Problem eines Kunden an, z. B. Leistungsproblem.
-- **Kategorie:** Zeigt den obersten Bereich an, in dem Probleme kategorisiert werden können, z. B. Provisionierung, Lösungsupgrade usw.
-- **Ergebnis:** Zeigt den Status des Problems an, z. B. Fehler, Warnung usw.
+- **Kategorie**: Zeigt den Bereich der obersten Ebene an, in dem Probleme kategorisiert werden können, z.B. Bereitstellung oder Lösungs-Upgrade.
+- **Ergebnis**: Zeigt den Status der Ausgabe an, z.B. Fehler oder Warnung.
 
 Standardmäßig werden die Informationen im Raster nach der Spalte **Ergebnis** in dieser Reihenfolge sortiert: Fehler, Warnung und Übergabe.
 

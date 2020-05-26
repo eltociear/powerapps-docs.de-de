@@ -2,7 +2,7 @@
 title: Annehmen der Identität eines anderen Benutzers (Common Data Service) | Microsoft-Dokumentation
 description: Mit Hilfe eines Identitätswechsels können Sie die Geschäftslogik im Auftrag eines anderen Common Data Service-Benutzers ausführen, um eine gewünschte Funktion oder einen Service mit der entsprechenden rollen- und objektbasierten Sicherheit dieses imitierten Benutzers bereitzustellen.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/07/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e817468da9cf506acbaedf6b1617ca1a563661e9
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: bc5f6ee0e852985213365ed54f118b0ce72cd1ce
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156158"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275758"
 ---
 # <a name="impersonate-another-user"></a>Annehmen der Identität eines anderen Benutzers
 
@@ -52,7 +52,7 @@ Weitere Informationen finden Sie unter: [Webanwendungen mit der Server-zu-Server
 
 ## <a name="impersonate-another-user-using-the-web-api"></a>Annehmen eines anderen Benutzerkontos mit Web API
 
-Um den Kontext eines Benutzers zu nutzen, fügen Sie einen Anforderungsheader mit dem Namen `MSCRMCallerID` mit einem GUID-Wert entsprechend der `systemuserid` des Benutzers vor dem Senden der Anforderung an den Webdienst hinzu. 
+Um einen Benutzer zu imitieren, fügen Sie einen Anforderungskopf namens `CallerObjectId` mit einem GUID-Wert hinzu, der der Objekt-ID Azure Active Directory (AAD) des imitierten Benutzers entspricht, bevor Sie die Anforderung an den Webdienst senden. Die AAD-Objekt-ID des Benutzers ist im Verzeichnis [SystemUser.AzureActiveDirectoryObjectId](reference/entities/systemuser.md#BKMK_AzureActiveDirectoryObjectId) enthalten.
 
 Weitere Informationen:[Annehmen eines anderen Benutzerkontos mit Web API](webapi/impersonate-another-user-web-api.md).
 
@@ -76,3 +76,4 @@ Weitere Informationen: [Annehmen der Identität eines Benutzers](impersonate-a-u
 [Erstellen von Webanwendungen mit Server-to-Server-Authentifizierung (S2S)](build-web-applications-server-server-s2s-authentication.md)<br />
 [Annehmen eines anderen Benutzerkontos mit Web API](webapi/impersonate-another-user-web-api.md)<br />
 [Schreiben eines Plug-Ins](write-plug-in.md)
+ 

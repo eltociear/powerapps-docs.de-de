@@ -1,7 +1,7 @@
 ---
 title: Sortieren von Datensätzen in einer modellgesteuerten App-Ansicht in Power Apps | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 04/17/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,31 +21,36 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5a80764f3f00df60b54c4c7c23d2e167de2e006b
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: a89a2c4953f5a78a58ff6717f15a803a7cf58527
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874780"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285650"
 ---
 # <a name="sort-records-in-a-model-driven-app-view"></a>Sortieren von Datensätzen in einer Modell-angetriebenen App-Ansicht
 
- Wenn Sie eine Ansicht erstellen oder bearbeiten, können die Sortierreihenfolge für aufsteigende oder absteigendes Optionen konfigurieren.   
-  
-1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
+Wenn Sie eine Ansicht erstellen oder bearbeiten, können die Sortierreihenfolge für aufsteigende oder absteigendes Optionen konfigurieren.
 
-2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Konten**.   
-3.  Wählen Sie die Registerkarte **Ansichten** und wenn angezeigt, wählen Sie **Filter entfernen**, und öffnen Sie dann die gewünschte Ansicht, die angezeigt werden soll, wie **Aktive Firmen**.
+Um die Sortierreihenfolge im Ansichtsdesigner zu ändern, siehe [Eine öffentliche Ansicht in Power Apps](create-edit-views-app-designer.md#create-a-public-view-in-power-apps) erstellen.
 
-4.  Im Ansicht-Designer wählen Sie **Sortieren konfigurieren** aus.  
+## <a name="change-the-sort-order-using-solution-explorer"></a>Ändern der Sortierreihenfolge mit dem Lösungsexplorer
+
+1.  Öffnen Sie [Lösungsexplorer](advanced-navigation.md#solution-explorer), erweitern Sie **Entitäten**, wählen Sie die gewünschte Entität, wählen Sie **Ansichten** und öffnen Sie dann die gewünschte Ansicht.
+
+2.  Im Ansicht-Designer wählen Sie **Sortieren konfigurieren** aus.  
 
     > [!div class="mx-imgBorder"] 
-    > ![Konfigurieren der Sortierung](media/configure-sorting.png)
+    > ![Konfigurieren der Sortierung](media/configure-sorting.png "Konfigurieren der Sortierung")
   
-5.  Wählen Sie im Dialogfeld **Sortierreihenfolge konfigurieren** in der Liste **Sortieren nach** die Spalte aus, die Sie sortieren möchten. Wählen Sie **Aufsteigende Reihenfolge** oder **Absteigende Reihenfolge** aus.  
+3.  Wählen Sie im Dialogfeld **Sortierreihenfolge konfigurieren** in der Liste **Sortieren nach** die Spalte aus, die Sie sortieren möchten. Wählen Sie **Aufsteigende Reihenfolge** oder **Absteigende Reihenfolge** aus.  
   
-6.  Wählen Sie **OK** aus, um das Dialogfeld **Sortierreihenfolge konfigurieren** zu schließen.  
+4.  Wählen Sie **OK** aus, um das Dialogfeld **Sortierreihenfolge konfigurieren** zu schließen. 
+
+    > [!IMPORTANT]
+    > Raster in Apps für die einheitliche Benutzeroberfläche übernehmen die Liste der angezeigten Spalten aus dem zugrunde liegenden FetchXML der Ansicht. Wenn das FetchXML, das von Common Data Service zurückgegeben wird, keine Spalte hat, wird diese Spalte nicht angezeigt. Dies steht im Gegensatz zur klassischen Web-Anwendung, wo, wenn eine Spalte nicht in FetchXML, aber in LayoutXML vorhanden ist, eine solche Spalte automatisch zur Liste der angezeigten Spalten hinzugefügt wird. Einheitliche Benuitzeroberfläche Apps verwenden OData direkt mit FetchXML, um Daten vom Server abzurufen.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Erstellen oder Bearbeiten einer Ansicht](create-edit-views.md)
+[Ansicht erstellen oder bearbeiten](create-edit-views.md)
+[FetchXML verwenden, um Daten abzufragen](../../developer/common-data-service/use-fetchxml-construct-query.md)

@@ -2,7 +2,7 @@
 title: Bildattribute (Common Data Service) | Microsoft-Dokumentation
 description: Infos zu Bildattributen, die Bilddaten speichern, sowie zum Unterstützen von Attributen, Abrufen von Bilddaten und Hochladen von Bilddaten.
 ms.custom: ''
-ms.date: 02/11/2020
+ms.date: 04/27/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79cacd85ae1478ed43ee21e499fdfd4b1e606c14
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 924fb17728ff1681bcba3d4dd60dc6723156694e
+ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156182"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3293007"
 ---
 # <a name="image-attributes"></a>Bildattribute
 
 Bestimmte Systementitäten und alle benutzerdefinierten Entitäten unterstützen Bilder. Entitäten, die Bilder unterstützen, können eine Miniaturansicht und ein primäres Bild in voller Größe enthalten. Die Miniaturansicht kann in der Webanwendung angezeigt werden, wenn die Formulardaten der Entität anzeigt werden. Es können mehrere Bildattribute in einer Entitätsinstanz vorhanden sein, jedoch nur ein primäres Bild. Sie können jedoch das primäre Bild von einem Bild in ein anderes ändern, indem Sie [IsPrimaryImage](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.isprimaryimage?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_Metadata_ImageAttributeMetadata_IsPrimaryImage) für dieses Attribut auf `true` festlegen. Jedes Bildattribut in voller Größe kann maximal 30 MB groß sein. Der <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> des Entitätsbildattributs ist `EntityImage`. Weitere Informationen: [Entitätsbilder](/dynamics365/customer-engagement/developer/introduction-entities#entity-images).
 
-Vorschaubilder und Bild-Metadaten werden in Common Data Service gespeichert, die die zum Abrufen des vollständigen Bildes erforderlichen Informationen enthalten. Die Vollbilder werden im Dateispeicher auf dem Azure Blob gespeichert, um den Datenspeicherverbrauch zu reduzieren.
+Miniaturbilder und Bild-Metadaten werden in Common Data Service gespeichert, die die zum Abrufen des vollständigen Bildes erforderlichen Informationen enthält. Die Vollbilder werden im Dateispeicher auf dem Azure Blob gespeichert, um den Datenspeicherverbrauch zu reduzieren.
 
 Web-API (REST) | .NET-API (SOAP) 
 ------- | -------
@@ -33,6 +33,9 @@ Web-API (REST) | .NET-API (SOAP)
 IsPrimaryImage, MaxHeight, MaxWidth | [IsPrimaryImage](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.isprimaryimage?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_Metadata_ImageAttributeMetadata_IsPrimaryImage), [MaxHeight](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.maxheight?view=dynamics-general-ce-9), [MaxWidth](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.maxwidth?view=dynamics-general-ce-9)
 
 Zusätzlich zu den Bildattributen unterstützen benutzerdefinierte Entitäten null oder mehr Dateiattribute, die beliebige Dateidaten enthalten können. Diese Dateiattribute können deutlich mehr Daten enthalten als Bildattribute. Weitere Informationen finden Sie unter [Dateiattribute](file-attributes.md).
+
+> [!NOTE]
+> Die Fähigkeit, mehr als ein Bildattribut in einer Entitäten-Instanz zu speichern, die Speicherung von Bilddaten in einem Azure-Blob, eine maximale Bildgröße von 30 MB und Dateiattribute werden in <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.SdkClientVersion> 9.0.45.329 oder höher und Web API Version 9.1 oder höher unterstützt.
 
 <a name="BKMK_SupportingAttributes"></a>   
 ## <a name="supporting-attributes"></a>Unterstützen von Attributen  

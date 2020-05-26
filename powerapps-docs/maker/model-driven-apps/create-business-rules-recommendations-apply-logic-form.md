@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Modell-angetriebenen Geschäftsregeln und Empfehlungen | MicrosoftDocs
 ms.custom: ''
-ms.date: 03/15/2019
+ms.date: 03/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eff15d356b1ec37e0a2528f11b73d7ee99ea5af1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 403320ee4a0c7d73bf2c386b538de311e7242c90
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863334"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285878"
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars
 
@@ -41,31 +41,29 @@ Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Form
   
 -   Feldwerte festlegen  
   
--   Klare Feldwerte  
+-   Feldwerte löschen  
   
--   Festlegen von Felderforderlichkeitsstufen  
+-   Anforderungsebenen für Felder festlegen  
   
--   Ein- oder Ausblenden von Feldern  
+-   Felder anzeigen oder ausblenden  
   
--   Aktivieren oder Deaktivieren von Feldern  
+-   Felder aktivieren oder deaktivieren  
   
--   Überprüfen von Daten und Anzeigen von Fehlermeldungen  
+-   Daten validieren und Fehlermeldungen anzeigen  
   
--   Erstellen von Geschäftsempfehlungen basierend auf Business Intelligence-Daten.  
+-   Erstellen Sie Empfehlungen basierend auf Business Intelligence.  
   
 ## <a name="create-a-business-rule-or-business-recommendation"></a>Erstellen einer Geschäftsregel oder Geschäftsempfehlung
-  
-1. Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).  
-  
-2.  Öffnen Sie die Entität, für die Sie die Geschäftsregel erstellen möchten (öffnen Sie z.B. die Entität **Konto**), und doppelklicken Sie dann auf **Geschäftsregeln**.  
-  
- ![Erstellen einer Geschäftsregel in der Standardlösung](media/create-business-rule-the-default-solution.png "Erstellen einer Geschäftsregel in der Standardlösung")  
-  
-3.  Wählen Sie **Neu** aus.  
-  
+
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+
+2.  Erweitern Sie **Daten**, wählen Sie **Entitäten**, wählen Sie die gewünschte Entität und wählen Sie dann das Register **Geschäftsregeln**.
+
+3.  Wählen Sie in der Befehlsleiste **Geschäftsregel hinzufügen**.
+
      Das Geschäftsregeldesignerfenster wird mit einer einzelnen Bedingung geöffnet, die bereits für Sie erstellt wurde. Jede Regel startet mit einer Bedingung. Die Geschäftsregel führt eine oder mehrere diese Aktionen basierend auf der Bedingung durch.  
   
- ![Geschäftsregelentwurfsfenster](media/business-rules-design-window.png "Geschäftsregelentwurfsfenster")  
+    ![Geschäftsregelentwurfsfenster](media/business-rules-design-window.png "Geschäftsregelentwurfsfenster")  
   
    > [!TIP]
 > Wenn Sie eine vorhandene Geschäftsregel ändern möchten, müssen Sie sie deaktivieren, bevor Sie sie bearbeiten können.
@@ -129,7 +127,7 @@ Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Form
 >   
 > - Um eine Momentaufnahme aller Elemente im Geschäftsregelnfenster durchzuführen, klicken Sie auf **Momentaufnahme** in der Aktionsleiste. Dies ist beispielsweise hilfreich, wenn Sie die Geschäftsregel freigeben und Kommentare von Teammitgliedern haben möchten.  
 > - Verwenden Sie die Minimap, um schnell zu anderen Teilen des Prozesses zu navigieren. Dies ist hilfreich, wenn Sie einen komplizierten Prozess haben, der nicht komplett angezeigt wird.  
-> - Wenn Sie Bedingungen, Aktionen und Unternehmensempfehlungen der Geschäftsregel hinzufügen, wird Code für die Geschäftsregel am unteren Rand des Designerfensters erstellt und angezeigt. Dieser Code ist nur lesbar.  
+> - Wenn Sie Bedingungen, Aktionen und Unternehmensempfehlungen der Geschäftsregel hinzufügen, wird Code für die Geschäftsregel am unteren Rand des Designerfensters erstellt und angezeigt. Dieser Code ist schreibgeschützt.  
   
 <a name="BKMK_LocalizingErrorMessages"></a>   
 ## <a name="localize-error-messages-used-in-business-rules"></a>Lokalisieren der Fehlermeldungen in Geschäftsregeln  
@@ -139,22 +137,25 @@ Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Form
 Dieser Abschnitt beschreibt allgemeine Probleme, die auftreten können, wenn Sie Unternehmensregeln verwenden. 
 
 ### <a name="full-name-field-not-supported-with-unified-interface-apps"></a>Das Feld "Name" wird für Apps mit einheitlicher Oberfläche nicht unterstützt.
-Aktionen oder Bedingungen, die ein Feld vom Typ **Vollständiger Name** verwenden, werden in Apps mit einheitlicher Oberfläche nicht unterstützt.  Alternativ können Sie Aktionen oder Bedingungen mit den Feldern **Vorname** (firstname) und **Nachname** (lastname) verwenden. 
+Aktionen oder Bedingungen, die ein Feld **Vollständiger Name** (fullname) verwenden, werden in Apps, die auf der vereinheitlichten Schnittstelle basieren, nicht unterstützt.  Alternativ können Sie Aktionen oder Bedingungen mit den Feldern **Vorname** (firstname) und **Nachname** (lastname) verwenden. 
 
-### <a name="is-your-business-rule-not-firing-for-a-form"></a>Löst ihre Geschäftsregel kein Ereignis eines Formulars aus?
-Eine Geschäftsregel darf nicht ausgeführt werden, weil das in der Geschäftsregel referenzierte Feld nicht im Formular enthalten ist. 
-1.  Öffnen Sie den Projektmappen-Explorer. Erweitern Sie die gewünschte Entität, und wählen Sie dann **Formulare**. 
-2.  Öffnen Sie das gewünschte Formular und wählen Sie dann im Formulardesigner-Menüband **Geschäftsregeln**. 
-3.  Im Formulardesigner öffnen Sie die Geschäftsregel. 
-4.  Wählen Sie im Geschäftsregeldesigner jede Bedingung und Aktion aus, um alle Felder zu überprüfen, auf die in jeder Bedingung und Aktion verwiesen wird. 
+### <a name="business-rules-dont-fire-on-editable-grid-on-a-dashboard"></a>Geschäftsregeln wirken nicht auf editierbare Raster auf einem Dashboard
+Geschäftsregeln mit Entitätsbereich werden nicht auf ein editierbares Raster angewendet, wenn das editierbare Raster auf einer Dashboard-Seite konfiguriert ist.
 
-     > [!div class="mx-imgBorder"] 
-     > ![](media/business-rule-field.png "Field referenced in business rule exists in entity")
+### <a name="is-your-business-rule-not-firing-for-a-form"></a>Wird Ihre Geschäftsregel nicht für ein Formular ausgelöst?
+Eine Geschäftsregel kann möglicherweise nicht ausgeführt werden, weil das in der Geschäftsregel referenzierte Feld nicht im Formular enthalten ist. 
+1.    Öffnen Sie den Projektmappen-Explorer. Erweitern Sie die gewünschte Entität, und wählen Sie dann **Formulare**. 
+2.    Öffnen Sie das gewünschte Formular und wählen Sie dann im Formulardesigner-Menüband **Geschäftsregeln**. 
+3.    Im Formulardesigner öffnen Sie die Geschäftsregel. 
+4.    Wählen Sie im Geschäftsregeldesigner jede Bedingung und Aktion aus, um alle Felder zu überprüfen, auf die in jeder Bedingung und Aktion verwiesen wird. 
 
- 5. Stellen Sie sicher, dass jedes Feld, auf das in der Geschäftsregel verwiesen wird, auch auf dem Formular enthalten ist. Falls nicht, fügen Sie das fehlenden Feld dem Formular hinzu.
+        > [!div class="mx-imgBorder"] 
+        > ![](media/business-rule-field.png "Field referenced in business rule exists in entity")
 
-     > [!div class="mx-imgBorder"] 
-     > ![](media/account-name-on-form.png "Account name field on form")
+ 5.    Stellen Sie sicher, dass jedes Feld, auf das in der Geschäftsregel verwiesen wird, auch auf dem Formular enthalten ist. Falls nicht, fügen Sie das fehlenden Feld dem Formular hinzu.
+
+        > [!div class="mx-imgBorder"] 
+        > ![](media/account-name-on-form.png "Account name field on form")
 
 ## <a name="frequently-asked-questions-faq"></a>Häufig gestellte Fragen (FAQ)
 *Können Geschäftsregeln Felder in einem schreibgeschützten Formular entsperren?*

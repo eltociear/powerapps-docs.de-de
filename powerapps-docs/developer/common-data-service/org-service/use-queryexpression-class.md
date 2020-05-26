@@ -2,7 +2,7 @@
 title: Verwenden der Klasse QueryExpression (Common Data Service) | Microsoft Docs
 description: Verwenden Sie die Klasse QueryExpression, um komplexe Abfragen für die Verwendung mit der Methode IOrganizationService.QueryBase oder der Nachricht RetrieveMultipleRequest zu erstellen.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/17/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,30 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79b8f500bb6448a0272df627e813cf518159c817
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 0b405e76323300522e01956ea3eacbe7b2596f50
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155426"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275782"
 ---
 # <a name="use-the-queryexpression-class"></a>Verwenden der QueryExpression-Klasse
 
 In Common Data Service können Sie mit der Klasse <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> komplexe Abfragen für die Verwendung mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService>. <xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> erstellen. Methode die <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> Meldung verwenden. Sie können Abfrageparameter für <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>, einrichten, indem Sie die Klassen <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression>,i <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> und <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> verwenden.  
   
  Die <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>-Klasse ermöglicht Ihnen, komplexe Abfragen zu erstellen. Die Klasse <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> ist eine einfache Möglichkeit, um nach Entitäten zu suchen, bei denen Attribute mit angegebenen Werten übereinstimmen.  
-  
- In der folgenden Tabelle sind die Eigenschaften aufgelistet, die Sie festlegen können, um einen Abfrageausdruck zu erstellen.  
-  
-|Eigenschaft|Beschreibung|  
-|--------------|-----------------|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.EntityName>|Gibt an, welcher Typ von Entität abgerufen wird. Ein Abfrageausdruck kann nur eine Sammlung eines Entitätstyps abrufen.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.ColumnSet>|Gibt den Satz von Attributen (Spalten) für den Abruf an.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.Criteria>|Gibt komplexe bedingte und logische Filterausdrücke an, oder legt diese fest, die die Ergebnisse der Abfrage filtern.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.Distinct>|Gibt an, ob die Suchergebnisse der Abfrage doppelte Datensätze enthalten.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.LinkEntities>|Gibt die Links zwischen mehreren Entitätstypen an.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.Orders>|Gibt die Reihenfolge an, in der die Datensätze von der Abfrage zurückgegeben werden.|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.PageInfo>|Gibt die Anzahl von Seiten und die Anzahl der Datensätze pro Seite an, die von der Abfrage zurückgegeben werden.|  
   
 <a name="record_count"></a>   
 ## <a name="record-count"></a>Anzahl der Datensätze  
@@ -69,7 +57,25 @@ foreach (var a in result1.Entities)
 }  
 Console.WriteLine("---------------------------------------");  
 ```  
-  
+## <a name="use-sql-hints-in-a-query"></a>Verwenden von SQL-Hinweisen in einer Abfrage
+
+Die <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>-Klasse enthält eine Eigenschaft namens <xref:Microsoft.Xrm.Sdk.Query.QueryExpression.QueryHints>. Indem Sie diese Eigenschaft auf einen der unten gezeigten unterstützten Zeichenfolgenwerte setzen, können Sie einen Hinweis für generierten SQL-Text bereitstellen, der sich auf die Ausführung der Abfrage auswirkt.
+
+|QueryHint-Wert | SQL-Abfrageoption und -hinweis |
+|---------|---------|
+|OptimizeForUnknown | Für unbekannt optimieren|
+|ForceOrder | Befehl durchsetzen |
+|Neu kompilieren | Neu kompilieren |
+|DisableRowGoal | Hinweis benutzen ('Disable_Optimizer_RowGoal') |
+|EnableOptimizerHotfixes | Hinweis benutzen ('ENABLE_QUERY_OPTIMIZER_HOTFIXES') |
+|LoopJoin | Loop verbinden |
+|MergeJoin | Zusammenführen |
+|HashJoin | Hash Join |
+|NO_PERFORMANCE_SPOOL | NO_PERFORMANCE_SPOOL |
+|MaxRecursion | MAXRECURSION-Nummer |
+
+Weitere Informationen: [Hinweise (Transact-SQL) – Abfrage](https://docs.microsoft.com/sql/t-sql/queries/hints-transact-sql-query)
+
 ### <a name="see-also"></a>Siehe auch  
  [Erstellen von Abfragen mit QueryExpression](build-queries-with-queryexpression.md)   
  [Verwenden der ColumnSet-Klasse](use-the-columnset-class.md)   

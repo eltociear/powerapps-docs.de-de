@@ -2,7 +2,7 @@
 title: Erweitern von Dynamics 365 for Outlook (Common Data Service) | Microsoft-Dokumentation
 description: Dynamics 365 for Outlook ermöglicht Benutzern, mit den Daten zu interagieren, während sie offline und nicht mit dem Server verbunden sind. Common Data Service umfasst Features, die es Ihnen ermöglichen, Ihre Lösungen auch auf Offline-Szenarien auszuweiten, indem Sie die Webdienste offline von Ihrem benutzerdefinierten Code abrufen. Darüber hinaus bietet die Sdk-Assembly programmgesteuerten Support für grundlegende Outlook-Aktionen wie Synchronisierung, Wechsel in den Offline- oder Onlinemodus und Dynamics 365 for Outlook Statusüberprüfung. Offline-Programmierung verwendet den ASP.NET Entwicklungsserver.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/07/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,24 +14,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b73543ce9220db75269e9452b4e839fcd6d2cb1c
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 8c8fc40f7a02d6b636b29758cd0964084b8e9333
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155402"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238262"
 ---
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/extend-customer-engagement-outlook 
-
-This topic should be in powerapps-docs/developer/common-data-service/outlook-client/
--->
-
 # <a name="extend-dynamics-365-for-outlook"></a>Dynamics 365 for Outlook erweitern
 
 > [!IMPORTANT]
-> Wir haben ein überwältigendes Kundenfeedback erhalten und möchten unsere Kunden weiterhin bestmöglich unterstützen. Daher haben wir am 29.1.2018 die **Entscheidung getroffen, (Outlook-Add-In) nicht als veraltet einzustufen Dynamics 365 for Outlook**. Weitere Informationen hierzu erhalten Sie in [diesem Blogbeitrag](https://blogs.msdn.microsoft.com/crm/2018/01/29/continued-support-for-outlook-add-in-dynamics-365-for-outlook/).
+> Ab März 2020 ist die Vorgängerversion von Dynamics 365 for Outlook (auch als Outlook COM-Add-In bezeichnet) veraltet. Kunden müssen vor dem 1. Oktober 2020 zur modernen [Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/overview) übergehen. Microsoft wird weiterhin Support, Sicherheit und andere wichtige Updates für das Outlook COM-Add-In bis zum 1. Oktober 2020 bereitstellen.
+> 
+> Weitere Informationen und Schritte für einen reibungslosen Übergang finden Sie unter [Dynamics 365 for Outlook (COM-Add-In) Playbook](https://aka.ms/OutlookCOMPlaybook).
 
-Microsoft Dynamics 365 for Outlook ermöglicht Benutzern, mit Daten zu interagieren, während sie offline und nicht mit dem Server verbunden sind. Common Data Service umfasst Features, die es Ihnen ermöglichen, Ihre Lösungen auch auf Offline-Szenarien auszuweiten, indem Sie die Webdienste offline von Ihrem benutzerdefinierten Code abrufen. Darüber hinaus bietet die <xref:Microsoft.Crm.Outlook.Sdk>-Assembly programmgesteuerten Support für grundlegende Outlook-Aktionen wie Synchronisierung, Wechsel in den Offline- oder Onlinemodus und Dynamics 365 for Outlook-Statusüberprüfung. Offline-Programmierung verwendet den ASP.NET Entwicklungsserver.  
+Dynamics 365 for Outlook ermöglicht Benutzern, mit den Daten zu interagieren, während sie offline und nicht mit dem Server verbunden sind. Common Data Service umfasst Features, die es Ihnen ermöglichen, Ihre Lösungen auch auf Offline-Szenarien auszuweiten, indem Sie die Webdienste offline von Ihrem benutzerdefinierten Code abrufen. Darüber hinaus bietet die <xref:Microsoft.Crm.Outlook.Sdk>-Assembly programmgesteuerten Support für grundlegende Outlook-Aktionen wie Synchronisierung, Wechsel in den Offline- oder Onlinemodus und Dynamics 365 for Outlook-Statusüberprüfung. Offline-Programmierung verwendet den ASP.NET Entwicklungsserver.  
   
  Dynamics 365 enthält Funktionen, die es Administratoren ermöglichen, Filter für die Benutzer anzupassen und zu verwalten. Filtervorlagen stellen den Ausgangspunkt für die Entitätssynchronisierung in Dynamics 365 for Outlook dar. Filter, die bestimmen, welche Entitätssammlungen mit Outlook und mir Microsoft SQL Server 2008 Express Edition für offline-aktivierte Dynamics 365-Lösungen synchronisiert werden.  
   

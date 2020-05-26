@@ -2,7 +2,7 @@
 title: Löschen oder Deaktivieren einer modellgesteuerten App-Ansicht in Power Apps | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie eine Ansicht löschen oder deaktivieren
 ms.custom: ''
-ms.date: 06/12/2018
+ms.date: 03/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,30 +22,46 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fd754dabac61c744044dce088ca063dc31ba63af
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c0eea329561fdf35646a04d50ac1b01915ff52b
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865224"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285757"
 ---
 # <a name="delete-or-deactivate-a-model-driven-app-view"></a>Löschen oder Deaktivieren einer modellgesteuerten App-Ansicht 
 
 <a name="BKMK_RemoveViews"></a>   
 
- Möglicherweise haben Sie eine Ansicht, die von Mitarbeitern nicht angezeigt werden soll. Abhängig vom Typ der Ansicht können Sie sie löschen oder deaktivieren.  
-  
-## <a name="delete-a-view"></a>Löschen einer Ansicht  
- Sie können eine benutzerdefinierte öffentliche Ansicht löschen. Verwenden Sie die Schritte in [Auf Ansichtsdefinitionen zugreifen](accessing-view-definitions.md), um die Ansicht zu suchen, die Sie löschen möchten, und verwenden Sie den ![Schaltfläche „Löschen“](media/delete.gif "Schaltfläche 'Löschen'")**Löschen**-Befehl. Wenn Sie überprüft haben, dass Sie wirklich löschenden möchten, wird die Ansicht dauerhaft gelöscht.  
-  
- Wenn Sie die Ansicht nicht endgültig löschen möchten, können Sie sie stattdessen deaktivieren.  
-  
+ Möglicherweise haben Sie eine Ansicht, von der Sie nicht möchten, dass andere sie sehen. Abhängig vom Typ der Ansicht können Sie sie löschen oder deaktivieren. Wenn Sie die Ansicht nicht dauerhaft löschen möchten, können Sie sie stattdessen deaktivieren.
+ 
+  * Sie können eine benutzerdefinierte öffentliche Ansicht löschen. Wenn Sie überprüft haben, dass Sie wirklich löschenden möchten, wird die Ansicht dauerhaft gelöscht.
+
+  * Sie können [Systemansichten](create-edit-views.md#system-views), einschließlich vom System erstellte öffentliche Ansichten, nicht löschen oder deaktivieren. Sie können öffentliche Ansichten, einschließlich vom System erstellte Ansichten, löschen oder deaktivieren.
+
+## <a name="delete-a-view"></a>Löschen einer Ansicht
+
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+
+2.  Erweitern Sie **Daten**, wählen Sie **Entitäten** und dann die gewünschte Entität aus und wählen Sie die dann die Registerkarte **Ansichten** aus.
+
+3.  Wählen Sie die Schaltfläche **Weitere Befehle** ![Weitere Befehle-Schaltfläche](media/more-commands.gif "Schaltfläche „Weitere Befehle“ für Formulare") neben der gewünschten Ansicht und wählen Sie dann **Ansicht löschen**. Sie können auch **Ansicht löschen** in der Menüleiste wählen.
+
 ## <a name="deactivate-or-activate-views"></a>Deaktivieren oder Aktivieren von Ansichten  
- Sie können [Systemansichten](create-edit-views.md#system-views), einschließlich vom System erstellte öffentliche Ansichten, nicht löschen oder deaktivieren. Sie können öffentliche Ansichten, einschließlich vom System erstellte Ansichten, löschen oder deaktivieren.  
+
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+
+2.  Erweitern Sie **Daten**, wählen Sie **Entitäten** und dann die gewünschte Entität aus und wählen Sie die dann die Registerkarte **Ansichten** aus.
+
+3.  Wählen Sie die Schaltfläche **Weitere Befehle** ![Weitere Befehle-Schaltfläche](media/more-commands.gif "Schaltfläche „Weitere Befehle“ für Formulare") neben der gewünschten Ansicht und wählen Sie dann entweder **Deaktivieren** oder **Aktivieren**. Sie können auch **Deaktivieren** oder **Aktivieren** in der Menüleiste wählen.
+
+## <a name="delete-a-view-in-solution-explorer"></a>Löschen einer Ansicht im Lösungsexplorer  
+
+Sie können eine benutzerdefinierte öffentliche Ansicht löschen. Verwenden Sie die Schritte in [Auf Ansichtsdefinitionen zugreifen](accessing-view-definitions.md#open-a-view-for-editing-in-solution-explorer), um die Ansicht zu suchen, die Sie löschen möchten, und verwenden Sie den ![Schaltfläche „Löschen“](media/delete.gif "Schaltfläche 'Löschen'")**Löschen**-Befehl. Wenn Sie überprüft haben, dass Sie wirklich löschenden möchten, wird die Ansicht dauerhaft gelöscht.  
   
-### <a name="deactivate-or-activate-a-public-view"></a>Deaktivieren oder Aktivieren einer öffentlichen Ansicht  
-  
-1.  Navigieren Sie zu **Systemansichten**, wie im Abschnitt [Zugriff auf Ansichtsdefinitionen](accessing-view-definitions.md) beschrieben.  
+## <a name="deactivate-or-activate-views-in-solution-explorer"></a>Deaktivieren oder Aktivieren von Ansichten im Lösungsexplorer 
+
+1.  Navigieren Sie zu **Systemansichten**, wie im Abschnitt [Zugriff auf Ansichtsdefinitionen](accessing-view-definitions.md#open-a-view-for-editing-in-solution-explorer) beschrieben.  
   
 2.  Wählen Sie eine öffentliche Ansicht aus. Um für inaktive Ansichten anzuzeigen, können Sie die Ansicht **Inaktive öffentliche Ansichten** verwenden.  
   

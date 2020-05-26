@@ -9,12 +9,12 @@ ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: grhurl
 author: ghurlman
 ms.reviewer: nkrb
-ms.openlocfilehash: e471cd617243b98635fa0db4a1487be4ddb1e5e9
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 12b8f136c717ad61f958df5869034f204c03cea5
+ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091245"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "3289278"
 ---
 # <a name="faqs"></a>Häufig gestellte Fragen
 
@@ -62,6 +62,10 @@ Dies wird vom Framework nicht nativ unterstützt. Sie können eine von vielen Bi
 ### <a name="can-i-bundle-font-resources"></a>Kann ich Font-Ressourcen bündeln?
 
 Derzeit werden Schriftartenressourcen (Dateien mit der Dateierweiterung .ttf) vom Framework nicht unterstützt.
+
+### <a name="can-i-use-img-resource-property-in-canvas-apps"></a>Kann ich die img-Ressourceneigenschaft in Canvas Apps verwenden?
+
+Derzeit werden [img](manifest-schema-reference/img.md) Ressourcen in Canvas-Apps nicht unterstützt.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

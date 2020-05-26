@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 97c11000f1f36a9356520913270b75e24a35b751
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: bac673e3312cdcf03830341abea44020297cca05
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115902"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276138"
 ---
 # <a name="actions-on-visualizations-charts"></a>Aktionen für Visualisierungen (Diagramme)
 
@@ -28,8 +28,9 @@ ms.locfileid: "3115902"
 
 Mit Common Data Service-Webdiensten können Sie folgende Aktionen in den Visualisierungsentitäten ausführen.  
   
-## <a name="actions-on-organization-owned-visualizations"></a>Aktionen für Visualisierungen im Besitz der Organisation  
- Um Aktionen für eine Visualisierung im Besitz der Organisation auszuführen (`SavedQueryVisualization`), müssen Sie über die Rolle "Systemadministrator" oder "Systemanpasser" verfügen. Sie können die folgenden Aktionen für eine Visualisierung im Besitz der Organisation ausführen:  
+## <a name="actions-on-organization-owned-visualizations"></a>Aktionen für Visualisierungen im Besitz der Organisation 
+
+Um Aktionen für eine Visualisierung im Besitz der Organisation auszuführen (`SavedQueryVisualization`), müssen Sie über die Rolle "Systemadministrator" oder "Systemanpasser" verfügen. Sie können die folgenden Aktionen für eine Visualisierung im Besitz der Organisation ausführen:  
   
 - Eine Visualisierung im Besitz der Organisation erstellen, abrufen, aktualisieren und löschen. Weitere Informationen: [Visualisierung erstellen](create-visualization-chart.md)  
   

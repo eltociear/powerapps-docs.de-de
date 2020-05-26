@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 39f462daeb86dae724aa5b9cde7e7d0a3c9a5d6e
-ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
+ms.openlocfilehash: 27ca63ba1db97d7c5c63e72230852ab4e64617e7
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3162027"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276202"
 ---
 # <a name="apply-business-logic-using-client-scripting-in-model-driven-apps-using-javascript"></a>Anwenden von Geschäftslogik mit Client-Skripting in modellgesteuerten Anwendungen mit JavaScript
 
@@ -33,17 +33,18 @@ Wenn Ihre Geschäftsanforderung mit einer Geschäftsregel jedoch nicht erreicht 
 
 ## <a name="use-client-scripting-in-model-driven-apps"></a>Verwenden Sie Client-Skripting in modellgesteuerten Anwendungen.
 
-Formulare in modellgesteuerten Anwendungen helfen dem Benutzer, Daten anzuzeigen. Ein Formular in modellgesteuerten Anwendungen kann Elemente wie Felder, eine Schnellerfassung oder ein Raster enthalten. Ein [Ereignis](clientapi/events-forms-grids.md) tritt in den modellgesteuerten App-Formularen stets auf, wenn:
+Formulare in modellbasierten Apps helfen dabei, Daten für den Benutzer anzuzeigen. Ein Formular in modellbasierten Apps kann Elemente wie Felder, ein Schnellformular oder ein Raster enthalten. Ein [Ereignis](clientapi/events-forms-grids.md) tritt in modellbasierten Apps auf wenn:
+
 - Ein Formular wird geladen
 - Daten werden in einem Feld oder einem Element innerhalb des Formulars geändert.
 - Daten werden in einem Formular gespeichert.
 
-Sie können Ihren JavaScript-Code ans „Reagieren” auf diese Ereignisse anzufügen, so dass Ihr Code ausgeführt wird, wenn das Ereignis im Formular auftritt. Sie fügen Ihre JavaScript-Code (Skripte) an diese Ereignisse an, indem Sie eine [Script-Webressource](script-jscript-web-resources.md) in modellgesteuerten Anwendungen verwenden. 
+Sie können Ihren JavaScript-Code ans „Reagieren” auf diese Ereignisse anzufügen, so dass Ihr Code ausgeführt wird, wenn das Ereignis im Formular auftritt. Sie hängen Ihren JavaScript-Code (Skripte) an diese Ereignisse an, indem Sie eine [Script-Webressource](script-jscript-web-resources.md) in modellbasierten Apps verwenden. 
 
 Modellgesteuerte Anwendungen bieten Ihnen eine Vielzahl von **Client-APIs** zur Interaktion mit Formularobjekten und Ereignissen, um zu steuern, was und wann in einem Formular angezeigt werden soll.
 
 > [!NOTE]
-> Einige Client-APIs sind in der aktuellen Version der modellgesteuerten Apps veraltet. Stellen Sie sicher, dass Sie diese APIs kennen, wenn Sie clientseitigen Code für modellgesteuerte Apps schreiben. Weitere Informationen: [Veraltete Client-APIs](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated)
+> Einige Client-APIs sind in der aktuellen Version der modellgesteuerten Apps veraltet. Stellen Sie sicher, dass Sie sich dieser APIs bewusst sind, wenn Sie Ihren clientseitigen Code für modellbasierte Apps schreiben. Weitere Informationen: [Veraltete Client-APIs](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated)
 
 ## <a name="get-started-here"></a>Legen wir los.
 
@@ -59,6 +60,6 @@ Modellgesteuerte Anwendungen bieten Ihnen eine Vielzahl von **Client-APIs** zur 
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Webressourcen für modellgesteuerte Apps](web-resources.md)<br/>
-[Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)<br/>
+[Befehle und das Menüband anpassen](customize-commands-ribbon.md)<br/>
 
 

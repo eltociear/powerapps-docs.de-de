@@ -1,6 +1,6 @@
 ---
-title: 'Schnellstart: Organisationsservicebeispiel (C#) (Common Data Service) | Microsoft Docs'
-description: Dieser Schnellstart zeigt, wie Sie mit dem Organisationsservice des Common Data Service eine Verbindung herstellen.
+title: 'Schnellstart: Beispiel für den Organisationsdienst (C#) (Common Data Service) | Microsoft Docs'
+description: Dieser Schnellstart zeigt Ihnen, wie Sie sich mit dem Organisationsdienst der Common Data Service verbinden
 ms.custom: ''
 ms.date: 04/25/2019
 ms.reviewer: pehecke
@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f5b8ef34d1be214c9d9a54943166c0dce9cd9223
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 12e46f3069a5362c186d8412f2d533285b0bb3ab
+ms.sourcegitcommit: 08184794f3438c8293b88dbbd16bfe8be4f6c229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155986"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3321825"
 ---
-# <a name="quick-start-organization-service-sample-c"></a>Schnellstart: Organisationsservicebeispiel (C#)
+# <a name="quickstart-organization-service-sample-c"></a>Schnellstart: Beispiel für den Organisationsdienst (C#)
 
 Hier beginnen Sie Ihre Arbeit mit den .NET-SDK-Assemblys, um mit Daten unter Verwendung von Common Data Service zu arbeiten.
 
-In diesem Schnellstart erstellen Sie eine minimale Konsolenanwendung, um unter Verwendung der Klasse <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> eine Verbindung mit dem Organisationsservice herzustellen. Sie übergeben Ihre Verbindungsdaten mithilfe einer Verbindungszeichenfolge, die dem Konstruktor übergeben wird.
+In diesem Schnellstart erstellen Sie eine minimale Konsolenanwendung, um eine Verbindung mit dem Organisationsdienst über die <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> Klasse herzustellen. Sie übergeben Ihre Verbindungsdaten mithilfe einer Verbindungszeichenfolge, die dem Konstruktor übergeben wird.
 
 Sie werden den <xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> Methode zum Übergeben einer Instanz an die Klasse <xref:Microsoft.Crm.Sdk.Messages.WhoAmIRequest>, und Sie zeigen die <xref:Microsoft.Crm.Sdk.Messages.WhoAmIResponse> an.<xref:Microsoft.Crm.Sdk.Messages.WhoAmIResponse.UserId> Wert.
 
@@ -72,7 +72,7 @@ Sie werden den <xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Mic
     using Microsoft.Xrm.Tooling.Connector;
     ```
 
-1. Ersetzen Sie die `Main`-Methode durch den folgenden Code. Die unterstützten Werte für *AuthType* sind unter [Parameter für Verbindungszeichenfolgen](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect#connection-string-parameters) aufgeführt.
+1. Ersetzen Sie die `Main`-Methode durch den folgenden Code. Die unterstützten Werte für *AuthType* sind unter [Verbindungszeichenkettenparameter](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md) aufgelistet.
 
     ```csharp
     static void Main(string[] args)
@@ -133,7 +133,7 @@ Sie haben erfolgreich eine Verbindung mit dem Organisationsservice hergestellt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Diese Themen erklären mehr über das Arbeiten mit Common Data Service-Entitäten:
+In diesen Artikeln wird erklärt, wie man mit Common Data Service-Entitäten arbeitet:
 
 [Entitäts-Vorgänge mithilfe des Organisationsservice](entity-operations.md)<br />
 [Erstellen von Entitäten mit dem Organisationsservice](entity-operations-create.md)<br />

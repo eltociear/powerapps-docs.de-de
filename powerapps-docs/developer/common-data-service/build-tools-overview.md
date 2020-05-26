@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 111169c35463ba082a734082ea5eca1f4bab5c21
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 8909a11491a068dd623cc911887418ff49f37151
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156418"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341224"
 ---
 # <a name="power-apps-build-tools-for-azure-devops-overview"></a>Übersicht über Power Apps build tools für Azure DevOps
 
@@ -33,6 +33,7 @@ Verwenden Sie Power Apps build tools, um allgemeine Build- und Bereitstellungsau
 > - Power Apps build tools sind eine Vorschaufunktion.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
+Weitere Informationen über die Verwendung der Build Tools mit dem Anwendungs-Lebenszyklus-Management finden Sie unter [Power Apps Build Tools für Azure DevOps](/power-platform/alm/devops-build-tools).
   
 ## <a name="what-are-power-apps-build-tools"></a>Was sind Power Apps build tools?
 

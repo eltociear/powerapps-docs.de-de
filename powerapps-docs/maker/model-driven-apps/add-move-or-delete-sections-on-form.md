@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2731520659633c305e19e02b67670bb12796dc50
-ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
+ms.openlocfilehash: bcbb1fba03a60135f192f0760f33b2e7e637123f
+ms.sourcegitcommit: ce291964123737257536378270e6004ecb74b3c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "3094020"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281402"
 ---
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>Hinzufügen, Konfigurieren, Verschieben oder Löschen von Abschnitten in einem Formular 
 Sie können Abschnitte in einem Formular mithilfe des Formulardesigners hinzufügen, konfigurieren, verschieben oder löschen. 
@@ -38,7 +38,8 @@ Um Abschnitte zu einem Formular hinzuzufügen, verwenden Sie den Bereich **Kompo
 > ![](media/FormDesignerComponentsLayout.png "Layout components")
 
   > [!NOTE]
-  >   Abschnitte können nur in Hauptformularen und Schnellansichtsformularen hinzugefügt werden. Weitere Informationen: [Formulartypen](types-forms.md)
+  >   Abschnitte können nur in Hauptformularen und Schnellansichtsformularen hinzugefügt werden. Weitere Informationen: [Formulartypen](types-forms.md).
+  In der einheitlichen Benutzeroberfläche werden leere Abschnitte in der Laufzeit nicht gerendert und automatisch ausgeblendet.
 
 ### <a name="add-sections-to-a-form-using-drag-and-drop"></a>Hinzufügen von Abschnitten zu einem Formular mithilfe des Ziehens und Ablegens
 > [!NOTE]

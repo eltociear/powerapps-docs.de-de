@@ -2,7 +2,7 @@
 title: Ausführen bedingter Vorgänge mit der Web-API (Common Data Service) | Microsoft Docs
 description: Lesen Sie, wie Sie Bedingungen erstellen, die bestimmen, ob und wie die Vorgänge mithilfe von Web-API ausgeführt werden
 ms.custom: ''
-ms.date: 01/08/2020
+ms.date: 04/06/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a78b50dc3f70817a3da5f1f66c3a562099076e56
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: aa6d6827994749d48981144fd2deea0d1f839a83
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155082"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "3233750"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Bedingte Vorgänge mithilfe der Web-API ausführen
 
@@ -52,9 +52,9 @@ Verwenden Sie [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) und [I
 
 ## <a name="conditional-retrievals"></a>Bedingte Abrufe
 
-ETags ermöglichen es Ihnen, jedes Mal Datensatzabrufe zu optimieren, wenn Sie auf denselben Datensatz mehrere Male zugreifen. Wenn Sie vorher einen Datensatz abgerufen haben, können Sie den ETag-Wert mit dem Header `If-None-Match` senden, damit Daten nur dann abgerufen werden, wenn sie sich seit dem letzten Abruf geändert haben. Wenn sich die Daten geändert haben, gibt die Anfrage einen HTTP-Status von 200 `200 (OK)` mit den neuesten Daten im Text der Anfrage zurück. Wenn sich die Daten nicht geändert haben, wird der HTTP-Statuscode 304 `304 (Not Modified)` zurückgegeben, um anzuzeigen, dass die Entität nicht geändert worden ist. 
+ETags ermöglichen es Ihnen, jedes Mal Datensatzabrufe zu optimieren, wenn Sie auf denselben Datensatz mehrere Male zugreifen. Wenn Sie vorher einen Datensatz abgerufen haben, können Sie den ETag-Wert mit dem Header `If-None-Match` senden, damit Daten nur dann abgerufen werden, wenn sie sich seit dem letzten Abruf geändert haben. Wenn sich die Daten geändert haben, gibt die Anfrage einen HTTP-Status von 200 `200 (OK)` mit den neuesten Daten im Text der Anfrage zurück. Wenn sich die Daten nicht geändert haben, wird der HTTP-Statuscode `304 (Not Modified)` zurückgegeben, um anzuzeigen, dass die Entität nicht geändert wurde. 
 
-Das folgende Beispielmeldungspaar gibt Daten für eine Kontoentität zurück, wobei die `accountid` gleich ist wie `00000000-0000-0000-0000-000000000001`, wenn sich die Daten nicht geändert haben, seit das letzte Mal der Etag-Wert `W/"468026"` abgerufen wurden.
+Das folgende Beispielmeldungspaar gibt Daten für eine Kontoentität mit der `accountid` gleich `00000000-0000-0000-0000-000000000001` zurück, wenn sich die Daten seit dem letzten Abruf nicht geändert haben, als der Etag-Wert `W/"468026"` war
 
  **Anforderung**  
 ```http  
@@ -90,7 +90,7 @@ Das Etag kann nur feststellen, ob sich der einzelne Datensatz, der abgerufen wir
   
 ## <a name="limit-upsert-operations"></a>upsert-Vorgänge begrenzen
 
-Ein upsert arbeitet gewöhnlich, indem es eine Entität erstellt, wenn sie nicht vorhanden ist; anderenfalls aktualisiert es eine vorhandene Entität. Allerdings können ETags verwendet werden, um upserts weiter einzuschränken, um entweder Erstellungen oder Updates zu verhindern.  
+Ein Upsert funktioniert normalerweise durch die Erstellung einer Entität, falls diese noch nicht existiert; andernfalls wird eine bestehende Entität aktualisiert. Allerdings können ETags verwendet werden, um upserts weiter einzuschränken, um entweder Erstellungen oder Updates zu verhindern.  
   
 <a name="bkmk_preventCreateOnUpsert"></a>
  
@@ -116,8 +116,8 @@ If-Match: *
 }  
 ```  
   
- **Antwort**  
- Wenn die Entität gefunden wird, erhalten Sie eine normale Antwort mit Status 204 (Kein Inhalt). Wenn die Entität nicht gefunden wird, erhalten Sie die folgende Antwort mit Status 404 (Nicht gefunden).  
+ **Response**  
+ Wenn die Entität gefunden wird, erhalten Sie eine normale Antwort mit Status 204 (Kein Inhalt). Wenn die Entität nicht gefunden wird, erhalten Sie die folgende Antwort mit Status 404 (Not Found).  
   
 ```json  
 HTTP/1.1 404 Not Found  
@@ -127,12 +127,7 @@ Content-Type: application/json; odata.metadata=minimal
 {  
  "error": {  
   "code": "",  
-  "message": "account With Id = 00000000-0000-0000-0000-000000000001 Does Not Exist",  
-  "innererror": {  
-   "message": "account With Id = 00000000-0000-0000-0000-000000000001 Does Not Exist",  
-   "type": "System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-   "stacktrace": <stack trace removed for brevity>  
-  }  
+  "message": "account With Id = 00000000-0000-0000-0000-000000000001 Does Not Exist"
  }  
 }  
 ```  
@@ -141,7 +136,7 @@ Content-Type: application/json; odata.metadata=minimal
   
 ### <a name="prevent-update-in-upsert"></a>Update im Upsert verhindern
 
-Wenn Sie Daten einfügen, könnte es sein, dass ein Datensatz mit dem gleichen `id`-Wert existiert bereits im System, den Sie nicht aktualisieren wollen. Um dies zu verhindern, fügen Sie der Anfrage einen `If-None-Match`-Kopf mit dem Wert "*" hinzu.  
+Wenn Sie Daten einfügen, besteht die Möglichkeit, dass ein Datensatz mit dem gleichen Wert `id` bereits im System vorhanden ist und Sie ihn nicht aktualisieren möchten. Um dies zu verhindern, fügen Sie der Anfrage einen `If-None-Match`-Kopf mit dem Wert "*" hinzu.  
   
  **Anforderung**  
 ```http  
@@ -161,8 +156,8 @@ If-None-Match: *
 }  
 ```  
   
- **Antwort**  
- Wenn die Entität nicht gefunden wird, erhalten Sie eine normale Antwort mit Status 204 (Kein Inhalt). Wenn die Entität nicht gefunden wird, erhalten Sie die folgende Antwort mit Status 412 (Vorbedingung fehlgeschlagen).  
+ **Response**  
+ Wenn die Entität nicht gefunden wird, erhalten Sie eine normale Antwort mit Status 204 (Kein Inhalt). Wenn die Entität gefunden wird, erhalten Sie die folgende Antwort mit Status 412 (Precondition Failed).  
   
 ```json  
 HTTP/1.1 412 Precondition Failed  
@@ -172,12 +167,7 @@ Content-Type: application/json; odata.metadata=minimal
 {  
   "error":{  
    "code":"",  
-   "message":"A record with matching key values already exists.",  
-   "innererror":{  
-    "message":"Cannot insert duplicate key.",  
-    "type":"System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-    "stacktrace":<stack trace removed for brevity>  
-    }  
+   "message":"A record with matching key values already exists."
   }  
 }  
 ```  
@@ -213,12 +203,7 @@ OData-Version: 4.0
   
 {  
   "error":{  
-    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided.",  
-    "innererror":{  
-      "message":"The version of the existing record doesn't match the RowVersion property provided.",  
-      "type":"System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-"stacktrace":"  <stack trace details omitted for brevity>  
-    }  
+    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided." 
   }  
 }  
 ```  
@@ -250,12 +235,7 @@ OData-Version: 4.0
   
 {  
   "error":{  
-    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided.",  
-    "innererror":{  
-      "message":"The version of the existing record doesn't match the RowVersion property provided.",  
-      "type":"System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-"stacktrace":"  <stack trace details omitted for brevity>  
-    }  
+    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided."
   }  
 }  
 ```  

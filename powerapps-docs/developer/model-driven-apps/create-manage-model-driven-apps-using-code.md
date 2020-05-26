@@ -15,28 +15,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 80c604cf7595d64a946fab9faf186339d732eb5e
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 2d1f2de34d18db03ef782d511595ccff54329b5f
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115662"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275830"
 ---
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>Erstellen, Verwalten und Veröffentlichen von modellgesteuerten Apps mithilfe von Code
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
 
-Zusätzlich zur Erstellung einer modellgesteuerten App mit dem Power Apps App Designer können Sie modellgesteuerte Apps programmgesteuert erstellen und verwalten. 
+Zusätzlich zur Erstellung einer modellbasierten App mit dem Power Apps App-Designer können Sie modellbasierte Apps programmatisch erstellen und verwalten. 
 
 > [!IMPORTANT]
-> Sie müssen keinen Code schreiben, um modellgesteuerte Apps zu erstellen, wenn es nicht nötig ist! Der App-Designer bietet eine viel einfachere und intuitivere Funktionalität zum Erstellen von modellgesteuerten Apps, ohne dass Code geschrieben werden muss, indem er eine kachelbasierte Informationsstruktur und eine vereinfachte Benutzeroberfläche bereitstellt. Sehen Sie hier: [Gestalten Sie modellgesteuerte Apps mit dem App-Designer](../../maker/model-driven-apps/design-custom-business-apps-using-app-designer.md)  
+> Sie müssen keinen Code schreiben, um modellbasierte Apps zu erstellen, wenn Sie es nicht brauchen! Der App-Designer bietet eine viel einfachere und intuitive Erfahrung für die Erstellung modellbasierter Apps, ohne Code schreiben zu müssen, indem er eine kachelbasierte Informationsstruktur und eine vereinfachte Benutzeroberfläche bereitstellt. Sehen Sie sich das hier an: [Modellbasierte Apps mit Hilfe des App-Designers entwerfen](../../maker/model-driven-apps/design-custom-business-apps-using-app-designer.md)  
   
-Das Erstellen einer modellgesteuerten App umfasst die folgenden Schritte:
+Die Erstellung einer modellbasierten App umfasst die folgenden Schritte:
+
 1. Erstellen einer [AppModule-Entität](../common-data-service/reference/entities/appmodule.md)-Instanz, um die App und ihre Eigenschaften zu definieren.
 2. Hinzufügen oder Entfernen von Komponenten zur App, wie Entität, Siteübersicht und andere Komponenten für die benutzerdefinierte App mit <xref:Microsoft.Dynamics.CRM.AddAppComponents> und <xref:Microsoft.Dynamics.CRM.RemoveAppComponents>-Aktionen.
 3. Überprüfen Sie die App auf alle fehlenden erforderlichen Komponenten mithilfe der Funktion <xref:Microsoft.Dynamics.CRM.ValidateApp>.
 4. Veröffentlichen der App.
-5. Ordnen Sie die entsprechenden Sicherheitsrollen der modellgesteuerten App zu, um den Zugriff für Benutzer zu ermöglichen.
+5. Ordnen Sie Ihrer modellbasierten App geeignete Sicherheitsrollen zu, um den Benutzern Zugriff zu gewähren.
 
 
 ## <a name="create-your-model-driven-app-and-define-its-properties"></a>Erstellen Sie die modellgesteuerte App und definieren Sie deren Eigenschaften
@@ -44,6 +45,7 @@ Das Erstellen einer modellgesteuerten App umfasst die folgenden Schritte:
 Sie müssen über die Sicherheitsrolle „Systemadministrator“ oder „Systemanpasser“ bzw. entsprechende Berechtigungen verfügen, um eine App zu erstellen. 
 
 Sie müssen mindestens die folgenden Eigenschaften angeben, um eine App zu erstellen:
+
 - **Name**: Eindeutig für die App
 - **uniquename**: Dies kann anders als Name der App sein und darf nur englische Zeichen und nur Zahlen enthalten. Bei Erstellung dieser App wird automatisch der Name mit dem Lösungsherausgeberpräfix verwendet (beispielsweise 'new_'). 
 - **webresourceid**: ID der Webressource, die als Bildsymbol für die App festgelegt werden soll. Das System bietet eine Standardwebressource (ID: 953b9fac-1e5e-e611-80d6-00155ded156f), die Sie als Symbol für die App verwenden können.
@@ -74,9 +76,10 @@ OData-EntityId: [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-8
 
 ## <a name="add-or-remove-components-from-your-model-driven-app"></a>Hinzufügen oder Entfernen von Komponenten der modellgesteuerten App
 
-Sie können Komponenten in einer App hinzufügen oder entfernen, wie Siteübersicht, Entität, Dashboard, Geschäftsprozessflüsse, Ansichten und Formulare, die in die modellgesteuerte App eingeschlossen werden sollen. Ausführliche Informationen zu Komponenten, die einer modellgesteuerten App hinzugefügt werden können, finden Sie unter [Hinzufügen oder Bearbeiten von App-Komponenten im App-Designer](../../maker/model-driven-apps/add-edit-app-components.md).
+Sie können Komponenten in einer App wie Sitemap, Entität, Dashboard, Geschäftsprozess-Flüsse, Ansichten und Formulare hinzufügen oder entfernen, die Sie in Ihre modellbasierte App aufnehmen möchten. Detaillierte Informationen über Komponenten, die zu einer modellbasierten App hinzugefügt werden können, finden Sie unter [Anwendungskomponenten im App-Designer hinzufügen oder bearbeiten](../../maker/model-driven-apps/add-edit-app-components.md).
 
-Verwenden Sie die <xref:Microsoft.Dynamics.CRM.AddAppComponents>-Aktion oder die <xref:Microsoft.Crm.Sdk.Messages.AddAppComponentsRequest>-Meldung, um Komponenten der modellgesteuerten App hinzuzufügen. Für die Aktion müssen Sie Folgendes angeben:
+Verwenden Sie die <xref:Microsoft.Dynamics.CRM.AddAppComponents>-Aktion oder die <xref:Microsoft.Crm.Sdk.Messages.AddAppComponentsRequest>-Meldung , um Komponenten zu Ihrer modellbasierten Apps hinzuzufügen. Für die Aktion müssen Sie Folgendes angeben:
+
 - **AppId**: ID der App, der Sie Komponenten hinzufügen möchten
 - **Komponenten** Eine Sammlung von Komponenten, die hinzugefügt werden sollen. Sie müssen die ID sowie den Entitätstyp der Komponente angeben, die Sie hinzufügen möchten. Eine Liste der Entitätstypen in Common Data Service-Web-API finden Sie unter <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>.
 
@@ -128,9 +131,9 @@ Accept: application/json
 
 ## <a name="validate-your-model-driven-app"></a>Validieren Sie Ihre modellgesteuerte Anwendung
 
-Das Validieren einer App umfasst das Überprüfen der Abhängigkeiten für die Komponenten, die Sie in der modellgesteuerten App hinzugefügt haben, um sicherzustellen, dass die App adäquat funktioniert. Dies ist das Gleiche wie **Überprüfen** im App-Designer. Weitere Informationen: [Überprüfen der App](../../maker/model-driven-apps/validate-app.md)
+Die Validierung einer App umfasst die Prüfung auf etwaige Abhängigkeiten für die Komponenten, die Sie in Ihrer modellbasierten App hinzugefügt haben, um sicherzustellen, dass Ihre App einwandfrei funktioniert. Dies ist das Gleiche wie **Überprüfen** im App-Designer. Weitere Informationen: [Überprüfen der App](../../maker/model-driven-apps/validate-app.md)
 
-Verwenden Sie die <xref:Microsoft.Dynamics.CRM.ValidateApp>-Funktionen oder die <xref:Microsoft.Crm.Sdk.Messages.ValidateAppRequest>-Meldung, um die App zu überprüfen. Die folgende Web-API-Anforderung zeigt, wie die modellgesteuerte App mit der ID: dd621d4a-d898-e711-80e7-00155db763be überprüft wird:
+Verwenden Sie die <xref:Microsoft.Dynamics.CRM.ValidateApp>-Funktionen oder die <xref:Microsoft.Crm.Sdk.Messages.ValidateAppRequest>-Meldung, um die App zu überprüfen. Die folgende Web API-Anforderung zeigt, wie Sie Ihre modellbasierte Apps mit ID validieren können: dd621d4a-d898-e711-80e7-00155db763be:
 
 `GET [Organization URI]/api/data/v9.0/ValidateApp(AppModuleId=dd621d4a-d898-e711-80e7-00155db763be)`
 
@@ -191,9 +194,9 @@ OData-Version: 4.0
 
 ## <a name="publish-your-model-driven-app"></a>Veröffentlichen Ihrer modellgesteuerten Anwendung
 
-Nachdem Sie erforderlichen Komponenten zu Ihrer modellgesteuerten App hinzugefügt bzw. sie überprüft haben, müssen Sie diese veröffentlichen, um sie Benutzern zur Verfügung zu stellen.
+Nachdem Sie die erforderlichen Komponenten zu Ihrer modellbasierten App hinzugefügt und diese validiert haben, müssen Sie sie veröffentlichen, um sie den Benutzern zur Verfügung zu stellen.
 
-Mithilfe der <xref:Microsoft.Dynamics.CRM.PublishXml>-Aktion, oder der <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest>-Mitteilung veröffentlichen Sie die modellgesteuerte App. Die folgende Anforderung zeigt, wie die modellgesteuerte App mit der ID: dd621d4a-d898-e711-80e7-00155db763be veröffentlicht wird:
+Verwenden Sie die <xref:Microsoft.Dynamics.CRM.PublishXml> Aktion oder die <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> Nachricht, um Ihre modellbasierte Apps zu veröffentlichen. Die folgende Anfrage zeigt, wie Sie Ihre modellbasierte Apps mit einer ID veröffentlichen können: dd621d4a-d898-e711-80e7-00155db763be:
 
 ```http
 POST [Organization URI]/api/data/v9.0/PublishXml HTTP/1.1
@@ -209,9 +212,9 @@ Accept: application/json
 
 ## <a name="manage-access-to-model-driven-app-using-security-roles"></a>Verwalten des Zugriffs auf modellgetriebene Anwendungen mithilfe von Sicherheitsrollen
 
-Um Benutzern Zugriff auf Ihre Apps bereitzustellen, damit diese darauf aus ihrem Bereich **Einstellungen** > **Meine Apps** oder der Dynamics 365-Startseite zugreifen können, können Sie den modellgesteuerten Apps Sicherheitsrollen hinzufügen. Benutzer, die den zugeordneten Sicherheitsrollen zugewiesen sind, können Ihre modellgesteuerten Apps in Common Data Service anzeigen und verwenden. 
+Um Benutzern den Zugriff auf Ihre Apps zu ermöglichen, damit sie von ihrem Bereich **Einstellungen** > **Meine Apps** oder der Dynamics 365-Homepage darauf zugreifen können, können Sie Ihren modellbasierten Apps Sicherheitsrollen zuweisen. Benutzer, denen die entsprechenden Sicherheitsrollen zugewiesen wurden und die Ihre modellbasierten Apps in Common Data Service sehen und verwenden können. 
 
-Verwenden Sie die **appmoduleroles_association**-Navigationseigenschaft der [AppModule-Entität](../common-data-service/reference/entities/appmodule.md)-Entität, um eine modellgesteuerte App zu einer Sicherheitsrolle zuzuordnen. Die folgende Anforderung veranschaulicht, wie Sie eine modellgesteuerte App einer Sicherheitsrolle zuordnen:
+Verwenden Sie die Navigationseigenschaft **appmoduleroles_association** der Entität [AppModule Entity](../common-data-service/reference/entities/appmodule.md), um eine modellbasierte App mit einer Sicherheitsrolle zu verknüpfen. Die folgende Anfrage zeigt, wie eine modellbasierte App mit einer Sicherheitsrolle verknüpft werden kann:
 
 ```http
 POST [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)appmoduleroles_association/$ref HTTP/1.1
@@ -225,7 +228,7 @@ Accept: application/json
 }
 ```
 
-Um die Zuordnung einer Sicherheitsrolle aus einer modellgesteuerte App zu entfernen, verwenden Sie die DELETE-Anforderung mit derselben Navigationseigenschaft. Beispiel:
+Um eine Sicherheitsrolle von einer modellbasierten Apps zu trennen, verwenden Sie die Anforderung DELETE mit derselben Navigationseigenschaft. Beispiel:
 
 ```
 DELETE  [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)/appmoduleroles_association/$ref?$id=[Organization URI]/api/data/v9.0/roles(<roleId)
@@ -246,25 +249,25 @@ Zum Abrufen unveröffentlichter Apps verwenden Sie die <xref:Microsoft.Dynamics.
 `GET [Organization URI]/api/data/v9.0/appmodules/Microsoft.Dynamics.CRM.RetrieveUnpublishedMultiple()?$select=name,clienttype`
 
 ### <a name="retrieve-components-in-a-published-model-driven-app"></a>Abrufen von Komponenten in einer veröffentlichten modellgesteuerten App
-Um App-Komponenten für eine modellgesteuerte App abzurufen, verwenden Sie die <xref:Microsoft.Dynamics.CRM.RetrieveAppComponents>-Funktion oder die <xref:Microsoft.Crm.Sdk.Messages.RetrieveAppComponentsRequest>-Message. Beispiel:
+Um App-Komponenten für eine modellbasierte App abzurufen, verwenden Sie die <xref:Microsoft.Dynamics.CRM.RetrieveAppComponents> Funktion oder die <xref:Microsoft.Crm.Sdk.Messages.RetrieveAppComponentsRequest>-Meldung. Beispiel:
 
 `GET [Organization URI]/api/data/v9.0/RetrieveAppComponents(AppModuleId=dd621d4a-d898-e711-80e7-00155db763be)`
 
 ### <a name="retrieve-security-roles-associated-with-published-model-driven-app"></a>Rufen Sie Sicherheitsrollen ab, die einer veröffentlichten modellgesteuerten App zugeordnet sind
 
-Um die Sicherheitsrollen abzurufen, die der modellgesteuerten App zugeordnet sind, können die `$expand` Systemabfrageoption mit der **appmoduleroles_association**-Navigationseigenschaft verwenden. Beispielsweise ist hier die Anforderung, alle Sicherheitsrollen anzuzeigen, die der modellgesteuerten App mit der ID: dd621d4a-d898-e711-80e7-00155db763be zugeordnet sind:
+Um die mit Ihrer modellbasierten Apps verknüpften Sicherheitsrollen abzurufen, verwenden Sie die `$expand` Systemabfrageoption mit der Navigationseigenschaft **appmoduleroles_association**. Hier ist z.B. die Anforderung, alle Sicherheitsrollen abzurufen, die mit einer modellbasierten App mit ID verbunden sind: dd621d4a-d898-e711-80e7-00155db763be:
 
 `GET [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)?$expand=appmoduleroles_association&$select=name,appmoduleroles_association`
 
 ### <a name="delete-model-driven-apps"></a>Löschen von modellgesteuerten Apps
 
-Verwenden Sie die DELETE-Anforderung, um eine modellgesteuerte App zu löschen. Beispiel:
+Verwenden Sie die DELETE-Anforderung zum Löschen einer modellbasierten Apps. Beispiel:
 
 `DELETE [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)`
 
 ## <a name="client-api-support-for-model-driven-apps"></a>Client-API-Unterstützung für modellgesteuerte Apps
 
-Sie können die folgenden Client-APIs verwenden, um mit modellgesteuerten Apps zu arbeiten:
+Sie können die folgenden Client-APIs verwenden, um mit modellbasierten Apps zu arbeiten:
 
 - [getCurrentAppName](clientapi/reference/xrm-utility/getglobalcontext/getcurrentappname.md)
 - [getCurrentAppProperties](clientapi/reference/xrm-utility/getglobalcontext/getCurrentAppProperties.md)

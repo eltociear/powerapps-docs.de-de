@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 0163e6d71caf307e3e952c0f8fcb3d21a82949cc
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: afd3ec0c312b007a9bef4f1d320e4575f902f70d
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218547"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3261813"
 ---
 # <a name="community-resources-for-power-apps-component-framework"></a>Community-Ressourcen für Power Apps component framework
 
@@ -68,6 +68,7 @@ Das Folgende ist die Liste der Blogs, die von der Power Apps-Community erstellt 
 - [Codekomponenten erstellen](https://debajmecrm.com/2019/04/26/in-depth-end-end-walkthrough-develop-your-custom-controls-using-power-apps-component-framework-and-use-it-on-your-crm-interface/)
 - [Bearbeiten des DOM mit unterstützten Codekomponenten](https://www.magnetismsolutions.com/blog/adammurchison/2019/05/29/editing-the-dom-with-supported-dynamics-365-custom-controls)
 - [So konfigurieren Sie Node.js und TypeScript in Ihrer Umgebung](https://capuanodanilo.com/2019/06/11/how-to-configure-node-js-and-typescript-into-your-environment-to-develop-powerapps-component-frameworks-pcf)
+- [Wie man gewünschte Ereignisse mit gebundenen Eigenschaften simuliert](https://technomancy.com.au/2020/03/27/how-to-handle-events-and-reset-component-in-pcf/)
 - [Lokalisierung von Codekomponenten](https://dynamicsninja.blog/2020/01/21/pcf-localization)
 - [Power Apps component framework – Zuckerguss auf dem Kuchen](https://stevemordue.com/powerapps-component-framework-frosting-on-the-cake/)
 - [Öffentliche Verfügbarkeit von Power Apps component framework – Ein wichtiger Meilenstein](https://crmindian.com/2019/04/24/public-availability-of-powerapps-component-framework-an-important-milestone-for-powerapps-and-d365/)

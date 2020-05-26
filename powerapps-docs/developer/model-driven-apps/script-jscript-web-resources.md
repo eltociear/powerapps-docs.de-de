@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0dfaf5f41207106d217fa90f64bff1b3a2c4d124
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c79e744d24a233406e33ea33a6b2bc9a38b567c7
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748445"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275962"
 ---
 # <a name="script-jscript-web-resources"></a>Webressourcen für Skripts (JScript)
 
@@ -33,7 +33,7 @@ Verwenden Sie Script(JScript)-Webressourcen, um eine Bibliothek von JavaScript-F
   
 <a name="BKMK_limitations"></a>   
 ## <a name="limitations-of-script-web-resources"></a>Einschränkungen für Skriptwebressourcen  
- Wie alle Webressourcen verwenden JavaScript-Webressourcen den Sicherheitskontext modellgestützter Apps. Nur lizenzierte Benutzer, die über die notwendigen Rechte verfügen, können darauf zugreifen.  
+ Wie alle Webressourcen verwenden JavaScript-Webressourcen den modellbasierten Sicherheitskontext von Apps. Nur lizenzierte Benutzer, die über die notwendigen Rechte verfügen, können darauf zugreifen.  
   
 > [!NOTE]
 >  Verweise, die im Code zwischen der Webressourcen enthalten sind, werden als Lösungsabhängigkeiten nicht nachverfolgt.  
@@ -55,9 +55,9 @@ Verwenden Sie Script(JScript)-Webressourcen, um eine Bibliothek von JavaScript-F
 ### <a name="see-also"></a>Siehe auch  
  [Clientskripting mit JavaScript](client-scripting.md)   
  [Webressourcen](web-resources.md)   
- [Verwenden von Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   
- [Verwenden von Stylesheet(CSS)-Webressourcen](css-web-resources.md)   
- [Verwenden von Daten (XML)-Webressourcen](data-xml-web-resources.md)   
- [Verwenden von Bild (JPG, PNG, GIF, ICO)-Webressourcen](image-web-resources.md)   
- [Verwenden von Stylesheet (XSL)-Webressourcen](stylesheet-xsl-web-resources.md)   
+ [Verwendung von Web-Seiten (HTML) Web-Ressourcen](webpage-html-web-resources.md)   
+ [Verwendung von Style Sheet (CSS) Webressourcen](css-web-resources.md)   
+ [Verwenden von Daten (XML) Web-Ressourcen](data-xml-web-resources.md)   
+ [Verwendung von Bildern (JPG, PNG, GIF) Web-Ressourcen](image-web-resources.md)   
+ [Verwendung von Stylesheet (XSL)-Webressourcen](stylesheet-xsl-web-resources.md)   
  [Webressourcenentwicklung mithilfe des Fiddler-AutoResponder verbessern](streamline-javascript-development-fiddler-autoresponder.md)    

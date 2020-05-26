@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5814c60e301e3721c2c0e4e7f20926708c2dd5e3
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 518cae90216c8178c1ef46c3613a6613f9895527
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115918"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275842"
 ---
 # <a name="configure-a-form-to-accept-custom-querystring-parameters"></a>Ein Formular konfigurieren, um benutzerdefinierte Abfragezeichenfolgenparameter zu akzeptieren.
 
@@ -28,16 +28,16 @@ ms.locfileid: "3115918"
 
 Werte an eine Webseite mithilfe von Abfragenzeichenfolgen zu übergeben, stellt ein Sicherheitsrisiko dar. Modellgesteuerte Apps arbeiten nach der bewährten Verfahrensweise, bei der alle in einer Abfragenzeichenkette übergebenen Parameter mit einer Liste der erwarteten Parameternamen und Datentypen verglichen werden.  
   
- Standardmäßig werden von modellgesteuerten Apps bestimmte Abfragezeichenfolgenparameter erlaubt, die an ein Formular übergeben werden. Verwenden Sie diese Parameter, um Standardwerte festzulegen, wenn Sie in der Anwendung einen neuen Datensatz erstellen. Jeder Parameter muss eine Standardnamenskonvention verwenden, die einen Verweis auf den logischen Namen des Attributs enthält. Weitere Informationen finden Sie unter [Legen Feldwerte unter Verwendung der Parameter festgelegt, die an ein Formular übergeben wurden](set-field-values-using-parameters-passed-form.md).  
+ Standardmäßig erlaubt modellbasierte Apps die Übergabe eines bestimmten Satzes von Abfragezeichenfolgenparametern an ein Formular. Verwenden Sie diese Parameter, um Standardwerte festzulegen, wenn Sie in der Anwendung einen neuen Datensatz erstellen. Jeder Parameter muss eine Standardnamenskonvention verwenden, die einen Verweis auf den logischen Namen des Attributs enthält. Weitere Informationen finden Sie unter [Legen Feldwerte unter Verwendung der Parameter festgelegt, die an ein Formular übergeben wurden](set-field-values-using-parameters-passed-form.md).  
   
  Möglicherweise möchten Sie in Ihrer Anwendung die Abfragezeichenfolgenparameter an ein Entitätsformular übermitteln. In diesem Thema finden Sie Informationen dazu, wie Sie eine Reihe von benutzerdefinierten Parameternamen und Datentypen definieren können, die für ein bestimmtes Entitätsformular angenommen werden können.  
   
 ## <a name="define-allowed-query-string-parameters"></a>Erlaubte Abfragezeichenfolgenparameter definieren.  
  Es gibt zwei Möglichkeiten zu definieren, welche Abfragezeichenfolgenparameter vom Formular akzeptiert werden:  
   
--   Bearbeiten von Formulareigenschaften  
+- Bearbeiten von Formulareigenschaften  
   
--   XML-Formular bearbeiten  
+- XML-Formular bearbeiten  
   
 ### <a name="edit-form-properties"></a>Bearbeiten von Formulareigenschaften  
  Wenn Sie ein Entitätsformular bearbeiten, klicken Sie auf der Registerkarte **Start** unter **Formular** auf **Formulareigenschaften**. Klicken Sie im Dialogfeld **Formulareigenschaften** auf die Registerkarte **Parameter**.  

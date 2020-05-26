@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2634fe9dcc9d0a68f200c2af0fcb47169fdbdb0c
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 39948d6193a156fe67ec282bbdea4310105f016b
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115842"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276150"
 ---
 # <a name="edit-the-customizations-xml-file-with-schema-validation"></a>Bearbeiten der XML-Datei für Anpassungen mit Schemaüberprüfung
 
@@ -54,7 +54,8 @@ Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die a
 - VisualizationDataDescription.xsd  
   
   
-<a name="BKMK_UseSchemaValidation"></a>   
+<a name="BKMK_UseSchemaValidation"></a>
+
 ## <a name="using-schema-validation"></a>Verwenden von Schemaüberprüfung  
  Da die exportierte XML-Datei eine Textdatei ist, können Sie sie mithilfe eines Text-Editors wie [!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] bearbeiten. Es wird jedoch unbedingt empfohlen, dass Sie eine Anwendung verwenden, die die Überprüfung von XSD-Schemas unterstützt, wie z. B. [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)]. XSD-Überprüfung in [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](https://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> bietet [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)]-Informationen und Schemaüberprüfung, um Fehler zu vermeiden.  
   
@@ -79,7 +80,7 @@ Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die a
   
 ### <a name="see-also"></a>Siehe auch
 
-[Informationen zum Bearbeitungszeitpunkt der Anpassungsdatei für Common Data Service](when-edit-customization-file.md)<br/> 
+[Zeitpunkt für die Bearbeitung der Anpassungsdatei für Common Data Service](when-edit-customization-file.md)<br/> 
 [Menüband-Core-Schema](ribbon-core-schema.md)<br/>
 [Menübandtypenschema](ribbon-types-schema.md)<br/>
 [Menüband-WSS-Schema](ribbon-wss-schema.md)<br/>

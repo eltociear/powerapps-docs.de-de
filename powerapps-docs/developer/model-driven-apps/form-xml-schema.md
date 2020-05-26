@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 73c5a681df915beecd52b3d813178491e5832bff
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 495da0a1534f0d9174e6c295b052b68510ed3c3c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754575"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275942"
 ---
 # <a name="form-xml-schema"></a>Formular-XML-Schema
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/form-xml-schema -->
 
-Folgendes ist eine Schemadefinition für Formularpassungen für modellgesteuerte Apps. Weiere Informationen finden Sie unter [Entitätsformular anpassen](customize-entity-forms.md) [!INCLUDE[schema_download](../../includes/schema-download.md)].  
+Nachfolgend finden Sie die Schemadefinition für Formularanpassungen für modellbasierte Apps. Weiere Informationen finden Sie unter [Entitätsformular anpassen](customize-entity-forms.md) [!INCLUDE[schema_download](../../includes/schema-download.md)].  
   
 ## <a name="schema"></a>Schema  
   
@@ -1884,5 +1884,5 @@ Folgendes ist eine Schemadefinition für Formularpassungen für modellgesteuerte
 ### <a name="see-also"></a>Siehe auch  
  [Anpassen von Entitätsformularen](customize-entity-forms.md)   
  [Erstellen, installieren und aktualisieren Sie eine verwaltete Lösung](../common-data-service/create-install-update-managed-solution.md)<br/>
- [Erstellen, Exportieren oder Importieren einer nicht verwalteten Lösung](../common-data-service/create-export-import-unmanaged-solution.md)<br/>
+ [Erstellen, exportieren oder importieren Sie eine nicht verwaltete Lösung](../common-data-service/create-export-import-unmanaged-solution.md)<br/>
  [Formular-XML-Schema](form-xml-schema.md)

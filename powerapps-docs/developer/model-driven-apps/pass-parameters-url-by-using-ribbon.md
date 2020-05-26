@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a8c24b6d48b5d9330cdc3761cad458e399aec898
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f76065b6205343742e67a03740745e35b8564c35
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754579"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326448"
 ---
 # <a name="pass-parameters-to-a-url-by-using-the-ribbon"></a>Parameter mit dem Menüband an eine URL übergeben
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/pass-parameters-url-by-using-ribbon -->
 
-Menübandaktionen werden im `<Actions>`-Element eines`<CommandDefinition>`-Elements definiert. Es gibt mehrere Möglichkeiten, kontextbezogene Informationen modellgestützter Apps mit dem Menüband als Abfragezeichenfolgenparameter an eine URL zu übergeben.  
+Menübandaktionen werden im `<Actions>`-Element eines`<CommandDefinition>`-Elements definiert. Es gibt mehrere Möglichkeiten, kontextbezogene, modellbasierte Informationen über Apps als Abfragezeichenfolgenparameter mit Hilfe des Menübands an eine URL zu übergeben.  
   
 -   Verwenden sie ein `<Url>`-Element. Innerhalb des `Url`-Elements verwenden das Attribut **PassParams**.  
   
@@ -48,7 +48,7 @@ Menübandaktionen werden im `<Actions>`-Element eines`<CommandDefinition>`-Eleme
 [!INCLUDE[languagecode](../../includes/languagecode.md)]
   
 > [!NOTE]
->  Es ist empfehlenswert, den Entitätsnamen statt des Entitätstypcodes zu verwenden, da der Entitätstypcode möglicherweise je nach MDA-Installation verschieden ist.  
+>  Wir empfehlen, den Entitätsnamen anstelle des Entitätstypcodes zu verwenden, da sich der Entitätstypcode zwischen modellbasierten Apps-Installationen unterscheiden kann.  
   
 ### <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die URL ohne Parameter gezeigt:  
@@ -77,9 +77,9 @@ https://myserver/mypage.aspx?orgname=AdventureWorksCycle&userlcid=1033&orglcid=1
   
 ### <a name="see-also"></a>Siehe auch
 
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
  [Öffnen von Formularen und Ansichten mit einer URL](open-forms-views-dialogs-reports-url.md)    
- [Definieren von Menüband-Registerkartenanzeigenregeln](define-ribbon-tab-display-rules.md)   
- [Beispiel: Exportieren von Menübanddefinitionen](sample-export-ribbon-definitions.md)
+ [Darstellungsregeln für Menüband-Registerkarten definieren](define-ribbon-tab-display-rules.md)   
+ [Beispiel: Menüband-Definitionen exportieren](sample-export-ribbon-definitions.md)
 
 

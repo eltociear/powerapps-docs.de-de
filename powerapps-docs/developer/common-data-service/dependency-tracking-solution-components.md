@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 538c26f0f0a0dfbd1347137e0086945783dec441
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 922dc4affafcd6232857dfd99f8d552812848de3
+ms.sourcegitcommit: 94d66a2e1bc7f45f1a8ae97cc5ec4fce89aefdee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156254"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325654"
 ---
 # <a name="dependency-tracking-for-solution-components"></a>Abhängigkeitsnachverfolgung für Lösungskomponenten
 
@@ -179,6 +179,7 @@ Lösungen bestehen aus Lösungskomponenten. Sie können den Bereich **Lösungen*
 >  Webressourcen sind möglicherweise von anderen Webressourcen abhängig, je nach den vorhandenen relativen Links. Z. B. verwendet eine HTML-Webressource möglicherweise eine CSS oder Skript-Webressource. Eine Silverlight-Webressource, die außerhalb eines Entitätsformulars oder Diagramms angezeigt wird, muss über eine HTML-Webressource verfügen muss, auf der sie gehostet ist. Diese Abhängigkeiten werden nicht als Lösungsabhängigkeiten überwacht.  
   
 ### <a name="see-also"></a>Siehe auch  
+ [Abhängigkeiten entfernen](removing-dependencies.md)   
  [Packen und Verteilen von Erweiterungen mithilfe von Dynamics 365-Lösungen](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   
  [Einführung zu Lösungen](introduction-solutions.md)   
  [Planen einer Lösungsentwicklung](/dynamics365/customer-engagement/developer/plan-solution-development)   

@@ -2,7 +2,7 @@
 title: Anzeigen des Verlaufs einer Lösung | MicrosoftDocs
 description: Erfahren Sie, wie Sie den Verlauf einer Lösung anzeigen
 keywords: ''
-ms.date: 05/19/2019
+ms.date: 04/20/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -20,54 +20,43 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 813a31b3b9d56dfb6742dc138ec947829613cf89
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 75880ec6d29dbb8e9fa9e5f1c2ef4f9721a479ce
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869938"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276008"
 ---
 # <a name="view-the-history-of-a-solution"></a>Anzeigen des Verlaufs einer Lösung
-Sie können Informationen zu Lösungsvorgängen im Bereich **Lösungen** einer modellgesteuerten App anzeigen. Ein Vorgang kann ein Lösungsimport, -export oder -löschung sein. Im Lösungsverlauf werden Informationen wie die Lösungsversion, der Lösungsherausgeber, die Art des Vorgangs, die Start- und Endzeit des Vorgangs sowie der Vorgangsstatus angezeigt.
-
-> [!div class="mx-imgBorder"] 
-> ![](media/solutions-history-custom-view.png "Solutions history custom view")
+Sie können Informationen zu Lösungsvorgängen im Bereich **Lösungen** von Power Apps. Ein Vorgang kann ein Lösungsimport, -export oder eine -deinstallation sein. Im Lösungsverlauf werden Informationen wie die Lösungsversion, der Lösungsherausgeber, die Art des Vorgangs, die Start- und Endzeit des Vorgangs sowie der Vorgangsstatus angezeigt.
 
 ## <a name="view-solution-history"></a>Anzeige des Lösungsverlaufs
-1. Wählen Sie **Einstellungen** und dann **Lösungsverlauf** aus.
+1.  Melden Sie sich bei [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+2.  Klicken Sie im linken Navigationsbereich die Option **Lösungen**, wählen die gewünschte Lösung aus und klicken Sie dann auf der Befehlsleiste die Option **Verlauf anzeigen**. 
 
-     > [!div class="mx-imgBorder"] 
-     > ![](media/solution-history-sitemap.png "Solution History area")
+    Der Verlauf wird angezeigt. 
 
-     > [!NOTE]
-     > Um zum Bereich **Einstellungen** aus einer Power Apps vereinheitlichten, schnittstellenmodellgesteuerten Anwendung zu gelangen, wählen Sie **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) in der App-Symbolleiste und dann **Erweiterte Einstellungen**. 
+    > [!div class="mx-imgBorder"] 
+    > ![](media/solution-history.png "Solution history")
 
-2. Standardmäßig wird die Ansicht **Benutzerdefinierter Lösungsverlauf** angezeigt. Die folgenden Ansichten sind im Bereich **Lösungsverlauf** verfügbar. 
-- **Alle Lösungsverläufe**. Zeigt die Lösungshistorie für das interne System und benutzerdefinierte Lösungen. 
-- **Benutzerdefinierter Lösungsverlauf**. Zeigt den Lösungsverlauf nur für benutzerdefinierte Lösungen an. 
-- **Interner Lösungsverlauf**. Zeigt die Lösungshistorie nur für interne Systemlösungen. 
+Wählen Sie einen Lösungsvorgang aus, um die **Informationsseite** anzuzeigen. Jeder Lösungsverlaufsdatensatz ist schreibgeschützt und enthält den folgenden Bereich **Details**:
+-   **Name** Der eindeutige Name der Lösung. 
+-   **Startzeit**. Die Zeit, zu der der Vorgang gestartet wurde.
+-   **Endzeit**: Die Zeit, zu der der Vorgang geendet ist.
+-   **Version**. Die Version der Lösung.
+-   **Herausgeber**. Der Name des Herausgebers, der dem Vorgang zugeordnet ist. 
+-   **Vorgang**. Der Vorgang, wie Import, Export oder Löschen. 
+-   **Teilvorgang**: Bezeichnet die Art des Vorgangs, wie ein neuer Lösungsimport oder ein Update einer vorhandenen Lösung.
+-   **Ergebnis**. Das Ergebnis des Vorgangs, zum Beispiel Erfolgreich oder Fehler.
 
-Jeder Lösungsverlaufsdatensatz ist schreibgeschützt und enthält die folgenden Eigenschaften: 
-- **Startzeit**. Die Zeit, zu der der Vorgang gestartet wurde. 
-- **Endzeit**: Die Zeit, zu der der Vorgang geendet ist. 
-- **Lösungsversion**. Die Version der Lösung. 
-- **Herausgebername**. Der Name des Herausgebers, der dem Vorgang zugeordnet ist. Weitere Informationen [Lösungsherausgeberpräfix ändern](change-solution-publisher-prefix.md)  
-- **Vorgang**. Der Vorgang, wie Import, Export oder Löschen. Weitere Informationen dazu finden Sie [Lösungen importieren, aktualisieren und exportieren](import-update-export-solutions.md)
-- **Teilvorgang**: Bezeichnet die Art des Vorgangs, wie ein neuer Lösungsimport oder ein Update einer vorhandenen Lösung. 
-- **Status**. Der aktuelle Status des Vorgangs, zum Beispiel **Abgeschlossen** oder **Nicht abgeschlossen**. 
-- **Ergebnis**. Das Ergebnis des Vorgangs, zum Beispiel **Erfolgreich** oder **Fehler**. 
-- **Fehlercode**: Fehlercode, der von dem Vorgang zurückgegeben wird. Ein Fehlercode von 0 bedeutet, dass der Vorgang erfolgreich abgeschlossen wurde. 
+ > [!div class="mx-imgBorder"] 
+ > ![](media/solution-history-details.png "Solution history details")
 
 ### <a name="view-solution-operation-error-details"></a>Lösungsvorgangs-Fehlerdetails anzeigen 
-Wenn ein Lösungsvorgang einen Fehler enthält, können Sie ihn auswählen, um eine Seite mit zusätzlichen Fehlerdetails anzuzeigen. 
-
-> [!div class="mx-imgBorder"] 
-> ![](media/solution-history-with-failure.png "Solution history with operation error")
-
-Die Detailseite enthält Informationen einschließlich der **Ausnahmenachricht**, die bei der Diagnose der zugrunde liegenden Ursache für den Vorgangsfehler helfen. Einige Fehler, einschließlich Lösungsabhängigkeitsfehler, umfassen unter Umständen auch Links zu **Lösungsebenen**, um Ihnen die Fehlerdiagnose zu erleichtern. Die **Aktivitäts-ID** kann hilfreich sein, wenn Sie sich an den Microsoft-Kundensupport wenden müssen. 
-
-> [!div class="mx-imgBorder"] 
-> ![](media/solution-history-error-details.png "Solution operation error details")
+Unter dem Bereich **Details** befindet sich der Bereich **Weitere Details**, der zusätzliche Informationen zur Lösung enthält sowie darüber, wenn ein Lösungsvorgang einen Fehler aufweist. Die Informationen enthalten: 
+- Den **Fehlercode** des Fehlers, der von dem Vorgang zurückgegeben wird. 
+- Die **Ausnahmenachricht**, die bei der Diagnose der zugrunde liegenden Ursache für den Betriebsfehler hilfreich sein kann. Einige Fehler, einschließlich Lösungsabhängigkeitsfehler, umfassen unter Umständen auch Links zu Lösungsebenen, um Ihnen die Fehlerdiagnose zu erleichtern. 
+- Die **Aktivitäts-ID** kann hilfreich sein, wenn Sie sich an den Microsoft-Kundensupport wenden müssen.
 
 ### <a name="see-also"></a>Siehe auch
 [Anzeigen von Lösungsebenen](solution-layers.md)  <br />

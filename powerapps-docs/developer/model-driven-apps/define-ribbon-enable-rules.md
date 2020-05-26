@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9dce1d13b5cb74173ff8af678480bda7b8e00140
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d6805a18d0b445d18233c854d0b760b0a7098db2
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865587"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275818"
 ---
 # <a name="define-ribbon-enable-rules"></a>Definieren von Menüband-Aktivierungsregeln
 
@@ -87,29 +87,32 @@ function EnableRule()
  > [!NOTE]
 >  Versprechungsbasierte Regeln funktionieren nur auf der Einheitliche Oberfläche, sodass sie nicht verwendet werden können, wenn der klassische Web Client weiterhin verwendet wird.
  ```JavaScript
-function EnableRule()
-{
+// Old synchronous style
+/*
+function EnableRule() {
+    const request = new XMLHttpRequest();
+    request.open('GET', '/bar/foo', false);
+    request.send(null);
+    return request.status === 200 && request.responseText === "true";
+}
+*/
+
+// New asynchronous style
+function EnableRule() {
     const request = new XMLHttpRequest();
     request.open('GET', '/bar/foo');
 
-    return new Promise((resolve, reject) =>
-    {
-        request.onload = function (e)
-        {
-            if (request.readyState === 4)
-            {
-                if (request.status === 200)
-                {
+    return new Promise(function(resolve, reject) {
+        request.onload = function (e) {
+            if (request.readyState === 4) {
+                if (request.status === 200) {
                     resolve(request.responseText === "true");
-                }
-                else
-                {
+                } else {
                     reject(request.statusText);
                 }
             }
         };
-        request.onerror = function (e)
-        {
+        request.onerror = function (e) {
             reject(request.statusText);
         };
 
@@ -165,6 +168,6 @@ function EnableRule()
 Verwendet das `<ValueRule>`-Element. Verwenden Sie diese Regel, um den Wert eines bestimmten Felds im Datensatz zu suchen, der im Formular angezeigt wird. Sie müssen für die Prüfung das `Field` und den `Value` angeben.
 
 ### <a name="see-also"></a>Siehe auch  
- [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
- [Menübandbefehle definieren](define-ribbon-commands.md)   
+ [Befehle und das Menüband anpassen](customize-commands-ribbon.md)   
+ [Definieren von Menübändern](define-ribbon-commands.md)   
  [Definieren von Menüband-Anzeigeregeln](define-ribbon-display-rules.md)

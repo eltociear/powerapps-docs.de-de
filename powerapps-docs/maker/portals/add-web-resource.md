@@ -1,35 +1,35 @@
 ---
-title: Hinzufügen der Azure Storage-Webressource zu einem Formular | Microsoft-Dokumentation
-description: Schritte zum Hinzufügen einer Azure Storage-Webressource zu einem Formular, um das Hochladen von Anhängen zu Azure Storage zu aktivieren.
+title: Azure Speicher-Web-Ressource zu einem Formular hinzufügen | MicrosoftDocs
+description: Schritte zum Hinzufügen der Web-Ressource Azure Storage zu einem Formular, um das Hochladen von Anhängen in Azure Storage zu ermöglichen.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/11/2020
+ms.date: 05/05/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 0c011c61c2084662d1e759d7226140dcf3ddfad6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: d00b323b33f971ff9c55a7590d3630baadfc09fe
+ms.sourcegitcommit: eaf423817d61b57cbde7c4b820b3e44940c3f8af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126187"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340268"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Hinzufügen der Azure Storage-Webressource zu einem Formular
 
-Anlagen, die zu Azure Storage und nicht direkt zu Common Data Service hochgeladen wurden, können über Notizen in Common Data Service verwaltet werden.
+Anhänge, die in Azure Storage statt direkt in Common Data Service hochgeladen wurden, können mit Hilfe von Notizen in Common Data Service verwaltet werden.
 
 Damit Anlagen aus einem bestimmten Formular nach Azure Storage hochgeladen werden können, müssen Sie eine Webressource zu diesem Formular hinzufügen und [Azure Storage für Ihre Organisation konfigurieren](enable-azure-storage.md).
 
 > [!NOTE]
-In diesem Beispiel wird das Formular zum Lead-Formular für die Lead-Entität hinzugefügt. Wir empfehlen Ihnen, beim Bearbeiten vorhandener Formulare vorsichtig vorzugehen.
+> In diesem Beispiel wird das Formular zum Lead-Formular für die Lead-Entität hinzugefügt. Wir empfehlen Ihnen, beim Bearbeiten vorhandener Formulare vorsichtig vorzugehen.
 
-Wenn eine Datei (beispielsweise attachments.zip) über das Portal nach Azure Storage hochgeladen wird, wird dies durch eine Notiz zu einer Entität und einen Platzhalter für die Anlage dargestellt.
+Wenn eine Datei (z.B. attachments.zip) über das Portal in Azure Storage hochgeladen wird, wird sie durch eine Notiz zu einer Entität und einen Platzhalter für die Anlage dargestellt.
 
 ![Anlage zu einem Formular](media/notes-attachment-lead-form.png "Platzhalter für die Anlage in einem Formular")
 
-Beachten Sie, dass die Anlagendatei jetzt attachment.zip.txt heißt. Standardmäßig verfügt Common Data Service nicht über die Konzeption einer Azure-Datei, deshalb wird diese TXT-Platzhalterdatei stattdessen in Common Data Service gespeichert. Der Azure Storage-Kontext für die Platzhalterdatei zeigt Details zur Datei an.
+Die Datei mit der Anlage heißt jetzt attachment.zip.txt. Standardmäßig verfügt Common Data Service nicht über die Konzeption einer Azure-Datei, deshalb wird diese TXT-Platzhalterdatei stattdessen in Common Data Service gespeichert. Der Azure Storage-Kontext für die Platzhalterdatei zeigt Details zur Datei an.
 ```
 {
  Name: attachment.zip,
@@ -39,7 +39,7 @@ Beachten Sie, dass die Anlagendatei jetzt attachment.zip.txt heißt. Standardmä
 }
 ```
 
-Um die in Azure gespeicherte Datei anzeigen und mit dieser interagieren zu können, müssen Sie die Webressource adx.annotations.html zum Formular hinzufügen. Stellen Sie als Voraussetzung sicher, dass Ihre Benutzer Lesezugriff auf adx_setting haben. Andernfalls wird die Webressource nicht richtig dargestellt.
+Um die in Azure gespeicherte Datei anzeigen und mit dieser interagieren zu können, müssen Sie die Webressource adx.annotations.html zum Formular hinzufügen. Stellen Sie als Voraussetzung sicher, dass Ihre Benutzer Lesezugriff auf adx_setting haben. Andernfalls wird die Web-Ressource nicht richtig gerendert.
 
 1. Wählen Sie im Formular-Editor für das relevante Formular **Webressource** auf der Registerkarte **Einfügen** aus.
 
@@ -53,7 +53,7 @@ Um die in Azure gespeicherte Datei anzeigen und mit dieser interagieren zu könn
 
 6. Wählen Sie **OK** aus, um die Ressource zu speichern.
 
-7. Optional können Sie das vorhandene Notizensteuerelement entfernen oder auf eine Registerkarte bzw. in einen Abschnitt verschieben, für die/den festgelegt ist, dass sie/er standardmäßig nicht angezeigt werden soll.
+7. Optional können Sie das vorhandene Notizsteuerelement entfernen. Oder verschieben Sie sie auf ein Register oder einen Abschnitt, der standardmäßig als nicht sichtbar markiert ist.
 
 8. Speichern Sie das Formular, und veröffentlichen Sie anschließend die Änderungen.
 
@@ -70,17 +70,25 @@ Das Büroklammersymbol wurde durch ein Wolkensymbol ersetzt, um zu kennzeichnen,
 > - **Zulässige Ursprünge**: Geben Sie Ihre Domäne an. Zum Beispiel: `https://contoso.crm.dynamics.com`.
 > - **Zulässige Verben**: GET, PUT, DELETE, HEAD, POST
 > - **Zulässige Überschriften**: Geben Sie die erforderlichen Überschriften an, die möglicherweise die Ursprungsdomäne auf der CORS-Anforderung angibt. Beispielsweise x-ms-meta-data\*, x-ms-meta-target\*. Für dieses Szenario müssen Sie * angeben, da die Webressource sonst nicht richtig dargestellt wird.
-> - **Verfügbar gemachte Überschriften**: Geben Sie die Antwortheader an, die möglicherweise in der Antwort zur CORS-Anforderung gesendet und vom Browser für den angeforderten Aussteller verfügbar gemacht werden. Beispielsweise x-ms-meta-\*.
+> - **Verfügbar gemachte Überschriften**: Geben Sie die Antwortheader an, die möglicherweise in der Antwort zur CORS-Anforderung gesendet und vom Browser für den angeforderten Aussteller verfügbar gemacht werden. Beispiele - \* oder x-ms-meta-\*. Für dieses Szenario müssen Sie * angeben, da die Webressource sonst nicht richtig dargestellt wird.
 > - **Höchstalter (Sekunden)**: Geben Sie die größtmöglichenMenge Zeit an, nach der ein Browser die Preflight-OPTIONEN-Anforderungen in den Zwischenspeicher verschiebt. Zum Beispiel 200.
 > 
 > [!include[More information](../../includes/proc-more-information.md)] [CORS-Unterstützung für die Azure Storage Services](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services).
 
-Wenn es sich bei der angehängten Datei um ein Bild handelt, zeigt das Steuerelement das Bild als Miniaturansicht an, gleich, ob es in Common Data Service oder in Azure Storage gespeichert ist.
+Wenn es sich bei der angehängten Datei um ein Bild handelt, zeigt das Steuerelement das Bild als Miniaturbild an, unabhängig davon, ob es in Common Data Service oder Azure Storage gespeichert ist.
 
 > [!Note]
 > Die Miniaturansichtsfunktion ist auf Bilder mit einer Größe von weniger als 1 MB beschränkt.
 
 ![Nachrichten-Miniaturansicht](media/notes-thumbnail.png "Nachrichten-Miniaturansicht")
+
+### <a name="processes-for-azure-blob-storage"></a>Prozesse für die Speicherung von Azure-Blob
+
+Es gibt zwei Prozesse, die zum Hochladen von Anhängen in Azure Storage erforderlich sind: **Azure-Blobspeicher-URL** und **AzureBlobStorage Enabled**.
+
+![Blob-Speicherprozesse](media/blob-storage-processes.png "Blob-Speicherprozesse")
+
+Während der Migration können die Prozesse deaktiviert werden. Dies kann dazu führen, dass Anhänge auf Common Data Service anstelle von Azure Storage hochgeladen werden, nachdem Sie die Schritte zum Hinzufügen der Web-Ressource befolgt haben. Stellen Sie sicher, dass diese beiden Prozesse aktiviert sind, um Anhänge in Azure Storage hochzuladen.
 
 ## <a name="cors-protocol-support"></a>CORS-Protokollunterstützung
 
@@ -92,7 +100,7 @@ Die folgenden Websiteeinstellungen werden verwendet, um CORS zu konfigurieren:
 | HTTP/Access-Control-Allow-Credentials | Access-Control-Allow-Credentials | Der einzige gültige Wert für diesen Header ist "true" (Groß-/Kleinschreibung wird beachtet). Wenn keine Anmeldeinformationen erforderlich sind, können Sie diesen Header vollständig weglassen (anstatt den Wert auf "false" zu setzen). 
 | HTTP/Access-Control-Allow-Headers | Access-Control-Allow-Headers | Eine durch Kommas getrennte Liste der unterstützten HTTP-Anforderungsheader.
 | HTTP/Access-Control-Allow-Methods | Access-Control-Allow-Methods | Eine durch Kommas getrennte Liste der zulässigen HTTP-Anforderungsmethoden wie ABRUFEN, POSTEN, OPTIONEN.
-| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | Damit alle Ressourcen auf Ihre Ressourcen zugreifen können, können Sie \* angeben. Geben Sie andernfalls die URI an, die auf die Ressourcen zugreifen kann.                   |
+| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | URL der Instanz von Dynamics 365, z.B. https://contoso.crm.dynamics.com. Um jedem URI den Zugriff auf Ihre Ressourcen zu ermöglichen, verwenden Sie \*.                 |
 |  HTTP/Access-Control-Expose-Headers | Access-Control-Expose-Headers | Eine durch Kommas getrennte Liste mit anderen HTTP-Headernamen als den einfachen Antwortheadern, die die Ressource verwenden kann und die eingeblendet werden kann.
 | HTTP/Access-Control-Max-Age | Access-Control-Max-Age |  Die maximale Anzahl an Sekunden, die die Ergebnisse zwischengespeichert werden können.
 | HTTP/Content-Security-Policy | Content-Security-Policy | Steuert die Ressourcen, die der Benutzeragent für eine bestimmte Seite laden darf.

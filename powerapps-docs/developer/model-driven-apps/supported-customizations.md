@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7d6ae1ae1389631987eef030af698d57b2a4235e
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 5864476278e2bc90feff16725b78de725ab3e42b
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115646"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326420"
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>Erste Schritte mit modellgesteuerter App-Anpassung durch Code
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
-Split to just include MDA issues
+Split to just include model-driven apps issues
  -->
 
 Sie können modellgesteuerte Apps anpassen, indem Sie Tools verwenden, die im Power Apps-Portal verfügbar sind oder in der Dokumentation beschrieben werden. Diese Anpassungen werden unterstützt und können aktualisiert werden.
@@ -77,12 +77,12 @@ Die Verwendung von `RibbonDiffXml` zum Hinzufügen, Entfernen oder Ausblenden vo
 
 Änderungen an modellgestützten Apps, die ohne die Verwendung der in dieser Dokumentation beschriebenen Methoden oder Power Apps-Portal-Tools vorgenommen werden, werden nicht unterstützt und werden während Updates oder Upgrades von modellgestützten Apps nicht beibehalten. Alles, was nicht in dieser Dokumentation und den unterstützenden Dokumenten dokumentiert wird, wird nicht unterstützt. Außerdem könnten nicht unterstützte Änderungen Probleme verursachen, wenn Sie durch das Hinzufügen von Hotfixes oder Service Packs aktualisieren oder modellgestützte Apps aktualisieren.
 
-Im Folgenden finden Sie eine Liste nicht unterstützter Aktionstypen, nach denen häufig gefragt wird: 
+Im Folgenden finden Sie eine Liste nicht unterstützter Aktionstypen, nach denen häufig gefragt wird:
 
 - Die erneute Verwendung von JavaScript-Code für modellgestützte Apps. Dieser Code könnte bei einem Upgrade geändert oder überschrieben werden.
 - Bearbeiten einer Lösungsdatei zum Bearbeiten von Lösungskomponenten, abgesehen von Menübändern, Formularen, SiteMap oder gespeicherten Abfragen wird nicht unterstützt. Weitere Informationen finden Sie unter [Wann die Anpassungsdatei bearbeitet wird](when-edit-customization-file.md).
-    - Das Definieren neuer Lösungskomponenten durch das Bearbeiten der Lösungsdatei wird nicht unterstützt. 
-    - Das Bearbeiten der Webressourcendateien, die mit einer Lösung exportiert werden, wird nicht unterstützt. 
+    - Das Definieren neuer Lösungskomponenten durch das Bearbeiten der Lösungsdatei wird nicht unterstützt.
+    - Das Bearbeiten der Webressourcendateien, die mit einer Lösung exportiert werden, wird nicht unterstützt.
     - Abgesehen von den Schritten, die in [Bearbeiten einer verwalteten Lösung](../common-data-service/maintain-managed-solutions.md) dokumentiert werden, wird das Bearbeiten von Inhalten einer verwalteten Lösung nicht unterstützt.
 
 - Anzeigen eines Entitätsformulars mit einem IFrame, der eingebettet in einem anderen Entitätsformular ist, wird nicht unterstützt.
@@ -91,5 +91,5 @@ Im Folgenden finden Sie eine Liste nicht unterstützter Aktionstypen, nach denen
 
 [Unterstützte Anpassungen für Common Data Service](../common-data-service/supported-customizations.md)<br/>
 [Anwenden von Geschäftslogik mit Client-Skripting in modellgestützten Anwendungen mit JavaScript](client-scripting.md)<br/>
-[Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)<br/>
-[Webressourcen in modellgestützten Apps](web-resources.md)
+[Befehle und das Menüband anpassen](customize-commands-ribbon.md)<br/>
+[Webressourcen in modellgesteuerten Apps](web-resources.md)

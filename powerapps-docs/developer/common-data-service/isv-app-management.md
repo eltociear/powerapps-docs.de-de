@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 38ab2ea7116093e41d7816e17eed9cc183b34d14
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2e9e1203676bdfba5ac42c868da2e412ab3de097
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861763"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264860"
 ---
 # <a name="introduction-to-isv-studio-for-the-power-platform"></a>Einführung in ISV Studio für die Power Platform
 
@@ -52,9 +52,9 @@ Um auf die öffentliche Vorschau von ISV Studio zuzugreifen, navigieren Sie übe
 
 1. Der ISV muss einer registrierten Microsoft-Partnerorganisation [ISV] zugeordnet sein, von der mindestens eine unterstützte App in [AppSource](https://appsource.microsoft.com/) veröffentlicht wurde. Zu den unterstützten Anwendungen gehören Power Apps und modellgetriebene Anwendungen in Dynamics 365 wie Dynamics 365 Sales und Dynamics 365 Customer Service.
 
-2. Der ISV muss über eine [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD)-Firma verfügen und die Firma muss als App-Mitwirkender oder -Besitzer im Cloud-Partnerportal (CPP) für den jeweiligen ISV konfiguriert sein.
+2. Der ISV muss über ein [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) Konto verfügen, und das Konto muss im Partner-Center für den jeweiligen ISV als App-Beitragender oder Besitzer konfiguriert sein.
 
-Wenn weitere Benutzer Zugriff auf ISV Studio erhalten sollen, können sie als App-Mitwirkende in CPP hinzugefügt werden.  Anweisungen finden Sie unter [Verwalten von Benutzern im Cloud-Partnerportal](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal-orig/cloud-partner-portal-manage-users).
+Wenn Sie möchten, dass weitere Benutzer Zugang zu ISV Studio erhalten, können sie als App-Beitragende im Partnerzentrum hinzugefügt werden.  Anweisungen finden Sie unter [Verwalten von Benutzern im Cloud-Partnerportal](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal-orig/cloud-partner-portal-manage-users).
 
 Fahren Sie mit den Seitenthemen „App“ und „Mandant“ unten fort, um mehr über die Funktionen von ISV Studio zu erfahren.
 
@@ -63,8 +63,10 @@ Bitte senden Sie eine E-Mail an [ISVFeedback@microsoft.com](mailto:ISVFeedback@m
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
 [Homepage](isv-app-management-homepage.md)  
-[App-Seite](isv-app-management-apppage.md)  
-[Mandantenseite](isv-app-management-tenantpage.md)
+[App-Seite](isv-app-management-apppage.md)<br/> 
+[Mandantenseite](isv-app-management-tenantpage.md)<br/>
+[AppSource Checker](isv-app-management-appsource-checker.md)<br/>
+[Zertifizierung von Konnektoren](isv-app-management-certification.md)
 
 ### <a name="see-also"></a>Siehe auch
 
