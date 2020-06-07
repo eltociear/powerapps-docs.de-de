@@ -29,7 +29,7 @@ ms.locfileid: "3154886"
 ---
 # <a name="configure-tracing-for-xrm-tooling"></a>Konfigurieren der Ablaufverfolgung für XRM-Tooling
 
-Sie können die Ablaufverfolgung für die Datensatzdaten aktivieren, die mit Prozess-Meilensteinen über alle Komponenten des XRM-Toolings hinweg verknüpft sind, wie Vorgangsaufrufe, Warnungen, Ausnahmen und andere wichtige Ereignisse. Diese Informationen können für die Behandlung von Betriebs- und Leistungsproblemen in Ihren Wndows-Client-Anwendungen verwendet werden. Die Ablaufverfolgung im XRM-Tooling setzt auf [System.Diagnostics.Tracing](/dotnet/api/system.diagnostics.tracing) auf. Zum Aktivieren der Ablaufverfolgung für eine Assembly oder Komponente wie Microsoft.Xrm.Tooling.Connector, müssen Sie die folgenden drei Punkte für jede Komponente in Ihrem Code oder in der Konfigurationsdatei der Anwendung (*\<AppName>*.exe.config) definieren:  
+Sie können die Ablaufverfolgung für die Datensatzdaten aktivieren, die mit Prozess-Meilensteinen über alle Komponenten des XRM-Toolings hinweg verknüpft sind, wie Vorgangsaufrufe, Warnungen, Ausnahmen und andere wichtige Ereignisse. Diese Informationen können für die Behandlung von Betriebs- und Leistungsproblemen in Ihren Windows-Client-Anwendungen verwendet werden. Die Ablaufverfolgung im XRM-Tooling setzt auf [System.Diagnostics.Tracing](/dotnet/api/system.diagnostics.tracing) auf. Zum Aktivieren der Ablaufverfolgung für eine Assembly oder Komponente wie Microsoft.Xrm.Tooling.Connector, müssen Sie die folgenden drei Punkte für jede Komponente in Ihrem Code oder in der Konfigurationsdatei der Anwendung (*\<AppName>*.exe.config) definieren:  
   
 - eine Ablaufverfolgungsquelle  
 - einen Ablaufverfolgungslistener  
